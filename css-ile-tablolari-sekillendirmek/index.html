@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>CSS ile Tabloları şekillendirmek</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="css-ile-tablolari-sekillendirmek/" rel="bookmark"
+           title="Permalink to CSS ile Tabloları şekillendirmek">CSS ile Tabloları şekillendirmek</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2007-02-03T16:44:00">
+                Sat 03 February 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/table.html">table</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>![]<a href="javascript:print()"></a>[] || ![]<a href="../static/dokumanlar/css_ile_tablolari_sekillendirmek.pdf">1</a>[]</p>
+<p>Bu makalemizde CSS ile tablolarımızı nasıl daha okunaklı ve güzel
+gösterebiliriz onu anlatmaya çalışacağız. Bildiğiniz gibi CSS'in namını
+arttıran olay web sayfa iskeletinin tablolar ile değilde katman(\&lt;div>)
+ile kodlaması ile olmuştur. Ancak burada bir yanlış anlaşılma oluyor
+genelde, oda şudur ki tablolarda bir Xhtml elementidir ve gerektiği
+yerlerde kullanılmalıdır, <strong>amacımız tablo kullanmamak değil web
+standartlarına uygun kodlama yapmak olduğunu hiç bir zaman
+unutmayalım</strong>. Tablo kullanılacak yerlerde de katman kullanarak işi
+çığırından çıkılmaz hala getirmenin bir anlamı yoktur.<!--more-->
+Tabloların kullanıldığı yerlere bir kaç örnek verelim:</p>
+<ul>
+<li>Takvim</li>
+<li>Finansal Tablolar</li>
+<li>Çizelgeler</li>
+<li>Plan Listeleri(otobüs, uçak iniş kalkış saat listesi vb.)</li>
+</ul>
+<p>Yukarıda verdiğimiz örnekler vb. durumlarda kullanılan tablolar genelde
+okunması zor ve göze hoş gelmeyen yapılardır. Biz CSS ile bu tabloları
+daha okunaklı, kodlaması daha kolay ve güzel hale getireceğiz.</p>
+<p>Tabloların genel yapısı aşağıdaki gibidir.</p>
+<p>[html] \&lt;table> \&lt;tr> \&lt;td>... içerik ...\&lt;/td> \&lt;/tr> \&lt;/table>
+[/html]</p>
+<p>Yukarıda kullanılan tablo yapısı genelde kullanılan tablo yapısıdır.
+Ancak tüm araçlara uyumu, erişebilirliği ve kolay kodlama için daha
+gelişmiş bir tablo kodlaması kullanılmalıdır. Örnek</p>
+<p>[html] \&lt;table cellspacing="1" class="uzerinde" id="golKrallari"
+summary="Türkiye Süper Ligi’nin son 3 yılında en çok gol atan futbolcu
+listesi"> \&lt;caption>1. LİG TARİHİNDEKİ GOL KRALLARI(SON 3
+YIL)\&lt;/caption> \&lt;thead> \&lt;tr> \&lt;th scope="col" abbr="sezon"
+class="bgYok">SEZON\&lt;/th> \&lt;th scope="col"
+abbr="adsoyad">ADI-SOYADI\&lt;/th> \&lt;th scope="col"
+abbr="takım">TAKIM\&lt;/th> \&lt;th scope="col" abbr="maç">MAÇ
+SAYISI\&lt;/th> \&lt;th scope="col" abbr="gol">ATTIğžI GOL\&lt;/th> \&lt;th
+scope="col" abbr="ortalama">ORTALAMA\&lt;/th> \&lt;/tr> \&lt;/thead>
+\&lt;tbody> \&lt;tr> \&lt;th scope="row" abbr="03-04" class="baslikBir">2003 –
+2004\&lt;/th> \&lt;td class="tabloZRFark">ZAFER BİRYOL\&lt;/td> \&lt;td
+class="tabloZRFark">Konyaspor\&lt;/td> \&lt;td
+class="tabloZRFark">34\&lt;/td> \&lt;td class="tabloZRFark">25\&lt;/td> \&lt;td
+class="tabloZRFark">0.74\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;th scope="row"
+abbr="04-05" class="baslikIki">2004 – 2005\&lt;/th> \&lt;td>FATİH
+TEKKE\&lt;/td> \&lt;td>Trabzonspor\&lt;/td> \&lt;td>34\&lt;/td> \&lt;td>31\&lt;/td>
+\&lt;td>0.91\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;th scope="row" abbr="05-06"
+class="baslikBir">2005 – 2006\&lt;/th> \&lt;td class="tabloZRFark">GÖKHAN
+ÜNAL\&lt;/td> \&lt;td class="tabloZRFark">Kayserispor\&lt;/td> \&lt;td
+class="tabloZRFark">32\&lt;/td> \&lt;td class="tabloZRFark">25\&lt;/td> \&lt;td
+class="tabloZRFark">0.78\&lt;/td> \&lt;/tr> \&lt;/tbody> \&lt;tfoot> \&lt;tr>
+\&lt;td colspan="6">Kaynak: Fatih Futbol Okulu(F.F.O)\&lt;/td> \&lt;/tr>
+\&lt;/tfoot> \&lt;/table> [/html]</p>
+<p><img alt="" src="../static/dokumanlar/tablo01.gif" /></p>
+<p>Tablomuzun içeriği bu kadar kısa olmasına karşın ne kadar okunaksız ve
+kötü göründüğü ortada. Bizim amacımız web sayfaları kodlarken sadece
+bilgi sunmak değildir. Bilgiyi en kullanışlı ve güzel şekilde sunmaktır.</p>
+<p>Burada normal tablo kodlamasından farklı olan etiketleri açıklarsak.
+<strong>\&lt;table></strong> kodu içindeki <strong><em>summary</em></strong> özelliği ile tablo içeriğinin
+bir özet açıklaması yapılmıştır. Bu özellik web değilde cep telefonu,
+pda vb. araçlarda tablo okuması için önemlidir. <strong>\&lt;caption></strong> özelliği
+tablonun başlığını oluşturmak için üretilmiş bir etiketitir ve bu amaçla
+burada kullanılmıştır.(Bir çok sitede tablo başlığı için \&lt;p>, \&lt;div>
+ve \&lt;<strong>h</strong>x> kullanılmaktadır. Bu kullanımların yanlış olduğunu burdan
+belirtelim.) <strong>\&lt;th></strong>etiketi bu alanın bir başlık olduğu
+belirtir,<strong>\&lt;th></strong> etiketi içerisinde kullanılan <strong><em>scop="col"</em></strong> ve
+<strong><em>scop="row"</em></strong> özelikleri yine küçük ekranlı araçlar için başlık ile
+içerik arasındaki ilişkiyi göstermesi bakımından önemlidir. <strong><em>abbr</em></strong>
+özelliği ise küçük ekranlarda başlığın sığmaması halinde görüntülenecek
+başlığın kısaltmasını içerir.</p>
+<p>Ayrıca <strong>thead</strong>, <strong>tbody</strong> ve <strong>tfoot</strong> etiketleri tabloyu 3 alana
+böler ve CSS ile XHTML etiketleri arasında daha fazla etkileşim
+yapmamızı sağlar.</p>
+<p>Tabloları CSS ile güzelleştirirken renk seçimi önemlidir. Birbirine
+uyumlu renkleri seçmek her zaman güzel sonuçlar doğuracaktır. Ben biraz
+sade tasarımları beğendiğim için gri ağırlıklı bir tablo yapacağım.
+Genelde tablolara uygulanacak renklerin seçimini yaparken web sitesinin
+tasarımına uygun renkler seçilmelidir. Bu yaptığımız web sitesindeki
+tutarlılığı korumamızı sağlayacaktır. Benim seçtiğim renkler:</p>
+<p><img alt="Tablo Renkleri" src="../static/dokumanlar/tablo_renkleri.gif" /></p>
+<p>CSS kodunu yazmaya başlayalım:</p>
+<p>[css] body { font: normal 11px auto "Trebuchet MS", Verdana, Arial,
+Helvetica, sans-serif; } #golKrallari { width: 700px; } [/css]</p>
+<p>Tablonun başlığını(<strong>\&lt;caption></strong>) düzenleyelim</p>
+<p>[css] caption { padding: 0 0 5px 0; font: 14px "Trebuchet MS", Verdana,
+Arial, Helvetica, sans-serif; text-align: right; } [/css]</p>
+<p>Daha sonra kolon başlıklarını <strong>\&lt;th></strong> kodlayalım. Burada başlıkların
+daha güzel görünmesi için kolon başlıklarının zeminine degradeli bir
+zemin resmi koyalım. Ayrıca kolon ve satır başlıklarının birleştiği sol
+üst hücreyi diğerlerinden ayıracak(<strong>.bgYok</strong>) bir zemin resmi ve rengi
+olmadan kodlayalım:</p>
+<p>[css] th { font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica,
+sans-serif; color: #474747; border-bottom:1px solid #E0E0E0;
+border-right:1px solid #E0E0E0; border-top:1px solid #E0E0E0;
+letter-spacing: 2px; text-align: left; padding: 6px; background:
+#F3F3F3 url(images/tablo_baslik_zr.gif) repeat-x; } th.bgYok {
+border-top: 0; border-left: 0; border-right: 1px solid #E0E0E0;
+background: none; } [/css]</p>
+<p><img alt="" src="../static/dokumanlar/tablo02.gif" /></p>
+<p>Kolon başlıkları ile satır başlıklarını bir birinden ayıralım. Ayrıca
+Satır başlıklarına bir top ikonu koyalım. Burada dikkat edilmesi gereken
+bir konuda birbirini takip eden tablo satırlarının zemin rengini farklı
+farklı tanımlayarak tablo okunurluluğunu arttırmaktır. Biz burada bir
+satırın zemin rengini <span class="alternatifard">#F3F3F3</span> diğer
+satırın zemin rengini de #FFF yaptık.</p>
+<div class="ekstrabilgi">
+Burada ikonlardan farklı olanın bordo-mavi olması ve bu satırın Fatih
+Tekke'ye denk gelmesi tamamen bir rastlantı dır :-)
+
+</div>
+
+<p>[css] th.baslikIki { border-left: 1px solid #E0E0E0; border-top: 0;
+padding-left:25px; background: #fff url(images/top2.gif) 5px no-repeat;
+} th.baslikBir { border-left: 1px solid #E0E0E0; border-top: 0;
+padding-left:25px; background: #F3F3F3 url(images/top.gif) 5px
+no-repeat; } [/css]</p>
+<p>Veri içeren hücreler içinde kenarlık, zemin rengi, font rengi ve padding
+tanımlaması yapalım ve burada da birbirini takip eden satırlar için
+farklı renk uygulamasını yapalım. Bunun için bir sınıf
+oluşturup(<strong>.tabloZRFark</strong>) farklı satırlara atayalım.</p>
+<p>[css] td { border-bottom:1px solid #E0E0E0; border-right:1px solid
+#E0E0E0; background: #fff; padding: 6px; color: #474747; font:11px
+"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; } td.tabloZRFark
+{ background: #F3F3F3; color: #474747; } [/css]</p>
+<p>Tablonun alt kısmı içinde aşağıdaki kodu yazalım:</p>
+<p>[css] tfoot tr td{ text-align:right; border-left:1px solid #e0e0e0;
+border-bottom:2px solid #e0e0e0; font:italic 9px "Trebuchet MS",
+Verdana, Arial, Helvetica, sans-serif; } [/css]</p>
+<p><img alt="" src="../static/dokumanlar/tablo03.gif" /></p>
+<p>Son olarak farenin imleci üzerine gelen satırın zemin rengini
+değiştirerek okunurluluğu arttırmak için aşağıdaki kodları yazalım:</p>
+<p>[css] #golKrallari tr.uzerineGelince td, #golKrallari
+tr.uzerineGelince th{ background:#474747; color:#f3f3f3; } [/css]</p>
+<p>fare imlecinin satır üzerine geldiğinde çalışacak javascript kodu:</p>
+<p>[javascript] function uzerinegelince() { if (document.getElementById &amp;&amp;
+document.createTextNode) { var
+tables=document.getElementsByTagName('table'); for (var
+i=0;i\&lt;tables.length;i++) { if(tables[i].className=='uzerinde') { var
+trs=tables[i].getElementsByTagName('tr'); for(var j=0;j\&lt;trs.length;j++)
+{ if(trs[j].parentNode.nodeName=='TBODY') {
+trs[j].onmouseover=function(){this.className='uzerineGelince';return
+false} trs[j].onmouseout=function(){this.className='';return false} } }
+} } } } [/javascript]</p>
+<p>Bu kodu tetiklemek için:</p>
+<p>[html] \&lt;body onload="uzerinegelince()"> [/html]</p>
+<p>kodunu yazalım. Fare imlecinin üzerine geldiğinde satır zemin rengi ve
+metin renginin değişmesi bölümün de bir iki dikkat edilmesi gereken yer
+var. İlki tablodaki class="<strong>uzerinde</strong>" ve javasciriptteki
+if(tables[i].className=='<strong>uzerinde</strong>') aynı olması, ikincisi
+javascriptteki</p>
+<p>[javascript]
+trs[j].onmouseover=function(){this.className='uzerineGelince';return
+false} [/javascript]</p>
+<p>ile</p>
+<p>[css] #golKrallari tr.uzerineGelince td, #golKrallari
+tr.uzerineGelince th{ background:#474747; color:#f3f3f3; } [/css]</p>
+<p>aynı olması. Evet tablomuz sona erdi.</p>
+<p>Sonuç sayfasını görmek için <a href="../static/dokumanlar/tablo_ornek1.html">tıklayınız.</a></p>
+<div class="ekstrabilgi">
+Kodlar Windows ortamında Firefox 2.0, IE 5.01, IE7 ve Opera 9.0 web
+tarayıcıları ile test edilmiştir.
+
+</div>
+
+<h6>Kaynaklar</h6>
+<ul>
+<li><a href="http://veerle.duoh.com/index.php/blog/comments/a_css_styled_table/">http://veerle.duoh.com/</a></li>
+<li><a href="http://icant.co.uk/csstablegallery/index.php?css=1#r1">http://icant.co.uk/</a> (CSS ile yapılmış bir çok tablo örneği)</li>
+<li><a href="http://alistapart.com/articles/tableruler/">http://alistapart.com/</a></li>
+</ul>
+</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "css-ile-tablolari-sekillendirmek/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

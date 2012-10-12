@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - site izleme</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././google-analitics-asenkron-koda-gecis/">Google Analitics Asenkron Kod&#039;a Geçiş</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2010-02-15T12:34:00">
+                Mon 15 February 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler-javascript.html">Haberler, Javascript</a>. </p>
+<p>tags: <a href=".././tag/google-analytics.html">Google Analytics</a><a href=".././tag/javascript.html">Javascript</a><a href=".././tag/site-izleme.html">site izleme</a></p>
+
+
+</footer><!-- /.post-info --><p>Bir çok sitede site trafiğini izlemek için insanlar google analitics
+hizmetini kullanıyor. Güzel bir hizmet, hemde ücretsiz. Bulunmaz bir
+nimet. Zaten daha önce paralı idi. Sonra google alınca ücretsiz yaptı.</p>
+<p>Sitelerinin performansına dikkat eden herkesin gözüne takılmıştır google
+analitics'in kodları. Açıkçası ben sitemi yavaşlattığı için google
+analitics'ten vazgeçicektim. Bir aralar site çok yavaştı. O zamanlar
+düşünüyordum.</p>
+<p>Google çalışanlarıda bu konudaki şikayetleri göz önüne alarak asenkron
+kod geliştirmişler. Asenkron kod sayesinden bir yandan google kodu
+çalışırken bir yandanda diğer içerikler taranabilme olanağı elde ediyor
+sistem, buda sitemizin daha hızlı açılmasını sağlayacaktır.</p>
+<p>Kodlar aşağıdaki gibi;</p>
+<dl>
+<dt>[html highlight="9"] \&lt;!DOCTYPE html> \&lt;html> \&lt;head></dt>
+<dt>\&lt;title>Başlık\&lt;/title> \&lt;/head> \&lt;body> \&lt;script</dt>
+<dt>type="text/javascript"> var _gaq = _gaq || [];</dt>
+<dt>_gaq.push(['_setAccount', 'UA-XXXXX-X']);</dt>
+<dt>_gaq.push(['_trackPageview']); (function() { var ga =</dt>
+<dt>document.createElement('script'); ga.type = 'text/javascript'; ga.async</dt>
+<dt>= true; ga.src = ('https:' == document.location.protocol ? 'https://ssl'</dt>
+<dd>'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] ||
+document.getElementsByTagName('body')[0]).appendChild(ga); })();
+\&lt;/script> \&lt;!-- site icegi buradan sonra gelir --> \&lt;/body>
+\&lt;/html> [/html]</dd>
+</dl>
+<p>Kodumuz eskisi gibi karmaşık ama siz karmaşıklığa aldanmayın. Burada
+yapacağımız şey çok basit. 9. satırdaki <strong>UA-XXXXXXX-X</strong> kısım yerine
+gooagle analytics'in bize verdiği kodu yerleştirmek.</p>
+<p>Burada dikkat edeceğimiz bir husus daha vardır. Normalde javascript
+kodlarının \&lt;/head> öncesine yazmamız önerilir, sitemizin performansı
+için. Ancak asenkaron nalytics kodları \&lt;head> etiketi içinde yazmanız
+öneriliyor.</p>
+<p>Sonuçta ben kullanıyorum gayet iyi, hızlandı site. Çok büyük beklentiye
+girmeyin ama hızda bir atış olduğu hissediliyor.</p>
+<h3>Kaynak</h3>
+<ul>
+<li><a href="static">http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html</a></li>
+<li><a href="static">http://www.electrictoolbox.com/google-analytics-asynchronous-tracking/</a></li>
+<li><a href="http://davidwalsh.name/async-google-analytics" title="http://davidwalsh.name/async-google-analytics">http://davidwalsh.name/async-google-analytics</a></li>
+<li><a href="static">http://webmasterformat.com/news/google-analytics-asynchronous-tracking</a></li>
+<li><a href="static">http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better/</a></li>
+<li><a href="static">http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html</a></li>
+<li>[http://www.webmonkey.com/blog/New_Asynchronous_Script_Stops_Google_Analytics_From_Slowing_Down_Your_Site][]</li>
+<li><a href="static">http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support</a></li>
+<li><a href="static">http://www.webresourcesdepot.com/new-google-analytics-code-for-better-load-times/</a></li>
+<li><a href="static">http://www.stevesouders.com/blog/2009/12/01/google-analytics-goes-async/</a></li>
+<li><a href="static">http://googlesystem.blogspot.com/2009/12/optimized-google-analytics-code.html</a></li>
+<li><a href="static">http://blog.chartbeat.com/2009/12/04/google-analytics-goes-asynchronous/</a></li>
+<li><a href="static">http://www.further.co.uk/blog/New-Google-Analytics-Asynchronous-Tracking-Code-241</a></li>
+<li><a href="static">http://www.highposition.net/article/google-analytics-launches-asynchronous-tracking-code-for-greater-speed/4561763</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">code</span><span class="p">.</span><span class="n">google</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">apis</span><span class="o">/</span><span class="n">analytics</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">tracking</span><span class="o">/</span><span class="n">asyncTracking</span><span class="p">.</span><span class="n">html</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">code</span><span class="p">.</span><span class="n">google</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">apis</span><span class="o">/</span><span class="n">analytics</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">tracking</span><span class="o">/</span><span class="n">asyncTracking</span><span class="p">.</span><span class="n">html</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">electrictoolbox</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">asynchronous</span><span class="o">-</span><span class="n">tracking</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">electrictoolbox</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">asynchronous</span><span class="o">-</span><span class="n">tracking</span><span class="o">/</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">webmasterformat</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">news</span><span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">asynchronous</span><span class="o">-</span><span class="n">tracking</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">webmasterformat</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">news</span><span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">asynchronous</span><span class="o">-</span><span class="n">tracking</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webresourcesdepot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tracking</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">rss</span><span class="o">-</span><span class="n">subscribers</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">understand</span><span class="o">-</span><span class="n">them</span><span class="o">-</span><span class="n">better</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webresourcesdepot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tracking</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">rss</span><span class="o">-</span><span class="n">subscribers</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">understand</span><span class="o">-</span><span class="n">them</span><span class="o">-</span><span class="n">better</span><span class="o">/</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webmonkey</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">New_Asynchronous_Script_Stops_Google_Analytics_From_Slowing_Down_Your_Site</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webmonkey</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">New_Asynchronous_Script_Stops_Google_Analytics_From_Slowing_Down_Your_Site</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">ajaxian</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">unblocks</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">w</span><span class="o">-</span><span class="n">async</span><span class="o">-</span><span class="n">support</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">ajaxian</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">unblocks</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">w</span><span class="o">-</span><span class="n">async</span><span class="o">-</span><span class="n">support</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webresourcesdepot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">code</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">better</span><span class="o">-</span><span class="n">load</span><span class="o">-</span><span class="n">times</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webresourcesdepot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">code</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">better</span><span class="o">-</span><span class="n">load</span><span class="o">-</span><span class="n">times</span><span class="o">/</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">stevesouders</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>12<span class="o">/</span>01<span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">goes</span><span class="o">-</span><span class="n">async</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">stevesouders</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>12<span class="o">/</span>01<span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">goes</span><span class="o">-</span><span class="n">async</span><span class="o">/</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">googlesystem</span><span class="p">.</span><span class="n">blogspot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>12<span class="o">/</span><span class="n">optimized</span><span class="o">-</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">code</span><span class="p">.</span><span class="n">html</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">googlesystem</span><span class="p">.</span><span class="n">blogspot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>12<span class="o">/</span><span class="n">optimized</span><span class="o">-</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">code</span><span class="p">.</span><span class="n">html</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">chartbeat</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>12<span class="o">/</span>04<span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">goes</span><span class="o">-</span><span class="n">asynchronous</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">chartbeat</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>12<span class="o">/</span>04<span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">goes</span><span class="o">-</span><span class="n">asynchronous</span><span class="o">/</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">further</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">New</span><span class="o">-</span><span class="n">Google</span><span class="o">-</span><span class="n">Analytics</span><span class="o">-</span><span class="n">Asynchronous</span><span class="o">-</span><span class="n">Tracking</span><span class="o">-</span><span class="n">Code</span><span class="o">-</span>241
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">further</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">New</span><span class="o">-</span><span class="n">Google</span><span class="o">-</span><span class="n">Analytics</span><span class="o">-</span><span class="n">Asynchronous</span><span class="o">-</span><span class="n">Tracking</span><span class="o">-</span><span class="n">Code</span><span class="o">-</span>241&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">highposition</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">article</span><span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">launches</span><span class="o">-</span><span class="n">asynchronous</span><span class="o">-</span><span class="n">tracking</span><span class="o">-</span><span class="n">code</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">greater</span><span class="o">-</span><span class="n">speed</span><span class="o">/</span>4561763
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">highposition</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">article</span><span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">analytics</span><span class="o">-</span><span class="n">launches</span><span class="o">-</span><span class="n">asynchronous</span><span class="o">-</span><span class="n">tracking</span><span class="o">-</span><span class="n">code</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">greater</span><span class="o">-</span><span class="n">speed</span><span class="o">/</span>4561763&quot;
+</pre></div><p>There are <a href=".././google-analitics-asenkron-koda-gecis/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

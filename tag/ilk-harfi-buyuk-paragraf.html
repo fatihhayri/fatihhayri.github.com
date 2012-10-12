@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - ilk harfi büyük paragraf</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././ilk-harfi-buyukdrop-caps-paragraflar-olusturmak/">İlk harfi büyük(drop caps) paragraflar oluşturmak</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2010-04-29T23:40:00">
+                Thu 29 April 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/first-child.html">:first-child</a><a href=".././tag/first-letter.html">:first-letter</a><a href=".././tag/css3.html">css3</a><a href=".././tag/drop-caps.html">drop caps</a><a href=".././tag/font-face.html">font-face</a><a href=".././tag/ie6.html">ie6</a><a href=".././tag/ie7.html">ie7</a><a href=".././tag/ilk-harfi-buyuk-paragraf.html">ilk harfi büyük paragraf</a></p>
+
+
+</footer><!-- /.post-info --><p>Geçen gün Kadir Günay bana sormuştu bu konuyu benim aklımda da css ile
+bir çözümü olduğu ancak ie6 ile sorunu olduğu kalmıştı. Biraz araştırdım
+ie6 ile sorunu yok, var ama ufak tefek. Araştırmışken birde makale
+yazayım herkes yararlansın dedim.</p>
+<p>İlk harfi büyük paragraflar oluşturma işi aslında dergilerde sık
+uygulanan bir yöntemdir. Genelde dergilerin başlangıç paragrafının ilk
+harfi 2 veya daha fazla satır yüksekliğinde oluşturarak farklı ve güzel
+bir görünüm kazandırırlar. Bu durumu biz css ile yapabiliyoruz. </p>
+<p>Biz bu görüntüyü <a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/" title="first-letter">first-letter</a> seçicisi ile elde edebiliyoruz. Hatta
+bu seçicinin adı drop caps-ilk harfi büyük harf seçicisi diyede geçiyor.
+Bizim için en büyük avantajı ie6 dahil tüm tarayıcıların bu özelliği
+desteklemesi.<!--more--></p>
+<p>:first-letter seçicisini tanımlanabilen özellikler listesi;</p>
+<ul>
+<li>font özellikleri</li>
+<li>color özellikleri</li>
+<li>background özellikleri</li>
+<li>text-decoration</li>
+<li>vertical-align (<strong>float</strong> değeri <strong>none</strong> ise)</li>
+<li>text-transform</li>
+<li>line-height</li>
+<li>margin özellikleri</li>
+<li>padding özellikleri</li>
+<li>border özellikleri</li>
+<li>float</li>
+<li>text-shadow</li>
+<li>clear</li>
+</ul>
+<h3>İlk Denememiz</h3>
+<p>HTML kodlarımız</p>
+<p>[sourcecode language="html"] \&lt;p class="introduction">Lorem ipsum dolor
+sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+dolore eu fugiat nulla pariatur.\&lt;/p> [/sourcecode]</p>
+<p>CSS kodlarımız</p>
+<p>[sourcecode language="css"] p{ width:350px; background-color:#272722;
+padding:10px; color:#fff; } p.introduction:first-letter { font-size:
+4.2em; float: left; line-height: 1em; margin: 0.13em 0.13em 0.13em 0; }
+[/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk.html">tıklayınız.</a></p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_387cfvfq39n_b" /></p>
+<p>Firefox'da yukarıdaki görüntüyü elde ederken</p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_388ggzd5sfq_b" /></p>
+<p>İnternet Explorer'da yukarıdaki gibi bir görüntü elde ederiz. Dikkat
+ederseniz bir explorerda L harfi yukarıya daha yakın.</p>
+<p>Sorunu gidermek için <strong>line-height</strong> değerini <strong>1em</strong> olarak atıyoruz.
+Farklı line-height değerleri ile padding uygulamalarında ie 6 ve 7'de
+sorun çıkıyor, line-height değerini 1 em'de tutmak mantık en azından ie
+için 1em yapmak gerekiyor.</p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_389dg3pbzc4_b" /></p>
+<h3>Fark stillerde uygulamalar yapabiliriz.</h3>
+<p>İlk harfi <a href="http://www.fatihhayrioglu.com/font-face-kullanimi/" title="font-face">font-face</a> ile özel bir yazı tipi ile oluşturarak güzel bir
+görüntü elde edebiliriz. Yazı tipini(PaladinFLF)
+<a href="http://www.fontsquirrel.com/fontface" title="http://www.fontsquirrel.com/fontface">http://www.fontsquirrel.com/fontface</a> sitesinden aldım.</p>
+<p>[sourcecode language="css"] @font-face { font-family:
+'PaladinFLFRegular'; src: url('PaladinFLF.eot'); src: local('☺'),
+url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont')
+format('svg'); } p{width:350px; background-color:#272722; padding:10px;
+color:#fff;} p.introduction:first-letter { font: 4.2em/1em
+'PaladinFLFRegular', Arial, sans-serif; float: left; margin: 0.13em
+0.13em 0.13em 0; } [/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk2.html">tıklayınız.</a></p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_390fmrwjjfj_b" /></p>
+<h3>İşe Biraz daha renk katalım</h3>
+<p>İlk harfin etrafına kenar çizgisi atayıp ardalan rengini değiştirelim.</p>
+<p>[sourcecode language="css"] @font-face { font-family:
+'PaladinFLFRegular'; src: url('PaladinFLF.eot'); src: local('☺'),
+url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont')
+format('svg'); } p{ width:350px; background-color:#272722;
+padding:10px; color:#fff; } p.introduction:first-letter { font:
+4.2em/0.6em 'PaladinFLFRegular', Arial, sans-serif; float: left; margin:
+0.13em 0.13em 0 0; border:3px solid #fff; padding:0.13em;
+background-color:#F30; line-height:1em; } [/sourcecode]</p>
+<p>HTML kodları</p>
+<p>[sourcecode language="html"] \&lt;p class="introduction">Lorem ipsum dolor
+sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+dolore eu fugiat nulla pariatur.\&lt;/p> [/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk3.html">tıklayınız.</a></p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_391dzsg3mht_b" /></p>
+<h3>Ardalan Resmi ile</h3>
+<p>Harfin ardalanına bir resim koyup üzerine harfi koymayı deniyorum.</p>
+<p>[sourcecode language="css"] @font-face { font-family:
+'PaladinFLFRegular'; src: url('PaladinFLF.eot'); src: local('☺'),
+url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont')
+format('svg'); } p{ width:350px; background-color:#272722;
+padding:10px; color:#fff; } p.introduction:first-letter { font: 4em/1em
+'PaladinFLFRegular', Arial, sans-serif; float: left; margin: 0.13em
+0.13em 0 0; padding:0.4em 0.5em 0.4em 0.3em ; background-color:#F30;
+background:url(t.jpg) 0 0 no-repeat; text-shadow:2px 2px 2px #999 }
+[/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk4.html">tıklayınız.</a></p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_392ghn2nsg2_b" /></p>
+<p>Firefox ile yukarıdaki gibi güzel bir sonuç elde ediyoruz. Ancak
+İnternet Explorer'da sorun yaşıyoruz. </p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_393wq6xv9fg_b" /></p>
+<p>Bu duruma çözüm üretmek için bir kaç yol var. İlki resmi direk içeriğe
+ekleyip <strong>float:left</strong> ile sola yaslayarak çözmek </p>
+<p>[sourcecode language="css"] p{ width:350px; background-color:#272722;
+padding:10px; color:#fff; } p.introduction img { float:left;
+margin-right:0.8em } [/sourcecode]</p>
+<p>HTML kodu</p>
+<p>[sourcecode language="html"] \&lt;p class="introduction">\&lt;img
+src="t1.jpg" width="93" height="100" />empor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Velit esse cillum dolore eu fugiat nulla pariatur\&lt;/p>
+[/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk4c.html">tıklayınız.</a></p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_394cpsn3shg_b" /></p>
+<p>Diğer bir yöntem bu harfi span içine alıp background olarak
+tanımlamaktır.</p>
+<h3>CSS3 ile ekstra kod kullanmadan</h3>
+<p>Sayfamızın ilk paragrafının ilk harfine uygulama yapıyoruz.
+<a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/" title="first-child">first-child</a> seçicisi bu imkanı bize sağlar. ancak bu özelliği ie \&lt;
+9 desteklemiyor.</p>
+<p>[sourcecode language="css"] p:first-child:first-letter{ font-size:
+4.2em; float: left; line-height: 1em; margin: 0.13em 0.13em 0.13em 0; }
+[/sourcecode]</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/">http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/</a></li>
+<li><a href="http://safalra.com/web-design/typography/css-drop-caps/">http://safalra.com/web-design/typography/css-drop-caps/</a></li>
+<li>[http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=111][]
+    özel fontlar ile </li>
+<li><a href="http://www.pauldruce.com/CSS%20DROP%20CAP">http://www.pauldruce.com/CSS%20DROP%20CAP</a> (bazı sorunlar ve
+    çözüm)</li>
+<li><a href="http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps">http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps</a>
+    (jquery ile)</li>
+<li><a href="http://www.htmldog.com/articles/dropcaps/">http://www.htmldog.com/articles/dropcaps/</a></li>
+<li><a href="http://css-tricks.com/snippets/css/drop-caps/">http://css-tricks.com/snippets/css/drop-caps/</a></li>
+<li><a href="http://oncemade.com/css-tip-drop-caps/">http://oncemade.com/css-tip-drop-caps/</a></li>
+<li><a href="http://azizname.blogspot.com/2006/10/magazine-style-drop-caps.html">http://azizname.blogspot.com/2006/10/magazine-style-drop-caps.html</a></li>
+<li><a href="http://dailydropcap.com/">http://dailydropcap.com/</a> (günlük örnekler)</li>
+<li><a href="http://jackosborne.co.uk/articles/pseudo-drop-caps/">http://jackosborne.co.uk/articles/pseudo-drop-caps/</a></li>
+<li><a href="static">http://www.akxl.net/labs/articles/text-wrapped-drop-caps-in-css-using-the-first-letter-selector/</a></li>
+<li>[http://www.users.globalnet.co.uk/\~arcus/html/dropcaps.html][]</li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">texaswebdevelopers</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">template_permalink</span><span class="p">.</span><span class="n">asp</span>?<span class="n">id</span><span class="p">=</span>111
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">texaswebdevelopers</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">template_permalink</span><span class="p">.</span><span class="n">asp</span>?<span class="n">id</span><span class="p">=</span>111&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">akxl</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">labs</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">text</span><span class="o">-</span><span class="n">wrapped</span><span class="o">-</span><span class="n">drop</span><span class="o">-</span><span class="n">caps</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">first</span><span class="o">-</span><span class="n">letter</span><span class="o">-</span><span class="n">selector</span><span class="o">/</span>
+</pre></div><p>There are <a href=".././ilk-harfi-buyukdrop-caps-paragraflar-olusturmak/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>CSS ve Tipografi</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="css-ve-tipografi/" rel="bookmark"
+           title="Permalink to CSS ve Tipografi">CSS ve Tipografi</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2007-09-14T08:49:00">
+                Fri 14 September 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/font.html">font</a><a href=".././tag/font-family.html">font-family</a><a href=".././tag/font-size.html">font-size</a><a href=".././tag/font-weight.html">font-weight</a><a href=".././tag/letter-spacing.html">letter-spacing</a><a href=".././tag/line-height.html">line-height</a><a href=".././tag/satir-yuksekligi.html">satır-yüksekliği</a><a href=".././tag/tipografi.html">tipografi</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/word-spacing.html">word-spacing</a><a href=".././tag/xhtml.html">XHTML</a><a href=".././tag/yazi-tipi.html">yazı tipi</a><a href=".././tag/yazi-tipi-isimleri.html">yazı-tipi isimleri</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p><strong>"Tipografi</strong>(<a href="http://tr.wikipedia.org/wiki/Yunanca" title="Yunanca">Yunanca</a>τύπος (<em>typos</em>)="form" ve γραφία
+(<em>graphia</em>)="yazmak" sözcüklerinden)yazıyı bir forma sokma sanatı ve
+tekniğidir. Font (yazı tipi), font büyüklüğü,satır uzunluğu, satır arası
+boşluk ve benzeri unsurların kombinasyonları ileyapılır. Yayımlanacak
+yazınsal içeriğin bir forma sokulması veya tasarımı olarakda
+tanımlanabilir. Türkçe <em>tipografya</em> olarak da çevrilmiştir.
+TerimTürkçe'yeFransızca'dangeçmiştir." Kaynak: <a href="http://tr.wikipedia.org/wiki/Tipografi" title="Tipografi tanımı">Vikipedi</a></p>
+<p>İlk CSS derslerimizde CSS'in avantajlarını sıralarken metinlere daha
+fazla hükmetme özelliğine sahip olduğumuzdan bahsetmiştik.
+Tipografihakkında sizlere genel bir bilgi verecek değilim, bu benim
+haddimede değil zaten. Biz buradadaha çok Stil Şablonlarının bize
+tipografi adına kazandırdıklarını göstermeyeçalışacağız ve CSS ile
+sayfalarımızı daha dikkat çekici ve okuna bilir hale getireceğimizi
+göreceğiz. Tipografihakkında genel bir bilgi vermesi açısından güzel bir
+çalışma olan Doç. Hasip Bektaş'ın "<a href="../static">İnternetteki Tipografi Sorunları ve
+GörselKirlenmeye Karşı Öneriler</a>" adlı makalesini okumanızı tavsiye
+ederim. Ayrıca kaynakçakısmındaki linklerden de daha fazla bilgi
+alabilirsiniz.</p>
+<!--more-->
+
+<p>Diğer makaleleri yazarken bazı konularda kaynak bulma konusunda ciddi
+sorunlar yaşadığım oldu, ancak tipografi hakkında makale yazmaya karar
+verip bilgi toplamaya başladığımda önceki yazılarımın aksine tipografi
+hakkında çok fazla bilgi bulunduğunu gördüm. Ne yazık ki bunların çoğu
+yine İngilizce. Bu kaynak çokluğu bu makalemin gecikmesine neden oldu.
+Ama olsun bilginin fazla olmasınınbir sakıncası yok.</p>
+<p>CSS ile birlikte gelen bir çok avantaj mevcut bunları önceki
+derslerimizde yazdık. Şunu söyleyebilirim ki web sitelerine CSS en büyük
+katkıyı tipografi kısmından yapmıştır. CSS ile birlikte gelen özellikler
+sayesinde yazılarımızın birçok özelliğine tek elden kontrol imkanına
+sahibiz. CSS'in tipografiye direk etkisi olan capitalize, uppercase,
+lowercase, text-decoration, letter-spacing, word-spacing, text-indent ve
+line-height özelliklerinin yanı sıra dolaylı etkisi olan margin, border,
+padding, background-color ve background-images özelikleride vardır.</p>
+<h3>Ölçü</h3>
+<p>İlk olarak sayfanın ölçüsüne bakalım. Okunabilir sayfalar yaparken
+kullanıcıya sunulan metinlerin genişlikleri önem kazanmıştır. Birçok
+kaynakta sayfanın ölçüsü verilirken karakter sayısı bir birine yakın
+değerler verilmektedir. Genel olarak tek kolonlu yapı kullanan
+sayfalarda kolon genişliği 52-78 karakter(boşluklar dâhill) içerecek
+şekilde ayarlanması tipografi bakımdan uygun görülmüştür. İki kolon bir
+yapı düşünülüyor ise her bir kolonun 40-50 karakter içermesi daha uygun
+görülüyor.<br />
+</p>
+<p><img alt="Yazı Ölçüsü" src="../static/images/tipografi_olcu.gif" /> <br />
+</p>
+<p>400px genişliğinde bir katman içine 12px boyutunda 66 karakter
+sığdırabiliriz. Ancak yazı boyutunu 16px çıkardığımızda karakter sayısı
+50'ye düşecektir.<br />
+</p>
+<p>Eğer genişliklerimizi <strong>em</strong> cinsinden verir isek katman genişliğini
+33em yapıp yazı boyutunu 1em olarak belirlediğimizde 77 karakter
+sığacaktır. Yazı boyutunu arttırdığımızda mesela 1.5em'e çıkardığımızda
+satır içindeki karakter sayısı değişmeyecektir, çünkü genişlik
+değerimizde yazı boyutu ile bağlantılı olduğu için oda artacaktır. Em
+genellikle elastik sayfalar oluştururken kullanırız. Em ve elastik
+sayfalar hakkında daha ayrılı bilgi için <a href="http://www.fatihhayrioglu.com/?p=95" title="CSS birimleri em göz at">CSS Birimleri</a> ve <a href="http://www.fatihhayrioglu.com/?p=179" title="Elastik web sayfaları oluşturmak">CSS İLE
+WEB SAYFASI OLUŞTURMA II</a> makalelerine  göz atın.<br />
+</p>
+<h3>Yazı Tipleri</h3>
+<p>Tipografi yazı tipi seçimi ile başlar. Bir çok yazı tipi olmasına karşın
+web'de sadece kullanıcıların bilgisayarında bulunan yazı tiplerini
+kullanmamız gerekir. Web tarayıcı ve işletim sistemine göre yazı tipi
+kullanılma oranları gösteren <a href="http://www.visibone.com/font/FontResults.html">visbone.com</a> listesine bir göz atmanızı
+tavsiye ederim. Kullanıcının bilgisayarında bulunmayan yazı tiplerinin
+kullanımı sayfalarımızın kullanıcının bilgisayarında kötü görünmesine
+neden olabilir.</p>
+<p>Burada bir konuya daha değinmeliyiz ki kullanıcının bazı tercihlerine
+karşı bizim yapacak pek bir şeyimiz kalmaz. Mesela Anti-aliasing(Yazı
+kenarlarındaki keskin hatların, kırıklıkların giderilmesi, etrafının
+yumuşak hatlar ile doldurulması.) seçimi genelde Windows kullanıcıları
+ve Mac kullanıcıları için standart gelen bir seçimdir. Bu yazılarımızın
+daha oval yani güzel görünmesini sağlar. Ancak kullanıcı anti-aliasing
+özelliğini kapatması halinde sitemizde kullandığımız yazı tiplerinin
+görünümü keskin kenarlı görünecektir ve bu bizim istediğimiz olay
+değildir.</p>
+<p><img alt="" src="../static/images/anti_aliasing.gif" /></p>
+<p>Web üzerinde genel olarak yazı tiplerini iki gruba ayırabiliriz.
+<strong>serif</strong> yazı tipi ailesi ve <strong>san-serif</strong>yazı tipi ailesi. Bu ayrımı
+aşağıdaki resimde çok iyi bir şekilde görmekteyiz. <br />
+</p>
+<p><img alt="serif sans-serif" src="../static/images/serif.gif" /></p>
+<p>serif fontlar yazılı alanda bayağı popülerdir. Web âleminde ise
+sans-serif fontlar daha popülerdir. Bu söylediğimden web'de hiç serif
+font kullanılmaz diye bir mana çıkaramayız elbette kullanılabilir ancak
+sans-serif daha çok tercih edilir. Genel font kullanımı:</p>
+<p>[sourcecode language="css"] body{ font-family:Arial, Helvetica,
+sans-serif } [/sourcecode]</p>
+<p>Şeklindedir. Burada birincil fontumuz Arial'dir alternatifi Helvatica ve
+yazı tipi ailesi sans-serif olduğunu belirtiyoruz. Normalde sadece Arial
+yazmamızda yeterlidir, ancak kullanıcının bilgisayarında bu yazı tipinin
+olmaması durumu düşünülerek alternatif yazı tipi ve yazı tipi ailesi
+yazılmıştır.</p>
+<p>Her ne kadar sadece kullanıcının bilgisayarında bulunan yazıtiplerinin
+kullanılması önerilmekte ise farklı yazı tipi kullanımınada olanak
+vardır. Macromedia Flash'ın font gömme özelliğinden yararlanarak
+istediğimiz yazı tiplerini web sayfamızda kullanabiliriz. Yöntem biraz
+karmaşık olasada isteyenler için iyi bir çözümdür. Ayrıntılı bilgi için
+"<a href="http://www.fatihhayrioglu.com/?p=294" title="metin yerine resim/flash koymak">Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)</a>"
+makalemize bir göz atın. Ayrı Microsoft'un yazı tipi gömmek üzerine
+çalışmaları sürmektedir. Eğer bu çalışmalar olumlu sonuç verirse
+tipografi açısından çok güzel gelişmeler yaşanacağı kesindir.</p>
+<p>Yazı tipi seçimi için bazı kaynaklarda öneriler vardır. Daha geniş ve
+yüksek yazı tiplerinin web'de daha iyi seçilebildiği ve okunduğu
+belirtilerek <strong>Verdana, Trebuchet ve Helvatica</strong> yazı tiplerinin
+kullanılması önerilmektedir. Ancak ben bu konuyu tasarımcılara bırakmayı
+yeğlerim açıkçası.</p>
+<h3>Yazı Boyutu</h3>
+<p>Web tipografisinde en çok kullanılan özellik yazı boyutudur. Ekran
+kullanımını en kolay şekilde ayarlamamıza yardımcı olur. Yazı boyutunu
+belirlerken iki ölçümüz vardır sabit değerler(px vb.) ve göreceli
+değerler(em, % vb.) Farklı yazı boyutları ile sayfamızdaki hiyerarşiyi
+ayarlayabiliriz. Bölyelikle daha okunabilir ve düzenli sayfalar elde
+edebiliriz.</p>
+<p><img alt="" src="../static/images/yazi_boyutlari.png" /></p>
+<p>Bir çok web sayfası kodlayıcısı aşağı yukarı tüm sayfalarında belli
+standart yazı boyutları kullanır. Bizde burada bu genel kullanılan yazı
+boyutları önerilerini sıralayalım:</p>
+<ul>
+<li>İçerik metinleri için 11px/16.5px arasında değerler</li>
+<li>Ana başlıklar(Anasayfa, Ürünler gibi başlıklar için) 24px</li>
+<li>Ana başlıkların altındaki ikincil başlıklar için 18px</li>
+<li>Menü elemanları ve üçüncü derece başlıklar için 16px</li>
+<li>Diğer başlıklar için 13px</li>
+</ul>
+<p>Genel bir css kodunu yazarsak</p>
+<p>[sourcecode language="css"] body {font: 11px/1.5em "Lucida Grande"; }
+h1, h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana,
+sans-serif; font-weight: normal;} h1 { font-size: 24px; } h2 {
+font-size: 18px; } h3 { font-size: 16px; line-height:2; } h4 {
+font-size: 13px; line-height:1.25; font-weight:bold; } h5 { font-size:
+12px; font-weight:bold; } h6 { font-size: 12px; } [/sourcecode]</p>
+<p>veya <strong>em</strong> cinsinden</p>
+<p>[sourcecode language="css"] body {font: 11px/1.5em "Lucida Grande";} h1,
+h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana, sans-serif;
+font-weight: normal;} h1 { font-size: 3em; } h2 { font-size: 2em; } h3 {
+font-size: 1.5em; line-height:2; } h4 { font-size: 1.2em;
+line-height:1.25; font-weight:bold; } h5 { font-size: 1em;
+font-weight:bold; } h6 { font-size: 1em; } [/sourcecode]</p>
+<p>Bu konuda çok güzel bir doküman hazırlayan <a href="http://code.google.com/p/blueprintcss/" title="CSS Anaçatısı">BluePrint CSS
+Anaçatısının</a> tipografi kısmına göz atmanızı tavsiye ederim.</p>
+<h3>Satır Yüksekliği(line-height)</h3>
+<p>Web tipografisinin en önemli özelliklerinden biridir satır yüksekliği
+tanımı. Metinlerin görünümünde büyük etkisi vardır. Satır yüksekliği
+için genel kabul <strong>yazı boyutunun1.4-1.6 katı</strong> kadar bir mesafedir.</p>
+<p><img alt="Satırlar arası yükseklik" src="../static/images/line_height.gif" /></p>
+<p>[sourcecode language="css"] body { font-family: "Lucida Grande",
+Helvetica, Arial, Verdana, sans-serif; line-height: 1.5em; }
+[/sourcecode]</p>
+<p>CSS kısaltmalarında tek yazı tipi değerine tüm yazı özellikleri ekleme
+imkanı sunar.</p>
+<p>[sourcecode language="css"] body { font:11px/1.5em "Lucida Grande",
+Helvetica, Arial, Verdana, sans-serif; } [/sourcecode]</p>
+<h3>Yazılara Vurgu Eklemek</h3>
+<p>CSS ile yazılarımızın önemli kısımlarını vurgulamak için bir kaç yöntem
+kullanırız.</p>
+<p><strong>Kalın:</strong> Vurgu için en çok kullanılan özellik yazıyı kalın yapmaktır.
+Normalde yazı tiplerinin kalın halleride vardır ancak web yazı
+tiplerinde böyle bir seçim yapamıyoruz bu nedenle yazılarımıza kalınlık
+kazandırmak için</p>
+<p>[sourcecode language="css"] h1{ font-weight:bold; } [/sourcecode]</p>
+<p>kodunu kullanırız. Kalın yazılmış yazılar diğer yazılara göre  daha
+dikkat çekici görünecektir. Genelde başlıklar ve önemli alanlar
+kalınlaştırılır.</p>
+<p><strong>Eğik:</strong> Vurgu için ikinci olarak eğik(italik) yazı şekli kullanılır.
+Eğik yazı şekli ekranda okunurluğu azaltsa da kullanıcıya farklı bir
+görünüm ile dikkat çeker.</p>
+<p>[sourcecode language="css"] blockquote { margin: 1.5em 0 1.5em 1.5em;
+color: #666; font-style: italic; } [/sourcecode]</p>
+<p><strong>Altıçizili:</strong> Üçüncü olarak altı çizili yazılar kullanılır. Web'de
+genelde altı çizili yazılar link olarak kullanılır ve böyle algılanır.</p>
+<p>[sourcecode language="css"]a{ color: #125AA7; text-decoration:
+underline; outline: none; } [/sourcecode]</p>
+<p><strong>Renk:</strong> Yazılarımızda farklı alanlara vurgu yapmak için kullanılan
+özelliklerden biride renk(color) özelliğidir. Meselahatalı alanları
+belirlemek için kırmızı renk kullanımı yaygındır.</p>
+<p>[sourcecode language="css"].hata{ color:#f00}[/sourcecode]</p>
+<p><strong>Büyük Yazı:</strong> Vurgu yapmak için nadiren de olsa tipografi bakımdan
+buda kullanılabilir bir seçenektir ama en azkullanılan vurgu tipidir.</p>
+<h3>Metin hizalama</h3>
+<p>CSS'in metin ve sayfa yatay hizalaması
+için<span style="FONT-WEIGHT:bold">text-align</span> özelliğini
+kullanırız. </p>
+<p><strong>Aldığı değerler:</strong> <strong>left</strong>(metni sola yaslar), <strong>right</strong>(metni sağa
+yaslar)ve  <strong>justify</strong> (metni iki yana yaslar) ve <strong>center</strong>(metini
+ortalar). Genelde leftdeğeri kullanılır. justify değeri uzun içerikli
+metinlerde kullanılanılabilir ancakbazı bölümlerde kötü görünüme neden
+olabilir. Özellikle son satırda sorunları vardır.</p>
+<p><img alt="" src="../static/images/tipografi_hizalama.gif" /></p>
+<p>justify(iki yana hizalı)  kullanımında meydana gelen sorunları gören W3C
+çalışmaları devam eden CSS3 ile birlikte
+<span style="FONT-WEIGHT:bold">inter-word</span>
+ve<span style="FONT-WEIGHT:bold">inter-character</span> özelliklerini
+eklenmiştir.Bu özellikler yardımı ile ileride justify özelliğini daha
+fazla kullanacağımızıdüşünüyorum.</p>
+<p>Ayrıca CSS3 ile birlikte
+<span style="FONT-WEIGHT:bold">text-align-last</span>özelliğide
+gelmektedir ki  bu özellik sayesinde justify ataması
+yaptığımızmetinlerin son satırında meydana gelen kelimeler arası fazla
+boşluk sorununuçözmüş olacağız. Ancak biraz daha sabır gerekiyor.</p>
+<h3>Harf Aralığı(letter-spacing)</h3>
+<p>Aslında bir kod yazarı letter-spacing özelliğine pek dokunmaz.
+Webtarayıcılarının tercihine bırakır bu değeri. Genelde atanan değerler
+makuldeğerlerdir, ancak mesela başlıklarda daha yüksek harf aralıkları
+kullanarakbaşlık ve metin arası farklılığı belirtilmiş olur ve
+başlıklarımız daha belirginhale getirebiliriz. Özel kullanımlarda
+yararlı olabilecek bir özelliktir.</p>
+<h3>Sözcükler Arası Mesafe(word-spacing)</h3>
+<p>Bu özellikte genelde dokunulmayan özellikler arasındadır. Ancak her web
+sayfası aynıdeğerleri kullanacak diye bir şey yoktur. Bazen farklı
+sonuçlar elde etmek içinfarklı değerler kullanabiliriz.</p>
+<p>[sourcecode language="css"]p {word-spacing: .2em;} [/sourcecode]</p>
+<h3>Paragrafın ilk satırını içeriden başlatmak (text-indent)</h3>
+<p>Birçok dergi, gazete ve yazıda karşılaştığımız bu yöntemi CSS yardımı
+ile çok basit bir şekilde yaparız.</p>
+<p>[sourcecode language="css"] p { text-indent: 2.5em; } [/sourcecode]</p>
+<p>Göreceli değer kullanmak daha mantıklıdır.</p>
+<h3>Sonuç</h3>
+<p>blueprint tipografi uygulamalarını göz atın .
+http://bjorkoy.com/blueprint/typography-test.html</p>
+<p>Web tipografisinde CSS'in yeri çok önemlidir. sFIR gibi yeni metotların
+geliştirilmesi ile web'de tipografi bakımından daha iyi sonuçlar
+alacağımıza inanıyorum. Ancak sFIR bana biraz zorlama bir metot gibi
+geliyor. Bu konuda işletim sistemi üreticilerinin daha farklı çözümlere
+gitmeleri gerektiğini düşünüyorum. <a href="http://www.microsoft.com/typography/web/embedding/weft3/default.htm">Microsoft</a>'un bu yönde çalışmaları
+var ancak hala tam sonuçlanmış çözümler değil.</p>
+<p>Son olarak CSS ile yapılabileceklere bir örnek olması açısından
+<a href="http://www.3point7designs.com/advanced_type.html">3point7designs.com</a> yaptıklarına bir göz atmanızı öneriyorum.
+Sınırları zorlayan güzel örnekler</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://webtypography.net/toc/%20">http://webtypography.net/toc/</a></li>
+<li><a href="http://www.sitepoint.com/print/anatomy-web-fonts">http://www.sitepoint.com/print/anatomy-web-fonts</a></li>
+<li>[http://www.markboulton.co.uk/journal/comments/five_simple_steps_to_better_typography/][]</li>
+<li>[http://www.digital-web.com/articles/css_typography/][] (css ve
+    tipografi hakkında genel bir yazı)</li>
+<li>[http://www.digital-web.com/articles/css_101/][] (uygulamalı css ve
+    tipografi)<br />
+</li>
+<li>[http://www.fotografya.gen.tr/issue-6/hasip.html][İnternetteki
+    Tipografi Sorunları ve GörselKirlenmeye Karşı Öneriler] (genel
+    tipografi bilgisi Türkçe)<br />
+</li>
+<li><a href="http://www.webmonkey.com/design/fonts/tutorials/tutorial3.html">http://www.webmonkey.com/design/fonts/tutorials/tutorial3.html</a>
+    (Çok geniş bir tipografi bilgisi)<br />
+</li>
+<li><a href="http://clagnut.com/search/index.php?q=typography">http://clagnut.com/search/index.php?q=typography</a> (tipografi
+    linkleri)</li>
+<li><a href="http://www.wpdfd.com/issues/23/typography/">http://www.wpdfd.com/issues/23/typography/</a> (genel bilgi)</li>
+<li><a href="../static">http://www.3point7designs.com/blog/2006/09/20/advanced-typography-techniques-using-css/</a> 
+    (farklı metin uygulamaları)<br />
+</li>
+<li><a href="http://www.alistapart.com/articles/sizematters/">http://www.alistapart.com/articles/sizematters/</a> (font boyutunu
+    farklı tarayıcılarda farklı olma sorunu ve çözümü)<br />
+</li>
+<li><a href="http://www.lifeclever.com/web-typography-40-resources-tools/">http://www.lifeclever.com/web-typography-40-resources-tools/</a>
+    (Tipografi araçları)<br />
+</li>
+<li><a href="http://www.mandarindesign.com/troops.html">http://www.mandarindesign.com/troops.html</a> (uygulamlar var)<br />
+</li>
+<li><a href="../static">http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/</a></li>
+<li><a href="http://typetester.maratz.com/">http://typetester.maratz.com/</a></li>
+<li><a href="http://www.webstyleguide.com/type/">http://www.webstyleguide.com/type/</a></li>
+<li><a href="../static">http://www.sitepoint.com/blogs/2007/04/30/typography-baseline-rhythm-deciphered/</a><br />
+</li>
+<li><a href="http://ceyhunaksan.com/css-ve-tipografi/">http://ceyhunaksan.com/css-ve-tipografi/</a></li>
+<li><a href="http://topfunky.com/baseline-rhythm-calculator/">http://topfunky.com/baseline-rhythm-calculator/</a> (tipografi
+    çevirimiçi aracı)</li>
+<li><a href="http://www.wpdfd.com/issues/23/typography/">http://www.wpdfd.com/issues/23/typography/</a></li>
+<li><a href="http://www.peachpit.com/store/product.aspx?isbn=0321305256">http://www.peachpit.com/store/product.aspx?isbn=0321305256</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fotografya</span><span class="p">.</span><span class="n">gen</span><span class="p">.</span><span class="n">tr</span><span class="o">/</span><span class="n">issue</span><span class="o">-</span>6<span class="o">/</span><span class="n">hasip</span><span class="p">.</span><span class="n">html</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">markboulton</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">journal</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="n">five_simple_steps_to_better_typography</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>3<span class="n">point7designs</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2006<span class="o">/</span>09<span class="o">/</span>20<span class="o">/</span><span class="n">advanced</span><span class="o">-</span><span class="n">typography</span><span class="o">-</span><span class="n">techniques</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">css</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>3<span class="n">point7designs</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2007<span class="o">/</span>08<span class="o">/</span>16<span class="o">/</span><span class="n">web</span><span class="o">-</span><span class="n">typography</span><span class="o">-</span>50<span class="o">-</span><span class="n">sources</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">inspiration</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">instruction</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">sitepoint</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blogs</span><span class="o">/</span>2007<span class="o">/</span>04<span class="o">/</span>30<span class="o">/</span><span class="n">typography</span><span class="o">-</span><span class="n">baseline</span><span class="o">-</span><span class="n">rhythm</span><span class="o">-</span><span class="n">deciphered</span><span class="o">/</span>
+</pre></div>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "css-ve-tipografi/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

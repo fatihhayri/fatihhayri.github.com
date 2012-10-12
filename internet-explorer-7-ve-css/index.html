@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Internet Explorer 7 ve CSS</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="internet-explorer-7-ve-css/" rel="bookmark"
+           title="Permalink to Internet Explorer 7 ve CSS">Internet Explorer 7 ve CSS</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2006-10-30T19:50:00">
+                Mon 30 October 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari.html">CSS, Web Standartları</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/internet-explorer7.html">Internet-explorer7</a><a href=".././tag/ie7.html">ie7</a><a href=".././tag/microsoft.html">microsoft</a><a href=".././tag/web-standartlari.html">Web Standartları</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>Internet Explorer 7 tam sürümü yayınlandı, peki bu yeni sürüm
+bizlere(web kodlayıcılarına) ne kazandırıyor. Güvenlik açısından
+yenilikler içeren IE7 eski versiyonlardaki CSS sorunlarının bir çoğunuda
+çözmüş görünüyor. Bu bizim gibi kodlayıcılar için çok güzel bir gelişme,
+IE gibi web tarayıcı pazarında %75'ni(değişik oranlar mevcut ben de
+ortalamayı aldım) elinde bulunduran bir web tarayıcısının standartlara
+daha uyumlu olması bizi sevindiriyor. <!--more--></p>
+<p>Bu makale IE7 ile çözülen CSS hatalarına bir göz atacağız.</p>
+<p>Artık IE için ayrıca CSS kodlarımızı düzenlemeyeceğiz(Bir süre daha
+kodlayacağız tabi IE 7 yaygınlaşana kadar). Buna sevinmeliyiz. IE7 ile
+birlikte 200'e yakın CSS sorununu düzeltildiğini söylüyor Microsoft. Tüm
+bu düzeltmelerin [\&lt;!DOCTYPE> switch][]'da çalıştığını [Garip
+Mod][\&lt;!DOCTYPE> switch]'da ise IE6 gibi yorumlayacağını söylüyor ona
+göre.</p>
+<h3>IE7 ile Düzelen Genel Sorunlar</h3>
+<ul>
+<li>
+<p><strong>Peekaboo Sorunu</strong> - İçinde uzunca bir metin, resim, link vb.
+    içerik olan bir katmanımız olsun ve bu katmanın altında bir
+    <strong>clear:both</strong> uygulanan bir bir katmanımız olsun. Firefox, Safari
+    veya diğer yeni nesil tarayıcılarda bu kod sorunsuz çalışacaktır.
+    Ancak Internet Explorer 6'da içerik bölümü görünmeyecektir.
+    Ayrıntılı bilgi için <a href="http://www.positioniseverything.net/explorer/peekaboo.html">tıklayınız</a>. <br />
+</p>
+</li>
+<li>
+<p><strong>Giyotin Hatası</strong> ' Float uygulanmış bir elementteki linklerin
+    üzerine geldiğinizde kapsayıcı elementin altı kısmı kayboması
+    sorunu. Ayrıntılı bilgi için <a href="http://www.positioniseverything.net/explorer/guillotine.html">tıklayınız.</a> <br />
+</p>
+</li>
+<li>
+<p><strong>Tekrarlayan Karakter Sorunu</strong>-Bu hata birden fazla float
+    uygulanmış içiçe elementlerde meydana gelir. Son float uygulanmış
+    elementin son karakterleri alt tarafta tekrarlanır. Bu hatayı
+    ayıklamak için ne yapabiliriz, ayrıntıları görmek için
+    <a href="http://www.fatihhayrioglu.com/?p=232">tıklayınız.</a> (12/12/2006'da güncellendi) <br />
+</p>
+</li>
+<li>
+<p><strong>Kenarlık Kargaşası</strong> ' Bu hata iki içiçe geçmiş blok-level
+    elementlerde; negatif üst margin kulanıldığında ; son olarakta
+    ikinci kutu veya üst element de kenarlık içermesi durumlarında
+    meydana gelir. Ayrıntılı bilgi için <a href="http://www.positioniseverything.net/explorer/border-chaos.html">tıklayınız</a>. <br />
+</p>
+</li>
+<li>
+<p><strong>Kaydrıma Çubuğu Çıkmama Sorunu</strong> 'Kapsayıcı kutunun uzun içeriği
+    olmasına karşın kaydırma çubuğunun çıkmaması ve alt kısımdaki
+    içeriğin görünmemesi sorunudur. Ayrıntılı bilgi için
+    <a href="http://www.positioniseverything.net/explorer/unscrollable.html">tıklayınız</a>. <br />
+</p>
+</li>
+<li>
+<p><strong>3 Piksel Metin Öteleme Sorunu</strong> ' Float uygulanmış elementlerdeki
+    metine 3 piksel boşluk uygular ve element normal yerinden aşağı
+    kayar. Bu hatayı ayıklamak için ne yapabiliriz, ayrıntıları görmek
+    için <a href="http://www.fatihhayrioglu.com/?p=231">tıklayınız.</a> (10/12/2006'da güncellendi) <br />
+</p>
+</li>
+<li>
+<p><strong>Sihirli Gizli Metin Sorunu</strong> 'Bu hataIE/5.5/6/Win meydana gelir.
+    Bir biri içine geçmiş elementlerde ve aşağıdaki kodu içeren
+    dışarıdaki elementlerde meydan gelir: Ayrıntılı bilgi için
+    <a href="http://www.positioniseverything.net/explorer/creep.html">tıklayınız</a>.<br />
+</p>
+</li>
+</ul>
+<p>[sourcecode language="css"] div { border-left: 1px solid red;
+padding-bottom: 1px; } [/sourcecode]</p>
+<ul>
+<li>
+<p><strong>Line-height/Replaced Element Sorunu:</strong> Eğer line-height uygulanmış
+    bir satırda replaced element varsa line-height değeri sorunlu
+    yorumlanacaktır. Ayrıntılı bilgi için <a href="http://www.positioniseverything.net/explorer/lineheightbug.html">tıklayınız</a>.<br />
+</p>
+</li>
+<li>
+<p><strong>Tekrarlanan Satır Başı Boşluğu Sorunu</strong><br />
+    Bu hata float uygulanmış katmanın yanındaki
+    inline-elementlerde(metin ve resim) meydana gelir.<br />
+    Ayrıntılı bilgi için <a href="http://www.positioniseverything.net/explorer/floatIndent.html">tıklayınız</a>. <br />
+</p>
+</li>
+<li>
+<p><strong>IE/Win'de Gözden Kaybolan List-background Sorunu</strong> <br />
+    Bu hata Göreceli Konumlandırmalı floating uygulanmış bir liste
+    elementine background uygulandığında meydana gelir. Ayrıntılı bilgi
+    için <a href="http://www.positioniseverything.net/explorer/ie-listbug.html">tıklayınız</a>. <br />
+</p>
+</li>
+<li>
+<p><strong>Internet Explorer ve Genişleyen Kutu Problemi</strong><br />
+    Ayrıntılı bilgi için <a href="http://www.positioniseverything.net/explorer/expandingboxbug.html">tıklayınız</a>. <br />
+</p>
+</li>
+<li>
+<p><strong>IE6'nınGarip Yüzde Sorunu</strong><br />
+    Ayrıntılı bilgi için <a href="http://www.positioniseverything.net/explorer/percentages.html">tıklayınız</a>. <br />
+</p>
+</li>
+<li>
+<p><strong>IE ve İtalik Yazı Sorunu</strong><br />
+    Ayrıntılı bilgi için <a href="http://www.positioniseverything.net/explorer/ie-listbug.html">tıklayınız</a>. <br />
+</p>
+</li>
+<li>
+<p><strong>Kayıp İlk Harf Hatası</strong><br />
+    Ayrıntılı bilgi için <a href="http://www.positioniseverything.net/explorer/firstletter.html">tıklayınız</a>. <br />
+</p>
+</li>
+<li>
+<p><strong>Yanıltıcı Kutu Sorunu</strong><br />
+    Ayrıntılı bilgi için <a href="http://www.positioniseverything.net/explorer/inlinelist.html">tıklayınız</a>.</p>
+</li>
+</ul>
+<h3>Diğer Düzeltilen Hatalar</h3>
+<ul>
+<li><strong>:hover</strong> sadece linklere(a) değil tüm elementlere uygulanabiliyor
+    (Bu sayede menu oluştururken IE için script yazmayacağız, tabi bunu
+    için erken daha)</li>
+<li><strong>Background-attachment: fixed</strong> tüm elementlerde çalışıyor</li>
+<li><strong>\&lt;?xml></strong> ön tanımlamasını <strong>[Garip Mod][\&lt;!DOCTYPE> switch]</strong>
+    olarak algılamıyor artık</li>
+<li><strong>Overflow</strong> şimdi çalışıyor(Bunun anlamı kutular artık otomatik
+    büyümeyecek.)</li>
+<li>Derleyici Hataları : * html, _property and /**/ yorum hataları
+    düzeltilmiş</li>
+<li>Mutlak Konumlandırılmış elelmnetlerde genişlik auto <br />
+    left ve right değerlerindeki sorunlar giderilmiş</li>
+<li>Belirli Göreceli Konumlandırma sorunları giderilmiş</li>
+<li>Belirli Mutlak Konumlandırma sorunları giderilmiş</li>
+<li>1 px noktalı(dotted) kenarlıklar atık çizgili(dashed) gibi
+    yorumlanmayacak</li>
+<li>birkaç negatif margin uygulamalrındaki sorunlar giderilmiş</li>
+<li>Pseudo-sınıfları ve Pseudo-elementleri destekliyor (:first-letter,
+    :first-line vd.)</li>
+<li><strong>!important</strong> sorunları giderilmiş</li>
+<li><strong>List-item</strong> boşluk sorunu giderilmiş</li>
+<li>ve bir çok sorun giderilmiş.</li>
+</ul>
+<p>Tüm liste için <a href="http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx">tıklayınız</a>.</p>
+<h3>CSS2.1'deki yeni özellikleri destekliyor</h3>
+<ul>
+<li>Min/max width/height destekliyor</li>
+<li>Transparent kenarlıkları destekliyor</li>
+<li>Fixed konumlandırmayı destekliyor</li>
+<li>PNG destekliyor</li>
+<li><a href="http://www.fatihhayrioglu.com/?p=62">Çocuk Seçiciler</a> ve <a href="http://www.fatihhayrioglu.com/?p=62">Bitişik Kardeş Seçicileri</a>
+    destekliyor.</li>
+</ul>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx">http://blogs.msdn.com</a></li>
+<li><a href="http://www.devarticles.com/c/a/Web-Style-Sheets/CSS-Standards-Compliance-in-Internet-Explorer-7/">http://www.devarticles.com</a></li>
+<li><a href="http://www.webcredible.co.uk/user-friendly-resources/css/internet-explorer-7.shtml">http://www.webcredible.co.uk</a></li>
+<li><a href="http://www.mezzoblue.com/archives/2005/07/28/ie7_css_upda/">http://www.mezzoblue.com</a></li>
+</ul>
+</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "internet-explorer-7-ve-css/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

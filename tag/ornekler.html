@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - örnekler</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css3-box-shadow-ornekleri/">CSS3 box-shadow örnekleri</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2012-04-21T15:51:00">
+                Sat 21 April 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/box-shadow.html">box-shadow</a><a href=".././tag/ornekler.html">örnekler</a><a href=".././tag/snippets.html">snippets</a><a href=".././tag/tek-koseye-golge.html">tek köşeye gölge</a></p>
+
+
+</footer><!-- /.post-info --><p>CSS3 özellikleri hayatımıza girmeye başladı. Artık projelerimizde CSS3
+renk geçişini, metin gölgelendirme(text-shadow), kutu
+gölgelendirme(box-shadow) kullanabiliyoruz. Kullandıkça görüyoruz ki
+yeni özellikler güzel ancak eklemek için biraz daha fazla kod yazmak
+gerekiyor ve bazı durumları oluşturmak için bazı araçlar gerekiyor.
+Örneğin CSS Gradient Generator vs. gibi</p>
+<p>Benzer bir durum kutu gölgelerinde(box-shadow) karşılaştım. Bazı kutu
+gölgeleme işlerini bir köşeye kaydetmeye başladım çünkü kodu o kadarda
+akılda kalıcı değil.</p>
+<p>Sonra bunu yazı haline getirmek istediğimde gördüm ki zaten birçok kişi
+bu konuda yazı yazmış. Bende bunları toparlayıp bir yazı çıkarayım
+dedim. Bu yazıyı bir yere kaydedin lazım olacak muhakkak. Aslında bu
+örnekler yakında editörler tarafından sunulacaktır diye düşünüyorum.</p>
+<p><a href="http://www.fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/">kutulara gölge verme</a> yazımızı okursanız kutu gölgeleri hakkında
+bilgi sahibi olabilirsiniz. Kutuları 4 köşe olduğunu düşünürsek.</p>
+<h3>4 Köşeye gölge vermek</h3>
+<p>Normal box-shadow değerleri dikey ve yatayda değerler verilince hep
+açılı gölgeler veriyor. Biz tüm kutunun etrafına gölge vermek için; blur
+değeri ve spread  değerini kullanıyoruz.</p>
+<p>[css] div { -webkit-box-shadow: 0 0 6px 4px black; -moz-box-shadow: 0 0
+6px 4px black; box-shadow: 0 0 6px 4px black; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/7wyeD/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>blur değeri spread  değerinden büyük ise farklı,</p>
+<p>[css] div { -webkit-box-shadow: 0 0 4px 6px black; -moz-box-shadow: 0 0
+4px 6px black; box-shadow: 0 0 4px 6px black; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/NKXZG/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>blur değeri spread  değerinden küçük ise farklı bir gölge efekti
+görüyoruz.</p>
+<h3>Çoklu Kenar Çizgisi Oluşturmak</h3>
+<p><a href="http://www.fatihhayrioglu.com/coklu-kenar-cizgisiborder-kullanimi/">Önceki makalede</a> bahsettiğimiz gibi, çoklu kenar çizgileri oluşturmak
+için; spread  değeri yardımı ile yapılan bu etki için diğer değerler
+sıfırlanmalıdır.</p>
+<p>[css] div { border: 3px solid orange; -webkit-box-shadow: 0 0 0 3px
+black, 0 0 0 6px red; -moz-box-shadow: 0 0 0 3px black, 0 0 0 6px red;
+box-shadow: 0 0 0 3px black, 0 0 0 6px red; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/RPqUC/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<h3>Tek Köşeye Gölge Vermek</h3>
+<p>Kutuların sadece x veya y köşelerinden göstermek için box-shadow
+tanımının sınırlarınız zorlamamız gerekiyor. Bu iş için bir kaç yöntem
+mevcut, ben burada hepsini paylaşıyoruz avantaj ve dezavantajlarını
+görerek karar vermek size kalmış.</p>
+<p><strong>1. Yöntem</strong> bir köşeye gölge verirken aynı zamanda diğer köşelere
+kenar çizgisi atayarak.</p>
+<p>[css] div { -webkit-box-shadow: 1px 0 2px black; -moz-box-shadow: 1px 0
+2px black; box-shadow: 1px 0 2px black; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3f7SU/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p><strong>2. Yöntem</strong> Diğer köşelere herhangi bir kenar çizgisi veya gölge
+atamadan sadece bir köşeye gölge tanımlamak;</p>
+<p>[css] div { width:250px; height:250px; background: white;
+-webkit-box-shadow: 0 0 0 4px white, 0 6px 4px black; -moz-box-shadow: 0
+0 0 4px white, 0 6px 4px black;    box-shadow: 0 0 0 4px white, 0 6px
+4px black; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/juVMm/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>Mantık olarak iki gölge tanımı yapıyoruz, birincisi spread ile kutu
+ardalan rengi ile aynı renkte 4px bir alan oluşturuyoruz, ikinci gölge
+tanımı ile de bu tanımladığımız boş alanın dışına çıkacak köşeye daha
+fazla değer verip dışarı çıkmasını sağlıyoruz.</p>
+<p><strong>3. Yöntem</strong> Bu örnekte kenar çizgisi oluşturulan yeni kutunun biraz
+içinde kalır.</p>
+<p>[css] div { width:250px; height:250px; background: white;
+-webkit-box-shadow: 0 0 0 4px white, 0 6px 4px black; -moz-box-shadow: 0
+0 0 4px white, 0 6px 4px black;    box-shadow: 0 0 0 4px white, 0 6px
+4px black;    border:1px solid #f00; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/5pVbj/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>Eğer kenar çizgisi kullanılacaksa;</p>
+<p>[css] div { width:250px; height:250px; background: white;
+-webkit-box-shadow: 0 8px 6px -6px black; -moz-box-shadow: 0 8px 6px
+-6px black; box-shadow: 0 8px 6px -6px black;    border:1px solid #f00;
+} [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/5pVbj/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>Blur değeri kadar eksi spread değeri atayarak bu çözüm oluşturulmuştur.</p>
+<p><strong>4. Yöntem</strong> :before seçicisi yardımı ile absolute tanımlı gölge
+eklenir.</p>
+<p>[css] div { width:250px; height:250px;    position: relative;
+   padding: 0 7px 0 0;    overflow: hidden; } div:before {  position:
+absolute;  content: ' ';  top: 0px;  right: 7px;  bottom: 0;  left: 0;
+ background-color: transparent;  box-shadow: 0 0 5px black;  border: 1px
+solid red; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/x9Pbr/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>Çıkmasını istediğimiz kenara padding tanımı yapılır, :before seçicisi
+ile o köşeye ait kenar değeri padding ile aynı tanımlanır. :before
+seçicisine box-shadow tanımı yapılır yapılan padding tanımından fazla
+değer içermelidir.</p>
+<h3>3 Köşeye Gölge Tanımlama</h3>
+<p>Yukarıdaki 4.yönteme benzer bir kullanım ile yapılır.</p>
+<p>[css] div { width:250px; height:250px; position: relative; padding: 7px
+0 7px 7px; overflow: hidden; } div:before {  position: absolute;
+ content: ' ';  top: 7px;  right: 7px;  bottom: -7px;  left: 7px;
+ background-color: transparent;  box-shadow: 0 0 5px black;  border: 1px
+solid red; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/j9bAp/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>Yukarıdaki yöntemin tersi yapılır ve kaldırılacak köşeye eksi değer
+atanır.</p>
+<h3>Sonuç</h3>
+<p>CSS3 bizi resim yönetme araçlarına bağlı olmaktan olduğunca kurtarmaya
+çalışıyor. Box-shadow bu kurtarma yöntemlerinin en güzellerinden birisi.
+Ben yukarıda genelde iş yaparken lazım olan örnekleri sergiledim.
+Kaynaklardaki linklerde box-shadow özelliği ile yapılmış çok farklı
+gölge uygulamaları mevcut, bu uygulamaları incelemekte yarar var.
+Tasarımları HTML’e çevirirken bu örneklerin aklımızın bir yanında
+durmasında fayda var. Tasarımda gördüğümüz birçok gölge uygulamasını
+box-shadow ile halledebiliyoruz. Birçoğunu diyorum, ama hepsi
+diyemiyorum, çünkü tasarımcıların sınırları belli olmadığı için hepsi
+demek zor.</p>
+<p>box-sahdow müşteriyi patronu ikna edebildiğimiz yerlerde
+uygulayabildiğimiz özellikler, ama gerçekten arayüz geliştiriciye büyük
+kolaylıklar sağlıyor.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="static">http://theburningmonk.com/2010/12/having-fun-with-css3-box-shadow-property/</a>
+    (box-shadow özelliği)</li>
+<li><a href="http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/">http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/</a></li>
+<li><a href="http://matthamm.com/box-shadow-curl.html">http://matthamm.com/box-shadow-curl.html</a> (kelebek köşe örneği)</li>
+<li><a href="http://www.webdesignshock.com/css3-box-shadow/">http://www.webdesignshock.com/css3-box-shadow/</a></li>
+<li><a href="static">http://www.red-team-design.com/how-to-create-slick-effects-with-css3-box-shadow</a></li>
+<li><a href="static">http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/</a></li>
+<li><a href="http://erenemre.com/556">http://erenemre.com/556</a></li>
+<li><a href="http://blog.syndicate-fx.com/code-snippets/css3-boxshadow-effects/">http://blog.syndicate-fx.com/code-snippets/css3-boxshadow-effects/</a></li>
+<li><a href="http://www.ballyhooblog.com/realistic-css3-box-shadows/">http://www.ballyhooblog.com/realistic-css3-box-shadows/</a></li>
+<li><a href="http://www.sitepoint.com/pure-css3-paper-curl/">http://www.sitepoint.com/pure-css3-paper-curl/</a></li>
+<li><a href="http://www.css3.info/preview/box-shadow/">http://www.css3.info/preview/box-shadow/</a></li>
+<li><a href="http://www.wewillbeok.com/likeacastshadow/">http://www.wewillbeok.com/likeacastshadow/</a> (farklı bir örnek)</li>
+<li><a href="http://toolboxdigital.com/2011/03/css3-3d-gradient-box/">http://toolboxdigital.com/2011/03/css3-3d-gradient-box/</a></li>
+<li><a href="http://daneden.me/2011/11/a-non-scientific-box-shadow-experiment/">http://daneden.me/2011/11/a-non-scientific-box-shadow-experiment/</a></li>
+<li><a href="static">http://www.paulund.co.uk/creating-different-css3-box-shadows-effects</a></li>
+<li><a href="static">http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/</a>
+    (makaleye örnek)</li>
+<li><a href="http://starikovs.com/2011/11/09/css3-one-side-shadow/">http://starikovs.com/2011/11/09/css3-one-side-shadow/</a></li>
+<li><a href="http://nicolasgallagher.com/css-drop-shadows-without-images/demo/">http://nicolasgallagher.com/css-drop-shadows-without-images/demo/</a>
+    Örnekler Sayfası</li>
+<li><a href="static">http://translate.google.com/translate?hl=en&amp;sl=auto&amp;tl=en&amp;u=http%3A%2F%2Fwww.alsacreations.com%2Ftuto%2Flire%2F1338-css3-box-shadow-ombre.html</a>
+    (box-shadow güzel)</li>
+<li><a href="static">http://www.creativejuiz.fr/blog/tutoriels/ombre-avancees-avec-css3-et-box-shadow</a>
+    (güzel incele)</li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">theburningmonk</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>12<span class="o">/</span><span class="n">having</span><span class="o">-</span><span class="n">fun</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">-</span><span class="n">property</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">red</span><span class="o">-</span><span class="n">team</span><span class="o">-</span><span class="n">design</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">slick</span><span class="o">-</span><span class="n">effects</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">viget</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">inspire</span><span class="o">/</span>39<span class="o">-</span><span class="n">ridiculous</span><span class="o">-</span><span class="n">things</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">do</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadows</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">paulund</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">creating</span><span class="o">-</span><span class="n">different</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadows</span><span class="o">-</span><span class="n">effects</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">w3conversions</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2011<span class="o">/</span>09<span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">spread</span><span class="o">-</span><span class="n">value</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">-</span><span class="n">on</span><span class="o">-</span><span class="n">one</span><span class="o">-</span><span class="n">side</span><span class="o">-</span><span class="n">only</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">translate</span><span class="p">.</span><span class="n">google</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">translate</span>?<span class="n">hl</span><span class="p">=</span><span class="n">en</span><span class="o">&amp;</span><span class="n">sl</span><span class="p">=</span><span class="n">auto</span><span class="o">&amp;</span><span class="n">tl</span><span class="p">=</span><span class="n">en</span><span class="o">&amp;</span><span class="n">u</span><span class="p">=</span><span class="n">http</span><span class="c">%3A%2F%2Fwww.alsacreations.com%2Ftuto%2Flire%2F1338-css3-box-shadow-ombre.html</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">creativejuiz</span><span class="p">.</span><span class="n">fr</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">tutoriels</span><span class="o">/</span><span class="n">ombre</span><span class="o">-</span><span class="n">avancees</span><span class="o">-</span><span class="n">avec</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">et</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span>
+</pre></div><p>There are <a href=".././css3-box-shadow-ornekleri/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

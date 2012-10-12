@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - tooltip</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css-ile-arac-ipucutooltip-hazirlama/">CSS ile Araç İpucu(Tooltip) Hazırlama</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2007-06-19T08:54:00">
+                Tue 19 June 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/aciklama-balonu.html">açıklama-balonu</a><a href=".././tag/arac-ipucu.html">araç-ipucu</a><a href=".././tag/css.html">CSS</a><a href=".././tag/haberler.html">Haberler</a><a href=".././tag/tooltip.html">tooltip</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info --><p>Bazı web tarayıcıları title tanımlı nesnelerin üzerine gelince
+tanımlanan bilgileri gösterirler. Bir çok tasarımcı javascript ve css
+yardımıyla Araç İpucu geliştirerek farklı tipte ve çeşitte araç ipucu
+oluşturmaktadır ve oluşturmaya devam etmektedir. Biz burada sadece CSS
+ile Araç İpucu oluşturmayı göreceğiz. Bu metot yeni nesil tarayıcılarda
+sorunsuz çalışmaktadır. <!--more--></p>
+<p>XHTML kodu :</p>
+<p>[sourcecode language="html"] \&lt;p> \&lt;a
+href="http://www.fatihhayrioglu.com/" class="aracIpucu">Fatih
+Hayrioğlu\&lt;span> (Fatih Hayrioğlu’nun Not Defteri) \&lt;/span>\&lt;/a> web
+sitesine bir göz atın. \&lt;/p> [/sourcecode]</p>
+<p>Araç İpucu eklenecek linke aracIpucu sınıfı atanmış ve Araç İpucu içinde
+görünecek açıklama \&lt;span> etiketleri arasına alınmıştır.</p>
+<p>[sourcecode language="css"] a.aracIpucu{ position: relative; }
+a.aracIpucu span { display: none; } [/sourcecode]</p>
+<p>Buradaki espri konumlandırma(realtive->absolute) esprisidir. Araç İpucu
+eklenecek linke position: relative; ataması yapıp, içindeki span
+elementinide mutlak konumlandırma atayarak işi halledeceğiz. Ama sayfa
+ilk yüklendiğinde span içindeki bilgi görünmemesi için başlangıç
+durumunda span etiketini görünmez yapıyoruz(display:none;).</p>
+<p>[sourcecode language="css"] a.aracIpucu:hover span { display: block;
+position: absolute; top: 18px; left: 20px; width:200px; } [/sourcecode]</p>
+<p>Fare imleci link üzerine geldiğinde(:hover) span içeriğini göstermek
+için display:block ataması yapıyoruz. Ayrıca araç ipucunun yerini
+belirliyoruz. Araç İpucuna görsellik kazandırmak isteyenler için
+aşağıdaki kodları ekleyebiliriz.</p>
+<p>[sourcecode language="css"] a.aracIpucu:hover span { display:block;
+position:absolute; top:18px; left:20px; width:200px; padding:2px 6px;
+border:1px solid #963; background-color:#FF6; color:#000; }
+[/sourcecode]</p>
+<p>Maalesef bu kod IE5x versiyonlarda tam anlamıyla çalışmayacaktır. Bu
+durumu düzeltmek için</p>
+<p>[sourcecode language="css"] a.aracIpucu:hover { font-size: 100%; /*
+IE5.x/Win duzeltmek icin */ } [/sourcecode]</p>
+<p>Örneği görmek için <a href="static/dokumanlar/arac_ipucu_1.html">tıklayınız.</a> Veyahut resimli bir tanıtım için
+başka bir örnek yaparsak <a href="static/dokumanlar/arac_ipucu_3.html">tıklayınız.</a></p>
+<p>Ayrıca Safari kullanıcıları için üzgünüz. Safari bu kodlara olumlu yanıt
+vermiyor.</p>
+<p>Görselliği daha hoş olan araç ipuçlarıda yapabiliriz. Bunun için Xhtml
+kodumuzu aşağıdaki <strong>em</strong> eklemesini yapıyoruz. Amacımız bu elemente
+ikon resmini eklemek.</p>
+<p>[sourcecode language="html"] \&lt;p> \&lt;a
+href="http://www.fatihhayrioglu.com/" class="aracIpucu"> Fatih
+Hayrioğlu\&lt;span>\&lt;em>\&lt;/em> (Fatih Hayrioğlu'nun Not Defteri)
+\&lt;/span>\&lt;/a> web sitesine bir göz atın. \&lt;/p> [/sourcecode]</p>
+<p>CSS koduna gelince:</p>
+<p>[sourcecode language="css" highlight="4,5"] a.aracIpucu:hover span {
+display:block; position:absolute; top:25px; left:-5px; width:200px;
+padding:2px 6px; border:1px solid #963; background-color:#FF6;
+color:#000; } [/sourcecode]</p>
+<p>düzeltmesini yapıyoruz. Ayrıca ikon için aşağıdaki eklemeyi yapıyoruz.</p>
+<p>[sourcecode language="css"] a.aracIpucu:hover span em {
+position:absolute; left:20px; top:-6px; width:11px; height:6px;
+background:#fff url(yukariok.gif) 0 0; display:block; font-size:1px; }
+[/sourcecode]</p>
+<p>Örneği görmek için <a href="static/dokumanlar/arac_ipucu_2.html">tıklayınız.</a></p>
+<ul>
+<li><a href="static">http://www.smashingmagazine.com/2007/06/12/tooltips-scripts-ajax-javascript-css-dhtml/</a></li>
+<li><a href="http://www.cssplay.co.uk/menu/tooltips.html">http://www.cssplay.co.uk/menu/tooltips.html</a></li>
+<li><a href="http://www.communitymx.com/content/article.cfm?page=1&amp;cid=4E2C0">http://www.communitymx.com/content/article.cfm?page=1&amp;cid=4E2C0</a></li>
+<li><a href="http://psacake.com/web/jl.asp">http://psacake.com/web/jl.asp</a></li>
+<li><a href="http://www.cssplay.co.uk/menu/tooltips.html">http://www.cssplay.co.uk/menu/tooltips.html</a></li>
+<li><a href="http://www.peutetreunereponse.net/article-6614978.html">http://www.peutetreunereponse.net/article-6614978.html</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2007<span class="o">/</span>06<span class="o">/</span>12<span class="o">/</span><span class="n">tooltips</span><span class="o">-</span><span class="n">scripts</span><span class="o">-</span><span class="n">ajax</span><span class="o">-</span><span class="n">javascript</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">dhtml</span><span class="o">/</span>
+</pre></div><p>There are <a href=".././css-ile-arac-ipucutooltip-hazirlama/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././14-haziran-2007-webden-secme-haberler/" rel="bookmark"
+                           title="Permalink to 14 Haziran 2007 Web'den Seçme Haberler">14 Haziran 2007 Web&#039;den Seçme Haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2007-06-14T08:40:00">
+                Thu 14 June 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/geyikposta.html">geyikposta</a><a href=".././tag/haberler.html">Haberler</a><a href=".././tag/tab.html">tab</a><a href=".././tag/tooltip.html">tooltip</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>Geyik bir olay <a href="http://www.geyikposta.com/">geyikposta.com</a> yasallığı tartışılacak bir site.
+    Ama kim ne kadar yasal tartışılır. Amaç geyik yapmak :D</li>
+<li>"Kablo tarihe karışıyor" bilimadamları kablosuz güç iletmeyi
+    başarmış. Bilgisayarcıların en büyük derdi kablolarla uğraşmak
+    bakalım bunu kökten çözebilecekler mi? <a href="http://www.ntvmsnbc.com/news/410595.asp" title="Link">Link</a></li>
+<li>Mac kullanıcılarının web tarayıcısı Safari Windows versiyonunu
+    çıkarmış. Şimdilik beta aşamasında ...</li></ul>
+                <a class="readmore" href=".././14-haziran-2007-webden-secme-haberler/">read more</a>
+                <p>There are <a href=".././14-haziran-2007-webden-secme-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././05-haziran-2007-webden-secme-haberler/" rel="bookmark"
+                           title="Permalink to 05 Haziran 2007 Web'den Seçme Haberler">05 Haziran 2007 Web&#039;den Seçme Haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2007-06-05T09:45:00">
+                Tue 05 June 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/google.html">google</a><a href=".././tag/haberler.html">Haberler</a><a href=".././tag/javascript.html">Javascript</a><a href=".././tag/microsoft.html">microsoft</a><a href=".././tag/tooltip.html">tooltip</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>Microsoft bilgisayar kullanma mantığımızı değiştiriyor. <a href="http://www.microsoft.com/surface/" title="Link">Link</a></li>
+<li>CSS ile güzel görünümlü form yapmayı anlatan ingilizce güzel bir
+    makale.<a href="http://www.sitepoint.com/article/fancy-form-design-css" title="Link">Link</a></li>
+<li>PNG ile web sayfası yapmayı anlatan güzel bir makale. <a href="http://www.digital-web.com/articles/web_standards_creativity_png/" title="Link">Link</a></li>
+<li>Google internete bağlı olamadan servislerini kullanabilme imkanı
+    sağlıyor.Şimdilik sadece bir kaç servisle başlayan bu özellik
+    ileride tüm servislere yayılacakmış. <a href="http://gears.google.com/" title="Link">Link</a></li>
+<li>24 ...</li></ul>
+                <a class="readmore" href=".././05-haziran-2007-webden-secme-haberler/">read more</a>
+                <p>There are <a href=".././05-haziran-2007-webden-secme-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././16-mayis-2007-webden-secme-haberler/" rel="bookmark"
+                           title="Permalink to 16 Mayıs 2007 Web'den Seçme Haberler">16 Mayıs 2007 Web&#039;den Seçme Haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2007-05-16T08:49:00">
+                Wed 16 May 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/arama-motoru.html">arama motoru</a><a href=".././tag/css.html">CSS</a><a href=".././tag/dreamweaver.html">Dreamweaver</a><a href=".././tag/firefox-2.html">Firefox 2</a><a href=".././tag/form.html">form</a><a href=".././tag/google.html">google</a><a href=".././tag/greasmonkey.html">Greasmonkey</a><a href=".././tag/haberler.html">Haberler</a><a href=".././tag/regular-expression.html">regular-expression</a><a href=".././tag/tooltip.html">tooltip</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>CSS ile yapılmış güzel bir tooltip(fare üzerine gelince çıkan
+    açıklama) örneği. <a href="http://www.cssplay.co.uk/menu/tooltips.html" title="Link">Link</a></li>
+<li>CSS ve Javascript ile yapılmış Form doğrulama anlatımı. <a href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html" title="Link">Link</a></li>
+<li>Javascript ile yapılmış kayan yazı ve resim örnekleri. <a href="http://zend.lojcomm.com.br/icarousel/" title="Link">Link</a></li>
+<li>Adobe Dreamweaver CS3'ün yeni özelliklerinden biri hazır javascript
+    kütüphaneleri kolayca sayfalarımıza ekleye bilmemizi sağlıyor.
+    Bunlardan biri "Akordiyon menü ...</li></ul>
+                <a class="readmore" href=".././16-mayis-2007-webden-secme-haberler/">read more</a>
+                <p>There are <a href=".././16-mayis-2007-webden-secme-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

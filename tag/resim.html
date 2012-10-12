@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - resim</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././onden-resimleripreloading-images-yukleme-yontemleri/">Önden Resimleri(Preloading images) Yükleme Yöntemleri</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2010-08-27T22:44:00">
+                Fri 27 August 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-javascript-xhtml.html">CSS, Javascript, XHTML</a>. </p>
+<p>tags: <a href=".././tag/onyukleme.html">önyükleme</a><a href=".././tag/performans.html">performans</a><a href=".././tag/resim.html">resim</a><a href=".././tag/web-site-hizlandirma.html">web site hızlandırma</a></p>
+
+
+</footer><!-- /.post-info --><p>Web sitelerimizi hızlandırmak için çeşitli yöntemler ve metotlar
+deneriz. Amacımız kullanıcıya daha hızlı cevap vermektir. Bunlardan bir
+tanesi önden resimleri kullanıcı bilgisayarına yükletip sonra açılacak
+sayfaların hızlı açılmasını sağlamak gibi bir amacımız olduğu
+durumlardır. Rollover resimleri, araç ipucu(tooltip), background
+resimleri vb. resimleri önceden yükletmek bize hem sayfa ilk açıldığında
+kötü görüntüyü engellememizi sağlar hemde kullanıcıya daha sonraki
+tercihlerinde daha hızlı cevap vermemizi sağlar.</p>
+<p>Ben genelde daha önce kullanmadığım metotları kullanmadan önce bir
+araştırma yaparım ve sonuçta bana göre iyi olan yöntemi uygularım. Web
+ajanslarında çalışırken bu araştırmayı kısa tutmam gerekirken tek bir
+proje geliştirirken bu iş için daha uzun zamanımız oluyor.</p>
+<p>Bu işi çin CSS, javascript ve ajax ile çözümler mevcut.</p>
+<p>Ben bu yöntemlerden javascript yöntemi ile yapmayı tercih ettim. Diğer
+yöntemler hakkında genel bir bilgi verip geçeceğim.</p>
+<p><strong>CSS Yöntemleri</strong></p>
+<p>CSS Sprite yöntemide bu kategoriye girer.</p>
+<p>CSS yöntemleri genelde sayfa içine konulan resimlerin tarayıcı
+görüntüsünden kaçırılması ile yapılan yöntemlerdir ki işin bu kısmı
+benim hoşuma gitmiyor.</p>
+<p>CSS ile bu işi yapan bir örnek verelim.</p>
+<p>[sourcecode language="css"] div#preloaded-images {  position: absolute;
+ overflow: hidden;  left: -9999px;  top: -9999px;  height: 1px;  width:
+1px; } [/sourcecode]</p>
+<p>HTML kodu</p>
+<p>[sourcecode language="html"] \&lt;div id="preloaded-images"> \&lt;img
+src="http://deneme.com/image-01.png" width="1" height="1" alt="Image 01"
+/> \&lt;img src="http://deneme.com/image-02.png" width="1" height="1"
+alt="Image 02" /> \&lt;img src="http://deneme.com/image-03.png" width="1"
+height="1" alt="Image 03" /> \&lt;/div> [/sourcecode]</p>
+<p>Yukarıda görüldüğü gibi html içine eklenen resimler CSS yardımı ile
+kullanıcının göremeyeceği bölgelere itilmiştir. Bu şekilde bir çözüm
+üretilmiştir.</p>
+<p><strong>Javascript Yöntemleri</strong></p>
+<p>Javascript ile yapılan yöntemlerin genel yapısı bir sıraya sokulan
+resimler dinamik olarak doküman içine eklenir.</p>
+<p>Javascript ile bu işlemi yapan çeşitli kodlar var. Benim uyguladığım ise
+aşağıdaki koddur. Bu kodun diğerlerine göre avantajı yükleme yaptığımız
+sayfanın yüklenmesi bittikten sonra bizim önden yükleme yaptığımız
+resimleri yüklemesidir.</p>
+<p>[sourcecode language="javascript"] function preloader() { if
+(document.images) { var img1 = new Image(); var img2 = new Image(); var
+img3 = new Image(); img1.src =
+"http://domain.tld/path/to/image-001.gif"; img2.src =
+"http://domain.tld/path/to/image-002.gif"; img3.src =
+"http://domain.tld/path/to/image-003.gif"; } } function
+addLoadEvent(func) { var oldonload = window.onload; if (typeof
+window.onload != 'function') { window.onload = func; } else {
+window.onload = function() { if (oldonload) { oldonload(); } func(); } }
+} addLoadEvent(preloader); [/sourcecode]</p>
+<p>Yukarıdaki javascript kodu işimizi görecektir.</p>
+<p>jQuery ile daha kısa ve basit bir kod ile bu işi yapabiliriz.</p>
+<p>[sourcecode language="javascript"] // resim onyükleme fonksiyonu
+jQuery.preloadImages = function() { for(var i = 0; i\&lt;arguments.length;
+i++) { jQuery("\&lt;img>").attr("src", arguments[i]); } }; // yükleme yap
+\$.preloadImages("images/dexter.jpg", "images/saydam_ardalan1.gif",
+"images/ornek_sayfa.jpg"); [/sourcecode]</p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery-300x195.gif" title="resim_on_yukleme_jquery" />][]</p>
+<p>Yukarıdaki kodu yazınca yükleme yaptığımız sayfadaki öğeler yüklenirken
+yükleme yaptığımız resimlerde yüklenir. Bu benim istediğim bir durum
+değildir. Bence yükleme yapılacak sayfanın öğeleri yüklendikten sonra
+yüklenecek resimler yüklenmelidir. Kullanıcı ilk önce mevcut sayfayı tam
+görmelidir, sonra kullanıcıya göstermeden diğer sayfa resimlerini
+yüklemeliyiz.</p>
+<p>Bunun için kodumuzu aşağıdaki değiştirmeliyiz.</p>
+<p>[sourcecode language="javascript"] \$(document).ready(function() {
+\$(window).bind('load', function() { // resim onyükleme fonksiyonu
+jQuery.preloadImages = function() { for(var i = 0; i\&lt;arguments.length;
+i++) { jQuery("\&lt;img>").attr("src", arguments[i]); } }; // yükleme yap
+\$.preloadImages("images/dexter.jpg", "images/saydam_ardalan1.gif",
+"images/ornek_sayfa.jpg"); }); }); [/sourcecode]</p>
+<p>Eklediğimiz sadece \$(window).bind(‘load’ function()) kısmıdır. Burada
+sayfa yüklendikten sonra bu işlemi yap diyoruz.</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/onyukleme.html">tıklayınız.</a></p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery2-300x194.gif" title="resim_on_yukleme_jquery2" />][]</p>
+<p>Örneklerde dikkatiniz bir yere çekmek istiyorum. Firebug Net sekmesini
+açtım çünkü sayfa yüklenmesi anını görmenizi istedim. İlk resimde sayfa
+yüklenirken sonradan görüntüleyeceğimiz resimleride içeren bir durum söz
+konusu idi. Dikkat ederseniz ilk reismde dikey kırmızı çizgi en
+sondadır. İkinci resimde ise kırmızı dikey çizgi sayfa öğelerini
+sonuncusu olan resimden sonra çizilmiştir, daha sonra yükleme yapılan
+resimler yüklenmiştir.</p>
+<h3>Sonuç</h3>
+<p>Ben küçük bir araştırma sonucunda bu kodu kullanmayı uygun buldum.
+Bulduğum bu kodun kendimce gerekçelerini yukarıda açıklamaya çalıştım,
+eğer sizlerin daha iyi çözümleri ve önerileri varsa yorum kısmında
+bizlerle paylaşırsanız sevinirim.</p>
+<p>Kalın sağlıacakla</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="static">http://perishablepress.com/press/2009/12/28/3-ways-preload-images-css-javascript-ajax/</a></li>
+<li><a href="static">http://engineeredweb.com/blog/09/12/preloading-images-jquery-and-javascript</a></li>
+<li><a href="http://elouai.com/javascript-preload-images.php">http://elouai.com/javascript-preload-images.php</a></li>
+<li><a href="http://www.javascriptkit.com/script/script2/preloadimage.shtml">http://www.javascriptkit.com/script/script2/preloadimage.shtml</a></li>
+<li><a href="static">http://stackoverflow.com/questions/761263/what-is-the-best-way-to-preload-multiple-images-in-javascript/761332</a></li>
+<li>[http://www.filamentgroup.com/lab/update_automatically_preload_images_from_css_with_jquery/][]</li>
+<li><a href="http://snipplr.com/view.php?codeview&amp;id=9612">http://snipplr.com/view.php?codeview&amp;id=9612</a></li>
+</ul>
+</p>
+
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery-300x195.gif" title="resim_on_yukleme_jquery" />]: http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery.gif
+  [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery2-300x194.gif" title="resim_on_yukleme_jquery2" />]: http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery2.gif
+    http://perishablepress.com/press/2009/12/28/3-ways-preload-images-css-javascript-ajax/
+    http://engineeredweb.com/blog/09/12/preloading-images-jquery-and-javascript
+    http://stackoverflow.com/questions/761263/what-is-the-best-way-to-preload-multiple-images-in-javascript/761332
+    http://www.filamentgroup.com/lab/update_automatically_preload_images_from_css_with_jquery/</p><p>There are <a href=".././onden-resimleripreloading-images-yukleme-yontemleri/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/" rel="bookmark"
+                           title="Permalink to CSS ile Basit Şekilde Fare Üzerine Gelince(Rollover) Resim Değişimi Yapmak">CSS ile Basit Şekilde Fare Üzerine Gelince(Rollover) Resim Değişimi Yapmak</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2008-11-10T10:48:00">
+                Mon 10 November 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/fare-uzerine-gelince.html">fare üzerine gelince</a><a href=".././tag/link.html">link</a><a href=".././tag/resim.html">resim</a><a href=".././tag/rollover.html">rollover</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>Daha önce bu konuya <a href="http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler" title="Resimli Menüler">Resimli Menüler</a> kısmında anlatmıştım, ama orada
+yapı daha karışık olduğu için anlaşılması ve basit uygulamalara
+uyarlanması konusunda sıkıntılar oluyordu. Bu işi daha basit bir örnek
+yardımı ile yapıp daha anlaşılır yapmak için beraber bir örnek yapalım.</p>
+<p>Tek resimde işi halletmemiz, resmin sayfa yüklenmesinden önce yüklenmesi
+sebebiyle ...</p>
+                <a class="readmore" href=".././css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/">read more</a>
+                <p>There are <a href=".././css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././ipucu-videodan-ekran-goruntusu-alma/" rel="bookmark"
+                           title="Permalink to ipucu - video'dan ekran görüntüsü alma">ipucu - video&#039;dan ekran görüntüsü alma</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2006-11-19T15:49:00">
+                Sun 19 November 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/printscreen.html">printscreen</a><a href=".././tag/resim.html">resim</a><a href=".././tag/video.html">video</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>Ben bu iş(video'dan ekran görüntüsü almak) için hep program kullanmayı
+yeğlerdim ancak hiç program gerektirmeden de yapıldığını öğrendim.
+1.Masaüstüne gelin : sağtuşa tıklayın > properties > Settings >
+advanced > trouble shooting > hardware accel: none. 2.print screen
+tuşuna basın 3.resim programına gelip yapıştırın. Bu kadar. Sonra aynı
+şekilde sistemi eski ...</p>
+                <a class="readmore" href=".././ipucu-videodan-ekran-goruntusu-alma/">read more</a>
+                <p>There are <a href=".././ipucu-videodan-ekran-goruntusu-alma/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

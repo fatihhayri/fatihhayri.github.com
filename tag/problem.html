@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - problem</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css3-renk-gecisinin-body-elemanina-uygulamasindaki-sorun-ve-cozumu/">CSS3 Renk Geçişinin &lt;body&gt; elemanına uygulamasındaki sorun ve çözümü</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2012-06-25T13:24:00">
+                Mon 25 June 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css3.html">css3</a><a href=".././tag/gradient.html">gradient</a><a href=".././tag/problem.html">problem</a><a href=".././tag/renk-gecisi.html">renk geçişi</a></p>
+
+
+</footer><!-- /.post-info --><p>CSS3 yeniliklerinde yaralanıyoruz, tabi bazı sorunlar ortaya çıkıyor.
+Hatasız kod olmayacağı için, hata olur ama bir çözümüde vardır elbet
+diye düşünmemiz lazım.</p>
+<p>Sorun tam olarak bir sayfanın ardalanının tamamına renk geçişi uygulamak
+istediğimizde belli bir yere kadar uygulayıp kalan kısmını tekrar
+ettirerek istemediğimiz bir durum oluşmasına neden oluyor.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VUcqt/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p>Sorunun çözümünü aradığımda ilk sonuç <a href="http://stackoverflow.com/">http://stackoverflow.com/</a>
+sitesinde buldum biraz daha araştırınca benzer cevaplar gördüm ve
+sizlerle paylaşmak istedim.</p>
+<p><strong>background-image</strong> özelliğine eklenen renk geçişi kodu tekrar
+edecektir, biz bu tekrarı istemediğimiz için.</p>
+<p>[css] background-repeat: no-repeat; [/css]</p>
+<p>ekledik. Ayrıca uygulana renk geçişinin sayfa zemininde sabitlenmesi
+için</p>
+<p>[css] background-attachment: fixed; [/css]</p>
+<p>kodunu ekledik.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KAg2U/2/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p>Diğer kod eklemeleri farklı tarayıcılar içindir.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="static">http://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats</a></li>
+<li><a href="static">http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/</a></li>
+<li>[http://www.naprej.com/css3_body_background_gradient][]</li>
+<li><a href="static">http://www.richarddarling.com/drupal-css/css3-gradient-background-repeat-problem</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">stackoverflow</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">questions</span><span class="o">/</span>2869212<span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">gradient</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">set</span><span class="o">-</span><span class="n">on</span><span class="o">-</span><span class="n">body</span><span class="o">-</span><span class="n">doesnt</span><span class="o">-</span><span class="n">stretch</span><span class="o">-</span><span class="n">but</span><span class="o">-</span><span class="n">instead</span><span class="o">-</span><span class="n">repeats</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">atomicrobotdesign</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">htmlcss</span><span class="o">/</span><span class="n">use</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">gradients</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">replace</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">sites</span><span class="o">-</span><span class="n">background</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">richarddarling</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">drupal</span><span class="o">-</span><span class="n">css</span><span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">gradient</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">repeat</span><span class="o">-</span><span class="n">problem</span>
+</pre></div><p>There are <a href=".././css3-renk-gecisinin-body-elemanina-uygulamasindaki-sorun-ve-cozumu/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././internet-explorer-eski-surumlerinde-html5-destegi-saglamak/" rel="bookmark"
+                           title="Permalink to İnternet Explorer Eski Sürümlerinde HTML5 Desteği Sağlamak">İnternet Explorer Eski Sürümlerinde HTML5 Desteği Sağlamak</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2012-05-23T13:40:00">
+                Wed 23 May 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/html5.html">HTML5</a>. </p>
+<p>tags: <a href=".././tag/html5shiv.html">html5shiv</a><a href=".././tag/ie6.html">ie6</a><a href=".././tag/ie7.html">ie7</a><a href=".././tag/ie8.html">ie8</a><a href=".././tag/problem.html">problem</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>HTML5 ve özellikleri hayatımız gireli bayağı bir zaman oluyor. Ancak
+uygulamalara yansıması o kadarda çok değil. Bende bir kaç projede HTML5
+uyguladım. HTML5 yenilikleri ve anlamlı etiketleri ile bizlere avantaj
+sağlıyor.</p>
+<p>Kodlamaya başlamadan hemen bir sorun ile karşılaşıyoruz.</p>
+<p><strong>Sorun = Internet Explorer</strong></p>
+<p>Eşitliği gerçeğe dönüşüyor. Internet Explorer 9’dan önceki sürümlerde ...</p>
+                <a class="readmore" href=".././internet-explorer-eski-surumlerinde-html5-destegi-saglamak/">read more</a>
+                <p>There are <a href=".././internet-explorer-eski-surumlerinde-html5-destegi-saglamak/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././ie6ie7-filtre-renk-gecisi-tanimi-konumlandirma-sorunu-ve-cozumsuzulugu-d/" rel="bookmark"
+                           title="Permalink to IE6/IE7 filtre "Renk Geçişi Tanımı - Konumlandırma" Sorunu ve Çözümsüzülüğü :D">IE6/IE7 filtre &quot;Renk Geçişi Tanımı - Konumlandırma&quot; Sorunu ve Çözümsüzülüğü :D</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2012-05-23T09:40:00">
+                Wed 23 May 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/-ms-filtre.html">-ms-filtre</a><a href=".././tag/filtre.html">filtre</a><a href=".././tag/gradient.html">gradient</a><a href=".././tag/ie6.html">ie6</a><a href=".././tag/ie7.html">ie7</a><a href=".././tag/problem.html">problem</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>CSS3 ile birlikte bir çok güzel özellik geldi. Bunlardan bir tanesi
+<a href="http://www.fatihhayrioglu.com/css-renk-gecisleri-gradients/">CSS3 renk geçişi(gradient) özelliği</a>. Bu özelliği uygulamamızda en
+büyük etki CSS3 renk geçişini desteklemeyen İnternet Explorer için
+filtre ile çözüm oluşturuyor olabilmemiz.</p>
+<p>Uygularımızda CSS3 renk geçişini uyguladıkça <strong>filtre</strong> uygulamalarında
+yaşanan sorunlar ortaya çıkmaya başladı. Daha önce bu konuda ...</p>
+                <a class="readmore" href=".././ie6ie7-filtre-renk-gecisi-tanimi-konumlandirma-sorunu-ve-cozumsuzulugu-d/">read more</a>
+                <p>There are <a href=".././ie6ie7-filtre-renk-gecisi-tanimi-konumlandirma-sorunu-ve-cozumsuzulugu-d/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././internet-explorerda-renk-gecisi-sorunu-ve-cozumu/" rel="bookmark"
+                           title="Permalink to İnternet Explorer'da Renk Geçişi Sorunu ve Çözümü">İnternet Explorer&#039;da Renk Geçişi Sorunu ve Çözümü</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2012-05-16T10:18:00">
+                Wed 16 May 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/haslayout.html">hasLayout</a><a href=".././tag/ie.html">ie</a><a href=".././tag/problem.html">problem</a><a href=".././tag/renk-gecisi.html">renk geçişi</a><a href=".././tag/sorun.html">sorun</a><a href=".././tag/zoom1.html">zoom:1</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p><a href="http://www.fatihhayrioglu.com/css-renk-gecisleri-gradients/">CSS3 ile renk geçişi hakkında yazdığımız</a> makalede İnternet Explorer
+içinde çözüm üretmiştik. Uygulamada bazı durumlarda renk geçişinin
+İnternet Explorer’larda çalışmadığını gördüm.</p>
+<p>Biraz araştırınca bu sorunun <a href="http://www.fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/">hasLayout’</a>tan kaynaklanan bir sorun
+olduğunu gördüm.</p>
+<p>CSS3 ile renk geçişi için <a href="http://www.colorzilla.com/gradient-editor/">http://www.colorzilla.com/gradient-editor/</a>
+sitesini kullanıyorum.</p>
+<p>Sorunu görmek için aşağıdaki gibi ...</p>
+                <a class="readmore" href=".././internet-explorerda-renk-gecisi-sorunu-ve-cozumu/">read more</a>
+                <p>There are <a href=".././internet-explorerda-renk-gecisi-sorunu-ve-cozumu/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././css3-ile-yuvarlak-kenarli-resim-yapmak/" rel="bookmark"
+                           title="Permalink to CSS3 ile yuvarlak kenarlı resim yapmak">CSS3 ile yuvarlak kenarlı resim yapmak</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2011-02-02T00:45:00">
+                Wed 02 February 2011
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/border-radius.html">border-radius</a><a href=".././tag/css3.html">css3</a><a href=".././tag/firefox.html">Firefox</a><a href=".././tag/google-chrome.html">Google Chrome</a><a href=".././tag/problem.html">problem</a><a href=".././tag/safari.html">safari</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>Bir resminize kenar çizgisi tanımı yapıp daha sonrada köşelerini
+ovalleştirmek istediğinizde köşelerdeki kenar çizgilerinde sorun
+yaşıyoruz.</p>
+<p>[html] \&lt;!DOCTYPE html> \&lt;html> \&lt;head> \&lt;meta charset="utf-8">
+\&lt;title>border-radius\&lt;/title> \&lt;style> img{ border:2px solid #999;
+-webkit-border-radius:8px; -moz-border-radius:8px; border-radius:8px;}
+\&lt;/style> \&lt;/head> \&lt;body> \&lt;img src="gudi.jpg" width="75"
+height="75 ...</p>
+                <a class="readmore" href=".././css3-ile-yuvarlak-kenarli-resim-yapmak/">read more</a>
+                <p>There are <a href=".././css3-ile-yuvarlak-kenarli-resim-yapmak/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/" rel="bookmark"
+                           title="Permalink to İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak">İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2009-10-17T18:54:00">
+                Sat 17 October 2009
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/ie6.html">ie6</a><a href=".././tag/ie7.html">ie7</a><a href=".././tag/internet-explorer.html">internet explorer</a><a href=".././tag/kenar-cizgisi.html">kenar-çizgisi</a><a href=".././tag/problem.html">problem</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>Yine bir İnternet Explorer sorunu ile karşı karşıyayız. Bu seferki
+sorunum ile bir tablo satırına alt kenar çizgisi tanım yapınca
+karşılaştım. </p>
+<p>[sourcecode language="css"] table{border-collapse:collapse} table
+tr{border-bottom:1px solid #000;} [/sourcecode]</p>
+<p>Gayet basit normal bir tanım. Ancak ie6 ve 7 için durum öyle değil.
+Karmaşık gelmiş olmalı ...</p>
+                <a class="readmore" href=".././internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/">read more</a>
+                <p>There are <a href=".././internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././windows-vista-windows-defender-guncellemesindeki-sorunu-ve-cozumu/" rel="bookmark"
+                           title="Permalink to Windows Vista / Windows Defender Güncellemesindeki Sorunu ve Çözümü">Windows Vista / Windows Defender Güncellemesindeki Sorunu ve Çözümü</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2009-01-30T12:02:00">
+                Fri 30 January 2009
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/problem.html">problem</a><a href=".././tag/vista.html">vista</a><a href=".././tag/windows.html">windows</a><a href=".././tag/windows-defender.html">windows-defender</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>İşletim sistemi olarak Vista kullanıyorum, genel itibari ile pek sorunum
+yok. Gayet iyi bir performans ile çalışıyorum. Tek sorunum güncelleme
+yaparken her zaman Windows Defender programı güncellemesini
+yükleyememesi idi. Bunu uzun süre erteledikten sonra çözmeye karar
+verdim. Biraz araştırınca kolay bir şey olduğu ortaya çıktı. Sizlerle
+paylaşmak istedim. Son güncellemeyi ...</p>
+                <a class="readmore" href=".././windows-vista-windows-defender-guncellemesindeki-sorunu-ve-cozumu/">read more</a>
+                <p>There are <a href=".././windows-vista-windows-defender-guncellemesindeki-sorunu-ve-cozumu/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/" rel="bookmark"
+                           title="Permalink to Satır Dönüşü(word wrap) Firefox sorunu nasıl çözülür?">Satır Dönüşü(word wrap) Firefox sorunu nasıl çözülür?</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2006-11-06T14:12:00">
+                Mon 06 November 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/firefox.html">Firefox</a><a href=".././tag/problem.html">problem</a><a href=".././tag/satir-basi.html">satır-başı</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>[http://forum.ceviz.net/showthread.php?p=249585#post249585][] Cevap
+yazarken araştırdım da burayada yazayım dedim. Sabit bir genişlikte bir
+katman oluştuurp bu genişliği aşan genişlikte içerikleri otomatik olarak
+satırın başına tmak için ne yapabiliriz. Normalde bunu için IE5.5+ dan
+itibaren word-wrap: break-word kodu ile bunu desteklemektedir, ancak
+Mozilla ...</p>
+                <a class="readmore" href=".././satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/">read more</a>
+                <p>There are <a href=".././satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

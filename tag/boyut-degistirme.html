@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - boyut değiştirme</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css3-resize-ozelligi/">CSS3 resize özelliği</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2011-08-10T13:18:00">
+                Wed 10 August 2011
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/boyut-degistirme.html">boyut değiştirme</a><a href=".././tag/css3.html">css3</a><a href=".././tag/resize.html">resize</a></p>
+
+
+</footer><!-- /.post-info --><p>resize özelliği kullanıcıya elementin boyutlarını ayarlama imkanı
+vermemizi sağlar. Kullanıcı bu elemanın boyutunu istediği gibi
+değiştirme imkanına kavuşur</p>
+<div class="cssozelliktanimi">
+**Yapısı:** resize: \<deger\>  
+**Aldığı Değerler:** both | horizontal | vertical | none | inherit  
+**Başlangıç Değeri:** none  
+**Uygulanabilen Elementler:** block-level ve replaced elementler, tablo
+hücreleri ve inline block elementler  
+**Kalıtsallık:** yok
+
+</div>
+
+<p><strong>both:</strong> Her iki yöne boyutlandırmaya izin verir.<br />
+<strong>horizontal:</strong> yatayda boyutlandırmaya izin verir.<br />
+<strong>vertical:</strong> dikeyde boyutlandırmaya izin verir.<br />
+<strong>none:</strong> boyutlandırma seçeneğini kaldırır<br />
+<strong>inherit:</strong> kalıtsal olarak bu değeri üst elementten alır.</p>
+<p>[css] div{ overfloaw:auto; /* bu tanim gerekli */ resize:both; }
+[/css]</p>
+<p>overflow değeri scroll, auto veya hidden değerlerinde etki ederken
+overflow: visible tanımında ise etki yapmaz.</p>
+<p>Bu özellik Chrome ve Safaride textarea alanları için otomatik
+gelmektedir. Tarayıcı bu eleman için bu değeri otomatik uygulamaktadır.
+Daha önce ipucu olarak <a href="http://www.fatihhayrioglu.com/css-ipucu-27-chrome-ve-safaride-textarea-genisletme-islevini-kaldirma/">yazdığım gibi</a> bu otomatik tanımı css ile
+kaldırabiliyoruz.</p>
+<p>Bir örnek yapalım</p>
+<p>[css] .icerik{ box-shadow: rgb(136, 136, 136) 5px 5px 5px;
+border-radius: 5px; resize: both; overflow: auto; border: 1px solid
+#dedede; padding:10px; width: 300px; height: 200px; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aDnP6/3/embedded/result,css,html"></iframe></p>
+<p>Sadece bir yöne boyutlandırabiliyoruz</p>
+<p>[css] .siir{ width: 170px; height: 200px; resize: vertical; overflow:
+hidden; position: relative; padding: 0 25px; border: 1px solid #DDD;
+font-family: georgia, serif; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/k2wHc/2/embedded/result,css,html"></iframe></p>
+<p>min-height ve min-width değerleri ile boyutlandırmanın minimum
+değerlerini belirleyebiliyoruz. Anı şekilde max-height ve max-width
+değerleri ile de maksimum değerleri belirlenebilir. Bu özelliklerle
+kullanıcının sayfa görünümünü bozmasını engelleyebiliriz.<br />
+</p>
+<p>[css] .siir{ width: 170px; height: 200px; resize: vertical; overflow:
+hidden; position: relative; padding: 0 25px; border: 1px solid #DDD;
+font-family: georgia, serif; max-height: 650px; min-height: 200px; }
+[/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/yLZDQ/embedded/result,css,html"></iframe></p>
+<p>Resimler için güzel bir uygulama olabilir.</p>
+<p>[css] .vasak{ width: 200px; margin: 0 10px; height: 150px; resize: both;
+overflow: hidden; position: relative; padding: 15px; border: 1px solid
+#DDD; } .vasak img{ width:100%; height:auto; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Xk3Gr/1/embedded/result,css,html"></iframe></p>
+<p></p>
+<div class="tarayiciuyum">
+<strong>Tarayıcı Desteği</strong><br />
+Google Chrome 5+<br />
+Safari 5+<br />
+Firefox4+<br />
+Opera desteklemiyor<br />
+İnternet Explorer desteklemiyor<br />
+<strong>Mobil Tarayıcılar</strong><br />
+Android desteklemiyor<br />
+Firefox mobile desteklemiyor<br />
+IE Phone desteklemiyor<br />
+Opera Mobile desteklemiyor<br />
+Safari Mobile desteklemiyor</p>
+<p></div>
+resize özelliği W3C Basic User Interface Module ile önerilen bir
+özelliğidir. Tarayıcıların destekleme durumuna göre ileride
+standartlaşıp standartlaşmayacağı belirlenecek bir özellik olarak
+görünse de Firefox desteği standartlaşması daha olasıdır.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.css3.info/preview/resize/">http://www.css3.info/preview/resize/</a></li>
+<li><a href="http://www.impressivewebs.com/css3-resize/">http://www.impressivewebs.com/css3-resize/</a> (detaylı ve karşıt)</li>
+<li>[http://www.w3schools.com/cssref/css3_pr_resize.asp][]</li>
+<li><a href="http://www.w3.org/TR/css3-ui/">http://www.w3.org/TR/css3-ui/</a></li>
+<li><a href="http://www.cssplay.co.uk/menu/resize.html">http://www.cssplay.co.uk/menu/resize.html</a></li>
+<li><a href="https://developer.mozilla.org/en/CSS/resize">https://developer.mozilla.org/en/CSS/resize</a></li>
+<li><a href="http://www.yousaytoo.com/the-css3-resize-property/784883">http://www.yousaytoo.com/the-css3-resize-property/784883</a></li>
+<li><a href="http://robertnyman.com/css3/">http://robertnyman.com/css3/</a></li>
+</ul>
+</p><p>There are <a href=".././css3-resize-ozelligi/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

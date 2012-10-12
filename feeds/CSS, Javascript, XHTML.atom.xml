@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioglu</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/CSS,%20Javascript,%20XHTML.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2010-08-27T22:44:00+02:00</updated><entry><title>Önden Resimleri(Preloading images) Yükleme Yöntemleri</title><link href="http://www.fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/" rel="alternate"></link><updated>2010-08-27T22:44:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-08-27:onden-resimleripreloading-images-yukleme-yontemleri/</id><summary type="html">&lt;p&gt;Web sitelerimizi hızlandırmak için çeşitli yöntemler ve metotlar
+deneriz. Amacımız kullanıcıya daha hızlı cevap vermektir. Bunlardan bir
+tanesi önden resimleri kullanıcı bilgisayarına yükletip sonra açılacak
+sayfaların hızlı açılmasını sağlamak gibi bir amacımız olduğu
+durumlardır. Rollover resimleri, araç ipucu(tooltip), background
+resimleri vb. resimleri önceden yükletmek bize hem sayfa ilk açıldığında
+kötü görüntüyü engellememizi sağlar hemde kullanıcıya daha sonraki
+tercihlerinde daha hızlı cevap vermemizi sağlar.&lt;/p&gt;
+&lt;p&gt;Ben genelde daha önce kullanmadığım metotları kullanmadan önce bir
+araştırma yaparım ve sonuçta bana göre iyi olan yöntemi uygularım. Web
+ajanslarında çalışırken bu araştırmayı kısa tutmam gerekirken tek bir
+proje geliştirirken bu iş için daha uzun zamanımız oluyor.&lt;/p&gt;
+&lt;p&gt;Bu işi çin CSS, javascript ve ajax ile çözümler mevcut.&lt;/p&gt;
+&lt;p&gt;Ben bu yöntemlerden javascript yöntemi ile yapmayı tercih ettim. Diğer
+yöntemler hakkında genel bir bilgi verip geçeceğim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CSS Yöntemleri&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CSS Sprite yöntemide bu kategoriye girer.&lt;/p&gt;
+&lt;p&gt;CSS yöntemleri genelde sayfa içine konulan resimlerin tarayıcı
+görüntüsünden kaçırılması ile yapılan yöntemlerdir ki işin bu kısmı
+benim hoşuma gitmiyor.&lt;/p&gt;
+&lt;p&gt;CSS ile bu işi yapan bir örnek verelim.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="css"] div#preloaded-images {  position: absolute;
+ overflow: hidden;  left: -9999px;  top: -9999px;  height: 1px;  width:
+1px; } [/sourcecode]&lt;/p&gt;
+&lt;p&gt;HTML kodu&lt;/p&gt;
+&lt;p&gt;[sourcecode language="html"] \&amp;lt;div id="preloaded-images"&gt; \&amp;lt;img
+src="http://deneme.com/image-01.png" width="1" height="1" alt="Image 01"
+/&gt; \&amp;lt;img src="http://deneme.com/image-02.png" width="1" height="1"
+alt="Image 02" /&gt; \&amp;lt;img src="http://deneme.com/image-03.png" width="1"
+height="1" alt="Image 03" /&gt; \&amp;lt;/div&gt; [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Yukarıda görüldüğü gibi html içine eklenen resimler CSS yardımı ile
+kullanıcının göremeyeceği bölgelere itilmiştir. Bu şekilde bir çözüm
+üretilmiştir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Javascript Yöntemleri&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Javascript ile yapılan yöntemlerin genel yapısı bir sıraya sokulan
+resimler dinamik olarak doküman içine eklenir.&lt;/p&gt;
+&lt;p&gt;Javascript ile bu işlemi yapan çeşitli kodlar var. Benim uyguladığım ise
+aşağıdaki koddur. Bu kodun diğerlerine göre avantajı yükleme yaptığımız
+sayfanın yüklenmesi bittikten sonra bizim önden yükleme yaptığımız
+resimleri yüklemesidir.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="javascript"] function preloader() { if
+(document.images) { var img1 = new Image(); var img2 = new Image(); var
+img3 = new Image(); img1.src =
+"http://domain.tld/path/to/image-001.gif"; img2.src =
+"http://domain.tld/path/to/image-002.gif"; img3.src =
+"http://domain.tld/path/to/image-003.gif"; } } function
+addLoadEvent(func) { var oldonload = window.onload; if (typeof
+window.onload != 'function') { window.onload = func; } else {
+window.onload = function() { if (oldonload) { oldonload(); } func(); } }
+} addLoadEvent(preloader); [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Yukarıdaki javascript kodu işimizi görecektir.&lt;/p&gt;
+&lt;p&gt;jQuery ile daha kısa ve basit bir kod ile bu işi yapabiliriz.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="javascript"] // resim onyükleme fonksiyonu
+jQuery.preloadImages = function() { for(var i = 0; i\&amp;lt;arguments.length;
+i++) { jQuery("\&amp;lt;img&gt;").attr("src", arguments[i]); } }; // yükleme yap
+\$.preloadImages("images/dexter.jpg", "images/saydam_ardalan1.gif",
+"images/ornek_sayfa.jpg"); [/sourcecode]&lt;/p&gt;
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery-300x195.gif" title="resim_on_yukleme_jquery" /&gt;][]&lt;/p&gt;
+&lt;p&gt;Yukarıdaki kodu yazınca yükleme yaptığımız sayfadaki öğeler yüklenirken
+yükleme yaptığımız resimlerde yüklenir. Bu benim istediğim bir durum
+değildir. Bence yükleme yapılacak sayfanın öğeleri yüklendikten sonra
+yüklenecek resimler yüklenmelidir. Kullanıcı ilk önce mevcut sayfayı tam
+görmelidir, sonra kullanıcıya göstermeden diğer sayfa resimlerini
+yüklemeliyiz.&lt;/p&gt;
+&lt;p&gt;Bunun için kodumuzu aşağıdaki değiştirmeliyiz.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="javascript"] \$(document).ready(function() {
+\$(window).bind('load', function() { // resim onyükleme fonksiyonu
+jQuery.preloadImages = function() { for(var i = 0; i\&amp;lt;arguments.length;
+i++) { jQuery("\&amp;lt;img&gt;").attr("src", arguments[i]); } }; // yükleme yap
+\$.preloadImages("images/dexter.jpg", "images/saydam_ardalan1.gif",
+"images/ornek_sayfa.jpg"); }); }); [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Eklediğimiz sadece \$(window).bind(‘load’ function()) kısmıdır. Burada
+sayfa yüklendikten sonra bu işlemi yap diyoruz.&lt;/p&gt;
+&lt;p&gt;Örneği görmek için &lt;a href="http://fatihhayrioglu.com/dokumanlar/onyukleme.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery2-300x194.gif" title="resim_on_yukleme_jquery2" /&gt;][]&lt;/p&gt;
+&lt;p&gt;Örneklerde dikkatiniz bir yere çekmek istiyorum. Firebug Net sekmesini
+açtım çünkü sayfa yüklenmesi anını görmenizi istedim. İlk resimde sayfa
+yüklenirken sonradan görüntüleyeceğimiz resimleride içeren bir durum söz
+konusu idi. Dikkat ederseniz ilk reismde dikey kırmızı çizgi en
+sondadır. İkinci resimde ise kırmızı dikey çizgi sayfa öğelerini
+sonuncusu olan resimden sonra çizilmiştir, daha sonra yükleme yapılan
+resimler yüklenmiştir.&lt;/p&gt;
+&lt;h3&gt;Sonuç&lt;/h3&gt;
+&lt;p&gt;Ben küçük bir araştırma sonucunda bu kodu kullanmayı uygun buldum.
+Bulduğum bu kodun kendimce gerekçelerini yukarıda açıklamaya çalıştım,
+eğer sizlerin daha iyi çözümleri ve önerileri varsa yorum kısmında
+bizlerle paylaşırsanız sevinirim.&lt;/p&gt;
+&lt;p&gt;Kalın sağlıacakla&lt;/p&gt;
+&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=""&gt;http://perishablepress.com/press/2009/12/28/3-ways-preload-images-css-javascript-ajax/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://engineeredweb.com/blog/09/12/preloading-images-jquery-and-javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://elouai.com/javascript-preload-images.php"&gt;http://elouai.com/javascript-preload-images.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.javascriptkit.com/script/script2/preloadimage.shtml"&gt;http://www.javascriptkit.com/script/script2/preloadimage.shtml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://stackoverflow.com/questions/761263/what-is-the-best-way-to-preload-multiple-images-in-javascript/761332&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[http://www.filamentgroup.com/lab/update_automatically_preload_images_from_css_with_jquery/][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://snipplr.com/view.php?codeview&amp;amp;id=9612"&gt;http://snipplr.com/view.php?codeview&amp;amp;id=9612&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery-300x195.gif" title="resim_on_yukleme_jquery" /&gt;]: http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery.gif
+  [&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery2-300x194.gif" title="resim_on_yukleme_jquery2" /&gt;]: http://www.fatihhayrioglu.com/wp-content/resim_on_yukleme_jquery2.gif
+    http://perishablepress.com/press/2009/12/28/3-ways-preload-images-css-javascript-ajax/
+    http://engineeredweb.com/blog/09/12/preloading-images-jquery-and-javascript
+    http://stackoverflow.com/questions/761263/what-is-the-best-way-to-preload-multiple-images-in-javascript/761332
+    http://www.filamentgroup.com/lab/update_automatically_preload_images_from_css_with_jquery/&lt;/p&gt;</summary><category term="önyükleme"></category><category term="performans"></category><category term="resim"></category><category term="web site hızlandırma"></category></entry><entry><title>FireBug Net Sekmesi ve Kullanımı</title><link href="http://www.fatihhayrioglu.com/firebug-net-sekmesi-ve-kullanimi/" rel="alternate"></link><updated>2010-05-26T23:36:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-05-26:firebug-net-sekmesi-ve-kullanimi/</id><summary type="html">&lt;p&gt;FireBug hakkında elle tutulur bir bilgi olmadığı için bu makaleyi
+yazmaya karar verdim. Bu yazımda FireBug &lt;strong&gt;Net paneli&lt;/strong&gt; hakkında
+olacaktır. FireBug geliştirme ile alakalı bir makale değildir.
+Özellikleri hakkında genel bir bilgi içerecektir.&lt;/p&gt;
+&lt;p&gt;Web sayfalarının kodlarken bir çok yönünü düşünerek kodlarız.
+Erişebilirliği, esneklik, farklı tarayıcılara uyumlu olması, performans
+bunlardan ilk aklımıza gelenler. En önemlilerinden biri performansının
+iyi olmasıdır. Web sitesi sahipleri sitelerinin tarayıcılar tarafından
+hızlı gezilmesi için en kısa zamanda açılmasını sağlamak için uğraşır.
+Performans değerlendirmesi için kullanabileceğimiz araçlardan birisi
+Firebug'ın Net panelidir. Burada Firebug'ın Net sekmesini inceleyeceğiz.
+Aşağıda benim anasayfamın net panelindeki görüntüsünü
+görüyorsunuz.&lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/fh_firebug_net_sekme-298x300.gif" title="fh_firebug_net_sekme" /&gt;][]&lt;/p&gt;
+&lt;h3&gt;Genel Net sekmesi görünümü&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Net Panel Giriş&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Net sekmesinin genel amacı kullanıcıya HTTP trafiğini kolayca
+göstermektir. Her satır sayfayı oluşturan bir girdinin istek/cevabını
+gösteren bir göstergedir.&lt;/p&gt;
+&lt;p&gt;Örnek bir sayfa ile devam edelim.&lt;/p&gt;
+&lt;p&gt;[http://fatihhayrioglu.com/dokumanlar/fare_degisen_resim.html][]&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://docs.google.com/File?id=dhctmbn6_408d43xkbc6_b" /&gt;&lt;/p&gt;
+&lt;p&gt;Yukarıdaki resimde sunucuya yapılan iki isteğin sıralaması ile birlikte
+göstermektedir. İlk istek sayfanın kendisi, ikinci istek ise
+&lt;strong&gt;degisen_resim.gif&lt;/strong&gt; resmi.&lt;/p&gt;
+&lt;p&gt;Her girdi istek hakkında genel bir bilgiyi gösterir. Zaman çizelgeside
+grafiksel olarak yüklenme zamanını gösteriyor.&lt;/p&gt;
+&lt;p&gt;Net sekmesi bize &lt;strong&gt;fare_degisen_resim_klavye.html&lt;/strong&gt; içeriğinin 418ms
+de yüklendiğini ve &lt;strong&gt;degisen_resim.gif&lt;/strong&gt;resmininde 146ms de
+yüklendiğini gösteriyor.&lt;/p&gt;
+&lt;p&gt;Net sekmesi bize ilk bakışta aşağıdaki bilgileri verir;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP istek metodunu (GET)&lt;/li&gt;
+&lt;li&gt;Cevap durumu ve açıklaması (200 OK)&lt;/li&gt;
+&lt;li&gt;İstem dosya ismini(fare_degisen_resim_klavye.html) ve fare
+    imlecini üzerine getirirsek hangi adresten çektiğini gösterir.&lt;/li&gt;
+&lt;li&gt;Cevapların hangi barındırma hizmetinde geldiği (fatihhayrioglu.com)&lt;/li&gt;
+&lt;li&gt;Cevabın boyutu (778Byte)&lt;/li&gt;
+&lt;li&gt;Grafiksel gösterge ve yüklenme zamanı (418ms)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Birde en sondaki sonuç bilgi satırı var.&lt;/p&gt;
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/firebug_net3-300x8.gif" title="firebug_net3" /&gt;][]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sayfada 2 adet istek yapıldı&lt;/li&gt;
+&lt;li&gt;Bu 2 isteğin toplam boyutu 3kb ve eğer önbellekten alıyorsa ne
+    kadarını önbellekten alıyor bilgisi.&lt;/li&gt;
+&lt;li&gt;Bu 2 isteğin ne kadar zamanda yüklendiği(son isteğin sonu ile ilk
+    isteğin başı arasındaki zaman)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="" src="http://docs.google.com/File?id=dhctmbn6_411zb4pdnd3_b" /&gt;&lt;/p&gt;
+&lt;p&gt;Her bir elemanın üzerine gelince popup ekranı ile bize daha detaylı
+bilgi veriyor. Her rengin bir anlamı var.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DNS Lookup:&lt;/strong&gt; DNS çözümleme zamanı&lt;br /&gt;
+&lt;strong&gt;connecting:&lt;/strong&gt; Oluşturulan TCP bağlantısı için harcanan zaman&lt;br /&gt;
+&lt;strong&gt;Blocking:&lt;/strong&gt; Ağa bağlanırken tarayıcı bu istekleri belli bir sıraya
+dizer. Bu sırada beklerken harcadığı zaman. Eğer böyle bir zaman
+harcanıyorsa gösterilir, yoksa gösterilmez. Aşağıda bu konuya(Tarayıcı
+Sırasında Bekleme Zamanı) biraz daha ayrıntılı değineceğiz.&lt;br /&gt;
+&lt;strong&gt;Sending:&lt;/strong&gt; Sunucuya gönderilecek veri için istek gönderme zamanı&lt;br /&gt;
+&lt;strong&gt;Waiting:&lt;/strong&gt; Sunucudan dönen cevabın bekleme zamanı(sunucudan gelen ilk
+byte'ın bekleme zamanı)&lt;br /&gt;
+&lt;strong&gt;Receiving:&lt;/strong&gt; Gelen cevabın indirilmesi için gereken zaman.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DOMContenLoaded:&lt;/strong&gt;(Mavi dikey çizgi) ilk istek başladıktan +5.48s
+sonra DOM içeriğinin yüklenme olayı tetiklendi, anlamını taşıyor. Eğer
+bu değer eksi ise DOM içeriği istek başlamadan önce gönderilmiş
+demektir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;load:&lt;/strong&gt;(kırmızı dikey çizgi) Bu gösterge bize yüklenme olayının ilk
+istek başladıktan sonra geçen süreyi gösterir. Eksi değer alması ilk
+istekden önce tetiklendiğini gösterir.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Tarayıcı Sırasında Bekleme Zamanı&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;İsteğin sunucuya gönderilmeden önce tarayıcı sırasında beklemesi sonucu
+iki durum orataya çıkar. Bu durumları biraz açarsak;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bir web sayfasında iki adet javascript dosyası varsa bunlar aynı
+    anda yüklenmez. İlk önce birisi yüklenir daha sonra ikincisi
+    yüklenir. Bu nedenle mümkünse javascript dosyalarını teke indirmek
+    bize zaman kazandıracaktır.&lt;/li&gt;
+&lt;li&gt;Her tarayıcının aynı anda sunucudan(her bir domain için) yapacağı
+    istek sayısı sınırlıdır. Mesela bu sayı Firefox 3 için 6'dır. Yani
+    bunun anlamı eğer sunucudan yapılacak istek sayısı 6'yı geçerse,
+    altıncıdan sonrası ilk altının yüklenmesini beklemek durumunda
+    kalacaktır. Bu nedenle CSS Sprite tekniği kullanımı önemlidir. &lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Net Sekmesi İstek ve Cevap Detayları&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Her isteğin solundaki artı(+) işaretine tıklayarak daha ayrıntılı bilgi
+alabiliriz. Burada önemli bir noktayı açıklayalım: &lt;strong&gt;request&lt;/strong&gt; sunucuya
+gönderimi &lt;strong&gt;response&lt;/strong&gt; geri geleni gösterir. Eğer gösterilen öğe
+sunucudan veya ön bellekten geliyorsa bir adet &lt;strong&gt;request&lt;/strong&gt; ve
+&lt;strong&gt;response&lt;/strong&gt; görünecektir.&lt;/p&gt;
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/firebug_net6-300x179.gif" title="firebug_net6" /&gt;][]&lt;/p&gt;
+&lt;p&gt;Açılan alandaki sekmeler ve anlamları;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Headers: HTTP istek ve cevapları&lt;/li&gt;
+&lt;li&gt;Response: Sunucudan dönen veri.&lt;/li&gt;
+&lt;li&gt;HTML: Verilen cevap HTML'in ön görünümü(sadece html ögeleri
+    içindir.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="" src="http://docs.google.com/File?id=dhctmbn6_306f5kscnhq_b" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;URL Parametreleri&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Eğer sayfada kullanıcıdan veri alınmış ise Net panelinde yukarıdakine ek
+olarak &lt;strong&gt;Params&lt;/strong&gt; sekmesi çıkar. &lt;strong&gt;Params&lt;/strong&gt; sekmesinde kullanıcıdan
+gelen verileri görmemiz mümkündür.&lt;/p&gt;
+&lt;p&gt;http://www.softwareishard.com/firebug/introduction/net-panel/testPage1.htm?param1=value1&amp;amp;param2=value2&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Post ve Put İstekleri&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Eğer kullanıcından HTTP üzerinden veri istenmiş ise bunun için Post
+isimli yeni bir sekme açılacaktır ve kullanıcının gönderdiği veriler
+listelenecektir.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://docs.google.com/File?id=dhctmbn6_307fgjfzcgq_b" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;JSON Cevapları&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;JSON verisi olması durumunda yeni bir sekme daha açılacaktır ve json
+verileri bir liste halinde sıralanacaktır.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://docs.google.com/File?id=dhctmbn6_308g4rd7xgm_b" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tarayıcı Ön Belleği&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Eğer sayfa ögesi tarayıcı ön belleğinde geliyorsa &lt;strong&gt;Cache&lt;/strong&gt; sekmesi
+belirecektir. Bu sekme bize ön bellekten gelen bilgileri ayrıntısı ile
+gösterecektir.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://docs.google.com/File?id=dhctmbn6_414gjz4tzfk_b" /&gt;&lt;/p&gt;
+&lt;p&gt;Yukarıdaki ekran görüldüğü gibi listede &lt;strong&gt;304&lt;/strong&gt; değişmedi ibaresi olan
+ögeler tarayıcı ön belleğinden alınıyor demektir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dosya Tipine Göre Yükleme Zamanları&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://docs.google.com/File?id=dhctmbn6_412hr8333vz_b" /&gt;&lt;/p&gt;
+&lt;p&gt;Bazen biz sayfadaki ögelerin her biri için yüklenme zamanını bilmek
+isteriz, örneğin javascript veya resimler vb. Bunun biz Net sekmesine
+tıklayıp sonra eskiye göre üstte yenilerde alttaki
+sekmelerden(javascript, images) yapabiliriz. Buda bize toplam yüklenme
+zamanı ve farklı dosya tiplerinin yüklenme zamanı ayrımını yapma imkanı
+verir.&lt;/p&gt;
+&lt;h3&gt;XMLHttpRequest İzleme&lt;/h3&gt;
+&lt;p&gt;Şimdiye kadar yapılan istek ve cevapları inceledik. Bununla birlikte web
+sayfaları asenkron istekler ve cevaplarıda içermektedir, ajax olarak
+tanımlanan bu istek ve cevaplarıda Net panelinden izlememiz mümkündür.
+Bir sayfada ajax isteği olduğu durumları Net panelindeki XHR sekmesinden
+izleyebilir ve bilgilerini buradan alabiliriz.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.janodvarko.cz/firebug/tests/BreakOnXHR/breakOnXHR.html" title="http://www.janodvarko.cz/firebug/tests/BreakOnXHR/breakOnXHR.html"&gt;http://www.janodvarko.cz/firebug/tests/BreakOnXHR/breakOnXHR.html&lt;/a&gt;
+Örnek sayfasını incelersek&lt;/p&gt;
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/firebug_net8-255x300.gif" title="firebug_net8" /&gt;][]&lt;/p&gt;
+&lt;p&gt;Yukarıda görüldüğü gibi ajax istek ve cevapları hakkında detaylı bilgi
+alıyoruz. &lt;strong&gt;Clear&lt;/strong&gt; düğmesi ile isteği silebiliriz.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;FireBug Net Sekmesine Yardımı İle Performans Değerlendirmesi Yapmak&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Benim açımdan FireBug Firefox'un en önemli eklentisidir. Bu nedenle
+diğer tarayıcılara geçmem şu an itibari ile imkansız. FireBug o kadar
+büyük bir eklentidir ki bu eklentiye bağlı çıkarılan eklentiler vardır.
+Bu eklentilerden bir kaçı;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Yahoo'bub çıkardığı &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/5369/" title="YSlow"&gt;YSlow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Google'un çıkardığı &lt;a href="http://code.google.com/speed/page-speed/" title="Page Speed"&gt;Page Speed&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bu eklentileri kullanarak web sayfalarımızın performansını ölçebiliriz.
+Ayrıca bu eklentiler bize sitemizdeki yavaşlamaya neden olan durumları
+açıkça gösterir ve düzeltmemiz için önerilerde bulunur.&lt;/p&gt;
+&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://getfirebug.com/net.html" title="http://getfirebug.com/net.html"&gt;http://getfirebug.com/net.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.softwareishard.com/blog/firebug/introduction-to-firebug-net-panel/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://michaelsync.net/2007/10/15/firebug-tutorial-section-4-net-css-and-dom-tabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cncmachining.wordpress.com/2009/06/22/firebug-tricks/"&gt;http://cncmachining.wordpress.com/2009/06/22/firebug-tricks/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://developer.yahoo.com/yslow/netpanelpatch.html" title="http://developer.yahoo.com/yslow/netpanelpatch.html"&gt;http://developer.yahoo.com/yslow/netpanelpatch.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.stevesouders.com/blog/2009/11/03/firebug-net-panel-more-accurate-timing/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://net.tutsplus.com/tutorials/other/http-headers-for-dummies/"&gt;http://net.tutsplus.com/tutorials/other/http-headers-for-dummies/&lt;/a&gt;
+    (http headers bilgisi)&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.softwareishard.com/blog/firebug/firebug-net-panel-timings/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/fh_firebug_net_sekme-298x300.gif" title="fh_firebug_net_sekme" /&gt;]: http://www.fatihhayrioglu.com/wp-content/fh_firebug_net_sekme.gif
+  [&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/firebug_net3-300x8.gif" title="firebug_net3" /&gt;]: http://www.fatihhayrioglu.com/wp-content/firebug_net3.gif
+  [&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/firebug_net6-300x179.gif" title="firebug_net6" /&gt;]: http://www.fatihhayrioglu.com/wp-content/firebug_net6.gif
+  [&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/firebug_net8-255x300.gif" title="firebug_net8" /&gt;]: http://www.fatihhayrioglu.com/wp-content/firebug_net8.gif
+    http://www.softwareishard.com/blog/firebug/introduction-to-firebug-net-panel/
+    "http://www.softwareishard.com/blog/firebug/introduction-to-firebug-net-panel/"
+    http://michaelsync.net/2007/10/15/firebug-tutorial-section-4-net-css-and-dom-tabs
+    "http://michaelsync.net/2007/10/15/firebug-tutorial-section-4-net-css-and-dom-tabs"
+    http://www.stevesouders.com/blog/2009/11/03/firebug-net-panel-more-accurate-timing/
+    http://www.softwareishard.com/blog/firebug/firebug-net-panel-timings/&lt;/p&gt;</summary><category term="Ajax"></category><category term="firebug"></category><category term="Firefox"></category><category term="http"></category><category term="net sekmesi"></category><category term="page speed"></category><category term="YSlow"></category></entry><entry><title>FireBug - Genel Bakış</title><link href="http://www.fatihhayrioglu.com/firebug-genel-bakis/" rel="alternate"></link><updated>2008-08-13T10:47:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-08-13:firebug-genel-bakis/</id><summary type="html">&lt;p&gt;Uzun zamandır kullandığım halde neden FireBug hakkında bir makale
+yazmadığımı bilmiyorum. Aslında bu makaleyi yaklaşık 3 ay önce
+yazacaktım ama biraz üşengeçlikten ve tembellikten dolayı ancak şimdi
+yazabildim. Birazda &lt;a href="http://www.webdeneyimleri.com/firebug-firefox-eklentisi/"&gt;Volkan Görgülü'nün video anlatımı&lt;/a&gt; benim bu
+makaleyi devam ettirmem için bir kıvılcım oldu diyebiliriz. FireBug
+gelişmiş bir araç bu nedenle tek makalede anlatmamın mümkünatı yoktu ben
+şimdilik iki makale ile anlatmaya çalışacağım. İlk makalemi &lt;a href="http://michaelsync.net/"&gt;Michael
+Sync&lt;/a&gt; sitesinden çok fazla yararlanarak hazırlıyorum.
+&lt;a href="http://michaelsync.net/"&gt;http://michaelsync.net/&lt;/a&gt; sitesi bu konudaki en iyi kaynak
+diyebilrim. FireBug FireFox internet tarayıcısının bir eklentisidir.
+Bunu bilmeyen kalmamıştır diye düşünüyorum. En azın bilmeyen web kod
+yazarı kalmamıştır.&lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;FireBug web kod yazarları için olmazsa olmaz bir araç. Benim Firefox
+sevgimin kaynağı diyebilirim. Kod yazarken bir sorunla karşılaşırız ve
+sorunlarla uğraşmak her ne kadar güzel bir şey olmasada bu işin olmazsa
+olmazıdır. Kod yazarken muhakkak bazı sorunlarla karşılaşacağız, burada
+önemli olan sorunları ne kadar çabuk ve hızlı çözebildiğimizdir. FireBug
+bize sorunların çözümünde çok büyük yararı var. Avantajlarından biride
+hataları tarayıcı üzerinden müdahale etme imkanı sunması. FireBug web
+üzerinde hata ayıklamanın bir miladıdır bence, yani FireBug öncesi ve
+sonrası dönem. Ne kadar övsem azdır FireBug'ı.&lt;/p&gt;
+&lt;p&gt;FireBug eklentisini eklentiyi yazan &lt;a href="http://getfirebug.com/"&gt;http://getfirebug.com/&lt;/a&gt;
+sitesinden veya &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/1843" title="FireFox eklentiler sayfası"&gt;FireFox'un eklentiler&lt;/a&gt; indirebilirsiniz. FireFox 3.
+sürümü ile birlikte FireBug 1.2 beta sürümünü kurabiliyoruz. Ben bu
+sürümde bazı sorunlarla karşılaştım ve sırf bu yüzden FireFox 3 kaldırıp
+FireFox 2 kurup FireBug'ın kararlı sürümü olan 1.05 kurdum.&lt;/p&gt;
+&lt;p&gt;FireBug'ı bu kadar övdükten sonra biraz tanımaya ne dersiniz. Aslında
+ben bu makaleyi ilk yazmaya karar verdiğimde sadece CSS ile ilgili olan
+bölümü anlatacaktım ama konuyu biraz araştırınca ilk başta aracı biraz
+tanıtıp sonra CSS ile ilgili olan kısmı anlatmaya karar verdim. FireBug
+javascript kodu yazarkende bize bir çok yararları var şimdilik
+javascript kısmınıa değinmeyeceğim, nasip olursa yakında o kısmınıda
+anlatırım.&lt;/p&gt;
+&lt;p&gt;FireBug'ı yukarıdaki linklerden birinden tıklayıp indirmek istediğinizde
+aşağıdaki yükleme ekranı ile karşılaşacaksınız.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/kurulum_penceresi.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;Kurulum bitirdikten sonra sizden eklentinin aktif olmak için
+FireFox'unuzu kapatıp açmanız yeterli olacaktır.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="FireBug pasif" src="/images/pasif_firebug.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Fire Aktif" src="/images/aktif_firebug.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;Kurulum tamamlanınca FireBug kullanıma hazır hale gelecektir. İlk
+Firefox'unuzu açtığınızda FireBug pasif olabilir. Aktif hale getirmek
+için FireFox'un sağ alt durum çubuğu üzerindeki FireBug işaretine sağ
+tıklayıp "Disable FireBug" başındaki işareti kaldırmak için bu seçeneğe
+tıklamanız yeterli. Alternatif bir yol olarak Araçlar - FireBug -
+Disable FireBug yolunuda kullanabilirsiniz.&lt;/p&gt;
+&lt;h6&gt;FireBug Menü&lt;/h6&gt;
+&lt;p&gt;FireBug menüsündeki seçenekleri tek tek tanımlarsak:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/firebug_menu.gif" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Open Firebug&lt;/strong&gt; : FireBug konsolunu açar. Kısa yolu f12 tuşudur,
+    bir kere basarsanız açar iki kere basarsanız kapatır.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open Firebug in New Window&lt;/strong&gt; : FireBug konsolunu farklı pencerede
+    açmak için. Bu genelde popup pencereleri gibi küçük boyutlu
+    pencerelerde FireBug konsolunun tüm sayfayı kapsadığı durumlarda çok
+    işe yarıyor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disable Firebug&lt;/strong&gt; : FireBug aracını pasif hale getiriyor. Bu
+    özellik önemli, çünkü ajax tabanlı bazı sitelerde FireBug
+    yavaşlamalara neden olabilir. Gmail'e girdiğinizde bazen bu yönde
+    hatalar alırsınız.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disable Firebug for ****&lt;/strong&gt;: Belli sitelerde firebug'ınızın
+    pasif olmasını istediğinizde bu seçeneği tıklayınız. Ben Gmail için
+    bu seçeneği işaretledim. Çünkü firebug'a her zaman ihtiyaç duyduğum
+    için devamlı kapalı tutmak hoşuma gitmiyor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Allowed Sites&lt;/strong&gt; : İşaretlediğiniz siteyi firebug ile gezmeye
+    tercih etmek için.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inspect the Element&lt;/strong&gt; : Bu menü ile HTML elemanlarını seçmek için
+    kullanırız.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Profile Javascript&lt;/strong&gt; : Bu özellik sadece FireBug aktif iken
+    çalışıyor. Javascript işlemlerimizin gerçekleştiğinde nasıl
+    davranacağını gösterir. Performans için önemli bir özellik.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clear Console&lt;/strong&gt; : FireBug "Console" tab'ını temizlemek için.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CommandLine&lt;/strong&gt; : Console sekmesini açar.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search :&lt;/strong&gt; Mevcut sekmede arama alanına odaklar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6&gt;FireBug Konsolu&lt;/h6&gt;
+&lt;p&gt;Şimdide FireBug konsolunu inceleyelim.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="FireBug Konsol" src="/images/firebug_konsol.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;FireBug konsolunda 6 adet sekme vardır. Bu sekmelere bir göz atalım.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Console tab&lt;/strong&gt; : Bu kısım işlemleri izlememizi sağlar ve aynı
+    zamanda komut satırı içerir.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTML tab&lt;/strong&gt; : Bu sekme mevcut tarayıcı üzerinde çalışma zamanlı
+    HTML elemanlarını yakalamamız, düzenlememiz ve değiştirmemizi
+    sağlar. Bu sekmenin Style, Layout ve DOM isimlerinde 3 adet alt
+    sekmesi vardır. İsmindende anlaşılacağı gibi Style sekmesi bizim çok
+    işimize yarayacaktır.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CSS tab&lt;/strong&gt; : Sayfaya eklenen css dosyalarını kontrol edebiliriz.
+    Seçtiğimiz CSS dosyasında istediğimiz düzenlemeyi ve değişikliği
+    yapabiliriz. Ben bu sekme yerine HTML sekmesi altındaki CSS
+    sekmesini daha çok kullanıyorum.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Script tab&lt;/strong&gt; : Bu sekme javascript hataları için. Bu sekmenin
+    Watch ve Breakpoint adında iki alt sekmesi var.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DOM tab&lt;/strong&gt; : DOm izlemek için kullanılan bir sekme.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Net tab&lt;/strong&gt; : Network işlemlerini izlemek için kullanıyoruz.
+    Sayfamızın ne kadar zaman yüklendiğini ve her nesnenin yüklenme
+    zamanını gösterir.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6&gt;Durum Çubuğu&lt;/h6&gt;
+&lt;p&gt;FireBug Durum çubuğumuzun sağ tarafında yeşil ok ikonu ile kendini
+gösterir. Burada ayrıca hata durumlarında sayfada kaç hata olduğunuda
+gösterir. Bu hatalar Javascript hatalarıdır.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="FireBug Hata" src="/images/firebug_hata.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;FireBug klavye kısa yolları için &lt;a href="http://getfirebug.com/keyboard.html" title="kısayollar"&gt;tıklayınız&lt;/a&gt;. Elinizin hızlanması
+açısından önemli.&lt;/p&gt;
+&lt;p&gt;Bu yazımızda FireBug'ı genel olarak tanıdık bir sonraki yazımızda ise
+CSS ve XHTML kodu yazarken FierBug'dan nasıl yararlanacağımızı
+göreceğiz.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://getfirebug.com/"&gt;http://getfirebug.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://michaelsync.net/2007/09/08/firebug-tutorial-overview-of-firebug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.evotech.net/blog/2007/06/introduction-to-firebug/"&gt;http://www.evotech.net/blog/2007/06/introduction-to-firebug/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://yuiblog.com/blog/2007/01/26/video-hewitt-firebug/"&gt;http://yuiblog.com/blog/2007/01/26/video-hewitt-firebug/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://help.wildapricot.com/display/DOC/Using+Firefox+Firebug+Extension+for+Advanced+customization+(CSS)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.thetruetribe.com/2008/03/firebug-tutorial-getting-started.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.digitalmediaminute.com/screencast/firebug-js/"&gt;http://www.digitalmediaminute.com/screencast/firebug-js/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.ddj.com/development-tools/196802787"&gt;http://www.ddj.com/development-tools/196802787&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ajaxian.com/archives/ajax-debugging-with-firebug"&gt;http://ajaxian.com/archives/ajax-debugging-with-firebug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.google.com/search?hl=en&amp;amp;client=firefox-a&amp;amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;amp;q=Debugging+With+Firebug&amp;amp;btnG=Search&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.youtube.com/watch?v=FsX6qwQqGgQ"&gt;http://www.youtube.com/watch?v=FsX6qwQqGgQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://blog.veanndesign.com/2008/04/12/everything-about-firebug-21-great-resources/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://groups.google.com/group/firebug"&gt;http://groups.google.com/group/firebug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[http://www.seifi.org/javascript/firebug_tips_and_tricks.html][]&lt;/li&gt;
+&lt;li&gt;[http://www.webdeneyimleri.com/firebug-firefox-eklentisi/][Volkan
+    Görgülü'nün video anlatımı]&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.bildirgec.org/yazi/firebug-web-gelistirimi-gelistirildi"&gt;http://www.bildirgec.org/yazi/firebug-web-gelistirimi-gelistirildi&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.burcudogan.com/firebug-ve-hata-ayiklama-sanati-83.html"&gt;http://www.burcudogan.com/firebug-ve-hata-ayiklama-sanati-83.html&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://code.google.com/p/fbug/source/browse/branches/firebug1.1/locale/tr-TR/firebug.dtd?r=350&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;michaelsync&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;net&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2007&lt;span class="o"&gt;/&lt;/span&gt;09&lt;span class="o"&gt;/&lt;/span&gt;08&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;firebug&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tutorial&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;overview&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;firebug&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;help&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;wildapricot&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;DOC&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Using&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;Firefox&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;Firebug&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;Extension&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;Advanced&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;customization&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;CSS&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;thetruetribe&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2008&lt;span class="o"&gt;/&lt;/span&gt;03&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;firebug&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tutorial&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;getting&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;started&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;reybango&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cfm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2007&lt;span class="o"&gt;/&lt;/span&gt;7&lt;span class="o"&gt;/&lt;/span&gt;22&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;VIDEO&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Ajax&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Debugging&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Using&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Firebug&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;google&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;search&lt;/span&gt;?&lt;span class="n"&gt;hl&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="n"&gt;en&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="n"&gt;firefox&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;rls&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mozilla&lt;/span&gt;&lt;span class="c"&gt;%3Aen-US%3Aofficial&amp;amp;q=Debugging+With+Firebug&amp;amp;btnG=Search&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;veanndesign&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2008&lt;span class="o"&gt;/&lt;/span&gt;04&lt;span class="o"&gt;/&lt;/span&gt;12&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;everything&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;about&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;firebug&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;21&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;great&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;resources&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;alternateidea&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;articles&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2006&lt;span class="o"&gt;/&lt;/span&gt;05&lt;span class="o"&gt;/&lt;/span&gt;12&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;an&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;depth&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;look&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;at&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;future&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;debugging&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;firebug&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;google&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;fbug&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;browse&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;branches&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;firebug1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;1&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;locale&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tr&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;TR&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;firebug&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dtd&lt;/span&gt;?&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;350
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="CSS Düzenleme"></category><category term="css ile site yapmak"></category><category term="CSS yazma"></category><category term="firebug"></category><category term="Firefox"></category><category term="Javascript"></category><category term="XHTML düzenleme"></category></entry><entry><title>Sabit Konumlandırma (Postion:fixed)</title><link href="http://www.fatihhayrioglu.com/sabit-konumlandirma-postionfixed/" rel="alternate"></link><updated>2007-12-11T22:41:00+01:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-12-11:sabit-konumlandirma-postionfixed/</id><summary type="html">&lt;p&gt;Bu konuya bir çalışmam dolayısıyla &lt;strong&gt;position:fixed&lt;/strong&gt; özelliğini
+kullanma gereksinimi duyduğum için girdim, sonra araştırma sonuçları bir
+makale konusu olabileceğini düşünerek bu makaleyi yazdım. Biraz
+araştırınca birden fazla yöntem olduğunu gördüm. Bir ikisini uyguladım
+ve sonuçta birinde karar kıldım. Sizlere bu süreci ve &lt;strong&gt;postion:fixed&lt;/strong&gt;
+hakkında genel bir bilgi sunacağım. &lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;Bu konuya daha önce &lt;a href="http://www.fatihhayrioglu.com/?p=151" title="konumlandırma makalesi"&gt;CSS ile konumlandırma(positioning)&lt;/a&gt; kısmında
+kısaca değinmiştik.&lt;/p&gt;
+&lt;p&gt;"Sabitkonumlandırma Mutlak Konumlandırmanın bir alt kategorisidir. Sabit
+konumlandırılmış elementin sayfadaki görünümü çok farklıdır. Bunu
+özellikle web sayfasında bir elementin konumunu sabitlemek için
+kullanabiliriz. Sabit konumlandırma ile yerleştirilmiş element
+belirtilen yerde asılı kalacaktır. Web tarayıcısının kaydırma çubuğu
+aşağı yukarı kaydırılması ile Sabit Konumlandırma ile yerleştirilmiş
+elementin yeri değişmeyecektir ve sabit kalacaktır. Ne yazık ki IE 6 bu
+özelliği desteklemiyor. IE 7 strick yorumlayıcısı kullanılıyorsa
+destekliyor diğer hallerde desteklemiyor. "&lt;/p&gt;
+&lt;p&gt;Şeklinde genel bir bilgi verip bırakmıştık. Şimdi biraz daha ayrıntısına
+inelim.&lt;/p&gt;
+&lt;p&gt;Sabit konumlandırmayı sayfanın belli bir alanını sabitleyip diğer
+alanları bu kısmın yanından, altından kaydırmak için kullanırız genelde.&lt;/p&gt;
+&lt;p&gt;Aslında bunun için CSS bize &lt;strong&gt;position:fixed&lt;/strong&gt; kodunu sunmaktadır. Ancak
+bu kodu IE6 ve önceki sürümlerde desteklememesi bize alternatif çözümler
+aramaya sevk ediyor. Buda bize bir makale yazma gereksinimi doğuruyor.&lt;/p&gt;
+&lt;p&gt;İlk metodumuz normal konumlandırma özelliğinin fixed uygulanmış
+şeklidir.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="html"] \&amp;lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
+1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; \&amp;lt;html
+xmlns="http://www.w3.org/1999/xhtml"&gt; \&amp;lt;head&gt; \&amp;lt;style
+type="text/css"&gt; body { margin:0; padding:0; } div#ustKisim {
+position:fixed; background: gray; color: yellow; height:50px;
+width:100%; top:0; left:0; } div#icerik { margin:75px 0 0 0; }
+\&amp;lt;/style&gt; \&amp;lt;/head&gt; \&amp;lt;body&gt; \&amp;lt;div id="ustKisim"&gt;Lorem ipsum dolor sit
+amet\&amp;lt;/div&gt; \&amp;lt;div id="icerik"&gt; \&amp;lt;p&gt;Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam nec erat. Fusce magna massa,
+nonummy eget, aliquam tempus, imperdiet vel, odio. Sed mauris. Quisque
+sodales urna vitae lorem. Vestibulum aliquet, odio aliquam convallis
+lobortis, turpis metus semper ligula, ut vulputate sem justo eu quam.
+Sed feugiat, lectus sit amet porttitor auctor, nulla odio volutpat nisl,
+sit amet egestas augue diam at urna. Sed justo arcu, luctus eget, porta
+in, auctor sit amet, massa. Integer interdum. Nunc condimentum
+scelerisque enim. Pellentesque orci. Maecenas at neque. Sed non diam ac
+turpis pretium dictum. Phasellus ligula felis, aliquet nec, tristique
+non, posuere a, magna. Duis eu quam quis tortor vehicula sodales. Donec
+et mi eget augue bibendum interdum. Proin dapibus odio.\&amp;lt;/p&gt; \&amp;lt;/body&gt;
+\&amp;lt;/html&gt; [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/sabit_konum_ornek1.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Baştada belirttiğimiz gibi buradaki en büyük sorunumuz IE6 ve daha eski
+sürümlerde bu kodun çalışmamasıdır. Bundan sonraki metot buna çözüm
+aramak içindir.&lt;/p&gt;
+&lt;h3&gt;IE6'da çalışan postion:fixed metodu&lt;/h3&gt;
+&lt;p&gt;Bu metot IE'un css içinde &lt;strong&gt;expression()&lt;/strong&gt; komutunu yardımı ile
+javascript kodu işletmemize izin vermesi prensinden dayanır. Bizde bu
+metodda bu komut yardımı ile &lt;strong&gt;position:fixed&lt;/strong&gt; sorununu çözeceğiz.
+&lt;strong&gt;expression()&lt;/strong&gt; yardımı ile daha önce IE'nin &lt;a href="http://www.fatihhayrioglu.com/?p=182"&gt;min-width ve min-height
+sorununu&lt;/a&gt; çözdüğümüzü hatırlayın.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="html"] \&amp;lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
+1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+\&amp;lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; \&amp;lt;head&gt; \&amp;lt;meta
+http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+\&amp;lt;title&gt;Sabit Konumlandırma\&amp;lt;/title&gt; \&amp;lt;style&gt; body { background:
+#ffc; font: 12px sans-serif; margin: 0; padding: 0; } div#ustAlan {
+width: 100%; height: 100px; background: pink; position: fixed; top: 0;
+left: 0; z-index:100; } #icerik{ position:absolute; top:105px; }
+\&amp;lt;/style&gt; \&amp;lt;!–[if lt IE 7]&gt; \&amp;lt;style&gt; body { background: #ffc
+url(’http://’) fixed; } div#ustAlan { position: absolute; top:
+expression(eval(documentElement.scrollTop)); } \&amp;lt;/style&gt; \&amp;lt;![endif]–&gt;
+\&amp;lt;/head&gt; \&amp;lt;body&gt; \&amp;lt;div id="ustAlan"&gt;Sabit Konumlandırma\&amp;lt;/div&gt; \&amp;lt;div
+id="icerik"&gt; \&amp;lt;p&gt;Lorem ipsum dolor sit amet ….\&amp;lt;/p&gt; \&amp;lt;/div&gt;
+\&amp;lt;/body&gt; \&amp;lt;/html&gt; [/sourcecode]&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sabit Konumlandırma" src="/images/sabit_konum_ust.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;Örnek sayfayı görmek için &lt;a href="/dokumanlar/sab_konum_ust.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yukarıdaki kodu iki kısımda inceleyebiliriz. Birinci kısım ilk örnekte
+olduğu gibi &lt;strong&gt;position:fixed&lt;/strong&gt; kullanılan IE7, FF, Opera ve Safari için
+yazılan kısımdır. İkinci kısım IE7'den önceki sürümleri belirten şartlı
+koşul içerisindeki kodlamadır. Bu sürümlerde &lt;strong&gt;position:fixed&lt;/strong&gt;
+desteklenmediği için &lt;strong&gt;postion:absolute&lt;/strong&gt; değeri atanmış ve üst
+değerimizi(top) javascript'in &lt;strong&gt;documentElement.scrollTop&lt;/strong&gt; değeri
+yardımı ile belirlenip sabitlenmiştir.&lt;/p&gt;
+&lt;p&gt;Ayrıca alt alanı sabitlemek için&lt;/p&gt;
+&lt;p&gt;[sourcecode language="css"] bottom: auto; top:
+expression((documentElement.scrollTop + documentElement.clientHeight –
+this.clientHeight)); [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Kodlaması kullanılır. Örneği görmek için &lt;a href="/dokumanlar/sab_konum_alt.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sabitlemek istediğimiz nesneyi üstten 10piksel aşağıda sabitlemek için&lt;/p&gt;
+&lt;p&gt;[sourcecode language="css"] top:
+expression(eval(documentElement.scrollTop) + 10); [/sourcecode]&lt;/p&gt;
+&lt;p&gt;şeklinde kodlarız. Bu kodlama tekniği kullanılarak birçok farklı şablon
+elde edilebilir.&lt;/p&gt;
+&lt;p&gt;Bu yöntemin bazı sorunları vardır, bunlara değinmeden geçmeyelim.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bu metot IE5'de ve IE7, IE6'da &lt;a href="http://www.fatihhayrioglu.com/?p=164"&gt;garip modda&lt;/a&gt; çalışmaz.&lt;/li&gt;
+&lt;li&gt;Bu metot javascript'in hizmet dışı bırakıldığı tarayıcılarda
+    çalışmaz.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;background: url('http://') fixed;&lt;/strong&gt; anlamsız kodu
+    kullanılmaktadır. Bu kod kaydırma çubuğu hareket ettikçe sabitlenen
+    nesnenin kıpranmaması içindir.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bunun dışında bir çok alternatif yöntem vardır. Benim deneyip en son
+kullanmaya karar verdiğim metot bu olduğu için sizlere bu kodu
+gösterdim. Ancak diğer örnekleri görmeniz için alternatif çalışmaların
+linklerini kaynaklar kısmında sizlere vereceğim.&lt;/p&gt;
+&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=""&gt;http://home.tampabay.rr.com/bmerkey/examples/fake-position-fixed.html&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tagsoup.com/cookbook/css/fixed/"&gt;http://tagsoup.com/cookbook/css/fixed/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://annevankesteren.nl/test/examples/ie/position-fixed.html"&gt;http://annevankesteren.nl/test/examples/ie/position-fixed.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://annevankesteren.nl/2005/01/position-fixed-in-ie"&gt;http://annevankesteren.nl/2005/01/position-fixed-in-ie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://annevankesteren.nl/2004/07/fixed-positioning"&gt;http://annevankesteren.nl/2004/07/fixed-positioning&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.howtocreate.co.uk/fixedPosition.html"&gt;http://www.howtocreate.co.uk/fixedPosition.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/layouts/fixed.html"&gt;http://www.cssplay.co.uk/layouts/fixed.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/layouts/body2.html"&gt;http://www.cssplay.co.uk/layouts/body2.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/layouts/fixit.html"&gt;http://www.cssplay.co.uk/layouts/fixit.html&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;[http://www.gunlaug.no/contents/wd_additions_15.html][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.gunesintamicinde.com/ie-6-ve-position-fixed-problemi/"&gt;http://www.gunesintamicinde.com/ie-6-ve-position-fixed-problemi/&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tampabay&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bmerkey&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;examples&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;fake&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;position&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fixed&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="absolute"></category><category term="CSS"></category><category term="expression"></category><category term="fixed"></category><category term="Haberler"></category><category term="Javascript"></category><category term="postion"></category><category term="sabit"></category><category term="sayfa-dibine-yapışık"></category><category term="XHTML"></category></entry><entry><title>Form alanlarına odaklanma</title><link href="http://www.fatihhayrioglu.com/form-alanlarina-odaklanma/" rel="alternate"></link><updated>2007-10-03T17:40:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-10-03:form-alanlarina-odaklanma/</id><summary type="html">&lt;p&gt;Form alanları genelde kullanıcıların en çok sıkıldıkları alanlardır. Bu
+sıkıntıyı gidermek için kod yazarları çeşitli yöntemler
+geliştirmektedir. CSS ve ajax tabanlı çözümlerle gayet güzel sonuçlar
+çıkmaktadır. Biz burada fazla derine inmeden kullanıcının form
+alanlarına odaklandığında form alanına farklılıklar vererek daha
+belirgin hale getirmeyi göreceğiz.&lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;İlk örneğimiz. Bir arama metin kutusuna başlangıç değeri olarak
+açıklayaıcı bir bilgi gireceğiz ve kullanıcı bu alana
+odaklandığında(onfocus) metni sileceğiz.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="html"] \&amp;lt;p&gt; Ad Soyad\&amp;lt;br /&gt; \&amp;lt;input type="text"
+id="ara" name="ara" value="Ara"
+onfocus="if(this.value=='Ara'){this.value=''};"
+onblur="if(this.value==''){this.value='Ara'};" /&gt; \&amp;lt;/p&gt; [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/odaklanma_ornek.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;metin kutusunun onfocus olayına eğer değer bizim girdiğimiz değer ise
+boşaltmasını söylüyoruz. Tabi birde kullanıcının bu metin kutusu dışına
+çıktığında bu alanı eski hali getirmek içinde onblur olayını
+kullanıyoruz. Burada dikkat edilmesi gereken nokta metin kutusuna
+atadğımız bağlangıç değeri(value="Ara") ile sorgudaki
+alanın(if(this.value=='')) bir biri ile aynı olmasıdır.&lt;/p&gt;
+&lt;p&gt;İkinci örneğimizde bu efekte zemin rengi özelliğinide katarak daha güzel
+bir etki vereceğiz.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="html"] \&amp;lt;p&gt;Ad Soyad\&amp;lt;br /&gt; \&amp;lt;input type="text"
+id="ara" name="ara" value="Ara"
+onfocus="if(this.value=='Ara'){this.value='';
+this.style.backgroundColor='#efefef'};"
+onblur="if(this.value==''){this.value='Ara';
+this.style.backgroundColor='#ffffff'};" /&gt; \&amp;lt;/p&gt; [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/odaklanma_ornek.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Burada dikkat edilecek konu onblur durumunda zemin rengini ilk haline
+döndürmektir.&lt;/p&gt;
+&lt;p&gt;Form alanları genelde örnekte verdiğimiz gibi tek metin kutusundan
+oluşmaz. Genelde bir çok metin kutusu, işaret kutusu, açılır menü gibi
+elemanların alt alta sıralanmasından oluşur. son örneğimizde bu
+elementler arasında kullanıcının odaklandığı elementini kapsayan alanın
+zemin rengini değiştirerek dikkati bu alana çekeceğiz.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="html"] \&amp;lt;style type="text/css"&gt; .odaklan{
+background-color: #FFFFE0; padding:10px 5px; border:1px solid #CCCCCC;
+} .normal{ background-color:#FFFFFF; padding:10px 5px; } \&amp;lt;/style&gt; \&amp;lt;p
+class="normal"&gt;Ad Soyad\&amp;lt;br /&gt; \&amp;lt;input type="text" id="ara" name="ara"
+value="Ara" onfocus="if(this.value=='Ara'){this.value='';
+this.style.backgroundColor='#efefef';
+this.parentNode.className='odaklan'};"
+onblur="if(this.value==''){this.value='Ara';
+this.style.backgroundColor='#ffffff';
+this.parentNode.className='normal'};" /&gt; \&amp;lt;/p&gt; [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/odaklanma_ornek.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Burada form alanına ve kapsayan paragrafa farklı renk atayarak daha
+fazla dikkat cekici lanlar oluşturduk.&lt;/p&gt;
+&lt;p&gt;Not: Bu örnekler FF1, IE5, Opera7.5 ve Safari3.0/Win çalışmaktadır.&lt;/p&gt;
+&lt;p&gt;Bu işlemleri aslında biz CSS ilede yapabiliriz. :focus özelliği bu
+işlevi görür, ancak bu özellikleri IE desteklemediği için bu özelliği
+kullanamıyoruz.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="css"] input:focus { background-color: #FFFFE0;
+color: white; } [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Bu kodu IE'nin desteklemesi için bir javascript kodu eklememiz
+gerekiyor.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="javascript"] sfFocus = function() { var sfEls =
+document.getElementsByTagName("INPUT"); for (var i=0; i\&amp;lt;sfEls.length;
+i++) { sfEls[i].onfocus=function() { this.className+=" sffocus"; }
+sfEls[i].onblur=function() { this.className=this.className.replace(new
+RegExp(" sffocus\\b"), ""); } } } if (window.attachEvent)
+window.attachEvent("onload", sfFocus); [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/odaklanma_ornek2.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;</summary><category term="CSS"></category><category term="focus"></category><category term="form"></category><category term="Javascript"></category><category term="odaklanma"></category><category term="XHTML"></category></entry><entry><title>CSS İLE WEB SAYFASI OLUŞTURMA II</title><link href="http://www.fatihhayrioglu.com/css-ile-web-sayfasi-olusturma-ii/" rel="alternate"></link><updated>2006-10-06T10:38:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-06:css-ile-web-sayfasi-olusturma-ii/</id><summary type="html">&lt;h3&gt;Elastik Web Sayfaları Oluşturma&lt;/h3&gt;
+&lt;p&gt;Likid Sayfalar yüksek çözünürlüğe sahip geniş ekranlarda satır
+yüksekliklerinden dolayı pek hoş görünmeyebilir. Bunun aksine,
+daraltılmış pencerelerde çok kısa ve parçalanmış görüneceklerdir ve
+metin boyutu arttırıldığında üst üste binmiş satırlarda görüneceklerdir.
+Bununla ilgili olarak elastik sayfa oluşturma metodu bize yardım
+edecektir. &lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;Elastik Sayfalar web tarayıcılarına göre font boyutunun ve elementlerin
+genişliğinin göreceli olarak ayarlandığı sayfalardır. Genişlikleri
+&lt;strong&gt;em&lt;/strong&gt;, yüzde(%) ve ex gibi göreceli birimler kullanarak
+tanımladığımızda font boyutu sayfa genişliğine göre değişecektir. Aynı
+şekilde satır yüksekliği(line-height) değerinde de göreceli birimler
+kullanarak daha okunaklı sayfalar elde edebilriz.&lt;/p&gt;
+&lt;p&gt;Elastik sayfa planlama metodununda bazı problemleri vardır, örneğin
+sabit genişlikteki sayflardaki gibi elastik metodda da boş alanlar
+yeterince kullanılamaz. Çünkü font boyutu arttırılırsa sayfa genişliği
+tarayıcının genişliğini geçecektir ve yatay kaydırma çubuğu çıkacaktır.
+Bu durumdan kurtulmak için body elementine max-width 100% ataması
+yapabilriz. Ancak bu özelliği IE6 desteklememektedir.&lt;/p&gt;
+&lt;p&gt;Elastik web sayfası tasarlamak çok kolaydır. Sabit Genişlikte sayfa
+tasarımı yapılan bir sayfanın birimleri &lt;strong&gt;piksel&lt;/strong&gt;yerine &lt;strong&gt;em&lt;/strong&gt; olarak
+değiştirilirse sayfa elastik yapıya kavuşacaktır. 1em yaklaşık olarak
+10piksele denk gelir.&lt;/p&gt;
+&lt;div class="ekstrabilgi"&gt;
+em'in asıl tanımı küçük "**m**" harfi genişliğidir. Normalde **em** font
+boyutu birimi olarak kullanılır ancak CSS'de width,line-height vd.
+özelliklerin birimi olarak da kullanılabilir. Em üst elemente veya diğer
+elementleri baz alarak göreceli bir değer alır. Bu özellik bize elastik
+web sayfası hazırlama imkanı verir.
+
+&lt;/div&gt;
+
+&lt;p&gt;Çoğu web tarayıcısınnda normal font boyutu 16px'dir. 10 pikselin
+yüzdesel değeri yaklaşık olarak 62.5% civarındadır. Bu belirtilen
+değerlere göre kodumuzu yazarsak:&lt;/p&gt;
+&lt;p&gt;[sourcecode language='css'] body{ text-align:center; font-size:62.5%;
+font-family:Arial, Helvetica, sans-serif; } #sayfa{ width:72em;
+margin:0 auto; text-align:left; } #ustAlan { width:72em; } #anaMenu {
+float: left; width: 18em; } #KapsayiciAlan { float: right; width: 52em;
+} #icerik { float: left; width: 32em; } #BannerAlani{ float: right;
+width: 20em; } #altAlan { width:72em; clear: both; } [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Burada body elementi font boyutunu 1em eşit olan font-size:62.5%;
+atamasını yaptık. Daha sonra sayfadaki birimleri bu değeri baz alarak
+hesapladık ve em birimi vererek sayfamızı elastik bir hala getirdik.&lt;/p&gt;
+&lt;p&gt;Sayfamızın Sabit Genişlikteki sayfalardan farkını anlamak için web
+tarayıcısının font boyutu değerlerini veya yakınlaştırma(zoom) aracını
+(Opera, FF-eklentisi var ve IE 7 de var)kullanarak görebilriz. IE ve FF
+için Görünüm(View) - Metin Boyutu(Text Size) Opera için View - Zoom
+seçeneklerini kullanarak farkı görebilriz.&lt;/p&gt;
+&lt;/p&gt;</summary><category term="clear"></category><category term="CSS"></category><category term="Elastik Web Sayfaları"></category><category term="em"></category><category term="float"></category><category term="Javascript"></category><category term="XHTML"></category></entry></feed>

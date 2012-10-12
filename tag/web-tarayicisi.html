@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - web tarayıcısı</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././google-chrome-birde-benden-dinleyin-d/">Google Chrome - Birde benden dinleyin :D</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2008-09-04T16:38:00">
+                Thu 04 September 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/google-chrome.html">Google Chrome</a><a href=".././tag/internet-tarayicisi.html">İnternet Tarayıcısı</a><a href=".././tag/safari.html">safari</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/web-tarayicisi.html">web tarayıcısı</a><a href=".././tag/webkit.html">WebKit</a></p>
+
+
+</footer><!-- /.post-info --><p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/chrome_438x359-300x245.jpg" title="Google Chrome" />][] Her yeni çıkan tarayıcının ardından inceleme yapıp yazı
+yazıyorum genelde. Tabi Google Chrome içinde bunu yapacaktım ki baktım
+çok fazla kaynak var. Beni asıl hayrete düşüren Türkçe kaynaklarında çok
+fazla olması idi. Sonra bir birinin tekrarı içerik oluşturmamak için
+gördüğüm linkleri kaynaklar kısmına ekledim. Ben ise sadece CSS ve Web
+Standartları açısından değerlendirmeye karar verdim.</p>
+<p>Google Chrome Safari'nin de alt yapısını oluşturan Webkit alt yapısı ile
+çalışıyor, buda bize Safari neyi destekliyorsa Google Chrome onu
+destekler ipucunu veriyor. Bir iki özellik(text-shadow ve @font-face)
+dışında aynı özellikleri destekliyor. CSS destek listesini görmek
+için<a href="http://www.evotech.net/blog/2008/09/google-chrome-browser-css-selector-support/" title="css özellik listesi">tıklayınız.</a></p>
+<p>Benim gördüğüm tek sorun kısayol background tanımında tanımlanan
+renkerler gelmiyor. Sayfa yenileme ve 5-10 saniye geçtikten sonra
+geliyor.</p>
+<ol>
+<li>background:#f00 url(../images/ardalan.gif) top left repaet-x;</li>
+</ol>
+<p>ardalan rengi olan #f00 gelmiyor.</p>
+<p>CSS filtrelemesi olarak Safari için kullanılan filtreleme
+kullanılabilir.</p>
+<ol>
+<li>\&lt;html></li>
+<li>\&lt;head></li>
+<li>\&lt;style></li>
+<li>body:nth-of-type(1) p{</li>
+<li>color: #ff0000; // sadece safari ve chrome görecek</li>
+<li>}</li>
+<li>\&lt;/style></li>
+<li>\&lt;/html></li>
+<li>\&lt;body></li>
+<li>\&lt;p>deneme olarak bunu yazıyorum\&lt;/p></li>
+<li>\&lt;/body></li>
+<li>\&lt;/html></li>
+</ol>
+<p>Javascript ile yakalamak içinde </p>
+<ol>
+<li>var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome')
+    > -1;</li>
+</ol>
+<p></p>
+yeterli oluyor. Ayrıca javascript hata yakalama konsolu
+için <a href="static">http://www1.qainsight.net:8080/2008/09/04/How+To+View+JavaScript+Errors+In+Google+Chrome.aspx</a>siteyi
+incelmenizi öneririm.</p>
+<p>Erişilebilirlik açısından karnesi kötü
+bulunmuş. <a href="http://www.paciellogroup.com/blog/?p=92">http://www.paciellogroup.com/blog/?p=92</a> sitesinde
+yazdığına göre erişilebilirlik açısından yeterli not alamamış. Tabi bu
+sitenin testi ne kadar kriter onu bilemem.</p>
+<p>Eklentilerinin olmaması görünen en büyük eksiklik gibi. Yakında eklenti
+desteği geleceğini duymak bizi sevindirdi. </p>
+<p>Sonuç olarak tüm işlerini internetten gören Google gibi bir şirket için
+bir tarayıcı çıkarmak gecikmiş bir olay. Ayrıca benim acayibime giden
+Google'un Firefox ile arama alanı için 2011'e kadar uzattığı haberinin
+üzerinden kısa bir süre geçmesinden sonra internet tarayıcısı çıkarması.
+İşin içinde farklı hesaplar var gibi. 2006'da Firefox'a 56 milyon dolar
+ödediğini düşünürsek çok da anlamsız gelmiyor. </p>
+<p>Her yeni çıkan tarayıcının ardından web kod yazarları acaba bu da sorun
+çıkarırmı düşüncesi sarar ve hemen kodladığı sitleri kontrol eder ki
+bende öyle yaptım Allah şükür benim sitem(Üst menü ile resim arasında
+mesafede sorun var) hariç bir sorun yok. Google Chrome Acid 2 testinden
+geçerken <a href="http://acid3.acidtests.org/" title="Acid 3">Acid 3</a> testinden de mevcut tarayıcıların en yüksek puanı
+olan 79 alması ve standartlar uyması çok güzel bir gelişme. Böyle
+tarayıcının başımızın üstünde yeri var deriz.</p>
+<!--more-->
+
+<h6>Kaynaklar</h6>
+<p>Türkçe kaynak</p>
+<ul>
+<li><a href="static">http://www.macosxpc.com/2008/09/02/googledan-webkit-tabanli-internet-tarayicisi/</a></li>
+<li><a href="http://cnetturkiye.com/haberler/1267">http://cnetturkiye.com/haberler/1267</a></li>
+<li><a href="http://www.savassakar.com/?p=2029">http://www.savassakar.com/?p=2029</a></li>
+<li><a href="static">http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome</a></li>
+<li>[http://www.potkal.com/yazi_icerik.asp?y1405][]</li>
+<li><a href="http://www.mondaynay.com/2008/09/google-chrome-beta-web-browser/">http://www.mondaynay.com/2008/09/google-chrome-beta-web-browser/</a></li>
+<li><a href="static">http://www.blicca.com/programlar/internet-tarayicilari/google-chrome-beta.html</a></li>
+<li><a href="http://turk.internet.com/haber/yazigoster.php3?yazi21847">http://turk.internet.com/haber/yazigoster.php3?yazi21847</a></li>
+<li><a href="http://www.burakkutbay.com/google-chrome-tarayici-analizi/">http://www.burakkutbay.com/google-chrome-tarayici-analizi/</a></li>
+<li>[http://www.chip.com.tr/konu/Google-Chrome-dan-ilk-guvenlik-acigi_8529.html][]</li>
+<li><a href="http://blog-tr-ego.blogspot.com/2008/09/chrome-nedir.html">http://blog-tr-ego.blogspot.com/2008/09/chrome-nedir.html</a></li>
+<li><a href="http://notoku.com/google-chrome-acik-kaynakli-tarayici-projesi/">http://notoku.com/google-chrome-acik-kaynakli-tarayici-projesi/</a></li>
+<li><a href="static">http://zokoba.blogspot.com/2008/09/google-chrome-ilk-izlenimler.html</a></li>
+<li><a href="http://www.mafiamax.com/2008/09/google-chrome-on-incelemesi.html">http://www.mafiamax.com/2008/09/google-chrome-on-incelemesi.html</a></li>
+<li><a href="http://www.siberkultur.com/?q=google-chrome-cikti">http://www.siberkultur.com/?q=google-chrome-cikti</a></li>
+<li><a href="static">http://www.webrazzi.com/2008/09/03/google-chrome-hakkindaki-goruslerim-ve-gorusleriniz/</a></li>
+<li><a href="static">http://www.mmistanbul.com/makale/title/google-chrome-ve-browser-savaslari</a></li>
+</ul>
+<p>Genel kaynak</p>
+<ul>
+<li><a href="http://www.google.com/chrome/" title="Google Chrome">http://www.google.com/chrome/</a></li>
+<li><a href="static">http://gizmodo.com/5044958/dr-frankensteins-browser-the-strangely-obvious-ancestry-of-google-chrome</a></li>
+<li><a href="http://www.mattcutts.com/blog/google-chrome-communication/">http://www.mattcutts.com/blog/google-chrome-communication/</a></li>
+<li><a href="http://mashable.com/2008/09/03/awesome-google-chrome/">http://mashable.com/2008/09/03/awesome-google-chrome/</a></li>
+<li><a href="http://blog.wired.com/business/2008/09/chrome-eliminat.html">http://blog.wired.com/business/2008/09/chrome-eliminat.html</a></li>
+<li><a href="http://www.popularmechanics.com/technology/industry/4280717.html">http://www.popularmechanics.com/technology/industry/4280717.html</a></li>
+<li><a href="http://blogs.zdnet.com/hardware/?p=2481">http://blogs.zdnet.com/hardware/?p=2481</a></li>
+<li><a href="static">http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html</a></li>
+<li><a href="http://lifehacker.com/5044484/google-chrome-first-look">http://lifehacker.com/5044484/google-chrome-first-look</a></li>
+<li>[http://www.readwriteweb.com/archives/does_google_have_rights_to_all.php][]</li>
+<li><a href="http://mashable.com/2008/09/03/awesome-google-chrome/">http://mashable.com/2008/09/03/awesome-google-chrome/</a></li>
+<li><a href="http://mashable.com/2008/09/02/chrome-windows/">http://mashable.com/2008/09/02/chrome-windows/</a></li>
+<li><a href="http://www.niallkennedy.com/blog/2008/09/google-chrome.html">http://www.niallkennedy.com/blog/2008/09/google-chrome.html</a></li>
+<li><a href="http://gigaom.com/2008/09/02/why-did-google-abandon-firefox/">http://gigaom.com/2008/09/02/why-did-google-abandon-firefox/</a></li>
+<li><a href="http://www.tgdaily.com/content/view/39174/118/">http://www.tgdaily.com/content/view/39174/118/</a></li>
+<li><a href="static">http://www.techcrunch.com/2008/09/02/getclicky-analytics-service-tracking-2-google-chrome-usage/</a></li>
+<li><a href="static">http://ptech.allthingsd.com/20080902/first-test-of-googles-new-browser/</a></li>
+<li><a href="static">http://webworkerdaily.com/2008/09/02/google-chrome-is-it-ready-for-web-workers/</a></li>
+<li>[http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&amp;tag=feed&amp;subj=Webware][]</li>
+<li>[http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&amp;tag=feed&amp;subj=Webware][]</li>
+<li><a href="static">http://internetducttape.com/2008/09/02/why-google-chrome-isnt-my-default-browser/</a></li>
+<li><a href="http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/">http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/</a></li>
+<li><a href="static">http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/</a></li>
+<li><a href="http://davidwalsh.name/detecting-google-chrome-javascript">http://davidwalsh.name/detecting-google-chrome-javascript</a></li>
+<li><a href="static">http://lifehacker.com/5044518/enable-chromes-best-features-in-firefox</a></li>
+<li><a href="static">http://lifehacker.com/5044668/beta-browser-speed-tests-which-is-fastest</a></li>
+</ul>
+<p>javascript motoru </p>
+<ul>
+<li><a href="static">http://www.blicca.com/haberler/yazilim/mozilla-tracemonkey-vs-chrome-v8.html</a></li>
+<li><a href="static">http://arstechnica.com/journals/linux.ars/2008/09/03/new-firefox-javascript-engine-is-faster-than-chromes-v8</a></li>
+<li><a href="static">http://prosenjit23.wordpress.com/2008/09/03/google-chrome-mozilla-firefox-microsoft-ie-sunspider-javascript-performance-test-results/</a></li>
+<li><a href="static">http://blogs.zoho.com/uncategorized/firefox-31-google-chrome-javascript-wins-flashsilverlight-lose/</a></li>
+</ul>
+</p>
+
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/chrome_438x359-300x245.jpg" title="Google Chrome" />]: http://www.fatihhayrioglu.com/wp-content/chrome_438x359.jpg
+    http://www1.qainsight.net:8080/2008/09/04/How+To+View+JavaScript+Errors+In+Google+Chrome.aspx
+    http://www.macosxpc.com/2008/09/02/googledan-webkit-tabanli-internet-tarayicisi/
+    http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome
+    http://www.blicca.com/programlar/internet-tarayicilari/google-chrome-beta.html
+    http://www.chip.com.tr/konu/Google-Chrome-dan-ilk-guvenlik-acigi_8529.html
+    http://zokoba.blogspot.com/2008/09/google-chrome-ilk-izlenimler.html
+    http://www.webrazzi.com/2008/09/03/google-chrome-hakkindaki-goruslerim-ve-gorusleriniz/
+    http://www.mmistanbul.com/makale/title/google-chrome-ve-browser-savaslari
+    http://gizmodo.com/5044958/dr-frankensteins-browser-the-strangely-obvious-ancestry-of-google-chrome
+    http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html
+    http://www.readwriteweb.com/archives/does_google_have_rights_to_all.php
+    http://www.techcrunch.com/2008/09/02/getclicky-analytics-service-tracking-2-google-chrome-usage/
+    http://ptech.allthingsd.com/20080902/first-test-of-googles-new-browser/
+    http://webworkerdaily.com/2008/09/02/google-chrome-is-it-ready-for-web-workers/
+    http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&amp;tag=feed&amp;subj=Webware
+    http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&amp;tag=feed&amp;subj=Webware
+    http://internetducttape.com/2008/09/02/why-google-chrome-isnt-my-default-browser/
+    http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/
+    http://lifehacker.com/5044518/enable-chromes-best-features-in-firefox
+    http://lifehacker.com/5044668/beta-browser-speed-tests-which-is-fastest
+    http://www.blicca.com/haberler/yazilim/mozilla-tracemonkey-vs-chrome-v8.html
+    http://arstechnica.com/journals/linux.ars/2008/09/03/new-firefox-javascript-engine-is-faster-than-chromes-v8
+    http://prosenjit23.wordpress.com/2008/09/03/google-chrome-mozilla-firefox-microsoft-ie-sunspider-javascript-performance-test-results/
+    http://blogs.zoho.com/uncategorized/firefox-31-google-chrome-javascript-wins-flashsilverlight-lose/</p><p>There are <a href=".././google-chrome-birde-benden-dinleyin-d/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././internet-tarayicilari/" rel="bookmark"
+                           title="Permalink to İnternet Tarayıcıları">İnternet Tarayıcıları</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2008-05-12T22:27:00">
+                Mon 12 May 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/firebug.html">firebug</a><a href=".././tag/firefox.html">Firefox</a><a href=".././tag/ie.html">ie</a><a href=".././tag/internet-tarayicisi.html">İnternet Tarayıcısı</a><a href=".././tag/opera.html">Opera</a><a href=".././tag/safari.html">safari</a><a href=".././tag/web-tarayicisi.html">web tarayıcısı</a><a href=".././tag/webkit.html">WebKit</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p><img alt="İnternet Tarayıcıları" src="static/images/tarayicilar.png" />İnternet Tarayıcıları diğer bir ifade ile Web
+Tarayıcıları, İnternet veya lokal alandaki ağlarda web sayfalarındaki
+interaktif metin, resim, video, müzik vb. göstermek için kullanılan
+programlardır. "Vikipedia"</p>
+<p>Şu an genelde kullanılan tarayıcılar: Internet Explorer, Mozilla
+Firefox, Opera ve Safari <!--more--></p>
+<p>[http://upload.wikimedia.org/wikipedia/commons/7/74/Timeline_of_web_browsers.svg][]</p>
+<p>İnternet tarayıcılarının ...</p>
+                <a class="readmore" href=".././internet-tarayicilari/">read more</a>
+                <p>There are <a href=".././internet-tarayicilari/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././07-kasim-2006-webden-haberler/" rel="bookmark"
+                           title="Permalink to 07 Kasım 2006 Web'den haberler">07 Kasım 2006 Web&#039;den haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2006-11-07T21:40:00">
+                Tue 07 November 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/adobe.html">adobe</a><a href=".././tag/ajax.html">Ajax</a><a href=".././tag/browser.html">browser</a><a href=".././tag/firefox.html">Firefox</a><a href=".././tag/flash.html">flash</a><a href=".././tag/javascript.html">Javascript</a><a href=".././tag/pdf.html">pdf</a><a href=".././tag/web-tarayicisi.html">web tarayıcısı</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>Gün geçmiyor ki bir ajax veya javascript kütüphanesi çıkmasın İşte
+    <a href="http://www.manageability.org/blog/stuff/ajax-libraries">link topluluğu</a><br />
+</li>
+<li>İstediğiniz web adresinin anında internet üzerinden pdf hazırlayan
+    <a href="http://www.9-interactive.com/">site</a></li>
+<li>Mailing hakkında bir çok makaleyi toplayıp bizim hizmetimize
+    sunulmuş. <a href="http://particletree.com/notebook/a-guide-to-email-roundup/">Link</a><br />
+</li>
+<li>Web tarayıcılarının hızını test etmişler. Nerdeyse tüm web
+    tarayıcılarını teste dahil etmişler. <a href="http://www.howtocreate.co.uk/browserSpeed.html">Link</a></li>
+<li>Firefox'un en çok kullanılan Tab ...</li></ul>
+                <a class="readmore" href=".././07-kasim-2006-webden-haberler/">read more</a>
+                <p>There are <a href=".././07-kasim-2006-webden-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - background-clip</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css3-background-origin-ve-background-clip-ozellikleri/">CSS3 background-origin ve background-clip özellikleri</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2011-09-23T21:18:00">
+                Fri 23 September 2011
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/-webkit-background-cliptext.html">-webkit-background-clip:text</a><a href=".././tag/-webkit-text-fill-colortransparent.html">-webkit-text-fill-color:transparent</a><a href=".././tag/background-clip.html">background-clip</a><a href=".././tag/background-origin.html">background-origin</a><a href=".././tag/css3.html">css3</a></p>
+
+
+</footer><!-- /.post-info --><p><a href="http://www.fatihhayrioglu.com/hizli-css-referansi/">background özelliklerini</a> anlatırken background tanımlarının içerik
+ve padding alanının ardalanını etkilediğini söylemiştik. CSS2.1’de
+tanımladığımız ardalan resimleri içeriği ve padding uygulanan alanları
+kapsıyor. CSS3 ile birlikte buradaki kabul değişti. Artık kenar
+çizgileride dahil edilebiliyor veya içerik alanı ile
+sınırlandırılabiliyor. Bize bu imkanı CSS3’ün <strong>background-clip</strong> ve
+<strong>background-origin</strong> özellikleri sağlıyor.</p>
+<p>İlk olarak <strong>background-origin</strong> özelliğini inceleyerek başlayalım.</p>
+<h3>background-origin</h3>
+<p><strong>background-image</strong> konumunu hesaplamada elementin kutusunun
+sınırlarını belirler. CSS3’den önce bu sabit bir değer olarak
+padding-box idi. Bu özellik bize farklı konumlandırma imkanı sağlar.</p>
+<p><strong>Yapısı:</strong> background-origin: \&lt;bg-box><br />
+<strong>Aldığı Değerler:</strong>\&lt;bg-box> border-box | padding-box | content-box<br />
+<strong>Başlangıç değeri:</strong>padding-box<br />
+<strong>Uygulanabilen elementler:</strong> Tüm elementler<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p>Aldığı değerleri kısaca açıklarsak</p>
+<ul>
+<li><strong>border-box:</strong> background-image konumu border alanından başlar</li>
+<li><strong>padding-box:</strong> background-image konumu padding alanından başlar</li>
+<li><strong>content-box:</strong> background-image konumu içerik alanından başlar</li>
+</ul>
+<p><img alt="" src="https://lh6.googleusercontent.com/-PsvxlredrDNUaFBqk4tcxuxsLaw9XJAeTIfp53XKqD2CkZgPqnN7UkCvkm1nSveS_plE_wPOGgUzpVVJ1JGeq_6bWXEkSun-0KS9CC1JMnz19Lusfw" /></p>
+<p>[css] #kutu1 { -moz-background-origin: border;
+-webkit-background-origin: border; -webkit-background-origin:
+border-box; background-origin: border-box; } #kutu2 {
+-moz-background-origin: padding; -webkit-background-origin: padding;
+-webkit-background-origin: padding-box; background-origin: padding-box;
+} #kutu3 { -moz-background-origin: content; -webkit-background-origin:
+content; -webkit-background-origin: content-box; background-origin:
+content-box; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Rf6Mv/embedded/result,css,html"></iframe></p>
+<p><strong>background-position:fixed</strong> tanımlı elementlere etki etmez.</p>
+<p><strong>Tarayıcı Destekleme Listesi</strong><br />
+Firefox 3.6+ (-moz- öneki ile) 4+ (öneksiz)<br />
+Chrome 1+ (-webkit- öneki ile)<br />
+Safari 3.0+ (-webkit- öneki ile)<br />
+Opera 10.5<br />
+İnternet Explorer 9+</p>
+<h3>background-clip</h3>
+<p><strong>background-clip</strong> ardalanın nerede gösterileceğini tanımlar. Daha önce
+padding dahil içerik alanı sabit olarak geliyordu, artık border alanıda
+dahil edilebiliyor veya padding alanı kapsamdan çıkarılabiliyor</p>
+<p><strong>Yapısı:</strong> background-clip: \&lt;bg-box><br />
+<strong>Aldığı Değerler:</strong> \&lt;bg-box> border-box | padding-box | content-box<br />
+<strong>Başlangıç değeri:</strong> border-box<br />
+<strong>Uygulanabilen elementler:</strong> Tüm elementler<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p>Aldığı değerleri kısaca açıklarsak</p>
+<ul>
+<li><strong>border-box:</strong>Ardalan içerik alanı + padding alanı + border alanını
+    kapsar.</li>
+<li><strong>padding-box:</strong> Ardalan içerik alanı + padding alanını kapsar</li>
+<li><strong>content-box:</strong> Ardalan sadece içerik alanını kapsar.</li>
+</ul>
+<p><img alt="" src="https://lh6.googleusercontent.com/MOaRt6WqnrAxmlxJNMcvGKvA-Ki9x0IQOpz_Az4iqzZU6Ug3Dt1vutHFus__ZMQSORq3eLvhtrgzeWFPMzptoBB5pMxLHIWjoA26SO009nYr4fxoUrU" /></p>
+<p><strong>border-box</strong> tanımı eğer <strong>background-origin:border-box</strong> ise
+uygulanır.</p>
+<p>[css] #kutu1{ -moz-background-origin: border;
+-webkit-background-origin: border; -webkit-background-origin:
+border-box; background-origin: border-box; -moz-background-clip:border;
+-webkit-background-clip:border; -webkit-background-clip:border-box;
+background-clip:border-box; } #kutu2{ -moz-background-origin: border;
+-webkit-background-origin: border; -webkit-background-origin:
+border-box; -moz-background-clip:padding;
+-webkit-background-clip:padding; -webkit-background-clip:padding-box;
+background-clip:padding-box; } #kutu3{ -moz-background-origin: border;
+-webkit-background-origin: border; -webkit-background-origin:
+border-box; -moz-background-clip:content;
+-webkit-background-clip:content; -webkit-background-clip:content-box;
+background-clip:content-box; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/uzFeu/3/embedded/result,css,html"></iframe></p>
+<p><strong>background-origin:border-box</strong> olarak tanımladığımızda
+<strong>background-clip</strong> özelliğini daha iyi anlarız. Her üç kutudaki
+farkları gördüğünüz gibi. Resim sırası ile border, padding ve içerik
+alanından kırpılmıştır.</p>
+<p><strong>Tarayıcı Destekleme Listesi</strong><br />
+Firefox 3.6+ (-moz- öneki ile) 4+ (öneksiz)<br />
+Chrome 1+ (-webkit- öneki ile)<br />
+Safari 3.0+ (-webkit- öneki ile)<br />
+Opera 10.5<br />
+İnternet Explorer 9+</p>
+<p><strong>backgroun-origin</strong> özelliği <strong>background-image</strong> konumunun kapsama
+alanını belirlerken, <strong>background-clip</strong> ise background alanını kırpmak
+için kullanılır. <strong>background-origin</strong> sadece ardalan resmini etkilerken
+<strong>background-clip</strong> ardalan resmi ve ardalan renginide etkiler.</p>
+<p>Bu özellikleri destekleyen farklı tarayıcılar için önek ile çözüm
+üretilir. Diğer önek uygulamalarında farklı olarak bu özelliklerin
+değerlerinde de tarayıcı sürümleri arasında farklılıklar vardır. Firefox
+ve Webkit’in eski sürümlerinde değer olarak <strong>border, content</strong>
+ve<strong>padding</strong> değerlerini desteklerken son çıkan sürümler standartlaşan
+<strong>content-box, border-box</strong> ve <strong>padding-box</strong> değerlerini
+desteklemektedirler.</p>
+<h3>background-clip: text Değeri</h3>
+<p>Webkit tabanlı tarayıcılarda diğerlerinden farklı olarak text değeride
+vardır. Henüz standartlarda bulunmayan bu değeri sadece webkit kullanan
+Chrome ve Safari desteklemektedir. Bu değer atandığında metinin
+ardalanına resim uygulanıyor geri kalan kısımlara ise saydam ardalan
+olarak kalıyor.</p>
+<p>[css] #kutu1 { -moz-background-origin: border;
+-webkit-background-origin: border; -webkit-background-origin:
+border-box; background-origin: border-box; -webkit-background-clip:text;
+-webkit-text-fill-color:transparent; font:bold 72px Arial, Helvetica,
+sans-serif; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/gqaC9/embedded/result,css,html"></iframe></p>
+<p><strong>-webkit-text-fill-color:transparent</strong> ile metnin ardalanını
+saydamlaştırıyoruz ve elemanın ardalanındaki resmi gösteriyoruz. Çok
+güzel görsel çalışmaları bu şekilde yapabiliriz, ancak henüz sadece
+Chrome ve Safari desteklediği için pek kullanışlı değil.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="static">http://www.css3.info/preview/background-origin-and-background-clip/</a></li>
+<li><a href="http://www.w3.org/TR/css3-background/">http://www.w3.org/TR/css3-background/</a></li>
+<li><a href="http://www.quirksmode.org/css/background.html">http://www.quirksmode.org/css/background.html</a></li>
+<li>[http://www.w3schools.com/cssref/css3_pr_background-clip.asp][]</li>
+<li><a href="http://www.standardista.com/css3/css3-background-properties/">http://www.standardista.com/css3/css3-background-properties/</a></li>
+<li><a href="static">http://css-tricks.com/7423-transparent-borders-with-background-clip/</a></li>
+<li><a href="https://developer.mozilla.org/en/CSS/background-clip">https://developer.mozilla.org/en/CSS/background-clip</a></li>
+<li><a href="https://developer.mozilla.org/en/CSS/background-origin">https://developer.mozilla.org/en/CSS/background-origin</a></li>
+<li><a href="static">http://dev.opera.com/articles/view/css3-border-background-boxshadow/</a></li>
+<li><a href="static">http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/</a></li>
+<li><a href="http://www.css3.info/webkit-introduces-background-cliptext/">http://www.css3.info/webkit-introduces-background-cliptext/</a>
+     (text)</li>
+<li><a href="static">http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/</a>
+    (text)</li>
+<li><a href="http://www.webkit.org/blog/164/background-clip-text/">http://www.webkit.org/blog/164/background-clip-text/</a> (text)</li>
+<li><a href="http://www.impressivewebs.com/background-clip-css3/">http://www.impressivewebs.com/background-clip-css3/</a> (güzel)</li>
+<li><a href="http://css-class.com/test/css/backgrounds/background-origin1.htm">http://css-class.com/test/css/backgrounds/background-origin1.htm</a></li>
+<li><a href="http://css-infos.net/property/background-origin">http://css-infos.net/property/background-origin</a></li>
+<li><a href="https://www.youtube.com/watch?v=7xVS2FX2Mao&amp;feature=related">https://www.youtube.com/watch?v=7xVS2FX2Mao&amp;feature=related</a>
+    (video)</li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">css3</span><span class="p">.</span><span class="n">info</span><span class="o">/</span><span class="n">preview</span><span class="o">/</span><span class="n">background</span><span class="o">-</span><span class="n">origin</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">clip</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">css</span><span class="o">-</span><span class="n">tricks</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>7423<span class="o">-</span><span class="n">transparent</span><span class="o">-</span><span class="n">borders</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">clip</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dev</span><span class="p">.</span><span class="n">opera</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">view</span><span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">boxshadow</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">sitepoint</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="k">properties</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">values</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">backgrounds</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css3</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">cssreset</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">tutorials</span><span class="o">/</span><span class="n">fun</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">clip</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">/</span>
+</pre></div><p>There are <a href=".././css3-background-origin-ve-background-clip-ozellikleri/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

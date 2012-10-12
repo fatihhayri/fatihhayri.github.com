@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - css-sprite</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css-ipucu-28-firebug-yardimi-ile-daha-kolay-css-sprite-uygulamak/">CSS İpucu 28: FireBug yardımı ile daha kolay CSS Sprite Uygulamak</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2010-10-28T22:39:00">
+                Thu 28 October 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/background-kaydirma.html">background-kaydırma</a><a href=".././tag/background-position.html">background-position</a><a href=".././tag/css-sprite.html">css-sprite</a><a href=".././tag/fanatikmarslarcom.html">fanatikmarslar.com</a><a href=".././tag/trabzonspor.html">trabzonspor</a></p>
+
+
+</footer><!-- /.post-info --><p>CSS Sprite yöntemini birçok yerde uyguladım, CSS Sprite tekniği ile
+ilgili uzunca bir makalede yazmayı düşünüyorum, ama öncesinde küçük bir
+ipucu yazayım istedim.</p>
+<p>CSS Sprite tekniğini kısa açıklarsam sunucu tarafında çok fazla resim
+isteğini azaltmak için kullanılan sitelerimize hız kazandıran bir yöntem
+diyebiliriz. Uygulamada kullandığımız resimleri tek bir resim altında
+toplayıp ilgili alanlara background-position özelliğinden yararlanarak
+ilgili resimleri atama işidir. Bir background kaydırma yöntemidir işin
+aslı.</p>
+<p>Birçok yerde kullandım bu yöntemi sizlerede anlattım çeşitli
+makalelerimde, bunlardan bir tanesi <a href="http://www.fatihhayrioglu.com/psdden-htmle-%E2%80%93-fanatikmarslar-com-sitesinin-kodlamasi-ii/">PSD’den HTML’e – fanatikmarslar.com
+Sitesinin Kodlaması II</a> adlı makale.</p>
+<p>CSS Sprite tekniğinde sorunlardan bir tanesi hazırladığımız toplu resim
+üzerinde ilgili elemana atanacak background-position değerlerini
+bulmaktır.</p>
+<p><img alt="" src="https://lh5.googleusercontent.com/slGZJ_Am1RIyR5yrzIM2dkZM22WIfcwo5GS-L8hzjRol25LcAvOIjSbLCmaEp__Yqq7HwALtVfoAXTn_U-sg6ZUpi7_chR-a-LlzEaMHQMX3euaWdw" /></p>
+<p>Yukarıdaki şekilde resmi birleştirdik, bu resimdeki ilgili bölümleri
+ilgili elemanlara atamak için tek tek background-position değerlerini
+girmeliyiz. Bunu her eleman için tek tek yapmalıyız. Bu işlem çok can
+sıkıcı haller alabiliyor bazen, ama burada yardımımıza sağ olsun
+Firefox’un eklentisi FireBug yetişiyor.</p>
+<p>FireBug’ın anında müdahale etme yeteneği sayesinde bizler css sprite
+resimlerindeki background-position değerlerini çok kolay bir şekilde
+bulabiliyoruz.</p>
+<p>Örneği takım logoları için bir css sprite resmi hazırladık. Bu resimdeki
+her takım için konum bulmak çok zor olur.</p>
+<p>İlk olarak tekrarı engellemek için genel bağlantıya tanımımızı yapalım</p>
+<p>[css]a.takimLogo{ display:block;
+background:url(../images/takim_logolari.gif) right 0 no-repeat;
+padding:8px 30px 8px 0; color:#0c2b90; text-decoration:underline}[/css]</p>
+<p><img alt="" src="https://lh6.googleusercontent.com/FMA2GgldFdFzVg8UQuW5RJ7x03gVBTrdx-hJjCb0T4Zc0VWQ65DK0VthZIIe8hnIuWj1Ki-TzFXBMkbDXwms9GXV2X5-wE3yNdVZbZnCgNtQmAT5CQ" /></p>
+<p>Daha sonra her takımın logosunun yerini Firebug yardımı ile bulup
+atayalım. Trabzonspor’un ki ile başlayalım. Resim hareketli gif olduğu
+için biraz geç yüklenebilir, ama açıklayıcı olması için hareketli gif'i
+tercih ettim.</p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/css_sprite_firebug_2.gif" title="css_sprite_firebug_2" />][]</p>
+<p>[css]div#icerikAlani table td div.logoTrabzon{ background-position:-3px
+-107px}[/css]</p>
+<p>Yukarı aşağı tuşları yardımı ile bulduğumuz değeri(-107px)
+background-position değeri olarak tanımlıyoruz.</p>
+<p>Buradaki örnek daha kolay isede daha zor sprite uygulama durumlarında
+konum belirlemek daha çetrefilli olabilir, bu ve benzeri durumlar için
+Firebug'ın çok büyük yardımı dokunuyor. Bunuda bir ipucu olarak sizlerle
+paylaşmak istedim.</p>
+</p>
+
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/css_sprite_firebug_2.gif" title="css_sprite_firebug_2" />]: http://www.fatihhayrioglu.com/wp-content/css_sprite_firebug_2.gif</p><p>There are <a href=".././css-ipucu-28-firebug-yardimi-ile-daha-kolay-css-sprite-uygulamak/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

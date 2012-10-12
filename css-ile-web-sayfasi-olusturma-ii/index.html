@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>CSS İLE WEB SAYFASI OLUŞTURMA II</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="css-ile-web-sayfasi-olusturma-ii/" rel="bookmark"
+           title="Permalink to CSS İLE WEB SAYFASI OLUŞTURMA II">CSS İLE WEB SAYFASI OLUŞTURMA II</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2006-10-06T10:38:00">
+                Fri 06 October 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-javascript-xhtml.html">CSS, Javascript, XHTML</a>. </p>
+<p>tags: <a href=".././tag/clear.html">clear</a><a href=".././tag/css.html">CSS</a><a href=".././tag/elastik-web-sayfalari.html">Elastik Web Sayfaları</a><a href=".././tag/em.html">em</a><a href=".././tag/float.html">float</a><a href=".././tag/javascript.html">Javascript</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+      <h3>Elastik Web Sayfaları Oluşturma</h3>
+<p>Likid Sayfalar yüksek çözünürlüğe sahip geniş ekranlarda satır
+yüksekliklerinden dolayı pek hoş görünmeyebilir. Bunun aksine,
+daraltılmış pencerelerde çok kısa ve parçalanmış görüneceklerdir ve
+metin boyutu arttırıldığında üst üste binmiş satırlarda görüneceklerdir.
+Bununla ilgili olarak elastik sayfa oluşturma metodu bize yardım
+edecektir. <!--more--></p>
+<p>Elastik Sayfalar web tarayıcılarına göre font boyutunun ve elementlerin
+genişliğinin göreceli olarak ayarlandığı sayfalardır. Genişlikleri
+<strong>em</strong>, yüzde(%) ve ex gibi göreceli birimler kullanarak
+tanımladığımızda font boyutu sayfa genişliğine göre değişecektir. Aynı
+şekilde satır yüksekliği(line-height) değerinde de göreceli birimler
+kullanarak daha okunaklı sayfalar elde edebilriz.</p>
+<p>Elastik sayfa planlama metodununda bazı problemleri vardır, örneğin
+sabit genişlikteki sayflardaki gibi elastik metodda da boş alanlar
+yeterince kullanılamaz. Çünkü font boyutu arttırılırsa sayfa genişliği
+tarayıcının genişliğini geçecektir ve yatay kaydırma çubuğu çıkacaktır.
+Bu durumdan kurtulmak için body elementine max-width 100% ataması
+yapabilriz. Ancak bu özelliği IE6 desteklememektedir.</p>
+<p>Elastik web sayfası tasarlamak çok kolaydır. Sabit Genişlikte sayfa
+tasarımı yapılan bir sayfanın birimleri <strong>piksel</strong>yerine <strong>em</strong> olarak
+değiştirilirse sayfa elastik yapıya kavuşacaktır. 1em yaklaşık olarak
+10piksele denk gelir.</p>
+<div class="ekstrabilgi">
+em'in asıl tanımı küçük "**m**" harfi genişliğidir. Normalde **em** font
+boyutu birimi olarak kullanılır ancak CSS'de width,line-height vd.
+özelliklerin birimi olarak da kullanılabilir. Em üst elemente veya diğer
+elementleri baz alarak göreceli bir değer alır. Bu özellik bize elastik
+web sayfası hazırlama imkanı verir.
+
+</div>
+
+<p>Çoğu web tarayıcısınnda normal font boyutu 16px'dir. 10 pikselin
+yüzdesel değeri yaklaşık olarak 62.5% civarındadır. Bu belirtilen
+değerlere göre kodumuzu yazarsak:</p>
+<p>[sourcecode language='css'] body{ text-align:center; font-size:62.5%;
+font-family:Arial, Helvetica, sans-serif; } #sayfa{ width:72em;
+margin:0 auto; text-align:left; } #ustAlan { width:72em; } #anaMenu {
+float: left; width: 18em; } #KapsayiciAlan { float: right; width: 52em;
+} #icerik { float: left; width: 32em; } #BannerAlani{ float: right;
+width: 20em; } #altAlan { width:72em; clear: both; } [/sourcecode]</p>
+<p>Burada body elementi font boyutunu 1em eşit olan font-size:62.5%;
+atamasını yaptık. Daha sonra sayfadaki birimleri bu değeri baz alarak
+hesapladık ve em birimi vererek sayfamızı elastik bir hala getirdik.</p>
+<p>Sayfamızın Sabit Genişlikteki sayfalardan farkını anlamak için web
+tarayıcısının font boyutu değerlerini veya yakınlaştırma(zoom) aracını
+(Opera, FF-eklentisi var ve IE 7 de var)kullanarak görebilriz. IE ve FF
+için Görünüm(View) - Metin Boyutu(Text Size) Opera için View - Zoom
+seçeneklerini kullanarak farkı görebilriz.</p>
+</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "css-ile-web-sayfasi-olusturma-ii/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

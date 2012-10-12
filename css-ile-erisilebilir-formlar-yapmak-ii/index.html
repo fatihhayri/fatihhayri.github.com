@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>CSS ile Erişilebilir Formlar Yapmak - II</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="css-ile-erisilebilir-formlar-yapmak-ii/" rel="bookmark"
+           title="Permalink to CSS ile Erişilebilir Formlar Yapmak - II">CSS ile Erişilebilir Formlar Yapmak - II</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2007-03-06T00:10:00">
+                Tue 06 March 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>![]<a href="javascript:print()"></a>[] || ![]<a href="../static/pdf/CSS_ile_Erisilebilir_Formlar_Yapmak_II.pdf">1</a>[]</p>
+<h6>Gelişmiş Form Yapıları</h6>
+<p>Gelişmiş yapılı formlarda tablo kullanmak daha kolayımıza geliyor. Ancak
+burada bir sorunumuz varki formlar veri içeren tablolar değildir ve
+doğru kodlama için form yapılarını oluştururken tablo kullanmak web
+standartlarına uygun değildir.</p>
+<p>Biz burada daha karışık yapılı bir formu nasıl tablo kullanmadan planlar
+ve güzelleştiririz onu anlatmaya çalışacağız. Tabi bu kodlamanın bazı
+zorlukları olacaktır ama genel yapı anlaşılırsa yapılamayacak form
+kodlaması yoktur. Aşağıda kodlayacağımız formun resmini görüyoruz.
+<!--more--></p>
+<p>[<img alt="CSS ile Form" src="http://www.fatihhayrioglu.com/wp-content/sonuc_sayfasi.kucukresim.gif" />][]</p>
+<p>Kodlamayı yaparken dikkat edeceğiz konu kullanıcıyı yormayan güzel
+görünümlü ve erişilebilirliği yüksek formlar hazırlamaktır. <a href="http://www.fatihhayrioglu.com/?p=276">Bir
+önceki</a> yazımızda <strong>fieldset</strong> ve <strong>legend</strong> ve <strong>label</strong>
+etiketlerinden bahsettiğimiz için burada bu etiketler hakkında tekrar
+bir bilgi vermeyeceğiz. Diğer makalelerden farklı olarak bu makalede tüm
+kodları verip sonra açıklamalarını yapacağız, bunun nedeni form
+alanlarına ait tanımların bir çoğunun genel tanımlama olması ve bir
+tanımın bir çok etiketi etkilemesidir. XHTML Kodumuzu yazalım:</p>
+<ol>
+<li>\&lt;form action="gonder.html" method="post" id="formset"><br />
+</li>
+<li>\&lt;fieldset> <br />
+</li>
+<li>\&lt;legend>Genel Bilgiler\&lt;/legend><br />
+</li>
+<li>\&lt;label class="adAlani">Ad \&lt;em>&amp;#42;\&lt;/em><br />
+</li>
+<li>\&lt;input name="ad" type="text" id="ad" value="" /><br />
+</li>
+<li>\&lt;/label><br />
+</li>
+<li>\&lt;label class="soyadAlani">Soyad \&lt;em>&amp;#42;\&lt;/em><br />
+</li>
+<li>\&lt;input name="soyad" type="text" id="soyad" value="" /><br />
+</li>
+<li>\&lt;/label><br />
+</li>
+<li>\&lt;label class="adresAlani">Ev Adresi \&lt;em>&amp;#42;\&lt;/em><br />
+</li>
+<li>\&lt;input name="adres" type="text" id="adres" value="" /><br />
+</li>
+<li>\&lt;/label><br />
+</li>
+<li>\&lt;label class="sehirAlani">Şehir \&lt;em>&amp;#42;\&lt;/em><br />
+</li>
+<li>\&lt;input name="sehir" type="text" id="sehir" value="" /><br />
+</li>
+<li>\&lt;/label><br />
+</li>
+<li>\&lt;label class="postakoduAlani">Posta Kodu \&lt;em>&amp;#42;\&lt;/em><br />
+</li>
+<li>\&lt;input name="postakodu" type="text" id="postakodu" value="" /></li>
+<li>\&lt;/label> <br />
+</li>
+<li>\&lt;label class="epostaAlani hata">Eposta &amp;#42;<br />
+</li>
+<li>\&lt;input name="eposta" type="text" id="eposta" value="" class="hata"
+    /><br />
+</li>
+<li>\&lt;/label><br />
+</li>
+<li>\&lt;label class="telAlani">Telefon\&lt;input name="tel" type="text"
+    id="tel" value="" /><br />
+</li>
+<li>\&lt;/label><br />
+</li>
+<li>\&lt;/fieldset><br />
+</li>
+<li>\&lt;fieldset><br />
+</li>
+<li>\&lt;legend>Konu \&lt;em>&amp;#42;\&lt;/em>\&lt;/legend><br />
+</li>
+<li>\&lt;input id="radiobutton_1" type="radio" name="radiobutton_type"
+    value="" /><br />
+</li>
+<li>\&lt;label class="konuRadyoButon" for="radiobutton_1">Lorem ipsum
+    dolor sit amet, consectetuer adipiscing elit. \&lt;/label><br />
+</li>
+<li>\&lt;input id="radiobutton_2" type="radio" name="radiobutton_type"
+    value="" /><br />
+</li>
+<li>\&lt;label class="konuRadyoButon" for="radiobutton_2">Cras diam.
+    Suspendisse potenti. In dictum bibendum est. Aliquam semper. Sed vel
+    massa. Praesent imperdiet nisi eget lacus. \&lt;/label><br />
+</li>
+<li>\&lt;input id="radiobutton_3" type="radio" name="radiobutton_type"
+    value="" /><br />
+</li>
+<li>\&lt;label class="konuRadyoButon" for="radiobutton_3">Phasellus quis
+    enim. \&lt;/label><br />
+</li>
+<li>\&lt;input id="radiobutton_4" type="radio" name="radiobutton_type"
+    value="" /><br />
+</li>
+<li>\&lt;label class="konuRadyoButon" for="radiobutton_4">Vestibulum ut
+    lectus ac leo luctus aliquam. \&lt;/label><br />
+</li>
+<li>\&lt;/fieldset><br />
+</li>
+<li>\&lt;fieldset><br />
+</li>
+<li>\&lt;legend>Düşünceleriniz\&lt;/legend> <br />
+</li>
+<li>\&lt;label class="aciklamaAlani">Düşüncelerinizi aşağıdaki alana
+    yazınız.\&lt;br />\&lt;textarea name="describe" cols="35"
+    rows="5">\&lt;/textarea><br />
+</li>
+<li>\&lt;/label><br />
+</li>
+<li>\&lt;/fieldset><br />
+</li>
+<li>\&lt;fieldset><br />
+</li>
+<li>\&lt;legend>Onay Alanı\&lt;/legend><br />
+</li>
+<li>\&lt;input id="checkbox_1" type="checkbox" name="kabul" value="y"
+    />\&lt;label for="checkbox_1" class="onayAlaniIsaretKutusu">Site
+    kurallarını kabul ediyorum.\&lt;/label><br />
+</li>
+<li>\&lt;input id="checkbox_2" type="checkbox" name="kabul" value="y"
+    />\&lt;label for="checkbox_2" class="onayAlaniIsaretKutusu">Site
+    kurallarını kabul etmiyorum.\&lt;/label><br />
+</li>
+<li>\&lt;/fieldset><br />
+</li>
+<li>\&lt;blockquote>\&lt;strong>Not:\&lt;/strong> Yanında (\&lt;em>*\&lt;/em>)
+    işareti olanlar zorunlu alanlardır.\&lt;/blockquote><br />
+</li>
+<li>\&lt;input type="submit" name="submit" value="GÖNDER"
+    class="formbutton" /> <br />
+</li>
+<li>\&lt;/form></li>
+</ol>
+<p>Yukarıdaki kodlama aslında bir çok açıdan basit yapılı formalara
+benziyor. "Bir çok karmaşık yapı basit yapıların birleşiminden oluşur"
+genel kabulü tam durumumuzu açıklayan cümle. Bu kodlamanın farkı normal
+akış dışına çıkacak(yani iki kolonlu olacak yerlerde) elementlere id
+tanımı yaparak konumlandırma işlemi yapmaktır. Şimdi sıra CSS kodunu
+yazmaya geldi.</p>
+<ol>
+<li>/* genel stiller */</li>
+<li>* {<br />
+</li>
+<li>margin: 0;<br />
+</li>
+<li>padding: 0;<br />
+</li>
+<li>}</li>
+<li>body {<br />
+</li>
+<li>font: 12px/14px Arial, Helvetica, sans-serif;<br />
+</li>
+<li>background-color:#07A;<br />
+</li>
+<li>text-align: center;<br />
+</li>
+<li>margin:20px 0;</li>
+<li>}</li>
+<li>/* form stilleri */</li>
+<li>form#formset {<br />
+</li>
+<li>width: 360px;<br />
+</li>
+<li>margin: 0 auto;<br />
+</li>
+<li>text-align: left;<br />
+</li>
+<li>color:#fff;</li>
+<li>}</li>
+<li>form#formset fieldset {<br />
+</li>
+<li>margin: 0 0 1em 0;<br />
+</li>
+<li>padding: 1.5em 1.5em 0 1.5em;</li>
+<li>border: #DDD 1px solid;<br />
+</li>
+<li>}</li>
+<li>form#formset fieldset legend {<br />
+</li>
+<li>font-weight: bold;<br />
+</li>
+<li>color: #fff;<br />
+</li>
+<li>padding:0 0.5em;<br />
+</li>
+<li>}</li>
+<li>form#formset label {<br />
+</li>
+<li>display: block;<br />
+</li>
+<li>width: 290px;<br />
+</li>
+<li>font-size: 12px;<br />
+</li>
+<li>line-height: 14px;<br />
+</li>
+<li>padding: 0px 0px 12px 0px;<br />
+</li>
+<li>}</li>
+<li>form#formset fieldset input {<br />
+</li>
+<li>display: block;<br />
+</li>
+<li>margin-top: 3px;<br />
+</li>
+<li>border:1px solid #fff;<br />
+</li>
+<li>border-left:5px solid #fff;<br />
+</li>
+<li>background-color:#09c;<br />
+</li>
+<li>color:#ffc;<br />
+</li>
+<li>}</li>
+<li>form#formset label.adAlani, form#formset label.adresAlani,
+    form#formset label.sehirAlani, form#formset label.epostaAlani {<br />
+</li>
+<li>clear: left;<br />
+</li>
+<li>}</li>
+<li>form#formset label.adAlani, form#formset label.soyadAlani,
+    form#formset label.sehirAlani, form#formset label.epostaAlani,
+    form#formset label.telAlani {<br />
+</li>
+<li>float: left;<br />
+</li>
+<li>margin: 0px 10px 0px 0px;<br />
+</li>
+<li>width: 150px;<br />
+</li>
+<li>}</li>
+<li>form#formset label.adAlani input, form#formset label.soyadAlani
+    input, form#formset label.epostaAlani input, form#formset
+    label.sehirAlani input, form#formset label.telAlani input {<br />
+</li>
+<li>float: left;<br />
+</li>
+<li>width: 150px;<br />
+</li>
+<li>padding: 0px;<br />
+</li>
+<li>}</li>
+<li>form#formset label.postakoduAlani {<br />
+</li>
+<li>float: left;<br />
+</li>
+<li>width: 80px;<br />
+</li>
+<li>}</li>
+<li>form#formset label.postakoduAlani input {<br />
+</li>
+<li>float: left;<br />
+</li>
+<li>width: 80px;<br />
+</li>
+<li>}</li>
+<li>form#formset label.adresAlani {<br />
+</li>
+<li>float: left;<br />
+</li>
+<li>width: 310px;<br />
+</li>
+<li>margin: 0px 0px 0px 0px;<br />
+</li>
+<li>}</li>
+<li>form#formset label.adresAlani input {<br />
+</li>
+<li>float: left;<br />
+</li>
+<li>width: 310px;<br />
+</li>
+<li>padding: 0px;<br />
+</li>
+<li>}</li>
+<li>form#formset fieldset input#radiobutton_1, form#formset fieldset
+    input#radiobutton_2, form#formset fieldset input#radiobutton_3,
+    form#formset fieldset input#radiobutton_4 {<br />
+</li>
+<li>clear: left;<br />
+</li>
+<li>float: left;<br />
+</li>
+<li>padding: 0px;<br />
+</li>
+<li>border:0;<br />
+</li>
+<li>margin: 0px 0px 0px 0px;<br />
+</li>
+<li>background-color:#07a;<br />
+</li>
+<li>}</li>
+<li>form#formset label.konuRadyoButon {<br />
+</li>
+<li>clear: none;<br />
+</li>
+<li>margin: 0px 0px 0px 25px;<br />
+</li>
+<li>padding: 0px 0px 15px 0px;<br />
+</li>
+<li>}</li>
+<li>form#formset fieldset input#checkbox_1, form#formset fieldset
+    input#checkbox_2, form#formset fieldset input#checkbox_3 {<br />
+</li>
+<li>clear: both;<br />
+</li>
+<li>float: left;<br />
+</li>
+<li>padding: 0px;<br />
+</li>
+<li>margin: 0px;<br />
+</li>
+<li>border:0;<br />
+</li>
+<li>background-color:#07a;<br />
+</li>
+<li>}</li>
+<li>form#formset label.onayAlaniIsaretKutusu {<br />
+</li>
+<li>clear: none;<br />
+</li>
+<li>margin: 0px 0px 0px 25px;<br />
+</li>
+<li>padding: 0px 0px 15px 0px;<br />
+</li>
+<li>}</li>
+<li>form#formset textarea {<br />
+</li>
+<li>display: block;<br />
+</li>
+<li>margin-top: 3px;<br />
+</li>
+<li>border:1px solid #fff;<br />
+</li>
+<li>border-left:5px solid #fff;<br />
+</li>
+<li>background-color:#09c;<br />
+</li>
+<li>color:#ffc;<br />
+</li>
+<li>}</li>
+<li>form#formset blockquote{<br />
+</li>
+<li>margin-bottom:10px;<br />
+</li>
+<li>}</li>
+<li>form#formset fieldset em, form#formset blockquote em{<br />
+</li>
+<li>color:#ff0;<br />
+</li>
+<li>}</li>
+</ol>
+<p>Yukarıdaki kodlamada önemli görülen tanımları biraz daha açıklamaya
+çalışalım:</p>
+<ul>
+<li>Genel Seçicisi (<strong>*{}</strong>) kullanarak tüm elementlerin margin ve
+    padding'lerini sıfırlıyoruz, böylece tüm elementler için ayrıca bu
+    tanımı yapmaya gerek duymuyoruz(özel durumlar hariç.)</li>
+<li><strong>body</strong> seçicisine atadığımız özelikler sayfayı ortalamak için
+    <strong>text-align</strong> tanımı yapıldı.</li>
+<li><strong>form#formset</strong> şeklinde forma id vermemizin nedeni sayfa içinde
+    eğer birden fazla form olursa veya sitede genel bir css dosyası
+    kullanıyorsak diğer formları etkilememek. Burada yapılan tanımlar
+    genel tanımlardır.</li>
+<li><span class="alternatifard"><strong>form#formset fieldset</strong></span>
+    tanımında form alanlarını bir çerçeve içine aldık ve içerikle
+    kenarlık arasına boşluk koyduk. Her bölümü ayrı çerçeveye almamızın
+    nedeni bölümler arasındaki farka vurgu yapmaktır.</li>
+<li><strong>form#formset fieldset legend</strong> genel tanımı ile form bölümlerinin
+    başlıklarına genel tanımlama yaptık.</li>
+<li><span class="alternatifard"><strong>form#formset label</strong></span>
+    tanımlaması ile formdaki tüm label'lar düşünülerek genişlik ve
+    mesafe tanımları yapılmıştır.</li>
+<li><strong>form#formset fieldset input</strong> tanımlaması ile genel kullanıcı
+    girişi(input) görünüm yerine kendi görünümümüze uygun tanımlar
+    yapılmıştır.</li>
+<li><strong>form#formset label.adAlani, form#formset label.adresAlani,
+    form#formset label.sehirAlani, form#formset label.epostaAlani</strong>
+    seçicilerine <strong>clear:left</strong> tanımı yapılarak bu sınıflara ait
+    alanları formun soluna yerleştiriyoruz.</li>
+<li>Daha sonra Formun <strong>Genel Bilgiler</strong> kısmı içindeki form
+    elementlerine genişlik ve float tanımı yapılıyor. Aynı şekilde
+    kullanıcı girişlerinede(input) aynı tanımlar yapılıyor.</li>
+<li><strong>57 - 74</strong> satırları arasında Genel Bilgi Alanındaki diğer
+    alanlardan farklı olan Ev adresi ve Posta Kodu alanlarına özel
+    tanımlamalar yapılıyor. Genelde css kodlarken başta genel tanımalar
+    yapılır sonra genelden farklı olan özel tanımlamalar yapılır.</li>
+<li><strong>75 - 87</strong> satırları arasında Form alanının <strong>Konu</strong> kısmı
+    içeriğindeki radyo butonları ve içerik kısımlarına ait konumlandırma
+    ve mesafe değerleri tanımlanmıştır.</li>
+<li><strong>88 - 99</strong> satırları arasında Form alanının <strong>Onay</strong> kısmı
+    içeriğindeki işaret kutuları ve içerik kısımlarına ait konumlandırma
+    ve mesafe değerleri tanımlanmıştır.</li>
+<li><span class="alternatifard"><strong>form#formset textarea</strong></span>
+    tanımlaması ile düşüncelerimiz alanı içindeki metin alanı tanımları
+    girilmiştir.</li>
+<li>Genelde forumlar oluşturulurken kullanıcıdan bazı alanların zorunlu
+    doldurulması istenir. Bunu için
+    <span class="alternatifard"><strong>form#formset blockquote</strong></span>
+    tanımlaması yapılmıştır.</li>
+</ul>
+<p>Yukarıda gelişmiş form kodlamasını gördük son olarak formda doldurulması
+gereken bir alanın doldurulmaması halinde çıkacak uyarı mesajı ve
+bilginin girilmesi gereken alanın kullanıcının daha kolay görmesi için
+stil tanımını yapalım. XHTML kodunu başına</p>
+<ol>
+<li>\&lt;div class="hata"></li>
+<li>Dikkat aşağıda sarı renk ile belirtilen yerlerde hata var.</li>
+<li>\&lt;/div></li>
+</ol>
+<p>tanımlaması ve hataya neden olan alana(mesela e-posta girilmemiş olsun)
+sınıf tanımlaması ekleyelim.</p>
+<ol>
+<li>\&lt;label class="epostaAlani <strong>hata</strong>">Eposta &amp;#42;</li>
+<li>\&lt;input name="eposta" type="text" id="eposta" value=""
+    <strong>class="hata"</strong> /></li>
+</ol>
+<p>CSS kodunu ekleyelim</p>
+<ol>
+<li>form#formset fieldset input.hata {<br />
+</li>
+<li>display: block;<br />
+</li>
+<li>margin-top: 3px;<br />
+</li>
+<li>border:1px solid #ff0;<br />
+</li>
+<li>border-left:5px solid #ff0;<br />
+</li>
+<li>background-color:#ccc;<br />
+</li>
+<li>color:#ffc;<br />
+</li>
+<li>}</li>
+<li>form#formset fieldset label.hata {<br />
+</li>
+<li>color:#ff0;<br />
+</li>
+<li>font-weight:bold;<br />
+</li>
+<li>}</li>
+<li>div.hata {</li>
+<li>background:#FFFFCC url(images/hata.png) no-repeat scroll 5px;</li>
+<li>border:1px solid #FFCC66;</li>
+<li>margin:0pt 0pt 10px;</li>
+<li>padding:5px 10px 5px 35px;</li>
+<li>color:#000;</li>
+<li>}</li>
+</ol>
+<p>Hata mesajının yanına bir ünlem ikonu koyduk ve farklı zemin rengi ve
+kenarlığı ile kullanıcının dikkatini buraya çektik. Ayrıca hatanın
+meydana geldiği alanı sarı renk ile tanımlayarak daha dikkat çekici
+yaptık. Dikkat ederseniz amaç devamlı kullanıcıya formumuzu daha
+anlaşılabilir ve kolay erişilebilir yapmak.</p>
+<p>En son gönder butonunun css kodunu yazalım.</p>
+<ol>
+<li>.formbutton{<br />
+</li>
+<li>cursor:pointer;<br />
+</li>
+<li>border:0;</li>
+<li>background:#999;<br />
+</li>
+<li>color:#666;<br />
+</li>
+<li>font-weight:bold;<br />
+</li>
+<li>padding: 1px 2px;<br />
+</li>
+<li>background:url(images/buton_bg2.gif) repeat-x left top;<br />
+</li>
+<li>}</li>
+</ol>
+<p>Buton zeminine degrade 1px genişliğinde bir resim koyarak hoş görünümlü
+bir buton elde ettik.</p>
+<p>Sonuç sayfasını görmek için <a href="../static/dokumanlar/css_ile_form_2.html">tıklayınız.</a></p>
+<p>Aşağıda kaynaklar kısmında da erişebileceğiniz bir çok form stilleri ve
+tasarımları mevcut göz atmanızı öneririm. Amaç web standartlarına uygun
+ve kullanıcı taraflı formlar yapmak. Kodlama aşağıdaki web
+tarayıcılarında test edilmiştir.</p>
+<ul>
+<li>Firefox 1.0 +</li>
+<li>Internet Explorer 5.5 +</li>
+<li>Opera 7.54 +</li>
+</ul>
+<div class="ekstrabilgi">
+**Not:** Görünümde Firefox ve Internet Explorer arasında ufak
+farklılıklar mevcut, bu farklılıkların çok ufak olması nedeni ile bir
+düzeltme kodu(fix) yazma gereği duymadık.
+
+</div>
+
+<h6>Kaynaklar</h6>
+<ul>
+<li><a href="http://www.webcredible.co.uk/user-friendly-resources/css/css-forms.shtml">http://www.webcredible.co.uk</a></li>
+<li><a href="http://www.websiteoptimization.com/speed/tweak/forms/">http://www.websiteoptimization.com/</a></li>
+<li><a href="http://www.picment.com/articles/css/funwithforms/">http://www.picment.com/</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C6/">http://www.dynamicdrive.com/</a></li>
+<li><a href="http://www.cssplay.co.uk/menu/form.html">http://www.cssplay.co.uk/</a></li>
+<li><a href="http://www.456bereastreet.com/archive/200701/styling_form_controls_with_css_revisited/">http://www.456bereastreet.com/</a></li>
+<li><a href="http://www.smashingmagazine.com/2006/11/11/css-based-forms-modern-solutions/">http://www.smashingmagazine.com/</a></li>
+<li><a href="http://www.skyrocket.be/2006/01/09/semantic-horizontal-forms/">http://www.skyrocket.be/</a></li>
+<li><a href="http://www.subtraction.com/archives/2005/0822_free_form_fo.php">http://www.subtraction.com/</a></li>
+<li><a href="http://www.stuffandnonsense.co.uk/archives/trimming_form_fields.html">http://www.stuffandnonsense.co.uk/</a></li>
+<li><a href="http://paularmstrongdesigns.com/projects/awesomeform//">http://paularmstrongdesigns.com/</a></li>
+<li><a href="http://nidahas.com/2006/01/12/forms-markup-and-css/">http://nidahas.com/</a></li>
+<li><a href="http://www.alistapart.com/articles/prettyaccessibleforms">http://www.alistapart.com/</a></li>
+<li><a href="http://www.roscripts.com/Tableless_forms-112.html">http://www.roscripts.com/</a></li>
+</ul>
+</p>
+
+<p>[<img alt="CSS ile Form" src="http://www.fatihhayrioglu.com/wp-content/sonuc_sayfasi.kucukresim.gif" />]: http://www.fatihhayrioglu.com/wp-content/sonuc_sayfasi.gif
+    "CSS ile Form"</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "css-ile-erisilebilir-formlar-yapmak-ii/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

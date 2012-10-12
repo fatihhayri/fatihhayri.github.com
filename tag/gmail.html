@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - gmail</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././html-mailing-1-mailing-kodlarken-dikkat-edilmesi-gerekenler/">HTML Mailing -1: Mailing Kodlarken Dikkat Edilmesi Gerekenler</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2010-11-04T00:27:00">
+                Thu 04 November 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/xhtml.html">XHTML</a>. </p>
+<p>tags: <a href=".././tag/e-posta.html">e-posta</a><a href=".././tag/gmail.html">gmail</a><a href=".././tag/hotmail.html">hotmail</a><a href=".././tag/mailing.html">mailing</a><a href=".././tag/spam.html">spam</a></p>
+
+
+</footer><!-- /.post-info --><p>İnsanlar bildirileri, duyuruları yaymak için çeşitli araçlara
+başvururlar bu internet olmadan önce ve hala broşürler, mektuplar,
+afişler vs ile yapılırdı internet ile birlikte ise mail yolu yapılmaya
+başlandı. Normal metinsel mailinglerin yanı sıra html ile daha
+görselliği arttırılmış maillerde gönderilmeye başlandı. İşte bu
+görselliği arttırılmış html mail içeriğine mailing diyoruz.</p>
+<p>Uzun bir aradan sonra bir mailing yapınca aklıma geldi, mailing yaparken
+nelere dikkat edilmeli diye bir makale yazmak. Çok uzun süre mailing
+yaptım diyebilirim, yaklaşık 3-4 sene mailing kestim. HTML
+kodlayıcı(arayüz geliştirici) için mailing ilk ciddi test aracıdır.
+Mailing her nekadar benim mantığıma göre çok işlevsel bir araç olmasa da
+müşteri için helede kurumsal müşteriler için vazgeçilmezdir. Ben birçok
+kurumsal mailingi okumadan çöpe atıyorum. Ama bir gerçek varki mailing
+hala etkisini kaybetmeden devam ettiren bir araçtır(müşteri için).</p>
+<p>Bu makalede sadece ipuçları verip bitirmeyi düşünüyordum, mailing kesmek
+o kadar basit bir konu değil bu nedenle 2 başlık altında yazmaya karar
+verdim. İlki bu makale mailing kodlarken nelere dikkat etmemiz
+gerektiğini ve mail kodlarken nelere ihtiyacımız olduğunu
+toparlayacağım, ikinci makalemde basit bir örnek ile mail kodlamayı
+göstermeye çalışacağım. Mailing konusunda birde gönderim konusu var,
+ancak ben işin bu kısmı ile fazla ilgilenmediğim için bir şey yazmam
+mantıklı değil, bu konuda internette yeterli araştırmaları yaparak bilgi
+edinebilirsiniz.</p>
+<p>Şimdi ilk makalemizi yazalım.</p>
+<h3>Mailing kodlarken nelere dikkat etmemiz gerekir</h3>
+<p>HTML kodlarken farklı tarayıcılar için kod yazarız bu kodlamadaki en
+önemli noktadır, mailingde ise iş daha vahimdir, çünkü mailing okuma
+araçları çok farklıdır ve bu araçlar normal html ve css standartlarının
+bir çok özelliği desteklemez.</p>
+<p><strong>Mailing Destekleme Listeleri</strong></p>
+<p>İlk önce mailing standartlarını incelemekte yarar var bence, neyi
+destekleyip desteklemediğini bilmek önemli.</p>
+<p>Popüler mailing programlarının css destekleme listesini görmek için
+<a href="http://www.campaignmonitor.com/css/" title="tıklayınız.">tıklayınız.</a></p>
+<p>Benzer listeler webde çok var diğer bir liste <a href="http://www.email-standards.org/clients/" title="email-standards.org">email-standards.org</a></p>
+<p>Bu listeleri incelmeliyiz ve kodumuzu yazarken buna göre hareket
+etmeliyiz.</p>
+<p><strong>HTML Görünümünü Tablo/Div ile Kodlama</strong></p>
+<p>Her nekadar uzun süredir web sitelerini kodlarken katman(div) ile
+kodlamayı savunsam da mailingde durum farklıdır, mailing planını
+kodlarken tablolardan yardım almak daha mantıklıdır. Bunun nedeni
+mailing destekleyicilerinin yeni standartları desteklememesidir.</p>
+<p>Mailing yapısını oluştururken tablolu yapı kullanmalıyız. Uzun süredir
+katmanlı yapı ile kod yazan biri için tablolu yapıya dönmek zor oluyor,
+ama Allah'tan genelde basit yapılara sahip oldukları için sorun olmuyor.</p>
+<p><strong>CSS Kodlarınızı Satıriçi Yazın</strong></p>
+<p>Birçok mailng html çevrildikten sonra toplu olarak gönderim için çeşitli
+programlar kullanılır. Bu programların göndericiler için çeşitli
+kısıtlamaları vardır. Bunlardan bir tanesi, genelde hazırlana html
+kodunun sadece \&lt;body> etiketleri içerisindeki kodu eklememize izin
+vermesidir.</p>
+<p>Bu nedenle dışarıdan eklenen .css dosyaları mailinglerimize ekleyemeyiz.
+Bunu destekleyen programlar var ise de benim çalıştığım birçok müşteride
+bu programlar yoktu. Bundan dolayıdır ki css kodlarımızı satıriçi
+yazmalıyız. Aşağıdaki örnekte görüldüğü gibi</p>
+<p>[html] \&lt;p style="font-family:Arial; font-size:12px; color:#999">Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. \&lt;/p> [/html]</p>
+<p>Tabi kodları yazarken yukarıdaki destek listelerini dikkate almalıyız.</p>
+<p><strong>Resimleri ve Bağlantıları İnternet Üzerinden Verin</strong></p>
+<p>Mailingler web siteleri gibi html çevrilseler de kullanıcının e-posta
+kutusuna düşen kodlardır, bu nedenle kullanıcıya yükleyemeyeceğim ve
+kullanıcı bilgisayarına göre hareket edemeyeceğimiz durumlar söz
+konusudur.</p>
+<p>Bunlardan bir tanesi resimlerdir, hazırladığımız resimleri kullanıcı
+bilgisayarına yükleyemeyeceğimiz için bunları kendi sitemiz üzerine
+yükleyip hazırladığımız mailing içeriğine bu resimleri kendi sitemiz
+üzerinde okutmalıyız. Örneğin</p>
+<p>[html] \&lt;img src="http://www.firmaadi.com/mailings/images/ustalan.jpg"
+width="450" height="120" alt="Firma_Adi" /> [/html]</p>
+<p>Web siteleri gibi hareket edemeyeceğimiz diğer bir konu ise bağlantıları
+yerel olarak vermeyeceğimiz konusudur. Bağlantılarımızıda yerel
+veremeyiz örneğin</p>
+<p>[html] \&lt;a href="hakkimizda.html">Hakkımızda\&lt;/a> [/html]</p>
+<p>Şeklinde bir bağlantı kırık bir bağlantı olacaktır. Bunun yerine</p>
+<p>[html] \&lt;a
+href="http://www.firmaadi.com/hakkimizda.html">Hakkımızda\&lt;/a> [/html]</p>
+<p>Şekline olmalıdır.</p>
+<p><strong>Test Etmeyi Unutmayın</strong></p>
+<p>Mailing yapılarının web sitelerinde daha sıkıntılı yapıları vardır.
+Bunlardan en önemlisi mailing gönderildikten sonra html koduna müdahale
+imkanımızın sıfır olmasıdır. Bu nedenlede mailing gönderilmeden tüm
+sorunların giderilmiş olması lazımdır. Birçok zaman mailing ile ilgili
+sorunlar yaşmışızdır, bu kaçınılmaz bir durumdur, ancak bunu en aza
+indirmek için testlerimiz gönderimden önce yapmalıyız.</p>
+<p>Web üzerinde; <strong>Hotmail</strong>, <strong>Gmail</strong> ve <strong>Yahoo</strong> üzerinden<br />
+PC'de ise <strong>Outloook</strong> ve <strong>Thunderbird</strong> üzerinden testlerimizi
+yapmalıyız.<br />
+Farklı Tarayıclar ile İnternet Explore 6 ve 7 ve Firefox ile test
+etmeliyiz.</p>
+<p><strong>title ve alt Değerlerini Yazmayı unutmayın</strong></p>
+<p>Şimdilerde birçok mail okuma programı resimleri ilk mail yüklenirken
+yüklememekte ve kullanıcıdan izin istediğinden ve resimlerin yolunun
+kırık olma ihtimalinide dikkate alarak resimlerin alt elemanını boş
+bırakmayın. Aynı şekilde bağlantılarıda title özelliğini ekleyerek daha
+kullanışlı hale getirin.</p>
+<p><strong>Mailing Genişliğini</strong></p>
+<p>Mailing genişliği web sitesi genişlik standartlarında farklıdır. Mailing
+okuyucular olarak Outlook ve Thunderbird gibi araçların 3 kolonlu
+yapıları göz önüne alınarak tasarlamalıyız. 1024*768px çözünürlüğe göre
+mailingimizi tasarladığımızda 3 kolonlu bir yapıda mailing genişliğimiz
+750px veya daha düşük olacaktır. Tasarım yaparken bunu dikkate almak
+önemlidir.</p>
+<p>Eğer 800x600 çözünürlük düşünüyorsak 6oopx genişlik mailingimizin
+genişliği olmalıdır.</p>
+<p>Mailing genişliğini 600px olarak düşünüp tasarlarsak bir sorun
+yaşamayacağımızı bilmeliyiz ve ona göre davranmalıyız.</p>
+<p><strong>Mailing İçeriğinde Kullanılmayacak Elemanlar</strong></p>
+<p>Gerek Form elemanları ve gerekse javascript kodları mailing içinde
+kullanmak sakıncalıdır. Birçok program ve mail sitesi güvenlik
+açıklarında çok sıkı davranır. Bu nedenle hiç bir javascript ve form
+işlemine izin vermez.</p>
+<p>Daha önce yaşanan birçok script açıkları ile başı ağırmış bu araçlar
+yazdığınız bu kodlar nedeni ile gönderdiğiniz mailleri spam olarak
+niteleme ihtimali yüksektir.</p>
+<p>Ayrıca birçok mailing programı flash desteklemez bu nedenle mailing
+kodlarımıza flash import edemeyiz.</p>
+<p>Bazı HTML etiketlerini kullanılması anlamsız ve sorun yaratabilir. Bu
+etiketleri sıralayalım; \&lt;META>, \&lt;BASE>, \&lt;LINK>, \&lt;SCRIPT>,
+\&lt;FRAMESET>, \&lt;FRAME>, \&lt;IFRAME> ve yorum kodu \&lt;!-- yorum --></p>
+<p><strong>Spam Mailden Kaçınmak için Yapmamız Gerekenler</strong></p>
+<p>Spam mailller internet dünyasının baş belalarında biridir. Birçok mail
+programı spam mailleri en aza indirmek için birçok filtre
+uygulamaktadır. Bizlerin bu filtrelere mailinglerimizi hazırlamamız
+gerekir. Spama düşen mailler hiç bir anlam ifade etmez ve müşteri ile
+aramızın açılmasına neden olabilir.</p>
+<p>Kısaca spama yakalanmamak için dikkat etmemiz gerekenleri listeleyelim</p>
+<ul>
+<li>Mailinglerinizdeki bütün domainlerin "gönderen" kısmında görülen
+    adresteki domainler aynı olmalı. Örneğin info@sirketadi.com
+    adresinden gönderim yapıyorsanız, mailing bağlantılarında da
+    www.sirketadi.com/xxx şekliden adreslere gitmeli.</li>
+<li>Domaininiz karalistede mi değil mi kontrol edin. Çeşitli siteler var
+    bu konuda tarama yapabileceğiniz.
+    [http://www.blacklistmonitoring.com/lookup/email_blacklist_IP_address_lookup.php][]</li>
+<li>Mailiniz yüklenmemesi durumunda alternatif bir bağlantı oluşturun ve
+    mailinizi altına ekleyin.</li>
+<li>Kullanıcıların listenizden çıkabilmelerin sağlayacak bir link
+    ekleyin mailinizin sonuna</li>
+<li>Tüm kelimeleri büyük harflerle yazmak. Örneğin: MERHABA BU
+    KAMPANYADA...</li>
+<li>Çok fazla yazı rengi kullanmak. Örneğin:
+    <span style="color:red">MERHABA</span>
+    <span style="color:blue">BU</span>
+    <span style="color:pink">KAMPANYADA...</span></li>
+<li>Bir çok spam içeriğinde geçen kelimelere yer vermek. Örneğin: Free,
+    Casino, Mortgage, Ücretsiz vs.</li>
+<li>Çok fazla noktalama işareti kullanmak. Örneğin Dikkat!!!!!!! Büyük
+    Kampanya!!!!!!</li>
+<li>Mailing'in tamamının resimlerden oluşması bazı mail okyucuları
+    tarafından spam olarak işaretlenmesine neden olabilir. Mailing
+    içinde metin olması önemlidir.</li>
+<li>Mailing'in başına veya sonuna kullanıcının mail listesinden
+    çıkmasını sağlayacak bir metin ekleyin.</li>
+</ul>
+<p>Bu konu çok ayrıntısı olan bir konu ben bu kadarına değinmek ile
+yetineyim.</p>
+<p>Bir sonraki dersimde basit bir mailingin nasıl kodlanacağını anlatmak
+olacaktır.</p>
+<p>Kalın sağlıcakla.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.viget.com/inspire/tips-for-coding-html-email/" title="http://www.viget.com/inspire/tips-for-coding-html-email/">http://www.viget.com/inspire/tips-for-coding-html-email/</a></li>
+<li><a href="static">http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/</a></li>
+<li><a href="http://www.anandgraves.com/html-email-guide" title="http://www.anandgraves.com/html-email-guide">http://www.anandgraves.com/html-email-guide</a> (iyi)<br />
+</li>
+<li><a href="http://www.email-standards.org/" title="http://www.email-standards.org/">http://www.email-standards.org/</a> (iyi)<br />
+</li>
+<li>[http://www.mailchimp.com/articles/email_marketing_guide/][] (iyi)</li>
+<li><a href="http://css-tricks.com/using-css-in-html-emails-the-real-story/" title="http://css-tricks.com/using-css-in-html-emails-the-real-story/">http://css-tricks.com/using-css-in-html-emails-the-real-story/</a></li>
+<li><a href="http://www.email-standards.org/clients/" title="http://www.email-standards.org/clients/">http://www.email-standards.org/clients/</a></li>
+<li><a href="http://www.campaignmonitor.com/css/" title="http://www.campaignmonitor.com/css/">http://www.campaignmonitor.com/css/</a></li>
+<li><a href="http://www.xavierfrenette.com/articles/css-support-in-webmail/" title="http://www.xavierfrenette.com/articles/css-support-in-webmail/">http://www.xavierfrenette.com/articles/css-support-in-webmail/</a></li>
+<li><a href="static">http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">blacklistmonitoring</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">lookup</span><span class="o">/</span><span class="n">email_blacklist_IP_address_lookup</span><span class="p">.</span><span class="n">php</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">blacklistmonitoring</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">lookup</span><span class="o">/</span><span class="n">email_blacklist_IP_address_lookup</span><span class="p">.</span><span class="n">php</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">thinkvitamin</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">features</span><span class="o">/</span><span class="n">design</span><span class="o">/</span><span class="n">ensuring</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">html</span><span class="o">-</span><span class="n">emails</span><span class="o">-</span><span class="n">look</span><span class="o">-</span><span class="n">great</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">get</span><span class="o">-</span><span class="n">delivered</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">thinkvitamin</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">features</span><span class="o">/</span><span class="n">design</span><span class="o">/</span><span class="n">ensuring</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">html</span><span class="o">-</span><span class="n">emails</span><span class="o">-</span><span class="n">look</span><span class="o">-</span><span class="n">great</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">get</span><span class="o">-</span><span class="n">delivered</span><span class="o">/</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">topluemailgonderimi</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">spamadusmedennasiltopluemailgonderilir</span><span class="p">.</span><span class="n">html</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">topluemailgonderimi</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">spamadusmedennasiltopluemailgonderilir</span><span class="p">.</span><span class="n">html</span>&quot;
+</pre></div><p>There are <a href=".././html-mailing-1-mailing-kodlarken-dikkat-edilmesi-gerekenler/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././24-temmuz-2008-webden-secme-haberler/" rel="bookmark"
+                           title="Permalink to 24 Temmuz 2008 web'den seçme haberler">24 Temmuz 2008 web&#039;den seçme haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2008-07-24T17:31:00">
+                Thu 24 July 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/css-ile-bar-yapmak.html">CSS ile bar yapmak</a><a href=".././tag/firefox.html">Firefox</a><a href=".././tag/gmail.html">gmail</a><a href=".././tag/internet-explorer-6.html">internet explorer 6</a><a href=".././tag/iphone.html">iPhone</a><a href=".././tag/jquery.html">jquery</a><a href=".././tag/kucuk-ekranli-araclar.html">Küçük ekranlı araçlar</a><a href=".././tag/outlook.html">outlook</a><a href=".././tag/psd-den-xhtml-e.html">psd den xhtml e</a><a href=".././tag/wordpress.html">WordPress</a><a href=".././tag/yazi-tipi-gomme.html">yazı tipi gömme</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>CSS ile Bar Yapımı - aorgun.net <a href="http://www.aorgun.net/css-ile-bar-yapimi/" title="css ile bar yap">Bağlantı</a></li>
+<li>Yeni bir jQuery link derlemesi. <a href="http://speckyboy.com/2008/07/21/20-amazing-jquery-plugins-and-65-excellent-jquery-resources/" title="jQuery">Bağlantı</a></li>
+<li>Outlook ve Gmail karşılaştırması. <a href="http://lifehacker.com/398778/outlook-vs-gmailthe-definitive-comparisongmail" title="outlook">Bağlantı</a></li>
+<li>Google chart api’nin gücü - yazilan.org <a href="http://yazilan.org/google-chart-apinin-gucu/" title="google chart api">Bağlantı</a></li>
+<li>İnternet Explorer 6 sorunları nedeni ile web kod yazarlarını
+    zorluyor. Bunun farkında olan firmalar tek tek ie6'dan vazgeçiyor.
+    <a href="http://www.infoq.com/news/2008/07/ie6_on_its_way_out" title="ie6 hayırü">Bağlantı</a></li>
+<li>PSD'den XHTML çeviri ...</li></ul>
+                <a class="readmore" href=".././24-temmuz-2008-webden-secme-haberler/">read more</a>
+                <p>There are <a href=".././24-temmuz-2008-webden-secme-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././21-nisan-2008-webden-secme-haberler/" rel="bookmark"
+                           title="Permalink to 21 Nisan 2008 web'den seçme haberler">21 Nisan 2008 web&#039;den seçme haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2008-04-21T09:20:00">
+                Mon 21 April 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/aspnet.html">ASP.NET</a><a href=".././tag/css-baslangic-dosyasi.html">css başlangıç dosyası</a><a href=".././tag/dinamik-css.html">dinamik css</a><a href=".././tag/gmail.html">gmail</a><a href=".././tag/google-pagerank.html">google pagerank</a><a href=".././tag/jquery.html">jquery</a><a href=".././tag/kisayollar.html">kısayollar</a><a href=".././tag/menu.html">menü</a><a href=".././tag/resim-galerisi.html">resim galerisi</a><a href=".././tag/web-form.html">web-form</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>Asp.net MVC kaynak kodları yayımlandı. MVC üzerine bir makale.
+    <a href="http://weblogs.asp.net/scottgu/archive/2008/04/16/asp-net-mvc-source-refresh-preview.aspx" title="asp.net mvc">Bağlantı</a></li>
+<li>Asp.net MVC ile adım adım kod yazmak. <a href="http://weblogs.asp.net/fredriknormen/archive/2008/04/16/asp-net-mvc-framework-2-a-step-by-step-guide-to-create-a-simple-web-application.aspx" title="asp.net mvc kod yaz">Bağlantı</a></li>
+<li>CSS ve javascript ile yapılan çok sevimli menüler. <a href="http://www.noupe.com/css/multilevel-drop-down-navigation-menus-examples-and-tutorials.html" title="menü örnekleri">Bağlantı</a></li>
+<li>Web formların farklı ve güzel alternatifler. <a href="http://www.smashingmagazine.com/2008/04/17/web-form-design-modern-solutions-and-creative-ideas/" title="güzel web formları">Bağlantı</a></li>
+<li>Zaman kazandıracak 10 Gmail ipucu. <a href="http://webworkerdaily.com/2008/04/16/10-gmail-tips-and-time-savers/" title="gmail ipuçları">Bağlantı</a></li>
+<li>jquery ile zebra tablolar yapmak. <a href="http://skfox.com/2008/04/17/jquery-example-zebra-tables-striping/" title="jquery zebra tablo">Bağlantı</a></li>
+<li>CSS başlangıç ...</li></ul>
+                <a class="readmore" href=".././21-nisan-2008-webden-secme-haberler/">read more</a>
+                <p>There are <a href=".././21-nisan-2008-webden-secme-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././30-ekim-2007-webden-secme-haberler/" rel="bookmark"
+                           title="Permalink to 30 Ekim 2007 Web'den Seçme Haberler">30 Ekim 2007 Web&#039;den Seçme Haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2007-10-30T23:07:00">
+                Tue 30 October 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/gmail.html">gmail</a><a href=".././tag/haberler.html">Haberler</a><a href=".././tag/javascript.html">Javascript</a><a href=".././tag/optimize.html">optimize</a><a href=".././tag/tab.html">tab</a><a href=".././tag/vsnet.html">vs.net</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>CSS ve javascript dosyalarını otomatik yüklemek. <a href="http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml" title="css ve javascript otomatik olarak yüklemek">Bağlantı</a></li>
+<li>13 adımda web optimizasyonu. <a href="http://www.sitepoint.com/article/web-site-optimization-steps" title="web optimizasyonu">Bağlantı</a></li>
+<li>Farklı web tarayıcılarına göre kodlama yapmak için bilgilendirici
+    bir makale. <a href="http://www.designvitality.com/blog/2007/10/designing-for-every-browser-how-to-make-your-site-fully-cross-browser-compatible/" title="tarayıcılar">Bağlantı</a></li>
+<li>Resimsiz veya az resim kullanılmış güzel siteler. <a href="http://fadtastic.net/2007/10/25/beautiful-sites-with-no-or-very-few-images/" title="resimsiz siteler">Bağlantı</a></li>
+<li>10 adet javascript ajax tab menü örneği. <a href="http://tutorialblog.org/10-javascript-ajax-tabs/" title="tab menu ">Bağlantı</a></li>
+<li>Google pagerank değerlerini güncellemiş.</li>
+<li>İlginç bir menü çalışması. Tasarımı menüye ilginçlik ...</li></ul>
+                <a class="readmore" href=".././30-ekim-2007-webden-secme-haberler/">read more</a>
+                <p>There are <a href=".././30-ekim-2007-webden-secme-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././tablo-kolon-genisligini-css-ile-ayarlama/" rel="bookmark"
+                           title="Permalink to Tablo kolon genişliğini css ile ayarlama">Tablo kolon genişliğini css ile ayarlama</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2007-08-23T09:40:00">
+                Thu 23 August 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/gmail.html">gmail</a><a href=".././tag/tablo.html">tablo</a><a href=".././tag/tablo-hucre-genisligi.html">tablo-hücre-genişliği</a><a href=".././tag/tablolar.html">Tablolar</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>Tablolarda bazen içeriğe göre tablonun genişlemesini istemeyiz veya
+içeriği aşağı kaymasını engellemek isteriz. İşte çözüm hemde Gmail'den.</p>
+<p>Google bize web hakkında örnekleri ile de yardım ediyor. Gmail'de tablo
+genişliğini sabitlemenin daha doğrusu metinin tablo genişliğine göre
+overflow:hiden uygulamasını gösteren güzel bir yöntem</p>
+<p>[sourcecode language="css"] .grid { table-layout ...</p>
+                <a class="readmore" href=".././tablo-kolon-genisligini-css-ile-ayarlama/">read more</a>
+                <p>There are <a href=".././tablo-kolon-genisligini-css-ile-ayarlama/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././gecen-haftanin-haberleri/" rel="bookmark"
+                           title="Permalink to Geçen Haftanın Haberleri">Geçen Haftanın Haberleri</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2007-02-12T22:28:00">
+                Mon 12 February 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/gmail.html">gmail</a><a href=".././tag/google.html">google</a><a href=".././tag/google-calendar.html">Google-Calendar</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>Superonline sitesini yenilemiş. Kodlaması gayet güzel. Ancak
+    reklamlar siteyi çekilmez kılıyor. <a href="http://www.superonline.com/index.html" title="Link">Link</a></li>
+<li>Google Calendar notlarınızı SMS ile hatırlatıyor. C# Türk ilgili
+    duyurusu. <a href="http://www.csharpturk.net/Detay.aspx?mid=40" title="Link">Link</a></li>
+<li>Safari stroke(font etrafında kenarlık verme) özelliğini çıkardı ve
+    destekliyor. Ancak daha standartlaşmadığı için kullanılması
+    sakıncalı. CSS3 standardı içine alınırsa güzel olur. CSS3 yeni
+    özellikleri ve text-stroke ...</li></ul>
+                <a class="readmore" href=".././gecen-haftanin-haberleri/">read more</a>
+                <p>There are <a href=".././gecen-haftanin-haberleri/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././31-ocak-2007-webden-secme-haberler/" rel="bookmark"
+                           title="Permalink to 31 Ocak 2007 WEb'den seçme haberler">31 Ocak 2007 WEb&#039;den seçme haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2007-01-31T23:41:00">
+                Wed 31 January 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/gmail.html">gmail</a><a href=".././tag/google.html">google</a><a href=".././tag/javascript.html">Javascript</a><a href=".././tag/web.html">web</a><a href=".././tag/wordpress.html">WordPress</a><a href=".././tag/zoho-notebook.html">Zoho-Notebook</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>Türk Telekomünikasyon Aşž'den yapılan yazılı açıklamada, Türkiye
+    İtalya arasındaki MEDTÜRK Denizaltı Fiber Optik Kablo Sisteminin 28
+    Ocak 2007 Pazar günü Marmara denizinde hasara uğradığı(yine
+    köpekbalığı mı ısırdı acaba!) bildirildi. Yurtdışı bağlantılarda
+    sorun yaşayacakmışız(yaşıyoruz) Arkadaşlar bu haftayı Yerli Malı
+    Haftası olarak kutlayalım.</li>
+<li>Web sayfalarımızı daha hızlı ve hafif ...</li></ul>
+                <a class="readmore" href=".././31-ocak-2007-webden-secme-haberler/">read more</a>
+                <p>There are <a href=".././31-ocak-2007-webden-secme-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././28-aralik-webden-secme-haberler/" rel="bookmark"
+                           title="Permalink to 28 Aralık Web'den seçme haberler">28 Aralık Web&#039;den seçme haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2006-12-28T23:36:00">
+                Thu 28 December 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/cssvista.html">cssvista</a><a href=".././tag/gmail.html">gmail</a><a href=".././tag/google-news.html">Google-News</a><a href=".././tag/png.html">png</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>Google News artık beta değil. Evet sonunda Google News betası
+    kalktı. <a href="http://news.google.com/">Link</a></li>
+<li>CSSVista, css dosyalarınızı düzenleyebileceğiniz bedava bir editör.
+    En çok kullanılan web tarayıcılarında(ie ve ff) kodlarınızın nasıl
+    görünceğini de gösteriyor. Kurabilmeniz için Microsoft .NET
+    Framework'e ihtiyaç duyması programın eksi yönü. <a href="http://www.sitevista.com/cssvista/">Link</a></li>
+<li>kavidesign.com'dan 'e5+ için en ...</li></ul>
+                <a class="readmore" href=".././28-aralik-webden-secme-haberler/">read more</a>
+                <p>There are <a href=".././28-aralik-webden-secme-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

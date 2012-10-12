@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>!important Tanımı</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="important-tanimi/" rel="bookmark"
+           title="Permalink to !important Tanımı">!important Tanımı</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2010-10-14T22:41:00">
+                Thu 14 October 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/etkinlik.html">Etkinlik</a><a href=".././tag/firebug.html">firebug</a><a href=".././tag/firefox.html">Firefox</a><a href=".././tag/important.html">important</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p><a href="http://friendfeed.com/arayuz-gelistiriciler/120084de/css-yazarken-ustten-gelen-degerleri-ezmek-icin">Friendfeed’de bir serzenişim üzerine Fatih Turan’ın bir cevabı</a>
+hafızamdaki !important bilgilerimin yeterli olmadığını gösterdi bana ve
+bu konuda biraz araştırma yapma gereği duydum ve burada bu araştırma
+sonuçlarını paylaşmak istedim.</p>
+<p>!important’ı anlamak için CSS’de etkinliğine bir göz atmalıyız. Daha
+önce yazdığım bir konu bu “<a href="http://www.fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity/">CSS’de Tanımlamalar ve
+Etkinlikleri(Specificity)</a>” ayrıntılarını bu yazıdan okuyabilirsiniz.
+CSS’de etkinlik tanımını tekrar hatırlatalım; CSS’de etkinliğin anlamı
+stil çatışması(aynı elemente birden fazla tanım yapıldığında) olduğunda
+kullanılan hangi kodun web tarayıcıları tarafından yorumlanacağını
+belirlemektir. Her css tanımını bir sayısal değeri vardı ve benzer
+tanımların yapıldığı bir elemanda bu sayısal değeri büyük olan tanımı
+elemana etki edecektir.</p>
+<p>Peki, biz sayısal değeri küçük olan tanımın etkin olmasını istersek ne
+yapabiliriz? Bu sorunun cevabı ve bu ihtiyacı karşılayan tanım
+!important tanımıdır. Bir örnekle durumu gösterelim</p>
+<p>[sourcecode language="html"] \&lt;ul class="menu"> \&lt;li>Menü 1\&lt;/li>
+\&lt;li>Menü 2\&lt;/li> \&lt;li>Menü 3 \&lt;ul> \&lt;li class="deneme">Alt
+Menü\&lt;/li> \&lt;/ul> \&lt;/li> \&lt;li>Menü 4\&lt;/li> \&lt;/ul> [/sourcecode]</p>
+<p>CSS kodumuzda aşağıdaki gibi olsun</p>
+<p>[sourcecode language="css"] ul.menu li{ background-color:#3CF; }
+li.deneme{ background-color:#f00; } [/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/important_kullanimi.html">tıklayınız.</a></p>
+<p>Kodumuza göre tüm li background rengi <strong>#3CF</strong>olsun ama .deneme sınıfı
+tanımladığımız li'nin ki kırmızı olsun diyoruz, ancak sonuç istediğimiz
+gibi olmuyor.</p>
+<p><img alt="" src="https://lh3.googleusercontent.com/Dnco6jKWpezF_20xMVvlddnRWHtrZp8qUbfziW1cBRUBlGc8ep3trPV1SgOgPyU7mS4ltgeqmdotsuVLbtwBwvLyhAPmKGfpLYvM_qeSH2JNSCFgEA" /></p>
+<p>Firfox'un eklentisi Firebug'u durumu bize açıkça gösteriyor. Üzeri
+çizilen tanım altta kalırken üstteki tanım elemana uygulanmaktadır.</p>
+<p><img alt="" src="https://lh4.googleusercontent.com/1Zi5S_75_Uj278dNpnw0CjChgxhyh1uJXAyD5gwTWzBK1c2_AFMI99Wsl8wOIbgJ99fn82tiLa26Wrvd74dgYrg9G1qNLH7SJb-xplz-LyUs9GUMfg" /></p>
+<p><strong>Seçici adına üst eleman adlarını ekleyerek etkinliği arttırma</strong></p>
+<p>Burada bizim kendi istediğimiz sonucun oluşması için bir iki yöntem
+bulunmaktadır. Bir tanesi istediğimiz atamanın üste çıkması için seçici
+değerini arttırmak, yani örnek kodumuzda bu li.deneme yerine ul
+li.deneme şeklinde yaparak seçici etkinliğini arttırarak yapmaktır.</p>
+<p>[sourcecode language="css"] ul.menu li.deneme{ background-color:#F00; }
+[/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/important_kullanimi2.html">tıklayınız.</a></p>
+<p>Bu kod bizi çözüme ulaştıracaktır, ancak bazen bu çözüm çok can sıkıcı
+haller alabiliyor. Büyük projelerde çok sık rastladığımız bir sorun.</p>
+<p><strong>important! tanımı ile etkiliği arttırma</strong></p>
+<p>Diğer bir çözüm ise etkin olmasını istediğimiz tanımın sonuna kardeşim
+bu önemli bunu etkin yap demek, yani sonuna !important eklemek ile
+olur.<br />
+</p>
+<p>[sourcecode language="css"] li.deneme{ background-color:#f00
+!important; } [/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/important_kullanimi3.html">tıklayınız.</a></p>
+<p><img alt="" src="https://lh4.googleusercontent.com/k4feQBZhKIgAEdx-nVS7HLKHhYCjBboutU5CxKoI_sxdt53CUgH98KJB0fXzcpVbDbrEq3-y9Bi8Mxbo_nkBEPFhfhY-fxVKdVS13qJnykWupm4qOg" /><br />
+</p>
+<h3>İE6 için important ile hack yapmak</h3>
+<p>Şimdi gel gelelim important tanımının ie6 ile olan problemine ve benim
+yanlış anlamama.</p>
+<p>Eğer yukarıdaki gibi bir tanımlama var ise yani tek bir özellik ve bu
+özelliğe atanmış important tanımı var ise ie6 sorun çıkarmıyor. İşte
+benim yeni öğrendiğim bilgi bu.</p>
+<p>Peki, sorun nasıl çıkıyor derseniz. İE6 eğer bir normal tanım var ise ve
+birde important tanımı bulunuyorsa, aynı özellik iki kere tanımlandı ise
+bu importantlı tanımı ie6 uygulamıyor. Bunu ie6 hack için
+kullanılabilir. Bunu ie6 hack için kullanılabilir. Zamanında bir yazıda
+yazmıştım bu konuda
+<a href="http://www.fatihhayrioglu.com/css-de-kodumuzu-ieden-gizleme/">http://www.fatihhayrioglu.com/css-de-kodumuzu-ieden-gizleme/</a> Aslında
+burada ie6’nın bir sorununu avantaja çevirmiş oluyoruz.</p>
+<h3>Satıriçi kodları Ezmek için important kullanımı</h3>
+<p>Bazı durumlarda htmle müdahele imakanımızın olmadığı durumlarda veya
+acil bir düzeltme gerektiğin genelde lazım oluyor important tanımı. Eğer
+html içinden bir tanım yapıldı ise css ile yaptığımız hiç bir tanım
+satıriçi kodu ezemiyecektir. Tek çare important tanımıdır.</p>
+<p>[sourcecode language="html"] \&lt;ul style="background-color:#3CF">
+\&lt;li>Deneme\&lt;/li> \&lt;ul> [/sourcecode]</p>
+<p>Tanımı olsun biz bu elemanı background rengini değiştirmek istersek
+sadece important ile değiştirebiliriz.</p>
+<p>[sourcecode language="css"] li.deneme{ background-color:#f00
+!important; } [/sourcecode]</p>
+<p>Tanımı li elemanının background rengini kırmızı yapacaktır.</p>
+<p>Son bir ipucu olarak şu cümleyi söyleyelim. CSS kısaltmalarına yapılan
+important tanımı kısaltması yapılan özelliklere tek tek yapılmış
+gibidir.</p>
+<h3>Sonuç</h3>
+<p>important tanımı çok tercih edilen bir özellik değildir, nadiren de olsa
+lazım olur. Bazen çok can kurtarır. Çok fazla yerde kullanmak kodunuzu
+okunaksız hale getirebilir, buna dikkat etmek gerekir.</p>
+<p><a href="http://www.fatihturan.com/">Fatih Turan</a>’a teşekkürler bilgilendirme için.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://bytesizecss.com/blog/post/ie6-and-the-important-rule/">http://bytesizecss.com/blog/post/ie6-and-the-important-rule/</a></li>
+<li><a href="../static">http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/</a></li>
+<li><a href="http://www.electrictoolbox.com/using-important-css/">http://www.electrictoolbox.com/using-important-css/</a></li>
+<li><a href="../static">http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml</a></li>
+<li><a href="../static">http://www.yellowjug.com/web-design/the-importance-of-important-in-css/</a></li>
+<li>[http://friendfeed.com/arayuz-gelistiriciler/120084de/css-yazarken-ustten-gelen-degerleri-ezmek-icin][Friendfeed’de
+    bir serzenişim üzerine Fatih Turan’ın bir cevabı]</li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">impressivewebs</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">everything</span><span class="o">-</span><span class="n">you</span><span class="o">-</span><span class="n">need</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">know</span><span class="o">-</span><span class="n">about</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">important</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">declaration</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webcredible</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">user</span><span class="o">-</span><span class="n">friendly</span><span class="o">-</span><span class="n">resources</span><span class="o">/</span><span class="n">web</span><span class="o">-</span><span class="n">dev</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">important</span><span class="p">.</span><span class="n">shtml</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">yellowjug</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">web</span><span class="o">-</span><span class="n">design</span><span class="o">/</span><span class="n">the</span><span class="o">-</span><span class="n">importance</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">important</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">css</span><span class="o">/</span>
+</pre></div>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "important-tanimi/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

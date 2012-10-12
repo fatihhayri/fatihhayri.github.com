@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="sayfa-dibine-yapisik-alt-alanlarsticky-footer/" rel="bookmark"
+           title="Permalink to Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)">Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2009-06-12T13:58:00">
+                Fri 12 June 2009
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/alta-yapisik-alanlar.html">alta-yapışık-alanlar</a><a href=".././tag/css.html">CSS</a><a href=".././tag/kapsayamama-sorunu.html">kapsayamama-sorunu</a><a href=".././tag/sticky-footer.html">sticky-footer</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>![yapisik_altalan][]Bir çok sitede karşılaştığımız sayfanın dibine
+yapışık alt kısımları bu makalede anlatmaya çalışacağım. Bunu hiç
+javascript kullanmadan sadece css yardımı ile yapacağız.</p>
+<p>Site içeriğinin az olduğu durumlarda sayfanın alt kısımları normal akış
+içerisinde ise yukarı doğru kayacaktır ve hoş olmayan görüntülere neden
+olacaktır. Bu gibi durumları engellemek için sayfamızın alt kısımlarını
+sayfa dibine yapıştırmalıyız, böylece sayfa içeriğinin az olması ve çok
+olması durumunda  alt kısmın yerini aynı olacaktır.</p>
+<p>Bu işi yapmak için bir kaç türlü yöntem geliştirilmiştir, mantık olarak
+aynı olan bu yöntemlerde farklı tarayıcılardaki sorunlara çözüm bulmak
+için farklılıklar içerir. Ben bunlarda bazıları çeşitli projelerimde
+uyguladım, ancak makaleyi yazarken en iyisi hangisi ise onu yazmaya
+karar verdim. <a href="http://www.cssstickyfooter.com" title="cssstickyfooter.com">cssstickyfooter.com</a>'um anlattığı yöntem benim gördüğüm
+en iyi yöntem.</p>
+<p>Kodumuzu yazmaya başlarsak.</p>
+<p>XHTML kodu:</p>
+<p>[sourcecode language="html"] \&lt;div id="kapsul"> \&lt;div id="ustAlan">
+\&lt;h1>Lorem ipsum dolor sit amet\&lt;/h1> \&lt;/div> \&lt;div
+id="icerikAlani"> \&lt;div id="icerik"> \&lt;/div> \&lt;div
+id="icerikSagAlani"> \&lt;/div> \&lt;/div> \&lt;/div> \&lt;div id="altAlan">
+\&lt;/div> [/sourcecode]</p>
+<p>XHTML kodunda dikkate değer olan kısım içerik alanı ve alt alanı iki
+farklı bölüm olarak kodlamamız. <strong>altAlan</strong> ve diğer alanları kapsayan
+bir kapsayıcı katmandan(<strong>#kapsul</strong>) oluşuyor kodumuz. Bizim yaptığımız
+örnekte üst alanı ve iki kolonlu içerik kısmını kapsayıcı katman içine
+alıyoruz.</p>
+<p>CSS Kodu</p>
+<p>[sourcecode language="css"] html, body, #kapsul {height: 100%;} body >
+#kapsul {height: auto; min-height: 100%;} #icerik {padding-bottom:
+133px;} /* altAlan yukseligi ile ayni olmali */ #altAlan { position:
+relative; margin-top: -133px; /* altAlan yuksekliginin eksi degeri */
+height: 133px; clear:both; } [/sourcecode]</p>
+<p>Buradaki 133px tanımına dikkat etmemiz gerekiyor. 133px altAlan
+yüksekliğidir ve 3 yerde birden aynı değeri kullandığımıza dikkat
+edeniz.</p>
+<p>Kodu incelersek birinci ve ikinci satırda yüksekliklerin tüm alanı
+kapsaması için farklı tarayıcılar için %100 tanımını yapıyoruz.</p>
+<p>3. satırda alta yapışık alan kadar padding değeri vererek içerik
+kısmının alt kısmın altında kalmasını engelliyoruz.</p>
+<p>4-8 satır arasında alt alan tanımlarımızı yapıyoruz. Göreceli
+konumlandırdığımız alanı içerik alanında padding-bottom değeri ile
+açtığımız boşluğa yerleştirmek için negatif üst kenar boşluğu değeri
+veriyoruz.</p>
+<p>Bu yöntemde float uygulanmış içerik kısmında tam alanı kapsayamama
+sorunu ile karşılaşıyoruz. Float uygulanmış alanların kapsayamama sorunu
+çözmek için
+<a href="../static">http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/</a>
+makalemiz anlattığımız yöntemi kullanıyoruz.</p>
+<p>[sourcecode language="css"] .kapsayamamaSorunu:after {content: ".";
+display: block; height: 0; clear: both; visibility: hidden;}
+.kapsayamamaSorunu {display: inline-block;} /*IE-mac de bu bolumu sakla
+\ */ * html .kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu
+{display: block;} /* IE-mac bu bolumu saklam artik */ [/sourcecode]</p>
+<p>Bu sınıfı tanımlıyoruz ve içeriği kapsayan(#icerikAlani) katmana
+atıyoruz.</p>
+<p>[sourcecode language="html"] \&lt;div id="kapsul"> \&lt;div id="ustAlan"
+class="kapsayamamaSorunu"> \&lt;h1>Lorem ipsum dolor sit amet\&lt;/h1>
+\&lt;/div> \&lt;div id="icerikAlani" class="kapsayamamaSorunu"> \&lt;div
+id="icerik"> \&lt;/div> \&lt;div id="icerikSagAlani"> \&lt;/div> \&lt;/div>
+\&lt;/div> \&lt;div id="altAlan"> \&lt;/div> [/sourcecode]</p>
+<p>Bu yöntemin ryanfait.com'un yöntemine göre en büyük avantajı bence
+ryanfait.com'un yöntemindeki anlamsız tampon katmanı gibi bir fazla
+kodlamadan kaçınış oluyoruz.</p>
+<p>Örneği görüntülemek için <a href="../static/dokumanlar/sayfa_dibine_yapisik.html">tıklayınız.</a></p>
+<h3>Sorunlar ve Çözümleri</h3>
+<ul>
+<li>
+<p>Benim kullandığım projede body ve üstAlan'daki margin-top değeri sorun
+çıkardı. Bunun yerine padding kullanarak sorunu çözdüm. Üst kısım
+body'deki margin-top ve margin-bottom tanımları sorun çıkarıyor, bunun
+yerine padding kullanın.</p>
+</li>
+<li>
+<p>Ayrıca yazı tipi boyutunu büyük kullanmak isteyen kullanıcılarda sorun
+çıkabileceği söyleniyor. Eğer yazı tipi boyutunu piksel(px) vb. kesin
+değerler ile belirlerseniz bu tip sorunları engelleyebilirsiniz.</p>
+</li>
+<li>
+<p>Son olarakta asp.net ile oluşturulan sayfalarda \&lt;form> elemanı ile
+kapsanan sayfanızda sorun çıkabilir. Bunu engellemek için kodunuzu</p>
+</li>
+</ul>
+<p>[sourcecode language="css"] html, body, form, #kapsul {height: 100%;}
+[/sourcecode]</p>
+<p>şeklinde değiştirmelisiniz. <a href="http://www.cssstickyfooter.com/using-sticky-footer-code.html" title="http://www.cssstickyfooter.com/using-sticky-footer-code.html"></a></p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.cssstickyfooter.com/" title="http://www.cssstickyfooter.com/">http://www.cssstickyfooter.com/</a></li>
+<li><a href="http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/" title="http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/">http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/</a></li>
+<li><a href="http://ryanfait.com/resources/footer-stick-to-bottom-of-page/" title="http://ryanfait.com/resources/footer-stick-to-bottom-of-page/">http://ryanfait.com/resources/footer-stick-to-bottom-of-page/</a><br />
+</li>
+<li><a href="../static">http://cokbasit.blogspot.com/2009/01/yapkan-taban-sticky-footer.html</a></li>
+<li><a href="http://css-tricks.com/sticky-footer/" title="http://css-tricks.com/sticky-footer/">http://css-tricks.com/sticky-footer/</a></li>
+<li><a href="http://www.waycoolwebdesign.com/Blog/2008/11/15/CSS-Sticky-Footer" title="http://www.waycoolwebdesign.com/Blog/2008/11/15/CSS-Sticky-Footer">http://www.waycoolwebdesign.com/Blog/2008/11/15/CSS-Sticky-Footer</a></li>
+<li><a href="http://stever.ca/web-design/css-sticky-footer/" title="http://stever.ca/web-design/css-sticky-footer/">http://stever.ca/web-design/css-sticky-footer/</a></li>
+<li><a href="http://brassblogs.com/blog/sticky-footer" title="http://brassblogs.com/blog/sticky-footer">http://brassblogs.com/blog/sticky-footer</a></li>
+<li><a href="http://www.davidjrush.com/blog/2009/01/css-sticky-footer/" title="http://www.davidjrush.com/blog/2009/01/css-sticky-footer/">http://www.davidjrush.com/blog/2009/01/css-sticky-footer/</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">float</span><span class="o">-</span><span class="n">uygulanmis</span><span class="o">-</span><span class="n">elementleri</span><span class="o">-</span><span class="n">tam</span><span class="o">-</span><span class="n">kapsayamama</span><span class="o">-</span><span class="n">sorunu</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">float</span><span class="o">-</span><span class="n">uygulanmis</span><span class="o">-</span><span class="n">elementleri</span><span class="o">-</span><span class="n">tam</span><span class="o">-</span><span class="n">kapsayamama</span><span class="o">-</span><span class="n">sorunu</span><span class="o">/</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">cokbasit</span><span class="p">.</span><span class="n">blogspot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>01<span class="o">/</span><span class="n">yapkan</span><span class="o">-</span><span class="n">taban</span><span class="o">-</span><span class="n">sticky</span><span class="o">-</span><span class="n">footer</span><span class="p">.</span><span class="n">html</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">cokbasit</span><span class="p">.</span><span class="n">blogspot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>01<span class="o">/</span><span class="n">yapkan</span><span class="o">-</span><span class="n">taban</span><span class="o">-</span><span class="n">sticky</span><span class="o">-</span><span class="n">footer</span><span class="p">.</span><span class="n">html</span>&quot;
+</pre></div>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "sayfa-dibine-yapisik-alt-alanlarsticky-footer/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

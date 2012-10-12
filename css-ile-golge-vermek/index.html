@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>CSS ile gölge vermek</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="css-ile-golge-vermek/" rel="bookmark"
+           title="Permalink to CSS ile gölge vermek">CSS ile gölge vermek</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2007-06-12T23:09:00">
+                Tue 12 June 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/golge.html">gölge</a><a href=".././tag/resimlere_golge.html">resimlere_gölge</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>Resimlere gölge vermek bir çok tasarımcının kullandığı derinlik hissi
+veren güzel bir efekttir. Bir çok insan bu efekti vermek için resim
+düzenleme programlarını kullanmaktadır. Resimlere CSS ile de gölge
+verebiliriz. Bu makalede CSS ile nesnelere(resim ve kutulara) gölge
+verme yöntemlerini göreceğiz.</p>
+<p>CSS ile gölge vermenin avantajı; resimlerimize herhangi bir ekstra
+program kullanmadan gölge verebilmemizdir. Böylece sayfamıza her
+eklediğimiz resim için resim düzenleme programını açıp gölge eklemek
+zorunda kalmayacağız. <!--more--></p>
+<h3>CSS ile Basit Şekilde Gölge Vermek</h3>
+<p>En basit css ile gölge verme yöntemi <em>Dunstan Orchard</em>'in yaptığı
+yöntemdir. Bu yöntemde; resmi kapsayan katmana geniş gölge resmi; zemin
+resmi olarak tanımlanarak uygulanır. Eksi margin değeri ile gölge resmi
+ortaya çıkarılır.</p>
+<p>Bu yöntemi uygulamak için ilk olarak 800x800 piksel genişliğinde bir
+gölge resmi oluşturmalıyız. Bu resmi zemin resmi olarak kapsayıcı
+katmana atayalım. Sonra resmi yukarı ve sola doğru 5 piksel mesafe
+verelim.</p>
+<p><img alt="" src="../static/dokumanlar/images/golge01.jpg" /></p>
+<p>Xhtml kodu:</p>
+<p>[html] \&lt;div class="resimKutusu">\&lt;img src="resim.jpg" width="300"
+height="300" alt="Vizara Köyü – Sürmene " />\&lt;/div> [/html]</p>
+<p>Yukarıdaki kodda görüldüğü gibi bir resim ve onu kapsayan bir katmanımız
+var. Kapsayıcı katmana(.resimKutu) gölge zemin resmini atayacağız.
+Burada şöyle bir sorunumuz olacaktır ki katman bir <a href="http://www.fatihhayrioglu.com/?p=151">blok-level</a> bir
+element olduğu için gölge zemin resmi tüm blok boyunca uygulanacaktır.
+Bu durumu engellemek için sabit bir genişlik tanımlamamız gerekir, ancak
+bu yöntemin kullanılabilirliğini azaltacaktır. Daha kullanılabilir
+kodlama için float ataması yapacağız bu Mac IE 5x versiyonlarda sorun
+çıkarır bunu engellemek için bu kodu Mac IE5x den gizleyeceğiz. CSS
+kodu:</p>
+<p>[css] .resimKutusu { background: url(images/golge.gif) no-repeat bottom
+right; clear: right; float: left; } [/css]</p>
+<p>Gölge zemin resmini ortaya çıkarmak için margin tanımlarını yapmalıyız.</p>
+<p>[css] .resimKutusu img { margin: -5px 5px 5px -5px; } [/css]</p>
+<p>Efekti daha belirgin ve güzel hale getirmek için padding ve kenarlık
+ataması yaparsak.</p>
+<p>[css] .resimKutusu img { background-color: #fff; border: 1px solid
+#a9a9a9; padding: 4px; margin: -5px 5px 5px -5px; } [/css]</p>
+<p>Yukarıdaki kodun IE6 da çalışması için bir iki ekleme yapmalıyız.</p>
+<p>[css highlight="5,11,13"] .resimKutusu { background:
+url(images/shadow.gif) no-repeat bottom right; clear: right; float:
+left; position: relative; } .resimKutusu img { background-color: #fff;
+border: 1px solid #a9a9a9; padding: 4px; display: block; margin: -5px
+5px 5px -5px; position: relative; } [/css]</p>
+<p>Kodlama IE5x versiyonlarda biraz sorunlu görünse de genelde
+uygulanabilir bir metottur. Bu metot uygulanabilirliğinin kolay olması
+sebebiyle tercih edilebilir.</p>
+<p>Örnek çalışmayı görmek için <a href="../static/dokumanlar/basit_golge.html">tıklayınız.</a></p>
+<h3>Clagnut metodu ile gölge vermek</h3>
+<p><a href="http://www.clagnut.com">www.clagnut.com</a>'da yayınlandığı için bu isim verilmiştir. Bu metot
+bir önceki ile benzerlik taşır. Bu metottaki fark negatif margin vermek
+yerine göreceli(realtive) konumlandırma kullanmaktır.</p>
+<p>[css] .resimKapsulu { background: url(images/golge.gif) no-repeat bottom
+right; float:left; line-height:0; } .resimKapsulu img {
+background:#fff; padding:4px; border:1px solid #a9a9a9;
+position:relative; left:-5px; top:-5px; } [/css]</p>
+<p>IE5x de padding sorunu olsa da tüm web tarayıcılarında gayet güzel
+sonuçlar verir.</p>
+<p>Örnek çalışmayı görmek için <a href="../static/dokumanlar/clagnut_golge.html">tıklayınız.</a></p>
+<h3>Fuzzy metodu ile gölge vermek</h3>
+<p><img alt="Fuzzy" src="../static/dokumanlar/images/fuzzy.gif" /></p>
+<p>Bundan önceki gölgeleme metotları basit metotlardı. Şimdi anlatacağımız
+metot ise gerçeğe daha yakın gölge elde etmek için kullanılır.</p>
+<p>Bu metod PNG ile oluşturulan saydam kenarlı bir gölge resmi ile
+yapılmaktadır. Ancak kodlamada şöyle bir sorun varki IE7'den önce saydam
+PNG'leri yorumlamıyor. Bunun içinde bu yöntemde IE'nin PNG desteklemeyen
+versiyonları için saydam gif resmi oluşturulacaktır.(Ayrıca png fix
+koduda uygulanacaktır)</p>
+<p>Aşağıdaki gibi bir maske PNG dosyası oluşturalım. IE'nin eski
+versiyonları için .gif oluşturalım.</p>
+<p><img alt="Maske PNG örneği" src="../static/dokumanlar/images/maske_png.gif" /></p>
+<p>[html] \&lt;div class="resimKapsulu"> \&lt;div> \&lt;img
+src="images/koy_01.jpg" width="250" height="165" alt="Vizara Köyü –
+Sürmene" /> \&lt;/div> \&lt;/div> [/html]</p>
+<p>Bu metodu uygulamak için
+<span class="alternatifard"><strong>resimKapsulu</strong></span> katmanına alt sağa
+dayalı bir gölge zemin resmi ekleyelim.</p>
+<p>[css] .resimKapsulu { background: url(images/golge2.gif) no-repeat right
+bottom; float: left; } [/css]</p>
+<p>Bu kapsayıcı katmanın içindeki katmanın üst sağına üstte oluşturduğumuz
+maske resmini ekleyelim. Bu resim gölge resminin üzerine binecektir ve
+ortaya çok güzel bir gölge efekti çıkacaktır. İçteki katmana gölgenin
+ortaya çıkması için padding uygulayalım. Ayrıca gerçek gölge efektini
+yakalamak için png zemin resmini ekleyelim.</p>
+<p>[css] .resimKapsulu div { background: url(images/mask.png) no-repeat
+left top !important; background: url(images/mask.gif) no-repeat left
+top; padding: 0 5px 5px 0; } [/css]</p>
+<p>Bu kodu eski versiyon IE versiyonlarına uygun kod yazarsak:</p>
+<p>[css] .resimKapsulu div { background: url(images/mask.png) no-repeat
+left top !important; background: url(images/mask.gif) no-repeat left
+top; padding: 0 5px 5px 0; float: left; /* IE5.2/Mac duzeltmek icin
+yazildi */ } [/css]</p>
+<p>son olarakta efekti vurgulamak için kenarlık tanımı yapalım.</p>
+<p>[css] .resimKapsulu img { background-color: #fff; border: 1px solid
+#a9a9a9; padding: 4px; } [/css]</p>
+<p>gif ve png ikileminden hoşlanmayanlar için bir yöntem daha var. IE5.5
+den sonraki versiyonların desteklediği</p>
+<p>[css]
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/mask.png',
+sizingMethod='crop'); [/css]</p>
+<p>Bu kodu ie versiyonları için eklemeliyiz, diğer web tarayıcılarında
+gizlemeliyiz.</p>
+<p>[css] .resimKapsulu div {
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/shadow2.png',
+sizingMethod='crop'); background: none; } [/css]</p>
+<p>diğer web tarayıcılarında gizlemek için</p>
+<p>[css] \&lt;!–[if gte ie 5.5000]> \&lt;link rel="stylesheet" type="text/css"
+href="ie55.css"/> \&lt;![endif]–> [/css]</p>
+<p>Böylece tüm yeni nesil web tarayıcılarında bu metodu sağlıklı bir
+şekilde kullanmış olduk.</p>
+<div class="ekstrabilgi">
+Bu metodu tüm png zemin resmi uygularınızda uygulayabilirsiniz.
+
+</div>
+
+<p>Örnek çalışmayı görmek için <a href="../static/dokumanlar/fuzzy_golge.html">tıklayınız.</a></p>
+<h3>Onion Skin metodu ile Gölge eklemek</h3>
+<p>Son gölge verme metodu yuvarlak kenarlı kutuları oluşturduğumuz metoda
+benzer bir metottur. Bu metotta içiçe girmiş üç katman kullanırız soğan
+gibi ondan zaten(onion skin) diyorlar. En alttaki katmana gölge zemin
+resmi, bir üstteki katmanın sol alt kısmına gölge kenarı, en üstteki
+katmanın sağ üst kısmına gölge kenarı vererek yapılır.</p>
+<div>
+<div align="center">
+![Onion Skinned][]
+
+</div>
+
+<p></div>
+Temel html kodu:</p>
+<p>[html] \&lt;div class="nesneKapsayici1"> \&lt;div class="nesneKapsayici2">
+\&lt;div class="nesneKapsayici3"> \&lt;img src="images/dunya.jpg" width="300"
+height="300" alt="Dünya" /> \&lt;/div> \&lt;/div> \&lt;/div> [/html]</p>
+<p>İlk önce en dıştaki katmana gölge zemin resmini atayalım:</p>
+<p>[css] .nesneKapsayici1 { background:url(images/golge.gif) no-repeat
+right bottom; float: left; } [/css]</p>
+<p>Sonra oluşturduğumuz iki adet gölge resminin bir tanesini üst sağ
+tarafa, diğerini alt sol tarafa zemin resmi olarak veriyoruz. Ayrıca tam
+resme göre gölge vermek için aşağıdaki gibi kodlama yapmalıyız:</p>
+<p>[css] .nesneKapsayici2 { background:url(images/altsol.gif) no-repeat
+left bottom; float: left; /* IE5.2/Mac duzeltmek icin yazildi */ }
+.nesneKapsayici3 { background:url(images/ustsag.gif) no-repeat top
+right; padding: 0 5px 5px 0; float: left; /* IE5.2/Mac duzeltmek icin
+yazildi */ } [/css]</p>
+<p>ve son olarak ta güzel bir efekt olması için kenarlık ve padding
+tanımlarını yapıyoruz:</p>
+<p>[css] .nesneKapsayici1 img { background-color: #fff; border: 1px solid
+#a9a9a9; padding: 4px; display: block; } [/css]</p>
+<p>Örnek çalışmayı görmek için <a href="../static/dokumanlar/onion_golge.html">tıklayınız.</a></p>
+<p>Bu metot kolay uygulanabilirlik bakımından avantajlıdır. Ancak fazladan
+iki adet katman kullanılması bakımından pek anlamlı kod
+yazımına(semantik) uygun değildir. Ama bir çok web tarayıcısında
+sorunsuz çalışması bir artısıdır. Bu metot CSS3 ile birlikte daha basit
+hala gelecektir. Çünkü CSS3 bize bir nesneye birden fazla zemin resmi
+tanımlamamıza olanak sağlıyor. Ama bunu için beklemek zorundayız.</p>
+<ul>
+<li><a href="http://alistapart.com/articles/onionskin/">http://alistapart.com/articles/onionskin/</a></li>
+<li><a href="http://alistapart.com/articles/cssdrop2/">http://alistapart.com/articles/cssdrop2/</a></li>
+<li><a href="http://www.clagnut.com">http://www.clagnut.com</a></li>
+<li><a href="http://www.1976design.com/blog/archive/2003/11/14/shadows/">http://www.1976design.com/blog/archive/2003/11/14/shadows/</a></li>
+<li><a href="http://www.friendsofed.com/book.html?isbn=1590596145">http://www.friendsofed.com/book.html?isbn=1590596145</a></li>
+</ul>
+</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "css-ile-golge-vermek/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - flickr</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css-ile-resim-haritalariimagemap-yapmak/">CSS ile Resim Haritaları(imagemap) yapmak</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2008-11-17T11:14:00">
+                Mon 17 November 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/flickr.html">flickr</a><a href=".././tag/fotograf.html">fotoğraf</a><a href=".././tag/imagemap.html">imagemap</a><a href=".././tag/resim-haritalari.html">resim-haritaları</a></p>
+
+
+</footer><!-- /.post-info --><p>Ben ilk defa Flickr'da(bir örnek verelim. <a href="http://www.flickr.com/photos/mollyeh11/2720714668/" title="Dexter HTML kesiyormuş.">Dexter HTML kesiyormuş.</a> :)
+gördüğüm bu metodu çok ilginç bulmuştum. Gerçekten kullanıcıya yardımcı
+olan bir uygulama, görünümü hoş ve işlevsel. İlk gördüğümde bu işin
+javascript yardımı ile yapıldığını düşünmüştüm ki araştırdığım da gördüm
+ki javascript yardımı ile yapanlar var, ama sadece css ile bu işi
+yapanlarda var. Bu konuyu araştırıp bir yazı yazmayı konuyu CSS Mastery
+kitabında okuduğumda karar vermiştim, ancak olmadı nasip şimdiye imiş.</p>
+<!--more-->
+
+<p><img alt="Dexter - HTML" src="static/images/flickr_dexter.jpg" /></p>
+<p>Resim haritalama işi aslında bizim HTML'den aşina olduğumuz bir konu.
+Eskiden çok kullanırdık şimdilerde html e-postalarda(mailing) daha
+ziyade kullanılıyor. Resmin belli noktalarına link verebilmek çok güzel
+bir işti. Ben daha bu işlere ilk başladığımdaki o zamanlar FrontPage ile
+yapmaya çalışıyordum bu işleri. Resim haritalarını çözmek 1 haftamı
+almıştı. Gülermisin ağlarmısın :D</p>
+<p>Biz burada flickr'dakine benzer bir uygulamayı beraber yapacağız.
+Aslında burada kullanacağımız teknik bildiğimiz göreceli eleman içindeki
+mutlak elemanın konumlandırması tekniğidir. Resmimizi içeren göreceli
+konumlandırılmış bir elaman koyup resim üzerinde belirteceğimiz
+noktalarıda mutlak konumlandıracağız ve bu noktaları farenin üzerine
+geldiğinde belirtip ilgili açıklamayı göstereceğiz. Flickr'dakine benzer
+bir görüntü olması için iki fazladan \&lt;span> ekleyeceğiz, bunları
+kaldırada biliriz.</p>
+<p>HTML kodumuzu yazalım</p>
+<p>[sourcecode language='html']</p>
+<ul>
+<li><a href="static"><span class="dis"><span class="ic"><span class="bilgi">Dexter</span></span></span></a></li>
+<li>[<span class="dis"><span class="ic"><span class="bilgi">HTML
+    4</span></span></span>][]</li>
+</ul>
+<p>[/sourcecode]</p>
+<p>CSS kodunu kademe kademe açıklayarak yazarsak;</p>
+<p>Burada resmimizi ul elemanı ardalan resmi olarak atadık. Bu teknikde
+önemli olan dıştaki kapsayıcı elemanı(ul#foto) göreceli konumlandırıp,
+fare üzerine geldiğinde resmin etrafını çizip bilgisini göstermek. Bu
+resimde üzerini çizdiğimiz ve bilgisini gösterdiğimiz elemanlarada(\&lt;li
+class="dexter"> ve \&lt;li class="html">) mutlak konumlandırma ile
+tanımlayıp resmin üzerinde istediğimiz konuma yerleştiriyoruz.</p>
+<p>[sourcecode language='css'] ul#foto{ width: 500px; height: 331px;
+position: relative; background: url(images/dexter.jpg) no-repeat;
+margin: 0; padding: 0; list-style: none; } [/sourcecode]</p>
+<p>Aşağıdaki kodda her bir haritalanacak nesne bir link olduğu için her
+birine tek tek atamaktansa genel bir tanım ile tüm linkleri mutlak
+konumlandırıyoruz ve kenar çizgisini tanımlıyoruz.</p>
+<p>[sourcecode language='css'] ul#foto a { position: absolute; color:
+#000; text-decoration: none; border: 1px solid transparent; }
+[/sourcecode]</p>
+<p>Her bir haritalanacak eleman için genişlik yüksek tanımını yapıyor ve
+kapsayıcı elemana göre konumunu belirliyoruz. Ayrıca haritalanan
+elemanların açıklamaları için konumu tanımı ve görünüm tanımlarını
+yapıyoruz.</p>
+<p>Son iki satır kodlar normal css standart kodlamasının dışında,
+Flickr'daki gibi bilgi kutusunun köşelerini yuvarlamak için tanımlar
+yaptık. Firefox için -moz-border-radius: 3px; Safari ve Google Chrome
+için  -webkit-border-radius: 3px; tanımlarını yaptık. Internet Explorer
+kullanıcıları için şimdilik bir çözüm yok.</p>
+<p>[sourcecode language='css'] ul#foto .dexter a { width: 110px; height:
+175px; top: 25px; left: 60px; } ul#foto .html a { width: 50px; height:
+80px; top: 195px; left: 408px; } ul#foto a .bilgi { position: absolute;
+bottom: -25px; width: 100%; padding: 2px; background-color:#ffc;
+text-align: center; left: -30000px; font:11px Arial, Helvetica,
+sans-serif; margin-left: -60px; -moz-border-radius: 3px;
+-webkit-border-radius: 3px; } [/sourcecode]</p>
+<p>Amacımız Flickr tipi bir resim haritası oluşturmak olduğu için, iki
+kenar çizgisi tanımı yapmak için iki adet \&lt;span> etiketi yazdık ve
+bunlara dış(.dis) ve iç(.ic) sınıfları tanımladık. Tanımladığımız her
+bir dis ve ic nesnesine haritaladığımız nesnelerin genişlik ve
+yükseklerinin 2px daha düşük değerlerini vererek üst üste binmelerini
+önledik ve görünümünü düzenlemiş olduk. Eğer istersek bu \&lt;span>
+etiketlerini kaldırabiliriz, daha sade bir görünüm olur.</p>
+<p>[sourcecode language='css'] ul#foto a .dis, ul#foto a .ic { display:
+block; } ul#foto .dexter a .dis { width: 108px; height: 173px; }
+ul#foto .html a .dis { width: 48px; height: 78px; } ul#foto .dexter a
+.ic { width: 106px; height: 171px; } ul#foto .html a .ic { width: 46px;
+height: 76px; } [/sourcecode]</p>
+<p>Fare haritalanan alanların üzerine gelince çıkacak bilgilendirme
+alanının yerini belirliyoruz. - 3000px ile görüntüden çıkardığımız bilgi
+alanını görünür yapıp istediğimiz yere yerleştirdik.</p>
+<p>[sourcecode language='css']ul#foto a:hover .bilgi { left: 60px; }
+[/sourcecode]</p>
+<p>Tüm resmin üzerine gelindiğinde ve haritalanan alanların üzerine
+gelindiğinde kenar çizgi renklerini değiştirerek farklı bir görünüm
+kazandırıyoruz.</p>
+<p>[sourcecode language='css'] ul#foto a:hover { border-color: #d4d82d; }
+ul#foto:hover a .dis, ul#foto a:hover .dis { border: 1px solid #000;
+} ul#foto:hover a .ic, ul#foto a:hover .ic { border: 1px solid #fff;
+} [/sourcecode]</p>
+<p>Sonuçta görsel ve işlevsel olarak çok güzel bir uygulama elde ettik.
+Uygulanabileceği yerler kısıtlıda olsa, uygulandığın da güzel bir
+görünüm ve işlevsel bir sonuç elde edeceğimiz bu uygulama bizi birçok
+avantaj sağlar.</p>
+<p>Örnek uygulamayı görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/flickr-rollovers.htm">tıklayınız</a></p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.cssmastery.com/" title="CSS Mastery: Advanced Web Standards Solutions - Andy Budd">CSS Mastery: Advanced Web Standards Solutions - Andy Budd</a></li>
+<li><a href="http://www.frankmanno.com/ideas/css-imagemap/" title="http://www.frankmanno.com/ideas/css-imagemap/">http://www.frankmanno.com/ideas/css-imagemap/</a></li>
+<li><a href="http://www.frankmanno.com/ideas/css-imagemap-redux/" title="http://www.frankmanno.com/ideas/css-imagemap-redux/">http://www.frankmanno.com/ideas/css-imagemap-redux/</a></li>
+<li><a href="http://www.cssplay.co.uk/menu/imap.html" title="http://www.cssplay.co.uk/menu/imap.html">http://www.cssplay.co.uk/menu/imap.html</a></li>
+<li><a href="http://maxxu.casacolor.ro/css-exp/css-image-maps.html" title="http://maxxu.casacolor.ro/css-exp/css-image-maps.html">http://maxxu.casacolor.ro/css-exp/css-image-maps.html</a></li>
+<li><a href="http://www.marketingtechblog.com/2007/10/02/css-image-map/" title="http://www.marketingtechblog.com/2007/10/02/css-image-map/">http://www.marketingtechblog.com/2007/10/02/css-image-map/</a></li>
+<li><a href="http://www.frederikvig.com/temp.html" title="http://www.frederikvig.com/temp.html">http://www.frederikvig.com/temp.html</a> </li>
+<li>[http://www.cssplay.co.uk/menu/old_master.html][]</li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">sho</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">site</span><span class="o">/</span><span class="n">dexter</span><span class="o">/</span>
+</pre></div>
+
+
+<p>[<span class="dis"><span class="ic"><span class="bilgi">HTML
+  4</span></span></span>]: http://www.w3.org/TR/REC-html40/</p><p>There are <a href=".././css-ile-resim-haritalariimagemap-yapmak/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

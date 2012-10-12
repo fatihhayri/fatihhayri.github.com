@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioglu</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/XHTML.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2010-11-04T00:27:00+01:00</updated><entry><title>HTML Mailing -1: Mailing Kodlarken Dikkat Edilmesi Gerekenler</title><link href="http://www.fatihhayrioglu.com/html-mailing-1-mailing-kodlarken-dikkat-edilmesi-gerekenler/" rel="alternate"></link><updated>2010-11-04T00:27:00+01:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-11-04:html-mailing-1-mailing-kodlarken-dikkat-edilmesi-gerekenler/</id><summary type="html">&lt;p&gt;İnsanlar bildirileri, duyuruları yaymak için çeşitli araçlara
+başvururlar bu internet olmadan önce ve hala broşürler, mektuplar,
+afişler vs ile yapılırdı internet ile birlikte ise mail yolu yapılmaya
+başlandı. Normal metinsel mailinglerin yanı sıra html ile daha
+görselliği arttırılmış maillerde gönderilmeye başlandı. İşte bu
+görselliği arttırılmış html mail içeriğine mailing diyoruz.&lt;/p&gt;
+&lt;p&gt;Uzun bir aradan sonra bir mailing yapınca aklıma geldi, mailing yaparken
+nelere dikkat edilmeli diye bir makale yazmak. Çok uzun süre mailing
+yaptım diyebilirim, yaklaşık 3-4 sene mailing kestim. HTML
+kodlayıcı(arayüz geliştirici) için mailing ilk ciddi test aracıdır.
+Mailing her nekadar benim mantığıma göre çok işlevsel bir araç olmasa da
+müşteri için helede kurumsal müşteriler için vazgeçilmezdir. Ben birçok
+kurumsal mailingi okumadan çöpe atıyorum. Ama bir gerçek varki mailing
+hala etkisini kaybetmeden devam ettiren bir araçtır(müşteri için).&lt;/p&gt;
+&lt;p&gt;Bu makalede sadece ipuçları verip bitirmeyi düşünüyordum, mailing kesmek
+o kadar basit bir konu değil bu nedenle 2 başlık altında yazmaya karar
+verdim. İlki bu makale mailing kodlarken nelere dikkat etmemiz
+gerektiğini ve mail kodlarken nelere ihtiyacımız olduğunu
+toparlayacağım, ikinci makalemde basit bir örnek ile mail kodlamayı
+göstermeye çalışacağım. Mailing konusunda birde gönderim konusu var,
+ancak ben işin bu kısmı ile fazla ilgilenmediğim için bir şey yazmam
+mantıklı değil, bu konuda internette yeterli araştırmaları yaparak bilgi
+edinebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Şimdi ilk makalemizi yazalım.&lt;/p&gt;
+&lt;h3&gt;Mailing kodlarken nelere dikkat etmemiz gerekir&lt;/h3&gt;
+&lt;p&gt;HTML kodlarken farklı tarayıcılar için kod yazarız bu kodlamadaki en
+önemli noktadır, mailingde ise iş daha vahimdir, çünkü mailing okuma
+araçları çok farklıdır ve bu araçlar normal html ve css standartlarının
+bir çok özelliği desteklemez.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mailing Destekleme Listeleri&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;İlk önce mailing standartlarını incelemekte yarar var bence, neyi
+destekleyip desteklemediğini bilmek önemli.&lt;/p&gt;
+&lt;p&gt;Popüler mailing programlarının css destekleme listesini görmek için
+&lt;a href="http://www.campaignmonitor.com/css/" title="tıklayınız."&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Benzer listeler webde çok var diğer bir liste &lt;a href="http://www.email-standards.org/clients/" title="email-standards.org"&gt;email-standards.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bu listeleri incelmeliyiz ve kodumuzu yazarken buna göre hareket
+etmeliyiz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HTML Görünümünü Tablo/Div ile Kodlama&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Her nekadar uzun süredir web sitelerini kodlarken katman(div) ile
+kodlamayı savunsam da mailingde durum farklıdır, mailing planını
+kodlarken tablolardan yardım almak daha mantıklıdır. Bunun nedeni
+mailing destekleyicilerinin yeni standartları desteklememesidir.&lt;/p&gt;
+&lt;p&gt;Mailing yapısını oluştururken tablolu yapı kullanmalıyız. Uzun süredir
+katmanlı yapı ile kod yazan biri için tablolu yapıya dönmek zor oluyor,
+ama Allah'tan genelde basit yapılara sahip oldukları için sorun olmuyor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CSS Kodlarınızı Satıriçi Yazın&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Birçok mailng html çevrildikten sonra toplu olarak gönderim için çeşitli
+programlar kullanılır. Bu programların göndericiler için çeşitli
+kısıtlamaları vardır. Bunlardan bir tanesi, genelde hazırlana html
+kodunun sadece \&amp;lt;body&gt; etiketleri içerisindeki kodu eklememize izin
+vermesidir.&lt;/p&gt;
+&lt;p&gt;Bu nedenle dışarıdan eklenen .css dosyaları mailinglerimize ekleyemeyiz.
+Bunu destekleyen programlar var ise de benim çalıştığım birçok müşteride
+bu programlar yoktu. Bundan dolayıdır ki css kodlarımızı satıriçi
+yazmalıyız. Aşağıdaki örnekte görüldüğü gibi&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;p style="font-family:Arial; font-size:12px; color:#999"&gt;Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. \&amp;lt;/p&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Tabi kodları yazarken yukarıdaki destek listelerini dikkate almalıyız.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resimleri ve Bağlantıları İnternet Üzerinden Verin&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mailingler web siteleri gibi html çevrilseler de kullanıcının e-posta
+kutusuna düşen kodlardır, bu nedenle kullanıcıya yükleyemeyeceğim ve
+kullanıcı bilgisayarına göre hareket edemeyeceğimiz durumlar söz
+konusudur.&lt;/p&gt;
+&lt;p&gt;Bunlardan bir tanesi resimlerdir, hazırladığımız resimleri kullanıcı
+bilgisayarına yükleyemeyeceğimiz için bunları kendi sitemiz üzerine
+yükleyip hazırladığımız mailing içeriğine bu resimleri kendi sitemiz
+üzerinde okutmalıyız. Örneğin&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;img src="http://www.firmaadi.com/mailings/images/ustalan.jpg"
+width="450" height="120" alt="Firma_Adi" /&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Web siteleri gibi hareket edemeyeceğimiz diğer bir konu ise bağlantıları
+yerel olarak vermeyeceğimiz konusudur. Bağlantılarımızıda yerel
+veremeyiz örneğin&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;a href="hakkimizda.html"&gt;Hakkımızda\&amp;lt;/a&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Şeklinde bir bağlantı kırık bir bağlantı olacaktır. Bunun yerine&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;a
+href="http://www.firmaadi.com/hakkimizda.html"&gt;Hakkımızda\&amp;lt;/a&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Şekline olmalıdır.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Test Etmeyi Unutmayın&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mailing yapılarının web sitelerinde daha sıkıntılı yapıları vardır.
+Bunlardan en önemlisi mailing gönderildikten sonra html koduna müdahale
+imkanımızın sıfır olmasıdır. Bu nedenlede mailing gönderilmeden tüm
+sorunların giderilmiş olması lazımdır. Birçok zaman mailing ile ilgili
+sorunlar yaşmışızdır, bu kaçınılmaz bir durumdur, ancak bunu en aza
+indirmek için testlerimiz gönderimden önce yapmalıyız.&lt;/p&gt;
+&lt;p&gt;Web üzerinde; &lt;strong&gt;Hotmail&lt;/strong&gt;, &lt;strong&gt;Gmail&lt;/strong&gt; ve &lt;strong&gt;Yahoo&lt;/strong&gt; üzerinden&lt;br /&gt;
+PC'de ise &lt;strong&gt;Outloook&lt;/strong&gt; ve &lt;strong&gt;Thunderbird&lt;/strong&gt; üzerinden testlerimizi
+yapmalıyız.&lt;br /&gt;
+Farklı Tarayıclar ile İnternet Explore 6 ve 7 ve Firefox ile test
+etmeliyiz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;title ve alt Değerlerini Yazmayı unutmayın&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Şimdilerde birçok mail okuma programı resimleri ilk mail yüklenirken
+yüklememekte ve kullanıcıdan izin istediğinden ve resimlerin yolunun
+kırık olma ihtimalinide dikkate alarak resimlerin alt elemanını boş
+bırakmayın. Aynı şekilde bağlantılarıda title özelliğini ekleyerek daha
+kullanışlı hale getirin.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mailing Genişliğini&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mailing genişliği web sitesi genişlik standartlarında farklıdır. Mailing
+okuyucular olarak Outlook ve Thunderbird gibi araçların 3 kolonlu
+yapıları göz önüne alınarak tasarlamalıyız. 1024*768px çözünürlüğe göre
+mailingimizi tasarladığımızda 3 kolonlu bir yapıda mailing genişliğimiz
+750px veya daha düşük olacaktır. Tasarım yaparken bunu dikkate almak
+önemlidir.&lt;/p&gt;
+&lt;p&gt;Eğer 800x600 çözünürlük düşünüyorsak 6oopx genişlik mailingimizin
+genişliği olmalıdır.&lt;/p&gt;
+&lt;p&gt;Mailing genişliğini 600px olarak düşünüp tasarlarsak bir sorun
+yaşamayacağımızı bilmeliyiz ve ona göre davranmalıyız.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mailing İçeriğinde Kullanılmayacak Elemanlar&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Gerek Form elemanları ve gerekse javascript kodları mailing içinde
+kullanmak sakıncalıdır. Birçok program ve mail sitesi güvenlik
+açıklarında çok sıkı davranır. Bu nedenle hiç bir javascript ve form
+işlemine izin vermez.&lt;/p&gt;
+&lt;p&gt;Daha önce yaşanan birçok script açıkları ile başı ağırmış bu araçlar
+yazdığınız bu kodlar nedeni ile gönderdiğiniz mailleri spam olarak
+niteleme ihtimali yüksektir.&lt;/p&gt;
+&lt;p&gt;Ayrıca birçok mailing programı flash desteklemez bu nedenle mailing
+kodlarımıza flash import edemeyiz.&lt;/p&gt;
+&lt;p&gt;Bazı HTML etiketlerini kullanılması anlamsız ve sorun yaratabilir. Bu
+etiketleri sıralayalım; \&amp;lt;META&gt;, \&amp;lt;BASE&gt;, \&amp;lt;LINK&gt;, \&amp;lt;SCRIPT&gt;,
+\&amp;lt;FRAMESET&gt;, \&amp;lt;FRAME&gt;, \&amp;lt;IFRAME&gt; ve yorum kodu \&amp;lt;!-- yorum --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spam Mailden Kaçınmak için Yapmamız Gerekenler&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Spam mailller internet dünyasının baş belalarında biridir. Birçok mail
+programı spam mailleri en aza indirmek için birçok filtre
+uygulamaktadır. Bizlerin bu filtrelere mailinglerimizi hazırlamamız
+gerekir. Spama düşen mailler hiç bir anlam ifade etmez ve müşteri ile
+aramızın açılmasına neden olabilir.&lt;/p&gt;
+&lt;p&gt;Kısaca spama yakalanmamak için dikkat etmemiz gerekenleri listeleyelim&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailinglerinizdeki bütün domainlerin "gönderen" kısmında görülen
+    adresteki domainler aynı olmalı. Örneğin info@sirketadi.com
+    adresinden gönderim yapıyorsanız, mailing bağlantılarında da
+    www.sirketadi.com/xxx şekliden adreslere gitmeli.&lt;/li&gt;
+&lt;li&gt;Domaininiz karalistede mi değil mi kontrol edin. Çeşitli siteler var
+    bu konuda tarama yapabileceğiniz.
+    [http://www.blacklistmonitoring.com/lookup/email_blacklist_IP_address_lookup.php][]&lt;/li&gt;
+&lt;li&gt;Mailiniz yüklenmemesi durumunda alternatif bir bağlantı oluşturun ve
+    mailinizi altına ekleyin.&lt;/li&gt;
+&lt;li&gt;Kullanıcıların listenizden çıkabilmelerin sağlayacak bir link
+    ekleyin mailinizin sonuna&lt;/li&gt;
+&lt;li&gt;Tüm kelimeleri büyük harflerle yazmak. Örneğin: MERHABA BU
+    KAMPANYADA...&lt;/li&gt;
+&lt;li&gt;Çok fazla yazı rengi kullanmak. Örneğin:
+    &lt;span style="color:red"&gt;MERHABA&lt;/span&gt;
+    &lt;span style="color:blue"&gt;BU&lt;/span&gt;
+    &lt;span style="color:pink"&gt;KAMPANYADA...&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Bir çok spam içeriğinde geçen kelimelere yer vermek. Örneğin: Free,
+    Casino, Mortgage, Ücretsiz vs.&lt;/li&gt;
+&lt;li&gt;Çok fazla noktalama işareti kullanmak. Örneğin Dikkat!!!!!!! Büyük
+    Kampanya!!!!!!&lt;/li&gt;
+&lt;li&gt;Mailing'in tamamının resimlerden oluşması bazı mail okyucuları
+    tarafından spam olarak işaretlenmesine neden olabilir. Mailing
+    içinde metin olması önemlidir.&lt;/li&gt;
+&lt;li&gt;Mailing'in başına veya sonuna kullanıcının mail listesinden
+    çıkmasını sağlayacak bir metin ekleyin.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bu konu çok ayrıntısı olan bir konu ben bu kadarına değinmek ile
+yetineyim.&lt;/p&gt;
+&lt;p&gt;Bir sonraki dersimde basit bir mailingin nasıl kodlanacağını anlatmak
+olacaktır.&lt;/p&gt;
+&lt;p&gt;Kalın sağlıcakla.&lt;/p&gt;
+&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.viget.com/inspire/tips-for-coding-html-email/" title="http://www.viget.com/inspire/tips-for-coding-html-email/"&gt;http://www.viget.com/inspire/tips-for-coding-html-email/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.anandgraves.com/html-email-guide" title="http://www.anandgraves.com/html-email-guide"&gt;http://www.anandgraves.com/html-email-guide&lt;/a&gt; (iyi)&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.email-standards.org/" title="http://www.email-standards.org/"&gt;http://www.email-standards.org/&lt;/a&gt; (iyi)&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;[http://www.mailchimp.com/articles/email_marketing_guide/][] (iyi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-tricks.com/using-css-in-html-emails-the-real-story/" title="http://css-tricks.com/using-css-in-html-emails-the-real-story/"&gt;http://css-tricks.com/using-css-in-html-emails-the-real-story/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.email-standards.org/clients/" title="http://www.email-standards.org/clients/"&gt;http://www.email-standards.org/clients/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.campaignmonitor.com/css/" title="http://www.campaignmonitor.com/css/"&gt;http://www.campaignmonitor.com/css/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.xavierfrenette.com/articles/css-support-in-webmail/" title="http://www.xavierfrenette.com/articles/css-support-in-webmail/"&gt;http://www.xavierfrenette.com/articles/css-support-in-webmail/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;blacklistmonitoring&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lookup&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;email_blacklist_IP_address_lookup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;
+&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;blacklistmonitoring&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lookup&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;email_blacklist_IP_address_lookup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&amp;quot;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;thinkvitamin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;design&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ensuring&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;your&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;emails&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;look&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;great&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;delivered&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;thinkvitamin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;design&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ensuring&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;your&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;emails&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;look&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;great&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;delivered&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&amp;quot;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;topluemailgonderimi&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;spamadusmedennasiltopluemailgonderilir&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;topluemailgonderimi&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;spamadusmedennasiltopluemailgonderilir&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="e-posta"></category><category term="gmail"></category><category term="hotmail"></category><category term="mailing"></category><category term="spam"></category></entry><entry><title>İpucu: Dreamweaver'da Kullanılmayan Özellikleri Kaldırmak</title><link href="http://www.fatihhayrioglu.com/ipucu-dreamweaverda-kullanilmayan-ozellikleri-kaldirmak/" rel="alternate"></link><updated>2010-01-15T00:46:00+01:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-01-15:ipucu-dreamweaverda-kullanilmayan-ozellikleri-kaldirmak/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/code_hig-300x194.gif" title="code_hig" /&gt;][]Css ile kod yazarken gereksiz bazı kodlar kod yazma hızımı
+kesiyordu, bazen hızla kod yazarken arada başka kodları yazdığımda
+olmuyor değildi. Bu sorunumu &lt;a href="http://friendfeed.com/fatihhayri" title="friendfeed"&gt;friendfeed&lt;/a&gt;'de &lt;a href="http://ff.im/efoQ4" title="paylaştım"&gt;paylaştım&lt;/a&gt; ve sağolsun
+arkadaşlar bu konuda bana yardımcı oldu. &lt;a href="http://friendfeed.com/senol1" title="Şenol"&gt;Şenol&lt;/a&gt;'un yardımları ile
+sorunun çözümünü bulduk.&lt;/p&gt;
+&lt;p&gt;Bu ipucunu burada paylaşma ihtiyacı duydum.&lt;/p&gt;
+&lt;p&gt;Çözüm şöyle;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C:\Program Files\Adobe\Adobe Dreamweaver
+CS4\configuration\CodeHints&lt;/strong&gt; (Bu yol tam uymaya bilir farklı işletim
+sistemlerinde farklı yerlerde olabilir, ama bu yol size bir fikir
+verecektir)Klasörü içindeki &lt;strong&gt;CodeHints.xml&lt;/strong&gt; xml dosyasında
+istemediğimiz etiketleri kaldırıyoruz.&lt;/p&gt;
+&lt;p&gt;Örneğin benim ilk kaldırdığım kod widows kodu. Bu kod için xml
+dosyasındaki aşağıdaki kodu silmek gerekiyor.&lt;/p&gt;
+&lt;p&gt;[xml]\&amp;lt;menuitem label="widows" value="widows:"
+icon="shared/mm/images/hintMisc.gif" /&gt;[/xml]&lt;/p&gt;
+&lt;p&gt;Bunun dışında xml dokümanındaki kullanmadığım ve bir daha
+kullanmayacağım css kodlarını sildim. Silerken dikkat edin bu dosya
+içinde sadece css kodları yok. Tüm otomatik tamamlama kodları bu xml
+dokümanı içinde&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;azimuth&lt;/li&gt;
+&lt;li&gt;caption-side&lt;/li&gt;
+&lt;li&gt;counter-increment&lt;/li&gt;
+&lt;li&gt;counter-reset&lt;/li&gt;
+&lt;li&gt;cue&lt;/li&gt;
+&lt;li&gt;cue-after&lt;/li&gt;
+&lt;li&gt;cue-before&lt;/li&gt;
+&lt;li&gt;direction&lt;/li&gt;
+&lt;li&gt;elevation&lt;/li&gt;
+&lt;li&gt;marker-offset&lt;/li&gt;
+&lt;li&gt;marks&lt;/li&gt;
+&lt;li&gt;orphans&lt;/li&gt;
+&lt;li&gt;pause&lt;/li&gt;
+&lt;li&gt;pause-after&lt;/li&gt;
+&lt;li&gt;pause-before&lt;/li&gt;
+&lt;li&gt;pitch&lt;/li&gt;
+&lt;li&gt;pitch-range&lt;/li&gt;
+&lt;li&gt;play-during&lt;/li&gt;
+&lt;li&gt;richness&lt;/li&gt;
+&lt;li&gt;speak&lt;/li&gt;
+&lt;li&gt;speak-header&lt;/li&gt;
+&lt;li&gt;speak-numeral&lt;/li&gt;
+&lt;li&gt;speak-punctuation&lt;/li&gt;
+&lt;li&gt;speech-rate&lt;/li&gt;
+&lt;li&gt;stress&lt;/li&gt;
+&lt;li&gt;unicode-bidi&lt;/li&gt;
+&lt;li&gt;voice-family&lt;/li&gt;
+&lt;li&gt;volume&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bunları sildim ve width ve white-space yerini değiştirdim.&lt;/p&gt;
+&lt;p&gt;Benim sonuç xml dosyamı burada paylaşıyorum. Eskisinin yedeğini almayı
+unutmayın.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/dokumanlar/CodeHints.rar"&gt;CodeHints.xml dosyasını indirmek için tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Şenol'un hazırladığı&lt;/p&gt;
+&lt;p&gt;[CodeHints.xml dosyasını indirmek için tıklayınız. (Şenol'un
+geliştridiği)][]&lt;/p&gt;
+&lt;p&gt;Yazının sonunda &lt;a href="http://friendfeed.com/senol1"&gt;Şenol&lt;/a&gt;'a tekrar teşekkürlerimi sunarım.&lt;/p&gt;
+&lt;h3&gt;Kaynak&lt;/h3&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://ff.im/efoQ4"&gt;http://ff.im/efoQ4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/code_hig-300x194.gif" title="code_hig" /&gt;]: http://www.fatihhayrioglu.com/wp-content/code_hig.gif
+  [CodeHints.xml dosyasını indirmek için tıklayınız. (Şenol'un
+  geliştridiği)]: http://www.4shared.com/file/197529116/bfc9e2ec/CodeHints.html?err=no-sess&lt;/p&gt;</summary><category term="Dreamweaver"></category><category term="kodu gizle"></category></entry><entry><title>iframe virüsü ve Saldırgan Site damgalamasından kurtulmanın yolu</title><link href="http://www.fatihhayrioglu.com/iframe-virusu-ve-saldirgan-site-damgalamasindan-kurtulmanin-yolu/" rel="alternate"></link><updated>2009-08-15T22:51:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-08-15:iframe-virusu-ve-saldirgan-site-damgalamasindan-kurtulmanin-yolu/</id><summary type="html">&lt;p&gt;Yaklaşık 2-3 haftadır bir çok yerde karşılaştığımız bu sorunun
+kaynağının ne olduğu konusunda bir çok makale okudum. Çözümler okudum
+uygulamalar yaptım sonuç olarak konuyu şöyle özetleyebiliriz.&lt;/p&gt;
+&lt;p&gt;Çeşitli yollardan bize musallat olan virüs(aslında pek virüs mantığı ile
+hareket etmiyor.) Sistemimizdeki ftp bilgilerini alıp bu bilgiler
+üzerinden sitelere otomatik olarak bir iframe kodu ekliyor. Genellikle
+index.xxx ve default.xxx isimli dosyalara otomatik olarak eklenen bir
+iframe kodu bu. Eklenen bu iframe kodu bazen boş bir sayfayı açarken
+bazende malware olarak adlandırılan kullanıcının bilgisayarına sızan bir
+virüs yükletmeye çalışıyor. Eklenen bu iframe genelde gizli olarak
+kodlandığı için(visibility:hidden) göremiyoruz.&lt;/p&gt;
+&lt;p&gt;![iframe_kodu][]&lt;/p&gt;
+&lt;p&gt;Belli bir süre sonra Google siteyi tararken bu kodlamayı görüyor ve
+linki takip edincede siteden virüs yayılmaya çalışıyor diye sitenizi
+Saldırgan Site sınıflandırmasını sokuyor. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="google-warning" src="http://www.fatihhayrioglu.com/wp-content/google-warning-300x127.jpg" title="google-warning" /&gt;&lt;/p&gt;
+&lt;p&gt;Saldırgan Site sınıfına giren sitemiz Google Chrome ve Firefox ile
+sitemize açmayan kişilere yukarıdakine benzer bir ekran ile karşılık
+verecektir ve kullanıcılar sitenize erişemeyecektir. &lt;/p&gt;
+&lt;p&gt;Peki biz bu işten nasıl kurtulacağız. İlk olarak siteden bu kodları
+arayıp(genelde body etiketi sonrasına eklendiği için bulmak kolay.)
+bulup kaldıracağız. Ayrıca bilgisayarımızı sağlam bir virüs taramasından
+geçirip, tüm ftp şifrelerimizi değiştirmeyi unutmayalım. &lt;/p&gt;
+&lt;p&gt;Bir sonraki adım olarak google'un saldırgan site listesinden çıkmak için
+&lt;a href="http://www.google.com/webmasters/tools/" title="Google Webmaster Tools"&gt;Google Webmaster Tools&lt;/a&gt;'una gireceğiz.&lt;/p&gt;
+&lt;p&gt;Siteye girdikten sonra sırası ile(İngilizce seçili olarak girdiğiniz
+farz ederek devam edeceğim. İşlerin hızlı yürümesi için İngilizceyi
+tercih etmenizi öneririm)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Add Site&lt;/strong&gt; deyip sitemizi
+    ekleyeceğiz. &lt;strong&gt;http://www.orneksite.com/&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;**Continue&lt;/strong&gt;basıp ilerleyince karşımıza&lt;strong&gt; Site
+    verification&lt;/strong&gt; **sayfası çıkacak. Sitenin bize ait olup olmadığını
+    kontrol için&lt;/li&gt;
+&lt;li&gt;Burada iki tür doğrulama isteniyor bizden &lt;strong&gt;Meta tag&lt;/strong&gt; ve &lt;strong&gt;HTML
+    file&lt;/strong&gt; diye iki yolumuz var. Ben Meta tag'i seçip ilerliyorum. &lt;/li&gt;
+&lt;li&gt;Site bize bir meta etiketi veriyor. Bu kodu alıp
+    sitemize(\&amp;lt;head&gt;...\&amp;lt;/head&gt; arasına) ekliyoruz. Sadece ana sayfaya
+    eklemek yeterli. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="google-webmaster-tools" src="http://www.fatihhayrioglu.com/wp-content/google-webmaster-tools-300x173.png" title="google-webmaster-tools" /&gt;&lt;/p&gt;
+&lt;p&gt;Sonra sitenin bize ait olduğunu anlayan goole bize sitemizin saldırgan
+site olarak listelendiğini söylüyor ve bundan kurtulmak için bir çare
+gösteriyor. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="badware" src="http://www.fatihhayrioglu.com/wp-content/badware-300x154.png" title="badware" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Request a review&lt;/strong&gt; linkine tıklıyoruz. İşaret kutucuğunu işaretleyip
+metin girdi alanına bir cümlelik bir  durum beyan ediyoruz. &lt;/p&gt;
+&lt;p&gt;Bu işlemlerden sonra google yaklaşık olarak 2-3 saat içinde sitemizi
+saldırgan site listesinden çıkarıyor.&lt;/p&gt;
+&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;http://sites.google.com/site/webmasterhelpforum/en/faq-malware-and-hacked-sites&lt;/li&gt;
+&lt;li&gt;http://www.cogzidel.com/blog/2009/07/malware-affects-your-google-listing-google-webmaster-tools-will-save-you/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</summary><category term="google-web-master-tools"></category><category term="iframe"></category><category term="malware"></category></entry><entry><title>Internet Explorer 8'i 7 gibi yorumlama kodu</title><link href="http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumlama-kodu/" rel="alternate"></link><updated>2009-03-23T16:32:00+01:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-03-23:internet-explorer-8i-7-gibi-yorumlama-kodu/</id><summary type="html">&lt;p&gt;Bildiğiniz gibi Microsoft Internet Explorer 8'i geçen hafta duyurdu.
+Eğer sitelerimiz IE8'e tam olarak uygun değilse sayfamıza bir satırlık
+bir kod ekleyerek bu sorunu çözebiliyoruz. [sourcecode language="html"]
+\&amp;lt;meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /&gt;
+[/sourcecode] Kodunu sitemize eklememiz yeterli. Bu META etiketi
+sayesinde Sayfalarımız Internet Explorer 7'de görünüyor gibi
+yorumlanacaktır. Bir projede meta'ların ilk başına yazınca olmadı,
+\&amp;lt;/head&gt;'in bir öncesine koyunca oldu aklınızda bulunsun.&lt;/p&gt;</summary><category term="ie7"></category><category term="ie8"></category><category term="internet explorer"></category><category term="İnternet Tarayıcısı"></category></entry><entry><title>IE iframe ardalanında beyaz renk sorunu</title><link href="http://www.fatihhayrioglu.com/ie-iframe-ardalaninda-beyaz-renk-sorunu/" rel="alternate"></link><updated>2008-06-24T10:05:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-06-24:ie-iframe-ardalaninda-beyaz-renk-sorunu/</id><summary type="html">&lt;p&gt;Sitelerimizde \&amp;lt;iframe&gt; kullandığımızda Internet Explorer bu \&amp;lt;iframe&gt;
+ardalanını beyaz bir blok şeklinde görüntüleyecektir. Bu Ardalanı beyaz
+olan sitelerde sorun değil ama ardalanında resim veya farklı renk olan
+sitelerde sorun çıkarıyor. Bu durumu engellemek için \&amp;lt;iframe&gt; koduna
+çok basit bir özellik eklemesi yeterli oluyor. [sourcecode
+language="html"] \&amp;lt;iframe allowtransparency="true"&gt;\&amp;lt;/iframe&gt;
+[/sourcecode] Örnek:
+http://samples.msdn.microsoft.com/workshop/samples/author/dhtml/refs/allowTransparency.htm&lt;/p&gt;</summary><category term="allowtransparency"></category><category term="beyaz ardaaln sorunu"></category><category term="iframe"></category><category term="internet explorer"></category><category term="İnternet Tarayıcısı"></category></entry><entry><title>(X)HTML İpuçları - 4</title><link href="http://www.fatihhayrioglu.com/xhtml-ipuclari-4/" rel="alternate"></link><updated>2006-08-03T23:51:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-08-03:xhtml-ipuclari-4/</id><summary type="html">&lt;p&gt;Bazı kullanıcı giriş alanlarında(textbox) daha önceden girilen
+değerlerin hafızada tutulmasını istemeyiz. Örneğin kullanıcı adı vb.
+Bunun için çok kısa bir kod eklememiz yeterlidir.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\&amp;lt;input type="text" autocomplete="off" /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;</summary></entry><entry><title>X(HTML) İpuçları - 3</title><link href="http://www.fatihhayrioglu.com/xhtml-ipuclari-3/" rel="alternate"></link><updated>2006-08-01T23:28:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-08-01:xhtml-ipuclari-3/</id><summary type="html">&lt;p&gt;Bir form ekledik ancak bu formu \&amp;lt;input type="submit" .../&gt; elementi
+ile değil de, resimden linkle formu göndermek için:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\&amp;lt;a href="#" onclick="document.formun_adi.submit(); "&gt;resim\&amp;lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Aynı şekilde silme işlemi için:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\&amp;lt;a href="#" onclick="document.formun_adi.reset(); "&gt;resim\&amp;lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;kullanılabilir.&lt;/p&gt;
+&lt;/p&gt;</summary></entry><entry><title>X(HTML) İpuçları - 2</title><link href="http://www.fatihhayrioglu.com/xhtml-ipuclari-2/" rel="alternate"></link><updated>2006-07-31T21:54:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-07-31:xhtml-ipuclari-2/</id><summary type="html">&lt;p&gt;Bir şeyin karesinin alırken (x)html'de \&amp;lt;sup&gt; etiketi yerine alt+253
+kullanın. Küp için alt+251 tuş kombinasyonlarını kullanarak \&amp;lt;sup&gt; ile
+oluşan satır yüksekliği sorununu halletmiş oluruz.&lt;/p&gt;</summary></entry><entry><title>X(HTML) İpuçları - 1</title><link href="http://www.fatihhayrioglu.com/xhtml-ipuclari-1/" rel="alternate"></link><updated>2006-07-28T22:28:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-07-28:xhtml-ipuclari-1/</id><summary type="html">&lt;p&gt;IE 6.0+'daki image bar 'ı(REsimlerin üzerine gelince sağ üstte çıkan
+bar) kaldırmak için&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\&amp;lt;meta http-equiv="image-toolbar" content="no"&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;eklenmeli, ayrıca her resim için ayrı ayrı atmada yapılabilir.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\&amp;lt;img src="deneme.gif" width="450" height="450" alt="Dene"
+    galleryimg="no" /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;</summary></entry></feed>

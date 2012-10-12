@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - anket</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css-ile-yuzde-cubugu-hazirlama/">CSS ile Yüzde Çubuğu Hazırlama</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2008-11-06T15:26:00">
+                Thu 06 November 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/anket.html">anket</a><a href=".././tag/ardalan.html">ardalan</a><a href=".././tag/css.html">CSS</a><a href=".././tag/teknik.html">teknik</a><a href=".././tag/yuzde-cubugu.html">yüzde-çubuğu</a></p>
+
+
+</footer><!-- /.post-info --><p>Yüzde çubuğuna ben anket yaparken ihtiyaç duydum. CSS ile yüzde çubuğu
+yapmak bize çok büyük kolaylık sağlıyor. Diğer yöntemlere göre daha
+esnek ve kolay bir uygulamaya sahiptir CSS ile yüzde çubuğu hazırlamak.</p>
+<p>CSS ile yüzde çubuğu yapmanın bir kaç yöntemi var, ben kendimce en uygun
+gördüğümü anlatacağım.</p>
+<p>Bu yöntemin uygulaması gayet basittir. Diğer yöntemlerden avantajıda
+fazladan kod kullanılmamasıdır, sadece iki resim ile işimizi
+halledeceğiz. Anlamlı kodlama açısından avantajlıdır.</p>
+<!--more-->
+
+<p>Sayfamıza saydam bir resim ekleriz ve ardalan konumunu kod içinde
+belirleriz</p>
+<p>[sourcecode language="xhtml"]<img alt="%45" src="static/images/yuzde_cubugu.png" /> [/sourcecode]</p>
+<p>Sonrasında CSS kodumuzu yazarsak;</p>
+<p>[sourcecode language='css']img.yuzdeCubugu { background:
+url(/images/yuzdeCubugu_ard.gif) top left no-repeat; padding: 0;
+margin: 0; } [/sourcecode]</p>
+<p>Kod kısmı bu kadar. Evet bu kadar kod ile yüzde çubuğunu oluşturduk.
+Kodun mantığını incelersek;</p>
+<p>Fikir olarak güzel bir düşünceye sahip olan bu kod, saydam orta kısmı
+olan bir resme(bu resim bir bakıma kenar çizgisi görevide görüyor)
+yüzdeyi göstermek için bir ardalan(background) atayarak yüzde çubuğumuzu
+oluşturuyoruz. Bu ardalanın konumunuda, yüzde değerini göstermek için
+kullanıyoruz. Sunucu taraflı bir dil ile  veya Javascript ile bu yüzde
+çubuğundaki değeri belirtmek için ardalan konumunu değiştiririz.
+Ayrıntılı bilgi ve örnek uygulama için
+<a href="http://www.webappers.com/progressBar/" title="yüzde çubuğu demo">http://www.webappers.com/progressBar/</a> tıklıynız.</p>
+<p>Resmin alt özelliğinede yüzde değerini yazdırmak ekran okuyucular için
+ve dolayısıyla erişebilirlik açısından önemli.</p>
+<p>Beraber bir örnek yapalım. Mesela son günlerin en çok konuşulan Amerika
+Seçim Sonuçları için bir sayfa hazırlayalım.</p>
+<p>Resimlerimiz<br />
+<img alt="yüzde çubugu" src="static/images/yuzde_cubugu.gif" /></p>
+<p><img alt="" src="static/images/gosteri1.gif" /></p>
+<p><img alt="" src="static/images/gosteri2.gif" /></p>
+<p>Xhtml kodumuzu yazalım.</p>
+<p>[sourcecode language='html']</p>
+<h1>Amerika Seçim Sonuçları</h1>
+<p>Obama (%56)</p>
+<p><img alt="%56" src="static/yuzde_cubugu.gif" /></p>
+<p>McCain (%44)</p>
+<p><img alt="%44" src="static/yuzde_cubugu.gif" /> [/sourcecode]</p>
+<p>Yüzde çubuğunun genişliğini 100px yaptım ki, ayarlaması kolay olsun.
+Resim genişliğinin 104px görünmesinin nedeni 2px sağdan ve 2px soldan
+kenar çizgilerinin olması.</p>
+<p><strong>Obama %56</strong> yapmak için ardalan konumunu 100-56= 44 resmin solundaki
+2px mesafeyide çıkarınca hesabımız tam olacaktır. Yani ardalan konumu
+100 - 56 - 2 = -42px şeklinde hesaplanacak.</p>
+<p>Aynı şekilde <strong>McCain</strong>'in yüzdesini de hesaplarsak. 100 - 44 - = -54px</p>
+<p>CSS kodumuz;</p>
+<p>[sourcecode language='css'] h1{ font:18px Arial, Helvetica, sans-serif;
+color:#666; } p{ font:bold 12px Arial, Helvetica, sans-serif;
+margin-bottom:5px; color:#666; } img.yuzde1 {
+background:url(gosteri1.gif) 0 0 no-repeat; padding: 0; margin: 0; }
+img.yuzde2 { background:url(gosteri2.gif) 0 0 no-repeat; padding: 0;
+margin: 0; } [/sourcecode]</p>
+<p><img alt="anket sonuç ekranı" src="static/images/anket_sonuc_ekrani.gif" /></p>
+<p>Örnek kod FF3, IE6 - 7, Safari 3, Opera 9.6 ve Google Chrome 0.3Beta
+test edilmiştir.</p>
+<p>Örnek kodu görmek için <a href="static/dokumanlar/yuzde_cubugu.html">tıklayınız.</a></p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://cssglobe.com/post/1468/pure-css-animated-progress-bar">http://cssglobe.com/post/1468/pure-css-animated-progress-bar</a></li>
+<li><a href="http://pootato.org/tutorials/css/css-progress-bar/">http://pootato.org/tutorials/css/css-progress-bar/</a></li>
+<li><a href="http://www.barenakedapp.com/the-design/displaying-percentages">http://www.barenakedapp.com/the-design/displaying-percentages</a></li>
+<li><a href="static">http://www.webappers.com/2007/07/31/webappers-simple-ajax-progress-bar-with-css/</a></li>
+<li>[http://mattberseth.com/blog/2008/07/jqueryui_progressbar_widget.html][]</li>
+<li><a href="http://www.dmry.net/css-ile-basit-bir-ilerleme-durum-cubugu-yapimi">http://www.dmry.net/css-ile-basit-bir-ilerleme-durum-cubugu-yapimi</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webappers</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2007<span class="o">/</span>07<span class="o">/</span>31<span class="o">/</span><span class="n">webappers</span><span class="o">-</span><span class="n">simple</span><span class="o">-</span><span class="n">ajax</span><span class="o">-</span><span class="n">progress</span><span class="o">-</span><span class="n">bar</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mattberseth</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2008<span class="o">/</span>07<span class="o">/</span><span class="n">jqueryui_progressbar_widget</span><span class="p">.</span><span class="n">html</span>
+</pre></div><p>There are <a href=".././css-ile-yuzde-cubugu-hazirlama/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

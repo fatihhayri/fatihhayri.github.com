@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - iframe</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././iframe-virusu-ve-saldirgan-site-damgalamasindan-kurtulmanin-yolu/">iframe virüsü ve Saldırgan Site damgalamasından kurtulmanın yolu</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2009-08-15T22:51:00">
+                Sat 15 August 2009
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/xhtml.html">XHTML</a>. </p>
+<p>tags: <a href=".././tag/google-web-master-tools.html">google-web-master-tools</a><a href=".././tag/iframe.html">iframe</a><a href=".././tag/malware.html">malware</a></p>
+
+
+</footer><!-- /.post-info --><p>Yaklaşık 2-3 haftadır bir çok yerde karşılaştığımız bu sorunun
+kaynağının ne olduğu konusunda bir çok makale okudum. Çözümler okudum
+uygulamalar yaptım sonuç olarak konuyu şöyle özetleyebiliriz.</p>
+<p>Çeşitli yollardan bize musallat olan virüs(aslında pek virüs mantığı ile
+hareket etmiyor.) Sistemimizdeki ftp bilgilerini alıp bu bilgiler
+üzerinden sitelere otomatik olarak bir iframe kodu ekliyor. Genellikle
+index.xxx ve default.xxx isimli dosyalara otomatik olarak eklenen bir
+iframe kodu bu. Eklenen bu iframe kodu bazen boş bir sayfayı açarken
+bazende malware olarak adlandırılan kullanıcının bilgisayarına sızan bir
+virüs yükletmeye çalışıyor. Eklenen bu iframe genelde gizli olarak
+kodlandığı için(visibility:hidden) göremiyoruz.</p>
+<p>![iframe_kodu][]</p>
+<p>Belli bir süre sonra Google siteyi tararken bu kodlamayı görüyor ve
+linki takip edincede siteden virüs yayılmaya çalışıyor diye sitenizi
+Saldırgan Site sınıflandırmasını sokuyor. </p>
+<p><img alt="google-warning" src="http://www.fatihhayrioglu.com/wp-content/google-warning-300x127.jpg" title="google-warning" /></p>
+<p>Saldırgan Site sınıfına giren sitemiz Google Chrome ve Firefox ile
+sitemize açmayan kişilere yukarıdakine benzer bir ekran ile karşılık
+verecektir ve kullanıcılar sitenize erişemeyecektir. </p>
+<p>Peki biz bu işten nasıl kurtulacağız. İlk olarak siteden bu kodları
+arayıp(genelde body etiketi sonrasına eklendiği için bulmak kolay.)
+bulup kaldıracağız. Ayrıca bilgisayarımızı sağlam bir virüs taramasından
+geçirip, tüm ftp şifrelerimizi değiştirmeyi unutmayalım. </p>
+<p>Bir sonraki adım olarak google'un saldırgan site listesinden çıkmak için
+<a href="http://www.google.com/webmasters/tools/" title="Google Webmaster Tools">Google Webmaster Tools</a>'una gireceğiz.</p>
+<p>Siteye girdikten sonra sırası ile(İngilizce seçili olarak girdiğiniz
+farz ederek devam edeceğim. İşlerin hızlı yürümesi için İngilizceyi
+tercih etmenizi öneririm)</p>
+<ul>
+<li><strong>Add Site</strong> deyip sitemizi
+    ekleyeceğiz. <strong>http://www.orneksite.com/</strong></li>
+<li><strong>**Continue</strong>basıp ilerleyince karşımıza<strong> Site
+    verification</strong> **sayfası çıkacak. Sitenin bize ait olup olmadığını
+    kontrol için</li>
+<li>Burada iki tür doğrulama isteniyor bizden <strong>Meta tag</strong> ve <strong>HTML
+    file</strong> diye iki yolumuz var. Ben Meta tag'i seçip ilerliyorum. </li>
+<li>Site bize bir meta etiketi veriyor. Bu kodu alıp
+    sitemize(\&lt;head>...\&lt;/head> arasına) ekliyoruz. Sadece ana sayfaya
+    eklemek yeterli. </li>
+</ul>
+<p><img alt="google-webmaster-tools" src="http://www.fatihhayrioglu.com/wp-content/google-webmaster-tools-300x173.png" title="google-webmaster-tools" /></p>
+<p>Sonra sitenin bize ait olduğunu anlayan goole bize sitemizin saldırgan
+site olarak listelendiğini söylüyor ve bundan kurtulmak için bir çare
+gösteriyor. </p>
+<p><img alt="badware" src="http://www.fatihhayrioglu.com/wp-content/badware-300x154.png" title="badware" /></p>
+<p><strong>Request a review</strong> linkine tıklıyoruz. İşaret kutucuğunu işaretleyip
+metin girdi alanına bir cümlelik bir  durum beyan ediyoruz. </p>
+<p>Bu işlemlerden sonra google yaklaşık olarak 2-3 saat içinde sitemizi
+saldırgan site listesinden çıkarıyor.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li>http://sites.google.com/site/webmasterhelpforum/en/faq-malware-and-hacked-sites</li>
+<li>http://www.cogzidel.com/blog/2009/07/malware-affects-your-google-listing-google-webmaster-tools-will-save-you/</li>
+</ul>
+</p><p>There are <a href=".././iframe-virusu-ve-saldirgan-site-damgalamasindan-kurtulmanin-yolu/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././jquery-ile-iframe-yuksekligini-icerigine-gore-otomatik-ayarlamak/" rel="bookmark"
+                           title="Permalink to Jquery İle IFrame Yüksekliğini İçeriğine Göre Otomatik Ayarlamak">Jquery İle IFrame Yüksekliğini İçeriğine Göre Otomatik Ayarlamak</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2009-05-18T10:31:00">
+                Mon 18 May 2009
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/iframe.html">iframe</a><a href=".././tag/javascript.html">Javascript</a><a href=".././tag/jquery.html">jquery</a><a href=".././tag/jquery-plugin.html">jQuery plugin</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>Ben bu işe başladığımdan beri çerçeve(frame) kullanmak hoşa gitmemiştir.
+Allah'tan ilk çıktığındaki popülaritesini kaybettide rahatladım. Ancak
+yine bazı yerlerde tek çare olarak framset'i olmasada iframe'i kullanmak
+zorunda kalıyoruz.</p>
+<p>Iframe kullanımında en çok yaşanan sorunlardan biridir içeriğin
+yüksekliğine göre iframe yüksekliğinin artması veya azalması. Daha önce
+ben ...</p>
+                <a class="readmore" href=".././jquery-ile-iframe-yuksekligini-icerigine-gore-otomatik-ayarlamak/">read more</a>
+                <p>There are <a href=".././jquery-ile-iframe-yuksekligini-icerigine-gore-otomatik-ayarlamak/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././ie-iframe-ardalaninda-beyaz-renk-sorunu/" rel="bookmark"
+                           title="Permalink to IE iframe ardalanında beyaz renk sorunu">IE iframe ardalanında beyaz renk sorunu</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2008-06-24T10:05:00">
+                Tue 24 June 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/xhtml.html">XHTML</a>. </p>
+<p>tags: <a href=".././tag/allowtransparency.html">allowtransparency</a><a href=".././tag/beyaz-ardaaln-sorunu.html">beyaz ardaaln sorunu</a><a href=".././tag/iframe.html">iframe</a><a href=".././tag/internet-explorer.html">internet explorer</a><a href=".././tag/internet-tarayicisi.html">İnternet Tarayıcısı</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>Sitelerimizde \&lt;iframe> kullandığımızda Internet Explorer bu \&lt;iframe>
+ardalanını beyaz bir blok şeklinde görüntüleyecektir. Bu Ardalanı beyaz
+olan sitelerde sorun değil ama ardalanında resim veya farklı renk olan
+sitelerde sorun çıkarıyor. Bu durumu engellemek için \&lt;iframe> koduna
+çok basit bir özellik eklemesi yeterli oluyor. [sourcecode
+language="html"] \&lt;iframe allowtransparency="true">\&lt;/iframe ...</p>
+                <a class="readmore" href=".././ie-iframe-ardalaninda-beyaz-renk-sorunu/">read more</a>
+                <p>There are <a href=".././ie-iframe-ardalaninda-beyaz-renk-sorunu/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././28-kasim-2007-webden-secme-haberler/" rel="bookmark"
+                           title="Permalink to 28 Kasım 2007 Web'den Seçme Haberler">28 Kasım 2007 Web&#039;den Seçme Haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2007-11-28T17:13:00">
+                Wed 28 November 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/haberler.html">Haberler</a><a href=".././tag/iframe.html">iframe</a><a href=".././tag/masterpage.html">masterpage</a><a href=".././tag/slideshow.html">slideshow</a><a href=".././tag/vsnet.html">vs.net</a></p>
+
+
+</footer><!-- /.post-info -->
+                <ul>
+<li>VS.net 2008 ve .net Framework 3.5 hakkında güzel bir yazı.
+    <a href="http://aspnet.4guysfromrolla.com/articles/112107-1.aspx" title=".net framework 3.5">Bağlantı</a></li>
+<li>IFrame sunucu taraflı(asp.net) kullanmak. <a href="http://www.eggheadcafe.com/tutorials/aspnet/4c4c5f62-678e-4e05-87fd-4477a0d1987c/using-serverside-iframes.aspx" title="Bağlantı">Bağlantı</a></li>
+<li>.net'in şablonları(masterpage) en iyi kullanmayı anlatan bir makale.
+    <a href="http://www.codeproject.com/aspnet/CreatingBetterMasterPage.asp" title="Bağlantı">Bağlantı</a></li>
+<li>En iyi yazı tipi ve satır yüksekliğini seçmeyi anlatan güzel bir
+    makale. <a href="http://www.alistapart.com/articles/howtosizetextincss" title="yazı tipi ve satır yüksekliği">Bağlantı</a></li>
+<li>Çok güzel ve farklı bir resim ...</li></ul>
+                <a class="readmore" href=".././28-kasim-2007-webden-secme-haberler/">read more</a>
+                <p>There are <a href=".././28-kasim-2007-webden-secme-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

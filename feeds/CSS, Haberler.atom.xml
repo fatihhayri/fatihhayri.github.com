@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioglu</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/CSS,%20Haberler.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2011-09-16T22:47:00+02:00</updated><entry><title>CSS3 Esnek Kutu Yerleşimi(Flexible Box Layout)</title><link href="http://www.fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/" rel="alternate"></link><updated>2011-09-16T22:47:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-09-16:css3-esnek-kutu-yerlesimiflexible-box-layout/</id><summary type="html">&lt;p&gt;CSS asıl çıkışını kazanmasında sayfa yerleşimini CSS ile ayarlamaya
+başladığımızda yaptı. CSS3 ile birlikte bize daha avantajlı sayfa
+yerleşimi özellikleri sunmayı gaye edinen W3C bizlere işimiz
+kolaylaştıracak Esnek Kutu Yerleşimi Modülünü sunmaktadır.&lt;/p&gt;
+&lt;p&gt;Sayfa yerleşimini yaparken genelde float/clear veya position
+özelliklerini kullanarak yapıyorduz. Tabloya göre büyük avantajlar
+sağlayan bu yöntemlerden sonra web sayfası kodlamak daha kolay ve zevkli
+bir hal aldı. Detay için&lt;a href="http://www.fatihhayrioglu.com/tablo-mu-div-mi-karmasasina-son-noktayi-html5-koydu/"&gt;Tablo mu? Div mi? Karmaşasına Son Noktayı HTML5
+koydu&lt;/a&gt; yazısını inceleyin.&lt;/p&gt;
+&lt;p&gt;Tabi CSS ile sayfa yerleşimi kodlamanın birçok avantajı var. Bunun
+yanında bazı karışık sayfa yerleşimlerinde ise bizi zorladığı bir
+gerçek. Özellikle esnek yapılı sayfa düzenleri ve dikey eksendeki
+yerleşimlerdeki sorunlarını gören W3C bize bu konuda yardımcı olacak
+yöntemleri üretmeye başladı. Bunlardan bir tanesi Esnek Kutu Yerleşimi
+Modülüdür(EKYM).&lt;/p&gt;
+&lt;p&gt;Esnek Kutu Yerleşimi Modülü kapsayıcı bir eleman içindeki alt
+elemanların yerleşimini sağlamaktadır. Daha önce dikeyde yaşadığımız
+birçok sorunu(dikeyde ortalama ve aksak kolon sorunları gibi)
+gidermemizi sağlıyor. Esnek Kutu Yerleşimi Modülünü bu makalemizde
+inceleyeceğiz.&lt;/p&gt;
+&lt;p&gt;Kapsayıcı elemana tanımlanan display:box özelliği yardımı ile alt
+elemanlara tanımlanan box(box-orient, box-direction, box-pack,
+box-align, box-lines, box-ordinal-group, box-flex ve box-flex-group)
+özellikleri ile sayfa yerleşimimizi çok kolay şekilde yapmamıza olanak
+sağlamaktadır.&lt;/p&gt;
+&lt;p&gt;CSS3 EKYM olarak kısaltacağımız bu özellik bize olanaklarını display:box
+tanımı içerisinde gelen yeni tanımlar ile getirmektedir. Bu yeni 8 tanım
+aşağıdaki gibidir;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;box-orient&lt;/li&gt;
+&lt;li&gt;box-direction&lt;/li&gt;
+&lt;li&gt;box-pack&lt;/li&gt;
+&lt;li&gt;box-align&lt;/li&gt;
+&lt;li&gt;box-lines&lt;/li&gt;
+&lt;li&gt;box-ordinal-group&lt;/li&gt;
+&lt;li&gt;box-flex&lt;/li&gt;
+&lt;li&gt;box-flex-group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;EKYM ilk olarak 2009 yılında standardı oluşturuldu, ancak daha sonra
+yeniden ele alındı ve şu an sonlandırılmak üzeredir. Biz 2009 yılındaki
+standartlaşan özellikleri tanımlayacağız, çünkü tarayıcılar 2009
+yılındaki standartları desteklemektedir ve yeni standartlaşan
+özelliğinde mantık olarak çok büyük farklılığı yok.&lt;/p&gt;
+&lt;h3&gt;display:box&lt;/h3&gt;
+&lt;p&gt;İlk olarak kapsayıcı esnek kutuları çevreleyen eleman &lt;strong&gt;display:box&lt;/strong&gt;
+tanımı yaparak başlıyoruz. Farklı tarayıcılar önek ile birlikte
+desteklemektedir;&lt;/p&gt;
+&lt;p&gt;[css] #esnekKutu{ display: -webkit-box; display: -moz-box; display:
+-ms-box; display: box; } [/css]&lt;/p&gt;
+&lt;p&gt;Tanımı ile kapsayıcı elemanı tanımlıyoruz. Bu tanım ile kapsayıcı eleman
+içersindeki alt elemanların artık esnek yapılı olacağını ve EKYM
+özellikleri alabileceğini belirliyoruz.&lt;/p&gt;
+&lt;p&gt;Çok basit bir şekilde kutularımızı yanyana dizebiliriz mesela&lt;/p&gt;
+&lt;p&gt;[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
+display:-moz-box; display:-ms-box; width:600px; border:1px solid #03C;
+} [/css]
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/4KSzt/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;Kapsayıcı tanımlanan &lt;strong&gt;display:box&lt;/strong&gt; tanımı ile içindeki elemanlar birer
+&lt;strong&gt;inline-block&lt;/strong&gt; eleman gibi davranır ve yanyana sıralanır.&lt;/p&gt;
+&lt;h3&gt;box-orient&lt;/h3&gt;
+&lt;div class="cssozelliktanimi"&gt;
+**Yapısı:** box-orient: \&lt;deger\&gt;  
+**Aldığı Değerler:** horizontal | vertical | inline-axis | block-axis  
+**Başlangıç değeri:** inline-axis  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanlara  
+**Kalıtsallık:** Yok
+
+&lt;/div&gt;
+
+&lt;p&gt;box-orient özelliği ile esnek kapsayıcı eleman içindeki kutuların hangi
+eksende sıralanacağını belirleriz. Yukarıdaki örnekte gördüğümüz gibi
+eğer bir tanım yapılmadı ise ve kapsayıcı eleman genişliği müsait ise
+kutular yatayda yanyana sıralanır.&lt;/p&gt;
+&lt;p&gt;Biz bu durumu değiştirmek için &lt;strong&gt;box-orient&lt;/strong&gt; özelliğini kullanırız. 3
+adet değer alır.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;horizontal:&lt;/strong&gt; Kutular yatay eksende soldan sağa doğru sıralanır.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vertical:&lt;/strong&gt; Kutular dikey eksende yukarıdan aşağıya doğru
+    sıralanır.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;inherit:&lt;/strong&gt; Üst elemanın değerini alır.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bunlardan başka iki değer daha mevcuttur. &lt;strong&gt;inline-axis&lt;/strong&gt; yatayda ve
+&lt;strong&gt;block-axis&lt;/strong&gt; dikeyde sıralamayı sağlar. Bu tanımlar &lt;strong&gt;horizontal&lt;/strong&gt; ve
+&lt;strong&gt;vertical&lt;/strong&gt; gibi davranırlar.&lt;/p&gt;
+&lt;p&gt;[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
+display:-moz-box; box-orient:vertical; -moz-box-orient:vertical;
+-webkit-box-orient:vertical; width:200px; height:600px; border:1px solid
+#03C; } [/css]
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AsVDn/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;box-orient:vertical&lt;/strong&gt; ile esnek kutularımızı dikeyde sıraladık.&lt;/p&gt;
+&lt;h3&gt;box-direction&lt;/h3&gt;
+&lt;div class="cssozelliktanimi"&gt;
+**Yapısı:** box-direction: \&lt;deger\&gt;  
+**Aldığı Değerler:** normal | reverse  
+**Başlangıç değeri:** inline-axis  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanlara  
+**Kalıtsallık:** Yok
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;box-direction&lt;/strong&gt; özelliği kapsayıcı eleman içindeki esnek kutuların
+sıralama yönünü belirler. İki değer alır; normal ve &lt;strong&gt;reverse&lt;/strong&gt;.
+&lt;strong&gt;reverse&lt;/strong&gt; tanımlandığında sıralama yönü normalin tam tersine döner.&lt;/p&gt;
+&lt;p&gt;[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
+display:-moz-box; box-orient:vertical; -moz-box-orient:vertical;
+-webkit-box-orient:vertical; box-direction: reverse; -moz-box-direction:
+reverse; -webkit-box-direction: reverse; width:200px; height:600px;
+border:1px solid #03C; } [/css]
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/S4c44/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;Yukarıdaki örnekte sıralama yukarıdan aşağı &lt;strong&gt;Esnek Kutu1, Esnek Kutu2&lt;/strong&gt;
+ve &lt;strong&gt;Esnek Kutu3&lt;/strong&gt; iken &lt;strong&gt;box-direction: reverse;&lt;/strong&gt; tanımı ile sıralama
+&lt;strong&gt;Esnek Kutu3, Esnek Kutu2&lt;/strong&gt; ve &lt;strong&gt;Esnek Kutu1&lt;/strong&gt; şeklini almıştır.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; &lt;strong&gt;box-orient&lt;/strong&gt; ve &lt;strong&gt;box-direction&lt;/strong&gt; yerine ikisini kapsayan
+&lt;strong&gt;flex-direction&lt;/strong&gt; üzerinde çalışılmaktadır.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;flex-direction lr, rl, tb, bt, inline, inline-reverse, block&lt;/strong&gt; ve
+&lt;strong&gt;block-reverse&lt;/strong&gt; değerlerini alabilecek. sol(left - l), sağ(right - r),
+üst(top - t) ve alt(bottom - b) kısaltmaları kullanılmıştır. CSS3’ün
+birçok özelliği üzerinde halen çalışılan canlı bir yapıdır.
+Değişikliklerin olabileceği dikkate alınmalıdır.&lt;/p&gt;
+&lt;h3&gt;box-pack&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; box-pack: \&amp;lt;deger&gt;&lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; start | end | center | justify&lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; start&lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; display:box ve display:inline-box değeri
+alan elemanlara&lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;box-pack&lt;/strong&gt; özelliği kapsayıcı kutunun içindeki esnek kutuların
+kapsayıcıya göre konumunu belirlemek için kullanılır. Dört adet değer
+alır başlangıç(start), son(end), ortalı(center) ve iki yana
+yasla(justify)&lt;/p&gt;
+&lt;p&gt;Alt elemanların genişliğinin kapsayıcı elemandan küçük olduğu durumlarda
+kalan boşluk alanına göre değerlendirme yapılır.&lt;/p&gt;
+&lt;p&gt;Bu özellik tanımı 2009’da tanımlandı şu an yenileniyor &lt;strong&gt;flex-pack&lt;/strong&gt;
+olarak değişecek. Tarayıcılar destekleyen kadar bu şekilde devam edecek.&lt;/p&gt;
+&lt;p&gt;[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
+display:-moz-box; width:600px; border:1px solid #03C; box-pack:center;
+-webkit-box-pack:center; -moz-box-pack:center; } [/css]
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/MwWcm/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h3&gt;box-align&lt;/h3&gt;
+&lt;div class="cssozelliktanimi"&gt;
+**Yapısı :** box-align: \&lt;deger\&gt;  
+**Aldığı Değerler :** stretch | start | end | center | baseline  
+**Başlangıç değeri:** stretch  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanlara  
+**Kalıtsallık:** Yok
+
+&lt;/div&gt;
+
+&lt;p&gt;Kapsayıcı elemana atanan box-orient değerine göre kalan boşluğa göre
+hizalama yapmak için kullanılır.&lt;/p&gt;
+&lt;p&gt;Beş adet değer alır. &lt;strong&gt;stretch | start | end | center | baseline&lt;/strong&gt;
+Başlangıç değeri &lt;strong&gt;stretch&lt;/strong&gt;’dir; bunun anlamı &lt;strong&gt;box-orient&lt;/strong&gt; değeri
+&lt;strong&gt;horizontal&lt;/strong&gt; ise &lt;strong&gt;stretch&lt;/strong&gt; uygulanan elemanın alt elemanlarının
+yükseklikleri yayılacaktır, eğer &lt;strong&gt;box-orient&lt;/strong&gt; değeri &lt;strong&gt;veritcal&lt;/strong&gt; ise
+genişlikleri yayılacaktır. &lt;strong&gt;start&lt;/strong&gt; ve &lt;strong&gt;end&lt;/strong&gt; değerleri eğer
+horizantal tanımlı ise sol ve sağa yaslayacaktır, &lt;strong&gt;vertical&lt;/strong&gt; tanımlı
+ise üste ve alta yaslayacaktır. &lt;strong&gt;center&lt;/strong&gt; değeri ise ortalayacaktır.&lt;/p&gt;
+&lt;p&gt;[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
+display:-moz-box; width:600px; border:1px solid #03C;
+box-orient:horizantal; -moz-box-orient:horizantal;
+-webkit-box-orient:horizantal; box-align: center; -webkit-box-align:
+center; -moz-box-align: center; } .esnekKutu{ background-color:#999999;
+width:150px; height:150px; margin-right:15px; } [/css]
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ZYz2M/1/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h3&gt;box-lines&lt;/h3&gt;
+&lt;div class="cssozelliktanimi"&gt;
+**Yapısı :** box-lines: \&lt;deger\&gt;  
+**Aldığı Değerler :** single | multiple  
+**Başlangıç değeri:** single  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanlara  
+**Kalıtsallık:** Yok
+
+&lt;/div&gt;
+
+&lt;p&gt;Esnek Kutu Yerleşimi ile yerleştirilen kutular genelde bir eksen
+üzerinde blok halinde hareket eder, &lt;strong&gt;blox-line&lt;/strong&gt; özellik bu elemanların
+alt satıra geçip geçmemesini ayarlar. İki değer alır.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;single:&lt;/strong&gt; Başlangıç değerdir. Bu değeri alan kutular kapsayıcı
+    eleman üzerine taşma yapacaktır. Taşma durumunu kontrol etmek için
+    overflow özelliği kullanılabilir.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;multiple:&lt;/strong&gt; Bu değer alan kutular tek satırda kendini
+    sınırlamayacaklardır ve ikinci satıra inecektir.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Şu anki tarayıcılar bu özelliği henüz desteklemiyor. İE10 desteklediğine
+dair duyumlar var.&lt;/p&gt;
+&lt;p&gt;Yenilenen EKYM standartlarında box-line özelliği görünmüyor. Onun yerine
+benzer etki yapacak &lt;strong&gt;flex-flow&lt;/strong&gt; tanımı gelecek gibi.&lt;/p&gt;
+&lt;h3&gt;box-ordinal-group&lt;/h3&gt;
+&lt;div class="cssozelliktanimi"&gt;
+**Yapısı :** box-ordinal-group: \&lt;deger\&gt;  
+**Aldığı Değerler :** \&lt;sayı\&gt;  
+**Başlangıç değeri:** 1  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanların normal akıştaki alt elemanları  
+**Kalıtsallık:** Yok
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;box-ordinal-group&lt;/strong&gt; özelliği kapsayıcı kutunun içindeki esnek
+kutuların sıralamasını belirlememizi sağlar.&lt;/p&gt;
+&lt;p&gt;[css] #esnekKutu1 { box-ordinal-group: 2; -webkit-box-ordinal-group: 2;
+-moz-box-ordinal-group: 2; background-color:#0CF; } #esnekKutu3 {
+box-ordinal-group: 2; -webkit-box-ordinal-group: 2;
+-moz-box-ordinal-group: 2; background-color:#9C3; } #esnekKutu4 {
+box-ordinal-group: 1; -webkit-box-ordinal-group: 1;
+-moz-box-ordinal-group: 1; background-color:#FC9; } [/css]
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/TaFBM/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;Dört adet kutumuz var. Bunların üç tanesine &lt;strong&gt;box-ordinal-group&lt;/strong&gt; değeri
+tanımladık.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EsnekKutu1&lt;/strong&gt; ve &lt;strong&gt;EsnekKutu3&lt;/strong&gt; için 2 değeri tanımladık bunlar ikinci
+sırada gelecek. &lt;strong&gt;EsnekKutu4&lt;/strong&gt;’e 1 değer tanımladık, buda ilk sırada
+gelecek. &lt;strong&gt;EsnekKutu2&lt;/strong&gt; için bir tanım yapmadık buda başlangıç değeri
+olan 1 değerini almasına neden olacaktır. Buna göre sıralama 2,4,1,3
+şeklinde olacaktır.&lt;/p&gt;
+&lt;p&gt;Bu özellik bize sıralama konusunda tam bir kontrol sağlamaktadır.&lt;/p&gt;
+&lt;p&gt;Yeni EKYM standardında &lt;strong&gt;box-ordinal-group&lt;/strong&gt; yerine &lt;strong&gt;flex-order&lt;/strong&gt;
+özellik ismi kullanılması düşünülmektedir.&lt;/p&gt;
+&lt;h3&gt;box-flex&lt;/h3&gt;
+&lt;div class="cssozelliktanimi"&gt;
+**Yapısı :** box-ordinal-group: \&lt;deger\&gt;  
+**Aldığı Değerler :** \&lt;sayı\&gt;  
+**Başlangıç değeri:** 0  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanların normal akıştaki alt elemanları  
+**Kalıtsallık:** Yok
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;blox-flex&lt;/strong&gt; özelliği tanımlanması durumunda alt elemanların esnek
+davranmasını sağlar. Tanım yapılmadığında ise alt elemanlar esnek olmaz.&lt;/p&gt;
+&lt;p&gt;Hesaplamanın mantığı şöyledir;&lt;/p&gt;
+&lt;p&gt;Gruptaki tüm esnek kutuların &lt;strong&gt;box-flex&lt;/strong&gt; değeri toplanır ve her kutu
+için toplam boşluk genişliği(Kapasayıcı eleman ile kutuların genişliği
+toplamı arasındaki fark) bu sayıya bölünerek elde edilen değer kutu
+genişliğini belirler.&lt;/p&gt;
+&lt;p&gt;[css] #esnekKutuKapsul { background: gray; border: blue; display: box;
+display: -webkit-box; display: -moz-box; display: -ms-box; width:100%; }
+.esnekKutu { background-color:#999999; height:150px; } #esnekKutu1 {
+background-color:#0CF; border: orange solid 1px; box-flex: 2;
+-webkit-box-flex: 2; -moz-box-flex: 2; -ms-box-flex: 2; } #esnekKutu2 {
+background: lightgray; border: red solid 1px; box-flex: 1;
+-webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; } #esnekKutu3 {
+background-color:#9C3; border: red solid 1px; box-flex: 0;
+-webkit-box-flex: 0; -moz-box-flex: 0; -ms-box-flex: 0; } #esnekKutu4 {
+background-color:#FC9; border: red solid 1px; } [/css]
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/h7KAa/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;Daha sabit bir örnek verelim; genişliği 600px olan kapsayıcı eleman ve
+ üç adet 100px’lik kutumuz olsun(Bu durumdan boşluk değeri 300px
+olacaktır), bunların &lt;strong&gt;box-flex&lt;/strong&gt; değerleri 1 olsun, her bir kutunun
+genişliği 200px(100 + 300/3 * 1 = 200) olacaktır. Eğer bu kutulardan
+bir tanesinin &lt;strong&gt;box-flex&lt;/strong&gt; değeri 2 olarak değiştirilirse, değiştirilen
+kutunun genişliği 250px(100 + 300/4 * 2 = 250) olurken diğer iki
+kutunun genişliği 175px(100 + 300/4 * 1 = 175) olacaktır.&lt;/p&gt;
+&lt;p&gt;[css] #esnekKutuKapsul { background: gray; border: blue; display: box;
+display: -webkit-box; display: -moz-box; display: -ms-box; width:600px;
+} .esnekKutu { background-color:#999999; height:150px; width:100px; }
+#esnekKutu1 { background-color:#0CF; box-flex: 2; -webkit-box-flex: 2;
+-moz-box-flex: 2; -ms-box-flex: 2; } #esnekKutu2 { background:
+lightgray; box-flex: 1; -webkit-box-flex: 1; -moz-box-flex: 1;
+-ms-box-flex: 1; } #esnekKutu3 { background-color:#9C3; box-flex: 1;
+-webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; } [/css]
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Dyjq2/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;Eğer kutu genişlikleri toplamı kapsayıcı kutunun genişliğinden büyük ise
+genişlik hesaplamasında benzer birim hesabına göre küçülme olacaktır. 0
+değeri kutunun esnek olmayacağı anlamına gelir.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ie7nomore.com/fun/flexiblenav/"&gt;Raphael Goetter&lt;/a&gt;’ın yaptığı örnek bu işin geleceği hakkında bize
+güzel bir ipucu veriyor. Fantastik örnekler.(Chrome da daha iyi
+gözüküyor)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;box-flex&lt;/strong&gt; özelliği 2009 yılındaki standartlardaki hali idi, yenilenen
+standartlarda &lt;strong&gt;box-flex&lt;/strong&gt; vede &lt;strong&gt;box-flex-group&lt;/strong&gt; özelliklerini
+kapsayan &lt;strong&gt;flex()&lt;/strong&gt; fonksiyonu ile yenilenmektedir.&lt;/p&gt;
+&lt;div class="tarayiciuyum"&gt;
+**Tarayıcı Destekleme Listesi**  
+Firefox 3+ (-moz- öneki ile)  
+Chrome 5+ (-webkit- öneki ile)  
+Safari 3.2+ (-webkit- öneki ile)  
+Opera desteklemiyor  
+İnternet Explorer 10+ (-ms- öneki ile)  
+**Mobil Tarayıcılar**  
+iOS Safari 3.2+ (-webkit- öneki ile)  
+Opera Mini desteklemiyor  
+Opera Mobile destelemiyor  
+Android Browser 2.2+ (-webkit- öneki ile)
+
+&lt;/div&gt;
+
+&lt;h3&gt;Sonuç&lt;/h3&gt;
+&lt;p&gt;Gerek CSS3 ve gerekse EKYM yeni özellikler ve hala gelişmektede olan
+mecralar. Benim burada anlatmak istediğim CSS3’ün en büyük
+yeniliklerinden biri olan sayfa planlamaya yönelim yeniliklerine bir göz
+atmak, mantığını kavramak, geleceğe dair fikir edinmeyi sağlamaktır. Ben
+burada sadece EKYM anlattım, ancak CSS3 ile sayfa planlamaya yönelik
+başka modüllerde geliştirilmekte; &lt;a href="http://www.fatihhayrioglu.com/css3-coklu-kolonlar/"&gt;Çoklu Kolonlar(Multiple Column)&lt;/a&gt;,
+&lt;a href="http://dev.w3.org/csswg/css3-grid-align/"&gt;Izgara Yerleşim Modeli(Grid Layout)&lt;/a&gt;, &lt;a href="http://www.w3.org/TR/css3-layout/"&gt;Şablon Yerleşim
+Modeli(Template Layout Model)&lt;/a&gt;, &lt;a href="http://dev.w3.org/csswg/css3-exclusions/"&gt;CSS Exclusions Module&lt;/a&gt;, &lt;a href="http://dev.w3.org/csswg/css3-regions/"&gt;CSS
+regions Module&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CSS3 ile sayfa yerleşimi daha kolay olacağı kesin, bu konuda bir çok
+modül üzerinde çalışma bitmek üzere veya bitmiş bulunmakta. Gelecekte
+daha güzel şeyler olacağı kesin.&lt;/p&gt;
+&lt;p&gt;Yukarıda özelliklerin nasıl kullanıldığını göstermek için daha basit
+örneklerler verdik, daha karmaşık örneklerde yapılabilir
+&lt;a href="http://oli.jp/2011/css3-flexbox/"&gt;http://oli.jp/2011/css3-flexbox/&lt;/a&gt; sitesindeki örnekler incelenebilir.
+ &lt;/p&gt;
+&lt;p&gt;Kalın sağlıcakla&lt;/p&gt;
+&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.html5rocks.com/en/tutorials/flexbox/quick/"&gt;http://www.html5rocks.com/en/tutorials/flexbox/quick/&lt;/a&gt; (güzel)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.css3.info/introducing-the-flexible-box-layout-module/"&gt;http://www.css3.info/introducing-the-flexible-box-layout-module/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-flexbox/"&gt;http://www.w3.org/TR/css3-flexbox/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dev.w3.org/csswg/css3-flexbox/"&gt;http://dev.w3.org/csswg/css3-flexbox/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://robertnyman.com/2010/12/02/css3-flexible-box-layout-module-aka-flex-box-introduction-and-demostest-cases/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[http://www.456bereastreet.com/archive/201103/the_css3_flexible_box_layout_flexbox/][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://hacks.mozilla.org/2010/04/the-css-3-flexible-box-model/"&gt;http://hacks.mozilla.org/2010/04/the-css-3-flexible-box-model/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.the-haystack.com/2010/01/23/css3-flexbox-part-1/"&gt;http://www.the-haystack.com/2010/01/23/css3-flexbox-part-1/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ie.microsoft.com/testdrive/html5/flexin/default.html"&gt;http://ie.microsoft.com/testdrive/html5/flexin/default.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://htmlrockstars.com/blog/the-flexible-box-layout-module-css3/"&gt;http://htmlrockstars.com/blog/the-flexible-box-layout-module-css3/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://blog.w3conversions.com/2011/02/css3-flexible-box-model-layout-coolness-also-oddities-confusion/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.netmagazine.com/tutorials/css3-flexible-box-model-explained&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://adactio.com/journal/4778/"&gt;http://adactio.com/journal/4778/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.vanseodesign.com/css/flexbox/"&gt;http://www.vanseodesign.com/css/flexbox/&lt;/a&gt; (güzel)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://oli.jp/2011/css3-flexbox/"&gt;http://oli.jp/2011/css3-flexbox/&lt;/a&gt; (karmaşık yerleşim uygulamalı)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.isotoma.com/2010/08/css3-flexbox/"&gt;http://blog.isotoma.com/2010/08/css3-flexbox/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[http://www.w3schools.com/css3/css3_reference.asp#box][]&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://portfo.li/madebyted/477862-css3-flexible-box-layout-module-aka-flex-box-introduction-and-demos-test-cases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ontwik.com/css/css-3-the-flexible-box-model/"&gt;http://ontwik.com/css/css-3-the-flexible-box-model/&lt;/a&gt; (video)&lt;/li&gt;
+&lt;li&gt;[http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox][]
+    (güzel)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://caniuse.com/flexbox"&gt;http://caniuse.com/flexbox&lt;/a&gt; (tarayıcı desteği)&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;robertnyman&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2010&lt;span class="o"&gt;/&lt;/span&gt;12&lt;span class="o"&gt;/&lt;/span&gt;02&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flexible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;layout&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;module&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;aka&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flex&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;introduction&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;demostest&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cases&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;456&lt;span class="n"&gt;bereastreet&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;201103&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;the_css3_flexible_box_layout_flexbox&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;w3conversions&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2011&lt;span class="o"&gt;/&lt;/span&gt;02&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flexible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;model&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;layout&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;coolness&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;also&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;oddities&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;confusion&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;netmagazine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tutorials&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flexible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;model&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;explained&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;portfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;li&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;madebyted&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;477862&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;css3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flexible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;layout&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;module&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;aka&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flex&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;introduction&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;demos&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;test&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cases&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;coding&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;smashingmagazine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2011&lt;span class="o"&gt;/&lt;/span&gt;09&lt;span class="o"&gt;/&lt;/span&gt;19&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flexible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;layout&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;explained&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="box-align"></category><category term="box-direction"></category><category term="box-flex"></category><category term="box-flex-group"></category><category term="box-lines"></category><category term="box-ordinal-group"></category><category term="box-orient"></category><category term="box-pack"></category><category term="css3"></category></entry><entry><title>Bir Projenin Bana Kazandırdıkları (LiveGO.com)</title><link href="http://www.fatihhayrioglu.com/bir-projenin-bana-kazandirdiklari-livegocom/" rel="alternate"></link><updated>2010-12-27T21:47:00+01:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-12-27:bir-projenin-bana-kazandirdiklari-livegocom/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/liveGO_white_72dpi_300px.jpg" title="liveGO_white_72dpi_300px" /&gt;][]Daha önce çalıştığım ajanslarda yaptığım işlerin bu günlüğü
+oluşturmamda bir yardımı oldu. Her projede bir şeyler öğrendim ve
+öğrendiklerimi bu günlük ile sizlere aktarmaya çalıştım. Tüm ayrıntıları
+olmasada aklımda kalanları sizlere aktarmaya çalıştım ve aktarmaya da
+devam edeceğim, Allah bize imkan verdikçe.&lt;/p&gt;
+&lt;p&gt;Bir çoğunuz biliyordur ama ben bilmeyenler için hatırlatayım yaklaşık 9
+aydır öncesinde &lt;a href="http://messengerfx.com"&gt;messengerfx.com&lt;/a&gt; ve şimdiki adı ile
+&lt;a href="http://www.livego.com"&gt;www.livego.com&lt;/a&gt;’da çalışmaktayım. Bu proje sürecinde bir çok şey
+öğrendim ve öğrenmeyede devam etmeyede devam ediyorum. Bu proje dünya
+çapında olması ve farklı yapısı ile diğer projelerde öğrendiklerimden
+çok fazlasını bana öğretti. Ajansta çalışırken bir çok proje ile
+uğraşıyordum burada 9 aydır bir proje ile uğraşıyorum, ancak şöyle bir
+şey var ki ajansta 2 senede öğrenebileceğim(bazı bilgileri ajansta
+öğrenme ihtimalide yok) bilgiyi burada 9 ayda öğrendim diyebilirim.&lt;/p&gt;
+&lt;p&gt;Arayüz geliştiricileri olarak devamlı kendimizi geliştirmek durumundayız
+bu sadece bizim çabamızla olacak bir şey değil, kendimiz geliştirmek
+için bize bu olanaklarında sağlanması lazım. Ajanslar bu bakımda çok
+önemli bir kilometre taşıdır, neredeyse her ay 1-2 proje elinize geçer
+ve 2-3 ya içinde bitirmeniz istenir. Bu bize hem öğrenme fırsatı verir
+ve hemde kendimiz geliştirme imkanı verir. Ayrıca benzer işleri yapsakta
+aynı işleri yapa yapa bir bakıma elimizi hızlandırmış oluruz. Bu nedenle
+burada naçizane bir tavsiyem var eğer bu meslekte bir yerlere gelebilmek
+ve bir şeyler öğrenmek istiyorsanız en az çalışma hayatınızın belli bir
+bölümünü belli bir seviyenin üstündeki ajanslarda geçirmeyi planlayın ve
+bunun için uğraşın. Niye belli bir seviyenin üstünde diyorum, çünkü
+kendinizi geliştirmenizde sadece ajansların değil çalıştığınız
+şirketlerinde çok büyük katkısı vardır. Mesela çatladıkapıspor’un
+sitesini yapmak ile, büyük bir bankanın sitesini yapmak arasında dağlar
+kadar fark vardır. Müşterini büyük olması isteklerin büyük olmasıdır ve
+sizin portföyünüz içinde büyük bir kazanım olacaktır.&lt;/p&gt;
+&lt;p&gt;Gelgelim benim LiveGO.com ile yaşadıklarıma, baştada dediğim gibi farklı
+ve geniş çaplı bir olması LiveGO.com’un bana çok şey öğretti ve
+öğretmeyede devam ediyor. Öğrendiklerimin belli bir kısmını sizlere
+aktardım ve aktaracağım yazılarımda var. Aktardıklarımın listesi;(Bir
+çoğunda örnekleri farklı yerden vermek durumunda idim. Çünkü proje daha
+yayında değildi. Hem örnekleri daha basit vermek anlaşılırlığı
+arttırıyor)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/css-ile-metinlere-golge-vermek/"&gt;CSS ile metinlere gölge vermek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie-kalitsal-margin-sorunu-form-elementleri-ve-haslayout/"&gt;İE kalıtsal margin sorunu: form elementleri ve hasLayout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie67da-postionrelative-uygulanmis-elemanlarda-z-index-sorunu/"&gt;ie6/7′da postion:relative Uygulanmış Elemanlarda z-index Sorunu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie6-sorunu-baglanti-ici-elemanlarda-hover-sorunu/"&gt;İE6 sorunu: Bağlantı içi elemanlarda hover sorunu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/css-secicilerinin-optimizasyonu/"&gt;CSS Seçicilerinin Optimizasyonu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/iede-liste-elemanlari-arasindaki-bosluk-sorunu/"&gt;IE’de Liste elemanları arasındaki boşluk sorunu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[CSS İpucu 28: FireBug yardımı ile daha kolay CSS Sprite
+    Uygulamak][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/"&gt;Kutulara Gölge Vermek (box-shadow)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/overflow-ve-positionrelative-kullaniminda-ie-sorunu/"&gt;overflow ve position:relative kullanımında ie sorunu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/jquery-ipuclari-3/"&gt;jQuery ipuçları – 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/displayinline-elemanlar-arasindaki-dogal-bosluklar/"&gt;display:inline elemanlar arasındaki doğal boşluklar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutularborder-radius-olusturmak/"&gt;Yuvarlak kenarlı kutular(border-radius) oluşturmak&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Float:left ve Text-align:right Atanmş Elemana Metin Yerine Resim
+    Uygulama][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/cift-cizgili-ayrac-kullanimi/"&gt;Çift çizgili ayraç kullanımı&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/"&gt;Önden Resimleri(Preloading images) Yükleme Yöntemleri&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[CSS İpucu 27: Chrome ve Safari’de textarea genişletme işlevini
+    kaldırma][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie6-ve-ie7de-baglantilardaki-cursor-sorunu/"&gt;IE6 ve IE7′de bağlantılardaki cursor sorunu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/iede-textareada-enter-calismiyor/"&gt;IE’de Textarea’da Enter çalışmıyor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/resim-kullanmadan-1-piksellik-yuvarlak-kenarli-kutu-olusturmak/"&gt;Resim Kullanmadan 1 piksellik Yuvarlak Kenarlı Kutu Oluşturmak&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/jquery-ipuclari-4/"&gt;jquery ipuçları – 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tabi daha yayınlama imkanı bulamadıklarımda var; zamanım olursa
+aşağıdaki konularıda yazmaya çalışacağım.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web Sitelerimizi iPad’e Uyarlamak&lt;/li&gt;
+&lt;li&gt;CSS ile iphone, ipad, desktop ve iphone4 ayrımını sağlamak&lt;/li&gt;
+&lt;li&gt;FireBug Javascript Sekmesine Göz atalım&lt;/li&gt;
+&lt;li&gt;CSS Sprite Tekniği&lt;/li&gt;
+&lt;li&gt;Aksak Kolon ve Çözümleri&lt;/li&gt;
+&lt;li&gt;Input Prompt&lt;/li&gt;
+&lt;li&gt;Livego’yu kodlamak 1 - 2 - 3 - 4 - 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ve de daha yazacağım belki 10’larca makale daha. Başta dediğim gibi
+bende öğreniyorum sizlerle paylaşıyorum hepimiz öğreniyoruz.&lt;/p&gt;
+&lt;p&gt;Bu projede öğrendiklerim bu kadarmı, değil tabi daha fazlası var ama
+benim not tuttuklarım bu kadarı.&lt;/p&gt;
+&lt;p&gt;Tanıdığım ve bildiğim bir çok arkadaşım var bu sektörde çalışan her biri
+yaptıkları projelerden 3-5 bişey akatrsalar ne güzel olur. Memleketteki
+bilgi eksikliği giderilmiş olur. Lütfen bunu bir ukalalık olarak
+algılamayın, amacım belki Türkçe içeriğin çoğalması için bir çağrı.
+Tanımıyorum ve biliyorum gerçekten çok iyi bilgiye sahip insanlar var
+Türkiye’de umarım onlarda bilgilerini bizlerle paylaşırlar.&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/liveGO_white_72dpi_300px.jpg" title="liveGO_white_72dpi_300px" /&gt;]: http://www.fatihhayrioglu.com/wp-content/liveGO_white_72dpi_300px.jpg
+  [Float:left ve Text-align:right Atanmş Elemana Metin Yerine Resim
+  Uygulama]: http://www.fatihhayrioglu.com/floatleft-ve-text-alignright-atanms-elemana-metin-yerine-resim-uygulama/
+  [CSS İpucu 27: Chrome ve Safari’de textarea genişletme işlevini
+  kaldırma]: http://www.fatihhayrioglu.com/css-ipucu-27-chrome-ve-safaride-textarea-genisletme-islevini-kaldirma/&lt;/p&gt;</summary><category term="CSS"></category><category term="livego.com"></category><category term="makale yazmak"></category><category term="proje"></category></entry><entry><title>İnternet Explorer 8'in CSS Desteği</title><link href="http://www.fatihhayrioglu.com/internet-explorer-8in-css-destegi/" rel="alternate"></link><updated>2010-03-31T22:50:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-31:internet-explorer-8in-css-destegi/</id><summary type="html">&lt;p&gt;Biraz geç kalmış bir yazı olacak, ancak İnternet Explorer 8 çıktığından
+beri ilk defa birinciliği Firefox'dan aldı. Bende bu makaleyi yazmaya
+gerek duydum. Açıkçası İnternet Explorer 8'e ilgisiz kaldık. İnternet
+Explorer 6 ile o kadar uğraştık ki serinin 8. sürümü biraz atıl kaldı.&lt;/p&gt;
+&lt;p&gt;İnternet Explorer 8 yayıldıkça sorunları ortay çıkmaya başladı, yani
+test potamıza girmeye başladı. &lt;a href="http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/" title="Her ne kadar uyumluluk kodu ile İnternet Explorer"&gt;Her ne kadar uyumluluk kodu ile İnternet
+Explorer&lt;/a&gt; 7 gibi yorumlamasını sağlayıp test tarayıcı sayısını bire
+düşürme imkanımız olsada yeniliklerinden yararlanmak için bu kodu
+kullanmamak gerekebilir. Ayrıca makaleyi geç yazmamızın bir avantajı
+oldu o da ie8 sorunlarınıda görmeye başladık. &lt;/p&gt;
+&lt;p&gt;İnternet Explorer 8 ile birlikte CSS2.1 standartlarını tam
+desteklediğini açıkladı.&lt;/p&gt;
+&lt;p&gt;İnternet Explorer 8 ile gelen CSS özellikleri listesi;&lt;!--more--&gt;&lt;/p&gt;
+&lt;h3&gt;Float&lt;/h3&gt;
+&lt;p&gt;Float uygulamalarındaki &lt;a href="http://haslayout.net/" title="hasLayout"&gt;hasLayout&lt;/a&gt;'dan kaynaklanan bir çok sorunun
+giderildiği söyleniyor. İşin aslı hasLayout işleyişi tamamen kaldırılmış
+ie8'de. Bu sürümdeki en büyük gelişme budur.&lt;/p&gt;
+&lt;h3&gt;Margin Çökme Sorunu&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/kenar-boslugumargin-cokmesi/" title="Margin çökme"&gt;Margin çökme&lt;/a&gt; sorunu giderilmiş.&lt;/p&gt;
+&lt;h3&gt;:focus Sözde Sınıfı&lt;/h3&gt;
+&lt;p&gt;Klavyeden elementlere odaklanmamızı sağlayan ve erişebilirlik için
+önemli olan bu özellik İnternet Exploerer 8 ile geldi&lt;/p&gt;
+&lt;p&gt;[sourcecode language="css"] a:focus { border: solid 1px red; }
+[/sourcecode]&lt;/p&gt;
+&lt;h3&gt;:before and :after Sözde Elementleri&lt;/h3&gt;
+&lt;p&gt;Bir elemanın öncesine ve sonrasına &lt;strong&gt;content&lt;/strong&gt; özelliği ile birlikte
+içerik eklememizi sağlayan bu özellik ie8 ile birlikte geldi.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="css"] #box:before { content: "Not:"; }
+#box:after { content: "son"; } [/sourcecode]&lt;/p&gt;
+&lt;h3&gt;:lang() Sözde sınıfı&lt;/h3&gt;
+&lt;p&gt;Sayfa içeriğinde farklı dilde kullanılan içeriği yakalamak için
+kullanılan bir seçicidir.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="css"] :lang(fr) { tanimlar } [/sourcecode]&lt;/p&gt;
+&lt;h3&gt;:active Sözde sınıfı işlevselliği arttı&lt;/h3&gt;
+&lt;p&gt;Eskiden sadece a bağlantıya verilen özellikleri tanımlayan ie8 şimdi tüm
+HTML elementlerini kapsıyor artık.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;list-style-type Özelliğine ek değerler eklenmiş&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;list-style-type özelliğinin bir çok değeri var. İnternet Explorer 8
+öncesi bunların yarısını destekliyordu 8 ile birlikte hepsini
+destekliyor.&lt;/p&gt;
+&lt;h3&gt;content özellikleri destekliyor&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://reference.sitepoint.com/css/content" title="content"&gt;content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://reference.sitepoint.com/css/counter-increment" title="counter-increment"&gt;counter-increment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://reference.sitepoint.com/css/counter-reset" title="counter-reset"&gt;counter-reset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://reference.sitepoint.com/css/quotes" title="quotes"&gt;quotes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:after, :before sözde seçicileri ile birlikte content özelliklerini
+destekliyor artık ie8&lt;/p&gt;
+&lt;h3&gt;Tablo Özelliklerinin tamamını destekliyor artık&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/tablo-ozellikleri/" title="caption-side"&gt;caption-side&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/tablo-ozellikleri/" title="border-spacing"&gt;border-spacing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;özelliklerini destekliyor. Ayrıca&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/tablo-ozellikleri/" title="border-collapse"&gt;border-collapse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/tablo-ozellikleri/" title="border-style"&gt;border-style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/tablo-ozellikleri/" title="empty-cells"&gt;empty-cells&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;özelliklerinide tam destekliyor, yani bu özelliklerin tüm değerlerini
+destekliyor. Eskiden kısmen desteklediği bu özellikleri şimdi tammen
+destekliyor.&lt;/p&gt;
+&lt;h3&gt;Yazı ve Metin Özellikleri&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/font-ozellikleri/" title="font-weight"&gt;font-weight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/css-siniflandirma-liste-ozellikleri/" title="white-space"&gt;white-space&lt;/a&gt; (pre-wrap ve pre-line değerleri destekleniyor)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/cssde-metintext-ozellikleri/" title="word-spacing"&gt;word-spacing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ayrıca &lt;strong&gt;text-decoration&lt;/strong&gt; özelliğinin &lt;strong&gt;overline&lt;/strong&gt; değeride
+destekleniyor.&lt;/p&gt;
+&lt;h3&gt;Yazdırma Özellikleri&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://reference.sitepoint.com/css/pagedmedia" title="@page"&gt;@page&lt;/a&gt; özellikleri tam olarak destekleniyor.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://reference.sitepoint.com/css/page-break-inside" title="page-break-inside"&gt;page-break-inside&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://reference.sitepoint.com/css/widows" title="widows"&gt;widows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://reference.sitepoint.com/css/orphans" title="orphans"&gt;orphans&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Dış Hat çizgisi(Outline) Özellikleri&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/" title="Dış hat çizgisi özellikleri"&gt;Dış hat çizgisi özellikleri&lt;/a&gt; desteği geldi.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/" title="outline"&gt;outline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/" title="outline-color"&gt;outline-color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/" title="outline-style"&gt;outline-style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/" title="outline-width"&gt;outline-width&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Data URI Desteği&lt;/h3&gt;
+&lt;p&gt;Internet Explorer 8 ile birlikte DATA URI desteği geliyor. DATA URI
+kısaca html dosyasından ayrı yapıların yani resimlerin html içine gömme
+imkanı verir bize. internet Explorer 8 sadece css dosyalarına
+eklenmesine izin veriyor ayrıca bir kısıtlama var ie8 en fazla 32kb
+boyutuna kadar destekliyor.&lt;/p&gt;
+&lt;h3&gt;Özel uzantılar ile yeni özellik desteği&lt;/h3&gt;
+&lt;p&gt;Firefox, webkit ve Opera'dan sonra Microsoft'da özel uzantılar ile yeni
+özellik desteğini getirdi. Aşağıda özellikler listelendi;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530713%28v=VS.85%29.aspx"&gt;-ms-accelerator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530719%28v=VS.85%29.aspx"&gt;-ms-background-position-x&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530720%28v=VS.85%29.aspx"&gt;-ms-background-position-y&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530723%28v=VS.85%29.aspx"&gt;-ms-behavior&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530752%28v=VS.85%29.aspx"&gt;-ms-filter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530767%28v=VS.85%29.aspx"&gt;-ms-ime-mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530770%28v=VS.85%29.aspx"&gt;-ms-layout-flow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530771%28v=VS.85%29.aspx"&gt;-ms-layout-grid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530772%28v=VS.85%29.aspx"&gt;-ms-layout-grid-char&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530773%28v=VS.85%29.aspx"&gt;-ms-layout-grid-line&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530774%28v=VS.85%29.aspx"&gt;-ms-layout-grid-mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530775%28v=VS.85%29.aspx"&gt;-ms-layout-grid-type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530826%28v=VS.85%29.aspx"&gt;-ms-overflow-x&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms530829%28v=VS.85%29.aspx"&gt;-ms-overflow-y&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531153%28v=VS.85%29.aspx"&gt;-ms-scrollbar-3dlight-color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531154%28v=VS.85%29.aspx"&gt;-ms-scrollbar-arrow-color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531155%28v=VS.85%29.aspx"&gt;-ms-scrollbar-base-color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531156%28v=VS.85%29.aspx"&gt;-ms-scrollbar-darkshadow-color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531157%28v=VS.85%29.aspx"&gt;-ms-scrollbar-face-color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531158%28v=VS.85%29.aspx"&gt;-ms-scrollbar-highlight-color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531159%28v=VS.85%29.aspx"&gt;-ms-scrollbar-shadow-color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531160%28v=VS.85%29.aspx"&gt;-ms-scrollbar-track-color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531163%28v=VS.85%29.aspx"&gt;-ms-text-align-last&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531164%28v=VS.85%29.aspx"&gt;-ms-text-autospace&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531172%28v=VS.85%29.aspx"&gt;-ms-text-justify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531173%28v=VS.85%29.aspx"&gt;-ms-text-kashida-space&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531174%28v=VS.85%29.aspx"&gt;-ms-text-overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531176%28v=VS.85%29.aspx"&gt;-ms-text-underline-position&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531184%28v=VS.85%29.aspx"&gt;-ms-word-break&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531186%28v=VS.85%29.aspx"&gt;-ms-word-wrap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531187%28v=VS.85%29.aspx"&gt;-ms-writing-mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms531189%28v=VS.85%29.aspx"&gt;-ms-zoom&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Sonuç&lt;/h3&gt;
+&lt;p&gt;Tüm bu özellikleri sıraladıktan sonra beni sevindiren üç özellik var.
+Birincisi hasLayout'un kaldırılması, ikincisi DATA URI desteğinin
+gelmesi ve display:inline-block özelliğinin tam desteğidir.&lt;/p&gt;
+&lt;p&gt;Ayrıca ie8 sorunları hakkında bilgi edinmek isteyenler kaynaklar
+kısmında hata linklerinden gerekli bilgiyi alabilirler. Ben sorunlarla
+karşılaştıkça sitemde yayınlayacağım hataları.&lt;/p&gt;
+&lt;p&gt;Hoşçakalın.&lt;/p&gt;
+&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx" title="http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx"&gt;http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.howtocreate.co.uk/ie8.html" title="http://www.howtocreate.co.uk/ie8.html"&gt;http://www.howtocreate.co.uk/ie8.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://reference.sitepoint.com/css" title="http://reference.sitepoint.com/css"&gt;http://reference.sitepoint.com/css&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.evotech.net/blog/2009/03/ie8-css-support/" title="http://www.evotech.net/blog/2009/03/ie8-css-support/"&gt;http://www.evotech.net/blog/2009/03/ie8-css-support/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[http://css-discuss.incutio.com/wiki/IE8#CSS3_selectors][] (ie8
+    sorunları)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jhop.me/ie8-bugs" title="http://jhop.me/ie8-bugs"&gt;http://jhop.me/ie8-bugs&lt;/a&gt; (ie8 hataları)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.gtalbot.org/BrowserBugsSection/" title="http://www.gtalbot.org/BrowserBugsSection/"&gt;http://www.gtalbot.org/BrowserBugsSection/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://techblog.procurios.nl/k/news/view/33224/14863/Testing-Internet-Explorer-8-CSS3-for-Web-Design.html&lt;/a&gt;
+    (CSS3 desteği)&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;smashingmagazine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2009&lt;span class="o"&gt;/&lt;/span&gt;10&lt;span class="o"&gt;/&lt;/span&gt;14&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;differences&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;internet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;explorer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;6&lt;span class="o"&gt;-&lt;/span&gt;7&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;8&lt;span class="o"&gt;/&lt;/span&gt;
+&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;smashingmagazine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2009&lt;span class="o"&gt;/&lt;/span&gt;10&lt;span class="o"&gt;/&lt;/span&gt;14&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;differences&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;internet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;explorer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;6&lt;span class="o"&gt;-&lt;/span&gt;7&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;8&lt;span class="o"&gt;/&lt;/span&gt;&amp;quot;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;techblog&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;procurios&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nl&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;news&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;33224&lt;span class="o"&gt;/&lt;/span&gt;14863&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Testing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Internet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Explorer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;8&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;CSS3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Web&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Design&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;techblog&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;procurios&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nl&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;news&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;33224&lt;span class="o"&gt;/&lt;/span&gt;14863&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Testing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Internet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Explorer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;8&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;CSS3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Web&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Design&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term=":active"></category><category term=":after"></category><category term=":before"></category><category term="content"></category><category term="Data URI"></category><category term="display:inline-block"></category><category term="focus"></category><category term="hasLayout"></category><category term="ie8"></category><category term="outline"></category></entry><entry><title>Fatih Hayrioğlu'nun not defteri - 2009</title><link href="http://www.fatihhayrioglu.com/fatih-hayrioglunun-not-defteri-2009/" rel="alternate"></link><updated>2010-01-02T18:02:00+01:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-01-02:fatih-hayrioglunun-not-defteri-2009/</id><summary type="html">&lt;p&gt;Geçen seneyi değerlendirirsem. Genel manada pek verimli bir sene olmadı.
+Çok fazla makale yayımlayamadım. Umarım 2010 daha iyi geçer. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ocak&lt;/strong&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/kuleli-1919-seref-tipi/" title="Kuleli 1919 – Şeref Tipi"&gt;Kuleli 1919 – Şeref Tipi&lt;/a&gt; Senenin ilk yazısı bir hatıra kitabı.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/sifr-flash-palyer10-ve-firefox-sorunu/" title="sIFR, Flash Player10 ve Firefox sorunu"&gt;sIFR, Flash Player10 ve Firefox sorunu&lt;/a&gt; Sorunlarla daha ilk
+    günlerden boğuşmaya başlamışız.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/operasyon-ergenekon-samil-tayyar/" title="Operasyon Ergenekon – Şamil Tayyar"&gt;Operasyon Ergenekon – Şamil Tayyar&lt;/a&gt; Şimdi anlıyorum ki eskiden
+    daha çok kitap okuyormuşum.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/wordpress-27ye-gectikten-sonraki-sorunlarim-1/" title="WordPress 2.7′ye geçtikten sonraki sorunlarım – 1"&gt;WordPress 2.7′ye geçtikten sonraki sorunlarım – 1&lt;/a&gt; En çok sorun
+    yaşadığım sürümlerden birisi idi 2.7&lt;/li&gt;
+&lt;li&gt;[Windows Vista / Windows Defender Güncellemesindeki Sorunu ve
+    Çözümü][] 2009 sorunlarla başlamış, orası kesin.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Şubat &lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/sah-i-cihan-fatih-sultan-mehmed-han-ahmet-coskun/" title="Şâh-ı Cihan Fatih Sultan Mehmed Han – Ahmet Çoşkun"&gt;Şâh-ı Cihan Fatih Sultan Mehmed Han – Ahmet Çoşkun&lt;/a&gt; Tarih
+    kitapları ile devam ediyor süreç.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu-ipuclari/" title="Float Uygulanmış Elementleri Tam Kapsayamama Sorunu İpuçları"&gt;Float Uygulanmış Elementleri Tam Kapsayamama Sorunu İpuçları&lt;/a&gt; Bir
+    çok projede defalarca karşılaştığımız float uygulanmış nesnelerin
+    kapsayamama sorunu için ipuçları.&lt;/li&gt;
+&lt;li&gt;[CSS İpucu 18: Optimizasyon İçin CSS Medya Dosyalarını
+    Birleştirmek][] Daha önceleri projemizde farklı bölümler için farklı
+    css dosyaları kullanmayı önerir iken sonradan fazla dosya çağırmanın
+    optimizasyon bakımından dezavantajlı olduğunu öğrendik.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/tum-tarayicilar-icin-css-ile-saydamlik-opacity/" title="CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)"&gt;CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)&lt;/a&gt;
+    Ard arda ipuçları. saydamlık için css tanımları.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Mart&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/basit-resimli-menu-yapmak/" title="Basit Resimli Menü Yapmak"&gt;Basit Resimli Menü Yapmak&lt;/a&gt; Ardalan kaydırma yöntemi ile menü
+    oluşturmayı daha önce anlatmıştım ancak çoğu insana o anlatım
+    karmaşık geldi. Bende daha basit nasıl anlatırım diyerek bu yazıyı
+    yazmıştım.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/" title="Internet Explorer 8′in Nihai Sürümü Çıktı"&gt;Internet Explorer 8'in Nihai Sürümü Çıktı&lt;/a&gt; O zaman yazmışım bu
+    tarayıcının yetersiz olduğunu. İE9 seslerinin çıktı bu günlerde daha
+    iyi anlıyoruz durumu.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/" title="Internet Explorer 8'i 7 gibi yorumlama kodu"&gt;Internet Explorer 8'i 7 gibi yorumlama kodu&lt;/a&gt; İE8'in bize
+    kaznadırdığı en güzel özelliklerden birisi bu galiba. Sen 7 gibi
+    yorumla.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/rss-adresimi-googlea-tasidim/" title="RSS Adresimi Google'a Taşıdım"&gt;RSS Adresimi Google'a Taşıdım&lt;/a&gt; Google'un feedburner'ı almasından
+    sonraki bir değişiklik. Ben google'dan bu aracı daha da
+    geliştirmesini beklerdim ama çok atıl kaldı bence.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/futbol-ve-kuresellesme-pascal-boniface/" title="Futbol ve Küreselleşme – Pascal Boniface"&gt;Futbol ve Küreselleşme – Pascal Boniface&lt;/a&gt; Seyretmek için çok
+    zmana harcasamda hakkında pek kitap okumadığımı bir kez daha gördüm.
+    Futbol hakkında okuduğum ilk ve tek kitap. Şimdilik&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Nisan&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/tablo-satirina-verilen-ardalan-resminin-tekrarlama-sorunu/" title="Tablo Satırına Verilen Ardalan Resminin Tekrarlama Sorunu"&gt;Tablo Satırına Verilen Ardalan Resminin Tekrarlama Sorunu&lt;/a&gt; Genel
+    itibari ile sorun ve çözüm önerileri hakkında makalelerle geçmiş.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/css-ipucu-20-firefoxda-kaydirma-cubugu-cikarma/" title="CSS İpucu 20: Firefox'da Kaydırma Çubuğu Çıkarma"&gt;CSS İpucu 20: Firefox'da Kaydırma Çubuğu Çıkarma&lt;/a&gt; Bazıları için
+    bir sorun olarak görünsede bence bir sorun olmayan bir özellik.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/sessiz-sedasiz-3-seneyi-astik/" title="Sessiz sedasız 3. seneyi aştık"&gt;Sessiz sedasız 3. seneyi aştık&lt;/a&gt; Seneler çok çabuk geçiyor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Mayıs&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/jquery-ile-iframe-yuksekligini-icerigine-gore-otomatik-ayarlamak/" title="Jquery İle IFrame Yüksekliğini İçeriğine Göre Otomatik Ayarlamak"&gt;Jquery İle IFrame Yüksekliğini İçeriğine Göre Otomatik Ayarlamak&lt;/a&gt;
+    Çok kullanışlı ve güzel bir eklenti, bence tek sorunu yavaş
+    çalışması.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/" title="jQuery ile Basit Sekme Yapımı"&gt;jQuery ile Basit Sekme Yapımı&lt;/a&gt; jQuery ile ilgili ilk makalem.
+    jQuery 2009'da benim için tavan yaptı.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/css-ile-sayfalama-gorselligini-ayarlama/" title="CSS ile sayfalama görselliğini ayarlama"&gt;CSS ile sayfalama görselliğini ayarlama&lt;/a&gt; Bir metot ve görselliği
+    arttırma yöntemini anlattığım bir makale&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Haziran&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/css-ile-secilen-metinlerin-rengini-degistirmek/" title="CSS İpucu 21: CSS ile Seçilen Metinlerin Rengini Değiştirmek"&gt;CSS İpucu 21: CSS ile Seçilen Metinlerin Rengini Değiştirmek&lt;/a&gt;
+    Tamamen görselliğe yönelik bir özellik ve hala ie desteklemiyor.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/css-kod-yazma-duzeni/" title="CSS Kod Yazma Düzeni"&gt;CSS Kod Yazma Düzeni&lt;/a&gt; 2009'da yazdığım makaleler arasında en çok
+    beğendiğim yazılarımdan bir tanesi. Genelde kodlardan bahsederim,
+    ama bu sefer işin farklı ama önemli bir kısmını anlattığım bir
+    makale.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie-8-icin-css-duzeltmesihack/" title="IE 8 için CSS Düzeltmesi(Hack)"&gt;IE 8 için CSS Düzeltmesi(Hack)&lt;/a&gt; Bu düzeltmeyi pek kullanmadım.
+    Bunun yerine ie gibi yorumla kodunu kullandım.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/sayfa-dibine-yapisik-alt-alanlarsticky-footer/" title="Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)"&gt;Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)&lt;/a&gt; Bir çok kere
+    kullandım ve sonunda yazdım.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/css-ile-ziyaret-edilen-sayfa-baglantilarina-sekil-vermek/" title="CSS ile Ziyaret Edilen Sayfa Bağlantılarına Şekil Vermek"&gt;CSS ile Ziyaret Edilen Sayfa Bağlantılarına Şekil Vermek&lt;/a&gt; Pek
+    kullanmasak dahi önemli bir özellik.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/windows-vista-net-framework-guncelleme-sorunu-ve-cozumu/" title="Windows Vista .net Framework güncelleme sorunu ve çözümü"&gt;Windows Vista .net Framework güncelleme sorunu ve çözümü&lt;/a&gt; Vista
+    sorunları sene boyu bizi zorladı, ama yinede idare etti.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/firefoxun-negatif-degerli-z-index-destegi/" title="Firefox’un Negatif Değerli z-index Desteği"&gt;Firefox’un Negatif Değerli z-index Desteği&lt;/a&gt; Firefox'un en büyük
+    artılarından birisi sorunları olsada çabuk hallediyor ve bizleri
+    uğraştırmıyor.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/" title="Dış hat çizgisi(outline) özellikleri"&gt;Dış hat çizgisi(outline) özellikleri&lt;/a&gt; outline bir kişinin
+    gözünden kaçan bir özellik. Bizimde gözümüze fazla batmamış ki
+    yazmamız bu kadar gece kalmış.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/dis-hat-cizgilerinioutline-kaldirmak/" title="Dış Hat Çizgilerini(outline) Kaldırmak"&gt;Dış Hat Çizgilerini(outline) Kaldırmak&lt;/a&gt; Her nekadar makale ismi
+    kaldırmak diye geçsede içinde kaldırıp kaldırmamayı tartıştık ve
+    alternarif yöntemleri sunduk.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/firefox-3-5-cikti/" title="Firefox 3.5 çıktı"&gt;Firefox 3.5 çıktı&lt;/a&gt; Şimdilerde hız artışını daha iyi anladığım
+    Firefox 3.5 sürümünün çıkışı önemli idi. Şu aralar dünyada lider.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Temmuz&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/firebug-1-4-surumu-cikti/" title="FireBug 1.4 sürümü çıktı"&gt;FireBug 1.4 sürümü çıktı&lt;/a&gt; Sadece görsellik olduğunu ve bayağı bir
+    sorun çıkardığını şimdilerde görüyorum. Beni bu sürümü ile çok üzdü.
+    Ama yinede kalbimizdesin FireBug&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/css-ipucu-22-iphone-icin-css-yazmak/" title="CSS İpucu 22: iPhone için CSS Yazmak"&gt;CSS İpucu 22: iPhone için CSS Yazmak&lt;/a&gt; iPhone için web siteleri
+    yaptık ama sonrasında biraz durağanlaştık.&lt;/li&gt;
+&lt;li&gt;[Safari ve Chrome'da metin girdi(textbox) alanlarını kenar çizgileri
+    kaldıralım][] outline üzerine bir çok yazı yazmışız. Farklı tasarım
+    uygulandığında kötü sonuçlar doğuruyor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ağustos&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/iframe-virusu-ve-saldirgan-site-damgalamasindan-kurtulmanin-yolu/" title="iframe virüsü ve Saldırgan Site damgalamasından kurtulmanın yolu"&gt;iframe virüsü ve Saldırgan Site damgalamasından kurtulmanın yolu&lt;/a&gt;
+    Virüslerin artık şekil değiştirdiği artık sistemler yerine sitelere
+    yöneldiği şu günlerde bizim gibi arayüz geliştiricilerin daha
+    dikkatli olması gerektiğini öğrendik.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Eylül&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[VMware Kurarken “Setup failed to write data to the registry” hatası
+    aldım][] Farklı yerlede ama yine sorunlar konumuz.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ekim&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie-6-iki-css-secicisi-sorunu-ve-cozumu/" title="İE 6 iki CSS seçicisi Sorunu ve Çözümü"&gt;İE 6 iki CSS seçicisi Sorunu ve Çözümü&lt;/a&gt; ie6 ve sorun. ie6'dan
+    bana çok ekmek çıkmış. Ama olmasa daha çok sevinirim.&lt;/li&gt;
+&lt;li&gt;[İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi
+    atamak][] sorunlar, sorunlar, sorunlar = ie&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/jquery-ipuclari/" title="Jquery ipuçları"&gt;Jquery ipuçları&lt;/a&gt; jquery çalışma hayatımı çok fazla etkilesede
+    makalelerime fazla konu olamadığı kesin. 2010'da daha fazla
+    değinmeye çalışacağım.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/font-face-kullanimi/" title="@font-face kullanımı"&gt;@font-face kullanımı&lt;/a&gt; Çok güzel bir özellik hala bazı sorunlarıda
+    olsa yakında daha cesurca kullanabileceğiz. Bu makale için çok zaman
+    harcadığımı hatırlıyorum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Kasım&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/arayuz-gelistiricilerin-gorev-tanimi/" title="Arayüz Geliştiricilerin Görev Tanımı"&gt;Arayüz Geliştiricilerin Görev Tanımı&lt;/a&gt; Bu makaleyi ilk başta
+    yazmam gerekirdi ama sistemin oturması ve anlaşılması için zaman
+    gerekti. Hala tam anlamıyla gerçekleşmese dahi büyük mesafe
+    katettiğimizi düşünüyorum. &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/eksi-margin-kullanimi/" title="Eksi Margin Kullanımı"&gt;Eksi Margin Kullanımı&lt;/a&gt; Çok eski süredir bekleyen bir makale
+    konusu idi. Önemli bir konu anlaşılması ve derinlemesine bilinmesi
+    gereken.&lt;/li&gt;
+&lt;li&gt;[CSS Yorumlarında Türkçe Karakter Kullandığımızda İE6′da Sorun
+    Çıkarıyor][] Sosyal medyanın etkilerini yavaş yavaş hissettiğim bu
+    senede friendfeed'de boy göstermeye ve geri dönüşlerden makale
+    çıkarmaya başladım. İkinci makalem.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Aralık&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie6da-liste-ardalan-gormeme-sorunu/" title="IE6'da Liste Ardalan Görmeme Sorunu"&gt;IE6'da Liste Ardalan Görmeme Sorunu&lt;/a&gt; Bilmiyorum bir şey yazmaya
+    gerek var mı? ie6 = sorun&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/fanatikmarslar-com-sitesinin-kodlamasi/" title="PSD'den HTML'e – fanatikmarslar.com Sitesinin Kodlaması"&gt;PSD'den HTML'e – fanatikmarslar.com Sitesinin Kodlaması&lt;/a&gt; 2
+    senelik bir isteğin sonucunda sene sonunda anca çıkarabildim. Devamı
+    2010'da gelecek.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fatihhayrioglu&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;windows&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;vista&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;windows&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;defender&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;guncellemesindeki&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sorunu&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ve&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cozumu&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&amp;quot;&lt;span class="n"&gt;Windows&lt;/span&gt; &lt;span class="n"&gt;Vista&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;Windows&lt;/span&gt; &lt;span class="n"&gt;Defender&lt;/span&gt; &lt;span class="n"&gt;G&lt;/span&gt;ü&lt;span class="n"&gt;ncellemesindeki&lt;/span&gt; &lt;span class="n"&gt;Sorunu&lt;/span&gt; &lt;span class="n"&gt;ve&lt;/span&gt; Çö&lt;span class="n"&gt;z&lt;/span&gt;ü&lt;span class="n"&gt;m&lt;/span&gt;ü&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;[Safari ve Chrome'da metin girdi(textbox) alanlarını kenar çizgileri
+  kaldıralım]: http://www.fatihhayrioglu.com/safari-ve-chromeda-metin-girditextbox-alanlarini-kenar-cizgileri-kaldiralim/
+    "Safari ve Chrome'da metin girdi(textbox) alanlarını kenar çizgileri kaldıralım"
+  [VMware Kurarken “Setup failed to write data to the registry” hatası
+  aldım]: http://www.fatihhayrioglu.com/vmware-kurarken-setup-failed-to-write-data-to-the-registry-hatasi-aldimi/
+    "VMware Kurarken “Setup failed to write data to the registry” hatası aldım"
+  [İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi
+  atamak]: http://www.fatihhayrioglu.com/internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/
+    "İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak"
+  [CSS Yorumlarında Türkçe Karakter Kullandığımızda İE6′da Sorun
+  Çıkarıyor]: http://www.fatihhayrioglu.com/css-yorumlarinda-turkce-karakter-kullandigimizda-ie6da-sorun-cikariyor/
+    "CSS Yorumlarında Türkçe Karakter Kullandığımızda İE6′da Sorun Çıkarıyor"&lt;/p&gt;</summary><category term="2009"></category><category term="CSS"></category><category term="ie6"></category></entry><entry><title>CSS3 Module: Paged Media</title><link href="http://www.fatihhayrioglu.com/css3-module-paged-media/" rel="alternate"></link><updated>2006-10-15T23:23:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-15:css3-module-paged-media/</id><summary type="html">&lt;p&gt;W3C son CSS3 taslaklarının da Paged Media özelliğini duyurdu. Paged
+Media sayfa çıktısını alırken kullanılacak bir çok özelliği kendinde
+barındırıyor. Sayfa numarası verme, marginler, boyutlar ve yerleşim, baş
+kısım ve alt kısım biligisi, kesme işareti kullanımı, resim yerleşimi
+gibi bir çok yeni özellik kullanmamızı olanak sağlıyor. Ayrıntılı bilgi
+için &lt;a href="http://www.w3.org/TR/2006/WD-css3-page-20061010/"&gt;tıklayınız&lt;/a&gt;&lt;/p&gt;</summary><category term="CSS"></category><category term="css3"></category><category term="paged-media"></category><category term="print"></category></entry><entry><title>Temiz bir clearfix metodu - www.dahaiyi.net</title><link href="http://www.fatihhayrioglu.com/temiz-bir-clearfix-metodu-wwwdahaiyinet/" rel="alternate"></link><updated>2006-09-29T09:12:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-09-29:temiz-bir-clearfix-metodu-wwwdahaiyinet/</id><summary type="html">&lt;p&gt;Cem Gencer'den clearfix metodu hakkında güzel bir makale
+&lt;a href="http://www.dahaiyi.net/yazilar/temiz-bir-clearfix-metodu/"&gt;http://www.dahaiyi.net/yazilar/temiz-bir-clearfix-metodu/&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>İE 7 ile Düzelen CSS sorunları</title><link href="http://www.fatihhayrioglu.com/ie-7-ile-duzelen-css-sorunlari/" rel="alternate"></link><updated>2006-08-26T00:23:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-08-26:ie-7-ile-duzelen-css-sorunlari/</id><summary type="html">&lt;p&gt;Bilindiği gibi İE hataları ile CSS kod yazarlarını zorlayan bir web
+tarayıcısı idi. Microsoft da bunun farkına vardı ve İE 7 ile birlikte
+birçok sorunu gidermeye çalıştı işte size İE 7 ile düzeltilen CSS
+sorunları &lt;a href="http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx"&gt;http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx&lt;/a&gt;&lt;/p&gt;</summary><category term="düzeltmeler"></category><category term="ie7"></category><category term="internet explorer"></category><category term="İnternet Tarayıcısı"></category></entry><entry><title>CSS Mania'nın CSS ödülleri sahibiplerini buldu</title><link href="http://www.fatihhayrioglu.com/css-manianin-css-odulleri-sahibiplerini-buldu/" rel="alternate"></link><updated>2006-07-30T13:51:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-07-30:css-manianin-css-odulleri-sahibiplerini-buldu/</id><summary type="html">&lt;p&gt;Aslında sonuçlar Haziranda açıklandı biz biraz geç kaldık anlaşılan ama
+siteler güzel gerçekten
+&lt;a href=""&gt;http://awards.cssmania.com/2006/06/05/css-world-awards-nominations.php&lt;/a&gt;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;awards&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cssmania&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2006&lt;span class="o"&gt;/&lt;/span&gt;06&lt;span class="o"&gt;/&lt;/span&gt;05&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;world&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;awards&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;nominations&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>CSSMania'dan Dünya CSS Ödülleri</title><link href="http://www.fatihhayrioglu.com/cssmaniadan-dunya-css-odulleri/" rel="alternate"></link><updated>2006-06-26T23:33:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-06-26:cssmaniadan-dunya-css-odulleri/</id><summary type="html">&lt;p&gt;CSS Site tanıtım sitelerinin ünlülerinden &lt;a href="http://cssmania.com/"&gt;CSSMania&lt;/a&gt; İlk Dünya CSS
+Ödüllerini dağıtıryor. 10 dalda değişik ödül dağıtılacak:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Yılın sitesi&lt;/li&gt;
+&lt;li&gt;Kurumsal&lt;/li&gt;
+&lt;li&gt;Blog&lt;/li&gt;
+&lt;li&gt;Ticari&lt;/li&gt;
+&lt;li&gt;Eğlence&lt;/li&gt;
+&lt;li&gt;Kurum&lt;/li&gt;
+&lt;li&gt;Medya&lt;/li&gt;
+&lt;li&gt;Portal&lt;/li&gt;
+&lt;li&gt;Web Dizayn&lt;/li&gt;
+&lt;li&gt;Web Araçları&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Güzel sitelrin yarıltığı güzel bir yarışma Ayrıntılı bilg için
+&lt;a href="http://awards.cssmania.com/2006/06/05/css-world-awards-nominations.php"&gt;CSSMania&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;</summary><category term="CSS"></category><category term="cssmania"></category><category term="web"></category><category term="yarışma"></category></entry></feed>

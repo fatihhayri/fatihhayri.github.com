@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - text-align-last</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css3-metin-ozellikleri/">CSS3 Metin Özellikleri</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2011-12-02T01:11:00">
+                Fri 02 December 2011
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/hanging-punctuation.html">hanging-punctuation</a><a href=".././tag/text-align-last.html">text-align-last</a><a href=".././tag/text-overflow.html">text-overflow</a><a href=".././tag/text-rendering.html">text-rendering</a><a href=".././tag/text-stroke.html">text-stroke</a><a href=".././tag/text-wrap.html">text-wrap</a><a href=".././tag/word-wrap.html">word-wrap</a></p>
+
+
+</footer><!-- /.post-info --><h3>word-wrap özelliği</h3>
+<p>CSS3 <strong>word-wrap</strong> özelliği diğer CSS3 özelliklerinden farklı olarak tüm
+tarayıcılar(IE dahil) tarafından desteklenmektedir.</p>
+<div class="cssozelliktanimi">
+**Yapısı :**word-wrap: \<deger\>  
+**Aldığı Değerler:** normal | break-word   
+**Başlangıç değeri:** normal  
+**Uygulanabilen elementler:** Tüm Elemanlara  
+**Kalıtsallık:**Var
+
+</div>
+
+<p><strong>word-wrap</strong> özelliği belirtilen alandaki metnin kapsayıcı eleman
+sınırlarını zorlayan uzunlukta arada boşluk olmadan uzadığında kelimeyi
+satır başına atmak için kullanılır.</p>
+<p>Bir örnek verecek olursak 150px genişliğindeki bir alan içinde bir
+metnimiz olsun.</p>
+<p>[html] \&lt;div id="link">
+Loremipsumdolorsitametconsecteturadipiscingelit. Nam semper venenatis
+lobortis. Donec odio nisl, vehicula vitae molestie ac, euismod ac nibh.
+\&lt;/div> [/html]</p>
+<p>CSS kodu</p>
+<p>[css] #link{ width:150px; border:1px solid #999; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AdWMx/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p><strong>word-wrap</strong> ile bu uzun kelimeyi aşağı atarak sayfadaki patlaklığı
+düzeltebiliriz.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/vZFZb/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p>Önceki yazımda bu işi white-space ile halletmiştim, ama mantıklı olan
+<strong>word-wrap</strong> ile çözmek.</p>
+<div class="tarayiciuyum">
+**Tarayıcı Destekleme Listesi**  
+Firefox 3.5+  
+Chrome 1+  
+Safari 3.1+   
+Opera 10.5+  
+İnternet Explorer 5.5+  
+**Mobil Tarayıcılar**  
+iOS Safari 3.2+  
+Opera Mini 5+  
+Opera Mobile10+  
+Android Browser 2.1+
+
+</div>
+
+<h3>text-wrap</h3>
+<p><strong>text-wrap</strong> özelliği <strong>word-wrap</strong>’e benzer bir özelliktir.
+<strong>word-wrap</strong>’in kelimeye yaptığı etkiyi <strong>text-wrap</strong> metinlere yapar.</p>
+<div class="cssozelliktanimi">
+**Yapısı :** text-wrap: \<deger\>  
+**Aldığı Değerler:** normal | none | unrestricted | suppress   
+**Başlangıç değeri:** normal  
+**Uygulanabilen elementler:**Tüm Elemanlara  
+**Kalıtsallık:** Var
+
+</div>
+
+<p>text-wrap 4 adet değer alır.</p>
+<ul>
+<li><strong>normal:</strong> Satır sadece belirlenen yerlerden sonra satır başı
+    yapar.</li>
+<li><strong>none:</strong> Satır herhangi bir yerden satırbaşı yapmaz. Metin
+    kapsayıcı üzerinden aşar.</li>
+<li><strong>unrestricted:</strong> Satır herhangi iki karakter arasından satırbaşı
+    yapılabilir.</li>
+<li><strong>suppress:</strong> Satır içinde eğer satırbaşı yapacak bir nokta yoksa
+    elemanı satırbaşı yaptırır</li>
+</ul>
+<p>Bu özelliği henüz hiç bir tarayıcı desteklemiyor.</p>
+<h3>text-stroke</h3>
+<p>CSS3 ile birlikte text-outline olarak standartlara giren bu özellik daha
+sonra standartlardan çıkarıldı, ancak webkit tabanlı tarayıcıların
+<strong>-webkit-text-stroke</strong> olarak desteklemektedir.</p>
+<p>CSS3 ile birlikte metinlerin etrafına dış çizgisi çizmemize olanak
+sağlıyor. Şu an sadece webkit tabanlı tarayıcıların(Safari, Chrome)
+desteği mevcut.</p>
+<div class="cssozelliktanimi">
+**Yapısı :**text-stroke: \<deger\>  
+**Aldığı Değerler :** thickness | blur | color   
+**Başlangıç değeri:** none  
+**Kalıtsallık:**Var
+
+</div>
+
+<p>Tanım yaparken ilk olarak yazı tipinin rengini yaparız, sonrada dış hat
+çizgisini tanımlarız.</p>
+<p>[css] font:bold 24px Arial, Helvetica, sans-serif; color: #c00;
+-webkit-text-stroke: 1px #000; [/css]</p>
+<p>\&lt;iframe style="width: 100%; height: 300px"
+src="http://jsfiddle.net/fatihhayri/3dsPG/embedded/"
+allowfullscreen="allowfullscreen" frameborder="0">\&lt;/iframe></p>
+<p><strong>text-stroke</strong> tanımının ilk değeri dış çizgisinin kalınlığını ikinci
+tanım rengini belirler.</p>
+<p>Dış Çizgili ve Saydam zeminli Yazı Tipleri Oluşturmak</p>
+<p>Saydam zeminli yazı tipleri tanımlamak için <strong>text-fill-color</strong>
+ özelliği kullanılır.</p>
+<p>[css] ont:bold 24px Arial, Helvetica, sans-serif; color: #c00;
+-webkit-text-stroke: 1px #000; -webkit-text-fill-color: transparent;
+[/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/yWWbb/embedded/css,html,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<div class="tarayiciuyum">
+**Tarayıcı Destekleme Listesi**  
+Firefox desteklemiyor  
+Chrome 4+ (-webkit- öneki ile)  
+Safari 3.2+ (-webkit- öneki ile)  
+Opera desteklemiyor  
+İnternet Explorer desteklemiyor  
+**Mobil Tarayıcılar**  
+iOS Safari 4.1+ (-webkit- öneki ile)  
+Opera Mini desteklemiyor  
+Opera Mobile destelemiyor  
+Android Browser 2.1+ (-webkit- öneki ile)
+
+</div>
+
+<h3>text-align (yeni değerler)</h3>
+<p><strong>text-align</strong> özelliği CSS3’den öncede vardı ancak CSS3 ile bu özelliğe
+iki tane daha yeni değer atandı. Burada bunları inceleyeceğiz. <strong>start</strong>
+ve <strong>end</strong> değerleri. Türkçe ve İngilizce metinler solda-sağa doğru
+akar., ancak bazı dillerde akış sağdan-sola doğrudur, örneğin Arapça.
+Böyle sağdan-sola doğru akan dillerde için bu iki değer işe yarıyor.</p>
+<ul>
+<li><strong>start:</strong> Eğer akış soldan sağa ise <strong>left</strong> etkisi yapacaktır.
+    Akış sağdan-sola ise <strong>right</strong> etkisi yapacaktır.</li>
+<li><strong>end:</strong> Eğer akış soldan sağa ise <strong>right</strong> etkisi yapacaktır. Akış
+    sağdan-sola ise <strong>left</strong> etkisi yapacaktır.</li>
+</ul>
+<h3>text-align-last</h3>
+<p>CSS3 ile birlikte gelen bu özellik son satırın veya justify tanımlanmış
+elemanların satırlarının hizalanmasını sağlar. Bu özellik <strong>text-align</strong>
+ile aynı etkiyi yapar.</p>
+<div class="cssozelliktanimi">
+**Yapısı :**text-align-last: \<deger\>  
+**Aldığı Değerler :** center | end | justify | left | right | start   
+**Başlangıç değeri:** start  
+**Kalıtsallık:** Var
+
+</div>
+
+<p>justify uygulanmış bir metnin son satırının sağa yaslı olmasını
+istiyorsak</p>
+<p>[css] p { text-align: justify; -ms-text-align-last: right; } [/css]</p>
+<p><img alt="" src="https://lh6.googleusercontent.com/3FsatoE0FmU_5BhUEy_zEiJ1IOKvCEw08hEBmUC65r2zb0sqP9w__9fwRPhdr8_avR3u4Bu0jDa2WAWnnaINNAY_tRNPtlLOO8RkvDlPQuB8Xm87Buc" /></p>
+<h3>text-overflow</h3>
+<p>Blok kapsayıcı elemanı içindeki satır içi elemanın içeriğini
+<strong>overflow</strong> uygulamak için kullanılır. Blok kapsayıcı elemana
+<strong>overflow:visible</strong> tanımı yapılmamış olmalıdır.</p>
+<div class="cssozelliktanimi">
+**Yapısı :** text-overflow: \<deger\>  
+**Aldığı Değerler :** clip | ellipsis  
+**Başlangıç değeri:**clip  
+**Uygulanabilen elementler:** Blok-level Elemanlara  
+**Kalıtsallık:** yok
+
+</div>
+
+<p><img alt="" src="https://lh3.googleusercontent.com/miG_QKLBFvURtfSYFo3_P8q2QBZPWOGG2s-zMI7n7U97JH9TkMWd-tt3NnhL1nzD_DyQcqV1gmoqaK5FvhnR-XYI4AnQHl4H4A7h5TL884lG0H2OtmI" /><br />
+resim kaynağı: <a href="https://developer.mozilla.org/en/CSS/text-overflow">https://developer.mozilla.org/en/CSS/text-overflow</a></p>
+<p>Başlangış değeri <strong>clip</strong>’dir. <strong>clip</strong> değeri alan satır içi eleman
+kapsayıcı eleman sınırlarından kırpılacaktır. Diğer aldığı değer
+ellipsis’dir. <strong>ellipsis</strong> değeri alan eleman <strong>clip</strong> gibi
+davranacaktır ancak farklı olarak sonuna üç nokta(...) koyacaktır.</p>
+<p>CSS3 ile birlikte üç nokta yerine kendi istediğimiz özel karkateri cümle
+satır sonuna ekleyebiliyoruz.</p>
+<p>[css] p { text-overflow: 'herhangibirsey'; } [/css]</p>
+<div class="tarayiciuyum">
+**Tarayıcı Destekleme Listesi**  
+Firefox 7+  
+Chrome 1+  
+Safari 3.1+   
+Opera 9.0 (-o- ön eki ile)  
+İnternet Explorer 6+  
+**Mobil Tarayıcılar**  
+iOS Safari 3.2+  
+Opera Mini 5.0+ (-o- öneki ile)  
+Opera Mobile 10.0 (-o- öneki ile)  
+Android Browser 2.1+
+
+</div>
+
+<h3>text-rendering</h3>
+<p><strong>text-rendering</strong> özelliği okunabilirliği ayarlamamızı sağlana bir
+özelliktir. Bu özellik sayesinden tarayıcının metinlerimizi nasıl
+tarayacağını belirleyebiliyoruz. Tarayıcılar metinleri hız,
+okunabilirlik ve geometrik hassasiyet bakımından farklı şekilde
+yorumlarlar; text-rendering özelliği bu farklılıkları bizim kontrolümüze
+sunana bir özelliktir.</p>
+<div class="cssozelliktanimi">
+**Yapısı :**text-rendering: \<deger\>  
+**Aldığı Değerler :** auto | optimizeSpeed | optimizeLegibility |
+geometricPrecision | inherit  
+**Başlangıç değeri:** auto  
+**Uygulanabilen elementler:** Tüm Elemanlara  
+**Kalıtsallık:**Var
+
+</div>
+
+<ul>
+<li><strong>auto</strong> değeri metin tarama işini tarayıcıya bıraktığımız anlamına
+    geliyor.</li>
+<li><strong>optimizeSpeed</strong>  değeri hızlı yüklemeyi okunabilirlik ve geometrik
+    hassasiyetin önünde tutar. Karkater aralığı ve bitişik farf
+    özelliklerinin pasifize eder.</li>
+<li><strong>optimizeLegibility</strong>  değeri okunabilirliği hız ve geometrik
+    hassasiyetin önünde tutar. Karakter aralığı ve bitişik harf
+    özelliklerinin aktiftir.</li>
+<li><strong>geometricPrecision</strong> değeri geometrik hassasiyeti hız ve
+    okunabilirliğin önünde tutar. Geometrik hassasiyet ile yazı tipi
+    oranlı olarak yorumlanmasını sağlar ve buda yazı tiplerinin daha
+    güzel görünmesini sağlar.</li>
+</ul>
+<p><img alt="" src="https://lh4.googleusercontent.com/td53uElshl_ptgpbjTHJZU2pksA06sFUxjd4JppDf3kzsI-Y0OTJ5ZMLtjw1yJM55RQfGycC6h1VHBxEqBvWfcN2gHOs_Bbem8WsR9S2MjCsDPjc65g" /><br />
+resim kaynağı: <a href="https://developer.mozilla.org/en/CSS/text-rendering">https://developer.mozilla.org/en/CSS/text-rendering</a></p>
+<p>Tanımlarda dikkatimiz çeken karakter aralığı olarak Y ve o arasındaki
+mesafe ve ffl görünümündeki farklar kendini gösteriyor.</p>
+<div class="tarayiciuyum">
+**Tarayıcı Destekleme Listesi**  
+Firefox 3.0+  
+Chrome 4.0+  
+Safari 5+   
+Opera desteklemiyor  
+İnternet Explorer desteklemiyor
+
+</div>
+
+<p>Chrome auto değerini optimizeSpeed olarak yorumluyor, geometricPrecision
+ değerini tam olarak 13. sürümden itibaren yorumluyor.</p>
+<p>Firefox auto değerini yazı boyutu 20px ve üzerinde optimizeLegibility
+gibi, diğerlerini ise optimizeSpeed gibi yorumluyor. geometricPrecision
+ ise optimizeLegibility gibi yorumluyor.</p>
+<p>Safari auto değerini optimizeSpeed gibi yorumluyor.</p>
+<h3>hanging-punctuation</h3>
+<p>CSS3 metinleri yönetmek açısından bizim elimizi kuvvetlendirdiği kesin.
+<strong>hanging-punctuation</strong> özelliği bize ayrıntı bir özellik kazandırıyor.
+<strong>hanging-punctuation</strong> özelliği metin bloğunun dışına çıkarmamızı
+sağlıyor. Liste ikonları ve çift tırnakları metin bloğu dışına çıkararak
+daha güzel sonuçlar almamızı sağlıyor.</p>
+<div class="cssozelliktanimi">
+**Yapısı :** hanging-punctuation: \<deger\>  
+**Aldığı Değerler :** none | start | end | end-edge  
+**Başlangıç değeri:**none  
+**Kalıtsallık:** Var
+
+</div>
+
+<p><img alt="" src="https://lh6.googleusercontent.com/RhIpgQ78or_m1wq9pK8wteUekGqrJlMiBGY-dEhvCGKFVlvLCGn7r_righ66slH2qGRDlcXt5TM-CZ8yFQTflFch3NnQ1nlOpZuaWQSlZblow8OvDAM" /></p>
+<p>Yukarıdaki resimde görüldüğü gibi ilk resimde <strong>hanging-punctuation</strong>
+uygulanmamış halini görürken ikinci resimde uygulanmış halini görüyoruz.
+Çift tırnak ve keme işaretleri metin bloğu dışına çıkarak daha blok bir
+metini ortaya koyuyor.</p>
+<p>Bu özelliği henüz herhangi bir tarayıcı desteklememektedir.</p>
+<h3>Sonuç</h3>
+<p>CSS3 birçok yönden elimiz güçlendirmektedir. CSS3 metinler üzerinde
+düzenleme yapmamıza olanak sağlıyor. Henüz tam olarak tamamlanmaya
+birçok yönü var CSS3 metin özellikleri zamanla daha iyi oturacaktır.</p>
+<p>Önceden tarayıcılar ve işletim sistemlerinin inisiyatifinde olan
+özellikleri CSS3 ile birlikte kod yazarlarının eline vermeye çalışıyor.</p>
+<p>Kalın sağlıcakla.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.w3.org/TR/css3-text/">http://www.w3.org/TR/css3-text/</a></li>
+<li><a href="http://www.impressivewebs.com/word-wrap-css3/">http://www.impressivewebs.com/word-wrap-css3/</a></li>
+<li><a href="http://www.opera.com/docs/specs/presto27/css/text/">http://www.opera.com/docs/specs/presto27/css/text/</a></li>
+<li><a href="http://caniuse.com/wordwrap">http://caniuse.com/wordwrap</a> (wordp-wrap destek listesi)</li>
+<li><a href="https://developer.mozilla.org/En/CSS/Word-wrap">https://developer.mozilla.org/En/CSS/Word-wrap</a></li>
+<li><a href="http://www.w3.org/TR/css3-text/">http://www.w3.org/TR/css3-text/</a></li>
+<li><a href="static">http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property</a>
+    (text-stroke)</li>
+<li><a href="http://css-tricks.com/7405-adding-stroke-to-web-text/">http://css-tricks.com/7405-adding-stroke-to-web-text/</a>
+    (text-stroke)</li>
+<li><a href="http://www.webkit.org/blog/85/introducing-text-stroke/">http://www.webkit.org/blog/85/introducing-text-stroke/</a></li>
+<li><a href="http://code.stephenmorley.org/html-and-css/white-space-handling/">http://code.stephenmorley.org/html-and-css/white-space-handling/</a></li>
+<li><a href="http://www.impressivewebs.com/css-white-space/">http://www.impressivewebs.com/css-white-space/</a></li>
+<li><a href="http://www.quirksmode.org/css/stroke.html">http://www.quirksmode.org/css/stroke.html</a></li>
+<li><a href="http://www.impressivewebs.com/word-wrap-css3/">http://www.impressivewebs.com/word-wrap-css3/</a></li>
+<li>[http://www.fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover][]</li>
+<li><a href="http://webdesignerwall.com/tutorials/word-wrap-force-text-to-wrap">http://webdesignerwall.com/tutorials/word-wrap-force-text-to-wrap</a></li>
+<li><a href="https://developer.mozilla.org/en/CSS/text-align">https://developer.mozilla.org/en/CSS/text-align</a></li>
+<li><a href="https://developer.mozilla.org/en/CSS/text-overflow">https://developer.mozilla.org/en/CSS/text-overflow</a></li>
+<li>[http://www.456bereastreet.com/archive/201105/clipping_text_with_css3_text-overflow/][]</li>
+<li><a href="http://www.cssplay.co.uk/menu/text-overflow.html">http://www.cssplay.co.uk/menu/text-overflow.html</a> (örnek)</li>
+<li><a href="http://www.css3.info/preview/text-overflow/">http://www.css3.info/preview/text-overflow/</a></li>
+<li><a href="static">http://deepubalan.com/blog/2010/11/27/text-overflow-css3-property-explained-pure-css-solution-to-get-ellipsis/</a></li>
+<li><a href="http://caniuse.com/text-overflow">http://caniuse.com/text-overflow</a> (destek listesi)</li>
+<li><a href="https://developer.mozilla.org/en/CSS/text-rendering">https://developer.mozilla.org/en/CSS/text-rendering</a></li>
+<li><a href="http://trentwalton.com/2010/06/29/css-text-rendering/">http://trentwalton.com/2010/06/29/css-text-rendering/</a></li>
+<li><a href="http://htmlcss.wikia.com/wiki/Text-rendering">http://htmlcss.wikia.com/wiki/Text-rendering</a></li>
+<li><a href="static">http://coding.smashingmagazine.com/2010/03/01/css-and-the-future-of-text/</a></li>
+<li><a href="static">http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography-part-2</a></li>
+<li><a href="http://www.webreference.com/programming/corecss/2/4.html">http://www.webreference.com/programming/corecss/2/4.html</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">cardeo</span><span class="p">.</span><span class="n">ca</span><span class="o">/</span>2010<span class="o">/</span><span class="n">adding</span><span class="o">-</span><span class="n">an</span><span class="o">-</span><span class="n">outline</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">stroke</span><span class="o">-</span><span class="n">property</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">satir</span><span class="o">-</span><span class="n">donusuword</span><span class="o">-</span><span class="n">wrap</span><span class="o">-</span><span class="n">firefox</span><span class="o">-</span><span class="n">sorunu</span><span class="o">-</span><span class="n">nasil</span><span class="o">-</span><span class="n">cozulur</span><span class="o">/</span>#<span class="n">idc</span><span class="o">-</span><span class="n">cover</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>456<span class="n">bereastreet</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>201105<span class="o">/</span><span class="n">clipping_text_with_css3_text</span><span class="o">-</span><span class="n">overflow</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">deepubalan</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2010<span class="o">/</span>11<span class="o">/</span>27<span class="o">/</span><span class="n">text</span><span class="o">-</span><span class="n">overflow</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">property</span><span class="o">-</span><span class="n">explained</span><span class="o">-</span><span class="n">pure</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">solution</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">get</span><span class="o">-</span><span class="n">ellipsis</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">coding</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>03<span class="o">/</span>01<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">future</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">text</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">markboulton</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">journal</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="n">five</span><span class="o">-</span><span class="n">simple</span><span class="o">-</span><span class="n">steps</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">better</span><span class="o">-</span><span class="n">typography</span><span class="o">-</span><span class="n">part</span><span class="o">-</span>2
+</pre></div><p>There are <a href=".././css3-metin-ozellikleri/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

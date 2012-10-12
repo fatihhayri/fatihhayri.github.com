@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>CSS ile Menü Yapmak III - Dikey Açılır Menüler</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="css-ile-menu-yapmak-iii-dikey-acilir-menuler/" rel="bookmark"
+           title="Permalink to CSS ile Menü Yapmak III - Dikey Açılır Menüler">CSS ile Menü Yapmak III - Dikey Açılır Menüler</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2006-11-08T07:04:00">
+                Wed 08 November 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/acilir-menu.html">açılır-menü</a><a href=".././tag/css.html">CSS</a><a href=".././tag/dikey-acilir-menu.html">dikey açılır menü</a><a href=".././tag/drop-down-menu.html">drop-down-menu</a><a href=".././tag/liste.html">liste</a><a href=".././tag/menu.html">menü</a><a href=".././tag/pop-out-menu.html">pop-out-menu</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>Bu tip menüleri javascript ile yapabiliriz. HTML ve CSS ile de daha
+esnek, kolay düzenlenebilir ve bir çok web tarayıcısı tarafında
+desteklenen(IE6 ve öncesi dahil) açılır menü yapılabilir. Aslında
+javascript'e ihtiyaç olmamasına karşın IE7'den önceki sürümler için
+javascript kodu gerekmektedir. <!--more--></p>
+<p>Açılır menü yapmak için daha önceki menü örneklerinde olduğu gibi
+sıralanmamış listeleri(\&lt;ul>) kullanacağız. Buradaki fark alt
+kategorilerin yani üzerine gelince açılacak menünün bir alt sırlanmış
+liste olarak eklenmesidir.</p>
+<p>[sourcecode language="html"] \&lt;ul id="menu" > \&lt;li>\&lt;a
+href="#">Anasayfa\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="#">Haberler\&lt;/a>
+\&lt;ul> \&lt;li>\&lt;a href="#">şžirket Haberleri \&lt;/a>\&lt;/li> \&lt;li>\&lt;a
+href="#">Yurt içi Haberleri \&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="#">Yurt
+dışı Haberleri\&lt;/a>\&lt;/li> \&lt;/ul> \&lt;/li> \&lt;li>\&lt;a
+href="#">Ürünler\&lt;/a> \&lt;ul> \&lt;li>\&lt;a
+href="#">Tencere\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="#">Tava\&lt;/a>\&lt;/li>
+\&lt;li>\&lt;a href="#">Ütü\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="#">Tost Makinesi
+\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="#">El Süpürgesi \&lt;/a>\&lt;/li> \&lt;/ul>
+\&lt;/li> \&lt;/ul> [/sourcecode]</p>
+<p><img alt="" src="../static/images/menu3_resim1.gif" /></p>
+<p>İlk olarak satır başı boşluklarını ve imgeleri kaldıralım.</p>
+<p>[sourcecode language="css"] ul { margin: 0; padding: 0; list-style:
+none; width: 150px; } [/sourcecode]</p>
+<p><img alt="" src="../static/images/menu3_resim2.gif" /></p>
+<p>Sonra ilk linkleri göreceli olarak konumlandırmalıyız. Bu konumlandırma
+aslında ikinci kademe açılacak menüye mutlak konumlandırma yapılması
+için kullanılır.</p>
+<p>[sourcecode language="css"] ul li { position: relative; } [/sourcecode]</p>
+<p>Bir sonraki adımda da ikincil açılan menüleri konumlandırmak olacaktır.
+Her birinci linke karşılık gelen ikincil açılır menüler ilkinin sağına
+konumlandırılmalıdır. Bunun için soldan 149px değeri verilir. 1 piksel
+sola kaydırılır ki fare ilk linki üzerinde ikinci linkin üzerine
+glemeden kaybolmasın. Ayrıca ikincil linklerin ilk sayfa açıldığında
+görünmemesi için display:none özelliği atanır.</p>
+<p>[sourcecode language="css"] li ul { position: absolute; left: 149px;
+top: 0; display: none; } [/sourcecode]</p>
+<p><img alt="" src="../static/images/menu3_resim3.gif" /></p>
+<p>Açılır menü yapısını oluşturmuş olduk şimdi linkleri güzelleştirip menü
+haline getirmek için önceki menüleri yaparken uyguladığımız <a href="http://www.fatihhayrioglu.com/?p=209">kodları
+uygulayalım.</a> Linklerin kendine has alanlarını tanımlamak için
+<strong>display:block</strong> özeliğini kullanalım. Linklerin altındaki çizgiyi
+kaldırmak için <strong>text-decoration:none</strong> özelliğini kullanalım. Linkler
+arasına mesafe vermek için <strong>padding</strong> verelim. Birde bir zemin rengi
+tanımı ver kenarlık tanımı yapalım. Üstteki linkin alt kenarlığı ile
+alttaki linkin üst kenarlığı üst üste bineceğinde alt kenarlık değerini
+sıfırlayalım.</p>
+<p>[sourcecode language="css"] ul li a { display: block; text-decoration:
+none; background-color: #E2E2E2; padding: 5px; border:1px solid #000;
+border-bottom:0; } [/sourcecode]</p>
+<p>Bu kodu yazdığımızda IE linkler arasına boşluk koyacaktır(IE7 de hala bu
+sorun devam ediyor) bu durumu düzeltmek için:</p>
+<p>[sourcecode language="css"] /* IE. gizle \*/ * html ul li { float:
+left; height: 1%; } * html ul li a { height: 1%; } /* IE den gizleme
+sonu */ [/sourcecode]</p>
+<p><img alt="" src="../static/images/menu3_resim4.gif" /></p>
+<p>En alttaki çizgimiz eksik kalmaması için ilk link ul'sinin alt kenarlık
+tanım yaparız.</p>
+<p>[sourcecode language="css"] ul { margin: 0; padding: 0; list-style:
+none; width: 150px; border-bottom: 1px solid #00; } [/sourcecode]</p>
+<p><img alt="" src="../static/images/menu3_resim5.gif" /></p>
+<p>Birincil menü görünümü tamamlandı ancak ikincil menüler görünmüyor.
+İkincil menüleri göstermek için:</p>
+<p>[sourcecode language="css"] li:hover ul { display: block; }
+[/sourcecode]</p>
+<p>Bu kadar basit bir kod menümüzü tamamlar. Ancak bir sorun var ki o da
+IE7'den öncesi bu kodu desteklemez.</p>
+<div class="ekstrabilgi">
+Internet Explorer 7. versiyonuna kadar :hover pseudo sınıfını sadece
+linklerde (\<a\>) uygulanmasını destekler diğer elementlerde bu
+özelliğin kullanımını desteklemez.
+
+</div>
+
+<p>Peki menümüz böyle mi kalacak hayır. IE6 ve altı için bir javascript
+kodu yazacağız.</p>
+<p>[sourcecode language="javascript"] startList = function() { if
+(document.all&amp;&amp;document.getElementById) { navRoot =
+document.getElementById("menu"); for (i=0; i\&lt;navRoot.childNodes.length;
+i++) { node = navRoot.childNodes[i]; if (node.nodeName=="LI") {
+node.onmouseover=function() { this.className+=" over"; }
+node.onmouseout=function() { this.className=this.className.replace("
+over", ""); } } } } } window.onload=startList; [/sourcecode]</p>
+<p>Bu çözümü bize kazandıran arkadaşlara teşekkürü bir borç biliriz ve
+<a href="http://www.alistapart.com:80/articles/dropdowns/">linkini</a> de yazarız.</p>
+<p>Ayrıca aşağıdaki kodu da eklemeliyiz.</p>
+<p>[sourcecode language="css"] li:hover ul, li.over ul{ display: block; }
+[/sourcecode]</p>
+<p>Ayrıca kod daki<span class="alternatifard">\&lt;ul id="<strong>menu</strong>" ></span>
+ve javascriptteki <span class="alternatifard">navRoot =
+document.getElementById("<strong>menu</strong>");</span> aynı olmasına dikkat edelim.</p>
+<iframe src="../static/dokumanlar/menu3.htm" width="350" height="250" frameborder="0" scrolling="auto"></iframe>
+
+<p>Örnek kodları <a href="http://www.fatihhayrioglu.com/dokumanlar/menu3.zip">indir</a></p>
+<p>Bazı arkadaşlardan bu menünün sağda olması halin nasıl yaparız diye bir
+istek geldi bende bunun için bir kod eklemek istiyorum.
+<span style="color:#f00;">Bu ekleme 28 Mayıs 2009 da yapılmıştır.</span></p>
+<p>Soldaki örneğe göre iki değişikliğimiz oldu. Birincisi menüyü sağa almak
+için ul ye float:right ataması yaptık. İkincisi, ikinici açılan menüyü
+soldan 149 px yerine eksi 149px ile sola almak oldu</p>
+<iframe src="../static/dokumanlar/menu3_2.htm" width="550" height="250" frameborder="0" scrolling="auto"></iframe>
+
+<h6>Kaynaklar</h6>
+<ul>
+<li><a href="http://www.alistapart.com/articles/horizdropdowns">http://www.alistapart.com/articles/horizdropdowns</a></li>
+<li><a href="http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp">http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp</a></li>
+<li><a href="http://www.seoconsultants.com/css/menus/tutorial/">http://www.seoconsultants.com/css/menus/tutorial/</a></li>
+<li><a href="http://www.cssplay.co.uk/menus/flyout2.html">http://www.cssplay.co.uk/menus/flyout2.html</a></li>
+</ul>
+</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "css-ile-menu-yapmak-iii-dikey-acilir-menuler/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - DOCTYPE</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././html5-dokuman-yapisini-olusturan-elemanlar/">HTML5: Doküman Yapısını Oluşturan Elemanlar</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2010-11-27T18:28:00">
+                Sat 27 November 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/html5.html">HTML5</a>. </p>
+<p>tags: <a href=".././tag/doctype.html">DOCTYPE</a><a href=".././tag/head.html">head</a><a href=".././tag/html5.html">html5</a></p>
+
+
+</footer><!-- /.post-info --><p>HTML5 ve CSS3 hayatımıza girmeye başladı. Her ne kadar Microsoft nedeni
+ile tam olarak kullanmasakta birçok makale ve örnek uygulamayı takip
+ediyoruz. Hala geliştirilmekte olan özellikleri ile bu yeni
+teknolojilerin hayatımıza girişi bize birçok güzellik kazandıracaktır.</p>
+<p>Bir çok makale okuyorum ve uygulama görüyorum ama HTML5 ile bir şey
+yapmak daha nasip olmadı bana. HTML5 hakkında okuduklarım ve
+araştırdıklarım konulardan bir tanesi de konu başlığından
+anlaşılabileceği gibi. HTML dokümanının yapısını oluşturan elemanlar
+hakkında ufak bir yazı yamayı planladım. Aslında mevcut HTML’de farkını
+yazacağım. Daha bir sadeleştirilmiş diyebiliriz.</p>
+<h3>DOCTYPE</h3>
+<p><a href="http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/">Doğru DOCTYPE Kullanımı</a> hakkında bir makalem vardır. Doctype,
+dokümanın tipi gösteriyor yorumlayıcıya(tarayıcıya). Bu tanımlar çok
+uzun metinler içeriyordu ancak HTML5 bu tanımı kısaltmış ve çok güzel
+yapmış.</p>
+<p>Şimdiye kadar ve hala kullanmakta olduğumuz bir doctype örneği,</p>
+<p>[html] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> [/html]</p>
+<p>Yukarıdaki HTML etiketi bize bu html dokümanının xhtml 1.0 olduğunu ve
+Transitional ise hem HTML hemde XHTML kurallarının bu dokümanda geçerli
+olduğunu gösteriyor. Peki HTML5’de bu işi nasıl yapıyoruz.</p>
+<p>[html] \&lt;!DOCTYPE html> [/html]</p>
+<p>Bu kadar, kısa ve hafıza da kalıcı. HTML kodlarını Not Defteri ile
+ yazdığım dönemlerde çok çekerdim bu Doctype tanımlarında. Git bir
+yerden örneğini al falan. Sonra Dreamweaver bunu otomatik ekliyordu da
+yazmaktan kurtulmuştum. Açıkçası ben hiç bir zaman yukarıdaki HTML5
+öncesi kodu aklıma yazamadım.</p>
+<p>Doctype Etiketinin kapama etiketi ve işareti yoktur ve küçük büyük harf
+duyarlılığı yoktur.</p>
+<p>HTML5 öncesi sürümler SGML kökenli diller olduğu için DTD tanımlarına
+gereksinim duyardı ancak HTML5 SGML kökenli olmadığı için buna gerek
+duymaz.</p>
+<p>[html] \&lt;!DOCTYPE HTML> \&lt;html> \&lt;head> \&lt;/head> \&lt;body> ...
+\&lt;/body> \&lt;/html> [/html]</p>
+<p>Peki burada bir sürüm numarası yok nasıl sonraki sürümler ile bunu
+ayıracağız?</p>
+<p>Burada şöyle bir şey var HTML5 geliştirilirken eğer buraya bir sürüm
+numarası verilse idi mevcut bütün web siteleri bu kapsam dışında
+kalacaktı, ama bu şekilde bir tanım ile eski ve yeni tüm dokümanlar aynı
+kefeye konmuş oldu. Geçmişide destekleyen bir yapıya kavuşturulmuş oldu.</p>
+<p>Aslında yeni nesil tarayıcılar bir tanım yapılmasa daha standart modda
+belgeyi tanımladığı için Doctype’ın pek bir geçerliliği kalmamış idi ama
+yinede bir tanım yapmak iyidir. İE’nin ne yapacağı belli olmaz.</p>
+<h3>\&lt;html> Elemanı</h3>
+<p>Html dokümanlarını çevreleyen kapsayıcı bir elemandır \&lt;html> html5
+öncesinde tanımımız</p>
+<p>[html] \&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xml:lang="en"> [/html]</p>
+<p>Şeklinde idi. Buradaki xmlns değeri bu dokümanın anaçatısının
+<a href="http://www.w3.org/1999/xhtml">http://www.w3.org/1999/xhtml</a> kullandığını gösteriyor. HTML5
+anaçatısı belli olduğu için tekrar tanımlamaya gerek duymuyor ve ayrıca
+iki adet dil tanımınında gereksiz olduğunu kabul ediyor ve sonuçta
+html5’teki tanımımız;</p>
+<p>[html] \&lt;html lang="en">\&lt;/html> [/html]</p>
+<p>şeklinde oluyor.</p>
+<h3>\&lt;head> içi tanımlar</h3>
+<p>HTML5 sadece Doctype tanımını değil ayrıca \&lt;head> içinde kullandığımız
+etiketleride ciddi manada basit hale getirmiştir.</p>
+<p>Karakter kodu için kullandığımız</p>
+<p>[html] \&lt;meta http-equiv="Content-Type" content="text/html;
+charset=utf-8" /> [/html]</p>
+<p>Yerine HTML5 karışılığı</p>
+<p>[html] \&lt;meta charset="UTF-8"> [/html]</p>
+<p>Gayet basit ve akılda kalıcı.</p>
+<p>Gelelim script eklemek için kullandığımız koda;</p>
+<p>[html] \&lt;script type="text/javascript" src="dosya_adi.js">\&lt;/script>
+[/html]</p>
+<p>HTML5'de ise;</p>
+<p>[html] \&lt;script src="file.js">\&lt;/script> [/html]</p>
+<p>Benzer şekilde ilişkilendirilmiş dokümanlar için kullandığımız</p>
+<p>[html] \&lt;link rel="stylesheet" href="style-original.css" type="text/css"
+/> [/html]</p>
+<p>yerine HTML5'de</p>
+<p>[html] \&lt;link rel="stylesheet" href="style-original.css" /> [/html]</p>
+<p>İşin kısacası, tüm tanımları olabildiğince kısaltmışlar. Süperde
+yapmışlar, şimdiye kadar bize çektirdikleri eziyet neydi kardeşim.</p>
+<p>Sonuç olarak bir HTML5 basit yapısı</p>
+<p>[html] \&lt;!DOCTYPE html> \&lt;html lang=""> \&lt;head> \&lt;meta
+charset="utf-8"> \&lt;title>\&lt;/title> \&lt;meta name="description"
+content="" /> \&lt;meta name="keywords" content="" /> \&lt;meta
+name="robots" content="" /> \&lt;/head> \&lt;body> \&lt;/body> \&lt;/html>
+[/html]</p>
+<p>Şeklinde olacaktır.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li>[http://www.w3schools.com/html5/tag_doctype.asp][]</li>
+<li><a href="http://diveintohtml5.org/semantics.html">http://diveintohtml5.org/semantics.html</a></li>
+<li><a href="static">http://www.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/</a></li>
+<li><a href="http://boblet.tumblr.com/post/141239118/html5-structure4">http://boblet.tumblr.com/post/141239118/html5-structure4</a><br />
+</li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>07<span class="o">/</span>16<span class="o">/</span><span class="n">html5</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">future</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">web</span><span class="o">/</span>
+</pre></div><p>There are <a href=".././html5-dokuman-yapisini-olusturan-elemanlar/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././dogru-doctype-kullanimi/" rel="bookmark"
+                           title="Permalink to Doğru DOCTYPE Kullanımı">Doğru DOCTYPE Kullanımı</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2006-09-15T23:59:00">
+                Fri 15 September 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/doctype.html">DOCTYPE</a><a href=".././tag/mod.html">mod</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>DOCTYPE, HTML veya (X)HTML dökümanımızın tipini göstermek için
+kullandığımız bir koddur.</p>
+<p>DOCTYPE bildirimi (X)HTML kodunun başına bir veya iki satır olarak
+eklenir. Genel kullanımı:</p>
+<p>[sourcecode language='html']
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+[/sourcecode] <!--more--></p>
+<p>Burada ...</p>
+                <a class="readmore" href=".././dogru-doctype-kullanimi/">read more</a>
+                <p>There are <a href=".././dogru-doctype-kullanimi/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - border-collapse</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././tablo-ozellikleri/">Tablo Özellikleri</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2007-09-10T22:00:00">
+                Mon 10 September 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/boder-spacing.html">boder-spacing</a><a href=".././tag/border-collapse.html">border-collapse</a><a href=".././tag/caption-side.html">caption-side</a><a href=".././tag/css.html">CSS</a><a href=".././tag/empty-cells.html">empty-cells</a><a href=".././tag/table.html">table</a><a href=".././tag/table-layout.html">table-layout</a><a href=".././tag/tablo.html">tablo</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info --><p>Daha önce "<a href="http://www.fatihhayrioglu.com/css-ile-tablolari-sekillendirmek/">CSS ile Tabloları şekillendirmek</a>" adlı makalemizde tablo
+yapılarını gördük ve görünümünü daha güzel nasıl yaparız onun üzerinde
+durmuştuk. W3C bu durumu göz önünde bulundurarak tablo ve tablo
+elementlerinin görünümünü düzenlemek için tablo özellikleri ekledi.
+Tablolar diğer HTML elementlerinden daha farklı kendine has
+elementlerdir ve farklı özellikleri vardır. Burada CSS2 ile birlikte
+gelen yeni özellikleri inceleyeceğiz.</p>
+<p>CSS2 ile birlikte gelen bu özelliklerden birçoğumuzun haberi
+olmayabilir. Ancak bizlere yardımcı olacak bu özelliklere göz atmak
+güzel. Bu özellikleri uygulamamızda en önemli etken tabiki IE'nin bu
+özelliklerin bir kısmını desteklememesidir. Bu tabiki IE'ye puan
+kaybettiriyor ve Microsoft'da bunun farkına geçte olsa vardığı
+söyleniyor ve IE8 ile birlikte tam CSS desteğini bizlere sunacakmış,
+tabi o zamana kadar Firefox IE'yi silip süpürmezse :D</p>
+<!--more-->
+
+<ul>
+<li><a href="#table-layout">table-layout</a></li>
+<li><a href="#caption-side">caption-side</a></li>
+<li><a href="#border-collapse">border-collapse</a></li>
+<li><a href="#boder-spacing">border-spacing</a></li>
+<li><a href="#empty-cells">empty-cells</a></li>
+</ul>
+<h3>table-layout<a name="table-layout" id="table-layout"></a></h3>
+<p><strong>Yapısı :</strong> table-layout: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong> auto | fixed | kalıtsallık<br />
+<strong>Başlnagıç değeri:</strong> auto<br />
+<strong>Uygulanabilen elementler:</strong> display: table ve display:inline-table
+olarak belirlenen elementlere<br />
+<strong>Kalıtsallık:</strong> Var</p>
+<div class="tarayiciuyum">
+**Browser Uyumu:**
+
+Internet Explorer 5.0+  
+Firefox 1+  
+Opera 9.2+  
+Safari 1.3+  
+Chrome 2+  
+W3C's CSS Level 2+  
+CSS Profile 2.0
+
+</div>
+
+<p>Normalde tablolar içeriğindeki bilgiye göre genişliğini arttırır. Bu
+bize bir esnek kazandırır ancak bazen tablo genişliğimizin sabit
+kalmasını isteriz. table-layout:fixed değeri tablo genişliğimizi
+sabitlememizi sağlar. table-layout:auto ise tablo genişliğini içeriğe
+göre arttırır.</p>
+<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
+1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
+xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+http-equiv="Content-Type" content="text/html; charset=utf-8" />
+\&lt;title>table-layout örneği\&lt;/title> \&lt;style> table.otomatik
+{table-layout: auto; width: 350px; border-collapse: collapse;}
+table.sabit {table-layout: fixed; width: 350px; border-collapse:
+collapse;} td, th {border: 1px solid;} \&lt;/style> \&lt;/head> \&lt;body>
+\&lt;table cellpadding="0" cellspacing="0" class="otomatik"> \&lt;caption>
+Limitli ADSL Fiyatları \&lt;/caption> \&lt;tr> \&lt;th>Hızı*(Kbps) \&lt;/th>
+\&lt;th>Kota(GB) \&lt;/th> \&lt;th>Bağlantı Ücreti** \&lt;/th> \&lt;th>Aylık
+Ücret \&lt;/th> \&lt;th>Limitin Üzerindeki Her MB için Ücret*** \&lt;/th>
+\&lt;/tr> \&lt;tr> \&lt;td>1024/256'e kadar\&lt;/td> \&lt;td>4\&lt;/td> \&lt;td
+rowspan="3">29 YTL\&lt;/td> \&lt;td>29 YTL\&lt;/td> \&lt;td>0,010 YTL\&lt;/td>
+\&lt;/tr> \&lt;tr> \&lt;td>1024/256'e kadar\&lt;/td> \&lt;td>6\&lt;/td> \&lt;td>39
+YTL\&lt;/td> \&lt;td>0,009 YTL\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;td>2048/512'e
+kadar\&lt;/td> \&lt;td>6\&lt;/td> \&lt;td>49YTL\&lt;/td> \&lt;td>0,009 YTL\&lt;/td>
+\&lt;/tr> \&lt;/table> &nbsp; \&lt;table cellpadding="0" cellspacing="0"
+class="sabit"> \&lt;caption> Limitli ADSL Fiyatları \&lt;/caption> \&lt;tr>
+\&lt;th>Hızı*(Kbps) \&lt;/th> \&lt;th>Kota(GB) \&lt;/th> \&lt;th>Bağlantı
+Ücreti** \&lt;/th> \&lt;th>Aylık Ücret \&lt;/th> \&lt;th>Limitin Üzerindeki
+Her MB için Ücret*** \&lt;/th> \&lt;/tr> \&lt;tr> \&lt;td>1024/256'e
+kadar\&lt;/td> \&lt;td>4\&lt;/td> \&lt;td rowspan="3">29 YTL\&lt;/td> \&lt;td>29
+YTL\&lt;/td> \&lt;td>0,010 YTL\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;td>1024/256'e
+kadar\&lt;/td> \&lt;td>6\&lt;/td> \&lt;td>39 YTL\&lt;/td> \&lt;td>0,009 YTL\&lt;/td>
+\&lt;/tr> \&lt;tr> \&lt;td>2048/512'e kadar\&lt;/td> \&lt;td>6\&lt;/td>
+\&lt;td>49YTL\&lt;/td> \&lt;td>0,009 YTL\&lt;/td> \&lt;/tr> \&lt;/table> \&lt;/body>
+\&lt;/html> [/sourcecode]</p>
+<p><img alt="caption-side örneği" src="http://www.fatihhayrioglu.com/images/table_layout.gif" /></p>
+<p>Örneği görmek için<a href="http://www.fatihhayrioglu.com/dokumanlar/table-layout.html">tıklayınız.</a></p>
+<h3>caption-side<a name="caption-side"></a></h3>
+<p><strong>Yapısı :</strong>caption-side: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong>top | bottom | inherit<br />
+<strong>Başlnagıç değeri:</strong>top<br />
+<strong>Uygulanabilen elementler:</strong>display: table-caption olarak belirlenen
+elementlere<br />
+<strong>Kalıtsallık:</strong>Yok</p>
+<p>Not: CSS2 ile birlikte left ve right değerleride vardı ancak
+kullanışsızlığı nedeni ile CSS2.1'de kaldırıldı.</p>
+<p><strong>caption-side:</strong>Tablonun başlığının(\&lt;caption>) nerede(altta mı üstte
+mi) olacağını belirler.</p>
+<p><img alt="caption-side örneği" src="http://www.fatihhayrioglu.com/images/caption_side.gif" /></p>
+<p>Örneği görmek için<a href="http://www.fatihhayrioglu.com/dokumanlar/caption_side.html">tıklayınız.</a></p>
+<p>Bu özelliği IE(ie5+/mac destekliyor) desteklemiyor. Tüm tarayıcıların
+desteklediği şekilde kod yazmak için \&lt;caption>
+etiketinin<strong>align</strong>özelliği kullanılmalıdır. Örnek:</p>
+<p>[sourcecode language="html"] \&lt;caption align="bottom"> ve \&lt;caption
+align="top"> [/sourcecode]</p>
+<div class="tarayiciuyum">
+**Browser Uyumu:**
+
+Internet Explorer 8+  
+Firefox 1+  
+Opera 9.2+  
+Safari 1.3+  
+Chrome 2+  
+W3C's CSS Level 2+  
+CSS Profile 2.1
+
+</div>
+
+<h3>border-collapse<a name="border-collapse"></a></h3>
+<p><strong>Yapısı :</strong>border-collapse: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong>collapse | separate | kalıtsallık<br />
+<strong>Başlangıç değeri:</strong>separate<br />
+<strong>Uygulanabilen elementler:</strong>display:table ve display:table-caption
+olarak belirlenen elementlere<br />
+<strong>Kalıtsallık:</strong>Var</p>
+<div class="tarayiciuyum">
+**Browser Uyumu:**
+
+Internet Explorer 5.5+  
+Firefox 1+  
+Opera 9.2+  
+Safari 1.3+  
+Chrome 2+  
+W3C's CSS Level 2+  
+CSS Profile 2.0
+
+</div>
+
+<p>border-collapse, tablo hücrelerinin etrafındaki kenarlık ile olan
+mesafeyi azaltmamızı veya açmamızı sağlar.<strong>separate</strong>ataması yapılmış
+ise hücreler arasına bir kaç piksellik mesafe konur, HTML içinden bu
+boşlukları \&lt;table> etiketinin cellspacing özelliği ile kaldırmak
+istesek bile tarayıcılar bu seferde iki kenarlığı bir bir üstü
+gösterecektir. Eğer<strong>collapse</strong>değeri verilirse iki hücre arasındaki
+mesafe kalkacaktır ve tek kenarlık görünecektir.</p>
+<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
+1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
+xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+http-equiv="Content-Type" content="text/html; charset=utf-8" />
+\&lt;title>border-collapse örneği\&lt;/title> \&lt;style> table.ayri {
+border-collapse: separate; } table.birlesik { border-collapse: collapse;
+} td { border: 1px solid black; padding: 3px; } \&lt;/style> \&lt;/head>
+\&lt;body> \&lt;table cellspacing="0" class="ayri"> \&lt;tr>
+\&lt;td>hücre1\&lt;/td> \&lt;td>hücre2\&lt;/td> \&lt;/tr> \&lt;tr>
+\&lt;td>hücre3\&lt;/td> \&lt;td>hücre4\&lt;/td> \&lt;/tr> \&lt;/table> &nbsp;
+\&lt;table border="0" cellspacing="0" class="birlesik"> \&lt;tr>
+\&lt;td>hücre1\&lt;/td> \&lt;td>hücre2\&lt;/td> \&lt;/tr> \&lt;tr>
+\&lt;td>hücre3\&lt;/td> \&lt;td>hücre4\&lt;/td> \&lt;/tr> \&lt;/table> \&lt;/body>
+\&lt;/html> [/sourcecode]</p>
+<p>Örneği görmek için<a href="http://www.fatihhayrioglu.com/dokumanlar/border-collapse.html">tıklayınız.</a></p>
+<p><img alt="border-collapse örneği" src="http://www.fatihhayrioglu.com/images/border-collapse.gif" /></p>
+<h3>border-spacing<a name="boder-spacing"></a></h3>
+<p><strong>Yapısı :</strong>border-spacing: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong>\&lt;uzunluk> \&lt;uzunluk>? | inherit<br />
+<strong>Başlangıç değeri:</strong>0<br />
+<strong>Uygulanabilen elementler:</strong>display:table ve display:table-caption
+olarak belirlenen elementlere<br />
+<strong>Kalıtsallık:</strong>Var</p>
+<div class="tarayiciuyum">
+**Browser Uyumu:**
+
+Internet Explorer 8+  
+Firefox 1+  
+Opera 9.2+  
+Safari 1.3+  
+Chrome 2+  
+W3C's CSS Level 2+  
+CSS Profile 2.0
+
+</div>
+
+<p>border-spacing, normal uzunluk değerleri alır
+ve<strong>border-collapse:separate</strong>ile birlikte kullanılır. Eğer tek değer
+verilirse bu tüm kenarlar için geçerlidir, iki değer atanırsa ilki
+yatayda boşluk için ikincisi dikey de boşluk vermek için tanımlanmıştır.</p>
+<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
+1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
+xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+http-equiv="Content-Type" content="text/html; charset=utf-8" />
+\&lt;title>border-spacing örneği\&lt;/title> \&lt;style> table.ayri {
+border-collapse: separate; border-spacing: 3px 5px; } table.birlesik {
+border-collapse: separate; } td { border: 1px solid black; padding: 3px;
+} \&lt;/style> \&lt;/head> \&lt;body> \&lt;table cellspacing="0" class="ayri">
+\&lt;tr> \&lt;td>hücre1\&lt;/td> \&lt;td>hücre2\&lt;/td> \&lt;/tr> \&lt;tr>
+\&lt;td>hücre3\&lt;/td> \&lt;td>hücre4\&lt;/td> \&lt;/tr> \&lt;/table> &nbsp;
+\&lt;table border="0" cellspacing="0" class="birlesik"> \&lt;tr>
+\&lt;td>hücre1\&lt;/td> \&lt;td>hücre2\&lt;/td> \&lt;/tr> \&lt;tr>
+\&lt;td>hücre3\&lt;/td> \&lt;td>hücre4\&lt;/td> \&lt;/tr> \&lt;/table> \&lt;/body>
+\&lt;/html> [/sourcecode]</p>
+<p>Örneği görmek için<a href="http://www.fatihhayrioglu.com/dokumanlar/border-spacing.html">tıklayınız.</a></p>
+<p><img alt="border-spacing örneği" src="http://www.fatihhayrioglu.com/images/border_spacing.gif" /></p>
+<h3>empty-cells<a name="empty-cells"></a></h3>
+<p><strong>Yapısı :</strong>empty-cells: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong>show | hide | kalıtsallık<br />
+<strong>Başlangıç değeri:</strong>show<br />
+<strong>Uygulanabilen elementler:</strong>display:table-cellolarak belirlenen
+elementlere<br />
+<strong>Kalıtsallık:</strong>Var</p>
+<div class="tarayiciuyum">
+**Browser Uyumu:**
+
+Internet Explorer 8+  
+Firefox 1+  
+Opera 9.2+  
+Safari 1.3+  
+Chrome 2+  
+W3C's CSS Level 2+  
+CSS Profile 2.0
+
+</div>
+
+<p>Bir tabloya bazı değerler atadığımızda(örneğin kenarlık değeri) boş olan
+hücreler bu değeri görmez, bu durumu düzeltmek için boş olan hücreler
+için boş karakter( ) koyarız genel.<strong>empty-cells</strong>özelliği ile boş kalan
+hücrelere nasıl davranması gerektiğini bildirebiliriz. göster(<strong>show</strong>)
+değeri ile hücrenin içeriği olan hücreler ile aynı özellikleri almasını
+sağlayabiliriz. gizle(<strong>hide</strong>) değeri ile de hücrenin yokmuş gibi
+davranmasını sağlarız.</p>
+<p>Bu özellik Internet Explorer tarafından desteklenmemektedir.</p>
+<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
+1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
+xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+http-equiv="Content-Type" content="text/html; charset=utf-8" />
+\&lt;title>empty-cells örneği\&lt;/title> \&lt;style> table.goster {
+empty-cells:show } table.gizle { empty-cells:hide } td { border: 1px
+solid black; padding: 3px; } \&lt;/style> \&lt;/head> \&lt;body> \&lt;table
+cellspacing="0" class="goster"> \&lt;tr> \&lt;td>\&lt;/td>
+\&lt;td>hücre2\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;td>hücre3\&lt;/td>
+\&lt;td>hücre4\&lt;/td> \&lt;/tr> \&lt;/table> &nbsp; \&lt;table border="0"
+cellspacing="0" class="gizle"> \&lt;tr> \&lt;td>\&lt;/td> \&lt;td>hücre2\&lt;/td>
+\&lt;/tr> \&lt;tr> \&lt;td>hücre3\&lt;/td> \&lt;td>hücre4\&lt;/td> \&lt;/tr>
+\&lt;/table> \&lt;/body> \&lt;/html> [/sourcecode]</p>
+<p>Örneği görmek için<a href="http://www.fatihhayrioglu.com/dokumanlar/empty_cells.html">tıklayınız.</a></p>
+<p><img alt="empty-cells örneği" src="http://www.fatihhayrioglu.com/images/empty_cells.gif" /></p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.w3.org/TR/REC-CSS2/tables.html">http://www.w3.org/TR/REC-CSS2/tables.html</a></li>
+<li>[http://www.w3schools.com/css/css_table.asp][]</li>
+<li><a href="http://www.blooberry.com/indexdot/css/propindex/table.htm">http://www.blooberry.com/indexdot/css/propindex/table.htm</a></li>
+</ul>
+</p><p>There are <a href=".././tablo-ozellikleri/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././css-ipuclari-13-cssde-cellspacing0-nasil-yakalariz/" rel="bookmark"
+                           title="Permalink to CSS İpuçları 13 - CSS'de Cellspacing="0" nasıl yakalarız">CSS İpuçları 13 - CSS&#039;de Cellspacing=&quot;0&quot; nasıl yakalarız</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2007-08-02T09:24:00">
+                Thu 02 August 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/border-collapse.html">border-collapse</a><a href=".././tag/border-spacing.html">border-spacing</a><a href=".././tag/css.html">CSS</a><a href=".././tag/tablo.html">tablo</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>Artık sayfalarımızı CSS ile oluşturup şekillendiriyoruz. Tabloların
+Cellspacing="0" atamasını css ile nasıl yaparız. İşte cevabı:</p>
+<p>[sourcecode language="css"] table{ border-spacing: 0px; border-collapse:
+collapse; } [/sourcecode] bu kadar.</p>
+<h3>Kaynak</h3>
+<ul>
+<li><a href="static">http://www.mularien.com/blog/2007/07/29/css-tip-css-equivalent-to-cellspacing0/</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">mularien</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2007<span class="o">/</span>07<span class="o">/</span>29<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">tip</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">equivalent</span><span class="o">-</span><span class="n">to ...</span></pre></div>
+                <a class="readmore" href=".././css-ipuclari-13-cssde-cellspacing0-nasil-yakalariz/">read more</a>
+                <p>There are <a href=".././css-ipuclari-13-cssde-cellspacing0-nasil-yakalariz/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

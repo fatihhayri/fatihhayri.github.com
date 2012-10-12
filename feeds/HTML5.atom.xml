@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioglu</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/HTML5.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2012-05-23T13:40:00+02:00</updated><entry><title>İnternet Explorer Eski Sürümlerinde HTML5 Desteği Sağlamak</title><link href="http://www.fatihhayrioglu.com/internet-explorer-eski-surumlerinde-html5-destegi-saglamak/" rel="alternate"></link><updated>2012-05-23T13:40:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-05-23:internet-explorer-eski-surumlerinde-html5-destegi-saglamak/</id><summary type="html">&lt;p&gt;HTML5 ve özellikleri hayatımız gireli bayağı bir zaman oluyor. Ancak
+uygulamalara yansıması o kadarda çok değil. Bende bir kaç projede HTML5
+uyguladım. HTML5 yenilikleri ve anlamlı etiketleri ile bizlere avantaj
+sağlıyor.&lt;/p&gt;
+&lt;p&gt;Kodlamaya başlamadan hemen bir sorun ile karşılaşıyoruz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sorun = Internet Explorer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Eşitliği gerçeğe dönüşüyor. Internet Explorer 9’dan önceki sürümlerde
+HTML5’in yeni etiketlerini ve özelliklerini desteklemiyor. ie6/ie7/ie8
+gibi &lt;a href="http://labs.sahibinden.com/yazi/sahibinden-com-nisan-2012-ziyaretci-teknoloji-istatistikleri/"&gt;%28 kullanım oranı sahip tarayıcılar&lt;/a&gt; için bir çözüm
+üretmeliyiz. Biraz araştırınca çeşitli çözüm önerileri ile
+karşılaşıyoruz.&lt;/p&gt;
+&lt;p&gt;Javascript ile üretilen güzel bir çözüm mevcut. &lt;strong&gt;html5shiv&lt;/strong&gt; olarak
+adlandırılan bu teknik temel mantık olarak&lt;/p&gt;
+&lt;p&gt;[javascript] document.createElement("section") [/javascript]&lt;/p&gt;
+&lt;p&gt;ile HTML5 eleman desteği olmayan tarayıcılar için js yardımı ile eleman
+oluşturarak çözüyor. Birde &lt;strong&gt;\&amp;lt;section&gt;&lt;/strong&gt; ve diğer blok-level etiketler
+için &lt;strong&gt;display: block&lt;/strong&gt; eklemesini yapıyor.&lt;/p&gt;
+&lt;p&gt;Javascript’i pasif yapan kullanıcılar için bazı çekinceleri olan
+insanlar olsa da, genel olarak gözardı edilebilecek oranda bir yüzde
+olması nedeni ile HTML5shiv gayet mantıklı bir çözüm bence.&lt;/p&gt;
+&lt;p&gt;Kullanımı çok basit. Internet Explorer 9 öncesi için &lt;a href="http://www.fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/"&gt;şartlı yorumlar&lt;/a&gt;
+ile kontrolü koyup diğer tarayıcılarda yüklenmesini engelleyerek daha
+mantıklı bir işlem yapıyoruz.&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;!--[if lt IE 9]&gt; \&amp;lt;script src="dist/html5shiv.js"&gt;
+\&amp;lt;/script&gt; \&amp;lt;![endif]--&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Ayrıca google hostunda da barındırılıyor bu kod&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;!--[if lt IE 9]&gt; \&amp;lt;script
+src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;\&amp;lt;/script&gt;
+\&amp;lt;![endif]--&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Bu şekilde daha hızlı bir erişim sağlanmış olur. Tabi büyük projelerin
+kendilerinde barındırmaları daha mantıklı.&lt;/p&gt;
+&lt;p&gt;HTML5shiv HTML5’in yeni etiketlerinin desteğini sağlıyor. Diğer api
+desteği için &lt;a href="http://modernizr.com/"&gt;Modernizr&lt;/a&gt; incelemekte yarar var.&lt;/p&gt;
+&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=""&gt;http://net.tutsplus.com/tutorials/html-css-techniques/how-to-make-all-browsers-render-html5-mark-up-correctly-even-ie6/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://code.google.com/p/html5shiv/"&gt;http://code.google.com/p/html5shiv/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ejohn.org/blog/html5-doctype/"&gt;http://ejohn.org/blog/html5-doctype/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ejohn.org/blog/html5-shiv/"&gt;http://ejohn.org/blog/html5-shiv/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.pcpro.co.uk/blogs/2011/03/07/making-html5-work-in-old-versions-of-internet-explorer/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[http://drupal.org/project/remysharp_html5shim][]&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://debeterevormgever.nl/en/articles/html5-elements-ie-without-javascript&lt;/a&gt;
+    (js siz çözüm.)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://paulirish.com/2011/the-history-of-the-html5-shiv/"&gt;http://paulirish.com/2011/the-history-of-the-html5-shiv/&lt;/a&gt; (html5
+    shiv in geçmişi)&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://viget.com/inspire/html5-elements-irresponsible-choice-right-now&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;net&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tutsplus&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tutorials&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;techniques&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;how&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;make&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;all&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;browsers&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;render&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;html5&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mark&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;up&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;correctly&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;even&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ie6&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pcpro&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;co&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;uk&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;blogs&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2011&lt;span class="o"&gt;/&lt;/span&gt;03&lt;span class="o"&gt;/&lt;/span&gt;07&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;making&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;html5&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;work&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;old&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;internet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;explorer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;debeterevormgever&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nl&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;en&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;articles&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;html5&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;elements&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ie&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;without&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;javascript&lt;/span&gt;
+&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;viget&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;inspire&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;html5&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;elements&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;irresponsible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;choice&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;right&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;now&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="html5shiv"></category><category term="ie6"></category><category term="ie7"></category><category term="ie8"></category><category term="problem"></category></entry><entry><title>HTML5: Doküman Yapısını Oluşturan Elemanlar</title><link href="http://www.fatihhayrioglu.com/html5-dokuman-yapisini-olusturan-elemanlar/" rel="alternate"></link><updated>2010-11-27T18:28:00+01:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-11-27:html5-dokuman-yapisini-olusturan-elemanlar/</id><summary type="html">&lt;p&gt;HTML5 ve CSS3 hayatımıza girmeye başladı. Her ne kadar Microsoft nedeni
+ile tam olarak kullanmasakta birçok makale ve örnek uygulamayı takip
+ediyoruz. Hala geliştirilmekte olan özellikleri ile bu yeni
+teknolojilerin hayatımıza girişi bize birçok güzellik kazandıracaktır.&lt;/p&gt;
+&lt;p&gt;Bir çok makale okuyorum ve uygulama görüyorum ama HTML5 ile bir şey
+yapmak daha nasip olmadı bana. HTML5 hakkında okuduklarım ve
+araştırdıklarım konulardan bir tanesi de konu başlığından
+anlaşılabileceği gibi. HTML dokümanının yapısını oluşturan elemanlar
+hakkında ufak bir yazı yamayı planladım. Aslında mevcut HTML’de farkını
+yazacağım. Daha bir sadeleştirilmiş diyebiliriz.&lt;/p&gt;
+&lt;h3&gt;DOCTYPE&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/"&gt;Doğru DOCTYPE Kullanımı&lt;/a&gt; hakkında bir makalem vardır. Doctype,
+dokümanın tipi gösteriyor yorumlayıcıya(tarayıcıya). Bu tanımlar çok
+uzun metinler içeriyordu ancak HTML5 bu tanımı kısaltmış ve çok güzel
+yapmış.&lt;/p&gt;
+&lt;p&gt;Şimdiye kadar ve hala kullanmakta olduğumuz bir doctype örneği,&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Yukarıdaki HTML etiketi bize bu html dokümanının xhtml 1.0 olduğunu ve
+Transitional ise hem HTML hemde XHTML kurallarının bu dokümanda geçerli
+olduğunu gösteriyor. Peki HTML5’de bu işi nasıl yapıyoruz.&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;!DOCTYPE html&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Bu kadar, kısa ve hafıza da kalıcı. HTML kodlarını Not Defteri ile
+ yazdığım dönemlerde çok çekerdim bu Doctype tanımlarında. Git bir
+yerden örneğini al falan. Sonra Dreamweaver bunu otomatik ekliyordu da
+yazmaktan kurtulmuştum. Açıkçası ben hiç bir zaman yukarıdaki HTML5
+öncesi kodu aklıma yazamadım.&lt;/p&gt;
+&lt;p&gt;Doctype Etiketinin kapama etiketi ve işareti yoktur ve küçük büyük harf
+duyarlılığı yoktur.&lt;/p&gt;
+&lt;p&gt;HTML5 öncesi sürümler SGML kökenli diller olduğu için DTD tanımlarına
+gereksinim duyardı ancak HTML5 SGML kökenli olmadığı için buna gerek
+duymaz.&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;!DOCTYPE HTML&gt; \&amp;lt;html&gt; \&amp;lt;head&gt; \&amp;lt;/head&gt; \&amp;lt;body&gt; ...
+\&amp;lt;/body&gt; \&amp;lt;/html&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Peki burada bir sürüm numarası yok nasıl sonraki sürümler ile bunu
+ayıracağız?&lt;/p&gt;
+&lt;p&gt;Burada şöyle bir şey var HTML5 geliştirilirken eğer buraya bir sürüm
+numarası verilse idi mevcut bütün web siteleri bu kapsam dışında
+kalacaktı, ama bu şekilde bir tanım ile eski ve yeni tüm dokümanlar aynı
+kefeye konmuş oldu. Geçmişide destekleyen bir yapıya kavuşturulmuş oldu.&lt;/p&gt;
+&lt;p&gt;Aslında yeni nesil tarayıcılar bir tanım yapılmasa daha standart modda
+belgeyi tanımladığı için Doctype’ın pek bir geçerliliği kalmamış idi ama
+yinede bir tanım yapmak iyidir. İE’nin ne yapacağı belli olmaz.&lt;/p&gt;
+&lt;h3&gt;\&amp;lt;html&gt; Elemanı&lt;/h3&gt;
+&lt;p&gt;Html dokümanlarını çevreleyen kapsayıcı bir elemandır \&amp;lt;html&gt; html5
+öncesinde tanımımız&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xml:lang="en"&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Şeklinde idi. Buradaki xmlns değeri bu dokümanın anaçatısının
+&lt;a href="http://www.w3.org/1999/xhtml"&gt;http://www.w3.org/1999/xhtml&lt;/a&gt; kullandığını gösteriyor. HTML5
+anaçatısı belli olduğu için tekrar tanımlamaya gerek duymuyor ve ayrıca
+iki adet dil tanımınında gereksiz olduğunu kabul ediyor ve sonuçta
+html5’teki tanımımız;&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;html lang="en"&gt;\&amp;lt;/html&gt; [/html]&lt;/p&gt;
+&lt;p&gt;şeklinde oluyor.&lt;/p&gt;
+&lt;h3&gt;\&amp;lt;head&gt; içi tanımlar&lt;/h3&gt;
+&lt;p&gt;HTML5 sadece Doctype tanımını değil ayrıca \&amp;lt;head&gt; içinde kullandığımız
+etiketleride ciddi manada basit hale getirmiştir.&lt;/p&gt;
+&lt;p&gt;Karakter kodu için kullandığımız&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;meta http-equiv="Content-Type" content="text/html;
+charset=utf-8" /&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Yerine HTML5 karışılığı&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;meta charset="UTF-8"&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Gayet basit ve akılda kalıcı.&lt;/p&gt;
+&lt;p&gt;Gelelim script eklemek için kullandığımız koda;&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;script type="text/javascript" src="dosya_adi.js"&gt;\&amp;lt;/script&gt;
+[/html]&lt;/p&gt;
+&lt;p&gt;HTML5'de ise;&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;script src="file.js"&gt;\&amp;lt;/script&gt; [/html]&lt;/p&gt;
+&lt;p&gt;Benzer şekilde ilişkilendirilmiş dokümanlar için kullandığımız&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;link rel="stylesheet" href="style-original.css" type="text/css"
+/&gt; [/html]&lt;/p&gt;
+&lt;p&gt;yerine HTML5'de&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;link rel="stylesheet" href="style-original.css" /&gt; [/html]&lt;/p&gt;
+&lt;p&gt;İşin kısacası, tüm tanımları olabildiğince kısaltmışlar. Süperde
+yapmışlar, şimdiye kadar bize çektirdikleri eziyet neydi kardeşim.&lt;/p&gt;
+&lt;p&gt;Sonuç olarak bir HTML5 basit yapısı&lt;/p&gt;
+&lt;p&gt;[html] \&amp;lt;!DOCTYPE html&gt; \&amp;lt;html lang=""&gt; \&amp;lt;head&gt; \&amp;lt;meta
+charset="utf-8"&gt; \&amp;lt;title&gt;\&amp;lt;/title&gt; \&amp;lt;meta name="description"
+content="" /&gt; \&amp;lt;meta name="keywords" content="" /&gt; \&amp;lt;meta
+name="robots" content="" /&gt; \&amp;lt;/head&gt; \&amp;lt;body&gt; \&amp;lt;/body&gt; \&amp;lt;/html&gt;
+[/html]&lt;/p&gt;
+&lt;p&gt;Şeklinde olacaktır.&lt;/p&gt;
+&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[http://www.w3schools.com/html5/tag_doctype.asp][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://diveintohtml5.org/semantics.html"&gt;http://diveintohtml5.org/semantics.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;http://www.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://boblet.tumblr.com/post/141239118/html5-structure4"&gt;http://boblet.tumblr.com/post/141239118/html5-structure4&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;smashingmagazine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2009&lt;span class="o"&gt;/&lt;/span&gt;07&lt;span class="o"&gt;/&lt;/span&gt;16&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;html5&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;future&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="DOCTYPE"></category><category term="head"></category><category term="html5"></category></entry></feed>

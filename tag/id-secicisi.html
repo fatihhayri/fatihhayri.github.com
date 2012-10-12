@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - Id-Seçicisi</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css-secicilerinin-optimizasyonu/">CSS Seçicilerinin Optimizasyonu</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2010-05-30T16:26:00">
+                Sun 30 May 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/evrensel-seciciler.html">Evrensel-Seçiciler</a><a href=".././tag/id-secicisi.html">Id-Seçicisi</a><a href=".././tag/optimize.html">optimize</a><a href=".././tag/performans.html">performans</a><a href=".././tag/secici-optimizasyonu.html">seçici optimizasyonu</a><a href=".././tag/torun-secicisi.html">Torun-Seçicisi</a></p>
+
+
+</footer><!-- /.post-info --><p>Bu konuyu hiç yazmayı düşünmüyordum, <a href="https://developer.mozilla.org/en/Writing_Efficient_CSS" title="Writing Efficient CSS for use in the Mozilla UI">Writing Efficient CSS for use in
+the Mozilla UI</a> makalesini okuyan kadar. Bu makaleyi okuduğumda bir
+şeyleri yanlış bildiğimi gördüm ve düzeltmek için bu konu hakkında biraz
+araştırma yapmam gerektiğini düşündüm ve bu makale çıktı. Bende yeni çok
+şeyler öğrendim. Aslında makalede 10 senelik bir makale, 10 sene sonra
+tekrar ısıtılıp yayına konmuş.</p>
+<p>Web sitelerini kodlarken ve kodlama sonrasında en çok önem verilen
+alanlardan biridir optimizasyon. Web sitelerinin optimizasyonunda çok
+fazla ince eleyip sık dokuyoruz. 1 Kbyte'ın bile hesabını yapar olduk.
+İnternete bağlanma hızları ne kadar artsa da internete bağlanan insan
+sayısı daha hızlı arttığı için her zaman daha optimize web siteleri önem
+kazanacaktır. Biz bununla alakalı olarak burada CSS Seçicilerinin
+optimum kullanılmasını irdeleyeceğiz. <!--more--></p>
+<p>CSS seçici tipleri ve kullanımı hakkında <a href="http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/" title="(X)HTML Sayfa Yapısı ve CSS Kullanımı">(X)HTML Sayfa Yapısı ve CSS
+Kullanımı</a>, <a href="http://www.fatihhayrioglu.com/ozellik-secicileriattribute-selectors/" title="Özellik Seçicileri(Attribute Selectors)">Özellik Seçicileri(Attribute Selectors)</a> ve
+<a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/" title="Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)">Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)</a>
+makalelerini bir göz atın.</p>
+<h3>Performanslı CSS Seçicileri Seçiminde Anahtar Seçicinin Önemi</h3>
+<p>CSS Seçicilerinin performans kazandırma çalışmalarına başlamadan önce
+ilk bilmemiz gereken tarayıcıların CSS seçicilerini nasıl yorumladığını
+bilmekten geçiyor. Ben daha önceleri ki bu makaleyi yazmadan önce
+diyebilirim buna, css kodu yazarken seçicilerin soldan sağa doğru
+okunduğunu düşünerek kodumu yazardım ama gerçek böyle değilmiş.
+<strong>Tarayıcılar CSS seçicilerini sağdan solda doğru okurlar.</strong> Tabi bu
+bilgiden sonra yazdığımız kodları buna göre düşünerek yazmalıyız.</p>
+<p>[sourcecode language="css"] ul li a#smUrunler{color:#000;
+background:url(../images/menu.png) 0 0 no-repeat; } [/sourcecode]</p>
+<p>Yukarıdaki tanımlamada ilk olarak tarayıcı doküman içinde geçen
+a#smUrunler seçicisini bulacaktır, bu seçiciye anahtar seçici deniyor.
+Bir bakıma elemanı yakalamak için anahtar oluyor tarayıcıya.</p>
+<p>Bu bize gösteriyorki css kodlarımızı yazarken buna dikkat etmemiz ve
+buna göre kod yazmamız gerekiyor.</p>
+<p>[sourcecode language="css"] ul#solMenu li a{color:#000;
+background:url(../images/menu.png) 0 0 no-repeat; } [/sourcecode]</p>
+<p>şeklindeki bir tanım önerilmiyor. Bu tanımda sağdan sola doğru
+yorumlandığını düşünürsek dokümandaki tüm bağlantıları(\&lt;a>)
+arayacaktır tarayıcı. Bunun yerine</p>
+<p>[sourcecode language="css"] ul li a#smUrunler{color:#000;
+background:url(../images/menu.png) 0 0 no-repeat; } [/sourcecode]</p>
+<p>Tanılaması daha efektif bir sonuç verecektir. Tarayıcı direk olarak
+a#smUrunler seçicisi ile elemanı bulacaktır.</p>
+<p><a href="http://stevesouders.com/efws/css-selectors/baseline.php" title="stevesouders.com'un test sayfasını">stevesouders.com'un test sayfasını</a> incelersek sonucu daha iyi
+anlayacağız.</p>
+<p>Aynı öneriyi bize Google'un Page Speed eklentisi test sonucuda
+verecektir. Google'un hıza önem verdiğini biliyoruz bu konuda <a href="http://code.google.com/speed/page-speed/docs/rendering.html" title="google'un önerileride">google'un
+önerileride</a> Mozilla'dan farklı değil.</p>
+<h3>Mozilla makalesindeki önerileri sıralarsak</h3>
+<p><strong>Evrensel kuralları önleyiniz</strong><br />
+CSS seçicilerini yazarken son tanımda evrensel bir seçici kullanmayın.</p>
+<p><strong>Tekil Seçicileri(id) etiketlerle nitelemeyin</strong><br />
+Tekil seçiciler zaten en hızlı erişilen seçicilerdir. Bunları tekrar
+etiket ile nitelemeye gerek yoktur.</p>
+<p>[sourcecode language="css"] a#slUrunler{...} [/sourcecode]</p>
+<p>yerine</p>
+<p>[sourcecode language="css"] #smUrunler{...} [/sourcecode]</p>
+<p>şeklinde kullanın.</p>
+<p>Etiketler ile nitelemenin o seçiciyi kod okunurken daha anlamlı hale
+getirdiğini düşünüyorum. ancak Firebug ile kod takibi yaptığımız bu
+günlerde artık buda kabul gören bir tanım değildir. Ben kod yazarken son
+zamanlarda çok kullanıyordum bu tanımlamayı, artık veda edeceğiz.</p>
+<p><strong>Sınıf Seçicileri etiketlerle nitelemeyin</strong><br />
+Yukarıda anlattığımız gibi burası içinde geçerlidir.</p>
+<p>[sourcecode language="css"] td.taraftarSayi{} [/sourcecode]</p>
+<p>yerine</p>
+<p>[sourcecode language="css"] .taraftarSayi{} [/sourcecode]</p>
+<p>şeklinde kullanın.</p>
+<p><strong>Torun Seçiciler veya çocuk Seçicler Yerine Özel sınıflar Atayın</strong><br />
+Uzun seçici listesi kullanmak yerine daha özel bir sınıf tanımı yapın.</p>
+<p>[sourcecode language="css"] ul li a{...} [/sourcecode]</p>
+<p>yerine a'ya smUrunler sınıfını atayıp</p>
+<p>[sourcecode language="css"] .smUrunler{...} [/sourcecode]</p>
+<p>şeklinde kullanın.</p>
+<p><strong>Torun Seçicileri yerine Çocuk Seçicileri Kullanın</strong><br />
+Seçici tiplerinden torun seçicileri en yavaş yöntemlerden biridir.
+Çocuk seçicileri nispeten daha avantajlıdır. Daha iyisi için bir sonraki
+öneriye bakın.</p>
+<p><strong>Etiket Kategorilerinde Çocuk Seçicileri Kullanmayın</strong><br />
+Etiket tabanlı çocuk seçicileriniz yerine özel seçici kullanınız.</p>
+<p>[sourcecode language="css"] treehead > treerow > treecell {...}
+[/sourcecode]</p>
+<p>yerine</p>
+<p>[sourcecode language="css"] .treecell-header {...} [/sourcecode]</p>
+<p>kullanın.</p>
+<h3>CSS 3 ile gelen avantajlar</h3>
+<p>CSS seçicilerine CSS3 ile birlikte daha özel seçiciler geliyor. Bu
+seçiciler sayesinde daha optimize kodlar elde edeceğiz. Şimdilik
+İnternet Explorer'un mevcut sürümleri bu kullanıma izin vermese de
+gelecekte işimiz daha kolay olacak.</p>
+<h3>Sonuç</h3>
+<p>Yukarıdaki önerileri dikkate alarak kodlarımızı yazmalıyız. Ancak bunlar
+kesin kurallar değildir ve uygulamada bazen bu kurallar uymakta
+zorlanabiliriz. Benim önerim bu kuralları dikkate alarak yazmaya
+çalışalım, olmadı isede kendimizi paralamayalım.</p>
+<p>CSS seçicilerinin etkin kullanılması küçük çaplı projelerde çok büyük
+etkisi olmasa da büyük projelerde performans açısından çok önemli
+olduğunu düşünüyorum. Tabi şöyle bir durumda var css kod yazma
+alışkanlığı kazanan bir arayüz geliştirici için bu küçük buna böyle
+yazayım bu büyük buna böyle yazayım diye bir ayrım yapmasıda pek
+mantıklı ve mümkün değildir. Bu nedenle kendi standardımızı en iyiye
+göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.</p>
+<ul>
+<li>[https://developer.mozilla.org/en/Writing_Efficient_CSS][]</li>
+<li><a href="static">http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/</a></li>
+<li>O'Reilly - Even Faster Websites.pdf 14. konu</li>
+<li><a href="static">http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/</a></li>
+<li><a href="http://ajaxian.com/archives/css-child-selector-performance" title="http://ajaxian.com/archives/css-child-selector-performance">http://ajaxian.com/archives/css-child-selector-performance</a></li>
+<li><a href="http://jackslocum.com/blog/2007/07/10/css-selectors-speed-myths/" title="http://jackslocum.com/blog/2007/07/10/css-selectors-speed-myths/">http://jackslocum.com/blog/2007/07/10/css-selectors-speed-myths/</a></li>
+<li><a href="http://hacks.mozilla.org/2009/06/dom-selectors-api/" title="http://hacks.mozilla.org/2009/06/dom-selectors-api/">http://hacks.mozilla.org/2009/06/dom-selectors-api/</a></li>
+<li>[http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors][]</li>
+<li><a href="static">http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/</a></li>
+<li><a href="http://www.infoq.com/news/2009/01/jquery-1.3" title="http://www.infoq.com/news/2009/01/jquery-1.3">http://www.infoq.com/news/2009/01/jquery-1.3</a></li>
+<li><a href="http://code.google.com/speed/page-speed/docs/rendering.html" title="http://code.google.com/speed/page-speed/docs/rendering.html">http://code.google.com/speed/page-speed/docs/rendering.html</a>
+    (google'dan notlar)</li>
+<li><a href="static">http://fatagnus.com/guidelines-for-writing-efficient-css-selectors/</a></li>
+<li>[http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors][]</li>
+<li><a href="http://css-tricks.com/efficiently-rendering-css/" title="http://css-tricks.com/efficiently-rendering-css/">http://css-tricks.com/efficiently-rendering-css/</a></li>
+<li><a href="http://www.nuvographics.com/articles/efficientcss/" title="http://www.nuvographics.com/articles/efficientcss/">http://www.nuvographics.com/articles/efficientcss/</a></li>
+<li>[http://www.css-101.org/descendant-selector/go_fetch_yourself.php][]
+    (yeni)</li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">stevesouders</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>06<span class="o">/</span>18<span class="o">/</span><span class="n">simplifying</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">selectors</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">stevesouders</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>06<span class="o">/</span>18<span class="o">/</span><span class="n">simplifying</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">selectors</span><span class="o">/</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">stevesouders</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>03<span class="o">/</span>10<span class="o">/</span><span class="n">performance</span><span class="o">-</span><span class="n">impact</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">selectors</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">stevesouders</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>03<span class="o">/</span>10<span class="o">/</span><span class="n">performance</span><span class="o">-</span><span class="n">impact</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">selectors</span><span class="o">/</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">shauninman</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>2008<span class="o">/</span>05<span class="o">/</span>05<span class="o">/</span><span class="n">css_qualified_selectors</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">shauninman</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>2008<span class="o">/</span>05<span class="o">/</span>05<span class="o">/</span><span class="n">css_qualified_selectors</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">archive</span><span class="p">.</span><span class="n">jpsykes</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>153<span class="o">/</span><span class="n">more</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">performance</span><span class="o">-</span><span class="n">testing</span><span class="o">-</span><span class="n">pt</span><span class="o">-</span>3<span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">archive</span><span class="p">.</span><span class="n">jpsykes</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>153<span class="o">/</span><span class="n">more</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">performance</span><span class="o">-</span><span class="n">testing</span><span class="o">-</span><span class="n">pt</span><span class="o">-</span>3<span class="o">/</span>&quot;
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">fatagnus</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">guidelines</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">writing</span><span class="o">-</span><span class="n">efficient</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">selectors</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">fatagnus</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">guidelines</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">writing</span><span class="o">-</span><span class="n">efficient</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">selectors</span><span class="o">/</span>&quot;
+</pre></div><p>There are <a href=".././css-secicilerinin-optimizasyonu/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././12-ocak-2007-webden-secme-haberler/" rel="bookmark"
+                           title="Permalink to 12 Ocak 2007 Web'den seçme haberler">12 Ocak 2007 Web&#039;den seçme haberler</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2007-01-12T09:02:00">
+                Fri 12 January 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/haberler.html">Haberler</a>. </p>
+<p>tags: <a href=".././tag/arama-motoru.html">arama motoru</a><a href=".././tag/blog.html">blog</a><a href=".././tag/css.html">CSS</a><a href=".././tag/firefox.html">Firefox</a><a href=".././tag/google-calendar.html">Google-Calendar</a><a href=".././tag/id-secicisi.html">Id-Seçicisi</a><a href=".././tag/ie7.html">ie7</a><a href=".././tag/javascript.html">Javascript</a><a href=".././tag/macromedia-dreamweaver.html">Macromedia-Dreamweaver</a><a href=".././tag/performans.html">performans</a><a href=".././tag/rss.html">rss</a><a href=".././tag/web.html">web</a><a href=".././tag/web20.html">web2.0</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>Bir çok gelişme ardı ardına gelince haberlerin boyutuda artıyor. Güzel
+haberler var <!--more--></p>
+<ul>
+<li>CSS ile form kontrolleri hakkında geliştirilmiş bir makale <a href="http://www.456bereastreet.com/archive/200701/styling_form_controls_with_css_revisited/">Link</a></li>
+<li>2006'da en çok yapılan web kodlama hataları. Güzel bir makale
+    <a href="http://www.useit.com/alertbox/9605.html">Link</a></li>
+<li>AltıÜstü Tasarımda geleceğin yükselen değerlerinden cep üzerinden
+    veri alış verişi hakkında bilgi sunulmuş <a href="http://www.unbf.ca/altiustu/arsiv/2007/01/cep20.php">Link</a></li>
+<li>Macromedia Dreamweaver kullanarak ...</li></ul>
+                <a class="readmore" href=".././12-ocak-2007-webden-secme-haberler/">read more</a>
+                <p>There are <a href=".././12-ocak-2007-webden-secme-haberler/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././cssin-yapisi/" rel="bookmark"
+                           title="Permalink to CSS'in Yapısı">CSS&#039;in Yapısı</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2006-06-20T23:24:00">
+                Tue 20 June 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/css-yapi.html">css yapı</a><a href=".././tag/etiket.html">etiket</a><a href=".././tag/evrensel-seciciler.html">Evrensel-Seçiciler</a><a href=".././tag/gruplama.html">Gruplama</a><a href=".././tag/id-secicisi.html">Id-Seçicisi</a><a href=".././tag/ozellik.html">özellik</a><a href=".././tag/sinif-secicisi.html">Sınıf Seçicisi</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+                <h5>CSS'in Yapısı</h5>
+<p>CSS'in yapısı iki ana kısımdan oluşur. Seçiciler(Selector) ve Bildirim
+Bloğu(Declaration Block). Bildirim Bloğuda iki ye ayrılır.
+Özellik(Property) ve Değer(Value). <!--more--> <img alt="" src="http://www.fatihhayrioglu.com/images/css_genel_yapi.gif" /></p>
+<div class="not">
+<div class="notbaslik">
+Not
+
+</div>
+
+<p>XML de Seçiciler HTML elementleri dışında yeni oluşturulan elementlerde
+olabilir.</p>
+<p></div>
+Tüm HTML elementleri potansiyel Seçicilerdir. Seçiciler ismini de
+buradan alır, HTML seçilen ...
+                <a class="readmore" href=".././cssin-yapisi/">read more</a>
+                <p>There are <a href=".././cssin-yapisi/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

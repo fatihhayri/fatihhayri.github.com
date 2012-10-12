@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>İE7 Bitişik Kardeş Seçicisi Sorunu</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="ie7-bitisik-kardes-secicisi-sorunu/" rel="bookmark"
+           title="Permalink to İE7 Bitişik Kardeş Seçicisi Sorunu">İE7 Bitişik Kardeş Seçicisi Sorunu</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2011-09-06T18:45:00">
+                Tue 06 September 2011
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/bitisik-kardes-seciciler.html">bitişik kardeş seçiciler</a><a href=".././tag/ie7.html">ie7</a><a href=".././tag/sorun.html">sorun</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>Geçen hafta “IE6 Sonrası Kod Yazma Alışkanlıklarımızı Güncellemek” adlı
+makale ile ie6 ile vedalaştık. Tabi orada söylediğimiz gibi ie6’nın
+bitmiş olması sorunlarımızın bitmiş olduğu anlamına gelmiyor. İşte
+sizinle o makalede artık rahat rahat kullanabileceğimizi söylediğimizi
+Bitişik Kardeş Seçicisi ile ilgili bir sorunu burada sizlerle
+paylaşacağım.</p>
+<p>Çözümü çok basit olan bir sorun ama bu sorunu anlatmamın nedenlerinden
+biriside sorunların olacağı, ama bizim bu sorunları görüp çözmemiz
+gerektiğini anlatmaktır. İyi bir arayüz geliştirici ve hatta iyi bir
+programcı hataları bulup üzerine gidip çözebilendir.</p>
+<p>Soruna gelirsek; Sorun Bitişik Kardeş Seçicileri kullandığımız elemanlar
+arasında eğer HTML yorum satırı eklersek ie7 bitişik kardeş seçicisi ile
+tanımladığımız bildirimleri yorumlamıyor.</p>
+<p>[html] \&lt;h2>Başlık\&lt;/h2> \&lt;!-- html yorumu --> \&lt;p>Paragraf\&lt;/p>
+[/html]</p>
+<p>CSS kodu</p>
+<p>[css] h2 + p { background-color: #fc0; } [/css]
+<iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/Ubk9Q/embedded/result,html,css"></iframe></p>
+<p>Uygulaması bütün tarayıcılarda sorunsuz çalışırken ie7’de sonuç
+vermeyecektir. DOM’daki öğelerin konumuna göre çalışan bu seçicinin
+çalışmasında ie7 aradaki yorum satırlarınıda dikkate alarak istenen
+sonucunu vermediğini göreceğiz.</p>
+<p>Çözüm için yorum satırını kullanmaya ne gerek var silelim demek ve
+yorumları silmek bir çözümdür. Ama ben ie ile sorun yaşıyorum diye yorum
+satırımı silmek istemem. Çözüm<a href="http://www.fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/">ie6 sorunları</a> ile uğraşırken
+bulduğumuz şekilde olacaktır. Şartlı yorumları kullanarak çözüme
+ulaşmakta mümkündür.</p>
+<p>[html] \&lt;h2>Başlık\&lt;/h2> \&lt;!--[if !IE]>Başlık yaz \&lt;![endif]-->
+\&lt;p>Paragraf\&lt;/p> \&lt;p>Paragraf 2\&lt;/p> [/html]</p>
+<p>Şeklinde bir çözüm işimizi görecektir.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://oncemade.com/adjacent-sibling-selector-bug-ie7/">http://oncemade.com/adjacent-sibling-selector-bug-ie7/</a></li>
+<li>[http://www.fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/][ie6
+    sorunları]</li>
+</ul>
+</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "ie7-bitisik-kardes-secicisi-sorunu/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>PSD'den HTML'e – fanatikmarslar.com Sitesinin Kodlaması II</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="psdden-htmle-fanatikmarslarcom-sitesinin-kodlamasi-ii/" rel="bookmark"
+           title="Permalink to PSD'den HTML'e – fanatikmarslar.com Sitesinin Kodlaması II">PSD&#039;den HTML&#039;e – fanatikmarslar.com Sitesinin Kodlaması II</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2010-01-06T01:09:00">
+                Wed 06 January 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/adim-adim-kodlama.html">adım adım kodlama</a><a href=".././tag/css.html">CSS</a><a href=".././tag/css-kodlama-duzeni.html">css-kodlama-düzeni</a><a href=".././tag/css-layout.html">CSS-Layout</a><a href=".././tag/farkli-tarayicilara-gore-kod-yazmak.html">farklı tarayıcılara göre kod yazmak</a><a href=".././tag/ie6.html">ie6</a><a href=".././tag/kapsayamama-sorunu.html">kapsayamama-sorunu</a><a href=".././tag/kutu-modeli.html">Kutu-Modeli</a><a href=".././tag/psdtohtml.html">psdtohtml</a><a href=".././tag/site-kodlama.html">site-kodlama</a></p>
+
+
+</footer><!-- /.post-info -->
+      <h3>Ana Sayfa Kodlaması</h3>
+<p>Bir önceki makalemde sizlere kodlamaya başlamadan önceki süreci
+anlattım. Şimdi sizlerle sitenin Ana Sayfasını nasıl kodladığımı
+anlatmaya çalışacağım. Bu makaleye yazacağımı düşünerek kodlama yaparken
+notlar tutmuştum, bu makale biraz da o notların derlemiş hali şeklinde
+olacaktır.</p>
+<ul>
+<li><a href="http://www.fatihhayrioglu.com/fanatikmarslar-com-sitesinin-kodlamasi/">I -Kodlama Öncesi Hazırlıklar</a></li>
+<li>II – Ana Sayfa Kodlaması (bu sayfa)</li>
+<li>III – Alt Sayfaların Kodlaması (yayına hazırlanıyor...)</li>
+</ul>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/anasayfa_kuc.jpg" title="anasayfa_kuc" />][]</p>
+<!--more-->
+
+<p>İlk olarak site ardalan resmini jpeg olarak kaydediyorum. jpeg seçmemin
+nedeni Adobe Phoshop'da "Save for Web.." ile kaydederken en küçük boyut
+ve en iyi görüntüyü vermesidir. Resimleri kaydederken eğer az renk varsa
+gif, çok fazla renk varsa jpeg kaydediyorum, son zamanlarda png'yi
+deniyorum ara sıra. Ardalan resmi biraz farklı bir yapıya sahip
+tekrarlayan kısmı biraz geniş olduğu için geniş kesmek durumunda kaldık.
+Ardalan resmini body'ye atıyorum.</p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/ardalan-266x300.jpg" title="ardalan" />][]</p>
+<p>Sayfa ve site sabit bir genişlikte ve ortalı olduğu için ana bir
+kapsül(<strong>anaKapsul</strong>) için alıyorum. katmanı kapattığım yere bir not
+düşüyorum ki nerede bittiğini bilelim.</p>
+<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
+1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
+xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+http-equiv="Content-Type" content="text/html; charset=utf-8" />
+\&lt;title>FanatikMarşlar.Com\&lt;/title> \&lt;style type="text/css"> \&lt;!--
+@import url("style/fanatikmarslar.css"); --> \&lt;/style> \&lt;/head>
+\&lt;body> \&lt;div id="anaKapsul"> \&lt;/div>\&lt;!--[if !IE]>anaKapsul
+sonu\&lt;![endif]--> \&lt;/body> \&lt;/html> [/sourcecode]</p>
+<p>İE6 ile bazı sorunları yaşamamak için yorum satırlarını biraz daha
+farklı kodluyorum. Detay için <a href="http://www.fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/">IE6'un Tekrarlayan Karakter Sorunu</a>
+makalemi okumanızı tavsiye ediyorum. Zamanla alışkanlık haline gelen bu
+yorum kodunu Adobe Dreamweaver'da <strong>Snippets</strong>'e ekledim böylelikle daha
+kolay oluyor eklemesi.</p>
+<p>Şimdi sayfayı ortalamak için css kodumuzu yazalım. Açalım
+fanatikmarslar.css dosyasını ve yazmaya başlayalım.</p>
+<p>[sourcecode language="css"]
+/**************************************************
+genel tanimlar */ body{ background:url(../images/ardalan.jpg) 0 0
+repeat;} #anaKapsul{width:990px; margin:20px auto; background:#fff
+url(../images/ust_ard.gif) 0 0 no-repeat;} [/sourcecode]</p>
+<p>Ayrıca sayfa kenarları oval bunları ardalan resmi olarak anaKapsul
+ardalan resmi olarak tanımlayabiliriz.</p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/ders_03-300x113.jpg" title="ders_03" />][]</p>
+<h3>Üst Alanın Kodlaması</h3>
+<p>Eskizdeki gibi sayfayı belli bölümlere ayırarak kodluyorum. <strong>ustAlan</strong>
+tanımlamasını yaparken kendi genel standart isimlendirme sistemimi
+kullanıyorum. İsimlendirme yapılırken ilk harf küçük sonraki baş harfler
+ayrımı kolaylaştırmak için büyük ve bitişik yazılır. İsimlendirme ve kod
+yazma düzeni hakkında daha ayrıntılı bilgi için <a href="http://www.fatihhayrioglu.com/css-kod-yazma-duzeni/">CSS kod Yazma Düzeni</a>
+makalemi okuyunuz.</p>
+<p><strong>Logo ve Banner alanı</strong></p>
+<p>Logo ve yanındaki banner alanını kodlamaya başlarken bu iki alanı bir
+satır gibi düşünerek bir katman içine alıyorum. Bu katmana
+<strong>logoBannerAlani</strong> adını veriyorum. Her satırı böyle kapsayıcı bir
+katman içine almak bize bir çok yönü ile kolaylık sağlayacaktır. Logoyu
+sola yaslıyoruz ve üstten 14px yukarı çekiyoruz(logoyu yukarı çekerken
+eksi margin de kullanabiliriz ancak ie6 sorun yaşamayalım diye position
+ve top özellikleri yardımı ile yukarı çektik). Banner'ı logonun yanına
+koymak için float:left ve genişlik tanımı yapıyoruz ve logo ile
+arasındaki mesafeyi ve yukarıda mesafeyi ayarlamak için kenar dış
+boşluğu mesafelerini(margin) tanımlıyoruz.</p>
+<p>HTML kodu</p>
+<p>[sourcecode language="html"] \&lt;div id="logoBannerAlani"
+class="kapsayamamaSorunu"> \&lt;div id="logo">\&lt;img src="images/logo.gif"
+width="226" height="126" alt="Fanatikmarslar.com" />\&lt;/div> \&lt;div
+id="ustBanneralani">\&lt;img src="images/ust_banner.gif" width="728"
+height="90" />\&lt;/div> \&lt;/div> [/sourcecode]</p>
+<p>CSS Kodu</p>
+<p>[sourcecode language="css"] #logoBannerAlani{margin-bottom:10px;}
+#logo{float:left; width:226px; position:relative; top:-14px; left:6px;}
+#ustBanneralani{float:left; width:728px; margin:14px 0 0 16px}
+[/sourcecode]</p>
+<p><strong>Menü ve Arama Alanı</strong></p>
+<p>Menü ve arama bölümünü kodlarken menü alanının genişleyebileceğini
+düşünerek. Arama alanına float:right tanımı menü alanına <strong>float:left</strong>
+tanımı yapıyoruz. Arama alanı genişliğini tanımlarken menü alanı
+genişliği değişebileceği için genişlik tanımlamıyoruz. Menü alanını
+listeler(ul) ile kodluyoruz(ul) liste elemanlarını yan yana dizmek için
+ul li ye <strong>float:left</strong>tanımı yapıyoruz. "Sesi Kapat" flash olacağı için
+bu bölümün yazı tipi özelliklerini tanımlamadan geçiyoruz, diğer
+linklerin tanımlarını yapıyoruz. Arama kısmında dışa arama alanı ardalan
+resmini atıyoruz. input alanı ve button alanı ekliyoruz. Niye <strong>button</strong>
+kullanıyoruz <strong>input type="submit"</strong> kullanmıyoruz derseniz.
+type="submit" elemanına direk erişemediğimizden. input ve button
+elemanlarımıza float:left ve genişlik tanımı yaparak yan yana koyuyoruz
+ve yine yorum kodlarımızı ekliyoruz.</p>
+<p>[sourcecode language="html"] \&lt;div id="menuAramaAlani"
+class="kapsayamamaSorunu"> \&lt;div id="aramaAlani"> \&lt;input type="text"
+id="ara" name="ara" value="Arama"
+onfocus="if(this.value=='Arama'){this.value=''};"
+onblur="if(this.value==''){this.value='Arama'};" />
+\&lt;button>\&lt;/button> \&lt;/div> \&lt;ul id="ustMenu"> \&lt;li>Sesi
+Kapat\&lt;/li> \&lt;li>\&lt;a href="">Giriş Yap\&lt;/a>\&lt;/li> \&lt;li>\&lt;a
+href="">Sen de Katıl!\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="">Fanatik Marşlar
+Nedir?\&lt;/a>\&lt;/li> \&lt;/ul> \&lt;/div>\&lt;!--[if
+!IE]>menuAramaAlani\&lt;![endif]--> [/sourcecode]</p>
+<p><strong>Büyük Resim</strong></p>
+<p>Büyük resmin olduğu kısmı ve bu resmin üzerindeki "Tezahürat Gönder"
+butonunu kodlarken; Büyük resmi bir katman oluşturup bunun ardalanına
+koyup tezahürat gönder düğmesini de alt ve sağdan 21px mesafede koymak
+için büyük resmi ardalanına atadığımız katmana position:relative
+tanımlıyoruz ve düğmeye position:absolute, bottom:0 ve right:21px tanımı
+yapıyoruz. ie6'da alttan 1px kadar fazlalık vardı bu durumda ie6 özel
+kodu ile aştım. ie6 için bottom:-1px; tanımı yaptım. Tarayıcılar için
+özel kodlar hakkında detaylı bilgi için <a href="http://www.fatihhayrioglu.com/tum-tarayicilar-icin-css-duzeltmelerihack/">tıklayınız</a></p>
+<p>[sourcecode language="html"] \&lt;div id="buyukResim"> \&lt;a href="">\&lt;img
+src="images/tezahurat_gonder_but.jpg" width="181" height="45"
+alt="Tezahürat Gönder" />\&lt;/a> \&lt;/div> [/sourcecode]</p>
+<p><strong>Önemli Sözler</strong></p>
+<p>Önemli sözler kısmı beni biraz düşündürdü. Kodlarken bu alanı normal
+akış dışına çıkarmalıydım. Bunun için <strong>position:relative</strong> tanımı ve
+genişlik ve yükseklik tanımı yaptım. Ana kapsayıcı katmanın dışına
+çıkarmak içinde eksi left ve margin-right değeri verdim ve oldu.</p>
+<p>[sourcecode language="html"] \&lt;div id="manset"> \&lt;p>"Real Madrid'den
+korkmuyoruz"\&lt;strong>Didier Deschamps\&lt;/strong>\&lt;/p> \&lt;/div>
+[/sourcecode]</p>
+<h3>İçerik Alanının kodlaması</h3>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/icerik_alani.jpg" title="icerik_alani" />][]</p>
+<p>Ana Sayfa içerik alanını üç kolona ayırıyoruz. Sol, orta ve sağ kolon.</p>
+<p><strong>Sol İçerik Alanının Kodlanması</strong></p>
+<p>Sol kolona genişlik ve float tanımı yaparak yerleştiriyoruz.</p>
+<p>Başlıklara h1 ile tanımlıyoruz ve özelliklerini veriyoruz.</p>
+<p>Html kodu;</p>
+<p>[sourcecode language="html"] \&lt;div id="solIcerikAlani"> \&lt;h1>Tezahürat
+Ligleri\&lt;/h1> ..... \&lt;/div> [/sourcecode]</p>
+<p>CSS kodu;</p>
+<p>[sourcecode language="css"] #solIcerikAlani{float:left; width:200px;
+margin-right:20px} #solIcerikAlani h1{margin-left:10px} [/sourcecode]</p>
+<p><strong>Lig Menüsü</strong></p>
+<p>Lig menüsünü her zamanki ardalan kaydırmaca yöntemi ile kodluyoruz. ul
+listleri ve her liste elemanına ilgili id isimlerini veriyoruz. Daha
+sonra bu adlandırdığımız öğelere backgroud-position ile ilgili
+resimlerini atıyoruz. Metodun genel mantığı tek bir resim üretip öğelere
+farklı background-postion değeri ile kendi background'unu vermek. Metot
+ve uygulama hakkında detaylı bilgi almak için <a href="http://www.fatihhayrioglu.com/basit-resimli-menu-yapmak/">basit menü yapımı</a>
+makalemi okuyunuz.</p>
+<p>HTML Kodu</p>
+<p>[sourcecode language="html"] \&lt;ul id="ligMenu"> \&lt;li id="superLig">\&lt;a
+href="">Turkcell Super Lig\&lt;/a>\&lt;/li> \&lt;li id="birinciLig">\&lt;a
+href="">Bank Asya 1. Lig\&lt;/a>\&lt;/li> \&lt;li id="digerLigler">\&lt;a
+href="">Diğer Ligler\&lt;/a>\&lt;/li> \&lt;li id="dunyadanTezahuratlar">\&lt;a
+href="">Dünyadan Tezahüratlar\&lt;/a>\&lt;/li> \&lt;/ul> [/sourcecode]</p>
+<p>CSS Kodu</p>
+<p>[sourcecode language="css"] ul#ligMenu{margin-bottom:10px} ul#ligMenu
+li{ background:url(../images/lig_menu.gif) 0 0 no-repeat;} ul#ligMenu
+li a{text-indent:-9999px; display:block; margin-bottom:1px; width:200px;
+height:45px; } ul#ligMenu li#superLig{ background-position:0 0;}
+ul#ligMenu li#birinciLig{background-position:0 -46px;} ul#ligMenu
+li#digerLigler{background-position:0 -92px;} ul#ligMenu
+li#dunyadanTezahuratlar{background-position:0 -138px;} [/sourcecode]</p>
+<p><strong>Zirvedeki Taraftarlar</strong></p>
+<p>Zirvedeki taraftarlar kısmını tablo ile kodlayacağız.</p>
+<p>CSS ile kodlama yaparken bazılarının yanlış anladığı bir nokta vardır.
+Katmanlarla kodlama yaparken hiç tablo kullanmamalıyız yanılgısına düşer
+bazı arkadaşlar. Aslında durum böyle değildir. Anlamalı kodlama
+açısındanda sakıncalı olan bu anlayış yanlıştır. HTML sayfalarımızı
+oluştururken her elemanın ilgili etiketleri ile kodlamalıyız. Bu
+anlaşılabilirlik ve anlamlı kod yazma açısından önemlidir ve karmaşayı
+engeller. HTML sayfalarını oluşturmak için çeşitli yöntemler vardır bizi
+sonucu götüren ancak biz en uygun olan yolu bulmalıyız ve kodlamayız.
+Peki en uygun yöntem hangisidir buna nasıl karar vereceğiz noktasında
+kalırsak. Her zaman standartlar ve anlamlı kodlama yolunu seçmeliyiz.</p>
+<p>Tabloyu kodlarken sayı kolonu için bir sınıf tanımlayıp özelliklerini
+atarız ve kolonu seçip bu sınıfı tüm hücrelere tanımlarız. Bu tüm hücre
+seçip sınıf atma işini dw ile kolayca yapabiliriz. Ayrıca tablo geneline
+yazı tipi ve renk tanımı yaparak genel tablo özelliklerimizi atadıktan
+sonra isim kısmı ve puan kısmını büyük yapmak için bu kısımları normal
+içerikten ayırmamız gerekir. Ben bunun için bu alanları strong etiketi
+içine aldım. Böylece direk html elemanına etki edebilecek ve istediğim
+değerleri atayabilecektim.</p>
+<p><strong>Not:</strong> Kodlarımı yazarken hep mümükün oldukça html elemanlarını(p,
+strong, em, span, ul, li) kullanmaktan yanayım. Çünkü html elemanlarını
+tarayıcılar daha hızlı yorumlayacaktır, ayrıca yalın html kodumuzda daha
+düzenli duracaktır.</p>
+<p>Logoları bir resim olarak hazırlayıp css sprite(ardalan kaydırma)
+yöntemi ile bu logoları kodladık.</p>
+<p>[sourcecode language="html"] \&lt;tr class="farkliSatir"> \&lt;td width="16%"
+align="center" valign="middle" class="taraftarSayi">1\&lt;/td> \&lt;td
+width="18%" align="center" valign="middle">\&lt;div
+class="logoTrabzon">Trabzon\&lt;/div>\&lt;/td> \&lt;td width="51%"
+valign="middle">\&lt;a href="">\&lt;strong>Fatih\&lt;/strong>
+Trabzon\&lt;/a>\&lt;/td> \&lt;td width="15%" align="center"
+valign="middle">\&lt;strong>28\&lt;/strong>\&lt;/td> \&lt;/tr> [/sourcecode]</p>
+<p>Tablonun tek satırını incelersek kod yapısını anlayacağız. tr'deki
+<strong>farkliSatir</strong> sınıfı bir satırın açık bir satırın daha kapalı bir renk
+tanımı yapmak içindir. İlk hücremiz 1'den 10'a kadar sayılar olacağı
+kolon bu sayıların her biri aynı özellikleri taşıdığı için bu kolondaki
+hücrelere <strong>taraftarSayi</strong>sınıfını tanımladım ve özellikleri bu sınıfa
+atadım.</p>
+<p>Site genelinde kullanılacak logoları düşününce bunları bir resim dosyası
+olarak hazırlayayım ve ardalan kaydırma metodu ile çağırayım diye
+düşündüm. CSS Sprite adı verilen bu tekniği bir çok yerde kullanıyoruz
+artık. Metodun çıkış amacı bir çok resmi ayrı ayrı sayfada çağırınca her
+istek bir zaman aşımına neden oluyor, resmi teke indirdiğimizde tek
+resim ve tek istek olduğu için bu zaman aşımından kurtulmuş oluyoruz.</p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/takim_logolari.gif" title="takim_logolari" />][]</p>
+<p>[sourcecode language="css"] table#taraftarZirveTablo td div{
+display:block; width:32px; height:32px; text-indent:-9999px;
+background:url(../images/takim_logolari.gif) 0 0 no-repeat} .... ....
+div#icerikAlani div.logoTrabzon{ background-position:right -105px}
+div#icerikAlani div.logoGalatasaray{ background-position:right -69px}
+div#icerikAlani div.logoFenerbahce{ background-position:right 2px}
+div#icerikAlani div.logoGaziantep{ background-position:right -574px}
+...... [/sourcecode]</p>
+<p>Logoları daha optimum kodlamak için iki farklı tanım ile aynı kodun
+tekrarını önledik. <strong>table#taraftarZirveTablo td div</strong> tanımında genel
+özellikleri tanımladık, daha sonra her takım logosu için sadece
+<strong>background-position</strong> tanımı yaptık, böylece her takım için birbirini
+tekrarlayan kodları tek elde topladık ve kodumuz daha az oldu.</p>
+<p>Sol kolonda son olarak "Takımını Destekle!" ve "Takip Et!" kısımlarını
+kodladık. Ben sitede toplu olarak iki adet resim toplama(css sprite)
+tekniği uyguladım. Birincisi yukarıda anlattığım logolar için diğeri ise
+sitedeki sprite tekniğine uyacak diğer resimler için.</p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/genel_resim.gif" title="genel_resim" />][]</p>
+<p>yukarıdaki resim site genelinde uyguladığım sprite tekniği sonucu ortaya
+çıkmıştır. CSS Sprite tekniği hakkında genel bir makale ayrıca
+yazacağım, ama burada da yeri geldikçe metot hakkında bilgi vereceğim.
+"Takımını Destekle!" ve "Takip Et!" kısımları başlıkları ve resimleri
+olan kısımlar, bunların sabit genişlik ve yüksekliği olduğu için CSS
+Sprite'a en uygun alanlar oldular. Genişleyebilir alanlarda sprite
+tekniğini kullanırken daha dikkatli olmalıyız.</p>
+<p>HTML kodu</p>
+<p>[sourcecode language="html"] \&lt;h1>Takımını Destekle!\&lt;/h1> \&lt;a
+id="tezahuratgonderBanner" href="">Sende tezahürat gönder takımını
+Tezahürat Ligi'nde Şampiyon yap!\&lt;/a> \&lt;h1>Takip Et!\&lt;/h1> \&lt;a
+id="twitterTakip" href="">Fanatik Marşları Twitter'da takip edin\&lt;/a>
+[/sourcecode]</p>
+<p>CSS kodu;</p>
+<p>[sourcecode language="css"] a#tezahuratgonderBanner{
+background:url(../images/genel_resim.gif) 0 -88px no-repeat;
+width:188px; height:88px; display:block; text-indent:-9999px; margin:0 0
+10px 10px} a#twitterTakip{background:url(../images/genel_resim.gif) 0
+-176px no-repeat; width:175px; height:50px; display:block;
+text-indent:-9999px; margin-left:10px} [/sourcecode]</p>
+<p>Böylece sol kolon kodlamasını bitirdik.</p>
+<h3>Orta İçerik Alanının Kodlanması</h3>
+<p>Orta içerik alanının genişlik ve float tanımı yapıyoruz.</p>
+<p>[sourcecode language="css"] #ortaIcerikAlani{float:left; width:440px;
+margin-right:20px} [/sourcecode]</p>
+<p>Sonra üstteki resmi ekliyoruz.</p>
+<p>[sourcecode language="html"] \&lt;img src="images/orta_resim.jpg"
+width="440" height="250" alt="Fanatikler" /> [/sourcecode]</p>
+<p>Sonra Lig Tablosunu kodlamaya başlıyoruz.</p>
+<p><strong>Lig Tablosu</strong></p>
+<p>Lig Tablosu içeriğini bir tablo yapacağız. Üst ve alttaki oval kenarları
+ayrı bir katmana koyup, ardalan resmi olarak kodlayacağız. Peki resim
+değilde niye ardalan resmi olarak koyduk. Ardalan resimlerini tek bir
+resim şeklinde hazırlayıp kodlarken iki ayrı resim gibi
+kullanabiliyoruz. Ancak resim olarak hazırlasa idik, iki ayrı resim
+hazırlamak ve eklemek durumunda olacaktık, buda daha fazla http isteği
+demek oluyor.</p>
+<p>[sourcecode language="css"] div#ligTabloUstu{ display:block;
+text-indent:-9999px; width:440px; height:5px;
+background:url(../images/puan_tablosu.gif) 0 0 no-repeat} ....
+div#ligTablosuAlti{display:block; text-indent:-9999px; width:440px;
+height:5px; background:url(../images/puan_tablosu.gif) 0 bottom
+no-repeat}} [/sourcecode]</p>
+<p>Tabloyuda bir katman içini alıp kenar boşluğunu katmandan vereceğiz. Bu
+kenar boşluklarını tablo içindende verebilirdik, ancak tablomuz işlevi
+dışında kullanmış olurduk, tablo sadece lig tablosu amacı ile kullanmak
+daha anlamlı.</p>
+<p>[sourcecode language="css"] div#ligTabloKapsul{width:440px; padding:0
+5px; background-color:#f3f3f3; voice-family: "\"}\"";
+voice-family:inherit; width:430px;} html>body
+div#div#ligTabloKapsul{width:430px;} [/sourcecode]</p>
+<p>Yukarıdaki kodlamada fazladan kodlar dikkatinizi çekmiştir. Kutu modeli
+sorunu olarak Türkçeleştirdiğimiz "box model hack" yöntemidir bu. Bir
+elemana hem genişlik hemde yatay ve dikey padding veya kenar çizgisi
+atadığımızda(her ikisini atadığımız durumlarda da) ie6 ve diğer
+tarayıcılar arasındaki yorumlama sorununu gidermek için kullandığımız
+bir yöntemdir. Ayrıntılı bilgi almak için
+<a href="http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/">http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/</a>
+inceleyin.</p>
+<p>Tablomuz standart bir tablo en sağdaki kolonumuz sayıları içeren farklı
+renk ve boyutta rakamlar içeriyor. Birde her satırın altında gri bir
+kenar çizgimiz(border) var.</p>
+<p>En sağ kolon için bir sınıf tanımı yapıp kolon boyunca bunu uyguluyoruz.</p>
+<p>[sourcecode language="css"] table#ligTablosu td.sayi{font:bold 18px
+Arial, Helvetica, sans-serif; color:#acd1e1} [/sourcecode]</p>
+<p>Her satırın altındaki kenar çizgisini atamak için ilk olarak (tr)
+elemanına tanımladım ancak burada ie6 ile sorun yaşadım. Çözüm için
+<a href="http://www.fatihhayrioglu.com/internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/">tıklayınız</a>. Bu detay sayfasındaki makaleyi burada yaşadığım
+sorundan sonra yazdım. Genelde makalelerim sorun-çözüm makaleleri böyle
+çıkıyor. Bir sorun ile bir kaç defa karşılaştıktan sonra çözüm ve
+önerilerini siteye yazıyorum. Hem aklımda kalmış oluyor hemde bir daha
+karşılaştığımda çözümü nerede bulacağımı biliyorum. Tabi birde
+insanlarla paylaşıp aynı sorunu yaşayan insanlara yardımcı olmak gibi
+güzel bir yanıda var.</p>
+<p>[sourcecode language="css"] table#ligTablosu{border-collapse:collapse;
+} table#ligTablosu td{padding:1px 2px; font:14px Arial, Helvetica,
+sans-serif; color:#828282; border-bottom:1px solid #d5d5d5;}
+[/sourcecode]</p>
+<p>En son satırda kenar çizgisi olmayacağı için son satıra bir sınıf atayıp
+kenar çizgisini kaldırdım.</p>
+<p>[sourcecode language="css"] table#ligTablosu tr.enAlt td{border:0}
+[/sourcecode]</p>
+<p>Ayrıca tablo baş kısmı için içerikten farklı tanımları yaptım (table th)</p>
+<p>[sourcecode language="css"] table#ligTablosu th{font:bold 14px Arial,
+Helvetica, sans-serif; color:#000; padding:5px 2px} [/sourcecode]</p>
+<p><strong>Takım Adı ve Armaları</strong></p>
+<p>Bu tablodaki takım adı ve logoları için sol kolonda yaptığımıza benzer
+kodları kullanıyoruz. Bunu yukarıda sol kolona ait toplu kodlarda
+görebilirsiniz. Aynı tanımlar olduğu için sadece virgül ie yanına
+seçiciyi ekledik.</p>
+<p>[sourcecode language="css"] div#icerikAlani div.logoWerderBremen,
+a.WerderBremen{background-position:right -1440px} [/sourcecode]</p>
+<p>görüldüğü gibi <strong>div#icerikAlani div.logoWerderBremen</strong> kısmı ile
+<strong>a.WerderBremen</strong> kısmına aynı tanımlar yapıldığı için virgül ile
+ayrılmıştır. Böylece daha kısa kod ve daha optimize kodlar elde
+edilmiştir.</p>
+<p>Sol kolonda kullanmadığımız ama burada lazım olan aşağıdaki kodlarıda
+ekledik.</p>
+<p>[sourcecode language="css"] a.takimLogo{ display:block;
+background:url(../images/takim_logolari.gif) right 0 no-repeat;
+padding:8px 30px 8px 0; color:#0c2b90; text-decoration:underline}
+a.takimLogo:hover{text-decoration:none;} [/sourcecode]</p>
+<h3>Sağ İçerik Alanının Kodlanması</h3>
+<p>İçerik alanı 3 kolonlu yapının sonuncu kolonuna (sagIcerikAlani) ismini
+verdik ve diğer kolonları yanında durması için genişlik tanımı ve
+float:left tanımı yaptık.</p>
+<p>[sourcecode language="css"] #sagIcerikAlani{float:left; width:300px}
+[/sourcecode]</p>
+<p>İlk olarak banner alanını hazırlıyoruz. Normalde ben buraya resmi direk
+koyabilirdim, ancak banner flash ise ve buraya javascript ile
+eklenecekse bir id'ye ihtiyaç duyulabilir diye, bir katman içine
+alıyorum resmi.</p>
+<p>[sourcecode language="html"] \&lt;div id="sagBannerAlani">\&lt;img
+src="images/band_website_banner.jpg" width="300" height="250"
+alt="Web" />\&lt;/div> [/sourcecode]</p>
+<p>Not: Bir HTMLci, daha cancanlı isimlendirme ile Arayüz Kod geliştiricisi
+sadece kod yazmak ile kalmaz aynı zamanda yazdığın kodun nereye
+gideceği, neler içere bileceğinide düşünerek kodunu yazmalıdır. Bir
+bakıma bir programcı gibi düşünerek kodunu daha esnek yazmalıdır.</p>
+<p><strong>Kategoriler Kısmı</strong></p>
+<p>Kategoriler kısmını blok şeklide kodlayacağım. Her kategoriye bir satır
+olacak şekilde kodlamak için burada "ul li" listelerini kullandım.</p>
+<p>[sourcecode language="html"] \&lt;ul id="lKategoriiler"> \&lt;li
+id="kMarslar">\&lt;a href="">\&lt;strong>Marşlar\&lt;/strong>All the
+legendary football terrace anthems are here. \&lt;/a>\&lt;/li> \&lt;li
+id="kEglenceliTezahuratlar">\&lt;a href="">\&lt;strong>Eğlenceli
+Tezahüratlar\&lt;/strong>All the legendary football terrace anthems are
+here. \&lt;/a>\&lt;/li> \&lt;li id="kSohretlerGecidi">\&lt;a
+href="">\&lt;strong>Şöhretler Geçidi\&lt;/strong>All the legendary football
+terrace anthems are here. \&lt;/a>\&lt;/li> \&lt;li id="k18">\&lt;a
+href="">\&lt;strong>+18\&lt;/strong>All the legendary football terrace
+anthems are here. \&lt;/a>\&lt;/li> \&lt;li id="kNostaljikTezahuratlar">\&lt;a
+href="">\&lt;strong>Nostaljik Tezahüratlar\&lt;/strong>All the legendary
+football terrace anthems are here. \&lt;/a>\&lt;/li> \&lt;/ul> [/sourcecode]</p>
+<p>Her öğenin farklı ikonu olduğu için her liste öğesine bir id vereceğiz
+ve buna göre atamalarımızı yapacağız. Listede bir başlık ve içerik alanı
+var bu ayrımı sağlamak için başlık kısmını strong etiketi içine
+alıyoruz.</p>
+<p>[sourcecode language="css"] #sagIcerikAlani
+ul#lKategoriiler{width:300px; float:left; font-family:Arial, Helvetica,
+sans-serif; margin-bottom:10px} ul#lKategoriiler li a{ display:block;
+background:#eeeeee url(../images/notalar.gif) 0 0 no-repeat;
+margin-bottom:2px; padding:10px 5px 10px 40px; font-size:12px;
+color:#000} ul#lKategoriiler li a:hover{background:#dbdbdb
+url(../images/notalar.gif) 0 0 no-repeat;} ul#lKategoriiler
+li#kMarslar a{ background-position:0 -2px;} ul#lKategoriiler
+li#kEglenceliTezahuratlar a{ background-position:0 -72px;}
+ul#lKategoriiler li#kSohretlerGecidi a{ background-position:0 -141px;}
+ul#lKategoriiler li#k18 a{ background-position:0 -215px;}
+ul#lKategoriiler li#kNostaljikTezahuratlar a{ background-position:0
+-289px;} ul#lKategoriiler li a strong{display:block; font:bold 14px
+Arial, Helvetica, sans-serif; color:#0c2b90} [/sourcecode]</p>
+<p><strong>Videolar</strong></p>
+<p>Video kısmında resmi sola yazıları ve oylama kısmını sağa koyuyoruz.
+Burada oylama alanını css ile kodlarken yine ardalan kaydırma yöntemini
+kullanıyoruz.</p>
+<p>Oylama html kodu</p>
+<p>[sourcecode language="html"] \&lt;ul class='oylama'> \&lt;li class='mevcutOy'
+style="width:60px">3/5 Yıldız\&lt;/li> \&lt;li>\&lt;a href='#' title='1 puan'
+class='birYildiz'>1\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href='#' title='2 puan'
+class='ikiYildiz'>2\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href='#' title='3 puan'
+class='ucYildiz'>3\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href='#' title='4 puan'
+class='dortYildiz'>4\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href='#' title='5puan'
+class='besYildiz'>5\&lt;/a>\&lt;/li> \&lt;/ul> [/sourcecode]</p>
+<p>5 adet yıldızımız var birde mevcut durumu gösteren bir li öğemiz. Burada
+da ardalan kaydırma metodu kullanarak oylama kısmı kodlanmıştır.</p>
+<p>[sourcecode language="css"] ul.oylama{list-style: none; margin:0 3px 3px
+3px; padding: 0px; width: 85px; height: 17px; position: relative;
+background: url(../images/yildiz.gif) top left repeat-x;} ul.oylama
+li{float:left; padding:0px; margin:0px;} ul.oylama li a{display:block;
+width:17px; height: 17px; text-decoration: none; text-indent: -9999px;
+z-index: 20; position: absolute; background-image:none;} ul.oylama li
+a:hover{background: url(../images/yildiz.gif) left bottom; z-index: 1;
+left: 0px;} ul.oylama li.mevcutOy{background: url(../images/yildiz.gif)
+left bottom; position: absolute; height: 17px; display: block;
+text-indent: -9999px; z-index: 1;} ul.oylama a.birYildiz{left: 0px;}
+ul.oylama a.birYildiz:hover{width:17px;} ul.oylama
+a.ikiYildiz{left:17px;} ul.oylama a.ikiYildiz:hover{width: 34px;}
+ul.oylama a.ucYildiz{left: 34px;} ul.oylama a.ucYildiz:hover{width:
+51px;} ul.oylama a.dortYildiz{left: 51px;} ul.oylama
+a.dortYildiz:hover{width: 68px;} ul.oylama a.besYildiz{left: 68px;}
+ul.oylama a.besYildiz:hover{width: 85px;} [/sourcecode]</p>
+<h3>Sosyal Alanın ve Alt Alanın Kodlanması</h3>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/sosyal_altalan.jpg" title="sosyal_altalan" />][]</p>
+<p>Burada üstteki beyaz oval alanı için fazladan bir katman açıp ona
+atamaktan ise zaten ekleyeceğiz sosyalAlan'a üstteki kapsayıcı katmanın
+alt ovalliğini ekleyerek daha az kodlama bu işi çözmüş olduk.</p>
+<p><strong>Sosyal Alanın Kodlanması</strong></p>
+<p>Sabit genişliği ve yüksekliği olan bir alan ve yan yana dizilmiş
+öğelerimiz var. Yukarıda bir çok defa uyguladığımız listeler ve ardalan
+kaydırma metodunu burada da uyguluyoruz.</p>
+<p>[sourcecode language="html"] \&lt;div id="sosyalAlan"
+class="kapsayamamaSorunu"> \&lt;ul> \&lt;li id="sBaslik">Sosyal
+Medya\&lt;/li> \&lt;li id="sRSS">\&lt;a href="">RSS\&lt;/a>\&lt;/li> \&lt;li
+id="sFacebook">\&lt;a href="">facebook\&lt;/a>\&lt;/li> \&lt;li
+id="sFriendfeed">\&lt;a href="">friendfeed\&lt;/a>\&lt;/li> \&lt;li
+id="sTwitter">\&lt;a href="">twitter\&lt;/a>\&lt;/li> \&lt;li id="sYoutube">\&lt;a
+href="">youtube\&lt;/a>\&lt;/li> \&lt;/ul> \&lt;/div> [/sourcecode]</p>
+<p>CSS Kodu</p>
+<p>[sourcecode language="css"] /* sosyalAlan */ #sosyalAlan{width:990px;
+margin:0 auto; background:url(../images/yatay_ayrac.gif) 0 0 no-repeat;
+height:71px} #sosyalAlan ul{float:right; width:310px; margin:30px 10px
+0 0;} #sosyalAlan ul li{float:left;
+background:url(../images/sosyal_medya.gif) 0 0 no-repeat;
+text-indent:-9999px; margin-right:12px} #sosyalAlan ul li#sBaslik{
+background-position:0 0; width:114px; height:23px} #sosyalAlan ul
+li#sRSS{ background-position:-125px 0; width:23px;} #sosyalAlan ul
+li#sFacebook{ background-position:-158px 0; width:23px} #sosyalAlan ul
+li#sFriendfeed{ background-position:-192px 0; width:23px;} #sosyalAlan
+ul li#sTwitter{ background-position:-226px 0; width:23px} #sosyalAlan
+ul li#sYoutube{ background-position:-260px 0; width:23px;} #sosyalAlan
+ul li a{display:block; height:23px;} [/sourcecode]</p>
+<p><strong>Alt Alanın Kodlanması</strong></p>
+<p>altAlan kısmına baktığımızda 3 kolonlu bir yapıya sahip olduğunu
+görürüz. Sabit bir genişliği ve yüksekliği var. Tüm alt kısmı kapsayan
+bir background resmi var. Bu değerlendirmeleri yaptıktan sonra kodumuzu
+yazarsak.</p>
+<p>[sourcecode language="css"] #altAlan{ background:url(../images/alt.png)
+0 0 no-repeat; width:990px; height:122px; margin:0 auto;
+padding-top:10px; voice-family: "\"}\""; voice-family:inherit;
+height:112px;} html>body #altAlan{height:112px;} [/sourcecode]</p>
+<p>Yukarıda bahsettiğimiz gibi bir elemana genişlik veya yükseklik tanımı
+yaptıktan sonra padding ve/veya border tanımı yaptığımızda kutu modeli
+sorunu ile karşılaşmamak için farklı bir kod yazıyoruz. Ayrıca ardalan
+resmindeki geçiş nedeni ile saydam png koymalıyız. Saydam pngler
+ie6'daki sorununu çözmek için kodumuz</p>
+<p>[sourcecode language="css"] #altAlan{ background:url(../images/alt.png)
+0 0 no-repeat; width:990px; height:122px; margin:0 auto;
+padding-top:10px; voice-family: "\"}\""; voice-family:inherit;
+height:112px;} html>body #altAlan{height:112px;} * html
+#altAlan{background:transparent;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/alt.png',
+sizingMethod='crop');} * html #altAlan a, * html #altAlan input, *
+html #altAlan button{position:relative; z-index:1} [/sourcecode]</p>
+<p>şeklinde olmalıdır. Ayrıntılı bilgi için Internet Explorer 6 için saydam
+PNG desteği adlı makalemi okuyunuz.</p>
+<p>Alttaki logoyu yerleştirmek için genişlik ve <strong>float</strong> tanımı yapıyoruz.
+Bu resmide CSS Sprite ile genel resimden çekiyoruz.</p>
+<p>[sourcecode language="css"] #logoAltta{
+background:url(../images/genel_resim.gif) 0 -236px no-repeat;
+width:123px; height:69px; text-indent:-9999px; margin:0 20px 0 10px;
+float:left;} [/sourcecode]</p>
+<p>Ortadaki linkler ve copyright kısmını liste ve paragraflı bir yapı ile
+kodluyoruz.</p>
+<p>[sourcecode language="html"] \&lt;div id="altLinkler"> \&lt;ul>\&lt;li>\&lt;a
+href="" title="Telif Hakları">Telif Hakları\&lt;/a>\&lt;/li>\&lt;li>\&lt;a
+href="" title="İletişim"
+class="sonAltLink">İletişim\&lt;/a>\&lt;/li>\&lt;/ul> \&lt;p>© 2009 Fanatik
+Marşlar. Her hakkı saklıdır. Kaynak gösterilmeden kullanılamaz.\&lt;/p>
+\&lt;ul>\&lt;li>\&lt;a href="" title="Marşlar">Marşlar\&lt;/a>\&lt;/li>\&lt;li>\&lt;a
+href="" title="Eğlenceli Tezahüratlar">Eğlenceli
+Tezahüratlar\&lt;/a>\&lt;/li>\&lt;li>\&lt;a href="" title="Şöhretler
+Geçidi">Şöhretler Geçidi\&lt;/a>\&lt;/li>\&lt;li>\&lt;a href=""
+title="Klasikler">Klasikler\&lt;/a>\&lt;/li>\&lt;li>\&lt;a href=""
+title="+18">+18\&lt;/a>\&lt;/li>\&lt;li>\&lt;a href="" class="sonAltLink"
+title="Nostaljik Tezahüratlar">Nostaljik
+Tezahüratlar\&lt;/a>\&lt;/li>\&lt;/ul> \&lt;/div> [/sourcecode]</p>
+<p>Listeleri yan yana dizmek için li'ye display:inline tanımı yapıyoruz.</p>
+<p>[sourcecode language="css"] #altLinkler{float:left; width:635px;
+font:12px Arial, Helvetica, sans-serif; padding-top:10px} #altLinkler
+p{margin:3px 0} #altLinkler ul li{display:inline;} #altLinkler ul li
+a{color:#0c2b90; background:url(../images/genel_resim.gif) right
+-312px no-repeat; padding-right:8px; margin-right:5px} #altLinkler ul
+li a.sonAltLink{background:none;} #altLinkler ul li
+a:hover{text-decoration:underline} [/sourcecode]</p>
+<p>Son olarakta RSS ve e-posta üyeliği kısmını kodluyoruz.</p>
+<p>[sourcecode language="html"] \&lt;div id="rssEpostaUye"> \&lt;a href=""
+id="altRSSLink">RSS\&lt;/a> \&lt;p>E-posta Üyeliği\&lt;/p> \&lt;input
+type="text" /> \&lt;button>Gönder\&lt;/button> \&lt;/div> [/sourcecode]</p>
+<p>Bu gibi durumlarda şöyle bir seçim yapıyorum. Kapsayıcı bir katman
+içinde tek kullanımlık html elemanları koyarak css kodlamayı daha kolay
+hale getiriyorum. Burada mesela tek a, tek p, tek input ve tek button
+kullanmamın nedeni bu.</p>
+<h3>Sonuç</h3>
+<p>Bu makaleye kodlama yazarken tuttuğum notlardan yararlanarak hazırladım.
+Bazı bölümleri hızlı geçmiş, ayrıntısına inmemiş olabilirim, kafanıza
+takılan veya ayrıntısını öğrenmek istediğiniz kısımları yorumlar
+kısmında yazarsanız yardımcı olmaya çalışırım. Bir kusurumuz eksiğimiz
+oldu ise affola.</p>
+<p>Örnek kodları görmek için <a href="http://fatihhayrioglu.com/dokumanlar/fm/index.html">tıklayınız.</a></p>
+<p>Tüm kodları indirmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/fm_anasayfa_html.rar">tıklayınız.</a>(rar dosyası index.html,
+images, style ve scripts klasörünü içerir) 388 Kb</p>
+<p>Hazırladığımız bu dosyayı ilk makalemizdeki 30 - Musteriye kalsörü içine
+atıyoruz ve sıkıştırıp gönderiyoruz.</p>
+<p>Not: Burada anlattığım kodlar ile yayındaki site arasında ufak tefek
+farklılıklar olabilir. Ben burada başta benim kodladığım sitenin kodları
+ve anlatımını yapıyorum.</p>
+<p>Bir sonraki makalem <strong>Alt Sayfaların Kodlaması</strong> ile ilgili olacaktır.
+görüşmek dileğiyle hoşçakalın.</p>
+</p>
+
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/anasayfa_kuc.jpg" title="anasayfa_kuc" />]: http://www.fatihhayrioglu.com/wp-content/anasayfa_kuc.jpg
+  [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/ardalan-266x300.jpg" title="ardalan" />]: http://www.fatihhayrioglu.com/wp-content/ardalan.jpg
+  [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/ders_03-300x113.jpg" title="ders_03" />]: http://www.fatihhayrioglu.com/wp-content/ders_03.jpg
+  [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/icerik_alani.jpg" title="icerik_alani" />]: http://www.fatihhayrioglu.com/wp-content/icerik_alani.jpg
+  [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/takim_logolari.gif" title="takim_logolari" />]: http://www.fatihhayrioglu.com/wp-content/takim_logolari.gif
+  [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/genel_resim.gif" title="genel_resim" />]: http://www.fatihhayrioglu.com/wp-content/genel_resim.gif
+  [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/sosyal_altalan.jpg" title="sosyal_altalan" />]: http://www.fatihhayrioglu.com/wp-content/sosyal_altalan.jpg</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "psdden-htmle-fanatikmarslarcom-sitesinin-kodlamasi-ii/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

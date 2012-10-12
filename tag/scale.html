@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - scale</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css3-donusturme-ozellikleritransforms-ve-2b-donusturme/">CSS3 Dönüştürme Özellikleri(Transforms) ve 2B Dönüştürme</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2012-05-19T15:35:00">
+                Sat 19 May 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css3.html">css3</a><a href=".././tag/donusturme.html">dönüştürme</a><a href=".././tag/matrix.html">matrix</a><a href=".././tag/rotate.html">rotate</a><a href=".././tag/scale.html">scale</a><a href=".././tag/skew.html">skew</a><a href=".././tag/transfor-origin.html">transfor-origin</a><a href=".././tag/transform.html">transform</a><a href=".././tag/translate.html">translate</a></p>
+
+
+</footer><!-- /.post-info --><p>Webkit ekibinin ilk olarak 2008 yılında CSS’e kattığı bu özellik daha
+sonra w3c tarafından standartlara girdi. HTML elemanlarını döndürmek,
+boyutlandırmak, eğmek gibi eylemleri gerçekleştirmemize yarıyor. 2d
+Transform özelliği 3d’ye göre tarayıcı desteği konusunda çok avantajlı.
+2B Dönüştürme özelliklerini ie9+ desteklerken, 3B Dönüştürme
+özelliklerini henüz betası çıkmış olan ie10+ destekliyor.</p>
+<p><img alt="" src="https://lh5.googleusercontent.com/JcPwBvaI5FirsLOn05KPDROBP9kw5Dxl9Mt2TSekP1JgLmmxrkn9diiKqmt0XrVg2BnkV2vp-Dh0RxNBtSV-LsW84Dc1H02k5SIGYxiEo8A4kmNUyr0" /></p>
+<p>Bu makalede CSS3 transform 2 Boyutlu Dönüştürme konusunu inceleyeceğiz.
+3 Boyutlu Dönüştürme konusuna daha sonra değineceğim.</p>
+<h3>2 Boyutlu Dönüştürme(2d Transform)</h3>
+<p>CSS 2d Transform özelliği  iki boyutlu düzende elemanları dönüştürmeye
+olanak sağlıyor. Tabi böyle tanımlama yaparak anlamak zor en kolayı
+özellikleri tanımlayıp örnek yapmak.</p>
+<p>Dönüştürme tanımları 3 bölümde inceleniyor.</p>
+<ul>
+<li>transform Özelliği</li>
+<li>transform-origin özelliği</li>
+<li>Dönüştürme fonksiyonları (transform özelliği değerleri – translate,
+    rotate, scale ve skew)</li>
+</ul>
+<p>Aslında transform özelliği ve değerleri bir kabul edilirse iki adet
+genel tanımımız var. Bu özellikler bize çok büyük kolaylık sağlıyor.
+Dönüştürme özellikleri desteğini her tarayıcı kendi ön eki ile
+sağlamaktadır. Ben burada tanımlamalarımı standart olan özellik ile
+göstereceğim, tabi örneklerde tüm tarayıcı kodlarını kullanacağım.</p>
+<h3>transform Özelliği</h3>
+<p>transform özelliği <strong>none</strong>, bir veya daha fazla transform değeri alır.
+Genel kullanımı</p>
+<div class="cssozelliktanimi">
+**Yapısı :** transform: none |
+\<dönüştürme-fonksiyonu\>[\<dönüştürme-fonksiyonu\>]\*  
+**Aldığı Değerler :** [ none | matrix | translte | translateX |
+translateY | scale | scaleX | scaleY | rotate | skew | skewX | skewY ]  
+**Başlangıç değeri:** none   
+**Uygulanabilen elementler:** tüm elementler  
+**Kalıtsallık:** Yok
+
+</div>
+
+<p>Aldığı değerleri dönüşüm fonksiyonları bölümünde detaylı bir şekilde
+inceleyeceğiz.</p>
+<p>[css] p{ transform: translate(-150px, 75px); } [/css]</p>
+<p>Uygulandığı paragrafı kendi orijin noktasına göre 75px sağa ve 150px
+aşağıya öteleyecektir. Göreceli bir tanımda(örn: % gibi) referans olarak
+elemanın kapsayıcısını değil kendi orijinini alacaktır.</p>
+<h3>transform-origin Özelliği</h3>
+<p>Dönüşümün orjin olarak nereye referans alacağını tanımlamamızı sağlar.</p>
+<div class="cssozelliktanimi">
+**Yapısı :** transform-origin: deger deger  
+**Aldığı Değerler :** [ [ [ \<yüzde\> | \<değer\> | left | center |
+right ] [ \<yüzde\>
+|\<değer\>|top|center|bottom]?]\<değer\>?]|[[[left|center| right ] || [
+top | center | bottom ] ] \<değer\>? ]  
+**Başlangıç değeri:** 50% 50%  
+**Uygulanabilen elementler:** tüm elementler  
+**Kalıtsallık:** Yok
+
+</div>
+
+<p>Başlangıç değeri olarak 50% 50% gelir. Bu elemanın tam ortasını
+gösterir.(Bundan dolayı elemanı ölçeklendirdiğimizde veya
+döndürdüğümüzde elmanın ortasında göre işlem yapar.) Üstten 50% soldan
+50%. Biz bu değeri değiştirebiliyoruz. Değer olarak CSS değerleri
+tanımlanabilir. İlk değeri X ekseninden mesafesini, ikinci değer Y
+sekseninden mesafesini tanımlar.</p>
+<p>[css] p{ transform-origin:0, 0; } [/css]</p>
+<p>Yüzde değerlerinde referans olarak elemanın kutu alanı alınır.</p>
+<p>Daha iyi anlamak için aşağıda da göreceğimiz döndürme(rotate)
+uygulayarak görelim.</p>
+<p>[css] transform: rotate(-10deg); [/css]</p>
+<p><img alt="" src="https://lh5.googleusercontent.com/ACGi7LXZqwCP3pSpRyK21hQojElg4DfwhpwEQDziAYMe4YDZTuphSOoF6W2Ib1Y-vbcOwpYcGxGy7wIrE0YD87EYXetxAvqed9fu1VKCMFS3g1RQi1c" /></p>
+<p>Yukarıda görsel olarak verilmiş örnekte kırmızı olanlar normal halleri,
+gri olanlar ise dönüşüm uygulanmış hallerini göstermektedir. İlk eleman
+başlangıç değeri olan <strong>center center</strong> uygulanmıştır, bu nedenle eleman
+mutlak konumuna göre hareket etmiştir. İkinci eleman <strong>left center</strong>
+tanımlanmıştır, bu nedenle eleman sol tarafın dikey ortasına göre
+dönmüştür. En son örnekte 100% 50% tanımı yapılmıştır, bu nedenle bu
+örnek sağ tarafa dualı dikeyde ortalı bir şekilde döndürülmüştür.</p>
+<h3>Dönüşüm Fonksiyonları</h3>
+<p>Dönüşüm fonksiyonlar translate(değiştir - dönüştür), rotate(döndürme),
+scale(ölçeklendirme) ve skew(eğme) olmak üzere 4 adettir. Birde rotate
+hariç bunların X ve Y için ayrı tanımlarıda var. Aşağıda detaylı
+incelemede göreceğiz.</p>
+<p><strong>translate(değiştir - dönüştür)</strong></p>
+<p>CSS3 sayesinde javascript veya flash’a gerek kalmadan animasyon veya
+dönüştürme işlemlerini yapabiliyoruz. Biz burada bir CSS3 transform
+özelliği ile nasıl sayfa içindeki elemanları taşıyacağımızı göreceğiz.</p>
+<p>translate değeri elemanı bir noktadan başka bir noktaya taşımamızı
+sağlıyor.</p>
+<p>[css] translate (x, y) [/css]</p>
+<p>Bu sayede biz elemanı orijinal konumundan x-ekseninde soldan mesafesi ve
+y-ekseninde üstten mesafesini tanımlayarak taşıyabiliyoruz. Basit bir
+kullanımı vardır.</p>
+<p>Bir örnek yapalım;</p>
+<p>[css] #tasinan{        transform:translate(150px,100px);   } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/s6hZX/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p><strong>- Eksene Özgü Yöntemler</strong></p>
+<p>Elemanları sadece bir eksen hareket ettirmek için translateX ve
+translateY özelliklerini kullanabiliriz.</p>
+<p>Yukarıdaki örneği</p>
+<p>[css] #tasinan{        transform:translateX(150px);    } [/css]</p>
+<p>aynı şekilde y ekseninde hareket için</p>
+<p>[css] #tasinan{        transform:translateY(100px);    } [/css]</p>
+<p>şeklinde uygulanabilir.</p>
+<p><strong>- Animasyon Yardımlı Örnek</strong></p>
+<p>İleride göreceğimiz transition özelliği yardımı ile ufak bir kod ile
+animasyon oluşturabiliriz. Hem translate özelliğini daha iyi anlamış
+oluruz.</p>
+<p>[css] #tasinan{            transition: all 5s;    } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AF5hS/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>Fare imlecinin mavi alan üzerine getirdiğimizde animasyonlu bir şekilde
+kutu translate komutu ile atadığımız yeni yerine hareket edecektir.
+İleride CSS3 transition konusunda daha detaylı göreceğiz.</p>
+<p><strong>rotate(Döndürme)</strong></p>
+<p>rotate değeri yardımı ile sabit bir noktaya göre elemanı belirlenen açı
+ile döndürebiliyoruz. Bu sabit nokta transform-origin tanımı ile
+değiştirilebiliyor.</p>
+<p>[css] rotate(&lt;açı&gt;) [/css]</p>
+<p>Bir örnek ile konuyu daha iyi anlayalım.</p>
+<p>[css] .deneme{     transform:rotate(45deg); } [/css]</p>
+<p>Yukarıdaki kod ile tanımlanan HTML elemanını 45 (deg-degrees)derece
+döndürdük. Saat yönüne çevirdiğimiz gibi, eksi değer vererek saat
+yönünün tersinede döndürme işlemi yapabiliyoruz.</p>
+<p>Döndürme tanımlarında 4 adet değer var. deg(açı), grad(gradyen),
+rad(radyen) ve turn.</p>
+<p>turn değerini biraz daha inceleyelim. turn değeri dairenin etrafını
+gösteriyor.</p>
+<p>[css] .deneme{     transform:rotate(.5trun); } [/css]</p>
+<p>0.5 olarakta tanımlanabilecek bu değer elemanımızı yarım daire kadar
+döndürecektir.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/cyFrq/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p><strong>- Animasyon Yardımlı Örnek</strong></p>
+<p>Bir örnekte animasyonlu yapalım.</p>
+<p>[css] .deneme{     transition: all 0.5s; } .deneme:hover{    
+transform:rotate(45deg); } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aCKL9/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>Yukarıdaki örnektede görüldüğü gibi birçok güzel uygulama bu yöntem ile
+yapılabilir.</p>
+<p><strong>scale(Ölçekleme)</strong></p>
+<p>scale değeri yardımı ile belirlene elemanın X ve Y ekseninde ölçeğini
+büyütebilir veya küçültebiliriz.</p>
+<p>3 adet ölçeklendirme fonksiyonu vardır.</p>
+<ul>
+<li>scale(\&lt;sayı>[, \&lt;sayı>])</li>
+<li>scaleX(\&lt;sayı>)</li>
+<li>scaleY(\&lt;sayı>)</li>
+</ul>
+<p>Bir örnek ile konuyu daha iyi anlayalım.</p>
+<p>[css] .denemeBuyut{     transform:scale(1.5); } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/eCb2C/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p>Daha iyi bir anlatım için örnekte iki kutu kullandım birisi kutunun
+normal hali(mavi kutu), diğer ise kutunun ölçeklenmiş hali(kırmızı
+kutu). Altta kalan kutunun görünmesi için üstteki kutuya saydamlık
+verdim.</p>
+<p><strong>- Eksene Özgü Yöntemler</strong></p>
+<p>Elemanları sadece bir eksen ölçeklemek için scaleX ve scaleY
+özelliklerini kullanabiliriz.</p>
+<p>Yukarıdaki örneği</p>
+<p>[css] .denemeBuyut{     transform:scaleX(1.5); } [/css]</p>
+<p>aynı şekilde y ekseninde hareket için</p>
+<p>[css] .denemeBuyut{     transform:scaleY(2); } [/css]</p>
+<p>şeklinde uygulanabilir.</p>
+<p><strong>- Animasyon Yardımlı Örnek</strong></p>
+<p>Bir tanede animasyonlu bir örnek yapalım.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/J7n6w/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p><strong>skew(eğme)</strong></p>
+<p>skew ile eleman veya eleman gruplarına X ve Y eksenin için belirli
+açılar verilerek eğiklik ve yamukluk elde edebiliyoruz. 3 adet skew
+tanımımız vardır;</p>
+<ul>
+<li>skew(\&lt;açı> [, \&lt;açı>])</li>
+<li>skewX(\&lt;açı>)</li>
+<li>skewY(\&lt;açı>)</li>
+</ul>
+<p>Eğiklik tanımı yaparken tek tanım yapabildiğimiz gibi iki tanım ile x ve
+y için farklı açı değerleride belirleyebiliyoruz.</p>
+<p>Bir örnek yapalım.</p>
+<p>[css] .deneme{     transform: skew(10deg, 20deg);    } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/fRpmS/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p><strong>- Eksene Özgü Yöntemler</strong></p>
+<p>Elemanları sadece bir eksen eğmek için skewX ve skewY özelliklerini
+kullanabiliriz.</p>
+<p>Yukarıdaki örneği</p>
+<p>[css] .denemeBuyut{     transform:skewX(10deg); } [/css]</p>
+<p>aynı şekilde y ekseninde eğiklik için</p>
+<p>[css] .denemeBuyut{     transform:skewY(20deg); } [/css]</p>
+<p>şeklinde uygulanabilir.</p>
+<p><strong>- Animasyon Yardımlı Örnek</strong></p>
+<p>Bir tanede animasyonlu bir örnek yapalım.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/bGunN/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<h3>Çoklu Değer Kullanımı</h3>
+<p>Dönüşüm fonksiyonları yukarıda tanımladığımız gibi tek tek
+tanımlanabildiği gibi kısaltma olarak arada boşluk bırakılarak
+birliktede tanımlanabilir.</p>
+<p>[css] div {      transform: translate(10px 30%) scale(2.0) rotate(45deg)
+skew(5deg, 20deg); } [/css]</p>
+<p>Böylece kodlamamızda bayağı bir kısaltmaya gitmiş oluruz. Çoklu tanım
+uygulandığında bu fonksiyonlar soldan sağa doğru sırası ile
+uygulanacaktır.</p>
+<h3>Matris Sistemi</h3>
+<p><a href="http://www.w3.org/TR/SVG/coords.html#TransformMatrixDefined">w3c’nin geliştirmekte olduğu matris sistemi</a> ile transform tanımı
+yapımı karmaşık bir yapıya sahiptir. Muhtemelen kullanmayacağımız bir
+yapı yada belirli araçlar ile oluşturulacak bir kod yapısına sahip.
+Dönüştürme fonksiyonlarının her biri matriste kendine bir yer edinerek
+oluşturulan değerdir. Örneğin scale(1.5,1.2) tanımı matris olarak
+aşağıdaki şekilde gösterilir</p>
+<p>1.5    |    0    |    0<br />
+0    |    1.2    |    0<br />
+0    |    0    |    1</p>
+<p>Bu yazımı css koduna çevirirsek;</p>
+<p>[css] transform: matrix(1.5, 0, 0, 1.2, 0, 0) [/css]</p>
+<p>Matris değerleri hakkında daha fazla bilgi için
+[http://www.w3.org/TR/SVG/coords.html#EstablishingANewUserSpace][]
+inceleyin.</p>
+<h3>Çevrimiçi Dönüşüm Aracı</h3>
+<p>CS3 bize birçok kolaylık sağlamaktadır. Bununla birlikte kodlama biraz
+karmaşık hal almaktadır. Bu karmaşayı engellemek amacı ile de çeşitli
+araçlar geliştirilmektedir. CSS3 2B dönüştürme için
+<a href="http://westciv.com/tools/transforms/index.html">http://westciv.com/tools/transforms/index.html</a>  sayfasındaki araç
+kullanılabilir. Bize bir çok bakımdan kolaylık sağlayan bir araç,
+denemeye değer.</p>
+<div class="tarayiciuyum">
+**Tarayıcı Destekleme Listesi**  
+Firefox 3.5+ (-moz- öneki ile)  
+Chrome 10+ (-webkit- öneki ile)  
+Safari 3.2+ (-webkit- öneki ile)  
+Opera 10.6 (-o- öneki ile)  
+İnternet Explorer 9+ (-ms- öneki ile)  
+**Mobil Tarayıcılar**  
+iOS Safari 3.2+ (-webkit- öneki ile)  
+Opera Mobile 11+ (-o- öneki ile)  
+Android Browser 2.1+ (-webkit- öneki ile)
+
+</div>
+
+<p>ie6-8 için çözüm <a href="http://www.useragentman.com/IETransformsTranslator/">http://www.useragentman.com/IETransformsTranslator/</a>
+sitesindeki araç ile üretilmiştir. Dönüştürme kadar esnek olmasada çok
+acil ihtiyaçlar için kullanılabilir. <br />
+</p>
+<h3>Sonuç</h3>
+<p>CSS3 ile web sayfası öğelerinin görünümünü değiştirebileceğimizi gördük.
+Daha önce javascript yardımı ile yaptığımız bu işleri artık CSS3 yardımı
+ile yapacağız. CSS3 ile yeni gelen bu özellikleri bazı sorunları olsa da
+zamanla bu sorunlarında aşılması ile çok büyük bir kolaylıklar
+sağlayacaktır.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.vanseodesign.com/css/transforms/">http://www.vanseodesign.com/css/transforms/</a></li>
+<li><a href="http://gazpo.com/2011/02/css3-transforms/">http://gazpo.com/2011/02/css3-transforms/</a> (güzel)</li>
+<li><a href="http://www.westciv.com/tools/transforms/index.html">http://www.westciv.com/tools/transforms/index.html</a> (çevrimiçi
+    araç)</li>
+<li><a href="http://www.w3.org/TR/css3-2d-transforms/">http://www.w3.org/TR/css3-2d-transforms/</a></li>
+<li><a href="http://24ways.org/2009/going-nuts-with-css-transitions">http://24ways.org/2009/going-nuts-with-css-transitions</a></li>
+<li><a href="http://www.the-art-of-web.com/css/css-animation/">http://www.the-art-of-web.com/css/css-animation/</a></li>
+<li><a href="http://css3.bradshawenterprises.com/">http://css3.bradshawenterprises.com/</a></li>
+<li><a href="static">http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/</a></li>
+<li><a href="http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/">http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/</a></li>
+<li><a href="http://www.t-infection.com/css3de-transforms-donusturme-islemleri/">http://www.t-infection.com/css3de-transforms-donusturme-islemleri/</a>
+    (Türkçe kaynak)</li>
+<li><a href="http://www.useragentman.com/IETransformsTranslator/">http://www.useragentman.com/IETransformsTranslator/</a> (ie için
+    çözüm)</li>
+<li><a href="http://www.standardista.com/css3-transforms">http://www.standardista.com/css3-transforms</a></li>
+<li><a href="static">http://www.webdesigncreare.co.uk/blog/html-css/css3-transforms.html</a></li>
+<li>[http://professionalaspnet.com/archive/2011/03/17/IE9-Supports-CSS3-Transforms_2100_.aspx][]</li>
+<li><a href="http://www.sitepoint.com/a-primer-on-css3-transforms/">http://www.sitepoint.com/a-primer-on-css3-transforms/</a></li>
+<li><a href="https://developer.mozilla.org/en/css/-moz-transform">https://developer.mozilla.org/en/css/-moz-transform</a></li>
+<li><a href="static">http://blog.typekit.com/2011/01/25/case-study-getting-hardboiled-with-css3-2d-transforms/</a></li>
+<li><a href="http://css3.bradshawenterprises.com/transforms/">http://css3.bradshawenterprises.com/transforms/</a></li>
+<li><a href="static">http://doctype.com/javascript-image-zoom-css3-transforms-calculate-origin-example</a></li>
+<li><a href="static">http://designshack.co.uk/articles/css/achieving-multi-step-animations-with-css-transitions/</a></li>
+<li><a href="http://www.impressivewebs.com/css3-transitions-without-hover/">http://www.impressivewebs.com/css3-transitions-without-hover/</a>
+    (güzel animasyon olmuş)</li>
+<li><a href="static">http://speckyboy.com/2011/08/15/how-to-build-a-fully-functional-css3-only-content-slider</a></li>
+<li><a href="http://www.impressivewebs.com/replace-flash-with-css3-animation/">http://www.impressivewebs.com/replace-flash-with-css3-animation/</a></li>
+<li><a href="http://www.netmagazine.com/tutorials/masterclass-css-animations">http://www.netmagazine.com/tutorials/masterclass-css-animations</a></li>
+<li><a href="static">http://coding.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/</a></li>
+<li><a href="static">http://tympanus.net/codrops/2011/10/24/creative-css3-animation-menus/</a>
+    (çok güzle menü örnekleri)</li>
+<li><a href="static">http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/css3-transitions-and-transforms-from-scratch/</a></li>
+<li>[http://www.dynamicdrive.com/style/csslibrary/item/spinning_icons_using_css3_transform/][]</li>
+<li><a href="static">http://designshack.net/articles/css/mastering-mouse-enter-and-exit-events-with-css-transitions/</a></li>
+<li><a href="static">http://www.splashnology.com/article/cross-browser-2d-transformations-with-animation/1827/</a></li>
+<li>[http://www.htmlgoodies.com/html5/css/learn-css3-from-a-z-2d-transformations.html#fbid=CH7CpzZeM2i][]</li>
+<li><a href="http://johnbhall.com/iphone-4s/">http://johnbhall.com/iphone-4s/</a> iphone 4s örnek</li>
+<li>[http://www.dynamicdrive.com/style/csslibrary/item/spinning_icons_using_css3_transform/][]
+    Basit döndirme örneği</li>
+<li><a href="http://css3.bradshawenterprises.com/transforms/">http://css3.bradshawenterprises.com/transforms/</a></li>
+<li><a href="http://css3playground.com/slinky.php">http://css3playground.com/slinky.php</a></li>
+<li><a href="static">http://coding.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/</a>
+    rotate ie için</li>
+<li><a href="static">http://www.impressivewebs.com/alternative-units-css3-rotate-transforms/</a>
+    (farklı değerler)</li>
+<li>[http://www.html5rocks.com/en/tutorials/webgl/webgl_transforms/][]</li>
+<li><a href="http://ricostacruz.com/jquery.transit/">http://ricostacruz.com/jquery.transit/</a> (jquery yardımı ile test)</li>
+<li><a href="static">http://www.blackinci.com/css/59-css3-ile-2ci-boyuta-gecis-transform.html</a></li>
+<li><a href="static">http://www.developerdrive.com/2012/02/moving-web-page-elements-using-the-css3-translate-transform/</a></li>
+<li><a href="static">http://www.developerdrive.com/2012/02/scaling-web-page-elements-using-the-css3-scale-transform/</a></li>
+<li><a href="static">http://www.developerdrive.com/2012/02/skewing-web-page-elements-using-the-css3-skew-transform/</a></li>
+<li><a href="static">http://www.developerdrive.com/2012/05/rotating-web-page-elements-using-the-css3-rotate-transform/</a></li>
+<li><a href="http://www.webdirections.org/blog/2d-transforms-in-css3/">http://www.webdirections.org/blog/2d-transforms-in-css3/</a></li>
+<li><a href="static">http://www.impressivewebs.com/alternative-units-css3-rotate-transforms/</a>
+    (rotate değerleri)</li>
+<li><a href="http://msdn.microsoft.com/en-us/magazine/gg709742.aspx">http://msdn.microsoft.com/en-us/magazine/gg709742.aspx</a></li>
+<li><a href="static">http://www.useragentman.com/blog/2011/01/07/css3-matrix-transform-for-the-mathematically-challenged/</a></li>
+<li><a href="static">http://www.alsacreations.com/article/lire/1418-css3-transformations-2d.html</a>
+    (yazıdan sonra)</li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dev</span><span class="p">.</span><span class="n">opera</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">view</span><span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">transitions</span><span class="o">-</span><span class="n">and</span><span class="o">-</span>2<span class="n">d</span><span class="o">-</span><span class="n">transforms</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webdesigncreare</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">html</span><span class="o">-</span><span class="n">css</span><span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">transforms</span><span class="p">.</span><span class="n">html</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">professionalaspnet</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>2011<span class="o">/</span>03<span class="o">/</span>17<span class="o">/</span><span class="n">IE9</span><span class="o">-</span><span class="n">Supports</span><span class="o">-</span><span class="n">CSS3</span><span class="o">-</span><span class="n">Transforms_2100_</span><span class="p">.</span><span class="n">aspx</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">typekit</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2011<span class="o">/</span>01<span class="o">/</span>25<span class="o">/</span><span class="k">case</span><span class="o">-</span><span class="n">study</span><span class="o">-</span><span class="n">getting</span><span class="o">-</span><span class="n">hardboiled</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span>2<span class="n">d</span><span class="o">-</span><span class="n">transforms</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">doctype</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">javascript</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">zoom</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">transforms</span><span class="o">-</span><span class="n">calculate</span><span class="o">-</span><span class="n">origin</span><span class="o">-</span><span class="n">example</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">designshack</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">achieving</span><span class="o">-</span><span class="n">multi</span><span class="o">-</span><span class="n">step</span><span class="o">-</span><span class="n">animations</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">transitions</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">speckyboy</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2011<span class="o">/</span>08<span class="o">/</span>15<span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">build</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">fully</span><span class="o">-</span><span class="n">functional</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">only</span><span class="o">-</span><span class="n">content</span><span class="o">-</span><span class="n">slider</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">coding</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2011<span class="o">/</span>09<span class="o">/</span>14<span class="o">/</span><span class="n">the</span><span class="o">-</span><span class="n">guide</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">principles</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">examples</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">tympanus</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">codrops</span><span class="o">/</span>2011<span class="o">/</span>10<span class="o">/</span>24<span class="o">/</span><span class="n">creative</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">menus</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">webdesign</span><span class="p">.</span><span class="n">tutsplus</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">htmlcss</span><span class="o">-</span><span class="n">tutorials</span><span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">transitions</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">transforms</span><span class="o">-</span><span class="n">from</span><span class="o">-</span><span class="n">scratch</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">dynamicdrive</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">style</span><span class="o">/</span><span class="n">csslibrary</span><span class="o">/</span><span class="n">item</span><span class="o">/</span><span class="n">spinning_icons_using_css3_transform</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">designshack</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">mastering</span><span class="o">-</span><span class="n">mouse</span><span class="o">-</span><span class="n">enter</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">exit</span><span class="o">-</span><span class="k">events</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">transitions</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">splashnology</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">article</span><span class="o">/</span><span class="nb">cross</span><span class="o">-</span><span class="n">browser</span><span class="o">-</span>2<span class="n">d</span><span class="o">-</span><span class="n">transformations</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">animation</span><span class="o">/</span>1827<span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">htmlgoodies</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">html5</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">learn</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">from</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">z</span><span class="o">-</span>2<span class="n">d</span><span class="o">-</span><span class="n">transformations</span><span class="p">.</span><span class="n">html</span>#<span class="n">fbid</span><span class="p">=</span><span class="n">CH7CpzZeM2i</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">coding</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>04<span class="o">/</span>28<span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">solutions</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">internet</span><span class="o">-</span><span class="n">explorer</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">impressivewebs</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">alternative</span><span class="o">-</span><span class="n">units</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">rotate</span><span class="o">-</span><span class="n">transforms</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">blackinci</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">/</span>59<span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">ile</span><span class="o">-</span>2<span class="n">ci</span><span class="o">-</span><span class="n">boyuta</span><span class="o">-</span><span class="n">gecis</span><span class="o">-</span><span class="n">transform</span><span class="p">.</span><span class="n">html</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">developerdrive</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2012<span class="o">/</span>02<span class="o">/</span><span class="n">moving</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">page</span><span class="o">-</span><span class="n">elements</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">translate</span><span class="o">-</span><span class="n">transform</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">developerdrive</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2012<span class="o">/</span>02<span class="o">/</span><span class="n">scaling</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">page</span><span class="o">-</span><span class="n">elements</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">scale</span><span class="o">-</span><span class="n">transform</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">developerdrive</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2012<span class="o">/</span>02<span class="o">/</span><span class="n">skewing</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">page</span><span class="o">-</span><span class="n">elements</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">skew</span><span class="o">-</span><span class="n">transform</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">developerdrive</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2012<span class="o">/</span>05<span class="o">/</span><span class="n">rotating</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">page</span><span class="o">-</span><span class="n">elements</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">rotate</span><span class="o">-</span><span class="n">transform</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">useragentman</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2011<span class="o">/</span>01<span class="o">/</span>07<span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">matrix</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">mathematically</span><span class="o">-</span><span class="n">challenged</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">alsacreations</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">article</span><span class="o">/</span><span class="n">lire</span><span class="o">/</span>1418<span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">transformations</span><span class="o">-</span>2<span class="n">d</span><span class="p">.</span><span class="n">html</span>
+</pre></div><p>There are <a href=".././css3-donusturme-ozellikleritransforms-ve-2b-donusturme/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

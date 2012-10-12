@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>IE'de Liste elemanları arasındaki boşluk sorunu</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="iede-liste-elemanlari-arasindaki-bosluk-sorunu/" rel="bookmark"
+           title="Permalink to IE'de Liste elemanları arasındaki boşluk sorunu">IE&#039;de Liste elemanları arasındaki boşluk sorunu</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2010-05-31T22:11:00">
+                Mon 31 May 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/haslayout.html">hasLayout</a><a href=".././tag/ie.html">ie</a><a href=".././tag/ie6.html">ie6</a><a href=".././tag/ie7.html">ie7</a><a href=".././tag/liste-bosluk-sorunu.html">liste boşluk sorunu</a><a href=".././tag/sorun.html">sorun</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>Bu sorun ile çok karşılaştım. Bir çok insanda bu sorun nedeni ile bana
+mesaj attı. Son mesajdan sonra konuyu yazmalıyım dedim.</p>
+<p>Sorunumuzu tam olarak şöyle tanımlayabiliriz; Dikey olarak
+listelediğimiz menülerde ie'de fazladan boşluk gözüküyor. Bu durum bazen
+ie6'da bazense ie6 ve ie7'de oluyor.</p>
+<p>Bir örnek verelim</p>
+<p>[sourcecode language="html"] \&lt;ul id="menu"> \&lt;li>\&lt;a href="#">Menu
+Bir\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="#">Menu İki\&lt;/a>\&lt;/li> \&lt;li>\&lt;a
+href="#">Menu Üç\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="#">Menu Dört\&lt;/a>
+\&lt;/li> \&lt;/ul> [/sourcecode]</p>
+<p>CSS kodumuzda da</p>
+<p>[sourcecode language="css"] ul#menu li a{ display:block} [/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ie6_fazla_bosluk_sorunu/ie_listede_fazla_bosluk_sorunu.html">tıklayınız.</a></p>
+<p>kodumuz olsun. Diğer tarayıcılarda normal bir görünüt alırken ie6'da
+liste öğeleri arasında fazladan boşluk görürüz.</p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_421fk5d9mft_b" /></p>
+<p>Sorun İnternet Explorer'un hasLayout sorunudur. Aşağıdaki tanımlardan
+biri yapılması durumunda bu sorun düzelecektir.</p>
+<p><strong>display:</strong> inline-block<br />
+<strong>height:</strong> herhangi bir değeri<br />
+<strong>float:</strong> left veya right<br />
+<strong>*max-height:</strong> herhangi bir değeri<br />
+<strong>*max-width:</strong> herhangi bir değeri<br />
+<strong>*min-height:</strong> herhangi bir değeri<br />
+<strong>*min-width:</strong> herhangi bir değeri<br />
+<strong>*overflow:</strong> not visible<br />
+<strong>position:</strong> absolute<br />
+<strong>width:</strong> herhangi bir değeri<br />
+<strong>writing-mode:</strong> tb-rl<br />
+<strong>zoom:</strong> herhangi bir değeri</p>
+<p></p>
+* ie7 de geçerli.</p>
+<p>Biz bir tanesini seçelim.</p>
+<p>[sourcecode language="html"] * html ul#menu li a {height: 1px;}
+[/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ie6_fazla_bosluk_sorunu/ie_listede_fazla_bosluk_sorunu_cev.html">tıklayınız.</a></p>
+<p>Bu kodu yazdıktan sonra sayfa aşağıdaki gibi görünecektir.</p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_422dgmtm9g8_b" /></p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.brunildo.org/test/IEWlispace.php" title="http://www.brunildo.org/test/IEWlispace.php">http://www.brunildo.org/test/IEWlispace.php</a></li>
+<li><a href="http://www.hicksdesign.co.uk/journal/ie-whitespace-bug" title="http://www.hicksdesign.co.uk/journal/ie-whitespace-bug">http://www.hicksdesign.co.uk/journal/ie-whitespace-bug</a></li>
+<li><a href="http://www.cssnewbie.com/fixing-ie6-whitespace-bug/" title="http://www.cssnewbie.com/fixing-ie6-whitespace-bug/">http://www.cssnewbie.com/fixing-ie6-whitespace-bug/</a></li>
+<li><a href="../static">http://orlandodefrias.com/2008/11/23/ie-unordered-list-extra-space-bug/</a></li>
+<li><a href="http://archivist.incutio.com/viewlist/css-discuss/34926" title="http://archivist.incutio.com/viewlist/css-discuss/34926">http://archivist.incutio.com/viewlist/css-discuss/34926</a></li>
+<li><a href="http://gtwebdev.com/workshop/gaps/white-space-bug.php" title="http://gtwebdev.com/workshop/gaps/white-space-bug.php">http://gtwebdev.com/workshop/gaps/white-space-bug.php</a><br />
+</li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">orlandodefrias</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2008<span class="o">/</span>11<span class="o">/</span>23<span class="o">/</span><span class="n">ie</span><span class="o">-</span><span class="n">unordered</span><span class="o">-</span><span class="n">list</span><span class="o">-</span><span class="n">extra</span><span class="o">-</span><span class="n">space</span><span class="o">-</span><span class="n">bug</span><span class="o">/</span>
+&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">orlandodefrias</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2008<span class="o">/</span>11<span class="o">/</span>23<span class="o">/</span><span class="n">ie</span><span class="o">-</span><span class="n">unordered</span><span class="o">-</span><span class="n">list</span><span class="o">-</span><span class="n">extra</span><span class="o">-</span><span class="n">space</span><span class="o">-</span><span class="n">bug</span><span class="o">/</span>&quot;
+</pre></div>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "iede-liste-elemanlari-arasindaki-bosluk-sorunu/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

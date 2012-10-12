@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioglu</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/CSS,%20jquery,%20XHTML.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2010-02-26T23:26:00+01:00</updated><entry><title>IE8 Açılır Menü İçindeki Input Alanı Üzerince Gelince Menü Kapanma Sorunu</title><link href="http://www.fatihhayrioglu.com/ie8-acilir-menu-icindeki-input-alani-uzerince-gelince-menu-kapanma-sorunu/" rel="alternate"></link><updated>2010-02-26T23:26:00+01:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-02-26:ie8-acilir-menu-icindeki-input-alani-uzerince-gelince-menu-kapanma-sorunu/</id><summary type="html">&lt;p&gt;Sorun tam olarak şu; açılır bir menü eğer bir resim üzerinde ise menü
+içindeki input alanı üzerine gelince menü istem dışı olarak kapanıyor.
+Diğer hiç bir tarayıcıda sorun yokken ie8 bu durumda sorun oluşturuyor.&lt;/p&gt;
+&lt;p&gt;İnternet Explorer'ın sorunlarına alışmış bu bünye Microsoft'un bu yeni
+nesil eskimiş tarayıcısından böyle bir sorun olmasını yadırgamadı
+açıkçası. Soruna &lt;a href="http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/"&gt;ie7 gibi yorumlama kodunu&lt;/a&gt; ekleyerek çözmek istedim
+ama kod sitenin dinamik kısımlarında çalışırken statik kısımlarında
+çalışmadı.&lt;/p&gt;
+&lt;p&gt;Bu iş ile bir projede karşılaştım, proje ismini açıklamak sakıncalı
+olabilir diye ben size benzer bir örnek kodunu vereceğim. &lt;/p&gt;
+&lt;p&gt;[sourcecode language="html"] \&amp;lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
+1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; \&amp;lt;html
+xmlns="http://www.w3.org/1999/xhtml"&gt; \&amp;lt;head&gt; \&amp;lt;meta
+http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+\&amp;lt;title&gt;Untitled Document\&amp;lt;/title&gt; \&amp;lt;script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"&gt;\&amp;lt;/script&gt;
+\&amp;lt;script type="text/javascript"&gt; \$(document).ready(function() {
+\$('a').hover(function(){ \$(this).children(':last').show(); },
+function(){ \$(this).children(':last').hide(); }); }); \&amp;lt;/script&gt;
+\&amp;lt;style type="text/css"&gt; a{ position:relative;} a div{display:none;
+padding:20px; background-color:#999; width:250px; position:absolute;
+top:18px; left:0} a div input{ background:transparent} \&amp;lt;/style&gt;
+\&amp;lt;/head&gt; \&amp;lt;body&gt; \&amp;lt;a href="javascript:;"&gt;menu aç \&amp;lt;div&gt;\&amp;lt;input
+type="text" /&gt;\&amp;lt;/div&gt; \&amp;lt;/a&gt; \&amp;lt;p&gt;\&amp;lt;img
+src="http://www.fatihhayrioglu.com/wp-content/ie7_kaydirma_cubugu.jpg"
+width="450" height="398" /&gt;\&amp;lt;/p&gt; \&amp;lt;/body&gt; \&amp;lt;/html&gt; [/sourcecode]&lt;/p&gt;
+&lt;p&gt;Örneği görmek için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/ie8_popupmenu_input_sorunu.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/ie8_sorunu.gif" title="ie8_sorunu" /&gt;][]&lt;/p&gt;
+&lt;p&gt;Bende sorunu araştırmaya başladım ve sonunda buldum. Sorun &lt;strong&gt;input&lt;/strong&gt;'a
+atanan &lt;strong&gt;background:none&lt;/strong&gt; veya &lt;strong&gt;background:transparent&lt;/strong&gt;
+tanımlamalarından kaynaklanıyor. backgorund'a renk veya resim tanımı
+yapınca sorun çözülüyor.  &lt;/p&gt;
+&lt;p&gt;Ben tasarıma uymak için background'a resim tanımlayarak sorunu aştım.&lt;/p&gt;
+&lt;h3&gt;Kaynak&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://ff.im/gwMR3" title="http://ff.im/gwMR3"&gt;http://ff.im/gwMR3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/ie8_sorunu.gif" title="ie8_sorunu" /&gt;]: http://www.fatihhayrioglu.com/wp-content/ie8_sorunu.gif&lt;/p&gt;</summary><category term="ie8"></category><category term="input"></category><category term="menü"></category><category term="sorun"></category></entry></feed>

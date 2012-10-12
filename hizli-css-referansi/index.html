@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Hızlı CSS Referansı</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="hizli-css-referansi/" rel="bookmark"
+           title="Permalink to Hızlı CSS Referansı">Hızlı CSS Referansı</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2006-07-30T14:41:00">
+                Sun 30 July 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/ardalan-ozellikleri.html">ardalan-özellikleri</a><a href=".././tag/background.html">background</a><a href=".././tag/background-attachment.html">background-attachment</a><a href=".././tag/background-color.html">background-color</a><a href=".././tag/background-image.html">background-image</a><a href=".././tag/background-position.html">background-position</a><a href=".././tag/background-repeat.html">background-repeat</a><a href=".././tag/css.html">CSS</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>CSS, web kodlayıcılarına (X)HTML dökümanlarına stil uygulamalarını
+sağlar. (X)HTML kodu ile stil kodunu birbirinden ayırarak web
+kodlayıcılara büyük kolaylıklar sağlar. Burada genel kullanılan CSS
+özelliklerini hep beraber tek tek kısaca inceleyeceğiz.<!--more--></p>
+<p>Burada tanımlanacak CSS özellikleri 15 Haziran 2005'de yürürlüğe giren
+CSS2.1 standartlarına göre yazılmıştır.</p>
+<p>Sırası ile aşağıdaki özelliklere değinilecektir.</p>
+<ul>
+<li>Zemin (Background) Özellikleri</li>
+<li>Kenarlık (Border) Özellikleri</li>
+<li>Font Özellikleri</li>
+<li>Liste Özellikleri</li>
+<li>Margin Özellikleri</li>
+<li>Padding Özellikleri</li>
+<li>Metin Özellikleri</li>
+<li>Floating ve Positioning Özellikleri</li>
+<li>Tablo Özellikleri</li>
+</ul>
+<p>Burada standart bir özellik tanımı kullanılacaktır.</p>
+<div class="cssozelliktanimi">
+**Yapısı :** özellik\_ismi: \<deger\>  
+**Aldığı Değerler :** alınan\_deger1 | alınan\_deger2 {1,4}\*   
+**Başlangıç değeri:** Özelliğin atama yapılmadığı zaman ki değeri   
+**Uygulanabilen elementler:** özelliğin uygulanacağı elementlerin
+isimleri   
+**Kalıtsallık:** Bu özelliğin atanması halinde alt elementlerini(örn:
+çocuk ve torun elementlerini) etkileyip etkilemeyeceği
+
+</div>
+
+<p>* Bu işaretin anlamı bu özelliğin 1'den 4'e kadar değer alabileceğini
+gösterir. Örneğin:</p>
+<p>[sourcecode language="css"] p.deneme { border-style: solid dashed dotted
+solid; } [/sourcecode]</p>
+<h4>CSS - Zemin(BACKGROUND) Özellikleri</h4>
+<p><img alt="Kutu Modeli" src="http://fatihhayrioglu.com/images/basit_boxmodel.gif" /></p>
+<p>Zemin(Bacground) yukarıdaki resimde padding alanı ve içerik
+alanını(paragraf) kapsar.</p>
+<p>Zemin özellikleri ile elementlere tek bir renk atanabildiği gibi
+<strong>background-image</strong> özelliği ile (X)HTML'in çok üzerinde eklemelerde
+yapılabilir.</p>
+<p>Zemin özelliklerini tek tek incelersek:</p>
+<ul>
+<li>background-color</li>
+<li>background-image</li>
+<li>background-repeat</li>
+<li>background-attachment</li>
+<li>background-position</li>
+<li>background</li>
+</ul>
+<h3>background-color</h3>
+<p>Elementlerin zeminine bir renk atamak için kullanılır.</p>
+<p><strong>Yapısı :</strong> background-color: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong> <a href="http://www.fatihhayrioglu.com/?p=95">renk</a> | transparent<br />
+<strong>Başlangıç değeri:</strong> transparent<br />
+<strong>Uygulanabilen elementler:</strong> tüm elementler<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p><strong>Örnek:</strong></p>
+<p>[sourcecode language="css"] p { background-color: #ddd; } [/sourcecode]</p>
+<div class="tarayiciuyum">
+**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
+W3C's CSS Level 1+
+
+</div>
+
+<h3>background-image</h3>
+<p>Elementlerin zeminine resim eklemek için kullanılır.</p>
+<p><strong>Yapısı :</strong> background-image: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong> <a href="http://www.fatihhayrioglu.com/?p=95">url</a> | none <br />
+<strong>Başlangıç değeri:</strong> none <br />
+<strong>Uygulanabilen elementler:</strong> tüm elementler<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p><strong>Örnek:</strong></p>
+<p>[sourcecode language="css"] body { background-image:
+url(/images/deneme.gif) } [/sourcecode]</p>
+<div class="tarayiciuyum">
+**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
+W3C's CSS Level 1+
+
+</div>
+
+<h3>background-repeat</h3>
+<p><strong>background-repeat</strong> özelliği <strong>background-image</strong> ile zemine eklenen
+resmin tekrarı ile özellikleri belirler.</p>
+<p><strong>Yapısı :</strong> background-image: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong> repeat | repeat-x | repeat-y | no-repeat <br />
+<strong>Başlangıç değeri:</strong> repeat <br />
+<strong>Uygulanabilen elementler:</strong> tüm elementler<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p><strong>Örnek:</strong></p>
+<p>[sourcecode language="css"] body { background: white url(deneme.gif);
+background-repeat: repeat-x; } [/sourcecode]</p>
+<div class="tarayiciuyum">
+**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
+W3C's CSS Level 1+
+
+</div>
+
+<h3>background-attachment</h3>
+<p><strong>background-attachment</strong> özelliği zemine eklenen resmin sayfa ile
+scroll etmesini veya sayfanın zeminin de çakılı kalmasını sağlar.</p>
+<p><strong>Yapısı :</strong> background-attachment: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong> scroll | fixed <br />
+<strong>Başlangıç değeri:</strong> scroll <br />
+<strong>Uygulanabilen elementler:</strong> tüm elementler<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p><strong>Örnek:</strong></p>
+<p>[sourcecode language="css"] body { background: white url(deneme.gif);
+background-attachment: fixed; } [/sourcecode]</p>
+<div class="tarayiciuyum">
+**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
+W3C's CSS Level 1+
+
+</div>
+
+<h3>background-position</h3>
+<p><strong>background-position</strong> özelliği <strong>background-image</strong> ile belirlenen
+resmin başlangıç noktasını belirler. Bu özellik sadece <a href="#">block-level</a>
+ve replaced(Bu elementler kendine özgü boyutları olan elementler olarak
+tanımlanabilir. Örn: <strong>IMG</strong>, <strong>INPUT</strong>, <strong>TEXTAREA</strong>, <strong>SELECT</strong>, ve
+<strong>OBJECT</strong>) elementlere uygulanır.</p>
+<p><strong>Yapısı :</strong> background-position: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong> [<a href="http://www.fatihhayrioglu.com/?p=95">\&lt;percentage></a> | <a href="http://www.fatihhayrioglu.com/?p=95">\&lt;length></a>]{1,2}
+| [top | center | bottom] || [left | center | right]<br />
+<strong>Başlangıç değeri:</strong> 0% 0% <br />
+<strong>Uygulanabilen elementler:</strong> <a href="http://www.fatihhayrioglu.com/?p=95">Block-level ve replaced
+elementler</a><br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p>En kolay kullanım şekli; <br />
+Yatay değerler için: left,center,right<br />
+Dikey değerler için: top, center, bottom<br />
+</p>
+<p><a href="http://www.fatihhayrioglu.com/?p=95">Yüzde değerleri</a> ve <a href="http://www.fatihhayrioglu.com/?p=95">uzunluk değerleri</a> de kullanılır.
+Yüzde değerleri elemtin boyuta bağlı olarak görecelidir. Uzunluk
+değerleri de kullanılabilir. Ancak farklı ekran çözünürlklerinde farklı
+görüntülere sebebiyet vermesi nedeni ile pek önerilmez.</p>
+<p>Yüzde değerler ve uzunluk değerleri verildiğinde ilk değer yatay içindir
+sonra gelen dikey değerdir. Örneğin %10 %60 değeri bir zemin resmi için
+verilmiş ise %10 değeri yataydaki değeri %60 ise dikey olarak değerini
+gösterir. 5px 10px gibi değerler verilmişse resmin sol üstden 5px sağa
+ve 10px aşağıdan başlayacağını belirler.</p>
+<p>Eğer yanlızca yatay değer verilmiş ise, dikey değer %50 olarak kabul
+edilecektir. Yüzde değerler ve uzunluk değerleri eksi değerler alabilir.
+Örn -2px %10 gibi. Aşağıdaki örnekler genel kullanım için yararlıdır:</p>
+<ul>
+<li><strong>top left</strong> = <strong>left top</strong> = <strong>0% 0%</strong></li>
+<li><strong>top</strong> = <strong>top center</strong> = <strong>center top</strong> = <strong>50% 0%</strong></li>
+<li><strong>right top</strong> = <strong>top right</strong> = <strong>100% 0%</strong></li>
+<li><strong>left</strong> = <strong>left center</strong> = <strong>center left</strong> = <strong>0% 50%</strong></li>
+<li><strong>center</strong> = <strong>center center</strong> = <strong>50% 50%</strong></li>
+<li><strong>right</strong> = <strong>right center</strong> = <strong>center right</strong> = <strong>100% 50%</strong></li>
+<li><strong>bottom left</strong> = <strong>left bottom</strong> = <strong>0% 100%</strong></li>
+<li><strong>bottom</strong> = <strong>bottom center</strong> = <strong>center bottom</strong> = <strong>50% 100%</strong></li>
+<li><strong>bottom right</strong> = <strong>right bottom</strong> = <strong>100% 100%</strong></li>
+</ul>
+<p><strong>Örnek:</strong></p>
+<p>[sourcecode language="css"] body { background-image: url(deneme.gif);
+background-repeat: no-repeat; background-position: center; }
+[/sourcecode]</p>
+<div class="tarayiciuyum">
+**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
+W3C's CSS Level 1+
+
+</div>
+
+<h3>background</h3>
+<p>Bu özellik Zemin(background) ile ilgili tüm özelliklerin bir arada
+kullanımı sağlar.</p>
+<p><strong>Yapısı :</strong> background: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong> <background-color>\&lt;background-color> ||
+\&lt;background-image> || \&lt;background-repeat> ||
+\&lt;background-attachment> || \&lt;background-position> <br />
+<strong>Başlangıç değeri:</strong> Tanımsız <br />
+<strong>Uygulanabilen elementler:</strong> tüm elementler<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p><strong>Örnek:</strong></p>
+<p>[sourcecode language="css"] body{ background: white url(deneme.gif) }
+blockquote { background: #f00 } p { background:
+url(../images/deneme.png) #f00 fixed } table{ background: #0c0
+url(deneme.jpg) no-repeat bottom right } [/sourcecode]</p>
+<div class="tarayiciuyum">
+**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
+W3C's CSS Level 1+
+
+</div>
+
+</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "hizli-css-referansi/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioglu</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/Sql.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2007-09-06T13:17:00+02:00</updated><entry><title>Sql'de Tekrarsız sonuçlar elde etmek - DISTINCT</title><link href="http://www.fatihhayrioglu.com/sqlde-tekrarsiz-sonuclar-elde-etmek-distinct/" rel="alternate"></link><updated>2007-09-06T13:17:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-09-06:sqlde-tekrarsiz-sonuclar-elde-etmek-distinct/</id><summary type="html">&lt;p&gt;Bu kodu her defasında kullanmadan önce nasıl kullanıldığını arıyorum. Bu
+günde aradım ve buraya yazmaya karar verdim. Unutursam burada bulurum
+diye. Belki sizlerede yarar.&lt;/p&gt;
+&lt;p&gt;Şimdi kullanıcıların uyelik'lerinin ve resimlerinin olduğu iki tablom
+var. Bunları bir birine bağlıyorum ve sadece resimleri olanları
+gösteriyorum. Ancak şöyle bir sorunum oldu. Her resim için sonuçlar
+tekrarlıyor. Yani adam iki adet resim ekleyince sonuçta iki kere
+gösteriliyor. Tekrarı engellemek için ise DISTINCT kullandım.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DISTINCT:&lt;/strong&gt; SQL'de tablo içinde birbirinin aynı veriler
+bulunabilir.Aynı satırların listeleme esnasında bir kez yazılması için
+Distinct sözcügü kullanılır.&lt;/p&gt;
+&lt;p&gt;[sourcecode language="sql"]SELECT DISTINCT kullanici.Email,
+kullanici.Name, kullanici.Surname FROM kullanici INNER JOIN images ON
+kullanici.Id = images.UyeId[/sourcecode]&lt;/p&gt;
+&lt;p&gt;Şekline yazınca oluyor. Bu kod sonucu e-postalar tekil olduğu için
+tekrar eden verilerden kurtulmuş oluyorum.&lt;/p&gt;
+&lt;/p&gt;</summary><category term="Distinct"></category><category term="Sql"></category><category term="tablo"></category><category term="Tekrarsız sonuçlar"></category></entry><entry><title>Sql'de birden fazla kritere göre sıralamak</title><link href="http://www.fatihhayrioglu.com/sqlde-birden-fazla-kritere-gore-siralamak/" rel="alternate"></link><updated>2006-11-01T13:02:00+01:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-11-01:sqlde-birden-fazla-kritere-gore-siralamak/</id><summary type="html">&lt;p&gt;Bu gün başıma geldide öğrendim ve sizlerle paylaşmak istedim. Sql'de bir
+kritere göre sıralama yaptığınızda aynı değere sahip alanların
+sıralamasını yaparken duruma göre farklılık gösterebiliyor bunu
+engellemek için ikinci bir kritere göre sıralama yapmak en güzel
+çözüm.&lt;!--more--&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select * From veritabani_adi Order by Tarih&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;şeklinde bir sıralama yaptığımızı düşünelim. Aynı tarihlerin
+sıralamasında sorun çıkarsa ikinci bir kriter ekleyelim. Bu işlem çok
+kolay virgülden sonra diğer kriteri yazmak yeterli.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select * From veritabani_adi Order by Tarih, ID&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Bu kadar kolay. Bu bilgiyi bana öğreten Halil'e teşekkürlerimi sunarım.&lt;/p&gt;
+&lt;/p&gt;</summary><category term="order-by"></category><category term="sıralama"></category><category term="Sql"></category></entry></feed>

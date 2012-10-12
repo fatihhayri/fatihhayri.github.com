@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - rgba</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css3-rgba-renk-tanimi/">CSS3 RGBA Renk Tanımı</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2010-09-22T22:55:00">
+                Wed 22 September 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari.html">CSS, Web Standartları</a>. </p>
+<p>tags: <a href=".././tag/alfa-kanali.html">alfa kanalı</a><a href=".././tag/css3.html">css3</a><a href=".././tag/renk-tanimi.html">renk tanımı</a><a href=".././tag/renk-birimleri.html">renk-birimleri</a><a href=".././tag/rgba.html">rgba</a><a href=".././tag/saydamlik.html">saydamlık</a></p>
+
+
+</footer><!-- /.post-info --><p>CSS ile renk değeri ataması yapılırken çeşitli yöntemler kullanıyoruz.
+Daha önce <a href="http://www.fatihhayrioglu.com/css-birimleri/">CSS Birimleri</a>  makalemizde anlatmıştık. İki tip renk
+tanımı var. Renk isimleri ile tanımlama(İngilizce renk isimleri)</p>
+<p>[sourcecode language="css"] background-color:red [/sourcecode]</p>
+<p>tanımı kırmızı renkli bir ardalan elde etmemizi sağlar</p>
+<p>RGB(Red-Green-Blue) yani Kırmızı-Yeşil-Mavi renklerin baz alındığı renk
+standardı. Açıkçası ben projelerimde her zaman rgb standardını
+kullanmaktayım.</p>
+<p>[sourcecode language="css"] background-color:#ff0000 [/sourcecode]</p>
+<p>Tanımı kırmızı renkte ardalanlar elde etmemizi sağlar. Bu tanımı birde
+kısaltması mevcuttur. Eğer bir birine benzer 2’li elemanlardan oluşan
+bir renk tanımı varsa yukarıdaki gibi benzer değerleri bir kere
+yazarakta aynı sonucu elde edebiliriz.</p>
+<p>[sourcecode language="css"] background-color:#f00 [/sourcecode]</p>
+<p>Yukarıdaki tanımda bize kırmızı rengi verecektir.</p>
+<p>Buraya kadar mevcut durumu özetlemeye çalıştım. Şimdi ise CSS3 ile gelen
+renk tanımı yeniliğine göz atalım. RGBA ve HSLA tanımları yukarıdaki
+renk tanımlarına ek olarak gelmiştir. Benzer kullanıma sahip olduğu için
+ben sadece RGBA tanımı hakkında bilgi vereceğim sizlere, HSLA tanımıda
+standart olarak farklı ama işlevsel olarak RGBA ile etkiyi vereceği için
+RGBA tanımı anlatmak ile yetineceğim.</p>
+<p>Renk değerlerini genelde web sitelerini kodlarken resim işleme
+araçları(örn. Adobe Phoshop, Adobe Fireworks) aracılığı ile alırız. Bu
+araçlar bize renk paleti olarak RGB, HSL değerlerini verir.</p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/renk_paleti-300x197.jpg" title="renk_paleti" />][]</p>
+<p>CSS3 ile birlikte RGBA renk tanımıda eklenmiştir. Buradaki A harfi
+Alfa’ya karşılık gelen bir karşılıktır. Alfa değeri renk tanımımıza
+saydamlık etkisi katmaktadır. 0.0 ile 1 arasında değer alır. 0 değeri
+etkisiz kılarken 1 değeri de katı bir renk ortaya çıkaracaktır. Ara
+değerler bize saydamlık etkisi tanımlamamızı sağlayacaktır.</p>
+<h3>RGBA Tanımı</h3>
+<p>Normalde css ile renk tanımı yaparken</p>
+<p>[sourcecode language="css"] background-color:#1259C7 [/sourcecode]</p>
+<p>tanımı kullanıyorum. Benzer şekilde</p>
+<p>[sourcecode language="css"] \&lt;li>background-color:rgb(18,89,199)\&lt;/li>
+[/sourcecode]</p>
+<p>Tanımıda bize aynı sonucu verir. RGBA ile dördüncü değer olarak alfa
+saydamlık derecesini ekleriz.</p>
+<p>[sourcecode language="css"] background-color:rgba(18,89,199,0.4)
+[/sourcecode]</p>
+<p>Şeklinde bir tanım yapıyoruz. 0.4 değeri bize % 40’lık bir saydamlık
+sağlayacaktır.</p>
+<p>Durumu daha iyi anlamak için bir örnek yapalım</p>
+<p>[sourcecode language="css"] p.renk1{
+background-color:rgba(18,89,199,0.2); width:70px; height:70px} p.renk2{
+background-color:rgba(18,89,199,0.4); width:70px; height:70px} p.renk3{
+background-color:rgba(18,89,199,0.6); width:70px; height:70px} p.renk4{
+background-color:rgba(18,89,199,0.8); width:70px; height:70px} p.renk5{
+background-color:rgba(18,89,199,1); width:70px; height:70px}
+[/sourcecode]</p>
+<p>HTML kodu</p>
+<p>[sourcecode language="html"] \&lt;p class="renk1">\&lt;/p> \&lt;p
+class="renk2">\&lt;/p> \&lt;p class="renk3">\&lt;/p> \&lt;p
+class="renk4">\&lt;/p> \&lt;p class="renk5">\&lt;/p> [/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/rgba_renk_tanimi.html">tıklayınız.</a></p>
+<p><img alt="" src="https://lh6.googleusercontent.com/d9gcgCNkBoIwGgX75ZjloztSepGOGXHSAwmeaDTOlQqYRn4rTS50kS59JKxAC6qmSgfxdSTLeWyJzABoNAaIAj_bwoDTFOf3wULF3Xq6_7zNKyY5Xg" /></p>
+<p>RGBA ve opacity arasındaki fark; opacity tanımı yapılan bir eleman ve
+tüm alt elemanlarına saydamlık uygulanırken, rgba ile tanımlanan
+ardalanlarda sadece uygulanan elemanın ardalanı saydam olur içindeki
+elemanlar saydam olmaz. Önceden bu gibi durumlarda 1x1 px değerinde
+saydam bir png hazırlayıp ardalan resmi olarak tanımlardık.</p>
+<p>Farklı kullanım alanları ve birçok avantajı vardır bizim için bu
+tanımın. Örneği Facebook lightbox’ı olarak nitelendirilen bir görüntüyü
+elde etmek çok basit bir hal alıyor bu özelliği kullanarak.</p>
+<p>[sourcecode language="css"] ... border:10px solid rgba(0, 0, 0, 0.2);
+border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:
+10px; ... [/sourcecode]</p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/rgba_renk_tanimi2.html">tıklayınız.</a></p>
+<p><img alt="" src="https://lh5.googleusercontent.com/mtFDIUdPs-VFwWWJ5jBYK3uD3je_AZcnVQ404x_QX1d1tatFUtivIO3zKLeTHCuHKOwOakSk0vLBGAyXjN270P9NH3HLkpfj5Goy5kZT7TUivjQzKA" /></p>
+<p>CSS3 bize birçok avantaj sağlamaktadır. Bir nevi bize resim düzenleme
+araçlarındaki esnekliği sağlamaktadır.</p>
+<p>Örneğin <a href="http://www.fatihhayrioglu.com/css-ile-metinlere-golge-vermek/">text-shadow</a> özelliğindeki renk tanımında rgba kullanılırsa
+çok güzel görüntüler elde ederiz. Örnek için
+<a href="static">http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/</a>
+sitesini ziyaret ediniz.</p>
+<p>Benzer bir şekilde <a href="http://www.fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/">box-shadow</a> özelliğindeki renk tanımında rgba
+kullanılarak daha gerçekçi gölgeler elde ederiz.</p>
+<p>Bu özelliğinde tek sorunu diğer CSS3 özelliklerindeki sorunumuz olan
+İnternet Explorer desteğinin olmaması sorunu var. Henüz betası çıkmış
+olan ie9 hariç hiç bir İnternet Explorer sürümü bu özelliği
+desteklememektedir, ne yazıkki ie8 dahil hiç bir ie sürümü bu özelliği
+desteklemiyor.</p>
+<p><strong>Tarayıcı Uyumu:</strong><br />
+Internet Explorer desteklemiyor (İE9 destekliyor)<br />
+Firefox 3+<br />
+Safari 3+<br />
+Opera 10+<br />
+W3C’s CSS Level 3+<br />
+CSS Profile 3.0</p>
+<h3>İnternet Explorer için Çözüm Önerileri</h3>
+<p>Çözüm için CSS-Tricks’te bir çözüm önerisi var</p>
+<p>[sourcecode language="css"] p.renk1{ background: rgb(200, 54, 54); /*
+desteklemeyenler icin */ background: rgba(200, 54, 54, 0.5); }
+[/sourcecode]</p>
+<p>Bu çözüm önerisinde desteklemeyen tarayıcılarda katı renk hali
+görüntülenirken destekleyen tarayıcılar için saydam hali
+görüntülenecektir.</p>
+<p>Diğer bir yöntem;</p>
+<p>[sourcecode language="html"] \&lt;!--[if IE]> \&lt;style type="text/css">
+.color-block { background:transparent;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000050,endColorstr=#99000050);
+zoom: 1; } \&lt;/style> \&lt;![endif]--> [/sourcecode]</p>
+<p>Şeklinde sadece ie için üretilen bir kod ile çözüm sağlanır destekleyen
+tarayıcılar için standart kod kullanılır.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://24ways.org/2009/working-with-rgba-colour">http://24ways.org/2009/working-with-rgba-colour</a></li>
+<li>[http://www.w3.org/TR/css3-color/#rgba-color][]</li>
+<li><a href="http://css-tricks.com/rgba-browser-support/">http://css-tricks.com/rgba-browser-support/</a></li>
+<li><a href="http://www.gograybox.com/blog/qt-css3-rgba/">http://www.gograybox.com/blog/qt-css3-rgba/</a></li>
+<li>[http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock][]</li>
+<li><a href="static">http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/</a></li>
+<li><a href="http://www.css3.info/introduction-opacity-rgba/">http://www.css3.info/introduction-opacity-rgba/</a></li>
+<li><a href="http://dorward.me.uk/www/css/alpha-colour/">http://dorward.me.uk/www/css/alpha-colour/</a></li>
+<li><a href="http://www.robertnyman.com/css3/rgba/rgba.html">http://www.robertnyman.com/css3/rgba/rgba.html</a></li>
+<li><a href="static">http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/</a></li>
+</ul>
+</p>
+
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/renk_paleti-300x197.jpg" title="renk_paleti" />]: http://www.fatihhayrioglu.com/wp-content/renk_paleti.jpg
+    http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/
+    http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock
+    http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/</p><p>There are <a href=".././css3-rgba-renk-tanimi/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././cift-cizgili-ayrac-kullanimi/" rel="bookmark"
+                           title="Permalink to Çift çizgili ayraç kullanımı">Çift çizgili ayraç kullanımı</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2010-07-30T18:19:00">
+                Fri 30 July 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/cift-cizgi.html">çift çizgi</a><a href=".././tag/grove.html">grove</a><a href=".././tag/menu.html">menü</a><a href=".././tag/rgba.html">rgba</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>Genelde menülerde kullanılan bir durumdur bu. Menü öğelerini ayırmak
+için araya çizilen çizgilerin iki farklı renkte olması durumunda nasıl
+bir çözüm üretmek gerektiğine dair bir ipucu. Bazen resim olarak
+kullanıyorum, ama bazende soldaki öğenin sağ kenar çizgisine bir renk,
+sağdaki öğenin sol kenar çizgisine farklı bir renk atayarak çözüm
+üretmeyi ...</p>
+                <a class="readmore" href=".././cift-cizgili-ayrac-kullanimi/">read more</a>
+                <p>There are <a href=".././cift-cizgili-ayrac-kullanimi/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

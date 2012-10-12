@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>CSS Hata Ayıklama Yöntemleri</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="css-hata-ayiklama-yontemleri/" rel="bookmark"
+           title="Permalink to CSS Hata Ayıklama Yöntemleri">CSS Hata Ayıklama Yöntemleri</a></h1>
+      
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2007-01-04T23:05:00">
+                Thu 04 January 2007
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/attribute.html">Attribute</a><a href=".././tag/backslash.html">backslash</a><a href=".././tag/css.html">CSS</a><a href=".././tag/cocuk-secicileri.html">Çocuk-Seçicileri</a><a href=".././tag/firefox.html">Firefox</a><a href=".././tag/hata-ayiklama.html">Hata ayıklama</a><a href=".././tag/ie-fix.html">ie-fix</a><a href=".././tag/ie-hata.html">ie-hata</a><a href=".././tag/ie6.html">ie6</a><a href=".././tag/ie7.html">ie7</a><a href=".././tag/important.html">important</a><a href=".././tag/opera.html">Opera</a><a href=".././tag/owen.html">owen</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p><a href="http://www.fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/" title="IE'de Hata Ayıklamak için şartlı Yorumlar Kullanmak">IE'de Hata Ayıklamak için şžartlı Yorumlar Kullanmak</a> adlı makalede
+bahsettiğimiz gibi "CSS ile web sitesi kodlamanın en büyük sorunu CSS'in
+özelliklerini yorumlayamayan veya yanlış yorumlayan web tarayıcılarıdır.
+Bu nedenle CSS ile web sitesi kodlarken bu tip hataları ayıklamamız
+gerekiyor. <strong>CSS ile hata ayıklama web tarayıcı gruplarının veya bir
+kısım web tarayıcısı için kuralları veya bildirimleri gizlemek veya
+göstermek şeklinde uygulanır.</strong>"<!--more--></p>
+<p>Biz CSS'de hata ayıklamak için bir çok yöntem kullanırız. Bunların en
+çok kullanılanları aşağıda anlatılmıştır.</p>
+<h6>Çocuk Seçicileri Kullanarak Hata Ayıklamak</h6>
+<p>Çocuk seçicilerini incelemek için <a href="http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/">tıklayınız</a>. Çocuk Seçicileri CSS
+hata ayıklama yöntemi olarak kullanılabilir. Çocuk Seçicileri Windows
+sistemlerinde kurulu olan IE6 ve alt versiyonlarında
+görüntülenmeyecektir, bu nedenle IE6 ve altı versiyonlarda görünmesi
+istenmeyen tanımlar Çocuk Seçicileri kullanarak gizlenebilir.</p>
+<p>Her tanımlamadan sonra ikinci bir tanımlama olarak kullanılır. İkinci
+tanımlama çocuk seçicisi olmalıdır.</p>
+<p>[sourcecode language="css"] .icerik h3 {height:21px;} .icerik > h3
+{height:auto; min-height:21px;} [/sourcecode]</p>
+<p><a href="http://www.fatihhayrioglu.com/internet-explorer-7-ve-css/">IE 7 Çocuk Seçicilerini desteklemektedir.</a> Bu metot uygulanırken bu
+dikkate alınmalıdır.</p>
+<h3>Özellik(Attribute) Seçicileri Kullanarak Hata Ayıklamak</h3>
+<p>Diğer bir hata ayıklama yöntemi Özellik Seçicileri kullanarak hata
+ayıklamaktır. Bir çok yeni nesil web tarayıcısı (FF ve Safari) bu
+kullanımı destekler, ancak IE6 ve altı versiyonlar bu özelliği
+desteklemez. <a href="http://www.fatihhayrioglu.com/internet-explorer-7-ve-css/">IE7 bu kullanımı desteklemektedir.</a> Bu hata ayıklama yöntemi yukarıda
+bahsettiğimiz "Çocuk Seçicileri ile Hata ayıklama" yöntemi gibi
+kullanılır.</p>
+<p>Özellik Seçicileri kullanarak elementlerin id'lerine göre atamalar
+yapabiliriz. Bu bize bir çok avantaj sağlar. Bu avantajları hata
+ayıklamak içinde kullanabiliriz.</p>
+<p>[sourcecode language="html"] \&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
+4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> \&lt;html
+xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;title>Test\&lt;/title>
+\&lt;style type="text/css"> p{background: red; /* Tüm web tarayıcılarında
+görünür */} body[class|="sayfaYapisi"] p{ background: green; /* IE 7
+ve Yeni web tarayıcılarında görünür Opera hariç */} \&lt;/style>
+\&lt;/head> \&lt;body class="sayfaYapisi"> \&lt;p>Test\&lt;/p> \&lt;/body>
+\&lt;/html> [/sourcecode]</p>
+<h3>Genel Seçicileri (*) Kullanarak Hata Ayıklamak</h3>
+<p>Her ne kadar bu hata IE7 ile birlikte düzeltildiyse de çok kullanışlı
+bir hata ayıklama metodudur. Kullanımı çok basittir.</p>
+<p>[sourcecode language="css"] a:hover {border: 1px dotted black;} * html
+a:hover { // bu tanımlamayı ie6+ ve altı versiyonlarda görünmeyecektir.
+border-style: solid; } [/sourcecode]</p>
+<h3>Ters Bölü İşareti(\) İle Hata Ayıklama</h3>
+<p>IE5x/Win versiyonları bu karakteri yorumlamazlar bu nedenle IE5x/win
+versiyonlarından kodumuzu gizlemek için bu yöntemi kullanabiliriz. CSS
+kodu yazarken en çok ihtiyacımız olan genişlik tanımının IE5x
+versiyonlarda yanlış algılanmasıdır. bu hatayı düzeltmek için bu yöntem
+kullanılabilir.</p>
+<p>[sourcecode language="css"] #icerik { width: 770px; wid\th: 750px; /*
+ie5x - win bu kodu görmeyecek */ } [/sourcecode]</p>
+<p>Ben şahsen kutu modelinde hata ayıklamak için <a href="http://tantek.com/CSS/Examples/boxmodelhack.html">tantek</a>'in kullandığı
+<a href="http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/">metodu</a> kullanıyorum, daha sağlıklı ve tüm web tarayıcıları göze
+alınarak hazırlanmış bir hata ayıklama metodudur tavsiye ederim. Ama bu
+yönteminde kullanıldığını bilelim.</p>
+<h3>Alt Çizgi (_) ile Hata Ayıklama</h3>
+<p>Bu yöntemde IE4-6 versiyonlarda hata düzeltmek için kullanılabilir.</p>
+<p>[sourcecode language="css"] #menu { position: fixed; _position:
+static; } [/sourcecode]</p>
+<p>Burada yeni nesil web tarayıcıları ikinci tanımlamayı görecek ve buna
+göre yorumlama yapacaktır. Ancak IE4-6/win versiyonları (_)
+anlayamadığı için bu kodu yorumlamayacak ve ilk koda göre hareket
+edecektir.</p>
+<h3>Owen Yöntemi ile Hata Ayıklama</h3>
+<p>şžimdiye kadar ki tüm yöntemler Internet Explorer içindi. Bunun nedeni
+bir çok hatanın IE'den kaynaklanmasıdır tabi. şžimdi kullanacağımız
+metod ise Opera için bir hata ayıklamasıdır.</p>
+<p>[sourcecode language="css"] .solAlan { background-image: none } /*
+Asagidaki bolum Opera 6 ve altı veya IE6/win görünmeyecek */
+head:first-child+body .solAlan { background-image: url(menu.png);
+background-attachment: fixed; } [/sourcecode]</p>
+<p>Bu yöntem hem Opera 6 ve altı hem de IE6 ve altı versiyonlar için
+geçerlidir. Sadece Opera 6 ve altı versiyonlar için kod yazmak istersek</p>
+<p>[sourcecode language="css"] html>body div.alt { c\olor: red; /*
+sadece Opera 6 için */ } head:first-child+body div.alt { color: black;
+} [/sourcecode]</p>
+<h3>Yorum Kodları içinde (\) Kullanımı ile IE/Mac'de Hata Ayıklama</h3>
+<p>IE/Mac versiyonlarında yorum satırı içindeki ters bölme işaretini(\)
+yorumlamamaktadır. Bu nedenle IE/Mac versiyonlarında hata ayıklamak için
+bu yöntem kullanılabilir.</p>
+<p>[sourcecode language="css"] /* bu alani IE5/Mac den gizleyelim \*/ *
+html { height: 1px; } /* hata ayiklama sonu */ [/sourcecode]</p>
+<p>Bunların dışında kutu modeli hata ayıklaması için kullandığımız
+<a href="http://www.fatihhayrioglu.com/?p=13">tantek</a>'in yöntemi, <a href="http://www.fatihhayrioglu.com/?p=31">Css de kodumuzu İE'den gizleme</a> adlı makalede
+kullandığımız <strong>!important</strong> yöntemi ve <a href="http://www.fatihhayrioglu.com/?p=182">IE'da min-width,
+min-height,max-width, max-height Kullanmak</a> makalesinde kullandığımız
+<strong>expression()</strong> yöntemleride vardır. Bunlardan daha önce bahsettiğimiz
+için değinmedik. Bunların dışında kullanılan diğer bazı yöntemler olsa
+da biz burada genel kabul görmüş yöntemleri yazmayı uygun bulduk.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li>[http://www.webdevout.net/articles/css_hacks.php][]</li>
+<li><a href="http://swik.net/CSS/CSS+Hacks">http://swik.net/CSS/CSS+Hacks</a></li>
+<li><a href="http://css-discuss.incutio.com/?page=CssHack">http://css-discuss.incutio.com/?page=CssHack</a></li>
+<li><a href="http://www.quirksmode.org/css/csshacks.html">http://www.quirksmode.org/css/csshacks.html</a></li>
+<li><a href="http://tantek.com/CSS/Examples/boxmodelhack.html">http://tantek.com/CSS/Examples/boxmodelhack.html</a></li>
+<li><a href="http://www.albin.net/CSS/OwenHack.html">http://www.albin.net/CSS/OwenHack.html</a></li>
+</ul>
+</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "css-hata-ayiklama-yontemleri/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

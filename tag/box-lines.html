@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - box-lines</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././css3-esnek-kutu-yerlesimiflexible-box-layout/">CSS3 Esnek Kutu Yerleşimi(Flexible Box Layout)</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2011-09-16T22:47:00">
+                Fri 16 September 2011
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-haberler.html">CSS, Haberler</a>. </p>
+<p>tags: <a href=".././tag/box-align.html">box-align</a><a href=".././tag/box-direction.html">box-direction</a><a href=".././tag/box-flex.html">box-flex</a><a href=".././tag/box-flex-group.html">box-flex-group</a><a href=".././tag/box-lines.html">box-lines</a><a href=".././tag/box-ordinal-group.html">box-ordinal-group</a><a href=".././tag/box-orient.html">box-orient</a><a href=".././tag/box-pack.html">box-pack</a><a href=".././tag/css3.html">css3</a></p>
+
+
+</footer><!-- /.post-info --><p>CSS asıl çıkışını kazanmasında sayfa yerleşimini CSS ile ayarlamaya
+başladığımızda yaptı. CSS3 ile birlikte bize daha avantajlı sayfa
+yerleşimi özellikleri sunmayı gaye edinen W3C bizlere işimiz
+kolaylaştıracak Esnek Kutu Yerleşimi Modülünü sunmaktadır.</p>
+<p>Sayfa yerleşimini yaparken genelde float/clear veya position
+özelliklerini kullanarak yapıyorduz. Tabloya göre büyük avantajlar
+sağlayan bu yöntemlerden sonra web sayfası kodlamak daha kolay ve zevkli
+bir hal aldı. Detay için<a href="http://www.fatihhayrioglu.com/tablo-mu-div-mi-karmasasina-son-noktayi-html5-koydu/">Tablo mu? Div mi? Karmaşasına Son Noktayı HTML5
+koydu</a> yazısını inceleyin.</p>
+<p>Tabi CSS ile sayfa yerleşimi kodlamanın birçok avantajı var. Bunun
+yanında bazı karışık sayfa yerleşimlerinde ise bizi zorladığı bir
+gerçek. Özellikle esnek yapılı sayfa düzenleri ve dikey eksendeki
+yerleşimlerdeki sorunlarını gören W3C bize bu konuda yardımcı olacak
+yöntemleri üretmeye başladı. Bunlardan bir tanesi Esnek Kutu Yerleşimi
+Modülüdür(EKYM).</p>
+<p>Esnek Kutu Yerleşimi Modülü kapsayıcı bir eleman içindeki alt
+elemanların yerleşimini sağlamaktadır. Daha önce dikeyde yaşadığımız
+birçok sorunu(dikeyde ortalama ve aksak kolon sorunları gibi)
+gidermemizi sağlıyor. Esnek Kutu Yerleşimi Modülünü bu makalemizde
+inceleyeceğiz.</p>
+<p>Kapsayıcı elemana tanımlanan display:box özelliği yardımı ile alt
+elemanlara tanımlanan box(box-orient, box-direction, box-pack,
+box-align, box-lines, box-ordinal-group, box-flex ve box-flex-group)
+özellikleri ile sayfa yerleşimimizi çok kolay şekilde yapmamıza olanak
+sağlamaktadır.</p>
+<p>CSS3 EKYM olarak kısaltacağımız bu özellik bize olanaklarını display:box
+tanımı içerisinde gelen yeni tanımlar ile getirmektedir. Bu yeni 8 tanım
+aşağıdaki gibidir;</p>
+<ul>
+<li>box-orient</li>
+<li>box-direction</li>
+<li>box-pack</li>
+<li>box-align</li>
+<li>box-lines</li>
+<li>box-ordinal-group</li>
+<li>box-flex</li>
+<li>box-flex-group</li>
+</ul>
+<p>EKYM ilk olarak 2009 yılında standardı oluşturuldu, ancak daha sonra
+yeniden ele alındı ve şu an sonlandırılmak üzeredir. Biz 2009 yılındaki
+standartlaşan özellikleri tanımlayacağız, çünkü tarayıcılar 2009
+yılındaki standartları desteklemektedir ve yeni standartlaşan
+özelliğinde mantık olarak çok büyük farklılığı yok.</p>
+<h3>display:box</h3>
+<p>İlk olarak kapsayıcı esnek kutuları çevreleyen eleman <strong>display:box</strong>
+tanımı yaparak başlıyoruz. Farklı tarayıcılar önek ile birlikte
+desteklemektedir;</p>
+<p>[css] #esnekKutu{ display: -webkit-box; display: -moz-box; display:
+-ms-box; display: box; } [/css]</p>
+<p>Tanımı ile kapsayıcı elemanı tanımlıyoruz. Bu tanım ile kapsayıcı eleman
+içersindeki alt elemanların artık esnek yapılı olacağını ve EKYM
+özellikleri alabileceğini belirliyoruz.</p>
+<p>Çok basit bir şekilde kutularımızı yanyana dizebiliriz mesela</p>
+<p>[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
+display:-moz-box; display:-ms-box; width:600px; border:1px solid #03C;
+} [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/4KSzt/embedded/result,css,html"></iframe></p>
+<p>Kapsayıcı tanımlanan <strong>display:box</strong> tanımı ile içindeki elemanlar birer
+<strong>inline-block</strong> eleman gibi davranır ve yanyana sıralanır.</p>
+<h3>box-orient</h3>
+<div class="cssozelliktanimi">
+**Yapısı:** box-orient: \<deger\>  
+**Aldığı Değerler:** horizontal | vertical | inline-axis | block-axis  
+**Başlangıç değeri:** inline-axis  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanlara  
+**Kalıtsallık:** Yok
+
+</div>
+
+<p>box-orient özelliği ile esnek kapsayıcı eleman içindeki kutuların hangi
+eksende sıralanacağını belirleriz. Yukarıdaki örnekte gördüğümüz gibi
+eğer bir tanım yapılmadı ise ve kapsayıcı eleman genişliği müsait ise
+kutular yatayda yanyana sıralanır.</p>
+<p>Biz bu durumu değiştirmek için <strong>box-orient</strong> özelliğini kullanırız. 3
+adet değer alır.</p>
+<ul>
+<li><strong>horizontal:</strong> Kutular yatay eksende soldan sağa doğru sıralanır.</li>
+<li><strong>vertical:</strong> Kutular dikey eksende yukarıdan aşağıya doğru
+    sıralanır.</li>
+<li><strong>inherit:</strong> Üst elemanın değerini alır.</li>
+</ul>
+<p>Bunlardan başka iki değer daha mevcuttur. <strong>inline-axis</strong> yatayda ve
+<strong>block-axis</strong> dikeyde sıralamayı sağlar. Bu tanımlar <strong>horizontal</strong> ve
+<strong>vertical</strong> gibi davranırlar.</p>
+<p>[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
+display:-moz-box; box-orient:vertical; -moz-box-orient:vertical;
+-webkit-box-orient:vertical; width:200px; height:600px; border:1px solid
+#03C; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AsVDn/embedded/result,css,html"></iframe></p>
+<p><strong>box-orient:vertical</strong> ile esnek kutularımızı dikeyde sıraladık.</p>
+<h3>box-direction</h3>
+<div class="cssozelliktanimi">
+**Yapısı:** box-direction: \<deger\>  
+**Aldığı Değerler:** normal | reverse  
+**Başlangıç değeri:** inline-axis  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanlara  
+**Kalıtsallık:** Yok
+
+</div>
+
+<p><strong>box-direction</strong> özelliği kapsayıcı eleman içindeki esnek kutuların
+sıralama yönünü belirler. İki değer alır; normal ve <strong>reverse</strong>.
+<strong>reverse</strong> tanımlandığında sıralama yönü normalin tam tersine döner.</p>
+<p>[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
+display:-moz-box; box-orient:vertical; -moz-box-orient:vertical;
+-webkit-box-orient:vertical; box-direction: reverse; -moz-box-direction:
+reverse; -webkit-box-direction: reverse; width:200px; height:600px;
+border:1px solid #03C; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/S4c44/embedded/result,css,html"></iframe></p>
+<p>Yukarıdaki örnekte sıralama yukarıdan aşağı <strong>Esnek Kutu1, Esnek Kutu2</strong>
+ve <strong>Esnek Kutu3</strong> iken <strong>box-direction: reverse;</strong> tanımı ile sıralama
+<strong>Esnek Kutu3, Esnek Kutu2</strong> ve <strong>Esnek Kutu1</strong> şeklini almıştır.</p>
+<p><strong>Not:</strong> <strong>box-orient</strong> ve <strong>box-direction</strong> yerine ikisini kapsayan
+<strong>flex-direction</strong> üzerinde çalışılmaktadır.</p>
+<p><strong>flex-direction lr, rl, tb, bt, inline, inline-reverse, block</strong> ve
+<strong>block-reverse</strong> değerlerini alabilecek. sol(left - l), sağ(right - r),
+üst(top - t) ve alt(bottom - b) kısaltmaları kullanılmıştır. CSS3’ün
+birçok özelliği üzerinde halen çalışılan canlı bir yapıdır.
+Değişikliklerin olabileceği dikkate alınmalıdır.</p>
+<h3>box-pack</h3>
+<p><strong>Yapısı :</strong> box-pack: \&lt;deger><br />
+<strong>Aldığı Değerler :</strong> start | end | center | justify<br />
+<strong>Başlangıç değeri:</strong> start<br />
+<strong>Uygulanabilen elementler:</strong> display:box ve display:inline-box değeri
+alan elemanlara<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p><strong>box-pack</strong> özelliği kapsayıcı kutunun içindeki esnek kutuların
+kapsayıcıya göre konumunu belirlemek için kullanılır. Dört adet değer
+alır başlangıç(start), son(end), ortalı(center) ve iki yana
+yasla(justify)</p>
+<p>Alt elemanların genişliğinin kapsayıcı elemandan küçük olduğu durumlarda
+kalan boşluk alanına göre değerlendirme yapılır.</p>
+<p>Bu özellik tanımı 2009’da tanımlandı şu an yenileniyor <strong>flex-pack</strong>
+olarak değişecek. Tarayıcılar destekleyen kadar bu şekilde devam edecek.</p>
+<p>[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
+display:-moz-box; width:600px; border:1px solid #03C; box-pack:center;
+-webkit-box-pack:center; -moz-box-pack:center; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/MwWcm/embedded/result,css,html"></iframe></p>
+<h3>box-align</h3>
+<div class="cssozelliktanimi">
+**Yapısı :** box-align: \<deger\>  
+**Aldığı Değerler :** stretch | start | end | center | baseline  
+**Başlangıç değeri:** stretch  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanlara  
+**Kalıtsallık:** Yok
+
+</div>
+
+<p>Kapsayıcı elemana atanan box-orient değerine göre kalan boşluğa göre
+hizalama yapmak için kullanılır.</p>
+<p>Beş adet değer alır. <strong>stretch | start | end | center | baseline</strong>
+Başlangıç değeri <strong>stretch</strong>’dir; bunun anlamı <strong>box-orient</strong> değeri
+<strong>horizontal</strong> ise <strong>stretch</strong> uygulanan elemanın alt elemanlarının
+yükseklikleri yayılacaktır, eğer <strong>box-orient</strong> değeri <strong>veritcal</strong> ise
+genişlikleri yayılacaktır. <strong>start</strong> ve <strong>end</strong> değerleri eğer
+horizantal tanımlı ise sol ve sağa yaslayacaktır, <strong>vertical</strong> tanımlı
+ise üste ve alta yaslayacaktır. <strong>center</strong> değeri ise ortalayacaktır.</p>
+<p>[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
+display:-moz-box; width:600px; border:1px solid #03C;
+box-orient:horizantal; -moz-box-orient:horizantal;
+-webkit-box-orient:horizantal; box-align: center; -webkit-box-align:
+center; -moz-box-align: center; } .esnekKutu{ background-color:#999999;
+width:150px; height:150px; margin-right:15px; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ZYz2M/1/embedded/result,css,html"></iframe></p>
+<h3>box-lines</h3>
+<div class="cssozelliktanimi">
+**Yapısı :** box-lines: \<deger\>  
+**Aldığı Değerler :** single | multiple  
+**Başlangıç değeri:** single  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanlara  
+**Kalıtsallık:** Yok
+
+</div>
+
+<p>Esnek Kutu Yerleşimi ile yerleştirilen kutular genelde bir eksen
+üzerinde blok halinde hareket eder, <strong>blox-line</strong> özellik bu elemanların
+alt satıra geçip geçmemesini ayarlar. İki değer alır.</p>
+<ul>
+<li><strong>single:</strong> Başlangıç değerdir. Bu değeri alan kutular kapsayıcı
+    eleman üzerine taşma yapacaktır. Taşma durumunu kontrol etmek için
+    overflow özelliği kullanılabilir.</li>
+<li><strong>multiple:</strong> Bu değer alan kutular tek satırda kendini
+    sınırlamayacaklardır ve ikinci satıra inecektir.</li>
+</ul>
+<p>Şu anki tarayıcılar bu özelliği henüz desteklemiyor. İE10 desteklediğine
+dair duyumlar var.</p>
+<p>Yenilenen EKYM standartlarında box-line özelliği görünmüyor. Onun yerine
+benzer etki yapacak <strong>flex-flow</strong> tanımı gelecek gibi.</p>
+<h3>box-ordinal-group</h3>
+<div class="cssozelliktanimi">
+**Yapısı :** box-ordinal-group: \<deger\>  
+**Aldığı Değerler :** \<sayı\>  
+**Başlangıç değeri:** 1  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanların normal akıştaki alt elemanları  
+**Kalıtsallık:** Yok
+
+</div>
+
+<p><strong>box-ordinal-group</strong> özelliği kapsayıcı kutunun içindeki esnek
+kutuların sıralamasını belirlememizi sağlar.</p>
+<p>[css] #esnekKutu1 { box-ordinal-group: 2; -webkit-box-ordinal-group: 2;
+-moz-box-ordinal-group: 2; background-color:#0CF; } #esnekKutu3 {
+box-ordinal-group: 2; -webkit-box-ordinal-group: 2;
+-moz-box-ordinal-group: 2; background-color:#9C3; } #esnekKutu4 {
+box-ordinal-group: 1; -webkit-box-ordinal-group: 1;
+-moz-box-ordinal-group: 1; background-color:#FC9; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/TaFBM/embedded/result,css,html"></iframe></p>
+<p>Dört adet kutumuz var. Bunların üç tanesine <strong>box-ordinal-group</strong> değeri
+tanımladık.</p>
+<p><strong>EsnekKutu1</strong> ve <strong>EsnekKutu3</strong> için 2 değeri tanımladık bunlar ikinci
+sırada gelecek. <strong>EsnekKutu4</strong>’e 1 değer tanımladık, buda ilk sırada
+gelecek. <strong>EsnekKutu2</strong> için bir tanım yapmadık buda başlangıç değeri
+olan 1 değerini almasına neden olacaktır. Buna göre sıralama 2,4,1,3
+şeklinde olacaktır.</p>
+<p>Bu özellik bize sıralama konusunda tam bir kontrol sağlamaktadır.</p>
+<p>Yeni EKYM standardında <strong>box-ordinal-group</strong> yerine <strong>flex-order</strong>
+özellik ismi kullanılması düşünülmektedir.</p>
+<h3>box-flex</h3>
+<div class="cssozelliktanimi">
+**Yapısı :** box-ordinal-group: \<deger\>  
+**Aldığı Değerler :** \<sayı\>  
+**Başlangıç değeri:** 0  
+**Uygulanabilen elementler:** display:box ve display:inline-box değeri
+alan elemanların normal akıştaki alt elemanları  
+**Kalıtsallık:** Yok
+
+</div>
+
+<p><strong>blox-flex</strong> özelliği tanımlanması durumunda alt elemanların esnek
+davranmasını sağlar. Tanım yapılmadığında ise alt elemanlar esnek olmaz.</p>
+<p>Hesaplamanın mantığı şöyledir;</p>
+<p>Gruptaki tüm esnek kutuların <strong>box-flex</strong> değeri toplanır ve her kutu
+için toplam boşluk genişliği(Kapasayıcı eleman ile kutuların genişliği
+toplamı arasındaki fark) bu sayıya bölünerek elde edilen değer kutu
+genişliğini belirler.</p>
+<p>[css] #esnekKutuKapsul { background: gray; border: blue; display: box;
+display: -webkit-box; display: -moz-box; display: -ms-box; width:100%; }
+.esnekKutu { background-color:#999999; height:150px; } #esnekKutu1 {
+background-color:#0CF; border: orange solid 1px; box-flex: 2;
+-webkit-box-flex: 2; -moz-box-flex: 2; -ms-box-flex: 2; } #esnekKutu2 {
+background: lightgray; border: red solid 1px; box-flex: 1;
+-webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; } #esnekKutu3 {
+background-color:#9C3; border: red solid 1px; box-flex: 0;
+-webkit-box-flex: 0; -moz-box-flex: 0; -ms-box-flex: 0; } #esnekKutu4 {
+background-color:#FC9; border: red solid 1px; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/h7KAa/embedded/result,css,html"></iframe></p>
+<p>Daha sabit bir örnek verelim; genişliği 600px olan kapsayıcı eleman ve
+ üç adet 100px’lik kutumuz olsun(Bu durumdan boşluk değeri 300px
+olacaktır), bunların <strong>box-flex</strong> değerleri 1 olsun, her bir kutunun
+genişliği 200px(100 + 300/3 * 1 = 200) olacaktır. Eğer bu kutulardan
+bir tanesinin <strong>box-flex</strong> değeri 2 olarak değiştirilirse, değiştirilen
+kutunun genişliği 250px(100 + 300/4 * 2 = 250) olurken diğer iki
+kutunun genişliği 175px(100 + 300/4 * 1 = 175) olacaktır.</p>
+<p>[css] #esnekKutuKapsul { background: gray; border: blue; display: box;
+display: -webkit-box; display: -moz-box; display: -ms-box; width:600px;
+} .esnekKutu { background-color:#999999; height:150px; width:100px; }
+#esnekKutu1 { background-color:#0CF; box-flex: 2; -webkit-box-flex: 2;
+-moz-box-flex: 2; -ms-box-flex: 2; } #esnekKutu2 { background:
+lightgray; box-flex: 1; -webkit-box-flex: 1; -moz-box-flex: 1;
+-ms-box-flex: 1; } #esnekKutu3 { background-color:#9C3; box-flex: 1;
+-webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; } [/css]
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Dyjq2/embedded/result,css,html"></iframe></p>
+<p>Eğer kutu genişlikleri toplamı kapsayıcı kutunun genişliğinden büyük ise
+genişlik hesaplamasında benzer birim hesabına göre küçülme olacaktır. 0
+değeri kutunun esnek olmayacağı anlamına gelir.</p>
+<p><a href="http://www.ie7nomore.com/fun/flexiblenav/">Raphael Goetter</a>’ın yaptığı örnek bu işin geleceği hakkında bize
+güzel bir ipucu veriyor. Fantastik örnekler.(Chrome da daha iyi
+gözüküyor)</p>
+<p><strong>box-flex</strong> özelliği 2009 yılındaki standartlardaki hali idi, yenilenen
+standartlarda <strong>box-flex</strong> vede <strong>box-flex-group</strong> özelliklerini
+kapsayan <strong>flex()</strong> fonksiyonu ile yenilenmektedir.</p>
+<div class="tarayiciuyum">
+**Tarayıcı Destekleme Listesi**  
+Firefox 3+ (-moz- öneki ile)  
+Chrome 5+ (-webkit- öneki ile)  
+Safari 3.2+ (-webkit- öneki ile)  
+Opera desteklemiyor  
+İnternet Explorer 10+ (-ms- öneki ile)  
+**Mobil Tarayıcılar**  
+iOS Safari 3.2+ (-webkit- öneki ile)  
+Opera Mini desteklemiyor  
+Opera Mobile destelemiyor  
+Android Browser 2.2+ (-webkit- öneki ile)
+
+</div>
+
+<h3>Sonuç</h3>
+<p>Gerek CSS3 ve gerekse EKYM yeni özellikler ve hala gelişmektede olan
+mecralar. Benim burada anlatmak istediğim CSS3’ün en büyük
+yeniliklerinden biri olan sayfa planlamaya yönelim yeniliklerine bir göz
+atmak, mantığını kavramak, geleceğe dair fikir edinmeyi sağlamaktır. Ben
+burada sadece EKYM anlattım, ancak CSS3 ile sayfa planlamaya yönelik
+başka modüllerde geliştirilmekte; <a href="http://www.fatihhayrioglu.com/css3-coklu-kolonlar/">Çoklu Kolonlar(Multiple Column)</a>,
+<a href="http://dev.w3.org/csswg/css3-grid-align/">Izgara Yerleşim Modeli(Grid Layout)</a>, <a href="http://www.w3.org/TR/css3-layout/">Şablon Yerleşim
+Modeli(Template Layout Model)</a>, <a href="http://dev.w3.org/csswg/css3-exclusions/">CSS Exclusions Module</a>, <a href="http://dev.w3.org/csswg/css3-regions/">CSS
+regions Module</a></p>
+<p>CSS3 ile sayfa yerleşimi daha kolay olacağı kesin, bu konuda bir çok
+modül üzerinde çalışma bitmek üzere veya bitmiş bulunmakta. Gelecekte
+daha güzel şeyler olacağı kesin.</p>
+<p>Yukarıda özelliklerin nasıl kullanıldığını göstermek için daha basit
+örneklerler verdik, daha karmaşık örneklerde yapılabilir
+<a href="http://oli.jp/2011/css3-flexbox/">http://oli.jp/2011/css3-flexbox/</a> sitesindeki örnekler incelenebilir.
+ </p>
+<p>Kalın sağlıcakla</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.html5rocks.com/en/tutorials/flexbox/quick/">http://www.html5rocks.com/en/tutorials/flexbox/quick/</a> (güzel)</li>
+<li><a href="http://www.css3.info/introducing-the-flexible-box-layout-module/">http://www.css3.info/introducing-the-flexible-box-layout-module/</a></li>
+<li><a href="http://www.w3.org/TR/css3-flexbox/">http://www.w3.org/TR/css3-flexbox/</a></li>
+<li><a href="http://dev.w3.org/csswg/css3-flexbox/">http://dev.w3.org/csswg/css3-flexbox/</a></li>
+<li><a href="static">http://robertnyman.com/2010/12/02/css3-flexible-box-layout-module-aka-flex-box-introduction-and-demostest-cases/</a></li>
+<li>[http://www.456bereastreet.com/archive/201103/the_css3_flexible_box_layout_flexbox/][]</li>
+<li><a href="http://hacks.mozilla.org/2010/04/the-css-3-flexible-box-model/">http://hacks.mozilla.org/2010/04/the-css-3-flexible-box-model/</a></li>
+<li><a href="http://www.the-haystack.com/2010/01/23/css3-flexbox-part-1/">http://www.the-haystack.com/2010/01/23/css3-flexbox-part-1/</a></li>
+<li><a href="http://ie.microsoft.com/testdrive/html5/flexin/default.html">http://ie.microsoft.com/testdrive/html5/flexin/default.html</a></li>
+<li><a href="http://htmlrockstars.com/blog/the-flexible-box-layout-module-css3/">http://htmlrockstars.com/blog/the-flexible-box-layout-module-css3/</a></li>
+<li><a href="static">http://blog.w3conversions.com/2011/02/css3-flexible-box-model-layout-coolness-also-oddities-confusion/</a></li>
+<li><a href="static">http://www.netmagazine.com/tutorials/css3-flexible-box-model-explained</a></li>
+<li><a href="http://adactio.com/journal/4778/">http://adactio.com/journal/4778/</a></li>
+<li><a href="http://www.vanseodesign.com/css/flexbox/">http://www.vanseodesign.com/css/flexbox/</a> (güzel)</li>
+<li><a href="http://oli.jp/2011/css3-flexbox/">http://oli.jp/2011/css3-flexbox/</a> (karmaşık yerleşim uygulamalı)</li>
+<li><a href="http://blog.isotoma.com/2010/08/css3-flexbox/">http://blog.isotoma.com/2010/08/css3-flexbox/</a></li>
+<li>[http://www.w3schools.com/css3/css3_reference.asp#box][]</li>
+<li><a href="static">http://portfo.li/madebyted/477862-css3-flexible-box-layout-module-aka-flex-box-introduction-and-demos-test-cases</a></li>
+<li><a href="http://ontwik.com/css/css-3-the-flexible-box-model/">http://ontwik.com/css/css-3-the-flexible-box-model/</a> (video)</li>
+<li>[http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox][]
+    (güzel)</li>
+<li><a href="http://caniuse.com/flexbox">http://caniuse.com/flexbox</a> (tarayıcı desteği)</li>
+<li><a href="static">http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">robertnyman</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>12<span class="o">/</span>02<span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">flexible</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">layout</span><span class="o">-</span><span class="n">module</span><span class="o">-</span><span class="n">aka</span><span class="o">-</span><span class="n">flex</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">introduction</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">demostest</span><span class="o">-</span><span class="n">cases</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>456<span class="n">bereastreet</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>201103<span class="o">/</span><span class="n">the_css3_flexible_box_layout_flexbox</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">w3conversions</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2011<span class="o">/</span>02<span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">flexible</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">model</span><span class="o">-</span><span class="n">layout</span><span class="o">-</span><span class="n">coolness</span><span class="o">-</span><span class="n">also</span><span class="o">-</span><span class="n">oddities</span><span class="o">-</span><span class="n">confusion</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">netmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">flexible</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">model</span><span class="o">-</span><span class="n">explained</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">portfo</span><span class="p">.</span><span class="n">li</span><span class="o">/</span><span class="n">madebyted</span><span class="o">/</span>477862<span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">flexible</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">layout</span><span class="o">-</span><span class="n">module</span><span class="o">-</span><span class="n">aka</span><span class="o">-</span><span class="n">flex</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">introduction</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">demos</span><span class="o">-</span><span class="n">test</span><span class="o">-</span><span class="n">cases</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">coding</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2011<span class="o">/</span>09<span class="o">/</span>19<span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">flexible</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">layout</span><span class="o">-</span><span class="n">explained</span><span class="o">/</span>
+</pre></div><p>There are <a href=".././css3-esnek-kutu-yerlesimiflexible-box-layout/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

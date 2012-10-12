@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - Sabit-Konumlandırma</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././eksi-margin-kullanimi/">Eksi Margin Kullanımı</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2009-11-10T00:37:00">
+                Tue 10 November 2009
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/eksi-margin.html">eksi-margin</a><a href=".././tag/elastik-web-sayfalari.html">Elastik Web Sayfaları</a><a href=".././tag/float.html">float</a><a href=".././tag/margin.html">Margin</a><a href=".././tag/sabit-konumlandirma.html">Sabit-Konumlandırma</a></p>
+
+
+</footer><!-- /.post-info --><p>Margin özelliği eksi değer alabilir. Eksi değerler bize tasarımsal
+olarak farklı uygulamalar geliştirmemize yardımcı olur. Tabi bir çok
+özellikte olduğu gibi burada da farklı tarayıcılarda bazı sorunlarla
+karşılacağız.</p>
+<p>Eksi margin'li değerler bize görsel olarak avantaj sağlar, kodlamamıza
+yardımcı olur örneğin esnek yapılı sayfaları düzenlememizde ve bir
+elemanın çizgileri dışına taşırma işlemlerinde.</p>
+<p>Eksi margin kullanımı bir hile değildir, CSS'in desteklediği normal bir
+değerdir.</p>
+<p>Eksi margin bir çok yerde kullanıyoruz. Ancak biraz bilinçsiz
+kullanıyoruz. Ben burada çizgileri belirleyip ona göre hareket etmeyi
+düşündüm ve bu yazı ortaya çıktı. Eksi marginleri yakından tanıyalım.</p>
+<p>Eksi Margin'i iki yerde uygularız.</p>
+<ul>
+<li>Sabit konumlandırılmış elemanlarda</li>
+<li>Float uygulanmış elemanlarda</li>
+</ul>
+<!--more-->
+
+<h3>1- Sabit Elemanlar ve Eksi Margin</h3>
+<p><strong>1.1. Ard Arda Statik Elemanlar</strong></p>
+<p>Herhangi bir konumlandırma ataması yapılmayan tüm elemanlar sabit
+konumlandırılmıştır.</p>
+<p>[sourcecode language="css"] #kutu1 { width: 200px; height: 100px;
+border: 2px solid #659ad8; background-color:#e5ecf9 } #kutu2 { width:
+200px; height: 100px; border: 2px solid #cd8a93;
+background-color:#ffb4bf } [/sourcecode] [sourcecode language="html"]
+\&lt;div id="kutu1">\&lt;/div> \&lt;div id="kutu2">\&lt;/div> [/sourcecode]</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/sabit_konumlu.html">tıklayınız.</a></p>
+<p>![sabit_konumlu_kutu][]</p>
+<p>Normal akış içindeki iki kutu bir birini takip eder. Biz burada birinci
+kutuya eksi margin atarsak örneğin alttan -20px gibi.</p>
+<p>Alttaki kutuyu kendi üzerine doğru 20px çekecektir.</p>
+<p>[sourcecode language="css" highlight="6"] #kutu1 { width: 200px;
+height: 100px; border: 2px solid #659ad8; background-color:#e5ecf9;
+margin-bottom:-20px } #kutu2 { width: 200px; height: 100px; border: 2px
+solid #cd8a93; background-color:#ffb4bf } [/sourcecode]</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/sabit_konumlu_2.html">tıklayınız.</a></p>
+<p>![sabit_konumlu_kutu2][]</p>
+<p>Eğer ikinci kutuya yukarıdan eksi margin verirsek</p>
+<p>[sourcecode language="css" highlight="13"] #kutu1 { width: 200px;
+height: 100px; border: 2px solid #659ad8; background-color:#e5ecf9; }
+#kutu2 { width: 200px; height: 100px; border: 2px solid #cd8a93;
+background-color:#ffb4bf; margin-top:-20px } [/sourcecode]</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/sabit_konumlu_3.html">tıklayınız.</a></p>
+<p>![sabit_konumlu_kutu2][]</p>
+<p>Aynı görüntüyü alırız. Burada bu örneği vermemin amacı, eksi değer üst
+ve soldan verilirse eleman kendini yukarı veya sola çekecektir. Ancak
+elemana sağ ve alt eksi değeri verildiğinde kendi yerinden oynamazken
+ilişkili elemanı kendine doğru çekecektir. Yani üst/sol eksi değerlerde
+kendi hareket ederken, alt/sağ eksi değerlerde diğer elemanları kendine
+çekiyor.</p>
+<p><strong>1.2. Başlıklar ve içerikler Arasındaki mesafeyi Ayarlamak İçin Eksi
+Margin kullanmak</strong></p>
+<p>Başka bir örnek yapalım. Genelde sitelerin içeriklerini girerken başlık
+ve içerik şeklinde gireriz. Başlıklar için h1, h2, h3, h4, h5, h6
+kullanırız. Bu bize arama motorları içinde avantaj sağlar. </p>
+<p>Normal bir içerik ve başlık kullanımına örnek verelim.</p>
+<p>[sourcecode language="html"] \&lt;p>Integer sagittis ... elementum. \&lt;/p>
+\&lt;h1>Donec id ultricies mi.\&lt;/h1> \&lt;p>Lorem ipsum ... eros.\&lt;/p>
+[/sourcecode]</p>
+<p>Görünüm aşağıdaki gibi olacaktır</p>
+<p>![negatifmargin_baslik][]</p>
+<p>Genel kullanımda başlık ile içerik arasındaki boşluk, başlık ile üst
+elemanlarda ile olandan daha azdır. Biz bunu sağlamak için h1'e
+margin-bottom:0 değeri versek de yeterli gelmez. Paragrafın(p) üst
+margin değeri aradaki mesafeyi açık gösterecektir. Bu durumu engellemek
+için başlıktan sonra gelen paragraflara bir sınıf atayıp bu
+paragrafların margin-top değerini düşürmeliyiz veya sıfırlamalıyız.</p>
+<p>Bir başka çözüm yolu ise ki bu daha kolaydır ve genelde tercih edilir.
+Başlık etiketinin alt margin değerine eksi değer vererek paragraf
+yaklaştırılır. </p>
+<p>[sourcecode language="css"] h1{ margin-bottom:-20px } [/sourcecode]</p>
+<p>![negatifmargin_baslik2][]</p>
+<p><strong>1.3. Statik elemanlarda bir başka durumda kutuların iç içe olma
+durumunda vardır.</strong></p>
+<p>[sourcecode language="css" highlight="11"] #kutu1 { width:200px;
+height: 130px; border: 2px solid #659ad8; background-color:#e5ecf9; }
+#kutu2 { height: 100px; border: 2px solid #cd8a93;
+background-color:#ffb4bf; margin:10px -20px } [/sourcecode] [sourcecode
+language="html"] \&lt;div id="kutu1"> \&lt;div id="kutu2">\&lt;/div> \&lt;/div>
+[/sourcecode]</p>
+<p>İçteki kutuya sağdan ve soldan eksi değerler verdiğimizde dış kutunu
+genişliğini otomatik olarak alan içerideki kutu sağ ve soldan verilen
+eksi kenar dışı boşluk değerleri kadar dışa taşacaktır.</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/sabit_konumlu_4.html">tıklayınız.</a></p>
+<p>![sabit_konumlu_kutu3][]</p>
+<p>Ancak burada farklı tarayıcılarda farklı sorunlarımız ortaya çıkacaktır.
+ie6 da her iki yana taşan kısımlar gözükmezken, ie7'de sadece sağ kısım
+görünmemektedir.</p>
+<p>![sabit_konumlu_kutu3_ie7][]</p>
+<p>ie7'de yukarıdaki gibi görünüyor.</p>
+<p>![sabit_konumlu_kutu3_ie6][]</p>
+<p>ie6'da ise yukarıdaki gibi görünmektedir.</p>
+<p>Bu durumu düzeltmek için düzeltme kodu yazmalıyız. ie7 için min-height:0
+tanımı yeterlidir.</p>
+<p>[sourcecode language="css" highlight="12"] #kutu1 { width:200px;
+height: 130px; border: 2px solid #659ad8; background-color:#e5ecf9; }
+#kutu2 { height: 100px; border: 2px solid #cd8a93;
+background-color:#ffb4bf; margin:10px -20px; min-height:0 }
+[/sourcecode]</p>
+<p>ie6 için ise daha farklı bir kod yazmalıyız.</p>
+<p>[sourcecode language="css" highlight="11,12,13,14"] #kutu1 {
+width:200px; border: 2px solid #659ad8; background-color:#e5ecf9; }
+#kutu2 { border: 2px solid #cd8a93; background-color:#ffb4bf;
+margin:10px -20px; } * html #kutu2{ position:relative; height:1px }
+[/sourcecode]</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/sabit_konumlu_4_ie6.html">tıklayınız.</a></p>
+<p>Bu kodlama sayesinde tüm tarayıcılarda aynı sonucu elde ederiz. Bu
+örnekten şu sonucuda çıkarabiliriz; genişliği verilmeyen elemanlarda
+eksi margin eleman genişliğini arttırır, bir bakıma padding görevi
+görür.</p>
+<h3>2- Eksi Margin ve Float</h3>
+<p>Float uygulanmış iki elemanı düşünelim.</p>
+<p>[sourcecode language="css"] #kutu1 { float:left; width: 200px; height:
+100px; border: 2px solid #659ad8; background-color:#e5ecf9; } #kutu2
+{ float:left; width: 200px; height: 80px; border: 2px solid #cd8a93;
+background-color:#ffb4bf } [/sourcecode] [sourcecode language="html"]
+\&lt;div id="kutu1"> Lorem ipsum dolor sit amet, consectetur adipiscing
+elit. Donec id ultricies mi. \&lt;/div> \&lt;div id="kutu2"> Etiam vel arcu
+nisl. Sed pharetra gravida diam sed mattis. \&lt;/div> [/sourcecode]</p>
+<p>Birinci kutuya sağ eksi margin verdiğimizde</p>
+<p>[sourcecode language="css" highlight="2,7"] #kutu1 { float:left; width:
+200px; height: 100px; border: 2px solid #659ad8;
+background-color:#e5ecf9; margin-right:-50px } #kutu2 { float:left;
+width: 200px; height: 80px; border: 2px solid #cd8a93;
+background-color:#ffb4bf } [/sourcecode]</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_float.html">tıklayınız.</a></p>
+<p>![float_eksimargin][]</p>
+<p>Birinci kutu ikinci kutuyu kendine doğru çekecektir. Birinci kutu
+genişliği ve konumunda herhangi bir değişiklik olmayacaktır.</p>
+<p>Farklı durumlarda farklı sonuçlar çıkacaktır. Örneğin,</p>
+<p>Birinci float:left ikinci kutu float:right değeri verdiğimizde iki kutu
+arasında herhangi bir eksi değer etki etmiyor.<br />
+Her ikisine float:right tanımladığımızda ise, soldan eksi margin değeri
+yukarıdaki etkiyi yapıyor.</p>
+<p>Peki bu bilgi bizim ne işimize yaracak derseniz.
+http://www.alistapart.com/articles/negativemargins/ örnekteki gibi esnek
+yapılı bir sayfa planında sabit yapılı bir sağ veya sol alanlar
+oluşturmak istediğimizde yarar.</p>
+<p>Örneğin %100 genişlikteki bir içerik alanımızı sağ yanına 200px lik bir
+sağ kolon eklemek istersek, yukarıdaki kodu devam ettirmemiz yeterli
+olacaktır.</p>
+<p>[sourcecode language="css" highlight="6,10"] #kutu1 { float:left;
+width: 100%; height: 100px; background-color:#e5ecf9;
+margin-right:-200px } #kutu2 { float:left; width: 200px; height: 80px;
+background-color:#ffb4bf } [/sourcecode] [sourcecode language="html"]
+\&lt;div id="kutu1"> \&lt;p>Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Donec id ultricies mi.\&lt;/p> \&lt;/div> \&lt;div
+id="kutu2"> \&lt;p>Etiam vel arcu nisl. Sed pharetra gravida diam sed
+mattis.\&lt;/p> \&lt;/div> [/sourcecode]</p>
+<p>![float_eksimargin_esnek][]</p>
+<p>%100 içeriği sağ kolonun altında kalıyor. Bunu engellemek için
+içeriğindeki paragrafa sağ margin değeri atamalıyız.</p>
+<p>[sourcecode language="css"] #kutu1 p{ margin-right:220px }
+[/sourcecode]</p>
+<p>Normalde 200px yeterli olacaktı ancak içerik ile sağ kolon arasına 20px
+lik bir mesafe koyarak birbirine yapışmasınıda engellemiş olduk.</p>
+<p>![float_eksimargin_esnek2][]</p>
+<p>Sağ ve sol kolon diye bir ayrım yapmak içinde soldaki kolonun ardalan
+rengini kaldırıp içindeki paragrafa vererek bu sorunu çözebiliriz.</p>
+<p>[sourcecode language="css" highlight="6,7,8,9,10"] #kutu1 { float:left;
+width: 100%; margin-right:-200px } #kutu1 p{ margin:0 220px 0 0;
+height: 100px; background-color:#e5ecf9; } #kutu2 { float:left; width:
+200px; height: 80px; background-color:#ffb4bf } [/sourcecode]</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_float_elastik.html">tıklayınız.</a></p>
+<p>![float_eksimargin_esnek3][]</p>
+<p><strong>Float uygulanmış iç içe elemanlara eksi margin uygulamak</strong></p>
+<p>Yukarıda yan yana elemanlardaki durumu gösterdik peki iç içe elemanlarda
+eksi margin kullanımda nasıl sonuçlar çıkacaktır.</p>
+<p>[sourcecode language="css"] #kutu1 { float:left; width: 200px; height:
+100px; border: 2px solid #659ad8; background-color:#e5ecf9; } #kutu2
+{ float:right; width: 50px; height: 80px; border: 2px solid #cd8a93;
+background-color:#ffb4bf; } [/sourcecode] [sourcecode language="html"]
+\&lt;div id="kutu1"> \&lt;div id="kutu2">Donec id ultricies mi.\&lt;/div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. \&lt;/div>
+[/sourcecode]</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_icice_float.html">tıklayınız.</a></p>
+<p>![float_eksimargin_icice][]</p>
+<p>Birinci kutu içerisinde sağa hizalanmış ikinci kutuyu sağa doğru birinci
+kutu dışarısına çıkararak bir çok uygulamada işimizie yaracaktır.</p>
+<p>[sourcecode language="css" highlight="14"] #kutu1 { float:left; width:
+200px; height: 100px; border: 2px solid #659ad8;
+background-color:#e5ecf9; } #kutu2 { float:right; width: 80px; height:
+80px; border: 2px solid #cd8a93; background-color:#ffb4bf; margin:10px
+-50px 0 0 } * html #kutu2{ position:relative; } [/sourcecode]</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_icice_float2.html">tıklayınız.</a></p>
+<p>![float_eksimargin_icice2][]</p>
+<p>Bir başka uygulama şeklide</p>
+<p>Bir içerik ve başlığı normal şekilde normal akış içerisinde iken</p>
+<p>[sourcecode language="css"] #kutu1 { float:left; border: 2px solid
+#659ad8; background-color:#e5ecf9; padding:0 20px } #kutu1 h2{
+border: 2px solid #cd8a93; background-color:#ffb4bf; } [/sourcecode]
+[sourcecode language="html"] \&lt;div id="kutu1"> \&lt;h2>Donec id ultricies
+mi.\&lt;/h2> \&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Morbi porttitor vehicula nisl, et tincidunt sapien venenatis quis. ..
+felis.\&lt;/p> \&lt;/div> [/sourcecode]</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_icice_float3.html">tıklayınız.</a></p>
+<p>![float_eksimargin_icice3][]</p>
+<p>Ancak buradaki başlığı kutu dışına alarak farklı bir görünüm elde
+edebiliriz.</p>
+<p>[sourcecode language="css" highlight="4"] #kutu1 h2{ border: 2px solid
+#cd8a93; background-color:#ffb4bf; margin-top:-20px } [/sourcecode]</p>
+<p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_icice_float4.html">tıklayınız.</a></p>
+<p>![float_eksimargin_icice4][]</p>
+<p>ve tabi ie 6 için</p>
+<p>[sourcecode language="css"] * html #kutu1 h2{ position:relative;
+height:1px } [/sourcecode]</p>
+<p><strong>Eksi Margin Uygulamaları</strong></p>
+<ul>
+<li>[Konumlandırma(positioning) kullanılan elementlerin negatif margin
+    ile ortalanması][]</li>
+<li><a href="http://www.fatihhayrioglu.com/css-ile-golge-vermek/">CSS ile gölge vermek</a></li>
+</ul>
+<p>Ayrıca</p>
+<p><a href="http://www.communitymx.com/abstract.cfm?cid=27F87">Eksi margin Kullanarak çoklu kolon</a> oluşturmak adlı güzel bir makale
+var.</p>
+<h3>Sonuç</h3>
+<p>Sonuç olarak eksi margin bir çok uygulamamızda kullanacağımız bir
+özellik. Genelde farklılıkları ile ön plana çıkan bir özelliktir. Ben
+burada eksi margin'i tanıttım ve genel bilinen uygulamalarını yaptım ve
+bir kaçına link verdim. Buradaki bilgiler ışığında daha bir çok
+uygulamamızda eksi margin'i kullanmaya devam edeceğiz.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="static">http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/</a><br />
+</li>
+<li><a href="http://www.brunildo.org/test/NegMOutH.html">http://www.brunildo.org/test/NegMOutH.html</a><br />
+</li>
+<li><a href="http://csscreator.com/node/1703">http://csscreator.com/node/1703</a> (ie sorun düzeltme)<br />
+</li>
+<li><a href="http://www.communitymx.com/abstract.cfm?cid=B0029">http://www.communitymx.com/abstract.cfm?cid=B0029</a> (bilgi)<br />
+</li>
+<li><a href="http://www.alistapart.com/articles/negativemargins/">http://www.alistapart.com/articles/negativemargins/</a> (Uygulama)<br />
+</li>
+<li><a href="static">http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/</a>
+    (ayrıntılı bilgi)<br />
+</li>
+<li><a href="static">http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm</a>
+    (karşı çıkış)<br />
+</li>
+<li><a href="http://haslayout.net/css/negmargin">http://haslayout.net/css/negmargin</a> (hata bilgisi)<br />
+</li>
+<li><a href="http://csscreator.com/node/28664">http://csscreator.com/node/28664</a> (küçük bilgi)<br />
+</li>
+<li><a href="http://www.simplebits.com/notebook/2005/05/23/negative.html">http://www.simplebits.com/notebook/2005/05/23/negative.html</a>
+    (negatif margin kullanılcak bir örnek)<br />
+</li>
+<li><a href="static">http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra</a>
+    (negatif margin ile sayfa yapısı oluşturma)<br />
+</li>
+<li><a href="http://haslayout.net/css/Negative-Margin-Bug">http://haslayout.net/css/Negative-Margin-Bug</a> (negatif margin
+    sorunları)</li>
+</ul>
+</p>
+
+<p>[Konumlandırma(positioning) kullanılan elementlerin negatif margin ile
+  ortalanması]: http://www.fatihhayrioglu.com/css-ile-sayfalarimizi-ve-elementlerimizi-ortalamak/
+    http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/
+    http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/
+    http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm
+    http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra</p><p>There are <a href=".././eksi-margin-kullanimi/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././z-index/" rel="bookmark"
+                           title="Permalink to z-index">z-index</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2008-01-14T23:10:00">
+                Mon 14 January 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a>. </p>
+<p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/goreceli-konumlandirma.html">Göreceli-Konumlandırma</a><a href=".././tag/haberler.html">Haberler</a><a href=".././tag/mutlak-konumlandirma.html">Mutlak-Konumlandırma</a><a href=".././tag/sabit-konumlandirma.html">Sabit-Konumlandırma</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/xhtml.html">XHTML</a><a href=".././tag/z-ekseni.html">z-ekseni</a><a href=".././tag/z-index.html">z-index</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>z-index, konumlandırma elementleri uygulanmış katmanların z-eksenindeki
+konumu belirlemek için kullanılır.</p>
+<p>z-index tüm elementlere uygulanamaz sadece konumlandırma değeri atanmış
+elementlere uygulanır. Bunun anlamı eğer bir elementi aynı z-ekseni
+üzerinde üste veya alt sıraya atmak istiyorsanız ilk olarak
+konumlandırma değeri atamalısınız.</p>
+<!--more-->
+
+<p>z-index değeri dokümanımızdaki elementlerin istiflenme sıralarını
+belirler. z-index elementleri z-ekseninde nerede ...</p></!--more-->
+                <a class="readmore" href=".././z-index/">read more</a>
+                <p>There are <a href=".././z-index/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././css-ile-konumlandirmapositioning/" rel="bookmark"
+                           title="Permalink to CSS ile konumlandırma(positioning)">CSS ile konumlandırma(positioning)</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2006-09-01T22:43:00">
+                Fri 01 September 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css.html">CSS</a>. </p>
+<p>tags: <a href=".././tag/blok-level.html">Blok-level</a><a href=".././tag/bottom.html">bottom</a><a href=".././tag/css.html">CSS</a><a href=".././tag/goreceli-konumlandirma.html">Göreceli-Konumlandırma</a><a href=".././tag/inline-level.html">Inline-level</a><a href=".././tag/left.html">left</a><a href=".././tag/mutlak-konumlandirma.html">Mutlak-Konumlandırma</a><a href=".././tag/position.html">position</a><a href=".././tag/right.html">right</a><a href=".././tag/sabit-konumlandirma.html">Sabit-Konumlandırma</a><a href=".././tag/top.html">top</a><a href=".././tag/z-index.html">z-index</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>CSS konseptinin üç önemli konusu <a href="http://www.fatihhayrioglu.com/?p=13">kutu modelleme</a>,
+<strong>konumlandırma(positioning)</strong> ve floating konularıdır.</p>
+<p>Burada CSS ile konumlandırma hakkında bilgi vermeye çalışacağız.
+<!--more--></p>
+<p>Konumlandırma ile alakalı olduğu için blok-level ve inline-level
+elementlerin tanımını tekrarlayacağız.</p>
+<p><strong>Blok-level elementler :</strong> Blok-level elementingörünüş formatı bir kutu
+gibidir. Blok-level elementler inlineelementleri ve diğer blok-level
+elementleri içerebilir. Tipiközellikleri yeni bir ...</p>
+                <a class="readmore" href=".././css-ile-konumlandirmapositioning/">read more</a>
+                <p>There are <a href=".././css-ile-konumlandirmapositioning/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

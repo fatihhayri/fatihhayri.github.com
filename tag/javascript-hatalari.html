@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - javascript hataları</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././genelde-karsilasilan-javascript-hatalari/">Genelde Karşılaşılan Javascript Hataları</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2008-06-20T10:25:00">
+                Fri 20 June 2008
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/javascript.html">Javascript</a>. </p>
+<p>tags: <a href=".././tag/hata.html">hata</a><a href=".././tag/javascript.html">Javascript</a><a href=".././tag/javascript-hatalari.html">javascript hataları</a></p>
+
+
+</footer><!-- /.post-info --><p>Genelde javascript yazımına ara verdiğimde veya program yazıp sonra
+javascript yazmaya başladığımda bazı sorunlarla karşılaşıyorum. Geriye
+baktığımda ise bu hataların %80-90'ının aynı hatalar olduğunu gördüm,
+bunları siteye yazmayı düşündüm ve biraz araştırınca aynı dertten
+muzdarip olan bir çok insan olduğunu gördüm. Genelde hatayı bulup
+düzelttiğimizde bunu nasıl görememişim değimiz(yuh artık buda olamaz!)
+hatalardır bunlar. <!--more--></p>
+<p>Kendi sorunlarım ve araştırıp bulduğu genel sorunlar:</p>
+<h3>= ve == operatörleri</h3>
+<p>= tanımlama operatörü, == iki değeri eşitlemek için kullanılır. Genelde
+bir karışık oluyor</p>
+<p>[sourcecode language="javascript"] var nDeger = deneme.gif ;
+[/sourcecode] == örnek verecek olursak; [sourcecode
+language="javascript"] if(nDeger == fatih.gif){ alert("Fatih geldi"); }
+[/sourcecode]</p>
+<p>genelde karşılaştığım hata</p>
+<p>[sourcecode language="javascript"] if(MyVar = "xyz") [/sourcecode]</p>
+<h3>Tırnak İşaretleri</h3>
+<p>Dizgiler(string) tırnak işareti içinde olmalıdır. Tek tırnak veya çift
+tırnak. Genelde çift tırnak ile başlayan tek tırnak ile kapattığımızda
+veya tek tırnak ile başlayanı çift tırnak ile kapattığımızda sorun
+yaşıyoruz. Yada dizgileri tırnak içine almayı unutuyoruz.</p>
+<h3>Parantezler</h3>
+<p>Parantezlerde de açılan parantezi kapanmamasından kaynaklana sorunlarda
+en çok karşılaştığımız sorunlardan biridir. if, for ve do while gibi
+işlemler için kullandığımız parantezleri kapatmadığımızda hata
+yaşıyoruz. Kod yazım formatımızı düzenli yaparsak bu sorunu çözebiliriz.</p>
+<h3>Hiyerarşi sorunları</h3>
+<p>Çoğu zaman karşılaştığımız sorunlardan bir taneside doküman
+hiyerarşisine göre daha oluşturulmamış bir nesneye erişmek istediğimizde
+"abs has no properties" gibi bir hata ile karşılaşırız. Genelde
+javascript dosyalarını \&lt;head> etiketi içinde tanımlarız ve sayfa
+yüklenirken bir işlev yapılmasını istediğimizde böyle bir hata alırız.
+Eğer sayfa ilk yüklendiğinde bir şey yapmak istiyorsak bu kodu sayfa
+sonuna koymalıyız, yada yapmak istediğimiz işi sayfadaki bir nesne ile
+tetikleyerekte bu sorunu çözebiliriz.</p>
+<h3>Programın kullandığı Değişkenleri Kullanmak</h3>
+<p>Çok azda olsa böyle bir sorunla karşılaşabiliriz. Javascript programının
+kendi değişkenlerini biz kullanmaya çalıştığımızda hata verir. Tam
+listesini <a href="http://javascript.about.com/library/blreserved.htm" title="rezerver edilmiş kelimeler">rezerver edilmiş kelimeler</a> linkinden bulabilirsiniz.</p>
+<h3>Küçük büyük karakter karışımı</h3>
+<p>Javascript ile kod yazarken küçük büyük harflere dikkat etmeliyiz. Küçük
+büyük harf bir çok hataya neden olur.</p>
+<p>[sourcecode language="javascript"] var adSoyad = "Fatih Hayrioğlu"; If
+(adSoyad == "fatih hayrioğlu") [/sourcecode]</p>
+<p>Yukarıdaki kodda iki adet hata var. İlk hata If kullanımı. Javascript
+bize If konusunda sorun olduğunu söylemez, ama IE "Object expected"
+hatası verir, Firefox ise "If is not defined." hatasını verir. İkinci
+hata ise ilk tanımda "Fatih Hayrioğlu" tanımına karşın sorguda "fatih
+hayrioğlu" eşleşmesi bize false değeri gönderecektir.</p>
+<p>Ayrıca belirtmek istediğim bir yer daha var. OnMouseOver ile onMouseOver
+aynı şey değildir.</p>
+<h3>'+' Kullanımını</h3>
+<p>Javascript'te +(artı) işareti hem sayısal toplama hemde string
+birleştirmek için kullanılır. Karıştırmamak lazım.</p>
+<p>[sourcecode language="javascript"] 1 + 1 = 2 [/sourcecode]</p>
+<p>ve</p>
+<p>[sourcecode language="javascript"] '1' + '1' = '11' [/sourcecode]</p>
+<p>Ayrıca string birleştirirken tırnak işareti ile kullanılmalıdır.</p>
+<p>[sourcecode language="javascript"] myString = myName + " ekle " +
+myString ; [/sourcecode]</p>
+<h3>Javascript: sözde protokolünün kullanımı</h3>
+<p>Javascript: sözde protokolü onClick gibi olay tetikleyicileri ile
+kullanılmaz. Bu kullanım URL'lerde olur Örneğin \&lt;a> etiketin href
+özelliğinde ve \&lt;form> etiketinin action özelliğinde</p>
+<p>[sourcecode language="html"] \&lt;a href="javascript:pencereAc();">Pencere
+Ac\&lt;/a> [/sourcecode]</p>
+<h3>document.write</h3>
+<p>document.write sayfa tamamen yüklendikten sonra işler ve içeriğin
+üzerine yazar.</p>
+<h3>Sonuç</h3>
+<p>Gerek javascript yazarken gerekse diğer programları yazarken bir çok
+hata ile karşılaşıyoruz. Hataları en aza indirmek ve çözmek için bir çok
+yöntem var. İlk olarak yaptığımız hataları tanırsak ona göre tedbir
+alırız. Firefox'un FireBug aracı bence hata ayıklamak için bir numaralı
+araç.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><span>JavaScript: The Good Parts Ek b ***** </span></li>
+<li><a href="http://www.dynamicsitesolutions.com/javascript/mistakes/">http://www.dynamicsitesolutions.com/javascript/mistakes/</a> (kısa
+    kısa) ***</li>
+<li>[http://www.netmechanic.com/news/vol4/javascript_no23.htm][]
+    (ayrıntılı) ****</li>
+<li>[http://weblogs.asp.net/bleroy/archive/2005/02/15/Three-common-mistakes-in-JavaScript-_2F00_-EcmaScript.aspx][]
+    ***</li>
+<li><a href="http://javascript.about.com/od/reference/a/error.htm">http://javascript.about.com/od/reference/a/error.htm</a> (ayrıntılı)
+    ***</li>
+<li>[http://www.c-point.com/javascript_tutorial/common_mistakes.htm][]
+    **</li>
+<li><a href="http://javascript.internet.com/debug-guide.html">http://javascript.internet.com/debug-guide.html</a> (ayrıntılı)
+    ****</li>
+<li><a href="http://swik.net/JavaScript/Common+JavaScript+Development+Mistakes">http://swik.net/JavaScript/Common+JavaScript+Development+Mistakes</a>
+    **</li>
+<li><a href="http://www.javascriptlint.com/">http://www.javascriptlint.com/</a> *</li>
+<li><a href="http://www.ddj.com/184412486">http://www.ddj.com/184412486</a> **</li>
+<li><a href="static">http://www.sitepoint.com/blogs/2004/08/18/five-common-mistakes-in-influencing-others/</a>
+    **</li>
+<li><a href="static">http://www.javascriptsearch.com/guides/Beginner/articles/070625Mistakes.html</a>
+    (kısa kısa) **</li>
+<li>[http://www.webmonkey.com/98/29/index4a_page3.html?tw=programming][]
+    ***</li>
+<li><a href="http://www.wrox.com/WileyCDA/WroxTitle/productCd-0764555871.html" title="Beginning JavaScript">Beginning JavaScript</a></li>
+</ul>
+</p>
+
+<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">weblogs</span><span class="p">.</span><span class="n">asp</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">bleroy</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>2005<span class="o">/</span>02<span class="o">/</span>15<span class="o">/</span><span class="n">Three</span><span class="o">-</span><span class="n">common</span><span class="o">-</span><span class="n">mistakes</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">JavaScript</span><span class="o">-</span><span class="n">_2F00_</span><span class="o">-</span><span class="n">EcmaScript</span><span class="p">.</span><span class="n">aspx</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">sitepoint</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blogs</span><span class="o">/</span>2004<span class="o">/</span>08<span class="o">/</span>18<span class="o">/</span><span class="n">five</span><span class="o">-</span><span class="n">common</span><span class="o">-</span><span class="n">mistakes</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">influencing</span><span class="o">-</span><span class="n">others</span><span class="o">/</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">javascriptsearch</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">guides</span><span class="o">/</span><span class="n">Beginner</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span>070625<span class="n">Mistakes</span><span class="p">.</span><span class="n">html</span>
+</pre></div><p>There are <a href=".././genelde-karsilasilan-javascript-hatalari/#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Fatih Hayrioglu - ortalama</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Fatih Hayrioglu Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioglu </a></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkimda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/">Genişliği Belli Olmayan Blok-level Elemanları Yatayda Ortalamak</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2011-06-10T21:04:00">
+                Fri 10 June 2011
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/blok-level.html">Blok-level</a><a href=".././tag/css.html">CSS</a><a href=".././tag/displaytable.html">display:table</a><a href=".././tag/genisligi-belli-olmayan.html">genişliği belli olmayan</a><a href=".././tag/ortalama.html">ortalama</a></p>
+
+
+</footer><!-- /.post-info --><p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/gb_ortalama1.gif" title="gb_ortalama" />][]</p>
+<p>CSS ile yatayda ortalamak deyince aklımıza hep genişliği sabit olan
+alanlar geliyor. Ancak genişliği sabit olmayan elemanları ortalamak
+biraz daha farklı oluyor.</p>
+<p>Genişliği sabit olan blok-level elemanları ortalamak için birçok kaynak
+var iken genişliği belli olmayan blok-level elemanları ortalamak için
+çok fazla kaynak bulamıyoruz. Google’da yaptığım aramalarda rastladığım
+makalelerde 2 yöntem ile karşılaştım. Bu iki metodu sizlerle
+paylaşacağım, siz kendinize uygun olan metodu uygulayabilirsiniz.</p>
+<h3>Metot 1 - Yüzde Yöntemi ile Ortalama</h3>
+<p>Genelde bu yöntemi anlatırken menü örnekleri üzerinden anlatılmış bende
+geleneği bozmayayım.</p>
+<p>[html] \&lt;div id="menuKapsulu"> \&lt;ul> \&lt;li>Elma\&lt;/li>
+\&lt;li>Armut\&lt;/li> \&lt;li>Malta Eriği\&lt;/li> \&lt;/ul> \&lt;/div> [/html]</p>
+<p>Alışkın olduğumuz bir menü kodu. CSS kodumuzu ekleyelim. İlk olarak
+kapsayıcı eleman tanımlarını yazalım.</p>
+<p>[css] #menuKapsulu{ float:left; width:100%; background:#369;
+overflow:hidden; position:relative; } [/css]</p>
+<p>Menü kapsayıcısının sayfayı tam kaplaması için %100 değeri ve float:left
+değeri atandı.</p>
+<p>[css] #menuKapsulu ul{ clear:left; float:left; list-style:none;
+margin:0; padding:0; position:relative; left:50%; text-align:center;
+background-color:#990000 } [/css]</p>
+<p>float:left değeri ile içeriği çepeçevre kapsaması sağlanıyor. left:50%
+değeri ile menu ortalanıyor. Ancak bu ortalama içeriğin genişliğini
+içermez. <br />
+</p>
+<p>[css] #menuKapsulu ul li{ display:block; float:left; list-style:none;
+margin:0 10px 0 0; padding:10px 0; position:relative; right:50%; }
+[/css]</p>
+<p>Buradaki püf noktası; right:50% değeri ile menü genişliğinden dolayı
+sağa doğru kayan içeriği tam olarak ortalı hale getiriyoruz.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/GGSHL/embedded/result,html,css"></iframe>
+
+<p>İnternet Explorer 6+, Firefox2+, Safari, Chrome ve Opera destekliyor.</p>
+<p><strong>Avantajları</strong></p>
+<ul>
+<li>Tüm tarayıcılar destekliyor.</li>
+<li>Sadece CSS ile çözüm ürettiği için ve javascripte gerek bırakmaması</li>
+<li>Kolay kullanımı</li>
+<li>Farklı tarayıcılar için farklı kod yazımı gerektirmemesi</li>
+</ul>
+<p><strong>Dezavantajları</strong></p>
+<ul>
+<li>Kapsayıcı elemana atana overflow:hidden nedeni ile yaşanabilecek
+    olumsuzluklar. Mesela açılır menülerde sorun olur.</li>
+<li>Ortalanacak eleman kapsayıcısı, yani burada ul ortalı olmadığı için
+    background, border ve kendini gösterecek diğer tanımların
+    yapılmaması gerekir. Buda bir dezavantajdır.</li>
+</ul>
+<h3>Metot 2: display:table Metodu</h3>
+<p>Genişliği belli olan elemanları ortalarken kullandığımız margin:0 auto
+tanımını bu sefer genişliği belli olmayan alanlar içinde kullanıyoruz.</p>
+<p>HTML kodumuz aynı;<br />
+</p>
+<p>[html] \&lt;div id="menuKapsulu"> \&lt;ul> \&lt;li>Elma\&lt;/li>
+\&lt;li>Armut\&lt;/li> \&lt;li>Malta Eriği\&lt;/li> \&lt;/ul> \&lt;/div> [/html]</p>
+<p>Ortalanacak alana margin:0 auto ve display:table tanımlarını yapıyoruz.<br />
+</p>
+<p>[css] #menuKapsulu ul{ list-style:none; margin-left: auto;
+margin-right: auto; display: table; } #menuKapsulu ul li{ float:left;
+margin:0 10px 0 0; padding:10px 0; } [/css]</p>
+<p>Sonuç istediğimiz gibi, ancak bir sorunumuz varki oda display:table
+özelliğini İnternet Explorer 6 ve 7. sürümleri desteklemiyor. Peki, ne
+olacak derseniz bu bir hasLayout sorunu ve çözüm için zoom:1 tanımı
+kullanmamız gerekiyor.</p>
+<p>[css] *:first-child+html #menuKapsulu{ text-align:center } * html
+#menuKapsulu{ text-align:center } *:first-child+html #menuKapsulu ul{
+display: inline; zoom: 1; } * html #menuKapsulu ul{ display: inline;
+zoom: 1; } [/css]</p>
+<p>Kapsayıcı kapsüle text-align:center tanımı yapıyoruz sonra listemize
+display:inline yapıyoruz. text-align:center inline elemanları ortalıyor
+bildiğiniz gibi. Burada yaptığmızda bu</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/xNtcS/6/embedded/result,html,css"></iframe>
+
+<p><strong>Avantajları</strong></p>
+<ul>
+<li>Tüm tarayıcılar destekliyor.</li>
+<li>Sadece CSS ile çözüm ürettiği için ve javascripte gerek bırakmaması</li>
+<li>Birinci mettodaki overflow:hidden dan kaynaklana sorun burada
+    yoktur.</li>
+<li>Birinci metotdaki ul ye görsel özellik tanımlayamama sorunu bu
+    metotda yok.</li>
+</ul>
+<p><strong>Dezavantajları</strong></p>
+<ul>
+<li>Farklı tarayıcılar için farklı kod yazımı gerektirmesi</li>
+</ul>
+<p>Kullandıkça avantaj ve dezavantajlarını daha iyi göreceğiz.</p>
+<p>Kalın sağlıcakla.</p>
+<h3>Kaynaklar</h3>
+<ul>
+<li>[http://css-discuss.incutio.com/wiki/Centering_Block_Element][]</li>
+<li><a href="static">http://www.solstice.co.il/blog/2008-02-26/horizontally-centering-content-dynamic-width-css</a></li>
+<li><a href="static">http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support</a></li>
+<li><a href="http://haslayout.net/css-tuts/Horizontal-Centering">http://haslayout.net/css-tuts/Horizontal-Centering</a></li>
+<li><a href="static">http://www.katcode.com/css-horizontally-centering-div-of-unknown-width/</a></li>
+<li>[http://www.tightcss.com/centering/center_variable_width.htm][]</li>
+</ul>
+</p>
+
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/gb_ortalama1.gif" title="gb_ortalama" />]: http://www.fatihhayrioglu.com/wp-content/gb_ortalama1.gif
+    http://www.solstice.co.il/blog/2008-02-26/horizontally-centering-content-dynamic-width-css
+    http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support
+    http://www.katcode.com/css-horizontally-centering-div-of-unknown-width/</p><p>There are <a href=".././genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././yatay-ve-dikeyde-ortali-alanlar-olusturmak/" rel="bookmark"
+                           title="Permalink to Yatay ve Dikeyde Ortalı Alanlar Oluşturmak">Yatay ve Dikeyde Ortalı Alanlar Oluşturmak</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
+        <abbr class="published" title="2010-09-29T22:20:00">
+                Wed 29 September 2010
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/fatih.html">Fatih</a>
+        </address>
+        
+<p>In <a href=".././category/css-xhtml.html">CSS, XHTML</a>. </p>
+<p>tags: <a href=".././tag/ortalama.html">ortalama</a><a href=".././tag/sayfaya-ortalama.html">sayfaya ortalama</a><a href=".././tag/yatay-ve-dikseyde-ortalama.html">yatay ve dikşeyde ortalama</a></p>
+
+
+</footer><!-- /.post-info -->
+                <p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/dikey_yatayda_ortalama_ornek.gif" title="dikey_yatayda_ortalama_ornek" />][]Birçok kişi bu soruyu sordu ve bende belirli aralıklar bu tip
+bir ihtiyacım oldu, sonunda buraya yazmaya karar verdim. Bu işi sadece
+CSS kullanarak nasıl yapıldığını yazacağım burada.</p>
+<p>Bir kaç yöntem var bu konuda. Burada sabit genişlik ve yükseklikte
+alanları sayfanın dikeyde ve yatayda ortalı olması durumu yazımı
+yazacağım. position ...</p>
+                <a class="readmore" href=".././yatay-ve-dikeyde-ortali-alanlar-olusturmak/">read more</a>
+                <p>There are <a href=".././yatay-ve-dikeyde-ortali-alanlar-olusturmak/#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
+                
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>
