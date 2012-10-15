@@ -58,7 +58,6 @@ a:hover, a:active {
 	background-color: #C74350;
 	color: #fff;
 	text-decoration: none;
-	text-shadow: 1px 1px 1px #333;
 }
 
 h1 a:hover {
@@ -150,13 +149,35 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 /*
 	Header
 *****************/
+/* search bar */
+#searchBar{
+	background:#E9E9E9;
+	padding:10px 0;
+}
+
+#searchBar form{
+	float:right;
+}
+
+#searchBar input[type="text"]{
+	border-radius:5px;
+	border:1px solid #999;
+	padding:5px 8px;
+}
+
+#searchBar input[type="submit"]{
+	border-radius:5px;
+	border:1px solid #999;
+	padding:3px 5px 4px 5px;
+}
+
 #banner {
 	margin: 0 auto;
 	padding: 2.5em 0 0 0;
 }
 
 	/* Banner */
-	#banner h1 {font-size: 3.571em; line-height: 0;}
+	#banner h1 {font-size: 3.571em; line-height: 0; margin-top:30px;}
 	#banner h1 a:link, #banner h1 a:visited {
 		color: #3274D0;
 		display: block;
@@ -170,7 +191,22 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		text-shadow: none;
 	}
 	
-	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+	#banner h1 strong {
+		font-size: 0.36em; 
+		font-weight: normal; 
+		padding:0.2em 0.4em; 
+		display:inline-block;
+		line-height:1.2em;
+		background-color:#3274D0;
+		color:#fff;
+		margin-left:0.7em;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-right-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
 	
 	/* Main Nav */
 	#banner nav {
@@ -429,3 +465,5 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	
 	#add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 	#add-comment * {margin-bottom: .5em;}
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } 
