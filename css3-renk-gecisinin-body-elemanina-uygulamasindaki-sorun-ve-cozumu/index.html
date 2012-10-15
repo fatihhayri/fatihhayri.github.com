@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
         <title>CSS3 Renk Geçişinin <body> elemanına uygulamasındaki sorun ve çözümü</title>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
+        <meta http-equiv="PRAGMA" content="NO-CACHE">
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
         <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
         
         <link href="http://feeds.feedburner.com/fatihhayri" type="application/atom+xml" rel="alternate" title="Fatih Hayrioğlu'nun not defteri Atom Feed" />
@@ -86,34 +88,34 @@ diye düşünmemiz lazım.</p>
 <p>Sorun tam olarak bir sayfanın ardalanının tamamına renk geçişi uygulamak
 istediğimizde belli bir yere kadar uygulayıp kalan kısmını tekrar
 ettirerek istemediğimiz bir durum oluşmasına neden oluyor.</p>
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VUcqt/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
 <p>Sorunun çözümünü aradığımda ilk sonuç <a href="http://stackoverflow.com/">http://stackoverflow.com/</a>
 sitesinde buldum biraz daha araştırınca benzer cevaplar gördüm ve
 sizlerle paylaşmak istedim.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VUcqt/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <p><strong>background-image</strong> özelliğine eklenen renk geçişi kodu tekrar
 edecektir, biz bu tekrarı istemediğimiz için.</p>
-<p>[css] background-repeat: no-repeat; [/css]</p>
+<div class="codehilite"><pre><span class="nt">background-repeat</span><span class="o">:</span> <span class="nt">no-repeat</span><span class="o">;</span>
+</pre></div>
+
+
 <p>ekledik. Ayrıca uygulana renk geçişinin sayfa zemininde sabitlenmesi
 için</p>
-<p>[css] background-attachment: fixed; [/css]</p>
+<div class="codehilite"><pre><span class="nt">background-attachment</span><span class="o">:</span> <span class="nt">fixed</span><span class="o">;</span>
+</pre></div>
+
+
 <p>kodunu ekledik.</p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KAg2U/2/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>Diğer kod eklemeleri farklı tarayıcılar içindir.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="../static">http://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats</a></li>
-<li><a href="../static">http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/</a></li>
-<li>[http://www.naprej.com/css3_body_background_gradient][]</li>
-<li><a href="../static">http://www.richarddarling.com/drupal-css/css3-gradient-background-repeat-problem</a></li>
+<li><a href="http://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats">http://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats</a></li>
+<li><a href="http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/">http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/</a></li>
+<li><a href="http://www.naprej.com/css3_body_background_gradient">http://www.naprej.com/css3_body_background_gradient</a></li>
+<li><a href="http://www.richarddarling.com/drupal-css/css3-gradient-background-repeat-problem">http://www.richarddarling.com/drupal-css/css3-gradient-background-repeat-problem</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">stackoverflow</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">questions</span><span class="o">/</span>2869212<span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">gradient</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">set</span><span class="o">-</span><span class="n">on</span><span class="o">-</span><span class="n">body</span><span class="o">-</span><span class="n">doesnt</span><span class="o">-</span><span class="n">stretch</span><span class="o">-</span><span class="n">but</span><span class="o">-</span><span class="n">instead</span><span class="o">-</span><span class="n">repeats</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">atomicrobotdesign</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">htmlcss</span><span class="o">/</span><span class="n">use</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">gradients</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">replace</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">sites</span><span class="o">-</span><span class="n">background</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">richarddarling</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">drupal</span><span class="o">-</span><span class="n">css</span><span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">gradient</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">repeat</span><span class="o">-</span><span class="n">problem</span>
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">
@@ -137,7 +139,7 @@ için</p>
         
         
                 <div class="social">
-                        <h2>social</h2>
+                        <h2>Sosyal</h2>
                         <ul>
                             <li><a href="http://feeds.feedburner.com/fatihhayri" type="application/atom+xml" rel="alternate">atom feed</a></li>
                             
