@@ -102,23 +102,29 @@ nebze olsun sorunu gideriyorlar.</p>
 <p>Bir örnek vererek işin ne kadar kötü göründüğüne bakabiliriz. CSS renk
 geçişi özelliğini tanımlamak için bir kod yazmamız gerektiğinde
 aşağıdaki gibi bir kod bloğunu eklememiz gerekiyor.</p>
-<p>[css] background: #1e5799; /* Old browsers */ background:
--moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%,
-#7db9e8 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left
-top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8),
-color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /*
-Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #1e5799
-0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+
-*/ background: -o-linear-gradient(top, #1e5799 0%,#2989d8
-50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */ background:
+<div class="codehilite"><pre> <span class="nt">background</span><span class="o">:</span> <span class="nf">#1e5799</span><span class="o">;</span> <span class="c">/* Old browsers */</span> <span class="nt">background</span><span class="o">:</span>
+</pre></div>
+
+
+<p>-moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%,</p>
+<h1>7db9e8 100%); /<em> FF3.6+ </em>/ background: -webkit-gradient(linear, left</h1>
+<p>top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8),
+color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /<em>
+Chrome,Safari4+ </em>/ background: -webkit-linear-gradient(top, #1e5799
+0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /<em> Chrome10+,Safari5.1+
+</em>/ background: -o-linear-gradient(top, #1e5799 0%,#2989d8
+50%,#207cca 51%,#7db9e8 100%); /<em> Opera 11.10+ </em>/ background:
 -ms-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8
-100%); /* IE10+ */ background: linear-gradient(top, #1e5799
-0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */ filter:
+100%); /<em> IE10+ </em>/ background: linear-gradient(top, #1e5799
+0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /<em> W3C </em>/ filter:
 progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799',
-endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */ [/css]</p>
+endColorstr='#7db9e8',GradientType=0 ); /<em> IE6-9 </em>/ </p>
 <p>Şeklinde bir renk geçişi tanımı göz korkutuyor. Bu kod aslında tek satır</p>
-<p>[css] background: linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca
-51%,#7db9e8 100%); [/css]</p>
+<div class="codehilite"><pre> <span class="nt">background</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">top</span><span class="o">,</span> <span class="nf">#1e5799</span> <span class="nt">0</span><span class="o">%,</span><span class="nf">#2989d8</span> <span class="nt">50</span><span class="o">%,</span><span class="nf">#207cca</span>
+</pre></div>
+
+
+<p>51%,#7db9e8 100%); </p>
 <p>Ancak farklı tarayıcılar için kod yazınca yukarıdaki hali alıyor.</p>
 <p>Burada gördüğümüz ve genelde önek sorunları;</p>
 <ul>
@@ -168,14 +174,21 @@ yardımı ile) bu işi yapabiliyorsunuz.<br />
 CSS üreten yapılarda başlangıçta bir tanım yapılıp daha sonraki
 tanımlarımızı bu tanım üzerinden yaparak önek sorununu halledebiliriz.</p>
 <p><strong>SASS</strong></p>
-<p>[css] @mixin border-radius(\$values) { -webkit-border-radius: \$values;
--moz-border-radius: \$values; border-radius: \$values; } div { @include
-border-radius(10px); } [/css] [css] .border-radius(@values) {
+<div class="codehilite"><pre> <span class="k">@mixin</span> <span class="nt">border-radius</span><span class="o">(</span><span class="err">$</span><span class="nt">values</span><span class="o">)</span> <span class="p">{</span> <span class="nt">-webkit-border-radius</span><span class="o">:</span> <span class="err">$</span><span class="nt">values</span><span class="o">;</span>
+</pre></div>
+
+
+<p>-moz-border-radius: $values; border-radius: $values; } div { @include
+border-radius(10px); }      :::css
+     .border-radius(@values) {
 -webkit-border-radius: @values; -moz-border-radius: @values;
-border-radius: @values; } div { .border-radius(10px); } [/css]</p>
+border-radius: @values; } div { .border-radius(10px); } </p>
 <p>sonuç olarak üretilen CSS</p>
-<p>[css] div { -webkit-border-radius: 10px; -moz-border-radius: 10px;
-border-radius: 10px; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>border-radius: 10px; } </p>
 <p>LESS ve SASS gibi yapıları sitenizde kullanıyorsanız sorunun çözümü için
 güzel bir seçenek bunlar.</p>
 <p><strong>-prefix-free</strong></p>
@@ -203,55 +216,39 @@ mantıklı gibi.</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://www.css3.info/why-and-when-browsers-prefix-css3-features/">http://www.css3.info/why-and-when-browsers-prefix-css3-features/</a></li>
-<li><a href="static">http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/</a>
+<li><a href="http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/">http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/</a>
     (araçlar)</li>
 <li><a href="http://reference.sitepoint.com/css/vendorspecific">http://reference.sitepoint.com/css/vendorspecific</a></li>
-<li>[http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html][]</li>
-<li><a href="static">http://www.mightymeta.co.uk/1103/no-more-need-for-some-css3-vendor-prefixes/</a></li>
+<li><a href="http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html">http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html</a></li>
+<li><a href="http://www.mightymeta.co.uk/1103/no-more-need-for-some-css3-vendor-prefixes/">http://www.mightymeta.co.uk/1103/no-more-need-for-some-css3-vendor-prefixes/</a></li>
 <li><a href="http://www.alistapart.com/articles/prefix-or-posthack/">http://www.alistapart.com/articles/prefix-or-posthack/</a></li>
-<li><a href="static">http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/</a></li>
-<li>[http://snook.ca/archives/html_and_css/not-supported][]</li>
+<li><a href="http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/">http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/</a></li>
+<li><a href="http://snook.ca/archives/html_and_css/not-supported">http://snook.ca/archives/html_and_css/not-supported</a></li>
 <li><a href="http://css-tricks.com/7361-ordering-css3-properties/">http://css-tricks.com/7361-ordering-css3-properties/</a></li>
-<li><a href="static">http://coding.smashingmagazine.com/2011/10/12/prefixfree-break-free-from-css-prefix-hell/</a>
+<li><a href="http://coding.smashingmagazine.com/2011/10/12/prefixfree-break-free-from-css-prefix-hell/">http://coding.smashingmagazine.com/2011/10/12/prefixfree-break-free-from-css-prefix-hell/</a>
     (çözüm)</li>
 <li><a href="http://www.sitepoint.com/w3c-css-webkit-prefix-crisis">http://www.sitepoint.com/w3c-css-webkit-prefix-crisis</a></li>
-<li><a href="static">http://lea.verou.me/2011/11/vendor-prefixes-have-failed-whats-next/</a></li>
+<li><a href="http://lea.verou.me/2011/11/vendor-prefixes-have-failed-whats-next/">http://lea.verou.me/2011/11/vendor-prefixes-have-failed-whats-next/</a></li>
 <li><a href="http://prefixmycss.com/">http://prefixmycss.com/</a></li>
-<li><a href="static">http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-never-type-a-vendor-prefix-again/</a>
+<li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-never-type-a-vendor-prefix-again/">http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-never-type-a-vendor-prefix-again/</a>
     (less ile çözüm)</li>
-<li><a href="static">http://www.alistapart.com/articles/the-vendor-prefix-predicament-alas-eric-meyer-interviews-tantek-celik/</a></li>
+<li><a href="http://www.alistapart.com/articles/the-vendor-prefix-predicament-alas-eric-meyer-interviews-tantek-celik/">http://www.alistapart.com/articles/the-vendor-prefix-predicament-alas-eric-meyer-interviews-tantek-celik/</a></li>
 <li><a href="http://www.sitepoint.com/css3-vendor-prefix-crisis-solutions/#fbid=qIRziNGN-f6">http://www.sitepoint.com/css3-vendor-prefix-crisis-solutions/</a></li>
 <li><a href="http://annevankesteren.nl/2012/04/prefixes">http://annevankesteren.nl/2012/04/prefixes</a> (opera webkit
     öneklerini kabul edecek)</li>
-<li><a href="static">http://www.webmonkey.com/2012/05/vendor-tokens-offer-another-way-out-of-the-css-prefix-mess/</a></li>
+<li><a href="http://www.webmonkey.com/2012/05/vendor-tokens-offer-another-way-out-of-the-css-prefix-mess/">http://www.webmonkey.com/2012/05/vendor-tokens-offer-another-way-out-of-the-css-prefix-mess/</a></li>
 <li><a href="http://peter.sh/experiments/vendor-prefixed-css-property-overview/">http://peter.sh/experiments/vendor-prefixed-css-property-overview/</a>
     (tüm önek listesi)</li>
 <li><a href="http://leaverou.github.com/prefixfree/">http://leaverou.github.com/prefixfree/</a></li>
-<li><a href="static">http://kilianvalkhof.com/2010/css-xhtml/css-vendor-prefixes-considered-important/</a></li>
+<li><a href="http://kilianvalkhof.com/2010/css-xhtml/css-vendor-prefixes-considered-important/">http://kilianvalkhof.com/2010/css-xhtml/css-vendor-prefixes-considered-important/</a></li>
 <li><a href="http://hsivonen.iki.fi/vendor-prefixes/">http://hsivonen.iki.fi/vendor-prefixes/</a></li>
-<li><a href="static">http://net.tutsplus.com/articles/editorials/do-you-exclusively-use-webkit-prefixes/</a></li>
-<li><a href="static">http://www.glazman.org/weblog/dotclear/index.php?post/2011/11/16/CSS-vendor-prefixes-an-answer-to-Henri-Sivonen</a></li>
-<li><a href="static">http://christianheilmann.com/2012/02/09/now-vendor-prefixes-have-become-a-problem-want-to-help-fix-it/</a></li>
-<li><a href="static">http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/</a></li>
+<li><a href="http://net.tutsplus.com/articles/editorials/do-you-exclusively-use-webkit-prefixes/">http://net.tutsplus.com/articles/editorials/do-you-exclusively-use-webkit-prefixes/</a></li>
+<li><a href="http://www.glazman.org/weblog/dotclear/index.php?post/2011/11/16/CSS-vendor-prefixes-an-answer-to-Henri-Sivonen">http://www.glazman.org/weblog/dotclear/index.php?post/2011/11/16/CSS-vendor-prefixes-an-answer-to-Henri-Sivonen</a></li>
+<li><a href="http://christianheilmann.com/2012/02/09/now-vendor-prefixes-have-become-a-problem-want-to-help-fix-it/">http://christianheilmann.com/2012/02/09/now-vendor-prefixes-have-become-a-problem-want-to-help-fix-it/</a></li>
+<li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/">http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/</a></li>
 <li>http://www.sitepoint.com/12-css3-vendor-prefix-crisis-myths/</li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webresourcesdepot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">instantly</span><span class="o">-</span><span class="n">prefix</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">code</span><span class="o">-</span><span class="n">prefixmycss</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">quirksmode</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span>2010<span class="o">/</span>03<span class="o">/</span><span class="n">css_vendor_pref</span><span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">mightymeta</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span>1103<span class="o">/</span><span class="n">no</span><span class="o">-</span><span class="n">more</span><span class="o">-</span><span class="n">need</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">some</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">vendor</span><span class="o">-</span><span class="n">prefixes</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webmonkey</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>09<span class="o">/</span><span class="n">firefox</span><span class="o">-</span>4<span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">drop</span><span class="o">-</span><span class="n">some</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">vendor</span><span class="o">-</span><span class="n">prefixes</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">coding</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2011<span class="o">/</span>10<span class="o">/</span>12<span class="o">/</span><span class="n">prefixfree</span><span class="o">-</span><span class="k">break</span><span class="o">-</span><span class="n">free</span><span class="o">-</span><span class="n">from</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">prefix</span><span class="o">-</span><span class="n">hell</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">lea</span><span class="p">.</span><span class="n">verou</span><span class="p">.</span><span class="n">me</span><span class="o">/</span>2011<span class="o">/</span>11<span class="o">/</span><span class="n">vendor</span><span class="o">-</span><span class="n">prefixes</span><span class="o">-</span><span class="n">have</span><span class="o">-</span><span class="n">failed</span><span class="o">-</span><span class="n">whats</span><span class="o">-</span><span class="n">next</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">net</span><span class="p">.</span><span class="n">tutsplus</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">html</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">techniques</span><span class="o">/</span><span class="n">quick</span><span class="o">-</span><span class="n">tip</span><span class="o">-</span><span class="n">never</span><span class="o">-</span><span class="n">type</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">vendor</span><span class="o">-</span><span class="n">prefix</span><span class="o">-</span><span class="n">again</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">alistapart</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">the</span><span class="o">-</span><span class="n">vendor</span><span class="o">-</span><span class="n">prefix</span><span class="o">-</span><span class="n">predicament</span><span class="o">-</span><span class="n">alas</span><span class="o">-</span><span class="n">eric</span><span class="o">-</span><span class="n">meyer</span><span class="o">-</span><span class="n">interviews</span><span class="o">-</span><span class="n">tantek</span><span class="o">-</span><span class="n">celik</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webmonkey</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2012<span class="o">/</span>05<span class="o">/</span><span class="n">vendor</span><span class="o">-</span><span class="n">tokens</span><span class="o">-</span><span class="n">offer</span><span class="o">-</span><span class="n">another</span><span class="o">-</span><span class="n">way</span><span class="o">-</span><span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">prefix</span><span class="o">-</span><span class="n">mess</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">kilianvalkhof</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">xhtml</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">vendor</span><span class="o">-</span><span class="n">prefixes</span><span class="o">-</span><span class="n">considered</span><span class="o">-</span><span class="n">important</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">net</span><span class="p">.</span><span class="n">tutsplus</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">editorials</span><span class="o">/</span><span class="n">do</span><span class="o">-</span><span class="n">you</span><span class="o">-</span><span class="n">exclusively</span><span class="o">-</span><span class="n">use</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">prefixes</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">glazman</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">weblog</span><span class="o">/</span><span class="n">dotclear</span><span class="o">/</span><span class="n">index</span><span class="p">.</span><span class="n">php</span>?<span class="n">post</span><span class="o">/</span>2011<span class="o">/</span>11<span class="o">/</span>16<span class="o">/</span><span class="n">CSS</span><span class="o">-</span><span class="n">vendor</span><span class="o">-</span><span class="n">prefixes</span><span class="o">-</span><span class="n">an</span><span class="o">-</span><span class="n">answer</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">Henri</span><span class="o">-</span><span class="n">Sivonen</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">christianheilmann</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2012<span class="o">/</span>02<span class="o">/</span>09<span class="o">/</span><span class="n">now</span><span class="o">-</span><span class="n">vendor</span><span class="o">-</span><span class="n">prefixes</span><span class="o">-</span><span class="n">have</span><span class="o">-</span><span class="n">become</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">problem</span><span class="o">-</span><span class="n">want</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">help</span><span class="o">-</span><span class="nb">fix</span><span class="o">-</span><span class="n">it</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">net</span><span class="p">.</span><span class="n">tutsplus</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">html</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">techniques</span><span class="o">/</span><span class="n">sass</span><span class="o">-</span><span class="n">vs</span><span class="o">-</span><span class="n">less</span><span class="o">-</span><span class="n">vs</span><span class="o">-</span><span class="n">stylus</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">preprocessor</span><span class="o">-</span><span class="n">shootout</span><span class="o">/</span>
-</pre></div><p>There are <a href=".././css3-onek-karmasasi/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././css3-onek-karmasasi/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

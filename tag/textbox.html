@@ -107,29 +107,35 @@ yerine kendi tasarladığımız bir metin girdi alanı koydu isek bu
 odaklanma çizgileri sorun çıkarıyor. Bir örnek yapalım.</p>
 <p>En son projelerimden bonus.com.tr'de böyle bir sorun ile karşılaştığımda
 buna bir çözüm aradım. İlk kodum şöyle idi.</p>
-<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+</pre></div>
+
+
+<p>1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" />
-\&lt;title>Untitled Document\&lt;/title> \&lt;style type="text/css">
+<title>Untitled Document</title> <style type="text/css">
 body{background-color:#52c520;} .aramaMetinKutusu{
 background:url(images/arama_zemini.gif) 0 0 no-repeat; width:202px;
 height:29px; } .aramaMetinKutusuOdak{
 background:url(images/arama_zemini.gif) 0 -31px no-repeat; width:202px;
 height:29px; } .aramaMetinKutusu input{ width:190px; margin:5px 0 0 4px;
 border:none; } .aramaMetinKutusuOdak input:focus{ width:190px;
-margin:5px 0 0 4px; border:none; background-color:#F6FFD4 } \&lt;/style>
-\&lt;/head> \&lt;body> \&lt;div class="aramaMetinKutusu"> \&lt;input type="text"
+margin:5px 0 0 4px; border:none; background-color:#F6FFD4 } </style>
+</head> <body> <div class="aramaMetinKutusu"> <input type="text"
 name="arama" onfocus="this.parentNode.className='aramaMetinKutusuOdak'"
-onblur="this.parentNode.className='aramaMetinKutusu'" /> \&lt;/div>
-\&lt;/body> \&lt;/html> [/sourcecode]</p>
+onblur="this.parentNode.className='aramaMetinKutusu'" /> </div>
+</body> </html> </p>
 <p>Bu kodlarım Firefox ve IE'de sorunsuz çalıştı. Daha sonra sayfayı Google
 Chrome'da test ettiğimde aşağıdaki gibi bir sorun ile karşılaştım.</p>
-<p>![chrome_odak][]</p>
+<p><img alt="chrome_odak" src="http://www.fatihhayrioglu.com/wp-content/chrome_odak.gif" title="chrome_odak" /></p>
 <p>Sorunun çözümünü araştırdığımda dış kenar çizgisini sıfırlamam
 gerektiğini gördüm.  </p>
-<p>[sourcecode language="css"] input{ outline:0 } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">input</span><span class="p">{</span> <span class="k">outline</span><span class="o">:</span><span class="m">0</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>tanımı bizi çözüme ulaştırdı.</p>
 <p>Örnek kodu görmnek için <a href="static/dokumanlar/metingirdi_kaldir_2.html">tıklayınız.</a></p>
 <p>Peki dış hat çizgisini kaldrımayalım demiştik şimdi ise kaldırdık, ne
@@ -137,21 +143,14 @@ olacak şimdi? Burada odaklanma durumu için bir sınıf atayıp ona ayrı bir
 tanım yaptığımız için klavye kullananlar için sorun olmayacaktır.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="static">http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/</a>
+<li><a href="http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/" title="http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/">http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/</a>
     (google chrome safari de mavi kenarları yok etmek)</li>
-<li><a href="static">http://forums.devshed.com/css-help-116/safari-input-focus-blue-border-477819.html</a></li>
-<li><a href="static">http://dev.markhaus.com/blog/2009/03/how-to-annul-safaris-outline-effect-in-input-fields-and-friends/</a></li>
-<li><a href="static">http://www.usabilitypost.com/2008/10/15/css-tip-remove-mac-osx-glowing-blue-outlin-for-custom-styled-input-fields/</a></li>
+<li><a href="http://forums.devshed.com/css-help-116/safari-input-focus-blue-border-477819.html">http://forums.devshed.com/css-help-116/safari-input-focus-blue-border-477819.html</a></li>
+<li><a href="http://dev.markhaus.com/blog/2009/03/how-to-annul-safaris-outline-effect-in-input-fields-and-friends/">http://dev.markhaus.com/blog/2009/03/how-to-annul-safaris-outline-effect-in-input-fields-and-friends/</a></li>
+<li><a href="http://www.usabilitypost.com/2008/10/15/css-tip-remove-mac-osx-glowing-blue-outlin-for-custom-styled-input-fields/">http://www.usabilitypost.com/2008/10/15/css-tip-remove-mac-osx-glowing-blue-outlin-for-custom-styled-input-fields/</a></li>
 <li><a href="http://www.infoqu.com/dev/css-help/safari-input-fields-142336-1/">http://www.infoqu.com/dev/css-help/safari-input-fields-142336-1/</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">gandamanurung</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">get</span><span class="o">-</span><span class="n">rid</span><span class="o">-</span><span class="n">textinput</span><span class="o">-</span><span class="n">blue</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">safari</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">gandamanurung</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">get</span><span class="o">-</span><span class="n">rid</span><span class="o">-</span><span class="n">textinput</span><span class="o">-</span><span class="n">blue</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">safari</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">forums</span><span class="p">.</span><span class="n">devshed</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">help</span><span class="o">-</span>116<span class="o">/</span><span class="n">safari</span><span class="o">-</span><span class="n">input</span><span class="o">-</span><span class="n">focus</span><span class="o">-</span><span class="n">blue</span><span class="o">-</span><span class="n">border</span><span class="o">-</span>477819<span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dev</span><span class="p">.</span><span class="n">markhaus</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>03<span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">annul</span><span class="o">-</span><span class="n">safaris</span><span class="o">-</span><span class="n">outline</span><span class="o">-</span><span class="n">effect</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">input</span><span class="o">-</span><span class="n">fields</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">friends</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">usabilitypost</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2008<span class="o">/</span>10<span class="o">/</span>15<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">tip</span><span class="o">-</span><span class="n">remove</span><span class="o">-</span><span class="n">mac</span><span class="o">-</span><span class="n">osx</span><span class="o">-</span><span class="n">glowing</span><span class="o">-</span><span class="n">blue</span><span class="o">-</span><span class="n">outlin</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">custom</span><span class="o">-</span><span class="n">styled</span><span class="o">-</span><span class="n">input</span><span class="o">-</span><span class="n">fields</span><span class="o">/</span>
-</pre></div><p>There are <a href=".././safari-ve-chromeda-metin-girditextbox-alanlarini-kenar-cizgileri-kaldiralim/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././safari-ve-chromeda-metin-girditextbox-alanlarini-kenar-cizgileri-kaldiralim/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

@@ -106,11 +106,17 @@ durumda meydana gelir. Bunları sırası ile inceleyelim.</p>
 <p>Kenar boşluğu uygulanmış iki blok-level elementin dikey kenar boşluğunda
 bir çökme meydana gelir. Bir örnek yapalım.</p>
 <p>Html kodu:</p>
-<p>[sourcecode language="css"] \&lt;p>Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit.\&lt;p> \&lt;p>Morbi eros lacus, volutpat at,
-interdum nec, dignissim at, turpis.\&lt;/p> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">Lorem</span> <span class="nt">ipsum</span> <span class="nt">dolor</span> <span class="nt">sit</span> <span class="nt">amet</span><span class="o">,</span>
+</pre></div>
+
+
+<p>consectetuer adipiscing elit.<p> <p>Morbi eros lacus, volutpat at,
+interdum nec, dignissim at, turpis.</p> </p>
 <p>CSS kodu:</p>
-<p>[sourcecode language="css"] p{ margin:10px 0; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="p">{</span> <span class="k">margin</span><span class="o">:</span><span class="m">10px</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Örneği görmek için <a href="../static/dokumanlar/margin_cokmesi_01.html" title="Kenar boşluğu çökmesi">tıklayınız.</a></p>
 <p>Bu kodu uyguladığımızda normalde aşağıdaki Resim-1'deki gibi bir görüntü
 elde etmemiz gerekirken, kodu çalıştırdığımızda Resim-2'deki görüntüyü
@@ -122,18 +128,27 @@ Resim - 2 Görünen kenar boşluğu görünümü         </p>
 <p><strong>Çözüm:</strong> Çözüm için bir kaç yöntem var ben burada bir tanesi örnek
 olarak vereceğim, ayrıca makalenin sonundaki çözümlerde göz atmanızda
 yarar var.</p>
-<p>[sourcecode language="css"] p{ margin:10px 0; float:left; clear:both;
-width:100% } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="p">{</span> <span class="k">margin</span><span class="o">:</span><span class="m">10px</span> <span class="m">0</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">clear</span><span class="o">:</span><span class="k">both</span><span class="p">;</span>
+</pre></div>
+
+
+<p>width:100% } </p>
 <p>Bu kodlar sonrasında resim-1 deki görüntüyü alırız.</p>
 <h3>2- Kenar Boşluğu Uyulanmış İç içe Bulunan Elementler Arasında Meydana Gelen Çökme</h3>
 <p>Bir elemente ve içindeki elemente kenar boşluğu atadığımızda içte kalan
 elementin kenar boşlukları kaybolacaktır. Bir uygulama yapalım:</p>
-<p>[sourcecode language="css"] *{ margin:0; padding:0; } div#kapsul{
-margin:10px; background-color:#0066CC; } p{ margin:10px;
-background-color:#0CF; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">*</span><span class="p">{</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="p">}</span> <span class="nt">div</span><span class="nf">#kapsul</span><span class="p">{</span>
+</pre></div>
+
+
+<p>margin:10px; background-color:#0066CC; } p{ margin:10px;
+background-color:#0CF; } </p>
 <p>Html kodu yazalım:</p>
-<p>[sourcecode language="html"] \&lt;div id="kapsul"> \&lt;p>Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit.\&lt;/p> \&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor
+</pre></div>
+
+
+<p>sit amet, consectetuer adipiscing elit.</p> </div> </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/margin_cokmesi_02.html">tıklayınız.</a></p>
 <p>Örnekte gördüğümüz gibi paragrafın kenar boşluk değerleri
 görünmemektedir. Sadece dıştaki kapsul nesnesinin üst ve alt kenar
@@ -147,7 +162,7 @@ eklersek ve paragrafın kenar boşluk değerini de 1px azaltırsak sorun
 çözülür. Kodu aşağıdaki gibi değiştirirsek sorunumuz hallolacaktır.</p>
 <p>[sourcecode language="css" highlight="7,11"] *{ margin:0; padding:0; }
 div#kapsul{ margin:10px; padding:1px; background-color:#0066CC; } p{
-margin:9px; background-color:#0CF; } [/sourcecode]</p>
+margin:9px; background-color:#0CF; } </p>
 <h3>3- Sadece İçteki Elemente Kenar Boşluğu Uyulanmış İç içe Bulunan Elementler Arasında Meydana Gelen Çökme</h3>
 <p>Diğer bir kenar boşluğu çökmesi görülen durumda yukarıdaki gibi içiçe
 durumda olan nesnelerden içteki paragrafta bir kenar boşluğu ataması
@@ -156,10 +171,13 @@ değerinin sıfır olması durumunda meydana gelir. İçteki elementin dikey
 kenar boşlukları çökecektir.</p>
 <p>[sourcecode language="css" highlight="6"] *{ margin:0; padding:0; }
 div#kapsul{ margin:0; background-color:#0066CC; } p{ margin:10px;
-background-color:#0CF; } [/sourcecode]</p>
+background-color:#0CF; } </p>
 <p>Html kodu yazarsak:</p>
-<p>[sourcecode language="html"] \&lt;div id="kapsul"> \&lt;p>Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit.\&lt;/p> \&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor
+</pre></div>
+
+
+<p>sit amet, consectetuer adipiscing elit.</p> </div> </p>
 <p><img alt="" src="../static/images/margin_cokmesi31.gif" /><br />
 Resim -1 Görünen kenar boşluğu        </p>
 <p><img alt="" src="../static/images/margin_cokmesi32.gif" /><br />
@@ -185,19 +203,14 @@ hakkındaki aşağıdaki bilgilerde bize çözüm konusunda yardımcı olacaktı
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://www.w3.org/TR/CSS21/box.html#collapsing-margins">http://www.w3.org/TR/CSS21/box.html#collapsing-margins</a></li>
-<li>[http://www.andybudd.com/archives/2003/11/no_margin_for_error/][]</li>
-<li><a href="../static">http://www.search-this.com/2007/05/07/wheres-my-margin-gone-or-why-111/</a></li>
-<li>[http://www.ryznardesign.com/web_coding/tests/2004/preventing_margin_collapse.html][]</li>
+<li><a href="http://www.andybudd.com/archives/2003/11/no_margin_for_error/">http://www.andybudd.com/archives/2003/11/no_margin_for_error/</a></li>
+<li><a href="http://www.search-this.com/2007/05/07/wheres-my-margin-gone-or-why-111/">http://www.search-this.com/2007/05/07/wheres-my-margin-gone-or-why-111/</a></li>
+<li><a href="http://www.ryznardesign.com/web_coding/tests/2004/preventing_margin_collapse.html">http://www.ryznardesign.com/web_coding/tests/2004/preventing_margin_collapse.html</a></li>
 <li><a href="http://maxdesign.com.au/presentation/workshop/slide46.htm">http://maxdesign.com.au/presentation/workshop/slide46.htm</a></li>
 <li><a href="http://reference.sitepoint.com/css/collapsingmargins">http://reference.sitepoint.com/css/collapsingmargins</a></li>
-<li><a href="../static">http://www.seifi.org/css/understanding-taming-collapsing-margins-in-css.html</a></li>
+<li><a href="http://www.seifi.org/css/understanding-taming-collapsing-margins-in-css.html">http://www.seifi.org/css/understanding-taming-collapsing-margins-in-css.html</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">search</span><span class="o">-</span><span class="n">this</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2007<span class="o">/</span>05<span class="o">/</span>07<span class="o">/</span><span class="n">wheres</span><span class="o">-</span><span class="n">my</span><span class="o">-</span><span class="n">margin</span><span class="o">-</span><span class="n">gone</span><span class="o">-</span><span class="n">or</span><span class="o">-</span><span class="nb">why</span><span class="o">-</span>111<span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">ryznardesign</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">web_coding</span><span class="o">/</span><span class="n">tests</span><span class="o">/</span>2004<span class="o">/</span><span class="n">preventing_margin_collapse</span><span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">seifi</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">understanding</span><span class="o">-</span><span class="n">taming</span><span class="o">-</span><span class="n">collapsing</span><span class="o">-</span><span class="n">margins</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">css</span><span class="p">.</span><span class="n">html</span>
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

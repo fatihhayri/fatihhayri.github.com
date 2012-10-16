@@ -82,28 +82,38 @@
 </footer><!-- /.post-info --><p>Daha önce <a href="http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/">Metin Yerine Resim ekleme</a> yöntemini anlatmıştım ve bir çok
 yerde örnekler ile göstermiştim. Bu yöntemin uygulandığı eleman içindeki
 metni ekran dışına çıkarmak için text-indent:-9999px değeri atarız.</p>
-<p>[sourcecode language="css"] h1 { text-indent: -9999px;
-background:url(selam.gif) no-repeat; width: 62px; height:19px; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background:url(selam.gif) no-repeat; width: 62px; height:19px; }</p>
 <p>Burada şöyle bir sorunumuz oluyor eğer bu elemana text-align:right
 tanımıda atamış isek. Maalesef metin ekran dışına çıkmıyor.</p>
-<p>[sourcecode language="css"] h1 { text-indent: -9999px;
-background:url(selam.gif) no-repeat; width: 62px; height:19px;
-text-align:right } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background:url(selam.gif) no-repeat; width: 62px; height:19px;
+text-align:right } </p>
 <p>Bu sorunu gidermek için sola dayalı sistemlerde negatif text-indent
 değeri veriyoruz, sağa dayalı sistemlerde de pozitif değer vererek bu
 durumu çözebiliyoruz. Bu çözüm yeni nesil tarayıcılarda sorun
 çıkarmazken İnternet Explore’da scroll çıkarmak kaydı ile sorun
 oluşturuyor.</p>
-<p>[sourcecode language="css"] h1 { text-indent: 9999px;
-background:url(selam.gif) no-repeat; width: 62px; height:19px; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">9999px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background:url(selam.gif) no-repeat; width: 62px; height:19px; }</p>
 <p>Tüm tarayıcılarda çözüm için ise yapmamız çok kolay bir şey aslında.
 text-align:left tanımı atamak. Metin yerine resim koyma metodu uygulanan
 metinlerin hizalaması sola olmalıdır.</p>
-<p>[sourcecode language="css"] h1 { text-indent: -999px;
-background:url(selam.gif) no-repeat; width: 62px; height:19px;
-text-align:left } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">-999px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background:url(selam.gif) no-repeat; width: 62px; height:19px;
+text-align:left } </p>
 <p>Bu sorun ile genelde metin yerine resim metodu uygulanmış elemanını
 kapsayan bir elemana text-align:right uygulandığında rastlarız.
 Kalıtsallık ile bu özellik tüm alt elemanlarınıda etkilediği için biz bu
@@ -111,12 +121,9 @@ elemana text-align:right değerini atamasak dahi elemanımız bu değeri üst
 elemanından kalıtsal olarak alır ve böyle bir soruna neden olur.</p>
 <h3>Kaynak:</h3>
 <ul>
-<li><a href="static">http://indianapoliswebdesign.blogspot.com/2009/01/web-design-tips-text-replacement-with.html</a></li>
+<li><a href="http://indianapoliswebdesign.blogspot.com/2009/01/web-design-tips-text-replacement-with.html">http://indianapoliswebdesign.blogspot.com/2009/01/web-design-tips-text-replacement-with.html</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">indianapoliswebdesign</span><span class="p">.</span><span class="n">blogspot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>01<span class="o">/</span><span class="n">web</span><span class="o">-</span><span class="n">design</span><span class="o">-</span><span class="n">tips</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">replacement</span><span class="o">-</span><span class="n">with</span><span class="p">.</span><span class="n">html</span>
-</pre></div><p>There are <a href=".././floatleft-ve-text-alignright-atanms-elemana-metin-yerine-resim-uygulama/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././floatleft-ve-text-alignright-atanms-elemana-metin-yerine-resim-uygulama/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -160,10 +167,10 @@ elemanından kalıtsal olarak alır ve böyle bir soruna neden olur.</p>
 <li>Web çalışanları üzerinde yapılan bir anket sonuçları. <a href="http://www.nitobi.com/survey/" title="web üzerine bir anket">Bağlantı</a></li>
 <li>Asp.net sayfalarda form alanlarına odaklandığında ardalanı
     değiştirmek için yöntem. <a href="http://www.codeproject.com/KB/aspnet/inputBgOnFocus.aspx" title="asp.net ile form alanlarına odaklanma">Bağlantı</a></li>
-<li>"Explorer'da \&lt;pre> tag'i ile innerHTML kullanmak" <a href="http://kadiry.blogspot.com/2008/03/explorerda-tagi-ile-innerhtml-kullanmak.html" title="pre etiketi">Bağlantı</a></li>
+<li>"Explorer'da <pre> tag'i ile innerHTML kullanmak" <a href="http://kadiry.blogspot.com/2008/03/explorerda-tagi-ile-innerhtml-kullanmak.html" title="pre etiketi">Bağlantı</a></li>
 <li>Asp.net'de Google Map kontrolü 1.Kısım <a href="http://www.shabdar.org/google-maps-user-control-for-ASP-Net-part1.html" title="asp.net google map">Bağlantı</a></li>
 <li>45'den fazla güzel WordPress teması. <a href="http://www.noupe.com/wordpress/outstanding-free-and-premium-wordpress-themes.html" title="wordpress teması">Bağlantı</a></li>
-<li>CSS ile 9 adet metin yerine ...</li></ul>
+<li>CSS ile 9 adet metin yerine resim ...</li></ul>
                 <a class="readmore" href=".././27-mart-2008-webden-secme-haberler/">read more</a>
                 <p>There are <a href=".././27-mart-2008-webden-secme-haberler/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

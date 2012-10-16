@@ -98,25 +98,30 @@ Javascript gibi id'si olan her elemente(hata daha fazlası da var) css
 etiketin özelliklerine veya özellik değerlerine göre tanımlama yapmamızı
 sağlar. Bir örnek verecek olursak sayfamızdaki bir resme(örn:
 grafik.gif) kenarlık ataması yapmak istersek:</p>
-<p>[sourcecode language="css"] img[src="grafik.gif"]{ border: 1px solid
-#000; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">img</span><span class="o">[</span><span class="nt">src</span><span class="o">=</span><span class="s2">&quot;grafik.gif&quot;</span><span class="o">]</span><span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span>
+</pre></div>
+
+
+<h1>000; }</h1>
 <p>Dört çeşit Özellik Seçicisi vardır.</p>
 <h3>1- Basit Özellik Seçicisi</h3>
 <p>Belirli bir etiketin(örn:img) özelligine(örn:alt) göre tanımlama
 yapmamızı sağlar.</p>
 <p><img alt="Basit özellik seçicisi" src="static/images/basit_ozel_secici.gif" /></p>
 <p>Bir örnek yapalım</p>
-<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+</pre></div>
+
+
+<p>1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" />
-\&lt;title>CSS'in yapısı\&lt;/title> \&lt;style type="text/css"> img[alt] {
-border: 5px solid lime } \&lt;/style> \&lt;/head> \&lt;body> \&lt;img
-src="logo.gif" alt="Logo" width="32" height="41" /> \&lt;/body> \&lt;/html>
-[/sourcecode]</p>
+<title>CSS'in yapısı</title> <style type="text/css"> img[alt] {
+border: 5px solid lime } </style> </head> <body> <img
+src="static/logo.gif" alt="Logo" width="32" height="41" /> </body> </html></p>
 <p>Örneği görmek için <a href="static/dokumanlar/basit_ozellik_secici.html">tıklayınız.</a></p>
-<p>Yukarıdaki kodlamada birden fazla \&lt;img> tanımı vardır. Ama biz sadece
+<p>Yukarıdaki kodlamada birden fazla <img> tanımı vardır. Ama biz sadece
 alt tanımı yaptıklarımıza belli özellikler atamak istiyoruz. Bunun için
 Basit Özellik Seçicisini kullanabiliriz.</p>
 <div class="tarayiciuyum">
@@ -135,20 +140,23 @@ Opera: destekliyor
 <p>Bir etiketin özellik değerine göre tanımlama yapmamızı sağlar.</p>
 <p><img alt="Özellik Değeri Seçicisi" src="static/images/ozellik_degeri_secicisi.gif" /></p>
 <p>Bir örnek yapalım</p>
-<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+</pre></div>
+
+
+<p>1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" />
-\&lt;title>CSS'in yapısı\&lt;/title> \&lt;style type="text/css">
-input[type="text"] { border: 1px solid #000; width: 150px; } \&lt;/style>
-\&lt;/head> \&lt;body> \&lt;p>Adınız : \&lt;input type="text" name="ad" />\&lt;/p>
-\&lt;p>Cinsiyetiniz: \&lt;input type="radio" name="cinsiyet" id="erkek" />
-Erkek \&lt;input type="radio" name="cinsiyet" id="kadin" /> Kadın \&lt;/p>
-\&lt;/body> \&lt;/html> [/sourcecode]</p>
+<title>CSS'in yapısı</title> <style type="text/css">
+input[type="text"] { border: 1px solid #000; width: 150px; } </style>
+</head> <body> <p>Adınız : <input type="text" name="ad" /></p>
+<p>Cinsiyetiniz: <input type="radio" name="cinsiyet" id="erkek" />
+Erkek <input type="radio" name="cinsiyet" id="kadin" /> Kadın </p>
+</body> </html> </p>
 <p>Örneği görmek için <a href="static/dokumanlar/ozellik_degeri_secicisi.html">tıklayınız.</a></p>
 <p>Genelde formlarda tanımlama yaparken sadece metin girisi yaptıgımız
-alanlara atama yapmakta zorlanırız. Bunun sebebi \&lt;input> etiketini
+alanlara atama yapmakta zorlanırız. Bunun sebebi <input> etiketini
 sadece metin girisi için kullanılmamasıdır, radyo buton ve isaretleme
 kutuları içinde bu etiketin kullanılmasıdır. Özellik Degeri Seçicisi bu
 sorunu kökten çözer. Yukarıdaki örnekte görüldügü gibi</p>
@@ -169,18 +177,21 @@ Opera: destekliyor
 tanımlama yapmamızı sağlar.</p>
 <p><img alt="Kısmi Özellik Değeri Seçicisi" src="static/images/kismi_secici.gif" /></p>
 <p>Bir örnek yapalım</p>
-<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+</pre></div>
+
+
+<p>1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" />
-\&lt;title>CSS'in yapısı\&lt;/title> \&lt;style type="text/css">
-a[title\~="Google"] { text-decoration:overline; } \&lt;/style> \&lt;/head>
-\&lt;body> \&lt;p>\&lt;a href="http://www.google.com" title="Google
-seç">gooogle \&lt;/a> \&lt;/p> \&lt;p>\&lt;a href="http://www.yahoo.com"
-title="Yahoo seç">yahoo \&lt;/a> \&lt;/p> \&lt;p>\&lt;a
-href="http://www.fatihhayrioglu.com" title="Fatih">fatih \&lt;/a> \&lt;/p>
-\&lt;/body> \&lt;/html> [/sourcecode]</p>
+<title>CSS'in yapısı</title> <style type="text/css">
+a[title~="Google"] { text-decoration:overline; } </style> </head>
+<body> <p><a href="http://www.google.com" title="Google
+seç">gooogle </a> </p> <p><a href="http://www.yahoo.com"
+title="Yahoo seç">yahoo </a> </p> <p><a
+href="http://www.fatihhayrioglu.com" title="Fatih">fatih </a> </p>
+</body> </html> </p>
 <p>Örneği görmek için <a href="static/dokumanlar/kismi_secici.html">tıklayınız.</a></p>
 <p>Türkçe karakterde sorunsuz çalısıyor. Siz kullanabilecegimiz yerleri
 hesap edin artık.</p>
@@ -201,16 +212,19 @@ Opera: destekliyor
 göre tanımlama yapmamızı sağlar.</p>
 <p><img alt="Dikkate Değer Özellik Seçicisi" src="static/images/dikkate_deger_secici.gif" /></p>
 <p>Bir örnek yapalım</p>
-<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+</pre></div>
+
+
+<p>1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" />
-\&lt;title>CSS'in yapısı\&lt;/title> \&lt;style type="text/css">
-*[lang|="en"] { color: red; } \&lt;/style> \&lt;/head> \&lt;body> \&lt;h1
-lang="en">Hello!\&lt;/h1> \&lt;p lang="en-us">Greetings!\&lt;/p> \&lt;div
-lang="en-au">G’day!\&lt;/div> \&lt;p lang="fr">Bonjour!\&lt;/p> \&lt;h4
-lang="cy-en">Jrooana!\&lt;/h4> \&lt;/body> \&lt;/html> [/sourcecode]</p>
+<title>CSS'in yapısı</title> <style type="text/css">
+*[lang|="en"] { color: red; } </style> </head> <body> <h1
+lang="en">Hello!</h1> <p lang="en-us">Greetings!</p> <div
+lang="en-au">G’day!</div> <p lang="fr">Bonjour!</p> <h4
+lang="cy-en">Jrooana!</h4> </body> </html> </p>
 <p>Örneği görmek için <a href="static/dokumanlar/dikkate_deger_secici.html">tıklayınız.</a></p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:**

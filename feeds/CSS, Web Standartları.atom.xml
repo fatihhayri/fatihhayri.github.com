@@ -2,17 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/CSS,%20Web%20Standartlar%C4%B1.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2010-09-22T22:55:00+03:00</updated><entry><title>CSS3 RGBA Renk Tanımı</title><link href="http://www.fatihhayrioglu.com/css3-rgba-renk-tanimi/" rel="alternate"></link><updated>2010-09-22T22:55:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-09-22:css3-rgba-renk-tanimi/</id><summary type="html">&lt;p&gt;CSS ile renk değeri ataması yapılırken çeşitli yöntemler kullanıyoruz.
 Daha önce &lt;a href="http://www.fatihhayrioglu.com/css-birimleri/"&gt;CSS Birimleri&lt;/a&gt;  makalemizde anlatmıştık. İki tip renk
 tanımı var. Renk isimleri ile tanımlama(İngilizce renk isimleri)&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] background-color:red [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;background-color&lt;/span&gt;&lt;span class="nd"&gt;:red&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;tanımı kırmızı renkli bir ardalan elde etmemizi sağlar&lt;/p&gt;
 &lt;p&gt;RGB(Red-Green-Blue) yani Kırmızı-Yeşil-Mavi renklerin baz alındığı renk
 standardı. Açıkçası ben projelerimde her zaman rgb standardını
 kullanmaktayım.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] background-color:#ff0000 [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nf"&gt;#ff0000&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Tanımı kırmızı renkte ardalanlar elde etmemizi sağlar. Bu tanımı birde
 kısaltması mevcuttur. Eğer bir birine benzer 2’li elemanlardan oluşan
 bir renk tanımı varsa yukarıdaki gibi benzer değerleri bir kere
 yazarakta aynı sonucu elde edebiliriz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] background-color:#f00 [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nf"&gt;#f00&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Yukarıdaki tanımda bize kırmızı rengi verecektir.&lt;/p&gt;
 &lt;p&gt;Buraya kadar mevcut durumu özetlemeye çalıştım. Şimdi ise CSS3 ile gelen
 renk tanımı yeniliğine göz atalım. RGBA ve HSLA tanımları yukarıdaki
@@ -31,28 +40,40 @@ etkisiz kılarken 1 değeri de katı bir renk ortaya çıkaracaktır. Ara
 değerler bize saydamlık etkisi tanımlamamızı sağlayacaktır.&lt;/p&gt;
 &lt;h3&gt;RGBA Tanımı&lt;/h3&gt;
 &lt;p&gt;Normalde css ile renk tanımı yaparken&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] background-color:#1259C7 [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nf"&gt;#1259C7&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;tanımı kullanıyorum. Benzer şekilde&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] \&amp;lt;li&gt;background-color:rgb(18,89,199)\&amp;lt;/li&gt;
-[/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="nt"&gt;background-color&lt;/span&gt;&lt;span class="nd"&gt;:rgb&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;18&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;89&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;199&lt;/span&gt;&lt;span class="o"&gt;)&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Tanımıda bize aynı sonucu verir. RGBA ile dördüncü değer olarak alfa
 saydamlık derecesini ekleriz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] background-color:rgba(18,89,199,0.4)
-[/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;background-color&lt;/span&gt;&lt;span class="nd"&gt;:rgba&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;18&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;89&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;199&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="nc"&gt;.4&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Şeklinde bir tanım yapıyoruz. 0.4 değeri bize % 40’lık bir saydamlık
 sağlayacaktır.&lt;/p&gt;
 &lt;p&gt;Durumu daha iyi anlamak için bir örnek yapalım&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] p.renk1{
-background-color:rgba(18,89,199,0.2); width:70px; height:70px} p.renk2{
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.renk1&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;background-color:rgba(18,89,199,0.2); width:70px; height:70px} p.renk2{
 background-color:rgba(18,89,199,0.4); width:70px; height:70px} p.renk3{
 background-color:rgba(18,89,199,0.6); width:70px; height:70px} p.renk4{
 background-color:rgba(18,89,199,0.8); width:70px; height:70px} p.renk5{
-background-color:rgba(18,89,199,1); width:70px; height:70px}
-[/sourcecode]&lt;/p&gt;
+background-color:rgba(18,89,199,1); width:70px; height:70px}&lt;/p&gt;
 &lt;p&gt;HTML kodu&lt;/p&gt;
-&lt;p&gt;[sourcecode language="html"] \&amp;lt;p class="renk1"&gt;\&amp;lt;/p&gt; \&amp;lt;p
-class="renk2"&gt;\&amp;lt;/p&gt; \&amp;lt;p class="renk3"&gt;\&amp;lt;/p&gt; \&amp;lt;p
-class="renk4"&gt;\&amp;lt;/p&gt; \&amp;lt;p class="renk5"&gt;\&amp;lt;/p&gt; [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;renk1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;class="renk2"&amp;gt;&lt;/p&gt; &lt;p class="renk3"&gt;&lt;/p&gt; &lt;p
+class="renk4"&gt;&lt;/p&gt; &lt;p class="renk5"&gt;&lt;/p&gt; &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="http://fatihhayrioglu.com/dokumanlar/rgba_renk_tanimi.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://lh6.googleusercontent.com/d9gcgCNkBoIwGgX75ZjloztSepGOGXHSAwmeaDTOlQqYRn4rTS50kS59JKxAC6qmSgfxdSTLeWyJzABoNAaIAj_bwoDTFOf3wULF3Xq6_7zNKyY5Xg" /&gt;&lt;/p&gt;
 &lt;p&gt;RGBA ve opacity arasındaki fark; opacity tanımı yapılan bir eleman ve
@@ -63,16 +84,19 @@ saydam bir png hazırlayıp ardalan resmi olarak tanımlardık.&lt;/p&gt;
 &lt;p&gt;Farklı kullanım alanları ve birçok avantajı vardır bizim için bu
 tanımın. Örneği Facebook lightbox’ı olarak nitelendirilen bir görüntüyü
 elde etmek çok basit bir hal alıyor bu özelliği kullanarak.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] ... border:10px solid rgba(0, 0, 0, 0.2);
-border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:
-10px; ... [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="nd"&gt;:10px&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nt"&gt;rgba&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="nc"&gt;.2&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:
+10px; ... &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="http://fatihhayrioglu.com/dokumanlar/rgba_renk_tanimi2.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://lh5.googleusercontent.com/mtFDIUdPs-VFwWWJ5jBYK3uD3je_AZcnVQ404x_QX1d1tatFUtivIO3zKLeTHCuHKOwOakSk0vLBGAyXjN270P9NH3HLkpfj5Goy5kZT7TUivjQzKA" /&gt;&lt;/p&gt;
 &lt;p&gt;CSS3 bize birçok avantaj sağlamaktadır. Bir nevi bize resim düzenleme
 araçlarındaki esnekliği sağlamaktadır.&lt;/p&gt;
 &lt;p&gt;Örneğin &lt;a href="http://www.fatihhayrioglu.com/css-ile-metinlere-golge-vermek/"&gt;text-shadow&lt;/a&gt; özelliğindeki renk tanımında rgba kullanılırsa
 çok güzel görüntüler elde ederiz. Örnek için
-&lt;a href=""&gt;http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/&lt;/a&gt;
+&lt;a href="http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/"&gt;http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/&lt;/a&gt;
 sitesini ziyaret ediniz.&lt;/p&gt;
 &lt;p&gt;Benzer bir şekilde &lt;a href="http://www.fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/"&gt;box-shadow&lt;/a&gt; özelliğindeki renk tanımında rgba
 kullanılarak daha gerçekçi gölgeler elde ederiz.&lt;/p&gt;
@@ -90,38 +114,40 @@ W3C’s CSS Level 3+&lt;br /&gt;
 CSS Profile 3.0&lt;/p&gt;
 &lt;h3&gt;İnternet Explorer için Çözüm Önerileri&lt;/h3&gt;
 &lt;p&gt;Çözüm için CSS-Tricks’te bir çözüm önerisi var&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] p.renk1{ background: rgb(200, 54, 54); /*
-desteklemeyenler icin */ background: rgba(200, 54, 54, 0.5); }
-[/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.renk1&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;rgb&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;200&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;54&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;54&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="o"&gt;/*&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;desteklemeyenler icin */ background: rgba(200, 54, 54, 0.5); }&lt;/p&gt;
 &lt;p&gt;Bu çözüm önerisinde desteklemeyen tarayıcılarda katı renk hali
 görüntülenirken destekleyen tarayıcılar için saydam hali
 görüntülenecektir.&lt;/p&gt;
 &lt;p&gt;Diğer bir yöntem;&lt;/p&gt;
-&lt;p&gt;[sourcecode language="html"] \&amp;lt;!--[if IE]&gt; \&amp;lt;style type="text/css"&gt;
-.color-block { background:transparent;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="c"&gt;&amp;lt;!--[if IE]&amp;gt; &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;.color-block { background:transparent;
 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000050,endColorstr=#99000050);
-zoom: 1; } \&amp;lt;/style&gt; \&amp;lt;![endif]--&gt; [/sourcecode]&lt;/p&gt;
+zoom: 1; } &lt;/style&gt; &amp;lt;![endif]--&amp;gt; &lt;/p&gt;
 &lt;p&gt;Şeklinde sadece ie için üretilen bir kod ile çözüm sağlanır destekleyen
 tarayıcılar için standart kod kullanılır.&lt;/p&gt;
 &lt;h3&gt;Kaynaklar&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://24ways.org/2009/working-with-rgba-colour"&gt;http://24ways.org/2009/working-with-rgba-colour&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://www.w3.org/TR/css3-color/#rgba-color][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-color/#rgba-color"&gt;http://www.w3.org/TR/css3-color/#rgba-color&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://css-tricks.com/rgba-browser-support/"&gt;http://css-tricks.com/rgba-browser-support/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.gograybox.com/blog/qt-css3-rgba/"&gt;http://www.gograybox.com/blog/qt-css3-rgba/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock][]&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock"&gt;http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/"&gt;http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.css3.info/introduction-opacity-rgba/"&gt;http://www.css3.info/introduction-opacity-rgba/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://dorward.me.uk/www/css/alpha-colour/"&gt;http://dorward.me.uk/www/css/alpha-colour/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.robertnyman.com/css3/rgba/rgba.html"&gt;http://www.robertnyman.com/css3/rgba/rgba.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/"&gt;http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
 
-&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/renk_paleti-300x197.jpg" title="renk_paleti" /&gt;]: http://www.fatihhayrioglu.com/wp-content/renk_paleti.jpg
-    http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/
-    http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock
-    http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/&lt;/p&gt;</summary><category term="alfa kanalı"></category><category term="css3"></category><category term="renk tanımı"></category><category term="renk-birimleri"></category><category term="rgba"></category><category term="saydamlık"></category></entry><entry><title>Web'de Yazı Tipi Sorunları ve Google Font API</title><link href="http://www.fatihhayrioglu.com/webde-yazi-tipi-sorunlari-ve-google-font-api/" rel="alternate"></link><updated>2010-06-09T22:20:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-06-09:webde-yazi-tipi-sorunlari-ve-google-font-api/</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://www.google.com/images/logos/font_api_logo_beta.gif" /&gt;Web sitelerini oluşturan öğelerden en önemlisi muhakkak yazılardır.
+&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/renk_paleti-300x197.jpg" title="renk_paleti" /&gt;]: http://www.fatihhayrioglu.com/wp-content/renk_paleti.jpg&lt;/p&gt;</summary><category term="alfa kanalı"></category><category term="css3"></category><category term="renk tanımı"></category><category term="renk-birimleri"></category><category term="rgba"></category><category term="saydamlık"></category></entry><entry><title>Web'de Yazı Tipi Sorunları ve Google Font API</title><link href="http://www.fatihhayrioglu.com/webde-yazi-tipi-sorunlari-ve-google-font-api/" rel="alternate"></link><updated>2010-06-09T22:20:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-06-09:webde-yazi-tipi-sorunlari-ve-google-font-api/</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://www.google.com/images/logos/font_api_logo_beta.gif" /&gt;Web sitelerini oluşturan öğelerden en önemlisi muhakkak yazılardır.
 Resimler ve videolarda önemli olsa da çoğunlukla yazılar ön plandadır
 web sitelerinde. CSS kod yazanlar için diğer öğelere göre daha
 erişebilir ve esnektir yazılar. Yapılan yenilikler bu konuda daha
@@ -213,26 +239,16 @@ kuvvetlenecektir.&lt;/p&gt;
 &lt;p&gt;Kalın Sağlıcakla&lt;/p&gt;
 &lt;h3&gt;Kaynaklar&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=""&gt;http://www.ozdtasarim.com/blog/googledan-font-face-hizmeti-google-font-api.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://code.google.com/apis/webfonts/docs/getting_started.html][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.ozdtasarim.com/blog/googledan-font-face-hizmeti-google-font-api.html" title="http://www.ozdtasarim.com/blog/googledan-font-face-hizmeti-google-font-api.html"&gt;http://www.ozdtasarim.com/blog/googledan-font-face-hizmeti-google-font-api.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://code.google.com/apis/webfonts/docs/getting_started.html" title="http://code.google.com/apis/webfonts/docs/getting_started.html"&gt;http://code.google.com/apis/webfonts/docs/getting_started.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://css-tricks.com/google-font-api-interview/" title="http://css-tricks.com/google-font-api-interview/"&gt;http://css-tricks.com/google-font-api-interview/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://designshack.co.uk/articles/css/how-to-use-the-new-google-font-api&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-google-fonts-api-youre-going-to-love-this/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://www.bloggerbuster.com/2010/05/how-to-use-googles-font-api-with.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://designshack.co.uk/articles/css/how-to-use-the-new-google-font-api" title="http://designshack.co.uk/articles/css/how-to-use-the-new-google-font-api"&gt;http://designshack.co.uk/articles/css/how-to-use-the-new-google-font-api&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-google-fonts-api-youre-going-to-love-this/" title="http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-google-fonts-api-youre-going-to-love-this/"&gt;http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-google-fonts-api-youre-going-to-love-this/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.bloggerbuster.com/2010/05/how-to-use-googles-font-api-with.html" title="http://www.bloggerbuster.com/2010/05/how-to-use-googles-font-api-with.html"&gt;http://www.bloggerbuster.com/2010/05/how-to-use-googles-font-api-with.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://mashable.com/2010/05/27/type-and-the-web" title="http://mashable.com/2010/05/27/type-and-the-web"&gt;http://mashable.com/2010/05/27/type-and-the-web&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://sixrevisions.com/web_design/google-font-api-guide/][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://sixrevisions.com/web_design/google-font-api-guide/" title="http://sixrevisions.com/web_design/google-font-api-guide/"&gt;http://sixrevisions.com/web_design/google-font-api-guide/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ozdtasarim&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;googledan&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;font&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;face&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;hizmeti&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;google&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;font&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ozdtasarim&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;googledan&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;font&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;face&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;hizmeti&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;google&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;font&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&amp;quot;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;designshack&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;co&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;uk&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;articles&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;how&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;google&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;font&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;designshack&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;co&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;uk&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;articles&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;how&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;google&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;font&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;&amp;quot;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;net&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tutsplus&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tutorials&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;techniques&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;quick&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tip&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;google&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fonts&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;youre&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;going&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;love&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;net&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tutsplus&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tutorials&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;techniques&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;quick&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tip&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;google&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fonts&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;youre&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;going&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;love&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&amp;quot;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bloggerbuster&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2010&lt;span class="o"&gt;/&lt;/span&gt;05&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;how&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;googles&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;font&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bloggerbuster&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2010&lt;span class="o"&gt;/&lt;/span&gt;05&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;how&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;googles&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;font&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&amp;quot;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="aliasing"></category><category term="font-face"></category><category term="google font api"></category><category term="sorunlar"></category><category term="yazı tipi"></category><category term="yazı tipi gömme"></category></entry><entry><title>CSS ile Ziyaret Edilen Sayfa Bağlantılarına Şekil Vermek</title><link href="http://www.fatihhayrioglu.com/css-ile-ziyaret-edilen-sayfa-baglantilarina-sekil-vermek/" rel="alternate"></link><updated>2009-06-15T16:58:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-06-15:css-ile-ziyaret-edilen-sayfa-baglantilarina-sekil-vermek/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/" title="Sözde sınıf ve elementler kısmında"&gt;Sözde sınıf ve elementler makalesinde&lt;/a&gt; değindiğim bir konu idi bu.
+&lt;/p&gt;</summary><category term="aliasing"></category><category term="font-face"></category><category term="google font api"></category><category term="sorunlar"></category><category term="yazı tipi"></category><category term="yazı tipi gömme"></category></entry><entry><title>CSS ile Ziyaret Edilen Sayfa Bağlantılarına Şekil Vermek</title><link href="http://www.fatihhayrioglu.com/css-ile-ziyaret-edilen-sayfa-baglantilarina-sekil-vermek/" rel="alternate"></link><updated>2009-06-15T16:58:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-06-15:css-ile-ziyaret-edilen-sayfa-baglantilarina-sekil-vermek/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/" title="Sözde sınıf ve elementler kısmında"&gt;Sözde sınıf ve elementler makalesinde&lt;/a&gt; değindiğim bir konu idi bu.
 Ancak genelde bu özelliği tasarımcılar ve kod yazarları atlıyor. Şimdiye
 kadar ki hiç bir projemde kullanma gereği duymadım açıkçası. Ama bence
 kullanılabilirlik açısından önemli bir özellik. Bundan sonraki
@@ -247,28 +263,36 @@ stilini değiştirme imkanı sunar, böylece kullanıcıya sen burayı daha
 önce ziyaret etmiştin bilgisini verebiliriz. İnternet tarayıcıları
 ziyaret edilmiş bağlantılara kendileri standart bir stil atarlar. Mesela
 Firefox altını çizili ve mor renkli yapıyor.&lt;/p&gt;
-&lt;p&gt;![stadart_ff][]&lt;/p&gt;
+&lt;p&gt;&lt;img alt="stadart_ff" src="http://www.fatihhayrioglu.com/wp-content/stadart_ff.gif" title="stadart_ff" /&gt;&lt;/p&gt;
 &lt;p&gt;Tarayıcılar bize bu ayrımı gösterir, tabi biz bağlantı tanımları
 değiştirmediğimiz müddetçe. Biz bağlantıya genel tanım yaptığımızda bu
 özellik bir bakıma göz ardı edilecektir. Bir çok projede bu tanımlamayı
 yazpıyoruz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] a{color:#f00;} [/sourcecode]&lt;/p&gt;
-&lt;p&gt;![genel_bag_renk][]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#f00&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="genel_bag_renk" src="http://www.fatihhayrioglu.com/wp-content/genel_bag_renk.gif" title="genel_bag_renk" /&gt;&lt;/p&gt;
 &lt;p&gt;Yukarıdaki tanımlama tüm bağlantı tipleri için genel bir tanımdır ve
 ziyaret edilmiş sayfa stilinide belirler.&lt;/p&gt;
 &lt;p&gt;Bizim amacımız ziyaret edilmiş bağlantıları farklı stil ile belirterek
 ayrımı göstermek. Bir çok yerde  yazı üstünü çizerek belirlenir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] a:visited { text-decoration: line-through; }
-[/sourcecode]&lt;/p&gt;
-&lt;p&gt;![ziy_sayfa_uzeri_ciz][]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:visited&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;line-through&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="ziy_sayfa_uzeri_ciz" src="http://www.fatihhayrioglu.com/wp-content/ziy_sayfa_uzeri_ciz.gif" title="ziy_sayfa_uzeri_ciz" /&gt;&lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/ziyaret_edilmis_baglantilar.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Diğer bir yöntemde ardalan resmi koymak. Bu yöntem ile hoş bir görüntüde
 sağlamış oluyoruz. &lt;a href="http://www.evalotta.net/" title="http://www.evalotta.net/"&gt;http://www.evalotta.net/&lt;/a&gt; sitesi buna çok güzel
 bir örnek.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] a:visited { padding-right:20px;
-background:url(images/ziyaret_edilmis_baglanti.gif) right top
-no-repeat; color:#666; text-decoration:none; } [/sourcecode]&lt;/p&gt;
-&lt;p&gt;![ziy_sayfa_oki][]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:visited&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;padding-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;background:url(images/ziyaret_edilmis_baglanti.gif) right top
+no-repeat; color:#666; text-decoration:none; } &lt;/p&gt;
+&lt;p&gt;&lt;img alt="ziy_sayfa_oki" src="http://www.fatihhayrioglu.com/wp-content/ziy_sayfa_oki.gif" title="ziy_sayfa_oki" /&gt;&lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/ziyaret_edilmis_baglantilar2.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Benzer yöntemlerle birçok alternatif oluşturulabilir. Ayrıca :before ve
 :after ile oluşturulan örnekler var ama hala ie6 hayatta olduğu için ve
@@ -276,28 +300,16 @@ no-repeat; color:#666; text-decoration:none; } [/sourcecode]&lt;/p&gt;
 taraftarı değilim.&lt;/p&gt;
 &lt;h2&gt;Kaynak&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=""&gt;http://9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://webdesign.maratz.com/lab/visited_links_styling/][]&lt;/li&gt;
-&lt;li&gt;[http://www.webmonkey.com/tutorial/Control_Visited_Link_Colors_With_CSS][]&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://www.westciv.com/style_master/house/tutorials/quick/visited_links/index.html][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html" title="http://9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html"&gt;http://9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://webdesign.maratz.com/lab/visited_links_styling/" title="http://webdesign.maratz.com/lab/visited_links_styling/"&gt;http://webdesign.maratz.com/lab/visited_links_styling/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.webmonkey.com/tutorial/Control_Visited_Link_Colors_With_CSS" title="http://www.webmonkey.com/tutorial/Control_Visited_Link_Colors_With_CSS"&gt;http://www.webmonkey.com/tutorial/Control_Visited_Link_Colors_With_CSS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/" title="http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/"&gt;http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.westciv.com/style_master/house/tutorials/quick/visited_links/index.html" title="http://www.westciv.com/style_master/house/tutorials/quick/visited_links/index.html"&gt;http://www.westciv.com/style_master/house/tutorials/quick/visited_links/index.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://onemarco.com/2007/06/06/better-visited-links/" title="http://onemarco.com/2007/06/06/better-visited-links/"&gt;http://onemarco.com/2007/06/06/better-visited-links/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://www.sitepoint.com/blogs/2004/05/23/getting-creative-with-visited-links/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sitepoint.com/blogs/2004/05/23/getting-creative-with-visited-links/" title="http://www.sitepoint.com/blogs/2004/05/23/getting-creative-with-visited-links/"&gt;http://www.sitepoint.com/blogs/2004/05/23/getting-creative-with-visited-links/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.useit.com/alertbox/20040510.html" title="http://www.useit.com/alertbox/20040510.html"&gt;http://www.useit.com/alertbox/20040510.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;9&lt;span class="n"&gt;lessons&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;blogspot&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2009&lt;span class="o"&gt;/&lt;/span&gt;06&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tips&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;strike&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;9&lt;span class="n"&gt;lessons&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;blogspot&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2009&lt;span class="o"&gt;/&lt;/span&gt;06&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tips&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;strike&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&amp;quot;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;webmonkey&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tutorial&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Control_Visited_Link_Colors_With_CSS&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;webmonkey&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tutorial&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Control_Visited_Link_Colors_With_CSS&lt;/span&gt;&amp;quot;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tricks&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;put&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;checkmarks&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;next&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;visted&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;links&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pure&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tricks&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;put&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;checkmarks&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;next&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;visted&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;links&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pure&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&amp;quot;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;westciv&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;style_master&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;house&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tutorials&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;quick&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;visited_links&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;westciv&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;style_master&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;house&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tutorials&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;quick&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;visited_links&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&amp;quot;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sitepoint&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;blogs&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2004&lt;span class="o"&gt;/&lt;/span&gt;05&lt;span class="o"&gt;/&lt;/span&gt;23&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;getting&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;creative&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;links&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sitepoint&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;blogs&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2004&lt;span class="o"&gt;/&lt;/span&gt;05&lt;span class="o"&gt;/&lt;/span&gt;23&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;getting&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;creative&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;links&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&amp;quot;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="bağlantı"></category><category term="ie6"></category><category term="kullanılabilirlik"></category><category term="sözde-elementler"></category><category term="sözde-sınıflar"></category><category term="visited"></category><category term="ziyaret-edilmiş-sayfa"></category></entry><entry><title>Internet Explorer 7 ve CSS</title><link href="http://www.fatihhayrioglu.com/internet-explorer-7-ve-css/" rel="alternate"></link><updated>2006-10-30T19:50:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-30:internet-explorer-7-ve-css/</id><summary type="html">&lt;p&gt;Internet Explorer 7 tam sürümü yayınlandı, peki bu yeni sürüm
+&lt;/p&gt;</summary><category term="bağlantı"></category><category term="ie6"></category><category term="kullanılabilirlik"></category><category term="sözde-elementler"></category><category term="sözde-sınıflar"></category><category term="visited"></category><category term="ziyaret-edilmiş-sayfa"></category></entry><entry><title>Internet Explorer 7 ve CSS</title><link href="http://www.fatihhayrioglu.com/internet-explorer-7-ve-css/" rel="alternate"></link><updated>2006-10-30T19:50:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-30:internet-explorer-7-ve-css/</id><summary type="html">&lt;p&gt;Internet Explorer 7 tam sürümü yayınlandı, peki bu yeni sürüm
 bizlere(web kodlayıcılarına) ne kazandırıyor. Güvenlik açısından
 yenilikler içeren IE7 eski versiyonlardaki CSS sorunlarının bir çoğunuda
 çözmüş görünüyor. Bu bizim gibi kodlayıcılar için çok güzel bir gelişme,
@@ -308,8 +320,8 @@ daha uyumlu olması bizi sevindiriyor. &lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;Artık IE için ayrıca CSS kodlarımızı düzenlemeyeceğiz(Bir süre daha
 kodlayacağız tabi IE 7 yaygınlaşana kadar). Buna sevinmeliyiz. IE7 ile
 birlikte 200'e yakın CSS sorununu düzeltildiğini söylüyor Microsoft. Tüm
-bu düzeltmelerin [\&amp;lt;!DOCTYPE&gt; switch][]'da çalıştığını [Garip
-Mod][\&amp;lt;!DOCTYPE&gt; switch]'da ise IE6 gibi yorumlayacağını söylüyor ona
+bu düzeltmelerin &lt;a href="http://www.fatihhayrioglu.com/?p=164"&gt;&amp;lt;!DOCTYPE&amp;gt; switch&lt;/a&gt;'da çalıştığını &lt;a href="http://www.fatihhayrioglu.com/?p=164"&gt;Garip
+Mod&lt;/a&gt;'da ise IE6 gibi yorumlayacağını söylüyor ona
 göre.&lt;/p&gt;
 &lt;h3&gt;IE7 ile Düzelen Genel Sorunlar&lt;/h3&gt;
 &lt;ul&gt;
@@ -363,11 +375,10 @@ göre.&lt;/p&gt;
     dışarıdaki elementlerde meydan gelir: Ayrıntılı bilgi için
     &lt;a href="http://www.positioniseverything.net/explorer/creep.html"&gt;tıklayınız&lt;/a&gt;.&lt;br /&gt;
 &lt;/p&gt;
+&lt;p&gt;:::css
+ div { border-left: 1px solid red;
+padding-bottom: 1px; } &lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[sourcecode language="css"] div { border-left: 1px solid red;
-padding-bottom: 1px; } [/sourcecode]&lt;/p&gt;
-&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Line-height/Replaced Element Sorunu:&lt;/strong&gt; Eğer line-height uygulanmış
     bir satırda replaced element varsa line-height değeri sorunlu
@@ -419,7 +430,7 @@ padding-bottom: 1px; } [/sourcecode]&lt;/p&gt;
     (Bu sayede menu oluştururken IE için script yazmayacağız, tabi bunu
     için erken daha)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Background-attachment: fixed&lt;/strong&gt; tüm elementlerde çalışıyor&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;\&amp;lt;?xml&gt;&lt;/strong&gt; ön tanımlamasını &lt;strong&gt;[Garip Mod][\&amp;lt;!DOCTYPE&gt; switch]&lt;/strong&gt;
+&lt;li&gt;&lt;strong&gt;&amp;lt;?xml&amp;gt;&lt;/strong&gt; ön tanımlamasını &lt;strong&gt;&lt;a href="http://www.fatihhayrioglu.com/?p=164"&gt;Garip Mod&lt;/a&gt;&lt;/strong&gt;
     olarak algılamıyor artık&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Overflow&lt;/strong&gt; şimdi çalışıyor(Bunun anlamı kutular artık otomatik
     büyümeyecek.)&lt;/li&gt;
@@ -461,9 +472,12 @@ sonra kodumuzu incelerken bu yorumlar bize yardımcı olacaktır. Ayrıca
 bir proje üzerinde birden fazla kişi çalışıyorsa diğer çalışanlar için
 bu kodlar önemli bilgiler içerecektir.&lt;/p&gt;
 &lt;p&gt;CSS'de yorum eklemek çok kolaydır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] /* Genel Stiller */ body { font-size:
-67.5%; /* genel font tanımı */ } /* Birden fazla satır içeren kodları
-bu şekilde kullanabilriz. */ [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="c"&gt;/* Genel Stiller */&lt;/span&gt; &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;67.5%; /&lt;em&gt; genel font tanımı &lt;/em&gt;/ } /&lt;em&gt; Birden fazla satır içeren kodları
+bu şekilde kullanabilriz. &lt;/em&gt;/ &lt;/p&gt;
 &lt;/p&gt;</summary><category term="CSS"></category><category term="iki-satır-yorumlar"></category><category term="uzun-yorumlar"></category><category term="Web Standartları"></category><category term="yorum"></category></entry><entry><title>CSS'e başlamak</title><link href="http://www.fatihhayrioglu.com/csse-baslamak/" rel="alternate"></link><updated>2006-05-19T16:11:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-05-19:csse-baslamak/</id><summary type="html">&lt;p&gt;Cascading Style Sheets (CSS) HTML 'deki bazı problemleri halletmek için
 ama asıl neden olarak da; web sayfası içeriği ve web sayfası görünümünü
 birbirinden ayırmak için oluşturulan bir standarttır. CSS 1996'da
@@ -477,7 +491,7 @@ avantajları bulunmaktadır. Belli başlı avantajlarını sıralarsak:&lt;/p&gt
 öğelerinin sayfa görünümü öğelerinden ayrılması için geliştirildiğini
 düşünürsek avantajı baştan anlaşılmış olur. [sourcecode language='html']&lt;/p&gt;
 &lt;h1&gt;CSS'e Giriş&lt;/h1&gt;
-&lt;p&gt;[/sourcecode] HTML'de bu elementi(h1) kalın,altı çizili, ardalanı
+&lt;p&gt;HTML'de bu elementi(h1) kalın,altı çizili, ardalanı
 kırmızı olarak atama gibi çeşitli stiller verbiliriz ancak bunlar içinde
 ayrı HTML elementleri kullanmak zorundayız (örn:strong, gibi), ancak CSS
 de bunu tek bir elementle yapabiliriz ve ayrıca daha fazla stil
@@ -485,19 +499,19 @@ de bunu tek bir elementle yapabiliriz ve ayrıca daha fazla stil
 ekleyebiliriz.) [sourcecode language='css'] h1 { color: white; font:
 italic 11px Arial, serif; text-decoration: underline; background: yellow
 url(titlebg.gif) repeat-x; border: 1px solid red; margin-bottom: 0;
-padding: 5px; } [/sourcecode]&lt;/p&gt;
+padding: 5px; } &lt;/p&gt;
 &lt;h5&gt;Kullanım Kolaylığı&lt;/h5&gt;
 &lt;p&gt;HTML'de her elmente artı özellikler eklemek için başka bir element ve
 özellik eklmemiz gerekiyor ve bu işlemi geniş çaplı bir sitede yaptımızı
 düşünütseniz çok büyük zaman kaybı ve uğraş gerektiğini göreceksiniz.
 [sourcecode language='html']&lt;/p&gt;
 &lt;h1&gt;&lt;font color="blue"&gt;Başlık&lt;/font&gt;&lt;/h1&gt;
-&lt;p&gt;[/sourcecode] Bunun gibi onlarca veya yüzlerce başlığınız olduğunu
+&lt;p&gt;Bunun gibi onlarca veya yüzlerce başlığınız olduğunu
 düşünün, gerçekten çok zor. CSS'de aynı işlem için [sourcecode
-language='css'] h1 {color: blue;} [/sourcecode]hatta daha sonra bu
+language='css'] h1 {color: blue;} hatta daha sonra bu
 elementin özelliklerinde değişiklik yapmamızda kolay olacaktır. Hatta bu
 işlemi sadece bu etiket için değil diğer etiketlerede uygulayabiliriz.
-[sourcecode language='css'] h1, h2 {color: blue;} [/sourcecode] Ayrıca
+[sourcecode language='css'] h1, h2 {color: blue;}  Ayrıca
 tek bir CSS dosyası ile sitenin tamamının yönetmekte web kodlamacıları
 için çok büyük kolaylıktır. Sadece bir dosyada değişlik yaparak tüm
 sitemizi yönetebiliriz isterse yüzlerce sayfa olsun.&lt;/p&gt;

@@ -140,17 +140,24 @@ CSS1'de kalıtsallığı olmayan özelliklerin listesi:
 </div>
 
 <p>Örnek bir kodlama yaparsak:</p>
-<p>[sourcecode language="css"] div#icerik { text-align: center; }
-[/sourcecode] [sourcecode language="html"] \&lt;div id="icerik"> Buradaki
-içerik ortalanacaktır \&lt;p> text-align özelliğinin kalıtsallığı olduğu
-için buradaki içeirkte ortalanacaktır \&lt;/p> \&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#icerik</span> <span class="p">{</span> <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span> <span class="p">}</span>
+<span class="o">::</span><span class="nd">:html</span>
+ <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="s2">&quot;icerik&quot;</span><span class="o">&gt;</span> <span class="nt">Buradaki</span>
+</pre></div>
+
+
+<p>içerik ortalanacaktır <p> text-align özelliğinin kalıtsallığı olduğu
+için buradaki içeirkte ortalanacaktır </p> </div> </p>
 <p><img alt="" src="static/dokumanlar/kalitsallik_ornek1.gif" /></p>
 <p>Kalıtsallık kodlama yaparken bazen bize yaralı olur, bazende
 sayfalarımızda sorun çıkmasına neden olur. Bundan dolayı elementlerin
 kaltsallığı olup olmadığını bilmeliyiz. Yoksa gerçekten zor durumlarda
 kalabilirsiniz, tecrübeyle sabit :)</p>
 <p><strong>Direk atamalar kalıtsallığı yok eder.</strong>Örneğin yukarıda örnekte</p>
-<p>[sourcecode language="css"] p{ text-align: left; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="p">{</span> <span class="k">text-align</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>tanımlaması ile üst element olan <strong>#icerik</strong>'den kalıtsal olarak gelen
 <strong>text-align: center;</strong> tanımlamasını etkisiz kılar.</p>
 <div class="ekstrabilgi">
@@ -174,11 +181,14 @@ gibi bir tanımlama daha uygun bir tanımlama şeklidir.
 sağlamaktadır. Tüm elementlere(kalıtsallık özelliği olmayanlar dahil)
 <em>inherit</em> değeri atayabiliriz. <em>inherit</em> değeri atadığımız element üst
 elementinin değerlerini alacaktır. Bir örnek yapacak olursak:</p>
-<p>[sourcecode language="css"] div#icerik { border: 1px solid #000; }
-div#bilgi { border: inherit; } [/sourcecode] [sourcecode
-language="html"] \&lt;div id="icerik"> Bu içeriği kenarlığı olacaktır
-\&lt;div id="bilgi"> Bu bilgi de kenarlık bilgisini üstten elementten
-alarak kenarlığı olacaktır. \&lt;/div> \&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#icerik</span> <span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<p>div#bilgi { border: inherit; }  [sourcecode
+language="html"] <div id="icerik"> Bu içeriği kenarlığı olacaktır
+<div id="bilgi"> Bu bilgi de kenarlık bilgisini üstten elementten
+alarak kenarlığı olacaktır. </div> </div> </p>
 <p><img alt="" src="static/dokumanlar/kalitsallik_ornek2.gif" /></p>
 <p>Kalıtsallığı kullanarak kodlarımızı azaltabiliriz. Ancak kalıtsallık
 nedeni ile de bir çok sorunla karşılaştığımızıda unutmayalım.</p>
@@ -186,7 +196,7 @@ nedeni ile de bir çok sorunla karşılaştığımızıda unutmayalım.</p>
 <ul>
 <li><a href="http://www.simplebits.com/notebook/2003/04/15/css_inheritance.html">http://www.simplebits.com/</a></li>
 <li><a href="http://www.devarticles.com/c/a/Web-Style-Sheets/Learn-CSS-Introduction-to-Inheritance-Specificity-and-Cascade/3/">http://www.devarticles.com</a></li>
-<li>[http://www.w3.org/TR/REC-CSS1#inheritance][]</li>
+<li><a href="http://www.w3.org/TR/REC-CSS1#inheritance">http://www.w3.org/TR/REC-CSS1#inheritance</a></li>
 <li><a href="http://www.adobe.com/devnet/dreamweaver/articles/css_inheritance.html">http://www.adobe.com/</a></li>
 <li><a href="http://www.creativepro.com/story/feature/14776.html">http://www.creativepro.com/</a></li>
 <li><a href="http://meyerweb.com/eric/articles/webrev/199903.html">http://meyerweb.com/</a></li>
@@ -272,8 +282,9 @@ sitemizin bulundurulduğu sunuculara az yük ve az ...</p>
                 <p>Genel özellikleri bir kere tanımlayarak tekrarlardan kurtulabiliriz. Bu
 sitemizi hız ve tutarlılık kazandıracaktır. Örneğin sitemizde kullanılan
 genel yazı tipi ve yazı tipi rengini body içinde tanımlayarak bir çok
-tekrarı engellemiş oluruz. [sourcecode language="css"] body {
-font:Arial, Helvetica, sans-serif; color: #474747 } [/sourcecode]</p>
+tekrarı engellemiş oluruz.  :::css
+     body {
+font:Arial, Helvetica, sans-serif; color: #474747 } </p>
                 <a class="readmore" href=".././css-ipuclari-6-css-kisaltmalari-hakkinda/">read more</a>
                 <p>There are <a href=".././css-ipuclari-6-css-kisaltmalari-hakkinda/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

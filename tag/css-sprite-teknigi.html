@@ -90,78 +90,102 @@ olarak algılarve ona göre davranır.</p>
 göreceğiz. <!--more--></p>
 <p>Başlık tanımlamanın bir çok yolu vardır. Biz web standartları ve iyi
 kodlamaaçısından konuyu irdeleyeceğiz.</p>
-<p>[sourcecode language="css"] \&lt;h1>CSS Dersleri\&lt;/h1> [/sourcecode]</p>
-<p>W3C başlıklarda kullanmamız için\&lt;h1>,\&lt;h2>,\&lt;h3>,\&lt;h4>,\&lt;h5> ve
-\&lt;h6> olmaküzere 6 adet başlık çeşidini bizim kullanımımıza sunmuş.
-Önem sırasına göresıralanmıştır, en önemlisi \&lt;h1>'dir.</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">h1</span><span class="o">&gt;</span><span class="nt">CSS</span> <span class="nt">Dersleri</span><span class="o">&lt;/</span><span class="nt">h1</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<p>W3C başlıklarda kullanmamız için<h1>,<h2>,<h3>,<h4>,<h5> ve
+<h6> olmaküzere 6 adet başlık çeşidini bizim kullanımımıza sunmuş.
+Önem sırasına göresıralanmıştır, en önemlisi <h1>'dir.</p>
 <p>W3C'nin başlık etiketlerinin kullanımının bize sağladığı avantajları
 sırası ile inceleyelim:</p>
 <h3>Hiyerarşi</h3>
 <p>Başlıklar doküman hiyerarşisini sağlamamıza yardımcı olur. Bir çok
 websitesinde başlıklar belli bir hiyerarşiye göre sıralanır ve bu
 hiyerarşi metninanlaşılabilirliğini arttır ve sayfaları bir düzene
-sokar. \&lt;h1> ve\&lt;h6> sıralaması hiyerarşi için biçilmiş kaftandır.
-Örnek için <a href="static/dokumanlar/baslik_deneme1.html">tıklayınız.</a></p>
+sokar. <h1> ve<h6> sıralaması hiyerarşi için biçilmiş kaftandır.
+Örnek için [tıklayınız.][]</p>
 <h3>Arama Motoruna Uygunluk</h3>
-<p>Arama motorları için \&lt;hx>'ler çokkullanışlıdır. \&lt;hx> kullanımında
+<p>Arama motorları için <hx>'ler çokkullanışlıdır. <hx> kullanımında
 arama motorlarıküçük çaba ile sayfadaki başlıkları öğrenebilmektedirler.</p>
-<p>Arama motorları \&lt;title> içindeki ve\&lt;meta> etiketi içindeki
+<p>Arama motorları <title> içindeki ve<meta> etiketi içindeki
 kelimeleri sayfa içinde ararlar bulamadıklarındao sayfayı sıralamadan
 düşürürler. Ancak başlıkla ilgi üzerine çekilmişkelimeler arama
 motorları için bir velinimettir. Tabi arama motorlarının bizimsitemizi
 indekslemeside bizim için bir velinimettir.</p>
 <h3>Kolay Şekillendirme</h3>
-<p>Kolay şekillendirilir. Çünkü \&lt;h1> etiketi\&lt;b> ve \&lt;p> gibi CSS de
+<p>Kolay şekillendirilir. Çünkü <h1> etiketi<b> ve <p> gibi CSS de
 tekil olarak atama yapılan bir etikettir. Bunedenle CSS tanımlaması
 kolay olacaktır.</p>
-<p>\&lt;h1> vd. başlıklar CSS tanımlaması olmasa dabaşlıklarınızı kalın ve
+<h1> vd. başlıklar CSS tanımlaması olmasa dabaşlıklarınızı kalın ve
 büyük font değerlerinde gösterecektir. Tüm araçlarda ve eskisürüm
-tarayıcılarda başlıklar ayırt edilecektir.</p>
-<p>Sayfalarımızda \&lt;h1> kullanarak kolaylıksağlarız. Çünkü \&lt;h1> tekil
+tarayıcılarda başlıklar ayırt edilecektir.
+
+Sayfalarımızda <h1> kullanarak kolaylıksağlarız. Çünkü <h1> tekil
 etiketlerdendir. Eğer bir atama yaptıktansonra buna bir ekleme yapmak
-istersek CSS ile bunu çok kolay yaparız Örneğin</p>
-<p>[sourcecode language="css"] \&lt;h1>CSS Dersleri \&lt;/h1> [/sourcecode]</p>
-<p>Bu başlığın boyutunu, rengini ve font-şeklinideğiştirebiliriz CSS ile</p>
-<p>[sourcecode language="css"] h1 { font-family: Arial, sans-serif;
-font-size: 24px; color: #369; } [/sourcecode]</p>
-<p>Biz burada çok basit bir şekilde tüm başlıklarıarial font, 24 piksel
-boyut ve mavi renk ataması yaptık.</p>
-<p>Daha sonra bu başlığın altına 1 piksel boyutundabir gri alt çizgi çizmek
-istedik.</p>
-<p>[sourcecode language="css" highlight="5,6"] h1 { font-family: Arial,
+istersek CSS ile bunu çok kolay yaparız Örneğin
+
+    :::css
+     <h1>CSS Dersleri </h1> 
+
+Bu başlığın boyutunu, rengini ve font-şeklinideğiştirebiliriz CSS ile
+
+    :::css
+     h1 { font-family: Arial, sans-serif;
+font-size: 24px; color: #369; } 
+
+Biz burada çok basit bir şekilde tüm başlıklarıarial font, 24 piksel
+boyut ve mavi renk ataması yaptık.
+
+Daha sonra bu başlığın altına 1 piksel boyutundabir gri alt çizgi çizmek
+istedik.
+
+[sourcecode language="css" highlight="5,6"] h1 { font-family: Arial,
 sans-serif; font-size: 24px; color: #369; padding-bottom: 4px;
-border-bottom: 1px solid #999; } [/sourcecode]</p>
-<p><strong>padding-bottom</strong> ile çizgi ile başlıkarasındaki boşluğu ayarladık ve
-<strong>border-bottom</strong> değeri ile debaşlık altına çizgiyi çizdik.</p>
-<h3>Değişebilir İkonlar</h3>
-<p>CSS'i kullanarak başlıklarımızın soluna zemin resmi olarak bir ikon
+border-bottom: 1px solid #999; } 
+
+**padding-bottom** ile çizgi ile başlıkarasındaki boşluğu ayarladık ve
+**border-bottom** değeri ile debaşlık altına çizgiyi çizdik.
+
+### Değişebilir İkonlar
+
+CSS'i kullanarak başlıklarımızın soluna zemin resmi olarak bir ikon
 koyabiliriz. Bu metot ile başlıklardaki bir değişiklikile tüm sitedeki
 başlıklar değişecektir. Ayrıca tüm başlıklar için kullanılacak ikonları
 bir resim halinde hazırlanıp kullanım kolaylığı sağlanabilir. Bir örnek
-yaparsak</p>
-<p><img alt="Başlıklar" src="static/images/basliklar.gif" /></p>
-<p>Tüm başlıkların ikonları tek bir <br />
-resim olarak hazılranmış hali</p>
-<p>Resim hazırlanırken ikon aralarındaki farkı orantılı ayarlar isek
+yaparsak
+
+![Başlıklar][]
+
+Tüm başlıkların ikonları tek bir   
+resim olarak hazılranmış hali
+
+Resim hazırlanırken ikon aralarındaki farkı orantılı ayarlar isek
 kodlama yaparken bize kolaylık sağlayacaktır. Aşağıda bunu daha iyi
-göreceğiz.</p>
-<p>Html kodları:</p>
-<p>[sourcecode language="html"] \&lt;h1 class="hata">Hakkımızda \&lt;/h1>
-\&lt;p>At lupatum delenit aigue duos dolor tempor sunt in culpa qui
+göreceğiz.
+
+Html kodları:
+
+    :::html
+     <h1 class="hata">Hakkımızda </h1>
+<p>At lupatum delenit aigue duos dolor tempor sunt in culpa qui
 officia d dereud facils est er expedit distinc peccand quaerer en
 imigent cupidat. Incita visset, accom ex robore ad quam vis vadisen
-vlavis confecs nis revinc tae.\&lt;/p> \&lt;h1 class="yemek">Ürünler\&lt;/h1>
-\&lt;p>Oppidi his mowni bus suifs fortunis desp erate coe magno recipei
+vlavis confecs nis revinc tae.</p> <h1 class="yemek">Ürünler</h1>
+<p>Oppidi his mowni bus suifs fortunis desp erate coe magno recipei
 ban ibi se rursus isdem opport unitel rursus isdem opport loci defen
-porti busi. Situs era eod oppi dorum, ut posta. \&lt;/p> \&lt;h1
-class="yaz">Bize Yazın\&lt;/h1> \&lt;p>Incita visset, accom ex robore ad
-quam vis vadisen vlavis confecs nis revinc tae. \&lt;/p> \&lt;h1
-class="yardim">Yardım\&lt;/h1> \&lt;p> At lupatum delenit aigue duos dolor
+porti busi. Situs era eod oppi dorum, ut posta. </p> <h1
+class="yaz">Bize Yazın</h1> <p>Incita visset, accom ex robore ad
+quam vis vadisen vlavis confecs nis revinc tae. </p> <h1
+class="yardim">Yardım</h1> <p> At lupatum delenit aigue duos dolor
 tempor sunt in culpa qui officia ddereud facils est er expedit distinc
 peccand quaerer en imigentcupidat. Incita visset, accom ex robore ad
-quam vis vadisen vlavisconfecs nis revinc tae.\&lt;/p> [/sourcecode]</p>
-<p>CSS kodları:</p>
-<p>[sourcecode language="css"] h1.hata{ font:bold 34px/35px "Lucida
+quam vis vadisen vlavisconfecs nis revinc tae.</p> 
+
+CSS kodları:
+
+    :::css
+     h1.hata{ font:bold 34px/35px "Lucida
 Grande",Arial, Helvetica, sans-serif; color: #3A45A1; background:
 url(images/basliklar.gif) 1px 3px no-repeat; padding-left: 40px; }
 h1.yemek{ font:bold 34px/35px "Lucida Grande",Arial, Helvetica,
@@ -171,32 +195,44 @@ sans-serif; color: #A6685A; background: url(images/basliklar.gif) 1px
 background: url(images/basliklar.gif) 1px -80px no-repeat; padding-left:
 40px; } h1.yardim{ font:bold 34px/35px "Lucida Grande",Arial, Helvetica,
 sans-serif; color: #C90A0A; background: url(images/basliklar.gif) 1px
--120px no-repeat; padding-left: 40px; } [/sourcecode]</p>
-<p>Sol tarafa ikon konduğu için yazı ile ikon arasındaki mesafeyi ayarlamak
+-120px no-repeat; padding-left: 40px; } 
+
+Sol tarafa ikon konduğu için yazı ile ikon arasındaki mesafeyi ayarlamak
 için padding-left değeri40 piksel atanmıştır ve zemin resmi olarakta bir
 resim tekrarsız olarak konmuş ve font değeri 34px ve satır yüksekliği
-35px tanımlanarak ikon yazı oranı sağlanmıştır.</p>
-<p>Dikkat ederseniz genelde her başlık için değişen sadece renk ve zemin
+35px tanımlanarak ikon yazı oranı sağlanmıştır.
+
+Dikkat ederseniz genelde her başlık için değişen sadece renk ve zemin
 resmi konumudur. Aslında bu başlıklar için genel bir sınıflandırma yapıp
 farklı özellikleri için her birine özel tanımlarda yapabilirdik.
-Yukarıda yazdığımız kod daha genel bir kod yazımı için uygundur.</p>
-<p>Örneği görmek için <a href="static/dokumanlar/baslik_deneme2.html">tıklayınız.</a></p>
-<h6>MetinYerine Resim koyma Metodu ile Başlık Oluşturmak</h6>
-<p>Bazen başlıkları resim yapmamız gerektiğidurumlar olabilir bunun için
+Yukarıda yazdığımız kod daha genel bir kod yazımı için uygundur.
+
+Örneği görmek için [tıklayınız.][1]
+
+###### MetinYerine Resim koyma Metodu ile Başlık Oluşturmak
+
+Bazen başlıkları resim yapmamız gerektiğidurumlar olabilir bunun için
 Metin Yerine Resim Koyma Metotlarından biriniuygulayabiliriz. Ayrıntılı
-bilgi için "<a href="http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/">Metin Yerine Resim/FlashEkleme Teknikleri (Image
-Replacement)</a>" makalemize göz atın.</p>
-<ul>
-<li><a href="http://www.communitymx.com/content/article.cfm?cid=A1A37">http://www.communitymx.com/content/article.cfm?cid=A1A37</a></li>
-<li><a href="static">http://www.paulmichaelsmith.com/blog/examples/headingicons/sample.php</a></li>
-<li><a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-047009754X.html">http://eu.wiley.com/WileyCDA/WileyTitle/productCd-047009754X.html</a></li>
-<li><a href="http://www.sitepoint.com/books/cssdesign1/">http://www.sitepoint.com/books/cssdesign1/</a></li>
-<li><a href="http://www.friendsofed.com/book.html?isbn=1590593812">http://www.friendsofed.com/book.html?isbn=1590593812</a></li>
-</ul>
+bilgi için "[Metin Yerine Resim/FlashEkleme Teknikleri (Image
+Replacement)][]" makalemize göz atın.
+
+-   [http://www.communitymx.com/content/article.cfm?cid=A1A37][]
+-   [http://www.paulmichaelsmith.com/blog/examples/headingicons/sample.php][]
+-   [http://eu.wiley.com/WileyCDA/WileyTitle/productCd-047009754X.html][]
+-   [http://www.sitepoint.com/books/cssdesign1/][]
+-   [http://www.friendsofed.com/book.html?isbn=1590593812][]
+
 </p>
 
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">paulmichaelsmith</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">headingicons</span><span class="o">/</span><span class="n">sample</span><span class="p">.</span><span class="n">php</span>
-</pre></div><p>There are <a href=".././xhtml-css-basliklar/#disqus_thread">comments</a>.</p>
+  [tıklayınız.]: /dokumanlar/baslik_deneme1.html
+  [Başlıklar]: /images/basliklar.gif
+  [1]: /dokumanlar/baslik_deneme2.html
+  [Metin Yerine Resim/FlashEkleme Teknikleri (Image Replacement)]: http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
+  [http://www.communitymx.com/content/article.cfm?cid=A1A37]: http://www.communitymx.com/content/article.cfm?cid=A1A37
+  [http://www.paulmichaelsmith.com/blog/examples/headingicons/sample.php]: http://www.paulmichaelsmith.com/blog/examples/headingicons/sample.php
+  [http://eu.wiley.com/WileyCDA/WileyTitle/productCd-047009754X.html]: http://eu.wiley.com/WileyCDA/WileyTitle/productCd-047009754X.html
+  [http://www.sitepoint.com/books/cssdesign1/]: http://www.sitepoint.com/books/cssdesign1/
+  [http://www.friendsofed.com/book.html?isbn=1590593812]: http://www.friendsofed.com/book.html?isbn=1590593812<p>There are <a href=".././xhtml-css-basliklar/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

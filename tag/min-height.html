@@ -103,16 +103,16 @@ tarafından oluşturulan bir hiledir.</p>
 <p>Kutu genişliği tanımlanmışsa ve padding veya kenar çizgiside
 tanımladığımızda uygulanan bu yöntem için yazdığımız kod aşağıdadır</p>
 <p>[sourcecode language='css']#icerik{ width:230px; padding:10px;
-margin:5px; /* Bundan sonraki kısmı ie5win sakla */ voice-family:
-"\"}\""; voice-family:inherit; width:200px; } html>body #icerik {
-width:200px; }[/sourcecode]</p>
+margin:5px; /<em> Bundan sonraki kısmı ie5win sakla </em>/ voice-family:
+""}""; voice-family:inherit; width:200px; } html&gt;body #icerik {
+width:200px; }</p>
 <p>Sorun olan kodumuza biz sadece</p>
-<p>[sourcecode language='css']voice-family: "\"}\"";
-voice-family:inherit; width:200px; } html>body #icerik { width:200px;
-} [/sourcecode]</p>
+<p>[sourcecode language='css']voice-family: ""}"";
+voice-family:inherit; width:200px; } html&gt;body #icerik { width:200px;
+} </p>
 <p>Bölümünü uygulamamız yeterlidir. Daha sonra eğer genişlik ise genişliği
-yükseklik ise yüksekliği ayarlamamız gerekir. Daha sonra <strong>html>body
-#icerik</strong> kısmından <strong>#icerik</strong> yerine kendi nesne adımızı yazmalıyız.</p>
+yükseklik ise yüksekliği ayarlamamız gerekir. Daha sonra **html&gt;body</p>
+<h1>icerik<strong> kısmından </strong>#icerik** yerine kendi nesne adımızı yazmalıyız.</h1>
 <h3>2- Float uygulanmış nesnelerin kapsayamama sorunu</h3>
 <p>Aslında clearfix olarakta adlandırılan bu sorun bir çok yerde başımıza
 dert olur. Alıştıktan sonra hemen uygular ve geçeriz.</p>
@@ -122,9 +122,9 @@ element içeriğine göre genişlememesidir.</p>
 <p>Kodumuz;</p>
 <p>[sourcecode language='css'].kapsul:after { content: "."; display: block;
 height: 0; clear: both; visibility: hidden; } .kapsul {display:
-inline-block;} /* IE-mac de bu bolumu sakla \ */ * html .kapsul
-{height: 1%;} .kapsul {display: block;} /* IE-mac bu bolumu saklam
-artik */ [/sourcecode]</p>
+inline-block;} /<em> IE-mac de bu bolumu sakla  </em>/ * html .kapsul
+{height: 1%;} .kapsul {display: block;} /<em> IE-mac bu bolumu saklam
+artik </em>/ </p>
 <p>Bu kodda <strong>.kapsul</strong> yerine kendi nesne ismimizi yazmamız yeterlidir.</p>
 <h3>3. IE6'un Tekrarlayan Karakter Sorunu</h3>
 <p>Bu hata birden fazla float uygulanmış iç içe elementlerde meydana gelir.
@@ -132,8 +132,7 @@ Son float uygulanmış elementin son karakterleri tekrarlar. Soruna nedeni
 html yorum satırlarıdır ve çözüm için <br />
 </p>
 <p>[sourcecode
-language='html']<!--[if !IE]>Yorumunu buraya yaz <![endif]-->
-[/sourcecode]</p>
+language='html']<!--[if !IE]>Yorumunu buraya yaz <![endif]--></p>
 <p>Kodunu yazarız. Ben burada yorum yazarken bu sorunla karşılaşabilirim
 diye tüm yorumlarımı bu şekilde yazarak bu sorundan kaçınmaya
 çalışıyorum.</p>
@@ -141,7 +140,7 @@ diye tüm yorumlarımı bu şekilde yazarak bu sorundan kaçınmaya
 <p>Son zamanlarda gelen işlerde çok rastlamam nedeni ile bu listeye son
 anda ilave ettim. IE6'nın desteklemediği min-height özelliği için</p>
 <p>[sourcecode language='css']min-height:500px; height:auto !important;
-height:500px;[/sourcecode]</p>
+height:500px;</p>
 <p>yazmamız yeterli.</p>
 <p>Bunun dışında <a href="http://www.fatihhayrioglu.com/css-dersleri" title="CSS Dersleri Sayfası">CSS Derslerindeki</a> sayfasındaki CSS Problemleri ve
 Çözüm Önerileri kısmında birçok problem görünse de yukarıda saydıklarım
@@ -149,7 +148,7 @@ problemlerle çok sık karşılaşıyorum. Bu sorunlarla karşılaştığımda h
 defasında siteye girip bu kodları kopyalamak sorun oluyor, bu nedenle
 Adobe Dreamweaver'ın Snippets Aracı ile bu sorunu giderdim.</p>
 <p>Dreamweaver'da Snippets eklemek çok basit. İlk olarak eğer açık değilse
-Snippets penceresini açmak için üst menüden <strong>Window -> Sineppets</strong>
+Snippets penceresini açmak için üst menüden <strong>Window -&gt; Sineppets</strong>
 veya <strong>shift+F9</strong> kısayolu ile açabiliriz. Açtıktan sonra farenin sağ
 tuşuna basarak <strong>New Sineppet</strong> tıklayalım.</p>
 <p><img alt="Dreamweaver Sineppet Penceresi" src="static/images/snippets13.gif" /></p>
@@ -208,14 +207,15 @@ ekleyebiliriz.</p>
 ile sınarlandırabilriz. Bu özellikler CSS2 ile birlikte gelmiştir.
 <!--more--></p>
 <h6>min-width, min-height</h6>
-<p><strong>Yapısı :</strong> min-width, min-height: \&lt;deger><br />
-<strong>Aldığı Değerler :</strong> [\&lt;uzunluk değeri >][] | [\&lt;yüzde>][\&lt;uzunluk
-değeri >] | inherit<br />
+<p><strong>Yapısı :</strong> min-width, min-height: <deger><br />
+<strong>Aldığı Değerler :</strong> <a href="http://www.fatihhayrioglu.com/?p=95"><uzunluk değeri ></a> | <a href="http://www.fatihhayrioglu.com/?p=95"><yüzde></a> | inherit<br />
 <strong>Başlnagıç değeri:</strong> 0 <br />
 <strong>Uygulanabilen elementler:</strong> inline nonreplacement elementler ve tablo
 elementlere<br />
 <strong>Kalıtsallık:</strong> Yok</p>
-<p>min-width, min-height kapsayıcı kutunun minimum alacağı ...</p>
+<p>min-width, min-height kapsayıcı kutunun minimum alacağı değerleri
+belirtmek için kullanırız.</p>
+<p>[sourcecode language ...</p>
                 <a class="readmore" href=".././genislik-ve-yuksekligin-sinirlarini-belirlemekmin-width-min-heightmax-width-max-height/">read more</a>
                 <p>There are <a href=".././genislik-ve-yuksekligin-sinirlarini-belirlemekmin-width-min-heightmax-width-max-height/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

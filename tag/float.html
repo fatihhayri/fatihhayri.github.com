@@ -102,29 +102,34 @@ düşündüm ve bu yazı ortaya çıktı. Eksi marginleri yakından tanıyalım.
 <p><strong>1.1. Ard Arda Statik Elemanlar</strong></p>
 <p>Herhangi bir konumlandırma ataması yapılmayan tüm elemanlar sabit
 konumlandırılmıştır.</p>
-<p>[sourcecode language="css"] #kutu1 { width: 200px; height: 100px;
-border: 2px solid #659ad8; background-color:#e5ecf9 } #kutu2 { width:
+<div class="codehilite"><pre> <span class="nf">#kutu1</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>border: 2px solid #659ad8; background-color:#e5ecf9 } #kutu2 { width:
 200px; height: 100px; border: 2px solid #cd8a93;
-background-color:#ffb4bf } [/sourcecode] [sourcecode language="html"]
-\&lt;div id="kutu1">\&lt;/div> \&lt;div id="kutu2">\&lt;/div> [/sourcecode]</p>
+background-color:#ffb4bf }      :::html</p>
+<div id="kutu1"></div>
+
+<p><div id="kutu2"></div> </p>
 <p>Örnke kodu görmek için <a href="static/dokumanlar/sabit_konumlu.html">tıklayınız.</a></p>
-<p>![sabit_konumlu_kutu][]</p>
+<p><img alt="sabit_konumlu_kutu" src="http://www.fatihhayrioglu.com/wp-content/sabit_konumlu_kutu.gif" title="sabit_konumlu_kutu" /></p>
 <p>Normal akış içindeki iki kutu bir birini takip eder. Biz burada birinci
 kutuya eksi margin atarsak örneğin alttan -20px gibi.</p>
 <p>Alttaki kutuyu kendi üzerine doğru 20px çekecektir.</p>
 <p>[sourcecode language="css" highlight="6"] #kutu1 { width: 200px;
 height: 100px; border: 2px solid #659ad8; background-color:#e5ecf9;
 margin-bottom:-20px } #kutu2 { width: 200px; height: 100px; border: 2px
-solid #cd8a93; background-color:#ffb4bf } [/sourcecode]</p>
+solid #cd8a93; background-color:#ffb4bf } </p>
 <p>Örnke kodu görmek için <a href="static/dokumanlar/sabit_konumlu_2.html">tıklayınız.</a></p>
-<p>![sabit_konumlu_kutu2][]</p>
+<p><img alt="sabit_konumlu_kutu2" src="http://www.fatihhayrioglu.com/wp-content/sabit_konumlu_kutu2.gif" title="sabit_konumlu_kutu2" /></p>
 <p>Eğer ikinci kutuya yukarıdan eksi margin verirsek</p>
 <p>[sourcecode language="css" highlight="13"] #kutu1 { width: 200px;
-height: 100px; border: 2px solid #659ad8; background-color:#e5ecf9; }
-#kutu2 { width: 200px; height: 100px; border: 2px solid #cd8a93;
-background-color:#ffb4bf; margin-top:-20px } [/sourcecode]</p>
+height: 100px; border: 2px solid #659ad8; background-color:#e5ecf9; }</p>
+<h1>kutu2 { width: 200px; height: 100px; border: 2px solid #cd8a93;</h1>
+<p>background-color:#ffb4bf; margin-top:-20px } </p>
 <p>Örnke kodu görmek için <a href="static/dokumanlar/sabit_konumlu_3.html">tıklayınız.</a></p>
-<p>![sabit_konumlu_kutu2][]</p>
+<p><img alt="sabit_konumlu_kutu2" src="http://www.fatihhayrioglu.com/wp-content/sabit_konumlu_kutu2.gif" title="sabit_konumlu_kutu2" /></p>
 <p>Aynı görüntüyü alırız. Burada bu örneği vermemin amacı, eksi değer üst
 ve soldan verilirse eleman kendini yukarı veya sola çekecektir. Ancak
 elemana sağ ve alt eksi değeri verildiğinde kendi yerinden oynamazken
@@ -137,11 +142,13 @@ Margin kullanmak</strong></p>
 ve içerik şeklinde gireriz. Başlıklar için h1, h2, h3, h4, h5, h6
 kullanırız. Bu bize arama motorları içinde avantaj sağlar. </p>
 <p>Normal bir içerik ve başlık kullanımına örnek verelim.</p>
-<p>[sourcecode language="html"] \&lt;p>Integer sagittis ... elementum. \&lt;/p>
-\&lt;h1>Donec id ultricies mi.\&lt;/h1> \&lt;p>Lorem ipsum ... eros.\&lt;/p>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;p&gt;</span>Integer sagittis ... elementum. <span class="nt">&lt;/p&gt;</span>
+</pre></div>
+
+
+<p><h1>Donec id ultricies mi.</h1> <p>Lorem ipsum ... eros.</p></p>
 <p>Görünüm aşağıdaki gibi olacaktır</p>
-<p>![negatifmargin_baslik][]</p>
+<p><img alt="negatifmargin_baslik" src="http://www.fatihhayrioglu.com/wp-content/negatifmargin_baslik.gif" title="negatifmargin_baslik" /></p>
 <p>Genel kullanımda başlık ile içerik arasındaki boşluk, başlık ile üst
 elemanlarda ile olandan daha azdır. Biz bunu sağlamak için h1'e
 margin-bottom:0 değeri versek de yeterli gelmez. Paragrafın(p) üst
@@ -151,41 +158,41 @@ paragrafların margin-top değerini düşürmeliyiz veya sıfırlamalıyız.</p>
 <p>Bir başka çözüm yolu ise ki bu daha kolaydır ve genelde tercih edilir.
 Başlık etiketinin alt margin değerine eksi değer vererek paragraf
 yaklaştırılır. </p>
-<p>[sourcecode language="css"] h1{ margin-bottom:-20px } [/sourcecode]</p>
-<p>![negatifmargin_baslik2][]</p>
+<div class="codehilite"><pre> <span class="nt">h1</span><span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:-</span><span class="m">20px</span> <span class="p">}</span>
+</pre></div>
+
+
+<p><img alt="negatifmargin_baslik2" src="http://www.fatihhayrioglu.com/wp-content/negatifmargin_baslik2.gif" title="negatifmargin_baslik2" /></p>
 <p><strong>1.3. Statik elemanlarda bir başka durumda kutuların iç içe olma
 durumunda vardır.</strong></p>
 <p>[sourcecode language="css" highlight="11"] #kutu1 { width:200px;
-height: 130px; border: 2px solid #659ad8; background-color:#e5ecf9; }
-#kutu2 { height: 100px; border: 2px solid #cd8a93;
-background-color:#ffb4bf; margin:10px -20px } [/sourcecode] [sourcecode
-language="html"] \&lt;div id="kutu1"> \&lt;div id="kutu2">\&lt;/div> \&lt;/div>
-[/sourcecode]</p>
+height: 130px; border: 2px solid #659ad8; background-color:#e5ecf9; }</p>
+<h1>kutu2 { height: 100px; border: 2px solid #cd8a93;</h1>
+<p>background-color:#ffb4bf; margin:10px -20px }  [sourcecode
+language="html"] <div id="kutu1"> <div id="kutu2"></div> </div></p>
 <p>İçteki kutuya sağdan ve soldan eksi değerler verdiğimizde dış kutunu
 genişliğini otomatik olarak alan içerideki kutu sağ ve soldan verilen
 eksi kenar dışı boşluk değerleri kadar dışa taşacaktır.</p>
 <p>Örnke kodu görmek için <a href="static/dokumanlar/sabit_konumlu_4.html">tıklayınız.</a></p>
-<p>![sabit_konumlu_kutu3][]</p>
+<p><img alt="sabit_konumlu_kutu3" src="http://www.fatihhayrioglu.com/wp-content/sabit_konumlu_kutu31.gif" title="sabit_konumlu_kutu3" /></p>
 <p>Ancak burada farklı tarayıcılarda farklı sorunlarımız ortaya çıkacaktır.
 ie6 da her iki yana taşan kısımlar gözükmezken, ie7'de sadece sağ kısım
 görünmemektedir.</p>
-<p>![sabit_konumlu_kutu3_ie7][]</p>
+<p><img alt="sabit_konumlu_kutu3_ie7" src="http://www.fatihhayrioglu.com/wp-content/sabit_konumlu_kutu3_ie7.gif" title="sabit_konumlu_kutu3_ie7" /></p>
 <p>ie7'de yukarıdaki gibi görünüyor.</p>
-<p>![sabit_konumlu_kutu3_ie6][]</p>
+<p><img alt="sabit_konumlu_kutu3_ie6" src="http://www.fatihhayrioglu.com/wp-content/sabit_konumlu_kutu3_ie6.gif" title="sabit_konumlu_kutu3_ie6" /></p>
 <p>ie6'da ise yukarıdaki gibi görünmektedir.</p>
 <p>Bu durumu düzeltmek için düzeltme kodu yazmalıyız. ie7 için min-height:0
 tanımı yeterlidir.</p>
 <p>[sourcecode language="css" highlight="12"] #kutu1 { width:200px;
-height: 130px; border: 2px solid #659ad8; background-color:#e5ecf9; }
-#kutu2 { height: 100px; border: 2px solid #cd8a93;
-background-color:#ffb4bf; margin:10px -20px; min-height:0 }
-[/sourcecode]</p>
+height: 130px; border: 2px solid #659ad8; background-color:#e5ecf9; }</p>
+<h1>kutu2 { height: 100px; border: 2px solid #cd8a93;</h1>
+<p>background-color:#ffb4bf; margin:10px -20px; min-height:0 }</p>
 <p>ie6 için ise daha farklı bir kod yazmalıyız.</p>
 <p>[sourcecode language="css" highlight="11,12,13,14"] #kutu1 {
-width:200px; border: 2px solid #659ad8; background-color:#e5ecf9; }
-#kutu2 { border: 2px solid #cd8a93; background-color:#ffb4bf;
-margin:10px -20px; } * html #kutu2{ position:relative; height:1px }
-[/sourcecode]</p>
+width:200px; border: 2px solid #659ad8; background-color:#e5ecf9; }</p>
+<h1>kutu2 { border: 2px solid #cd8a93; background-color:#ffb4bf;</h1>
+<p>margin:10px -20px; } * html #kutu2{ position:relative; height:1px }</p>
 <p>Örnke kodu görmek için <a href="static/dokumanlar/sabit_konumlu_4_ie6.html">tıklayınız.</a></p>
 <p>Bu kodlama sayesinde tüm tarayıcılarda aynı sonucu elde ederiz. Bu
 örnekten şu sonucuda çıkarabiliriz; genişliği verilmeyen elemanlarda
@@ -193,21 +200,26 @@ eksi margin eleman genişliğini arttırır, bir bakıma padding görevi
 görür.</p>
 <h3>2- Eksi Margin ve Float</h3>
 <p>Float uygulanmış iki elemanı düşünelim.</p>
-<p>[sourcecode language="css"] #kutu1 { float:left; width: 200px; height:
-100px; border: 2px solid #659ad8; background-color:#e5ecf9; } #kutu2
+<div class="codehilite"><pre> <span class="nf">#kutu1</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span>
+</pre></div>
+
+
+<p>100px; border: 2px solid #659ad8; background-color:#e5ecf9; } #kutu2
 { float:left; width: 200px; height: 80px; border: 2px solid #cd8a93;
-background-color:#ffb4bf } [/sourcecode] [sourcecode language="html"]
-\&lt;div id="kutu1"> Lorem ipsum dolor sit amet, consectetur adipiscing
-elit. Donec id ultricies mi. \&lt;/div> \&lt;div id="kutu2"> Etiam vel arcu
-nisl. Sed pharetra gravida diam sed mattis. \&lt;/div> [/sourcecode]</p>
+background-color:#ffb4bf }      :::html</p>
+<div id="kutu1"> Lorem ipsum dolor sit amet, consectetur adipiscing
+elit. Donec id ultricies mi. </div>
+
+<p><div id="kutu2"> Etiam vel arcu
+nisl. Sed pharetra gravida diam sed mattis. </div> </p>
 <p>Birinci kutuya sağ eksi margin verdiğimizde</p>
 <p>[sourcecode language="css" highlight="2,7"] #kutu1 { float:left; width:
 200px; height: 100px; border: 2px solid #659ad8;
 background-color:#e5ecf9; margin-right:-50px } #kutu2 { float:left;
 width: 200px; height: 80px; border: 2px solid #cd8a93;
-background-color:#ffb4bf } [/sourcecode]</p>
+background-color:#ffb4bf } </p>
 <p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_float.html">tıklayınız.</a></p>
-<p>![float_eksimargin][]</p>
+<p><img alt="float_eksimargin" src="http://www.fatihhayrioglu.com/wp-content/float_eksimargin.gif" title="float_eksimargin" /></p>
 <p>Birinci kutu ikinci kutuyu kendine doğru çekecektir. Birinci kutu
 genişliği ve konumunda herhangi bir değişiklik olmayacaktır.</p>
 <p>Farklı durumlarda farklı sonuçlar çıkacaktır. Örneğin,</p>
@@ -225,68 +237,82 @@ olacaktır.</p>
 <p>[sourcecode language="css" highlight="6,10"] #kutu1 { float:left;
 width: 100%; height: 100px; background-color:#e5ecf9;
 margin-right:-200px } #kutu2 { float:left; width: 200px; height: 80px;
-background-color:#ffb4bf } [/sourcecode] [sourcecode language="html"]
-\&lt;div id="kutu1"> \&lt;p>Lorem ipsum dolor sit amet, consectetur
-adipiscing elit. Donec id ultricies mi.\&lt;/p> \&lt;/div> \&lt;div
-id="kutu2"> \&lt;p>Etiam vel arcu nisl. Sed pharetra gravida diam sed
-mattis.\&lt;/p> \&lt;/div> [/sourcecode]</p>
-<p>![float_eksimargin_esnek][]</p>
+background-color:#ffb4bf }      :::html</p>
+<div id="kutu1"> <p>Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Donec id ultricies mi.</p> </div>
+
+<p><div
+id="kutu2"> <p>Etiam vel arcu nisl. Sed pharetra gravida diam sed
+mattis.</p> </div> </p>
+<p><img alt="float_eksimargin_esnek" src="http://www.fatihhayrioglu.com/wp-content/float_eksimargin_esnek.gif" title="float_eksimargin_esnek" /></p>
 <p>%100 içeriği sağ kolonun altında kalıyor. Bunu engellemek için
 içeriğindeki paragrafa sağ margin değeri atamalıyız.</p>
-<p>[sourcecode language="css"] #kutu1 p{ margin-right:220px }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nf">#kutu1</span> <span class="nt">p</span><span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span><span class="m">220px</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Normalde 200px yeterli olacaktı ancak içerik ile sağ kolon arasına 20px
 lik bir mesafe koyarak birbirine yapışmasınıda engellemiş olduk.</p>
-<p>![float_eksimargin_esnek2][]</p>
+<p><img alt="float_eksimargin_esnek2" src="http://www.fatihhayrioglu.com/wp-content/float_eksimargin_esnek2.gif" title="float_eksimargin_esnek2" /></p>
 <p>Sağ ve sol kolon diye bir ayrım yapmak içinde soldaki kolonun ardalan
 rengini kaldırıp içindeki paragrafa vererek bu sorunu çözebiliriz.</p>
 <p>[sourcecode language="css" highlight="6,7,8,9,10"] #kutu1 { float:left;
 width: 100%; margin-right:-200px } #kutu1 p{ margin:0 220px 0 0;
 height: 100px; background-color:#e5ecf9; } #kutu2 { float:left; width:
-200px; height: 80px; background-color:#ffb4bf } [/sourcecode]</p>
+200px; height: 80px; background-color:#ffb4bf } </p>
 <p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_float_elastik.html">tıklayınız.</a></p>
-<p>![float_eksimargin_esnek3][]</p>
+<p><img alt="float_eksimargin_esnek3" src="http://www.fatihhayrioglu.com/wp-content/float_eksimargin_esnek3.gif" title="float_eksimargin_esnek3" /></p>
 <p><strong>Float uygulanmış iç içe elemanlara eksi margin uygulamak</strong></p>
 <p>Yukarıda yan yana elemanlardaki durumu gösterdik peki iç içe elemanlarda
 eksi margin kullanımda nasıl sonuçlar çıkacaktır.</p>
-<p>[sourcecode language="css"] #kutu1 { float:left; width: 200px; height:
-100px; border: 2px solid #659ad8; background-color:#e5ecf9; } #kutu2
+<div class="codehilite"><pre> <span class="nf">#kutu1</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span>
+</pre></div>
+
+
+<p>100px; border: 2px solid #659ad8; background-color:#e5ecf9; } #kutu2
 { float:right; width: 50px; height: 80px; border: 2px solid #cd8a93;
-background-color:#ffb4bf; } [/sourcecode] [sourcecode language="html"]
-\&lt;div id="kutu1"> \&lt;div id="kutu2">Donec id ultricies mi.\&lt;/div>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. \&lt;/div>
-[/sourcecode]</p>
+background-color:#ffb4bf; }     :::html</p>
+<div id="kutu1"> <div id="kutu2">Donec id ultricies mi.</div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+
 <p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_icice_float.html">tıklayınız.</a></p>
-<p>![float_eksimargin_icice][]</p>
+<p><img alt="float_eksimargin_icice" src="http://www.fatihhayrioglu.com/wp-content/float_eksimargin_icice.gif" title="float_eksimargin_icice" /></p>
 <p>Birinci kutu içerisinde sağa hizalanmış ikinci kutuyu sağa doğru birinci
 kutu dışarısına çıkararak bir çok uygulamada işimizie yaracaktır.</p>
 <p>[sourcecode language="css" highlight="14"] #kutu1 { float:left; width:
 200px; height: 100px; border: 2px solid #659ad8;
 background-color:#e5ecf9; } #kutu2 { float:right; width: 80px; height:
 80px; border: 2px solid #cd8a93; background-color:#ffb4bf; margin:10px
--50px 0 0 } * html #kutu2{ position:relative; } [/sourcecode]</p>
+-50px 0 0 } * html #kutu2{ position:relative; } </p>
 <p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_icice_float2.html">tıklayınız.</a></p>
-<p>![float_eksimargin_icice2][]</p>
+<p><img alt="float_eksimargin_icice2" src="http://www.fatihhayrioglu.com/wp-content/float_eksimargin_icice2.gif" title="float_eksimargin_icice2" /></p>
 <p>Bir başka uygulama şeklide</p>
 <p>Bir içerik ve başlığı normal şekilde normal akış içerisinde iken</p>
-<p>[sourcecode language="css"] #kutu1 { float:left; border: 2px solid
-#659ad8; background-color:#e5ecf9; padding:0 20px } #kutu1 h2{
-border: 2px solid #cd8a93; background-color:#ffb4bf; } [/sourcecode]
-[sourcecode language="html"] \&lt;div id="kutu1"> \&lt;h2>Donec id ultricies
-mi.\&lt;/h2> \&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<div class="codehilite"><pre> <span class="nf">#kutu1</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="m">2px</span> <span class="k">solid</span>
+</pre></div>
+
+
+<h1>659ad8; background-color:#e5ecf9; padding:0 20px } #kutu1 h2{</h1>
+<p>border: 2px solid #cd8a93; background-color:#ffb4bf; } 
+    :::html
+     <div id="kutu1"> <h2>Donec id ultricies
+mi.</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Morbi porttitor vehicula nisl, et tincidunt sapien venenatis quis. ..
-felis.\&lt;/p> \&lt;/div> [/sourcecode]</p>
+felis.</p> </div> </p>
 <p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_icice_float3.html">tıklayınız.</a></p>
-<p>![float_eksimargin_icice3][]</p>
+<p><img alt="float_eksimargin_icice3" src="http://www.fatihhayrioglu.com/wp-content/float_eksimargin_icice3.gif" title="float_eksimargin_icice3" /></p>
 <p>Ancak buradaki başlığı kutu dışına alarak farklı bir görünüm elde
 edebiliriz.</p>
-<p>[sourcecode language="css" highlight="4"] #kutu1 h2{ border: 2px solid
-#cd8a93; background-color:#ffb4bf; margin-top:-20px } [/sourcecode]</p>
+<p>[sourcecode language="css" highlight="4"] #kutu1 h2{ border: 2px solid</p>
+<h1>cd8a93; background-color:#ffb4bf; margin-top:-20px }</h1>
 <p>Örnke kodu görmek için <a href="static/dokumanlar/eksi_deger_icice_float4.html">tıklayınız.</a></p>
-<p>![float_eksimargin_icice4][]</p>
+<p><img alt="float_eksimargin_icice4" src="http://www.fatihhayrioglu.com/wp-content/float_eksimargin_icice4.gif" title="float_eksimargin_icice4" /></p>
 <p>ve tabi ie 6 için</p>
-<p>[sourcecode language="css"] * html #kutu1 h2{ position:relative;
-height:1px } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">*</span> <span class="nt">html</span> <span class="nf">#kutu1</span> <span class="nt">h2</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span><span class="k">relative</span><span class="p">;</span>
+</pre></div>
+
+
+<p>height:1px } </p>
 <p><strong>Eksi Margin Uygulamaları</strong></p>
 <ul>
 <li>[Konumlandırma(positioning) kullanılan elementlerin negatif margin
@@ -304,7 +330,7 @@ bir kaçına link verdim. Buradaki bilgiler ışığında daha bir çok
 uygulamamızda eksi margin'i kullanmaya devam edeceğiz.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="static">http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/</a><br />
+<li><a href="http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/">http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/</a><br />
 </li>
 <li><a href="http://www.brunildo.org/test/NegMOutH.html">http://www.brunildo.org/test/NegMOutH.html</a><br />
 </li>
@@ -314,10 +340,10 @@ uygulamamızda eksi margin'i kullanmaya devam edeceğiz.</p>
 </li>
 <li><a href="http://www.alistapart.com/articles/negativemargins/">http://www.alistapart.com/articles/negativemargins/</a> (Uygulama)<br />
 </li>
-<li><a href="static">http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/</a>
+<li><a href="http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/">http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/</a>
     (ayrıntılı bilgi)<br />
 </li>
-<li><a href="static">http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm</a>
+<li><a href="http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm">http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm</a>
     (karşı çıkış)<br />
 </li>
 <li><a href="http://haslayout.net/css/negmargin">http://haslayout.net/css/negmargin</a> (hata bilgisi)<br />
@@ -327,7 +353,7 @@ uygulamamızda eksi margin'i kullanmaya devam edeceğiz.</p>
 <li><a href="http://www.simplebits.com/notebook/2005/05/23/negative.html">http://www.simplebits.com/notebook/2005/05/23/negative.html</a>
     (negatif margin kullanılcak bir örnek)<br />
 </li>
-<li><a href="static">http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra</a>
+<li><a href="http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra">http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra</a>
     (negatif margin ile sayfa yapısı oluşturma)<br />
 </li>
 <li><a href="http://haslayout.net/css/Negative-Margin-Bug">http://haslayout.net/css/Negative-Margin-Bug</a> (negatif margin
@@ -336,11 +362,7 @@ uygulamamızda eksi margin'i kullanmaya devam edeceğiz.</p>
 </p>
 
 <p>[Konumlandırma(positioning) kullanılan elementlerin negatif margin ile
-  ortalanması]: http://www.fatihhayrioglu.com/css-ile-sayfalarimizi-ve-elementlerimizi-ortalamak/
-    http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/
-    http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/
-    http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm
-    http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra</p><p>There are <a href=".././eksi-margin-kullanimi/#disqus_thread">comments</a>.</p>
+  ortalanması]: http://www.fatihhayrioglu.com/css-ile-sayfalarimizi-ve-elementlerimizi-ortalamak/</p><p>There are <a href=".././eksi-margin-kullanimi/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -712,8 +734,12 @@ kenarlık atanmış ...</p>
 güzel imkanlar sağlar. Bir genel float elementinin sağ üstüne bir float
 element yerleştirelim. Bu kodlama genelde menü ve resim ekleme gibi
 durumlar için kullanılır. <!--more--></p>
-<p>[sourcecode language="css"] #icerikAlani { margin: 10px; border: 1px
-solid gray; } #icerikAlani #menu { float: right; width: 150px ...</p>
+<div class="codehilite"><pre> <span class="nf">#icerikAlani</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span>
+</pre></div>
+
+
+<p>solid gray; } #icerikAlani #menu { float: right; width: 150px;
+border-left: 1px solid ...</p>
                 <a class="readmore" href=".././icice-float-elementlerinin-kullanimi/">read more</a>
                 <p>There are <a href=".././icice-float-elementlerinin-kullanimi/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

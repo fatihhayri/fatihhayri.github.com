@@ -99,8 +99,8 @@ CSS2.1 standartlarına göre yazılmıştır.</p>
 </ul>
 <p>Burada standart bir özellik tanımı kullanılacaktır.</p>
 <div class="cssozelliktanimi">
-**Yapısı :** özellik\_ismi: \<deger\>  
-**Aldığı Değerler :** alınan\_deger1 | alınan\_deger2 {1,4}\*   
+**Yapısı :** özellik_ismi: <deger>  
+**Aldığı Değerler :** alınan_deger1 | alınan_deger2 {1,4}*   
 **Başlangıç değeri:** Özelliğin atama yapılmadığı zaman ki değeri   
 **Uygulanabilen elementler:** özelliğin uygulanacağı elementlerin
 isimleri   
@@ -109,10 +109,15 @@ isimleri
 
 </div>
 
-<p>* Bu işaretin anlamı bu özelliğin 1'den 4'e kadar değer alabileceğini
+<ul>
+<li>
+<p>Bu işaretin anlamı bu özelliğin 1'den 4'e kadar değer alabileceğini
 gösterir. Örneğin:</p>
-<p>[sourcecode language="css"] p.deneme { border-style: solid dashed dotted
-solid; } [/sourcecode]</p>
+<p>:::css
+ p.deneme { border-style: solid dashed dotted
+solid; } </p>
+</li>
+</ul>
 <h4>CSS - Zemin(BACKGROUND) Özellikleri</h4>
 <p><img alt="Kutu Modeli" src="http://fatihhayrioglu.com/images/basit_boxmodel.gif" /></p>
 <p>Zemin(Bacground) yukarıdaki resimde padding alanı ve içerik
@@ -131,13 +136,16 @@ yapılabilir.</p>
 </ul>
 <h3>background-color</h3>
 <p>Elementlerin zeminine bir renk atamak için kullanılır.</p>
-<p><strong>Yapısı :</strong> background-color: \&lt;deger><br />
+<p><strong>Yapısı :</strong> background-color: <deger><br />
 <strong>Aldığı Değerler :</strong> <a href="http://www.fatihhayrioglu.com/?p=95">renk</a> | transparent<br />
 <strong>Başlangıç değeri:</strong> transparent<br />
 <strong>Uygulanabilen elementler:</strong> tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>Örnek:</strong></p>
-<p>[sourcecode language="css"] p { background-color: #ddd; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#ddd</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
 W3C's CSS Level 1+
@@ -146,14 +154,17 @@ W3C's CSS Level 1+
 
 <h3>background-image</h3>
 <p>Elementlerin zeminine resim eklemek için kullanılır.</p>
-<p><strong>Yapısı :</strong> background-image: \&lt;deger><br />
+<p><strong>Yapısı :</strong> background-image: <deger><br />
 <strong>Aldığı Değerler :</strong> <a href="http://www.fatihhayrioglu.com/?p=95">url</a> | none <br />
 <strong>Başlangıç değeri:</strong> none <br />
 <strong>Uygulanabilen elementler:</strong> tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>Örnek:</strong></p>
-<p>[sourcecode language="css"] body { background-image:
-url(/images/deneme.gif) } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">background-image</span><span class="o">:</span>
+</pre></div>
+
+
+<p>url(/images/deneme.gif) } </p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
 W3C's CSS Level 1+
@@ -163,14 +174,17 @@ W3C's CSS Level 1+
 <h3>background-repeat</h3>
 <p><strong>background-repeat</strong> özelliği <strong>background-image</strong> ile zemine eklenen
 resmin tekrarı ile özellikleri belirler.</p>
-<p><strong>Yapısı :</strong> background-image: \&lt;deger><br />
+<p><strong>Yapısı :</strong> background-image: <deger><br />
 <strong>Aldığı Değerler :</strong> repeat | repeat-x | repeat-y | no-repeat <br />
 <strong>Başlangıç değeri:</strong> repeat <br />
 <strong>Uygulanabilen elementler:</strong> tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>Örnek:</strong></p>
-<p>[sourcecode language="css"] body { background: white url(deneme.gif);
-background-repeat: repeat-x; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">white</span> <span class="sx">url(deneme.gif)</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background-repeat: repeat-x; } </p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
 W3C's CSS Level 1+
@@ -180,14 +194,17 @@ W3C's CSS Level 1+
 <h3>background-attachment</h3>
 <p><strong>background-attachment</strong> özelliği zemine eklenen resmin sayfa ile
 scroll etmesini veya sayfanın zeminin de çakılı kalmasını sağlar.</p>
-<p><strong>Yapısı :</strong> background-attachment: \&lt;deger><br />
+<p><strong>Yapısı :</strong> background-attachment: <deger><br />
 <strong>Aldığı Değerler :</strong> scroll | fixed <br />
 <strong>Başlangıç değeri:</strong> scroll <br />
 <strong>Uygulanabilen elementler:</strong> tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>Örnek:</strong></p>
-<p>[sourcecode language="css"] body { background: white url(deneme.gif);
-background-attachment: fixed; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">white</span> <span class="sx">url(deneme.gif)</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background-attachment: fixed; } </p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
 W3C's CSS Level 1+
@@ -200,8 +217,8 @@ resmin başlangıç noktasını belirler. Bu özellik sadece <a href="#">block-l
 ve replaced(Bu elementler kendine özgü boyutları olan elementler olarak
 tanımlanabilir. Örn: <strong>IMG</strong>, <strong>INPUT</strong>, <strong>TEXTAREA</strong>, <strong>SELECT</strong>, ve
 <strong>OBJECT</strong>) elementlere uygulanır.</p>
-<p><strong>Yapısı :</strong> background-position: \&lt;deger><br />
-<strong>Aldığı Değerler :</strong> [<a href="http://www.fatihhayrioglu.com/?p=95">\&lt;percentage></a> | <a href="http://www.fatihhayrioglu.com/?p=95">\&lt;length></a>]{1,2}
+<p><strong>Yapısı :</strong> background-position: <deger><br />
+<strong>Aldığı Değerler :</strong> [<a href="http://www.fatihhayrioglu.com/?p=95"><percentage></a> | <a href="http://www.fatihhayrioglu.com/?p=95"><length></a>]{1,2}
 | [top | center | bottom] || [left | center | right]<br />
 <strong>Başlangıç değeri:</strong> 0% 0% <br />
 <strong>Uygulanabilen elementler:</strong> <a href="http://www.fatihhayrioglu.com/?p=95">Block-level ve replaced
@@ -235,9 +252,11 @@ edilecektir. Yüzde değerler ve uzunluk değerleri eksi değerler alabilir.
 <li><strong>bottom right</strong> = <strong>right bottom</strong> = <strong>100% 100%</strong></li>
 </ul>
 <p><strong>Örnek:</strong></p>
-<p>[sourcecode language="css"] body { background-image: url(deneme.gif);
-background-repeat: no-repeat; background-position: center; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(deneme.gif)</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background-repeat: no-repeat; background-position: center; }</p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
 W3C's CSS Level 1+
@@ -247,18 +266,21 @@ W3C's CSS Level 1+
 <h3>background</h3>
 <p>Bu özellik Zemin(background) ile ilgili tüm özelliklerin bir arada
 kullanımı sağlar.</p>
-<p><strong>Yapısı :</strong> background: \&lt;deger><br />
-<strong>Aldığı Değerler :</strong> <background-color>\&lt;background-color> ||
-\&lt;background-image> || \&lt;background-repeat> ||
-\&lt;background-attachment> || \&lt;background-position> <br />
+<p><strong>Yapısı :</strong> background: <deger><br />
+<strong>Aldığı Değerler :</strong> <background-color><background-color> ||
+<background-image> || <background-repeat> ||
+<background-attachment> || <background-position> <br />
 <strong>Başlangıç değeri:</strong> Tanımsız <br />
 <strong>Uygulanabilen elementler:</strong> tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>Örnek:</strong></p>
-<p>[sourcecode language="css"] body{ background: white url(deneme.gif) }
-blockquote { background: #f00 } p { background:
+<div class="codehilite"><pre> <span class="nt">body</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">white</span> <span class="sx">url(deneme.gif)</span> <span class="p">}</span>
+</pre></div>
+
+
+<p>blockquote { background: #f00 } p { background:
 url(../images/deneme.png) #f00 fixed } table{ background: #0c0
-url(deneme.jpg) no-repeat bottom right } [/sourcecode]</p>
+url(deneme.jpg) no-repeat bottom right } </p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
 W3C's CSS Level 1+

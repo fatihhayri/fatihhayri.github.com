@@ -101,8 +101,8 @@ bindiğinde z-index değerine ihtiyaç duyarız. z-index mutlak, göreceli ve
 sabit konumlandırma atandığı veya elemente eksi değer verilerek konumu
 değiştirildiğinde uygulanır.</p>
 <p><img alt="" src="../static/images/z-ekseni.gif" /></p>
-<p><strong>Yapısı:z-index: \&lt;deger><br />
-Aldığı Değerler:\&lt;<a href="http://www.fatihhayrioglu.com/?p=95">sayısal değer</a> > | auto | inherit<br />
+<p><strong>Yapısı:z-index: <deger><br />
+Aldığı Değerler:&lt;<a href="http://www.fatihhayrioglu.com/?p=95">sayısal değer</a> &gt; | auto | inherit<br />
 Başlangıç değeri:auto<br />
 Uygulanabilen elementler:postion uygulanan elementlere<br />
 Kalıtsallık:Yok</strong></p>
@@ -120,18 +120,23 @@ CSS Profile 2.0
 
 <p>Konumlandırma değeri relative, absolute ve fixed uygulanmış katmanların
 görünürlüğünü z-index ile ayarlayabiliriz.</p>
-<p>[sourcecode language="css"] div{ position:absolute; width:150px;
-height:150px; } div.bir { background: #FEB3BE; border:2px solid
-#CC8B94; top: 0; left: 0; } div.iki { background: #E5ECF9; border:2px
-solid #BCCCEB; top: 10px; left: 10px; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">div</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>height:150px; } div.bir { background: #FEB3BE; border:2px solid</p>
+<h1>CC8B94; top: 0; left: 0; } div.iki { background: #E5ECF9; border:2px</h1>
+<p>solid #BCCCEB; top: 10px; left: 10px; } </p>
 <p>Yukarıda örnekte görüldüğü gibi katmanlar üst üste sıralanmıştır.
 Birbirinden 10px üst ve 10px soldan mesafe bırakılmıştır. Üstte kalan
 katman alttakileri gizlemiştir. Tüm katmanların z-index değeri
 atanmamıştır bu nedenle başlangıç değeri olan z-index:auto değerini
 almışlardır.</p>
-<p>[sourcecode language="css"] \&lt;body> \&lt;div class='kapsul'> \&lt;div
-class='bir'>\&lt;/div> \&lt;div class='iki'>\&lt;/div> \&lt;/div> \&lt;/body>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">body</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s1">&#39;kapsul&#39;</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nt">div</span>
+</pre></div>
+
+
+<p>class='bir'&gt;</div> <div class='iki'></div> </div> </body></p>
 <p>z-index değeri otomatik olduğu için her katman html'deki sırasına göre
 yerleşmiştir. İlk başta yazılmış olanlar altta sonrakiler üstte olacak
 şekilde sıralanmıştır.</p>
@@ -149,9 +154,8 @@ z-index değerini 2 versek. Mavi katmanın z-index değerini 1 verirsek
 katman görünümünü tersine dönecektir.</p>
 <p>[sourcecode language="css" highlight="11,18"] div{ position:absolute;
 width:150px; height:150px; } div.bir { background: #FEB3BE; border:2px
-solid #CC8B94; top: 0; left: 0; z-index:2 } div.iki { background:
-#E5ECF9; border:2px solid #BCCCEB; top: 10px; left: 10px; z-index:1 }
-[/sourcecode]</p>
+solid #CC8B94; top: 0; left: 0; z-index:2 } div.iki { background:</p>
+<h1>E5ECF9; border:2px solid #BCCCEB; top: 10px; left: 10px; z-index:1 }</h1>
 <div align="center">
 ![][2]
 
@@ -160,9 +164,11 @@ solid #CC8B94; top: 0; left: 0; z-index:2 } div.iki { background:
 <p>İçiçe girmiş katmanlarda z-index davranışları farklıdır. İçiçe geçmiş
 katmanlardaki z-index:auto değeri gibi davranır ve sayısal atamaları
 dikkate almaz.</p>
-<p>[sourcecode language="html"] \&lt;body> \&lt;div class='kapsul'> \&lt;div
-class='bir'>\&lt;div class='iki'>\&lt;/div>\&lt;/div> \&lt;/div> \&lt;/body>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;body&gt;</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;kapsul&#39;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span>
+</pre></div>
+
+
+<p>class='bir'&gt;<div class='iki'></div></div> </div> </body></p>
 <p>z-index değeri yüksek olmasına rağmen bir sınıfını alan katmana altta
 kalacaktır. Çünkü iç içe geçmiş elementlerde z-index'e atanan sayısal
 değerler geçersizdir. Sıralama z-index:auto ya göre yapılır.</p>
@@ -215,12 +221,12 @@ listeledik bu linklerdeki çözümleri incelemenizi tavsiye ederiz. Karşıma
 <ul>
 <li><a href="http://www.search-this.com/2007/08/15/give-me-some-zzzzzs/">http://www.search-this.com/2007/08/15/give-me-some-zzzzzs/</a></li>
 <li><a href="http://www.brainjar.com/css/positioning/default5.asp">http://www.brainjar.com/css/positioning/default5.asp</a></li>
-<li><a href="../static">http://joshuaink2006.johnoxton.co.uk/blog/82/flash-content-and-z-index</a>
+<li><a href="http://joshuaink2006.johnoxton.co.uk/blog/82/flash-content-and-z-index">http://joshuaink2006.johnoxton.co.uk/blog/82/flash-content-and-z-index</a>
     (flash ve html elemtnleri)</li>
-<li><a href="../static">http://www.blooberry.com/indexdot/css/properties/position/zindex.htm</a>
+<li><a href="http://www.blooberry.com/indexdot/css/properties/position/zindex.htm">http://www.blooberry.com/indexdot/css/properties/position/zindex.htm</a>
     (tarayıcı destek)</li>
-<li>[http://www.westciv.com/style_master/academy/css_tutorial/properties/page_layout.html#z-index][]</li>
-<li>[http://developer.mozilla.org/en/docs/Understanding_CSS_z-index][]</li>
+<li><a href="http://www.westciv.com/style_master/academy/css_tutorial/properties/page_layout.html#z-index">http://www.westciv.com/style_master/academy/css_tutorial/properties/page_layout.html#z-index</a></li>
+<li><a href="http://developer.mozilla.org/en/docs/Understanding_CSS_z-index">http://developer.mozilla.org/en/docs/Understanding_CSS_z-index</a></li>
 <li><a href="http://css-discuss.incutio.com/?page=OverlappingAndZIndex">http://css-discuss.incutio.com/?page=OverlappingAndZIndex</a></li>
 <li><a href="http://csscreator.com/blog/z-index">http://csscreator.com/blog/z-index</a></li>
 <li><a href="http://www.fatihhayrioglu.com/?p=151">http://www.fatihhayrioglu.com/?p=151</a></li>
@@ -231,21 +237,14 @@ listeledik bu linklerdeki çözümleri incelemenizi tavsiye ederiz. Karşıma
 <h6>Sorunlar ve çözümler</h6>
 <ul>
 <li><a href="http://brandonaaron.net/docs/bgiframe/">http://brandonaaron.net/docs/bgiframe/</a></li>
-<li><a href="../static">http://www.askapache.com/css/getting-flash-to-show-up-in-front-of-content.html</a></li>
+<li><a href="http://www.askapache.com/css/getting-flash-to-show-up-in-front-of-content.html">http://www.askapache.com/css/getting-flash-to-show-up-in-front-of-content.html</a></li>
 <li><a href="http://www.last-child.com/conflicting-z-index-in-ie6/">http://www.last-child.com/conflicting-z-index-in-ie6/</a></li>
 <li><a href="http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html">http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html</a></li>
 <li><a href="http://www.hedgerwow.com/360/bugs/css-select-free.html">http://www.hedgerwow.com/360/bugs/css-select-free.html</a></li>
 <li><a href="http://blogs.msdn.com/ie/archive/2006/01/17/514076.aspx">http://blogs.msdn.com/ie/archive/2006/01/17/514076.aspx</a></li>
-<li>[http://randsco.com/index.php/2005/09/11/changing_z_index_on_hover][]</li>
+<li><a href="http://randsco.com/index.php/2005/09/11/changing_z_index_on_hover">http://randsco.com/index.php/2005/09/11/changing_z_index_on_hover</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">joshuaink2006</span><span class="p">.</span><span class="n">johnoxton</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>82<span class="o">/</span><span class="n">flash</span><span class="o">-</span><span class="n">content</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">z</span><span class="o">-</span><span class="n">index</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">blooberry</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">indexdot</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="k">properties</span><span class="o">/</span><span class="n">position</span><span class="o">/</span><span class="n">zindex</span><span class="p">.</span><span class="n">htm</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">westciv</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">style_master</span><span class="o">/</span><span class="n">academy</span><span class="o">/</span><span class="n">css_tutorial</span><span class="o">/</span><span class="k">properties</span><span class="o">/</span><span class="n">page_layout</span><span class="p">.</span><span class="n">html</span>#<span class="n">z</span><span class="o">-</span><span class="n">index</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">askapache</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">getting</span><span class="o">-</span><span class="n">flash</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">show</span><span class="o">-</span><span class="n">up</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">front</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">content</span><span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">randsco</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">index</span><span class="p">.</span><span class="n">php</span><span class="o">/</span>2005<span class="o">/</span>09<span class="o">/</span>11<span class="o">/</span><span class="n">changing_z_index_on_hover</span>
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

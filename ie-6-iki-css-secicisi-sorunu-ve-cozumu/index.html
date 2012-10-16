@@ -96,12 +96,15 @@ sonra farklı bölümler için bu elemena farklı resimler atamam
 gerektiğinde aynı elemana .bolumA, .bolumB, vd. gibi sınıflar atadım.
 Bir bölümü olmayan sayfalarda ana resmimi görünecek bölümü olan
 sayfalarda ise ilgili resim görünecekti. </p>
-<p>[sourcecode language="css"] #tanitimAlani{ background:transparent
-url(../images/genel.jpg) no-repeat scroll center top; text-align:center;
+<div class="codehilite"><pre> <span class="nf">#tanitimAlani</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="k">transparent</span>
+</pre></div>
+
+
+<p>url(../images/genel.jpg) no-repeat scroll center top; text-align:center;
 width:100%; } #tanitimAlani.bolumA { background:transparent
-url(../images/bolumA.jpg) no-repeat scroll center top; }
-#tanitimAlani.bolumB { background:transparent url(../images/bolumB.jpg)
-no-repeat scroll center top; } [/sourcecode]</p>
+url(../images/bolumA.jpg) no-repeat scroll center top; }</p>
+<h1>tanitimAlani.bolumB { background:transparent url(../images/bolumB.jpg)</h1>
+<p>no-repeat scroll center top; } </p>
 <p>Tanımı ile yapıyordum. Bu düşüncem tüm tarayıcılarda sorunsuz çalışırken
 ie6 sorun çıkardı. İlk atanan genel resmini gösterdi sadece, bölüm
 resimlerini göstermedi.</p>
@@ -109,28 +112,26 @@ resimlerini göstermedi.</p>
 <p>id ile atadığım genel ardalan resmi tanımı kaldırıp genel içinde bir
 sınıf(.bolumGenel) tanımladım ve bu sorunu aştım. Yani kodumu şöyle
 değiştirdim.</p>
-<p>[sourcecode language="css"] #tanitimalani{ text-align:center;
-width:100%; } .bolumA { background:transparent url(../images/bolumA.jpg)
+<div class="codehilite"><pre> <span class="nf">#tanitimalani</span><span class="p">{</span> <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+</pre></div>
+
+
+<p>width:100%; } .bolumA { background:transparent url(../images/bolumA.jpg)
 no-repeat scroll center top; } .bolumB { background:transparent
 url(../images/bolumB.jpg) no-repeat scroll center top; } .bolumGenel {
 background:transparent url(../images/genel.jpg) no-repeat scroll center
-top; } [/sourcecode]</p>
+top; } </p>
 <p>hribar.info'nun yaptığı örnek güzel inceleyin.</p>
-<p>[http://hribar.info/static/projects/multi-class_ie6_bug/error.html][]</p>
+<p><a href="http://hribar.info/static/projects/multi-class_ie6_bug/error.html">http://hribar.info/static/projects/multi-class_ie6_bug/error.html</a></p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://paulirish.com/2008/the-two-css-selector-bugs-in-ie6/" title="http://paulirish.com/2008/the-two-css-selector-bugs-in-ie6/">http://paulirish.com/2008/the-two-css-selector-bugs-in-ie6/</a></li>
-<li><a href="../static">http://blog.solutionset.com/wpmu/2008/02/15/internet-explorer-id-class-bug/</a></li>
+<li><a href="http://blog.solutionset.com/wpmu/2008/02/15/internet-explorer-id-class-bug/" title="http://blog.solutionset.com/wpmu/2008/02/15/internet-explorer-id-class-bug/">http://blog.solutionset.com/wpmu/2008/02/15/internet-explorer-id-class-bug/</a></li>
 <li><a href="http://hribar.info/en/archive/80/entrie.html" title="http://hribar.info/en/archive/80/entrie.html">http://hribar.info/en/archive/80/entrie.html</a></li>
 <li><a href="http://www.ryanbrill.com/archives/multiple-classes-in-ie/" title="http://www.ryanbrill.com/archives/multiple-classes-in-ie/">http://www.ryanbrill.com/archives/multiple-classes-in-ie/</a></li>
 <li><a href="http://sonspring.com/journal/ie6-multi-class-bug" title="http://sonspring.com/journal/ie6-multi-class-bug">http://sonspring.com/journal/ie6-multi-class-bug</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">hribar</span><span class="p">.</span><span class="n">info</span><span class="o">/</span><span class="n">static</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">multi</span><span class="o">-</span><span class="n">class_ie6_bug</span><span class="o">/</span><span class="n">error</span><span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">solutionset</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">wpmu</span><span class="o">/</span>2008<span class="o">/</span>02<span class="o">/</span>15<span class="o">/</span><span class="n">internet</span><span class="o">-</span><span class="n">explorer</span><span class="o">-</span><span class="n">id</span><span class="o">-</span><span class="n">class</span><span class="o">-</span><span class="n">bug</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">solutionset</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">wpmu</span><span class="o">/</span>2008<span class="o">/</span>02<span class="o">/</span>15<span class="o">/</span><span class="n">internet</span><span class="o">-</span><span class="n">explorer</span><span class="o">-</span><span class="n">id</span><span class="o">-</span><span class="n">class</span><span class="o">-</span><span class="n">bug</span><span class="o">/</span>&quot;
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

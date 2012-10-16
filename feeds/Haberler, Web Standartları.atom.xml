@@ -45,8 +45,11 @@ Explorer'ın PNG desteğini 7. sürümüne kadar desteklememesidir. Tabi web
 kodlayıcıları Internet Explorer'ı beklemeden bazı düzeltme kodları
 üretti. Internet Explorer'ın desteklediği &lt;strong&gt;filter&lt;/strong&gt;'ın
 &lt;strong&gt;AlphaImageLoader&lt;/strong&gt; özelliği sayesinde saydam PNG desteği sağlanmıştır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] img { filter:
-progid:DXImageTransform.Microsoft.AlphaImageLoader(...); } [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;progid:DXImageTransform.Microsoft.AlphaImageLoader(...); } &lt;/p&gt;
 &lt;p&gt;Bu kod problemimizi çözdü, ancak tümünü değil.&lt;/p&gt;
 &lt;h3&gt;Saydam PNG düzeltmesi ile ilgili sorunlar&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;W3C ve Diğer farklı tarayıcı desteğinin olmayışı.&lt;/strong&gt;&lt;/p&gt;
@@ -75,19 +78,20 @@ karşılaştığım tüm sorunların üstesinden bu yöntem geldi. Siz kaynaklar
 kısmındaki linkleri takip ederek farklı yöntemleri uygulayabilirisiniz.&lt;/p&gt;
 &lt;p&gt;İlk olarak bir saydam PNG resmini sitemize ekleyelim. Benim logomun bir
 gif birde png halini hazırlayıp saydam PNG'nin gözle görülür faydasını
-anlayalım. [sourcecode language="html"] \&amp;lt;!DOCTYPE html PUBLIC
+anlayalım.  :::html
+     &amp;lt;!DOCTYPE html PUBLIC
 "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; \&amp;lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; \&amp;lt;head&gt; \&amp;lt;meta
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
+xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-\&amp;lt;title&gt;Saydam PNG\&amp;lt;/title&gt; \&amp;lt;style&gt; .kutu{
+&lt;title&gt;Saydam PNG&lt;/title&gt; &lt;style&gt; .kutu{
 background:url(images/ardalan.gif) top left no-repeat; height:80px;
-padding:10px } \&amp;lt;/style&gt; \&amp;lt;/head&gt; \&amp;lt;body&gt; \&amp;lt;div class="kutu"&gt;\&amp;lt;img
+padding:10px } &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="kutu"&gt;&lt;img
 src="images/fatihhayri_logo.gif" alt="Logo" width="166" height="82"
-/&gt;\&amp;lt;/div&gt; \&amp;lt;p&gt;fatihhayri_logo.gif uygulaması\&amp;lt;/p&gt; \&amp;lt;div
-class="kutu"&gt;\&amp;lt;img src="images/fatihhayri_logo.png" alt="Logo"
-width="166" height="82" /&gt;\&amp;lt;/div&gt; \&amp;lt;p&gt;fatihhayri_logo.png
-uygulaması\&amp;lt;/p&gt; \&amp;lt;/body&gt; \&amp;lt;/html&gt; [/sourcecode]&lt;/p&gt;
+/&gt;&lt;/div&gt; &lt;p&gt;fatihhayri_logo.gif uygulaması&lt;/p&gt; &lt;div
+class="kutu"&gt;&lt;img src="images/fatihhayri_logo.png" alt="Logo"
+width="166" height="82" /&gt;&lt;/div&gt; &lt;p&gt;fatihhayri_logo.png
+uygulaması&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Örnek sayfayı görmek için &lt;a href="/dokumanlar/resim_ekle.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Saydam PNG resim" src="/images/saydampng_resim.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Yukarıdaki örnek görüldüğü gibi logonun kenarlarındaki geçiş kısmında
@@ -100,12 +104,12 @@ Bunun anlamı bu tarayıcının saydam PNG desteğinin olmadığıdır. Bu sorun
 gidermek için yukarıda bahsettiğimiz İnternet Explorer 6'nın
 desteklediği &lt;strong&gt;filter&lt;/strong&gt; tekniği uygulayacağız. [sourcecode
 language="javascript" highlight="4"] function fixpngs(){ var l =
-document.getElementsByTagName('img'); for(i=0;i\&amp;lt;l.length;i++){ p =
+document.getElementsByTagName('img'); for(i=0;i&amp;lt;l.length;i++){ p =
 'images/0.gif'; n = l[i].getAttribute('src'); g = n.toLowerCase();
 if(g.substring(g.length-3)=="png"){ l[i].setAttribute('src',p);
 l[i].style.cssText="filter:
 progid:DXImageTransform.Microsoft.AlphaImageLoader (src='"+n+"')"; } } }
-window.onload = fixpngs; [/sourcecode]&lt;/p&gt;
+window.onload = fixpngs; &lt;/p&gt;
 &lt;p&gt;Yukarıdaki js dosyasını incelersek. Sayfadaki tüm resimleri tarayıp png
 uzantılı olanları bulup IE'nin göstereceği stil özelliklerini bu png'ye
 atayacaktır. Birde burada bize saydam 1x1 saydam gif resmi gerekecektir.
@@ -118,21 +122,22 @@ saydam PNG ve sayfa yüklendiğinde görünür olmaya(display:none) sonradan
 görünen alanlardaki saydam PNG ile yaşadığım sorunları bu kodun
 çözmesidir.&lt;/p&gt;
 &lt;p&gt;Yukarıdaki kodu sayfamıza sadece IE7 öncesi görecek şekilde eklersek
-[sourcecode language="html"] \&amp;lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
+    :::html
+     &amp;lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; \&amp;lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; \&amp;lt;head&gt; \&amp;lt;meta
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
+xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-\&amp;lt;title&gt;Saydam PNG\&amp;lt;/title&gt; \&amp;lt;style&gt; .kutu{
+&lt;title&gt;Saydam PNG&lt;/title&gt; &lt;style&gt; .kutu{
 background:url(images/ardalan.gif) top left no-repeat; height:80px;
-padding:10px } \&amp;lt;/style&gt; \&amp;lt;!--[if lt IE 7]&gt; \&amp;lt;script
-type="text/javascript" src="pngDuzenlemeKodu.js"&gt;\&amp;lt;/script&gt;
-\&amp;lt;![endif]--&gt; \&amp;lt;/head&gt; \&amp;lt;body&gt; \&amp;lt;div class="kutu"&gt;\&amp;lt;img
+padding:10px } &lt;/style&gt; &lt;!--[if lt IE 7]&gt; &lt;script
+type="text/javascript" src="pngDuzenlemeKodu.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="kutu"&gt;&lt;img
 src="images/fatihhayri_logo.gif" alt="Logo" width="166" height="82"
-/&gt;\&amp;lt;/div&gt; \&amp;lt;p&gt;fatihhayri_logo.gif uygulaması\&amp;lt;/p&gt; \&amp;lt;div
-class="kutu"&gt;\&amp;lt;img src="images/fatihhayri_logo.png" alt="Logo"
-width="166" height="82" /&gt;\&amp;lt;/div&gt; \&amp;lt;p&gt;fatihhayri_logo.png
-uygulaması\&amp;lt;/p&gt; \&amp;lt;/body&gt; \&amp;lt;/html&gt; [/sourcecode]&lt;/p&gt;
+/&gt;&lt;/div&gt; &lt;p&gt;fatihhayri_logo.gif uygulaması&lt;/p&gt; &lt;div
+class="kutu"&gt;&lt;img src="images/fatihhayri_logo.png" alt="Logo"
+width="166" height="82" /&gt;&lt;/div&gt; &lt;p&gt;fatihhayri_logo.png
+uygulaması&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/resim_ekle2.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="saydam png ie6" src="/images/saydampng_resim2_ie6.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Yukarıdaki ekran görüntüsü Internet Explorer 6'da sayfamızın
@@ -155,29 +160,30 @@ Ardalandaki resmin farklı sayfalarda değişeceğini düşünerek kodlayalım.&
 saydam png olarak kaydettim&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/photoshop_png.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Saydam png kullanımının farklı yönlerini anlatmak için bu bölümü 3 kısma
-ayırdık. Bu şekilde kodumuzu yazarsak: [sourcecode language="html"]
-\&amp;lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; \&amp;lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; \&amp;lt;head&gt; \&amp;lt;meta
+ayırdık. Bu şekilde kodumuzu yazarsak:  :::html&lt;/p&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; &lt;html
+xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-\&amp;lt;title&gt;Saydam PNG\&amp;lt;/title&gt; \&amp;lt;style&gt; #resim{
+&lt;title&gt;Saydam PNG&lt;/title&gt; &lt;style&gt; #resim{
 background:url(images/ardalan_resmi.jpg) top left no-repeat;
 width:400px; padding-top:15px; height:300px; } #icerik{ width:207px;
 margin-left:15px; } #icerikUstu{ background:url(images/icerik_ust.png)
 top left no-repeat; height:10px; } #metinAlani{
 background:url(images/icerik_orta.png) top left repeat-y; font:11px
-Arial, Helvetica, sans-serif; padding:0 10px } \&amp;lt;/style&gt; \&amp;lt;/head&gt;
-\&amp;lt;body&gt; \&amp;lt;div id="resim"&gt; \&amp;lt;div id="icerik"&gt; \&amp;lt;div
-id="icerikUstu"&gt;\&amp;lt;img src="images/0.gif" width="1" height="1"
-/&gt;\&amp;lt;/div&gt; \&amp;lt;div id="metinAlani"&gt; Lorem ipsum dolor sit amet,
+Arial, Helvetica, sans-serif; padding:0 10px } &lt;/style&gt; &lt;/head&gt;
+&lt;body&gt; &lt;div id="resim"&gt; &lt;div id="icerik"&gt; &lt;div
+id="icerikUstu"&gt;&lt;img src="images/0.gif" width="1" height="1"
+/&gt;&lt;/div&gt; &lt;div id="metinAlani"&gt; Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Praesent ultricies orci quis erat. Nulla
 vulputate sapien sit amet elit. Cum sociis natoque penatibus et magnis
 dis parturient montes, nascetur ridiculus mus. Suspendisse sed nunc. In
 at ligula. Class aptent taciti sociosqu ad litora torquent per conubia
 nostra, per inceptos himenaeos. Ut augue. Phasellus scelerisque vehicula
-orci.\&amp;lt;/div&gt; \&amp;lt;div id="icerikAlt"&gt;\&amp;lt;img src="images/icerik_alt.png"
-width="207" height="18" alt=" " /&gt;\&amp;lt;/div&gt; \&amp;lt;/div&gt; \&amp;lt;/div&gt; \&amp;lt;/body&gt;
-\&amp;lt;/html&gt; [/sourcecode]&lt;/p&gt;
+orci.&lt;/div&gt; &lt;div id="icerikAlt"&gt;&lt;img src="images/icerik_alt.png"
+width="207" height="18" alt=" " /&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt;
+&lt;/html&gt;
+
 &lt;p&gt;Örnek sayfayı görmek için &lt;a href="/dokumanlar/ardalan_ekle.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Saydam PNG ardalan olarak kullanımı" src="/images/saydam_ardalan1.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Burada beyaz gölgeli kutumuz dinamik olduğu için içeriğin artması ile
@@ -188,28 +194,33 @@ baktığımızda işin rengi değişecektir.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Saydam PNG ardalan olarak kullanımı" src="/images/saydam_ardalan1_ie.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Yukarıdaki resimde görüldüğü gibi saydam png resimlerinin saydam olan
 kısımları gri bir çerçeve ile kaplanmış gibi görünüyor. Yukarıdaki
-kodumuz ekleyerek bu sorunu halledebiliriz. [sourcecode language="html"]
-\&amp;lt;!--[if lt IE 7]&gt; \&amp;lt;script type="text/javascript"
-src="pngDuzenlemeKodu.js"&gt;\&amp;lt;/script&gt; \&amp;lt;![endif]--&gt; [/sourcecode]&lt;/p&gt;
+kodumuz ekleyerek bu sorunu halledebiliriz.     :::html&lt;/p&gt;
+&lt;!--[if lt IE 7]&gt; &lt;script type="text/javascript"
+src="pngDuzenlemeKodu.js"&gt;&lt;/script&gt; &lt;![endif]--&gt;
+
 &lt;p&gt;Ancak bu kod bize sadece alt kısma eklediğimiz resmi düzeltmeye
 yaracaktır. Orta ve üst kısımların ardalanında kullandığımız saydam png
 doyarının görünümü yine sorun görülecektir.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Saydam PNG ardalan olarak kullanımı" src="/images/saydam_ardalan2_ie.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Peki bunun için bir çözüm yok mu? Elbette var. Yine filter özelliğin
-kullanarak bu işe bir çözüm getireceğiz. [sourcecode language="html"]
-\&amp;lt;!--[if lt IE 7]&gt; \&amp;lt;style&gt; #icerikUstu{ background:transparent;
+kullanarak bu işe bir çözüm getireceğiz.    :::html&lt;/p&gt;
+&lt;!--[if lt IE 7]&gt; &lt;style&gt; #icerikUstu{ background:transparent;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_ust.png',
-sizingMethod='crop'); } \&amp;lt;/style&gt; \&amp;lt;script type="text/javascript"
-src="pngDuzenlemeKodu.js"&gt;\&amp;lt;/script&gt; \&amp;lt;![endif]--&gt; [/sourcecode]&lt;/p&gt;
+sizingMethod='crop'); } &lt;/style&gt; &lt;script type="text/javascript"
+src="pngDuzenlemeKodu.js"&gt;&lt;/script&gt; &lt;![endif]--&gt;
+
 &lt;p&gt;Yukarıdaki kodu sayfamıza eklediğimizde IE6 içeriğin üst kısmına
 uyguladığımız ardalan resmi düzgün görüntülenecektir. Bu koda dikkat
 edersek. daha önce atadığımız ve yeni nesil tarayıcılarda görünen
 background özelliği sıfırlanıyor(&lt;strong&gt;background:none&lt;/strong&gt;) Daha sonra filter
 özelliği uygulanıyor. Burada dikkat etmemiz gerek bir bölüm daha var
 filter özelliğinin iki parametresi var&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"]
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(parametre1,
-parametre2); [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(parametre1,
+parametre2); &lt;/p&gt;
 &lt;p&gt;parametre1 resmin kaynağını göstermek için kullanılır. parametre2 ise
 kullanılan ardalan resminin nasıl şekillendirileceğini gösterir. İki
 değer alır, crop ve scale.&lt;/p&gt;
@@ -218,14 +229,15 @@ değer alır, crop ve scale.&lt;/p&gt;
 background-repeat:repeat-y özelliğine karşılık gelen bir özelliktir.
 Bunun uygulamasını biraz sonra göreceğiz.&lt;/p&gt;
 &lt;p&gt;Gelelim metin girdiğimiz kısmın arkasına uyguladığımız ardalan resmini
-uygulamaya, bunu için: [sourcecode language="html"] \&amp;lt;!--[if lt IE 7]&gt;
-\&amp;lt;style&gt; #icerikUstu{ background:transparent;
+uygulamaya, bunu için:  :::html
+     &lt;!--[if lt IE 7]&gt;
+&lt;style&gt; #icerikUstu{ background:transparent;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_ust.png',
 sizingMethod='crop'); } #metinAlani{ background:transparent;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_orta.png',
-sizingMethod='scale'); height:1%; } \&amp;lt;/style&gt; \&amp;lt;script
-type="text/javascript" src="pngDuzenlemeKodu.js"&gt;\&amp;lt;/script&gt;
-\&amp;lt;![endif]--&gt; [/sourcecode]&lt;/p&gt;
+sizingMethod='scale'); height:1%; } &lt;/style&gt; &lt;script
+type="text/javascript" src="pngDuzenlemeKodu.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt; &lt;/p&gt;
 &lt;p&gt;Örnek sayfayı görmek için &lt;a href="/dokumanlar/ardalan_ekle3.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Saydam PNG ardalan olarak kullanımı" src="/images/saydam_ardalan3_ie.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bir önceki örneğe göre farkımız crop yerine scale uygulamak oldu. Burada
@@ -241,14 +253,14 @@ ve tıkladığımızda ilgili linke gidemiyoruz. Burada link alanı sanki
 gizli bir alana altında kalıyor gibi. Bizde linkleri bu alanın üzerine
 çıkarmalıyız&lt;/p&gt;
 &lt;p&gt;Bu durumu çözmek için:&lt;/p&gt;
-&lt;p&gt;[sourcecode language="html" highlight="12,13,14,15"] \&amp;lt;!--[if lt IE 7]&gt;
-\&amp;lt;style&gt; #icerikUstu{ background:transparent;
+&lt;p&gt;[sourcecode language="html" highlight="12,13,14,15"] &lt;!--[if lt IE 7]&gt;
+&lt;style&gt; #icerikUstu{ background:transparent;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_ust.png',
 sizingMethod='crop'); } #metinAlani{ background:transparent;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_orta.png',
 sizingMethod='scale'); height:1%; } #metinAlani a{ position: relative;
-z-index: 1; } \&amp;lt;/style&gt; \&amp;lt;script type="text/javascript"
-src="pngDuzenlemeKodu.js"&gt;\&amp;lt;/script&gt; \&amp;lt;![endif]--&gt; [/sourcecode]&lt;/p&gt;
+z-index: 1; } &lt;/style&gt; &lt;script type="text/javascript"
+src="pngDuzenlemeKodu.js"&gt;&lt;/script&gt; &lt;![endif]--&gt; &lt;/p&gt;
 &lt;p&gt;Örnek sayfayı görmek için &lt;a href="/dokumanlar/ardalan_ekle4.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Sonuç&lt;/h3&gt;
 &lt;p&gt;Sonuç olarak saydam PNG kullanmak çok güzel ama ie6 ile uğraşmak zor.
@@ -263,7 +275,7 @@ için kullandığım yöntemi sizlerle paylaştım. Muhakkak daha iyi yöntemler
 çıkacaktır, bunlara açığım. Sizlerden öneriler bekliyorum.&lt;/p&gt;
 &lt;h3&gt;Kaynaklar&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=""&gt;http://komodomedia.com/blog/index.php/2007/11/05/css-png-image-fix-for-ie/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://komodomedia.com/blog/index.php/2007/11/05/css-png-image-fix-for-ie/"&gt;http://komodomedia.com/blog/index.php/2007/11/05/css-png-image-fix-for-ie/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://24ways.org/2007/supersleight-transparent-png-in-ie6"&gt;http://24ways.org/2007/supersleight-transparent-png-in-ie6&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.satzansatz.de/cssd/tmp/alphatransparency.html"&gt;http://www.satzansatz.de/cssd/tmp/alphatransparency.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://homepage.ntlworld.com/bobosola/pnginfo.htm"&gt;http://homepage.ntlworld.com/bobosola/pnginfo.htm&lt;/a&gt;&lt;/li&gt;
@@ -271,24 +283,18 @@ için kullandığım yöntemi sizlerle paylaştım. Muhakkak daha iyi yöntemler
 &lt;li&gt;&lt;a href="http://www.twinhelix.com/css/iepngfix/"&gt;http://www.twinhelix.com/css/iepngfix/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://dean.edwards.name/ie7/"&gt;http://dean.edwards.name/ie7/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/"&gt;http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://www.campbellsdigitalsoup.co.uk/2007/11/27/a-new-png-fix-with-jquerys-helping-hand/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://bjorkoy.com/past/2007/4/8/the_easiest_way_to_png/][]&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://blog.creonfx.com/internet-explorer/ie6-png-transparency-css-background-repeat-fix&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://www.digital-web.com/articles/web_standards_creativity_png/][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.campbellsdigitalsoup.co.uk/2007/11/27/a-new-png-fix-with-jquerys-helping-hand/"&gt;http://www.campbellsdigitalsoup.co.uk/2007/11/27/a-new-png-fix-with-jquerys-helping-hand/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://bjorkoy.com/past/2007/4/8/the_easiest_way_to_png/"&gt;http://bjorkoy.com/past/2007/4/8/the_easiest_way_to_png/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.creonfx.com/internet-explorer/ie6-png-transparency-css-background-repeat-fix"&gt;http://blog.creonfx.com/internet-explorer/ie6-png-transparency-css-background-repeat-fix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.digital-web.com/articles/web_standards_creativity_png/"&gt;http://www.digital-web.com/articles/web_standards_creativity_png/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.alistapart.com/stories/pngopacity/"&gt;http://www.alistapart.com/stories/pngopacity/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://www.tigir.com/alpha_png.htm][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tigir.com/alpha_png.htm"&gt;http://www.tigir.com/alpha_png.htm&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://stylizedweb.com/2007/12/30/png-transparency-issues/"&gt;http://stylizedweb.com/2007/12/30/png-transparency-issues/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blogs.pathf.com/agileajax/2008/04/hacking-transpa.html"&gt;http://blogs.pathf.com/agileajax/2008/04/hacking-transpa.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.bluehostforum.com/archive/index.php/t-8396.html"&gt;http://www.bluehostforum.com/archive/index.php/t-8396.html&lt;/a&gt;&lt;br /&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;komodomedia&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2007&lt;span class="o"&gt;/&lt;/span&gt;11&lt;span class="o"&gt;/&lt;/span&gt;05&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;png&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;image&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb"&gt;fix&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ie&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;campbellsdigitalsoup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;co&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;uk&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2007&lt;span class="o"&gt;/&lt;/span&gt;11&lt;span class="o"&gt;/&lt;/span&gt;27&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;png&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb"&gt;fix&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;jquerys&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;helping&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;hand&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;creonfx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;internet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;explorer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ie6&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;png&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;transparency&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;background&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;repeat&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb"&gt;fix&lt;/span&gt;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;digital&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;articles&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;web_standards_creativity_png&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="AlphaImageLoader"></category><category term="ie6"></category><category term="internet explorer"></category><category term="saydam png"></category><category term="transparent png"></category></entry><entry><title>Web Tarayıcılarının Metin Boyutu Kullanım Oranları</title><link href="http://www.fatihhayrioglu.com/web-tarayicilarinin-metin-boyutu-kullanim-oranlari/" rel="alternate"></link><updated>2006-10-08T14:01:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-08:web-tarayicilarinin-metin-boyutu-kullanim-oranlari/</id><summary type="html">&lt;p&gt;Web sayfalarını görüntüleyen web tarayıcıların da kullanılan metin
+&lt;/p&gt;</summary><category term="AlphaImageLoader"></category><category term="ie6"></category><category term="internet explorer"></category><category term="saydam png"></category><category term="transparent png"></category></entry><entry><title>Web Tarayıcılarının Metin Boyutu Kullanım Oranları</title><link href="http://www.fatihhayrioglu.com/web-tarayicilarinin-metin-boyutu-kullanim-oranlari/" rel="alternate"></link><updated>2006-10-08T14:01:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-08:web-tarayicilarinin-metin-boyutu-kullanim-oranlari/</id><summary type="html">&lt;p&gt;Web sayfalarını görüntüleyen web tarayıcıların da kullanılan metin
 boyutunu 1500 site de deneyen araştırmacılar çoğunluğun standart olarak
 gelen (medium) seçeneğini kullandığını görmüşler
 &lt;a href="http://www.clickdensity.com/Text-Sizes-Study.aspx"&gt;http://www.clickdensity.com/Text-Sizes-Study.aspx&lt;/a&gt;&lt;/p&gt;</summary><category term="boyut"></category><category term="font-size"></category><category term="gelen"></category><category term="metin"></category><category term="standart"></category><category term="text_sizes"></category><category term="Web Standartları"></category></entry><entry><title>Firefox Arama motoru eklentisi</title><link href="http://www.fatihhayrioglu.com/firefox-arama-motoru-eklentisi/" rel="alternate"></link><updated>2006-05-09T12:11:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-05-09:firefox-arama-motoru-eklentisi/</id><summary type="html">&lt;p&gt;Firefox &lt;a href="https://addons.mozilla.org/firefox/321/"&gt;&lt;strong&gt;SearchStatus&lt;/strong&gt;&lt;/a&gt; eklentisi google pagerank değerini ve alex

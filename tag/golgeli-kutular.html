@@ -89,8 +89,8 @@ tanımlama ile bu fazlalıklar ve zorluklardan kurtulabiliyoruz.
 <!--more--></p>
 <p>box-shadow yapısını inceleyelim.</p>
 <div class="cssozelliktanimi">
-**Yapısı :** box-shadow: \<deger\>, \<deger\>  
-**Aldığı Değerler :** none | \<gölge\> [ , \<gölge\> ]\*   
+**Yapısı :** box-shadow: <deger>, <deger>  
+**Aldığı Değerler :** none | <gölge> [ , <gölge> ]*   
 **Başlangıç değeri:**tanımlama yok   
 **Uygulanabilen elementler:** tüm elementler  
 **Kalıtsallık:**Yok
@@ -98,8 +98,11 @@ tanımlama ile bu fazlalıklar ve zorluklardan kurtulabiliyoruz.
 </div>
 
 <p>Temel kullanımı.</p>
-<p>[sourcecode language="css"] .golgeliKutu { box-shadow: 3px 3px 4px
-#000; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.golgeliKutu</span> <span class="p">{</span> <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">4px</span>
+</pre></div>
+
+
+<h1>000; }</h1>
 <p>Değerler metinlere gölge verme(text-shadow) özelliği ile aynı anlamı
 taşır.</p>
 <p><strong>3px;</strong> İlk değer yataydaki mesafe içindir. Artı değerler kutunun
@@ -114,9 +117,12 @@ alır.</p>
 <p><strong>#000;</strong> renk değeri. Gölgenin renk değerini gösterir.</p>
 <p>Farklı tarayıcılar için ön ek kullanılarak çözüm üretilir. -moz Firefox
 için, -webkit Safari ve Google Chrome için.</p>
-<p>[sourcecode language="css"] .golgeliKutu { box-shadow: 3px 3px 4px
-#000; -moz-box-shadow: 3px 3px 4px #000; -webkit-box-shadow: 3px 3px
-4px #000; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.golgeliKutu</span> <span class="p">{</span> <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">4px</span>
+</pre></div>
+
+
+<h1>000; -moz-box-shadow: 3px 3px 4px #000; -webkit-box-shadow: 3px 3px</h1>
+<p>4px #000; } </p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:**  
 Internet Explorer 9+   
@@ -140,14 +146,17 @@ font:12px Arial, Helvetica, sans-serif;<br />
 background:#CCC<br />
 }</p>
 <p>HTML kodu</p>
-<p>[sourcecode language="html"]\&lt;div class="golgeliKutu"> Lorem ipsum
-dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;golgeliKutu&quot;</span><span class="nt">&gt;</span> Lorem ipsum
+</pre></div>
+
+
+<p>dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper
 commodo fermentum. Proin eu sollicitudin neque. Sed enim tellus,
 condimentum sed interdum vitae, mattis et nisl. Sed nec nisl est,
 sagittis lobortis eros. Integer pharetra turpis eu est eleifend
 faucibus. Phasellus pulvinar massa sagittis nisl posuere at rhoncus
 velit blandit. Suspendisse potenti. Lorem ipsum dolor sit amet,
-consectetur adipiscing elit. \&lt;/div> [/sourcecode]</p>
+consectetur adipiscing elit. </div> </p>
 <p><img alt="Gölgeli Kutu" src="http://fatihhayrioglu.com/dokumanlar/box_shadow/box_shadow_1.gif" /></p>
 <p>Örneği görüntülemek için <a href="http://fatihhayrioglu.com/dokumanlar/box_shadow/golgeli_kutu.html">tıklayınız.</a></p>
 <p>Bu kod sayesinde bir çok avantaj sağlarız. Fazla kod yığınından
@@ -158,23 +167,28 @@ bilir.</p>
 <p>box-shadow tanımında tek bir gölge tanımı yapılabildiği gibi, birden
 fazla gölge tanımıda yapılabilmektedir. Her bir tanım birbirinden virgül
 ile ayrılır.</p>
-<p>[sourcecode language="css"] .golgeliKutu { box-shadow: 0.5em -0.5em
-0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em
+<div class="codehilite"><pre> <span class="nc">.golgeliKutu</span> <span class="p">{</span> <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0.5em</span> <span class="m">-0.5em</span>
+</pre></div>
+
+
+<p>0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em
 -0.5em 0.4em blue; -moz-box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em
 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
 -webkit-box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold,
 -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue; width:250px;
-padding:5px; font:12px Arial, Helvetica, sans-serif; background:#CCC }
-[/sourcecode]</p>
+padding:5px; font:12px Arial, Helvetica, sans-serif; background:#CCC }</p>
 <p><img alt="Çoklu Gölgeli Kutu" src="http://fatihhayrioglu.com/dokumanlar/box_shadow/box_shadow_2.gif" /></p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/box_shadow/golgeli_kutu_coklu.html">tıklayınız.</a></p>
 <p><strong>inset ile kutu içine gölge vermek</strong></p>
 <p>Kutulara gölge verirken kutu içinede gölge verebiliyoruz. inset eklemesi
 ile kutu içine gölge verme imkanımız var.</p>
-<p>[sourcecode language="css"] .golgeliKutu { box-shadow: inset 0 0 0.5em
-blue;; -moz-box-shadow: inset 0 0 0.5em blue; -webkit-box-shadow: inset
+<div class="codehilite"><pre> <span class="nc">.golgeliKutu</span> <span class="p">{</span> <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0.5em</span>
+</pre></div>
+
+
+<p>blue;; -moz-box-shadow: inset 0 0 0.5em blue; -webkit-box-shadow: inset
 0 0 0.5em blue; width:250px; padding:5px; font:12px Arial, Helvetica,
-sans-serif; } [/sourcecode]</p>
+sans-serif; } </p>
 <p><img alt="İçe Gölge" src="http://fatihhayrioglu.com/dokumanlar/box_shadow/box_shadow_3.gif" /></p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/box_shadow/golgeli_kutu_icegolge.html">tıklayınız.</a></p>
 <h3>İE İçin Çözüm</h3>
@@ -186,33 +200,39 @@ filtrelerinden yararlanılır.</p>
 keskin gölgeler görürüz. X ve Y değerleri ile açı verebiliriz. Shadow
 filtresi daha gerçekçi çözümler üretir ancak shadow filtresinde de x ve
 y tanımlarını yapmamıza izin vermez.</p>
-<p>[sourcecode language="css"] /* For IE 8 */ -ms-filter:
-"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
-Color='#000000')"; /* For IE 5.5 - 7 */ filter:
+<div class="codehilite"><pre> <span class="c">/* For IE 8 */</span> <span class="nt">-ms-filter</span><span class="o">:</span>
+</pre></div>
+
+
+<p>"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
+Color='#000000')"; /<em> For IE 5.5 - 7 </em>/ filter:
 progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
-Color='#000000'); [/sourcecode]</p>
+Color='#000000'); </p>
 <p>İE8 için farklı diğer ie'ler için farklı kodlar yazıyoruz. Bu kodu
 yukarıdaki kod ile birleştirirsek</p>
-<p>[sourcecode language="css"] .golgeliKutu { width:250px; font:12px Arial,
-Helvetica, sans-serif; background:#CCC; padding:5px; -moz-box-shadow:
+<div class="codehilite"><pre> <span class="nc">.golgeliKutu</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">font</span><span class="o">:</span><span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span>
+</pre></div>
+
+
+<p>Helvetica, sans-serif; background:#CCC; padding:5px; -moz-box-shadow:
 3px 3px 4px #000; -webkit-box-shadow: 3px 3px 4px #000; box-shadow:
-3px 3px 4px #000; /* For IE 8 */ -ms-filter:
+3px 3px 4px #000; /<em> For IE 8 </em>/ -ms-filter:
 "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
-Color='#000000')"; /* For IE 5.5 - 7 */ filter:
+Color='#000000')"; /<em> For IE 5.5 - 7 </em>/ filter:
 progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
-Color='#000000'); } [/sourcecode]</p>
+Color='#000000'); } </p>
 <p><img alt="ie gölgeli kutu" src="http://fatihhayrioglu.com/dokumanlar/box_shadow/box_shadow_ie.gif" /></p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/box_shadow/golgeli_kutu_ie.html">tıklayınız.</a></p>
 <p>Tam olarak box-shadow etkisi gibi etki etmese de bir çözüm olarak
 kullanılabilir.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li>[http://www.w3.org/TR/css3-background/#box-shadow][]</li>
-<li><a href="static">http://robertnyman.com/2010/03/16/drop-shadow-with-css-for-all-web-browsers/</a></li>
+<li><a href="http://www.w3.org/TR/css3-background/#box-shadow">http://www.w3.org/TR/css3-background/#box-shadow</a></li>
+<li><a href="http://robertnyman.com/2010/03/16/drop-shadow-with-css-for-all-web-browsers/">http://robertnyman.com/2010/03/16/drop-shadow-with-css-for-all-web-browsers/</a></li>
 <li><a href="http://www.ruzee.com/blog/shadedborder">http://www.ruzee.com/blog/shadedborder</a> (javascript)</li>
 <li><a href="http://dimox.net/cross-browser-css3-box-shadow/">http://dimox.net/cross-browser-css3-box-shadow/</a></li>
-<li><a href="static">http://nick-dunn.co.uk/article/cross-browser-drop-shadows-using-pure-css/</a></li>
-<li><a href="static">http://www.position-absolute.com/articles/how-to-get-css3-box-shadow-accepted-as-a-viable-option-at-your-workplace/</a>
+<li><a href="http://nick-dunn.co.uk/article/cross-browser-drop-shadows-using-pure-css/">http://nick-dunn.co.uk/article/cross-browser-drop-shadows-using-pure-css/</a></li>
+<li><a href="http://www.position-absolute.com/articles/how-to-get-css3-box-shadow-accepted-as-a-viable-option-at-your-workplace/">http://www.position-absolute.com/articles/how-to-get-css3-box-shadow-accepted-as-a-viable-option-at-your-workplace/</a>
     (css3 ün avantajı)</li>
 <li><a href="https://developer.mozilla.org/En/CSS/-moz-box-shadow">https://developer.mozilla.org/En/CSS/-moz-box-shadow</a></li>
 <li><a href="http://css.flepstudio.org/en/css3/box-shadow.html">http://css.flepstudio.org/en/css3/box-shadow.html</a> (örnekler)</li>
@@ -220,21 +240,14 @@ kullanılabilir.</p>
     üretici)</li>
 <li><a href="http://css-tricks.com/snippets/css/css-box-shadow/">http://css-tricks.com/snippets/css/css-box-shadow/</a></li>
 <li><a href="http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/">http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/</a></li>
-<li>[http://www.elektronotdienst-nuernberg.de/bugs/box-shadow_inset.html][]</li>
+<li><a href="http://www.elektronotdienst-nuernberg.de/bugs/box-shadow_inset.html">http://www.elektronotdienst-nuernberg.de/bugs/box-shadow_inset.html</a></li>
 <li><a href="http://davidwalsh.name/css-box-shadow">http://davidwalsh.name/css-box-shadow</a></li>
 </ul>
 <h3>Yazı Sonrası Linkler</h3>
 <ul>
-<li><a href="static">http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/</a></li>
+<li><a href="http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/">http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">robertnyman</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>03<span class="o">/</span>16<span class="o">/</span><span class="n">drop</span><span class="o">-</span><span class="n">shadow</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">all</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">browsers</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">nick</span><span class="o">-</span><span class="n">dunn</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">article</span><span class="o">/</span><span class="nb">cross</span><span class="o">-</span><span class="n">browser</span><span class="o">-</span><span class="n">drop</span><span class="o">-</span><span class="n">shadows</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">pure</span><span class="o">-</span><span class="n">css</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">position</span><span class="o">-</span><span class="n">absolute</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">get</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">-</span><span class="n">accepted</span><span class="o">-</span><span class="n">as</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">viable</span><span class="o">-</span><span class="n">option</span><span class="o">-</span><span class="n">at</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">workplace</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">elektronotdienst</span><span class="o">-</span><span class="n">nuernberg</span><span class="p">.</span><span class="n">de</span><span class="o">/</span><span class="n">bugs</span><span class="o">/</span><span class="n">box</span><span class="o">-</span><span class="n">shadow_inset</span><span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">w3conversions</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2011<span class="o">/</span>09<span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">spread</span><span class="o">-</span><span class="n">value</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">-</span><span class="n">on</span><span class="o">-</span><span class="n">one</span><span class="o">-</span><span class="n">side</span><span class="o">-</span><span class="n">only</span><span class="o">/</span>
-</pre></div><p>There are <a href=".././kutulara-golge-vermek-box-shadow/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././kutulara-golge-vermek-box-shadow/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

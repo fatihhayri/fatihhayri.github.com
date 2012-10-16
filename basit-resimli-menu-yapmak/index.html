@@ -83,7 +83,7 @@
 
 </footer><!-- /.post-info -->
       <p>Daha önce resimli menü yapımını anlatmıştım.
-<a href="../static">http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/</a>
+<a href="http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/" title="http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/">http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/</a>
 ancak burada şöyle bir sorun ile karşılaştık; Bu makalede anlattığımız
 yöntem ile genel bir metot anlatarak tüm resimli menüler için şablon
 niteliğinde bir kod ürettik, yani tüm menüler bu kod ile
@@ -102,41 +102,57 @@ tek resim oluşturduğumuzda sayfa nette açılırken her bir resim için
 istek yapılacaktır, buda sayfanın yavaş açılmasına neden olacaktır. Bu
 metotta ise tek resim yüklenecek ve bu bize performans kazandıracaktır.</p>
 <p>Çok basit bir xhtml kodu var. Birçok menü örneğinde olduğu gibi ul kodu;</p>
-<p>[sourcecode language="html"] \&lt;ul class="menu"> \&lt;li
-id="mAnasayfa">\&lt;a href="#">Ana Sayfa\&lt;/a>\&lt;/li> \&lt;li
-id="mUrunler">\&lt;a href="#">Ürünler\&lt;/a>\&lt;/li> \&lt;li
-id="mHizmetler">\&lt;a href="#">Hizmetler\&lt;/a>\&lt;/li> \&lt;li
-id="mBizeUlasin">\&lt;a href="#">Bize Ulaşın\&lt;/a>\&lt;/li> \&lt;/ul>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;li</span>
+</pre></div>
+
+
+<p>id="mAnasayfa"&gt;<a href="#">Ana Sayfa</a></li> <li
+id="mUrunler"><a href="#">Ürünler</a></li> <li
+id="mHizmetler"><a href="#">Hizmetler</a></li> <li
+id="mBizeUlasin"><a href="#">Bize Ulaşın</a></li> </ul></p>
 <p>Menümüzün resimlerini tek bir resim dosyası olarak hazırlayacağız. Biz
 burada normal ve fare imleci üzerine geldiğindeki halini(:hover) koyduk
 ama bunlara seçili ve tıklama durumlarınıda eklenebilir.</p>
 <p><img alt="" src="../static/images/basit_resimli_menu.jpg" /></p>
 <p>Şimdi CSS kodlarımızı yazalım.</p>
 <p>ul için genel sıfırlama kodlarımızı yazalım</p>
-<p>[sourcecode language="css"] ul.menu{ margin:0; padding:0;
-list-style:none; width:480px; height:40px; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.menu</span><span class="p">{</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>list-style:none; width:480px; height:40px; } </p>
 <p>Sırasız listelerin her nesnesini(li) yan yana dizmek için float:left
 tanımını yapmalıyız.</p>
-<p>[sourcecode language="css"] ul.menu li{ float:left; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">li</span><span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Linkler için genel tanımlarımızı yapalım</p>
-<p>[sourcecode language="css"] ul li a{ display:block; width:120px;
-height:40px; text-indent:-9999px; outline:none; text-decoration:none;
-background:url(images/basit_resimli_menu.jpg) 0 0 no-repeat; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">120px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>height:40px; text-indent:-9999px; outline:none; text-decoration:none;
+background:url(images/basit_resimli_menu.jpg) 0 0 no-repeat; }</p>
 <p>Her bir menü nesnesinin yukarıdaki resimdeki konumunu belirlemeye geldi
 sıra.</p>
-<p>[sourcecode language="css"] li#mAnasayfa a{background-position:0 0;}
-li#mUrunler a{background-position:-120px 0;} li#mHizmetler
+<div class="codehilite"><pre> <span class="nt">li</span><span class="nf">#mAnasayfa</span> <span class="nt">a</span><span class="p">{</span><span class="k">background-position</span><span class="o">:</span><span class="m">0</span> <span class="m">0</span><span class="p">;}</span>
+</pre></div>
+
+
+<p>li#mUrunler a{background-position:-120px 0;} li#mHizmetler
 a{background-position:-240px 0;} li#mBizeUlasin
-a{background-position:-360px 0;} [/sourcecode]</p>
+a{background-position:-360px 0;} </p>
 <p>Basit bir şekilde resimli bir menü oluşturduk. Tabi buna birde fare
 üzerine geldiğindeki durumu ekleyerek daha belirgin bir hale
 getirebiliriz.</p>
-<p>[sourcecode language="css"] li#mAnasayfa a:hover{background-position:0
--40px;} li#mUrunler a:hover{background-position:-120px -40px;}
+<div class="codehilite"><pre> <span class="nt">li</span><span class="nf">#mAnasayfa</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span><span class="k">background-position</span><span class="o">:</span><span class="m">0</span>
+</pre></div>
+
+
+<p>-40px;} li#mUrunler a:hover{background-position:-120px -40px;}
 li#mHizmetler a:hover{background-position:-240px -40px;}
-li#mBizeUlasin a:hover{background-position:-360px -40px;} [/sourcecode]</p>
+li#mBizeUlasin a:hover{background-position:-360px -40px;} </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/basit_resimli_menu.html">tıklayınız</a></p>
 <p><strong>Not: Ardalan konumu belirleme</strong></p>
 <p><img alt="" src="../static/images/basit_resimli_menu_ardkaydi.jpg" /></p>
@@ -149,30 +165,16 @@ noktası sol üst köşesidir, bu nedenle değerler eksi(-) değer alır.</p>
 <h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.webdesignerwall.com/tutorials/advanced-css-menu/" title="http://www.webdesignerwall.com/tutorials/advanced-css-menu/">http://www.webdesignerwall.com/tutorials/advanced-css-menu/</a></li>
-<li><a href="../static">http://superfluousbanter.org/archives/2004/05/navigation-matrix-reloaded/</a></li>
-<li><a href="../static">http://www.3point7designs.com/blog/2006/07/24/accessible-css-roll-over-images/</a></li>
-<li>[http://simplebits.com/notebook/2003/09/30/accessible_imagetab_rollovers.html][]</li>
+<li><a href="http://superfluousbanter.org/archives/2004/05/navigation-matrix-reloaded/" title="http://superfluousbanter.org/archives/2004/05/navigation-matrix-reloaded/">http://superfluousbanter.org/archives/2004/05/navigation-matrix-reloaded/</a></li>
+<li><a href="http://www.3point7designs.com/blog/2006/07/24/accessible-css-roll-over-images/" title="http://www.3point7designs.com/blog/2006/07/24/accessible-css-roll-over-images/">http://www.3point7designs.com/blog/2006/07/24/accessible-css-roll-over-images/</a></li>
+<li><a href="http://simplebits.com/notebook/2003/09/30/accessible_imagetab_rollovers.html" title="http://simplebits.com/notebook/2003/09/30/accessible_imagetab_rollovers.html">http://simplebits.com/notebook/2003/09/30/accessible_imagetab_rollovers.html</a></li>
 <li><a href="http://inobscuro.com/tutorials/read/19/" title="http://inobscuro.com/tutorials/read/19/">http://inobscuro.com/tutorials/read/19/</a> <br />
 </li>
-<li><a href="../static">http://dragan.yourtree.org/blog/en/2007/04/10/pure-css-rollover-menu/</a></li>
+<li><a href="http://dragan.yourtree.org/blog/en/2007/04/10/pure-css-rollover-menu/" title="http://dragan.yourtree.org/blog/en/2007/04/10/pure-css-rollover-menu/">http://dragan.yourtree.org/blog/en/2007/04/10/pure-css-rollover-menu/</a></li>
 <li><a href="http://www.webvamp.co.uk/blog/coding/css-image-rollovers/" title="http://www.webvamp.co.uk/blog/coding/css-image-rollovers/">http://www.webvamp.co.uk/blog/coding/css-image-rollovers/</a></li>
-<li><a href="../static">http://www.codeitred.com/2008/08/12/apple-style-menu-tutorial-css-sprites</a></li>
+<li><a href="http://www.codeitred.com/2008/08/12/apple-style-menu-tutorial-css-sprites" title="http://www.codeitred.com/2008/08/12/apple-style-menu-tutorial-css-sprites">http://www.codeitred.com/2008/08/12/apple-style-menu-tutorial-css-sprites</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">ile</span><span class="o">-</span><span class="n">menu</span><span class="o">-</span><span class="n">olusturmak</span><span class="o">-</span><span class="n">v</span><span class="o">-</span><span class="n">resimli</span><span class="o">-</span><span class="n">menuler</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">ile</span><span class="o">-</span><span class="n">menu</span><span class="o">-</span><span class="n">olusturmak</span><span class="o">-</span><span class="n">v</span><span class="o">-</span><span class="n">resimli</span><span class="o">-</span><span class="n">menuler</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">superfluousbanter</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span>2004<span class="o">/</span>05<span class="o">/</span><span class="n">navigation</span><span class="o">-</span><span class="n">matrix</span><span class="o">-</span><span class="n">reloaded</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">superfluousbanter</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span>2004<span class="o">/</span>05<span class="o">/</span><span class="n">navigation</span><span class="o">-</span><span class="n">matrix</span><span class="o">-</span><span class="n">reloaded</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>3<span class="n">point7designs</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2006<span class="o">/</span>07<span class="o">/</span>24<span class="o">/</span><span class="n">accessible</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">roll</span><span class="o">-</span><span class="n">over</span><span class="o">-</span><span class="n">images</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>3<span class="n">point7designs</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2006<span class="o">/</span>07<span class="o">/</span>24<span class="o">/</span><span class="n">accessible</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">roll</span><span class="o">-</span><span class="n">over</span><span class="o">-</span><span class="n">images</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">simplebits</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">notebook</span><span class="o">/</span>2003<span class="o">/</span>09<span class="o">/</span>30<span class="o">/</span><span class="n">accessible_imagetab_rollovers</span><span class="p">.</span><span class="n">html</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">simplebits</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">notebook</span><span class="o">/</span>2003<span class="o">/</span>09<span class="o">/</span>30<span class="o">/</span><span class="n">accessible_imagetab_rollovers</span><span class="p">.</span><span class="n">html</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dragan</span><span class="p">.</span><span class="n">yourtree</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">en</span><span class="o">/</span>2007<span class="o">/</span>04<span class="o">/</span>10<span class="o">/</span><span class="n">pure</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">rollover</span><span class="o">-</span><span class="n">menu</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dragan</span><span class="p">.</span><span class="n">yourtree</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">en</span><span class="o">/</span>2007<span class="o">/</span>04<span class="o">/</span>10<span class="o">/</span><span class="n">pure</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">rollover</span><span class="o">-</span><span class="n">menu</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">codeitred</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2008<span class="o">/</span>08<span class="o">/</span>12<span class="o">/</span><span class="n">apple</span><span class="o">-</span><span class="n">style</span><span class="o">-</span><span class="n">menu</span><span class="o">-</span><span class="n">tutorial</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">sprites</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">codeitred</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2008<span class="o">/</span>08<span class="o">/</span>12<span class="o">/</span><span class="n">apple</span><span class="o">-</span><span class="n">style</span><span class="o">-</span><span class="n">menu</span><span class="o">-</span><span class="n">tutorial</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">sprites</span>&quot;
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

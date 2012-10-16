@@ -93,13 +93,19 @@ meydana gelmesinden hoşlanmayız.</p>
 <strong>şekil.1</strong> float sorun</p>
 <p>Bir örnek yaparsak daha iyi anlayacağız.</p>
 <p>CSS kodu:</p>
-<p>[sourcecode language="css"] .kapsul { border: 1px solid #000; padding:
-2px; } img { float: left; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.kapsul</span> <span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span>
+</pre></div>
+
+
+<p>2px; } img { float: left; } </p>
 <p>Html kodu:</p>
-<p>[sourcecode language="html"] \&lt;div class="kapsul"> \&lt;img
-src="koy_01.jpg" alt="Bizim köy" weight="250" height="160" />
-\&lt;p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \&lt;/p>
-\&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;img</span>
+</pre></div>
+
+
+<p>src="koy_01.jpg" alt="Bizim köy" weight="250" height="160" /&gt;
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+</div> </p>
 <p>Örneği görmek için <a href="static/dokumanlar/float_sorunu.html">tıklayınız.</a></p>
 <p>Floatuygulanan resim div(.kapsul) içindeki resme göre genişlemez. Duruma
 tersten bakarsakbazen bu görünümü kullanabileceğimiz durumlarda
@@ -116,10 +122,13 @@ yapabiliriz.</p>
 <p>Geneldekutuların içeriğine göre uzamasını isteriz. Bu sorunu çözmek
 küçük bir yapısalekleme yapmak yeterli olacaktır.<br />
 </p>
-<p>[sourcecode language="html"] \&lt;div class="kapsul"> \&lt;img
-src="resim.png"> \&lt;p>Lorem ipsum dolor sit amet, consectetuer
-adipiscing elit. \&lt;/p> \&lt;div style="clear:both;">\&lt;/div> \&lt;/div>
-[/sourcecode] Buşekilde sorunumuzu çözmüş oluruz ancak bu sorunla
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;img</span>
+</pre></div>
+
+
+<p>src="resim.png"&gt; <p>Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit. </p> <div style="clear:both;"></div> </div>
+ Buşekilde sorunumuzu çözmüş oluruz ancak bu sorunla
 karşılaştığımız heryerde bu eklemeyi yapmak zorun kalacağız ve sırf bu
 düzeltme için boşbir div ekleyeceğiz. Buda mantıklı(semantik) kodlama
 açısından uygun değildir. Pekibunu başka nasıl çözeriz. <br />
@@ -132,33 +141,42 @@ bu elemente css komutları atayabiliyoruz.Ayrıntılı bilgi için
 bu noktaya<strong>clear</strong>(clear:both) ataması yaparsak sorunumuz çözülmüş
 olacaktır. Tabi birde bunoktayı görünmez yapmamız gerekiyor, Kutuların
 sonunda nokta görünmesipek hoş olmaya bilir.</p>
-<p>[sourcecode language="css"] .kapsul:after { content: "."; display:
-block; height: 0; clear: both; visibility: hidden; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span>
+</pre></div>
+
+
+<p>block; height: 0; clear: both; visibility: hidden; } </p>
 <p>Ayrıca<strong>display:block</strong> koyduk çünkü satır için(inline-level) elementler
 clear özelliğiatamasını kabul etmiyor. Aslında <strong>overflow</strong> ile de bu
 sorun halledilebilir ancakMozilla Firefox'un yeni sürümlerinde bu metot
 sorun çıkarıyor.</p>
-<p>[sourcecode language="css"] .kapsul:after { content: "."; display:
-block; height: 0; clear: both; visibility: hidden; } /*IE-mac den bu
-bolumu sakla \*/ * html .clearfix {height: 1%;} /* IE-mac bu bolumu
-saklama artik */ [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span>
+</pre></div>
+
+
+<p>block; height: 0; clear: both; visibility: hidden; } /<em>IE-mac den bu
+bolumu sakla </em>/ * html .clearfix {height: 1%;} /<em> IE-mac bu bolumu
+saklama artik </em>/ </p>
 <p>Tabibu kod burada kalmıyor çünkü IE ile sorunları var. Normalde IE'nin
 float uygulanmış elementin tamamı kapsamama sorunu diye bir problemi(bu
 ilginç bir durumdur) yoktur, ancak float uygulanmış elemente genişlik ve
 yükseklik tanımı yapılmadığında sorun ortaya çıkıyor. Bunu engellemek
 için sadece IE/Win gördüğü kapsayıcı elementin yüksekliğine %1 ataması
 yaparız. Ancak bu kısımı IE/Mac'lerden saklamamız gerek bunun için ters
-bölme(\) işaretini kullanırız böylelikle IE/Mac sürümü komut satırının
+bölme() işaretini kullanırız böylelikle IE/Mac sürümü komut satırının
 devam ettiğini farz ederek bu satırı görmez.</p>
 <p>Sıra geldi IE/Mac'de sorunu aşmaya, IE/Mac'deki sorunu aşmak için
 <strong>display: inline-block;</strong> tanımlamasını yapıyoruz. Tabi diğer web
 tarayıcılarının bundan etkilenmemesi için IE/Mac'den gizlediğimiz alana
 <strong>display: block;</strong> atamasını eklemeliyiz.</p>
-<p>[sourcecode language="css"] .kapsul:after { content: "."; display:
-block; height: 0; clear: both; visibility: hidden; } .kapsul {display:
-inline-block;} /*IE-mac de bu bolumu sakla \ */ * html .kapsul
-{height: 1%;} .kapsul {display: block;} /* IE-mac bu bolumu saklam
-artik */ [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span>
+</pre></div>
+
+
+<p>block; height: 0; clear: both; visibility: hidden; } .kapsul {display:
+inline-block;} /<em>IE-mac de bu bolumu sakla  </em>/ * html .kapsul
+{height: 1%;} .kapsul {display: block;} /<em> IE-mac bu bolumu saklam
+artik </em>/ </p>
 <p>Örneğin son halini görmek için <a href="static/dokumanlar/float_cozumu.html">tıklayınız.</a></p>
 <p><img alt="float çözümü" src="static/images/clearfix_cozum.gif" /><br />
 <strong>şekil2</strong> float sorununun çözülmüş hali</p>
@@ -169,16 +187,21 @@ Keogh</a>, <a href="http://www.positioniseverything.net/design/" title="Holly'n 
 makale yazan <a href="http://www.dahaiyi.net/yazilar/temiz-bir-clearfix-metodu/">dahaiyi.net</a>'e çok teşekkürler.</p>
 <p>Bu yöntemi biraz daha kolaylaştıralım. Sonuçta macde ie kullanan
 kalmadağına göre kodumuzu</p>
-<p>[css] .clearfix:after { visibility: hidden; display: block; font-size:
-0; content: " "; clear: both; height: 0; } * html .clearfix { zoom: 1;
-} /* IE6 */ *:first-child+html .clearfix { zoom: 1; } /* IE7 */
-[/css]</p>
+<div class="codehilite"><pre> <span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">font-size</span><span class="o">:</span>
+</pre></div>
+
+
+<p>0; content: " "; clear: both; height: 0; } * html .clearfix { zoom: 1;
+} /<em> IE6 </em>/ <em>:first-child+html .clearfix { zoom: 1; } /</em> IE7 */</p>
 <h6>CSS3 ile sorunun çözümü</h6>
 <p>Bu sorunun farkında olan CSS standart geliştiriciler bu soruna kökten
 çözüm getirmişler. <a href="http://www.w3.org/TR/2002/WD-css3-box-20021024/#the-clear-after">clear-after</a> yeni özelliği sayesinde bu kodlardan
 kurtulacağız tabi biraz zaman gerekecek bu özelliği kullanmak için.
 Malum hala uygulamada değil CSS3.0</p>
-<p>[sourcecode language="css"] .kapsul { clear-after: both; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.kapsul</span> <span class="p">{</span> <span class="k">clear</span><span class="o">-</span><span class="n">after</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Yukarıdaki örnekteki gibi tek satırlık bir kod sorunumuzu çözecektir.</p>
 <h6>Sonuç</h6>
 <p>Sonuç olarak şunu söyleyebiliriz ki bu sorunu çözmek için bir kaç çözüm
@@ -194,7 +217,7 @@ hızlı bir şekilde çözmek mümkün oluyor.</p>
 <li><a href="http://www.dahaiyi.net/yazilar/temiz-bir-clearfix-metodu/">http://www.dahaiyi.net/yazilar/temiz-bir-clearfix-metodu/</a></li>
 <li><a href="http://csscreator.com/?q=attributes/containedfloat.php">http://csscreator.com/?q=attributes/containedfloat.php</a></li>
 <li><a href="http://css-discuss.incutio.com/?page=ClearingSpace">http://css-discuss.incutio.com/?page=ClearingSpace</a></li>
-<li>[http://www.cs.hmc.edu/\~mbrubeck/clear-after/][]</li>
+<li><a href="http://www.cs.hmc.edu/~mbrubeck/clear-after/">http://www.cs.hmc.edu/~mbrubeck/clear-after/</a></li>
 <li><a href="http://www.w3.org/TR/2002/WD-css3-box-20021024/#the-clear-after">http://www.w3.org/TR/2002/WD-css3-box-20021024/#the-clear-after</a><br />
 </li>
 </ul>
@@ -410,11 +433,14 @@ ve bu amaçla kullanılabilir. <!--more--></p>
 </ul>
 <p><img alt="Kutu Modeli" src="http://fatihhayrioglu.com/images/basit_boxmodel.gif" /></p>
 <h3>width<a name="01"></a></h3>
-<p><strong>Yapısı :</strong> width: \&lt;deger> <strong>Aldığı Değerler :</strong> [\&lt;uzunluk değeri
->][] | [\&lt;yüzde>][\&lt;uzunluk değeri >] | auto | inherit <strong>Başlnagıç
+<p><strong>Yapısı :</strong> width: <deger> <strong>Aldığı Değerler :</strong> [&lt;uzunluk değeri</p>
+<blockquote>
+<p>][] | <a href="http://www.fatihhayrioglu.com/?p=95"><yüzde></a> | auto | inherit <strong>Başlnagıç
 değeri:</strong> auto <strong>Uygulanabilen elementler:</strong> <a href="http://www.fatihhayrioglu.com/?p=13">Block-level ve replaced
 elementler</a> <strong>Kalıtsallık:</strong> Yok</p>
-<p><a href="http://www.fatihhayrioglu.com/?p=13">Blok-level ve replaced elementlerin</a>(örn: img, input, textarea vd.) tümü bir genişlik(width ...</p>
+</blockquote>
+<p><a href="http://www.fatihhayrioglu.com/?p=13">Blok-level ve replaced elementlerin</a>(örn: img, input, textarea vd.) tümü bir genişlik(width)
+değeri alır. Elementlerin başlangıçtaki ...</p>
                 <a class="readmore" href=".././css-kutu-modeli-ozellikleri-4/">read more</a>
                 <p>There are <a href=".././css-kutu-modeli-ozellikleri-4/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

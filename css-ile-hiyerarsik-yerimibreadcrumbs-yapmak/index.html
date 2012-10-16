@@ -104,43 +104,62 @@ Farklı Tasarımda bir uygulama: <a href="http://www.ideo.com/">http://www.ideo.
 şekilde uygulamaya geçirilebilir.</p>
 <p>Sadede gelelim ve biz kendi hiyerarşik yerimimizi yapalım.</p>
 <p>HTML kodu;</p>
-<p>[html] \&lt;ul id="yerimi" class="kapsul"> \&lt;li>\&lt;a href="#">Ana
-Sayfa\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="#">Birinci alt Menü\&lt;/a>\&lt;/li>
-\&lt;li>\&lt;a href="#">İkinci alt Menü\&lt;/a>\&lt;/li> \&lt;li>\&lt;a
-href="#">Üçüncü alt menü\&lt;/a>\&lt;/li> \&lt;li>Bulunduğumuz sayfa\&lt;/li>
-\&lt;/ul> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;yerimi&quot;</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ana
+</pre></div>
+
+
+<p>Sayfa</a></li> <li><a href="#">Birinci alt Menü</a></li>
+<li><a href="#">İkinci alt Menü</a></li> <li><a
+href="#">Üçüncü alt menü</a></li> <li>Bulunduğumuz sayfa</li>
+</ul> </p>
 <p>Gelelim CSS kodumuza, liste başlangıç değerlerini sıfırlayalım.
 Listelerin başındaki sabit yuvarlak ikonları kaldırıp, etrafındaki
 boşlukları kaldıralım.</p>
-<p>[css] ul#yerimi, ul#yerimi li{ list-style:none; margin:0; padding:0;}
-[/css]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#yerimi</span><span class="o">,</span> <span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span><span class="p">{</span> <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;}</span>
+</pre></div>
+
+
 <p>Listeyi yatay yapmak için float:left tanımı yapıyoruz. İnternet Explorer
 6 için bağlantıya da float:left atamamız gerekecek.</p>
-<p>[css] ul#yerimi li { float:left; font:12px Arial, Helvetica,
-sans-serif; line-height:30px; padding-left:15px; font-weight:bold }
-[/css]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">font</span><span class="o">:</span><span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span>
+</pre></div>
+
+
+<p>sans-serif; line-height:30px; padding-left:15px; font-weight:bold }</p>
 <p>Bağlantılara şeklini verelim ve görselliğini düzenleyelim.</p>
-<p>[css] ul#yerimi li a { display:block; float:left; color:#0086C0;
-text-decoration:none; height:30px; font-weight:normal } ul#yerimi li
-a:hover { text-decoration:underline } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span><span class="m">#0086C0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>text-decoration:none; height:30px; font-weight:normal } ul#yerimi li
+a:hover { text-decoration:underline } </p>
 <p>Her kademe arasına ayraç koyalım. Burada şöyle bir ipucu var ki, oda
 bulunduğumuz sayfaya link koymuyoruz ve bu sayede araya koyacağımız
 ayraçları sadece linklere vererek kolayca çözüm sağlıyoruz.</p>
-<p>[css] ul#yerimi li a { display:block; float:left; color:#0086C0;
-text-decoration:none; background:url(bc_separator.png) top right
-no-repeat; height:30px; padding-right:15px; font-weight:normal } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span><span class="m">#0086C0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>text-decoration:none; background:url(bc_separator.png) top right
+no-repeat; height:30px; padding-right:15px; font-weight:normal } </p>
 <p>Son olarakta tüm alana bir ardalan resmi koyup birde kenar çizgisi
 ekleyelim.</p>
-<p>[css] ul#yerimi { border:1px solid #cacaca; background:url(bc_bg.png)
-0 0 repeat-x } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#yerimi</span> <span class="p">{</span> <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#cacaca</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span><span class="sx">url(bc_bg.png)</span>
+</pre></div>
+
+
+<p>0 0 repeat-x } </p>
 <p>Bu eklemeyide yapınca <a href="http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/">Float Uygulanmış Elementleri Tam Kapsayamama
 (clearfix) sorunu</a> ile karşılaşırız. Çözüm linkteki gibidir. sonuç
 olarak CSS kodumuz;<br />
 </p>
-<p>[css] .kapsul:after { content: "."; display: block; height: 0; clear:
-both; visibility: hidden; } .kapsul { display: inline-block; } /*IE-mac
-de bu bolumu sakla \ */ * html .kapsul { height: 1%; } .kapsul {
-display: block; } /* IE-mac bu bolumu saklam artik */ ul#yerimi {
+<div class="codehilite"><pre> <span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">clear</span><span class="o">:</span>
+</pre></div>
+
+
+<p>both; visibility: hidden; } .kapsul { display: inline-block; } /<em>IE-mac
+de bu bolumu sakla  </em>/ * html .kapsul { height: 1%; } .kapsul {
+display: block; } /<em> IE-mac bu bolumu saklam artik </em>/ ul#yerimi {
 border:1px solid #cacaca; background:url(bc_bg.png) 0 0 repeat-x }
 ul#yerimi, ul#yerimi li { list-style:none; margin:0; padding:0; }
 ul#yerimi li { float:left; font:12px Arial, Helvetica, sans-serif;
@@ -148,30 +167,25 @@ line-height:30px; padding-left:15px; font-weight:bold } ul#yerimi li a
 { display:block; float:left; color:#0086C0; text-decoration:none;
 background:url(bc_separator.png) top right no-repeat; height:30px;
 padding-right:15px; font-weight:normal } ul#yerimi li a:hover {
-text-decoration:underline } [/css]</p>
+text-decoration:underline } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/yerimi/yerimi.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh3.googleusercontent.com/OjH1IANl7PK66MMTvt58TUuh-jpAteN0eNeRmErj7ndN5bceqRpoxyqz1gox1LsEFUkX3vw4Qh7hISY0C3yuCTJkY4nFIi8hVtPnj8Oqo-U2zeGyabs" /></p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="../static">http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/</a>
+<li><a href="http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/">http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/</a>
     (kullanım avantajları ve örnekler)</li>
 <li><a href="http://quince.infragistics.com/Patterns/Breadcrumbs.aspx">http://quince.infragistics.com/Patterns/Breadcrumbs.aspx</a>
     (mantalitesi)</li>
 <li><a href="http://www.patternry.com/p=breadcrumbs/">http://www.patternry.com/p=breadcrumbs/</a> (mantalitesi)</li>
 <li><a href="http://www.useit.com/alertbox/breadcrumbs.html">http://www.useit.com/alertbox/breadcrumbs.html</a> (mantalite)</li>
-<li>[http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs][]</li>
+<li><a href="http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs">http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs</a></li>
 <li><a href="http://css-tricks.com/triangle-breadcrumbs/">http://css-tricks.com/triangle-breadcrumbs/</a></li>
 <li><a href="http://css-tricks.com/markup-for-breadcrumbs/">http://css-tricks.com/markup-for-breadcrumbs/</a></li>
-<li><a href="../static">http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx</a></li>
+<li><a href="http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx">http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx</a></li>
 <li><a href="http://alpha.patterntap.com/collections/Breadcrumbs">http://alpha.patterntap.com/collections/Breadcrumbs</a> (örnekler)</li>
 <li><a href="http://patterntap.com/tap/collection/breadcrumbs">http://patterntap.com/tap/collection/breadcrumbs</a> (örnekler)</li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>03<span class="o">/</span>17<span class="o">/</span><span class="n">breadcrumbs</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">design</span><span class="o">-</span><span class="n">examples</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">best</span><span class="o">-</span><span class="n">practices</span><span class="o">-</span>2<span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">veerle</span><span class="o">-</span><span class="n">v2</span><span class="p">.</span><span class="n">duoh</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="n">simple_scalable_css_based_breadcrumbs</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">jankoatwarpspeed</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">post</span><span class="o">/</span>2008<span class="o">/</span>08<span class="o">/</span>14<span class="o">/</span><span class="n">Create</span><span class="o">-</span><span class="n">applecom</span><span class="o">-</span><span class="n">like</span><span class="o">-</span><span class="n">breadcrumb</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">simple</span><span class="o">-</span><span class="n">CSS</span><span class="p">.</span><span class="n">aspx</span>
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

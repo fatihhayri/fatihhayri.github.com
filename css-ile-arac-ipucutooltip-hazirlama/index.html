@@ -89,33 +89,47 @@ oluşturmaktadır ve oluşturmaya devam etmektedir. Biz burada sadece CSS
 ile Araç İpucu oluşturmayı göreceğiz. Bu metot yeni nesil tarayıcılarda
 sorunsuz çalışmaktadır. <!--more--></p>
 <p>XHTML kodu :</p>
-<p>[sourcecode language="html"] \&lt;p> \&lt;a
-href="http://www.fatihhayrioglu.com/" class="aracIpucu">Fatih
-Hayrioğlu\&lt;span> (Fatih Hayrioğlu’nun Not Defteri) \&lt;/span>\&lt;/a> web
-sitesine bir göz atın. \&lt;/p> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;p&gt;</span> <span class="nt">&lt;a</span>
+</pre></div>
+
+
+<p>href="http://www.fatihhayrioglu.com/" class="aracIpucu"&gt;Fatih
+Hayrioğlu<span> (Fatih Hayrioğlu’nun Not Defteri) </span></a> web
+sitesine bir göz atın. </p> </p>
 <p>Araç İpucu eklenecek linke aracIpucu sınıfı atanmış ve Araç İpucu içinde
-görünecek açıklama \&lt;span> etiketleri arasına alınmıştır.</p>
-<p>[sourcecode language="css"] a.aracIpucu{ position: relative; }
-a.aracIpucu span { display: none; } [/sourcecode]</p>
-<p>Buradaki espri konumlandırma(realtive->absolute) esprisidir. Araç İpucu
+görünecek açıklama <span> etiketleri arasına alınmıştır.</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.aracIpucu</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<p>a.aracIpucu span { display: none; } </p>
+<p>Buradaki espri konumlandırma(realtive-&gt;absolute) esprisidir. Araç İpucu
 eklenecek linke position: relative; ataması yapıp, içindeki span
 elementinide mutlak konumlandırma atayarak işi halledeceğiz. Ama sayfa
 ilk yüklendiğinde span içindeki bilgi görünmemesi için başlangıç
 durumunda span etiketini görünmez yapıyoruz(display:none;).</p>
-<p>[sourcecode language="css"] a.aracIpucu:hover span { display: block;
-position: absolute; top: 18px; left: 20px; width:200px; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.aracIpucu</span><span class="nd">:hover</span> <span class="nt">span</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</pre></div>
+
+
+<p>position: absolute; top: 18px; left: 20px; width:200px; } </p>
 <p>Fare imleci link üzerine geldiğinde(:hover) span içeriğini göstermek
 için display:block ataması yapıyoruz. Ayrıca araç ipucunun yerini
 belirliyoruz. Araç İpucuna görsellik kazandırmak isteyenler için
 aşağıdaki kodları ekleyebiliriz.</p>
-<p>[sourcecode language="css"] a.aracIpucu:hover span { display:block;
-position:absolute; top:18px; left:20px; width:200px; padding:2px 6px;
-border:1px solid #963; background-color:#FF6; color:#000; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.aracIpucu</span><span class="nd">:hover</span> <span class="nt">span</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+</pre></div>
+
+
+<p>position:absolute; top:18px; left:20px; width:200px; padding:2px 6px;
+border:1px solid #963; background-color:#FF6; color:#000; }</p>
 <p>Maalesef bu kod IE5x versiyonlarda tam anlamıyla çalışmayacaktır. Bu
 durumu düzeltmek için</p>
-<p>[sourcecode language="css"] a.aracIpucu:hover { font-size: 100%; /*
-IE5.x/Win duzeltmek icin */ } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.aracIpucu</span><span class="nd">:hover</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="o">/*</span>
+</pre></div>
+
+
+<p>IE5.x/Win duzeltmek icin */ } </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/arac_ipucu_1.html">tıklayınız.</a> Veyahut resimli bir tanıtım için
 başka bir örnek yaparsak <a href="../static/dokumanlar/arac_ipucu_3.html">tıklayınız.</a></p>
 <p>Ayrıca Safari kullanıcıları için üzgünüz. Safari bu kodlara olumlu yanıt
@@ -123,23 +137,28 @@ vermiyor.</p>
 <p>Görselliği daha hoş olan araç ipuçlarıda yapabiliriz. Bunun için Xhtml
 kodumuzu aşağıdaki <strong>em</strong> eklemesini yapıyoruz. Amacımız bu elemente
 ikon resmini eklemek.</p>
-<p>[sourcecode language="html"] \&lt;p> \&lt;a
-href="http://www.fatihhayrioglu.com/" class="aracIpucu"> Fatih
-Hayrioğlu\&lt;span>\&lt;em>\&lt;/em> (Fatih Hayrioğlu'nun Not Defteri)
-\&lt;/span>\&lt;/a> web sitesine bir göz atın. \&lt;/p> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;p&gt;</span> <span class="nt">&lt;a</span>
+</pre></div>
+
+
+<p>href="http://www.fatihhayrioglu.com/" class="aracIpucu"&gt; Fatih
+Hayrioğlu<span><em></em> (Fatih Hayrioğlu'nun Not Defteri)
+</span></a> web sitesine bir göz atın. </p> </p>
 <p>CSS koduna gelince:</p>
 <p>[sourcecode language="css" highlight="4,5"] a.aracIpucu:hover span {
 display:block; position:absolute; top:25px; left:-5px; width:200px;
 padding:2px 6px; border:1px solid #963; background-color:#FF6;
-color:#000; } [/sourcecode]</p>
+color:#000; } </p>
 <p>düzeltmesini yapıyoruz. Ayrıca ikon için aşağıdaki eklemeyi yapıyoruz.</p>
-<p>[sourcecode language="css"] a.aracIpucu:hover span em {
-position:absolute; left:20px; top:-6px; width:11px; height:6px;
-background:#fff url(yukariok.gif) 0 0; display:block; font-size:1px; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.aracIpucu</span><span class="nd">:hover</span> <span class="nt">span</span> <span class="nt">em</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>position:absolute; left:20px; top:-6px; width:11px; height:6px;
+background:#fff url(yukariok.gif) 0 0; display:block; font-size:1px; }</p>
 <p>Örneği görmek için <a href="../static/dokumanlar/arac_ipucu_2.html">tıklayınız.</a></p>
 <ul>
-<li><a href="../static">http://www.smashingmagazine.com/2007/06/12/tooltips-scripts-ajax-javascript-css-dhtml/</a></li>
+<li><a href="http://www.smashingmagazine.com/2007/06/12/tooltips-scripts-ajax-javascript-css-dhtml/">http://www.smashingmagazine.com/2007/06/12/tooltips-scripts-ajax-javascript-css-dhtml/</a></li>
 <li><a href="http://www.cssplay.co.uk/menu/tooltips.html">http://www.cssplay.co.uk/menu/tooltips.html</a></li>
 <li><a href="http://www.communitymx.com/content/article.cfm?page=1&amp;cid=4E2C0">http://www.communitymx.com/content/article.cfm?page=1&amp;cid=4E2C0</a></li>
 <li><a href="http://psacake.com/web/jl.asp">http://psacake.com/web/jl.asp</a></li>
@@ -147,9 +166,6 @@ background:#fff url(yukariok.gif) 0 0; display:block; font-size:1px; }
 <li><a href="http://www.peutetreunereponse.net/article-6614978.html">http://www.peutetreunereponse.net/article-6614978.html</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2007<span class="o">/</span>06<span class="o">/</span>12<span class="o">/</span><span class="n">tooltips</span><span class="o">-</span><span class="n">scripts</span><span class="o">-</span><span class="n">ajax</span><span class="o">-</span><span class="n">javascript</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">dhtml</span><span class="o">/</span>
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

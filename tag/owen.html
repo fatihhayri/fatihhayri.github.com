@@ -96,8 +96,11 @@ görüntülenmeyecektir, bu nedenle IE6 ve altı versiyonlarda görünmesi
 istenmeyen tanımlar Çocuk Seçicileri kullanarak gizlenebilir.</p>
 <p>Her tanımlamadan sonra ikinci bir tanımlama olarak kullanılır. İkinci
 tanımlama çocuk seçicisi olmalıdır.</p>
-<p>[sourcecode language="css"] .icerik h3 {height:21px;} .icerik > h3
-{height:auto; min-height:21px;} [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.icerik</span> <span class="nt">h3</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span><span class="m">21px</span><span class="p">;}</span> <span class="nc">.icerik</span> <span class="o">&gt;</span> <span class="nt">h3</span>
+</pre></div>
+
+
+<p>{height:auto; min-height:21px;} </p>
 <p><a href="http://www.fatihhayrioglu.com/internet-explorer-7-ve-css/">IE 7 Çocuk Seçicilerini desteklemektedir.</a> Bu metot uygulanırken bu
 dikkate alınmalıdır.</p>
 <h3>Özellik(Attribute) Seçicileri Kullanarak Hata Ayıklamak</h3>
@@ -110,36 +113,48 @@ kullanılır.</p>
 <p>Özellik Seçicileri kullanarak elementlerin id'lerine göre atamalar
 yapabiliriz. Bu bize bir çok avantaj sağlar. Bu avantajları hata
 ayıklamak içinde kullanabiliriz.</p>
-<p>[sourcecode language="html"] \&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
-4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;title>Test\&lt;/title>
-\&lt;style type="text/css"> p{background: red; /* Tüm web tarayıcılarında
-görünür */} body[class|="sayfaYapisi"] p{ background: green; /* IE 7
-ve Yeni web tarayıcılarında görünür Opera hariç */} \&lt;/style>
-\&lt;/head> \&lt;body class="sayfaYapisi"> \&lt;p>Test\&lt;/p> \&lt;/body>
-\&lt;/html> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+</pre></div>
+
+
+<p>4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Test</title>
+<style type="text/css"> p{background: red; /<em> Tüm web tarayıcılarında
+görünür </em>/} body[class|="sayfaYapisi"] p{ background: green; /<em> IE 7
+ve Yeni web tarayıcılarında görünür Opera hariç </em>/} </style>
+</head> <body class="sayfaYapisi"> <p>Test</p> </body>
+</html> </p>
 <h3>Genel Seçicileri (*) Kullanarak Hata Ayıklamak</h3>
 <p>Her ne kadar bu hata IE7 ile birlikte düzeltildiyse de çok kullanışlı
 bir hata ayıklama metodudur. Kullanımı çok basittir.</p>
-<p>[sourcecode language="css"] a:hover {border: 1px dotted black;} * html
-a:hover { // bu tanımlamayı ie6+ ve altı versiyonlarda görünmeyecektir.
-border-style: solid; } [/sourcecode]</p>
-<h3>Ters Bölü İşareti(\) İle Hata Ayıklama</h3>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span><span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">dotted</span> <span class="nb">black</span><span class="p">;}</span> <span class="o">*</span> <span class="nt">html</span>
+</pre></div>
+
+
+<p>a:hover { // bu tanımlamayı ie6+ ve altı versiyonlarda görünmeyecektir.
+border-style: solid; } </p>
+<h3>Ters Bölü İşareti() İle Hata Ayıklama</h3>
 <p>IE5x/Win versiyonları bu karakteri yorumlamazlar bu nedenle IE5x/win
 versiyonlarından kodumuzu gizlemek için bu yöntemi kullanabiliriz. CSS
 kodu yazarken en çok ihtiyacımız olan genişlik tanımının IE5x
 versiyonlarda yanlış algılanmasıdır. bu hatayı düzeltmek için bu yöntem
 kullanılabilir.</p>
-<p>[sourcecode language="css"] #icerik { width: 770px; wid\th: 750px; /*
-ie5x - win bu kodu görmeyecek */ } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nf">#icerik</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">770px</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">750px</span><span class="p">;</span> <span class="o">/*</span>
+</pre></div>
+
+
+<p>ie5x - win bu kodu görmeyecek */ } </p>
 <p>Ben şahsen kutu modelinde hata ayıklamak için <a href="http://tantek.com/CSS/Examples/boxmodelhack.html">tantek</a>'in kullandığı
 <a href="http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/">metodu</a> kullanıyorum, daha sağlıklı ve tüm web tarayıcıları göze
 alınarak hazırlanmış bir hata ayıklama metodudur tavsiye ederim. Ama bu
 yönteminde kullanıldığını bilelim.</p>
 <h3>Alt Çizgi (_) ile Hata Ayıklama</h3>
 <p>Bu yöntemde IE4-6 versiyonlarda hata düzeltmek için kullanılabilir.</p>
-<p>[sourcecode language="css"] #menu { position: fixed; _position:
-static; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nf">#menu</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span> <span class="n">_position</span><span class="o">:</span>
+</pre></div>
+
+
+<p>static; } </p>
 <p>Burada yeni nesil web tarayıcıları ikinci tanımlamayı görecek ve buna
 göre yorumlama yapacaktır. Ancak IE4-6/win versiyonları (_)
 anlayamadığı için bu kodu yorumlamayacak ve ilk koda göre hareket
@@ -148,21 +163,30 @@ edecektir.</p>
 <p>şžimdiye kadar ki tüm yöntemler Internet Explorer içindi. Bunun nedeni
 bir çok hatanın IE'den kaynaklanmasıdır tabi. şžimdi kullanacağımız
 metod ise Opera için bir hata ayıklamasıdır.</p>
-<p>[sourcecode language="css"] .solAlan { background-image: none } /*
-Asagidaki bolum Opera 6 ve altı veya IE6/win görünmeyecek */
+<div class="codehilite"><pre> <span class="nc">.solAlan</span> <span class="p">{</span> <span class="k">background-image</span><span class="o">:</span> <span class="k">none</span> <span class="p">}</span> <span class="o">/*</span>
+</pre></div>
+
+
+<p>Asagidaki bolum Opera 6 ve altı veya IE6/win görünmeyecek */
 head:first-child+body .solAlan { background-image: url(menu.png);
-background-attachment: fixed; } [/sourcecode]</p>
+background-attachment: fixed; } </p>
 <p>Bu yöntem hem Opera 6 ve altı hem de IE6 ve altı versiyonlar için
 geçerlidir. Sadece Opera 6 ve altı versiyonlar için kod yazmak istersek</p>
-<p>[sourcecode language="css"] html>body div.alt { c\olor: red; /*
-sadece Opera 6 için */ } head:first-child+body div.alt { color: black;
-} [/sourcecode]</p>
-<h3>Yorum Kodları içinde (\) Kullanımı ile IE/Mac'de Hata Ayıklama</h3>
-<p>IE/Mac versiyonlarında yorum satırı içindeki ters bölme işaretini(\)
+<div class="codehilite"><pre> <span class="nt">html</span><span class="o">&gt;</span><span class="nt">body</span> <span class="nt">div</span><span class="nc">.alt</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="o">/*</span>
+</pre></div>
+
+
+<p>sadece Opera 6 için */ } head:first-child+body div.alt { color: black;
+} </p>
+<h3>Yorum Kodları içinde () Kullanımı ile IE/Mac'de Hata Ayıklama</h3>
+<p>IE/Mac versiyonlarında yorum satırı içindeki ters bölme işaretini()
 yorumlamamaktadır. Bu nedenle IE/Mac versiyonlarında hata ayıklamak için
 bu yöntem kullanılabilir.</p>
-<p>[sourcecode language="css"] /* bu alani IE5/Mac den gizleyelim \*/ *
-html { height: 1px; } /* hata ayiklama sonu */ [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="c">/* bu alani IE5/Mac den gizleyelim */</span> <span class="o">*</span>
+</pre></div>
+
+
+<p>html { height: 1px; } /<em> hata ayiklama sonu </em>/ </p>
 <p>Bunların dışında kutu modeli hata ayıklaması için kullandığımız
 <a href="http://www.fatihhayrioglu.com/?p=13">tantek</a>'in yöntemi, <a href="http://www.fatihhayrioglu.com/?p=31">Css de kodumuzu İE'den gizleme</a> adlı makalede
 kullandığımız <strong>!important</strong> yöntemi ve <a href="http://www.fatihhayrioglu.com/?p=182">IE'da min-width,
@@ -172,7 +196,7 @@ için değinmedik. Bunların dışında kullanılan diğer bazı yöntemler olsa
 da biz burada genel kabul görmüş yöntemleri yazmayı uygun bulduk.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li>[http://www.webdevout.net/articles/css_hacks.php][]</li>
+<li><a href="http://www.webdevout.net/articles/css_hacks.php">http://www.webdevout.net/articles/css_hacks.php</a></li>
 <li><a href="http://swik.net/CSS/CSS+Hacks">http://swik.net/CSS/CSS+Hacks</a></li>
 <li><a href="http://css-discuss.incutio.com/?page=CssHack">http://css-discuss.incutio.com/?page=CssHack</a></li>
 <li><a href="http://www.quirksmode.org/css/csshacks.html">http://www.quirksmode.org/css/csshacks.html</a></li>

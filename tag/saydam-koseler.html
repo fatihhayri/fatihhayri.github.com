@@ -84,10 +84,13 @@ benim orada gördüğüm bir uygulama idi.</p>
 <p><img alt="" src="https://lh5.googleusercontent.com/_SHFSSO6P4rp8S4nZY3vxCmgDN6E4T4s388AlMh0qsEPBkUtJTheYUlsBJ6scDYACwDYDlM7FOieyXgENGEmWzpUohoMOcsXmASOjoTHB5Jub4ojri0" /></p>
 <p>Benzer bir uygulamayı yapmak için kodları yazdım. Daha önce bahsettiğim
 <a href="http://www.fatihhayrioglu.com/css3-rgba-renk-tanimi/">rgba tanımı</a> ile bu iş çok basit olacaktı.</p>
-<p>[css] #popup{ position:absolute; top:90px; left:40%; border:10px solid
-rgba(0,0,0, 0.5); text-align:center; font-size:24px;
+<div class="codehilite"><pre> <span class="nf">#popup</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span><span class="m">90px</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span><span class="m">40</span><span class="o">%</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span><span class="m">10px</span> <span class="k">solid</span>
+</pre></div>
+
+
+<p>rgba(0,0,0, 0.5); text-align:center; font-size:24px;
 background-color:#FFFFFF; width:350px; padding:50px 0;
-border-radius:10px; z-index:100; } [/css]</p>
+border-radius:10px; z-index:100; } </p>
 <p>Ancak aşağıdaki gibi bir görüntü elde ettim.<br />
 <img alt="" src="https://lh4.googleusercontent.com/HG1aPLVyrPkO-QDocagwVvy3t2Ib1jSb8P8LG9TYrNOXo7QEQBayw6Bk8BlztGYU2Cd5CnBV7eYWR8GT0bXk-E6bAZ_Jh8OyzHGEbaOeQPSpO9yvYYs" /></p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/UYJWH/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -95,13 +98,16 @@ border-radius:10px; z-index:100; } [/css]</p>
 <p>Çözümü biraz araştırdım ancak pek bir şey bulamadım derken css-tricks’in
 çözümü bana ilaç gibi geldi. Çözüm <a href="http://www.fatihhayrioglu.com/css3-background-origin-ve-background-clip-ozellikleri/">background-clip özelliği</a> tanımı
 ile sağlanıyor.</p>
-<p>[css] #popup{ position:absolute; top:90px; left:40%; border:10px solid
-rgba(0,0,0, 0.5); text-align:center; font-size:24px;
+<div class="codehilite"><pre> <span class="nf">#popup</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span><span class="m">90px</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span><span class="m">40</span><span class="o">%</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span><span class="m">10px</span> <span class="k">solid</span>
+</pre></div>
+
+
+<p>rgba(0,0,0, 0.5); text-align:center; font-size:24px;
 background-color:#FFFFFF; width:350px; padding:50px 0;
-border-radius:10px; z-index:100; -moz-background-clip: padding; /*
-Firefox 3.6 */ -webkit-background-clip: padding; /* Safari 4? Chrome
-6? */ background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10,
-IE 9 */ } [/css]</p>
+border-radius:10px; z-index:100; -moz-background-clip: padding; /<em>
+Firefox 3.6 </em>/ -webkit-background-clip: padding; /<em> Safari 4? Chrome
+6? </em>/ background-clip: padding-box; /<em> Firefox 4, Safari 5, Opera 10,
+IE 9 </em>/ } </p>
 <p><img alt="" src="https://lh5.googleusercontent.com/A5kRKORp2QXmurGBD_WaoXQl_V0P6Fi3Ojm1JhB3cDVLfIvjTApd8K-VjxIbP8cQ-rQ47kPfj9gimC6IbudkTi7CITtaTGo4Lf2Fy4aybKvGmYXZBnU" /></p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/qjmyS/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 

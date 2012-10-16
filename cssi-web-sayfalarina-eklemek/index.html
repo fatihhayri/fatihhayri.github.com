@@ -85,48 +85,62 @@
       <h3>1- Kod içinde (In-line)</h3>
 <p>Direk olarak (X)HTML elementin içine <strong>style</strong> özelliği kullanılarak
 uygulamak.<!--more--></p>
-<p>[sourcecode language="html"] \&lt;div style="color:red">Deneme
-yazımız\&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;color:red&quot;</span><span class="nt">&gt;</span>Deneme
+</pre></div>
+
+
+<p>yazımız</div> </p>
 <p>Tüm CSS komutlarını kodların içine direk uygulamak önerilen bir kodlama
 şekli değildir. Ancak özel durumlarda kullanılabilir.</p>
 <h3>2- style Elementi kullanılarak</h3>
-<p>\&lt;head> kısmında \&lt;style> elementi içinde CSS kodumuzu yazarak
+<p><head> kısmında <style> elementi içinde CSS kodumuzu yazarak
 uygulamak.</p>
-<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+</pre></div>
+
+
+<p>1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-\&lt;title>CSS'i Uygulamak \&lt;/title> \&lt;style type="text/css"> div{
-color:red; } \&lt;/style> \&lt;/head> [/sourcecode]</p>
+<title>CSS'i Uygulamak </title> <style type="text/css"> div{
+color:red; } </style> </head> </p>
 <p>Birinci yönteme göre avantajı (X)HTML kod ile CSS bir birinden
 ayrıştırılmış olmasıdır.</p>
 <h3>3- Harici Stil şablonu Kullanımı</h3>
 <p>Bu metod da CSS kodlarımzı <strong>.css</strong> uzantılı bir dosyaya kaydederiz.
 <strong>ornek.css</strong></p>
-<p>[sourcecode language="css"] p { color: red; } a { color: blue; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Daha sonra bu kodu gereken sayfalarımıza uygularız.</p>
-<p>[sourcecode language="html"]\&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre><span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+</pre></div>
+
+
+<p>1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-\&lt;title>CSS'i Uygulamak\&lt;/title> \&lt;link rel="stylesheet"
-type="text/css" href="ornek.css" /> \&lt;/head> [/sourcecode]</p>
+<title>CSS'i Uygulamak</title> <link rel="stylesheet"
+type="text/css" href="../static/ornek.css" /> </head> </p>
 <p>Bu yöntemin diğerlerine göre en büyük avantajı bir kere yazılan kod
 lazım olan tüm sayfalara eklenebilmesidir. Bu sayede harici eklenen css
 kodu bir kere yüklendikten sonra diğer kullandığımız sayfalarda tekrar
 yüklenemeyerek bize hız kazandıracaktır.</p>
 <h3>4- @import ile eklemek</h3>
 <p>üncü yöntem ile kullanımı benzerdir.</p>
-<p>[sourcecode language="html"]\&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre><span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+</pre></div>
+
+
+<p>1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-\&lt;title>CSS'i Uygulamak\&lt;/title> \&lt;style type="text/css"> @import
-"ornek.css"; \&lt;/style> \&lt;/head> [/sourcecode]</p>
+<title>CSS'i Uygulamak</title> <style type="text/css"> @import
+"ornek.css"; </style> </head> </p>
 <p>Bu yöntemle eklenen harici css dosyası eski web tarayıcıları tarafından
 görüntülenemeyecektir.(Örn: NN4)</p>
 <p>@import ile eklenen kod link ile eklenen kodlamadan önce yorumlanır web
@@ -141,20 +155,26 @@ kullanılan sayfa CSS'inde hangi parçalar gerekli ise onların import
 edilmesi önerilir. Bu sayfade kodun bir kısmında yaptığımız değişiklik
 için tüm css kodu incelenip değiştirlmesi gerekmez ve kod yönetimi
 kolaylaşır.</p>
-<p>[sourcecode language="html"]\&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre><span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+</pre></div>
+
+
+<p>1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-\&lt;title>CSS'i Uygulamak\&lt;/title> \&lt;style type="text/css"> @import
-"ornek.css"; \&lt;/style> \&lt;/head>[/sourcecode]</p>
+<title>CSS'i Uygulamak</title> <style type="text/css"> @import
+"ornek.css"; </style> </head></p>
 <p>Ürünler bölümü için bir css dosyası ekleyelim sonra parçalara
 ayırdığımız css kodlarının ürünlere lazım olanlarını <strong>urunler.css</strong>
 içine ekleyelim.</p>
 <p><strong>urunler.css</strong></p>
-<p>[sourcecode language="css"] @import url(/css/iskelet.css); @import
-url(/css/fontlar.css); @import url(/css/renkler.css); @import
-url(/css/urunlereozel.css); [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="k">@import</span> <span class="nt">url</span><span class="o">(/</span><span class="nt">css</span><span class="o">/</span><span class="nt">iskelet</span><span class="nc">.css</span><span class="o">)</span><span class="p">;</span> <span class="k">@import</span>
+</pre></div>
+
+
+<p>url(/css/fontlar.css); @import url(/css/renkler.css); @import
+url(/css/urunlereozel.css); </p>
 </p>
     </div><!-- /.entry-content -->
     

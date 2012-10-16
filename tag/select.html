@@ -87,31 +87,48 @@
 içeriklerdeki elemanlara bir olay atadığımızda(click, mouseover vd.)
 çalışmayacaktır. jQuery geliştiricileri bunun için live() fonksiyonunu
 geliştirmiş.</p>
-<p>[sourcecode language="javascript"] \$('a.acilSusam').live('mouseover',
-function() { // yapilacak islemler }); [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a.acilSusam&#39;</span><span class="p">).</span><span class="nx">live</span><span class="p">(</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span>
+</pre></div>
+
+
+<p>function() { // yapilacak islemler }); </p>
 <h3>2 - Tarayıcı Penceresinin Boyutlarını Değişmesini Yakalamak</h3>
 <p>Belki ara sıra lazım olacak bir kod ama bazen gerekiyor işte. Pencere
 boyutu her değiştiğine bazı işlemleri yapmak sistemimizi yorabilir diye
 setTimeout yardımı ile belli aralıklarla bunu yaptırıyoruz.</p>
-<p>[sourcecode language="javascript"] function pencereBoyutuDegisti() {
-alert("Değişti"); }; var resizeTimer = null; \$(window).bind('resize',
+<div class="codehilite"><pre> <span class="kd">function</span> <span class="nx">pencereBoyutuDegisti</span><span class="p">()</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>alert("Değişti"); }; var resizeTimer = null; $(window).bind('resize',
 function() { if (resizeTimer) clearTimeout(resizeTimer); resizeTimer =
-setTimeout(pencereBoyutuDegisti, 100); }); [/sourcecode]</p>
+setTimeout(pencereBoyutuDegisti, 100); }); </p>
 <h3>3 - Element miktarını bulmak</h3>
 <p>Bir dokümanda seçilen elemandan kaç adet olduğu bulmak için;</p>
-<p>[sourcecode language="javascript"] \$('element').size(); [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;element&#39;</span><span class="p">).</span><span class="nx">size</span><span class="p">();</span>
+</pre></div>
+
+
 <h3>4 - Bir elemanın index değerini bulmak</h3>
 <p>index değerini bulmanın farklı bir yolu</p>
-<p>[sourcecode language="javascript"] \$("ul > li").click(function () {
-var index = \$(this).prevAll().length; }); [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;ul &gt; li&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>var index = $(this).prevAll().length; }); </p>
 <h3>5- Bir elemanın görünür olup olmadığını yakalamak</h3>
-<p>[sourcecode language="javascript"] if(\$(".eleman").is(":visible")) {
-alert('Burda'); } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.eleman&quot;</span><span class="p">).</span><span class="nx">is</span><span class="p">(</span><span class="s2">&quot;:visible&quot;</span><span class="p">))</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>alert('Burda'); } </p>
 <h3>6- Kaç tane alt elemanı(çocuk elemanı) var</h3>
-<p>[sourcecode language="html"] \&lt;div id="foo"> \&lt;div id="bar">\&lt;/div>
-\&lt;div id="baz"> \&lt;div id="biz"> \&lt;/div> \&lt;span>\&lt;span> \&lt;/div>
-//kac tane alt elemanı oldugunu bulmak icin \$("#foo > div").length
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;foo&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;bar&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+
+<p><div id="baz"> <div id="biz"> </div> <span><span> </div>
+//kac tane alt elemanı oldugunu bulmak icin $("#foo &gt; div").length</p>
 <h3>7- jQuery Kopya Kağıdı(Cheat Sheet)</h3>
 <p>jQuery'nini bir çok özelliği var ve bunları aklımızda tutma imkanımız
 yok. Bir kopya kağıdı işimize yaraya bilir.</p>
@@ -120,28 +137,24 @@ yok. Bir kopya kağıdı işimize yaraya bilir.</p>
 kullanarak biraz renklendirdim. <a href="http://fatihhayrioglu.com/dokumanlar/jQuery14.htm">Benim renklendirdiğim</a>(CSS3 içerir,
 herisi göremez)</p>
 <h3>8 - Select Elemanı ipuçları</h3>
-<p>[sourcecode language="javascript"] // secili olan ögenin metnini almak
-\$("#myselect option:selected").text(); // secili olan ögenin degerini
-almak icin \$("#myselect option:selected").val(); // secili ogenin
-index degeri \$("#myselect option").index(\$("#myselect
+<div class="codehilite"><pre> <span class="c1">// secili olan ögenin metnini almak</span>
+</pre></div>
+
+
+<p>$("#myselect option:selected").text(); // secili olan ögenin degerini
+almak icin $("#myselect option:selected").val(); // secili ogenin
+index degeri $("#myselect option").index($("#myselect
 option:selected")); // indeksi 2 olan ögeyi seçili hale getirmek
-\$("#myselect option:eq(2)").attr("selected", "selected");
-[/sourcecode]</p>
+$("#myselect option:eq(2)").attr("selected", "selected");</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://blog.kenmoredesign.com/2009/02/02/useful-jquery-snippets/">http://blog.kenmoredesign.com/2009/02/02/useful-jquery-snippets/</a></li>
-<li><a href="static">http://tympanus.net/codrops/2010/01/07/some-useful-javascript-jquery-snippets-part-2/</a></li>
-<li><a href="static">http://www.catswhocode.com/blog/10-jquery-snippets-for-efficient-developers</a></li>
-<li><a href="static">http://tympanus.net/codrops/2010/01/08/some-useful-javascript-jquery-snippets-part-3/</a></li>
-<li><a href="static">http://www.opensourcehunter.com/2010/02/27/26-cool-and-usefull-jquery-tips-tricks-solutions/</a></li>
+<li><a href="http://tympanus.net/codrops/2010/01/07/some-useful-javascript-jquery-snippets-part-2/">http://tympanus.net/codrops/2010/01/07/some-useful-javascript-jquery-snippets-part-2/</a></li>
+<li><a href="http://www.catswhocode.com/blog/10-jquery-snippets-for-efficient-developers">http://www.catswhocode.com/blog/10-jquery-snippets-for-efficient-developers</a></li>
+<li><a href="http://tympanus.net/codrops/2010/01/08/some-useful-javascript-jquery-snippets-part-3/">http://tympanus.net/codrops/2010/01/08/some-useful-javascript-jquery-snippets-part-3/</a></li>
+<li><a href="http://www.opensourcehunter.com/2010/02/27/26-cool-and-usefull-jquery-tips-tricks-solutions/">http://www.opensourcehunter.com/2010/02/27/26-cool-and-usefull-jquery-tips-tricks-solutions/</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">tympanus</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">codrops</span><span class="o">/</span>2010<span class="o">/</span>01<span class="o">/</span>07<span class="o">/</span><span class="n">some</span><span class="o">-</span><span class="n">useful</span><span class="o">-</span><span class="n">javascript</span><span class="o">-</span><span class="n">jquery</span><span class="o">-</span><span class="n">snippets</span><span class="o">-</span><span class="n">part</span><span class="o">-</span>2<span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">catswhocode</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>10<span class="o">-</span><span class="n">jquery</span><span class="o">-</span><span class="n">snippets</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">efficient</span><span class="o">-</span><span class="n">developers</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">tympanus</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">codrops</span><span class="o">/</span>2010<span class="o">/</span>01<span class="o">/</span>08<span class="o">/</span><span class="n">some</span><span class="o">-</span><span class="n">useful</span><span class="o">-</span><span class="n">javascript</span><span class="o">-</span><span class="n">jquery</span><span class="o">-</span><span class="n">snippets</span><span class="o">-</span><span class="n">part</span><span class="o">-</span>3<span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">opensourcehunter</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>02<span class="o">/</span>27<span class="o">/</span>26<span class="o">-</span><span class="n">cool</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">usefull</span><span class="o">-</span><span class="n">jquery</span><span class="o">-</span><span class="n">tips</span><span class="o">-</span><span class="n">tricks</span><span class="o">-</span><span class="n">solutions</span><span class="o">/</span>
-</pre></div><p>There are <a href=".././jquery-ipuclari-3/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././jquery-ipuclari-3/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

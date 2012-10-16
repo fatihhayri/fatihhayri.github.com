@@ -99,21 +99,26 @@ içi kutu içeriklerine göre farklı davranışlar gösterir.</p>
 bir içeriğimiz olsun ve bu içerikteki belli bir kısmı paragraf etiketi
 içine alalım ve bunlara sırası ile <strong>display:block</strong>, <strong>display:inline</strong>
 ve <strong>display:inline-block</strong> tanımları atayalım</p>
-<p>[sourcecode language="html"] \&lt;div id="denemeBir"> Lorem ipsum dolor
-sit amet... \&lt;p>Praesent id nunc eros. Integer mauris orci, venenatis
-ac tempor ut, gravida ac diam. \&lt;/p> Pellentesque...\&lt;/div> \&lt;div
-id="denemeIki">Quisque at venenatis nulla...\&lt;p>Nam fermentum
-porttitor hendrerit.\&lt;/p> Mauris ante nulla..\&lt;/div> \&lt;div
-id="denemeUc"> Sed urna neque...\&lt;p>Sed est lacus, laoreet at
-malesuada quis, convallis ut nibh.\&lt;/p> Sed dapibus...\&lt;/div>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;denemeBir&quot;</span><span class="nt">&gt;</span> Lorem ipsum dolor
+</pre></div>
+
+
+<p>sit amet... <p>Praesent id nunc eros. Integer mauris orci, venenatis
+ac tempor ut, gravida ac diam. </p> Pellentesque...</div> <div
+id="denemeIki">Quisque at venenatis nulla...<p>Nam fermentum
+porttitor hendrerit.</p> Mauris ante nulla..</div> <div
+id="denemeUc"> Sed urna neque...<p>Sed est lacus, laoreet at
+malesuada quis, convallis ut nibh.</p> Sed dapibus...</div></p>
 <p>CSS kodu</p>
-<p>[sourcecode language="css"] div {margin: 10px 0; border: 1px solid
-#000;} p {border: 1px dotted #000;} div#denemeBir p {display: block;
-width: 50px; text-align: center; background-color:#FF0} div#denemeIki
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span><span class="k">margin</span><span class="o">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span>
+</pre></div>
+
+
+<h1>000;} p {border: 1px dotted #000;} div#denemeBir p {display: block;</h1>
+<p>width: 50px; text-align: center; background-color:#FF0} div#denemeIki
 p {display: inline; width: 50px; text-align: center;
 background-color:#0FF} div#denemeUc p {display: inline-block; width:
-50px; text-align: center; background-color:#F0F} [/sourcecode]</p>
+50px; text-align: center; background-color:#F0F} </p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/display_inline_block.html">tıklayınız.</a></p>
 <p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/display_inline_block.jpg" title="display_inline_block" />][]</p>
 <p>Aynı yapıdaki elemanların display özelliğine sırası ile block, inline ve
@@ -130,14 +135,19 @@ göstermiştir.</p>
 <p><strong>display:inline-block</strong>tanımını daha iyi anlamak için nerelerde
 kullanırız neler yapabiliriz buna bakalım.</p>
 <h3>Float kullanmadan display:inline-block ile elemanları yan yana dizmek</h3>
-<p>[sourcecode language="html"] \&lt;div id="menu"> \&lt;a href="">Ana
-Sayfa\&lt;/a> \&lt;a href="">Ürünler\&lt;/a> \&lt;a href="">İletişim\&lt;/a>
-\&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Ana
+</pre></div>
+
+
+<p>Sayfa</a> <a href="../static">Ürünler</a> <a href="../static">İletişim</a>
+</div> </p>
 <p>CSS kodumuzu yazalım;</p>
-<p>[sourcecode language="css"] #menu a{ width:150px; height:50px; display:
-inline-block; margin:0; padding:5px; color: #1B1B1B; background-color:
-#E2E2E2; text-decoration: none; border-top:5px solid #999 }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nf">#menu</span> <span class="nt">a</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">50px</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span>
+</pre></div>
+
+
+<p>inline-block; margin:0; padding:5px; color: #1B1B1B; background-color:</p>
+<h1>E2E2E2; text-decoration: none; border-top:5px solid #999 }</h1>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/display_inline_block2.html">tıklayınız.</a></p>
 <p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/display_inline_block2.gif" title="display_inline_block2" />][]</p>
 <p>Bu kod ile biz öğeleri yan yana dizeriz. Normalde hiç bir tanım yapmasak
@@ -152,16 +162,20 @@ display:inline-block uyguladığımız elemanları sadece vertical-align
 seviyedeki elemanlar arasında olduğunu unutmamak lazım.</p>
 <p>Bir örnek yapalım. Yan yana dizilmiş üç kutu hazırlayalım ve bunları
 kapsayıcı katmana göre dikey olarak üstte, ortada ve altta hizalayalım.</p>
-<p>[sourcecode language="html"] \&lt;div class="anaKapsul"> \&lt;div
-class="solKutu">Sol\&lt;/div> \&lt;div class="ortaKutu">Orta\&lt;/div> \&lt;div
-class="sagKutu">Sağ\&lt;/div> \&lt;/div> [/sourcecode]</p>
-<p>CSS kodumuzu yazalım. [sourcecode language="css"] .anaKapsul { border:
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;anaKapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span>
+</pre></div>
+
+
+<p>class="solKutu"&gt;Sol</div> <div class="ortaKutu">Orta</div> <div
+class="sagKutu">Sağ</div> </div> </p>
+<p>CSS kodumuzu yazalım.   :::css
+     .anaKapsul { border:
 1px gray solid; padding: 5px; text-align: center; } .solKutu { display:
 inline-block; background-color: lightblue; vertical-align: middle;
 width: 200px; height: 200px; } .ortaKutu { display: inline-block;
 background-color: yellow; vertical-align: middle; width: 200px; height:
 150px; } .sagKutu { display: inline-block; background-color: gray;
-vertical-align: bottom; width: 200px; height: 100px; } [/sourcecode]</p>
+vertical-align: bottom; width: 200px; height: 100px; } </p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/display_inline_block3.html">tıklayınız.</a></p>
 <p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/display_inline_block3.gif" title="display_inline_block3" />][]</p>
 <p>Firefox, Safari, Google Chrome, Opera ve İE8'de bu görüntüyü elde
@@ -170,19 +184,22 @@ ederiz. Ancak ie7 ve ie6'da durum böyle değildir.</p>
 elemnalara <strong>display:inline ve zoom:1</strong> tanımı yapmalıyız. Bunun için
 <a href="http://www.fatihhayrioglu.com/tum-tarayicilar-icin-css-duzeltmelerihack/">tüm tarayıcılar için düzeltmeler</a> kısmındaki kodlardan
 yararlanacağım.</p>
-<p>[sourcecode language="css"] *:first-child+html div.anaKapsul
-div{display:inline; zoom: 1;} * html div.anaKapsul div{display:inline;
-zoom: 1;} [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="nt">div</span><span class="nc">.anaKapsul</span>
+</pre></div>
+
+
+<p>div{display:inline; zoom: 1;} * html div.anaKapsul div{display:inline;
+zoom: 1;} </p>
 <p>Bu kodları ekledikten sonra sorunumuz düzeldi.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="../static">http://www.search-this.com/2008/08/28/lets-all-get-inline-in-a-block-in-a-block/</a></li>
-<li><a href="../static">http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/</a></li>
+<li><a href="http://www.search-this.com/2008/08/28/lets-all-get-inline-in-a-block-in-a-block/">http://www.search-this.com/2008/08/28/lets-all-get-inline-in-a-block-in-a-block/</a></li>
+<li><a href="http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/">http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/</a></li>
 <li><a href="http://helephant.com/2009/08/a-great-big-welcome-to-inline-block/">http://helephant.com/2009/08/a-great-big-welcome-to-inline-block/</a></li>
-<li><a href="../static">http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/</a></li>
-<li><a href="../static">http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html</a></li>
-<li><a href="../static">http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/</a></li>
-<li>[http://www.quirksmode.org/css/display.html#t03][]</li>
+<li><a href="http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/">http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/</a></li>
+<li><a href="http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html">http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html</a></li>
+<li><a href="http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/">http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/</a></li>
+<li><a href="http://www.quirksmode.org/css/display.html#t03">http://www.quirksmode.org/css/display.html#t03</a></li>
 <li><a href="http://blog.ternstyle.us/blog/float-vs-inline-block">http://blog.ternstyle.us/blog/float-vs-inline-block</a></li>
 <li><a href="http://www.sitepoint.com/forums/showthread.php?t=596130">http://www.sitepoint.com/forums/showthread.php?t=596130</a> (sorun )</li>
 </ul>
@@ -190,12 +207,7 @@ zoom: 1;} [/sourcecode]</p>
 
 <p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/display_inline_block.jpg" title="display_inline_block" />]: http://www.fatihhayrioglu.com/wp-content/display_inline_block.jpg
   [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/display_inline_block2.gif" title="display_inline_block2" />]: http://www.fatihhayrioglu.com/wp-content/display_inline_block2.gif
-  [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/display_inline_block3.gif" title="display_inline_block3" />]: http://www.fatihhayrioglu.com/wp-content/display_inline_block3.gif
-    http://www.search-this.com/2008/08/28/lets-all-get-inline-in-a-block-in-a-block/
-    http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/
-    http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/
-    http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html
-    http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/</p>
+  [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/display_inline_block3.gif" title="display_inline_block3" />]: http://www.fatihhayrioglu.com/wp-content/display_inline_block3.gif</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

@@ -95,12 +95,18 @@ elemana etki edecektir.</p>
 <p>Peki, biz sayısal değeri küçük olan tanımın etkin olmasını istersek ne
 yapabiliriz? Bu sorunun cevabı ve bu ihtiyacı karşılayan tanım
 !important tanımıdır. Bir örnekle durumu gösterelim</p>
-<p>[sourcecode language="html"] \&lt;ul class="menu"> \&lt;li>Menü 1\&lt;/li>
-\&lt;li>Menü 2\&lt;/li> \&lt;li>Menü 3 \&lt;ul> \&lt;li class="deneme">Alt
-Menü\&lt;/li> \&lt;/ul> \&lt;/li> \&lt;li>Menü 4\&lt;/li> \&lt;/ul> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;li&gt;</span>Menü 1<span class="nt">&lt;/li&gt;</span>
+</pre></div>
+
+
+<p><li>Menü 2</li> <li>Menü 3 <ul> <li class="deneme">Alt
+Menü</li> </ul> </li> <li>Menü 4</li> </ul> </p>
 <p>CSS kodumuzda aşağıdaki gibi olsun</p>
-<p>[sourcecode language="css"] ul.menu li{ background-color:#3CF; }
-li.deneme{ background-color:#f00; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">li</span><span class="p">{</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#3CF</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<p>li.deneme{ background-color:#f00; } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/important_kullanimi.html">tıklayınız.</a></p>
 <p>Kodumuza göre tüm li background rengi <strong>#3CF</strong>olsun ama .deneme sınıfı
 tanımladığımız li'nin ki kırmızı olsun diyoruz, ancak sonuç istediğimiz
@@ -114,8 +120,10 @@ gibi olmuyor.</p>
 bulunmaktadır. Bir tanesi istediğimiz atamanın üste çıkması için seçici
 değerini arttırmak, yani örnek kodumuzda bu li.deneme yerine ul
 li.deneme şeklinde yaparak seçici etkinliğini arttırarak yapmaktır.</p>
-<p>[sourcecode language="css"] ul.menu li.deneme{ background-color:#F00; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">li</span><span class="nc">.deneme</span><span class="p">{</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#F00</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/important_kullanimi2.html">tıklayınız.</a></p>
 <p>Bu kod bizi çözüme ulaştıracaktır, ancak bazen bu çözüm çok can sıkıcı
 haller alabiliyor. Büyük projelerde çok sık rastladığımız bir sorun.</p>
@@ -124,8 +132,11 @@ haller alabiliyor. Büyük projelerde çok sık rastladığımız bir sorun.</p>
 bu önemli bunu etkin yap demek, yani sonuna !important eklemek ile
 olur.<br />
 </p>
-<p>[sourcecode language="css"] li.deneme{ background-color:#f00
-!important; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">li</span><span class="nc">.deneme</span><span class="p">{</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#f00</span>
+</pre></div>
+
+
+<p>!important; } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/important_kullanimi3.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh4.googleusercontent.com/k4feQBZhKIgAEdx-nVS7HLKHhYCjBboutU5CxKoI_sxdt53CUgH98KJB0fXzcpVbDbrEq3-y9Bi8Mxbo_nkBEPFhfhY-fxVKdVS13qJnykWupm4qOg" /><br />
 </p>
@@ -147,12 +158,18 @@ burada ie6’nın bir sorununu avantaja çevirmiş oluyoruz.</p>
 acil bir düzeltme gerektiğin genelde lazım oluyor important tanımı. Eğer
 html içinden bir tanım yapıldı ise css ile yaptığımız hiç bir tanım
 satıriçi kodu ezemiyecektir. Tek çare important tanımıdır.</p>
-<p>[sourcecode language="html"] \&lt;ul style="background-color:#3CF">
-\&lt;li>Deneme\&lt;/li> \&lt;ul> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">style=</span><span class="s">&quot;background-color:#3CF&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<p><li>Deneme</li> <ul> </p>
 <p>Tanımı olsun biz bu elemanı background rengini değiştirmek istersek
 sadece important ile değiştirebiliriz.</p>
-<p>[sourcecode language="css"] li.deneme{ background-color:#f00
-!important; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">li</span><span class="nc">.deneme</span><span class="p">{</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#f00</span>
+</pre></div>
+
+
+<p>!important; } </p>
 <p>Tanımı li elemanının background rengini kırmızı yapacaktır.</p>
 <p>Son bir ipucu olarak şu cümleyi söyleyelim. CSS kısaltmalarına yapılan
 important tanımı kısaltması yapılan özelliklere tek tek yapılmış
@@ -165,19 +182,14 @@ okunaksız hale getirebilir, buna dikkat etmek gerekir.</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://bytesizecss.com/blog/post/ie6-and-the-important-rule/">http://bytesizecss.com/blog/post/ie6-and-the-important-rule/</a></li>
-<li><a href="static">http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/</a></li>
+<li><a href="http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/">http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/</a></li>
 <li><a href="http://www.electrictoolbox.com/using-important-css/">http://www.electrictoolbox.com/using-important-css/</a></li>
-<li><a href="static">http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml</a></li>
-<li><a href="static">http://www.yellowjug.com/web-design/the-importance-of-important-in-css/</a></li>
+<li><a href="http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml">http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml</a></li>
+<li><a href="http://www.yellowjug.com/web-design/the-importance-of-important-in-css/">http://www.yellowjug.com/web-design/the-importance-of-important-in-css/</a></li>
 <li>[http://friendfeed.com/arayuz-gelistiriciler/120084de/css-yazarken-ustten-gelen-degerleri-ezmek-icin][Friendfeed’de
     bir serzenişim üzerine Fatih Turan’ın bir cevabı]</li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">impressivewebs</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">everything</span><span class="o">-</span><span class="n">you</span><span class="o">-</span><span class="n">need</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">know</span><span class="o">-</span><span class="n">about</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">important</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">declaration</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">webcredible</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">user</span><span class="o">-</span><span class="n">friendly</span><span class="o">-</span><span class="n">resources</span><span class="o">/</span><span class="n">web</span><span class="o">-</span><span class="n">dev</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">important</span><span class="p">.</span><span class="n">shtml</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">yellowjug</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">web</span><span class="o">-</span><span class="n">design</span><span class="o">/</span><span class="n">the</span><span class="o">-</span><span class="n">importance</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">important</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">css</span><span class="o">/</span>
-</pre></div><p>There are <a href=".././important-tanimi/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././important-tanimi/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -296,11 +308,11 @@ web tarayıcıları ...</p>
 
 </footer><!-- /.post-info -->
                 <p>Bir kodu İE'den gizlemek istiyorsak [sourcecode language='css'] p{
-color:red !important; /* bu kısmı ie6 görmeyecek*/ color:blue; }
-[/sourcecode]sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı
+color:red !important; /<em> bu kısmı ie6 görmeyecek</em>/ color:blue; }
+sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı
 görünecektir. !important css ile etkinlik için kullanılan bir etikettir.
 !important tanımlı özellik daha önce yapılmış aynı özelliğin üzerine
-çıkar. CSS ile etkinlik ...</p>
+çıkar. CSS ile etkinlik hakkında ...</p>
                 <a class="readmore" href=".././css-de-kodumuzu-ie6dan-gizleme/">read more</a>
                 <p>There are <a href=".././css-de-kodumuzu-ie6dan-gizleme/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

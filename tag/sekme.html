@@ -79,7 +79,7 @@
 <p>tags: <a href=".././tag/javascript.html">Javascript</a><a href=".././tag/jquery.html">jquery</a><a href=".././tag/sekme.html">sekme</a></p>
 
 
-</footer><!-- /.post-info --><p>![sekme_ornek][]Web sitelerinden uzun içerikler her zaman kullanıcıyı
+</footer><!-- /.post-info --><p><img alt="sekme_ornek" src="http://www.fatihhayrioglu.com/wp-content/sekme_ornek-150x90.gif" title="sekme_ornek" />Web sitelerinden uzun içerikler her zaman kullanıcıyı
 itmiştir. Bunun için çeşitli çözümler üretilmiştir ve üretilmeyede
 çalışılıyor. Yeterli alanların olmadığı durumlarda veya uzun içerikleri
 olan sayfalarda sekme kullanımı yardımımıza koşar. Birçok sitede bu ve
@@ -88,18 +88,20 @@ benzeri nedenlerde dolayı sekmeleri kullanır.</p>
 javascript ile değil jQuery ile kodluyorum bu tip alanları. Sekmeli
 içerik yapımı jQuery ile çok basit. Bunu burada beraber göreceğiz.</p>
 <p>XHTML kodumuz:</p>
-<p>[sourcecode language="html"] \&lt;div class="sekmeAlani"> \&lt;!--[if
-!IE]>sekmeler\&lt;![endif]--> \&lt;ul class="sekmeler"> \&lt;li
-class="s1">\&lt;a href="javascript:void(0);"
-class="s1">Sekme1\&lt;/a>\&lt;/li> \&lt;li class="s2">\&lt;a
-href="javascript:void(0);" class="s2">Sekme2\&lt;/a>\&lt;/li> \&lt;li
-class="s3">\&lt;a href="javascript:void(0);"
-class="s3">Sekme3\&lt;/a>\&lt;/li> \&lt;li class="s4">\&lt;a
-href="javascript:void(0);" class="s4">Sekme4\&lt;/a>\&lt;/li> \&lt;/ul>    
-\&lt;!--[if !IE]>sekme icerikleri\&lt;![endif]--> \&lt;div
-class="s1">...\&lt;/div> \&lt;div class="s2">...\&lt;/div> \&lt;div
-class="s3">...\&lt;/div> \&lt;div class="s4">...\&lt;/div> \&lt;/div>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sekmeAlani&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!--[if</span>
+</pre></div>
+
+
+<p>!IE]&gt;sekmeler&lt;![endif]--&gt; <ul class="sekmeler"> <li
+class="s1"><a href="javascript:void(0);"
+class="s1">Sekme1</a></li> <li class="s2"><a
+href="javascript:void(0);" class="s2">Sekme2</a></li> <li
+class="s3"><a href="javascript:void(0);"
+class="s3">Sekme3</a></li> <li class="s4"><a
+href="javascript:void(0);" class="s4">Sekme4</a></li> </ul>    
+<!--[if !IE]>sekme icerikleri<![endif]--> <div
+class="s1">...</div> <div class="s2">...</div> <div
+class="s3">...</div> <div class="s4">...</div> </div></p>
 <p>Burada aslında href="javascript:void(0);" özelliğini kullanmayabiliriz,
 ancak ie6 ve 7 bu durumda link tanımlarında sorun çıkarıyor. HTML'de
 dikkat edeceğimiz bir kaç yer var. Link sınıf tanımı(örn: class="s1") ve
@@ -107,22 +109,28 @@ sekme içeriği sınıfları birbiri ile aynı olmalıdır.</p>
 <p>Hemen uygulamaya geçersek.</p>
 <p>Kodumuza jQuery kütüphanesini ekleyelim. Firefox'un YSlow eklentisinin
 belirttiği gibi javascript kodlarını sayfamızın altına koyalım.</p>
-<p>[sourcecode language="html"] \&lt;script type="text/javascript"
-src="jquery.js">\&lt;/script> \&lt;/body> \&lt;/html> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span>
+</pre></div>
+
+
+<p>src="jquery.js"&gt;</script> </body> </html> </p>
 <p>jQuery kodumuzu yazmaya başlayalım. Mantık olarak sekmeli menüler olsun,
 sekmeli içerikler olsun aynıdır. Sekmelere tıklayınca o sekmeye ait
 içerikler görünecek, diğerleri görünmez olacaktır. bu mantığa göre
 kodumuzu yazalım.</p>
-<p>[sourcecode language="javascript"] \$(document).ready(function() {     
-\$('div.sekmeAlani ul.sekmeler li a').click(function(){    
- \$(this).parent('li').addClass('sekmeSecili').siblings().removeClass('sekmeSecili');  
+<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>$('div.sekmeAlani ul.sekmeler li a').click(function(){    
+ $(this).parent('li').addClass('sekmeSecili').siblings().removeClass('sekmeSecili');  
                                             var mevcutSinif =
-this.className.slice(0,2);        \$('div.sekmeAlani >
+this.className.slice(0,2);        $('div.sekmeAlani &gt;
 div').hide().filter('div.'+mevcutSinif).show();          });
-\$('.sekmeAlani ul.sekmeler li a:first').click(); }); [/sourcecode]</p>
+$('.sekmeAlani ul.sekmeler li a:first').click(); }); </p>
 <p>Kodumuz sadece bu kadar. <br />
 </p>
-<p><strong>\$(document).ready(function() { .. });</strong> jQuery'nin stadart kodu.</p>
+<p><strong>$(document).ready(function() { .. });</strong> jQuery'nin stadart kodu.</p>
 <p>5. satırdaki kodda; sekme linklerine tıklanınca yapılacak işlemleri
 tetikliyoruz.</p>
 <p>6. satırda tıklanan sekmeyi seçili hale getiriyoruz. Burada
@@ -136,11 +144,11 @@ alıyoruz, birebir sınıf karşılaştırması yapamıyoruz çünkü bu linke b
 sınıflarda atanmış olabilir. Bu sınıf adı bize ilişkili sekme içeriğini
 göstermek için yardımcı olacaktır.</p>
 <p>8. satırda içerikleri gizleme ve gösterme işini
-çözüyoruz.<strong>\$('div.sekmeAlani > div')</strong> kodu bize <strong>sekmeAlani</strong>'nının
+çözüyoruz.<strong>$('div.sekmeAlani &gt; div')</strong> kodu bize <strong>sekmeAlani</strong>'nının
 birincil div'lerini yani sekme içeriğini kapsayan katmanları gizlememizi
 sağlıyor. Böylelikle sekme içinde <strong>div</strong> kullansak bile bunlar görünmez
 olmuyor bu bir çok sekme kodunda göz ardı edilen bir husustur. CSS'de de
-olan çocuk seçiciler(<strong>></strong>) jQueryde gönül rahatlığı ile
+olan çocuk seçiciler(<strong>&gt;</strong>) jQueryde gönül rahatlığı ile
 kullanabiliyoruz çünkü ie6 desteğini jQuery hallediyor. jQuery'nin bize
 sunduğu avantajlardan biride <strong>filter()</strong> fonksiyonudur. Bu sayede biz
 tüm sekme içeriğini kapsayan div'leri gizle ama bu tıkladığımzın(bu
@@ -173,21 +181,13 @@ Safari 3.2.2 sürümlerinde test ettim.</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://jqueryfordesigners.com/jquery-tabs/" title="http://jqueryfordesigners.com/jquery-tabs/">http://jqueryfordesigners.com/jquery-tabs/</a></li>
-<li><a href="static">http://broadcast.oreilly.com/2008/10/how-to-create-tabs-with-css-an.html</a></li>
-<li><a href="static">http://justintadlock.com/archives/2007/11/07/how-to-create-tabs-using-jquery</a></li>
+<li><a href="http://broadcast.oreilly.com/2008/10/how-to-create-tabs-with-css-an.html" title="http://broadcast.oreilly.com/2008/10/how-to-create-tabs-with-css-an.html">http://broadcast.oreilly.com/2008/10/how-to-create-tabs-with-css-an.html</a></li>
+<li><a href="http://justintadlock.com/archives/2007/11/07/how-to-create-tabs-using-jquery" title="http://justintadlock.com/archives/2007/11/07/how-to-create-tabs-using-jquery">http://justintadlock.com/archives/2007/11/07/how-to-create-tabs-using-jquery</a></li>
 <li><a href="http://www.barelyfitz.com/projects/tabber/index.php" title="http://www.barelyfitz.com/projects/tabber/index.php">http://www.barelyfitz.com/projects/tabber/index.php</a></li>
-<li><a href="static">http://www.thetruetribe.com/jquery/3-jquery-widgets/77-how-do-i-make-tabs-in-jquery-without-jq-tabs-plugin</a><br />
+<li><a href="http://www.thetruetribe.com/jquery/3-jquery-widgets/77-how-do-i-make-tabs-in-jquery-without-jq-tabs-plugin" title="http://www.thetruetribe.com/jquery/3-jquery-widgets/77-how-do-i-make-tabs-in-jquery-without-jq-tabs-plugin">http://www.thetruetribe.com/jquery/3-jquery-widgets/77-how-do-i-make-tabs-in-jquery-without-jq-tabs-plugin</a><br />
 </li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">broadcast</span><span class="p">.</span><span class="n">oreilly</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2008<span class="o">/</span>10<span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">tabs</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">an</span><span class="p">.</span><span class="n">html</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">broadcast</span><span class="p">.</span><span class="n">oreilly</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2008<span class="o">/</span>10<span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">tabs</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">an</span><span class="p">.</span><span class="n">html</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">justintadlock</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span>2007<span class="o">/</span>11<span class="o">/</span>07<span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">tabs</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">jquery</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">justintadlock</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span>2007<span class="o">/</span>11<span class="o">/</span>07<span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">tabs</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">jquery</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">thetruetribe</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">jquery</span><span class="o">/</span>3<span class="o">-</span><span class="n">jquery</span><span class="o">-</span><span class="n">widgets</span><span class="o">/</span>77<span class="o">-</span><span class="n">how</span><span class="o">-</span><span class="n">do</span><span class="o">-</span><span class="nb">i</span><span class="o">-</span><span class="n">make</span><span class="o">-</span><span class="n">tabs</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">jquery</span><span class="o">-</span><span class="n">without</span><span class="o">-</span><span class="n">jq</span><span class="o">-</span><span class="n">tabs</span><span class="o">-</span><span class="n">plugin</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">thetruetribe</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">jquery</span><span class="o">/</span>3<span class="o">-</span><span class="n">jquery</span><span class="o">-</span><span class="n">widgets</span><span class="o">/</span>77<span class="o">-</span><span class="n">how</span><span class="o">-</span><span class="n">do</span><span class="o">-</span><span class="nb">i</span><span class="o">-</span><span class="n">make</span><span class="o">-</span><span class="n">tabs</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">jquery</span><span class="o">-</span><span class="n">without</span><span class="o">-</span><span class="n">jq</span><span class="o">-</span><span class="n">tabs</span><span class="o">-</span><span class="n">plugin</span>&quot;
-</pre></div><p>There are <a href=".././jquery-ile-basit-sekme-yapimi/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././jquery-ile-basit-sekme-yapimi/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -231,8 +231,14 @@ Safari 3.2.2 sürümlerinde test ettim.</p>
 yapacağız. Bu teknik bize esnek yapılı, yuvarlak kenarlı sekmeli menü
 yapma olanağı sağlar. Adım adım gidersek <!--more--></p>
 <p><strong>1.Adım</strong> Başlangıç olarak her zamanki gibi XHTML kodumuzu yazalım:</p>
-<p>[sourcecode language="html"]\&lt;ul> \&lt;li>\&lt;a href="#">Ana
-Sayfa\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="#">Haberler ...</p>
+<div class="codehilite"><pre><span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ana
+</pre></div>
+
+
+<p>Sayfa</a></li> <li><a href="#">Haberler</a></li> <li><a
+href="#">Ürünler</a></li> </ul></p>
+<div class="class=" ekstrabilgi"">
+Tekniğin özeti şu menü oluşturmak ...</div>
                 <a class="readmore" href=".././css-ile-sekmelitab-menu-yapimi/">read more</a>
                 <p>There are <a href=".././css-ile-sekmelitab-menu-yapimi/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

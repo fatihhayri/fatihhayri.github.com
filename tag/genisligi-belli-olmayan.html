@@ -91,24 +91,35 @@ paylaşacağım, siz kendinize uygun olan metodu uygulayabilirsiniz.</p>
 <h3>Metot 1 - Yüzde Yöntemi ile Ortalama</h3>
 <p>Genelde bu yöntemi anlatırken menü örnekleri üzerinden anlatılmış bende
 geleneği bozmayayım.</p>
-<p>[html] \&lt;div id="menuKapsulu"> \&lt;ul> \&lt;li>Elma\&lt;/li>
-\&lt;li>Armut\&lt;/li> \&lt;li>Malta Eriği\&lt;/li> \&lt;/ul> \&lt;/div> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;menuKapsulu&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;</span>Elma<span class="nt">&lt;/li&gt;</span>
+</pre></div>
+
+
+<p><li>Armut</li> <li>Malta Eriği</li> </ul> </div> </p>
 <p>Alışkın olduğumuz bir menü kodu. CSS kodumuzu ekleyelim. İlk olarak
 kapsayıcı eleman tanımlarını yazalım.</p>
-<p>[css] #menuKapsulu{ float:left; width:100%; background:#369;
-overflow:hidden; position:relative; } [/css]</p>
+<div class="codehilite"><pre> <span class="nf">#menuKapsulu</span><span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span><span class="m">#369</span><span class="p">;</span>
+</pre></div>
+
+
+<p>overflow:hidden; position:relative; } </p>
 <p>Menü kapsayıcısının sayfayı tam kaplaması için %100 değeri ve float:left
 değeri atandı.</p>
-<p>[css] #menuKapsulu ul{ clear:left; float:left; list-style:none;
-margin:0; padding:0; position:relative; left:50%; text-align:center;
-background-color:#990000 } [/css]</p>
+<div class="codehilite"><pre> <span class="nf">#menuKapsulu</span> <span class="nt">ul</span><span class="p">{</span> <span class="k">clear</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+</pre></div>
+
+
+<p>margin:0; padding:0; position:relative; left:50%; text-align:center;
+background-color:#990000 } </p>
 <p>float:left değeri ile içeriği çepeçevre kapsaması sağlanıyor. left:50%
 değeri ile menu ortalanıyor. Ancak bu ortalama içeriğin genişliğini
 içermez. <br />
 </p>
-<p>[css] #menuKapsulu ul li{ display:block; float:left; list-style:none;
-margin:0 10px 0 0; padding:10px 0; position:relative; right:50%; }
-[/css]</p>
+<div class="codehilite"><pre> <span class="nf">#menuKapsulu</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+</pre></div>
+
+
+<p>margin:0 10px 0 0; padding:10px 0; position:relative; right:50%; }</p>
 <p>Buradaki püf noktası; right:50% değeri ile menü genişliğinden dolayı
 sağa doğru kayan içeriği tam olarak ortalı hale getiriyoruz.</p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/GGSHL/embedded/result,html,css"></iframe>
@@ -134,21 +145,30 @@ sağa doğru kayan içeriği tam olarak ortalı hale getiriyoruz.</p>
 tanımını bu sefer genişliği belli olmayan alanlar içinde kullanıyoruz.</p>
 <p>HTML kodumuz aynı;<br />
 </p>
-<p>[html] \&lt;div id="menuKapsulu"> \&lt;ul> \&lt;li>Elma\&lt;/li>
-\&lt;li>Armut\&lt;/li> \&lt;li>Malta Eriği\&lt;/li> \&lt;/ul> \&lt;/div> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;menuKapsulu&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;</span>Elma<span class="nt">&lt;/li&gt;</span>
+</pre></div>
+
+
+<p><li>Armut</li> <li>Malta Eriği</li> </ul> </div> </p>
 <p>Ortalanacak alana margin:0 auto ve display:table tanımlarını yapıyoruz.<br />
 </p>
-<p>[css] #menuKapsulu ul{ list-style:none; margin-left: auto;
-margin-right: auto; display: table; } #menuKapsulu ul li{ float:left;
-margin:0 10px 0 0; padding:10px 0; } [/css]</p>
+<div class="codehilite"><pre> <span class="nf">#menuKapsulu</span> <span class="nt">ul</span><span class="p">{</span> <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> <span class="k">margin-left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+</pre></div>
+
+
+<p>margin-right: auto; display: table; } #menuKapsulu ul li{ float:left;
+margin:0 10px 0 0; padding:10px 0; } </p>
 <p>Sonuç istediğimiz gibi, ancak bir sorunumuz varki oda display:table
 özelliğini İnternet Explorer 6 ve 7. sürümleri desteklemiyor. Peki, ne
 olacak derseniz bu bir hasLayout sorunu ve çözüm için zoom:1 tanımı
 kullanmamız gerekiyor.</p>
-<p>[css] *:first-child+html #menuKapsulu{ text-align:center } * html
-#menuKapsulu{ text-align:center } *:first-child+html #menuKapsulu ul{
-display: inline; zoom: 1; } * html #menuKapsulu ul{ display: inline;
-zoom: 1; } [/css]</p>
+<div class="codehilite"><pre> <span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="nf">#menuKapsulu</span><span class="p">{</span> <span class="k">text-align</span><span class="o">:</span><span class="k">center</span> <span class="p">}</span> <span class="o">*</span> <span class="nt">html</span>
+</pre></div>
+
+
+<h1>menuKapsulu{ text-align:center } *:first-child+html #menuKapsulu ul{</h1>
+<p>display: inline; zoom: 1; } * html #menuKapsulu ul{ display: inline;
+zoom: 1; } </p>
 <p>Kapsayıcı kapsüle text-align:center tanımı yapıyoruz sonra listemize
 display:inline yapıyoruz. text-align:center inline elemanları ortalıyor
 bildiğiniz gibi. Burada yaptığmızda bu</p>
@@ -171,19 +191,16 @@ bildiğiniz gibi. Burada yaptığmızda bu</p>
 <p>Kalın sağlıcakla.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li>[http://css-discuss.incutio.com/wiki/Centering_Block_Element][]</li>
-<li><a href="static">http://www.solstice.co.il/blog/2008-02-26/horizontally-centering-content-dynamic-width-css</a></li>
-<li><a href="static">http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support</a></li>
+<li><a href="http://css-discuss.incutio.com/wiki/Centering_Block_Element">http://css-discuss.incutio.com/wiki/Centering_Block_Element</a></li>
+<li><a href="http://www.solstice.co.il/blog/2008-02-26/horizontally-centering-content-dynamic-width-css">http://www.solstice.co.il/blog/2008-02-26/horizontally-centering-content-dynamic-width-css</a></li>
+<li><a href="http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support">http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support</a></li>
 <li><a href="http://haslayout.net/css-tuts/Horizontal-Centering">http://haslayout.net/css-tuts/Horizontal-Centering</a></li>
-<li><a href="static">http://www.katcode.com/css-horizontally-centering-div-of-unknown-width/</a></li>
-<li>[http://www.tightcss.com/centering/center_variable_width.htm][]</li>
+<li><a href="http://www.katcode.com/css-horizontally-centering-div-of-unknown-width/">http://www.katcode.com/css-horizontally-centering-div-of-unknown-width/</a></li>
+<li><a href="http://www.tightcss.com/centering/center_variable_width.htm">http://www.tightcss.com/centering/center_variable_width.htm</a></li>
 </ul>
 </p>
 
-<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/gb_ortalama1.gif" title="gb_ortalama" />]: http://www.fatihhayrioglu.com/wp-content/gb_ortalama1.gif
-    http://www.solstice.co.il/blog/2008-02-26/horizontally-centering-content-dynamic-width-css
-    http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support
-    http://www.katcode.com/css-horizontally-centering-div-of-unknown-width/</p><p>There are <a href=".././genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/#disqus_thread">comments</a>.</p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/gb_ortalama1.gif" title="gb_ortalama" />]: http://www.fatihhayrioglu.com/wp-content/gb_ortalama1.gif</p><p>There are <a href=".././genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

@@ -167,12 +167,15 @@ yardımcı olacaktır.</p>
 Sonra boş bir css dosyası açarız. Aslında ilk açtığım bu boş dokümanlar
 bile bir şeyler içerir.</p>
 <p>XHTML sayfamız</p>
-<p>[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-\&lt;html xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+</pre></div>
+
+
+<p>1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+<html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" />
-\&lt;title>FanatikMarşlar.Com\&lt;/title> \&lt;/head> \&lt;body> \&lt;/body>
-\&lt;/html> [/sourcecode]</p>
+<title>FanatikMarşlar.Com</title> </head> <body> </body>
+</html> </p>
 <p>Bu dokümanı Adobe DreamWeaver ile oluşturduğumda dw benim için
 oluşturuyor.</p>
 <ul>
@@ -184,51 +187,62 @@ oluşturuyor.</p>
 <li>Genel html kodları (html, head ve body)</li>
 </ul>
 <p>İlk yaptığım iş başlık kısmını değiştirmek olur.</p>
-<p>[sourcecode language="html"] \&lt;title>FanatikMarşlar.Com\&lt;/title>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;title&gt;</span>FanatikMarşlar.Com<span class="nt">&lt;/title&gt;</span>
+</pre></div>
+
+
 <p>Daha sonra boş bir css dokümanı oluştururum. Genelde isim verirken ana,
 main, iskelet, veya sirket_adi nokta css şeklinde tanımlarım bu seferde
 site ismini tanımlıyorum <strong>fanatikmarslar.css</strong> Oluşturduğum bu dokümana
 sırası ile imza alanımı ve sıfırlama kodlarını ekliyorum.</p>
-<p>[sourcecode language="css"]
-/************************
-************************ Fanatik Marşlar -
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<p>/<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>
+</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong> Fanatik Marşlar -
 http://fanatikmarslar.com/ fatih hayrioglu 24 Eylul 2009 ie6, ff, opera,
-chrome, safari ************************
-************************/ [/sourcecode]</p>
+chrome, safari <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>
+</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>/ </p>
 <p>Bunu benim imzam olarak nitelendirebilirsiniz. Genelde tüm projelerime
 eklerim. Bazılarında unuttuğumda oluyor. Daha sonra css sıfırlama
 kodlarını ekleyelim. Ben genelde standart sıfırlama tekniklerini
 kullanmam kendi ufak bir iki tekniğim vardır onları yazar geçerim. Ama
 bu sefer bazı sıfırlama kodlarının elenmiş halini kullandım ve koduma
 ekledim. Bide kapsayamama sorunu kodunu ekledim.</p>
-<p>[sourcecode language="css"] /* Css Sifirlama */ html, body, div, span,
-applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+<div class="codehilite"><pre> <span class="c">/* Css Sifirlama */</span> <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span><span class="o">,</span> <span class="nt">div</span><span class="o">,</span> <span class="nt">span</span><span class="o">,</span>
+</pre></div>
+
+
+<p>applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
 abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins,
 kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
 center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
 caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border:
 0; outline: 0; font-size: 100%; text-decoration:none;} body {
 line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes:
-none; } /* remember to define focus styles! */ :focus, a:focus,
-a:active{ outline: 0; } /* remember to highlight inserts somehow! */
-ins{ text-decoration: none; } del{ text-decoration: line-through; } /*
-tables still need 'cellspacing="0"' in the markup */
-table{border-collapse: collapse; border-spacing: 0;} /* float uygulanan
-elemanları kapsayamama sorunu */ .kapsayamamaSorunu:after {content:
+none; } /<em> remember to define focus styles! </em>/ :focus, a:focus,
+a:active{ outline: 0; } /<em> remember to highlight inserts somehow! </em>/
+ins{ text-decoration: none; } del{ text-decoration: line-through; } /<em>
+tables still need 'cellspacing="0"' in the markup </em>/
+table{border-collapse: collapse; border-spacing: 0;} /<em> float uygulanan
+elemanları kapsayamama sorunu </em>/ .kapsayamamaSorunu:after {content:
 "."; display: block; height: 0; clear: both; visibility: hidden;}
-.kapsayamamaSorunu {display: inline-block;} /* IE-mac de bu bolumu
-sakla \ */ * html .kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu
-{display: block;} /* IE-mac bu bolumu saklam artik */ /* Css
-Sifirlama */ [/sourcecode]</p>
+.kapsayamamaSorunu {display: inline-block;} /<em> IE-mac de bu bolumu
+sakla  </em>/ * html .kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu
+{display: block;} /<em> IE-mac bu bolumu saklam artik </em>/ /<em> Css
+Sifirlama </em>/ </p>
 <p>CSS sıfırlama tekniğini kısaca açıklarsak; Farklı tarayıcılarda farklı
 şekillerde yorumlanan html elemanlarının özelliklerini her tarayıcıda
 aynı görünmesini sağlayacak kodlara sıfırlama denir. Bu sayede her
 tarayıcıda bu elemanlar aynı sıfır noktasına gelecektir. Örneğin
 p{margin:0; padding:0}</p>
 <p>Daha sonra xhtml sayfamıza css kodumuzu ekleyelim.</p>
-<p>[sourcecode language="html"] \&lt;style type="text/css"> \&lt;!-- @import
-url("style/fanatikmarslar.css"); --> \&lt;/style> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span><span class="err"> &lt;!-- @import</span>
+</pre></div>
+
+
+<p>url("style/fanatikmarslar.css"); --&gt; </style> </p>
 <p>Bundan sonra genelde ben psd'yi açıp sırası ile eskizde çizdiğim yapıya
 uygun olarak kodlamama başlarım. Bunun dışında bir yöntem daha vardır ki
 ben genelde bu yönteme başvurmuyorum. Genel sayfa yapısını içeren

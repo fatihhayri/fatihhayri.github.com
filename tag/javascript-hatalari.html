@@ -90,12 +90,17 @@ hatalardır bunlar. <!--more--></p>
 <h3>= ve == operatörleri</h3>
 <p>= tanımlama operatörü, == iki değeri eşitlemek için kullanılır. Genelde
 bir karışık oluyor</p>
-<p>[sourcecode language="javascript"] var nDeger = deneme.gif ;
-[/sourcecode] == örnek verecek olursak; [sourcecode
-language="javascript"] if(nDeger == fatih.gif){ alert("Fatih geldi"); }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="kd">var</span> <span class="nx">nDeger</span> <span class="o">=</span> <span class="nx">deneme</span><span class="p">.</span><span class="nx">gif</span> <span class="p">;</span>
+</pre></div>
+
+
+<p>== örnek verecek olursak; [sourcecode
+language="javascript"] if(nDeger == fatih.gif){ alert("Fatih geldi"); }</p>
 <p>genelde karşılaştığım hata</p>
-<p>[sourcecode language="javascript"] if(MyVar = "xyz") [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="k">if</span><span class="p">(</span><span class="nx">MyVar</span> <span class="o">=</span> <span class="s2">&quot;xyz&quot;</span><span class="p">)</span>
+</pre></div>
+
+
 <h3>Tırnak İşaretleri</h3>
 <p>Dizgiler(string) tırnak işareti içinde olmalıdır. Tek tırnak veya çift
 tırnak. Genelde çift tırnak ile başlayan tek tırnak ile kapattığımızda
@@ -110,7 +115,7 @@ yaşıyoruz. Kod yazım formatımızı düzenli yaparsak bu sorunu çözebiliriz
 <p>Çoğu zaman karşılaştığımız sorunlardan bir taneside doküman
 hiyerarşisine göre daha oluşturulmamış bir nesneye erişmek istediğimizde
 "abs has no properties" gibi bir hata ile karşılaşırız. Genelde
-javascript dosyalarını \&lt;head> etiketi içinde tanımlarız ve sayfa
+javascript dosyalarını <head> etiketi içinde tanımlarız ve sayfa
 yüklenirken bir işlev yapılmasını istediğimizde böyle bir hata alırız.
 Eğer sayfa ilk yüklendiğinde bir şey yapmak istiyorsak bu kodu sayfa
 sonuna koymalıyız, yada yapmak istediğimiz işi sayfadaki bir nesne ile
@@ -122,8 +127,11 @@ listesini <a href="http://javascript.about.com/library/blreserved.htm" title="re
 <h3>Küçük büyük karakter karışımı</h3>
 <p>Javascript ile kod yazarken küçük büyük harflere dikkat etmeliyiz. Küçük
 büyük harf bir çok hataya neden olur.</p>
-<p>[sourcecode language="javascript"] var adSoyad = "Fatih Hayrioğlu"; If
-(adSoyad == "fatih hayrioğlu") [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="kd">var</span> <span class="nx">adSoyad</span> <span class="o">=</span> <span class="s2">&quot;Fatih Hayrioğlu&quot;</span><span class="p">;</span> <span class="nx">If</span>
+</pre></div>
+
+
+<p>(adSoyad == "fatih hayrioğlu") </p>
 <p>Yukarıdaki kodda iki adet hata var. İlk hata If kullanımı. Javascript
 bize If konusunda sorun olduğunu söylemez, ama IE "Object expected"
 hatası verir, Firefox ise "If is not defined." hatasını verir. İkinci
@@ -134,18 +142,30 @@ aynı şey değildir.</p>
 <h3>'+' Kullanımını</h3>
 <p>Javascript'te +(artı) işareti hem sayısal toplama hemde string
 birleştirmek için kullanılır. Karıştırmamak lazım.</p>
-<p>[sourcecode language="javascript"] 1 + 1 = 2 [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+
+
 <p>ve</p>
-<p>[sourcecode language="javascript"] '1' + '1' = '11' [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="s1">&#39;1&#39;</span> <span class="o">+</span> <span class="s1">&#39;1&#39;</span> <span class="o">=</span> <span class="s1">&#39;11&#39;</span>
+</pre></div>
+
+
 <p>Ayrıca string birleştirirken tırnak işareti ile kullanılmalıdır.</p>
-<p>[sourcecode language="javascript"] myString = myName + " ekle " +
-myString ; [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nx">myString</span> <span class="o">=</span> <span class="nx">myName</span> <span class="o">+</span> <span class="s2">&quot; ekle &quot;</span> <span class="o">+</span>
+</pre></div>
+
+
+<p>myString ; </p>
 <h3>Javascript: sözde protokolünün kullanımı</h3>
 <p>Javascript: sözde protokolü onClick gibi olay tetikleyicileri ile
-kullanılmaz. Bu kullanım URL'lerde olur Örneğin \&lt;a> etiketin href
-özelliğinde ve \&lt;form> etiketinin action özelliğinde</p>
-<p>[sourcecode language="html"] \&lt;a href="javascript:pencereAc();">Pencere
-Ac\&lt;/a> [/sourcecode]</p>
+kullanılmaz. Bu kullanım URL'lerde olur Örneğin <a> etiketin href
+özelliğinde ve <form> etiketinin action özelliğinde</p>
+<div class="codehilite"><pre> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript:pencereAc();&quot;</span><span class="nt">&gt;</span>Pencere
+</pre></div>
+
+
+<p>Ac</a> </p>
 <h3>document.write</h3>
 <p>document.write sayfa tamamen yüklendikten sonra işler ve içeriğin
 üzerine yazar.</p>
@@ -157,16 +177,16 @@ alırız. Firefox'un FireBug aracı bence hata ayıklamak için bir numaralı
 araç.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><span>JavaScript: The Good Parts Ek b ***** </span></li>
+<li><span>JavaScript: The Good Parts Ek b <strong>*</strong> </span></li>
 <li><a href="http://www.dynamicsitesolutions.com/javascript/mistakes/">http://www.dynamicsitesolutions.com/javascript/mistakes/</a> (kısa
     kısa) ***</li>
-<li>[http://www.netmechanic.com/news/vol4/javascript_no23.htm][]
+<li><a href="http://www.netmechanic.com/news/vol4/javascript_no23.htm">http://www.netmechanic.com/news/vol4/javascript_no23.htm</a>
     (ayrıntılı) ****</li>
-<li>[http://weblogs.asp.net/bleroy/archive/2005/02/15/Three-common-mistakes-in-JavaScript-_2F00_-EcmaScript.aspx][]
+<li><a href="http://weblogs.asp.net/bleroy/archive/2005/02/15/Three-common-mistakes-in-JavaScript-_2F00_-EcmaScript.aspx">http://weblogs.asp.net/bleroy/archive/2005/02/15/Three-common-mistakes-in-JavaScript-<em>2F00</em>-EcmaScript.aspx</a>
     ***</li>
 <li><a href="http://javascript.about.com/od/reference/a/error.htm">http://javascript.about.com/od/reference/a/error.htm</a> (ayrıntılı)
     ***</li>
-<li>[http://www.c-point.com/javascript_tutorial/common_mistakes.htm][]
+<li><a href="http://www.c-point.com/javascript_tutorial/common_mistakes.htm">http://www.c-point.com/javascript_tutorial/common_mistakes.htm</a>
     **</li>
 <li><a href="http://javascript.internet.com/debug-guide.html">http://javascript.internet.com/debug-guide.html</a> (ayrıntılı)
     ****</li>
@@ -174,20 +194,15 @@ araç.</p>
     **</li>
 <li><a href="http://www.javascriptlint.com/">http://www.javascriptlint.com/</a> *</li>
 <li><a href="http://www.ddj.com/184412486">http://www.ddj.com/184412486</a> **</li>
-<li><a href="static">http://www.sitepoint.com/blogs/2004/08/18/five-common-mistakes-in-influencing-others/</a>
+<li><a href="http://www.sitepoint.com/blogs/2004/08/18/five-common-mistakes-in-influencing-others/">http://www.sitepoint.com/blogs/2004/08/18/five-common-mistakes-in-influencing-others/</a>
     **</li>
-<li><a href="static">http://www.javascriptsearch.com/guides/Beginner/articles/070625Mistakes.html</a>
+<li><a href="http://www.javascriptsearch.com/guides/Beginner/articles/070625Mistakes.html">http://www.javascriptsearch.com/guides/Beginner/articles/070625Mistakes.html</a>
     (kısa kısa) **</li>
-<li>[http://www.webmonkey.com/98/29/index4a_page3.html?tw=programming][]
+<li><a href="http://www.webmonkey.com/98/29/index4a_page3.html?tw=programming">http://www.webmonkey.com/98/29/index4a_page3.html?tw=programming</a>
     ***</li>
 <li><a href="http://www.wrox.com/WileyCDA/WroxTitle/productCd-0764555871.html" title="Beginning JavaScript">Beginning JavaScript</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">weblogs</span><span class="p">.</span><span class="n">asp</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">bleroy</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>2005<span class="o">/</span>02<span class="o">/</span>15<span class="o">/</span><span class="n">Three</span><span class="o">-</span><span class="n">common</span><span class="o">-</span><span class="n">mistakes</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">JavaScript</span><span class="o">-</span><span class="n">_2F00_</span><span class="o">-</span><span class="n">EcmaScript</span><span class="p">.</span><span class="n">aspx</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">sitepoint</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blogs</span><span class="o">/</span>2004<span class="o">/</span>08<span class="o">/</span>18<span class="o">/</span><span class="n">five</span><span class="o">-</span><span class="n">common</span><span class="o">-</span><span class="n">mistakes</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">influencing</span><span class="o">-</span><span class="n">others</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">javascriptsearch</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">guides</span><span class="o">/</span><span class="n">Beginner</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span>070625<span class="n">Mistakes</span><span class="p">.</span><span class="n">html</span>
-</pre></div><p>There are <a href=".././genelde-karsilasilan-javascript-hatalari/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././genelde-karsilasilan-javascript-hatalari/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

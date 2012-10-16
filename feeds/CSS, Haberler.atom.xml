@@ -46,21 +46,27 @@ yılındaki standartları desteklemektedir ve yeni standartlaşan
 &lt;p&gt;İlk olarak kapsayıcı esnek kutuları çevreleyen eleman &lt;strong&gt;display:box&lt;/strong&gt;
 tanımı yaparak başlıyoruz. Farklı tarayıcılar önek ile birlikte
 desteklemektedir;&lt;/p&gt;
-&lt;p&gt;[css] #esnekKutu{ display: -webkit-box; display: -moz-box; display:
--ms-box; display: box; } [/css]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#esnekKutu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;-ms-box; display: box; } &lt;/p&gt;
 &lt;p&gt;Tanımı ile kapsayıcı elemanı tanımlıyoruz. Bu tanım ile kapsayıcı eleman
 içersindeki alt elemanların artık esnek yapılı olacağını ve EKYM
 özellikleri alabileceğini belirliyoruz.&lt;/p&gt;
 &lt;p&gt;Çok basit bir şekilde kutularımızı yanyana dizebiliriz mesela&lt;/p&gt;
-&lt;p&gt;[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
-display:-moz-box; display:-ms-box; width:600px; border:1px solid #03C;
-} [/css]
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#esnekKutuKapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;display:-moz-box; display:-ms-box; width:600px; border:1px solid #03C;
+} 
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/4KSzt/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;Kapsayıcı tanımlanan &lt;strong&gt;display:box&lt;/strong&gt; tanımı ile içindeki elemanlar birer
 &lt;strong&gt;inline-block&lt;/strong&gt; eleman gibi davranır ve yanyana sıralanır.&lt;/p&gt;
 &lt;h3&gt;box-orient&lt;/h3&gt;
 &lt;div class="cssozelliktanimi"&gt;
-**Yapısı:** box-orient: \&lt;deger\&gt;  
+**Yapısı:** box-orient: &lt;deger&gt;  
 **Aldığı Değerler:** horizontal | vertical | inline-axis | block-axis  
 **Başlangıç değeri:** inline-axis  
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri
@@ -84,15 +90,18 @@ adet değer alır.&lt;/p&gt;
 &lt;p&gt;Bunlardan başka iki değer daha mevcuttur. &lt;strong&gt;inline-axis&lt;/strong&gt; yatayda ve
 &lt;strong&gt;block-axis&lt;/strong&gt; dikeyde sıralamayı sağlar. Bu tanımlar &lt;strong&gt;horizontal&lt;/strong&gt; ve
 &lt;strong&gt;vertical&lt;/strong&gt; gibi davranırlar.&lt;/p&gt;
-&lt;p&gt;[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
-display:-moz-box; box-orient:vertical; -moz-box-orient:vertical;
--webkit-box-orient:vertical; width:200px; height:600px; border:1px solid
-#03C; } [/css]
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AsVDn/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#esnekKutuKapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;display:-moz-box; box-orient:vertical; -moz-box-orient:vertical;
+-webkit-box-orient:vertical; width:200px; height:600px; border:1px solid&lt;/p&gt;
+&lt;h1&gt;03C; }&lt;/h1&gt;
+&lt;p&gt;&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AsVDn/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;box-orient:vertical&lt;/strong&gt; ile esnek kutularımızı dikeyde sıraladık.&lt;/p&gt;
 &lt;h3&gt;box-direction&lt;/h3&gt;
 &lt;div class="cssozelliktanimi"&gt;
-**Yapısı:** box-direction: \&lt;deger\&gt;  
+**Yapısı:** box-direction: &lt;deger&gt;  
 **Aldığı Değerler:** normal | reverse  
 **Başlangıç değeri:** inline-axis  
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri
@@ -104,11 +113,14 @@ alan elemanlara
 &lt;p&gt;&lt;strong&gt;box-direction&lt;/strong&gt; özelliği kapsayıcı eleman içindeki esnek kutuların
 sıralama yönünü belirler. İki değer alır; normal ve &lt;strong&gt;reverse&lt;/strong&gt;.
 &lt;strong&gt;reverse&lt;/strong&gt; tanımlandığında sıralama yönü normalin tam tersine döner.&lt;/p&gt;
-&lt;p&gt;[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
-display:-moz-box; box-orient:vertical; -moz-box-orient:vertical;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#esnekKutuKapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;display:-moz-box; box-orient:vertical; -moz-box-orient:vertical;
 -webkit-box-orient:vertical; box-direction: reverse; -moz-box-direction:
 reverse; -webkit-box-direction: reverse; width:200px; height:600px;
-border:1px solid #03C; } [/css]
+border:1px solid #03C; } 
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/S4c44/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;Yukarıdaki örnekte sıralama yukarıdan aşağı &lt;strong&gt;Esnek Kutu1, Esnek Kutu2&lt;/strong&gt;
 ve &lt;strong&gt;Esnek Kutu3&lt;/strong&gt; iken &lt;strong&gt;box-direction: reverse;&lt;/strong&gt; tanımı ile sıralama
@@ -121,7 +133,7 @@ ve &lt;strong&gt;Esnek Kutu3&lt;/strong&gt; iken &lt;strong&gt;box-direction: re
 birçok özelliği üzerinde halen çalışılan canlı bir yapıdır.
 Değişikliklerin olabileceği dikkate alınmalıdır.&lt;/p&gt;
 &lt;h3&gt;box-pack&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; box-pack: \&amp;lt;deger&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; box-pack: &lt;deger&gt;&lt;br /&gt;
 &lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; start | end | center | justify&lt;br /&gt;
 &lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; start&lt;br /&gt;
 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; display:box ve display:inline-box değeri
@@ -135,13 +147,16 @@ yasla(justify)&lt;/p&gt;
 kalan boşluk alanına göre değerlendirme yapılır.&lt;/p&gt;
 &lt;p&gt;Bu özellik tanımı 2009’da tanımlandı şu an yenileniyor &lt;strong&gt;flex-pack&lt;/strong&gt;
 olarak değişecek. Tarayıcılar destekleyen kadar bu şekilde devam edecek.&lt;/p&gt;
-&lt;p&gt;[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
-display:-moz-box; width:600px; border:1px solid #03C; box-pack:center;
--webkit-box-pack:center; -moz-box-pack:center; } [/css]
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#esnekKutuKapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;display:-moz-box; width:600px; border:1px solid #03C; box-pack:center;
+-webkit-box-pack:center; -moz-box-pack:center; } 
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/MwWcm/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;h3&gt;box-align&lt;/h3&gt;
 &lt;div class="cssozelliktanimi"&gt;
-**Yapısı :** box-align: \&lt;deger\&gt;  
+**Yapısı :** box-align: &lt;deger&gt;  
 **Aldığı Değerler :** stretch | start | end | center | baseline  
 **Başlangıç değeri:** stretch  
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri
@@ -159,16 +174,19 @@ yükseklikleri yayılacaktır, eğer &lt;strong&gt;box-orient&lt;/strong&gt; de�
 genişlikleri yayılacaktır. &lt;strong&gt;start&lt;/strong&gt; ve &lt;strong&gt;end&lt;/strong&gt; değerleri eğer
 horizantal tanımlı ise sol ve sağa yaslayacaktır, &lt;strong&gt;vertical&lt;/strong&gt; tanımlı
 ise üste ve alta yaslayacaktır. &lt;strong&gt;center&lt;/strong&gt; değeri ise ortalayacaktır.&lt;/p&gt;
-&lt;p&gt;[css] #esnekKutuKapsul{ display: box; display:-webkit-box;
-display:-moz-box; width:600px; border:1px solid #03C;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#esnekKutuKapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;display:-moz-box; width:600px; border:1px solid #03C;
 box-orient:horizantal; -moz-box-orient:horizantal;
 -webkit-box-orient:horizantal; box-align: center; -webkit-box-align:
 center; -moz-box-align: center; } .esnekKutu{ background-color:#999999;
-width:150px; height:150px; margin-right:15px; } [/css]
+width:150px; height:150px; margin-right:15px; } 
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ZYz2M/1/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;h3&gt;box-lines&lt;/h3&gt;
 &lt;div class="cssozelliktanimi"&gt;
-**Yapısı :** box-lines: \&lt;deger\&gt;  
+**Yapısı :** box-lines: &lt;deger&gt;  
 **Aldığı Değerler :** single | multiple  
 **Başlangıç değeri:** single  
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri
@@ -193,8 +211,8 @@ dair duyumlar var.&lt;/p&gt;
 benzer etki yapacak &lt;strong&gt;flex-flow&lt;/strong&gt; tanımı gelecek gibi.&lt;/p&gt;
 &lt;h3&gt;box-ordinal-group&lt;/h3&gt;
 &lt;div class="cssozelliktanimi"&gt;
-**Yapısı :** box-ordinal-group: \&lt;deger\&gt;  
-**Aldığı Değerler :** \&lt;sayı\&gt;  
+**Yapısı :** box-ordinal-group: &lt;deger&gt;  
+**Aldığı Değerler :** &lt;sayı&gt;  
 **Başlangıç değeri:** 1  
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri
 alan elemanların normal akıştaki alt elemanları  
@@ -204,12 +222,15 @@ alan elemanların normal akıştaki alt elemanları
 
 &lt;p&gt;&lt;strong&gt;box-ordinal-group&lt;/strong&gt; özelliği kapsayıcı kutunun içindeki esnek
 kutuların sıralamasını belirlememizi sağlar.&lt;/p&gt;
-&lt;p&gt;[css] #esnekKutu1 { box-ordinal-group: 2; -webkit-box-ordinal-group: 2;
--moz-box-ordinal-group: 2; background-color:#0CF; } #esnekKutu3 {
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#esnekKutu1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ordinal&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;group&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ordinal&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;group&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;-moz-box-ordinal-group: 2; background-color:#0CF; } #esnekKutu3 {
 box-ordinal-group: 2; -webkit-box-ordinal-group: 2;
 -moz-box-ordinal-group: 2; background-color:#9C3; } #esnekKutu4 {
 box-ordinal-group: 1; -webkit-box-ordinal-group: 1;
--moz-box-ordinal-group: 1; background-color:#FC9; } [/css]
+-moz-box-ordinal-group: 1; background-color:#FC9; } 
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/TaFBM/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;Dört adet kutumuz var. Bunların üç tanesine &lt;strong&gt;box-ordinal-group&lt;/strong&gt; değeri
 tanımladık.&lt;/p&gt;
@@ -223,8 +244,8 @@ olan 1 değerini almasına neden olacaktır. Buna göre sıralama 2,4,1,3
 özellik ismi kullanılması düşünülmektedir.&lt;/p&gt;
 &lt;h3&gt;box-flex&lt;/h3&gt;
 &lt;div class="cssozelliktanimi"&gt;
-**Yapısı :** box-ordinal-group: \&lt;deger\&gt;  
-**Aldığı Değerler :** \&lt;sayı\&gt;  
+**Yapısı :** box-ordinal-group: &lt;deger&gt;  
+**Aldığı Değerler :** &lt;sayı&gt;  
 **Başlangıç değeri:** 0  
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri
 alan elemanların normal akıştaki alt elemanları  
@@ -239,8 +260,11 @@ davranmasını sağlar. Tanım yapılmadığında ise alt elemanlar esnek olmaz.
 için toplam boşluk genişliği(Kapasayıcı eleman ile kutuların genişliği
 toplamı arasındaki fark) bu sayıya bölünerek elde edilen değer kutu
 genişliğini belirler.&lt;/p&gt;
-&lt;p&gt;[css] #esnekKutuKapsul { background: gray; border: blue; display: box;
-display: -webkit-box; display: -moz-box; display: -ms-box; width:100%; }
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#esnekKutuKapsul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;gray&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;display: -webkit-box; display: -moz-box; display: -ms-box; width:100%; }
 .esnekKutu { background-color:#999999; height:150px; } #esnekKutu1 {
 background-color:#0CF; border: orange solid 1px; box-flex: 2;
 -webkit-box-flex: 2; -moz-box-flex: 2; -ms-box-flex: 2; } #esnekKutu2 {
@@ -248,7 +272,7 @@ background: lightgray; border: red solid 1px; box-flex: 1;
 -webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; } #esnekKutu3 {
 background-color:#9C3; border: red solid 1px; box-flex: 0;
 -webkit-box-flex: 0; -moz-box-flex: 0; -ms-box-flex: 0; } #esnekKutu4 {
-background-color:#FC9; border: red solid 1px; } [/css]
+background-color:#FC9; border: red solid 1px; } 
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/h7KAa/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;Daha sabit bir örnek verelim; genişliği 600px olan kapsayıcı eleman ve
  üç adet 100px’lik kutumuz olsun(Bu durumdan boşluk değeri 300px
@@ -257,14 +281,17 @@ genişliği 200px(100 + 300/3 * 1 = 200) olacaktır. Eğer bu kutulardan
 bir tanesinin &lt;strong&gt;box-flex&lt;/strong&gt; değeri 2 olarak değiştirilirse, değiştirilen
 kutunun genişliği 250px(100 + 300/4 * 2 = 250) olurken diğer iki
 kutunun genişliği 175px(100 + 300/4 * 1 = 175) olacaktır.&lt;/p&gt;
-&lt;p&gt;[css] #esnekKutuKapsul { background: gray; border: blue; display: box;
-display: -webkit-box; display: -moz-box; display: -ms-box; width:600px;
-} .esnekKutu { background-color:#999999; height:150px; width:100px; }
-#esnekKutu1 { background-color:#0CF; box-flex: 2; -webkit-box-flex: 2;
--moz-box-flex: 2; -ms-box-flex: 2; } #esnekKutu2 { background:
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#esnekKutuKapsul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;gray&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;display: -webkit-box; display: -moz-box; display: -ms-box; width:600px;
+} .esnekKutu { background-color:#999999; height:150px; width:100px; }&lt;/p&gt;
+&lt;h1&gt;esnekKutu1 { background-color:#0CF; box-flex: 2; -webkit-box-flex: 2;&lt;/h1&gt;
+&lt;p&gt;-moz-box-flex: 2; -ms-box-flex: 2; } #esnekKutu2 { background:
 lightgray; box-flex: 1; -webkit-box-flex: 1; -moz-box-flex: 1;
 -ms-box-flex: 1; } #esnekKutu3 { background-color:#9C3; box-flex: 1;
--webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; } [/css]
+-webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; } 
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Dyjq2/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;Eğer kutu genişlikleri toplamı kapsayıcı kutunun genişliğinden büyük ise
 genişlik hesaplamasında benzer birim hesabına göre küçülme olacaktır. 0
@@ -314,35 +341,27 @@ daha güzel şeyler olacağı kesin.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.css3.info/introducing-the-flexible-box-layout-module/"&gt;http://www.css3.info/introducing-the-flexible-box-layout-module/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-flexbox/"&gt;http://www.w3.org/TR/css3-flexbox/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://dev.w3.org/csswg/css3-flexbox/"&gt;http://dev.w3.org/csswg/css3-flexbox/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://robertnyman.com/2010/12/02/css3-flexible-box-layout-module-aka-flex-box-introduction-and-demostest-cases/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://www.456bereastreet.com/archive/201103/the_css3_flexible_box_layout_flexbox/][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://robertnyman.com/2010/12/02/css3-flexible-box-layout-module-aka-flex-box-introduction-and-demostest-cases/"&gt;http://robertnyman.com/2010/12/02/css3-flexible-box-layout-module-aka-flex-box-introduction-and-demostest-cases/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.456bereastreet.com/archive/201103/the_css3_flexible_box_layout_flexbox/"&gt;http://www.456bereastreet.com/archive/201103/the_css3_flexible_box_layout_flexbox/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://hacks.mozilla.org/2010/04/the-css-3-flexible-box-model/"&gt;http://hacks.mozilla.org/2010/04/the-css-3-flexible-box-model/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.the-haystack.com/2010/01/23/css3-flexbox-part-1/"&gt;http://www.the-haystack.com/2010/01/23/css3-flexbox-part-1/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://ie.microsoft.com/testdrive/html5/flexin/default.html"&gt;http://ie.microsoft.com/testdrive/html5/flexin/default.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://htmlrockstars.com/blog/the-flexible-box-layout-module-css3/"&gt;http://htmlrockstars.com/blog/the-flexible-box-layout-module-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://blog.w3conversions.com/2011/02/css3-flexible-box-model-layout-coolness-also-oddities-confusion/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://www.netmagazine.com/tutorials/css3-flexible-box-model-explained&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.w3conversions.com/2011/02/css3-flexible-box-model-layout-coolness-also-oddities-confusion/"&gt;http://blog.w3conversions.com/2011/02/css3-flexible-box-model-layout-coolness-also-oddities-confusion/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.netmagazine.com/tutorials/css3-flexible-box-model-explained"&gt;http://www.netmagazine.com/tutorials/css3-flexible-box-model-explained&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://adactio.com/journal/4778/"&gt;http://adactio.com/journal/4778/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.vanseodesign.com/css/flexbox/"&gt;http://www.vanseodesign.com/css/flexbox/&lt;/a&gt; (güzel)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://oli.jp/2011/css3-flexbox/"&gt;http://oli.jp/2011/css3-flexbox/&lt;/a&gt; (karmaşık yerleşim uygulamalı)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.isotoma.com/2010/08/css3-flexbox/"&gt;http://blog.isotoma.com/2010/08/css3-flexbox/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://www.w3schools.com/css3/css3_reference.asp#box][]&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://portfo.li/madebyted/477862-css3-flexible-box-layout-module-aka-flex-box-introduction-and-demos-test-cases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css3/css3_reference.asp#box"&gt;http://www.w3schools.com/css3/css3_reference.asp#box&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://portfo.li/madebyted/477862-css3-flexible-box-layout-module-aka-flex-box-introduction-and-demos-test-cases"&gt;http://portfo.li/madebyted/477862-css3-flexible-box-layout-module-aka-flex-box-introduction-and-demos-test-cases&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://ontwik.com/css/css-3-the-flexible-box-model/"&gt;http://ontwik.com/css/css-3-the-flexible-box-model/&lt;/a&gt; (video)&lt;/li&gt;
-&lt;li&gt;[http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox][]
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox"&gt;http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox&lt;/a&gt;
     (güzel)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://caniuse.com/flexbox"&gt;http://caniuse.com/flexbox&lt;/a&gt; (tarayıcı desteği)&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/"&gt;http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;robertnyman&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2010&lt;span class="o"&gt;/&lt;/span&gt;12&lt;span class="o"&gt;/&lt;/span&gt;02&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flexible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;layout&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;module&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;aka&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flex&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;introduction&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;demostest&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cases&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;456&lt;span class="n"&gt;bereastreet&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;201103&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;the_css3_flexible_box_layout_flexbox&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;blog&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;w3conversions&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2011&lt;span class="o"&gt;/&lt;/span&gt;02&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flexible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;model&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;layout&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;coolness&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;also&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;oddities&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;confusion&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;netmagazine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tutorials&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flexible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;model&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;explained&lt;/span&gt;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;portfo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;li&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;madebyted&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;477862&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;css3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flexible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;layout&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;module&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;aka&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flex&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;introduction&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;demos&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;test&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cases&lt;/span&gt;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;coding&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;smashingmagazine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2011&lt;span class="o"&gt;/&lt;/span&gt;09&lt;span class="o"&gt;/&lt;/span&gt;19&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flexible&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;layout&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;explained&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="box-align"></category><category term="box-direction"></category><category term="box-flex"></category><category term="box-flex-group"></category><category term="box-lines"></category><category term="box-ordinal-group"></category><category term="box-orient"></category><category term="box-pack"></category><category term="css3"></category></entry><entry><title>Bir Projenin Bana Kazandırdıkları (LiveGO.com)</title><link href="http://www.fatihhayrioglu.com/bir-projenin-bana-kazandirdiklari-livegocom/" rel="alternate"></link><updated>2010-12-27T21:47:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-12-27:bir-projenin-bana-kazandirdiklari-livegocom/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/liveGO_white_72dpi_300px.jpg" title="liveGO_white_72dpi_300px" /&gt;][]Daha önce çalıştığım ajanslarda yaptığım işlerin bu günlüğü
+&lt;/p&gt;</summary><category term="box-align"></category><category term="box-direction"></category><category term="box-flex"></category><category term="box-flex-group"></category><category term="box-lines"></category><category term="box-ordinal-group"></category><category term="box-orient"></category><category term="box-pack"></category><category term="css3"></category></entry><entry><title>Bir Projenin Bana Kazandırdıkları (LiveGO.com)</title><link href="http://www.fatihhayrioglu.com/bir-projenin-bana-kazandirdiklari-livegocom/" rel="alternate"></link><updated>2010-12-27T21:47:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-12-27:bir-projenin-bana-kazandirdiklari-livegocom/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/liveGO_white_72dpi_300px.jpg" title="liveGO_white_72dpi_300px" /&gt;][]Daha önce çalıştığım ajanslarda yaptığım işlerin bu günlüğü
 oluşturmamda bir yardımı oldu. Her projede bir şeyler öğrendim ve
 öğrendiklerimi bu günlük ile sizlere aktarmaya çalıştım. Tüm ayrıntıları
 olmasada aklımda kalanları sizlere aktarmaya çalıştım ve aktarmaya da
@@ -453,17 +472,25 @@ ie8'de. Bu sürümdeki en büyük gelişme budur.&lt;/p&gt;
 &lt;h3&gt;:focus Sözde Sınıfı&lt;/h3&gt;
 &lt;p&gt;Klavyeden elementlere odaklanmamızı sağlayan ve erişebilirlik için
 önemli olan bu özellik İnternet Exploerer 8 ile geldi&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] a:focus { border: solid 1px red; }
-[/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:focus&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h3&gt;:before and :after Sözde Elementleri&lt;/h3&gt;
 &lt;p&gt;Bir elemanın öncesine ve sonrasına &lt;strong&gt;content&lt;/strong&gt; özelliği ile birlikte
 içerik eklememizi sağlayan bu özellik ie8 ile birlikte geldi.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] #box:before { content: "Not:"; }
-#box:after { content: "son"; } [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#box&lt;/span&gt;&lt;span class="nd"&gt;:before&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Not:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 "son";="&amp;quot;son&amp;quot;;" content:="content:"&gt;box:after&lt;/h1&gt;
 &lt;h3&gt;:lang() Sözde sınıfı&lt;/h3&gt;
 &lt;p&gt;Sayfa içeriğinde farklı dilde kullanılan içeriği yakalamak için
 kullanılan bir seçicidir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="css"] :lang(fr) { tanimlar } [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nd"&gt;:lang&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;fr&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;tanimlar&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h3&gt;:active Sözde sınıfı işlevselliği arttı&lt;/h3&gt;
 &lt;p&gt;Eskiden sadece a bağlantıya verilen özellikleri tanımlayan ie8 şimdi tüm
 HTML elementlerini kapsıyor artık.&lt;/p&gt;
@@ -573,25 +600,19 @@ karşılaştıkça sitemde yayınlayacağım hataları.&lt;/p&gt;
 &lt;h3&gt;Kaynaklar&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx" title="http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx"&gt;http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/" title="http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/"&gt;http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.howtocreate.co.uk/ie8.html" title="http://www.howtocreate.co.uk/ie8.html"&gt;http://www.howtocreate.co.uk/ie8.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://reference.sitepoint.com/css" title="http://reference.sitepoint.com/css"&gt;http://reference.sitepoint.com/css&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.evotech.net/blog/2009/03/ie8-css-support/" title="http://www.evotech.net/blog/2009/03/ie8-css-support/"&gt;http://www.evotech.net/blog/2009/03/ie8-css-support/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://css-discuss.incutio.com/wiki/IE8#CSS3_selectors][] (ie8
+&lt;li&gt;&lt;a href="http://css-discuss.incutio.com/wiki/IE8#CSS3_selectors" title="http://css-discuss.incutio.com/wiki/IE8#CSS3_selectors"&gt;http://css-discuss.incutio.com/wiki/IE8#CSS3_selectors&lt;/a&gt; (ie8
     sorunları)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://jhop.me/ie8-bugs" title="http://jhop.me/ie8-bugs"&gt;http://jhop.me/ie8-bugs&lt;/a&gt; (ie8 hataları)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.gtalbot.org/BrowserBugsSection/" title="http://www.gtalbot.org/BrowserBugsSection/"&gt;http://www.gtalbot.org/BrowserBugsSection/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;http://techblog.procurios.nl/k/news/view/33224/14863/Testing-Internet-Explorer-8-CSS3-for-Web-Design.html&lt;/a&gt;
+&lt;li&gt;&lt;a href="http://techblog.procurios.nl/k/news/view/33224/14863/Testing-Internet-Explorer-8-CSS3-for-Web-Design.html" title="http://techblog.procurios.nl/k/news/view/33224/14863/Testing-Internet-Explorer-8-CSS3-for-Web-Design.html"&gt;http://techblog.procurios.nl/k/news/view/33224/14863/Testing-Internet-Explorer-8-CSS3-for-Web-Design.html&lt;/a&gt;
     (CSS3 desteği)&lt;br /&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;smashingmagazine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2009&lt;span class="o"&gt;/&lt;/span&gt;10&lt;span class="o"&gt;/&lt;/span&gt;14&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;differences&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;internet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;explorer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;6&lt;span class="o"&gt;-&lt;/span&gt;7&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;8&lt;span class="o"&gt;/&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;smashingmagazine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2009&lt;span class="o"&gt;/&lt;/span&gt;10&lt;span class="o"&gt;/&lt;/span&gt;14&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;differences&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;internet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;explorer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;6&lt;span class="o"&gt;-&lt;/span&gt;7&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;and&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;8&lt;span class="o"&gt;/&lt;/span&gt;&amp;quot;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;techblog&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;procurios&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nl&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;news&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;33224&lt;span class="o"&gt;/&lt;/span&gt;14863&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Testing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Internet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Explorer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;8&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;CSS3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Web&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Design&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;techblog&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;procurios&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nl&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;news&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;33224&lt;span class="o"&gt;/&lt;/span&gt;14863&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Testing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Internet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Explorer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;8&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;CSS3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Web&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Design&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&amp;quot;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term=":active"></category><category term=":after"></category><category term=":before"></category><category term="content"></category><category term="Data URI"></category><category term="display:inline-block"></category><category term="focus"></category><category term="hasLayout"></category><category term="ie8"></category><category term="outline"></category></entry><entry><title>Fatih Hayrioğlu'nun not defteri - 2009</title><link href="http://www.fatihhayrioglu.com/fatih-hayrioglunun-not-defteri-2009/" rel="alternate"></link><updated>2010-01-02T18:02:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-01-02:fatih-hayrioglunun-not-defteri-2009/</id><summary type="html">&lt;p&gt;Geçen seneyi değerlendirirsem. Genel manada pek verimli bir sene olmadı.
+&lt;/p&gt;</summary><category term=":active"></category><category term=":after"></category><category term=":before"></category><category term="content"></category><category term="Data URI"></category><category term="display:inline-block"></category><category term="focus"></category><category term="hasLayout"></category><category term="ie8"></category><category term="outline"></category></entry><entry><title>Fatih Hayrioğlu'nun not defteri - 2009</title><link href="http://www.fatihhayrioglu.com/fatih-hayrioglunun-not-defteri-2009/" rel="alternate"></link><updated>2010-01-02T18:02:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-01-02:fatih-hayrioglunun-not-defteri-2009/</id><summary type="html">&lt;p&gt;Geçen seneyi değerlendirirsem. Genel manada pek verimli bir sene olmadı.
 Çok fazla makale yayımlayamadım. Umarım 2010 daha iyi geçer. &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Ocak&lt;/strong&gt; &lt;/p&gt;
 &lt;ul&gt;
@@ -744,11 +765,6 @@ karşılaştıkça sitemde yayınlayacağım hataları.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
 
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fatihhayrioglu&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;windows&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;vista&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;windows&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;defender&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;guncellemesindeki&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sorunu&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ve&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cozumu&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&amp;quot;&lt;span class="n"&gt;Windows&lt;/span&gt; &lt;span class="n"&gt;Vista&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;Windows&lt;/span&gt; &lt;span class="n"&gt;Defender&lt;/span&gt; &lt;span class="n"&gt;G&lt;/span&gt;ü&lt;span class="n"&gt;ncellemesindeki&lt;/span&gt; &lt;span class="n"&gt;Sorunu&lt;/span&gt; &lt;span class="n"&gt;ve&lt;/span&gt; Çö&lt;span class="n"&gt;z&lt;/span&gt;ü&lt;span class="n"&gt;m&lt;/span&gt;ü&amp;quot;
-&lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;[Safari ve Chrome'da metin girdi(textbox) alanlarını kenar çizgileri
   kaldıralım]: http://www.fatihhayrioglu.com/safari-ve-chromeda-metin-girditextbox-alanlarini-kenar-cizgileri-kaldiralim/
     "Safari ve Chrome'da metin girdi(textbox) alanlarını kenar çizgileri kaldıralım"
@@ -771,9 +787,7 @@ tarayıcısı idi. Microsoft da bunun farkına vardı ve İE 7 ile birlikte
 birçok sorunu gidermeye çalıştı işte size İE 7 ile düzeltilen CSS
 sorunları &lt;a href="http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx"&gt;http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx&lt;/a&gt;&lt;/p&gt;</summary><category term="düzeltmeler"></category><category term="ie7"></category><category term="internet explorer"></category><category term="İnternet Tarayıcısı"></category></entry><entry><title>CSS Mania'nın CSS ödülleri sahibiplerini buldu</title><link href="http://www.fatihhayrioglu.com/css-manianin-css-odulleri-sahibiplerini-buldu/" rel="alternate"></link><updated>2006-07-30T13:51:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-07-30:css-manianin-css-odulleri-sahibiplerini-buldu/</id><summary type="html">&lt;p&gt;Aslında sonuçlar Haziranda açıklandı biz biraz geç kaldık anlaşılan ama
 siteler güzel gerçekten
-&lt;a href=""&gt;http://awards.cssmania.com/2006/06/05/css-world-awards-nominations.php&lt;/a&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;awards&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cssmania&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;2006&lt;span class="o"&gt;/&lt;/span&gt;06&lt;span class="o"&gt;/&lt;/span&gt;05&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;world&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;awards&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;nominations&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>CSSMania'dan Dünya CSS Ödülleri</title><link href="http://www.fatihhayrioglu.com/cssmaniadan-dunya-css-odulleri/" rel="alternate"></link><updated>2006-06-26T23:33:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-06-26:cssmaniadan-dunya-css-odulleri/</id><summary type="html">&lt;p&gt;CSS Site tanıtım sitelerinin ünlülerinden &lt;a href="http://cssmania.com/"&gt;CSSMania&lt;/a&gt; İlk Dünya CSS
+&lt;a href="http://awards.cssmania.com/2006/06/05/css-world-awards-nominations.php"&gt;http://awards.cssmania.com/2006/06/05/css-world-awards-nominations.php&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>CSSMania'dan Dünya CSS Ödülleri</title><link href="http://www.fatihhayrioglu.com/cssmaniadan-dunya-css-odulleri/" rel="alternate"></link><updated>2006-06-26T23:33:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-06-26:cssmaniadan-dunya-css-odulleri/</id><summary type="html">&lt;p&gt;CSS Site tanıtım sitelerinin ünlülerinden &lt;a href="http://cssmania.com/"&gt;CSSMania&lt;/a&gt; İlk Dünya CSS
 Ödüllerini dağıtıryor. 10 dalda değişik ödül dağıtılacak:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Yılın sitesi&lt;/li&gt;

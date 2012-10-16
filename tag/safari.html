@@ -83,29 +83,33 @@
 Chrome için bir düzeltme yapmam gerekti(Chrome’un line-height ile olan
 sorun) araştırdım ve media sorgusu ile bir düzeltme kodu buldum. <br />
 </p>
-<p>[css] @media screen and (-webkit-min-device-pixel-ratio:0) { .arama {
-background-color: #FF0000; } #solAlan {color: #0000FF;} } [/css]</p>
+<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="nd">:0</span><span class="o">)</span> <span class="p">{</span> <span class="nc">.arama</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>background-color: #FF0000; } #solAlan {color: #0000FF;} } </p>
 <p>Şeklinde bir kod işimi gördü, ancak projeyi yayına atarken sıkıştırıp
 gönderiyoruz ve sıkıştırılınca</p>
-<p>[css] @media screen and(-webkit-min-device-pixel-ratio:0) [/css]</p>
+<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span><span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="nd">:0</span><span class="o">)</span>
+</pre></div>
+
+
 <p>Satırındaki <strong>and</strong> ve <strong>(</strong> arasındaki boşluğu sıkıştırma esnasında yok
 ediyor ve buda bu düzeltmenin uygulanmamasına neden oluyor. Çözüm için
-araya çakma bir yöntem(<strong>/*!*/</strong>) ile boşluk bırakmalıyız.</p>
-<p>[css] @media screen and/*!*/(-webkit-min-device-pixel-ratio:0) { ... }
-[/css]</p>
+araya çakma bir yöntem(<strong>/<em>!</em>/</strong>) ile boşluk bırakmalıyız.</p>
+<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span><span class="c">/*!*/</span><span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="nd">:0</span><span class="o">)</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Şeklinde çözüm üretebiliyoruz.</p>
 <p>Belki küçük bir ipucu ama lazım olur günün birinde</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="static">http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/</a></li>
-<li><a href="static">http://stackoverflow.com/questions/4104004/whats-the-semantic-of-media-screen-and-webkit-min-device-pixel-ratio0</a></li>
+<li><a href="http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/">http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/</a></li>
+<li><a href="http://stackoverflow.com/questions/4104004/whats-the-semantic-of-media-screen-and-webkit-min-device-pixel-ratio0">http://stackoverflow.com/questions/4104004/whats-the-semantic-of-media-screen-and-webkit-min-device-pixel-ratio0</a></li>
 <li><a href="http://yuilibrary.com/projects/yuicompressor/ticket/2528087">http://yuilibrary.com/projects/yuicompressor/ticket/2528087</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">evotech</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2008<span class="o">/</span>09<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">hack</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">google</span><span class="o">-</span><span class="n">chrome</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">safari</span><span class="o">-</span>31<span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">stackoverflow</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">questions</span><span class="o">/</span>4104004<span class="o">/</span><span class="n">whats</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">semantic</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">media</span><span class="o">-</span><span class="n">screen</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">min</span><span class="o">-</span><span class="n">device</span><span class="o">-</span><span class="n">pixel</span><span class="o">-</span><span class="n">ratio0</span>
-</pre></div><p>There are <a href=".././webkit-tabanli-tarayicilarchrome-ve-safari-icin-duzeltmehack-sorunu-ve-cozumu/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././webkit-tabanli-tarayicilarchrome-ve-safari-icin-duzeltmehack-sorunu-ve-cozumu/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -148,11 +152,17 @@ araya çakma bir yöntem(<strong>/*!*/</strong>) ile boşluk bırakmalıyız.</p
                 <p>Bir resminize kenar çizgisi tanımı yapıp daha sonrada köşelerini
 ovalleştirmek istediğinizde köşelerdeki kenar çizgilerinde sorun
 yaşıyoruz.</p>
-<p>[html] \&lt;!DOCTYPE html> \&lt;html> \&lt;head> \&lt;meta charset="utf-8">
-\&lt;title>border-radius\&lt;/title> \&lt;style> img{ border:2px solid #999;
+<div class="codehilite"><pre> <span class="cp">&lt;!DOCTYPE html&gt;</span> <span class="nt">&lt;html&gt;</span> <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<p><title>border-radius</title> <style> img{ border:2px solid #999;
 -webkit-border-radius:8px; -moz-border-radius:8px; border-radius:8px;}
-\&lt;/style> \&lt;/head> \&lt;body> \&lt;img src="gudi.jpg" width="75"
-height="75 ...</p>
+</style> </head> <body> <img src="static/gudi.jpg" width="75"
+height="75" /> </body> </html> </p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/border_radius_resim_.html">tıklayınız.</a></p>
+<p><img alt="" src="https://lh5.googleusercontent.com/gLndP4VPjq8o0ReURiijye0gHVHNWXVLgerrYuZ7rDSTu5ZOkhayATtTmspfym08AUQhceJxvnhmSz_03Tr325FWhugB4g5-aC6OarKEqxlF0gcTiA" /></p>
+<p>Kırmızı ile ...</p>
                 <a class="readmore" href=".././css3-ile-yuvarlak-kenarli-resim-yapmak/">read more</a>
                 <p>There are <a href=".././css3-ile-yuvarlak-kenarli-resim-yapmak/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -487,7 +497,7 @@ interaktif metin, resim, video, müzik vb. göstermek için kullanılan
 programlardır. "Vikipedia"</p>
 <p>Şu an genelde kullanılan tarayıcılar: Internet Explorer, Mozilla
 Firefox, Opera ve Safari <!--more--></p>
-<p>[http://upload.wikimedia.org/wikipedia/commons/7/74/Timeline_of_web_browsers.svg][]</p>
+<p><a href="http://upload.wikimedia.org/wikipedia/commons/7/74/Timeline_of_web_browsers.svg">http://upload.wikimedia.org/wikipedia/commons/7/74/Timeline_of_web_browsers.svg</a></p>
 <p>İnternet tarayıcılarının ...</p>
                 <a class="readmore" href=".././internet-tarayicilari/">read more</a>
                 <p>There are <a href=".././internet-tarayicilari/#disqus_thread">comments</a>.</p>

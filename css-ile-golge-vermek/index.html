@@ -102,8 +102,11 @@ katmana atayalım. Sonra resmi yukarı ve sola doğru 5 piksel mesafe
 verelim.</p>
 <p><img alt="" src="../static/dokumanlar/images/golge01.jpg" /></p>
 <p>Xhtml kodu:</p>
-<p>[html] \&lt;div class="resimKutusu">\&lt;img src="resim.jpg" width="300"
-height="300" alt="Vizara Köyü – Sürmene " />\&lt;/div> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;resimKutusu&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;resim.jpg&quot;</span> <span class="na">width=</span><span class="s">&quot;300&quot;</span>
+</pre></div>
+
+
+<p>height="300" alt="Vizara Köyü – Sürmene " /&gt;</div> </p>
 <p>Yukarıdaki kodda görüldüğü gibi bir resim ve onu kapsayan bir katmanımız
 var. Kapsayıcı katmana(.resimKutu) gölge zemin resmini atayacağız.
 Burada şöyle bir sorunumuz olacaktır ki katman bir <a href="http://www.fatihhayrioglu.com/?p=151">blok-level</a> bir
@@ -113,20 +116,29 @@ bu yöntemin kullanılabilirliğini azaltacaktır. Daha kullanılabilir
 kodlama için float ataması yapacağız bu Mac IE 5x versiyonlarda sorun
 çıkarır bunu engellemek için bu kodu Mac IE5x den gizleyeceğiz. CSS
 kodu:</p>
-<p>[css] .resimKutusu { background: url(images/golge.gif) no-repeat bottom
-right; clear: right; float: left; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.resimKutusu</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/golge.gif)</span> <span class="k">no-repeat</span> <span class="k">bottom</span>
+</pre></div>
+
+
+<p>right; clear: right; float: left; } </p>
 <p>Gölge zemin resmini ortaya çıkarmak için margin tanımlarını yapmalıyız.</p>
-<p>[css] .resimKutusu img { margin: -5px 5px 5px -5px; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.resimKutusu</span> <span class="nt">img</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">-5px</span> <span class="m">5px</span> <span class="m">5px</span> <span class="m">-5px</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Efekti daha belirgin ve güzel hale getirmek için padding ve kenarlık
 ataması yaparsak.</p>
-<p>[css] .resimKutusu img { background-color: #fff; border: 1px solid
-#a9a9a9; padding: 4px; margin: -5px 5px 5px -5px; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.resimKutusu</span> <span class="nt">img</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span>
+</pre></div>
+
+
+<h1>a9a9a9; padding: 4px; margin: -5px 5px 5px -5px; }</h1>
 <p>Yukarıdaki kodun IE6 da çalışması için bir iki ekleme yapmalıyız.</p>
 <p>[css highlight="5,11,13"] .resimKutusu { background:
 url(images/shadow.gif) no-repeat bottom right; clear: right; float:
 left; position: relative; } .resimKutusu img { background-color: #fff;
 border: 1px solid #a9a9a9; padding: 4px; display: block; margin: -5px
-5px 5px -5px; position: relative; } [/css]</p>
+5px 5px -5px; position: relative; } </p>
 <p>Kodlama IE5x versiyonlarda biraz sorunlu görünse de genelde
 uygulanabilir bir metottur. Bu metot uygulanabilirliğinin kolay olması
 sebebiyle tercih edilebilir.</p>
@@ -135,10 +147,13 @@ sebebiyle tercih edilebilir.</p>
 <p><a href="http://www.clagnut.com">www.clagnut.com</a>'da yayınlandığı için bu isim verilmiştir. Bu metot
 bir önceki ile benzerlik taşır. Bu metottaki fark negatif margin vermek
 yerine göreceli(realtive) konumlandırma kullanmaktır.</p>
-<p>[css] .resimKapsulu { background: url(images/golge.gif) no-repeat bottom
-right; float:left; line-height:0; } .resimKapsulu img {
+<div class="codehilite"><pre> <span class="nc">.resimKapsulu</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/golge.gif)</span> <span class="k">no-repeat</span> <span class="k">bottom</span>
+</pre></div>
+
+
+<p>right; float:left; line-height:0; } .resimKapsulu img {
 background:#fff; padding:4px; border:1px solid #a9a9a9;
-position:relative; left:-5px; top:-5px; } [/css]</p>
+position:relative; left:-5px; top:-5px; } </p>
 <p>IE5x de padding sorunu olsa da tüm web tarayıcılarında gayet güzel
 sonuçlar verir.</p>
 <p>Örnek çalışmayı görmek için <a href="../static/dokumanlar/clagnut_golge.html">tıklayınız.</a></p>
@@ -154,43 +169,67 @@ koduda uygulanacaktır)</p>
 <p>Aşağıdaki gibi bir maske PNG dosyası oluşturalım. IE'nin eski
 versiyonları için .gif oluşturalım.</p>
 <p><img alt="Maske PNG örneği" src="../static/dokumanlar/images/maske_png.gif" /></p>
-<p>[html] \&lt;div class="resimKapsulu"> \&lt;div> \&lt;img
-src="images/koy_01.jpg" width="250" height="165" alt="Vizara Köyü –
-Sürmene" /> \&lt;/div> \&lt;/div> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;resimKapsulu&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div&gt;</span> <span class="nt">&lt;img</span>
+</pre></div>
+
+
+<p>src="images/koy_01.jpg" width="250" height="165" alt="Vizara Köyü –
+Sürmene" /&gt; </div> </div> </p>
 <p>Bu metodu uygulamak için
 <span class="alternatifard"><strong>resimKapsulu</strong></span> katmanına alt sağa
 dayalı bir gölge zemin resmi ekleyelim.</p>
-<p>[css] .resimKapsulu { background: url(images/golge2.gif) no-repeat right
-bottom; float: left; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.resimKapsulu</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/golge2.gif)</span> <span class="k">no-repeat</span> <span class="k">right</span>
+</pre></div>
+
+
+<p>bottom; float: left; } </p>
 <p>Bu kapsayıcı katmanın içindeki katmanın üst sağına üstte oluşturduğumuz
 maske resmini ekleyelim. Bu resim gölge resminin üzerine binecektir ve
 ortaya çok güzel bir gölge efekti çıkacaktır. İçteki katmana gölgenin
 ortaya çıkması için padding uygulayalım. Ayrıca gerçek gölge efektini
 yakalamak için png zemin resmini ekleyelim.</p>
-<p>[css] .resimKapsulu div { background: url(images/mask.png) no-repeat
-left top !important; background: url(images/mask.gif) no-repeat left
-top; padding: 0 5px 5px 0; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.resimKapsulu</span> <span class="nt">div</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/mask.png)</span> <span class="k">no-repeat</span>
+</pre></div>
+
+
+<p>left top !important; background: url(images/mask.gif) no-repeat left
+top; padding: 0 5px 5px 0; } </p>
 <p>Bu kodu eski versiyon IE versiyonlarına uygun kod yazarsak:</p>
-<p>[css] .resimKapsulu div { background: url(images/mask.png) no-repeat
-left top !important; background: url(images/mask.gif) no-repeat left
-top; padding: 0 5px 5px 0; float: left; /* IE5.2/Mac duzeltmek icin
-yazildi */ } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.resimKapsulu</span> <span class="nt">div</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/mask.png)</span> <span class="k">no-repeat</span>
+</pre></div>
+
+
+<p>left top !important; background: url(images/mask.gif) no-repeat left
+top; padding: 0 5px 5px 0; float: left; /<em> IE5.2/Mac duzeltmek icin
+yazildi </em>/ } </p>
 <p>son olarakta efekti vurgulamak için kenarlık tanımı yapalım.</p>
-<p>[css] .resimKapsulu img { background-color: #fff; border: 1px solid
-#a9a9a9; padding: 4px; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.resimKapsulu</span> <span class="nt">img</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span>
+</pre></div>
+
+
+<h1>a9a9a9; padding: 4px; }</h1>
 <p>gif ve png ikileminden hoşlanmayanlar için bir yöntem daha var. IE5.5
 den sonraki versiyonların desteklediği</p>
-<p>[css]
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/mask.png',
-sizingMethod='crop'); [/css]</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<p>filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/mask.png',
+sizingMethod='crop'); </p>
 <p>Bu kodu ie versiyonları için eklemeliyiz, diğer web tarayıcılarında
 gizlemeliyiz.</p>
-<p>[css] .resimKapsulu div {
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/shadow2.png',
-sizingMethod='crop'); background: none; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.resimKapsulu</span> <span class="nt">div</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/shadow2.png',
+sizingMethod='crop'); background: none; } </p>
 <p>diğer web tarayıcılarında gizlemek için</p>
-<p>[css] \&lt;!–[if gte ie 5.5000]> \&lt;link rel="stylesheet" type="text/css"
-href="ie55.css"/> \&lt;![endif]–> [/css]</p>
+<div class="codehilite"><pre> <span class="o">&lt;!</span><span class="err">–</span><span class="o">[</span><span class="nt">if</span> <span class="nt">gte</span> <span class="nt">ie</span> <span class="nt">5</span><span class="nc">.5000</span><span class="o">]&gt;</span> <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text/css&quot;</span>
+</pre></div>
+
+
+<p>href="ie55.css"/&gt; &lt;![endif]–&gt; </p>
 <p>Böylece tüm yeni nesil web tarayıcılarında bu metodu sağlıklı bir
 şekilde kullanmış olduk.</p>
 <div class="ekstrabilgi">
@@ -213,24 +252,36 @@ katmanın sağ üst kısmına gölge kenarı vererek yapılır.</p>
 
 <p></div>
 Temel html kodu:</p>
-<p>[html] \&lt;div class="nesneKapsayici1"> \&lt;div class="nesneKapsayici2">
-\&lt;div class="nesneKapsayici3"> \&lt;img src="images/dunya.jpg" width="300"
-height="300" alt="Dünya" /> \&lt;/div> \&lt;/div> \&lt;/div> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;nesneKapsayici1&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;nesneKapsayici2&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<p><div class="nesneKapsayici3"> <img src="../static/images/dunya.jpg" width="300"
+height="300" alt="Dünya" /> </div> </div> </div> </p>
 <p>İlk önce en dıştaki katmana gölge zemin resmini atayalım:</p>
-<p>[css] .nesneKapsayici1 { background:url(images/golge.gif) no-repeat
-right bottom; float: left; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.nesneKapsayici1</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="sx">url(images/golge.gif)</span> <span class="k">no-repeat</span>
+</pre></div>
+
+
+<p>right bottom; float: left; } </p>
 <p>Sonra oluşturduğumuz iki adet gölge resminin bir tanesini üst sağ
 tarafa, diğerini alt sol tarafa zemin resmi olarak veriyoruz. Ayrıca tam
 resme göre gölge vermek için aşağıdaki gibi kodlama yapmalıyız:</p>
-<p>[css] .nesneKapsayici2 { background:url(images/altsol.gif) no-repeat
-left bottom; float: left; /* IE5.2/Mac duzeltmek icin yazildi */ }
+<div class="codehilite"><pre> <span class="nc">.nesneKapsayici2</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="sx">url(images/altsol.gif)</span> <span class="k">no-repeat</span>
+</pre></div>
+
+
+<p>left bottom; float: left; /<em> IE5.2/Mac duzeltmek icin yazildi </em>/ }
 .nesneKapsayici3 { background:url(images/ustsag.gif) no-repeat top
-right; padding: 0 5px 5px 0; float: left; /* IE5.2/Mac duzeltmek icin
-yazildi */ } [/css]</p>
+right; padding: 0 5px 5px 0; float: left; /<em> IE5.2/Mac duzeltmek icin
+yazildi </em>/ } </p>
 <p>ve son olarak ta güzel bir efekt olması için kenarlık ve padding
 tanımlarını yapıyoruz:</p>
-<p>[css] .nesneKapsayici1 img { background-color: #fff; border: 1px solid
-#a9a9a9; padding: 4px; display: block; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.nesneKapsayici1</span> <span class="nt">img</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span>
+</pre></div>
+
+
+<h1>a9a9a9; padding: 4px; display: block; }</h1>
 <p>Örnek çalışmayı görmek için <a href="../static/dokumanlar/onion_golge.html">tıklayınız.</a></p>
 <p>Bu metot kolay uygulanabilirlik bakımından avantajlıdır. Ancak fazladan
 iki adet katman kullanılması bakımından pek anlamlı kod

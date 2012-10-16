@@ -82,27 +82,27 @@
 
 
 </footer><!-- /.post-info -->
-      <p>CSS ile birlikte kodlama yaparken bir çok yerde \&lt;hr/> etiketi yerine
+      <p>CSS ile birlikte kodlama yaparken bir çok yerde <hr/> etiketi yerine
 elementlerin üst ve alt kenarlık değeri ataması yapılarak kodlama
-yapılmaktadır, bunun yerine \&lt;hr /> etiketini kullanabiliriz. \&lt;hr / >
+yapılmaktadır, bunun yerine <hr /> etiketini kullanabiliriz. <hr / >
 daha kolay eklenir ve css desteklemeyen araçlarda sayfa görünümünün
 bozulmasını engeller.</p>
 <!--more-->
 
-<p>\&lt;hr> elementinin kullanımı da kolaydır. \&lt;hr> elementinin tek sorunu
+<p><hr> elementinin kullanımı da kolaydır. <hr> elementinin tek sorunu
 farklı web tarayıcılarında farklı algılanmasıdır burada biz hepsine aynı
 göstermeye çalışacağız. Aşağıdaki kodlar IE5+, Opera5+ ve FF1.0+ test
 edilmiştir.</p>
 <div class="ekstrabilgi">
 Bu konuyu yazmamın sebebi RSS besleyicimi feedburner'a ekledikten sonra
 sağ kolonun üstüne RSS besleyici ikonu ve linki eklemem ve altına ayraç
-olarak \<hr /\> etiketini koyduktan sonra karar verdim. Görünüm hoş
+olarak <hr /> etiketini koyduktan sonra karar verdim. Görünüm hoş
 olmayan etiketi nasıl düzenlerim diye araştırdım ve sonucu sizlerle
 paylaşmak istedim.
 
 </div>
 
-<h3>\&lt;hr> Elementi hangi özellikleri destekliyor</h3>
+<h3><hr> Elementi hangi özellikleri destekliyor</h3>
 <ul>
 <li><strong>width</strong> ve <strong>height</strong> değerini tüm web tarayıcıları destekliyor.</li>
 <li><strong>border</strong> özelliği Explorer ve Firefox destekliyor. Opera
@@ -112,32 +112,32 @@ paylaşmak istedim.
 <li>Tüm tarayıcılar<strong>background-image</strong> özelliğini destekliyor ancak
     Explorer ve Opera'da bazı sorunları var.</li>
 </ul>
-<p>[sourcecode language='css'] hr { border: 0; width: 80%; } [/sourcecode]</p>
+<p>[sourcecode language='css'] hr { border: 0; width: 80%; } </p>
 <p>Bu kodlama IE ve Opera'da düzgün görünecektir. Ancak Firefox'ta
 görünmeyecektir. background-color ekleyerek kodumuzu Firefox'a da uygun
 hala getiriyoruz.</p>
 <p>[sourcecode language='css'] hr { color: #f00; background-color: #f00;
-height: 5px; } [/sourcecode]</p>
-<p>\&lt;hr / > elementine stil ataması yaparken color ve background-color
+height: 5px; } </p>
+<p><hr / > elementine stil ataması yaparken color ve background-color
 özelliklerin her ikisini de kullanmalıyız. Yüksekliği 3px'in altındaki
 değerler için Opera'nın eski sürümleri sorun çıkarıyor.</p>
-<h3>\&lt;hr /> hizalama</h3>
-<p>\&lt;hr /> etiketini hizalamada IE için <strong>text-align</strong> özelliği, Firefox
+<h3><hr /> hizalama</h3>
+<p><hr /> etiketini hizalamada IE için <strong>text-align</strong> özelliği, Firefox
 ve Opera için <strong>margin</strong> özelliği kullanılır.</p>
-<p>[sourcecode language='css'] hr { text-align: right; /* ie icin */
-margin-right: 0; /* diger brovserlar icin */ } [/sourcecode]</p>
+<p>[sourcecode language='css'] hr { text-align: right; /<em> ie icin </em>/
+margin-right: 0; /<em> diger brovserlar icin </em>/ } </p>
 <div class="ekstrabilgi">
-\<hr\> etiketini \<hr /\> şeklinde kullanmak Xhtml kuralları açısından
+<hr> etiketini <hr /> şeklinde kullanmak Xhtml kuralları açısından
 önemlidir. Bildiğiniz gibi Xhtml'de her etiket mutlaka kapatılmalıdır.
 Eğer etiketin bir kapatma etiketi yoksa kapama işaretinden önce bir
-bölme işareti(/) konarak bu işlem gerçekleştirilir. Örn: \<img src="../static"
-/\>, \<br /\>, \<meta /\> gibi.
+bölme işareti(/) konarak bu işlem gerçekleştirilir. Örn: <img src="../static"
+/>, <br />, <meta /> gibi.
 
 </div>
 
-<h3>\&lt;hr/> resim kullanmak</h3>
+<h3><hr/> resim kullanmak</h3>
 <p>Web sitelerinde bölümleri ayırmak için basit resimler kullanırız. Bu
-amaçla \&lt;hr /> elementini kullanabiliriz. Bu işlem için
+amaçla <hr /> elementini kullanabiliriz. Bu işlem için
 <strong>background-image</strong> özelliğini kullanmalıyız. Tabi bir kaç sorunumuz
 çıkacaktır farklı web tarayıcılarda. Firefox gayet güzel çalışırken IE6-
 ve Opera'nın eski sürümlerinde sorun çıkarır. resmin etrafında kenarlık
@@ -149,35 +149,31 @@ ve Opera'nın eski sürümlerinde sorun çıkarır. resmin etrafında kenarlık
 
 </div>
 
-<p>[/sourcecode]</p>
 <p>ve CSS kodu</p>
 <p>[sourcecode language='css'] div.hr { background: #fff
 url(/images/ayrac_zr.gif) no-repeat scroll center; height:28px;
-width:180px; } div.hr hr { display: none; } [/sourcecode]</p>
-<p>Tüm web tarayıcılarında sorunsuz çalışacaktır. Yukarıdaki kodda \&lt;hr />
-etiketi bir \&lt;div> içine alarak css ile \&lt;hr /> etiketi görünmez
+width:180px; } div.hr hr { display: none; } </p>
+<p>Tüm web tarayıcılarında sorunsuz çalışacaktır. Yukarıdaki kodda <hr />
+etiketi bir <div> içine alarak css ile <hr /> etiketi görünmez
 yapılarak esnek bir çözüm sağlanmıştır. Fazladan bir katman eklemek
 standartlara uygun kodlama için istenmeyen bir durum olsa da kodlama
 esnekliği ve tüm web tarayıcılarında aynı sonucu vermesi nedeni ile
 kullanılabilir bir kodlamadır.</p>
 <p>Burada bir iki ufak sorun var. Birincisi uygulanan zemin resmi çıktı
 alırken görünmemesidir. Bunun için yazcı için CSS kodlarken bu özelliği
-es geçmeliyiz. İkincisi \&lt;hr> elementine margin ve/veya padding tanımı
+es geçmeliyiz. İkincisi <hr> elementine margin ve/veya padding tanımı
 yaptığımızda bazı web tarayıcılarında kaymalara neden oluyor, bu sorunu
-çözmek için margin ve/veya padding değerini \&lt;div> vermeliyiz.</p>
+çözmek için margin ve/veya padding değerini <div> vermeliyiz.</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://www.sovavsiti.cz/css/hr.html">http://www.sovavsiti.cz/css/hr.html</a></li>
 <li><a href="http://sonspring.com/journal/styling-hr">http://sonspring.com/journal/styling-hr</a></li>
-<li><a href="../static">http://bitesizestandards.com/bites/styling-horizontal-rules-with-css</a></li>
+<li><a href="http://bitesizestandards.com/bites/styling-horizontal-rules-with-css">http://bitesizestandards.com/bites/styling-horizontal-rules-with-css</a></li>
 <li><a href="http://www.blakems.com/experimental/hr/">http://www.blakems.com/experimental/hr/</a></li>
 <li><a href="http://www.saila.com/usage/tips/defn.shtml?hr">http://www.saila.com/usage/tips/defn.shtml?hr</a></li>
 <li><a href="http://www.sitepoint.com/examples/hr/">http://www.sitepoint.com/examples/hr/</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">bitesizestandards</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">bites</span><span class="o">/</span><span class="n">styling</span><span class="o">-</span><span class="n">horizontal</span><span class="o">-</span><span class="n">rules</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css</span>
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

@@ -79,26 +79,31 @@
 <p>tags: <a href=".././tag/css.html">CSS</a><a href=".././tag/firefox.html">Firefox</a><a href=".././tag/problem.html">problem</a><a href=".././tag/satir-basi.html">satır-başı</a><a href=".././tag/xhtml.html">XHTML</a></p>
 
 
-</footer><!-- /.post-info --><p>[http://forum.ceviz.net/showthread.php?p=249585#post249585][] Cevap
+</footer><!-- /.post-info --><p><a href="http://forum.ceviz.net/showthread.php?p=249585#post249585">http://forum.ceviz.net/showthread.php?p=249585#post249585</a> Cevap
 yazarken araştırdım da burayada yazayım dedim. Sabit bir genişlikte bir
 katman oluştuurp bu genişliği aşan genişlikte içerikleri otomatik olarak
 satırın başına tmak için ne yapabiliriz. Normalde bunu için IE5.5+ dan
 itibaren word-wrap: break-word kodu ile bunu desteklemektedir, ancak
 Mozilla tabanlı web tarayıcıları(örn Firefox) bu koda banamısın demiyor.
-Çözüm [sourcecode language="css"] pre { white-space: pre-wrap; /* css-3
-*/ white-space: -moz-pre-wrap; /* Mozilla, since 1999 */ white-space:
--pre-wrap; /* Opera 4-6 */ white-space: -o-pre-wrap; /* Opera 7 */
-word-wrap: break-word; /* Internet Explorer 5.5+ */ } [/sourcecode]
-[sourcecode language="html"] \&lt;pre>uzuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuun
-metin\&lt;/pre> [/sourcecode]</p>
+Çözüm   :::css
+     pre { white-space: pre-wrap; /<em> css-3
+</em>/ white-space: -moz-pre-wrap; /<em> Mozilla, since 1999 </em>/ white-space:
+-pre-wrap; /<em> Opera 4-6 </em>/ white-space: -o-pre-wrap; /<em> Opera 7 </em>/
+word-wrap: break-word; /<em> Internet Explorer 5.5+ </em>/ } 
+    :::html
+     <pre>uzuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuun
+metin</pre> </p>
 <p>12 Şubat 2010'dan sonra düzenleme yapıldı</p>
 <p>Bu yazıyı yazdığımda Firefox 2 vardı ve yazdığım çözüm işe yaramamıştı.
 Şimdi işler değişti. white-space: pre-wrap özelliğini ve değerini
 Firefox 3'dan itibaren desteklediği için artık kodumuzu aşağıdaki gibi
 değiştirebiliriz. Opera eski sürümlerinide es geçerek tabi, gerçi Opera
 10'nun desteklendiği söyleniyor, ama benim testimde olmadı.</p>
-<p>[sourcecode language="css"] pre { white-space: pre-wrap; /* css-3 */
-word-wrap: break-word; /* Internet Explorer 5.5+ */ } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">pre</span> <span class="p">{</span> <span class="k">white-space</span><span class="o">:</span> <span class="n">pre</span><span class="o">-</span><span class="n">wrap</span><span class="p">;</span> <span class="c">/* css-3 */</span>
+</pre></div>
+
+
+<p>word-wrap: break-word; /<em> Internet Explorer 5.5+ </em>/ } </p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://www.quirksmode.org/css/whitespace.html">http://www.quirksmode.org/css/whitespace.html</a></li>

@@ -123,8 +123,11 @@ genişliğini ve ara alanlar oluşturmak için bu özellikleri kullanırız.</p>
 <p>Elemanı ayıracağımız kolon sayısını belirlememizi sağlar. Başlangıç
 değeri auto olarak tanımlıdır. Bu sayede sadece <strong>column-width</strong> tanımı
 ile ile</p>
-<p>[css] #cokluKolon{ -moz-column-count:3; -webkit-column-count:3;
-column-count:3; width:968px; margin:0 auto; } [/css]
+<div class="codehilite"><pre> <span class="nf">#cokluKolon</span><span class="p">{</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">count</span><span class="o">:</span><span class="m">3</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">count</span><span class="o">:</span><span class="m">3</span><span class="p">;</span>
+</pre></div>
+
+
+<p>column-count:3; width:968px; margin:0 auto; } 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/HZZ8t/1/embedded/css,result,html"></iframe></p>
 <p>Genişlik tanımı yapılmadan kolonlara bölme işlemi gerçekleşmiyor.
 Tarayıcılara göre farklı öneklerle kullanmamız dışında tek satırsa
@@ -148,18 +151,27 @@ Android Browser 2.1+
 <p>Elemanları kolonlara bölmek için diğer bir yöntemde <strong>column-width</strong> ile
 genişlik tanımı yapmaktır. Tarayıcılar belirlenen genişliğe göre
 kapsayıcının genişliğine göre otomatik olarak kolonlara bölecektir.</p>
-<p>[css] #cokluKolon{     -moz-column-width:150px;    
--webkit-column-width:150px;     column-width:150px;    } [/css]
+<div class="codehilite"><pre> <span class="nf">#cokluKolon</span><span class="p">{</span> <span class="err">   </span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>-webkit-column-width:150px;     column-width:150px;    } 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/SkXL4/1/embedded/css,result,html"></iframe></p>
 <p>Bir genişlik tanımı yapılırsa <strong>column-width</strong> değeri tanımlandığı kadar
 kolona bölüyor.</p>
-<p>[css] #cokluKolon{     -moz-column-width:150px;    
--webkit-column-width:150px;     column-width:150px;     width:950px;   
-} [/css]</p>
+<div class="codehilite"><pre> <span class="nf">#cokluKolon</span><span class="p">{</span> <span class="err">   </span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>-webkit-column-width:150px;     column-width:150px;     width:950px;   
+} </p>
 <p>column-width ile <strong>column-count</strong> aynı anda kullanabiliriz.</p>
-<p>[css] #cokluKolon{    -webkit-column-count: 2;    -moz-column-count: 2;
-   column-count: 2;    -webkit-column-width: 150px;
-   -moz-column-width: 150px;    column-width: 150px;        } [/css]</p>
+<div class="codehilite"><pre> <span class="nf">#cokluKolon</span><span class="p">{</span> <span class="err">   </span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">count</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span> <span class="err">   </span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">count</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+</pre></div>
+
+
+<p>column-count: 2;    -webkit-column-width: 150px;
+   -moz-column-width: 150px;    column-width: 150px;        } </p>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**  
 Firefox 1.5+  
@@ -178,7 +190,10 @@ Android Browser 2.1+
 <h3>columns</h3>
 <p><strong>column-count</strong> ve <strong>column-width</strong> değerlerini tek seferde
 kullanabileceğimiz bir kısayol tanımıdır.</p>
-<p>[css] div {columns: 200px 5;} [/css]</p>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span><span class="n">columns</span><span class="o">:</span> <span class="m">200px</span> <span class="m">5</span><span class="p">;}</span>
+</pre></div>
+
+
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**  
 Firefox desteklemiyor  
@@ -194,9 +209,12 @@ Opera 11.1+
 yapıldığında Firefox ve Google Chrome ile Opera farklı yorumluyor. Opera
 yorumlarken her halükarda <strong>column-width</strong> değerini üstün kılarken,
 Firefox ve Chrome <strong>column-coun</strong>t değerini üstün kılıyor.</p>
-<p>[css] #cokluKolon{    -webkit-column-count: 2;    -moz-column-count: 2;
-   column-count: 2;    -webkit-column-width: 150px;
-   -moz-column-width: 150px;    column-width: 150px;        } [/css]</p>
+<div class="codehilite"><pre> <span class="nf">#cokluKolon</span><span class="p">{</span> <span class="err">   </span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">count</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span> <span class="err">   </span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">count</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+</pre></div>
+
+
+<p>column-count: 2;    -webkit-column-width: 150px;
+   -moz-column-width: 150px;    column-width: 150px;        } </p>
 <p>Bu tanımda Firefox ve Chrome 2 kolonlu bir yapı gösteriyor ve genişlik
 olarak 150px tanımını görmüyor. Opera ise <strong>column-width</strong> değerini
 150px alıp kapsayıcının genişliği kadar kolona ayrırıyor.</p>
@@ -204,8 +222,11 @@ olarak 150px tanımını görmüyor. Opera ise <strong>column-width</strong> de�
 <p>Kolonlar arasına mesafe koymak için kullanılır. Bir bakıma padding veya
 margin anlamında kullanılır.</p>
 <p>Başlangıç değeri 1em olarak tanımlıdır.</p>
-<p>[css] #cokluKolon{    -webkit-column-gap: 50px;    -moz-column-gap:
-50px;    column-gap: 50px;        } [/css]
+<div class="codehilite"><pre> <span class="nf">#cokluKolon</span><span class="p">{</span> <span class="err">   </span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">gap</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span> <span class="err">   </span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">gap</span><span class="o">:</span>
+</pre></div>
+
+
+<p>50px;    column-gap: 50px;        } 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/vdnRk/1/embedded/css,result,html"></iframe></p>
 <p><strong>column-gap</strong>’in güzelliği son kolona bu boşluğu uygulamıyor olması.</p>
 <div class="tarayiciuyum">
@@ -228,10 +249,13 @@ Android Browser 2.1+
 ile benzer bir yapısı var. <strong>column-rule-size,
 column-rule-style</strong>ve<strong>column-rule</strong>-color gibi ayrı ayrı tanımlama
 yapılabileceği gibi <strong>column-rule</strong> kısaltması ile tanım yapabiliyoruz.</p>
-<p>[css] #cokluKolon{    -webkit-column-rule: 3px solid #000;
-   -moz-column-rule: 3px solid #000;    column-rule: 3px solid
-#000;        } [/css]
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3SMhX/embedded/css,result,html"></iframe></p>
+<div class="codehilite"><pre> <span class="nf">#cokluKolon</span><span class="p">{</span> <span class="err">   </span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">rule</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span>
+</pre></div>
+
+
+<p>-moz-column-rule: 3px solid #000;    column-rule: 3px solid</p>
+<h1>000;        }</h1>
+<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3SMhX/embedded/css,result,html"></iframe></p>
 <p><strong>column-gap</strong> gibi sadece aradaki kolonlara uygulanan bir özellik bu
 son kolona uygulanmıyor.</p>
 <div class="tarayiciuyum">
@@ -300,8 +324,11 @@ kullanıyoruz.</p>
 sayısı 2,3,4 vs.) all değeri tüm kolonlar boyunca başlığın uzaması için
 kullanılır. Sayı değerleri ise belirtilen sayıdaki kolonlarda uzamasını
 için kullanılır.</p>
-<p>[css] #cokluKolon h2{ -webkit-column-span:all; -moz-column-span:all;
-column-span:all; background-color:#0CF; } [/css]
+<div class="codehilite"><pre> <span class="nf">#cokluKolon</span> <span class="nt">h2</span><span class="p">{</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">span</span><span class="o">:</span><span class="n">all</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">span</span><span class="o">:</span><span class="n">all</span><span class="p">;</span>
+</pre></div>
+
+
+<p>column-span:all; background-color:#0CF; } 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/x6B67/embedded/css,result,html"></iframe></p>
 <p>Şu anda destekleyen tarayıcılar <strong>all ve none</strong> değerlerini destekliyor
 sayısal değeri destekleyen tarayıcı henüz yok.(Eylül 2011)</p>
@@ -378,25 +405,25 @@ geldikçe.</p>
 <li><a href="http://www.zenelements.com/blog/css3-multiple-columns/">http://www.zenelements.com/blog/css3-multiple-columns/</a> (basit)</li>
 <li><a href="http://www.css3.info/preview/multi-column-layout/">http://www.css3.info/preview/multi-column-layout/</a></li>
 <li><a href="http://www.quirksmode.org/css/multicolumn.html">http://www.quirksmode.org/css/multicolumn.html</a></li>
-<li><a href="static">http://webdesignernotebook.com/css/remembering-the-css3-multi-column-layout-module/</a></li>
-<li><a href="static">http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/</a>
+<li><a href="http://webdesignernotebook.com/css/remembering-the-css3-multi-column-layout-module/">http://webdesignernotebook.com/css/remembering-the-css3-multi-column-layout-module/</a></li>
+<li><a href="http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/">http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/</a>
     (örnek)</li>
 <li><a href="http://css-tricks.com/13372-seamless-responsive-photo-grid/">http://css-tricks.com/13372-seamless-responsive-photo-grid/</a>
     (örnek)</li>
-<li><a href="static">http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns</a>
+<li><a href="http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns">http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns</a>
     (güzel)</li>
-<li><a href="static">http://kmsm.ca/2010/an-almost-complete-guide-to-css3-multi-column-layouts/</a>
+<li><a href="http://kmsm.ca/2010/an-almost-complete-guide-to-css3-multi-column-layouts/">http://kmsm.ca/2010/an-almost-complete-guide-to-css3-multi-column-layouts/</a>
     (güzel)</li>
 <li><a href="http://dev.opera.com/articles/view/css3-multi-column-layout/">http://dev.opera.com/articles/view/css3-multi-column-layout/</a>
     (güzel)</li>
 <li><a href="http://www.my-html-codes.com/css3-multiple-columns">http://www.my-html-codes.com/css3-multiple-columns</a> (orta)</li>
-<li>[http://www.456bereastreet.com/archive/200509/css3_multicolumn_layout_considered_harmful/][]
+<li><a href="http://www.456bereastreet.com/archive/200509/css3_multicolumn_layout_considered_harmful/">http://www.456bereastreet.com/archive/200509/css3_multicolumn_layout_considered_harmful/</a>
     (basit)</li>
-<li>[https://developer.mozilla.org/en/CSS3_Columns][] (basit)</li>
+<li><a href="https://developer.mozilla.org/en/CSS3_Columns">https://developer.mozilla.org/en/CSS3_Columns</a> (basit)</li>
 <li><a href="http://www.red-team-design.com/multi-column-text-using-css3">http://www.red-team-design.com/multi-column-text-using-css3</a>
     (örnekli)</li>
-<li>[http://www.stuffandnonsense.co.uk/archives/css3_multi-column_thriller.html][]</li>
-<li>[http://www.superiorwebsys.com/blog/20/Creating_A_Multi-Column_Layout_Using_CSS3/][]
+<li><a href="http://www.stuffandnonsense.co.uk/archives/css3_multi-column_thriller.html">http://www.stuffandnonsense.co.uk/archives/css3_multi-column_thriller.html</a></li>
+<li><a href="http://www.superiorwebsys.com/blog/20/Creating_A_Multi-Column_Layout_Using_CSS3/">http://www.superiorwebsys.com/blog/20/Creating_A_Multi-Column_Layout_Using_CSS3/</a>
     (görsel)</li>
 <li><a href="http://caniuse.com/multicolumn">http://caniuse.com/multicolumn</a> (tarayıcı destek)</li>
 <li><a href="http://people.opera.com/pepelsbey/experiments/multicol/">http://people.opera.com/pepelsbey/experiments/multicol/</a> (güzel
@@ -405,21 +432,11 @@ geldikçe.</p>
 <li><a href="http://www.juude.info/css-columns.php">http://www.juude.info/css-columns.php</a> (güzel)</li>
 <li>[http://www.csscripting.com/css-multi-column/][Multi Column Layout
     Demonstration from CSS Scripting] (js ile çözüm)</li>
-<li><a href="static">http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/</a>
+<li><a href="http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/">http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/</a>
     (sorunları)</li>
 <li><a href="http://help.dottoro.com/lcxquvkf.php">http://help.dottoro.com/lcxquvkf.php</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">webdesignernotebook</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">remembering</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">multi</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">layout</span><span class="o">-</span><span class="n">module</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">trentwalton</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>07<span class="o">/</span>19<span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">multi</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">layout</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">count</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">designshack</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">introduction</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">part</span><span class="o">-</span>5<span class="o">-</span><span class="n">multiple</span><span class="o">-</span><span class="n">columns</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">kmsm</span><span class="p">.</span><span class="n">ca</span><span class="o">/</span>2010<span class="o">/</span><span class="n">an</span><span class="o">-</span><span class="n">almost</span><span class="o">-</span><span class="n">complete</span><span class="o">-</span><span class="n">guide</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">multi</span><span class="o">-</span><span class="n">column</span><span class="o">-</span><span class="n">layouts</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>456<span class="n">bereastreet</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>200509<span class="o">/</span><span class="n">css3_multicolumn_layout_considered_harmful</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">stuffandnonsense</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span><span class="n">css3_multi</span><span class="o">-</span><span class="n">column_thriller</span><span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">superiorwebsys</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>20<span class="o">/</span><span class="n">Creating_A_Multi</span><span class="o">-</span><span class="n">Column_Layout_Using_CSS3</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">zomigi</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">deal</span><span class="o">-</span><span class="n">breaker</span><span class="o">-</span><span class="n">problems</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">multi</span><span class="o">-</span><span class="n">columns</span><span class="o">/</span>
-</pre></div><p>There are <a href=".././css3-coklu-kolonlar/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././css3-coklu-kolonlar/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

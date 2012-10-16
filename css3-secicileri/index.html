@@ -156,20 +156,23 @@ ile birlikte daha özel seçimler yapabilmemizi sağlayan özellik
 seçicileri geldi.</p>
 <p><strong>Belirlenen Sözdizimi ile Başlayan Özellik Değer Seçicisi</strong></p>
 <p>Tüm sözdizimi yerine ...ile başlayan elemanı seçmek için kullanılır.
-Belirtilen sözdizimi ile başlayan elemanlar seçilir. (\^) şapka işareti
+Belirtilen sözdizimi ile başlayan elemanlar seçilir. (^) şapka işareti
 ile kullanılır.</p>
 <p><img alt="" src="https://lh6.googleusercontent.com/w8JW05qWsN2l-joJkQZ8-0BtI_Ahasy75ToU1_vFtAgGGjsdfG19PLQlW0Cu2tdkVuoxlXOfIC19hCnvbYJnELaFnk6qyB2dC3YJEETpjs95439SJw4" /></p>
 <p>Bu tanımlama ile belirtilen sözdizimi ile başlayan özellik değerini
 arıyor ve uyguluyor.</p>
-<p>[html] This is a sample \&lt;a
-href="http://www.bloggermint.com">hyperlink\&lt;/a>. This is a sample \&lt;a
-href="mailto:bloggermint@gmail.com">bloggermint@gmail.com\&lt;/a>. This
-is a sample \&lt;a href="ftp://bloggermint.com">FTP Server\&lt;/a>. [/html]
-[css] a[href\^='http'] { background: url(images/link.png) no-repeat
-left; padding-left:20px; } a[href\^='mailto'] { background:
+<div class="codehilite"><pre> This is a sample <span class="nt">&lt;a</span>
+</pre></div>
+
+
+<p>href="http://www.bloggermint.com"&gt;hyperlink</a>. This is a sample <a href="../static/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#10;&#104;&#114;&#101;&#102;&#61;&#34;&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#108;&#111;&#103;&#103;&#101;&#114;&#109;&#105;&#110;&#116;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;&#34;">&#97;&#10;&#104;&#114;&#101;&#102;&#61;&quot;&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#108;&#111;&#103;&#103;&#101;&#114;&#109;&#105;&#110;&#116;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;&quot;</a>bloggermint@gmail.com</a>. This
+is a sample <a href="ftp://bloggermint.com">FTP Server</a>. 
+    :::css
+     a[href^='http'] { background: url(images/link.png) no-repeat
+left; padding-left:20px; } a[href^='mailto'] { background:
 url(images/email.png) no-repeat left; padding-left:20px; }
-a[href\^='ftp'] { background: url(images/folder.png) no-repeat left;
-padding-left:20px; } [/css]</p>
+a[href^='ftp'] { background: url(images/folder.png) no-repeat left;
+padding-left:20px; } </p>
 <p>Şeklinde link başlangıç değerine göre ikon atayabiliriz.</p>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**   
@@ -189,13 +192,15 @@ Android Browser 2.1+
 <p><strong>Belirlenen Sözdizimi ile Biten Özellik Değer Seçicisi</strong></p>
 <p>Belirlenen sözdizimi ile biten elemanları seçmek için kullanılır.
 Başlangıç sözdizimi ile seçme ile aynı şekilde çalışır. Seçici işareti
-olarak \$(dolar) işareti kullanılır.</p>
+olarak $(dolar) işareti kullanılır.</p>
 <p><img alt="" src="https://lh3.googleusercontent.com/0qkeYfNwhs3wyl1K7H3oTIMHVxq_fuqlEi_kXSrBD7sUHbIHFMVTjWQyzpDVGdXM581uNoPrcolpFoh8cH-lKA9AeWXveDA7lVoos3NODlE5rmiqVno" /></p>
 <p>Bu seçiciyi kullanarak dokümanlara verilen linklerin başına kolayca ikon
 ekleyebiliriz.</p>
-<p>[css] a[href\$='.pdf'] { background-image: url('pdf.png'); }
-a[href\$='.doc'] { background-image: url('word.png'); } a[href\$='.rss']
-{ background-image: url('feed.png'); } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">&#39;.pdf&#39;</span><span class="o">]</span> <span class="p">{</span> <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(&#39;pdf.png&#39;)</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<p background-image:="background-image:" url('feed.png');="url('feed.png');">a[href$='.doc'] { background-image: url('word.png'); } a[href$='.rss']</p>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**   
 Firefox 1.5+  
@@ -217,7 +222,10 @@ kullanılır. Seçici işareti olarak * (yıldız) işareti kullanılır.</p>
 <p><img alt="" src="https://lh4.googleusercontent.com/5e_41wg7MEzgTzwCyGBHWAnp7Js-HypUDJigkcO7WC632270MGhU0ubYO6058YFY0zY5aOptuOv7H3_gyJw2ZiHMYFHNCygPD-8PlKV6eRS4E1xtcuI" /></p>
 <p>Birçok yerde kullanılabilecek geniş kapsamlı bir kullanımı olan bir
 seçicidir.</p>
-<p>[css] a[title*='im'] {} [/css]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="o">[</span><span class="nt">title</span><span class="o">*=</span><span class="s1">&#39;im&#39;</span><span class="o">]</span> <span class="p">{}</span>
+</pre></div>
+
+
 <p>Sadece bir kısmı ile elemanı seçebilme imkanı sağlıyor. CSS2’dekinden
 farklı olarak.</p>
 <div class="tarayiciuyum">
@@ -238,11 +246,16 @@ Android Browser 2.1+
 <p><strong>Çoklu Özellik Seçicisi Kullanımı</strong></p>
 <p>Özellik seçicileri birlikte kullanma imkanımızda vardır. Birden fazla
 seçici ile seçimi daraltabiliriz.</p>
-<p>[css] p[class=highlight] a[title\~=important] { background : #ffffcc; }
-[/css]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="nt">highlight</span><span class="o">]</span> <span class="nt">a</span><span class="o">[</span><span class="nt">title</span><span class="o">~=</span><span class="nt">important</span><span class="o">]</span> <span class="p">{</span> <span class="k">background</span> <span class="o">:</span> <span class="m">#ffffcc</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Daha fazla özellik seçicisinide birleştirebiliriz.</p>
-<p>[css] a[href\^='http://'][href*='/folder2/'][href\$='.pdf'] {
-background:url(pdf.gif) 0 0 no-repeat; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s1">&#39;http://&#39;</span><span class="o">][</span><span class="nt">href</span><span class="o">*=</span><span class="s1">&#39;/folder2/&#39;</span><span class="o">][</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">&#39;.pdf&#39;</span><span class="o">]</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>background:url(pdf.gif) 0 0 no-repeat; } </p>
 <p>CSS3 ile gelen özellik seçicilerinin bir avantajıda ie7’ninde bu
 seçicileri destekliyor olmasıdır.</p>
 <div class="tarayiciuyum">
@@ -267,16 +280,22 @@ seçicidir. Aynı kapsayıcıya sahip elemanların belirtilen elemandan
 sonraki aynı seviyedeki elemanların tümünü yakalamak için kullanılır.
 Burada dikkat edilmesi gereken konu belirtilen elemandan sonraki aynı
 seviyedeki elemanları seçiyor olması. Tanımlama yaparken araya işaret
-olarak tilde(\~) koyuyoruz.</p>
+olarak tilde(~) koyuyoruz.</p>
 <p><img alt="" src="https://lh3.googleusercontent.com/t8QIYGvMozXeDyAOos5pbfZSpJQKyyIzuGgfMHqEire4_Y06UOOUPv9GOJPpDnd_R5wn2vlvrLVbUwvj48puypNMqcJ3tUqo4sY5pLUp9KQiMMAJ66Q" /></p>
 <p>Bir örnek yapacak olursak bir resmimiz var bunu sola hizalayacağız ve
 sağdanda metinler akacak. Bu resim ve paragraflar arasına padding
 tanımlamak için genel kardeş seçicisi birebirdir.</p>
-<p>[css] img{ float:left; } img \~ p{ padding-left:110px; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">img</span><span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="p">}</span> <span class="nt">img</span> <span class="o">~</span> <span class="nt">p</span><span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span><span class="m">110px</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>html kodu</p>
-<p>[html] \&lt;img src="kedi.jpg" width="96" height="96" alt="kedi" />
-\&lt;p>Kedi (Felis catus),...\&lt;/p> \&lt;p>2,5 ile 12 kilo ...\&lt;/p>
-\&lt;p>Kediler hoş görünüşlü, ..\&lt;/p> [/html]
+<div class="codehilite"><pre> <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;kedi.jpg&quot;</span> <span class="na">width=</span><span class="s">&quot;96&quot;</span> <span class="na">height=</span><span class="s">&quot;96&quot;</span> <span class="na">alt=</span><span class="s">&quot;kedi&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+
+<p><p>Kedi (Felis catus),...</p> <p>2,5 ile 12 kilo ...</p>
+<p>Kediler hoş görünüşlü, ..</p> 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KGkAK/1/embedded/result,css,html"></iframe></p>
 <p>Bu seçiciyi ie7’nin seçicisini destekliyor.</p>
 <div class="tarayiciuyum">
@@ -325,21 +344,30 @@ edebiliriz. 3 adet durum söz konusu</p>
 <li>:checked</li>
 </ul>
 <p>Form elemanlarında bu durumlar HTML olarak</p>
-<p>[html] \&lt;textarea disabled="disabled">\&lt;/textarea> \&lt;input
-checked="checked" type="checkbox"> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;textarea</span> <span class="na">disabled=</span><span class="s">&quot;disabled&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span> <span class="nt">&lt;input</span>
+</pre></div>
+
+
+<p>checked="checked" type="checkbox"&gt; </p>
 <p>şekilde tanımlanır. Form elemanlarının bu durumlarını kullanıcıya
 yansıtmamız lazım. Bu sayede daha kullanıcı dostu formlar oluşturmuş
 olacağız.</p>
-<p>[css] :enabled { border: 2px solid #6374AB; } :disabled { border: 2px
-solid #00cc00; } :checked { display: inline-block; width: 4em; } [/css]</p>
+<div class="codehilite"><pre> <span class="nd">:enabled</span> <span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">2px</span> <span class="k">solid</span> <span class="m">#6374AB</span><span class="p">;</span> <span class="p">}</span> <span class="nd">:disabled</span> <span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">2px</span>
+</pre></div>
+
+
+<p>solid #00cc00; } :checked { display: inline-block; width: 4em; } </p>
 <p>HTML kodumuz</p>
-<p>[html] \&lt;form id="testForm"> \&lt;input> \&lt;input type="checkbox">
-\&lt;input type="radio" name="test"> \&lt;input type="radio" name="test">
-\&lt;input type="submit"> \&lt;/form> [/html]
+<div class="codehilite"><pre> <span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">&quot;testForm&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;input&gt;</span> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<p><input type="radio" name="test"> <input type="radio" name="test">
+<input type="submit"> </form> 
 <iframe style="width: 100%; height: 180px" src="http://jsfiddle.net/fatihhayri/KM9B4/embedded/result,css,html"></iframe></p>
 <p>Basit bir örnek vermiş olsak dahi bu seçiciler ile neler
 yapabileceğimizi düşünmek bile sevindiriyor bizi.
-<a href="../static">http://dev.opera.com/articles/view/styling-forms-with-attribute-selectors-1/</a>
+<a href="http://dev.opera.com/articles/view/styling-forms-with-attribute-selectors-1/">http://dev.opera.com/articles/view/styling-forms-with-attribute-selectors-1/</a>
 örneğe bir göz gezdirmek iyi olur.</p>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**  
@@ -370,19 +398,28 @@ elemanlarını seçmek için kullanılır. Sıralamayı belirleyen numaralar
 parantez içinde tanımlanır; rakam, belirli kelimeler ve formül
 tanımlanabilir.</p>
 <p>Rakama bir örnek verecek olursak, 3. sıradaki elemanı yakalamak için</p>
-<p>[css] p:nth-child(3) { color:#f00; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">3</span><span class="o">)</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="m">#f00</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Belirli kelimelere bir örnek verecek olacaksak; odd(çift) ve even(tek)
 kelimelerinin kullanımı ile seçme işlemini gösterebiliriz. Zebra
 tablolardan hatırladığımız çift, tek satırlara tanımlama yapmak için
 kullanılabilir.</p>
-<p>[css] tr:nth-child(odd) { color:#f00; } tr:nth-child(even) {
-color:#ff0; } [/css]
+<div class="codehilite"><pre> <span class="nt">tr</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">odd</span><span class="o">)</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="m">#f00</span><span class="p">;</span> <span class="p">}</span> <span class="nt">tr</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>color:#ff0; } 
 <iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/F6UnC/embedded/result,css,html"></iframe></p>
 <p>Formül için örnek verecek olursak; dinamik bir seçim oluşturmak için
 gayet iyi sonuçlar verecek bir özelliktir. Matematik derslerindende
 hatırladığımız (an + b) a ve b değişkenlerdir. Benzer formüller ile
 eleman seçebilme imkanı veriyor.</p>
-<p>[css] p:nth-child(3n+0) {     background:#ff0000; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">3n</span><span class="o">+</span><span class="nt">0</span><span class="o">)</span> <span class="p">{</span> <span class="err">   </span> <span class="k">background</span><span class="o">:</span><span class="m">#ff0000</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Bir tanım ile 3 katı olan elementleri yakalayabiliriz.</p>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**  
@@ -398,7 +435,10 @@ Opera 10.10+
 <p>:nth sözde sınıfına benzer bir kullanımım vardır. :nth sözde sınıfından
 farklı olarak sıralama olarak baştan değilde sondan başlayarak seçmemizi
 sağlar.</p>
-<p>[css] tbody tr:nth-last-child(2) { background:#ff0000; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">tbody</span> <span class="nt">tr</span><span class="nd">:nth-last-child</span><span class="o">(</span><span class="nt">2</span><span class="o">)</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#ff0000</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Tanımı ile tbody içindeki sondan 2. sıradaki satırı yakalamamızı sağlar.</p>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**  
@@ -415,7 +455,10 @@ Opera 10.10+
 çalışır, farklı olarak :nth-child() sözde seçicisi aynı seviyedeki tüm
 elemanları seçerken, :nth-of-type() sözde seçicisi sadece aynı tip
 elemanları seçer.</p>
-<p>[css] p:nth-of-type(3) { background:#ff0; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="nd">:nth-of-type</span><span class="o">(</span><span class="nt">3</span><span class="o">)</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#ff0</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Örneğinde mesela paragraf elemanı ile aynı seviyedeki tüm paragrafları
 seçmemizi sağlar. Benzer şekilde :nth-child()  kullansa idik, aynı
 seviyedeki farklı tip elemanlarıda yakalamış olacaktık.</p>
@@ -438,7 +481,10 @@ doğru aynı seviyedeki ve aynı tipteki elemanları seçmek için yapılır.</p
 <p>:nth-last-child() ile benzer şekilde çalışır, seçicilerin sayısı fazlada
 olsa aslında benzer özellikte çalışırlar, ancak bu ufak farklar bile
 bize çok büyük avantajlar sağlayacaktır.</p>
-<p>[css] p:nth-last-of-type(2) { background:#ff0; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="nd">:nth-last-of-type</span><span class="o">(</span><span class="nt">2</span><span class="o">)</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#ff0</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Aynı seviyedeki paragrafların sondan ikincisini yakalar bu seçici</p>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**  
@@ -456,7 +502,10 @@ seçmek için kullanılır. fisrt-child ilk elemanı seçmemizi sağlarken
 :last-child son elemanı seçmemizi sağlar. Menü gibi yanyana dizdiğimiz
 elemanların sonuncusunu bulmak bizim her zaman işimize yarayacaktır.
 :nth-last-child(1) aynı işi görür.</p>
-<p>[css] p:last-child { background:#ff0; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="nd">:last-child</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#ff0</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Tanımı belirlenen paragraf ile aynı seviyedeki elemanların en
 sonuncusunu seçmemizi sağlar.</p>
 <p>Mesela köşeleri oval bir menü yapımında çok işimize yarar bu seçici.
@@ -464,12 +513,18 @@ Normal bir yatay menü örneğini ele alalım. Yanyana dizelim ve araya
 ayraç koyalım.</p>
 <p><img alt="" src="https://lh4.googleusercontent.com/xT4YjtxJM9wckC5nB68tYXZKVtNX2e72lsYCXcgivCGpxRCWZBKEzGIKQB4eb8S6isRl-3ZNo7_V1B__nrqbHMXASIwqQusVGqvAGcOuyfe3bstNIsY" /></p>
 <p>Sondaki kenar çizgisi fazlalığı kaldırmak için</p>
-<p>[css] ul li:last-child a{     border-right:none; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span><span class="nd">:last-child</span> <span class="nt">a</span><span class="p">{</span> <span class="err">   </span> <span class="k">border-right</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>kodu işimizi görecektir. Ayrıca ilk menü elemanı sol köşeleri ve son
 menü elemanının sağ köşeleri ovalleştirmek için;<br />
 </p>
-<p>[css] ul li:last-child a{ border-right:none; border-radius:0 15px 15px
-0; } ul li:first-child a{ border-radius:15px 0 0 15px; } [/css]
+<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span><span class="nd">:last-child</span> <span class="nt">a</span><span class="p">{</span> <span class="k">border-right</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">0</span> <span class="m">15px</span> <span class="m">15px</span>
+</pre></div>
+
+
+<p>0; } ul li:first-child a{ border-radius:15px 0 0 15px; } 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/GUKPu/embedded/result,css,html"></iframe></p>
 <p>Önceden bu işleri yapmak için javascript kullanmak zorunda idik. Şimdi
 CSS3 ile hepsini halledebiliyoruz. Süper değil mi?</p>
@@ -486,7 +541,10 @@ Opera 10.10+
 <p><strong>:first-of-type sözde sınıfı</strong></p>
 <p>:first-of-type sözde seçicisi aynı seviyedeki ilk aynı tipteki elemanı
 seçmek için kullanılır. :nth-of-type(1) aynı işi görür.</p>
-<p>[css] p:first-of-type { background:#ff0; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="nd">:first-of-type</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#ff0</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Aynı seviyedeki ilk paragrafı seçmek için kullanılır.</p>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**  
@@ -501,7 +559,10 @@ Opera 10.10+
 <p><strong>:last-of-type sözde sınıfı</strong></p>
 <p>:last-of-type sözde seçicisi aynı seviyedeki en son aynı tipteki elemanı
 seçmek için kullanılır.  :nth-last-of-type(1) ile aynı işi görür.</p>
-<p>[css] p:last-of-type { background:#ff0; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="nd">:last-of-type</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#ff0</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Aynı seviyedeki paragrafların en sonuncusunu yakalar.</p>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**  
@@ -535,8 +596,11 @@ Opera 10.10+
 etiket adına sahip tek çocuğu olan elemanları seçmek için kullanılır.
 Tam karşılığı olmasada :first-of-type:last-of-type veya
 :nth-of-type(1):nth-last-of-type(1) aynı işi yapar.</p>
-<p>[css] ul.deneme > li > a:only-of-type { background:#ff0; } [/css]
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/cEdgX/1/embedded/html,css,result"></iframe></p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.deneme</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">a</span><span class="nd">:only-of-type</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#ff0</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/cEdgX/1/embedded/html,css,result"></iframe></p>
 <p>Aynı seviyedeki bağlantılara sarı ardalan rengi tanımlayacaktır. Listede
 ikinci sıradaki ögede 2 adet link olduğu için seçmedi, 4. sıradaki ögede
 iki adet çocuk seçici var ancak farklı tipte olduğu için seçimi yaptı.</p>
@@ -554,10 +618,16 @@ Opera 10.10+
 <p>:root sözde sınıfı dokümanın kökünü temsil eder. HTML elemanlarda htlm{}
 ile aynı etkiyi yapar. buradaki asıl amaç xml ve diğer doküman tipleri
 için köke inebilmektir.</p>
-<p>[css] :root { background:#ff0; } [/css]</p>
+<div class="codehilite"><pre> <span class="nd">:root</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#ff0</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>HTML dokümanlarında ise html elemanını ezmek içinde kullanılabilir.</p>
-<p>[css] html{ background-color: #fff; } html:root { background-color:
-#000; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">html</span><span class="p">{</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="p">}</span> <span class="nt">html</span><span class="nd">:root</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span>
+</pre></div>
+
+
+<h1>000; }</h1>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**  
 Firefox 3+  
@@ -571,13 +641,19 @@ Opera 9.5+
 <p><strong>:empty sözde sınıfı</strong></p>
 <p>:empty sözde seçicisi alt elemanı(çocuk) olmayan elemanları yakalamak
 için kullanılır. Metinlerde buna dahildir.</p>
-<p>[html] \&lt;ul class="deneme"> \&lt;li>\&lt;/li> \&lt;li>\&lt;a
-href="">deneme\&lt;/a>\&lt;/li> \&lt;li>\&lt;strong>\&lt;/strong>\&lt;/li>
-\&lt;li>\&lt;a href="">deneme\&lt;/a> \&lt;ul> \&lt;li>\&lt;a
-href="">deneme\&lt;/a>\&lt;/li> \&lt;li>\&lt;a href="">deneme\&lt;/a>\&lt;/li>
-\&lt;/ul> \&lt;/li> \&lt;/ul> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;deneme&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;li&gt;&lt;/li&gt;</span> <span class="nt">&lt;li&gt;&lt;a</span>
+</pre></div>
+
+
+<p>href=""&gt;deneme</a></li> <li><strong></strong></li>
+<li><a href="../static">deneme</a> <ul> <li><a
+href="../static">deneme</a></li> <li><a href="../static">deneme</a></li>
+</ul> </li> </ul> </p>
 <p>CSS kodu</p>
-<p>[css] ul.deneme > li:empty { background:#ff0; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.deneme</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="nd">:empty</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#ff0</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Yukarıdaki örnekte sadece ilk liste elemanı seçilecektir.</p>
 <div class="tarayiciuyum">
 **Tarayıcı Destekleme Listesi**  
@@ -592,11 +668,17 @@ Opera 10.10+
 <h3>Olumsuz(:not) Sözde Sınıfı</h3>
 <p>Olumsuzluk belirtmek için kullanılan sözde sınıftır. :not(seçici)
 şeklinde kullanılır. Jquery’den alışık olduğumuz bir seçicidir.</p>
-<p>[html] \&lt;h1>Deneme\&lt;/h1> \&lt;h2>Alt Başlık\&lt;/h2> \&lt;p>İçerik...\&lt;/p>
-\&lt;p>İçerik...\&lt;/p> \&lt;p>İçerik...\&lt;/p>
-\&lt;blockquote>Dipnot\&lt;/blockquote> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;h1&gt;</span>Deneme<span class="nt">&lt;/h1&gt;</span> <span class="nt">&lt;h2&gt;</span>Alt Başlık<span class="nt">&lt;/h2&gt;</span> <span class="nt">&lt;p&gt;</span>İçerik...<span class="nt">&lt;/p&gt;</span>
+</pre></div>
+
+
+<p><p>İçerik...</p> <p>İçerik...</p>
+<blockquote>Dipnot</blockquote> </p>
 <p>CSS kodu</p>
-<p>[css] body :not(blockquote){ border:1px solid #ccc;} [/css]</p>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="nd">:not</span><span class="o">(</span><span class="nt">blockquote</span><span class="o">)</span><span class="p">{</span> <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;}</span>
+</pre></div>
+
+
 <p>kodu body içindeki tüm elemanlara kenar çizgisi ata, dipnot(blockquote)
 hariç şeklinde uygulanacaktır.</p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/W6d4u/embedded/result,css,html"></iframe>
@@ -616,8 +698,11 @@ Opera 10.10+
 <p><a href="http://www.fatihhayrioglu.com/css-ile-secilen-metinlerin-rengini-degistirmek/">Daha önce görselliği dikkatimi</a> çeken bu özelliği şimdi seçici bazlı
 bakacağız. Seçili alan seçicisi olarak tanımlayabileceğimiz bu özellik
 seçilen alana css tanımları atamamızı sağlamaktadır.</p>
-<p>[css] ::-moz-selection { background:#c00; color:#fff; } ::selection {
-background:#c00; color:#fff; } [/css]</p>
+<div class="codehilite"><pre> <span class="o">:</span><span class="nd">:-moz-selection</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#c00</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span> <span class="p">}</span> <span class="o">:</span><span class="nd">:selection</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>background:#c00; color:#fff; } </p>
 <p>Ataması ile sitenin tümünde bir seçili alanları için bir tanımlama
 yapabiliriz.</p>
 <p>::selection sözde elementine; color, background, cursor ve outline
@@ -636,57 +721,45 @@ Opera 10.10+
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://www.w3.org/TR/css3-selectors/">http://www.w3.org/TR/css3-selectors/</a></li>
-<li>[http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/][]
+<li><a href="http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/">http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/</a>
     (Detaylı)</li>
-<li><a href="../static">http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html</a>
+<li><a href="http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html">http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html</a>
     (detaylı örnekli)</li>
-<li><a href="../static">http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/</a></li>
+<li><a href="http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/">http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/</a></li>
 <li><a href="http://tools.css3.info/selectors-test/test.html">http://tools.css3.info/selectors-test/test.html</a> (test aracı)</li>
 <li><a href="http://24ways.org/2009/cleaner-code-with-css3-selectors">http://24ways.org/2009/cleaner-code-with-css3-selectors</a>
     (örmeklerle açıklanmış)</li>
 <li><a href="http://ie.microsoft.com/testdrive/HTML5/CSS3Selectors/Default.html">http://ie.microsoft.com/testdrive/HTML5/CSS3Selectors/Default.html</a></li>
-<li>[http://www.w3schools.com/cssref/css_selectors.asp][] (seçici
+<li><a href="http://www.w3schools.com/cssref/css_selectors.asp">http://www.w3schools.com/cssref/css_selectors.asp</a> (seçici
     listesi)</li>
-<li>[http://www.quirksmode.org/blog/archives/2010/06/ies_big_leap_fo.html][]</li>
+<li><a href="http://www.quirksmode.org/blog/archives/2010/06/ies_big_leap_fo.html">http://www.quirksmode.org/blog/archives/2010/06/ies_big_leap_fo.html</a></li>
 <li><a href="http://www.quirksmode.org/css/contents.html">http://www.quirksmode.org/css/contents.html</a> (tarayıcı destek
     listesi)</li>
 <li><a href="http://selectivizr.com/">http://selectivizr.com/</a> (ie için çözüm)</li>
-<li><a href="../static">http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/</a></li>
-<li><a href="../static">http://inspectelement.com/tutorials/a-look-at-some-of-the-new-selectors-introduced-in-css3/</a></li>
+<li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/">http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/</a></li>
+<li><a href="http://inspectelement.com/tutorials/a-look-at-some-of-the-new-selectors-introduced-in-css3/">http://inspectelement.com/tutorials/a-look-at-some-of-the-new-selectors-introduced-in-css3/</a></li>
 <li><a href="http://caniuse.com/css-sel3">http://caniuse.com/css-sel3</a> (tarayıcı destek listesi)</li>
-<li><a href="../static">http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/</a></li>
+<li><a href="http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/">http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/</a></li>
 <li><a href="http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/">http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/</a>
     (:not seçicisi)</li>
 <li><a href="http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/">http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/</a>
     (:last-child seçicisi)</li>
 <li><a href="http://perishablepress.com/awesome-new-css3-selectors/">http://perishablepress.com/awesome-new-css3-selectors/</a> (ilginç)</li>
-<li><a href="../static">http://developer.practicalecommerce.com/articles/2386-Taking-CSS3-Selectors-to-the-Nth</a>
+<li><a href="http://developer.practicalecommerce.com/articles/2386-Taking-CSS3-Selectors-to-the-Nth">http://developer.practicalecommerce.com/articles/2386-Taking-CSS3-Selectors-to-the-Nth</a>
     (nth seçicisi)</li>
-<li>[https://developer.mozilla.org/en/firefox_3.5_for_developers][]</li>
+<li><a href="https://developer.mozilla.org/en/firefox_3.5_for_developers">https://developer.mozilla.org/en/firefox_3.5_for_developers</a></li>
 <li><a href="https://developer.mozilla.org/en/CSS/%3Achecked">https://developer.mozilla.org/en/CSS/%3Achecked</a> (:checked
     seçicisi)</li>
 <li><a href="https://developer.mozilla.org/en/CSS/:nth-child">https://developer.mozilla.org/en/CSS/:nth-child</a></li>
 <li><a href="https://developer.mozilla.org/en/CSS/:empty">https://developer.mozilla.org/en/CSS/:empty</a></li>
 <li><a href="https://developer.mozilla.org/en/CSS/%3Adisabled">https://developer.mozilla.org/en/CSS/%3Adisabled</a></li>
 <li>No.Starch.The.Book.of.CSS3.Apr.2011</li>
-<li><a href="../static">http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx</a></li>
+<li><a href="http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx">http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx</a></li>
 <li><a href="http://eriwen.com/css/css-indirect-adjacent-combinator/">http://eriwen.com/css/css-indirect-adjacent-combinator/</a></li>
 <li><a href="http://msdn.microsoft.com/en-us/library/aa358824%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/aa358824%28v=vs.85%29.aspx</a></li>
 <li><a href="http://www.quirksmode.org/css/enabled.html">http://www.quirksmode.org/css/enabled.html</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dev</span><span class="p">.</span><span class="n">opera</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">view</span><span class="o">/</span><span class="n">styling</span><span class="o">-</span><span class="n">forms</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">attribute</span><span class="o">-</span><span class="n">selectors</span><span class="o">-</span>1<span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>456<span class="n">bereastreet</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>200601<span class="o">/</span><span class="n">css_3_selectors_explained</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">adobe</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">devnet</span><span class="o">/</span><span class="n">dreamweaver</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">selectors</span><span class="o">-</span><span class="n">pt2</span><span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">coding</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>08<span class="o">/</span>17<span class="o">/</span><span class="n">taming</span><span class="o">-</span><span class="n">advanced</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">selectors</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">quirksmode</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span>2010<span class="o">/</span>06<span class="o">/</span><span class="n">ies_big_leap_fo</span><span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">net</span><span class="p">.</span><span class="n">tutsplus</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">html</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">techniques</span><span class="o">/</span><span class="n">the</span><span class="o">-</span>30<span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">selectors</span><span class="o">-</span><span class="n">you</span><span class="o">-</span><span class="n">must</span><span class="o">-</span><span class="n">memorize</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">inspectelement</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">a</span><span class="o">-</span><span class="n">look</span><span class="o">-</span><span class="n">at</span><span class="o">-</span><span class="n">some</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">selectors</span><span class="o">-</span><span class="n">introduced</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">css3</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">yourinspirationweb</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="nb">why</span><span class="o">-</span><span class="n">you</span><span class="o">-</span><span class="n">should</span><span class="o">-</span><span class="n">know</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">selectors</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">developer</span><span class="p">.</span><span class="n">practicalecommerce</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span>2386<span class="o">-</span><span class="n">Taking</span><span class="o">-</span><span class="n">CSS3</span><span class="o">-</span><span class="n">Selectors</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">Nth</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blogs</span><span class="p">.</span><span class="n">msdn</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">b</span><span class="o">/</span><span class="n">ie</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>2010<span class="o">/</span>05<span class="o">/</span>13<span class="o">/</span><span class="n">the</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">corner</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">selectors</span><span class="p">.</span><span class="n">aspx</span>
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

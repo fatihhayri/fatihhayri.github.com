@@ -82,17 +82,26 @@
 </footer><!-- /.post-info --><p>CSS ile renk değeri ataması yapılırken çeşitli yöntemler kullanıyoruz.
 Daha önce <a href="http://www.fatihhayrioglu.com/css-birimleri/">CSS Birimleri</a>  makalemizde anlatmıştık. İki tip renk
 tanımı var. Renk isimleri ile tanımlama(İngilizce renk isimleri)</p>
-<p>[sourcecode language="css"] background-color:red [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">background-color</span><span class="nd">:red</span>
+</pre></div>
+
+
 <p>tanımı kırmızı renkli bir ardalan elde etmemizi sağlar</p>
 <p>RGB(Red-Green-Blue) yani Kırmızı-Yeşil-Mavi renklerin baz alındığı renk
 standardı. Açıkçası ben projelerimde her zaman rgb standardını
 kullanmaktayım.</p>
-<p>[sourcecode language="css"] background-color:#ff0000 [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">background-color</span><span class="o">:</span><span class="nf">#ff0000</span>
+</pre></div>
+
+
 <p>Tanımı kırmızı renkte ardalanlar elde etmemizi sağlar. Bu tanımı birde
 kısaltması mevcuttur. Eğer bir birine benzer 2’li elemanlardan oluşan
 bir renk tanımı varsa yukarıdaki gibi benzer değerleri bir kere
 yazarakta aynı sonucu elde edebiliriz.</p>
-<p>[sourcecode language="css"] background-color:#f00 [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">background-color</span><span class="o">:</span><span class="nf">#f00</span>
+</pre></div>
+
+
 <p>Yukarıdaki tanımda bize kırmızı rengi verecektir.</p>
 <p>Buraya kadar mevcut durumu özetlemeye çalıştım. Şimdi ise CSS3 ile gelen
 renk tanımı yeniliğine göz atalım. RGBA ve HSLA tanımları yukarıdaki
@@ -111,28 +120,40 @@ etkisiz kılarken 1 değeri de katı bir renk ortaya çıkaracaktır. Ara
 değerler bize saydamlık etkisi tanımlamamızı sağlayacaktır.</p>
 <h3>RGBA Tanımı</h3>
 <p>Normalde css ile renk tanımı yaparken</p>
-<p>[sourcecode language="css"] background-color:#1259C7 [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">background-color</span><span class="o">:</span><span class="nf">#1259C7</span>
+</pre></div>
+
+
 <p>tanımı kullanıyorum. Benzer şekilde</p>
-<p>[sourcecode language="css"] \&lt;li>background-color:rgb(18,89,199)\&lt;/li>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">background-color</span><span class="nd">:rgb</span><span class="o">(</span><span class="nt">18</span><span class="o">,</span><span class="nt">89</span><span class="o">,</span><span class="nt">199</span><span class="o">)&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+</pre></div>
+
+
 <p>Tanımıda bize aynı sonucu verir. RGBA ile dördüncü değer olarak alfa
 saydamlık derecesini ekleriz.</p>
-<p>[sourcecode language="css"] background-color:rgba(18,89,199,0.4)
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">background-color</span><span class="nd">:rgba</span><span class="o">(</span><span class="nt">18</span><span class="o">,</span><span class="nt">89</span><span class="o">,</span><span class="nt">199</span><span class="o">,</span><span class="nt">0</span><span class="nc">.4</span><span class="o">)</span>
+</pre></div>
+
+
 <p>Şeklinde bir tanım yapıyoruz. 0.4 değeri bize % 40’lık bir saydamlık
 sağlayacaktır.</p>
 <p>Durumu daha iyi anlamak için bir örnek yapalım</p>
-<p>[sourcecode language="css"] p.renk1{
-background-color:rgba(18,89,199,0.2); width:70px; height:70px} p.renk2{
+<div class="codehilite"><pre> <span class="nt">p</span><span class="nc">.renk1</span><span class="p">{</span>
+</pre></div>
+
+
+<p>background-color:rgba(18,89,199,0.2); width:70px; height:70px} p.renk2{
 background-color:rgba(18,89,199,0.4); width:70px; height:70px} p.renk3{
 background-color:rgba(18,89,199,0.6); width:70px; height:70px} p.renk4{
 background-color:rgba(18,89,199,0.8); width:70px; height:70px} p.renk5{
-background-color:rgba(18,89,199,1); width:70px; height:70px}
-[/sourcecode]</p>
+background-color:rgba(18,89,199,1); width:70px; height:70px}</p>
 <p>HTML kodu</p>
-<p>[sourcecode language="html"] \&lt;p class="renk1">\&lt;/p> \&lt;p
-class="renk2">\&lt;/p> \&lt;p class="renk3">\&lt;/p> \&lt;p
-class="renk4">\&lt;/p> \&lt;p class="renk5">\&lt;/p> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;renk1&quot;</span><span class="nt">&gt;&lt;/p&gt;</span> <span class="nt">&lt;p</span>
+</pre></div>
+
+
+<p>class="renk2"&gt;</p> <p class="renk3"></p> <p
+class="renk4"></p> <p class="renk5"></p> </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/rgba_renk_tanimi.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh6.googleusercontent.com/d9gcgCNkBoIwGgX75ZjloztSepGOGXHSAwmeaDTOlQqYRn4rTS50kS59JKxAC6qmSgfxdSTLeWyJzABoNAaIAj_bwoDTFOf3wULF3Xq6_7zNKyY5Xg" /></p>
 <p>RGBA ve opacity arasındaki fark; opacity tanımı yapılan bir eleman ve
@@ -143,16 +164,19 @@ saydam bir png hazırlayıp ardalan resmi olarak tanımlardık.</p>
 <p>Farklı kullanım alanları ve birçok avantajı vardır bizim için bu
 tanımın. Örneği Facebook lightbox’ı olarak nitelendirilen bir görüntüyü
 elde etmek çok basit bir hal alıyor bu özelliği kullanarak.</p>
-<p>[sourcecode language="css"] ... border:10px solid rgba(0, 0, 0, 0.2);
-border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:
-10px; ... [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">...</span> <span class="nt">border</span><span class="nd">:10px</span> <span class="nt">solid</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span> <span class="nt">0</span><span class="o">,</span> <span class="nt">0</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.2</span><span class="o">);</span>
+</pre></div>
+
+
+<p>border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:
+10px; ... </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/rgba_renk_tanimi2.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh5.googleusercontent.com/mtFDIUdPs-VFwWWJ5jBYK3uD3je_AZcnVQ404x_QX1d1tatFUtivIO3zKLeTHCuHKOwOakSk0vLBGAyXjN270P9NH3HLkpfj5Goy5kZT7TUivjQzKA" /></p>
 <p>CSS3 bize birçok avantaj sağlamaktadır. Bir nevi bize resim düzenleme
 araçlarındaki esnekliği sağlamaktadır.</p>
 <p>Örneğin <a href="http://www.fatihhayrioglu.com/css-ile-metinlere-golge-vermek/">text-shadow</a> özelliğindeki renk tanımında rgba kullanılırsa
 çok güzel görüntüler elde ederiz. Örnek için
-<a href="static">http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/</a>
+<a href="http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/">http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/</a>
 sitesini ziyaret ediniz.</p>
 <p>Benzer bir şekilde <a href="http://www.fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/">box-shadow</a> özelliğindeki renk tanımında rgba
 kullanılarak daha gerçekçi gölgeler elde ederiz.</p>
@@ -170,38 +194,40 @@ W3C’s CSS Level 3+<br />
 CSS Profile 3.0</p>
 <h3>İnternet Explorer için Çözüm Önerileri</h3>
 <p>Çözüm için CSS-Tricks’te bir çözüm önerisi var</p>
-<p>[sourcecode language="css"] p.renk1{ background: rgb(200, 54, 54); /*
-desteklemeyenler icin */ background: rgba(200, 54, 54, 0.5); }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">p</span><span class="nc">.renk1</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="k">rgb</span><span class="p">(</span><span class="m">200</span><span class="o">,</span> <span class="m">54</span><span class="o">,</span> <span class="m">54</span><span class="p">);</span> <span class="o">/*</span>
+</pre></div>
+
+
+<p>desteklemeyenler icin */ background: rgba(200, 54, 54, 0.5); }</p>
 <p>Bu çözüm önerisinde desteklemeyen tarayıcılarda katı renk hali
 görüntülenirken destekleyen tarayıcılar için saydam hali
 görüntülenecektir.</p>
 <p>Diğer bir yöntem;</p>
-<p>[sourcecode language="html"] \&lt;!--[if IE]> \&lt;style type="text/css">
-.color-block { background:transparent;
+<div class="codehilite"><pre> <span class="c">&lt;!--[if IE]&gt; &lt;style type=&quot;text/css&quot;&gt;</span>
+</pre></div>
+
+
+<p>.color-block { background:transparent;
 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000050,endColorstr=#99000050);
-zoom: 1; } \&lt;/style> \&lt;![endif]--> [/sourcecode]</p>
+zoom: 1; } </style> &lt;![endif]--&gt; </p>
 <p>Şeklinde sadece ie için üretilen bir kod ile çözüm sağlanır destekleyen
 tarayıcılar için standart kod kullanılır.</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://24ways.org/2009/working-with-rgba-colour">http://24ways.org/2009/working-with-rgba-colour</a></li>
-<li>[http://www.w3.org/TR/css3-color/#rgba-color][]</li>
+<li><a href="http://www.w3.org/TR/css3-color/#rgba-color">http://www.w3.org/TR/css3-color/#rgba-color</a></li>
 <li><a href="http://css-tricks.com/rgba-browser-support/">http://css-tricks.com/rgba-browser-support/</a></li>
 <li><a href="http://www.gograybox.com/blog/qt-css3-rgba/">http://www.gograybox.com/blog/qt-css3-rgba/</a></li>
-<li>[http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock][]</li>
-<li><a href="static">http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/</a></li>
+<li><a href="http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock">http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock</a></li>
+<li><a href="http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/">http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/</a></li>
 <li><a href="http://www.css3.info/introduction-opacity-rgba/">http://www.css3.info/introduction-opacity-rgba/</a></li>
 <li><a href="http://dorward.me.uk/www/css/alpha-colour/">http://dorward.me.uk/www/css/alpha-colour/</a></li>
 <li><a href="http://www.robertnyman.com/css3/rgba/rgba.html">http://www.robertnyman.com/css3/rgba/rgba.html</a></li>
-<li><a href="static">http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/</a></li>
+<li><a href="http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/">http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/</a></li>
 </ul>
 </p>
 
-<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/renk_paleti-300x197.jpg" title="renk_paleti" />]: http://www.fatihhayrioglu.com/wp-content/renk_paleti.jpg
-    http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/
-    http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock
-    http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/</p><p>There are <a href=".././css3-rgba-renk-tanimi/#disqus_thread">comments</a>.</p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/renk_paleti-300x197.jpg" title="renk_paleti" />]: http://www.fatihhayrioglu.com/wp-content/renk_paleti.jpg</p><p>There are <a href=".././css3-rgba-renk-tanimi/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

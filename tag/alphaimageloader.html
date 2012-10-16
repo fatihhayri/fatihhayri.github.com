@@ -102,8 +102,11 @@ Explorer'ın PNG desteğini 7. sürümüne kadar desteklememesidir. Tabi web
 kodlayıcıları Internet Explorer'ı beklemeden bazı düzeltme kodları
 üretti. Internet Explorer'ın desteklediği <strong>filter</strong>'ın
 <strong>AlphaImageLoader</strong> özelliği sayesinde saydam PNG desteği sağlanmıştır.</p>
-<p>[sourcecode language="css"] img { filter:
-progid:DXImageTransform.Microsoft.AlphaImageLoader(...); } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">img</span> <span class="p">{</span> <span class="n">filter</span><span class="o">:</span>
+</pre></div>
+
+
+<p>progid:DXImageTransform.Microsoft.AlphaImageLoader(...); } </p>
 <p>Bu kod problemimizi çözdü, ancak tümünü değil.</p>
 <h3>Saydam PNG düzeltmesi ile ilgili sorunlar</h3>
 <p><strong>W3C ve Diğer farklı tarayıcı desteğinin olmayışı.</strong></p>
@@ -132,19 +135,20 @@ karşılaştığım tüm sorunların üstesinden bu yöntem geldi. Siz kaynaklar
 kısmındaki linkleri takip ederek farklı yöntemleri uygulayabilirisiniz.</p>
 <p>İlk olarak bir saydam PNG resmini sitemize ekleyelim. Benim logomun bir
 gif birde png halini hazırlayıp saydam PNG'nin gözle görülür faydasını
-anlayalım. [sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC
+anlayalım.  :::html
+     &lt;!DOCTYPE html PUBLIC
 "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" />
-\&lt;title>Saydam PNG\&lt;/title> \&lt;style> .kutu{
+<title>Saydam PNG</title> <style> .kutu{
 background:url(images/ardalan.gif) top left no-repeat; height:80px;
-padding:10px } \&lt;/style> \&lt;/head> \&lt;body> \&lt;div class="kutu">\&lt;img
-src="images/fatihhayri_logo.gif" alt="Logo" width="166" height="82"
-/>\&lt;/div> \&lt;p>fatihhayri_logo.gif uygulaması\&lt;/p> \&lt;div
-class="kutu">\&lt;img src="images/fatihhayri_logo.png" alt="Logo"
-width="166" height="82" />\&lt;/div> \&lt;p>fatihhayri_logo.png
-uygulaması\&lt;/p> \&lt;/body> \&lt;/html> [/sourcecode]</p>
+padding:10px } </style> </head> <body> <div class="kutu"><img
+src="static/images/fatihhayri_logo.gif" alt="Logo" width="166" height="82"
+/></div> <p>fatihhayri_logo.gif uygulaması</p> <div
+class="kutu"><img src="static/images/fatihhayri_logo.png" alt="Logo"
+width="166" height="82" /></div> <p>fatihhayri_logo.png
+uygulaması</p> </body> </html> </p>
 <p>Örnek sayfayı görmek için <a href="static/dokumanlar/resim_ekle.html">tıklayınız.</a></p>
 <p><img alt="Saydam PNG resim" src="static/images/saydampng_resim.gif" /></p>
 <p>Yukarıdaki örnek görüldüğü gibi logonun kenarlarındaki geçiş kısmında
@@ -157,12 +161,12 @@ Bunun anlamı bu tarayıcının saydam PNG desteğinin olmadığıdır. Bu sorun
 gidermek için yukarıda bahsettiğimiz İnternet Explorer 6'nın
 desteklediği <strong>filter</strong> tekniği uygulayacağız. [sourcecode
 language="javascript" highlight="4"] function fixpngs(){ var l =
-document.getElementsByTagName('img'); for(i=0;i\&lt;l.length;i++){ p =
+document.getElementsByTagName('img'); for(i=0;i&lt;l.length;i++){ p =
 'images/0.gif'; n = l[i].getAttribute('src'); g = n.toLowerCase();
 if(g.substring(g.length-3)=="png"){ l[i].setAttribute('src',p);
 l[i].style.cssText="filter:
 progid:DXImageTransform.Microsoft.AlphaImageLoader (src='"+n+"')"; } } }
-window.onload = fixpngs; [/sourcecode]</p>
+window.onload = fixpngs; </p>
 <p>Yukarıdaki js dosyasını incelersek. Sayfadaki tüm resimleri tarayıp png
 uzantılı olanları bulup IE'nin göstereceği stil özelliklerini bu png'ye
 atayacaktır. Birde burada bize saydam 1x1 saydam gif resmi gerekecektir.
@@ -175,21 +179,22 @@ saydam PNG ve sayfa yüklendiğinde görünür olmaya(display:none) sonradan
 görünen alanlardaki saydam PNG ile yaşadığım sorunları bu kodun
 çözmesidir.</p>
 <p>Yukarıdaki kodu sayfamıza sadece IE7 öncesi görecek şekilde eklersek
-[sourcecode language="html"] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
+    :::html
+     &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" />
-\&lt;title>Saydam PNG\&lt;/title> \&lt;style> .kutu{
+<title>Saydam PNG</title> <style> .kutu{
 background:url(images/ardalan.gif) top left no-repeat; height:80px;
-padding:10px } \&lt;/style> \&lt;!--[if lt IE 7]> \&lt;script
-type="text/javascript" src="pngDuzenlemeKodu.js">\&lt;/script>
-\&lt;![endif]--> \&lt;/head> \&lt;body> \&lt;div class="kutu">\&lt;img
-src="images/fatihhayri_logo.gif" alt="Logo" width="166" height="82"
-/>\&lt;/div> \&lt;p>fatihhayri_logo.gif uygulaması\&lt;/p> \&lt;div
-class="kutu">\&lt;img src="images/fatihhayri_logo.png" alt="Logo"
-width="166" height="82" />\&lt;/div> \&lt;p>fatihhayri_logo.png
-uygulaması\&lt;/p> \&lt;/body> \&lt;/html> [/sourcecode]</p>
+padding:10px } </style> <!--[if lt IE 7]> <script
+type="text/javascript" src="static/pngDuzenlemeKodu.js"></script>
+<![endif]--> </head> <body> <div class="kutu"><img
+src="static/images/fatihhayri_logo.gif" alt="Logo" width="166" height="82"
+/></div> <p>fatihhayri_logo.gif uygulaması</p> <div
+class="kutu"><img src="static/images/fatihhayri_logo.png" alt="Logo"
+width="166" height="82" /></div> <p>fatihhayri_logo.png
+uygulaması</p> </body> </html> </p>
 <p>Örneği görmek için <a href="static/dokumanlar/resim_ekle2.html">tıklayınız.</a></p>
 <p><img alt="saydam png ie6" src="static/images/saydampng_resim2_ie6.gif" /></p>
 <p>Yukarıdaki ekran görüntüsü Internet Explorer 6'da sayfamızın
@@ -212,29 +217,30 @@ Ardalandaki resmin farklı sayfalarda değişeceğini düşünerek kodlayalım.<
 saydam png olarak kaydettim</p>
 <p><img alt="" src="static/images/photoshop_png.gif" /></p>
 <p>Saydam png kullanımının farklı yönlerini anlatmak için bu bölümü 3 kısma
-ayırdık. Bu şekilde kodumuzu yazarsak: [sourcecode language="html"]
-\&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+ayırdık. Bu şekilde kodumuzu yazarsak:  :::html</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" />
-\&lt;title>Saydam PNG\&lt;/title> \&lt;style> #resim{
+<title>Saydam PNG</title> <style> #resim{
 background:url(images/ardalan_resmi.jpg) top left no-repeat;
 width:400px; padding-top:15px; height:300px; } #icerik{ width:207px;
 margin-left:15px; } #icerikUstu{ background:url(images/icerik_ust.png)
 top left no-repeat; height:10px; } #metinAlani{
 background:url(images/icerik_orta.png) top left repeat-y; font:11px
-Arial, Helvetica, sans-serif; padding:0 10px } \&lt;/style> \&lt;/head>
-\&lt;body> \&lt;div id="resim"> \&lt;div id="icerik"> \&lt;div
-id="icerikUstu">\&lt;img src="images/0.gif" width="1" height="1"
-/>\&lt;/div> \&lt;div id="metinAlani"> Lorem ipsum dolor sit amet,
+Arial, Helvetica, sans-serif; padding:0 10px } </style> </head>
+<body> <div id="resim"> <div id="icerik"> <div
+id="icerikUstu"><img src="static/images/0.gif" width="1" height="1"
+/></div> <div id="metinAlani"> Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Praesent ultricies orci quis erat. Nulla
 vulputate sapien sit amet elit. Cum sociis natoque penatibus et magnis
 dis parturient montes, nascetur ridiculus mus. Suspendisse sed nunc. In
 at ligula. Class aptent taciti sociosqu ad litora torquent per conubia
 nostra, per inceptos himenaeos. Ut augue. Phasellus scelerisque vehicula
-orci.\&lt;/div> \&lt;div id="icerikAlt">\&lt;img src="images/icerik_alt.png"
-width="207" height="18" alt=" " />\&lt;/div> \&lt;/div> \&lt;/div> \&lt;/body>
-\&lt;/html> [/sourcecode]</p>
+orci.</div> <div id="icerikAlt"><img src="static/images/icerik_alt.png"
+width="207" height="18" alt=" " /></div> </div> </div> </body>
+</html>
+
 <p>Örnek sayfayı görmek için <a href="static/dokumanlar/ardalan_ekle.html">tıklayınız.</a></p>
 <p><img alt="Saydam PNG ardalan olarak kullanımı" src="static/images/saydam_ardalan1.gif" /></p>
 <p>Burada beyaz gölgeli kutumuz dinamik olduğu için içeriğin artması ile
@@ -245,28 +251,33 @@ baktığımızda işin rengi değişecektir.</p>
 <p><img alt="Saydam PNG ardalan olarak kullanımı" src="static/images/saydam_ardalan1_ie.gif" /></p>
 <p>Yukarıdaki resimde görüldüğü gibi saydam png resimlerinin saydam olan
 kısımları gri bir çerçeve ile kaplanmış gibi görünüyor. Yukarıdaki
-kodumuz ekleyerek bu sorunu halledebiliriz. [sourcecode language="html"]
-\&lt;!--[if lt IE 7]> \&lt;script type="text/javascript"
-src="pngDuzenlemeKodu.js">\&lt;/script> \&lt;![endif]--> [/sourcecode]</p>
+kodumuz ekleyerek bu sorunu halledebiliriz.     :::html</p>
+<!--[if lt IE 7]> <script type="text/javascript"
+src="static/pngDuzenlemeKodu.js"></script> <![endif]-->
+
 <p>Ancak bu kod bize sadece alt kısma eklediğimiz resmi düzeltmeye
 yaracaktır. Orta ve üst kısımların ardalanında kullandığımız saydam png
 doyarının görünümü yine sorun görülecektir.</p>
 <p><img alt="Saydam PNG ardalan olarak kullanımı" src="static/images/saydam_ardalan2_ie.gif" /></p>
 <p>Peki bunun için bir çözüm yok mu? Elbette var. Yine filter özelliğin
-kullanarak bu işe bir çözüm getireceğiz. [sourcecode language="html"]
-\&lt;!--[if lt IE 7]> \&lt;style> #icerikUstu{ background:transparent;
+kullanarak bu işe bir çözüm getireceğiz.    :::html</p>
+<!--[if lt IE 7]> <style> #icerikUstu{ background:transparent;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_ust.png',
-sizingMethod='crop'); } \&lt;/style> \&lt;script type="text/javascript"
-src="pngDuzenlemeKodu.js">\&lt;/script> \&lt;![endif]--> [/sourcecode]</p>
+sizingMethod='crop'); } </style> <script type="text/javascript"
+src="static/pngDuzenlemeKodu.js"></script> <![endif]-->
+
 <p>Yukarıdaki kodu sayfamıza eklediğimizde IE6 içeriğin üst kısmına
 uyguladığımız ardalan resmi düzgün görüntülenecektir. Bu koda dikkat
 edersek. daha önce atadığımız ve yeni nesil tarayıcılarda görünen
 background özelliği sıfırlanıyor(<strong>background:none</strong>) Daha sonra filter
 özelliği uygulanıyor. Burada dikkat etmemiz gerek bir bölüm daha var
 filter özelliğinin iki parametresi var</p>
-<p>[sourcecode language="css"]
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(parametre1,
-parametre2); [/sourcecode]</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<p>filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(parametre1,
+parametre2); </p>
 <p>parametre1 resmin kaynağını göstermek için kullanılır. parametre2 ise
 kullanılan ardalan resminin nasıl şekillendirileceğini gösterir. İki
 değer alır, crop ve scale.</p>
@@ -275,14 +286,15 @@ değer alır, crop ve scale.</p>
 background-repeat:repeat-y özelliğine karşılık gelen bir özelliktir.
 Bunun uygulamasını biraz sonra göreceğiz.</p>
 <p>Gelelim metin girdiğimiz kısmın arkasına uyguladığımız ardalan resmini
-uygulamaya, bunu için: [sourcecode language="html"] \&lt;!--[if lt IE 7]>
-\&lt;style> #icerikUstu{ background:transparent;
+uygulamaya, bunu için:  :::html
+     <!--[if lt IE 7]>
+<style> #icerikUstu{ background:transparent;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_ust.png',
 sizingMethod='crop'); } #metinAlani{ background:transparent;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_orta.png',
-sizingMethod='scale'); height:1%; } \&lt;/style> \&lt;script
-type="text/javascript" src="pngDuzenlemeKodu.js">\&lt;/script>
-\&lt;![endif]--> [/sourcecode]</p>
+sizingMethod='scale'); height:1%; } </style> <script
+type="text/javascript" src="static/pngDuzenlemeKodu.js"></script>
+<![endif]--> </p>
 <p>Örnek sayfayı görmek için <a href="static/dokumanlar/ardalan_ekle3.html">tıklayınız.</a></p>
 <p><img alt="Saydam PNG ardalan olarak kullanımı" src="static/images/saydam_ardalan3_ie.gif" /></p>
 <p>Bir önceki örneğe göre farkımız crop yerine scale uygulamak oldu. Burada
@@ -298,14 +310,14 @@ ve tıkladığımızda ilgili linke gidemiyoruz. Burada link alanı sanki
 gizli bir alana altında kalıyor gibi. Bizde linkleri bu alanın üzerine
 çıkarmalıyız</p>
 <p>Bu durumu çözmek için:</p>
-<p>[sourcecode language="html" highlight="12,13,14,15"] \&lt;!--[if lt IE 7]>
-\&lt;style> #icerikUstu{ background:transparent;
+<p>[sourcecode language="html" highlight="12,13,14,15"] <!--[if lt IE 7]>
+<style> #icerikUstu{ background:transparent;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_ust.png',
 sizingMethod='crop'); } #metinAlani{ background:transparent;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_orta.png',
 sizingMethod='scale'); height:1%; } #metinAlani a{ position: relative;
-z-index: 1; } \&lt;/style> \&lt;script type="text/javascript"
-src="pngDuzenlemeKodu.js">\&lt;/script> \&lt;![endif]--> [/sourcecode]</p>
+z-index: 1; } </style> <script type="text/javascript"
+src="static/pngDuzenlemeKodu.js"></script> <![endif]--> </p>
 <p>Örnek sayfayı görmek için <a href="static/dokumanlar/ardalan_ekle4.html">tıklayınız.</a></p>
 <h3>Sonuç</h3>
 <p>Sonuç olarak saydam PNG kullanmak çok güzel ama ie6 ile uğraşmak zor.
@@ -320,7 +332,7 @@ için kullandığım yöntemi sizlerle paylaştım. Muhakkak daha iyi yöntemler
 çıkacaktır, bunlara açığım. Sizlerden öneriler bekliyorum.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="static">http://komodomedia.com/blog/index.php/2007/11/05/css-png-image-fix-for-ie/</a></li>
+<li><a href="http://komodomedia.com/blog/index.php/2007/11/05/css-png-image-fix-for-ie/">http://komodomedia.com/blog/index.php/2007/11/05/css-png-image-fix-for-ie/</a></li>
 <li><a href="http://24ways.org/2007/supersleight-transparent-png-in-ie6">http://24ways.org/2007/supersleight-transparent-png-in-ie6</a></li>
 <li><a href="http://www.satzansatz.de/cssd/tmp/alphatransparency.html">http://www.satzansatz.de/cssd/tmp/alphatransparency.html</a></li>
 <li><a href="http://homepage.ntlworld.com/bobosola/pnginfo.htm">http://homepage.ntlworld.com/bobosola/pnginfo.htm</a></li>
@@ -328,24 +340,18 @@ için kullandığım yöntemi sizlerle paylaştım. Muhakkak daha iyi yöntemler
 <li><a href="http://www.twinhelix.com/css/iepngfix/">http://www.twinhelix.com/css/iepngfix/</a></li>
 <li><a href="http://dean.edwards.name/ie7/">http://dean.edwards.name/ie7/</a></li>
 <li><a href="http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/">http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/</a></li>
-<li><a href="static">http://www.campbellsdigitalsoup.co.uk/2007/11/27/a-new-png-fix-with-jquerys-helping-hand/</a></li>
-<li>[http://bjorkoy.com/past/2007/4/8/the_easiest_way_to_png/][]</li>
-<li><a href="static">http://blog.creonfx.com/internet-explorer/ie6-png-transparency-css-background-repeat-fix</a></li>
-<li>[http://www.digital-web.com/articles/web_standards_creativity_png/][]</li>
+<li><a href="http://www.campbellsdigitalsoup.co.uk/2007/11/27/a-new-png-fix-with-jquerys-helping-hand/">http://www.campbellsdigitalsoup.co.uk/2007/11/27/a-new-png-fix-with-jquerys-helping-hand/</a></li>
+<li><a href="http://bjorkoy.com/past/2007/4/8/the_easiest_way_to_png/">http://bjorkoy.com/past/2007/4/8/the_easiest_way_to_png/</a></li>
+<li><a href="http://blog.creonfx.com/internet-explorer/ie6-png-transparency-css-background-repeat-fix">http://blog.creonfx.com/internet-explorer/ie6-png-transparency-css-background-repeat-fix</a></li>
+<li><a href="http://www.digital-web.com/articles/web_standards_creativity_png/">http://www.digital-web.com/articles/web_standards_creativity_png/</a></li>
 <li><a href="http://www.alistapart.com/stories/pngopacity/">http://www.alistapart.com/stories/pngopacity/</a></li>
-<li>[http://www.tigir.com/alpha_png.htm][]</li>
+<li><a href="http://www.tigir.com/alpha_png.htm">http://www.tigir.com/alpha_png.htm</a></li>
 <li><a href="http://stylizedweb.com/2007/12/30/png-transparency-issues/">http://stylizedweb.com/2007/12/30/png-transparency-issues/</a></li>
 <li><a href="http://blogs.pathf.com/agileajax/2008/04/hacking-transpa.html">http://blogs.pathf.com/agileajax/2008/04/hacking-transpa.html</a></li>
 <li><a href="http://www.bluehostforum.com/archive/index.php/t-8396.html">http://www.bluehostforum.com/archive/index.php/t-8396.html</a><br />
 </li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">komodomedia</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">index</span><span class="p">.</span><span class="n">php</span><span class="o">/</span>2007<span class="o">/</span>11<span class="o">/</span>05<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">png</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="nb">fix</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">ie</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">campbellsdigitalsoup</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span>2007<span class="o">/</span>11<span class="o">/</span>27<span class="o">/</span><span class="n">a</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">png</span><span class="o">-</span><span class="nb">fix</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">jquerys</span><span class="o">-</span><span class="n">helping</span><span class="o">-</span><span class="n">hand</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">creonfx</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">internet</span><span class="o">-</span><span class="n">explorer</span><span class="o">/</span><span class="n">ie6</span><span class="o">-</span><span class="n">png</span><span class="o">-</span><span class="n">transparency</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">repeat</span><span class="o">-</span><span class="nb">fix</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">digital</span><span class="o">-</span><span class="n">web</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">web_standards_creativity_png</span><span class="o">/</span>
-</pre></div><p>There are <a href=".././internet-explorer-6-icin-saydam-png-destegi/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././internet-explorer-6-icin-saydam-png-destegi/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

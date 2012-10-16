@@ -94,8 +94,8 @@ sayede küçük resimler ile istediğimiz görüntüleri elde ederiz.</p>
 <p>grafik <a href="http://zurb.com/">zurb.com</a> sitesinden alınmıştır.</p>
 <p>border-image kod yapısı</p>
 <ul>
-<li>border-image: \&lt;resim_kaynagi> \&lt;bolum {1,4}> / \&lt;genislik
-    {1,4}> \&lt;dis_hat> \&lt;tekrar{1,2}>;</li>
+<li>border-image: <resim_kaynagi> <bolum {1,4}> / <genislik
+    {1,4}> <dis_hat> <tekrar{1,2}>;</li>
 </ul>
 <p>Firefox, Chrome, Safari ve Opera gibi yeni nesil tarayıcılar
 destekliyor. Diğer özelliklerde olduğu gibi önek ile destekliyorlar.
@@ -122,7 +122,10 @@ border-image-slice değeri 1’den 4’e kadar değer alabilir. Yukarıdaki
 köşe, 4 kenar ve 1 adet orta kısım. Köşeler sabit boyutunu korur. Diğer
 bölümler ise sabit, genişleyebilir veya her ikisi tanımlarına göre
 çeşitli durumlar alabilir.</p>
-<p>[css] .test{ border-image-slice: 5px 5px 5px 5px; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.test</span><span class="p">{</span> <span class="k">border</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">slice</span><span class="o">:</span> <span class="m">5px</span> <span class="m">5px</span> <span class="m">5px</span> <span class="m">5px</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="https://lh4.googleusercontent.com/8QsLUbb5ZJMp8ADjUHjhB2WkWRoJUbpS_XhpVEvVnGOZSDWhl-y7GoBUmSr-elGj7jXxS6wZvBkMRRtiwmzEHLacray1AC-0mhI8K_2FdTspbpDQxFs" /></p>
 <p>Yukarıdaki örnekte görüldüğü gibi köşelerden belli bir mesafe
 bırakılarak kalan kısımlar uzatılmıştır. Tanımlama diğer css
@@ -130,9 +133,15 @@ tanımlarında olduğu gibi saat yönünde üst-sağ-alt ve sol şeklindedir.
 Yüzde değerleri tanımlanırken (%) işareti konulması zorunludur, ancak
 piksel tanımlarında px koymak zorunlu değildir. Yukarıdaki tanım
 aşağıdaki gibi de yapılabilir.</p>
-<p>[css] .test{ border-image-slice: 5 5 5 5; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.test</span><span class="p">{</span> <span class="k">border</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">slice</span><span class="o">:</span> <span class="m">5</span> <span class="m">5</span> <span class="m">5</span> <span class="m">5</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Tüm değerler eşit ise tek tanım ile de ifade edilebilir.</p>
-<p>[css] .test{ border-image-slice: 5; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.test</span><span class="p">{</span> <span class="k">border</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">slice</span><span class="o">:</span> <span class="m">5</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Başta belirttiğimiz gibi 9 bölüme ayrılan resmin kenarları ve orta
 kısmına border-image ile işlev atayabiliyoruz. Orta kısım kenarların
 içini kapsayan bölümdür. Eğer orta kısmı renk veya başka bir şey ile
@@ -143,21 +152,33 @@ doldurma diye bir seçenek(örn no-fill) yok. Umarız ileri bunuda
 eklerler.</p>
 <p>Bu kısmı daha iyi anlamak için çevrimiçi araçları biraz kurcalayın
 derim. <a href="http://border-image.com/">http://border-image.com</a> ve
-<a href="static">http://www.norabrowndesign.com/css-experiments/border-image-anim.html</a>
+<a href="http://www.norabrowndesign.com/css-experiments/border-image-anim.html">http://www.norabrowndesign.com/css-experiments/border-image-anim.html</a>
 sitelerini ziyaret ediniz.</p>
 <p><strong>border-image-width<br />
 </strong>border-image-width özelliği elemanın kenar genişliğini belirler.
 border-image-width tanımlı ise CSS2’den aşina olduğumuz border-width
 tanımını ezer.</p>
-<p>[css] .test{ border-image-width: 5px 5px 5px 5px } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.test</span><span class="p">{</span> <span class="k">border</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="k">width</span><span class="o">:</span> <span class="m">5px</span> <span class="m">5px</span> <span class="m">5px</span> <span class="m">5px</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>tüm değerler aynı ise tek tanım ile kısaltma yapılabilir</p>
-<p>[css] .test{ border-image-width: 5px; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.test</span><span class="p">{</span> <span class="k">border</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="k">width</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Genel tanımda ise taksim ile ayrılarak belirtilir.</p>
-<p>[css] .test{ border-image: url(“images/test.gif”) 5 / 5px; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.test</span><span class="p">{</span> <span class="k">border</span><span class="o">-</span><span class="n">image</span><span class="o">:</span> <span class="sx">url(“images/test.gif”)</span> <span class="m">5</span> <span class="o">/</span> <span class="m">5px</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Bu kısaltmayı Opera henüz desteklememektedir. Bu nedenle bunun yerine
 border-width değerini kullanabiliriz.</p>
-<p>[css] .test{ border-image: url(“images/test.gif”) 5 repeat; } .test{
-border-width:5px; } [/css]</p>
+<div class="codehilite"><pre> <span class="nc">.test</span><span class="p">{</span> <span class="k">border</span><span class="o">-</span><span class="n">image</span><span class="o">:</span> <span class="sx">url(“images/test.gif”)</span> <span class="m">5</span> <span class="k">repeat</span><span class="p">;</span> <span class="p">}</span> <span class="nc">.test</span><span class="p">{</span>
+</pre></div>
+
+
+<p>border-width:5px; } </p>
 <p><strong>border-image-outset</strong><br />
 border-image dış hat çizgisi kutunun dışına taşan kısmı belirtir. Şu an
 için destekleyen tarayıcılar yoktur. Başlangıç değeri 0’dır.</p>
@@ -183,32 +204,41 @@ sol-sağ içindir. Tek değer tüm alanlar içindir.</p>
 tarayıcı desteklemiyor.</p>
 <p>Bu kısmı daha iyi anlamak için çevirimiçi araçları biraz kurcalayın
 derim. <a href="http://border-image.com/">http://border-image.com</a> ve
-<a href="static">http://www.norabrowndesign.com/css-experiments/border-image-anim.html</a>
+<a href="http://www.norabrowndesign.com/css-experiments/border-image-anim.html">http://www.norabrowndesign.com/css-experiments/border-image-anim.html</a>
 sitelerini ziyaret ediniz.</p>
 <p>Bu özellikleri tek tek şu an hiç bir tarayıcı desteklememektedir, bundan
 dolayı şimdilik kaydı ile <strong>border-image</strong> kısaltması kullanılmalıdır.
 Yukarıda konu daha iyi anlaşılması için ayrı ayrı gösterilmiştir.</p>
-<p>[css] .test{ width:300px; height:300px; border-width: 33px;
--moz-border-image: url(border_image_desen.png) 33 stretch;
+<div class="codehilite"><pre> <span class="nc">.test</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">300px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">300px</span><span class="p">;</span> <span class="k">border-width</span><span class="o">:</span> <span class="m">33px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>-moz-border-image: url(border_image_desen.png) 33 stretch;
 -webkit-border-image: url(border_image_desen.png) 33 stretch;
 -o-border-image: url(border_image_desen.png) 33 stretch; border-image:
-url(border_image_desen.png) 33 stretch; } [/css]</p>
+url(border_image_desen.png) 33 stretch; } </p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/myzQX/25/embedded/result,css,html"></iframe>
 
 <p>strech</p>
-<p>[css] .test{ width:300px; height:300px; border-width: 33px;
--moz-border-image: url(border_image_desen.png) 33 repeat;
+<div class="codehilite"><pre> <span class="nc">.test</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">300px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">300px</span><span class="p">;</span> <span class="k">border-width</span><span class="o">:</span> <span class="m">33px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>-moz-border-image: url(border_image_desen.png) 33 repeat;
 -webkit-border-image: url(border_image_desen.png) 33 repeat;
 -o-border-image: url(border_image_desen.png) 33 repeat; border-image:
-url(border_image_desen.png) 33 repeat; } [/css]</p>
+url(border_image_desen.png) 33 repeat; } </p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/egcdh/1/embedded/result,css,html"></iframe>
 
 <p>repeat</p>
-<p>[css] .test{ width:300px; height:300px; border-width: 33px;
--moz-border-image: url(border_image_desen.png) 33 round;
+<div class="codehilite"><pre> <span class="nc">.test</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">300px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">300px</span><span class="p">;</span> <span class="k">border-width</span><span class="o">:</span> <span class="m">33px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>-moz-border-image: url(border_image_desen.png) 33 round;
 -webkit-border-image: url(/border_image_desen.png) 33 round;
 -o-border-image: url(border_image_desen.png) 33 round; border-image:
-url(border_image_desen.png) 33 round; } [/css]</p>
+url(border_image_desen.png) 33 round; } </p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VnJnz/1/embedded/result,css,html"></iframe>
 
 <p>round</p>
@@ -221,11 +251,14 @@ yapabiliriz.</p>
 <p>Esneme sadece üst ve alttan olduğu için sadece sağ ve sol değerlerini
 tanımladık. Aynı şekilde genişlikleri(border-width) tanımladık. Ortaya
 esnek bir buton çıktık.</p>
-<p>[css] a.backButton{ -webkit-border-image:url(backButton.png) 0 5 0 14
-stretch; -moz-border-image:url(backButton.png) 0 5 0 14 stretch;
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.backButton</span><span class="p">{</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">image</span><span class="o">:</span><span class="sx">url(backButton.png)</span> <span class="m">0</span> <span class="m">5</span> <span class="m">0</span> <span class="m">14</span>
+</pre></div>
+
+
+<p>stretch; -moz-border-image:url(backButton.png) 0 5 0 14 stretch;
 -o-border-image:url(backButton.png) 0 5 0 14 stretch;
 border-image:url(backButton.png) 0 5 0 14 stretch; border-width:0 5px 0
-14px; } [/css]
+14px; } 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3SHNk/11/embedded/result,css,html"></iframe></p>
 <p>Yukarıdaki örnekte görüldüğü gibi basit bir kod ile(siz bakmayın
 öneklerin kalabalığına) ensek bir buton elde etmiş oluyoruz.
@@ -253,39 +286,32 @@ inanıyorum. Standartlar tam oturmasa da zamanla daha iyi olacaktır. Bu
 uygulanabilirliği var.</p>
 <p><strong>Kaynaklar</strong></p>
 <ul>
-<li>[http://www.w3.org/TR/css3-background/#border-images][]</li>
+<li><a href="http://www.w3.org/TR/css3-background/#border-images">http://www.w3.org/TR/css3-background/#border-images</a></li>
 <li><a href="http://www.css3.info/preview/border-image/">http://www.css3.info/preview/border-image/</a></li>
 <li><a href="http://www.sitepoint.com/css3-border-image/">http://www.sitepoint.com/css3-border-image/</a> (güzel)</li>
 <li><a href="http://css-tricks.com/6883-understanding-border-image/">http://css-tricks.com/6883-understanding-border-image/</a></li>
-<li><a href="static">http://www.useragentman.com/blog/2011/03/29/pixel-perfect-css3-border-image-in-depth/</a></li>
-<li><a href="static">http://www.seyfullahkilic.com/web-tasariminizi-css3-ile-gelecege-tasiyin</a></li>
+<li><a href="http://www.useragentman.com/blog/2011/03/29/pixel-perfect-css3-border-image-in-depth/">http://www.useragentman.com/blog/2011/03/29/pixel-perfect-css3-border-image-in-depth/</a></li>
+<li><a href="http://www.seyfullahkilic.com/web-tasariminizi-css3-ile-gelecege-tasiyin">http://www.seyfullahkilic.com/web-tasariminizi-css3-ile-gelecege-tasiyin</a></li>
 <li><a href="http://www.zurb.com/playground/awesome-overlays">http://www.zurb.com/playground/awesome-overlays</a> (grafik)</li>
 <li><a href="http://www.suburban-glory.com/blog?page=111">http://www.suburban-glory.com/blog?page=111</a></li>
 <li><a href="http://ejohn.org/blog/border-image-in-firefox/">http://ejohn.org/blog/border-image-in-firefox/</a> (farklı örnekler)</li>
 <li><a href="https://developer.mozilla.org/en/CSS/-moz-border-image">https://developer.mozilla.org/en/CSS/-moz-border-image</a>
     (standartlar)</li>
-<li>[http://www.dynamicdrive.com/style/csslibrary/item/image_frames_using_css3_border_image/][]
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/item/image_frames_using_css3_border_image/">http://www.dynamicdrive.com/style/csslibrary/item/image_frames_using_css3_border_image/</a>
     (güzel örnekler)</li>
 <li><a href="http://caniuse.com/border-image">http://caniuse.com/border-image</a> (destek listesi)</li>
 <li><a href="http://ensightful.com/walrus-ivory-tusk-with-animals">http://ensightful.com/walrus-ivory-tusk-with-animals</a> (örnek)</li>
 <li><a href="http://border-image.com/">http://border-image.com/</a> (çevrimiçi araç)</li>
-<li><a href="static">http://www.norabrowndesign.com/css-experiments/border-image-anim.html</a>
+<li><a href="http://www.norabrowndesign.com/css-experiments/border-image-anim.html">http://www.norabrowndesign.com/css-experiments/border-image-anim.html</a>
     (örnek)</li>
-<li>[http://dev.opera.com/articles/view/css3-border-background-boxshadow/#border-image][]</li>
+<li><a href="http://dev.opera.com/articles/view/css3-border-background-boxshadow/#border-image">http://dev.opera.com/articles/view/css3-border-background-boxshadow/#border-image</a></li>
 <li><a href="http://people.opera.com/pepelsbey/experiments/bdi/">http://people.opera.com/pepelsbey/experiments/bdi/</a></li>
 <li><a href="http://ejohn.org/blog/border-image-in-firefox/">http://ejohn.org/blog/border-image-in-firefox/</a></li>
 <li><a href="http://michaelhan.net/wordsets/20/">http://michaelhan.net/wordsets/20/</a></li>
 <li><a href="http://www.impressivewebs.com/space-round-css3-background/">http://www.impressivewebs.com/space-round-css3-background/</a>
     (round ve space)</li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">norabrowndesign</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">experiments</span><span class="o">/</span><span class="n">border</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">anim</span><span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">useragentman</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2011<span class="o">/</span>03<span class="o">/</span>29<span class="o">/</span><span class="n">pixel</span><span class="o">-</span><span class="n">perfect</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">depth</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">seyfullahkilic</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">web</span><span class="o">-</span><span class="n">tasariminizi</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">ile</span><span class="o">-</span><span class="n">gelecege</span><span class="o">-</span><span class="n">tasiyin</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">dynamicdrive</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">style</span><span class="o">/</span><span class="n">csslibrary</span><span class="o">/</span><span class="n">item</span><span class="o">/</span><span class="n">image_frames_using_css3_border_image</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dev</span><span class="p">.</span><span class="n">opera</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">view</span><span class="o">/</span><span class="n">css3</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">boxshadow</span><span class="o">/</span>#<span class="n">border</span><span class="o">-</span><span class="n">image</span>
-</pre></div><p>There are <a href=".././css3-kenar-resimleri-border-image/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././css3-kenar-resimleri-border-image/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

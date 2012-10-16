@@ -93,7 +93,7 @@ haddimede değil zaten. Biz buradadaha çok Stil Şablonlarının bize
 tipografi adına kazandırdıklarını göstermeyeçalışacağız ve CSS ile
 sayfalarımızı daha dikkat çekici ve okuna bilir hale getireceğimizi
 göreceğiz. Tipografihakkında genel bir bilgi vermesi açısından güzel bir
-çalışma olan Doç. Hasip Bektaş'ın "<a href="static">İnternetteki Tipografi Sorunları ve
+çalışma olan Doç. Hasip Bektaş'ın "<a href="http://www.fotografya.gen.tr/issue-6/hasip.html">İnternetteki Tipografi Sorunları ve
 GörselKirlenmeye Karşı Öneriler</a>" adlı makalesini okumanızı tavsiye
 ederim. Ayrıca kaynakçakısmındaki linklerden de daha fazla bilgi
 alabilirsiniz.</p>
@@ -165,8 +165,11 @@ aşağıdaki resimde çok iyi bir şekilde görmekteyiz. <br />
 sans-serif fontlar daha popülerdir. Bu söylediğimden web'de hiç serif
 font kullanılmaz diye bir mana çıkaramayız elbette kullanılabilir ancak
 sans-serif daha çok tercih edilir. Genel font kullanımı:</p>
-<p>[sourcecode language="css"] body{ font-family:Arial, Helvetica,
-sans-serif } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">body</span><span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span>
+</pre></div>
+
+
+<p>sans-serif } </p>
 <p>Şeklindedir. Burada birincil fontumuz Arial'dir alternatifi Helvatica ve
 yazı tipi ailesi sans-serif olduğunu belirtiyoruz. Normalde sadece Arial
 yazmamızda yeterlidir, ancak kullanıcının bilgisayarında bu yazı tipinin
@@ -205,19 +208,25 @@ boyutları önerilerini sıralayalım:</p>
 <li>Diğer başlıklar için 13px</li>
 </ul>
 <p>Genel bir css kodunu yazarsak</p>
-<p>[sourcecode language="css"] body {font: 11px/1.5em "Lucida Grande"; }
-h1, h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana,
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span><span class="k">font</span><span class="o">:</span> <span class="m">11px</span><span class="o">/</span><span class="m">1.5em</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<p>h1, h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana,
 sans-serif; font-weight: normal;} h1 { font-size: 24px; } h2 {
 font-size: 18px; } h3 { font-size: 16px; line-height:2; } h4 {
 font-size: 13px; line-height:1.25; font-weight:bold; } h5 { font-size:
-12px; font-weight:bold; } h6 { font-size: 12px; } [/sourcecode]</p>
+12px; font-weight:bold; } h6 { font-size: 12px; } </p>
 <p>veya <strong>em</strong> cinsinden</p>
-<p>[sourcecode language="css"] body {font: 11px/1.5em "Lucida Grande";} h1,
-h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana, sans-serif;
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span><span class="k">font</span><span class="o">:</span> <span class="m">11px</span><span class="o">/</span><span class="m">1.5em</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="p">;}</span> <span class="nt">h1</span><span class="o">,</span>
+</pre></div>
+
+
+<p>h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana, sans-serif;
 font-weight: normal;} h1 { font-size: 3em; } h2 { font-size: 2em; } h3 {
 font-size: 1.5em; line-height:2; } h4 { font-size: 1.2em;
 line-height:1.25; font-weight:bold; } h5 { font-size: 1em;
-font-weight:bold; } h6 { font-size: 1em; } [/sourcecode]</p>
+font-weight:bold; } h6 { font-size: 1em; } </p>
 <p>Bu konuda çok güzel bir doküman hazırlayan <a href="http://code.google.com/p/blueprintcss/" title="CSS Anaçatısı">BluePrint CSS
 Anaçatısının</a> tipografi kısmına göz atmanızı tavsiye ederim.</p>
 <h3>Satır Yüksekliği(line-height)</h3>
@@ -225,13 +234,18 @@ Anaçatısının</a> tipografi kısmına göz atmanızı tavsiye ederim.</p>
 tanımı. Metinlerin görünümünde büyük etkisi vardır. Satır yüksekliği
 için genel kabul <strong>yazı boyutunun1.4-1.6 katı</strong> kadar bir mesafedir.</p>
 <p><img alt="Satırlar arası yükseklik" src="static/images/line_height.gif" /></p>
-<p>[sourcecode language="css"] body { font-family: "Lucida Grande",
-Helvetica, Arial, Verdana, sans-serif; line-height: 1.5em; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="o">,</span>
+</pre></div>
+
+
+<p>Helvetica, Arial, Verdana, sans-serif; line-height: 1.5em; }</p>
 <p>CSS kısaltmalarında tek yazı tipi değerine tüm yazı özellikleri ekleme
 imkanı sunar.</p>
-<p>[sourcecode language="css"] body { font:11px/1.5em "Lucida Grande",
-Helvetica, Arial, Verdana, sans-serif; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">font</span><span class="o">:</span><span class="m">11px</span><span class="o">/</span><span class="m">1.5em</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="o">,</span>
+</pre></div>
+
+
+<p>Helvetica, Arial, Verdana, sans-serif; } </p>
 <h3>Yazılara Vurgu Eklemek</h3>
 <p>CSS ile yazılarımızın önemli kısımlarını vurgulamak için bir kaç yöntem
 kullanırız.</p>
@@ -239,23 +253,35 @@ kullanırız.</p>
 Normalde yazı tiplerinin kalın halleride vardır ancak web yazı
 tiplerinde böyle bir seçim yapamıyoruz bu nedenle yazılarımıza kalınlık
 kazandırmak için</p>
-<p>[sourcecode language="css"] h1{ font-weight:bold; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">h1</span><span class="p">{</span> <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>kodunu kullanırız. Kalın yazılmış yazılar diğer yazılara göre  daha
 dikkat çekici görünecektir. Genelde başlıklar ve önemli alanlar
 kalınlaştırılır.</p>
 <p><strong>Eğik:</strong> Vurgu için ikinci olarak eğik(italik) yazı şekli kullanılır.
 Eğik yazı şekli ekranda okunurluğu azaltsa da kullanıcıya farklı bir
 görünüm ile dikkat çeker.</p>
-<p>[sourcecode language="css"] blockquote { margin: 1.5em 0 1.5em 1.5em;
-color: #666; font-style: italic; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">blockquote</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">1.5em</span> <span class="m">0</span> <span class="m">1.5em</span> <span class="m">1.5em</span><span class="p">;</span>
+</pre></div>
+
+
+<p>color: #666; font-style: italic; } </p>
 <p><strong>Altıçizili:</strong> Üçüncü olarak altı çizili yazılar kullanılır. Web'de
 genelde altı çizili yazılar link olarak kullanılır ve böyle algılanır.</p>
-<p>[sourcecode language="css"]a{ color: #125AA7; text-decoration:
-underline; outline: none; } [/sourcecode]</p>
+<div class="codehilite"><pre><span class="nt">a</span><span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#125AA7</span><span class="p">;</span> <span class="k">text-decoration</span><span class="o">:</span>
+</pre></div>
+
+
+<p>underline; outline: none; } </p>
 <p><strong>Renk:</strong> Yazılarımızda farklı alanlara vurgu yapmak için kullanılan
 özelliklerden biride renk(color) özelliğidir. Meselahatalı alanları
 belirlemek için kırmızı renk kullanımı yaygındır.</p>
-<p>[sourcecode language="css"].hata{ color:#f00}[/sourcecode]</p>
+<div class="codehilite"><pre><span class="nc">.hata</span><span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="m">#f00</span><span class="p">}</span>
+</pre></div>
+
+
 <p><strong>Büyük Yazı:</strong> Vurgu yapmak için nadiren de olsa tipografi bakımdan
 buda kullanılabilir bir seçenektir ama en azkullanılan vurgu tipidir.</p>
 <h3>Metin hizalama</h3>
@@ -290,11 +316,17 @@ yararlı olabilecek bir özelliktir.</p>
 <p>Bu özellikte genelde dokunulmayan özellikler arasındadır. Ancak her web
 sayfası aynıdeğerleri kullanacak diye bir şey yoktur. Bazen farklı
 sonuçlar elde etmek içinfarklı değerler kullanabiliriz.</p>
-<p>[sourcecode language="css"]p {word-spacing: .2em;} [/sourcecode]</p>
+<div class="codehilite"><pre><span class="nt">p</span> <span class="p">{</span><span class="k">word-spacing</span><span class="o">:</span> <span class="m">.2em</span><span class="p">;}</span>
+</pre></div>
+
+
 <h3>Paragrafın ilk satırını içeriden başlatmak (text-indent)</h3>
 <p>Birçok dergi, gazete ve yazıda karşılaştığımız bu yöntemi CSS yardımı
 ile çok basit bir şekilde yaparız.</p>
-<p>[sourcecode language="css"] p { text-indent: 2.5em; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">2.5em</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Göreceli değer kullanmak daha mantıklıdır.</p>
 <h3>Sonuç</h3>
 <p>blueprint tipografi uygulamalarını göz atın .
@@ -312,10 +344,10 @@ Sınırları zorlayan güzel örnekler</p>
 <ul>
 <li><a href="http://webtypography.net/toc/%20">http://webtypography.net/toc/</a></li>
 <li><a href="http://www.sitepoint.com/print/anatomy-web-fonts">http://www.sitepoint.com/print/anatomy-web-fonts</a></li>
-<li>[http://www.markboulton.co.uk/journal/comments/five_simple_steps_to_better_typography/][]</li>
-<li>[http://www.digital-web.com/articles/css_typography/][] (css ve
+<li><a href="http://www.markboulton.co.uk/journal/comments/five_simple_steps_to_better_typography/">http://www.markboulton.co.uk/journal/comments/five_simple_steps_to_better_typography/</a></li>
+<li><a href="http://www.digital-web.com/articles/css_typography/">http://www.digital-web.com/articles/css_typography/</a> (css ve
     tipografi hakkında genel bir yazı)</li>
-<li>[http://www.digital-web.com/articles/css_101/][] (uygulamalı css ve
+<li><a href="http://www.digital-web.com/articles/css_101/">http://www.digital-web.com/articles/css_101/</a> (uygulamalı css ve
     tipografi)<br />
 </li>
 <li>[http://www.fotografya.gen.tr/issue-6/hasip.html][İnternetteki
@@ -328,7 +360,7 @@ Sınırları zorlayan güzel örnekler</p>
 <li><a href="http://clagnut.com/search/index.php?q=typography">http://clagnut.com/search/index.php?q=typography</a> (tipografi
     linkleri)</li>
 <li><a href="http://www.wpdfd.com/issues/23/typography/">http://www.wpdfd.com/issues/23/typography/</a> (genel bilgi)</li>
-<li><a href="static">http://www.3point7designs.com/blog/2006/09/20/advanced-typography-techniques-using-css/</a> 
+<li><a href="http://www.3point7designs.com/blog/2006/09/20/advanced-typography-techniques-using-css/">http://www.3point7designs.com/blog/2006/09/20/advanced-typography-techniques-using-css/</a> 
     (farklı metin uygulamaları)<br />
 </li>
 <li><a href="http://www.alistapart.com/articles/sizematters/">http://www.alistapart.com/articles/sizematters/</a> (font boyutunu
@@ -339,10 +371,10 @@ Sınırları zorlayan güzel örnekler</p>
 </li>
 <li><a href="http://www.mandarindesign.com/troops.html">http://www.mandarindesign.com/troops.html</a> (uygulamlar var)<br />
 </li>
-<li><a href="static">http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/</a></li>
+<li><a href="http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/">http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/</a></li>
 <li><a href="http://typetester.maratz.com/">http://typetester.maratz.com/</a></li>
 <li><a href="http://www.webstyleguide.com/type/">http://www.webstyleguide.com/type/</a></li>
-<li><a href="static">http://www.sitepoint.com/blogs/2007/04/30/typography-baseline-rhythm-deciphered/</a><br />
+<li><a href="http://www.sitepoint.com/blogs/2007/04/30/typography-baseline-rhythm-deciphered/">http://www.sitepoint.com/blogs/2007/04/30/typography-baseline-rhythm-deciphered/</a><br />
 </li>
 <li><a href="http://ceyhunaksan.com/css-ve-tipografi/">http://ceyhunaksan.com/css-ve-tipografi/</a></li>
 <li><a href="http://topfunky.com/baseline-rhythm-calculator/">http://topfunky.com/baseline-rhythm-calculator/</a> (tipografi
@@ -350,14 +382,7 @@ Sınırları zorlayan güzel örnekler</p>
 <li><a href="http://www.wpdfd.com/issues/23/typography/">http://www.wpdfd.com/issues/23/typography/</a></li>
 <li><a href="http://www.peachpit.com/store/product.aspx?isbn=0321305256">http://www.peachpit.com/store/product.aspx?isbn=0321305256</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fotografya</span><span class="p">.</span><span class="n">gen</span><span class="p">.</span><span class="n">tr</span><span class="o">/</span><span class="n">issue</span><span class="o">-</span>6<span class="o">/</span><span class="n">hasip</span><span class="p">.</span><span class="n">html</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">markboulton</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">journal</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="n">five_simple_steps_to_better_typography</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>3<span class="n">point7designs</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2006<span class="o">/</span>09<span class="o">/</span>20<span class="o">/</span><span class="n">advanced</span><span class="o">-</span><span class="n">typography</span><span class="o">-</span><span class="n">techniques</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">css</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>3<span class="n">point7designs</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2007<span class="o">/</span>08<span class="o">/</span>16<span class="o">/</span><span class="n">web</span><span class="o">-</span><span class="n">typography</span><span class="o">-</span>50<span class="o">-</span><span class="n">sources</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">inspiration</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">instruction</span><span class="o">/</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">sitepoint</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blogs</span><span class="o">/</span>2007<span class="o">/</span>04<span class="o">/</span>30<span class="o">/</span><span class="n">typography</span><span class="o">-</span><span class="n">baseline</span><span class="o">-</span><span class="n">rhythm</span><span class="o">-</span><span class="n">deciphered</span><span class="o">/</span>
-</pre></div><p>There are <a href=".././css-ve-tipografi/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././css-ve-tipografi/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -400,8 +425,7 @@ Sınırları zorlayan güzel örnekler</p>
                 <p>Bir yazı tipi(font) tanımlaması yapılırken eğer yazı tipi adı arasında
 boşluk varsa(örn: Times New Roman) uygulamada sorun olur. Sorunun çözümü
 boşluk olan yazı tipi ismini çift tırnak("") içine almaktır. [sourcecode
-language='css'] body{ font-family: times, "times new roman", serif; }
-[/sourcecode]</p>
+language='css'] body{ font-family: times, "times new roman", serif; }</p>
                 <a class="readmore" href=".././css-ipuclari-1/">read more</a>
                 <p>There are <a href=".././css-ipuclari-1/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

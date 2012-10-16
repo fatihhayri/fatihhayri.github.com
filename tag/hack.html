@@ -111,59 +111,102 @@ yolu, tarayıcılara özel seçiciler içine kod yazmaktır.</p>
 
 <p><strong>Tarayıcılara Özel Seçiciler</strong></p>
 <p>IE 6 ve altı</p>
-<p>[sourcecode language="css"]* html {}[/sourcecode]</p>
+<div class="codehilite"><pre><span class="o">*</span> <span class="nt">html</span> <span class="p">{}</span>
+</pre></div>
+
+
 <p>IE 7 ve altı</p>
-<p>[sourcecode language="css"]*:first-child+html {} * html
-{}[/sourcecode]</p>
+<div class="codehilite"><pre><span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="p">{}</span> <span class="o">*</span> <span class="nt">html</span>
+</pre></div>
+
+
+<p>{}</p>
 <p>sadece IE 7 için</p>
-<p>[sourcecode language="css"]*:first-child+html {}[/sourcecode]</p>
+<div class="codehilite"><pre><span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="p">{}</span>
+</pre></div>
+
+
 <p>IE 7 ve yeni nesil tarayıcılar için</p>
-<p>[sourcecode language="css"]html>body {}[/sourcecode]</p>
+<div class="codehilite"><pre><span class="nt">html</span><span class="o">&gt;</span><span class="nt">body</span> <span class="p">{}</span>
+</pre></div>
+
+
 <p>Yalnız yeni nesil tarayıcılar için (IE 7 dışında)</p>
-<p>[sourcecode language="css"]html>/**/body {}[/sourcecode]</p>
+<div class="codehilite"><pre><span class="nt">html</span><span class="o">&gt;</span><span class="c">/**/</span><span class="nt">body</span> <span class="p">{}</span>
+</pre></div>
+
+
 <p>sadece IE 8 için</p>
-<p>[sourcecode language="css"].test { property:value; property: value\9;
-*property: value; }[/sourcecode]</p>
+<div class="codehilite"><pre><span class="nc">.test</span> <span class="p">{</span> <span class="n">property</span><span class="o">:</span><span class="n">value</span><span class="p">;</span> <span class="n">property</span><span class="o">:</span> <span class="n">value9</span><span class="p">;</span>
+</pre></div>
+
+
+<p>*property: value; }</p>
 <p>Opera 9 ve altı sürümler için</p>
-<p>[sourcecode language="css"]html:first-child {}[/sourcecode]</p>
+<div class="codehilite"><pre><span class="nt">html</span><span class="nd">:first-child</span> <span class="p">{}</span>
+</pre></div>
+
+
 <p>Safari</p>
-<p>[sourcecode language="css"]html[xmlns*=""] body:last-child
-{}[/sourcecode]</p>
+<div class="codehilite"><pre><span class="nt">html</span><span class="o">[</span><span class="nt">xmlns</span><span class="o">*=</span><span class="s2">&quot;&quot;</span><span class="o">]</span> <span class="nt">body</span><span class="nd">:last-child</span>
+</pre></div>
+
+
+<p>{}</p>
 <p>Google Chrome and Safari 3.1</p>
-<p>[sourcecode language="css"]body:nth-of-type(1){}[/sourcecode]</p>
+<div class="codehilite"><pre><span class="nt">body</span><span class="nd">:nth-of-type</span><span class="o">(</span><span class="nt">1</span><span class="o">)</span><span class="p">{}</span>
+</pre></div>
+
+
 <p>Firefox 2</p>
-<p>[sourcecode language="css"].foo, x:-moz-any-link { } [/sourcecode]</p>
+<div class="codehilite"><pre><span class="nc">.foo</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span> <span class="p">{</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>FireFox 3</p>
-<p>[sourcecode language="css"].foo, x:-moz-any-link, x:default {
-}[/sourcecode]</p>
+<div class="codehilite"><pre><span class="nc">.foo</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:default</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>}</p>
 <p>Firefox 2 ve 3 için yazdığımız kodu ie 7 de yorumluyor bunu engellemek
 için (Sonradan eklenmiştir.)</p>
-<p>[sourcecode language="css"] .foo, x:-moz-any-link { } .foo,
-x:-moz-any-link, x:default { } *:first-child+html .foo{}/*ie7 icin
-normali yazin*/ [/sourcecode]</p>
-<p>Sadece Firefox 3 [sourcecode language="css"]html>;/**/body .foo,
-x:-moz-any-link, x:default { }[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.foo</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span> <span class="p">{</span> <span class="p">}</span> <span class="nc">.foo</span><span class="o">,</span>
+</pre></div>
+
+
+<p>x:-moz-any-link, x:default { } <em>:first-child+html .foo{}/</em>ie7 icin
+normali yazin*/ </p>
+<p>Sadece Firefox 3    :::css
+    html&gt;;/**/body .foo,
+x:-moz-any-link, x:default { }</p>
 <p>Burada önemli olan her tarayıcı farklı görünümünde bu metoda başvurmamak
 gerekir, çözümü olmayan sorunlarla karşılaştığımızda bu kodları
 kullanmalıyız.</p>
 <p>Bu kodları kullanma gereksinim genelde Internet Explorer 6 ve 7 için
 oluyor. Ama nadirende olsa diğer tarayıcıların düzeltmeleride lazım
 oluyor. Bir örnek yapalım</p>
-<p>[sourcecode language="css"] /* Firefox 1 */ .ozelSecici,
-x:-moz-any-link { background-color:#ffd560; } /* Firefox 2 */
-.ozelSecici, x:-moz-any-link { background-color:#ab1b0b; } /* Firefox
-3 */ .ozelSecici, x:-moz-any-link, x:default {
-background-color:#e6831f; } /* Google Chrome and Safari 3.1 */
-body:nth-of-type(1) .ozelSecici{ background-color:#e6f0fa; } /* Opera
-9 ve altı */ html:first-child .ozelSecici{ background-color:#a91614; }
-/* ie7 icin */ *:first-child+html .ozelSecici{
-background-color:#0098de; } /* ie 7 ve alt sürümler icin */
-*:first-child+html .ozelSecici{ background-color:#d4d0c8; } * html
-.ozelSecici{ background-color:#d4d0c8; } /* ie6 ve alti */ * html
-.ozelSecici{ background-color:#996666; }[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="c">/* Firefox 1 */</span> <span class="nc">.ozelSecici</span><span class="o">,</span>
+</pre></div>
+
+
+<p>x:-moz-any-link { background-color:#ffd560; } /<em> Firefox 2 </em>/
+.ozelSecici, x:-moz-any-link { background-color:#ab1b0b; } /<em> Firefox
+3 </em>/ .ozelSecici, x:-moz-any-link, x:default {
+background-color:#e6831f; } /<em> Google Chrome and Safari 3.1 </em>/
+body:nth-of-type(1) .ozelSecici{ background-color:#e6f0fa; } /<em> Opera
+9 ve altı </em>/ html:first-child .ozelSecici{ background-color:#a91614; }
+/<em> ie7 icin </em>/ <em>:first-child+html .ozelSecici{
+background-color:#0098de; } /</em> ie 7 ve alt sürümler icin <em>/
+</em>:first-child+html .ozelSecici{ background-color:#d4d0c8; } * html
+.ozelSecici{ background-color:#d4d0c8; } /<em> ie6 ve alti </em>/ * html
+.ozelSecici{ background-color:#996666; }</p>
 <p>HTML kodu</p>
-<p>[sourcecode language="html"]\&lt;p
-class="ozelSecici">Tarayıcı\&lt;/p>[/sourcecode]</p>
+<div class="codehilite"><pre><span class="nt">&lt;p</span>
+</pre></div>
+
+
+<p>class="ozelSecici"&gt;Tarayıcı</p></p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/css_duzeltme.html" title="tıklayınız.">tıklayınız.</a></p>
 <p>Aynı XHTML kodu için aşağıdaki gibi farklı tarayıcılarda farklı
 sonuçları alırız.</p>
@@ -171,16 +214,16 @@ sonuçları alırız.</p>
 <p>Sayfa Google Chrome 0.3.154.9, Safari 3.1.2, Firefox 3.0.4/2.0.0.14,
 Internet Explorer 7/6/5.5, Opera 9.6 ile test edilmiştir.</p>
 <ul>
-<li><a href="http://www.webdevout.net/css-hacks" title="http://www.webdevout.net/css-hacks">http://www.webdevout.net/css-hacks</a> (*****)</li>
+<li><a href="http://www.webdevout.net/css-hacks" title="http://www.webdevout.net/css-hacks">http://www.webdevout.net/css-hacks</a> (<strong>*</strong>)</li>
 <li><a href="http://www.javascriptkit.com/dhtmltutors/csshacks2.shtml" title="http://www.javascriptkit.com/dhtmltutors/csshacks2.shtml">http://www.javascriptkit.com/dhtmltutors/csshacks2.shtml</a></li>
-<li><a href="static">http://vikaskhera.wordpress.com/2008/08/02/css-hacks-browser-specific-selectors/</a>
+<li><a href="http://vikaskhera.wordpress.com/2008/08/02/css-hacks-browser-specific-selectors/" title="http://vikaskhera.wordpress.com/2008/08/02/css-hacks-browser-specific-selectors/">http://vikaskhera.wordpress.com/2008/08/02/css-hacks-browser-specific-selectors/</a>
     (****)</li>
 <li><a href="http://centricle.com/ref/css/filters/" title="http://centricle.com/ref/css/filters/">http://centricle.com/ref/css/filters/</a> Önemli bir liste(****)</li>
 <li><a href="http://www.siberkultur.com/?q=css-hackleri" title="http://www.siberkultur.com/?q=css-hackleri">http://www.siberkultur.com/?q=css-hackleri</a> (***)</li>
 <li><a href="http://www.sitepoint.com/article/browser-specific-css-hacks/" title="http://www.sitepoint.com/article/browser-specific-css-hacks/">http://www.sitepoint.com/article/browser-specific-css-hacks/</a>
     (***) sürümler eski</li>
 <li><a href="http://www.artypapers.com/csshelppile/category.php?2" title="http://www.artypapers.com/csshelppile/category.php?2">http://www.artypapers.com/csshelppile/category.php?2</a></li>
-<li>[http://rafael.adm.br/css_browser_selector/][]</li>
+<li><a href="http://rafael.adm.br/css_browser_selector/" title="http://rafael.adm.br/css_browser_selector/">http://rafael.adm.br/css_browser_selector/</a></li>
 <li><a href="http://css-discuss.incutio.com/?page=CssHack" title="http://css-discuss.incutio.com/?page=CssHack">http://css-discuss.incutio.com/?page=CssHack</a></li>
 <li><a href="http://snipplr.com/view/7043/firefox-3-css-hack/" title="http://snipplr.com/view/7043/firefox-3-css-hack/">http://snipplr.com/view/7043/firefox-3-css-hack/</a></li>
 <li><a href="http://pornel.net/firefoxhack" title="http://pornel.net/firefoxhack">http://pornel.net/firefoxhack</a></li>
@@ -190,11 +233,7 @@ Internet Explorer 7/6/5.5, Opera 9.6 ile test edilmiştir.</p>
 <li><a href="http://dimox.net/personal-css-hacks-for-ie6-ie7-ie8/">http://dimox.net/personal-css-hacks-for-ie6-ie7-ie8/</a> (ie6, ie7,
     ie8 ve ie9)</li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">vikaskhera</span><span class="p">.</span><span class="n">wordpress</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2008<span class="o">/</span>08<span class="o">/</span>02<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">hacks</span><span class="o">-</span><span class="n">browser</span><span class="o">-</span><span class="n">specific</span><span class="o">-</span><span class="n">selectors</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">vikaskhera</span><span class="p">.</span><span class="n">wordpress</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2008<span class="o">/</span>08<span class="o">/</span>02<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">hacks</span><span class="o">-</span><span class="n">browser</span><span class="o">-</span><span class="n">specific</span><span class="o">-</span><span class="n">selectors</span><span class="o">/</span>&quot;
-</pre></div><p>There are <a href=".././tum-tarayicilar-icin-css-duzeltmelerihack/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././tum-tarayicilar-icin-css-duzeltmelerihack/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -274,11 +313,11 @@ doğrultusunda htcaacces içine girilen yönlendirme ...</p>
 
 </footer><!-- /.post-info -->
                 <p>Bir kodu İE'den gizlemek istiyorsak [sourcecode language='css'] p{
-color:red !important; /* bu kısmı ie6 görmeyecek*/ color:blue; }
-[/sourcecode]sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı
+color:red !important; /<em> bu kısmı ie6 görmeyecek</em>/ color:blue; }
+sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı
 görünecektir. !important css ile etkinlik için kullanılan bir etikettir.
 !important tanımlı özellik daha önce yapılmış aynı özelliğin üzerine
-çıkar. CSS ile etkinlik ...</p>
+çıkar. CSS ile etkinlik hakkında ...</p>
                 <a class="readmore" href=".././css-de-kodumuzu-ie6dan-gizleme/">read more</a>
                 <p>There are <a href=".././css-de-kodumuzu-ie6dan-gizleme/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

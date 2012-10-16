@@ -85,7 +85,7 @@
       <p>![]<a href="javascript:print()"></a>[] || ![]<a href="../static/dokumanlar/css_ile_tablolari_sekillendirmek.pdf">1</a>[]</p>
 <p>Bu makalemizde CSS ile tablolarımızı nasıl daha okunaklı ve güzel
 gösterebiliriz onu anlatmaya çalışacağız. Bildiğiniz gibi CSS'in namını
-arttıran olay web sayfa iskeletinin tablolar ile değilde katman(\&lt;div>)
+arttıran olay web sayfa iskeletinin tablolar ile değilde katman(<div>)
 ile kodlaması ile olmuştur. Ancak burada bir yanlış anlaşılma oluyor
 genelde, oda şudur ki tablolarda bir Xhtml elementidir ve gerektiği
 yerlerde kullanılmalıdır, <strong>amacımız tablo kullanmamak değil web
@@ -103,47 +103,52 @@ Tabloların kullanıldığı yerlere bir kaç örnek verelim:</p>
 okunması zor ve göze hoş gelmeyen yapılardır. Biz CSS ile bu tabloları
 daha okunaklı, kodlaması daha kolay ve güzel hale getireceğiz.</p>
 <p>Tabloların genel yapısı aşağıdaki gibidir.</p>
-<p>[html] \&lt;table> \&lt;tr> \&lt;td>... içerik ...\&lt;/td> \&lt;/tr> \&lt;/table>
-[/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;table&gt;</span> <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td&gt;</span>... içerik ...<span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span> <span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
+
 <p>Yukarıda kullanılan tablo yapısı genelde kullanılan tablo yapısıdır.
 Ancak tüm araçlara uyumu, erişebilirliği ve kolay kodlama için daha
 gelişmiş bir tablo kodlaması kullanılmalıdır. Örnek</p>
-<p>[html] \&lt;table cellspacing="1" class="uzerinde" id="golKrallari"
-summary="Türkiye Süper Ligi’nin son 3 yılında en çok gol atan futbolcu
-listesi"> \&lt;caption>1. LİG TARİHİNDEKİ GOL KRALLARI(SON 3
-YIL)\&lt;/caption> \&lt;thead> \&lt;tr> \&lt;th scope="col" abbr="sezon"
-class="bgYok">SEZON\&lt;/th> \&lt;th scope="col"
-abbr="adsoyad">ADI-SOYADI\&lt;/th> \&lt;th scope="col"
-abbr="takım">TAKIM\&lt;/th> \&lt;th scope="col" abbr="maç">MAÇ
-SAYISI\&lt;/th> \&lt;th scope="col" abbr="gol">ATTIğžI GOL\&lt;/th> \&lt;th
-scope="col" abbr="ortalama">ORTALAMA\&lt;/th> \&lt;/tr> \&lt;/thead>
-\&lt;tbody> \&lt;tr> \&lt;th scope="row" abbr="03-04" class="baslikBir">2003 –
-2004\&lt;/th> \&lt;td class="tabloZRFark">ZAFER BİRYOL\&lt;/td> \&lt;td
-class="tabloZRFark">Konyaspor\&lt;/td> \&lt;td
-class="tabloZRFark">34\&lt;/td> \&lt;td class="tabloZRFark">25\&lt;/td> \&lt;td
-class="tabloZRFark">0.74\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;th scope="row"
-abbr="04-05" class="baslikIki">2004 – 2005\&lt;/th> \&lt;td>FATİH
-TEKKE\&lt;/td> \&lt;td>Trabzonspor\&lt;/td> \&lt;td>34\&lt;/td> \&lt;td>31\&lt;/td>
-\&lt;td>0.91\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;th scope="row" abbr="05-06"
-class="baslikBir">2005 – 2006\&lt;/th> \&lt;td class="tabloZRFark">GÖKHAN
-ÜNAL\&lt;/td> \&lt;td class="tabloZRFark">Kayserispor\&lt;/td> \&lt;td
-class="tabloZRFark">32\&lt;/td> \&lt;td class="tabloZRFark">25\&lt;/td> \&lt;td
-class="tabloZRFark">0.78\&lt;/td> \&lt;/tr> \&lt;/tbody> \&lt;tfoot> \&lt;tr>
-\&lt;td colspan="6">Kaynak: Fatih Futbol Okulu(F.F.O)\&lt;/td> \&lt;/tr>
-\&lt;/tfoot> \&lt;/table> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;table</span> <span class="na">cellspacing=</span><span class="s">&quot;1&quot;</span> <span class="na">class=</span><span class="s">&quot;uzerinde&quot;</span> <span class="na">id=</span><span class="s">&quot;golKrallari&quot;</span>
+</pre></div>
+
+
+<p>summary="Türkiye Süper Ligi’nin son 3 yılında en çok gol atan futbolcu
+listesi"&gt; <caption>1. LİG TARİHİNDEKİ GOL KRALLARI(SON 3
+YIL)</caption> <thead> <tr> <th scope="col" abbr="sezon"
+class="bgYok">SEZON</th> <th scope="col"
+abbr="adsoyad">ADI-SOYADI</th> <th scope="col"
+abbr="takım">TAKIM</th> <th scope="col" abbr="maç">MAÇ
+SAYISI</th> <th scope="col" abbr="gol">ATTIğžI GOL</th> <th
+scope="col" abbr="ortalama">ORTALAMA</th> </tr> </thead>
+<tbody> <tr> <th scope="row" abbr="03-04" class="baslikBir">2003 –
+2004</th> <td class="tabloZRFark">ZAFER BİRYOL</td> <td
+class="tabloZRFark">Konyaspor</td> <td
+class="tabloZRFark">34</td> <td class="tabloZRFark">25</td> <td
+class="tabloZRFark">0.74</td> </tr> <tr> <th scope="row"
+abbr="04-05" class="baslikIki">2004 – 2005</th> <td>FATİH
+TEKKE</td> <td>Trabzonspor</td> <td>34</td> <td>31</td>
+<td>0.91</td> </tr> <tr> <th scope="row" abbr="05-06"
+class="baslikBir">2005 – 2006</th> <td class="tabloZRFark">GÖKHAN
+ÜNAL</td> <td class="tabloZRFark">Kayserispor</td> <td
+class="tabloZRFark">32</td> <td class="tabloZRFark">25</td> <td
+class="tabloZRFark">0.78</td> </tr> </tbody> <tfoot> <tr>
+<td colspan="6">Kaynak: Fatih Futbol Okulu(F.F.O)</td> </tr>
+</tfoot> </table> </p>
 <p><img alt="" src="../static/dokumanlar/tablo01.gif" /></p>
 <p>Tablomuzun içeriği bu kadar kısa olmasına karşın ne kadar okunaksız ve
 kötü göründüğü ortada. Bizim amacımız web sayfaları kodlarken sadece
 bilgi sunmak değildir. Bilgiyi en kullanışlı ve güzel şekilde sunmaktır.</p>
 <p>Burada normal tablo kodlamasından farklı olan etiketleri açıklarsak.
-<strong>\&lt;table></strong> kodu içindeki <strong><em>summary</em></strong> özelliği ile tablo içeriğinin
+<strong><table></strong> kodu içindeki <strong><em>summary</em></strong> özelliği ile tablo içeriğinin
 bir özet açıklaması yapılmıştır. Bu özellik web değilde cep telefonu,
-pda vb. araçlarda tablo okuması için önemlidir. <strong>\&lt;caption></strong> özelliği
+pda vb. araçlarda tablo okuması için önemlidir. <strong><caption></strong> özelliği
 tablonun başlığını oluşturmak için üretilmiş bir etiketitir ve bu amaçla
-burada kullanılmıştır.(Bir çok sitede tablo başlığı için \&lt;p>, \&lt;div>
-ve \&lt;<strong>h</strong>x> kullanılmaktadır. Bu kullanımların yanlış olduğunu burdan
-belirtelim.) <strong>\&lt;th></strong>etiketi bu alanın bir başlık olduğu
-belirtir,<strong>\&lt;th></strong> etiketi içerisinde kullanılan <strong><em>scop="col"</em></strong> ve
+burada kullanılmıştır.(Bir çok sitede tablo başlığı için <p>, <div>
+ve &lt;<strong>h</strong>x&gt; kullanılmaktadır. Bu kullanımların yanlış olduğunu burdan
+belirtelim.) <strong><th></strong>etiketi bu alanın bir başlık olduğu
+belirtir,<strong><th></strong> etiketi içerisinde kullanılan <strong><em>scop="col"</em></strong> ve
 <strong><em>scop="row"</em></strong> özelikleri yine küçük ekranlı araçlar için başlık ile
 içerik arasındaki ilişkiyi göstermesi bakımından önemlidir. <strong><em>abbr</em></strong>
 özelliği ise küçük ekranlarda başlığın sığmaması halinde görüntülenecek
@@ -159,23 +164,32 @@ tasarımına uygun renkler seçilmelidir. Bu yaptığımız web sitesindeki
 tutarlılığı korumamızı sağlayacaktır. Benim seçtiğim renkler:</p>
 <p><img alt="Tablo Renkleri" src="../static/dokumanlar/tablo_renkleri.gif" /></p>
 <p>CSS kodunu yazmaya başlayalım:</p>
-<p>[css] body { font: normal 11px auto "Trebuchet MS", Verdana, Arial,
-Helvetica, sans-serif; } #golKrallari { width: 700px; } [/css]</p>
-<p>Tablonun başlığını(<strong>\&lt;caption></strong>) düzenleyelim</p>
-<p>[css] caption { padding: 0 0 5px 0; font: 14px "Trebuchet MS", Verdana,
-Arial, Helvetica, sans-serif; text-align: right; } [/css]</p>
-<p>Daha sonra kolon başlıklarını <strong>\&lt;th></strong> kodlayalım. Burada başlıkların
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">font</span><span class="o">:</span> <span class="k">normal</span> <span class="m">11px</span> <span class="k">auto</span> <span class="s2">&quot;Trebuchet MS&quot;</span><span class="o">,</span> <span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span>
+</pre></div>
+
+
+<p>Helvetica, sans-serif; } #golKrallari { width: 700px; } </p>
+<p>Tablonun başlığını(<strong><caption></strong>) düzenleyelim</p>
+<div class="codehilite"><pre> <span class="nt">caption</span> <span class="p">{</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">0</span><span class="p">;</span> <span class="k">font</span><span class="o">:</span> <span class="m">14px</span> <span class="s2">&quot;Trebuchet MS&quot;</span><span class="o">,</span> <span class="n">Verdana</span><span class="o">,</span>
+</pre></div>
+
+
+<p>Arial, Helvetica, sans-serif; text-align: right; } </p>
+<p>Daha sonra kolon başlıklarını <strong><th></strong> kodlayalım. Burada başlıkların
 daha güzel görünmesi için kolon başlıklarının zeminine degradeli bir
 zemin resmi koyalım. Ayrıca kolon ve satır başlıklarının birleştiği sol
 üst hücreyi diğerlerinden ayıracak(<strong>.bgYok</strong>) bir zemin resmi ve rengi
 olmadan kodlayalım:</p>
-<p>[css] th { font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica,
-sans-serif; color: #474747; border-bottom:1px solid #E0E0E0;
+<div class="codehilite"><pre> <span class="nt">th</span> <span class="p">{</span> <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">11px</span> <span class="s2">&quot;Trebuchet MS&quot;</span><span class="o">,</span> <span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span>
+</pre></div>
+
+
+<p>sans-serif; color: #474747; border-bottom:1px solid #E0E0E0;
 border-right:1px solid #E0E0E0; border-top:1px solid #E0E0E0;
-letter-spacing: 2px; text-align: left; padding: 6px; background:
-#F3F3F3 url(images/tablo_baslik_zr.gif) repeat-x; } th.bgYok {
-border-top: 0; border-left: 0; border-right: 1px solid #E0E0E0;
-background: none; } [/css]</p>
+letter-spacing: 2px; text-align: left; padding: 6px; background:</p>
+<h1>F3F3F3 url(images/tablo_baslik_zr.gif) repeat-x; } th.bgYok {</h1>
+<p>border-top: 0; border-left: 0; border-right: 1px solid #E0E0E0;
+background: none; } </p>
 <p><img alt="" src="../static/dokumanlar/tablo02.gif" /></p>
 <p>Kolon başlıkları ile satır başlıklarını bir birinden ayıralım. Ayrıca
 Satır başlıklarına bir top ikonu koyalım. Burada dikkat edilmesi gereken
@@ -189,51 +203,74 @@ Tekke'ye denk gelmesi tamamen bir rastlantı dır :-)
 
 </div>
 
-<p>[css] th.baslikIki { border-left: 1px solid #E0E0E0; border-top: 0;
-padding-left:25px; background: #fff url(images/top2.gif) 5px no-repeat;
+<div class="codehilite"><pre> <span class="nt">th</span><span class="nc">.baslikIki</span> <span class="p">{</span> <span class="k">border-left</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#E0E0E0</span><span class="p">;</span> <span class="k">border-top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>padding-left:25px; background: #fff url(images/top2.gif) 5px no-repeat;
 } th.baslikBir { border-left: 1px solid #E0E0E0; border-top: 0;
 padding-left:25px; background: #F3F3F3 url(images/top.gif) 5px
-no-repeat; } [/css]</p>
+no-repeat; } </p>
 <p>Veri içeren hücreler içinde kenarlık, zemin rengi, font rengi ve padding
 tanımlaması yapalım ve burada da birbirini takip eden satırlar için
 farklı renk uygulamasını yapalım. Bunun için bir sınıf
 oluşturup(<strong>.tabloZRFark</strong>) farklı satırlara atayalım.</p>
-<p>[css] td { border-bottom:1px solid #E0E0E0; border-right:1px solid
-#E0E0E0; background: #fff; padding: 6px; color: #474747; font:11px
-"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; } td.tabloZRFark
-{ background: #F3F3F3; color: #474747; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">td</span> <span class="p">{</span> <span class="k">border-bottom</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#E0E0E0</span><span class="p">;</span> <span class="k">border-right</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span>
+</pre></div>
+
+
+<h1>E0E0E0; background: #fff; padding: 6px; color: #474747; font:11px</h1>
+<p background:="background:" color:="color:" id="474747;">"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; } td.tabloZRFark</p>
 <p>Tablonun alt kısmı içinde aşağıdaki kodu yazalım:</p>
-<p>[css] tfoot tr td{ text-align:right; border-left:1px solid #e0e0e0;
-border-bottom:2px solid #e0e0e0; font:italic 9px "Trebuchet MS",
-Verdana, Arial, Helvetica, sans-serif; } [/css]</p>
+<div class="codehilite"><pre> <span class="nt">tfoot</span> <span class="nt">tr</span> <span class="nt">td</span><span class="p">{</span> <span class="k">text-align</span><span class="o">:</span><span class="k">right</span><span class="p">;</span> <span class="k">border-left</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#e0e0e0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>border-bottom:2px solid #e0e0e0; font:italic 9px "Trebuchet MS",
+Verdana, Arial, Helvetica, sans-serif; } </p>
 <p><img alt="" src="../static/dokumanlar/tablo03.gif" /></p>
 <p>Son olarak farenin imleci üzerine gelen satırın zemin rengini
 değiştirerek okunurluluğu arttırmak için aşağıdaki kodları yazalım:</p>
-<p>[css] #golKrallari tr.uzerineGelince td, #golKrallari
-tr.uzerineGelince th{ background:#474747; color:#f3f3f3; } [/css]</p>
+<div class="codehilite"><pre> <span class="nf">#golKrallari</span> <span class="nt">tr</span><span class="nc">.uzerineGelince</span> <span class="nt">td</span><span class="o">,</span> <span class="nf">#golKrallari</span>
+</pre></div>
+
+
+<p>tr.uzerineGelince th{ background:#474747; color:#f3f3f3; } </p>
 <p>fare imlecinin satır üzerine geldiğinde çalışacak javascript kodu:</p>
-<p>[javascript] function uzerinegelince() { if (document.getElementById &amp;&amp;
-document.createTextNode) { var
+<div class="codehilite"><pre> <span class="kd">function</span> <span class="nx">uzerinegelince</span><span class="p">()</span> <span class="p">{</span> <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span> <span class="o">&amp;&amp;</span>
+</pre></div>
+
+
+<p>document.createTextNode) { var
 tables=document.getElementsByTagName('table'); for (var
-i=0;i\&lt;tables.length;i++) { if(tables[i].className=='uzerinde') { var
-trs=tables[i].getElementsByTagName('tr'); for(var j=0;j\&lt;trs.length;j++)
+i=0;i&lt;tables.length;i++) { if(tables[i].className=='uzerinde') { var
+trs=tables[i].getElementsByTagName('tr'); for(var j=0;j&lt;trs.length;j++)
 { if(trs[j].parentNode.nodeName=='TBODY') {
 trs[j].onmouseover=function(){this.className='uzerineGelince';return
 false} trs[j].onmouseout=function(){this.className='';return false} } }
-} } } } [/javascript]</p>
+} } } } </p>
 <p>Bu kodu tetiklemek için:</p>
-<p>[html] \&lt;body onload="uzerinegelince()"> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">&quot;uzerinegelince()&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
 <p>kodunu yazalım. Fare imlecinin üzerine geldiğinde satır zemin rengi ve
 metin renginin değişmesi bölümün de bir iki dikkat edilmesi gereken yer
 var. İlki tablodaki class="<strong>uzerinde</strong>" ve javasciriptteki
 if(tables[i].className=='<strong>uzerinde</strong>') aynı olması, ikincisi
 javascriptteki</p>
-<p>[javascript]
-trs[j].onmouseover=function(){this.className='uzerineGelince';return
-false} [/javascript]</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<p>trs[j].onmouseover=function(){this.className='uzerineGelince';return
+false} </p>
 <p>ile</p>
-<p>[css] #golKrallari tr.uzerineGelince td, #golKrallari
-tr.uzerineGelince th{ background:#474747; color:#f3f3f3; } [/css]</p>
+<div class="codehilite"><pre> <span class="nf">#golKrallari</span> <span class="nt">tr</span><span class="nc">.uzerineGelince</span> <span class="nt">td</span><span class="o">,</span> <span class="nf">#golKrallari</span>
+</pre></div>
+
+
+<p>tr.uzerineGelince th{ background:#474747; color:#f3f3f3; } </p>
 <p>aynı olması. Evet tablomuz sona erdi.</p>
 <p>Sonuç sayfasını görmek için <a href="../static/dokumanlar/tablo_ornek1.html">tıklayınız.</a></p>
 <div class="ekstrabilgi">

@@ -88,12 +88,12 @@ menü yapımı serimize devam ediyoruz. CSS ile yapılan bir çok menü örneği
 mevcut biz burada bunları katagorize edip her bir katagoriye bir örnek
 yaparak mantığını anlatmaya çalıyoruz, mantığını anladıktan sonra CSS
 ile yapılan tüm menüleri yapabileceğimize inanıyorum. <!--more--></p>
-<p>CSS menülerinin vazgeçilmezi sırasız listeleri(\&lt;ul>) kullanarak her
+<p>CSS menülerinin vazgeçilmezi sırasız listeleri(<ul>) kullanarak her
 bir linkin iki resimi bulunan(bir normal hali, diğeri fare imlecinin
 üzerine gelince görünecek resim) menü oluşturacağız.</p>
 <p>Bu menü sayfa yüklenmeden yüklendiği için javascript ile yapılan
 rollover menülerden avantajlıdır ve Internet Explorer'da Temporary
-Internet Files > Settings > 'Every visit to page.' seçeneği seçili
+Internet Files &gt; Settings &gt; 'Every visit to page.' seçeneği seçili
 olan kullanıcılar için biçilmiş kaftandır. Ayrıca CSS ile yapılan
 menülerdeki avantajlara(kolay ekleme ve düzenleme, esnek yapı vb.)
 sahiptir tabi ki.</p>
@@ -107,7 +107,6 @@ anti-aliased metinlerin kullanıldığı durumlarda kullanılır.</p>
 <li><a href="#" title="Muz">Muz</a></li>
 <li><a href="#" title="Kivi">Kivi</a></li>
 </ul>
-<p>[/sourcecode]</p>
 <p>Görüldüğü gibi diğer menü başlangıcından farkı olmayan-bir ek hariç- bir
 kodlama. Hariç olan ek her menu elemanına bir <strong>id</strong> atamamız. Çünkü her
 menü elemanı için bir resim tanımlaması yapacağız. Manav dükkanı
@@ -120,32 +119,32 @@ Firefowrk, PaintShopPro vb. programlar kullanabilrisiniz.</p>
 <p>Menüdeki margin, padding ve imgeleri kaldıralım. Boyutlarını ve konumunu
 tanımlayalım:</p>
 <p>[sourcecode language='css'] ul#menu { height: 54px; width: 500px;
-margin: 0; padding: 0; position: relative; } [/sourcecode]</p>
+margin: 0; padding: 0; position: relative; } </p>
 <p><img alt="" src="../static/images/resimlimenu_01.jpg" /></p>
 <p>Menümüzü yatay olarak sıralamak için</p>
 <p>[sourcecode language='css'] ul#menu li { list-style: none; position:
-absolute; } [/sourcecode]</p>
+absolute; } </p>
 <p><img alt="" src="../static/images/resimlimenu_02.gif" /></p>
 <p>Menü elemanlarının yükseklikleri sabit olduğu için hepsine ortak
 tanımlama yapıyoruz, hepsini kendine has kapsama alanı olması için
 blokladık(display:block) ve konumlandırdık(postion:relative).</p>
 <p>[sourcecode language='css'] ul#menu li a { height: 54px; display:
-block; position:relative; } [/sourcecode]</p>
+block; position:relative; } </p>
 <p>Her menü elemanı için kendi genişliği ve arkaplan resmindeki(menu.jpg)
 yerini belirleyelim.</p>
 <p>[sourcecode language='css'] #elma a{ width:130px; background:
 url(images/menu.jpg) 0 0 no-repeat; } #armut a{ width:142px;
 background: url(images/menu.jpg) -130px 0 no-repeat; } #muz a{
-width:120px; background: url(images/menu.jpg) -272px 0 no-repeat; }
-#kivi a{ width:108px; background: url(images/menu.jpg) -392px 0
-no-repeat; } [/sourcecode]</p>
+width:120px; background: url(images/menu.jpg) -272px 0 no-repeat; }</p>
+<h1>kivi a{ width:108px; background: url(images/menu.jpg) -392px 0</h1>
+<p>no-repeat; } </p>
 <p>ve tüm menü elementlerinin soldan konumu belirleyelim.</p>
-<p>[sourcecode language='css'] #elma {left: 0px;} #armut {left: 130px;}
-#muz {left: 272px;} #kivi {left: 392px;} [/sourcecode]</p>
+<p>[sourcecode language='css'] #elma {left: 0px;} #armut {left: 130px;}</p>
+<h1 392px;="392px;" left:="left:">muz {left: 272px;} #kivi</h1>
 <p><img alt="" src="../static/images/resimlimenu_03.jpg" /></p>
 <p>Resimler üzerindeki metinleri kaldırmak için</p>
 <p>[sourcecode language='css'] ul#menu li a { text-indent: -9999px;
-text-decoration: none; } [/sourcecode]</p>
+text-decoration: none; } </p>
 <p><img alt="" src="../static/images/resimlimenu_04.jpg" /></p>
 <p>Menümüz tamam. şžimdi de rollover efekti vermek için <strong>a:hover</strong>
 arkaplan resimlerinin konumunu belirleyelim. Konumunu yazarken sadece
@@ -155,7 +154,7 @@ url(images/menu.jpg) 0 -54px no-repeat; } #armut a:hover{ width:142px;
 background: url(images/menu.jpg) -130px -54px no-repeat; } #muz
 a:hover{ width:120px; background: url(images/menu.jpg) -272px -54px
 no-repeat; } #kivi a:hover{ width:108px; background:
-url(images/menu.jpg) -392px -54px no-repeat; } [/sourcecode]</p>
+url(images/menu.jpg) -392px -54px no-repeat; } </p>
 <p><img alt="" src="../static/images/resimlimenu_06.jpg" /></p>
 <p>Son olarakta bir bölümde olduğunda o bölümün aktif görünmesini sağlamak
 için, genel de bunu için a:hover durumu normal durum olarak tanımlanır.
@@ -167,12 +166,12 @@ Bizde öyle yapalım. Mesela <strong>Muz</strong> bölümünde olduğumuzu farz 
 <li><a href="#" title="Muz">Muz</a></li>
 <li><a href="#" title="Kivi">Kivi</a></li>
 </ul>
-<p>[/sourcecode] [sourcecode language='css'] #elma a.secili{ width:130px;
+<p>[sourcecode language='css'] #elma a.secili{ width:130px;
 background: url(images/menu.jpg) 0 -54px no-repeat; } #armut a.secili{
-width:142px; background: url(images/menu.jpg) -130px -54px no-repeat; }
-#muz a.secili{ width:120px; background: url(images/menu.jpg) -272px
--54px no-repeat; } #kivi a.secili{ width:108px; background:
-url(images/menu.jpg) -392px -54px no-repeat; } [/sourcecode]
+width:142px; background: url(images/menu.jpg) -130px -54px no-repeat; }</p>
+<h1>muz a.secili{ width:120px; background: url(images/menu.jpg) -272px</h1>
+<p>-54px no-repeat; } #kivi a.secili{ width:108px; background:
+url(images/menu.jpg) -392px -54px no-repeat; } 
 <iframe src="../static/dokumanlar/menu_5.html" width="500" height="110" frameborder="0" scrolling="no"></iframe></p>
 <p>Örnek kodları indirmek için <a href="../static/dokumanlar/menu5.zip">tıklayınız.</a></p>
 </p>

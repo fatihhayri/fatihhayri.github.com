@@ -117,77 +117,103 @@ için kullanmamız içindir, yayına atarken bu dosyayı eklemeye gerek yok.</p>
 görünmeyecektir, sadece web sunucusu kurulu makinelerde çalışacaktır. Bu
 daha önceden meydana gelen bazı sorunları gidermek için eklenmiş bir
 özelliktir.</p>
-<p>[sourcecode language="css"] \&lt;link rel="stylesheet"
-href="style/sIFR-screen.css" type="text/css" media="screen" /> \&lt;link
-rel="stylesheet" href="style/sIFR-print.css" type="text/css"
-media="print" /> \&lt;script type="text/javascript"
-src="js/sifr.js">\&lt;/script> \&lt;script type="text/javascript"
-src="js/sifr-config.js">\&lt;/script> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span>
+</pre></div>
+
+
+<p>href="style/sIFR-screen.css" type="text/css" media="screen" /&gt; <link
+rel="stylesheet" href="../static/style/sIFR-print.css" type="text/css"
+media="print" /> <script type="text/javascript"
+src="../static/js/sifr.js"></script> <script type="text/javascript"
+src="../static/js/sifr-config.js"></script> </p>
 <p>Yukarıdaki bir ekleme ile sIFR harici dosyalarını sayfamıza eklemeliyiz.</p>
 <p>Bu dosyaları yerlerine koyup sayfamıza kodu ekledikten sonra yapacağımız
 ilk şey <strong>sifr-config.js</strong> dosyasını açıp swf dosyamızın yerini doğru
 bir şekilde eklemek olmalıdır.</p>
-<p>[sourcecode language="javascript"] var yazi_tipi = { src:
-'/dosya_yolu/yazi_tipi.swf' }; sIFR.activate(yazi_tipi);
-sIFR.replace(yazi_tipi, { selector: 'h2' }); [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="kd">var</span> <span class="nx">yazi_tipi</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">src</span><span class="o">:</span>
+</pre></div>
+
+
+<p>'/dosya_yolu/yazi_tipi.swf' }; sIFR.activate(yazi_tipi);
+sIFR.replace(yazi_tipi, { selector: 'h2' }); </p>
 <p>Şeklinde örnek aldığımız kodlardan <strong>yazi_tipi</strong> adı geçen yerlere
 kendi dosya ismimizi yazmalıyız.</p>
 <p><strong>sIFR metnine Stil Vermek</strong></p>
 <p>sIFR ile eklediğimiz metinlere css kodları ile özellik tanımı
 yapabiliriz. Alışık olduğumuz CSS özellik tanımlarını kullanma olanağı
 vererek bize çok büyük avantaj sağlıyor.</p>
-<p>[sourcecode language="javascript"] sIFR.replace(yazi_tipi, { selector:
-'h2', css: [ '.sIFR-root { font-size:36px; font-weight:bold;
-color:#ff0000; letter-spacing: -1.5}' ] }); [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span> <span class="nx">selector</span><span class="o">:</span>
+</pre></div>
+
+
+<p>'h2', css: [ '.sIFR-root { font-size:36px; font-weight:bold;
+color:#ff0000; letter-spacing: -1.5}' ] }); </p>
 <p>Örnek olması için yukarıda kodları yazdım, ancak bu kısma istediğimiz
 kodları ekleyebiliriz. letter-spacing tanımı ile harfler arası mesafeyi
 ayarlayabiliriz. Değeri verirken birimini yazmıyoruz. Benzer şekilde bir
 çok özellik ekleyebiliriz.</p>
 <p><strong>Satır yüksekliğini ayarlamak</strong></p>
-<p>[sourcecode language="javascript"] sIFR.replace(yazi_tipi, { selector:
-'h2', css: [ '.sIFR-root { font-size:36px; font-weight:bold; leading: 1;
-letter-spacing: -1.5}' ] }); [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span> <span class="nx">selector</span><span class="o">:</span>
+</pre></div>
+
+
+<p>'h2', css: [ '.sIFR-root { font-size:36px; font-weight:bold; leading: 1;
+letter-spacing: -1.5}' ] }); </p>
 <p><strong>leading: 1</strong> tanımı satır yüksekliğini(line-height tanımı yerine
 kullanılır) ayarlamak için kullanılır. Değer verilirken birim
 kullanılmaz. Eksi değer alabilir.</p>
 <p><strong>sIFR metinlerine bağlantı eklemek ve stil tanımlarını yapmak</strong></p>
-<p>sIFR uygulana metinlere bağlantı(\&lt;a>) ekleyebiliriz, bağlantı
+<p>sIFR uygulana metinlere bağlantı(<a>) ekleyebiliriz, bağlantı
 eklediğimizde bunun için birde stil tanımı yapmalıyız.</p>
 <p>HTML kodu</p>
-<p>[sourcecode language="html"] \&lt;h2>\&lt;a href="#">Başlık\&lt;/a>\&lt;/h2>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Başlık<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+</pre></div>
+
+
 <p>sifr-config.js dosyasında</p>
-<p>[sourcecode language="javascript"] sIFR.replace(yazi_tipi, { selector:
-'h2' ,css: [ '.sIFR-root { text-align: center; font-weight: bold; }' ,'a
+<div class="codehilite"><pre> <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span> <span class="nx">selector</span><span class="o">:</span>
+</pre></div>
+
+
+<p>'h2' ,css: [ '.sIFR-root { text-align: center; font-weight: bold; }' ,'a
 { text-decoration: none; }' ,'a:link { color: #000000; }' ,'a:hover {
-color: #CCCCCC; }' ] }); [/sourcecode]</p>
+color: #CCCCCC; }' ] }); </p>
 <p>Yukarıdaki tanımlama ile eklediğimiz bağlantının farklı durumları içinde
 tanım yapabiliyoruz. </p>
 <p>Benzer şekilde sIFR uyguladığımız eleman içindeki elemanlarada stil
 ekleyebiliriz. Örneğin</p>
-<p>[sourcecode language="javascript"] sIFR.replace(yazi_tipi, { selector:
-'h2', css: [ '.sIFR-root { font-size:24px; font-weight:normal;
+<div class="codehilite"><pre> <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span> <span class="nx">selector</span><span class="o">:</span>
+</pre></div>
+
+
+<p>'h2', css: [ '.sIFR-root { font-size:24px; font-weight:normal;
 color:#9f0000; }', 'em { font-style:italic; }', 'strong {
-font-weight:bold; color:#333333; }' ] }); [/sourcecode]</p>
+font-weight:bold; color:#333333; }' ] }); </p>
 <p>Böylece sIFR içindeki her elemana farklı renk tanımı yapabiliriz.</p>
 <p><strong>Saydam(transparent) Özelliği Vermek</strong></p>
 <p>sIFR ile eklediğimiz metnin altında kalan alanlar nedeni ile bazen
 saydam olarak eklemek isteriz.  Yapmamız gereken çok basittir. Bir satır
 kod ile ardalanı saydam yapabiliriz.</p>
-<p>[sourcecode language="javascript"] sIFR.replace(yazi_tipi, { selector:
-'h2', css: [ '.sIFR-root { font-size:36px; font-weight:bold;
-color:#ff0000; }' ], wmode: 'transparent' }); [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span> <span class="nx">selector</span><span class="o">:</span>
+</pre></div>
+
+
+<p>'h2', css: [ '.sIFR-root { font-size:36px; font-weight:bold;
+color:#ff0000; }' ], wmode: 'transparent' }); </p>
 <p><strong>wmode: 'transparent'</strong>eklemesi işimizi görecektir.</p>
 <p><strong>Dinamik Oluşturulan İçerikteki Metinlere sFIR Uygulamak</strong></p>
 <p>Örneğin sekmeli bir içeriğin içindeki başlıklara sIFR uyguladığımızda
 sFIR sayfa yüklendiğinde uygulandığından diğer sekmelerdeki metinlere
 uygulanmayacaktır. Diğer sekmelerdeki metinlerede uygulamak için her
 sekme için uygulanan sFIR fonksiyonu çağırmalıyız.</p>
-<p>[sourcecode language="javascript"] \$(tabs).click(function () { // her
-sekme icin uygulana tanimlar //diger eylemler // uygulana sFIR
+<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="nx">tabs</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="c1">// her</span>
+</pre></div>
+
+
+<p>sekme icin uygulana tanimlar //diger eylemler // uygulana sFIR
 fonksiyonunun tetikliyoruz. sIFR.replace(baslik, { selector: 'h1'
 ,wmode: 'transparent' ,css: [ '.sIFR-root { margin:0; color: #009200;
-font-size:20px;}' ] }); }); [/sourcecode]</p>
+font-size:20px;}' ] }); }); </p>
 <h3>Sonuç</h3>
 <p>Birçok projemde kullandım sFIR metodunu. Gördüklerim buraya
 yazmayaçalıştım. Eğer sizinde eklemek istediğiniz ipuçları varsa yorum
@@ -195,13 +221,11 @@ kısmınaeklerseniz güzel bir dokümantasyon oluşturmuş oluruz.</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/" title="http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/">http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/</a></li>
-<li><a href="../static">http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/</a></li>
+<li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/" title="http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/">http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/</a></li>
 </ul>
 </p>
 
-<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/sifr1.gif" title="sifr" />]: http://www.fatihhayrioglu.com/wp-content/sifr1.gif
-    http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/
-    "http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/"</p>
+<p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/sifr1.gif" title="sifr" />]: http://www.fatihhayrioglu.com/wp-content/sifr1.gif</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

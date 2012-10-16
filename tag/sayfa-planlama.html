@@ -112,19 +112,24 @@ değinmeyeceğiz.</p>
 <h6>Sabit Genişlikteki Sayfalarda İki Kolonlu Yapı</h6>
 <p><img alt="" src="static/images/ikikolon.gif" /></p>
 <p>İlk olarak XHTML kodlarını yazalım.</p>
-<p>[sourcecode language="html"] \&lt;div id="sayfa"> \&lt;div id="ustAlan"> ...
-\&lt;/div> \&lt;div id="icerik"> ... \&lt;/div> \&lt;div id="anaMenu"> ...
-\&lt;/div> \&lt;div id="altAlan"> ... \&lt;/div> \&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sayfa&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span> ...
+</pre></div>
+
+
+<p></div> <div id="icerik"> ... </div> <div id="anaMenu"> ...
+</div> <div id="altAlan"> ... </div> </div> </p>
 <p>Önemli bir nokta varki oda <strong>icerik</strong> alanının <strong>anaMenu</strong>'den önce
 gelmesi gerekmektedir. Erişebilirlilik(yani tüm araçlarda sayfamızın en
 iyi şekilde görünmesi) için <strong>icerik</strong> alanının <strong>anaMenu</strong>'den önce
 gelmesi gerekir. Çünkü pda ve cep telefonu gibi araçlarda katmanların
 sıralamasına göre ekranda görüneceğinden, ilk olarak içerik alanının
 görünmesi tercih sebebidir. şžimdi css kodumuzu yazarsak:</p>
-<p>[sourcecode language="css"] #sayfa { width:768px; } #ustAlan { width:
-768px; } #icerik { float: right; width: 568px; } #anaMenu { float:
-left; width: 200px; } #altAlan { width: 768px; clear: both; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nf">#sayfa</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">768px</span><span class="p">;</span> <span class="p">}</span> <span class="nf">#ustAlan</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span>
+</pre></div>
+
+
+<p>768px; } #icerik { float: right; width: 568px; } #anaMenu { float:
+left; width: 200px; } #altAlan { width: 768px; clear: both; }</p>
 <p>Bu kodu yazdıktan sonra sayfamız başta gördüğümüz şekildeki duruma
 gelmiş bulunmaktadır. Burada yazdığımız kodda <strong>"icerik</strong>" alanının
 sağa, <strong>"anaMenu"</strong> alanının sola yerleşmesi için genişlik değeri ve
@@ -133,8 +138,10 @@ altında kalması için <strong>clear:both</strong> tanımlaması yapılmıştı
 <p>[<acronym title="Stil şablonu">CSS</acronym> ile sayfalarımızı ve
 elementlerimizi ortalamak][] bölümündeki metodu uygulayarak sayfamızı
 ortalayabilriz.</p>
-<p>[sourcecode language="css"] #sayfa{ width: 768px; margin:0 auto; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nf">#sayfa</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">768px</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Örnek kodları görmek için <a href="static/dokumanlar/sabit_genislikli_websitesi.html">tıklayınız.</a></p>
 <p>Sabit Genişlikteki Sayfalarda en çok rastlanan problemler sabit genişlik
 uygulanan katmanlara pading, margin ve border değeri atandığında IE5 de
@@ -153,10 +160,13 @@ sayfalarda sayfa genişliği web tarayıcısının boyutu ile bağlantılıdır.
 Web tarayıcısının genişliği arttırıldığında sayfa genişliği artacak, web
 tarayıcısının genişliği azaltıldığında sayfa genişli azalacaktır. Kodu
 yazarsak:</p>
-<p>[sourcecode language="css"] #sayfa{ width:83%; margin:0 auto; }
-#ustAlan { width: 100%; } #anaMenu { float: left; width: 30%; }
-#icerik { float: right; width: 70%; } #altAlan { width: 100%; clear:
-both; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nf">#sayfa</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">83</span><span class="o">%</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<h1 30%;="30%;" float:="float:" left;="left;" width:="width:">ustAlan { width: 100%; } #anaMenu</h1>
+<h1>icerik { float: right; width: 70%; } #altAlan { width: 100%; clear:</h1>
+<p>both; } </p>
 <p>Örnek kodu görmek için <a href="static/dokumanlar/elastik_ikikolonlu_websitesi.html">tıklayınız.</a></p>
 <h6>3 Kolonlu Yapı</h6>
 <p><img alt="" src="static/images/uckolon.gif" /></p>
@@ -165,17 +175,23 @@ kolonlu yapının kodlamasında fazla bir fark yoktur. Tek yapamız gereken
 yapıyı iki kolonlu bölümlere ayırmaktır, bunun için sağdaki iki kolonu
 bir kapsayıcı katman(KapsayiciAlan) içine alarak yapıyı iki kolonlu hale
 getirdik(anaMenu ve KapsayiciAlan)</p>
-<p>[sourcecode language="css"] #sayfa{ width:768px; margin:0 auto; }
-#ustAlan { width:768px; } #anaMenu { float: left; width: 200px; }
-#KapsayiciAlan { float: right; width: 568px; } #icerik { float: left;
-width: 368px; } #BannerAlani{ float: right; width: 200px; } #altAlan {
-width:768px; clear: both; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nf">#sayfa</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">768px</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<h1 200px;="200px;" float:="float:" left;="left;" width:="width:">ustAlan { width:768px; } #anaMenu</h1>
+<h1>KapsayiciAlan { float: right; width: 568px; } #icerik { float: left;</h1>
+<p>width: 368px; } #BannerAlani{ float: right; width: 200px; } #altAlan {
+width:768px; clear: both; } </p>
 <p>Ve ayrıca xhtml koda da aşağıdaki değişiklikleri yaptığımızda üç kolonlu
 yapıyı elde ederiz.</p>
-<p>[sourcecode language="html"] \&lt;div id="sayfa"> \&lt;div id="ustAlan"> ...
-\&lt;/div> \&lt;div id="KapsayiciAlan"> \&lt;div id="icerik"> ... \&lt;/div>
-\&lt;div id="BannerAlani"> ... \&lt;/div> \&lt;/div> \&lt;div id="anaMenu"> ...
-\&lt;/div> \&lt;div id="altAlan"> ... \&lt;/div> \&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sayfa&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span> ...
+</pre></div>
+
+
+<p></div> <div id="KapsayiciAlan"> <div id="icerik"> ... </div>
+<div id="BannerAlani"> ... </div> </div> <div id="anaMenu"> ...
+</div> <div id="altAlan"> ... </div> </div> </p>
 <p>Örneği görmek için <a href="static/dokumanlar/sabit_uckolonlu_websitesi.html">tıklayınız.</a></p>
 <p>Aynı şekilde Likit sayfalarda üç kolonlu yapı oluşturabiliriz. Yapmamız
 gerek tek şey değerleri (%) olarak vermektir.</p>

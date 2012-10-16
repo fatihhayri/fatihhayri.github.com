@@ -128,14 +128,17 @@ ama Allah'tan genelde basit yapılara sahip oldukları için sorun olmuyor.</p>
 <p>Birçok mailng html çevrildikten sonra toplu olarak gönderim için çeşitli
 programlar kullanılır. Bu programların göndericiler için çeşitli
 kısıtlamaları vardır. Bunlardan bir tanesi, genelde hazırlana html
-kodunun sadece \&lt;body> etiketleri içerisindeki kodu eklememize izin
+kodunun sadece <body> etiketleri içerisindeki kodu eklememize izin
 vermesidir.</p>
 <p>Bu nedenle dışarıdan eklenen .css dosyaları mailinglerimize ekleyemeyiz.
 Bunu destekleyen programlar var ise de benim çalıştığım birçok müşteride
 bu programlar yoktu. Bundan dolayıdır ki css kodlarımızı satıriçi
 yazmalıyız. Aşağıdaki örnekte görüldüğü gibi</p>
-<p>[html] \&lt;p style="font-family:Arial; font-size:12px; color:#999">Lorem
-ipsum dolor sit amet, consectetur adipiscing elit. \&lt;/p> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;font-family:Arial; font-size:12px; color:#999&quot;</span><span class="nt">&gt;</span>Lorem
+</pre></div>
+
+
+<p>ipsum dolor sit amet, consectetur adipiscing elit. </p> </p>
 <p>Tabi kodları yazarken yukarıdaki destek listelerini dikkate almalıyız.</p>
 <p><strong>Resimleri ve Bağlantıları İnternet Üzerinden Verin</strong></p>
 <p>Mailingler web siteleri gibi html çevrilseler de kullanıcının e-posta
@@ -146,15 +149,24 @@ konusudur.</p>
 bilgisayarına yükleyemeyeceğimiz için bunları kendi sitemiz üzerine
 yükleyip hazırladığımız mailing içeriğine bu resimleri kendi sitemiz
 üzerinde okutmalıyız. Örneğin</p>
-<p>[html] \&lt;img src="http://www.firmaadi.com/mailings/images/ustalan.jpg"
-width="450" height="120" alt="Firma_Adi" /> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://www.firmaadi.com/mailings/images/ustalan.jpg&quot;</span>
+</pre></div>
+
+
+<p>width="450" height="120" alt="Firma_Adi" /&gt; </p>
 <p>Web siteleri gibi hareket edemeyeceğimiz diğer bir konu ise bağlantıları
 yerel olarak vermeyeceğimiz konusudur. Bağlantılarımızıda yerel
 veremeyiz örneğin</p>
-<p>[html] \&lt;a href="hakkimizda.html">Hakkımızda\&lt;/a> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;hakkimizda.html&quot;</span><span class="nt">&gt;</span>Hakkımızda<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+
+
 <p>Şeklinde bir bağlantı kırık bir bağlantı olacaktır. Bunun yerine</p>
-<p>[html] \&lt;a
-href="http://www.firmaadi.com/hakkimizda.html">Hakkımızda\&lt;/a> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;a</span>
+</pre></div>
+
+
+<p>href="http://www.firmaadi.com/hakkimizda.html"&gt;Hakkımızda</a> </p>
 <p>Şekline olmalıdır.</p>
 <p><strong>Test Etmeyi Unutmayın</strong></p>
 <p>Mailing yapılarının web sitelerinde daha sıkıntılı yapıları vardır.
@@ -196,8 +208,8 @@ niteleme ihtimali yüksektir.</p>
 <p>Ayrıca birçok mailing programı flash desteklemez bu nedenle mailing
 kodlarımıza flash import edemeyiz.</p>
 <p>Bazı HTML etiketlerini kullanılması anlamsız ve sorun yaratabilir. Bu
-etiketleri sıralayalım; \&lt;META>, \&lt;BASE>, \&lt;LINK>, \&lt;SCRIPT>,
-\&lt;FRAMESET>, \&lt;FRAME>, \&lt;IFRAME> ve yorum kodu \&lt;!-- yorum --></p>
+etiketleri sıralayalım; <META>, <BASE>, <LINK>, <SCRIPT>,
+<FRAMESET>, <FRAME>, <IFRAME> ve yorum kodu <!-- yorum --></p>
 <p><strong>Spam Mailden Kaçınmak için Yapmamız Gerekenler</strong></p>
 <p>Spam mailller internet dünyasının baş belalarında biridir. Birçok mail
 programı spam mailleri en aza indirmek için birçok filtre
@@ -212,7 +224,7 @@ aramızın açılmasına neden olabilir.</p>
     www.sirketadi.com/xxx şekliden adreslere gitmeli.</li>
 <li>Domaininiz karalistede mi değil mi kontrol edin. Çeşitli siteler var
     bu konuda tarama yapabileceğiniz.
-    [http://www.blacklistmonitoring.com/lookup/email_blacklist_IP_address_lookup.php][]</li>
+    <a href="http://www.blacklistmonitoring.com/lookup/email_blacklist_IP_address_lookup.php" title="http://www.blacklistmonitoring.com/lookup/email_blacklist_IP_address_lookup.php">http://www.blacklistmonitoring.com/lookup/email_blacklist_IP_address_lookup.php</a></li>
 <li>Mailiniz yüklenmemesi durumunda alternatif bir bağlantı oluşturun ve
     mailinizi altına ekleyin.</li>
 <li>Kullanıcıların listenizden çıkabilmelerin sağlayacak bir link
@@ -241,27 +253,19 @@ olacaktır.</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://www.viget.com/inspire/tips-for-coding-html-email/" title="http://www.viget.com/inspire/tips-for-coding-html-email/">http://www.viget.com/inspire/tips-for-coding-html-email/</a></li>
-<li><a href="static">http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/</a></li>
+<li><a href="http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/" title="http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/">http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/</a></li>
 <li><a href="http://www.anandgraves.com/html-email-guide" title="http://www.anandgraves.com/html-email-guide">http://www.anandgraves.com/html-email-guide</a> (iyi)<br />
 </li>
 <li><a href="http://www.email-standards.org/" title="http://www.email-standards.org/">http://www.email-standards.org/</a> (iyi)<br />
 </li>
-<li>[http://www.mailchimp.com/articles/email_marketing_guide/][] (iyi)</li>
+<li><a href="http://www.mailchimp.com/articles/email_marketing_guide/" title="http://www.mailchimp.com/articles/email_marketing_guide/">http://www.mailchimp.com/articles/email_marketing_guide/</a> (iyi)</li>
 <li><a href="http://css-tricks.com/using-css-in-html-emails-the-real-story/" title="http://css-tricks.com/using-css-in-html-emails-the-real-story/">http://css-tricks.com/using-css-in-html-emails-the-real-story/</a></li>
 <li><a href="http://www.email-standards.org/clients/" title="http://www.email-standards.org/clients/">http://www.email-standards.org/clients/</a></li>
 <li><a href="http://www.campaignmonitor.com/css/" title="http://www.campaignmonitor.com/css/">http://www.campaignmonitor.com/css/</a></li>
 <li><a href="http://www.xavierfrenette.com/articles/css-support-in-webmail/" title="http://www.xavierfrenette.com/articles/css-support-in-webmail/">http://www.xavierfrenette.com/articles/css-support-in-webmail/</a></li>
-<li><a href="static">http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html</a></li>
+<li><a href="http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html" title="http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html">http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">blacklistmonitoring</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">lookup</span><span class="o">/</span><span class="n">email_blacklist_IP_address_lookup</span><span class="p">.</span><span class="n">php</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">blacklistmonitoring</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">lookup</span><span class="o">/</span><span class="n">email_blacklist_IP_address_lookup</span><span class="p">.</span><span class="n">php</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">thinkvitamin</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">features</span><span class="o">/</span><span class="n">design</span><span class="o">/</span><span class="n">ensuring</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">html</span><span class="o">-</span><span class="n">emails</span><span class="o">-</span><span class="n">look</span><span class="o">-</span><span class="n">great</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">get</span><span class="o">-</span><span class="n">delivered</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">thinkvitamin</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">features</span><span class="o">/</span><span class="n">design</span><span class="o">/</span><span class="n">ensuring</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">html</span><span class="o">-</span><span class="n">emails</span><span class="o">-</span><span class="n">look</span><span class="o">-</span><span class="n">great</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">get</span><span class="o">-</span><span class="n">delivered</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">topluemailgonderimi</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">spamadusmedennasiltopluemailgonderilir</span><span class="p">.</span><span class="n">html</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">topluemailgonderimi</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">spamadusmedennasiltopluemailgonderilir</span><span class="p">.</span><span class="n">html</span>&quot;
-</pre></div><p>There are <a href=".././html-mailing-1-mailing-kodlarken-dikkat-edilmesi-gerekenler/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././html-mailing-1-mailing-kodlarken-dikkat-edilmesi-gerekenler/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -383,10 +387,11 @@ hareket etmiyor.) Sistemimizdeki ftp bilgilerini alıp bu bilgiler
 </footer><!-- /.post-info -->
                 <p>Bildiğiniz gibi Microsoft Internet Explorer 8'i geçen hafta duyurdu.
 Eğer sitelerimiz IE8'e tam olarak uygun değilse sayfamıza bir satırlık
-bir kod ekleyerek bu sorunu çözebiliyoruz. [sourcecode language="html"]
-\&lt;meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-[/sourcecode] Kodunu sitemize eklememiz yeterli. Bu META etiketi
-sayesinde Sayfalarımız Internet Explorer 7'de ...</p>
+bir kod ekleyerek bu sorunu çözebiliyoruz.  :::html</p>
+<p><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+ Kodunu sitemize eklememiz yeterli. Bu META etiketi
+sayesinde Sayfalarımız Internet Explorer 7'de görünüyor gibi
+yorumlanacaktır. Bir projede meta'ların ilk başına ...</meta></p>
                 <a class="readmore" href=".././internet-explorer-8i-7-gibi-yorumlama-kodu/">read more</a>
                 <p>There are <a href=".././internet-explorer-8i-7-gibi-yorumlama-kodu/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -420,12 +425,14 @@ sayesinde Sayfalarımız Internet Explorer 7'de ...</p>
 
 
 </footer><!-- /.post-info -->
-                <p>Sitelerimizde \&lt;iframe> kullandığımızda Internet Explorer bu \&lt;iframe>
+                <p>Sitelerimizde <iframe> kullandığımızda Internet Explorer bu <iframe>
 ardalanını beyaz bir blok şeklinde görüntüleyecektir. Bu Ardalanı beyaz
 olan sitelerde sorun değil ama ardalanında resim veya farklı renk olan
-sitelerde sorun çıkarıyor. Bu durumu engellemek için \&lt;iframe> koduna
+sitelerde sorun çıkarıyor. Bu durumu engellemek için <iframe> koduna
 çok basit bir özellik eklemesi yeterli oluyor. [sourcecode
-language="html"] \&lt;iframe allowtransparency="true">\&lt;/iframe ...</p>
+language="html"] <iframe allowtransparency="true"></iframe>
+ Örnek:
+http://samples.msdn.microsoft.com/workshop ...</iframe></iframe></iframe></p>
                 <a class="readmore" href=".././ie-iframe-ardalaninda-beyaz-renk-sorunu/">read more</a>
                 <p>There are <a href=".././ie-iframe-ardalaninda-beyaz-renk-sorunu/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -463,7 +470,7 @@ language="html"] \&lt;iframe allowtransparency="true">\&lt;/iframe ...</p>
 değerlerin hafızada tutulmasını istemeyiz. Örneğin kullanıcı adı vb.
 Bunun için çok kısa bir kod eklememiz yeterlidir.</p>
 <ol>
-<li>\&lt;input type="text" autocomplete="off" /></li>
+<li><input type="text" autocomplete="off" /></li>
 </ol>
 </p>
                 <a class="readmore" href=".././xhtml-ipuclari-4/">read more</a>
@@ -499,14 +506,14 @@ Bunun için çok kısa bir kod eklememiz yeterlidir.</p>
 
 
 </footer><!-- /.post-info -->
-                <p>Bir form ekledik ancak bu formu \&lt;input type="submit" .../> elementi
+                <p>Bir form ekledik ancak bu formu <input type="submit" .../> elementi
 ile değil de, resimden linkle formu göndermek için:</p>
 <ol>
-<li>\&lt;a href="#" onclick="document.formun_adi.submit(); ">resim\&lt;/a></li>
+<li><a href="#" onclick="document.formun_adi.submit(); ">resim</a></li>
 </ol>
 <p>Aynı şekilde silme işlemi için:</p>
 <ol>
-<li>\&lt;a href="#" onclick="document.formun_adi.reset(); ">resim\&lt;/a></li>
+<li><a href="#" onclick="document.formun_adi.reset(); ">resim</a></li>
 </ol>
 <p>kullanılabilir.</p>
 </p>
@@ -543,8 +550,8 @@ ile değil de, resimden linkle formu göndermek için:</p>
 
 
 </footer><!-- /.post-info -->
-                <p>Bir şeyin karesinin alırken (x)html'de \&lt;sup> etiketi yerine alt+253
-kullanın. Küp için alt+251 tuş kombinasyonlarını kullanarak \&lt;sup> ile
+                <p>Bir şeyin karesinin alırken (x)html'de <sup> etiketi yerine alt+253
+kullanın. Küp için alt+251 tuş kombinasyonlarını kullanarak <sup> ile
 oluşan satır yüksekliği sorununu halletmiş oluruz.</p>
                 <a class="readmore" href=".././xhtml-ipuclari-2/">read more</a>
                 <p>There are <a href=".././xhtml-ipuclari-2/#disqus_thread">comments</a>.</p>
@@ -582,11 +589,11 @@ oluşan satır yüksekliği sorununu halletmiş oluruz.</p>
                 <p>IE 6.0+'daki image bar 'ı(REsimlerin üzerine gelince sağ üstte çıkan
 bar) kaldırmak için</p>
 <ol>
-<li>\&lt;meta http-equiv="image-toolbar" content="no"></li>
+<li><meta http-equiv="image-toolbar" content="no"></li>
 </ol>
 <p>eklenmeli, ayrıca her resim için ayrı ayrı atmada yapılabilir.</p>
 <ol>
-<li>\&lt;img src="deneme.gif" width="450" height="450" alt="Dene"
+<li><img src="static/deneme.gif" width="450" height="450" alt="Dene"
     galleryimg="no" /></li>
 </ol>
 </p>

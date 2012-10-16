@@ -88,17 +88,16 @@ gerekir.<!--more--></p>
 <p>Seçici(Selector) ve Döküman arasındaki ilişkiyi anlayabilmemiz için,
 dökümanların nasıl planlandığını tekrar gözden geçirmemiz gerekir.
 Aşağıdaki basit (X)HTML dökümanı üzerine biraz düşünelim: [sourcecode
-language="html"] \&lt;html> \&lt;head> \&lt;title> CSS (X)HTML Hiyerarşisi
-\&lt;/title> \&lt;/head> \&lt;body> \&lt;h1>CSS\&lt;em>(X)HTML Hiyerarşisi
-\&lt;/em>\&lt;/h1> Sitemize hoş geldiniz \&lt;em>Merhaba\&lt;/em>biz
-\&lt;strong>sizler için \&lt;a href="konu.html"> bazı \&lt;em>önemli\&lt;/em>
-konular \&lt;/a>\&lt;/strong>! hazırladık \&lt;ul> \&lt;li>Konu Başlıkları :
-\&lt;ul> \&lt;li>\&lt;strong>Asıl\&lt;/strong> Giriş\&lt;/li> \&lt;li>Önsöz\&lt;/li>
-\&lt;li>\&lt;em>ilk\&lt;/em> bölüm: \&lt;ol> \&lt;li>Elma\&lt;/li>
-\&lt;li>Armut\&lt;/li> \&lt;li>Karpuz\&lt;/li> \&lt;/ol> \&lt;/li> \&lt;/ul> \&lt;/li>
-\&lt;li>...vd.\&lt;/li> \&lt;/ul> \&lt;p>Ayrıntılılı bilgi çin \&lt;a
-href="mailto:bilgi@zerzebvat.com"> mesaj gönder \&lt;/a>\&lt;/p> \&lt;/body>
-\&lt;/html> [/sourcecode] CSS'in güçlü olmasının en büyük nedeni (X)HTML
+language="html"] <html> <head> <title> CSS (X)HTML Hiyerarşisi
+</title> </head> <body> <h1>CSS<em>(X)HTML Hiyerarşisi
+</em></h1> Sitemize hoş geldiniz <em>Merhaba</em>biz
+<strong>sizler için <a href="static/konu.html"> bazı <em>önemli</em>
+konular </a></strong>! hazırladık <ul> <li>Konu Başlıkları :
+<ul> <li><strong>Asıl</strong> Giriş</li> <li>Önsöz</li>
+<li><em>ilk</em> bölüm: <ol> <li>Elma</li>
+<li>Armut</li> <li>Karpuz</li> </ol> </li> </ul> </li>
+<li>...vd.</li> </ul> <p>Ayrıntılılı bilgi çin <a href="static/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#10;&#104;&#114;&#101;&#102;&#61;&#34;&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#105;&#108;&#103;&#105;&#64;&#122;&#101;&#114;&#122;&#101;&#98;&#118;&#97;&#116;&#46;&#99;&#111;&#109;&#34;">&#97;&#10;&#104;&#114;&#101;&#102;&#61;&quot;&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#105;&#108;&#103;&#105;&#64;&#122;&#101;&#114;&#122;&#101;&#98;&#118;&#97;&#116;&#46;&#99;&#111;&#109;&quot;</a> mesaj gönder </a></p> </body>
+</html>  CSS'in güçlü olmasının en büyük nedeni (X)HTML
 elementleri arasındaki ilişkiden yararlanmasıdır. (X)HTML dökümanları
 gizli bir hiyararşi ile oluşturulur. Bu hiyerarşi içinde tüm (X)HTML
 elementleri kendilerine uygun bir yer bulur. Bu ilişkiyi biz <strong>soy
@@ -129,14 +128,16 @@ tanımlaması yapılarak her <strong>h1</strong> elementi altındaki <strong>em<
 tek tek seçerek bu sınıfı uygulamamız gerekir ki bunun <strong>font</strong> etiketi
 uygulmasından farkı yoktur. Açıkcası bu işlemi yapmak uzun zaman
 alacaktır. Ancak Torun Seçicisi kullanarak bu işi kolayca yapabilriz.
-örnek kod yazarsak: [sourcecode language="css"] h1 em { color: gray; }
-[/sourcecode] Bu kod dökümandaki atası <strong>h1</strong> olan tüm <strong>em</strong>
+örnek kod yazarsak:     :::css
+     h1 em { color: gray; }
+ Bu kod dökümandaki atası <strong>h1</strong> olan tüm <strong>em</strong>
 elementlerini gri yapacaktır. Diğer <strong>em</strong>'ler ise bu kuralı
 uygulamayacaktır. Torun Seçicilerde, seçici kısmı birbirinden bir
 boşlukla ayrılmış iki veya daha fazla seçiciden oluşur. Aradaki boşluk
 bağlayıcı özellik taşır. Sadece iki elementle sınırlı değiliz, sınırsız
-element tanımlayabiliriz. [sourcecode language="css"] ul ol ul em {
-color: gray; } [/sourcecode] Torun Seçiciler çok kuvvetli olabilirler.
+element tanımlayabiliriz.   :::css
+     ul ol ul em {
+color: gray; }  Torun Seçiciler çok kuvvetli olabilirler.
 Onlar (X)HTML ile yapılmasının imkanı olmayan işler yaparlar. Örnek bir
 dökümanda iki adet alan oluşturduğumuzu düşünün birinci alanın
 ardalanı(background) mavi, ikinci alanın ardaalanının beyaz olduğunu
@@ -147,11 +148,11 @@ Seçicilerindedir; ilk alan içindeki linklere farklı renk diğerlerine
 farklı renk tanımlaması yaparak bu işi halledebiliriz. [sourcecode
 language="css"] td.sidebar { background: blue; } td.main { background:
 white; } td.sidebar a:link { color: white; } td.main a:link { color:
-blue; } [/sourcecode] Bir örnek daha verelim. <strong>blockquote</strong> ve <strong>p</strong>
+blue; }  Bir örnek daha verelim. <strong>blockquote</strong> ve <strong>p</strong>
 elementleri içindeki <strong>b</strong> elementi ile <strong>blockquote</strong> içinde ve normal
 paragraf içinde geçen <strong>b</strong> elementlerine özel bir atama yapmak
-istiyoruz bunun için kod yazarsak: [sourcecode language="css"]
-blockquote b, p b { color: gray; } [/sourcecode] Koda dikkat edersek her
+istiyoruz bunun için kod yazarsak:  :::css</p>
+<p>blockquote b, p b { color: gray; }  Koda dikkat edersek her
 iki atamayı ayrı ayrı yapmak yerine araya bir virgül koyarak birlikte
 yaptığımızı görürsünüz.</p>
 <div class="tarayiciuyum">
@@ -169,22 +170,23 @@ destekliyor
 ayrıntılı bir ayrım yapmak isteyebiliriz. Örneğin bir <strong>h1</strong> elementinin
 altındaki<strong>strong</strong> elementlerinden <strong>sadece</strong> Çocuk Elementi için
 tanımlamalar yapmak istersek (torun elementleri hariç), Bunun için çocuk
-bağlayıcısını kullanırız ( > ) büyüktür işareti [sourcecode
-language="css"] h1 > strong { color: red; } [/sourcecode] [sourcecode
-language="html"]\&lt;h1>Bu \&lt;strong>koda\&lt;/strong>
-uygulanacaktır.\&lt;/h1> \&lt;h1>Bu \&lt;em>koddaki \&lt;strong> bu kısım
-\&lt;/strong>\&lt;/em> uygulama dışıdır..\&lt;/h1> [/sourcecode] Yukardaki
+bağlayıcısını kullanırız ( &gt; ) büyüktür işareti [sourcecode
+language="css"] h1 &gt; strong { color: red; }  [sourcecode
+language="html"]<h1>Bu <strong>koda</strong>
+uygulanacaktır.</h1> <h1>Bu <em>koddaki <strong> bu kısım
+</strong></em> uygulama dışıdır..</h1>  Yukardaki
 durumda sadece ilk <strong>strong</strong> elementi için tanımlama gerçekleşecektir
 ikincisi için herhangi bir stil tanımı uygulanmayacaktır.</p>
 <p><img alt="" src="http://www.fatihhayrioglu.com/images/hiyerarsi02.gif" /></p>
 <p>Yukarıda ana örneğimizin bir kısmı gösterilemektedir. Ebeveyn-çocuk
 ilişkisini daha iyi anlamak için hazırlanmıştır. <strong>a</strong>elementi
 <strong>strong</strong>'un ebevenynidir. <strong>p</strong> elementide <strong>a</strong> nın ebeveynidir.
-Ancak <strong>p</strong> elementi <strong>strong</strong>'un ebeveyni değildir. Biz burada p > a
-ve a > strong şeklinde tanımlama yapabilriz ancak p > strong
+Ancak <strong>p</strong> elementi <strong>strong</strong>'un ebeveyni değildir. Biz burada p &gt; a
+ve a &gt; strong şeklinde tanımlama yapabilriz ancak p &gt; strong
 tanımlamasını yapamayız. Birde aynı seçici içinde hem torun
 birleştiricisini hemde çocuk birleştiricisini kullanabiliriz.
-[sourcecode language="css"] table.summary td > p [/sourcecode]</p>
+    :::css
+     table.summary td &gt; p </p>
 <div class="tarayiciuyum">
 **Browser Uyumu** :
 
@@ -201,14 +203,15 @@ elementlerden sonra gelenine stil tanımlamak için kullanılır. Tam olarak
 "Bir Ufak Kardeş Seçicisi" olmalıdır. Bir örnek verelim bir başlığımız
 var ve sonrasında ard arda paragraflar geliyor. Biz başlık ile hemen
 ardından gelen paragrafın arasına mesafe koymak için bu seçiciyi
-kullanabiliriz. [sourcecode language="html"] \&lt;body> \&lt;h2>Başlık
-2\&lt;/h2> \&lt;p>Buraya \&lt;em>önemli\&lt;/em> ve \&lt;strong>iyi\&lt;/strong>kod
-gir\&lt;/p> \&lt;p>Buraya \&lt;em>önemli\&lt;/em> ve \&lt;strong>iyi\&lt;/strong>kod
-gir\&lt;/p> \&lt;/body> [/sourcecode] Dökümanın yapısı:</p>
+kullanabiliriz.     :::html
+     <body> <h2>Başlık
+2</h2> <p>Buraya <em>önemli</em> ve <strong>iyi</strong>kod
+gir</p> <p>Buraya <em>önemli</em> ve <strong>iyi</strong>kod
+gir</p> </body>  Dökümanın yapısı:</p>
 <p><img alt="" src="http://www.fatihhayrioglu.com/images/hiyerarsi03.gif" /></p>
 <p>Biz burada <strong>h2</strong> ve <strong>h3</strong> arasında boşluk vermek için aşağıdaki kodu
-kullanırız: [sourcecode language="css"] h2 + p { margin-top: 10px; }
-[/sourcecode]</p>
+kullanırız:     :::css
+     h2 + p { margin-top: 10px; }</p>
 <div class="tarayiciuyum">
 **Browser Uyumu** :
 
@@ -229,9 +232,15 @@ nedenle kullanımı konusunda dikkat etmeliyiz.</p>
 <p>Genel Seçiciler bir elementi bütüne uygulamak için kullanılır bu işlem
 için * işareti kullanılır. Aşağıdaki kod tüm elementleri kırmızı
 yapacaktır.</p>
-<p>[sourcecode language="css"] * { color:red; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">*</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Ayrıca bir katmanın içindeki sınıflara uygulamak istersek</p>
-<p>[sourcecode language="css"] div .uyari * { color:red; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="nc">.uyari</span> <span class="o">*</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>katman, .uyari sınıfı içindeki tüm elementler kırmızı olacaktır.</p>
 <div class="tarayiciuyum">
 **Browser Uyumu** :

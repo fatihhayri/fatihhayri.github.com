@@ -174,15 +174,14 @@
 
 </footer><!-- /.post-info -->
                 <p>[sourcecode language='css'] our_style { height: 1px; width: 100px;
-background-color: black; }[/sourcecode] [sourcecode language='html']</p>
+background-color: black; } [sourcecode language='html']</p>
 <div class="test">
 </div>
 
-<p>[/sourcecode]</p>
 <p>Bu kod Firefox'da sorunsuz çalışmasına karşın IE'de yükseklik 10px
 görünecektir. Bir bakıma IE boş içeriğin yüksekliğini 10px kabul ediyor,
 ancak bu bizim işimizi bozuyor. Çözüm ise çok basit.</p>
-<p>[sourcecode language='css'].test { font-size ...</p>
+<p>[sourcecode language='css'].test { font-size: 0; height ...</p>
                 <a class="readmore" href=".././css-ipuclari-14-ie-div-yuksekligi-sorunu/">read more</a>
                 <p>There are <a href=".././css-ipuclari-14-ie-div-yuksekligi-sorunu/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -346,12 +345,20 @@ ancak bu bizim işimizi bozuyor. Çözüm ise çok basit.</p>
 </footer><!-- /.post-info -->
                 <p>Aslında konuyu başlıkta anlattım. İşaret kutularına <strong>onchange</strong> ekleyip
 tetiklemeye çalışınca çalışmıyor. Firefox'da çalışıyor sorunun çözümü</p>
-<p>[sourcecode language="javascript"] \&lt;p> \&lt;input type="checkbox"
-onchange="document.getElementById('spDegistir').innerHTML = 'Checked: '
-+ this.checked;" id="change"> \&lt;label for="change">Using
-onchange\&lt;/label> \&lt;span id="spDegistir">\&lt;/span> \&lt;/p>
-[/sourcecode]</p>
-<p>Bu kod Internet Explorer'da ...</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;checkbox&quot;</span>
+</pre></div>
+
+
+<p>onchange="document.getElementById('spDegistir').innerHTML = 'Checked: '
++ this.checked;" id="change"&gt; <label for="change">Using
+onchange</label> <span id="spDegistir"></span> </p></p>
+<p>Bu kod Internet Explorer'da çalışmayacaktır. Bizde bunun yerine
+<strong>onclick</strong> tetiklemesini kullanacağız.</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;checkbox&quot;</span>
+</pre></div>
+
+
+<p>onclick="document ...</p>
                 <a class="readmore" href=".././internet-explorer-isaret-kutularinincheckbox-onchange-tetiklemesindeki-sorun-ve-cozum-onerisi/">read more</a>
                 <p>There are <a href=".././internet-explorer-isaret-kutularinincheckbox-onchange-tetiklemesindeki-sorun-ve-cozum-onerisi/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -432,7 +439,7 @@ soldan 100px kadar ayırmak istediğinde IE'de soldan 100px olması gereken
 mesafe 200px görünecektir. <!--more--></p>
 <p><img alt="" src="http://www.fatihhayrioglu.com/images/ikikat_margin.gif" /></p>
 <p>[sourcecode language='css'] .kapsul1 { float: left; width: 150px;
-height: 150px; margin-left: 100px; } [/sourcecode] Bu hataya ...</p>
+height: 150px; margin-left: 100px; }  Bu hataya yanlızca ...</p>
                 <a class="readmore" href=".././ieda-ikikat-gorulen-margin-problemi-ve-cozumu/">read more</a>
                 <p>There are <a href=".././ieda-ikikat-gorulen-margin-problemi-ve-cozumu/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -467,11 +474,11 @@ height: 150px; margin-left: 100px; } [/sourcecode] Bu hataya ...</p>
 
 </footer><!-- /.post-info -->
                 <p>Bir kodu İE'den gizlemek istiyorsak [sourcecode language='css'] p{
-color:red !important; /* bu kısmı ie6 görmeyecek*/ color:blue; }
-[/sourcecode]sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı
+color:red !important; /<em> bu kısmı ie6 görmeyecek</em>/ color:blue; }
+sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı
 görünecektir. !important css ile etkinlik için kullanılan bir etikettir.
 !important tanımlı özellik daha önce yapılmış aynı özelliğin üzerine
-çıkar. CSS ile etkinlik ...</p>
+çıkar. CSS ile etkinlik hakkında ...</p>
                 <a class="readmore" href=".././css-de-kodumuzu-ie6dan-gizleme/">read more</a>
                 <p>There are <a href=".././css-de-kodumuzu-ie6dan-gizleme/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

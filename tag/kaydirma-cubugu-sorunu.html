@@ -92,20 +92,26 @@ gelen çekilir diyeceğiz ve çözüm arayıp düzeltmeye çalışacağız.</p>
 <p>HTML Kodu(Tabloya verilen border ve bordercolor tanımları örneğe
 görsellik kazandırmak için eklenmiştir, sorun ile alakalı kodlar
 değildir.)</p>
-<p>[html] \&lt;div id="kapsul"> \&lt;table width="100%" cellspacing="0"
-cellpadding="0" border="1" bordercolor="#0000FF"> \&lt;tr> \&lt;td>Lorem
-ipsum dolor sit amet, consectetur adipiscing elit. \&lt;/td> \&lt;td>Mauris
-facilisis elementum ipsum nec semper. \&lt;/td> \&lt;td>Vestibulum nec
-turpis at lectus pulvinar consequat nec in lectus. \&lt;/td> \&lt;/tr>
-\&lt;tr> \&lt;td>Aliquam sit amet est ac est eleifend. \&lt;/td> \&lt;td>Vivamus
-imperdiet.\&lt;/td> \&lt;td>Pellentesque sagittis ultrices laoreet.\&lt;/td>
-\&lt;/tr> \&lt;tr> \&lt;td>In hac habitasse platea dictumst.\&lt;/td> \&lt;td>Sed
-sed leo elit, eu ultricies metus. \&lt;/td> \&lt;td>Aenean massa
-nulla.\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;td>In hac habitasse platea
-dictumst.\&lt;/td> \&lt;td>Sed sed leo elit, eu ultricies metus. \&lt;/td>
-\&lt;td>Aenean massa nulla.\&lt;/td> \&lt;/tr> \&lt;/table> \&lt;/div> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;table</span> <span class="na">width=</span><span class="s">&quot;100%&quot;</span> <span class="na">cellspacing=</span><span class="s">&quot;0&quot;</span>
+</pre></div>
+
+
+<p>cellpadding="0" border="1" bordercolor="#0000FF"&gt; <tr> <td>Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. </td> <td>Mauris
+facilisis elementum ipsum nec semper. </td> <td>Vestibulum nec
+turpis at lectus pulvinar consequat nec in lectus. </td> </tr>
+<tr> <td>Aliquam sit amet est ac est eleifend. </td> <td>Vivamus
+imperdiet.</td> <td>Pellentesque sagittis ultrices laoreet.</td>
+</tr> <tr> <td>In hac habitasse platea dictumst.</td> <td>Sed
+sed leo elit, eu ultricies metus. </td> <td>Aenean massa
+nulla.</td> </tr> <tr> <td>In hac habitasse platea
+dictumst.</td> <td>Sed sed leo elit, eu ultricies metus. </td>
+<td>Aenean massa nulla.</td> </tr> </table> </div> </p>
 <p>CSS Kodu</p>
-<p>[css] #kapsul{ width:40%; height:150px; overflow:auto} [/css]</p>
+<div class="codehilite"><pre> <span class="nf">#kapsul</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">40</span><span class="o">%</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span><span class="k">auto</span><span class="p">}</span>
+</pre></div>
+
+
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ie7_yatay_scroll_sorunu_.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh6.googleusercontent.com/-GwzjXCJuKx4ySpkBUYTvTUxa8Z1OeTBgQTM7louaZaXwMc24ETkXTy-ULml0IK3Ed1m050j2ahhFpJKPc70akaQaei1mVvNPW61ji4vywk5HI395Q" /><br />
 </p>
@@ -119,26 +125,35 @@ gereken kaydırma çubuğu yatayda da çıkıyor.</p>
 <p>Çözüm için kapsayıcı katman içine bir katman daha açıyoruz ve hem dışta
 overflow:auto verdiğimiz katmana, hemde yeni oluşturduğumuz katmana
 zoom:1 özelliği atıyoruz.</p>
-<p>[html] \&lt;div id="kapsul"> \&lt;div id="kapsulIci"> \&lt;table width="100%"
-cellspacing="0" cellpadding="0" border="1" bordercolor="#0000FF">
-\&lt;tr> \&lt;td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-\&lt;/td> \&lt;td>Mauris facilisis elementum ipsum nec semper. \&lt;/td>
-\&lt;td>Vestibulum nec turpis at lectus pulvinar consequat nec in lectus.
-\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;td>Aliquam sit amet est ac est eleifend.
-\&lt;/td> \&lt;td>Vivamus imperdiet.\&lt;/td> \&lt;td>Pellentesque sagittis
-ultrices laoreet.\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;td>In hac habitasse platea
-dictumst.\&lt;/td> \&lt;td>Sed sed leo elit, eu ultricies metus. \&lt;/td>
-\&lt;td>Aenean massa nulla.\&lt;/td> \&lt;/tr> \&lt;tr> \&lt;td>In hac habitasse
-platea dictumst.\&lt;/td> \&lt;td>Sed sed leo elit, eu ultricies metus.
-\&lt;/td> \&lt;td>Aenean massa nulla.\&lt;/td> \&lt;/tr> \&lt;/table> \&lt;/div>
-\&lt;/div> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsulIci&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;table</span> <span class="na">width=</span><span class="s">&quot;100%&quot;</span>
+</pre></div>
+
+
+<p>cellspacing="0" cellpadding="0" border="1" bordercolor="#0000FF"&gt;
+<tr> <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</td> <td>Mauris facilisis elementum ipsum nec semper. </td>
+<td>Vestibulum nec turpis at lectus pulvinar consequat nec in lectus.
+</td> </tr> <tr> <td>Aliquam sit amet est ac est eleifend.
+</td> <td>Vivamus imperdiet.</td> <td>Pellentesque sagittis
+ultrices laoreet.</td> </tr> <tr> <td>In hac habitasse platea
+dictumst.</td> <td>Sed sed leo elit, eu ultricies metus. </td>
+<td>Aenean massa nulla.</td> </tr> <tr> <td>In hac habitasse
+platea dictumst.</td> <td>Sed sed leo elit, eu ultricies metus.
+</td> <td>Aenean massa nulla.</td> </tr> </table> </div>
+</div> </p>
 <p>CSS kodu</p>
-<p>[css] #kapsul{ width:40%; height:150px; zoom:1; overflow:auto;}
-#kapsulIci{zoom:1; } [/css]</p>
+<div class="codehilite"><pre> <span class="nf">#kapsul</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">40</span><span class="o">%</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> <span class="n">zoom</span><span class="o">:</span><span class="m">1</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span><span class="k">auto</span><span class="p">;}</span>
+</pre></div>
+
+
+<h1 zoom:1;="zoom:1;">kapsulIci</h1>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ie7_yatay_scroll_sorunu_cozum.html">tıklayınız.</a></p>
 <p>Ayrıca yukarıdaki çözüm ie6 bazen sorun çıkarıyor, bu gibi durumlarda</p>
-<p>[html] \&lt;!--[if lt IE 7]>\&lt;style> #kapsulIci { overflow: auto; }
-\&lt;/style>\&lt;![endif]--> [/html]</p>
+<div class="codehilite"><pre> <span class="c">&lt;!--[if lt IE 7]&gt;&lt;style&gt; #kapsulIci { overflow: auto; }</span>
+</pre></div>
+
+
+<p></style>&lt;![endif]--&gt; </p>
 <p>Eklememiz gerekiyor.</p>
 <p>Hayatımızda(gerek gerçek, gerek sanal) sorunlar olacaktır. Sorunlardan
 kaçmamalıyız, üzerine gidip çözüm aramalıyız. Bir arayüz geliştiricinin
@@ -147,16 +162,12 @@ kemale ermesi(Senior Front-End Developer) için sorunları ile baş etmesi
 <p>Kalın sağlıcakla.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="static">http://stackoverflow.com/questions/139000/div-with-overflowauto-and-a-100-wide-table-problem</a></li>
-<li><a href="static">http://bytes.com/topic/html-css/answers/100751-overflow-auto-problem-ie</a></li>
+<li><a href="http://stackoverflow.com/questions/139000/div-with-overflowauto-and-a-100-wide-table-problem">http://stackoverflow.com/questions/139000/div-with-overflowauto-and-a-100-wide-table-problem</a></li>
+<li><a href="http://bytes.com/topic/html-css/answers/100751-overflow-auto-problem-ie">http://bytes.com/topic/html-css/answers/100751-overflow-auto-problem-ie</a></li>
 <li><a href="http://www.sitepoint.com/forums/showthread.php?t=661150">http://www.sitepoint.com/forums/showthread.php?t=661150</a></li>
 <li><a href="http://forums.mozillazine.org/viewtopic.php?t=538190">http://forums.mozillazine.org/viewtopic.php?t=538190</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">stackoverflow</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">questions</span><span class="o">/</span>139000<span class="o">/</span><span class="n">div</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">overflowauto</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">a</span><span class="o">-</span>100<span class="o">-</span><span class="n">wide</span><span class="o">-</span><span class="n">table</span><span class="o">-</span><span class="n">problem</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">bytes</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">topic</span><span class="o">/</span><span class="n">html</span><span class="o">-</span><span class="n">css</span><span class="o">/</span><span class="n">answers</span><span class="o">/</span>100751<span class="o">-</span><span class="n">overflow</span><span class="o">-</span><span class="n">auto</span><span class="o">-</span><span class="n">problem</span><span class="o">-</span><span class="n">ie</span>
-</pre></div><p>There are <a href=".././overflowauto-icinde-100-genislikte-tablo-kullaniminda-ie7de-yatay-kaydirma-cubugu-sorunu/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././overflowauto-icinde-100-genislikte-tablo-kullaniminda-ie7de-yatay-kaydirma-cubugu-sorunu/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

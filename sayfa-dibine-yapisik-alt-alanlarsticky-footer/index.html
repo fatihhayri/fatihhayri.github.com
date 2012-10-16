@@ -82,7 +82,7 @@
 
 
 </footer><!-- /.post-info -->
-      <p>![yapisik_altalan][]Bir çok sitede karşılaştığımız sayfanın dibine
+      <p><img alt="yapisik_altalan" src="http://www.fatihhayrioglu.com/wp-content/yapisik_altalan.gif" title="yapisik_altalan" />Bir çok sitede karşılaştığımız sayfanın dibine
 yapışık alt kısımları bu makalede anlatmaya çalışacağım. Bunu hiç
 javascript kullanmadan sadece css yardımı ile yapacağız.</p>
 <p>Site içeriğinin az olduğu durumlarda sayfanın alt kısımları normal akış
@@ -98,22 +98,28 @@ karar verdim. <a href="http://www.cssstickyfooter.com" title="cssstickyfooter.co
 en iyi yöntem.</p>
 <p>Kodumuzu yazmaya başlarsak.</p>
 <p>XHTML kodu:</p>
-<p>[sourcecode language="html"] \&lt;div id="kapsul"> \&lt;div id="ustAlan">
-\&lt;h1>Lorem ipsum dolor sit amet\&lt;/h1> \&lt;/div> \&lt;div
-id="icerikAlani"> \&lt;div id="icerik"> \&lt;/div> \&lt;div
-id="icerikSagAlani"> \&lt;/div> \&lt;/div> \&lt;/div> \&lt;div id="altAlan">
-\&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<p><h1>Lorem ipsum dolor sit amet</h1> </div> <div
+id="icerikAlani"> <div id="icerik"> </div> <div
+id="icerikSagAlani"> </div> </div> </div> <div id="altAlan">
+</div> </p>
 <p>XHTML kodunda dikkate değer olan kısım içerik alanı ve alt alanı iki
 farklı bölüm olarak kodlamamız. <strong>altAlan</strong> ve diğer alanları kapsayan
 bir kapsayıcı katmandan(<strong>#kapsul</strong>) oluşuyor kodumuz. Bizim yaptığımız
 örnekte üst alanı ve iki kolonlu içerik kısmını kapsayıcı katman içine
 alıyoruz.</p>
 <p>CSS Kodu</p>
-<p>[sourcecode language="css"] html, body, #kapsul {height: 100%;} body >
-#kapsul {height: auto; min-height: 100%;} #icerik {padding-bottom:
-133px;} /* altAlan yukseligi ile ayni olmali */ #altAlan { position:
-relative; margin-top: -133px; /* altAlan yuksekliginin eksi degeri */
-height: 133px; clear:both; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span><span class="o">,</span> <span class="nf">#kapsul</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;}</span> <span class="nt">body</span> <span class="o">&gt;</span>
+</pre></div>
+
+
+<h1>kapsul {height: auto; min-height: 100%;} #icerik {padding-bottom:</h1>
+<p>133px;} /<em> altAlan yukseligi ile ayni olmali </em>/ #altAlan { position:
+relative; margin-top: -133px; /<em> altAlan yuksekliginin eksi degeri </em>/
+height: 133px; clear:both; } </p>
 <p>Buradaki 133px tanımına dikkat etmemiz gerekiyor. 133px altAlan
 yüksekliğidir ve 3 yerde birden aynı değeri kullandığımıza dikkat
 edeniz.</p>
@@ -128,20 +134,26 @@ veriyoruz.</p>
 <p>Bu yöntemde float uygulanmış içerik kısmında tam alanı kapsayamama
 sorunu ile karşılaşıyoruz. Float uygulanmış alanların kapsayamama sorunu
 çözmek için
-<a href="../static">http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/</a>
+<a href="http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/" title="http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/">http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/</a>
 makalemiz anlattığımız yöntemi kullanıyoruz.</p>
-<p>[sourcecode language="css"] .kapsayamamaSorunu:after {content: ".";
-display: block; height: 0; clear: both; visibility: hidden;}
-.kapsayamamaSorunu {display: inline-block;} /*IE-mac de bu bolumu sakla
-\ */ * html .kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu
-{display: block;} /* IE-mac bu bolumu saklam artik */ [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.kapsayamamaSorunu</span><span class="nd">:after</span> <span class="p">{</span><span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span>
+</pre></div>
+
+
+<p>display: block; height: 0; clear: both; visibility: hidden;}
+.kapsayamamaSorunu {display: inline-block;} /<em>IE-mac de bu bolumu sakla
+ </em>/ * html .kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu
+{display: block;} /<em> IE-mac bu bolumu saklam artik </em>/ </p>
 <p>Bu sınıfı tanımlıyoruz ve içeriği kapsayan(#icerikAlani) katmana
 atıyoruz.</p>
-<p>[sourcecode language="html"] \&lt;div id="kapsul"> \&lt;div id="ustAlan"
-class="kapsayamamaSorunu"> \&lt;h1>Lorem ipsum dolor sit amet\&lt;/h1>
-\&lt;/div> \&lt;div id="icerikAlani" class="kapsayamamaSorunu"> \&lt;div
-id="icerik"> \&lt;/div> \&lt;div id="icerikSagAlani"> \&lt;/div> \&lt;/div>
-\&lt;/div> \&lt;div id="altAlan"> \&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span>
+</pre></div>
+
+
+<p>class="kapsayamamaSorunu"&gt; <h1>Lorem ipsum dolor sit amet</h1>
+</div> <div id="icerikAlani" class="kapsayamamaSorunu"> <div
+id="icerik"> </div> <div id="icerikSagAlani"> </div> </div>
+</div> <div id="altAlan"> </div> </p>
 <p>Bu yöntemin ryanfait.com'un yöntemine göre en büyük avantajı bence
 ryanfait.com'un yöntemindeki anlamsız tampon katmanı gibi bir fazla
 kodlamadan kaçınış oluyoruz.</p>
@@ -160,12 +172,12 @@ yerine padding kullanın.</p>
 değerler ile belirlerseniz bu tip sorunları engelleyebilirsiniz.</p>
 </li>
 <li>
-<p>Son olarakta asp.net ile oluşturulan sayfalarda \&lt;form> elemanı ile
+<p>Son olarakta asp.net ile oluşturulan sayfalarda <form> elemanı ile
 kapsanan sayfanızda sorun çıkabilir. Bunu engellemek için kodunuzu</p>
+<p>:::css
+ html, body, form, #kapsul {height: 100%;}</p>
 </li>
 </ul>
-<p>[sourcecode language="css"] html, body, form, #kapsul {height: 100%;}
-[/sourcecode]</p>
 <p>şeklinde değiştirmelisiniz. <a href="http://www.cssstickyfooter.com/using-sticky-footer-code.html" title="http://www.cssstickyfooter.com/using-sticky-footer-code.html"></a></p>
 <h3>Kaynaklar</h3>
 <ul>
@@ -173,7 +185,7 @@ kapsanan sayfanızda sorun çıkabilir. Bunu engellemek için kodunuzu</p>
 <li><a href="http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/" title="http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/">http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/</a></li>
 <li><a href="http://ryanfait.com/resources/footer-stick-to-bottom-of-page/" title="http://ryanfait.com/resources/footer-stick-to-bottom-of-page/">http://ryanfait.com/resources/footer-stick-to-bottom-of-page/</a><br />
 </li>
-<li><a href="../static">http://cokbasit.blogspot.com/2009/01/yapkan-taban-sticky-footer.html</a></li>
+<li><a href="http://cokbasit.blogspot.com/2009/01/yapkan-taban-sticky-footer.html" title="http://cokbasit.blogspot.com/2009/01/yapkan-taban-sticky-footer.html">http://cokbasit.blogspot.com/2009/01/yapkan-taban-sticky-footer.html</a></li>
 <li><a href="http://css-tricks.com/sticky-footer/" title="http://css-tricks.com/sticky-footer/">http://css-tricks.com/sticky-footer/</a></li>
 <li><a href="http://www.waycoolwebdesign.com/Blog/2008/11/15/CSS-Sticky-Footer" title="http://www.waycoolwebdesign.com/Blog/2008/11/15/CSS-Sticky-Footer">http://www.waycoolwebdesign.com/Blog/2008/11/15/CSS-Sticky-Footer</a></li>
 <li><a href="http://stever.ca/web-design/css-sticky-footer/" title="http://stever.ca/web-design/css-sticky-footer/">http://stever.ca/web-design/css-sticky-footer/</a></li>
@@ -181,12 +193,6 @@ kapsanan sayfanızda sorun çıkabilir. Bunu engellemek için kodunuzu</p>
 <li><a href="http://www.davidjrush.com/blog/2009/01/css-sticky-footer/" title="http://www.davidjrush.com/blog/2009/01/css-sticky-footer/">http://www.davidjrush.com/blog/2009/01/css-sticky-footer/</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">float</span><span class="o">-</span><span class="n">uygulanmis</span><span class="o">-</span><span class="n">elementleri</span><span class="o">-</span><span class="n">tam</span><span class="o">-</span><span class="n">kapsayamama</span><span class="o">-</span><span class="n">sorunu</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">float</span><span class="o">-</span><span class="n">uygulanmis</span><span class="o">-</span><span class="n">elementleri</span><span class="o">-</span><span class="n">tam</span><span class="o">-</span><span class="n">kapsayamama</span><span class="o">-</span><span class="n">sorunu</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">cokbasit</span><span class="p">.</span><span class="n">blogspot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>01<span class="o">/</span><span class="n">yapkan</span><span class="o">-</span><span class="n">taban</span><span class="o">-</span><span class="n">sticky</span><span class="o">-</span><span class="n">footer</span><span class="p">.</span><span class="n">html</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">cokbasit</span><span class="p">.</span><span class="n">blogspot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>01<span class="o">/</span><span class="n">yapkan</span><span class="o">-</span><span class="n">taban</span><span class="o">-</span><span class="n">sticky</span><span class="o">-</span><span class="n">footer</span><span class="p">.</span><span class="n">html</span>&quot;
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

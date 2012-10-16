@@ -94,33 +94,42 @@ javascript dosyaları veya referans aldığımız eklenti dosyaları olur, bu
 gibi durumlarda araya girip bu dosyaları yükletmemiz gerekir ve sonra
 işleyişi devam ettirmemiz gerekir. İşte bu gibi durumlarda holdReady
 fonksiyonu kullanılabilir.</p>
-<p>[javascript] \$.holdReady(true); // biraz bekle
-\$.getScript("myplugin.js", function() { // dosyayi yukledik
-\$.holdReady(false); // simdi sen isine donebilirsin }); [/javascript]</p>
-<p>Bu metot \&lt;head> içinde document.ready olayından önce çağrılmalıdır.
+<div class="codehilite"><pre> <span class="nx">$</span><span class="p">.</span><span class="nx">holdReady</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span> <span class="c1">// biraz bekle</span>
+</pre></div>
+
+
+<p>$.getScript("myplugin.js", function() { // dosyayi yukledik
+$.holdReady(false); // simdi sen isine donebilirsin }); </p>
+<p>Bu metot <head> içinde document.ready olayından önce çağrılmalıdır.
 Eğer sonrasında çağrılırsa işlevsiz kalır. En iyi kullanım yeri jquery
 kütüphanesi eklendikten sonrasıdır.</p>
 <p>Küçük bir örnek yapalım;</p>
-<p>[html] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> \&lt;html
-xmlns="http://www.w3.org/1999/xhtml"> \&lt;head> \&lt;meta
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+</pre></div>
+
+
+<p>"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
 http-equiv="Content-Type" content="text/html; charset=utf-8" />
-\&lt;title>Başlıksız Belge\&lt;/title> \&lt;script
-src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.min.js">\&lt;/script>
-\&lt;script> \$.holdReady(true); // durdur \$.getScript("deneme.js",
-function() { // yukle \$("p").css("background-color", "#f00");
-\$.holdReady(false); // devam et }); \$(document).ready(function(e) {
-\$("p").css("background-color", "#9C6"); alert("iki"); }); \&lt;/script>
-\&lt;/head> \&lt;body> \&lt;p>Deneme.\&lt;/p> \&lt;/body> \&lt;/html> [/html]</p>
+<title>Başlıksız Belge</title> <script
+src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.min.js"></script>
+<script> $.holdReady(true); // durdur $.getScript("deneme.js",
+function() { // yukle $("p").css("background-color", "#f00");
+$.holdReady(false); // devam et }); $(document).ready(function(e) {
+$("p").css("background-color", "#9C6"); alert("iki"); }); </script>
+</head> <body> <p>Deneme.</p> </body> </html> </p>
 <p>Eklediğimiz deneme.js</p>
-<p>[javascript] // ilk yüklenecek dosya \$("p").css("background-color",
-"#ff0"); alert("bir"); [/javascript]</p>
+<div class="codehilite"><pre> <span class="c1">// ilk yüklenecek dosya $(&quot;p&quot;).css(&quot;background-color&quot;,</span>
+</pre></div>
+
+
+<p>"#ff0"); alert("bir"); </p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/holdReady.html">tıklayınız.</a></p>
 <p>Sayfa yükleme sırası;</p>
-<p>1- DOM yani yukarıdaki sayfa \&lt;p>Deneme.\&lt;/p> ve deneme.js dosyası
+<p>1- DOM yani yukarıdaki sayfa <p>Deneme.</p> ve deneme.js dosyası
 birlikte yorumlanacak. (bir)</p>
 <p>2- Sonrasında yükleme sonrası işlemler yapılacak. (iki)</p>
-<p>3- \$.holdReady(false); sonrasında document.ready içerisindeki kod
+<p>3- $.holdReady(false); sonrasında document.ready içerisindeki kod
 yorumlanacak. (üç)</p>
 <p>Son olarak bir not: birden fazla holdReady kullanımı halinde
 document.ready olayı tüm holdReady fonksiyonlarının bırakılmasını
@@ -128,13 +137,10 @@ bekler.</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://api.jquery.com/jQuery.holdReady/">http://api.jquery.com/jQuery.holdReady/</a></li>
-<li><a href="../static">http://jquerybyexample.blogspot.com/2011/05/jqueryholdready-new-in-jquery-16.html</a></li>
+<li><a href="http://jquerybyexample.blogspot.com/2011/05/jqueryholdready-new-in-jquery-16.html">http://jquerybyexample.blogspot.com/2011/05/jqueryholdready-new-in-jquery-16.html</a></li>
 <li><a href="http://blogs.sitepoint.com/whats-new-in-jquery-16/">http://blogs.sitepoint.com/whats-new-in-jquery-16/</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">jquerybyexample</span><span class="p">.</span><span class="n">blogspot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2011<span class="o">/</span>05<span class="o">/</span><span class="n">jqueryholdready</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">jquery</span><span class="o">-</span>16<span class="p">.</span><span class="n">html</span>
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

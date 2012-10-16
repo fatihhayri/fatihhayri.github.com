@@ -85,8 +85,11 @@ gibi. Daha öncede benzer sorular ile karşılaştım. Bende bir kaç projemde
 bu konuyu göz atmıştım.</p>
 <p>İki yöntem var aslında bunun için.</p>
 <h3>Birinci Yöntem</h3>
-<p>[sourcecode language="css"] body { height: 100%; width: 100%; margin: 0;
-} [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>} </p>
 <p>şeklinde bir kod. Ancak bu kod ne yazık ki Firefox ve Opera'da
 çalışmıyor. Yada çalışması için html sayfamızdan DOCTYPE'ı silmemiz
 gerekiyor. Bence bu pek mantıklı bir kullanım değil, o nedenle ben
@@ -95,10 +98,12 @@ ikinci yöntemi öneriyorum.</p>
 <p>swfobject.embedSWF("test.swf", "myContent", "100%", "100%", "9.0.0",
 "expressInstall.swf");</p>
 <p>Genişlik ve yüksekliğini 100% veriyoruz ve css kodumuzu yazıyoruz.</p>
-<p>[sourcecode language="css"] /* hide from ie on mac \*/ html { height:
-100%; overflow: hidden; } #myContent { height: 100%; } /* end hide */
-body { height: 100%; margin: 0; padding: 0; background-color: #090; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="c">/* hide from ie on mac */</span> <span class="nt">html</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span>
+</pre></div>
+
+
+<p>100%; overflow: hidden; } #myContent { height: 100%; } /<em> end hide </em>/
+body { height: 100%; margin: 0; padding: 0; background-color: #090; }</p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/tamekran_flash/tamekran.html">tıklayınız</a></p>
 <p>CSS kodumuz biraz daha fazla olan bu yöntem DOCTYPE kullanımı durumunda
 da çalıştığı için bence en kullanışlı yöntem. Geçen hafta anlattığım
@@ -116,13 +121,10 @@ padding değerlerini sıfırlıyoruz ve görünmese de işi garantiye almak
 için bir backgroun-color tanımı yapıyoruz. Bu kadar.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="static">http://blog.deconcept.com/2005/01/02/100-height-and-100-width-xhtml-flash-embed/</a></li>
+<li><a href="http://blog.deconcept.com/2005/01/02/100-height-and-100-width-xhtml-flash-embed/">http://blog.deconcept.com/2005/01/02/100-height-and-100-width-xhtml-flash-embed/</a></li>
 <li><a href="http://www.kirupa.com/developer/mx2004/fullscreen.htm">http://www.kirupa.com/developer/mx2004/fullscreen.htm</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">deconcept</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2005<span class="o">/</span>01<span class="o">/</span>02<span class="o">/</span>100<span class="o">-</span><span class="n">height</span><span class="o">-</span><span class="n">and</span><span class="o">-</span>100<span class="o">-</span><span class="n">width</span><span class="o">-</span><span class="n">xhtml</span><span class="o">-</span><span class="n">flash</span><span class="o">-</span><span class="n">embed</span><span class="o">/</span>
-</pre></div><p>There are <a href=".././html-sayfalarina-100-genislikte-ve-100-yukseklikte-flash-dosyalari-eklemek/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././html-sayfalarina-100-genislikte-ve-100-yukseklikte-flash-dosyalari-eklemek/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

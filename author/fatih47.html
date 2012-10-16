@@ -90,11 +90,15 @@
 </footer><!-- /.post-info -->
                 <p>Bazen kullanıcıdan bir iş için teyit almak durumunda kalırız, böyle
 durumlarda <strong>confirm</strong> komutu işe yarar.</p>
-<p>[sourcecode language="html"] \&lt;a href="sil.aspx" onclick="return
-window.confirm('Silmek istediğinize eminmisiniz?');">Bu kayıdı
-Sil\&lt;/a> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;sil.aspx&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return</span>
+</pre></div>
+
+
+<p>window.confirm('Silmek istediğinize eminmisiniz?');"&gt;Bu kayıdı
+Sil</a> </p>
 <p>Yukarıdaki kod da kullanıcının karşısına evet/hayır seçeneklerinin
-olduğu bir onay popup'ı gelecektir, kullanıcı burada ...</p>
+olduğu bir onay popup'ı gelecektir, kullanıcı burada evet'i seçerse bize
+true ...</p>
                 <a class="readmore" href=".././javascript-ile-kullanicidan-teyit-almak/">read more</a>
                 <p>There are <a href=".././javascript-ile-kullanicidan-teyit-almak/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -128,8 +132,11 @@ olduğu bir onay popup'ı gelecektir, kullanıcı burada ...</p>
 
 
 </footer><!-- /.post-info -->
-                <p>[sourcecode language="javascript"] document.write("\&lt;img
-src=\"resim.gif?" + Math.random() + "\" />"); [/sourcecode] Bu kodu
+                <div class="codehilite"><pre> <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="err">&quot;</span><span class="o">&lt;</span><span class="nx">img</span>
+</pre></div>
+
+
+<p>src="resim.gif?" + Math.random() + "" /&gt;");  Bu kodu
 uyguladığımız resimler web tarayıcısının ön belleğine alınmayacaktır.
 Çünkü Math.radom ile elde ettiğimiz değer devamlı değişecektir ve
 resmimiz ön belleğe alınmayacaktır. Bu kodu ön belleğe eklenmesini
@@ -172,9 +179,12 @@ toplamının verdiği sonucun 1'ler basamağı 11. sayıya eşitir." bunun için
 bir javascript kodu yazdım. Sizlerede lazım olur diye buraya yazıyorum.
 <!--more--></p>
 <p>javascript kodu:</p>
-<p>[sourcecode language="javascript"] function tckimlikkontorolu(tcno) {
-var tckontrol,toplam; tckontrol = tcno; tcno = tcno.value; toplam =
-Number(tcno.substring ...</p>
+<div class="codehilite"><pre> <span class="kd">function</span> <span class="nx">tckimlikkontorolu</span><span class="p">(</span><span class="nx">tcno</span><span class="p">)</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>var tckontrol,toplam; tckontrol = tcno; tcno = tcno.value; toplam =
+Number(tcno.substring(0,1)) + Number ...</p>
                 <a class="readmore" href=".././javascript-ile-tc-kimlik-no-dogrulama/">read more</a>
                 <p>There are <a href=".././javascript-ile-tc-kimlik-no-dogrulama/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -289,8 +299,11 @@ yardımı dokunur bir ihtimal diye yazıyorum.</p>
 </footer><!-- /.post-info -->
                 <p>Eski versiyon web tarayıcılarında javascript kodlarımız saklamak için
 aşağıdaki yöntemi kullanırız.</p>
-<p>[sourcecode language="html"] \&lt;script language="JavaScript">\&lt;!--// ...
-//-->\&lt;/script> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;script </span><span class="na">language=</span><span class="s">&quot;JavaScript&quot;</span><span class="nt">&gt;</span><span class="err">&lt;!--// ...</span>
+</pre></div>
+
+
+<p>//--&gt;</script> </p>
 <p>Eğer bu yöntemi dışarıdan javascirpt kodu çağırdığımız sayfalarda
 kullanırsak. Eski web tarayıcıları bu kodu göremeyecek ve geçecektir. Bu
 da eski web tarayıcılarına daha az kod yorumlama olanağı sağlayacaktır.</p>
@@ -367,9 +380,13 @@ Firefox2.0(Beta) Ayrıntılı bilgi için <a href="http://developer.mozilla.org/
 iki ayrı durum olarak kabul eder.</p>
 <p><strong>null;</strong> boş değer anlamına gelen özel bir değerdir. <strong>typeof null</strong>
 bize nesne döndürür.</p>
-<p>[javascript] \&lt;script> var testDegiskeni = null; alert(testDegiskeni);
-//null alert(typeof testDegiskeni); //object \&lt;/script> [/javascript]</p>
-<p><strong>undefined</strong> değişken bildirilmiş ama henüz değeri atanmamış demektir ...</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">testDegiskeni</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span> <span class="nx">alert</span><span class="p">(</span><span class="nx">testDegiskeni</span><span class="p">);</span>
+</pre></div>
+
+
+<p>//null alert(typeof testDegiskeni); //object </script> </p>
+<p><strong>undefined</strong> değişken bildirilmiş ama henüz değeri atanmamış demektir.</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">testDegiskeni ...</span></pre></div>
                 <a class="readmore" href=".././javascriptte-null-ve-undefined-farki/">read more</a>
                 <p>There are <a href=".././javascriptte-null-ve-undefined-farki/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

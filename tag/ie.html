@@ -87,18 +87,21 @@ olduğunu gördüm.</p>
 <p>CSS3 ile renk geçişi için <a href="http://www.colorzilla.com/gradient-editor/">http://www.colorzilla.com/gradient-editor/</a>
 sitesini kullanıyorum.</p>
 <p>Sorunu görmek için aşağıdaki gibi bir örnek yaptım;</p>
-<p>[css] #test{ padding:10px; background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /*
-FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom,
-color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+
-*/ background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
-/* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top,
-#ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */ background:
--ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
-background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* W3C */
+<div class="codehilite"><pre> <span class="nf">#test</span><span class="p">{</span> <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span> <span class="m">#ffffff</span><span class="p">;</span> <span class="c">/* Old browsers */</span>
+</pre></div>
+
+
+<p>background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /<em>
+FF3.6+ </em>/ background: -webkit-gradient(linear, left top, left bottom,
+color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /<em> Chrome,Safari4+
+</em>/ background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+/<em> Chrome10+,Safari5.1+ </em>/ background: -o-linear-gradient(top,</p>
+<h1>ffffff 0%,#e5e5e5 100%); /<em> Opera 11.10+ </em>/ background:</h1>
+<p>-ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /<em> IE10+ </em>/
+background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /<em> W3C </em>/
 filter: progid:DXImageTransform.Microsoft.gradient(
-startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /*
-IE6-9 */ } [/css]
+startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /<em>
+IE6-9 </em>/ } 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/2gKwm/4/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
 <p>ie7’de(6’yı kâle bile almıyorum :D) renk geçişinin uygulanmadığını
 görüyoruz.</p>
@@ -111,15 +114,11 @@ sadece zoom:1 eklemek.</p>
 öneririm.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="static">http://stackoverflow.com/questions/7257170/background-gradient-ie7-css-problem</a></li>
-<li><a href="static">http://stackoverflow.com/questions/213750/gradient-colors-in-internet-explorer</a></li>
+<li><a href="http://stackoverflow.com/questions/7257170/background-gradient-ie7-css-problem">http://stackoverflow.com/questions/7257170/background-gradient-ie7-css-problem</a></li>
+<li><a href="http://stackoverflow.com/questions/213750/gradient-colors-in-internet-explorer">http://stackoverflow.com/questions/213750/gradient-colors-in-internet-explorer</a></li>
 <li><a href="http://www.fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/">http://www.fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">stackoverflow</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">questions</span><span class="o">/</span>7257170<span class="o">/</span><span class="n">background</span><span class="o">-</span><span class="n">gradient</span><span class="o">-</span><span class="n">ie7</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">problem</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">stackoverflow</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">questions</span><span class="o">/</span>213750<span class="o">/</span><span class="n">gradient</span><span class="o">-</span><span class="n">colors</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">internet</span><span class="o">-</span><span class="n">explorer</span>
-</pre></div><p>There are <a href=".././internet-explorerda-renk-gecisi-sorunu-ve-cozumu/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././internet-explorerda-renk-gecisi-sorunu-ve-cozumu/#disqus_thread">comments</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -164,9 +163,13 @@ basınca alt satıra geçmiyordu. Diğer tarayıcılarda sorun yokken ie
 sürümlerinde böyle bir sorun çıkıyordu.</p>
 <p>Sonra incelediğimde ve araştırdığımda bu sorunun benim kullandığım
 sıfırlama kodundaki bir durumdan kaynaklandığını gördüm.</p>
-<p>[sourcecode language="css"] textarea, input, select { font:inherit;
-white-space:normal; } [/sourcecode]</p>
-<p>Örneği görmek ...</p>
+<div class="codehilite"><pre> <span class="nt">textarea</span><span class="o">,</span> <span class="nt">input</span><span class="o">,</span> <span class="nt">select</span> <span class="p">{</span> <span class="k">font</span><span class="o">:</span><span class="k">inherit</span><span class="p">;</span>
+</pre></div>
+
+
+<p>white-space:normal; } </p>
+<p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/textareada_enter_calistirmak.html">tıklayınız.</a></p>
+<p>Sıfırlama kodundaki ...</p>
                 <a class="readmore" href=".././iede-textareada-enter-calismiyor/">read more</a>
                 <p>There are <a href=".././iede-textareada-enter-calismiyor/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -244,7 +247,7 @@ mesaj attı. Son mesajdan sonra konuyu yazmalıyım dedim.</p>
 listelediğimiz menülerde ie'de fazladan boşluk gözüküyor. Bu durum bazen
 ie6'da bazense ie6 ve ie7'de oluyor.</p>
 <p>Bir örnek verelim</p>
-<p>[sourcecode ...</p>
+<div class="codehilite"><pre> <span class="nt">&lt;ul ...</span></pre></div>
                 <a class="readmore" href=".././iede-liste-elemanlari-arasindaki-bosluk-sorunu/">read more</a>
                 <p>There are <a href=".././iede-liste-elemanlari-arasindaki-bosluk-sorunu/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -317,7 +320,7 @@ kabulunü bıraktı. Buna da şükür.</p>
 
 
 </footer><!-- /.post-info -->
-                <p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/ie7_kaydirma_cubugu.jpg" title="ie7_kaydirma_cubugu" />][] Pek nadirde olsa böyle bir istek ile karşılaşıyorum. Bu ikinci
+                <p overflow:auto;="overflow:auto;">[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/ie7_kaydirma_cubugu.jpg" title="ie7_kaydirma_cubugu" />][] Pek nadirde olsa böyle bir istek ile karşılaşıyorum. Bu ikinci
 oldu. İlk başta bunun bir çözümü yoktur diye düşündüm(Bunu düşünmemin
 nedeni daha önce böyle bir istek ile karşılaştığımda çözümünü bulamadım
 diye aklımda kalması). Ancak sonra bazı sitelerde böyle bir şey
@@ -442,7 +445,7 @@ interaktif metin, resim, video, müzik vb. göstermek için kullanılan
 programlardır. "Vikipedia"</p>
 <p>Şu an genelde kullanılan tarayıcılar: Internet Explorer, Mozilla
 Firefox, Opera ve Safari <!--more--></p>
-<p>[http://upload.wikimedia.org/wikipedia/commons/7/74/Timeline_of_web_browsers.svg][]</p>
+<p><a href="http://upload.wikimedia.org/wikipedia/commons/7/74/Timeline_of_web_browsers.svg">http://upload.wikimedia.org/wikipedia/commons/7/74/Timeline_of_web_browsers.svg</a></p>
 <p>İnternet tarayıcılarının ...</p>
                 <a class="readmore" href=".././internet-tarayicilari/">read more</a>
                 <p>There are <a href=".././internet-tarayicilari/#disqus_thread">comments</a>.</p>

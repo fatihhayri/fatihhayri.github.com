@@ -89,15 +89,17 @@ sınıflara erişmemizi sağlar. <strong>Pseudo sınıfı</strong> bir elementi 
 sınıflara böler(örn: link elementini active, visited vd. sınıflarına
 böler) <strong>Pseudo elementi</strong> ise bir elementi alt kısımlara böler (örneğin
 bir paragrafın ilk harfi, bir paragrafın ilk satırı gibi.)<!--more-->
-Pseudo sınıfına örnek: [sourcecode language="css"] a:visited { color:
-red; } [/sourcecode] Pseudo elementine örnek: [sourcecode
-language="css"] p:first-line { font-weight: bold; } [/sourcecode] Pseudo
+Pseudo sınıfına örnek:  :::css
+     a:visited { color:
+red; }  Pseudo elementine örnek: [sourcecode
+language="css"] p:first-line { font-weight: bold; }  Pseudo
 sınıf ve elemtleri HTML class özelliği olarak belirtilmemiştir. Normal
 sınıflar pseudo sınıf ve elementleri ile kullanılabilir. [sourcecode
 language="css"] a.disariyalinkller:link, a.disariyalinkller:visited {
-color: maroon; } [/sourcecode] Aynı şekilde id seçicileri ile birlikte
-de kullanılabilirler [sourcecode language="css"] a#altkisim:link{
-font-weight: bold; } [/sourcecode] Pseudo sınıflarını da ikiye ayıra
+color: maroon; }  Aynı şekilde id seçicileri ile birlikte
+de kullanılabilirler    :::css
+     a#altkisim:link{
+font-weight: bold; }  Pseudo sınıflarını da ikiye ayıra
 biliriz. <strong>Link Pseduo Sınıfıları</strong> ve <strong>Dinamik Pseudo Sınıfları</strong></p>
 <h3>Link Pseudo sınıfı</h3>
 <p>Yanlızca linklere uygulanan iki Link Pseduo sınıfı vardır. <strong>:link</strong> ve
@@ -105,10 +107,12 @@ biliriz. <strong>Link Pseduo Sınıfıları</strong> ve <strong>Dinamik Pseudo S
 tanımlaması yapmak için kullanılır. Ancak bir çok web tarayıcısı yapılan
 stil tanımlarını ziyaret edilmiş sayfa linklerine de uygular. <strong>:visited
 -</strong> Henüz ziyaret edilmiş sayfa linklerine stil tanımlaması yapmak için
-kullanılır. [sourcecode language="css"] a:link { color: blue; }
-a:visited { color: red; } [/sourcecode] Bunun yerine genelde aşağıdaki
-gibi bir kod da kullanılır [sourcecode language="css"] a { color: blue;
-} a:visited { color: red; } [/sourcecode]Bu kodlama ile kullanıcaya
+kullanılır.     :::css
+     a:link { color: blue; }
+a:visited { color: red; }  Bunun yerine genelde aşağıdaki
+gibi bir kod da kullanılır  :::css
+     a { color: blue;
+} a:visited { color: red; } Bu kodlama ile kullanıcaya
 ziyaret ettiği sayfa linkleri farklı renkte gösterilerek içeriksel bir
 bilgi görsel olarak verilebilir.</p>
 <div class="tarayiciuyum">
@@ -135,11 +139,11 @@ içinse <strong>"link-visited- focus-hover-active."</strong> sıralaması yapıl
 stil atamak için kullanılır. <strong>:hover -</strong> Bir elementin üzerine Farenin
 imleci geldiğinde yapılacak tanımlama için Örn: bir linkin üzerine fare
 ile geldiğimizde renk değiştirmesini sağlamak için Linkler için genel
-kullanım [sourcecode language="css"] a:link { color: navy; } a:visited {
+kullanım    :::css
+     a:link { color: navy; } a:visited {
 color: gray; } a:hover { color: red; } a:active { color: yellow; }
-[/sourcecode] <strong>:focus</strong> için bir örnek verecek olursak [sourcecode
-language="css"] input:focus { background: silver; font-weight: bold; }
-[/sourcecode]</p>
+ <strong>:focus</strong> için bir örnek verecek olursak [sourcecode
+language="css"] input:focus { background: silver; font-weight: bold; }</p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
 
@@ -148,13 +152,14 @@ language="css"] input:focus { background: silver; font-weight: bold; }
 <h3>İlk Çocuk Elementi seçmek</h3>
 <p>Diğer bir pseudo sınıfımız <strong>:first-child</strong>'dır. <strong>first:child:</strong>
 Belirtilen elementin ilk Çocuk Elementine stil atamak için kullanılır.
-[sourcecode language="css"] p:first-child { font-weight: bold; }
-li:first-child { color:#f00; } [/sourcecode] [sourcecode
-language="html"] \&lt;div> \&lt;p>Bu paragraf ilk çocuk elementidir ve sonuç
-olarak kalın olacaktır\&lt;/p> \&lt;ul> \&lt;li>Bu liste ilk çocuk elementidir
-ve font rengi kırmızı olacak\&lt;/li> \&lt;li>Bu \&lt;strong>çocuk element
-\&lt;/strong>değil\&lt;/li> \&lt;li>Bu da değil\&lt;/li> \&lt;/ul> \&lt;p>Bu pragraf
-\&lt;em>bir\&lt;/em> çocuk element değil.\&lt;/p> \&lt;/div> [/sourcecode]</p>
+    :::css
+     p:first-child { font-weight: bold; }
+li:first-child { color:#f00; }  [sourcecode
+language="html"] <div> <p>Bu paragraf ilk çocuk elementidir ve sonuç
+olarak kalın olacaktır</p> <ul> <li>Bu liste ilk çocuk elementidir
+ve font rengi kırmızı olacak</li> <li>Bu <strong>çocuk element
+</strong>değil</li> <li>Bu da değil</li> </ul> <p>Bu pragraf
+<em>bir</em> çocuk element değil.</p> </div> </p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer 7.0+ Firefox+ Chrome+ Safari+
 Opera+
@@ -164,10 +169,10 @@ Opera+
 <h3>:lang Pseudo Sınıfı</h3>
 <p>Lang pseudo sınıfı içerikteki bir elemente farklı bir dil de yazmamızı
 sağlar. Atanabilecek dil listesi ve kullanılacak kısaltmalara <a href="http://www.dsv.su.se/~jpalme/ietf/language-codes.html">ISO 639
-and RFC 1776 standards</a> erişebilirsiniz. [sourcecode language="html"]
-\&lt;html> \&lt;head> \&lt;title>lang test\&lt;/title> \&lt;style type="text/css">
-p:lang(fr) { color: red; } \&lt;/style> \&lt;/head>\&lt;body> \&lt;p
-lang="fr">Bonjour le monde!\&lt;/p> \&lt;/body> \&lt;/html> [/sourcecode]</p>
+and RFC 1776 standards</a> erişebilirsiniz.  :::html</p>
+<p><html> <head> <title>lang test</title> <style type="text/css">
+p:lang(fr) { color: red; } </style> </head><body> <p
+lang="fr">Bonjour le monde!</p> </body> </html> </p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer 8.0+ Firefox+ Chrome+ Safari+
 Opera+
@@ -178,8 +183,9 @@ Opera+
 <p>CSS2.1 ile birlikte aynı seçiciye ait pseudo elemntlerini birleştirme
 özelliği de gelmiştir. Örneğin ziyaret edilmiş linklerin hover özelliği
 ile ziyaret edilmemiş linklerin hover özelliğini farklı atamak istesek
-[sourcecode language="css"] a:link:hover { color: red; } a:visited:hover
-{ color: pink; } [/sourcecode] Sıralama önemli değildir.</p>
+    :::css
+     a:link:hover { color: red; } a:visited:hover
+{ color: pink; }  Sıralama önemli değildir.</p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer 8.0+ Firefox+ Chrome+ Safari+
 Opera+
@@ -193,9 +199,11 @@ elemntlere yoktur. CSS2.1 de Dört adet Pseudo Element Seçicisi vardır:
 <h3>first-letter (ilk harf)</h3>
 <p>Bir blok-level elementin ilk harfine stil tanımlması yapmak için
 kullanılır. Örnek verecek olursak h1 elementinin baş harfinin büyük
-olması için : [sourcecode language="css"] h1:first-letter { font-size:
-200%; } [/sourcecode] [sourcecode language="html"] \&lt;h1>Bu büyük bir
-başlık\&lt;/h1> [/sourcecode]</p>
+olması için :   :::css
+     h1:first-letter { font-size:
+200%; }     :::html
+     <h1>Bu büyük bir
+başlık</h1> </p>
 <div class="tarayiciuyum">
 **Tarayıcı Uyumu:** Internet Explorer 7.0+ Firefox+ Chrome+ Safari+
 Opera+
@@ -205,7 +213,8 @@ Opera+
 <h3>first-line (ilk satır)</h3>
 <p>Bir metnin ilk elementine stil atamak için kullanılır. Örneğin
 paragraflarınızın ilk satırlarını renklendirmek isitiyorsunuz.
-[sourcecode language="css"] p:first-line { color: red; } [/sourcecode]</p>
+    :::css
+     p:first-line { color: red; } </p>
 <div class="tarayiciuyum">
 **Browser Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
 
@@ -214,10 +223,11 @@ paragraflarınızın ilk satırlarını renklendirmek isitiyorsunuz.
 <h3>before ve after elementleri</h3>
 <p>Bir elementin öncesine ve sonrasına bir içerik veya özellik eklemek için
 kullanılır. Notlarımızın başına otomatik oalrak Not yazmak için
-[sourcecode language="css"] P.not:before { content: "Not." }
-[/sourcecode] kodu yeterlidir. Aynı şekilde paragraflarımzın sonuna
-otomatik bitti yazıp nokta koymak istersek [sourcecode language="css"]
-body:after { content: " Bitti."; } [/sourcecode]yeterlidir.</p>
+    :::css
+     P.not:before { content: "Not." }
+ kodu yeterlidir. Aynı şekilde paragraflarımzın sonuna
+otomatik bitti yazıp nokta koymak istersek  :::css</p>
+<p>body:after { content: " Bitti."; } yeterlidir.</p>
 <div class="tarayiciuyum">
 **Browser Uyumu:** Internet Explorer 8.0+ Firefox+ Chrome+ Safari+
 Opera+

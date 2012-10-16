@@ -2,17 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/Ajax,%20Javascript.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2008-12-21T14:01:00+02:00</updated><entry><title>jQuery ve mootools birlikte kullanmak</title><link href="http://www.fatihhayrioglu.com/jquery-ve-mootools-birlikte-kullanmak/" rel="alternate"></link><updated>2008-12-21T14:01:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-12-21:jquery-ve-mootools-birlikte-kullanmak/</id><summary type="html">&lt;p&gt;Ben genellikle jQuery ile çalışıyorum, ama bazen diğer javascript
 kütüphaneleride kullanmak gerekiyor. Bende yeni projemde mootools'un
 multibox lightbox kolonunu kullandım. Tabi jquery ve mootools ile
-birlikte kullanmamdan dolayı hata vermeye başladı. Çözüm çok basit \$
+birlikte kullanmamdan dolayı hata vermeye başladı. Çözüm çok basit $
 işareti yerine jQuery yazmak yeterli. [sourcecode
-language='javascript']\$.ajax[/sourcecode] yerine [sourcecode
-language='javascript']jQuery.ajax[/sourcecode]&lt;/p&gt;</summary><category term="Javascript"></category><category term="jquery"></category><category term="mootools"></category></entry><entry><title>Javascript ipucu: Şartlı ifadelerin(if..else) kısa yazılımı</title><link href="http://www.fatihhayrioglu.com/javascript-ipucu-sartli-ifadelerinifelse-kisa-yazilimi/" rel="alternate"></link><updated>2008-04-09T00:02:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-04-09:javascript-ipucu-sartli-ifadelerinifelse-kisa-yazilimi/</id><summary type="html">&lt;p&gt;Bir çok kere lazım oldu ve aramak zorunda kaldım ve her aramam da 10-15
+language='javascript']$.ajax yerine [sourcecode
+language='javascript']jQuery.ajax&lt;/p&gt;</summary><category term="Javascript"></category><category term="jquery"></category><category term="mootools"></category></entry><entry><title>Javascript ipucu: Şartlı ifadelerin(if..else) kısa yazılımı</title><link href="http://www.fatihhayrioglu.com/javascript-ipucu-sartli-ifadelerinifelse-kisa-yazilimi/" rel="alternate"></link><updated>2008-04-09T00:02:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-04-09:javascript-ipucu-sartli-ifadelerinifelse-kisa-yazilimi/</id><summary type="html">&lt;p&gt;Bir çok kere lazım oldu ve aramak zorunda kaldım ve her aramam da 10-15
 dakika kaybettim. En sonun da buraya yazmaya karar verdim. Malum kendi
 sitemde aramak daha kolay ve hatırda kalıcı oluyor. Birde sizlere de
 yardımı dokunur bir ihtimal diye yazıyorum.&lt;/p&gt;
 &lt;p&gt;Javascript'te if..else şartlı ifadesini herkes biliyor.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="javascript"] if(kosul) { //kosulun gerçekleşmesi
-halinde olacak olay } else{ //kosulun gerçekleşmemesi halinde olacak
-olay }[/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;kosul&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;//kosulun gerçekleşmesi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;halinde olacak olay } else{ //kosulun gerçekleşmemesi halinde olacak
+olay }&lt;/p&gt;
 &lt;p&gt;Bu kodu bir kere yazmak sorun değil ama bir çok programcı bilir ki bu
 bir kodlama da sadece bir kere yazılmaz ve çok fazla yazıncada bıkkınlık
 verir. Bizi düşünene javascript geliştiricileri bunu da düşünerek bize
@@ -25,17 +28,16 @@ kısa bir yazım şekli sunmuşlar.&lt;/p&gt;
     durumu&lt;span style="color:#FF00FF; font-weight:bold"&gt;;&lt;/span&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Bir örnek yapalım.&lt;/p&gt;
-&lt;p&gt;[sourcecode language="javascript"] durum = (yas &gt;= 18) ? "yetişkin" :
-"küçük"; [/sourcecode]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nx"&gt;durum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;yas&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;18&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;yetişkin&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;"küçük"; &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;yas&lt;/strong&gt; değeri 18'den büyük ve eşit olması durumunda &lt;strong&gt;durum&lt;/strong&gt;
 değişikeninin değeri "yetişkin" değilse "küçük" olacaktır.&lt;/p&gt;
 &lt;h6&gt;Kaynaklar&lt;/h6&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=""&gt;http://javascriptant.com/articles/28/the-conditional-operator-ternary-operactor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Guide:Operators:Special_Operators][]&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://javascriptant.com/articles/28/the-conditional-operator-ternary-operactor"&gt;http://javascriptant.com/articles/28/the-conditional-operator-ternary-operactor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Guide:Operators:Special_Operators"&gt;http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Guide:Operators:Special_Operators&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;javascriptant&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;articles&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;28&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;conditional&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;operator&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ternary&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;operactor&lt;/span&gt;
-&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;developer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mozilla&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;en&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;docs&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Core_JavaScript_1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;5&lt;span class="n"&gt;_Guide&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;Operators&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;Special_Operators&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="if else"></category><category term="ipucu"></category><category term="Javascript"></category><category term="şarlı-ifadeler"></category></entry></feed>
+&lt;/p&gt;</summary><category term="if else"></category><category term="ipucu"></category><category term="Javascript"></category><category term="şarlı-ifadeler"></category></entry></feed>

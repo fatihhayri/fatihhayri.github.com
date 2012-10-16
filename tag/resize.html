@@ -83,7 +83,7 @@
 vermemizi sağlar. Kullanıcı bu elemanın boyutunu istediği gibi
 değiştirme imkanına kavuşur</p>
 <div class="cssozelliktanimi">
-**Yapısı:** resize: \<deger\>  
+**Yapısı:** resize: <deger>  
 **Aldığı Değerler:** both | horizontal | vertical | none | inherit  
 **Başlangıç Değeri:** none  
 **Uygulanabilen Elementler:** block-level ve replaced elementler, tablo
@@ -97,8 +97,10 @@ hücreleri ve inline block elementler
 <strong>vertical:</strong> dikeyde boyutlandırmaya izin verir.<br />
 <strong>none:</strong> boyutlandırma seçeneğini kaldırır<br />
 <strong>inherit:</strong> kalıtsal olarak bu değeri üst elementten alır.</p>
-<p>[css] div{ overfloaw:auto; /* bu tanim gerekli */ resize:both; }
-[/css]</p>
+<div class="codehilite"><pre> <span class="nt">div</span><span class="p">{</span> <span class="n">overfloaw</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span> <span class="c">/* bu tanim gerekli */</span> <span class="n">resize</span><span class="o">:</span><span class="k">both</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>overflow değeri scroll, auto veya hidden değerlerinde etki ederken
 overflow: visible tanımında ise etki yapmaz.</p>
 <p>Bu özellik Chrome ve Safaride textarea alanları için otomatik
@@ -106,30 +108,42 @@ gelmektedir. Tarayıcı bu eleman için bu değeri otomatik uygulamaktadır.
 Daha önce ipucu olarak <a href="http://www.fatihhayrioglu.com/css-ipucu-27-chrome-ve-safaride-textarea-genisletme-islevini-kaldirma/">yazdığım gibi</a> bu otomatik tanımı css ile
 kaldırabiliyoruz.</p>
 <p>Bir örnek yapalım</p>
-<p>[css] .icerik{ box-shadow: rgb(136, 136, 136) 5px 5px 5px;
-border-radius: 5px; resize: both; overflow: auto; border: 1px solid
-#dedede; padding:10px; width: 300px; height: 200px; } [/css]
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aDnP6/3/embedded/result,css,html"></iframe></p>
+<div class="codehilite"><pre> <span class="nc">.icerik</span><span class="p">{</span> <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">rgb</span><span class="p">(</span><span class="m">136</span><span class="o">,</span> <span class="m">136</span><span class="o">,</span> <span class="m">136</span><span class="p">)</span> <span class="m">5px</span> <span class="m">5px</span> <span class="m">5px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>border-radius: 5px; resize: both; overflow: auto; border: 1px solid</p>
+<h1>dedede; padding:10px; width: 300px; height: 200px; }</h1>
+<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aDnP6/3/embedded/result,css,html"></iframe></p>
 <p>Sadece bir yöne boyutlandırabiliyoruz</p>
-<p>[css] .siir{ width: 170px; height: 200px; resize: vertical; overflow:
-hidden; position: relative; padding: 0 25px; border: 1px solid #DDD;
-font-family: georgia, serif; } [/css]
+<div class="codehilite"><pre> <span class="nc">.siir</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">170px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> <span class="n">resize</span><span class="o">:</span> <span class="n">vertical</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span>
+</pre></div>
+
+
+<p>hidden; position: relative; padding: 0 25px; border: 1px solid #DDD;
+font-family: georgia, serif; } 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/k2wHc/2/embedded/result,css,html"></iframe></p>
 <p>min-height ve min-width değerleri ile boyutlandırmanın minimum
 değerlerini belirleyebiliyoruz. Anı şekilde max-height ve max-width
 değerleri ile de maksimum değerleri belirlenebilir. Bu özelliklerle
 kullanıcının sayfa görünümünü bozmasını engelleyebiliriz.<br />
 </p>
-<p>[css] .siir{ width: 170px; height: 200px; resize: vertical; overflow:
-hidden; position: relative; padding: 0 25px; border: 1px solid #DDD;
-font-family: georgia, serif; max-height: 650px; min-height: 200px; }
-[/css]
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/yLZDQ/embedded/result,css,html"></iframe></p>
+<div class="codehilite"><pre> <span class="nc">.siir</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">170px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> <span class="n">resize</span><span class="o">:</span> <span class="n">vertical</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span>
+</pre></div>
+
+
+<p>hidden; position: relative; padding: 0 25px; border: 1px solid #DDD;
+font-family: georgia, serif; max-height: 650px; min-height: 200px; }</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/yLZDQ/embedded/result,css,html"></iframe>
+
 <p>Resimler için güzel bir uygulama olabilir.</p>
-<p>[css] .vasak{ width: 200px; margin: 0 10px; height: 150px; resize: both;
-overflow: hidden; position: relative; padding: 15px; border: 1px solid
-#DDD; } .vasak img{ width:100%; height:auto; } [/css]
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Xk3Gr/1/embedded/result,css,html"></iframe></p>
+<div class="codehilite"><pre> <span class="nc">.vasak</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span> <span class="n">resize</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+</pre></div>
+
+
+<p>overflow: hidden; position: relative; padding: 15px; border: 1px solid</p>
+<h1 height:auto;="height:auto;" width:100%;="width:100%;">DDD; } .vasak img</h1>
+<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Xk3Gr/1/embedded/result,css,html"></iframe></p>
 <p></p>
 <div class="tarayiciuyum">
 <strong>Tarayıcı Desteği</strong><br />
@@ -153,7 +167,7 @@ görünse de Firefox desteği standartlaşması daha olasıdır.</p>
 <ul>
 <li><a href="http://www.css3.info/preview/resize/">http://www.css3.info/preview/resize/</a></li>
 <li><a href="http://www.impressivewebs.com/css3-resize/">http://www.impressivewebs.com/css3-resize/</a> (detaylı ve karşıt)</li>
-<li>[http://www.w3schools.com/cssref/css3_pr_resize.asp][]</li>
+<li><a href="http://www.w3schools.com/cssref/css3_pr_resize.asp">http://www.w3schools.com/cssref/css3_pr_resize.asp</a></li>
 <li><a href="http://www.w3.org/TR/css3-ui/">http://www.w3.org/TR/css3-ui/</a></li>
 <li><a href="http://www.cssplay.co.uk/menu/resize.html">http://www.cssplay.co.uk/menu/resize.html</a></li>
 <li><a href="https://developer.mozilla.org/en/CSS/resize">https://developer.mozilla.org/en/CSS/resize</a></li>
@@ -208,7 +222,11 @@ görünse de Firefox desteği standartlaşması daha olasıdır.</p>
 içeriklerdeki elemanlara bir olay atadığımızda(click, mouseover vd.)
 çalışmayacaktır. jQuery geliştiricileri bunun için live() fonksiyonunu
 geliştirmiş.</p>
-<p>[sourcecode language="javascript"] \$('a.acilSusam').live ...</p>
+<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a.acilSusam&#39;</span><span class="p">).</span><span class="nx">live</span><span class="p">(</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span>
+</pre></div>
+
+
+<p>function() { // yapilacak ...</p>
                 <a class="readmore" href=".././jquery-ipuclari-3/">read more</a>
                 <p>There are <a href=".././jquery-ipuclari-3/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

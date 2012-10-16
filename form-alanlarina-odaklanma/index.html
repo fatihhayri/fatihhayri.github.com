@@ -91,10 +91,13 @@ belirgin hale getirmeyi göreceğiz.<!--more--></p>
 <p>İlk örneğimiz. Bir arama metin kutusuna başlangıç değeri olarak
 açıklayaıcı bir bilgi gireceğiz ve kullanıcı bu alana
 odaklandığında(onfocus) metni sileceğiz.</p>
-<p>[sourcecode language="html"] \&lt;p> Ad Soyad\&lt;br /> \&lt;input type="text"
-id="ara" name="ara" value="Ara"
+<div class="codehilite"><pre> <span class="nt">&lt;p&gt;</span> Ad Soyad<span class="nt">&lt;br</span> <span class="nt">/&gt;</span> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span>
+</pre></div>
+
+
+<p>id="ara" name="ara" value="Ara"
 onfocus="if(this.value=='Ara'){this.value=''};"
-onblur="if(this.value==''){this.value='Ara'};" /> \&lt;/p> [/sourcecode]</p>
+onblur="if(this.value==''){this.value='Ara'};" /&gt; </p> </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/odaklanma_ornek.html">tıklayınız.</a></p>
 <p>metin kutusunun onfocus olayına eğer değer bizim girdiğimiz değer ise
 boşaltmasını söylüyoruz. Tabi birde kullanıcının bu metin kutusu dışına
@@ -104,12 +107,15 @@ atadğımız bağlangıç değeri(value="Ara") ile sorgudaki
 alanın(if(this.value=='')) bir biri ile aynı olmasıdır.</p>
 <p>İkinci örneğimizde bu efekte zemin rengi özelliğinide katarak daha güzel
 bir etki vereceğiz.</p>
-<p>[sourcecode language="html"] \&lt;p>Ad Soyad\&lt;br /> \&lt;input type="text"
-id="ara" name="ara" value="Ara"
+<div class="codehilite"><pre> <span class="nt">&lt;p&gt;</span>Ad Soyad<span class="nt">&lt;br</span> <span class="nt">/&gt;</span> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span>
+</pre></div>
+
+
+<p>id="ara" name="ara" value="Ara"
 onfocus="if(this.value=='Ara'){this.value='';
 this.style.backgroundColor='#efefef'};"
 onblur="if(this.value==''){this.value='Ara';
-this.style.backgroundColor='#ffffff'};" /> \&lt;/p> [/sourcecode]</p>
+this.style.backgroundColor='#ffffff'};" /&gt; </p> </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/odaklanma_ornek.html">tıklayınız.</a></p>
 <p>Burada dikkat edilecek konu onblur durumunda zemin rengini ilk haline
 döndürmektir.</p>
@@ -118,16 +124,19 @@ oluşmaz. Genelde bir çok metin kutusu, işaret kutusu, açılır menü gibi
 elemanların alt alta sıralanmasından oluşur. son örneğimizde bu
 elementler arasında kullanıcının odaklandığı elementini kapsayan alanın
 zemin rengini değiştirerek dikkati bu alana çekeceğiz.</p>
-<p>[sourcecode language="html"] \&lt;style type="text/css"> .odaklan{
-background-color: #FFFFE0; padding:10px 5px; border:1px solid #CCCCCC;
-} .normal{ background-color:#FFFFFF; padding:10px 5px; } \&lt;/style> \&lt;p
-class="normal">Ad Soyad\&lt;br /> \&lt;input type="text" id="ara" name="ara"
+<div class="codehilite"><pre> <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span><span class="err"> .odaklan{</span>
+</pre></div>
+
+
+<p>background-color: #FFFFE0; padding:10px 5px; border:1px solid #CCCCCC;
+} .normal{ background-color:#FFFFFF; padding:10px 5px; } </style> <p
+class="normal">Ad Soyad<br /> <input type="text" id="ara" name="ara"
 value="Ara" onfocus="if(this.value=='Ara'){this.value='';
 this.style.backgroundColor='#efefef';
 this.parentNode.className='odaklan'};"
 onblur="if(this.value==''){this.value='Ara';
 this.style.backgroundColor='#ffffff';
-this.parentNode.className='normal'};" /> \&lt;/p> [/sourcecode]</p>
+this.parentNode.className='normal'};" /> </p> </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/odaklanma_ornek.html">tıklayınız.</a></p>
 <p>Burada form alanına ve kapsayan paragrafa farklı renk atayarak daha
 fazla dikkat cekici lanlar oluşturduk.</p>
@@ -135,16 +144,22 @@ fazla dikkat cekici lanlar oluşturduk.</p>
 <p>Bu işlemleri aslında biz CSS ilede yapabiliriz. :focus özelliği bu
 işlevi görür, ancak bu özellikleri IE desteklemediği için bu özelliği
 kullanamıyoruz.</p>
-<p>[sourcecode language="css"] input:focus { background-color: #FFFFE0;
-color: white; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">input</span><span class="nd">:focus</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#FFFFE0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>color: white; } </p>
 <p>Bu kodu IE'nin desteklemesi için bir javascript kodu eklememiz
 gerekiyor.</p>
-<p>[sourcecode language="javascript"] sfFocus = function() { var sfEls =
-document.getElementsByTagName("INPUT"); for (var i=0; i\&lt;sfEls.length;
+<div class="codehilite"><pre> <span class="nx">sfFocus</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">sfEls</span> <span class="o">=</span>
+</pre></div>
+
+
+<p>document.getElementsByTagName("INPUT"); for (var i=0; i&lt;sfEls.length;
 i++) { sfEls[i].onfocus=function() { this.className+=" sffocus"; }
 sfEls[i].onblur=function() { this.className=this.className.replace(new
-RegExp(" sffocus\\b"), ""); } } } if (window.attachEvent)
-window.attachEvent("onload", sfFocus); [/sourcecode]</p>
+RegExp(" sffocusb"), ""); } } } if (window.attachEvent)
+window.attachEvent("onload", sfFocus); </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/odaklanma_ornek2.html">tıklayınız.</a></p>
 </p>
     </div><!-- /.entry-content -->

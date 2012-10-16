@@ -85,28 +85,38 @@
       <p>Daha önce <a href="http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/">Metin Yerine Resim ekleme</a> yöntemini anlatmıştım ve bir çok
 yerde örnekler ile göstermiştim. Bu yöntemin uygulandığı eleman içindeki
 metni ekran dışına çıkarmak için text-indent:-9999px değeri atarız.</p>
-<p>[sourcecode language="css"] h1 { text-indent: -9999px;
-background:url(selam.gif) no-repeat; width: 62px; height:19px; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background:url(selam.gif) no-repeat; width: 62px; height:19px; }</p>
 <p>Burada şöyle bir sorunumuz oluyor eğer bu elemana text-align:right
 tanımıda atamış isek. Maalesef metin ekran dışına çıkmıyor.</p>
-<p>[sourcecode language="css"] h1 { text-indent: -9999px;
-background:url(selam.gif) no-repeat; width: 62px; height:19px;
-text-align:right } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background:url(selam.gif) no-repeat; width: 62px; height:19px;
+text-align:right } </p>
 <p>Bu sorunu gidermek için sola dayalı sistemlerde negatif text-indent
 değeri veriyoruz, sağa dayalı sistemlerde de pozitif değer vererek bu
 durumu çözebiliyoruz. Bu çözüm yeni nesil tarayıcılarda sorun
 çıkarmazken İnternet Explore’da scroll çıkarmak kaydı ile sorun
 oluşturuyor.</p>
-<p>[sourcecode language="css"] h1 { text-indent: 9999px;
-background:url(selam.gif) no-repeat; width: 62px; height:19px; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">9999px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background:url(selam.gif) no-repeat; width: 62px; height:19px; }</p>
 <p>Tüm tarayıcılarda çözüm için ise yapmamız çok kolay bir şey aslında.
 text-align:left tanımı atamak. Metin yerine resim koyma metodu uygulanan
 metinlerin hizalaması sola olmalıdır.</p>
-<p>[sourcecode language="css"] h1 { text-indent: -999px;
-background:url(selam.gif) no-repeat; width: 62px; height:19px;
-text-align:left } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">-999px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background:url(selam.gif) no-repeat; width: 62px; height:19px;
+text-align:left } </p>
 <p>Bu sorun ile genelde metin yerine resim metodu uygulanmış elemanını
 kapsayan bir elemana text-align:right uygulandığında rastlarız.
 Kalıtsallık ile bu özellik tüm alt elemanlarınıda etkilediği için biz bu
@@ -114,12 +124,9 @@ elemana text-align:right değerini atamasak dahi elemanımız bu değeri üst
 elemanından kalıtsal olarak alır ve böyle bir soruna neden olur.</p>
 <h3>Kaynak:</h3>
 <ul>
-<li><a href="../static">http://indianapoliswebdesign.blogspot.com/2009/01/web-design-tips-text-replacement-with.html</a></li>
+<li><a href="http://indianapoliswebdesign.blogspot.com/2009/01/web-design-tips-text-replacement-with.html">http://indianapoliswebdesign.blogspot.com/2009/01/web-design-tips-text-replacement-with.html</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">indianapoliswebdesign</span><span class="p">.</span><span class="n">blogspot</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>01<span class="o">/</span><span class="n">web</span><span class="o">-</span><span class="n">design</span><span class="o">-</span><span class="n">tips</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">replacement</span><span class="o">-</span><span class="n">with</span><span class="p">.</span><span class="n">html</span>
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

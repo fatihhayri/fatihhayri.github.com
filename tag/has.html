@@ -108,13 +108,18 @@ elemanı yakalar alt elemanlarını yakalamaz.</p>
 tanımı ile en yakın bir sonraki secili sınıfı tanımlı li elemanını
 yakalayabiliriz.</p>
 <p>Bir örnek verelim.</p>
-<p>[sourcecode language="html"] \&lt;ul> \&lt;li>Adana\&lt;/li>
-\&lt;li>Ankara\&lt;/li> \&lt;li class="secili">İstanbul\&lt;/li>
-\&lt;li>İzmir\&lt;/li> \&lt;li>Trabzon\&lt;/li> \&lt;/ul> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;</span>Adana<span class="nt">&lt;/li&gt;</span>
+</pre></div>
+
+
+<p><li>Ankara</li> <li class="secili">İstanbul</li>
+<li>İzmir</li> <li>Trabzon</li> </ul> </p>
 <p>Şeklindeki bir html kodundan</p>
-<p>[sourcecode language="javascript"]
-\$('li.secili').next().css('border-bottom', '1px solid #999');
-[/sourcecode]</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<p>$('li.secili').next().css('border-bottom', '1px solid #999');</p>
 <p>next() fonksiyonu yardımı ile bir sonraki elemanı yakalayabiliriz.</p>
 <p><strong>prev() :</strong> prev fonksiyonu bir önceki elemanı yakalar. Sadece önceki
 elemanı yakalar alt elemanlarını yakalamaz.</p>
@@ -122,40 +127,55 @@ elemanı yakalar alt elemanlarını yakalamaz.</p>
 tanımı ile en yakın bir onceki secili sınıfı tanımlı li elemanını
 yakalayabiliriz.</p>
 <p>Bir örnek verelim.</p>
-<p>[sourcecode language="html"] \&lt;ul> \&lt;li>Adana\&lt;/li>
-\&lt;li>Ankara\&lt;/li> \&lt;li class="secili">İstanbul\&lt;/li>
-\&lt;li>İzmir\&lt;/li> \&lt;li>Trabzon\&lt;/li> \&lt;/ul> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;</span>Adana<span class="nt">&lt;/li&gt;</span>
+</pre></div>
+
+
+<p><li>Ankara</li> <li class="secili">İstanbul</li>
+<li>İzmir</li> <li>Trabzon</li> </ul> </p>
 <p>Şeklindeki bir html kodundan</p>
-<p>[sourcecode language="javascript"]
-\$('li.secili').prev().css('border-bottom', '1px solid #999');
-[/sourcecode]</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<p>$('li.secili').prev().css('border-bottom', '1px solid #999');</p>
 <p>prev() fonksiyonu yardımı ile bir önceki elemanı yakalayabiliriz.<br />
 </p>
 <h3><strong>3 - Üst Eleman Bulma - parent(), parents() ve closest()</strong></h3>
 <p><strong>parent()</strong></p>
 <p>Bir üst elemanı bulma. Geriye bir adet üst eleman döndürür.</p>
-<p>[sourcecode language="javascript"]
-\$('td.secili').parent().css('border-bottom', '#999');
-\$('div').parent('.large').css('font-size', '14px'); [/sourcecode]</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<p>$('td.secili').parent().css('border-bottom', '#999');
+$('div').parent('.large').css('font-size', '14px'); </p>
 <p>İlk kod üst elemanı yakalarken, ikinci satırda ise seçme işlemini biraz
 daha daraltarak .large sınıfı tanımlı olan üst  elmanı yakala diyoruz.</p>
 <p><strong>parents()</strong></p>
 <p>Belirlenen elemanın tüm üst elemanlarını bulmaya yarar.</p>
-<p>[sourcecode language="javascript"]
-\$('li').parents().css('background-color', 'red');
-\$('li').parents(&quot;ul&quot;).css('background-color', 'red');
-[/sourcecode]</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<p>$('li').parents().css('background-color', 'red');
+$('li').parents(&quot;ul&quot;).css('background-color', 'red');</p>
 <p>İlk satır li'nin tüm üst elemanlarını yakalarken, ikinci satır li'nin
 tüm <strong>ul</strong> etiketli üst elemanlarını yakalar.</p>
 <p><strong>closest()</strong></p>
 <p>En yakın üst elemanı bulmak içindir.</p>
-<p>[sourcecode language="javascript"] \$(document).ready(function() {
-\$('li.urunler').closest('ul').css('background-color', 'red'); });
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>$('li.urunler').closest('ul').css('background-color', 'red'); });</p>
 <p>HTML</p>
-<p>[sourcecode language="html"] \&lt;ul> \&lt;li>Üst Menü \&lt;ul> \&lt;li
-class="urunler">Ürün 1\&lt;/li> \&lt;li class="urunler">Ürün 2\&lt;/li>
-\&lt;/ul> \&lt;/li> \&lt;/ul> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;</span>Üst Menü <span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li</span>
+</pre></div>
+
+
+<p>class="urunler"&gt;Ürün 1</li> <li class="urunler">Ürün 2</li>
+</ul> </li> </ul> </p>
 <p>İçiçe girmiş birçok listede yukarıdaki tanım 'urunler' sınıfı
 tanımlanmış öğenin ilk üst ul elemanını yakalamamıza yardım eder.</p>
 <h3><strong>4 - Firebug ve console.log ile kodumuzu izlemek</strong></h3>
@@ -163,9 +183,11 @@ tanımlanmış öğenin ilk üst ul elemanını yakalamamıza yardım eder.</p>
 yakalama amacı ile console.log kullanıyoruz. Daha önceleri javascript
 ile kod yazarken alert fonksiyonun çok kullanırdım. Şimdi aynı işi
 <strong>console.log</strong> yapıyor ancak popup çıkarıp bizi rahatsız etmiyor.</p>
-<p>[sourcecode language="javascript"] var count = 0; while(count \&lt; 1000) {
-count++; console.log(count); setTimeout("takistHesapla";, 1000); }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="kd">var</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="k">while</span><span class="p">(</span><span class="nx">count</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">)</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>count++; console.log(count); setTimeout("takistHesapla";, 1000); }</p>
 <p>yazın ve Firebug'ın console sekmesine bakın. Bu kod Chrome'da da
 çalışıyor.</p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/console_log.html">tıklayınız.</a> Tabi <strong>takistHesapla</strong>diye bieşy
@@ -175,8 +197,11 @@ bulamadım diye size bin tane hata verecek oda gayet normal.</p>
 <p>jQuery 1.4 ile birlikte gelen yeni bir özellik olan delay()
 animasyonlarımıza belli bir süre ara vermemizi sağlat, daha önceleri bu
 işi yapmak için setTimeout metodunu kullanıyorduk.</p>
-<p>[sourcecode language="javascript"]
-\$("div").fadeIn().delay(4000).fadeOut(); [/sourcecode]</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<p>$("div").fadeIn().delay(4000).fadeOut(); </p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/delay_metodu.html">tıklayınız.</a></p>
 <p>seçtiğimiz katmana fadeIn efekti ver ve sonra 4000 milisaniye bekle ve
 sonra fadeOut efekti ver diyoruz.</p>
@@ -184,36 +209,32 @@ sonra fadeOut efekti ver diyoruz.</p>
 <p>jQuery 1.4 ile birlikte gelen bir başka yeni özellik <strong>has()</strong>
 metodudur. Daha önceki sürümlerde :has seçicisi vardı, şimdi <strong>has()</strong>
 metodu ile daha kolay yakalama işi yapabileceğiz.</p>
-<p>[sourcecode language="html"] \&lt;ul> \&lt;li>list item 1\&lt;/li> \&lt;li>list
-item 2 \&lt;ul> \&lt;li>list item 2-a\&lt;/li> \&lt;li>list item 2-b\&lt;/li>
-\&lt;/ul> \&lt;/li> \&lt;li>list item 3\&lt;/li> \&lt;li>list item 4\&lt;/li>
-\&lt;/ul> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;</span>list item 1<span class="nt">&lt;/li&gt;</span> <span class="nt">&lt;li&gt;</span>list
+</pre></div>
+
+
+<p>item 2 <ul> <li>list item 2-a</li> <li>list item 2-b</li>
+</ul> </li> <li>list item 3</li> <li>list item 4</li>
+</ul> </p>
 <p>Yukarıdaki kodda alt menüsü olan li elemanını yakalamak için bu metodu
 kullanabiliriz.</p>
-<p>[sourcecode language="javascript"]
-\$('li').has('ul').css('background-color', 'red'); [/sourcecode]</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<p>$('li').has('ul').css('background-color', 'red'); </p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/has_metodu.html">tıklayınız.</a></p>
 <p>Şeklinde altında ul etiketi olan li'leri ki burada bir tane var oda
 <strong>list item 2</strong> içeriğine sahip olandır.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="static">http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html</a></li>
-<li><a href="static">http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx</a></li>
-<li>[http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/][]</li>
+<li><a href="http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html" title="http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html">http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html</a></li>
+<li><a href="http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx" title="http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx">http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx</a></li>
+<li><a href="http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/" title="http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/">http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/</a></li>
 <li><a href="http://addyosmani.com/blog/31-jquery-snippets/" title="http://addyosmani.com/blog/31-jquery-snippets/">http://addyosmani.com/blog/31-jquery-snippets/</a></li>
-<li><a href="static">http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/</a></li>
+<li><a href="http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/" title="http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/">http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/</a></li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">tripwiremagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>10<span class="o">/</span><span class="n">jquery</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">general</span><span class="o">-</span><span class="n">javascript</span><span class="o">-</span><span class="n">tips</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">improve</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">code</span><span class="p">.</span><span class="n">html</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">tripwiremagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>10<span class="o">/</span><span class="n">jquery</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">general</span><span class="o">-</span><span class="n">javascript</span><span class="o">-</span><span class="n">tips</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">improve</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">code</span><span class="p">.</span><span class="n">html</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">tvidesign</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">improve</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">jquery</span><span class="o">-</span>25<span class="o">-</span><span class="n">excellent</span><span class="o">-</span><span class="n">tips</span><span class="p">.</span><span class="n">aspx</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">tvidesign</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">improve</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">jquery</span><span class="o">-</span>25<span class="o">-</span><span class="n">excellent</span><span class="o">-</span><span class="n">tips</span><span class="p">.</span><span class="n">aspx</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">webdevmania</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span><span class="n">top_10_jquery_snippets_including_jquery_1</span><span class="p">.</span>4<span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">webdevmania</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span><span class="n">top_10_jquery_snippets_including_jquery_1</span><span class="p">.</span>4<span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>08<span class="o">/</span>04<span class="o">/</span><span class="n">commonly</span><span class="o">-</span><span class="n">confused</span><span class="o">-</span><span class="n">bits</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">jquery</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>08<span class="o">/</span>04<span class="o">/</span><span class="n">commonly</span><span class="o">-</span><span class="n">confused</span><span class="o">-</span><span class="n">bits</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">jquery</span><span class="o">/</span>&quot;
-</pre></div><p>There are <a href=".././jquery-ipuclari-4/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././jquery-ipuclari-4/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

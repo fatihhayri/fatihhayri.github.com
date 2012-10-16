@@ -88,9 +88,12 @@ komşu metinlerin maruz kaldığı bir hatadır. Örneği bir elementinize
 istediğinizde, ie5-6 versiyonlarında soldaki float uygulanmış element
 içeriği boyunda sağdaki metin soldan 3 piksel kadar içeriğini
 öteleyecektir. <!--more--></p>
-<p>[sourcecode language="css"] .solKolon { float: left; width: 200px;
-background-color:#00CCFF; } p { margin-left: 200px;
-background-color:#CCCCCC; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.solKolon</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background-color:#00CCFF; } p { margin-left: 200px;
+background-color:#CCCCCC; } </p>
 <p><img alt="" src="../static/dokumanlar/3piksel_sorunu.gif" /></p>
 <p>Başlangıç olarak değişen içeriğine göre yükselik alan metin
 alanına(sağdaki metin) müdahale edeceğiz. Görünüm olarak 3 piksellik
@@ -99,32 +102,43 @@ yorumlar, elementin yüksekliğine küçük bir değer(<strong>height:1%</strong
 atadığımızda bu elementin boyutunu değiştirmeyecektir. Bu atama diğer
 web tarayıcılarını etkileyecektir bu nedenle diğer web tarayıcılarından
 bu kodu gizlemeliyiz.</p>
-<p>[sourcecode language="css"] /* E5-Mac gizleyelim. sadece IE-Win görsün
-bu kodu. \*/ * html p { height: 1%; } /* IE5/Mac den gizlemeye son
-*/ [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">/*</span> <span class="nt">E5-Mac</span> <span class="nt">gizleyelim</span><span class="o">.</span> <span class="nt">sadece</span> <span class="nt">IE-Win</span> <span class="nt">g</span><span class="err">ö</span><span class="nt">rs</span><span class="err">ü</span><span class="nt">n</span>
+</pre></div>
+
+
+<p>bu kodu. <em>/ * html p { height: 1%; } /</em> IE5/Mac den gizlemeye son
+*/ </p>
 <p><img alt="" src="../static/dokumanlar/3piksel_sorunu2.gif" /></p>
 <p>Ancak şöyle bir sorunumuz daha var ki <a href="http://www.fatihhayrioglu.com/ieda-ikikat-gorulen-margin-problemi-ve-cozumu/">önceki konulardan</a> bildiğimiz
 gibi bu alana float uygulandığında <strong>margin-left:200px</strong> tanımını IE iki
 kat görecektir bunu engellemek için <strong>margin-left</strong> değerini
 sıfırlamalıyız.</p>
-<p>[sourcecode language="css"] /* E5-Mac gizleyelim. sadece IE-Win görsün
-bu kodu. \*/ * html p { height: 1%; margin-left: 0; } /* IE5/Mac den
-gizlemeye son */ [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="o">/*</span> <span class="nt">E5-Mac</span> <span class="nt">gizleyelim</span><span class="o">.</span> <span class="nt">sadece</span> <span class="nt">IE-Win</span> <span class="nt">g</span><span class="err">ö</span><span class="nt">rs</span><span class="err">ü</span><span class="nt">n</span>
+</pre></div>
+
+
+<p>bu kodu. <em>/ * html p { height: 1%; margin-left: 0; } /</em> IE5/Mac den
+gizlemeye son */ </p>
 <p>İçerideki boşluğu aldık ancak elementler arasında boşluk kaldı bunu
 kaldırmak için sağ margin değerine -3 piksel atama yapmalıyız.</p>
-<p>[sourcecode language="html"] /* E5-Mac gizleyelim. sadece IE-Win görsün
-bu kodu. \*/ * html p { height: 1%; margin-left: 0; } * html
-.solKolon { margin-right: -3px; } /* IE5/Mac den gizlemeye son */
-[/sourcecode]</p>
+<div class="codehilite"><pre> /* E5-Mac gizleyelim. sadece IE-Win görsün
+</pre></div>
+
+
+<p>bu kodu. <em>/ * html p { height: 1%; margin-left: 0; } * html
+.solKolon { margin-right: -3px; } /</em> IE5/Mac den gizlemeye son */</p>
 <p>Bu tüm sorunlarımız çözecektir. Tabi float uygulanan elementin içinde
 resim yoksa. Resmin olduğu durumlarda sorun olacaktır. Bu sorunu çözmek
 için IE5/Win için resmin sağına ve soluna -3 piksel margin ataması
 yapmalıyız. IE6 bu margin'leri görmemelidir. Bunun için kodumuz şöyle
 olacaktır:</p>
-<p>[sourcecode language="html"] /* E5-Mac gizleyelim. sadece IE-Win görsün
-bu kodu. \*/ * html p { height: 1%; margin-left: 0; } * html
-img.solKolon { margin: 0 -3px; ma\rgin: 0; } /* IE5/Mac den gizlemeye
-son */ [/sourcecode]</p>
+<div class="codehilite"><pre> /* E5-Mac gizleyelim. sadece IE-Win görsün
+</pre></div>
+
+
+<p>bu kodu. <em>/ * html p { height: 1%; margin-left: 0; } * html
+img.solKolon { margin: 0 -3px; margin: 0; } /</em> IE5/Mac den gizlemeye
+son */ </p>
 <p>Biliyorum bu kod bizim sade ve temiz kod mantığımıza çok ters ama
 yapılabilecek pek bir şey de yok. Bu CSS'in sorunu değil tamamen IE'nin
 sorunundan kaynaklanıyor.</p>

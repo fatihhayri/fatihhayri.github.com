@@ -101,7 +101,7 @@ Safari sonradan destekledi. Şu an ki durumda kullanmak mümkün olsa da
 bence en az 4-5 aylık(Firefox'un eski sürümlerinin yerini Firefox 3.5
 alması için) bir süre sonra tam anlamıyla bir projede kullanılabilir.
 Tabi tek sorunumuz bu ise.</p>
-<p>![fontface_destek_tablosu][]</p>
+<p><img alt="fontface_destek_tablosu" src="http://www.fatihhayrioglu.com/wp-content/fontface_destek_tablosu.gif" title="fontface_destek_tablosu" /></p>
 <p>Kaynak: <a href="http://en.wikipedia.org/wiki/Web_typography" title="Vikipedia">Vikipedia</a></p>
 <!--more-->
 
@@ -163,22 +163,26 @@ Ethan  </p>
 <h3>@font-face Kodu</h3>
 <p>Evet yazı tipi dosyalarımız hazırsa kodumuzu yazmaya başlayabiliriz.
 @font-face kod yapısı</p>
-<p>[sourcecode language="css"] @font-face { font-family: Gentium; src:
-url(http://site/fonts/Gentium.ttf); } p { font-family: Gentium, serif; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span> <span class="nt">Gentium</span><span class="o">;</span> <span class="nt">src</span><span class="o">:</span>
+</pre></div>
+
+
+<p>url(http://site/fonts/Gentium.ttf); } p { font-family: Gentium, serif; }</p>
 <p>Kod yapımız iki kısımdan oluşmaktadır. İlk başta özel yazı tipimizi
 sisteme yüklüyoruz. Sonra da bu yazı tipini kullanıyoruz. </p>
 <p>Ancak durum bu kadar kolay değil. Buradan itibaren ie kendini gösteriyor
 ve farklı yazı tipi ile farklı kod yazmamız gerekiyor. Bundan başka bir
 kaç sorunuda gidermek için <a href="http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/" title="Paul Irish">Paul Irish</a>'in yazdığı makaleden
 çıkardığımız kod:</p>
-<p>[sourcecode language="css"] @font-face { font-family: 'Graublau Web';
-src: url('GraublauWeb.eot'); src: local('Graublau Web Regular'),
+<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;Graublau Web&#39;</span><span class="o">;</span>
+</pre></div>
+
+
+<p>src: url('GraublauWeb.eot'); src: local('Graublau Web Regular'),
 local('Graublau Web'), url('GraublauWeb.woff') format('woff'),
 url('GraublauWeb.svg#GraublauWeb') format('svg'),
 url('GraublauWeb.otf') format('opentype'); font-weight: normal;
-font-style: normal; } p { font-family: "Graublau Web", serif; }
-[/sourcecode]</p>
+font-style: normal; } p { font-family: "Graublau Web", serif; }</p>
 <p>11 Kasım 2011 eklendi: font-weight: normal; font-style: normal;
 Chrome'un kalın ve normal anlama problemi nedeni ile eklendi.</p>
 <p>Bu kodlamanın özel yazı tipini sisteme tanıtırken ilk olarak .eot
@@ -197,19 +201,25 @@ uzantılı yazı tipim var.</p>
 <a href="http://onlinefontconverter.com/">http://onlinefontconverter.com/</a> ve <a href="http://www.font2web.com/">http://www.font2web.com/</a>
 diğer farklı yazı tipi üretme araçları</p>
 <p>.ttf ve .eot uzantılı dosyalarım hazırsa kodu yazmaya başlayabiliriz.</p>
-<p>[sourcecode language="css"] @font-face { font-family: 'TR Centurion Old
-Italic'; src: url('TR_Centurion_Old_Italik.eot'); src: local('TR
+<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span> <span class="err">&#39;</span><span class="nt">TR</span> <span class="nt">Centurion</span> <span class="nt">Old</span>
+</pre></div>
+
+
+<p>Italic'; src: url('TR_Centurion_Old_Italik.eot'); src: local('TR
 Centurion Old Italic'), local('TRCenturionOldItalic'),
 url('TR_Centurion_Old_Italik.woff') format('woff'),
 url('TR_Centurion_Old_Italik.svg#TRCenturionOldItalic')
 format('svg'), url('TR_Centurion_Old_Italik.TTF') format('truetype');
-} [/sourcecode]</p>
+} </p>
 <p>Daha sonra bu yazı tipini sayfamızda kullanabiliriz.</p>
-<p>[sourcecode language="css"] h1{font:44px 'TR Centurion Old Italic',
-Arial, sans-serif; color:#1259C7;} h3{font:24px 'TR Centurion Old
+<div class="codehilite"><pre> <span class="nt">h1</span><span class="p">{</span><span class="k">font</span><span class="o">:</span><span class="m">44px</span> <span class="s1">&#39;TR Centurion Old Italic&#39;</span><span class="o">,</span>
+</pre></div>
+
+
+<p>Arial, sans-serif; color:#1259C7;} h3{font:24px 'TR Centurion Old
 Italic', Arial, sans-serif; color:#1259C7;}
 p.ilkParagraf{font:16px/1.5em 'TR Centurion Old Italic', Arial,
-sans-serif;} [/sourcecode]</p>
+sans-serif;} </p>
 <p>Örnek sayfayı görmek için <a href="../static/dokumanlar/font_face/ornek.html">tıklayınız.</a> Yazı tipi özgürlüğüne hoş
 geldiniz. </p>
 <h3>@font-face Yükleme Zamanı</h3>
@@ -314,8 +324,8 @@ aksaklığımız oldu ise affola.</p>
 <li><a href="http://www.useragentman.com/blog/2009/09/20/font-face-in-depth/" title="http://www.useragentman.com/blog/2009/09/20/font-face-in-depth/">http://www.useragentman.com/blog/2009/09/20/font-face-in-depth/</a>
     (ayrıntılı makale)</li>
 <li><a href="http://nickcowie.com/2008/font-face/" title="http://nickcowie.com/2008/font-face/">http://nickcowie.com/2008/font-face/</a></li>
-<li>[http://www.w3.org/TR/css3-webfonts/#font-descriptions][]</li>
-<li><a href="../static">http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/</a>
+<li><a href="http://www.w3.org/TR/css3-webfonts/#font-descriptions" title="http://www.w3.org/TR/css3-webfonts/#font-descriptions">http://www.w3.org/TR/css3-webfonts/#font-descriptions</a></li>
+<li><a href="http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/" title="http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/">http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/</a>
     (kod yapısı)</li>
 <li><a href="http://www.kadirgunay.com/font-face-kullanimi-ve-kolayliklari.html" title="http://www.kadirgunay.com/font-face-kullanimi-ve-kolayliklari.html">http://www.kadirgunay.com/font-face-kullanimi-ve-kolayliklari.html</a></li>
 <li><a href="http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/" title="http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/">http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/</a>
@@ -324,23 +334,23 @@ aksaklığımız oldu ise affola.</p>
     için)</li>
 <li><a href="http://craigmod.com/journal/font-face/" title="http://craigmod.com/journal/font-face/">http://craigmod.com/journal/font-face/</a></li>
 <li><a href="http://nimbupani.com/blog/font-in-your-face.html" title="http://nimbupani.com/blog/font-in-your-face.html">http://nimbupani.com/blog/font-in-your-face.html</a></li>
-<li><a href="../static">http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/</a>
+<li><a href="http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/" title="http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/">http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/</a>
     (detaylı anlatım)<br />
 </li>
 <li><a href="http://www.zeldman.com/2009/08/17/web-fonts-and-standards/" title="http://www.zeldman.com/2009/08/17/web-fonts-and-standards/">http://www.zeldman.com/2009/08/17/web-fonts-and-standards/</a></li>
-<li><a href="../static">http://blog.themeforest.net/tutorials/css-font-face-and-15-free-fonts-you-can-use-today/</a></li>
+<li><a href="http://blog.themeforest.net/tutorials/css-font-face-and-15-free-fonts-you-can-use-today/" title="http://blog.themeforest.net/tutorials/css-font-face-and-15-free-fonts-you-can-use-today/">http://blog.themeforest.net/tutorials/css-font-face-and-15-free-fonts-you-can-use-today/</a></li>
 <li><div>
-    <a href="../static">http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/</a>(hız)
+    <a href="http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/" title="http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/">http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/</a>(hız)
     </div></li>
-<li>[http://snook.ca/archives/html_and_css/becoming-a-font-embedding-master][]</li>
-<li>[http://randsco.com/index.php/2009/09/04/better_font_face_syntax][]</li>
+<li><a href="http://snook.ca/archives/html_and_css/becoming-a-font-embedding-master" title="http://snook.ca/archives/html_and_css/becoming-a-font-embedding-master">http://snook.ca/archives/html_and_css/becoming-a-font-embedding-master</a></li>
+<li><a href="http://randsco.com/index.php/2009/09/04/better_font_face_syntax" title="http://randsco.com/index.php/2009/09/04/better_font_face_syntax">http://randsco.com/index.php/2009/09/04/better_font_face_syntax</a></li>
 <li><a href="http://hacks.mozilla.org/2009/10/font-control-for-designers/" title="http://hacks.mozilla.org/2009/10/font-control-for-designers/">http://hacks.mozilla.org/2009/10/font-control-for-designers/</a>
     (Firefox 3.6 ile yeni font tipi desteği)</li>
 <li><a href="http://www.font-face.com/" title="http://www.font-face.com/">http://www.font-face.com/</a></li>
 <li><a href="http://www.alistapart.com/articles/cssatten" title="http://www.alistapart.com/articles/cssatten">http://www.alistapart.com/articles/cssatten</a></li>
-<li><a href="../static">http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work</a></li>
+<li><a href="http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work" title="http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work">http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work</a></li>
 <li><a href="http://reference.sitepoint.com/css/at-fontface" title="http://reference.sitepoint.com/css/at-fontface">http://reference.sitepoint.com/css/at-fontface</a></li>
-<li><a href="../static">http://www.seomium.com/xhtml-css-javascript-kodlama/ucretsiz-ve-yasal-fontlarla-font-face-kullanimi.html</a></li>
+<li><a href="http://www.seomium.com/xhtml-css-javascript-kodlama/ucretsiz-ve-yasal-fontlarla-font-face-kullanimi.html" title="http://www.seomium.com/xhtml-css-javascript-kodlama/ucretsiz-ve-yasal-fontlarla-font-face-kullanimi.html">http://www.seomium.com/xhtml-css-javascript-kodlama/ucretsiz-ve-yasal-fontlarla-font-face-kullanimi.html</a></li>
 <li><a href="http://randsco.com/index.php/2009/07/04/p680" title="http://randsco.com/index.php/2009/07/04/p680">http://randsco.com/index.php/2009/07/04/p680</a></li>
 <li><a href="http://opentype.info/demo/webfontdemo.html" title="http://opentype.info/demo/webfontdemo.html">http://opentype.info/demo/webfontdemo.html</a> (örnek)</li>
 <li><a href="http://devfiles.myopera.com/articles/593/webfonts.html" title="http://devfiles.myopera.com/articles/593/webfonts.html">http://devfiles.myopera.com/articles/593/webfonts.html</a> (örnek)</li>
@@ -352,32 +362,14 @@ aksaklığımız oldu ise affola.</p>
     hakkında bilgi)<br />
 </li>
 <li><a href="http://www.phpied.com/gzip-your-font-face-files/" title="http://www.phpied.com/gzip-your-font-face-files/">http://www.phpied.com/gzip-your-font-face-files/</a> (optimizasyon)</li>
-<li><a href="../static">http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/</a></li>
+<li><a href="http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/" title="http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/">http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/</a></li>
 <li><a href="http://paulirish.com/2009/the-direction-forward-with-web-fonts/" title="http://paulirish.com/2009/the-direction-forward-with-web-fonts/">http://paulirish.com/2009/the-direction-forward-with-web-fonts/</a></li>
 <li><a href="http://spyrestudios.com/21-awesome-font-face-embedable-typefaces/" title="http://spyrestudios.com/21-awesome-font-face-embedable-typefaces/">http://spyrestudios.com/21-awesome-font-face-embedable-typefaces/</a>
     (örnekler)<br />
 </li>
-<li><a href="../static">http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/</a></li>
+<li><a href="http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/" title="http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/">http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">paulirish</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span><span class="n">bulletproof</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">implementation</span><span class="o">-</span><span class="n">syntax</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">paulirish</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span><span class="n">bulletproof</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">implementation</span><span class="o">-</span><span class="n">syntax</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">opentype</span><span class="p">.</span><span class="n">info</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>07<span class="o">/</span>29<span class="o">/</span><span class="nb">why</span><span class="o">-</span><span class="n">webfont</span><span class="o">-</span><span class="n">services</span><span class="o">-</span><span class="n">are</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">future</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">fonts</span><span class="o">-</span><span class="n">on</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">web</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">opentype</span><span class="p">.</span><span class="n">info</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>07<span class="o">/</span>29<span class="o">/</span><span class="nb">why</span><span class="o">-</span><span class="n">webfont</span><span class="o">-</span><span class="n">services</span><span class="o">-</span><span class="n">are</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">future</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">fonts</span><span class="o">-</span><span class="n">on</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">web</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">themeforest</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">and</span><span class="o">-</span>15<span class="o">-</span><span class="n">free</span><span class="o">-</span><span class="n">fonts</span><span class="o">-</span><span class="n">you</span><span class="o">-</span><span class="n">can</span><span class="o">-</span><span class="n">use</span><span class="o">-</span><span class="n">today</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">themeforest</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">and</span><span class="o">-</span>15<span class="o">-</span><span class="n">free</span><span class="o">-</span><span class="n">fonts</span><span class="o">-</span><span class="n">you</span><span class="o">-</span><span class="n">can</span><span class="o">-</span><span class="n">use</span><span class="o">-</span><span class="n">today</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">stevesouders</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>10<span class="o">/</span>13<span class="o">/</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">performance</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">stevesouders</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>2009<span class="o">/</span>10<span class="o">/</span>13<span class="o">/</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">performance</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">snook</span><span class="p">.</span><span class="n">ca</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span><span class="n">html_and_css</span><span class="o">/</span><span class="n">becoming</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">embedding</span><span class="o">-</span><span class="n">master</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">snook</span><span class="p">.</span><span class="n">ca</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span><span class="n">html_and_css</span><span class="o">/</span><span class="n">becoming</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">embedding</span><span class="o">-</span><span class="n">master</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">jontangerine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span>2008<span class="o">/</span>10<span class="o">/</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">ie</span><span class="o">-</span><span class="n">making</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">fonts</span><span class="o">-</span><span class="n">work</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">jontangerine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span>2008<span class="o">/</span>10<span class="o">/</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">ie</span><span class="o">-</span><span class="n">making</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="n">fonts</span><span class="o">-</span><span class="n">work</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">seomium</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">xhtml</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">javascript</span><span class="o">-</span><span class="n">kodlama</span><span class="o">/</span><span class="n">ucretsiz</span><span class="o">-</span><span class="n">ve</span><span class="o">-</span><span class="n">yasal</span><span class="o">-</span><span class="n">fontlarla</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">kullanimi</span><span class="p">.</span><span class="n">html</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">seomium</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">xhtml</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">javascript</span><span class="o">-</span><span class="n">kodlama</span><span class="o">/</span><span class="n">ucretsiz</span><span class="o">-</span><span class="n">ve</span><span class="o">-</span><span class="n">yasal</span><span class="o">-</span><span class="n">fontlarla</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">kullanimi</span><span class="p">.</span><span class="n">html</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">themeforest</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">achieve</span><span class="o">-</span><span class="nb">cross</span><span class="o">-</span><span class="n">browser</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">support</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">themeforest</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">achieve</span><span class="o">-</span><span class="nb">cross</span><span class="o">-</span><span class="n">browser</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">face</span><span class="o">-</span><span class="n">support</span><span class="o">/</span>&quot;
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

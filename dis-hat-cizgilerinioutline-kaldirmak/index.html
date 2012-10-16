@@ -97,9 +97,9 @@ yerine resim koyma metotlarınında etkisi var. Aşağıda benimde
 kullandığım metin yerine resim koyma metodunu kullanarak yaptığım
 örnekler.</p>
 <ul>
-<li><a href="../static">http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/</a></li>
-<li><a href="../static">http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/</a></li>
-<li>[http://www.fatihhayrioglu.com/dokumanlar/basit_resimli_menu.html][]</li>
+<li><a href="http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/" title="http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/">http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/</a></li>
+<li><a href="http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/" title="http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/">http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/</a></li>
+<li><a href="http://www.fatihhayrioglu.com/dokumanlar/basit_resimli_menu.html" title="http://www.fatihhayrioglu.com/dokumanlar/basit_resimli_menu.html">http://www.fatihhayrioglu.com/dokumanlar/basit_resimli_menu.html</a></li>
 </ul>
 <p>text-indent:-9999px  ile görünmez yaptığımız metinleri outline ile
 görünür hale getirdiğimizde pek hoş görüntüler ile karşılaşmayız.</p>
@@ -111,12 +111,18 @@ ile sadece sayfa içindeki form elemanlarında gezebiliyoruz.</p>
 elemanlarını seçince sola doğru uzayarak çıkan kesikli çizgi yoksa ie ve
 chrome daki gibi elemanı saran kesikli çizgi bence kötü görünmüyor.
 Firefox'daki bu sorunu çözmek için bir kod var.</p>
-<p>[sourcecode language="css"] a{visibility:hidden} [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="p">{</span><span class="k">visibility</span><span class="o">:</span><span class="k">hidden</span><span class="p">}</span>
+</pre></div>
+
+
 <p>tanımı ie ve chrome gibi göstermesini sağlıyor.</p>
 <p><img alt="outline çizgi düzeltme" src="../static/images/outline_cizgi_ff.gif" /></p>
 <p>Bide bu çizgileri hiç görmek istemeyenler var. Bunu engellemenin en
 kolay yolu outline:none veya outline:0 tanımlarıdır.</p>
-<p>[sourcecode language="css"] a{outline:none} [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="p">{</span><span class="k">outline</span><span class="o">:</span><span class="k">none</span><span class="p">}</span>
+</pre></div>
+
+
 <p>Bu tanım bir çok css sıfırlama tekniğinde yer almaktadır. Örneğin <a href="http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/" title="Eric Meyer">Eric
 Meyer</a>'in sıfırlama tekniğinde. Bu yöntem bir çok yerde çözüm olarak
 sunulmaktadır. Kaynaklar kısmındaki linkler bunlardan bir kaçı.</p>
@@ -132,15 +138,20 @@ her bastığımızda nerede olduğumuzu kestirmekte zorlanıyoruz. Burada tek
 yardımcımız alttaki tarayıcı çubuğunda her tab tuşuna bastığımızda
 bağlantıdan bağlantıya geçişlerde durum çubuğunda bağlantıların
 gösterilmesidir.</p>
-<p>[sourcecode language="css"] a {color: #004276; text-decoration: none;
-outline: none; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span> <span class="p">{</span><span class="k">color</span><span class="o">:</span> <span class="m">#004276</span><span class="p">;</span> <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+</pre></div>
+
+
+<p>outline: none; } </p>
 <p>tanımı nedeni ile dış hat çizgileri bize yardımcı olmayacaktır. </p>
 <p>Şimdi <a href="http://webaim.org/" title="webaim.org/">webaim.org/</a> adresine girince klavyeden siteyi gezin. Bu sitede
 outline değeri standart bırakılmış ve ayrıca odaklanmalar için ayrı bir
 tanım yapılmıştır. </p>
-<p>[sourcecode language="css"] a:active, a:focus, a:hover {
-background-color:#FFFFCC; color:#BF1722; text-decoration:underline; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nd">:active</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>background-color:#FFFFCC; color:#BF1722; text-decoration:underline; }</p>
 <p>Tanımları yardımı ile odaklanılan bağlantılar daha belirgin hale
 getirilmiştir. Böylece klavyesi ile siteyi gezmeye çalışan insanlara
 rahatlık sağlanmış olur.</p>
@@ -154,7 +165,7 @@ mecrasında ileride daha etkin bir klavye kullanım oranlarına
 ulaşabiliriz. </p>
 <h3>Sonuç</h3>
 <p>Sonuçta her iki görüşü savunanlar için bir çözüm üretmeye çalışırsak;</p>
-<p><a href="../static">http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/</a>
+<p><a href="http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/" title="http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/">http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/</a>
 makalesinde anlattığımı örnek üzerinden devam edelim. </p>
 <p><img alt="" src="../static/images/outline_kaldir1.gif" /></p>
 <p>yukarı görüldüğü gibi bir  sonuç çıkıyor. Kare olan menülerde o kadar
@@ -164,11 +175,14 @@ daha kötü bir görüntüye neden oluyor.</p>
 içinde bir çözüm üretelim. Farenin üzerine geldiği hali(:hover)
 klavyenin tab'ı ile geldiğinde de uygulayalım. outline'ı kaldıralım
 tabi.</p>
-<p>[sourcecode language="css"] a.anasayfayaDon { display: block; width:
-80px; height: 80px; background: url(images/degisen_resim.gif) 0 0
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.anasayfayaDon</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span>
+</pre></div>
+
+
+<p>80px; height: 80px; background: url(images/degisen_resim.gif) 0 0
 no-repeat; text-decoration: none; text-indent:-999px; }
 a:hover.anasayfayaDon, a:focus.anasayfayaDon { background-position:
--80px 0; outline:none; } [/sourcecode]</p>
+-80px 0; outline:none; } </p>
 <p><img alt="" src="../static/images/outline_kaldir2.gif" /></p>
 <p>Şeklinde görünecektir. Bu görüntüyü Firefox, Google Chrome ve ie8'de
 aldım.</p>
@@ -176,10 +190,12 @@ aldım.</p>
 sınıfını kullanacağız. Buna rağmen olmayacaktır. outline özelliklerini
 desteklemeyen ie 6 ve ie7'de ise hala outline kesikli çizgilerinin
 görülmesi ilginç.  Bunun içinde şöyle bir çözüm yolu var. </p>
-<p>[sourcecode language="css"] a:hover.anasayfayaDon,
-a:focus.anasayfayaDon, a:active.anasayfayaDon { background-position:
--80px 0; outline:expression(hideFocus='true'); outline:none; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nd">:hover</span><span class="nc">.anasayfayaDon</span><span class="o">,</span>
+</pre></div>
+
+
+<p>a:focus.anasayfayaDon, a:active.anasayfayaDon { background-position:
+-80px 0; outline:expression(hideFocus='true'); outline:none; }</p>
 <p>expression özelliğini sadece ie destekliyor. Daha önce bahsetmiştik. Bu
 bir bakıma css içinde javascript çalıştırmak gibi bir şeydir. Bu kod
 sonunda örneğimiz ie de de çalışacaktır.</p>
@@ -188,42 +204,24 @@ sonunda örneğimiz ie de de çalışacaktır.</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://css-tricks.com/removing-the-dotted-outline/" title="http://css-tricks.com/removing-the-dotted-outline/">http://css-tricks.com/removing-the-dotted-outline/</a></li>
-<li><a href="../static">http://snipplr.com/view/15704/eliminating-the-dotted-line-box-that-appears-around-a-link/</a></li>
+<li><a href="http://snipplr.com/view/15704/eliminating-the-dotted-line-box-that-appears-around-a-link/" title="http://snipplr.com/view/15704/eliminating-the-dotted-line-box-that-appears-around-a-link/">http://snipplr.com/view/15704/eliminating-the-dotted-line-box-that-appears-around-a-link/</a></li>
 <li><a href="http://webaim.org/blog/plague-of-outline-0/" title="http://webaim.org/blog/plague-of-outline-0/">http://webaim.org/blog/plague-of-outline-0/</a>(kaldırılmamalı)</li>
-<li><a href="../static">http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links</a></li>
+<li><a href="http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links" title="http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links">http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links</a></li>
 <li><a href="http://sackclothstudios.com/css/outline-the-neglected-css-property" title="http://sackclothstudios.com/css/outline-the-neglected-css-property">http://sackclothstudios.com/css/outline-the-neglected-css-property</a></li>
 <li><a href="http://arjaneising.nl/css/dont-remove-the-outline-from-links" title="http://arjaneising.nl/css/dont-remove-the-outline-from-links">http://arjaneising.nl/css/dont-remove-the-outline-from-links</a>
     (kaldırılmamalı)</li>
-<li><a href="../static">http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/</a></li>
-<li>[http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/][]
+<li><a href="http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/" title="http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/">http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/</a></li>
+<li><a href="http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/" title="http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/">http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/</a>
     (kaldırılmamalı)</li>
 <li><a href="http://jlaine.net/2007/1/23/hidden-css-stuff-the-outline-property">http://jlaine.net/2007/1/23/hidden-css-stuff-the-outline-property</a></li>
 <li><a href="http://sonspring.com/journal/removing-dotted-links" title="http://sonspring.com/journal/removing-dotted-links">http://sonspring.com/journal/removing-dotted-links</a></li>
-<li><a href="../static">http://codylindley.com/Javascript/223/hiding-the-browsers-focus-borders-should-i-shouldnt-i</a></li>
-<li><a href="../static">http://www.maratz.com/blog/archives/2006/01/20/outline-property-for-image-replaced-link/</a></li>
+<li><a href="http://codylindley.com/Javascript/223/hiding-the-browsers-focus-borders-should-i-shouldnt-i" title="http://codylindley.com/Javascript/223/hiding-the-browsers-focus-borders-should-i-shouldnt-i">http://codylindley.com/Javascript/223/hiding-the-browsers-focus-borders-should-i-shouldnt-i</a></li>
+<li><a href="http://www.maratz.com/blog/archives/2006/01/20/outline-property-for-image-replaced-link/" title="http://www.maratz.com/blog/archives/2006/01/20/outline-property-for-image-replaced-link/">http://www.maratz.com/blog/archives/2006/01/20/outline-property-for-image-replaced-link/</a></li>
 <li><a href="http://diveintomark.org/archives/2006/04/25/new-focus-indicator" title="http://diveintomark.org/archives/2006/04/25/new-focus-indicator">http://diveintomark.org/archives/2006/04/25/new-focus-indicator</a>
     (odaklanmayı arttıran firefox eklentisi)</li>
 <li><a href="http://accessites.org/site/2007/05/keyboard-friendly-link-focus/" title="http://accessites.org/site/2007/05/keyboard-friendly-link-focus/">http://accessites.org/site/2007/05/keyboard-friendly-link-focus/</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">ile</span><span class="o">-</span><span class="n">basit</span><span class="o">-</span><span class="n">sekilde</span><span class="o">-</span><span class="n">fare</span><span class="o">-</span><span class="n">uzerine</span><span class="o">-</span><span class="n">gelincerollover</span><span class="o">-</span><span class="n">resim</span><span class="o">-</span><span class="n">degisimi</span><span class="o">-</span><span class="n">yapmak</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">ile</span><span class="o">-</span><span class="n">basit</span><span class="o">-</span><span class="n">sekilde</span><span class="o">-</span><span class="n">fare</span><span class="o">-</span><span class="n">uzerine</span><span class="o">-</span><span class="n">gelincerollover</span><span class="o">-</span><span class="n">resim</span><span class="o">-</span><span class="n">degisimi</span><span class="o">-</span><span class="n">yapmak</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">ile</span><span class="o">-</span><span class="n">menu</span><span class="o">-</span><span class="n">olusturmak</span><span class="o">-</span><span class="n">v</span><span class="o">-</span><span class="n">resimli</span><span class="o">-</span><span class="n">menuler</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">ile</span><span class="o">-</span><span class="n">menu</span><span class="o">-</span><span class="n">olusturmak</span><span class="o">-</span><span class="n">v</span><span class="o">-</span><span class="n">resimli</span><span class="o">-</span><span class="n">menuler</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">snipplr</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">view</span><span class="o">/</span>15704<span class="o">/</span><span class="n">eliminating</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">dotted</span><span class="o">-</span><span class="n">line</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">that</span><span class="o">-</span><span class="n">appears</span><span class="o">-</span><span class="n">around</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">link</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">snipplr</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">view</span><span class="o">/</span>15704<span class="o">/</span><span class="n">eliminating</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">dotted</span><span class="o">-</span><span class="n">line</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">that</span><span class="o">-</span><span class="n">appears</span><span class="o">-</span><span class="n">around</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">link</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">elctech</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">snippets</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">remove</span><span class="o">-</span><span class="n">dotted</span><span class="o">-</span><span class="n">outline</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">from</span><span class="o">-</span><span class="n">active</span><span class="o">-</span><span class="n">links</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">elctech</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">snippets</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">remove</span><span class="o">-</span><span class="n">dotted</span><span class="o">-</span><span class="n">outline</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">from</span><span class="o">-</span><span class="n">active</span><span class="o">-</span><span class="n">links</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">karlrixon</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">remove</span><span class="o">-</span><span class="n">button</span><span class="o">-</span><span class="n">focus</span><span class="o">-</span><span class="n">outline</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">css</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">karlrixon</span><span class="p">.</span><span class="n">co</span><span class="p">.</span><span class="n">uk</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">remove</span><span class="o">-</span><span class="n">button</span><span class="o">-</span><span class="n">focus</span><span class="o">-</span><span class="n">outline</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">css</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>456<span class="n">bereastreet</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>200905<span class="o">/</span><span class="n">do_not_remove_the_outline_from_links_and_form_controls</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>456<span class="n">bereastreet</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>200905<span class="o">/</span><span class="n">do_not_remove_the_outline_from_links_and_form_controls</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">codylindley</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">Javascript</span><span class="o">/</span>223<span class="o">/</span><span class="n">hiding</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">browsers</span><span class="o">-</span><span class="n">focus</span><span class="o">-</span><span class="n">borders</span><span class="o">-</span><span class="n">should</span><span class="o">-</span><span class="nb">i</span><span class="o">-</span><span class="n">shouldnt</span><span class="o">-</span><span class="nb">i</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">codylindley</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">Javascript</span><span class="o">/</span>223<span class="o">/</span><span class="n">hiding</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">browsers</span><span class="o">-</span><span class="n">focus</span><span class="o">-</span><span class="n">borders</span><span class="o">-</span><span class="n">should</span><span class="o">-</span><span class="nb">i</span><span class="o">-</span><span class="n">shouldnt</span><span class="o">-</span><span class="nb">i</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">maratz</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span>2006<span class="o">/</span>01<span class="o">/</span>20<span class="o">/</span><span class="n">outline</span><span class="o">-</span><span class="n">property</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">replaced</span><span class="o">-</span><span class="n">link</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">maratz</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">archives</span><span class="o">/</span>2006<span class="o">/</span>01<span class="o">/</span>20<span class="o">/</span><span class="n">outline</span><span class="o">-</span><span class="n">property</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">replaced</span><span class="o">-</span><span class="n">link</span><span class="o">/</span>&quot;
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

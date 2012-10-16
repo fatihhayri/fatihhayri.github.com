@@ -91,9 +91,10 @@
                 <p>![]<a href="javascript:print()"></a>[] || ![]<a href="static/dokumanlar/css_ile_tablolari_sekillendirmek.pdf">1</a>[]</p>
 <p>Bu makalemizde CSS ile tablolarımızı nasıl daha okunaklı ve güzel
 gösterebiliriz onu anlatmaya çalışacağız. Bildiğiniz gibi CSS'in namını
-arttıran olay web sayfa iskeletinin tablolar ile değilde katman(\&lt;div>)
+arttıran olay web sayfa iskeletinin tablolar ile değilde katman(<div>)
 ile kodlaması ile olmuştur. Ancak burada bir yanlış anlaşılma oluyor
-genelde, oda şudur ki tablolarda bir Xhtml elementidir ve gerektiği ...</p>
+genelde, oda şudur ki tablolarda bir Xhtml elementidir ve gerektiği
+yerlerde ...</div></p>
                 <a class="readmore" href=".././css-ile-tablolari-sekillendirmek/">read more</a>
                 <p>There are <a href=".././css-ile-tablolari-sekillendirmek/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -283,12 +284,16 @@ bebeleri eğlendirdiğimiz oyun varya işte o oyundan geliyor bu isim.) adı ...
 </footer><!-- /.post-info -->
                 <p>Bu hata birden fazla float uygulanmış içiçe elementlerde meydana gelir.
 Son float uygulanmış elementin son karakterleri tekrarlar.</p>
-<p>[sourcecode language="html"] \&lt;div id="icerik"> \&lt;!-- icerik alani-->
-\&lt;div id="anaIcerik"> .... \&lt;/div>\&lt;!-- anaIcerik sonu --> \&lt;!--
-sagkolon baslangici --> \&lt;div id="sagKolon"> ... \&lt;/div> \&lt;/div>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- icerik alani--&gt;</span>
+</pre></div>
+
+
+<p><div id="anaIcerik"> .... </div><!-- anaIcerik sonu --> <!--
+sagkolon baslangici --> <div id="sagKolon"> ... </div> </div></p>
 <p>Örnek sayfayı görmek için <a href="static/dokumanlar/ie_tekrarlayan_karakter_sorunu_ornek.html">tıklayınız.</a> (hatayı görmek için IE6 ile
-bakmalısınız ...</p>
+bakmalısınız.)</p>
+<p>Float uygulanmış elementlerin ilki ve sonuncusu arasında bir çok yorum
+kodu(<!-- bunun gibi -->) var ise bu hata ...</!--></p>
                 <a class="readmore" href=".././ie6un-tekrarlayan-karakter-sorunu/">read more</a>
                 <p>There are <a href=".././ie6un-tekrarlayan-karakter-sorunu/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -328,7 +333,7 @@ komşu metinlerin maruz kaldığı bir hatadır. Örneği bir elementinize
 istediğinizde, ie5-6 versiyonlarında soldaki float uygulanmış element
 içeriği boyunda sağdaki metin soldan 3 piksel kadar içeriğini
 öteleyecektir. <!--more--></p>
-<p>[sourcecode language="css"] .solKolon { float ...</p>
+<div class="codehilite"><pre> <span class="nc">.solKolon</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">200px ...</span></pre></div>
                 <a class="readmore" href=".././ieun-3-piksel-metin-oteleme-hatasi/">read more</a>
                 <p>There are <a href=".././ieun-3-piksel-metin-oteleme-hatasi/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -405,8 +410,12 @@ için ...</p>
 güzel imkanlar sağlar. Bir genel float elementinin sağ üstüne bir float
 element yerleştirelim. Bu kodlama genelde menü ve resim ekleme gibi
 durumlar için kullanılır. <!--more--></p>
-<p>[sourcecode language="css"] #icerikAlani { margin: 10px; border: 1px
-solid gray; } #icerikAlani #menu { float: right; width: 150px ...</p>
+<div class="codehilite"><pre> <span class="nf">#icerikAlani</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span>
+</pre></div>
+
+
+<p>solid gray; } #icerikAlani #menu { float: right; width: 150px;
+border-left: 1px solid ...</p>
                 <a class="readmore" href=".././icice-float-elementlerinin-kullanimi/">read more</a>
                 <p>There are <a href=".././icice-float-elementlerinin-kullanimi/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

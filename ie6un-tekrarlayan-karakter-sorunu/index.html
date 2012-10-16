@@ -84,14 +84,16 @@
 </footer><!-- /.post-info -->
       <p>Bu hata birden fazla float uygulanmış içiçe elementlerde meydana gelir.
 Son float uygulanmış elementin son karakterleri tekrarlar.</p>
-<p>[sourcecode language="html"] \&lt;div id="icerik"> \&lt;!-- icerik alani-->
-\&lt;div id="anaIcerik"> .... \&lt;/div>\&lt;!-- anaIcerik sonu --> \&lt;!--
-sagkolon baslangici --> \&lt;div id="sagKolon"> ... \&lt;/div> \&lt;/div>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- icerik alani--&gt;</span>
+</pre></div>
+
+
+<p><div id="anaIcerik"> .... </div><!-- anaIcerik sonu --> <!--
+sagkolon baslangici --> <div id="sagKolon"> ... </div> </div></p>
 <p>Örnek sayfayı görmek için <a href="../static/dokumanlar/ie_tekrarlayan_karakter_sorunu_ornek.html">tıklayınız.</a> (hatayı görmek için IE6 ile
 bakmalısınız.)</p>
 <p>Float uygulanmış elementlerin ilki ve sonuncusu arasında bir çok yorum
-kodu(\&lt;!-- bunun gibi -->) var ise bu hata meydana gelir. İlk iki
+kodu(<!-- bunun gibi -->) var ise bu hata meydana gelir. İlk iki
 yorumun hiç bir etkisi yoktur, ama iki yorumdan sonraki her bir yorum
 iki karakterin kopyalanmasına neden olur. yorum varsa iki karkater
 tekrarlayacak, dört yorum olduğunda da dört karkater ve beş yorum olunca
@@ -104,8 +106,11 @@ atamalıyız veya içerik alanını 3 piksel genişletmeliyiz. Ancak bu çözüm
 metodlarının her ikisi de IE 7'de sorun çıkaracaktır. Bundan kurtulmak
 için en kolay ve sağlıklı yol bu bu yorumları kullanmamaktır.</p>
 <p>Ancak illa yorum kullanmalıyım derseniz onun içinde çözüm:</p>
-<p>[sourcecode language="html"] \&lt;!--[if !IE]>Yorumunu buraya yaz
-\&lt;![endif]--> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="c">&lt;!--[if !IE]&gt;Yorumunu buraya yaz</span>
+</pre></div>
+
+
+<p>&lt;![endif]--&gt; </p>
 <p>şeklinde yorum satırlarınzı eklemelisiniz.</p>
 <p>Örnek kodu görmek için <a href="../static/dokumanlar/ie_tekrarlayan_karakter_sorunu_ornek2.html">tıklayınız.</a></p>
 <div class="ekstrabilgi">

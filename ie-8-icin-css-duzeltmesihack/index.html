@@ -87,37 +87,41 @@ edenlerin %5'i İnternet Explorer 8 kullanıcısı imiş. Bir makalede
 görmüştüm. İnternet Explorer 8'in hızlı yayılması ile alakalı.</p>
 <p>Burada ie8'de css düzeltmesi yapmamız gerektiğinde nasıl bir yol
 izleyeceğimiz konusunda bir ipucu vereceğim.</p>
-<p>[sourcecode language="css"] .uyari { color /*\**/: red\9 }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.uyari</span> <span class="p">{</span> <span class="k">color</span> <span class="c">/***/</span><span class="o">:</span> <span class="n">red9</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Bir çok yerde bu kodun tek başına ie8 için yeterli olduğu yazıyor. Ama
 ben test ettiğimde ie7'de bu kodu görüyor. Bunun için</p>
-<p>[sourcecode language="css"] .uyari{color:blue} /* tum taricilar */
-.uyari { color /*\**/: red\9 } /* ie8 ve ie 7 */ *+html
-.uyari{color:blue} /* ie 7 */ [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nc">.uyari</span><span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">}</span> <span class="c">/* tum taricilar */</span>
+</pre></div>
+
+
+<p>.uyari { color /<em><em><em>/: red9 } /</em> ie8 ve ie 7 </em>/ </em>+html
+.uyari{color:blue} /<em> ie 7 </em>/ </p>
 <p>Şeklinde bir çözüm işimize yaracaktır.</p>
 <p>Örneği görmek için <a href="../static/dokumanlar/ie8_css_duzeltmesi.html">tıklayınız.</a></p>
 <p>Ayrıca şartlı yorumlar yardımı ile de yapabiliriz.</p>
-<p>[sourcecode language="html"] \&lt;!–[if gte IE 8]> \&lt;style
-type="text/css"> .uyari { color: red; } \&lt;/style> \&lt;![endif]–>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="cp">&lt;!–[if gte IE 8]&gt;</span> <span class="nt">&lt;style</span>
+</pre></div>
+
+
+<p>type="text/css"&gt; .uyari { color: red; } </style> &lt;![endif]–&gt;</p>
 <p>Ayrıca daha önce bahsettiğimiz ie7 gibi yorumlama kodu var.</p>
-<p>[sourcecode language="html"]\&lt;meta http-equiv="X-UA-Compatible"
-content="IE=EmulateIE7" />[/sourcecode]</p>
+<div class="codehilite"><pre><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;X-UA-Compatible&quot;</span>
+</pre></div>
+
+
+<p>content="IE=EmulateIE7" /&gt;</p>
 <p>Testlerimi <a href="http://www.my-debugbar.com/wiki/IETester/HomePage" title="ietester">ietester</a> ile yaptım.</p>
 <ul>
 <li><a href="http://paulirish.com/2009/browser-specific-css-hacks/" title="http://paulirish.com/2009/browser-specific-css-hacks/">http://paulirish.com/2009/browser-specific-css-hacks/</a></li>
-<li><a href="../static">http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/</a></li>
+<li><a href="http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/" title="http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/">http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/</a></li>
 <li><a href="http://snipplr.com/view/15167/ie8-csshacks/" title="http://snipplr.com/view/15167/ie8-csshacks/">http://snipplr.com/view/15167/ie8-csshacks/</a></li>
 <li><a href="http://www.evotech.net/blog/2009/03/ie8-css-support/" title="http://www.evotech.net/blog/2009/03/ie8-css-support/">http://www.evotech.net/blog/2009/03/ie8-css-support/</a></li>
-<li><a href="../static">http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/</a></li>
+<li><a href="http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/" title="http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/">http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">acidmartin</span><span class="p">.</span><span class="n">wordpress</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>06<span class="o">/</span>04<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">hack</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">internet</span><span class="o">-</span><span class="n">explorer</span><span class="o">-</span>8<span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">acidmartin</span><span class="p">.</span><span class="n">wordpress</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>06<span class="o">/</span>04<span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">hack</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">internet</span><span class="o">-</span><span class="n">explorer</span><span class="o">-</span>8<span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">internet</span><span class="o">-</span><span class="n">explorer</span><span class="o">-</span>8<span class="nb">i</span><span class="o">-</span>7<span class="o">-</span><span class="n">gibi</span><span class="o">-</span><span class="n">yorumla</span><span class="o">-</span><span class="n">kodu</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">internet</span><span class="o">-</span><span class="n">explorer</span><span class="o">-</span>8<span class="nb">i</span><span class="o">-</span>7<span class="o">-</span><span class="n">gibi</span><span class="o">-</span><span class="n">yorumla</span><span class="o">-</span><span class="n">kodu</span><span class="o">/</span>&quot;
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

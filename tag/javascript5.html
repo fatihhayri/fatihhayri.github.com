@@ -90,12 +90,20 @@
 </footer><!-- /.post-info -->
                 <p>Aslında konuyu başlıkta anlattım. İşaret kutularına <strong>onchange</strong> ekleyip
 tetiklemeye çalışınca çalışmıyor. Firefox'da çalışıyor sorunun çözümü</p>
-<p>[sourcecode language="javascript"] \&lt;p> \&lt;input type="checkbox"
-onchange="document.getElementById('spDegistir').innerHTML = 'Checked: '
-+ this.checked;" id="change"> \&lt;label for="change">Using
-onchange\&lt;/label> \&lt;span id="spDegistir">\&lt;/span> \&lt;/p>
-[/sourcecode]</p>
-<p>Bu kod Internet Explorer'da ...</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;checkbox&quot;</span>
+</pre></div>
+
+
+<p>onchange="document.getElementById('spDegistir').innerHTML = 'Checked: '
++ this.checked;" id="change"&gt; <label for="change">Using
+onchange</label> <span id="spDegistir"></span> </p></p>
+<p>Bu kod Internet Explorer'da çalışmayacaktır. Bizde bunun yerine
+<strong>onclick</strong> tetiklemesini kullanacağız.</p>
+<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;checkbox&quot;</span>
+</pre></div>
+
+
+<p>onclick="document ...</p>
                 <a class="readmore" href=".././internet-explorer-isaret-kutularinincheckbox-onchange-tetiklemesindeki-sorun-ve-cozum-onerisi/">read more</a>
                 <p>There are <a href=".././internet-explorer-isaret-kutularinincheckbox-onchange-tetiklemesindeki-sorun-ve-cozum-onerisi/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -259,9 +267,12 @@ toplamının verdiği sonucun 1'ler basamağı 11. sayıya eşitir." bunun için
 bir javascript kodu yazdım. Sizlerede lazım olur diye buraya yazıyorum.
 <!--more--></p>
 <p>javascript kodu:</p>
-<p>[sourcecode language="javascript"] function tckimlikkontorolu(tcno) {
-var tckontrol,toplam; tckontrol = tcno; tcno = tcno.value; toplam =
-Number(tcno.substring ...</p>
+<div class="codehilite"><pre> <span class="kd">function</span> <span class="nx">tckimlikkontorolu</span><span class="p">(</span><span class="nx">tcno</span><span class="p">)</span> <span class="p">{</span>
+</pre></div>
+
+
+<p>var tckontrol,toplam; tckontrol = tcno; tcno = tcno.value; toplam =
+Number(tcno.substring(0,1)) + Number ...</p>
                 <a class="readmore" href=".././javascript-ile-tc-kimlik-no-dogrulama/">read more</a>
                 <p>There are <a href=".././javascript-ile-tc-kimlik-no-dogrulama/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

@@ -105,15 +105,18 @@ Erişilebilirlik.
 <p>Basit bir form yapısını planlayarak başlayalım. Web sitelerinde en çok
 kullanılan formlar kullanıcı giriş formlarıdır. Beraberce CSS ile
 planlanmış bir kullanıcı girişi formu yapalım. Xhtml kodunu yazalım.</p>
-<p>[sourcecode language="html"] \&lt;form action="/gonder/login"
-id="kullaniciGiris" method="post"> \&lt;dl> \&lt;dt>\&lt;label
-for="ad">Kullanıcı Adı :\&lt;/label>\&lt;/dt> \&lt;dd>\&lt;input type="text"
-id"ad" name="ad" />\&lt;/dd> \&lt;dt>\&lt;label
-for="eposta">Eposta:\&lt;/label>\&lt;/dt> \&lt;dd>\&lt;input type="text"
-id="eposta" name="eposta" />\&lt;/dd> \&lt;dt>\&lt;label for="hatirla">Beni
-hatırla\&lt;/label>\&lt;/dt> \&lt;dd>\&lt;input type="checkbox" id="hatirla"
-name="hatirla" />\&lt;/dd> \&lt;dt>\&lt;input type="submit" value="Gönder"
-/>\&lt;/dt> \&lt;/dl> \&lt;/form> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;/gonder/login&quot;</span>
+</pre></div>
+
+
+<p>id="kullaniciGiris" method="post"&gt; <dl> <dt><label
+for="ad">Kullanıcı Adı :</label></dt> <dd><input type="text"
+id"ad" name="ad" /></dd> <dt><label
+for="eposta">Eposta:</label></dt> <dd><input type="text"
+id="eposta" name="eposta" /></dd> <dt><label for="hatirla">Beni
+hatırla</label></dt> <dd><input type="checkbox" id="hatirla"
+name="hatirla" /></dd> <dt><input type="submit" value="Gönder"
+/></dt> </dl> </form> </p>
 <p><img alt="Login Ekranının Firefox Ekran görüntüsü" src="../static/images/loginform1.gif" /></p>
 <p>Bu tip küçük form sayfalarında tanım listelerinin(dl, dd ve dt)
 kullanılması düzen ve kullanım kolaylığı açısından çok önemlidir.
@@ -125,36 +128,50 @@ hatırla metnine tıkladığımızda işret kutusu işlevi gösterir.</p>
 <p>Şimdi CSS ile form elemanlarını yerlerine koyalım.</p>
 <p>Bu formu tablo ile yaptığımız gibi yanyana koymak için genişlik ve float
 tanımı yapıyoruz.</p>
-<p>[sourcecode language="css"] form dt { width: 8em; float: left;
-text-align: right; margin-right: 0.5em; display: block; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">form</span> <span class="nt">dt</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">8em</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+</pre></div>
+
+
+<p>text-align: right; margin-right: 0.5em; display: block; } </p>
 <p>Sağdaki form elemanları ile soldakiler arasına boşluk bırakmak için
 genişlik değeri veriyoruz.</p>
-<p>[sourcecode language="css"] form dd { margin-left: 4.5em; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">form</span> <span class="nt">dd</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="m">4.5em</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="../static/images/loginform3.gif" /></p>
 <p>Bir çok sitede kullanılan kullanıcı giriş(login) formlarını CSS yardımı
 ile kodladık. Şimdi görünüşünü düzeltelim.</p>
 <p>Metinlerimizi font tanımı yapalım:</p>
-<p>[sourcecode language="css"] form dt { width: 8em; float: left;
-text-align: right; margin-right: 0.5em; display: block; font:12px Arial,
-Helvetica, sans-serif; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">form</span> <span class="nt">dt</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">8em</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+</pre></div>
+
+
+<p>text-align: right; margin-right: 0.5em; display: block; font:12px Arial,
+Helvetica, sans-serif; } </p>
 <p>Metin giriş alanlarını standart görünümünden çıkarıp kendi istediğimiz
 renklere büründürelim.</p>
-<p>[sourcecode language="html"] \&lt;dd>\&lt;input name="ad" type="text"
-class="metinAlani" id"ad" />\&lt;/dd> [/sourcecode] [sourcecode
-language="css"] input.metinAlani { color: #781351; background-color:
-#b5c9e2; border: 1px solid #31557f; font:10px Arial, Helvetica,
-sans-serif; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;dd&gt;&lt;input</span> <span class="na">name=</span><span class="s">&quot;ad&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span>
+</pre></div>
+
+
+<p>class="metinAlani" id"ad" /&gt;</dd>  [sourcecode
+language="css"] input.metinAlani { color: #781351; background-color:</p>
+<h1>b5c9e2; border: 1px solid #31557f; font:10px Arial, Helvetica,</h1>
+<p>sans-serif; } </p>
 <p>Gönder düğmesinin şeklini değiştirelim. Burada renk uyumu form
 alanlarımızın daha hoş görünmesi için önemlidir. Renk seçimi yaparken
 genelde site bütünlüğünü bozmamak için site genel renk değerleri
 seçilir. Ama bu bir kural değildir.</p>
-<p>[sourcecode language="html"] \&lt;dt>\&lt;input type="submit" class="gonder"
-value="Gönder" />\&lt;/dt> [/sourcecode] [sourcecode language="css"]
-input.gonder { color: #224059; background-color: #b5c9e2; border-top:
-2px #cce3ff solid; border-left: 2px #cce3ff solid; border-bottom: 2px
-#31557f solid; border-right: 2px #31557f solid; font:bold 12px Arial,
-Helvetica, sans-serif; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;dt&gt;&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;gonder&quot;</span>
+</pre></div>
+
+
+<p>value="Gönder" /&gt;</dt>      :::css</p>
+<p>input.gonder { color: #224059; background-color: #b5c9e2; border-top:
+2px #cce3ff solid; border-left: 2px #cce3ff solid; border-bottom: 2px</p>
+<h1>31557f solid; border-right: 2px #31557f solid; font:bold 12px Arial,</h1>
+<p>Helvetica, sans-serif; } </p>
 <p>Yukarıda gönder düğmesinin kenarlık renk seçimini yaparken sağ ve alt
 kısma daha koyu, sol ve üst kısma daha açık renk vererek düğmemize 3
 boyutlu bir görünüm kazandırdık.</p>
@@ -167,22 +184,28 @@ ve <legend> etiketlerini kullanacağız.
 
 </p>
 
-<p>[sourcecode language="html"] \&lt;form action="/gonder/login"
-id="kullaniciGiris" method="post"> \&lt;fieldset> \&lt;legend>Kullanıcı
-Girişi\&lt;/legend> \&lt;dl> \&lt;dt>\&lt;label for="ad">Kullanıcı
-Adı:\&lt;/label>\&lt;/dt> \&lt;dd>\&lt;input name="ad" type="text"
-class="metinAlani" id"ad" />\&lt;/dd> \&lt;dt>\&lt;label
-for="eposta">Eposta:\&lt;/label>\&lt;/dt> \&lt;dd>\&lt;input name="eposta"
-type="text" class="metinAlani" id="eposta" />\&lt;/dd> \&lt;dt>\&lt;label
-for="hatirla">Beni hatırla\&lt;/label>\&lt;/dt> \&lt;dd>\&lt;input
-type="checkbox" id="hatirla" name="hatirla" />\&lt;/dd> \&lt;dt>\&lt;input
-type="submit" class="gonder" value="Gönder" />\&lt;/dt> \&lt;/dl>
-\&lt;/fieldset> \&lt;/form> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;/gonder/login&quot;</span>
+</pre></div>
+
+
+<p>id="kullaniciGiris" method="post"&gt; <fieldset> <legend>Kullanıcı
+Girişi</legend> <dl> <dt><label for="ad">Kullanıcı
+Adı:</label></dt> <dd><input name="ad" type="text"
+class="metinAlani" id"ad" /></dd> <dt><label
+for="eposta">Eposta:</label></dt> <dd><input name="eposta"
+type="text" class="metinAlani" id="eposta" /></dd> <dt><label
+for="hatirla">Beni hatırla</label></dt> <dd><input
+type="checkbox" id="hatirla" name="hatirla" /></dd> <dt><input
+type="submit" class="gonder" value="Gönder" /></dt> </dl>
+</fieldset> </form> </p>
 <p>CSS ile yeni eklediğimiz alanların görünümünü düzeltelim.</p>
-<p>[sourcecode language="css"] fieldset { border: 1px solid #31557f;
-width: 15em; padding-bottom:0.5em; } legend { color: #224059;
+<div class="codehilite"><pre> <span class="nt">fieldset</span> <span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#31557f</span><span class="p">;</span>
+</pre></div>
+
+
+<p>width: 15em; padding-bottom:0.5em; } legend { color: #224059;
 background-color: #b5c9e2; border: 1px solid #31557f; padding: 2px 6px
-} [/sourcecode]</p>
+} </p>
 <p><img alt="" src="../static/images/loginform4.gif" /></p>
 <p>Sonuç sayfasını görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/css_ile_form.html">tıklayınız.</a></p>
 <p>Formumuzun son hali yukarıda göründüğü gibi olacaktır. Bir sonraki

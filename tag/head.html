@@ -95,12 +95,18 @@ dokümanın tipi gösteriyor yorumlayıcıya(tarayıcıya). Bu tanımlar çok
 uzun metinler içeriyordu ancak HTML5 bu tanımı kısaltmış ve çok güzel
 yapmış.</p>
 <p>Şimdiye kadar ve hala kullanmakta olduğumuz bir doctype örneği,</p>
-<p>[html] \&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> [/html]</p>
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+</pre></div>
+
+
+<p>"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; </p>
 <p>Yukarıdaki HTML etiketi bize bu html dokümanının xhtml 1.0 olduğunu ve
 Transitional ise hem HTML hemde XHTML kurallarının bu dokümanda geçerli
 olduğunu gösteriyor. Peki HTML5’de bu işi nasıl yapıyoruz.</p>
-<p>[html] \&lt;!DOCTYPE html> [/html]</p>
+<div class="codehilite"><pre> <span class="cp">&lt;!DOCTYPE html&gt;</span>
+</pre></div>
+
+
 <p>Bu kadar, kısa ve hafıza da kalıcı. HTML kodlarını Not Defteri ile
  yazdığım dönemlerde çok çekerdim bu Doctype tanımlarında. Git bir
 yerden örneğini al falan. Sonra Dreamweaver bunu otomatik ekliyordu da
@@ -111,8 +117,11 @@ duyarlılığı yoktur.</p>
 <p>HTML5 öncesi sürümler SGML kökenli diller olduğu için DTD tanımlarına
 gereksinim duyardı ancak HTML5 SGML kökenli olmadığı için buna gerek
 duymaz.</p>
-<p>[html] \&lt;!DOCTYPE HTML> \&lt;html> \&lt;head> \&lt;/head> \&lt;body> ...
-\&lt;/body> \&lt;/html> [/html]</p>
+<div class="codehilite"><pre> <span class="cp">&lt;!DOCTYPE HTML&gt;</span> <span class="nt">&lt;html&gt;</span> <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;/head&gt;</span> <span class="nt">&lt;body&gt;</span> ...
+</pre></div>
+
+
+<p></body> </html> </p>
 <p>Peki burada bir sürüm numarası yok nasıl sonraki sürümler ile bunu
 ayıracağız?</p>
 <p>Burada şöyle bir şey var HTML5 geliştirilirken eğer buraya bir sürüm
@@ -122,58 +131,80 @@ kefeye konmuş oldu. Geçmişide destekleyen bir yapıya kavuşturulmuş oldu.</
 <p>Aslında yeni nesil tarayıcılar bir tanım yapılmasa daha standart modda
 belgeyi tanımladığı için Doctype’ın pek bir geçerliliği kalmamış idi ama
 yinede bir tanım yapmak iyidir. İE’nin ne yapacağı belli olmaz.</p>
-<h3>\&lt;html> Elemanı</h3>
-<p>Html dokümanlarını çevreleyen kapsayıcı bir elemandır \&lt;html> html5
+<h3><html> Elemanı</h3>
+<p>Html dokümanlarını çevreleyen kapsayıcı bir elemandır <html> html5
 öncesinde tanımımız</p>
-<p>[html] \&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"
-xml:lang="en"> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span>
+</pre></div>
+
+
+<p>xml:lang="en"&gt; </p>
 <p>Şeklinde idi. Buradaki xmlns değeri bu dokümanın anaçatısının
 <a href="http://www.w3.org/1999/xhtml">http://www.w3.org/1999/xhtml</a> kullandığını gösteriyor. HTML5
 anaçatısı belli olduğu için tekrar tanımlamaya gerek duymuyor ve ayrıca
 iki adet dil tanımınında gereksiz olduğunu kabul ediyor ve sonuçta
 html5’teki tanımımız;</p>
-<p>[html] \&lt;html lang="en">\&lt;/html> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;&lt;/html&gt;</span>
+</pre></div>
+
+
 <p>şeklinde oluyor.</p>
-<h3>\&lt;head> içi tanımlar</h3>
-<p>HTML5 sadece Doctype tanımını değil ayrıca \&lt;head> içinde kullandığımız
+<h3><head> içi tanımlar</h3>
+<p>HTML5 sadece Doctype tanımını değil ayrıca <head> içinde kullandığımız
 etiketleride ciddi manada basit hale getirmiştir.</p>
 <p>Karakter kodu için kullandığımız</p>
-<p>[html] \&lt;meta http-equiv="Content-Type" content="text/html;
-charset=utf-8" /> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html;</span>
+</pre></div>
+
+
+<p>charset=utf-8" /&gt; </p>
 <p>Yerine HTML5 karışılığı</p>
-<p>[html] \&lt;meta charset="UTF-8"> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
 <p>Gayet basit ve akılda kalıcı.</p>
 <p>Gelelim script eklemek için kullandığımız koda;</p>
-<p>[html] \&lt;script type="text/javascript" src="dosya_adi.js">\&lt;/script>
-[/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;dosya_adi.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+
 <p>HTML5'de ise;</p>
-<p>[html] \&lt;script src="file.js">\&lt;/script> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;file.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+
 <p>Benzer şekilde ilişkilendirilmiş dokümanlar için kullandığımız</p>
-<p>[html] \&lt;link rel="stylesheet" href="style-original.css" type="text/css"
-/> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style-original.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span>
+</pre></div>
+
+
+<p>/&gt; </p>
 <p>yerine HTML5'de</p>
-<p>[html] \&lt;link rel="stylesheet" href="style-original.css" /> [/html]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style-original.css&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+
 <p>İşin kısacası, tüm tanımları olabildiğince kısaltmışlar. Süperde
 yapmışlar, şimdiye kadar bize çektirdikleri eziyet neydi kardeşim.</p>
 <p>Sonuç olarak bir HTML5 basit yapısı</p>
-<p>[html] \&lt;!DOCTYPE html> \&lt;html lang=""> \&lt;head> \&lt;meta
-charset="utf-8"> \&lt;title>\&lt;/title> \&lt;meta name="description"
-content="" /> \&lt;meta name="keywords" content="" /> \&lt;meta
-name="robots" content="" /> \&lt;/head> \&lt;body> \&lt;/body> \&lt;/html>
-[/html]</p>
+<div class="codehilite"><pre> <span class="cp">&lt;!DOCTYPE html&gt;</span> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;meta</span>
+</pre></div>
+
+
+<p>charset="utf-8"&gt; <title></title> <meta name="description"
+content="" /> <meta name="keywords" content="" /> <meta
+name="robots" content="" /> </head> <body> </body> </html></p>
 <p>Şeklinde olacaktır.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li>[http://www.w3schools.com/html5/tag_doctype.asp][]</li>
+<li><a href="http://www.w3schools.com/html5/tag_doctype.asp">http://www.w3schools.com/html5/tag_doctype.asp</a></li>
 <li><a href="http://diveintohtml5.org/semantics.html">http://diveintohtml5.org/semantics.html</a></li>
-<li><a href="static">http://www.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/</a></li>
+<li><a href="http://www.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/">http://www.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/</a></li>
 <li><a href="http://boblet.tumblr.com/post/141239118/html5-structure4">http://boblet.tumblr.com/post/141239118/html5-structure4</a><br />
 </li>
 </ul>
-</p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>07<span class="o">/</span>16<span class="o">/</span><span class="n">html5</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">future</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">web</span><span class="o">/</span>
-</pre></div><p>There are <a href=".././html5-dokuman-yapisini-olusturan-elemanlar/#disqus_thread">comments</a>.</p>
+</p><p>There are <a href=".././html5-dokuman-yapisini-olusturan-elemanlar/#disqus_thread">comments</a>.</p>
                 </article>
                 
                     

@@ -98,8 +98,7 @@ kullanılacaktır.</p>
 bildiğimiz link ekleme koduna fazladan sadece <strong>media</strong> kısmı eklenerek
 değeri <strong>print</strong> atanır.</p>
 <p>[sourcecode language='html']
-<link rel="stylesheet" type="text/css" href="static/ciktistil.css" media="print">
-[/sourcecode]</p>
+<link rel="stylesheet" type="text/css" href="static/ciktistil.css" media="print"></p>
 <p>Diğer bir yöntemde import kullanımıdır.</p>
 <p>[sourcecode language='css']</p>
 <style type="text/css"> 
@@ -107,7 +106,6 @@ değeri <strong>print</strong> atanır.</p>
     @import url("ciktial.css") print; 
 </style>
 
-<p>[/sourcecode]</p>
 <h3>Çıktıya Uygun CSS Hazırlarken Dikkat Edilecek Hususlar</h3>
 <p><strong>Fontları Değiştirmek</strong></p>
 <p>İlk yapılacak şey fontları değiştirmektir. Yukarıda da belirttiğimiz
@@ -117,12 +115,12 @@ kullanılmalıdır(Times New Roman veya Garamond gibi) Örneğin sayfa
 içindeki h1 veya p için yapılan sans-serfi fontları serif fontlarla
 değiştirelim.</p>
 <p>[sourcecode language='css'] h1, p { font-family: Garamond, "Times New
-Roman", Times, serif; } [/sourcecode]</p>
+Roman", Times, serif; } </p>
 <p>Web için verilen değerler <strong>px</strong> veya <strong>em</strong> yerine <strong>pt</strong> değeri
 kullanılmalıdır. Çıktı alırken daha iyi sonuçlar verir.</p>
 <p>[sourcecode language='css'] h1 { font: 24pt Garamond, "Times New Roman",
 Times, serif; } p { font: 12pt Garamond, "Times New Roman", Times,
-serif; } [/sourcecode]</p>
+serif; } </p>
 <p>Ayrıca <strong>line-height</strong> değeri, <strong>font-weight</strong> değeri, <strong>word-spacing</strong>
 ve <strong>text-align</strong> değerlerini de çıktı ama durumu için düzenlemeliyiz.
 Bunu için we tarayıcılarının çıktı ön izleme özelliğinden
@@ -136,7 +134,7 @@ yöntemide <strong>display:none</strong>'dır.</p>
 <p>Bir elementin <strong>display</strong> özelliğini "<strong>none</strong>" yaparak çıktı alırken
 görütülenmesini engelleriz. Örneğin solmenu için #SolMenu tanımlması
 yapmış isek</p>
-<p>[sourcecode language='css'] #SolMenu{ display:none } [/sourcecode]</p>
+<p>[sourcecode language='css'] #SolMenu{ display:none } </p>
 <p>kodu ile bu bölümü çıktı alırken görüntü dışında bırakacağız. Bu yöntemi
 formlar, menüler, bannerlar, ana resimler hariç diğer resimler vb.
 gereksiz bölümleri bu şekilde çıkarmalıyız.</p>
@@ -144,11 +142,10 @@ gereksiz bölümleri bu şekilde çıkarmalıyız.</p>
 <p>Çıktı alırken yazıların tabloları ve diğer elementlerin daha açık ve net
 görünmesi için aralarına belirli mesafeler vermeliyiz.</p>
 <p>[sourcecode language='css'] table { margin-top:10px; } div { margin:10px
-} [/sourcecode]</p>
+} </p>
 <p>Çıktı alacağımız sayfalarda <strong>px</strong> vd. birimler yerine <strong>inç</strong> birimini
 kullanmak daha iyi sonuçlar verir.</p>
-<p>[sourcecode language='css'] table{ margin:sin } div{ margin:1in }
-[/sourcecode]</p>
+<p>[sourcecode language='css'] table{ margin:sin } div{ margin:1in }</p>
 <p>Renklerle ilgili olarakta şunu söyleyebilriz ki, web sitelerinde bir çok
 renk kullanılır ancak bu renklerin çıktı alırken görünümü web
 tarayıcılrdaki görünümüne benzemez, bu nednele fontları siyah veya
@@ -213,12 +210,17 @@ izleme ekranından bakılarak çıktıya en uygun duruma getirilebilir.</p>
                 <h3>1- Kod içinde (In-line)</h3>
 <p>Direk olarak (X)HTML elementin içine <strong>style</strong> özelliği kullanılarak
 uygulamak.<!--more--></p>
-<p>[sourcecode language="html"] \&lt;div style="color:red">Deneme
-yazımız\&lt;/div> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;color:red&quot;</span><span class="nt">&gt;</span>Deneme
+</pre></div>
+
+
+<p>yazımız</div> </p>
 <p>Tüm CSS komutlarını kodların içine direk uygulamak önerilen bir kodlama
 şekli değildir. Ancak özel durumlarda kullanılabilir.</p>
 <h3>2- style Elementi kullanılarak</h3>
-<p>\&lt;head> kısmında \&lt;style> elementi içinde ...</p>
+<p><head> kısmında <style> elementi içinde CSS kodumuzu yazarak
+uygulamak.</p>
+<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC ...</pre></div>
                 <a class="readmore" href=".././cssi-web-sayfalarina-eklemek/">read more</a>
                 <p>There are <a href=".././cssi-web-sayfalarina-eklemek/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->

@@ -95,13 +95,13 @@ düşünülerek tasarlanır ve uygulamaya geçirilir. Ben burada tasarımsal
 kısmına değinmeden kodlama kısmını ilgilendiren bölümlerine değinmeye
 çalışacağım.<!--more--></p>
 <h3>Basit Butonlar</h3>
-<p>\&lt;button> ve \&lt;input type="button" /> html elemanları w3c tarafından
+<p><button> ve <input type="button" /> html elemanları w3c tarafından
 standartlaştırılmış buton elemanlarıdır, bu elemanlar butonların ne
 kadar önemli öğeler olduğunun göstergesidir. </p>
 <p>Her ne kadar bu etiketler ile standartlaştırılsa da biz bu etiketlere
-bağlı kalmak zorunda değiliz. Genelde butonlar \&lt;a href="">Gönder\&lt;/a>
+bağlı kalmak zorunda değiliz. Genelde butonlar <a href="../static">Gönder</a>
 şeklinde kullanırız.</p>
-<p>\&lt;button> ve \&lt;input type="button" /> kullanımlarında html bizim için
+<p><button> ve <input type="button" /> kullanımlarında html bizim için
 bir buton görünüm oluşturur, ancak burada şöyle bir sorun varki farklı
 tarayıcı ve işletim sistemlerinde farklı farklı göründüğü için css ile
 ortak bir kod yazmak genelde tercih edilir. <br />
@@ -120,38 +120,49 @@ olarak hazırlamalıdır.</p>
 <p><a href="http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-i/" title="CSS ile Erişilebilir Formlar Yapmak – I">CSS ile Erişilebilir Formlar Yapmak – I</a> kullandığım butonu örnek
 olarak alabiliriz basit butonlara</p>
 <p>HTML kodu</p>
-<p>[sourcecode language="html"] \&lt;input type="submit" class="gonder"
-value="Gönder" /> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;gonder&quot;</span>
+</pre></div>
+
+
+<p>value="Gönder" /&gt; </p>
 <p>CSS kodu</p>
-<p>[sourcecode language="css"] input.gonder { color: #224059;
-background-color: #b5c9e2; border-top: 2px #cce3ff solid; border-left:
-2px #cce3ff solid; border-bottom: 2px #31557f solid; border-right: 2px
-#31557f solid; font:bold 12px Arial, Helvetica, sans-serif; }
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">input</span><span class="nc">.gonder</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#224059</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background-color: #b5c9e2; border-top: 2px #cce3ff solid; border-left:
+2px #cce3ff solid; border-bottom: 2px #31557f solid; border-right: 2px</p>
+<h1>31557f solid; font:bold 12px Arial, Helvetica, sans-serif; }</h1>
 <p><img alt="" src="https://docs.google.com/File?id=dhctmbn6_445dqtgbvf7_b" /></p>
-<p>\&lt;input type="submit" /> yerine genelde \&lt;button> elemanını tercih
-ediyorum. Yukarıdaki örnekte olduğu gibi \&lt;input type="submit"" />
-kullanımıda doğrudur, ancak form elemanlarında bir çok \&lt;input> olduğu
+<p><input type="submit" /> yerine genelde <button> elemanını tercih
+ediyorum. Yukarıdaki örnekte olduğu gibi <input type="submit"" />
+kullanımıda doğrudur, ancak form elemanlarında bir çok <input> olduğu
 zaman butona erişmek zor oluyor ek olarak bir sınıf tanımlamak
-gerekiyor, \&lt;button> tanımına ise daha kolay erişebiliyoruz. </p>
+gerekiyor, <button> tanımına ise daha kolay erişebiliyoruz. </p>
 <p><strong>3 boyutlu buton oluşturmak</strong></p>
 <p>Bir iki ufak nüansla butonlarımıza 3 boyutlu bir görünüm
-kazandırabiliriz. Buradaki örneğimizde biz bunu bir bağlantı(\&lt;a>) ve
-içine \&lt;span> elemanı ekleyerek sağlayacağız. Üst ve sol kenar
+kazandırabiliriz. Buradaki örneğimizde biz bunu bir bağlantı(<a>) ve
+içine <span> elemanı ekleyerek sağlayacağız. Üst ve sol kenar
 çizgileri açık renkli alt ve sağ kenar çizgileri daha kapalı renkli
-atamalar yaparız. Ayrıca bağlantı içindeki \&lt;span> etiketinin alt ve
+atamalar yaparız. Ayrıca bağlantı içindeki <span> etiketinin alt ve
 sağ kenar çizgilerinede daha kapalı renkli bir atama yaparak 3 boyutlu
 bir buton elde ederiz. Fare üzerinde geldiğinde kenar çizgilerine
 atadığımız renk değerlerini karşılıklı olarak değiştirerek daha bir
 efektli görünüm elde ederiz.</p>
 <p>HTML Kodu</p>
-<p>[sourcecode language="html"] \&lt;a class="buton" href="#">\&lt;span>3
-boyutlu buton\&lt;/span>\&lt;/a> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;buton&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;span&gt;</span>3
+</pre></div>
+
+
+<p>boyutlu buton</span></a> </p>
 <p>CSS kodumuzu yukarıdaki belirttiğimiz gib yazalım</p>
-<p>[sourcecode language="css"] a.buton{ float:left; font-size:14px;
-font-weight:bold; border-top:1px solid #999; border-left:1px solid
-#999; border-right:1px solid #333; border-bottom:1px solid #333;
-color:#333; width:auto; text-decoration:none } a.buton:hover{
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.buton</span><span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">font-size</span><span class="o">:</span><span class="m">14px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>font-weight:bold; border-top:1px solid #999; border-left:1px solid</p>
+<h1>999; border-right:1px solid #333; border-bottom:1px solid #333;</h1>
+<p>color:#333; width:auto; text-decoration:none } a.buton:hover{
 border-top:1px solid #333; border-left:1px solid #333;
 border-right:1px solid #999; border-bottom:1px solid #999;
 color:#333; } a.buton span{ background:#d4d0c8 url(buton_ard.gif)
@@ -159,7 +170,7 @@ repeat-x; float:left; line-height:24px; height:24px; padding:0 10px;
 border-right:1px solid #777; border-bottom:1px solid #777; }
 a.buton:hover span{ border:none; border-top:1px solid #777;
 border-left:1px solid #777; background:#d4d0c8
-url(buton_fare_ard.gif) repeat-x; cursor:pointer; } [/sourcecode]</p>
+url(buton_fare_ard.gif) repeat-x; cursor:pointer; } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/buton_olusturmak/3b_buton.html">tıklayınız.</a></p>
 <p><img alt="" src="https://docs.google.com/File?id=dhctmbn6_44663t82mfp_b" /></p>
 <h3>Görselliği Arttırılmış Esnek Yapılı Butonlar</h3>
@@ -181,8 +192,8 @@ edeceğimiz bir kaç husus var;</p>
 </ul>
 <p><img alt="" src="https://docs.google.com/File?id=dhctmbn6_441dvj8knnx_b" /></p>
 <p>Yukarıda görüldüğü gibi resmimizi iki kısma böleceğiz. Sol kısmını bir
-elemana(muhtemlen \&lt;a>), sağ kısmını başka bir elemana(fazladan bir
-elman olarak \&lt;span>) ekleyeceğiz. Bir elemana birden fazla background
+elemana(muhtemlen <a>), sağ kısmını başka bir elemana(fazladan bir
+elman olarak <span>) ekleyeceğiz. Bir elemana birden fazla background
 resmi atayamadığımız için bu yöntemi uyguluyoruz.</p>
 <p>Resmin sol kısmını butonun muhtemelen yüksek genişliğini düşünerek
 uzatmalıyız. Böylece buton metin genişledikçe backgorund resmi
@@ -198,29 +209,43 @@ bu resmi tek bir resim olarak kaydediyoruz ve background-position
 özelliği yardımı ile ilgili elemanın background'unda ilgili background
 resmini gösteriyoruz. Kodu yazarsak daha iyi anlayacaksınız.</p>
 <p>HTML kodu;</p>
-<p>[sourcecode language="html"] \&lt;a href="#">\&lt;span>Örnek Buton
-Metni\&lt;/span>\&lt;/a> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;span&gt;</span>Örnek Buton
+</pre></div>
+
+
+<p>Metni</span></a> </p>
 <p>CSS Kodu</p>
-<p>[sourcecode language="css"] a{display:block; float:left; width:auto;
-background:url(cancanli_butonlar_normal.gif) 0 0 no-repeat;
+<div class="codehilite"><pre> <span class="nt">a</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span>
+</pre></div>
+
+
+<p>background:url(cancanli_butonlar_normal.gif) 0 0 no-repeat;
 text-decoration:none; font-size:14px; font-weight:bold} a
 span{display:block; float:left; cursor:pointer;
 background:url(cancanli_butonlar_normal.gif) right -36px no-repeat;
-height:28px; padding:0 20px; line-height:28px; color:#363636}
-[/sourcecode]</p>
+height:28px; padding:0 20px; line-height:28px; color:#363636}</p>
 <p>a span için eklenen</p>
-<p>[sourcecode language="css"] float:left; cursor:pointer; [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">float</span><span class="nd">:left</span><span class="o">;</span> <span class="nt">cursor</span><span class="nd">:pointer</span><span class="o">;</span>
+</pre></div>
+
+
 <p>özellikleri ie6'daki genişlik sorununu gidermek için eklenmiştir.</p>
 <p>Bu örneğe fare üzerine geldiğindeki halinide ekleyelim</p>
-<p>[sourcecode language="css"] /* fare geldi kac */
-a:hover{background:url(cancanli_butonlar_ard.gif) 0 -68px no-repeat;}
+<div class="codehilite"><pre> <span class="c">/* fare geldi kac */</span>
+</pre></div>
+
+
+<p>a:hover{background:url(cancanli_butonlar_ard.gif) 0 -68px no-repeat;}
 a:hover span{background:url(cancanli_butonlar_ard.gif) right -100px
-no-repeat; color:#706e6e} [/sourcecode]</p>
+no-repeat; color:#706e6e} </p>
 <p>Son olarakta odaklanma halini ekleyerek bu örneği bitirelim.</p>
-<p>[sourcecode language="css"] /* buraya odaklan odaklan */
-a:focus{background:url(cancanli_butonlar_ard.gif) 0 -134px no-repeat;}
+<div class="codehilite"><pre> <span class="c">/* buraya odaklan odaklan */</span>
+</pre></div>
+
+
+<p>a:focus{background:url(cancanli_butonlar_ard.gif) 0 -134px no-repeat;}
 a:focus span{background:url(cancanli_butonlar_ard.gif) right -164px
-no-repeat; color:#363636} [/sourcecode]</p>
+no-repeat; color:#363636} </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/buton_olusturmak/cancali_buton_hover_focus.html">tıklayınız.</a></p>
 <p><img alt="" src="https://docs.google.com/File?id=dhctmbn6_447cnrf2jfh_b" /></p>
 <h3>CSS3 ile Buton Yapmak</h3>
@@ -228,41 +253,62 @@ no-repeat; color:#363636} [/sourcecode]</p>
 janjanlı güzel butonlar geliştirebiliyoruz. Ayrıca bu işi çok kolay bir
 şekilde bir iki satır kod ile yapabilme imkanı sağlıyor CSS3 bize. </p>
 <p>HTML kodu</p>
-<p>[sourcecode language="html"] \&lt;a href="#" class="buton">CSS3
-Buton\&lt;/a> [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;buton&quot;</span><span class="nt">&gt;</span>CSS3
+</pre></div>
+
+
+<p>Buton</a> </p>
 <p>Evet html kodummuz bu kadar.</p>
 <p>CSS Kodlarını yazalım</p>
-<p>[sourcecode language="css"] a.buton{ background:#2981E4; padding:5px
-10px; text-decoration:none; color:#fff; font:bold 14px Arial,
-Helvetica, sans-serif; } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.buton</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#2981E4</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">5px</span>
+</pre></div>
+
+
+<p>10px; text-decoration:none; color:#fff; font:bold 14px Arial,
+Helvetica, sans-serif; } </p>
 <p>Şimdide CSS3 özellikleri ile bu örneğimizi geliştirelim.</p>
 <p>İlk olarak köşeleri yuvarlatıyoruz.</p>
-<p>[sourcecode language="css"] a.buton{ background:#2981E4; padding:5px
-10px; text-decoration:none; color:#fff; font:bold 14px Arial,
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.buton</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#2981E4</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">5px</span>
+</pre></div>
+
+
+<p>10px; text-decoration:none; color:#fff; font:bold 14px Arial,
 Helvetica, sans-serif; -moz-border-radius: 7px; -webkit-border-radius:
-7px; border-radius: 7px; } [/sourcecode]</p>
+7px; border-radius: 7px; } </p>
 <p>Gölge verelim</p>
-<p>[sourcecode language="css"] a.buton{ background:#2981E4; padding:5px
-10px; text-decoration:none; color:#fff; font:bold 20px Arial,
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.buton</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#2981E4</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">5px</span>
+</pre></div>
+
+
+<p>10px; text-decoration:none; color:#fff; font:bold 20px Arial,
 Helvetica, sans-serif; -moz-border-radius: 7px; -webkit-border-radius:
 7px; border-radius: 7px; box-shadow: 3px 3px 4px #000; -moz-box-shadow:
-0 1px 2px #000; -webkit-box-shadow: 3px 3px 4px #000; } [/sourcecode]</p>
+0 1px 2px #000; -webkit-box-shadow: 3px 3px 4px #000; } </p>
 <p>Metine gölge verelim</p>
-<p>[sourcecode language="css"] a.buton{ background:#2981E4; padding:5px
-10px; text-decoration:none; color:#fff; font:bold 20px Arial,
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.buton</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#2981E4</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">5px</span>
+</pre></div>
+
+
+<p>10px; text-decoration:none; color:#fff; font:bold 20px Arial,
 Helvetica, sans-serif; -moz-border-radius: 7px; -webkit-border-radius:
 7px; border-radius: 7px; box-shadow: 0 1px 2px #000; -moz-box-shadow: 0
 1px 2px #000; -webkit-box-shadow: 0 1px 2px #000; text-shadow: 0 -1px
-1px rgba(0, 0, 0, 0.25); } [/sourcecode]</p>
+1px rgba(0, 0, 0, 0.25); } </p>
 <p><img alt="" src="https://docs.google.com/File?id=dhctmbn6_448dz8mbpgd_b" /></p>
 <p>Şimdide fare üzerine geldiğindeki halinide ekleyelim.</p>
-<p>[sourcecode language="css"] a.buton:hover{ background-color:#006699;
-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); } [/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.buton</span><span class="nd">:hover</span><span class="p">{</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#006699</span><span class="p">;</span>
+</pre></div>
+
+
+<p>text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/buton_olusturmak/css3_butonlar1.html">tıklayınız.</a></p>
 <p><strong>İkinci bir örnek yapalım.</strong></p>
 <p>Bu sefer CSS3'ün renk geçişi(gradients) özelliğindende yararlanalım.</p>
-<p>[sourcecode language="css"] a.buton{ background:#d21b00; background:
--moz-linear-gradient(top, #d21b00, #8e0700); background:
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.buton</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#d21b00</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span>
+</pre></div>
+
+
+<p>-moz-linear-gradient(top, #d21b00, #8e0700); background:
 -webkit-gradient(linear, left top, left bottom, from(#d21b00),
 to(#8e0700)); padding:20px 25px; text-decoration:none; color:#fff;
 font:bold 36px Arial, Helvetica, sans-serif; -moz-border-radius: 7px;
@@ -274,13 +320,12 @@ background: -moz-linear-gradient(top, #8e0700, #d21b00); background:
 -webkit-gradient(linear, left top, left bottom, from(#8e0700),
 to(#d21b00)); text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75); box-shadow: 0
 -1px 2px rgba(0, 0, 0, 0.75); -moz-box-shadow: 0 -1px 2px rgba(0, 0, 0,
-0.75); -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75); }
-[/sourcecode]</p>
+0.75); -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75); }</p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/buton_olusturmak/css3_butonlar2.html">tıklayınız.</a></p>
 <p><img alt="" src="https://docs.google.com/File?id=dhctmbn6_449fbfbdt25_b" /></p>
 <p>CSS3 özellikleri yardımı ile resim kullanmadan bir çok örnek
 yapabiliriz. 
-<a href="../static">http://speckyboy.com/2010/02/15/20-css3-tutorials-and-techiques-for-creating-buttons/</a>
+<a href="http://speckyboy.com/2010/02/15/20-css3-tutorials-and-techiques-for-creating-buttons/" title="http://speckyboy.com/2010/02/15/20-css3-tutorials-and-techiques-for-creating-buttons/">http://speckyboy.com/2010/02/15/20-css3-tutorials-and-techiques-for-creating-buttons/</a>
 sitesindeki örneklere bir göz atın.</p>
 <p>Ayrıca CSS3 ile çevrimiçi buton geliştirme araçları var incelemeye değer
 siteler.</p>
@@ -290,7 +335,7 @@ biridir. Yerinde ve güzel kullanılmaları halinde web sitelerine farklı
 bir görsellik ve işlevsellik katacaklardır. Bir çok sitede bir çok buton
 tasarımları bulunmaktadır, bu butonları gördükçe ne kadar çeşitli
 butonlar olabileceğini görüyoruz.
-[http://www.smileycat.com/design_elements/buttons/#002024][]
+<a href="http://www.smileycat.com/design_elements/buttons/#002024" title="http://www.smileycat.com/design_elements/buttons/#002024">http://www.smileycat.com/design_elements/buttons/#002024</a>
 sitesindeki örnekler dikkat çekici.</p>
 <p>CSS3'ün yaygınlaşması butonları daha esnek hale getirecektir. Daha kolay
 düzenlenebilir ve esnek bir yapı kazandıracaktır. CSS3 özellikleri yavaş
@@ -303,82 +348,43 @@ kaynaklar kısmındaki linklerin her birinde değerli çalışmalar
 bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="../static">http://www.smashingmagazine.com/2009/11/18/designing-css-buttons-techniques-and-resources/</a></li>
-<li><a href="../static">http://www.monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors</a>(iyi)</li>
-<li><a href="../static">http://www.smashingmagazine.com/2009/06/03/9-crucial-ui-features-of-social-media-and-networking-sites/</a>
+<li><a href="http://www.smashingmagazine.com/2009/11/18/designing-css-buttons-techniques-and-resources/" title="http://www.smashingmagazine.com/2009/11/18/designing-css-buttons-techniques-and-resources/">http://www.smashingmagazine.com/2009/11/18/designing-css-buttons-techniques-and-resources/</a></li>
+<li><a href="http://www.monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors" title="http://www.monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors">http://www.monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors</a>(iyi)</li>
+<li><a href="http://www.smashingmagazine.com/2009/06/03/9-crucial-ui-features-of-social-media-and-networking-sites/" title="http://www.smashingmagazine.com/2009/06/03/9-crucial-ui-features-of-social-media-and-networking-sites/">http://www.smashingmagazine.com/2009/06/03/9-crucial-ui-features-of-social-media-and-networking-sites/</a>
     (genel anlamı)</li>
-<li><a href="../static">http://www.oscaralexander.com/tutorials/how-to-make-sexy-buttons-with-css.html</a></li>
-<li>[http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/][]</li>
+<li><a href="http://www.oscaralexander.com/tutorials/how-to-make-sexy-buttons-with-css.html" title="http://www.oscaralexander.com/tutorials/how-to-make-sexy-buttons-with-css.html">http://www.oscaralexander.com/tutorials/how-to-make-sexy-buttons-with-css.html</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/" title="http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/">http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/</a></li>
 <li><a href="http://particletree.com/features/rediscovering-the-button-element/" title="http://particletree.com/features/rediscovering-the-button-element/">http://particletree.com/features/rediscovering-the-button-element/</a>
     (button elemanı hakkında)</li>
-<li>[http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/][]
+<li><a href="http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/" title="http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/">http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/</a>
     (güzel)</li>
-<li>[http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors/][]</li>
-<li><a href="../static">http://blog.anomalyinnovations.com/2010/03/creating-a-realistic-looking-button-with-css3/</a></li>
-<li><a href="../static">http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/</a></li>
-<li><a href="../static">http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/</a></li>
+<li><a href="http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors/" title="http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors/">http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors/</a></li>
+<li><a href="http://blog.anomalyinnovations.com/2010/03/creating-a-realistic-looking-button-with-css3/" title="http://blog.anomalyinnovations.com/2010/03/creating-a-realistic-looking-button-with-css3/">http://blog.anomalyinnovations.com/2010/03/creating-a-realistic-looking-button-with-css3/</a></li>
+<li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/" title="http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/">http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/</a></li>
+<li><a href="http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/" title="http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/">http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/</a></li>
 <li><a href="http://codecanyon.net/item/fancy-2-line-css-buttons/109049" title="http://codecanyon.net/item/fancy-2-line-css-buttons/109049">http://codecanyon.net/item/fancy-2-line-css-buttons/109049</a></li>
 <li><a href="http://codecanyon.net/item/css3-buttons/109193" title="http://codecanyon.net/item/css3-buttons/109193">http://codecanyon.net/item/css3-buttons/109193</a></li>
 <li><a href="http://vandelaydesign.com/blog/galleries/button-design-showcase/" title="http://vandelaydesign.com/blog/galleries/button-design-showcase/">http://vandelaydesign.com/blog/galleries/button-design-showcase/</a></li>
 <li><a href="http://www.leemunroe.com/call-to-action-buttons/" title="http://www.leemunroe.com/call-to-action-buttons/">http://www.leemunroe.com/call-to-action-buttons/</a></li>
 <li><a href="http://www.uxbooth.com/blog/good-call-to-action-buttons/" title="http://www.uxbooth.com/blog/good-call-to-action-buttons/">http://www.uxbooth.com/blog/good-call-to-action-buttons/</a>
     (tasarımda dahil)</li>
-<li><a href="../static">http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/</a></li>
-<li>[http://www.smileycat.com/design_elements/buttons/#002024][]</li>
-<li><a href="../static">http://www.tripwiremagazine.com/design/css-techniques/24-essential-submit-button-enhancements.html</a></li>
+<li><a href="http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/" title="http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/">http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/</a></li>
+<li><a href="http://www.smileycat.com/design_elements/buttons/#002024" title="http://www.smileycat.com/design_elements/buttons/#002024">http://www.smileycat.com/design_elements/buttons/#002024</a></li>
+<li><a href="http://www.tripwiremagazine.com/design/css-techniques/24-essential-submit-button-enhancements.html" title="http://www.tripwiremagazine.com/design/css-techniques/24-essential-submit-button-enhancements.html">http://www.tripwiremagazine.com/design/css-techniques/24-essential-submit-button-enhancements.html</a></li>
 <li><a href="http://www.vanseodesign.com/css/css-navigation-buttons/" title="http://www.vanseodesign.com/css/css-navigation-buttons/">http://www.vanseodesign.com/css/css-navigation-buttons/</a></li>
-<li>[http://articles.techrepublic.com.com/5100-10878_11-5323375.html][]</li>
+<li><a href="http://articles.techrepublic.com.com/5100-10878_11-5323375.html">http://articles.techrepublic.com.com/5100-10878_11-5323375.html</a></li>
 <li><a href="http://www.thesitewizard.com/css/3d-buttons.shtml">http://www.thesitewizard.com/css/3d-buttons.shtml</a></li>
-<li><a href="../static">http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm</a></li>
+<li><a href="http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm">http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm</a></li>
 <li><a href="http://cssglobe.com/post/1614/4-uber-cool-css-techniques-for-links" title="http://cssglobe.com/post/1614/4-uber-cool-css-techniques-for-links">http://cssglobe.com/post/1614/4-uber-cool-css-techniques-for-links</a></li>
-<li><a href="../static">http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/</a></li>
-<li>[http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/][]</li>
-<li><a href="../static">http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx</a></li>
-<li><a href="../static">http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/</a></li>
+<li><a href="http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/" title="http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/">http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/" title="http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/">http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/</a></li>
+<li><a href="http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx" title="http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx">http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx</a></li>
+<li><a href="http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/" title="http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/">http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/</a></li>
 <li><a href="http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/" title="http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/">http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/</a></li>
-<li><a href="../static">http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors</a></li>
+<li><a href="http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors" title="http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors">http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors</a></li>
 <li><a href="http://blog.typekit.com/2011/02/10/type-study-an-all-css-button/">http://blog.typekit.com/2011/02/10/type-study-an-all-css-button/</a></li>
 </ul>
 </p>
-
-<div class="codehilite"><pre><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">speckyboy</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>02<span class="o">/</span>15<span class="o">/</span>20<span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">tutorials</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">techiques</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">creating</span><span class="o">-</span><span class="n">buttons</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">speckyboy</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>02<span class="o">/</span>15<span class="o">/</span>20<span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">tutorials</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">techiques</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">creating</span><span class="o">-</span><span class="n">buttons</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>11<span class="o">/</span>18<span class="o">/</span><span class="n">designing</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">techniques</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">resources</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>11<span class="o">/</span>18<span class="o">/</span><span class="n">designing</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">techniques</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">resources</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">monc</span><span class="p">.</span><span class="n">se</span><span class="o">/</span><span class="n">kitchen</span><span class="o">/</span>59<span class="o">/</span><span class="n">scalable</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">png</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">colors</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">monc</span><span class="p">.</span><span class="n">se</span><span class="o">/</span><span class="n">kitchen</span><span class="o">/</span>59<span class="o">/</span><span class="n">scalable</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">png</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">colors</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>06<span class="o">/</span>03<span class="o">/</span>9<span class="o">-</span><span class="n">crucial</span><span class="o">-</span><span class="n">ui</span><span class="o">-</span><span class="n">features</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">social</span><span class="o">-</span><span class="n">media</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">networking</span><span class="o">-</span><span class="n">sites</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>06<span class="o">/</span>03<span class="o">/</span>9<span class="o">-</span><span class="n">crucial</span><span class="o">-</span><span class="n">ui</span><span class="o">-</span><span class="n">features</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">social</span><span class="o">-</span><span class="n">media</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">networking</span><span class="o">-</span><span class="n">sites</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">oscaralexander</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">make</span><span class="o">-</span><span class="n">sexy</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css</span><span class="p">.</span><span class="n">html</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">oscaralexander</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">make</span><span class="o">-</span><span class="n">sexy</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css</span><span class="p">.</span><span class="n">html</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">dynamicdrive</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">style</span><span class="o">/</span><span class="n">csslibrary</span><span class="o">/</span><span class="n">item</span><span class="o">/</span><span class="n">bold_css_buttons</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">dynamicdrive</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">style</span><span class="o">/</span><span class="n">csslibrary</span><span class="o">/</span><span class="n">item</span><span class="o">/</span><span class="n">bold_css_buttons</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>456<span class="n">bereastreet</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>200705<span class="o">/</span><span class="n">creating_bulletproof_graphic_link_buttons_with_css</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span>456<span class="n">bereastreet</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span>200705<span class="o">/</span><span class="n">creating_bulletproof_graphic_link_buttons_with_css</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">filamentgroup</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">lab</span><span class="o">/</span><span class="n">styling_the_button_element_with_sliding_doors</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">filamentgroup</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">lab</span><span class="o">/</span><span class="n">styling_the_button_element_with_sliding_doors</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">anomalyinnovations</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>03<span class="o">/</span><span class="n">creating</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">realistic</span><span class="o">-</span><span class="n">looking</span><span class="o">-</span><span class="n">button</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css3</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">anomalyinnovations</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2010<span class="o">/</span>03<span class="o">/</span><span class="n">creating</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">realistic</span><span class="o">-</span><span class="n">looking</span><span class="o">-</span><span class="n">button</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">css3</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">net</span><span class="p">.</span><span class="n">tutsplus</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">html</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">techniques</span><span class="o">/</span><span class="n">build</span><span class="o">-</span><span class="n">kick</span><span class="o">-</span><span class="n">ass</span><span class="o">-</span><span class="n">practical</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">buttons</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">net</span><span class="p">.</span><span class="n">tutsplus</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">tutorials</span><span class="o">/</span><span class="n">html</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">techniques</span><span class="o">/</span><span class="n">build</span><span class="o">-</span><span class="n">kick</span><span class="o">-</span><span class="n">ass</span><span class="o">-</span><span class="n">practical</span><span class="o">-</span><span class="n">css3</span><span class="o">-</span><span class="n">buttons</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2006<span class="o">/</span>11<span class="o">/</span>03<span class="o">/</span><span class="n">design</span><span class="o">-</span><span class="n">patterns</span><span class="o">-</span><span class="n">download</span><span class="o">-</span><span class="n">buttons</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2006<span class="o">/</span>11<span class="o">/</span>03<span class="o">/</span><span class="n">design</span><span class="o">-</span><span class="n">patterns</span><span class="o">-</span><span class="n">download</span><span class="o">-</span><span class="n">buttons</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>10<span class="o">/</span>13<span class="o">/</span><span class="n">call</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">action</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">examples</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">best</span><span class="o">-</span><span class="n">practices</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">smashingmagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>10<span class="o">/</span>13<span class="o">/</span><span class="n">call</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">action</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">examples</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">best</span><span class="o">-</span><span class="n">practices</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">tripwiremagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">design</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">techniques</span><span class="o">/</span>24<span class="o">-</span><span class="n">essential</span><span class="o">-</span><span class="n">submit</span><span class="o">-</span><span class="n">button</span><span class="o">-</span><span class="n">enhancements</span><span class="p">.</span><span class="n">html</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">tripwiremagazine</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">design</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">techniques</span><span class="o">/</span>24<span class="o">-</span><span class="n">essential</span><span class="o">-</span><span class="n">submit</span><span class="o">-</span><span class="n">button</span><span class="o">-</span><span class="n">enhancements</span><span class="p">.</span><span class="n">html</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">builderau</span><span class="p">.</span><span class="n">com</span><span class="p">.</span><span class="n">au</span><span class="o">/</span><span class="n">program</span><span class="o">/</span><span class="n">css</span><span class="o">/</span><span class="n">soa</span><span class="o">/</span><span class="n">Designing</span><span class="o">-</span>3<span class="n">D</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">pure</span><span class="o">-</span><span class="n">CSS</span><span class="o">/</span>0<span class="p">,</span>339028392<span class="p">,</span>339131100<span class="p">,</span>00<span class="p">.</span><span class="n">htm</span>
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">speckyboy</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>05<span class="o">/</span>27<span class="o">/</span>22<span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">button</span><span class="o">-</span><span class="n">styling</span><span class="o">-</span><span class="n">tutorials</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">techniques</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">speckyboy</span><span class="p">.</span><span class="n">com</span><span class="o">/</span>2009<span class="o">/</span>05<span class="o">/</span>27<span class="o">/</span>22<span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">button</span><span class="o">-</span><span class="n">styling</span><span class="o">-</span><span class="n">tutorials</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">techniques</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">dynamicdrive</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">style</span><span class="o">/</span><span class="n">csslibrary</span><span class="o">/</span><span class="n">item</span><span class="o">/</span><span class="n">vista_aero_buttons_menu</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">dynamicdrive</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">style</span><span class="o">/</span><span class="n">csslibrary</span><span class="o">/</span><span class="n">item</span><span class="o">/</span><span class="n">vista_aero_buttons_menu</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">cdsnettr</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">post</span><span class="o">/</span>2008<span class="o">/</span>09<span class="o">/</span><span class="n">Top</span><span class="o">-</span>10<span class="o">-</span><span class="n">CSS</span><span class="o">-</span><span class="n">Button</span><span class="o">-</span><span class="n">Tutorial</span><span class="p">.</span><span class="n">aspx</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">cdsnettr</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">post</span><span class="o">/</span>2008<span class="o">/</span>09<span class="o">/</span><span class="n">Top</span><span class="o">-</span>10<span class="o">-</span><span class="n">CSS</span><span class="o">-</span><span class="n">Button</span><span class="o">-</span><span class="n">Tutorial</span><span class="p">.</span><span class="n">aspx</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">ile</span><span class="o">-</span><span class="n">erisilebilir</span><span class="o">-</span><span class="n">formlar</span><span class="o">-</span><span class="n">yapmak</span><span class="o">-</span><span class="n">ii</span><span class="o">/</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">fatihhayrioglu</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">css</span><span class="o">-</span><span class="n">ile</span><span class="o">-</span><span class="n">erisilebilir</span><span class="o">-</span><span class="n">formlar</span><span class="o">-</span><span class="n">yapmak</span><span class="o">-</span><span class="n">ii</span><span class="o">/</span>&quot;
-<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">monc</span><span class="p">.</span><span class="n">se</span><span class="o">/</span><span class="n">kitchen</span><span class="o">/</span>59<span class="o">/</span><span class="n">scalable</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">png</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">colors</span>
-&quot;<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">monc</span><span class="p">.</span><span class="n">se</span><span class="o">/</span><span class="n">kitchen</span><span class="o">/</span>59<span class="o">/</span><span class="n">scalable</span><span class="o">-</span><span class="n">css</span><span class="o">-</span><span class="n">buttons</span><span class="o">-</span><span class="n">using</span><span class="o">-</span><span class="n">png</span><span class="o">-</span><span class="n">and</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">colors</span>&quot;
-</pre></div>
     </div><!-- /.entry-content -->
     
     <div class="comments">

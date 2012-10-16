@@ -93,13 +93,13 @@ css kodu ekledim.</p>
 <p>Tek sorunum sıralamada her sayfayı 1,2,3...10 diye sıralaması idi. Benim
 eski kodumda bir "i" değerini arttırarak bu değeri verdiği için</p>
 <ol>
-<li>\&lt;?php echo \$i; ?></li>
+<li>&lt;?php echo $i; ?&gt;</li>
 </ol>
 <p>şeklinde yorum sayısını yazdırıyordum. Burada yorum sayısını düzgün
 sayması için yukarıdaki kodu</p>
 <ol>
-<li>\&lt;?php echo \$comment_number; \$comment_number +=
-    \$comment_delta;?></li>
+<li>&lt;?php echo $comment_number; $comment_number +=
+    $comment_delta;?&gt;</li>
 </ol>
 <p>bu kod ile değiştirdim düzeldi.</p>
 </p><p>There are <a href=".././siteye-yorum-sayfalama-eklentisi-wordpress-paged-comments-ekledim/#disqus_thread">comments</a>.</p>
@@ -225,12 +225,16 @@ uygulanır ...</p>
 </footer><!-- /.post-info -->
                 <p>Bu hata birden fazla float uygulanmış içiçe elementlerde meydana gelir.
 Son float uygulanmış elementin son karakterleri tekrarlar.</p>
-<p>[sourcecode language="html"] \&lt;div id="icerik"> \&lt;!-- icerik alani-->
-\&lt;div id="anaIcerik"> .... \&lt;/div>\&lt;!-- anaIcerik sonu --> \&lt;!--
-sagkolon baslangici --> \&lt;div id="sagKolon"> ... \&lt;/div> \&lt;/div>
-[/sourcecode]</p>
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- icerik alani--&gt;</span>
+</pre></div>
+
+
+<p><div id="anaIcerik"> .... </div><!-- anaIcerik sonu --> <!--
+sagkolon baslangici --> <div id="sagKolon"> ... </div> </div></p>
 <p>Örnek sayfayı görmek için <a href="static/dokumanlar/ie_tekrarlayan_karakter_sorunu_ornek.html">tıklayınız.</a> (hatayı görmek için IE6 ile
-bakmalısınız ...</p>
+bakmalısınız.)</p>
+<p>Float uygulanmış elementlerin ilki ve sonuncusu arasında bir çok yorum
+kodu(<!-- bunun gibi -->) var ise bu hata ...</!--></p>
                 <a class="readmore" href=".././ie6un-tekrarlayan-karakter-sorunu/">read more</a>
                 <p>There are <a href=".././ie6un-tekrarlayan-karakter-sorunu/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
@@ -309,7 +313,7 @@ sonra kodumuzu incelerken bu yorumlar bize yardımcı olacaktır. Ayrıca
 bir proje üzerinde birden fazla kişi çalışıyorsa diğer çalışanlar için
 bu kodlar önemli bilgiler içerecektir.</p>
 <p>CSS'de yorum eklemek çok kolaydır.</p>
-<p>[sourcecode language="css ...</p>
+<div class="codehilite"><pre> <span class="c">/* Genel Stiller */</span> <span class="nt">body ...</span></pre></div>
                 <a class="readmore" href=".././css-ipuclari-7-css-yorum-kodu-ekleme/">read more</a>
                 <p>There are <a href=".././css-ipuclari-7-css-yorum-kodu-ekleme/#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
