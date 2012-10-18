@@ -87,38 +87,34 @@ olduğunu gördüm.</p>
 <p>CSS3 ile renk geçişi için <a href="http://www.colorzilla.com/gradient-editor/">http://www.colorzilla.com/gradient-editor/</a>
 sitesini kullanıyorum.</p>
 <p>Sorunu görmek için aşağıdaki gibi bir örnek yaptım;</p>
-<div class="codehilite"><pre> <span class="nf">#test</span><span class="p">{</span> <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span> <span class="m">#ffffff</span><span class="p">;</span> <span class="c">/* Old browsers */</span>
+<div class="codehilite"><pre> <span class="nf">#test</span><span class="p">{</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="m">#ffffff</span><span class="p">;</span> <span class="c">/* Old browsers */</span>
+    <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#ffffff</span> <span class="m">0</span><span class="o">%,</span> <span class="m">#e5e5e5</span> <span class="m">100</span><span class="o">%</span><span class="p">);</span> <span class="c">/* FF3.6+ */</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">linear</span><span class="o">,</span> <span class="k">left</span> <span class="k">top</span><span class="o">,</span> <span class="k">left</span> <span class="k">bottom</span><span class="o">,</span> <span class="k">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="m">0</span><span class="o">%,</span><span class="m">#ffffff</span><span class="p">)</span><span class="o">,</span> <span class="k">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="m">100</span><span class="o">%,</span><span class="m">#e5e5e5</span><span class="p">));</span> <span class="c">/* Chrome,Safari4+*/</span>
+    <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#ffffff</span> <span class="m">0</span><span class="o">%,</span><span class="m">#e5e5e5</span> <span class="m">100</span><span class="o">%</span><span class="p">);</span> <span class="c">/* Chrome10+,Safari5.1+ */</span>
+    <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="err">o</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span><span class="m">#ffffff</span> <span class="m">0</span><span class="o">%,</span><span class="m">#e5e5e5</span> <span class="m">100</span><span class="o">%</span><span class="p">);</span> <span class="c">/* Opera 11.10+ */</span>
+    <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#ffffff</span> <span class="m">0</span><span class="o">%,</span><span class="m">#e5e5e5</span> <span class="m">100</span><span class="o">%</span><span class="p">);</span> <span class="c">/* IE10+ */</span>
+    <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#ffffff</span> <span class="m">0</span><span class="o">%,</span><span class="m">#e5e5e5</span> <span class="m">100</span><span class="o">%</span><span class="p">);</span> <span class="c">/* W3C */</span>
+    <span class="n">filter</span><span class="o">:</span> <span class="n">progid</span><span class="o">:</span><span class="n">DXImageTransform</span><span class="o">.</span><span class="n">Microsoft</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">startColorstr</span><span class="o">=</span><span class="s1">&#39;#ffffff&#39;</span><span class="o">,</span> <span class="n">endColorstr</span><span class="o">=</span><span class="s1">&#39;#e5e5e5&#39;</span><span class="o">,</span><span class="n">GradientType</span><span class="o">=</span><span class="m">0</span> <span class="p">);</span> <span class="c">/* IE6-9 */</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /<em>
-FF3.6+ </em>/ background: -webkit-gradient(linear, left top, left bottom,
-color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /<em> Chrome,Safari4+
-</em>/ background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
-/<em> Chrome10+,Safari5.1+ </em>/ background: -o-linear-gradient(top,</p>
-<h1>ffffff 0%,#e5e5e5 100%); /<em> Opera 11.10+ </em>/ background:</h1>
-<p>-ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /<em> IE10+ </em>/
-background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /<em> W3C </em>/
-filter: progid:DXImageTransform.Microsoft.gradient(
-startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /<em>
-IE6-9 </em>/ } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/2gKwm/4/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
-<p>ie7’de(6’yı kâle bile almıyorum :D) renk geçişinin uygulanmadığını
-görüyoruz.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/2gKwm/4/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p>ie7’de(6’yı kâle bile almıyorum :D) renk geçişinin uygulanmadığını görüyoruz.</p>
 <p><img alt="" src="https://lh6.googleusercontent.com/2lOKPVgbBkBb_8z4TjqvsEfttZ-yDRJnYrBCsjrG_zuxoF49BWbqDiBerJSzAPm74ZR7ORDg-SJqn6T0JgM6y7TRFX0Dov4LKLolJb5xmH4VwRR9Qek" /></p>
-<p>Çözüm ise bir önceki <a href="http://www.fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/">hasLayout</a> makalesinde olduğu gibi
-sadece zoom:1 eklemek.</p>
+<p>Çözüm ise bir önceki <a href="http://www.fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/">hasLayout</a> makalesinde olduğu gibi sadece zoom:1 eklemek.</p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Q2z89/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-<p>Ben tüm renk geçişi kodlarımın sonuna unutmazsam zoom:1 ekliyorum sizede
-öneririm.</p>
+<p>Ben tüm renk geçişi kodlarımın sonuna unutmazsam zoom:1 ekliyorum sizede öneririm.</p>
 <h3>Kaynaklar</h3>
 <ul>
 <li><a href="http://stackoverflow.com/questions/7257170/background-gradient-ie7-css-problem">http://stackoverflow.com/questions/7257170/background-gradient-ie7-css-problem</a></li>
 <li><a href="http://stackoverflow.com/questions/213750/gradient-colors-in-internet-explorer">http://stackoverflow.com/questions/213750/gradient-colors-in-internet-explorer</a></li>
 <li><a href="http://www.fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/">http://www.fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/</a></li>
-</ul>
-</p><p><a href=".././internet-explorerda-renk-gecisi-sorunu-ve-cozumu/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././internet-explorerda-renk-gecisi-sorunu-ve-cozumu/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

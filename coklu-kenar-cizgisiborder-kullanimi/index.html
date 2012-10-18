@@ -87,103 +87,128 @@ Ancak yanına bir çizgi daha konduğu zaman kara kara düşünürüz ne
 yapalımda bu işin altında kalkalım diye. Resim kullanırız genelde sorunu
 halletmek için.</p>
 <p>Burada basit bir yol ile bu işi nasıl yapacağımızı anlatacağım.</p>
-<p></p>
-Çoklu kenar çizgisi uygulanacak eleman relative konumlandırılmalı ve
+<p>Çoklu kenar çizgisi uygulanacak eleman relative konumlandırılmalı ve
 padding değeri uygulanacak ikinci kenar çizgisi dikkate alınarak
 atanmalıdır.</p>
-<div class="codehilite"><pre> <span class="nf">#cokluKenarCizgisi</span> <span class="p">{</span> <span class="err">   </span><span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="m">#FF0000</span><span class="p">;</span> <span class="err">   </span><span class="k">padding</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nf">#cokluKenarCizgisi</span><span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="m">#FF0000</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">z-index</span><span class="o">:</span> <span class="m">10</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>20px;    position: relative;    z-index: 10; } </p>
 <p>Sözde elemanlar ile ikinci kenar çizgisini ekleyelim. z-index eksi değer
 vererek içeriğin arkasına atarız.</p>
-<div class="codehilite"><pre> <span class="nf">#cokluKenarCizgisi</span><span class="nd">:before</span> <span class="p">{</span> <span class="err">   </span><span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="m">5px</span>
+<div class="codehilite"><pre> <span class="nf">#cokluKenarCizgisi</span><span class="nd">:before</span><span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="m">#06F</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">z-index</span><span class="o">:</span> <span class="m">-1</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>solid #06F;    content: "";    display: block; bottom: 0;    left: 0;
-      right: 0;    top: 0;    z-index: -1; } 
-<iframe style="width: 100%; height: 230px" src="http://jsfiddle.net/fatihhayri/L8ZHT/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<iframe style="width: 100%; height: 230px" src="http://jsfiddle.net/fatihhayri/L8ZHT/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <p>Bu örnekte sadece iki kenar çizgisi için kod verildi, ancak yine sadece
 :before ve background-color ile üç kenar çizgisi ve hatta :before,
 background-color ve :after ile 4 ve daha fazla kenar çizgisi
 ekleyebiliyoruz.</p>
 <p>Tek kenara çoklu çizgi genelde lazım olan bir kod olduğu için burada
 onuda paylaşıyorum.</p>
-<div class="codehilite"><pre> <span class="nf">#cokluKenarCizgisi</span> <span class="p">{</span> <span class="err">   </span><span class="k">background</span><span class="o">:</span><span class="m">#F0F0F0</span><span class="p">;</span> <span class="err">   </span><span class="k">border-bottom</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nf">#cokluKenarCizgisi</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#F0F0F0</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">2px</span> <span class="k">solid</span> <span class="m">#f00</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#000000</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">11px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#cokluKenarCizgisi</span><span class="nd">:before</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#0FF</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>2px solid #f00;    color: #000000;    padding: 10px 10px 11px;
-   position: relative; } #cokluKenarCizgisi:before {
-   background:#0FF;    bottom: 0;    content: "";    display: block;
-   height: 1px;    left: 0;    position: absolute;    width: 100%; }</p>
 <iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/c6e9s/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>Daha falza örnek için
 <a href="http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/demo/borders.html">http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/demo/borders.html</a>
 sayfasına bakınız.</p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:**  
-Internet Explorer 7.0: desteklemiyor, 8+ destekliyor  
-Firefox 3.5+  
-Chrome 4+  
-Opera 10+  
-Safari 4+
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu:</strong><br />
+Internet Explorer 7.0: desteklemiyor, 8+ destekliyor<br />
+Firefox 3.5+<br />
+Chrome 4+<br />
+Opera 10+<br />
+Safari 4+</p>
 <p>Burada önemli nokta ie7’nin :before ve :after desteğinin olmaması.
 Kullanım yüzdesi %6,46 olduğu göz önüne alınırsa göz ardı edilebilir.
 border-radius uygulanmış elemanlara bu metot kullanılabilir.</p>
 <h3>outline ile iki kenar çizgisi oluşturmak</h3>
 <p>İki kenar çizgisi oluşturmak için outline kullanılabilir.</p>
-<div class="codehilite"><pre> <span class="nf">#cokluKenarCizgisi</span> <span class="p">{</span> <span class="err">   </span><span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="m">#FF0000</span><span class="p">;</span> <span class="err">   </span><span class="k">padding</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nf">#cokluKenarCizgisi</span><span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="m">#FF0000</span><span class="p">;</span>
+    <span class="k">outline</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="nb">blue</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>20px; outline: 5px solid blue; } 
-<iframe style="width: 100%; height: 280px" src="http://jsfiddle.net/fatihhayri/Aprbj/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<iframe style="width: 100%; height: 280px" src="http://jsfiddle.net/fatihhayri/Aprbj/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <p>İkiden fazla kenar çigisi kullanamasakta iyi bir alternatif olarak
 kullanılabilir.</p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:**  
-Internet Explorer 7.0: desteklemiyor, 8+ destekliyor  
-Firefox 3.5+  
-Chrome 4+  
-Opera 10+  
-Safari 4+
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu:</strong><br />
+Internet Explorer 7.0: desteklemiyor, 8+ destekliyor<br />
+Firefox 3.5+<br />
+Chrome 4+<br />
+Opera 10+<br />
+Safari 4+</p>
 <p>ie7 yine sorun</p>
 <h3>box-shadow ile çoklu kenar çizgisi oluşturmak</h3>
-<div class="codehilite"><pre> <span class="nf">#cokluKenarCizgisi</span> <span class="p">{</span> <span class="err">   </span><span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="m">#FF0000</span><span class="p">;</span> <span class="err">   </span><span class="k">padding</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nf">#cokluKenarCizgisi</span><span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="m">#FF0000</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>      
+    <span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#06F</span><span class="p">;</span> 
+    <span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#06F</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#06F</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>10px;    -moz-box-shadow:0 0 0 5px #06F;   -webkit-box-shadow:0 0 0 5px</p>
-<h1>06F;   box-shadow:0 0 0 5px #06F; }</h1>
 <p>Çoklu gölge kullanımı ile birdne fazla kenar çizgiside ekleyebiliriz.</p>
-<div class="codehilite"><pre> <span class="nf">#cokluKenarCizgisi</span> <span class="p">{</span> <span class="err">   </span><span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="m">#FF0000</span><span class="p">;</span> <span class="err">   </span><span class="k">padding</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nf">#cokluKenarCizgisi</span><span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="m">#FF0000</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#06F</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="m">#FF0</span><span class="p">;</span>
+    <span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#06F</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="m">#FF0</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#06F</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="m">#FF0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>10px;    -moz-box-shadow:0 0 0 5px #06F, 0 0 0 10px #FF0;
--webkit-box-shadow:0 0 0 5px #06F, 0 0 0 10px #FF0; box-shadow:0 0 0
-5px #06F, 0 0 0 10px #FF0; } 
-<iframe style="width: 100%; height: 250px" src="http://jsfiddle.net/fatihhayri/bPmQG/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:**  
-Internet Explorer 7.0, 8.0: desteklemiyor, 9+ destekliyor  
-Firefox 3.5+  
-Chrome 4+  
-Opera 10+  
-Safari 4+
+<iframe style="width: 100%; height: 250px" src="http://jsfiddle.net/fatihhayri/bPmQG/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu:</strong><br />
+Internet Explorer 7.0, 8.0: desteklemiyor, 9+ destekliyor<br />
+Firefox 3.5+<br />
+Chrome 4+<br />
+Opera 10+<br />
+Safari 4+</p>
 <p>Burada destek konusundn daha büyük bir sorunumuz var ie7’in yanında
 box-shadow özelliğini ie8’de desteklemiyor.</p>
 <h3>Sonuç</h3>
@@ -201,7 +226,6 @@ ve :before veya outline yöntemi kullanılabilir.</p>
 <li><a href="http://www.impressivewebs.com/multiple-borders-css/">http://www.impressivewebs.com/multiple-borders-css/</a></li>
 <li><a href="http://www.sitepoint.com/css3-multiple-borders/">http://www.sitepoint.com/css3-multiple-borders/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

@@ -101,40 +101,49 @@ yazı tipi bulabiliriz internetten.</p>
 eksilerinide bahsedip son kararı sizin vermenizi isteyeceğim.</p>
 <p><a href="http://www.fatihhayrioglu.com/font-face-kullanimi/">font-face kullanımını</a> anlattığım makalemi okuyarak yazıları sitelere
 nasıl gömdüğümüzü öğrenebilirsiniz.</p>
-<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;Graublau Web&#39;</span><span class="o">;</span> <span class="nt">src</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="k">@font-face</span> <span class="p">{</span>
+    <span class="nt">font-family</span><span class="o">:</span><span class="s1">&#39;Graublau Web&#39;</span><span class="o">;</span>
+    <span class="nt">src</span><span class="nd">:local</span><span class="o">(</span><span class="s1">&#39;Graublau Web Regular&#39;</span><span class="o">),</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;Graublau Web&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="nt">GraublauWeb</span><span class="nc">.woff</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="nt">woff</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="nt">GraublauWeb</span><span class="nc">.svg</span><span class="nf">#GraublauWeb</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="nt">svg</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="nt">GraublauWeb</span><span class="nc">.otf</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="nt">opentype</span><span class="o">);</span>
+    <span class="nt">font-weight</span><span class="nd">:400</span><span class="o">;</span>
+    <span class="nt">font-style</span><span class="nd">:normal</span><span class="o">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="o">:</span><span class="s2">&quot;Graublau Web&quot;</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>url('GraublauWeb.eot'); src: local('Graublau Web Regular'),
-local('Graublau Web'), url('GraublauWeb.woff') format('woff'),
-url('GraublauWeb.svg#GraublauWeb') format('svg'),
-url('GraublauWeb.otf') format('opentype'); font-weight: normal;
-font-style: normal; } p { font-family: "Graublau Web", serif; } </p>
 <p>şeklinde genel kullanımı göstermiştik. Benzer bir şekilde bir şekilli
 yazı tipi ekleyip ikon ekleyebiliriz.</p>
-<p><a href="http://webloti.org/20-modern-fontface-icon-seti/">http://webloti.org/20-modern-fontface-icon-seti/</a> ve benzeri
-sitelerden ücretsiz web ikonlarını alalım.</p>
+<p><a href="http://webloti.org/20-modern-fontface-icon-seti/">http://webloti.org/20-modern-fontface-icon-seti/</a> ve benzeri sitelerden ücretsiz web ikonlarını alalım.</p>
 <p><img alt="" src="https://lh5.googleusercontent.com/79Rggs4m_IPXO4v7JCZQt1fSFLljkf9RuTtZDSPzqeg4D3pjzrKFmyboc6ZmVwnSUw7yDZUvklmSSCqFSo8YL3qslteMuQ8r4I-SxhoO6pJVZ1EhZog" /></p>
-<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;ModernPictogramsNormal&#39;</span><span class="o">;</span> <span class="nt">src</span><span class="o">:</span>
+<div class="codehilite"><pre> <span class="k">@font-face</span><span class="p">{</span>
+    <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;ModernPictogramsNormal&#39;</span><span class="o">;</span>
+    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+    <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;modernpics-webfont.eot&#39;</span><span class="o">);</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;modernpics-webfont.eot?#iefix&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;embedded-opentype&#39;</span><span class="o">),</span>
+<span class="nt">url</span><span class="o">(</span><span class="s1">&#39;modernpics-webfont.woff&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff&#39;</span><span class="o">),</span>
+<span class="nt">url</span><span class="o">(</span><span class="s1">&#39;modernpics-webfont.ttf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">),</span>
+<span class="nt">url</span><span class="o">(</span><span class="s1">&#39;modernpics-webfont.svg#ModernPictogramsNormal&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;svg&#39;</span><span class="o">);</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>url('modernpics-webfont.eot'); src:
-url('modernpics-webfont.eot?#iefix') format('embedded-opentype'),
-url('modernpics-webfont.woff') format('woff'),
-url('modernpics-webfont.ttf') format('truetype'),
-url('modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
-font-weight: normal; font-style: normal; } </p>
 <p>kodu ile yazı tipini sayfamızda çağırmış olduk. Menü elemanlarının her
 biri için seçtiğimiz ikonları atamak için ilgili elemanın
 öncesine(:before) yazı tipinde ilgili ikonu ifade eden harfi ekliyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">li</span><span class="nf">#alisveris</span> <span class="nt">a</span><span class="nd">:before</span><span class="p">{</span> <span class="k">font</span><span class="o">:</span><span class="m">24px</span> <span class="s2">&quot;ModernPictogramsNormal&quot;</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">li</span><span class="nf">#alisveris</span> <span class="nt">a</span><span class="nd">:before</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;i&quot;</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">24px</span> <span class="s2">&quot;ModernPictogramsNormal&quot;</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>content:"i"; color:#f00; padding-right:5px; } </p>
-<p>Alışveriş için seçtiğimiz sepet ikonun “i” harfi ile ifade edildiği için
-“i” harfini ekledik. Kodu biraz daha düzenli yazarsak.</p>
+<p>Alışveriş için seçtiğimiz sepet ikonun “i” harfi ile ifade edildiği için “i” harfini ekledik. Kodu biraz daha düzenli yazarsak.</p>
 <p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/Screen-shot-2012-03-08-at-10.44.09-AM.png" title="Screen shot 2012-03-08 at 10.44.09 AM" />][]</p>
 <p>Örnek: <a href="http://www.fatihhayrioglu.com/dokumanlar/fontface_ikon.html">http://www.fatihhayrioglu.com/dokumanlar/fontface_ikon.html</a></p>
 <p>Örnekte gördüğümüz gibi bir çok yerde ikonlarımızı CSS yardımı ile
@@ -168,23 +177,31 @@ Lirası sembolünü web sitelerimize ekleyebiliriz.</p>
 silip sadece ikonu bırakarak yazı tipi dosya boyutunu küçültebiliriz.</p>
 <p><a href="http://www.fatihhayrioglu.com/fontface/abakutlsymsans.zip">http://www.fatihhayrioglu.com/fontface/abakutlsymsans.zip</a></p>
 <p>Bağlantısından küçük dosyayı indirebilirsiniz.</p>
-<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;AbakuTLSymSansRegular&#39;</span><span class="o">;</span> <span class="nt">src</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="k">@font-face</span><span class="p">{</span>
+    <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;AbakuTLSymSansRegular&#39;</span><span class="o">;</span>
+    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+    <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;abakutlsymsans.eot&#39;</span><span class="o">);</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;abakutlsymsans.eot?#iefix&#39;</span><span class="o">)</span>
+<span class="nt">format</span><span class="o">(</span><span class="s1">&#39;embedded-opentype&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;abakutlsymsans.woff&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff&#39;</span><span class="o">),</span>
+<span class="nt">url</span><span class="o">(</span><span class="s1">&#39;abakutlsymsans.ttf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">),</span>
+<span class="nt">url</span><span class="o">(</span><span class="s1">&#39;abakutlsymsans.svg#AbakuTLSymSansRegular&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;svg&#39;</span><span class="o">);</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>url('abakutlsymsans.eot'); src: url('abakutlsymsans.eot?#iefix')
-format('embedded-opentype'), url('abakutlsymsans.woff') format('woff'),
-url('abakutlsymsans.ttf') format('truetype'),
-url('abakutlsymsans.svg#AbakuTLSymSansRegular') format('svg');
-font-weight: normal; font-style: normal; } </p>
 <p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/Screen-shot-2012-03-08-at-10.47.01-AM.png" title="Screen shot 2012-03-08 at 10.47.01 AM" />][]</p>
 <p>Şeklinde sayfaya ekledik. Sembol olunca rakamların başına konuyor. araya
 biraz da mesafe koyalım.(padding-right:5px bunun için)</p>
-<div class="codehilite"><pre> <span class="nt">p</span><span class="nd">:before</span><span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="s2">&quot;AbakuTLSymSansRegular&quot;</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">p</span><span class="nd">:before</span><span class="p">{</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;t&quot;</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="s2">&quot;AbakuTLSymSansRegular&quot;</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>font-size:24px; content:"t"; padding-right:5px; } </p>
 <p>ile sayfamıza ekledik.</p>
 <p>Örnek: <a href="http://www.fatihhayrioglu.com/fontface/tl_deneme.html">http://www.fatihhayrioglu.com/fontface/tl_deneme.html</a></p>
 <h3>Kaynaklar</h3>
@@ -203,8 +220,6 @@ biraz da mesafe koyalım.(padding-right:5px bunun için)</p>
 <li><a href="http://webdesignerwall.com/demo/css-social-buttons/">http://webdesignerwall.com/demo/css-social-buttons/</a></li>
 <li><a href="http://www.webresourcesdepot.com/free-icon-fonts-pictograms-for-todays-web-designer/">http://www.webresourcesdepot.com/free-icon-fonts-pictograms-for-todays-web-designer/</a></li>
 </ul>
-</p>
-
 <p>[<img alt="" src="http://www.fatihhayrioglu.com/wp-content/Screen-shot-2012-03-08-at-10.44.09-AM.png" title="Screen shot 2012-03-08 at 10.44.09 AM" />]: http://www.fatihhayrioglu.com/wp-content/Screen-shot-2012-03-08-at-10.44.09-AM.png
   [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/Screen-shot-2012-03-08-at-10.45.36-AM.png" title="Screen shot 2012-03-08 at 10.45.36 AM" />]: http://www.fatihhayrioglu.com/wp-content/Screen-shot-2012-03-08-at-10.45.36-AM.png
   [<img alt="" src="http://www.fatihhayrioglu.com/wp-content/Screen-shot-2012-03-08-at-10.47.01-AM.png" title="Screen shot 2012-03-08 at 10.47.01 AM" />]: http://www.fatihhayrioglu.com/wp-content/Screen-shot-2012-03-08-at-10.47.01-AM.png</p>

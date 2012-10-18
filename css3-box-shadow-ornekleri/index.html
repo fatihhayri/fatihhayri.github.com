@@ -101,32 +101,43 @@ bilgi sahibi olabilirsiniz. Kutuları 4 köşe olduğunu düşünürsek.</p>
 <p>Normal box-shadow değerleri dikey ve yatayda değerler verilince hep
 açılı gölgeler veriyor. Biz tüm kutunun etrafına gölge vermek için; blur
 değeri ve spread  değerini kullanıyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">4px</span> <span class="nb">black</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> 
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">4px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">4px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">4px</span> <span class="nb">black</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>6px 4px black; box-shadow: 0 0 6px 4px black; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/7wyeD/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/7wyeD/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <p>blur değeri spread  değerinden büyük ise farklı,</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">6px</span> <span class="nb">black</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> 
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">6px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">6px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">6px</span> <span class="nb">black</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>4px 6px black; box-shadow: 0 0 4px 6px black; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/NKXZG/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
-<p>blur değeri spread  değerinden küçük ise farklı bir gölge efekti
-görüyoruz.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/NKXZG/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p>blur değeri spread  değerinden küçük ise farklı bir gölge efekti görüyoruz.</p>
 <h3>Çoklu Kenar Çizgisi Oluşturmak</h3>
 <p><a href="http://www.fatihhayrioglu.com/coklu-kenar-cizgisiborder-kullanimi/">Önceki makalede</a> bahsettiğimiz gibi, çoklu kenar çizgileri oluşturmak
 için; spread  değeri yardımı ile yapılan bu etki için diğer değerler
 sıfırlanmalıdır.</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span> <span class="nb">orange</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">3px</span>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span> <span class="nb">orange</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">3px</span> <span class="nb">black</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">6px</span> <span class="nb">red</span><span class="p">;</span> 
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">3px</span> <span class="nb">black</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">6px</span> <span class="nb">red</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">3px</span> <span class="nb">black</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">6px</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>black, 0 0 0 6px red; -moz-box-shadow: 0 0 0 3px black, 0 0 0 6px red;
-box-shadow: 0 0 0 3px black, 0 0 0 6px red; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/RPqUC/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/RPqUC/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <h3>Tek Köşeye Gölge Vermek</h3>
 <p>Kutuların sadece x veya y köşelerinden göstermek için box-shadow
 tanımının sınırlarınız zorlamamız gerekiyor. Bu iş için bir kaç yöntem
@@ -134,72 +145,123 @@ mevcut, ben burada hepsini paylaşıyoruz avantaj ve dezavantajlarını
 görerek karar vermek size kalmış.</p>
 <p><strong>1. Yöntem</strong> bir köşeye gölge verirken aynı zamanda diğer köşelere
 kenar çizgisi atayarak.</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">2px</span> <span class="nb">black</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">1px</span> <span class="m">0</span>
+<div class="codehilite"><pre><span class="nt">div</span> <span class="p">{</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">2px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">2px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">2px</span> <span class="nb">black</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>2px black; box-shadow: 1px 0 2px black; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3f7SU/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3f7SU/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <p><strong>2. Yöntem</strong> Diğer köşelere herhangi bir kenar çizgisi veya gölge
 atamadan sadece bir köşeye gölge tanımlamak;</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">4px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">4px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">4px</span> <span class="nb">black</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>-webkit-box-shadow: 0 0 0 4px white, 0 6px 4px black; -moz-box-shadow: 0
-0 0 4px white, 0 6px 4px black;    box-shadow: 0 0 0 4px white, 0 6px
-4px black; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/juVMm/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/juVMm/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <p>Mantık olarak iki gölge tanımı yapıyoruz, birincisi spread ile kutu
 ardalan rengi ile aynı renkte 4px bir alan oluşturuyoruz, ikinci gölge
 tanımı ile de bu tanımladığımız boş alanın dışına çıkacak köşeye daha
 fazla değer verip dışarı çıkmasını sağlıyoruz.</p>
 <p><strong>3. Yöntem</strong> Bu örnekte kenar çizgisi oluşturulan yeni kutunun biraz
 içinde kalır.</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">4px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">4px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="nb">white</span><span class="o">,</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">4px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#f00</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>-webkit-box-shadow: 0 0 0 4px white, 0 6px 4px black; -moz-box-shadow: 0
-0 0 4px white, 0 6px 4px black;    box-shadow: 0 0 0 4px white, 0 6px
-4px black;    border:1px solid #f00; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/5pVbj/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/5pVbj/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <p>Eğer kenar çizgisi kullanılacaksa;</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">8px</span> <span class="m">6px</span> <span class="m">-6px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">8px</span> <span class="m">6px</span> <span class="m">-6px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">8px</span> <span class="m">6px</span> <span class="m">-6px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#f00</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>-webkit-box-shadow: 0 8px 6px -6px black; -moz-box-shadow: 0 8px 6px
--6px black; box-shadow: 0 8px 6px -6px black;    border:1px solid #f00;
-} 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/5pVbj/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/5pVbj/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <p>Blur değeri kadar eksi spread değeri atayarak bu çözüm oluşturulmuştur.</p>
 <p><strong>4. Yöntem</strong> :before seçicisi yardımı ile absolute tanımlı gölge
 eklenir.</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="err">   </span><span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">7px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nd">:before</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s1">&#39; &#39;</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="k">right</span><span class="o">:</span> <span class="m">7px</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="k">transparent</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>padding: 0 7px 0 0;    overflow: hidden; } div:before {  position:
-absolute;  content: ' ';  top: 0px;  right: 7px;  bottom: 0;  left: 0;
- background-color: transparent;  box-shadow: 0 0 5px black;  border: 1px
-solid red; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/x9Pbr/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/x9Pbr/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <p>Çıkmasını istediğimiz kenara padding tanımı yapılır, :before seçicisi
 ile o köşeye ait kenar değeri padding ile aynı tanımlanır. :before
 seçicisine box-shadow tanımı yapılır yapılan padding tanımından fazla
 değer içermelidir.</p>
 <h3>3 Köşeye Gölge Tanımlama</h3>
 <p>Yukarıdaki 4.yönteme benzer bir kullanım ile yapılır.</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">7px</span>
+<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">7px</span> <span class="m">0</span> <span class="m">7px</span> <span class="m">7px</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nd">:before</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s1">&#39; &#39;</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">7px</span><span class="p">;</span>
+    <span class="k">right</span><span class="o">:</span> <span class="m">7px</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="o">:</span> <span class="m">-7px</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">7px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="k">transparent</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>0 7px 7px; overflow: hidden; } div:before {  position: absolute;
- content: ' ';  top: 7px;  right: 7px;  bottom: -7px;  left: 7px;
- background-color: transparent;  box-shadow: 0 0 5px black;  border: 1px
-solid red; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/j9bAp/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/j9bAp/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 <p>Yukarıdaki yöntemin tersi yapılır ve kaldırılacak köşeye eksi değer
 atanır.</p>
 <h3>Sonuç</h3>
@@ -218,8 +280,7 @@ uygulayabildiğimiz özellikler, ama gerçekten arayüz geliştiriciye büyük
 kolaylıklar sağlıyor.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="http://theburningmonk.com/2010/12/having-fun-with-css3-box-shadow-property/">http://theburningmonk.com/2010/12/having-fun-with-css3-box-shadow-property/</a>
-    (box-shadow özelliği)</li>
+<li><a href="http://theburningmonk.com/2010/12/having-fun-with-css3-box-shadow-property/">http://theburningmonk.com/2010/12/having-fun-with-css3-box-shadow-property/</a> (box-shadow özelliği)</li>
 <li><a href="http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/">http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/</a></li>
 <li><a href="http://matthamm.com/box-shadow-curl.html">http://matthamm.com/box-shadow-curl.html</a> (kelebek köşe örneği)</li>
 <li><a href="http://www.webdesignshock.com/css3-box-shadow/">http://www.webdesignshock.com/css3-box-shadow/</a></li>
@@ -234,17 +295,12 @@ kolaylıklar sağlıyor.</p>
 <li><a href="http://toolboxdigital.com/2011/03/css3-3d-gradient-box/">http://toolboxdigital.com/2011/03/css3-3d-gradient-box/</a></li>
 <li><a href="http://daneden.me/2011/11/a-non-scientific-box-shadow-experiment/">http://daneden.me/2011/11/a-non-scientific-box-shadow-experiment/</a></li>
 <li><a href="http://www.paulund.co.uk/creating-different-css3-box-shadows-effects">http://www.paulund.co.uk/creating-different-css3-box-shadows-effects</a></li>
-<li><a href="http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/">http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/</a>
-    (makaleye örnek)</li>
+<li><a href="http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/">http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/</a> (makaleye örnek)</li>
 <li><a href="http://starikovs.com/2011/11/09/css3-one-side-shadow/">http://starikovs.com/2011/11/09/css3-one-side-shadow/</a></li>
-<li><a href="http://nicolasgallagher.com/css-drop-shadows-without-images/demo/">http://nicolasgallagher.com/css-drop-shadows-without-images/demo/</a>
-    Örnekler Sayfası</li>
-<li><a href="http://translate.google.com/translate?hl=en&amp;sl=auto&amp;tl=en&amp;u=http%3A%2F%2Fwww.alsacreations.com%2Ftuto%2Flire%2F1338-css3-box-shadow-ombre.html">http://translate.google.com/translate?hl=en&amp;sl=auto&amp;tl=en&amp;u=http%3A%2F%2Fwww.alsacreations.com%2Ftuto%2Flire%2F1338-css3-box-shadow-ombre.html</a>
-    (box-shadow güzel)</li>
-<li><a href="http://www.creativejuiz.fr/blog/tutoriels/ombre-avancees-avec-css3-et-box-shadow">http://www.creativejuiz.fr/blog/tutoriels/ombre-avancees-avec-css3-et-box-shadow</a>
-    (güzel incele)</li>
+<li><a href="http://nicolasgallagher.com/css-drop-shadows-without-images/demo/">http://nicolasgallagher.com/css-drop-shadows-without-images/demo/</a> Örnekler Sayfası</li>
+<li><a href="http://translate.google.com/translate?hl=en&amp;sl=auto&amp;tl=en&amp;u=http%3A%2F%2Fwww.alsacreations.com%2Ftuto%2Flire%2F1338-css3-box-shadow-ombre.html">http://translate.google.com/translate?hl=en&amp;sl=auto&amp;tl=en&amp;u=http%3A%2F%2Fwww.alsacreations.com%2Ftuto%2Flire%2F1338-css3-box-shadow-ombre.html</a> (box-shadow güzel)</li>
+<li><a href="http://www.creativejuiz.fr/blog/tutoriels/ombre-avancees-avec-css3-et-box-shadow">http://www.creativejuiz.fr/blog/tutoriels/ombre-avancees-avec-css3-et-box-shadow</a> (güzel incele)</li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">
