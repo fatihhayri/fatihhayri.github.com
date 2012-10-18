@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CSS Browser Hacks</title>
+<style type="text/css">
+body p{
+	width:150px;
+	height:150px;
+}
+
+.ozelSecici{
+	background-color:#000;
+}
+
+
+/* Firefox 1 */
+.ozelSecici, x:-moz-any-link {
+	background-color:#ffd560;
+}
+
+/* Firefox 2 */
+.ozelSecici, x:-moz-any-link {
+	background-color:#ab1b0b;
+}
+
+/* Firefox 3 */
+.ozelSecici, x:-moz-any-link, x:default {
+	background-color:#e6831f;
+}
+
+/* Google Chrome and Safari 3.1 */
+body:nth-of-type(1) .ozelSecici{
+   background-color:#e6f0fa;
+}
+
+/* Opera 9 ve altı */
+html:first-child .ozelSecici{
+	background-color:#a91614;
+}
+
+/* ie7 icin */
+*:first-child+html .ozelSecici{
+	background-color:#0098de;
+}
+
+/* ie 7 ve alt sürümler icin */
+*:first-child+html .ozelSecici{
+	background-color:#d4d0c8;
+} 
+* html .ozelSecici{
+	background-color:#d4d0c8;
+}
+
+/* ie6 ve alti */
+* html .ozelSecici{
+	background-color:#996666;
+}
+
+</style>
+</head>
+<body>
+<p class="ozelSecici">Tarayıcı</p>
+</body>
+</html>

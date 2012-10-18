@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery sekme</title>
+<style type="text/css">
+/* sekme kodu */
+.sekmeAlani ul.sekmeler {float: left; display: inline; width: 100%; margin: 0; padding: 0;}
+	.sekmeAlani ul.sekmeler li {list-style: none; float: left; margin: 0 2px 0 0; padding: 0; background-color:#999;}
+		.sekmeAlani ul.sekmeler li a {display: block; margin: 0; padding: 10px 12px; cursor:pointer; text-decoration:none;}
+		.sekmeAlani ul.sekmeler li a:hover {background-color:#3FF;}
+
+/* secili sekme  */
+	.sekmeAlani ul.sekmeler li.sekmeSecili {background-color:#99F;}
+
+/* secili sekme icerigini gosterelim */
+.sekmeAlani div {float: left; display: block; width: 100%;}
+
+/* sekme iceriginde eger div varsa ona özel bir kod yazalim */
+	.sekmeAlani div div {margin-top:10px;}
+</style>
+</head>
+
+<body>
+<div class="sekmeAlani">
+	<!--[if !IE]>sekmeler<![endif]-->
+	<ul class="sekmeler">
+        <li><a href="javascript:void(0);" class="s1">Sekme1</a></li>
+        <li><a href="javascript:void(0);" class="s2">Sekme2</a></li>
+        <li><a href="javascript:void(0);" class="s3">Sekme3</a></li>
+        <li><a href="javascript:void(0);" class="s4">Sekme4</a></li>
+	</ul>
+
+	<!--[if !IE]>1. sekme icerigi<![endif]-->
+	<div class="s1">
+	<ul>
+		<li>List item</li>
+		<li>List item</li>
+		<li>List item</li>
+		<li>List item</li>
+		<li>List item</li>
+	</ul>
+	</div>
+
+	<!--[if !IE]>2. sekme icerigi<![endif]-->
+	<div class="s2">
+		<p>This is a paragraph about the jQuery tabs tutorial.</p>
+	</div>
+
+	<!--[if !IE]>3. sekme icerigi<![endif]-->
+	<div class="s3">
+		<div>Something needs to go in here!</div>
+	</div>
+
+	<!--[if !IE]>4. sekme icerigi<![endif]-->
+	<div class="s4">
+		<p>
+			<img src="gudi.gif" width="32" height="53" alt="gudi" />
+			<img src="gudi.gif" width="32" height="53" alt="gudi" />
+			<img src="gudi.gif" width="32" height="53" alt="gudi" />
+		</p>
+	</div>
+
+</div><!--[if !IE]>sekmeAlani sonu <![endif]-->
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$('div.sekmeAlani ul.sekmeler li a').click(function(){	
+		$(this).parent('li').addClass('sekmeSecili').siblings().removeClass('sekmeSecili');									   	
+		var mevcutSinif = this.className.slice(0,2);	
+		$('div.sekmeAlani > div').hide().filter('div.'+mevcutSinif).show();		
+	});
+	$('.sekmeAlani ul.sekmeler li a:first').click();
+	
+});
+</script>
+</body>
+</html>

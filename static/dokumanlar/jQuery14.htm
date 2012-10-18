@@ -1,0 +1,1019 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery 1.4 API Cheat Sheet — Future Colors</title>
+<link rel="stylesheet" href="jQuery14_files/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="jQuery14_files/jquery_print.css" type="text/css">
+</head>
+<body class="jquery">
+<div id="jquery">
+  <h1>jQuery 1.4 API Cheat Sheet</h1>
+  <div id="content">
+    <table id="jquery_api_map" cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td class="col_5"><div id="selectors" class="cat  selectors">
+              <h2>Selectors</h2>
+              <div class="subcat compact">
+                <h3>Basics</h3>
+                <div class="apiobj"><a  href="http://api.jquery.com/id-selector/">#id</a>
+                  <div style="display:  none;" class="description">Selects a single element with the given id  attribute.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/element-selector/">element</a>
+                  <div  style="display: none;" class="description">Selects all elements with the  given tag name.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/class-selector/">.class</a>, <a  href="http://api.jquery.com/class-selector/">.class.class</a>
+                  <div  style="display: none;" class="description">Selects all elements with the  given class.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/all-selector/">*</a>
+                  <div style="display:  none;" class="description">Selects all elements.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/multiple-selector/">selector1, selector2</a>
+                  <div  style="display: none;" class="description">Selects the combined results  of all the specified selectors.</div>
+                </div>
+              </div>
+              <div class="subcat compact">
+                <h3>Hierarchy</h3>
+                <div class="apiobj"><a  href="http://api.jquery.com/descendant-selector/">ancestor descendant</a>
+                  <div  style="display: none;" class="description">Selects all elements that  are descendants of a given ancestor.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/child-selector/">parent &gt; child</a>
+                  <div  style="display: none;" class="description">Selects all direct child  elements specified by "child" of elements specified by "parent".</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/next-adjacent-selector/">prev + next</a>
+                  <div  style="display: none;" class="description">Selects all next elements  matching "next" that are immediately preceded by a sibling "prev".</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/next-siblings-selector/">prev ~ siblings</a>
+                  <div  style="display: none;" class="description">Selects all sibling elements  that follow after the "prev" element, have the same parent, and match  the filtering "siblings" selector.</div>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="subcat compact">
+                <h3>Basic Filters</h3>
+                <div class="apiobj"><a  href="http://api.jquery.com/first-selector/">:first</a>
+                  <div  style="display: none;" class="description">Selects the first matched  element.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/last-selector/">:last</a>
+                  <div  style="display: none;" class="description">Selects the last matched  element.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/not-selector/">:not(selector)</a>
+                  <div  style="display: none;" class="description">Selects all elements that do  not match the given selector.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/even-selector/">:even</a>
+                  <div  style="display: none;" class="description">Selects even elements,  zero-indexed.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/odd-selector/">:odd</a>
+                  <div style="display:  none;" class="description">Selects odd elements, zero-indexed.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/eq-selector/">:eq(index)</a>
+                  <div  style="display: none;" class="description">Select the element at index n  within the matched set.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/gt-selector/">:gt(index)</a>
+                  <div  style="display: none;" class="description">Select all elements at an  index greater than index within the matched set.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/lt-selector/">:lt(index)</a>
+                  <div  style="display: none;" class="description">Select all elements at an  index less than index within the matched set.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/header-selector/">:header</a>
+                  <div  style="display: none;" class="description">Selects all elements that are  headers, like h1, h2, h3 and so on.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/animated-selector/">:animated</a>
+                  <div  style="display: none;" class="description">Select all elements that are  in the progress of an animation at the time the selector is run.</div>
+                </div>
+              </div>
+              <div class="subcat compact">
+                <h3>Content Filters</h3>
+                <div class="apiobj"><a  href="http://api.jquery.com/contains-selector/">:contains(text)</a>
+                  <div  style="display: none;" class="description">Select all elements that  contain the specified text.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/empty-selector/">:empty</a>
+                  <div  style="display: none;" class="description">Select all elements that have  no children (including text nodes).</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/has-selector/">:has(selector)</a>
+                  <div  style="display: none;" class="description">Selects elements which  contain at least one element that matches the specified selector.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/parent-selector/">:parent</a>
+                  <div  style="display: none;" class="description">Select all elements that are  the parent of another element, including text nodes.</div>
+                </div>
+              </div>
+              <div class="subcat compact">
+                <h3>Visibility Filters</h3>
+                <div class="apiobj"><a  href="http://api.jquery.com/hidden-selector/">:hidden</a>
+                  <div  style="display: none;" class="description">Selects all elements that are  hidden.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/visible-selector/">:visible</a>
+                  <div  style="display: none;" class="description">Selects all elements that are  visible.</div>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="subcat compact">
+                <h3>Child Filters</h3>
+                <div class="apiobj"><a  href="http://api.jquery.com/nth-child-selector/">:nth-child(expr)</a>
+                  <div  style="display: none;" class="description">Selects all elements that  are the nth-child of their parent.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/first-child-selector/">:first-child</a>
+                  <div  style="display: none;" class="description">Selects all elements that are  the first child of their parent.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/last-child-selector/">:last-child</a>
+                  <div  style="display: none;" class="description">Selects all elements that are  the last child of their parent.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/only-child-selector/">:only-child</a>
+                  <div  style="display: none;" class="description">Selects all elements that are  the only child of their parent.</div>
+                </div>
+              </div>
+              <div class="subcat compact">
+                <h3>Attribute Filters</h3>
+                <div class="apiobj"><a  href="http://api.jquery.com/has-attribute-selector/">[attribute]</a>
+                  <div  style="display: none;" class="description">Selects elements that have  the specified attribute, with any value.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/attribute-equals-selector/">[attribute=value]</a>
+                  <div  style="display: none;" class="description">Selects elements that have  the specified attribute with a value exactly equal to a certain value.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/attribute-not-equal-selector/">[attribute!=value]</a>
+                  <div  style="display: none;" class="description">Select elements that either  don't have the specified attribute, or do have the specified attribute  but not with a certain value.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/attribute-starts-with-selector/">[attribute^=value]</a>
+                  <div  style="display: none;" class="description">Selects elements that have  the specified attribute with a value beginning exactly with a given  string.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/attribute-ends-with-selector/">[attribute$=value]</a>
+                  <div  style="display: none;" class="description">Selects elements that have  the specified attribute with a value ending exactly with a given string.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/attribute-contains-selector/">[attribute*=value]</a>
+                  <div  style="display: none;" class="description">Selects elements that have  the specified attribute with a value containing the a given substring.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/attribute-contains-prefix-selector/">[attribute|=value]</a>
+                  <div  style="display: none;" class="description">Selects elements that have  the specified attribute with a value either equal to a given string or  starting with that string followed by a hyphen (-).</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/attribute-contains-word-selector/">[attribute~=value]</a>
+                  <div  style="display: none;" class="description">Selects elements that have  the specified attribute with a value containing a given word, delimited  by spaces.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/multiple-attribute-selector/">[attribute][attribute2]</a>
+                  <div  style="display: none;" class="description">Matches elements that match  all of the specified attribute filters.</div>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="subcat compact">
+                <h3>Forms</h3>
+                <div class="apiobj"><a  href="http://api.jquery.com/input-selector/">:input</a>
+                  <div  style="display: none;" class="description">Selects all input, textarea,  select and button elements.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/text-selector/">:text</a>
+                  <div  style="display: none;" class="description">Selects all elements of type  text.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/password-selector/">:password</a>
+                  <div  style="display: none;" class="description">Selects all elements of type  password</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/radio-selector/">:radio</a>
+                  <div  style="display: none;" class="description">Selects all elements of type  radio.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/checkbox-selector/">:checkbox</a>
+                  <div  style="display: none;" class="description">Selects all elements of type  checkbox.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/submit-selector/">:submit</a>
+                  <div  style="display: none;" class="description">Selects all elements of type  submit.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/image-selector/">:image</a>
+                  <div  style="display: none;" class="description">Selects all elements of type  image.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/reset-selector/">:reset</a>
+                  <div  style="display: none;" class="description">Selects all elements of type  reset.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/button-selector/">:button</a>
+                  <div  style="display: none;" class="description">Selects all button elements  and elements of type button.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/file-selector/">:file</a>
+                  <div  style="display: none;" class="description">Selects all elements of type  file.</div>
+                </div>
+              </div>
+              <div class="subcat compact">
+                <h3>Form Filters</h3>
+                <div class="apiobj"><a  href="http://api.jquery.com/enabled-selector/">:enabled</a>
+                  <div  style="display: none;" class="description">Selects all elements that are  enabled</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/disabled-selector/">:disabled</a>
+                  <div  style="display: none;" class="description">Selects all elements that are  disabled.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/checked-selector/">:checked</a>
+                  <div  style="display: none;" class="description">Matches all elements that are  checked.</div>
+                </div>
+                <div class="apiobj"><a  href="http://api.jquery.com/selected-selector/">:selected</a>
+                  <div  style="display: none;" class="description">Selects all elements that are  selected.</div>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="legend_holder">
+              <h2 class="legend">Legend</h2>
+              <div class="legend">
+                <h3>Conventional signs</h3>
+                <div class="legend_item">[obj] — array of  objects</div>
+                <div class="legend_item"><span class="p1_4">1.4+</span> — new in 1.4</div>
+                <div class="legend_item"><span class="c1_4">1.4∗</span> — changed in 1.4</div>
+              </div>
+              <div class="legend">
+                <h3>Data types</h3>
+                <div class="legend_item">* — anything</div>
+                <div class="legend_item">$ — jQuery object</div>
+                <div class="legend_item">arr — array</div>
+                <div class="legend_item">bool — boolean</div>
+                <div class="legend_item">el — DOM element</div>
+                <div class="legend_item">fn — function</div>
+                <div class="legend_item">int — integer</div>
+                <div class="legend_item">obj — object</div>
+                <div class="legend_item">str — string</div>
+                <div class="legend_item">XHR —  XMLHttpRequest</div>
+              </div>
+              <div class="copyright_link"> <a href="http://futurecolors.ru/jquery/"><span>http://</span>futurecolors.ru/jquery/</a>
+                <h3>ver. 09-03-2010</h3>
+              </div>
+            </div></td>
+          <td class="col_1"><div class="cat core" id="coreArea">
+              <h2>Core</h2>
+              <div class="subcat">
+                <h3>jQuery function</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/jQuery/">jQuery</a><span class="attributes">(  selector <span class="opt">[, context]</span>&nbsp;)</span>, .<a  href="http://api.jquery.com/jQuery/">jQuery</a><span class="attributes">(  element&nbsp;)</span>, .<a href="http://api.jquery.com/jQuery/">jQuery</a><span  class="attributes">( elementArray&nbsp;)</span>, .<a  href="http://api.jquery.com/jQuery/">jQuery</a><span class="attributes">(  jQueryObject&nbsp;)</span>, .<a href="http://api.jquery.com/jQuery/">jQuery</a><span  class="attributes">(&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Accepts a string containing a  CSS selector which is then used to match a set of elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/jQuery/#jQuery2">jQuery</a><span  class="attributes">( html <span class="opt">[, ownerDocument]</span>&nbsp;)</span>,  .<a href="http://api.jquery.com/jQuery/#jQuery2">jQuery</a><span  class="attributes">( html, props&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Creates DOM elements on the  fly from the provided string of raw HTML.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/jQuery/#jQuery3">jQuery</a><span  class="attributes">( fn&nbsp;)</span>
+                  <div style="display: none;"  class="description">Binds a function to be executed when the DOM has  finished loading.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>jQuery Object Accessors</h3>
+                <div class="apiobj"><span class="type">$</span><a  href="http://api.jquery.com/each/">.each</a><span class="attributes">(  fn(index, element)&nbsp;)</span>
+                  <div style="display: none;"  class="description">Iterate over a jQuery object, executing a function  for each matched element.</div>
+                </div>
+                <div class="apiobj_wd"><span class="type">num</span><span  class="apiobj_d">.<a href="http://api.jquery.com/size/">size</a><span  class="attributes">(&nbsp;)</span>
+                  <div style="display: none;"  class="description">Return the number of DOM elements matched by the  jQuery object.</div>
+                  , <span class="apiobj_d">.<a  href="http://api.jquery.com/length/">length</a>
+                  <div style="display:  none;" class="description">The number of elements in the jQuery object.</div>
+                  </span></span></div>
+                <div class="apiobj"><span class="type">str</span>.<a  href="http://api.jquery.com/selector/">selector</a>
+                  <div style="display:  none;" class="description">A selector representing selector originally  passed to jQuery().</div>
+                </div>
+                <div class="apiobj"><span class="type">el</span>.<a  href="http://api.jquery.com/context/">context</a>
+                  <div style="display:  none;" class="description">The DOM node context originally passed to  jQuery(); if none was passed then context will likely be the document.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/eq/">eq</a><span class="attributes">(  index&nbsp;)</span>
+                  <div style="display: none;" class="description">Reduce  the set of matched elements to the one at the specified index.</div>
+                </div>
+                <div class="apiobj"><span class="type"></span><a  href="http://api.jquery.com/jQuery.error/">jQuery.error</a><span  class="attributes">( str&nbsp;)</span><span class="p1_4">1.4+</span>
+                  <div  style="display: none;" class="description">Takes a string and throws an  exception containing it.</div>
+                </div>
+                <div class="apiobj"><span class="type">[el],el</span>.<a  href="http://api.jquery.com/get/">get</a><span class="attributes">(  [index]&nbsp;)</span>
+                  <div style="display: none;" class="description">Retrieve  the DOM elements matched by the jQuery object.</div>
+                </div>
+                <div class="apiobj"><span class="type">num</span>.<a  href="http://api.jquery.com/index/">index</a><span class="attributes">(&nbsp;)</span><span  class="c1_4">1.4∗</span>, .<a href="http://api.jquery.com/index/">index</a><span  class="attributes">( selector&nbsp;)</span><span class="c1_4">1.4∗</span>,  .<a href="http://api.jquery.com/index/">index</a><span  class="attributes">( element&nbsp;)</span>
+                  <div style="display: none;"  class="description">Search for a given element from among the matched  elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span><a  href="http://api.jquery.com/jQuery.pushStack/">jQuery.pushStack</a><span  class="attributes">( elements, [name, arguments]&nbsp;)</span>
+                  <div  style="display: none; top: 470px; left: 666px;" class="description">Add a  collection of DOM elements onto the jQuery stack.</div>
+                </div>
+                <div class="apiobj"><span class="type">arr</span>.<a  href="http://api.jquery.com/toArray/">toArray</a><span  class="attributes">(&nbsp;)</span><span class="p1_4">1.4+</span>
+                  <div  style="display: none;" class="description">Retrieve all the DOM elements  contained in the jQuery set, as an array.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Interoperability</h3>
+                <div class="apiobj"><span class="type">$</span><a  href="http://api.jquery.com/jQuery.noConflic/">jQuery.noConflict</a><span  class="attributes">( <span class="opt">[extreme]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Relinquish jQuery's control  of the $ variable.</div>
+                </div>
+              </div>
+            </div>
+            <div class="cat attributes" id="attributesArea">
+              <h2>Attributes</h2>
+              <div class="subcat">
+                <h3>Attributes</h3>
+                <div class="apiobj"><span class="type">str</span>.<a  href="http://api.jquery.com/attr/">attr</a><span class="attributes">(  name&nbsp;)</span>
+                  <div style="display: none;" class="description">Get  the value of an attribute for the first element in the set of matched  elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/attr/#attr2">attr</a><span  class="attributes">( name, val&nbsp;)</span>, .<a  href="http://api.jquery.com/attr/#attr2">attr</a><span  class="attributes">( map&nbsp;)</span>, .<a  href="http://api.jquery.com/attr/#attr2">attr</a><span  class="attributes">( name, fn(index, attr)&nbsp;)</span>
+                  <div  style="display: none;" class="description">Set one or more attributes  for the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/removeAttr/">removeAttr</a><span  class="attributes">( name&nbsp;)</span>
+                  <div style="display: none;"  class="description">Remove an attribute from each element in the set of  matched elements.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Class</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/addClass/">addClass</a><span  class="attributes">( class&nbsp;)</span>, .<a  href="http://api.jquery.com/addClass/">addClass</a><span  class="attributes">( fn<span class="attributes">(index, class)</span>&nbsp;)</span><span  class="c1_4">1.4∗</span>
+                  <div style="display: none;" class="description">Adds  the specified class(es) to each of the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">bool</span>.<a  href="http://api.jquery.com/hasClass/">hasClass</a><span  class="attributes">( class&nbsp;)</span>
+                  <div style="display: none;"  class="description">Determine whether any of the matched elements are  assigned the given class.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/removeClass/">removeClass</a><span  class="attributes">( <span class="opt">[class]</span>&nbsp;)</span>, .<a  href="http://api.jquery.com/removeClass/">removeClass</a><span  class="attributes">( fn<span class="attributes">(index, class)</span>&nbsp;)</span><span  class="c1_4">1.4∗</span>
+                  <div style="display: none;" class="description">Remove  one or all classes from each element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/toggleClass/">toggleClass</a><span  class="attributes">( class <span class="opt">[, switch]</span>&nbsp;)</span>,  .<a href="http://api.jquery.com/toggleClass/">toggleClass</a><span  class="attributes">( fn<span class="attributes">(index, class)</span> <span  class="opt">[, switch]</span>&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Add or remove a class from  each element in the set of matched elements, depending on either the  class's presence or the value of the switch argument.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>HTML, text</h3>
+                <div class="apiobj"><span class="type">str</span>.<a  href="http://api.jquery.com/html/">html</a><span class="attributes">(&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the HTML contents of the  first element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/html/#html2">html</a><span  class="attributes">( val&nbsp;)</span>, .<a  href="http://api.jquery.com/html/#html2">html</a><span  class="attributes">( fn(index, html)&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Set the HTML contents of  each element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">str</span>.<a  href="http://api.jquery.com/text/">text</a><span class="attributes">(&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the combined text  contents of each element in the set of matched elements, including their  descendants.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/text/#text2">text</a><span  class="attributes">( val&nbsp;)</span>, .<a  href="http://api.jquery.com/text/#text2">text</a><span  class="attributes">( fn(index, html)&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Set the content of each  element in the set of matched elements to the specified text.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Value</h3>
+                <div class="apiobj"><span class="type">str,arr</span>.<a  href="http://api.jquery.com/val/">val</a><span class="attributes">(&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the current value of the  first element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/val/#val2">val</a><span class="attributes">(  val&nbsp;)</span>, .<a href="http://api.jquery.com/val/#val2">val</a><span  class="attributes">( fn()&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Set the value of each  element in the set of matched elements.</div>
+                </div>
+              </div>
+            </div>
+            <div class="cat css" id="cssArea">
+              <h2>CSS</h2>
+              <div class="subcat">
+                <h3>CSS</h3>
+                <div class="apiobj"><span class="type">str</span>.<a  href="http://api.jquery.com/css/">css</a><span class="attributes">(  name&nbsp;)</span>
+                  <div style="display: none;" class="description">Get  the value of a style property for the first element in the set of  matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/css/#css2">css</a><span class="attributes">(  name, val&nbsp;)</span>, .<a href="http://api.jquery.com/css/#css2">css</a><span  class="attributes">( map&nbsp;)</span>, .<a  href="http://api.jquery.com/css/#css2">css</a><span class="attributes">(  name, fn(index, val)&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Set one or more CSS  properties for the set of matched elements.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Positioning</h3>
+                <div class="apiobj"><span class="type">obj</span>.<a  href="http://api.jquery.com/offset/">offset</a><span class="attributes">(&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the current coordinates  of the first element in the set of matched elements, relative to the  document.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/offset/#offset2">offset</a><span  class="attributes">( coord&nbsp;)</span>, .<a  href="http://api.jquery.com/offset/#offset2">offset</a><span  class="attributes">( fn<span class="attributes">( index, coord&nbsp;)</span>&nbsp;)</span><span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Set  the current coordinates of every element in the set of matched  elements, relative to the document.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/offsetParent/">offsetParent</a><span  class="attributes">(&nbsp;)</span>
+                  <div style="display: none;"  class="description">Get the closest ancestor element that is positioned.</div>
+                </div>
+                <div class="apiobj"><span class="type">obj</span>.<a  href="http://api.jquery.com/position/">position</a><span  class="attributes">(&nbsp;)</span>
+                  <div style="display: none;"  class="description">Get the current coordinates of the first element in  the set of matched elements, relative to the offset parent.</div>
+                </div>
+                <div class="apiobj"><span class="type">int</span>.<a  href="http://api.jquery.com/scrollTop/">scrollTop</a><span  class="attributes">(&nbsp;)</span>
+                  <div style="display: none;"  class="description">Get the current vertical position of the scroll bar  for the first element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/scrollTop/#scrollTop2">scrollTop</a><span  class="attributes">( val&nbsp;)</span>
+                  <div style="display: none;"  class="description">Set the current vertical position of the scroll bar  for each of the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">int</span>.<a  href="http://api.jquery.com/scrollLeft/">scrollLeft</a><span  class="attributes">(&nbsp;)</span>
+                  <div style="display: none;"  class="description">Get the current horizontal position of the scroll  bar for the first element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/scrollLeft/#scrollLeft2">scrollLeft</a><span  class="attributes">( val&nbsp;)</span>
+                  <div style="display: none;"  class="description">Set the current horizontal position of the scroll  bar for each of the set of matched elements.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Height and Width</h3>
+                <div class="apiobj"><span class="type">int</span>.<a  href="http://api.jquery.com/height/">height</a><span class="attributes">(&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the current computed  height for the first element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/height/#height2">height</a><span  class="attributes">( val&nbsp;)</span>, .<a  href="http://api.jquery.com/height/#height2">height</a><span  class="attributes">( fn<span class="attributes">(index, height&nbsp;)</span>&nbsp;)</span><span  class="c1_4">1.4∗</span>
+                  <div style="display: none;" class="description">Set  the CSS height of every matched element.</div>
+                </div>
+                <div class="apiobj"><span class="type">int</span>.<a  href="http://api.jquery.com/width/">width</a><span class="attributes">(&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the current computed  width for the first element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/width/#width2">width</a><span  class="attributes">( val&nbsp;), .<a  href="http://api.jquery.com/width/#width2">width</a>(<span  class="attributes">( fn<span class="attributes">(index, height&nbsp;)</span>&nbsp;)</span><span  class="c1_4">1.4∗</span>
+                  <div style="display: none;" class="description">Set  the CSS width of each element in the set of matched elements.</div>
+                  </span></div>
+                <div class="apiobj"><span class="type">int</span>.<a  href="http://api.jquery.com/innerHeight/">innerHeight</a><span  class="attributes">(&nbsp;)</span>
+                  <div style="display: none;"  class="description">Get the current computed height for the first  element in the set of matched elements, including padding but not  border.</div>
+                </div>
+                <div class="apiobj"><span class="type">int</span>.<a  href="http://api.jquery.com/innerWidth/">innerWidth</a><span  class="attributes">(&nbsp;)</span>
+                  <div style="display: none;"  class="description">Get the current computed width for the first element  in the set of matched elements, including padding but not border.</div>
+                </div>
+                <div class="apiobj"><span class="type">int</span>.<a  href="http://api.jquery.com/outerHeight/">outerHeight</a><span  class="attributes">( <span class="opt">[margin]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the current computed  height for the first element in the set of matched elements, including  padding and border.</div>
+                </div>
+                <div class="apiobj"><span class="type">int</span>.<a  href="http://api.jquery.com/outerWidth/">outerWidth</a><span  class="attributes">( <span class="opt">[margin]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the current computed  width for the first element in the set of matched elements, including  padding and border.</div>
+                </div>
+              </div>
+            </div></td>
+          <td class="col_2"><div class="cat traversing">
+              <h2>Traversing</h2>
+              <div class="subcat">
+                <h3>Filtering</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/eq/">eq</a><span class="attributes">(  index&nbsp;)</span>
+                  <div style="display: none;" class="description">Reduce  the set of matched elements to the one at the specified index.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/first/">first</a><span class="attributes">(  )</span><span class="p1_4">1.4+</span>
+                  <div style="display: none;"  class="description">Reduce the set of matched elements to the first in  the set.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/last/">last</a><span class="attributes">( )</span><span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Reduce  the set of matched elements to the final one in the set.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/has/">has</a><span class="attributes">(  selector&nbsp;)</span>, .<a href="http://api.jquery.com/has/">has</a><span  class="attributes">( element&nbsp;)</span><span class="p1_4">1.4+</span>
+                  <div  style="display: none;" class="description">Reduce the set of matched  elements to those that have a descendant that matches the selector or  DOM element.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/filter/">filter</a><span class="attributes">(  selector&nbsp;)</span>, .<a href="http://api.jquery.com/filter/">filter</a><span  class="attributes">( fn(index)&nbsp;)</span>
+                  <div style="display: none;"  class="description">Reduce the set of matched elements to those that  match the selector or pass the function's test.</div>
+                </div>
+                <div class="apiobj"><span class="type">bool</span>.<a  href="http://api.jquery.com/is/">is</a><span class="attributes">(  selector&nbsp;)</span>
+                  <div style="display: none;" class="description">Check  the current matched set of elements against a selector and return true  if at least one of these elements matches the selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/map/">map</a><span class="attributes">(  fn(index, element)&nbsp;)</span>
+                  <div style="display: none;"  class="description">Pass each element in the current matched set through  a function, producing a new jQuery object containing the return  values..</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/not/">not</a><span class="attributes">(  selector&nbsp;)</span>, .<a href="http://api.jquery.com/not/">not</a><span  class="attributes">( elements&nbsp;)</span>, .<a  href="http://api.jquery.com/not/">not</a><span class="attributes">( fn<span  class="attributes">( index&nbsp;)</span>&nbsp;)
+                  <div style="display:  none; top: 469px; left: 1072px;" class="description">Remove elements  from the set of matched elements.</div>
+                  </span></div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/slice/">slice</a><span class="attributes">(  start <span class="opt">[, end]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Reduce the set of matched  elements to a subset specified by a range of indices.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Tree traversal</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/children/">children</a><span  class="attributes">( <span class="opt">[selector]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the children of each  element in the set of matched elements, optionally filtered by a  selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/closest/">closest</a><span  class="attributes">( selector <span class="opt">[, context]</span>&nbsp;)</span><span  class="c1_4">1.4∗</span>
+                  <div style="display: none;" class="description">Get  the first element that matches the selector, beginning at the current  element and progressing up through the DOM tree.</div>
+                </div>
+                <div class="apiobj"><span class="type">arr</span>.<a  href="http://api.jquery.com/closest/">closest</a><span  class="attributes">( selectors <span class="opt">[, context]</span>&nbsp;)</span><span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Gets  an array of all the elements and selectors matched against the current  element up through the DOM tree.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/find/">find</a><span class="attributes">(  selector&nbsp;)</span>
+                  <div style="display: none;" class="description">Get  the descendants of each element in the current set of matched elements,  filtered by a selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/next/">next</a><span class="attributes">( <span  class="opt">[selector]</span>&nbsp;)</span>
+                  <div style="display: none;"  class="description">Get the immediately following sibling of each  element in the set of matched elements, optionally filtered by a  selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/nextAll/">nextAll</a><span  class="attributes">( <span class="opt">[selector]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get all following siblings  of each element in the set of matched elements, optionally filtered by a  selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/nextUntil/">nextUntil</a><span  class="attributes">( <span class="opt">[selector]</span>&nbsp;)</span><span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Get  all following siblings of each element up to but not including the  element matched by the selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/offsetParent/">offsetParent</a><span  class="attributes">(&nbsp;)</span>
+                  <div style="display: none;"  class="description">Get all following siblings of each element up to but  not including the element matched by the selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/parent/">parent</a><span class="attributes">( <span class="opt">[selector]</span>&nbsp;)</span>
+                  <div style="display:  none;" class="description">Get the parent of each element in the current  set of matched elements, optionally filtered by a selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/parents/">parents</a><span  class="attributes">( <span class="opt">[selector]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the ancestors of each  element in the current set of matched elements, optionally filtered by a  selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/parentsUntil/">parentsUntil</a><span  class="attributes">( <span class="opt">[selector]</span>&nbsp;)</span><span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Get  the ancestors of each element in the current set of matched elements,  optionally filtered by a selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/prev/">prev</a><span class="attributes">( <span  class="opt">[selector]</span>&nbsp;)</span>
+                  <div style="display: none;"  class="description">Get the immediately preceding sibling of each  element in the set of matched elements, optionally filtered by a  selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/prevAll/">prevAll</a><span  class="attributes">( <span class="opt">[selector]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get all preceding siblings  of each element in the set of matched elements, optionally filtered by a  selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/prevUntil/">prevUntil</a><span  class="attributes">( <span class="opt">[selector]</span>&nbsp;)</span><span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Get  all preceding siblings of each element up to but not including the  element matched by the selector.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/siblings/">siblings</a><span  class="attributes">( <span class="opt">[selector]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Get the siblings of each  element in the set of matched elements, optionally filtered by a  selector.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Miscellaneous</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/add/">add</a><span class="attributes">(  selector <span class="opt">[, context]</span>&nbsp;)</span>, .<a  href="http://api.jquery.com/add/">add</a><span class="attributes">(  elements&nbsp;)</span>, .<a href="http://api.jquery.com/add/">add</a><span  class="attributes">( html&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Add elements to the set of  matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/andSelf/">andSelf</a><span  class="attributes">(&nbsp;)</span>
+                  <div style="display: none;"  class="description">Add the previous set of elements on the stack to the  current set.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/contents/">contents</a><span  class="attributes">(&nbsp;)</span>
+                  <div style="display: none;"  class="description">Get the children of each element in the set of  matched elements, including text nodes.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/end/">end</a><span class="attributes">(&nbsp;)</span>
+                  <div  style="display: none;" class="description">End the most recent  filtering operation in the current chain and return the set of matched  elements to its previous state.</div>
+                </div>
+              </div>
+            </div>
+            <div class="cat manipulation">
+              <h2>Manipulation</h2>
+              <div class="subcat">
+                <h3>Inserting Inside</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/append/">append</a><span class="attributes">(  content&nbsp;)</span>, .<a href="http://api.jquery.com/append/">append</a><span  class="attributes">( fn<span class="attributes">( index, html&nbsp;)</span>&nbsp;)</span><span  class="c1_4">1.4∗</span>
+                  <div style="display: none;" class="description">Insert  content, specified by the parameter, to the end of each element in the  set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/appendTo/">appendTo</a><span  class="attributes">( target&nbsp;)</span>
+                  <div style="display: none; top:  1086px; left: 804px;" class="description">Insert every element in the  set of matched elements to the end of the target.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/prepend/">prepend</a><span  class="attributes">( content&nbsp;)</span>, .<a  href="http://api.jquery.com/prepend/">prepend</a><span  class="attributes">( fn<span class="attributes">( index, html&nbsp;)</span>&nbsp;)</span><span  class="c1_4">1.4∗</span>
+                  <div style="display: none;" class="description">Insert  content, specified by the parameter, to the beginning of each element  in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/prependTo/">prependTo</a><span  class="attributes">( target&nbsp;)</span>
+                  <div style="display: none;"  class="description">Insert every element in the set of matched elements  to the beginning of the target.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Inserting Outside</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/after/">after</a><span class="attributes">(  content&nbsp;)</span>, .<a href="http://api.jquery.com/after/">after</a><span  class="attributes">( fn()&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description"> Insert content, specified  by the parameter, after each element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/before/">before</a><span class="attributes">(  content&nbsp;)</span>, .<a href="http://api.jquery.com/before/">before</a><span  class="attributes">( fn()&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Insert content, specified by  the parameter, before each element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/insertAfter/">insertAfter</a><span  class="attributes">( target&nbsp;)</span>
+                  <div style="display: none;"  class="description">Insert every element in the set of matched elements  after the target.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/insertBefore/">insertBefore</a><span  class="attributes">( target&nbsp;)</span>
+                  <div style="display: none;"  class="description">Insert every element in the set of matched elements  before the target.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Inserting Around</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/unwrap/">unwrap</a><span class="attributes">(&nbsp;)</span><span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Remove  the parents of the set of matched elements from the DOM, leaving the  matched elements in their place.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/wrap/">wrap</a><span class="attributes">(  wrappingElement&nbsp;)</span>, .<a href="http://api.jquery.com/wrap/">wrap</a><span  class="attributes">( fn&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Wrap an HTML structure  around each element in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/wrapAll/">wrapAll</a><span  class="attributes">(wrappingElement&nbsp;)</span>, .<a  href="http://api.jquery.com/wrapAll/">wrapAll</a><span  class="attributes">( fn&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Wrap an HTML structure around  all elements in the set of matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/wrapInner/">wrapInner</a><span  class="attributes">( wrappingElement&nbsp;)</span>, .<a  href="http://api.jquery.com/wrapInner/">wrapInner</a><span  class="attributes">( fn&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Wrap an HTML structure around  the content of each element in the set of matched elements.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Replacing</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/replaceWith/">replaceWith</a><span  class="attributes">( content&nbsp;)</span>, .<a  href="http://api.jquery.com/replaceWith/">replaceWith</a><span  class="attributes">( fn&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Replace each element in the  set of matched elements with the provided new content.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/replaceAll/">replaceAll</a><span  class="attributes">( selector&nbsp;)</span>
+                  <div style="display: none;"  class="description">Replace each target element with the set of matched  elements.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Removing</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/detach/">detach</a><span class="attributes">( <span class="opt">[selector]</span>&nbsp;)<span class="p1_4">1.4+</span>
+                  <div  style="display: none;" class="description">Remove the set of matched  elements from the DOM.</div>
+                  </span></div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/empty/">empty</a><span class="attributes">(&nbsp;)
+                  <div  style="display: none;" class="description">Remove all child nodes of  the set of matched elements from the DOM.</div>
+                  </span></div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/remove/">remove</a><span class="attributes">( <span class="opt">[selector]</span>&nbsp;)
+                  <div style="display: none;"  class="description">Remove the set of matched elements from the DOM.</div>
+                  </span></div>
+              </div>
+              <div class="subcat">
+                <h3>Copying</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/clone/">clone</a><span class="attributes">( <span class="opt">[withDataAndEvents]</span>&nbsp;)
+                  <div style="display:  none;" class="description">Create a copy of the set of matched  elements.</div>
+                  </span></div>
+              </div>
+            </div></td>
+          <td class="col_3"><div class="cat events">
+              <h2>Events</h2>
+              <div class="subcat">
+                <h3>Page Load</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/ready/">ready</a><span class="attributes">(  fn()&nbsp;)
+                  <div style="display: none;" class="description">Specify a  function to execute when the DOM is fully loaded.</div>
+                  </span></div>
+              </div>
+              <div class="subcat">
+                <h3>Event Handling</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/bind/">bind</a><span class="attributes">(  type <span class="opt">[, data ]</span>, fn(eventObj)&nbsp;), .<a  href="http://api.jquery.com/bind/">bind</a><span class="attributes">(  array&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div style="display:  none;" class="description">Attach a handler to an event for the  elements.</div>
+                  </span></div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/one/">one</a><span class="attributes">(  type <span class="opt">[, data ]</span>, fn(eventObj)&nbsp;)
+                  <div  style="display: none;" class="description">Attach a handler to an event  for the elements. The handler is executed at most once.</div>
+                  </span></div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/trigger/">trigger</a><span  class="attributes">( event <span class="opt">[, data]</span>)
+                  <div  style="display: none;" class="description">Execute all handlers and  behaviors attached to the matched elements for the given event type.</div>
+                  </span></div>
+                <div class="apiobj"><span class="type">obj</span>.<a  href="http://api.jquery.com/triggerHandler/">triggerHandler</a><span  class="attributes">( event <span class="opt">[, data]</span>)
+                  <div  style="display: none; top: 465px; left: 686px;" class="description">Execute  all handlers attached to an element for an event.</div>
+                  </span></div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/unbind/">unbind</a><span class="attributes">( <span class="opt">[type]</span> <span class="opt">[, fn]</span>)
+                  <div  style="display: none;" class="description">Remove a previously-attached  event handler from the elements.</div>
+                  </span></div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/delegate/">delegate</a><span  class="attributes">( selector, eventType, [eventData], handler)</span> <span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Attach  a handler to one or more events for all elements that match the  selector, now or in the future, based on a specific set of root  elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/undelegate/">undelegate</a><span  class="attributes">( [selector, eventType, [handler]])</span> <span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Remove  a handler from the event for all elements which match the current  selector, now or in the future, based upon a specific set of root  elements.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Live Events</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/live/">live</a><span class="attributes">(  eventType [, data], fn()&nbsp;)</span>
+                  <div style="display: none;"  class="description">Attach a handler to the event for all elements which  match the current selector, now or in the future.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/die/#die1">die</a><span class="attributes">(&nbsp;)</span><span  class="p1_4">1.4+</span>, .<a href="http://api.jquery.com/die/#die2">die</a><span  class="attributes">( <span class="opt">[eventType]</span> <span  class="opt">[, fn() ]</span>)
+                  <div style="display: none;"  class="description">Remove an event handler previously attached using  .live() from the elements.</div>
+                  </span></div>
+              </div>
+              <div class="subcat">
+                <h3>Interaction Helpers</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/hover/">hover</a><span class="attributes">(  fnIn(eventObj), fnOut(eventObj))
+                  <div style="display: none;"  class="description">Bind two handlers to the matched elements, to be  executed when the mouse pointer enters and leaves the elements.</div>
+                  </span></div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/toggle/">toggle</a><span class="attributes">(  fn(eventObj), fn2(eventObj) <span class="opt">[, ...]</span>)
+                  <div  style="display: none;" class="description">Bind two or more handlers to  the matched elements, to be executed on alternate clicks.</div>
+                  </span></div>
+              </div>
+              <div class="subcat">
+                <h3>Event Helpers</h3>
+                <div class="apiobj"><span class="f_left  type">$</span>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/blur/">blur</a><span class="attributes">( <span  class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/mousedown/">mousedown</a><span  class="attributes">( [fn]&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/change/">change</a><span class="attributes">( <span class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/mouseenter/">mouseenter</a><span  class="attributes">( [fn]&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/click/">click</a><span class="attributes">( <span  class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/mouseleave/">mouseleave</a><span  class="attributes">( [fn]&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/dblclick/">dblclick</a><span  class="attributes">( <span class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/mousemove/">mousemove</a><span  class="attributes">( [fn]&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/error/">error</a><span class="attributes">( <span  class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/mouseout/">mouseout</a><span  class="attributes">( [fn]&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/focus/">focus</a><span class="attributes">( <span  class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/mouseover/">mouseover</a><span  class="attributes">( [fn]&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/focusin/">focusin</a><span  class="attributes">( <span class="opt">[fn]</span>&nbsp;)</span>,<span  class="p1_4">1.4+</span></div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/mouseup/">mouseup</a><span  class="attributes">( [fn]&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/focusout/">focusout</a><span  class="attributes">( <span class="opt">[fn]</span>&nbsp;)</span>,<span  class="p1_4">1.4+</span></div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/resize/">resize</a><span class="attributes">(  [fn]&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/keydown/">keydown</a><span  class="attributes">( <span class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/scroll/">scroll</a><span class="attributes">(  [fn]&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/keypress/">keypress</a><span  class="attributes">( <span class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/select/">select</a><span class="attributes">( <span class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/keyup/">keyup</a><span class="attributes">( <span  class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/submit/">submit</a><span class="attributes">( <span class="opt">[fn]</span>&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/load/">load</a><span class="attributes">(  fn&nbsp;)</span>,</div>
+                  <div class="event_helper">.<a  href="http://api.jquery.com/unload/">unload</a><span class="attributes">(  fn&nbsp;)</span></div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Event object</h3>
+                <div class="apiobj_wd"> event = {
+                  <div class="event_property"><span  class="type">el</span><a  href="http://api.jquery.com/event.currentTarget/">currentTarget</a>,
+                    <div  style="display: none;" class="description">The current DOM element  within the event bubbling phase. </div>
+                  </div>
+                  <div class="event_property"><span  class="type">*</span><a href="http://api.jquery.com/event.data/">data</a>,
+                    <div  style="display: none; top: 947px; left: 970px;" class="description">Contains  the optional data passed to jQuery.fn.bind when the current executing  handler was bound. </div>
+                  </div>
+                  <div class="event_property"><span  class="type">bool</span><a  href="http://api.jquery.com/event.isDefaultPrevented/">isDefaultPrevented</a><span  class="attributes">()</span>,
+                    <div style="display: none; top: 1078px;  left: 848px;" class="description">Returns whether event.preventDefault()  was ever called on this event object. </div>
+                  </div>
+                  <div class="event_property"><span  class="type">bool</span><a  href="http://api.jquery.com/event.isImmediatePropagationStopped/">isImmediatePropagationStopped</a><span  class="attributes">()</span>,
+                    <div style="display: none;"  class="description">Returns whether event.stopImmediatePropagation() was  ever called on this event object.</div>
+                  </div>
+                  <div class="event_property"><span  class="type">bool</span><a  href="http://api.jquery.com/event.isPropagationStopped/">isPropagationStopped</a><span  class="attributes">()</span>,
+                    <div style="display: none; top: 544px;  left: 496px;" class="description">Returns whether  event.stopPropagation() was ever called on this event object.</div>
+                  </div>
+                  <div class="event_property"><span  class="type">num</span><a href="http://api.jquery.com/event.pageX/">pageX</a>,
+                    <div  style="display: none; top: 627px; left: 290px;" class="description">The  mouse position relative to the left edge of the document.</div>
+                  </div>
+                  <div class="event_property"><span  class="type">num</span><a href="http://api.jquery.com/event.pageY/">pageY</a>,
+                    <div  style="display: none;" class="description">The mouse position relative  to the top edge of the document.</div>
+                  </div>
+                  <div class="event_property"><span  class="type"></span><a  href="http://api.jquery.com/event.preventDefault/">preventDefault</a><span  class="attributes">()</span>,
+                    <div style="display: none;"  class="description">If this method is called, the default action of the  event will not be triggered.</div>
+                  </div>
+                  <div class="event_property"><span  class="type">el</span><a  href="http://api.jquery.com/event.relatedTarget/">relatedTarget</a>,
+                    <div  style="display: none; top: 1179px; left: 970px;" class="description">The  other DOM element involved in the event, if any.</div>
+                  </div>
+                  <div class="event_property"><span  class="type">obj</span><a href="http://api.jquery.com/event.result/">result</a>,
+                    <div  style="display: none;" class="description">This attribute contains the  last value returned by an event handler that was triggered by this  event, unless the value was <em>undefined</em>.</div>
+                  </div>
+                  <div class="event_property"><span  class="type"></span><a  href="http://api.jquery.com/event.stopImmediatePropagation/">stopImmediatePropagation</a><span  class="attributes">()</span>,
+                    <div style="display: none;"  class="description">Prevents other event handlers from being called.</div>
+                  </div>
+                  <div class="event_property"><span  class="type"></span><a  href="http://api.jquery.com/event.stopPropagation/">stopPropagation</a><span  class="attributes">()</span>,
+                    <div style="display: none; top: 1345px;  left: 1026px;" class="description">This method prevents the event from  bubbling up the DOM tree, preventing any parent handlers from being  notified of the event.</div>
+                  </div>
+                  <div class="event_property"><span  class="type">el</span><a href="http://api.jquery.com/event.target/">target</a>,
+                    <div  style="display: none;" class="description">The DOM element that  initiated the event.</div>
+                  </div>
+                  <div class="event_property"><span  class="type">num</span><a href="http://api.jquery.com/event.timeStamp/">timeStamp</a>,
+                    <div  style="display: none;" class="description">This attribute returns the  number of milliseconds since January 1, 1970, when the event is  triggered.</div>
+                  </div>
+                  <div class="event_property"><span  class="type">str</span><a href="http://api.jquery.com/event.type/">type</a>,
+                    <div  style="display: none; top: 1288px; left: 970px;" class="description">Describes  the nature of the event.</div>
+                  </div>
+                  <div class="event_property"><span  class="type">str</span><a href="http://api.jquery.com/event.which/">which</a>
+                    <div  style="display: none; top: 1291px; left: 970px;" class="description">For  key or button events, this attribute indicates the specific button or  key that was pressed.</div>
+                  </div>
+                  } </div>
+              </div>
+            </div>
+            <div class="cat effects">
+              <h2>Effects</h2>
+              <div class="subcat">
+                <h3>Basics</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/show/">show</a><span class="attributes">( <span  class="opt">[ duration <span class="opt">[, fn]</span> ]</span> &nbsp;)</span>
+                  <div  style="display: none;" class="description">Display the matched  elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/hide/">hide</a><span class="attributes">( <span  class="opt">[ duration <span class="opt">[, fn]</span> ]</span> &nbsp;)</span>
+                  <div  style="display: none;" class="description">Hide the matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/toggle/#toggle2">toggle</a><span  class="attributes">( <span class="opt">[showOrHide]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Bind two or more handlers to  the matched elements, to be executed on alternate clicks.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/toggle/#toggle2">toggle</a><span  class="attributes">( duration <span class="opt">[, fn]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Bind two or more handlers to  the matched elements, to be executed on alternate clicks.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Sliding</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/slideDown/">slideDown</a><span  class="attributes">( duration <span class="opt">[, fn]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Display the matched elements  with a sliding motion.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/slideUp/">slideUp</a><span  class="attributes">( duration <span class="opt">[, fn]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Hide the matched elements  with a sliding motion.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/slideToggle/">slideToggle</a><span  class="attributes">( [duration] <span class="opt">[, fn]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Display or hide the matched  elements with a sliding motion.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Fading</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/fadeIn/">fadeIn</a><span class="attributes">(  duration <span class="opt">[, fn]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Display the matched elements  by fading them to opaque.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/fadeOut/">fadeOut</a><span  class="attributes">( duration <span class="opt">[, fn]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Hide the matched elements by  fading them to transparent.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/fadeTo/">fadeTo</a><span class="attributes">(  duration, opacity <span class="opt">[, fn]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Adjust the opacity of the  matched elements.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Custom</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/animate/">animate</a><span  class="attributes">( params <span class="opt">[, duration]</span> <span  class="opt">[, easing]</span> <span class="opt">[, fn]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Perform a custom animation  of a set of CSS properties.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/animate/">animate</a><span  class="attributes">( params, options&nbsp;)</span>
+                  <div style="display:  none;" class="description">Perform a custom animation of a set of CSS  properties.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/stop/">stop</a><span class="attributes">( <span  class="opt">[clearQueue]</span> <span class="opt">[, jumpToEnd]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Stop the currently-running  animation on the matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/delay/">delay</a><span class="attributes">(  duration <span class="opt">[, queueName]</span>&nbsp;)</span><span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Set  a timer to delay execution of subsequent items in the queue.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Settings</h3>
+                <div class="apiobj"><span class="type">bool</span><a  href="http://api.jquery.com/jQuery.fx.off/">jQuery.fx.off</a>
+                  <div  style="display: none;" class="description">Globally disable all  animations.</div>
+                </div>
+              </div>
+            </div></td>
+          <td class="col_4"><div class="cat ajax">
+              <h2>AJAX</h2>
+              <div class="subcat">
+                <h3>Low-Level Interface</h3>
+                <div class="apiobj_wd"><span class="type">XHR</span><a  href="http://api.jquery.com/jQuery.ajax/">jQuery.ajax</a><span  class="attributes">( options&nbsp;)</span>
+                  <ul class="ajax_option">
+                    <li><span class="type">bool</span>async  = true
+                      <div style="display: none;" class="description">By default, all  requests are sent asynchronous (i.e. this is set to true by default).</div>
+                    </li>
+                    <li><span class="type">fn</span>beforeSend<span  class="attributes">( XHR&nbsp;)</span>
+                      <div style="display: none;"  class="description">A pre-callback to modify the XMLHttpRequest object  before it is sent.</div>
+                    </li>
+                    <li><span class="type">bool</span>cache  = true
+                      <div style="display: none;" class="description">If set to false  it will force the pages that you request to not be cached by the  browser.</div>
+                    </li>
+                    <li><span class="type">fn</span>complete<span  class="attributes">(XHR, status)</span>
+                      <div style="display: none;"  class="description">A function to be called when the request finishes  (after success and error callbacks are executed).</div>
+                    </li>
+                    <li><span class="type">str</span>contentType
+                      <div  style="display: none;" class="description">When sending data to the  server, use this content-type. Default is  "application/x-www-form-urlencoded", which is fine for most cases.</div>
+                    </li>
+                    <li><span class="type">obj</span>context
+                      <div  style="display: none;" class="description">This object will be made the  context of all Ajax-related callbacks.</div>
+                    </li>
+                    <li><span class="type"><nobr  class="obj_str">obj, str</nobr></span>data
+                      <div style="display: none;"  class="description">Data to be sent to the server. It is converted to a  query string, if not already a string.</div>
+                    </li>
+                    <li><span class="type">fn</span>dataFilter<span  class="attributes">( data, type&nbsp;)</span>
+                      <div style="display:  none;" class="description">A function to be used to handle the raw  responsed data of XMLHttpRequest.This is a pre-filtering function to  sanitize the response.</div>
+                    </li>
+                    <li><span class="type">bool</span>global  = true
+                      <div style="display: none;" class="description">Whether to  trigger global Ajax event handlers for this request.</div>
+                    </li>
+                    <li><span class="type">bool</span>ifModified  = false
+                      <div style="display: none;" class="description">Allow the  request to be successful only if the response has changed since the last  request.</div>
+                    </li>
+                    <li><span class="type">str</span>jsonp
+                      <div  style="display: none;" class="description">Override the callback  function name in a jsonp request.</div>
+                    </li>
+                    <li><span class="type">fn</span>jsonpCallback
+                      <div  style="display: none; top: 206px; left: 1026px;" class="description">Specify  the callback function name for a jsonp request.</div>
+                    </li>
+                    <li><span class="type">str</span>password
+                      <div  style="display: none; top: 415px; left: 879px;" class="description">A  password to be used in response to an HTTP access authentication  request.</div>
+                    </li>
+                    <li><span class="type">bool</span>processData  = true
+                      <div style="display: none;" class="description">By default, data  passed in to the data option as an object will be processed and  transformed into a query string, fitting to the default content-type  "application/x-www-form-urlencoded".</div>
+                    </li>
+                    <li><span class="type">num</span>timeout
+                      <div  style="display: none; top: 428px; left: 775px;" class="description">Set  a local timeout (in milliseconds) for the request.</div>
+                    </li>
+                    <li><span class="type">str</span>type  = 'GET'
+                      <div style="display: none;" class="description">The type of  request to make ("POST" or "GET"), default is "GET".</div>
+                    </li>
+                    <li><span class="type">str</span>url  = curr. page
+                      <div style="display: none;" class="description">A string  containing the URL to which the request is sent.</div>
+                    </li>
+                    <li><span class="type">str</span>username
+                      <div  style="display: none;" class="description">A username to be used in  response to an HTTP access authentication request.</div>
+                    </li>
+                    <li><span class="type">fn</span>xhr
+                      <div  style="display: none;" class="description">Callback for creating the  XMLHttpRequest object.</div>
+                    </li>
+                    <li><span class="type">str</span>scriptCharset
+                      <div  style="display: none;" class="description">Forces the request to be  interpreted as a certain charset.</div>
+                    </li>
+                    <li><span class="type">str</span>dataType  ∈ {xml, json, script, html}
+                      <div style="display: none; top: 484px; left:  759px;" class="description">The type of data that you're expecting back  from the server.</div>
+                    </li>
+                    <li><span class="type">fn</span>error<span  class="attributes">( XHR, status, errorThrown&nbsp;)</span>
+                      <div  style="display: none; top: 499px; left: 786px;" class="description">A  function to be called if the request fails.</div>
+                    </li>
+                    <li><span class="type">fn</span>success<span  class="attributes">( data, status, XHR&nbsp;)</span>
+                      <div  style="display: none; top: 459px; left: 599px;" class="description">A  function to be called if the request succeeds.</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="apiobj"><span class="type"></span><a  href="http://api.jquery.com/jQuery.ajaxSetup/">jQuery.ajaxSetup</a><span  class="attributes">( options&nbsp;)</span>
+                  <div style="display: none;"  class="description">Set default values for future Ajax requests.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Shorthand Methods</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/load/">load</a><span class="attributes">(  url <span class="opt">[, data]</span> <span class="opt">[, fn<span  class="attributes">( responseText, status, XHR&nbsp;)</span>]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Load data from the server  and place the returned HTML into the matched element.</div>
+                </div>
+                <div class="apiobj"><span class="type">XHR</span><a  href="http://api.jquery.com/jQuery.get/">jQuery.get</a><span  class="attributes">( url <span class="opt">[, data]</span> <span  class="opt">[, fn<span class="attributes">( data, status, XHR&nbsp;)</span>]</span> <span class="opt">[, type]</span>&nbsp;)</span>
+                  <div style="display:  none;" class="description">Load data from the server using a HTTP GET  request.</div>
+                </div>
+                <div class="apiobj"><span class="type">XHR</span><a  href="http://api.jquery.com/jQuery.getJSON/">jQuery.getJSON</a><span  class="attributes">( url <span class="opt">[, data]</span> <span  class="opt">[, fn<span class="attributes">( data, status&nbsp;)</span>]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Load JSON-encoded data from  the server using a GET HTTP request.</div>
+                </div>
+                <div class="apiobj"><span class="type">XHR</span><a  href="http://api.jquery.com/jQuery.getScript/">jQuery.getScript</a><span  class="attributes">( url <span class="opt">[, fn<span  class="attributes">( data, status&nbsp;)</span>]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Load a JavaScript file from  the server using a GET HTTP request, then execute it.</div>
+                </div>
+                <div class="apiobj"><span class="type">XHR</span><a  href="http://api.jquery.com/jQuery.post/">jQuery.post</a><span  class="attributes">( url <span class="opt">[, data]</span> <span  class="opt">[, fn<span class="attributes">( data, status&nbsp;)</span>]</span> <span class="opt">[, type]</span>&nbsp;)</span>
+                  <div style="display:  none;" class="description">Load data from the server using a HTTP POST  request.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Global Ajax Event Handlers</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/ajaxComplete/">ajaxComplete</a><span  class="attributes">( fn<span class="attributes">( event, XHR,  options&nbsp;)</span>&nbsp;)</span>
+                  <div style="display: none;"  class="description">Register a handler to be called when Ajax requests  complete.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/ajaxError/">ajaxError</a><span  class="attributes">( fn<span class="attributes">( event, XHR, options,  thrownError&nbsp;)</span>&nbsp;)</span>
+                  <div style="display: none;"  class="description">Register a handler to be called when Ajax requests  complete with an error.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/ajaxSend/">ajaxSend</a><span  class="attributes">( fn<span class="attributes">( event, XHR,  options&nbsp;)</span>&nbsp;)</span>
+                  <div style="display: none;"  class="description">Show a message before an Ajax request is sent.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/ajaxStart/">ajaxStart</a><span  class="attributes">( fn<span class="attributes">( &nbsp;)</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Register a handler to be  called when the first Ajax request begins. </div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/ajaxStop/">ajaxStop</a><span  class="attributes">( fn<span class="attributes">( &nbsp;)</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Hide a loading message after  all the Ajax requests have stopped.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/ajaxSuccess/">ajaxSuccess</a><span  class="attributes">( fn<span class="attributes">(event, XHR, options)</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Show a message when an Ajax  request completes successfully.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Miscellaneous</h3>
+                <div class="apiobj"><span class="type">str</span>.<a  href="http://api.jquery.com/serialize/">serialize</a><span  class="attributes">( &nbsp;)</span>
+                  <div style="display: none;"  class="description">Encode a set of form elements as a string for  submission.</div>
+                </div>
+                <div class="apiobj"><span class="type">[obj]</span>.<a  href="http://api.jquery.com/serializeArray/">serializeArray</a><span  class="attributes">( &nbsp;)</span>
+                  <div style="display: none;"  class="description">Encode a set of form elements as an array of names  and values.</div>
+                </div>
+                <div class="apiobj"><span class="type">str</span><a  href="http://api.jquery.com/jQuery.param/">jQuery.param</a><span  class="attributes">( obj, <span class="opt">[traditional]</span>&nbsp;)</span><span  class="c1_4">1.4∗</span>
+                  <div style="display: none;" class="description">Create  a serialized representation of an array or object, suitable for use in a  URL query string or Ajax request.</div>
+                </div>
+              </div>
+            </div>
+            <div class="cat utilities">
+              <h2>Utilities</h2>
+              <div class="subcat">
+                <h3>Browser and Feature Detection</h3>
+                <div class="apiobj"><span class="type">obj</span><a  href="http://api.jquery.com/jQuery.support/">jQuery.support</a>
+                  <div  style="display: none;" class="description">A collection of properties  that represent the presence of different browser features or bugs.</div>
+                </div>
+                <div class="apiobj"><span class="type">obj</span><a  href="http://api.jquery.com/jQuery.browser/">jQuery.browser</a><span  class="d1_3">deprecated</span>
+                  <div style="display: none;"  class="description">Contains flags for the useragent, read from  navigator.userAgent.</div>
+                </div>
+                <div class="apiobj"><span class="type">str</span><a  href="http://api.jquery.com/jQuery.browser/#jQuery.browser.version2">jQuery.browser.version</a><span  class="d1_3">deprecated</span>
+                  <div style="display: none;"  class="description">The version number of the rendering engine for the  user's browser.</div>
+                </div>
+                <div class="apiobj"><span class="type">bool</span><a  href="http://api.jquery.com/jQuery.boxModel/">jQuery.boxModel</a><span  class="d1_3">deprecated</span>
+                  <div style="display: none; top: 1667px;  left: 857px;" class="description">States if the current page, in the  user's browser, is being rendered using the W3C CSS Box Model.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Basic operations</h3>
+                <div class="apiobj"><span class="type">obj</span><a  href="http://api.jquery.com/jQuery.each/">jQuery.each</a><span  class="attributes">( obj, fn<span class="attributes">( index,  valueOfElement&nbsp;)</span>&nbsp;)</span>
+                  <div style="display: none;"  class="description">Iterates through the array displaying each number as  both a word and numeral.</div>
+                </div>
+                <div class="apiobj"><span class="type">obj</span><a  href="http://api.jquery.com/jQuery.extend/">jQuery.extend</a><span  class="attributes">( <span class="opt">[deep,]</span> target, obj1 <span  class="opt">[, objN]</span>&nbsp;)</span>
+                  <div style="display: none;"  class="description">Merge the contents of two or more objects together  into the first object.</div>
+                </div>
+                <div class="apiobj"><span class="type">arr</span><a  href="http://api.jquery.com/jQuery.grep/">jQuery.grep</a><span  class="attributes">( array, fn<span class="attributes">( element,  index&nbsp;)</span> <span class="opt">[, invert]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Finds the elements of an  array which satisfy a filter function. The original array is not  affected.</div>
+                </div>
+                <div class="apiobj"><span class="type">arr</span><a  href="http://api.jquery.com/jQuery.makeArray/">jQuery.makeArray</a><span  class="attributes">( obj&nbsp;)</span>
+                  <div style="display: none;"  class="description">Convert an array-like object into a true JavaScript  array.</div>
+                </div>
+                <div class="apiobj"><span class="type">arr</span><a  href="http://api.jquery.com/jQuery.map/">jQuery.map</a><span  class="attributes">( array, fn<span class="attributes">( element,  index&nbsp;)</span>&nbsp;)</span>
+                  <div style="display: none;"  class="description">Translate all items in an array or array-like object  to another array of items.</div>
+                </div>
+                <div class="apiobj"><span class="type">num</span><a  href="http://api.jquery.com/jQuery.inArray/">jQuery.inArray</a><span  class="attributes">( val, array&nbsp;)</span>
+                  <div style="display: none;"  class="description">Search for a specified value within an array and  return its index (or -1 if not found).</div>
+                </div>
+                <div class="apiobj"><span class="type">arr</span><a  href="http://api.jquery.com/jQuery.merge/">jQuery.merge</a><span  class="attributes">( first, second&nbsp;)</span>
+                  <div style="display:  none;" class="description">Merge the contents of two arrays together  into the first array. </div>
+                </div>
+                <div class="apiobj"><span class="type">fn</span><a  href="http://api.jquery.com/jQuery.noop/">jQuery.noop</a><span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">An  empty function.</div>
+                </div>
+                <div class="apiobj"><span class="type">fn</span><a  href="http://api.jquery.com/jQuery.proxy/">jQuery.proxy</a><span  class="attributes">( fn, scope&nbsp;)</span>, <a  href="http://api.jquery.com/jQuery.proxy/">jQuery.proxy</a><span  class="attributes">( scope, name&nbsp;)</span><span class="p1_4">1.4+</span>
+                  <div  style="display: none;" class="description">Takes a function and returns  a new one that will always have a particular context.</div>
+                </div>
+                <div class="apiobj"><span class="type">arr</span><a  href="http://api.jquery.com/jQuery.unique/">jQuery.unique</a><span  class="attributes">( array&nbsp;)</span>
+                  <div style="display: none;"  class="description">Sorts an array of DOM elements, in place, with the  duplicates removed. Note that this only works on arrays of DOM elements,  not strings or numbers.</div>
+                </div>
+                <div class="apiobj"><span class="type">str</span><a  href="http://api.jquery.com/jQuery.trim/">jQuery.trim</a><span  class="attributes">( str&nbsp;)</span>
+                  <div style="display: none;"  class="description">Remove the whitespace from the beginning and end of a  string.</div>
+                </div>
+                <div class="apiobj"><span class="type">obj</span><a  href="http://api.jquery.com/jQuery.parseJSON/">jQuery.parseJSON</a><span  class="attributes">( str&nbsp;)</span><span class="p1_4">1.4+</span>
+                  <div  style="display: none;" class="description">Takes a well-formed JSON  string and returns the resulting JavaScript object.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Data functions</h3>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/clearQueue/">clearQueue</a><span  class="attributes">( <span class="opt">[name]</span>&nbsp;)</span><span  class="p1_4">1.4+</span>
+                  <div style="display: none;" class="description">Remove  from the queue all items that have not yet been run.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/dequeue/">dequeue</a><span  class="attributes">( <span class="opt">[name]</span>&nbsp;)</span>, <a  href="http://api.jquery.com/jQuery.dequeue/">jQuery.dequeue</a><span  class="attributes">( <span class="opt">[name]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Execute the next function on  the queue for the matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">obj</span><a  href="http://api.jquery.com/jQuery.data/">jQuery.data</a><span  class="attributes">( element, key&nbsp;)</span>, <a  href="http://api.jquery.com/jQuery.data/">jQuery.data</a><span  class="attributes">( &nbsp;)</span><span class="p1_4">1.4+</span>
+                  <div  style="display: none;" class="description">Store arbitrary data  associated with the specified element.</div>
+                </div>
+                <div class="apiobj"><span class="type">obj</span>.<a  href="http://api.jquery.com/data/">data</a><span class="attributes">(  &nbsp;)</span>, .<a href="http://api.jquery.com/data/">data</a><span  class="attributes">( key&nbsp;)</span>
+                  <div style="display: none;"  class="description">Store arbitrary data associated with the specified  element.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/data/">data</a><span class="attributes">(  key, val&nbsp;)</span>, .<a href="http://api.jquery.com/data/">data</a><span  class="attributes">( obj&nbsp;)</span><span class="c1_4">1.4∗</span>
+                  <div  style="display: none;" class="description">Store arbitrary data  associated with the specified element.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/removeData/">removeData</a><span  class="attributes">( <span class="opt">[name]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Remove a previously-stored  piece of data.</div>
+                </div>
+                <div class="apiobj"><span class="type">[fn]</span>.<a  href="http://api.jquery.com/queue/">queue</a><span class="attributes">( <span class="opt">[name]</span>&nbsp;)</span> <a  href="http://api.jquery.com/jQuery.queue/">jQuery.queue</a><span  class="attributes">( <span class="opt">[name]</span>&nbsp;)</span>
+                  <div  style="display: none;" class="description">Show the queue of functions  to be executed on the matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/queue/">queue</a><span class="attributes">( <span class="opt">[name,]</span> fn<span class="attributes">(  next&nbsp;)</span>&nbsp;)</span>, <a  href="http://api.jquery.com/jQuery.queue/">jQuery.queue</a><span  class="attributes">( <span class="opt">[name,]</span> fn<span  class="attributes">( &nbsp;)</span>&nbsp;)</span>
+                  <div style="display:  none;" class="description">Show the queue of functions to be executed on  the matched elements.</div>
+                </div>
+                <div class="apiobj"><span class="type">$</span>.<a  href="http://api.jquery.com/queue/">queue</a><span class="attributes">( <span class="opt">[name,]</span> queue&nbsp;)</span>, <a  href="http://api.jquery.com/jQuery.queue/">jQuery.queue</a><span  class="attributes">( <span class="opt">[name,]</span> queue&nbsp;)</span>
+                  <div  style="display: none;" class="description">Show the queue of functions  to be executed on the matched elements.</div>
+                </div>
+              </div>
+              <div class="subcat">
+                <h3>Test operations</h3>
+                <div class="apiobj"><span class="type">bool</span><a  href="http://api.jquery.com/jQuery.isArray/">jQuery.isArray</a><span  class="attributes">( obj&nbsp;)</span>
+                  <div style="display: none;"  class="description">Determine whether the argument is an array.</div>
+                </div>
+                <div class="apiobj"><span class="type">bool</span><a  href="http://api.jquery.com/jQuery.isEmptyObject/">jQuery.isEmptyObject</a><span  class="attributes">( obj&nbsp;)</span><span class="p1_4">1.4+</span>
+                  <div  style="display: none;" class="description">Check to see if an object is  empty (contains no properties).</div>
+                </div>
+                <div class="apiobj"><span class="type">bool</span><a  href="http://api.jquery.com/jQuery.isFunction/">jQuery.isFunction</a><span  class="attributes">( obj&nbsp;)</span>
+                  <div style="display: none; top:  1395px; left: 970px;" class="description">Determine if the argument  passed is a Javascript function object.</div>
+                </div>
+                <div class="apiobj"><span class="type">bool</span><a  href="http://api.jquery.com/jQuery.isPlainObject/">jQuery.isPlainObject</a><span  class="attributes">( obj&nbsp;)</span><span class="p1_4">1.4+</span>
+                  <div  style="display: none;" class="description">Check to see if an object is  a plain object (created using "{}" or "new Object").</div>
+                </div>
+              </div>
+            </div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="footer"> <span class="mail">Email: <a href="mailto:info@futurecolors.ru">info@futurecolors.ru</a></span> <span class="phone">Phone: +7 495 226 63 83</span> <span class="copy">© Future Colors, 2010</span> </div>
+</div>
+<script type="text/javascript" src="jQuery14_files/jquery-1.js"></script>
+<script type="text/javascript"> var descrTimeOut; var index;  $(function(){     var hoverIn = function(){         descrTimeOut = setTimeout('showDescription()', 1000);         $(this).bind('mousemove', moveDescription);     };     var hoverOut = function(){         $('.description').hide();         clearTimeout(descrTimeOut);         $(this).unbind('mousemove', moveDescription);     };     $('.apiobj a').hover(function(){         index = $('.description', $(this).parent()).index('.description');         hoverIn();     }, hoverOut);     $('.ajax_option li, .event_property').hover(function(){         index = $('.description', this).index('.description');         hoverIn();     }, hoverOut); });  function showDescription() {     $('.description').hide();     $('.description:eq(' + index + ')').fadeIn(300); }  var moveDescription = function(e) {     $('.description:eq(' + index + ')').css({         top: e.pageY + 5,         left: (e.pageX + 350 < $(document).width()) ? (e.pageX + 15) : (e.pageX - 325)     }); }; </script>
+</body>
+</html>

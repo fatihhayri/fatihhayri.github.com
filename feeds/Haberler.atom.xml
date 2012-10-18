@@ -424,16 +424,11 @@ tepkiyi belirler. Bu tepki aşağıdaki çerçevededir.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;pointer event özelliği aslında SVG içerikleri için uygulanan bir
 özelliktir.&lt;/p&gt;
-&lt;div class="cssozelliktanimi"&gt;
-**Yapısı :**pointer-events: &lt;deger&gt;  
-**Aldığı Değerler:** auto | none | visiblePainted | visibleFill |
-visibleStroke | visible | painted | fill | stroke | all | inherit   
-**Başlangıç değeri:** auto   
-**Uygulanabilen elementler:** Tüm Elemanlara  
-**Kalıtsallık:** Var
-
-&lt;/div&gt;
-
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt;pointer-events: &amp;lt;deger&gt;&lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler:&lt;/strong&gt; auto | none | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | inherit &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; auto &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; Tüm Elemanlara&lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Var&lt;/p&gt;
 &lt;p&gt;Aldığı değerler bakalım;&lt;/p&gt;
 &lt;p&gt;auto: pointer-events özelliğine herhangi bir tanım yapılmadı ise fare
 tıklamasına müdahale etmez. SVG içeriklerde, bu değer visiblePainted ile
@@ -442,35 +437,33 @@ aynı etkiyi yapar.&lt;/p&gt;
 &lt;p&gt;visiblePainted, visibleFill, visibleStroke, visible, painted, fill,
 stroke ve all: Sadece SVG içindir.&lt;/p&gt;
 &lt;p&gt;Bir örnek ile durumu daha iyi görelim.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;ul class="menu"&gt;&lt;/li&gt;
-&lt;li&gt;&lt;li&gt;&lt;a href="index.html"&gt;Ana Sayfa&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;li&gt;&lt;a href="hakkimizda.html" class=”on”&gt;Hakkımızda&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;li&gt;&lt;a href="urunler.html"&gt;Ürünler&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;index.html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Ana Sayfa&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hakkimizda.html&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;”on”&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Hakkımızda&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;urunler.html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Ürünler&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Hakkımızda sayfasında olduğumuzda kullanıcının hakkımızda linkine
 tıklaması mantıklı değildir, hakkımızda bağlantısının fare tıklama
 olayını kaldırmak için&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;.menu a.on {&lt;/li&gt;
-&lt;li&gt;pointer-events: none;&lt;/li&gt;
-&lt;li&gt;cursor: default;&lt;/li&gt;
-&lt;li&gt;}&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.on&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;pointer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;events&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;cursor&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;default&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Tanımı istediğimiz sonucu verecektir.&lt;/p&gt;
 &lt;p&gt;CSS3 ile dinamik bileşenlerin CSS ile halledilmesi işine alıştık. Bu tip
 CSS ile halledebilmemiz güzel.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.6+   
-Chrome 2+  
-Safari 4+   
-Opera -  
-İnternet Explorer -
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.6+ &lt;br /&gt;
+Chrome 2+&lt;br /&gt;
+Safari 4+ &lt;br /&gt;
+Opera -&lt;br /&gt;
+İnternet Explorer -&lt;/p&gt;
 &lt;h3&gt;Kaynaklar&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/pointer-events"&gt;https://developer.mozilla.org/en/CSS/pointer-events&lt;/a&gt;&lt;/li&gt;
@@ -479,8 +472,7 @@ Opera -
 &lt;li&gt;&lt;a href="http://css-tricks.com/6379-pointer-events-current-nav/"&gt;http://css-tricks.com/6379-pointer-events-current-nav/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://hacks.mozilla.org/2009/12/pointer-events-for-html-in-firefox-3-6/"&gt;http://hacks.mozilla.org/2009/12/pointer-events-for-html-in-firefox-3-6/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.webkit.org/specs/PointerEventsProperty.html"&gt;http://www.webkit.org/specs/PointerEventsProperty.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="css3"></category><category term="pointer-events"></category><category term="svg"></category></entry><entry><title>Git Öğreniyorum -2</title><link href="http://www.fatihhayrioglu.com/git-ogreniyorum-2/" rel="alternate"></link><updated>2011-09-07T21:40:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-09-07:git-ogreniyorum-2/</id><summary type="html">&lt;p&gt;Daha önce &lt;a href="http://www.fatihhayrioglu.com/surum-kontrol-sistemi-git/"&gt;Sürüm Kontrol Sistemi Git&lt;/a&gt; adlı bir makale yazmıştım,
+&lt;/ul&gt;</summary><category term="css3"></category><category term="pointer-events"></category><category term="svg"></category></entry><entry><title>Git Öğreniyorum -2</title><link href="http://www.fatihhayrioglu.com/git-ogreniyorum-2/" rel="alternate"></link><updated>2011-09-07T21:40:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-09-07:git-ogreniyorum-2/</id><summary type="html">&lt;p&gt;Daha önce &lt;a href="http://www.fatihhayrioglu.com/surum-kontrol-sistemi-git/"&gt;Sürüm Kontrol Sistemi Git&lt;/a&gt; adlı bir makale yazmıştım,
 öğrenme sürecim devam ediyor. Git kullanırken komut satırını
 kullanıyoruz. MacOs’da Terminal’e denk geliyor. Bu nedenle genel
 Terminal komutlarınıda bilmekte yarar var. Benim gibi mac terminaline
@@ -690,8 +682,7 @@ işleve sahip bu uygulama herhangi bir eklenti kurmadan tarayıcının kendi
 &lt;li&gt;window.matchMedia() metodunu kullanarak medya sorgularını
     programatik olarak kontrol edebiliyoruz.&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://dev.w3.org/html5/eventsource/"&gt;Server-Sent Events&lt;/a&gt; desteği eklenmiş. Bu API sunucuya istemci
-    tarafından uyarı mesajları göndermeye izin veriyor. [Bir mesajlaşma
-    örneği][]&lt;/li&gt;
+    tarafından uyarı mesajları göndermeye izin veriyor. [Bir mesajlaşma     örneği][]&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en/DOM/Touch_events"&gt;Touch eventları&lt;/a&gt; destekliyor. Dokunmatik ekranlar ve
     trackpadlerde bu özellikleri kullanabiliyoruz artık.&lt;/li&gt;
 &lt;li&gt;Tüm destek listesini görmek için &lt;a href="https://developer.mozilla.org/en/Firefox_6_for_developers"&gt;tıklayınız.&lt;/a&gt;&lt;/li&gt;
@@ -887,8 +878,7 @@ başarılı olduğumuzu gösterecek.&lt;/p&gt;
 &lt;p&gt;Toplam 6.253 yorum var sitede. 77.402 çöp yorum engellenmiş.&lt;/p&gt;
 &lt;/p&gt;</summary><category term="5.sene"></category><category term="fatihhayrioglu.com"></category><category term="istatistik"></category></entry><entry><title>"Arayüz Geliştiricileri İçin Web Sitesi Kodlamak" Semineri - Ankara</title><link href="http://www.fatihhayrioglu.com/arayuz-gelistiricileri-icin-web-sitesi-kodlamak-semineri-ankara/" rel="alternate"></link><updated>2011-02-15T22:25:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-02-15:arayuz-gelistiricileri-icin-web-sitesi-kodlamak-semineri-ankara/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/arayuz-214x300.jpg" title="arayuz" /&gt;][]26 Şubat 2011 Cumartesi günü bir aksilik olmazsa TÜTEV’de
 “Arayüz Geliştiricileri İçin Web Sitesi Kodlamak” adlı bir seminer
-düzenleyeceğiz. TÜTEV’e ve özellikle beni bu iş için ikna eden &lt;a href="http://www.omersarikaya.com/"&gt;Ömer
-Faruk Sarıkaya&lt;/a&gt;’ya teşekkür ediyorum. Ayrıca bana yol arkadaşı olmaya
+düzenleyeceğiz. TÜTEV’e ve özellikle beni bu iş için ikna eden &lt;a href="http://www.omersarikaya.com/"&gt;Ömer Faruk Sarıkaya&lt;/a&gt;’ya teşekkür ediyorum. Ayrıca bana yol arkadaşı olmaya
 kabul eden &lt;a href="http://twitter.com/#!/feritarslan"&gt;S. Ferit Arslan&lt;/a&gt; ve &lt;a href="http://www.ilyax.com/"&gt;İlyas Osmanoğlulları&lt;/a&gt;’na da
 teşekkürler.&lt;/p&gt;
 &lt;p&gt;Genel manasıyla Arayüz Geliştiricileri ve Görevleri üzerinde durmaya
@@ -1336,8 +1326,7 @@ bilgilerinin yayınlanmaması ve sürümler arasında çok büyük özellik
 eklemesi olmaması idi. Ayrıca Chrome'un pazar payınında bu yazının
 gecikmesinde etkisi olduğunu kabul etmeliyim. &lt;/p&gt;
 &lt;p&gt;Google chrome'un hızlı yükselişi ve hız konusundaki insanlara verdiği
-izlenim kısa sürede kendinden bahsettirdi.  &lt;a href="http://www.dailytech.com/Microsofts+IE+Sinks+While+Google+Chromes+Market+Share+Triples/article18293.htm" title="Son tarayıcı kullanım oranlarına göre"&gt;Son tarayıcı kullanım
-oranlarına göre&lt;/a&gt; Google Chrome en hızlı yükselen tarayıcı oldu ve
+izlenim kısa sürede kendinden bahsettirdi.  &lt;a href="http://www.dailytech.com/Microsofts+IE+Sinks+While+Google+Chromes+Market+Share+Triples/article18293.htm" title="Son tarayıcı kullanım oranlarına göre"&gt;Son tarayıcı kullanım oranlarına göre&lt;/a&gt; Google Chrome en hızlı yükselen tarayıcı oldu ve
 kullanım oranını %6,73 oldu.&lt;/p&gt;
 &lt;p&gt;Arayüz geliştiricileri için tarayıcılar ve sürümleri çok önemlidir. Her
 sürüm incelemek ve sürüm yeniliklerinden haberdar olmak her arayüz
@@ -1580,8 +1569,7 @@ hızlı uygulayacaktık. Neyse yine ie6 ile uğraşmayalım.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;HTML5 ve DOM Desteği:&lt;/strong&gt; Yeni DOM ve HTML5 destekleri gelmiş.
-    &lt;a href="http://demos.hacks.mozilla.org/openweb/uploadingFiles/" title="Drag&amp;amp;Drop API"&gt;Drag&amp;amp;Drop API&lt;/a&gt; ve &lt;a href="http://hacks.mozilla.org/2009/12/w3c-fileapi-in-firefox-3-6/" title="File API"&gt;File API&lt;/a&gt;. Örnekleri görmek için [videoyu
-    izleyin][].&lt;/p&gt;
+    &lt;a href="http://demos.hacks.mozilla.org/openweb/uploadingFiles/" title="Drag&amp;amp;Drop API"&gt;Drag&amp;amp;Drop API&lt;/a&gt; ve &lt;a href="http://hacks.mozilla.org/2009/12/w3c-fileapi-in-firefox-3-6/" title="File API"&gt;File API&lt;/a&gt;. Örnekleri görmek için [videoyu     izleyin][].&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hız:&lt;/strong&gt;İlk kurulumdan sonra daha hızlı olduğunu söyleyebilirim,
     ancak bunu kullandıkça göreceğiz. FireBug1.5 ve Firefox3.6
@@ -1589,8 +1577,7 @@ hızlı uygulayacaktık. Neyse yine ie6 ile uğraşmayalım.&lt;/p&gt;
     %20'lik bir hızlanma varmış.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Ortama Adapte Olmak:&lt;/strong&gt; Yeni device API'si desteği ile artık
     desteği olan makinelerde Firefox duruma göre vazife çıkaracak ve
-    görünümünü ayarlayacak. Nasıl olduğunu görmek için &lt;a href="http://hacks.mozilla.org/2009/10/orientation-for-firefox/" title="videoyu izleyin"&gt;videoyu
-    izleyin&lt;/a&gt;. Çoğunlukla Mac kullanıcılarının kullanacağı bir özellik
+    görünümünü ayarlayacak. Nasıl olduğunu görmek için &lt;a href="http://hacks.mozilla.org/2009/10/orientation-for-firefox/" title="videoyu izleyin"&gt;videoyu     izleyin&lt;/a&gt;. Çoğunlukla Mac kullanıcılarının kullanacağı bir özellik
     gibi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Birde yapımcılarından Mike Beltzner'dan dinleyelim&lt;/p&gt;
@@ -1783,8 +1770,7 @@ sonuna kadar bu adres yönlenecekmiş.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.teknolojiherseyim.com/feedburner-hesabini-google-feedproxyye-nasil-tasiriz/"&gt;http://www.teknolojiherseyim.com/feedburner-hesabini-google-feedproxyye-nasil-tasiriz/&lt;/a&gt;&lt;/p&gt;
 &lt;/p&gt;</summary><category term="besleme"></category><category term="fatihhayrioglu.com"></category><category term="feedburner"></category><category term="google"></category><category term="rss"></category></entry><entry><title>Internet Explorer 8'in Nihai Sürümü Çıktı</title><link href="http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surumu-cikti/" rel="alternate"></link><updated>2009-03-20T10:57:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-03-20:internet-explorer-8in-nihai-surumu-cikti/</id><summary type="html">&lt;p&gt;Microsoft Internet Explorer 8'in nihai sürümünü dün yayınladı. Önceki
 tarayıcılarına(7 ve 6) göre güzel ancak diğer tarayıcılara(Firefox,
-Safari, Google Chrome vd.) göre yetersiz bir sürüm bence. &lt;a href="http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/" title="Daha önce"&gt;Daha
-önce&lt;/a&gt; yeniliklerden bahsettiğim için burada tekrarlamak istemiyorum. &lt;/p&gt;
+Safari, Google Chrome vd.) göre yetersiz bir sürüm bence. &lt;a href="http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/" title="Daha önce"&gt;Daha önce&lt;/a&gt; yeniliklerden bahsettiğim için burada tekrarlamak istemiyorum. &lt;/p&gt;
 &lt;p&gt;Genel olarak değerlendirdiğimizde daha hızlı, daha güvenli ve yeni
 özellikler sunuyor ie8. Kod yazarları için ie8'in en büyük avantajı
 CSS2.1(CSS3'ün bazı özelliklerini destekliyor) ve javascript
@@ -1836,8 +1822,7 @@ zamanla veritabanını şişiriyor. Bunun için Clear option eklentisini
 yükleyip arada bir bu rss alanlarını silmek gerekiyor. Benden şimdilik
 bu kadar&lt;/p&gt;</summary><category term="göçtük"></category><category term="sitem"></category><category term="veritabanı"></category></entry><entry><title>xslt ipucu: boşluk karakteri kullanımı</title><link href="http://www.fatihhayrioglu.com/xslt-ipucu-bosluk-karakteri-kullanimi/" rel="alternate"></link><updated>2008-11-26T17:56:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-11-26:xslt-ipucu-bosluk-karakteri-kullanimi/</id><summary type="html">&lt;p&gt;XSLT'de   gibi boşluk karakteri verdiğimizde hata veriyor. Bunun bir
 çözümü olmalı diye bir çok kere aradım buldum, sonra yine lazım oldu
-yine aradım buldum ve en iyisi buraya yazmak diye düşündüm. [sourcecode
-language='xslt']&lt;xsl:text disable-output-escaping="yes"&gt;&amp;nbsp;&lt;/xsl:text&gt;
+yine aradım buldum ve en iyisi buraya yazmak diye düşündüm. [sourcecode language='xslt']&lt;xsl:text disable-output-escaping="yes"&gt;&amp;nbsp;&lt;/xsl:text&gt;
 Kaynak:
 &lt;a href="http://stackoverflow.com/questions/31870/using-a-html-entity-in-xslt-eg-nbsp"&gt;http://stackoverflow.com/questions/31870/using-a-html-entity-in-xslt-eg-nbsp&lt;/a&gt;&lt;/p&gt;</summary><category term="boşluk"></category><category term="karakter"></category><category term="xml"></category><category term="xslt"></category></entry><entry><title>Hacklendik</title><link href="http://www.fatihhayrioglu.com/hacklendik/" rel="alternate"></link><updated>2008-11-18T22:15:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-11-18:hacklendik/</id><summary type="html">&lt;p&gt;Bu gün siteme girmeye çalışan Firefox ve Google üzerinden girmeye
 çalışanların karşılaştığı bir sorun sitem zararlı içerik olduğu için
@@ -1903,8 +1888,7 @@ kaldırada biliriz.&lt;/p&gt;
 &lt;p&gt;[sourcecode language='html']&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.sho.com/site/dexter/"&gt;&lt;span class="dis"&gt;&lt;span class="ic"&gt;&lt;span class="bilgi"&gt;Dexter&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[&lt;span class="dis"&gt;&lt;span class="ic"&gt;&lt;span class="bilgi"&gt;HTML
-    4&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;][]&lt;/li&gt;
+&lt;li&gt;[&lt;span class="dis"&gt;&lt;span class="ic"&gt;&lt;span class="bilgi"&gt;HTML     4&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;][]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;CSS kodunu kademe kademe açıklayarak yazarsak;&lt;/p&gt;
 &lt;p&gt;Burada resmimizi ul elemanı ardalan resmi olarak atadık. Bu teknikde
@@ -1976,10 +1960,7 @@ avantaj sağlar.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.frederikvig.com/temp.html" title="http://www.frederikvig.com/temp.html"&gt;http://www.frederikvig.com/temp.html&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menu/old_master.html" title="http://www.cssplay.co.uk/menu/old_master.html"&gt;http://www.cssplay.co.uk/menu/old_master.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;p&gt;[&lt;span class="dis"&gt;&lt;span class="ic"&gt;&lt;span class="bilgi"&gt;HTML
-  4&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;]: http://www.w3.org/TR/REC-html40/&lt;/p&gt;</summary><category term="flickr"></category><category term="fotoğraf"></category><category term="imagemap"></category><category term="resim-haritaları"></category></entry><entry><title>Sitemi temizleme ve hızlandırma çalışmalarım</title><link href="http://www.fatihhayrioglu.com/sitemi-temizleme-ve-hizlandirma-calismalarim/" rel="alternate"></link><updated>2008-10-16T09:19:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-10-16:sitemi-temizleme-ve-hizlandirma-calismalarim/</id><summary type="html">&lt;p&gt;Siteyi yeniledikten sonra daha önce eğilmediğim bazı konulara eğilmeye
+&lt;/p&gt;</summary><category term="flickr"></category><category term="fotoğraf"></category><category term="imagemap"></category><category term="resim-haritaları"></category></entry><entry><title>Sitemi temizleme ve hızlandırma çalışmalarım</title><link href="http://www.fatihhayrioglu.com/sitemi-temizleme-ve-hizlandirma-calismalarim/" rel="alternate"></link><updated>2008-10-16T09:19:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-10-16:sitemi-temizleme-ve-hizlandirma-calismalarim/</id><summary type="html">&lt;p&gt;Siteyi yeniledikten sonra daha önce eğilmediğim bazı konulara eğilmeye
 başladım. Siteyi daha hızlı hale nasıl getirebilirim diye araştırdım.
 Tam olarak bir karar veremesem de cach ile ilgili bir eklenti kurmayı
 düşünüyordum. Muhammet Sevim’in önerisi üzerine &lt;a href="http://wordpress.org/extend/plugins/wp-cache/"&gt;wp-Cache&lt;/a&gt; eklentisini
@@ -2921,8 +2902,7 @@ edeceğim bir tarayıcı niteliğinde olacak&lt;br /&gt;
     &lt;a href="http://www.smashingmagazine.com/2008/06/05/style-switchers-are-back-ideas-examples-and-a-contest/" title="web sitemi değiştir"&gt;Bağlantı&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;5 jQuery sorusu ve cevabı. &lt;a href="http://www.detacheddesigns.com/blog/blogSpecific.aspx?BlogId=74" title="jquery ?"&gt;Bağlantı&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hasan Köroğlu sitemde arama yaptığında aranan kriterin farklı renkte
-    gösterilmesi halinde daha iyi olacağını söyledi bende [search
-    hilite][] eklentisi ile bunu hallettim. Öneri için teşekkürler Hasan&lt;/li&gt;
+    gösterilmesi halinde daha iyi olacağını söyledi bende [search     hilite][] eklentisi ile bunu hallettim. Öneri için teşekkürler Hasan&lt;/li&gt;
 &lt;li&gt;Asp.net'de ajax kullanımı hakkında 46 makale. &lt;a href="http://asp.net/learn/ajax-control-toolkit/" title="asp.net - ajax"&gt;Bağlantı&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;jQuery ile akordiyon menü yapımını makalesi. &lt;a href="http://roshanbh.com.np/2008/06/accordion-menu-using-jquery.html" title="akordiyon menü"&gt;Bağlantı&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;25 adet anlatımlı ajax uygulaması. RSS okuyucusundan, sohbet
@@ -2959,8 +2939,7 @@ edeceğim bir tarayıcı niteliğinde olacak&lt;br /&gt;
 &lt;/p&gt;</summary><category term="Ajax"></category><category term="ASP.NET"></category><category term="css düzeltmeleri"></category><category term="günlük"></category><category term="İnternet Tarayıcısı"></category><category term="jquery"></category><category term="klavye olayları"></category><category term="mootools"></category><category term="sql server"></category><category term="WordPress"></category></entry><entry><title>Siteye Yorum Sayfalama Eklentisi (WordPress Paged Comments) Ekledim</title><link href="http://www.fatihhayrioglu.com/siteye-yorum-sayfalama-eklentisi-wordpress-paged-comments-ekledim/" rel="alternate"></link><updated>2008-06-02T15:13:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-06-02:siteye-yorum-sayfalama-eklentisi-wordpress-paged-comments-ekledim/</id><summary type="html">&lt;p&gt;Daha önce bir kaç kere aklıma geldi ama yapamadığım bir işti. En son bir
 iki istek gelince bu yönde kurmaya karaverdim. Aslında ben buraya
 eklentinin nasıl ekleneceğini yazmayacağım. Bir kaç ipucu ekledim onları
-yazacağım. &lt;a href="http://www.srro.net/paged-comments-yorum-sayfalama-eklentisi-turkce/"&gt;Sırrı Özden&lt;/a&gt;'in Türkçeye çevirdiği eklentiyi ben &lt;a href="http://www.keyvan.net/code/paged-comments/"&gt;orjinal
-sitesinden&lt;/a&gt; yükledim. Görünümü değiştirmek için stil dosyama bir satır
+yazacağım. &lt;a href="http://www.srro.net/paged-comments-yorum-sayfalama-eklentisi-turkce/"&gt;Sırrı Özden&lt;/a&gt;'in Türkçeye çevirdiği eklentiyi ben &lt;a href="http://www.keyvan.net/code/paged-comments/"&gt;orjinal sitesinden&lt;/a&gt; yükledim. Görünümü değiştirmek için stil dosyama bir satır
 css kodu ekledim.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;p.comment-page-numbers a{&lt;/li&gt;
@@ -4826,8 +4805,7 @@ makale. [Link][7]
 &lt;/p&gt;</summary><category term="csharp"></category><category term="CSS"></category><category term="Dust-Me"></category><category term="Firefox"></category><category term="google"></category><category term="Haberler"></category><category term="jquery"></category><category term="web"></category><category term="WordPress"></category></entry><entry><title>Bana yazın kısmı tekrar yayında</title><link href="http://www.fatihhayrioglu.com/bana-yazin-kismi-tekrar-yayinda/" rel="alternate"></link><updated>2007-07-28T11:50:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-07-28:bana-yazin-kismi-tekrar-yayinda/</id><summary type="html">&lt;p&gt;Şimdiki sunucuya taşınmadan önce ve wordpress'in yeni versiyonunu
 kurmadan önce Bana Ulaşın sayfası vardı. Ancak yeni sunucu ve
 versiyondan sonra bir türlü bu eklentiyi çalıştıramadım. Şimdi yeni bir
-eklenti ile Bana Yazın sayfasını açtım. Eklenti ismi "&lt;a href="http://green-beast.com/blog/?page_id=136"&gt;Secure and
-Accessible PHP Contact Form v.2.0WP&lt;/a&gt;" eklentide gerek duymadığım
+eklenti ile Bana Yazın sayfasını açtım. Eklenti ismi "&lt;a href="http://green-beast.com/blog/?page_id=136"&gt;Secure and Accessible PHP Contact Form v.2.0WP&lt;/a&gt;" eklentide gerek duymadığım
 yerleri çıkardım ve biraz Türkçe'ye çevirdim. Konular ile alakalı
 yorumlarınızı konunun altına yazmaya devam edebiliriz. Ancak konular ile
 alakalı olmayan yorum, istek ve önerilerinizi buraya yazmanızı sizlerden
@@ -4858,10 +4836,7 @@ rica ediyorum.&lt;/p&gt;</summary><category term="Haberler"></category></entry><
     &lt;a href="http://services.immike.net/css-checker/" title="Link"&gt;Link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Javascript anlatan güze videolar. &lt;a href="http://101out.com/jss.php" title="javascript"&gt;Link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;p&gt;[Link Burdada 50 adet vermişler Link&lt;br /&gt;
- ]: http://mashable.com/2007/07/26/wordpress-admin-plugins/ "WordPress"&lt;/p&gt;</summary><category term="Ajax"></category><category term="CSS"></category><category term="Haberler"></category><category term="html"></category><category term="Javascript"></category><category term="web2.0"></category><category term="WordPress"></category></entry><entry><title>23 Temmuz 2007 Web'den Seçme Haberler</title><link href="http://www.fatihhayrioglu.com/23-temmuz-2007-webden-secme-haberler/" rel="alternate"></link><updated>2007-07-23T09:23:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-07-23:23-temmuz-2007-webden-secme-haberler/</id><summary type="html">&lt;ul&gt;
+&lt;/p&gt;</summary><category term="Ajax"></category><category term="CSS"></category><category term="Haberler"></category><category term="html"></category><category term="Javascript"></category><category term="web2.0"></category><category term="WordPress"></category></entry><entry><title>23 Temmuz 2007 Web'den Seçme Haberler</title><link href="http://www.fatihhayrioglu.com/23-temmuz-2007-webden-secme-haberler/" rel="alternate"></link><updated>2007-07-23T09:23:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-07-23:23-temmuz-2007-webden-secme-haberler/</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;CheeseTube.com üye olan kullanıcılarına web üzerinden çizim yapma ve
     bu çizimleri sitelerine ekleme olanağı sunan güzel bir web2.0
     uygulaması. &lt;a href="http://www.cheesetube.com" title="http://www.cheesetube.com"&gt;Link&lt;/a&gt;&lt;/li&gt;
@@ -5264,8 +5239,7 @@ kaçtane.&lt;/p&gt;
 &lt;li&gt;WordPress Blog&lt;/li&gt;
 &lt;li&gt;Google Araçları&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Ben teknolojiyi geriden takip eden biriyimdir. Ben pasımı &lt;a href="http://www.hasanyalcin.com"&gt;Hasan
-Yalçın&lt;/a&gt;'a veriyorum ve kendisine bu konuda çok güveniyorum açıkçası.&lt;/p&gt;
+&lt;p&gt;Ben teknolojiyi geriden takip eden biriyimdir. Ben pasımı &lt;a href="http://www.hasanyalcin.com"&gt;Hasan Yalçın&lt;/a&gt;'a veriyorum ve kendisine bu konuda çok güveniyorum açıkçası.&lt;/p&gt;
 &lt;/p&gt;</summary><category term="Haberler"></category></entry><entry><title>02 Nisan 2007 Web'den seçme haberler</title><link href="http://www.fatihhayrioglu.com/02-nisan-2007-webden-secme-haberler/" rel="alternate"></link><updated>2007-04-02T19:26:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-04-02:02-nisan-2007-webden-secme-haberler/</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Ara sıra linklere tıklayınca sayfalar açılmıyor. Bu soruna
     benderastlıyorum, sorun için herkesten özür diliyorum, çözmeye
@@ -6214,8 +6188,7 @@ tuşuna basın 3.resim programına gelip yapıştırın. Bu kadar. Sonra aynı
 &lt;li&gt;En güzel CSS derslerini bir araya toplamışlar. &lt;a href="http://www.cameronolthuis.com/2006/04/top-10-css-tutorials/"&gt;Link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Demo olarak hayatını sürdüren Google'un anında mesajlaşma programı
     Gtalk pratik kullanışı ve esnekliği ile dikkat çekiyor. İşte
-    onlardan biri Gtalk ekranınızı CSS ile değiştirmek için güzel [bir
-    makale][]&lt;/li&gt;
+    onlardan biri Gtalk ekranınızı CSS ile değiştirmek için güzel [bir     makale][]&lt;/li&gt;
 &lt;li&gt;CSS hakkında konularına göre ayrılmış bir çok &lt;a href="http://veerle.duoh.com/index.php/blog/links/"&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;</summary><category term="CSS"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>07 Kasım 2006 Web'den haberler</title><link href="http://www.fatihhayrioglu.com/07-kasim-2006-webden-haberler/" rel="alternate"></link><updated>2006-11-07T21:40:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-11-07:07-kasim-2006-webden-haberler/</id><summary type="html">&lt;ul&gt;
@@ -6242,8 +6215,7 @@ tuşuna basın 3.resim programına gelip yapıştırın. Bu kadar. Sonra aynı
     için &lt;a href="http://www.allpeers.com/"&gt;tıklayınız&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Word dokümanlarınızı ve E-postalarınızı internet üzerinden pdf
     çevirmek artık çok kolay ve ücretsiz. Yapmanız gereken Google Docs &amp;amp;
-    Spreadsheets Suite'i kullanmak. Bir google hesabınız varsa [bu
-    linkten][] siteye girip dosyanızı veya e-postanızı upload ettikten
+    Spreadsheets Suite'i kullanmak. Bir google hesabınız varsa [bu     linkten][] siteye girip dosyanızı veya e-postanızı upload ettikten
     sonra sol üstten File-Save as PDF.. seçeneğini tıklayıp pdf
     dosyanızı bilgisayarınıza indirebilirsiniz.&lt;/li&gt;
 &lt;li&gt;CSS ile hazırlanmış en iyi 10 resim galerisi kodu için
@@ -6371,8 +6343,7 @@ yeni işletim sistemini beklemeden IE 7 versiyonunu çıkardı. Bir çok yeni
 özelliği ve özellikle tam CSS(biraz eksik var ama olur o kadar) desteği
 ile gözümüze giriyor.
 &lt;a href="http://www.microsoft.com/windows/ie/default.mspx"&gt;http://www.microsoft.com/windows/ie/default.mspx&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Uzun zamandır üye olmayı ertelediğim Google Analytics'e üye oldum sonunda</title><link href="http://www.fatihhayrioglu.com/uzun-zamandir-uye-olmayi-erteledigim-google-analyticse-uye-oldum-sonunda/" rel="alternate"></link><updated>2006-10-12T06:19:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-12:uzun-zamandir-uye-olmayi-erteledigim-google-analyticse-uye-oldum-sonunda/</id><summary type="html">&lt;p&gt;Çoktandır üye olmak istiyordum ama nasip şimdiye imiş, açıkçası geç
-kaldığıma üzüldüm çok şeyler kaçırmışız. Ayrıntılı bilg için &lt;a href="http://www.bloglama.com/wp/?p=21"&gt;tıklayınız
-(tr)&lt;/a&gt;. Üye olmak için &lt;a href="http://google.com/analytics/"&gt;google.com/analytics/&lt;/a&gt; tıklayınız.&lt;/p&gt;</summary><category term="Google Analytics"></category><category term="web-siteleri"></category></entry><entry><title>Bilgisayar Terimleri Sözlüğü</title><link href="http://www.fatihhayrioglu.com/bilgisayar-terimleri-sozlugu/" rel="alternate"></link><updated>2006-10-03T12:28:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-03:bilgisayar-terimleri-sozlugu/</id><summary type="html">&lt;p&gt;&lt;a href="http://tdk.gov.tr/TR/BelgeGoster.aspx?F6E10F8892433CFFAAF6AA849816B2EF972ACAD7D1AFFDBF"&gt;Türk Dil Kurumu&lt;/a&gt;'nun yayınaladığı Bilgisayar Terimleri Sözlüğü çok
+kaldığıma üzüldüm çok şeyler kaçırmışız. Ayrıntılı bilg için &lt;a href="http://www.bloglama.com/wp/?p=21"&gt;tıklayınız (tr)&lt;/a&gt;. Üye olmak için &lt;a href="http://google.com/analytics/"&gt;google.com/analytics/&lt;/a&gt; tıklayınız.&lt;/p&gt;</summary><category term="Google Analytics"></category><category term="web-siteleri"></category></entry><entry><title>Bilgisayar Terimleri Sözlüğü</title><link href="http://www.fatihhayrioglu.com/bilgisayar-terimleri-sozlugu/" rel="alternate"></link><updated>2006-10-03T12:28:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-03:bilgisayar-terimleri-sozlugu/</id><summary type="html">&lt;p&gt;&lt;a href="http://tdk.gov.tr/TR/BelgeGoster.aspx?F6E10F8892433CFFAAF6AA849816B2EF972ACAD7D1AFFDBF"&gt;Türk Dil Kurumu&lt;/a&gt;'nun yayınaladığı Bilgisayar Terimleri Sözlüğü çok
 güzel. Bir çok yerde ingilizceleri kullanılan terimlerin Türkçelerini
 karşılıkları verilmiş. şžahsen bende bazen makale yazarken Türkçesini
 bulmakta zorlandığım kelimeler oluyor. Bu kaynak benim için güzel oldu&lt;/p&gt;</summary></entry><entry><title>İnternet tarayıcılarına saldırılar arttı</title><link href="http://www.fatihhayrioglu.com/internet-tarayicilarina-saldirilar-artti/" rel="alternate"></link><updated>2006-09-26T09:15:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-09-26:internet-tarayicilarina-saldirilar-artti/</id><summary type="html">&lt;p&gt;Symantec, 2006'nın ilk 6 ayında internet tarayıcılarına solucan
@@ -6400,20 +6371,17 @@ armudu olduğunu söyle bilrim.][]
 &lt;/div&gt;
 
 &lt;div class="ResimKapsul"&gt;
-![Havize Ablanın evi. Her ne kadar hastalıklarından şikayetçi olsa da
-hala kendi ihtiyaçlarını karşılayabiliyor.][]
+![Havize Ablanın evi. Her ne kadar hastalıklarından şikayetçi olsa da hala kendi ihtiyaçlarını karşılayabiliyor.][]
 
 &lt;/div&gt;
 
 &lt;div class="ResimKapsul"&gt;
-![Köy camisinin tarihi şadırvanı. şimdilerde yenisi yapılıyor belki süs
-olarak kalabilir. 100 küsür seneden daha eski.][]
+![Köy camisinin tarihi şadırvanı. şimdilerde yenisi yapılıyor belki süs olarak kalabilir. 100 küsür seneden daha eski.][]
 
 &lt;/div&gt;
 
 &lt;div class="ResimKapsul"&gt;
-![Memleketin heryeri bir güzel nereye baksan yeşillik, bir çiçek.
-Yeterki bakmasını ve görmesini bil.][]
+![Memleketin heryeri bir güzel nereye baksan yeşillik, bir çiçek. Yeterki bakmasını ve görmesini bil.][]
 
 &lt;/div&gt;
 
@@ -6423,8 +6391,7 @@ Yeterki bakmasını ve görmesini bil.][]
 &lt;/div&gt;
 
 &lt;div class="ResimKapsul"&gt;
-![Ahmet emiceye fotoğraf çekiyorum dedim. Oda kendini glavlıyor(çeki
-düzen veriyor). Elindeki sigarası bir yandan tüttürüyor.][]
+![Ahmet emiceye fotoğraf çekiyorum dedim. Oda kendini glavlıyor(çeki düzen veriyor). Elindeki sigarası bir yandan tüttürüyor.][]
 
 &lt;/div&gt;
 
@@ -6434,8 +6401,7 @@ düzen veriyor). Elindeki sigarası bir yandan tüttürüyor.][]
 &lt;/div&gt;
 
 &lt;div class="ResimKapsul"&gt;
-![Havize ablanın evine glemeden daha. Memleketin her yeri güzel ve çek
-beni diyor][]
+![Havize ablanın evine glemeden daha. Memleketin her yeri güzel ve çek beni diyor][]
 
 &lt;/div&gt;
 
@@ -6461,16 +6427,6 @@ Suyumuzun kayası][]
 &lt;p&gt;[Köksal Abilerin Evinden bir görünüm. Eski köy evleri ne güzel.
   Yanıdaki armut ağacı bu sefer yemek nasip olmadı ama çok leziiz bir
   armudu olduğunu söyle bilrim.]: /images/koy_01.jpg
-  [Havize Ablanın evi. Her ne kadar hastalıklarından şikayetçi olsa da
-  hala kendi ihtiyaçlarını karşılayabiliyor.]: /images/koy_02.jpg
-  [Köy camisinin tarihi şadırvanı. şimdilerde yenisi yapılıyor belki
-  süs olarak kalabilir. 100 küsür seneden daha eski.]: /images/koy_03.jpg
-  [Memleketin heryeri bir güzel nereye baksan yeşillik, bir çiçek.
-  Yeterki bakmasını ve görmesini bil.]: /images/koy_04.jpg
-  [Ahmet emiceye fotoğraf çekiyorum dedim. Oda kendini glavlıyor(çeki
-  düzen veriyor). Elindeki sigarası bir yandan tüttürüyor.]: /images/koy_06.jpg
-  [Havize ablanın evine glemeden daha. Memleketin her yeri güzel ve çek
-  beni diyor]: /images/koy_08.jpg
   [Bu aslında kocaman bir kaya parçasının bir kısmı. Bu kaya vakti
   zamanında heyelan sonucu yukarlardan kopup geliyor ve köyün ortasında
   duruyor. Konduğu yerde bir su çıkıyor ki su yaz kış soğuk akıyor.

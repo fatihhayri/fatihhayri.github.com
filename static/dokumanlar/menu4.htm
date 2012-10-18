@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9">
+<style>
+body{
+	margin:0;
+	padding:0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
+  
+li {
+	float: left;
+	position: relative;
+	width: 150px;
+	background-color:#CCCCCC;
+}
+
+li ul {
+	display: none;
+	position: absolute; 
+	top: 19px; /* yukseklik 15px + sonradan eklenecek paddingler 4px toplam 19px */ 
+	left: 0;
+}
+
+ul li a { 
+font: bold 11px/16px arial, helvetica, sans-serif;
+display: block;
+border-width: 1px;
+border-style: solid;
+border-color: #ccc #888 #555 #bbb;
+margin: 0;
+padding: 2px 3px;
+color: #000;
+background: #efefef;
+text-decoration: none;
+}
+
+ul li a:hover {
+color: #a00;
+background: #fff;
+}
+
+li:hover ul, li.over ul { 
+	display: block;
+}
+	
+</style>
+<script type="text/javascript">
+startList = function() {
+if (document.all&&document.getElementById) {
+navRoot = document.getElementById("menu");
+for (i=0; i<navRoot.childNodes.length; i++) {
+node = navRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+  }
+  node.onmouseout=function() {
+  this.className=this.className.replace(" over", "");
+   }
+   }
+  }
+ }
+}
+window.onload=startList;
+
+</script>
+</head>
+<body>
+<ul id="menu">
+<li><a href="#">Anasayfa</a></li>
+<li><a href="#">Haberler</a>
+<ul>
+<li><a href="#">Şirket Haberleri </a></li> 
+<li><a href="#">Yurt içi Haberleri </a></li>
+<li><a href="#">Yurt dışı Haberleri</a></li>
+</ul>
+</li> 
+<li><a href="#">Ürünler</a> 
+<ul> <li><a href="#">Tencere</a></li> 
+<li><a href="#">Tava</a></li> 
+<li><a href="#">Ütü</a></li> 
+<li><a href="#">Tost Makinesi </a></li> 
+<li><a href="#">El Süpürgesi </a></li> 
+</ul>
+</li> 
+</ul> 
+</body></html>

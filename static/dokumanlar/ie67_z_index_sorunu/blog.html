@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<h1>ie6/7'da postion:relative Uygulanmış Elemanlarda z-index Sorunu</h1>
+<p>Bu sorunla neredeyse 4-5 kere karşılaşmışımdır. En son yaptığım projede karşılaşınca yazmaya karar verdim.</p> 
+<p>Sorunu açıklamaya çalışayım; postion:relative uyguladığımız elemanların(li) içinde postion:absolute kullanarak eklediğimiz elemanlar sıralı elemanlarının altında kalıyor. </p>
+<p>Genelde bu durumla liste(li) elemanı içinde üzerine gelince açılan bir alan(menü) açtırmak istediğimizde karşılaşıyoruz.</p> 
+<p>Basit bir örnek ile durumu gösterelim.</p>
+
+[sourcecode language=css]
+.anaKatman {
+    position: relative;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.acilanBolum {
+    position:absolute;
+    left:0;
+    width: 150px;
+    border: 1px solid red;
+    background: gray;
+    z-index: 1000;
+}
+[/sourcecode]
+
+<p>HTML kısmı </p>
+
+[sourcecode language=html]
+<div class="anaKatman">
+    <div class="acilanBolum">
+        Curabitur dapibus lacus elit. Maecenas nec ligula ipsum. Vivamus accumsan sollicitudin augue, vel sollicitudin mi varius sed. Proin in erat sit amet dolor tincidunt scelerisque eget nec felis. Curabitur dapibus lacus elit. Maecenas nec ligula ipsum. 
+    </div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non diam sit amet erat facilisis ultrices id vel turpis. Etiam pulvinar arcu ac felis pretium mollis. Etiam augue orci, iaculis non mollis et, venenatis vel ipsum. 
+</div>
+
+<div class="anaKatman">
+	Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum. 
+</div>
+<div class="anaKatman">
+	Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum. 
+</div>
+[/sourcecode]
+<p>Örneği görmek için tıklayınız.</p>
+<p><img src="http://docs.google.com/File?id=dhctmbn6_3972h6zm4fm_b" alt="z-index hata" /></p>
+<p>Firefox'da yukarıdaki gibi sorunsuz görünüyor.</p>
+<p><img src="http://docs.google.com/File?id=dhctmbn6_398hb6k5ngw_b" alt="z-index hata" /></p>
+<p>Üstte kalmasını istediğimiz katmana(acilanBolum) <strong>z-index:1000</strong> değeri vermemize rağmen alttaki katmanın altında kalmaktadır İnternet explorer 6 ve 7 sürümlerinde. </p>
+<p>Çözüm için aşağıdan yukarı doğru artan z-index değerleri yazılmalıdır. Ben ardışık z-index değerleri atayarak yapıyorum bunu. Sırası ile z-index:1, z-index:2 ve z-index:3 değerlerini atıyorum aşağıdan yukarı doğru. Eğer araya bir eleman girme ihtimali varsa aralıklı verin değerleri 10, 20, 30 gibi.</p>
+<p>HTMl kodunu aşağıdaki gibi değiştirince sorun çözüldü.</p>
+[sourcecode language=html]
+<div class="anaKatman" style="z-index:3">
+<div class="acilanBolum">
+	Curabitur dapibus lacus elit. Maecenas nec ligula ipsum. Vivamus accumsan sollicitudin augue, vel sollicitudin mi varius sed. Proin in erat sit amet dolor tincidunt scelerisque eget nec felis. Curabitur dapibus lacus elit. Maecenas nec ligula ipsum. 
+</div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non diam sit amet erat facilisis ultrices id vel turpis. Etiam pulvinar arcu ac felis pretium mollis. Etiam augue orci, iaculis non mollis et, venenatis vel ipsum. 
+</div>
+
+<div class="anaKatman" style="z-index:2">
+Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum. 
+</div>
+<div class="anaKatman" style="z-index:1">
+Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum. 
+</div>
+[/sourcecode]
+<p>Örneği görmek için tıklayınız.</p>
+<p><img src="http://docs.google.com/File?id=dhctmbn6_399f9hf3mg7_b" alt="z-index hata" /></p>
+<h3>Kaynaklar</h3>
+<ul>
+<li><a href="http://www.wrox.com/WileyCDA/WroxTitle/productCd-0764576429.html" title="Beginning CSS: Cascading Style Sheets for Web Design">Beginning CSS: Cascading Style Sheets for Web Design</a></li>
+<li><a href="http://benhollis.net/experiments/ie7_tests/zindex.html" title="http://benhollis.net/experiments/ie7_tests/zindex.html">http://benhollis.net/experiments/ie7_tests/zindex.html</a>
+</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿/* undohtml.css */
+/* (CC) 2004 Tantek Celik. Tüm hakları saklıdır.             */
+/*   http://creativecommons.org/licenses/by/2.0                   */
+/* Bu stil dosyası Creative Commons Lisansıyla lisanslanmıştır. */
+
+/* Amaç: Genel (X)HTML browserların  başlangıç -default- stillemesinin bazılarını geri almak -sıfırlamak-.*/
+
+
+/* bağ -link- alt çizgileri hypertextleri daha az okunabilir yapma eğilimindedir,
+    çünkü alt çizgiler kelimelerin alt yarılarının şekillerini anlaşılmaz yapıyorlar.*/
+:link,:visited { text-decoration:none }
+
+/* ön tanımlı -default- liste işaretlerine gerek yok, çünkü listeler genellikle semantic yazım için kullanılırlar*/
+ul,ol { list-style:none }
+
+/* browserın öntanımlı, tutarsız başlık boyutlarından  kurtulalım*/
+/* ve tabii ki pre ve code için de */
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+
+/*  browserlar arasındaki öntanmlı, tutarsız ul, ol paddinglerini/marginlerini sıfırlamak*/
+/* öntanmlı olarak, başlıklardaki ne aralıklar ne de hizalamalar normal interline aralığı ile hiç uyuşmaz, öyleyse bundan kurtulalım. */ 
+/* Ayrıca pre, form, body, html, p, blockquote çevresindeki aralıkları sıfırlayalım */ 
+/* form elementleri acayip şekilde tutarsızdır ve CSS tam olarak formları düzenleyememektedir. */ 
+/*  bununla beraber onların margin ve paddinglerini de sıfırlayalım*/
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
+{ margin:0; padding:0 }
+
+/* bağlı -linked- resimlerin etrafındaki mavi border'ı düşünen iyi mi düşünmüş acaba.? */ 
+a img,:link img,:visited img { border:none }
+
+/* adreslerin italikliklerinin kaldırılması */
+address { font-style:normal }
+
+/* more varnish stripping as necessary... */

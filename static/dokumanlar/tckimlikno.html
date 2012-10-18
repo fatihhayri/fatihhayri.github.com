@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+<title>TC Kimlik Sorgulama</title>
+<script>
+
+function ge(a) { return document.getElementById(a); }
+
+function tckimlikkontorolu(tcno)
+{
+   var tckontrol,toplam;
+   tckontrol = tcno;
+   tcno = tcno.value;
+   toplam = Number(tcno.substring(0,1)) + Number(tcno.substring(1,2)) + Number(tcno.substring(2,3)) + Number(tcno.substring(3,4)) + Number(tcno.substring(4,5)) + Number(tcno.substring(5,6)) + Number(tcno.substring(6,7)) + Number(tcno.substring(7,8)) + Number(tcno.substring(8,9)) + Number(tcno.substring(9,10));
+   
+	strtoplam = String(toplam);
+	
+	onunbirlerbas = strtoplam.substring(strtoplam.length, strtoplam.length-1);
+
+	if(onunbirlerbas == tcno.substring(10,11))
+	{
+		alert("doğru");
+	}
+	else{
+		alert("yanlış");
+	}
+}
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <label for="tckimlikno"><strong>TC Kimlik No : </strong></label>
+  <input name="tckimlikno" type="text" id="tckimlikno" onblur="tckimlikkontorolu(this); " maxlength="11" />
+</form>
+<strong>Not:</strong> TC Kimlik no giriniz ve metin giriş alanı dışına tıklayınız.
+</body>
+</html>

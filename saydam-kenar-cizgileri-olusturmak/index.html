@@ -64,6 +64,8 @@
         <a href="saydam-kenar-cizgileri-olusturmak/" rel="bookmark"
            title="Permalink to Saydam Kenar Çizgileri Oluşturmak">Saydam Kenar Çizgileri Oluşturmak</a></h1>
       
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fatihhayri">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
     </header>
 
     <div class="entry-content">
@@ -87,13 +89,22 @@ benim orada gördüğüm bir uygulama idi.</p>
 <p><img alt="" src="https://lh5.googleusercontent.com/_SHFSSO6P4rp8S4nZY3vxCmgDN6E4T4s388AlMh0qsEPBkUtJTheYUlsBJ6scDYACwDYDlM7FOieyXgENGEmWzpUohoMOcsXmASOjoTHB5Jub4ojri0" /></p>
 <p>Benzer bir uygulamayı yapmak için kodları yazdım. Daha önce bahsettiğim
 <a href="http://www.fatihhayrioglu.com/css3-rgba-renk-tanimi/">rgba tanımı</a> ile bu iş çok basit olacaktı.</p>
-<div class="codehilite"><pre> <span class="nf">#popup</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span><span class="m">90px</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span><span class="m">40</span><span class="o">%</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span><span class="m">10px</span> <span class="k">solid</span>
+<div class="codehilite"><pre> <span class="nf">#popup</span><span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">90px</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">40</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">10px</span> <span class="k">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#FFFFFF</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">350px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">50px</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">z-index</span><span class="o">:</span> <span class="m">100</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>rgba(0,0,0, 0.5); text-align:center; font-size:24px;
-background-color:#FFFFFF; width:350px; padding:50px 0;
-border-radius:10px; z-index:100; } </p>
 <p>Ancak aşağıdaki gibi bir görüntü elde ettim.<br />
 <img alt="" src="https://lh4.googleusercontent.com/HG1aPLVyrPkO-QDocagwVvy3t2Ib1jSb8P8LG9TYrNOXo7QEQBayw6Bk8BlztGYU2Cd5CnBV7eYWR8GT0bXk-E6bAZ_Jh8OyzHGEbaOeQPSpO9yvYYs" /></p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/UYJWH/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -101,24 +112,32 @@ border-radius:10px; z-index:100; } </p>
 <p>Çözümü biraz araştırdım ancak pek bir şey bulamadım derken css-tricks’in
 çözümü bana ilaç gibi geldi. Çözüm <a href="http://www.fatihhayrioglu.com/css3-background-origin-ve-background-clip-ozellikleri/">background-clip özelliği</a> tanımı
 ile sağlanıyor.</p>
-<div class="codehilite"><pre> <span class="nf">#popup</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span><span class="m">90px</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span><span class="m">40</span><span class="o">%</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span><span class="m">10px</span> <span class="k">solid</span>
+<div class="codehilite"><pre><span class="nf">#popup</span><span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">90px</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">40</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">10px</span> <span class="k">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#FFFFFF</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">350px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">50px</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">z-index</span><span class="o">:</span> <span class="m">100</span><span class="p">;</span>
+    <span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span> <span class="k">padding</span><span class="p">;</span>
+    <span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span> <span class="k">padding</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span> <span class="k">padding</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>rgba(0,0,0, 0.5); text-align:center; font-size:24px;
-background-color:#FFFFFF; width:350px; padding:50px 0;
-border-radius:10px; z-index:100; -moz-background-clip: padding; /<em>
-Firefox 3.6 </em>/ -webkit-background-clip: padding; /<em> Safari 4? Chrome
-6? </em>/ background-clip: padding-box; /<em> Firefox 4, Safari 5, Opera 10,
-IE 9 </em>/ } </p>
 <p><img alt="" src="https://lh5.googleusercontent.com/A5kRKORp2QXmurGBD_WaoXQl_V0P6Fi3Ojm1JhB3cDVLfIvjTApd8K-VjxIbP8cQ-rQ47kPfj9gimC6IbudkTi7CITtaTGo4Lf2Fy4aybKvGmYXZBnU" /></p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/qjmyS/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <h3>Kaynak</h3>
 <ul>
-<li><a href="http://css-tricks.com/transparent-borders-with-background-clip/">http://css-tricks.com/transparent-borders-with-background-clip/</a></strong></li>
+<li><a href="http://css-tricks.com/transparent-borders-with-background-clip/">http://css-tricks.com/transparent-borders-with-background-clip/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

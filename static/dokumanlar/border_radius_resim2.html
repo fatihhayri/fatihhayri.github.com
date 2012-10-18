@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>css3</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function() {
+
+	$(".resimKapsulu").load(function() {
+		$(this).wrap(function(){
+			return '<span class="' + $(this).attr('class') + '" style="background:url(' + $(this).attr('src') + ') no-repeat center center; width: ' + $(this).width() + 'px; height: ' + $(this).height() + 'px;" />';
+		});
+		$(this).css("opacity","0");
+	});
+
+ });
+</script>
+<style>
+.resimKapsulu{border:2px solid #999; width:75px; height:75px; -webkit-border-radius:12px; -moz-border-radius:12px; border-radius:12px;}
+.resimKapsulu img{width:75px; height:75px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px;}
+</style>
+</head>
+<body>
+<div class="resimKapsulu" style="background: url(gudi.jpg) no-repeat center center; width: 75px; height: 75px;">
+	<img src="gudi.jpg" width="75" height="75" style="opacity: 0;" />
+</div>
+</body>
+</html>
