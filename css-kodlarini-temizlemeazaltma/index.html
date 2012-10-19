@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+        <title>CSS Kodlama Teknikleri ve CSS Kodlarını Azaltma Yöntemleri</title>
+        <meta charset="utf-8">
+        <meta http-equiv="PRAGMA" content="NO-CACHE">
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://feeds.feedburner.com/fatihhayri" type="application/atom+xml" rel="alternate" title="Fatih Hayrioğlu'nun not defteri Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <div id="searchBar" class="clearfix">
+            <section class="body">
+                <!-- SiteSearch Google -->
+                <form action="http://www.fatihhayrioglu.com/arama" id="cse-search-box">
+                  <div>
+                    <input type="hidden" name="cx" value="004780390133711217154:ljzeact7g-o" />
+                    <input type="hidden" name="cof" value="FORID:11" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="text" name="q" size="31" />
+                    <input type="submit" name="sa" value="Ara" />
+                  </div>
+                </form>
+                <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=tr"></script>
+                <!-- SiteSearch Google -->
+            </section>
+        </div>
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioğlu'nun not defteri</a> <strong>{ CSS, XHTML ve Javascript }</strong></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkımda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="css-kodlarini-temizlemeazaltma/" rel="bookmark"
+           title="Permalink to CSS Kodlama Teknikleri ve CSS Kodlarını Azaltma Yöntemleri">CSS Kodlama Teknikleri ve CSS Kodlarını Azaltma Yöntemleri</a></h1>
+      
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fatihhayri">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2006-08-26T00:00:00">
+                Sat 26 August 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href=".././category/css.html">CSS</a> kategorisi. </p>
+<p>etiketler: <a href=".././tag/css.html">CSS</a><a href=".././tag/kalitsallik.html">kalıtsallık</a><a href=".././tag/kisaltmalar.html">kısaltmalar</a><a href=".././tag/kod-azaltma.html">Kod Azaltma</a><a href=".././tag/torun-secicisi.html">Torun-Seçicisi</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>Yaptığımız siteleri kodlarken en az kodla ve en düzenli kodlamayı nasıl
+yaparızı araştırmalıyız. Bu konu çok önemli bir konudur burada bunun
+yöntemlerini anlatmaya çalışacağız. (X)HTML ve CSS kod azaltma bizlere
+bir çok avantaj sağlar. Az kodun anlamı hzılı erişimdir. Ayrıca az kod
+sitemizin bulundurulduğu sunuculara az yük ve az bantgenişliği kullanımı
+demektir. Bu bizleri ve sistem yöneticilerini sevindiren bir haberdir.
+Bu makale aynı zamanda CSS kodlama tekniklerini öğretecektir.
+<!--more--></p>
+<h3>1- Torun Seçicileri kullanmak</h3>
+<p>CSS kodlamada bize çok büyük yardımı olan Torun Seçicileri bir örnek
+vererek göstereceğiz. Bir web sayfasını bir bölümünü kodlmaka için iki
+yöntem göstereceğiz. Torun Seçicilerin kodlamadaki önemini daha iyi
+kavrayacağız.</p>
+<p>Genelde siteler üst kısım, sol kısım, içerik kısmı, sağ kısım ve alt
+kısım gibi belli genel parçalara ayrılır. Bu örneğimizde "solkolon" adı
+verilen bir katmanımızın(<div>) kodlamasını göreceğiz. Tüm sol bölümü
+içine alan bir kapsayıcı katmanımız ve içerik bölümü mevcuttur. İlk
+yöntemimiz bir çok sitede de kullanılan her elemente bir sınıf atması
+yaparak kodlama yöntemidir.</p>
+<p><strong>a - Sınıf Kullanımı</strong></p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<div id="solkolon">
+### Site Hakkında
+
+Site hakkındaki yazılar
+
+### Öneriiler
+
+-   [Arkadaşlar][]
+-   [Siteler][]
+
+</div>
+
+<p>Yukarıdaki kodlama bir çok web sitesinde kullanıla gelmiş bir yöntemdir.
+CSS'in gücünü ilk olarak keşfeden kodlamacılar her elemente bir sınıf
+tanımlaması yaparak kullanmayı tercih ede geldiler.</p>
+<p>Yukarıdaki kodlamada iki <strong>h3</strong> elementine
+"<span class="alternatifard">solkolonbaslik</span>" sınıfını tanımladık.
+Bu sınıfa verilen özellikler sadece bu iki <strong>h3</strong> elementine
+uygulanacaktır. Aynı işlem <strong>ul</strong> ve <strong>li</strong> elementleri içinde
+geçerlidir.</p>
+<p>Başlıklara serif fontu, turuncu rengi ve kenarlık ekleyelim ve
+listelerimizinde yanındaki işaretleri kaldıralım:</p>
+<div class="codehilite"><pre> <span class="nc">.solkolonbaslik</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span>
+</pre></div>
+
+
+<p>serif; color: #c63; border-bottom: 1px solid #ccc; } .solkolonlink {
+list-style-type: none; } .link { font-weight: bold; } </p>
+<p>Tanımladığımız özellikleri elementlere atadık, buradaki elementlerin
+kendine has tanımları vardır. Aynı yöntemi kullanrak tüm sayfamızı
+kodlayabilriz.</p>
+<p>Yazdığmız kod sorunsuz çalışıyor. Ancak bu kullanımda her element için
+bir sınıf tanımlaması gerekecektir. Bu belli bir zamandan sonra çok
+kullanışsız ve zor bir yöntem halini alacaktır. şžimdi ikinci yönteme
+göz atalım.</p>
+<p><strong>b- Doğal Seçiciler</strong></p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<div id="solkolon">
+### Site Hakkında
+
+Bu site benim hakkımdadır.
+
+### Fotoğraflarım
+
+-   [Eski][]
+-   [Yeni][]
+
+</div>
+
+<p>Görüldüğü gibi tüm sınıf atamaları kaldırılmıştır. Peki tüm sınıfları
+kaldırdıysak elementlere nasıl atama yapacağız? Elemetnleri tanımlarken</p>
+<h1>solkolon tanımımız içine giriyoruz. Her elemente stil atamak için</h1>
+<p>solkolon id'li elementini referans alıyoruz. Örneğin solkolon içindeki
+h3 elementinlerine (#solkolon h3) şeklinde özel tanımlamalar
+yapabiliyoruz. Bu yöntem ile kullandığımız kod sayısı azalacak ve
+kodlarımız daha anlaşılır hala gelecektir. Bu yöntem ile bir çok
+elemente sınıf tanımı yapmaktan kurtulacağız.</p>
+<p>Bu yöntemi sadece bir bölüme uyguladık(solkolon kısmına), ancak bu işi
+tüm sayfa ve site bazlı da yapabilriz. Örneğin icerikAlani, altKisim
+bölümlerine de uygulayabiliriz. Bu uygulama bize her bölümde farklı
+atamalar yapmamıza izin verir. Mesela <strong>#icerikAlani</strong> kısmında ki
+<strong>h3</strong> elementini kırmızı <strong>#altKisim</strong> bölümündeki h3 elementini mor
+yapabiliriz. Ayrıca tüm bölümlerdeki <strong>h3</strong>'lerede genel bir tanımlamada
+yapabilriiz.</p>
+<div class="codehilite"><pre> <span class="nt">h3</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span> <span class="o">/*</span> <span class="err">tüm</span> <span class="n">h3</span>
+</pre></div>
+
+
+<p>ler için atama*/ } #icerikAlani h3 { color: red; } #menuAlani h3 {
+color: orange; } </p>
+<p>Genel h3 elemetine serif font ailesi tanımlanmı, icerik alanındaki
+<strong>h3</strong> kırmızı, menu alanındaki <strong>h3</strong> kavuniçi olacaktır. Böylelikle
+bir çok kod ve sınıf tanımından kurutulmuş olduk.</p>
+<p>Bu kodlama metodu sadece kod azaltmaya değil ayrıca kodlarımızı daha
+okunaklı ve organize kullanmamızı sağlamaktadır. CSS tabanlı hazırlanmış
+büyük çaplı sitelerde bu metod bize çok büyük kazanımlar sağlayacaktır.</p>
+<p>Fazladan sınıf kullanmak yerine Torun Seçicileri kullanarak kod azaltma
+yöntemi bize çok büyük avantajlar sağlayacaktır.</p>
+<p>Örneğin SolKisim'daki linklerin rengini kırmızı yapmakl istesek.</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<div id="solkolon">
+### Site Hakkında
+
+Bu site benim hakkımdadır.
+
+### Fotoğraflarım
+
+-   [Eski][]
+-   [Yeni][]
+
+</div>
+
+<p>ve bu sınıf için css tanımı yapacak olursak.</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nd">:link</span><span class="nc">.kirmizilink</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<p>Bu kodumuz sorunsuz çalışacaktır. Ancak bu kodlama metodunda ileriye
+dönük bir sorunuzmu olacaktır. Bu linklerin rengini değiştirip siyah
+yapmak istedik. Rengi kolayca siyaha çevirebiliriz ancak verdiğimiz isim
+ile içerik çakışacaktır. Siyah renge kirmizi isim!</p>
+<p>Bunun yerine doğal seçicileri kullanrak bu işlemi yapsa idik durum
+farklı olacaktır.</p>
+<div class="codehilite"><pre> <span class="nf">#SolKisim</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<p>Bu tanımla bizim işimizi görecektir. Ayrıca bir değişiklik olduğunda
+sadece tanımı değiştirmemiz bize yetecektir. Bu metod bize kolay, temiz
+ve kullanışlı bir kodlama olanağı sağlamkatadır. Bunu uygulamarımızda
+kullandıkça daha iyi kavrayacağız.</p>
+<h3>2- Gereksiz <div> Kullanımından vazgeçilmesi</h3>
+<p>Sayfa kodlarken içeriklerimizi düzenlemek için bir çok <div> elementi
+kullanırız.</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<div id="menu">
+-   [Fotoğraflar][]
+-   [Dersler][]
+-   [Bize Ulaşın][]
+
+</div>
+
+<p>Yukarıdaki kodlmada da görüldüğü gibi bir liste ve bunu çevreleyen bir
+menu id'si verilmiş bir katman kullandık. Bu kullanımı tüm sitemizde
+kullandığımız düşünürsek bir çok kavrayıcı fazla katmanımız olacaktır.
+Eğer bu kod daki gibi katman bir blok level bir elementi kapsıyorsa
+katman kullanımına gerek yoktur. Bu katmanı kaldıra biliriz.</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
+<ul>
+<li><a href="../static/foto.html">Fotoğraflar</a></li>
+<li><a href="../static/ders.html">Dersler</a></li>
+<li><a href="../static/bize_ulasin.html">Bize Ulaşın</a></li>
+</ul>
+<p>Yukardaki gibi bir kodlama ile kavrayıcı katman kullanımı ile aynı
+işlemleri yapabiliriz buradaki <strong>ul</strong> elementi bir blok-level elementi
+olduğu için kavrayıcı katmana uyguladığımız bir çok özelliği(padding,
+margin, vd.) bu elemente de uygulayabilriz. Bu sayede bir çok kavrayıcı
+katmandan kurtuluruz.</p>
+<p>Burada şuna dikkat edilmelidir ki eğer bu kavrayıcı katman yerine
+kullanılan elementin içinde başka bir element yok ise bu yöntem
+uygulanır. İçinde <p>, <blockquote> veya <form> gibi elementler
+varsa bunları tanımlama yaptığımız kavrayıcı <strong>ul</strong> dışına çıkarmalıyız.</p>
+<h3>3- CSS'in kalıtsallık özelliğinden yararlanmak</h3>
+<p>CSS elementleri kalıtsal olan ve kalıtsal olmayan elementler diye
+ayırır. Biz kalıtsal elemnleri kullanarak bir çok fazla koddan
+kurtulabiliriz.</p>
+<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span> <span class="p">}</span>
+</pre></div>
+
+
+<p>td { font-family:Verdana, Arial, sans-serif } li { font-family:Verdana,
+Arial, sans-serif } dt { font-family:Verdana, Arial, sans-serif } dd {
+font-family:Verdana, Arial, sans-serif } </p>
+<p>Yukarıdaki şekilde bir çok element içinde font tanımı yapmak yerine
+<strong>body</strong> elementi içinde bir tek font tanımı ile bu kargaşaya son
+verebilriz. Bu site standartlarına uymayı kolaylaştıracak ve düzenleme
+kolaylığını sağlayacaktır.</p>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span>
+</pre></div>
+
+
+<p>sans-serif } </p>
+<h3>4- Uygun Benzer Stilleri Gruplamak</h3>
+<p>Bir çok özelliği aynı olan stil tanımlarında farklılıklar ayrılarak aynı
+bölümler gruplanarak kod azaltılabilir.</p>
+<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span><span class="m">120</span><span class="o">%</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>font-family:Verdana,sans-serif } h2 { font-size:110%; margin-bottom:0;
+font-family:Verdana,sans-serif } h3 { font-size:100%; margin-bottom:0;
+font-family:Verdana,sans-serif } h4 { font-size:100%; margin-bottom:0;
+font-family:Verdana,sans-serif } </p>
+<p>Bu kullanım yerine</p>
+<div class="codehilite"><pre> <span class="nt">h1</span><span class="o">,</span><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span><span class="o">,</span><span class="nt">h4</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>font-family:Verdana,sans-serif } h1 { font-size:120% } h2 {
+font-size:110% } h3,h4 { font-size:100% } </p>
+<h3>5- CSS Kısaltmalarını kullanmak</h3>
+<p>CSS bazı elementlerin tanımlasını yaparken kısaltmaları kullanmamıza
+izin verir, yani aynı etkiyi daha az kodla yapmamıza olanak sağlar.
+Ayrıntı için <a href="http://www.fatihhayrioglu.com/?p=6">CSS'de Kısaltmalar kısmına bir göz atın.</a></p>
+<h3>6- CSS kodunu katagorilere ayırmak</h3>
+<p><a href="http://www.fatihhayrioglu.com/?p=91">CSS'i Web Sayfalarına Eklemek</a> makalesinin 4. kısmında da
+bahsettiğimiz gibi, içeriği büyük olan sitelerde css kodunun parçalara
+ayrılması ve kullanılan sayfa CSS'inde hangi parçalar gerekli ise
+onların import edilmesi önerilir. Bu sayade kodun bir kısmında
+yaptığımız değişiklik için tüm css kodu incelenip değiştirilmesi
+gerekmez ve kod yönetimi kolaylaşır.</p>
+</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Yorumlar !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_url = "http://www.fatihhayrioglu.com/css-kodlarini-temizlemeazaltma/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>Sosyal</h2>
+                        <ul>
+                            <li><a href="http://feeds.feedburner.com/fatihhayri" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                <a href="http://getpelican.com/">Pelican</a> alt yapısı ve <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a> teması kullanılmıştır.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

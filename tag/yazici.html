@@ -64,7 +64,7 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././css-ipucu-18-optimizasyon-icin-css-medya-dosyalarini-birlestirmek/">CSS İpucu 18: Optimizasyon İçin CSS Medya Dosyalarını Birleştirmek</a></h1> 
+                    <h1 class="entry-title"><a href=".././optimizasyon-icin-css-medya-dosyalarini-birlestirmek/">CSS İpucu 18: Optimizasyon İçin CSS Medya Dosyalarını Birleştirmek</a></h1> 
                     <footer class="post-info">
         <abbr class="published" title="2009-02-16T15:36:00">
                 Mon 16 February 2009
@@ -89,19 +89,39 @@ dosyasının eklenmesi bu soruna neden oluyor. Bunun için en kolay ve
 basit yöntem css ve js dosyalarını birleştirmekten geçiyor.</p>
 <p><img alt="optimizedenonce" src="http://www.fatihhayrioglu.com/images/optimizedenonce-300x108.gif" title="optimizedenonce" /></p>
 <p>Genelde projelermizde css dosyalarımızı genel stil için ve yazıcı için
-olmak üzere ikiye ayırıyoruz. [sourcecode language='html']
-<link rel="stylesheet" href="static/style/iskelet.css" type="text/css" media="screen"></link>
-<link rel="stylesheet" href="static/style/yazici.css" type="text/css" media="print"></link>
- Normal ve çıktı almak için bunları bir css dosyasında
-birleştirerek HTTP istek sayısını azaltabiliriz. [sourcecode language='html']
-<link rel="stylesheet" href="static/style/iskelet.css" type="text/css"></link>
- gibi iskelet.css içeriğinin yapısı ise aşağıdaki gibi
-olacaktır.  :::css
-     /<em> all media </em>/ @media all {
-body { color:#666; font:13px arial, helvetica, sans-serif; padding:20px
-0 30px 0; } } @media print { body { color:#000; font:12px arial,
-helvetica, sans-serif; padding:0; } }  şeklinde yaparak css
-dosyalarımızı tek dosya içerisinde toplayabiliriz. Daha fazla sayıda css
+olmak üzere ikiye ayırıyoruz. <br />
+</p>
+<div class="codehilite"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;/style/iskelet.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media=</span><span class="s">&quot;screen&quot;</span><span class="nt">&gt;&lt;/link&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;/style/yazici.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media=</span><span class="s">&quot;print&quot;</span><span class="nt">&gt;&lt;/link&gt;</span>
+</pre></div>
+
+
+<p>Normal ve çıktı almak için bunları bir css dosyasında birleştirerek HTTP istek sayısını azaltabiliriz.</p>
+<div class="codehilite"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;/style/iskelet.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;&lt;/link&gt;</span>
+</pre></div>
+
+
+<p>gibi iskelet.css içeriğinin yapısı ise aşağıdaki gibi olacaktır.</p>
+<div class="codehilite"><pre><span class="c">/* all media */</span>
+<span class="k">@media</span> <span class="nt">all</span> <span class="p">{</span>
+    <span class="nt">body</span> <span class="p">{</span>
+        <span class="k">color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span>
+        <span class="k">font</span><span class="o">:</span><span class="m">13px</span> <span class="n">arial</span><span class="o">,</span> <span class="n">helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+        <span class="k">padding</span><span class="o">:</span><span class="m">20px</span> <span class="m">0</span> <span class="m">30px</span> <span class="m">0</span><span class="p">;</span> 
+        <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="nt">print</span> <span class="p">{</span>
+    <span class="nt">body</span> <span class="p">{</span> 
+        <span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+        <span class="k">font</span><span class="o">:</span><span class="m">12px</span> <span class="n">arial</span><span class="o">,</span> <span class="n">helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+        <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>şeklinde yaparak css dosyalarımızı tek dosya içerisinde toplayabiliriz. Daha fazla sayıda css
 dosyası kullanmamız durumunda ise sunucu veya istemci taraflı kod
 yardımı ile css veya js dosyalarımızı tek bir dosya gibi gösterebiliriz.
 Bu konuya burada girmeyeceğim. Konu ile alakalı çalışmaların linklerini
@@ -118,18 +138,13 @@ aşağıda veriyorum.</p>
 </li>
 <li><a href="http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml" title="http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml">http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml</a><br />
 </li>
-<li>
-<p><a href="http://yuiblog.com/blog/2006/11/28/performance-research-part-1/" title="http://yuiblog.com/blog/2006/11/28/performance-research-part-1/">http://yuiblog.com/blog/2006/11/28/performance-research-part-1/</a></p>
-</li>
-<li>
-<p><a href="http://www.sitepoint.com/blogs/2007/04/10/faster-page-loads-bundle-your-css-and-javascript/" title="http://www.sitepoint.com/blogs/2007/04/10/faster-page-loads-bundle-your-css-and-javascript/">http://www.sitepoint.com/blogs/2007/04/10/faster-page-loads-bundle-your-css-and-javascript/</a><br />
-</p>
+<li><a href="http://yuiblog.com/blog/2006/11/28/performance-research-part-1/" title="http://yuiblog.com/blog/2006/11/28/performance-research-part-1/">http://yuiblog.com/blog/2006/11/28/performance-research-part-1/</a></li>
+<li><a href="http://www.sitepoint.com/blogs/2007/04/10/faster-page-loads-bundle-your-css-and-javascript/" title="http://www.sitepoint.com/blogs/2007/04/10/faster-page-loads-bundle-your-css-and-javascript/">http://www.sitepoint.com/blogs/2007/04/10/faster-page-loads-bundle-your-css-and-javascript/</a><br />
 </li>
 <li><a href="http://www.jaisenmathai.com/blog/2008/02/27/speed-up-apache-how-i-went-from-f-to-a-in-yslow/" title="http://www.jaisenmathai.com/blog/2008/02/27/speed-up-apache-how-i-went-from-f-to-a-in-yslow/">http://www.jaisenmathai.com/blog/2008/02/27/speed-up-apache-how-i-went-from-f-to-a-in-yslow/</a><br />
 </li>
 <li><a href="http://www.cloudfour.com/77/easy-steps-to-speedup-your-wordpress-blog/" title="http://www.cloudfour.com/77/easy-steps-to-speedup-your-wordpress-blog/">http://www.cloudfour.com/77/easy-steps-to-speedup-your-wordpress-blog/</a></li>
-</ul>
-</p><p><a href=".././css-ipucu-18-optimizasyon-icin-css-medya-dosyalarini-birlestirmek/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././optimizasyon-icin-css-medya-dosyalarini-birlestirmek/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

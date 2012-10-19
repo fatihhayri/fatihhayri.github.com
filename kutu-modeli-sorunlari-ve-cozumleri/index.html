@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+        <title>CSS ile Kutu modeli, sorunları ve çözümleri</title>
+        <meta charset="utf-8">
+        <meta http-equiv="PRAGMA" content="NO-CACHE">
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://feeds.feedburner.com/fatihhayri" type="application/atom+xml" rel="alternate" title="Fatih Hayrioğlu'nun not defteri Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <div id="searchBar" class="clearfix">
+            <section class="body">
+                <!-- SiteSearch Google -->
+                <form action="http://www.fatihhayrioglu.com/arama" id="cse-search-box">
+                  <div>
+                    <input type="hidden" name="cx" value="004780390133711217154:ljzeact7g-o" />
+                    <input type="hidden" name="cof" value="FORID:11" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="text" name="q" size="31" />
+                    <input type="submit" name="sa" value="Ara" />
+                  </div>
+                </form>
+                <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=tr"></script>
+                <!-- SiteSearch Google -->
+            </section>
+        </div>
+        <header id="banner" class="body">
+                <h1><a href="../.">Fatih Hayrioğlu'nun not defteri</a> <strong>{ CSS, XHTML ve Javascript }</strong></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkımda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="kutu-modeli-sorunlari-ve-cozumleri/" rel="bookmark"
+           title="Permalink to CSS ile Kutu modeli, sorunları ve çözümleri">CSS ile Kutu modeli, sorunları ve çözümleri</a></h1>
+      
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fatihhayri">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
+        <abbr class="published" title="2006-04-26T00:37:00">
+                Wed 26 April 2006
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href=".././category/css-web-standartlari-xhtml.html">CSS, Web Standartları, XHTML</a> kategorisi. </p>
+<p>etiketler: <a href=".././tag/border.html">Border</a><a href=".././tag/box-model.html">Box-Model</a><a href=".././tag/css.html">CSS</a><a href=".././tag/duzeltme.html">düzeltme</a><a href=".././tag/fix.html">fix</a><a href=".././tag/kenar-cizgisi.html">kenar-çizgisi</a><a href=".././tag/kenar-dis-boslugu.html">kenar-dış-boşluğu</a><a href=".././tag/kenar-ic-boslugu.html">kenar-iç-boşluğu</a><a href=".././tag/kutu-modeli.html">Kutu-Modeli</a><a href=".././tag/margin.html">Margin</a><a href=".././tag/padding.html">Padding</a><a href=".././tag/web-standartlari.html">Web Standartları</a><a href=".././tag/xhtml.html">XHTML</a></p>
+
+
+</footer><!-- /.post-info -->
+      <p>CSS'e geçişte en çok düşündüren konu niye CSS geçelim ve CSS'in
+avantajları nelerdir? CSS'in avantajı bize web sayfasındaki elemanlara
+daha fazla müdahele etme imkanı vermesidir. Burada bunun en güzel
+örneklerinden birini göreceğiz. CSS tüm HTML elementlerini bir
+dikdörtgen kutu içine konmuş varsayarak ona göre pozisyonları ve
+boyutlarını konrol eder. Bu elementler her zaman bir padding, margin,
+border ve içerik alanını içerir. <!--more-->Aşağıdaki şekle bir bakınız:</p>
+<p><img alt="" src="http://fatihhayrioglu.com/images/basit_boxmodel.gif" /></p>
+<p>Margin'ler her zaman transparandır. Border'lar üç şekilde( solid, dashed
+ve dotted) olabilir. Background sadece border içerisine uygulanabilir,
+yani padding ve içerik alanı kısmını içerir.</p>
+<p><img alt="" src="http://fatihhayrioglu.com/images/box_model.gif" /></p>
+<p>Bir elementin toplam genişliği; sol+sağ marginleri, sol+sağ
+padding'leri, sol+sağ border'ları ve elementin içeriğini kapsar.
+Margin'ler, padding'ler ve border'lar opsiyonel elementlerdir fakat
+başlangıçta bunların değerleri '0' olarak belirlenmiştir. Yükseklik
+içinde durum aynıdır. üst-alt margin değerleri, üst-alt padding
+değerleri, üst-alt border değerleri ve içerik alanı yükseliği toplamı
+<acronym title="height">yükseklik</acronym> değerini oluşturur. Box
+modeli iki elementi bulunur. Blok-level elementler ve inline-level
+elementler. <strong>Blok-level elementler :</strong> Blok-level elementin görünüş
+formatı bir kutu gibidir. Blok-level elementler inline elementleri ve
+diğer blok-level elementleri içerebilir. Tipik özellikleri yeni bir
+satır başlangıcı yapmalarıdır. Örnek: h6, p, li vd. <strong>Inline-level
+Elementler :</strong> Inline elementler bir içerik gibi görünür, diğer bir
+inline elelementi veye bir metni içere bilir. Genelde yeni satır veya
+boşluk oluşturmazlar. Örnek: a, strong, span vd. Tüm kutu modelleri
+aşağıdaki bölümleri içerir: <strong>İçerik Alanı:</strong> Elementin asıl içeriğini
+oluşturan kısmıdır. Metin ve nesneler içerir. <strong>Padding :</strong> Elementin
+kenarındaki dolgu alanıdır. <strong>Border :</strong> Elementin kenarlıklarıdır.
+<strong>Margin:</strong> Elementin kenar boşluklarıdır.</p>
+<h6>Box Model Sorunu ve Çözümü</h6>
+<p>W3C'ye göre genişlik(ve yükseklik) değeri içerik alanı değeridir.
+padding ve border değerleri buna ek olarak toplam kutu genişliğine
+eklenir. Eğer toplam kutu değeri eklenecekse içerik alanı ve etrafındaki
+padding ve border değerleri toplamıdır. Buraya kadar çok güzel ancak tüm
+web tarayıcıları bu durumu aynı şekilde yorumlamaz. IE'un IE6/strict'den
+önceki versiyonları yukarıda anlattığımız standart yorumun dışına çıkar,
+genişlik veya yükseklik değeri tüm kutu model element değerini ifade
+eder. Yani tüm padding ve border değerlerini içerir kalan kısmıda içerik
+alanı değeri olarak belirlenir.     :::css
+     #icerik{
+width:200px; padding:10px; border:5px solid #000; } 
+Standart web tarayıcıları bu durumu şöyle yorumlayacaklardır. 200px +
+10px sol kenar iç boşluğu + 5px sol kenar çizgisi + 10px sağ kenar iç
+boşluğu + 5px sağ kenar çizgisi = 230px toplam genişlik kutu elemetinin
+genişliği 230px olacaktır. Ancak
+<acronym title="İnternet Explorer">IE</acronym>'un IE6/strict'den önceki
+versiyonlar için kutu elementinin genişlik değeri 200px'dir.
+Margin(Kenar dış boşluğu) değeri width değerini direk etkilemese de
+dolaylı olarak etkiler. Kutular arasındaki genişliği hesaplarken margin
+değerlerinide dikkate almalıyız. CSS ile sayfa yapıların oluştururken
+kenar dış boğluklarını(margin) da dikkate elmalıyız. Bu sorunun çözümü
+için üretilmiş bir çok yöntem vardır. Ancak bence en sağlamı
+<a href="http://www.tantek.com/CSS/Examples/boxmodelhack.html">tantek</a>'in ürettiği koddur ve burada bundan bahsedeceğim.    :::css
+     #icerik{ width:230px; padding:10px; border:5px solid</p>
+<h1>000; /<em> Bundan sonraki kısmı ie5win sakla </em>/ voice-family:</h1>
+<p>""}""; voice-family:inherit; width:200px; }  Burdaki
+ilk genişilk değeri(2. satırdaki) IE'un IE6/strict'den önceki
+versiyonların yorumlayacağı genişlik değeri, ikinci genişlik değeri(7.
+satırdaki) ise standart yorumu destekleyen web tarayıcılarının
+kullanacağı değerdir. Bu kodlamada son olarak Opera 5 için bir kod
+ekleyeceğiz.    :::css
+     #icerik{ width:230px;
+padding:10px; border:5px solid #000; /<em> Bundan sonraki kısmı ie5win
+sakla </em>/ voice-family: ""}""; voice-family:inherit; width:200px; }
+html&gt;body #icerik { width:200px; }  Not: Aynı şeyler
+yükseklik(height) içinde geçerlidir.</p>
+<h6>Kaynaklar</h6>
+<ul>
+<li><a href="http://tantek.com/CSS/Examples/boxmodelhack.html">http://tantek.com/CSS/Examples/boxmodelhack.html</a></li>
+<li><a href="http://css-discuss.incutio.com/?page=BoxModelHack">http://css-discuss.incutio.com/?page=BoxModelHack</a></li>
+<li><a href="http://www.createwebmagic.com/css101/lesson2/?inc=part3">http://www.createwebmagic.com/css101/lesson2/?inc=part3</a></li>
+<li><a href="http://www.amazon.com/gp/product/0764579851/ref=sr_11_1/103-3062475-1085468?%5Fencoding=UTF8">CSS Hacks and Filters : Making Cascading Stylesheets Work</a></li>
+</ul>
+</p>
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Yorumlar !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_url = "http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://fatihhayri.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>Sosyal</h2>
+                        <ul>
+                            <li><a href="http://feeds.feedburner.com/fatihhayri" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                <a href="http://getpelican.com/">Pelican</a> alt yapısı ve <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a> teması kullanılmıştır.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

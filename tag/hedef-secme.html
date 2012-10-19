@@ -85,62 +85,81 @@ yapmak için javascript ile yapıyorduk. CSS3’ün bizlere kazandırdığı
 birçok yenilikte olduğu gibi bu özellikte basit bir şekilde
 sayfalarımıza güzel etkiler kazandırır. :target sözde sınıfı :hover
 seçicisi gibi dinamik bir seçicidir.</p>
-<div class="codehilite"><pre> <span class="nt">h3</span><span class="nd">:target</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff0</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">h3</span><span class="nd">:target</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#ff0</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<div class="tarayiciuyum">
-**Browser Uyumu:**  
-Internet Explorer 9+ ;  
-Firefox 1+ ;  
-Safari 3.1+ ;  
-Opera 9.5+;  
-Chrome 2+
-
-</div>
-
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong><br />
+Internet Explorer 9+ ;<br />
+Firefox 1+ ;<br />
+Safari 3.1+ ;<br />
+Opera 9.5+;<br />
+Chrome 2+</p>
 <p>Sayfa içi bağlantıları nasıl yaptığımı hatırlayalım.</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>Hedef Trabzon<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nt">body</span> <span class="p">{</span>
+ <span class="k">width</span><span class="o">:</span><span class="m">550px</span><span class="p">;</span>
+ <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+ <span class="k">font</span><span class="o">:</span><span class="m">14px</span><span class="o">/</span><span class="m">1.5em</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+ <span class="k">border-color</span><span class="o">:</span><span class="m">#C03</span><span class="p">;</span>
+ <span class="k">border-style</span><span class="o">:</span><span class="k">solid</span><span class="p">;</span>
+ <span class="k">border-width</span><span class="o">:</span><span class="m">20px</span> <span class="m">5px</span> <span class="m">50px</span> <span class="m">5px</span><span class="p">;</span>
+ <span class="k">padding</span><span class="o">:</span><span class="m">20px</span>
+<span class="p">}</span>
+<span class="nt">div</span> <span class="p">{</span>
+ <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#06F</span><span class="p">;</span>
+ <span class="k">margin-bottom</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+ <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+ <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nd">:target</span> <span class="p">{</span>
+ <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="m">#9c9c9c</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="m">#9c9c9c</span><span class="p">;</span>
+ <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="m">#9c9c9c</span><span class="p">;</span>
+ <span class="k">background-color</span><span class="o">:</span><span class="m">#D5E3FD</span><span class="p">;</span>
+ <span class="k">border-width</span><span class="o">:</span><span class="m">2px</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body</span> <span class="na">id=</span><span class="s">&quot;tepe&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h1&gt;</span>Trabzon<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#b1&quot;</span><span class="nt">&gt;</span>Coğrafya<span class="nt">&lt;/a&gt;</span> | <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#b2&quot;</span><span class="nt">&gt;</span>Nüfus<span class="nt">&lt;/a&gt;</span> | <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#b3&quot;</span><span class="nt">&gt;</span>Tarihçe<span class="nt">&lt;/a&gt;</span> | <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#b4&quot;</span><span class="nt">&gt;</span>Toplum ve Kültür<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Trabzon, Karadeniz Bölgesi&#39;nin Doğu Karadeniz bölümünde yer alan merkezii bir şehirdir....<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;b1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Coğrafya<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Dar bir sahil şeridinin ardında denize dikey uzanan dağlık bir araziye sahip olan ilin merkezi Boztepe (antik Minthrion tepesi) üzerine kurulmuştur. İl topraklarının % 22,4 yayla, % 77,6 si ise tepelerden oluşmaktadır. <span class="nt">&lt;strong&gt;</span>Dereler<span class="nt">&lt;/strong&gt;</span> Değirmendere (Piksidis), Yanbolu, Fol, Ağasar, İskefiye, Kalenima, Karadere (Araklı), Küçükdere, Koha, Sürmene (Manahos), Solaklı, Baltacı deresi, Sera Deresi...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#tepe&quot;</span><span class="nt">&gt;</span>yukarı<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;b2&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Nüfus<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Toplam nüfusu 765.127&#39;dur. Bu nüfusun yaklaşık %54&#39;ü şehir ve ilçe gibi merkezlerde,%46&#39;sı ise kırsal kesimlerde yani köylerde yaşamaktadır.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#tepe&quot;</span><span class="nt">&gt;</span>yukarı<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;b3&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Tarihçe<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;p&gt;</span> Eusebius&#39;a göre şehrin kuruluş tarihini MÖ 756 olmakla birlikte bu iddia Trabzon&#39;u İstanbul, Roma hatta, genel kanıya göre Trabzon ve diğer Doğu Karadeniz kolonizasyonunu gerçekleştiren Sinop&#39;tan daha eski bir kent yapmaktadır...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#tepe&quot;</span><span class="nt">&gt;</span>yukarı<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;b4&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Toplum ve Kültür<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Halk<span class="nt">&lt;/strong&gt;</span> Trabzon halkı adet , yaşam tarzı , gelenek ve görenek bakımından kendine ve yöreye özgü özellikler taşımaktadır...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#tepe&quot;</span><span class="nt">&gt;</span>yukarı<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Hedef Trabzon</title> <style> body { width:550px; margin:0
-auto; font:14px/1.5em Arial, Helvetica, sans-serif; border-color:#C03;
-border-style:solid; border-width:20px 5px 50px 5px; padding:20px } div {
-border:1px solid #06F; margin-bottom:15px; padding:10px;
-border-radius:15px; -moz-border-radius:15px; -webkit-border-radius:15px;
-} div:target { -moz-box-shadow: 0 0 10px #9c9c9c; -webkit-box-shadow: 0
-0 10px #9c9c9c; box-shadow: 0 0 10px #9c9c9c;
-background-color:#D5E3FD; border-width:2px } </style> </head>
-<body id="tepe"> <h1>Trabzon</h1> <p><a
-href="#b1">Coğrafya</a> | <a href="#b2">Nüfus</a> | <a
-href="#b3">Tarihçe</a> | <a href="#b4">Toplum ve
-Kültür</a></p> <p>Trabzon, Karadeniz Bölgesi'nin Doğu Karadeniz
-bölümünde yer alan merkezii bir şehirdir....</p> <div id="b1">
-<h3>Coğrafya</h3> <p>Dar bir sahil şeridinin ardında denize dikey
-uzanan dağlık bir araziye sahip olan ilin merkezi Boztepe (antik
-Minthrion tepesi) üzerine kurulmuştur. İl topraklarının % 22,4 yayla, %
-77,6 si ise tepelerden oluşmaktadır. <strong>Dereler</strong>
-Değirmendere (Piksidis), Yanbolu, Fol, Ağasar, İskefiye, Kalenima,
-Karadere (Araklı), Küçükdere, Koha, Sürmene (Manahos), Solaklı, Baltacı
-deresi, Sera Deresi...</p> <p><a href="#tepe">yukarı</a></p>
-</div> <div id="b2"> <h3>Nüfus</h3> <p>Toplam nüfusu
-765.127'dur. Bu nüfusun yaklaşık %54'ü şehir ve ilçe gibi
-merkezlerde,%46'sı ise kırsal kesimlerde yani köylerde
-yaşamaktadır.</p> <p><a href="#tepe">yukarı</a></p> </div>
-<div id="b3"> <h3>Tarihçe</h3> <p> Eusebius'a göre şehrin
-kuruluş tarihini MÖ 756 olmakla birlikte bu iddia Trabzon'u İstanbul,
-Roma hatta, genel kanıya göre Trabzon ve diğer Doğu Karadeniz
-kolonizasyonunu gerçekleştiren Sinop'tan daha eski bir kent
-yapmaktadır...</p> <p><a href="#tepe">yukarı</a></p> </div>
-<div id="b4"> <h3>Toplum ve Kültür</h3>
-<p><strong>Halk</strong> Trabzon halkı adet , yaşam tarzı ,
-gelenek ve görenek bakımından kendine ve yöreye özgü özellikler
-taşımaktadır...</p> <p><a href="#tepe">yukarı</a></p>
-</div> </body> </html> </p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/target_sozde_sinifi/target_sozde_sinif.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh6.googleusercontent.com/_cLb1J3SgGfIwlvlO8Dl0X-p4BJVhIEGpvnTDdfhcwVqz1kOSXWgvYq2qZkKg_5nD2gLoutyeF2qeg8xyhmIRuQK0mophK76F3yxAcSrXTY4kL8IEw" /></p>
 <p>Benzer yapının yatay kaydırma çubuğu ile olanını yapabiliriz</p>
@@ -160,7 +179,9 @@ tıkladığımızda ilgili dipnot ardalan rengi değiştirilerek
 belirginleştirilmiştir.</p>
 <p><img alt="" src="https://lh6.googleusercontent.com/0G2gsPGXTQ2SDAqEYXAMsVPpCRvSyTzkoR_Ubb-P2eq3zdhBo4ARPTD06UnDknSB3U2XEPJ443-fcloiH22zHNodmCLgBui2jGpJQZDJiw95lZWlpQ" /><br />
 </p>
-<div class="codehilite"><pre> <span class="nt">ol</span><span class="nc">.references</span> <span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span> <span class="nt">li</span><span class="nd">:target</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#def</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ol</span><span class="nc">.references</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="nd">:target</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#def</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -168,7 +189,9 @@ belirginleştirilmiştir.</p>
 <h3>Örnek 2: Basit Akordiyon</h3>
 <p><a href="http://kaioa.com/b/0903/target_faq_demo.html">http://kaioa.com/b/0903/target_faq_demo.html</a></p>
 <p><img alt="" src="https://lh6.googleusercontent.com/WxInkt_K1Za-AOK1mwFR6QdopkG_Jclf-0V7rM3rcGQI6BHXmerN7GNbKQOMN8UudczO0029sdlSjgc7UYXBpgye2ISmIWMgx9z5ERDMEp9mbMYIxw" /></p>
-<div class="codehilite"><pre> <span class="nf">#faq</span><span class="o">&gt;</span><span class="nt">li</span><span class="nd">:target</span><span class="o">&gt;</span><span class="nt">div</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nf">#faq</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="nd">:target</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -177,12 +200,18 @@ oluşturulabilir.</p>
 <h3>Örnek3: Galeri</h3>
 <p><a href="http://kaioa.com/b/0903/target_gallery_demo.html#i1">http://kaioa.com/b/0903/target_gallery_demo.html#i1</a></p>
 <p><img alt="" src="https://lh5.googleusercontent.com/JIw7mpQZ1vZlRkcjZijKVbCoe5SqXeq4TGx0pNrW0qSVOhmS3u-7xQacBlvxzWBf55OWlzYxf2B7k0u89CHVa2fFdlTL4F410blisNOAz9eF2LjNlw" /></p>
-<div class="codehilite"><pre> <span class="nt">dt</span><span class="nd">:target</span><span class="o">+</span><span class="nt">dd</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="p">}</span> <span class="nt">dt</span><span class="nd">:target</span> <span class="nt">img</span><span class="p">{</span> <span class="k">cursor</span><span class="o">:</span><span class="k">default</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">dt</span><span class="nd">:target</span><span class="o">+</span><span class="nt">dd</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+<span class="p">}</span>
+    <span class="nt">dt</span><span class="nd">:target</span> <span class="nt">img</span><span class="p">{</span>
+    <span class="k">cursor</span><span class="o">:</span><span class="k">default</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="o">:</span><span class="m">5px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span>
+    <span class="k">border-top</span><span class="o">:</span><span class="m">5px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="o">:</span><span class="m">401px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>border-bottom:5px solid #000; border-top:5px solid #000;
-margin-top:401px; } </p>
 <p>Örneğinde ise basit bir galeri yapısı kurulabilir.</p>
 <p>Zamanla çok daha güzel örneklerin çıkacağını düşünüyorum.</p>
 <h3>Kaynaklar</h3>
@@ -196,8 +225,7 @@ margin-top:401px; } </p>
 <li><a href="http://webdesignernotebook.com/css/the-css3-target-pseudo-class-and-css-animations/">http://webdesignernotebook.com/css/the-css3-target-pseudo-class-and-css-animations/</a></li>
 <li><a href="http://kaioa.com/node/93">http://kaioa.com/node/93</a></li>
 <li><a href="http://reference.sitepoint.com/css/pseudoclass-target">http://reference.sitepoint.com/css/pseudoclass-target</a></li>
-</ul>
-</p><p><a href=".././css3-target-secicisi/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././css3-target-secicisi/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

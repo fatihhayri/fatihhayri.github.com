@@ -64,7 +64,7 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././html-sayfalarina-100-genislikte-ve-100-yukseklikte-flash-dosyalari-eklemek/">HTML Sayfalarına %100 genişlikte ve %100 yükseklikte flash dosyaları eklemek</a></h1> 
+                    <h1 class="entry-title"><a href=".././html-sayfalarina-tam-genislikte-ve-tam-yukseklikte-swf-eklemek/">HTML Sayfalarına %100 genişlikte ve %100 yükseklikte flash dosyaları eklemek</a></h1> 
                     <footer class="post-info">
         <abbr class="published" title="2010-03-29T21:46:00">
                 Mon 29 March 2010
@@ -85,11 +85,10 @@ gibi. Daha öncede benzer sorular ile karşılaştım. Bende bir kaç projemde
 bu konuyu göz atmıştım.</p>
 <p>İki yöntem var aslında bunun için.</p>
 <h3>Birinci Yöntem</h3>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>} </p>
 <p>şeklinde bir kod. Ancak bu kod ne yazık ki Firefox ve Opera'da
 çalışmıyor. Yada çalışması için html sayfamızdan DOCTYPE'ı silmemiz
 gerekiyor. Bence bu pek mantıklı bir kullanım değil, o nedenle ben
@@ -98,12 +97,10 @@ ikinci yöntemi öneriyorum.</p>
 <p>swfobject.embedSWF("test.swf", "myContent", "100%", "100%", "9.0.0",
 "expressInstall.swf");</p>
 <p>Genişlik ve yüksekliğini 100% veriyoruz ve css kodumuzu yazıyoruz.</p>
-<div class="codehilite"><pre> <span class="c">/* hide from ie on mac */</span> <span class="nt">html</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="c">/* hide from ie on mac */</span> <span class="nt">html</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> <span class="p">}</span> <span class="nf">#myContent</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span> <span class="c">/* end hide */</span> <span class="nt">body</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#090</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>100%; overflow: hidden; } #myContent { height: 100%; } /<em> end hide </em>/
-body { height: 100%; margin: 0; padding: 0; background-color: #090; }</p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/tamekran_flash/tamekran.html">tıklayınız</a></p>
 <p>CSS kodumuz biraz daha fazla olan bu yöntem DOCTYPE kullanımı durumunda
 da çalıştığı için bence en kullanışlı yöntem. Geçen hafta anlattığım
@@ -123,8 +120,7 @@ için bir backgroun-color tanımı yapıyoruz. Bu kadar.</p>
 <ul>
 <li><a href="http://blog.deconcept.com/2005/01/02/100-height-and-100-width-xhtml-flash-embed/">http://blog.deconcept.com/2005/01/02/100-height-and-100-width-xhtml-flash-embed/</a></li>
 <li><a href="http://www.kirupa.com/developer/mx2004/fullscreen.htm">http://www.kirupa.com/developer/mx2004/fullscreen.htm</a></li>
-</ul>
-</p><p><a href=".././html-sayfalarina-100-genislikte-ve-100-yukseklikte-flash-dosyalari-eklemek/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././html-sayfalarina-tam-genislikte-ve-tam-yukseklikte-swf-eklemek/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
