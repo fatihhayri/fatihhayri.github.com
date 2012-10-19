@@ -90,20 +90,23 @@ karşılaştığı 'Float uygulanmış elementlerin kapsayamama sorunu' bugün
 xpur(Gökhan)'un bir sorusu üzerine bu yazıyı yazma gereği duydum.
 Kapsayamama sorunu yaşadığımız katman içinde eğer selectbox var ise
 Firefox 3'de bu selectbox tıklanabilir olmuyor. Açılmıyor yani Kodumuz
-aşağıdaki gibi [sourcecode language='css'] .kapsayamamaSorunu: after {
+aşağıdaki gibi  :::css
+     .kapsayamamaSorunu: after {
 content: "."; display: block; height: 0; clear: both; visibility:
 hidden; } .kapsayamamaSorunu {display: inline-block;} /<em>IE-mac de bu
 bolumu sakla  </em>/ * html .kapsayamamaSorunu {height: 1%;}
 .kapsayamamaSorunu {display: block;} /<em> IE-mac bu bolumu saklam artik
 </em>/  sorunu çözümü ise .kapsayamamaSorunu ile :after
-arasındaki boşluğu kapatmak .kapsayamamaSorunu:after [sourcecode language='css'] .kapsayamamaSorunu:after { content: "."; display: block;
+arasındaki boşluğu kapatmak .kapsayamamaSorunu:after    :::css
+     .kapsayamamaSorunu:after { content: "."; display: block;
 height: 0; clear: both; visibility: hidden; }  Küçük bir
 nokta olsa da zamanı gelince insanın çok zamanını alıyor.</p>
 <h3>2- Sorunun Kısayolu</h3>
 <p>Bu konuda hakkında bir başka ipucuda float'uygulanmış nesnelerde bu
 sorun ile çok fazla karşılaşıyoruz, ben eskiden her bir sorunlu eleman
 için bu kodu yazıyordum. Sonra bunu bir sınıfa atayıp gerekli yerlerde
-bu sınıfı kullanmanın daha avantajlı olacağını düşündüm. [sourcecode language='css'] .kapsayamamaSorunu:after {content: "."; display: block;
+bu sınıfı kullanmanın daha avantajlı olacağını düşündüm.    :::css
+     .kapsayamamaSorunu:after {content: "."; display: block;
 height: 0; clear: both; visibility: hidden;} .kapsayamamaSorunu
 {display: inline-block;} /<em>IE-mac de bu bolumu sakla  </em>/ * html
 .kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu {display: block;}

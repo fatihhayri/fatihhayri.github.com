@@ -18605,7 +18605,8 @@ olmak üzere ikiye ayırıyoruz. [sourcecode language='html']
 birleştirerek HTTP istek sayısını azaltabiliriz. [sourcecode language='html']
 &lt;link rel="stylesheet" href="/style/iskelet.css" type="text/css"&gt;&lt;/link&gt;
  gibi iskelet.css içeriğinin yapısı ise aşağıdaki gibi
-olacaktır. [sourcecode language='css'] /&lt;em&gt; all media &lt;/em&gt;/ @media all {
+olacaktır.  :::css
+     /&lt;em&gt; all media &lt;/em&gt;/ @media all {
 body { color:#666; font:13px arial, helvetica, sans-serif; padding:20px
 0 30px 0; } } @media print { body { color:#000; font:12px arial,
 helvetica, sans-serif; padding:0; } }  şeklinde yaparak css
@@ -18643,20 +18644,23 @@ karşılaştığı 'Float uygulanmış elementlerin kapsayamama sorunu' bugün
 xpur(Gökhan)'un bir sorusu üzerine bu yazıyı yazma gereği duydum.
 Kapsayamama sorunu yaşadığımız katman içinde eğer selectbox var ise
 Firefox 3'de bu selectbox tıklanabilir olmuyor. Açılmıyor yani Kodumuz
-aşağıdaki gibi [sourcecode language='css'] .kapsayamamaSorunu: after {
+aşağıdaki gibi  :::css
+     .kapsayamamaSorunu: after {
 content: "."; display: block; height: 0; clear: both; visibility:
 hidden; } .kapsayamamaSorunu {display: inline-block;} /&lt;em&gt;IE-mac de bu
 bolumu sakla  &lt;/em&gt;/ * html .kapsayamamaSorunu {height: 1%;}
 .kapsayamamaSorunu {display: block;} /&lt;em&gt; IE-mac bu bolumu saklam artik
 &lt;/em&gt;/  sorunu çözümü ise .kapsayamamaSorunu ile :after
-arasındaki boşluğu kapatmak .kapsayamamaSorunu:after [sourcecode language='css'] .kapsayamamaSorunu:after { content: "."; display: block;
+arasındaki boşluğu kapatmak .kapsayamamaSorunu:after    :::css
+     .kapsayamamaSorunu:after { content: "."; display: block;
 height: 0; clear: both; visibility: hidden; }  Küçük bir
 nokta olsa da zamanı gelince insanın çok zamanını alıyor.&lt;/p&gt;
 &lt;h3&gt;2- Sorunun Kısayolu&lt;/h3&gt;
 &lt;p&gt;Bu konuda hakkında bir başka ipucuda float'uygulanmış nesnelerde bu
 sorun ile çok fazla karşılaşıyoruz, ben eskiden her bir sorunlu eleman
 için bu kodu yazıyordum. Sonra bunu bir sınıfa atayıp gerekli yerlerde
-bu sınıfı kullanmanın daha avantajlı olacağını düşündüm. [sourcecode language='css'] .kapsayamamaSorunu:after {content: "."; display: block;
+bu sınıfı kullanmanın daha avantajlı olacağını düşündüm.    :::css
+     .kapsayamamaSorunu:after {content: "."; display: block;
 height: 0; clear: both; visibility: hidden;} .kapsayamamaSorunu
 {display: inline-block;} /&lt;em&gt;IE-mac de bu bolumu sakla  &lt;/em&gt;/ * html
 .kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu {display: block;}
@@ -19042,13 +19046,19 @@ fare üzerine geldiğinde resmin etrafını çizip bilgisini göstermek. Bu
 resimde üzerini çizdiğimiz ve bilgisini gösterdiğimiz elemanlarada(&lt;li
 class="dexter"&gt; ve &lt;li class="html"&gt;) mutlak konumlandırma ile
 tanımlayıp resmin üzerinde istediğimiz konuma yerleştiriyoruz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul#foto{ width: 500px; height: 331px;
-position: relative; background: url(images/dexter.jpg) no-repeat;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#foto&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;500px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;331px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;position: relative; background: url(images/dexter.jpg) no-repeat;
 margin: 0; padding: 0; list-style: none; } &lt;/p&gt;
 &lt;p&gt;Aşağıdaki kodda her bir haritalanacak nesne bir link olduğu için her
 birine tek tek atamaktansa genel bir tanım ile tüm linkleri mutlak
 konumlandırıyoruz ve kenar çizgisini tanımlıyoruz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul#foto a { position: absolute; color:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#foto&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h1&gt;000; text-decoration: none; border: 1px solid transparent; }&lt;/h1&gt;
 &lt;p&gt;Her bir haritalanacak eleman için genişlik yüksek tanımını yapıyor ve
 kapsayıcı elemana göre konumunu belirliyoruz. Ayrıca haritalanan
@@ -19059,8 +19069,11 @@ Flickr'daki gibi bilgi kutusunun köşelerini yuvarlamak için tanımlar
 yaptık. Firefox için -moz-border-radius: 3px; Safari ve Google Chrome
 için  -webkit-border-radius: 3px; tanımlarını yaptık. Internet Explorer
 kullanıcıları için şimdilik bir çözüm yok.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul#foto .dexter a { width: 110px; height:
-175px; top: 25px; left: 60px; } ul#foto .html a { width: 50px; height:
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#foto&lt;/span&gt; &lt;span class="nc"&gt;.dexter&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;110px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;175px; top: 25px; left: 60px; } ul#foto .html a { width: 50px; height:
 80px; top: 195px; left: 408px; } ul#foto a .bilgi { position: absolute;
 bottom: -25px; width: 100%; padding: 2px; background-color:#ffc;
 text-align: center; left: -30000px; font:11px Arial, Helvetica,
@@ -19073,20 +19086,29 @@ bir dis ve ic nesnesine haritaladığımız nesnelerin genişlik ve
 yükseklerinin 2px daha düşük değerlerini vererek üst üste binmelerini
 önledik ve görünümünü düzenlemiş olduk. Eğer istersek bu &lt;span&gt;
 etiketlerini kaldırabiliriz, daha sade bir görünüm olur.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul#foto a .dis, ul#foto a .ic { display:
-block; } ul#foto .dexter a .dis { width: 108px; height: 173px; }
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#foto&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="nc"&gt;.dis&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#foto&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="nc"&gt;.ic&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;block; } ul#foto .dexter a .dis { width: 108px; height: 173px; }
 ul#foto .html a .dis { width: 48px; height: 78px; } ul#foto .dexter a
 .ic { width: 106px; height: 171px; } ul#foto .html a .ic { width: 46px;
 height: 76px; } &lt;/p&gt;
 &lt;p&gt;Fare haritalanan alanların üzerine gelince çıkacak bilgilendirme
 alanının yerini belirliyoruz. - 3000px ile görüntüden çıkardığımız bilgi
 alanını görünür yapıp istediğimiz yere yerleştirdik.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']ul#foto a:hover .bilgi { left: 60px; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#foto&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nc"&gt;.bilgi&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;60px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Tüm resmin üzerine gelindiğinde ve haritalanan alanların üzerine
 gelindiğinde kenar çizgi renklerini değiştirerek farklı bir görünüm
 kazandırıyoruz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul#foto a:hover { border-color: #d4d82d; }
-ul#foto:hover a .dis, ul#foto a:hover .dis { border: 1px solid #000;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#foto&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;border-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#d4d82d&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ul#foto:hover a .dis, ul#foto a:hover .dis { border: 1px solid #000;
 } ul#foto:hover a .ic, ul#foto a:hover .ic { border: 1px solid #fff;
 } &lt;/p&gt;
 &lt;p&gt;Sonuçta görsel ve işlevsel olarak çok güzel bir uygulama elde ettik.
@@ -19121,8 +19143,11 @@ göstermek için koydum, normal resimde bu olmayacak)&lt;/p&gt;
 &lt;p&gt;Xhtml kodumuzu yazalım&lt;/p&gt;
 &lt;p&gt;&lt;a href="anasayfa.htm"&gt;sourcecode language='html'&lt;/a&gt;[]&lt;/p&gt;
 &lt;p&gt;CSS kodumuzu yazalım&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']a.anasayfayaDon { display: block; width:
-80px; height: 80px; background: url(images/degisen_resim.gif) 0 0
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;80px; height: 80px; background: url(images/degisen_resim.gif) 0 0
 no-repeat; text-decoration: none; text-indent:-999px; }
 a:hover.anasayfayaDon { background-position: -80px 0; }&lt;/p&gt;
 &lt;p&gt;Yöntemi daha önce anlattığımız gibi ardalan kaydırmaca yöntemidir.
@@ -19144,8 +19169,11 @@ halledeceğiz. Anlamlı kodlama açısından avantajlıdır.&lt;/p&gt;
 belirleriz&lt;/p&gt;
 &lt;p&gt;[sourcecode language="xhtml"]&lt;img alt="%45" src="/images/yuzde_cubugu.png" /&gt; &lt;/p&gt;
 &lt;p&gt;Sonrasında CSS kodumuzu yazarsak;&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']img.yuzdeCubugu { background:
-url(/images/yuzdeCubugu_ard.gif) top left no-repeat; padding: 0;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;img&lt;/span&gt;&lt;span class="nc"&gt;.yuzdeCubugu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;url(/images/yuzdeCubugu_ard.gif) top left no-repeat; padding: 0;
 margin: 0; } &lt;/p&gt;
 &lt;p&gt;Kod kısmı bu kadar. Evet bu kadar kod ile yüzde çubuğunu oluşturduk.
 Kodun mantığını incelersek;&lt;/p&gt;
@@ -19180,8 +19208,11 @@ kenar çizgilerinin olması.&lt;/p&gt;
 100 - 56 - 2 = -42px şeklinde hesaplanacak.&lt;/p&gt;
 &lt;p&gt;Aynı şekilde &lt;strong&gt;McCain&lt;/strong&gt;'in yüzdesini de hesaplarsak. 100 - 44 - = -54px&lt;/p&gt;
 &lt;p&gt;CSS kodumuz;&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1{ font:18px Arial, Helvetica, sans-serif;
-color:#666; } p{ font:bold 12px Arial, Helvetica, sans-serif;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;18px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;color:#666; } p{ font:bold 12px Arial, Helvetica, sans-serif;
 margin-bottom:5px; color:#666; } img.yuzde1 {
 background:url(gosteri1.gif) 0 0 no-repeat; padding: 0; margin: 0; }
 img.yuzde2 { background:url(gosteri2.gif) 0 0 no-repeat; padding: 0;
@@ -19222,13 +19253,19 @@ tarayıcılarında farklı görünmesini engellemek için tantek çelik
 tarafından oluşturulan bir hiledir.&lt;/p&gt;
 &lt;p&gt;Kutu genişliği tanımlanmışsa ve padding veya kenar çizgiside
 tanımladığımızda uygulanan bu yöntem için yazdığımız kod aşağıdadır&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']#icerik{ width:230px; padding:10px;
-margin:5px; /&lt;em&gt; Bundan sonraki kısmı ie5win sakla &lt;/em&gt;/ voice-family:
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#icerik&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;230px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;margin:5px; /&lt;em&gt; Bundan sonraki kısmı ie5win sakla &lt;/em&gt;/ voice-family:
 ""}""; voice-family:inherit; width:200px; } html&amp;gt;body #icerik {
 width:200px; }&lt;/p&gt;
 &lt;p&gt;Sorun olan kodumuza biz sadece&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']voice-family: ""}"";
-voice-family:inherit; width:200px; } html&amp;gt;body #icerik { width:200px;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;voice-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;voice-family:inherit; width:200px; } html&amp;gt;body #icerik { width:200px;
 } &lt;/p&gt;
 &lt;p&gt;Bölümünü uygulamamız yeterlidir. Daha sonra eğer genişlik ise genişliği
 yükseklik ise yüksekliği ayarlamamız gerekir. Daha sonra **html&amp;gt;body&lt;/p&gt;
@@ -19240,8 +19277,11 @@ dert olur. Alıştıktan sonra hemen uygular ve geçeriz.&lt;/p&gt;
 element içeriğine göre genişlememesidir.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="float sorunu" src="/images/clearfix_sorun.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Kodumuz;&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'].kapsul:after { content: "."; display: block;
-height: 0; clear: both; visibility: hidden; } .kapsul {display:
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.kapsul&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;height: 0; clear: both; visibility: hidden; } .kapsul {display:
 inline-block;} /&lt;em&gt; IE-mac de bu bolumu sakla  &lt;/em&gt;/ * html .kapsul
 {height: 1%;} .kapsul {display: block;} /&lt;em&gt; IE-mac bu bolumu saklam
 artik &lt;/em&gt;/ &lt;/p&gt;
@@ -19258,8 +19298,11 @@ diye tüm yorumlarımı bu şekilde yazarak bu sorundan kaçınmaya
 &lt;h3&gt;4. IE6'nın min-height Sorunu&lt;/h3&gt;
 &lt;p&gt;Son zamanlarda gelen işlerde çok rastlamam nedeni ile bu listeye son
 anda ilave ettim. IE6'nın desteklemediği min-height özelliği için&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']min-height:500px; height:auto !important;
-height:500px;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;min-height&lt;/span&gt;&lt;span class="nd"&gt;:500px&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;height&lt;/span&gt;&lt;span class="nd"&gt;:auto&lt;/span&gt; &lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nt"&gt;important&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;height:500px;&lt;/p&gt;
 &lt;p&gt;yazmamız yeterli.&lt;/p&gt;
 &lt;p&gt;Bunun dışında &lt;a href="http://www.fatihhayrioglu.com/css-dersleri" title="CSS Dersleri Sayfası"&gt;CSS Derslerindeki&lt;/a&gt; sayfasındaki CSS Problemleri ve
 Çözüm Önerileri kısmında birçok problem görünse de yukarıda saydıklarım
@@ -19341,8 +19384,11 @@ veriyor bize.&lt;/p&gt;
 &lt;p&gt;Mac ve Windows kullanıcıları için eklenen bu özelikle Linux için Firefox
 3.1 kararlı sürümü ile birlikte gelecekmiş.&lt;/p&gt;
 &lt;p&gt;Beni en çok sevindiren özelliği bu oldu açıkçası.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] @font-face { font-family: "Bitstream Vera
-Serif Bold"; src:
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="k"&gt;@font-face&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nt"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;Bitstream&lt;/span&gt; &lt;span class="nt"&gt;Vera&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Serif Bold"; src:
 url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
 } &lt;/p&gt;
 &lt;p&gt;[&lt;img alt="" src="http://www.fatihhayrioglu.com/wp-content/font_face-300x78.gif" title="font-face" /&gt;][]&lt;/p&gt;
@@ -21001,12 +21047,14 @@ sayması için yukarıdaki kodu&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;bu kod ile değiştirdim düzeldi.&lt;/p&gt;
 &lt;/p&gt;</summary><category term="Paged Comments"></category><category term="sitemi düzenliyorum"></category><category term="yorum"></category></entry><entry><title>CSS İpucu 16: Evrensel seçicilerde yazıtipi kısaltması kullanımında sorun</title><link href="http://www.fatihhayrioglu.com/css-ipucu-16-evrensel-secicilerde-yazitipi-kisaltmasi-kullaniminda-sorun/" rel="alternate"></link><updated>2008-05-30T16:15:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-05-30:css-ipucu-16-evrensel-secicilerde-yazitipi-kisaltmasi-kullaniminda-sorun/</id><summary type="html">&lt;p&gt;Evrensel seçicisi olan olan * ile yaptığımız font tanımları sorun
-çıkarıyor. Örneğin [sourcecode language='css'] * { font:10px/1.5em
+çıkarıyor. Örneğin  :::css
+     * { font:10px/1.5em
 Verdana, Arial, Helvetica, sans-serif; }  Tanımını
 yaptığımızda sayfalarımızda tanımladığımız &lt;strong&gt; ile
 kalınlaştırdığımız metinler normal görünüyor. Bunun sebebi yukarıda
 yaptığımız tanım. Bunu yerine tek tek tanım yaparsak sorun kalmıyor.
-[sourcecode language='css'] *{ font-family: Verdana, Arial, Helvetica,
+    :::css
+     *{ font-family: Verdana, Arial, Helvetica,
 sans-serif; font-size:10px; line-height:1.5em; } &lt;/p&gt;</summary><category term="CSS"></category><category term="Evrensel-Seçiciler"></category><category term="tüm-elemanlar"></category></entry><entry><title>Adobe Macromedia Dreamweaver CS4 Beta</title><link href="http://www.fatihhayrioglu.com/adobe-macromedia-dreamweaver-cs4-beta/" rel="alternate"></link><updated>2008-05-28T17:32:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-05-28:adobe-macromedia-dreamweaver-cs4-beta/</id><summary type="html">&lt;p&gt;Adobe Macromedia Dreamweaver CS4 Betası çıktı yeni özellikleri ile
 birlikte. Aslında birçok web kodlayıcısının beklediği değişikliklerdi
 bunlar.&lt;/p&gt;
@@ -21360,8 +21408,11 @@ yazıyorum.&lt;/p&gt;
 &lt;p&gt;vertical-align:middle; CSS kodu bu kodun yerini alıyor ve doğrulamadan
 geçiyor. Bunun için bir CSS sınıfı oluşturup gerekli yerlerde bu sınıfı
 eklersek sorunumuz çözülüyor.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] .absmiddle { vertical-align:middle; }
- Küçük bir ipucu olarak akılda kalmasında yarar var.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.absmiddle&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;vertical-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;middle&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Küçük bir ipucu olarak akılda kalmasında yarar var.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.webmasterworld.com/forum21/4250.htm"&gt;http://www.webmasterworld.com/forum21/4250.htm&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://battleangel.org/2004/03/05/absmiddle-replacement/"&gt;http://battleangel.org/2004/03/05/absmiddle-replacement/&lt;/a&gt;&lt;/li&gt;
@@ -22875,16 +22926,22 @@ listeledik bu linklerdeki çözümleri incelemenizi tavsiye ederiz. Karşıma
     anlayamadım. Genel bir saldırı varmış bu aralar bizi de etkiledi
     sanırım. WordPress sürümünü yükseltmenin zamnı geldi sanırım.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;</summary><category term="Anlamlı web"></category><category term="css3.0"></category><category term="favicon"></category><category term="google"></category><category term="Haberler"></category><category term="Opera"></category><category term="seo"></category><category term="text-decoration"></category><category term="vs.net"></category><category term="WordPress"></category><category term="yahoo"></category></entry><entry><title>CSS İpuçları 14 - IE div yüksekliği sorunu</title><link href="http://www.fatihhayrioglu.com/css-ipuclari-14-ie-div-yuksekligi-sorunu/" rel="alternate"></link><updated>2008-01-10T22:32:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-01-10:css-ipuclari-14-ie-div-yuksekligi-sorunu/</id><summary type="html">&lt;p&gt;[sourcecode language='css'] our_style { height: 1px; width: 100px;
-background-color: black; } [sourcecode language='html']&lt;/p&gt;
+&lt;/p&gt;</summary><category term="Anlamlı web"></category><category term="css3.0"></category><category term="favicon"></category><category term="google"></category><category term="Haberler"></category><category term="Opera"></category><category term="seo"></category><category term="text-decoration"></category><category term="vs.net"></category><category term="WordPress"></category><category term="yahoo"></category></entry><entry><title>CSS İpuçları 14 - IE div yüksekliği sorunu</title><link href="http://www.fatihhayrioglu.com/css-ipuclari-14-ie-div-yuksekligi-sorunu/" rel="alternate"></link><updated>2008-01-10T22:32:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-01-10:css-ipuclari-14-ie-div-yuksekligi-sorunu/</id><summary type="html">&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;our_style&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;background-color: black; } [sourcecode language='html']&lt;/p&gt;
 &lt;div class="test"&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Bu kod Firefox'da sorunsuz çalışmasına karşın IE'de yükseklik 10px
 görünecektir. Bir bakıma IE boş içeriğin yüksekliğini 10px kabul ediyor,
 ancak bu bizim işimizi bozuyor. Çözüm ise çok basit.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'].test { font-size: 0; height: 1px; width:
-100px; background-color: black; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.test&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;100px; background-color: black; }&lt;/p&gt;
 &lt;p&gt;Sadece font-size tanımını 0 atamamız yeterli.&lt;/p&gt;
 &lt;p&gt;Kaynak: &lt;a href="http://vaig.be/2007/04/07/div-styleheight-1px-bug-in-ie/"&gt;http://vaig.be/2007/04/07/div-styleheight-1px-bug-in-ie/&lt;/a&gt;&lt;/p&gt;
 &lt;/p&gt;</summary><category term="CSS"></category><category term="div yüksekliği sorunu"></category><category term="ie"></category><category term="internet explorer"></category><category term="XHTML"></category></entry><entry><title>Lightbox seçimi</title><link href="http://www.fatihhayrioglu.com/lightbox-secimi/" rel="alternate"></link><updated>2008-01-09T23:36:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-01-09:lightbox-secimi/</id><summary type="html">&lt;p&gt;Lightbox; popup veya mesaj kutusu benzeri, sayfa içinde açılan kutulara
@@ -27769,23 +27826,32 @@ paylaşmak istedim.
     desteklemiyor.&lt;/li&gt;
 &lt;li&gt;IE &lt;strong&gt;color&lt;/strong&gt; özelliğini destekliyor.&lt;/li&gt;
 &lt;li&gt;Firefox ve Opera &lt;strong&gt;background-color&lt;/strong&gt; özelliğini destekliyor.&lt;/li&gt;
-&lt;li&gt;Tüm tarayıcılar&lt;strong&gt;background-image&lt;/strong&gt; özelliğini destekliyor ancak
-    Explorer ve Opera'da bazı sorunları var.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tüm tarayıcılar&lt;strong&gt;background-image&lt;/strong&gt; özelliğini destekliyor ancak
+    Explorer ve Opera'da bazı sorunları var.&lt;/p&gt;
+&lt;p&gt;:::css
+ hr { border: 0; width: 80%; } &lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;[sourcecode language='css'] hr { border: 0; width: 80%; } &lt;/p&gt;
 &lt;p&gt;Bu kodlama IE ve Opera'da düzgün görünecektir. Ancak Firefox'ta
 görünmeyecektir. background-color ekleyerek kodumuzu Firefox'a da uygun
 hala getiriyoruz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] hr { color: #f00; background-color: #f00;
-height: 5px; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;hr&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#f00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#f00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;height: 5px; } &lt;/p&gt;
 &lt;p&gt;&lt;hr / &gt; elementine stil ataması yaparken color ve background-color
 özelliklerin her ikisini de kullanmalıyız. Yüksekliği 3px'in altındaki
 değerler için Opera'nın eski sürümleri sorun çıkarıyor.&lt;/p&gt;
 &lt;h3&gt;&lt;hr /&gt; hizalama&lt;/h3&gt;
 &lt;p&gt;&lt;hr /&gt; etiketini hizalamada IE için &lt;strong&gt;text-align&lt;/strong&gt; özelliği, Firefox
 ve Opera için &lt;strong&gt;margin&lt;/strong&gt; özelliği kullanılır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] hr { text-align: right; /&lt;em&gt; ie icin &lt;/em&gt;/
-margin-right: 0; /&lt;em&gt; diger brovserlar icin &lt;/em&gt;/ } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;hr&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* ie icin */&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;margin-right: 0; /&lt;em&gt; diger brovserlar icin &lt;/em&gt;/ } &lt;/p&gt;
 &lt;div class="ekstrabilgi"&gt;
 &lt;hr&gt; etiketini &lt;hr /&gt; şeklinde kullanmak Xhtml kuralları açısından
 önemlidir. Bildiğiniz gibi Xhtml'de her etiket mutlaka kapatılmalıdır.
@@ -27810,8 +27876,11 @@ ve Opera'nın eski sürümlerinde sorun çıkarır. resmin etrafında kenarlık
 &lt;/div&gt;
 
 &lt;p&gt;ve CSS kodu&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] div.hr { background: #fff
-url(/images/ayrac_zr.gif) no-repeat scroll center; height:28px;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.hr&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;url(/images/ayrac_zr.gif) no-repeat scroll center; height:28px;
 width:180px; } div.hr hr { display: none; } &lt;/p&gt;
 &lt;p&gt;Tüm web tarayıcılarında sorunsuz çalışacaktır. Yukarıdaki kodda &lt;hr /&gt;
 etiketi bir &lt;div&gt; içine alarak css ile &lt;hr /&gt; etiketi görünmez
@@ -28559,7 +28628,8 @@ renklere büründürelim.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;class="metinAlani" id"ad" /&amp;gt;&lt;/dd&gt;  [sourcecode language="css"] input.metinAlani { color: #781351; background-color:&lt;/p&gt;
+&lt;p&gt;class="metinAlani" id"ad" /&amp;gt;&lt;/dd&gt;   :::css
+     input.metinAlani { color: #781351; background-color:&lt;/p&gt;
 &lt;h1&gt;b5c9e2; border: 1px solid #31557f; font:10px Arial, Helvetica,&lt;/h1&gt;
 &lt;p&gt;sans-serif; } &lt;/p&gt;
 &lt;p&gt;Gönder düğmesinin şeklini değiştirelim. Burada renk uyumu form
@@ -29862,8 +29932,11 @@ verebilir, yani farklı şekilde görülebilir.&lt;/p&gt;
 uygulanmış kapsayıcı katmana genişlik ve yükseklik vermektir.&lt;/p&gt;
 &lt;p&gt;İkinci bir çözüm olarak yükseklik göreceli olduğu durumlar için
 uygulanan bir yöntemdir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] /&lt;em&gt; IE-mac den gizle &lt;/em&gt;/ * html
-.container1 {height: 1%;} /&lt;em&gt; IE-mac den gizleme sonu &lt;/em&gt;/ &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="c"&gt;/* IE-mac den gizle */&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;.container1 {height: 1%;} /&lt;em&gt; IE-mac den gizleme sonu &lt;/em&gt;/ &lt;/p&gt;
 &lt;h3&gt;Kaynak&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.positioniseverything.net/abs_relbugs.html"&gt;http://www.positioniseverything.net/abs_relbugs.html&lt;/a&gt;&lt;/li&gt;
@@ -30538,13 +30611,15 @@ sahiptir tabi ki.&lt;/p&gt;
 &lt;p&gt;Bu metod cemsid'inde açıkladığı gibi arkaplan resmi(background-image)
 kaydırarak yapılıyor. Genelde bu tip menüler resim içeren veya
 anti-aliased metinlerin kullanıldığı durumlarda kullanılır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='html']&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#" title="Elma"&gt;Elma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#" title="Armut"&gt;Armut&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#" title="Muz"&gt;Muz&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#" title="Kivi"&gt;Kivi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;elma&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Elma&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Elma&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;armut&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Armut&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Armut&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;muz&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Muz&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Muz&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kivi&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Kivi&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Kivi&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Görüldüğü gibi diğer menü başlangıcından farkı olmayan-bir ek hariç- bir
 kodlama. Hariç olan ek her menu elemanına bir &lt;strong&gt;id&lt;/strong&gt; atamamız. Çünkü her
 menü elemanı için bir resim tanımlaması yapacağız. Manav dükkanı
@@ -30556,63 +30631,152 @@ Firefowrk, PaintShopPro vb. programlar kullanabilrisiniz.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/menu.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Menüdeki margin, padding ve imgeleri kaldıralım. Boyutlarını ve konumunu
 tanımlayalım:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul#menu { height: 54px; width: 500px;
-margin: 0; padding: 0; position: relative; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;#menu{&lt;/span&gt;
+    &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 54&lt;span class="n"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 0&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 0&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 500&lt;span class="n"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/images/resimlimenu_01.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Menümüzü yatay olarak sıralamak için&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul#menu li { list-style: none; position:
-absolute; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#menu&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/images/resimlimenu_02.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Menü elemanlarının yükseklikleri sabit olduğu için hepsine ortak
 tanımlama yapıyoruz, hepsini kendine has kapsama alanı olması için
 blokladık(display:block) ve konumlandırdık(postion:relative).&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul#menu li a { height: 54px; display:
-block; position:relative; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#menu&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;54px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Her menü elemanı için kendi genişliği ve arkaplan resmindeki(menu.jpg)
 yerini belirleyelim.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #elma a{ width:130px; background:
-url(images/menu.jpg) 0 0 no-repeat; } #armut a{ width:142px;
-background: url(images/menu.jpg) -130px 0 no-repeat; } #muz a{
-width:120px; background: url(images/menu.jpg) -272px 0 no-repeat; }&lt;/p&gt;
-&lt;h1&gt;kivi a{ width:108px; background: url(images/menu.jpg) -392px 0&lt;/h1&gt;
-&lt;p&gt;no-repeat; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#elma&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/menu.jpg)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;130px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#armut&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/menu.jpg)&lt;/span&gt; &lt;span class="m"&gt;-130px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;142px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#muz&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/menu.jpg)&lt;/span&gt; &lt;span class="m"&gt;-272px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;120px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#kivi&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/menu.jpg)&lt;/span&gt; &lt;span class="m"&gt;-392px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;108px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;ve tüm menü elementlerinin soldan konumu belirleyelim.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #elma {left: 0px;} #armut {left: 130px;}&lt;/p&gt;
-&lt;h1 392px;="392px;" left:="left:"&gt;muz {left: 272px;} #kivi&lt;/h1&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#elma&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#armut&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;130px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#muz&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;272px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#kivi&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;392px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/images/resimlimenu_03.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Resimler üzerindeki metinleri kaldırmak için&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul#menu li a { text-indent: -9999px;
-text-decoration: none; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#menu&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-indent&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-9999px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/images/resimlimenu_04.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Menümüz tamam. şžimdi de rollover efekti vermek için &lt;strong&gt;a:hover&lt;/strong&gt;
 arkaplan resimlerinin konumunu belirleyelim. Konumunu yazarken sadece
 yükseliği üstten konumu değiştirdiğimize dikkat edin.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #elma a:hover{ width:130px; background:
-url(images/menu.jpg) 0 -54px no-repeat; } #armut a:hover{ width:142px;
-background: url(images/menu.jpg) -130px -54px no-repeat; } #muz
-a:hover{ width:120px; background: url(images/menu.jpg) -272px -54px
-no-repeat; } #kivi a:hover{ width:108px; background:
-url(images/menu.jpg) -392px -54px no-repeat; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#elma&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/menu.jpg)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;-54px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;130px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#armut&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/menu.jpg)&lt;/span&gt; &lt;span class="m"&gt;-130px&lt;/span&gt; &lt;span class="m"&gt;-54px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;142px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#muz&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/menu.jpg)&lt;/span&gt; &lt;span class="m"&gt;-272px&lt;/span&gt; &lt;span class="m"&gt;-54px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;120px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#kivi&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/menu.jpg)&lt;/span&gt; &lt;span class="m"&gt;-392px&lt;/span&gt; &lt;span class="m"&gt;-54px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;108px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/images/resimlimenu_06.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Son olarakta bir bölümde olduğunda o bölümün aktif görünmesini sağlamak
 için, genel de bunu için a:hover durumu normal durum olarak tanımlanır.
 Bizde öyle yapalım. Mesela &lt;strong&gt;Muz&lt;/strong&gt; bölümünde olduğumuzu farz edelim.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='html']&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#" title="Elma"&gt;Elma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#" title="Armut"&gt;Armut&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#" title="Muz"&gt;Muz&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#" title="Kivi"&gt;Kivi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[sourcecode language='css'] #elma a.secili{ width:130px;
-background: url(images/menu.jpg) 0 -54px no-repeat; } #armut a.secili{
-width:142px; background: url(images/menu.jpg) -130px -54px no-repeat; }&lt;/p&gt;
-&lt;h1&gt;muz a.secili{ width:120px; background: url(images/menu.jpg) -272px&lt;/h1&gt;
-&lt;p&gt;-54px no-repeat; } #kivi a.secili{ width:108px; background:
-url(images/menu.jpg) -392px -54px no-repeat; } 
-&lt;iframe src="/dokumanlar/menu_5.html" width="500" height="110" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;p&gt;Örnek kodları indirmek için &lt;a href="/dokumanlar/menu5.zip"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="arkaplan-resmi"></category><category term="background"></category><category term="CSS"></category><category term="Image-Replacement"></category><category term="menü"></category><category term="resimli-menü"></category><category term="Web Standartları"></category><category term="XHTML"></category><category term="zemin-resmi"></category></entry><entry><title>"web 2.0 nedir" hakkında yazılar</title><link href="http://www.fatihhayrioglu.com/web-20-nedir-hakkinda-yazilar/" rel="alternate"></link><updated>2006-11-21T16:30:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-11-21:web-20-nedir-hakkinda-yazilar/</id><summary type="html">&lt;p&gt;web 2.0 nedir diye düşünüyordum. Bu gün ceyhun da sorunca gerçekten ne
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;elma&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Elma&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Elma&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;armut&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Armut&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Armut&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;muz&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;secili&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Muz&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Muz&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kivi&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Kivi&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Kivi&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+
+:::css
+#elma a.secili{
+    background: url(images/menu.jpg) 0 -54px no-repeat;
+    width: 130px;
+}
+
+#armut a.secili{
+    background: url(images/menu.jpg) -130px -54px no-repeat;
+    width: 142px;
+}
+
+#muz a.secili{
+    background: url(images/menu.jpg) -272px -54px no-repeat;
+    width: 120px;
+}
+
+#kivi a.secili{
+    background: url(images/menu.jpg) -392px -54px no-repeat;
+    width: 108px;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe src="/dokumanlar/menu_5.html" width="500" height="110" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Örnek kodları indirmek için &lt;a href="/dokumanlar/menu5.zip"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;</summary><category term="arkaplan-resmi"></category><category term="background"></category><category term="CSS"></category><category term="Image-Replacement"></category><category term="menü"></category><category term="resimli-menü"></category><category term="Web Standartları"></category><category term="XHTML"></category><category term="zemin-resmi"></category></entry><entry><title>"web 2.0 nedir" hakkında yazılar</title><link href="http://www.fatihhayrioglu.com/web-20-nedir-hakkinda-yazilar/" rel="alternate"></link><updated>2006-11-21T16:30:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-11-21:web-20-nedir-hakkinda-yazilar/</id><summary type="html">&lt;p&gt;web 2.0 nedir diye düşünüyordum. Bu gün ceyhun da sorunca gerçekten ne
 olduğunu merak ettim ve bir iki güzel makale gördüm sizlerle paylaşmak
 istedim.&lt;/p&gt;
 &lt;ul&gt;
@@ -31013,29 +31177,44 @@ ve dikey menüler belli bir yere kadar kodlaması aynıdır. Biz aynı olan
 kısmı geçip sonrasına devam ediyoruz. &lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;Kaldığımız yerden devam edersek. Linkleri yatay olarak dizmek için
 &lt;strong&gt;display:inline&lt;/strong&gt; özelliğini kullanıyoruz:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu { list-style-type: none; padding: 0;
-margin: 0; } ul.menu li { display: inline; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;margin: 0; } ul.menu li { display: inline; } &lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/menu_resim1.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Linklerin altındaki çizgileri kaldırıyoruz:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu { list-style-type: none; padding: 0;
-margin: 0; } ul.menu li { display: inline; } ul.menu li a {
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;margin: 0; } ul.menu li { display: inline; } ul.menu li a {
 text-decoration: none; } &lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/menu_resim2.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Linkler arasına biraz boşluk veriyoruz:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu { list-style-type: none; padding: 0;
-margin: 0; } ul.menu li { display: inline; } ul.menu li a {
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;margin: 0; } ul.menu li { display: inline; } ul.menu li a {
 text-decoration: none; padding: .2em 1em; } &lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/menu_resim3.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Menüyü biraz renklendiriyoruz:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']ul.menu { list-style-type: none; padding: 0;
-margin: 0; } ul.menu li { display: inline; } ul.menu li a {
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;margin: 0; } ul.menu li { display: inline; } ul.menu li a {
 text-decoration: none; padding: .2em 1em; color: #1B1B1B;
 background-color: #E2E2E2; } &lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/menu_resim4.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Son olarakta rollover efekti vermek için &lt;strong&gt;a:hover&lt;/strong&gt; özelliğine renk
 atıyoruz:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu { list-style-type: none; padding: 0;
-margin: 0; } ul.menu li { display: inline; } ul.menu li a {
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;margin: 0; } ul.menu li { display: inline; } ul.menu li a {
 text-decoration: none; padding: .2em 1em; color: #1B1B1B;
 background-color: #E2E2E2; } ul.menu li a:hover { background-color:&lt;/p&gt;
 &lt;h1&gt;999; }&lt;/h1&gt;
@@ -31069,43 +31248,48 @@ aşağıda verdiğimiz Kaynaklar kısmında ve gerekse İnternette aratarak bir
     belirleyip ona göre sayfa hazırlamaya ne dersiniz. İşte makale
     yalnız İngilizce &lt;a href="http://alistapart.com/articles/fontresizing"&gt;tıklayın.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;</summary></entry><entry><title>CSS ile Menü Yapmak I - Dikey Menüler</title><link href="http://www.fatihhayrioglu.com/css-ile-menu-yapmak-i-dikey-menuler/" rel="alternate"></link><updated>2006-11-05T20:50:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-11-05:css-ile-menu-yapmak-i-dikey-menuler/</id><summary type="html">&lt;p&gt;Web sitelerinin vazgeçilmez öğelerinde biridir menüler. Menüler
+&lt;/p&gt;</summary></entry><entry><title>CSS ile Menü Yapmak</title><link href="http://www.fatihhayrioglu.com/css-ile-menu-yapmak/" rel="alternate"></link><updated>2006-11-05T20:50:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-11-05:css-ile-menu-yapmak/</id><summary type="html">&lt;p&gt;Web sitelerinin vazgeçilmez öğelerinde biridir menüler. Menüler
 kullanıcının oluşturduğumuz sayfalara hızlı erişimini sağlar. Bir çok
 site de Ürünler, İletişim, Hakkımızda vb. bölümlerini menü öğesi olarak
-görürüz. Bu makalede sırasız listeler(&lt;ul&gt;)ve CSS yardımı ile menü
+görürüz. Bu makalede sırasız listeler(&lt;ul\&gt;)ve CSS yardımı ile menü
 yapımını anlatacağız. CSS ile yapılan menüler esnek, kolay
 düzenlenebilir, güzel görünen ve rollover efekti uygulana bilen
 menülerdir. &lt;!--more--&gt;&lt;/p&gt;
-&lt;p&gt;Sırasız listeler(&lt;ul&gt;) ilk olarak listeleme işlemleri için kullanılsa
+&lt;p&gt;Sırasız listeler(&amp;lt;ul&gt;) ilk olarak listeleme işlemleri için kullanılsa
 da CSS'in yükselişi ile birlikte menü oluşturmak için kullanılmaya
 başlandı. Aslında menülerde bir bakıma link listeleri olduğu düşünülürse
 işlevinin dışında kullanılmadığı da doğru bir tespittir. Kodumuzu
 yazmaya başlayalım:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='html']&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="index.html"&gt;Ana Sayfa&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="hakkimizda.html"&gt;Hakkımızda&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="urunler.html"&gt;Ürünler&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;index.html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Ana Sayfa &lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hakkimizda.html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Hakkımızda&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;urunler.html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Ürünler&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Kodlama sonucu görüntü aşağıdaki gibi olacaktır.&lt;/p&gt;
-&lt;div align="center"&gt;
-![][]
-
-&lt;/div&gt;
-
+&lt;p&gt;&lt;img alt="" src="/dokumanlar/menu1.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Her linkin başındaki imgeleri kaldırmak için:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu { list-style-type: none; }&lt;/p&gt;
-&lt;div align="center"&gt;
-![][1]
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 
+&lt;p&gt;&lt;img alt="" src="/dokumanlar/menu2.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bir çok web tarayıcısı sırasız listeleri(&lt;ul&gt;) yorumlarken yukarıda
 görüldüğü gibi otomatik olarak soldan bir padding/margin(bazı
 tarayıcılarda padding uygularken bazılarında margin uygular) mesafesi
 uygular bu mesafeyi sıfırlamak için:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu { list-style-type: none; padding: 0;
-margin: 0; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/dokumanlar/menu3.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bu bölüme kadar yazılan kodlamalar hem dikey menüler hem de yatay
 menüler içinde aynıdır. Ancak bundan sonra dikey menü ve yatay menü için
@@ -31114,33 +31298,77 @@ kodlar değişecektir.&lt;/p&gt;
 &lt;p&gt;Dikey menülerde linkler yukarıdan aşağı doğru sıralanmıştır. Link
 elementi(a) inline-elementtir, her linke rollover özelliği kazandırmak
 için:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu a { display: block; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Biraz görselliği arttırırsak:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu a { display: block; color: #1B1B1B;
-background-color: #E2E2E2; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#1B1B1B&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#E2E2E2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/dokumanlar/menu4.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Linkler web tarayıcısının genişliği kadar uzayacaktır, kendi istediğimiz
 genişliğe sahip olmak için:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu a { display: block; color: #1B1B1B;
-background-color: #E2E2E2; width:8em; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#1B1B1B&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#E2E2E2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;8em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/dokumanlar/menu5.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Linkler arasına biraz boşluk verelim:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu a { display: block; color: #1B1B1B;
-background-color: #E2E2E2; width:8em; padding: .2em .8em; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#1B1B1B&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#E2E2E2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;8em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;.2em&lt;/span&gt; &lt;span class="m"&gt;.8em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/dokumanlar/menu6.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Linklerin altındaki çizgileri kaldıralım:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu a { display: block; color: #1B1B1B;
-background-color: #E2E2E2; width:8em; padding: .2em .8em;
-text-decoration: none; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#1B1B1B&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#E2E2E2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;8em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;.2em&lt;/span&gt; &lt;span class="m"&gt;.8em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/dokumanlar/menu7.gif" /&gt;&lt;/p&gt;
-&lt;p&gt;şžimdi linklerimize rollover efekti vermek için a:hover kullanacağız:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu a:hover { background-color: #999; }&lt;/p&gt;
+&lt;p&gt;şimdi linklerimize rollover efekti vermek için a:hover kullanacağız:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#999&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt="" src="/dokumanlar/menu8.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;son olarak linklerin arasını ayıralım:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul.menu li { margin: 0 0 .2em 0; }
- İşte menümüzün son hali
-&lt;iframe src="/dokumanlar/menu.htm" width="250" height="200" frameborder="0" scroll="auto"&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="CSS"></category><category term="liste"></category><category term="menü"></category><category term="ul"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>4 Kasım 2006 Web'den Haberler</title><link href="http://www.fatihhayrioglu.com/4-kasim-2006-webden-haberler/" rel="alternate"></link><updated>2006-11-04T18:20:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-11-04:4-kasim-2006-webden-haberler/</id><summary type="html">&lt;ul&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;.2em&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;İşte menümüzün son hali&lt;/p&gt;
+&lt;iframe src="/dokumanlar/menu.htm" width="250" height="200" frameborder="0" scroll="auto"&gt;&lt;/iframe&gt;</summary><category term="CSS"></category><category term="liste"></category><category term="menü"></category><category term="ul"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>4 Kasım 2006 Web'den Haberler</title><link href="http://www.fatihhayrioglu.com/4-kasim-2006-webden-haberler/" rel="alternate"></link><updated>2006-11-04T18:20:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-11-04:4-kasim-2006-webden-haberler/</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Son günlerde Javascript kütüphanesi ve kodları birbiri ardına
     yayınlanıyor. Bu linkini vereceğimiz sitede bunlardan biri
     uygulamaları ve kodu indirmek için &lt;a href="http://berniecode.com/writing/animator.html"&gt;tıklayınız.&lt;/a&gt;&lt;/li&gt;
@@ -31454,8 +31682,11 @@ olduğunu düşünelim. Aşağıdaki şekildeki gibi&lt;/p&gt;
 kullanışlı olanı anlatmaya çalışacağız.&lt;/p&gt;
 &lt;p&gt;Bu metodda yapılan iki kolon bir kapsayıcı katman içine alınarak iki
 kolonun zemin resmi bu kapsayıcı katmana tanımlanmaktır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #kapsayiciKolon { background: #fff
-url(zemin_ard.gif) repeat-y left top; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#kapsayiciKolon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;url(zemin_ard.gif) repeat-y left top; } &lt;/p&gt;
 &lt;p&gt;Aynı şekilde üç kolonlu yapılar içinde çözüm üretilebilir. Sabit
 genişlikte sayfalarda Aksak Kolonları düzeltmek bu kadar kolaydır. Esnek
 yapılı sayfalarda Aksak Kolonları düzeltmek biraz daha zordur. Web
@@ -31467,8 +31698,11 @@ elementin sol üst köşesine göre zemin resminizi piksel değeri vererek
 konumlandırırsınız. Yüzdesel konumlandırma ile zemin resmi
 konulandırıldığında, atanan değerler hem üst elemente göre, hem de
 elementin kendine göre konumunu belirler. Örneğin:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] background: #fff url(resim.gif) no-repeat
-25% 10%; &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;#fff&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;resim&lt;/span&gt;&lt;span class="nc"&gt;.gif&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;no-repeat&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;25% 10%; &lt;/p&gt;
 &lt;p&gt;Yukarıdaki tanımlama sonucunda zemin resmi hem üst elementin %10 üst ve
 %25 solundan mesafe alacaktır, hemde kendi içinde %10 üst ve %25 soldan
 mesafe alacaktır. Aşağıdaki şekilde gösterilmiştir:&lt;/p&gt;
@@ -31492,8 +31726,11 @@ resmini kapsayan alandan Aksak Kolona atanan zemin renginin genişlik
 değeri 460 piksel olacaktır. Aksak alanın zemin renginin dışındaki
 alalanları(1540px) transparan yapmak için zemin resmimizi .gif
 formatında yapmalıyız.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #KapsayiciAlan { width: 85%; margin: 0
-auto; text-align: left; background: #fff
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#KapsayiciAlan&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;85&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;auto; text-align: left; background: #fff
 url(images/sol_zemin_resmi.gif) repeat-y 23% 0; } &lt;/p&gt;
 &lt;p&gt;Benzer şekilde ikinci bir içerik oluşturarak sağda kalan iki kolona aynı
 metod uygulanabilir. Yine 2000 piksel genişliğinde 10 piksel
@@ -31505,8 +31742,11 @@ mesafesi %77(100-23)'den başlamalıdır. Çünkü KapsayiciAlan'ın zemin
 resmi zaten uygulanmıştır bu nedenle biz ilk Kapsayici alan içine bir
 tane daha &lt;strong&gt;ikinciKapsayiciAlan&lt;/strong&gt; eklemeliyiz. Bu yeni
 &lt;strong&gt;ikinciKapsayiciAlan&lt;/strong&gt;'nınada zemin resmi atamalıyız.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #ikinciKapsayiciAlan { background:
-url(images/sag_zemin_resmi.gif) repeat-y 77% 0; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#ikinciKapsayiciAlan&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;url(images/sag_zemin_resmi.gif) repeat-y 77% 0; } &lt;/p&gt;
 &lt;p&gt;Bu şekilde çok güzel bir 3 kolonlu likit bir sayfa elde ederiz.&lt;/p&gt;
 &lt;p&gt;Örnek çalışma için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/aksak-3-kol-likid.htm"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;/p&gt;</summary><category term="Aksak Kolonlar"></category><category term="CSS"></category><category term="CSS-Layout"></category><category term="CSS-P"></category><category term="Faux Column"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>27 Ekim 2006 Web'den haberler</title><link href="http://www.fatihhayrioglu.com/27-ekim-2006-webden-haberler/" rel="alternate"></link><updated>2006-10-27T00:18:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-27:27-ekim-2006-webden-haberler/</id><summary type="html">&lt;p&gt;Biz bayram tatilinde iken bayağı bir gelişme olmuş bende bunları
@@ -31660,8 +31900,11 @@ elementlere&lt;br /&gt;
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;min-width, min-height kapsayıcı kutunun minimum alacağı değerleri
 belirtmek için kullanırız.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p.menu { float:left; width:200px;
-min-width:150px; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;min-width:150px; } &lt;/p&gt;
 &lt;div class="tarayiciuyum"&gt;
 **Web Tarayıcı Uyumu:**
 
@@ -31685,8 +31928,11 @@ elementlere&lt;br /&gt;
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;max-width, max-height kapsayıcı kutunun maksimum alacağı değerleri
 belirtmek için kullanırız.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p.menu { float:left; width:200px;
-max-width:400px; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;max-width:400px; }&lt;/p&gt;
 &lt;div class="tarayiciuyum"&gt;
 **Web Tarayıcı Uyumu:**
 
@@ -31706,8 +31952,11 @@ nedenden dolayı kullanmamazlık yapmayacağız tabi.&lt;/p&gt;
 &lt;p&gt;IE için bir çözüm vardır. &lt;strong&gt;expression()&lt;/strong&gt; özelliği bu özellik sadece IE
 tarafından yorumlanır. Bu özellik dinamik özellik olarak tanımlanır.
 Yani bu kod normalde bir javascript kodudur.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #icerik { min-width: 600px; max-width:
-1200px; width:expression(document.body.clientWidth &amp;lt; 600? "600px" :
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#icerik&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;min-width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;600px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;max-width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;1200px; width:expression(document.body.clientWidth &amp;lt; 600? "600px" :
 document.body.clientWidth &amp;gt; 1200? "1200px" : "auto"); }&lt;/p&gt;
 &lt;div id="icerik"&gt;
 ....
@@ -31719,8 +31968,11 @@ kullanılmıştır. Bu tanımlamaları sadece IE anlayacaktır ve
 uygulayacaktır. Kodda eğer genişlik belirtilen maksimum değerden büyükse
 atanan değeri alacak değilse auto değeri alacaktır.&lt;/p&gt;
 &lt;p&gt;Ayrıca min-height için daha kısa bir çözüm vardır&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #menu { min-height:500px; height:auto
-!important; height:500px; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;min-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;500px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;auto&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;!important; height:500px; } &lt;/p&gt;
 &lt;/p&gt;</summary><category term="CSS"></category><category term="css2"></category><category term="expression"></category><category term="ie-fix"></category><category term="Javascript"></category><category term="maksimum"></category><category term="max-height"></category><category term="max-width"></category><category term="min-height"></category><category term="min-width"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>Web Tarayıcılarının Metin Boyutu Kullanım Oranları</title><link href="http://www.fatihhayrioglu.com/web-tarayicilarinin-metin-boyutu-kullanim-oranlari/" rel="alternate"></link><updated>2006-10-08T14:01:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-08:web-tarayicilarinin-metin-boyutu-kullanim-oranlari/</id><summary type="html">&lt;p&gt;Web sayfalarını görüntüleyen web tarayıcıların da kullanılan metin
 boyutunu 1500 site de deneyen araştırmacılar çoğunluğun standart olarak
 gelen (medium) seçeneğini kullandığını görmüşler
@@ -31757,18 +32009,27 @@ tanımlamada&lt;/p&gt;
 &lt;p&gt;Değerini elde ederiz. Burada id değeri 100'ler basamağına sınıf değeri
 10'lar basamağına yazılarak hesaplama yapılır ve ikiyüz otuz değeri elde
 edilir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] ul h1 li.secili { color: yellow; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;h1&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.secili&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;yellow&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Yukarıdaki tanımlama da 0013 değerini elde ederiz.&lt;/p&gt;
 &lt;p&gt;0 (kod içinde değil), 0 (id), 1 (secili sınıfı), 3 (ul h1 li seçicileri)
 = 0013&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1 { color: blue; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Bu tanımlamanın değeri 0001 dir. CSS belirlemeye göre yüksek değer
 alanın özelliği uygulanır. Her ikisinde de h1'e bir tanımlama
 yapılmıştır. Ancak tanımlama sistemleri farklıdır. XHTML kodumuzdaki
 &lt;strong&gt;h1&lt;/strong&gt; elementimizi mavi değil &lt;strong&gt;sarı&lt;/strong&gt;(yellow) olarak gösterecektir.&lt;/p&gt;
 &lt;p&gt;Bide öncelik için&lt;strong&gt;!important&lt;/strong&gt; tanımlaması vardır. Eğer yukarıdaki koda
 &lt;strong&gt;!important&lt;/strong&gt; eklersek&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1 { color: blue !important; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;blue&lt;/span&gt; &lt;span class="cp"&gt;!important&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Tanımlama yukarıdaki gibi değiştirildiğinde h1 elementimiz mavi renkde
 görünecektir.&lt;/p&gt;
 &lt;p&gt;Eğer değer aynı olursa(mesela 0013 e 0013) ne olur, bu durumda son
@@ -31808,8 +32069,11 @@ web sayfası hazırlama imkanı verir.
 &lt;p&gt;Çoğu web tarayıcısınnda normal font boyutu 16px'dir. 10 pikselin
 yüzdesel değeri yaklaşık olarak 62.5% civarındadır. Bu belirtilen
 değerlere göre kodumuzu yazarsak:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] body{ text-align:center; font-size:62.5%;
-font-family:Arial, Helvetica, sans-serif; } #sayfa{ width:72em;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;62&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;font-family:Arial, Helvetica, sans-serif; } #sayfa{ width:72em;
 margin:0 auto; text-align:left; } #ustAlan { width:72em; } #anaMenu {
 float: left; width: 18em; } #KapsayiciAlan { float: right; width: 52em;
 } #icerik { float: left; width: 32em; } #BannerAlani{ float: right;
@@ -32158,7 +32422,10 @@ veya sağa konumlandırması imkanı sağlanmış oldu. Bu kullanım float ile
 benzerdir. Resimleri konumlandırmak için kullanılan bu yöntem daha sonra
 CSS'in olaya el atması ile tüm elementler için kullanıla geldi. Ayrıca
 float özelliği çoklu kolon oluşturmak için de kullanılır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] img { float:left; margin:0 4px 4px 0; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;4px&lt;/span&gt; &lt;span class="m"&gt;4px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;strong&gt;float:left&lt;/strong&gt; ataması yapılan resim sola dayanacak ve metin bu resmin
 etrafını saracaktır.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/floating1a.gif" /&gt;&lt;/p&gt;
@@ -32176,7 +32443,11 @@ elementlerin akışı 1.kutu yokmuş gibi devam etmiştir.&lt;/p&gt;
 &lt;p&gt;Aşağıdaki şekilde &lt;strong&gt;float:left&lt;/strong&gt; tanımlaması yapılarak 1.kutu kapsayıcı
 kutunun en soluna dayanmıştır. Diğer iki kutu ise normal akışına devam
 etmektedir.&lt;/p&gt;
-&lt;p 0;="0;" 4px="4px" float:left;="float:left;" margin:0="margin:0"&gt;[sourcecode language='css'] p { float:left; width:200px; margin:0; } img&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;img&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;{ float:left; margin:0 4px 4px 0; } &lt;/p&gt;
 &lt;p&gt;Burada her iki elemente de float uygulanarak metnin resmi sarmasına son
 verilmiştir. Bu çoklu kolon oluşturma tekniğinin basit bir örneğidir.
 Float uygulanan her element satır boyunca yan yana dizilecektir.&lt;/p&gt;
@@ -32214,8 +32485,11 @@ elementleri nasıl oratalayacağımızı göreceğiz. Inline-level elementleri
 elementleri ortalamak için ise bir iki metod vardır. Sırası ile
 inceleyelim. &lt;!--more--&gt;&lt;/p&gt;
 &lt;h3&gt;1- Genişleyebilir blok-level elementleri ortalamak&lt;/h3&gt;
-&lt;p&gt;[sourcecode language='css'] .ortala { margin-left: 10%; margin-right:
-10%; }  [sourcecode language='html']&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.ortala&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;10%; }  [sourcecode language='html']&lt;/p&gt;
 &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and
 typesettingindustry.&lt;/p&gt;
 &lt;p&gt;Genişliği sabit olmayan, genişleyebilir blok-level elementlerin
@@ -32228,22 +32502,31 @@ ataması yapıyoruz.&lt;/p&gt;
 &lt;p&gt;W3C'de bu konu hakkında şu ifade mevcuttur: &lt;strong&gt;"Eğer margin-left ve
 margin-right değerleri auto verilirse bu blokun ortalanması anlamına
 gelir."&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] .ortala2 { margin-left: auto; margin-right:
-auto; width: 50em; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.ortala2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;auto; width: 50em; } &lt;/p&gt;
 &lt;p&gt;NN4 (Mac and Win), Win/IE4, Win/IE5, Win/IE5.5, Win/IE6 (Garip mod :
 quirks-mode) web tarayıcılıar bu kodu desteklememektedir.&lt;/p&gt;
 &lt;p&gt;Bu sorunu aşabilemke için iki satır kod yazmamız yeterli olacaktır.(NN4
 hariç)&lt;/p&gt;
 &lt;p&gt;Bu metodu desteklemeyen web tarayıcıları için body etiketine
 &lt;strong&gt;text-align:center&lt;/strong&gt; ataması yaptığımızda sorun çözülmüş demektir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] body { text-align: center; } .ortala2 {
-margin-left: auto; margin-right: auto; width: 50em; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nc"&gt;.ortala2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;margin-left: auto; margin-right: auto; width: 50em; } &lt;/p&gt;
 &lt;p&gt;Yanlız bir sorunumuz daha var. &lt;strong&gt;text-align:center&lt;/strong&gt; ataması body
 içindeki tüm elementlerin ortalanmasına neden olacaktır. Bunu engellemek
 için bir katman oluşturup bu katman da hizalama değerini başlangıç
 değerine(yani sola yaslamalıyız) çevirmeliyiz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] body { text-align: center; } .ortala2 {
-margin-left: auto; margin-right: auto; width: 50em; text-align: left; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nc"&gt;.ortala2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;margin-left: auto; margin-right: auto; width: 50em; text-align: left; }&lt;/p&gt;
 &lt;p&gt;Bu kodlama tüm web tarayıcılarında çalışacaktır.(NN4 hariç)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.b. Konumlandırma(positioning) kullanılan elementlerin negatif margin
 ile ortalanması&lt;/strong&gt;&lt;/p&gt;
@@ -32252,8 +32535,11 @@ kullanılabilir. Bu metod da bir önceki gibi fazladan bir katman
 kullanmaya gerek yoktur. Genişlik tanımı yapılan göreceli
 konumlandırılmış elementin &lt;strong&gt;margin-left&lt;/strong&gt; değeri element genişliğinin
 yarısı(1/2) kadar verilerek sağlanır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] .ortala3 { width: 720px; position: relative;
-left: 50%; margin-left: -360px; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.ortala3&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;720px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;left: 50%; margin-left: -360px; } &lt;/p&gt;
 &lt;p&gt;Burada sizlere bir iki metodla element ortalamayı gösterdik. Siz
 kullandığınız yer ve ihtiyaçlarınıza göre bunlardan birini
 kullanabilirsiniz.&lt;/p&gt;
@@ -32377,8 +32663,11 @@ dikey ve yatay olarak değiştirebilriz. Eğer biz elementin üst(top)
 değerine 20px tanımlarsak element bulunduğu yerden 20px aşağıya
 kayacaktır, eğer elementin sol(left) değerini 20px olarak tanımlarsak
 elementimiz soldan 20px sağa doğru kayacaktır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p#FarkliParagraf{ position: relative; left:
-20px; top: 20px; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nf"&gt;#FarkliParagraf&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;20px; top: 20px; } &lt;/p&gt;
 &lt;p&gt;&lt;img alt="CSS Nisbi konumlandırma" src="/images/position_relative.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Görecelikonumlandırma kullanılarak yeri belirlenen bir elementin
 başlangıçtaki konumundaki boşluğu ve diğer elementlerle arasındaki
@@ -32428,8 +32717,11 @@ CSS Profile 2.0
 &lt;p&gt;Örneğin geniş bir blok içindeki bir parafratakiyazıların sağ ve altta
 olmasını istiyorsak. Dıştaki içerik kutusunugöreceli konumlandırıp
 içindeki paragrafı mutlak konumlandırarak bu işhalledebilriz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #adresler { width: 700px; height: 100px;
-position: relative; } #adresler .tel { position: absolute; right: 10px;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#adresler&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;700px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;position: relative; } #adresler .tel { position: absolute; right: 10px;
 bottom: 10px; text-align: right; }  [sourcecode language='html']&lt;/p&gt;
 &lt;div id="adresler"&gt;
 Tel: 0845 838 6163
@@ -32517,8 +32809,11 @@ uygulanacaktır. Aynı işlem &lt;strong&gt;ul&lt;/strong&gt; ve &lt;strong&gt;l
 geçerlidir.&lt;/p&gt;
 &lt;p&gt;Başlıklara serif fontu, turuncu rengi ve kenarlık ekleyelim ve
 listelerimizinde yanındaki işaretleri kaldıralım:&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] .solkolonbaslik { font-family: Georgia,
-serif; color: #c63; border-bottom: 1px solid #ccc; } .solkolonlink {
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.solkolonbaslik&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Georgia&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;serif; color: #c63; border-bottom: 1px solid #ccc; } .solkolonlink {
 list-style-type: none; } .link { font-weight: bold; } &lt;/p&gt;
 &lt;p&gt;Tanımladığımız özellikleri elementlere atadık, buradaki elementlerin
 kendine has tanımları vardır. Aynı yöntemi kullanrak tüm sayfamızı
@@ -32556,8 +32851,11 @@ atamalar yapmamıza izin verir. Mesela &lt;strong&gt;#icerikAlani&lt;/strong&gt;
 &lt;strong&gt;h3&lt;/strong&gt; elementini kırmızı &lt;strong&gt;#altKisim&lt;/strong&gt; bölümündeki h3 elementini mor
 yapabiliriz. Ayrıca tüm bölümlerdeki &lt;strong&gt;h3&lt;/strong&gt;'lerede genel bir tanımlamada
 yapabilriiz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h3 { font-family: Georgia, serif; /&lt;em&gt; tüm h3
-ler için atama&lt;/em&gt;/ } #icerikAlani h3 { color: red; } #menuAlani h3 {
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h3&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Georgia&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;/*&lt;/span&gt; &lt;span class="err"&gt;tüm&lt;/span&gt; &lt;span class="n"&gt;h3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ler için atama*/ } #icerikAlani h3 { color: red; } #menuAlani h3 {
 color: orange; } &lt;/p&gt;
 &lt;p&gt;Genel h3 elemetine serif font ailesi tanımlanmı, icerik alanındaki
 &lt;strong&gt;h3&lt;/strong&gt; kırmızı, menu alanındaki &lt;strong&gt;h3&lt;/strong&gt; kavuniçi olacaktır. Böylelikle
@@ -32568,7 +32866,10 @@ büyük çaplı sitelerde bu metod bize çok büyük kazanımlar sağlayacaktır
 &lt;p&gt;Fazladan sınıf kullanmak yerine Torun Seçicileri kullanarak kod azaltma
 yöntemi bize çok büyük avantajlar sağlayacaktır.&lt;/p&gt;
 &lt;p&gt;Örneğin SolKisim'daki linklerin rengini kırmızı yapmakl istesek.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div id="solkolon"&gt;
 ### Site Hakkında
 
@@ -32582,14 +32883,20 @@ Bu site benim hakkımdadır.
 &lt;/div&gt;
 
 &lt;p&gt;ve bu sınıf için css tanımı yapacak olursak.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] a:link.kirmizilink { color: red; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:link&lt;/span&gt;&lt;span class="nc"&gt;.kirmizilink&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Bu kodumuz sorunsuz çalışacaktır. Ancak bu kodlama metodunda ileriye
 dönük bir sorunuzmu olacaktır. Bu linklerin rengini değiştirip siyah
 yapmak istedik. Rengi kolayca siyaha çevirebiliriz ancak verdiğimiz isim
 ile içerik çakışacaktır. Siyah renge kirmizi isim!&lt;/p&gt;
 &lt;p&gt;Bunun yerine doğal seçicileri kullanrak bu işlemi yapsa idik durum
 farklı olacaktır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #SolKisim li a:link { color: red; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#SolKisim&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:link&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Bu tanımla bizim işimizi görecektir. Ayrıca bir değişiklik olduğunda
 sadece tanımı değiştirmemiz bize yetecektir. Bu metod bize kolay, temiz
 ve kullanışlı bir kodlama olanağı sağlamkatadır. Bunu uygulamarımızda
@@ -32597,7 +32904,10 @@ kullandıkça daha iyi kavrayacağız.&lt;/p&gt;
 &lt;h3&gt;2- Gereksiz &lt;div&gt; Kullanımından vazgeçilmesi&lt;/h3&gt;
 &lt;p&gt;Sayfa kodlarken içeriklerimizi düzenlemek için bir çok &lt;div&gt; elementi
 kullanırız.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div id="menu"&gt;
 -   [Fotoğraflar][]
 -   [Dersler][]
@@ -32610,7 +32920,10 @@ menu id'si verilmiş bir katman kullandık. Bu kullanımı tüm sitemizde
 kullandığımız düşünürsek bir çok kavrayıcı fazla katmanımız olacaktır.
 Eğer bu kod daki gibi katman bir blok level bir elementi kapsıyorsa
 katman kullanımına gerek yoktur. Bu katmanı kaldıra biliriz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="foto.html"&gt;Fotoğraflar&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="ders.html"&gt;Dersler&lt;/a&gt;&lt;/li&gt;
@@ -32629,27 +32942,39 @@ varsa bunları tanımlama yaptığımız kavrayıcı &lt;strong&gt;ul&lt;/strong
 &lt;p&gt;CSS elementleri kalıtsal olan ve kalıtsal olmayan elementler diye
 ayırır. Biz kalıtsal elemnleri kullanarak bir çok fazla koddan
 kurtulabiliriz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p { font-family:Verdana, Arial, sans-serif }
-td { font-family:Verdana, Arial, sans-serif } li { font-family:Verdana,
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;Verdana&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;td { font-family:Verdana, Arial, sans-serif } li { font-family:Verdana,
 Arial, sans-serif } dt { font-family:Verdana, Arial, sans-serif } dd {
 font-family:Verdana, Arial, sans-serif } &lt;/p&gt;
 &lt;p&gt;Yukarıdaki şekilde bir çok element içinde font tanımı yapmak yerine
 &lt;strong&gt;body&lt;/strong&gt; elementi içinde bir tek font tanımı ile bu kargaşaya son
 verebilriz. Bu site standartlarına uymayı kolaylaştıracak ve düzenleme
 kolaylığını sağlayacaktır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] body { font-family:Verdana, Arial,
-sans-serif } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;Verdana&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;sans-serif } &lt;/p&gt;
 &lt;h3&gt;4- Uygun Benzer Stilleri Gruplamak&lt;/h3&gt;
 &lt;p&gt;Bir çok özelliği aynı olan stil tanımlarında farklılıklar ayrılarak aynı
 bölümler gruplanarak kod azaltılabilir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1 { font-size:120%; margin-bottom:0;
-font-family:Verdana,sans-serif } h2 { font-size:110%; margin-bottom:0;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;120&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;font-family:Verdana,sans-serif } h2 { font-size:110%; margin-bottom:0;
 font-family:Verdana,sans-serif } h3 { font-size:100%; margin-bottom:0;
 font-family:Verdana,sans-serif } h4 { font-size:100%; margin-bottom:0;
 font-family:Verdana,sans-serif } &lt;/p&gt;
 &lt;p&gt;Bu kullanım yerine&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1,h2,h3,h4 { margin-bottom:0;
-font-family:Verdana,sans-serif } h1 { font-size:120% } h2 {
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;h2&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;h3&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;h4&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;font-family:Verdana,sans-serif } h1 { font-size:120% } h2 {
 font-size:110% } h3,h4 { font-size:100% } &lt;/p&gt;
 &lt;h3&gt;5- CSS Kısaltmalarını kullanmak&lt;/h3&gt;
 &lt;p&gt;CSS bazı elementlerin tanımlasını yaparken kısaltmaları kullanmamıza
@@ -32793,13 +33118,17 @@ sorun yaşarız. Örneğin float:left değeri atanmış bir içerik kutusuna
 soldan 100px kadar ayırmak istediğinde IE'de soldan 100px olması gereken
 mesafe 200px görünecektir. &lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="http://www.fatihhayrioglu.com/images/ikikat_margin.gif" /&gt;&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] .kapsul1 { float: left; width: 150px;
-height: 150px; margin-left: 100px; }  Bu hataya yanlızca
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.kapsul1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;150px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;height: 150px; margin-left: 100px; }  Bu hataya yanlızca
 float ve margin atamalarını beraber kullandığımız blok-level
 elementlerde karşılaşmaktayız. Bu element'ten sonraki elementlerde bu
 hata görülmeyecektir. Yani bu hataya sadece ilk float-margin uygulanan
 blok-level element maruz kalacaktır. Çözümü ise çok basit
-&lt;strong&gt;display:inline&lt;/strong&gt; tanımlaması bizim sorunumuzu çözecektir. [sourcecode language='css'] .kapsul1 { float: left; width: 150px; height: 150px;
+&lt;strong&gt;display:inline&lt;/strong&gt; tanımlaması bizim sorunumuzu çözecektir.     :::css
+     .kapsul1 { float: left; width: 150px; height: 150px;
 margin-left: 100px; display: inline; }  Bu makale
 hazırlanırken &lt;a href="http://www.positioniseverything.net/explorer/doubled-margin.html"&gt;positioniseverything.net&lt;/a&gt; yararlanılmıştır. Daha
 ayrıntılı bilgiyi bu sitede bulabilirsiniz.(eng)&lt;/p&gt;
@@ -32828,7 +33157,10 @@ kontrol eder. Metin özellikleri metin düzeni için çok avantajlı
 bir özelliktir.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; text-indent: &lt;deger&gt; &lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;uzunluk değeri &gt;&lt;/a&gt; | &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;yüzde&gt;&lt;/a&gt; &lt;strong&gt;Başlnagıç değeri:&lt;/strong&gt; 0
 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; Blok-level elementler &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Var&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p { text-indent: 10px; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text-indent&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 3+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -32841,7 +33173,10 @@ Sadece metinler için kullanılmaz, diğer elementler içinde kullanılır.&lt;/
 &lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; text-align: &lt;deger&gt; &lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;uzunluk değeri &gt;&lt;/a&gt; | &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;yüzde&gt;&lt;/a&gt; | inherit &lt;strong&gt;Başlnagıç
 değeri:&lt;/strong&gt; 0 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p { text-align: justify; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;justify&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 3+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -32864,7 +33199,10 @@ Level 1+ CSS Profile 1.0
 :&lt;/strong&gt;&lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;yüzde&gt;&lt;/a&gt; | baseline | sub | super | top |
 text-top | middle | bottom | text-bottom &lt;strong&gt;Başlnagıç değeri:&lt;/strong&gt; baseline
 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; inline elementler &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] img { vertical-align: baseline; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;vertical-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;baseline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 6+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -32878,7 +33216,10 @@ Level 1+ CSS Profile 1.0
 &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;sayı&gt;&lt;/a&gt; | &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;uzunluk değeri &gt;&lt;/a&gt; |
 &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;yüzde&gt;&lt;/a&gt; &lt;strong&gt;Başlnagıç değeri:&lt;/strong&gt; normal
 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Var&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] div{ line-height:30px } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;line-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;30px&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 3+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -32890,7 +33231,10 @@ Level 1+ CSS Profile 1.0
 &lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; word-spacing: &lt;deger&gt; &lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; normal |
 &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;uzunluk değeri &gt;&lt;/a&gt; &lt;strong&gt;Başlnagıç değeri:&lt;/strong&gt; normal &lt;strong&gt;Uygulanabilen
 elementler:&lt;/strong&gt; tüm elementler &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Var&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p { word-spacing: 10px; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;word-spacing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4.5+(Mac); 6 (Windows) Netscape 6+
 Opera 3.6+ W3C's CSS Level 2+
@@ -32902,7 +33246,10 @@ Opera 3.6+ W3C's CSS Level 2+
 &lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; letter-spacing: &lt;deger&gt; &lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; normal |
 &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;uzunluk değeri &gt;&lt;/a&gt; &lt;strong&gt;Başlnagıç değeri:&lt;/strong&gt; normal &lt;strong&gt;Uygulanabilen
 elementler:&lt;/strong&gt; tüm elementler &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Var&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p { letter-spacing: 5px; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;letter-spacing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -32919,7 +33266,10 @@ Level 1+ CSS Profile 1.0
 &lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; text-transform: &lt;deger&gt; &lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; none |
 capitalize | uppercase | lowercase &lt;strong&gt;Başlnagıç değeri:&lt;/strong&gt; none
 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Var&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p { text-transform: capitalize; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text-transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;capitalize&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -32931,8 +33281,11 @@ Level 1+ CSS Profile 1.0
 metinlerizinaltını çizmek gibi.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; text-decoration: &lt;deger&gt; &lt;strong&gt;Aldığı Değerler :&lt;/strong&gt;none | [ underline || overline || line-through || blink ] &lt;strong&gt;Başlnagıç değeri:&lt;/strong&gt;
 none &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] a:link, a:visited, a:active {
-text-decoration: none } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:link&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:visited&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:active&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;text-decoration: none } &lt;/p&gt;
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 3+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -33378,7 +33731,10 @@ değeri:&lt;/strong&gt; 0 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt;
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;padding-top&lt;/strong&gt; özelliği içerik alanı ile üst kenarlık
 arasındakimesafeyi belirler.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h2 { padding-left: 0.25in; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;padding-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0.25in&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -33391,7 +33747,10 @@ değeri:&lt;/strong&gt; 0 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt;
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;padding-right&lt;/strong&gt; özelliği içerik alanı ile sağ kenarlık
 arasındakimesafeyi belirler.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h2 { padding-right: 0.25in; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;padding-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0.25in&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -33403,7 +33762,8 @@ Level 1+ CSS Profile 1.0
 değeri:&lt;/strong&gt; 0 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;padding-bottom&lt;/strong&gt; özelliği içerik alanı ile alt kenarlık
-arasındakimesafeyi belirler. [sourcecode language='css'] h2 {
+arasındakimesafeyi belirler.    :::css
+     h2 {
 padding-bottom: 0.25in; } &lt;/p&gt;
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 3.6+ W3C's CSS
@@ -33417,7 +33777,10 @@ değeri:&lt;/strong&gt; 0 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt;
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;padding-left&lt;/strong&gt; özelliği içerik alanı ile sol kenarlık
 arasındakimesafeyi belirler.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h2 { padding-left: 0.25in; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;padding-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0.25in&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 4+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -33430,8 +33793,11 @@ değeri:&lt;/strong&gt; 0 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt;
 elementler &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;padding&lt;/strong&gt;özelliği padding-top, padding-right, padding-bottomve
 padding-left değerlerini kısayoldan atamak için kullanılır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1 { padding: 10px; background-color:
-silver; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;silver; } &lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/?p=113"&gt;margin&lt;/a&gt;'deki gibi farklı kullanım şekilleri mevcuttur.&lt;/p&gt;
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 3.6+ W3C's CSS
@@ -33464,7 +33830,10 @@ değeri:&lt;/strong&gt; 0 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt;
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;margin-top&lt;/strong&gt; özelliği elementin üst kenar boşluğunu bellibir değer
 kadar veya yüzde olarak belirler.Negatif değer alabilir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] body { margin-top: 0 } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -33477,7 +33846,10 @@ değeri:&lt;/strong&gt; 0 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt;
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;margin-right&lt;/strong&gt; özelliği elementin sağ kenar boşluğunu bellibir değer
 kadar veya yüzde olarak belirler.Negatif değer alabilir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p.diger { margin-right: 50% } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.diger&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 3+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -33489,7 +33861,8 @@ Level 1+ CSS Profile 1.0
 değeri:&lt;/strong&gt; 0 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;margin-bottom&lt;/strong&gt; özelliği elementin alt kenar boşluğunu bellibir değer
-kadar veya yüzde olarak belirler.Negatif değer alabilir. [sourcecode language='css'] p { margin-bottom: 10px } &lt;/p&gt;
+kadar veya yüzde olarak belirler.Negatif değer alabilir.    :::css
+     p { margin-bottom: 10px } &lt;/p&gt;
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -33502,7 +33875,10 @@ değeri:&lt;/strong&gt; 0 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt;
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;margin-left&lt;/strong&gt; özelliği elementin sol kenar boşluğunu bellibir değer
 kadar veya yüzde olarak belirler.Negatif değer alabilir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p { margin-left: 10px } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 3+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -33516,16 +33892,22 @@ Tanımsız &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementle
 Yok&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;margin&lt;/strong&gt; özelliği yukardaki özelliklerin tek bir özellikle uygulanması
 içinkullanılır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1 { margin: 0.25in; background-color:
-silver; } h1 { margin: 10px 20px 15px 5px; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0.25in&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;silver; } h1 { margin: 10px 20px 15px 5px; } &lt;/p&gt;
 &lt;p&gt;yukarıda &lt;strong&gt;h1&lt;/strong&gt; için margin değerleri sıralaması şöyledir:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;margin: üst sağ alt sol(saat yönünde)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;ikili ve üçlü kullanımda mevcuttur&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1 {margin: 0.25em 0 0.5em;} /&lt;em&gt; esittir
-'0.25em 0 0.5em 0' &lt;/em&gt;/ h2 {margin: 0.15em 0.2em;} /&lt;em&gt; esittir '0.15em
-0.2em 0.15em 0.2em' &lt;/em&gt;/ p {margin: 0.5em 10px;} /&lt;em&gt; esittir '0.5em 10px
-0.5em 10px' &lt;/em&gt;/ p.close {margin: 0.1em;} /&lt;em&gt; esittir '0.1em 0.1em 0.1em
-0.1em' &lt;/em&gt;/ &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0.25em&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0.5em&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt; &lt;span class="o"&gt;/*&lt;/span&gt; &lt;span class="nt"&gt;esittir&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;'0.25em 0 0.5em 0' &lt;em&gt;/ h2 {margin: 0.15em 0.2em;} /&lt;/em&gt; esittir '0.15em
+0.2em 0.15em 0.2em' &lt;em&gt;/ p {margin: 0.5em 10px;} /&lt;/em&gt; esittir '0.5em 10px
+0.5em 10px' &lt;em&gt;/ p.close {margin: 0.1em;} /&lt;/em&gt; esittir '0.1em 0.1em 0.1em
+0.1em' */ &lt;/p&gt;
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 3.6+ W3C's CSS
 Level 1+ CSS Profile 1.0
@@ -33932,7 +34314,10 @@ sırasıyla üst, sağ, alt ve sol kenarlık stilini belirler. Eğer tek
 değeri varsa tüm kenarlık değeri ataması yapılmış demektir. Eğer iki
 veya üç değer ataması yapılmış ise &lt;a href="http://www.fatihhayrioglu.com/?p=6#more-6"&gt;margin&lt;/a&gt;'de gördüğümüz sıralama söz
 konusudur.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] p.yeni { border-style: solid; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.yeni&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;border-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:**  
 Internet Explorer 4+   
@@ -33957,8 +34342,11 @@ CSS Profile 1.0
 &lt;p&gt;&lt;strong&gt;border-top-style, border-right-style, border-bottom-style,
 border-left-style&lt;/strong&gt; border-style özelliğinin her kenara ayrı ayrı
 atamasını yapabilmek için kullanılır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1{ border-style: solid; border-left-style:
-none; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;border-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;border-left-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;none; } &lt;/p&gt;
 &lt;div class="tarayiciuyum"&gt;
 **Browser Uyumu:**  
 Internet Explorer 4+(kısmen),6+ (tam)  
@@ -33982,7 +34370,8 @@ CSS Profile 1.0
 &lt;p&gt;İlk olarak stili belirledikten sonra kenarlık kalınlığını belirlemek
 için &lt;strong&gt;border-width&lt;/strong&gt; değeri kullanılır.&lt;/p&gt;
 &lt;p&gt;
-**border-width** yüzde değeri alamaz. [sourcecode language='css'] p {
+**border-width** yüzde değeri alamaz.   :::css
+     p {
 margin: 5px; background-color: silver; border-style: solid;
 border-width: 1px; }
 
@@ -34012,7 +34401,8 @@ inherit
 border-left-width** border-width özelliğinin her kenara ayrı ayrı
 atamasını yapabilmek için kullanılır.
 
-[sourcecode language='css'] h2 { border-left-width: medium;
+    :::css
+     h2 { border-left-width: medium;
 border-style: solid; } 
 
 &lt;div class="tarayiciuyum"&gt;
@@ -34038,7 +34428,8 @@ CSS Profile 1.0
 **border-color** özelliği kenarlık rengini belirler. (X)html'deki
 **bordercolor** ile benzerdir.
 
-[sourcecode language='css'] p { border-style: solid; border-color: gray;
+    :::css
+     p { border-style: solid; border-color: gray;
 } 
 
 Tek değer tüm kenarlık renklerini belirler, her kenar için ayrı renk
@@ -34071,7 +34462,8 @@ için kullanılır.
 CSS2 ile birlikte gelen transparent özelliği vardır ki bu kenarlığı yok
 etmez sadece görünmez yapar.
 
-[sourcecode language='css'] p { border-style: solid; border-color: gray;
+    :::css
+     p { border-style: solid; border-color: gray;
 } 
 
 Tek değer tüm kenarlık renklerini belirler, her kenar için ayrı renk
@@ -34098,12 +34490,14 @@ CSS Profile 1.0
 **border**yukarıda sıraladığımız özellikleri tek sefer de tanımlamak
 için kullanılır. Bir [kısaltmadır][].
 
-[sourcecode language='css'] h1 { border: thick silver solid; }
+    :::css
+     h1 { border: thick silver solid; }
 
 Bu özellikleri tek tek atamak isteseydik şöyle bir kod yazmamız
 gerekecekti.
 
-[sourcecode language='css'] h1 { border-top: thick silver solid;
+    :::css
+     h1 { border-top: thick silver solid;
 border-bottom: thick silver solid; border-right: thick silver solid;
 border-left: thick silver solid; }
 
@@ -34358,7 +34752,10 @@ değeri &lt;strong&gt;print&lt;/strong&gt; atanır.&lt;/p&gt;
 &lt;p&gt;[sourcecode language='html']
 &lt;link rel="stylesheet" type="text/css" href="ciktistil.css" media="print"&gt;&lt;/p&gt;
 &lt;p&gt;Diğer bir yöntemde import kullanımıdır.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;style type="text/css"&gt; 
     @import url("webicin.css") screen; 
     @import url("ciktial.css") print; 
@@ -34372,12 +34769,18 @@ kullanılır( Verdana veya Arial gibi) çıktı almak içinse serif fontları
 kullanılmalıdır(Times New Roman veya Garamond gibi) Örneğin sayfa
 içindeki h1 veya p için yapılan sans-serfi fontları serif fontlarla
 değiştirelim.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1, p { font-family: Garamond, "Times New
-Roman", Times, serif; } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Garamond&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="n"&gt;Times&lt;/span&gt; &lt;span class="n"&gt;New&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Roman", Times, serif; } &lt;/p&gt;
 &lt;p&gt;Web için verilen değerler &lt;strong&gt;px&lt;/strong&gt; veya &lt;strong&gt;em&lt;/strong&gt; yerine &lt;strong&gt;pt&lt;/strong&gt; değeri
 kullanılmalıdır. Çıktı alırken daha iyi sonuçlar verir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1 { font: 24pt Garamond, "Times New Roman",
-Times, serif; } p { font: 12pt Garamond, "Times New Roman", Times,
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;24pt&lt;/span&gt; &lt;span class="n"&gt;Garamond&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Times New Roman&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Times, serif; } p { font: 12pt Garamond, "Times New Roman", Times,
 serif; } &lt;/p&gt;
 &lt;p&gt;Ayrıca &lt;strong&gt;line-height&lt;/strong&gt; değeri, &lt;strong&gt;font-weight&lt;/strong&gt; değeri, &lt;strong&gt;word-spacing&lt;/strong&gt;
 ve &lt;strong&gt;text-align&lt;/strong&gt; değerlerini de çıktı ama durumu için düzenlemeliyiz.
@@ -34392,18 +34795,27 @@ yöntemide &lt;strong&gt;display:none&lt;/strong&gt;'dır.&lt;/p&gt;
 &lt;p&gt;Bir elementin &lt;strong&gt;display&lt;/strong&gt; özelliğini "&lt;strong&gt;none&lt;/strong&gt;" yaparak çıktı alırken
 görütülenmesini engelleriz. Örneğin solmenu için #SolMenu tanımlması
 yapmış isek&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] #SolMenu{ display:none } &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#SolMenu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;kodu ile bu bölümü çıktı alırken görüntü dışında bırakacağız. Bu yöntemi
 formlar, menüler, bannerlar, ana resimler hariç diğer resimler vb.
 gereksiz bölümleri bu şekilde çıkarmalıyız.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Margin'ler, Renkler ve Diğerleri&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Çıktı alırken yazıların tabloları ve diğer elementlerin daha açık ve net
 görünmesi için aralarına belirli mesafeler vermeliyiz.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] table { margin-top:10px; } div { margin:10px
-} &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;} &lt;/p&gt;
 &lt;p&gt;Çıktı alacağımız sayfalarda &lt;strong&gt;px&lt;/strong&gt; vd. birimler yerine &lt;strong&gt;inç&lt;/strong&gt; birimini
 kullanmak daha iyi sonuçlar verir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] table{ margin:sin } div{ margin:1in }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;table&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1in&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Renklerle ilgili olarakta şunu söyleyebilriz ki, web sitelerinde bir çok
 renk kullanılır ancak bu renklerin çıktı alırken görünümü web
 tarayıcılrdaki görünümüne benzemez, bu nednele fontları siyah veya
@@ -34664,9 +35076,11 @@ böler) &lt;strong&gt;Pseudo elementi&lt;/strong&gt; ise bir elementi alt kısı
 bir paragrafın ilk harfi, bir paragrafın ilk satırı gibi.)&lt;!--more--&gt;
 Pseudo sınıfına örnek:  :::css
      a:visited { color:
-red; }  Pseudo elementine örnek: [sourcecode language="css"] p:first-line { font-weight: bold; }  Pseudo
+red; }  Pseudo elementine örnek:    :::css
+     p:first-line { font-weight: bold; }  Pseudo
 sınıf ve elemtleri HTML class özelliği olarak belirtilmemiştir. Normal
-sınıflar pseudo sınıf ve elementleri ile kullanılabilir. [sourcecode language="css"] a.disariyalinkller:link, a.disariyalinkller:visited {
+sınıflar pseudo sınıf ve elementleri ile kullanılabilir.    :::css
+     a.disariyalinkller:link, a.disariyalinkller:visited {
 color: maroon; }  Aynı şekilde id seçicileri ile birlikte
 de kullanılabilirler    :::css
      a#altkisim:link{
@@ -34713,7 +35127,8 @@ ile geldiğimizde renk değiştirmesini sağlamak için Linkler için genel
 kullanım    :::css
      a:link { color: navy; } a:visited {
 color: gray; } a:hover { color: red; } a:active { color: yellow; }
- &lt;strong&gt;:focus&lt;/strong&gt; için bir örnek verecek olursak [sourcecode language="css"] input:focus { background: silver; font-weight: bold; }&lt;/p&gt;
+ &lt;strong&gt;:focus&lt;/strong&gt; için bir örnek verecek olursak  :::css
+     input:focus { background: silver; font-weight: bold; }&lt;/p&gt;
 &lt;div class="tarayiciuyum"&gt;
 **Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
 
@@ -34887,10 +35302,12 @@ hata gelebilir. Bu gayet normal bir haldir. Mesele bu hataları
 kenar çizgisi(border) atamaktır.    :::css
      li a {
 border: 1px solid red; }  Diğer bir yöntemde elemente
-ardalan rengi(background-color) uygulamaktır. [sourcecode language="css"] #icerikalani { background-color:#999; } 
+ardalan rengi(background-color) uygulamaktır.   :::css
+     #icerikalani { background-color:#999; } 
 Böylece elementin etki alanı görülecek ve hatayı tespit kolaylaşacaktır.&lt;/p&gt;</summary><category term="background"></category><category term="CSS"></category><category term="Hata ayıklama"></category><category term="kenar-çizgisi"></category></entry><entry><title>CSS İpuçları - 1</title><link href="http://www.fatihhayrioglu.com/css-ipuclari-1/" rel="alternate"></link><updated>2006-07-14T23:14:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-07-14:css-ipuclari-1/</id><summary type="html">&lt;p&gt;Bir yazı tipi(font) tanımlaması yapılırken eğer yazı tipi adı arasında
 boşluk varsa(örn: Times New Roman) uygulamada sorun olur. Sorunun çözümü
-boşluk olan yazı tipi ismini çift tırnak("") içine almaktır. [sourcecode language='css'] body{ font-family: times, "times new roman", serif; }&lt;/p&gt;</summary><category term="CSS"></category><category term="font"></category><category term="font-isimleri"></category><category term="yazı tipi"></category><category term="yazı-tipi isimleri"></category></entry><entry><title>Kod renklendirmek için javascript</title><link href="http://www.fatihhayrioglu.com/kod-renklendirmek-icin-javascript/" rel="alternate"></link><updated>2006-07-14T22:44:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-07-14:kod-renklendirmek-icin-javascript/</id><summary type="html">&lt;p&gt;Bir çok editörün yaptığı işi web sayfalarımızda yapmak için javascript
+boşluk olan yazı tipi ismini çift tırnak("") içine almaktır.    :::css
+     body{ font-family: times, "times new roman", serif; }&lt;/p&gt;</summary><category term="CSS"></category><category term="font"></category><category term="font-isimleri"></category><category term="yazı tipi"></category><category term="yazı-tipi isimleri"></category></entry><entry><title>Kod renklendirmek için javascript</title><link href="http://www.fatihhayrioglu.com/kod-renklendirmek-icin-javascript/" rel="alternate"></link><updated>2006-07-14T22:44:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-07-14:kod-renklendirmek-icin-javascript/</id><summary type="html">&lt;p&gt;Bir çok editörün yaptığı işi web sayfalarımızda yapmak için javascript
 ile hazırlanmış kod. Uygulması ve geliştirmesi gayet kolay olan koda
 ulaşmak için &lt;a href="http://www.dreamprojections.com/syntaxhighlighter/"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Firefox 2 Beta ile birlikte Yahoo hızlı arama geliyor</title><link href="http://www.fatihhayrioglu.com/firefox-2-beta-ile-birlikte-yahoo-hizli-arama-geliyor/" rel="alternate"></link><updated>2006-07-14T22:33:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-07-14:firefox-2-beta-ile-birlikte-yahoo-hizli-arama-geliyor/</id><summary type="html">&lt;p&gt;&lt;img alt="nih-1.JPG" src="http://www.fatihhayrioglu.com/wp-content/nih-1.thumbnail.JPG" /&gt;Firefox 2 Beta ile birlikte Yahoo hızlı arama (Live
 Search) arama bölümüne ekleniyor. Google ile sıkı ilişkileri olan
@@ -34977,7 +35394,8 @@ düşünün ve her iki alanın içinde de linkler olduğunu farz edelim. Tüm
 linkleri mavi olarak atamamız mümkün olmayacaktır çünkü ilk alanın
 ardaalanı mavi olduğu için linkler görünmeyecektir. Çözüm Torun
 Seçicilerindedir; ilk alan içindeki linklere farklı renk diğerlerine
-farklı renk tanımlaması yaparak bu işi halledebiliriz. [sourcecode language="css"] td.sidebar { background: blue; } td.main { background:
+farklı renk tanımlaması yaparak bu işi halledebiliriz.  :::css
+     td.sidebar { background: blue; } td.main { background:
 white; } td.sidebar a:link { color: white; } td.main a:link { color:
 blue; }  Bir örnek daha verelim. &lt;strong&gt;blockquote&lt;/strong&gt; ve &lt;strong&gt;p&lt;/strong&gt;
 elementleri içindeki &lt;strong&gt;b&lt;/strong&gt; elementi ile &lt;strong&gt;blockquote&lt;/strong&gt; içinde ve normal
@@ -35001,7 +35419,8 @@ destekliyor
 ayrıntılı bir ayrım yapmak isteyebiliriz. Örneğin bir &lt;strong&gt;h1&lt;/strong&gt; elementinin
 altındaki&lt;strong&gt;strong&lt;/strong&gt; elementlerinden &lt;strong&gt;sadece&lt;/strong&gt; Çocuk Elementi için
 tanımlamalar yapmak istersek (torun elementleri hariç), Bunun için çocuk
-bağlayıcısını kullanırız ( &amp;gt; ) büyüktür işareti [sourcecode language="css"] h1 &amp;gt; strong { color: red; }  [sourcecode language="html"]&lt;h1&gt;Bu &lt;strong&gt;koda&lt;/strong&gt;
+bağlayıcısını kullanırız ( &amp;gt; ) büyüktür işareti     :::css
+     h1 &amp;gt; strong { color: red; }  [sourcecode language="html"]&lt;h1&gt;Bu &lt;strong&gt;koda&lt;/strong&gt;
 uygulanacaktır.&lt;/h1&gt; &lt;h1&gt;Bu &lt;em&gt;koddaki &lt;strong&gt; bu kısım
 &lt;/strong&gt;&lt;/em&gt; uygulama dışıdır..&lt;/h1&gt;  Yukardaki
 durumda sadece ilk &lt;strong&gt;strong&lt;/strong&gt; elementi için tanımlama gerçekleşecektir
@@ -35233,18 +35652,21 @@ Tüm HTML elementleri potansiyel Seçicilerdir. Seçiciler ismini de
 buradan alır, HTML seçilen element anlamındadır. Bildirim bloğu süslü
 parantezle açılır ve kapanır. Bildirimler arasında " ; " noktalı virgül
 kullanılır. özellik ve değerler birbirinden " : " iki nokta üstüste ile
-ayrılır. [sourcecode language='css'] h1 {font: medium Arial;}
+ayrılır.    :::css
+     h1 {font: medium Arial;}
 şeklinde arada boşluk verilerekde bildirm yapılabilir.
 Burada ilki font'un boyutunu ikincisi ise font ismini gösterir. İleride
 bu konuya daha ayrıntılı gireceğiz. Ayrıca sadece font etiketine özel "
-/ " kullanımı vardır örnek aşağıda: [sourcecode language='css'] h1
+/ " kullanımı vardır örnek aşağıda:     :::css
+     h1
 {font: medium/120% Arial;} Burada " / " Seçicinin font
 boyutunu ve satır yüksekliğini gösterir.(font_boyutu/satir_yuksekliği)&lt;/p&gt;
 &lt;h5&gt;Gruplama&lt;/h5&gt;
 &lt;p&gt;Yukarıda hep bir Seçici'yi sadece bir HTML elementine atamayı gördük,
 Birden fazla HTML elementine de atama yapabilirz, buna &lt;strong&gt;gruplama&lt;/strong&gt;
 denir. Gruplama Seçicilerde yapıldığı gibi Bildirmlerde de yapılabilir.
-[sourcecode language='css'] p, h3 {font-family: Arial;} &lt;/p&gt;
+    :::css
+     p, h3 {font-family: Arial;} &lt;/p&gt;
 &lt;div class="not"&gt;
 &lt;div class="notbaslik"&gt;
 Not
@@ -35261,7 +35683,8 @@ ayırmak için " , " virgül kullanılır. Sınırsız sayıda Seçici
 gruplanabilir. Gruplama tasarımcılara büyük kolaylıklar sağlar.
 Bildirim'lerimizi de gruplayabiliriz, bununla ilgili yukarıda örnekler
 mevcut. Bir veya daha fazla Seçiciye bir den fazla bildirim ekleye
-biliriz. [sourcecode language='css'] p, h3 { font-family: Arial;
+biliriz.    :::css
+     p, h3 { font-family: Arial;
 font-size:2; font-weight: bold; }  Seçiciler ikiye ayrılır.
 Sınıf Seçicisi ve Id Seçicisi. CSS ile işlenmemiş bir dökümanda
 başlangıçta bir plan yaparak hangi içeriğin Sınıf Seçicisi hangi
@@ -35270,26 +35693,29 @@ Seçicicinin Id Seçicisi olacağını planlamalıyız.&lt;/p&gt;
 &lt;p&gt;Aynı HTML elementine farklı özellikler atamak için Sınıf Seçicisini
 kullanırız. Bir örnek verecek olursak; hazırlayacağımız dökümanda iki
 adet paragraf tanımlaması yapacağımızı planlıyoruz. Bunlardan biri sağa
-dayalı, diğeri ise ortalı olmasını istiyoruz [sourcecode language='css']
-p.sagadaya {text-align: right} p.ortala {text-align: center}
+dayalı, diğeri ise ortalı olmasını istiyoruz    :::css&lt;/p&gt;
+&lt;p&gt;p.sagadaya {text-align: right} p.ortala {text-align: center}
 Bu Seçicileri sayfamızda uygulamak için; [sourcecode language='html']&lt;/p&gt;
 &lt;p&gt;Aynı HTML elementine farklı özellikler atamak için Sınıf Seçicisini
 kullanırız.&lt;/p&gt;
 &lt;p&gt;Yukarıdaki bilgiyi dikkatlice okumalısınız&lt;/p&gt;
 &lt;p&gt;Birde önemli bir tanımlama yapacağınızı düşünün, ancak
 sadece bir HTML elementine değilde istediğiniz sayıda HTML elementinde
-bunu kullanmak isterseniz; [sourcecode language='css'] .ortala {
+bunu kullanmak isterseniz;  :::css
+     .ortala {
 text-align: center }  Bu tanımlamayı yaptıktan sonra
-istedğimiz her HTML elementine bu sınıfı uygulayabiliriz. [sourcecode language='css'] &lt;span class="ortala"&gt; Burada birşeyler yazar &lt;/span&gt;&lt;/p&gt;
+istedğimiz her HTML elementine bu sınıfı uygulayabiliriz.   :::css
+     &lt;span class="ortala"&gt; Burada birşeyler yazar &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Burada da başka bişeyler yazar&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Çoklu sınıflar,&lt;/strong&gt; birden fazla sınıfı bir HTML
-elementine uygulamak için kullanılır. [sourcecode language='css']&lt;/p&gt;
+elementine uygulamak için kullanılır.   :::css&lt;/p&gt;
 &lt;p&gt;Ülkemizde meydana gelen trafik kazalarının yaklaşık % 90'ı insanların
 hataları sonucu eydana gelmektedir.&lt;/p&gt;
 &lt;p&gt;Yukarıdaki örnekte görüldüğü gibi bir &lt;strong&gt;uyari&lt;/strong&gt; Sınıfımız
 birde &lt;strong&gt;onemli&lt;/strong&gt; Sınıfımız mevcut. Bazı metinlerin &lt;strong&gt;önemli uyarı&lt;/strong&gt;
 olacağı düşüncesi ile böyle bir atama yapılabilir. Bunun için
-kullanıcığımız kod; [sourcecode language='css'] .onemli { font-weight:
+kullanıcığımız kod;     :::css
+     .onemli { font-weight:
 bold; } .uyari { font-style: italic; } .onemli.uyari { background:
 silver; }  Önemli metinler için kalın, uyari için italiktik
 atmalar yapıyoruz. Birde her ikisine birden de atama yapabiliyoruz.
@@ -35299,7 +35725,8 @@ Seçicisinde &lt;strong&gt;.onemli.uyari&lt;/strong&gt; şeklinde yazıyoruz.&lt
 &lt;p&gt;Id Seçicisi Sınıf Seçicisinden farklıdır. Sınıf Seçicisi sayfada birden
 fazla elemente atanırken Id Seçicisi sadece bir tane elemente atanır.
 Seçicisi adının başında # işareti olan Seçiciler Id Seçicisidir.
-[sourcecode language='css'] ... #mavi { background:blue; } #kirmizi {
+    :::css
+     ... #mavi { background:blue; } #kirmizi {
 background:red; }  [sourcecode language='html']&lt;/p&gt;
 &lt;p&gt;Bu yazının arkafon rengi mavi&lt;/p&gt;
 &lt;p&gt;Bu yazının arkafon rengi kırmızı&lt;/p&gt;
@@ -35312,7 +35739,8 @@ hata alacağızdır. Bu nedenle her nekadar tarayıcılar izin versede Id
 Seçicisini bir kez kullanmalıyız. Birden fazla kullanacağımız elementler
 için Sınıf Seçicisini kullanmalıyız. Bu kodumuzu daha kullanışlı ve
 temiz yapacaktır. Sınıf ve Id Seçicileri küçük-büyük harfe karşı
-duyarlıdır; [sourcecode language='css'] p.onemliBilgi { font-weight:
+duyarlıdır;     :::css
+     p.onemliBilgi { font-weight:
 bold; }  ve kullanımıda; [sourcecode language='html']&lt;/p&gt;
 &lt;p&gt;Uygulama olmaz .&lt;/p&gt;
 &lt;p&gt;Yukarıdaki kod uygulanmayacaktır çünkü " &lt;strong&gt;B&lt;/strong&gt; " bir yerde
@@ -35353,7 +35781,8 @@ kırmızı olarak atama gibi çeşitli stiller verbiliriz ancak bunlar içinde
 ayrı HTML elementleri kullanmak zorundayız (örn:strong, gibi), ancak CSS
 de bunu tek bir elementle yapabiliriz ve ayrıca daha fazla stil
 özellikleride atayabiliriz.(örn: kenarlık, rollover vs stillerini
-ekleyebiliriz.) [sourcecode language='css'] h1 { color: white; font:
+ekleyebiliriz.)     :::css
+     h1 { color: white; font:
 italic 11px Arial, serif; text-decoration: underline; background: yellow
 url(titlebg.gif) repeat-x; border: 1px solid red; margin-bottom: 0;
 padding: 5px; } &lt;/p&gt;
@@ -35364,10 +35793,12 @@ düşünütseniz çok büyük zaman kaybı ve uğraş gerektiğini göreceksiniz
 [sourcecode language='html']&lt;/p&gt;
 &lt;h1&gt;&lt;font color="blue"&gt;Başlık&lt;/font&gt;&lt;/h1&gt;
 &lt;p&gt;Bunun gibi onlarca veya yüzlerce başlığınız olduğunu
-düşünün, gerçekten çok zor. CSS'de aynı işlem için [sourcecode language='css'] h1 {color: blue;} hatta daha sonra bu
+düşünün, gerçekten çok zor. CSS'de aynı işlem için  :::css
+     h1 {color: blue;} hatta daha sonra bu
 elementin özelliklerinde değişiklik yapmamızda kolay olacaktır. Hatta bu
 işlemi sadece bu etiket için değil diğer etiketlerede uygulayabiliriz.
-[sourcecode language='css'] h1, h2 {color: blue;}  Ayrıca
+    :::css
+     h1, h2 {color: blue;}  Ayrıca
 tek bir CSS dosyası ile sitenin tamamının yönetmekte web kodlamacıları
 için çok büyük kolaylıktır. Sadece bir dosyada değişlik yaparak tüm
 sitemizi yönetebiliriz isterse yüzlerce sayfa olsun.&lt;/p&gt;
@@ -35436,7 +35867,8 @@ ve transparan PNG'ler diğer resimlere göre büyük avantaj sağlar.
 &lt;a href="http://www.positioniseverything.net/articles/dropshadows.html" title="İE 7'nin yenilikleri"&gt;http://www.positioniseverything.net/articles/dropshadows.html&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Saray Hatıralarım - Safiye Ünivar</title><link href="http://www.fatihhayrioglu.com/saray-hatiralarim-safiye-univar/" rel="alternate"></link><updated>2006-05-08T21:06:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-05-08:saray-hatiralarim-safiye-univar/</id><summary type="html">&lt;p&gt;Sultan Reşad zamanında sarayda muallimelik(öğretmenlik) yapmış olan
 Safiye Ünivar'ın sarayda yaşadıkları gördükleri ve dinlediklerini
 okuyoruz. Saray hayatına ışık tutan bir eser. Ayrıca Tarih'in bir
-kısmına da ışık tutuyor. Farklı yönde&lt;/p&gt;</summary><category term="Kitaplar"></category></entry><entry><title>Css de kodumuzu İE6'dan gizleme</title><link href="http://www.fatihhayrioglu.com/css-de-kodumuzu-ie6dan-gizleme/" rel="alternate"></link><updated>2006-05-04T00:11:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-05-04:css-de-kodumuzu-ie6dan-gizleme/</id><summary type="html">&lt;p&gt;Bir kodu İE'den gizlemek istiyorsak [sourcecode language='css'] p{
+kısmına da ışık tutuyor. Farklı yönde&lt;/p&gt;</summary><category term="Kitaplar"></category></entry><entry><title>Css de kodumuzu İE6'dan gizleme</title><link href="http://www.fatihhayrioglu.com/css-de-kodumuzu-ie6dan-gizleme/" rel="alternate"></link><updated>2006-05-04T00:11:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-05-04:css-de-kodumuzu-ie6dan-gizleme/</id><summary type="html">&lt;p&gt;Bir kodu İE'den gizlemek istiyorsak     :::css
+     p{
 color:red !important; /&lt;em&gt; bu kısmı ie6 görmeyecek&lt;/em&gt;/ color:blue; }
 sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı
 görünecektir. !important css ile etkinlik için kullanılan bir etikettir.
@@ -35630,7 +36062,8 @@ web tarayıcıları bu durumu aynı şekilde yorumlamaz. IE'un IE6/strict'den
 önceki versiyonları yukarıda anlattığımız standart yorumun dışına çıkar,
 genişlik veya yükseklik değeri tüm kutu model element değerini ifade
 eder. Yani tüm padding ve border değerlerini içerir kalan kısmıda içerik
-alanı değeri olarak belirlenir. [sourcecode language='css'] #icerik{
+alanı değeri olarak belirlenir.     :::css
+     #icerik{
 width:200px; padding:10px; border:5px solid #000; } 
 Standart web tarayıcıları bu durumu şöyle yorumlayacaklardır. 200px +
 10px sol kenar iç boşluğu + 5px sol kenar çizgisi + 10px sağ kenar iç
@@ -35643,14 +36076,16 @@ dolaylı olarak etkiler. Kutular arasındaki genişliği hesaplarken margin
 değerlerinide dikkate almalıyız. CSS ile sayfa yapıların oluştururken
 kenar dış boğluklarını(margin) da dikkate elmalıyız. Bu sorunun çözümü
 için üretilmiş bir çok yöntem vardır. Ancak bence en sağlamı
-&lt;a href="http://www.tantek.com/CSS/Examples/boxmodelhack.html"&gt;tantek&lt;/a&gt;'in ürettiği koddur ve burada bundan bahsedeceğim. [sourcecode language='css'] #icerik{ width:230px; padding:10px; border:5px solid&lt;/p&gt;
+&lt;a href="http://www.tantek.com/CSS/Examples/boxmodelhack.html"&gt;tantek&lt;/a&gt;'in ürettiği koddur ve burada bundan bahsedeceğim.    :::css
+     #icerik{ width:230px; padding:10px; border:5px solid&lt;/p&gt;
 &lt;h1&gt;000; /&lt;em&gt; Bundan sonraki kısmı ie5win sakla &lt;/em&gt;/ voice-family:&lt;/h1&gt;
 &lt;p&gt;""}""; voice-family:inherit; width:200px; }  Burdaki
 ilk genişilk değeri(2. satırdaki) IE'un IE6/strict'den önceki
 versiyonların yorumlayacağı genişlik değeri, ikinci genişlik değeri(7.
 satırdaki) ise standart yorumu destekleyen web tarayıcılarının
 kullanacağı değerdir. Bu kodlamada son olarak Opera 5 için bir kod
-ekleyeceğiz. [sourcecode language='css'] #icerik{ width:230px;
+ekleyeceğiz.    :::css
+     #icerik{ width:230px;
 padding:10px; border:5px solid #000; /&lt;em&gt; Bundan sonraki kısmı ie5win
 sakla &lt;/em&gt;/ voice-family: ""}""; voice-family:inherit; width:200px; }
 html&amp;gt;body #icerik { width:200px; }  Not: Aynı şeyler
@@ -35719,16 +36154,19 @@ yarışıyor.Sonuç kullanıcıya yarıyor.&lt;/p&gt;</summary><category term="g
 Böylece hem fazla kod yığınından kurtulmuş oluruz, hemde sayfa
 boyutlarını en aza indirmiş oluruz.&lt;!--more--&gt;&lt;/p&gt;
 &lt;h6&gt;1. Font&lt;/h6&gt;
-&lt;p&gt;Normalde bir font tanımlarken 4 adet CSS kodu kullanılır: [sourcecode language='css'] font-weight: bold; font-family: verdana, sans-serif;
+&lt;p&gt;Normalde bir font tanımlarken 4 adet CSS kodu kullanılır:   :::css
+     font-weight: bold; font-family: verdana, sans-serif;
 font-size: 11px; line-height: 15px; Kısaltma olarak
-kullanlan kod ise tek satır: [sourcecode language='css'] font: bold
+kullanlan kod ise tek satır:    :::css
+     font: bold
 11px/15px verdana, sans-serif; &lt;/p&gt;
 &lt;h6&gt;2. Background&lt;/h6&gt;
 &lt;p&gt;Background tanımlarken 5 adet atama yapmamız gerekirken kısaltma
-kullanarak tek tanıma indirebilriz. [sourcecode language='css']
-background-color: #000; background-image: url(ard.jpg);
+kullanarak tek tanıma indirebilriz.     :::css&lt;/p&gt;
+&lt;p&gt;background-color: #000; background-image: url(ard.jpg);
 background-repeat: no-repeat; background-attachment: fixed;
-background-position: 50px 50px;  Kısaltırsak: [sourcecode language='css'] background: { #000 url(ard.jpg) no-repeat fixed 50px
+background-position: 50px 50px;  Kısaltırsak:   :::css
+     background: { #000 url(ard.jpg) no-repeat fixed 50px
 50px; } &lt;/p&gt;
 &lt;h6&gt;3. Renkler(Hex-decimal)&lt;/h6&gt;
 &lt;p&gt;CSS stillerinde renkler genelde hex-decimal renk kodu ile tanımlanır
@@ -35742,13 +36180,17 @@ karaktere karşılık gelmektedir. Mesela, beyaz renk kullanacağınızda,
 Kısaltılmış olanı &lt;strong&gt;color: #fff;&lt;/strong&gt; kullanmanız daha avantajlıdır.&lt;/p&gt;
 &lt;h6&gt;4. Border&lt;/h6&gt;
 &lt;p&gt;Kenarklık tanımlamalarında her özellik için bir tanımlama yapılır. örnek
-olarak bir elementin üst kenarına atama yapmak için: [sourcecode language='css'] border-top-width: 2px; border-top-style: dashed;
-border-top-color: #f00;  Kısaltırsak: [sourcecode language='css'] border-top: 2px dashed #f00;  Bu
-özellikleri tüm kenarlara uygulmak için: [sourcecode language='css']
-border: 2px dashed #f00; &lt;/p&gt;
+olarak bir elementin üst kenarına atama yapmak için:    :::css
+     border-top-width: 2px; border-top-style: dashed;
+border-top-color: #f00;  Kısaltırsak:   :::css
+     border-top: 2px dashed #f00;  Bu
+özellikleri tüm kenarlara uygulmak için:    :::css&lt;/p&gt;
+&lt;p&gt;border: 2px dashed #f00; &lt;/p&gt;
 &lt;h6&gt;5. Margin ve Padding'ler&lt;/h6&gt;
-&lt;p&gt;Margin ve paddingler de normal tanımlama şöyledir: [sourcecode language='css'] margin-top: 10px; margin-right: 5px; margin-bottom:
-20px; margin-left: 15px; kıslatılmış hali: [sourcecode language='css']margin: 10px 5px 20px 15px; Burada
+&lt;p&gt;Margin ve paddingler de normal tanımlama şöyledir:  :::css
+     margin-top: 10px; margin-right: 5px; margin-bottom:
+20px; margin-left: 15px; kıslatılmış hali:  :::css
+    margin: 10px 5px 20px 15px; Burada
 öznitelikler sağdan başlayarak saat yönünde devam eder. Aşağıda çeşitli
 kısaltma yöntemleri birlikte verilmiştir:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4 Değer:&lt;/strong&gt; (&lt;em&gt;margin: 20px 15px 10px 5px;&lt;/em&gt;) birinci - üst, ikinci -
@@ -35758,16 +36200,18 @@ sağ, üçüncü - alt. &lt;strong&gt;2 Değer:&lt;/strong&gt;(&lt;em&gt;margin:
 alt, ikinci - sol ve sağ. &lt;strong&gt;1 Değer:&lt;/strong&gt; (&lt;em&gt;margin: 10px;&lt;/em&gt;) birinci - üst,
 sağ, alt ve sol&lt;/p&gt;
 &lt;h6&gt;6. Listeler&lt;/h6&gt;
-&lt;p&gt;Liste tanılmalrında da kısaltmalar mümkündür [sourcecode language='css']
-ul { list-style-type:square; list-style-position:inside;
+&lt;p&gt;Liste tanılmalrında da kısaltmalar mümkündür    :::css&lt;/p&gt;
+&lt;p&gt;ul { list-style-type:square; list-style-position:inside;
 list-style-image:url(image.png); }  Kısaltırsak;
-[sourcecode language='css'] ul li { list-style:square inside
+    :::css
+     ul li { list-style:square inside
 url(image.png); } /&lt;em&gt; burda özel bir durum vardır eğer resim yoksa yedek
 olarak square özelliği gösterilecektir. &lt;/em&gt;/ &lt;/p&gt;
 &lt;h6&gt;7. Sıfır '0' ın Kısaltma olarak kullanılması&lt;/h6&gt;
 &lt;p&gt;Kısaltmalarda son olarak '0' ın kullanımına değineceğiz. Normalde bir
 elemente değer ataması yapılırken değerin yanına birimi de yazılır(örn:
-3px, 0.2em vd.), Ancak sıfır '0' için bu zorunlu değilidir. [sourcecode language='css']padding:0; Bu durumun bir istisnası
+3px, 0.2em vd.), Ancak sıfır '0' için bu zorunlu değilidir.     :::css
+    padding:0; Bu durumun bir istisnası
 mevcuttur oda yüzde değerlerinde atama yapılırken &lt;strong&gt;0%&lt;/strong&gt;olarak atama
 yapılmalıdır.&lt;/p&gt;
 &lt;h6&gt;Kaynaklar&lt;/h6&gt;

@@ -97,13 +97,15 @@ sahiptir tabi ki.</p>
 <p>Bu metod cemsid'inde açıkladığı gibi arkaplan resmi(background-image)
 kaydırarak yapılıyor. Genelde bu tip menüler resim içeren veya
 anti-aliased metinlerin kullanıldığı durumlarda kullanılır.</p>
-<p>[sourcecode language='html']</p>
-<ul>
-<li><a href="#" title="Elma">Elma</a></li>
-<li><a href="#" title="Armut">Armut</a></li>
-<li><a href="#" title="Muz">Muz</a></li>
-<li><a href="#" title="Kivi">Kivi</a></li>
-</ul>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;menu&quot;</span> <span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;elma&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Elma&quot;</span><span class="nt">&gt;</span>Elma<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;armut&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Armut&quot;</span><span class="nt">&gt;</span>Armut<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;muz&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Muz&quot;</span><span class="nt">&gt;</span>Muz<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;kivi&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">title=</span><span class="s">&quot;Kivi&quot;</span><span class="nt">&gt;</span>Kivi<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div>
+
+
 <p>Görüldüğü gibi diğer menü başlangıcından farkı olmayan-bir ek hariç- bir
 kodlama. Hariç olan ek her menu elemanına bir <strong>id</strong> atamamız. Çünkü her
 menü elemanı için bir resim tanımlaması yapacağız. Manav dükkanı
@@ -115,63 +117,152 @@ Firefowrk, PaintShopPro vb. programlar kullanabilrisiniz.</p>
 <p><img alt="" src="static/images/menu.jpg" /></p>
 <p>Menüdeki margin, padding ve imgeleri kaldıralım. Boyutlarını ve konumunu
 tanımlayalım:</p>
-<p>[sourcecode language='css'] ul#menu { height: 54px; width: 500px;
-margin: 0; padding: 0; position: relative; } </p>
+<div class="codehilite"><pre><span class="c">#menu{</span>
+    <span class="n">height</span><span class="p">:</span> 54<span class="n">px</span><span class="p">;</span>
+    <span class="n">margin</span><span class="p">:</span> 0<span class="p">;</span>
+    <span class="n">padding</span><span class="p">:</span> 0<span class="p">;</span>
+    <span class="n">position</span><span class="p">:</span> <span class="n">relative</span><span class="p">;</span>
+    <span class="n">width</span><span class="p">:</span> 500<span class="n">px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/images/resimlimenu_01.jpg" /></p>
 <p>Menümüzü yatay olarak sıralamak için</p>
-<p>[sourcecode language='css'] ul#menu li { list-style: none; position:
-absolute; } </p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#menu</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/images/resimlimenu_02.gif" /></p>
 <p>Menü elemanlarının yükseklikleri sabit olduğu için hepsine ortak
 tanımlama yapıyoruz, hepsini kendine has kapsama alanı olması için
 blokladık(display:block) ve konumlandırdık(postion:relative).</p>
-<p>[sourcecode language='css'] ul#menu li a { height: 54px; display:
-block; position:relative; } </p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#menu</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">54px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p>Her menü elemanı için kendi genişliği ve arkaplan resmindeki(menu.jpg)
 yerini belirleyelim.</p>
-<p>[sourcecode language='css'] #elma a{ width:130px; background:
-url(images/menu.jpg) 0 0 no-repeat; } #armut a{ width:142px;
-background: url(images/menu.jpg) -130px 0 no-repeat; } #muz a{
-width:120px; background: url(images/menu.jpg) -272px 0 no-repeat; }</p>
-<h1>kivi a{ width:108px; background: url(images/menu.jpg) -392px 0</h1>
-<p>no-repeat; } </p>
+<div class="codehilite"><pre><span class="nf">#elma</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/menu.jpg)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">130px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#armut</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/menu.jpg)</span> <span class="m">-130px</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">142px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#muz</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/menu.jpg)</span> <span class="m">-272px</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">120px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#kivi</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/menu.jpg)</span> <span class="m">-392px</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">108px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p>ve tüm menü elementlerinin soldan konumu belirleyelim.</p>
-<p>[sourcecode language='css'] #elma {left: 0px;} #armut {left: 130px;}</p>
-<h1 392px;="392px;" left:="left:">muz {left: 272px;} #kivi</h1>
+<div class="codehilite"><pre><span class="nf">#elma</span><span class="p">{</span>
+<span class="k">left</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#armut</span><span class="p">{</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">130px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#muz</span><span class="p">{</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">272px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#kivi</span><span class="p">{</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">392px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/images/resimlimenu_03.jpg" /></p>
 <p>Resimler üzerindeki metinleri kaldırmak için</p>
-<p>[sourcecode language='css'] ul#menu li a { text-indent: -9999px;
-text-decoration: none; } </p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#menu</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/images/resimlimenu_04.jpg" /></p>
 <p>Menümüz tamam. şžimdi de rollover efekti vermek için <strong>a:hover</strong>
 arkaplan resimlerinin konumunu belirleyelim. Konumunu yazarken sadece
 yükseliği üstten konumu değiştirdiğimize dikkat edin.</p>
-<p>[sourcecode language='css'] #elma a:hover{ width:130px; background:
-url(images/menu.jpg) 0 -54px no-repeat; } #armut a:hover{ width:142px;
-background: url(images/menu.jpg) -130px -54px no-repeat; } #muz
-a:hover{ width:120px; background: url(images/menu.jpg) -272px -54px
-no-repeat; } #kivi a:hover{ width:108px; background:
-url(images/menu.jpg) -392px -54px no-repeat; } </p>
+<div class="codehilite"><pre><span class="nf">#elma</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/menu.jpg)</span> <span class="m">0</span> <span class="m">-54px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">130px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#armut</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/menu.jpg)</span> <span class="m">-130px</span> <span class="m">-54px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">142px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#muz</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/menu.jpg)</span> <span class="m">-272px</span> <span class="m">-54px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">120px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#kivi</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/menu.jpg)</span> <span class="m">-392px</span> <span class="m">-54px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">108px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/images/resimlimenu_06.jpg" /></p>
 <p>Son olarakta bir bölümde olduğunda o bölümün aktif görünmesini sağlamak
 için, genel de bunu için a:hover durumu normal durum olarak tanımlanır.
 Bizde öyle yapalım. Mesela <strong>Muz</strong> bölümünde olduğumuzu farz edelim.</p>
-<p>[sourcecode language='html']</p>
-<ul>
-<li><a href="#" title="Elma">Elma</a></li>
-<li><a href="#" title="Armut">Armut</a></li>
-<li><a href="#" title="Muz">Muz</a></li>
-<li><a href="#" title="Kivi">Kivi</a></li>
-</ul>
-<p>[sourcecode language='css'] #elma a.secili{ width:130px;
-background: url(images/menu.jpg) 0 -54px no-repeat; } #armut a.secili{
-width:142px; background: url(images/menu.jpg) -130px -54px no-repeat; }</p>
-<h1>muz a.secili{ width:120px; background: url(images/menu.jpg) -272px</h1>
-<p>-54px no-repeat; } #kivi a.secili{ width:108px; background:
-url(images/menu.jpg) -392px -54px no-repeat; } 
-<iframe src="static/dokumanlar/menu_5.html" width="500" height="110" frameborder="0" scrolling="no"></iframe></p>
-<p>Örnek kodları indirmek için <a href="static/dokumanlar/menu5.zip">tıklayınız.</a></p>
-</p><p><a href=".././css-ile-menu-olusturmak-v-resimli-menuler/#disqus_thread">yorum var</a>.</p>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;elma&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">title=</span><span class="s">&quot;Elma&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Elma<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;armut&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">title=</span><span class="s">&quot;Armut&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Armut<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;muz&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;secili&quot;</span> <span class="na">title=</span><span class="s">&quot;Muz&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Muz<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;kivi&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">title=</span><span class="s">&quot;Kivi&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Kivi<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+<span class="nt">&lt;/ul&gt;</span>
+
+:::css
+#elma a.secili{
+    background: url(images/menu.jpg) 0 -54px no-repeat;
+    width: 130px;
+}
+
+#armut a.secili{
+    background: url(images/menu.jpg) -130px -54px no-repeat;
+    width: 142px;
+}
+
+#muz a.secili{
+    background: url(images/menu.jpg) -272px -54px no-repeat;
+    width: 120px;
+}
+
+#kivi a.secili{
+    background: url(images/menu.jpg) -392px -54px no-repeat;
+    width: 108px;
+}
+</pre></div>
+
+
+<iframe src="static/dokumanlar/menu_5.html" width="500" height="110" frameborder="0" scrolling="no"></iframe>
+
+<p>Örnek kodları indirmek için <a href="static/dokumanlar/menu5.zip">tıklayınız.</a></p><p><a href=".././css-ile-menu-olusturmak-v-resimli-menuler/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

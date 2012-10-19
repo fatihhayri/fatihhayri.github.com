@@ -116,13 +116,19 @@ fare üzerine geldiğinde resmin etrafını çizip bilgisini göstermek. Bu
 resimde üzerini çizdiğimiz ve bilgisini gösterdiğimiz elemanlarada(<li
 class="dexter"> ve <li class="html">) mutlak konumlandırma ile
 tanımlayıp resmin üzerinde istediğimiz konuma yerleştiriyoruz.</p>
-<p>[sourcecode language='css'] ul#foto{ width: 500px; height: 331px;
-position: relative; background: url(images/dexter.jpg) no-repeat;
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#foto</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">500px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">331px</span><span class="p">;</span>
+</pre></div>
+
+
+<p>position: relative; background: url(images/dexter.jpg) no-repeat;
 margin: 0; padding: 0; list-style: none; } </p>
 <p>Aşağıdaki kodda her bir haritalanacak nesne bir link olduğu için her
 birine tek tek atamaktansa genel bir tanım ile tüm linkleri mutlak
 konumlandırıyoruz ve kenar çizgisini tanımlıyoruz.</p>
-<p>[sourcecode language='css'] ul#foto a { position: absolute; color:</p>
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span>
+</pre></div>
+
+
 <h1>000; text-decoration: none; border: 1px solid transparent; }</h1>
 <p>Her bir haritalanacak eleman için genişlik yüksek tanımını yapıyor ve
 kapsayıcı elemana göre konumunu belirliyoruz. Ayrıca haritalanan
@@ -133,8 +139,11 @@ Flickr'daki gibi bilgi kutusunun köşelerini yuvarlamak için tanımlar
 yaptık. Firefox için -moz-border-radius: 3px; Safari ve Google Chrome
 için  -webkit-border-radius: 3px; tanımlarını yaptık. Internet Explorer
 kullanıcıları için şimdilik bir çözüm yok.</p>
-<p>[sourcecode language='css'] ul#foto .dexter a { width: 110px; height:
-175px; top: 25px; left: 60px; } ul#foto .html a { width: 50px; height:
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nc">.dexter</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">110px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span>
+</pre></div>
+
+
+<p>175px; top: 25px; left: 60px; } ul#foto .html a { width: 50px; height:
 80px; top: 195px; left: 408px; } ul#foto a .bilgi { position: absolute;
 bottom: -25px; width: 100%; padding: 2px; background-color:#ffc;
 text-align: center; left: -30000px; font:11px Arial, Helvetica,
@@ -147,20 +156,29 @@ bir dis ve ic nesnesine haritaladığımız nesnelerin genişlik ve
 yükseklerinin 2px daha düşük değerlerini vererek üst üste binmelerini
 önledik ve görünümünü düzenlemiş olduk. Eğer istersek bu <span>
 etiketlerini kaldırabiliriz, daha sade bir görünüm olur.</p>
-<p>[sourcecode language='css'] ul#foto a .dis, ul#foto a .ic { display:
-block; } ul#foto .dexter a .dis { width: 108px; height: 173px; }
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span> <span class="nc">.dis</span><span class="o">,</span> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span> <span class="nc">.ic</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span>
+</pre></div>
+
+
+<p>block; } ul#foto .dexter a .dis { width: 108px; height: 173px; }
 ul#foto .html a .dis { width: 48px; height: 78px; } ul#foto .dexter a
 .ic { width: 106px; height: 171px; } ul#foto .html a .ic { width: 46px;
 height: 76px; } </p>
 <p>Fare haritalanan alanların üzerine gelince çıkacak bilgilendirme
 alanının yerini belirliyoruz. - 3000px ile görüntüden çıkardığımız bilgi
 alanını görünür yapıp istediğimiz yere yerleştirdik.</p>
-<p>[sourcecode language='css']ul#foto a:hover .bilgi { left: 60px; }</p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="nc">.bilgi</span> <span class="p">{</span> <span class="k">left</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Tüm resmin üzerine gelindiğinde ve haritalanan alanların üzerine
 gelindiğinde kenar çizgi renklerini değiştirerek farklı bir görünüm
 kazandırıyoruz.</p>
-<p>[sourcecode language='css'] ul#foto a:hover { border-color: #d4d82d; }
-ul#foto:hover a .dis, ul#foto a:hover .dis { border: 1px solid #000;
+<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span> <span class="k">border-color</span><span class="o">:</span> <span class="m">#d4d82d</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
+<p>ul#foto:hover a .dis, ul#foto a:hover .dis { border: 1px solid #000;
 } ul#foto:hover a .ic, ul#foto a:hover .ic { border: 1px solid #fff;
 } </p>
 <p>Sonuçta görsel ve işlevsel olarak çok güzel bir uygulama elde ettik.

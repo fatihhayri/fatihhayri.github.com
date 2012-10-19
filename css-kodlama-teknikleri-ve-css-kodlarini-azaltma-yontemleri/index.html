@@ -127,8 +127,11 @@ uygulanacaktır. Aynı işlem <strong>ul</strong> ve <strong>li</strong> element
 geçerlidir.</p>
 <p>Başlıklara serif fontu, turuncu rengi ve kenarlık ekleyelim ve
 listelerimizinde yanındaki işaretleri kaldıralım:</p>
-<p>[sourcecode language='css'] .solkolonbaslik { font-family: Georgia,
-serif; color: #c63; border-bottom: 1px solid #ccc; } .solkolonlink {
+<div class="codehilite"><pre> <span class="nc">.solkolonbaslik</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span>
+</pre></div>
+
+
+<p>serif; color: #c63; border-bottom: 1px solid #ccc; } .solkolonlink {
 list-style-type: none; } .link { font-weight: bold; } </p>
 <p>Tanımladığımız özellikleri elementlere atadık, buradaki elementlerin
 kendine has tanımları vardır. Aynı yöntemi kullanrak tüm sayfamızı
@@ -166,8 +169,11 @@ atamalar yapmamıza izin verir. Mesela <strong>#icerikAlani</strong> kısmında 
 <strong>h3</strong> elementini kırmızı <strong>#altKisim</strong> bölümündeki h3 elementini mor
 yapabiliriz. Ayrıca tüm bölümlerdeki <strong>h3</strong>'lerede genel bir tanımlamada
 yapabilriiz.</p>
-<p>[sourcecode language='css'] h3 { font-family: Georgia, serif; /<em> tüm h3
-ler için atama</em>/ } #icerikAlani h3 { color: red; } #menuAlani h3 {
+<div class="codehilite"><pre> <span class="nt">h3</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span> <span class="o">/*</span> <span class="err">tüm</span> <span class="n">h3</span>
+</pre></div>
+
+
+<p>ler için atama*/ } #icerikAlani h3 { color: red; } #menuAlani h3 {
 color: orange; } </p>
 <p>Genel h3 elemetine serif font ailesi tanımlanmı, icerik alanındaki
 <strong>h3</strong> kırmızı, menu alanındaki <strong>h3</strong> kavuniçi olacaktır. Böylelikle
@@ -178,7 +184,10 @@ büyük çaplı sitelerde bu metod bize çok büyük kazanımlar sağlayacaktır
 <p>Fazladan sınıf kullanmak yerine Torun Seçicileri kullanarak kod azaltma
 yöntemi bize çok büyük avantajlar sağlayacaktır.</p>
 <p>Örneğin SolKisim'daki linklerin rengini kırmızı yapmakl istesek.</p>
-<p>[sourcecode language='css']</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
 <div id="solkolon">
 ### Site Hakkında
 
@@ -192,14 +201,20 @@ Bu site benim hakkımdadır.
 </div>
 
 <p>ve bu sınıf için css tanımı yapacak olursak.</p>
-<p>[sourcecode language='css'] a:link.kirmizilink { color: red; }</p>
+<div class="codehilite"><pre> <span class="nt">a</span><span class="nd">:link</span><span class="nc">.kirmizilink</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Bu kodumuz sorunsuz çalışacaktır. Ancak bu kodlama metodunda ileriye
 dönük bir sorunuzmu olacaktır. Bu linklerin rengini değiştirip siyah
 yapmak istedik. Rengi kolayca siyaha çevirebiliriz ancak verdiğimiz isim
 ile içerik çakışacaktır. Siyah renge kirmizi isim!</p>
 <p>Bunun yerine doğal seçicileri kullanrak bu işlemi yapsa idik durum
 farklı olacaktır.</p>
-<p>[sourcecode language='css'] #SolKisim li a:link { color: red; }</p>
+<div class="codehilite"><pre> <span class="nf">#SolKisim</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Bu tanımla bizim işimizi görecektir. Ayrıca bir değişiklik olduğunda
 sadece tanımı değiştirmemiz bize yetecektir. Bu metod bize kolay, temiz
 ve kullanışlı bir kodlama olanağı sağlamkatadır. Bunu uygulamarımızda
@@ -207,7 +222,10 @@ kullandıkça daha iyi kavrayacağız.</p>
 <h3>2- Gereksiz <div> Kullanımından vazgeçilmesi</h3>
 <p>Sayfa kodlarken içeriklerimizi düzenlemek için bir çok <div> elementi
 kullanırız.</p>
-<p>[sourcecode language='css']</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
 <div id="menu">
 -   [Fotoğraflar][]
 -   [Dersler][]
@@ -220,7 +238,10 @@ menu id'si verilmiş bir katman kullandık. Bu kullanımı tüm sitemizde
 kullandığımız düşünürsek bir çok kavrayıcı fazla katmanımız olacaktır.
 Eğer bu kod daki gibi katman bir blok level bir elementi kapsıyorsa
 katman kullanımına gerek yoktur. Bu katmanı kaldıra biliriz.</p>
-<p>[sourcecode language='css']</p>
+<div class="codehilite"><pre>
+</pre></div>
+
+
 <ul>
 <li><a href="../static/foto.html">Fotoğraflar</a></li>
 <li><a href="../static/ders.html">Dersler</a></li>
@@ -239,27 +260,39 @@ varsa bunları tanımlama yaptığımız kavrayıcı <strong>ul</strong> dışı
 <p>CSS elementleri kalıtsal olan ve kalıtsal olmayan elementler diye
 ayırır. Biz kalıtsal elemnleri kullanarak bir çok fazla koddan
 kurtulabiliriz.</p>
-<p>[sourcecode language='css'] p { font-family:Verdana, Arial, sans-serif }
-td { font-family:Verdana, Arial, sans-serif } li { font-family:Verdana,
+<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span> <span class="p">}</span>
+</pre></div>
+
+
+<p>td { font-family:Verdana, Arial, sans-serif } li { font-family:Verdana,
 Arial, sans-serif } dt { font-family:Verdana, Arial, sans-serif } dd {
 font-family:Verdana, Arial, sans-serif } </p>
 <p>Yukarıdaki şekilde bir çok element içinde font tanımı yapmak yerine
 <strong>body</strong> elementi içinde bir tek font tanımı ile bu kargaşaya son
 verebilriz. Bu site standartlarına uymayı kolaylaştıracak ve düzenleme
 kolaylığını sağlayacaktır.</p>
-<p>[sourcecode language='css'] body { font-family:Verdana, Arial,
-sans-serif } </p>
+<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span>
+</pre></div>
+
+
+<p>sans-serif } </p>
 <h3>4- Uygun Benzer Stilleri Gruplamak</h3>
 <p>Bir çok özelliği aynı olan stil tanımlarında farklılıklar ayrılarak aynı
 bölümler gruplanarak kod azaltılabilir.</p>
-<p>[sourcecode language='css'] h1 { font-size:120%; margin-bottom:0;
-font-family:Verdana,sans-serif } h2 { font-size:110%; margin-bottom:0;
+<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span><span class="m">120</span><span class="o">%</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>font-family:Verdana,sans-serif } h2 { font-size:110%; margin-bottom:0;
 font-family:Verdana,sans-serif } h3 { font-size:100%; margin-bottom:0;
 font-family:Verdana,sans-serif } h4 { font-size:100%; margin-bottom:0;
 font-family:Verdana,sans-serif } </p>
 <p>Bu kullanım yerine</p>
-<p>[sourcecode language='css'] h1,h2,h3,h4 { margin-bottom:0;
-font-family:Verdana,sans-serif } h1 { font-size:120% } h2 {
+<div class="codehilite"><pre> <span class="nt">h1</span><span class="o">,</span><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span><span class="o">,</span><span class="nt">h4</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+</pre></div>
+
+
+<p>font-family:Verdana,sans-serif } h1 { font-size:120% } h2 {
 font-size:110% } h3,h4 { font-size:100% } </p>
 <h3>5- CSS Kısaltmalarını kullanmak</h3>
 <p>CSS bazı elementlerin tanımlasını yaparken kısaltmaları kullanmamıza

@@ -3860,7 +3860,8 @@ olmak üzere ikiye ayırıyoruz. [sourcecode language='html']
 birleştirerek HTTP istek sayısını azaltabiliriz. [sourcecode language='html']
 &lt;link rel="stylesheet" href="/style/iskelet.css" type="text/css"&gt;&lt;/link&gt;
  gibi iskelet.css içeriğinin yapısı ise aşağıdaki gibi
-olacaktır. [sourcecode language='css'] /&lt;em&gt; all media &lt;/em&gt;/ @media all {
+olacaktır.  :::css
+     /&lt;em&gt; all media &lt;/em&gt;/ @media all {
 body { color:#666; font:13px arial, helvetica, sans-serif; padding:20px
 0 30px 0; } } @media print { body { color:#000; font:12px arial,
 helvetica, sans-serif; padding:0; } }  şeklinde yaparak css
@@ -4060,8 +4061,11 @@ halledeceğiz. Anlamlı kodlama açısından avantajlıdır.&lt;/p&gt;
 belirleriz&lt;/p&gt;
 &lt;p&gt;[sourcecode language="xhtml"]&lt;img alt="%45" src="/images/yuzde_cubugu.png" /&gt; &lt;/p&gt;
 &lt;p&gt;Sonrasında CSS kodumuzu yazarsak;&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css']img.yuzdeCubugu { background:
-url(/images/yuzdeCubugu_ard.gif) top left no-repeat; padding: 0;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;img&lt;/span&gt;&lt;span class="nc"&gt;.yuzdeCubugu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;url(/images/yuzdeCubugu_ard.gif) top left no-repeat; padding: 0;
 margin: 0; } &lt;/p&gt;
 &lt;p&gt;Kod kısmı bu kadar. Evet bu kadar kod ile yüzde çubuğunu oluşturduk.
 Kodun mantığını incelersek;&lt;/p&gt;
@@ -4096,8 +4100,11 @@ kenar çizgilerinin olması.&lt;/p&gt;
 100 - 56 - 2 = -42px şeklinde hesaplanacak.&lt;/p&gt;
 &lt;p&gt;Aynı şekilde &lt;strong&gt;McCain&lt;/strong&gt;'in yüzdesini de hesaplarsak. 100 - 44 - = -54px&lt;/p&gt;
 &lt;p&gt;CSS kodumuz;&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] h1{ font:18px Arial, Helvetica, sans-serif;
-color:#666; } p{ font:bold 12px Arial, Helvetica, sans-serif;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;18px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;color:#666; } p{ font:bold 12px Arial, Helvetica, sans-serif;
 margin-bottom:5px; color:#666; } img.yuzde1 {
 background:url(gosteri1.gif) 0 0 no-repeat; padding: 0; margin: 0; }
 img.yuzde2 { background:url(gosteri2.gif) 0 0 no-repeat; padding: 0;
@@ -4135,12 +4142,14 @@ bir şey olduğunu gördüm ve bunu sizlerle paylaşmak istedim.&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;p&gt;[&lt;img alt="FireBug yetenekleri" src="http://www.fatihhayrioglu.com/wp-content/firebug_yetenekleri01-255x300.jpg" /&gt;]: http://www.fatihhayrioglu.com/wp-content/firebug_yetenekleri01.jpg&lt;/p&gt;</summary><category term="anında-düzeltme"></category><category term="eklenti"></category><category term="firebug"></category><category term="Firefox"></category></entry><entry><title>CSS İpucu 16: Evrensel seçicilerde yazıtipi kısaltması kullanımında sorun</title><link href="http://www.fatihhayrioglu.com/css-ipucu-16-evrensel-secicilerde-yazitipi-kisaltmasi-kullaniminda-sorun/" rel="alternate"></link><updated>2008-05-30T16:15:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-05-30:css-ipucu-16-evrensel-secicilerde-yazitipi-kisaltmasi-kullaniminda-sorun/</id><summary type="html">&lt;p&gt;Evrensel seçicisi olan olan * ile yaptığımız font tanımları sorun
-çıkarıyor. Örneğin [sourcecode language='css'] * { font:10px/1.5em
+çıkarıyor. Örneğin  :::css
+     * { font:10px/1.5em
 Verdana, Arial, Helvetica, sans-serif; }  Tanımını
 yaptığımızda sayfalarımızda tanımladığımız &lt;strong&gt; ile
 kalınlaştırdığımız metinler normal görünüyor. Bunun sebebi yukarıda
 yaptığımız tanım. Bunu yerine tek tek tanım yaparsak sorun kalmıyor.
-[sourcecode language='css'] *{ font-family: Verdana, Arial, Helvetica,
+    :::css
+     *{ font-family: Verdana, Arial, Helvetica,
 sans-serif; font-size:10px; line-height:1.5em; } &lt;/p&gt;</summary><category term="CSS"></category><category term="Evrensel-Seçiciler"></category><category term="tüm-elemanlar"></category></entry><entry><title>Sitemi düzenleme çabalarım II: "Son Okuduğum 10 Kitap"</title><link href="http://www.fatihhayrioglu.com/sitemi-duzenleme-cabalarim-ii-son-okudugum-10-kitap/" rel="alternate"></link><updated>2008-04-10T21:46:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-04-10:sitemi-duzenleme-cabalarim-ii-son-okudugum-10-kitap/</id><summary type="html">&lt;p&gt;Son zamanlarda sitemin(fatihhayrioglu'nun not defteri) bazı bölümlerini
 yeniden gözden geçiriyorum. WordPress2.3.3 sürümünden sonra "Son
 Okuduğum 10 Kitap" bölümü çalışmamaya başladığı için kaldırmıştım belli
@@ -4321,16 +4330,22 @@ Internet Explorer 7(sorunusuz)&lt;/p&gt;
 Firefox (sorunlu)&lt;/p&gt;
 &lt;p&gt;Ben hala Firefox'u çok seviyorum :D&lt;/p&gt;
 &lt;p&gt;Kaynak: &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=122795"&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=122795&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Firefox"></category><category term="hata"></category><category term="Hata ayıklama"></category><category term="padding-right"></category></entry><entry><title>CSS İpuçları 14 - IE div yüksekliği sorunu</title><link href="http://www.fatihhayrioglu.com/css-ipuclari-14-ie-div-yuksekligi-sorunu/" rel="alternate"></link><updated>2008-01-10T22:32:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-01-10:css-ipuclari-14-ie-div-yuksekligi-sorunu/</id><summary type="html">&lt;p&gt;[sourcecode language='css'] our_style { height: 1px; width: 100px;
-background-color: black; } [sourcecode language='html']&lt;/p&gt;
+&lt;/p&gt;</summary><category term="Firefox"></category><category term="hata"></category><category term="Hata ayıklama"></category><category term="padding-right"></category></entry><entry><title>CSS İpuçları 14 - IE div yüksekliği sorunu</title><link href="http://www.fatihhayrioglu.com/css-ipuclari-14-ie-div-yuksekligi-sorunu/" rel="alternate"></link><updated>2008-01-10T22:32:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-01-10:css-ipuclari-14-ie-div-yuksekligi-sorunu/</id><summary type="html">&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;our_style&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;background-color: black; } [sourcecode language='html']&lt;/p&gt;
 &lt;div class="test"&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Bu kod Firefox'da sorunsuz çalışmasına karşın IE'de yükseklik 10px
 görünecektir. Bir bakıma IE boş içeriğin yüksekliğini 10px kabul ediyor,
 ancak bu bizim işimizi bozuyor. Çözüm ise çok basit.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'].test { font-size: 0; height: 1px; width:
-100px; background-color: black; }&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.test&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;100px; background-color: black; }&lt;/p&gt;
 &lt;p&gt;Sadece font-size tanımını 0 atamamız yeterli.&lt;/p&gt;
 &lt;p&gt;Kaynak: &lt;a href="http://vaig.be/2007/04/07/div-styleheight-1px-bug-in-ie/"&gt;http://vaig.be/2007/04/07/div-styleheight-1px-bug-in-ie/&lt;/a&gt;&lt;/p&gt;
 &lt;/p&gt;</summary><category term="CSS"></category><category term="div yüksekliği sorunu"></category><category term="ie"></category><category term="internet explorer"></category><category term="XHTML"></category></entry><entry><title>Tablo kolon genişliğini css ile ayarlama</title><link href="http://www.fatihhayrioglu.com/tablo-kolon-genisligini-css-ile-ayarlama/" rel="alternate"></link><updated>2007-08-23T09:40:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-08-23:tablo-kolon-genisligini-css-ile-ayarlama/</id><summary type="html">&lt;p&gt;Tablolarda bazen içeriğe göre tablonun genişlemesini istemeyiz veya
@@ -5297,8 +5312,11 @@ verebilir, yani farklı şekilde görülebilir.&lt;/p&gt;
 uygulanmış kapsayıcı katmana genişlik ve yükseklik vermektir.&lt;/p&gt;
 &lt;p&gt;İkinci bir çözüm olarak yükseklik göreceli olduğu durumlar için
 uygulanan bir yöntemdir.&lt;/p&gt;
-&lt;p&gt;[sourcecode language='css'] /&lt;em&gt; IE-mac den gizle &lt;/em&gt;/ * html
-.container1 {height: 1%;} /&lt;em&gt; IE-mac den gizleme sonu &lt;/em&gt;/ &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="c"&gt;/* IE-mac den gizle */&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;.container1 {height: 1%;} /&lt;em&gt; IE-mac den gizleme sonu &lt;/em&gt;/ &lt;/p&gt;
 &lt;h3&gt;Kaynak&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.positioniseverything.net/abs_relbugs.html"&gt;http://www.positioniseverything.net/abs_relbugs.html&lt;/a&gt;&lt;/li&gt;

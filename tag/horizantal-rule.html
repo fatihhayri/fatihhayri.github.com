@@ -106,23 +106,32 @@ paylaşmak istedim.
     desteklemiyor.</li>
 <li>IE <strong>color</strong> özelliğini destekliyor.</li>
 <li>Firefox ve Opera <strong>background-color</strong> özelliğini destekliyor.</li>
-<li>Tüm tarayıcılar<strong>background-image</strong> özelliğini destekliyor ancak
-    Explorer ve Opera'da bazı sorunları var.</li>
+<li>
+<p>Tüm tarayıcılar<strong>background-image</strong> özelliğini destekliyor ancak
+    Explorer ve Opera'da bazı sorunları var.</p>
+<p>:::css
+ hr { border: 0; width: 80%; } </p>
+</li>
 </ul>
-<p>[sourcecode language='css'] hr { border: 0; width: 80%; } </p>
 <p>Bu kodlama IE ve Opera'da düzgün görünecektir. Ancak Firefox'ta
 görünmeyecektir. background-color ekleyerek kodumuzu Firefox'a da uygun
 hala getiriyoruz.</p>
-<p>[sourcecode language='css'] hr { color: #f00; background-color: #f00;
-height: 5px; } </p>
+<div class="codehilite"><pre> <span class="nt">hr</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span>
+</pre></div>
+
+
+<p>height: 5px; } </p>
 <p><hr / > elementine stil ataması yaparken color ve background-color
 özelliklerin her ikisini de kullanmalıyız. Yüksekliği 3px'in altındaki
 değerler için Opera'nın eski sürümleri sorun çıkarıyor.</p>
 <h3><hr /> hizalama</h3>
 <p><hr /> etiketini hizalamada IE için <strong>text-align</strong> özelliği, Firefox
 ve Opera için <strong>margin</strong> özelliği kullanılır.</p>
-<p>[sourcecode language='css'] hr { text-align: right; /<em> ie icin </em>/
-margin-right: 0; /<em> diger brovserlar icin </em>/ } </p>
+<div class="codehilite"><pre> <span class="nt">hr</span> <span class="p">{</span> <span class="k">text-align</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span> <span class="c">/* ie icin */</span>
+</pre></div>
+
+
+<p>margin-right: 0; /<em> diger brovserlar icin </em>/ } </p>
 <div class="ekstrabilgi">
 <hr> etiketini <hr /> şeklinde kullanmak Xhtml kuralları açısından
 önemlidir. Bildiğiniz gibi Xhtml'de her etiket mutlaka kapatılmalıdır.
@@ -147,8 +156,11 @@ ve Opera'nın eski sürümlerinde sorun çıkarır. resmin etrafında kenarlık
 </div>
 
 <p>ve CSS kodu</p>
-<p>[sourcecode language='css'] div.hr { background: #fff
-url(/images/ayrac_zr.gif) no-repeat scroll center; height:28px;
+<div class="codehilite"><pre> <span class="nt">div</span><span class="nc">.hr</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span>
+</pre></div>
+
+
+<p>url(/images/ayrac_zr.gif) no-repeat scroll center; height:28px;
 width:180px; } div.hr hr { display: none; } </p>
 <p>Tüm web tarayıcılarında sorunsuz çalışacaktır. Yukarıdaki kodda <hr />
 etiketi bir <div> içine alarak css ile <hr /> etiketi görünmez

@@ -64,7 +64,7 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././css-ile-menu-yapmak-i-dikey-menuler/">CSS ile Menü Yapmak I - Dikey Menüler</a></h1> 
+                    <h1 class="entry-title"><a href=".././css-ile-menu-yapmak/">CSS ile Menü Yapmak</a></h1> 
                     <footer class="post-info">
         <abbr class="published" title="2006-11-05T20:50:00">
                 Sun 05 November 2006
@@ -82,40 +82,45 @@
 </footer><!-- /.post-info --><p>Web sitelerinin vazgeçilmez öğelerinde biridir menüler. Menüler
 kullanıcının oluşturduğumuz sayfalara hızlı erişimini sağlar. Bir çok
 site de Ürünler, İletişim, Hakkımızda vb. bölümlerini menü öğesi olarak
-görürüz. Bu makalede sırasız listeler(<ul>)ve CSS yardımı ile menü
+görürüz. Bu makalede sırasız listeler(<ul\>)ve CSS yardımı ile menü
 yapımını anlatacağız. CSS ile yapılan menüler esnek, kolay
 düzenlenebilir, güzel görünen ve rollover efekti uygulana bilen
 menülerdir. <!--more--></p>
-<p>Sırasız listeler(<ul>) ilk olarak listeleme işlemleri için kullanılsa
+<p>Sırasız listeler(&lt;ul>) ilk olarak listeleme işlemleri için kullanılsa
 da CSS'in yükselişi ile birlikte menü oluşturmak için kullanılmaya
 başlandı. Aslında menülerde bir bakıma link listeleri olduğu düşünülürse
 işlevinin dışında kullanılmadığı da doğru bir tespittir. Kodumuzu
 yazmaya başlayalım:</p>
-<p>[sourcecode language='html']</p>
-<ul>
-<li><a href="static/index.html">Ana Sayfa</a></li>
-<li><a href="static/hakkimizda.html">Hakkımızda</a></li>
-<li><a href="static/urunler.html">Ürünler</a></li>
-</ul>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;index.html&quot;</span><span class="nt">&gt;</span>Ana Sayfa <span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;hakkimizda.html&quot;</span><span class="nt">&gt;</span>Hakkımızda<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;urunler.html&quot;</span><span class="nt">&gt;</span>Ürünler<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div>
+
+
 <p>Kodlama sonucu görüntü aşağıdaki gibi olacaktır.</p>
-<div align="center">
-![][]
-
-</div>
-
+<p><img alt="" src="static/dokumanlar/menu1.gif" /></p>
 <p>Her linkin başındaki imgeleri kaldırmak için:</p>
-<p>[sourcecode language='css'] ul.menu { list-style-type: none; }</p>
-<div align="center">
-![][1]
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span> <span class="p">{</span> 
+    <span class="k">list-style-type</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
 
-</div>
 
+<p><img alt="" src="static/dokumanlar/menu2.gif" /></p>
 <p>Bir çok web tarayıcısı sırasız listeleri(<ul>) yorumlarken yukarıda
 görüldüğü gibi otomatik olarak soldan bir padding/margin(bazı
 tarayıcılarda padding uygularken bazılarında margin uygular) mesafesi
 uygular bu mesafeyi sıfırlamak için:</p>
-<p>[sourcecode language='css'] ul.menu { list-style-type: none; padding: 0;
-margin: 0; } </p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span> <span class="p">{</span> 
+    <span class="k">list-style-type</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/dokumanlar/menu3.gif" /></p>
 <p>Bu bölüme kadar yazılan kodlamalar hem dikey menüler hem de yatay
 menüler içinde aynıdır. Ancak bundan sonra dikey menü ve yatay menü için
@@ -124,33 +129,77 @@ kodlar değişecektir.</p>
 <p>Dikey menülerde linkler yukarıdan aşağı doğru sıralanmıştır. Link
 elementi(a) inline-elementtir, her linke rollover özelliği kazandırmak
 için:</p>
-<p>[sourcecode language='css'] ul.menu a { display: block; } </p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
 <p>Biraz görselliği arttırırsak:</p>
-<p>[sourcecode language='css'] ul.menu a { display: block; color: #1B1B1B;
-background-color: #E2E2E2; } </p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="m">#1B1B1B</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#E2E2E2</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/dokumanlar/menu4.gif" /></p>
 <p>Linkler web tarayıcısının genişliği kadar uzayacaktır, kendi istediğimiz
 genişliğe sahip olmak için:</p>
-<p>[sourcecode language='css'] ul.menu a { display: block; color: #1B1B1B;
-background-color: #E2E2E2; width:8em; } </p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="m">#1B1B1B</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#E2E2E2</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">8em</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/dokumanlar/menu5.gif" /></p>
 <p>Linkler arasına biraz boşluk verelim:</p>
-<p>[sourcecode language='css'] ul.menu a { display: block; color: #1B1B1B;
-background-color: #E2E2E2; width:8em; padding: .2em .8em; }</p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="m">#1B1B1B</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#E2E2E2</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">8em</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">.2em</span> <span class="m">.8em</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/dokumanlar/menu6.gif" /></p>
 <p>Linklerin altındaki çizgileri kaldıralım:</p>
-<p>[sourcecode language='css'] ul.menu a { display: block; color: #1B1B1B;
-background-color: #E2E2E2; width:8em; padding: .2em .8em;
-text-decoration: none; } </p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="m">#1B1B1B</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#E2E2E2</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">8em</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">.2em</span> <span class="m">.8em</span><span class="p">;</span> 
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/dokumanlar/menu7.gif" /></p>
-<p>şžimdi linklerimize rollover efekti vermek için a:hover kullanacağız:</p>
-<p>[sourcecode language='css'] ul.menu a:hover { background-color: #999; }</p>
+<p>şimdi linklerimize rollover efekti vermek için a:hover kullanacağız:</p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">a</span><span class="nd">:hover</span> 
+<span class="p">{</span> 
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#999</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
 <p><img alt="" src="static/dokumanlar/menu8.gif" /></p>
 <p>son olarak linklerin arasını ayıralım:</p>
-<p>[sourcecode language='css'] ul.menu li { margin: 0 0 .2em 0; }
- İşte menümüzün son hali
-<iframe src="static/dokumanlar/menu.htm" width="250" height="200" frameborder="0" scroll="auto"></iframe></p>
-</p><p><a href=".././css-ile-menu-yapmak-i-dikey-menuler/#disqus_thread">yorum var</a>.</p>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">li</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">.2em</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>İşte menümüzün son hali</p>
+<iframe src="static/dokumanlar/menu.htm" width="250" height="200" frameborder="0" scroll="auto"></iframe><p><a href=".././css-ile-menu-yapmak/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     
