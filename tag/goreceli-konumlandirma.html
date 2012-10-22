@@ -98,8 +98,7 @@ bindiğinde z-index değerine ihtiyaç duyarız. z-index mutlak, göreceli ve
 sabit konumlandırma atandığı veya elemente eksi değer verilerek konumu
 değiştirildiğinde uygulanır.</p>
 <p><img alt="" src="static/images/z-ekseni.gif" /></p>
-<p><strong>Yapısı:z-index: <deger><br />
-Aldığı Değerler:&lt;<a href="http://www.fatihhayrioglu.com/?p=95">sayısal değer</a> &gt; | auto | inherit<br />
+<p><strong>Yapısı:z-index: <deger\><br />Aldığı Değerler:<<a href="http://www.fatihhayrioglu.com/?p=95">sayısal değer</a> > | auto | inherit<br />
 Başlangıç değeri:auto<br />
 Uygulanabilen elementler:postion uygulanan elementlere<br />
 Kalıtsallık:Yok</strong></p>
@@ -129,19 +128,15 @@ Birbirinden 10px üst ve 10px soldan mesafe bırakılmıştır. Üstte kalan
 katman alttakileri gizlemiştir. Tüm katmanların z-index değeri
 atanmamıştır bu nedenle başlangıç değeri olan z-index:auto değerini
 almışlardır.</p>
-<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">body</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s1">&#39;kapsul&#39;</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nt">div</span>
+<div class="codehilite"><pre><span class="nt">&lt;body&gt;</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;kapsul&#39;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span>
+<span class="na">class=</span><span class="s">&#39;bir&#39;</span><span class="nt">&gt;&lt;/div&gt;</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;iki&#39;</span><span class="nt">&gt;&lt;/div&gt;</span> <span class="nt">&lt;/div&gt;</span> <span class="nt">&lt;/body&gt;</span>
 </pre></div>
 
 
-<p>class='bir'&gt;</div> <div class='iki'></div> </div> </body></p>
 <p>z-index değeri otomatik olduğu için her katman html'deki sırasına göre
 yerleşmiştir. İlk başta yazılmış olanlar altta sonrakiler üstte olacak
 şekilde sıralanmıştır.</p>
-<div align="center">
-![][1]
-
-</div>
-
+<p><img alt="" src="static/images/zindeks_otomatik.gif" /></p>
 <p>Eğer katmanları istediğimiz sıra ile göstermek istiyor isek her katmana
 sırasına göre sayısal değer atamalıyız. Yüksek değer alan katmanlar
 üstte düşük değer alan katmanlar ise altta kalacaktır. Buna göre
@@ -161,11 +156,11 @@ solid #CC8B94; top: 0; left: 0; z-index:2 } div.iki { background:</p>
 <p>İçiçe girmiş katmanlarda z-index davranışları farklıdır. İçiçe geçmiş
 katmanlardaki z-index:auto değeri gibi davranır ve sayısal atamaları
 dikkate almaz.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;body&gt;</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;kapsul&#39;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span>
+<div class="codehilite"><pre><span class="nt">&lt;body&gt;</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;kapsul&#39;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;bir&#39;</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">&#39;iki&#39;</span><span class="nt">&gt;&lt;/div&gt;&lt;/div&gt;</span> <span class="nt">&lt;/div&gt;</span> <span class="nt">&lt;/body&gt;</span>
 </pre></div>
 
 
-<p>class='bir'&gt;<div class='iki'></div></div> </div> </body></p>
 <p>z-index değeri yüksek olmasına rağmen bir sınıfını alan katmana altta
 kalacaktır. Çünkü iç içe geçmiş elementlerde z-index'e atanan sayısal
 değerler geçersizdir. Sıralama z-index:auto ya göre yapılır.</p>

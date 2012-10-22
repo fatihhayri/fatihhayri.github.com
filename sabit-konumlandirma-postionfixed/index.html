@@ -110,30 +110,37 @@ bu kodu IE6 ve önceki sürümlerde desteklememesi bize alternatif çözümler
 aramaya sevk ediyor. Buda bize bir makale yazma gereksinimi doğuruyor.</p>
 <p>İlk metodumuz normal konumlandırma özelliğinin fixed uygulanmış
 şeklidir.</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">div</span><span class="nf">#ustKisim</span> <span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span><span class="k">fixed</span><span class="p">;</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">yellow</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span><span class="m">50px</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">div</span><span class="nf">#icerik</span> <span class="p">{</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">75px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">&lt;/style&gt;</span> 
+<span class="nt">&lt;/head&gt;</span> 
+<span class="nt">&lt;body&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustKisim&quot;</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/div&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nec erat. Fusce magna massa, nonummy eget, aliquam tempus, imperdiet vel, odio. Sed mauris. Quisque sodales urna vitae lorem. Vestibulum aliquet, odio aliquam convallis lobortis, turpis metus semper ligula, ut vulputate sem justo eu quam. Sed feugiat, lectus sit amet porttitor auctor, nulla odio volutpat nisl, sit amet egestas augue diam at urna. Sed justo arcu, luctus eget, porta in, auctor sit amet, massa. Integer interdum. Nunc condimentum scelerisque enim. Pellentesque orci. Maecenas at neque. Sed non diam ac turpis pretium dictum. Phasellus ligula felis, aliquet nec, tristique non, posuere a, magna. Duis eu quam quis tortor vehicula sodales. Donec et mi eget augue bibendum interdum. Proin dapibus odio.<span class="nt">&lt;/p&gt;</span> 
+<span class="nt">&lt;/body&gt;</span> 
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <style
-type="text/css"> body { margin:0; padding:0; } div#ustKisim {
-position:fixed; background: gray; color: yellow; height:50px;
-width:100%; top:0; left:0; } div#icerik { margin:75px 0 0 0; }
-</style> </head> <body> <div id="ustKisim">Lorem ipsum dolor sit
-amet</div> <div id="icerik"> <p>Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam nec erat. Fusce magna massa,
-nonummy eget, aliquam tempus, imperdiet vel, odio. Sed mauris. Quisque
-sodales urna vitae lorem. Vestibulum aliquet, odio aliquam convallis
-lobortis, turpis metus semper ligula, ut vulputate sem justo eu quam.
-Sed feugiat, lectus sit amet porttitor auctor, nulla odio volutpat nisl,
-sit amet egestas augue diam at urna. Sed justo arcu, luctus eget, porta
-in, auctor sit amet, massa. Integer interdum. Nunc condimentum
-scelerisque enim. Pellentesque orci. Maecenas at neque. Sed non diam ac
-turpis pretium dictum. Phasellus ligula felis, aliquet nec, tristique
-non, posuere a, magna. Duis eu quam quis tortor vehicula sodales. Donec
-et mi eget augue bibendum interdum. Proin dapibus odio.</p> </body>
-</html> </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/sabit_konum_ornek1.html">tıklayınız.</a></p>
 <p>Baştada belirttiğimiz gibi buradaki en büyük sorunumuz IE6 ve daha eski
 sürümlerde bu kodun çalışmamasıdır. Bundan sonraki metot buna çözüm
@@ -143,23 +150,54 @@ aramak içindir.</p>
 javascript kodu işletmemize izin vermesi prensinden dayanır. Bizde bu
 metodda bu komut yardımı ile <strong>position:fixed</strong> sorununu çözeceğiz.
 <strong>expression()</strong> yardımı ile daha önce IE'nin <a href="http://www.fatihhayrioglu.com/?p=182">min-width ve min-height sorununu</a> çözdüğümüzü hatırlayın.</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span> 
+<span class="nt">&lt;title&gt;</span>Sabit Konumlandırma<span class="nt">&lt;/title&gt;</span> 
+<span class="nt">&lt;style&gt;</span> 
+<span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="m">#ffc</span><span class="p">;</span> 
+    <span class="k">font</span><span class="o">:</span> <span class="m">12px</span> <span class="k">sans-serif</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">div</span><span class="nf">#ustAlan</span> <span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="nb">pink</span><span class="p">;</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">z-index</span><span class="o">:</span><span class="m">100</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nf">#icerik</span><span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span><span class="m">105px</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">&lt;/style&gt;</span> 
+<span class="cp">&lt;!–[if lt IE 7]&gt;</span> 
+<span class="nt">&lt;style&gt;</span> 
+<span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="m">#ffc</span> <span class="sx">url(’http://’)</span> <span class="k">fixed</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">div</span><span class="nf">#ustAlan</span> <span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span> <span class="n">expression</span><span class="p">(</span><span class="n">eval</span><span class="p">(</span><span class="n">documentElement</span><span class="o">.</span><span class="n">scrollTop</span><span class="p">));</span> 
+<span class="p">}</span> 
+<span class="nt">&lt;/style&gt;</span> 
+<span class="cp">&lt;![endif]–&gt;</span> 
+<span class="nt">&lt;/head&gt;</span> 
+<span class="nt">&lt;body&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span>Sabit Konumlandırma<span class="nt">&lt;/div&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet ….<span class="nt">&lt;/p&gt;</span> 
+    <span class="nt">&lt;/div&gt;</span> 
+<span class="nt">&lt;/body&gt;</span> 
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-<html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Sabit Konumlandırma</title> <style> body { background:</p>
-<h1>ffc; font: 12px sans-serif; margin: 0; padding: 0; } div#ustAlan {</h1>
-<p>width: 100%; height: 100px; background: pink; position: fixed; top: 0;
-left: 0; z-index:100; } #icerik{ position:absolute; top:105px; }
-</style> &lt;!–[if lt IE 7]&gt; <style> body { background: #ffc
-url(’http://’) fixed; } div#ustAlan { position: absolute; top:
-expression(eval(documentElement.scrollTop)); } </style> &lt;![endif]–&gt;
-</head> <body> <div id="ustAlan">Sabit Konumlandırma</div> <div
-id="icerik"> <p>Lorem ipsum dolor sit amet ….</p> </div>
-</body> </html> </p>
 <p><img alt="Sabit Konumlandırma" src="../static/images/sabit_konum_ust.gif" /></p>
 <p>Örnek sayfayı görmek için <a href="../static/dokumanlar/sab_konum_ust.html">tıklayınız.</a></p>
 <p>Yukarıdaki kodu iki kısımda inceleyebiliriz. Birinci kısım ilk örnekte
@@ -170,19 +208,16 @@ desteklenmediği için <strong>postion:absolute</strong> değeri atanmış ve ü
 değerimizi(top) javascript'in <strong>documentElement.scrollTop</strong> değeri
 yardımı ile belirlenip sabitlenmiştir.</p>
 <p>Ayrıca alt alanı sabitlemek için</p>
-<div class="codehilite"><pre> <span class="nt">bottom</span><span class="o">:</span> <span class="nt">auto</span><span class="o">;</span> <span class="nt">top</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">bottom</span><span class="o">:</span> <span class="nt">auto</span><span class="o">;</span> <span class="nt">top</span><span class="o">:</span> <span class="nt">expression</span><span class="o">((</span><span class="nt">documentElement</span><span class="nc">.scrollTop</span> <span class="o">+</span> <span class="nt">documentElement</span><span class="nc">.clientHeight</span> <span class="err">–</span> <span class="nt">this</span><span class="nc">.clientHeight</span><span class="o">));</span>
 </pre></div>
 
 
-<p>expression((documentElement.scrollTop + documentElement.clientHeight –
-this.clientHeight)); </p>
 <p>Kodlaması kullanılır. Örneği görmek için <a href="../static/dokumanlar/sab_konum_alt.html">tıklayınız.</a></p>
 <p>Sabitlemek istediğimiz nesneyi üstten 10piksel aşağıda sabitlemek için</p>
-<div class="codehilite"><pre> <span class="nt">top</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">top</span><span class="o">:</span> <span class="nt">expression</span><span class="o">(</span><span class="nt">eval</span><span class="o">(</span><span class="nt">documentElement</span><span class="nc">.scrollTop</span><span class="o">)</span> <span class="o">+</span> <span class="nt">10</span><span class="o">);</span>
 </pre></div>
 
 
-<p>expression(eval(documentElement.scrollTop) + 10); </p>
 <p>şeklinde kodlarız. Bu kodlama tekniği kullanılarak birçok farklı şablon
 elde edilebilir.</p>
 <p>Bu yöntemin bazı sorunları vardır, bunlara değinmeden geçmeyelim.</p>
@@ -216,7 +251,6 @@ linklerini kaynaklar kısmında sizlere vereceğim.</p>
 <li><a href="http://www.gunesintamicinde.com/ie-6-ve-position-fixed-problemi/">http://www.gunesintamicinde.com/ie-6-ve-position-fixed-problemi/</a><br />
 </li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

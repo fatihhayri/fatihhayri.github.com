@@ -87,57 +87,68 @@
       <p>Safari ve Google Chrome tarayıcıları her hangi bir metin girdi
 alanına(text input) odaklandığında bu elemanın etrafını bir şerit ile
 belirliyor.</p>
-<div style="float:left; width:260px; margin-bottom:15px; text-align:center">
-![][] **Google Chrome Normal Hali**
-
-</div>
-
-<div style="float:left; width:250px; margin-bottom:15px; text-align:center">
-![][1] **Google Chrome Odaklanmış Hali**
-
-</div>
-
-<div style="float:left; width:260px; margin-bottom:15px; text-align:center">
-![][2] **Safari Normal Hali**
-
-</div>
-
-<div style="float:left; width:250px; margin-bottom:15px; text-align:center">
-![][3] **Safari Odaklanmış Hali**
-
-</div>
-
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_223ckdsthqx_b" /> <strong>Google Chrome Normal Hali</strong></p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_224cg7bjcg8_b" /> <strong>Google Chrome Odaklanmış Hali</strong></p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_225hk8dtkfm_b" /> <strong>Safari Normal Hali</strong></p>
+<p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_226fc3jdqrx_b" /> <strong>Safari Odaklanmış Hali</strong></p>
 <p>Bu normalde güzel bir özellik, ancak biz eğer standart metin girdi alanı
 yerine kendi tasarladığımız bir metin girdi alanı koydu isek bu
 odaklanma çizgileri sorun çıkarıyor. Bir örnek yapalım.</p>
 <p>En son projelerimden bonus.com.tr'de böyle bir sorun ile karşılaştığımda
 buna bir çözüm aradım. İlk kodum şöyle idi.</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>Untitled Document<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">body</span><span class="p">{</span><span class="k">background-color</span><span class="o">:</span><span class="m">#52c520</span><span class="p">;}</span>
+
+<span class="nc">.aramaMetinKutusu</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(images/arama_zemini.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">202px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">29px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.aramaMetinKutusuOdak</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(images/arama_zemini.gif)</span> <span class="m">0</span> <span class="m">-31px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">202px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">29px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.aramaMetinKutusu</span> <span class="nt">input</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">190px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">5px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.aramaMetinKutusuOdak</span> <span class="nt">input</span><span class="nd">:focus</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">190px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">5px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#F6FFD4</span>
+<span class="p">}</span>
+
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;aramaMetinKutusu&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;arama&quot;</span> <span class="na">onfocus=</span><span class="s">&quot;this.parentNode.className=&#39;aramaMetinKutusuOdak&#39;&quot;</span> <span class="na">onblur=</span><span class="s">&quot;this.parentNode.className=&#39;aramaMetinKutusu&#39;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title> <style type="text/css">
-body{background-color:#52c520;} .aramaMetinKutusu{
-background:url(images/arama_zemini.gif) 0 0 no-repeat; width:202px;
-height:29px; } .aramaMetinKutusuOdak{
-background:url(images/arama_zemini.gif) 0 -31px no-repeat; width:202px;
-height:29px; } .aramaMetinKutusu input{ width:190px; margin:5px 0 0 4px;
-border:none; } .aramaMetinKutusuOdak input:focus{ width:190px;
-margin:5px 0 0 4px; border:none; background-color:#F6FFD4 } </style>
-</head> <body> <div class="aramaMetinKutusu"> <input type="text"
-name="arama" onfocus="this.parentNode.className='aramaMetinKutusuOdak'"
-onblur="this.parentNode.className='aramaMetinKutusu'" /> </div>
-</body> </html> </p>
 <p>Bu kodlarım Firefox ve IE'de sorunsuz çalıştı. Daha sonra sayfayı Google
 Chrome'da test ettiğimde aşağıdaki gibi bir sorun ile karşılaştım.</p>
-<p><img alt="chrome_odak" src="../static/images/chrome_odak.gif" title="chrome_odak" /></p>
+<p><img alt="chrome_odak" src="../static/images/chrome_odak.gif" /></p>
 <p>Sorunun çözümünü araştırdığımda dış kenar çizgisini sıfırlamam
 gerektiğini gördüm.  </p>
-<div class="codehilite"><pre> <span class="nt">input</span><span class="p">{</span> <span class="k">outline</span><span class="o">:</span><span class="m">0</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">input</span><span class="p">{</span>
+    <span class="k">outline</span><span class="o">:</span><span class="m">0</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -148,14 +159,13 @@ olacak şimdi? Burada odaklanma durumu için bir sınıf atayıp ona ayrı bir
 tanım yaptığımız için klavye kullananlar için sorun olmayacaktır.</p>
 <h3>Kaynaklar</h3>
 <ul>
-<li><a href="http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/" title="http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/">http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/</a>
+<li><a href="http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/">http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/</a>
     (google chrome safari de mavi kenarları yok etmek)</li>
 <li><a href="http://forums.devshed.com/css-help-116/safari-input-focus-blue-border-477819.html">http://forums.devshed.com/css-help-116/safari-input-focus-blue-border-477819.html</a></li>
 <li><a href="http://dev.markhaus.com/blog/2009/03/how-to-annul-safaris-outline-effect-in-input-fields-and-friends/">http://dev.markhaus.com/blog/2009/03/how-to-annul-safaris-outline-effect-in-input-fields-and-friends/</a></li>
 <li><a href="http://www.usabilitypost.com/2008/10/15/css-tip-remove-mac-osx-glowing-blue-outlin-for-custom-styled-input-fields/">http://www.usabilitypost.com/2008/10/15/css-tip-remove-mac-osx-glowing-blue-outlin-for-custom-styled-input-fields/</a></li>
 <li><a href="http://www.infoqu.com/dev/css-help/safari-input-fields-142336-1/">http://www.infoqu.com/dev/css-help/safari-input-fields-142336-1/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">
