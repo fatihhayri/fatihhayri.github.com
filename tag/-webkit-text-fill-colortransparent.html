@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta http-equiv="PRAGMA" content="NO-CACHE">
         <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+        <meta name="google-site-verification" content="nPLDxGDgobGWgcj8nKtiU1eQCgPANk9weInbGZ4Fj_w">
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
         
         <link href="http://feeds.feedburner.com/fatihhayri" type="application/atom+xml" rel="alternate" title="Fatih Hayrioğlu'nun not defteri Atom Feed" />
@@ -87,12 +89,12 @@ kapsıyor. CSS3 ile birlikte buradaki kabul değişti. Artık kenar
 sınırlandırılabiliyor. Bize bu imkanı CSS3’ün <strong>background-clip</strong> ve
 <strong>background-origin</strong> özellikleri sağlıyor.</p>
 <p>İlk olarak <strong>background-origin</strong> özelliğini inceleyerek başlayalım.</p>
-<h3>background-origin</h3>
+<h2>background-origin</h2>
 <p><strong>background-image</strong> konumunu hesaplamada elementin kutusunun
 sınırlarını belirler. CSS3’den önce bu sabit bir değer olarak
 padding-box idi. Bu özellik bize farklı konumlandırma imkanı sağlar.</p>
-<p><strong>Yapısı:</strong> background-origin: <bg-box><br />
-<strong>Aldığı Değerler:</strong><bg-box> border-box | padding-box | content-box<br />
+<p class="cssozelliktanimi"><strong>Yapısı:</strong> background-origin: &lt;bg-box><br />
+<strong>Aldığı Değerler:</strong>&lt;bg-box> border-box | padding-box | content-box<br />
 <strong>Başlangıç değeri:</strong>padding-box<br />
 <strong>Uygulanabilen elementler:</strong> Tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
@@ -103,31 +105,42 @@ padding-box idi. Bu özellik bize farklı konumlandırma imkanı sağlar.</p>
 <li><strong>content-box:</strong> background-image konumu içerik alanından başlar</li>
 </ul>
 <p><img alt="" src="https://lh6.googleusercontent.com/-PsvxlredrDNUaFBqk4tcxuxsLaw9XJAeTIfp53XKqD2CkZgPqnN7UkCvkm1nSveS_plE_wPOGgUzpVVJ1JGeq_6bWXEkSun-0KS9CC1JMnz19Lusfw" /></p>
-<div class="codehilite"><pre> <span class="nf">#kutu1</span> <span class="p">{</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#kutu1</span> <span class="p">{</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#kutu2</span> <span class="p">{</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">padding</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">padding</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">padding</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">padding</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#kutu3</span> <span class="p">{</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">content</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">content</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">content</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">content</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>-webkit-background-origin: border; -webkit-background-origin:
-border-box; background-origin: border-box; } #kutu2 {
--moz-background-origin: padding; -webkit-background-origin: padding;
--webkit-background-origin: padding-box; background-origin: padding-box;
-} #kutu3 { -moz-background-origin: content; -webkit-background-origin:
-content; -webkit-background-origin: content-box; background-origin:
-content-box; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Rf6Mv/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Rf6Mv/embedded/result,css,html"></iframe>
+
 <p><strong>background-position:fixed</strong> tanımlı elementlere etki etmez.</p>
-<p><strong>Tarayıcı Destekleme Listesi</strong><br />
+<p class="tarayiciuyum"><strong>Tarayıcı Destekleme Listesi</strong><br />
 Firefox 3.6+ (-moz- öneki ile) 4+ (öneksiz)<br />
 Chrome 1+ (-webkit- öneki ile)<br />
 Safari 3.0+ (-webkit- öneki ile)<br />
 Opera 10.5<br />
 İnternet Explorer 9+</p>
-<h3>background-clip</h3>
+<h2>background-clip</h2>
 <p><strong>background-clip</strong> ardalanın nerede gösterileceğini tanımlar. Daha önce
 padding dahil içerik alanı sabit olarak geliyordu, artık border alanıda
 dahil edilebiliyor veya padding alanı kapsamdan çıkarılabiliyor</p>
-<p><strong>Yapısı:</strong> background-clip: <bg-box><br />
-<strong>Aldığı Değerler:</strong> <bg-box> border-box | padding-box | content-box<br />
+<p class="cssozelliktanimi"><strong>Yapısı:</strong> background-clip: &lt;bg-box><br />
+<strong>Aldığı Değerler:</strong> &lt;bg-box> border-box | padding-box | content-box<br />
 <strong>Başlangıç değeri:</strong> border-box<br />
 <strong>Uygulanabilen elementler:</strong> Tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
@@ -141,28 +154,46 @@ dahil edilebiliyor veya padding alanı kapsamdan çıkarılabiliyor</p>
 <p><img alt="" src="https://lh6.googleusercontent.com/MOaRt6WqnrAxmlxJNMcvGKvA-Ki9x0IQOpz_Az4iqzZU6Ug3Dt1vutHFus__ZMQSORq3eLvhtrgzeWFPMzptoBB5pMxLHIWjoA26SO009nYr4fxoUrU" /></p>
 <p><strong>border-box</strong> tanımı eğer <strong>background-origin:border-box</strong> ise
 uygulanır.</p>
-<div class="codehilite"><pre> <span class="nf">#kutu1</span><span class="p">{</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#kutu1</span><span class="p">{</span>
+ <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+ <span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>  
+ <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">border</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">border</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+ <span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#kutu2</span><span class="p">{</span>
+ <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>   
+ <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">padding</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">padding</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">padding</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+ <span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">padding</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>  
+<span class="p">}</span>
+
+<span class="nf">#kutu3</span><span class="p">{</span>
+      <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">content</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">content</span><span class="p">;</span>
+ <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">content</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+ <span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">content</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>  
+<span class="p">}</span>
 </pre></div>
 
 
-<p>-webkit-background-origin: border; -webkit-background-origin:
-border-box; background-origin: border-box; -moz-background-clip:border;
--webkit-background-clip:border; -webkit-background-clip:border-box;
-background-clip:border-box; } #kutu2{ -moz-background-origin: border;
--webkit-background-origin: border; -webkit-background-origin:
-border-box; -moz-background-clip:padding;
--webkit-background-clip:padding; -webkit-background-clip:padding-box;
-background-clip:padding-box; } #kutu3{ -moz-background-origin: border;
--webkit-background-origin: border; -webkit-background-origin:
-border-box; -moz-background-clip:content;
--webkit-background-clip:content; -webkit-background-clip:content-box;
-background-clip:content-box; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/uzFeu/3/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/uzFeu/3/embedded/result,css,html"></iframe>
+
 <p><strong>background-origin:border-box</strong> olarak tanımladığımızda
 <strong>background-clip</strong> özelliğini daha iyi anlarız. Her üç kutudaki
 farkları gördüğünüz gibi. Resim sırası ile border, padding ve içerik
 alanından kırpılmıştır.</p>
-<p><strong>Tarayıcı Destekleme Listesi</strong><br />
+<p class="tarayiciuyum"><strong>Tarayıcı Destekleme Listesi</strong><br />
 Firefox 3.6+ (-moz- öneki ile) 4+ (öneksiz)<br />
 Chrome 1+ (-webkit- öneki ile)<br />
 Safari 3.0+ (-webkit- öneki ile)<br />
@@ -179,26 +210,31 @@ ve Webkit’in eski sürümlerinde değer olarak <strong>border, content</strong
 ve<strong>padding</strong> değerlerini desteklerken son çıkan sürümler standartlaşan
 <strong>content-box, border-box</strong> ve <strong>padding-box</strong> değerlerini
 desteklemektedirler.</p>
-<h3>background-clip: text Değeri</h3>
+<h2>background-clip: text Değeri</h2>
 <p>Webkit tabanlı tarayıcılarda diğerlerinden farklı olarak text değeride
 vardır. Henüz standartlarda bulunmayan bu değeri sadece webkit kullanan
 Chrome ve Safari desteklemektedir. Bu değer atandığında metinin
 ardalanına resim uygulanıyor geri kalan kısımlara ise saydam ardalan
 olarak kalıyor.</p>
-<div class="codehilite"><pre> <span class="nf">#kutu1</span> <span class="p">{</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#kutu1</span> <span class="p">{</span>
+   <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+   <span class="k">background</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">clip</span><span class="o">:</span><span class="k">text</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">text</span><span class="o">-</span><span class="n">fill</span><span class="o">-</span><span class="k">color</span><span class="o">:</span><span class="k">transparent</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span><span class="k">bold</span> <span class="m">72px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>   
+<span class="p">}</span>
 </pre></div>
 
 
-<p>-webkit-background-origin: border; -webkit-background-origin:
-border-box; background-origin: border-box; -webkit-background-clip:text;
--webkit-text-fill-color:transparent; font:bold 72px Arial, Helvetica,
-sans-serif; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/gqaC9/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/gqaC9/embedded/result,css,html"></iframe>
+
 <p><strong>-webkit-text-fill-color:transparent</strong> ile metnin ardalanını
 saydamlaştırıyoruz ve elemanın ardalanındaki resmi gösteriyoruz. Çok
 güzel görsel çalışmaları bu şekilde yapabiliriz, ancak henüz sadece
 Chrome ve Safari desteklediği için pek kullanışlı değil.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.css3.info/preview/background-origin-and-background-clip/">http://www.css3.info/preview/background-origin-and-background-clip/</a></li>
 <li><a href="http://www.w3.org/TR/css3-background/">http://www.w3.org/TR/css3-background/</a></li>
@@ -210,18 +246,14 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.</p>
 <li><a href="https://developer.mozilla.org/en/CSS/background-origin">https://developer.mozilla.org/en/CSS/background-origin</a></li>
 <li><a href="http://dev.opera.com/articles/view/css3-border-background-boxshadow/">http://dev.opera.com/articles/view/css3-border-background-boxshadow/</a></li>
 <li><a href="http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/">http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/</a></li>
-<li><a href="http://www.css3.info/webkit-introduces-background-cliptext/">http://www.css3.info/webkit-introduces-background-cliptext/</a>
-     (text)</li>
-<li><a href="http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/">http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/</a>
-    (text)</li>
+<li><a href="http://www.css3.info/webkit-introduces-background-cliptext/">http://www.css3.info/webkit-introduces-background-cliptext/</a></li>
+<li><a href="http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/">http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/</a></li>
 <li><a href="http://www.webkit.org/blog/164/background-clip-text/">http://www.webkit.org/blog/164/background-clip-text/</a> (text)</li>
 <li><a href="http://www.impressivewebs.com/background-clip-css3/">http://www.impressivewebs.com/background-clip-css3/</a> (güzel)</li>
 <li><a href="http://css-class.com/test/css/backgrounds/background-origin1.htm">http://css-class.com/test/css/backgrounds/background-origin1.htm</a></li>
 <li><a href="http://css-infos.net/property/background-origin">http://css-infos.net/property/background-origin</a></li>
-<li><a href="https://www.youtube.com/watch?v=7xVS2FX2Mao&amp;feature=related">https://www.youtube.com/watch?v=7xVS2FX2Mao&amp;feature=related</a>
-    (video)</li>
-</ul>
-</p><p><a href=".././css3-background-origin-ve-background-clip-ozellikleri/#disqus_thread">yorum var</a>.</p>
+<li><a href="https://www.youtube.com/watch?v=7xVS2FX2Mao&amp;feature=related">https://www.youtube.com/watch?v=7xVS2FX2Mao&amp;feature=related</a></li>
+</ul><p><a href=".././css3-background-origin-ve-background-clip-ozellikleri/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     
