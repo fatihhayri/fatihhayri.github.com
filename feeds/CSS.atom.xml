@@ -1493,10 +1493,20 @@ ile sağlanıyor.&lt;/p&gt;
 &lt;h3&gt;Kaynak&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://css-tricks.com/transparent-borders-with-background-clip/"&gt;http://css-tricks.com/transparent-borders-with-background-clip/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="css3"></category><category term="saydam köşeler"></category></entry><entry><title>CSS3 Metin Özellikleri</title><link href="http://www.fatihhayrioglu.com/css3-text-ozellikleri/" rel="alternate"></link><updated>2011-12-02T01:11:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-12-02:css3-text-ozellikleri/</id><summary type="html">&lt;h3&gt;word-wrap özelliği&lt;/h3&gt;
+&lt;/ul&gt;</summary><category term="css3"></category><category term="saydam köşeler"></category></entry><entry><title>CSS3 Metin Özellikleri</title><link href="http://www.fatihhayrioglu.com/css3-text-ozellikleri/" rel="alternate"></link><updated>2011-12-02T01:11:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-12-02:css3-text-ozellikleri/</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;word-wrap özelliği&lt;/li&gt;
+&lt;li&gt;text-wrap&lt;/li&gt;
+&lt;li&gt;text-stroke&lt;/li&gt;
+&lt;li&gt;text-align (yeni değerler)&lt;/li&gt;
+&lt;li&gt;text-align-last&lt;/li&gt;
+&lt;li&gt;text-overflow&lt;/li&gt;
+&lt;li&gt;text-rendering&lt;/li&gt;
+&lt;li&gt;hanging-punctuation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;word-wrap özelliği&lt;/h2&gt;
 &lt;p&gt;CSS3 &lt;strong&gt;word-wrap&lt;/strong&gt; özelliği diğer CSS3 özelliklerinden farklı olarak tüm
 tarayıcılar(IE dahil) tarafından desteklenmektedir.&lt;/p&gt;
-&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt;word-wrap: &lt;deger&gt;&lt;br /&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt;word-wrap: &amp;lt;deger&gt;&lt;br /&gt;
 &lt;strong&gt;Aldığı Değerler:&lt;/strong&gt; normal | break-word &lt;br /&gt;
 &lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; normal&lt;br /&gt;
 &lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; Tüm Elemanlara&lt;br /&gt;
@@ -1506,50 +1516,49 @@ sınırlarını zorlayan uzunlukta arada boşluk olmadan uzadığında kelimeyi
 satır başına atmak için kullanılır.&lt;/p&gt;
 &lt;p&gt;Bir örnek verecek olursak 150px genişliğindeki bir alan içinde bir
 metnimiz olsun.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;link&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; Loremipsumdolorsitametconsecteturadipiscingelit. Nam semper venenatis lobortis. Donec odio nisl, vehicula vitae molestie ac, euismod ac nibh. &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;link&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    Loremipsumdolorsitametconsecteturadipiscingelit.
+    Nam semper venenatis lobortis.
+    Donec odio nisl, vehicula vitae molestie ac,
+    euismod ac nibh.
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;CSS kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#link&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;150px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#999&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#link&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;150px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#999&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AdWMx/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;strong&gt;word-wrap&lt;/strong&gt; ile bu uzun kelimeyi aşağı atarak sayfadaki patlaklığı
-düzeltebiliriz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;word-wrap&lt;/strong&gt; ile bu uzun kelimeyi aşağı atarak sayfadaki patlaklığı düzeltebiliriz.&lt;/p&gt;
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/vZFZb/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Önceki yazımda bu işi white-space ile halletmiştim, ama mantıklı olan
 &lt;strong&gt;word-wrap&lt;/strong&gt; ile çözmek.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 1+  
-Safari 3.1+   
-Opera 10.5+  
-İnternet Explorer 5.5+  
-**Mobil Tarayıcılar**  
-iOS Safari 3.2+  
-Opera Mini 5+  
-Opera Mobile10+  
-Android Browser 2.1+
-
-&lt;/div&gt;
-
-&lt;h3&gt;text-wrap&lt;/h3&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 1+&lt;br /&gt;
+Safari 3.1+ &lt;br /&gt;
+Opera 10.5+&lt;br /&gt;
+İnternet Explorer 5.5+&lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;&lt;br /&gt;
+iOS Safari 3.2+&lt;br /&gt;
+Opera Mini 5+&lt;br /&gt;
+Opera Mobile10+&lt;br /&gt;
+Android Browser 2.1+&lt;/p&gt;
+&lt;h2&gt;text-wrap&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;text-wrap&lt;/strong&gt; özelliği &lt;strong&gt;word-wrap&lt;/strong&gt;’e benzer bir özelliktir.
 &lt;strong&gt;word-wrap&lt;/strong&gt;’in kelimeye yaptığı etkiyi &lt;strong&gt;text-wrap&lt;/strong&gt; metinlere yapar.&lt;/p&gt;
-&lt;div class="cssozelliktanimi"&gt;
-**Yapısı :** text-wrap: &lt;deger&gt;  
-**Aldığı Değerler:** normal | none | unrestricted | suppress   
-**Başlangıç değeri:** normal  
-**Uygulanabilen elementler:**Tüm Elemanlara  
-**Kalıtsallık:** Var
-
-&lt;/div&gt;
-
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; text-wrap: &amp;lt;deger&gt;&lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler:&lt;/strong&gt; normal | none | unrestricted | suppress &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; normal&lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt;Tüm Elemanlara&lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Var&lt;/p&gt;
 &lt;p&gt;text-wrap 4 adet değer alır.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;normal:&lt;/strong&gt; Satır sadece belirlenen yerlerden sonra satır başı
@@ -1562,58 +1571,52 @@ Android Browser 2.1+
     elemanı satırbaşı yaptırır&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Bu özelliği henüz hiç bir tarayıcı desteklemiyor.&lt;/p&gt;
-&lt;h3&gt;text-stroke&lt;/h3&gt;
+&lt;h2&gt;text-stroke&lt;/h2&gt;
 &lt;p&gt;CSS3 ile birlikte text-outline olarak standartlara giren bu özellik daha
 sonra standartlardan çıkarıldı, ancak webkit tabanlı tarayıcıların
 &lt;strong&gt;-webkit-text-stroke&lt;/strong&gt; olarak desteklemektedir.&lt;/p&gt;
 &lt;p&gt;CSS3 ile birlikte metinlerin etrafına dış çizgisi çizmemize olanak
 sağlıyor. Şu an sadece webkit tabanlı tarayıcıların(Safari, Chrome)
 desteği mevcut.&lt;/p&gt;
-&lt;div class="cssozelliktanimi"&gt;
-**Yapısı :**text-stroke: &lt;deger&gt;  
-**Aldığı Değerler :** thickness | blur | color   
-**Başlangıç değeri:** none  
-**Kalıtsallık:**Var
-
-&lt;/div&gt;
-
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt;text-stroke: &amp;lt;deger&gt;&lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; thickness | blur | color &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; none&lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt;Var&lt;/p&gt;
 &lt;p&gt;Tanım yaparken ilk olarak yazı tipinin rengini yaparız, sonrada dış hat
 çizgisini tanımlarız.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;font&lt;/span&gt;&lt;span class="nd"&gt;:bold&lt;/span&gt; &lt;span class="nt"&gt;24px&lt;/span&gt; &lt;span class="nt"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;sans-serif&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;#c00&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;-webkit-text-stroke&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;1px&lt;/span&gt; &lt;span class="nf"&gt;#000&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;font&lt;/span&gt;&lt;span class="nd"&gt;:bold&lt;/span&gt; &lt;span class="nt"&gt;24px&lt;/span&gt; &lt;span class="nt"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;sans-serif&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; 
+&lt;span class="nt"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;#c00&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; 
+&lt;span class="nt"&gt;-webkit-text-stroke&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;1px&lt;/span&gt; &lt;span class="nf"&gt;#000&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;iframe style="width: 100%; height: 300px"
-src="http://jsfiddle.net/fatihhayri/3dsPG/embedded/"
-allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3dsPG/embedded/" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;strong&gt;text-stroke&lt;/strong&gt; tanımının ilk değeri dış çizgisinin kalınlığını ikinci
 tanım rengini belirler.&lt;/p&gt;
 &lt;p&gt;Dış Çizgili ve Saydam zeminli Yazı Tipleri Oluşturmak&lt;/p&gt;
-&lt;p&gt;Saydam zeminli yazı tipleri tanımlamak için &lt;strong&gt;text-fill-color&lt;/strong&gt;
- özelliği kullanılır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ont&lt;/span&gt;&lt;span class="nd"&gt;:bold&lt;/span&gt; &lt;span class="nt"&gt;24px&lt;/span&gt; &lt;span class="nt"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;sans-serif&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;#c00&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;-webkit-text-stroke&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;1px&lt;/span&gt; &lt;span class="nf"&gt;#000&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;-webkit-text-fill-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;transparent&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;p&gt;Saydam zeminli yazı tipleri tanımlamak için &lt;strong&gt;text-fill-color&lt;/strong&gt; özelliği kullanılır.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;font&lt;/span&gt;&lt;span class="nd"&gt;:bold&lt;/span&gt; &lt;span class="nt"&gt;24px&lt;/span&gt; &lt;span class="nt"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;sans-serif&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;#c00&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;-webkit-text-stroke&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;1px&lt;/span&gt; &lt;span class="nf"&gt;#000&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;-webkit-text-fill-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;transparent&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/yWWbb/embedded/css,html,result" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
 
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox desteklemiyor  
-Chrome 4+ (-webkit- öneki ile)  
-Safari 3.2+ (-webkit- öneki ile)  
-Opera desteklemiyor  
-İnternet Explorer desteklemiyor  
-**Mobil Tarayıcılar**  
-iOS Safari 4.1+ (-webkit- öneki ile)  
-Opera Mini desteklemiyor  
-Opera Mobile destelemiyor  
-Android Browser 2.1+ (-webkit- öneki ile)
-
-&lt;/div&gt;
-
-&lt;h3&gt;text-align (yeni değerler)&lt;/h3&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox desteklemiyor&lt;br /&gt;
+Chrome 4+ (-webkit- öneki ile)&lt;br /&gt;
+Safari 3.2+ (-webkit- öneki ile)&lt;br /&gt;
+Opera desteklemiyor&lt;br /&gt;
+İnternet Explorer desteklemiyor&lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;&lt;br /&gt;
+iOS Safari 4.1+ (-webkit- öneki ile)&lt;br /&gt;
+Opera Mini desteklemiyor&lt;br /&gt;
+Opera Mobile destelemiyor&lt;br /&gt;
+Android Browser 2.1+ (-webkit- öneki ile)&lt;/p&gt;
+&lt;h2&gt;text-align (yeni değerler)&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;text-align&lt;/strong&gt; özelliği CSS3’den öncede vardı ancak CSS3 ile bu özelliğe
 iki tane daha yeni değer atandı. Burada bunları inceleyeceğiz. &lt;strong&gt;start&lt;/strong&gt;
 ve &lt;strong&gt;end&lt;/strong&gt; değerleri. Türkçe ve İngilizce metinler solda-sağa doğru
@@ -1625,38 +1628,33 @@ Böyle sağdan-sola doğru akan dillerde için bu iki değer işe yarıyor.&lt;/
 &lt;li&gt;&lt;strong&gt;end:&lt;/strong&gt; Eğer akış soldan sağa ise &lt;strong&gt;right&lt;/strong&gt; etkisi yapacaktır. Akış
     sağdan-sola ise &lt;strong&gt;left&lt;/strong&gt; etkisi yapacaktır.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;text-align-last&lt;/h3&gt;
+&lt;h2&gt;text-align-last&lt;/h2&gt;
 &lt;p&gt;CSS3 ile birlikte gelen bu özellik son satırın veya justify tanımlanmış
 elemanların satırlarının hizalanmasını sağlar. Bu özellik &lt;strong&gt;text-align&lt;/strong&gt;
 ile aynı etkiyi yapar.&lt;/p&gt;
-&lt;div class="cssozelliktanimi"&gt;
-**Yapısı :**text-align-last: &lt;deger&gt;  
-**Aldığı Değerler :** center | end | justify | left | right | start   
-**Başlangıç değeri:** start  
-**Kalıtsallık:** Var
-
-&lt;/div&gt;
-
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt;text-align-last: &amp;lt;deger&gt;&lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; center | end | justify | left | right | start &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; start&lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Var&lt;/p&gt;
 &lt;p&gt;justify uygulanmış bir metnin son satırının sağa yaslı olmasını
 istiyorsak&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;justify&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;last&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;justify&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;last&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img alt="" src="https://lh6.googleusercontent.com/3FsatoE0FmU_5BhUEy_zEiJ1IOKvCEw08hEBmUC65r2zb0sqP9w__9fwRPhdr8_avR3u4Bu0jDa2WAWnnaINNAY_tRNPtlLOO8RkvDlPQuB8Xm87Buc" /&gt;&lt;/p&gt;
-&lt;h3&gt;text-overflow&lt;/h3&gt;
+&lt;h2&gt;text-overflow&lt;/h2&gt;
 &lt;p&gt;Blok kapsayıcı elemanı içindeki satır içi elemanın içeriğini
 &lt;strong&gt;overflow&lt;/strong&gt; uygulamak için kullanılır. Blok kapsayıcı elemana
 &lt;strong&gt;overflow:visible&lt;/strong&gt; tanımı yapılmamış olmalıdır.&lt;/p&gt;
-&lt;div class="cssozelliktanimi"&gt;
-**Yapısı :** text-overflow: &lt;deger&gt;  
-**Aldığı Değerler :** clip | ellipsis  
-**Başlangıç değeri:**clip  
-**Uygulanabilen elementler:** Blok-level Elemanlara  
-**Kalıtsallık:** yok
-
-&lt;/div&gt;
-
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; text-overflow: &lt;deger&gt;&lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; clip | ellipsis&lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt;clip&lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; Blok-level Elemanlara&lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; yok&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://lh3.googleusercontent.com/miG_QKLBFvURtfSYFo3_P8q2QBZPWOGG2s-zMI7n7U97JH9TkMWd-tt3NnhL1nzD_DyQcqV1gmoqaK5FvhnR-XYI4AnQHl4H4A7h5TL884lG0H2OtmI" /&gt;&lt;br /&gt;
 resim kaynağı: &lt;a href="https://developer.mozilla.org/en/CSS/text-overflow"&gt;https://developer.mozilla.org/en/CSS/text-overflow&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Başlangış değeri &lt;strong&gt;clip&lt;/strong&gt;’dir. &lt;strong&gt;clip&lt;/strong&gt; değeri alan satır içi eleman
@@ -1665,42 +1663,36 @@ ellipsis’dir. &lt;strong&gt;ellipsis&lt;/strong&gt; değeri alan eleman &lt;st
 davranacaktır ancak farklı olarak sonuna üç nokta(...) koyacaktır.&lt;/p&gt;
 &lt;p&gt;CSS3 ile birlikte üç nokta yerine kendi istediğimiz özel karkateri cümle
 satır sonuna ekleyebiliyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;overflow&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;herhangibirsey&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;overflow&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;herhangibirsey&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 7+  
-Chrome 1+  
-Safari 3.1+   
-Opera 9.0 (-o- ön eki ile)  
-İnternet Explorer 6+  
-**Mobil Tarayıcılar**  
-iOS Safari 3.2+  
-Opera Mini 5.0+ (-o- öneki ile)  
-Opera Mobile 10.0 (-o- öneki ile)  
-Android Browser 2.1+
-
-&lt;/div&gt;
-
-&lt;h3&gt;text-rendering&lt;/h3&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 7+&lt;br /&gt;
+Chrome 1+&lt;br /&gt;
+Safari 3.1+ &lt;br /&gt;
+Opera 9.0 (-o- ön eki ile)&lt;br /&gt;
+İnternet Explorer 6+&lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;&lt;br /&gt;
+iOS Safari 3.2+&lt;br /&gt;
+Opera Mini 5.0+ (-o- öneki ile)&lt;br /&gt;
+Opera Mobile 10.0 (-o- öneki ile)&lt;br /&gt;
+Android Browser 2.1+&lt;/p&gt;
+&lt;h2&gt;text-rendering&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;text-rendering&lt;/strong&gt; özelliği okunabilirliği ayarlamamızı sağlana bir
 özelliktir. Bu özellik sayesinden tarayıcının metinlerimizi nasıl
 tarayacağını belirleyebiliyoruz. Tarayıcılar metinleri hız,
 okunabilirlik ve geometrik hassasiyet bakımından farklı şekilde
 yorumlarlar; text-rendering özelliği bu farklılıkları bizim kontrolümüze
 sunana bir özelliktir.&lt;/p&gt;
-&lt;div class="cssozelliktanimi"&gt;
-**Yapısı :**text-rendering: &lt;deger&gt;  
-**Aldığı Değerler :** auto | optimizeSpeed | optimizeLegibility |
-geometricPrecision | inherit  
-**Başlangıç değeri:** auto  
-**Uygulanabilen elementler:** Tüm Elemanlara  
-**Kalıtsallık:**Var
-
-&lt;/div&gt;
-
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt;text-rendering: &amp;lt;deger&gt;&lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; auto | optimizeSpeed | optimizeLegibility |
+geometricPrecision | inherit&lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; auto&lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; Tüm Elemanlara&lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt;Var&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;auto&lt;/strong&gt; değeri metin tarama işini tarayıcıya bıraktığımız anlamına
     geliyor.&lt;/li&gt;
@@ -1719,50 +1711,42 @@ geometricPrecision | inherit
 resim kaynağı: &lt;a href="https://developer.mozilla.org/en/CSS/text-rendering"&gt;https://developer.mozilla.org/en/CSS/text-rendering&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Tanımlarda dikkatimiz çeken karakter aralığı olarak Y ve o arasındaki
 mesafe ve ffl görünümündeki farklar kendini gösteriyor.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.0+  
-Chrome 4.0+  
-Safari 5+   
-Opera desteklemiyor  
-İnternet Explorer desteklemiyor
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.0+&lt;br /&gt;
+Chrome 4.0+&lt;br /&gt;
+Safari 5+ &lt;br /&gt;
+Opera desteklemiyor&lt;br /&gt;
+İnternet Explorer desteklemiyor&lt;/p&gt;
 &lt;p&gt;Chrome auto değerini optimizeSpeed olarak yorumluyor, geometricPrecision
  değerini tam olarak 13. sürümden itibaren yorumluyor.&lt;/p&gt;
 &lt;p&gt;Firefox auto değerini yazı boyutu 20px ve üzerinde optimizeLegibility
 gibi, diğerlerini ise optimizeSpeed gibi yorumluyor. geometricPrecision
  ise optimizeLegibility gibi yorumluyor.&lt;/p&gt;
 &lt;p&gt;Safari auto değerini optimizeSpeed gibi yorumluyor.&lt;/p&gt;
-&lt;h3&gt;hanging-punctuation&lt;/h3&gt;
+&lt;h2&gt;hanging-punctuation&lt;/h2&gt;
 &lt;p&gt;CSS3 metinleri yönetmek açısından bizim elimizi kuvvetlendirdiği kesin.
 &lt;strong&gt;hanging-punctuation&lt;/strong&gt; özelliği bize ayrıntı bir özellik kazandırıyor.
 &lt;strong&gt;hanging-punctuation&lt;/strong&gt; özelliği metin bloğunun dışına çıkarmamızı
 sağlıyor. Liste ikonları ve çift tırnakları metin bloğu dışına çıkararak
 daha güzel sonuçlar almamızı sağlıyor.&lt;/p&gt;
-&lt;div class="cssozelliktanimi"&gt;
-**Yapısı :** hanging-punctuation: &lt;deger&gt;  
-**Aldığı Değerler :** none | start | end | end-edge  
-**Başlangıç değeri:**none  
-**Kalıtsallık:** Var
-
-&lt;/div&gt;
-
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; hanging-punctuation: &lt;deger&gt;&lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; none | start | end | end-edge&lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt;none&lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Var&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://lh6.googleusercontent.com/RhIpgQ78or_m1wq9pK8wteUekGqrJlMiBGY-dEhvCGKFVlvLCGn7r_righ66slH2qGRDlcXt5TM-CZ8yFQTflFch3NnQ1nlOpZuaWQSlZblow8OvDAM" /&gt;&lt;/p&gt;
 &lt;p&gt;Yukarıdaki resimde görüldüğü gibi ilk resimde &lt;strong&gt;hanging-punctuation&lt;/strong&gt;
 uygulanmamış halini görürken ikinci resimde uygulanmış halini görüyoruz.
 Çift tırnak ve keme işaretleri metin bloğu dışına çıkarak daha blok bir
 metini ortaya koyuyor.&lt;/p&gt;
 &lt;p&gt;Bu özelliği henüz herhangi bir tarayıcı desteklememektedir.&lt;/p&gt;
-&lt;h3&gt;Sonuç&lt;/h3&gt;
+&lt;h2&gt;Sonuç&lt;/h2&gt;
 &lt;p&gt;CSS3 birçok yönden elimiz güçlendirmektedir. CSS3 metinler üzerinde
 düzenleme yapmamıza olanak sağlıyor. Henüz tam olarak tamamlanmaya
 birçok yönü var CSS3 metin özellikleri zamanla daha iyi oturacaktır.&lt;/p&gt;
 &lt;p&gt;Önceden tarayıcılar ve işletim sistemlerinin inisiyatifinde olan
 özellikleri CSS3 ile birlikte kod yazarlarının eline vermeye çalışıyor.&lt;/p&gt;
 &lt;p&gt;Kalın sağlıcakla.&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-text/"&gt;http://www.w3.org/TR/css3-text/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.impressivewebs.com/word-wrap-css3/"&gt;http://www.impressivewebs.com/word-wrap-css3/&lt;/a&gt;&lt;/li&gt;
@@ -1770,10 +1754,8 @@ birçok yönü var CSS3 metin özellikleri zamanla daha iyi oturacaktır.&lt;/p&
 &lt;li&gt;&lt;a href="http://caniuse.com/wordwrap"&gt;http://caniuse.com/wordwrap&lt;/a&gt; (wordp-wrap destek listesi)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/En/CSS/Word-wrap"&gt;https://developer.mozilla.org/En/CSS/Word-wrap&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-text/"&gt;http://www.w3.org/TR/css3-text/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property"&gt;http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property&lt;/a&gt;
-    (text-stroke)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://css-tricks.com/7405-adding-stroke-to-web-text/"&gt;http://css-tricks.com/7405-adding-stroke-to-web-text/&lt;/a&gt;
-    (text-stroke)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property"&gt;http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property&lt;/a&gt;(text-stroke)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-tricks.com/7405-adding-stroke-to-web-text/"&gt;http://css-tricks.com/7405-adding-stroke-to-web-text/&lt;/a&gt;(text-stroke)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.webkit.org/blog/85/introducing-text-stroke/"&gt;http://www.webkit.org/blog/85/introducing-text-stroke/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://code.stephenmorley.org/html-and-css/white-space-handling/"&gt;http://code.stephenmorley.org/html-and-css/white-space-handling/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.impressivewebs.com/css-white-space/"&gt;http://www.impressivewebs.com/css-white-space/&lt;/a&gt;&lt;/li&gt;
@@ -1803,11 +1785,11 @@ veya cufon gibi çözümler üretilse dahi bunlar yan yol ile çözüm
 standartları bunu dışında diğer sorunlarıda görüp CSS3 ile birlikte
 çözüme kavuşturmaya çalışıyor.&lt;/p&gt;
 &lt;p&gt;Burada sizlere bu özellikleri anlatmaya çalışacağım.&lt;/p&gt;
-&lt;h3&gt;@font-face&lt;/h3&gt;
+&lt;h2&gt;@font-face&lt;/h2&gt;
 &lt;p&gt;Bu konuyda daha önce derinlemesine değinmiştim. &lt;a href="http://www.fatihhayrioglu.com/font-face-kullanimi/"&gt;@font-face kullanımı&lt;/a&gt;
 bağlantısından detaylı bilgi alabilirsiniz. Bu özelliği diğerlerine göre
 avantajı mevcut tüm tarayıcılar tarafından desteklenmesidir.&lt;/p&gt;
-&lt;h3&gt;font-size-adjust&lt;/h3&gt;
+&lt;h2&gt;font-size-adjust&lt;/h2&gt;
 &lt;p&gt;font-size-adjusting özelliği yazı tipinin x-yüksekliği değerini orantılı
 olarak ayarlamamızı sağlar. x-yüksekliği değeri; aşağıdaki görselde de
 görüldüğü gibi küçük x harfinin yüksekliğini gösterir.&lt;/p&gt;
@@ -1823,18 +1805,20 @@ yakalamamıza yaracak güzel bir özellik.&lt;/p&gt;
 &lt;p&gt;Arial uyguladığımız 2. kolon ve Trebuchet Ms uyguladığımız 3. kolon aynı
 yüksekliğe sahipken ilk kolondaki verdana uyguladığımız metin yüksekliği
 daha yüksektir. Aynı yüksekiği yakalamak için&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.kolon1&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="err"&gt; &lt;/span&gt;&lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12px&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="m"&gt;18px&lt;/span&gt; &lt;span class="n"&gt;Verdana&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Geneva&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.kolon1&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12px&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="m"&gt;18px&lt;/span&gt; &lt;span class="n"&gt;Verdana&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Geneva&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;adjust&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;47&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;font-size-adjust:0.47; } &lt;/p&gt;
 &lt;p&gt;aynı yüksekliği yakalamamızı sağlayacaktır.&lt;/p&gt;
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/dkJye/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Bu özelliği daha iyi anlamak için &lt;a href="http://brunildo.org"&gt;http://brunildo.org&lt;/a&gt; sitesindeki
 örnek çok güzel.&lt;/p&gt;
 &lt;p&gt;Örneği görmek için tıklayınız.&lt;/p&gt;
-&lt;h3&gt;font-stretch&lt;/h3&gt;
+&lt;h2&gt;font-stretch&lt;/h2&gt;
 &lt;p&gt;font-stretch özelliği CSS2 ile birlikte gelip CSS2.1 ile birlikte kalkan
 özelliklerden biridir. CSS3 ile birlikte tekrar standartlara girmeye
 çalışıyor. Henüz hiç bir tarayıcı desteklemiyor.&lt;/p&gt;
@@ -1851,12 +1835,12 @@ Metni belirlene ölçülerde genişletir. Yarı, ekstra, normal ve ultra&lt;/p&g
 Göreceli değerlerdir. Kapsayıcı elemana göre göreceli olarak değer
 alır. wider değeri alan eleman kapsayıcısından daha geniş olurken,
 narrower değeri alan eleman kapsayıcısından daha dar olur.&lt;/p&gt;
-&lt;h3&gt;font-effect&lt;/h3&gt;
+&lt;h2&gt;font-effect&lt;/h2&gt;
 &lt;p&gt;Metinlere oymacılık efektlerini vermek için kullanabileceğimiz bir
 özellik. CSS3 standartların eklenen bu özellik sayesinde biz kabartma,
 oyma ve dış hat çizgisi uygulayabiliriz. Kullanma için pek mantıklı
 gelmedi bana ama zaman vermek gerekiyor biraz.&lt;/p&gt;
-&lt;h3&gt;font-smooth&lt;/h3&gt;
+&lt;h2&gt;font-smooth&lt;/h2&gt;
 &lt;p&gt;Yazı tipi uygulamalarında yumuşatma işlemi çok önemlidir. Ancak bu
 sistemi işletim sistemleri ele aldığı için biz kod yazarları için işin
 bu tarafı için ancak bir iki çakma yöntem uygulamak kalıyordu. Bu
@@ -1864,10 +1848,10 @@ bu tarafı için ancak bir iki çakma yöntem uygulamak kalıyordu. Bu
 Her bilgisayar Mac olsa yada PC’ler daha iyi yazı tipi tarasa
 font-face’in en büyük eksikliği ortadan kalkacaktır.&lt;/p&gt;
 &lt;p&gt;Gelecekle ümitle bakmak için bu özelliği daha etkin olması lazım.&lt;/p&gt;
-&lt;h3&gt;font-emphasize&lt;/h3&gt;
+&lt;h2&gt;font-emphasize&lt;/h2&gt;
 &lt;p&gt;Asya kökenli yazı tipleri için kullanılabilecek bir özellik. Zamanla
 daha detaylı inceleriz. Lazım oldukça incelemek gereken bir özellik.&lt;/p&gt;
-&lt;h3&gt;Sonuç&lt;/h3&gt;
+&lt;h2&gt;Sonuç&lt;/h2&gt;
 &lt;p&gt;Tipografi çok detaylı bir mecra zamanla daha güzel sonuçlar alacağımızı
 düşünsemde şimdilik çok başarılı olduğunu söyleyemem. CSS3 ile Yazı tipi
 özellikleri arasında en önemlisi font-face özelliği bence, hala belli
@@ -1875,7 +1859,7 @@ sorunları olsada tüm tarayıcıların destekliyor olması çok büyük bir
 katkıdır.&lt;/p&gt;
 &lt;p&gt;İleride her şey daha güzel olacak.&lt;/p&gt;
 &lt;p&gt;Kalın sağlıcakla&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-fonts/"&gt;http://www.w3.org/TR/css3-fonts/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.css3.info/more-type-control-with-css3-fonts/"&gt;http://www.css3.info/more-type-control-with-css3-fonts/&lt;/a&gt;&lt;/li&gt;
@@ -1891,40 +1875,29 @@ katkıdır.&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/font-size-adjust"&gt;https://developer.mozilla.org/en/CSS/font-size-adjust&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.w3.org/TR/WD-font/#font-size-adjust"&gt;http://www.w3.org/TR/WD-font/#font-size-adjust&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.siku-siku.com/blog/2010/11/22/preserving-the-x-height-of-your-preferred-font-choice/"&gt;http://www.siku-siku.com/blog/2010/11/22/preserving-the-x-height-of-your-preferred-font-choice/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://babylon-design.com/mais-c-est-quoi-au-juste-font-size-adjust/"&gt;http://babylon-design.com/mais-c-est-quoi-au-juste-font-size-adjust/&lt;/a&gt;
-    ()&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/"&gt;http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/&lt;/a&gt;
-    (Almanca güzel)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.webspaceworks.com/resources/fonts-web-typography/43/"&gt;http://www.webspaceworks.com/resources/fonts-web-typography/43/&lt;/a&gt;
-    (oran değerleri)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://babylon-design.com/mais-c-est-quoi-au-juste-font-size-adjust/"&gt;http://babylon-design.com/mais-c-est-quoi-au-juste-font-size-adjust/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/"&gt;http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.webspaceworks.com/resources/fonts-web-typography/43/"&gt;http://www.webspaceworks.com/resources/fonts-web-typography/43/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.fonttester.com/help/css_property/font-size-adjust.html"&gt;http://www.fonttester.com/help/css_property/font-size-adjust.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.opera.com/docs/specs/presto27/css/fonts/"&gt;http://www.opera.com/docs/specs/presto27/css/fonts/&lt;/a&gt; (font
-    desteği)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.opera.com/docs/specs/presto27/css/fonts/"&gt;http://www.opera.com/docs/specs/presto27/css/fonts/&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/"&gt;http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/css-ve-tipografi/"&gt;http://www.fatihhayrioglu.com/css-ve-tipografi/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://webforfreaks.com/cssandtype/index.php?chemin=content/2011-06-11/"&gt;http://webforfreaks.com/cssandtype/index.php?chemin=content/2011-06-11/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://brunildo.org/test/xheight.pl"&gt;http://brunildo.org/test/xheight.pl&lt;/a&gt; (font-size-adjusting -
-    örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://brunildo.org/test/xheight.pl"&gt;http://brunildo.org/test/xheight.pl&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.xhtml-lab.com/css3-reference/font-size-adjust"&gt;http://www.xhtml-lab.com/css3-reference/font-size-adjust&lt;/a&gt; (güzel)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.w3schools.com/cssref/css3_pr_font-stretch.asp"&gt;http://www.w3schools.com/cssref/css3_pr_font-stretch.asp&lt;/a&gt;
-    (font-stretch)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/cssref/css3_pr_font-stretch.asp"&gt;http://www.w3schools.com/cssref/css3_pr_font-stretch.asp&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/font-stretch"&gt;https://developer.mozilla.org/en/CSS/font-stretch&lt;/a&gt; (font-stretch)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://msdn.microsoft.com/library/ff974090.aspx"&gt;http://msdn.microsoft.com/library/ff974090.aspx&lt;/a&gt; (font-stretch)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://meyerweb.com/eric/css/tests/css3/show.php?p=font-stretch"&gt;http://meyerweb.com/eric/css/tests/css3/show.php?p=font-stretch&lt;/a&gt;
-    (font-stretch)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support"&gt;http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support&lt;/a&gt;
-    (font-stretch)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://meyerweb.com/eric/css/tests/css3/show.php?p=font-stretch"&gt;http://meyerweb.com/eric/css/tests/css3/show.php?p=font-stretch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support"&gt;http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://clagnut.com/blog/2265/"&gt;http://clagnut.com/blog/2265/&lt;/a&gt;  (font-stretch)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.cssportal.com/css-properties/font-effect.htm"&gt;http://www.cssportal.com/css-properties/font-effect.htm&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.handycss.com/wiki/font-effect/"&gt;http://www.handycss.com/wiki/font-effect/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://szafranek.net/works/articles/font-smoothing-explained/"&gt;http://szafranek.net/works/articles/font-smoothing-explained/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://maxvoltar.com/archive/-Webkit-font-smoothing"&gt;http://maxvoltar.com/archive/-Webkit-font-smoothing&lt;/a&gt;
-    (webkit-macos)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.usabilitypost.com/2010/08/26/font-smoothing/"&gt;http://www.usabilitypost.com/2010/08/26/font-smoothing/&lt;/a&gt;
-    (webkit-macos)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://maxvoltar.com/archive/-Webkit-font-smoothing"&gt;http://maxvoltar.com/archive/-Webkit-font-smoothing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.usabilitypost.com/2010/08/26/font-smoothing/"&gt;http://www.usabilitypost.com/2010/08/26/font-smoothing/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://daneden.me/2010/12/css-font-smoothing/"&gt;http://daneden.me/2010/12/css-font-smoothing/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="font-effect"></category><category term="font-emphasize"></category><category term="font-face"></category><category term="font-smooth"></category><category term="font-stretch"></category></entry><entry><title>ie7 Renk Geçişi Sorunu ve Çözümü</title><link href="http://www.fatihhayrioglu.com/ie7-renk-gecisi-sorunu-ve-cozumu/" rel="alternate"></link><updated>2011-10-20T22:27:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-10-20:ie7-renk-gecisi-sorunu-ve-cozumu/</id><summary type="html">&lt;p&gt;CSS3 artık bazı özellikleri ile hayatımıza giriyor, tabi kod yığını
+&lt;/ul&gt;</summary><category term="font-effect"></category><category term="font-emphasize"></category><category term="font-face"></category><category term="font-smooth"></category><category term="font-stretch"></category></entry><entry><title>ie7 Renk Geçişi Sorunu ve Çözümü</title><link href="http://www.fatihhayrioglu.com/ie7-renk-gecisi-sorunu-ve-cozumu/" rel="alternate"></link><updated>2011-10-20T22:27:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-10-20:ie7-renk-gecisi-sorunu-ve-cozumu/</id><summary type="html">&lt;p&gt;CSS3 artık bazı özellikleri ile hayatımıza giriyor, tabi kod yığını
 halinde girse de güzel sonuçları gördükçe kod yığını sorununu dert
 etmiyoruz. Tabi sorunlardan bir taneside İnternet Explorer
 desteklememesi. Daha önce İnternet Explorer için çözüm üretmiş olduğumuz
