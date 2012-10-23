@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/CSS,%20Javascript,%20jquery,%20Web%20Standartlar%C4%B1,%20XHTML.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2010-03-17T00:04:00+02:00</updated><entry><title>Çok kolonlu yapılar ve çok kolonlu menüler</title><link href="http://www.fatihhayrioglu.com/cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/" rel="alternate"></link><updated>2010-03-17T00:04:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-17:cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="/images/rei.jpg" title="rei" /&gt;][]&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/CSS,%20Javascript,%20jquery,%20Web%20Standartlar%C4%B1,%20XHTML.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2010-03-17T00:04:00+02:00</updated><entry><title>Çok kolonlu yapılar ve çok kolonlu menüler</title><link href="http://www.fatihhayrioglu.com/cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/" rel="alternate"></link><updated>2010-03-17T00:04:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-17:cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/</id><summary type="html">&lt;p&gt;&lt;a href="/images/rei.jpg"&gt;&lt;img alt="" src="/images/rei.jpg" title="rei" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Son zamanlarda bir çok yerde gözüme çarpan bir menü tipi var; iki
 kolonlu, üç kolonlu vb. menü tipleri. CSS ile en optimum şekilde bu
 menüyü nasıl yapabilirim diye araştırdım ve sizlerle paylaşmaya karar
@@ -30,132 +30,269 @@ kullanacağız. &lt;/p&gt;
 oluşturabiliriz bunlarıda göreceğiz.&lt;/p&gt;
 &lt;p&gt;Burada anlatacağımız metotlar sadece menülerde kullanılmaz, site
 içeriğindeki benzer yapılar içinde aynı metotlar kullanılabilir. &lt;/p&gt;
-&lt;h3&gt;1. Yol: float uygulanmış liste ögeleri&lt;/h3&gt;
+&lt;h2&gt;1. Yol: float uygulanmış liste ögeleri&lt;/h2&gt;
 &lt;p&gt;Bu yöntemde &lt;strong&gt;ul&lt;/strong&gt; elemanına sabit bir genişlik verip, her bir &lt;strong&gt;li&lt;/strong&gt;
 elemanına &lt;strong&gt;float&lt;/strong&gt; ve sabit genişlik tanımı yaparak yan yana dizeriz.
 Çok kolonlu yapılarını oluşturmak için en basit metottur. &lt;/p&gt;
 &lt;p&gt;Dezavantajı listelemek istediğimiz ögeleri yan yana dizer. Normalde
 istenen birinci kolonu bitirdikten sonra ikinci kolona geçmesidir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;İkinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Üçüncü Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Dördüncü Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Beşinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Altıncı Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Yedinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Sekizinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Dokuzuncu Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Onuncu Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;li&gt;İkinci Oge&lt;/li&gt; &lt;li&gt;Üçüncü Öge&lt;/li&gt; &lt;li&gt;Dördüncü
-Öge&lt;/li&gt; &lt;li&gt;Beşinci Öge&lt;/li&gt; &lt;li&gt;Altıncı Öge&lt;/li&gt;
-&lt;li&gt;Yedinci Öge&lt;/li&gt; &lt;li&gt;Sekizinci Öge&lt;/li&gt; &lt;li&gt;Dokuzuncu
-Öge&lt;/li&gt; &lt;li&gt;Onuncu Öge&lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodumuz&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;700px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;700px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;line-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;li { width:180px; margin:15px 0 0 0; padding:0 10px 0 0;
-line-height:15px; float:left; } &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot1.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;700px tüm genişlik içindir her ögenin genişliğini 180px verip bide
 sağdan 10px padding değeri ile yan yana dizeriz. &lt;/p&gt;
 &lt;p&gt;Örneği biraz daha geliştirip açılır menü haline getirelim. &lt;/p&gt;
 &lt;p&gt;HTML Kodu;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Tencere&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt; 
+        &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kapsul&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;İkinci Oge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        ....
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Onuncu Öge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+        &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Tava&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Çaydanlık&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Leğen&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kapsulSolda&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;İkinci Oge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        .....
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Onuncu Öge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+        &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;href=""&amp;gt;Tencere&lt;/a&gt; &lt;ul class="kapsul"&gt; &lt;li&gt;&lt;a href=""&gt;Birinci
-Oge&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;İkinci Oge&lt;/a&gt;&lt;/li&gt; ....
-&lt;li&gt;&lt;a href=""&gt;Onuncu Öge&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li&gt;&lt;a
-href=""&gt;Tava&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;Çaydanlık&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;Leğen&lt;/a&gt; &lt;ul class="kapsulSolda"&gt; &lt;li&gt;&lt;a
-href=""&gt;Birinci Oge&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;İkinci
-Oge&lt;/a&gt;&lt;/li&gt; ..... &lt;li&gt;&lt;a href=""&gt;Onuncu Öge&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodu;(kodun uzun olduğuna bakmayın çoğu kod menü elemanlarını daha
 güzel görünmesini sağlamak için eklenmiştir.) Bunu menüye uygulayalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;relative&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; 
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#C30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Trebuchet MS&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#0657ad&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;bold&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;li{float:left; width:180px; border-top:3px solid #fff;
-position:relative} ul li:hover, ul li.over{border-top:3px solid #C30;
-background-color:#eee; width:180px;} ul li a{ font:12px "Trebuchet MS",
-Arial, Helvetica, sans-serif; text-decoration:none; display:block;
-padding:5px 5px 5px 10px; color:#0657ad; font-weight:bold}&lt;/p&gt;
 &lt;p&gt;İlk menü öğelerini oluşturduk.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; 
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;ul{display:block;} &lt;/p&gt;
 &lt;p&gt;Burada virgülün ilk kısmı ie6 hariç olan kısmı için ie6 için ise
 aşağıdaki javascript kodunu yazacağız.&lt;/p&gt;
 &lt;p&gt;Tabi başımızın belası ie6 için menüyü açmak için javascript yardımı
 almamız gerekiyor. Çünkü ie6 linklerin haricinde :hover işleyişini
 uygulamıyor&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nx"&gt;startList&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;startList&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;all&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="nx"&gt;navRoot&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;navRoot&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;childNodes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;node&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;navRoot&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;childNodes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;nodeName&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;LI&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="nx"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onmouseover&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;className&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot; over&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="p"&gt;}&lt;/span&gt;
+                &lt;span class="nx"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onmouseout&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;className&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;className&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot; over&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+                &lt;span class="p"&gt;}&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onload&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nx"&gt;startList&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;(document.all&amp;amp;&amp;amp;document.getElementById) { navRoot =
-document.getElementById("menu"); for (i=0; i&amp;lt;navRoot.childNodes.length;
-i++) { node = navRoot.childNodes[i]; if (node.nodeName=="LI") {
-node.onmouseover=function() { this.className+=" over"; }
-node.onmouseout=function() { this.className=this.className.replace("
-over", ""); } } } } } window.onload=startList; &lt;/p&gt;
 &lt;p&gt;Açılan menü kısmının tam kapsanması için kapsayamama kodu ekleyeceğiz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="c"&gt;/*IE-mac de bu bolumu sakla \ */&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="c"&gt;/* IE-mac bu bolumu saklam artik */&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;block; height: 0; clear: both; visibility: hidden;} ul li ul {display:
-inline-block;} /&lt;em&gt;IE-mac de bu bolumu sakla  &lt;/em&gt;/ * html ul li ul
-{height: 1%;} ul li ul {display: block;} /&lt;em&gt; IE-mac bu bolumu saklam
-artik &lt;/em&gt;/ &lt;/p&gt;
 &lt;p&gt;Açılacak menü ul sinin tanımlarını yapıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;580px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;580px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#C30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;line-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#0657ad&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;underline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;normal&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#C30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.kapsulSolda&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;list-style-type:none; display:none; border-bottom:3px solid #C30;
-background-color:#eee; padding:5px 0 10px 10px; position:absolute;} ul
-li li {width:180px; margin:5px 0 0 0; padding:0 10px 0 0;
-line-height:15px; float:left; border:0;} ul li li:hover{border:0} ul li
-li a{color:#0657ad; text-decoration:underline; padding:0;
-font-weight:normal} ul li li a:hover{color:#C30; text-decoration:none}
-ul li ul.kapsulSolda{right:0} &lt;/p&gt;
 &lt;p&gt;Kolonlama için yukarıdaki yöntemi uyguluyoruz.&lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot1_.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;2. metot: Margin yönlendirmeleri ile&lt;/h3&gt;
+&lt;h2&gt;2. metot: Margin yönlendirmeleri ile&lt;/h2&gt;
 &lt;p&gt;Çok kolonlu yapıları oluşturmak için diğer bir yöntemde ikinci ve üçüncü
 kolonlara sağdan ve üstten margin değerleri vererek yapmaktır. Bu
 metodun avantajı kolon dizilişinin istediğimiz gibi olmasıdır. Bu
 metotta çoğaltacağımız kolonlara ek sınıflar eklemeliyiz. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 1&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 2&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 3&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 4&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 5&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon2 sifirla&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 6&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 7&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 8&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 9&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 10&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3 sifirla&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 11&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 12&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 13&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 14&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 15&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 16&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;href="#"&amp;gt;Öğe 1&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon1"&gt;&lt;a href="#"&gt;Öğe
-2&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon1"&gt;&lt;a href="#"&gt;Öğe 3&lt;/a&gt;&lt;/li&gt;
-&lt;li class="kolon1"&gt;&lt;a href="#"&gt;Öğe 4&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon1"&gt;&lt;a href="#"&gt;Öğe 5&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon2
-sifirla"&gt;&lt;a href="#"&gt;Öğe 6&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon2"&gt;&lt;a
-href="#"&gt;Öğe 7&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon2"&gt;&lt;a href="#"&gt;Öğe
-8&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon2"&gt;&lt;a href="#"&gt;Öğe 9&lt;/a&gt;&lt;/li&gt;
-&lt;li class="kolon2"&gt;&lt;a href="#"&gt;Öğe 10&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3 sifirla"&gt;&lt;a href="#"&gt;Öğe 11&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3"&gt;&lt;a href="#"&gt;Öğe 12&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3"&gt;&lt;a href="#"&gt;Öğe 13&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3"&gt;&lt;a href="#"&gt;Öğe 14&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3"&gt;&lt;a href="#"&gt;Öğe 15&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3"&gt;&lt;a href="#"&gt;Öğe 16&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodumuzu yazalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt; &lt;span class="m"&gt;2em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt; &lt;span class="m"&gt;2em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;line-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1.2em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.kolon1&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.kolon2&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.kolon3&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.sifirla&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-6em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;7em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;underline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;li { line-height: 1.2em; margin: 0; padding: 0; } * html ul li {
-position: relative; } ul li.kolon1 { margin-left: 0em; } ul li.kolon2 {
-margin-left: 10em; } ul li.kolon3 { margin-left: 20em; } li.sifirla {
-margin-top: -6em; } ul li a { display: block; width: 7em;
-text-decoration: none; } ul li a:hover { text-decoration:underline}&lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot2.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Yukarıdaki kodda ilk &lt;strong&gt;li&lt;/strong&gt; tanımımız bir önceki metot ile neredeyse
 aynıdır. Tek farklı olan kısım &lt;strong&gt;position:relative&lt;/strong&gt;tanımıdır, bu tanım
@@ -165,109 +302,201 @@ kolonları yukarı çekmek içinde menü yüksekliği kadar eksi margin değeri
 verilerek yukarı çekilmiştir.&lt;/p&gt;
 &lt;p&gt;Margin yönlendirmeleri ile menü oluşturmak pek mantıklı değildir. Esnek
 olmayan bu yöntem menü ekleme ve çıkarmalarında osurn çıkarır.&lt;/p&gt;
-&lt;h3&gt;3. Metot: Kapsayıcı katman ile bölmek&lt;/h3&gt;
+&lt;h2&gt;3. Metot: Kapsayıcı katman ile bölmek&lt;/h2&gt;
 &lt;p&gt;Bu metotta çoklu kolonlara ayrılacak listeler kapsayıcı katmanlar ile
 ayrılarak her bir kolon oluşturulur. Bu metotta yükseklik ile ilgi bir
 şey yapmaya gerek yoktur ve esnek bir yapıya sahiptir. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;licol&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;ol&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Let me
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;licol&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Let me not to the marriage of true minds&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Admit impediments; love is not love&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Which alters when it alteration finds&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Or bends with the remover to remove&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;licol&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ol&lt;/span&gt; &lt;span class="na"&gt;start=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Oh, no, it is an ever fixed mark&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;That looks on tempests and is never shaken;&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;It is the star to every wand&amp;#39;ring bark&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Whose worth&amp;#39;s unknown, although his height be taken&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;licol&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ol&lt;/span&gt; &lt;span class="na"&gt;start=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;9&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Love&amp;#39;s not Time&amp;#39;s fool, though rosy lips and cheeks&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Within his bending sickle&amp;#39;s compass come;&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Love alters not with his brief hours and weeks&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;But bears it out even to the edge of Doom&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;not to the marriage of true minds&lt;/li&gt; &lt;li&gt;Admit impediments; love
-is not love&lt;/li&gt; &lt;li&gt;Which alters when it alteration finds&lt;/li&gt;
-&lt;li&gt;Or bends with the remover to remove&lt;/li&gt; &lt;/ol&gt; &lt;/div&gt; &lt;div
-class="licol"&gt; &lt;ol start="5"&gt; &lt;li&gt;Oh, no, it is an ever fixed
-mark&lt;/li&gt; &lt;li&gt;That looks on tempests and is never shaken;&lt;/li&gt;
-&lt;li&gt;It is the star to every wand'ring bark&lt;/li&gt; &lt;li&gt;Whose worth's
-unknown, although his height be taken&lt;/li&gt; &lt;/ol&gt; &lt;/div&gt; &lt;div
-class="licol"&gt; &lt;ol start="9"&gt; &lt;li&gt;Love's not Time's fool, though
-rosy lips and cheeks&lt;/li&gt; &lt;li&gt;Within his bending sickle's compass
-come;&lt;/li&gt; &lt;li&gt;Love alters not with his brief hours and weeks&lt;/li&gt;
-&lt;li&gt;But bears it out even to the edge of Doom&lt;/li&gt; &lt;/ol&gt; &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;CSS kodumuzda kısadır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;line-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.licol&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;line-height:15px; } .licol { float: left; width: 200px; } &lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot3.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Diğer metotlara göre avantajlı görünen bu metodun da kendince sorunları
 vardır. Menü yaparken kapsayıcı bir katman(div) atayıp bu katman içinde
 ul'leri float ve genişlik vererek yan yana koyarız.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Tencere&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;    
+            &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ucluKolon&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+              &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Let me not to the marriage of true minds&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+                ...
+              &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+              &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Oh, no, it is an ever fixed mark&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+                ...
+              &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+              &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Love&amp;#39;s not Time&amp;#39;s fool, though rosy lips and cheeks&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+                ...
+              &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;      
+    &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+....
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;href=""&amp;gt;Tencere&lt;/a&gt; &lt;div class="ucluKolon"&gt; &lt;ul&gt; &lt;li&gt;&lt;a
-href=""&gt;Let me not to the marriage of true minds&lt;/a&gt;&lt;/li&gt; ...
-&lt;/ul&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=""&gt;Oh, no, it is an ever fixed
-mark&lt;/a&gt;&lt;/li&gt; ... &lt;/ul&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=""&gt;Love's not
-Time's fool, though rosy lips and cheeks&lt;/a&gt;&lt;/li&gt; ... &lt;/ul&gt;
-&lt;/div&gt; &lt;/li&gt; .... &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;İlk menü kısmını ilk yaptığımız ile aynı kodlara sahip olacaktır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#C30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#0657ad&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Trebuchet MS&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;li{float:left; width:180px; border-top:3px solid #fff;
-position:relative} ul li:hover, ul li.over{border-top:3px solid #C30;
-background-color:#eee; width:180px;} ul li a{ font:12px "Trebuchet MS",
-Arial, Helvetica, sans-serif; text-decoration:none; display:block;
-padding:5px 5px 5px 10px; color:#0657ad; font-weight:bold}&lt;/p&gt;
 &lt;p&gt;Daha sonra kapsayıcı katman tanımlarını yapıyoruz. Tabi öncesine
 kapsayamama sorunu kodunu ekleyerek. Kapsayamama sorunu kodlarını başa
 ekliyoruz çünkü bu kısmı sayfa normal gösteriminde gizlememiz gerekiyor.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#C30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;600px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;block; height: 0; clear: both; visibility: hidden;} div.ucluKolon
-{display: inline-block;} /&lt;em&gt;IE-mac de bu bolumu sakla  &lt;/em&gt;/ * html
-div.ucluKolon {height: 1%;} div.ucluKolon{display: block;} /&lt;em&gt; IE-mac bu
-bolumu saklam artik &lt;/em&gt;/ div.ucluKolon{width:600px; display:none;
-border-bottom:3px solid #C30; background-color:#eee; padding:5px 0
-10px 10px; position:absolute} &lt;/p&gt;
 &lt;p&gt;Üst menüde en sağdaki menü elemanının altında açılan menü sağ doğru
 değilde sola doğru açılacak, bunun için&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.sagda&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.sagda&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Üç kolonlu yapıyı oluşturmak için katman içindeki ul'lere genişlik ve
 float tanımı yapıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;üst menülerin üzerine gelince açılması için&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;div.ucluKolon{display:block} &lt;/p&gt;
 &lt;p&gt;ie6 için javascript kodumuzu yazıyoruz. Yukarıdaki kodun aynısı.&lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot3_.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;4. CSS 3 column-count özelliği ile&lt;/h3&gt;
+&lt;h2&gt;4. CSS 3 column-count özelliği ile&lt;/h2&gt;
 &lt;p&gt;CSS3 ile birlikte gelen yeni bir özellik sayesinde işler çok
 kolaylaştırıyor. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;İkinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Üçüncü Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Dördüncü Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Beşinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Altıncı Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Yedinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Sekizinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Dokuzuncu Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Onuncu Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;li&gt;İkinci Oge&lt;/li&gt; &lt;li&gt;Üçüncü Öge&lt;/li&gt; &lt;li&gt;Dördüncü
-Öge&lt;/li&gt; &lt;li&gt;Beşinci Öge&lt;/li&gt; &lt;li&gt;Altıncı Öge&lt;/li&gt;
-&lt;li&gt;Yedinci Öge&lt;/li&gt; &lt;li&gt;Sekizinci Öge&lt;/li&gt; &lt;li&gt;Dokuzuncu
-Öge&lt;/li&gt; &lt;li&gt;Onuncu Öge&lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodumuz ise iki satır&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#menu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;700px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;column&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#menu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;700px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;column&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;column&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;column&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;-moz-column-count: 3; -webkit-column-count: 3; } &lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot4.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Farklı tarayıcılar için yazılan bu kod maalesef ie ve opera'nın desteği
 olmadığı için uygulaması şimdilik yok.&lt;/p&gt;
-&lt;h3&gt;5. Metot: Javascript yardımı ile&lt;/h3&gt;
+&lt;h2&gt;5. Metot: Javascript yardımı ile&lt;/h2&gt;
 &lt;p&gt;Aslında bu yöntem bir önceki metodun tamamlayıcı bir metodudur.&lt;/p&gt;
 &lt;p&gt;Bu metotta css3 column-count özelliği ile yine css ile kodu yazacağız,
 javascript ile de desteklemeyen tarayıcılara uyumlu hale getireceğiz.&lt;/p&gt;
@@ -276,19 +505,31 @@ site yayında değil &lt;a href="http://www.cvwdesign.com" title="cvwdesign.com"
 söylemek gerekirse bunun dışında çalışan javascript kodu bulamadım. &lt;/p&gt;
 &lt;p&gt;Bu kodu kullanırken css kodunuzu harici kullanmalıyız aksi halde kod
 çalışmıyor. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE HTML PUBLIC &amp;quot;-//W3C//DTD HTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE HTML PUBLIC &amp;quot;-//W3C//DTD HTML 4.01//EN&amp;quot;&lt;/span&gt;
+&lt;span class="cp"&gt;&amp;quot;http://www.w3.org/TR/html4/strict.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Çoklu kolon&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon.css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt; 
+&lt;span class="c"&gt;&amp;lt;!--[if IE]&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;css3-multi-column.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;column&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&amp;gt; &lt;html&gt; &lt;head&gt;
-&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-&lt;title&gt;Çoklu kolon&lt;/title&gt; &lt;link href="kolon.css" rel="stylesheet"
-/&gt; &lt;!--[if IE]&gt;&lt;script type="text/javascript"
-src="css3-multi-column.js"&gt;&lt;/script&gt;&lt;![endif]--&gt; &lt;/head&gt; &lt;body&gt;
-&lt;ul class="column"&gt; &lt;li&gt;list item&lt;/li&gt; &lt;li&gt;list item&lt;/li&gt;
-&lt;li&gt;list item&lt;/li&gt; &lt;li&gt;list item&lt;/li&gt; &lt;li&gt;list item&lt;/li&gt;
-&lt;li&gt;list item&lt;/li&gt; &lt;li&gt;list item&lt;/li&gt; &lt;li&gt;list item&lt;/li&gt;
-&lt;/ul&gt; &lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Bu javascript dosyasını ekleyince css3 aşağıdaki özelliklere karşılık
 gelen özellikleri&lt;/p&gt;
 &lt;ul&gt;
@@ -297,44 +538,35 @@ gelen özellikleri&lt;/p&gt;
 &lt;li&gt;column-gap&lt;/li&gt;
 &lt;li&gt;column-rule&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;destekliyor. Mevcut açık kodun boyutu fazla gelince &lt;a href="http://refresh-sf.com/yui/" title="çevrimiçi yui   kompresor"&gt;çevrimiçi yui kompresor&lt;/a&gt; ile javascript dosyasını sıkıştırdım. Gayet güzel bir oran
+&lt;p&gt;destekliyor. Mevcut açık kodun boyutu fazla gelince &lt;a href="http://refresh-sf.com/yui/"&gt;çevrimiçi yui kompresor&lt;/a&gt; ile javascript dosyasını sıkıştırdım. Gayet güzel bir oran
 ile dosya boyutunu 37 kb'dan 19 kb'a kadar düşürdüm.&lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot5.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;jQuery yardımı ile çeşitli çözümler mevcuttur. kaynaklar bölümünde
 yazdım linklerini.&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.useit.com/alertbox/mega-dropdown-menus.html" title="http://www.useit.com/alertbox/mega-dropdown-menus.html"&gt;http://www.useit.com/alertbox/mega-dropdown-menus.html&lt;/a&gt; (genel
-    bilgi)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://articles.techrepublic.com.com/5100-10878_11-5810687.html" title="http://articles.techrepublic.com.com/5100-10878_11-5810687.html"&gt;http://articles.techrepublic.com.com/5100-10878_11-5810687.html&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.communitymx.com/content/article.cfm?page=1&amp;amp;cid=27F87" title="http://www.communitymx.com/content/article.cfm?page=1&amp;amp;cid=27F87"&gt;http://www.communitymx.com/content/article.cfm?page=1&amp;amp;cid=27F87&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.alistapart.com/articles/multicolumnlists/" title="http://www.alistapart.com/articles/multicolumnlists/"&gt;http://www.alistapart.com/articles/multicolumnlists/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://archivist.incutio.com/viewlist/css-discuss/88422" title="http://archivist.incutio.com/viewlist/css-discuss/88422"&gt;http://archivist.incutio.com/viewlist/css-discuss/88422&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menus/drop_lists.html" title="http://www.cssplay.co.uk/menus/drop_lists.html"&gt;http://www.cssplay.co.uk/menus/drop_lists.html&lt;/a&gt; (örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menu/column.html" title="http://www.cssplay.co.uk/menu/column.html"&gt;http://www.cssplay.co.uk/menu/column.html&lt;/a&gt; (farklı bir bakış)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin" title="http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin"&gt;http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://green-beast.com/experiments/css_double_lists.php" title="http://green-beast.com/experiments/css_double_lists.php"&gt;http://green-beast.com/experiments/css_double_lists.php&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://css-discuss.incutio.com/?page=MultipleColumnLists" title="http://css-discuss.incutio.com/?page=MultipleColumnLists"&gt;http://css-discuss.incutio.com/?page=MultipleColumnLists&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://welcome.hp.com/country/tr/tr/welcome.html" title="http://welcome.hp.com/country/tr/tr/welcome.html"&gt;http://welcome.hp.com/country/tr/tr/welcome.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://css.flepstudio.org/en/css3/multi-column.html" title="http://css.flepstudio.org/en/css3/multi-column.html"&gt;http://css.flepstudio.org/en/css3/multi-column.html&lt;/a&gt; (css3 multi
-    column)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/" title="http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/"&gt;http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript" title="http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript"&gt;http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/" title="http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/"&gt;http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/&lt;/a&gt;
-    (jquery yardımı işle güzel)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://codeasily.com/jquery/multi-column-list-with-jquery" title="http://codeasily.com/jquery/multi-column-list-with-jquery"&gt;http://codeasily.com/jquery/multi-column-list-with-jquery&lt;/a&gt;
-    (jquery multi kolon eklentisi)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://welcome.totheinter.net/columnizer-jquery-plugin/" title="http://welcome.totheinter.net/columnizer-jquery-plugin/"&gt;http://welcome.totheinter.net/columnizer-jquery-plugin/&lt;/a&gt; (jquery
-    multi kolon eklentisi)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.zenelements.co.uk/blog/css3-multiple-columns/" title="http://www.zenelements.co.uk/blog/css3-multiple-columns/"&gt;http://www.zenelements.co.uk/blog/css3-multiple-columns/&lt;/a&gt; (css3
-    multi-kolon ve destekleme listesi)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.americanstandard-us.com/" title="http://www.americanstandard-us.com/"&gt;http://www.americanstandard-us.com/&lt;/a&gt; (örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.gatesfoundation.org/Pages/home.aspx" title="http://www.gatesfoundation.org/Pages/home.aspx"&gt;http://www.gatesfoundation.org/Pages/home.aspx&lt;/a&gt; (örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menus/multi-column.html" title="http://www.cssplay.co.uk/menus/multi-column.html"&gt;http://www.cssplay.co.uk/menus/multi-column.html&lt;/a&gt; (örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.whitehouse.gov/" title="http://www.whitehouse.gov/"&gt;http://www.whitehouse.gov/&lt;/a&gt; (Örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/" title="http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/"&gt;http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915" title="http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915"&gt;http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;p&gt;[&lt;img alt="" src="/images/rei.jpg" title="rei" /&gt;]: /images/rei.jpg&lt;/p&gt;</summary><category term="css3"></category><category term="çok kolonlu"></category><category term="çok kolonlu menüler"></category><category term="Javascript"></category><category term="jquery"></category></entry></feed>
+&lt;li&gt;&lt;a href="http://www.useit.com/alertbox/mega-dropdown-menus.html"&gt;http://www.useit.com/alertbox/mega-dropdown-menus.html&lt;/a&gt; (genel bilgi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://articles.techrepublic.com.com/5100-10878_11-5810687.html"&gt;http://articles.techrepublic.com.com/5100-10878_11-5810687.html&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.communitymx.com/content/article.cfm?page=1&amp;amp;cid=27F87"&gt;http://www.communitymx.com/content/article.cfm?page=1&amp;amp;cid=27F87&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.alistapart.com/articles/multicolumnlists/"&gt;http://www.alistapart.com/articles/multicolumnlists/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://archivist.incutio.com/viewlist/css-discuss/88422"&gt;http://archivist.incutio.com/viewlist/css-discuss/88422&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menus/drop_lists.html"&gt;http://www.cssplay.co.uk/menus/drop_lists.html&lt;/a&gt; (örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menu/column.html"&gt;http://www.cssplay.co.uk/menu/column.html&lt;/a&gt; (farklı bir bakış)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin"&gt;http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://green-beast.com/experiments/css_double_lists.php"&gt;http://green-beast.com/experiments/css_double_lists.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-discuss.incutio.com/?page=MultipleColumnLists"&gt;http://css-discuss.incutio.com/?page=MultipleColumnLists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://welcome.hp.com/country/tr/tr/welcome.html"&gt;http://welcome.hp.com/country/tr/tr/welcome.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css.flepstudio.org/en/css3/multi-column.html"&gt;http://css.flepstudio.org/en/css3/multi-column.html&lt;/a&gt; (css3 multi column)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/"&gt;http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript"&gt;http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/"&gt;http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/&lt;/a&gt; (jquery yardımı işle güzel)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://codeasily.com/jquery/multi-column-list-with-jquery"&gt;http://codeasily.com/jquery/multi-column-list-with-jquery&lt;/a&gt; (jquery multi kolon eklentisi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://welcome.totheinter.net/columnizer-jquery-plugin/"&gt;http://welcome.totheinter.net/columnizer-jquery-plugin/&lt;/a&gt; (jquery multi kolon eklentisi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.zenelements.co.uk/blog/css3-multiple-columns/"&gt;http://www.zenelements.co.uk/blog/css3-multiple-columns/&lt;/a&gt; (css3 multi-kolon ve destekleme listesi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.americanstandard-us.com/"&gt;http://www.americanstandard-us.com/&lt;/a&gt; (örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.gatesfoundation.org/Pages/home.aspx"&gt;http://www.gatesfoundation.org/Pages/home.aspx&lt;/a&gt; (örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menus/multi-column.html"&gt;http://www.cssplay.co.uk/menus/multi-column.html&lt;/a&gt; (örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.whitehouse.gov/"&gt;http://www.whitehouse.gov/&lt;/a&gt; (Örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/"&gt;http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915"&gt;http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="css3"></category><category term="çok kolonlu"></category><category term="çok kolonlu menüler"></category><category term="Javascript"></category><category term="jquery"></category></entry></feed>

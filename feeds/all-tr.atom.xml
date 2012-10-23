@@ -3968,21 +3968,22 @@ değerlerinin içerip içermemesi gerektiğini tanımlama imkanı sağlıyor.
 &lt;ul&gt;
 &lt;li&gt;content-box: Normal kabul halidir. Genişlik veya yükseklik değeri
     içerik alanını içerir; border ve padding değerlerini içermez.&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;border-box: IE kutu kabulü diyede adlandırabileceğimiz değer.
+&lt;li&gt;border-box: IE kutu kabulü diyede adlandırabileceğimiz değer.
     Genişlik veya yükseklik değeri padding ve border değerlerinide
-    içerir.&lt;/p&gt;
-&lt;p&gt;:::css&lt;/p&gt;
-&lt;h1&gt;kutu{&lt;/h1&gt;
-&lt;p&gt;display:block;
-  border:10px solid #069;
-  padding:20px;
-  width:200px;
-  height:200px;
-  background:#CCC;
-}&lt;/p&gt;
-&lt;/li&gt;
+    içerir.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;CSS kodu;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#kutu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#069&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#CCC&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/ZeMYW/1/embedded/result,css,html"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Başlangıç değeri content-box’dır. Kutu genişliği 10px + 20px + 200 + 20
@@ -4009,14 +4010,26 @@ yapıldığında&lt;/p&gt;
 ise 140px olacaktır.&lt;/p&gt;
 &lt;p&gt;Her iki değerin kullanılabileceği yerler vardır. border-box tanımının
 esnek yapılı alanlarda bize avantaj sağlayacağı kesindir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.kutuSol&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;30&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;pink&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.kutuSol&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;30&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;pink&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="nb"&gt;red&lt;/span&gt; &lt;span class="k"&gt;dotted&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;150px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.kutuSag&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;lightgreen&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;70&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="nb"&gt;green&lt;/span&gt; &lt;span class="k"&gt;dotted&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;150px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;3px red dotted; height: 150px; } .kutuSag{ float: left;
-background-color: lightgreen; width: 70%; border: 3px green dotted;
-height: 150px; } 
-&lt;iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/jP3Dv/1/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/jP3Dv/1/embedded/result,css,html"&gt;&lt;/iframe&gt;
+
 &lt;p&gt;Esnek yapılı bir içerikte genişlik tanımlarımızı yüzde olarak
 verdiğimizde ve de padding ve border tanımı yaptığımızda kutularımızın
 genişliği toplamı %100 olmasına rağmen padding ve border değerleri
@@ -4517,13 +4530,25 @@ aFolder    another.txt    bilgilendirme.txt   deneme.html
 &lt;h2&gt;cd (Change Directory)&lt;/h2&gt;
 &lt;p&gt;Bu komut ile dosyalar arası geçiş için kullanırız. Mesela image
 klasörüne geçmek için&lt;/p&gt;
-&lt;p&gt;[bash] cd images [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;images
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Tek seviyede değil birden fazla seviyede geçişte yapabiliriz.&lt;/p&gt;
-&lt;p&gt;[bash] cd images/icons/ust [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;images/icons/ust
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Bir alt klasöre inmek için&lt;/p&gt;
-&lt;p&gt;[bash] cd .. [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ..
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Kök dizinine(root) inmek için ise&lt;/p&gt;
-&lt;p&gt;[bash] cd [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;yazmak yeterlidir. Ufak bir ipucu klasör isimlerinin uzun olması
 durumunda akılda tutmak zor oluyor. Klasör veya dosya isminin başında
 bir kaç karakter yazdıktan sonra tab tuşuna basarak gerisini
@@ -4531,19 +4556,35 @@ tamamlayabilirsiniz.&lt;/p&gt;
 &lt;h2&gt;mkdir (Make Directory)&lt;/h2&gt;
 &lt;p&gt;Yeni klasör oluşturmak için kullanıyoruz. Mac ve Windows’ta kullanımı
 aynıdır.&lt;/p&gt;
-&lt;p&gt;[bash] mkdir yeniKlasor [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;mkdir yeniKlasor
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;rm (remove)&lt;/h2&gt;
 &lt;p&gt;Dosya ve klasörleri silmek için kullanılır. Silme işlemlerinde her zaman
 dikkatli olmak lazım.&lt;/p&gt;
-&lt;p&gt;[bash] rm deneme.html rm images_klasoru [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;rm deneme.html
+rm images_klasoru
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;cp (copy) ve mv (move)&lt;/h2&gt;
 &lt;p&gt;Çok basit bir kullanımı vardır. İlk parametre kopyalanacak dosyayı
 ikinci parametre ise hedefi gösterir.&lt;/p&gt;
-&lt;p&gt;[bash] cp deneme.html ~/dosya/deneme.html [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;cp deneme.html ~/dosya/deneme.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Eğer taşımak istiyorsanız, aynı şekilde kullanabiliriz.&lt;/p&gt;
-&lt;p&gt;[bash] mv deneme.html /dosya/deneme.html [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;mv deneme.html /dosya/deneme.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;mv komutu dosya ismini değiştirmek içinde kullanılabilir.&lt;/p&gt;
-&lt;p&gt;[bash] mv deneme.html /dosya/test.html [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;mv deneme.html /dosya/test.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;deneme.html dosyası ismi test.html olarak değiştirilip taşınmıştır.&lt;/p&gt;
 &lt;h2&gt;clear&lt;/h2&gt;
 &lt;p&gt;Terminal ekranını temizlemek için kullanılır.&lt;/p&gt;
@@ -4551,7 +4592,10 @@ ikinci parametre ise hedefi gösterir.&lt;/p&gt;
 &lt;p&gt;Komut satırlarından harici programlarda da açabiliyoruz veya kendi
 içinde açabiliyoruz.&lt;/p&gt;
 &lt;p&gt;Mesela MacOs için ilgili klasörde iken&lt;/p&gt;
-&lt;p&gt;[bash] nano deneme.html [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;nano deneme.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;komutu deneme.html dosyamızı nano editöründe açmamızı sağlayacaktır.&lt;/p&gt;
 &lt;h2&gt;exit&lt;/h2&gt;
 &lt;p&gt;Eğer uzak dosya yönetimi ile çalışıyorsanız. Kurduğunuz bağlantıyı
@@ -4567,48 +4611,61 @@ komutları ve ipuçlarını paylaşacağım.&lt;/p&gt;
 &lt;h2&gt;İki dosya arasındaki farkı görmek&lt;/h2&gt;
 &lt;p&gt;Bir branchdeki veya bir dosya üzerindeki değişiklikleri görmek için
 branchde iken&lt;/p&gt;
-&lt;p&gt;[php] $git log [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="nb"&gt;log&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;yazarız bu komut bize&lt;/p&gt;
-&lt;p&gt;[php] commit f491239170cb1463c7c3cd970862d6de636ba787 Author: Matt
-McCutchen &amp;lt;matt@mattmccutchen.net&amp;gt; Date:   Thu Aug 14 13:37:41
-2008 -0400 git format-patch documentation: clarify what --cover-letter
-does commit 7950659dc9ef7f2b50b18010622299c508bfdfc3 Author: Eric Raible
-&amp;lt;raible@gmail.com&amp;gt; Date:   Thu Aug 14 10:12:54 2008 -0700 bash
-completion: 'git apply' should use 'fix' not 'strip' Bring completion up
-to date with the man page. [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="n"&gt;f491239170cb1463c7c3cd970862d6de636ba787&lt;/span&gt; &lt;span class="n"&gt;Author&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Matt&lt;/span&gt; &lt;span class="n"&gt;McCutchen&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;matt&lt;/span&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="n"&gt;mattmccutchen&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;net&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="n"&gt;Thu&lt;/span&gt; &lt;span class="n"&gt;Aug&lt;/span&gt; 14 13&lt;span class="p"&gt;:&lt;/span&gt;37&lt;span class="p"&gt;:&lt;/span&gt;41 2008 &lt;span class="o"&gt;-&lt;/span&gt;0400 &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;patch&lt;/span&gt; &lt;span class="n"&gt;documentation&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;clarify&lt;/span&gt; &lt;span class="n"&gt;what&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;cover&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;letter&lt;/span&gt; &lt;span class="n"&gt;does&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; 7950659&lt;span class="n"&gt;dc9ef7f2b50b18010622299c508bfdfc3&lt;/span&gt; &lt;span class="n"&gt;Author&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Eric&lt;/span&gt; &lt;span class="n"&gt;Raible&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;raible&lt;/span&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gmail&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="n"&gt;Thu&lt;/span&gt; &lt;span class="n"&gt;Aug&lt;/span&gt; 14 10&lt;span class="p"&gt;:&lt;/span&gt;12&lt;span class="p"&gt;:&lt;/span&gt;54 2008 &lt;span class="o"&gt;-&lt;/span&gt;0700 &lt;span class="n"&gt;bash&lt;/span&gt; &lt;span class="n"&gt;completion&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;git apply&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;should&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;fix&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;strip&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;Bring&lt;/span&gt; &lt;span class="n"&gt;completion&lt;/span&gt; &lt;span class="n"&gt;up&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt; &lt;span class="n"&gt;with&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;man&lt;/span&gt; &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;gibi bir sonuç döndürür. O dosya veya o branch üzerinde yapılan tüm
 değişiklikler hakkında bilgileri içeren bir listedir bu. Bu listede
 commit … ile başlayan satırda verilen numara yapılan ve gönderilen her
 iş için farklıdır biz bu sözdizimini kullanarak iki farklı gönderi
 arasındaki farkı bulabiliriz.&lt;/p&gt;
-&lt;p&gt;[php] $git diff f491239170cb1463c7c3cd970862d6de636ba787
-7950659dc9ef7f2b50b18010622299c508bfdfc3  Html/index.html [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;diff&lt;/span&gt; &lt;span class="n"&gt;f491239170cb1463c7c3cd970862d6de636ba787&lt;/span&gt; 7950659&lt;span class="n"&gt;dc9ef7f2b50b18010622299c508bfdfc3&lt;/span&gt;  &lt;span class="n"&gt;Html&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;İki farklı branchdeki HTML/index.html dosyasındaki farklılıkları
 gösterir yukarıdaki kod. Farkları renkli görmek için --color
 parametresini kullanabiliriz.&lt;/p&gt;
-&lt;p&gt;[php] $git diff --color  d76192b2c7a61d2aea62c7aec21e14cda72f9e32
-fe0dba7b841e86b095d2aefbd6bd755a0d9d1e90  Html/index.html [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;diff&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;color&lt;/span&gt;  &lt;span class="n"&gt;d76192b2c7a61d2aea62c7aec21e14cda72f9e32&lt;/span&gt; &lt;span class="n"&gt;fe0dba7b841e86b095d2aefbd6bd755a0d9d1e90&lt;/span&gt;  &lt;span class="n"&gt;Html&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Eklenenleri yeşil, çıkarılanları kırmızı renkte gösterecektir. Ayrımı
 görmek için renkler güzel oluyor.&lt;/p&gt;
 &lt;h2&gt;Dallanma (Brach) Silmek&lt;/h2&gt;
 &lt;p&gt;git branch -d: Yanlışlıkla açtığımız branchlerı silmek için&lt;/p&gt;
-&lt;p&gt;[php] $git branch -d branch_ismi [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="n"&gt;branch_ismi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;Kısayol kullanmak&lt;/h2&gt;
 &lt;p&gt;Git kullanırken aynı kodları tekrar tekrar çok kullanıyoruz. Bu
 komutları kısaltarak daha hızlı kod yazabilme imkanı sağlıyor bize komut
 sistemi.&lt;/p&gt;
-&lt;p&gt;git config dosyasına kısayolllarımızı ekleyebiliyoruz. git cofig ile
-ilgili ayrıntılı bilgiyi
-&lt;a href="http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/"&gt;http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/&lt;/a&gt;
-bağlantısından edinebilirsiniz.&lt;/p&gt;
+&lt;p&gt;git config dosyasına kısayolllarımızı ekleyebiliyoruz. git cofig ile ilgili ayrıntılı bilgiyi &lt;a href="http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/"&gt;http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/&lt;/a&gt; bağlantısından edinebilirsiniz.&lt;/p&gt;
 &lt;p&gt;Global congif dosyasına eklemek için&lt;/p&gt;
-&lt;p&gt;[php] $git config --global alias.ci commit [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;alias&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ci&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;strong&gt;ci&lt;/strong&gt; kısaltma &lt;strong&gt;commit&lt;/strong&gt; normali. Eğer projeye özgü kısayollar
 oluşturmak için&lt;/p&gt;
-&lt;p&gt;[php] $git config alias.ci commit [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;alias&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ci&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;strong&gt;--global&lt;/strong&gt; parametresini kaldırmamız yeterli olacaktır. git config
 dosyasını görmek için&lt;/p&gt;
-&lt;p&gt;[php] $git config --edit [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;edit&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;yazmamız yeterli burada eklediğimiz kısayolları görebiliriz. Benim
 listem aşağıdaki gibi.&lt;br /&gt;
 &lt;/p&gt;
@@ -4623,13 +4680,22 @@ ci = commit&lt;/p&gt;
 bağlantıda Git kaynakları listelenmiş. Git’in güzel yanlarında birisi
 öğrenmek için kaynağın bol olması.&lt;/p&gt;
 &lt;h2&gt;Başka Branch’den dosya almak&lt;/h2&gt;
-&lt;p&gt;[php] $git checkout branch_adi dosya_adi [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;checkout&lt;/span&gt; &lt;span class="n"&gt;branch_adi&lt;/span&gt; &lt;span class="n"&gt;dosya_adi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Benzer bir şekilde branchde yaptığımız değişikliği geri almak için
 master’dan dosyayı alabiliriz.&lt;/p&gt;
-&lt;p&gt;[php] git checkout master dosya_adi [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;checkout&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt; &lt;span class="n"&gt;dosya_adi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;Değişen dosya isimleri&lt;/h2&gt;
 &lt;p&gt;Çalıştığımız branchde değişiklik yaptığımız dosyaları görmek için&lt;/p&gt;
-&lt;p&gt;[php] $git diff master --name-only [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;diff&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;only&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;kodunu kullanıyoruz.&lt;/p&gt;
 &lt;p&gt;Bana üşenmeyip bunları ve aklımda kalmayan bir çok bilgiyi öğreten Onur
 Yerlikaya'ya şükranlarımı sunarım. Gitmeyeydin Git daha kolay olacaadı.
@@ -4655,16 +4721,21 @@ programcı hataları bulup üzerine gidip çözebilendir.&lt;/p&gt;
 &lt;p&gt;Soruna gelirsek; Sorun Bitişik Kardeş Seçicileri kullandığımız elemanlar
 arasında eğer HTML yorum satırı eklersek ie7 bitişik kardeş seçicisi ile
 tanımladığımız bildirimleri yorumlamıyor.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Başlık&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt; &lt;span class="c"&gt;&amp;lt;!-- html yorumu --&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Paragraf&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Başlık&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;&amp;lt;!-- html yorumu --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Paragraf&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;CSS kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fc0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fc0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/Ubk9Q/embedded/result,html,css"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/Ubk9Q/embedded/result,html,css"&gt;&lt;/iframe&gt;
+
 &lt;p&gt;Uygulaması bütün tarayıcılarda sorunsuz çalışırken ie7’de sonuç
 vermeyecektir. DOM’daki öğelerin konumuna göre çalışan bu seçicinin
 çalışmasında ie7 aradaki yorum satırlarınıda dikkate alarak istenen
@@ -4674,85 +4745,50 @@ yorumları silmek bir çözümdür. Ama ben ie ile sorun yaşıyorum diye yorum
 satırımı silmek istemem. Çözüm&lt;a href="http://www.fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/"&gt;ie6 sorunları&lt;/a&gt; ile uğraşırken
 bulduğumuz şekilde olacaktır. Şartlı yorumları kullanarak çözüme
 ulaşmakta mümkündür.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Başlık&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt; &lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;Başlık yaz &amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Başlık&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;Başlık yaz &amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Paragraf&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Paragraf 2&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;p&gt;Paragraf&lt;/p&gt; &lt;p&gt;Paragraf 2&lt;/p&gt; &lt;/p&gt;
 &lt;p&gt;Şeklinde bir çözüm işimizi görecektir.&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://oncemade.com/adjacent-sibling-selector-bug-ie7/"&gt;http://oncemade.com/adjacent-sibling-selector-bug-ie7/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[http://www.fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/][ie6     sorunları]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="bitişik kardeş seçiciler"></category><category term="ie7"></category><category term="sorun"></category></entry><entry><title>CSS3 Seçicileri</title><link href="http://www.fatihhayrioglu.com/css3-secicileri/" rel="alternate"></link><updated>2011-09-05T21:50:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-09-05:css3-secicileri/</id><summary type="html">&lt;p&gt;CSS için seçiciler çok önemlidir. CSS3 ile birlikte gelen yeni seçiciler
+&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/"&gt;http://www.fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="bitişik kardeş seçiciler"></category><category term="ie7"></category><category term="sorun"></category></entry><entry><title>CSS3 Seçicileri</title><link href="http://www.fatihhayrioglu.com/css3-secicileri/" rel="alternate"></link><updated>2011-09-05T21:50:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-09-05:css3-secicileri/</id><summary type="html">&lt;p&gt;CSS için seçiciler çok önemlidir. CSS3 ile birlikte gelen yeni seçiciler
 kodlama yaparken elimizi güçlendirecek cinsten. Javascript ile
 yaptığımız birçok işi css ile yapacağız bu sayede. CSS1de 5-6 seçici
 varken, CSS2 ile birlikte bu sayı 12’ye çıktı. CSS3 ile birlikte ise bu
 sayı 20’yi aştı. . İşte CSS3 ile gelen yeni seçiciler;&lt;/p&gt;
-&lt;ul&gt;
-&lt;ul&gt;
-&lt;li&gt;
-CSS3 Özellik Seçicileri
-
-&lt;/li&gt;
--   Belirlenen Sözdizimi ile Başlayan Özellik Değer Seçicisi
--   Belirlenen Sözdizimi ile Biten Özellik Değer Seçicisi
--   İçinde Belirlenen Sözdizimi Geçen Özellik Değer Seçicisi
--   Çoklu Özellik Seçicisi Kullanımı
-
-&lt;li&gt;
-Genel Kardeş Seçicisi
-
-&lt;/li&gt;
-&lt;li&gt;
+&lt;p&gt;CSS3 Özellik Seçicileri
+    -   Belirlenen Sözdizimi ile Başlayan Özellik Değer Seçicisi
+    -   Belirlenen Sözdizimi ile Biten Özellik Değer Seçicisi
+    -   İçinde Belirlenen Sözdizimi Geçen Özellik Değer Seçicisi
+    -   Çoklu Özellik Seçicisi Kullanımı&lt;/p&gt;
+&lt;p&gt;Genel Kardeş Seçicisi
 :target Sözde Seçisi
-
-&lt;/li&gt;
-&lt;li&gt;
 Form Elemanları Durumları Sözde Sınıfları
-
-&lt;/li&gt;
--   :disabled
--   :enabled
--   :checked
-
-&lt;li&gt;
+    -   :disabled
+    -   :enabled
+    -   :checked
 CSS3 Sözde Seçicileri
-
-&lt;/li&gt;
-&lt;ul&gt;
-&lt;li&gt;
 Yapısal Sözde Seçiciler
-
-&lt;/li&gt;
--   :root Sözde Sınıfı
--   :nth-child() sözde sınıfı
--   :nth-last-child() sözde sınıfı
--   :nth-of-type() sözde sınıfı
--   :nth-last-of-type() sözde sınıfı
--   :last-child sözde sınıfı
--   :first-of-type sözde sınıfı
--   :last-of-type sözde sınıfı
--   :only-child sözde sınıfı
--   :only-of-type sözde sınıfı
--   :empty sözde sınıfı
-
-&lt;/ul&gt;
-
-&lt;li&gt;
+    -   :root Sözde Sınıfı
+    -   :nth-child() sözde sınıfı
+    -   :nth-last-child() sözde sınıfı
+    -   :nth-of-type() sözde sınıfı
+    -   :nth-last-of-type() sözde sınıfı
+    -   :last-child sözde sınıfı
+    -   :first-of-type sözde sınıfı
+    -   :last-of-type sözde sınıfı
+    -   :only-child sözde sınıfı
+    -   :only-of-type sözde sınıfı
+    -   :empty sözde sınıfı
 Olumsuz(:not) Sözde SınıfıSözde Sınıf
-
-&lt;/li&gt;
-
-&lt;li&gt;
-::selection sözde sınıf
-
-&lt;/li&gt;
-
-&lt;p&gt;&lt;/ul&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;h3&gt;Özellik Seçicileri&lt;/h3&gt;
+    ::selection sözde sınıf&lt;/p&gt;
+&lt;h2&gt;Özellik Seçicileri&lt;/h2&gt;
 &lt;p&gt;CSS3 ile birlikte 3 yeni özellik seçicisi gelmektedir.&lt;/p&gt;
 &lt;p&gt;CSS2 ile birlikte gelen özellik seçicileri daha genel seçicilerken CSS3
 ile birlikte daha özel seçimler yapabilmemizi sağlayan özellik
@@ -4764,34 +4800,40 @@ ile kullanılır.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://lh6.googleusercontent.com/w8JW05qWsN2l-joJkQZ8-0BtI_Ahasy75ToU1_vFtAgGGjsdfG19PLQlW0Cu2tdkVuoxlXOfIC19hCnvbYJnELaFnk6qyB2dC3YJEETpjs95439SJw4" /&gt;&lt;/p&gt;
 &lt;p&gt;Bu tanımlama ile belirtilen sözdizimi ile başlayan özellik değerini
 arıyor ve uyguluyor.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; This is a sample &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;This is a sample &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.bloggermint.com&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;hyperlink&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;. 
+This is a sample &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;mailto:bloggermint@gmail.com&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;bloggermint@gmail.com&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;.
+This is a sample &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ftp://bloggermint.com&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;FTP Server&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;.
+
+:::css
+a[href^=&amp;#39;http&amp;#39;] {
+    background: url(images/link.png) no-repeat left;
+    padding-left:20px;
+}
+
+a[href^=&amp;#39;mailto&amp;#39;] {
+    background: url(images/email.png) no-repeat left;
+    padding-left:20px;
+}
+
+a[href^=&amp;#39;ftp&amp;#39;] {
+    background: url(images/folder.png) no-repeat left;
+    padding-left:20px;
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;href="http://www.bloggermint.com"&amp;gt;hyperlink&lt;/a&gt;. This is a sample &lt;a href="&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#97;&amp;#10;&amp;#104;&amp;#114;&amp;#101;&amp;#102;&amp;#61;&amp;#34;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#98;&amp;#108;&amp;#111;&amp;#103;&amp;#103;&amp;#101;&amp;#114;&amp;#109;&amp;#105;&amp;#110;&amp;#116;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#34;"&gt;&amp;#97;&amp;#10;&amp;#104;&amp;#114;&amp;#101;&amp;#102;&amp;#61;&amp;quot;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#98;&amp;#108;&amp;#111;&amp;#103;&amp;#103;&amp;#101;&amp;#114;&amp;#109;&amp;#105;&amp;#110;&amp;#116;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;quot;&lt;/a&gt;bloggermint@gmail.com&lt;/a&gt;. This
-is a sample &lt;a href="ftp://bloggermint.com"&gt;FTP Server&lt;/a&gt;. 
-    :::css
-     a[href^='http'] { background: url(images/link.png) no-repeat
-left; padding-left:20px; } a[href^='mailto'] { background:
-url(images/email.png) no-repeat left; padding-left:20px; }
-a[href^='ftp'] { background: url(images/folder.png) no-repeat left;
-padding-left:20px; } &lt;/p&gt;
 &lt;p&gt;Şeklinde link başlangıç değerine göre ikon atayabiliriz.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**   
-Firefox 1.5+  
-Chrome 2+  
-Safari 2+  
-Opera 5+  
-İnternet Explorer 7+  
-**Mobil Tarayıcılar**   
-iOS Safari 3.2+   
-Opera Mini 5.0+  
-Opera Mobile10.0+  
-Android Browser 2.1+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt; &lt;br /&gt;
+Firefox 1.5+&lt;br /&gt;
+Chrome 2+&lt;br /&gt;
+Safari 2+&lt;br /&gt;
+Opera 5+&lt;br /&gt;
+İnternet Explorer 7+&lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt; &lt;br /&gt;
+iOS Safari 3.2+ &lt;br /&gt;
+Opera Mini 5.0+&lt;br /&gt;
+Opera Mobile10.0+&lt;br /&gt;
+Android Browser 2.1+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Belirlenen Sözdizimi ile Biten Özellik Değer Seçicisi&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Belirlenen sözdizimi ile biten elemanları seçmek için kullanılır.
 Başlangıç sözdizimi ile seçme ile aynı şekilde çalışır. Seçici işareti
@@ -4799,84 +4841,86 @@ olarak $(dolar) işareti kullanılır.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://lh3.googleusercontent.com/0qkeYfNwhs3wyl1K7H3oTIMHVxq_fuqlEi_kXSrBD7sUHbIHFMVTjWQyzpDVGdXM581uNoPrcolpFoh8cH-lKA9AeWXveDA7lVoos3NODlE5rmiqVno" /&gt;&lt;/p&gt;
 &lt;p&gt;Bu seçiciyi kullanarak dokümanlara verilen linklerin başına kolayca ikon
 ekleyebiliriz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.pdf&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background-image&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(&amp;#39;pdf.png&amp;#39;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.pdf&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-image&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(&amp;#39;pdf.png&amp;#39;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.doc&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-image&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(&amp;#39;word.png&amp;#39;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.rss&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-image&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(&amp;#39;feed.png&amp;#39;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p background-image:="background-image:" url('feed.png');="url('feed.png');"&gt;a[href$='.doc'] { background-image: url('word.png'); } a[href$='.rss']&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**   
-Firefox 1.5+  
-Chrome 2+  
-Safari 2+  
-Opera 5+  
-İnternet Explorer 7+  
-**Mobil Tarayıcılar**   
-iOS Safari 3.2+   
-Opera Mini 5.0+  
-Opera Mobile10.0+  
-Android Browser 2.1+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt; &lt;br /&gt;
+Firefox 1.5+&lt;br /&gt;
+Chrome 2+&lt;br /&gt;
+Safari 2+&lt;br /&gt;
+Opera 5+&lt;br /&gt;
+İnternet Explorer 7+&lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt; &lt;br /&gt;
+iOS Safari 3.2+ &lt;br /&gt;
+Opera Mini 5.0+&lt;br /&gt;
+Opera Mobile10.0+&lt;br /&gt;
+Android Browser 2.1+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;İçinde Belirlenen Sözdizimi Geçen Özellik Değer Seçicisi&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Belirlenen sözdizimi özellik değerinde geçen elemanları seçmek için
 kullanılır. Seçici işareti olarak * (yıldız) işareti kullanılır.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://lh4.googleusercontent.com/5e_41wg7MEzgTzwCyGBHWAnp7Js-HypUDJigkcO7WC632270MGhU0ubYO6058YFY0zY5aOptuOv7H3_gyJw2ZiHMYFHNCygPD-8PlKV6eRS4E1xtcuI" /&gt;&lt;/p&gt;
 &lt;p&gt;Birçok yerde kullanılabilecek geniş kapsamlı bir kullanımı olan bir
 seçicidir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="o"&gt;*=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;im&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="o"&gt;*=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;im&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Sadece bir kısmı ile elemanı seçebilme imkanı sağlıyor. CSS2’dekinden
 farklı olarak.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 1.5+  
-Chrome 2+  
-Safari 2+  
-Opera 5+  
-İnternet Explorer 7+  
-**Mobil Tarayıcılar**  
-iOS Safari 3.2+   
-Opera Mini 5.0+  
-Opera Mobile10.0+  
-Android Browser 2.1+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 1.5+&lt;br /&gt;
+Chrome 2+&lt;br /&gt;
+Safari 2+&lt;br /&gt;
+Opera 5+&lt;br /&gt;
+İnternet Explorer 7+&lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;&lt;br /&gt;
+iOS Safari 3.2+ &lt;br /&gt;
+Opera Mini 5.0+&lt;br /&gt;
+Opera Mobile10.0+&lt;br /&gt;
+Android Browser 2.1+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Çoklu Özellik Seçicisi Kullanımı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Özellik seçicileri birlikte kullanma imkanımızda vardır. Birden fazla
 seçici ile seçimi daraltabiliriz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nt"&gt;highlight&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="o"&gt;~=&lt;/span&gt;&lt;span class="nt"&gt;important&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#ffffcc&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nt"&gt;highlight&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="o"&gt;~=&lt;/span&gt;&lt;span class="nt"&gt;important&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#ffffcc&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Daha fazla özellik seçicisinide birleştirebiliriz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="o"&gt;^=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;http://&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="o"&gt;*=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/folder2/&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.pdf&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="o"&gt;^=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;http://&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="o"&gt;*=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/folder2/&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;][&lt;/span&gt;&lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.pdf&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="sx"&gt;url(pdf.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;background:url(pdf.gif) 0 0 no-repeat; } &lt;/p&gt;
 &lt;p&gt;CSS3 ile gelen özellik seçicilerinin bir avantajıda ie7’ninde bu
 seçicileri destekliyor olmasıdır.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 1.5+  
-Chrome 2+  
-Safari 2+  
-Opera 5+  
-İnternet Explorer 7+  
-**Mobil Tarayıcılar**  
-iOS Safari 3.2+   
-Opera Mini 5.0+  
-Opera Mobile10.0+  
-Android Browser 2.1+
-
-&lt;/div&gt;
-
-&lt;h3&gt;Genel Kardeş Seçicisi&lt;/h3&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 1.5+&lt;br /&gt;
+Chrome 2+&lt;br /&gt;
+Safari 2+&lt;br /&gt;
+Opera 5+&lt;br /&gt;
+İnternet Explorer 7+&lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;&lt;br /&gt;
+iOS Safari 3.2+ &lt;br /&gt;
+Opera Mini 5.0+&lt;br /&gt;
+Opera Mobile10.0+&lt;br /&gt;
+Android Browser 2.1+&lt;/p&gt;
+&lt;h2&gt;Genel Kardeş Seçicisi&lt;/h2&gt;
 &lt;p&gt;CSS2.1 ile birlikte gelen bitiş kardeş seçicilerine benzer bir
 seçicidir. Bitişik şardeş seçicisine göre daha seçici ve kullanışlı bir
 seçicidir. Aynı kapsayıcıya sahip elemanların belirtilen elemandan
@@ -4888,35 +4932,38 @@ olarak tilde(~) koyuyoruz.&lt;/p&gt;
 &lt;p&gt;Bir örnek yapacak olursak bir resmimiz var bunu sola hizalayacağız ve
 sağdanda metinler akacak. Bu resim ve paragraflar arasına padding
 tanımlamak için genel kardeş seçicisi birebirdir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;img&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;padding-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;110px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;img&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;padding-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;110px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;html kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kedi.jpg&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;96&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;96&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kedi&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kedi.jpg&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;96&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;96&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kedi&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Kedi (Felis catus),...&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;2,5 ile 12 kilo ...&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Kediler hoş görünüşlü, ..&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;p&gt;Kedi (Felis catus),...&lt;/p&gt; &lt;p&gt;2,5 ile 12 kilo ...&lt;/p&gt;
-&lt;p&gt;Kediler hoş görünüşlü, ..&lt;/p&gt; 
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KGkAK/1/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KGkAK/1/embedded/result,css,html"&gt;&lt;/iframe&gt;
+
 &lt;p&gt;Bu seçiciyi ie7’nin seçicisini destekliyor.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 1.5+  
-Chrome 2+  
-Safari 2+  
-Opera 5+  
-İnternet Explorer 7+  
-**Mobil Tarayıcılar**  
-iOS Safari 3.2+   
-Opera Mini 5.0+  
-Opera Mobile10.0+  
-Android Browser 2.1+
-
-&lt;/div&gt;
-
-&lt;h3&gt;:target Sözde Sınıfı&lt;/h3&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 1.5+&lt;br /&gt;
+Chrome 2+&lt;br /&gt;
+Safari 2+&lt;br /&gt;
+Opera 5+&lt;br /&gt;
+İnternet Explorer 7+&lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;&lt;br /&gt;
+iOS Safari 3.2+ &lt;br /&gt;
+Opera Mini 5.0+&lt;br /&gt;
+Opera Mobile10.0+&lt;br /&gt;
+Android Browser 2.1+&lt;/p&gt;
+&lt;h2&gt;:target Sözde Sınıfı&lt;/h2&gt;
 &lt;p&gt;“:target seçicisi CSS3 ile birlikte gelen yeni seçilerden biri. :target
 seçicisi doküman içi linklere odaklanmamızı sağlıyor. Daha önce bu işi
 yapmak için javascript ile yapıyorduk. CSS3’ün bizlere kazandırdığı
@@ -4925,17 +4972,13 @@ sayfalarımıza güzel etkiler kazandırır. :target sözde sınıfı :hover
 seçicisi gibi dinamik bir seçicidir.”&lt;/p&gt;
 &lt;p&gt;Şeklinde tanımladık. Bu konu hakkında daha önce &lt;a href="http://www.fatihhayrioglu.com/css3-target-secicisi/"&gt;bir makale yazmıştım&lt;/a&gt;
 detayına oradan bakabilirsiniz.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 1+  
-Chrome 2+  
-Safari 3.1+  
-Opera 9.5+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
-&lt;h3&gt;Form Elemanları Durumları Sözde Sınıfları&lt;/h3&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 1+&lt;br /&gt;
+Chrome 2+&lt;br /&gt;
+Safari 3.1+&lt;br /&gt;
+Opera 9.5+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
+&lt;h2&gt;Form Elemanları Durumları Sözde Sınıfları&lt;/h2&gt;
 &lt;p&gt;Form elemanlarının çeşitli durumlarını seçebilmek için kullanılan sözde
 sınıflardır. Kullanıcıların bu durumları ayırt etmeleri için sınıf
 tanımlayıp ona göre css ile görselliğini değiştirerek kodlamamızı
@@ -4947,42 +4990,49 @@ edebiliriz. 3 adet durum söz konusu&lt;/p&gt;
 &lt;li&gt;:checked&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Form elemanlarında bu durumlar HTML olarak&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;textarea&lt;/span&gt; &lt;span class="na"&gt;disabled=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;disabled&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/textarea&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;textarea&lt;/span&gt; &lt;span class="na"&gt;disabled=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;disabled&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/textarea&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;checked=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;checked&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;checked="checked" type="checkbox"&amp;gt; &lt;/p&gt;
 &lt;p&gt;şekilde tanımlanır. Form elemanlarının bu durumlarını kullanıcıya
 yansıtmamız lazım. Bu sayede daha kullanıcı dostu formlar oluşturmuş
 olacağız.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nd"&gt;:enabled&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;2px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#6374AB&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nd"&gt;:disabled&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;2px&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nd"&gt;:enabled&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;2px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#6374AB&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nd"&gt;:disabled&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;2px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#00cc00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nd"&gt;:checked&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;4em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;solid #00cc00; } :checked { display: inline-block; width: 4em; } &lt;/p&gt;
 &lt;p&gt;HTML kodumuz&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;form&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;testForm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;form&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;testForm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;submit&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;input type="radio" name="test"&gt; &lt;input type="radio" name="test"&gt;
-&lt;input type="submit"&gt; &lt;/form&gt; 
-&lt;iframe style="width: 100%; height: 180px" src="http://jsfiddle.net/fatihhayri/KM9B4/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe style="width: 100%; height: 180px" src="http://jsfiddle.net/fatihhayri/KM9B4/embedded/result,css,html"&gt;&lt;/iframe&gt;
+
 &lt;p&gt;Basit bir örnek vermiş olsak dahi bu seçiciler ile neler
 yapabileceğimizi düşünmek bile sevindiriyor bizi.
 &lt;a href="http://dev.opera.com/articles/view/styling-forms-with-attribute-selectors-1/"&gt;http://dev.opera.com/articles/view/styling-forms-with-attribute-selectors-1/&lt;/a&gt;
 örneğe bir göz gezdirmek iyi olur.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3+  
-Chrome 4+  
-Safari 4+  
-Opera 9.5+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
-&lt;h3&gt;Yapısal Sözde Sınıfları&lt;/h3&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 9.5+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
+&lt;h2&gt;Yapısal Sözde Sınıfları&lt;/h2&gt;
 &lt;p&gt;“Sözde sınıf ve sözde elementleri CSS’i destekleyen web tarayıcıları
 tarafından otomatik olarak tanınan özel sınıf ve elementlerdir. Bu sınıf
 ve elementler (x)html hiyerarşisi ile erişemediğimiz element ve
@@ -5001,7 +5051,9 @@ elemanlarını seçmek için kullanılır. Sıralamayı belirleyen numaralar
 parantez içinde tanımlanır; rakam, belirli kelimeler ve formül
 tanımlanabilir.&lt;/p&gt;
 &lt;p&gt;Rakama bir örnek verecek olursak, 3. sıradaki elemanı yakalamak için&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;3&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#f00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;3&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#f00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5009,56 +5061,60 @@ tanımlanabilir.&lt;/p&gt;
 kelimelerinin kullanımı ile seçme işlemini gösterebiliriz. Zebra
 tablolardan hatırladığımız çift, tek satırlara tanımlama yapmak için
 kullanılabilir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;odd&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#f00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;even&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;odd&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#f00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;even&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;color:#ff0; } 
-&lt;iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/F6UnC/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/F6UnC/embedded/result,css,html"&gt;&lt;/iframe&gt;
+
 &lt;p&gt;Formül için örnek verecek olursak; dinamik bir seçim oluşturmak için
 gayet iyi sonuçlar verecek bir özelliktir. Matematik derslerindende
 hatırladığımız (an + b) a ve b değişkenlerdir. Benzer formüller ile
 eleman seçebilme imkanı veriyor.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;3n&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:nth-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;3n&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Bir tanım ile 3 katı olan elementleri yakalayabiliriz.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;:nth-last-child() sözde sınıfı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:nth sözde sınıfına benzer bir kullanımım vardır. :nth sözde sınıfından
 farklı olarak sıralama olarak baştan değilde sondan başlayarak seçmemizi
 sağlar.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;tbody&lt;/span&gt; &lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="nd"&gt;:nth-last-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;2&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;tbody&lt;/span&gt; &lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="nd"&gt;:nth-last-child&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;2&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Tanımı ile tbody içindeki sondan 2. sıradaki satırı yakalamamızı sağlar.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;:nth-of-type() sözde sınıfı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:nth-of-type() sözde seçicisi :nth-child() seçicisine benzer şekilde
 çalışır, farklı olarak :nth-child() sözde seçicisi aynı seviyedeki tüm
 elemanları seçerken, :nth-of-type() sözde seçicisi sadece aynı tip
 elemanları seçer.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:nth-of-type&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;3&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:nth-of-type&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;3&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5067,16 +5123,12 @@ seçmemizi sağlar. Benzer şekilde :nth-child()  kullansa idik, aynı
 seviyedeki farklı tip elemanlarıda yakalamış olacaktık.&lt;/p&gt;
 &lt;p&gt;:nth-of-type() sözde seçicisi bize çok iyi seçme imkanları
 sağlayacaktır.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;:nth-last-of-type() sözde sınıfı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:nth-last-of-type() sözde seçicisi :nth-of-type() ile aynı yapıda işler
 farklı olarak seçim sıralaması baştan sona doğru değilde sondan başa
@@ -5084,28 +5136,28 @@ doğru aynı seviyedeki ve aynı tipteki elemanları seçmek için yapılır.&lt
 &lt;p&gt;:nth-last-child() ile benzer şekilde çalışır, seçicilerin sayısı fazlada
 olsa aslında benzer özellikte çalışırlar, ancak bu ufak farklar bile
 bize çok büyük avantajlar sağlayacaktır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:nth-last-of-type&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;2&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:nth-last-of-type&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;2&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Aynı seviyedeki paragrafların sondan ikincisini yakalar bu seçici&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;:last-child sözde sınıfı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:last-child sözde seçicisi aynı seviyedeki elemanların en sonuncusunu
 seçmek için kullanılır. fisrt-child ilk elemanı seçmemizi sağlarken
 :last-child son elemanı seçmemizi sağlar. Menü gibi yanyana dizdiğimiz
 elemanların sonuncusunu bulmak bizim her zaman işimize yarayacaktır.
 :nth-last-child(1) aynı işi görür.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:last-child&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:last-child&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5116,67 +5168,68 @@ Normal bir yatay menü örneğini ele alalım. Yanyana dizelim ve araya
 ayraç koyalım.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://lh4.googleusercontent.com/xT4YjtxJM9wckC5nB68tYXZKVtNX2e72lsYCXcgivCGpxRCWZBKEzGIKQB4eb8S6isRl-3ZNo7_V1B__nrqbHMXASIwqQusVGqvAGcOuyfe3bstNIsY" /&gt;&lt;/p&gt;
 &lt;p&gt;Sondaki kenar çizgisi fazlalığı kaldırmak için&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:last-child&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="k"&gt;border-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:last-child&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;kodu işimizi görecektir. Ayrıca ilk menü elemanı sol köşeleri ve son
 menü elemanının sağ köşeleri ovalleştirmek için;&lt;br /&gt;
 &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:last-child&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;border-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:last-child&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:first-child&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;0; } ul li:first-child a{ border-radius:15px 0 0 15px; } 
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/GUKPu/embedded/result,css,html"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/GUKPu/embedded/result,css,html"&gt;&lt;/iframe&gt;
+
 &lt;p&gt;Önceden bu işleri yapmak için javascript kullanmak zorunda idik. Şimdi
 CSS3 ile hepsini halledebiliyoruz. Süper değil mi?&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;:first-of-type sözde sınıfı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:first-of-type sözde seçicisi aynı seviyedeki ilk aynı tipteki elemanı
 seçmek için kullanılır. :nth-of-type(1) aynı işi görür.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:first-of-type&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:first-of-type&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Aynı seviyedeki ilk paragrafı seçmek için kullanılır.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;:last-of-type sözde sınıfı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:last-of-type sözde seçicisi aynı seviyedeki en son aynı tipteki elemanı
 seçmek için kullanılır.  :nth-last-of-type(1) ile aynı işi görür.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:last-of-type&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:last-of-type&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Aynı seviyedeki paragrafların en sonuncusunu yakalar.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;:only-child sözde sınıfı(Tek çocuk)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:only-child sözde seçicisi; bir ebeveyni olan ve bu ebeveynin tek çocuğu
 olan elemanları seçmek için kullanılır. Tek çocuk seçicisi diyebiliriz.
@@ -5184,101 +5237,108 @@ olan elemanları seçmek için kullanılır. Tek çocuk seçicisi diyebiliriz.
 ile aynı şeyi seçer.&lt;/p&gt;
 &lt;iframe style="width: 100%; height: 250px" src="http://jsfiddle.net/fatihhayri/FGUGH/embedded/html,css,result" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
 
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;:only-of-type sözde sınıfı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:only-of-type sözde seçicisi; bir ebeyni olan ve bu ebeveynin aynı
 etiket adına sahip tek çocuğu olan elemanları seçmek için kullanılır.
 Tam karşılığı olmasada :first-of-type:last-of-type veya
 :nth-of-type(1):nth-last-of-type(1) aynı işi yapar.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.deneme&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:only-of-type&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.deneme&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:only-of-type&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/cEdgX/1/embedded/html,css,result"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/cEdgX/1/embedded/html,css,result"&gt;&lt;/iframe&gt;
+
 &lt;p&gt;Aynı seviyedeki bağlantılara sarı ardalan rengi tanımlayacaktır. Listede
 ikinci sıradaki ögede 2 adet link olduğu için seçmedi, 4. sıradaki ögede
 iki adet çocuk seçici var ancak farklı tipte olduğu için seçimi yaptı.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;:root Sözde Sınıfı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:root sözde sınıfı dokümanın kökünü temsil eder. HTML elemanlarda htlm{}
 ile aynı etkiyi yapar. buradaki asıl amaç xml ve diğer doküman tipleri
 için köke inebilmektir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nd"&gt;:root&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nd"&gt;:root&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;HTML dokümanlarında ise html elemanını ezmek içinde kullanılabilir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="nd"&gt;:root&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="nd"&gt;:root&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;000; }&lt;/h1&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3+  
-Chrome 4+  
-Safari 4+  
-Opera 9.5+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 9.5+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;:empty sözde sınıfı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:empty sözde seçicisi alt elemanı(çocuk) olmayan elemanları yakalamak
 için kullanılır. Metinlerde buna dahildir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;deneme&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;deneme&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;deneme&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;deneme&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;deneme&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;deneme&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;href=""&amp;gt;deneme&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;deneme&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a
-href=""&gt;deneme&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;deneme&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.deneme&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:empty&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.deneme&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:empty&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#ff0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Yukarıdaki örnekte sadece ilk liste elemanı seçilecektir.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
-&lt;h3&gt;Olumsuz(:not) Sözde Sınıfı&lt;/h3&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
+&lt;h2&gt;Olumsuz(:not) Sözde Sınıfı&lt;/h2&gt;
 &lt;p&gt;Olumsuzluk belirtmek için kullanılan sözde sınıftır. :not(seçici)
 şeklinde kullanılır. Jquery’den alışık olduğumuz bir seçicidir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Deneme&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Alt Başlık&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;İçerik...&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Deneme&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Alt Başlık&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;İçerik...&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;İçerik...&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;İçerik...&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;blockquote&amp;gt;&lt;/span&gt;Dipnot&lt;span class="nt"&gt;&amp;lt;/blockquote&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;p&gt;İçerik...&lt;/p&gt; &lt;p&gt;İçerik...&lt;/p&gt;
-&lt;blockquote&gt;Dipnot&lt;/blockquote&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="nd"&gt;:not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;blockquote&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#ccc&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="nd"&gt;:not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;blockquote&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#ccc&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5287,82 +5347,70 @@ hariç şeklinde uygulanacaktır.&lt;/p&gt;
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/W6d4u/embedded/result,css,html"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Çok kullanışlı bir seçicidir.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
-&lt;h3&gt;::selection Sözde Elementi&lt;/h3&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
+&lt;h2&gt;::selection Sözde Elementi&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/css-ile-secilen-metinlerin-rengini-degistirmek/"&gt;Daha önce görselliği dikkatimi&lt;/a&gt; çeken bu özelliği şimdi seçici bazlı
 bakacağız. Seçili alan seçicisi olarak tanımlayabileceğimiz bu özellik
 seçilen alana css tanımları atamamızı sağlamaktadır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;:-moz-selection&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#c00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;:selection&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;:-moz-selection&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#c00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;:selection&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#c00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;background:#c00; color:#fff; } &lt;/p&gt;
 &lt;p&gt;Ataması ile sitenin tümünde bir seçili alanları için bir tanımlama
 yapabiliriz.&lt;/p&gt;
 &lt;p&gt;::selection sözde elementine; color, background, cursor ve outline
 özellikleri tanımlanabiliyor.&lt;/p&gt;
 &lt;p&gt;Firefox için -moz ön eki kullanılması gerekiyor.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Destekleme Listesi**  
-Firefox 3.5+ (-moz ön eki ile)  
-Chrome 4+  
-Safari 4+  
-Opera 10.10+  
-İnternet Explorer 9+
-
-&lt;/div&gt;
-
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 3.5+ (-moz ön eki ile)&lt;br /&gt;
+Chrome 4+&lt;br /&gt;
+Safari 4+&lt;br /&gt;
+Opera 10.10+&lt;br /&gt;
+İnternet Explorer 9+&lt;/p&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-selectors/"&gt;http://www.w3.org/TR/css3-selectors/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/"&gt;http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/&lt;/a&gt;
-    (Detaylı)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html"&gt;http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html&lt;/a&gt;
-    (detaylı örnekli)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/"&gt;http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html"&gt;http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/"&gt;http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://tools.css3.info/selectors-test/test.html"&gt;http://tools.css3.info/selectors-test/test.html&lt;/a&gt; (test aracı)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://24ways.org/2009/cleaner-code-with-css3-selectors"&gt;http://24ways.org/2009/cleaner-code-with-css3-selectors&lt;/a&gt;
-    (örmeklerle açıklanmış)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://24ways.org/2009/cleaner-code-with-css3-selectors"&gt;http://24ways.org/2009/cleaner-code-with-css3-selectors&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://ie.microsoft.com/testdrive/HTML5/CSS3Selectors/Default.html"&gt;http://ie.microsoft.com/testdrive/HTML5/CSS3Selectors/Default.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.w3schools.com/cssref/css_selectors.asp"&gt;http://www.w3schools.com/cssref/css_selectors.asp&lt;/a&gt; (seçici
-    listesi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/cssref/css_selectors.asp"&gt;http://www.w3schools.com/cssref/css_selectors.asp&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.quirksmode.org/blog/archives/2010/06/ies_big_leap_fo.html"&gt;http://www.quirksmode.org/blog/archives/2010/06/ies_big_leap_fo.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.quirksmode.org/css/contents.html"&gt;http://www.quirksmode.org/css/contents.html&lt;/a&gt; (tarayıcı destek
-    listesi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.quirksmode.org/css/contents.html"&gt;http://www.quirksmode.org/css/contents.html&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="http://selectivizr.com/"&gt;http://selectivizr.com/&lt;/a&gt; (ie için çözüm)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/"&gt;http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://inspectelement.com/tutorials/a-look-at-some-of-the-new-selectors-introduced-in-css3/"&gt;http://inspectelement.com/tutorials/a-look-at-some-of-the-new-selectors-introduced-in-css3/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://caniuse.com/css-sel3"&gt;http://caniuse.com/css-sel3&lt;/a&gt; (tarayıcı destek listesi)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/"&gt;http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/"&gt;http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/&lt;/a&gt;
-    (:not seçicisi)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/"&gt;http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/&lt;/a&gt;
-    (:last-child seçicisi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/"&gt;http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/"&gt;http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://perishablepress.com/awesome-new-css3-selectors/"&gt;http://perishablepress.com/awesome-new-css3-selectors/&lt;/a&gt; (ilginç)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://developer.practicalecommerce.com/articles/2386-Taking-CSS3-Selectors-to-the-Nth"&gt;http://developer.practicalecommerce.com/articles/2386-Taking-CSS3-Selectors-to-the-Nth&lt;/a&gt;
-    (nth seçicisi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://developer.practicalecommerce.com/articles/2386-Taking-CSS3-Selectors-to-the-Nth"&gt;http://developer.practicalecommerce.com/articles/2386-Taking-CSS3-Selectors-to-the-Nth&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en/firefox_3.5_for_developers"&gt;https://developer.mozilla.org/en/firefox_3.5_for_developers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/%3Achecked"&gt;https://developer.mozilla.org/en/CSS/%3Achecked&lt;/a&gt; (:checked
-    seçicisi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/%3Achecked"&gt;https://developer.mozilla.org/en/CSS/%3Achecked&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/:nth-child"&gt;https://developer.mozilla.org/en/CSS/:nth-child&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/:empty"&gt;https://developer.mozilla.org/en/CSS/:empty&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/%3Adisabled"&gt;https://developer.mozilla.org/en/CSS/%3Adisabled&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;No.Starch.The.Book.of.CSS3.Apr.2011&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://eriwen.com/css/css-indirect-adjacent-combinator/"&gt;http://eriwen.com/css/css-indirect-adjacent-combinator/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/aa358824%28v=vs.85%29.aspx"&gt;http://msdn.microsoft.com/en-us/library/aa358824%28v=vs.85%29.aspx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.quirksmode.org/css/enabled.html"&gt;http://www.quirksmode.org/css/enabled.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="css3"></category><category term="css3 seçicileri"></category><category term="nth seçicileri"></category><category term="Özellik-seçicileri"></category></entry><entry><title>CSS 3 medya sorguları</title><link href="http://www.fatihhayrioglu.com/css-3-medya-sorgulari/" rel="alternate"></link><updated>2011-09-02T14:07:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-09-02:css-3-medya-sorgulari/</id><summary type="html">&lt;p&gt;Mobil sektörün hızla ilerlemesi ve akıllı araçlar pazarının büyümesi ile
+&lt;/ul&gt;</summary><category term="css3"></category><category term="css3 seçicileri"></category><category term="nth seçicileri"></category><category term="Özellik-seçicileri"></category></entry><entry><title>CSS 3 medya sorguları</title><link href="http://www.fatihhayrioglu.com/css-3-medya-sorgulari/" rel="alternate"></link><updated>2011-09-02T14:07:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-09-02:css-3-medya-sorgulari/</id><summary type="html">&lt;p&gt;Mobil sektörün hızla ilerlemesi ve akıllı araçlar pazarının büyümesi ile
 insanlar mobil araçlar için ayrı web siteleri yapmaya başladı ve bu
 şekilde devam ediyor. Web sitesi olan bir şirketin mobil için ayrı bir
 site yapması gerek iş ve gerekse düzenleme açısından sorunları olan bir
@@ -13701,7 +13749,7 @@ Hoşçakalın.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.reelseo.com/swfobject-video-seo/"&gt;http://www.reelseo.com/swfobject-video-seo/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.gotoandlearn.com/play?id=77"&gt;http://www.gotoandlearn.com/play?id=77&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;</summary><category term="flash-eklemek"></category><category term="swf-dosyası"></category><category term="swfobject"></category><category term="wmode"></category></entry><entry><title>Çok kolonlu yapılar ve çok kolonlu menüler</title><link href="http://www.fatihhayrioglu.com/cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/" rel="alternate"></link><updated>2010-03-17T00:04:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-17:cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="/images/rei.jpg" title="rei" /&gt;][]&lt;/p&gt;
+&lt;/p&gt;</summary><category term="flash-eklemek"></category><category term="swf-dosyası"></category><category term="swfobject"></category><category term="wmode"></category></entry><entry><title>Çok kolonlu yapılar ve çok kolonlu menüler</title><link href="http://www.fatihhayrioglu.com/cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/" rel="alternate"></link><updated>2010-03-17T00:04:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-17:cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/</id><summary type="html">&lt;p&gt;&lt;a href="/images/rei.jpg"&gt;&lt;img alt="" src="/images/rei.jpg" title="rei" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Son zamanlarda bir çok yerde gözüme çarpan bir menü tipi var; iki
 kolonlu, üç kolonlu vb. menü tipleri. CSS ile en optimum şekilde bu
 menüyü nasıl yapabilirim diye araştırdım ve sizlerle paylaşmaya karar
@@ -13732,132 +13780,269 @@ kullanacağız. &lt;/p&gt;
 oluşturabiliriz bunlarıda göreceğiz.&lt;/p&gt;
 &lt;p&gt;Burada anlatacağımız metotlar sadece menülerde kullanılmaz, site
 içeriğindeki benzer yapılar içinde aynı metotlar kullanılabilir. &lt;/p&gt;
-&lt;h3&gt;1. Yol: float uygulanmış liste ögeleri&lt;/h3&gt;
+&lt;h2&gt;1. Yol: float uygulanmış liste ögeleri&lt;/h2&gt;
 &lt;p&gt;Bu yöntemde &lt;strong&gt;ul&lt;/strong&gt; elemanına sabit bir genişlik verip, her bir &lt;strong&gt;li&lt;/strong&gt;
 elemanına &lt;strong&gt;float&lt;/strong&gt; ve sabit genişlik tanımı yaparak yan yana dizeriz.
 Çok kolonlu yapılarını oluşturmak için en basit metottur. &lt;/p&gt;
 &lt;p&gt;Dezavantajı listelemek istediğimiz ögeleri yan yana dizer. Normalde
 istenen birinci kolonu bitirdikten sonra ikinci kolona geçmesidir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;İkinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Üçüncü Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Dördüncü Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Beşinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Altıncı Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Yedinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Sekizinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Dokuzuncu Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Onuncu Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;li&gt;İkinci Oge&lt;/li&gt; &lt;li&gt;Üçüncü Öge&lt;/li&gt; &lt;li&gt;Dördüncü
-Öge&lt;/li&gt; &lt;li&gt;Beşinci Öge&lt;/li&gt; &lt;li&gt;Altıncı Öge&lt;/li&gt;
-&lt;li&gt;Yedinci Öge&lt;/li&gt; &lt;li&gt;Sekizinci Öge&lt;/li&gt; &lt;li&gt;Dokuzuncu
-Öge&lt;/li&gt; &lt;li&gt;Onuncu Öge&lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodumuz&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;700px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;700px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;line-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;li { width:180px; margin:15px 0 0 0; padding:0 10px 0 0;
-line-height:15px; float:left; } &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot1.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;700px tüm genişlik içindir her ögenin genişliğini 180px verip bide
 sağdan 10px padding değeri ile yan yana dizeriz. &lt;/p&gt;
 &lt;p&gt;Örneği biraz daha geliştirip açılır menü haline getirelim. &lt;/p&gt;
 &lt;p&gt;HTML Kodu;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Tencere&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt; 
+        &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kapsul&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;İkinci Oge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        ....
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Onuncu Öge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+        &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Tava&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Çaydanlık&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Leğen&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kapsulSolda&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;İkinci Oge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        .....
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Onuncu Öge&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt; 
+        &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;href=""&amp;gt;Tencere&lt;/a&gt; &lt;ul class="kapsul"&gt; &lt;li&gt;&lt;a href=""&gt;Birinci
-Oge&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;İkinci Oge&lt;/a&gt;&lt;/li&gt; ....
-&lt;li&gt;&lt;a href=""&gt;Onuncu Öge&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li&gt;&lt;a
-href=""&gt;Tava&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;Çaydanlık&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;Leğen&lt;/a&gt; &lt;ul class="kapsulSolda"&gt; &lt;li&gt;&lt;a
-href=""&gt;Birinci Oge&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;İkinci
-Oge&lt;/a&gt;&lt;/li&gt; ..... &lt;li&gt;&lt;a href=""&gt;Onuncu Öge&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodu;(kodun uzun olduğuna bakmayın çoğu kod menü elemanlarını daha
 güzel görünmesini sağlamak için eklenmiştir.) Bunu menüye uygulayalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;relative&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; 
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#C30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Trebuchet MS&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#0657ad&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;bold&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;li{float:left; width:180px; border-top:3px solid #fff;
-position:relative} ul li:hover, ul li.over{border-top:3px solid #C30;
-background-color:#eee; width:180px;} ul li a{ font:12px "Trebuchet MS",
-Arial, Helvetica, sans-serif; text-decoration:none; display:block;
-padding:5px 5px 5px 10px; color:#0657ad; font-weight:bold}&lt;/p&gt;
 &lt;p&gt;İlk menü öğelerini oluşturduk.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; 
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;ul{display:block;} &lt;/p&gt;
 &lt;p&gt;Burada virgülün ilk kısmı ie6 hariç olan kısmı için ie6 için ise
 aşağıdaki javascript kodunu yazacağız.&lt;/p&gt;
 &lt;p&gt;Tabi başımızın belası ie6 için menüyü açmak için javascript yardımı
 almamız gerekiyor. Çünkü ie6 linklerin haricinde :hover işleyişini
 uygulamıyor&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nx"&gt;startList&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;startList&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;all&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="nx"&gt;navRoot&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;navRoot&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;childNodes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;node&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;navRoot&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;childNodes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;nodeName&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;LI&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="nx"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onmouseover&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;className&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot; over&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="p"&gt;}&lt;/span&gt;
+                &lt;span class="nx"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onmouseout&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;className&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;className&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot; over&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+                &lt;span class="p"&gt;}&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onload&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nx"&gt;startList&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;(document.all&amp;amp;&amp;amp;document.getElementById) { navRoot =
-document.getElementById("menu"); for (i=0; i&amp;lt;navRoot.childNodes.length;
-i++) { node = navRoot.childNodes[i]; if (node.nodeName=="LI") {
-node.onmouseover=function() { this.className+=" over"; }
-node.onmouseout=function() { this.className=this.className.replace("
-over", ""); } } } } } window.onload=startList; &lt;/p&gt;
 &lt;p&gt;Açılan menü kısmının tam kapsanması için kapsayamama kodu ekleyeceğiz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="c"&gt;/*IE-mac de bu bolumu sakla \ */&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="c"&gt;/* IE-mac bu bolumu saklam artik */&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;block; height: 0; clear: both; visibility: hidden;} ul li ul {display:
-inline-block;} /&lt;em&gt;IE-mac de bu bolumu sakla  &lt;/em&gt;/ * html ul li ul
-{height: 1%;} ul li ul {display: block;} /&lt;em&gt; IE-mac bu bolumu saklam
-artik &lt;/em&gt;/ &lt;/p&gt;
 &lt;p&gt;Açılacak menü ul sinin tanımlarını yapıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;580px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;580px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;list-style-type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#C30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;line-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#0657ad&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;underline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;normal&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#C30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.kapsulSolda&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;list-style-type:none; display:none; border-bottom:3px solid #C30;
-background-color:#eee; padding:5px 0 10px 10px; position:absolute;} ul
-li li {width:180px; margin:5px 0 0 0; padding:0 10px 0 0;
-line-height:15px; float:left; border:0;} ul li li:hover{border:0} ul li
-li a{color:#0657ad; text-decoration:underline; padding:0;
-font-weight:normal} ul li li a:hover{color:#C30; text-decoration:none}
-ul li ul.kapsulSolda{right:0} &lt;/p&gt;
 &lt;p&gt;Kolonlama için yukarıdaki yöntemi uyguluyoruz.&lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot1_.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;2. metot: Margin yönlendirmeleri ile&lt;/h3&gt;
+&lt;h2&gt;2. metot: Margin yönlendirmeleri ile&lt;/h2&gt;
 &lt;p&gt;Çok kolonlu yapıları oluşturmak için diğer bir yöntemde ikinci ve üçüncü
 kolonlara sağdan ve üstten margin değerleri vererek yapmaktır. Bu
 metodun avantajı kolon dizilişinin istediğimiz gibi olmasıdır. Bu
 metotta çoğaltacağımız kolonlara ek sınıflar eklemeliyiz. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 1&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 2&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 3&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 4&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 5&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon2 sifirla&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 6&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 7&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 8&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 9&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 10&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3 sifirla&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 11&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 12&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 13&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 14&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 15&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Öğe 16&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;href="#"&amp;gt;Öğe 1&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon1"&gt;&lt;a href="#"&gt;Öğe
-2&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon1"&gt;&lt;a href="#"&gt;Öğe 3&lt;/a&gt;&lt;/li&gt;
-&lt;li class="kolon1"&gt;&lt;a href="#"&gt;Öğe 4&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon1"&gt;&lt;a href="#"&gt;Öğe 5&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon2
-sifirla"&gt;&lt;a href="#"&gt;Öğe 6&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon2"&gt;&lt;a
-href="#"&gt;Öğe 7&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon2"&gt;&lt;a href="#"&gt;Öğe
-8&lt;/a&gt;&lt;/li&gt; &lt;li class="kolon2"&gt;&lt;a href="#"&gt;Öğe 9&lt;/a&gt;&lt;/li&gt;
-&lt;li class="kolon2"&gt;&lt;a href="#"&gt;Öğe 10&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3 sifirla"&gt;&lt;a href="#"&gt;Öğe 11&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3"&gt;&lt;a href="#"&gt;Öğe 12&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3"&gt;&lt;a href="#"&gt;Öğe 13&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3"&gt;&lt;a href="#"&gt;Öğe 14&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3"&gt;&lt;a href="#"&gt;Öğe 15&lt;/a&gt;&lt;/li&gt; &lt;li
-class="kolon3"&gt;&lt;a href="#"&gt;Öğe 16&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodumuzu yazalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt; &lt;span class="m"&gt;2em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt; &lt;span class="m"&gt;2em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;line-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1.2em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.kolon1&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.kolon2&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.kolon3&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.sifirla&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-6em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;7em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;underline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;li { line-height: 1.2em; margin: 0; padding: 0; } * html ul li {
-position: relative; } ul li.kolon1 { margin-left: 0em; } ul li.kolon2 {
-margin-left: 10em; } ul li.kolon3 { margin-left: 20em; } li.sifirla {
-margin-top: -6em; } ul li a { display: block; width: 7em;
-text-decoration: none; } ul li a:hover { text-decoration:underline}&lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot2.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Yukarıdaki kodda ilk &lt;strong&gt;li&lt;/strong&gt; tanımımız bir önceki metot ile neredeyse
 aynıdır. Tek farklı olan kısım &lt;strong&gt;position:relative&lt;/strong&gt;tanımıdır, bu tanım
@@ -13867,109 +14052,201 @@ kolonları yukarı çekmek içinde menü yüksekliği kadar eksi margin değeri
 verilerek yukarı çekilmiştir.&lt;/p&gt;
 &lt;p&gt;Margin yönlendirmeleri ile menü oluşturmak pek mantıklı değildir. Esnek
 olmayan bu yöntem menü ekleme ve çıkarmalarında osurn çıkarır.&lt;/p&gt;
-&lt;h3&gt;3. Metot: Kapsayıcı katman ile bölmek&lt;/h3&gt;
+&lt;h2&gt;3. Metot: Kapsayıcı katman ile bölmek&lt;/h2&gt;
 &lt;p&gt;Bu metotta çoklu kolonlara ayrılacak listeler kapsayıcı katmanlar ile
 ayrılarak her bir kolon oluşturulur. Bu metotta yükseklik ile ilgi bir
 şey yapmaya gerek yoktur ve esnek bir yapıya sahiptir. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;licol&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;ol&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Let me
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;licol&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Let me not to the marriage of true minds&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Admit impediments; love is not love&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Which alters when it alteration finds&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Or bends with the remover to remove&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;licol&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ol&lt;/span&gt; &lt;span class="na"&gt;start=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Oh, no, it is an ever fixed mark&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;That looks on tempests and is never shaken;&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;It is the star to every wand&amp;#39;ring bark&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Whose worth&amp;#39;s unknown, although his height be taken&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;licol&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ol&lt;/span&gt; &lt;span class="na"&gt;start=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;9&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Love&amp;#39;s not Time&amp;#39;s fool, though rosy lips and cheeks&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Within his bending sickle&amp;#39;s compass come;&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Love alters not with his brief hours and weeks&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;But bears it out even to the edge of Doom&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;not to the marriage of true minds&lt;/li&gt; &lt;li&gt;Admit impediments; love
-is not love&lt;/li&gt; &lt;li&gt;Which alters when it alteration finds&lt;/li&gt;
-&lt;li&gt;Or bends with the remover to remove&lt;/li&gt; &lt;/ol&gt; &lt;/div&gt; &lt;div
-class="licol"&gt; &lt;ol start="5"&gt; &lt;li&gt;Oh, no, it is an ever fixed
-mark&lt;/li&gt; &lt;li&gt;That looks on tempests and is never shaken;&lt;/li&gt;
-&lt;li&gt;It is the star to every wand'ring bark&lt;/li&gt; &lt;li&gt;Whose worth's
-unknown, although his height be taken&lt;/li&gt; &lt;/ol&gt; &lt;/div&gt; &lt;div
-class="licol"&gt; &lt;ol start="9"&gt; &lt;li&gt;Love's not Time's fool, though
-rosy lips and cheeks&lt;/li&gt; &lt;li&gt;Within his bending sickle's compass
-come;&lt;/li&gt; &lt;li&gt;Love alters not with his brief hours and weeks&lt;/li&gt;
-&lt;li&gt;But bears it out even to the edge of Doom&lt;/li&gt; &lt;/ol&gt; &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;CSS kodumuzda kısadır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;line-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;15px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.licol&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;line-height:15px; } .licol { float: left; width: 200px; } &lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot3.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Diğer metotlara göre avantajlı görünen bu metodun da kendince sorunları
 vardır. Menü yaparken kapsayıcı bir katman(div) atayıp bu katman içinde
 ul'leri float ve genişlik vererek yan yana koyarız.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Tencere&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;    
+            &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ucluKolon&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+              &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Let me not to the marriage of true minds&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+                ...
+              &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+              &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Oh, no, it is an ever fixed mark&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+                ...
+              &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+              &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Love&amp;#39;s not Time&amp;#39;s fool, though rosy lips and cheeks&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+                ...
+              &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;      
+    &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+....
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;href=""&amp;gt;Tencere&lt;/a&gt; &lt;div class="ucluKolon"&gt; &lt;ul&gt; &lt;li&gt;&lt;a
-href=""&gt;Let me not to the marriage of true minds&lt;/a&gt;&lt;/li&gt; ...
-&lt;/ul&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=""&gt;Oh, no, it is an ever fixed
-mark&lt;/a&gt;&lt;/li&gt; ... &lt;/ul&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=""&gt;Love's not
-Time's fool, though rosy lips and cheeks&lt;/a&gt;&lt;/li&gt; ... &lt;/ul&gt;
-&lt;/div&gt; &lt;/li&gt; .... &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;İlk menü kısmını ilk yaptığımız ile aynı kodlara sahip olacaktır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#C30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#0657ad&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Trebuchet MS&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;li{float:left; width:180px; border-top:3px solid #fff;
-position:relative} ul li:hover, ul li.over{border-top:3px solid #C30;
-background-color:#eee; width:180px;} ul li a{ font:12px "Trebuchet MS",
-Arial, Helvetica, sans-serif; text-decoration:none; display:block;
-padding:5px 5px 5px 10px; color:#0657ad; font-weight:bold}&lt;/p&gt;
 &lt;p&gt;Daha sonra kapsayıcı katman tanımlarını yapıyoruz. Tabi öncesine
 kapsayamama sorunu kodunu ekleyerek. Kapsayamama sorunu kodlarını başa
 ekliyoruz çünkü bu kısmı sayfa normal gösteriminde gizlememiz gerekiyor.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#C30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;600px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;block; height: 0; clear: both; visibility: hidden;} div.ucluKolon
-{display: inline-block;} /&lt;em&gt;IE-mac de bu bolumu sakla  &lt;/em&gt;/ * html
-div.ucluKolon {height: 1%;} div.ucluKolon{display: block;} /&lt;em&gt; IE-mac bu
-bolumu saklam artik &lt;/em&gt;/ div.ucluKolon{width:600px; display:none;
-border-bottom:3px solid #C30; background-color:#eee; padding:5px 0
-10px 10px; position:absolute} &lt;/p&gt;
 &lt;p&gt;Üst menüde en sağdaki menü elemanının altında açılan menü sağ doğru
 değilde sola doğru açılacak, bunun için&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.sagda&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.sagda&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Üç kolonlu yapıyı oluşturmak için katman içindeki ul'lere genişlik ve
 float tanımı yapıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;üst menülerin üzerine gelince açılması için&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.over&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.ucluKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;div.ucluKolon{display:block} &lt;/p&gt;
 &lt;p&gt;ie6 için javascript kodumuzu yazıyoruz. Yukarıdaki kodun aynısı.&lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot3_.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;4. CSS 3 column-count özelliği ile&lt;/h3&gt;
+&lt;h2&gt;4. CSS 3 column-count özelliği ile&lt;/h2&gt;
 &lt;p&gt;CSS3 ile birlikte gelen yeni bir özellik sayesinde işler çok
 kolaylaştırıyor. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Birinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;İkinci Oge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Üçüncü Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Dördüncü Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Beşinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Altıncı Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Yedinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Sekizinci Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Dokuzuncu Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Onuncu Öge&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;li&gt;İkinci Oge&lt;/li&gt; &lt;li&gt;Üçüncü Öge&lt;/li&gt; &lt;li&gt;Dördüncü
-Öge&lt;/li&gt; &lt;li&gt;Beşinci Öge&lt;/li&gt; &lt;li&gt;Altıncı Öge&lt;/li&gt;
-&lt;li&gt;Yedinci Öge&lt;/li&gt; &lt;li&gt;Sekizinci Öge&lt;/li&gt; &lt;li&gt;Dokuzuncu
-Öge&lt;/li&gt; &lt;li&gt;Onuncu Öge&lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodumuz ise iki satır&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#menu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;700px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;column&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#menu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;700px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;column&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;column&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;column&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;-moz-column-count: 3; -webkit-column-count: 3; } &lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot4.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Farklı tarayıcılar için yazılan bu kod maalesef ie ve opera'nın desteği
 olmadığı için uygulaması şimdilik yok.&lt;/p&gt;
-&lt;h3&gt;5. Metot: Javascript yardımı ile&lt;/h3&gt;
+&lt;h2&gt;5. Metot: Javascript yardımı ile&lt;/h2&gt;
 &lt;p&gt;Aslında bu yöntem bir önceki metodun tamamlayıcı bir metodudur.&lt;/p&gt;
 &lt;p&gt;Bu metotta css3 column-count özelliği ile yine css ile kodu yazacağız,
 javascript ile de desteklemeyen tarayıcılara uyumlu hale getireceğiz.&lt;/p&gt;
@@ -13978,19 +14255,31 @@ site yayında değil &lt;a href="http://www.cvwdesign.com" title="cvwdesign.com"
 söylemek gerekirse bunun dışında çalışan javascript kodu bulamadım. &lt;/p&gt;
 &lt;p&gt;Bu kodu kullanırken css kodunuzu harici kullanmalıyız aksi halde kod
 çalışmıyor. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE HTML PUBLIC &amp;quot;-//W3C//DTD HTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE HTML PUBLIC &amp;quot;-//W3C//DTD HTML 4.01//EN&amp;quot;&lt;/span&gt;
+&lt;span class="cp"&gt;&amp;quot;http://www.w3.org/TR/html4/strict.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Çoklu kolon&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kolon.css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt; 
+&lt;span class="c"&gt;&amp;lt;!--[if IE]&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;css3-multi-column.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;column&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&amp;gt; &lt;html&gt; &lt;head&gt;
-&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-&lt;title&gt;Çoklu kolon&lt;/title&gt; &lt;link href="kolon.css" rel="stylesheet"
-/&gt; &lt;!--[if IE]&gt;&lt;script type="text/javascript"
-src="css3-multi-column.js"&gt;&lt;/script&gt;&lt;![endif]--&gt; &lt;/head&gt; &lt;body&gt;
-&lt;ul class="column"&gt; &lt;li&gt;list item&lt;/li&gt; &lt;li&gt;list item&lt;/li&gt;
-&lt;li&gt;list item&lt;/li&gt; &lt;li&gt;list item&lt;/li&gt; &lt;li&gt;list item&lt;/li&gt;
-&lt;li&gt;list item&lt;/li&gt; &lt;li&gt;list item&lt;/li&gt; &lt;li&gt;list item&lt;/li&gt;
-&lt;/ul&gt; &lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Bu javascript dosyasını ekleyince css3 aşağıdaki özelliklere karşılık
 gelen özellikleri&lt;/p&gt;
 &lt;ul&gt;
@@ -13999,47 +14288,38 @@ gelen özellikleri&lt;/p&gt;
 &lt;li&gt;column-gap&lt;/li&gt;
 &lt;li&gt;column-rule&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;destekliyor. Mevcut açık kodun boyutu fazla gelince &lt;a href="http://refresh-sf.com/yui/" title="çevrimiçi yui   kompresor"&gt;çevrimiçi yui kompresor&lt;/a&gt; ile javascript dosyasını sıkıştırdım. Gayet güzel bir oran
+&lt;p&gt;destekliyor. Mevcut açık kodun boyutu fazla gelince &lt;a href="http://refresh-sf.com/yui/"&gt;çevrimiçi yui kompresor&lt;/a&gt; ile javascript dosyasını sıkıştırdım. Gayet güzel bir oran
 ile dosya boyutunu 37 kb'dan 19 kb'a kadar düşürdüm.&lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/cok_kolonlu/metot5.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;jQuery yardımı ile çeşitli çözümler mevcuttur. kaynaklar bölümünde
 yazdım linklerini.&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.useit.com/alertbox/mega-dropdown-menus.html" title="http://www.useit.com/alertbox/mega-dropdown-menus.html"&gt;http://www.useit.com/alertbox/mega-dropdown-menus.html&lt;/a&gt; (genel
-    bilgi)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://articles.techrepublic.com.com/5100-10878_11-5810687.html" title="http://articles.techrepublic.com.com/5100-10878_11-5810687.html"&gt;http://articles.techrepublic.com.com/5100-10878_11-5810687.html&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.communitymx.com/content/article.cfm?page=1&amp;amp;cid=27F87" title="http://www.communitymx.com/content/article.cfm?page=1&amp;amp;cid=27F87"&gt;http://www.communitymx.com/content/article.cfm?page=1&amp;amp;cid=27F87&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.alistapart.com/articles/multicolumnlists/" title="http://www.alistapart.com/articles/multicolumnlists/"&gt;http://www.alistapart.com/articles/multicolumnlists/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://archivist.incutio.com/viewlist/css-discuss/88422" title="http://archivist.incutio.com/viewlist/css-discuss/88422"&gt;http://archivist.incutio.com/viewlist/css-discuss/88422&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menus/drop_lists.html" title="http://www.cssplay.co.uk/menus/drop_lists.html"&gt;http://www.cssplay.co.uk/menus/drop_lists.html&lt;/a&gt; (örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menu/column.html" title="http://www.cssplay.co.uk/menu/column.html"&gt;http://www.cssplay.co.uk/menu/column.html&lt;/a&gt; (farklı bir bakış)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin" title="http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin"&gt;http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://green-beast.com/experiments/css_double_lists.php" title="http://green-beast.com/experiments/css_double_lists.php"&gt;http://green-beast.com/experiments/css_double_lists.php&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://css-discuss.incutio.com/?page=MultipleColumnLists" title="http://css-discuss.incutio.com/?page=MultipleColumnLists"&gt;http://css-discuss.incutio.com/?page=MultipleColumnLists&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://welcome.hp.com/country/tr/tr/welcome.html" title="http://welcome.hp.com/country/tr/tr/welcome.html"&gt;http://welcome.hp.com/country/tr/tr/welcome.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://css.flepstudio.org/en/css3/multi-column.html" title="http://css.flepstudio.org/en/css3/multi-column.html"&gt;http://css.flepstudio.org/en/css3/multi-column.html&lt;/a&gt; (css3 multi
-    column)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/" title="http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/"&gt;http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript" title="http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript"&gt;http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/" title="http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/"&gt;http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/&lt;/a&gt;
-    (jquery yardımı işle güzel)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://codeasily.com/jquery/multi-column-list-with-jquery" title="http://codeasily.com/jquery/multi-column-list-with-jquery"&gt;http://codeasily.com/jquery/multi-column-list-with-jquery&lt;/a&gt;
-    (jquery multi kolon eklentisi)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://welcome.totheinter.net/columnizer-jquery-plugin/" title="http://welcome.totheinter.net/columnizer-jquery-plugin/"&gt;http://welcome.totheinter.net/columnizer-jquery-plugin/&lt;/a&gt; (jquery
-    multi kolon eklentisi)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.zenelements.co.uk/blog/css3-multiple-columns/" title="http://www.zenelements.co.uk/blog/css3-multiple-columns/"&gt;http://www.zenelements.co.uk/blog/css3-multiple-columns/&lt;/a&gt; (css3
-    multi-kolon ve destekleme listesi)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.americanstandard-us.com/" title="http://www.americanstandard-us.com/"&gt;http://www.americanstandard-us.com/&lt;/a&gt; (örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.gatesfoundation.org/Pages/home.aspx" title="http://www.gatesfoundation.org/Pages/home.aspx"&gt;http://www.gatesfoundation.org/Pages/home.aspx&lt;/a&gt; (örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menus/multi-column.html" title="http://www.cssplay.co.uk/menus/multi-column.html"&gt;http://www.cssplay.co.uk/menus/multi-column.html&lt;/a&gt; (örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.whitehouse.gov/" title="http://www.whitehouse.gov/"&gt;http://www.whitehouse.gov/&lt;/a&gt; (Örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/" title="http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/"&gt;http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915" title="http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915"&gt;http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;p&gt;[&lt;img alt="" src="/images/rei.jpg" title="rei" /&gt;]: /images/rei.jpg&lt;/p&gt;</summary><category term="css3"></category><category term="çok kolonlu"></category><category term="çok kolonlu menüler"></category><category term="Javascript"></category><category term="jquery"></category></entry><entry><title>Küçük bir ipucu: FireBug ile satır numarası bilgisi</title><link href="http://www.fatihhayrioglu.com/kucuk-bir-ipucu-firebug-ile-satir-numarasi-bilgisi/" rel="alternate"></link><updated>2010-03-11T23:44:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-11:kucuk-bir-ipucu-firebug-ile-satir-numarasi-bilgisi/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="/images/firebug_satirno.gif" title="firebug_satirno" /&gt;][]&lt;/p&gt;
+&lt;li&gt;&lt;a href="http://www.useit.com/alertbox/mega-dropdown-menus.html"&gt;http://www.useit.com/alertbox/mega-dropdown-menus.html&lt;/a&gt; (genel bilgi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://articles.techrepublic.com.com/5100-10878_11-5810687.html"&gt;http://articles.techrepublic.com.com/5100-10878_11-5810687.html&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.communitymx.com/content/article.cfm?page=1&amp;amp;cid=27F87"&gt;http://www.communitymx.com/content/article.cfm?page=1&amp;amp;cid=27F87&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.alistapart.com/articles/multicolumnlists/"&gt;http://www.alistapart.com/articles/multicolumnlists/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://archivist.incutio.com/viewlist/css-discuss/88422"&gt;http://archivist.incutio.com/viewlist/css-discuss/88422&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menus/drop_lists.html"&gt;http://www.cssplay.co.uk/menus/drop_lists.html&lt;/a&gt; (örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menu/column.html"&gt;http://www.cssplay.co.uk/menu/column.html&lt;/a&gt; (farklı bir bakış)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin"&gt;http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://green-beast.com/experiments/css_double_lists.php"&gt;http://green-beast.com/experiments/css_double_lists.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-discuss.incutio.com/?page=MultipleColumnLists"&gt;http://css-discuss.incutio.com/?page=MultipleColumnLists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://welcome.hp.com/country/tr/tr/welcome.html"&gt;http://welcome.hp.com/country/tr/tr/welcome.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css.flepstudio.org/en/css3/multi-column.html"&gt;http://css.flepstudio.org/en/css3/multi-column.html&lt;/a&gt; (css3 multi column)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/"&gt;http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript"&gt;http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/"&gt;http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/&lt;/a&gt; (jquery yardımı işle güzel)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://codeasily.com/jquery/multi-column-list-with-jquery"&gt;http://codeasily.com/jquery/multi-column-list-with-jquery&lt;/a&gt; (jquery multi kolon eklentisi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://welcome.totheinter.net/columnizer-jquery-plugin/"&gt;http://welcome.totheinter.net/columnizer-jquery-plugin/&lt;/a&gt; (jquery multi kolon eklentisi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.zenelements.co.uk/blog/css3-multiple-columns/"&gt;http://www.zenelements.co.uk/blog/css3-multiple-columns/&lt;/a&gt; (css3 multi-kolon ve destekleme listesi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.americanstandard-us.com/"&gt;http://www.americanstandard-us.com/&lt;/a&gt; (örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.gatesfoundation.org/Pages/home.aspx"&gt;http://www.gatesfoundation.org/Pages/home.aspx&lt;/a&gt; (örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menus/multi-column.html"&gt;http://www.cssplay.co.uk/menus/multi-column.html&lt;/a&gt; (örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.whitehouse.gov/"&gt;http://www.whitehouse.gov/&lt;/a&gt; (Örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/"&gt;http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915"&gt;http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="css3"></category><category term="çok kolonlu"></category><category term="çok kolonlu menüler"></category><category term="Javascript"></category><category term="jquery"></category></entry><entry><title>Küçük bir ipucu: FireBug ile satır numarası bilgisi</title><link href="http://www.fatihhayrioglu.com/kucuk-bir-ipucu-firebug-ile-satir-numarasi-bilgisi/" rel="alternate"></link><updated>2010-03-11T23:44:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-11:kucuk-bir-ipucu-firebug-ile-satir-numarasi-bilgisi/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="/images/firebug_satirno.gif" title="firebug_satirno" /&gt;][]&lt;/p&gt;
 &lt;p&gt;Bazen kullandığım programların alternatiflerini araştırıyorum. Amacım
 eğer daha güzel ve daha kullanışlı özellikleri varsa onlardan
 yararlanmak.&lt;/p&gt;

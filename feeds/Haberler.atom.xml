@@ -493,13 +493,25 @@ aFolder    another.txt    bilgilendirme.txt   deneme.html
 &lt;h2&gt;cd (Change Directory)&lt;/h2&gt;
 &lt;p&gt;Bu komut ile dosyalar arası geçiş için kullanırız. Mesela image
 klasörüne geçmek için&lt;/p&gt;
-&lt;p&gt;[bash] cd images [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;images
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Tek seviyede değil birden fazla seviyede geçişte yapabiliriz.&lt;/p&gt;
-&lt;p&gt;[bash] cd images/icons/ust [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;images/icons/ust
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Bir alt klasöre inmek için&lt;/p&gt;
-&lt;p&gt;[bash] cd .. [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ..
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Kök dizinine(root) inmek için ise&lt;/p&gt;
-&lt;p&gt;[bash] cd [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;yazmak yeterlidir. Ufak bir ipucu klasör isimlerinin uzun olması
 durumunda akılda tutmak zor oluyor. Klasör veya dosya isminin başında
 bir kaç karakter yazdıktan sonra tab tuşuna basarak gerisini
@@ -507,19 +519,35 @@ tamamlayabilirsiniz.&lt;/p&gt;
 &lt;h2&gt;mkdir (Make Directory)&lt;/h2&gt;
 &lt;p&gt;Yeni klasör oluşturmak için kullanıyoruz. Mac ve Windows’ta kullanımı
 aynıdır.&lt;/p&gt;
-&lt;p&gt;[bash] mkdir yeniKlasor [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;mkdir yeniKlasor
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;rm (remove)&lt;/h2&gt;
 &lt;p&gt;Dosya ve klasörleri silmek için kullanılır. Silme işlemlerinde her zaman
 dikkatli olmak lazım.&lt;/p&gt;
-&lt;p&gt;[bash] rm deneme.html rm images_klasoru [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;rm deneme.html
+rm images_klasoru
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;cp (copy) ve mv (move)&lt;/h2&gt;
 &lt;p&gt;Çok basit bir kullanımı vardır. İlk parametre kopyalanacak dosyayı
 ikinci parametre ise hedefi gösterir.&lt;/p&gt;
-&lt;p&gt;[bash] cp deneme.html ~/dosya/deneme.html [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;cp deneme.html ~/dosya/deneme.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Eğer taşımak istiyorsanız, aynı şekilde kullanabiliriz.&lt;/p&gt;
-&lt;p&gt;[bash] mv deneme.html /dosya/deneme.html [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;mv deneme.html /dosya/deneme.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;mv komutu dosya ismini değiştirmek içinde kullanılabilir.&lt;/p&gt;
-&lt;p&gt;[bash] mv deneme.html /dosya/test.html [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;mv deneme.html /dosya/test.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;deneme.html dosyası ismi test.html olarak değiştirilip taşınmıştır.&lt;/p&gt;
 &lt;h2&gt;clear&lt;/h2&gt;
 &lt;p&gt;Terminal ekranını temizlemek için kullanılır.&lt;/p&gt;
@@ -527,7 +555,10 @@ ikinci parametre ise hedefi gösterir.&lt;/p&gt;
 &lt;p&gt;Komut satırlarından harici programlarda da açabiliyoruz veya kendi
 içinde açabiliyoruz.&lt;/p&gt;
 &lt;p&gt;Mesela MacOs için ilgili klasörde iken&lt;/p&gt;
-&lt;p&gt;[bash] nano deneme.html [/bash]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;nano deneme.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;komutu deneme.html dosyamızı nano editöründe açmamızı sağlayacaktır.&lt;/p&gt;
 &lt;h2&gt;exit&lt;/h2&gt;
 &lt;p&gt;Eğer uzak dosya yönetimi ile çalışıyorsanız. Kurduğunuz bağlantıyı
@@ -543,48 +574,61 @@ komutları ve ipuçlarını paylaşacağım.&lt;/p&gt;
 &lt;h2&gt;İki dosya arasındaki farkı görmek&lt;/h2&gt;
 &lt;p&gt;Bir branchdeki veya bir dosya üzerindeki değişiklikleri görmek için
 branchde iken&lt;/p&gt;
-&lt;p&gt;[php] $git log [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="nb"&gt;log&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;yazarız bu komut bize&lt;/p&gt;
-&lt;p&gt;[php] commit f491239170cb1463c7c3cd970862d6de636ba787 Author: Matt
-McCutchen &amp;lt;matt@mattmccutchen.net&amp;gt; Date:   Thu Aug 14 13:37:41
-2008 -0400 git format-patch documentation: clarify what --cover-letter
-does commit 7950659dc9ef7f2b50b18010622299c508bfdfc3 Author: Eric Raible
-&amp;lt;raible@gmail.com&amp;gt; Date:   Thu Aug 14 10:12:54 2008 -0700 bash
-completion: 'git apply' should use 'fix' not 'strip' Bring completion up
-to date with the man page. [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="n"&gt;f491239170cb1463c7c3cd970862d6de636ba787&lt;/span&gt; &lt;span class="n"&gt;Author&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Matt&lt;/span&gt; &lt;span class="n"&gt;McCutchen&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;matt&lt;/span&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="n"&gt;mattmccutchen&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;net&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="n"&gt;Thu&lt;/span&gt; &lt;span class="n"&gt;Aug&lt;/span&gt; 14 13&lt;span class="p"&gt;:&lt;/span&gt;37&lt;span class="p"&gt;:&lt;/span&gt;41 2008 &lt;span class="o"&gt;-&lt;/span&gt;0400 &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;patch&lt;/span&gt; &lt;span class="n"&gt;documentation&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;clarify&lt;/span&gt; &lt;span class="n"&gt;what&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;cover&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;letter&lt;/span&gt; &lt;span class="n"&gt;does&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; 7950659&lt;span class="n"&gt;dc9ef7f2b50b18010622299c508bfdfc3&lt;/span&gt; &lt;span class="n"&gt;Author&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Eric&lt;/span&gt; &lt;span class="n"&gt;Raible&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;raible&lt;/span&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="n"&gt;gmail&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="n"&gt;Thu&lt;/span&gt; &lt;span class="n"&gt;Aug&lt;/span&gt; 14 10&lt;span class="p"&gt;:&lt;/span&gt;12&lt;span class="p"&gt;:&lt;/span&gt;54 2008 &lt;span class="o"&gt;-&lt;/span&gt;0700 &lt;span class="n"&gt;bash&lt;/span&gt; &lt;span class="n"&gt;completion&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;git apply&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;should&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;fix&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;strip&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;Bring&lt;/span&gt; &lt;span class="n"&gt;completion&lt;/span&gt; &lt;span class="n"&gt;up&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt; &lt;span class="n"&gt;with&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;man&lt;/span&gt; &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;gibi bir sonuç döndürür. O dosya veya o branch üzerinde yapılan tüm
 değişiklikler hakkında bilgileri içeren bir listedir bu. Bu listede
 commit … ile başlayan satırda verilen numara yapılan ve gönderilen her
 iş için farklıdır biz bu sözdizimini kullanarak iki farklı gönderi
 arasındaki farkı bulabiliriz.&lt;/p&gt;
-&lt;p&gt;[php] $git diff f491239170cb1463c7c3cd970862d6de636ba787
-7950659dc9ef7f2b50b18010622299c508bfdfc3  Html/index.html [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;diff&lt;/span&gt; &lt;span class="n"&gt;f491239170cb1463c7c3cd970862d6de636ba787&lt;/span&gt; 7950659&lt;span class="n"&gt;dc9ef7f2b50b18010622299c508bfdfc3&lt;/span&gt;  &lt;span class="n"&gt;Html&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;İki farklı branchdeki HTML/index.html dosyasındaki farklılıkları
 gösterir yukarıdaki kod. Farkları renkli görmek için --color
 parametresini kullanabiliriz.&lt;/p&gt;
-&lt;p&gt;[php] $git diff --color  d76192b2c7a61d2aea62c7aec21e14cda72f9e32
-fe0dba7b841e86b095d2aefbd6bd755a0d9d1e90  Html/index.html [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;diff&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;color&lt;/span&gt;  &lt;span class="n"&gt;d76192b2c7a61d2aea62c7aec21e14cda72f9e32&lt;/span&gt; &lt;span class="n"&gt;fe0dba7b841e86b095d2aefbd6bd755a0d9d1e90&lt;/span&gt;  &lt;span class="n"&gt;Html&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Eklenenleri yeşil, çıkarılanları kırmızı renkte gösterecektir. Ayrımı
 görmek için renkler güzel oluyor.&lt;/p&gt;
 &lt;h2&gt;Dallanma (Brach) Silmek&lt;/h2&gt;
 &lt;p&gt;git branch -d: Yanlışlıkla açtığımız branchlerı silmek için&lt;/p&gt;
-&lt;p&gt;[php] $git branch -d branch_ismi [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="n"&gt;branch_ismi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;Kısayol kullanmak&lt;/h2&gt;
 &lt;p&gt;Git kullanırken aynı kodları tekrar tekrar çok kullanıyoruz. Bu
 komutları kısaltarak daha hızlı kod yazabilme imkanı sağlıyor bize komut
 sistemi.&lt;/p&gt;
-&lt;p&gt;git config dosyasına kısayolllarımızı ekleyebiliyoruz. git cofig ile
-ilgili ayrıntılı bilgiyi
-&lt;a href="http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/"&gt;http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/&lt;/a&gt;
-bağlantısından edinebilirsiniz.&lt;/p&gt;
+&lt;p&gt;git config dosyasına kısayolllarımızı ekleyebiliyoruz. git cofig ile ilgili ayrıntılı bilgiyi &lt;a href="http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/"&gt;http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/&lt;/a&gt; bağlantısından edinebilirsiniz.&lt;/p&gt;
 &lt;p&gt;Global congif dosyasına eklemek için&lt;/p&gt;
-&lt;p&gt;[php] $git config --global alias.ci commit [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;alias&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ci&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;strong&gt;ci&lt;/strong&gt; kısaltma &lt;strong&gt;commit&lt;/strong&gt; normali. Eğer projeye özgü kısayollar
 oluşturmak için&lt;/p&gt;
-&lt;p&gt;[php] $git config alias.ci commit [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;alias&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ci&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;strong&gt;--global&lt;/strong&gt; parametresini kaldırmamız yeterli olacaktır. git config
 dosyasını görmek için&lt;/p&gt;
-&lt;p&gt;[php] $git config --edit [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;edit&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;yazmamız yeterli burada eklediğimiz kısayolları görebiliriz. Benim
 listem aşağıdaki gibi.&lt;br /&gt;
 &lt;/p&gt;
@@ -599,13 +643,22 @@ ci = commit&lt;/p&gt;
 bağlantıda Git kaynakları listelenmiş. Git’in güzel yanlarında birisi
 öğrenmek için kaynağın bol olması.&lt;/p&gt;
 &lt;h2&gt;Başka Branch’den dosya almak&lt;/h2&gt;
-&lt;p&gt;[php] $git checkout branch_adi dosya_adi [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;checkout&lt;/span&gt; &lt;span class="n"&gt;branch_adi&lt;/span&gt; &lt;span class="n"&gt;dosya_adi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Benzer bir şekilde branchde yaptığımız değişikliği geri almak için
 master’dan dosyayı alabiliriz.&lt;/p&gt;
-&lt;p&gt;[php] git checkout master dosya_adi [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;checkout&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt; &lt;span class="n"&gt;dosya_adi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;Değişen dosya isimleri&lt;/h2&gt;
 &lt;p&gt;Çalıştığımız branchde değişiklik yaptığımız dosyaları görmek için&lt;/p&gt;
-&lt;p&gt;[php] $git diff master --name-only [/php]&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;$&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;diff&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;only&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;kodunu kullanıyoruz.&lt;/p&gt;
 &lt;p&gt;Bana üşenmeyip bunları ve aklımda kalmayan bir çok bilgiyi öğreten Onur
 Yerlikaya'ya şükranlarımı sunarım. Gitmeyeydin Git daha kolay olacaadı.

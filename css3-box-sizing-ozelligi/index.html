@@ -116,21 +116,22 @@ değerlerinin içerip içermemesi gerektiğini tanımlama imkanı sağlıyor.
 <ul>
 <li>content-box: Normal kabul halidir. Genişlik veya yükseklik değeri
     içerik alanını içerir; border ve padding değerlerini içermez.</li>
-<li>
-<p>border-box: IE kutu kabulü diyede adlandırabileceğimiz değer.
+<li>border-box: IE kutu kabulü diyede adlandırabileceğimiz değer.
     Genişlik veya yükseklik değeri padding ve border değerlerinide
-    içerir.</p>
-<p>:::css</p>
-<h1>kutu{</h1>
-<p>display:block;
-  border:10px solid #069;
-  padding:20px;
-  width:200px;
-  height:200px;
-  background:#CCC;
-}</p>
-</li>
+    içerir.</li>
 </ul>
+<p>CSS kodu;</p>
+<div class="codehilite"><pre><span class="nf">#kutu</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">10px</span> <span class="k">solid</span> <span class="m">#069</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#CCC</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/ZeMYW/1/embedded/result,css,html"></iframe>
 
 <p>Başlangıç değeri content-box’dır. Kutu genişliği 10px + 20px + 200 + 20
@@ -157,14 +158,26 @@ yapıldığında</p>
 ise 140px olacaktır.</p>
 <p>Her iki değerin kullanılabileceği yerler vardır. border-box tanımının
 esnek yapılı alanlarda bize avantaj sağlayacağı kesindir.</p>
-<div class="codehilite"><pre> <span class="nc">.kutuSol</span><span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">30</span><span class="o">%</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="nb">pink</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.kutuSol</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">30</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="nb">pink</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">3px</span> <span class="nb">red</span> <span class="k">dotted</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.kutuSag</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="nb">lightgreen</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">70</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">3px</span> <span class="nb">green</span> <span class="k">dotted</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>3px red dotted; height: 150px; } .kutuSag{ float: left;
-background-color: lightgreen; width: 70%; border: 3px green dotted;
-height: 150px; } 
-<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/jP3Dv/1/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/jP3Dv/1/embedded/result,css,html"></iframe>
+
 <p>Esnek yapılı bir içerikte genişlik tanımlarımızı yüzde olarak
 verdiğimizde ve de padding ve border tanımı yaptığımızda kutularımızın
 genişliği toplamı %100 olmasına rağmen padding ve border değerleri
