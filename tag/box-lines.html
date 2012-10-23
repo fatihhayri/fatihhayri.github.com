@@ -123,39 +123,45 @@ yeniden ele alındı ve şu an sonlandırılmak üzeredir. Biz 2009 yılındaki
 standartlaşan özellikleri tanımlayacağız, çünkü tarayıcılar 2009
 yılındaki standartları desteklemektedir ve yeni standartlaşan
 özelliğinde mantık olarak çok büyük farklılığı yok.</p>
-<h3>display:box</h3>
+<h2>display:box</h2>
 <p>İlk olarak kapsayıcı esnek kutuları çevreleyen eleman <strong>display:box</strong>
 tanımı yaparak başlıyoruz. Farklı tarayıcılar önek ile birlikte
 desteklemektedir;</p>
-<div class="codehilite"><pre> <span class="nf">#esnekKutu</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nf">#esnekKutu</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>-ms-box; display: box; } </p>
 <p>Tanımı ile kapsayıcı elemanı tanımlıyoruz. Bu tanım ile kapsayıcı eleman
 içersindeki alt elemanların artık esnek yapılı olacağını ve EKYM
 özellikleri alabileceğini belirliyoruz.</p>
 <p>Çok basit bir şekilde kutularımızı yanyana dizebiliriz mesela</p>
-<div class="codehilite"><pre> <span class="nf">#esnekKutuKapsul</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span> <span class="k">display</span><span class="o">:-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#esnekKutuKapsul</span><span class="p">{</span>
+ <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span>
+ <span class="k">display</span><span class="o">:-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+ <span class="k">display</span><span class="o">:-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+ <span class="k">display</span><span class="o">:-</span><span class="n">ms</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+ <span class="k">width</span><span class="o">:</span><span class="m">600px</span><span class="p">;</span>
+ <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#03C</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>display:-moz-box; display:-ms-box; width:600px; border:1px solid #03C;
-} 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/4KSzt/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/4KSzt/embedded/result,css,html"></iframe>
+
 <p>Kapsayıcı tanımlanan <strong>display:box</strong> tanımı ile içindeki elemanlar birer
 <strong>inline-block</strong> eleman gibi davranır ve yanyana sıralanır.</p>
-<h3>box-orient</h3>
-<div class="cssozelliktanimi">
-**Yapısı:** box-orient: <deger>  
-**Aldığı Değerler:** horizontal | vertical | inline-axis | block-axis  
-**Başlangıç değeri:** inline-axis  
-**Uygulanabilen elementler:** display:box ve display:inline-box değeri
-alan elemanlara  
-**Kalıtsallık:** Yok
-
-</div>
-
+<h2>box-orient</h2>
+<p class="cssozelliktanimi"><strong>Yapısı:</strong> box-orient: &lt;deger><br />
+<strong>Aldığı Değerler:</strong> horizontal | vertical | inline-axis | block-axis<br />
+<strong>Başlangıç değeri:</strong> inline-axis<br />
+<strong>Uygulanabilen elementler:</strong> display:box ve display:inline-box değeri
+alan elemanlara<br />
+<strong>Kalıtsallık:</strong> Yok</p>
 <p>box-orient özelliği ile esnek kapsayıcı eleman içindeki kutuların hangi
 eksende sıralanacağını belirleriz. Yukarıdaki örnekte gördüğümüz gibi
 eğer bir tanım yapılmadı ise ve kapsayıcı eleman genişliği müsait ise
@@ -171,38 +177,52 @@ adet değer alır.</p>
 <p>Bunlardan başka iki değer daha mevcuttur. <strong>inline-axis</strong> yatayda ve
 <strong>block-axis</strong> dikeyde sıralamayı sağlar. Bu tanımlar <strong>horizontal</strong> ve
 <strong>vertical</strong> gibi davranırlar.</p>
-<div class="codehilite"><pre> <span class="nf">#esnekKutuKapsul</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span> <span class="k">display</span><span class="o">:-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#esnekKutuKapsul</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">orient</span><span class="o">:</span><span class="n">vertical</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">orient</span><span class="o">:</span><span class="n">vertical</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">orient</span><span class="o">:</span><span class="n">vertical</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">600px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#03C</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>display:-moz-box; box-orient:vertical; -moz-box-orient:vertical;
--webkit-box-orient:vertical; width:200px; height:600px; border:1px solid</p>
-<h1>03C; }</h1>
-<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AsVDn/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AsVDn/embedded/result,css,html"></iframe>
+
 <p><strong>box-orient:vertical</strong> ile esnek kutularımızı dikeyde sıraladık.</p>
-<h3>box-direction</h3>
-<div class="cssozelliktanimi">
-**Yapısı:** box-direction: <deger>  
-**Aldığı Değerler:** normal | reverse  
-**Başlangıç değeri:** inline-axis  
-**Uygulanabilen elementler:** display:box ve display:inline-box değeri
-alan elemanlara  
-**Kalıtsallık:** Yok
-
-</div>
-
+<h2>box-direction</h2>
+<p class="cssozelliktanimi"><strong>Yapısı:</strong> box-direction: &lt;deger><br />
+<strong>Aldığı Değerler:</strong> normal | reverse<br />
+<strong>Başlangıç değeri:</strong> inline-axis<br />
+<strong>Uygulanabilen elementler:</strong> display:box ve display:inline-box değeri
+alan elemanlara<br />
+<strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>box-direction</strong> özelliği kapsayıcı eleman içindeki esnek kutuların
 sıralama yönünü belirler. İki değer alır; normal ve <strong>reverse</strong>.
 <strong>reverse</strong> tanımlandığında sıralama yönü normalin tam tersine döner.</p>
-<div class="codehilite"><pre> <span class="nf">#esnekKutuKapsul</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span> <span class="k">display</span><span class="o">:-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#esnekKutuKapsul</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">orient</span><span class="o">:</span><span class="n">vertical</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">orient</span><span class="o">:</span><span class="n">vertical</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">orient</span><span class="o">:</span><span class="n">vertical</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="k">direction</span><span class="o">:</span> <span class="n">reverse</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="k">direction</span><span class="o">:</span> <span class="n">reverse</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="k">direction</span><span class="o">:</span> <span class="n">reverse</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">600px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#03C</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>display:-moz-box; box-orient:vertical; -moz-box-orient:vertical;
--webkit-box-orient:vertical; box-direction: reverse; -moz-box-direction:
-reverse; -webkit-box-direction: reverse; width:200px; height:600px;
-border:1px solid #03C; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/S4c44/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/S4c44/embedded/result,css,html"></iframe>
+
 <p>Yukarıdaki örnekte sıralama yukarıdan aşağı <strong>Esnek Kutu1, Esnek Kutu2</strong>
 ve <strong>Esnek Kutu3</strong> iken <strong>box-direction: reverse;</strong> tanımı ile sıralama
 <strong>Esnek Kutu3, Esnek Kutu2</strong> ve <strong>Esnek Kutu1</strong> şeklini almıştır.</p>
@@ -213,8 +233,8 @@ ve <strong>Esnek Kutu3</strong> iken <strong>box-direction: reverse;</strong> ta
 üst(top - t) ve alt(bottom - b) kısaltmaları kullanılmıştır. CSS3’ün
 birçok özelliği üzerinde halen çalışılan canlı bir yapıdır.
 Değişikliklerin olabileceği dikkate alınmalıdır.</p>
-<h3>box-pack</h3>
-<p><strong>Yapısı :</strong> box-pack: <deger><br />
+<h2>box-pack</h2>
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> box-pack: &lt;deger><br />
 <strong>Aldığı Değerler :</strong> start | end | center | justify<br />
 <strong>Başlangıç değeri:</strong> start<br />
 <strong>Uygulanabilen elementler:</strong> display:box ve display:inline-box değeri
@@ -228,24 +248,28 @@ yasla(justify)</p>
 kalan boşluk alanına göre değerlendirme yapılır.</p>
 <p>Bu özellik tanımı 2009’da tanımlandı şu an yenileniyor <strong>flex-pack</strong>
 olarak değişecek. Tarayıcılar destekleyen kadar bu şekilde devam edecek.</p>
-<div class="codehilite"><pre> <span class="nf">#esnekKutuKapsul</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span> <span class="k">display</span><span class="o">:-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#esnekKutuKapsul</span><span class="p">{</span>
+     <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span>
+     <span class="k">display</span><span class="o">:-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+     <span class="k">display</span><span class="o">:-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+     <span class="k">width</span><span class="o">:</span><span class="m">600px</span><span class="p">;</span>
+     <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#03C</span><span class="p">;</span>
+     <span class="n">box</span><span class="o">-</span><span class="n">pack</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+     <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">pack</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">pack</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>display:-moz-box; width:600px; border:1px solid #03C; box-pack:center;
--webkit-box-pack:center; -moz-box-pack:center; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/MwWcm/embedded/result,css,html"></iframe></p>
-<h3>box-align</h3>
-<div class="cssozelliktanimi">
-**Yapısı :** box-align: <deger>  
-**Aldığı Değerler :** stretch | start | end | center | baseline  
-**Başlangıç değeri:** stretch  
-**Uygulanabilen elementler:** display:box ve display:inline-box değeri
-alan elemanlara  
-**Kalıtsallık:** Yok
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/MwWcm/embedded/result,css,html"></iframe>
 
-</div>
-
+<h2>box-align</h2>
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> box-align: &lt;deger><br />
+<strong>Aldığı Değerler :</strong> stretch | start | end | center | baseline<br />
+<strong>Başlangıç değeri:</strong> stretch<br />
+<strong>Uygulanabilen elementler:</strong> display:box ve display:inline-box değeri
+alan elemanlara<br />
+<strong>Kalıtsallık:</strong> Yok</p>
 <p>Kapsayıcı elemana atanan box-orient değerine göre kalan boşluğa göre
 hizalama yapmak için kullanılır.</p>
 <p>Beş adet değer alır. <strong>stretch | start | end | center | baseline</strong>
@@ -255,27 +279,37 @@ yükseklikleri yayılacaktır, eğer <strong>box-orient</strong> değeri <strong
 genişlikleri yayılacaktır. <strong>start</strong> ve <strong>end</strong> değerleri eğer
 horizantal tanımlı ise sol ve sağa yaslayacaktır, <strong>vertical</strong> tanımlı
 ise üste ve alta yaslayacaktır. <strong>center</strong> değeri ise ortalayacaktır.</p>
-<div class="codehilite"><pre> <span class="nf">#esnekKutuKapsul</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span> <span class="k">display</span><span class="o">:-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#esnekKutuKapsul</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">600px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#03C</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">orient</span><span class="o">:</span><span class="n">horizantal</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">orient</span><span class="o">:</span><span class="n">horizantal</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">orient</span><span class="o">:</span><span class="n">horizantal</span><span class="p">;</span>  
+    <span class="n">box</span><span class="o">-</span><span class="n">align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.esnekKutu</span><span class="p">{</span>
+     <span class="k">background-color</span><span class="o">:</span><span class="m">#999999</span><span class="p">;</span>
+     <span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span>
+     <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span>
+     <span class="k">margin-right</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>display:-moz-box; width:600px; border:1px solid #03C;
-box-orient:horizantal; -moz-box-orient:horizantal;
--webkit-box-orient:horizantal; box-align: center; -webkit-box-align:
-center; -moz-box-align: center; } .esnekKutu{ background-color:#999999;
-width:150px; height:150px; margin-right:15px; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ZYz2M/1/embedded/result,css,html"></iframe></p>
-<h3>box-lines</h3>
-<div class="cssozelliktanimi">
-**Yapısı :** box-lines: <deger>  
-**Aldığı Değerler :** single | multiple  
-**Başlangıç değeri:** single  
-**Uygulanabilen elementler:** display:box ve display:inline-box değeri
-alan elemanlara  
-**Kalıtsallık:** Yok
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ZYz2M/1/embedded/result,css,html"></iframe>
 
-</div>
-
+<h2>box-lines</h2>
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> box-lines: <deger><br />
+<strong>Aldığı Değerler :</strong> single | multiple<br />
+<strong>Başlangıç değeri:</strong> single<br />
+<strong>Uygulanabilen elementler:</strong> display:box ve display:inline-box değeri
+alan elemanlara<br />
+<strong>Kalıtsallık:</strong> Yok</p>
 <p>Esnek Kutu Yerleşimi ile yerleştirilen kutular genelde bir eksen
 üzerinde blok halinde hareket eder, <strong>blox-line</strong> özellik bu elemanların
 alt satıra geçip geçmemesini ayarlar. İki değer alır.</p>
@@ -290,29 +324,40 @@ alt satıra geçip geçmemesini ayarlar. İki değer alır.</p>
 dair duyumlar var.</p>
 <p>Yenilenen EKYM standartlarında box-line özelliği görünmüyor. Onun yerine
 benzer etki yapacak <strong>flex-flow</strong> tanımı gelecek gibi.</p>
-<h3>box-ordinal-group</h3>
-<div class="cssozelliktanimi">
-**Yapısı :** box-ordinal-group: <deger>  
-**Aldığı Değerler :** <sayı>  
-**Başlangıç değeri:** 1  
-**Uygulanabilen elementler:** display:box ve display:inline-box değeri
-alan elemanların normal akıştaki alt elemanları  
-**Kalıtsallık:** Yok
-
-</div>
-
+<h2>box-ordinal-group</h2>
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> box-ordinal-group: <deger><br />
+<strong>Aldığı Değerler :</strong> <sayı><br />
+<strong>Başlangıç değeri:</strong> 1<br />
+<strong>Uygulanabilen elementler:</strong> display:box ve display:inline-box değeri
+alan elemanların normal akıştaki alt elemanları<br />
+<strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>box-ordinal-group</strong> özelliği kapsayıcı kutunun içindeki esnek
 kutuların sıralamasını belirlememizi sağlar.</p>
-<div class="codehilite"><pre> <span class="nf">#esnekKutu1</span> <span class="p">{</span> <span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#esnekKutu1</span> <span class="p">{</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#0CF</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#esnekKutu3</span> <span class="p">{</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#9C3</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#esnekKutu4</span> <span class="p">{</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">ordinal</span><span class="o">-</span><span class="n">group</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#FC9</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>-moz-box-ordinal-group: 2; background-color:#0CF; } #esnekKutu3 {
-box-ordinal-group: 2; -webkit-box-ordinal-group: 2;
--moz-box-ordinal-group: 2; background-color:#9C3; } #esnekKutu4 {
-box-ordinal-group: 1; -webkit-box-ordinal-group: 1;
--moz-box-ordinal-group: 1; background-color:#FC9; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/TaFBM/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/TaFBM/embedded/result,css,html"></iframe>
+
 <p>Dört adet kutumuz var. Bunların üç tanesine <strong>box-ordinal-group</strong> değeri
 tanımladık.</p>
 <p><strong>EsnekKutu1</strong> ve <strong>EsnekKutu3</strong> için 2 değeri tanımladık bunlar ikinci
@@ -323,17 +368,13 @@ olan 1 değerini almasına neden olacaktır. Buna göre sıralama 2,4,1,3
 <p>Bu özellik bize sıralama konusunda tam bir kontrol sağlamaktadır.</p>
 <p>Yeni EKYM standardında <strong>box-ordinal-group</strong> yerine <strong>flex-order</strong>
 özellik ismi kullanılması düşünülmektedir.</p>
-<h3>box-flex</h3>
-<div class="cssozelliktanimi">
-**Yapısı :** box-ordinal-group: <deger>  
-**Aldığı Değerler :** <sayı>  
-**Başlangıç değeri:** 0  
-**Uygulanabilen elementler:** display:box ve display:inline-box değeri
-alan elemanların normal akıştaki alt elemanları  
-**Kalıtsallık:** Yok
-
-</div>
-
+<h2>box-flex</h2>
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> box-ordinal-group: &lt;deger><br />
+<strong>Aldığı Değerler :</strong> &lt;sayı><br />
+<strong>Başlangıç değeri:</strong> 0<br />
+<strong>Uygulanabilen elementler:</strong> display:box ve display:inline-box değeri
+alan elemanların normal akıştaki alt elemanları<br />
+<strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>blox-flex</strong> özelliği tanımlanması durumunda alt elemanların esnek
 davranmasını sağlar. Tanım yapılmadığında ise alt elemanlar esnek olmaz.</p>
 <p>Hesaplamanın mantığı şöyledir;</p>
@@ -341,20 +382,57 @@ davranmasını sağlar. Tanım yapılmadığında ise alt elemanlar esnek olmaz.
 için toplam boşluk genişliği(Kapasayıcı eleman ile kutuların genişliği
 toplamı arasındaki fark) bu sayıya bölünerek elde edilen değer kutu
 genişliğini belirler.</p>
-<div class="codehilite"><pre> <span class="nf">#esnekKutuKapsul</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#esnekKutuKapsul</span> <span class="p">{</span>
+     <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span>
+   <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+   <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+   <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+   <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.esnekKutu</span> <span class="p">{</span>
+   <span class="k">background-color</span><span class="o">:</span><span class="m">#999999</span><span class="p">;</span>
+   <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#esnekKutu1</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#0CF</span><span class="p">;</span>  
+    <span class="k">border</span><span class="o">:</span> <span class="nb">orange</span> <span class="k">solid</span> <span class="m">1px</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#esnekKutu2</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="n">lightgray</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="nb">red</span> <span class="k">solid</span> <span class="m">1px</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#esnekKutu3</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#9C3</span><span class="p">;</span>    
+    <span class="k">border</span><span class="o">:</span> <span class="nb">red</span> <span class="k">solid</span> <span class="m">1px</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#esnekKutu4</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#FC9</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="nb">red</span> <span class="k">solid</span> <span class="m">1px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>display: -webkit-box; display: -moz-box; display: -ms-box; width:100%; }
-.esnekKutu { background-color:#999999; height:150px; } #esnekKutu1 {
-background-color:#0CF; border: orange solid 1px; box-flex: 2;
--webkit-box-flex: 2; -moz-box-flex: 2; -ms-box-flex: 2; } #esnekKutu2 {
-background: lightgray; border: red solid 1px; box-flex: 1;
--webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; } #esnekKutu3 {
-background-color:#9C3; border: red solid 1px; box-flex: 0;
--webkit-box-flex: 0; -moz-box-flex: 0; -ms-box-flex: 0; } #esnekKutu4 {
-background-color:#FC9; border: red solid 1px; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/h7KAa/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/h7KAa/embedded/result,css,html"></iframe>
+
 <p>Daha sabit bir örnek verelim; genişliği 600px olan kapsayıcı eleman ve
  üç adet 100px’lik kutumuz olsun(Bu durumdan boşluk değeri 300px
 olacaktır), bunların <strong>box-flex</strong> değerleri 1 olsun, her bir kutunun
@@ -362,18 +440,50 @@ genişliği 200px(100 + 300/3 * 1 = 200) olacaktır. Eğer bu kutulardan
 bir tanesinin <strong>box-flex</strong> değeri 2 olarak değiştirilirse, değiştirilen
 kutunun genişliği 250px(100 + 300/4 * 2 = 250) olurken diğer iki
 kutunun genişliği 175px(100 + 300/4 * 1 = 175) olacaktır.</p>
-<div class="codehilite"><pre> <span class="nf">#esnekKutuKapsul</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#esnekKutuKapsul</span> <span class="p">{</span>
+   <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+   <span class="k">border</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
+   <span class="k">display</span><span class="o">:</span> <span class="n">box</span><span class="p">;</span>
+   <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+   <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+   <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+   <span class="k">width</span><span class="o">:</span><span class="m">600px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.esnekKutu</span> <span class="p">{</span>
+   <span class="k">background-color</span><span class="o">:</span><span class="m">#999999</span><span class="p">;</span>
+   <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span>
+   <span class="k">width</span><span class="o">:</span><span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#esnekKutu1</span> <span class="p">{</span>
+   <span class="k">background-color</span><span class="o">:</span><span class="m">#0CF</span><span class="p">;</span>  
+   <span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#esnekKutu2</span> <span class="p">{</span>
+   <span class="k">background</span><span class="o">:</span> <span class="n">lightgray</span><span class="p">;</span>
+   <span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#esnekKutu3</span> <span class="p">{</span>
+   <span class="k">background-color</span><span class="o">:</span><span class="m">#9C3</span><span class="p">;</span>    
+   <span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+   <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>display: -webkit-box; display: -moz-box; display: -ms-box; width:600px;
-} .esnekKutu { background-color:#999999; height:150px; width:100px; }</p>
-<h1>esnekKutu1 { background-color:#0CF; box-flex: 2; -webkit-box-flex: 2;</h1>
-<p>-moz-box-flex: 2; -ms-box-flex: 2; } #esnekKutu2 { background:
-lightgray; box-flex: 1; -webkit-box-flex: 1; -moz-box-flex: 1;
--ms-box-flex: 1; } #esnekKutu3 { background-color:#9C3; box-flex: 1;
--webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Dyjq2/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Dyjq2/embedded/result,css,html"></iframe>
+
 <p>Eğer kutu genişlikleri toplamı kapsayıcı kutunun genişliğinden büyük ise
 genişlik hesaplamasında benzer birim hesabına göre küçülme olacaktır. 0
 değeri kutunun esnek olmayacağı anlamına gelir.</p>
@@ -383,22 +493,18 @@ gözüküyor)</p>
 <p><strong>box-flex</strong> özelliği 2009 yılındaki standartlardaki hali idi, yenilenen
 standartlarda <strong>box-flex</strong> vede <strong>box-flex-group</strong> özelliklerini
 kapsayan <strong>flex()</strong> fonksiyonu ile yenilenmektedir.</p>
-<div class="tarayiciuyum">
-**Tarayıcı Destekleme Listesi**  
-Firefox 3+ (-moz- öneki ile)  
-Chrome 5+ (-webkit- öneki ile)  
-Safari 3.2+ (-webkit- öneki ile)  
-Opera desteklemiyor  
-İnternet Explorer 10+ (-ms- öneki ile)  
-**Mobil Tarayıcılar**  
-iOS Safari 3.2+ (-webkit- öneki ile)  
-Opera Mini desteklemiyor  
-Opera Mobile destelemiyor  
-Android Browser 2.2+ (-webkit- öneki ile)
-
-</div>
-
-<h3>Sonuç</h3>
+<p class="tarayiciuyum"><strong>Tarayıcı Destekleme Listesi</strong><br />
+Firefox 3+ (-moz- öneki ile)<br />
+Chrome 5+ (-webkit- öneki ile)<br />
+Safari 3.2+ (-webkit- öneki ile)<br />
+Opera desteklemiyor<br />
+İnternet Explorer 10+ (-ms- öneki ile)<br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari 3.2+ (-webkit- öneki ile)<br />
+Opera Mini desteklemiyor<br />
+Opera Mobile destelemiyor<br />
+Android Browser 2.2+ (-webkit- öneki ile)</p>
+<h2>Sonuç</h2>
 <p>Gerek CSS3 ve gerekse EKYM yeni özellikler ve hala gelişmektede olan
 mecralar. Benim burada anlatmak istediğim CSS3’ün en büyük
 yeniliklerinden biri olan sayfa planlamaya yönelim yeniliklerine bir göz
@@ -414,7 +520,7 @@ daha güzel şeyler olacağı kesin.</p>
 <a href="http://oli.jp/2011/css3-flexbox/">http://oli.jp/2011/css3-flexbox/</a> sitesindeki örnekler incelenebilir.
  </p>
 <p>Kalın sağlıcakla</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.html5rocks.com/en/tutorials/flexbox/quick/">http://www.html5rocks.com/en/tutorials/flexbox/quick/</a> (güzel)</li>
 <li><a href="http://www.css3.info/introducing-the-flexible-box-layout-module/">http://www.css3.info/introducing-the-flexible-box-layout-module/</a></li>
@@ -435,12 +541,10 @@ daha güzel şeyler olacağı kesin.</p>
 <li><a href="http://www.w3schools.com/css3/css3_reference.asp#box">http://www.w3schools.com/css3/css3_reference.asp#box</a></li>
 <li><a href="http://portfo.li/madebyted/477862-css3-flexible-box-layout-module-aka-flex-box-introduction-and-demos-test-cases">http://portfo.li/madebyted/477862-css3-flexible-box-layout-module-aka-flex-box-introduction-and-demos-test-cases</a></li>
 <li><a href="http://ontwik.com/css/css-3-the-flexible-box-model/">http://ontwik.com/css/css-3-the-flexible-box-model/</a> (video)</li>
-<li><a href="http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox">http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox</a>
-    (güzel)</li>
+<li><a href="http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox">http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox</a> (güzel)</li>
 <li><a href="http://caniuse.com/flexbox">http://caniuse.com/flexbox</a> (tarayıcı desteği)</li>
 <li><a href="http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/">http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/</a></li>
-</ul>
-</p><p><a href=".././css3-esnek-kutu-yerlesimiflexible-box-layout/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././css3-esnek-kutu-yerlesimiflexible-box-layout/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

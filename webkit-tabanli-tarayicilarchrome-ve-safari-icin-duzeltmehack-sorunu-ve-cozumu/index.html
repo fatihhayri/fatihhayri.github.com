@@ -90,33 +90,36 @@
 Chrome için bir düzeltme yapmam gerekti(Chrome’un line-height ile olan
 sorun) araştırdım ve media sorgusu ile bir düzeltme kodu buldum. <br />
 </p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="nd">:0</span><span class="o">)</span> <span class="p">{</span> <span class="nc">.arama</span> <span class="p">{</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="nd">:0</span><span class="o">)</span> <span class="p">{</span>
+    <span class="nc">.arama</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#FF0000</span><span class="p">;</span> <span class="p">}</span>
+    <span class="nf">#solAlan</span> <span class="p">{</span><span class="k">color</span><span class="o">:</span> <span class="m">#0000FF</span><span class="p">;}</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-color: #FF0000; } #solAlan {color: #0000FF;} } </p>
 <p>Şeklinde bir kod işimi gördü, ancak projeyi yayına atarken sıkıştırıp
 gönderiyoruz ve sıkıştırılınca</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span><span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="nd">:0</span><span class="o">)</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span><span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="nd">:0</span><span class="o">)</span>
 </pre></div>
 
 
 <p>Satırındaki <strong>and</strong> ve <strong>(</strong> arasındaki boşluğu sıkıştırma esnasında yok
 ediyor ve buda bu düzeltmenin uygulanmamasına neden oluyor. Çözüm için
 araya çakma bir yöntem(<strong>/<em>!</em>/</strong>) ile boşluk bırakmalıyız.</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span><span class="c">/*!*/</span><span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="nd">:0</span><span class="o">)</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span><span class="c">/*!*/</span><span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="nd">:0</span><span class="o">)</span> <span class="p">{</span>
+    <span class="o">...</span>
+<span class="p">}</span>
 </pre></div>
 
 
 <p>Şeklinde çözüm üretebiliyoruz.</p>
 <p>Belki küçük bir ipucu ama lazım olur günün birinde</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/">http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/</a></li>
 <li><a href="http://stackoverflow.com/questions/4104004/whats-the-semantic-of-media-screen-and-webkit-min-device-pixel-ratio0">http://stackoverflow.com/questions/4104004/whats-the-semantic-of-media-screen-and-webkit-min-device-pixel-ratio0</a></li>
 <li><a href="http://yuilibrary.com/projects/yuicompressor/ticket/2528087">http://yuilibrary.com/projects/yuicompressor/ticket/2528087</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

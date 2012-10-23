@@ -95,13 +95,16 @@ aşağıdaki basit komutları bilmenizde yarar var.</p>
 <p>[<img alt="" src="../static/images/terminal-300x187.png" title="terminal" />][]</p>
 <p>Terminal giriş görünümü yukarıdaki gibidir. (Renklere takılmayın bu
 benim seçimim)</p>
-<h3>ls (list files)</h3>
+<h2>ls (list files)</h2>
 <p>Çalıştığımız klasörün içeriğini göstermek için kullanılır. Windows’taki
 dir ile aynı anlamdadır.</p>
 <p>Sonuç aşağıdaki gibi olacaktır</p>
-<p>[bash] ls aFolder    another.txt    bilgilendirme.txt   deneme.html
-[/bash]</p>
-<h3>cd (Change Directory)</h3>
+<div class="codehilite"><pre>ls
+aFolder    another.txt    bilgilendirme.txt   deneme.html
+</pre></div>
+
+
+<h2>cd (Change Directory)</h2>
 <p>Bu komut ile dosyalar arası geçiş için kullanırız. Mesela image
 klasörüne geçmek için</p>
 <p>[bash] cd images [/bash]</p>
@@ -115,15 +118,15 @@ klasörüne geçmek için</p>
 durumunda akılda tutmak zor oluyor. Klasör veya dosya isminin başında
 bir kaç karakter yazdıktan sonra tab tuşuna basarak gerisini
 tamamlayabilirsiniz.</p>
-<h3>mkdir (Make Directory)</h3>
+<h2>mkdir (Make Directory)</h2>
 <p>Yeni klasör oluşturmak için kullanıyoruz. Mac ve Windows’ta kullanımı
 aynıdır.</p>
 <p>[bash] mkdir yeniKlasor [/bash]</p>
-<h3>rm (remove)</h3>
+<h2>rm (remove)</h2>
 <p>Dosya ve klasörleri silmek için kullanılır. Silme işlemlerinde her zaman
 dikkatli olmak lazım.</p>
 <p>[bash] rm deneme.html rm images_klasoru [/bash]</p>
-<h3>cp (copy) ve mv (move)</h3>
+<h2>cp (copy) ve mv (move)</h2>
 <p>Çok basit bir kullanımı vardır. İlk parametre kopyalanacak dosyayı
 ikinci parametre ise hedefi gösterir.</p>
 <p>[bash] cp deneme.html ~/dosya/deneme.html [/bash]</p>
@@ -132,15 +135,15 @@ ikinci parametre ise hedefi gösterir.</p>
 <p>mv komutu dosya ismini değiştirmek içinde kullanılabilir.</p>
 <p>[bash] mv deneme.html /dosya/test.html [/bash]</p>
 <p>deneme.html dosyası ismi test.html olarak değiştirilip taşınmıştır.</p>
-<h3>clear</h3>
+<h2>clear</h2>
 <p>Terminal ekranını temizlemek için kullanılır.</p>
-<h3>Dosya Açmak</h3>
+<h2>Dosya Açmak</h2>
 <p>Komut satırlarından harici programlarda da açabiliyoruz veya kendi
 içinde açabiliyoruz.</p>
 <p>Mesela MacOs için ilgili klasörde iken</p>
 <p>[bash] nano deneme.html [/bash]</p>
 <p>komutu deneme.html dosyamızı nano editöründe açmamızı sağlayacaktır.</p>
-<h3>exit</h3>
+<h2>exit</h2>
 <p>Eğer uzak dosya yönetimi ile çalışıyorsanız. Kurduğunuz bağlantıyı
 sonlandırır.  exit komutu ile Terminalide kapatmak mümkün. Terminal -
 Preferences.. - Settings - Shell oradanda “Close the Window”
@@ -151,7 +154,7 @@ kapatabiliriz.</p>
 <h2>Git Kullanırken Öğrendiğim İpuçları</h2>
 <p>Yukarıda genel komutları anlattım, aşağıda ise kullandıkça gördüğüm
 komutları ve ipuçlarını paylaşacağım.</p>
-<h3>İki dosya arasındaki farkı görmek</h3>
+<h2>İki dosya arasındaki farkı görmek</h2>
 <p>Bir branchdeki veya bir dosya üzerindeki değişiklikleri görmek için
 branchde iken</p>
 <p>[php] $git log [/php]</p>
@@ -177,10 +180,10 @@ parametresini kullanabiliriz.</p>
 fe0dba7b841e86b095d2aefbd6bd755a0d9d1e90  Html/index.html [/php]</p>
 <p>Eklenenleri yeşil, çıkarılanları kırmızı renkte gösterecektir. Ayrımı
 görmek için renkler güzel oluyor.</p>
-<h3>Dallanma (Brach) Silmek</h3>
+<h2>Dallanma (Brach) Silmek</h2>
 <p>git branch -d: Yanlışlıkla açtığımız branchlerı silmek için</p>
 <p>[php] $git branch -d branch_ismi [/php]</p>
-<h3>Kısayol kullanmak</h3>
+<h2>Kısayol kullanmak</h2>
 <p>Git kullanırken aynı kodları tekrar tekrar çok kullanıyoruz. Bu
 komutları kısaltarak daha hızlı kod yazabilme imkanı sağlıyor bize komut
 sistemi.</p>
@@ -205,16 +208,16 @@ br = branch<br />
 co = checkout<br />
 ci = commit</p>
 <p>Siz bu listeyi kendinize göre düzenleyebilirsiniz.</p>
-<h3>Git için kaynaklar</h3>
+<h2>Git için kaynaklar</h2>
 <p><a href="http://sixrevisions.com/resources/git-tutorials-beginners/">http://sixrevisions.com/resources/git-tutorials-beginners/</a> bu
 bağlantıda Git kaynakları listelenmiş. Git’in güzel yanlarında birisi
 öğrenmek için kaynağın bol olması.</p>
-<h3>Başka Branch’den dosya almak</h3>
+<h2>Başka Branch’den dosya almak</h2>
 <p>[php] $git checkout branch_adi dosya_adi [/php]</p>
 <p>Benzer bir şekilde branchde yaptığımız değişikliği geri almak için
 master’dan dosyayı alabiliriz.</p>
 <p>[php] git checkout master dosya_adi [/php]</p>
-<h3>Değişen dosya isimleri</h3>
+<h2>Değişen dosya isimleri</h2>
 <p>Çalıştığımız branchde değişiklik yaptığımız dosyaları görmek için</p>
 <p>[php] $git diff master --name-only [/php]</p>
 <p>kodunu kullanıyoruz.</p>
@@ -222,15 +225,13 @@ master’dan dosyayı alabiliriz.</p>
 Yerlikaya'ya şükranlarımı sunarım. Gitmeyeydin Git daha kolay olacaadı.
 :D</p>
 <p>Kalın sağlıcakla</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/">http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/</a></li>
 <li><a href="https://git.wiki.kernel.org/index.php/Aliases">https://git.wiki.kernel.org/index.php/Aliases</a></li>
 <li><a href="http://sixrevisions.com/resources/git-tutorials-beginners/">http://sixrevisions.com/resources/git-tutorials-beginners/</a></li>
 <li><a href="http://ss64.com/osx/">http://ss64.com/osx/</a></li>
 </ul>
-</p>
-
 <p>[<img alt="" src="../static/images/terminal-300x187.png" title="terminal" />]: /images/terminal.png</p>
     </div><!-- /.entry-content -->
     

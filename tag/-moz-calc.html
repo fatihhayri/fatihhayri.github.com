@@ -96,32 +96,41 @@ geleceğiz.</p>
 <p>Genelde esnek yapılı alanlar ve sayfa düzeni oluştururken göreceli değer
 ve sabit margin, padding ve border tanımları ile sorun yaşarız. <br />
 </p>
-<div class="codehilite"><pre> <span class="nf">#sagKolon</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="n">calc</span><span class="p">(</span><span class="m">300px</span> <span class="o">-</span> <span class="m">1em</span><span class="p">);</span> <span class="k">width</span><span class="o">:-</span><span class="n">moz</span><span class="o">-</span><span class="n">calc</span><span class="p">(</span><span class="m">300px</span> <span class="o">-</span> <span class="m">1em</span><span class="p">);</span>
+<div class="codehilite"><pre><span class="nf">#sagKolon</span><span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span><span class="n">calc</span><span class="p">(</span><span class="m">300px</span> <span class="o">-</span> <span class="m">1em</span><span class="p">);</span>
+  <span class="k">width</span><span class="o">:-</span><span class="n">moz</span><span class="o">-</span><span class="n">calc</span><span class="p">(</span><span class="m">300px</span> <span class="o">-</span> <span class="m">1em</span><span class="p">);</span>
+  <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span><span class="m">#CC9933</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>float:left; background-color:#CC9933; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VaBqn/3/embedded/css,result,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VaBqn/3/embedded/css,result,html"></iframe>
+
 <p>Firefox önek(<strong>-moz-</strong>) ile bu değeri desteklerken İnternet Explorer
 standartlardaki şekli destekler.</p>
 <p>Örneğinde görüldüğü gibi <strong>calc()</strong> bu tip sorunlarımızın ilacı
 olacaktır.</p>
 <p>Birden fazla işlem içinde kullanıma izin vardır.<br />
 </p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">100</span><span class="o">%</span> <span class="o">-</span> <span class="m">20px</span> <span class="o">+</span> <span class="m">2px</span><span class="o">*</span><span class="m">2</span><span class="p">);</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">div</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">100</span><span class="o">%</span> <span class="o">-</span> <span class="m">20px</span> <span class="o">+</span> <span class="m">2px</span><span class="o">*</span><span class="m">2</span><span class="p">);</span> 
+<span class="p">}</span>
 </pre></div>
 
 
 <p>İşlem sırası matematik ve javascriptten bildiğimiz gibi çarpma, bölme,
 mod, toplama , çıkarma sıralaması ile olur.<br />
 </p>
-<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">1</span><span class="n">rem</span> <span class="o">-</span> <span class="m">2px</span><span class="p">)</span> <span class="n">calc</span><span class="p">(</span><span class="m">1</span><span class="n">rem</span> <span class="o">-</span> <span class="m">1px</span><span class="p">)</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">1</span><span class="n">rem</span> <span class="o">-</span> <span class="m">2px</span><span class="p">)</span> <span class="n">calc</span><span class="p">(</span><span class="m">1</span><span class="n">rem</span> <span class="o">-</span> <span class="m">1px</span><span class="p">)</span>
+<span class="p">}</span>
 </pre></div>
 
 
 <p>şeklinde margin üst/alt ve sağ/sol tanımları yapılabilir. <br />
 </p>
-<h3>Tarayıcı Desteği</h3>
+<h2>Tarayıcı Desteği</h2>
 <p>Baştada belirttiğimiz gibi şu an sadece Firefox4 ve İnternet Explorer 9
 ve üstü sürümleri destek sağlıyor. Microsoft’tan böyle bir destek
 beklemiyordum açıkçası. Webkit ve Opera desteğini en yakın zamanda
@@ -129,21 +138,18 @@ bekliyorum.</p>
 <p>http://www.webkit.org/blog/1804/last-week-in-webkit-calculated-css-values-and-the-translate-attribute/
 webkit tabanlı tarayıcılarda calc() değerini destekliyor artık. 20 Şubat
 2012</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://webdesignernotebook.com/css/the-wonderful-calc-function/">http://webdesignernotebook.com/css/the-wonderful-calc-function/</a></li>
 <li><a href="http://hacks.mozilla.org/2010/06/css3-calc/">http://hacks.mozilla.org/2010/06/css3-calc/</a></li>
-<li><a href="http://msdn.microsoft.com/en-us/library/ms537660(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/ms537660(v=vs.85).aspx</a>
-    (ie9 destekliyor)</li>
+<li><a href="http://msdn.microsoft.com/en-us/library/ms537660(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/ms537660(v=vs.85).aspx</a> (ie9 destekliyor)</li>
 <li><a href="https://developer.mozilla.org/en/CSS/-moz-calc">https://developer.mozilla.org/en/CSS/-moz-calc</a></li>
 <li><a href="http://caniuse.com/calc">http://caniuse.com/calc</a> (destek listesi)</li>
-<li><a href="http://mynthon.net/howto/-/webdev/css3-testsuite-calc-property-for-calculating-size.txt">http://mynthon.net/howto/-/webdev/css3-testsuite-calc-property-for-calculating-size.txt</a>
-    (örnek)</li>
+<li><a href="http://mynthon.net/howto/-/webdev/css3-testsuite-calc-property-for-calculating-size.txt">http://mynthon.net/howto/-/webdev/css3-testsuite-calc-property-for-calculating-size.txt</a> (örnek)</li>
 <li><a href="http://bloqk.com/makale/css_calc_kullanimi.html">http://bloqk.com/makale/css_calc_kullanimi.html</a></li>
 <li><a href="http://www.thecssninja.com/demo/css_calc/">http://www.thecssninja.com/demo/css_calc/</a> (örnek)</li>
 <li><a href="http://www.sitepoint.com/css3-calc-function">http://www.sitepoint.com/css3-calc-function</a></li>
-</ul>
-</p><p><a href=".././css3-calc-degeri/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././css3-calc-degeri/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

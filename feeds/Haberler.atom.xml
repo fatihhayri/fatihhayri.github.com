@@ -481,13 +481,16 @@ aşağıdaki basit komutları bilmenizde yarar var.&lt;/p&gt;
 &lt;p&gt;[&lt;img alt="" src="/images/terminal-300x187.png" title="terminal" /&gt;][]&lt;/p&gt;
 &lt;p&gt;Terminal giriş görünümü yukarıdaki gibidir. (Renklere takılmayın bu
 benim seçimim)&lt;/p&gt;
-&lt;h3&gt;ls (list files)&lt;/h3&gt;
+&lt;h2&gt;ls (list files)&lt;/h2&gt;
 &lt;p&gt;Çalıştığımız klasörün içeriğini göstermek için kullanılır. Windows’taki
 dir ile aynı anlamdadır.&lt;/p&gt;
 &lt;p&gt;Sonuç aşağıdaki gibi olacaktır&lt;/p&gt;
-&lt;p&gt;[bash] ls aFolder    another.txt    bilgilendirme.txt   deneme.html
-[/bash]&lt;/p&gt;
-&lt;h3&gt;cd (Change Directory)&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;ls
+aFolder    another.txt    bilgilendirme.txt   deneme.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;cd (Change Directory)&lt;/h2&gt;
 &lt;p&gt;Bu komut ile dosyalar arası geçiş için kullanırız. Mesela image
 klasörüne geçmek için&lt;/p&gt;
 &lt;p&gt;[bash] cd images [/bash]&lt;/p&gt;
@@ -501,15 +504,15 @@ klasörüne geçmek için&lt;/p&gt;
 durumunda akılda tutmak zor oluyor. Klasör veya dosya isminin başında
 bir kaç karakter yazdıktan sonra tab tuşuna basarak gerisini
 tamamlayabilirsiniz.&lt;/p&gt;
-&lt;h3&gt;mkdir (Make Directory)&lt;/h3&gt;
+&lt;h2&gt;mkdir (Make Directory)&lt;/h2&gt;
 &lt;p&gt;Yeni klasör oluşturmak için kullanıyoruz. Mac ve Windows’ta kullanımı
 aynıdır.&lt;/p&gt;
 &lt;p&gt;[bash] mkdir yeniKlasor [/bash]&lt;/p&gt;
-&lt;h3&gt;rm (remove)&lt;/h3&gt;
+&lt;h2&gt;rm (remove)&lt;/h2&gt;
 &lt;p&gt;Dosya ve klasörleri silmek için kullanılır. Silme işlemlerinde her zaman
 dikkatli olmak lazım.&lt;/p&gt;
 &lt;p&gt;[bash] rm deneme.html rm images_klasoru [/bash]&lt;/p&gt;
-&lt;h3&gt;cp (copy) ve mv (move)&lt;/h3&gt;
+&lt;h2&gt;cp (copy) ve mv (move)&lt;/h2&gt;
 &lt;p&gt;Çok basit bir kullanımı vardır. İlk parametre kopyalanacak dosyayı
 ikinci parametre ise hedefi gösterir.&lt;/p&gt;
 &lt;p&gt;[bash] cp deneme.html ~/dosya/deneme.html [/bash]&lt;/p&gt;
@@ -518,15 +521,15 @@ ikinci parametre ise hedefi gösterir.&lt;/p&gt;
 &lt;p&gt;mv komutu dosya ismini değiştirmek içinde kullanılabilir.&lt;/p&gt;
 &lt;p&gt;[bash] mv deneme.html /dosya/test.html [/bash]&lt;/p&gt;
 &lt;p&gt;deneme.html dosyası ismi test.html olarak değiştirilip taşınmıştır.&lt;/p&gt;
-&lt;h3&gt;clear&lt;/h3&gt;
+&lt;h2&gt;clear&lt;/h2&gt;
 &lt;p&gt;Terminal ekranını temizlemek için kullanılır.&lt;/p&gt;
-&lt;h3&gt;Dosya Açmak&lt;/h3&gt;
+&lt;h2&gt;Dosya Açmak&lt;/h2&gt;
 &lt;p&gt;Komut satırlarından harici programlarda da açabiliyoruz veya kendi
 içinde açabiliyoruz.&lt;/p&gt;
 &lt;p&gt;Mesela MacOs için ilgili klasörde iken&lt;/p&gt;
 &lt;p&gt;[bash] nano deneme.html [/bash]&lt;/p&gt;
 &lt;p&gt;komutu deneme.html dosyamızı nano editöründe açmamızı sağlayacaktır.&lt;/p&gt;
-&lt;h3&gt;exit&lt;/h3&gt;
+&lt;h2&gt;exit&lt;/h2&gt;
 &lt;p&gt;Eğer uzak dosya yönetimi ile çalışıyorsanız. Kurduğunuz bağlantıyı
 sonlandırır.  exit komutu ile Terminalide kapatmak mümkün. Terminal -
 Preferences.. - Settings - Shell oradanda “Close the Window”
@@ -537,7 +540,7 @@ kapatabiliriz.&lt;/p&gt;
 &lt;h2&gt;Git Kullanırken Öğrendiğim İpuçları&lt;/h2&gt;
 &lt;p&gt;Yukarıda genel komutları anlattım, aşağıda ise kullandıkça gördüğüm
 komutları ve ipuçlarını paylaşacağım.&lt;/p&gt;
-&lt;h3&gt;İki dosya arasındaki farkı görmek&lt;/h3&gt;
+&lt;h2&gt;İki dosya arasındaki farkı görmek&lt;/h2&gt;
 &lt;p&gt;Bir branchdeki veya bir dosya üzerindeki değişiklikleri görmek için
 branchde iken&lt;/p&gt;
 &lt;p&gt;[php] $git log [/php]&lt;/p&gt;
@@ -563,10 +566,10 @@ parametresini kullanabiliriz.&lt;/p&gt;
 fe0dba7b841e86b095d2aefbd6bd755a0d9d1e90  Html/index.html [/php]&lt;/p&gt;
 &lt;p&gt;Eklenenleri yeşil, çıkarılanları kırmızı renkte gösterecektir. Ayrımı
 görmek için renkler güzel oluyor.&lt;/p&gt;
-&lt;h3&gt;Dallanma (Brach) Silmek&lt;/h3&gt;
+&lt;h2&gt;Dallanma (Brach) Silmek&lt;/h2&gt;
 &lt;p&gt;git branch -d: Yanlışlıkla açtığımız branchlerı silmek için&lt;/p&gt;
 &lt;p&gt;[php] $git branch -d branch_ismi [/php]&lt;/p&gt;
-&lt;h3&gt;Kısayol kullanmak&lt;/h3&gt;
+&lt;h2&gt;Kısayol kullanmak&lt;/h2&gt;
 &lt;p&gt;Git kullanırken aynı kodları tekrar tekrar çok kullanıyoruz. Bu
 komutları kısaltarak daha hızlı kod yazabilme imkanı sağlıyor bize komut
 sistemi.&lt;/p&gt;
@@ -591,16 +594,16 @@ br = branch&lt;br /&gt;
 co = checkout&lt;br /&gt;
 ci = commit&lt;/p&gt;
 &lt;p&gt;Siz bu listeyi kendinize göre düzenleyebilirsiniz.&lt;/p&gt;
-&lt;h3&gt;Git için kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Git için kaynaklar&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://sixrevisions.com/resources/git-tutorials-beginners/"&gt;http://sixrevisions.com/resources/git-tutorials-beginners/&lt;/a&gt; bu
 bağlantıda Git kaynakları listelenmiş. Git’in güzel yanlarında birisi
 öğrenmek için kaynağın bol olması.&lt;/p&gt;
-&lt;h3&gt;Başka Branch’den dosya almak&lt;/h3&gt;
+&lt;h2&gt;Başka Branch’den dosya almak&lt;/h2&gt;
 &lt;p&gt;[php] $git checkout branch_adi dosya_adi [/php]&lt;/p&gt;
 &lt;p&gt;Benzer bir şekilde branchde yaptığımız değişikliği geri almak için
 master’dan dosyayı alabiliriz.&lt;/p&gt;
 &lt;p&gt;[php] git checkout master dosya_adi [/php]&lt;/p&gt;
-&lt;h3&gt;Değişen dosya isimleri&lt;/h3&gt;
+&lt;h2&gt;Değişen dosya isimleri&lt;/h2&gt;
 &lt;p&gt;Çalıştığımız branchde değişiklik yaptığımız dosyaları görmek için&lt;/p&gt;
 &lt;p&gt;[php] $git diff master --name-only [/php]&lt;/p&gt;
 &lt;p&gt;kodunu kullanıyoruz.&lt;/p&gt;
@@ -608,15 +611,13 @@ master’dan dosyayı alabiliriz.&lt;/p&gt;
 Yerlikaya'ya şükranlarımı sunarım. Gitmeyeydin Git daha kolay olacaadı.
 :D&lt;/p&gt;
 &lt;p&gt;Kalın sağlıcakla&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/"&gt;http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://git.wiki.kernel.org/index.php/Aliases"&gt;https://git.wiki.kernel.org/index.php/Aliases&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://sixrevisions.com/resources/git-tutorials-beginners/"&gt;http://sixrevisions.com/resources/git-tutorials-beginners/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://ss64.com/osx/"&gt;http://ss64.com/osx/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-
 &lt;p&gt;[&lt;img alt="" src="/images/terminal-300x187.png" title="terminal" /&gt;]: /images/terminal.png&lt;/p&gt;</summary><category term="git"></category><category term="macos"></category><category term="sürüm kontrol sistemi"></category><category term="terminal"></category></entry><entry><title>Firefox 6</title><link href="http://www.fatihhayrioglu.com/firefox-6/" rel="alternate"></link><updated>2011-08-17T11:36:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-08-17:firefox-6/</id><summary type="html">&lt;p&gt;&lt;img alt="Firefox 6" src="https://lh3.googleusercontent.com/h-IKuADHzTtJwdtiERVqnW4ptIiuE9w6C0IWr_Pn0X4UZLjgny8zj4bfz-78varJxDf8gMM4l5UQ16C6NLpZc0hCkEiQQjLBNWiR9D_Kn7bb4SiKQic" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.mozilla.com/tr/firefox/"&gt;Firefox6 çıktı.&lt;/a&gt; Mozilla’da artık hızlı tarayıcı sürümleri çıkarmaya
 başladı. Her neyse ki otomatik güncelleme özelliği sayesinde

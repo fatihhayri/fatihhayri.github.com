@@ -100,15 +100,11 @@ border değerlerini içerir kalan kısmıda içerik alanı değeri olarak
 belirlenir.”</em></p>
 <p>W3C bu durum için bu kabulü bir özelliğe atadı ve bize seçme imkanı
 tanıdı. Artık biz kutu modelinin nasıl davranacağını seçebileceğiz.</p>
-<div class="cssozelliktanimi">
-**Yapısı :** box-sizing: <deger>  
-**Aldığı Değerler :** content-box | border-box   
-**Başlangıç değeri:** content-box  
-**Uygulanabilen elementler:** Tüm Elemanlara  
-**Kalıtsallık:** Yok
-
-</div>
-
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> box-sizing: &lt;deger><br />
+<strong>Aldığı Değerler :</strong> content-box | border-box <br />
+<strong>Başlangıç değeri:</strong> content-box<br />
+<strong>Uygulanabilen elementler:</strong> Tüm Elemanlara<br />
+<strong>Kalıtsallık:</strong> Yok</p>
 <p>box-sizing özelliği bize kutunun genişliğinin border ve padding
 değerlerinin içerip içermemesi gerektiğini tanımlama imkanı sağlıyor.
 İki adet değeri var</p>
@@ -119,24 +115,39 @@ değerlerinin içerip içermemesi gerektiğini tanımlama imkanı sağlıyor.
 <p>border-box: IE kutu kabulü diyede adlandırabileceğimiz değer.
     Genişlik veya yükseklik değeri padding ve border değerlerinide
     içerir.</p>
-<p>:::css
- #kutu{ display:block; border:10px solid #069; padding:20px;
-width:200px; height:200px; background:#CCC; } 
-<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/ZeMYW/1/embedded/result,css,html"></iframe></p>
+<p>:::css</p>
+<h1>kutu{</h1>
+<p>display:block;
+  border:10px solid #069;
+  padding:20px;
+  width:200px;
+  height:200px;
+  background:#CCC;
+}</p>
 </li>
 </ul>
+<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/ZeMYW/1/embedded/result,css,html"></iframe>
+
 <p>Başlangıç değeri content-box’dır. Kutu genişliği 10px + 20px + 200 + 20
 + 10px = 260px olacaktır.</p>
 <p>Farklı tarayıcılar önek ile destek sağlamaktadır. Firefox(-moz-),
 Chrome(-webkit-) ve Safari (-webkit-) Yukarıdaki koda box-border tanımı
 yapıldığında</p>
-<div class="codehilite"><pre> <span class="nf">#kutu</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span><span class="m">10px</span> <span class="k">solid</span> <span class="m">#069</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#kutu</span><span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span><span class="m">10px</span> <span class="k">solid</span> <span class="m">#069</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span><span class="m">#CCC</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="n">box</span><span class="o">-</span><span class="k">border</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>width:200px; height:200px; background:#CCC; box-sizing:border-box;
--webkit-box-sizing:border-box; -moz-box-sizing:box-border; } 
-<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/y6uyv/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/y6uyv/embedded/result,css,html"></iframe>
+
 <p>Kutunun genişlik değeri 200px olacaktır. İçerik alanı genişlik değeri
 ise 140px olacaktır.</p>
 <p>Her iki değerin kullanılabileceği yerler vardır. border-box tanımının
@@ -156,34 +167,40 @@ nedeni ile kapsayıcı eleman içine sığmayacaktır. Burada genişlik
 değerini padding ve border değerlerini çıkarıp hesaplama imkanımızda
 yoktur. En azından <a href="http://www.fatihhayrioglu.com/css3-calc-degeri/">calc()</a> özelliği tam desteklenene kadar yoktur.</p>
 <p>Çözüm olarak box-border tanımı ile sorunumuza çözüm üretebiliriz.</p>
-<div class="codehilite"><pre> <span class="nc">.kutuSol</span><span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">30</span><span class="o">%</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="nb">pink</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.kutuSol</span><span class="p">{</span>
+ <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+ <span class="k">width</span><span class="o">:</span> <span class="m">30</span><span class="o">%</span><span class="p">;</span>
+ <span class="k">background-color</span><span class="o">:</span> <span class="nb">pink</span><span class="p">;</span>
+ <span class="k">border</span><span class="o">:</span> <span class="m">3px</span> <span class="nb">red</span> <span class="k">dotted</span><span class="p">;</span>
+ <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.kutuSag</span><span class="p">{</span>
+ <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+ <span class="k">background-color</span><span class="o">:</span> <span class="nb">lightgreen</span><span class="p">;</span>
+ <span class="k">width</span><span class="o">:</span> <span class="m">70</span><span class="o">%</span><span class="p">;</span>
+ <span class="k">border</span><span class="o">:</span> <span class="m">3px</span> <span class="nb">green</span> <span class="k">dotted</span><span class="p">;</span>
+ <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>3px red dotted; height: 150px; box-sizing:border-box;
--webkit-box-sizing:border-box; -moz-box-sizing:box-border; } .kutuSag{
-float: left; background-color: lightgreen; width: 70%; border: 3px green
-dotted; height: 150px; box-sizing:border-box;
--webkit-box-sizing:border-box; -moz-box-sizing:box-border } 
-<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/z2bQA/1/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/z2bQA/1/embedded/result,css,html"></iframe>
+
 <p>Farklı araçlar ile web sayfaları gezilmeye başlayalı beri esnek yapılı
 sayfalar revaçtadır. Websitelerimizi artık daha esnek planlamak zorunda
 kalacağız. Bu durumda bu özellik bize çok büyük yararlar sağlayacaktır.</p>
-<div class="tarayiciuyum">
-**Tarayıcı Destekleme Listesi**  
-Firefox 1+ (-moz- ön eki ile)  
-Chrome 1+ (-webkit- ön eki ile)  
-Safari 3+ (-webkit- ön eki ile)  
-Opera 7+  
-İnternet Explorer 8+  
-**Mobil Tarayıcılar**  
-iOS Safari 3.2+ (-webkit- ön eki ile)  
-Opera Mini 5+  
-Opera Mobile10+  
-Android Browser 2.1+ (-webkit- ön eki ile)
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Destekleme Listesi</strong><br />
+Firefox 1+ (-moz- ön eki ile)<br />
+Chrome 1+ (-webkit- ön eki ile)<br />
+Safari 3+ (-webkit- ön eki ile)<br />
+Opera 7+<br />
+İnternet Explorer 8+<br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari 3.2+ (-webkit- ön eki ile)<br />
+Opera Mini 5+<br />
+Opera Mobile10+<br />
+Android Browser 2.1+ (-webkit- ön eki ile)</p>
 <p>Trayaıcı destek listesinde görüldüğü gibi sorun sadece ie7 sürümü ve
 aşağısında yaşanmaktadır.</p>
 <p>ie7 için <a href="http://webfx.eae.net/dhtml/boxsizing/implementation.html">http://webfx.eae.net/dhtml/boxsizing/implementation.html</a>
@@ -192,24 +209,20 @@ sitesindeki script ile çözüm üretilebilir.</p>
 verilebilir. Ayrıca html doküman garip modda kullanılır. Graip mod
 çözümü pek mantıklı değilsede bazı durumlarda başvurulabilir.</p>
 <p>Kalın sağlıcakla</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
-<li><a href="http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/">http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/</a>
-    (güzel)</li>
+<li><a href="http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/">http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/</a> (güzel)</li>
 <li><a href="http://caniuse.com/css3-boxsizing">http://caniuse.com/css3-boxsizing</a> (tarayıcı destek listesi)</li>
-<li><a href="http://helephant.com/2008/10/20/css3-box-sizing-attribute/">http://helephant.com/2008/10/20/css3-box-sizing-attribute/</a>
-    (güzel)</li>
+<li><a href="http://helephant.com/2008/10/20/css3-box-sizing-attribute/">http://helephant.com/2008/10/20/css3-box-sizing-attribute/</a></li>
 <li><a href="http://aninnovativeweb.tumblr.com/post/770432002/understanding-css3-box-sizing">http://aninnovativeweb.tumblr.com/post/770432002/understanding-css3-box-sizing</a></li>
 <li><a href="http://www.w3.org/TR/css3-ui/#box-sizing">http://www.w3.org/TR/css3-ui/#box-sizing</a></li>
 <li><a href="http://www.goldentwine.com/blog/css3-user-interface-box-sizing">http://www.goldentwine.com/blog/css3-user-interface-box-sizing</a></li>
 <li><a href="http://csshead.com/controlling-width-with-css3-box-sizing/">http://csshead.com/controlling-width-with-css3-box-sizing/</a></li>
 <li><a href="http://css-tricks.com/7323-box-sizing/">http://css-tricks.com/7323-box-sizing/</a></li>
-<li><a href="https://www.youtube.com/watch?v=rNqqfMJnpKY&amp;feature=related">https://www.youtube.com/watch?v=rNqqfMJnpKY&amp;feature=related</a>
-    (video)</li>
+<li><a href="https://www.youtube.com/watch?v=rNqqfMJnpKY&amp;feature=related">https://www.youtube.com/watch?v=rNqqfMJnpKY&amp;feature=related</a> (video)</li>
 <li><a href="http://maymay.net/blog/2004/10/28/observations-on-the-css3-box-sizing-property-and-how-designers-use-style-sheets/">http://maymay.net/blog/2004/10/28/observations-on-the-css3-box-sizing-property-and-how-designers-use-style-sheets/</a></li>
 <li><a href="http://www.w3cplus.com/content/css3-box-sizing">http://www.w3cplus.com/content/css3-box-sizing</a> (çince)</li>
-</ul>
-</p><p><a href=".././css3-box-sizing-ozelligi/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././css3-box-sizing-ozelligi/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     
