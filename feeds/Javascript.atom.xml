@@ -3,17 +3,23 @@
 iki ayrı durum olarak kabul eder.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;null;&lt;/strong&gt; boş değer anlamına gelen özel bir değerdir. &lt;strong&gt;typeof null&lt;/strong&gt;
 bize nesne döndürür.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;testDegiskeni&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;testDegiskeni&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;testDegiskeni&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;testDegiskeni&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//null &lt;/span&gt;
+    &lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;typeof&lt;/span&gt; &lt;span class="nx"&gt;testDegiskeni&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//object&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;/script&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;//null alert(typeof testDegiskeni); //object &lt;/script&gt; &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;undefined&lt;/strong&gt; değişken bildirilmiş ama henüz değeri atanmamış demektir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;testDegiskeni&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;testDegiskeni&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;testDegiskeni&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;testDegiskeni&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// undefined &lt;/span&gt;
+    &lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;typeof&lt;/span&gt; &lt;span class="nx"&gt;testDegiskeni&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//undefined&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;/script&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;undefined alert(typeof testDegiskeni); //undefined &lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;Yukarıdaki örneklerde gördüğümüz gibi &lt;strong&gt;null&lt;/strong&gt; özel bir nesne iken
 &lt;strong&gt;undefined&lt;/strong&gt; tip olarak &lt;strong&gt;undefiend&lt;/strong&gt; döndürür.&lt;/p&gt;
 &lt;p&gt;Atanmamış değişkenlerin değeri javascript tarafında otomatik olarak
@@ -21,21 +27,21 @@ bize nesne döndürür.&lt;/p&gt;
 &lt;p&gt;Javascript asla &lt;strong&gt;null&lt;/strong&gt; değeri atamaz. Eğer bir elemanın değeri
 &lt;strong&gt;null&lt;/strong&gt; ise bu javascript tarafından değil, program tarafından atanmış
 demektir.&lt;/p&gt;
-&lt;h3&gt;undefined ve null kontrolü&lt;/h3&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;typeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;test&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;!==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;undefined&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;test&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;//test&lt;/span&gt;
+&lt;h2&gt;undefined ve null kontrolü&lt;/h2&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;typeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;test&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;!==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;undefined&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;test&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="c1"&gt;//test değişkenin kullanabiliriz&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;değişkenin kullanabiliriz } &lt;/p&gt;
-&lt;h3&gt;Kaynak&lt;/h3&gt;
+&lt;h2&gt;Kaynak&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://stackoverflow.com/questions/27509/detecting-an-undefined-object-property-in-javascript"&gt;http://stackoverflow.com/questions/27509/detecting-an-undefined-object-property-in-javascript&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://snipplr.com/view.php?codeview&amp;amp;id=14618"&gt;http://snipplr.com/view.php?codeview&amp;amp;id=14618&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.bloggingdeveloper.com/post/JavaScript-null-vs-undefined-The-Difference-between-null-and-undefined.aspx"&gt;http://www.bloggingdeveloper.com/post/JavaScript-null-vs-undefined-The-Difference-between-null-and-undefined.aspx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.joeyjavas.com/2007/04/25/javascript-difference-between-null-and-undefined/"&gt;http://www.joeyjavas.com/2007/04/25/javascript-difference-between-null-and-undefined/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://bonsaiden.github.com/JavaScript-Garden/#core.undefined"&gt;http://bonsaiden.github.com/JavaScript-Garden/#core.undefined&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="boş"></category><category term="null"></category><category term="tanımsız"></category><category term="typeof"></category><category term="undefined"></category></entry><entry><title>Jquery ipuçları</title><link href="http://www.fatihhayrioglu.com/jquery-ipuclari/" rel="alternate"></link><updated>2009-10-22T23:33:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-10-22:jquery-ipuclari/</id><summary type="html">&lt;p&gt;jQuery'i artık neredeyse her projemde kullanıyorum. Aklıma gelen ve not
+&lt;/ul&gt;</summary><category term="boş"></category><category term="null"></category><category term="tanımsız"></category><category term="typeof"></category><category term="undefined"></category></entry><entry><title>Jquery ipuçları</title><link href="http://www.fatihhayrioglu.com/jquery-ipuclari/" rel="alternate"></link><updated>2009-10-22T23:33:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-10-22:jquery-ipuclari/</id><summary type="html">&lt;p&gt;jQuery'i artık neredeyse her projemde kullanıyorum. Aklıma gelen ve not
 aldığım ipuçlarını burada yazdım. Sizinde aklınıza gelen olursa yorum
 kısmında katkıda bulunabilirsiniz. Ayrıca kaynaklar kısmındaki linklerde
 de daha fazlası var&lt;/p&gt;

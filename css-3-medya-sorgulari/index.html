@@ -103,12 +103,12 @@ Explorer9’dan itibaren desteklemektedir. İnternet Explorer’un eski
 sürümler için javascript ile çözüm üretilir.</p>
 <p><a href="http://www.fatihhayrioglu.com/cssi-web-sayfalarina-eklemek/">Daha önceki makalemde</a> bahsettiğim gibi medya sorgularının en basit
 hali</p>
-<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="nt">media</span><span class="o">=</span><span class="s2">&quot;screen&quot;</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;ornek.css&quot;</span><span class="o">&gt;</span>
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="nt">media</span><span class="o">=</span><span class="s2">&quot;screen&quot;</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;ornek.css&quot;</span><span class="o">&gt;</span>
 </pre></div>
 
 
 <p>veya</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">ornek</span><span class="nc">.css</span> <span class="nt">screen</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">ornek</span><span class="nc">.css</span> <span class="nt">screen</span><span class="p">;</span>
 </pre></div>
 
 
@@ -116,115 +116,54 @@ hali</p>
 <p>Medya sorguları bir veya daha fazla tipe göre sorgulama yapar ve
 sorgunun doğruluğuna göre o css dosyasını uygular.</p>
 <p><img alt="" src="https://lh5.googleusercontent.com/9yAALxAE9OnXDazyBZKrx8y8o4r5okr3Qw8TJ6av63m5eB_I6Ap-nCYuglYAcrwBuqpgrCx5vaBTcMLjBiPZM-KdAohf98yMjgErENZ_3A75y8x8" /></p>
-<h3>Medya Tipleri</h3>
+<h2>Medya Tipleri</h2>
 <table>
 <colgroup> <col width="132"> <col width="492"> </colgroup>
-
 <tbody>
 <tr>
-<td>
-screen
-
-</td>
-<td>
-Bilgisayarda görüntüleme
-
-</td>
+<td>screen </td>
+<td>Bilgisayarda görüntüleme </td>
 </tr>
 <tr>
-<td>
-tty
-
-</td>
-<td>
-Bilgisayar terminalleri ve eski taşınabilir araçlar ile görüntüleme
-
-</td>
+<td>tty </td>
+<td>Bilgisayar terminalleri ve eski taşınabilir araçlar ile görüntüleme </td>
 </tr>
 <tr>
-<td>
-tv
-
-</td>
-<td>
-Televizyonda görüntüleme
-
-</td>
+<td>tv </td>
+<td>Televizyonda görüntüleme</td>
 </tr>
 <tr>
-<td>
-projection
-
-</td>
-<td>
-Projeksiyonda görüntüleme
-
-</td>
+<td>projection </td>
+<td>Projeksiyonda görüntüleme </td>
 </tr>
 <tr>
-<td>
-handheld
-
-</td>
-<td>
-Taşınabilir telefonlar ve PDA’ler
-
-</td>
+<td>handheld </td>
+<td>Taşınabilir telefonlar ve PDA’ler </td>
 </tr>
 <tr>
-<td>
-print
-
-</td>
-<td>
-Yazıcı çıktılarında görüntüleme
-
-</td>
+<td>print </td>
+<td>Yazıcı çıktılarında görüntüleme </td>
 </tr>
 <tr>
-<td>
-braille
-
-</td>
-<td>
-Braille dokunsal okuyucularda
-
-</td>
+<td>braille</td>
+<td>Braille dokunsal okuyucularda</td>
 </tr>
 <tr>
-<td>
-all
-
-</td>
-<td>
-Tüm araçlarda görüntüleme
-
-</td>
+<td>all</td>
+<td>Tüm araçlarda görüntüleme</td>
 </tr>
 <tr>
-<td>
-embossed
-
-</td>
-<td>
-Braille yazıcı çıktıları için
-
-</td>
+<td>embossed</td>
+<td>Braille yazıcı çıktıları için</td>
 </tr>
 <tr>
-<td>
-aural
-
-</td>
-<td>
-Ses sentez birimlerinde kullanılır
-
-</td>
+    <td>aural</td>
+    <td>Ses sentez birimlerinde kullanılır</td>
 </tr>
 </tbody>
 </table>
 
-<h3>Mantıksal Operatörler</h3>
+<h2>Mantıksal Operatörler</h2>
 <p>Medya sorgularımızda not, and ve only mantıksal operatörlerini
 kullanabiliriz.</p>
 <p><strong>and</strong><br />
@@ -233,7 +172,7 @@ medya özelliklerinin doğru olması durumunda css dokümanın uygulanmasını
 sağlar. Örneğin (color) and (orientation: landscape) and
 (min-device-width: 800px) tanımı; Görüntüleyen aracın renkli, yatayda ve
 en az 800px genişliğinde ise css dokümanı uygulanır.</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:450px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:950px</span><span class="o">)</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:450px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:950px</span><span class="o">)</span>
 </pre></div>
 
 
@@ -242,14 +181,18 @@ uygulanır.</p>
 <p><strong>not</strong><br />
 Sorguya negatif ifade katar. Sonuç eğer doğru ise css dosyası
 uygulanmaz.</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">not</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">color</span><span class="o">)</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">not</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">color</span><span class="o">)</span>
 </pre></div>
 
 
 <p>Bilgisayar ve renkli ekran olmayan durumlarda uygulanır.</p>
 <p><strong>only</strong><br />
 Sadece bu şartlar geçerli olduğunda uygula anlamınadır.</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="err"> </span><span class="o">(</span><span class="nt">color</span><span class="o">)</span> <span class="p">{</span> <span class="err">   </span><span class="nt">body</span> <span class="p">{</span><span class="k">background</span><span class="o">:</span><span class="nb">blue</span><span class="p">}</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="err"> </span><span class="o">(</span><span class="nt">color</span><span class="o">)</span> <span class="p">{</span>
+    <span class="nt">body</span> <span class="p">{</span>
+        <span class="k">background</span><span class="o">:</span><span class="nb">blue</span>
+        <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -258,22 +201,24 @@ Sadece bu şartlar geçerli olduğunda uygula anlamınadır.</p>
 parametre medya tipini gösteriyor sonra operatör ve ikinci parametre
 medya özelliği tanımlanıyor. Medya özellikleri parantez içinde
 tanımlanıyor.</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">ozellik</span><span class="nd">:deger</span><span class="o">)</span> <span class="p">{</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">ozellik</span><span class="nd">:deger</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
 </pre></div>
 
 
 <p><strong>Birden fazla sorgu</strong></p>
 <p>Birden fazla medya tipi için virgül ile birden fazla sorgu
 yapabiliyoruz.</p>
-<div class="codehilite"><pre> <span class="k">@import</span> <span class="nt">url</span><span class="o">(</span><span class="nt">print-color</span><span class="nc">.css</span><span class="o">)</span> <span class="nt">print</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">color</span><span class="o">),</span> <span class="nt">projection</span> <span class="nt">and</span>
+<div class="codehilite"><pre><span class="k">@import</span> <span class="nt">url</span><span class="o">(</span><span class="nt">print-color</span><span class="nc">.css</span><span class="o">)</span> <span class="nt">print</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">color</span><span class="o">),</span> 
+<span class="nt">projection</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">color</span><span class="o">)</span><span class="p">;</span>
 </pre></div>
 
 
-<p>(color); </p>
 <p>Sorgulardan biri geçerli ise print-color.css dokümanı uygulanır. Renkli
 yazıcı veya renkli projektörden birisi ile açılırsa print-color.css
 uygulanır.</p>
-<h3>Medya Özellikleri</h3>
+<h2>Medya Özellikleri</h2>
 <p>Medya özellikleri web sitesini gösteren aracın bilgileri ile sorgu
 yapmamızı sağlayan özelliklerdir; boyutları, araç boyutları, çözünürlüğü
 ve daha fazlası. Bu özellikler sorgu ifadesi olarak kullanılır, eğer bu
@@ -283,7 +228,9 @@ yapmış olalım, sonuçta 480px genişliğe sahip araçlarda
 görüntülenecektir.</p>
 <p>Yukarıdaki örneklerde görüldüğü gibi medya sorgularında medya
 özellikleri parantez için tanımlanmaktadır. Genel kullanım;</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">media</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">ozellik</span><span class="nd">:deger</span><span class="o">)</span> <span class="p">{</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">media</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">ozellik</span><span class="nd">:deger</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
 </pre></div>
 
 
@@ -292,7 +239,9 @@ görüntülenecektir.</p>
 <p>Genişlik(width) değeri web sitesinin görüntüleyen aracın genişliğine
 göre tanım yapmamızı sağlar. Buradaki genişlik tarayıcının(kaydırma
 çubukları dahil) genişliğine eşittir.</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">width</span><span class="nd">:480px</span><span class="o">)</span> <span class="p">{</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">width</span><span class="nd">:480px</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
 </pre></div>
 
 
@@ -300,18 +249,23 @@ göre tanım yapmamızı sağlar. Buradaki genişlik tarayıcının(kaydırma
 <p>Genişlik tanımının ayrıca iki adet önekli kullanımlarıda mevcuttur. max-
 ve min- ön ekleri ile sabit bir değeri değilde belli bir değer aralığını
 kontrol edebilme imkanına sahibiz.</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:480px</span><span class="o">)</span> <span class="p">{</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:480px</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
 </pre></div>
 
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/77SMV/embedded/css,result"></iframe>
 
 <p>ve</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:680px</span><span class="o">)</span> <span class="p">{</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:680px</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
 </pre></div>
 
 
-<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/bhLFF/embedded/css,result"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/bhLFF/embedded/css,result"></iframe>
+
 <p>İlk örnekte genişliği en fazla 480px olana kadar uygulanır, ikinci
 örnekte ise genişliği en az 680px olan tarayıcı genişliklerinde
 uygulanır. Bilgisayarımızda tarayıcı genişliği ile oynayarak bu
@@ -323,21 +277,34 @@ max-device-height ve min-device-height</strong></p>
 genişlik aygıtın genişliğini tanımlar. Genişlik değerinde olduğu gibi
 aygıt genişliği tanımlarındada max- ve min- ön ekleri vardır. Kullanımı
 benzerdir</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">media</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">device-width</span><span class="nd">:1024px</span><span class="o">)</span> <span class="p">{</span> <span class="p">}</span> <span class="k">@media</span> <span class="nt">media</span> <span class="nt">and</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">media</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">device-width</span><span class="nd">:1024px</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="nt">media</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-device-width</span><span class="nd">:320px</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="nt">media</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-device-width</span><span class="nd">:800px</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
 </pre></div>
 
 
-<p>(max-device-width:320px) { } @media media and (min-device-width:800px) {
-} </p>
 <p>Mobil araçlar için web sitesi geliştirirken bize çok yardımı dokunur bu
 özelliğin mesela iPhone için web sitemizi uyarlamak istediğimizde
 işimize yarar.</p>
-<div class="codehilite"><pre> <span class="c">/* iphone */</span> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span> <span class="nt">body</span>
+<div class="codehilite"><pre><span class="c">/* iphone */</span>
+<span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
+    <span class="nt">body</span><span class="p">{</span>
+        <span class="k">background</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>{ background: #f00; } } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Z8BnJ/embedded/css,result"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Z8BnJ/embedded/css,result"></iframe>
+
 <p>şeklinde iphone kullanıcılarını yakalayabiliriz. Bilgisayarımızda
 tarayıcı genişliği ile bu sonuca erişemeyiz. Örneği görmek için iphone
 simülatör veya gerçek iphone’da bu örneği test etmelisiniz.</p>
@@ -348,7 +315,9 @@ simülatör veya gerçek iphone’da bu örneği test etmelisiniz.</p>
 sergileme imkanı veren medya özelliğidir.</p>
 <p>Tablet bilgisayarlar için genelde tercih edilir. iPad için site
 geliştirirken dikkate almalıyız.</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">orientation</span><span class="o">:</span> <span class="nt">portrait</span><span class="o">)</span> <span class="p">{</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">orientation</span><span class="o">:</span> <span class="nt">portrait</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
 </pre></div>
 
 
@@ -370,11 +339,16 @@ kullanımıda mevcuttur.</p>
 <p>16:9 sinematik ekran oranı için bir sorgu oluşturulabilir. Üreticileri
 ürettiği farklı oranlar(16:10, 15:10 vb.) için sorgular oluşturulup bu
 araçlar için web sitesi yapmak daha kolay hale getirilebilir.</p>
-<div class="codehilite"><pre> <span class="k">@media</span> <span class="nt">tv</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">aspect-ratio</span><span class="nd">:16</span><span class="o">/</span><span class="nt">9</span><span class="o">)</span> <span class="p">{</span> <span class="p">}</span> <span class="k">@media</span> <span class="nt">tv</span> <span class="nt">and</span>
+<div class="codehilite"><pre><span class="k">@media</span> <span class="nt">tv</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">aspect-ratio</span><span class="nd">:16</span><span class="o">/</span><span class="nt">9</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="nt">tv</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">device-aspect-ratio</span><span class="nd">:16</span><span class="o">/</span><span class="nt">9</span><span class="o">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
 </pre></div>
 
 
-<p>(device-aspect-ratio:16/9) { } </p>
 <p><strong>pixel-ratio</strong></p>
 <p>Piksel oranı üzerinden sorgular üretmemizi sağlayan medya özelliğidir.
 Masaüstü tarayıcılarda pek kullanılmasa da mobil araçlarda sıkça
@@ -386,20 +360,26 @@ daha büyüğünü göstererek resmin bozulma sorununu ortadan kaldırabiliriz.<
 -webkit-device-pixel, max-webkit-device-pixel, min-webkit-device-pixel</p>
 <p>Firefox için -moz-device-pixel-ratio, min--moz-device-pixel-ratio,
 max--moz-device-pixel-ratio şeklinde uygulanır.</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="p">{</span> <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(&#39;image-dusuk.png&#39;)</span><span class="p">;</span> <span class="p">}</span> <span class="k">@media</span> <span class="nt">screen</span>
+<div class="codehilite"><pre><span class="nt">div</span> <span class="p">{</span>
+    <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(&#39;image-dusuk.png&#39;)</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="o">:</span> <span class="nt">2</span><span class="o">)</span> <span class="p">{</span>
+    <span class="nt">background-image</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;image-yuksek.png&#39;</span><span class="o">);</span>
+    <span class="nt">background-size</span><span class="o">:</span> <span class="nt">100</span><span class="o">%</span> <span class="nt">100</span><span class="o">%;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>and (-webkit-min-device-pixel-ratio: 2) { background-image:
-url('image-yuksek.png'); background-size: 100% 100%; } </p>
 <p>Şeklinde uygulanır. iPhone4 ile ön plana çıkan bu özellik yardımı ile
 iPhone4 ayrımıda yapılabilir.</p>
-<div class="codehilite"><pre> <span class="c">/* iphone 4 */</span><span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span> <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span>
+<div class="codehilite"><pre><span class="c">/* iphone 4 */</span>
+<span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">-webkit-min-device-pixel-ratio</span><span class="o">:</span> <span class="nt">2</span><span class="o">)</span> <span class="p">{</span>
+    <span class="nt">background-image</span><span class="nd">:url</span><span class="o">(</span><span class="nt">yuksek_cozunurluklu_resim</span><span class="nc">.png</span><span class="o">);</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>(-webkit-min-device-pixel-ratio: 2) {
-background-image:url(yuksek_cozunurluklu_resim.png); } </p>
 <p>Bu medya özelliklerinin dışında color, min-color, max-color,
 color-index, min-color-index, max-color-index, monochrome,
 min-monochrome, max-monochrome, resolution, min-resolution,
@@ -408,50 +388,40 @@ mobile için tanımladığı kendine ait medya özellikleride bulunmaktadır.
 Bu medya özellikleri hakkındaki detaylı bilgiye
 <a href="https://developer.mozilla.org/en/CSS/media_queries">https://developer.mozilla.org/en/CSS/media_queries</a> sitesinden
 erişebilirsiniz.</p>
-<div class="tarayiciuyum">
-**Tarayıcı Desteği**  
-Google Chrome 5+  
-Safari 3.2(kısmen) 4(tam)+  
-Firefox3.6+  
-Opera 10.6+  
-İnternet Explorer 9+  
-**Mobil Tarayıcılar**  
-Android 2.1+  
-Firefox mobile +  
-Opera Mini 5+  
-iOS 3.2+
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Desteği</strong><br />
+Google Chrome 5+<br />
+Safari 3.2(kısmen) 4(tam)+<br />
+Firefox3.6+<br />
+Opera 10.6+<br />
+İnternet Explorer 9+<br />
+<strong>Mobil Tarayıcılar</strong><br />
+Android 2.1+<br />
+Firefox mobile +<br />
+Opera Mini 5+<br />
+iOS 3.2+</p>
 <p>Bu tabloya bakarak ie’nin önceki sürümleri için çözüm üretmeliyiz.
 Javascript yardımı ile yapılmış çeşitli yöntemler mevcut, ben jquery ile
 yapılan yöntemi çalıştırabildim açıkçası.</p>
 <p><a href="http://protofunc.com/scripts/jquery/mediaqueries/">http://protofunc.com/scripts/jquery/mediaqueries/</a></p>
 <p>Bu sitedeki scripti sitenize eklediğinizde ie’nin eski sürümleri ile
 olan sorununuz çözlüyor.</p>
-<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text/css&quot;</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;ana.css&quot;</span> <span class="nt">media</span><span class="o">=</span><span class="err">&quot;</span><span class="nt">only</span>
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text/css&quot;</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;ana.css&quot;</span> <span class="nt">media</span><span class="o">=</span><span class="s2">&quot;only screen and (max-width: 480px)&quot;</span> <span class="o">/&gt;</span>
+<span class="o">&lt;!</span><span class="nt">--</span><span class="o">[</span><span class="nt">if</span> <span class="nt">lt</span> <span class="nt">IE</span> <span class="nt">9</span><span class="o">]&gt;</span> <span class="o">&lt;</span><span class="nt">script</span> <span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nt">src</span><span class="o">=</span><span class="s2">&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js&quot;</span><span class="o">&gt;&lt;/</span><span class="nt">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">script</span> <span class="nt">src</span><span class="o">=</span><span class="s2">&quot;jquery.mediaqueries.js&quot;</span> <span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;&lt;/</span><span class="nt">script</span><span class="o">&gt;</span> <span class="o">&lt;![</span><span class="nt">endif</span><span class="o">]</span><span class="nt">--</span><span class="o">&gt;</span>
 </pre></div>
 
 
-<p>screen and (max-width: 480px)" /&gt; <!--[if lt IE 9]> <script
-type="text/javascript"
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script src="../static/jquery.mediaqueries.js"
-type="text/javascript"></script> <![endif]--> </p>
 <p>IE9 öncesi tarayıcılar için böyle bir ekleme yaparak sorunu çözebiliriz.</p>
 <p>Ayrıca sadece javascript ile ie’nin eski sürümleri için üretilen
 Javascript çözümlerini uyguladığımda çalışmadı bilemiyorum sorun bende
 mi ama olmadı.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.w3.org/TR/css3-mediaqueries/">http://www.w3.org/TR/css3-mediaqueries/</a></li>
 <li><a href="http://www.css3.info/modules/compatibility-table-media-queries/">http://www.css3.info/modules/compatibility-table-media-queries/</a></li>
-<li><a href="http://webdesignerwall.com/general/the-wall-is-redesigned">http://webdesignerwall.com/general/the-wall-is-redesigned</a> (örnek
-    uygulama)</li>
-<li><a href="http://blog.bloop.co/the-practicalities-of-css-media-queries-lesso">http://blog.bloop.co/the-practicalities-of-css-media-queries-lesso</a>
-    (avantaj ve dezavantajları)</li>
-<li><a href="http://www.broken-links.com/2011/02/21/using-media-queries-in-the-real-world/">http://www.broken-links.com/2011/02/21/using-media-queries-in-the-real-world/</a>
-    (ie için çözüm önerili)</li>
+<li><a href="http://webdesignerwall.com/general/the-wall-is-redesigned">http://webdesignerwall.com/general/the-wall-is-redesigned</a> (örnek uygulama)</li>
+<li><a href="http://blog.bloop.co/the-practicalities-of-css-media-queries-lesso">http://blog.bloop.co/the-practicalities-of-css-media-queries-lesso</a> (avantaj ve dezavantajları)</li>
+<li><a href="http://www.broken-links.com/2011/02/21/using-media-queries-in-the-real-world/">http://www.broken-links.com/2011/02/21/using-media-queries-in-the-real-world/</a> (ie için çözüm önerili)</li>
 <li><a href="http://mediaqueri.es/">http://mediaqueri.es/</a> (örnekler içeriyor)</li>
 <li><a href="http://www.catswhocode.com/blog/create-an-adaptable-website-layout-with-css3-media-queries">http://www.catswhocode.com/blog/create-an-adaptable-website-layout-with-css3-media-queries</a></li>
 <li><a href="http://webdesignerwall.com/tutorials/adaptive-mobile-design-with-css3-media-queries">http://webdesignerwall.com/tutorials/adaptive-mobile-design-with-css3-media-queries</a></li>
@@ -464,19 +434,15 @@ mi ama olmadı.</p>
 <li><a href="http://www.alistapart.com/articles/responsive-web-design/">http://www.alistapart.com/articles/responsive-web-design/</a></li>
 <li><a href="http://reference.sitepoint.com/css/mediaqueries">http://reference.sitepoint.com/css/mediaqueries</a></li>
 <li><a href="http://www.webdesignlondon-tristar.co.uk/website-design-london/css3-media-queries-responsive-web-design">http://www.webdesignlondon-tristar.co.uk/website-design-london/css3-media-queries-responsive-web-design</a></li>
-<li><a href="http://www.maxdesign.com.au/articles/css3-media-queries/">http://www.maxdesign.com.au/articles/css3-media-queries/</a> (slayt
-    gösterisi)</li>
+<li><a href="http://www.maxdesign.com.au/articles/css3-media-queries/">http://www.maxdesign.com.au/articles/css3-media-queries/</a> (slayt gösterisi)</li>
 <li><a href="http://msdn.microsoft.com/en-us/scriptjunkie/gg619395.aspx">http://msdn.microsoft.com/en-us/scriptjunkie/gg619395.aspx</a></li>
 <li><a href="http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/">http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/</a></li>
-<li><a href="http://code.google.com/p/css3-mediaqueries-js/">http://code.google.com/p/css3-mediaqueries-js/</a> (ie eski
-    sürümleri için js kodu)</li>
-<li><a href="http://blog.iwalt.com/2010/06/targeting-the-iphone-4-retina-display-with-css3-media-queries.html">http://blog.iwalt.com/2010/06/targeting-the-iphone-4-retina-display-with-css3-media-queries.html</a>
-    (iphone 4 için )</li>
+<li><a href="http://code.google.com/p/css3-mediaqueries-js/">http://code.google.com/p/css3-mediaqueries-js/</a> (ie eski sürümleri için js kodu)</li>
+<li><a href="http://blog.iwalt.com/2010/06/targeting-the-iphone-4-retina-display-with-css3-media-queries.html">http://blog.iwalt.com/2010/06/targeting-the-iphone-4-retina-display-with-css3-media-queries.html</a> (iphone 4 için )</li>
 <li><a href="http://aralbalkan.com/3331">http://aralbalkan.com/3331</a> (iphone 4 için)</li>
 <li><a href="http://css-tricks.com/6731-css-media-queries/">http://css-tricks.com/6731-css-media-queries/</a></li>
 <li><a href="http://colly.com/">http://colly.com/</a> (örnek site)</li>
-<li><a href="http://www.opera.com/docs/specs/presto27/css/mediaqueries/">http://www.opera.com/docs/specs/presto27/css/mediaqueries/</a>
-    (Opera desteği)</li>
+<li><a href="http://www.opera.com/docs/specs/presto27/css/mediaqueries/">http://www.opera.com/docs/specs/presto27/css/mediaqueries/</a> (Opera desteği)</li>
 <li><a href="http://www.cloudfour.com/ipad-css/">http://www.cloudfour.com/ipad-css/</a></li>
 <li><a href="http://www.webkit.org/blog/55/high-dpi-web-sites/">http://www.webkit.org/blog/55/high-dpi-web-sites/</a></li>
 <li><a href="http://nostarch.com/css3.htm">No Starch The Book of CSS3</a></li>
@@ -488,7 +454,6 @@ mi ama olmadı.</p>
 <li><a href="http://www.quirksmode.org/blog/archives/2010/08/combining_media.html">http://www.quirksmode.org/blog/archives/2010/08/combining_media.html</a></li>
 <li><a href="http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx">http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

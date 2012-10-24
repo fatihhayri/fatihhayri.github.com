@@ -84,22 +84,22 @@
 </footer><!-- /.post-info --><p>resize özelliği kullanıcıya elementin boyutlarını ayarlama imkanı
 vermemizi sağlar. Kullanıcı bu elemanın boyutunu istediği gibi
 değiştirme imkanına kavuşur</p>
-<div class="cssozelliktanimi">
-**Yapısı:** resize: <deger>  
-**Aldığı Değerler:** both | horizontal | vertical | none | inherit  
-**Başlangıç Değeri:** none  
-**Uygulanabilen Elementler:** block-level ve replaced elementler, tablo
-hücreleri ve inline block elementler  
-**Kalıtsallık:** yok
-
-</div>
-
+<p><strong>Yapısı:</strong> resize: <deger><br />
+<strong>Aldığı Değerler:</strong> both | horizontal | vertical | none | inherit<br />
+<strong>Başlangıç Değeri:</strong> none<br />
+<strong>Uygulanabilen Elementler:</strong> block-level ve replaced elementler, tablo
+hücreleri ve inline block elementler<br />
+<strong>Kalıtsallık:</strong> yok <br class="cssozelliktanimi" />
+</p>
 <p><strong>both:</strong> Her iki yöne boyutlandırmaya izin verir.<br />
 <strong>horizontal:</strong> yatayda boyutlandırmaya izin verir.<br />
 <strong>vertical:</strong> dikeyde boyutlandırmaya izin verir.<br />
 <strong>none:</strong> boyutlandırma seçeneğini kaldırır<br />
 <strong>inherit:</strong> kalıtsal olarak bu değeri üst elementten alır.</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="p">{</span> <span class="n">overfloaw</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span> <span class="c">/* bu tanim gerekli */</span> <span class="n">resize</span><span class="o">:</span><span class="k">both</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="p">{</span>
+    <span class="n">overfloaw</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span> <span class="c">/* bu tanim gerekli */</span>
+    <span class="n">resize</span><span class="o">:</span><span class="k">both</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -110,45 +110,81 @@ gelmektedir. Tarayıcı bu eleman için bu değeri otomatik uygulamaktadır.
 Daha önce ipucu olarak <a href="http://www.fatihhayrioglu.com/css-ipucu-27-chrome-ve-safaride-textarea-genisletme-islevini-kaldirma/">yazdığım gibi</a> bu otomatik tanımı css ile
 kaldırabiliyoruz.</p>
 <p>Bir örnek yapalım</p>
-<div class="codehilite"><pre> <span class="nc">.icerik</span><span class="p">{</span> <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">rgb</span><span class="p">(</span><span class="m">136</span><span class="o">,</span> <span class="m">136</span><span class="o">,</span> <span class="m">136</span><span class="p">)</span> <span class="m">5px</span> <span class="m">5px</span> <span class="m">5px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nc">.icerik</span><span class="p">{</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">rgb</span><span class="p">(</span><span class="m">136</span><span class="o">,</span> <span class="m">136</span><span class="o">,</span> <span class="m">136</span><span class="p">)</span> <span class="m">5px</span> <span class="m">5px</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="n">resize</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#dedede</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>border-radius: 5px; resize: both; overflow: auto; border: 1px solid</p>
-<h1>dedede; padding:10px; width: 300px; height: 200px; }</h1>
-<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aDnP6/3/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aDnP6/3/embedded/result,css,html"></iframe>
+
 <p>Sadece bir yöne boyutlandırabiliyoruz</p>
-<div class="codehilite"><pre> <span class="nc">.siir</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">170px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> <span class="n">resize</span><span class="o">:</span> <span class="n">vertical</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.siir</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">170px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="n">resize</span><span class="o">:</span> <span class="n">vertical</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">25px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#DDD</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="n">georgia</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>hidden; position: relative; padding: 0 25px; border: 1px solid #DDD;
-font-family: georgia, serif; } 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/k2wHc/2/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/k2wHc/2/embedded/result,css,html"></iframe>
+
 <p>min-height ve min-width değerleri ile boyutlandırmanın minimum
 değerlerini belirleyebiliyoruz. Anı şekilde max-height ve max-width
 değerleri ile de maksimum değerleri belirlenebilir. Bu özelliklerle
 kullanıcının sayfa görünümünü bozmasını engelleyebiliriz.<br />
 </p>
-<div class="codehilite"><pre> <span class="nc">.siir</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">170px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> <span class="n">resize</span><span class="o">:</span> <span class="n">vertical</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.siir</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">170px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="n">resize</span><span class="o">:</span> <span class="n">vertical</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">25px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#DDD</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="n">georgia</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span>
+    <span class="k">max-height</span><span class="o">:</span> <span class="m">650px</span><span class="p">;</span>
+    <span class="k">min-height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>hidden; position: relative; padding: 0 25px; border: 1px solid #DDD;
-font-family: georgia, serif; max-height: 650px; min-height: 200px; }</p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/yLZDQ/embedded/result,css,html"></iframe>
 
 <p>Resimler için güzel bir uygulama olabilir.</p>
-<div class="codehilite"><pre> <span class="nc">.vasak</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span> <span class="n">resize</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nc">.vasak</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+    <span class="n">resize</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#DDD</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.vasak</span> <span class="nt">img</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>overflow: hidden; position: relative; padding: 15px; border: 1px solid</p>
-<h1 height:auto;="height:auto;" width:100%;="width:100%;">DDD; } .vasak img</h1>
-<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Xk3Gr/1/embedded/result,css,html"></iframe></p>
-<p></p>
-<div class="tarayiciuyum">
-<strong>Tarayıcı Desteği</strong><br />
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Xk3Gr/1/embedded/result,css,html"></iframe>
+
+<p class="tarayiciuyum"><strong>Tarayıcı Desteği</strong><br />
 Google Chrome 5+<br />
 Safari 5+<br />
 Firefox4+<br />
@@ -160,12 +196,11 @@ Firefox mobile desteklemiyor<br />
 IE Phone desteklemiyor<br />
 Opera Mobile desteklemiyor<br />
 Safari Mobile desteklemiyor</p>
-<p></div>
-resize özelliği W3C Basic User Interface Module ile önerilen bir
+<p>resize özelliği W3C Basic User Interface Module ile önerilen bir
 özelliğidir. Tarayıcıların destekleme durumuna göre ileride
 standartlaşıp standartlaşmayacağı belirlenecek bir özellik olarak
 görünse de Firefox desteği standartlaşması daha olasıdır.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.css3.info/preview/resize/">http://www.css3.info/preview/resize/</a></li>
 <li><a href="http://www.impressivewebs.com/css3-resize/">http://www.impressivewebs.com/css3-resize/</a> (detaylı ve karşıt)</li>
@@ -175,8 +210,7 @@ görünse de Firefox desteği standartlaşması daha olasıdır.</p>
 <li><a href="https://developer.mozilla.org/en/CSS/resize">https://developer.mozilla.org/en/CSS/resize</a></li>
 <li><a href="http://www.yousaytoo.com/the-css3-resize-property/784883">http://www.yousaytoo.com/the-css3-resize-property/784883</a></li>
 <li><a href="http://robertnyman.com/css3/">http://robertnyman.com/css3/</a></li>
-</ul>
-</p><p><a href=".././css3-resize-ozelligi/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././css3-resize-ozelligi/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

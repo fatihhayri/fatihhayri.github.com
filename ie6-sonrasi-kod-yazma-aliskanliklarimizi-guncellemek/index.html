@@ -115,7 +115,7 @@ gibi, hala ondan sonraki adımı bekletmek gibi.</p>
 temenni bugün gerçeğe dönüştü. Artık tamamen yok sayabiliyoruz ie6’yı.
 Şimdi oradaki ve diğer avantajları görerek kod yazma mantığımızı
 güncellememiz gereken özellikleri sıralayacağım.</p>
-<h3>Saydam PNG</h3>
+<h2>Saydam PNG</h2>
 <p>İnternet Explorer 7. sürümünden itibaren saydam png desteği sunmaya
 başladı. ie6 için ayrıca düzeltme kodu yazmak zorunda kalıyorduk.
 “<a href="http://www.fatihhayrioglu.com/internet-explorer-6-icin-saydam-png-destegi/">Internet Explorer 6 için saydam PNG desteği</a>” makalemde yazdığım
@@ -145,7 +145,7 @@ Artı iş gücü kaybına neden oldu.</p>
 göre kullanalım diyorum, ama artık elimizide korkak alıştırmayalım yani
 kullanmamız gereken yerlerde çekinmeden kullanalım.</p>
 <p>Saydam PNG kullanalım. Saydam PNG’yi daha çok dikkate alalım.</p>
-<h3>Seçici Desteği</h3>
+<h2>Seçici Desteği</h2>
 <p>Benim en çok geride kaldığım konulardan bir tanesi bu kısımdır. Ben hala
 bir çok seçiciyi kullanmıyorum, halbuki ie6’dan kurtulduk bunları
 kullanabiliriz. Sizi bilmiyorum ama bu seçicileri unutmuş olmak beni çok
@@ -158,20 +158,27 @@ rahatlıkla kullanabileceğimiz seçicileri tanıtayım.</p>
 bize daha az kod ile daha fazla erişim sağlamaktadır. <a href="http://www.fatihhayrioglu.com/ozellik-secicileriattribute-selectors/">Bu konuyu</a>
 yazarken bile ie7’nin çıkmasını beklemişim.</p>
 <p>Basit Özellik Seçicisi</p>
-<div class="codehilite"><pre> <span class="nt">a</span> <span class="o">[</span><span class="nt">title</span><span class="o">]</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="m">#f00</span> <span class="p">}</span>
+<div class="codehilite"><pre> <span class="nt">a</span> <span class="o">[</span><span class="nt">title</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#f00</span>
+<span class="p">}</span>
 </pre></div>
 
 
 <p>Sadece title özelliği tanımlanmış bağlantı elementlerini yakalamamıza
 sağlar.</p>
 <p><strong>Özellik Değeri Seçicisi</strong></p>
-<div class="codehilite"><pre> <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="o">]</span> <span class="p">{</span> <span class="err"> </span><span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#177F75</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#177F75</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span><span class="o">]</span><span class="p">{</span>
+    <span class="k">margin-left</span><span class="o">:</span> <span class="m">201px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#00CC00</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>font-family:Verdana, Arial, Helvetica, sans-serif; }
-input[type="submit"]{  margin-left: 201px;  background-color: #00CC00;
-} </p>
 <p>Özellik değeri seçicisi daha fazla esneklik sağlar. Yukarıda örnekte
 görüldüğü gibi Form elemanlarını ayırmak zor oluyordu. Normal bir input
 tanımı yapmak istediğimizde her özelliği için ayrı class yazmak zorunda
@@ -182,14 +189,18 @@ yazısında bu özelliğin bize ne kadar avantaj sağladığını görüyoruz.</
 <p><strong>Kısmi Özellik Değeri Seçicisi</strong></p>
 <p>Bir etiketin özellik değerindeki boşluklarla ayrılmış kısımlarına göre
 tanımlama yapmamızı sağlar.</p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="o">[</span><span class="nt">title</span><span class="o">~=</span><span class="s2">&quot;Google&quot;</span><span class="o">]</span> <span class="p">{</span> <span class="k">text-decoration</span><span class="o">:</span><span class="k">overline</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">title</span><span class="o">~=</span><span class="s2">&quot;Google&quot;</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">overline</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
 <p><strong>Dikkate Değer Özellik Seçicisi</strong></p>
 <p>Bir etiketin özellik değerindeki kesik çizgi(-) ile ayrılmış kısımlarına
 göre tanımlama yapmamızı sağlar.</p>
-<div class="codehilite"><pre> <span class="o">*[</span><span class="nt">lang</span><span class="o">|=</span><span class="s2">&quot;en&quot;</span><span class="o">]</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="o">*[</span><span class="nt">lang</span><span class="o">|=</span><span class="s2">&quot;en&quot;</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -199,31 +210,49 @@ bunları yazmamışım bile ie6 desteklemiyor diye.</p>
 <p><strong>Belirlenen Sözdizimi ile Başlayan Özellik Değer Seçicisi</strong></p>
 <p>Özellik içeriğinin başlangıç değerine göre ayırt etmemizi sağlar.</p>
 <p>Mesela web siteleri ile e-posta ayrımını yapmak için mesela</p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s2">&quot;http:&quot;</span><span class="o">]</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">baglanti</span><span class="o">.</span><span class="n">gif</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="m">0</span> <span class="m">0</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s2">&quot;http:&quot;</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="p">(</span><span class="s2">&quot;baglanti.gif&quot;</span><span class="p">)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s2">&quot;mailto:&quot;</span><span class="o">]</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span><span class="p">(</span><span class="s2">&quot;posta.gif&quot;</span><span class="p">)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>no-repeat; padding-left:15px; } a[href^="mailto:"] {
-background:(&ldquo;posta.gif&rdquo;) 0 0 no-repeat; padding-left:15px; }</p>
 <p><strong>Belirlenen Sözdizimi ile Biten Özellik Değer Seçicisi</strong></p>
 <p>Özellik içeriğinin bitiş değerine göre ayırt etmemizi sağlar.</p>
 <p>Mesela farklı dosya tiplerine verilen bağlantıları ayırt etmek için
 bağlantıların başına ikon koymak istediğimizde</p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">&#39;.pdf&#39;</span><span class="o">]</span> <span class="p">{</span> <span class="err">   </span> <span class="k">display</span><span class="o">:</span><span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">&#39;.pdf&#39;</span><span class="o">]</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span><span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+  <span class="k">padding-left</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="o">:</span><span class="m">18px</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span><span class="k">transparent</span> <span class="sx">url(/Images/PDFIcon.gif)</span> <span class="k">center</span> <span class="k">left</span> <span class="k">no-repeat</span><span class="p">;</span>
 </pre></div>
 
 
-<p>padding-left:20px;     line-height:18px;     background:transparent
-url(/Images/PDFIcon.gif) center left no-repeat; } a[href$='.doc'] {    
-display:inline-block;     padding-left:20px;     line-height:18px;    
-background:transparent url(/Images/WordDocIcon.gif) center left
-no-repeat; } a[href$='.zip'], a[href$='.gzip'], a[href$='.rar'] {    
-display:inline-block;     padding-left:20px;     line-height:18px;    
-background:transparent url(/Images/ZIPIcon.gif) center left no-repeat; }</p>
+<p>}</p>
+<p>a[href$='.doc'] {
+      display:inline-block;
+      padding-left:20px;
+      line-height:18px;
+      background:transparent url(/Images/WordDocIcon.gif) center left no-repeat;
+  }
+  a[href$='.zip'], a[href$='.gzip'], a[href$='.rar'] {
+      display:inline-block;
+      padding-left:20px;
+      line-height:18px;
+      background:transparent url(/Images/ZIPIcon.gif) center left no-repeat;
+  }</p>
 <p><strong>İçinde Belirlenen Sözdizimi Geçen Özellik Değer Seçicisi</strong></p>
 <p>Özellik içeriğinde belirlenen değerin geçip geçmemesine göre ayırt
 etmemizi sağlar.</p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">*=</span><span class="s2">&quot;example.com&quot;</span><span class="o">]</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="m">#ff0</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">*=</span><span class="s2">&quot;example.com&quot;</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#ff0</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -234,7 +263,9 @@ seçicisi, :first-child</p>
 istediğimizde kullandığımız seçici. Bir menüde liste elemanlarına
 tanımlama yaparken tüm alt elemanlara değilde sadece ilk menü liste
 elemanlarına etki yapmasını istediğimizde çok işimize yarar mesela</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">{</span> <span class="k">list-style</span><span class="o">:</span><span class="k">none</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">list-style</span><span class="o">:</span><span class="k">none</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -253,7 +284,9 @@ farklı olarak sadece bir sonraki değil aynı ana kapsayıcı içindeki
 belirtilen elemandan sonraki aynı seviyedeki elemanları seçmek için
 kullanılır. Seçici işareti olarak elemanlar arasına tilde(~) işareti
 konulur.</p>
-<div class="codehilite"><pre> <span class="nt">E</span> <span class="o">~</span> <span class="nt">F</span> <span class="p">{}</span>
+<div class="codehilite"><pre><span class="nt">E</span> <span class="o">~</span> <span class="nt">F</span> <span class="p">{</span>
+
+<span class="p">}</span>
 </pre></div>
 
 
@@ -264,15 +297,24 @@ kapsamaz.</p>
 <p>Bir örnek yapacak olursak bir resmimiz var bunu sola hizalayacağız ve
 sağdanda metinler akacak. Bu resim ve paragraflar arasına padding
 tanımlamak için genel kardeş seçicisi birebirdir.</p>
-<div class="codehilite"><pre> <span class="nt">img</span><span class="p">{</span> <span class="err">   </span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="p">}</span> <span class="nt">img</span> <span class="o">~</span> <span class="nt">p</span><span class="p">{</span> <span class="err">   </span> <span class="k">padding-left</span><span class="o">:</span><span class="m">110px</span><span class="p">;</span> <span class="p">}</span> 
+<div class="codehilite"><pre><span class="nt">img</span><span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">img</span> <span class="o">~</span> <span class="nt">p</span><span class="p">{</span>
+    <span class="k">padding-left</span><span class="o">:</span><span class="m">110px</span><span class="p">;</span>
+<span class="p">}</span>
+
 <span class="o">::</span><span class="nd">:html</span>
- <span class="o">&lt;</span><span class="nt">img</span> <span class="nt">src</span><span class="o">=</span><span class="s2">&quot;kedi.jpg&quot;</span> <span class="nt">width</span><span class="o">=</span><span class="s2">&quot;96&quot;</span> <span class="nt">height</span><span class="o">=</span><span class="s2">&quot;96&quot;</span> <span class="nt">alt</span><span class="o">=</span><span class="s2">&quot;kedi&quot;</span> <span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="nt">img</span> <span class="nt">src</span><span class="o">=</span><span class="s2">&quot;kedi.jpg&quot;</span> <span class="nt">width</span><span class="o">=</span><span class="s2">&quot;96&quot;</span> <span class="nt">height</span><span class="o">=</span><span class="s2">&quot;96&quot;</span> <span class="nt">alt</span><span class="o">=</span><span class="s2">&quot;kedi&quot;</span> <span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">Kedi</span> <span class="o">(</span><span class="nt">Felis</span> <span class="nt">catus</span><span class="o">),...&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">2</span><span class="o">,</span><span class="nt">5</span> <span class="nt">ile</span> <span class="nt">12</span> <span class="nt">kilo</span> <span class="o">...&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">Kediler</span> <span class="nt">ho</span><span class="err">ş</span> <span class="nt">g</span><span class="err">ö</span><span class="nt">r</span><span class="err">ü</span><span class="nt">n</span><span class="err">üş</span><span class="nt">l</span><span class="err">ü</span><span class="o">,</span> <span class="o">..&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
 </pre></div>
 
 
-<p><p>Kedi (Felis catus),...</p> <p>2,5 ile 12 kilo ...</p>
-<p>Kediler hoş görünüşlü, ..</p> 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KGkAK/1/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KGkAK/1/embedded/result,css,html"></iframe>
+
 <p><strong>:first-child sözde seçicisi</strong></p>
 <p>Birçok yanyana dizilimde ilk ve son elemanı yakalama sorunlarımız olur.
 Genelde bu sorunları çözmek için javascript yardımına gereksinim
@@ -281,14 +323,22 @@ ile sonu yakalamak için biraz daha beklememiz gerekiyor. ie9’dan
 itibaren destekliyor.</p>
 <p>Mesela bir listemiz olsun yanyana sıraladığımız aralarında 10px’lik
 mesafelerin olduğu biz eğer tanımı</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span><span class="m">10px</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">margin-right</span><span class="o">:</span><span class="m">10px</span>
+<span class="p">}</span>
 </pre></div>
 
 
 <p>şeklinde yaparsak listenin son elemanı sonrasınada 10px atayacaktır ve
 bu sorun olacaktır. Biz first-child seçicisini de düşünerek kodumuzu
 şöyle değiştirelim.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span><span class="m">10px</span> <span class="p">}</span> <span class="nt">ul</span> <span class="nt">li</span><span class="nd">:first-child</span><span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span><span class="m">0</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">margin-left</span><span class="o">:</span><span class="m">10px</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span><span class="nd">:first-child</span><span class="p">{</span>
+    <span class="k">margin-left</span><span class="o">:</span><span class="m">0</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -296,7 +346,7 @@ bu sorun olacaktır. Biz first-child seçicisini de düşünerek kodumuzu
 istediğimizi elde ettik.</p>
 <p>Bu seçicileri aklınızın bir kenarına not edin. Hatta bir yere not edip
 çalışma alanınızda görebileceğiniz bir yere yapıştırın. Unutmayın</p>
-<h3>Tüm elemanlarda :hover desteği</h3>
+<h2>Tüm elemanlarda :hover desteği</h2>
 <p>CSS’e ilk adım herkes linklerin farklı durumu için css ile tanımlama
 yapmasına ve javascript gereksinimi olmadan açılır menü yapmasına
 şaşırmıştır.</p>
@@ -304,7 +354,13 @@ yapmasına ve javascript gereksinimi olmadan açılır menü yapmasına
 Ancak artık js kullanmadan açılır menüler yapabileceğiz. Tabi sadece
 menü değil tüm html elementlerinde :hover sahte sınıfını
 kullanabileceğiz.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">ul</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">none</span> <span class="p">}</span> <span class="nt">ul</span> <span class="nt">li</span><span class="nd">:hover</span> <span class="nt">ul</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span> <span class="nt">ul</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">none</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span><span class="nd">:hover</span> <span class="nt">ul</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -313,13 +369,19 @@ yapılan tanımlarda alt menüye geçildiğinde ve üzerinde iken üst menüde
 seçili görünecektir ve buda kullanıcı dostu bir görünüm sağlayacaktır.</p>
 <p>Ayrıca diğer alanlarda :hover kullanarak js olmadan gizle-göster yapma
 imkanımız var artık.</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">p</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">none</span> <span class="p">}</span> <span class="nt">div</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">p</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">p</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">none</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">p</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span>
+<span class="p">}</span>
 </pre></div>
 
 
 <p>:hover sahte seçicisinin nimetlerinden yaralanmayı unutmayın. Menülere
 özgürlük. Gizel-Göster CSS</p>
-<h3>min-height, min-width, max-height ve max-width desteği</h3>
+<h2>min-height, min-width, max-height ve max-width desteği</h2>
 <p>Bence height değeri yerine her zaman min-height değerini kullanmakta
 yarar var. height değeri bizi sınırlandırıyor ve birçok sorunlara neden
 olabiliyorken min-height değeri ise sade belirtilen değerde içerik yok
@@ -330,7 +392,7 @@ max-height ve max-width için javascript ile çözüm üretmek zorunda
 kalıyorduk. Buda tarayıcıyı ve siteyi zorluyordu.</p>
 <p>min-height, min-width, max-height ve max-width ile sınırlarınızı daha
 iyi kontrol edin.</p>
-<h3>Farklı Genişlik ve Yükseklik Tanımlarına Son(box model hacking)</h3>
+<h2>Farklı Genişlik ve Yükseklik Tanımlarına Son(box model hacking)</h2>
 <p>Kutu modeli çözümü(box model hacking) diyede bildiğimiz ie6’nın genişlik
 ve yükseklik yorumlamada diğer tarayıcılardan farklı yorumlaması nedeni
 ile css ile düzeltme yazmak zorunda kalıyorduk. <a href="http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/">Box Model Sorunu ve Çözümü</a> makalesinde yazdığım gibi ben uzun düzeltmeyi kullanıyordum
@@ -347,45 +409,59 @@ standart yorumun dışına çıkar, genişlik veya yükseklik değeri tüm kutu
 model element değerini ifade eder. Yani tüm padding ve border
 değerlerini içerir kalan kısmıda içerik alanı değeri olarak belirlenir.”</p>
 <p>Bundan dolayı</p>
-<div class="codehilite"><pre> <span class="nf">#icerik</span><span class="p">{</span> <span class="err">   </span><span class="k">width</span><span class="o">:</span><span class="m">230px</span><span class="p">;</span> <span class="err">   </span><span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> <span class="err">   </span><span class="k">border</span><span class="o">:</span><span class="m">5px</span> <span class="k">solid</span>
+<div class="codehilite"><pre><span class="nf">#icerik</span><span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span><span class="m">230px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span><span class="m">5px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span> <span class="c">/* Bundan sonraki kısmı ie5win sakla */</span>
+  <span class="k">voice-family</span><span class="o">:</span> <span class="s2">&quot;\&quot;}\&quot;&quot;</span><span class="p">;</span>
+  <span class="k">voice-family</span><span class="o">:</span><span class="k">inherit</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">html</span><span class="o">&gt;</span><span class="nt">body</span> <span class="nf">#icerik</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<h1>000; /<em> Bundan sonraki kısmı ie5win sakla </em>/    voice-family:</h1>
-<p>""}"";    voice-family:inherit;    width:200px; } html&gt;body</p>
-<h1    width:200px;="   width:200px;">icerik</h1>
 <p>şeklinde bir css çözümü veya</p>
-<div class="codehilite"><pre> <span class="nf">#icerik</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span> <span class="n">_width</span><span class="o">:</span><span class="m">230px</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span><span class="m">5px</span>
+<div class="codehilite"><pre><span class="nf">#icerik</span><span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+  <span class="n">_width</span><span class="o">:</span><span class="m">230px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span><span class="m">5px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>solid #000; } </p>
 <p>çözüm üretiyorduk. Yoksa sitemiz ie6’da yamuk görünüyordu. Bloklar aşağı
 kaçıyor hiç istemidiğimiz görüntüler ortaya çıkıyordu. Ama artık çift
 tanım ve css düzeltmeleri yok bitti.</p>
 <p>Kutu modeli sorunu sonu</p>
-<h3>position:fixed desteği</h3>
+<h2>position:fixed desteği</h2>
 <p>ie6 postion özelliğinin fixed değerini desteklemiyordu. Bizde çözüm için
 “<a href="http://www.fatihhayrioglu.com/sabit-konumlandirma-postionfixed/">Sabit Konumlandırma (Postion:fixed)</a>” expression ile çözüm
 üretiyorduk. Artık çözüm üretmeye gerek yok.</p>
 <p>İstediğimiz alanı sabitleyebileceğiz artık.</p>
-<h3>İki sınıf tanımlama</h3>
+<h2>İki sınıf tanımlama</h2>
 <p>ie6 birden fazla sınıf içeren elemanlara bu iki sınıfı kullanarak
 tanımlama yaptığımızda bunu görmüyordu.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;liste onemli&quot;</span><span class="nt">&gt;</span>    ... <span class="nt">&lt;/div&gt;</span>   :::css
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;liste onemli&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+
+:::css
+div.liste.onemli {... }
 </pre></div>
 
 
-<p>div.liste.onemli {    ... } </p>
 <p>Tanımı yaptığımızda ie6 burada .onemli için tanım yapmış gibi
 davranıyordu. Artık daha kolay seçim yapabileceğiz. Ufak ama güzel bir
 özellik.</p>
-<h3>!important kullanımı</h3>
+<h2>!important kullanımı</h2>
 <p>Tanımlarımızın etkinliğine arttırmak için !important son ekini
 kullanıyoruz. Ancak ie6 bir özellik tanımlı ise ve tekrar ezmek için bir
 daha !important’lu kullanılıyorsa bu tanımı görmüyor</p>
 <p>Artık çekinmeden !important tanımını kullanabileceğiz.</p>
-<h3>Diğer Hatalar</h3>
+<h2>Diğer Hatalar</h2>
 <ul>
 <li><a href="http://www.fatihhayrioglu.com/?p=236">IE’de Hata Ayıklamak için şartlı Yorumlar Kullanmak</a></li>
 <li><a href="http://www.fatihhayrioglu.com/?p=242">CSS Hata Ayıklama Yöntemleri</a></li>
@@ -428,7 +504,7 @@ Artık kenar çizgilerinden dotted  dashed gibi görünüyor diye dert
 etmeyeceğiz,<br />
 Artık ie6 yok.</p>
 <p>Kodlarımızı bu gerçeklere göre tekrar gözden geçirelim.</p>
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>İe6’dan kurtulmak bizim için bir bayramdır. İki bayramı birden yaşayacak
 olmanın sevinci içindeyiz. Bu yazıdaki amacım kod yazarken otomatiğe
 bağladığımız sistemi biraz irdeleyerek güncellemek. Belki siz benim
@@ -445,7 +521,7 @@ hasLayout sorunları hala bizimle. Muhtemelen ie7’nin sonunada
 yaklaşmaktayız. 1-2 seneye belki daha evvel kurtulma ihtimalimiz var.</p>
 <p>Ama bugün arayüz geliştiricileri için bayram.</p>
 <p>ie6 öldü.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://bradt.ca/archives/preventing-ie6-bugs/">http://bradt.ca/archives/preventing-ie6-bugs/</a> (güzel)</li>
 <li><a href="http://www.sitepoint.com/10-fixes-for-ie6-problems/">http://www.sitepoint.com/10-fixes-for-ie6-problems/</a></li>
@@ -457,15 +533,13 @@ yaklaşmaktayız. 1-2 seneye belki daha evvel kurtulma ihtimalimiz var.</p>
 <li><a href="http://www.rtdesigngroup.com/blog/5-reasons-why-ie6-must-die.html">http://www.rtdesigngroup.com/blog/5-reasons-why-ie6-must-die.html</a></li>
 <li><a href="http://garmahis.com/tools/ie6-update-warning/">http://garmahis.com/tools/ie6-update-warning/</a></li>
 <li><a href="http://css-tricks.com/482-ie-css-bugs-thatll-get-you-every-time/">http://css-tricks.com/482-ie-css-bugs-thatll-get-you-every-time/</a></li>
-<li><a href="http://technologytales.com/2007/06/22/ie6-and-javascript-performance/">http://technologytales.com/2007/06/22/ie6-and-javascript-performance/</a>
-    (js)</li>
+<li><a href="http://technologytales.com/2007/06/22/ie6-and-javascript-performance/">http://technologytales.com/2007/06/22/ie6-and-javascript-performance/</a>(js)</li>
 <li><a href="http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html">http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html</a></li>
 <li><a href="http://ajaxian.com/archives/ie7-twice-as-performant-as-ie6-but-half-as-slow-as-ff-15">http://ajaxian.com/archives/ie7-twice-as-performant-as-ie6-but-half-as-slow-as-ff-15</a></li>
 <li><a href="http://expansive-derivation.ossreleasefeed.com/2011/08/javascript-performance-test-results-with-sunspider/">http://expansive-derivation.ossreleasefeed.com/2011/08/javascript-performance-test-results-with-sunspider/</a></li>
 <li><a href="http://www.psyked.co.uk/css/auto-matic-link-icons.htm">http://www.psyked.co.uk/css/auto-matic-link-icons.htm</a></li>
 <li><a href="http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/">http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">
