@@ -88,7 +88,7 @@ kullanmadığımız için HTTP isteği yapmamış oluruz ve böylelikle hız
 kazanmış oluruz. Renk geçişi resimleri genelde jpeg olarak kaydedilir,
 resimde fazla renk olduğu için, bazen bu renk geçişi resimleri yüksek
 boyutlara erişebiliyor. CSS3’ün bu özelliği ile resim yerini kod
-blokları alır ve buda bize hız kazandırır.</span></p>
+blokları alır ve buda bize hız kazandırır.</p>
 <p>Esneklik açısından da avantajlıdır. Renk geçişi resimleri esnek
 değildir, ancak CSS3 renk geçişi özelliği bize istediğimiz esnekliği
 sağlar. Böylece revizelerdeki birçok iş yükünden kurtarır.
@@ -120,44 +120,42 @@ araçlar eklenirse bu iş sorun olmaktan çıkacak, tabi isteğimiz en kısa
 zamanda  w3c standartlarına tüm tarayıcıların geçmesi.</p>
 <p>CSS3 renk geçişi iki çeşittir. Doğrusal(Linear) ve Radyal(Radial) Şimdi
 bu çeşitleri inceleyelim.</p>
-<h3>Doğrusal Renk Geçişleri</h3>
+<h2>Doğrusal Renk Geçişleri</h2>
 <p><img alt="" src="https://lh6.googleusercontent.com/qdn73-Cr_BtDXHybNUYrBRPDgdpSY35sBoIxaSTEaRqZrdDr7YgO7QAkwOJb6AJDNEZIzQh58zcwM3WZJGZAAl_VIiOKp1nxZAonW1_EscSfTVJV8j4" /></p>
 <p>Doğrusal renk geçişleri soldan sağa, yukarıdan aşağı veya istediğimiz
 doğrusal yönler arası geçiş yapmamızı sağlar. Phoshop ve Fireworks gibi
 editörleri kullananların alışık olduğu bir kullanımı vardır.</p>
 <p>CSS3 renk geçişinin dezavantajlarından birisi farklı tarayıcılar için
 farklı kod yazma gereksinimidir.</p>
-<div class="codehilite"><pre> <span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(&lt;</span><span class="nt">point</span><span class="o">&gt;</span> <span class="o">||</span> <span class="o">&lt;</span><span class="nt">angle</span><span class="o">&gt;,]?</span>
+<div class="codehilite"><pre><span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(&lt;</span><span class="nt">point</span><span class="o">&gt;</span> <span class="o">||</span> <span class="o">&lt;</span><span class="nt">angle</span><span class="o">&gt;,]?</span> <span class="o">&lt;</span><span class="nt">stop</span><span class="o">&gt;,</span> <span class="o">&lt;</span><span class="nt">stop</span><span class="o">&gt;</span> <span class="o">[,</span> <span class="o">&lt;</span><span class="nt">stop</span><span class="o">&gt;]*</span> <span class="o">)&lt;/</span><span class="nt">stop</span><span class="o">&gt;&lt;/</span><span class="nt">stop</span><span class="o">&gt;&lt;/</span><span class="nt">stop</span><span class="o">&gt;&lt;/</span><span class="nt">angle</span><span class="o">&gt;&lt;/</span><span class="nt">point</span><span class="o">&gt;</span>
 </pre></div>
 
 
-<p><stop>, <stop> [, <stop>]*
-)</stop></stop></stop></angle></point> </p>
 <p>Kod yukarıdaki gibi standartlaşsa da farklı tarayıcılar için farklı kod
 yazmamız gerekir. Doğrusal renk geçişi kodunun en basit hali.</p>
-<div class="codehilite"><pre> <span class="nt">background</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span><span class="nf">#f8b500</span><span class="o">);</span>
+<div class="codehilite"><pre><span class="nt">background</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nf">#fff</span><span class="o">,</span><span class="nf">#f8b500</span><span class="o">);</span>
 </pre></div>
 
 
-<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/txQsL/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/txQsL/embedded/result,css,html"></iframe>
+
 <p>Renk geçişi en basit hali ile iki renk arasındaki geçiştir. Yukarıdaki
 kod ile en basit renk geçişi sağlanmış olur.</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer 6+(filter ile),10+ (-ms ön eki ile)
-Firefox 3.6+(-moz ön eki ile) Chrome(-webkit ön eki ile*) Opera
-11.10+(-o ön eki ile) Safari4+ (-webkit ön eki ile)
-
-</div>
-
-<h3>Renk Geçişine Yön Verelim</h3>
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong> Internet Explorer 6+(filter ile),10+ (-ms ön eki ile)
+Firefox 3.6+(-moz ön eki ile) 
+Chrome(-webkit ön eki ile*)
+Opera 11.10+(-o ön eki ile)
+Safari4+ (-webkit ön eki ile)</p>
+<h2>Renk Geçişine Yön Verelim</h2>
 <p>Yukarıdaki basit kodlamada renkleri yazdık ama açısını, yönünü
 belirlemedik. Yukarıdan aşağı, sağdan sola vd. gibi yönleri açı ile
 belirleyebiliriz. Yukarıdaki örnek için kodumuz şu şekilde değişecek</p>
-<div class="codehilite"><pre> <span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">top</span><span class="o">,</span><span class="nf">#fff</span><span class="o">,</span><span class="nf">#f8b500</span><span class="o">);</span>
+<div class="codehilite"><pre><span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">top</span><span class="o">,</span><span class="nf">#fff</span><span class="o">,</span><span class="nf">#f8b500</span><span class="o">);</span>
 </pre></div>
 
 
-<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/d5Feg/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/d5Feg/embedded/result,css,html"></iframe>
+
 <p>İlk rengin nereden başlayacağını belirledik ve virgül ile diğer
 tanımlardan ayırdık. Bu tanım ile yukarıdan beyaz renk(#fff) ile
 başlayacağız ve en altta turuncu(#f8b500) ile bitiriyoruz. Benzer
@@ -165,52 +163,50 @@ başlayacağız ve en altta turuncu(#f8b500) ile bitiriyoruz. Benzer
 tanımlayabiliriz. Diğer tanımlar top, bottom, left, right. Benzer
 tanımları açı ile de yapabiliriz. 0deg(sol); 90deg(alt); 180deg(sağ);
 270deg(üst) ve 360deg(sol) iki sol değeri var.</p>
-<p>[<img alt="" src="static/images/dogrusal_renk_gecisi.gif" title="dogrusal_renk_gecisi" />][]</p>
+<p>[<img alt="" src="static/images/dogrusal_renk_gecisi.gif" />][]</p>
 <p>Yukarıdaki tanımı birde dereceli yapalım.</p>
-<div class="codehilite"><pre> <span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">270deg</span><span class="o">,</span><span class="nf">#fff</span><span class="o">,</span><span class="nf">#f8b500</span><span class="o">);</span>
+<div class="codehilite"><pre><span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">270deg</span><span class="o">,</span><span class="nf">#fff</span><span class="o">,</span><span class="nf">#f8b500</span><span class="o">);</span>
 </pre></div>
 
 
 <p>Tabi açı olarak istediğimiz değeri vererek farklı renk geçişlerini de
 elde edebiliriz.</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer10+ (-ms ön eki ile) Firefox
-3.6+(-moz ön eki ile) Chrome(-webkit ön eki ile*) Opera 11.10+(-o ön
-eki ile) Safari4+ (-webkit ön eki ile)
-
-</div>
-
-<h3>Renk Durma Noktaları Oluşturmak</h3>
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong> 
+Internet Explorer10+ (-ms ön eki ile) 
+Firefox 3.6+(-moz ön eki ile) 
+Chrome(-webkit ön eki ile*) 
+Opera 11.10+(-o ön eki ile) 
+Safari4+ (-webkit ön eki ile)</p>
+<h2>Renk Durma Noktaları Oluşturmak</h2>
 <p>Her ne kadar basit bir tanım ile iki renk arasında geçiş olarak
 tanımlasakta, aslında renk geçişi kullanımında daha farklı yöntemlerde
 vardır. Araya özel bir renk atamak için kullanırız bu yöntemi ve çok
 güzel renk geçişleri oluşturmamıza yardımcı olur.</p>
 <p>Durma noktalarınıda eklersek yukarıdaki kodumuz aşağıdaki gibi
 olacaktır.</p>
-<div class="codehilite"><pre> <span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">top</span><span class="o">,</span><span class="nf">#fff</span> <span class="nt">0</span><span class="o">%,</span><span class="nf">#f8b500</span> <span class="nt">100</span><span class="o">%);</span>
+<div class="codehilite"><pre><span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">top</span><span class="o">,</span><span class="nf">#fff</span> <span class="nt">0</span><span class="o">%,</span><span class="nf">#f8b500</span> <span class="nt">100</span><span class="o">%);</span>
 </pre></div>
 
 
 <p>Renk sıfır noktasından(0%) başlıyor ve son noktada(100%) geçiş bitiyor.</p>
 <p>Benzer şekilde araya renk ekleyebilir ve orta noktalardan başlayıp
 bitirebiliriz.</p>
-<div class="codehilite"><pre> <span class="nt">background</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">top</span><span class="o">,</span> <span class="nf">#ffb76b</span> <span class="nt">0</span><span class="o">%,</span><span class="nf">#ffa73d</span> <span class="nt">50</span><span class="o">%,</span><span class="nf">#ff7c00</span>
+<div class="codehilite"><pre><span class="nt">background</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">top</span><span class="o">,</span> <span class="nf">#ffb76b</span> <span class="nt">0</span><span class="o">%,</span><span class="nf">#ffa73d</span> <span class="nt">50</span><span class="o">%,</span><span class="nf">#ff7c00</span> <span class="nt">51</span><span class="o">%,</span><span class="nf">#ff7f04</span> <span class="nt">100</span><span class="o">%);</span>
 </pre></div>
 
 
-<p>51%,#ff7f04 100%); 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/jXLF6/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/jXLF6/embedded/result,css,html"></iframe>
+
 <p>Görüldüğü gibi uygulanan renk geçişine ortada başka renkler eklenerek
 farklı bir ardalana rengi elde edilmiştir. Yüzde değer kullanmak zorunda
 değiliz, piksel ve css’in diğer değerlerinide kullanılabiliriz.</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer10+ (-ms ön eki ile) Firefox
-3.6+(-moz ön eki ile) Chrome(-webkit ön eki ile*) Opera 11.10+(-o ön
-eki ile) Safari4+ (-webkit ön eki ile)
-
-</div>
-
-<h3>Renk Geçişinde Saydamlık Kullanımı</h3>
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong> 
+Internet Explorer10+ (-ms ön eki ile) 
+Firefox 3.6+(-moz ön eki ile) 
+Chrome(-webkit ön eki ile*) 
+Opera 11.10+(-o ön eki ile) 
+Safari4+ (-webkit ön eki ile)</p>
+<h2>Renk Geçişinde Saydamlık Kullanımı</h2>
 <p>CSS3 ile birlikte renk tanımlarına alfa kanallarıda eklenmiştir bu
 sayede renk tanımladığımız her yerde saydamlık özelliğinide
 kullanabilmemize olanak sağlıyor. Tabi bizde burada renkler ile
@@ -219,45 +215,43 @@ da yararlanabiliriz.</p>
 <p><a href="http://www.fatihhayrioglu.com/css3-rgba-renk-tanimi/">Daha önce anlattığımız</a> gibi rgba tanımlarında alfa kanalı 0 ile 1
 arasında değer alır, 0 etkisiz kılarken 1 değeri bize katı bir renk
 verir.</p>
-<div class="codehilite"><pre> <span class="nt">background</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">top</span><span class="o">,</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">1</span><span class="o">)</span>
+<div class="codehilite"><pre><span class="nt">background</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">top</span><span class="o">,</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">1</span><span class="o">)</span> <span class="nt">0</span><span class="o">%,</span><span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">0</span><span class="o">)</span> <span class="nt">100</span><span class="o">%);</span>
 </pre></div>
 
 
-<p>0%,rgba(255,255,255,0) 100%); 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3mdBt/2/embedded/result,css,html"></iframe></p>
-<h3>Renk Geçişi Tekrarı</h3>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3mdBt/2/embedded/result,css,html"></iframe>
+
+<h2>Renk Geçişi Tekrarı</h2>
 <p>Tanımladığımız renk geçişinin belli aralıklarla tekrarını sağlar. Bunun
 için ayrı bir kod yazarız, ancak mantık doğrusal renk geçişi ile
 aynıdır.</p>
-<div class="codehilite"><pre> <span class="nt">background-image</span><span class="o">:</span> <span class="nt">repeating-linear-gradient</span><span class="o">(</span><span class="nt">0deg</span><span class="o">,</span><span class="nf">#f8b500</span><span class="o">,</span><span class="nf">#FEF4B6</span>
+<div class="codehilite"><pre><span class="nt">background-image</span><span class="o">:</span> <span class="nt">repeating-linear-gradient</span><span class="o">(</span><span class="nt">0deg</span><span class="o">,</span><span class="nf">#f8b500</span><span class="o">,</span><span class="nf">#FEF4B6</span> <span class="nt">20px</span><span class="o">,</span> <span class="nf">#f8b500</span> <span class="nt">40px</span><span class="o">);</span>
 </pre></div>
 
 
-<p>20px, #f8b500 40px); 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/X8mK7/2/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/X8mK7/2/embedded/result,css,html"></iframe>
+
 <p>repeating-linear-gradient özelliği linear-gradient ile benzer kullanıma
 sahiptir. Başta 0deg ile renk geçişinin yönünü belirliyoruz, sonra
 tekrar edecek renkleri virgül ile ayırarak yazıyoruz, burada piksel
 değeri verildiği gibi css’in diğer değer seçenekleride
 kullanılabileceğini unutmayalım.</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer10+ (-ms ön eki ile) Firefox
-3.6+(-moz ön eki ile) Chrome(-webkit ön eki ile*) Opera 11.10+(-o ön
-eki ile) Safari4+ (-webkit ön eki ile)
-
-</div>
-
-<h3>Çoklu Doğrusal Renk Geçişi Kullanımı</h3>
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong> Internet Explorer10+ (-ms ön eki ile) 
+Firefox 3.6+(-moz ön eki ile) 
+Chrome(-webkit ön eki ile*) 
+Opera 11.10+(-o ön eki ile) 
+Safari4+ (-webkit ön eki ile)</p>
+<h2>Çoklu Doğrusal Renk Geçişi Kullanımı</h2>
 <p>Renk geçişi background-images özelliğine atanıyor, background-images
 özelliği CSS3 ile birlikte çoklu kullanıma izin vermektedir. Aynı
 şekilde bir elamana birden fazla renk geçişi eklememizede izin veriyor.</p>
-<div class="codehilite"><pre> <span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">left</span> <span class="nt">top</span><span class="o">,</span> <span class="nf">#FF9900</span><span class="o">,</span> <span class="nf">#FF0000</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">left</span> <span class="nt">top</span><span class="o">,</span> <span class="nf">#FF9900</span><span class="o">,</span> <span class="nf">#FF0000</span><span class="o">,</span> <span class="nt">transparent</span><span class="o">),</span> 
+<span class="nt">-moz-linear-gradient</span><span class="o">(</span><span class="nt">right</span> <span class="nt">top</span><span class="o">,</span> <span class="nf">#FF9900</span><span class="o">,</span> <span class="nf">#FF0000</span><span class="o">,</span> <span class="nt">transparent</span><span class="o">);</span>
 </pre></div>
 
 
-<p>transparent), -moz-linear-gradient(right top, #FF9900, #FF0000,
-transparent); 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Fr4tq/2/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Fr4tq/2/embedded/result,css,html"></iframe>
+
 <p>Yapmamız gerek sadece iki tanım arasını virgül ile ayırmak. Üst üste
 binmelerde saydam özelliğini kullanarak farklı resimler elde edilebilir.</p>
 <p>Tüm bu özellikleri birleştirerek çok güzel ardalanlar elde edebiliriz.</p>
@@ -267,22 +261,21 @@ gelecek açısından ne kadar ümitli olacağımızı gösteriyor. Bu sitede art
 olarak background-size özelliği kullanılmıştır. <a href="http://leaverou.me">http://leaverou.me</a>
 sitesi css renk geçişi konusunda geniş bilgi ve örneğe sahip incelemekte
 yarar var. Komşu kızının sitesini takibe almakta yarar var.</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer10+ (-ms ön eki ile) Firefox
-3.6+(-moz ön eki ile) Chrome(-webkit ön eki ile*) Opera 11.10+(-o ön
-eki ile) Safari4+ (-webkit ön eki ile)
-
-</div>
-
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong> 
+Internet Explorer10+ (-ms ön eki ile) 
+Firefox 3.6+(-moz ön eki ile) 
+Chrome(-webkit ön eki ile*) 
+Opera 11.10+(-o ön eki ile) 
+Safari4+ (-webkit ön eki ile)</p>
 <h1>Radyal Renk Geçişleri</h1>
-<h1><img alt="" src="https://lh4.googleusercontent.com/zTNQg2bWiAo4RRgxE2D5sF6W13C3sjBjayS4NBVEiO3bGZzfE8ns63R4qWeub4XHUEfBLW3fD8Ue62Zmfebm2IKQU4NSNvViku8B6WIAIC7-W4LDwA" /></h1>
+<p><img alt="" src="https://lh4.googleusercontent.com/zTNQg2bWiAo4RRgxE2D5sF6W13C3sjBjayS4NBVEiO3bGZzfE8ns63R4qWeub4XHUEfBLW3fD8Ue62Zmfebm2IKQU4NSNvViku8B6WIAIC7-W4LDwA" /></p>
 <p>Diğer bir renk geçiş türüde radyal renk geçişleridir. Radyal renk
 geçişi, merkezi bir noktadan tüm yönlere renk geçişi olarak
 tanımlanabilir. Yukarıdaki kullanıma yakın bir kullanımı vardır. Radyal
 renk geçişi bize özel şekil(daire ve elips) oluşturma imkanı verir.
 İnternet Explorer 10’nuncu sürümü hariç desteklemediği için
 uygulanabilirliği azalıyor. Uygulamak için beklememiz gerekiyor</p>
-<div class="codehilite"><pre> <span class="nt">radial-gradient</span><span class="o">(</span> <span class="o">[&lt;</span><span class="nt">position</span><span class="o">&gt;</span> <span class="o">||</span> <span class="o">&lt;</span><span class="nt">angle</span><span class="o">&gt;,]?</span> <span class="o">[&lt;</span><span class="nt">shape</span><span class="o">&gt;</span> <span class="o">||</span> <span class="o">&lt;</span><span class="nt">size</span><span class="o">&gt;,]?</span> <span class="o">&lt;</span><span class="nt">stop</span><span class="o">&gt;,</span> <span class="o">&lt;</span><span class="nt">stop</span><span class="o">&gt;[,</span> <span class="o">&lt;</span><span class="nt">stop</span><span class="o">&gt;]*</span> <span class="o">)</span>
+<div class="codehilite"><pre><span class="nt">radial-gradient</span><span class="o">(</span> <span class="o">[&lt;</span><span class="nt">position</span><span class="o">&gt;</span> <span class="o">||</span> <span class="o">&lt;</span><span class="nt">angle</span><span class="o">&gt;,]?</span> <span class="o">[&lt;</span><span class="nt">shape</span><span class="o">&gt;</span> <span class="o">||</span> <span class="o">&lt;</span><span class="nt">size</span><span class="o">&gt;,]?</span> <span class="o">&lt;</span><span class="nt">stop</span><span class="o">&gt;,</span> <span class="o">&lt;</span><span class="nt">stop</span><span class="o">&gt;[,</span> <span class="o">&lt;</span><span class="nt">stop</span><span class="o">&gt;]*</span> <span class="o">)</span>
 </pre></div>
 
 
@@ -301,7 +294,7 @@ durak noktaları oluşturmak için kullanılır. 0% ile 100% arasındaki
 değerleri alabilir.  </p>
 <p>Radyal renk geçişinin doğrusal renk geçişinden farklı olarak size(boyut)
 tanımları vardır. Boyut değerlerini tek tek inceleyelim.</p>
-<h4>Boyut Değerleri</h4>
+<h3>Boyut Değerleri</h3>
 <p>closest-side: Dairelerde, merkezden kutunun kenarına kadar anlamındadır.
 Elipslerde ise merkezden yatay ve dikey kenarlarının yakınına kadar
 anlamındadır.</p>
@@ -316,74 +309,69 @@ kadar uygulanır.</p>
 <p>cover: farthest-corner ile eş anlamlı</p>
 <p>Bu terimleri uygulayarak daha iyi öğreneceğimizi düşünüyorum.</p>
 <p>En basit radyal renk geçişi</p>
-<div class="codehilite"><pre> <span class="nt">radial-gradient</span><span class="o">(</span><span class="nt">circle</span> <span class="nt">farthest-side</span><span class="o">,</span> <span class="nf">#ff9900</span><span class="o">,</span> <span class="nf">#ff0000</span><span class="o">)</span>
+<div class="codehilite"><pre><span class="nt">radial-gradient</span><span class="o">(</span><span class="nt">circle</span> <span class="nt">farthest-side</span><span class="o">,</span> <span class="nf">#ff9900</span><span class="o">,</span> <span class="nf">#ff0000</span><span class="o">)</span>
 </pre></div>
 
 
-<p>[<img alt="" src="static/images/radyal_renk_gecisi.gif" title="radyal_renk_gecisi" />][]</p>
+<p><img alt="" src="static/images/radyal_renk_gecisi.gif" /></p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/LWXfa/embedded/result,css,html"></iframe>
 
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer10+ (tam -ms ön eki ile) Firefox
-3.6+(-moz ön eki ile) Chrome10+(-webkit ön eki ile*) Opera
-<u>desteklemiyor</u> Safari4+ (-webkit ön eki ile)
-
-</div>
-
-<h3>Radyal Renk Geçişlerinde Durma Noktaları Oluşturmak</h3>
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong> 
+Internet Explorer10+ (tam -ms ön eki ile) 
+Firefox 3.6+(-moz ön eki ile) 
+Chrome10+(-webkit ön eki ile*) 
+Opera <u>desteklemiyor</u> 
+Safari4+ (-webkit ön eki ile)</p>
+<h2>Radyal Renk Geçişlerinde Durma Noktaları Oluşturmak</h2>
 <p>Doğrusal renk geçişinde olduğu gibi radyal renk geçişinde de birden
 fazla renk eklemek için durma noktaları oluşturabiliyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">radial-gradient</span><span class="o">(</span><span class="nt">circle</span> <span class="nt">farthest-side</span><span class="o">,</span> <span class="nf">#FF9900</span><span class="o">,</span> <span class="nf">#FF0000</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">radial-gradient</span><span class="o">(</span><span class="nt">circle</span> <span class="nt">farthest-side</span><span class="o">,</span> <span class="nf">#FF9900</span><span class="o">,</span> <span class="nf">#FF0000</span><span class="o">,</span> <span class="nf">#FF9900</span><span class="o">);</span>
 </pre></div>
 
 
-<h1>FF9900);</h1>
-<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/cfWpd/1/embedded/result,css,html"></iframe></p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer10+ (tam -ms ön eki ile) Firefox
-3.6+(-moz ön eki ile) Chrome10+(-webkit ön eki ile*) Opera
-<u>desteklemiyor</u> Safari4+ (-webkit ön eki ile)
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/cfWpd/1/embedded/result,css,html"></iframe>
 
-</div>
-
-<h3>Radyal Renk Geçişi Tekrarı</h3>
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong> 
+Internet Explorer10+ (tam -ms ön eki ile) 
+Firefox 3.6+(-moz ön eki ile) 
+Chrome10+(-webkit ön eki ile*) 
+Opera desteklemiyor 
+Safari4+ (-webkit ön eki ile)</p>
+<h2>Radyal Renk Geçişi Tekrarı</h2>
 <p>Doğrusal renk geçişinde olduğu gibi tanımladığımız renk geçişlerini ufak
 bir özellik ismi değişimi ile tekrarını sağlayabiliyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">repeating-radial-gradient</span><span class="o">(</span><span class="nf">#FF9900</span><span class="o">,</span> <span class="nf">#FF9900</span> <span class="nt">5px</span><span class="o">,</span> <span class="nf">#FF0000</span> <span class="nt">5px</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">repeating-radial-gradient</span><span class="o">(</span><span class="nf">#FF9900</span><span class="o">,</span> <span class="nf">#FF9900</span> <span class="nt">5px</span><span class="o">,</span> <span class="nf">#FF0000</span> <span class="nt">5px</span><span class="o">,</span> <span class="nf">#FF0000</span> <span class="nt">10px</span><span class="o">);</span>
 </pre></div>
 
 
-<h1>FF0000 10px);</h1>
-<p><iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/HgBCv/embedded/result,css,html"></iframe></p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/HgBCv/embedded/result,css,html"></iframe>
+
 <p>Firefox3.6 ile birlikte gelen bu özelliği webkit desteklemeye başladı
 Chrome 10’dan itibaren destekliyor, Safari’nin bir sonraki sürümünde
 muhtemelen gelecektir.</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer10+ (tam -ms ön eki ile) Firefox
-3.6+(-moz ön eki ile) Chrome10+(-webkit ön eki ile*) Opera
-<u>desteklemiyor</u> Safari4+ (-webkit ön eki ile)
-
-</div>
-
-<h3>Çoklu Radyal Renk Geçişi Kullanımı</h3>
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong> 
+Internet Explorer10+ (tam -ms ön eki ile) 
+Firefox 3.6+(-moz ön eki ile) 
+Chrome10+(-webkit ön eki ile*) 
+Opera desteklemiyor 
+Safari4+ (-webkit ön eki ile)</p>
+<h2>Çoklu Radyal Renk Geçişi Kullanımı</h2>
 <p>Doğrusal renk geçişinde olduğu gibi kullanımı vardır. İki tanım arasına
 virgül konularak uygulanır.</p>
-<div class="codehilite"><pre> <span class="nt">background-image</span><span class="o">:</span> <span class="nt">radial-gradient</span><span class="o">(</span><span class="nt">20</span><span class="o">%</span> <span class="nt">50</span><span class="o">%,</span> <span class="nt">circle</span> <span class="nt">contain</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">background-image</span><span class="o">:</span> <span class="nt">radial-gradient</span><span class="o">(</span><span class="nt">20</span><span class="o">%</span> <span class="nt">50</span><span class="o">%,</span> <span class="nt">circle</span> <span class="nt">contain</span><span class="o">,</span> <span class="nf">#FF0000</span><span class="o">,</span> <span class="nf">#FF9900</span> <span class="nt">95</span><span class="o">%,</span> <span class="nt">transparent</span><span class="o">),</span> <span class="nt">radial-gradient</span><span class="o">(</span><span class="nt">50</span><span class="o">%</span> <span class="nt">50</span><span class="o">%,</span> <span class="nt">circle</span> <span class="nt">contain</span><span class="o">,</span> <span class="nf">#FF0000</span><span class="o">,</span> <span class="nf">#FF9900</span> <span class="nt">95</span><span class="o">%,</span> <span class="nt">transparent</span><span class="o">),</span> <span class="nt">radial-gradient</span><span class="o">(</span><span class="nt">80</span><span class="o">%</span>
 </pre></div>
 
 
-<h1>FF0000, #FF9900 95%, transparent), radial-gradient(50% 50%, circle</h1>
-<p>contain, #FF0000, #FF9900 95%, transparent), radial-gradient(80%
-50%,circle contain, #FF0000, #FF9900 95%,transparent); 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/HU7ym/embedded/result,css,html"></iframe></p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer10+ (tam -ms ön eki ile) Firefox
-3.6+(-moz ön eki ile) Chrome10+(-webkit ön eki ile*) Opera
-<u>desteklemiyor</u> Safari4+ (-webkit ön eki ile)
+<p>50%,circle contain, #FF0000, #FF9900 95%,transparent); </p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/HU7ym/embedded/result,css,html"></iframe>
 
-</div>
-
-<h3>Sonuç</h3>
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong>
+Internet Explorer10+ (tam -ms ön eki ile)
+Firefox 3.6+(-moz ön eki ile)
+Chrome10+(-webkit ön eki ile*)
+Opera desteklemiyor
+Safari4+ (-webkit ön eki ile)</p>
+<h2>Sonuç</h2>
 <p>Webkit ilk olarak bulduğu renk geçişi özelliğinde Firefox’un daha basite
 indirgediği kod w3c tarafından da kabul gördü ve webkit’de yeni nesil
 kodlarını Firefox’un tanımlarına göre yapıyor. Fazla kod kalabalığı
@@ -411,31 +399,25 @@ eklenebileceği konusunda yazılar var.</p>
 <p>Uzun bir yazı oldu ama konuyu bölmek istemedim. Eksik ve aksaklıklarım
 oldu ise af ola.</p>
 <p>Kalın sağlıcakla</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.w3.org/TR/css3-images/#gradients">http://www.w3.org/TR/css3-images/#gradients</a></li>
 <li><a href="https://developer.mozilla.org/en/Using_gradients">https://developer.mozilla.org/en/Using_gradients</a> (güzel)</li>
 <li><a href="http://developer.apple.com/library/safari/#documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Gradients/Gradients.html">http://developer.apple.com/library/safari/#documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Gradients/Gradients.html</a></li>
-<li><a href="http://dev.opera.com/articles/view/css3-linear-gradients/">http://dev.opera.com/articles/view/css3-linear-gradients/</a>
-    (dogrusal için üzel)</li>
+<li><a href="http://dev.opera.com/articles/view/css3-linear-gradients/">http://dev.opera.com/articles/view/css3-linear-gradients/</a></li>
 <li><a href="http://www.red-team-design.com/css-gradients-quick-tutorial">http://www.red-team-design.com/css-gradients-quick-tutorial</a></li>
-<li><a href="http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/">http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/</a>
-    (görsel)</li>
+<li><a href="http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/">http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/</a></li>
 <li><a href="http://gradients.glrzad.com/">http://gradients.glrzad.com/</a> (Çevrimiçi araç)</li>
-<li><a href="http://robertnyman.com/2010/02/15/css-gradients-for-all-web-browsers-without-using-images/">http://robertnyman.com/2010/02/15/css-gradients-for-all-web-browsers-without-using-images/</a>
-    (ie için de)</li>
+<li><a href="http://robertnyman.com/2010/02/15/css-gradients-for-all-web-browsers-without-using-images/">http://robertnyman.com/2010/02/15/css-gradients-for-all-web-browsers-without-using-images/</a></li>
 <li><a href="http://www.colorzilla.com/gradient-editor/">http://www.colorzilla.com/gradient-editor/</a> (Çevrimiçi araç)</li>
-<li><a href="http://webkit.org/blog/175/introducing-css-gradients/">http://webkit.org/blog/175/introducing-css-gradients/</a> (Safariden
-    ilk notlar)</li>
+<li><a href="http://webkit.org/blog/175/introducing-css-gradients/">http://webkit.org/blog/175/introducing-css-gradients/</a></li>
 <li><a href="http://www.westciv.com/tools/gradients/">http://www.westciv.com/tools/gradients/</a> (Çevirimiçi araç)</li>
 <li><a href="http://css-tricks.com/css3-gradients/">http://css-tricks.com/css3-gradients/</a> (Ayrıntılı)</li>
 <li><a href="http://www.puremango.co.uk/2010/04/css-gradient-background/">http://www.puremango.co.uk/2010/04/css-gradient-background/</a></li>
-<li><a href="http://hacks.mozilla.org/2009/11/css-gradients-firefox-36/">http://hacks.mozilla.org/2009/11/css-gradients-firefox-36/</a>
-    (Mozilla dan ayrıntılı)</li>
+<li><a href="http://hacks.mozilla.org/2009/11/css-gradients-firefox-36/">http://hacks.mozilla.org/2009/11/css-gradients-firefox-36/</a></li>
 <li><a href="http://ajaxian.com/archives/css-gradients-in-action">http://ajaxian.com/archives/css-gradients-in-action</a></li>
 <li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-understanding-css3-gradients/">http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-understanding-css3-gradients/</a></li>
-<li><a href="http://www.dynamicdrive.com/style/csslibrary/item/css3_linear_gradients/">http://www.dynamicdrive.com/style/csslibrary/item/css3_linear_gradients/</a>
-    (doğrusal renk geçişi örnekleri)</li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/item/css3_linear_gradients/">http://www.dynamicdrive.com/style/csslibrary/item/css3_linear_gradients/</a></li>
 <li><a href="http://developer.practicalecommerce.com/articles/2111-Three-Techniques-for-Cross-Browser-CSS-Gradients">http://developer.practicalecommerce.com/articles/2111-Three-Techniques-for-Cross-Browser-CSS-Gradients</a></li>
 <li><a href="http://www.the-art-of-web.com/css/radial-gradients/">http://www.the-art-of-web.com/css/radial-gradients/</a></li>
 <li><a href="http://www.webdesignerdepot.com/2010/11/adding-transparencies-and-gradients-with-css/">http://www.webdesignerdepot.com/2010/11/adding-transparencies-and-gradients-with-css/</a></li>
@@ -457,11 +439,7 @@ oldu ise af ola.</p>
 özellik adı var iken yeni nesil tanımlarda w3c ile aynı tanııma
 geçilmiştir.</li>
 </ul>
-</blockquote>
-</p>
-
-<p>[<img alt="" src="static/images/dogrusal_renk_gecisi.gif" title="dogrusal_renk_gecisi" />]: /images/dogrusal_renk_gecisi.gif
-  [<img alt="" src="static/images/radyal_renk_gecisi.gif" title="radyal_renk_gecisi" />]: /images/radyal_renk_gecisi.gif</p><p><a href=".././css-renk-gecisleri-gradients/#disqus_thread">yorum var</a>.</p>
+</blockquote><p><a href=".././css-renk-gecisleri-gradients/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

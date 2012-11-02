@@ -103,77 +103,143 @@ Farklı Tasarımda bir uygulama: <a href="http://www.ideo.com/">http://www.ideo.
 şekilde uygulamaya geçirilebilir.</p>
 <p>Sadede gelelim ve biz kendi hiyerarşik yerimimizi yapalım.</p>
 <p>HTML kodu;</p>
-<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;yerimi&quot;</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ana
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;yerimi&quot;</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ana Sayfa<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Birinci alt Menü<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>İkinci alt Menü<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Üçüncü alt menü<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Bulunduğumuz sayfa<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<p>Sayfa</a></li> <li><a href="#">Birinci alt Menü</a></li>
-<li><a href="#">İkinci alt Menü</a></li> <li><a
-href="#">Üçüncü alt menü</a></li> <li>Bulunduğumuz sayfa</li>
-</ul> </p>
 <p>Gelelim CSS kodumuza, liste başlangıç değerlerini sıfırlayalım.
 Listelerin başındaki sabit yuvarlak ikonları kaldırıp, etrafındaki
 boşlukları kaldıralım.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#yerimi</span><span class="o">,</span> <span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span><span class="p">{</span> <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;}</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#yerimi</span><span class="o">,</span> 
+<span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
 <p>Listeyi yatay yapmak için float:left tanımı yapıyoruz. İnternet Explorer
 6 için bağlantıya da float:left atamamız gerekecek.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">font</span><span class="o">:</span><span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span><span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>sans-serif; line-height:30px; padding-left:15px; font-weight:bold }</p>
 <p>Bağlantılara şeklini verelim ve görselliğini düzenleyelim.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span><span class="m">#0086C0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#0086C0</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span> 
+    <span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">underline</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>text-decoration:none; height:30px; font-weight:normal } ul#yerimi li
-a:hover { text-decoration:underline } </p>
 <p>Her kademe arasına ayraç koyalım. Burada şöyle bir ipucu var ki, oda
 bulunduğumuz sayfaya link koymuyoruz ve bu sayede araya koyacağımız
 ayraçları sadece linklere vererek kolayca çözüm sağlıyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span><span class="m">#0086C0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> 
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#0086C0</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> 
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(bc_separator.png)</span> <span class="k">top</span> <span class="k">right</span> <span class="k">no-repeat</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span> 
+    <span class="k">padding-right</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span> 
+    <span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>text-decoration:none; background:url(bc_separator.png) top right
-no-repeat; height:30px; padding-right:15px; font-weight:normal } </p>
 <p>Son olarakta tüm alana bir ardalan resmi koyup birde kenar çizgisi
 ekleyelim.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#yerimi</span> <span class="p">{</span> <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#cacaca</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span><span class="sx">url(bc_bg.png)</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#yerimi</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#cacaca</span><span class="p">;</span> 
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(bc_bg.png)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">repeat-x</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>0 0 repeat-x } </p>
 <p>Bu eklemeyide yapınca <a href="http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/">Float Uygulanmış Elementleri Tam Kapsayamama (clearfix) sorunu</a> ile karşılaşırız. Çözüm linkteki gibidir. sonuç
 olarak CSS kodumuz;<br />
 </p>
-<div class="codehilite"><pre> <span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">clear</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> 
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> 
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nc">.kapsul</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span> 
+<span class="p">}</span> <span class="c">/*IE-mac de bu bolumu sakla</span>
+
+<span class="c">*/</span> <span class="o">*</span> <span class="nt">html</span> 
+<span class="nc">.kapsul</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">1</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span> 
+<span class="nc">.kapsul</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="p">}</span> <span class="c">/* IE-mac bu bolumu saklam artik */</span>
+
+<span class="nt">ul</span><span class="nf">#yerimi</span> <span class="p">{</span> 
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#cacaca</span><span class="p">;</span> 
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(bc_bg.png)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">repeat-x</span> 
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nf">#yerimi</span><span class="o">,</span> 
+<span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="p">{</span> 
+    <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> 
+    <span class="k">font</span><span class="o">:</span><span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span> 
+    <span class="k">padding-left</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span> 
+    <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span> 
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> 
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#0086C0</span><span class="p">;</span> 
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(bc_separator.png)</span> <span class="k">top</span> <span class="k">right</span> <span class="k">no-repeat</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span> 
+    <span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nf">#yerimi</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">underline</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>both; visibility: hidden; } .kapsul { display: inline-block; } /<em>IE-mac
-de bu bolumu sakla  </em>/ * html .kapsul { height: 1%; } .kapsul {
-display: block; } /<em> IE-mac bu bolumu saklam artik </em>/ ul#yerimi {
-border:1px solid #cacaca; background:url(bc_bg.png) 0 0 repeat-x }
-ul#yerimi, ul#yerimi li { list-style:none; margin:0; padding:0; }
-ul#yerimi li { float:left; font:12px Arial, Helvetica, sans-serif;
-line-height:30px; padding-left:15px; font-weight:bold } ul#yerimi li a
-{ display:block; float:left; color:#0086C0; text-decoration:none;
-background:url(bc_separator.png) top right no-repeat; height:30px;
-padding-right:15px; font-weight:normal } ul#yerimi li a:hover {
-text-decoration:underline } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/yerimi/yerimi.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh3.googleusercontent.com/OjH1IANl7PK66MMTvt58TUuh-jpAteN0eNeRmErj7ndN5bceqRpoxyqz1gox1LsEFUkX3vw4Qh7hISY0C3yuCTJkY4nFIi8hVtPnj8Oqo-U2zeGyabs" /></p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
-<li><a href="http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/">http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/</a>
-    (kullanım avantajları ve örnekler)</li>
-<li><a href="http://quince.infragistics.com/Patterns/Breadcrumbs.aspx">http://quince.infragistics.com/Patterns/Breadcrumbs.aspx</a>
-    (mantalitesi)</li>
+<li><a href="http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/">http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/</a></li>
+<li><a href="http://quince.infragistics.com/Patterns/Breadcrumbs.aspx">http://quince.infragistics.com/Patterns/Breadcrumbs.aspx</a></li>
 <li><a href="http://www.patternry.com/p=breadcrumbs/">http://www.patternry.com/p=breadcrumbs/</a> (mantalitesi)</li>
 <li><a href="http://www.useit.com/alertbox/breadcrumbs.html">http://www.useit.com/alertbox/breadcrumbs.html</a> (mantalite)</li>
 <li><a href="http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs">http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs</a></li>
@@ -182,8 +248,7 @@ text-decoration:underline } </p>
 <li><a href="http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx">http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx</a></li>
 <li><a href="http://alpha.patterntap.com/collections/Breadcrumbs">http://alpha.patterntap.com/collections/Breadcrumbs</a> (örnekler)</li>
 <li><a href="http://patterntap.com/tap/collection/breadcrumbs">http://patterntap.com/tap/collection/breadcrumbs</a> (örnekler)</li>
-</ul>
-</p><p><a href=".././css-ile-hiyerarsik-yerimibreadcrumbs-yapmak/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././css-ile-hiyerarsik-yerimibreadcrumbs-yapmak/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

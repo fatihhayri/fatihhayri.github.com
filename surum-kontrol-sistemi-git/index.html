@@ -86,7 +86,8 @@
 
 
 </footer><!-- /.post-info -->
-      <p>[<img alt="" src="../static/images/git-logo.png" title="git-logo" />][]Daha önceleri pek kullanmadığım sürüm kontrol sistemleri
+      <p><img alt="" src="../static/images/git-logo.png" title="git-logo" /></p>
+<p>Daha önceleri pek kullanmadığım sürüm kontrol sistemleri
 zamanla ihtiyaç haline geliyor. Sahibinden.com’da çalışmaya başladığımda
 bazı yenilikler ile tanıştım, bunlardan biri de Git ile tanışmam oldu,
 sağ olsun arkadaşların yardımı ile yavaş yavaş öğrenmeye başladım.</p>
@@ -147,95 +148,119 @@ Bu nedenle geliştiriciler birbirlerine de bağımlı değillerdir. <br />
 yapıyoruz. Terminal üzerinde komutları yazıyoruz. Git kullanımı
 kolaylaştırmak için bazı programlar var, ancak biz genelde komut
 satırlarını kullanıyoruz.</p>
-<h3>Git Komutları</h3>
+<h2>Git Komutları</h2>
 <p>İlk başta sadece master dallanması vardır.</p>
 <p><strong>git status:</strong> Bulunduğumuz durumu gösteren koddur. Yapılan
 değişiklikleri, eklemeler ve silinen dosyaları gösterir.</p>
-<p>[php] $git status [/php]</p>
+<div class="codehilite"><pre><span class="x">$git status</span>
+</pre></div>
+
+
 <p><strong>git branch:</strong>Oluşturulan dallanmaları(brach) görmek için</p>
-<p>[php] $git branch [/php]</p>
+<div class="codehilite"><pre><span class="x">$git branch</span>
+</pre></div>
+
+
 <p><strong>git-create-branch:</strong> Bu kod sadece bizim şirkete özel bir kod,
 (kendime notlar) :D Yeni bir dallanma(branch) oluşturmak için. -x
 kısayolu oluşturulan dalanmanın kategorisini belirler. Bizde en çok
 kullanılan iki kategori var düzeltme(fix) ve özellik(feature).
 Düzeltme(fix) için -x ; Özellik(feature) için -e kısa yollarını
 kullanıyoruz.</p>
-<p>[php] $git-create-branch -x dallanma_ismi [/php]</p>
+<div class="codehilite"><pre><span class="x">$git-create-branch -x dallanma_ismi</span>
+</pre></div>
+
+
 <p><strong>git pull:</strong>master’dan güncel hali almak için</p>
-<p>[php] $git pull [/php]</p>
+<div class="codehilite"><pre><span class="x">$git pull</span>
+</pre></div>
+
+
 <p><strong>git add:</strong>Depoya bir dosya eklemek için</p>
-<p>[php] $git add dosya_yolu/dosya_adi [/php]</p>
+<div class="codehilite"><pre><span class="x">$git add dosya_yolu/dosya_adi</span>
+</pre></div>
+
+
 <p>Birden fazla dosya eklemek için arada boşluk bırakarak ekleme
 yapılabiliyor.</p>
-<p>[php] $git add dosya_yolu/dosya_adi dosya_yolu/dosya_adi
-dosya_yolu/dosya_adi [/php]</p>
+<div class="codehilite"><pre><span class="x">$git add dosya_yolu/dosya_adi dosya_yolu/dosya_adi dosya_yolu/dosya_adi</span>
+</pre></div>
+
+
 <p><strong>git commit:</strong> Değişiklikleri yaptıktan sonra yorum ekliyoruz. -am
 kısaltması all ve message baş harflerini ifade eder.</p>
-<p>[php] $git commit -am "yorum_yaz" [/php]</p>
+<div class="codehilite"><pre><span class="x">$git commit -am &quot;yorum_yaz&quot;</span>
+</pre></div>
+
+
 <p><strong>git push:</strong> Yorumu yazdıktan sonra dosyaları gönderiyoruz</p>
-<p>[php] $git push [/php]</p>
+<div class="codehilite"><pre><span class="x">$git push</span>
+</pre></div>
+
+
 <p><strong>git checkout:</strong> Dallanma(Branch) değiştirmek için <br />
 </p>
-<p>[php] $git checkout branch_ismi [/php]</p>
+<div class="codehilite"><pre><span class="x">$git checkout branch_ismi</span>
+</pre></div>
+
+
 <p>ilk defa geçilen bir branch ise <br />
 </p>
-<p>[php] $git checkout origin/feature/branch_ismi --track [/php]</p>
+<div class="codehilite"><pre><span class="x">$git checkout origin/feature/branch_ismi --track</span>
+</pre></div>
+
+
 <p><strong>git grep:</strong> Mevcut branch içinde bir kelime veya ifadeleri bulamak
 için</p>
-<p>[php] $git grep "aranacak_kelime" [/php]</p>
+<div class="codehilite"><pre><span class="x">$git grep &quot;aranacak_kelime&quot;</span>
+</pre></div>
+
+
 <p>komutunu kullanıyoruz.</p>
 <p><strong>git merge:</strong> Eğer yaptığımız değişiklik ile aynı anda başkasıda bir
 şeyler yaptı ise çakışma(conflict) oluyor, düzeltmek için
 birleştirme(merge) işlemini yapıyoruz.</p>
-<p>[php] $git merge master [/php]</p>
+<div class="codehilite"><pre><span class="x">$git merge master</span>
+</pre></div>
+
+
 <p>veya</p>
-<p>[php] $git merge origin [/php]</p>
+<div class="codehilite"><pre><span class="x">$git merge origin</span>
+</pre></div>
+
+
 <p>yapıp değişiklikleri görebiliyoruz. Bu komutu yazdıktan sonra çakışmanın
 olduğu dosyayı açıyoruz.</p>
-<h1>MASTER / ORIGIN</h1>
-<p>git merge master<br />
-git merge origin</p>
-<h1>&lt;&lt;&lt;&lt;&lt; HEAD</h1>
-<h1>@MASTER</h1>
-<p>@REVISION-2<br />
-</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote></blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<div class="codehilite"><pre><span class="x"># MASTER / ORIGIN</span>
+
+<span class="x">git merge master  </span>
+<span class="x">git merge origin</span>
+
+<span class="x"># &lt;&lt;&lt;&lt;&lt; HEAD  </span>
+<span class="x">@MASTER  </span>
+<span class="x">======================  </span>
+<span class="x">@REVISION-2  </span>
+<span class="x">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
+</pre></div>
+
+
 <p>Şeklinde bir işaretlerle karşılaşırız. Burada hangi alan doğru ise onu
 bırakıp diğer alanı silerek dosyayı kaydediyoruz ve dosyanın son hali o
 oluyor.</p>
 <p><strong>git help:</strong> son olarak bir komut hakkında yardım almak için <br />
 </p>
-<p>[php] $git help komut_adi [/php]</p>
+<div class="codehilite"><pre><span class="x">$git help komut_adi</span>
+</pre></div>
+
+
 <p>ile komut hakkında bilgi alabiliyoruz.</p>
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>Başta söylediğim gibi Git konusunda daha yeniyim, öğrenme sürecim devam
 ediyor. Bana öğrenme sürecimde yardımcı olan arkadaşlarımada teşekkür
 ediyorum, özellikle <a href="http://twitter.com/#!/dorukozalp">Doruk</a>, bu konuda bildiğim bir çok şeyi ondan
 öğrendim.<br />
 </p>
-<h1>Kaynaklar</h1>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://inchoo.net/tools/basic-git-usage-from-console/">http://inchoo.net/tools/basic-git-usage-from-console/</a></li>
 <li><a href="http://www.foch.com.tr/versiyon-kontrol-git-svn-cvs.html">http://www.foch.com.tr/versiyon-kontrol-git-svn-cvs.html</a></li>
@@ -248,12 +273,8 @@ ediyorum, özellikle <a href="http://twitter.com/#!/dorukozalp">Doruk</a>, bu ko
 <li><a href="http://www.kitware.com/products/html/DistributedVersionControlTheFutureOfHistory.html">http://www.kitware.com/products/html/DistributedVersionControlTheFutureOfHistory.html</a></li>
 <li><a href="http://www.ndpsoftware.com/git-cheatsheet.html">http://www.ndpsoftware.com/git-cheatsheet.html</a></li>
 <li><a href="http://www.kimbs.cn/2010/11/git-essence/">http://www.kimbs.cn/2010/11/git-essence/</a></li>
-<li><a href="http://people.core.gen.tr/%7Eaycan.irican/web/publish/GitSKS.html">http://people.core.gen.tr/~aycan.irican/web/publish/GitSKS.html</a>
-    (1)</li>
+<li><a href="http://people.core.gen.tr/%7Eaycan.irican/web/publish/GitSKS.html">http://people.core.gen.tr/~aycan.irican/web/publish/GitSKS.html</a></li>
 </ul>
-</p>
-
-<p>[<img alt="" src="../static/images/git-logo.png" title="git-logo" />]: /images/git-logo.png</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

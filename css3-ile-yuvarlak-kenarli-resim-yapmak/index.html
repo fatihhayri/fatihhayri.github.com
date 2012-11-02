@@ -89,14 +89,22 @@
       <p>Bir resminize kenar çizgisi tanımı yapıp daha sonrada köşelerini
 ovalleştirmek istediğinizde köşelerdeki kenar çizgilerinde sorun
 yaşıyoruz.</p>
-<div class="codehilite"><pre> <span class="cp">&lt;!DOCTYPE html&gt;</span> <span class="nt">&lt;html&gt;</span> <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;title&gt;</span>border-radius<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+    <span class="nt">img</span><span class="p">{</span> <span class="k">border</span><span class="o">:</span><span class="m">2px</span> <span class="k">solid</span> <span class="m">#999</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">8px</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">8px</span><span class="p">;</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">8px</span><span class="p">;}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;gudi.jpg&quot;</span> <span class="na">width=</span><span class="s">&quot;75&quot;</span> <span class="na">height=</span><span class="s">&quot;75&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p><title>border-radius</title> <style> img{ border:2px solid #999;
--webkit-border-radius:8px; -moz-border-radius:8px; border-radius:8px;}
-</style> </head> <body> <img src="../static/gudi.jpg" width="75"
-height="75" /> </body> </html> </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/border_radius_resim_.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh5.googleusercontent.com/gLndP4VPjq8o0ReURiijye0gHVHNWXVLgerrYuZ7rDSTu5ZOkhayATtTmspfym08AUQhceJxvnhmSz_03Tr325FWhugB4g5-aC6OarKEqxlF0gcTiA" /></p>
 <p>Kırmızı ile işaretlediğim yere dikkat ederseniz sorunlu gözüken
@@ -107,17 +115,23 @@ uğraşacaktı.</p>
 <h3>Çözüm1:</h3>
 <p>Çözüm için dışa bir kapsayıcı div atayıp kenar çizgisi tanımını bu
 katmana yaparak çözebiliyoruz.</p>
-<div class="codehilite"><pre> <span class="cp">&lt;!DOCTYPE html&gt;</span> <span class="nt">&lt;html&gt;</span> <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;title&gt;</span>css3<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+    <span class="nc">.resimKapsulu</span><span class="p">{</span><span class="k">border</span><span class="o">:</span><span class="m">2px</span> <span class="k">solid</span> <span class="m">#999</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">75px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">75px</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">12px</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">12px</span><span class="p">;</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">12px</span><span class="p">;}</span>
+    <span class="nc">.resimKapsulu</span> <span class="nt">img</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">75px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">75px</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;resimKapsulu&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;gudi.jpg&quot;</span> <span class="na">width=</span><span class="s">&quot;75&quot;</span> <span class="na">height=</span><span class="s">&quot;75&quot;</span> <span class="nt">/&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p><title>css3</title> <style> .resimKapsulu{border:2px solid #999;
-width:75px; height:75px; -webkit-border-radius:12px;
--moz-border-radius:12px; border-radius:12px;} .resimKapsulu
-img{width:75px; height:75px; -webkit-border-radius:10px;
--moz-border-radius:10px; border-radius:10px;} </style> </head>
-<body> <div class="resimKapsulu"><img src="../static/gudi.jpg" width="75"
-height="75" /></div> </body> </html> </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/border_radius_resim.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh6.googleusercontent.com/BguAW9wciO-kWJxCqLkWj7-0VoGg6RRXe_UfOCBWrAXJMc41F-Qt3EtMTz9nwNJo2grEnNe83nG4Je2u1uPE-mSBlm6cj0IIfam1ucRN9k0EYQJjVQ" /></p>
 <p>Kodunu aldığım sitede resim ve kapsayıcı katmana aynı border-radius
@@ -132,51 +146,61 @@ verdim.</p>
 <p>Firefox3.6 ve Opera için <a href="http://www.webdesignerwall.com/tutorials/css3-rounded-image-with-jquery/">CSS3 Rounded Image With jQuery</a>
 makalesindeki yöntemden yaralanabiliriz.</p>
 <p>HTML kodumuzu şöyle değiştirelim</p>
-<ul>
-<li><div class="resimKapsulu" style="background: url(gudi.jpg)
-    no-repeat center center; width: 75px; height: 75px;"></li>
-<li><img src="../static/gudi.jpg" width="75" height="75" style="opacity: 0;"
-    /></li>
-<li></div></li>
-</ul>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;resimKapsulu&quot;</span> <span class="na">style=</span><span class="s">&quot;background: url(gudi.jpg) no-repeat center center; width: 75px; height: 75px;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;gudi.jpg&quot;</span> <span class="na">width=</span><span class="s">&quot;75&quot;</span> <span class="na">height=</span><span class="s">&quot;75&quot;</span> <span class="na">style=</span><span class="s">&quot;opacity: 0;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+
 <p>Resme saydamlık verilip görünmez yapılıyor ve satır için css kodları
 tanımlanıyor, amaç buradaki kodları jquery yardımı ile bg olarak
 tanımlamak .</p>
 <p>jQuery kodumuz</p>
-<div class="codehilite"><pre> <span class="cp">&lt;!DOCTYPE html&gt;</span> <span class="nt">&lt;html&gt;</span> <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;title&gt;</span>css3<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+ <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.resimKapsulu&quot;</span><span class="p">).</span><span class="nx">load</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">wrap</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+            <span class="k">return</span> <span class="s1">&#39;&lt;span class=&quot;&#39;</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;&quot; style=&quot;background:url(&#39;</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;) no-repeat center center; width: &#39;</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">width</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;px; height: &#39;</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">height</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;px;&quot; /&gt;&#39;</span><span class="p">;</span>
+        <span class="p">});</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;opacity&quot;</span><span class="p">,</span><span class="s2">&quot;0&quot;</span><span class="p">);</span>
+    <span class="p">});</span>
+
+ <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nc">.resimKapsulu</span><span class="p">{</span><span class="k">border</span><span class="o">:</span><span class="m">2px</span> <span class="k">solid</span> <span class="m">#999</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">75px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">75px</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">12px</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">12px</span><span class="p">;</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">12px</span><span class="p">;}</span>
+<span class="nc">.resimKapsulu</span> <span class="nt">img</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">75px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">75px</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;resimKapsulu&quot;</span> <span class="na">style=</span><span class="s">&quot;background: url(gudi.jpg) no-repeat center center; width: 75px; height: 75px;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;gudi.jpg&quot;</span> <span class="na">width=</span><span class="s">&quot;75&quot;</span> <span class="na">height=</span><span class="s">&quot;75&quot;</span> <span class="na">style=</span><span class="s">&quot;opacity: 0;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p><title>css3</title> <script type="text/javascript"
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-<script type="text/javascript"> $(document).ready(function() {
-$(".resimKapsulu").load(function() { $(this).wrap(function(){ return
-'<span class="' + $(this).attr('class') + '" style="background:url(' +
-$(this).attr('src') + ') no-repeat center center; width: ' +
-$(this).width() + 'px; height: ' + $(this).height() + 'px;" />'; });
-$(this).css("opacity","0"); }); }); </script> <style>
-.resimKapsulu{border:2px solid #999; width:75px; height:75px;
--webkit-border-radius:12px; -moz-border-radius:12px;
-border-radius:12px;} .resimKapsulu img{width:75px; height:75px;
--webkit-border-radius:10px; -moz-border-radius:10px;
-border-radius:10px;} </style> </head> <body> <div
-class="resimKapsulu" style="background: url(gudi.jpg) no-repeat center
-center; width: 75px; height: 75px;"> <img src="../static/gudi.jpg" width="75"
-height="75" style="opacity: 0;" /> </div> </body> </html> </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/border_radius_resim2.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh3.googleusercontent.com/HIOubjsFMP0fFhreTxPL2NxZltLCUsIANHwS9C193L8OIiw5fEIgs37R3XusyJUn8NeQZYR3u6pK5JevZJi1YhbcKBksfgNeT0mIC4sTGiTQ8uK-_w" /></p>
 <p>Ben bu çalışmayı iphone ve ipad için kod geliştirirken denk geldiğim
 için diğer tarayıcıların benim için pek önemi yoktu açıkçası. iphone ve
 ipad için ilk çözümü uygulayıp geçtim açıkçası, ama lazım olanlar için
 ikinci yöntem de kullanılabilir.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/">http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/</a></li>
-<li>[http://www.webdesignerwall.com/tutorials/css3-rounded-image-with-jquery/][CSS3     Rounded Image With jQuery]</li>
+<li><a href="http://www.webdesignerwall.com/tutorials/css3-rounded-image-with-jquery/">http://www.webdesignerwall.com/tutorials/css3-rounded-image-with-jquery/</a></li>
 <li><a href="http://stick.gk2.sk/blog/2009/03/image-with-rounded-corners-using-css3/">http://stick.gk2.sk/blog/2009/03/image-with-rounded-corners-using-css3/</a></li>
 <li><a href="http://www.swedishfika.com/2010/03/19/rounded-corners-on-images-with-css3-2/">http://www.swedishfika.com/2010/03/19/rounded-corners-on-images-with-css3-2/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

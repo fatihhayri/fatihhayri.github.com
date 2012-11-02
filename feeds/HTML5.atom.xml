@@ -61,21 +61,20 @@ araştırdıklarım konulardan bir tanesi de konu başlığından
 anlaşılabileceği gibi. HTML dokümanının yapısını oluşturan elemanlar
 hakkında ufak bir yazı yamayı planladım. Aslında mevcut HTML’de farkını
 yazacağım. Daha bir sadeleştirilmiş diyebiliriz.&lt;/p&gt;
-&lt;h3&gt;DOCTYPE&lt;/h3&gt;
+&lt;h2&gt;DOCTYPE&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/"&gt;Doğru DOCTYPE Kullanımı&lt;/a&gt; hakkında bir makalem vardır. Doctype,
 dokümanın tipi gösteriyor yorumlayıcıya(tarayıcıya). Bu tanımlar çok
 uzun metinler içeriyordu ancak HTML5 bu tanımı kısaltmış ve çok güzel
 yapmış.&lt;/p&gt;
 &lt;p&gt;Şimdiye kadar ve hala kullanmakta olduğumuz bir doctype örneği,&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;/p&gt;
 &lt;p&gt;Yukarıdaki HTML etiketi bize bu html dokümanının xhtml 1.0 olduğunu ve
 Transitional ise hem HTML hemde XHTML kurallarının bu dokümanda geçerli
 olduğunu gösteriyor. Peki HTML5’de bu işi nasıl yapıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -89,11 +88,17 @@ duyarlılığı yoktur.&lt;/p&gt;
 &lt;p&gt;HTML5 öncesi sürümler SGML kökenli diller olduğu için DTD tanımlarına
 gereksinim duyardı ancak HTML5 SGML kökenli olmadığı için buna gerek
 duymaz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="cp"&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt; ...
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Peki burada bir sürüm numarası yok nasıl sonraki sürümler ile bunu
 ayıracağız?&lt;/p&gt;
 &lt;p&gt;Burada şöyle bir şey var HTML5 geliştirilirken eğer buraya bir sürüm
@@ -103,77 +108,81 @@ kefeye konmuş oldu. Geçmişide destekleyen bir yapıya kavuşturulmuş oldu.&l
 &lt;p&gt;Aslında yeni nesil tarayıcılar bir tanım yapılmasa daha standart modda
 belgeyi tanımladığı için Doctype’ın pek bir geçerliliği kalmamış idi ama
 yinede bir tanım yapmak iyidir. İE’nin ne yapacağı belli olmaz.&lt;/p&gt;
-&lt;h3&gt;&lt;html&gt; Elemanı&lt;/h3&gt;
+&lt;h2&gt;&amp;lt;html&gt; Elemanı&lt;/h2&gt;
 &lt;p&gt;Html dokümanlarını çevreleyen kapsayıcı bir elemandır &lt;html&gt; html5
 öncesinde tanımımız&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;en&amp;quot;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;en&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;xml:lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;xml:lang="en"&amp;gt; &lt;/p&gt;
 &lt;p&gt;Şeklinde idi. Buradaki xmlns değeri bu dokümanın anaçatısının
 &lt;a href="http://www.w3.org/1999/xhtml"&gt;http://www.w3.org/1999/xhtml&lt;/a&gt; kullandığını gösteriyor. HTML5
 anaçatısı belli olduğu için tekrar tanımlamaya gerek duymuyor ve ayrıca
 iki adet dil tanımınında gereksiz olduğunu kabul ediyor ve sonuçta
 html5’teki tanımımız;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;şeklinde oluyor.&lt;/p&gt;
-&lt;h3&gt;&lt;head&gt; içi tanımlar&lt;/h3&gt;
+&lt;h2&gt;&amp;lt;head&gt; içi tanımlar&lt;/h2&gt;
 &lt;p&gt;HTML5 sadece Doctype tanımını değil ayrıca &lt;head&gt; içinde kullandığımız
 etiketleride ciddi manada basit hale getirmiştir.&lt;/p&gt;
 &lt;p&gt;Karakter kodu için kullandığımız&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;charset=utf-8" /&amp;gt; &lt;/p&gt;
 &lt;p&gt;Yerine HTML5 karışılığı&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;UTF-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;UTF-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Gayet basit ve akılda kalıcı.&lt;/p&gt;
 &lt;p&gt;Gelelim script eklemek için kullandığımız koda;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;dosya_adi.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;dosya_adi.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;HTML5'de ise;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;file.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;file.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Benzer şekilde ilişkilendirilmiş dokümanlar için kullandığımız&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;style-original.css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;style-original.css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;/&amp;gt; &lt;/p&gt;
 &lt;p&gt;yerine HTML5'de&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;style-original.css&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;style-original.css&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;İşin kısacası, tüm tanımları olabildiğince kısaltmışlar. Süperde
 yapmışlar, şimdiye kadar bize çektirdikleri eziyet neydi kardeşim.&lt;/p&gt;
 &lt;p&gt;Sonuç olarak bir HTML5 basit yapısı&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;keywords&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;robots&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;charset="utf-8"&amp;gt; &lt;title&gt;&lt;/title&gt; &lt;meta name="description"
-content="" /&gt; &lt;meta name="keywords" content="" /&gt; &lt;meta
-name="robots" content="" /&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt;&lt;/p&gt;
 &lt;p&gt;Şeklinde olacaktır.&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.w3schools.com/html5/tag_doctype.asp"&gt;http://www.w3schools.com/html5/tag_doctype.asp&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://diveintohtml5.org/semantics.html"&gt;http://diveintohtml5.org/semantics.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/"&gt;http://www.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://boblet.tumblr.com/post/141239118/html5-structure4"&gt;http://boblet.tumblr.com/post/141239118/html5-structure4&lt;/a&gt;&lt;br /&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="DOCTYPE"></category><category term="head"></category><category term="html5"></category></entry></feed>
+&lt;/ul&gt;</summary><category term="DOCTYPE"></category><category term="head"></category><category term="html5"></category></entry></feed>

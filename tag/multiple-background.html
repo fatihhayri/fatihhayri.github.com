@@ -92,13 +92,13 @@ durumu görebiliriz.</p>
 <p>CSS3 geliştiricileri bu sorunu gördü ve çözüm üretildi. CSS3 background
 tanımında birden fazla resim tanımlamamıza izin veriyor. Birden fazla
 tanımı yapmak için aralarına virgül koyuyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">background</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="nt">image_1</span><span class="nc">.jpg</span><span class="o">)</span> <span class="nt">top</span> <span class="nt">right</span> <span class="nt">no-repeat</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">background</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="nt">image_1</span><span class="nc">.jpg</span><span class="o">)</span> <span class="nt">top</span> <span class="nt">right</span> <span class="nt">no-repeat</span><span class="o">,</span> 
+<span class="nt">url</span><span class="o">(</span><span class="nt">image_2</span><span class="nc">.gif</span><span class="o">)</span> <span class="nt">bottom</span> <span class="nt">right</span> <span class="nt">no-repeat</span><span class="o">,</span>
+<span class="nt">url</span><span class="o">(</span><span class="nt">image_2</span><span class="nc">.png</span><span class="o">)</span> <span class="nt">bottom</span> <span class="nt">right</span> <span class="nt">no-repeat</span><span class="o">;</span>
 </pre></div>
 
 
-<p>url(image_2.gif) bottom right no-repeat, url(image_2.png) bottom right
-no-repeat; </p>
-<p><strong>Browser Uyumu:</strong><br />
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong><br />
 Internet Explorer 9+<br />
 Firefox 3.6+<br />
 Chrome 2+<br />
@@ -113,23 +113,30 @@ destekleyen tarayıcılar için ise yeni yöntemi kullanarak aşmaya çalışan
 çözümler var ancak bu yöntemler koordinasyon sorununa neden olacaktır.
 Ama bu yöntemi uzun süre kullanmayacağız anlamına gelmesin mobil mecrada
 bu metodu kullanabiliriz.</p>
-<h3>Örnek 1:</h3>
+<h2>Örnek 1:</h2>
 <p>Bu yöntemi kullanarak daha önce yaptığımız <a href="http://www.fatihhayrioglu.com/css-ile-buton-yapmak/">css ile buton yapmak</a> konumuzda anlattığımız Görselliği Arttırılmış Esnek
 Yapılı Butonlar yöntemi birde yeni bu tanım ile yapalım.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Örnek Buton Metni<span class="nt">&lt;/a&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Örnek Buton Metni<span class="nt">&lt;/a&gt;</span>
 </pre></div>
 
 
 <p>CSS kodumuz</p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#363636</span> <span class="p">}</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">font</span><span class="o">:</span><span class="k">bold</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#363636</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span><span class="k">bold</span> <span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#363636</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">5px</span> <span class="m">14px</span> <span class="m">0</span> <span class="m">14px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">23px</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(cancanli_butonlar_ard_.gif)</span> <span class="k">left</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="o">,</span> <span class="sx">url(cancanli_butonlar_ard_.gif)</span> <span class="k">right</span> <span class="m">-58px</span> <span class="k">no-repeat</span><span class="o">,</span> <span class="sx">url(cancanli_butonlar_ard_.gif)</span> <span class="k">center</span> <span class="m">-29px</span> <span class="k">repeat-x</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>14px Arial, Helvetica, sans-serif; color:#363636; float:left;
-padding:5px 14px 0 14px; height:23px; text-decoration:none;
-background:url(cancanli_butonlar_ard_.gif) left top no-repeat,
-url(cancanli_butonlar_ard_.gif) right -58px no-repeat,
-url(cancanli_butonlar_ard_.gif) center -29px repeat-x } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/coklu_ardalan_tanimi/css_ile_buton.html">tıklayınız.</a></p>
 <p>Burada şuna dikkat ediyoruz, background tanımı yapılırken sıralama
 önemli. Sıralama şöyle oluyor background: sol, sağ ve orta şeklinde
@@ -142,7 +149,7 @@ almakta, bundan dolayıdır ki yapacağımız uygulamalar basit olabilir ama
 özellikti. Her defasında hayıflanıyordum, keşke şöyle bir özellik olsada
 kullansak diye, gerçi hala kullanamıyoruz. Mobil araçlar için kod
 yazarken kullanabilmemiz çok güzel.</p>
-<h3>Örnek 2:</h3>
+<h2>Örnek 2:</h2>
 <p><a href="http://www.fatihhayrioglu.com/alinti-blockquote-ve-q-etiketleri/">Alıntı: blockquote ve q etiketleri</a> makalemize tekrar bakalım ve bu
 örneği çoklu ardalan ile ne kadar kolaylaştırdığımızı görelim.</p>
 <p><img alt="" src="https://lh5.googleusercontent.com/SJPUNhGo1EIpgZCusQV8ahSeUnnYrIbtpMefhym0mfKhJhjgLsGQ9QB1mkm8-jwnpF9YNoPoS8feY1b5zu2dlGxADYrohj8UtXwqP7oNGK6MCYRyVIU" /></p>
@@ -155,33 +162,42 @@ tek bir eleman ile bu işi yapabiliriz. Tabi burada cite etiketinin
 anlamından dolayı bırakacağız ama yine o olmadanda bu işi
 yapabileceğimizi bilelim.</p>
 <p>CSS Sprite resmimiz aşağıdaki gibi tek resim olacaktır.</p>
-<p>[<img alt="" src="static/images/alinti_ard-300x12.gif" title="alinti_ard" />][]</p>
+<p><img alt="" src="static/images/alinti_ard-300x12.gif" /></p>
 <p>HTML kodu</p>
-<div class="codehilite"><pre> <span class="nt">&lt;blockquote&gt;</span>Sevgide güneş gibi ol, dostluk ve kardeşlikte
+<div class="codehilite"><pre><span class="nt">&lt;blockquote&gt;</span>Sevgide güneş gibi ol, dostluk ve kardeşlikte akarsu gibi ol, hataları örtmede gece gibi ol, tevazuda toprak gibi ol, öfkede ölü gibi
+ol, her ne olursan ol, ya olduğun gibi görün, ya göründüğün gibi ol.<span class="nt">&lt;/blockquote&gt;</span>
+<span class="nt">&lt;cite&gt;</span>Mevla&#39;na Celaleddin-i Rumi<span class="nt">&lt;/cite&gt;</span>
 </pre></div>
 
 
-<p>akarsu gibi ol, hataları örtmede gece gibi ol, tevazuda toprak gibi ol,
-öfkede ölü gibi ol, her ne olursan ol, ya olduğun gibi görün, ya
-göründüğün gibi ol.</blockquote> <cite>Mevla'na Celaleddin-i
-Rumi</cite> </p>
 <p>CSS kodu</p>
-<div class="codehilite"><pre> <span class="nt">blockquote</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">224px</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">30px</span> <span class="m">12px</span> <span class="m">0</span> <span class="m">12px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">blockquote</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">224px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">30px</span> <span class="m">12px</span> <span class="m">0</span> <span class="m">12px</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span><span class="k">bold</span> <span class="m">14px</span><span class="o">/</span><span class="m">1.7em</span> <span class="n">Georgia</span><span class="o">,</span> <span class="s2">&quot;Times New Roman&quot;</span><span class="o">,</span> <span class="n">Times</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/alinti_ard.gif)</span> <span class="m">-490px</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="o">,</span> <span class="sx">url(images/alinti_ard.gif)</span> <span class="m">-242px</span> <span class="k">bottom</span> <span class="k">repeat-y</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">cite</span><span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">1.2em</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="o">:</span><span class="m">29px</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#C6D9F1</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">underline</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">240px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/alinti_ard.gif)</span> <span class="k">no-repeat</span> <span class="m">1px</span> <span class="k">bottom</span><span class="o">,</span> <span class="sx">url(images/alinti_ard.gif)</span> <span class="m">-242px</span> <span class="k">bottom</span> <span class="k">repeat-y</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>color: #fff; text-align:center; font:bold 14px/1.7em Georgia, "Times
-New Roman", Times, serif; background: url(images/alinti_ard.gif) -490px
-0 no-repeat, url(images/alinti_ard.gif) -242px bottom repeat-y; } cite{
-font-size: 1.2em; padding-bottom:29px; display:block; text-align:center;
-color:#C6D9F1; text-decoration:underline; width:240px; background:
-url(images/alinti_ard.gif) no-repeat 1px bottom,
-url(images/alinti_ard.gif) -242px bottom repeat-y; } </p>
 <p>Aslında css kodumuz önceki koddan pek farkı yok. Farklı olan iki kısım
 var. background tanımları.</p>
-<p>[<img alt="" src="static/images/alinti_sema-300x45.gif" title="alinti_sema" />][]</p>
+<p><img alt="" src="static/images/alinti_sema-300x45.gif" /></p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/coklu_ardalan_tanimi/alinti_coklu_ardalan.html">tıklayınız.</a></p>
-<h3>Örnek 3:</h3>
+<h2>Örnek 3:</h2>
 <p>3. bir örneğide paralaks bir zemin için yapalım.
 <a href="http://www.storiesinflight.com/">www.storiesinflight.com</a> buradaki örneği yapalım.</p>
 <p>Her biri ayrı ayrı olan resimler(çimen, ağaç, bulut ve gökyüzü) üst üste
@@ -189,22 +205,24 @@ koyarak bir resmi elde edeceğiz. Örneği aldığımız sitede bu resme
 hareketde kazandırılmıştır, ancak bizim konumuz olmadığı için işin bu
 kısmına girmeyeceğiz.</p>
 <p>HTML kodu</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;paralaks&quot;</span><span class="nt">&gt;</span> Lorem ipsum dolor sit amet, consectetur
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;paralaks&quot;</span><span class="nt">&gt;</span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam lacus, consequat eget sodales non, ultrices vitae arcu. Vivamus quis felis sit amet mi malesuada gravida vitae rhoncus diam.
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>adipiscing elit. Pellentesque quam lacus, consequat eget sodales non,
-ultrices vitae arcu. Vivamus quis felis sit amet mi malesuada gravida
-vitae rhoncus diam. </div> </p>
 <p>CSS kodu</p>
-<div class="codehilite"><pre> <span class="nf">#paralaks</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">400px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">180px</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">5px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#paralaks</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">400px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">180px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">5px</span><span class="p">;</span>
+    <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(images/cimen.png)</span><span class="o">,</span> <span class="sx">url(images/agac.png)</span><span class="o">,</span> <span class="sx">url(images/bulut.png)</span><span class="o">,</span> <span class="sx">url(images/gokyuzu.png)</span><span class="p">;</span>
+    <span class="k">background-repeat</span><span class="o">:</span> <span class="k">repeat-x</span><span class="o">,</span> <span class="k">no-repeat</span><span class="o">,</span> <span class="k">repeat-x</span><span class="o">,</span> <span class="k">repeat-x</span><span class="p">;</span>
+    <span class="k">background-position</span><span class="o">:</span><span class="m">0</span> <span class="m">0</span><span class="o">,</span> <span class="m">120px</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-image: url(images/cimen.png), url(images/agac.png),
-url(images/bulut.png), url(images/gokyuzu.png); background-repeat:
-repeat-x, no-repeat, repeat-x, repeat-x; background-position:0 0, 120px
-0, 0 0, 0 0; } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/coklu_ardalan_tanimi/coklu_ard_paralaks.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh3.googleusercontent.com/GJZCOSKaonqtZWRowbC3piRUAtnokihjVZiJsrpoH0o57aizW_h-lUD9BVbVaxS1LfTy_epfpqAZ4QfVDAY7OxMblGYo2jAChutnXQcM8Mdvs7QJM34" /></p>
 <p>Örnekte görüldüğü gibi bir elemana 4 adet resim tanımladık. background
@@ -213,7 +231,7 @@ kısaltmada uygulayabiliriz.</p>
 <p><img alt="" src="https://lh3.googleusercontent.com/oxpb3X9kHeRE5dTNBgxITu8aboSFcjEy794Lk6s_f2yZaGQ907oICh-OWvcfbaK5NK7aLjgSnXrv8v6EU8biB5g4kiahmYf1tTaOqBboxqapOSS2_YY" /></p>
 <p>Yukarıdaki resimde de görüldüğü gibi ilk tanımlamamız en önde daha
 sonradaki resimlerde  sıralamaya göre arkaya doğru sıralanmaktadır.</p>
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>Yukarıda örnek olarak verdiğimiz sayfalarda görüldüğü gibi birçok yerde
 kullanılabilecek bir özelliktir çoklu ardalan özelliği. Daha yeni bir
 özellik olması açısından zamanla zihnimizde daha gelişmiş örnekler yer
@@ -225,7 +243,7 @@ yapabileceğim birçok uygulamayı border-image özelliği ile daha kolay
 yapabileceğimiz gördüm. İleride zamanı gelince onuda anlatacağız, ama bu
 özelikte bizi heyecenlandırıyor açıkçası.</p>
 <p>Kalın sağlıcakla.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://helephant.com/2009/11/css3-multiple-background-images/">http://helephant.com/2009/11/css3-multiple-background-images/</a></li>
 <li><a href="http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/">http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/</a></li>
@@ -237,15 +255,9 @@ yapabileceğimiz gördüm. İleride zamanı gelince onuda anlatacağız, ama bu
 <li><a href="http://css-tricks.com/css3-multiple-backgrounds-obsoletes-sliding-doors/">http://css-tricks.com/css3-multiple-backgrounds-obsoletes-sliding-doors/</a></li>
 <li><a href="http://www.storiesinflight.com/html5/backgrounds.html">http://www.storiesinflight.com/html5/backgrounds.html</a> (paralaks)</li>
 <li><a href="http://www.mightymeta.co.uk/progressive-decoration-with-css3-multiple-backgrounds/">http://www.mightymeta.co.uk/progressive-decoration-with-css3-multiple-backgrounds/</a></li>
-<li><a href="http://www.lifeathighroad.com/css3-lessons/css3-lessons-multiple-background-images/">http://www.lifeathighroad.com/css3-lessons/css3-lessons-multiple-background-images/</a>
-    (4 köşe resim)</li>
-<li><a href="http://www.paulrhayes.com/experiments/parallax/#experiment">http://www.paulrhayes.com/experiments/parallax/#experiment</a>
-    (örnek)</li>
-</ul>
-</p>
-
-<p>[<img alt="" src="static/images/alinti_ard-300x12.gif" title="alinti_ard" />]: /images/alinti_ard.gif
-  [<img alt="" src="static/images/alinti_sema-300x45.gif" title="alinti_sema" />]: /images/alinti_sema.gif</p><p><a href=".././css3-coklu-ardalanmultiple-background/#disqus_thread">yorum var</a>.</p>
+<li><a href="http://www.lifeathighroad.com/css3-lessons/css3-lessons-multiple-background-images/">http://www.lifeathighroad.com/css3-lessons/css3-lessons-multiple-background-images/</a></li>
+<li><a href="http://www.paulrhayes.com/experiments/parallax/#experiment">http://www.paulrhayes.com/experiments/parallax/#experiment</a></li>
+</ul><p><a href=".././css3-coklu-ardalanmultiple-background/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

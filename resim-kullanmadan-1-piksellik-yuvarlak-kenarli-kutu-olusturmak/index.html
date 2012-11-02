@@ -86,7 +86,8 @@
 
 
 </footer><!-- /.post-info -->
-      <p>[<img alt="" src="../static/images/1px_yuvarlak_kutu_yak-300x125.gif" title="1px_yuvarlak_kutu_yak" />][]Birçok yuvarlak kenarlı kutu oluşturma tekniği mevcut. Daha
+      <p><img alt="" src="../static/images/1px_yuvarlak_kutu_yak-300x125.gif" /></p>
+<p>Birçok yuvarlak kenarlı kutu oluşturma tekniği mevcut. Daha
 önce yuvarlak kenarlı kutuların nasıl yapıldığını anlattım “<a href="http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutular/">Yuvarlak Kenarlı Kutular</a>”, ayrıca CSS3 ile gelen border-radius özelliğinden
 bahsettiğimiz “<a href="http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutularborder-radius-olusturmak/">Yuvarlak kenarlı kutular(border-radius) oluşturmak</a>”
 makalemizde bahsettik. Şimdide daha farklı belki çok fazla kullanılmayan
@@ -102,60 +103,112 @@ blok-level elemente ihtiyacımız var, dıştaki elemanı üstten ve alttan
 bir piksel fazlalık eklerken, içteki elemanı sağ ve soldan eksi margin
 değeri vererek sağ ve solda taşırarak 1 piksellik bir yuvarlak kenar
 elde ederiz. Bu işlemi iki şekilde yapabiliriz.</p>
-<h3>Padding ve margin yardımı ile oluşturmak</h3>
+<h2>Padding ve margin yardımı ile oluşturmak</h2>
 <p>HTML kodu</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kutu1&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;p&gt;</span>{ CSS, XHTML ve
+<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kutu1&quot;</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;p&gt;</span>{ CSS, XHTML veJavascript }<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>Javascript }</p> </div> </p>
 <p>CSS kodu</p>
-<div class="codehilite"><pre> <span class="nc">.kutu1</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#3274D0</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">1px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nc">.kutu1</span><span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span><span class="m">#3274D0</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">1px</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">1px</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nc">.kutu1</span> <span class="nt">p</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#3274D0</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">-1px</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">2px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>padding:1px 0; } .kutu1 p{ background:#3274D0; margin:0 -1px;
-padding:2px; } </p>
 <p><img alt="" src="https://lh4.googleusercontent.com/23SRG-1WKRPSijX0GVloqxvgBzLJFRxuUbVjkU36hzGacLp5Y5zz6AxULdUJdl3zrKnFODcY7O4NNURxY7BGChNRa52LUeYt1Kj9l7AYsBDvejEKcQ" /></p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/1px_yuvarlak_kenar_1.html">tıklayınız.</a></p>
-<h3>Margin ve border yardımı ile oluşturmak</h3>
+<h2>Margin ve border yardımı ile oluşturmak</h2>
 <p>HTML Kodumuz yine aynı</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kutu1&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;p&gt;</span>{ CSS, XHTML ve
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kutu1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>{ CSS, XHTML ve Javascript }<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>Javascript }</p> </div> </p>
 <p>CSS kodumuz</p>
-<div class="codehilite"><pre> <span class="nc">.kutu1</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#848484</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span><span class="m">1px</span>
+<div class="codehilite"><pre><span class="nc">.kutu1</span><span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span><span class="m">#848484</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#848484</span><span class="p">;</span> 
+    <span class="k">border-left-width</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+    <span class="k">border-right</span><span class="o">-</span><span class="k">width</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">1px</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nc">.kutu1</span> <span class="nt">p</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#d3d3d3</span><span class="p">;</span> 
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#848484</span><span class="p">;</span> 
+    <span class="k">border-top-width</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+    <span class="k">border-bottom-width</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>  
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">-1px</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">2px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>solid #848484; border-left-width:0; border-right-width:0; margin:0 1px;
-} .kutu1 p{ background:#d3d3d3; border:1px solid #848484;
-border-top-width:0; border-bottom-width:0; margin:0 -1px; padding:2px; }</p>
 <p><img alt="" src="https://lh3.googleusercontent.com/UotpXlc2Cn_hp0o3sQ1EuTg865C-y_R6UpG-vCanTBXjp2pi9cFzaSqTmHyc5sJVVHRooMlaINOMQXkGzA_maIjzAKAVllPjkrcD2o5m6tz3sYAJZQ" /></p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/1px_yuvarlak_kenar_2.html">tıklayınız.</a></p>
-<h3>Butonlarda kullanımı</h3>
+<h2>Butonlarda kullanımı</h2>
 <p>Bu yöntemleri butonlarımızda da kullanabiliriz.</p>
 <p>HTML Kodumuz</p>
-<div class="codehilite"><pre> <span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;&lt;a</span>
+<div class="codehilite"><pre><span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;span&gt;</span>Bursaspor<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;span&gt;</span>Trabzonspor<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;span&gt;</span>Kayserispor<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<p>href=""&gt;<span>Bursaspor</span></a></li> <li><a
-href="../static"><span>Trabzonspor</span></a></li> <li><a
-href="../static"><span>Kayserispor</span></a></li> </ul> </p>
 <p>CSS kodumuz</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="p">{</span><span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">}</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">250px</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span> 
+    <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+    <span class="k">margin-bottom</span><span class="o">:</span><span class="m">5px</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#3274D0</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">1px</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">1px</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> 
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="nt">span</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#3274D0</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">-1px</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">2px</span><span class="p">;</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#fff</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="nt">span</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#3274D0</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>list-style: none; margin-bottom:5px} ul li a{display:block;
-background:#3274D0; margin:0 1px; padding:1px 0; position: relative;
-text-decoration:none;} ul li a span{background:#3274D0; margin:0 -1px;
-padding:2px; display: block; color:#fff} ul li
-a:hover{background:#fff;} ul li a:hover span{background:#fff;
-color:#3274D0} </p>
 <p><img alt="" src="https://lh4.googleusercontent.com/6mgdtcyUg4pDLZGE4dbY1tvQQYUzQz3mhfMaqMmkWS9Zd6y5GZqEWBMeP7vdDxEKZel5JGrfTIGjuPH5c-M6UY4SxaHF7l58yYJhuFtr_vxfQlnuRQ" /></p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/1px_yuvarlak_kenar_1_hover.html">tıklayınız.</a></p>
 <p>Sonuç olarak yukarıda görüldüğü gibi kolay bir kodlama ile 1 piksellik
@@ -165,16 +218,13 @@ internet explorer sürümlerinde(6,7,8,9) herhangi bir ek koda gereksinim
 duymadan çalışmasıdır. Bu yöntem aklınızın bir köşesinde kalsın
 bakarsınız bir gün lazım olur.</p>
 <p>Hadi kalın sağlıcakla.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://dmitry-baranovskiy.tumblr.com/post/34061791/one-pixel-rounded-corners">http://dmitry-baranovskiy.tumblr.com/post/34061791/one-pixel-rounded-corners</a></li>
 <li><a href="http://www.askthecssguy.com/2008/03/one_pixel_notched_corners_as_u.html">http://www.askthecssguy.com/2008/03/one_pixel_notched_corners_as_u.html</a></li>
 <li><a href="http://www.onderhond.com/blog/work/1px-rounded-corners">http://www.onderhond.com/blog/work/1px-rounded-corners</a></li>
 <li><a href="http://www.alistapart.com/articles/mountaintop/">http://www.alistapart.com/articles/mountaintop/</a></li>
 </ul>
-</p>
-
-<p>[<img alt="" src="../static/images/1px_yuvarlak_kutu_yak-300x125.gif" title="1px_yuvarlak_kutu_yak" />]: /images/1px_yuvarlak_kutu_yak.gif</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

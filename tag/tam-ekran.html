@@ -88,22 +88,30 @@ problemimiz bu özelliği desteklemeyen tarayıcılar için nasıl bir çözüm
 bulmalıyız.</p>
 <p>Bu makalede farklı tarayıcılar için sayfamızın zeminini tam kaplayan
 ardalan resimlerini nasıl tanımlayacağımızı anlatmaya çalışacağım.</p>
-<h3>CSS3 background-size ile basit şekilde yapalım</h3>
+<h2>CSS3 background-size ile basit şekilde yapalım</h2>
 <p>Bir önceki makalede de anlattığım gibi background-size özelliği bu iş
 için biçilmiş kaftandır. Çok basit bir kod ile istediğimize ulaşırız.</p>
-<div class="codehilite"><pre> <span class="nt">html</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/bg.jpg)</span> <span class="k">no-repeat</span> <span class="k">center</span> <span class="k">center</span>
+<div class="codehilite"><pre><span class="nt">html</span> <span class="p">{</span>
+       <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/bg.jpg)</span> <span class="k">no-repeat</span> <span class="k">center</span> <span class="k">center</span> <span class="k">fixed</span><span class="p">;</span>
+       <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span> <span class="n">cover</span><span class="p">;</span>
+       <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span> <span class="n">cover</span><span class="p">;</span>
+       <span class="o">-</span><span class="err">o</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span> <span class="n">cover</span><span class="p">;</span>
+       <span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span> <span class="n">cover</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>fixed; -webkit-background-size: cover; -moz-background-size: cover;
--o-background-size: cover; background-size: cover; } </p>
 <p>Bir örnek yapalım</p>
-<div class="codehilite"><pre> <span class="nt">html</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="sx">url(&quot;zemin_resmi.jpg&quot;)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span> <span class="k">fixed</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">html</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(&quot;zemin_resmi.jpg&quot;)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span> <span class="k">fixed</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span><span class="n">cover</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span><span class="n">cover</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span><span class="n">cover</span><span class="p">;</span>
+    <span class="o">-</span><span class="err">o</span><span class="o">-</span><span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span><span class="n">cover</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-size:cover; -webkit-background-size:cover;
--moz-background-size:cover; -o-background-size:cover; } </p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/tam_sayfa_bg.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh6.googleusercontent.com/x55IiCT52mJIMb9oYddTeHpX7Ww7ti3puoZiped0VQ-SflPtR_mrldscvuWoco7aOWi0dbQ2llnOVRuch-2dgpR_LSkZU76CiKam4NThM2DYry7j-Po" /></p>
 <p>Ardalan resmini
@@ -113,66 +121,87 @@ aldım.</p>
 tarayıcılarda sorun yaşamamızdır. Kaydırma çubuğunun hareketi ile zemin
 resmi kaymaması için resmi sabitledik(<strong>fixed</strong>). <strong>cover</strong> özelliği ile
 resmi zemine yaydık. <a href="http://www.fatihhayrioglu.com/css3-background-size-ozelligi/">Daha detaylı bilgi için tıklayınız.</a></p>
-<div class="tarayiciuyum">
-**Browser Uyumu:**  
-Internet Explorer 9+  
-Firefox 3.6+(-moz-), 4+(standart)  
-Chrome1 (-webkit-),3+(standart)  
-Safari3+(-webkit-), 4.1(standart)  
-Opera 9.5+(-o-), 10+(standart)
-
-</div>
-
+<p class="tarayiciuyum"><strong>Browser Uyumu:</strong><br />
+Internet Explorer 9+<br />
+Firefox 3.6+(-moz-), 4+(standart)<br />
+Chrome1 (-webkit-),3+(standart)<br />
+Safari3+(-webkit-), 4.1(standart)<br />
+Opera 9.5+(-o-), 10+(standart)</p>
 <p>İnternet Explorer 9 sürümünden önceki sürümlerinin bu özelliği
 desteklememesidir. İnternet Explorer için <strong>filter</strong> ile bir çözüm
 üretebiliriz.</p>
-<div class="codehilite"><pre> <span class="nt">filter</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">filter</span><span class="o">:</span> <span class="nt">progid</span><span class="nd">:DXImageTransform</span><span class="nc">.Microsoft.AlphaImageLoader</span><span class="o">(</span><span class="nt">src</span><span class="o">=</span><span class="s1">&#39;.zemin_resmi.jpg&#39;</span><span class="o">,</span> <span class="nt">sizingMethod</span><span class="o">=</span><span class="s1">&#39;scale&#39;</span><span class="o">);</span>
+<span class="nt">-ms-filter</span><span class="o">:</span> <span class="s2">&quot;progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;zemin_resmi.jpg&#39;, sizingMethod=&#39;scale&#39;)&quot;</span><span class="o">;</span>
 </pre></div>
 
 
-<p>progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.zemin_resmi.jpg',
-sizingMethod='scale'); -ms-filter:
-"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='zemin_resmi.jpg',
-sizingMethod='scale')"; </p>
 <p>Bu kod ile ie içinde çözüm üretilmiş olacaktır. Linklerde ve içerik
 seçmede bazı orunlar olabiliyor.</p>
-<h3>Tüm Tarayıcılar İçin Çözüm</h3>
-<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="s2">&quot;tamEkranArdAlan&quot;</span><span class="o">&gt;&lt;</span><span class="nt">img</span>
+<h2>Tüm Tarayıcılar İçin Çözüm</h2>
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="s2">&quot;tamEkranArdAlan&quot;</span><span class="o">&gt;&lt;</span><span class="nt">img</span> <span class="nt">src</span><span class="o">=</span><span class="s2">&quot;http://www.fatihhayrioglu.com/images/emptybottles.jpg&quot;</span> <span class="nt">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span> <span class="nt">height</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span> <span class="o">/&gt;&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="s2">&quot;icerik&quot;</span><span class="o">&gt;</span>
+<span class="o">...</span>
+<span class="o">&lt;/</span><span class="nt">div</span>
 </pre></div>
 
 
-<p>src="/images/emptybottles.jpg" width="100%"
-height="100%" /&gt;</div> <div id="icerik"> ... </div> </p>
 <p>Sayfamızı içerik ve ardalan resmi olarak ikiye ayırıyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;}</span>
+<div class="codehilite"><pre><span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;}</span>
 </pre></div>
 
 
 <p>Sayfanın boşluklarını sıfırlıyoruz.</p>
-<div class="codehilite"><pre> <span class="nf">#tamEkranArdAlan</span> <span class="p">{</span><span class="k">position</span><span class="o">:</span><span class="k">fixed</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#tamEkranArdAlan</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span><span class="k">fixed</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>height:100%;} </p>
 <p>Zemine yerleştirilecek resmi sabitleyip üstten ve soldan başlangıç
 noktasına yerleştiriyoruz ve genişlik ve yükseklik değerini %100
 veriyoruz.</p>
-<div class="codehilite"><pre> <span class="nf">#icerik</span> <span class="p">{</span><span class="k">position</span><span class="o">:</span><span class="k">relative</span><span class="p">;</span> <span class="k">z-index</span><span class="o">:</span><span class="m">1</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">650px</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#icerik</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span><span class="k">relative</span><span class="p">;</span> 
+    <span class="k">z-index</span><span class="o">:</span><span class="m">1</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">650px</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span><span class="m">14px</span><span class="o">/</span><span class="m">1.8em</span> <span class="n">Arial</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">40px</span> <span class="k">auto</span><span class="p">;</span> 
+    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#333</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#fff</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>font:14px/1.8em Arial; margin:40px auto; border-radius:10px;
-color:#333; background-color:#fff} </p>
 <p>İçerik alanını <strong>postion:relative; z-index:1</strong> değeri atayarak
 içerikteki seçilme ve linklerde sorun olmasını engelliyoruz. Diğer
 tanımlar içerik alanının görselliğini ayarlamak içindir.</p>
 <p>Bu kodlar ie6 hariç çalışırken ie6’da çalışmıyor ie6’da çalışması için</p>
-<div class="codehilite"><pre> <span class="o">*</span><span class="nt">html</span> <span class="p">{</span><span class="k">overflow-y</span><span class="o">:</span><span class="k">hidden</span><span class="p">;}</span> <span class="o">*</span><span class="nt">html</span> <span class="nt">body</span> <span class="p">{</span><span class="k">overflow-y</span><span class="o">:</span><span class="k">auto</span><span class="p">;}</span> <span class="o">*</span><span class="nt">html</span>
+<div class="codehilite"><pre><span class="o">*</span><span class="nt">html</span> <span class="p">{</span>
+    <span class="k">overflow-y</span><span class="o">:</span><span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">*</span><span class="nt">html</span> <span class="nt">body</span> <span class="p">{</span>
+    <span class="k">overflow-y</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">*</span><span class="nt">html</span> <span class="nf">#tamEkranArdAlan</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> 
+    <span class="k">z-index</span><span class="o">:-</span><span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">*</span><span class="nt">html</span> <span class="nf">#icerik</span><span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span><span class="k">static</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<h1>tamEkranArdAlan {position:absolute; z-index:-1;} *html #icerik</h1>
-<p>{position:static;padding:20px;} </p>
 <p>ie6 <strong>postipon:fixed</strong> desteklemediği için <strong>postion:absolute</strong> değeri
 tanımlıyoruz. İçerik alanınıda <strong>postion:static</strong> tanımlıyoruz. Kaydırma
 çubuğu sorunlarını halletmek için <strong>body</strong> ve <strong>html</strong> tanımlarımızı
@@ -181,21 +210,20 @@ yapıyoruz.</p>
 resmi tanımlamış olduk.</p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ePxPv/embedded/css,html,result"></iframe>
 
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>Sonuç olarak CSS3 ile birlikte gelen <strong>background-size</strong> özelliği tam
 işimizi görsede İnternet Explorer’un desteklememesi projelerimizde
 uygulamak için bizi düşündürüyor.</p>
 <p>Tüm tarayıcıların desteklediği ikinci yöntem sadece CSS ile çözüm
 ürettiği için tercih edilebilir. Ayrıca javascript ile bazı çözümler
 olsa da ben css ile çözümü olan bir kodu javascript ile çözme taraftarı
-değilim. Javascript uygulamaları
-için<a href="http://css-tricks.com/3458-perfect-full-page-background-image/">http://css-tricks.com/3458-perfect-full-page-background-image/</a>
+değilim. Javascript uygulamaları için<a href="http://css-tricks.com/3458-perfect-full-page-background-image/">http://css-tricks.com/3458-perfect-full-page-background-image/</a>
 linkindeki örnekleri incelemenizi öneriyorum.</p>
 <p>Baktığım sitelerdeki uygulanabilir bu iki yöntemi sizlerle paylaştım
 uyguladıkça ve diğer yöntemleri gördükçe buraya ekleme yapabilirim.
 Birazda ihtiyaca göre yöntem uygulamak gerekiyor bu işte.</p>
 <p>Kalın sağlıcakla</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://css-tricks.com/3458-perfect-full-page-background-image/">http://css-tricks.com/3458-perfect-full-page-background-image/</a></li>
 <li><a href="http://cookbooks.adobe.com/post_Scale_Background_image_to_browser_size-17590.html">http://cookbooks.adobe.com/post_Scale_Background_image_to_browser_size-17590.html</a></li>
@@ -205,8 +233,7 @@ Birazda ihtiyaca göre yöntem uygulamak gerekiyor bu işte.</p>
 <li><a href="http://paulmason.name/blog/item/full-screen-background-image-pure-css-code">http://paulmason.name/blog/item/full-screen-background-image-pure-css-code</a></li>
 <li><a href="http://www.quackit.com/html/codes/html_stretch_background_image.cfm">http://www.quackit.com/html/codes/html_stretch_background_image.cfm</a></li>
 <li><a href="http://www.cssplay.co.uk/layouts/background.html">http://www.cssplay.co.uk/layouts/background.html</a></li>
-</ul>
-</p><p><a href=".././sayfa-zeminini-tamamen-kaplayan-resimler-tanimlamak/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././sayfa-zeminini-tamamen-kaplayan-resimler-tanimlamak/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

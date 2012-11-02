@@ -81,41 +81,61 @@
 <p>etiketler: <a href=".././tag/defer.html">defer</a><a href=".././tag/hiz.html">hız</a><a href=".././tag/javascript-dosylarinin-yeri.html">javascript dosylarının yeri</a><a href=".././tag/paralel-yukleme.html">paralel yükleme</a><a href=".././tag/performans.html">performans</a></p>
 
 
-</footer><!-- /.post-info --><h3>Javascript’i web sitelerine eklemek</h3>
+</footer><!-- /.post-info --><h2>Javascript’i web sitelerine eklemek</h2>
 <p>Javascript dosyaları bir web sitesine iki şekilde eklenir. Birincisi
 satıriçi(inline), ikincisi ayrı bir javascript dosyası hazırlayıp harici
 olarak eklemek.</p>
 <p>İlk javascript’i Hakkı Öcal’ın javascript kitapçığından öğrenmeye
 başlamıştım.</p>
 <p>İlk örnek şöyle idi;</p>
-<div class="codehilite"><pre> <span class="nt">&lt;html&gt;</span> <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;title&gt;</span>Merhaba Dünya!<span class="nt">&lt;/title&gt;</span> <span class="nt">&lt;script&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>Merhaba Dünya!<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+        <span class="kd">function</span> <span class="nx">merhaba</span><span class="p">()</span> <span class="c1">//merhaba isimli fonksiyonu deklare ediyoruz</span>
+        <span class="p">{</span> <span class="c1">//bu, fonksiyonun başlama işareti</span>
+            <span class="nx">alert</span> <span class="p">(</span><span class="s2">&quot;Merhaba Dünya!&quot;</span><span class="p">)</span> <span class="c1">//fonksiyonun komutu ve komutun gerektirdiği metin</span>
+        <span class="p">}</span> <span class="c1">//bu fonksiyonun bitme işareti</span>
+    <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;b&gt;</span>Merhaba Dünya<span class="nt">&lt;/b&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;form&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">merhaba()</span><span class="nt">&gt;</span>TIKLAYINI!<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;html&gt;</span>
 </pre></div>
 
 
-<p>function merhaba() //merhaba isimli fonksiyonu deklare ediyoruz { //bu,
-fonksiyonun başlama işareti alert ("Merhaba Dünya!") //fonksiyonun
-komutu ve komutun gerektirdiği metin } //bu fonksiyonun bitme işareti
-</script> </head> <body> <b>Merhaba Dünya</b><br> <form>
-<button onclick=merhaba()>TIKLAYINI!</button> </form> </body>
-<html> </p>
 <p>Bu satıriçi kodlamaya örnek olarak verilebilir.</p>
 <p>Aynı kodu ayrı bir javascript dosyası olarak hazırlayıp .js uzantısı ile
 kaydedersek ve bunu html dokümana eklersek buda harici bir javascript
 dosyası ekleme kısmına girer.</p>
-<div class="codehilite"><pre> <span class="kd">function</span> <span class="nx">merhaba</span><span class="p">()</span> <span class="p">{</span> <span class="nx">alert</span> <span class="p">(</span><span class="s2">&quot;Merhaba Dünya! Sene 2011&quot;</span><span class="p">)</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">merhaba</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span> <span class="p">(</span><span class="s2">&quot;Merhaba Dünya! Sene 2011&quot;</span><span class="p">)</span>
+<span class="p">}</span>
 </pre></div>
 
 
 <p>Bu dosyayı merhaba.js olarak kaydedip, sonra</p>
-<div class="codehilite"><pre> <span class="nt">&lt;html&gt;</span> <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span>
+<div class="codehilite"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=windows-1254&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;title&gt;</span>Merhaba Dünya!<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;merhaba.js&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;bodyY&gt;</span>
+    <span class="nt">&lt;b&gt;</span>Merhaba Dünya<span class="nt">&lt;/b&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;form&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">name=</span><span class="s">&quot;button1&quot;</span> <span class="na">value=</span><span class="s">&quot;TIKLAYIN!&quot;</span> <span class="na">onclick=</span><span class="s">&quot;merhaba()&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>content="text/html; charset=windows-1254"&gt; <title>Merhaba
-Dünya!</title> <script src="static/merhaba.js"> </script> </head>
-<bodyY> <b>Merhaba Dünya</b><br> <form> <input type="submit"
-name="button1" value="TIKLAYIN!" onclick="merhaba()"> </form>
-</body> </html> </p>
 <p>Şeklinde HTML dokümanına ekleriz.</p>
 <p>Yukarıda kullandığımız her iki yöntem ile de aynı sonucu alırız. Harici
 javascript dosyası ile eklemenin avantajları vardır;</p>
@@ -129,28 +149,34 @@ javascript dosyası ile eklemenin avantajları vardır;</p>
 <p>Javascript o günden bu yana daha fazla önem kazandı ve artık javascript
 kodumuzu en iyi hale getirmek için daha çok zaman harcıyoruz ve bize
 zaman kazandıracak her durumu inceleyip uyguluyoruz.</p>
-<h3>HTML dokümanında javascript dosyasını nereye eklemeliyiz?</h3>
+<h2>HTML dokümanında javascript dosyasını nereye eklemeliyiz?</h2>
 <p>Web sitelerinin en iyi hale getirmek için çeşitli araçlar ile sitemizi
 test ederiz. Bunlardan biri Firefox’ın <a href="https://addons.mozilla.org/en-us/firefox/addon/yslow/">YSlow</a>eklentisidir. YSlow
 eklentisi ile web sitemizi test ettiğimizde javascript dosyalarımızı
 html dokümanının sonuna eklememizi öneren bir başlık ile karşılaşırız,
 burada bu başlığı biraz inceleyeceğiz.</p>
-<p>CSS dosyalarının <head> içine konmasının öneren YSlow Javascript
-dosyalarının HTML dokümanının sonuna(</body>’nin hemen öncesine)
+<p>CSS dosyalarının &lt;head> içine konmasının öneren YSlow Javascript
+dosyalarının HTML dokümanının sonuna(&lt;/body>’nin hemen öncesine)
 konmasını öneriyor. Burada bir çelişki var gibi görünüyor. Buradaki
-mantık şudur; javascript blokları <head> içine konduğu zaman sayfa ilk
+mantık şudur; javascript blokları &lt;head> içine konduğu zaman sayfa ilk
 açıldığında bu javascript blokları yüklenir ve işlenir. Javascript
 dosyası yüklenip, işlendikten sonra diğer sayfa üyeleri yüklenir.
 Javascript dosyası yüklenip işlenmesi bitene kadar sayfa boş bir sayfa
 olarak görünür, tabi buda istenen bir durum değildir.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;html&gt;</span> <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;title&gt;</span>Javascript yükleme yeri<span class="nt">&lt;/title&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>Javascript yükleme yeri<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;script1.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;script2.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href=</span><span class="s">&quot;stil.css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span>İçerik Burada<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p><script type="text/javascript" src="static/script1.js"></script> <script
-type="text/javascript" src="static/script2.js"></script> <link
-rel="stylesheet" type="text/css" href="static/stil.css"> </head> <body>
-<p>İçerik Burada</p> </body> </html> </p>
 <p>Sayfa başına konan javascript dosyalarının yüklenme zamanı aşağıdaki
 grafikte görüldüğü gibidir</p>
 <p><img alt="" src="https://lh3.googleusercontent.com/gSZsDGo9nsWt4gD1hgKwiJo2FITV5oh_x706nZ2wKUapQWLl70O6P7NofpZvXVOTxIJKOW2GiPabJKNZVbHCIgcp3CAA9eE7kpdGnNKP0sYqp6EcmNc" /></p>
@@ -175,22 +201,21 @@ sonuna koyarak sayfamızın daha hızlı yüklenmesini sağlayabiliriz.</p>
 eklememiz gerektiğinde. Ancak bu durumlar içinde bazı çözümlerin olduğu
 aklımızın bir köşesinde kalsın.</p>
 <p><strong>defer Özelliği</strong></p>
-<p>HTML4 ile birlikte <script> etiketi içine defer özelliği eklenmiştir.
+<p>HTML4 ile birlikte &lt;script> etiketi içine defer özelliği eklenmiştir.
 <strong>defer</strong> özelliği tanımlanmış script dosyaları hemen uygulanmayıp tüm
 sayfa yüklendikten sonra yüklenir ve çalıştırılır. Bu özelliği İnternet
 Explorer 4+ ve Firefox3.5+ desteklemektedir.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;script1.js&quot;</span>
+<div class="codehilite"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;script1.js&quot;</span> <span class="na">defer</span><span class="nt">&gt;&lt;/script&gt;</span>
 </pre></div>
 
 
-<p>defer&gt;</script> </p>
 <p>şeklinde kullanılır. Bu dosyayı html dokümanının istediğimiz yerine
 koyabiliriz. Tüm tarayıcıların desteklmemesi kullanımı konusunda bizi
 biraz düşündürüyor.</p>
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>Sonuç olarak javascript dosyalarımızı html dokümanımız sonuna koymak web
 sitelerimizin daha hızlı açılmasını sağlayacak bir yöntemdir.</p>
-<h3>Kaynak</h3>
+<h2>Kaynak</h2>
 <ul>
 <li><a href="http://developer.yahoo.com/blogs/ydn/posts/2007/07/high_performanc_5/">http://developer.yahoo.com/blogs/ydn/posts/2007/07/high_performanc_5/</a></li>
 <li><a href="http://stackoverflow.com/questions/143486/unobtrusive-javascript-script-at-the-top-or-the-bottom-of-the-html-code">http://stackoverflow.com/questions/143486/unobtrusive-javascript-script-at-the-top-or-the-bottom-of-the-html-code</a></li>
@@ -199,8 +224,7 @@ sitelerimizin daha hızlı açılmasını sağlayacak bir yöntemdir.</p>
 <li><a href="http://www.quirksmode.org/js/placejs.html">http://www.quirksmode.org/js/placejs.html</a></li>
 <li><a href="http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/">http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/</a></li>
 <li><a href="http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/">http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/</a></li>
-</ul>
-</p><p><a href=".././html-dokumaninda-javascript-dosyalarini-nereye-koymaliyiz/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././html-dokumaninda-javascript-dosyalarini-nereye-koymaliyiz/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

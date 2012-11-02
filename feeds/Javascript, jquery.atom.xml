@@ -6,20 +6,26 @@ jquery kütüphanesinin bir problemine kütüphane güncellemeden çözüm
 üretmek olacak. Sorun şu; chackbox veya radio butonlara atanan change
 olayının işlememesi, daha doğrusu ilk tıklamada değil ikinci tıklamada
 çalışması ve bu sorunun sadece Internet Explorer sürümlerinde(6,7,8)
-meydana gelmesi.
+meydana gelmesi.&lt;/p&gt;
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Y4n5j/1/embedded/"&gt;&lt;/iframe&gt;
-Çözüm için yapmamız gerekn çok basit    :::javascript&lt;/p&gt;
-&lt;p&gt;$("#fatih").click(function() { this.blur(); }); 
+
+&lt;p&gt;Çözüm için yapmamız gerekn çok basit&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#fatih&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;blur&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; 
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/zEBUg/embedded/"&gt;&lt;/iframe&gt;
-Aslında yaptığımız input alanından focus’u kaldırmak oldu. Evet belki
+
+&lt;p&gt;Aslında yaptığımız input alanından focus’u kaldırmak oldu. Evet belki
 pek işinize yaramıyacak ama benim gibi çok arayan bir kişi buradan
 yararlansa yeter.&lt;/p&gt;
-&lt;h3&gt;Kaynak&lt;/h3&gt;
+&lt;h2&gt;Kaynak&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.megamon.com/tag/jquery/"&gt;http://blog.megamon.com/tag/jquery/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://jquery14.com/day-01/jquery-14"&gt;http://jquery14.com/day-01/jquery-14&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary></entry><entry><title>Jquery holdReady() fonksiyonu</title><link href="http://www.fatihhayrioglu.com/jquery-holdready-fonksiyonu/" rel="alternate"></link><updated>2011-05-10T22:24:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-05-10:jquery-holdready-fonksiyonu/</id><summary type="html">&lt;p&gt;Jquery son sürümü 1.6 çıktı. Dokümanları incelerken gözüme holdReady()
+&lt;/ul&gt;</summary></entry><entry><title>Jquery holdReady() fonksiyonu</title><link href="http://www.fatihhayrioglu.com/jquery-holdready-fonksiyonu/" rel="alternate"></link><updated>2011-05-10T22:24:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-05-10:jquery-holdready-fonksiyonu/</id><summary type="html">&lt;p&gt;Jquery son sürümü 1.6 çıktı. Dokümanları incelerken gözüme holdReady()
 fonksiyonu takıldı.&lt;/p&gt;
 &lt;p&gt;Jquery holdReady fonksiyonu document.ready olayını tutar veya devam
 etmesini sağlar. Boolean(true / false) tipi değer döndürür. true değeri
@@ -31,36 +37,51 @@ javascript dosyaları veya referans aldığımız eklenti dosyaları olur, bu
 gibi durumlarda araya girip bu dosyaları yükletmemiz gerekir ve sonra
 işleyişi devam ettirmemiz gerekir. İşte bu gibi durumlarda holdReady
 fonksiyonu kullanılabilir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;holdReady&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// biraz bekle&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;holdReady&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// biraz bekle &lt;/span&gt;
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getScript&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;myplugin.js&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;// dosyayi yukledik&lt;/span&gt;
+     &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;holdReady&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// simdi sen isine donebilirsin&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;$.getScript("myplugin.js", function() { // dosyayi yukledik
-$.holdReady(false); // simdi sen isine donebilirsin }); &lt;/p&gt;
-&lt;p&gt;Bu metot &lt;head&gt; içinde document.ready olayından önce çağrılmalıdır.
+&lt;p&gt;Bu metot &amp;lt;head&gt; içinde document.ready olayından önce çağrılmalıdır.
 Eğer sonrasında çağrılırsa işlevsiz kalır. En iyi kullanım yeri jquery
 kütüphanesi eklendikten sonrasıdır.&lt;/p&gt;
 &lt;p&gt;Küçük bir örnek yapalım;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Başlıksız Belge&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.min.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;holdReady&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// durdur &lt;/span&gt;
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getScript&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;deneme.js&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;// yukle&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;background-color&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#f00&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+     &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;holdReady&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// devam et&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;background-color&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#9C6&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;iki&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Deneme.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-&lt;title&gt;Başlıksız Belge&lt;/title&gt; &lt;script
-src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.min.js"&gt;&lt;/script&gt;
-&lt;script&gt; $.holdReady(true); // durdur $.getScript("deneme.js",
-function() { // yukle $("p").css("background-color", "#f00");
-$.holdReady(false); // devam et }); $(document).ready(function(e) {
-$("p").css("background-color", "#9C6"); alert("iki"); }); &lt;/script&gt;
-&lt;/head&gt; &lt;body&gt; &lt;p&gt;Deneme.&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Eklediğimiz deneme.js&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="c1"&gt;// ilk yüklenecek dosya $(&amp;quot;p&amp;quot;).css(&amp;quot;background-color&amp;quot;,&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// ilk yüklenecek dosya&lt;/span&gt;
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;background-color&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#ff0&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;bir&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;"#ff0"); alert("bir"); &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/holdReady.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Sayfa yükleme sırası;&lt;/p&gt;
 &lt;p&gt;1- DOM yani yukarıdaki sayfa &lt;p&gt;Deneme.&lt;/p&gt; ve deneme.js dosyası
@@ -71,13 +92,13 @@ yorumlanacak. (üç)&lt;/p&gt;
 &lt;p&gt;Son olarak bir not: birden fazla holdReady kullanımı halinde
 document.ready olayı tüm holdReady fonksiyonlarının bırakılmasını
 bekler.&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://api.jquery.com/jQuery.holdReady/"&gt;http://api.jquery.com/jQuery.holdReady/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://jquerybyexample.blogspot.com/2011/05/jqueryholdready-new-in-jquery-16.html"&gt;http://jquerybyexample.blogspot.com/2011/05/jqueryholdready-new-in-jquery-16.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blogs.sitepoint.com/whats-new-in-jquery-16/"&gt;http://blogs.sitepoint.com/whats-new-in-jquery-16/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="document.ready"></category><category term="dom"></category><category term="holdReady()"></category></entry><entry><title>Jquery Geliştiricileri için Güzel Bir FireBug Eklentisi FireQuery</title><link href="http://www.fatihhayrioglu.com/jquery-gelistiricileri-icin-guzel-bir-firebug-eklentisi-firequery/" rel="alternate"></link><updated>2011-01-13T00:12:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-01-13:jquery-gelistiricileri-icin-guzel-bir-firebug-eklentisi-firequery/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="/images/firequery-64.png" title="firequery-64" /&gt;][]Firefox'un eklentisi FireBug'ı bilmeyeniniz yoktur. FireBug
+&lt;/ul&gt;</summary><category term="document.ready"></category><category term="dom"></category><category term="holdReady()"></category></entry><entry><title>Jquery Geliştiricileri için Güzel Bir FireBug Eklentisi FireQuery</title><link href="http://www.fatihhayrioglu.com/jquery-gelistiricileri-icin-guzel-bir-firebug-eklentisi-firequery/" rel="alternate"></link><updated>2011-01-13T00:12:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-01-13:jquery-gelistiricileri-icin-guzel-bir-firebug-eklentisi-firequery/</id><summary type="html">&lt;p&gt;&lt;img alt="" src="/images/firequery-64.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Firefox'un eklentisi FireBug'ı bilmeyeniniz yoktur. FireBug
 öyle büyük bir eklenti ki onun üzerine kurulan birçok eklentiler var. Bu
 eklentide FireBug yeteneklerini geliştirmek için kullanılan bir eklenti.&lt;/p&gt;
 &lt;p&gt;Bu eklenti jQuery ile kod yazarken çok işimize yarayacak. Bu eklenti
@@ -91,58 +112,52 @@ yaptığımızı ve hangi fonksiyon ve kod ile etki ettiğimiz gösteriyor.&lt;/
 &lt;p&gt;jQuery bulunmayan sayfalarda da jquery kütüphanesini ekliyor. Böylelikle
 her sitede FireBug özelliklerini jQuery yardımı ile kullanma imkanı
 sunuyor bize.&lt;/p&gt;
-&lt;h3&gt;jQuery Data verileri Gösterir&lt;/h3&gt;
+&lt;h2&gt;jQuery Data verileri Gösterir&lt;/h2&gt;
 &lt;p&gt;Eklentiyi kurduktan sonra Firebug'ı açarız ve HTML sekmesine geliriz.
 Aşağıdaki bir pencere ile karşılaşırız.&lt;/p&gt;
-&lt;p&gt;[&lt;img alt="" src="/images/firequery11.gif" title="firequery1" /&gt;][]&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/firequery11.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;jQuery data kullanarak web sitesine gömdüğümüz verileri gösterir bize.
 Bu durum dinamik olarak eklediğimiz jQuery verilerini kontrol ederken
 çok işimize yarar.&lt;/p&gt;
-&lt;h3&gt;Bir Elemana Atanmış Fonksiyonları Gösterir&lt;/h3&gt;
+&lt;h2&gt;Bir Elemana Atanmış Fonksiyonları Gösterir&lt;/h2&gt;
 &lt;p&gt;Test sayfasında h1 elemanına tanımlana aşağıdaki fonksiyon kodunu
 görüyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;h1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;bind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;h1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;bind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;background-color&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;#fee&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
+&lt;span class="p"&gt;});&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;$(this).css('background-color', '#fee'); }); &lt;/p&gt;
 &lt;p&gt;Bu tanımı FireBug HTML sekmesinde FireQuery yardımı ile aşağıdaki gibi
 görürüz.&lt;/p&gt;
-&lt;p&gt;[&lt;img alt="" src="/images/firequery21.gif" title="firequery2" /&gt;][]&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/firequery21.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bir elemana tanımlanmış fonksiyonları bulmaya yarar. Süper bir
 özelliktir bu. Tanımlana fonksiyon konsolda yukarıdaki gibi görünür.&lt;/p&gt;
-&lt;p&gt;[&lt;img alt="" src="/images/firequery41.gif" title="firequery4" /&gt;][]&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/firequery41.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;function() üzerine geldiğimizde bu elemena atama yapılan kodu ve satır
 numarasını gösterir. Bu bizi birçok yükten kurtaran süper bir
 özelliktir.&lt;/p&gt;
-&lt;h3&gt;jQuery Olmayan Sitelere jQuery Ekleme Özelliği&lt;/h3&gt;
+&lt;h2&gt;jQuery Olmayan Sitelere jQuery Ekleme Özelliği&lt;/h2&gt;
 &lt;p&gt;Bir sitede jQuery kütüphanesi olmasa da bu eklenti etkin olduğu
 tarayıcılarda jQuery eklenmiş gibi olur. Bu sayede site üzerinde jQuery
 kolaylıklarını uygular ve sonuçlarını görebiliriz.&lt;/p&gt;
-&lt;p&gt;[&lt;img alt="" src="/images/firequery51.gif" title="firequery5" /&gt;][]&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/firequery51.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bu sayede Konsolda jQuery kolaylıklarını kullanarak jquery eklenmemiş
 olsa da bu sitede jQuery varmış gibi rahat kod yazabiliriz.&lt;/p&gt;
 &lt;p&gt;Bu eklentiyi bana gösteren Orhan Ekici'ye ve ona gösteren Volkan
 Özçelik'e teşekkürler.&lt;/p&gt;
 &lt;p&gt;FireBug büyüksün.&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://firequery.binaryage.com/"&gt;http://firequery.binaryage.com/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/12632/"&gt;https://addons.mozilla.org/en-US/firefox/addon/12632/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://elijahmanor.com/webdevdotnet/post/digging-into-the-firequery-add-on-for-jquery.aspx"&gt;http://elijahmanor.com/webdevdotnet/post/digging-into-the-firequery-add-on-for-jquery.aspx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.pgs-soft.com/firequery-firebug-extension-for-jquery-development.html"&gt;http://www.pgs-soft.com/firequery-firebug-extension-for-jquery-development.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://javascriptly.com/2009/12/firequery-an-introduction/"&gt;http://javascriptly.com/2009/12/firequery-an-introduction/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;p&gt;[&lt;img alt="" src="/images/firequery-64.png" title="firequery-64" /&gt;]: /images/firequery-64.png
-  [&lt;img alt="" src="/images/firequery11.gif" title="firequery1" /&gt;]: /images/firequery11.gif
-  [&lt;img alt="" src="/images/firequery21.gif" title="firequery2" /&gt;]: /images/firequery21.gif
-  [&lt;img alt="" src="/images/firequery41.gif" title="firequery4" /&gt;]: /images/firequery41.gif
-  [&lt;img alt="" src="/images/firequery51.gif" title="firequery5" /&gt;]: /images/firequery51.gif&lt;/p&gt;</summary></entry><entry><title>jquery ipuçları - 4</title><link href="http://www.fatihhayrioglu.com/jquery-ipuclari-4/" rel="alternate"></link><updated>2010-10-26T23:04:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-10-26:jquery-ipuclari-4/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/jquery-ipuclari/"&gt;Jquery ipuçları - 1&lt;/a&gt;&lt;br /&gt;
+&lt;/ul&gt;</summary></entry><entry><title>jquery ipuçları - 4</title><link href="http://www.fatihhayrioglu.com/jquery-ipuclari-4/" rel="alternate"></link><updated>2010-10-26T23:04:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-10-26:jquery-ipuclari-4/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/jquery-ipuclari/"&gt;Jquery ipuçları - 1&lt;/a&gt;&lt;br /&gt;
 &lt;a href="http://www.fatihhayrioglu.com/jquery-ipuclari-2/"&gt;Jquery ipuçları - 2&lt;/a&gt;&lt;br /&gt;
 &lt;a href="http://www.fatihhayrioglu.com/jquery-ipuclari-3/"&gt;Jquery ipuçları - 3&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;strong&gt;1 - Mümkünse Class yerine Id kullanmayı tercih edin&lt;/strong&gt;&lt;/h3&gt;
+&lt;h2&gt;&lt;strong&gt;1 - Mümkünse Class yerine Id kullanmayı tercih edin&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;jQuery ile kod yazarken bize çok büyük kolaylıklar kazandırır. Bunlardan
 bir tanesi elemana atanmış sınıfı yardımı ile kolayca seçebilme
 özelliğidir, ancak burada şöyle bir durum söz konusudur; jquery id ile
@@ -152,13 +167,11 @@ yakalamalarda daha yavaş çalışacaktır.&lt;/p&gt;
 &lt;p&gt;Bu nedenle mümkün olduğunca seçicilerde id kullanmaya dikkat
 edilmelidir. Tabi bazı durumlarda sınıf kullanmak zorunda kalabiliriz o
 başka.&lt;/p&gt;
-&lt;div&gt;
-![][]  
-**kaynak:** net.tutsplus.com
-
-&lt;/div&gt;
-
-&lt;h3&gt;&lt;strong&gt;2 - next() ve prev() kullanımı&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="" src="https://docs.google.com/File?id=dhctmbn6_475gb79fp54_b" /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;kaynak:&lt;/strong&gt; net.tutsplus.com&lt;br /&gt;
+&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;2 - next() ve prev() kullanımı&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Bu özelliklerin kullanımı bazen can kurtarıyor ancak kullanırken dikkat
 etmek lazım, bazende sorunlara yol açabiliyor. Sonradan eklediğiniz bir
 eleman sizin next ve prev kabullerinizi mahvedebiliyor&lt;/p&gt;
@@ -168,18 +181,21 @@ elemanı yakalar alt elemanlarını yakalamaz.&lt;/p&gt;
 tanımı ile en yakın bir sonraki secili sınıfı tanımlı li elemanını
 yakalayabiliriz.&lt;/p&gt;
 &lt;p&gt;Bir örnek verelim.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Adana&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Adana&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Ankara&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;secili&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;İstanbul&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;İzmir&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Trabzon&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;li&gt;Ankara&lt;/li&gt; &lt;li class="secili"&gt;İstanbul&lt;/li&gt;
-&lt;li&gt;İzmir&lt;/li&gt; &lt;li&gt;Trabzon&lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;Şeklindeki bir html kodundan&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;li.secili&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;next&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;border-bottom&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;1px solid #999&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;$('li.secili').next().css('border-bottom', '1px solid #999');&lt;/p&gt;
 &lt;p&gt;next() fonksiyonu yardımı ile bir sonraki elemanı yakalayabiliriz.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;prev() :&lt;/strong&gt; prev fonksiyonu bir önceki elemanı yakalar. Sadece önceki
 elemanı yakalar alt elemanlarını yakalamaz.&lt;/p&gt;
@@ -187,114 +203,128 @@ elemanı yakalar alt elemanlarını yakalamaz.&lt;/p&gt;
 tanımı ile en yakın bir onceki secili sınıfı tanımlı li elemanını
 yakalayabiliriz.&lt;/p&gt;
 &lt;p&gt;Bir örnek verelim.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Adana&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Adana&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Ankara&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;secili&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;İstanbul&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;İzmir&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Trabzon&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;li&gt;Ankara&lt;/li&gt; &lt;li class="secili"&gt;İstanbul&lt;/li&gt;
-&lt;li&gt;İzmir&lt;/li&gt; &lt;li&gt;Trabzon&lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;Şeklindeki bir html kodundan&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;li.secili&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;prev&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;border-bottom&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;1px solid #999&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;$('li.secili').prev().css('border-bottom', '1px solid #999');&lt;/p&gt;
 &lt;p&gt;prev() fonksiyonu yardımı ile bir önceki elemanı yakalayabiliriz.&lt;br /&gt;
 &lt;/p&gt;
-&lt;h3&gt;&lt;strong&gt;3 - Üst Eleman Bulma - parent(), parents() ve closest()&lt;/strong&gt;&lt;/h3&gt;
+&lt;h2&gt;&lt;strong&gt;3 - Üst Eleman Bulma - parent(), parents() ve closest()&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;parent()&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Bir üst elemanı bulma. Geriye bir adet üst eleman döndürür.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;td.secili&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;border-bottom&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;#999&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;div&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.large&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;font-size&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;14px&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;$('td.secili').parent().css('border-bottom', '#999');
-$('div').parent('.large').css('font-size', '14px'); &lt;/p&gt;
 &lt;p&gt;İlk kod üst elemanı yakalarken, ikinci satırda ise seçme işlemini biraz
 daha daraltarak .large sınıfı tanımlı olan üst  elmanı yakala diyoruz.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;parents()&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Belirlenen elemanın tüm üst elemanlarını bulmaya yarar.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;li&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;parents&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;background-color&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;li&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;parents&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;quot&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;ul&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;quot&lt;/span&gt;&lt;span class="p"&gt;;).&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;background-color&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;$('li').parents().css('background-color', 'red');
-$('li').parents(&amp;quot;ul&amp;quot;).css('background-color', 'red');&lt;/p&gt;
 &lt;p&gt;İlk satır li'nin tüm üst elemanlarını yakalarken, ikinci satır li'nin
 tüm &lt;strong&gt;ul&lt;/strong&gt; etiketli üst elemanlarını yakalar.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;closest()&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;En yakın üst elemanı bulmak içindir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;li.urunler&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;closest&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ul&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;background-color&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
+&lt;span class="p"&gt;});&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;$('li.urunler').closest('ul').css('background-color', 'red'); });&lt;/p&gt;
 &lt;p&gt;HTML&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Üst Menü &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Üst Menü
+        &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;urunler&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Ürün 1&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;urunler&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Ürün 2&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;class="urunler"&amp;gt;Ürün 1&lt;/li&gt; &lt;li class="urunler"&gt;Ürün 2&lt;/li&gt;
-&lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;İçiçe girmiş birçok listede yukarıdaki tanım 'urunler' sınıfı
 tanımlanmış öğenin ilk üst ul elemanını yakalamamıza yardım eder.&lt;/p&gt;
-&lt;h3&gt;&lt;strong&gt;4 - Firebug ve console.log ile kodumuzu izlemek&lt;/strong&gt;&lt;/h3&gt;
+&lt;h2&gt;&lt;strong&gt;4 - Firebug ve console.log ile kodumuzu izlemek&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Firebug'ın çalışma hayatımızdaki yerini biliyoruz. jquery ile hata
 yakalama amacı ile console.log kullanıyoruz. Daha önceleri javascript
 ile kod yazarken alert fonksiyonun çok kullanırdım. Şimdi aynı işi
 &lt;strong&gt;console.log&lt;/strong&gt; yapıyor ancak popup çıkarıp bizi rahatsız etmiyor.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;count&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;count&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;count&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;count&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
+    &lt;span class="nx"&gt;setTimeout&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;takistHesapla&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;,&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;count++; console.log(count); setTimeout("takistHesapla";, 1000); }&lt;/p&gt;
 &lt;p&gt;yazın ve Firebug'ın console sekmesine bakın. Bu kod Chrome'da da
 çalışıyor.&lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/console_log.html"&gt;tıklayınız.&lt;/a&gt; Tabi &lt;strong&gt;takistHesapla&lt;/strong&gt;diye bieşy
 bulamadım diye size bin tane hata verecek oda gayet normal.&lt;/p&gt;
 &lt;p&gt;Bir uyarı işinizi yayına atarken bu satırı silin yoksa ie'de hata verir.&lt;/p&gt;
-&lt;h3&gt;&lt;strong&gt;5 - Animasyon ve Efektleri Geciktirme (delay)&lt;/strong&gt;&lt;/h3&gt;
+&lt;h2&gt;&lt;strong&gt;5 - Animasyon ve Efektleri Geciktirme (delay)&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;jQuery 1.4 ile birlikte gelen yeni bir özellik olan delay()
 animasyonlarımıza belli bir süre ara vermemizi sağlat, daha önceleri bu
 işi yapmak için setTimeout metodunu kullanıyorduk.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;div&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;fadeIn&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;4000&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;fadeOut&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;$("div").fadeIn().delay(4000).fadeOut(); &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/delay_metodu.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;seçtiğimiz katmana fadeIn efekti ver ve sonra 4000 milisaniye bekle ve
 sonra fadeOut efekti ver diyoruz.&lt;/p&gt;
-&lt;h3&gt;&lt;strong&gt;6 - has() Metodu&lt;/strong&gt;&lt;/h3&gt;
+&lt;h2&gt;&lt;strong&gt;6 - has() Metodu&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;jQuery 1.4 ile birlikte gelen bir başka yeni özellik &lt;strong&gt;has()&lt;/strong&gt;
 metodudur. Daha önceki sürümlerde :has seçicisi vardı, şimdi &lt;strong&gt;has()&lt;/strong&gt;
 metodu ile daha kolay yakalama işi yapabileceğiz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item 1&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item 1&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item 2
+    &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item 2-a&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item 2-b&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item 3&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;list item 4&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;item 2 &lt;ul&gt; &lt;li&gt;list item 2-a&lt;/li&gt; &lt;li&gt;list item 2-b&lt;/li&gt;
-&lt;/ul&gt; &lt;/li&gt; &lt;li&gt;list item 3&lt;/li&gt; &lt;li&gt;list item 4&lt;/li&gt;
-&lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;Yukarıdaki kodda alt menüsü olan li elemanını yakalamak için bu metodu
 kullanabiliriz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;li&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;has&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ul&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;css&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;background-color&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;$('li').has('ul').css('background-color', 'red'); &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/has_metodu.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Şeklinde altında ul etiketi olan li'leri ki burada bir tane var oda
 &lt;strong&gt;list item 2&lt;/strong&gt; içeriğine sahip olandır.&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html" title="http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html"&gt;http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx" title="http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx"&gt;http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/" title="http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/"&gt;http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://addyosmani.com/blog/31-jquery-snippets/" title="http://addyosmani.com/blog/31-jquery-snippets/"&gt;http://addyosmani.com/blog/31-jquery-snippets/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/" title="http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/"&gt;http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="closest()"></category><category term="console.log"></category><category term="delay()"></category><category term="has()"></category><category term="next()"></category><category term="parent()"></category><category term="parents()"></category><category term="prev()"></category></entry><entry><title>jQuery ipuçları - 3</title><link href="http://www.fatihhayrioglu.com/jquery-ipuclari-3/" rel="alternate"></link><updated>2010-07-01T00:10:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-07-01:jquery-ipuclari-3/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/jquery-ipuclari/"&gt;Jquery ipuçları - 1&lt;/a&gt;&lt;br /&gt;
+&lt;li&gt;&lt;a href="http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html"&gt;http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx"&gt;http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/"&gt;http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://addyosmani.com/blog/31-jquery-snippets/"&gt;http://addyosmani.com/blog/31-jquery-snippets/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/"&gt;http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="closest()"></category><category term="console.log"></category><category term="delay()"></category><category term="has()"></category><category term="next()"></category><category term="parent()"></category><category term="parents()"></category><category term="prev()"></category></entry><entry><title>jQuery ipuçları - 3</title><link href="http://www.fatihhayrioglu.com/jquery-ipuclari-3/" rel="alternate"></link><updated>2010-07-01T00:10:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-07-01:jquery-ipuclari-3/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/jquery-ipuclari/"&gt;Jquery ipuçları - 1&lt;/a&gt;&lt;br /&gt;
 &lt;a href="http://www.fatihhayrioglu.com/jquery-ipuclari-2/"&gt;Jquery ipuçları - 2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;jQuery ipuçlarını yayınlamaya devam ediyorum.&lt;/p&gt;
 &lt;h3&gt;1- Dinamik oluşturulan elementlere live() ile olay atama&lt;/h3&gt;

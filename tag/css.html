@@ -81,7 +81,7 @@
 <p>etiketler: <a href=".././tag/blok-level.html">Blok-level</a><a href=".././tag/css.html">CSS</a><a href=".././tag/displaytable.html">display:table</a><a href=".././tag/genisligi-belli-olmayan.html">genişliği belli olmayan</a><a href=".././tag/ortalama.html">ortalama</a></p>
 
 
-</footer><!-- /.post-info --><p>[<img alt="" src="static/images/gb_ortalama1.gif" title="gb_ortalama" />][]</p>
+</footer><!-- /.post-info --><p><img alt="" src="static/images/gb_ortalama1.gif" /></p>
 <p>CSS ile yatayda ortalamak deyince aklımıza hep genişliği sabit olan
 alanlar geliyor. Ancak genişliği sabit olmayan elemanları ortalamak
 biraz daha farklı oluyor.</p>
@@ -90,38 +90,63 @@ var iken genişliği belli olmayan blok-level elemanları ortalamak için
 çok fazla kaynak bulamıyoruz. Google’da yaptığım aramalarda rastladığım
 makalelerde 2 yöntem ile karşılaştım. Bu iki metodu sizlerle
 paylaşacağım, siz kendinize uygun olan metodu uygulayabilirsiniz.</p>
-<h3>Metot 1 - Yüzde Yöntemi ile Ortalama</h3>
+<h2>Metot 1 - Yüzde Yöntemi ile Ortalama</h2>
 <p>Genelde bu yöntemi anlatırken menü örnekleri üzerinden anlatılmış bende
 geleneği bozmayayım.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;menuKapsulu&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;</span>Elma<span class="nt">&lt;/li&gt;</span>
+<div class="codehilite"><pre>div id=&quot;menuKapsulu&quot;&gt;
+    <span class="nt">&lt;ul&gt;</span>
+       <span class="nt">&lt;li&gt;</span>Elma<span class="nt">&lt;/li&gt;</span>
+       <span class="nt">&lt;li&gt;</span>Armut<span class="nt">&lt;/li&gt;</span>
+       <span class="nt">&lt;li&gt;</span>Malta Eriği<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p><li>Armut</li> <li>Malta Eriği</li> </ul> </div> </p>
 <p>Alışkın olduğumuz bir menü kodu. CSS kodumuzu ekleyelim. İlk olarak
 kapsayıcı eleman tanımlarını yazalım.</p>
-<div class="codehilite"><pre> <span class="nf">#menuKapsulu</span><span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span><span class="m">#369</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#menuKapsulu</span><span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span><span class="m">#369</span><span class="p">;</span>
+  <span class="k">overflow</span><span class="o">:</span><span class="k">hidden</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span><span class="k">relative</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>overflow:hidden; position:relative; } </p>
 <p>Menü kapsayıcısının sayfayı tam kaplaması için %100 değeri ve float:left
 değeri atandı.</p>
-<div class="codehilite"><pre> <span class="nf">#menuKapsulu</span> <span class="nt">ul</span><span class="p">{</span> <span class="k">clear</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#menuKapsulu</span> <span class="nt">ul</span><span class="p">{</span>
+  <span class="k">clear</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+  <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span><span class="k">relative</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span><span class="m">50</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span><span class="m">#990000</span>        
+<span class="p">}</span>
 </pre></div>
 
 
-<p>margin:0; padding:0; position:relative; left:50%; text-align:center;
-background-color:#990000 } </p>
 <p>float:left değeri ile içeriği çepeçevre kapsaması sağlanıyor. left:50%
 değeri ile menu ortalanıyor. Ancak bu ortalama içeriğin genişliğini
 içermez. <br />
 </p>
-<div class="codehilite"><pre> <span class="nf">#menuKapsulu</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#menuKapsulu</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+  <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">10px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span><span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span><span class="k">relative</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span><span class="m">50</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>margin:0 10px 0 0; padding:10px 0; position:relative; right:50%; }</p>
 <p>Buradaki püf noktası; right:50% değeri ile menü genişliğinden dolayı
 sağa doğru kayan içeriği tam olarak ortalı hale getiriyoruz.</p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/GGSHL/embedded/result,html,css"></iframe>
@@ -142,16 +167,22 @@ sağa doğru kayan içeriği tam olarak ortalı hale getiriyoruz.</p>
     background, border ve kendini gösterecek diğer tanımların
     yapılmaması gerekir. Buda bir dezavantajdır.</li>
 </ul>
-<h3>Metot 2: display:table Metodu</h3>
+<h2>Metot 2: display:table Metodu</h2>
 <p>Genişliği belli olan elemanları ortalarken kullandığımız margin:0 auto
 tanımını bu sefer genişliği belli olmayan alanlar içinde kullanıyoruz.</p>
 <p>HTML kodumuz aynı;<br />
 </p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;menuKapsulu&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;</span>Elma<span class="nt">&lt;/li&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;menuKapsulu&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;ul&gt;</span>
+       <span class="nt">&lt;li&gt;</span>Elma<span class="nt">&lt;/li&gt;</span>
+       <span class="nt">&lt;li&gt;</span>Armut<span class="nt">&lt;/li&gt;</span>
+       <span class="nt">&lt;li&gt;</span>Malta Eriği<span class="nt">&lt;/li&gt;</span>
+
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p><li>Armut</li> <li>Malta Eriği</li> </ul> </div> </p>
 <p>Ortalanacak alana margin:0 auto ve display:table tanımlarını yapıyoruz.<br />
 </p>
 <div class="codehilite"><pre> <span class="nf">#menuKapsulu</span> <span class="nt">ul</span><span class="p">{</span> <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> <span class="k">margin-left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
@@ -164,13 +195,21 @@ margin:0 10px 0 0; padding:10px 0; } </p>
 özelliğini İnternet Explorer 6 ve 7. sürümleri desteklemiyor. Peki, ne
 olacak derseniz bu bir hasLayout sorunu ve çözüm için zoom:1 tanımı
 kullanmamız gerekiyor.</p>
-<div class="codehilite"><pre> <span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="nf">#menuKapsulu</span><span class="p">{</span> <span class="k">text-align</span><span class="o">:</span><span class="k">center</span> <span class="p">}</span> <span class="o">*</span> <span class="nt">html</span>
+<div class="codehilite"><pre><span class="nf">#menuKapsulu</span> <span class="nt">ul</span><span class="p">{</span>
+ <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+ <span class="k">margin-left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>      
+ <span class="k">margin-right</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>      
+ <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span>     
+<span class="p">}</span>
+
+<span class="nf">#menuKapsulu</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+ <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+ <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">10px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+ <span class="k">padding</span><span class="o">:</span><span class="m">10px</span> <span class="m">0</span><span class="p">;</span>   
+<span class="p">}</span>
 </pre></div>
 
 
-<h1>menuKapsulu{ text-align:center } *:first-child+html #menuKapsulu ul{</h1>
-<p>display: inline; zoom: 1; } * html #menuKapsulu ul{ display: inline;
-zoom: 1; } </p>
 <p>Kapsayıcı kapsüle text-align:center tanımı yapıyoruz sonra listemize
 display:inline yapıyoruz. text-align:center inline elemanları ortalıyor
 bildiğiniz gibi. Burada yaptığmızda bu</p>
@@ -191,7 +230,7 @@ bildiğiniz gibi. Burada yaptığmızda bu</p>
 </ul>
 <p>Kullandıkça avantaj ve dezavantajlarını daha iyi göreceğiz.</p>
 <p>Kalın sağlıcakla.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://css-discuss.incutio.com/wiki/Centering_Block_Element">http://css-discuss.incutio.com/wiki/Centering_Block_Element</a></li>
 <li><a href="http://www.solstice.co.il/blog/2008-02-26/horizontally-centering-content-dynamic-width-css">http://www.solstice.co.il/blog/2008-02-26/horizontally-centering-content-dynamic-width-css</a></li>
@@ -199,10 +238,7 @@ bildiğiniz gibi. Burada yaptığmızda bu</p>
 <li><a href="http://haslayout.net/css-tuts/Horizontal-Centering">http://haslayout.net/css-tuts/Horizontal-Centering</a></li>
 <li><a href="http://www.katcode.com/css-horizontally-centering-div-of-unknown-width/">http://www.katcode.com/css-horizontally-centering-div-of-unknown-width/</a></li>
 <li><a href="http://www.tightcss.com/centering/center_variable_width.htm">http://www.tightcss.com/centering/center_variable_width.htm</a></li>
-</ul>
-</p>
-
-<p>[<img alt="" src="static/images/gb_ortalama1.gif" title="gb_ortalama" />]: /images/gb_ortalama1.gif</p><p><a href=".././genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -242,7 +278,8 @@ bildiğiniz gibi. Burada yaptığmızda bu</p>
 
 
 </footer><!-- /.post-info -->
-                <p>[<img alt="" src="static/images/liveGO_white_72dpi_300px.jpg" title="liveGO_white_72dpi_300px" />][]Daha önce çalıştığım ajanslarda yaptığım işlerin bu günlüğü
+                <p><img alt="" src="static/images/liveGO_white_72dpi_300px.jpg" /></p>
+<p>Daha önce çalıştığım ajanslarda yaptığım işlerin bu günlüğü
 oluşturmamda bir yardımı oldu. Her projede bir şeyler öğrendim ve
 öğrendiklerimi bu günlük ile sizlere aktarmaya çalıştım. Tüm ayrıntıları
 olmasada aklımda kalanları sizlere aktarmaya çalıştım ve aktarmaya da
@@ -281,13 +318,14 @@ devam edeceğim, Allah bize imkan verdikçe.</p>
 
 
 </footer><!-- /.post-info -->
-                <p><img alt="" src="https://docs.google.com/File?id=dhctmbn6_472cmt9wsnt_b" />Adobe Dreamweaver editör olarak beğenerek kullandığım bir editör.
+                <p><img alt="" src="https://docs.google.com/File?id=dhctmbn6_472cmt9wsnt_b" /></p>
+<p>Adobe Dreamweaver editör olarak beğenerek kullandığım bir editör.
 Burada sizlere yeni sürümü ve yeniliklerini anlatmaya çalışacağım ve son
 olarakta beklentilerimi ve yeni sürümün bunları ne kadar karşıladığımı
 yazacağım.</p>
 <p>Yeni sürüm ile birlikte gelen yenilikler ;</p>
 <p><strong>CSS Inspection</strong></p>
-<p>[<img alt="" src="static/images/dw_cs5.gif" title="dw_cs5" />][]<br />
+<p><img alt="" src="static/images/dw_cs5.gif" title="dw_cs5" />
 Aslında Live View özelliği bir önce sürümde de mevcut ancak bu sürümden
 tam anlamıyla ...</p>
                 <a class="readmore" href=".././adobe-dreamweaver-cs5-yenilikleri/">devamını oku</a>

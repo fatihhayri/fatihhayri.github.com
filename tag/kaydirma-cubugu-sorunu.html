@@ -94,23 +94,39 @@ gelen çekilir diyeceğiz ve çözüm arayıp düzeltmeye çalışacağız.</p>
 <p>HTML Kodu(Tabloya verilen border ve bordercolor tanımları örneğe
 görsellik kazandırmak için eklenmiştir, sorun ile alakalı kodlar
 değildir.)</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;table</span> <span class="na">width=</span><span class="s">&quot;100%&quot;</span> <span class="na">cellspacing=</span><span class="s">&quot;0&quot;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;table</span> <span class="na">width=</span><span class="s">&quot;100%&quot;</span> <span class="na">cellspacing=</span><span class="s">&quot;0&quot;</span> <span class="na">cellpadding=</span><span class="s">&quot;0&quot;</span> <span class="na">border=</span><span class="s">&quot;1&quot;</span> <span class="na">bordercolor=</span><span class="s">&quot;#0000FF&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Mauris facilisis elementum ipsum nec semper. <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Vestibulum nec turpis at lectus pulvinar consequat nec in lectus. <span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Aliquam sit amet est ac est eleifend. <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Vivamus imperdiet.<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Pellentesque sagittis ultrices laoreet.<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>In hac habitasse platea dictumst.<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Sed sed leo elit, eu ultricies metus.  <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Aenean massa nulla.<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>In hac habitasse platea dictumst.<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Sed sed leo elit, eu ultricies metus.  <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Aenean massa nulla.<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>  
+  <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>cellpadding="0" border="1" bordercolor="#0000FF"&gt; <tr> <td>Lorem
-ipsum dolor sit amet, consectetur adipiscing elit. </td> <td>Mauris
-facilisis elementum ipsum nec semper. </td> <td>Vestibulum nec
-turpis at lectus pulvinar consequat nec in lectus. </td> </tr>
-<tr> <td>Aliquam sit amet est ac est eleifend. </td> <td>Vivamus
-imperdiet.</td> <td>Pellentesque sagittis ultrices laoreet.</td>
-</tr> <tr> <td>In hac habitasse platea dictumst.</td> <td>Sed
-sed leo elit, eu ultricies metus. </td> <td>Aenean massa
-nulla.</td> </tr> <tr> <td>In hac habitasse platea
-dictumst.</td> <td>Sed sed leo elit, eu ultricies metus. </td>
-<td>Aenean massa nulla.</td> </tr> </table> </div> </p>
 <p>CSS Kodu</p>
-<div class="codehilite"><pre> <span class="nf">#kapsul</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">40</span><span class="o">%</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span><span class="k">auto</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nf">#kapsul</span><span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">40</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> 
+    <span class="k">overflow</span><span class="o">:</span><span class="k">auto</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -123,53 +139,72 @@ kaydırma çubuğu çıkarmak için oluşturduğumuz bir alan içinde eğer yüz
 yüz genişlikte bir tablo var ise karşılaşıyoruz. Kaydırma çubuğu yok
 iken sorun yok, ancak içerik uzayınca normalde sadece dikeyde çıkması
 gereken kaydırma çubuğu yatayda da çıkıyor.</p>
-<h3>Çözüm;</h3>
+<h2>Çözüm;</h2>
 <p>Çözüm için kapsayıcı katman içine bir katman daha açıyoruz ve hem dışta
 overflow:auto verdiğimiz katmana, hemde yeni oluşturduğumuz katmana
 zoom:1 özelliği atıyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsulIci&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;table</span> <span class="na">width=</span><span class="s">&quot;100%&quot;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsulIci&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;table</span> <span class="na">width=</span><span class="s">&quot;100%&quot;</span> <span class="na">cellspacing=</span><span class="s">&quot;0&quot;</span> <span class="na">cellpadding=</span><span class="s">&quot;0&quot;</span> <span class="na">border=</span><span class="s">&quot;1&quot;</span> <span class="na">bordercolor=</span><span class="s">&quot;#0000FF&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Mauris facilisis elementum ipsum nec semper. <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Vestibulum nec turpis at lectus pulvinar consequat nec in lectus. <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Aliquam sit amet est ac est eleifend. <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Vivamus imperdiet.<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Pellentesque sagittis ultrices laoreet.<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>In hac habitasse platea dictumst.<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Sed sed leo elit, eu ultricies metus.  <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Aenean massa nulla.<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;td&gt;</span>In hac habitasse platea dictumst.<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Sed sed leo elit, eu ultricies metus.  <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>Aenean massa nulla.<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>  
+    <span class="nt">&lt;/table&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>cellspacing="0" cellpadding="0" border="1" bordercolor="#0000FF"&gt;
-<tr> <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-</td> <td>Mauris facilisis elementum ipsum nec semper. </td>
-<td>Vestibulum nec turpis at lectus pulvinar consequat nec in lectus.
-</td> </tr> <tr> <td>Aliquam sit amet est ac est eleifend.
-</td> <td>Vivamus imperdiet.</td> <td>Pellentesque sagittis
-ultrices laoreet.</td> </tr> <tr> <td>In hac habitasse platea
-dictumst.</td> <td>Sed sed leo elit, eu ultricies metus. </td>
-<td>Aenean massa nulla.</td> </tr> <tr> <td>In hac habitasse
-platea dictumst.</td> <td>Sed sed leo elit, eu ultricies metus.
-</td> <td>Aenean massa nulla.</td> </tr> </table> </div>
-</div> </p>
 <p>CSS kodu</p>
-<div class="codehilite"><pre> <span class="nf">#kapsul</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">40</span><span class="o">%</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> <span class="n">zoom</span><span class="o">:</span><span class="m">1</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span><span class="k">auto</span><span class="p">;}</span>
+<div class="codehilite"><pre><span class="nf">#kapsul</span><span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">40</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> 
+    <span class="n">zoom</span><span class="o">:</span><span class="m">1</span><span class="p">;</span> 
+    <span class="k">overflow</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#kapsulIci</span><span class="p">{</span>
+    <span class="n">zoom</span><span class="o">:</span><span class="m">1</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<h1 zoom:1;="zoom:1;">kapsulIci</h1>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ie7_yatay_scroll_sorunu_cozum.html">tıklayınız.</a></p>
 <p>Ayrıca yukarıdaki çözüm ie6 bazen sorun çıkarıyor, bu gibi durumlarda</p>
-<div class="codehilite"><pre> <span class="c">&lt;!--[if lt IE 7]&gt;&lt;style&gt; #kapsulIci { overflow: auto; }</span>
+<div class="codehilite"><pre><span class="c">&lt;!--[if lt IE 7]&gt;&lt;style&gt; #kapsulIci { overflow: auto; }&lt;/style&gt;&lt;![endif]--&gt;</span>
 </pre></div>
 
 
-<p></style>&lt;![endif]--&gt; </p>
 <p>Eklememiz gerekiyor.</p>
 <p>Hayatımızda(gerek gerçek, gerek sanal) sorunlar olacaktır. Sorunlardan
 kaçmamalıyız, üzerine gidip çözüm aramalıyız. Bir arayüz geliştiricinin
 kemale ermesi(Senior Front-End Developer) için sorunları ile baş etmesi
 şart. Çok mu hayat dersi verdim. Başınızı ağrıttı isem af ola.</p>
 <p>Kalın sağlıcakla.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://stackoverflow.com/questions/139000/div-with-overflowauto-and-a-100-wide-table-problem">http://stackoverflow.com/questions/139000/div-with-overflowauto-and-a-100-wide-table-problem</a></li>
 <li><a href="http://bytes.com/topic/html-css/answers/100751-overflow-auto-problem-ie">http://bytes.com/topic/html-css/answers/100751-overflow-auto-problem-ie</a></li>
 <li><a href="http://www.sitepoint.com/forums/showthread.php?t=661150">http://www.sitepoint.com/forums/showthread.php?t=661150</a></li>
 <li><a href="http://forums.mozillazine.org/viewtopic.php?t=538190">http://forums.mozillazine.org/viewtopic.php?t=538190</a></li>
-</ul>
-</p><p><a href=".././overflowauto-icinde-genislikte-tablo-kullaniminda-ie7de-yatay-kaydirma-cubugu-sorunu/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././overflowauto-icinde-genislikte-tablo-kullaniminda-ie7de-yatay-kaydirma-cubugu-sorunu/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

@@ -1,39 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/Javascript,%20XHTML.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2011-03-24T00:09:00+02:00</updated><entry><title>HTML Dokümanında Javascript Dosyalarını Nereye Koymalıyız?</title><link href="http://www.fatihhayrioglu.com/html-dokumaninda-javascript-dosyalarini-nereye-koymaliyiz/" rel="alternate"></link><updated>2011-03-24T00:09:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-03-24:html-dokumaninda-javascript-dosyalarini-nereye-koymaliyiz/</id><summary type="html">&lt;h3&gt;Javascript’i web sitelerine eklemek&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/Javascript,%20XHTML.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2011-03-24T00:09:00+02:00</updated><entry><title>HTML Dokümanında Javascript Dosyalarını Nereye Koymalıyız?</title><link href="http://www.fatihhayrioglu.com/html-dokumaninda-javascript-dosyalarini-nereye-koymaliyiz/" rel="alternate"></link><updated>2011-03-24T00:09:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2011-03-24:html-dokumaninda-javascript-dosyalarini-nereye-koymaliyiz/</id><summary type="html">&lt;h2&gt;Javascript’i web sitelerine eklemek&lt;/h2&gt;
 &lt;p&gt;Javascript dosyaları bir web sitesine iki şekilde eklenir. Birincisi
 satıriçi(inline), ikincisi ayrı bir javascript dosyası hazırlayıp harici
 olarak eklemek.&lt;/p&gt;
 &lt;p&gt;İlk javascript’i Hakkı Öcal’ın javascript kitapçığından öğrenmeye
 başlamıştım.&lt;/p&gt;
 &lt;p&gt;İlk örnek şöyle idi;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Merhaba Dünya!&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Merhaba Dünya!&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+        &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;merhaba&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c1"&gt;//merhaba isimli fonksiyonu deklare ediyoruz&lt;/span&gt;
+        &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;//bu, fonksiyonun başlama işareti&lt;/span&gt;
+            &lt;span class="nx"&gt;alert&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Merhaba Dünya!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;//fonksiyonun komutu ve komutun gerektirdiği metin&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="c1"&gt;//bu fonksiyonun bitme işareti&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;b&amp;gt;&lt;/span&gt;Merhaba Dünya&lt;span class="nt"&gt;&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;form&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;button&lt;/span&gt; &lt;span class="na"&gt;onclick=&lt;/span&gt;&lt;span class="s"&gt;merhaba()&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;TIKLAYINI!&lt;span class="nt"&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;function merhaba() //merhaba isimli fonksiyonu deklare ediyoruz { //bu,
-fonksiyonun başlama işareti alert ("Merhaba Dünya!") //fonksiyonun
-komutu ve komutun gerektirdiği metin } //bu fonksiyonun bitme işareti
-&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;b&gt;Merhaba Dünya&lt;/b&gt;&lt;br&gt; &lt;form&gt;
-&lt;button onclick=merhaba()&gt;TIKLAYINI!&lt;/button&gt; &lt;/form&gt; &lt;/body&gt;
-&lt;html&gt; &lt;/p&gt;
 &lt;p&gt;Bu satıriçi kodlamaya örnek olarak verilebilir.&lt;/p&gt;
 &lt;p&gt;Aynı kodu ayrı bir javascript dosyası olarak hazırlayıp .js uzantısı ile
 kaydedersek ve bunu html dokümana eklersek buda harici bir javascript
 dosyası ekleme kısmına girer.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;merhaba&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;alert&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Merhaba Dünya! Sene 2011&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;merhaba&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;alert&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Merhaba Dünya! Sene 2011&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Bu dosyayı merhaba.js olarak kaydedip, sonra&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=windows-1254&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Merhaba Dünya!&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;merhaba.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;bodyY&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;b&amp;gt;&lt;/span&gt;Merhaba Dünya&lt;span class="nt"&gt;&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;form&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;submit&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;button1&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;value=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;TIKLAYIN!&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;onclick=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;merhaba()&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;content="text/html; charset=windows-1254"&amp;gt; &lt;title&gt;Merhaba
-Dünya!&lt;/title&gt; &lt;script src="merhaba.js"&gt; &lt;/script&gt; &lt;/head&gt;
-&lt;bodyY&gt; &lt;b&gt;Merhaba Dünya&lt;/b&gt;&lt;br&gt; &lt;form&gt; &lt;input type="submit"
-name="button1" value="TIKLAYIN!" onclick="merhaba()"&gt; &lt;/form&gt;
-&lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Şeklinde HTML dokümanına ekleriz.&lt;/p&gt;
 &lt;p&gt;Yukarıda kullandığımız her iki yöntem ile de aynı sonucu alırız. Harici
 javascript dosyası ile eklemenin avantajları vardır;&lt;/p&gt;
@@ -47,28 +67,34 @@ javascript dosyası ile eklemenin avantajları vardır;&lt;/p&gt;
 &lt;p&gt;Javascript o günden bu yana daha fazla önem kazandı ve artık javascript
 kodumuzu en iyi hale getirmek için daha çok zaman harcıyoruz ve bize
 zaman kazandıracak her durumu inceleyip uyguluyoruz.&lt;/p&gt;
-&lt;h3&gt;HTML dokümanında javascript dosyasını nereye eklemeliyiz?&lt;/h3&gt;
+&lt;h2&gt;HTML dokümanında javascript dosyasını nereye eklemeliyiz?&lt;/h2&gt;
 &lt;p&gt;Web sitelerinin en iyi hale getirmek için çeşitli araçlar ile sitemizi
 test ederiz. Bunlardan biri Firefox’ın &lt;a href="https://addons.mozilla.org/en-us/firefox/addon/yslow/"&gt;YSlow&lt;/a&gt;eklentisidir. YSlow
 eklentisi ile web sitemizi test ettiğimizde javascript dosyalarımızı
 html dokümanının sonuna eklememizi öneren bir başlık ile karşılaşırız,
 burada bu başlığı biraz inceleyeceğiz.&lt;/p&gt;
-&lt;p&gt;CSS dosyalarının &lt;head&gt; içine konmasının öneren YSlow Javascript
-dosyalarının HTML dokümanının sonuna(&lt;/body&gt;’nin hemen öncesine)
+&lt;p&gt;CSS dosyalarının &amp;lt;head&gt; içine konmasının öneren YSlow Javascript
+dosyalarının HTML dokümanının sonuna(&amp;lt;/body&gt;’nin hemen öncesine)
 konmasını öneriyor. Burada bir çelişki var gibi görünüyor. Buradaki
-mantık şudur; javascript blokları &lt;head&gt; içine konduğu zaman sayfa ilk
+mantık şudur; javascript blokları &amp;lt;head&gt; içine konduğu zaman sayfa ilk
 açıldığında bu javascript blokları yüklenir ve işlenir. Javascript
 dosyası yüklenip, işlendikten sonra diğer sayfa üyeleri yüklenir.
 Javascript dosyası yüklenip işlenmesi bitene kadar sayfa boş bir sayfa
 olarak görünür, tabi buda istenen bir durum değildir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Javascript yükleme yeri&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Javascript yükleme yeri&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;script1.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;script2.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stil.css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;İçerik Burada&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;script type="text/javascript" src="script1.js"&gt;&lt;/script&gt; &lt;script
-type="text/javascript" src="script2.js"&gt;&lt;/script&gt; &lt;link
-rel="stylesheet" type="text/css" href="stil.css"&gt; &lt;/head&gt; &lt;body&gt;
-&lt;p&gt;İçerik Burada&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Sayfa başına konan javascript dosyalarının yüklenme zamanı aşağıdaki
 grafikte görüldüğü gibidir&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://lh3.googleusercontent.com/gSZsDGo9nsWt4gD1hgKwiJo2FITV5oh_x706nZ2wKUapQWLl70O6P7NofpZvXVOTxIJKOW2GiPabJKNZVbHCIgcp3CAA9eE7kpdGnNKP0sYqp6EcmNc" /&gt;&lt;/p&gt;
@@ -93,22 +119,21 @@ sonuna koyarak sayfamızın daha hızlı yüklenmesini sağlayabiliriz.&lt;/p&gt
 eklememiz gerektiğinde. Ancak bu durumlar içinde bazı çözümlerin olduğu
 aklımızın bir köşesinde kalsın.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;defer Özelliği&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;HTML4 ile birlikte &lt;script&gt; etiketi içine defer özelliği eklenmiştir.
+&lt;p&gt;HTML4 ile birlikte &amp;lt;script&gt; etiketi içine defer özelliği eklenmiştir.
 &lt;strong&gt;defer&lt;/strong&gt; özelliği tanımlanmış script dosyaları hemen uygulanmayıp tüm
 sayfa yüklendikten sonra yüklenir ve çalıştırılır. Bu özelliği İnternet
 Explorer 4+ ve Firefox3.5+ desteklemektedir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;script1.js&amp;quot;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;script1.js&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;defer&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;defer&amp;gt;&lt;/script&gt; &lt;/p&gt;
 &lt;p&gt;şeklinde kullanılır. Bu dosyayı html dokümanının istediğimiz yerine
 koyabiliriz. Tüm tarayıcıların desteklmemesi kullanımı konusunda bizi
 biraz düşündürüyor.&lt;/p&gt;
-&lt;h3&gt;Sonuç&lt;/h3&gt;
+&lt;h2&gt;Sonuç&lt;/h2&gt;
 &lt;p&gt;Sonuç olarak javascript dosyalarımızı html dokümanımız sonuna koymak web
 sitelerimizin daha hızlı açılmasını sağlayacak bir yöntemdir.&lt;/p&gt;
-&lt;h3&gt;Kaynak&lt;/h3&gt;
+&lt;h2&gt;Kaynak&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://developer.yahoo.com/blogs/ydn/posts/2007/07/high_performanc_5/"&gt;http://developer.yahoo.com/blogs/ydn/posts/2007/07/high_performanc_5/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://stackoverflow.com/questions/143486/unobtrusive-javascript-script-at-the-top-or-the-bottom-of-the-html-code"&gt;http://stackoverflow.com/questions/143486/unobtrusive-javascript-script-at-the-top-or-the-bottom-of-the-html-code&lt;/a&gt;&lt;/li&gt;
@@ -117,8 +142,7 @@ sitelerimizin daha hızlı açılmasını sağlayacak bir yöntemdir.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.quirksmode.org/js/placejs.html"&gt;http://www.quirksmode.org/js/placejs.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/"&gt;http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/"&gt;http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="defer"></category><category term="hız"></category><category term="javascript dosylarının yeri"></category><category term="paralel yükleme"></category><category term="performans"></category></entry><entry><title>Flash dosyalarını(swf) HTML'e eklemek</title><link href="http://www.fatihhayrioglu.com/flash-dosyalariniswf-htmle-eklemek/" rel="alternate"></link><updated>2010-03-25T00:46:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-25:flash-dosyalariniswf-htmle-eklemek/</id><summary type="html">&lt;p&gt;Flash dosyalarını html sayfalarımıza eklemek baştan beri tam oturmamış
+&lt;/ul&gt;</summary><category term="defer"></category><category term="hız"></category><category term="javascript dosylarının yeri"></category><category term="paralel yükleme"></category><category term="performans"></category></entry><entry><title>Flash dosyalarını(swf) HTML'e eklemek</title><link href="http://www.fatihhayrioglu.com/flash-dosyalariniswf-htmle-eklemek/" rel="alternate"></link><updated>2010-03-25T00:46:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-25:flash-dosyalariniswf-htmle-eklemek/</id><summary type="html">&lt;p&gt;Flash dosyalarını html sayfalarımıza eklemek baştan beri tam oturmamış
 bir konudur. Farklı tarayıcılar için farklı kod blokları yazılması,
 flash olmaması durumu için hazırlanan resimler veya yazılar vs. Ancak bu
 sorunlar yetmiyormuş gibi birde &lt;a href="http://www.fatihhayrioglu.com/internet-explorer-activex-guncelmesi-ve-sonrasinda-flashswf-kullanilan-sayfalardaki-sorunlar/"&gt;İnternet Explorer'ın ActiveX güncellemesi sonrası&lt;/a&gt; yeni sorunlar çıktı.&lt;/p&gt;
