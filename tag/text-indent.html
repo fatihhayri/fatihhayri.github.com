@@ -84,48 +84,63 @@
 </footer><!-- /.post-info --><p>Daha önce <a href="http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/">Metin Yerine Resim ekleme</a> yöntemini anlatmıştım ve bir çok
 yerde örnekler ile göstermiştim. Bu yöntemin uygulandığı eleman içindeki
 metni ekran dışına çıkarmak için text-indent:-9999px değeri atarız.</p>
-<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(selam.gif)</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">62px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">19px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background:url(selam.gif) no-repeat; width: 62px; height:19px; }</p>
 <p>Burada şöyle bir sorunumuz oluyor eğer bu elemana text-align:right
 tanımıda atamış isek. Maalesef metin ekran dışına çıkmıyor.</p>
-<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(selam.gif)</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">62px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">19px</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span><span class="k">right</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background:url(selam.gif) no-repeat; width: 62px; height:19px;
-text-align:right } </p>
 <p>Bu sorunu gidermek için sola dayalı sistemlerde negatif text-indent
 değeri veriyoruz, sağa dayalı sistemlerde de pozitif değer vererek bu
 durumu çözebiliyoruz. Bu çözüm yeni nesil tarayıcılarda sorun
 çıkarmazken İnternet Explore’da scroll çıkarmak kaydı ile sorun
 oluşturuyor.</p>
-<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">9999px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">text-indent</span><span class="o">:</span> <span class="m">9999px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(selam.gif)</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">62px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">19px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background:url(selam.gif) no-repeat; width: 62px; height:19px; }</p>
 <p>Tüm tarayıcılarda çözüm için ise yapmamız çok kolay bir şey aslında.
 text-align:left tanımı atamak. Metin yerine resim koyma metodu uygulanan
 metinlerin hizalaması sola olmalıdır.</p>
-<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">-999px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">text-indent</span><span class="o">:</span> <span class="m">-999px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(selam.gif)</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">62px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">19px</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span><span class="k">left</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background:url(selam.gif) no-repeat; width: 62px; height:19px;
-text-align:left } </p>
 <p>Bu sorun ile genelde metin yerine resim metodu uygulanmış elemanını
 kapsayan bir elemana text-align:right uygulandığında rastlarız.
 Kalıtsallık ile bu özellik tüm alt elemanlarınıda etkilediği için biz bu
 elemana text-align:right değerini atamasak dahi elemanımız bu değeri üst
 elemanından kalıtsal olarak alır ve böyle bir soruna neden olur.</p>
-<h3>Kaynak:</h3>
+<h2>Kaynak:</h2>
 <ul>
 <li><a href="http://indianapoliswebdesign.blogspot.com/2009/01/web-design-tips-text-replacement-with.html">http://indianapoliswebdesign.blogspot.com/2009/01/web-design-tips-text-replacement-with.html</a></li>
-</ul>
-</p><p><a href=".././floatleft-ve-text-alignright-atanms-elemana-metin-yerine-resim-uygulama/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././floatleft-ve-text-alignright-atanms-elemana-metin-yerine-resim-uygulama/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

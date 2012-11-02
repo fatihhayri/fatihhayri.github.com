@@ -82,7 +82,7 @@
 
 
 </footer><!-- /.post-info --><p>Daha önce resimli menü yapımını anlatmıştım.
-<a href="http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/" title="http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/">http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/</a>
+<a href="http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/">http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/</a>
 ancak burada şöyle bir sorun ile karşılaştık; Bu makalede anlattığımız
 yöntem ile genel bir metot anlatarak tüm resimli menüler için şablon
 niteliğinde bir kod ürettik, yani tüm menüler bu kod ile
@@ -101,57 +101,71 @@ tek resim oluşturduğumuzda sayfa nette açılırken her bir resim için
 istek yapılacaktır, buda sayfanın yavaş açılmasına neden olacaktır. Bu
 metotta ise tek resim yüklenecek ve bu bize performans kazandıracaktır.</p>
 <p>Çok basit bir xhtml kodu var. Birçok menü örneğinde olduğu gibi ul kodu;</p>
-<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;li</span>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;mAnasayfa&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ana Sayfa<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;mUrunler&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ürünler<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;mHizmetler&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Hizmetler<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;mBizeUlasin&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Bize Ulaşın<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<p>id="mAnasayfa"&gt;<a href="#">Ana Sayfa</a></li> <li
-id="mUrunler"><a href="#">Ürünler</a></li> <li
-id="mHizmetler"><a href="#">Hizmetler</a></li> <li
-id="mBizeUlasin"><a href="#">Bize Ulaşın</a></li> </ul></p>
 <p>Menümüzün resimlerini tek bir resim dosyası olarak hazırlayacağız. Biz
 burada normal ve fare imleci üzerine geldiğindeki halini(:hover) koyduk
 ama bunlara seçili ve tıklama durumlarınıda eklenebilir.</p>
 <p><img alt="" src="static/images/basit_resimli_menu.jpg" /></p>
 <p>Şimdi CSS kodlarımızı yazalım.</p>
 <p>ul için genel sıfırlama kodlarımızı yazalım</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.menu</span><span class="p">{</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span><span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+    <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">480px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">40px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>list-style:none; width:480px; height:40px; } </p>
 <p>Sırasız listelerin her nesnesini(li) yan yana dizmek için float:left
 tanımını yapmalıyız.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">li</span><span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.menu</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
 <p>Linkler için genel tanımlarımızı yapalım</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">120px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">120px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">40px</span><span class="p">;</span>
+    <span class="k">text-indent</span><span class="o">:-</span><span class="m">9999px</span><span class="p">;</span>
+    <span class="k">outline</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(images/basit_resimli_menu.jpg)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>height:40px; text-indent:-9999px; outline:none; text-decoration:none;
-background:url(images/basit_resimli_menu.jpg) 0 0 no-repeat; }</p>
 <p>Her bir menü nesnesinin yukarıdaki resimdeki konumunu belirlemeye geldi
 sıra.</p>
-<div class="codehilite"><pre> <span class="nt">li</span><span class="nf">#mAnasayfa</span> <span class="nt">a</span><span class="p">{</span><span class="k">background-position</span><span class="o">:</span><span class="m">0</span> <span class="m">0</span><span class="p">;}</span>
+<div class="codehilite"><pre><span class="nt">li</span><span class="nf">#mAnasayfa</span> <span class="nt">a</span><span class="p">{</span><span class="k">background-position</span><span class="o">:</span><span class="m">0</span> <span class="m">0</span><span class="p">;}</span>
+<span class="nt">li</span><span class="nf">#mUrunler</span> <span class="nt">a</span><span class="p">{</span><span class="k">background-position</span><span class="o">:-</span><span class="m">120px</span> <span class="m">0</span><span class="p">;}</span>
+<span class="nt">li</span><span class="nf">#mHizmetler</span> <span class="nt">a</span><span class="p">{</span><span class="k">background-position</span><span class="o">:-</span><span class="m">240px</span> <span class="m">0</span><span class="p">;}</span>
+<span class="nt">li</span><span class="nf">#mBizeUlasin</span> <span class="nt">a</span><span class="p">{</span><span class="k">background-position</span><span class="o">:-</span><span class="m">360px</span> <span class="m">0</span><span class="p">;}</span>
 </pre></div>
 
 
-<p>li#mUrunler a{background-position:-120px 0;} li#mHizmetler
-a{background-position:-240px 0;} li#mBizeUlasin
-a{background-position:-360px 0;} </p>
 <p>Basit bir şekilde resimli bir menü oluşturduk. Tabi buna birde fare
 üzerine geldiğindeki durumu ekleyerek daha belirgin bir hale
 getirebiliriz.</p>
-<div class="codehilite"><pre> <span class="nt">li</span><span class="nf">#mAnasayfa</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span><span class="k">background-position</span><span class="o">:</span><span class="m">0</span>
+<div class="codehilite"><pre><span class="nt">li</span><span class="nf">#mAnasayfa</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span><span class="k">background-position</span><span class="o">:</span><span class="m">0</span> <span class="m">-40px</span><span class="p">;}</span>
+<span class="nt">li</span><span class="nf">#mUrunler</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span><span class="k">background-position</span><span class="o">:-</span><span class="m">120px</span> <span class="m">-40px</span><span class="p">;}</span>
+<span class="nt">li</span><span class="nf">#mHizmetler</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span><span class="k">background-position</span><span class="o">:-</span><span class="m">240px</span> <span class="m">-40px</span><span class="p">;}</span>
+<span class="nt">li</span><span class="nf">#mBizeUlasin</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span><span class="k">background-position</span><span class="o">:-</span><span class="m">360px</span> <span class="m">-40px</span><span class="p">;}</span>
 </pre></div>
 
 
-<p>-40px;} li#mUrunler a:hover{background-position:-120px -40px;}
-li#mHizmetler a:hover{background-position:-240px -40px;}
-li#mBizeUlasin a:hover{background-position:-360px -40px;} </p>
 <p>Örneği görmek için <a href="static/dokumanlar/basit_resimli_menu.html">tıklayınız</a></p>
 <p><strong>Not: Ardalan konumu belirleme</strong></p>
 <p><img alt="" src="static/images/basit_resimli_menu_ardkaydi.jpg" /></p>
@@ -163,17 +177,16 @@ görüntüsünü elde etmek için resimdeki konumu yukarıdan -40px, soldan
 noktası sol üst köşesidir, bu nedenle değerler eksi(-) değer alır.</p>
 <h2>Kaynaklar</h2>
 <ul>
-<li><a href="http://www.webdesignerwall.com/tutorials/advanced-css-menu/" title="http://www.webdesignerwall.com/tutorials/advanced-css-menu/">http://www.webdesignerwall.com/tutorials/advanced-css-menu/</a></li>
-<li><a href="http://superfluousbanter.org/archives/2004/05/navigation-matrix-reloaded/" title="http://superfluousbanter.org/archives/2004/05/navigation-matrix-reloaded/">http://superfluousbanter.org/archives/2004/05/navigation-matrix-reloaded/</a></li>
-<li><a href="http://www.3point7designs.com/blog/2006/07/24/accessible-css-roll-over-images/" title="http://www.3point7designs.com/blog/2006/07/24/accessible-css-roll-over-images/">http://www.3point7designs.com/blog/2006/07/24/accessible-css-roll-over-images/</a></li>
-<li><a href="http://simplebits.com/notebook/2003/09/30/accessible_imagetab_rollovers.html" title="http://simplebits.com/notebook/2003/09/30/accessible_imagetab_rollovers.html">http://simplebits.com/notebook/2003/09/30/accessible_imagetab_rollovers.html</a></li>
-<li><a href="http://inobscuro.com/tutorials/read/19/" title="http://inobscuro.com/tutorials/read/19/">http://inobscuro.com/tutorials/read/19/</a> <br />
+<li><a href="http://www.webdesignerwall.com/tutorials/advanced-css-menu/">http://www.webdesignerwall.com/tutorials/advanced-css-menu/</a></li>
+<li><a href="http://superfluousbanter.org/archives/2004/05/navigation-matrix-reloaded/">http://superfluousbanter.org/archives/2004/05/navigation-matrix-reloaded/</a></li>
+<li><a href="http://www.3point7designs.com/blog/2006/07/24/accessible-css-roll-over-images/">http://www.3point7designs.com/blog/2006/07/24/accessible-css-roll-over-images/</a></li>
+<li><a href="http://simplebits.com/notebook/2003/09/30/accessible_imagetab_rollovers.html">http://simplebits.com/notebook/2003/09/30/accessible_imagetab_rollovers.html</a></li>
+<li><a href="http://inobscuro.com/tutorials/read/19/">http://inobscuro.com/tutorials/read/19/</a> <br />
 </li>
-<li><a href="http://dragan.yourtree.org/blog/en/2007/04/10/pure-css-rollover-menu/" title="http://dragan.yourtree.org/blog/en/2007/04/10/pure-css-rollover-menu/">http://dragan.yourtree.org/blog/en/2007/04/10/pure-css-rollover-menu/</a></li>
-<li><a href="http://www.webvamp.co.uk/blog/coding/css-image-rollovers/" title="http://www.webvamp.co.uk/blog/coding/css-image-rollovers/">http://www.webvamp.co.uk/blog/coding/css-image-rollovers/</a></li>
-<li><a href="http://www.codeitred.com/2008/08/12/apple-style-menu-tutorial-css-sprites" title="http://www.codeitred.com/2008/08/12/apple-style-menu-tutorial-css-sprites">http://www.codeitred.com/2008/08/12/apple-style-menu-tutorial-css-sprites</a></li>
-</ul>
-</p><p><a href=".././basit-resimli-menu-yapmak/#disqus_thread">yorum var</a>.</p>
+<li><a href="http://dragan.yourtree.org/blog/en/2007/04/10/pure-css-rollover-menu/">http://dragan.yourtree.org/blog/en/2007/04/10/pure-css-rollover-menu/</a></li>
+<li><a href="http://www.webvamp.co.uk/blog/coding/css-image-rollovers/">http://www.webvamp.co.uk/blog/coding/css-image-rollovers/</a></li>
+<li><a href="http://www.codeitred.com/2008/08/12/apple-style-menu-tutorial-css-sprites">http://www.codeitred.com/2008/08/12/apple-style-menu-tutorial-css-sprites</a></li>
+</ul><p><a href=".././basit-resimli-menu-yapmak/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

@@ -82,28 +82,41 @@
 
 
 </footer><!-- /.post-info --><p>Aslında başlığı nasıl atacağımı şaşırdığım için kısa bir başlık attım.</p>
-<h3>Sorun</h3>
+<h2>Sorun</h2>
 <p>Sorunumuz tam olarak anlamak için daha önce anlattığım <a href="http://www.fatihhayrioglu.com/css-ile-buton-yapmak/">CSS ile buton yapmak</a> adlı makaledeki görselliği arttırılmış esnek butonu örneğini
 incelememiz yeterli.</p>
 <p>Genelde esnek yapılı bu tip resimli menüler veya butonları oluştururken
 bir elemana iki background-image atayamadığımız için iç içe iki eleman
 koyarız. (Sliding Door) esnek yapılar olarak adlandırılan yöntem
 kullandığımızda başımıza geliyor.</p>
-<div class="codehilite"><pre> <span class="nt">a</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">a</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span><span class="sx">url(cancanli_butonlar_ard.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span> 
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> 
+    <span class="k">font-size</span><span class="o">:</span><span class="m">14px</span><span class="p">;</span> 
+    <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span> 
+<span class="p">}</span>
+
+<span class="nt">a</span> <span class="nt">span</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> 
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span><span class="sx">url(cancanli_butonlar_ard.gif)</span> <span class="k">right</span> <span class="m">-36px</span> <span class="k">no-repeat</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span><span class="m">28px</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">0</span> <span class="m">20px</span><span class="p">;</span> 
+    <span class="k">line-height</span><span class="o">:</span><span class="m">28px</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#363636</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background:url(cancanli_butonlar_ard.gif) 0 0 no-repeat;
-text-decoration:none; font-size:14px; font-weight:bold } a span {
-display:block; float:left; background:url(cancanli_butonlar_ard.gif)
-right -36px no-repeat; height:28px; width:150px; padding:0 20px;
-line-height:28px; color:#363636 } </p>
 <p>HTML kodu</p>
-<div class="codehilite"><pre> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;span&gt;</span>Örnek Buton
+<div class="codehilite"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Örnek Buton Metni<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
 </pre></div>
 
 
-<p>Metni</span></a> </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/cursor_sorunu.html">tıklayınız.</a></p>
 <p>Diğer tarayıcılarda sorun olmazken ie6 ve ie7’de el işareti yerine
 normal fare imleci görünüyor.</p>
@@ -111,18 +124,26 @@ normal fare imleci görünüyor.</p>
 <p><img alt="" src="https://lh4.googleusercontent.com/fZqsPR_QQBH2juKgQhlheWgW3gH-8SJ2ER8u3j24jSyHU2r18ruXvOLQvIhq2qCqrgldgvbGjltA30kVNxOc4H3OKOQZ5yM0MuHTGK-vSPBExD6ZSQ" /></p>
 <p>IE7 de buton üzerinde normal imleç görünürken Firefox ve diğer
 tarayıcılarda normal olarak el işareti görüntülenecektir.</p>
-<h3>Çözüm</h3>
+<h2>Çözüm</h2>
 <p>Çözümü çok basit tabi</p>
-<p>[sourcecode language="css" highlight="9"] a span { display:block;
-float:left; background:url(cancanli_butonlar_ard.gif) right -36px
-no-repeat; height:28px; width:150px; padding:0 20px; line-height:28px;
-color:#363636; cursor:pointer } </p>
+<div class="codehilite"><pre><span class="nt">a</span> <span class="nt">span</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> 
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span><span class="sx">url(cancanli_butonlar_ard.gif)</span> <span class="k">right</span> <span class="m">-36px</span> <span class="k">no-repeat</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span><span class="m">28px</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">0</span> <span class="m">20px</span><span class="p">;</span> 
+    <span class="k">line-height</span><span class="o">:</span><span class="m">28px</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#363636</span><span class="p">;</span>
+    <span class="k">cursor</span><span class="o">:</span><span class="k">pointer</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p>cursor:pointer özelliğini eklemek yeterli oluyor.</p>
 <p>Bu sorunu niye yazdım? Benim gibi kod yazarken unutuyorsanız
 hatırlayalım diye. İşin ilginç yanı internette ufak bir araştırma yaptım
 ama hiç bu sorun ile karşılaşanı görmedim, belki ben tam anahtar
-kelimeleri bulamadım</p>
-</p><p><a href=".././ie6-ve-ie7de-baglantilardaki-cursor-sorunu/#disqus_thread">yorum var</a>.</p>
+kelimeleri bulamadım</p><p><a href=".././ie6-ve-ie7de-baglantilardaki-cursor-sorunu/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

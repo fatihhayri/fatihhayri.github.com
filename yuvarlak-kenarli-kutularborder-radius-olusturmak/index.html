@@ -98,8 +98,7 @@ kullanılıyor, buda bu özelliği önemli kılıyor.</p>
 tasarımları tercih ediyor. Bu arada şunuda söylemeden geçemeyeceğim bazı
 sitelerde hiç hoş durmuyor yuvarlak kenar, her şeyi yerinde ve göz
 zevkine uygun kullanmak en iyisi.<!--more--></p>
-<p><strong>Yapısı :</strong> <border-radius>{1,4} [ / <border-radius>{1,4}]?<br />
-<strong>Aldığı Değerler :</strong> [ <uzunluk> | <yüzde> ] [ <uzunluk> | <yüzde> ]? <br />
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> <border-radius\>{1,4} [ / <border-radius\>{1,4}]?<br />**Aldığı Değerler :** [ <uzunluk> | <yüzde> ] [ &lt;uzunluk> | &lt;yüzde> ]? <br />
 <strong>Başlangıç değeri:</strong> tanımlama yok <br />
 <strong>Uygulanabilen elementler:</strong>tüm elementler ve tabiki tablo elementine
 border-collapse değeri collapse olarak atalı ise uygulanır<br />
@@ -111,7 +110,7 @@ değer sağ üst ve sol alt köşeye uygulanır.<br />
 alt köşelere uygulanır.<br />
 <strong>Üç değer atanmış ise,</strong> ikinci değer sağ üst ve sol alt köşeye
 uygulanır.</p>
-<p><strong>Tarayıcı Uyumu:</strong><br />
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu:</strong><br />
 Internet Explorer desteklemiyor (İE9 da gelecek) <br />
 Firefox 2+ <br />
 Safari 3+ (kısmen)<br />
@@ -119,18 +118,22 @@ Opera 10.50+<br />
 W3C's CSS Level 3+<br />
 CSS Profile 3.0</p>
 <ul>
-<li>
-<p>Safari yüzde değerleri desteklemiyor. <strong><br />
-</strong>- Safari/Webkit tabanlı tarayıcılar her 4 köşeye sadece bir tanımı
-kabul ediyor.<strong><br />
-</strong>- Safari/webkit tarayıcıları (/) ile ayrılan değerleri kabul etmiyor.
-Bu gibi değerleri kullanmak için aşağıdaki gibi bir atama yapmalıyız.
-Elips şeklinde sonuçlar elde etmke için (/) ayracı kullanılır.</p>
-<p>:::css
- -webkit-border-radius:  40px 10px;
--moz-border-radius:  40px/10px; border-radius:  40px/10px; </p>
+<li>Safari yüzde değerleri desteklemiyor. **<br />
 </li>
+<li>Safari/Webkit tabanlı tarayıcılar her 4 köşeye sadece bir tanımı
+kabul ediyor.**<br />
+</li>
+<li>Safari/webkit tarayıcıları (/) ile ayrılan değerleri kabul etmiyor.
+Bu gibi değerleri kullanmak için aşağıdaki gibi bir atama yapmalıyız.
+Elips şeklinde sonuçlar elde etmke için (/) ayracı kullanılır.</li>
 </ul>
+<p>CSS kodu;</p>
+<div class="codehilite"><pre><span class="nt">-webkit-border-radius</span><span class="o">:</span>  <span class="nt">40px</span> <span class="nt">10px</span><span class="o">;</span>
+<span class="nt">-moz-border-radius</span><span class="o">:</span>  <span class="nt">40px</span><span class="o">/</span><span class="nt">10px</span><span class="o">;</span>
+<span class="nt">border-radius</span><span class="o">:</span>  <span class="nt">40px</span><span class="o">/</span><span class="nt">10px</span><span class="o">;</span>
+</pre></div>
+
+
 <p><strong>Uygulama</strong></p>
 <p>Bugünkü durumda border-radius tanımı tek bir tanımlama olarak
 atanmamaktadır, farklı tarayıcılar ön ek kullanarak bu özelliği
@@ -140,31 +143,42 @@ kullanılmaktadır. </p>
 <p>Bu durum bazen çok uzun kodlar üretmemize neden oluyor. İleride umarım
 bu durum düzelir. </p>
 <p>İlk örneğimizi yapalım</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#kutu</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nf">#kutu</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> <span class="c">/* Standart */</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> <span class="c">/* Firefox */</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> <span class="c">/* Safari ve Chrome */</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#F00</span><span class="p">;</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>border-radius: 10px; /<em> Standart </em>/ -moz-border-radius: 10px; /<em>
-Firefox </em>/ -webkit-border-radius: 10px; /<em> Safari ve Chrome </em>/
-background: #F00; margin-bottom: 10px; } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/border_radius1.html">tıklayınız.</a></p>
-<p>[<img alt="" src="../static/images/border_radius_1.jpg" title="border_radius_1" />][]</p>
+<p><img alt="" src="../static/images/border_radius_1.jpg" /></p>
 <p>İkinci örnek</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#kutu</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nf">#kutu</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">border-top</span><span class="o">-</span><span class="k">right</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="o">-</span><span class="k">left</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">-</span><span class="n">topright</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">-</span><span class="n">bottomleft</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border-top</span><span class="o">-</span><span class="k">right</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border-bottom</span><span class="o">-</span><span class="k">left</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#F00</span><span class="p">;</span>
+    <span class="k">white-space</span><span class="o">:</span><span class="n">pre</span>
+ <span class="p">}</span>
 </pre></div>
 
 
-<p>border-top-right-radius: 10px; border-bottom-left-radius: 10px;
--moz-border-radius-topright: 10px; -moz-border-radius-bottomleft: 10px;
--webkit-border-top-right-radius: 10px;
--webkit-border-bottom-left-radius: 10px; background: #F00;
-white-space:pre } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/border_radius2.html">tıklayınız.</a></p>
-<p>[<img alt="" src="../static/images/border_radius_2.jpg" title="border_radius_2" />][]</p>
+<p><img alt="" src="../static/images/border_radius_2.jpg" /></p>
 <p><a href="http://muddledramblings.com/table-of-css3-border-radius-compliance" title="http://muddledramblings.com/table-of-css3-border-radius-compliance">http://muddledramblings.com/table-of-css3-border-radius-compliance</a> 
 ve <a href="http://shapeshed.com/examples/border-radius/">http://shapeshed.com/examples/border-radius/</a> adresindeki örnekler
 inceleyerek bu özellik ile neler yapabileceğimizi görebiliriz.</p>
-<h3>İnternet Explorer Desteği</h3>
+<h2>İnternet Explorer Desteği</h2>
 <p>Yukarıda anlattığımız tanımları maalesef İnternet Explorer
 desteklememektedir, daha ön görünümü yayınlanan ie9'da desteklediğini
 açıkladı.</p>
@@ -190,12 +204,15 @@ gereksiz bir çok eleman var. Pek önerilebilecek bir çözüm değil.</p>
 olmaması. Yazdığımız border-radius değerini alıp desteklemeyen
 tarayıcılara göre kod yazıyor. Script tanımını css kodu içerisinden
 yapıyoruz.</p>
-<div class="codehilite"><pre> <span class="nc">.curved</span> <span class="p">{</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nc">.curved</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+    <span class="n">behavior</span><span class="o">:</span><span class="sx">url(border-radius.htc)</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>-moz-border-radius:10px; -webkit-border-radius:10px;
-behavior:url(border-radius.htc); } </p>
 <p>Köşe yumuşatması güzeldir. 4.8 kb'lık dosya boyutu ile çok cazip boyuta
 sahip.</p>
 <p><a href="http://css3pie.com/" title="css3pie">css3pie</a></p>
@@ -204,7 +221,7 @@ sahip.</p>
 bütünleşik bir çözüm sunduğu için dosya boyutunun biraz büyük olmasıdır.
 Köşe yumuşaklığı güzel. CSS3'ü destekleyen tarayıcılar için css kodunu
 desteklemeyen tarayıcılar için ise script kodunu uyguluyor olması güzel.</p>
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>border-radius tanımını destekleyen tarayıcılar açısından bir sorunumuz
 yoktur. Sorunumuz desteği sağlamayan ie ile dir. </p>
 <p>Javascript ile ürettiğimiz çözümler normal tanımın yerini tutmayacaktır
@@ -221,7 +238,7 @@ bir scripti seçmenizi öneririm. </p>
 <p>Bence en güzeli eğer tercih imkanınız varsa destekleyen tarayıcılar için
 kodu yazmak desteklemeyenler için olduğu gibi bırakmak(twitter.com
 sitesinde olduğu gibi.)</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://webdesignernotebook.com/css/an-ode-to-border-radius/" title="http://webdesignernotebook.com/css/an-ode-to-border-radius/">http://webdesignernotebook.com/css/an-ode-to-border-radius/</a></li>
 <li><a href="http://leaverou.me/2009/02/css3-border-radius-today/" title="http://leaverou.me/2009/02/css3-border-radius-today/">http://leaverou.me/2009/02/css3-border-radius-today/</a></li>
@@ -230,26 +247,17 @@ sitesinde olduğu gibi.)</p>
 <li><a href="http://24ways.org/2006/rounded-corner-boxes-the-css3-way" title="http://24ways.org/2006/rounded-corner-boxes-the-css3-way">http://24ways.org/2006/rounded-corner-boxes-the-css3-way</a></li>
 <li><a href="http://www.css3.info/border-radius-apple-vs-mozilla/" title="http://www.css3.info/border-radius-apple-vs-mozilla/">http://www.css3.info/border-radius-apple-vs-mozilla/</a></li>
 <li><a href="http://woork.blogspot.com/2009/08/css3-rounded-corners-for-every-browser.html" title="http://woork.blogspot.com/2009/08/css3-rounded-corners-for-every-browser.html">http://woork.blogspot.com/2009/08/css3-rounded-corners-for-every-browser.html</a></li>
-<li><a href="http://www.smileycat.com/miaow/archives/000044.php" title="http://www.smileycat.com/miaow/archives/000044.php">http://www.smileycat.com/miaow/archives/000044.php</a> (tüm
-    makalelerin listesi)</li>
+<li><a href="http://www.smileycat.com/miaow/archives/000044.php" title="http://www.smileycat.com/miaow/archives/000044.php">http://www.smileycat.com/miaow/archives/000044.php</a> (tüm makalelerin listesi)</li>
 <li><a href="http://www.netzgesta.de/corner/" title="http://www.netzgesta.de/corner/">http://www.netzgesta.de/corner/</a> (javascript)</li>
 <li><a href="http://www.curvycorners.net/demos/" title="http://www.curvycorners.net/demos/">http://www.curvycorners.net/demos/</a> (javascript)</li>
 <li><a href="http://www.html.it/articoli/niftycube/index.html" title="http://www.html.it/articoli/niftycube/index.html">http://www.html.it/articoli/niftycube/index.html</a> (javascript)</li>
-<li><a href="http://www.dillerdesign.com/experiment/DD_roundies/#animation" title="http://www.dillerdesign.com/experiment/DD_roundies/#animation">http://www.dillerdesign.com/experiment/DD_roundies/#animation</a>
-    (javascript)</li>
+<li><a href="http://www.dillerdesign.com/experiment/DD_roundies/#animation" title="http://www.dillerdesign.com/experiment/DD_roundies/#animation">http://www.dillerdesign.com/experiment/DD_roundies/#animation</a> (javascript)</li>
 <li><a href="http://www.w3.org/TR/css3-background/#border-radius" title="http://www.w3.org/TR/css3-background/#border-radius">http://www.w3.org/TR/css3-background/#border-radius</a></li>
-<li><a href="http://www.htmlremix.com/css/curved-corner-border-radius-cross-browser" title="http://www.htmlremix.com/css/curved-corner-border-radius-cross-browser">http://www.htmlremix.com/css/curved-corner-border-radius-cross-browser</a>
-    (javascript)</li>
-<li><a href="http://doctype.com/having-trouble-styling-cross-browser-buttons-input-submit" title="http://doctype.com/having-trouble-styling-cross-browser-buttons-input-submit">http://doctype.com/having-trouble-styling-cross-browser-buttons-input-submit</a>
-    (sorunlar)</li>
-<li><a href="http://muddledramblings.com/table-of-css3-border-radius-compliance" title="http://muddledramblings.com/table-of-css3-border-radius-compliance">http://muddledramblings.com/table-of-css3-border-radius-compliance</a>
-    (taraycı destek tablosu)</li>
+<li><a href="http://www.htmlremix.com/css/curved-corner-border-radius-cross-browser" title="http://www.htmlremix.com/css/curved-corner-border-radius-cross-browser">http://www.htmlremix.com/css/curved-corner-border-radius-cross-browser</a> (javascript)</li>
+<li><a href="http://doctype.com/having-trouble-styling-cross-browser-buttons-input-submit" title="http://doctype.com/having-trouble-styling-cross-browser-buttons-input-submit">http://doctype.com/having-trouble-styling-cross-browser-buttons-input-submit</a> (sorunlar)</li>
+<li><a href="http://muddledramblings.com/table-of-css3-border-radius-compliance" title="http://muddledramblings.com/table-of-css3-border-radius-compliance">http://muddledramblings.com/table-of-css3-border-radius-compliance</a>(taraycı destek tablosu)</li>
 <li><a href="http://stackoverflow.com/questions/2687804/emulating-css3-border-radius-and-box-shadow-in-ie7-8" title="http://stackoverflow.com/questions/2687804/emulating-css3-border-radius-and-box-shadow-in-ie7-8">http://stackoverflow.com/questions/2687804/emulating-css3-border-radius-and-box-shadow-in-ie7-8</a></li>
 </ul>
-</p>
-
-<p>[<img alt="" src="../static/images/border_radius_1.jpg" title="border_radius_1" />]: /images/border_radius_1.jpg
-  [<img alt="" src="../static/images/border_radius_2.jpg" title="border_radius_2" />]: /images/border_radius_2.jpg</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

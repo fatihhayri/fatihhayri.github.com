@@ -89,71 +89,91 @@
       <p><a href="http://www.fatihhayrioglu.com/jquery-ipuclari/">Jquery ipuçları - 1</a><br />
 <a href="http://www.fatihhayrioglu.com/jquery-ipuclari-2/">Jquery ipuçları - 2</a></p>
 <p>jQuery ipuçlarını yayınlamaya devam ediyorum.</p>
-<h3>1- Dinamik oluşturulan elementlere live() ile olay atama</h3>
+<h2>1- Dinamik oluşturulan elementlere live() ile olay atama</h2>
 <p>Sayfaya dinamik olarak eklenen içeriklerde veya ajax ile doldurduğumuz
 içeriklerdeki elemanlara bir olay atadığımızda(click, mouseover vd.)
 çalışmayacaktır. jQuery geliştiricileri bunun için live() fonksiyonunu
 geliştirmiş.</p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a.acilSusam&#39;</span><span class="p">).</span><span class="nx">live</span><span class="p">(</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span>
+<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a.acilSusam&#39;</span><span class="p">).</span><span class="nx">live</span><span class="p">(</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> 
+    <span class="c1">// yapilacak islemler </span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>function() { // yapilacak islemler }); </p>
-<h3>2 - Tarayıcı Penceresinin Boyutlarını Değişmesini Yakalamak</h3>
+<h2>2 - Tarayıcı Penceresinin Boyutlarını Değişmesini Yakalamak</h2>
 <p>Belki ara sıra lazım olacak bir kod ama bazen gerekiyor işte. Pencere
 boyutu her değiştiğine bazı işlemleri yapmak sistemimizi yorabilir diye
 setTimeout yardımı ile belli aralıklarla bunu yaptırıyoruz.</p>
-<div class="codehilite"><pre> <span class="kd">function</span> <span class="nx">pencereBoyutuDegisti</span><span class="p">()</span> <span class="p">{</span>
+<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">pencereBoyutuDegisti</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Değişti&quot;</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">resizeTimer</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;resize&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">resizeTimer</span><span class="p">)</span> <span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">resizeTimer</span><span class="p">);</span>
+    <span class="nx">resizeTimer</span> <span class="o">=</span> <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">pencereBoyutuDegisti</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>alert("Değişti"); }; var resizeTimer = null; $(window).bind('resize',
-function() { if (resizeTimer) clearTimeout(resizeTimer); resizeTimer =
-setTimeout(pencereBoyutuDegisti, 100); }); </p>
-<h3>3 - Element miktarını bulmak</h3>
+<h2>3 - Element miktarını bulmak</h2>
 <p>Bir dokümanda seçilen elemandan kaç adet olduğu bulmak için;</p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;element&#39;</span><span class="p">).</span><span class="nx">size</span><span class="p">();</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;element&#39;</span><span class="p">).</span><span class="nx">size</span><span class="p">();</span>
 </pre></div>
 
 
-<h3>4 - Bir elemanın index değerini bulmak</h3>
+<h2>4 - Bir elemanın index değerini bulmak</h2>
 <p>index değerini bulmanın farklı bir yolu</p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;ul &gt; li&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<div class="codehilite"><pre><span class="p">(</span><span class="s2">&quot;ul &gt; li&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">prevAll</span><span class="p">().</span><span class="nx">length</span><span class="p">;</span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>var index = $(this).prevAll().length; }); </p>
-<h3>5- Bir elemanın görünür olup olmadığını yakalamak</h3>
-<div class="codehilite"><pre> <span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.eleman&quot;</span><span class="p">).</span><span class="nx">is</span><span class="p">(</span><span class="s2">&quot;:visible&quot;</span><span class="p">))</span> <span class="p">{</span>
+<h2>5- Bir elemanın görünür olup olmadığını yakalamak</h2>
+<div class="codehilite"><pre><span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.eleman&quot;</span><span class="p">).</span><span class="nx">is</span><span class="p">(</span><span class="s2">&quot;:visible&quot;</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Burda&#39;</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>alert('Burda'); } </p>
-<h3>6- Kaç tane alt elemanı(çocuk elemanı) var</h3>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;foo&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;bar&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<h2>6- Kaç tane alt elemanı(çocuk elemanı) var</h2>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;foo&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;bar&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;baz&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;biz&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;span&gt;&lt;span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+//kac tane alt elemanı oldugunu bulmak icin
+$(&quot;#foo &gt; div&quot;).length
 </pre></div>
 
 
-<p><div id="baz"> <div id="biz"> </div> <span><span> </div>
-//kac tane alt elemanı oldugunu bulmak icin $("#foo &gt; div").length</p>
-<h3>7- jQuery Kopya Kağıdı(Cheat Sheet)</h3>
+<h2>7- jQuery Kopya Kağıdı(Cheat Sheet)</h2>
 <p>jQuery'nini bir çok özelliği var ve bunları aklımızda tutma imkanımız
 yok. Bir kopya kağıdı işimize yaraya bilir.</p>
 <p><a href="http://www.futurecolors.ru/jquery/">http://www.futurecolors.ru/jquery/</a></p>
 <p>Burada son sürümün kopya kağıdı mevcut. Bende css3 özelliklerini
 kullanarak biraz renklendirdim. <a href="http://fatihhayrioglu.com/dokumanlar/jQuery14.htm">Benim renklendirdiğim</a>(CSS3 içerir,
 herisi göremez)</p>
-<h3>8 - Select Elemanı ipuçları</h3>
-<div class="codehilite"><pre> <span class="c1">// secili olan ögenin metnini almak</span>
+<h2>8 - Select Elemanı ipuçları</h2>
+<div class="codehilite"><pre><span class="c1">// secili olan ögenin metnini almak</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#myselect option:selected&quot;</span><span class="p">).</span><span class="nx">text</span><span class="p">();</span>
+
+<span class="c1">// secili olan ögenin degerini almak icin</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#myselect option:selected&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+
+<span class="c1">// secili ogenin index degeri</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#myselect option&quot;</span><span class="p">).</span><span class="nx">index</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#myselect option:selected&quot;</span><span class="p">));</span>
+
+<span class="c1">// indeksi 2 olan ögeyi seçili hale getirmek</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#myselect option:eq(2)&quot;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;selected&quot;</span><span class="p">,</span> <span class="s2">&quot;selected&quot;</span><span class="p">);</span>
 </pre></div>
 
 
-<p>$("#myselect option:selected").text(); // secili olan ögenin degerini
-almak icin $("#myselect option:selected").val(); // secili ogenin
-index degeri $("#myselect option").index($("#myselect
-option:selected")); // indeksi 2 olan ögeyi seçili hale getirmek
-$("#myselect option:eq(2)").attr("selected", "selected");</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://blog.kenmoredesign.com/2009/02/02/useful-jquery-snippets/">http://blog.kenmoredesign.com/2009/02/02/useful-jquery-snippets/</a></li>
 <li><a href="http://tympanus.net/codrops/2010/01/07/some-useful-javascript-jquery-snippets-part-2/">http://tympanus.net/codrops/2010/01/07/some-useful-javascript-jquery-snippets-part-2/</a></li>
@@ -161,7 +181,6 @@ $("#myselect option:eq(2)").attr("selected", "selected");</p>
 <li><a href="http://tympanus.net/codrops/2010/01/08/some-useful-javascript-jquery-snippets-part-3/">http://tympanus.net/codrops/2010/01/08/some-useful-javascript-jquery-snippets-part-3/</a></li>
 <li><a href="http://www.opensourcehunter.com/2010/02/27/26-cool-and-usefull-jquery-tips-tricks-solutions/">http://www.opensourcehunter.com/2010/02/27/26-cool-and-usefull-jquery-tips-tricks-solutions/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

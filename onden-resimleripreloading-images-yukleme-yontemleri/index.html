@@ -107,21 +107,26 @@ yöntemler hakkında genel bir bilgi verip geçeceğim.</p>
 görüntüsünden kaçırılması ile yapılan yöntemlerdir ki işin bu kısmı
 benim hoşuma gitmiyor.</p>
 <p>CSS ile bu işi yapan bir örnek verelim.</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#preloaded-images</span> <span class="p">{</span> <span class="err"> </span><span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nf">#preloaded-images</span> <span class="p">{</span>
+   <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+   <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+   <span class="k">left</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+   <span class="k">top</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+   <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+   <span class="k">width</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>overflow: hidden;  left: -9999px;  top: -9999px;  height: 1px;  width:
-1px; } </p>
 <p>HTML kodu</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;preloaded-images&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;img</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;preloaded-images&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://deneme.com/image-01.png&quot;</span> <span class="na">width=</span><span class="s">&quot;1&quot;</span> <span class="na">height=</span><span class="s">&quot;1&quot;</span> <span class="na">alt=</span><span class="s">&quot;Image 01&quot;</span> <span class="nt">/&gt;</span>
+ <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://deneme.com/image-02.png&quot;</span> <span class="na">width=</span><span class="s">&quot;1&quot;</span> <span class="na">height=</span><span class="s">&quot;1&quot;</span> <span class="na">alt=</span><span class="s">&quot;Image 02&quot;</span> <span class="nt">/&gt;</span>
+ <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://deneme.com/image-03.png&quot;</span> <span class="na">width=</span><span class="s">&quot;1&quot;</span> <span class="na">height=</span><span class="s">&quot;1&quot;</span> <span class="na">alt=</span><span class="s">&quot;Image 03&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>src="http://deneme.com/image-01.png" width="1" height="1" alt="Image 01"
-/&gt; <img src="http://deneme.com/image-02.png" width="1" height="1"
-alt="Image 02" /> <img src="http://deneme.com/image-03.png" width="1"
-height="1" alt="Image 03" /> </div> </p>
 <p>Yukarıda görüldüğü gibi html içine eklenen resimler CSS yardımı ile
 kullanıcının göremeyeceği bölgelere itilmiştir. Bu şekilde bir çözüm
 üretilmiştir.</p>
@@ -132,30 +137,51 @@ resimler dinamik olarak doküman içine eklenir.</p>
 aşağıdaki koddur. Bu kodun diğerlerine göre avantajı yükleme yaptığımız
 sayfanın yüklenmesi bittikten sonra bizim önden yükleme yaptığımız
 resimleri yüklemesidir.</p>
-<div class="codehilite"><pre> <span class="kd">function</span> <span class="nx">preloader</span><span class="p">()</span> <span class="p">{</span> <span class="k">if</span>
+<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">preloader</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">images</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">img1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">img2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">img3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">();</span>
+
+    <span class="nx">img1</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s2">&quot;http://domain.tld/path/to/image-001.gif&quot;</span><span class="p">;</span>
+    <span class="nx">img2</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s2">&quot;http://domain.tld/path/to/image-002.gif&quot;</span><span class="p">;</span>
+    <span class="nx">img3</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s2">&quot;http://domain.tld/path/to/image-003.gif&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">addLoadEvent</span><span class="p">(</span><span class="nx">func</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">oldonload</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">!=</span> <span class="s1">&#39;function&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="nx">func</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">oldonload</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">oldonload</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="nx">func</span><span class="p">();</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">addLoadEvent</span><span class="p">(</span><span class="nx">preloader</span><span class="p">);</span>
 </pre></div>
 
 
-<p>(document.images) { var img1 = new Image(); var img2 = new Image(); var
-img3 = new Image(); img1.src =
-"http://domain.tld/path/to/image-001.gif"; img2.src =
-"http://domain.tld/path/to/image-002.gif"; img3.src =
-"http://domain.tld/path/to/image-003.gif"; } } function
-addLoadEvent(func) { var oldonload = window.onload; if (typeof
-window.onload != 'function') { window.onload = func; } else {
-window.onload = function() { if (oldonload) { oldonload(); } func(); } }
-} addLoadEvent(preloader); </p>
 <p>Yukarıdaki javascript kodu işimizi görecektir.</p>
 <p>jQuery ile daha kısa ve basit bir kod ile bu işi yapabiliriz.</p>
-<div class="codehilite"><pre> <span class="c1">// resim onyükleme fonksiyonu</span>
+<div class="codehilite"><pre><span class="c1">// resim onyükleme fonksiyonu</span>
+ <span class="nx">jQuery</span><span class="p">.</span><span class="nx">preloadImages</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span>
+ <span class="p">{</span>
+   <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+   <span class="p">{</span>
+   <span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;&lt;img&gt;&quot;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+   <span class="p">}</span>
+ <span class="p">};</span>
+
+<span class="c1">// yükleme yap</span>
+ <span class="nx">$</span><span class="p">.</span><span class="nx">preloadImages</span><span class="p">(</span><span class="s2">&quot;images/dexter.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;images/saydam_ardalan1.gif&quot;</span><span class="p">,</span> <span class="s2">&quot;images/ornek_sayfa.jpg&quot;</span><span class="p">);</span>
 </pre></div>
 
 
-<p>jQuery.preloadImages = function() { for(var i = 0; i<arguments.length;
-i++) { jQuery("<img>").attr("src", arguments[i]); } }; // yükleme yap
-$.preloadImages("images/dexter.jpg", "images/saydam_ardalan1.gif",
-"images/ornek_sayfa.jpg"); </p>
-<p>[<img alt="" src="../static/images/resim_on_yukleme_jquery-300x195.gif" title="resim_on_yukleme_jquery" />][]</p>
+<p><img alt="" src="../static/images/resim_on_yukleme_jquery-300x195.gif" /></p>
 <p>Yukarıdaki kodu yazınca yükleme yaptığımız sayfadaki öğeler yüklenirken
 yükleme yaptığımız resimlerde yüklenir. Bu benim istediğim bir durum
 değildir. Bence yükleme yapılacak sayfanın öğeleri yüklendikten sonra
@@ -163,19 +189,31 @@ yüklenecek resimler yüklenmelidir. Kullanıcı ilk önce mevcut sayfayı tam
 görmelidir, sonra kullanıcıya göstermeden diğer sayfa resimlerini
 yüklemeliyiz.</p>
 <p>Bunun için kodumuzu aşağıdaki değiştirmeliyiz.</p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>  
+ <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span>
+ <span class="p">{</span>
+
+   <span class="c1">// resim onyükleme fonksiyonu</span>
+   <span class="nx">jQuery</span><span class="p">.</span><span class="nx">preloadImages</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span>
+   <span class="p">{</span>
+   <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+   <span class="p">{</span>
+     <span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;&lt;img&gt;&quot;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+   <span class="p">}</span>
+   <span class="p">};</span>
+
+   <span class="c1">// yükleme yap</span>
+   <span class="nx">$</span><span class="p">.</span><span class="nx">preloadImages</span><span class="p">(</span><span class="s2">&quot;images/dexter.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;images/saydam_ardalan1.gif&quot;</span><span class="p">,</span> <span class="s2">&quot;images/ornek_sayfa.jpg&quot;</span><span class="p">);</span>
+
+ <span class="p">});</span>  
+<span class="p">});</span>
 </pre></div>
 
 
-<p>$(window).bind('load', function() { // resim onyükleme fonksiyonu
-jQuery.preloadImages = function() { for(var i = 0; i<arguments.length;
-i++) { jQuery("<img>").attr("src", arguments[i]); } }; // yükleme yap
-$.preloadImages("images/dexter.jpg", "images/saydam_ardalan1.gif",
-"images/ornek_sayfa.jpg"); }); }); </p>
 <p>Eklediğimiz sadece $(window).bind(‘load’ function()) kısmıdır. Burada
 sayfa yüklendikten sonra bu işlemi yap diyoruz.</p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/onyukleme.html">tıklayınız.</a></p>
-<p>[<img alt="" src="../static/images/resim_on_yukleme_jquery2-300x194.gif" title="resim_on_yukleme_jquery2" />][]</p>
+<p><img alt="" src="../static/images/resim_on_yukleme_jquery2-300x194.gif" /></p>
 <p>Örneklerde dikkatiniz bir yere çekmek istiyorum. Firebug Net sekmesini
 açtım çünkü sayfa yüklenmesi anını görmenizi istedim. İlk resimde sayfa
 yüklenirken sonradan görüntüleyeceğimiz resimleride içeren bir durum söz
@@ -183,13 +221,13 @@ konusu idi. Dikkat ederseniz ilk reismde dikey kırmızı çizgi en
 sondadır. İkinci resimde ise kırmızı dikey çizgi sayfa öğelerini
 sonuncusu olan resimden sonra çizilmiştir, daha sonra yükleme yapılan
 resimler yüklenmiştir.</p>
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>Ben küçük bir araştırma sonucunda bu kodu kullanmayı uygun buldum.
 Bulduğum bu kodun kendimce gerekçelerini yukarıda açıklamaya çalıştım,
 eğer sizlerin daha iyi çözümleri ve önerileri varsa yorum kısmında
 bizlerle paylaşırsanız sevinirim.</p>
 <p>Kalın sağlıacakla</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://perishablepress.com/press/2009/12/28/3-ways-preload-images-css-javascript-ajax/">http://perishablepress.com/press/2009/12/28/3-ways-preload-images-css-javascript-ajax/</a></li>
 <li><a href="http://engineeredweb.com/blog/09/12/preloading-images-jquery-and-javascript">http://engineeredweb.com/blog/09/12/preloading-images-jquery-and-javascript</a></li>
@@ -199,10 +237,6 @@ bizlerle paylaşırsanız sevinirim.</p>
 <li><a href="http://www.filamentgroup.com/lab/update_automatically_preload_images_from_css_with_jquery/">http://www.filamentgroup.com/lab/update_automatically_preload_images_from_css_with_jquery/</a></li>
 <li><a href="http://snipplr.com/view.php?codeview&amp;id=9612">http://snipplr.com/view.php?codeview&amp;id=9612</a></li>
 </ul>
-</p>
-
-<p>[<img alt="" src="../static/images/resim_on_yukleme_jquery-300x195.gif" title="resim_on_yukleme_jquery" />]: /images/resim_on_yukleme_jquery.gif
-  [<img alt="" src="../static/images/resim_on_yukleme_jquery2-300x194.gif" title="resim_on_yukleme_jquery2" />]: /images/resim_on_yukleme_jquery2.gif</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

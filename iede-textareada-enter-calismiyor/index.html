@@ -91,30 +91,33 @@ basınca alt satıra geçmiyordu. Diğer tarayıcılarda sorun yokken ie
 sürümlerinde böyle bir sorun çıkıyordu.</p>
 <p>Sonra incelediğimde ve araştırdığımda bu sorunun benim kullandığım
 sıfırlama kodundaki bir durumdan kaynaklandığını gördüm.</p>
-<div class="codehilite"><pre> <span class="nt">textarea</span><span class="o">,</span> <span class="nt">input</span><span class="o">,</span> <span class="nt">select</span> <span class="p">{</span> <span class="k">font</span><span class="o">:</span><span class="k">inherit</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">textarea</span><span class="o">,</span> <span class="nt">input</span><span class="o">,</span> <span class="nt">select</span> <span class="p">{</span>
+    <span class="k">font</span><span class="o">:</span><span class="k">inherit</span><span class="p">;</span>
+    <span class="k">white-space</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>white-space:normal; } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/textareada_enter_calistirmak.html">tıklayınız.</a></p>
 <p>Sıfırlama kodundaki yukarıdaki kodda white-space:normal; tanımlaması
 sorunu çıkarıyor. Bu kodu çıkarınca sorun ortadan kalkıyor. Ancak yinede
 ie’nin textarea’daki white-space:normal; kullanımında sorun oluşturduğu
 gerçeğini bu ortadan kaldırmıyor.</p>
 <p>Bu durumu halletmenin daha düzgün bir yolu var</p>
-<div class="codehilite"><pre> <span class="nt">textarea</span> <span class="p">{</span> <span class="k">white-space</span><span class="o">:</span><span class="n">pre</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">textarea</span> <span class="p">{</span> 
+    <span class="k">white-space</span><span class="o">:</span><span class="n">pre</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/textareada_enter_calistirmak2.html">tıklayınız.</a></p>
 <p>Tanımıda bu sorunu gidermek için yeterlidir.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://stackoverflow.com/questions/1282202/enter-does-not-work-in-textarea-in-internet-explorer-8">http://stackoverflow.com/questions/1282202/enter-does-not-work-in-textarea-in-internet-explorer-8</a></li>
 <li><a href="http://www.fourmilab.ch/fourmilog/archives/2005-04/000510.html">http://www.fourmilab.ch/fourmilog/archives/2005-04/000510.html</a></li>
 <li><a href="http://stackoverflow.com/questions/737614/textarea-css-ie7-and-enter-key-creating-inline-space">http://stackoverflow.com/questions/737614/textarea-css-ie7-and-enter-key-creating-inline-space</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

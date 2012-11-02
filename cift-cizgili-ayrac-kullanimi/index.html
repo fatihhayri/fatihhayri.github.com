@@ -93,48 +93,110 @@ kullanıyorum, ama bazende soldaki öğenin sağ kenar çizgisine bir renk,
 sağdaki öğenin sol kenar çizgisine farklı bir renk atayarak çözüm
 üretmeyi deniyorum.<br />
 </p>
-<div class="codehilite"><pre> <span class="c">/* clearfix */</span> <span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">content</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.clearfix</span><span class="nd">:after</span><span class="p">{</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.clearfix</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">*</span> <span class="nt">html</span> <span class="nc">.clearfix</span><span class="p">{</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">1</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.clearfix</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#008bc6</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">450px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">border-left</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#05a3e6</span><span class="p">;</span>
+    <span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#046e9b</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>"."; display: block; height: 0; clear: both; visibility: hidden; }
-.clearfix { display: inline-block; } * html .clearfix { height: 1%; }
-.clearfix { display: block; } ul{ margin:0 auto; padding:10px;
-background-color:#008bc6; width:450px;} ul li{ list-style:none;
-float:left; border-right:1px solid #046e9b; border-left:1px solid</p>
-<h1>05a3e6;} ul li a{ display:block; text-decoration:none; color:#fff;</h1>
-<p>font:bold 12px Arial, Helvetica, sans-serif; margin-right:10px;
-padding:0 10px} </p>
 <p>HTML</p>
-<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;li&gt;&lt;a</span>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;clearfix&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Bak postacı<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>geliyor<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>selam veriyor<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>her kes ona bakıyor<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<p>href=""&gt;Bak postacı</a></li> <li><a
-href="../static">geliyor</a></li> <li><a href="../static">selam
-veriyor</a></li> <li><a href="../static">her kes ona bakıyor</a></li>
-</ul> </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/cift_cizgili_ayrac_kullanimi/cc_yatay_menuler.html">tıklayınız.</a></p>
 <p>İlk öğenin solundaki kenar çizgisi ile son öğenin sağ kenar çizgisini
 kaldırmak için bu öğelere sınıf atamalıyız ve bu kenar çizgilerini
 sıfırlamalıyız.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span><span class="nc">.ilkOge</span><span class="p">{</span> <span class="k">border-left</span><span class="o">:</span><span class="m">0</span><span class="p">;}</span> <span class="nt">ul</span> <span class="nt">li</span><span class="nc">.sonOge</span><span class="p">{</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span><span class="nc">.ilkOge</span><span class="p">{</span>
+    <span class="k">border-left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span><span class="nc">.sonOge</span><span class="p">{</span>
+    <span class="k">border-right</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>border-right:0;} </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/cift_cizgili_ayrac_kullanimi/cc_yatay_menuler_2.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh5.googleusercontent.com/3kw9YRieW_VXzEOEOqV96vRUKzMyrMD5Ov0n6065pDryNdmTfT6v7Ck17GEdG9SUwHI6KMr2kgtfpkqXctUafIbhJ3EndKnzWm9TAlRHsn1fJzvF" /></p>
 <p>Bu uygulamayı dikey menü olarakta yapabiliriz.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="p">{</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#008bc6</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#05a3e6</span><span class="p">;</span>
+    <span class="k">border-top</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#046e9b</span><span class="p">;</span>
+    <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span><span class="nc">.ilkOge</span><span class="p">{</span>
+    <span class="k">border-top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span><span class="nc">.sonOge</span><span class="p">{</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-color:#008bc6; width:200px;} ul li{ list-style:none;
-border-top:1px solid #046e9b; border-bottom:1px solid #05a3e6;} ul
-li.ilkOge{ border-top:0;} ul li.sonOge{ border-bottom:0;} ul li a{
-display:block; text-decoration:none; color:#fff; font:bold 12px Arial,
-Helvetica, sans-serif; margin-right:10px; padding:10px 0} </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/cift_cizgili_ayrac_kullanimi/cc_dikey_menuler_2.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh6.googleusercontent.com/kNhVcSKGO9UtLs9C63ZGCMCLQTz1p8Y6Uo4CxiYTXspEMvrgFj14NSpGf2qq3ZBH6Q28oD4MJZKMb0fqJBP2lngN4WsWhTlLNQeXzBk6JJ9TzGNKXw" /></p>
 <p>Bu yazıyı yazmaya karar verdiğimde "<a href="http://www.fatihhayrioglu.com/css-ile-buton-yapmak/">css ile buton yapmak</a>" adlı
@@ -143,11 +205,12 @@ yazının hazırlıkları da devam ediyordu, oradada butonları araştırırken
 metot olduğunu gördüm. Onuda buraya yazayım. Ancak bu metot İnternet
 Explorer’da çalışmayacaktır.</p>
 <p>HTML kodu</p>
-<div class="codehilite"><pre> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>+ <span class="nt">&lt;span&gt;</span>Çizgili
+<div class="codehilite"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+    + <span class="nt">&lt;span&gt;</span>Çizgili buton<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
 </pre></div>
 
 
-<p>buton</span></a> </p>
 <p>CSS kodu</p>
 <p>[sourcecode language="css" highlight="10"] a{ background-color:#ed145b;
 padding:5px 10px; color:#fff; text-decoration:none; font-weight:bold;
@@ -159,7 +222,6 @@ gri renklidir. Biz bu çizgiye biraz saydamlık kazandırıp zemin rengine
 uyum sağlamasına yarar.</p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/cift_cizgili_ayrac_kullanimi/cc_border_grove.html">tıklayınız.</a></p>
 <p><img alt="" src="https://lh4.googleusercontent.com/QG6mKNTajXXLlILJu0BXBTG4dGpNPJjm2s06_-XE9rbV9p5P0XKgiD05j1DCCAxEwdZo-iliMvdRkxKLWFuctdaPB1_HVX1msMaLK4PtUFoISnSB" /></p>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">
