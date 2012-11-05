@@ -91,40 +91,50 @@ ama kod sitenin dinamik kısımlarında çalışırken statik kısımlarında
 çalışmadı.</p>
 <p>Bu iş ile bir projede karşılaştım, proje ismini açıklamak sakıncalı
 olabilir diye ben size benzer bir örnek kodunu vereceğim. </p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>Untitled Document<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+ <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">hover</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">children</span><span class="p">(</span><span class="s1">&#39;:last&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+    <span class="p">},</span>
+    <span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">children</span><span class="p">(</span><span class="s1">&#39;:last&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>
+    <span class="p">});</span>
+ <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">a</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span><span class="k">relative</span><span class="p">;}</span>
+    <span class="nt">a</span> <span class="nt">div</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#999</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span><span class="m">18px</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span>
+        <span class="nt">a</span> <span class="nt">div</span> <span class="nt">input</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="k">transparent</span><span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript:;&quot;</span><span class="nt">&gt;</span>menu aç
+<span class="nt">&lt;div&gt;&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="nt">/&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;p&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://www.fatihhayrioglu.com/wp-content/ie7_kaydirma_cubugu.jpg&quot;</span> <span class="na">width=</span><span class="s">&quot;450&quot;</span> <span class="na">height=</span><span class="s">&quot;398&quot;</span> <span class="nt">/&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title> <script type="text/javascript"
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-<script type="text/javascript"> $(document).ready(function() {
-$('a').hover(function(){ $(this).children(':last').show(); },
-function(){ $(this).children(':last').hide(); }); }); </script>
-<style type="text/css"> a{ position:relative;} a div{display:none;
-padding:20px; background-color:#999; width:250px; position:absolute;
-top:18px; left:0} a div input{ background:transparent} </style>
-</head> <body> <a href="javascript:;">menu aç <div><input
-type="text" /></div> </a> <p><img
-src="static/images/ie7_kaydirma_cubugu.jpg"
-width="450" height="398" /></p> </body> </html> </p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/ie8_popupmenu_input_sorunu.html">tıklayınız.</a></p>
-<p>[<img alt="" src="static/images/ie8_sorunu.gif" title="ie8_sorunu" />][]</p>
+<p><img alt="" src="static/images/ie8_sorunu.gif" title="ie8_sorunu" /></p>
 <p>Bende sorunu araştırmaya başladım ve sonunda buldum. Sorun <strong>input</strong>'a
 atanan <strong>background:none</strong> veya <strong>background:transparent</strong>
 tanımlamalarından kaynaklanıyor. backgorund'a renk veya resim tanımı
 yapınca sorun çözülüyor.  </p>
 <p>Ben tasarıma uymak için background'a resim tanımlayarak sorunu aştım.</p>
-<h3>Kaynak</h3>
+<h2>Kaynak</h2>
 <ul>
 <li><a href="http://ff.im/gwMR3" title="http://ff.im/gwMR3">http://ff.im/gwMR3</a></li>
-</ul>
-</p>
-
-<p>[<img alt="" src="static/images/ie8_sorunu.gif" title="ie8_sorunu" />]: /images/ie8_sorunu.gif</p><p><a href=".././ie8-acilir-menu-icindeki-input-alani-uzerince-gelince-menu-kapanma-sorunu/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././ie8-acilir-menu-icindeki-input-alani-uzerince-gelince-menu-kapanma-sorunu/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

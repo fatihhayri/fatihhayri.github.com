@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/CSS,%20Javascript,%20Web%20Standartlar%C4%B1,%20XHTML.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2010-02-09T00:14:00+02:00</updated><entry><title>PSD'den HTML'e – fanatikmarslar.com Sitesinin Kodlaması III</title><link href="http://www.fatihhayrioglu.com/psdden-htmle-fanatikmarslar-com-sitesinin-kodlamasi-iii/" rel="alternate"></link><updated>2010-02-09T00:14:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-02-09:psdden-htmle-fanatikmarslar-com-sitesinin-kodlamasi-iii/</id><summary type="html">&lt;h3&gt;Alt Sayfaların Kodlanması&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/CSS,%20Javascript,%20Web%20Standartlar%C4%B1,%20XHTML.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2010-02-09T00:14:00+02:00</updated><entry><title>PSD'den HTML'e – fanatikmarslar.com Sitesinin Kodlaması III</title><link href="http://www.fatihhayrioglu.com/psdden-htmle-fanatikmarslar-com-sitesinin-kodlamasi-iii/" rel="alternate"></link><updated>2010-02-09T00:14:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-02-09:psdden-htmle-fanatikmarslar-com-sitesinin-kodlamasi-iii/</id><summary type="html">&lt;h2&gt;Alt Sayfaların Kodlanması&lt;/h2&gt;
 &lt;p&gt;Genelde siteler yapılırken ana sayfa ve alt sayfa olarak kodlanır. Bunun
 sebebi ana sayfalar tekildir, alt sayfalar ise birbirine benzeyen
 yapılardan oluşur. Bu nedenle alt sayfaların bir tanesi kodlanınca diğer
@@ -22,23 +22,32 @@ nasıl kodladığımı anlatacağım.&lt;/p&gt;
 kısmın ana sayfa ile aynı olduğunu görüyoruz. Orta kısım ise tüm alt
 sayfalarda aynı. İki kolonlu bir yapı ve sağ kolon sabit. Sol içerik
 kolonu içeriği değişiyor.&lt;/p&gt;
-&lt;h3&gt;Kategori Listeleme Sayfasının Kodlanması&lt;/h3&gt;
+&lt;h2&gt;Kategori Listeleme Sayfasının Kodlanması&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Marşlar" src="/images/marslar_kucuk.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Orta kısmı iki kolona ayırıyorum. solOrtaAlan ve icerikalaniSag adını
 verdim. İki kolonu yan yana koymak için float ve genişlik tanımlarını
 yapıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;solOrtaAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;solOrtaAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;icerikalaniSag&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;id="icerikalaniSag"&amp;gt; ... &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodunu yazalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#solOrtaAlan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;650px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#solOrtaAlan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;650px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#icerikalaniSag&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;300px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;margin:0 20px 0 10px; font:14px Arial, Helvetica, sans-serif;
-display:inline} #icerikalaniSag {float:left; width:300px} &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sol Orta Alan&lt;/strong&gt;&lt;/p&gt;
 &lt;h1&gt;solOrtaAlan tanımına margin tanımlarını yapıyorum. Burada "&lt;a href="http://www.fatihhayrioglu.com/ieda-ikikat-gorulen-margin-problemi-ve-cozumu/"&gt;IE'da İkikat görülen Margin Problemi ve Çözümü&lt;/a&gt;" sorunu ile karşılaştığım&lt;/h1&gt;
 &lt;p&gt;için display:inline tanımı atadım.&lt;/p&gt;
@@ -55,65 +64,122 @@ burada gerekmediği için tanımları yapmadık.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sıralama Alanı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Sıralama kısmına yaparken bu alanı sırasız listeler ile yapmayı
 düşündüm.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;siralamAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;siralamAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+ &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+     &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;&lt;/span&gt;Sıralama:&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+     &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Karışık&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+     &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Popüler&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+     &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Oley!&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+     &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;secili&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Alfabetik&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+     &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;En Çok Tıklanan&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+     &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;En Son Eklenen&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+ &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;li&gt;&lt;strong&gt;Sıralama:&lt;/strong&gt;&lt;/li&gt; &lt;li&gt;&lt;a
-href=""&gt;Karışık&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;Popüler&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;Oley!&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""
-class="secili"&gt;Alfabetik&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;En Çok
-Tıklanan&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;En Son Eklenen&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt; &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;Dışına bir katman atamamın nedeni ardalan resmi ve diğer öğeler ile olan
 ilişkileri ayarlamak içindir. Sıralama öğelerinden bir tanesine göre
 sıralama yapılacak ve başındaki ok ikonu aşağı bakacağı için bu öğeye
 bir sınıf tanımlıyorum diğerlerinden ayırmak için&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#siralamAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#siralamAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/siralama_ard.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;38px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#siralamAlani&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#siralamAlani&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#siralamAlani&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;strong&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#828282&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#siralamAlani&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/genel_resim.gif)&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt; &lt;span class="m"&gt;-388px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#0c2b90&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#siralamAlani&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.secili&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/genel_resim.gif)&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt; &lt;span class="m"&gt;-354px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;background:url(../images/siralama_ard.gif) 0 0 no-repeat; height:38px;}
-div#siralamAlani ul{padding:10px 0 0 10px} div#siralamAlani ul
-li{display:inline;} div#siralamAlani ul li strong{display:block;
-float:left; color:#828282; font:bold 14px Arial, Helvetica, sans-serif;
-margin-right:3px} div#siralamAlani ul li a{display:block;
-background:url(../images/genel_resim.gif) right -388px no-repeat;
-float:left; font:bold 14px Arial, Helvetica, sans-serif; color:#0c2b90;
-padding-right:15px; margin-right:10px} div#siralamAlani ul li
-a.secili{background:url(../images/genel_resim.gif) right -354px
-no-repeat;} &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Listeleme Tablosu&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Listeleme tablosunun bir kaç kolonu hariç ana sayfadaki tablodan bir
 farkı yoktur. Benzer bir anlayış ile burayı kodlayalım.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;table&lt;/span&gt;&lt;span class="nc"&gt;.genelTablo&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;border-collapse&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;collapse&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;table&lt;/span&gt;&lt;span class="nc"&gt;.genelTablo&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-collapse&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;collapse&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;table&lt;/span&gt;&lt;span class="nc"&gt;.genelTablo&lt;/span&gt; &lt;span class="nt"&gt;th&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;2px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;table&lt;/span&gt;&lt;span class="nc"&gt;.genelTablo&lt;/span&gt; &lt;span class="nt"&gt;th&lt;/span&gt;&lt;span class="nc"&gt;.ortala&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;table&lt;/span&gt;&lt;span class="nc"&gt;.genelTablo&lt;/span&gt; &lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="nc"&gt;.enAlt&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;table&lt;/span&gt;&lt;span class="nc"&gt;.genelTablo&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#d5d5d5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#828282&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="m"&gt;2px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;table.genelTablo th{font:bold 14px Arial, Helvetica, sans-serif;
-color:#000; padding:5px 2px; text-align:left} table.genelTablo
-th.ortala{text-align:center} table.genelTablo tr.enAlt td{border:0}
-table.genelTablo td{padding:1px 2px; font:14px Arial, Helvetica,
-sans-serif; color:#828282; border-bottom:1px solid #d5d5d5;}&lt;/p&gt;
 &lt;p&gt;Listeleme tablosunun ana sayfadan farklı olan kısmı en sağdaki oylama
 gösterme alanı&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;td&amp;gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;oley&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;strong&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;td&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;oley&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;strongclass&lt;/span&gt;&lt;span class="err"&gt;=&amp;quot;&lt;/span&gt;&lt;span class="na"&gt;ucKupa&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;3 Kupa&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;class="ucKupa"&amp;gt;3 Kupa&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;/p&gt;
 &lt;p&gt;Sadece oyu göstereceğimiz için bu şekilde kodladık.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#solOrtaAlan&lt;/span&gt; &lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#solOrtaAlan&lt;/span&gt; &lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.oley&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/genel_resim.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;-483px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;21px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;93px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.oley&lt;/span&gt; &lt;span class="nt"&gt;strong&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/genel_resim.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;-459px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;21px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-indent&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-9999px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.oley&lt;/span&gt; &lt;span class="nt"&gt;strong&lt;/span&gt;&lt;span class="nc"&gt;.birKupa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;18px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.oley&lt;/span&gt; &lt;span class="nt"&gt;strong&lt;/span&gt;&lt;span class="nc"&gt;.ikiKupa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;37px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.oley&lt;/span&gt; &lt;span class="nt"&gt;strong&lt;/span&gt;&lt;span class="nc"&gt;.ucKupa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;56px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.oley&lt;/span&gt; &lt;span class="nt"&gt;strong&lt;/span&gt;&lt;span class="nc"&gt;.dortKupa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;75px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.oley&lt;/span&gt; &lt;span class="nt"&gt;strong&lt;/span&gt;&lt;span class="nc"&gt;.besKupa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;95px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;p.oley{background:url(../images/genel_resim.gif) 0 -483px no-repeat;
-width:93px; height:21px; margin:0} table td p.oley strong{display:block;
-background:url(../images/genel_resim.gif) 0 -459px no-repeat;
-text-indent:-9999px; height:21px} table td p.oley strong.birKupa{
-width:18px;} table td p.oley strong.ikiKupa{ width:37px;} table td
-p.oley strong.ucKupa{ width:56px;} table td p.oley strong.dortKupa{
-width:75px;} table td p.oley strong.besKupa{ width:95px;} &lt;/p&gt;
 &lt;h1&gt;solOrtaAlan table td p.oley tanımını niye p.oley şeklinde yapmıyoruzda&lt;/h1&gt;
 &lt;p&gt;bu kadar uzun yapıyoruz derseniz, üstten gelen kalıtsal tanımlar alt
 elemanları da etkiliyor bu etkiyi kaldırmak için bu şekilde tanımını
@@ -126,46 +192,74 @@ başlıyorum.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/css-ile-sayfalama-gorselligini-ayarlama/"&gt;Sayfalama kodlamalarını bir kaç tipi&lt;/a&gt; var ben burada daha önce
 kodladığım bir kodu kopyalıyorum. Bu yöntemi seçmemde programcı
 arkadaşım Mustafa'nın etkiside var.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sayfalama&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sayfalama&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;span&amp;gt;&lt;/span&gt;|&lt;span class="ni"&gt;&amp;amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;span&amp;gt;&lt;/span&gt;Önceki&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;span&amp;gt;&lt;/span&gt;1&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;2&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;3&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;4&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;5&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;6&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;7&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;8&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;9&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;10&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Sonraki&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sayfalmaSonu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;&lt;span class="ni"&gt;&amp;amp;gt;&lt;/span&gt;|&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;li&gt;&lt;span&gt;|&amp;lt;&lt;/span&gt;&lt;/li&gt; &lt;li&gt;&lt;span&gt;Önceki&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt; &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt; &amp;lt;li&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt; &lt;li &gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-&lt;li &gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt; &lt;li &gt;&lt;a
-href="#"&gt;6&lt;/a&gt;&lt;/li&gt; &lt;li &gt;&lt;a href="#"&gt;7&lt;/a&gt;&lt;/li&gt; &lt;li
-&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt; &lt;li &gt;&lt;a href="#"&gt;9&lt;/a&gt;&lt;/li&gt;
-&lt;li &gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt; &lt;li &gt;&lt;a
-href="#"&gt;Sonraki&lt;/a&gt;&lt;/li&gt; &lt;li class="sayfalmaSonu"&gt;&lt;a
-href="#"&gt;&amp;gt;|&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;p&gt;Sayısız listeler ile listelediğimiz sayfa sayılarının farklı bölümlerini
-belirlemek için &lt;li&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt; şeklinde tanımlama
-yapıyoruz. Normal bağlantılarıda &lt;li&gt;&lt;a href=""&gt;2&lt;/a&gt;&lt;/li&gt;
+belirlemek için &amp;lt;li&gt;&amp;lt;span&gt;1&amp;lt;/span&gt;&amp;lt;/li&gt; şeklinde tanımlama
+yapıyoruz. Normal bağlantılarıda &amp;lt;li&gt;&amp;lt;a href=""&gt;2&amp;lt;/a&gt;&amp;lt;/li&gt;
 şeklinde tanımlıyoruz. CSS kodunu yazalım.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="c"&gt;/* sayfalama */&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.sayfalama&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.sayfalama&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;530px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.sayfalama&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#80a3b7&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt; &lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="n"&gt;Tahoma&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Geneva&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;2px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.sayfalama&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;span&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;8px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.sayfalama&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#f0f0f0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#80a3b7&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt; &lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="n"&gt;Tahoma&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Geneva&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;8px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.sayfalama&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#80a3b7&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#f0f0f0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;auto; width:530px; padding:10px 0 0 0; clear:left} div.sayfalama ul
-li{font:bold 12px Tahoma, Geneva, sans-serif; color:#fff; float:left;
-list-style:none; margin:0 2px; background:#80a3b7;} div.sayfalama ul li
-span{padding:5px 8px; display:block} div.sayfalama ul li a{font:bold
-12px Tahoma, Geneva, sans-serif ; color:#80a3b7; text-decoration:none;
-background-color:#f0f0f0; padding:5px 8px; display:block} div.sayfalama
-ul li a:hover{background-color:#80a3b7; color:#f0f0f0;} &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;İçerik Alanı Sağ&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;İçerik alanının sağ kısmı aslında pek bir şey içermiyor bir banner alanı
 ve kategori listesi. Her iki alanda ana sayfada mevcut olduğu için aynı
 kodları buraya taşıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sagBannerAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;img&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sagBannerAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;images/band_website_banner.jpg&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;300&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;250&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Web&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;src="images/band_website_banner.jpg" width="300" height="250"
-alt="Web" /&amp;gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;Sağ banner alanı diye ayrı bir isim vermemin nedeni, kodlaması aynı olsa
 da site yayına girdikten sonra ana sayfa ve alt sayfaya farklı bannerlar
 atanma ihtimali olduğu için buraya farklı bir isim veriyorum ve
@@ -177,7 +271,7 @@ nereye konursa konsun sorun çıkarmaz. Site kodlamaya başlanmadan önce bu
 tip modülleri belirleyip sabit bir genişlik vermekten kaçınmalıyız.
 Burada genişlikleri aynı olduğu için sorun çıkarmazdı zaten ama farklı
 projeler için söylüyorum bunu, aklınızın bir kenarında bulunsun.&lt;/p&gt;
-&lt;h3&gt;Tezahürat Ekle Sayfasının Kodlanması&lt;/h3&gt;
+&lt;h2&gt;Tezahürat Ekle Sayfasının Kodlanması&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Tezahürat Ekle" src="/images/tezahurat_ekle_kucuk.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Sayfamızı incelediğimizde sol içerik alanında bir tezahürat ekleme
 formunun diğer sayfadan farklı olduğunu görüyoruz.&lt;/p&gt;
@@ -190,51 +284,82 @@ ekliyoruz.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tezahürat Ekle Formunun Kodlanması&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Her satırın altında bir çizgi olduğu için her satırı bir katman içine
 alıp bu katmanada bir sınıf tanılayarak bu işi çözebiliriz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.formAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;border-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#e0e0e0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.formAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#e0e0e0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#e0e0e0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;border-bottom:1px solid #e0e0e0; padding:10px; margin:10px 0;
-clear:left;}&lt;/p&gt;
 &lt;p&gt;clear:left; tanımı her satırın soldan başlaması için yapıldı.&lt;/p&gt;
 &lt;p&gt;İlk form alanı için bir label ve birde select alanımız var&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;formAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;label&amp;gt;&lt;/span&gt;Lig
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;formAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;label&amp;gt;&lt;/span&gt;Lig Seçiniz:&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;select&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;option&amp;gt;&lt;/span&gt;--------------&lt;span class="nt"&gt;&amp;lt;/option&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;option&amp;gt;&lt;/span&gt;Turkcell Süper Lig&lt;span class="nt"&gt;&amp;lt;/option&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/select&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Seçiniz:&lt;/label&gt;&lt;select&gt;&lt;option&gt;--------------&lt;/option&gt;&lt;option&gt;Turkcell
-Süper Lig&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;CSS kodunu yazalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;label&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;label&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;135px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;select&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;width:135px; display:block; float:left;} .formAlani select{width:180px;
-font:12px Arial, Helvetica, sans-serif;} &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Seçilen Ligdeki Takımlar Alanı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Bu alanı kodlarken sayısız listeleri kullandım. Listelere bir genişlik
 ve float tanımı yaparak yan yana dize bilirim. Genişlikleri verirken 3
 tanesini yan yana duracak şekilde ayarladım.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;secilenLigler&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;secilenLigler&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;takimSec&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;logoTrabzon&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Trabzon&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;label&amp;gt;&lt;/span&gt;Trabzon Spor Klubü Tesisleri&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;takimSec&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;logoFenerbahce&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Fenerbahçe&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;label&amp;gt;&lt;/span&gt;Fenerbahçe&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;takimSec&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;logoAnkara&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Ankaraspor&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;label&amp;gt;&lt;/span&gt;Ankaraspor&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      .......
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;type="radio" name="takimSec" /&amp;gt;&lt;div
-class="logoTrabzon"&gt;Trabzon&lt;/div&gt; &lt;label&gt;Trabzon Spor Klubü
-Tesisleri&lt;/label&gt;&lt;/li&gt; &lt;li&gt; &lt;input type="radio" name="takimSec"
-/&gt;&lt;div class="logoFenerbahce"&gt;Fenerbahçe&lt;/div&gt;
-&lt;label&gt;Fenerbahçe&lt;/label&gt;&lt;/li&gt; &lt;li&gt; &lt;input type="radio"
-name="takimSec" /&gt;&lt;div class="logoAnkara"&gt;Ankaraspor&lt;/div&gt;
-&lt;label&gt;Ankaraspor&lt;/label&gt;&lt;/li&gt; ....... &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodları&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.secilenLigler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;575px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.secilenLigler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;575px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.secilenLigler&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#828282&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;170px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.secilenLigler&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.secilenLigler&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;label&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;8px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.secilenLigler&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;8px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;ul.secilenLigler li{float:left; width:170px; margin:0 20px 10px 0;
-color:#828282;} ul.secilenLigler li div{float:left} ul.secilenLigler li
-label{position:relative; top:8px} ul.secilenLigler li input{float:left;
-position:relative; top:8px; margin-right:10px} &lt;/p&gt;
 &lt;p&gt;Her takım alanı için radyo butonu, logo için bir katman, takım adı için
 bir label tanımladım ve bunları yan yana dizmek için float:left tanımı
 kullandım. label ve input için kullandığım postion:relative tanımı ve
@@ -242,136 +367,209 @@ top değerleri bu öğeleri diğer öğeler ile yatayda aynı hizaya getirmek
 içindir.&lt;/p&gt;
 &lt;p&gt;Yukarıda bahsettiğim gibi form alanlarını kodlarken sayısız
 listeleri(ul) kullanıyorum burada da&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;formAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;formAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;label&amp;gt;&lt;/span&gt;Kategori Seçiniz:&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&amp;lt;select&amp;gt;&amp;lt;option&amp;gt;&lt;/span&gt;--------------&lt;span class="nt"&gt;&amp;lt;/option&amp;gt;&amp;lt;option&amp;gt;&lt;/span&gt;Turkcell Süper Lig&lt;span class="nt"&gt;&amp;lt;/option&amp;gt;&amp;lt;/select&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;label&amp;gt;&lt;/span&gt;Tezahüratın Adı:&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;label&amp;gt;&lt;/span&gt;Youtube linki:&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;label&amp;gt;&lt;/span&gt;Tezahüratın sözleri:&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;textarea&amp;gt;&amp;lt;/textarea&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;label&amp;gt;&lt;/span&gt;Kısa tanıtım:&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;label&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;genisEtiket&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Kayıtlı bir tezahüratınız varsa buradan yükleyiniz:&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;file&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;li&gt;&lt;label&gt;Kategori
-Seçiniz:&lt;/label&gt;&lt;select&gt;&lt;option&gt;--------------&lt;/option&gt;&lt;option&gt;Turkcell
-Süper Lig&lt;/option&gt;&lt;/select&gt;&lt;/li&gt; &lt;li&gt;&lt;label&gt;Tezahüratın
-Adı:&lt;/label&gt;&lt;input type="text" /&gt;&lt;/li&gt; &lt;li&gt;&lt;label&gt;Youtube
-linki:&lt;/label&gt;&lt;input type="text" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;Tezahüratın sözleri:&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;textarea&gt;&lt;/textarea&gt;&lt;/li&gt; &lt;li&gt;&lt;label&gt;Kısa
-tanıtım:&lt;/label&gt;&lt;input type="text" /&gt;&lt;/li&gt; &lt;li&gt;&lt;label
-class="genisEtiket"&gt;Kayıtlı bir tezahüratınız varsa buradan
-yükleyiniz:&lt;/label&gt; &lt;input type="file" /&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;CSS kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nc"&gt;.formAlani&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;label&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;135px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;label&lt;/span&gt;&lt;span class="nc"&gt;.genisEtiket&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;310px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;textarea&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#e8e8e8&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;210px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;8px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;625px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#e8e8e8&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;300px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;select&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.formAlani&lt;/span&gt; &lt;span class="nt"&gt;select&lt;/span&gt;&lt;span class="nc"&gt;.darSelect&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;75px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;label{margin-right:10px; width:135px; display:block; float:left;}
-.formAlani label.genisEtiket{width:310px} .formAlani
-textarea{width:625px; height:210px; border:1px solid #e8e8e8;
-margin-top:8px; font:12px Arial, Helvetica, sans-serif; padding:3px;}
-.formAlani ul li{margin-bottom:10px} .formAlani input{border:1px solid&lt;/p&gt;
-&lt;h1&gt;e8e8e8; font:12px Arial, Helvetica, sans-serif; padding:3px;&lt;/h1&gt;
-&lt;p&gt;width:300px} .formAlani select{width:180px; font:12px Arial, Helvetica,
-sans-serif;} .formAlani select.darSelect{width:75px;} &lt;/p&gt;
 &lt;p&gt;Son olarakta gönder düğmesini koyuyorum.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;value=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Gönder&amp;quot;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;value=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Gönder&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;gonderBut&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;class="gonderBut" /&amp;gt;&lt;/p&gt;
 &lt;p&gt;CSS kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="nc"&gt;.gonderBut&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;170px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;45px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="nc"&gt;.gonderBut&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#434343&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;cursor&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;pointer&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt; &lt;span class="k"&gt;italic&lt;/span&gt; &lt;span class="m"&gt;24px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;45px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;170px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;float:right; font:bold italic 24px Arial, Helvetica, sans-serif;
-color:#434343; cursor:pointer}&lt;/p&gt;
 &lt;p&gt;Böylece Tezahürat Ekle sayfamızı bitirmiş oluyoruz.&lt;/p&gt;
-&lt;h3&gt;Tezahürat Dinle Sayfasının Kodlaması&lt;/h3&gt;
+&lt;h2&gt;Tezahürat Dinle Sayfasının Kodlaması&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Tezahürat İzle Dinle" src="/images/tezahurat_izle_dinle_kucuk.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Tezahürat dinle sayfası iki sekmeli bir yapıdan oluşuyor ve dinleme ve
 izleme seçenekleri iki ayrı sekme içinde yer alıyor.&lt;/p&gt;
 &lt;p&gt;Başlık ve açıklama kısmını kodluyoruz. Başlık ve ilk paragraf bir önceki
 sayfa ile aynı. Başlık yanındaki logo ve takım ismi kısmına biraz
 değinelim.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;dinleTakimi&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;div&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;dinleTakimi&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;logoTrabzon&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Trabzon&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;span&amp;gt;&lt;/span&gt;Trabzon&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;class="logoTrabzon"&amp;gt;Trabzon&lt;/div&gt;
-&lt;span&gt;Trabzon&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Logo için iki ayrı katman oluşturuyorum. Bunun nedeni logoların geneli
 için bir sınıf tanımlıyorum. Ayrıca ikinci katmanda her bir takım için
 tanımlanacak özellikler için. CSS kodunu yazarsak;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#dinleTakimi&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#dinleTakimi&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-4px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;180px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#dinleTakimi&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#dinleTakimi&lt;/span&gt; &lt;span class="nt"&gt;span&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#828282&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;6px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;margin-left:20px; position:relative; top:-4px} div#dinleTakimi
-div{float:left;} div#dinleTakimi span{ position:relative; bottom:-10px;
-font:14px Arial, Helvetica, sans-serif; color:#828282;
-padding-left:6px} &lt;/p&gt;
 &lt;p&gt;Burada şöyle bir şey var. Başlığın uzunluğu belli olmadığı için sadece
 logo ve takım adına float tanımı ve genişlik tanımı yaptık. Böylece
 başlık uzunluğu ne olursa olsun başlık ve logo kısmı devamlı yan yana
 duracaktır.&lt;/p&gt;
 &lt;p&gt;Sekmeleri kodlarken daha önce yazdığım &lt;a href="http://www.fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/"&gt;jquery ile sekme yapımını&lt;/a&gt;
 anlattığım makaledeki gibi yapacağız.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt; &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt; &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="nx"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;/script&amp;gt;&lt;/span&gt;
+ &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt; &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+ &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+ &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;div.sekmeAlani ul#tezahuratSekme li a&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;not&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;div.sekmeAlani ul#tezahuratSekme li#favEkle a, div.sekmeAlani ul#tezahuratSekme li.pasif a&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
+ &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;li&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;addClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;normal&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;siblings&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;removeClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;normal&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+ &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;mevcutSinif&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;className&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;slice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+ &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;div.sekmeAlani &amp;gt; div&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;hide&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;filter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;div.&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;mevcutSinif&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;show&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+ &lt;span class="p"&gt;});&lt;/span&gt;
+ &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.sekmeAlani ul#tezahuratSekme li a:first&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;click&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+ &lt;span class="p"&gt;});&lt;/span&gt;
+ &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;/script&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"&amp;gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt; $(document).ready(function() {
-$('div.sekmeAlani ul#tezahuratSekme li a').not("div.sekmeAlani
-ul#tezahuratSekme li#favEkle a, div.sekmeAlani ul#tezahuratSekme
-li.pasif a").click(function(){
-$(this).parent('li').addClass('normal').siblings().removeClass('normal');
-var mevcutSinif = this.className.slice(0,2); $('div.sekmeAlani &amp;gt;
-div').hide().filter('div.'+mevcutSinif).show(); }); $('.sekmeAlani
-ul#tezahuratSekme li a:first').click(); }); &lt;/script&gt; &lt;/p&gt;
 &lt;p&gt;Buradaki tek fark favoriler kısmını sekmeli yapının dışında tutmak için.
 jquery'nin :not() fonksiyonunu kullandık. Bu fonksiyonun anlamı bu
 elementlere uygula not fonksiyonu ile belirtilen elemana uygulamadır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sekmeAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sekmeAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;tezahuratSekme&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kapsayamamaSorunu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;s1 normal&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;javascript:void(0);&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;s1 dinle&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Tezahürat Dinle&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;s2 pasif&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;javascript:void(0);&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;s2 izle&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Tezahürat İzle&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;favEkle&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;javascript:void(0);&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;favorimedenCikar&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Favorilerine Ekle&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;s1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sesOynatici&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;images/ses_oynatici.gif&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;333&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;50&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ses&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;s2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;videoOynatici&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;images/video_player.gif&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;320&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;260&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;video&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;id="tezahuratSekme" class="kapsayamamaSorunu"&amp;gt; &lt;li class="s1
-normal"&gt;&lt;a href="javascript:void(0);" class="s1 dinle"&gt;Tezahürat
-Dinle&lt;/a&gt;&lt;/li&gt; &lt;li class="s2 pasif"&gt;&lt;a href="javascript:void(0);"
-class="s2 izle"&gt;Tezahürat İzle&lt;/a&gt;&lt;/li&gt; &lt;li id="favEkle"&gt;&lt;a
-href="javascript:void(0);" id="favorimedenCikar"&gt;Favorilerine
-Ekle&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;div class="s1"&gt; &lt;div
-id="sesOynatici"&gt;&lt;img src="images/ses_oynatici.gif" width="333"
-height="50" alt="ses" /&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class="s2"&gt; &lt;div
-id="videoOynatici"&gt;&lt;img src="images/video_player.gif" width="320"
-height="260" alt="video" /&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodlarını yazarsak;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#ccc&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;30px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;39px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;45px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;50px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.normal&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/normal_seme_ard.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.pasif&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/sekme_pasif.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.pasif&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;cursor&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;default&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.normal&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.dinle&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/tez_din_ikon.gif)&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;-220px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.normal&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.izle&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/tez_din_ikon.gif)&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;-270px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/kapali_sekme.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.dinle&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/tez_din_ikon.gif)&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;-220px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.izle&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/tez_din_ikon.gif)&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;-268px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nf"&gt;#favEkle&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;39px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nf"&gt;#favEkle&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/tez_din_ikon.gif)&lt;/span&gt; &lt;span class="m"&gt;18px&lt;/span&gt; &lt;span class="m"&gt;-318px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nf"&gt;#favEkle&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/tez_din_ikon.gif)&lt;/span&gt; &lt;span class="m"&gt;18px&lt;/span&gt; &lt;span class="m"&gt;-419px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nf"&gt;#favEkle&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nf"&gt;#favorimedenCikar&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#tezahuratSekme&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nf"&gt;#favEkle&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nf"&gt;#favorimedenCikar&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/tez_din_ikon.gif)&lt;/span&gt; &lt;span class="m"&gt;18px&lt;/span&gt; &lt;span class="m"&gt;-368px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;ccc; padding-left:30px} ul#tezahuratSekme li{float:left;&lt;/h1&gt;
-&lt;p&gt;height:39px;} ul#tezahuratSekme li a{display:block; padding:15px 45px 0
-50px; color:#000; font-size:14px} ul#tezahuratSekme
-li.normal{background:url(../images/normal_seme_ard.gif) 0 0 no-repeat;
-} ul#tezahuratSekme li.pasif{background:url(../images/sekme_pasif.gif)
-0 0 no-repeat; } ul#tezahuratSekme li.pasif a{ cursor:default;}
-ul#tezahuratSekme li.normal a.dinle{
-background:url(../images/tez_din_ikon.gif) 15px -220px no-repeat; }
-ul#tezahuratSekme li.normal a.izle{
-background:url(../images/tez_din_ikon.gif) 15px -270px no-repeat;}
-ul#tezahuratSekme li{background:url(../images/kapali_sekme.gif) 0 0
-no-repeat;} ul#tezahuratSekme li a.dinle{
-background:url(../images/tez_din_ikon.gif) 15px -220px no-repeat;}
-ul#tezahuratSekme li a.izle{
-background:url(../images/tez_din_ikon.gif) 15px -268px no-repeat;}
-ul#tezahuratSekme li#favEkle{float:left; height:39px; background:none}
-ul#tezahuratSekme li#favEkle
-a{background:url(../images/tez_din_ikon.gif) 18px -318px no-repeat;}
-ul#tezahuratSekme li#favEkle
-a:hover{background:url(../images/tez_din_ikon.gif) 18px -419px
-no-repeat;} ul#tezahuratSekme li#favEkle a#favorimedenCikar,
-ul#tezahuratSekme li#favEkle
-a#favorimedenCikar:hover{background:url(../images/tez_din_ikon.gif)
-18px -368px no-repeat;} &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tezahürat Bilgi Alanı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Tezahürat bilgi alanında; ekleyen, kaç kez dinlendiği veya izlendiği,
 paylaşım linki ve kaç kişinin oley çektiği bilgileri yan yana yer
@@ -379,56 +577,85 @@ alıyor.&lt;/p&gt;
 &lt;p&gt;Bu alanı bir katman içine alıp ardalan rengini bu katman veriyoruz.
 İçine sol ve sağ kolonlar için iki katman oluşturup içerikleri buraya
 koyuyoruz. İçerikleride bir paragraf içinde kodluyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;tezahuratBilgi&amp;quot;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;tezahuratBilgi&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kapsayamamaSorunu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;tezahuratBilgiSol&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Ekleyen: &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Hasan&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;span&amp;gt;&lt;/span&gt;27 Ağustos 2009&amp;#39;da Eklendi&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Link Paylaş: &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;value=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;htpp:www..ewrwerwerwerewrra&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;tezahuratBilgiSag&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;123.288 kez dinlendi&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&amp;lt;span&amp;gt;&lt;/span&gt;16.258 kişi Oley! çekti!&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;oleyCek&amp;#39;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;mevcutOy&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;style=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;width:54px&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;3/5 Yıldız&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;#&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;1 puan&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;birYildiz&amp;#39;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;1&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;#&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;2 puan&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;ikiYildiz&amp;#39;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;2&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;#&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;3 puan&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;ucYildiz&amp;#39;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;3&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;#&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;4 puan&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;dortYildiz&amp;#39;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;4&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;#&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;5puan&amp;#39;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;besYildiz&amp;#39;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;5&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;class="kapsayamamaSorunu"&amp;gt; &lt;div id="tezahuratBilgiSol"&gt; &lt;p&gt;Ekleyen:
-&lt;a href=""&gt;Hasan&lt;/a&gt; &lt;span&gt;27 Ağustos 2009'da
-Eklendi&lt;/span&gt;&lt;/p&gt; &lt;p&gt;Link Paylaş: &lt;input type="text"
-value="htpp:www..ewrwerwerwerewrra" /&gt;&lt;/p&gt; &lt;/div&gt; &lt;div
-id="tezahuratBilgiSag"&gt; &lt;p&gt;123.288 kez dinlendi&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;16.258 kişi Oley! çekti!&lt;/span&gt; &lt;ul
-class='oleyCek'&gt;&lt;li class='mevcutOy' style="width:54px"&gt;3/5
-Yıldız&lt;/li&gt;&lt;li&gt;&lt;a href='#' title='1 puan'
-class='birYildiz'&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' title='2 puan'
-class='ikiYildiz'&gt;2&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' title='3 puan'
-class='ucYildiz'&gt;3&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' title='4 puan'
-class='dortYildiz'&gt;4&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' title='5puan'
-class='besYildiz'&gt;5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;CSS koduda şöyle olacak;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#tezahuratBilgi&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#tezahuratBilgi&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;13px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#tezahuratBilgiSol&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;390px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#tezahuratBilgiSol&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#0c2b90&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#tezahuratBilgiSol&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#tezahuratBilgiSol&lt;/span&gt; &lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#cbcbcb&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#cccccc&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#tezahuratBilgiSag&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;240px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#tezahuratBilgiSag&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#tezahuratBilgiSag&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="nt"&gt;span&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;background-color:#eee; padding:13px 10px 0 10px}&lt;/p&gt;
-&lt;h1&gt;tezahuratBilgiSol{float:left; width:390px} #tezahuratBilgiSol a{&lt;/h1&gt;
-&lt;p&gt;color:#0c2b90} #tezahuratBilgiSol p{margin-bottom:10px}&lt;/p&gt;
-&lt;h1&gt;tezahuratBilgiSol input{border:1px solid #cbcbcb; font:14px Arial,&lt;/h1&gt;
-&lt;p&gt;Helvetica, sans-serif; color:#cccccc; width:200px}&lt;/p&gt;
-&lt;h1&gt;tezahuratBilgiSag{float:left; width:240px} #tezahuratBilgiSag&lt;/h1&gt;
-&lt;p&gt;p{margin:0 0 15px 0} #tezahuratBilgiSag p span{float:left;}&lt;/p&gt;
 &lt;p&gt;Etiketler, Önce Söyle, Sonra Yorumla vb. başlıkların ikonlarını sprite
 tekniği ile resimlerini hazırlayıp başlıkların başına ardalan resmi ile
 koyuyoruz.&lt;/p&gt;
 &lt;p&gt;Etiketler için padding ve ardalan rengi tanımlıyoruz. hover hallerini
 hazırlıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#etiketler&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;2px&lt;/span&gt; &lt;span class="m"&gt;4px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#etiketler&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#666&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;2px&lt;/span&gt; &lt;span class="m"&gt;4px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nf"&gt;#etiketler&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#666&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;background-color:#eee; color:#666; font-size:14px} div#etiketler
-a:hover{background-color:#666; color:#eee;} &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Önce Söyle&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Önce söyle başlığınıda diğer başlıklar gibi hazırlıyoruz. İçeriği
 blockquote içine koydum. Aslında bunun için de bir katman açıp
 koyabilirdik, tercih meselesi. Ardalan resmini sağ alta sabitliyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;blockquote&lt;/span&gt;&lt;span class="nc"&gt;.tezahuratMetni&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#eee&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;blockquote&lt;/span&gt;&lt;span class="nc"&gt;.tezahuratMetni&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#eee&lt;/span&gt; &lt;span class="sx"&gt;url(../images/tezahurat_zem.gif)&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt; &lt;span class="k"&gt;bottom&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;italic&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt; &lt;span class="m"&gt;50px&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt; &lt;span class="m"&gt;30px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;url(../images/tezahurat_zem.gif) right bottom no-repeat; padding:20px
-50px 20px 30px; margin-bottom:1px; font-style:italic} &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Yorum Alanı&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Yorum alanın solda avatar'ın(küçük resim) ve sağda alt alta içeriklerin
 bulunduğu iki kolonlu bir yapıya sahip .&lt;/p&gt;
@@ -440,31 +667,97 @@ puan kısmını bir liste şeklinde kodluyoruz.&lt;/p&gt;
 &lt;p&gt;Son olarakta "Sende Yaz" kısmını kodluyoruz. Başlığı yukarıdaki
 başlıklar gibi yazıyoruz. Yorum yazma kısmına bir textarea yapıp
 genişlik, yükseklik ve kenar çizgisi tanımlarını yapıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.yorumalani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.yorumalani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#e0e0e0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;12px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.yAvatar&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;60px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.yorumAlaniSag&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;590px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.yorumAlaniSag&lt;/span&gt; &lt;span class="nt"&gt;strong&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#a1a1a1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#solOrtaAlan&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.yorumAlaniSag&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.yorumYazari&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.yorumYazari&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#2a459d&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.comment-rate&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;75px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.comment-rate-num&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#088f02&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.yorumOyla&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-5px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;75px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nc"&gt;.yorumOyla&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.yorumArti&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/genel_resim.gif)&lt;/span&gt; &lt;span class="m"&gt;-15px&lt;/span&gt; &lt;span class="m"&gt;-530px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-indent&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-9999px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;16px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.yorumEksi&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/genel_resim.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;-530px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-indent&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-9999px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;16px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.olumlu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#088f02&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.olumsuz&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#c00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="nc"&gt;.notr&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;h3&lt;/span&gt;&lt;span class="nc"&gt;.senYaz&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/tez_din_ikon.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;-168px&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;15px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="m"&gt;32px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#solOrtaAlan&lt;/span&gt; &lt;span class="nt"&gt;textarea&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#e1e1e1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;642px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1 float:left;="float:left;" width:60px="width:60px"&gt;e0e0e0; margin-bottom:12px} div.yAvatar&lt;/h1&gt;
-&lt;p&gt;div.yorumAlaniSag{float:left; width:590px} div.yorumAlaniSag
-strong{color:#a1a1a1; display:block; clear:left; margin:10px 0 5px 0}&lt;/p&gt;
-&lt;h1 margin-bottom:10px="margin-bottom:10px"&gt;solOrtaAlan div.yorumAlaniSag p&lt;/h1&gt;
-&lt;p&gt;div.yorumYazari{float:left; font-weight:bold;} div.yorumYazari
-a{color:#2a459d} div.comment-rate{float:left; width:75px;
-margin-left:20px; position:relative;} div.comment-rate-num{float: left;
-padding-right: 5px; color:#088f02; font-weight:bold;}
-ul.yorumOyla{float:left; width:75px; margin-left:20px;
-position:relative; top:-5px;} ul.yorumOyla li{float:left;} li.yorumArti
-a{ background:url(../images/genel_resim.gif) -15px -530px no-repeat;
-display:block; text-indent:-9999px; width:16px; height:20px}
-li.yorumEksi a{ background:url(../images/genel_resim.gif) 0 -530px
-no-repeat; display:block; text-indent:-9999px; width:16px; height:20px}
-li.olumlu{color:#088f02; font-weight:bold;} li.olumsuz{color:#c00;
-font-weight:bold;} li.notr{color:#000; font-weight:bold;}
-h3.senYaz{background:url(../images/tez_din_ikon.gif) 0 -168px
-no-repeat; padding:15px 0 3px 32px} #solOrtaAlan textarea{border:1px
-solid #e1e1e1; width:642px; margin-bottom:20px; height:100px}&lt;/p&gt;
 &lt;p&gt;Tezahürat Dinle/İzle sayfasınıda tamamlamış oluyoruz.&lt;/p&gt;
-&lt;h3&gt;Site Genel Şablonu Sayfasının Kodlanması&lt;/h3&gt;
+&lt;h2&gt;Site Genel Şablonu Sayfasının Kodlanması&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Genel Şablon" src="/images/genel_sablon_kucuk.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Site kodlarken site içerisinde genelde bir şablon sayfası oluşturulur.
 Bu sayfa site içinde olabilmesi mümkün elemanların bulunduğu bir
@@ -475,33 +768,45 @@ yapısından kopmamış oluruz.&lt;/p&gt;
 paragraflar, tablo yapısı, resimler, listeler, vb. yapıları içerir.&lt;/p&gt;
 &lt;p&gt;Fanatikmarşlar.com'un şablon sayfasına baktığımızda başlık, paragraf ve
 uyarı mesajları şeklinde oluşmaktadır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#anaKapsul&lt;/span&gt; &lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="nc"&gt;.hata&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#e40000&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#anaKapsul&lt;/span&gt; &lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="nc"&gt;.hata&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#e40000&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#anaKapsul&lt;/span&gt; &lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="nc"&gt;.onay&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#1f6600&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1 color:#1f6600="color:#1f6600"&gt;anaKapsul h1.onay&lt;/h1&gt;
 &lt;p&gt;Bilgi kutusunu oluştururken yuvarlak kenarlı olduğu için, iki elamana
 ihtiyaç var. Bunun için kapsayıcı div ve içine paragrafa koyduk.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;bilgiKutusu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;bilgiKutusu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&lt;/span&gt;Bu kullanıcı adı zaten alınmış, başka bir tane deneyin.&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;p&gt;&lt;strong&gt;Bu kullanıcı adı zaten alınmış, başka bir tane deneyin.
-&lt;/strong&gt;&lt;/p&gt; &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;CSS Kodları&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.bilgiKutusu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#2d2d2d&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.bilgiKutusu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#2d2d2d&lt;/span&gt; &lt;span class="sx"&gt;url(../images/bilgi_kutusu.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.bilgiKutusu&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(../images/bilgi_kutusu.gif)&lt;/span&gt; &lt;span class="m"&gt;-650px&lt;/span&gt; &lt;span class="k"&gt;bottom&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.bilgiKutusu&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="nt"&gt;strong&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#ffc000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;url(../images/bilgi_kutusu.gif) 0 0 no-repeat; margin-bottom:20px;
-font:bold 14px Arial, Helvetica, sans-serif; color:#fff}
-div.bilgiKutusu p{background:url(../images/bilgi_kutusu.gif) -650px
-bottom no-repeat; padding:10px;} div.bilgiKutusu p
-strong{color:#ffc000} &lt;/p&gt;
 &lt;p&gt;Alt sayfaların kodlamasını böylelikle bitirdik. Site kodlarken değişik
 tasarımlarda olsa genelde benzer yapılar olduğu için yaklaşık olarak
 kodlarımız bu şekilde olacaktır.&lt;/p&gt;
-&lt;h3&gt;Sonuç&lt;/h3&gt;
+&lt;h2&gt;Sonuç&lt;/h2&gt;
 &lt;p&gt;Site kodlarken kodlarımı Adobe Dreamweaver ile yazıyorum. Kodlamanın bir
 çok yerinde FireBug kullanıyorum, daha doğrusu firebug'ı kapatmıyorum.
 Ayrıca test amaçlı ietester programını kullandım. Daima ie6'da test
@@ -517,8 +822,7 @@ edip yeni projelerimizde kullanmalıyız.&lt;/p&gt;
 &lt;p&gt;Çok uzun süredir tasarladığım ama ancak nasip olan bir işi bitirmenin
 sevinci ile bu makalemide bitiriyorum. Daha güzel makalelerde buluşmak
 dileğiyle kendinize iyi bakın.&lt;/p&gt;
-&lt;p&gt;Projede yer alan tüm dosyaları sıkıştırıp attım. &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/fm_htmlleri_son.rar"&gt;Tüm dosyaları indirmek için tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="adım adım kodlama"></category><category term="alt sayfa"></category><category term="css-kodlama-düzeni"></category><category term="CSS-Layout"></category><category term="farklı tarayıcılara göre kod yazmak"></category><category term="psdtohtml"></category><category term="site-kodlama"></category><category term="tezahürat dinle"></category><category term="tezahürat ekle"></category></entry><entry><title>sIFR, Flash Player10 ve Firefox sorunu</title><link href="http://www.fatihhayrioglu.com/sifr-flash-player10-ve-firefox-sorunu/" rel="alternate"></link><updated>2009-01-07T14:37:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-01-07:sifr-flash-player10-ve-firefox-sorunu/</id><summary type="html">&lt;p&gt;Bir çok projemde sIFR kullanıyorum. Yaklaşık 1-2 ay önce Flash Player 10
+&lt;p&gt;Projede yer alan tüm dosyaları sıkıştırıp attım. &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/fm_htmlleri_son.rar"&gt;Tüm dosyaları indirmek için tıklayınız.&lt;/a&gt;&lt;/p&gt;</summary><category term="adım adım kodlama"></category><category term="alt sayfa"></category><category term="css-kodlama-düzeni"></category><category term="CSS-Layout"></category><category term="farklı tarayıcılara göre kod yazmak"></category><category term="psdtohtml"></category><category term="site-kodlama"></category><category term="tezahürat dinle"></category><category term="tezahürat ekle"></category></entry><entry><title>sIFR, Flash Player10 ve Firefox sorunu</title><link href="http://www.fatihhayrioglu.com/sifr-flash-player10-ve-firefox-sorunu/" rel="alternate"></link><updated>2009-01-07T14:37:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-01-07:sifr-flash-player10-ve-firefox-sorunu/</id><summary type="html">&lt;p&gt;Bir çok projemde sIFR kullanıyorum. Yaklaşık 1-2 ay önce Flash Player 10
 çıktıktan sonra sIFR kullandığım başlıklarımda sorun çıkmaya başladı.
 İlk başta anlayamadım. Biraz araştırınca sIFR'ın bazı
 tarayıcılarda(Firefox ve Safari) Flash Player'ı tespit edemediği için
@@ -528,7 +832,7 @@ kullandı isek yeni sürümü indirip sifr.fla dosyamızı yeniden export
 ederek oluşan .swf dosyasını atmak. sIFR'ın yeni sürümü sIFR3 beta'da
 böyle bir sorun yok. Bu kadar basit bir çözüm. Ama içimdeki sIFR
 sevgisini biraz daha azaltan bir gelişme oldu bu benim için. Kaynak:
-&lt;a href="http://novemberborn.net/sifr/2.0.7"&gt;http://novemberborn.net/sifr/2.0.7&lt;/a&gt;&lt;/p&gt;</summary><category term="Firefox"></category><category term="Flash Player"></category><category term="safari"></category><category term="sIFR"></category></entry><entry><title>Internet Explorer 6 olmasa hayat daha kolay ve zevkli olurdu</title><link href="http://www.fatihhayrioglu.com/internet-explorer-6-olmasa-hayat-daha-kolay-ve-zevkli-olurdu/" rel="alternate"></link><updated>2008-09-10T10:23:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-09-10:internet-explorer-6-olmasa-hayat-daha-kolay-ve-zevkli-olurdu/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="/images/ie6-dur.gif" title="ie6 kullanmayın" /&gt;][]&lt;/p&gt;
+&lt;a href="http://novemberborn.net/sifr/2.0.7"&gt;http://novemberborn.net/sifr/2.0.7&lt;/a&gt;&lt;/p&gt;</summary><category term="Firefox"></category><category term="Flash Player"></category><category term="safari"></category><category term="sIFR"></category></entry><entry><title>Internet Explorer 6 olmasa hayat daha kolay ve zevkli olurdu</title><link href="http://www.fatihhayrioglu.com/internet-explorer-6-olmasa-hayat-daha-kolay-ve-zevkli-olurdu/" rel="alternate"></link><updated>2008-09-10T10:23:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-09-10:internet-explorer-6-olmasa-hayat-daha-kolay-ve-zevkli-olurdu/</id><summary type="html">&lt;p&gt;&lt;img alt="" src="/images/ie6-dur.gif" title="ie6 kullanmayın" /&gt;&lt;/p&gt;
 &lt;p&gt;Web kod yazarlarını en çok zorlayan konulardan biri farklı tarayıcılara
 uyumlu kod yazmaktır. Birinin düzgün yorumladığını diğer farklı yorumlar
 ve bizim için arayış ve çile başlar, çözünce geçici bir sevinç yaşarız
@@ -618,7 +922,7 @@ belki bu süreci hızlandırabilir, ama ben pek ümitli değilim. Biz web kod
 yazarları bu konuda müşterinin istekleri doğrultusunda kod yazdığımız
 için elimizden gelen pek bir şey olmuyor açıkçası. &lt;/p&gt;
 &lt;p&gt;Ne diyelim Internet Explorer 6'ya ölüm.&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://wisdump.com/web-programming/campaigns-to-kill-the-web-browser-that-just-wont-die-internet-explorer-6/"&gt;http://wisdump.com/web-programming/campaigns-to-kill-the-web-browser-that-just-wont-die-internet-explorer-6/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://cdharrison.com/2008/09/04/death-to-ie6/"&gt;http://cdharrison.com/2008/09/04/death-to-ie6/&lt;/a&gt;&lt;/li&gt;
@@ -638,12 +942,10 @@ için elimizden gelen pek bir şey olmuyor açıkçası. &lt;/p&gt;
 &lt;li&gt;&lt;a href="http://websitetips.com/css/solutions/"&gt;http://websitetips.com/css/solutions/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://my.opera.com/zomg/blog/2007/07/31/common-crossbrowser-css-issues"&gt;http://my.opera.com/zomg/blog/2007/07/31/common-crossbrowser-css-issues&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;p&gt;[&lt;img alt="" src="/images/ie6-dur.gif" title="ie6 kullanmayın" /&gt;]: /images/ie6-dur.gif&lt;/p&gt;</summary><category term="ie6"></category><category term="internet explorer"></category><category term="İnternet Tarayıcısı"></category></entry><entry><title>Genişlik ve Yüksekliğin Sınırlarını Belirlemek(min-width, min-height,max-width, max-height)</title><link href="http://www.fatihhayrioglu.com/genislik-ve-yuksekligin-sinirlarini-belirlemekmin-width-min-heightmax-width-max-height/" rel="alternate"></link><updated>2006-10-09T11:21:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-09:genislik-ve-yuksekligin-sinirlarini-belirlemekmin-width-min-heightmax-width-max-height/</id><summary type="html">&lt;p&gt;Bir kapsayıcı kutunun genişlik değerini minimum ve maksimum değerleri
+&lt;/p&gt;</summary><category term="ie6"></category><category term="internet explorer"></category><category term="İnternet Tarayıcısı"></category></entry><entry><title>Genişlik ve Yüksekliğin Sınırlarını Belirlemek(min-width, min-height,max-width, max-height)</title><link href="http://www.fatihhayrioglu.com/genislik-ve-yuksekligin-sinirlarini-belirlemekmin-width-min-heightmax-width-max-height/" rel="alternate"></link><updated>2006-10-09T11:21:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-09:genislik-ve-yuksekligin-sinirlarini-belirlemekmin-width-min-heightmax-width-max-height/</id><summary type="html">&lt;p&gt;Bir kapsayıcı kutunun genişlik değerini minimum ve maksimum değerleri
 ile sınarlandırabilriz. Bu özellikler CSS2 ile birlikte gelmiştir.
 &lt;!--more--&gt;&lt;/p&gt;
-&lt;h6&gt;min-width, min-height&lt;/h6&gt;
+&lt;h4&gt;min-width, min-height&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; min-width, min-height: &lt;deger&gt;&lt;br /&gt;
 &lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;uzunluk değeri &gt;&lt;/a&gt; | &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;yüzde&gt;&lt;/a&gt; | inherit&lt;br /&gt;
 &lt;strong&gt;Başlnagıç değeri:&lt;/strong&gt; 0 &lt;br /&gt;
@@ -671,7 +973,7 @@ W3C’s &lt;acronym title="Stil şablonu"&gt;CSS&lt;/acronym&gt; Level 2+
 &lt;/div&gt;
 
 &lt;p&gt;Aynı şekilde max-width ve max-height tanımlamalarıda yapılır.&lt;/p&gt;
-&lt;h6&gt;max-width, max-height&lt;/h6&gt;
+&lt;h4&gt;max-width, max-height&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; max-width, max-height: &lt;deger&gt;&lt;br /&gt;
 &lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;uzunluk değeri &gt;&lt;/a&gt; | &lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;&lt;yüzde&gt;&lt;/a&gt; | none | inherit&lt;br /&gt;
 &lt;strong&gt;Başlnagıç değeri:&lt;/strong&gt; 0 &lt;br /&gt;

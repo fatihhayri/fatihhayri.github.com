@@ -81,7 +81,7 @@
 <p>etiketler: <a href=".././tag/adim-adim-kodlama.html">adım adım kodlama</a><a href=".././tag/alt-sayfa.html">alt sayfa</a><a href=".././tag/css-kodlama-duzeni.html">css-kodlama-düzeni</a><a href=".././tag/css-layout.html">CSS-Layout</a><a href=".././tag/farkli-tarayicilara-gore-kod-yazmak.html">farklı tarayıcılara göre kod yazmak</a><a href=".././tag/psdtohtml.html">psdtohtml</a><a href=".././tag/site-kodlama.html">site-kodlama</a><a href=".././tag/tezahurat-dinle.html">tezahürat dinle</a><a href=".././tag/tezahurat-ekle.html">tezahürat ekle</a></p>
 
 
-</footer><!-- /.post-info --><h3>Alt Sayfaların Kodlanması</h3>
+</footer><!-- /.post-info --><h2>Alt Sayfaların Kodlanması</h2>
 <p>Genelde siteler yapılırken ana sayfa ve alt sayfa olarak kodlanır. Bunun
 sebebi ana sayfalar tekildir, alt sayfalar ise birbirine benzeyen
 yapılardan oluşur. Bu nedenle alt sayfaların bir tanesi kodlanınca diğer
@@ -104,23 +104,32 @@ nasıl kodladığımı anlatacağım.</p>
 kısmın ana sayfa ile aynı olduğunu görüyoruz. Orta kısım ise tüm alt
 sayfalarda aynı. İki kolonlu bir yapı ve sağ kolon sabit. Sol içerik
 kolonu içeriği değişiyor.</p>
-<h3>Kategori Listeleme Sayfasının Kodlanması</h3>
+<h2>Kategori Listeleme Sayfasının Kodlanması</h2>
 <p><img alt="Marşlar" src="static/images/marslar_kucuk.jpg" /></p>
 <p>Orta kısmı iki kolona ayırıyorum. solOrtaAlan ve icerikalaniSag adını
 verdim. İki kolonu yan yana koymak için float ve genişlik tanımlarını
 yapıyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;solOrtaAlan&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span> <span class="nt">&lt;div</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;solOrtaAlan&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikalaniSag&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>id="icerikalaniSag"&gt; ... </div> </p>
 <p>CSS kodunu yazalım</p>
-<div class="codehilite"><pre> <span class="nf">#solOrtaAlan</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">650px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#solOrtaAlan</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">650px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#icerikalaniSag</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>margin:0 20px 0 10px; font:14px Arial, Helvetica, sans-serif;
-display:inline} #icerikalaniSag {float:left; width:300px} </p>
 <p><strong>Sol Orta Alan</strong></p>
 <h1>solOrtaAlan tanımına margin tanımlarını yapıyorum. Burada "<a href="http://www.fatihhayrioglu.com/ieda-ikikat-gorulen-margin-problemi-ve-cozumu/">IE'da İkikat görülen Margin Problemi ve Çözümü</a>" sorunu ile karşılaştığım</h1>
 <p>için display:inline tanımı atadım.</p>
@@ -137,65 +146,122 @@ burada gerekmediği için tanımları yapmadık.</p>
 <p><strong>Sıralama Alanı</strong></p>
 <p>Sıralama kısmına yaparken bu alanı sırasız listeler ile yapmayı
 düşündüm.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;siralamAlani&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;ul&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;siralamAlani&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;ul&gt;</span>
+     <span class="nt">&lt;li&gt;&lt;strong&gt;</span>Sıralama:<span class="nt">&lt;/strong&gt;&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Karışık<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Popüler<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Oley!<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">class=</span><span class="s">&quot;secili&quot;</span><span class="nt">&gt;</span>Alfabetik<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>En Çok Tıklanan<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>En Son Eklenen<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+ <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p><li><strong>Sıralama:</strong></li> <li><a
-href="static">Karışık</a></li> <li><a href="static">Popüler</a></li>
-<li><a href="static">Oley!</a></li> <li><a href="static"
-class="secili">Alfabetik</a></li> <li><a href="static">En Çok
-Tıklanan</a></li> <li><a href="static">En Son Eklenen</a></li>
-</ul> </div> </p>
 <p>Dışına bir katman atamamın nedeni ardalan resmi ve diğer öğeler ile olan
 ilişkileri ayarlamak içindir. Sıralama öğelerinden bir tanesine göre
 sıralama yapılacak ve başındaki ok ikonu aşağı bakacağı için bu öğeye
 bir sınıf tanımlıyorum diğerlerinden ayırmak için</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#siralamAlani</span><span class="p">{</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nf">#siralamAlani</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/siralama_ard.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">38px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nf">#siralamAlani</span> <span class="nt">ul</span><span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nf">#siralamAlani</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nf">#siralamAlani</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">strong</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#828282</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nf">#siralamAlani</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/genel_resim.gif)</span> <span class="k">right</span> <span class="m">-388px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#0c2b90</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nf">#siralamAlani</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nc">.secili</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/genel_resim.gif)</span> <span class="k">right</span> <span class="m">-354px</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background:url(../images/siralama_ard.gif) 0 0 no-repeat; height:38px;}
-div#siralamAlani ul{padding:10px 0 0 10px} div#siralamAlani ul
-li{display:inline;} div#siralamAlani ul li strong{display:block;
-float:left; color:#828282; font:bold 14px Arial, Helvetica, sans-serif;
-margin-right:3px} div#siralamAlani ul li a{display:block;
-background:url(../images/genel_resim.gif) right -388px no-repeat;
-float:left; font:bold 14px Arial, Helvetica, sans-serif; color:#0c2b90;
-padding-right:15px; margin-right:10px} div#siralamAlani ul li
-a.secili{background:url(../images/genel_resim.gif) right -354px
-no-repeat;} </p>
 <p><strong>Listeleme Tablosu</strong></p>
 <p>Listeleme tablosunun bir kaç kolonu hariç ana sayfadaki tablodan bir
 farkı yoktur. Benzer bir anlayış ile burayı kodlayalım.</p>
-<div class="codehilite"><pre> <span class="nt">table</span><span class="nc">.genelTablo</span><span class="p">{</span><span class="k">border-collapse</span><span class="o">:</span><span class="k">collapse</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">table</span><span class="nc">.genelTablo</span><span class="p">{</span>
+    <span class="k">border-collapse</span><span class="o">:</span> <span class="k">collapse</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span><span class="nc">.genelTablo</span> <span class="nt">th</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span><span class="nc">.genelTablo</span> <span class="nt">th</span><span class="nc">.ortala</span><span class="p">{</span>
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span><span class="nc">.genelTablo</span> <span class="nt">tr</span><span class="nc">.enAlt</span> <span class="nt">td</span><span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span><span class="nc">.genelTablo</span> <span class="nt">td</span><span class="p">{</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#d5d5d5</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#828282</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">1px</span> <span class="m">2px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>table.genelTablo th{font:bold 14px Arial, Helvetica, sans-serif;
-color:#000; padding:5px 2px; text-align:left} table.genelTablo
-th.ortala{text-align:center} table.genelTablo tr.enAlt td{border:0}
-table.genelTablo td{padding:1px 2px; font:14px Arial, Helvetica,
-sans-serif; color:#828282; border-bottom:1px solid #d5d5d5;}</p>
 <p>Listeleme tablosunun ana sayfadan farklı olan kısmı en sağdaki oylama
 gösterme alanı</p>
-<div class="codehilite"><pre><span class="nt">&lt;td&gt;&lt;p</span> <span class="na">class=</span><span class="s">&quot;oley&quot;</span><span class="nt">&gt;&lt;strong</span>
+<div class="codehilite"><pre><span class="nt">&lt;td&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;oley&quot;</span><span class="nt">&gt;&lt;strongclass</span><span class="err">=&quot;</span><span class="na">ucKupa</span><span class="err">&quot;</span><span class="nt">&gt;</span>3 Kupa<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/td&gt;</span>
 </pre></div>
 
 
-<p>class="ucKupa"&gt;3 Kupa</strong></p></td></p>
 <p>Sadece oyu göstereceğimiz için bu şekilde kodladık.</p>
-<div class="codehilite"><pre> <span class="nf">#solOrtaAlan</span> <span class="nt">table</span> <span class="nt">td</span>
+<div class="codehilite"><pre><span class="nf">#solOrtaAlan</span> <span class="nt">table</span> <span class="nt">td</span> <span class="nt">p</span><span class="nc">.oley</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/genel_resim.gif)</span> <span class="m">0</span> <span class="m">-483px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">21px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">93px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span> <span class="nt">td</span> <span class="nt">p</span><span class="nc">.oley</span> <span class="nt">strong</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/genel_resim.gif)</span> <span class="m">0</span> <span class="m">-459px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">21px</span><span class="p">;</span>
+    <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span> <span class="nt">td</span> <span class="nt">p</span><span class="nc">.oley</span> <span class="nt">strong</span><span class="nc">.birKupa</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span> <span class="nt">td</span> <span class="nt">p</span><span class="nc">.oley</span> <span class="nt">strong</span><span class="nc">.ikiKupa</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">37px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span> <span class="nt">td</span> <span class="nt">p</span><span class="nc">.oley</span> <span class="nt">strong</span><span class="nc">.ucKupa</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">56px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span> <span class="nt">td</span> <span class="nt">p</span><span class="nc">.oley</span> <span class="nt">strong</span><span class="nc">.dortKupa</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">75px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span> <span class="nt">td</span> <span class="nt">p</span><span class="nc">.oley</span> <span class="nt">strong</span><span class="nc">.besKupa</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">95px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>p.oley{background:url(../images/genel_resim.gif) 0 -483px no-repeat;
-width:93px; height:21px; margin:0} table td p.oley strong{display:block;
-background:url(../images/genel_resim.gif) 0 -459px no-repeat;
-text-indent:-9999px; height:21px} table td p.oley strong.birKupa{
-width:18px;} table td p.oley strong.ikiKupa{ width:37px;} table td
-p.oley strong.ucKupa{ width:56px;} table td p.oley strong.dortKupa{
-width:75px;} table td p.oley strong.besKupa{ width:95px;} </p>
 <h1>solOrtaAlan table td p.oley tanımını niye p.oley şeklinde yapmıyoruzda</h1>
 <p>bu kadar uzun yapıyoruz derseniz, üstten gelen kalıtsal tanımlar alt
 elemanları da etkiliyor bu etkiyi kaldırmak için bu şekilde tanımını
@@ -208,46 +274,74 @@ başlıyorum.</p>
 <p><a href="http://www.fatihhayrioglu.com/css-ile-sayfalama-gorselligini-ayarlama/">Sayfalama kodlamalarını bir kaç tipi</a> var ben burada daha önce
 kodladığım bir kodu kopyalıyorum. Bu yöntemi seçmemde programcı
 arkadaşım Mustafa'nın etkiside var.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sayfalama&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;ul&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sayfalama&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;span&gt;</span>|<span class="ni">&amp;lt;</span><span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;span&gt;</span>Önceki<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;span&gt;</span>1<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>7<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>8<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>9<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>10<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Sonraki<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;sayfalmaSonu&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;gt;</span>|<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p><li><span>|&lt;</span></li> <li><span>Önceki</span></li>
-<li><span>1</span></li> <li><a href="#">2</a></li> &lt;li</p>
-<blockquote>
-<p><a href="#">3</a></li> <li ><a href="#">4</a></li>
-<li ><a href="#">5</a></li> <li ><a
-href="#">6</a></li> <li ><a href="#">7</a></li> <li
-<a href="#">8</a></li> <li ><a href="#">9</a></li>
-<li ><a href="#">10</a></li> <li ><a
-href="#">Sonraki</a></li> <li class="sayfalmaSonu"><a
-href="#">&gt;|</a></li> </ul> </div> </p>
-</blockquote>
 <p>Sayısız listeler ile listelediğimiz sayfa sayılarının farklı bölümlerini
-belirlemek için <li><span>1</span></li> şeklinde tanımlama
-yapıyoruz. Normal bağlantılarıda <li><a href="static">2</a></li>
+belirlemek için &lt;li>&lt;span>1&lt;/span>&lt;/li> şeklinde tanımlama
+yapıyoruz. Normal bağlantılarıda &lt;li>&lt;a href="">2&lt;/a>&lt;/li>
 şeklinde tanımlıyoruz. CSS kodunu yazalım.</p>
-<div class="codehilite"><pre> <span class="c">/* sayfalama */</span> <span class="nt">div</span><span class="nc">.sayfalama</span> <span class="nt">ul</span><span class="p">{</span><span class="k">margin</span><span class="o">:</span><span class="m">0</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nc">.sayfalama</span> <span class="nt">ul</span><span class="p">{</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">530px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.sayfalama</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#80a3b7</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">12px</span> <span class="n">Tahoma</span><span class="o">,</span> <span class="n">Geneva</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">2px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.sayfalama</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">span</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">8px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.sayfalama</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#f0f0f0</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#80a3b7</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">12px</span> <span class="n">Tahoma</span><span class="o">,</span> <span class="n">Geneva</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">8px</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.sayfalama</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#80a3b7</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#f0f0f0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>auto; width:530px; padding:10px 0 0 0; clear:left} div.sayfalama ul
-li{font:bold 12px Tahoma, Geneva, sans-serif; color:#fff; float:left;
-list-style:none; margin:0 2px; background:#80a3b7;} div.sayfalama ul li
-span{padding:5px 8px; display:block} div.sayfalama ul li a{font:bold
-12px Tahoma, Geneva, sans-serif ; color:#80a3b7; text-decoration:none;
-background-color:#f0f0f0; padding:5px 8px; display:block} div.sayfalama
-ul li a:hover{background-color:#80a3b7; color:#f0f0f0;} </p>
 <p><strong>İçerik Alanı Sağ</strong></p>
 <p>İçerik alanının sağ kısmı aslında pek bir şey içermiyor bir banner alanı
 ve kategori listesi. Her iki alanda ana sayfada mevcut olduğu için aynı
 kodları buraya taşıyoruz.</p>
-<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sagBannerAlani&quot;</span><span class="nt">&gt;&lt;img</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sagBannerAlani&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/band_website_banner.jpg&quot;</span> <span class="na">width=</span><span class="s">&quot;300&quot;</span> <span class="na">height=</span><span class="s">&quot;250&quot;</span> <span class="na">alt=</span><span class="s">&quot;Web&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>src="images/band_website_banner.jpg" width="300" height="250"
-alt="Web" /&gt;</div></p>
 <p>Sağ banner alanı diye ayrı bir isim vermemin nedeni, kodlaması aynı olsa
 da site yayına girdikten sonra ana sayfa ve alt sayfaya farklı bannerlar
 atanma ihtimali olduğu için buraya farklı bir isim veriyorum ve
@@ -259,7 +353,7 @@ nereye konursa konsun sorun çıkarmaz. Site kodlamaya başlanmadan önce bu
 tip modülleri belirleyip sabit bir genişlik vermekten kaçınmalıyız.
 Burada genişlikleri aynı olduğu için sorun çıkarmazdı zaten ama farklı
 projeler için söylüyorum bunu, aklınızın bir kenarında bulunsun.</p>
-<h3>Tezahürat Ekle Sayfasının Kodlanması</h3>
+<h2>Tezahürat Ekle Sayfasının Kodlanması</h2>
 <p><img alt="Tezahürat Ekle" src="static/images/tezahurat_ekle_kucuk.jpg" /></p>
 <p>Sayfamızı incelediğimizde sol içerik alanında bir tezahürat ekleme
 formunun diğer sayfadan farklı olduğunu görüyoruz.</p>
@@ -272,51 +366,82 @@ ekliyoruz.</p>
 <p><strong>Tezahürat Ekle Formunun Kodlanması</strong></p>
 <p>Her satırın altında bir çizgi olduğu için her satırı bir katman içine
 alıp bu katmanada bir sınıf tanılayarak bu işi çözebiliriz.</p>
-<div class="codehilite"><pre><span class="nc">.formAlani</span><span class="p">{</span><span class="k">border-top</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#e0e0e0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nc">.formAlani</span><span class="p">{</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#e0e0e0</span><span class="p">;</span>
+    <span class="k">border-top</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#e0e0e0</span><span class="p">;</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>border-bottom:1px solid #e0e0e0; padding:10px; margin:10px 0;
-clear:left;}</p>
 <p>clear:left; tanımı her satırın soldan başlaması için yapıldı.</p>
 <p>İlk form alanı için bir label ve birde select alanımız var</p>
-<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;formAlani&quot;</span><span class="nt">&gt;&lt;label&gt;</span>Lig
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;formAlani&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>Lig Seçiniz:<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select&gt;</span>
+        <span class="nt">&lt;option&gt;</span>--------------<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Turkcell Süper Lig<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>Seçiniz:</label><select><option>--------------</option><option>Turkcell
-Süper Lig</option></select></div></p>
 <p>CSS kodunu yazalım</p>
-<div class="codehilite"><pre> <span class="nc">.formAlani</span> <span class="nt">label</span><span class="p">{</span><span class="k">margin-right</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nc">.formAlani</span> <span class="nt">label</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">135px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.formAlani</span> <span class="nt">select</span><span class="p">{</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">180px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>width:135px; display:block; float:left;} .formAlani select{width:180px;
-font:12px Arial, Helvetica, sans-serif;} </p>
 <p><strong>Seçilen Ligdeki Takımlar Alanı</strong></p>
 <p>Bu alanı kodlarken sayısız listeleri kullandım. Listelere bir genişlik
 ve float tanımı yaparak yan yana dize bilirim. Genişlikleri verirken 3
 tanesini yan yana duracak şekilde ayarladım.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;secilenLigler&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;input</span>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;secilenLigler&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;takimSec&quot;</span> <span class="nt">/&gt;&lt;div</span> <span class="na">class=</span><span class="s">&quot;logoTrabzon&quot;</span><span class="nt">&gt;</span>Trabzon<span class="nt">&lt;/div&gt;</span> <span class="nt">&lt;label&gt;</span>Trabzon Spor Klubü Tesisleri<span class="nt">&lt;/label&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;takimSec&quot;</span> <span class="nt">/&gt;&lt;div</span> <span class="na">class=</span><span class="s">&quot;logoFenerbahce&quot;</span><span class="nt">&gt;</span>Fenerbahçe<span class="nt">&lt;/div&gt;</span> <span class="nt">&lt;label&gt;</span>Fenerbahçe<span class="nt">&lt;/label&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;takimSec&quot;</span> <span class="nt">/&gt;&lt;div</span> <span class="na">class=</span><span class="s">&quot;logoAnkara&quot;</span><span class="nt">&gt;</span>Ankaraspor<span class="nt">&lt;/div&gt;</span> <span class="nt">&lt;label&gt;</span>Ankaraspor<span class="nt">&lt;/label&gt;&lt;/li&gt;</span>
+      .......
+<span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<p>type="radio" name="takimSec" /&gt;<div
-class="logoTrabzon">Trabzon</div> <label>Trabzon Spor Klubü
-Tesisleri</label></li> <li> <input type="radio" name="takimSec"
-/><div class="logoFenerbahce">Fenerbahçe</div>
-<label>Fenerbahçe</label></li> <li> <input type="radio"
-name="takimSec" /><div class="logoAnkara">Ankaraspor</div>
-<label>Ankaraspor</label></li> ....... </ul> </p>
 <p>CSS kodları</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.secilenLigler</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">575px</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.secilenLigler</span><span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">575px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.secilenLigler</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#828282</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">170px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.secilenLigler</span> <span class="nt">li</span> <span class="nt">div</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.secilenLigler</span> <span class="nt">li</span> <span class="nt">label</span><span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">8px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.secilenLigler</span> <span class="nt">li</span> <span class="nt">input</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">8px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>ul.secilenLigler li{float:left; width:170px; margin:0 20px 10px 0;
-color:#828282;} ul.secilenLigler li div{float:left} ul.secilenLigler li
-label{position:relative; top:8px} ul.secilenLigler li input{float:left;
-position:relative; top:8px; margin-right:10px} </p>
 <p>Her takım alanı için radyo butonu, logo için bir katman, takım adı için
 bir label tanımladım ve bunları yan yana dizmek için float:left tanımı
 kullandım. label ve input için kullandığım postion:relative tanımı ve
@@ -324,136 +449,209 @@ top değerleri bu öğeleri diğer öğeler ile yatayda aynı hizaya getirmek
 içindir.</p>
 <p>Yukarıda bahsettiğim gibi form alanlarını kodlarken sayısız
 listeleri(ul) kullanıyorum burada da</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;formAlani&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;ul&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;formAlani&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;label&gt;</span>Kategori Seçiniz:<span class="nt">&lt;/label&gt;&lt;select&gt;&lt;option&gt;</span>--------------<span class="nt">&lt;/option&gt;&lt;option&gt;</span>Turkcell Süper Lig<span class="nt">&lt;/option&gt;&lt;/select&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;label&gt;</span>Tezahüratın Adı:<span class="nt">&lt;/label&gt;&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="nt">/&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;label&gt;</span>Youtube linki:<span class="nt">&lt;/label&gt;&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="nt">/&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;label&gt;</span>Tezahüratın sözleri:<span class="nt">&lt;/label&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;textarea&gt;&lt;/textarea&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;label&gt;</span>Kısa tanıtım:<span class="nt">&lt;/label&gt;&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="nt">/&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;label</span> <span class="na">class=</span><span class="s">&quot;genisEtiket&quot;</span><span class="nt">&gt;</span>Kayıtlı bir tezahüratınız varsa buradan yükleyiniz:<span class="nt">&lt;/label&gt;</span> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span> <span class="nt">/&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p><li><label>Kategori
-Seçiniz:</label><select><option>--------------</option><option>Turkcell
-Süper Lig</option></select></li> <li><label>Tezahüratın
-Adı:</label><input type="text" /></li> <li><label>Youtube
-linki:</label><input type="text" /></li>
-<li><label>Tezahüratın sözleri:</label></li>
-<li><textarea></textarea></li> <li><label>Kısa
-tanıtım:</label><input type="text" /></li> <li><label
-class="genisEtiket">Kayıtlı bir tezahüratınız varsa buradan
-yükleyiniz:</label> <input type="file" /></li> </ul> </div></p>
 <p>CSS kodu</p>
-<div class="codehilite"><pre> <span class="nc">.formAlani</span> <span class="nt">p</span><span class="p">{</span><span class="k">margin-bottom</span><span class="o">:</span><span class="m">10px</span><span class="p">}</span> <span class="nc">.formAlani</span>
+<div class="codehilite"><pre><span class="nc">.formAlani</span> <span class="nt">p</span><span class="p">{</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.formAlani</span> <span class="nt">label</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">135px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.formAlani</span> <span class="nt">label</span><span class="nc">.genisEtiket</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">310px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.formAlani</span> <span class="nt">textarea</span><span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#e8e8e8</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">210px</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="o">:</span> <span class="m">8px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">625px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.formAlani</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.formAlani</span> <span class="nt">input</span><span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#e8e8e8</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.formAlani</span> <span class="nt">select</span><span class="p">{</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">180px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.formAlani</span> <span class="nt">select</span><span class="nc">.darSelect</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">75px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>label{margin-right:10px; width:135px; display:block; float:left;}
-.formAlani label.genisEtiket{width:310px} .formAlani
-textarea{width:625px; height:210px; border:1px solid #e8e8e8;
-margin-top:8px; font:12px Arial, Helvetica, sans-serif; padding:3px;}
-.formAlani ul li{margin-bottom:10px} .formAlani input{border:1px solid</p>
-<h1>e8e8e8; font:12px Arial, Helvetica, sans-serif; padding:3px;</h1>
-<p>width:300px} .formAlani select{width:180px; font:12px Arial, Helvetica,
-sans-serif;} .formAlani select.darSelect{width:75px;} </p>
 <p>Son olarakta gönder düğmesini koyuyorum.</p>
-<div class="codehilite"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Gönder&quot;</span>
+<div class="codehilite"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Gönder&quot;</span> <span class="na">class=</span><span class="s">&quot;gonderBut&quot;</span> <span class="nt">/&gt;</span>
 </pre></div>
 
 
-<p>class="gonderBut" /&gt;</p>
 <p>CSS kodu</p>
-<div class="codehilite"><pre><span class="nt">input</span><span class="nc">.gonderBut</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">170px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span><span class="m">45px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">input</span><span class="nc">.gonderBut</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#434343</span><span class="p">;</span>
+    <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="k">italic</span> <span class="m">24px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">45px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">170px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>float:right; font:bold italic 24px Arial, Helvetica, sans-serif;
-color:#434343; cursor:pointer}</p>
 <p>Böylece Tezahürat Ekle sayfamızı bitirmiş oluyoruz.</p>
-<h3>Tezahürat Dinle Sayfasının Kodlaması</h3>
+<h2>Tezahürat Dinle Sayfasının Kodlaması</h2>
 <p><img alt="Tezahürat İzle Dinle" src="static/images/tezahurat_izle_dinle_kucuk.jpg" /></p>
 <p>Tezahürat dinle sayfası iki sekmeli bir yapıdan oluşuyor ve dinleme ve
 izleme seçenekleri iki ayrı sekme içinde yer alıyor.</p>
 <p>Başlık ve açıklama kısmını kodluyoruz. Başlık ve ilk paragraf bir önceki
 sayfa ile aynı. Başlık yanındaki logo ve takım ismi kısmına biraz
 değinelim.</p>
-<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;dinleTakimi&quot;</span><span class="nt">&gt;&lt;div</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;dinleTakimi&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;logoTrabzon&quot;</span><span class="nt">&gt;</span>Trabzon<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Trabzon<span class="nt">&lt;/span&gt;</span>
 </pre></div>
 
 
-<p>class="logoTrabzon"&gt;Trabzon</div>
-<span>Trabzon</span></p>
 <p>Logo için iki ayrı katman oluşturuyorum. Bunun nedeni logoların geneli
 için bir sınıf tanımlıyorum. Ayrıca ikinci katmanda her bir takım için
 tanımlanacak özellikler için. CSS kodunu yazarsak;</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#dinleTakimi</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">180px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nf">#dinleTakimi</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin-left</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">-4px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">180px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nf">#dinleTakimi</span> <span class="nt">div</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nf">#dinleTakimi</span> <span class="nt">span</span><span class="p">{</span>
+    <span class="k">bottom</span><span class="o">:</span> <span class="m">-10px</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#828282</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="o">:</span> <span class="m">6px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>margin-left:20px; position:relative; top:-4px} div#dinleTakimi
-div{float:left;} div#dinleTakimi span{ position:relative; bottom:-10px;
-font:14px Arial, Helvetica, sans-serif; color:#828282;
-padding-left:6px} </p>
 <p>Burada şöyle bir şey var. Başlığın uzunluğu belli olmadığı için sadece
 logo ve takım adına float tanımı ve genişlik tanımı yaptık. Böylece
 başlık uzunluğu ne olursa olsun başlık ve logo kısmı devamlı yan yana
 duracaktır.</p>
 <p>Sekmeleri kodlarken daha önce yazdığım <a href="http://www.fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/">jquery ile sekme yapımını</a>
 anlattığım makaledeki gibi yapacağız.</p>
-<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span>
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+ <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+ <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+ <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.sekmeAlani ul#tezahuratSekme li a&#39;</span><span class="p">).</span><span class="nx">not</span><span class="p">(</span><span class="s2">&quot;div.sekmeAlani ul#tezahuratSekme li#favEkle a, div.sekmeAlani ul#tezahuratSekme li.pasif a&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+ <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">parent</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;normal&#39;</span><span class="p">).</span><span class="nx">siblings</span><span class="p">().</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">&#39;normal&#39;</span><span class="p">);</span>
+ <span class="kd">var</span> <span class="nx">mevcutSinif</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">className</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+ <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.sekmeAlani &gt; div&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">().</span><span class="nx">filter</span><span class="p">(</span><span class="s1">&#39;div.&#39;</span><span class="o">+</span><span class="nx">mevcutSinif</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+ <span class="p">});</span>
+ <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.sekmeAlani ul#tezahuratSekme li a:first&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">();</span>
+ <span class="p">});</span>
+ <span class="o">&lt;</span><span class="err">/script&gt;</span>
 </pre></div>
 
 
-<p>src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"&gt;</script>
-<script type="text/javascript"> $(document).ready(function() {
-$('div.sekmeAlani ul#tezahuratSekme li a').not("div.sekmeAlani
-ul#tezahuratSekme li#favEkle a, div.sekmeAlani ul#tezahuratSekme
-li.pasif a").click(function(){
-$(this).parent('li').addClass('normal').siblings().removeClass('normal');
-var mevcutSinif = this.className.slice(0,2); $('div.sekmeAlani &gt;
-div').hide().filter('div.'+mevcutSinif).show(); }); $('.sekmeAlani
-ul#tezahuratSekme li a:first').click(); }); </script> </p>
 <p>Buradaki tek fark favoriler kısmını sekmeli yapının dışında tutmak için.
 jquery'nin :not() fonksiyonunu kullandık. Bu fonksiyonun anlamı bu
 elementlere uygula not fonksiyonu ile belirtilen elemana uygulamadır.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sekmeAlani&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;ul</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sekmeAlani&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;tezahuratSekme&quot;</span> <span class="na">class=</span><span class="s">&quot;kapsayamamaSorunu&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;s1 normal&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span> <span class="na">class=</span><span class="s">&quot;s1 dinle&quot;</span><span class="nt">&gt;</span>Tezahürat Dinle<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;s2 pasif&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span> <span class="na">class=</span><span class="s">&quot;s2 izle&quot;</span><span class="nt">&gt;</span>Tezahürat İzle<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;favEkle&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span> <span class="na">id=</span><span class="s">&quot;favorimedenCikar&quot;</span><span class="nt">&gt;</span>Favorilerine Ekle<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sesOynatici&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/ses_oynatici.gif&quot;</span> <span class="na">width=</span><span class="s">&quot;333&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">alt=</span><span class="s">&quot;ses&quot;</span> <span class="nt">/&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;s2&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;videoOynatici&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/video_player.gif&quot;</span> <span class="na">width=</span><span class="s">&quot;320&quot;</span> <span class="na">height=</span><span class="s">&quot;260&quot;</span> <span class="na">alt=</span><span class="s">&quot;video&quot;</span> <span class="nt">/&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>id="tezahuratSekme" class="kapsayamamaSorunu"&gt; <li class="s1
-normal"><a href="javascript:void(0);" class="s1 dinle">Tezahürat
-Dinle</a></li> <li class="s2 pasif"><a href="javascript:void(0);"
-class="s2 izle">Tezahürat İzle</a></li> <li id="favEkle"><a
-href="javascript:void(0);" id="favorimedenCikar">Favorilerine
-Ekle</a></li> </ul> <div class="s1"> <div
-id="sesOynatici"><img src="static/images/ses_oynatici.gif" width="333"
-height="50" alt="ses" /></div> </div> <div class="s2"> <div
-id="videoOynatici"><img src="static/images/video_player.gif" width="320"
-height="260" alt="video" /></div> </div> </div> </p>
 <p>CSS kodlarını yazarsak;</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#tezahuratSekme</span><span class="p">{</span><span class="k">border-bottom</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#tezahuratSekme</span><span class="p">{</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">39px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">15px</span> <span class="m">45px</span> <span class="m">0</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="nc">.normal</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/normal_seme_ard.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="nc">.pasif</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/sekme_pasif.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="nc">.pasif</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">cursor</span><span class="o">:</span> <span class="k">default</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="nc">.normal</span> <span class="nt">a</span><span class="nc">.dinle</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/tez_din_ikon.gif)</span> <span class="m">15px</span> <span class="m">-220px</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="nc">.normal</span> <span class="nt">a</span><span class="nc">.izle</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/tez_din_ikon.gif)</span> <span class="m">15px</span> <span class="m">-270px</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/kapali_sekme.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span> <span class="nt">a</span><span class="nc">.dinle</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/tez_din_ikon.gif)</span> <span class="m">15px</span> <span class="m">-220px</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span> <span class="nt">a</span><span class="nc">.izle</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/tez_din_ikon.gif)</span> <span class="m">15px</span> <span class="m">-268px</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="nf">#favEkle</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">39px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="nf">#favEkle</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/tez_din_ikon.gif)</span> <span class="m">18px</span> <span class="m">-318px</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="nf">#favEkle</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/tez_din_ikon.gif)</span> <span class="m">18px</span> <span class="m">-419px</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="nf">#favEkle</span> <span class="nt">a</span><span class="nf">#favorimedenCikar</span><span class="o">,</span> <span class="nt">ul</span><span class="nf">#tezahuratSekme</span> <span class="nt">li</span><span class="nf">#favEkle</span> <span class="nt">a</span><span class="nf">#favorimedenCikar</span><span class="nd">:hover</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/tez_din_ikon.gif)</span> <span class="m">18px</span> <span class="m">-368px</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<h1>ccc; padding-left:30px} ul#tezahuratSekme li{float:left;</h1>
-<p>height:39px;} ul#tezahuratSekme li a{display:block; padding:15px 45px 0
-50px; color:#000; font-size:14px} ul#tezahuratSekme
-li.normal{background:url(../images/normal_seme_ard.gif) 0 0 no-repeat;
-} ul#tezahuratSekme li.pasif{background:url(../images/sekme_pasif.gif)
-0 0 no-repeat; } ul#tezahuratSekme li.pasif a{ cursor:default;}
-ul#tezahuratSekme li.normal a.dinle{
-background:url(../images/tez_din_ikon.gif) 15px -220px no-repeat; }
-ul#tezahuratSekme li.normal a.izle{
-background:url(../images/tez_din_ikon.gif) 15px -270px no-repeat;}
-ul#tezahuratSekme li{background:url(../images/kapali_sekme.gif) 0 0
-no-repeat;} ul#tezahuratSekme li a.dinle{
-background:url(../images/tez_din_ikon.gif) 15px -220px no-repeat;}
-ul#tezahuratSekme li a.izle{
-background:url(../images/tez_din_ikon.gif) 15px -268px no-repeat;}
-ul#tezahuratSekme li#favEkle{float:left; height:39px; background:none}
-ul#tezahuratSekme li#favEkle
-a{background:url(../images/tez_din_ikon.gif) 18px -318px no-repeat;}
-ul#tezahuratSekme li#favEkle
-a:hover{background:url(../images/tez_din_ikon.gif) 18px -419px
-no-repeat;} ul#tezahuratSekme li#favEkle a#favorimedenCikar,
-ul#tezahuratSekme li#favEkle
-a#favorimedenCikar:hover{background:url(../images/tez_din_ikon.gif)
-18px -368px no-repeat;} </p>
 <p><strong>Tezahürat Bilgi Alanı</strong></p>
 <p>Tezahürat bilgi alanında; ekleyen, kaç kez dinlendiği veya izlendiği,
 paylaşım linki ve kaç kişinin oley çektiği bilgileri yan yana yer
@@ -461,56 +659,85 @@ alıyor.</p>
 <p>Bu alanı bir katman içine alıp ardalan rengini bu katman veriyoruz.
 İçine sol ve sağ kolonlar için iki katman oluşturup içerikleri buraya
 koyuyoruz. İçerikleride bir paragraf içinde kodluyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tezahuratBilgi&quot;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tezahuratBilgi&quot;</span> <span class="na">class=</span><span class="s">&quot;kapsayamamaSorunu&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tezahuratBilgiSol&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Ekleyen: <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Hasan<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;span&gt;</span>27 Ağustos 2009&#39;da Eklendi<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Link Paylaş: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">value=</span><span class="s">&quot;htpp:www..ewrwerwerwerewrra&quot;</span> <span class="nt">/&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tezahuratBilgiSag&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>123.288 kez dinlendi<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;span&gt;</span>16.258 kişi Oley! çekti!<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&#39;oleyCek&#39;</span><span class="nt">&gt;&lt;li</span> <span class="na">class=</span><span class="s">&#39;mevcutOy&#39;</span> <span class="na">style=</span><span class="s">&quot;width:54px&quot;</span><span class="nt">&gt;</span>3/5 Yıldız<span class="nt">&lt;/li&gt;&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&#39;#&#39;</span> <span class="na">title=</span><span class="s">&#39;1 puan&#39;</span> <span class="na">class=</span><span class="s">&#39;birYildiz&#39;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&#39;#&#39;</span> <span class="na">title=</span><span class="s">&#39;2 puan&#39;</span> <span class="na">class=</span><span class="s">&#39;ikiYildiz&#39;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&#39;#&#39;</span> <span class="na">title=</span><span class="s">&#39;3 puan&#39;</span> <span class="na">class=</span><span class="s">&#39;ucYildiz&#39;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&#39;#&#39;</span> <span class="na">title=</span><span class="s">&#39;4 puan&#39;</span> <span class="na">class=</span><span class="s">&#39;dortYildiz&#39;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&#39;#&#39;</span> <span class="na">title=</span><span class="s">&#39;5puan&#39;</span> <span class="na">class=</span><span class="s">&#39;besYildiz&#39;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>class="kapsayamamaSorunu"&gt; <div id="tezahuratBilgiSol"> <p>Ekleyen:
-<a href="static">Hasan</a> <span>27 Ağustos 2009'da
-Eklendi</span></p> <p>Link Paylaş: <input type="text"
-value="htpp:www..ewrwerwerwerewrra" /></p> </div> <div
-id="tezahuratBilgiSag"> <p>123.288 kez dinlendi</p>
-<p><span>16.258 kişi Oley! çekti!</span> <ul
-class='oleyCek'><li class='mevcutOy' style="width:54px">3/5
-Yıldız</li><li><a href='#' title='1 puan'
-class='birYildiz'>1</a></li><li><a href='#' title='2 puan'
-class='ikiYildiz'>2</a></li><li><a href='#' title='3 puan'
-class='ucYildiz'>3</a></li><li><a href='#' title='4 puan'
-class='dortYildiz'>4</a></li><li><a href='#' title='5puan'
-class='besYildiz'>5</a></li></ul></p> </div> </div></p>
 <p>CSS koduda şöyle olacak;</p>
-<div class="codehilite"><pre> <span class="nf">#tezahuratBilgi</span><span class="p">{</span><span class="k">margin</span><span class="o">:</span><span class="m">1px</span> <span class="m">0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#tezahuratBilgi</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">1px</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">13px</span> <span class="m">10px</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#tezahuratBilgiSol</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">390px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#tezahuratBilgiSol</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#0c2b90</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#tezahuratBilgiSol</span> <span class="nt">p</span><span class="p">{</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#tezahuratBilgiSol</span> <span class="nt">input</span><span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#cbcbcb</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#cccccc</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#tezahuratBilgiSag</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">240px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#tezahuratBilgiSag</span> <span class="nt">p</span><span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">15px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#tezahuratBilgiSag</span> <span class="nt">p</span> <span class="nt">span</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-color:#eee; padding:13px 10px 0 10px}</p>
-<h1>tezahuratBilgiSol{float:left; width:390px} #tezahuratBilgiSol a{</h1>
-<p>color:#0c2b90} #tezahuratBilgiSol p{margin-bottom:10px}</p>
-<h1>tezahuratBilgiSol input{border:1px solid #cbcbcb; font:14px Arial,</h1>
-<p>Helvetica, sans-serif; color:#cccccc; width:200px}</p>
-<h1>tezahuratBilgiSag{float:left; width:240px} #tezahuratBilgiSag</h1>
-<p>p{margin:0 0 15px 0} #tezahuratBilgiSag p span{float:left;}</p>
 <p>Etiketler, Önce Söyle, Sonra Yorumla vb. başlıkların ikonlarını sprite
 tekniği ile resimlerini hazırlayıp başlıkların başına ardalan resmi ile
 koyuyoruz.</p>
 <p>Etiketler için padding ve ardalan rengi tanımlıyoruz. hover hallerini
 hazırlıyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#etiketler</span> <span class="nt">a</span><span class="p">{</span><span class="k">padding</span><span class="o">:</span><span class="m">2px</span> <span class="m">4px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nf">#etiketler</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#666</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">2px</span> <span class="m">4px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nf">#etiketler</span> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#666</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-color:#eee; color:#666; font-size:14px} div#etiketler
-a:hover{background-color:#666; color:#eee;} </p>
 <p><strong>Önce Söyle</strong></p>
 <p>Önce söyle başlığınıda diğer başlıklar gibi hazırlıyoruz. İçeriği
 blockquote içine koydum. Aslında bunun için de bir katman açıp
 koyabilirdik, tercih meselesi. Ardalan resmini sağ alta sabitliyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">blockquote</span><span class="nc">.tezahuratMetni</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#eee</span>
+<div class="codehilite"><pre><span class="nt">blockquote</span><span class="nc">.tezahuratMetni</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#eee</span> <span class="sx">url(../images/tezahurat_zem.gif)</span> <span class="k">right</span> <span class="k">bottom</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">font-style</span><span class="o">:</span> <span class="k">italic</span><span class="p">;</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span> <span class="m">50px</span> <span class="m">20px</span> <span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>url(../images/tezahurat_zem.gif) right bottom no-repeat; padding:20px
-50px 20px 30px; margin-bottom:1px; font-style:italic} </p>
 <p><strong>Yorum Alanı</strong></p>
 <p>Yorum alanın solda avatar'ın(küçük resim) ve sağda alt alta içeriklerin
 bulunduğu iki kolonlu bir yapıya sahip .</p>
@@ -522,31 +749,97 @@ puan kısmını bir liste şeklinde kodluyoruz.</p>
 <p>Son olarakta "Sende Yaz" kısmını kodluyoruz. Başlığı yukarıdaki
 başlıklar gibi yazıyoruz. Yorum yazma kısmına bir textarea yapıp
 genişlik, yükseklik ve kenar çizgisi tanımlarını yapıyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nc">.yorumalani</span><span class="p">{</span><span class="k">border-bottom</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nc">.yorumalani</span><span class="p">{</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#e0e0e0</span><span class="p">;</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">12px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.yAvatar</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.yorumAlaniSag</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">590px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.yorumAlaniSag</span> <span class="nt">strong</span><span class="p">{</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#a1a1a1</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#solOrtaAlan</span> <span class="nt">div</span><span class="nc">.yorumAlaniSag</span> <span class="nt">p</span><span class="p">{</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.yorumYazari</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.yorumYazari</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#2a459d</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.comment-rate</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin-left</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">75px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.comment-rate-num</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#088f02</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.yorumOyla</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin-left</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">-5px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">75px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.yorumOyla</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nc">.yorumArti</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/genel_resim.gif)</span> <span class="m">-15px</span> <span class="m">-530px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nc">.yorumEksi</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/genel_resim.gif)</span> <span class="m">0</span> <span class="m">-530px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">text-indent</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nc">.olumlu</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#088f02</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nc">.olumsuz</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#c00</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nc">.notr</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h3</span><span class="nc">.senYaz</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/tez_din_ikon.gif)</span> <span class="m">0</span> <span class="m">-168px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">15px</span> <span class="m">0</span> <span class="m">3px</span> <span class="m">32px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#solOrtaAlan</span> <span class="nt">textarea</span><span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#e1e1e1</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">642px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<h1 float:left;="float:left;" width:60px="width:60px">e0e0e0; margin-bottom:12px} div.yAvatar</h1>
-<p>div.yorumAlaniSag{float:left; width:590px} div.yorumAlaniSag
-strong{color:#a1a1a1; display:block; clear:left; margin:10px 0 5px 0}</p>
-<h1 margin-bottom:10px="margin-bottom:10px">solOrtaAlan div.yorumAlaniSag p</h1>
-<p>div.yorumYazari{float:left; font-weight:bold;} div.yorumYazari
-a{color:#2a459d} div.comment-rate{float:left; width:75px;
-margin-left:20px; position:relative;} div.comment-rate-num{float: left;
-padding-right: 5px; color:#088f02; font-weight:bold;}
-ul.yorumOyla{float:left; width:75px; margin-left:20px;
-position:relative; top:-5px;} ul.yorumOyla li{float:left;} li.yorumArti
-a{ background:url(../images/genel_resim.gif) -15px -530px no-repeat;
-display:block; text-indent:-9999px; width:16px; height:20px}
-li.yorumEksi a{ background:url(../images/genel_resim.gif) 0 -530px
-no-repeat; display:block; text-indent:-9999px; width:16px; height:20px}
-li.olumlu{color:#088f02; font-weight:bold;} li.olumsuz{color:#c00;
-font-weight:bold;} li.notr{color:#000; font-weight:bold;}
-h3.senYaz{background:url(../images/tez_din_ikon.gif) 0 -168px
-no-repeat; padding:15px 0 3px 32px} #solOrtaAlan textarea{border:1px
-solid #e1e1e1; width:642px; margin-bottom:20px; height:100px}</p>
 <p>Tezahürat Dinle/İzle sayfasınıda tamamlamış oluyoruz.</p>
-<h3>Site Genel Şablonu Sayfasının Kodlanması</h3>
+<h2>Site Genel Şablonu Sayfasının Kodlanması</h2>
 <p><img alt="Genel Şablon" src="static/images/genel_sablon_kucuk.jpg" /></p>
 <p>Site kodlarken site içerisinde genelde bir şablon sayfası oluşturulur.
 Bu sayfa site içinde olabilmesi mümkün elemanların bulunduğu bir
@@ -557,33 +850,45 @@ yapısından kopmamış oluruz.</p>
 paragraflar, tablo yapısı, resimler, listeler, vb. yapıları içerir.</p>
 <p>Fanatikmarşlar.com'un şablon sayfasına baktığımızda başlık, paragraf ve
 uyarı mesajları şeklinde oluşmaktadır.</p>
-<div class="codehilite"><pre> <span class="nf">#anaKapsul</span> <span class="nt">h1</span><span class="nc">.hata</span><span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="m">#e40000</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nf">#anaKapsul</span> <span class="nt">h1</span><span class="nc">.hata</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#e40000</span>
+<span class="p">}</span>
+
+<span class="nf">#anaKapsul</span> <span class="nt">h1</span><span class="nc">.onay</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#1f6600</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<h1 color:#1f6600="color:#1f6600">anaKapsul h1.onay</h1>
 <p>Bilgi kutusunu oluştururken yuvarlak kenarlı olduğu için, iki elamana
 ihtiyaç var. Bunun için kapsayıcı div ve içine paragrafa koyduk.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;bilgiKutusu&quot;</span><span class="nt">&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;bilgiKutusu&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Bu kullanıcı adı zaten alınmış, başka bir tane deneyin.<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p><p><strong>Bu kullanıcı adı zaten alınmış, başka bir tane deneyin.
-</strong></p> </div> </p>
 <p>CSS Kodları</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nc">.bilgiKutusu</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="m">#2d2d2d</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nc">.bilgiKutusu</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#2d2d2d</span> <span class="sx">url(../images/bilgi_kutusu.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.bilgiKutusu</span> <span class="nt">p</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/bilgi_kutusu.gif)</span> <span class="m">-650px</span> <span class="k">bottom</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.bilgiKutusu</span> <span class="nt">p</span> <span class="nt">strong</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#ffc000</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>url(../images/bilgi_kutusu.gif) 0 0 no-repeat; margin-bottom:20px;
-font:bold 14px Arial, Helvetica, sans-serif; color:#fff}
-div.bilgiKutusu p{background:url(../images/bilgi_kutusu.gif) -650px
-bottom no-repeat; padding:10px;} div.bilgiKutusu p
-strong{color:#ffc000} </p>
 <p>Alt sayfaların kodlamasını böylelikle bitirdik. Site kodlarken değişik
 tasarımlarda olsa genelde benzer yapılar olduğu için yaklaşık olarak
 kodlarımız bu şekilde olacaktır.</p>
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>Site kodlarken kodlarımı Adobe Dreamweaver ile yazıyorum. Kodlamanın bir
 çok yerinde FireBug kullanıyorum, daha doğrusu firebug'ı kapatmıyorum.
 Ayrıca test amaçlı ietester programını kullandım. Daima ie6'da test
@@ -599,8 +904,7 @@ edip yeni projelerimizde kullanmalıyız.</p>
 <p>Çok uzun süredir tasarladığım ama ancak nasip olan bir işi bitirmenin
 sevinci ile bu makalemide bitiriyorum. Daha güzel makalelerde buluşmak
 dileğiyle kendinize iyi bakın.</p>
-<p>Projede yer alan tüm dosyaları sıkıştırıp attım. <a href="http://www.fatihhayrioglu.com/dokumanlar/fm_htmlleri_son.rar">Tüm dosyaları indirmek için tıklayınız.</a></p>
-</p><p><a href=".././psdden-htmle-fanatikmarslar-com-sitesinin-kodlamasi-iii/#disqus_thread">yorum var</a>.</p>
+<p>Projede yer alan tüm dosyaları sıkıştırıp attım. <a href="http://www.fatihhayrioglu.com/dokumanlar/fm_htmlleri_son.rar">Tüm dosyaları indirmek için tıklayınız.</a></p><p><a href=".././psdden-htmle-fanatikmarslar-com-sitesinin-kodlamasi-iii/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -640,7 +944,7 @@ dileğiyle kendinize iyi bakın.</p>
 
 
 </footer><!-- /.post-info -->
-                <h3>Ana Sayfa Kodlaması</h3>
+                <h2>Ana Sayfa Kodlaması</h2>
 <p>Bir önceki makalemde sizlere kodlamaya başlamadan önceki süreci
 anlattım. Şimdi sizlerle sitenin Ana Sayfasını nasıl kodladığımı
 anlatmaya çalışacağım. Bu makaleye yazacağımı düşünerek kodlama yaparken

@@ -83,7 +83,7 @@
 
 </footer><!-- /.post-info --><p>Genel olarak kullandığım ve dikkatimi çeken jquery ipuçlarını sizlerle
 paylaşmaya devam ediyorum. <a href="http://www.fatihhayrioglu.com/jquery-ipuclari/">İpucu serisinin ilkine buradan ulaşabilirsiniz.</a></p>
-<h3>1- toggle() ile kolayca gizle/göster yapmak.</h3>
+<h2>1- toggle() ile kolayca gizle/göster yapmak.</h2>
 <p>Javascript ile en çok yaptığımız işlerden biriydi bir bağlantıya veya
 elemana tıklayınca açılan bir daha tıklayınca kapanan alanlar
 oluşturmak. jQuery bu iş için bize toggle() fonksiyonunu tanımlamış.
@@ -95,112 +95,132 @@ anlatacağım.</p>
 
 <p>Bu kadar basit bir kod ile işlem tamamdır. toggle() fonksiyonuna çeşitli
 animasyonlar ve işler ekleyebiliyoruz. Gayet kullanışlı bir özellik.</p>
-<h3>2- toggleClass() ile toogle uyguladığımız elemanlara sınıf tanımlama</h3>
+<h2>2- toggleClass() ile toogle uyguladığımız elemanlara sınıf tanımlama</h2>
 <p>Yukarıda yaptığımız uygulamaya ek olarak tetiklenen elemana bir sınıf
 tanımlamak için</p>
-<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.hidden&#39;</span><span class="p">).</span><span class="nx">toggleClass</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.hidden&#39;</span><span class="p">).</span><span class="nx">toggleClass</span><span class="p">(</span><span class="s2">&quot;acik&quot;</span><span class="p">);</span>
 </pre></div>
 
 
-<p>("acik");</p>
 <p>bu kod sayesinde mesela çok basit şekilde aç-kapa butonu yapabiliriz.</p>
-<h3>3- click() ile tetiklenen bağlantılarda ie6 sorununu gidermek</h3>
+<h2>3- click() ile tetiklenen bağlantılarda ie6 sorununu gidermek</h2>
 <p>Bir bağlantıya jquery ile erişip click() metodunu uyguladığımızda ie6
-ile sorun yaşıyoruz. [Ben bu sorun için bir çözüm bulmuştum ancak Hüseyin Mert daha iyi bir çözüm buldu.][] Ben bu çözümü burada sizlerle
+ile sorun yaşıyoruz. <a href="http://ff.im/dAPK6">Ben bu sorun için bir çözüm bulmuştum ancak Hüseyin Mert daha iyi bir çözüm buldu.</a> Ben bu çözümü burada sizlerle
 paylaşmak istedim.</p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span> 
+    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span> 
+    <span class="c1">// yapılacaklar </span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>event.preventDefault(); // yapılacaklar }); </p>
 <p>Böylece sorunu aşmış oluyoruz. Hüseyin Mert'e teşekkürler tekrar.</p>
-<h3>4 - Metot Zincirleme özelliği ile daha kısa kodlar üretmek</h3>
+<h2>4 - Metot Zincirleme özelliği ile daha kısa kodlar üretmek</h2>
 <p>Bir çok metodu ard arda aynı elemana yazmaktansa zincirleme kullanabilme
 özelliği sunuyor bize jQuery.</p>
-<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.ilkParagraf&#39;</span><span class="p">).</span><span class="nx">css</span> <span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.ilkParagraf&#39;</span><span class="p">).</span><span class="nx">css</span> <span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="s1">&#39;#ff0000&#39;</span><span class="p">).</span><span class="nx">text</span> <span class="p">(</span><span class="s1">&#39;Giriş&#39;</span><span class="p">).</span><span class="nx">addClass</span> <span class="p">(</span><span class="s1">&#39;yazi&#39;</span><span class="p">).</span><span class="nx">fadeTo</span> <span class="p">(</span><span class="mi">1000</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
 </pre></div>
 
 
-<p>'#ff0000').text ('Giriş').addClass ('yazi').fadeTo (1000,
-1);</p>
 <p>Yukarıdaki örnekte görüldüğü gibi ard arda metotları kullanabiliriz.
 Ancak çok fazla kullanmanın performansı etkilediğini unutmadan bu
 özelliği kullanalım.</p>
-<h3>5- Kontrol kutularının(checkbox) kontrolü</h3>
+<h2>5- Kontrol kutularının(checkbox) kontrolü</h2>
 <p>jquery ile kontrol kutularını kontrol etmenin bir kaç yolu var</p>
-<div class="codehilite"><pre> <span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#deneme:checked&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">()</span> <span class="o">!=</span>
+<div class="codehilite"><pre> <span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#deneme:checked&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">()</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span> 
+    <span class="c1">// işaretli ise bunu yap </span>
+<span class="p">}</span> 
+<span class="c1">//veya</span>
+
+<span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#deneme:checked&#39;</span><span class="p">).</span><span class="nx">length</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> 
+    <span class="c1">// işaretli ise bunu yap </span>
+<span class="p">}</span>
+<span class="c1">//veya</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;input[name=deneme]&#39;</span><span class="p">).</span><span class="nx">is</span><span class="p">(</span><span class="s1">&#39;:checked&#39;</span><span class="p">)</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;input[name=deneme]&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;checked&#39;</span><span class="p">)</span> <span class="c1">// işaretli veya degil</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;input[name=deneme]&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;checked&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 </pre></div>
 
 
-<p>null) { // işaretli ise bunu yap } //veya
-if($('#deneme:checked').length != 0) { // işaretli ise bunu yap }
-//veya $('input[name=deneme]').is(':checked')
-$('input[name=deneme]').attr('checked') // işaretli veya degil
-$('input[name=deneme]').attr('checked', true); </p>
-<h3>6 - Arama metinlerini değiştirmek</h3>
+<h2>6 - Arama metinlerini değiştirmek</h2>
 <p>Arama kutuları içine açıklayıcı metinler yazarız. "Anahtar Kelime",
 "Arama" vb. gibi. bu metinleri yazarız, ancak kullanıcı bu alana
 odaklandığında bu metni kaldırmalıyız ve kullanıcı bir şey yazmadan
 çıkarsa o zamanda genel yazdığımız metni geri getirmeliyiz.</p>
-<div class="codehilite"><pre> <span class="kd">var</span> <span class="nx">aramaKutusu</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#aramaAlani&quot;</span><span class="p">);</span>
+<div class="codehilite"><pre><span class="kd">var</span> <span class="nx">aramaKutusu</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#aramaAlani&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">aramaKutusuBasDeg</span> <span class="o">=</span> <span class="s2">&quot;Aranacak Kelime&quot;</span><span class="p">;</span> 
+<span class="nx">aramaKutusu</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="nx">aramaKutusuBasDeg</span><span class="p">);</span> 
+<span class="nx">aramaKutusu</span><span class="p">.</span><span class="nx">focus</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">jQuery</span><span class="p">.</span><span class="nx">trim</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">))</span> <span class="o">==</span> <span class="nx">aramaKutusuBasDeg</span><span class="p">)</span>
+    <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">);</span> 
+<span class="p">});</span>
+
+<span class="nx">aramaKutusu</span><span class="p">.</span><span class="nx">blur</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">jQuery</span><span class="p">.</span><span class="nx">trim</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">))</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> 
+    <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="nx">aramaKutusuBasDeg</span><span class="p">);</span> 
+<span class="p">})</span>
 </pre></div>
 
 
-<p>var aramaKutusuBasDeg = "Aranacak Kelime"; aramaKutusu.attr("value",
-aramaKutusuBasDeg); aramaKutusu.focus(function(){
-if(jQuery.trim($(this).attr("value")) == aramaKutusuBasDeg)
-$(this).attr("value", ""); }); aramaKutusu.blur(function(){
-if(jQuery.trim($(this).attr("value")) == "") $(this).attr("value",
-aramaKutusuBasDeg); }) </p>
 <p><strong>Güncelleme:</strong> Bu kullanımın daha basit bir şekli var. yedincisenol'un
 yazdığı kod daha basit ve kullanışlı.</p>
-<div class="codehilite"><pre> <span class="kd">function</span> <span class="nx">doldur</span><span class="p">(</span><span class="nx">o</span><span class="p">){</span> <span class="k">if</span>
+<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">doldur</span><span class="p">(</span><span class="nx">o</span><span class="p">){</span> 
+    <span class="k">if</span><span class="p">(</span><span class="nx">o</span><span class="p">.</span><span class="nx">value</span><span class="o">==</span><span class="nx">o</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">){</span><span class="nx">o</span><span class="p">.</span><span class="nx">value</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">;}</span> 
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">o</span><span class="p">.</span><span class="nx">value</span><span class="o">==</span><span class="s2">&quot;&quot;</span><span class="p">){</span><span class="nx">o</span><span class="p">.</span><span class="nx">value</span><span class="o">=</span><span class="nx">o</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">;}</span>
+    <span class="nx">o</span><span class="p">.</span><span class="nx">onblur</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span><span class="nx">doldur</span><span class="p">(</span><span class="nx">o</span><span class="p">)}}</span>
 </pre></div>
 
 
-<p>(o.value==o.defaultValue){o.value="";} else
-if(o.value==""){o.value=o.defaultValue;}o.onblur=function(){doldur(o)}}
- ve kodu sonra çağırmak için (jquery ile) [sourcecode language="javascript"] $("#inputId").focus(function(){ doldur(this)
-}); </p>
+<p>ve kodu sonra çağırmak için (jquery ile) </p>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#inputId&quot;</span><span class="p">).</span><span class="nx">focus</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span> 
+    <span class="nx">doldur</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+<span class="p">});</span>
+</pre></div>
+
+
 <p>veya html içinden</p>
-<div class="codehilite"><pre> <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;adınız&quot;</span> <span class="na">value=</span><span class="s">&quot;Adınızı</span>
+<div class="codehilite"><pre><span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;adınız&quot;</span> <span class="na">value=</span><span class="s">&quot;Adınızı girini&quot;</span> <span class="na">onfocus=</span><span class="s">&quot;doldur(this)&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 
 
-<p>girini" onfocus="doldur(this)"/&gt; </p>
 <p>Kod için yedincisenol'a teşekkürler</p>
-<h3>7- Zebra tablo yapmak</h3>
+<h2>7- Zebra tablo yapmak</h2>
 <p>Tablo okunabilirliğini arttırmak için bir satır farklı bir renk veya
 stil tanımlarız. Bunu javascript ile uzun yoldan yaparken jquery ile tek
 satır kod ile yapabiliyoruz</p>
-<p>[sourcecode language="javascript"]$("tr:nth-child(odd)").addClass("farkliSatir");</p>
-<h3>8 - Çok tekrarlanan seçicileri bir değişkene tanımlamak</h3>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.ilkParagraf&#39;</span><span class="p">).</span><span class="nx">css</span> <span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;tr:nth-child(odd)&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;farkliSatir&quot;</span><span class="p">);</span>
 </pre></div>
 
 
-<p>'#000000'); $('p.ilkParagraf').text ('Giriş');
-$('p.ilkParagraf').addClass ('yazi'); $('p.ilkParagraf').fadeTo (1000,
-1); </p>
+<h2>8 - Çok tekrarlanan seçicileri bir değişkene tanımlamak</h2>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.ilkParagraf&#39;</span><span class="p">).</span><span class="nx">css</span> <span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span><span class="s1">&#39;#000000&#39;</span><span class="p">);</span> 
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.ilkParagraf&#39;</span><span class="p">).</span><span class="nx">text</span> <span class="p">(</span><span class="s1">&#39;Giriş&#39;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.ilkParagraf&#39;</span><span class="p">).</span><span class="nx">addClass</span> <span class="p">(</span><span class="s1">&#39;yazi&#39;</span><span class="p">);</span> 
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.ilkParagraf&#39;</span><span class="p">).</span><span class="nx">fadeTo</span> <span class="p">(</span><span class="mi">1000</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</pre></div>
+
+
 <p>Yukarıdaki gibi bir kullanımda çok fazla tekrarlayan bir seçiciye bir
 değişkene atayıp daha optimum bir kod elde edebiliriz.</p>
-<div class="codehilite"><pre> <span class="kd">var</span> <span class="nx">$p</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.ilkParagraf&#39;</span><span class="p">);</span>
+<div class="codehilite"><pre><span class="kd">var</span> <span class="nx">$p</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p.ilkParagraf&#39;</span><span class="p">);</span>
+<span class="nx">$p</span><span class="p">.</span><span class="nx">css</span> <span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="s1">&#39;#000000&#39;</span><span class="p">);</span> 
+<span class="nx">$p</span><span class="p">.</span><span class="nx">text</span> <span class="p">(</span><span class="s1">&#39;Giriş&#39;</span><span class="p">);</span> 
+<span class="nx">$p</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;yazi&#39;</span><span class="p">);</span> 
+<span class="nx">$p</span><span class="p">.</span><span class="nx">fadeTo</span> <span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 </pre></div>
 
 
-<p>$p.css ('color', '#000000'); $p.text ('Giriş'); $p.addClass
-('yazi'); $p.fadeTo (1000, 1); </p>
 <p>Bu kullanım ile eleman ilk başta bir değişkene atanıp ön belleğe
 alınıyor ve daha hızlı erişiliyor.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
-<li>[http://ff.im/dAPK6][Ben bu sorun için bir çözüm bulmuştum ancak     Hüseyin Mert daha iyi bir çözüm buldu.]</li>
+<li><a href="http://ff.im/dAPK6">http://ff.im/dAPK6</a></li>
 <li><a href="http://www.myinkblog.com/2009/08/04/10-tips-for-writing-better-jquery-code/">http://www.myinkblog.com/2009/08/04/10-tips-for-writing-better-jquery-code/</a></li>
 <li><a href="http://drupal.org/node/116548">http://drupal.org/node/116548</a></li>
 <li><a href="http://snipplr.com/view/25148/jquery-search-text-replace/">http://snipplr.com/view/25148/jquery-search-text-replace/</a></li>
 <li><a href="http://docs.google.com/Doc?docid=0AXwjxxctLLc5ZGZwYnQ3Z2RfNTBkZjZ3MnJmOA&amp;hl=tr">http://docs.google.com/Doc?docid=0AXwjxxctLLc5ZGZwYnQ3Z2RfNTBkZjZ3MnJmOA&amp;hl=tr</a></li>
-</ul>
-</p><p><a href=".././jquery-ipuclari-2/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././jquery-ipuclari-2/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     
