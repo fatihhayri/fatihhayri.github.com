@@ -93,17 +93,23 @@ efekti vermeye çalıştığımda karşılaştığım bir sorun. Daha kolay
 anlaşılmasıması ve benim içinde anlatması kolay olduğu için
 kaynaklardaki bir örneği vereceğim burada size ben.</p>
 <p>HTML kodu</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div&gt;</span> <span class="nt">&lt;a</span>
+<div class="codehilite"><pre><span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>foo<span class="nt">&lt;span&gt;</span>bar<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>href="#"&gt;foo<span>bar</span></a> </div> </p>
 <p>CSS Kodu</p>
-<div class="codehilite"><pre> <span class="nt">span</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="p">}</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="nt">span</span> <span class="p">{</span>
+<div class="codehilite"><pre><span class="nt">span</span> <span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:hover</span> <span class="nt">span</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>display: inline; } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/sub_hover/ie_sub_hover.html">tıklayınız.</a></p>
 <p>Burada yapılan çok basit bir iştir. Bağlantı üzerine gelince span
 içindeki bar yazısını gösteriyoruz. Ancak ie6'da bu sayfaya baktığımızda
@@ -115,18 +121,27 @@ sorunu ie7 çözmüş görünüşe göre.</p>
 <p><a href="http://friendlybit.com" title="friendlybit.com">friendlybit.com</a> sitesindeki çözüm yolu şöyle; <strong>a:hover</strong> elemanına
 <strong>padding-top:0</strong> değeri atayıp sonrada <strong>a:hover span</strong> seçicisinede
 <strong>padding-top:0</strong> değeri atayınca oluyor.</p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="p">}</span> <span class="nt">span</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span> 
+    <span class="k">padding-top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">span</span> <span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:hover</span> <span class="nt">span</span> <span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span> 
+    <span class="k">padding-top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>none; } a:hover span { display: inline; padding-top:0; } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/sub_hover/ie_sub_hover_coz.html">tıklayınız.</a></p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://haslayout.net/css/Sub-Hover-Bug" title="http://haslayout.net/css/Sub-Hover-Bug">http://haslayout.net/css/Sub-Hover-Bug</a></li>
 <li><a href="http://friendlybit.com/css/ie6-bug-ignored-selector-hover-bug/" title="http://friendlybit.com/css/ie6-bug-ignored-selector-hover-bug/">http://friendlybit.com/css/ie6-bug-ignored-selector-hover-bug/</a></li>
-</ul>
-</p><p><a href=".././ie6-sorunu-baglanti-ici-elemanlarda-hover-sorunu/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././ie6-sorunu-baglanti-ici-elemanlarda-hover-sorunu/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

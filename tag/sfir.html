@@ -81,7 +81,8 @@
 <p>etiketler: <a href=".././tag/ipuclari.html">ipuçları</a><a href=".././tag/metin-yerine-resim-koyma.html">metin yerine resim koyma</a><a href=".././tag/sfir.html">sFIR</a></p>
 
 
-</footer><!-- /.post-info --><p>[<img alt="" src="static/images/sifr1.gif" title="sifr" />][]Bu makaleyi çok önce yazmayı planlıyordum, ancak üzerinden
+</footer><!-- /.post-info --><p><img alt="" src="static/images/sifr1.gif" title="sifr" /></p>
+<p>Bu makaleyi çok önce yazmayı planlıyordum, ancak üzerinden
 zaman geçmesine rağmen hala sIFR kullanılan bir yöntem olduğu için
 yinede yazıyı yazmaya karar verdim. Her nekadar font-face kull anımı
 bize bu tip alternatiflerden alıkoymak için çıktı ise de <a href="http://www.fatihhayrioglu.com/webde-yazi-tipi-sorunlari-ve-google-font-api/" title="daha öncede bahsettiğimiz gibi">daha öncede bahsettiğimiz gibi</a> tasarımdaki anti-aliasing özelliğini sağlayamıyor
@@ -114,46 +115,56 @@ için kullanmamız içindir, yayına atarken bu dosyayı eklemeye gerek yok.</p>
 görünmeyecektir, sadece web sunucusu kurulu makinelerde çalışacaktır. Bu
 daha önceden meydana gelen bazı sorunları gidermek için eklenmiş bir
 özelliktir.</p>
-<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span>
+<div class="codehilite"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style/sIFR-screen.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media=</span><span class="s">&quot;screen&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style/sIFR-print.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media=</span><span class="s">&quot;print&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;js/sifr.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;js/sifr-config.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
 </pre></div>
 
 
-<p>href="style/sIFR-screen.css" type="text/css" media="screen" /&gt; <link
-rel="stylesheet" href="static/style/sIFR-print.css" type="text/css"
-media="print" /> <script type="text/javascript"
-src="static/js/sifr.js"></script> <script type="text/javascript"
-src="static/js/sifr-config.js"></script> </p>
 <p>Yukarıdaki bir ekleme ile sIFR harici dosyalarını sayfamıza eklemeliyiz.</p>
 <p>Bu dosyaları yerlerine koyup sayfamıza kodu ekledikten sonra yapacağımız
 ilk şey <strong>sifr-config.js</strong> dosyasını açıp swf dosyamızın yerini doğru
 bir şekilde eklemek olmalıdır.</p>
-<div class="codehilite"><pre> <span class="kd">var</span> <span class="nx">yazi_tipi</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">src</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="kd">var</span> <span class="nx">yazi_tipi</span> <span class="o">=</span> <span class="p">{</span>
+     <span class="nx">src</span><span class="o">:</span> <span class="s1">&#39;/dosya_yolu/yazi_tipi.swf&#39;</span>
+<span class="p">};</span>
+<span class="nx">sIFR</span><span class="p">.</span><span class="nx">activate</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">);</span>
+<span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span>
+       <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;h2&#39;</span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>'/dosya_yolu/yazi_tipi.swf' }; sIFR.activate(yazi_tipi);
-sIFR.replace(yazi_tipi, { selector: 'h2' }); </p>
 <p>Şeklinde örnek aldığımız kodlardan <strong>yazi_tipi</strong> adı geçen yerlere
 kendi dosya ismimizi yazmalıyız.</p>
 <p><strong>sIFR metnine Stil Vermek</strong></p>
 <p>sIFR ile eklediğimiz metinlere css kodları ile özellik tanımı
 yapabiliriz. Alışık olduğumuz CSS özellik tanımlarını kullanma olanağı
 vererek bize çok büyük avantaj sağlıyor.</p>
-<div class="codehilite"><pre> <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span> <span class="nx">selector</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;h2&#39;</span><span class="p">,</span>
+      <span class="nx">css</span><span class="o">:</span> <span class="p">[</span>
+      <span class="s1">&#39;.sIFR-root { font-size:36px; font-weight:bold; color:#ff0000; letter-spacing: -1.5}&#39;</span>
+      <span class="p">]</span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>'h2', css: [ '.sIFR-root { font-size:36px; font-weight:bold; color:#ff0000; letter-spacing: -1.5}' ] }); </p>
 <p>Örnek olması için yukarıda kodları yazdım, ancak bu kısma istediğimiz
 kodları ekleyebiliriz. letter-spacing tanımı ile harfler arası mesafeyi
 ayarlayabiliriz. Değeri verirken birimini yazmıyoruz. Benzer şekilde bir
 çok özellik ekleyebiliriz.</p>
 <p><strong>Satır yüksekliğini ayarlamak</strong></p>
-<div class="codehilite"><pre> <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span> <span class="nx">selector</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;h2&#39;</span><span class="p">,</span>
+      <span class="nx">css</span><span class="o">:</span> <span class="p">[</span>
+      <span class="s1">&#39;.sIFR-root { font-size:36px; font-weight:bold; leading: 1; letter-spacing: -1.5}&#39;</span>
+      <span class="p">]</span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>'h2', css: [ '.sIFR-root { font-size:36px; font-weight:bold; leading: 1; letter-spacing: -1.5}' ] }); </p>
 <p><strong>leading: 1</strong> tanımı satır yüksekliğini(line-height tanımı yerine
 kullanılır) ayarlamak için kullanılır. Değer verilirken birim
 kullanılmaz. Eksi değer alabilir.</p>
@@ -161,64 +172,87 @@ kullanılmaz. Eksi değer alabilir.</p>
 <p>sIFR uygulana metinlere bağlantı(<a>) ekleyebiliriz, bağlantı
 eklediğimizde bunun için birde stil tanımı yapmalıyız.</p>
 <p>HTML kodu</p>
-<div class="codehilite"><pre> <span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Başlık<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;h2&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Başlık<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/h2&gt;</span>
 </pre></div>
 
 
 <p>sifr-config.js dosyasında</p>
-<div class="codehilite"><pre> <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span> <span class="nx">selector</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;h2&#39;</span>
+  <span class="p">,</span><span class="nx">css</span><span class="o">:</span> <span class="p">[</span>
+    <span class="s1">&#39;.sIFR-root { text-align: center; font-weight: bold; }&#39;</span>
+    <span class="p">,</span><span class="s1">&#39;a { text-decoration: none; }&#39;</span>
+    <span class="p">,</span><span class="s1">&#39;a:link { color: #000000; }&#39;</span>
+    <span class="p">,</span><span class="s1">&#39;a:hover { color: #CCCCCC; }&#39;</span>
+  <span class="p">]</span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>'h2' ,css: [ '.sIFR-root { text-align: center; font-weight: bold; }' ,'a
-{ text-decoration: none; }' ,'a:link { color: #000000; }' ,'a:hover {
-color: #CCCCCC; }' ] }); </p>
 <p>Yukarıdaki tanımlama ile eklediğimiz bağlantının farklı durumları içinde
 tanım yapabiliyoruz. </p>
 <p>Benzer şekilde sIFR uyguladığımız eleman içindeki elemanlarada stil
 ekleyebiliriz. Örneğin</p>
-<div class="codehilite"><pre> <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span> <span class="nx">selector</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span>
+       <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;h2&#39;</span><span class="p">,</span>
+       <span class="nx">css</span><span class="o">:</span> <span class="p">[</span>
+       <span class="s1">&#39;.sIFR-root { font-size:24px; font-weight:normal; color:#9f0000; }&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;em { font-style:italic; }&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;strong { font-weight:bold; color:#333333; }&#39;</span>
+       <span class="p">]</span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>'h2', css: [ '.sIFR-root { font-size:24px; font-weight:normal;
-color:#9f0000; }', 'em { font-style:italic; }', 'strong {
-font-weight:bold; color:#333333; }' ] }); </p>
 <p>Böylece sIFR içindeki her elemana farklı renk tanımı yapabiliriz.</p>
 <p><strong>Saydam(transparent) Özelliği Vermek</strong></p>
 <p>sIFR ile eklediğimiz metnin altında kalan alanlar nedeni ile bazen
 saydam olarak eklemek isteriz.  Yapmamız gereken çok basittir. Bir satır
 kod ile ardalanı saydam yapabiliriz.</p>
-<div class="codehilite"><pre> <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span> <span class="nx">selector</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">yazi_tipi</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;h2&#39;</span><span class="p">,</span>
+      <span class="nx">css</span><span class="o">:</span> <span class="p">[</span>
+      <span class="s1">&#39;.sIFR-root { font-size:36px; font-weight:bold; color:#ff0000; }&#39;</span>
+      <span class="p">],</span>
+<span class="nx">wmode</span><span class="o">:</span> <span class="s1">&#39;transparent&#39;</span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>'h2', css: [ '.sIFR-root { font-size:36px; font-weight:bold; color:#ff0000; }' ], wmode: 'transparent' }); </p>
 <p><strong>wmode: 'transparent'</strong>eklemesi işimizi görecektir.</p>
 <p><strong>Dinamik Oluşturulan İçerikteki Metinlere sFIR Uygulamak</strong></p>
 <p>Örneğin sekmeli bir içeriğin içindeki başlıklara sIFR uyguladığımızda
 sFIR sayfa yüklendiğinde uygulandığından diğer sekmelerdeki metinlere
 uygulanmayacaktır. Diğer sekmelerdeki metinlerede uygulamak için her
 sekme için uygulanan sFIR fonksiyonu çağırmalıyız.</p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="nx">tabs</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="c1">// her</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="nx">tabs</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// her sekme icin uygulana tanimlar</span>
+    <span class="c1">//diger eylemler</span>
+
+    <span class="c1">// uygulana sFIR fonksiyonunun tetikliyoruz.</span>
+    <span class="nx">sIFR</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">baslik</span><span class="p">,</span> <span class="p">{</span>
+        <span class="nx">selector</span><span class="o">:</span> <span class="s1">&#39;h1&#39;</span>
+        <span class="p">,</span><span class="nx">wmode</span><span class="o">:</span> <span class="s1">&#39;transparent&#39;</span>
+        <span class="p">,</span><span class="nx">css</span><span class="o">:</span> <span class="p">[</span>
+          <span class="s1">&#39;.sIFR-root { margin:0; color: #009200; font-size:20px;}&#39;</span>
+        <span class="p">]</span>
+    <span class="p">});</span>
+
+<span class="p">});</span>
 </pre></div>
 
 
-<p>sekme icin uygulana tanimlar //diger eylemler // uygulana sFIR
-fonksiyonunun tetikliyoruz. sIFR.replace(baslik, { selector: 'h1'
-,wmode: 'transparent' ,css: [ '.sIFR-root { margin:0; color: #009200; font-size:20px;}' ] }); }); </p>
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>Birçok projemde kullandım sFIR metodunu. Gördüklerim buraya
 yazmayaçalıştım. Eğer sizinde eklemek istediğiniz ipuçları varsa yorum
 kısmınaeklerseniz güzel bir dokümantasyon oluşturmuş oluruz.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/" title="http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/">http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/</a></li>
 <li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/" title="http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/">http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/</a></li>
-</ul>
-</p>
-
-<p>[<img alt="" src="static/images/sifr1.gif" title="sifr" />]: /images/sifr1.gif</p><p><a href=".././sifr-3-kullanimi-ve-ipuclari/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././sifr-3-kullanimi-ve-ipuclari/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

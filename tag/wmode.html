@@ -114,7 +114,7 @@ Dinamik kod diye iki kısma ayırmışlar kodu.</p>
 <strong>expressInstall.swf</strong>, <strong>swfobject.js</strong>, <strong>index.html</strong>,
 <strong>index_dynamic.html</strong>, <strong>test.swf</strong> dosyaları yer alır. Ayrııca src
 klasörüde yer alır.</p>
-<h3>Statik Kod ile Flash Dosyalarını Eklemek</h3>
+<h2>Statik Kod ile Flash Dosyalarını Eklemek</h2>
 <p>SWFObject'in önceki sürümlerinde olmayan bu metot yeni sürüm ile
 birlikte gelmiştir. Bu kod eski(ie eolas lisans sorunu öncesi) statik
 metoda benzer bir yapıya sahiptir. Bu kod sayesinde javascript desteği
@@ -126,35 +126,47 @@ hatayı düzeltti ise de hala bu güncellemeyi yapmayan kullanıcılar
 vardır.</p>
 <p>Indirdigimiz dosya içerisinden çikan index.html sayfasi statik bir flash
 eklemeye örnektir. Kodlarini incelersek</p>
-<p>[sourcecode language="html" highlight="6,7,8,9,13,14,15,16,17,18,19,20,21,22,23,24,25,26"]
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> <head>
-<title>SWFObject 2 static publishing example page</title> <meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<script type="text/javascript" src="static/swfobject.js"></script> <script
-type="text/javascript"> swfobject.registerObject("myId", "9.0.0",
-"expressInstall.swf"); </script> </head> <body> <div> <object
-id="myId" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
-width="300" height="120"> <param name="movie" value="test.swf" />
-<!--[if !IE]>--> <object type="application/x-shockwave-flash"
-data="test.swf" width="300" height="120"> <!--<![endif]--> <div>
-<h1>Alternatif içerik</h1> <p>Kullanıcının bilgisayarında flash
-yüklü değilse burayı gösterecek<a
-href="http://www.adobe.com/go/getflashplayer"><img
-src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
-alt="Get Adobe Flash player" /></a></p> </div> <!--[if !IE]>--> </object> <!--<![endif]--> </object> </div>
-</body> </html> </p>
-<p>Kodu iki kısıma ayıralım. İlk head içerisindeki javascript kısmı ve body
-içerisindeki html kısmı</p>
-<p><strong>head içerisindeki javascript kısmı</strong></p>
-<div class="codehilite"><pre> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span>
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>SWFObject 2 static publishing example page<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=iso-8859-1&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;swfobject.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span> <span class="nx">swfobject</span><span class="p">.</span><span class="nx">registerObject</span><span class="p">(</span><span class="s2">&quot;myId&quot;</span><span class="p">,</span> <span class="s2">&quot;9.0.0&quot;</span><span class="p">,</span> <span class="s2">&quot;expressInstall.swf&quot;</span><span class="p">);</span> <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;object</span> <span class="na">id=</span><span class="s">&quot;myId&quot;</span> <span class="na">classid=</span><span class="s">&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;</span> <span class="na">width=</span><span class="s">&quot;300&quot;</span> <span class="na">height=</span><span class="s">&quot;120&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;movie&quot;</span> <span class="na">value=</span><span class="s">&quot;test.swf&quot;</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!--[if !IE]&gt;--&gt;</span>
+    <span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">&quot;application/x-shockwave-flash&quot;</span> <span class="na">data=</span><span class="s">&quot;test.swf&quot;</span> <span class="na">width=</span><span class="s">&quot;300&quot;</span> <span class="na">height=</span><span class="s">&quot;120&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!--&lt;![endif]--&gt;</span>
+<span class="nt">&lt;div&gt;</span>
+<span class="nt">&lt;h1&gt;</span>Alternatif içerik<span class="nt">&lt;/h1&gt;</span> 
+<span class="nt">&lt;p&gt;</span>Kullanıcının bilgisayarında flash yüklü değilse burayı gösterecek
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.adobe.com/go/getflashplayer&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif&quot;</span> <span class="na">alt=</span><span class="s">&quot;Get Adobe Flash player&quot;</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!--[if !IE]&gt;--&gt;</span>
+<span class="nt">&lt;/object&gt;</span>
+<span class="c">&lt;!--&lt;![endif]--&gt;</span>
+<span class="nt">&lt;/object&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>src="swfobject.js"&gt;</script> <script type="text/javascript">
-swfobject.registerObject("myId", "9.0.0", "expressInstall.swf");
-</script> </p>
+<p>Kodu iki kısıma ayıralım. İlk head içerisindeki javascript kısmı ve body
+içerisindeki html kısmı</p>
+<p><strong>head içerisindeki javascript kısmı</strong></p>
+<div class="codehilite"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;swfobject.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span> 
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+    <span class="nx">swfobject</span><span class="p">.</span><span class="nx">registerObject</span><span class="p">(</span><span class="s2">&quot;myId&quot;</span><span class="p">,</span> <span class="s2">&quot;9.0.0&quot;</span><span class="p">,</span> <span class="s2">&quot;expressInstall.swf&quot;</span><span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+
 <p>registerObject fonksiyonuna html içindeki elemanın id'sini(myId), flash
 sürümünü ve flash olmayanlar için yüklemeye yönlendiren dosyanın
 adı(expressInstall.swf)</p>
@@ -170,7 +182,7 @@ yorumlanması için ie yorum kodları yer alır.</p>
 <p>Diğer atamalar sabittir. Ayrıca ek özellikler eklemek istediğimizde(örn:
 flashvars, transparent vd.) <param> etiketi ile bunları eklemeliyiz.
 Ayrıntılı bilgi için <a href="http://code.google.com/p/swfobject/wiki/documentation">tıklayınız</a></p>
-<h3>Dinamik Kod ile Flash Dosyaları Eklemek</h3>
+<h2>Dinamik Kod ile Flash Dosyaları Eklemek</h2>
 <p>Dinamik yöntem ile kod ekleme yöntemi swfobject'in eski sürümleri ile
 aynıdır. Bu yöntem daha basit uygulanabilirliği vardır. Ayrica dinamik
 olarak eklendiği için javacscript ve ajax ile müdahale imkanı daha
@@ -181,28 +193,27 @@ sorunu olmayacaktır.</p>
 örneğini içerir.</p>
 <p>Bu kodumuzda head içindeki ve body içindeki kısımları ile ikiye ayrılır.</p>
 <p><strong>body içerisindeki kısmı</strong></p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;myContent&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;h1&gt;</span>Alternatif
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;myContent&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Alternatif içerik<span class="nt">&lt;/h1&gt;</span> 
+    <span class="nt">&lt;p&gt;</span>Kullanıcının bilgisayarında flash yüklü değilse burayı gösterecek <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.adobe.com/go/getflashplayer&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif&quot;</span> <span class="na">alt=</span><span class="s">&quot;Get Adobe Flash player&quot;</span> <span class="nt">/&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>içerik</h1> <p>Kullanıcının bilgisayarında flash yüklü değilse
-burayı gösterecek <a
-href="http://www.adobe.com/go/getflashplayer"><img
-src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
-alt="Get Adobe Flash player" /></a></p> </div> </p>
 <p>Dinamik kodlama ile flash(swf) dosyalarının eklenme mantığı şöyledir;
 bir eleman oluşturulur ve bu elemana dinamik olarak özellikleri atanır
 ve sayfa içerisindeki id tanımlı alan ile bu içerik yer değiştirilir. Bu
 şöyle bir avantaj sağlıyor bize eğer flash yok ise bu eleman içerisine
 yazdığımız içeriği kullanıcı görüyor, flash var ise de flash görünüyor.</p>
 <p><strong>head içindeki kısımları</strong></p>
-<div class="codehilite"><pre> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span>
+<div class="codehilite"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;swfobject.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+    <span class="nx">swfobject</span><span class="p">.</span><span class="nx">embedSWF</span><span class="p">(</span><span class="s2">&quot;test.swf&quot;</span><span class="p">,</span> <span class="s2">&quot;myContent&quot;</span><span class="p">,</span> <span class="s2">&quot;300&quot;</span><span class="p">,</span> <span class="s2">&quot;120&quot;</span><span class="p">,</span> <span class="s2">&quot;9.0.0&quot;</span><span class="p">,</span> <span class="s2">&quot;expressInstall.swf&quot;</span><span class="p">);</span> 
+<span class="nt">&lt;/script&gt;</span>
 </pre></div>
 
 
-<p>src="swfobject.js"&gt;</script> <script type="text/javascript">
-swfobject.embedSWF("test.swf", "myContent", "300", "120", "9.0.0",
-"expressInstall.swf"); </script> </p>
 <p>swfobject.js dosyasını ekliyoruz. Sonrada html içerisine ekleyeceğimiz
 swf dosyasının bilgilerini giriyoruz. Sırası ile incelersek</p>
 <ul>
@@ -218,37 +229,38 @@ swf dosyasının bilgilerini giriyoruz. Sırası ile incelersek</p>
 <p>Dinamik yöntemin avantajlarını sayarken kolay kullanımı olduğunu
 söylemiştik. Mesela yeni parametre eklerken kodumuzu söyle değiştirmemiz
 yeterli olacaktır</p>
-<div class="codehilite"><pre> <span class="kd">var</span> <span class="nx">flashvars</span> <span class="o">=</span> <span class="p">{};</span> <span class="nx">flashvars</span><span class="p">.</span><span class="nx">xmlPath</span>
+<div class="codehilite"><pre><span class="kd">var</span> <span class="nx">flashvars</span> <span class="o">=</span> <span class="p">{};</span> 
+<span class="nx">flashvars</span><span class="p">.</span><span class="nx">xmlPath</span> <span class="o">=</span> <span class="s2">&quot;xml/data.xml&quot;</span><span class="p">;</span> 
+<span class="kd">var</span> <span class="nx">params</span> <span class="o">=</span> <span class="p">{};</span> 
+<span class="nx">params</span><span class="p">.</span><span class="nx">menu</span> <span class="o">=</span> <span class="s2">&quot;false&quot;</span><span class="p">;</span> 
+<span class="nx">params</span><span class="p">.</span><span class="nx">wmode</span> <span class="o">=</span> <span class="s2">&quot;opaque&quot;</span><span class="p">;</span> 
+<span class="kd">var</span> <span class="nx">attributes</span> <span class="o">=</span> <span class="p">{};</span> 
+<span class="nx">attributes</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="s2">&quot;myDynamicContent&quot;</span><span class="p">;</span> 
+<span class="nx">attributes</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;myDynamicContent&quot;</span><span class="p">;</span> 
+<span class="nx">swfobject</span><span class="p">.</span><span class="nx">embedSWF</span><span class="p">(</span><span class="s2">&quot;test.swf&quot;</span><span class="p">,</span> <span class="s2">&quot;myAlternativeContent&quot;</span><span class="p">,</span> <span class="s2">&quot;300&quot;</span><span class="p">,</span> <span class="s2">&quot;120&quot;</span><span class="p">,</span> <span class="s2">&quot;9.0.0&quot;</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">flashvars</span><span class="p">,</span> <span class="nx">params</span><span class="p">,</span> <span class="nx">attributes</span><span class="p">);</span>
 </pre></div>
 
 
-<p>= "xml/data.xml"; var params = {}; params.menu = "false"; params.wmode =
-"opaque"; var attributes = {}; attributes.id = "myDynamicContent";
-attributes.name = "myDynamicContent"; swfobject.embedSWF("test.swf",
-"myAlternativeContent", "300", "120", "9.0.0", false, flashvars, params,
-attributes); </p>
 <p>İlk başta değişkenleri tanımlayıp sonra embed kodu içine ekliyoruz. Bir
 başka şekli ile</p>
-<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+    <span class="nx">swfobject</span><span class="p">.</span><span class="nx">embedSWF</span><span class="p">(</span><span class="s2">&quot;test.swf&quot;</span><span class="p">,</span> <span class="s2">&quot;myContent&quot;</span><span class="p">,</span> <span class="s2">&quot;300&quot;</span><span class="p">,</span> <span class="s2">&quot;120&quot;</span><span class="p">,</span> <span class="s2">&quot;9.0.0&quot;</span><span class="p">,</span><span class="s2">&quot;expressInstall.swf&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">xmlPath</span><span class="o">:</span><span class="s2">&quot;xml/data.xml&quot;</span><span class="p">},</span> <span class="p">{</span><span class="nx">menu</span><span class="o">:</span><span class="s2">&quot;false&quot;</span><span class="p">,</span> <span class="nx">wmode</span><span class="o">:</span><span class="s2">&quot;opaque&quot;</span><span class="p">},</span> <span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="s2">&quot;myDynamicContent&quot;</span><span class="p">,</span><span class="nx">name</span><span class="o">:</span><span class="s2">&quot;myDynamicContent&quot;</span><span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
 </pre></div>
 
 
-<p>swfobject.embedSWF("test.swf", "myContent", "300", "120",
-"9.0.0","expressInstall.swf", {xmlPath:"xml/data.xml"}, {menu:"false",
-wmode:"opaque"}, {id:"myDynamicContent",name:"myDynamicContent"});
-</script> </p>
 <p>şeklinde de yazabiliyoruz. Parametre olarak ben genelde ya flashvars ile
 xml yolunu yazıyorum, yada wmode özelliğini yazıyorum. Diğerlerini pek
 kullanmıyorum. Bana eski sürümdeki parametre ekleme şekli daha kolay
 geliyordu açıkçası.</p>
-<h3>wmode özelliği</h3>
+<h2>wmode özelliği</h2>
 <p>Yeri gelmişken wmode özelliğinede değinelim. window , opaque ve
 transparent özelliklerini alıyor. Ben genelde bu özelliği diğer
 elemanlar flash altında kalınca kullanıyorum. window hiç kullanmadım,
 eskiden transparent kullanıyordum ancak transparent kullanınca flash çok
 yavaşlatıyor sayfayı bu nedenle opaque kullanıyorum. Tabi eğer flash
 zemini saydam olmayacak ise ki genelde olmuyor.</p>
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>SwfObject 2.2'in yanında google code içerisinde "SWFObject 2 HTML and
 JavaScript generator v1.2" yukarıdaki kodu üretmek için bir sayfa
 hazırlanmış işi daha kolay hale getiren bir araç.</p>
@@ -257,7 +269,7 @@ ekleyebiliriz. Bunun dışında da javascript ile yapılmış bir çok yöntem
 var, jquery eklentisi var. Ancak ben swfobject'i kullanıyorum. Sizlerede
 kullanmanızı öneriyorum. Kendinize iyi bakın. Görüşmek dileğiyle.
 Hoşçakalın.</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://code.google.com/p/swfobject/wiki/documentation">http://code.google.com/p/swfobject/wiki/documentation</a></li>
 <li><a href="http://www.adobe.com/devnet/flashplayer/articles/swfobject.html">http://www.adobe.com/devnet/flashplayer/articles/swfobject.html</a></li>
@@ -265,16 +277,13 @@ Hoşçakalın.</p>
 <li><a href="http://blog.deconcept.com/swfobject/">http://blog.deconcept.com/swfobject/</a> (swfobject ayrintili)</li>
 <li><a href="http://www.tizag.com/flashTutorial/flashhtmlcode.php">http://www.tizag.com/flashTutorial/flashhtmlcode.php</a></li>
 <li><a href="http://www.ispringsolutions.com/articles/how_to_insert_flash_into_html.html">http://www.ispringsolutions.com/articles/how_to_insert_flash_into_html.html</a></li>
-<li><a href="http://groups.google.com/group/swfobject/browse_thread/thread/eeb1c721a0c10a90?pli=1">http://groups.google.com/group/swfobject/browse_thread/thread/eeb1c721a0c10a90?pli=1</a>
-    (swfobject)</li>
-<li><a href="http://latrine.dgx.cz/how-to-correctly-insert-a-flash-into-xhtml">http://latrine.dgx.cz/how-to-correctly-insert-a-flash-into-xhtml</a>
-    (eski yöntem)</li>
+<li><a href="http://groups.google.com/group/swfobject/browse_thread/thread/eeb1c721a0c10a90?pli=1">http://groups.google.com/group/swfobject/browse_thread/thread/eeb1c721a0c10a90?pli=1</a></li>
+<li><a href="http://latrine.dgx.cz/how-to-correctly-insert-a-flash-into-xhtml">http://latrine.dgx.cz/how-to-correctly-insert-a-flash-into-xhtml</a></li>
 <li><a href="http://www.alistapart.com/articles/flashembedcagematch/">http://www.alistapart.com/articles/flashembedcagematch/</a></li>
 <li><a href="http://www.webogrencisi.com/swfobject-1-5-flash-obje-ekleme-betigi">http://www.webogrencisi.com/swfobject-1-5-flash-obje-ekleme-betigi</a></li>
 <li><a href="http://www.reelseo.com/swfobject-video-seo/">http://www.reelseo.com/swfobject-video-seo/</a></li>
 <li><a href="http://www.gotoandlearn.com/play?id=77">http://www.gotoandlearn.com/play?id=77</a></li>
-</ul>
-</p><p><a href=".././flash-dosyalariniswf-htmle-eklemek/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././flash-dosyalariniswf-htmle-eklemek/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

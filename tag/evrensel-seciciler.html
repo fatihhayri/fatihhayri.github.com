@@ -96,7 +96,7 @@ optimum kullanılmasını irdeleyeceğiz. <!--more--></p>
 <p>CSS seçici tipleri ve kullanımı hakkında <a href="http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/" title="(X)HTML Sayfa Yapısı ve CSS Kullanımı">(X)HTML Sayfa Yapısı ve CSS Kullanımı</a>, <a href="http://www.fatihhayrioglu.com/ozellik-secicileriattribute-selectors/" title="Özellik Seçicileri(Attribute Selectors)">Özellik Seçicileri(Attribute Selectors)</a> ve
 <a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/" title="Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)">Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)</a>
 makalelerini bir göz atın.</p>
-<h3>Performanslı CSS Seçicileri Seçiminde Anahtar Seçicinin Önemi</h3>
+<h2>Performanslı CSS Seçicileri Seçiminde Anahtar Seçicinin Önemi</h2>
 <p>CSS Seçicilerinin performans kazandırma çalışmalarına başlamadan önce
 ilk bilmemiz gereken tarayıcıların CSS seçicilerini nasıl yorumladığını
 bilmekten geçiyor. Ben daha önceleri ki bu makaleyi yazmadan önce
@@ -104,47 +104,53 @@ diyebilirim buna, css kodu yazarken seçicilerin soldan sağa doğru
 okunduğunu düşünerek kodumu yazardım ama gerçek böyle değilmiş.
 <strong>Tarayıcılar CSS seçicilerini sağdan solda doğru okurlar.</strong> Tabi bu
 bilgiden sonra yazdığımız kodları buna göre düşünerek yazmalıyız.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nf">#smUrunler</span><span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nf">#smUrunler</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span> 
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(../images/menu.png)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background:url(../images/menu.png) 0 0 no-repeat; } </p>
 <p>Yukarıdaki tanımlamada ilk olarak tarayıcı doküman içinde geçen
 a#smUrunler seçicisini bulacaktır, bu seçiciye anahtar seçici deniyor.
 Bir bakıma elemanı yakalamak için anahtar oluyor tarayıcıya.</p>
 <p>Bu bize gösteriyorki css kodlarımızı yazarken buna dikkat etmemiz ve
 buna göre kod yazmamız gerekiyor.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#solMenu</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#solMenu</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(../images/menu.png)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background:url(../images/menu.png) 0 0 no-repeat; } </p>
 <p>şeklindeki bir tanım önerilmiyor. Bu tanımda sağdan sola doğru
-yorumlandığını düşünürsek dokümandaki tüm bağlantıları(<a>)
+yorumlandığını düşünürsek dokümandaki tüm bağlantıları(&lt;a>)
 arayacaktır tarayıcı. Bunun yerine</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nf">#smUrunler</span><span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nf">#smUrunler</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(../images/menu.png)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background:url(../images/menu.png) 0 0 no-repeat; } </p>
 <p>Tanılaması daha efektif bir sonuç verecektir. Tarayıcı direk olarak
 a#smUrunler seçicisi ile elemanı bulacaktır.</p>
 <p><a href="http://stevesouders.com/efws/css-selectors/baseline.php" title="stevesouders.com'un test sayfasını">stevesouders.com'un test sayfasını</a> incelersek sonucu daha iyi
 anlayacağız.</p>
 <p>Aynı öneriyi bize Google'un Page Speed eklentisi test sonucuda
 verecektir. Google'un hıza önem verdiğini biliyoruz bu konuda <a href="http://code.google.com/speed/page-speed/docs/rendering.html" title="google'un önerileride">google'un önerileride</a> Mozilla'dan farklı değil.</p>
-<h3>Mozilla makalesindeki önerileri sıralarsak</h3>
+<h2>Mozilla makalesindeki önerileri sıralarsak</h2>
 <p><strong>Evrensel kuralları önleyiniz</strong><br />
 CSS seçicilerini yazarken son tanımda evrensel bir seçici kullanmayın.</p>
 <p><strong>Tekil Seçicileri(id) etiketlerle nitelemeyin</strong><br />
 Tekil seçiciler zaten en hızlı erişilen seçicilerdir. Bunları tekrar
 etiket ile nitelemeye gerek yoktur.</p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="nf">#slUrunler</span><span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nf">#slUrunler</span><span class="p">{</span><span class="o">...</span><span class="p">}</span>
 </pre></div>
 
 
 <p>yerine</p>
-<div class="codehilite"><pre> <span class="nf">#smUrunler</span><span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nf">#smUrunler</span><span class="p">{</span><span class="o">...</span><span class="p">}</span>
 </pre></div>
 
 
@@ -155,24 +161,24 @@ günlerde artık buda kabul gören bir tanım değildir. Ben kod yazarken son
 zamanlarda çok kullanıyordum bu tanımlamayı, artık veda edeceğiz.</p>
 <p><strong>Sınıf Seçicileri etiketlerle nitelemeyin</strong><br />
 Yukarıda anlattığımız gibi burası içinde geçerlidir.</p>
-<div class="codehilite"><pre> <span class="nt">td</span><span class="nc">.taraftarSayi</span><span class="p">{}</span>
+<div class="codehilite"><pre><span class="nt">td</span><span class="nc">.taraftarSayi</span><span class="p">{}</span>
 </pre></div>
 
 
 <p>yerine</p>
-<div class="codehilite"><pre> <span class="nc">.taraftarSayi</span><span class="p">{}</span>
+<div class="codehilite"><pre><span class="nc">.taraftarSayi</span><span class="p">{}</span>
 </pre></div>
 
 
 <p>şeklinde kullanın.</p>
 <p><strong>Torun Seçiciler veya çocuk Seçicler Yerine Özel sınıflar Atayın</strong><br />
 Uzun seçici listesi kullanmak yerine daha özel bir sınıf tanımı yapın.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span><span class="o">...</span><span class="p">}</span>
 </pre></div>
 
 
 <p>yerine a'ya smUrunler sınıfını atayıp</p>
-<div class="codehilite"><pre> <span class="nc">.smUrunler</span><span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nc">.smUrunler</span><span class="p">{</span><span class="o">...</span><span class="p">}</span>
 </pre></div>
 
 
@@ -183,22 +189,22 @@ Seçici tiplerinden torun seçicileri en yavaş yöntemlerden biridir.
 öneriye bakın.</p>
 <p><strong>Etiket Kategorilerinde Çocuk Seçicileri Kullanmayın</strong><br />
 Etiket tabanlı çocuk seçicileriniz yerine özel seçici kullanınız.</p>
-<div class="codehilite"><pre> <span class="nt">treehead</span> <span class="o">&gt;</span> <span class="nt">treerow</span> <span class="o">&gt;</span> <span class="nt">treecell</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">treehead</span> <span class="o">&gt;</span> <span class="nt">treerow</span> <span class="o">&gt;</span> <span class="nt">treecell</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
 </pre></div>
 
 
 <p>yerine</p>
-<div class="codehilite"><pre> <span class="nc">.treecell-header</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nc">.treecell-header</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
 </pre></div>
 
 
 <p>kullanın.</p>
-<h3>CSS 3 ile gelen avantajlar</h3>
+<h2>CSS 3 ile gelen avantajlar</h2>
 <p>CSS seçicilerine CSS3 ile birlikte daha özel seçiciler geliyor. Bu
 seçiciler sayesinde daha optimize kodlar elde edeceğiz. Şimdilik
 İnternet Explorer'un mevcut sürümleri bu kullanıma izin vermese de
 gelecekte işimiz daha kolay olacak.</p>
-<h3>Sonuç</h3>
+<h2>Sonuç</h2>
 <p>Yukarıdaki önerileri dikkate alarak kodlarımızı yazmalıyız. Ancak bunlar
 kesin kurallar değildir ve uygulamada bazen bu kurallar uymakta
 zorlanabiliriz. Benim önerim bu kuralları dikkate alarak yazmaya
@@ -221,16 +227,13 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.</p>
 <li><a href="http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors" title="http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors">http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors</a></li>
 <li><a href="http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/" title="http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/">http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/</a></li>
 <li><a href="http://www.infoq.com/news/2009/01/jquery-1.3" title="http://www.infoq.com/news/2009/01/jquery-1.3">http://www.infoq.com/news/2009/01/jquery-1.3</a></li>
-<li><a href="http://code.google.com/speed/page-speed/docs/rendering.html" title="http://code.google.com/speed/page-speed/docs/rendering.html">http://code.google.com/speed/page-speed/docs/rendering.html</a>
-    (google'dan notlar)</li>
+<li><a href="http://code.google.com/speed/page-speed/docs/rendering.html" title="http://code.google.com/speed/page-speed/docs/rendering.html">http://code.google.com/speed/page-speed/docs/rendering.html</a> (google'dan notlar)</li>
 <li><a href="http://fatagnus.com/guidelines-for-writing-efficient-css-selectors/" title="http://fatagnus.com/guidelines-for-writing-efficient-css-selectors/">http://fatagnus.com/guidelines-for-writing-efficient-css-selectors/</a></li>
 <li><a href="http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors" title="http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors">http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors</a></li>
 <li><a href="http://css-tricks.com/efficiently-rendering-css/" title="http://css-tricks.com/efficiently-rendering-css/">http://css-tricks.com/efficiently-rendering-css/</a></li>
 <li><a href="http://www.nuvographics.com/articles/efficientcss/" title="http://www.nuvographics.com/articles/efficientcss/">http://www.nuvographics.com/articles/efficientcss/</a></li>
-<li><a href="http://www.css-101.org/descendant-selector/go_fetch_yourself.php">http://www.css-101.org/descendant-selector/go_fetch_yourself.php</a>
-    (yeni)</li>
-</ul>
-</p><p><a href=".././css-secicilerinin-optimizasyonu/#disqus_thread">yorum var</a>.</p>
+<li><a href="http://www.css-101.org/descendant-selector/go_fetch_yourself.php">http://www.css-101.org/descendant-selector/go_fetch_yourself.php</a> (yeni)</li>
+</ul><p><a href=".././css-secicilerinin-optimizasyonu/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

@@ -5408,15 +5408,19 @@ mesaj attı. Son mesajdan sonra konuyu yazmalıyım dedim.&lt;/p&gt;
 listelediğimiz menülerde ie'de fazladan boşluk gözüküyor. Bu durum bazen
 ie6'da bazense ie6 ve ie7'de oluyor.&lt;/p&gt;
 &lt;p&gt;Bir örnek verelim&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Menu
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Menu Bir&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Menu İki&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Menu Üç&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Menu Dört&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Bir&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href="#"&gt;Menu İki&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a
-href="#"&gt;Menu Üç&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href="#"&gt;Menu Dört&lt;/a&gt;
-&lt;/li&gt; &lt;/ul&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodumuzda da&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#menu&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#menu&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5438,17 +5442,20 @@ biri yapılması durumunda bu sorun düzelecektir.&lt;/p&gt;
 &lt;strong&gt;width:&lt;/strong&gt; herhangi bir değeri&lt;br /&gt;
 &lt;strong&gt;writing-mode:&lt;/strong&gt; tb-rl&lt;br /&gt;
 &lt;strong&gt;zoom:&lt;/strong&gt; herhangi bir değeri&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-* ie7 de geçerli.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ie7 de geçerli.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Biz bir tanesini seçelim.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; * html ul#menu li a {height: 1px;}
+&lt;div class="codehilite"&gt;&lt;pre&gt;* html ul#menu li a {
+    height: 1px;
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Örneği görmek için &lt;a href="http://fatihhayrioglu.com/dokumanlar/ie6_fazla_bosluk_sorunu/ie_listede_fazla_bosluk_sorunu_cev.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Bu kodu yazdıktan sonra sayfa aşağıdaki gibi görünecektir.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="http://docs.google.com/File?id=dhctmbn6_422dgmtm9g8_b" /&gt;&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.brunildo.org/test/IEWlispace.php" title="http://www.brunildo.org/test/IEWlispace.php"&gt;http://www.brunildo.org/test/IEWlispace.php&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.hicksdesign.co.uk/journal/ie-whitespace-bug" title="http://www.hicksdesign.co.uk/journal/ie-whitespace-bug"&gt;http://www.hicksdesign.co.uk/journal/ie-whitespace-bug&lt;/a&gt;&lt;/li&gt;
@@ -5457,8 +5464,7 @@ biri yapılması durumunda bu sorun düzelecektir.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://archivist.incutio.com/viewlist/css-discuss/34926" title="http://archivist.incutio.com/viewlist/css-discuss/34926"&gt;http://archivist.incutio.com/viewlist/css-discuss/34926&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://gtwebdev.com/workshop/gaps/white-space-bug.php" title="http://gtwebdev.com/workshop/gaps/white-space-bug.php"&gt;http://gtwebdev.com/workshop/gaps/white-space-bug.php&lt;/a&gt;&lt;br /&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="hasLayout"></category><category term="ie"></category><category term="ie6"></category><category term="ie7"></category><category term="liste boşluk sorunu"></category><category term="sorun"></category></entry><entry><title>CSS Seçicilerinin Optimizasyonu</title><link href="http://www.fatihhayrioglu.com/css-secicilerinin-optimizasyonu/" rel="alternate"></link><updated>2010-05-30T16:26:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-05-30:css-secicilerinin-optimizasyonu/</id><summary type="html">&lt;p&gt;Bu konuyu hiç yazmayı düşünmüyordum, &lt;a href="https://developer.mozilla.org/en/Writing_Efficient_CSS" title="Writing Efficient CSS for use in the Mozilla UI"&gt;Writing Efficient CSS for use in the Mozilla UI&lt;/a&gt; makalesini okuyan kadar. Bu makaleyi okuduğumda bir
+&lt;/ul&gt;</summary><category term="hasLayout"></category><category term="ie"></category><category term="ie6"></category><category term="ie7"></category><category term="liste boşluk sorunu"></category><category term="sorun"></category></entry><entry><title>CSS Seçicilerinin Optimizasyonu</title><link href="http://www.fatihhayrioglu.com/css-secicilerinin-optimizasyonu/" rel="alternate"></link><updated>2010-05-30T16:26:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-05-30:css-secicilerinin-optimizasyonu/</id><summary type="html">&lt;p&gt;Bu konuyu hiç yazmayı düşünmüyordum, &lt;a href="https://developer.mozilla.org/en/Writing_Efficient_CSS" title="Writing Efficient CSS for use in the Mozilla UI"&gt;Writing Efficient CSS for use in the Mozilla UI&lt;/a&gt; makalesini okuyan kadar. Bu makaleyi okuduğumda bir
 şeyleri yanlış bildiğimi gördüm ve düzeltmek için bu konu hakkında biraz
 araştırma yapmam gerektiğini düşündüm ve bu makale çıktı. Bende yeni çok
 şeyler öğrendim. Aslında makalede 10 senelik bir makale, 10 sene sonra
@@ -5473,7 +5479,7 @@ optimum kullanılmasını irdeleyeceğiz. &lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;CSS seçici tipleri ve kullanımı hakkında &lt;a href="http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/" title="(X)HTML Sayfa Yapısı ve CSS Kullanımı"&gt;(X)HTML Sayfa Yapısı ve CSS Kullanımı&lt;/a&gt;, &lt;a href="http://www.fatihhayrioglu.com/ozellik-secicileriattribute-selectors/" title="Özellik Seçicileri(Attribute Selectors)"&gt;Özellik Seçicileri(Attribute Selectors)&lt;/a&gt; ve
 &lt;a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/" title="Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)"&gt;Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)&lt;/a&gt;
 makalelerini bir göz atın.&lt;/p&gt;
-&lt;h3&gt;Performanslı CSS Seçicileri Seçiminde Anahtar Seçicinin Önemi&lt;/h3&gt;
+&lt;h2&gt;Performanslı CSS Seçicileri Seçiminde Anahtar Seçicinin Önemi&lt;/h2&gt;
 &lt;p&gt;CSS Seçicilerinin performans kazandırma çalışmalarına başlamadan önce
 ilk bilmemiz gereken tarayıcıların CSS seçicilerini nasıl yorumladığını
 bilmekten geçiyor. Ben daha önceleri ki bu makaleyi yazmadan önce
@@ -5481,47 +5487,53 @@ diyebilirim buna, css kodu yazarken seçicilerin soldan sağa doğru
 okunduğunu düşünerek kodumu yazardım ama gerçek böyle değilmiş.
 &lt;strong&gt;Tarayıcılar CSS seçicilerini sağdan solda doğru okurlar.&lt;/strong&gt; Tabi bu
 bilgiden sonra yazdığımız kodları buna göre düşünerek yazmalıyız.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nf"&gt;#smUrunler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nf"&gt;#smUrunler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="sx"&gt;url(../images/menu.png)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;background:url(../images/menu.png) 0 0 no-repeat; } &lt;/p&gt;
 &lt;p&gt;Yukarıdaki tanımlamada ilk olarak tarayıcı doküman içinde geçen
 a#smUrunler seçicisini bulacaktır, bu seçiciye anahtar seçici deniyor.
 Bir bakıma elemanı yakalamak için anahtar oluyor tarayıcıya.&lt;/p&gt;
 &lt;p&gt;Bu bize gösteriyorki css kodlarımızı yazarken buna dikkat etmemiz ve
 buna göre kod yazmamız gerekiyor.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#solMenu&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nf"&gt;#solMenu&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="sx"&gt;url(../images/menu.png)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;background:url(../images/menu.png) 0 0 no-repeat; } &lt;/p&gt;
 &lt;p&gt;şeklindeki bir tanım önerilmiyor. Bu tanımda sağdan sola doğru
-yorumlandığını düşünürsek dokümandaki tüm bağlantıları(&lt;a&gt;)
+yorumlandığını düşünürsek dokümandaki tüm bağlantıları(&amp;lt;a&gt;)
 arayacaktır tarayıcı. Bunun yerine&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nf"&gt;#smUrunler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nf"&gt;#smUrunler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="sx"&gt;url(../images/menu.png)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;background:url(../images/menu.png) 0 0 no-repeat; } &lt;/p&gt;
 &lt;p&gt;Tanılaması daha efektif bir sonuç verecektir. Tarayıcı direk olarak
 a#smUrunler seçicisi ile elemanı bulacaktır.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://stevesouders.com/efws/css-selectors/baseline.php" title="stevesouders.com'un test sayfasını"&gt;stevesouders.com'un test sayfasını&lt;/a&gt; incelersek sonucu daha iyi
 anlayacağız.&lt;/p&gt;
 &lt;p&gt;Aynı öneriyi bize Google'un Page Speed eklentisi test sonucuda
 verecektir. Google'un hıza önem verdiğini biliyoruz bu konuda &lt;a href="http://code.google.com/speed/page-speed/docs/rendering.html" title="google'un önerileride"&gt;google'un önerileride&lt;/a&gt; Mozilla'dan farklı değil.&lt;/p&gt;
-&lt;h3&gt;Mozilla makalesindeki önerileri sıralarsak&lt;/h3&gt;
+&lt;h2&gt;Mozilla makalesindeki önerileri sıralarsak&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Evrensel kuralları önleyiniz&lt;/strong&gt;&lt;br /&gt;
 CSS seçicilerini yazarken son tanımda evrensel bir seçici kullanmayın.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tekil Seçicileri(id) etiketlerle nitelemeyin&lt;/strong&gt;&lt;br /&gt;
 Tekil seçiciler zaten en hızlı erişilen seçicilerdir. Bunları tekrar
 etiket ile nitelemeye gerek yoktur.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nf"&gt;#slUrunler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nf"&gt;#slUrunler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;yerine&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#smUrunler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#smUrunler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5532,24 +5544,24 @@ günlerde artık buda kabul gören bir tanım değildir. Ben kod yazarken son
 zamanlarda çok kullanıyordum bu tanımlamayı, artık veda edeceğiz.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sınıf Seçicileri etiketlerle nitelemeyin&lt;/strong&gt;&lt;br /&gt;
 Yukarıda anlattığımız gibi burası içinde geçerlidir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;td&lt;/span&gt;&lt;span class="nc"&gt;.taraftarSayi&lt;/span&gt;&lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;td&lt;/span&gt;&lt;span class="nc"&gt;.taraftarSayi&lt;/span&gt;&lt;span class="p"&gt;{}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;yerine&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.taraftarSayi&lt;/span&gt;&lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.taraftarSayi&lt;/span&gt;&lt;span class="p"&gt;{}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;şeklinde kullanın.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Torun Seçiciler veya çocuk Seçicler Yerine Özel sınıflar Atayın&lt;/strong&gt;&lt;br /&gt;
 Uzun seçici listesi kullanmak yerine daha özel bir sınıf tanımı yapın.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;yerine a'ya smUrunler sınıfını atayıp&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.smUrunler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.smUrunler&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5560,22 +5572,22 @@ Seçici tiplerinden torun seçicileri en yavaş yöntemlerden biridir.
 öneriye bakın.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Etiket Kategorilerinde Çocuk Seçicileri Kullanmayın&lt;/strong&gt;&lt;br /&gt;
 Etiket tabanlı çocuk seçicileriniz yerine özel seçici kullanınız.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;treehead&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;treerow&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;treecell&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;treehead&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;treerow&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;treecell&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;yerine&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.treecell-header&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.treecell-header&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;kullanın.&lt;/p&gt;
-&lt;h3&gt;CSS 3 ile gelen avantajlar&lt;/h3&gt;
+&lt;h2&gt;CSS 3 ile gelen avantajlar&lt;/h2&gt;
 &lt;p&gt;CSS seçicilerine CSS3 ile birlikte daha özel seçiciler geliyor. Bu
 seçiciler sayesinde daha optimize kodlar elde edeceğiz. Şimdilik
 İnternet Explorer'un mevcut sürümleri bu kullanıma izin vermese de
 gelecekte işimiz daha kolay olacak.&lt;/p&gt;
-&lt;h3&gt;Sonuç&lt;/h3&gt;
+&lt;h2&gt;Sonuç&lt;/h2&gt;
 &lt;p&gt;Yukarıdaki önerileri dikkate alarak kodlarımızı yazmalıyız. Ancak bunlar
 kesin kurallar değildir ve uygulamada bazen bu kurallar uymakta
 zorlanabiliriz. Benim önerim bu kuralları dikkate alarak yazmaya
@@ -5598,16 +5610,13 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.&lt;/p
 &lt;li&gt;&lt;a href="http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors" title="http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors"&gt;http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/" title="http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/"&gt;http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.infoq.com/news/2009/01/jquery-1.3" title="http://www.infoq.com/news/2009/01/jquery-1.3"&gt;http://www.infoq.com/news/2009/01/jquery-1.3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://code.google.com/speed/page-speed/docs/rendering.html" title="http://code.google.com/speed/page-speed/docs/rendering.html"&gt;http://code.google.com/speed/page-speed/docs/rendering.html&lt;/a&gt;
-    (google'dan notlar)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://code.google.com/speed/page-speed/docs/rendering.html" title="http://code.google.com/speed/page-speed/docs/rendering.html"&gt;http://code.google.com/speed/page-speed/docs/rendering.html&lt;/a&gt; (google'dan notlar)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://fatagnus.com/guidelines-for-writing-efficient-css-selectors/" title="http://fatagnus.com/guidelines-for-writing-efficient-css-selectors/"&gt;http://fatagnus.com/guidelines-for-writing-efficient-css-selectors/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors" title="http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors"&gt;http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://css-tricks.com/efficiently-rendering-css/" title="http://css-tricks.com/efficiently-rendering-css/"&gt;http://css-tricks.com/efficiently-rendering-css/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.nuvographics.com/articles/efficientcss/" title="http://www.nuvographics.com/articles/efficientcss/"&gt;http://www.nuvographics.com/articles/efficientcss/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.css-101.org/descendant-selector/go_fetch_yourself.php"&gt;http://www.css-101.org/descendant-selector/go_fetch_yourself.php&lt;/a&gt;
-    (yeni)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="Evrensel-Seçiciler"></category><category term="Id-Seçicisi"></category><category term="optimize"></category><category term="performans"></category><category term="seçici optimizasyonu"></category><category term="Torun-Seçicisi"></category></entry><entry><title>İE6 sorunu: Bağlantı içi elemanlarda hover sorunu</title><link href="http://www.fatihhayrioglu.com/ie6-sorunu-baglanti-ici-elemanlarda-hover-sorunu/" rel="alternate"></link><updated>2010-05-11T23:19:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-05-11:ie6-sorunu-baglanti-ici-elemanlarda-hover-sorunu/</id><summary type="html">&lt;p&gt;Yine bir ie6 sorunu ile karşı karşıyayız. Evet proje biraz dallı budaklı
+&lt;li&gt;&lt;a href="http://www.css-101.org/descendant-selector/go_fetch_yourself.php"&gt;http://www.css-101.org/descendant-selector/go_fetch_yourself.php&lt;/a&gt; (yeni)&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="Evrensel-Seçiciler"></category><category term="Id-Seçicisi"></category><category term="optimize"></category><category term="performans"></category><category term="seçici optimizasyonu"></category><category term="Torun-Seçicisi"></category></entry><entry><title>İE6 sorunu: Bağlantı içi elemanlarda hover sorunu</title><link href="http://www.fatihhayrioglu.com/ie6-sorunu-baglanti-ici-elemanlarda-hover-sorunu/" rel="alternate"></link><updated>2010-05-11T23:19:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-05-11:ie6-sorunu-baglanti-ici-elemanlarda-hover-sorunu/</id><summary type="html">&lt;p&gt;Yine bir ie6 sorunu ile karşı karşıyayız. Evet proje biraz dallı budaklı
 olunca ie6 sorunları başa bela olmaya başladı. Normal standart site
 tasarımında sorunlar belli idi, ona göre kod yazıyordum, ancak şimdi
 proje normal site şablonlarından farklı olunca sorunlarda çalışmadığımız
@@ -5619,17 +5628,23 @@ efekti vermeye çalıştığımda karşılaştığım bir sorun. Daha kolay
 anlaşılmasıması ve benim içinde anlatması kolay olduğu için
 kaynaklardaki bir örneği vereceğim burada size ben.&lt;/p&gt;
 &lt;p&gt;HTML kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;foo&lt;span class="nt"&gt;&amp;lt;span&amp;gt;&lt;/span&gt;bar&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;href="#"&amp;gt;foo&lt;span&gt;bar&lt;/span&gt;&lt;/a&gt; &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;CSS Kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;span&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;span&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;span&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;span&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;display: inline; } &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="http://fatihhayrioglu.com/dokumanlar/sub_hover/ie_sub_hover.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Burada yapılan çok basit bir iştir. Bağlantı üzerine gelince span
 içindeki bar yazısını gösteriyoruz. Ancak ie6'da bu sayfaya baktığımızda
@@ -5641,18 +5656,27 @@ sorunu ie7 çözmüş görünüşe göre.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://friendlybit.com" title="friendlybit.com"&gt;friendlybit.com&lt;/a&gt; sitesindeki çözüm yolu şöyle; &lt;strong&gt;a:hover&lt;/strong&gt; elemanına
 &lt;strong&gt;padding-top:0&lt;/strong&gt; değeri atayıp sonrada &lt;strong&gt;a:hover span&lt;/strong&gt; seçicisinede
 &lt;strong&gt;padding-top:0&lt;/strong&gt; değeri atayınca oluyor.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;padding-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;span&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;padding-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;span&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="nt"&gt;span&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;padding-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;none; } a:hover span { display: inline; padding-top:0; } &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="http://fatihhayrioglu.com/dokumanlar/sub_hover/ie_sub_hover_coz.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Kaynaklar&lt;/h3&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://haslayout.net/css/Sub-Hover-Bug" title="http://haslayout.net/css/Sub-Hover-Bug"&gt;http://haslayout.net/css/Sub-Hover-Bug&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://friendlybit.com/css/ie6-bug-ignored-selector-hover-bug/" title="http://friendlybit.com/css/ie6-bug-ignored-selector-hover-bug/"&gt;http://friendlybit.com/css/ie6-bug-ignored-selector-hover-bug/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term=":hover"></category><category term="bağlantı içi"></category><category term="ie6"></category><category term="sorun"></category></entry><entry><title>Küçük bir ipucu: FireBug ile satır numarası bilgisi</title><link href="http://www.fatihhayrioglu.com/kucuk-bir-ipucu-firebug-ile-satir-numarasi-bilgisi/" rel="alternate"></link><updated>2010-03-11T23:44:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-11:kucuk-bir-ipucu-firebug-ile-satir-numarasi-bilgisi/</id><summary type="html">&lt;p&gt;[&lt;img alt="" src="/images/firebug_satirno.gif" title="firebug_satirno" /&gt;][]&lt;/p&gt;
+&lt;/ul&gt;</summary><category term=":hover"></category><category term="bağlantı içi"></category><category term="ie6"></category><category term="sorun"></category></entry><entry><title>Küçük bir ipucu: FireBug ile satır numarası bilgisi</title><link href="http://www.fatihhayrioglu.com/kucuk-bir-ipucu-firebug-ile-satir-numarasi-bilgisi/" rel="alternate"></link><updated>2010-03-11T23:44:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-03-11:kucuk-bir-ipucu-firebug-ile-satir-numarasi-bilgisi/</id><summary type="html">&lt;p&gt;&lt;img alt="" src="/images/firebug_satirno.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bazen kullandığım programların alternatiflerini araştırıyorum. Amacım
 eğer daha güzel ve daha kullanışlı özellikleri varsa onlardan
 yararlanmak.&lt;/p&gt;
@@ -5674,14 +5698,11 @@ bir ayrıntı ama benim çok işime yarıyor. Hemde çok.&lt;/p&gt;
 yazıyordum. Sebebi çok açık kodların okunabilirliği artıyordu böylece.
 Sonra fark ettim ki ben kodları okumuyorum artık FireBug ile yakalıyorum
 ve satır numarasından ilgili dokümanı açıp müdahele ediyorum. Bununda
-etkisi ile [her satırda bir tanım yerine her satırda bir seçici şeklinde css dosyalarımı][] yazmaya başladım ve bu bana çok büyük bir yer
+etkisi ile &lt;a href="http://www.fatihhayrioglu.com/css-kod-yazma-duzeni/"&gt;her satırda bir tanım yerine her satırda bir seçici şeklinde css dosyalarımı&lt;/a&gt; yazmaya başladım ve bu bana çok büyük bir yer
 kazandırdı.&lt;/p&gt;
 &lt;p&gt;Evet bazı küçük özellikleri fark etmesekde bize çok büyük faydalar
 sağlayabiliyor.&lt;/p&gt;
-&lt;p&gt;Sağol FireBug. Sen olmasan bu iş gerçekten zor olurdu.&lt;/p&gt;
-&lt;/p&gt;
-
-&lt;p&gt;[&lt;img alt="" src="/images/firebug_satirno.gif" title="firebug_satirno" /&gt;]: /images/firebug_satirno.gif&lt;/p&gt;</summary><category term="DragonFly"></category><category term="firebug"></category><category term="Firefox"></category><category term="ipucu"></category><category term="Opera"></category><category term="satır-numarası"></category></entry><entry><title>İnternet Explorer'da sağdaki sabit kaydırma çubuğunu kaldırmak</title><link href="http://www.fatihhayrioglu.com/internet-explorerda-sagdaki-sabit-kaydirma-cubugunu-kaldirmak/" rel="alternate"></link><updated>2010-02-11T18:12:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-02-11:internet-explorerda-sagdaki-sabit-kaydirma-cubugunu-kaldirmak/</id><summary type="html">&lt;p overflow:auto;="overflow:auto;"&gt;[&lt;img alt="" src="/images/ie7_kaydirma_cubugu.jpg" title="ie7_kaydirma_cubugu" /&gt;][] Pek nadirde olsa böyle bir istek ile karşılaşıyorum. Bu ikinci
+&lt;p&gt;Sağol FireBug. Sen olmasan bu iş gerçekten zor olurdu.&lt;/p&gt;</summary><category term="DragonFly"></category><category term="firebug"></category><category term="Firefox"></category><category term="ipucu"></category><category term="Opera"></category><category term="satır-numarası"></category></entry><entry><title>İnternet Explorer'da sağdaki sabit kaydırma çubuğunu kaldırmak</title><link href="http://www.fatihhayrioglu.com/internet-explorerda-sagdaki-sabit-kaydirma-cubugunu-kaldirmak/" rel="alternate"></link><updated>2010-02-11T18:12:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2010-02-11:internet-explorerda-sagdaki-sabit-kaydirma-cubugunu-kaldirmak/</id><summary type="html">&lt;p overflow:auto;="overflow:auto;"&gt;[&lt;img alt="" src="/images/ie7_kaydirma_cubugu.jpg" title="ie7_kaydirma_cubugu" /&gt;][] Pek nadirde olsa böyle bir istek ile karşılaşıyorum. Bu ikinci
 oldu. İlk başta bunun bir çözümü yoktur diye düşündüm(Bunu düşünmemin
 nedeni daha önce böyle bir istek ile karşılaştığımda çözümünü bulamadım
 diye aklımda kalması). Ancak sonra bazı sitelerde böyle bir şey

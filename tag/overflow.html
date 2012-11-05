@@ -94,38 +94,46 @@ bir elemana position:relative tanımladığımda relative verdiğim eleman
 overflow uyguladığım elemanın dışına çıkıyor ve scroll olmuyor.
 <!--more--></p>
 <p>Şöyle küçük bir örnek durumu daha iyi gösterecektir.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikAlani&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;p&gt;</span>İlk
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikAlani&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>İlk paragaraf<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;relative&quot;</span><span class="nt">&gt;</span>position:relative uygulanan kısım<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>paragaraf</p> <p class="relative">position:relative uygulanan
-kısım</p> </div> </p>
 <p>CSS kodu da şöyle</p>
-<div class="codehilite"><pre> <span class="nf">#icerikAlani</span><span class="p">{</span> <span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#icerikAlani</span><span class="p">{</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#ccc</span>
+<span class="p">}</span>
+
+<span class="nc">.relative</span><span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span><span class="k">relative</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="nb">lightblue</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>width:200px; height:80px; background-color:#ccc } .relative{
-position:relative; background-color:lightblue; width:150px; }</p>
 <p>Sonuca ie 6 ve 7 ile baktığımızda aşağıdaki gibi bir sorun ile
 karşılaşacağız.</p>
 <p>Örneği görmek içni <a href="http://fatihhayrioglu.com/dokumanlar/position_relative_overflow.html">tıklayınız.</a></p>
-<p>[<img alt="" src="static/images/position_relative_overflow_ie.jpg" title="position_relative_overflow_ie" />][]</p>
+<p><img alt="" src="static/images/position_relative_overflow_ie.jpg" /></p>
 <p>Sorunun çözümü ise çok basit. overflow uyguladığımız elemana
 position:relative tanımı yaparak sorunu giderebilirsiniz.</p>
 <p>[sourcecode language="css" highlight="7"] #icerikAlani{ height:80px;
 overflow:auto; width:200px; height:80px; background-color:#ccc;
 position:relative; } .relative{ position:relative;
 background-color:lightblue; width:150px; } </p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://snook.ca/archives/html_and_css/position_relative_overflow_ie/">http://snook.ca/archives/html_and_css/position_relative_overflow_ie/</a></li>
 <li><a href="http://www.rowanw.com/bugs/overflow_relative.htm">http://www.rowanw.com/bugs/overflow_relative.htm</a></li>
 <li><a href="http://dustyreagan.com/workaround-to-ies-overflow-auto-and/">http://dustyreagan.com/workaround-to-ies-overflow-auto-and/</a></li>
-</ul>
-</p>
-
-<p>[<img alt="" src="static/images/position_relative_overflow_ie.jpg" title="position_relative_overflow_ie" />]: /images/position_relative_overflow_ie.jpg</p><p><a href=".././overflow-ve-positionrelative-kullaniminda-ie-sorunu/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././overflow-ve-positionrelative-kullaniminda-ie-sorunu/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

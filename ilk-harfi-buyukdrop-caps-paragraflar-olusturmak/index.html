@@ -94,7 +94,7 @@ yazayım herkes yararlansın dedim.</p>
 uygulanan bir yöntemdir. Genelde dergilerin başlangıç paragrafının ilk
 harfi 2 veya daha fazla satır yüksekliğinde oluşturarak farklı ve güzel
 bir görünüm kazandırırlar. Bu durumu biz css ile yapabiliyoruz. </p>
-<p>Biz bu görüntüyü <a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/" title="first-letter">first-letter</a> seçicisi ile elde edebiliyoruz. Hatta
+<p>Biz bu görüntüyü <a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/">first-letter</a> seçicisi ile elde edebiliyoruz. Hatta
 bu seçicinin adı drop caps-ilk harfi büyük harf seçicisi diyede geçiyor.
 Bizim için en büyük avantajı ie6 dahil tüm tarayıcıların bu özelliği
 desteklemesi.<!--more--></p>
@@ -114,24 +114,31 @@ desteklemesi.<!--more--></p>
 <li>text-shadow</li>
 <li>clear</li>
 </ul>
-<h3>İlk Denememiz</h3>
+<h2>İlk Denememiz</h2>
 <p>HTML kodlarımız</p>
-<div class="codehilite"><pre> <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;introduction&quot;</span><span class="nt">&gt;</span>Lorem ipsum dolor
+<div class="codehilite"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;introduction&quot;</span><span class="nt">&gt;</span>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<span class="nt">&lt;/p&gt;</span>
 </pre></div>
 
 
-<p>sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur.</p> </p>
 <p>CSS kodlarımız</p>
-<div class="codehilite"><pre> <span class="nt">p</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">350px</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#272722</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">p</span><span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">350px</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#272722</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="nc">.introduction</span><span class="nd">:first-letter</span> <span class="p">{</span> 
+    <span class="k">font-size</span><span class="o">:</span><span class="m">4.2em</span><span class="p">;</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">line-height</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0.13em</span> <span class="m">0.13em</span> <span class="m">0.13em</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>padding:10px; color:#fff; } p.introduction:first-letter { font-size:
-4.2em; float: left; line-height: 1em; margin: 0.13em 0.13em 0.13em 0; }</p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk.html">tıklayınız.</a></p>
 <p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_387cfvfq39n_b" /></p>
 <p>Firefox'da yukarıdaki görüntüyü elde ederken</p>
@@ -143,60 +150,95 @@ Farklı line-height değerleri ile padding uygulamalarında ie 6 ve 7'de
 sorun çıkıyor, line-height değerini 1 em'de tutmak mantık en azından ie
 için 1em yapmak gerekiyor.</p>
 <p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_389dg3pbzc4_b" /></p>
-<h3>Fark stillerde uygulamalar yapabiliriz.</h3>
-<p>İlk harfi <a href="http://www.fatihhayrioglu.com/font-face-kullanimi/" title="font-face">font-face</a> ile özel bir yazı tipi ile oluşturarak güzel bir
+<h2>Fark stillerde uygulamalar yapabiliriz.</h2>
+<p>İlk harfi <a href="http://www.fatihhayrioglu.com/font-face-kullanimi/">font-face</a> ile özel bir yazı tipi ile oluşturarak güzel bir
 görüntü elde edebiliriz. Yazı tipini(PaladinFLF)
-<a href="http://www.fontsquirrel.com/fontface" title="http://www.fontsquirrel.com/fontface">http://www.fontsquirrel.com/fontface</a> sitesinden aldım.</p>
-<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span>
+<a href="http://www.fontsquirrel.com/fontface">http://www.fontsquirrel.com/fontface</a> sitesinden aldım.</p>
+<div class="codehilite"><pre><span class="k">@font-face</span> <span class="p">{</span> 
+    <span class="nt">font-family</span><span class="o">:</span><span class="s1">&#39;PaladinFLFRegular&#39;</span><span class="o">;</span> 
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;PaladinFLF.eot&#39;</span><span class="o">);</span> 
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;☺&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;PaladinFLF.ttf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;PaladinFLF.svg#webfont&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;svg&#39;</span><span class="o">);</span> 
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">350px</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#272722</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="nc">.introduction</span><span class="nd">:first-letter</span> <span class="p">{</span> 
+    <span class="k">font</span><span class="o">:</span> <span class="m">4.2em</span><span class="o">/</span><span class="m">1em</span> <span class="s1">&#39;PaladinFLFRegular&#39;</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0.13em</span> <span class="m">0.13em</span> <span class="m">0.13em</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>'PaladinFLFRegular'; src: url('PaladinFLF.eot'); src: local('☺'),
-url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont')
-format('svg'); } p{width:350px; background-color:#272722; padding:10px;
-color:#fff;} p.introduction:first-letter { font: 4.2em/1em
-'PaladinFLFRegular', Arial, sans-serif; float: left; margin: 0.13em
-0.13em 0.13em 0; } </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk2.html">tıklayınız.</a></p>
 <p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_390fmrwjjfj_b" /></p>
-<h3>İşe Biraz daha renk katalım</h3>
+<h2>İşe Biraz daha renk katalım</h2>
 <p>İlk harfin etrafına kenar çizgisi atayıp ardalan rengini değiştirelim.</p>
-<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="k">@font-face</span> <span class="p">{</span>
+    <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;PaladinFLFRegular&#39;</span><span class="o">;</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;PaladinFLF.eot&#39;</span><span class="o">);</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;☺&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;PaladinFLF.ttf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;PaladinFLF.svg#webfont&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;svg&#39;</span><span class="o">);</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">350px</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#272722</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="nc">.introduction</span><span class="nd">:first-letter</span> <span class="p">{</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">4.2em</span><span class="o">/</span><span class="m">0.6em</span> <span class="s1">&#39;PaladinFLFRegular&#39;</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0.13em</span> <span class="m">0.13em</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">3px</span> <span class="k">solid</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">0.13em</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#F30</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="o">:</span><span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>'PaladinFLFRegular'; src: url('PaladinFLF.eot'); src: local('☺'),
-url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont')
-format('svg'); } p{ width:350px; background-color:#272722;
-padding:10px; color:#fff; } p.introduction:first-letter { font:
-4.2em/0.6em 'PaladinFLFRegular', Arial, sans-serif; float: left; margin:
-0.13em 0.13em 0 0; border:3px solid #fff; padding:0.13em;
-background-color:#F30; line-height:1em; } </p>
 <p>HTML kodları</p>
-<div class="codehilite"><pre> <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;introduction&quot;</span><span class="nt">&gt;</span>Lorem ipsum dolor
+<div class="codehilite"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;introduction&quot;</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<span class="nt">&lt;/p&gt;</span>
 </pre></div>
 
 
-<p>sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur.</p> </p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk3.html">tıklayınız.</a></p>
 <p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_391dzsg3mht_b" /></p>
-<h3>Ardalan Resmi ile</h3>
+<h2>Ardalan Resmi ile</h2>
 <p>Harfin ardalanına bir resim koyup üzerine harfi koymayı deniyorum.</p>
-<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span>
+<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span>
+    <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;PaladinFLFRegular&#39;</span><span class="o">;</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;PaladinFLF.eot&#39;</span><span class="o">);</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;☺&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;PaladinFLF.ttf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;PaladinFLF.svg#webfont&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;svg&#39;</span><span class="o">);</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">350px</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#272722</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="nc">.introduction</span><span class="nd">:first-letter</span> <span class="p">{</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">4em</span><span class="o">/</span><span class="m">1em</span> <span class="s1">&#39;PaladinFLFRegular&#39;</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0.13em</span> <span class="m">0.13em</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">0.4em</span> <span class="m">0.5em</span> <span class="m">0.4em</span> <span class="m">0.3em</span> <span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#F30</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(t.jpg)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">text-shadow</span><span class="o">:</span><span class="m">2px</span> <span class="m">2px</span> <span class="m">2px</span> <span class="m">#999</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>'PaladinFLFRegular'; src: url('PaladinFLF.eot'); src: local('☺'),
-url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont')
-format('svg'); } p{ width:350px; background-color:#272722;
-padding:10px; color:#fff; } p.introduction:first-letter { font: 4em/1em
-'PaladinFLFRegular', Arial, sans-serif; float: left; margin: 0.13em
-0.13em 0 0; padding:0.4em 0.5em 0.4em 0.3em ; background-color:#F30;
-background:url(t.jpg) 0 0 no-repeat; text-shadow:2px 2px 2px #999 }</p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk4.html">tıklayınız.</a></p>
 <p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_392ghn2nsg2_b" /></p>
 <p>Firefox ile yukarıdaki gibi güzel bir sonuç elde ediyoruz. Ancak
@@ -204,45 +246,46 @@ background:url(t.jpg) 0 0 no-repeat; text-shadow:2px 2px 2px #999 }</p>
 <p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_393wq6xv9fg_b" /></p>
 <p>Bu duruma çözüm üretmek için bir kaç yol var. İlki resmi direk içeriğe
 ekleyip <strong>float:left</strong> ile sola yaslayarak çözmek </p>
-<div class="codehilite"><pre> <span class="nt">p</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">350px</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span><span class="m">#272722</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">p</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">350px</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#272722</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="nc">.introduction</span> <span class="nt">img</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="o">:</span><span class="m">0.8em</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>padding:10px; color:#fff; } p.introduction img { float:left;
-margin-right:0.8em } </p>
 <p>HTML kodu</p>
-<div class="codehilite"><pre> <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;introduction&quot;</span><span class="nt">&gt;&lt;img</span>
+<div class="codehilite"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;introduction&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;t1.jpg&quot;</span> <span class="na">width=</span><span class="s">&quot;93&quot;</span> <span class="na">height=</span><span class="s">&quot;100&quot;</span> <span class="nt">/&gt;</span>empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Velit esse cillum dolore eu fugiat nulla pariatur<span class="nt">&lt;/p&gt;</span>
 </pre></div>
 
 
-<p>src="t1.jpg" width="93" height="100" /&gt;empor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Velit esse cillum dolore eu fugiat nulla pariatur</p></p>
 <p>Örneği görmek için <a href="http://fatihhayrioglu.com/dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk4c.html">tıklayınız.</a></p>
 <p><img alt="" src="http://docs.google.com/File?id=dhctmbn6_394cpsn3shg_b" /></p>
 <p>Diğer bir yöntem bu harfi span içine alıp background olarak
 tanımlamaktır.</p>
-<h3>CSS3 ile ekstra kod kullanmadan</h3>
+<h2>CSS3 ile ekstra kod kullanmadan</h2>
 <p>Sayfamızın ilk paragrafının ilk harfine uygulama yapıyoruz.
-<a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/" title="first-child">first-child</a> seçicisi bu imkanı bize sağlar. ancak bu özelliği ie &lt;
+<a href="http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/">first-child</a> seçicisi bu imkanı bize sağlar. ancak bu özelliği ie &lt;
 9 desteklemiyor.</p>
-<div class="codehilite"><pre> <span class="nt">p</span><span class="nd">:first-child:first-letter</span><span class="p">{</span> <span class="k">font-size</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">p</span><span class="nd">:first-child:first-letter</span><span class="p">{</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">4.2em</span><span class="p">;</span>  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>  <span class="k">line-height</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span>  <span class="k">margin</span><span class="o">:</span> <span class="m">0.13em</span> <span class="m">0.13em</span> <span class="m">0.13em</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>4.2em; float: left; line-height: 1em; margin: 0.13em 0.13em 0.13em 0; }</p>
-<h3>Kaynaklar</h3>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/">http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/</a></li>
 <li><a href="http://safalra.com/web-design/typography/css-drop-caps/">http://safalra.com/web-design/typography/css-drop-caps/</a></li>
-<li><a href="http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=111" title="http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=111">http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=111</a>
-    özel fontlar ile </li>
-<li><a href="http://www.pauldruce.com/CSS%20DROP%20CAP">http://www.pauldruce.com/CSS%20DROP%20CAP</a> (bazı sorunlar ve
-    çözüm)</li>
-<li><a href="http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps">http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps</a>
-    (jquery ile)</li>
+<li><a href="http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=111" title="http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=111">http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=111</a></li>
+<li><a href="http://www.pauldruce.com/CSS%20DROP%20CAP">http://www.pauldruce.com/CSS%20DROP%20CAP</a> (bazı sorunlar ve çözüm)</li>
+<li><a href="http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps">http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps</a> (jquery ile)</li>
 <li><a href="http://www.htmldog.com/articles/dropcaps/">http://www.htmldog.com/articles/dropcaps/</a></li>
 <li><a href="http://css-tricks.com/snippets/css/drop-caps/">http://css-tricks.com/snippets/css/drop-caps/</a></li>
 <li><a href="http://oncemade.com/css-tip-drop-caps/">http://oncemade.com/css-tip-drop-caps/</a></li>
@@ -252,7 +295,6 @@ tanımlamaktır.</p>
 <li><a href="http://www.akxl.net/labs/articles/text-wrapped-drop-caps-in-css-using-the-first-letter-selector/">http://www.akxl.net/labs/articles/text-wrapped-drop-caps-in-css-using-the-first-letter-selector/</a></li>
 <li><a href="http://www.users.globalnet.co.uk/~arcus/html/dropcaps.html">http://www.users.globalnet.co.uk/~arcus/html/dropcaps.html</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">
