@@ -126,30 +126,47 @@ karşılayacak bir yapı bütünlüğü sağlıyor bize listeleme.</p>
 <p>Basit yapılı sayfalamalarda, daha doğrusu resim, ovallik içermeyen
 sayfalamalarda;</p>
 <p>XHTML Kodu:</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sayfalama&quot;</span><span class="nt">&gt;&lt;span</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sayfalama&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;pasif&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;#171;</span> Önceki<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;secili&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/2/&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/3/&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/4/&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/5/&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/6/&quot;</span><span class="nt">&gt;</span>6<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/7/&quot;</span><span class="nt">&gt;</span>7<span class="nt">&lt;/a&gt;</span>...<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/199/&quot;</span><span class="nt">&gt;</span>199<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/200/&quot;</span><span class="nt">&gt;</span>200<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/2/&quot;</span> <span class="na">class=</span><span class="s">&quot;next&quot;</span><span class="nt">&gt;</span>Sonraki <span class="ni">&amp;#187;</span><span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>class="pasif"&gt;&#171; Önceki</span><span
-class="secili">1</span><a href="static/page/2">2</a><a
-href="static/page/3">3</a><a href="static/page/4">4</a><a
-href="static/page/5">5</a><a href="static/page/6">6</a><a
-href="static/page/7">7</a>...<a href="static/page/199">199</a><a
-href="static/page/200">200</a><a href="static/page/2" class="next">Sonraki
-&#187;</a></div> </p>
 <p>CSS Kodumuz:</p>
-<div class="codehilite"><pre> <span class="nc">.sayfalama</span> <span class="p">{</span> <span class="err">  </span> <span class="err"> </span><span class="k">padding</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span> <span class="err">  </span> <span class="err"> </span><span class="k">margin</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.sayfalama</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.sayfalama</span> <span class="nt">a</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">2px</span> <span class="m">5px</span> <span class="m">2px</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#EEE</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="m">#036CB4</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.sayfalama</span> <span class="nt">a</span><span class="nd">:hover</span><span class="o">,</span>
+<span class="nc">.sayfalama</span> <span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#999</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#666</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.sayfalama</span> <span class="nc">.secili</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">2px</span> <span class="m">5px</span> <span class="m">2px</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#036CB4</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#036CB4</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#FFF</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.sayfalama</span> <span class="nc">.pasif</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">2px</span> <span class="m">5px</span> <span class="m">2px</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#EEE</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#DDD</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>3px;     text-align:center; } .sayfalama a {     padding: 2px 5px 2px
-5px;     margin: 2px;     border: 1px solid #EEE;     text-decoration:
-none;     color: #036CB4; } .sayfalama a:hover, .sayfalama a:active {
-    border: 1px solid #999;     color: #666; } .sayfalama .secili {   
- padding: 2px 5px 2px 5px;     margin: 2px;     border: 1px solid</p>
-<h1>036CB4;     font-weight: bold;     background-color: #036CB4;</h1>
-<p>color: #FFF; } .sayfalama .pasif {     padding: 2px 5px 2px 5px;   
- margin: 2px;     border: 1px solid #EEE;     color: #DDD; }</p>
 <p><img alt="Site Sayfalama" src="static/images/sayfalama1.gif" /></p>
 <p>Örneği görmek için <a href="static/dokumanlar/sayfalama1.html" title="Genel Sayfalama Örneği">tıklayınız.</a></p>
 <p>Basit kodlama tekniğinde linkler ve span kullanarak sayfalarımızı
@@ -165,73 +182,134 @@ bir tanım yaparız.</p>
 örnek olacak nitelikte. İkinci yöntem benim daha çok tercih ettiğim
 yöntem listeler ile sayfalama;</p>
 <p>XHTML</p>
-<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;sayfalama&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;li&gt;&lt;a</span>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;sayfalama&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>|<span class="err">&lt;</span><span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Önceki<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;span&gt;</span>1<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;Sayfa 2&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;Sayfa 3&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;Sayfa 4&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;Sayfa 5&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;Sayfa 6&quot;</span><span class="nt">&gt;</span>6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;Sayfa 7&quot;</span><span class="nt">&gt;</span>7<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;Sayfa 8&quot;</span><span class="nt">&gt;</span>8<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;Sayfa 9&quot;</span><span class="nt">&gt;</span>9<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;Sayfa 10&quot;</span><span class="nt">&gt;</span>10<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;Sonraki&quot;</span><span class="nt">&gt;</span>Sonraki<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">title=</span><span class="s">&quot;İlk Sayfa&quot;</span><span class="nt">&gt;</span>&gt;|<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<p>href=""&gt;|&lt;</a></li> <li><a href="static">Önceki</a></li>
-<li><span>1</span></li> <li><a href="static" title="Sayfa
-2">2</a></li> <li><a href="static" title="Sayfa 3">3</a></li>
-<li><a href="static" title="Sayfa 4">4</a></li> <li><a href="static"
-title="Sayfa 5">5</a></li> <li><a href="static" title="Sayfa
-6">6</a></li> <li><a href="static" title="Sayfa 7">7</a></li>
-<li><a href="static" title="Sayfa 8">8</a></li> <li><a href="static"
-title="Sayfa 9">9</a></li> <li><a href="static" title="Sayfa
-10">10</a></li> <li><a href="static"
-title="Sonraki">Sonraki</a></li> <li><a href="static" title="İlk
-Sayfa">&gt;|</a></li> </ul> </p>
 <p>CSS kodu</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">530px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">530px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">10px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">clear</span><span class="o">:</span><span class="k">left</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="nt">li</span> <span class="p">{</span>
+    <span class="k">font</span><span class="o">:</span><span class="k">bold</span> <span class="m">12px</span> <span class="n">Tahoma</span><span class="o">,</span> <span class="n">Geneva</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+    <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#005689</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="nt">li</span> <span class="nt">span</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">5px</span> <span class="m">8px</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+    <span class="k">font</span><span class="o">:</span><span class="k">bold</span> <span class="m">12px</span> <span class="n">Tahoma</span><span class="o">,</span> <span class="n">Geneva</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#005689</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#e2e2e2</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">5px</span> <span class="m">8px</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span><span class="k">block</span>
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#005689</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#e2e2e2</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>padding:10px 0 0 0; clear:left } ul.sayfalama li { font:bold 12px
-Tahoma, Geneva, sans-serif; color:#fff; float:left; list-style:none;
-margin:0 2px; background:#005689; } ul.sayfalama li span { padding:5px
-8px; display:block } ul.sayfalama li a { font:bold 12px Tahoma, Geneva,
-sans-serif; color:#005689; text-decoration:none;
-background-color:#e2e2e2; padding:5px 8px; display:block } ul.sayfalama
-li a:hover { background-color:#005689; color:#e2e2e2; } </p>
-<p></p>
-<img alt="Yahoyt Sayfalama" src="static/images/sayfalama3.gif" /></p>
+<p><img alt="Yahoyt Sayfalama" src="static/images/sayfalama3.gif" /></p>
 <p>Örneği görmek için <a href="static/dokumanlar/sayfalama3.html" title="Yahoyt Sayfalama Örneği">tıklayınız.</a></p>
 <p><strong>Sayfalama Örnek 3:</strong></p>
 <p>Son olarakda bonus.com.tr kampanyalarda yaptığım sayfalama.</p>
 <p>XHTML kodu</p>
-<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;sayfalama kapsayamamaSorunu&quot;</span><span class="nt">&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;sayfalama kapsayamamaSorunu&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;oncekiSayfa&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript:;&quot;</span><span class="nt">&gt;</span>önceki<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;seciliSayfaNo&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/1/&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/2/&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/3/&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/4/&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/5/&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/6/&quot;</span><span class="nt">&gt;</span>6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/7/&quot;</span><span class="nt">&gt;</span>7<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/8/&quot;</span><span class="nt">&gt;</span>8<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/9/&quot;</span><span class="nt">&gt;</span>9<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;sonrakiSayfa&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/page/2/&quot;</span><span class="nt">&gt;</span>sonraki<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<p><li class="oncekiSayfa"><a href="javascript:;">önceki</a></li>
-<li class="seciliSayfaNo"><a href="static/page/1">1</a></li>
-<li><a href="static/page/2">2</a></li> <li><a
-href="static/page/3">3</a></li> <li><a
-href="static/page/4">4</a></li> <li><a
-href="static/page/5">5</a></li> <li><a
-href="static/page/6">6</a></li> <li><a
-href="static/page/7">7</a></li> <li><a
-href="static/page/8">8</a></li> <li><a
-href="static/page/9">9</a></li> <li class="sonrakiSayfa"><a
-href="static/page/2">sonraki</a></li> </ul> </p>
 <p>CSS kodu:</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nc">.sayfalama</span><span class="p">{</span> <span class="k">padding</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nc">.sayfalama</span><span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#e7e7e7</span><span class="p">;</span>
+    <span class="k">border-top</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#e7e7e7</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+    <span class="k">margin-right</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="nt">li</span><span class="nc">.seciliSayfaNo</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/sayfalama_ard.gif)</span> <span class="k">right</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="nt">li</span><span class="nc">.seciliSayfaNo</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#e2ffcc</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">0</span> <span class="m">4px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/sayfalama_ard.gif)</span> <span class="m">0</span> <span class="m">-15px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#5b5d5a</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span><span class="m">12px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="nt">li</span><span class="nc">.oncekiSayfa</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>  
+    <span class="k">width</span><span class="o">:</span> <span class="m">6px</span><span class="p">;</span>  
+    <span class="k">height</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">3px</span> <span class="m">2px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/sayfalama_ard.gif)</span> <span class="m">0</span> <span class="m">-36px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>  
+    <span class="k">text-indent</span><span class="o">:-</span><span class="m">9999px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nc">.sayfalama</span> <span class="nt">li</span><span class="nc">.sonrakiSayfa</span> <span class="nt">a</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>  
+    <span class="k">width</span><span class="o">:</span> <span class="m">6px</span><span class="p">;</span>  
+    <span class="k">height</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">3px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/sayfalama_ard.gif)</span> <span class="m">0</span> <span class="m">-52px</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>  
+    <span class="k">text-indent</span><span class="o">:-</span><span class="m">9999px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>border-bottom:1px solid #e7e7e7; border-top:1px solid #e7e7e7; }
-ul.sayfalama li{ list-style:none; float:left; margin-right:10px;
-line-height:15px; } ul.sayfalama li.seciliSayfaNo{ background:
-url(images/sayfalama_ard.gif) right top no-repeat; } ul.sayfalama
-li.seciliSayfaNo a{ color:#e2ffcc; text-decoration:none; padding:0 4px;
-background: url(images/sayfalama_ard.gif) 0 -15px no-repeat;
-font-weight:bold; } ul.sayfalama li a{ color:#5b5d5a;
-text-decoration:none; font-size:12px; } ul.sayfalama li.oncekiSayfa a{
-display: block;   width: 6px;   height: 10px; margin:3px 2px 0 0;
-background: url(images/sayfalama_ard.gif) 0 -36px no-repeat;
-text-decoration: none;   text-indent:-9999px; } ul.sayfalama
-li.sonrakiSayfa a{ display: block;   width: 6px;   height: 10px;
-margin:3px 0 0 0; background: url(images/sayfalama_ard.gif) 0 -52px
-no-repeat; text-decoration: none;   text-indent:-9999px; } </p>
 <p>Listeleri yanyana koyup, seçili olan ardalanına yuvarlak kenarlı olması
 için li'ye ardalanın sag kısmını li içindeki bağlantıyada sol kısmını
 koyuyoruz.</p>
@@ -258,8 +336,7 @@ sitesini ziyaret etmenizi öneririm.</p>
 <li><a href="http://css.dzone.com/news/a-digg-flickr-pagination-style" title="http://css.dzone.com/news/a-digg-flickr-pagination-style">http://css.dzone.com/news/a-digg-flickr-pagination-style</a></li>
 <li><a href="http://www.smashingmagazine.com/2007/11/16/pagination-gallery-examples-and-good-practices/" title="http://www.smashingmagazine.com/2007/11/16/pagination-gallery-examples-and-good-practices/">http://www.smashingmagazine.com/2007/11/16/pagination-gallery-examples-and-good-practices/</a></li>
 <li><a href="http://komunitasweb.com/2009/03/42-pagination-design-inspiration/" title="http://komunitasweb.com/2009/03/42-pagination-design-inspiration/">http://komunitasweb.com/2009/03/42-pagination-design-inspiration/</a></li>
-</ul>
-</p><p><a href=".././css-ile-sayfalama-gorselligini-ayarlama/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././css-ile-sayfalama-gorselligini-ayarlama/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

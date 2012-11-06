@@ -5806,7 +5806,8 @@ ortadan kalkıyor.&lt;/p&gt;
 
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/tablo_satiri_kenar.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Kaynak&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://www.csarven.ca/tr-border-trick-for-ie" title="http://www.csarven.ca/tr-border-trick-for-ie"&gt;http://www.csarven.ca/tr-border-trick-for-ie&lt;/a&gt;&lt;/p&gt;</summary><category term="ie6"></category><category term="ie7"></category><category term="internet explorer"></category><category term="kenar-çizgisi"></category><category term="problem"></category></entry><entry><title>CSS İpucu 22: iPhone için CSS Yazmak</title><link href="http://www.fatihhayrioglu.com/css-ipucu-22-iphone-icin-css-yazmak/" rel="alternate"></link><updated>2009-07-22T12:38:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-07-22:css-ipucu-22-iphone-icin-css-yazmak/</id><summary type="html">&lt;p&gt;&lt;img alt="apple-iphone" src="/images/apple-iphone.jpg" title="apple-iphone" /&gt;Gelişen ve yaygınlaşan mobil cihazlar bizlere bir mecra
+&lt;p&gt;&lt;a href="http://www.csarven.ca/tr-border-trick-for-ie" title="http://www.csarven.ca/tr-border-trick-for-ie"&gt;http://www.csarven.ca/tr-border-trick-for-ie&lt;/a&gt;&lt;/p&gt;</summary><category term="ie6"></category><category term="ie7"></category><category term="internet explorer"></category><category term="kenar-çizgisi"></category><category term="problem"></category></entry><entry><title>CSS İpucu 22: iPhone için CSS Yazmak</title><link href="http://www.fatihhayrioglu.com/css-ipucu-22-iphone-icin-css-yazmak/" rel="alternate"></link><updated>2009-07-22T12:38:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-07-22:css-ipucu-22-iphone-icin-css-yazmak/</id><summary type="html">&lt;p&gt;&lt;img alt="apple-iphone" src="/images/apple-iphone.jpg" title="apple-iphone" /&gt;&lt;/p&gt;
+&lt;p&gt;Gelişen ve yaygınlaşan mobil cihazlar bizlere bir mecra
 daha açacağa benziyor. Gelecekte etkisini daha çok hissettirecek cep
 telefonu vb. ürünlerden internete girme isteği. Şimdilerde kendini
 gösteriyor. Benim size burada bahsedeceğim ipucu küçük ama kullanışlı
@@ -5814,18 +5815,19 @@ bir ipucu olacaktır.&lt;/p&gt;
 &lt;p&gt;Bir kaç sitede gördükten sonra ve bende bir iphone projesine başlayacak
 olmamdan dolayı buraya eklemeyi uygun gördüm. Daha önce &lt;a href="http://www.fatihhayrioglu.com/cssde-cikti-alma-print/" title="çıktı almak için(print)"&gt;çıktı almak için(print)&lt;/a&gt; benzer bir yapıyı kullanmıştık.&lt;/p&gt;
 &lt;p&gt;Kodumuz çok basit&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;–&amp;gt; &amp;lt;link media=&amp;quot;only&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;–&amp;gt; &amp;lt;link media=&amp;quot;only screen and (max-device-width: 480px)&amp;quot; href=&amp;quot;iPhone.css&amp;quot; type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; /&amp;gt; &amp;lt;!–&amp;lt;![endif]–&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;screen and (max-device-width: 480px)" href="iPhone.css" type="text/css"
-rel="stylesheet" /&amp;gt; &amp;lt;!–&amp;lt;![endif]–&amp;gt; &lt;/p&gt;
 &lt;p&gt;veyahut&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="k"&gt;@media&lt;/span&gt; &lt;span class="nt"&gt;only&lt;/span&gt; &lt;span class="nt"&gt;screen&lt;/span&gt; &lt;span class="nt"&gt;and&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;max-device-width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@media&lt;/span&gt; &lt;span class="nt"&gt;only&lt;/span&gt; &lt;span class="nt"&gt;screen&lt;/span&gt; &lt;span class="nt"&gt;and&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;max-device-width&lt;/span&gt;&lt;span class="nd"&gt;:480px&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="err"&gt;  &lt;/span&gt;
+    &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;480px) {   body {color:#000;} } &lt;/p&gt;
 &lt;p&gt;şeklinde bir tanımlamada yapabiliyoruz. İlk koddaki ie şartlı koşulu
 bazı eski ie sürümlerinde bu kodu algılama durumu içindir.&lt;/p&gt;
 &lt;p&gt;Yukarıdaki tanımlar sadece iPhone'da görünecektir. İşin püf noktasını
@@ -5835,8 +5837,7 @@ bazı eski ie sürümlerinde bu kodu algılama durumu içindir.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-mediaqueries/" title="http://www.w3.org/TR/css3-mediaqueries/"&gt;http://www.w3.org/TR/css3-mediaqueries/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.evotech.net/blog/2007/07/web-development-for-the-iphone/" title="http://www.evotech.net/blog/2007/07/web-development-for-the-iphone/"&gt;http://www.evotech.net/blog/2007/07/web-development-for-the-iphone/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://squaregirl.com/blog/2009/6/1/iphone-css.html" title="http://squaregirl.com/blog/2009/6/1/iphone-css.html"&gt;http://squaregirl.com/blog/2009/6/1/iphone-css.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="CSS"></category><category term="iPhone"></category></entry><entry><title>Dış Hat Çizgilerini(outline) Kaldırmak</title><link href="http://www.fatihhayrioglu.com/dis-hat-cizgilerinioutline-kaldirmak/" rel="alternate"></link><updated>2009-06-24T11:01:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-06-24:dis-hat-cizgilerinioutline-kaldirmak/</id><summary type="html">&lt;p&gt;Ben bu konuyu aslında dış hat çizgilerini kaldırmak olarak
+&lt;/ul&gt;</summary><category term="CSS"></category><category term="iPhone"></category></entry><entry><title>Dış Hat Çizgilerini(outline) Kaldırmak</title><link href="http://www.fatihhayrioglu.com/dis-hat-cizgilerinioutline-kaldirmak/" rel="alternate"></link><updated>2009-06-24T11:01:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-06-24:dis-hat-cizgilerinioutline-kaldirmak/</id><summary type="html">&lt;p&gt;Ben bu konuyu aslında dış hat çizgilerini kaldırmak olarak
 adlandıracaktım. Sonra bu konudan kitapta bahsettiğim halde sitemde
 bahsetmediğimi fark ettim ve &lt;a href="http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/" title="dış hat çizgisi özellikleri"&gt;dış hat çizgisi özellikleri&lt;/a&gt; adlı bir
 önceki makaleyi yazdım. Sonra da bu makaleye geçtim. Ancak biraz
@@ -5865,7 +5866,9 @@ ile sadece sayfa içindeki form elemanlarında gezebiliyoruz.&lt;/p&gt;
 elemanlarını seçince sola doğru uzayarak çıkan kesikli çizgi yoksa ie ve
 chrome daki gibi elemanı saran kesikli çizgi bence kötü görünmüyor.
 Firefox'daki bu sorunu çözmek için bir kod var.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;hidden&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5873,7 +5876,9 @@ Firefox'daki bu sorunu çözmek için bir kod var.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="outline çizgi düzeltme" src="/images/outline_cizgi_ff.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bide bu çizgileri hiç görmek istemeyenler var. Bunu engellemenin en
 kolay yolu outline:none veya outline:0 tanımlarıdır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;outline&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;outline&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5891,20 +5896,26 @@ her bastığımızda nerede olduğumuzu kestirmekte zorlanıyoruz. Burada tek
 yardımcımız alttaki tarayıcı çubuğunda her tab tuşuna bastığımızda
 bağlantıdan bağlantıya geçişlerde durum çubuğunda bağlantıların
 gösterilmesidir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#004276&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#004276&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;outline&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;outline: none; } &lt;/p&gt;
 &lt;p&gt;tanımı nedeni ile dış hat çizgileri bize yardımcı olmayacaktır. &lt;/p&gt;
 &lt;p&gt;Şimdi &lt;a href="http://webaim.org/" title="webaim.org/"&gt;webaim.org/&lt;/a&gt; adresine girince klavyeden siteyi gezin. Bu sitede
 outline değeri standart bırakılmış ve ayrıca odaklanmalar için ayrı bir
 tanım yapılmıştır. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:active&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:focus&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:active&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:focus&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#FFFFCC&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#BF1722&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;underline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;background-color:#FFFFCC; color:#BF1722; text-decoration:underline; }&lt;/p&gt;
 &lt;p&gt;Tanımları yardımı ile odaklanılan bağlantılar daha belirgin hale
 getirilmiştir. Böylece klavyesi ile siteyi gezmeye çalışan insanlara
 rahatlık sağlanmış olur.&lt;/p&gt;
@@ -5928,14 +5939,21 @@ daha kötü bir görüntüye neden oluyor.&lt;/p&gt;
 içinde bir çözüm üretelim. Farenin üzerine geldiği hali(:hover)
 klavyenin tab'ı ile geldiğinde de uygulayalım. outline'ı kaldıralım
 tabi.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;80px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;80px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/degisen_resim.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-indent&lt;/span&gt;&lt;span class="o"&gt;:-&lt;/span&gt;&lt;span class="m"&gt;999px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:focus&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-80px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;outline&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;80px; height: 80px; background: url(images/degisen_resim.gif) 0 0
-no-repeat; text-decoration: none; text-indent:-999px; }
-a:hover.anasayfayaDon, a:focus.anasayfayaDon { background-position:
--80px 0; outline:none; } &lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/outline_kaldir2.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Şeklinde görünecektir. Bu görüntüyü Firefox, Google Chrome ve ie8'de
 aldım.&lt;/p&gt;
@@ -5943,12 +5961,13 @@ aldım.&lt;/p&gt;
 sınıfını kullanacağız. Buna rağmen olmayacaktır. outline özelliklerini
 desteklemeyen ie 6 ve ie7'de ise hala outline kesikli çizgilerinin
 görülmesi ilginç.  Bunun içinde şöyle bir çözüm yolu var. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:focus&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:active&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-80px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;outline&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;expression&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hideFocus&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;true&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="k"&gt;outline&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;a:focus.anasayfayaDon, a:active.anasayfayaDon { background-position:
--80px 0; outline:expression(hideFocus='true'); outline:none; }&lt;/p&gt;
 &lt;p&gt;expression özelliğini sadece ie destekliyor. Daha önce bahsetmiştik. Bu
 bir bakıma css içinde javascript çalıştırmak gibi bir şeydir. Bu kod
 sonunda örneğimiz ie de de çalışacaktır.&lt;/p&gt;
@@ -5973,8 +5992,7 @@ sonunda örneğimiz ie de de çalışacaktır.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://diveintomark.org/archives/2006/04/25/new-focus-indicator" title="http://diveintomark.org/archives/2006/04/25/new-focus-indicator"&gt;http://diveintomark.org/archives/2006/04/25/new-focus-indicator&lt;/a&gt;
     (odaklanmayı arttıran firefox eklentisi)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://accessites.org/site/2007/05/keyboard-friendly-link-focus/" title="http://accessites.org/site/2007/05/keyboard-friendly-link-focus/"&gt;http://accessites.org/site/2007/05/keyboard-friendly-link-focus/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="dış-hat-çizgisi"></category><category term="Firefox 3"></category><category term="ie6"></category><category term="ie7"></category><category term="ie8"></category><category term="klav"></category><category term="klavye-kullanmak"></category><category term="outline"></category></entry><entry><title>Dış hat çizgisi(outline) özellikleri</title><link href="http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/" rel="alternate"></link><updated>2009-06-22T22:55:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-06-22:dis-hat-cizgisioutline-ozellikleri/</id><summary type="html">&lt;p&gt;&lt;img alt="dış hat çizgisi" src="/images/dis_hat_cizgidi.gif" title="dış hat çizgisi" /&gt;CSS2 ile birlikte gelen kutu dışı
+&lt;/ul&gt;</summary><category term="dış-hat-çizgisi"></category><category term="Firefox 3"></category><category term="ie6"></category><category term="ie7"></category><category term="ie8"></category><category term="klav"></category><category term="klavye-kullanmak"></category><category term="outline"></category></entry><entry><title>Dış hat çizgisi(outline) özellikleri</title><link href="http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/" rel="alternate"></link><updated>2009-06-22T22:55:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-06-22:dis-hat-cizgisioutline-ozellikleri/</id><summary type="html">&lt;p&gt;&lt;img alt="dış hat çizgisi" src="/images/dis_hat_cizgidi.gif" title="dış hat çizgisi" /&gt;CSS2 ile birlikte gelen kutu dışı
 şekillendirme(outline) özellikleri kenar  çizgisine(border) benzer bir
 özelliktir. Fakat kenar çizgisi özelliğinden iki önemli farkı vardır.
 İlki outline özelliği kenar çizgisi gibi normal akışı etkilemez. Bir
@@ -6000,10 +6018,11 @@ erişmesini sağlamak değil mi?&lt;/p&gt;
 &lt;p&gt;Şimdi dış hat çizgileri(outline) özelliklerine bir göz atalım.&lt;/p&gt;
 &lt;h2&gt;Dış hat çizgisi biçemi (outline-style)&lt;/h2&gt;
 &lt;p&gt;Dış hat çizgisinin biçemini belirlemek için kullanırız.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; outline-style: &lt;deger&gt;&lt;br /&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; outline-style: &amp;lt;deger&gt;&lt;br /&gt;
 &lt;strong&gt;Aldığı değerler:&lt;/strong&gt; none | dotted | dashed | solid | double | groove |
 ridge | inset | outset | inherit&lt;br /&gt;
-&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; none &lt;strong&gt;Uygulanabilen elemanlar:&lt;/strong&gt; Tüm elemanlara
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; none 
+&lt;strong&gt;Uygulanabilen elemanlar:&lt;/strong&gt; Tüm elemanlara
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;Dış hat biçemi none değeri haricindeki değerler için görüntülenir.&lt;/p&gt;
 &lt;ul&gt;
@@ -6022,20 +6041,16 @@ ridge | inset | outset | inherit&lt;br /&gt;
 &lt;li&gt;outset: inset'in zıddı; Dış hat çizgisi kutunun tamamının kabartma
     gibi görünmesine sebep olur.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Uyumu:**  
-Internet Explorer 6, 7(desteklemiyor) 8 (destekliyor)  
-Firefox 1.5+  
-Opera 9.2+  
-Safari 1.3+  
-CSS 2+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Uyumu:&lt;/strong&gt;&lt;br /&gt;
+Internet Explorer 6, 7(desteklemiyor) 8 (destekliyor)&lt;br /&gt;
+Firefox 1.5+&lt;br /&gt;
+Opera 9.2+&lt;br /&gt;
+Safari 1.3+&lt;br /&gt;
+CSS 2+&lt;/p&gt;
 &lt;h2&gt;Dış hat çizgisi genişliği (outline-width)&lt;/h2&gt;
 &lt;p&gt;Atandığı elemanın dışına çizilen hattın kalınlığını belirlemek için
 kullanırız.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; outline-width: &lt;deger&gt;&lt;br /&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; outline-width: &amp;lt;deger&gt;&lt;br /&gt;
 &lt;strong&gt;Aldığı değerler:&lt;/strong&gt; thin | medium | thick | length | inherit&lt;br /&gt;
 &lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; Medium&lt;br /&gt;
 &lt;strong&gt;Uygulanabilen elemanlar:&lt;/strong&gt; Tüm elemanlara&lt;br /&gt;
@@ -6043,41 +6058,33 @@ kullanırız.&lt;/p&gt;
 &lt;p&gt;Dış hat çizgisi genişliği border-width gibi CSS uzunluk değerlerini (px,
 pt, em) ve anahtar kelimeler(thin &amp;lt;= medium &amp;lt;= thick) alır, ancak
 yüzde değer ve eksi değer almaz.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Uyumu:**  
-Internet Explorer 6, 7(desteklemiyor) 8 (destekliyor)  
-Firefox 1.5+  
-Opera 9.2+  
-Safari 1.3+  
-CSS 2+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Uyumu:&lt;/strong&gt;&lt;br /&gt;
+Internet Explorer 6, 7(desteklemiyor) 8 (destekliyor)&lt;br /&gt;
+Firefox 1.5+&lt;br /&gt;
+Opera 9.2+&lt;br /&gt;
+Safari 1.3+&lt;br /&gt;
+CSS 2+&lt;/p&gt;
 &lt;h2&gt;Dış hat çizgisi rengi (outline-color)&lt;/h2&gt;
 &lt;p&gt;Atandığı elemanın dışına çizilen hattın rengini belirlemek için
 kullanırız.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; outline-color: &lt;deger&gt;&lt;br /&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; outline-color: &amp;lt;deger&gt;&lt;br /&gt;
 &lt;strong&gt;Aldığı Değerler:&lt;/strong&gt; color | invert | inherit&lt;br /&gt;
 &lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; invert&lt;br /&gt;
 &lt;strong&gt;Uygulanabilen elemanlar:&lt;/strong&gt; tüm elemanlara&lt;br /&gt;
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
 &lt;p&gt;CSS'in desteklediği renk değerlerini kullanabiliriz, hatta invert
 değerinide kullanabiliriz. invert, rengi tersine çevirir.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Uyumu:**  
-Internet Explorer 6, 7(desteklemiyor) 8 (destekliyor)  
-Firefox 1.5+  
-Opera 9.2+  
-Safari 1.3+  
-CSS 2+
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Uyumu:&lt;/strong&gt;&lt;br /&gt;
+Internet Explorer 6, 7(desteklemiyor) 8 (destekliyor)&lt;br /&gt;
+Firefox 1.5+&lt;br /&gt;
+Opera 9.2+&lt;br /&gt;
+Safari 1.3+&lt;br /&gt;
+CSS 2+&lt;/p&gt;
 &lt;h2&gt;Dış hat çizgisi (outline)&lt;/h2&gt;
 &lt;p&gt;Dış hat çizgisi(outline) özelliği yukarıda gördüğümüz özelliklerin tek
 seferde kullanılmasını sağlayan bir kısa yoldur.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; outline: &lt;deger&gt;&lt;br /&gt;
-&lt;strong&gt;Aldığı Değerler:&lt;/strong&gt; [ &lt;outline-color&gt; || &lt;outline-style&gt; || &lt;outlinewidth&gt;] | inherit&lt;br /&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; outline: &amp;lt;deger&gt;&lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler:&lt;/strong&gt; [ &amp;lt;outline-color&gt; || &amp;lt;outline-style&gt; || &amp;lt;outlinewidth&gt;] | inherit&lt;br /&gt;
 &lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; Tanımlı değildir&lt;br /&gt;
 &lt;strong&gt;Uygulanabilen elemanlar:&lt;/strong&gt; Tüm elemanlara&lt;br /&gt;
 &lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
@@ -6101,17 +6108,12 @@ olmayacaktır. Bu da kenar çizgisi(border) ile arasındaki farklardan
 biridir.&lt;/p&gt;
 &lt;p&gt;Dış hat çizgileri elemana odaklanıldığında görsel bir çıkıntı gibi
 görünmesini sağlayabilir.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Uyumu:**  
-Internet Explorer 6, 7(desteklemiyor) 8 (destekliyor)  
-Firefox 1.5+  
-Opera 9.2+  
-Safari 1.3+  
-CSS 2+
-
-&lt;/div&gt;
-
-&lt;/p&gt;</summary><category term="bağlantılar"></category><category term="Border"></category><category term="dış-hat-çizgisi"></category><category term="Erişebilirlik"></category><category term="kenar-çizgisi"></category><category term="klavye-kullanmak"></category><category term="outline"></category></entry><entry><title>Firefox'un Negatif Değerli z-index Desteği</title><link href="http://www.fatihhayrioglu.com/firefoxun-negatif-degerli-z-index-destegi/" rel="alternate"></link><updated>2009-06-17T21:09:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-06-17:firefoxun-negatif-degerli-z-index-destegi/</id><summary type="html">&lt;p&gt;Geçen bir projede z-index ile ilgili bir tanım yaptım. Üçlü bir tanımdı
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Uyumu:&lt;/strong&gt;&lt;br /&gt;
+Internet Explorer 6, 7(desteklemiyor) 8 (destekliyor)&lt;br /&gt;
+Firefox 1.5+&lt;br /&gt;
+Opera 9.2+&lt;br /&gt;
+Safari 1.3+&lt;br /&gt;
+CSS 2+&lt;/p&gt;</summary><category term="bağlantılar"></category><category term="Border"></category><category term="dış-hat-çizgisi"></category><category term="Erişebilirlik"></category><category term="kenar-çizgisi"></category><category term="klavye-kullanmak"></category><category term="outline"></category></entry><entry><title>Firefox'un Negatif Değerli z-index Desteği</title><link href="http://www.fatihhayrioglu.com/firefoxun-negatif-degerli-z-index-destegi/" rel="alternate"></link><updated>2009-06-17T21:09:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-06-17:firefoxun-negatif-degerli-z-index-destegi/</id><summary type="html">&lt;p&gt;Geçen bir projede z-index ile ilgili bir tanım yaptım. Üçlü bir tanımdı
 sırası ile elemanlara z-index:100, z-index:50 ve z-index:0 değerleri
 atadım. Aslında 1, 2, 3 diyede tanımlama yapabilirdim, ama araya başka
 bir eleman girerse diye böyle aralıklı değerler verdim.&lt;/p&gt;
@@ -6138,8 +6140,7 @@ tanımı kullanabiliriz.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://css.dzone.com/news/css-support-firefox-3-and-oper" title="http://css.dzone.com/news/css-support-firefox-3-and-oper"&gt;http://css.dzone.com/news/css-support-firefox-3-and-oper&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://archivist.incutio.com/viewlist/css-discuss/5061" title="http://archivist.incutio.com/viewlist/css-discuss/5061"&gt;http://archivist.incutio.com/viewlist/css-discuss/5061&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://reference.sitepoint.com/css/z-index" title="http://reference.sitepoint.com/css/z-index"&gt;http://reference.sitepoint.com/css/z-index&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="Firefox"></category><category term="Firefox 2"></category><category term="ie6"></category><category term="ie7"></category><category term="negatif-değer"></category><category term="z-index"></category></entry><entry><title>CSS Kod Yazma Düzeni</title><link href="http://www.fatihhayrioglu.com/css-kod-yazma-duzeni/" rel="alternate"></link><updated>2009-06-03T16:08:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-06-03:css-kod-yazma-duzeni/</id><summary type="html">&lt;p&gt;CSS yazarken bazı kurallar koyarsak ve bu kurallara göre kodumuzu
+&lt;/ul&gt;</summary><category term="Firefox"></category><category term="Firefox 2"></category><category term="ie6"></category><category term="ie7"></category><category term="negatif-değer"></category><category term="z-index"></category></entry><entry><title>CSS Kod Yazma Düzeni</title><link href="http://www.fatihhayrioglu.com/css-kod-yazma-duzeni/" rel="alternate"></link><updated>2009-06-03T16:08:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-06-03:css-kod-yazma-duzeni/</id><summary type="html">&lt;p&gt;CSS yazarken bazı kurallar koyarsak ve bu kurallara göre kodumuzu
 yazarsak bir çok konuda yararını göreceğiz.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Daha hızlı kod yazma: Belli bir standardınız oluşturunca kod yazmak
@@ -6162,29 +6163,35 @@ optimum kod elde edelim.&lt;/p&gt;
 &lt;p&gt;CSS dokümanınız indeksini hazırlayınız. Büyük projelerde tercih edilecek
 bir husus bence. Şimdiye kadar hiç uygulamadım ama büyük projelerde
 uygulamanın yararlı olacağını düşündüğüm bir uygulama&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;/*------------------------------------------------------------------&lt;/span&gt;
+&lt;span class="c"&gt;[CSS Kod indeksi] &lt;/span&gt;
+&lt;span class="c"&gt;1. Body &lt;/span&gt;
+&lt;span class="c"&gt;2. Üst Alan / #ustAlan &lt;/span&gt;
+&lt;span class="c"&gt;2.1. Menü / #menu &lt;/span&gt;
+&lt;span class="c"&gt;3. İçerik Alanı / #icerik &lt;/span&gt;
+&lt;span class="c"&gt;3.1. Sol Kolon / #solKolon &lt;/span&gt;
+&lt;span class="c"&gt;3.2. Sidebar / #yanKolon &lt;/span&gt;
+&lt;span class="c"&gt;3.2.1. RSS / #rss &lt;/span&gt;
+&lt;span class="c"&gt;3.2.2. Arama / #arama &lt;/span&gt;
+&lt;span class="c"&gt;3.2.3. Kutular / .kutu &lt;/span&gt;
+&lt;span class="c"&gt;4. Alt Alan / #altAlan&lt;/span&gt;
+&lt;span class="c"&gt;-------------------------------------------------------------------*/&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;/*------------------------------------------------------------------
-[CSS Kod indeksi] 1. Body 2. Üst Alan / #ustAlan 2.1. Menü / #menu 3.
-İçerik Alanı / #icerik 3.1. Sol Kolon / #solKolon 3.2. Sidebar /&lt;/p&gt;
-&lt;h1&gt;yanKolon 3.2.1. RSS / #rss 3.2.2. Arama / #arama 3.2.3. Kutular /&lt;/h1&gt;
-&lt;p&gt;.kutu 4. Alt Alan / #altAlan
--------------------------------------------------------------------*/&lt;/p&gt;
 &lt;h2&gt;2. CSS dokümanınıza imzanızı atın&lt;/h2&gt;
 &lt;p&gt;Kod yazarının veya yazarlarının imzası ve genel bilgilerini yazarak
 kodlarımızı başlamalıyız.(Bende bunu ara sıra unutuyorum. Ama unutmamak
 gerekli)&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;/************************************************ &lt;/span&gt;
+&lt;span class="c"&gt;MYK Medya - http://myk-medya.com/ yahoyt.com &lt;/span&gt;
+&lt;span class="c"&gt;fatih hayrioglu &lt;/span&gt;
+&lt;span class="c"&gt;28 Mayis 2009 &lt;/span&gt;
+&lt;span class="c"&gt;ie6, ff, opera. chrome, safari &lt;/span&gt;
+&lt;span class="c"&gt;************************************************/&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;/&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;
-&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt; MYK Medya -
-http://myk-medya.com/ yahoyt.com fatih hayrioglu 28 Mayis 2009 ie6, ff,
-opera. chrome, safari &lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;
-&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;/ &lt;/p&gt;
 &lt;h2&gt;3. Seçici isimlendirirken standart ve anlamlı isimler verin&lt;/h2&gt;
 &lt;p&gt;Seçici isimleri ve genel isimlendirmede bir standardı oturtun.&lt;/p&gt;
 &lt;p&gt;Anlamlı isimler verin. Anlamlı isimler vermek kod yazarken ve daha
@@ -6196,14 +6203,14 @@ daha mantıklı ve anlamlı bir isimlendirmedir.&lt;/p&gt;
 &lt;p&gt;İsimlendirmede bir standardınız olsun. Benim standardım bu konuda ilk
 harf küçük, sonraki kelimelerin baş harfi büyük ile başlar ve bitişik
 yazılır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#icerikOzu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;..&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nf"&gt;#solIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;..&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#icerikOzu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;..&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nf"&gt;#solIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;..&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Bu benim standardım. Başka türlü standartlarda vardır. Her kesin
 kendince bir standardı olabilir. Mesela alt çizgiyle ayıranlar var.
 (-)Tire ile ayıranlar var.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#icerik_ozu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;..&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nf"&gt;#sol-icerik-alani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;..&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#icerik_ozu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;..&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nf"&gt;#sol-icerik-alani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;..&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -6215,54 +6222,69 @@ yazarken.&lt;/p&gt;
 &lt;p&gt;CSS tanımlarında kısaltmaları kullanın. CSS kısaltmaları hakkında daha
 fazla bilgi için &lt;a href="http://www.fatihhayrioglu.com/cssde-kisaltmalar/" title="http://www.fatihhayrioglu.com/cssde-kisaltmalar/"&gt;http://www.fatihhayrioglu.com/cssde-kisaltmalar/&lt;/a&gt;
 okumanızı tavsiye ederim.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;bold&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;verdana&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;bold&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; 
+&lt;span class="nt"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;verdana&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;sans-serif&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; 
+&lt;span class="nt"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;11px&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; 
+&lt;span class="nt"&gt;line-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;15px&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;sans-serif; font-size: 11px; line-height: 15px; &lt;/p&gt;
 &lt;p&gt;yerine&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;bold&lt;/span&gt; &lt;span class="nt"&gt;11px&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;15px&lt;/span&gt; &lt;span class="nt"&gt;verdana&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;sans-serif&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;bold&lt;/span&gt; &lt;span class="nt"&gt;11px&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;15px&lt;/span&gt; &lt;span class="nt"&gt;verdana&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;sans-serif&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;5. CSS dokümanlarınızı anlamlı bölümlere ayırın.&lt;/h2&gt;
 &lt;p&gt;Büyük projelerde css dokümanlarını birden fazla bölümlere ayırarak daha
 düzenli ve kolay kodlanabilir dokümanlar elde ederiz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(/&lt;/span&gt;&lt;span class="nt"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;iskelet&lt;/span&gt;&lt;span class="nc"&gt;.css&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;@import&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(/&lt;/span&gt;&lt;span class="nt"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;iskelet&lt;/span&gt;&lt;span class="nc"&gt;.css&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(/&lt;/span&gt;&lt;span class="nt"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;fontlar&lt;/span&gt;&lt;span class="nc"&gt;.css&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(/&lt;/span&gt;&lt;span class="nt"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;renkler&lt;/span&gt;&lt;span class="nc"&gt;.css&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(/&lt;/span&gt;&lt;span class="nt"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;sifirlama&lt;/span&gt;&lt;span class="nc"&gt;.css&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;url(/css/fontlar.css); @import url(/css/renkler.css); @import
-url(/css/sifirlama.css); &lt;/p&gt;
 &lt;p&gt;Ben yukarıdaki yöntemi genelde çok büyük projelerde kullanmayı tercih
 ediyorum. Normalde ve genellikle tek ve iki css dokümanı ile projeyi
 bitiriyorum. Performans açısından bu daha iyi ayrıca.&lt;/p&gt;
 &lt;p&gt;Eğer CSS sıfırlama tekniklerinden birini kullanacaksam Bunu imzadan
 sonraya yazmak. Yada site genel tanımlarını başa yazmak. &lt;a href="http://developer.yahoo.com/yui/reset/" title="YUI CSS REset"&gt;YUI CSS Reset&lt;/a&gt; ve &lt;a href="http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/" title="Eric Meyer"&gt;Eric Meyer&lt;/a&gt;'in ki var mesela.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;/************************&lt;/span&gt;
+&lt;span class="c"&gt;************************&lt;/span&gt;
+&lt;span class="c"&gt;MYK Medya - http://myk-medya.com/&lt;/span&gt;
+&lt;span class="c"&gt;fatih hayrioglu&lt;/span&gt;
+&lt;span class="c"&gt;28 Mayis 2009&lt;/span&gt;
+&lt;span class="c"&gt;ie6, ff, opera. chrome, safari&lt;/span&gt;
+&lt;span class="c"&gt;************************&lt;/span&gt;
+&lt;span class="c"&gt;************************/&lt;/span&gt;
+
+&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/*kapsayamam sorunu */&lt;/span&gt;
+&lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="c"&gt;/* IE-mac de bu bolumu sakla \ */&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="c"&gt;/* IE-mac bu bolumu saklam artik */&lt;/span&gt;
+&lt;span class="c"&gt;/*kapsayamam sorunu */&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;/&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;
-&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt; MYK Medya -
-http://myk-medya.com/ fatih hayrioglu 28 Mayis 2009 ie6, ff, opera.
-chrome, safari &lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;
-&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;/ body{margin:0;
-padding:0;} ul{margin:0; padding:0; list-style:none;} /&lt;em&gt;kapsayamam
-sorunu &lt;/em&gt;/ .kapsayamamaSorunu:after {content: "."; display: block;
-height: 0; clear: both; visibility: hidden;} .kapsayamamaSorunu{display:
-inline-block;} /&lt;em&gt; IE-mac de bu bolumu sakla  &lt;/em&gt;/ * html
-.kapsayamamaSorunu{height: 1%;} .kapsayamamaSorunu {display: block;} /&lt;em&gt;
-IE-mac bu bolumu saklam artik &lt;/em&gt;/ /&lt;em&gt;kapsayamam sorunu &lt;/em&gt;/ &lt;/p&gt;
 &lt;h2&gt;6. Her satıra bir tanım yöntemini kullanın&lt;/h2&gt;
 &lt;p&gt;CSS özelliği tanımlarken her satıra bir tanım yazarak daha uygun kod
 elde edebiliriz.&lt;/p&gt;
 &lt;p&gt;Ben daha önce her satıra bir özellik tanımı yapıyordum.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#aramaAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;265px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#aramaAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;265px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;3px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#525252&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;background-color:#fff; border:3px solid #525252; } &lt;/p&gt;
 &lt;p&gt;Bu yöntemde kod açık ve görüntü olarak daha kullanışlı görünse de, fazla
 boşluklar sorun oluşturmaya başladı. CSS kodları çok uzayınca kaydırma
 çubuğu ile çok aşağılara in yukarı çık zaman kaybına neden oluyordu.&lt;/p&gt;
@@ -6272,49 +6294,71 @@ bu yönteme ilk geçme nedenim olan optimizasyonda css kodlarımı optimize
 ederken fazla boşluklardan kurtulmam gerektiğiydi. Daha sonra bu
 yöntemin daha avantajlı olduğunu gördüm, ayrıca daha derli toplu kodlar
 oluşturmama yaradı. Bundan sonra böyle kod yazamaya başladım.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#anaKapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="err"&gt; &lt;/span&gt; &lt;span class="nf"&gt;#ustalan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#anaKapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;    
+&lt;span class="nf"&gt;#ustalan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;    
+&lt;span class="nf"&gt;#icerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;    
+&lt;span class="nf"&gt;#solIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;    
+&lt;span class="nf"&gt;#sagIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#altAlan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1 class=".."&gt;icerikAlani{...}     #solIcerikAlani{...}     #sagIcerikAlani&lt;/h1&gt;
-&lt;h1 class=".."&gt;altAlan&lt;/h1&gt;
 &lt;p&gt;Kodlarımızın daha okunabilir olması içinde girintili bir yapıyı tercih
 etmeliyiz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#icerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#icerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#solIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;13px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;647px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#icerikOzu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#sagIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;300px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;padding-top:20px;}    #solIcerikAlani{float:left; width:647px;
-margin-right:13px} #icerikOzu{float:left; clear:left;
-margin-top:20px}    #sagIcerikAlani{float:left; width:300px;
-margin:0;}   &lt;/p&gt;
 &lt;h2&gt;7. Kodlarınızı yorum satırları ile açıklayıcı hale getirin.&lt;/h2&gt;
 &lt;p&gt;Kodumuzun anlaşılabilir olması için yorum satırları eklemeliyiz.
 Bölümleri ve özel alanları yorum kodu ile belirleyerek anlaşılabilirliği
 arttırabiliriz. Böylelikle bölümler arasında daha kolay ayrım
 yapabiliriz. Kod okunabilirliği daha fazla olacaktır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#anaKapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;960px&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#anaKapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;960px&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;    
+&lt;span class="c"&gt;/**************************************************** ustalan   */&lt;/span&gt;
+&lt;span class="nf"&gt;#ustalan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;padding-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/**************************************************** icerikAlani   */&lt;/span&gt;
+&lt;span class="nf"&gt;#icerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/*sol icerik alani */&lt;/span&gt;    
+    &lt;span class="nf"&gt;#solIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;647px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;13px&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+        &lt;span class="nf"&gt;#icerikOzu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/* sagIcerikAlani */&lt;/span&gt;
+
+    &lt;span class="nf"&gt;#sagIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;300px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;/&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;
-ustalan   */ #ustalan{padding-top:20px;}
-/&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;
-icerikAlani   &lt;em&gt;/ #icerikAlani{float:left; clear:left;
-padding-top:20px;} /&lt;/em&gt;sol icerik alani */    &lt;/p&gt;
-&lt;h1 float:left;="float:left;" margin-right:13px="margin-right:13px" width:647px;="width:647px;"&gt;solIcerikAlani&lt;/h1&gt;
-&lt;h1&gt;icerikOzu{float:left; clear:left; margin-top:20px} /* sagIcerikAlani&lt;/h1&gt;
-&lt;p&gt;*/ #sagIcerikAlani{float:left; width:300px; margin:0;}       &lt;/p&gt;
 &lt;h2&gt;8. CSS özellik tanımlarını sıralayın.&lt;/h2&gt;
 &lt;p&gt;Özellik tanımlarında sıralama uygulayın. Özellik tanımlarında şablon
 tanımlarını başta yazmak. CSS tabanlı kodlama yazarken site yapısını
 oluşturan özellikler(float, width, height gibi özellikleri) ilk sırada
 yazıp sonra diğer özellikleri yazmayı tercih ediniz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#solIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;647px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#solIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;647px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;13px&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;margin-right:13px} &lt;/p&gt;
 &lt;p&gt;Burada bir diğer yöntemde özellikleri alfabetik sıraya göre yazmaktır.
 Buradaki amaç bir standart oluşturup göz aşinalığı sağlamak ve
 böylelikle daha hızlı kod yazmaktır.&lt;/p&gt;
@@ -6367,48 +6411,75 @@ stadartlarınızı oluşturabilirsiniz, Amaç stadart ve düzenli bir css
 kodlama düzenine erişmek. Son olarak örnek bir css dokümanı nasıl
 olmalıya bir örnek yazarsak:&lt;/p&gt;
 &lt;p&gt;XHTML kodu:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;ustAlan sonu&amp;lt;![endif]--&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;img&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;ustAlan sonu&amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;images/promo.jpg&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;647&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;264&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Promo&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;            
+            &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;icerikOzu sonu&amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;solIcerikAlani sonu&amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;                
+        &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;sagIcerikAlani sonu&amp;lt;![endif]--&amp;gt;&lt;/span&gt;     
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;icerikAlani sonu&amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt;  &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kapsayamamaSorunu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!--[if !IE]&amp;gt;anaKapsul sonu&amp;lt;![endif]--&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;src="images/promo.jpg" width="647" height="264" alt="Promo" /&amp;gt;&lt;/div&gt;
-&lt;div &gt; &lt;/div&gt;&lt;!--[if !IE]&gt;icerikOzu sonu&lt;![endif]--&gt;
-&lt;/div&gt;&lt;!--[if !IE]&gt;solIcerikAlani sonu&lt;![endif]--&gt; &lt;div &gt;
-&lt;/div&gt;&lt;!--[if !IE]&gt;sagIcerikAlani sonu&lt;![endif]--&gt;
-&lt;/div&gt;&lt;!--[if !IE]&gt;icerikAlani sonu&lt;![endif]--&gt; &lt;div
-class="kapsayamamaSorunu"&gt; &lt;/div&gt; &lt;/div&gt;&lt;!--[if !IE]&gt;anaKapsul
-sonu&lt;![endif]--&gt; &lt;/p&gt;
 &lt;p&gt;CSS kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;/************************&lt;/span&gt;
+&lt;span class="c"&gt;************************&lt;/span&gt;
+&lt;span class="c"&gt;MYK Medya - http://myk-medya.com/&lt;/span&gt;
+&lt;span class="c"&gt;yahoyt.com&lt;/span&gt;
+&lt;span class="c"&gt;fatih hayrioglu&lt;/span&gt;
+&lt;span class="c"&gt;28 Mayis 2009&lt;/span&gt;
+&lt;span class="c"&gt;ie6, ff, opera. chrome, safari&lt;/span&gt;
+&lt;span class="c"&gt;************************&lt;/span&gt;
+&lt;span class="c"&gt;************************/&lt;/span&gt;
+
+&lt;span class="c"&gt;/************************************************** Genel Tanımlar   */&lt;/span&gt;
+
+&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/*kapsayamam sorunu */&lt;/span&gt;
+    &lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+    &lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+    &lt;span class="c"&gt;/* IE-mac de bu bolumu sakla \ */&lt;/span&gt;
+    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+    &lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+    &lt;span class="c"&gt;/* IE-mac bu bolumu saklam artik */&lt;/span&gt;
+&lt;span class="c"&gt;/*kapsayamam sorunu */&lt;/span&gt;
+
+&lt;span class="nf"&gt;#anaKapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;960px&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/************************************************** ustalan   */&lt;/span&gt;
+&lt;span class="nf"&gt;#ustalan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;padding-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/************************************************** icerikAlani   */&lt;/span&gt;
+&lt;span class="nf"&gt;#icerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/*sol icerik alani */&lt;/span&gt;    
+    &lt;span class="nf"&gt;#solIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;647px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;13px&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="nf"&gt;#icerikOzu&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/* sagIcerikAlani */&lt;/span&gt;
+
+    &lt;span class="nf"&gt;#sagIcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;300px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/************************************************** altAlan */&lt;/span&gt;
+
+&lt;span class="nf"&gt;#altAlan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#404040&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;/&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;
-&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt; MYK Medya -
-http://myk-medya.com/ yahoyt.com fatih hayrioglu 28 Mayis 2009 ie6, ff,
-opera. chrome, safari &lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;
-&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;/
-/&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;em&gt;
-Genel Tanımlar   &lt;/em&gt;/ body{margin:0; padding:0;} ul{margin:0; padding:0;
-list-style:none;} /&lt;em&gt;kapsayamam sorunu &lt;/em&gt;/     .kapsayamamaSorunu:after
-{content: "."; display: block; height: 0; clear: both; visibility:
-hidden;}     .kapsayamamaSorunu{display: inline-block;}     /&lt;em&gt; IE-mac
-de bu bolumu sakla  &lt;/em&gt;/     &lt;em&gt; html .kapsayamamaSorunu{height: 1%;}   
- .kapsayamamaSorunu {display: block;}     /&lt;/em&gt; IE-mac bu bolumu saklam
-artik &lt;em&gt;/ /&lt;/em&gt;kapsayamam sorunu &lt;em&gt;/ #anaKapsul{margin:0 auto;
-width:960px;}    
-/&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;/em&gt;
-ustalan   &lt;em&gt;/ #ustalan{padding-top:20px;}             
-/&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;/em&gt;
-icerikAlani   &lt;em&gt;/ #icerikAlani{float:left; clear:left;
-padding-top:20px;}      /&lt;/em&gt;sol icerik alani &lt;em&gt;/       
- #solIcerikAlani{float:left; width:647px; margin-right:13px}   
- #icerikOzu{float:left; clear:left; margin-top:20px}      /&lt;/em&gt;
-sagIcerikAlani &lt;em&gt;/     #sagIcerikAlani{float:left; width:300px;
-margin:0;}                
-/&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;/em&gt;
-altAlan */ #altAlan{clear:left; background-color:#404040;
-padding:12px; margin-bottom:20px;} &lt;/p&gt;
 &lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.webdesignerdepot.com/2009/05/10-best-css-practices-to-improve-your-code/" title="http://www.webdesignerdepot.com/2009/05/10-best-css-practices-to-improve-your-code/"&gt;http://www.webdesignerdepot.com/2009/05/10-best-css-practices-to-improve-your-code/&lt;/a&gt;&lt;/li&gt;
@@ -6429,13 +6500,14 @@ padding:12px; margin-bottom:20px;} &lt;/p&gt;
     (video)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.graphicrating.com/2009/02/23/css-code-readability-tips/" title="http://www.graphicrating.com/2009/02/23/css-code-readability-tips/"&gt;http://www.graphicrating.com/2009/02/23/css-code-readability-tips/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://developer.yahoo.com/performance/rules.html#num_http" title="http://developer.yahoo.com/performance/rules.html#num_http"&gt;http://developer.yahoo.com/performance/rules.html#num_http&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="CSS"></category><category term="CSS kodlarını optimize etmek"></category><category term="css-kodlama-düzeni"></category><category term="Dreamweaver"></category><category term="optimize"></category><category term="standart"></category></entry><entry><title>CSS İpucu 20: Firefox'da Kaydırma Çubuğu Çıkarma</title><link href="http://www.fatihhayrioglu.com/css-ipucu-20-firefoxda-kaydirma-cubugu-cikarma/" rel="alternate"></link><updated>2009-04-16T10:21:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-04-16:css-ipucu-20-firefoxda-kaydirma-cubugu-cikarma/</id><summary type="html">&lt;p&gt;Firefox İnternet Explorer'un tersine eğer sayfa yüksekliği kaydırma
+&lt;/ul&gt;</summary><category term="CSS"></category><category term="CSS kodlarını optimize etmek"></category><category term="css-kodlama-düzeni"></category><category term="Dreamweaver"></category><category term="optimize"></category><category term="standart"></category></entry><entry><title>CSS İpucu 20: Firefox'da Kaydırma Çubuğu Çıkarma</title><link href="http://www.fatihhayrioglu.com/css-ipucu-20-firefoxda-kaydirma-cubugu-cikarma/" rel="alternate"></link><updated>2009-04-16T10:21:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-04-16:css-ipucu-20-firefoxda-kaydirma-cubugu-cikarma/</id><summary type="html">&lt;p&gt;Firefox İnternet Explorer'un tersine eğer sayfa yüksekliği kaydırma
 çubuğu çıkarmayacak kadar yüksekliğe sahip değilse kaydırma çubuğu
 çıkarmıyor. Bu özellikle çerçeveli sayfalarda sorun çıkarabilir. Bunun
-için bir çözüm.     :::css
-     html{
-overflow:-moz-scrollbars-vertical; } &lt;/p&gt;</summary><category term="Firefox"></category><category term="ipucu"></category><category term="kaydırma-çubuğu"></category><category term="mozilla"></category><category term="overflow"></category></entry><entry><title>Float Uygulanmış Elementleri Tam Kapsayamama Sorunu İpuçları</title><link href="http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu-ipuclari/" rel="alternate"></link><updated>2009-02-09T10:18:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-02-09:float-uygulanmis-elementleri-tam-kapsayamama-sorunu-ipuclari/</id><summary type="html">&lt;h2&gt;1- Firefox 3'de form elemenalarının Tıklanamaması Sorunu&lt;/h2&gt;
+için bir çözüm.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;overflow&lt;/span&gt;&lt;span class="o"&gt;:-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;scrollbars&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;vertical&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="Firefox"></category><category term="ipucu"></category><category term="kaydırma-çubuğu"></category><category term="mozilla"></category><category term="overflow"></category></entry><entry><title>Float Uygulanmış Elementleri Tam Kapsayamama Sorunu İpuçları</title><link href="http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu-ipuclari/" rel="alternate"></link><updated>2009-02-09T10:18:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-02-09:float-uygulanmis-elementleri-tam-kapsayamama-sorunu-ipuclari/</id><summary type="html">&lt;h2&gt;1- Firefox 3'de form elemenalarının Tıklanamaması Sorunu&lt;/h2&gt;
 &lt;p&gt;Daha önce bir kaç kez bahsettiğim ve web kod yazarlarının birçok zaman
 karşılaştığı 'Float uygulanmış elementlerin kapsayamama sorunu' bugün
 xpur(Gökhan)'un bir sorusu üzerine bu yazıyı yazma gereği duydum.

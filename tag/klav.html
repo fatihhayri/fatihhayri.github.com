@@ -110,7 +110,9 @@ ile sadece sayfa içindeki form elemanlarında gezebiliyoruz.</p>
 elemanlarını seçince sola doğru uzayarak çıkan kesikli çizgi yoksa ie ve
 chrome daki gibi elemanı saran kesikli çizgi bence kötü görünmüyor.
 Firefox'daki bu sorunu çözmek için bir kod var.</p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="p">{</span><span class="k">visibility</span><span class="o">:</span><span class="k">hidden</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="p">{</span>
+    <span class="k">visibility</span><span class="o">:</span><span class="k">hidden</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -118,7 +120,9 @@ Firefox'daki bu sorunu çözmek için bir kod var.</p>
 <p><img alt="outline çizgi düzeltme" src="static/images/outline_cizgi_ff.gif" /></p>
 <p>Bide bu çizgileri hiç görmek istemeyenler var. Bunu engellemenin en
 kolay yolu outline:none veya outline:0 tanımlarıdır.</p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="p">{</span><span class="k">outline</span><span class="o">:</span><span class="k">none</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="p">{</span>
+    <span class="k">outline</span><span class="o">:</span><span class="k">none</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -136,20 +140,26 @@ her bastığımızda nerede olduğumuzu kestirmekte zorlanıyoruz. Burada tek
 yardımcımız alttaki tarayıcı çubuğunda her tab tuşuna bastığımızda
 bağlantıdan bağlantıya geçişlerde durum çubuğunda bağlantıların
 gösterilmesidir.</p>
-<div class="codehilite"><pre> <span class="nt">a</span> <span class="p">{</span><span class="k">color</span><span class="o">:</span> <span class="m">#004276</span><span class="p">;</span> <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">a</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#004276</span><span class="p">;</span> 
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">outline</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>outline: none; } </p>
 <p>tanımı nedeni ile dış hat çizgileri bize yardımcı olmayacaktır. </p>
 <p>Şimdi <a href="http://webaim.org/" title="webaim.org/">webaim.org/</a> adresine girince klavyeden siteyi gezin. Bu sitede
 outline değeri standart bırakılmış ve ayrıca odaklanmalar için ayrı bir
 tanım yapılmıştır. </p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="nd">:active</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nd">:active</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#FFFFCC</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#BF1722</span><span class="p">;</span> 
+    <span class="k">text-decoration</span><span class="o">:</span><span class="k">underline</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-color:#FFFFCC; color:#BF1722; text-decoration:underline; }</p>
 <p>Tanımları yardımı ile odaklanılan bağlantılar daha belirgin hale
 getirilmiştir. Böylece klavyesi ile siteyi gezmeye çalışan insanlara
 rahatlık sağlanmış olur.</p>
@@ -173,14 +183,21 @@ daha kötü bir görüntüye neden oluyor.</p>
 içinde bir çözüm üretelim. Farenin üzerine geldiği hali(:hover)
 klavyenin tab'ı ile geldiğinde de uygulayalım. outline'ı kaldıralım
 tabi.</p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="nc">.anasayfayaDon</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nc">.anasayfayaDon</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">80px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">80px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/degisen_resim.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">text-indent</span><span class="o">:-</span><span class="m">999px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span><span class="nc">.anasayfayaDon</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:focus</span><span class="nc">.anasayfayaDon</span> <span class="p">{</span>
+    <span class="k">background-position</span><span class="o">:</span> <span class="m">-80px</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">outline</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>80px; height: 80px; background: url(images/degisen_resim.gif) 0 0
-no-repeat; text-decoration: none; text-indent:-999px; }
-a:hover.anasayfayaDon, a:focus.anasayfayaDon { background-position:
--80px 0; outline:none; } </p>
 <p><img alt="" src="static/images/outline_kaldir2.gif" /></p>
 <p>Şeklinde görünecektir. Bu görüntüyü Firefox, Google Chrome ve ie8'de
 aldım.</p>
@@ -188,12 +205,13 @@ aldım.</p>
 sınıfını kullanacağız. Buna rağmen olmayacaktır. outline özelliklerini
 desteklemeyen ie 6 ve ie7'de ise hala outline kesikli çizgilerinin
 görülmesi ilginç.  Bunun içinde şöyle bir çözüm yolu var. </p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="nd">:hover</span><span class="nc">.anasayfayaDon</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nd">:hover</span><span class="nc">.anasayfayaDon</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:focus</span><span class="nc">.anasayfayaDon</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:active</span><span class="nc">.anasayfayaDon</span> <span class="p">{</span>
+    <span class="k">background-position</span><span class="o">:</span> <span class="m">-80px</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">outline</span><span class="o">:</span><span class="n">expression</span><span class="p">(</span><span class="n">hideFocus</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">);</span> <span class="k">outline</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>a:focus.anasayfayaDon, a:active.anasayfayaDon { background-position:
--80px 0; outline:expression(hideFocus='true'); outline:none; }</p>
 <p>expression özelliğini sadece ie destekliyor. Daha önce bahsetmiştik. Bu
 bir bakıma css içinde javascript çalıştırmak gibi bir şeydir. Bu kod
 sonunda örneğimiz ie de de çalışacaktır.</p>
@@ -218,8 +236,7 @@ sonunda örneğimiz ie de de çalışacaktır.</p>
 <li><a href="http://diveintomark.org/archives/2006/04/25/new-focus-indicator" title="http://diveintomark.org/archives/2006/04/25/new-focus-indicator">http://diveintomark.org/archives/2006/04/25/new-focus-indicator</a>
     (odaklanmayı arttıran firefox eklentisi)</li>
 <li><a href="http://accessites.org/site/2007/05/keyboard-friendly-link-focus/" title="http://accessites.org/site/2007/05/keyboard-friendly-link-focus/">http://accessites.org/site/2007/05/keyboard-friendly-link-focus/</a></li>
-</ul>
-</p><p><a href=".././dis-hat-cizgilerinioutline-kaldirmak/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././dis-hat-cizgilerinioutline-kaldirmak/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

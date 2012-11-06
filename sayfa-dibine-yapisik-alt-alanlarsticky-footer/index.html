@@ -86,7 +86,8 @@
 
 
 </footer><!-- /.post-info -->
-      <p><img alt="yapisik_altalan" src="../static/images/yapisik_altalan.gif" title="yapisik_altalan" />Bir çok sitede karşılaştığımız sayfanın dibine
+      <p><img alt="yapisik_altalan" src="../static/images/yapisik_altalan.gif" title="yapisik_altalan" /></p>
+<p>Bir çok sitede karşılaştığımız sayfanın dibine
 yapışık alt kısımları bu makalede anlatmaya çalışacağım. Bunu hiç
 javascript kullanmadan sadece css yardımı ile yapacağız.</p>
 <p>Site içeriğinin az olduğu durumlarda sayfanın alt kısımları normal akış
@@ -102,28 +103,41 @@ karar verdim. <a href="http://www.cssstickyfooter.com" title="cssstickyfooter.co
 en iyi yöntem.</p>
 <p>Kodumuzu yazmaya başlarsak.</p>
 <p>XHTML kodu:</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>        
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikAlani&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikSagAlani&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;altAlan&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p><h1>Lorem ipsum dolor sit amet</h1> </div> <div
-id="icerikAlani"> <div id="icerik"> </div> <div
-id="icerikSagAlani"> </div> </div> </div> <div id="altAlan">
-</div> </p>
 <p>XHTML kodunda dikkate değer olan kısım içerik alanı ve alt alanı iki
 farklı bölüm olarak kodlamamız. <strong>altAlan</strong> ve diğer alanları kapsayan
 bir kapsayıcı katmandan(<strong>#kapsul</strong>) oluşuyor kodumuz. Bizim yaptığımız
 örnekte üst alanı ve iki kolonlu içerik kısmını kapsayıcı katman içine
 alıyoruz.</p>
 <p>CSS Kodu</p>
-<div class="codehilite"><pre> <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span><span class="o">,</span> <span class="nf">#kapsul</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;}</span> <span class="nt">body</span> <span class="o">&gt;</span>
+<div class="codehilite"><pre><span class="nt">html</span><span class="o">,</span> <span class="nt">body</span><span class="o">,</span> <span class="nf">#kapsul</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;}</span>
+<span class="nt">body</span> <span class="o">&gt;</span> <span class="nf">#kapsul</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> <span class="k">min-height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;}</span>
+<span class="nf">#icerik</span> <span class="p">{</span><span class="k">padding-bottom</span><span class="o">:</span> <span class="m">133px</span><span class="p">;}</span> <span class="c">/* altAlan yukseligi ile ayni olmali */</span>
+<span class="nf">#altAlan</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="o">:</span> <span class="m">-133px</span><span class="p">;</span> <span class="c">/* altAlan yuksekliginin eksi degeri */</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">133px</span><span class="p">;</span>
+    <span class="k">clear</span><span class="o">:</span><span class="k">both</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<h1>kapsul {height: auto; min-height: 100%;} #icerik {padding-bottom:</h1>
-<p>133px;} /<em> altAlan yukseligi ile ayni olmali </em>/ #altAlan { position:
-relative; margin-top: -133px; /<em> altAlan yuksekliginin eksi degeri </em>/
-height: 133px; clear:both; } </p>
 <p>Buradaki 133px tanımına dikkat etmemiz gerekiyor. 133px altAlan
 yüksekliğidir ve 3 yerde birden aynı değeri kullandığımıza dikkat
 edeniz.</p>
@@ -140,24 +154,34 @@ sorunu ile karşılaşıyoruz. Float uygulanmış alanların kapsayamama sorunu
 çözmek için
 <a href="http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/" title="http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/">http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/</a>
 makalemiz anlattığımız yöntemi kullanıyoruz.</p>
-<div class="codehilite"><pre> <span class="nc">.kapsayamamaSorunu</span><span class="nd">:after</span> <span class="p">{</span><span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nc">.kapsayamamaSorunu</span><span class="nd">:after</span> <span class="p">{</span><span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;}</span>
+<span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;}</span>
+<span class="c">/*IE-mac de bu bolumu sakla \ */</span>
+<span class="o">*</span> <span class="nt">html</span> <span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span> <span class="m">1</span><span class="o">%</span><span class="p">;}</span>
+<span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;}</span>
+<span class="c">/* IE-mac bu bolumu saklam artik */</span>
 </pre></div>
 
 
-<p>display: block; height: 0; clear: both; visibility: hidden;}
-.kapsayamamaSorunu {display: inline-block;} /<em>IE-mac de bu bolumu sakla
- </em>/ * html .kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu
-{display: block;} /<em> IE-mac bu bolumu saklam artik </em>/ </p>
 <p>Bu sınıfı tanımlıyoruz ve içeriği kapsayan(#icerikAlani) katmana
 atıyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span> <span class="na">class=</span><span class="s">&quot;kapsayamamaSorunu&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>        
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikAlani&quot;</span> <span class="na">class=</span><span class="s">&quot;kapsayamamaSorunu&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikSagAlani&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;altAlan&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>class="kapsayamamaSorunu"&gt; <h1>Lorem ipsum dolor sit amet</h1>
-</div> <div id="icerikAlani" class="kapsayamamaSorunu"> <div
-id="icerik"> </div> <div id="icerikSagAlani"> </div> </div>
-</div> <div id="altAlan"> </div> </p>
 <p>Bu yöntemin ryanfait.com'un yöntemine göre en büyük avantajı bence
 ryanfait.com'un yöntemindeki anlamsız tampon katmanı gibi bir fazla
 kodlamadan kaçınış oluyoruz.</p>
@@ -179,7 +203,9 @@ değerler ile belirlerseniz bu tip sorunları engelleyebilirsiniz.</p>
 <p>Son olarakta asp.net ile oluşturulan sayfalarda <form> elemanı ile
 kapsanan sayfanızda sorun çıkabilir. Bunu engellemek için kodunuzu</p>
 <p>:::css
- html, body, form, #kapsul {height: 100%;}</p>
+html, body, form, #kapsul {
+    height: 100%;
+}</p>
 </li>
 </ul>
 <p>şeklinde değiştirmelisiniz. <a href="http://www.cssstickyfooter.com/using-sticky-footer-code.html" title="http://www.cssstickyfooter.com/using-sticky-footer-code.html"></a></p>
@@ -196,7 +222,6 @@ kapsanan sayfanızda sorun çıkabilir. Bunu engellemek için kodunuzu</p>
 <li><a href="http://brassblogs.com/blog/sticky-footer" title="http://brassblogs.com/blog/sticky-footer">http://brassblogs.com/blog/sticky-footer</a></li>
 <li><a href="http://www.davidjrush.com/blog/2009/01/css-sticky-footer/" title="http://www.davidjrush.com/blog/2009/01/css-sticky-footer/">http://www.davidjrush.com/blog/2009/01/css-sticky-footer/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">
