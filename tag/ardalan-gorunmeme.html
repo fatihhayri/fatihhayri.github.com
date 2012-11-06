@@ -89,19 +89,36 @@ sorunu çıktı tabiki. Sorunun tam tanımı şöyle; listeleri(ul, ol ve dl)
 kapsayan elemana eğer float ve position:relative tanımı yaptı iseniz,
 ie6 liste background özelliklerini(resim veya renk) görmüyor.</p>
 <p>Bu durmu bir örnek ile gösterelim.</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>ie lsite ardalan sorunu<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nf">#menuKapsul</span><span class="p">{</span>
+<span class="k">position</span><span class="o">:</span><span class="k">relative</span><span class="p">;</span> 
+<span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+<span class="k">background</span><span class="o">:</span><span class="sx">url(ikon.gif)</span> <span class="m">3px</span> <span class="m">9px</span> <span class="k">no-repeat</span><span class="p">;</span> 
+<span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> 
+<span class="k">padding-left</span><span class="o">:</span><span class="m">12px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;menuKapsul&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Liste 1<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Liste 2<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Liste 3<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>ie lsite ardalan sorunu</title> <style> #menuKapsul{
-position:relative; float:left; } ul li{ background:url(ikon.gif) 3px 9px
-no-repeat; list-style:none; padding-left:12px; } </style> </head>
-<body> <div id="menuKapsul"> <ul> <li>Liste 1</li> <li>Liste
-2</li> <li>Liste 3</li> </ul> </div> </body> </html></p>
 <p>Yukarı görülen basit bir listenin ardalanına resim yerleştiriyoruz.
 Kapsayıcı elemanada <strong>position:relative;</strong> ve <strong>float:left;</strong> tanımları
 atanmış olsun. Aktif tarayıcıların tümünde sorunsuz çalışan kodumuz,
@@ -111,9 +128,15 @@ görünmemesidir. Sorunu çözerken bayağı bir cebelleşmiştim. Sonunda
 şaşırdım.</p>
 <p>Çözüm ise çok basit. Ardalan resmi uyguladığımız liste öğesine
 <strong>postion:relative</strong> tanımı yapıyoruz ve bu kadar düzeliyor.</p>
-<p>[sourcecode language="css" highlight="5"] ul li{
-background:url(ikon.gif) 3px 9px no-repeat; list-style:none;
-padding-left:12px; position:relative } </p>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(ikon.gif)</span> <span class="m">3px</span> <span class="m">9px</span> <span class="k">no-repeat</span><span class="p">;</span> 
+    <span class="k">list-style</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="o">:</span><span class="m">12px</span><span class="p">;</span> 
+    <span class="k">position</span><span class="o">:</span><span class="k">relative</span> 
+<span class="p">}</span>
+</pre></div>
+
+
 <p>bu kadar bu kod bizim sorunlarımızı gideriyor.</p>
 <p>Bir başka çözüm yoluda kapsayıcı bir eleman daha ekleyerek bu elemana
 farklı konumlandırma değeri atayıp çözebiliriz, ama bu pek mantıklı
@@ -126,8 +149,7 @@ ayrı bir konu.)</p>
 <ul>
 <li><a href="http://www.positioniseverything.net/explorer/ie-listbug.html" title="http://www.positioniseverything.net/explorer/ie-listbug.html">http://www.positioniseverything.net/explorer/ie-listbug.html</a></li>
 <li><a href="http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;productId=1&amp;postId=481" title="http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;productId=1&amp;postId=481">http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&amp;productId=1&amp;postId=481</a></li>
-</ul>
-</p><p><a href=".././ie6da-liste-ardalan-gormeme-sorunu/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././ie6da-liste-ardalan-gormeme-sorunu/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

@@ -100,38 +100,46 @@ tarayıcılar bunları görmezden geliyor.</p>
 fark olmadı. Örnek dosyamı utf-8 ve utf-8 BOM'suz kaydettiğimde bu sorun
 düzeldi. Utf-8 ile kaydedince Türkçe karakterler bozuldu ancak tekrar
 yazıp kaydedince bir sorun olmadı.</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>Untitled Document<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+<span class="k">@import</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&quot;stil.css&quot;</span><span class="o">)</span><span class="p">;</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;deneme1 deneme2&quot;</span><span class="nt">&gt;</span>Fatih Hayrioğlu burada yorum yazmış sanane ie6, sen niye sorun yapıyorsun ki bu olayı.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title> <style type="text/css"> @import
-url("stil.css"); </style> </head> <body> <p class="deneme1
-deneme2">Fatih Hayrioğlu burada yorum yazmış sanane ie6, sen niye sorun
-yapıyorsun ki bu olayı.</p> </body> </html> </p>
 <p>Bir paragraf yazı yazdık. Daha sonra</p>
-<div class="codehilite"><pre> <span class="nc">.deneme1</span><span class="p">{</span> <span class="k">font</span><span class="o">:</span><span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nc">.deneme1</span><span class="p">{</span> 
+    <span class="k">font</span><span class="o">:</span><span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span>
+<span class="p">}</span>
+<span class="c">/*Türkçe katakter içermeyecek miş*/</span>
+<span class="nc">.deneme2</span><span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#f00</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>sans-serif} /<em>Türkçe katakter içermeyecek miş</em>/ .deneme2{ color:#f00}</p>
 <p>Css dosyasının içine yukarıdaki kodları yazdım. CSS dosyasını eğer ANSI
 formatında kayıtlı ise ie6 css kodlarımı görmüyor.</p>
-<p><img alt="ansi_ff" src="../static/images/ansi_ff.gif" title="ansi_ff" /></p>
+<p><img alt="ansi_ff" src="../static/images/ansi_ff.gif" /></p>
 <p>Firefox ve diğer tarayıcılar ansi olmuş utf-8 olmuş fark etmiyor. Ama</p>
-<p><img alt="ansi_ie6" src="../static/images/ansi_ie6.gif" title="ansi_ie6" /></p>
+<p><img alt="ansi_ie6" src="../static/images/ansi_ie6.gif" /></p>
 <p>İE6'da ise yukarıdaki gibi Türkçe karakter içeren yorum sonrasındaki
 sınıfı görmüyor. Daha sonra css dosyasını utf-8 olarak kaydedince sorun
 ortadan kalktı.</p>
-<p><img alt="utf8_ie6" src="../static/images/utf8_ie6.gif" title="utf8_ie6" /></p>
+<p><img alt="utf8_ie6" src="../static/images/utf8_ie6.gif" /></p>
 <p>Eğer html ve css aynı karakter kodunda ise sorun olmuyor mesela ikiside
 iso-8859-9 ise sorun olmuyor. Ama ne zaman html utf-8 css iso-8859-9
 olursa sorun oluyor.</p>
 <p>Not: Karakter kodu değişiklikleri için NotePad++ kullandım.</p>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

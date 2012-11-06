@@ -167,26 +167,36 @@ Ethan  </p>
 <h2>@font-face Kodu</h2>
 <p>Evet yazı tipi dosyalarımız hazırsa kodumuzu yazmaya başlayabiliriz.
 @font-face kod yapısı</p>
-<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span> <span class="nt">Gentium</span><span class="o">;</span> <span class="nt">src</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="k">@font-face</span> <span class="p">{</span>
+<span class="nt">font-family</span><span class="o">:</span> <span class="nt">Gentium</span><span class="o">;</span>
+<span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="nt">http</span><span class="o">://</span><span class="nt">site</span><span class="o">/</span><span class="nt">fonts</span><span class="o">/</span><span class="nt">Gentium</span><span class="nc">.ttf</span><span class="o">);</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="n">Gentium</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>url(http://site/fonts/Gentium.ttf); } p { font-family: Gentium, serif; }</p>
 <p>Kod yapımız iki kısımdan oluşmaktadır. İlk başta özel yazı tipimizi
 sisteme yüklüyoruz. Sonra da bu yazı tipini kullanıyoruz. </p>
 <p>Ancak durum bu kadar kolay değil. Buradan itibaren ie kendini gösteriyor
 ve farklı yazı tipi ile farklı kod yazmamız gerekiyor. Bundan başka bir
 kaç sorunuda gidermek için <a href="http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/" title="Paul Irish">Paul Irish</a>'in yazdığı makaleden
 çıkardığımız kod:</p>
-<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;Graublau Web&#39;</span><span class="o">;</span>
+<div class="codehilite"><pre><span class="k">@font-face</span> <span class="p">{</span>
+    <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;Graublau Web&#39;</span><span class="o">;</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;GraublauWeb.eot&#39;</span><span class="o">);</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;Graublau Web Regular&#39;</span><span class="o">),</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;Graublau Web&#39;</span><span class="o">),</span> 
+    <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;GraublauWeb.woff&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff&#39;</span><span class="o">),</span>
+    <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;GraublauWeb.svg#GraublauWeb&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;svg&#39;</span><span class="o">),</span> 
+    <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;GraublauWeb.otf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;opentype&#39;</span><span class="o">);</span>
+    <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="s2">&quot;Graublau Web&quot;</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>src: url('GraublauWeb.eot'); src: local('Graublau Web Regular'),
-local('Graublau Web'), url('GraublauWeb.woff') format('woff'),
-url('GraublauWeb.svg#GraublauWeb') format('svg'),
-url('GraublauWeb.otf') format('opentype'); font-weight: normal;
-font-style: normal; } p { font-family: "Graublau Web", serif; }</p>
 <p>11 Kasım 2011 eklendi: font-weight: normal; font-style: normal;
 Chrome'un kalın ve normal anlama problemi nedeni ile eklendi.</p>
 <p>Bu kodlamanın özel yazı tipini sisteme tanıtırken ilk olarak .eot
@@ -205,25 +215,21 @@ uzantılı yazı tipim var.</p>
 <a href="http://onlinefontconverter.com/">http://onlinefontconverter.com/</a> ve <a href="http://www.font2web.com/">http://www.font2web.com/</a>
 diğer farklı yazı tipi üretme araçları</p>
 <p>.ttf ve .eot uzantılı dosyalarım hazırsa kodu yazmaya başlayabiliriz.</p>
-<div class="codehilite"><pre> <span class="k">@font-face</span> <span class="p">{</span> <span class="nt">font-family</span><span class="o">:</span> <span class="err">&#39;</span><span class="nt">TR</span> <span class="nt">Centurion</span> <span class="nt">Old</span>
+<div class="codehilite"><pre><span class="k">@font-face</span> <span class="p">{</span>
+        <span class="nt">font-family</span><span class="o">:</span> <span class="s1">&#39;TR Centurion Old  Italic&#39;</span><span class="o">;</span>
+        <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;TR_Centurion_Old_Italik.eot&#39;</span><span class="o">);</span>
+        <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;TR Centurion Old  Italic&#39;</span><span class="o">),</span> <span class="nt">local</span><span class="o">(</span><span class="s1">&#39;TRCenturionOldItalic&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;TR_Centurion_Old_Italik.woff&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;TR_Centurion_Old_Italik.svg#TRCenturionOldItalic&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;svg&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;TR_Centurion_Old_Italik.TTF&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">);</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>Italic'; src: url('TR_Centurion_Old_Italik.eot'); src: local('TR
-Centurion Old Italic'), local('TRCenturionOldItalic'),
-url('TR_Centurion_Old_Italik.woff') format('woff'),
-url('TR_Centurion_Old_Italik.svg#TRCenturionOldItalic')
-format('svg'), url('TR_Centurion_Old_Italik.TTF') format('truetype');
-} </p>
 <p>Daha sonra bu yazı tipini sayfamızda kullanabiliriz.</p>
-<div class="codehilite"><pre> <span class="nt">h1</span><span class="p">{</span><span class="k">font</span><span class="o">:</span><span class="m">44px</span> <span class="s1">&#39;TR Centurion Old Italic&#39;</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">h1</span><span class="p">{</span><span class="k">font</span><span class="o">:</span><span class="m">44px</span> <span class="s1">&#39;TR Centurion Old Italic&#39;</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span><span class="m">#1259C7</span><span class="p">;}</span>
+<span class="nt">h3</span><span class="p">{</span><span class="k">font</span><span class="o">:</span><span class="m">24px</span> <span class="s1">&#39;TR Centurion Old Italic&#39;</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span><span class="m">#1259C7</span><span class="p">;}</span>
+<span class="nt">p</span><span class="nc">.ilkParagraf</span><span class="p">{</span><span class="k">font</span><span class="o">:</span><span class="m">16px</span><span class="o">/</span><span class="m">1.5em</span> <span class="s1">&#39;TR Centurion Old Italic&#39;</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;}</span>
 </pre></div>
 
 
-<p>Arial, sans-serif; color:#1259C7;} h3{font:24px 'TR Centurion Old
-Italic', Arial, sans-serif; color:#1259C7;}
-p.ilkParagraf{font:16px/1.5em 'TR Centurion Old Italic', Arial,
-sans-serif;} </p>
 <p>Örnek sayfayı görmek için <a href="../static/dokumanlar/font_face/ornek.html">tıklayınız.</a> Yazı tipi özgürlüğüne hoş
 geldiniz. </p>
 <h2>@font-face Yükleme Zamanı</h2>
@@ -373,7 +379,6 @@ aksaklığımız oldu ise affola.</p>
 </li>
 <li><a href="http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/" title="http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/">http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

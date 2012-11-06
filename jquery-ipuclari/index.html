@@ -93,40 +93,46 @@ de daha fazlası var</p>
 <p><strong>1- jQuery kütüphanemizi Google'da host etmek:</strong> google bize jQuery
 kütüphanesini kendi hostu üzerinden yüklememizi sağlıyor. Bu bize ön
 belleğe alınana dosyanın daha hızlı yüklenmesini sağlar.</p>
-<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span>
+<div class="codehilite"><pre><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+ <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//isler burada</span>
+ <span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
 </pre></div>
 
 
-<p>src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"&gt;</script>
-<script type="text/javascript"> $(document).ready(function() {
-//isler burada }); </script> </p>
 <p>Bu sayede jquery kütüphanesini her projeye eklerken kopyala yapıştır ile
 de uğraşmak zorunda kalmıyoruz. İstediğimiz her yerde jQuery kullanma
 imkanıda veriyor bize bu kod.</p>
 <p><strong>2- jquery kısaltması:</strong> jquery kodlarımzı yazarken bazen </p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">(){});</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">(){});</span>
 </pre></div>
 
 
 <p>aklımıza gelmeye bilir</p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">(){});</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">(){});</span>
 </pre></div>
 
 
 <p>bu daha kolay ve akılda kalıcı bence</p>
 <p><strong>3- fare üzerinde iken ve üzerinden gittiğinde</strong></p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;li&quot;</span><span class="p">).</span><span class="nx">hover</span><span class="p">(</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="c1">// fare</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;li&quot;</span><span class="p">).</span><span class="nx">hover</span><span class="p">(</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> 
+    <span class="c1">// fare üzerinde iken bunu yap </span>
+<span class="p">},</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> 
+    <span class="c1">// fare kaçınca bunu yap </span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>üzerinde iken bunu yap }, function () { // fare kaçınca bunu yap } );</p>
 <p><strong>4- not seçicisi:</strong> Bir seri elemana yaptırdığımız bir işi aradan bir
 tane elemanın yapmasını istiyorsak bu seçiciyi uygulayabiliriz.</p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;ul#sekme li a&#39;</span><span class="p">).</span><span class="nx">not</span><span class="p">(</span><span class="err">&quot;</span><span class="nx">ul</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;ul#sekme li a&#39;</span><span class="p">).</span><span class="nx">not</span><span class="p">(</span><span class="s2">&quot;ul li#diger a&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="c1">// yapılacak işler</span>
+<span class="p">});</span>
 </pre></div>
 
 
-<p>li#diger a").click(function(){ // yapılacak işler }); </p>
 <p>Yukarıdaki kodlamada biz sekmelere bir tanım yapıyoruz ama en son
 sekmeye tıklayınca bu işlemin yapılmasını istemiyoruz. Bu iş için
 biçilmiş kaftan :not seçicisi</p>
@@ -134,37 +140,37 @@ biçilmiş kaftan :not seçicisi</p>
 üzerinde etkileşimli erişim sağlayan güzel bir seçici. Daha önce
 http://www.fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/ anlatırken
 kullanmıştım.</p>
-<div class="codehilite"><pre>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">parent</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;sekmeSecili&#39;</span><span class="p">).</span><span class="nx">siblings</span><span class="p">().</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">&#39;sekmeSecili&#39;</span><span class="p">);</span>
 </pre></div>
 
 
-<p>$(this).parent('li').addClass('sekmeSecili').siblings().removeClass('sekmeSecili');</p>
 <p>Bu kodda da görüldüğü gibi tıklanan sekmeye sekmeSecili sınıfı atıyoruz
 diğer sekmelerde aynı sınıf varsa onları kaldırıyoruz.</p>
 <p><strong>6- HTML içine jQuery den eleman eklemek:</strong></p>
-<div class="codehilite"><pre> <span class="kd">var</span> <span class="nx">ekleBunu</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;div&gt;&lt;/div&gt;&#39;</span><span class="p">);</span>
+<div class="codehilite"><pre><span class="kd">var</span> <span class="nx">ekleBunu</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;div&gt;&lt;/div&gt;&#39;</span><span class="p">);</span>
+<span class="nx">ekleBunu</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;yeniKatman&quot;</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="s2">&quot;body&quot;</span><span class="p">);</span>
 </pre></div>
 
 
-<p>ekleBunu.attr("id","yeniKatman").appendTo("body"); </p>
 <p><strong>7- Bir elemanın varlığını kontrol etmek</strong></p>
-<div class="codehilite"><pre> <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#someDiv&quot;</span><span class="p">).</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// eğer</span>
+<div class="codehilite"><pre><span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#someDiv&quot;</span><span class="p">).</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span> 
+    <span class="c1">// eğer varsa bunu yap </span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>varsa bunu yap } </p>
 <p><strong>8- Kolay kullanılan tarayıcıyı yakalama</strong></p>
-<div class="codehilite"><pre> <span class="nx">$</span><span class="p">.</span><span class="nx">browser</span><span class="p">.</span><span class="nx">safari</span> <span class="nx">$</span><span class="p">.</span><span class="nx">browser</span><span class="p">.</span><span class="nx">msie</span>
+<div class="codehilite"><pre><span class="nx">$</span><span class="p">.</span><span class="nx">browser</span><span class="p">.</span><span class="nx">safari</span> 
+<span class="nx">$</span><span class="p">.</span><span class="nx">browser</span><span class="p">.</span><span class="nx">msie</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">browser</span><span class="p">.</span><span class="nx">mozilla</span>
 </pre></div>
 
 
-<p>$.browser.mozilla </p>
 <p>tarayıcı sürümünü yakalamak için</p>
-<div class="codehilite"><pre> <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">.</span><span class="nx">browser</span><span class="p">.</span><span class="nx">msie</span> <span class="o">&amp;&amp;</span>
+<div class="codehilite"><pre><span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">.</span><span class="nx">browser</span><span class="p">.</span><span class="nx">msie</span> <span class="o">&amp;&amp;</span> <span class="nx">$</span><span class="p">.</span><span class="nx">browser</span><span class="p">.</span><span class="nx">version</span> <span class="o">&lt;=</span> <span class="mi">7</span> <span class="p">)</span>
 </pre></div>
 
 
-<p>$.browser.version &lt;= 7 )  </p>
 <h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.ajaxlines.com/ajax/stuff/article/_reasons_why_you_should_let_google_host_jquery_for_you.php">http://www.ajaxlines.com/ajax/stuff/article/_reasons_why_you_should_let_google_host_jquery_for_you.php</a></li>
@@ -173,7 +179,6 @@ diğer sekmelerde aynı sınıf varsa onları kaldırıyoruz.</p>
 <li><a href="http://docs.jquery.com/Selectors/not">http://docs.jquery.com/Selectors/not</a></li>
 <li><a href="http://jquery-tr.blogspot.com/search/label/tips">http://jquery-tr.blogspot.com/search/label/tips</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

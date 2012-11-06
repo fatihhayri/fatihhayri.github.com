@@ -117,7 +117,7 @@ Her klasör isminden önce rakamlar koymamın nedeni sıralamayı istediğim
 gibi yapmak. Klasör ismi verirken Türkçe karakter kullanmamaya dikkat
 ediyoruz. Gerçi dosyalara, klasörlere isim verirken Türkçe
 kullanmayacağımızı biliyoruz.</p>
-<p><img alt="Klasör Yapısı" src="../static/images/ders_01.gif" title="ders_01" /></p>
+<p><img alt="Klasör Yapısı" src="../static/images/ders_01.gif" /></p>
 <p><strong>00 - Gonderilen:</strong> Bu klasöre proje için gönderilen dosyaları
 koyuyorum. Projenin şablon psd'leri, içerik dokümanları(doc), resimler
 (jpeg, gif, png vd.), projede geçen yazı tiplerini(ttf) bu klasöre
@@ -152,10 +152,10 @@ klasörü açıp resimleri onun içine koyuyorum. Xml'leri yoğun olarak
 kullandığım projelerde bunlara ek olarak /xml/ klasörü oluşturuyorum.
 Flash yoğunluklu projelerde /swf/ klasörü açıyorum. Yani projeden proje
 farklılıklar gösterebiliyor, ama standardım bu.</p>
-<p><img alt="" src="../static/images/ders_02-e1262041236446.gif" title="ders_02" /></p>
+<p><img alt="" src="../static/images/ders_02-e1262041236446.gif" /></p>
 <p>Buraya kadar anlattıklarım hazır klasör yapısıdır, bundan sonra projeyi
 kodlamaya başlamadan önceki hazırlıklar olacak.</p>
-<p><img alt="" src="../static/images/fan-200x300.jpg" title="fan" /> <img alt="" src="../static/images/fan-dinle-200x300.jpg" title="fan-dinle" /> <img alt="" src="../static/images/fan-gonder-200x300.jpg" title="fan-gonder" /> <img alt="" src="../static/images/fan-listele-200x300.jpg" title="fan-listele" /></p>
+<p><img alt="" src="../static/images/fan-200x300.jpg" title="fan" /> <img alt="" src="../static/images/fan-dinle-200x300.jpg" /> <img alt="" src="../static/images/fan-gonder-200x300.jpg" /> <img alt="" src="../static/images/fan-listele-200x300.jpg" /></p>
 <p>1- İlk olarak tüm psd'leri kontrol ederek hangi bölümlerin tüm
 sayfalarda aynı olduğu belirleyip ona göre kodlama yapmayı düşünüyorum.
 Genel bir değerlendirme bakışıda diyebiliriz buna.</p>
@@ -170,27 +170,30 @@ yardımcı olacaktır.</p>
 Sonra boş bir css dosyası açarız. Aslında ilk açtığım bu boş dokümanlar
 bile bir şeyler içerir.</p>
 <p>XHTML sayfamız</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;title&gt;</span>FanatikMarşlar.Com<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-<html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>FanatikMarşlar.Com</title> </head> <body> </body>
-</html> </p>
 <p>Bu dokümanı Adobe DreamWeaver ile oluşturduğumda dw benim için
 oluşturuyor.</p>
 <ul>
 <li>DocType olarak xhtml-strict kullanıyoruz. Doküman tipleri hakkında
-    ayrıntılı bil için <a href="http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/" title="tıklayınız.">tıklayınız.</a></li>
+    ayrıntılı bil için <a href="http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/">tıklayınız.</a></li>
 <li>Karakter kodumuz utf-8. uft-8 seçimi bizim karakter kodu konusunda
     sorunsuz çalışmamız için önemlidir. Ayrıntılı bilgi için
     <a href="http://www.makaleci.com/webmaster-yardimcisi/utf-8-nedir-kodlar-karakterler-ve-hakkinda-hersey-418.html" title="tıklayınız.">tıklayınız.</a></li>
 <li>Genel html kodları (html, head ve body)</li>
 </ul>
 <p>İlk yaptığım iş başlık kısmını değiştirmek olur.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;title&gt;</span>FanatikMarşlar.Com<span class="nt">&lt;/title&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;title&gt;</span>FanatikMarşlar.Com<span class="nt">&lt;/title&gt;</span>
 </pre></div>
 
 
@@ -198,54 +201,65 @@ oluşturuyor.</p>
 main, iskelet, veya sirket_adi nokta css şeklinde tanımlarım bu seferde
 site ismini tanımlıyorum <strong>fanatikmarslar.css</strong> Oluşturduğum bu dokümana
 sırası ile imza alanımı ve sıfırlama kodlarını ekliyorum.</p>
-<div class="codehilite"><pre>
+<div class="codehilite"><pre><span class="c">/************************</span>
+<span class="c">************************</span>
+<span class="c">Fanatik Marşlar - http://fanatikmarslar.com/</span>
+<span class="c">fatih hayrioglu</span>
+<span class="c">24 Eylul 2009</span>
+<span class="c">ie6, ff, opera, chrome, safari</span>
+<span class="c">************************</span>
+<span class="c">************************/</span>
 </pre></div>
 
 
-<p>/<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>
-</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong> Fanatik Marşlar -
-http://fanatikmarslar.com/ fatih hayrioglu 24 Eylul 2009 ie6, ff, opera,
-chrome, safari <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>
-</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>/ </p>
 <p>Bunu benim imzam olarak nitelendirebilirsiniz. Genelde tüm projelerime
 eklerim. Bazılarında unuttuğumda oluyor. Daha sonra css sıfırlama
 kodlarını ekleyelim. Ben genelde standart sıfırlama tekniklerini
 kullanmam kendi ufak bir iki tekniğim vardır onları yazar geçerim. Ama
 bu sefer bazı sıfırlama kodlarının elenmiş halini kullandım ve koduma
 ekledim. Bide kapsayamama sorunu kodunu ekledim.</p>
-<div class="codehilite"><pre> <span class="c">/* Css Sifirlama */</span> <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span><span class="o">,</span> <span class="nt">div</span><span class="o">,</span> <span class="nt">span</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="c">/* Css Sifirlama */</span>
+<span class="nt">html</span><span class="o">,</span> <span class="nt">body</span><span class="o">,</span> <span class="nt">div</span><span class="o">,</span> <span class="nt">span</span><span class="o">,</span> <span class="nt">applet</span><span class="o">,</span> <span class="nt">object</span><span class="o">,</span> <span class="nt">iframe</span><span class="o">,</span> <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span><span class="o">,</span> <span class="nt">p</span><span class="o">,</span> <span class="nt">blockquote</span><span class="o">,</span> <span class="nt">pre</span><span class="o">,</span> <span class="nt">a</span><span class="o">,</span> <span class="nt">abbr</span><span class="o">,</span> <span class="nt">acronym</span><span class="o">,</span> <span class="nt">address</span><span class="o">,</span> <span class="nt">big</span><span class="o">,</span> <span class="nt">cite</span><span class="o">,</span> <span class="nt">code</span><span class="o">,</span> <span class="nt">del</span><span class="o">,</span> <span class="nt">dfn</span><span class="o">,</span> <span class="nt">em</span><span class="o">,</span> <span class="nt">font</span><span class="o">,</span> <span class="nt">img</span><span class="o">,</span> <span class="nt">ins</span><span class="o">,</span> <span class="nt">kbd</span><span class="o">,</span> <span class="nt">q</span><span class="o">,</span> <span class="nt">s</span><span class="o">,</span> <span class="nt">samp</span><span class="o">,</span> <span class="nt">small</span><span class="o">,</span> <span class="nt">strike</span><span class="o">,</span> <span class="nt">strong</span><span class="o">,</span> <span class="nt">sub</span><span class="o">,</span> <span class="nt">sup</span><span class="o">,</span> <span class="nt">tt</span><span class="o">,</span> <span class="nt">var</span><span class="o">,</span> <span class="nt">b</span><span class="o">,</span> <span class="nt">u</span><span class="o">,</span> <span class="nt">i</span><span class="o">,</span> <span class="nt">center</span><span class="o">,</span> <span class="nt">dl</span><span class="o">,</span> <span class="nt">dt</span><span class="o">,</span> <span class="nt">dd</span><span class="o">,</span> <span class="nt">ol</span><span class="o">,</span> <span class="nt">ul</span><span class="o">,</span> <span class="nt">li</span><span class="o">,</span> <span class="nt">fieldset</span><span class="o">,</span> <span class="nt">form</span><span class="o">,</span> <span class="nt">label</span><span class="o">,</span> <span class="nt">legend</span><span class="o">,</span> <span class="nt">table</span><span class="o">,</span> <span class="nt">caption</span><span class="o">,</span> <span class="nt">tbody</span><span class="o">,</span> <span class="nt">tfoot</span><span class="o">,</span> <span class="nt">thead</span><span class="o">,</span> <span class="nt">tr</span><span class="o">,</span> <span class="nt">th</span><span class="o">,</span> <span class="nt">td</span> <span class="p">{</span><span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">outline</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;}</span>
+
+<span class="nt">body</span> <span class="p">{</span> <span class="k">line-height</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">ol</span><span class="o">,</span> <span class="nt">ul</span> <span class="p">{</span> <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">blockquote</span><span class="o">,</span> <span class="nt">q</span> <span class="p">{</span> <span class="k">quotes</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="p">}</span>
+<span class="c">/* remember to define focus styles! */</span>
+<span class="nd">:focus</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:active</span><span class="p">{</span>    <span class="k">outline</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="c">/* remember to highlight inserts somehow! */</span>
+<span class="nt">ins</span><span class="p">{</span> <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">del</span><span class="p">{</span> <span class="k">text-decoration</span><span class="o">:</span> <span class="k">line-through</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="c">/* tables still need &#39;cellspacing=&quot;0&quot;&#39; in the markup */</span>
+<span class="nt">table</span><span class="p">{</span><span class="k">border-collapse</span><span class="o">:</span> <span class="k">collapse</span><span class="p">;</span> <span class="k">border-spacing</span><span class="o">:</span> <span class="m">0</span><span class="p">;}</span>
+
+<span class="c">/* float uygulanan elemanları kapsayamama sorunu */</span>
+<span class="nc">.kapsayamamaSorunu</span><span class="nd">:after</span> <span class="p">{</span><span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;}</span>
+<span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;}</span>
+<span class="c">/* IE-mac de bu bolumu sakla \ */</span>
+<span class="o">*</span> <span class="nt">html</span> <span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span> <span class="m">1</span><span class="o">%</span><span class="p">;}</span>
+<span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;}</span>
+<span class="c">/* IE-mac bu bolumu saklam artik */</span>
+
+<span class="c">/* Css Sifirlama */</span>
 </pre></div>
 
 
-<p>applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
-abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins,
-kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
-center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
-caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border:
-0; outline: 0; font-size: 100%; text-decoration:none;} body {
-line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes:
-none; } /<em> remember to define focus styles! </em>/ :focus, a:focus,
-a:active{ outline: 0; } /<em> remember to highlight inserts somehow! </em>/
-ins{ text-decoration: none; } del{ text-decoration: line-through; } /<em>
-tables still need 'cellspacing="0"' in the markup </em>/
-table{border-collapse: collapse; border-spacing: 0;} /<em> float uygulanan
-elemanları kapsayamama sorunu </em>/ .kapsayamamaSorunu:after {content:
-"."; display: block; height: 0; clear: both; visibility: hidden;}
-.kapsayamamaSorunu {display: inline-block;} /<em> IE-mac de bu bolumu
-sakla  </em>/ * html .kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu
-{display: block;} /<em> IE-mac bu bolumu saklam artik </em>/ /<em> Css
-Sifirlama </em>/ </p>
 <p>CSS sıfırlama tekniğini kısaca açıklarsak; Farklı tarayıcılarda farklı
 şekillerde yorumlanan html elemanlarının özelliklerini her tarayıcıda
 aynı görünmesini sağlayacak kodlara sıfırlama denir. Bu sayede her
 tarayıcıda bu elemanlar aynı sıfır noktasına gelecektir. Örneğin
 p{margin:0; padding:0}</p>
 <p>Daha sonra xhtml sayfamıza css kodumuzu ekleyelim.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span><span class="err"> &lt;!-- @import</span>
+<div class="codehilite"><pre><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+<span class="o">&lt;!</span><span class="nt">--</span>
+<span class="k">@import</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&quot;style/fanatikmarslar.css&quot;</span><span class="o">)</span><span class="p">;</span>
+<span class="nt">--</span><span class="o">&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
 </pre></div>
 
 
-<p>url("style/fanatikmarslar.css"); --&gt; </style> </p>
 <p>Bundan sonra genelde ben psd'yi açıp sırası ile eskizde çizdiğim yapıya
 uygun olarak kodlamama başlarım. Bunun dışında bir yöntem daha vardır ki
 ben genelde bu yönteme başvurmuyorum. Genel sayfa yapısını içeren
@@ -256,9 +270,7 @@ başlarım.</p>
 alt sayfadaki iki kolonlu yapı olarak ikiye ayrılıyor. Ana Sayfa
 kodlaması ile başlayalım</p>
 <p>Bir sonraki makalede kaldığımız yerden devam edeceğiz.</p>
-</p>
-
-<p><img alt="Klasör Yapısı" src="../static/images/ders_01.gif" title="ders_01" />]: /images/ders_01.gif</p>
+<p><img alt="Klasör Yapısı" src="../static/images/ders_01.gif" />]: /images/ders_01.gif</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

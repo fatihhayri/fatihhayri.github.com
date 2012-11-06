@@ -95,15 +95,22 @@ sonra farklı bölümler için bu elemena farklı resimler atamam
 gerektiğinde aynı elemana .bolumA, .bolumB, vd. gibi sınıflar atadım.
 Bir bölümü olmayan sayfalarda ana resmimi görünecek bölümü olan
 sayfalarda ise ilgili resim görünecekti. </p>
-<div class="codehilite"><pre> <span class="nf">#tanitimAlani</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span><span class="k">transparent</span>
+<div class="codehilite"><pre><span class="nf">#tanitimAlani</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="k">transparent</span> <span class="sx">url(../images/genel.jpg)</span> <span class="k">no-repeat</span> <span class="k">scroll</span> <span class="k">center</span> <span class="k">top</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#tanitimAlani</span><span class="nc">.bolumA</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="k">transparent</span> <span class="sx">url(../images/bolumA.jpg)</span> <span class="k">no-repeat</span> <span class="k">scroll</span> <span class="k">center</span> <span class="k">top</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#tanitimAlani</span><span class="nc">.bolumB</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="k">transparent</span> <span class="sx">url(../images/bolumB.jpg)</span> <span class="k">no-repeat</span> <span class="k">scroll</span> <span class="k">center</span> <span class="k">top</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>url(../images/genel.jpg) no-repeat scroll center top; text-align:center;
-width:100%; } #tanitimAlani.bolumA { background:transparent
-url(../images/bolumA.jpg) no-repeat scroll center top; }</p>
-<h1>tanitimAlani.bolumB { background:transparent url(../images/bolumB.jpg)</h1>
-<p>no-repeat scroll center top; } </p>
 <p>Tanımı ile yapıyordum. Bu düşüncem tüm tarayıcılarda sorunsuz çalışırken
 ie6 sorun çıkardı. İlk atanan genel resmini gösterdi sadece, bölüm
 resimlerini göstermedi.</p>
@@ -111,15 +118,25 @@ resimlerini göstermedi.</p>
 <p>id ile atadığım genel ardalan resmi tanımı kaldırıp genel içinde bir
 sınıf(.bolumGenel) tanımladım ve bu sorunu aştım. Yani kodumu şöyle
 değiştirdim.</p>
-<div class="codehilite"><pre> <span class="nf">#tanitimalani</span><span class="p">{</span> <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#tanitimalani</span><span class="p">{</span>
+    <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.bolumA</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="k">transparent</span> <span class="sx">url(../images/bolumA.jpg)</span> <span class="k">no-repeat</span> <span class="k">scroll</span> <span class="k">center</span> <span class="k">top</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.bolumB</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="k">transparent</span> <span class="sx">url(../images/bolumB.jpg)</span> <span class="k">no-repeat</span> <span class="k">scroll</span> <span class="k">center</span> <span class="k">top</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.bolumGenel</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="k">transparent</span> <span class="sx">url(../images/genel.jpg)</span> <span class="k">no-repeat</span> <span class="k">scroll</span> <span class="k">center</span> <span class="k">top</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>width:100%; } .bolumA { background:transparent url(../images/bolumA.jpg)
-no-repeat scroll center top; } .bolumB { background:transparent
-url(../images/bolumB.jpg) no-repeat scroll center top; } .bolumGenel {
-background:transparent url(../images/genel.jpg) no-repeat scroll center
-top; } </p>
 <p>hribar.info'nun yaptığı örnek güzel inceleyin.</p>
 <p><a href="http://hribar.info/static/projects/multi-class_ie6_bug/error.html">http://hribar.info/static/projects/multi-class_ie6_bug/error.html</a></p>
 <h2>Kaynaklar</h2>
@@ -129,8 +146,7 @@ top; } </p>
 <li><a href="http://hribar.info/en/archive/80/entrie.html" title="http://hribar.info/en/archive/80/entrie.html">http://hribar.info/en/archive/80/entrie.html</a></li>
 <li><a href="http://www.ryanbrill.com/archives/multiple-classes-in-ie/" title="http://www.ryanbrill.com/archives/multiple-classes-in-ie/">http://www.ryanbrill.com/archives/multiple-classes-in-ie/</a></li>
 <li><a href="http://sonspring.com/journal/ie6-multi-class-bug" title="http://sonspring.com/journal/ie6-multi-class-bug">http://sonspring.com/journal/ie6-multi-class-bug</a></li>
-</ul>
-</p><p><a href=".././ie-6-iki-css-secicisi-sorunu-ve-cozumu/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././ie-6-iki-css-secicisi-sorunu-ve-cozumu/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
