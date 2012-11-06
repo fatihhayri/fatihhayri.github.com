@@ -2625,37 +2625,61 @@ sitesini ziyaret etmenizi öneririm.&lt;/p&gt;
 yok iken Internet Explorer ve Webkit tabanlı tarayıcılarda(Safari ve
 Google Chrome) sorun çıkarıyor. Biz burada Internet Explorer için nasıl
 bir çözüm üretebiliriz onu göstereceğiz. Webkit tabanlı tarayıcılar için
-çözüm bulamadım üzgünüm.    :::css
-     table tr{
-background:url(images/southpark.gif) 0 0 no-repeat; height:130px; }&lt;/p&gt;
-&lt;p&gt;&lt;img alt="İE de hatalı resmi" src="/images/tr_hatali_ie.gif" /&gt;&lt;/p&gt;
-&lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/tablo_satiri.html"&gt;tıklayınız.&lt;/a&gt; tanımlaması Firefox ve Opera da
-sorunsuz çalışırken IE ve Webkit tabanlı tarayıcılarda sorun
-çıkaracaktır. Çözüm için    :::css
-     table tr{
-background:url(images/southpark.gif) 0 0 no-repeat; height:130px;
-position:relative; } table tr td{ color:#fff; font:12px Arial,
-Helvetica, sans-serif; background:none; } &lt;/p&gt;
-&lt;p&gt;&lt;img alt="İE düzeltişmiş görüntüsü" src="/images/tr_duzeltilmis_ie.gif" /&gt;&lt;/p&gt;
-&lt;p&gt;tanımlamaları yeterlidir. Örneği görmek için &lt;a href="/dokumanlar/tablo_satiri2.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Kaynak&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://test.pixelbebop.com/test33/"&gt;http://test.pixelbebop.com/test33/&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="hata"></category><category term="internet explorer"></category><category term="sorun"></category><category term="tablo"></category><category term="tablo-satırı"></category><category term="tr"></category><category term="WebKit"></category></entry><entry><title>CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)</title><link href="http://www.fatihhayrioglu.com/css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/" rel="alternate"></link><updated>2009-02-23T16:47:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-02-23:css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/</id><summary type="html">&lt;p&gt;Daha önce birçok kez bu konuda bana e-posta geldi. Buraya yazmanın
-mantıklı olacağını düşündüm.    :::css
-     secici {
-opacity: .75; /&lt;em&gt; Standard: FF gt 1.5, Opera, Safari &lt;/em&gt;/ filter:
-alpha(opacity=75); /&lt;em&gt; IE lt 8 &lt;/em&gt;/ -ms-filter: "alpha(opacity=75)"; /&lt;em&gt;
-IE 8 &lt;/em&gt;/ -khtml-opacity: .75; /&lt;em&gt; Safari 1.x &lt;/em&gt;/ -moz-opacity: .75; /&lt;em&gt;
-FF lt 1.5, Netscape &lt;/em&gt;/ } &lt;/p&gt;
-&lt;p&gt;Günümüzdeki(27 Nisan 2012) durumu düşünürsek kodu aşağıdaki gibi
-kısaltabiliriz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;secici&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;/*&lt;/span&gt; &lt;span class="n"&gt;Standard&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;FF&lt;/span&gt; &lt;span class="n"&gt;gt&lt;/span&gt;
+çözüm bulamadım üzgünüm.  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="sx"&gt;url(images/southpark.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;130px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.5, Opera, Safari &lt;em&gt;/ filter: alpha(opacity=75); /&lt;/em&gt; IE lt 8 &lt;em&gt;/
--ms-filter: "alpha(opacity=75)"; /&lt;/em&gt; IE 8 &lt;em&gt;/ }  Örneği
-görmek için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/donukluk.html"&gt;tıklayınız.&lt;/a&gt; Kod aslında tek satır olması gerekir ki CSS
+&lt;p&gt;&lt;img alt="İE de hatalı resmi" src="/images/tr_hatali_ie.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/tablo_satiri.html"&gt;tıklayınız.&lt;/a&gt; tanımlaması Firefox ve Opera da
+sorunsuz çalışırken IE ve Webkit tabanlı tarayıcılarda sorun
+çıkaracaktır. Çözüm için  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;tr&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="sx"&gt;url(images/southpark.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;130px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;table&lt;/span&gt; &lt;span class="nt"&gt;tr&lt;/span&gt; &lt;span class="nt"&gt;td&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="İE düzeltişmiş görüntüsü" src="/images/tr_duzeltilmis_ie.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;tanımlamaları yeterlidir. Örneği görmek için &lt;a href="/dokumanlar/tablo_satiri2.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Kaynak&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://test.pixelbebop.com/test33/"&gt;http://test.pixelbebop.com/test33/&lt;/a&gt;&lt;/p&gt;</summary><category term="hata"></category><category term="internet explorer"></category><category term="sorun"></category><category term="tablo"></category><category term="tablo-satırı"></category><category term="tr"></category><category term="WebKit"></category></entry><entry><title>CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)</title><link href="http://www.fatihhayrioglu.com/css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/" rel="alternate"></link><updated>2009-02-23T16:47:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2009-02-23:css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/</id><summary type="html">&lt;p&gt;Daha önce birçok kez bu konuda bana e-posta geldi. Buraya yazmanın
+mantıklı olacağını düşündüm.  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;secici&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Standard: FF gt 1.5, Opera, Safari */&lt;/span&gt;
+    &lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;alpha&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c"&gt;/* IE lt 8 */&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;alpha(opacity=75)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* IE 8 */&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;khtml&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Safari 1.x */&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* FF lt 1.5, Netscape */&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Günümüzdeki(27 Nisan 2012) durumu düşünürsek kodu aşağıdaki gibi
+kısaltabiliriz.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;secici&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Standard: FF gt 1.5, Opera, Safari */&lt;/span&gt;
+    &lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;alpha&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c"&gt;/* IE lt 8 */&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;alpha(opacity=75)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* IE 8 */&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Örneği görmek için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/donukluk.html"&gt;tıklayınız.&lt;/a&gt; Kod aslında tek satır olması gerekir ki CSS
 3 ile birlikte bu tek satır olacaktır. opacity: değer; tanımı ile
 halledeceğiz. Ama şu an yürürlükte olan tarayıcılar için yukarıdaki 5
 satır kodu yazmalıyız. Bu kodu yazmak o kadar da sorun değil, ama eğer
@@ -2664,17 +2688,25 @@ aşağıdaki gibi bir hata alacaksınız. &lt;img alt="donuklasma_val2" src="/im
 doğrulması çok önemli olmasada bazen şartlar doğrulama
 gerektirdiğinde(mesela müşteri istediğinde) bu sorunu çözmek için bir
 kaç yöntem var. Bu yöntemlerden biri javascript fonksiyonu hazırlayıp bu
-fonksiyon yardımı ile elemanlarımızı saydamlaştırma; [sourcecode language="javascript"] function donuklastirma(element, donukDeger){ var
-oe = document.getElementById(element); // donuklastirma degeri
-oe.setAttribute("style", "opacity:"+ donukDeger +";") if
-(oe.style.setAttribute) // IE icin oe.style.setAttribute("filter",
-"alpha(opacity="+ donukDeger&lt;/em&gt;100 +");") }  Örneği görmek
+fonksiyon yardımı ile elemanlarımızı saydamlaştırma; &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;donuklastirma&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;element&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;donukDeger&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;oe&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;element&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="c1"&gt;// donuklastirma degeri&lt;/span&gt;
+    &lt;span class="nx"&gt;oe&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;setAttribute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;style&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;opacity:&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;donukDeger&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;oe&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;setAttribute&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;// IE icin&lt;/span&gt;
+    &lt;span class="nx"&gt;oe&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;setAttribute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;filter&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;alpha(opacity=&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;donukDeger&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;);&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Örneği görmek
 için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/donukluk_dog.html"&gt;tıklayınız.&lt;/a&gt; Diğer bir yöntemde ise ayrı bir css kodu yazıp bu
-kodu javascript ile ekleyebiliriz   :::html
-     &lt;script
-type="text/javascript"&gt; document.write('&lt;link rel="stylesheet"
-type="text/css" media="screen" href="style/donuklastirma.css" /&gt;');
-&lt;/script&gt; &lt;/p&gt;
+kodu javascript ile ekleyebiliriz &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; media=&amp;quot;screen&amp;quot; href=&amp;quot;style/donuklastirma.css&amp;quot; /&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Sorun: opacity tanımı kapsadığı elemanın içeriğini de etkiler bunu
 engellemek için Robert Nyman'ın bir çözümü var.
 &lt;a href="http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/"&gt;http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/&lt;/a&gt;
@@ -2683,12 +2715,8 @@ denemedim bir bakın isterseniz.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.evaria.com/2007/validate-css-style-opacity/" title="http://blog.evaria.com/2007/validate-css-style-opacity/"&gt;http://blog.evaria.com/2007/validate-css-style-opacity/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://snipplr.com/view/10094/crossbrowser-opacity/" title="http://snipplr.com/view/10094/crossbrowser-opacity/"&gt;http://snipplr.com/view/10094/crossbrowser-opacity/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/" title="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/"&gt;http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://www.codeguru.com/forum/showthread.php?threadid=458411" title="http://www.codeguru.com/forum/showthread.php?threadid=458411"&gt;http://www.codeguru.com/forum/showthread.php?threadid=458411&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/" title="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/"&gt;http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.codeguru.com/forum/showthread.php?threadid=458411" title="http://www.codeguru.com/forum/showthread.php?threadid=458411"&gt;http://www.codeguru.com/forum/showthread.php?threadid=458411&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://snipplr.com/view/707/setopacity/" title="http://snipplr.com/view/707/setopacity/"&gt;http://snipplr.com/view/707/setopacity/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.ertugrulhaskan.com/blog/?p=548" title="http://www.ertugrulhaskan.com/blog/?p=548"&gt;http://www.ertugrulhaskan.com/blog/?p=548&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.aybim.com.tr/progs/acsstxt17.html" title="http://www.aybim.com.tr/progs/acsstxt17.html"&gt;http://www.aybim.com.tr/progs/acsstxt17.html&lt;/a&gt;&lt;/li&gt;
@@ -2697,8 +2725,7 @@ denemedim bir bakın isterseniz.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.ahmetcelik.org/?p=220" title="http://www.ahmetcelik.org/?p=220"&gt;http://www.ahmetcelik.org/?p=220&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://mfyz.com/?/dokuman/82/css-ve-transparanlik/" title="http://mfyz.com/?/dokuman/82/css-ve-transparanlik/"&gt;http://mfyz.com/?/dokuman/82/css-ve-transparanlik/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://scriptiz.org/?p=1067" title="http://scriptiz.org/?p=1067"&gt;http://scriptiz.org/?p=1067&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="css doğrulama"></category><category term="donuklaştırma"></category><category term="İnternet Tarayıcısı"></category><category term="opacity"></category><category term="saydamlık"></category></entry><entry><title>CSS ile Basit Şekilde Fare Üzerine Gelince(Rollover) Resim Değişimi Yapmak</title><link href="http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/" rel="alternate"></link><updated>2008-11-10T10:48:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-11-10:css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/</id><summary type="html">&lt;p&gt;Daha önce bu konuya &lt;a href="http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler" title="Resimli Menüler"&gt;Resimli Menüler&lt;/a&gt; kısmında anlatmıştım, ama orada
+&lt;/ul&gt;</summary><category term="css doğrulama"></category><category term="donuklaştırma"></category><category term="İnternet Tarayıcısı"></category><category term="opacity"></category><category term="saydamlık"></category></entry><entry><title>CSS ile Basit Şekilde Fare Üzerine Gelince(Rollover) Resim Değişimi Yapmak</title><link href="http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/" rel="alternate"></link><updated>2008-11-10T10:48:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-11-10:css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/</id><summary type="html">&lt;p&gt;Daha önce bu konuya &lt;a href="http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler" title="Resimli Menüler"&gt;Resimli Menüler&lt;/a&gt; kısmında anlatmıştım, ama orada
 yapı daha karışık olduğu için anlaşılması ve basit uygulamalara
 uyarlanması konusunda sıkıntılar oluyordu. Bu işi daha basit bir örnek
 yardımı ile yapıp daha anlaşılır yapmak için beraber bir örnek yapalım.&lt;/p&gt;
@@ -2712,24 +2739,31 @@ resim olarak hazırlıyoruz(aradaki çizgiyi iki resim arasındaki ayrımı
 göstermek için koydum, normal resimde bu olmayacak)&lt;/p&gt;
 &lt;p&gt;&lt;img alt="anasayfaya dön" src="/images/mak_degisen_resim.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Xhtml kodumuzu yazalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;[Ana Sayfaya Dön][]
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;anasayfayaDon&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;anasayfa.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Ana Sayfaya Dön&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;CSS kodumuzu yazalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;80px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;80px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/degisen_resim.gif)&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-indent&lt;/span&gt;&lt;span class="o"&gt;:-&lt;/span&gt;&lt;span class="m"&gt;999px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="nc"&gt;.anasayfayaDon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background-position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-80px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;80px; height: 80px; background: url(images/degisen_resim.gif) 0 0
-no-repeat; text-decoration: none; text-indent:-999px; }
-a:hover.anasayfayaDon { background-position: -80px 0; }&lt;/p&gt;
 &lt;p&gt;Yöntemi daha önce anlattığımız gibi ardalan kaydırmaca yöntemidir.
 Hazırladığımız ardalan resminin ilk olarak istediğimiz kısmını
 gösteriyoruz. Fare imleci üzerine geldiğinde ise yatayda aynı eksende
 bulunan başlangıçta görünmeyen resmi eksi konum vererek gösteriyoruz.&lt;/p&gt;
-&lt;p&gt;Örnek sayfayı görmek için &lt;a href="/dokumanlar/fare_degisen_resim.html"&gt;tıklayınız&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="fare üzerine gelince"></category><category term="link"></category><category term="resim"></category><category term="rollover"></category></entry><entry><title>En çok kullandığım CSS Hileleri(Hack)</title><link href="http://www.fatihhayrioglu.com/en-cok-kullandigim-css-hilelerihack/" rel="alternate"></link><updated>2008-11-03T16:34:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-11-03:en-cok-kullandigim-css-hilelerihack/</id><summary type="html">&lt;p&gt;Yaklaşık 3-4 senedir css ile web sayfası kodluyorum. CSS ile web sayfası
+&lt;p&gt;Örnek sayfayı görmek için &lt;a href="/dokumanlar/fare_degisen_resim.html"&gt;tıklayınız&lt;/a&gt;&lt;/p&gt;</summary><category term="fare üzerine gelince"></category><category term="link"></category><category term="resim"></category><category term="rollover"></category></entry><entry><title>En çok kullandığım CSS Hileleri(Hack)</title><link href="http://www.fatihhayrioglu.com/en-cok-kullandigim-css-hilelerihack/" rel="alternate"></link><updated>2008-11-03T16:34:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-11-03:en-cok-kullandigim-css-hilelerihack/</id><summary type="html">&lt;p&gt;Yaklaşık 3-4 senedir css ile web sayfası kodluyorum. CSS ile web sayfası
 kodlarken en çok sorun çıkaran konulardan biri farklı tarayıcılar için
 kod yazmaktır. CSS hileleri ile geçiştirdiğimiz bu farklı tarayıcılara
 göre kod yazma işi bize aslında CSS ile sayfa kodlama imkanı sunması
@@ -2752,20 +2786,31 @@ tarayıcılarında farklı görünmesini engellemek için tantek çelik
 tarafından oluşturulan bir hiledir.&lt;/p&gt;
 &lt;p&gt;Kutu genişliği tanımlanmışsa ve padding veya kenar çizgiside
 tanımladığımızda uygulanan bu yöntem için yazdığımız kod aşağıdadır&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#icerik&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;230px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#icerik&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
+&lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;230px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;5px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Bundan sonraki kısmı ie5win sakla */&lt;/span&gt; 
+&lt;span class="k"&gt;voice-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;}\&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;voice-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;inherit&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="nf"&gt;#icerik&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+&lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;margin:5px; /&lt;em&gt; Bundan sonraki kısmı ie5win sakla &lt;/em&gt;/ voice-family:
-""}""; voice-family:inherit; width:200px; } html&amp;gt;body #icerik {
-width:200px; }&lt;/p&gt;
 &lt;p&gt;Sorun olan kodumuza biz sadece&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;voice-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    &lt;span class="nt"&gt;voice-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;quot;}\&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; 
+    &lt;span class="nt"&gt;voice-family&lt;/span&gt;&lt;span class="nd"&gt;:inherit&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; 
+    &lt;span class="nt"&gt;width&lt;/span&gt;&lt;span class="nd"&gt;:200px&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; 
+&lt;span class="err"&gt;}&lt;/span&gt; 
+&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="nf"&gt;#icerik&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;voice-family:inherit; width:200px; } html&amp;gt;body #icerik { width:200px;
-} &lt;/p&gt;
 &lt;p&gt;Bölümünü uygulamamız yeterlidir. Daha sonra eğer genişlik ise genişliği
 yükseklik ise yüksekliği ayarlamamız gerekir. Daha sonra **html&amp;gt;body&lt;/p&gt;
 &lt;h1&gt;icerik&lt;strong&gt; kısmından &lt;/strong&gt;#icerik** yerine kendi nesne adımızı yazmalıyız.&lt;/h1&gt;
@@ -2776,14 +2821,24 @@ dert olur. Alıştıktan sonra hemen uygular ve geçeriz.&lt;/p&gt;
 element içeriğine göre genişlememesidir.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="float sorunu" src="/images/clearfix_sorun.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Kodumuz;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.kapsul&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.kapsul&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.kapsul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+
+&lt;span class="c"&gt;/* IE-mac de bu bolumu sakla \ */&lt;/span&gt; 
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nc"&gt;.kapsul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.kapsul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt; 
+&lt;span class="c"&gt;/* IE-mac bu bolumu saklam artik */&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;height: 0; clear: both; visibility: hidden; } .kapsul {display:
-inline-block;} /&lt;em&gt; IE-mac de bu bolumu sakla  &lt;/em&gt;/ * html .kapsul
-{height: 1%;} .kapsul {display: block;} /&lt;em&gt; IE-mac bu bolumu saklam
-artik &lt;/em&gt;/ &lt;/p&gt;
 &lt;p&gt;Bu kodda &lt;strong&gt;.kapsul&lt;/strong&gt; yerine kendi nesne ismimizi yazmamız yeterlidir.&lt;/p&gt;
 &lt;h2&gt;3. IE6'un Tekrarlayan Karakter Sorunu&lt;/h2&gt;
 &lt;p&gt;Bu hata birden fazla float uygulanmış iç içe elementlerde meydana gelir.
@@ -2800,11 +2855,12 @@ diye tüm yorumlarımı bu şekilde yazarak bu sorundan kaçınmaya
 &lt;h2&gt;4. IE6'nın min-height Sorunu&lt;/h2&gt;
 &lt;p&gt;Son zamanlarda gelen işlerde çok rastlamam nedeni ile bu listeye son
 anda ilave ettim. IE6'nın desteklemediği min-height özelliği için&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;min-height&lt;/span&gt;&lt;span class="nd"&gt;:500px&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;height&lt;/span&gt;&lt;span class="nd"&gt;:auto&lt;/span&gt; &lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nt"&gt;important&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;min-height&lt;/span&gt;&lt;span class="nd"&gt;:500px&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;height&lt;/span&gt;&lt;span class="nd"&gt;:auto&lt;/span&gt; &lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nt"&gt;important&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;height&lt;/span&gt;&lt;span class="nd"&gt;:500px&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;height:500px;&lt;/p&gt;
 &lt;p&gt;yazmamız yeterli.&lt;/p&gt;
 &lt;p&gt;Bunun dışında &lt;a href="http://www.fatihhayrioglu.com/css-dersleri" title="CSS Dersleri Sayfası"&gt;CSS Derslerindeki&lt;/a&gt; sayfasındaki CSS Problemleri ve
 Çözüm Önerileri kısmında birçok problem görünse de yukarıda saydıklarım
@@ -2826,8 +2882,7 @@ Sineppets penceresine ekleyerek kolaylık sağlayabiliriz.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Dreamweaver Sineppet Penceresi" src="/images/koda_hile_ekle1.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Hemen bu pencereden ilgili başlığa çift tıklayarak kodumuzun içine
 ekleyebiliriz.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Dreamweaver Sineppet Penceresi" src="/images/koda_hile_ekle2.gif" /&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="clearfix"></category><category term="Dreamweaver"></category><category term="float"></category><category term="hileler"></category><category term="Kutu-Modeli"></category><category term="min-height"></category><category term="snippets"></category></entry><entry><title>z-index</title><link href="http://www.fatihhayrioglu.com/z-index/" rel="alternate"></link><updated>2008-01-14T23:10:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-01-14:z-index/</id><summary type="html">&lt;p&gt;z-index, konumlandırma elementleri uygulanmış katmanların z-eksenindeki
+&lt;p&gt;&lt;img alt="Dreamweaver Sineppet Penceresi" src="/images/koda_hile_ekle2.gif" /&gt;&lt;/p&gt;</summary><category term="clearfix"></category><category term="Dreamweaver"></category><category term="float"></category><category term="hileler"></category><category term="Kutu-Modeli"></category><category term="min-height"></category><category term="snippets"></category></entry><entry><title>z-index</title><link href="http://www.fatihhayrioglu.com/z-index/" rel="alternate"></link><updated>2008-01-14T23:10:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2008-01-14:z-index/</id><summary type="html">&lt;p&gt;z-index, konumlandırma elementleri uygulanmış katmanların z-eksenindeki
 konumu belirlemek için kullanılır.&lt;/p&gt;
 &lt;p&gt;z-index tüm elementlere uygulanamaz sadece konumlandırma değeri atanmış
 elementlere uygulanır. Bunun anlamı eğer bir elementi aynı z-ekseni

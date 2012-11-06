@@ -95,24 +95,31 @@ resim olarak hazırlıyoruz(aradaki çizgiyi iki resim arasındaki ayrımı
 göstermek için koydum, normal resimde bu olmayacak)</p>
 <p><img alt="anasayfaya dön" src="static/images/mak_degisen_resim.gif" /></p>
 <p>Xhtml kodumuzu yazalım</p>
-<div class="codehilite"><pre>[Ana Sayfaya Dön][]
+<div class="codehilite"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;anasayfayaDon&quot;</span> <span class="na">href=</span><span class="s">&quot;anasayfa.htm&quot;</span><span class="nt">&gt;</span>Ana Sayfaya Dön<span class="nt">&lt;/a&gt;</span>
 </pre></div>
 
 
 <p>CSS kodumuzu yazalım</p>
-<div class="codehilite"><pre><span class="nt">a</span><span class="nc">.anasayfayaDon</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nc">.anasayfayaDon</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">80px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">80px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/degisen_resim.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">text-indent</span><span class="o">:-</span><span class="m">999px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:hover</span><span class="nc">.anasayfayaDon</span> <span class="p">{</span>
+    <span class="k">background-position</span><span class="o">:</span> <span class="m">-80px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>80px; height: 80px; background: url(images/degisen_resim.gif) 0 0
-no-repeat; text-decoration: none; text-indent:-999px; }
-a:hover.anasayfayaDon { background-position: -80px 0; }</p>
 <p>Yöntemi daha önce anlattığımız gibi ardalan kaydırmaca yöntemidir.
 Hazırladığımız ardalan resminin ilk olarak istediğimiz kısmını
 gösteriyoruz. Fare imleci üzerine geldiğinde ise yatayda aynı eksende
 bulunan başlangıçta görünmeyen resmi eksi konum vererek gösteriyoruz.</p>
-<p>Örnek sayfayı görmek için <a href="static/dokumanlar/fare_degisen_resim.html">tıklayınız</a></p>
-</p><p><a href=".././css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/#disqus_thread">yorum var</a>.</p>
+<p>Örnek sayfayı görmek için <a href="static/dokumanlar/fare_degisen_resim.html">tıklayınız</a></p><p><a href=".././css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

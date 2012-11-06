@@ -82,21 +82,29 @@
 
 
 </footer><!-- /.post-info --><p>Daha önce birçok kez bu konuda bana e-posta geldi. Buraya yazmanın
-mantıklı olacağını düşündüm.    :::css
-     secici {
-opacity: .75; /<em> Standard: FF gt 1.5, Opera, Safari </em>/ filter:
-alpha(opacity=75); /<em> IE lt 8 </em>/ -ms-filter: "alpha(opacity=75)"; /<em>
-IE 8 </em>/ -khtml-opacity: .75; /<em> Safari 1.x </em>/ -moz-opacity: .75; /<em>
-FF lt 1.5, Netscape </em>/ } </p>
-<p>Günümüzdeki(27 Nisan 2012) durumu düşünürsek kodu aşağıdaki gibi
-kısaltabiliriz.</p>
-<div class="codehilite"><pre> <span class="nt">secici</span> <span class="p">{</span> <span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="o">/*</span> <span class="n">Standard</span><span class="o">:</span> <span class="n">FF</span> <span class="n">gt</span>
+mantıklı olacağını düşündüm.  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">secici</span> <span class="p">{</span>
+    <span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* Standard: FF gt 1.5, Opera, Safari */</span>
+    <span class="n">filter</span><span class="o">:</span> <span class="n">alpha</span><span class="p">(</span><span class="k">opacity</span><span class="o">=</span><span class="m">75</span><span class="p">);</span> <span class="c">/* IE lt 8 */</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> <span class="s2">&quot;alpha(opacity=75)&quot;</span><span class="p">;</span> <span class="c">/* IE 8 */</span>
+    <span class="o">-</span><span class="n">khtml</span><span class="o">-</span><span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* Safari 1.x */</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* FF lt 1.5, Netscape */</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>1.5, Opera, Safari <em>/ filter: alpha(opacity=75); /</em> IE lt 8 <em>/
--ms-filter: "alpha(opacity=75)"; /</em> IE 8 <em>/ }  Örneği
-görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/donukluk.html">tıklayınız.</a> Kod aslında tek satır olması gerekir ki CSS
+<p>Günümüzdeki(27 Nisan 2012) durumu düşünürsek kodu aşağıdaki gibi
+kısaltabiliriz.</p>
+<div class="codehilite"><pre><span class="nt">secici</span> <span class="p">{</span>
+    <span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* Standard: FF gt 1.5, Opera, Safari */</span>
+    <span class="n">filter</span><span class="o">:</span> <span class="n">alpha</span><span class="p">(</span><span class="k">opacity</span><span class="o">=</span><span class="m">75</span><span class="p">);</span> <span class="c">/* IE lt 8 */</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> <span class="s2">&quot;alpha(opacity=75)&quot;</span><span class="p">;</span> <span class="c">/* IE 8 */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/donukluk.html">tıklayınız.</a> Kod aslında tek satır olması gerekir ki CSS
 3 ile birlikte bu tek satır olacaktır. opacity: değer; tanımı ile
 halledeceğiz. Ama şu an yürürlükte olan tarayıcılar için yukarıdaki 5
 satır kodu yazmalıyız. Bu kodu yazmak o kadar da sorun değil, ama eğer
@@ -105,17 +113,25 @@ aşağıdaki gibi bir hata alacaksınız. <img alt="donuklasma_val2" src="static
 doğrulması çok önemli olmasada bazen şartlar doğrulama
 gerektirdiğinde(mesela müşteri istediğinde) bu sorunu çözmek için bir
 kaç yöntem var. Bu yöntemlerden biri javascript fonksiyonu hazırlayıp bu
-fonksiyon yardımı ile elemanlarımızı saydamlaştırma; [sourcecode language="javascript"] function donuklastirma(element, donukDeger){ var
-oe = document.getElementById(element); // donuklastirma degeri
-oe.setAttribute("style", "opacity:"+ donukDeger +";") if
-(oe.style.setAttribute) // IE icin oe.style.setAttribute("filter",
-"alpha(opacity="+ donukDeger</em>100 +");") }  Örneği görmek
+fonksiyon yardımı ile elemanlarımızı saydamlaştırma; </p>
+<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">donuklastirma</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">donukDeger</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">oe</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
+    <span class="c1">// donuklastirma degeri</span>
+    <span class="nx">oe</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;style&quot;</span><span class="p">,</span> <span class="s2">&quot;opacity:&quot;</span><span class="o">+</span> <span class="nx">donukDeger</span> <span class="o">+</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">oe</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">)</span> <span class="c1">// IE icin</span>
+    <span class="nx">oe</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="s2">&quot;alpha(opacity=&quot;</span><span class="o">+</span> <span class="nx">donukDeger</span><span class="o">*</span><span class="mi">100</span> <span class="o">+</span><span class="s2">&quot;);&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Örneği görmek
 için <a href="http://www.fatihhayrioglu.com/dokumanlar/donukluk_dog.html">tıklayınız.</a> Diğer bir yöntemde ise ayrı bir css kodu yazıp bu
-kodu javascript ile ekleyebiliriz   :::html
-     <script
-type="text/javascript"> document.write('<link rel="stylesheet"
-type="text/css" media="screen" href="static/style/donuklastirma.css" />');
-</script> </p>
+kodu javascript ile ekleyebiliriz <br />
+</p>
+<div class="codehilite"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span> <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;style/donuklastirma.css&quot; /&gt;&#39;</span><span class="p">);</span><span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+
 <p>Sorun: opacity tanımı kapsadığı elemanın içeriğini de etkiler bunu
 engellemek için Robert Nyman'ın bir çözümü var.
 <a href="http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/">http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/</a>
@@ -124,12 +140,8 @@ denemedim bir bakın isterseniz.</p>
 <ul>
 <li><a href="http://blog.evaria.com/2007/validate-css-style-opacity/" title="http://blog.evaria.com/2007/validate-css-style-opacity/">http://blog.evaria.com/2007/validate-css-style-opacity/</a></li>
 <li><a href="http://snipplr.com/view/10094/crossbrowser-opacity/" title="http://snipplr.com/view/10094/crossbrowser-opacity/">http://snipplr.com/view/10094/crossbrowser-opacity/</a></li>
-<li>
-<p><a href="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/" title="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/">http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/</a></p>
-</li>
-<li>
-<p><a href="http://www.codeguru.com/forum/showthread.php?threadid=458411" title="http://www.codeguru.com/forum/showthread.php?threadid=458411">http://www.codeguru.com/forum/showthread.php?threadid=458411</a></p>
-</li>
+<li><a href="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/" title="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/">http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/</a></li>
+<li><a href="http://www.codeguru.com/forum/showthread.php?threadid=458411" title="http://www.codeguru.com/forum/showthread.php?threadid=458411">http://www.codeguru.com/forum/showthread.php?threadid=458411</a></li>
 <li><a href="http://snipplr.com/view/707/setopacity/" title="http://snipplr.com/view/707/setopacity/">http://snipplr.com/view/707/setopacity/</a></li>
 <li><a href="http://www.ertugrulhaskan.com/blog/?p=548" title="http://www.ertugrulhaskan.com/blog/?p=548">http://www.ertugrulhaskan.com/blog/?p=548</a></li>
 <li><a href="http://www.aybim.com.tr/progs/acsstxt17.html" title="http://www.aybim.com.tr/progs/acsstxt17.html">http://www.aybim.com.tr/progs/acsstxt17.html</a></li>
@@ -138,8 +150,7 @@ denemedim bir bakın isterseniz.</p>
 <li><a href="http://www.ahmetcelik.org/?p=220" title="http://www.ahmetcelik.org/?p=220">http://www.ahmetcelik.org/?p=220</a></li>
 <li><a href="http://mfyz.com/?/dokuman/82/css-ve-transparanlik/" title="http://mfyz.com/?/dokuman/82/css-ve-transparanlik/">http://mfyz.com/?/dokuman/82/css-ve-transparanlik/</a></li>
 <li><a href="http://scriptiz.org/?p=1067" title="http://scriptiz.org/?p=1067">http://scriptiz.org/?p=1067</a></li>
-</ul>
-</p><p><a href=".././css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

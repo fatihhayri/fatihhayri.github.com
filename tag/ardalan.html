@@ -93,14 +93,19 @@ halledeceğiz. Anlamlı kodlama açısından avantajlıdır.</p>
 
 <p>Sayfamıza saydam bir resim ekleriz ve ardalan konumunu kod içinde
 belirleriz</p>
-<p>[sourcecode language="xhtml"]<img alt="%45" src="static/images/yuzde_cubugu.png" /> </p>
-<p>Sonrasında CSS kodumuzu yazarsak;</p>
-<div class="codehilite"><pre><span class="nt">img</span><span class="nc">.yuzdeCubugu</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/yuzde_cubugu.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;%45&quot;</span> <span class="na">class=</span><span class="s">&quot;yuzdeCubugu&quot;</span> <span class="na">style=</span><span class="s">&quot;background-position: -50px 0;&quot;</span> <span class="nt">/&gt;</span>
 </pre></div>
 
 
-<p>url(/images/yuzdeCubugu_ard.gif) top left no-repeat; padding: 0;
-margin: 0; } </p>
+<p>Sonrasında CSS kodumuzu yazarsak;</p>
+<div class="codehilite"><pre><span class="nt">img</span><span class="nc">.yuzdeCubugu</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(/images/yuzdeCubugu_ard.gif)</span> <span class="k">top</span> <span class="k">left</span> <span class="k">no-repeat</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
 <p>Kod kısmı bu kadar. Evet bu kadar kod ile yüzde çubuğunu oluşturduk.
 Kodun mantığını incelersek;</p>
 <p>Fikir olarak güzel bir düşünceye sahip olan bu kod, saydam orta kısmı
@@ -120,15 +125,14 @@ Seçim Sonuçları için bir sayfa hazırlayalım.</p>
 <p><img alt="" src="static/images/gosteri1.gif" /></p>
 <p><img alt="" src="static/images/gosteri2.gif" /></p>
 <p>Xhtml kodumuzu yazalım.</p>
-<div class="codehilite"><pre>
+<div class="codehilite"><pre><span class="nt">&lt;h1&gt;</span>Amerika Seçim Sonuçları<span class="nt">&lt;/h1&gt;</span> 
+<span class="nt">&lt;p&gt;</span>Obama (%56)<span class="nt">&lt;/p&gt;</span> 
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;yuzde_cubugu.gif&quot;</span> <span class="na">width=</span><span class="s">&quot;104&quot;</span> <span class="na">height=</span><span class="s">&quot;14&quot;</span> <span class="na">alt=</span><span class="s">&quot;%56&quot;</span> <span class="na">class=</span><span class="s">&quot;yuzde1&quot;</span> <span class="na">style=</span><span class="s">&quot;background-position: -42px 0;&quot;</span> <span class="nt">/&gt;</span> 
+<span class="nt">&lt;p&gt;</span>McCain (%44)<span class="nt">&lt;/p&gt;</span> 
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;yuzde_cubugu.gif&quot;</span> <span class="na">width=</span><span class="s">&quot;104&quot;</span> <span class="na">height=</span><span class="s">&quot;14&quot;</span> <span class="na">alt=</span><span class="s">&quot;%44&quot;</span> <span class="na">class=</span><span class="s">&quot;yuzde2&quot;</span> <span class="na">style=</span><span class="s">&quot;background-position: -54px 0;&quot;</span> <span class="nt">/&gt;</span>
 </pre></div>
 
 
-<h1>Amerika Seçim Sonuçları</h1>
-<p>Obama (%56)</p>
-<p><img alt="%56" src="static/yuzde_cubugu.gif" /></p>
-<p>McCain (%44)</p>
-<p><img alt="%44" src="static/yuzde_cubugu.gif" /> </p>
 <p>Yüzde çubuğunun genişliğini 100px yaptım ki, ayarlaması kolay olsun.
 Resim genişliğinin 104px görünmesinin nedeni 2px sağdan ve 2px soldan
 kenar çizgilerinin olması.</p>
@@ -137,15 +141,31 @@ kenar çizgilerinin olması.</p>
 100 - 56 - 2 = -42px şeklinde hesaplanacak.</p>
 <p>Aynı şekilde <strong>McCain</strong>'in yüzdesini de hesaplarsak. 100 - 44 - = -54px</p>
 <p>CSS kodumuz;</p>
-<div class="codehilite"><pre> <span class="nt">h1</span><span class="p">{</span> <span class="k">font</span><span class="o">:</span><span class="m">18px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">h1</span><span class="p">{</span> 
+    <span class="k">font</span><span class="o">:</span><span class="m">18px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="p">{</span> 
+    <span class="k">font</span><span class="o">:</span><span class="k">bold</span> <span class="m">12px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> 
+    <span class="k">margin-bottom</span><span class="o">:</span><span class="m">5px</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">img</span><span class="nc">.yuzde1</span> <span class="p">{</span> 
+ <span class="k">background</span><span class="o">:</span><span class="sx">url(gosteri1.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span> 
+ <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+ <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">img</span><span class="nc">.yuzde2</span> <span class="p">{</span> 
+ <span class="k">background</span><span class="o">:</span><span class="sx">url(gosteri2.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span> 
+ <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+ <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>color:#666; } p{ font:bold 12px Arial, Helvetica, sans-serif;
-margin-bottom:5px; color:#666; } img.yuzde1 {
-background:url(gosteri1.gif) 0 0 no-repeat; padding: 0; margin: 0; }
-img.yuzde2 { background:url(gosteri2.gif) 0 0 no-repeat; padding: 0;
-margin: 0; } </p>
 <p><img alt="anket sonuç ekranı" src="static/images/anket_sonuc_ekrani.gif" /></p>
 <p>Örnek kod FF3, IE6 - 7, Safari 3, Opera 9.6 ve Google Chrome 0.3Beta
 test edilmiştir.</p>
@@ -158,8 +178,7 @@ test edilmiştir.</p>
 <li><a href="http://www.webappers.com/2007/07/31/webappers-simple-ajax-progress-bar-with-css/">http://www.webappers.com/2007/07/31/webappers-simple-ajax-progress-bar-with-css/</a></li>
 <li><a href="http://mattberseth.com/blog/2008/07/jqueryui_progressbar_widget.html">http://mattberseth.com/blog/2008/07/jqueryui_progressbar_widget.html</a></li>
 <li><a href="http://www.dmry.net/css-ile-basit-bir-ilerleme-durum-cubugu-yapimi">http://www.dmry.net/css-ile-basit-bir-ilerleme-durum-cubugu-yapimi</a></li>
-</ul>
-</p><p><a href=".././css-ile-yuzde-cubugu-hazirlama/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././css-ile-yuzde-cubugu-hazirlama/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

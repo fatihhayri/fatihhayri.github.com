@@ -6513,44 +6513,71 @@ karşılaştığı 'Float uygulanmış elementlerin kapsayamama sorunu' bugün
 xpur(Gökhan)'un bir sorusu üzerine bu yazıyı yazma gereği duydum.
 Kapsayamama sorunu yaşadığımız katman içinde eğer selectbox var ise
 Firefox 3'de bu selectbox tıklanabilir olmuyor. Açılmıyor yani Kodumuz
-aşağıdaki gibi  :::css
-     .kapsayamamaSorunu: after {
-content: "."; display: block; height: 0; clear: both; visibility:
-hidden; } .kapsayamamaSorunu {display: inline-block;} /&lt;em&gt;IE-mac de bu
-bolumu sakla  &lt;/em&gt;/ * html .kapsayamamaSorunu {height: 1%;}
-.kapsayamamaSorunu {display: block;} /&lt;em&gt; IE-mac bu bolumu saklam artik
-&lt;/em&gt;/  sorunu çözümü ise .kapsayamamaSorunu ile :after
-arasındaki boşluğu kapatmak .kapsayamamaSorunu:after    :::css
-     .kapsayamamaSorunu:after { content: "."; display: block;
-height: 0; clear: both; visibility: hidden; }  Küçük bir
-nokta olsa da zamanı gelince insanın çok zamanını alıyor.&lt;/p&gt;
+aşağıdaki gibi&lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="c"&gt;/*IE-mac de bu bolumu sakla \ */&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="c"&gt;/* IE-mac bu bolumu saklam artik */&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;sorunu çözümü ise .kapsayamamaSorunu ile :after arasındaki boşluğu kapatmak .kapsayamamaSorunu:after  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Küçük bir nokta olsa da zamanı gelince insanın çok zamanını alıyor.&lt;/p&gt;
 &lt;h2&gt;2- Sorunun Kısayolu&lt;/h2&gt;
 &lt;p&gt;Bu konuda hakkında bir başka ipucuda float'uygulanmış nesnelerde bu
 sorun ile çok fazla karşılaşıyoruz, ben eskiden her bir sorunlu eleman
 için bu kodu yazıyordum. Sonra bunu bir sınıfa atayıp gerekli yerlerde
-bu sınıfı kullanmanın daha avantajlı olacağını düşündüm.    :::css
-     .kapsayamamaSorunu:after {content: "."; display: block;
-height: 0; clear: both; visibility: hidden;} .kapsayamamaSorunu
-{display: inline-block;} /&lt;em&gt;IE-mac de bu bolumu sakla  &lt;/em&gt;/ * html
-.kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu {display: block;}
-/&lt;em&gt; IE-mac bu bolumu saklam artik &lt;/em&gt;/     :::html&lt;/p&gt;
-&lt;div id="icerik" class="kapsayamamaSorunu"&gt;
--   &lt;select&gt; &lt;option value="-1"&gt;Seçiniz&lt;/option&gt;
-    &lt;option value="1"&gt;Deneme1&lt;/option&gt;
-    &lt;option value="2"&gt;Deneme2&lt;/option&gt; &lt;/select&gt;
+bu sınıfı kullanmanın daha avantajlı olacağını düşündüm.  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt;&lt;span class="nd"&gt;:after&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;content&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;inline&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="c"&gt;/*IE-mac de bu bolumu sakla \ */&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="nc"&gt;.kapsayamamaSorunu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
+&lt;span class="c"&gt;/* IE-mac bu bolumu saklam artik */&lt;/span&gt;
 
-&lt;/div&gt;
+&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="nd"&gt;:html&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="nt"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;icerik&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;kapsayamamaSorunu&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;      
+            &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;select&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;option&lt;/span&gt; &lt;span class="nt"&gt;value&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;-1&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="nt"&gt;Se&lt;/span&gt;&lt;span class="err"&gt;ç&lt;/span&gt;&lt;span class="nt"&gt;iniz&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;option&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;option&lt;/span&gt; &lt;span class="nt"&gt;value&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;1&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="nt"&gt;Deneme1&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;option&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;option&lt;/span&gt; &lt;span class="nt"&gt;value&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="nt"&gt;Deneme2&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;option&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;select&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="nt"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;resimAlani kapsayamamaSorunu&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="nt"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;images/deneme.jpg&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;width&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;150&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;height&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;80&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="resimAlani kapsayamamaSorunu"&gt;
-![][]
-
-&lt;/div&gt;
 
 &lt;p&gt;#icerik ve .resimAlani bu sorun ile karşılaştığımızı
 düşünelim. Tek tek bu kodu yazmaktansa .kapsayamamaSorunu isimli bir
 sınıf tanımlayıp sorunumuz ile karşılaştığımız her yerde bu sınıfı
-tanımlarız. Tek tanımla ile işimizi hallettik.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="float"></category><category term="ipucu"></category><category term="kapsayamama-sorunu"></category><category term="sorun"></category></entry><entry><title>CSS İpuçları 13 - CSS'de Cellspacing="0" nasıl yakalarız</title><link href="http://www.fatihhayrioglu.com/css-ipuclari-13-cssde-cellspacing0-nasil-yakalariz/" rel="alternate"></link><updated>2007-08-02T09:24:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-08-02:css-ipuclari-13-cssde-cellspacing0-nasil-yakalariz/</id><summary type="html">&lt;p&gt;Artık sayfalarımızı CSS ile oluşturup şekillendiriyoruz. Tabloların
+tanımlarız. Tek tanımla ile işimizi hallettik.&lt;/p&gt;</summary><category term="float"></category><category term="ipucu"></category><category term="kapsayamama-sorunu"></category><category term="sorun"></category></entry><entry><title>CSS İpuçları 13 - CSS'de Cellspacing="0" nasıl yakalarız</title><link href="http://www.fatihhayrioglu.com/css-ipuclari-13-cssde-cellspacing0-nasil-yakalariz/" rel="alternate"></link><updated>2007-08-02T09:24:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-08-02:css-ipuclari-13-cssde-cellspacing0-nasil-yakalariz/</id><summary type="html">&lt;p&gt;Artık sayfalarımızı CSS ile oluşturup şekillendiriyoruz. Tabloların
 Cellspacing="0" atamasını css ile nasıl yaparız. İşte cevabı:&lt;/p&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;table&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;border-spacing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;border-collapse&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;

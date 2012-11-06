@@ -92,44 +92,71 @@ karşılaştığı 'Float uygulanmış elementlerin kapsayamama sorunu' bugün
 xpur(Gökhan)'un bir sorusu üzerine bu yazıyı yazma gereği duydum.
 Kapsayamama sorunu yaşadığımız katman içinde eğer selectbox var ise
 Firefox 3'de bu selectbox tıklanabilir olmuyor. Açılmıyor yani Kodumuz
-aşağıdaki gibi  :::css
-     .kapsayamamaSorunu: after {
-content: "."; display: block; height: 0; clear: both; visibility:
-hidden; } .kapsayamamaSorunu {display: inline-block;} /<em>IE-mac de bu
-bolumu sakla  </em>/ * html .kapsayamamaSorunu {height: 1%;}
-.kapsayamamaSorunu {display: block;} /<em> IE-mac bu bolumu saklam artik
-</em>/  sorunu çözümü ise .kapsayamamaSorunu ile :after
-arasındaki boşluğu kapatmak .kapsayamamaSorunu:after    :::css
-     .kapsayamamaSorunu:after { content: "."; display: block;
-height: 0; clear: both; visibility: hidden; }  Küçük bir
-nokta olsa da zamanı gelince insanın çok zamanını alıyor.</p>
+aşağıdaki gibi<br />
+</p>
+<div class="codehilite"><pre><span class="nc">.kapsayamamaSorunu</span><span class="o">:</span> <span class="nt">after</span> <span class="p">{</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;}</span>
+<span class="c">/*IE-mac de bu bolumu sakla \ */</span>
+<span class="o">*</span> <span class="nt">html</span> <span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span> <span class="m">1</span><span class="o">%</span><span class="p">;}</span>
+<span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;}</span>
+<span class="c">/* IE-mac bu bolumu saklam artik */</span>
+</pre></div>
+
+
+<p>sorunu çözümü ise .kapsayamamaSorunu ile :after arasındaki boşluğu kapatmak .kapsayamamaSorunu:after  <br />
+</p>
+<div class="codehilite"><pre><span class="nc">.kapsayamamaSorunu</span><span class="nd">:after</span> <span class="p">{</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Küçük bir nokta olsa da zamanı gelince insanın çok zamanını alıyor.</p>
 <h2>2- Sorunun Kısayolu</h2>
 <p>Bu konuda hakkında bir başka ipucuda float'uygulanmış nesnelerde bu
 sorun ile çok fazla karşılaşıyoruz, ben eskiden her bir sorunlu eleman
 için bu kodu yazıyordum. Sonra bunu bir sınıfa atayıp gerekli yerlerde
-bu sınıfı kullanmanın daha avantajlı olacağını düşündüm.    :::css
-     .kapsayamamaSorunu:after {content: "."; display: block;
-height: 0; clear: both; visibility: hidden;} .kapsayamamaSorunu
-{display: inline-block;} /<em>IE-mac de bu bolumu sakla  </em>/ * html
-.kapsayamamaSorunu {height: 1%;} .kapsayamamaSorunu {display: block;}
-/<em> IE-mac bu bolumu saklam artik </em>/     :::html</p>
-<div id="icerik" class="kapsayamamaSorunu">
--   <select> <option value="-1">Seçiniz</option>
-    <option value="1">Deneme1</option>
-    <option value="2">Deneme2</option> </select>
+bu sınıfı kullanmanın daha avantajlı olacağını düşündüm.  <br />
+</p>
+<div class="codehilite"><pre><span class="nc">.kapsayamamaSorunu</span><span class="nd">:after</span> <span class="p">{</span><span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;}</span>
+<span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;}</span>
+<span class="c">/*IE-mac de bu bolumu sakla \ */</span>
+<span class="o">*</span> <span class="nt">html</span> <span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span> <span class="m">1</span><span class="o">%</span><span class="p">;}</span>
+<span class="nc">.kapsayamamaSorunu</span> <span class="p">{</span><span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;}</span>
+<span class="c">/* IE-mac bu bolumu saklam artik */</span>
 
-</div>
+<span class="o">::</span><span class="nd">:html</span>
+<span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="s2">&quot;icerik&quot;</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;kapsayamamaSorunu&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">ul</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span>      
+            <span class="o">&lt;</span><span class="nt">select</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nt">option</span> <span class="nt">value</span><span class="o">=</span><span class="s2">&quot;-1&quot;</span><span class="o">&gt;</span><span class="nt">Se</span><span class="err">ç</span><span class="nt">iniz</span><span class="o">&lt;/</span><span class="nt">option</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nt">option</span> <span class="nt">value</span><span class="o">=</span><span class="s2">&quot;1&quot;</span><span class="o">&gt;</span><span class="nt">Deneme1</span><span class="o">&lt;/</span><span class="nt">option</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nt">option</span> <span class="nt">value</span><span class="o">=</span><span class="s2">&quot;2&quot;</span><span class="o">&gt;</span><span class="nt">Deneme2</span><span class="o">&lt;/</span><span class="nt">option</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="nt">select</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nt">ul</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;resimAlani kapsayamamaSorunu&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">img</span> <span class="nt">src</span><span class="o">=</span><span class="s2">&quot;images/deneme.jpg&quot;</span> <span class="nt">width</span><span class="o">=</span><span class="s2">&quot;150&quot;</span> <span class="nt">height</span><span class="o">=</span><span class="s2">&quot;80&quot;</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+</pre></div>
 
-<div class="resimAlani kapsayamamaSorunu">
-![][]
-
-</div>
 
 <p>#icerik ve .resimAlani bu sorun ile karşılaştığımızı
 düşünelim. Tek tek bu kodu yazmaktansa .kapsayamamaSorunu isimli bir
 sınıf tanımlayıp sorunumuz ile karşılaştığımız her yerde bu sınıfı
 tanımlarız. Tek tanımla ile işimizi hallettik.</p>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

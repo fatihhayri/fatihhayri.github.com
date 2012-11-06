@@ -111,14 +111,13 @@ geldiğinde belirtip ilgili açıklamayı göstereceğiz. Flickr'dakine benzer
 bir görüntü olması için iki fazladan <span> ekleyeceğiz, bunları
 kaldırada biliriz.</p>
 <p>HTML kodumuzu yazalım</p>
-<div class="codehilite"><pre>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;foto&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;dexter&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.sho.com/site/dexter/&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;dis&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;ic&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;bilgi&quot;</span><span class="nt">&gt;</span>Dexter<span class="nt">&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span> 
+<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;html&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.w3.org/TR/REC-html40/&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;dis&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;ic&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;bilgi&quot;</span><span class="nt">&gt;</span>HTML 4<span class="nt">&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span> 
+<span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<ul>
-<li><a href="http://www.sho.com/site/dexter/"><span class="dis"><span class="ic"><span class="bilgi">Dexter</span></span></span></a></li>
-<li>[<span class="dis"><span class="ic"><span class="bilgi">HTML     4</span></span></span>][]</li>
-</ul>
 <p>CSS kodunu kademe kademe açıklayarak yazarsak;</p>
 <p>Burada resmimizi ul elemanı ardalan resmi olarak atadık. Bu teknikde
 önemli olan dıştaki kapsayıcı elemanı(ul#foto) göreceli konumlandırıp,
@@ -126,20 +125,30 @@ fare üzerine geldiğinde resmin etrafını çizip bilgisini göstermek. Bu
 resimde üzerini çizdiğimiz ve bilgisini gösterdiğimiz elemanlarada(<li
 class="dexter"> ve <li class="html">) mutlak konumlandırma ile
 tanımlayıp resmin üzerinde istediğimiz konuma yerleştiriyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#foto</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">500px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">331px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#foto</span><span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">500px</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">331px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/dexter.jpg)</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>position: relative; background: url(images/dexter.jpg) no-repeat;
-margin: 0; padding: 0; list-style: none; } </p>
 <p>Aşağıdaki kodda her bir haritalanacak nesne bir link olduğu için her
 birine tek tek atamaktansa genel bir tanım ile tüm linkleri mutlak
 konumlandırıyoruz ve kenar çizgisini tanımlıyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span> 
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="k">transparent</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<h1>000; text-decoration: none; border: 1px solid transparent; }</h1>
 <p>Her bir haritalanacak eleman için genişlik yüksek tanımını yapıyor ve
 kapsayıcı elemana göre konumunu belirliyoruz. Ayrıca haritalanan
 elemanların açıklamaları için konumu tanımı ve görünüm tanımlarını
@@ -149,16 +158,34 @@ Flickr'daki gibi bilgi kutusunun köşelerini yuvarlamak için tanımlar
 yaptık. Firefox için -moz-border-radius: 3px; Safari ve Google Chrome
 için  -webkit-border-radius: 3px; tanımlarını yaptık. Internet Explorer
 kullanıcıları için şimdilik bir çözüm yok.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nc">.dexter</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">110px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#foto</span> <span class="nc">.dexter</span> <span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">110px</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">175px</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span> 
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nf">#foto</span> <span class="nc">.html</span> <span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">80px</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">195px</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">408px</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span> <span class="nc">.bilgi</span> <span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> 
+    <span class="k">bottom</span><span class="o">:</span> <span class="m">-25px</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">2px</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#ffc</span><span class="p">;</span> 
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span> <span class="m">-30000px</span><span class="p">;</span> 
+    <span class="k">font</span><span class="o">:</span><span class="m">11px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> 
+    <span class="k">margin-left</span><span class="o">:</span> <span class="m">-60px</span><span class="p">;</span> 
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span> 
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>175px; top: 25px; left: 60px; } ul#foto .html a { width: 50px; height:
-80px; top: 195px; left: 408px; } ul#foto a .bilgi { position: absolute;
-bottom: -25px; width: 100%; padding: 2px; background-color:#ffc;
-text-align: center; left: -30000px; font:11px Arial, Helvetica,
-sans-serif; margin-left: -60px; -moz-border-radius: 3px;
--webkit-border-radius: 3px; } </p>
 <p>Amacımız Flickr tipi bir resim haritası oluşturmak olduğu için, iki
 kenar çizgisi tanımı yapmak için iki adet <span> etiketi yazdık ve
 bunlara dış(.dis) ve iç(.ic) sınıfları tanımladık. Tanımladığımız her
@@ -166,14 +193,28 @@ bir dis ve ic nesnesine haritaladığımız nesnelerin genişlik ve
 yükseklerinin 2px daha düşük değerlerini vererek üst üste binmelerini
 önledik ve görünümünü düzenlemiş olduk. Eğer istersek bu <span>
 etiketlerini kaldırabiliriz, daha sade bir görünüm olur.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span> <span class="nc">.dis</span><span class="o">,</span> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span> <span class="nc">.ic</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span> <span class="nc">.dis</span><span class="o">,</span> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span> <span class="nc">.ic</span> <span class="p">{</span>
+<span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+<span class="p">}</span> 
+<span class="nt">ul</span><span class="nf">#foto</span> <span class="nc">.dexter</span> <span class="nt">a</span> <span class="nc">.dis</span> <span class="p">{</span> 
+<span class="k">width</span><span class="o">:</span> <span class="m">108px</span><span class="p">;</span> 
+<span class="k">height</span><span class="o">:</span> <span class="m">173px</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">ul</span><span class="nf">#foto</span> <span class="nc">.html</span> <span class="nt">a</span> <span class="nc">.dis</span> <span class="p">{</span> 
+<span class="k">width</span><span class="o">:</span> <span class="m">48px</span><span class="p">;</span> 
+<span class="k">height</span><span class="o">:</span> <span class="m">78px</span><span class="p">;</span> 
+<span class="p">}</span>    
+<span class="nt">ul</span><span class="nf">#foto</span> <span class="nc">.dexter</span> <span class="nt">a</span> <span class="nc">.ic</span> <span class="p">{</span> 
+<span class="k">width</span><span class="o">:</span> <span class="m">106px</span><span class="p">;</span> 
+<span class="k">height</span><span class="o">:</span> <span class="m">171px</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">ul</span><span class="nf">#foto</span> <span class="nc">.html</span> <span class="nt">a</span> <span class="nc">.ic</span> <span class="p">{</span> 
+<span class="k">width</span><span class="o">:</span> <span class="m">46px</span><span class="p">;</span> 
+<span class="k">height</span><span class="o">:</span> <span class="m">76px</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>block; } ul#foto .dexter a .dis { width: 108px; height: 173px; }
-ul#foto .html a .dis { width: 48px; height: 78px; } ul#foto .dexter a
-.ic { width: 106px; height: 171px; } ul#foto .html a .ic { width: 46px;
-height: 76px; } </p>
 <p>Fare haritalanan alanların üzerine gelince çıkacak bilgilendirme
 alanının yerini belirliyoruz. - 3000px ile görüntüden çıkardığımız bilgi
 alanını görünür yapıp istediğimiz yere yerleştirdik.</p>
@@ -184,13 +225,18 @@ alanını görünür yapıp istediğimiz yere yerleştirdik.</p>
 <p>Tüm resmin üzerine gelindiğinde ve haritalanan alanların üzerine
 gelindiğinde kenar çizgi renklerini değiştirerek farklı bir görünüm
 kazandırıyoruz.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span> <span class="k">border-color</span><span class="o">:</span> <span class="m">#d4d82d</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span> 
+    <span class="k">border-color</span><span class="o">:</span> <span class="m">#d4d82d</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">ul</span><span class="nf">#foto</span><span class="nd">:hover</span> <span class="nt">a</span> <span class="nc">.dis</span><span class="o">,</span> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="nc">.dis</span> <span class="p">{</span> 
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">ul</span><span class="nf">#foto</span><span class="nd">:hover</span> <span class="nt">a</span> <span class="nc">.ic</span><span class="o">,</span> <span class="nt">ul</span><span class="nf">#foto</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="nc">.ic</span> <span class="p">{</span> 
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#fff</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>ul#foto:hover a .dis, ul#foto a:hover .dis { border: 1px solid #000;
-} ul#foto:hover a .ic, ul#foto a:hover .ic { border: 1px solid #fff;
-} </p>
 <p>Sonuçta görsel ve işlevsel olarak çok güzel bir uygulama elde ettik.
 Uygulanabileceği yerler kısıtlıda olsa, uygulandığın da güzel bir
 görünüm ve işlevsel bir sonuç elde edeceğimiz bu uygulama bizi birçok
@@ -207,7 +253,6 @@ avantaj sağlar.</p>
 <li><a href="http://www.frederikvig.com/temp.html" title="http://www.frederikvig.com/temp.html">http://www.frederikvig.com/temp.html</a> </li>
 <li><a href="http://www.cssplay.co.uk/menu/old_master.html" title="http://www.cssplay.co.uk/menu/old_master.html">http://www.cssplay.co.uk/menu/old_master.html</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

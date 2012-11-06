@@ -93,11 +93,18 @@ bir kontrol ile istemcinin kullandığı aracı bulup ona göre yönlendirme
 yapmalıyız. İstemci(örn: javascript) taraflı bir kontrolü yapamıyoruz
 çünkü desteklemiyor. Bu nedenle sunucu taraflı kod ile yapıyoruz. Eğer
 blackberry kullanıcı iseniz sizi BlackBerry.html sayfasına gönderecek.
-ASP ile bunu yapalım. [sourcecode language='vb'] &lt;% userAgent =
-Request.ServerVariables("HTTP_USER_AGENT") userAgent =
-lcase(userAgent) if Instr(userAgent, "blackberry") then
-response.redirect("BlackBerry.html") end if %&gt;  Aynı şeyi
-php ve diğer sunucu taraflı kod ile de yapılabilir</p>
+ASP ile bunu yapalım. </p>
+<div class="codehilite"><pre><span class="cp">&lt;%</span> 
+    <span class="n">userAgent</span> <span class="o">=</span> <span class="no">Request</span><span class="o">.</span><span class="n">ServerVariables</span><span class="p">(</span><span class="s2">&quot;HTTP_USER_AGENT&quot;</span><span class="p">)</span> 
+    <span class="n">userAgent</span> <span class="o">=</span> <span class="n">lcase</span><span class="p">(</span><span class="n">userAgent</span><span class="p">)</span> 
+    <span class="k">if</span> <span class="no">Instr</span><span class="p">(</span><span class="n">userAgent</span><span class="p">,</span> <span class="s2">&quot;blackberry&quot;</span><span class="p">)</span> <span class="k">then</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">redirect</span><span class="p">(</span><span class="s2">&quot;BlackBerry.html&quot;</span><span class="p">)</span> 
+    <span class="k">end</span> <span class="k">if</span> 
+<span class="cp">%&gt;</span><span class="x"></span>
+</pre></div>
+
+
+<p>Aynı şeyi php ve diğer sunucu taraflı kod ile de yapılabilir</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

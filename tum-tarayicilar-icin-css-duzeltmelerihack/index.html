@@ -63,7 +63,7 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="tum-tarayicilar-icin-css-ile-saydamlik-opacity/" rel="bookmark"
+        <a href="tum-tarayicilar-icin-css-duzeltmelerihack/" rel="bookmark"
            title="Permalink to Tüm tarayıcılar için CSS Düzeltmeleri(Hack)">Tüm tarayıcılar için CSS Düzeltmeleri(Hack)</a></h1>
       
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fatihhayri">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
@@ -123,11 +123,10 @@ yolu, tarayıcılara özel seçiciler içine kod yazmaktır.</p>
 
 
 <p>IE 7 ve altı</p>
-<div class="codehilite"><pre><span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="p">{}</span> <span class="o">*</span> <span class="nt">html</span>
+<div class="codehilite"><pre><span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="p">{}</span> <span class="o">*</span> <span class="nt">html</span><span class="p">{}</span>
 </pre></div>
 
 
-<p>{}</p>
 <p>sadece IE 7 için</p>
 <div class="codehilite"><pre><span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="p">{}</span>
 </pre></div>
@@ -144,22 +143,24 @@ yolu, tarayıcılara özel seçiciler içine kod yazmaktır.</p>
 
 
 <p>sadece IE 8 için</p>
-<div class="codehilite"><pre><span class="nc">.test</span> <span class="p">{</span> <span class="n">property</span><span class="o">:</span><span class="n">value</span><span class="p">;</span> <span class="n">property</span><span class="o">:</span> <span class="n">value9</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nc">.test</span> <span class="p">{</span> 
+    <span class="n">property</span><span class="o">:</span><span class="n">value</span><span class="p">;</span> 
+    <span class="n">property</span><span class="o">:</span> <span class="n">value9</span><span class="p">;</span>
+    <span class="o">*</span><span class="n">property</span><span class="o">:</span> <span class="n">value</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>*property: value; }</p>
 <p>Opera 9 ve altı sürümler için</p>
 <div class="codehilite"><pre><span class="nt">html</span><span class="nd">:first-child</span> <span class="p">{}</span>
 </pre></div>
 
 
 <p>Safari</p>
-<div class="codehilite"><pre><span class="nt">html</span><span class="o">[</span><span class="nt">xmlns</span><span class="o">*=</span><span class="s2">&quot;&quot;</span><span class="o">]</span> <span class="nt">body</span><span class="nd">:last-child</span>
+<div class="codehilite"><pre><span class="nt">html</span><span class="o">[</span><span class="nt">xmlns</span><span class="o">*=</span><span class="s2">&quot;&quot;</span><span class="o">]</span> <span class="nt">body</span><span class="nd">:last-child</span><span class="p">{}</span>
 </pre></div>
 
 
-<p>{}</p>
 <p>Google Chrome and Safari 3.1</p>
 <div class="codehilite"><pre><span class="nt">body</span><span class="nd">:nth-of-type</span><span class="o">(</span><span class="nt">1</span><span class="o">)</span><span class="p">{}</span>
 </pre></div>
@@ -171,49 +172,73 @@ yolu, tarayıcılara özel seçiciler içine kod yazmaktır.</p>
 
 
 <p>FireFox 3</p>
-<div class="codehilite"><pre><span class="nc">.foo</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:default</span> <span class="p">{</span>
+<div class="codehilite"><pre><span class="nc">.foo</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:default</span> <span class="p">{}</span>
 </pre></div>
 
 
-<p>}</p>
 <p>Firefox 2 ve 3 için yazdığımız kodu ie 7 de yorumluyor bunu engellemek
 için (Sonradan eklenmiştir.)</p>
-<div class="codehilite"><pre> <span class="nc">.foo</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span> <span class="p">{</span> <span class="p">}</span> <span class="nc">.foo</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nc">.foo</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span> <span class="p">{</span> <span class="p">}</span> 
+<span class="nc">.foo</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:default</span> <span class="p">{</span> <span class="p">}</span> 
+<span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="nc">.foo</span><span class="p">{}</span><span class="c">/*ie7 icin normali yazin*/</span>
 </pre></div>
 
 
-<p>x:-moz-any-link, x:default { } <em>:first-child+html .foo{}/</em>ie7 icin
-normali yazin*/ </p>
-<p>Sadece Firefox 3    :::css
-    html&gt;;/**/body .foo,
-x:-moz-any-link, x:default { }</p>
+<p>Sadece Firefox 3  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">html</span><span class="o">&gt;;</span><span class="c">/**/</span><span class="nt">body</span> <span class="nc">.foo</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:default</span> <span class="p">{</span> <span class="p">}</span>
+</pre></div>
+
+
 <p>Burada önemli olan her tarayıcı farklı görünümünde bu metoda başvurmamak
 gerekir, çözümü olmayan sorunlarla karşılaştığımızda bu kodları
 kullanmalıyız.</p>
 <p>Bu kodları kullanma gereksinim genelde Internet Explorer 6 ve 7 için
 oluyor. Ama nadirende olsa diğer tarayıcıların düzeltmeleride lazım
 oluyor. Bir örnek yapalım</p>
-<div class="codehilite"><pre> <span class="c">/* Firefox 1 */</span> <span class="nc">.ozelSecici</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="c">/* Firefox 1 */</span>
+<span class="nc">.ozelSecici</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#ffd560</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* Firefox 2 */</span>
+<span class="nc">.ozelSecici</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#ab1b0b</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* Firefox 3 */</span>
+<span class="nc">.ozelSecici</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:-moz-any-link</span><span class="o">,</span> <span class="nt">x</span><span class="nd">:default</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#e6831f</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* Google Chrome and Safari 3.1 */</span>
+<span class="nt">body</span><span class="nd">:nth-of-type</span><span class="o">(</span><span class="nt">1</span><span class="o">)</span> <span class="nc">.ozelSecici</span><span class="p">{</span>
+   <span class="k">background-color</span><span class="o">:</span><span class="m">#e6f0fa</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* Opera 9 ve altı */</span>
+<span class="nt">html</span><span class="nd">:first-child</span> <span class="nc">.ozelSecici</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#a91614</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* ie7 icin */</span>
+<span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="nc">.ozelSecici</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#0098de</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* ie 7 ve alt sürümler icin */</span>
+<span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="nc">.ozelSecici</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#d4d0c8</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">*</span> <span class="nt">html</span> <span class="nc">.ozelSecici</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#d4d0c8</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* ie6 ve alti */</span>
+<span class="o">*</span> <span class="nt">html</span> <span class="nc">.ozelSecici</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#996666</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>x:-moz-any-link { background-color:#ffd560; } /<em> Firefox 2 </em>/
-.ozelSecici, x:-moz-any-link { background-color:#ab1b0b; } /<em> Firefox
-3 </em>/ .ozelSecici, x:-moz-any-link, x:default {
-background-color:#e6831f; } /<em> Google Chrome and Safari 3.1 </em>/
-body:nth-of-type(1) .ozelSecici{ background-color:#e6f0fa; } /<em> Opera
-9 ve altı </em>/ html:first-child .ozelSecici{ background-color:#a91614; }
-/<em> ie7 icin </em>/ <em>:first-child+html .ozelSecici{
-background-color:#0098de; } /</em> ie 7 ve alt sürümler icin <em>/
-</em>:first-child+html .ozelSecici{ background-color:#d4d0c8; } * html
-.ozelSecici{ background-color:#d4d0c8; } /<em> ie6 ve alti </em>/ * html
-.ozelSecici{ background-color:#996666; }</p>
 <p>HTML kodu</p>
-<div class="codehilite"><pre><span class="nt">&lt;p</span>
+<div class="codehilite"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;ozelSecici&quot;</span><span class="nt">&gt;</span>Tarayıcı<span class="nt">&lt;/p&gt;</span>
 </pre></div>
 
 
-<p>class="ozelSecici"&gt;Tarayıcı</p></p>
 <p>Örneği görmek için <a href="http://www.fatihhayrioglu.com/dokumanlar/css_duzeltme.html" title="tıklayınız.">tıklayınız.</a></p>
 <p>Aynı XHTML kodu için aşağıdaki gibi farklı tarayıcılarda farklı
 sonuçları alırız.</p>
@@ -246,7 +271,7 @@ Internet Explorer 7/6/5.5, Opera 9.6 ile test edilmiştir.</p>
       <h2>Yorumlar !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_url = "http://www.fatihhayrioglu.com/tum-tarayicilar-icin-css-ile-saydamlik-opacity/";
+        var disqus_url = "http://www.fatihhayrioglu.com/tum-tarayicilar-icin-css-duzeltmelerihack/";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://fatihhayri.disqus.com/embed.js';
