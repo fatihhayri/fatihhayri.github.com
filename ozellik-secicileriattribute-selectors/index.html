@@ -89,161 +89,190 @@
       <p>Bu konuya biraz geç değindik biliyorum. Ancak bu konuyu <a href="http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/">(X)HTML Sayfa Yapısı ve CSS Kullanımı</a> makalesi içinde yazmayı düşündüğümde IE bu
 özelliği desteklemiyordu(şimdi IE7 bu özelliği desteklemektedir.) bu
 nedenle yazımını ertelemiştim, sonrada unuttum gitti açıkçası neyse
-sonunda yazıyorum işte:) <!--more--></p>
+sonunda yazıyorum işte:) </p>
 <p>CSS ile tanımlama yaparken Xhtml nesnelerine erişmede bazen sıkıntı
 çekeriz. Ne yapsak da bu elemente atama yapsak diye bu genelde programcı
 - Arayüz Kod Yazarı ayrımının olduğu projelerde çok başımıza gelir. Bu
 sorunu kökünden çözen bir yöntemdir <strong>Özellik Seçicileri</strong>.</p>
-<div class="ekstrabilgi">
+<p><strong>Not</strong>
 Javascript gibi id'si olan her elemente(hata daha fazlası da var) css
-özelliği atanması bize bir çok bakımdan avantaj sağlar.
-
-</div>
-
+özelliği atanması bize bir çok bakımdan avantaj sağlar.</p>
 <p>Özellik Seçicileri HTML, XHTML veya XML dokümanlarındaki seçilen
 etiketin özelliklerine veya özellik değerlerine göre tanımlama yapmamızı
 sağlar. Bir örnek verecek olursak sayfamızdaki bir resme(örn:
 grafik.gif) kenarlık ataması yapmak istersek:</p>
-<div class="codehilite"><pre> <span class="nt">img</span><span class="o">[</span><span class="nt">src</span><span class="o">=</span><span class="s2">&quot;grafik.gif&quot;</span><span class="o">]</span><span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span>
+<div class="codehilite"><pre><span class="nt">img</span><span class="o">[</span><span class="nt">src</span><span class="o">=</span><span class="s2">&quot;grafik.gif&quot;</span><span class="o">]</span><span class="p">{</span> 
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<h1>000; }</h1>
 <p>Dört çeşit Özellik Seçicisi vardır.</p>
 <h2>1- Basit Özellik Seçicisi</h2>
 <p>Belirli bir etiketin(örn:img) özelligine(örn:alt) göre tanımlama
 yapmamızı sağlar.</p>
 <p><img alt="Basit özellik seçicisi" src="../static/images/basit_ozel_secici.gif" /></p>
 <p>Bir örnek yapalım</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span>
+<span class="cp">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>CSS&#39;in yapısı<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">img</span><span class="o">[</span><span class="nt">alt</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="nb">lime</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;logo.gif&quot;</span> <span class="na">alt=</span><span class="s">&quot;Logo&quot;</span> <span class="na">width=</span><span class="s">&quot;32&quot;</span> <span class="na">height=</span><span class="s">&quot;41&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CSS'in yapısı</title> <style type="text/css"> img[alt] {
-border: 5px solid lime } </style> </head> <body> <img
-src="../static/logo.gif" alt="Logo" width="32" height="41" /> </body> </html></p>
 <p>Örneği görmek için <a href="../static/dokumanlar/basit_ozellik_secici.html">tıklayınız.</a></p>
-<p>Yukarıdaki kodlamada birden fazla <img> tanımı vardır. Ama biz sadece
+<p>Yukarıdaki kodlamada birden fazla &lt;img> tanımı vardır. Ama biz sadece
 alt tanımı yaptıklarımıza belli özellikler atamak istiyoruz. Bunun için
 Basit Özellik Seçicisini kullanabiliriz.</p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:**
-
-</p>
-<p>
-Internet Explorer 6.0: desteklemiyor 7.0: destekliyor ;  
-Firefox: destekliyor ;  
-Google Chrome: destekliyor ;  
-Opera: destekliyor
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox  <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser</p>
 <h2>2- Özellik Değeri Seçicisi</h2>
 <p>Bir etiketin özellik değerine göre tanımlama yapmamızı sağlar.</p>
 <p><img alt="Özellik Değeri Seçicisi" src="../static/images/ozellik_degeri_secicisi.gif" /></p>
 <p>Bir örnek yapalım</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span>
+<span class="cp">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span>
+<span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>CSS&#39;in yapısı<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="o">]</span> <span class="p">{</span>
+<span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span>
+<span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;p&gt;</span>Adınız : <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;ad&quot;</span> <span class="nt">/&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Cinsiyetiniz: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;cinsiyet&quot;</span> <span class="na">id=</span><span class="s">&quot;erkek&quot;</span> <span class="nt">/&gt;</span>
+Erkek <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;cinsiyet&quot;</span> <span class="na">id=</span><span class="s">&quot;kadin&quot;</span> <span class="nt">/&gt;</span> Kadın
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CSS'in yapısı</title> <style type="text/css">
-input[type="text"] { border: 1px solid #000; width: 150px; } </style>
-</head> <body> <p>Adınız : <input type="text" name="ad" /></p>
-<p>Cinsiyetiniz: <input type="radio" name="cinsiyet" id="erkek" />
-Erkek <input type="radio" name="cinsiyet" id="kadin" /> Kadın </p>
-</body> </html> </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/ozellik_degeri_secicisi.html">tıklayınız.</a></p>
 <p>Genelde formlarda tanımlama yaparken sadece metin girisi yaptıgımız
-alanlara atama yapmakta zorlanırız. Bunun sebebi <input> etiketini
+alanlara atama yapmakta zorlanırız. Bunun sebebi &lt;input> etiketini
 sadece metin girisi için kullanılmamasıdır, radyo buton ve isaretleme
 kutuları içinde bu etiketin kullanılmasıdır. Özellik Degeri Seçicisi bu
 sorunu kökten çözer. Yukarıdaki örnekte görüldügü gibi</p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:**
-
-</p>
-<p>
-Internet Explorer6: desteklemiyor 7.0: destekliyor ;  
-Firefox: destekliyor ;  
-Google Chrome: destekliyor ;  
-Opera: destekliyor
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari   <br />
+Opera Mobile<br />
+Android Browser</p>
 <h2>3- Kısmi Özellik Değeri Seçicisi</h2>
 <p>Bir etiketin özellik değerindeki boşluklarla ayrılmış kısımlarına göre
 tanımlama yapmamızı sağlar.</p>
 <p><img alt="Kısmi Özellik Değeri Seçicisi" src="../static/images/kismi_secici.gif" /></p>
 <p>Bir örnek yapalım</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span>
+<span class="cp">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span>
+<span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>CSS&#39;in yapısı<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">title</span><span class="o">~=</span><span class="s2">&quot;Google&quot;</span><span class="o">]</span> <span class="p">{</span>
+<span class="k">text-decoration</span><span class="o">:</span><span class="k">overline</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.google.com&quot;</span> <span class="na">title=</span><span class="s">&quot;Google seç&quot;</span><span class="nt">&gt;</span>gooogle
+<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.yahoo.com&quot;</span> <span class="na">title=</span><span class="s">&quot;Yahoo seç&quot;</span><span class="nt">&gt;</span>yahoo <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.fatihhayrioglu.com&quot;</span> <span class="na">title=</span><span class="s">&quot;Fatih&quot;</span><span class="nt">&gt;</span>fatih <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CSS'in yapısı</title> <style type="text/css">
-a[title~="Google"] { text-decoration:overline; } </style> </head>
-<body> <p><a href="http://www.google.com" title="Google
-seç">gooogle </a> </p> <p><a href="http://www.yahoo.com"
-title="Yahoo seç">yahoo </a> </p> <p><a
-href="http://www.fatihhayrioglu.com" title="Fatih">fatih </a> </p>
-</body> </html> </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/kismi_secici.html">tıklayınız.</a></p>
 <p>Türkçe karakterde sorunsuz çalısıyor. Siz kullanabilecegimiz yerleri
 hesap edin artık.</p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:**
-
-</p>
-<p>
-Internet Explorer 6.0: desteklemiyor 7.0: destekliyor ;  
-Firefox: destekliyor ;  
-Google Chrome: destekliyor ;  
-Opera: destekliyor
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser</p>
 <h2>4- Dikkate Değer Özellik Seçicisi</h2>
 <p>Bir etiketin özellik değerindeki kesik çizgi(-) ile ayrılmış kısımlarına
 göre tanımlama yapmamızı sağlar.</p>
 <p><img alt="Dikkate Değer Özellik Seçicisi" src="../static/images/dikkate_deger_secici.gif" /></p>
 <p>Bir örnek yapalım</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span>
+<span class="cp">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span>
+<span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>CSS&#39;in yapısı<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+<span class="o">*[</span><span class="nt">lang</span><span class="o">|=</span><span class="s2">&quot;en&quot;</span><span class="o">]</span> <span class="p">{</span>
+<span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>Hello!<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">&quot;en-us&quot;</span><span class="nt">&gt;</span>Greetings!<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">&quot;en-au&quot;</span><span class="nt">&gt;</span>G’day!<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Bonjour!<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;h4</span> <span class="na">lang=</span><span class="s">&quot;cy-en&quot;</span><span class="nt">&gt;</span>Jrooana!<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CSS'in yapısı</title> <style type="text/css">
-*[lang|="en"] { color: red; } </style> </head> <body> <h1
-lang="en">Hello!</h1> <p lang="en-us">Greetings!</p> <div
-lang="en-au">G’day!</div> <p lang="fr">Bonjour!</p> <h4
-lang="cy-en">Jrooana!</h4> </body> </html> </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/dikkate_deger_secici.html">tıklayınız.</a></p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:**
-
-</p>
-<p>
-Internet Explorer 6.0: desteklemiyor 7.0: destekliyor ;  
-Firefox: destekliyor ;  
-Google Chrome: destekliyor ;  
-Opera: destekliyor
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser</p>
 <p>Bunların dısında CSS3 ile birlikte gelen dört tane daha yeni Özellik
 Seçicisi vardır. "Belirlenen Sözdizimi ile Baslayan Özellik Deger
 Seçicisi", "Belirlenen Sözdizimi ile Biten Özellik Deger Seçicisi",
@@ -258,7 +287,6 @@ ve etkilesimli kod yazmamızı saglamak.</p>
 <li><a href="http://css.maxdesign.com.au/selectutorial/selectors_attribute.htm">http://css.maxdesign.com.au/</a></li>
 <li><a href="http://westciv.com/style_master/academy/browser_support/selectors.html">http://westciv.com/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

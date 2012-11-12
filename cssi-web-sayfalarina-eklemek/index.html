@@ -89,62 +89,73 @@
       <h2>1- Kod içinde (In-line)</h2>
 <p>Direk olarak (X)HTML elementin içine <strong>style</strong> özelliği kullanılarak
 uygulamak.<!--more--></p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;color:red&quot;</span><span class="nt">&gt;</span>Deneme
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;color:red&quot;</span><span class="nt">&gt;</span>Deneme yazımız<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>yazımız</div> </p>
 <p>Tüm CSS komutlarını kodların içine direk uygulamak önerilen bir kodlama
 şekli değildir. Ancak özel durumlarda kullanılabilir.</p>
 <h2>2- style Elementi kullanılarak</h2>
-<p><head> kısmında <style> elementi içinde CSS kodumuzu yazarak
+<p>&lt;head> kısmında &lt;style> elementi içinde CSS kodumuzu yazarak
 uygulamak.</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=iso-8859-9&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>CSS&#39;i Uygulamak <span class="nt">&lt;/title&gt;</span> 
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">div</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-<title>CSS'i Uygulamak </title> <style type="text/css"> div{
-color:red; } </style> </head> </p>
 <p>Birinci yönteme göre avantajı (X)HTML kod ile CSS bir birinden
 ayrıştırılmış olmasıdır.</p>
 <h2>3- Harici Stil şablonu Kullanımı</h2>
 <p>Bu metod da CSS kodlarımzı <strong>.css</strong> uzantılı bir dosyaya kaydederiz.
 <strong>ornek.css</strong></p>
-<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">p</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
 <p>Daha sonra bu kodu gereken sayfalarımıza uygularız.</p>
-<div class="codehilite"><pre><span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=iso-8859-9&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>CSS&#39;i Uygulamak<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href=</span><span class="s">&quot;ornek.css&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-<title>CSS'i Uygulamak</title> <link rel="stylesheet"
-type="text/css" href="../static/ornek.css" /> </head> </p>
 <p>Bu yöntemin diğerlerine göre en büyük avantajı bir kere yazılan kod
 lazım olan tüm sayfalara eklenebilmesidir. Bu sayede harici eklenen css
 kodu bir kere yüklendikten sonra diğer kullandığımız sayfalarda tekrar
 yüklenemeyerek bize hız kazandıracaktır.</p>
 <h2>4- @import ile eklemek</h2>
 <p>üncü yöntem ile kullanımı benzerdir.</p>
-<div class="codehilite"><pre><span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=iso-8859-9&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>CSS&#39;i Uygulamak<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span> 
+<span class="k">@import</span> <span class="s2">&quot;ornek.css&quot;</span><span class="p">;</span> 
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-<title>CSS'i Uygulamak</title> <style type="text/css"> @import
-"ornek.css"; </style> </head> </p>
 <p>Bu yöntemle eklenen harici css dosyası eski web tarayıcıları tarafından
 görüntülenemeyecektir.(Örn: NN4)</p>
 <p>@import ile eklenen kod link ile eklenen kodlamadan önce yorumlanır web
@@ -159,27 +170,27 @@ kullanılan sayfa CSS'inde hangi parçalar gerekli ise onların import
 edilmesi önerilir. Bu sayfade kodun bir kısmında yaptığımız değişiklik
 için tüm css kodu incelenip değiştirlmesi gerekmez ve kod yönetimi
 kolaylaşır.</p>
-<div class="codehilite"><pre><span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=iso-8859-9&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>CSS&#39;i Uygulamak<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span> 
+<span class="k">@import</span> <span class="s2">&quot;ornek.css&quot;</span><span class="p">;</span> 
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-<title>CSS'i Uygulamak</title> <style type="text/css"> @import
-"ornek.css"; </style> </head></p>
 <p>Ürünler bölümü için bir css dosyası ekleyelim sonra parçalara
 ayırdığımız css kodlarının ürünlere lazım olanlarını <strong>urunler.css</strong>
 içine ekleyelim.</p>
 <p><strong>urunler.css</strong></p>
-<div class="codehilite"><pre> <span class="k">@import</span> <span class="nt">url</span><span class="o">(/</span><span class="nt">css</span><span class="o">/</span><span class="nt">iskelet</span><span class="nc">.css</span><span class="o">)</span><span class="p">;</span> <span class="k">@import</span>
+<div class="codehilite"><pre> <span class="k">@import</span> <span class="nt">url</span><span class="o">(/</span><span class="nt">css</span><span class="o">/</span><span class="nt">iskelet</span><span class="nc">.css</span><span class="o">)</span><span class="p">;</span> 
+<span class="k">@import</span> <span class="nt">url</span><span class="o">(/</span><span class="nt">css</span><span class="o">/</span><span class="nt">fontlar</span><span class="nc">.css</span><span class="o">)</span><span class="p">;</span> 
+<span class="k">@import</span> <span class="nt">url</span><span class="o">(/</span><span class="nt">css</span><span class="o">/</span><span class="nt">renkler</span><span class="nc">.css</span><span class="o">)</span><span class="p">;</span> 
+<span class="k">@import</span> <span class="nt">url</span><span class="o">(/</span><span class="nt">css</span><span class="o">/</span><span class="nt">urunlereozel</span><span class="nc">.css</span><span class="o">)</span><span class="p">;</span>
 </pre></div>
-
-
-<p>url(/css/fontlar.css); @import url(/css/renkler.css); @import
-url(/css/urunlereozel.css); </p>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

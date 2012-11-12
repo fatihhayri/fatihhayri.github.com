@@ -85,21 +85,42 @@
 uygulanacağını belirlemek için (X)HTML dökümanının yapısını kullanır.
 (X)HTML Sayfa yapısına stil uygulamanın bir çok yolu vardır. Ancak bu
 yolları öğrenmeden önce (X)HTML hiyerarşisini öğrenmemiz
-gerekir.<!--more--></p>
-<h4>(X)HTML Döküman Hiyerarşisini Anlamak</h4>
+gerekir.</p>
+<h2>(X)HTML Döküman Hiyerarşisini Anlamak</h2>
 <p>Seçici(Selector) ve Döküman arasındaki ilişkiyi anlayabilmemiz için,
 dökümanların nasıl planlandığını tekrar gözden geçirmemiz gerekir.
-Aşağıdaki basit (X)HTML dökümanı üzerine biraz düşünelim:   :::html
-     <html> <head> <title> CSS (X)HTML Hiyerarşisi
-</title> </head> <body> <h1>CSS<em>(X)HTML Hiyerarşisi
-</em></h1> Sitemize hoş geldiniz <em>Merhaba</em>biz
-<strong>sizler için <a href="static/konu.html"> bazı <em>önemli</em>
-konular </a></strong>! hazırladık <ul> <li>Konu Başlıkları :
-<ul> <li><strong>Asıl</strong> Giriş</li> <li>Önsöz</li>
-<li><em>ilk</em> bölüm: <ol> <li>Elma</li>
-<li>Armut</li> <li>Karpuz</li> </ol> </li> </ul> </li>
-<li>...vd.</li> </ul> <p>Ayrıntılılı bilgi çin <a href="static/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#10;&#104;&#114;&#101;&#102;&#61;&#34;&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#105;&#108;&#103;&#105;&#64;&#122;&#101;&#114;&#122;&#101;&#98;&#118;&#97;&#116;&#46;&#99;&#111;&#109;&#34;">&#97;&#10;&#104;&#114;&#101;&#102;&#61;&quot;&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#105;&#108;&#103;&#105;&#64;&#122;&#101;&#114;&#122;&#101;&#98;&#118;&#97;&#116;&#46;&#99;&#111;&#109;&quot;</a> mesaj gönder </a></p> </body>
-</html>  CSS'in güçlü olmasının en büyük nedeni (X)HTML
+Aşağıdaki basit (X)HTML dökümanı üzerine biraz düşünelim: <br />
+</p>
+<div class="codehilite"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span> CSS (X)HTML Hiyerarşisi <span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;h1&gt;</span>CSS<span class="nt">&lt;em&gt;</span>(X)HTML Hiyerarşisi <span class="nt">&lt;/em&gt;&lt;/h1&gt;</span>
+Sitemize hoş geldiniz <span class="nt">&lt;em&gt;</span>Merhaba<span class="nt">&lt;/em&gt;</span>biz <span class="nt">&lt;strong&gt;</span>sizler için <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;konu.html&quot;</span><span class="nt">&gt;</span> bazı <span class="nt">&lt;em&gt;</span>önemli<span class="nt">&lt;/em&gt;</span> konular <span class="nt">&lt;/a&gt;&lt;/strong&gt;</span>! hazırladık
+<span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Konu Başlıkları :
+        <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;strong&gt;</span>Asıl<span class="nt">&lt;/strong&gt;</span> Giriş<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Önsöz<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;em&gt;</span>ilk<span class="nt">&lt;/em&gt;</span> bölüm:
+            <span class="nt">&lt;ol&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Elma<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Armut<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Karpuz<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ol&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>...vd.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;p&gt;</span>Ayrıntılılı bilgi çin <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;mailto:bilgi@zerzebvat.com&quot;</span><span class="nt">&gt;</span> mesaj gönder <span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
+<p>CSS'in güçlü olmasının en büyük nedeni (X)HTML
 elementleri arasındaki ilişkiden yararlanmasıdır. (X)HTML dökümanları
 gizli bir hiyararşi ile oluşturulur. Bu hiyerarşi içinde tüm (X)HTML
 elementleri kendilerine uygun bir yer bulur. Bu ilişkiyi biz <strong>soy
@@ -120,7 +141,7 @@ Aradaki fark eğer bir element diğer elementin tam olarak bir seviye
 incelersek ilk <strong>ul</strong> elementinin iki adet <strong>li</strong> çocuk elementi
 bulunmaktadır ve bu iki <strong>li</strong> elementinin altındaki tüm elementler ilk
 <strong>ul</strong> elementinin torun elementleridir.</p>
-<h4>Torun Seçicileri (Descendant Selectors)</h4>
+<h2>Torun Seçicileri (Descendant Selectors)</h2>
 <p>Bu modelin avantajlarından birisi Torun Seçicileridir(diğer bir
 isimleride içiçe seçicilerdir). Torun Seçicilere yapılan tanımlama
 sadece belitilen elementlere uygulanır bu kuralların haricinde kalanlara
@@ -130,54 +151,92 @@ tanımlaması yapılarak her <strong>h1</strong> elementi altındaki <strong>em<
 tek tek seçerek bu sınıfı uygulamamız gerekir ki bunun <strong>font</strong> etiketi
 uygulmasından farkı yoktur. Açıkcası bu işlemi yapmak uzun zaman
 alacaktır. Ancak Torun Seçicisi kullanarak bu işi kolayca yapabilriz.
-örnek kod yazarsak:     :::css
-     h1 em { color: gray; }
- Bu kod dökümandaki atası <strong>h1</strong> olan tüm <strong>em</strong>
-elementlerini gri yapacaktır. Diğer <strong>em</strong>'ler ise bu kuralı
+örnek kod yazarsak:   <br />
+</p>
+<div class="codehilite"><pre><span class="nt">h1</span> <span class="nt">em</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Bu kod dökümandaki atası <strong>h1</strong> olan tüm <strong>em</strong> elementlerini gri yapacaktır. Diğer <strong>em</strong>'ler ise bu kuralı
 uygulamayacaktır. Torun Seçicilerde, seçici kısmı birbirinden bir
 boşlukla ayrılmış iki veya daha fazla seçiciden oluşur. Aradaki boşluk
 bağlayıcı özellik taşır. Sadece iki elementle sınırlı değiliz, sınırsız
-element tanımlayabiliriz.   :::css
-     ul ol ul em {
-color: gray; }  Torun Seçiciler çok kuvvetli olabilirler.
-Onlar (X)HTML ile yapılmasının imkanı olmayan işler yaparlar. Örnek bir
+element tanımlayabiliriz. <br />
+</p>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">ol</span> <span class="nt">ul</span> <span class="nt">em</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Torun Seçiciler çok kuvvetli olabilirler. Onlar (X)HTML ile yapılmasının imkanı olmayan işler yaparlar. Örnek bir
 dökümanda iki adet alan oluşturduğumuzu düşünün birinci alanın
 ardalanı(background) mavi, ikinci alanın ardaalanının beyaz olduğunu
 düşünün ve her iki alanın içinde de linkler olduğunu farz edelim. Tüm
 linkleri mavi olarak atamamız mümkün olmayacaktır çünkü ilk alanın
 ardaalanı mavi olduğu için linkler görünmeyecektir. Çözüm Torun
 Seçicilerindedir; ilk alan içindeki linklere farklı renk diğerlerine
-farklı renk tanımlaması yaparak bu işi halledebiliriz.  :::css
-     td.sidebar { background: blue; } td.main { background:
-white; } td.sidebar a:link { color: white; } td.main a:link { color:
-blue; }  Bir örnek daha verelim. <strong>blockquote</strong> ve <strong>p</strong>
-elementleri içindeki <strong>b</strong> elementi ile <strong>blockquote</strong> içinde ve normal
-paragraf içinde geçen <strong>b</strong> elementlerine özel bir atama yapmak
-istiyoruz bunun için kod yazarsak:  :::css</p>
-<p>blockquote b, p b { color: gray; }  Koda dikkat edersek her
-iki atamayı ayrı ayrı yapmak yerine araya bir virgül koyarak birlikte
-yaptığımızı görürsünüz.</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:**
-
+farklı renk tanımlaması yaparak bu işi halledebiliriz.<br />
 </p>
-Internet Explorer 5.0, 5.5, 6.0, 7.0: destekliyor ; Netscape Navigator
-6.0, 7.0: destekliyor ; Mozilla 1.0: destekliyor ; Opera 5.0 ' 6.0:
-destekliyor
+<div class="codehilite"><pre><span class="nt">td</span><span class="nc">.sidebar</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">td</span><span class="nc">.main</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">td</span><span class="nc">.sidebar</span> <span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">td</span><span class="nc">.main</span> <span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 
-</div>
 
-<h4>Çocuk Seçicileri</h4>
+<p>Bir örnek daha verelim. <strong>blockquote</strong> ve <strong>p</strong> elementleri içindeki <strong>b</strong> elementi ile <strong>blockquote</strong> içinde ve normal
+paragraf içinde geçen <strong>b</strong> elementlerine özel bir atama yapmak
+istiyoruz bunun için kod yazarsak:<br />
+</p>
+<div class="codehilite"><pre><span class="nt">blockquote</span> <span class="nt">b</span><span class="o">,</span> <span class="nt">p</span> <span class="nt">b</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Koda dikkat edersek her iki atamayı ayrı ayrı yapmak yerine araya bir virgül koyarak birlikte
+yaptığımızı görürsünüz.</p>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong> <br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer  <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser</p>
+<h2>Çocuk Seçicileri</h2>
 <p>Bazı durumlarda keyfi olarak bir torun seçicisi kullanmaktansa daha
 ayrıntılı bir ayrım yapmak isteyebiliriz. Örneğin bir <strong>h1</strong> elementinin
 altındaki<strong>strong</strong> elementlerinden <strong>sadece</strong> Çocuk Elementi için
 tanımlamalar yapmak istersek (torun elementleri hariç), Bunun için çocuk
-bağlayıcısını kullanırız ( &gt; ) büyüktür işareti     :::css
-     h1 &gt; strong { color: red; }    :::html
-    <h1>Bu <strong>koda</strong>
-uygulanacaktır.</h1> <h1>Bu <em>koddaki <strong> bu kısım
-</strong></em> uygulama dışıdır..</h1>  Yukardaki
-durumda sadece ilk <strong>strong</strong> elementi için tanımlama gerçekleşecektir
+bağlayıcısını kullanırız ( &gt; ) büyüktür işareti   <br />
+</p>
+<div class="codehilite"><pre><span class="nt">h1</span> <span class="o">&gt;</span> <span class="nt">strong</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>HTML;</p>
+<div class="codehilite"><pre><span class="nt">&lt;h1&gt;</span>Bu <span class="nt">&lt;strong&gt;</span>koda<span class="nt">&lt;/strong&gt;</span> uygulanacaktır.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1&gt;</span>Bu <span class="nt">&lt;em&gt;</span>koddaki <span class="nt">&lt;strong&gt;</span> bu kısım <span class="nt">&lt;/strong&gt;&lt;/em&gt;</span> uygulama dışıdır..<span class="nt">&lt;/h1&gt;</span>
+</pre></div>
+
+
+<p>Yukardaki durumda sadece ilk <strong>strong</strong> elementi için tanımlama gerçekleşecektir
 ikincisi için herhangi bir stil tanımı uygulanmayacaktır.</p>
 <p><img alt="" src="static/images/hiyerarsi02.gif" /></p>
 <p>Yukarıda ana örneğimizin bir kısmı gösterilemektedir. Ebeveyn-çocuk
@@ -186,43 +245,58 @@ ilişkisini daha iyi anlamak için hazırlanmıştır. <strong>a</strong>element
 Ancak <strong>p</strong> elementi <strong>strong</strong>'un ebeveyni değildir. Biz burada p &gt; a
 ve a &gt; strong şeklinde tanımlama yapabilriz ancak p &gt; strong
 tanımlamasını yapamayız. Birde aynı seçici içinde hem torun
-birleştiricisini hemde çocuk birleştiricisini kullanabiliriz.
-    :::css
-     table.summary td &gt; p </p>
-<div class="tarayiciuyum">
-**Browser Uyumu** :
+birleştiricisini hemde çocuk birleştiricisini kullanabiliriz.</p>
+<div class="codehilite"><pre><span class="nt">table</span><span class="nc">.summary</span> <span class="nt">td</span> <span class="o">&gt;</span> <span class="nt">p</span>
+</pre></div>
 
-</p>
-Internet Explorer 5.0, 5.5, 6.0: *desteklemiyor* (7.0 destekliyor)
-Netscape Navigator 6.0, 7.0: destekliyor Mozilla 1.0: destekliyor Opera
-5.0 ' 6.0: destekliyor
 
-</div>
-
-<h4>Bitişik Kardeş Seçiciler</h4>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser</p>
+<h2>Bitişik Kardeş Seçiciler</h2>
 <p>Bitişik Kardeş Seçicileri biribiri ardına gelen aynı seviyedeki
 elementlerden sonra gelenine stil tanımlamak için kullanılır. Tam olarak
 "Bir Ufak Kardeş Seçicisi" olmalıdır. Bir örnek verelim bir başlığımız
 var ve sonrasında ard arda paragraflar geliyor. Biz başlık ile hemen
 ardından gelen paragrafın arasına mesafe koymak için bu seçiciyi
-kullanabiliriz.     :::html
-     <body> <h2>Başlık
-2</h2> <p>Buraya <em>önemli</em> ve <strong>iyi</strong>kod
-gir</p> <p>Buraya <em>önemli</em> ve <strong>iyi</strong>kod
-gir</p> </body>  Dökümanın yapısı:</p>
+kullanabiliriz.   <br />
+</p>
+<div class="codehilite"><pre><span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Başlık 2<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Buraya <span class="nt">&lt;em&gt;</span>önemli<span class="nt">&lt;/em&gt;</span> ve <span class="nt">&lt;strong&gt;</span>iyi<span class="nt">&lt;/strong&gt;</span>kod gir<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Buraya <span class="nt">&lt;em&gt;</span>önemli<span class="nt">&lt;/em&gt;</span> ve <span class="nt">&lt;strong&gt;</span>iyi<span class="nt">&lt;/strong&gt;</span>kod gir<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</pre></div>
+
+
+<p>Dökümanın yapısı:</p>
 <p><img alt="" src="static/images/hiyerarsi03.gif" /></p>
 <p>Biz burada <strong>h2</strong> ve <strong>h3</strong> arasında boşluk vermek için aşağıdaki kodu
-kullanırız:     :::css
-     h2 + p { margin-top: 10px; }</p>
-<div class="tarayiciuyum">
-**Browser Uyumu** :
-
+kullanırız:   <br />
 </p>
-Internet Explorer 6.0: *desteklemiyor* (7.0 destekliyor) Firefox 1.0 +
-Opera 9.5+ Chrome 2+ Safari1.3+
+<div class="codehilite"><pre><span class="nt">h2</span> <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span> 
+    <span class="k">margin-top</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
 
-</div>
 
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome  <br />
+Safari  <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser</p>
 <p>Sonuç olarak konunun başında söylediğimiz gibi CSS, (X)HTML
 elementlerinin kendi aralarındaki ilişkileri kullanarak bize bir çok
 avantaj sağlar. Bu sayede bir çok kod yığınından kurtulmuş oluruz ve
@@ -230,31 +304,34 @@ kodlarımız bir düzene girer. Bu kuralları uyguladıkça önemini daha iyi
 anlayacağız. <strong>Çocuk Seçicileri</strong> ve <strong>Bitişik Kardeş Seçicileri</strong>'ni
 Internet Explorer 7 versiyonundan itibaren desteklemeye başlamıştır. Bu
 nedenle kullanımı konusunda dikkat etmeliyiz.</p>
-<h4>Genel Seçiciler</h4>
+<h2>Genel Seçiciler</h2>
 <p>Genel Seçiciler bir elementi bütüne uygulamak için kullanılır bu işlem
 için * işareti kullanılır. Aşağıdaki kod tüm elementleri kırmızı
 yapacaktır.</p>
-<div class="codehilite"><pre> <span class="o">*</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="o">*</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
 <p>Ayrıca bir katmanın içindeki sınıflara uygulamak istersek</p>
-<div class="codehilite"><pre> <span class="nt">div</span> <span class="nc">.uyari</span> <span class="o">*</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">div</span> <span class="nc">.uyari</span> <span class="o">*</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
 <p>katman, .uyari sınıfı içindeki tüm elementler kırmızı olacaktır.</p>
-<div class="tarayiciuyum">
-**Browser Uyumu** :
-
-Internet Explorer 5.0, 5.5, 6.0,7.0 destekliyor  
-Netscape Navigator 6.0, 7.0: destekliyor  
-Mozilla 1.0: destekliyor  
-Opera 5.0 ' 6.0: destekliyor
-
-</div>
-
-</p><p><a href=".././xhtml-sayfa-yapisi-ve-css-kullanimi/#disqus_thread">yorum var</a>.</p>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser</p><p><a href=".././xhtml-sayfa-yapisi-ve-css-kullanimi/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

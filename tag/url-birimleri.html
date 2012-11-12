@@ -84,12 +84,12 @@
 </footer><!-- /.post-info --><p>Bu makalede CSS'de kullanılan tüm birimleri göreceğiz. Birimler genelde
 mesafe ve renkleri tanımlamak için kullanılır.</p>
 <p>Birimleri dört gruba ayıra biliriz. <strong>uzunluk</strong> birimleri, <strong>yüzde</strong>
-birimleri, <strong>renk</strong> birimleri ve <strong>URL</strong> birimleri<!--more--></p>
+birimleri, <strong>renk</strong> birimleri ve <strong>URL</strong> birimleri</p>
 <h2>Uzunluk Birimleri</h2>
 <p>CSS'de tanımlanan 8 uzunluk birimi vardır. Bunların üç tanesi
 göreceli(relative) uzunluklar ve kalan beş tanesi
 kesin(absolute)uzunluklardır.</p>
-<p><strong>Göreceli Uzunluklar</strong></p>
+<h3>Göreceli Uzunluklar</h3>
 <p>Bu birimler diğer uzunluk birimlerine göre görecelidir. Sayfalarımızın
 ölçeğinin değiştiği ve çıktısının alındığı durumlarda bu uzunluk
 birimlerini kullanmamız bize avantaj sağlayacaktır.</p>
@@ -103,7 +103,7 @@ varsayılan font büyüklüğünde ve font ailesinde (font-family) yer alan
 <p><strong>px:</strong> piksel değeri. Eğer monitörünüze yeterince yakından bakarsanız,
 çok küçük kutulardan oluşmuş bir ızgaraya benzer. Burdaki her kutu bir
 pikseldir. Bu da her monitöre göre farklı değer demektir.</p>
-<p><strong>Kesin Uzunluklar</strong></p>
+<h3>Kesin Uzunluklar</h3>
 <p>Bu uzunluklar gerçek hayatta kullanılan birimlerdir.</p>
 <p><strong>in:</strong> inç. 1 inch=2,54 cm'dir. Örn: line-height:0.5in</p>
 <p><strong>cm:</strong> Santimetre. Bizim gerçek hayatta kullandığımız santimetere
@@ -113,27 +113,36 @@ değeridir. Örnek: letter-spacing:1mm</p>
 <p><strong>pt:</strong> Point. Standart baskı birimidir. (1pt = 1/72in) Örn:
 font-size:14pt</p>
 <p><strong>pc:</strong> Pika. Bir inçin altıda birine eşit olan bir baskı ölçü birimi.
-Bir pika 12 noktaya bölünür.</span></a> Örnek: font-size:2pc</p>
+Bir pika 12 noktaya bölünür. Örnek: font-size:2pc</p>
 <h2>Yüzde Birimleri</h2>
 <p>Yüzde değerleri her zaman diğer elementlere göre göreceli değerlerdir.</p>
-<div class="codehilite"><pre> <span class="o">/*</span> <span class="nt">elementin</span> <span class="nt">font-size</span> <span class="nt">de</span><span class="err">ğ</span><span class="nt">erinin</span> <span class="o">%</span><span class="nt">150</span> <span class="nt">si</span>
+<div class="codehilite"><pre> <span class="c">/* elementin font-size değerinin %150 si dir */</span>
+<span class="nt">h4</span> <span class="p">{</span> 
+    <span class="k">line-height</span><span class="o">:</span> <span class="m">150</span><span class="o">%</span> 
+<span class="p">}</span>
+<span class="c">/* satır genişliğinin 10% nu */</span>
+<span class="nt">p</span> <span class="p">{</span> 
+    <span class="k">text-indent</span><span class="o">:</span> <span class="m">10</span><span class="o">%</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>dir <em>/ h4 { line-height: 150% } /</em> satır genişliğinin 10% nu */ p {
-text-indent: 10% } </p>
 <h2>Renk Birimleri</h2>
 <p>CSS'de renk değerleri isim olarak ve RGB değeri olarak tanımlanabilir.
 RGB tanımlamasıda dört çeşittir.</p>
-<p><strong>Renk İsimleri</strong></p>
+<h3>Renk İsimleri</h3>
 <p>Renklerin ingilizce isimleri kullanılarak tanımlama yapılabilir.</p>
-<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="nb">black</span><span class="p">;</span> <span class="p">}</span> <span class="o">/*</span> <span class="nt">renk</span> <span class="nt">tan</span><span class="err">ı</span><span class="nt">m</span><span class="err">ı</span> <span class="nt">siyah</span>
+<div class="codehilite"><pre><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="nb">black</span><span class="p">;</span> 
+<span class="p">}</span> <span class="c">/* renk tanımı siyah olarak yapılıyor*/</span>
+
+<span class="nt">h1</span><span class="p">{</span> 
+    <span class="k">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span> <span class="c">/* h1 başlığının ardalanı kırmızı tanımlanıyor */</span>
 </pre></div>
 
 
-<p>olarak yapılıyor<em>/ h1{ background-color: red; } /</em> h1 başlığının
-ardalanı kırmızı tanımlanıyor */ </p>
-<p><strong>RGB Renk Değerleri</strong></p>
+<h3>RGB Renk Değerleri</h3>
 <p>CSS'de renk tanımlamak için kullanılan asıl yöntem budur. RGB
 tanımlamanında dört çeşidi vardır.</p>
 <p><strong>#RRGGBB :</strong> Burada, <strong>RR</strong>, <strong>GG</strong>, ve <strong>BB,</strong>sırasıylakırmızı (red),
@@ -147,20 +156,19 @@ arasında bir tanımı vardır. Buna göre tanımlama yapılabilir. Örnek h1</p
 arasında bir tanımı vardır. Buna göre tanımlama yapılır. Örnek: h1</p>
 <h2>URL Değerleri</h2>
 <p>URL tanımlaması için aşağıdaki gib bir tanımlama yapılır.</p>
-<div class="codehilite"><pre>
+<div class="codehilite"><pre><span class="nt">url</span><span class="o">(/</span><span class="nt">images</span><span class="o">/</span><span class="nt">kucuk</span><span class="nc">.gif</span><span class="o">)</span>
 </pre></div>
 
 
-<p>url(/images/kucuk.gif) </p>
 <p>Burada tırnaksız ve tek tırnaklı kullanımları da standarda uygundur.</p>
 <p><strong>Not :</strong> Birde bunların dışında CSS2.0 ile birlikte gelen ekstra
 birimlerde mevcuttur. Ancak bunlar kullanımda değildir.</p>
-<p><strong>Açı Değerleri :</strong> <strong>deg</strong>(derece), <strong>grad</strong>(gradyen) ve
-<strong>rad</strong>(radyan) Örnek: -90deg, 100grad ve 1.57rad</p>
-<p><strong>Zaman Değerleri:</strong> milisaniye (<strong>ms</strong>) ve saniye (<strong>s</strong>) Örnek : 100ms
-ve 0.1s</p>
-<p><strong>Frekans Değerleri</strong> : Herz(<strong>Hz</strong>) ve MegaHerz(<strong>mHz</strong>) Örnek: 10mHz</p>
-</p><p><a href=".././css-birimleri/#disqus_thread">yorum var</a>.</p>
+<h3>Açı Değerleri :</h3>
+<p><strong>deg</strong>(derece), <strong>grad</strong>(gradyen) ve <strong>rad</strong>(radyan) Örnek: -90deg, 100grad ve 1.57rad</p>
+<h3>Zaman Değerleri:</h3>
+<p>milisaniye (<strong>ms</strong>) ve saniye (<strong>s</strong>) Örnek : 100ms ve 0.1s</p>
+<h3>Frekans Değerleri:</h3>
+<p>Herz(<strong>Hz</strong>) ve MegaHerz(<strong>mHz</strong>) Örnek: 10mHz</p><p><a href=".././css-birimleri/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

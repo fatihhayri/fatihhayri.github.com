@@ -88,46 +88,91 @@
 </footer><!-- /.post-info -->
       <p>CSS; kodlama yaparken bizim bazı kısaltmaları kullanmamıza izin verir.
 Böylece hem fazla kod yığınından kurtulmuş oluruz, hemde sayfa
-boyutlarını en aza indirmiş oluruz.<!--more--></p>
-<h4>1. Font</h4>
-<p>Normalde bir font tanımlarken 4 adet CSS kodu kullanılır:   :::css
-     font-weight: bold; font-family: verdana, sans-serif;
-font-size: 11px; line-height: 15px; Kısaltma olarak
-kullanlan kod ise tek satır:    :::css
-     font: bold
-11px/15px verdana, sans-serif; </p>
-<h4>2. Background</h4>
+boyutlarını en aza indirmiş oluruz.</p>
+<h2>1. Font</h2>
+<p>Normalde bir font tanımlarken 4 adet CSS kodu kullanılır: <br />
+</p>
+<div class="codehilite"><pre><span class="nt">font-weight</span><span class="o">:</span> <span class="nt">bold</span><span class="o">;</span>
+<span class="nt">font-family</span><span class="o">:</span> <span class="nt">verdana</span><span class="o">,</span> <span class="nt">sans-serif</span><span class="o">;</span>
+<span class="nt">font-size</span><span class="o">:</span> <span class="nt">11px</span><span class="o">;</span>
+<span class="nt">line-height</span><span class="o">:</span> <span class="nt">15px</span><span class="o">;</span>
+</pre></div>
+
+
+<p>Kısaltma olarak kullanlan kod ise tek satır:  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">font</span><span class="o">:</span> <span class="nt">bold</span> <span class="nt">11px</span><span class="o">/</span><span class="nt">15px</span> <span class="nt">verdana</span><span class="o">,</span> <span class="nt">sans-serif</span><span class="o">;</span>
+</pre></div>
+
+
+<h2>2. Background</h2>
 <p>Background tanımlarken 5 adet atama yapmamız gerekirken kısaltma
-kullanarak tek tanıma indirebilriz.     :::css</p>
-<p>background-color: #000; background-image: url(ard.jpg);
-background-repeat: no-repeat; background-attachment: fixed;
-background-position: 50px 50px;  Kısaltırsak:   :::css
-     background: { #000 url(ard.jpg) no-repeat fixed 50px
-50px; } </p>
-<h4>3. Renkler(Hex-decimal)</h4>
+kullanarak tek tanıma indirebilriz.   <br />
+</p>
+<div class="codehilite"><pre><span class="nt">background-color</span><span class="o">:</span> <span class="nf">#000</span><span class="o">;</span> 
+<span class="nt">background-image</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="nt">ard</span><span class="nc">.jpg</span><span class="o">);</span>
+<span class="nt">background-repeat</span><span class="o">:</span> <span class="nt">no-repeat</span><span class="o">;</span> 
+<span class="nt">background-attachment</span><span class="o">:</span> <span class="nt">fixed</span><span class="o">;</span>
+<span class="nt">background-position</span><span class="o">:</span> <span class="nt">50px</span> <span class="nt">50px</span><span class="o">;</span>
+</pre></div>
+
+
+<p>Kısaltırsak:  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">background</span><span class="o">:</span> <span class="p">{</span> 
+    <span class="m">#000</span> <span class="sx">url(ard.jpg)</span> <span class="k">no-repeat</span> <span class="k">fixed</span> <span class="m">50px</span> <span class="m">50px</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<h2>3. Renkler(Hex-decimal)</h2>
 <p>CSS stillerinde renkler genelde hex-decimal renk kodu ile tanımlanır
-örneğin <strong>color: #ff0000;</strong>
-<span style="color: #ff0000">kırmızı</span>. Renkler 6 karakterle
+örneğin <strong>color: #ff0000;</strong> kırmızı. Renkler 6 karakterle
 gösterilsede bir çok renk(web tabanlı) 3 karakterin tekrarlanması ile
 oluşturulur. Örneğin, kırmızı'nın hex-decimal kodunun kısaltırsak
 <strong>color: #f00;</strong>. Buradaki her karakter hex-decimal koddaki iki
 karaktere karşılık gelmektedir. Mesela, beyaz renk kullanacağınızda,
 <strong>color: white;</strong> veya <strong>color: #ffffff;</strong> kulanımı önermeyiz.
 Kısaltılmış olanı <strong>color: #fff;</strong> kullanmanız daha avantajlıdır.</p>
-<h4>4. Border</h4>
+<h2>4. Border</h2>
 <p>Kenarklık tanımlamalarında her özellik için bir tanımlama yapılır. örnek
-olarak bir elementin üst kenarına atama yapmak için:    :::css
-     border-top-width: 2px; border-top-style: dashed;
-border-top-color: #f00;  Kısaltırsak:   :::css
-     border-top: 2px dashed #f00;  Bu
-özellikleri tüm kenarlara uygulmak için:    :::css</p>
-<p>border: 2px dashed #f00; </p>
-<h4>5. Margin ve Padding'ler</h4>
-<p>Margin ve paddingler de normal tanımlama şöyledir:  :::css
-     margin-top: 10px; margin-right: 5px; margin-bottom:
-20px; margin-left: 15px; kıslatılmış hali:  :::css
-    margin: 10px 5px 20px 15px; Burada
-öznitelikler sağdan başlayarak saat yönünde devam eder. Aşağıda çeşitli
+olarak bir elementin üst kenarına atama yapmak için:  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">border-top-width</span><span class="o">:</span> <span class="nt">2px</span><span class="o">;</span> 
+<span class="nt">border-top-style</span><span class="o">:</span> <span class="nt">dashed</span><span class="o">;</span>
+<span class="nt">border-top-color</span><span class="o">:</span> <span class="nf">#f00</span><span class="o">;</span>
+</pre></div>
+
+
+<p>Kısaltırsak:  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">border-top</span><span class="o">:</span> <span class="nt">2px</span> <span class="nt">dashed</span> <span class="nf">#f00</span><span class="o">;</span>
+</pre></div>
+
+
+<p>Bu özellikleri tüm kenarlara uygulmak için:   <br />
+</p>
+<div class="codehilite"><pre><span class="nt">border</span><span class="o">:</span> <span class="nt">2px</span> <span class="nt">dashed</span> <span class="nf">#f00</span><span class="o">;</span>
+</pre></div>
+
+
+<h2>5. Margin ve Padding'ler</h2>
+<p>Margin ve paddingler de normal tanımlama şöyledir:<br />
+</p>
+<div class="codehilite"><pre><span class="nt">margin-top</span><span class="o">:</span> <span class="nt">10px</span><span class="o">;</span> 
+<span class="nt">margin-right</span><span class="o">:</span> <span class="nt">5px</span><span class="o">;</span> 
+<span class="nt">margin-bottom</span><span class="o">:</span> <span class="nt">20px</span><span class="o">;</span> 
+<span class="nt">margin-left</span><span class="o">:</span> <span class="nt">15px</span><span class="o">;</span>
+</pre></div>
+
+
+<p>kıslatılmış hali: <br />
+</p>
+<div class="codehilite"><pre><span class="nt">margin</span><span class="o">:</span> <span class="nt">10px</span> <span class="nt">5px</span> <span class="nt">20px</span> <span class="nt">15px</span><span class="o">;</span>
+</pre></div>
+
+
+<p>Burada öznitelikler sağdan başlayarak saat yönünde devam eder. Aşağıda çeşitli
 kısaltma yöntemleri birlikte verilmiştir:</p>
 <p><strong>4 Değer:</strong> (<em>margin: 20px 15px 10px 5px;</em>) birinci - üst, ikinci -
 sağ, üçüncü - alt, dördüncü - sol.</p>
@@ -135,29 +180,42 @@ sağ, üçüncü - alt, dördüncü - sol.</p>
 sağ, üçüncü - alt. <strong>2 Değer:</strong>(<em>margin: 20px 15px;</em>) birinci - üst ve
 alt, ikinci - sol ve sağ. <strong>1 Değer:</strong> (<em>margin: 10px;</em>) birinci - üst,
 sağ, alt ve sol</p>
-<h4>6. Listeler</h4>
-<p>Liste tanılmalrında da kısaltmalar mümkündür    :::css</p>
-<p>ul { list-style-type:square; list-style-position:inside;
-list-style-image:url(image.png); }  Kısaltırsak;
-    :::css
-     ul li { list-style:square inside
-url(image.png); } /<em> burda özel bir durum vardır eğer resim yoksa yedek
-olarak square özelliği gösterilecektir. </em>/ </p>
-<h4>7. Sıfır '0' ın Kısaltma olarak kullanılması</h4>
+<h2>6. Listeler</h2>
+<p>Liste tanılmalrında da kısaltmalar mümkündür  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="p">{</span> 
+    <span class="k">list-style-type</span><span class="o">:</span><span class="k">square</span><span class="p">;</span> 
+    <span class="k">list-style-position</span><span class="o">:</span><span class="k">inside</span><span class="p">;</span>
+    <span class="k">list-style-image</span><span class="o">:</span><span class="sx">url(image.png)</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Kısaltırsak;</p>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span> 
+    <span class="k">list-style</span><span class="o">:</span><span class="k">square</span> <span class="k">inside</span> <span class="sx">url(image.png)</span><span class="p">;</span> 
+<span class="p">}</span> <span class="c">/* burda özel bir durum vardır eğer resim yoksa yedek olarak square özelliği gösterilecektir. */</span>
+</pre></div>
+
+
+<h2>7. Sıfır '0' ın Kısaltma olarak kullanılması</h2>
 <p>Kısaltmalarda son olarak '0' ın kullanımına değineceğiz. Normalde bir
 elemente değer ataması yapılırken değerin yanına birimi de yazılır(örn:
-3px, 0.2em vd.), Ancak sıfır '0' için bu zorunlu değilidir.     :::css
-    padding:0; Bu durumun bir istisnası
-mevcuttur oda yüzde değerlerinde atama yapılırken <strong>0%</strong>olarak atama
+3px, 0.2em vd.), Ancak sıfır '0' için bu zorunlu değilidir.   <br />
+</p>
+<div class="codehilite"><pre><span class="nt">padding</span><span class="nd">:0</span><span class="o">;</span>
+</pre></div>
+
+
+<p>Bu durumun bir istisnası mevcuttur oda yüzde değerlerinde atama yapılırken <strong>0%</strong>olarak atama
 yapılmalıdır.</p>
-<h4>Kaynaklar</h4>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.w3schools.com/css/default.asp">http://www.w3schools.com/css/default.asp</a></li>
 <li><a href="http://www.eyeofdesign.com/css/background.php">http://www.eyeofdesign.com</a></li>
 <li><a href="http://www.spoono.com/csst/tutorials/tutorial.php?id=5">http://www.spoono.com</a></li>
 <li><a href="http://www.dustindiaz.com/css-shorthand/">http://www.dustindiaz.com/css-shorthand/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

@@ -87,40 +87,59 @@ birbirinden ayırmak için oluşturulan bir standarttır. CSS 1996'da
 <a href="http://www.w3.org/">W3C</a> tarafından duyuruldu. Son olarak CSS2.1 versiyonu işler
 durumdadır. CSS3.0'da çalışmaları devam etmektedir. CSS3.0 için
 ayrıntılı bilgiye <a href="http://www.w3c.org/Style/CSS/current-work">http://www.w3c.org/Style/CSS/current-work</a>
-adresinden ulaşabilirsiniz. <!--more-->CSS kullanımının bir çok bakından
+adresinden ulaşabilirsiniz. CSS kullanımının bir çok bakından
 avantajları bulunmaktadır. Belli başlı avantajlarını sıralarsak:</p>
-<h4>Görünüm Avantajları</h4>
+<h2>Görünüm Avantajları</h2>
 <p>CSS HTML'e göre bir çok stil özelliğine sahiptir. CSS'in sayfa içeriği
 öğelerinin sayfa görünümü öğelerinden ayrılması için geliştirildiğini
 düşünürsek avantajı baştan anlaşılmış olur.     :::html</p>
-<h1>CSS'e Giriş</h1>
+<h2>CSS'e Giriş</h2>
 <p>HTML'de bu elementi(h1) kalın,altı çizili, ardalanı
 kırmızı olarak atama gibi çeşitli stiller verbiliriz ancak bunlar içinde
 ayrı HTML elementleri kullanmak zorundayız (örn:strong, gibi), ancak CSS
 de bunu tek bir elementle yapabiliriz ve ayrıca daha fazla stil
 özellikleride atayabiliriz.(örn: kenarlık, rollover vs stillerini
-ekleyebiliriz.)     :::css
-     h1 { color: white; font:
-italic 11px Arial, serif; text-decoration: underline; background: yellow
-url(titlebg.gif) repeat-x; border: 1px solid red; margin-bottom: 0;
-padding: 5px; } </p>
-<h4>Kullanım Kolaylığı</h4>
+ekleyebiliriz.)</p>
+<div class="codehilite"><pre><span class="nt">h1</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span> 
+    <span class="k">font</span><span class="o">:</span><span class="k">italic</span> <span class="m">11px</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span> 
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">underline</span><span class="p">;</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="nb">yellow</span> <span class="sx">url(titlebg.gif)</span> <span class="k">repeat-x</span><span class="p">;</span> 
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">red</span><span class="p">;</span> 
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<h2>Kullanım Kolaylığı</h2>
 <p>HTML'de her elmente artı özellikler eklemek için başka bir element ve
 özellik eklmemiz gerekiyor ve bu işlemi geniş çaplı bir sitede yaptımızı
-düşünütseniz çok büyük zaman kaybı ve uğraş gerektiğini göreceksiniz.
-    :::html</p>
-<h1><font color="blue">Başlık</font></h1>
-<p>Bunun gibi onlarca veya yüzlerce başlığınız olduğunu
-düşünün, gerçekten çok zor. CSS'de aynı işlem için  :::css
-     h1 {color: blue;} hatta daha sonra bu
-elementin özelliklerinde değişiklik yapmamızda kolay olacaktır. Hatta bu
-işlemi sadece bu etiket için değil diğer etiketlerede uygulayabiliriz.
-    :::css
-     h1, h2 {color: blue;}  Ayrıca
-tek bir CSS dosyası ile sitenin tamamının yönetmekte web kodlamacıları
+düşünütseniz çok büyük zaman kaybı ve uğraş gerektiğini göreceksiniz.</p>
+<div class="codehilite"><pre><span class="nt">&lt;h1&gt;&lt;font</span> <span class="na">color=</span><span class="s">&quot;blue&quot;</span><span class="nt">&gt;</span>Başlık<span class="nt">&lt;/font&gt;&lt;/h1&gt;</span>
+</pre></div>
+
+
+<p>Bunun gibi onlarca veya yüzlerce başlığınız olduğunu düşünün, gerçekten çok zor. CSS'de aynı işlem için   <br />
+</p>
+<div class="codehilite"><pre><span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>hatta daha sonra bu elementin özelliklerinde değişiklik yapmamızda kolay olacaktır. Hatta bu
+işlemi sadece bu etiket için değil diğer etiketlerede uygulayabiliriz.</p>
+<div class="codehilite"><pre><span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Ayrıcatek bir CSS dosyası ile sitenin tamamının yönetmekte web kodlamacıları
 için çok büyük kolaylıktır. Sadece bir dosyada değişlik yaparak tüm
 sitemizi yönetebiliriz isterse yüzlerce sayfa olsun.</p>
-<h4>Tasarım Tutarlılığı</h4>
+<h2>Tasarım Tutarlılığı</h2>
 <p>Tek CSS dosyası ile tüm sitenizi yönetebilirsiniz bu ayrıca sitenize
 tutarlılık kazandıracaktır. Tüm sayfalarınıza aynı stil elementlerini ve
 özelliklerini atayarak sayfa tutarlılığını sağlayabilirsiniz. Web
@@ -131,15 +150,14 @@ yüklenecek ve doğru olarak yüklenecektir, çünkü aynı elementleri diğer
 sayfalarda tekrar yüklemeyecek ve bu ziyaretçiye zaman kazandıracaktır.
 CSS+XHTML ile HTML göre %50'ye varan performans ve hız artışları
 olacaktır.</p>
-<h4>Gelecek Vaadediyor</h4>
+<h2>Gelecek Vaadediyor</h2>
 <p>HTML giderek işlevselliğini kaybedeceği ve XML ve dolayısı ile XHTML'in
 işlevselliğini artıracağı düşünülürse, CSS gibi tümleşik bir stadardın
 önemi daha çok anlaşılıyor. XHTML ile daha temiz kodlar üretilecek,
 farklı platformlara(pda,cep telefonu vs.) uyum sayesinde bilgi dolaşımı
 kolaylaşacak, sayfalarımız arama motorları programları tarafından daha
 anlaşılır olacaktır. CSS, XHTML teknolojisi ile tümleşik olarak
-çalışarak bizlere gelecek vaadediyor.</p>
-</p><p><a href=".././csse-baslamak/#disqus_thread">yorum var</a>.</p>
+çalışarak bizlere gelecek vaadediyor.</p><p><a href=".././csse-baslamak/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

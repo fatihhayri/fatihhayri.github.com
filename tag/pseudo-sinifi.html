@@ -87,109 +87,206 @@ ve elementler (x)html hiyerarşisi ile erişemediğimiz element ve
 sınıflara erişmemizi sağlar. <strong>Pseudo sınıfı</strong> bir elementi farklı
 sınıflara böler(örn: link elementini active, visited vd. sınıflarına
 böler) <strong>Pseudo elementi</strong> ise bir elementi alt kısımlara böler (örneğin
-bir paragrafın ilk harfi, bir paragrafın ilk satırı gibi.)<!--more-->
-Pseudo sınıfına örnek:  :::css
-     a:visited { color:
-red; }  Pseudo elementine örnek:    :::css
-     p:first-line { font-weight: bold; }  Pseudo
-sınıf ve elemtleri HTML class özelliği olarak belirtilmemiştir. Normal
-sınıflar pseudo sınıf ve elementleri ile kullanılabilir.    :::css
-     a.disariyalinkller:link, a.disariyalinkller:visited {
-color: maroon; }  Aynı şekilde id seçicileri ile birlikte
-de kullanılabilirler    :::css
-     a#altkisim:link{
-font-weight: bold; }  Pseudo sınıflarını da ikiye ayıra
-biliriz. <strong>Link Pseduo Sınıfıları</strong> ve <strong>Dinamik Pseudo Sınıfları</strong></p>
+bir paragrafın ilk harfi, bir paragrafın ilk satırı gibi.)
+Pseudo sınıfına örnek:<br />
+</p>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Pseudo elementine örnek:  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">p</span><span class="nd">:first-line</span> <span class="p">{</span> 
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Pseudo sınıf ve elemtleri HTML class özelliği olarak belirtilmemiştir. Normal
+sınıflar pseudo sınıf ve elementleri ile kullanılabilir.  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nc">.disariyalinkller</span><span class="nd">:link</span><span class="o">,</span> 
+<span class="nt">a</span><span class="nc">.disariyalinkller</span><span class="nd">:visited</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">maroon</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Aynı şekilde id seçicileri ile birlikte de kullanılabilirler  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nf">#altkisim</span><span class="nd">:link</span><span class="p">{</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Pseudo sınıflarını da ikiye ayıra biliriz. <strong>Link Pseduo Sınıfıları</strong> ve <strong>Dinamik Pseudo Sınıfları</strong></p>
 <h2>Link Pseudo sınıfı</h2>
 <p>Yanlızca linklere uygulanan iki Link Pseduo sınıfı vardır. <strong>:link</strong> ve
 <strong>:visited</strong> <strong>:link -</strong>Ziyaret edilmemiş sayfanın linkine stil
 tanımlaması yapmak için kullanılır. Ancak bir çok web tarayıcısı yapılan
 stil tanımlarını ziyaret edilmiş sayfa linklerine de uygular. <strong>:visited
 -</strong> Henüz ziyaret edilmiş sayfa linklerine stil tanımlaması yapmak için
-kullanılır.     :::css
-     a:link { color: blue; }
-a:visited { color: red; }  Bunun yerine genelde aşağıdaki
-gibi bir kod da kullanılır  :::css
-     a { color: blue;
-} a:visited { color: red; } Bu kodlama ile kullanıcaya
-ziyaret ettiği sayfa linkleri farklı renkte gösterilerek içeriksel bir
+kullanılır.   <br />
+</p>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Bunun yerine genelde aşağıdaki gibi bir kod da kullanılır <br />
+</p>
+<div class="codehilite"><pre><span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Bu kodlama ile kullanıcaya ziyaret ettiği sayfa linkleri farklı renkte gösterilerek içeriksel bir
 bilgi görsel olarak verilebilir.</p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong> <br />
+Firefox  <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer </p>
 <h2>Dinamik Pseudo Sınıfları</h2>
 <p><strong>Dinamik Pseudo Sınıfları</strong> sayfa görünümüne çok büyük katkılar
 yapabilir. Bu sınıflar genelde linklere uygulanır ancak bir çok kullanım
 alanları vardır. tanedir <strong>:focus</strong>, <strong>:active</strong> ve <strong>:hover</strong></p>
-<div class="not">
-<div class="notbaslik">
-Not
-
-</div>
-
-<p>Pseudo sınıflarında sıralama önemlidir. Genel kullanımda
+<p><strong>Not</strong>
+Pseudo sınıflarında sıralama önemlidir. Genel kullanımda
 <strong>"link-visited-hover-active,"</strong>sıralaması yapılmalıdır. Tüm sınıflar
 içinse <strong>"link-visited- focus-hover-active."</strong> sıralaması yapılmalıdır.</p>
-<p></div>
-<strong>:focus -</strong> Odaklanan elemente stil tanımlası yapmak için kullanılır
+<p><strong>:focus -</strong> Odaklanan elemente stil tanımlası yapmak için kullanılır
 Örn: input alanına içerik girerken <strong>:active</strong> - Aktif olan elemente
 stil atamak için kullanılır. <strong>:hover -</strong> Bir elementin üzerine Farenin
 imleci geldiğinde yapılacak tanımlama için Örn: bir linkin üzerine fare
 ile geldiğimizde renk değiştirmesini sağlamak için Linkler için genel
-kullanım    :::css
-     a:link { color: navy; } a:visited {
-color: gray; } a:hover { color: red; } a:active { color: yellow; }
- <strong>:focus</strong> için bir örnek verecek olursak  :::css
-     input:focus { background: silver; font-weight: bold; }</p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
+kullanım  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">navy</span><span class="p">;</span> 
+<span class="p">}</span>
 
-</div>
+<span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span> 
+<span class="p">}</span>
 
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">yellow</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p><strong>:focus</strong> için bir örnek verecek olursak <br />
+</p>
+<div class="codehilite"><pre><span class="nt">input</span><span class="nd">:focus</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="nb">silver</span><span class="p">;</span> 
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer </p>
 <h2>İlk Çocuk Elementi seçmek</h2>
 <p>Diğer bir pseudo sınıfımız <strong>:first-child</strong>'dır. <strong>first:child:</strong>
-Belirtilen elementin ilk Çocuk Elementine stil atamak için kullanılır.
-    :::css
-     p:first-child { font-weight: bold; }
-li:first-child { color:#f00; }      :::html
-     <div> <p>Bu paragraf ilk çocuk elementidir ve sonuç
-olarak kalın olacaktır</p> <ul> <li>Bu liste ilk çocuk elementidir
-ve font rengi kırmızı olacak</li> <li>Bu <strong>çocuk element
-</strong>değil</li> <li>Bu da değil</li> </ul> <p>Bu pragraf
-<em>bir</em> çocuk element değil.</p> </div> </p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer 7.0+ Firefox+ Chrome+ Safari+
-Opera+
+Belirtilen elementin ilk Çocuk Elementine stil atamak için kullanılır.</p>
+<div class="codehilite"><pre><span class="nt">p</span><span class="nd">:first-child</span> <span class="p">{</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
 
-</div>
+<span class="nt">li</span><span class="nd">:first-child</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#f00</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 
+
+<p>HTML;</p>
+<div class="codehilite"><pre><span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Bu paragraf ilk çocuk elementidir ve sonuç olarak kalın olacaktır<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Bu liste ilk çocuk elementidir ve font rengi kırmızı olacak<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Bu <span class="nt">&lt;strong&gt;</span>çocuk element <span class="nt">&lt;/strong&gt;</span>değil<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Bu da değil<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Bu pragraf <span class="nt">&lt;em&gt;</span>bir<span class="nt">&lt;/em&gt;</span> çocuk element değil.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera  <br />
+İnternet Explorer </p>
 <h2>:lang Pseudo Sınıfı</h2>
 <p>Lang pseudo sınıfı içerikteki bir elemente farklı bir dil de yazmamızı
-sağlar. Atanabilecek dil listesi ve kullanılacak kısaltmalara <a href="http://www.dsv.su.se/~jpalme/ietf/language-codes.html">ISO 639 and RFC 1776 standards</a> erişebilirsiniz.   :::html</p>
-<p><html> <head> <title>lang test</title> <style type="text/css">
-p:lang(fr) { color: red; } </style> </head><body> <p
-lang="fr">Bonjour le monde!</p> </body> </html> </p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer 8.0+ Firefox+ Chrome+ Safari+
-Opera+
+sağlar. Atanabilecek dil listesi ve kullanılacak kısaltmalara <a href="http://www.dsv.su.se/~jpalme/ietf/language-codes.html">ISO 639 and RFC 1776 standards</a> erişebilirsiniz. <br />
+</p>
+<div class="codehilite"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>lang test<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">p</span><span class="nd">:lang</span><span class="o">(</span><span class="nt">fr</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;&lt;body&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Bonjour le monde!<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
 
-</div>
 
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong> <br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer 8+</p>
 <h2>Pseudo Sınıflarını birleştirmek</h2>
 <p>CSS2.1 ile birlikte aynı seçiciye ait pseudo elemntlerini birleştirme
 özelliği de gelmiştir. Örneğin ziyaret edilmiş linklerin hover özelliği
-ile ziyaret edilmemiş linklerin hover özelliğini farklı atamak istesek
-    :::css
-     a:link:hover { color: red; } a:visited:hover
-{ color: pink; }  Sıralama önemli değildir.</p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer 8.0+ Firefox+ Chrome+ Safari+
-Opera+
+ile ziyaret edilmemiş linklerin hover özelliğini farklı atamak istesek</p>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nd">:link:hover</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
 
-</div>
+<span class="nt">a</span><span class="nd">:visited:hover</span><span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">pink</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
 
+
+<p>Sıralama önemli değildir.</p>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer 8+</p>
 <h2>Pseudo Element Seçicileri</h2>
 <p>Bu elementler hayali elementlerdir. (X)HTML hiyerarşisi içinde bu
 elemntlere yoktur. CSS2.1 de Dört adet Pseudo Element Seçicisi vardır:
@@ -197,42 +294,63 @@ elemntlere yoktur. CSS2.1 de Dört adet Pseudo Element Seçicisi vardır:
 <h2>first-letter (ilk harf)</h2>
 <p>Bir blok-level elementin ilk harfine stil tanımlması yapmak için
 kullanılır. Örnek verecek olursak h1 elementinin baş harfinin büyük
-olması için :   :::css
-     h1:first-letter { font-size:
-200%; }     :::html
-     <h1>Bu büyük bir
-başlık</h1> </p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer 7.0+ Firefox+ Chrome+ Safari+
-Opera+
+olması için : <br />
+</p>
+<div class="codehilite"><pre><span class="nt">h1</span><span class="nd">:first-letter</span> <span class="p">{</span> 
+    <span class="k">font-size</span><span class="o">:</span><span class="m">200</span><span class="o">%</span><span class="p">;</span> 
+<span class="p">}</span>
 
-</div>
+<span class="o">::</span><span class="nd">:html</span>
+<span class="o">&lt;</span><span class="nt">h1</span><span class="o">&gt;</span><span class="nt">Bu</span> <span class="nt">b</span><span class="err">ü</span><span class="nt">y</span><span class="err">ü</span><span class="nt">k</span> <span class="nt">bir</span> <span class="nt">ba</span><span class="err">ş</span><span class="nt">l</span><span class="err">ı</span><span class="nt">k</span><span class="o">&lt;/</span><span class="nt">h1</span><span class="o">&gt;</span>
+</pre></div>
 
+
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong>  <br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer 7+</p>
 <h2>first-line (ilk satır)</h2>
 <p>Bir metnin ilk elementine stil atamak için kullanılır. Örneğin
-paragraflarınızın ilk satırlarını renklendirmek isitiyorsunuz.
-    :::css
-     p:first-line { color: red; } </p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
+paragraflarınızın ilk satırlarını renklendirmek isitiyorsunuz.</p>
+<div class="codehilite"><pre><span class="nt">p</span><span class="nd">:first-line</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
 
-</div>
 
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer</p>
 <h2>before ve after elementleri</h2>
 <p>Bir elementin öncesine ve sonrasına bir içerik veya özellik eklemek için
-kullanılır. Notlarımızın başına otomatik oalrak Not yazmak için
-    :::css
-     P.not:before { content: "Not." }
- kodu yeterlidir. Aynı şekilde paragraflarımzın sonuna
-otomatik bitti yazıp nokta koymak istersek  :::css</p>
-<p>body:after { content: " Bitti."; } yeterlidir.</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer 8.0+ Firefox+ Chrome+ Safari+
-Opera+
+kullanılır. Notlarımızın başına otomatik oalrak Not yazmak için</p>
+<div class="codehilite"><pre><span class="nt">P</span><span class="nc">.not</span><span class="nd">:before</span> <span class="p">{</span> 
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;Not.&quot;</span> 
+<span class="p">}</span>
+</pre></div>
 
-</div>
 
-</p><p><a href=".././pseudo-siniflari-ve-pseudo-elementleri/#disqus_thread">yorum var</a>.</p>
+<p>kodu yeterlidir. Aynı şekilde paragraflarımzın sonuna
+otomatik bitti yazıp nokta koymak istersek<br />
+</p>
+<div class="codehilite"><pre><span class="nt">body</span><span class="nd">:after</span> <span class="p">{</span> 
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; Bitti.&quot;</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>yeterlidir.</p>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong><br />
+Firefox  <br />
+Chrome <br />
+Safari  <br />
+Opera <br />
+İnternet Explorer 8+</p><p><a href=".././pseudo-siniflari-ve-pseudo-elementleri/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

@@ -84,7 +84,7 @@
 </footer><!-- /.post-info --><p>CSS, web kodlayıcılarına (X)HTML dökümanlarına stil uygulamalarını
 sağlar. (X)HTML kodu ile stil kodunu birbirinden ayırarak web
 kodlayıcılara büyük kolaylıklar sağlar. Burada genel kullanılan CSS
-özelliklerini hep beraber tek tek kısaca inceleyeceğiz.<!--more--></p>
+özelliklerini hep beraber tek tek kısaca inceleyeceğiz.</p>
 <p>Burada tanımlanacak CSS özellikleri 15 Haziran 2005'de yürürlüğe giren
 CSS2.1 standartlarına göre yazılmıştır.</p>
 <p>Sırası ile aşağıdaki özelliklere değinilecektir.</p>
@@ -100,28 +100,22 @@ CSS2.1 standartlarına göre yazılmıştır.</p>
 <li>Tablo Özellikleri</li>
 </ul>
 <p>Burada standart bir özellik tanımı kullanılacaktır.</p>
-<div class="cssozelliktanimi">
-**Yapısı :** özellik_ismi: <deger>  
-**Aldığı Değerler :** alınan_deger1 | alınan_deger2 {1,4}*   
-**Başlangıç değeri:** Özelliğin atama yapılmadığı zaman ki değeri   
-**Uygulanabilen elementler:** özelliğin uygulanacağı elementlerin
-isimleri   
-**Kalıtsallık:** Bu özelliğin atanması halinde alt elementlerini(örn:
-çocuk ve torun elementlerini) etkileyip etkilemeyeceği
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> özellik_ismi: &lt;deger><br />
+<strong>Aldığı Değerler :</strong> alınan_deger1 | alınan_deger2 {1,4}* <br />
+<strong>Başlangıç değeri:</strong> Özelliğin atama yapılmadığı zaman ki değeri <br />
+<strong>Uygulanabilen elementler:</strong> özelliğin uygulanacağı elementlerin isimleri <br />
+<strong>Kalıtsallık:</strong> Bu özelliğin atanması halinde alt elementlerini(örn: çocuk ve torun elementlerini) etkileyip etkilemeyeceği</p>
+<p>(*) Bu işaretin anlamı bu özelliğin 1'den 4'e kadar değer alabileceğini
+gösterir. </p>
+<p>Örneğin:</p>
+<div class="codehilite"><pre><span class="nt">p</span><span class="nc">.deneme</span> <span class="p">{</span> 
+    <span class="k">border-style</span><span class="o">:</span> <span class="k">solid</span> <span class="k">dashed</span> <span class="k">dotted</span> <span class="k">solid</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
 
-</div>
 
-<ul>
-<li>
-<p>Bu işaretin anlamı bu özelliğin 1'den 4'e kadar değer alabileceğini
-gösterir. Örneğin:</p>
-<p>:::css
- p.deneme { border-style: solid dashed dotted
-solid; } </p>
-</li>
-</ul>
-<h3>CSS - Zemin(BACKGROUND) Özellikleri</h3>
-<p><img alt="Kutu Modeli" src="http://fatihhayrioglu.com/images/basit_boxmodel.gif" /></p>
+<h2>CSS - Zemin(BACKGROUND) Özellikleri</h2>
+<p><img alt="Kutu Modeli" src="static/images/basit_boxmodel.gif" /></p>
 <p>Zemin(Bacground) yukarıdaki resimde padding alanı ve içerik
 alanını(paragraf) kapsar.</p>
 <p>Zemin özellikleri ile elementlere tek bir renk atanabildiği gibi
@@ -136,90 +130,113 @@ yapılabilir.</p>
 <li>background-position</li>
 <li>background</li>
 </ul>
-<h2>background-color</h2>
+<h3>background-color</h3>
 <p>Elementlerin zeminine bir renk atamak için kullanılır.</p>
-<p><strong>Yapısı :</strong> background-color: <deger><br />
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> background-color: &lt;deger><br />
 <strong>Aldığı Değerler :</strong> <a href="http://www.fatihhayrioglu.com/?p=95">renk</a> | transparent<br />
 <strong>Başlangıç değeri:</strong> transparent<br />
 <strong>Uygulanabilen elementler:</strong> tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>Örnek:</strong></p>
-<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#ddd</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">p</span> <span class="p">{</span> 
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#ddd</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
-W3C's CSS Level 1+
-
-</div>
-
-<h2>background-image</h2>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong>
+Firefox  <br />
+Chrome <br />
+Safari  <br />
+Opera <br />
+İnternet Explorer  <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser</p>
+<h3>background-image</h3>
 <p>Elementlerin zeminine resim eklemek için kullanılır.</p>
-<p><strong>Yapısı :</strong> background-image: <deger><br />
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> background-image: &lt;deger><br />
 <strong>Aldığı Değerler :</strong> <a href="http://www.fatihhayrioglu.com/?p=95">url</a> | none <br />
 <strong>Başlangıç değeri:</strong> none <br />
 <strong>Uygulanabilen elementler:</strong> tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>Örnek:</strong></p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">background-image</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(/images/deneme.gif)</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>url(/images/deneme.gif) } </p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
-W3C's CSS Level 1+
-
-</div>
-
-<h2>background-repeat</h2>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong>
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser</p>
+<h3>background-repeat</h3>
 <p><strong>background-repeat</strong> özelliği <strong>background-image</strong> ile zemine eklenen
 resmin tekrarı ile özellikleri belirler.</p>
-<p><strong>Yapısı :</strong> background-image: <deger><br />
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> background-image: &lt;deger><br />
 <strong>Aldığı Değerler :</strong> repeat | repeat-x | repeat-y | no-repeat <br />
 <strong>Başlangıç değeri:</strong> repeat <br />
 <strong>Uygulanabilen elementler:</strong> tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>Örnek:</strong></p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">white</span> <span class="sx">url(deneme.gif)</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="nb">white</span> <span class="sx">url(deneme.gif)</span><span class="p">;</span>
+    <span class="k">background-repeat</span><span class="o">:</span> <span class="k">repeat-x</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-repeat: repeat-x; } </p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
-W3C's CSS Level 1+
-
-</div>
-
-<h2>background-attachment</h2>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong>
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser</p>
+<h3>background-attachment</h3>
 <p><strong>background-attachment</strong> özelliği zemine eklenen resmin sayfa ile
 scroll etmesini veya sayfanın zeminin de çakılı kalmasını sağlar.</p>
-<p><strong>Yapısı :</strong> background-attachment: <deger><br />
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> background-attachment: &lt;deger><br />
 <strong>Aldığı Değerler :</strong> scroll | fixed <br />
 <strong>Başlangıç değeri:</strong> scroll <br />
 <strong>Uygulanabilen elementler:</strong> tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>Örnek:</strong></p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">white</span> <span class="sx">url(deneme.gif)</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="nb">white</span> <span class="sx">url(deneme.gif)</span><span class="p">;</span>
+    <span class="k">background-attachment</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-attachment: fixed; } </p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
-W3C's CSS Level 1+
-
-</div>
-
-<h2>background-position</h2>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong>
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser </p>
+<h3>background-position</h3>
 <p><strong>background-position</strong> özelliği <strong>background-image</strong> ile belirlenen
 resmin başlangıç noktasını belirler. Bu özellik sadece <a href="#">block-level</a>
 ve replaced(Bu elementler kendine özgü boyutları olan elementler olarak
 tanımlanabilir. Örn: <strong>IMG</strong>, <strong>INPUT</strong>, <strong>TEXTAREA</strong>, <strong>SELECT</strong>, ve
 <strong>OBJECT</strong>) elementlere uygulanır.</p>
-<p><strong>Yapısı :</strong> background-position: <deger><br />
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> background-position: &lt;deger><br />
 <strong>Aldığı Değerler :</strong> [<a href="http://www.fatihhayrioglu.com/?p=95"><percentage></a> | <a href="http://www.fatihhayrioglu.com/?p=95"><length></a>]{1,2}
 | [top | center | bottom] || [left | center | right]<br />
 <strong>Başlangıç değeri:</strong> 0% 0% <br />
@@ -253,41 +270,61 @@ edilecektir. Yüzde değerler ve uzunluk değerleri eksi değerler alabilir.
 <li><strong>bottom right</strong> = <strong>right bottom</strong> = <strong>100% 100%</strong></li>
 </ul>
 <p><strong>Örnek:</strong></p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(deneme.gif)</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(deneme.gif)</span><span class="p">;</span>
+    <span class="k">background-repeat</span><span class="o">:</span> <span class="k">no-repeat</span><span class="p">;</span> 
+    <span class="k">background-position</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-repeat: no-repeat; background-position: center; }</p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
-W3C's CSS Level 1+
-
-</div>
-
-<h2>background</h2>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu</strong>
+Firefox <br />
+Chrome  <br />
+Safari <br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser </p>
+<h3>background</h3>
 <p>Bu özellik Zemin(background) ile ilgili tüm özelliklerin bir arada
 kullanımı sağlar.</p>
-<p><strong>Yapısı :</strong> background: <deger><br />
-<strong>Aldığı Değerler :</strong> <background-color><background-color> ||
-<background-image> || <background-repeat> ||
-<background-attachment> || <background-position> <br />
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> background: &lt;deger><br />
+<strong>Aldığı Değerler :</strong> &lt;background-color>&lt;background-color> || &lt;background-image> || &lt;background-repeat> || &lt;background-attachment> || &lt;background-position> <br />
 <strong>Başlangıç değeri:</strong> Tanımsız <br />
 <strong>Uygulanabilen elementler:</strong> tüm elementler<br />
 <strong>Kalıtsallık:</strong> Yok</p>
 <p><strong>Örnek:</strong></p>
-<div class="codehilite"><pre> <span class="nt">body</span><span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">white</span> <span class="sx">url(deneme.gif)</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">body</span><span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="nb">white</span> <span class="sx">url(deneme.gif)</span> 
+<span class="p">}</span>
+
+<span class="nt">blockquote</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="m">#f00</span> 
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../images/deneme.png)</span> <span class="m">#f00</span> <span class="k">fixed</span> 
+<span class="p">}</span>
+
+<span class="nt">table</span><span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="m">#0c0</span> <span class="sx">url(deneme.jpg)</span> <span class="k">no-repeat</span> <span class="k">bottom</span> <span class="k">right</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>blockquote { background: #f00 } p { background:
-url(../images/deneme.png) #f00 fixed } table{ background: #0c0
-url(deneme.jpg) no-repeat bottom right } </p>
-<div class="tarayiciuyum">
-**Tarayıcı Uyumu:** Internet Explorer+ Firefox+ Chrome+ Safari+ Opera+
-W3C's CSS Level 1+
-
-</div>
-
+<p><strong>Tarayıcı Uyumu</strong><br />
+Firefox <br />
+Chrome <br />
+Safari <br />
+Opera  <br />
+İnternet Explorer  <br />
+<strong>Mobil Tarayıcılar</strong> <br />
+iOS Safari <br />
+Opera Mobile<br />
+Android Browser<br class="tarayiciuyum" />
 </p><p><a href=".././hizli-css-referansi/#disqus_thread">yorum var</a>.</p>
                 </article>
                 

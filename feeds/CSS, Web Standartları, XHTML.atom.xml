@@ -5941,161 +5941,190 @@ nedeni ile de bir çok sorunla karşılaştığımızıda unutmayalım.&lt;/p&gt
 &lt;/p&gt;</summary><category term="CSS"></category><category term="inheritance"></category><category term="kalıtsallık"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>Özellik Seçicileri(Attribute Selectors)</title><link href="http://www.fatihhayrioglu.com/ozellik-secicileriattribute-selectors/" rel="alternate"></link><updated>2007-01-06T15:42:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-01-06:ozellik-secicileriattribute-selectors/</id><summary type="html">&lt;p&gt;Bu konuya biraz geç değindik biliyorum. Ancak bu konuyu &lt;a href="http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/"&gt;(X)HTML Sayfa Yapısı ve CSS Kullanımı&lt;/a&gt; makalesi içinde yazmayı düşündüğümde IE bu
 özelliği desteklemiyordu(şimdi IE7 bu özelliği desteklemektedir.) bu
 nedenle yazımını ertelemiştim, sonrada unuttum gitti açıkçası neyse
-sonunda yazıyorum işte:) &lt;!--more--&gt;&lt;/p&gt;
+sonunda yazıyorum işte:) &lt;/p&gt;
 &lt;p&gt;CSS ile tanımlama yaparken Xhtml nesnelerine erişmede bazen sıkıntı
 çekeriz. Ne yapsak da bu elemente atama yapsak diye bu genelde programcı
 - Arayüz Kod Yazarı ayrımının olduğu projelerde çok başımıza gelir. Bu
 sorunu kökünden çözen bir yöntemdir &lt;strong&gt;Özellik Seçicileri&lt;/strong&gt;.&lt;/p&gt;
-&lt;div class="ekstrabilgi"&gt;
+&lt;p&gt;&lt;strong&gt;Not&lt;/strong&gt;
 Javascript gibi id'si olan her elemente(hata daha fazlası da var) css
-özelliği atanması bize bir çok bakımdan avantaj sağlar.
-
-&lt;/div&gt;
-
+özelliği atanması bize bir çok bakımdan avantaj sağlar.&lt;/p&gt;
 &lt;p&gt;Özellik Seçicileri HTML, XHTML veya XML dokümanlarındaki seçilen
 etiketin özelliklerine veya özellik değerlerine göre tanımlama yapmamızı
 sağlar. Bir örnek verecek olursak sayfamızdaki bir resme(örn:
 grafik.gif) kenarlık ataması yapmak istersek:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;img&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;grafik.gif&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;img&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;grafik.gif&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;000; }&lt;/h1&gt;
 &lt;p&gt;Dört çeşit Özellik Seçicisi vardır.&lt;/p&gt;
 &lt;h2&gt;1- Basit Özellik Seçicisi&lt;/h2&gt;
 &lt;p&gt;Belirli bir etiketin(örn:img) özelligine(örn:alt) göre tanımlama
 yapmamızı sağlar.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Basit özellik seçicisi" src="/images/basit_ozel_secici.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bir örnek yapalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot;&lt;/span&gt;
+&lt;span class="cp"&gt;&amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;CSS&amp;#39;in yapısı&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;style &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;img&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="nb"&gt;lime&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;logo.gif&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Logo&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;32&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;41&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-&lt;title&gt;CSS'in yapısı&lt;/title&gt; &lt;style type="text/css"&gt; img[alt] {
-border: 5px solid lime } &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;img
-src="logo.gif" alt="Logo" width="32" height="41" /&gt; &lt;/body&gt; &lt;/html&gt;&lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/basit_ozellik_secici.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Yukarıdaki kodlamada birden fazla &lt;img&gt; tanımı vardır. Ama biz sadece
+&lt;p&gt;Yukarıdaki kodlamada birden fazla &amp;lt;img&gt; tanımı vardır. Ama biz sadece
 alt tanımı yaptıklarımıza belli özellikler atamak istiyoruz. Bunun için
 Basit Özellik Seçicisini kullanabiliriz.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Uyumu:**
-
-&lt;/p&gt;
-&lt;p&gt;
-Internet Explorer 6.0: desteklemiyor 7.0: destekliyor ;  
-Firefox: destekliyor ;  
-Google Chrome: destekliyor ;  
-Opera: destekliyor
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Uyumu&lt;/strong&gt;&lt;br /&gt;
+Firefox  &lt;br /&gt;
+Chrome &lt;br /&gt;
+Safari &lt;br /&gt;
+Opera &lt;br /&gt;
+İnternet Explorer &lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;&lt;br /&gt;
+iOS Safari &lt;br /&gt;
+Opera Mobile&lt;br /&gt;
+Android Browser&lt;/p&gt;
 &lt;h2&gt;2- Özellik Değeri Seçicisi&lt;/h2&gt;
 &lt;p&gt;Bir etiketin özellik değerine göre tanımlama yapmamızı sağlar.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Özellik Değeri Seçicisi" src="/images/ozellik_degeri_secicisi.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bir örnek yapalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot;&lt;/span&gt;
+&lt;span class="cp"&gt;&amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=utf-8&amp;quot;&lt;/span&gt;
+&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;CSS&amp;#39;in yapısı&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;style &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;150px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Adınız : &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ad&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Cinsiyetiniz: &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;cinsiyet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;erkek&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+Erkek &lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;cinsiyet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kadin&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt; Kadın
+&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-&lt;title&gt;CSS'in yapısı&lt;/title&gt; &lt;style type="text/css"&gt;
-input[type="text"] { border: 1px solid #000; width: 150px; } &lt;/style&gt;
-&lt;/head&gt; &lt;body&gt; &lt;p&gt;Adınız : &lt;input type="text" name="ad" /&gt;&lt;/p&gt;
-&lt;p&gt;Cinsiyetiniz: &lt;input type="radio" name="cinsiyet" id="erkek" /&gt;
-Erkek &lt;input type="radio" name="cinsiyet" id="kadin" /&gt; Kadın &lt;/p&gt;
-&lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/ozellik_degeri_secicisi.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Genelde formlarda tanımlama yaparken sadece metin girisi yaptıgımız
-alanlara atama yapmakta zorlanırız. Bunun sebebi &lt;input&gt; etiketini
+alanlara atama yapmakta zorlanırız. Bunun sebebi &amp;lt;input&gt; etiketini
 sadece metin girisi için kullanılmamasıdır, radyo buton ve isaretleme
 kutuları içinde bu etiketin kullanılmasıdır. Özellik Degeri Seçicisi bu
 sorunu kökten çözer. Yukarıdaki örnekte görüldügü gibi&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Uyumu:**
-
-&lt;/p&gt;
-&lt;p&gt;
-Internet Explorer6: desteklemiyor 7.0: destekliyor ;  
-Firefox: destekliyor ;  
-Google Chrome: destekliyor ;  
-Opera: destekliyor
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Uyumu&lt;/strong&gt;&lt;br /&gt;
+Firefox &lt;br /&gt;
+Chrome &lt;br /&gt;
+Safari &lt;br /&gt;
+Opera &lt;br /&gt;
+İnternet Explorer &lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;&lt;br /&gt;
+iOS Safari   &lt;br /&gt;
+Opera Mobile&lt;br /&gt;
+Android Browser&lt;/p&gt;
 &lt;h2&gt;3- Kısmi Özellik Değeri Seçicisi&lt;/h2&gt;
 &lt;p&gt;Bir etiketin özellik değerindeki boşluklarla ayrılmış kısımlarına göre
 tanımlama yapmamızı sağlar.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Kısmi Özellik Değeri Seçicisi" src="/images/kismi_secici.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bir örnek yapalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot;&lt;/span&gt;
+&lt;span class="cp"&gt;&amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=utf-8&amp;quot;&lt;/span&gt;
+&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;CSS&amp;#39;in yapısı&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;style &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="o"&gt;~=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Google&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;overline&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.google.com&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Google seç&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;gooogle
+&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.yahoo.com&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Yahoo seç&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;yahoo &lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.fatihhayrioglu.com&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Fatih&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;fatih &lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-&lt;title&gt;CSS'in yapısı&lt;/title&gt; &lt;style type="text/css"&gt;
-a[title~="Google"] { text-decoration:overline; } &lt;/style&gt; &lt;/head&gt;
-&lt;body&gt; &lt;p&gt;&lt;a href="http://www.google.com" title="Google
-seç"&gt;gooogle &lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;a href="http://www.yahoo.com"
-title="Yahoo seç"&gt;yahoo &lt;/a&gt; &lt;/p&gt; &lt;p&gt;&lt;a
-href="http://www.fatihhayrioglu.com" title="Fatih"&gt;fatih &lt;/a&gt; &lt;/p&gt;
-&lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/kismi_secici.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Türkçe karakterde sorunsuz çalısıyor. Siz kullanabilecegimiz yerleri
 hesap edin artık.&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Uyumu:**
-
-&lt;/p&gt;
-&lt;p&gt;
-Internet Explorer 6.0: desteklemiyor 7.0: destekliyor ;  
-Firefox: destekliyor ;  
-Google Chrome: destekliyor ;  
-Opera: destekliyor
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Uyumu&lt;/strong&gt;&lt;br /&gt;
+Firefox &lt;br /&gt;
+Chrome &lt;br /&gt;
+Safari &lt;br /&gt;
+Opera &lt;br /&gt;
+İnternet Explorer &lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;&lt;br /&gt;
+iOS Safari &lt;br /&gt;
+Opera Mobile&lt;br /&gt;
+Android Browser&lt;/p&gt;
 &lt;h2&gt;4- Dikkate Değer Özellik Seçicisi&lt;/h2&gt;
 &lt;p&gt;Bir etiketin özellik değerindeki kesik çizgi(-) ile ayrılmış kısımlarına
 göre tanımlama yapmamızı sağlar.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Dikkate Değer Özellik Seçicisi" src="/images/dikkate_deger_secici.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Bir örnek yapalım&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot;&lt;/span&gt;
+&lt;span class="cp"&gt;&amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=utf-8&amp;quot;&lt;/span&gt;
+&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;CSS&amp;#39;in yapısı&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;style &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="o"&gt;*[&lt;/span&gt;&lt;span class="nt"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;|=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;h1&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Hello!&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;en-us&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Greetings!&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;en-au&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;G’day!&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Bonjour!&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;h4&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;cy-en&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Jrooana!&lt;span class="nt"&gt;&amp;lt;/h4&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-&lt;title&gt;CSS'in yapısı&lt;/title&gt; &lt;style type="text/css"&gt;
-*[lang|="en"] { color: red; } &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;h1
-lang="en"&gt;Hello!&lt;/h1&gt; &lt;p lang="en-us"&gt;Greetings!&lt;/p&gt; &lt;div
-lang="en-au"&gt;G’day!&lt;/div&gt; &lt;p lang="fr"&gt;Bonjour!&lt;/p&gt; &lt;h4
-lang="cy-en"&gt;Jrooana!&lt;/h4&gt; &lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/dikkate_deger_secici.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;div class="tarayiciuyum"&gt;
-**Tarayıcı Uyumu:**
-
-&lt;/p&gt;
-&lt;p&gt;
-Internet Explorer 6.0: desteklemiyor 7.0: destekliyor ;  
-Firefox: destekliyor ;  
-Google Chrome: destekliyor ;  
-Opera: destekliyor
-
-&lt;/div&gt;
-
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Uyumu&lt;/strong&gt;&lt;br /&gt;
+Firefox &lt;br /&gt;
+Chrome &lt;br /&gt;
+Safari &lt;br /&gt;
+Opera &lt;br /&gt;
+İnternet Explorer &lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;&lt;br /&gt;
+iOS Safari &lt;br /&gt;
+Opera Mobile&lt;br /&gt;
+Android Browser&lt;/p&gt;
 &lt;p&gt;Bunların dısında CSS3 ile birlikte gelen dört tane daha yeni Özellik
 Seçicisi vardır. "Belirlenen Sözdizimi ile Baslayan Özellik Deger
 Seçicisi", "Belirlenen Sözdizimi ile Biten Özellik Deger Seçicisi",
@@ -6109,8 +6138,7 @@ ve etkilesimli kod yazmamızı saglamak.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.456bereastreet.com/archive/200510/css_21_selectors_part_2/"&gt;http://www.456bereastreet.com/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://css.maxdesign.com.au/selectutorial/selectors_attribute.htm"&gt;http://css.maxdesign.com.au/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://westciv.com/style_master/academy/browser_support/selectors.html"&gt;http://westciv.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="Attribute Selectors"></category><category term="CSS"></category><category term="özellik"></category><category term="Özellik-seçicileri"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>IE'de Hata Ayıklamak için şartlı Yorumlar Kullanmak</title><link href="http://www.fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/" rel="alternate"></link><updated>2006-12-17T16:03:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-12-17:iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/</id><summary type="html">&lt;p&gt;CSS ile web sitesi kodlamanın en büyük sorunu CSS'in özelliklerini
+&lt;/ul&gt;</summary><category term="Attribute Selectors"></category><category term="CSS"></category><category term="özellik"></category><category term="Özellik-seçicileri"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>IE'de Hata Ayıklamak için şartlı Yorumlar Kullanmak</title><link href="http://www.fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/" rel="alternate"></link><updated>2006-12-17T16:03:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-12-17:iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/</id><summary type="html">&lt;p&gt;CSS ile web sitesi kodlamanın en büyük sorunu CSS'in özelliklerini
 yorumlayamayan veya yanlış yorumlayan web tarayıcılarıdır. Bu nedenle
 CSS ile web sitesi kodlarken bu tip hataları ayıklamamız gerekiyor. CSS
 ile hata ayıklama web tarayıcı gruplarının veya bir kısım web tarayıcısı
@@ -7420,12 +7448,10 @@ oluşturmak daha mantıklı ve kolay olur.&lt;/p&gt;
 kullandığımız bir koddur.&lt;/p&gt;
 &lt;p&gt;DOCTYPE bildirimi (X)HTML kodunun başına bir veya iki satır olarak
 eklenir. Genel kullanımı:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &lt;/span&gt;
+&lt;span class="cp"&gt;    &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&amp;quot;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
- &lt;!--more--&gt;
 
 &lt;p&gt;Burada dökümanımızın XHTML 1.0 verisyonu dikkate alınarak yazıldığı ve
 kullanılan bu kuralların linki verilmiştir. Linkin kullanılmadığı
@@ -7481,102 +7507,104 @@ geçişe&lt;strong&gt;DOCTYPE Geçişi&lt;/strong&gt;(DOCTYPE switching) adı ve
 kullandığınızda sayfanız Garip Mod da yorumlanacaktır ve bu size bir çok
 sorun oluşturacaktır. Sitenizde tam DOCTYPE bildirimive strict DTD
 kullanmanız çok önelidir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE HTML PUBLIC &amp;quot;-//W3C//DTD HTML 4.01//EN&amp;quot; &amp;quot;http://www.w3.org/TR/html4/strict.dtd&amp;quot;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
 
 &lt;p&gt;Bu kullanım sayfanın &lt;strong&gt;HTML 4.01&lt;/strong&gt; kurallarının geçerli olduğu bir HTML
 dosyası olduğunu gösterir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 
 &lt;p&gt;Bu kullanım sayfanın &lt;strong&gt;hem HTML hemde XHTML&lt;/strong&gt; kurallarının geçerli
 olduğunu bir XHTML dosyası olduğunu gösterir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Strict//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&amp;quot;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
 
 &lt;p&gt;Bu kullanım sayfanın &lt;strong&gt;sadece XHTML1.0&lt;/strong&gt;kurallarının geçerli olduğu bir
 XHTML sayfası olduğunu gösterir. Bu kodlama yapıldığıında tüm XHTML
 kurallarına harfiyen uyulmalıdır. Örneğin kodların hepsinin küçük harfle
 yazılması gibi.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd&amp;quot;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
 
 &lt;p&gt;Bu kullanım sayfanın bir &lt;strong&gt;XHTML çerçeve(frame)&lt;/strong&gt;sayfası olduğunu
 gösterir. Kullanımı azaldı.&lt;/p&gt;
 &lt;p&gt;Biz burada sizlere DOCTYPE tanımlamanın nasıl olduğunu ve önemini
 anlatmaya çalıştık. Bir çok HTML ediötürü DOCTYPE taınımını otomatik
-ekleyecektir.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="CSS"></category><category term="DOCTYPE"></category><category term="mod"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>CSS'i Web Sayfalarına Eklemek</title><link href="http://www.fatihhayrioglu.com/cssi-web-sayfalarina-eklemek/" rel="alternate"></link><updated>2006-07-23T21:47:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-07-23:cssi-web-sayfalarina-eklemek/</id><summary type="html">&lt;h2&gt;1- Kod içinde (In-line)&lt;/h2&gt;
+ekleyecektir.&lt;/p&gt;</summary><category term="CSS"></category><category term="DOCTYPE"></category><category term="mod"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>CSS'i Web Sayfalarına Eklemek</title><link href="http://www.fatihhayrioglu.com/cssi-web-sayfalarina-eklemek/" rel="alternate"></link><updated>2006-07-23T21:47:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-07-23:cssi-web-sayfalarina-eklemek/</id><summary type="html">&lt;h2&gt;1- Kod içinde (In-line)&lt;/h2&gt;
 &lt;p&gt;Direk olarak (X)HTML elementin içine &lt;strong&gt;style&lt;/strong&gt; özelliği kullanılarak
 uygulamak.&lt;!--more--&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;style=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;color:red&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Deneme
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;style=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;color:red&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Deneme yazımız&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;yazımız&lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;Tüm CSS komutlarını kodların içine direk uygulamak önerilen bir kodlama
 şekli değildir. Ancak özel durumlarda kullanılabilir.&lt;/p&gt;
 &lt;h2&gt;2- style Elementi kullanılarak&lt;/h2&gt;
-&lt;p&gt;&lt;head&gt; kısmında &lt;style&gt; elementi içinde CSS kodumuzu yazarak
+&lt;p&gt;&amp;lt;head&gt; kısmında &amp;lt;style&gt; elementi içinde CSS kodumuzu yazarak
 uygulamak.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=iso-8859-9&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;CSS&amp;#39;i Uygulamak &lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;style &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" /&gt;
-&lt;title&gt;CSS'i Uygulamak &lt;/title&gt; &lt;style type="text/css"&gt; div{
-color:red; } &lt;/style&gt; &lt;/head&gt; &lt;/p&gt;
 &lt;p&gt;Birinci yönteme göre avantajı (X)HTML kod ile CSS bir birinden
 ayrıştırılmış olmasıdır.&lt;/p&gt;
 &lt;h2&gt;3- Harici Stil şablonu Kullanımı&lt;/h2&gt;
 &lt;p&gt;Bu metod da CSS kodlarımzı &lt;strong&gt;.css&lt;/strong&gt; uzantılı bir dosyaya kaydederiz.
 &lt;strong&gt;ornek.css&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Daha sonra bu kodu gereken sayfalarımıza uygularız.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=iso-8859-9&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;CSS&amp;#39;i Uygulamak&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ornek.css&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" /&gt;
-&lt;title&gt;CSS'i Uygulamak&lt;/title&gt; &lt;link rel="stylesheet"
-type="text/css" href="ornek.css" /&gt; &lt;/head&gt; &lt;/p&gt;
 &lt;p&gt;Bu yöntemin diğerlerine göre en büyük avantajı bir kere yazılan kod
 lazım olan tüm sayfalara eklenebilmesidir. Bu sayede harici eklenen css
 kodu bir kere yüklendikten sonra diğer kullandığımız sayfalarda tekrar
 yüklenemeyerek bize hız kazandıracaktır.&lt;/p&gt;
 &lt;h2&gt;4- @import ile eklemek&lt;/h2&gt;
 &lt;p&gt;üncü yöntem ile kullanımı benzerdir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=iso-8859-9&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;CSS&amp;#39;i Uygulamak&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;style &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;ornek.css&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" /&gt;
-&lt;title&gt;CSS'i Uygulamak&lt;/title&gt; &lt;style type="text/css"&gt; @import
-"ornek.css"; &lt;/style&gt; &lt;/head&gt; &lt;/p&gt;
 &lt;p&gt;Bu yöntemle eklenen harici css dosyası eski web tarayıcıları tarafından
 görüntülenemeyecektir.(Örn: NN4)&lt;/p&gt;
 &lt;p&gt;@import ile eklenen kod link ile eklenen kodlamadan önce yorumlanır web
@@ -7591,122 +7619,181 @@ kullanılan sayfa CSS'inde hangi parçalar gerekli ise onların import
 edilmesi önerilir. Bu sayfade kodun bir kısmında yaptığımız değişiklik
 için tüm css kodu incelenip değiştirlmesi gerekmez ve kod yönetimi
 kolaylaşır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=iso-8859-9&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;CSS&amp;#39;i Uygulamak&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;style &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;ornek.css&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" /&gt;
-&lt;title&gt;CSS'i Uygulamak&lt;/title&gt; &lt;style type="text/css"&gt; @import
-"ornek.css"; &lt;/style&gt; &lt;/head&gt;&lt;/p&gt;
 &lt;p&gt;Ürünler bölümü için bir css dosyası ekleyelim sonra parçalara
 ayırdığımız css kodlarının ürünlere lazım olanlarını &lt;strong&gt;urunler.css&lt;/strong&gt;
 içine ekleyelim.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;urunler.css&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(/&lt;/span&gt;&lt;span class="nt"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;iskelet&lt;/span&gt;&lt;span class="nc"&gt;.css&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;@import&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;url(/css/fontlar.css); @import url(/css/renkler.css); @import
-url(/css/urunlereozel.css); &lt;/p&gt;
-&lt;/p&gt;</summary><category term="CSS"></category><category term="css eklemek"></category><category term="import"></category><category term="link"></category><category term="style"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>CSS'in Yapısı</title><link href="http://www.fatihhayrioglu.com/cssin-yapisi/" rel="alternate"></link><updated>2006-06-20T23:24:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-06-20:cssin-yapisi/</id><summary type="html">&lt;h4&gt;CSS'in Yapısı&lt;/h4&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(/&lt;/span&gt;&lt;span class="nt"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;iskelet&lt;/span&gt;&lt;span class="nc"&gt;.css&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(/&lt;/span&gt;&lt;span class="nt"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;fontlar&lt;/span&gt;&lt;span class="nc"&gt;.css&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(/&lt;/span&gt;&lt;span class="nt"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;renkler&lt;/span&gt;&lt;span class="nc"&gt;.css&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(/&lt;/span&gt;&lt;span class="nt"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;urunlereozel&lt;/span&gt;&lt;span class="nc"&gt;.css&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="CSS"></category><category term="css eklemek"></category><category term="import"></category><category term="link"></category><category term="style"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>CSS'in Yapısı</title><link href="http://www.fatihhayrioglu.com/cssin-yapisi/" rel="alternate"></link><updated>2006-06-20T23:24:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-06-20:cssin-yapisi/</id><summary type="html">&lt;h2&gt;CSS'in Yapısı&lt;/h2&gt;
 &lt;p&gt;CSS'in yapısı iki ana kısımdan oluşur. Seçiciler(Selector) ve Bildirim
 Bloğu(Declaration Block). Bildirim Bloğuda iki ye ayrılır.
-Özellik(Property) ve Değer(Value). &lt;!--more--&gt; &lt;img alt="" src="/images/css_genel_yapi.gif" /&gt;&lt;/p&gt;
-&lt;div class="not"&gt;
-&lt;div class="notbaslik"&gt;
-Not
-
-&lt;/div&gt;
-
-&lt;p&gt;XML de Seçiciler HTML elementleri dışında yeni oluşturulan elementlerde
+Özellik(Property) ve Değer(Value). &lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/css_genel_yapi.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not&lt;/strong&gt;
+XML de Seçiciler HTML elementleri dışında yeni oluşturulan elementlerde
 olabilir.&lt;/p&gt;
-&lt;p&gt;&lt;/div&gt;
-Tüm HTML elementleri potansiyel Seçicilerdir. Seçiciler ismini de
+&lt;p&gt;Tüm HTML elementleri potansiyel Seçicilerdir. Seçiciler ismini de
 buradan alır, HTML seçilen element anlamındadır. Bildirim bloğu süslü
 parantezle açılır ve kapanır. Bildirimler arasında " ; " noktalı virgül
 kullanılır. özellik ve değerler birbirinden " : " iki nokta üstüste ile
-ayrılır.    :::css
-     h1 {font: medium Arial;}
-şeklinde arada boşluk verilerekde bildirm yapılabilir.
+ayrılır.  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;h1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;medium&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;şeklinde arada boşluk verilerekde bildirm yapılabilir.
 Burada ilki font'un boyutunu ikincisi ise font ismini gösterir. İleride
 bu konuya daha ayrıntılı gireceğiz. Ayrıca sadece font etiketine özel "
-/ " kullanımı vardır örnek aşağıda:     :::css
-     h1
-{font: medium/120% Arial;} Burada " / " Seçicinin font
-boyutunu ve satır yüksekliğini gösterir.(font_boyutu/satir_yuksekliği)&lt;/p&gt;
-&lt;h4&gt;Gruplama&lt;/h4&gt;
+/ " kullanımı vardır örnek aşağıda:   &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;h1&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;medium&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="m"&gt;120&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Burada " / " Seçicinin font boyutunu ve satır yüksekliğini gösterir.(font_boyutu/satir_yuksekliği)&lt;/p&gt;
+&lt;h2&gt;Gruplama&lt;/h2&gt;
 &lt;p&gt;Yukarıda hep bir Seçici'yi sadece bir HTML elementine atamayı gördük,
 Birden fazla HTML elementine de atama yapabilirz, buna &lt;strong&gt;gruplama&lt;/strong&gt;
-denir. Gruplama Seçicilerde yapıldığı gibi Bildirmlerde de yapılabilir.
-    :::css
-     p, h3 {font-family: Arial;} &lt;/p&gt;
-&lt;div class="not"&gt;
-&lt;div class="notbaslik"&gt;
-Not
+denir. Gruplama Seçicilerde yapıldığı gibi Bildirmlerde de yapılabilir.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;h3&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;/div&gt;
 
-&lt;p&gt;CSS2 ile birlikte Evrensel Seçici(universal selector) Seçiciler arasına
+&lt;p&gt;&lt;strong&gt;Not&lt;/strong&gt;
+CSS2 ile birlikte Evrensel Seçici(universal selector) Seçiciler arasına
 katılmıştır, " * " ile gösterilir. * {color: red;} tüm elementleri
 kırmızı yapar. Bir anlamda gruplama yapar. Ayrıntılı bilgi için &lt;a href="http://www.w3.org/TR/REC-CSS2/selector.html#universal-selector"&gt;W3&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/div&gt;
-Burada düküman içindeki paragraflarda(p) ve başlıklarda(h3) fontların
+&lt;p&gt;Burada düküman içindeki paragraflarda(p) ve başlıklarda(h3) fontların
 Arial olacağını tek bildirim ile belirttik. Gruplama yapılan Seçicileri
 ayırmak için " , " virgül kullanılır. Sınırsız sayıda Seçici
 gruplanabilir. Gruplama tasarımcılara büyük kolaylıklar sağlar.
 Bildirim'lerimizi de gruplayabiliriz, bununla ilgili yukarıda örnekler
 mevcut. Bir veya daha fazla Seçiciye bir den fazla bildirim ekleye
-biliriz.    :::css
-     p, h3 { font-family: Arial;
-font-size:2; font-weight: bold; }  Seçiciler ikiye ayrılır.
+biliriz.  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;h3&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Seçiciler ikiye ayrılır.
 Sınıf Seçicisi ve Id Seçicisi. CSS ile işlenmemiş bir dökümanda
 başlangıçta bir plan yaparak hangi içeriğin Sınıf Seçicisi hangi
 Seçicicinin Id Seçicisi olacağını planlamalıyız.&lt;/p&gt;
-&lt;h4&gt;Sınıf Seçicisi(Class Selector)&lt;/h4&gt;
+&lt;h2&gt;Sınıf Seçicisi(Class Selector)&lt;/h2&gt;
 &lt;p&gt;Aynı HTML elementine farklı özellikler atamak için Sınıf Seçicisini
 kullanırız. Bir örnek verecek olursak; hazırlayacağımız dökümanda iki
 adet paragraf tanımlaması yapacağımızı planlıyoruz. Bunlardan biri sağa
-dayalı, diğeri ise ortalı olmasını istiyoruz    :::css&lt;/p&gt;
-&lt;p&gt;p.sagadaya {text-align: right} p.ortala {text-align: center}
-Bu Seçicileri sayfamızda uygulamak için;    :::html&lt;/p&gt;
-&lt;p&gt;Aynı HTML elementine farklı özellikler atamak için Sınıf Seçicisini
-kullanırız.&lt;/p&gt;
-&lt;p&gt;Yukarıdaki bilgiyi dikkatlice okumalısınız&lt;/p&gt;
+dayalı, diğeri ise ortalı olmasını istiyoruz  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.sagadaya&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.ortala&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;center&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bu Seçicileri sayfamızda uygulamak için;  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sagadaya&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Aynı HTML elementine farklı özellikler atamak için Sınıf Seçicisini kullanırız.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ortala&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Yukarıdaki bilgiyi dikkatlice okumalısınız&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Birde önemli bir tanımlama yapacağınızı düşünün, ancak
 sadece bir HTML elementine değilde istediğiniz sayıda HTML elementinde
-bunu kullanmak isterseniz;  :::css
-     .ortala {
-text-align: center }  Bu tanımlamayı yaptıktan sonra
-istedğimiz her HTML elementine bu sınıfı uygulayabiliriz.   :::css
-     &lt;span class="ortala"&gt; Burada birşeyler yazar &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Burada da başka bişeyler yazar&lt;/p&gt;
+bunu kullanmak isterseniz;&lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.ortala&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;center&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bu tanımlamayı yaptıktan sonra istedğimiz her HTML elementine bu sınıfı uygulayabiliriz.  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ortala&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; Burada birşeyler yazar &lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ortala&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Burada da başka bişeyler yazar&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;strong&gt;Çoklu sınıflar,&lt;/strong&gt; birden fazla sınıfı bir HTML
-elementine uygulamak için kullanılır.   :::css&lt;/p&gt;
-&lt;p&gt;Ülkemizde meydana gelen trafik kazalarının yaklaşık % 90'ı insanların
-hataları sonucu eydana gelmektedir.&lt;/p&gt;
+elementine uygulamak için kullanılır. &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;onemli uyari&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Ülkemizde meydana gelen trafik kazalarının yaklaşık % 90&amp;#39;ı insanların hataları sonucu eydana gelmektedir.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Yukarıdaki örnekte görüldüğü gibi bir &lt;strong&gt;uyari&lt;/strong&gt; Sınıfımız
 birde &lt;strong&gt;onemli&lt;/strong&gt; Sınıfımız mevcut. Bazı metinlerin &lt;strong&gt;önemli uyarı&lt;/strong&gt;
 olacağı düşüncesi ile böyle bir atama yapılabilir. Bunun için
-kullanıcığımız kod;     :::css
-     .onemli { font-weight:
-bold; } .uyari { font-style: italic; } .onemli.uyari { background:
-silver; }  Önemli metinler için kalın, uyari için italiktik
+kullanıcığımız kod;   &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.onemli&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.uyari&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;italic&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.onemli.uyari&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;silver&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Önemli metinler için kalın, uyari için italiktik
 atmalar yapıyoruz. Birde her ikisine birden de atama yapabiliyoruz.
 Dikkat ederseniz &lt;strong&gt;class="onemli uyari"&lt;/strong&gt; olarak atama yaparken CSS
 Seçicisinde &lt;strong&gt;.onemli.uyari&lt;/strong&gt; şeklinde yazıyoruz.&lt;/p&gt;
-&lt;h4&gt;Id Seçecileri&lt;/h4&gt;
+&lt;h2&gt;Id Seçecileri&lt;/h2&gt;
 &lt;p&gt;Id Seçicisi Sınıf Seçicisinden farklıdır. Sınıf Seçicisi sayfada birden
 fazla elemente atanırken Id Seçicisi sadece bir tane elemente atanır.
-Seçicisi adının başında # işareti olan Seçiciler Id Seçicisidir.
-    :::css
-     ... #mavi { background:blue; } #kirmizi {
-background:red; }   :::html&lt;/p&gt;
-&lt;p&gt;Bu yazının arkafon rengi mavi&lt;/p&gt;
-&lt;p&gt;Bu yazının arkafon rengi kırmızı&lt;/p&gt;
-&lt;h4&gt;Sınıf mı? Id mi?&lt;/h4&gt;
+Seçicisi adının başında # işareti olan Seçiciler Id Seçicisidir.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#mavi&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#kirmizi&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;HTML; &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;mavi&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Bu yazının arkafon rengi mavi&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kirmizi&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Bu yazının arkafon rengi kırmızı&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Sınıf mı? Id mi?&lt;/h2&gt;
 &lt;p&gt;Yukarıda Id Seçicisi için her nekadar da bir sayfada sadece bir defa
 kullanılır desekte tasarımcının sayfada bir çok yerde kullanmasına
 tarayıcılar ses çıkarmaz, yani hata mesajı vermez. Ancak Bu elementleri
@@ -7715,14 +7802,23 @@ hata alacağızdır. Bu nedenle her nekadar tarayıcılar izin versede Id
 Seçicisini bir kez kullanmalıyız. Birden fazla kullanacağımız elementler
 için Sınıf Seçicisini kullanmalıyız. Bu kodumuzu daha kullanışlı ve
 temiz yapacaktır. Sınıf ve Id Seçicileri küçük-büyük harfe karşı
-duyarlıdır;     :::css
-     p.onemliBilgi { font-weight:
-bold; }  ve kullanımıda;    :::html&lt;/p&gt;
-&lt;p&gt;Uygulama olmaz .&lt;/p&gt;
+duyarlıdır;   &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nc"&gt;.onemliBilgi&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ve kullanımıda;   &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;onemlibilgi&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Uygulama olmaz .&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Yukarıdaki kod uygulanmayacaktır çünkü " &lt;strong&gt;B&lt;/strong&gt; " bir yerde
 büyük birde küçük kullanılmıştır. Bazı eski tarayıcılar bu kuralın
-dışında kalabilir.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="CSS"></category><category term="css yapı"></category><category term="etiket"></category><category term="Evrensel-Seçiciler"></category><category term="Gruplama"></category><category term="Id-Seçicisi"></category><category term="özellik"></category><category term="Sınıf Seçicisi"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>CSS ile Kutu modeli, sorunları ve çözümleri</title><link href="http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/" rel="alternate"></link><updated>2006-04-26T00:37:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-04-26:kutu-modeli-sorunlari-ve-cozumleri/</id><summary type="html">&lt;p&gt;CSS'e geçişte en çok düşündüren konu niye CSS geçelim ve CSS'in
+dışında kalabilir.&lt;/p&gt;</summary><category term="CSS"></category><category term="css yapı"></category><category term="etiket"></category><category term="Evrensel-Seçiciler"></category><category term="Gruplama"></category><category term="Id-Seçicisi"></category><category term="özellik"></category><category term="Sınıf Seçicisi"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>CSS ile Kutu modeli, sorunları ve çözümleri</title><link href="http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/" rel="alternate"></link><updated>2006-04-26T00:37:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-04-26:kutu-modeli-sorunlari-ve-cozumleri/</id><summary type="html">&lt;p&gt;CSS'e geçişte en çok düşündüren konu niye CSS geçelim ve CSS'in
 avantajları nelerdir? CSS'in avantajı bize web sayfasındaki elemanlara
 daha fazla müdahele etme imkanı vermesidir. Burada bunun en güzel
 örneklerinden birini göreceğiz. CSS tüm HTML elementlerini bir
