@@ -92,8 +92,7 @@ yöntemlerini anlatmaya çalışacağız. (X)HTML ve CSS kod azaltma bizlere
 bir çok avantaj sağlar. Az kodun anlamı hzılı erişimdir. Ayrıca az kod
 sitemizin bulundurulduğu sunuculara az yük ve az bantgenişliği kullanımı
 demektir. Bu bizleri ve sistem yöneticilerini sevindiren bir haberdir.
-Bu makale aynı zamanda CSS kodlama tekniklerini öğretecektir.
-<!--more--></p>
+Bu makale aynı zamanda CSS kodlama tekniklerini öğretecektir.</p>
 <h2>1- Torun Seçicileri kullanmak</h2>
 <p>CSS kodlamada bize çok büyük yardımı olan Torun Seçicileri bir örnek
 vererek göstereceğiz. Bir web sayfasını bir bölümünü kodlmaka için iki
@@ -101,43 +100,49 @@ yöntem göstereceğiz. Torun Seçicilerin kodlamadaki önemini daha iyi
 kavrayacağız.</p>
 <p>Genelde siteler üst kısım, sol kısım, içerik kısmı, sağ kısım ve alt
 kısım gibi belli genel parçalara ayrılır. Bu örneğimizde "solkolon" adı
-verilen bir katmanımızın(<div>) kodlamasını göreceğiz. Tüm sol bölümü
+verilen bir katmanımızın(&lt;div>) kodlamasını göreceğiz. Tüm sol bölümü
 içine alan bir kapsayıcı katmanımız ve içerik bölümü mevcuttur. İlk
 yöntemimiz bir çok sitede de kullanılan her elemente bir sınıf atması
 yaparak kodlama yöntemidir.</p>
-<p><strong>a - Sınıf Kullanımı</strong></p>
-<div class="codehilite"><pre>
+<h3>a - Sınıf Kullanımı</h3>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;solkolon&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;solkolonbaslik&quot;</span><span class="nt">&gt;</span>Site Hakkında <span class="nt">&lt;/h3&gt;</span>
+ <span class="nt">&lt;p&gt;</span>Site hakkındaki yazılar <span class="nt">&lt;/p&gt;</span>
+ <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;solkolonbaslik&quot;</span><span class="nt">&gt;</span>Öneriiler<span class="nt">&lt;/h3&gt;</span>
+ <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;solkolonlink&quot;</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;link&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;arkadaslar.html&quot;</span><span class="nt">&gt;</span>Arkadaşlar<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;link&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;siteler.html&quot;</span><span class="nt">&gt;</span>Siteler<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+ <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
-
-<div id="solkolon">
-## Site Hakkında
-
-Site hakkındaki yazılar
-
-## Öneriiler
-
--   [Arkadaşlar][]
--   [Siteler][]
-
-</div>
 
 <p>Yukarıdaki kodlama bir çok web sitesinde kullanıla gelmiş bir yöntemdir.
 CSS'in gücünü ilk olarak keşfeden kodlamacılar her elemente bir sınıf
 tanımlaması yaparak kullanmayı tercih ede geldiler.</p>
 <p>Yukarıdaki kodlamada iki <strong>h3</strong> elementine
-"<span class="alternatifard">solkolonbaslik</span>" sınıfını tanımladık.
+"&lt;span class="alternatifard">solkolonbaslik&lt;/span>" sınıfını tanımladık.
 Bu sınıfa verilen özellikler sadece bu iki <strong>h3</strong> elementine
 uygulanacaktır. Aynı işlem <strong>ul</strong> ve <strong>li</strong> elementleri içinde
 geçerlidir.</p>
 <p>Başlıklara serif fontu, turuncu rengi ve kenarlık ekleyelim ve
 listelerimizinde yanındaki işaretleri kaldıralım:</p>
-<div class="codehilite"><pre> <span class="nc">.solkolonbaslik</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nc">.solkolonbaslik</span> <span class="p">{</span> 
+    <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="m">#c63</span><span class="p">;</span> 
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nc">.solkolonlink</span> <span class="p">{</span>
+    <span class="k">list-style-type</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nc">.link</span> <span class="p">{</span> 
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>serif; color: #c63; border-bottom: 1px solid #ccc; } .solkolonlink {
-list-style-type: none; } .link { font-weight: bold; } </p>
 <p>Tanımladığımız özellikleri elementlere atadık, buradaki elementlerin
 kendine has tanımları vardır. Aynı yöntemi kullanrak tüm sayfamızı
 kodlayabilriz.</p>
@@ -145,27 +150,23 @@ kodlayabilriz.</p>
 bir sınıf tanımlaması gerekecektir. Bu belli bir zamandan sonra çok
 kullanışsız ve zor bir yöntem halini alacaktır. şžimdi ikinci yönteme
 göz atalım.</p>
-<p><strong>b- Doğal Seçiciler</strong></p>
-<div class="codehilite"><pre>
+<h3>b- Doğal Seçiciler</h3>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;solkolon&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;h3&gt;</span>Site Hakkında <span class="nt">&lt;/h3&gt;</span>
+ <span class="nt">&lt;p&gt;</span>Bu site benim hakkımdadır.<span class="nt">&lt;/p&gt;</span>
+ <span class="nt">&lt;h3&gt;</span>Fotoğraflarım<span class="nt">&lt;/h3&gt;</span>
+ <span class="nt">&lt;ul&gt;</span>
+ <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;eskifoto.html&quot;</span><span class="nt">&gt;</span>Eski<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+ <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;yenifoto.html&quot;</span><span class="nt">&gt;</span>Yeni<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+ <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<div id="solkolon">
-## Site Hakkında
-
-Bu site benim hakkımdadır.
-
-## Fotoğraflarım
-
--   [Eski][]
--   [Yeni][]
-
-</div>
-
 <p>Görüldüğü gibi tüm sınıf atamaları kaldırılmıştır. Peki tüm sınıfları
-kaldırdıysak elementlere nasıl atama yapacağız? Elemetnleri tanımlarken</p>
-<h1>solkolon tanımımız içine giriyoruz. Her elemente stil atamak için</h1>
-<p>solkolon id'li elementini referans alıyoruz. Örneğin solkolon içindeki
+kaldırdıysak elementlere nasıl atama yapacağız? Elemetnleri tanımlarken
+#solkolon tanımımız içine giriyoruz. Her elemente stil atamak için
+solkolon id'li elementini referans alıyoruz. Örneğin solkolon içindeki
 h3 elementinlerine (#solkolon h3) şeklinde özel tanımlamalar
 yapabiliyoruz. Bu yöntem ile kullandığımız kod sayısı azalacak ve
 kodlarımız daha anlaşılır hala gelecektir. Bu yöntem ile bir çok
@@ -177,12 +178,20 @@ atamalar yapmamıza izin verir. Mesela <strong>#icerikAlani</strong> kısmında 
 <strong>h3</strong> elementini kırmızı <strong>#altKisim</strong> bölümündeki h3 elementini mor
 yapabiliriz. Ayrıca tüm bölümlerdeki <strong>h3</strong>'lerede genel bir tanımlamada
 yapabilriiz.</p>
-<div class="codehilite"><pre> <span class="nt">h3</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span> <span class="o">/*</span> <span class="err">tüm</span> <span class="n">h3</span>
+<div class="codehilite"><pre><span class="nt">h3</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span> <span class="c">/* tüm h3 ler için atama*/</span>
+<span class="p">}</span>
+
+<span class="nf">#icerikAlani</span> <span class="nt">h3</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#menuAlani</span> <span class="nt">h3</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">orange</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>ler için atama*/ } #icerikAlani h3 { color: red; } #menuAlani h3 {
-color: orange; } </p>
 <p>Genel h3 elemetine serif font ailesi tanımlanmı, icerik alanındaki
 <strong>h3</strong> kırmızı, menu alanındaki <strong>h3</strong> kavuniçi olacaktır. Böylelikle
 bir çok kod ve sınıf tanımından kurutulmuş olduk.</p>
@@ -192,24 +201,22 @@ büyük çaplı sitelerde bu metod bize çok büyük kazanımlar sağlayacaktır
 <p>Fazladan sınıf kullanmak yerine Torun Seçicileri kullanarak kod azaltma
 yöntemi bize çok büyük avantajlar sağlayacaktır.</p>
 <p>Örneğin SolKisim'daki linklerin rengini kırmızı yapmakl istesek.</p>
-<div class="codehilite"><pre>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;solkolon&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;h3&gt;</span>Site Hakkında <span class="nt">&lt;/h3&gt;</span>
+ <span class="nt">&lt;p&gt;</span>Bu site benim hakkımdadır.<span class="nt">&lt;/p&gt;</span>
+ <span class="nt">&lt;h3&gt;</span>Fotoğraflarım<span class="nt">&lt;/h3&gt;</span>
+ <span class="nt">&lt;ul&gt;</span>
+     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;eskifoto.html&quot;</span> <span class="na">class=</span><span class="s">&quot;kirmizilink&quot;</span> <span class="nt">&gt;</span>Eski<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;yenifoto.html&quot;</span> <span class="na">class=</span><span class="s">&quot;kirmizilink&quot;</span> <span class="nt">&gt;</span>Yeni<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+ <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<div id="solkolon">
-## Site Hakkında
-
-Bu site benim hakkımdadır.
-
-## Fotoğraflarım
-
--   [Eski][]
--   [Yeni][]
-
-</div>
-
 <p>ve bu sınıf için css tanımı yapacak olursak.</p>
-<div class="codehilite"><pre> <span class="nt">a</span><span class="nd">:link</span><span class="nc">.kirmizilink</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="nd">:link</span><span class="nc">.kirmizilink</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
@@ -219,7 +226,9 @@ yapmak istedik. Rengi kolayca siyaha çevirebiliriz ancak verdiğimiz isim
 ile içerik çakışacaktır. Siyah renge kirmizi isim!</p>
 <p>Bunun yerine doğal seçicileri kullanrak bu işlemi yapsa idik durum
 farklı olacaktır.</p>
-<div class="codehilite"><pre> <span class="nf">#SolKisim</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nf">#SolKisim</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
@@ -227,34 +236,32 @@ farklı olacaktır.</p>
 sadece tanımı değiştirmemiz bize yetecektir. Bu metod bize kolay, temiz
 ve kullanışlı bir kodlama olanağı sağlamkatadır. Bunu uygulamarımızda
 kullandıkça daha iyi kavrayacağız.</p>
-<h2>2- Gereksiz <div> Kullanımından vazgeçilmesi</h2>
+<h2>2- Gereksiz &lt;div> Kullanımından vazgeçilmesi</h2>
 <p>Sayfa kodlarken içeriklerimizi düzenlemek için bir çok <div> elementi
 kullanırız.</p>
-<div class="codehilite"><pre>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;ul&gt;</span>
+ <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foto.html&quot;</span><span class="nt">&gt;</span>Fotoğraflar<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+ <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;ders.html&quot;</span><span class="nt">&gt;</span>Dersler<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;bize_ulasin.html&quot;</span><span class="nt">&gt;</span>Bize Ulaşın <span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+ <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
-
-<div id="menu">
--   [Fotoğraflar][]
--   [Dersler][]
--   [Bize Ulaşın][]
-
-</div>
 
 <p>Yukarıdaki kodlmada da görüldüğü gibi bir liste ve bunu çevreleyen bir
 menu id'si verilmiş bir katman kullandık. Bu kullanımı tüm sitemizde
 kullandığımız düşünürsek bir çok kavrayıcı fazla katmanımız olacaktır.
 Eğer bu kod daki gibi katman bir blok level bir elementi kapsıyorsa
 katman kullanımına gerek yoktur. Bu katmanı kaldıra biliriz.</p>
-<div class="codehilite"><pre>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foto.html&quot;</span><span class="nt">&gt;</span>Fotoğraflar<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+ <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;ders.html&quot;</span><span class="nt">&gt;</span>Dersler<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;bize_ulasin.html&quot;</span><span class="nt">&gt;</span>Bize Ulaşın <span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+ <span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<ul>
-<li><a href="../static/foto.html">Fotoğraflar</a></li>
-<li><a href="../static/ders.html">Dersler</a></li>
-<li><a href="../static/bize_ulasin.html">Bize Ulaşın</a></li>
-</ul>
 <p>Yukardaki gibi bir kodlama ile kavrayıcı katman kullanımı ile aynı
 işlemleri yapabiliriz buradaki <strong>ul</strong> elementi bir blok-level elementi
 olduğu için kavrayıcı katmana uyguladığımız bir çok özelliği(padding,
@@ -262,46 +269,46 @@ margin, vd.) bu elemente de uygulayabilriz. Bu sayede bir çok kavrayıcı
 katmandan kurtuluruz.</p>
 <p>Burada şuna dikkat edilmelidir ki eğer bu kavrayıcı katman yerine
 kullanılan elementin içinde başka bir element yok ise bu yöntem
-uygulanır. İçinde <p>, <blockquote> veya <form> gibi elementler
+uygulanır. İçinde &lt;p>, &lt;blockquote> veya &lt;form> gibi elementler
 varsa bunları tanımlama yaptığımız kavrayıcı <strong>ul</strong> dışına çıkarmalıyız.</p>
 <h2>3- CSS'in kalıtsallık özelliğinden yararlanmak</h2>
 <p>CSS elementleri kalıtsal olan ve kalıtsal olmayan elementler diye
 ayırır. Biz kalıtsal elemnleri kullanarak bir çok fazla koddan
 kurtulabiliriz.</p>
-<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">p</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span> <span class="p">}</span>
+<span class="nt">td</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span> <span class="p">}</span> 
+<span class="nt">li</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span> <span class="p">}</span> 
+<span class="nt">dt</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span> <span class="p">}</span> 
+<span class="nt">dd</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>td { font-family:Verdana, Arial, sans-serif } li { font-family:Verdana,
-Arial, sans-serif } dt { font-family:Verdana, Arial, sans-serif } dd {
-font-family:Verdana, Arial, sans-serif } </p>
 <p>Yukarıdaki şekilde bir çok element içinde font tanımı yapmak yerine
 <strong>body</strong> elementi içinde bir tek font tanımı ile bu kargaşaya son
 verebilriz. Bu site standartlarına uymayı kolaylaştıracak ve düzenleme
 kolaylığını sağlayacaktır.</p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>sans-serif } </p>
 <h2>4- Uygun Benzer Stilleri Gruplamak</h2>
 <p>Bir çok özelliği aynı olan stil tanımlarında farklılıklar ayrılarak aynı
 bölümler gruplanarak kod azaltılabilir.</p>
-<div class="codehilite"><pre> <span class="nt">h1</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span><span class="m">120</span><span class="o">%</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">h1</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span><span class="m">120</span><span class="o">%</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span><span class="k">sans-serif</span> <span class="p">}</span> 
+<span class="nt">h2</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span><span class="m">110</span><span class="o">%</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span><span class="k">sans-serif</span> <span class="p">}</span> 
+<span class="nt">h3</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span><span class="k">sans-serif</span> <span class="p">}</span> 
+<span class="nt">h4</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span><span class="k">sans-serif</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>font-family:Verdana,sans-serif } h2 { font-size:110%; margin-bottom:0;
-font-family:Verdana,sans-serif } h3 { font-size:100%; margin-bottom:0;
-font-family:Verdana,sans-serif } h4 { font-size:100%; margin-bottom:0;
-font-family:Verdana,sans-serif } </p>
 <p>Bu kullanım yerine</p>
-<div class="codehilite"><pre> <span class="nt">h1</span><span class="o">,</span><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span><span class="o">,</span><span class="nt">h4</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">h1</span><span class="o">,</span><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span><span class="o">,</span><span class="nt">h4</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Verdana</span><span class="o">,</span><span class="k">sans-serif</span> <span class="p">}</span> 
+<span class="nt">h1</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span><span class="m">120</span><span class="o">%</span> <span class="p">}</span> 
+<span class="nt">h2</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span><span class="m">110</span><span class="o">%</span> <span class="p">}</span> 
+<span class="nt">h3</span><span class="o">,</span><span class="nt">h4</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span><span class="m">100</span><span class="o">%</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>font-family:Verdana,sans-serif } h1 { font-size:120% } h2 {
-font-size:110% } h3,h4 { font-size:100% } </p>
 <h2>5- CSS Kısaltmalarını kullanmak</h2>
 <p>CSS bazı elementlerin tanımlasını yaparken kısaltmaları kullanmamıza
 izin verir, yani aynı etkiyi daha az kodla yapmamıza olanak sağlar.
@@ -313,7 +320,6 @@ ayrılması ve kullanılan sayfa CSS'inde hangi parçalar gerekli ise
 onların import edilmesi önerilir. Bu sayade kodun bir kısmında
 yaptığımız değişiklik için tüm css kodu incelenip değiştirilmesi
 gerekmez ve kod yönetimi kolaylaşır.</p>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

@@ -97,10 +97,8 @@ sıralanmıştır.</p>
 <li><strong>clip</strong> - kırpma</li>
 <li><strong>visibility</strong> - görünürlük</li>
 </ul>
-<!--more-->
-
 <h2>Overflow</h2>
-<p><strong>Yapısı:</strong> overflow: <deger><br />
+<p class="cssozelliktanimi"><strong>Yapısı:</strong> overflow: &lt;deger><br />
 <strong>Aldığı Değerler:</strong> visible | hidden | scroll | auto | inherit<br />
 <strong>Başlnagıç değeri:</strong> visible<br />
 <strong>Uygulanabilen elementler:</strong> blok-level elementler ve replacement
@@ -122,61 +120,85 @@ tek tek incelersek.</p>
 <li>auto - kutu sınırlarını aşması durumunda scroll ile aynı etkiyi
     yapar.</li>
 </ul>
-<div class="tarayiciuyum">
-**Browser Uyumu:**
-
-Internet Explorer 6+   
-Mozilla 1.7+   
-Opera 7.5+  
-Safari 1.2   
-W3C's CSS Level 2+   
-CSS Profile 2.0
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu </strong> <br />
+Firefox <br />
+Chrome <br />
+Safari<br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari<br />
+Opera Mobile <br />
+Android Browser</p>
 <p><strong>overflow:visible</strong> Overflow'ın başlangıç değeri visible'dır. Bu değer
 taşma olan kısımların gösterilmesini sağlar.</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#solMenu</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nf">#solMenu</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">120px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#BBB</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">visible</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>left: 0; width: 200px; height: 120px; background: #BBB; overflow:
-visible; } </p>
-<p><img alt="overflow" src="../static/images/overflow.gif" /><br />
-Kodun yeni nesil tarayıcılardaki görünümü</p>
+<p><img alt="overflow" src="../static/images/overflow.gif" />  <br />
+</p>
+<p>Kodun yeni nesil tarayıcılardaki görünümü</p>
 <p><strong>overflow</strong> özelliğinin değeri <strong>visible</strong> olduğu için içerik taşmasına
 rağmen taşan bölümler gösterilmiştir.</p>
 <p><strong>overflow:scroll</strong> Eğer içeriğin taşmasını engellemek istiyorsak ama
 yinede taşan kısımlara ulaşılması için kaydırma çubuğu çıkması için
 scroll özelliği ekleriz.</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#solMenu</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nf">#solMenu</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">120px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#BBB</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">scroll</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>left: 0; width: 200px; height: 120px; background: #BBB; overflow:
-scroll; } </p>
-<p><img alt="overflow scroll" src="../static/images/overflow_scroll.gif" /><br />
-overflow:scrool olma durumu</p>
+<p><img alt="overflow scroll" src="../static/images/overflow_scroll.gif" />  <br />
+</p>
+<p>overflow:scrool olma durumu</p>
 <p><strong>overflow:hidden</strong> Eğer overflow:hidden değeri atarsak. Sınırladığımız
 kutunun dışına taşan kısımlar gösterilmeyecektir.</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#solMenu</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nf">#solMenu</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">120px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#BBB</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>left: 0; width: 200px; height: 120px; background: #BBB; overflow:
-hidden; } </p>
 <p>kodu bu şekilde değiştirdiğimizde görüntü aşağıdaki gibi olacaktır.</p>
 <p><img alt="overflow:hidden" src="../static/images/overflow_hidden.gif" /></p>
 <p><strong>overflow:auto</strong> Son olarakta otomatik değeri vardır. Bu değeri
 atayınca kutu içeriğine göre otomatik işlem yapacaktır. Eğer taşma
 olmuyorsa kaydırma çubuğu çıkmayacaktır. Ama eğer içerik taşıyorsa
 kaydırma çubuğu çıkacaktır.</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="nf">#solMenu</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="nf">#solMenu</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">120px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#BBB</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>left: 0; width: 200px; height: 120px; background: #BBB; overflow:
-hidden; } </p>
 <p><img alt="overflow:auto" src="../static/images/overflow_auto.gif" /></p>
 <p>Dikkat ederseniz scroll'dan farklı olarak sadece dikey kaydırma çubuğu
 çıkmıştır. Yatayda bir taşma olmadığı için yatay kaydırma çubuğu
@@ -200,49 +222,39 @@ yapar. Firefox'unda 1.1 versiyonundan itibaren bu özellikleri
 desteklemesi kullanılabilirliğini arttırmıştır. Tabi biraz daha
 beklemekte yarar var.</p>
 <p>Örnekler için <a href="http://www.brunildo.org/test/Overflowxy2.html">tıklayınız.</a> (brunildo.org'dan)</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:**
-
-Internet Explorer 5x+   
-Mozilla 1.8+   
-Opera 7.5+  
-Safari 3   
-W3C's CSS Level 3+   
-CSS Profile 3.0
-
-</div>
-
-<h4>clip</h4>
-<p><strong>Yapısı :</strong> clip: rect(&lt;üst&gt;,<sağ>,<alt>,<sol>)<br />
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu </strong> <br />
+Firefox <br />
+Chrome <br />
+Safari<br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari<br />
+Opera Mobile <br />
+Android Browser</p>
+<h2>clip</h2>
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> clip: rect(&lt;üst>,&lt;sağ>,&lt;alt>,&lt;sol>)<br />
 <strong>Aldığı Değerler :</strong> rect(top, right, bottom, left) | auto | inherit<br />
 <strong>Başlangıç değeri:</strong> auto<br />
 <strong>Uygulanabilen elementler:</strong> mutlak konumlandır uygulanmış elementler
 (CSS2'den itibaren blok-level elementler ve replacement elementlere )<br />
 <strong>Kalıtsallık:</strong> Yok</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:**
-
-Internet Explorer 4+   
-Mozilla 1+   
-Opera 3+  
-Safari 1   
-W3C's CSS Level 2+   
-CSS Profile 2.0
-
-</div>
-
-<div class="not">
-<div class="notbaslik">
-Not
-
-</div>
-
-<p>W3C standartları belirlerken konumlandırmalar arasında virgül konmasını
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu </strong> <br />
+Firefox <br />
+Chrome <br />
+Safari<br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari<br />
+Opera Mobile <br />
+Android Browser</p>
+<p><strong>Not</strong>
+W3C standartları belirlerken konumlandırmalar arasında virgül konmasını
 öneriyor. Ancak garip bir şekilde IE virgül kullanılan örnekleri normal
 modda farklı yorumlamaktadır. Acayip modda ise doğru yorumlamaktadır. Ne
 yapalım bizde tüm tarayıcılara uygun olması için virgül kullanamayacağız</p>
-<p></div>
-clip, elementin içeriğinin belli bir bölümünün gösterilmesi sağlar.
+<p>clip, elementin içeriğinin belli bir bölümünün gösterilmesi sağlar.
 Başlangıç değerinin auto atanmış olması herhangi bir kırpmanın
 olmayacağını gösterir.</p>
 <p>Resim düzenleme araçlarında yaptığımız kırpma işini CSS yardımıyla
@@ -254,56 +266,62 @@ atandığında element kutusunun dışına doğru kırpma yapacaktır.</p>
 <p><img alt="kırpma" src="../static/images/kirpma_ornek.jpg" /></p>
 <p>Bir örnek yapalım.</p>
 <p>CSS kodu:</p>
-<div class="codehilite"><pre> <span class="nc">.kirpma</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> <span class="k">clip</span><span class="o">:</span><span class="n">rect</span><span class="p">(</span><span class="m">50px</span>
+<div class="codehilite"><pre><span class="nc">.kirpma</span><span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+    <span class="k">clip</span><span class="o">:</span><span class="n">rect</span><span class="p">(</span><span class="m">50px</span> <span class="m">130px</span> <span class="m">153px</span> <span class="m">40px</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>130px 153px 40px); } </p>
 <p>HTML kodu:</p>
-<div class="codehilite"><pre><span class="nt">&lt;ol&gt;</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kirpma&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;img</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kirpma&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;recepemice.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;ahmet emice&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>src="recepemice.jpg" alt="ahmet emice" /&gt; </div> </p>
-<p><img alt="Kırpma" src="../static/images/kirpma_ornek.jpg" /><br />
-örneğin görüntüsü</p>
+<p><img alt="Kırpma" src="../static/images/kirpma_ornek.jpg" />  <br />
+</p>
+<p>örneğin görüntüsü</p>
 <p>Örneği görmek için <a href="../static/dokumanlar/clip_test.html">tıklayınız.</a></p>
 <h2>visibility</h2>
-<p><strong>Yapısı :</strong> visibility: <deger><br />
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> visibility: <deger><br />
 <strong>Aldığı Değerler :</strong> visible | hidden | collapse | inherit<br />
 <strong>Başlnagıç değeri:</strong> visible<br />
 <strong>Uygulanabilen elementler:</strong> tüm elementlere<br />
 <strong>Kalıtsallık:</strong> Yok</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:**
-
-Internet Explorer 4+   
-Mozilla 1+   
-Opera 3.6+  
-W3C's CSS Level 2+   
-CSS Profile 2.0
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu </strong> <br />
+Firefox <br />
+Chrome <br />
+Safari<br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari<br />
+Opera Mobile <br />
+Android Browser</p>
 <p>Görünürlük(visibility) özelliği nesnelerin görünümünü belirler. Değeri
 visible ise element görünür. Eğer değeri hidden ise element görünmezdir.
 Eğer bir elementin görünürlük değeri hidden olarak atanmış ise element
 sayfa yapısındaki yeri korur ancak gözle görülmez.</p>
-<div class="codehilite"><pre><span class="nt">&lt;ol&gt;</span> <span class="nt">&lt;html&gt;</span> <span class="nt">&lt;head&gt;</span> <span class="nt">&lt;title&gt;</span>visibility
+<div class="codehilite"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>visibility Örneği<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+  <span class="o">&lt;</span><span class="nt">li</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;alternatifard&quot;</span><span class="o">&gt;</span><span class="nt">body</span> <span class="p">{</span><span class="k">font-family</span><span class="o">:</span> <span class="k">sans-serif</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">14px</span><span class="p">}</span><span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;alternatifard&quot;</span><span class="nt">&gt;&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">&quot;visibility: visible&quot;</span><span class="nt">&gt;</span>Görünür Başlık<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">&quot;visibility: hidden; background-color:#f00; border:1px solid #000; margin:20px 0; padding-top:10px;&quot;</span><span class="nt">&gt;</span>Görünmez Başlık<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">&quot;visibility: visible&quot;</span><span class="nt">&gt;</span>Görünür Başlık<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;font-size: large&quot;</span><span class="nt">&gt;</span>Görünür metin parçası<span class="nt">&lt;b</span> <span class="na">style=</span><span class="s">&quot;visibility: hidden&quot;</span><span class="nt">&gt;</span>görünmez metin parçası<span class="nt">&lt;/b&gt;</span> ve burası görünüyor.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>Örneği</title> <meta http-equiv="Content-Type" content="text/html;
-charset=utf-8" /> <style> <li class="alternatifard">body
-{font-family: sans-serif; font-weight: bold; font-size: 14px}</li>
-</style> <li class="alternatifard"></head> <body> <h1
-style="visibility: visible">Görünür Başlık</h1> &lt;h1
-style="visibility: hidden; background-color:#f00; border:1px solid</p>
-<h1>000; margin:20px 0; padding-top:10px;"&gt;Görünmez Başlık</h1> &lt;h1</h1>
-<p>style="visibility: visible"&gt;Görünür Başlık</h1> <p style="font-size:
-large">Görünür metin parçası<b style="visibility: hidden">görünmez
-metin parçası</b> ve burası görünüyor.</p> </body> </html>
-</ol></p>
 <p><img alt="Visibility örneği" src="../static/images/visibility.gif" /></p>
 <p>Örneği görmek için <a href="../static/dokumanlar/visibility.html">tıklayınız.</a></p>
 <p>Örnekte gördüğümüz gibi element görünmediği halde sayfadaki yerini
@@ -315,19 +333,21 @@ atanmış ise ata element görünmez ancak çocuk element görünür. Bu ters
 bir durum olarak görünür ancak bu bize avantaj sağladığı durumlarda yok
 değildir. Örnek yaparsak</p>
 <p>CSS kodu</p>
-<div class="codehilite"><pre> <span class="nt">p</span><span class="nc">.gorunmez</span> <span class="p">{</span><span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;}</span> <span class="nt">p</span><span class="nc">.gorunmez</span>
+<div class="codehilite"><pre><span class="nt">p</span><span class="nc">.gorunmez</span> <span class="p">{</span>
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="nc">.gorunmez</span> <span class="nt">strong</span> <span class="p">{</span>
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">visible</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>strong {visibility: visible;} </p>
 <p>HTML kodu</p>
-<div class="codehilite"><pre> <span class="o">&lt;</span><span class="nt">p</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;gorunmez&quot;</span> <span class="o">&lt;</span><span class="nt">strong</span><span class="o">&gt;</span><span class="nt">Lorem</span> <span class="nt">ipsum</span>
+<div class="codehilite"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;gorunmez&quot;</span> <span class="err">&lt;</span><span class="na">strong</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/strong&gt;</span>, consectetuer adipiscing elit. Cras sem. In sagittis mauris eu turpis. Mauris ut lorem nec pede consequat suscipit. <span class="nt">&lt;/p&gt;</span>
 </pre></div>
 
 
-<p>dolor sit amet</strong>, consectetuer adipiscing elit. Cras sem. In
-sagittis mauris eu turpis. Mauris ut lorem nec pede consequat suscipit.
-</p> </p>
 <p><img alt="visibility hiyerarşi" src="../static/images/visibility2.gif" /></p>
 <p>Örneği görmek için <a href="../static/dokumanlar/visibility2.html">tıklayınız.</a></p>
 <p><strong>visiblity:collapse</strong> özelliği vardır. collapse tablo elementler için
@@ -341,7 +361,6 @@ display:none özelliği kullanılır.</p>
 <li><a href="http://www.ibloomstudios.com/articles/misunderstood_css_clip/">http://www.ibloomstudios.com/articles/misunderstood_css_clip/</a></li>
 <li><a href="http://www.w3schools.com/css/pr_pos_clip.asp">http://www.w3schools.com/css/pr_pos_clip.asp</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

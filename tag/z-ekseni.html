@@ -87,8 +87,6 @@ konumu belirlemek için kullanılır.</p>
 elementlere uygulanır. Bunun anlamı eğer bir elementi aynı z-ekseni
 üzerinde üste veya alt sıraya atmak istiyorsanız ilk olarak
 konumlandırma değeri atamalısınız.</p>
-<!--more-->
-
 <p>z-index değeri dokümanımızdaki elementlerin istiflenme sıralarını
 belirler. z-index elementleri z-ekseninde nerede duracağınız belirler,
 üstte veya altta. z-indeks değeri küçük olan elementler altta büyük olan
@@ -100,38 +98,57 @@ bindiğinde z-index değerine ihtiyaç duyarız. z-index mutlak, göreceli ve
 sabit konumlandırma atandığı veya elemente eksi değer verilerek konumu
 değiştirildiğinde uygulanır.</p>
 <p><img alt="" src="static/images/z-ekseni.gif" /></p>
-<p><strong>Yapısı:z-index: <deger\><br />Aldığı Değerler:<<a href="http://www.fatihhayrioglu.com/?p=95">sayısal değer</a> > | auto | inherit<br />
-Başlangıç değeri:auto<br />
-Uygulanabilen elementler:postion uygulanan elementlere<br />
-Kalıtsallık:Yok</strong></p>
-<div class="tarayiciuyum">
-**Browser Uyumu:**
-
-Internet Explorer 4+(kısmen, IE4 den sonra auto ve sayısal değerleri
-destekliyor)  
-Netscape 4+(kısmen), 6+(tüm)   
-Opera 5+   
-W3C’s CSS Level 2+   
-CSS Profile 2.0
-
-</div>
-
+<p><strong>Yapısı:z-index: &lt;deger>  <br />
+Aldığı Değerler:&lt;<a href="http://www.fatihhayrioglu.com/?p=95">sayısal değer</a> > | auto | inherit<br />
+Başlangıç değeri:auto <br />
+Uygulanabilen elementler:postion uygulanan elementlere <br />
+Kalıtsallık:Yok</strong><br class="cssozelliktanimi" />
+</p>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu </strong> <br />
+Firefox <br />
+Chrome <br />
+Safari<br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari<br />
+Opera Mobile <br />
+Android Browser</p>
 <p>Konumlandırma değeri relative, absolute ve fixed uygulanmış katmanların
 görünürlüğünü z-index ile ayarlayabiliriz.</p>
-<div class="codehilite"><pre> <span class="nt">div</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">div</span><span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nc">.bir</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="m">#FEB3BE</span><span class="p">;</span> 
+    <span class="k">border</span><span class="o">:</span><span class="m">2px</span> <span class="k">solid</span> <span class="m">#CC8B94</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nc">.iki</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="m">#E5ECF9</span><span class="p">;</span> 
+    <span class="k">border</span><span class="o">:</span><span class="m">2px</span> <span class="k">solid</span> <span class="m">#BCCCEB</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>height:150px; } div.bir { background: #FEB3BE; border:2px solid</p>
-<h1>CC8B94; top: 0; left: 0; } div.iki { background: #E5ECF9; border:2px</h1>
-<p>solid #BCCCEB; top: 10px; left: 10px; } </p>
 <p>Yukarıda örnekte görüldüğü gibi katmanlar üst üste sıralanmıştır.
 Birbirinden 10px üst ve 10px soldan mesafe bırakılmıştır. Üstte kalan
 katman alttakileri gizlemiştir. Tüm katmanların z-index değeri
 atanmamıştır bu nedenle başlangıç değeri olan z-index:auto değerini
 almışlardır.</p>
-<div class="codehilite"><pre><span class="nt">&lt;body&gt;</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;kapsul&#39;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span>
-<span class="na">class=</span><span class="s">&#39;bir&#39;</span><span class="nt">&gt;&lt;/div&gt;</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;iki&#39;</span><span class="nt">&gt;&lt;/div&gt;</span> <span class="nt">&lt;/div&gt;</span> <span class="nt">&lt;/body&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;body&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;kapsul&#39;</span><span class="nt">&gt;</span> 
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;bir&#39;</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;iki&#39;</span><span class="nt">&gt;&lt;/div&gt;</span> 
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </pre></div>
 
 
@@ -146,37 +163,49 @@ istediğimiz görüntüyü elde etmek için z-index değerleri vermeliyiz.</p>
 <p>Yukarıda yaptığımız örnekte alttaki kırmızı katmanı üste çıkarmak için
 z-index değerini 2 versek. Mavi katmanın z-index değerini 1 verirsek
 katman görünümünü tersine dönecektir.</p>
-<p>[sourcecode language="css" highlight="11,18"] div{ position:absolute;
-width:150px; height:150px; } div.bir { background: #FEB3BE; border:2px
-solid #CC8B94; top: 0; left: 0; z-index:2 } div.iki { background:</p>
-<h1>E5ECF9; border:2px solid #BCCCEB; top: 10px; left: 10px; z-index:1 }</h1>
-<div align="center">
-![][2]
+<div class="codehilite"><pre><span class="nt">div</span><span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span><span class="m">150px</span><span class="p">;</span> 
+<span class="p">}</span>
 
-</div>
+<span class="nt">div</span><span class="nc">.bir</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="m">#FEB3BE</span><span class="p">;</span> 
+    <span class="k">border</span><span class="o">:</span><span class="m">2px</span> <span class="k">solid</span> <span class="m">#CC8B94</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">z-index</span><span class="o">:</span><span class="m">2</span> 
+<span class="p">}</span>
 
+<span class="nt">div</span><span class="nc">.iki</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span> <span class="m">#E5ECF9</span><span class="p">;</span> 
+    <span class="k">border</span><span class="o">:</span><span class="m">2px</span> <span class="k">solid</span> <span class="m">#BCCCEB</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> 
+    <span class="k">z-index</span><span class="o">:</span><span class="m">1</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p><img alt="" src="static/images/zindeks_sayi.gif" /></p>
 <p>İçiçe girmiş katmanlarda z-index davranışları farklıdır. İçiçe geçmiş
 katmanlardaki z-index:auto değeri gibi davranır ve sayısal atamaları
 dikkate almaz.</p>
-<div class="codehilite"><pre><span class="nt">&lt;body&gt;</span> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;kapsul&#39;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;bir&#39;</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">&#39;iki&#39;</span><span class="nt">&gt;&lt;/div&gt;&lt;/div&gt;</span> <span class="nt">&lt;/div&gt;</span> <span class="nt">&lt;/body&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;body&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;kapsul&#39;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;bir&#39;</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">&#39;iki&#39;</span><span class="nt">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </pre></div>
 
 
 <p>z-index değeri yüksek olmasına rağmen bir sınıfını alan katmana altta
 kalacaktır. Çünkü iç içe geçmiş elementlerde z-index'e atanan sayısal
 değerler geçersizdir. Sıralama z-index:auto ya göre yapılır.</p>
-<div class="not">
-<div class="notbaslik">
-Not
-
-</div>
-
-<p>z-index eksi değerlerinde Firefox sorun çıkarıyor. Firefox 3'da sorun
+<p><strong>Not</strong>
+z-index eksi değerlerinde Firefox sorun çıkarıyor. Firefox 3'da sorun
 giderilmiş.</p>
-</div>
-
-<h4>Sonuç</h4>
+<h2>Sonuç</h2>
 <p>Sonuç olarak z-index özelliğinin çok kullanışlı ancak sorunları çok bir
 özellik olduğunu düşünüyorum. Birçok makalede istediğim manada detaylı
 bir z-index anlatımı bulamadığımı itiraf etmeliyim. Ancak kodlama
@@ -192,17 +221,13 @@ daha bilinçli kullanacağımız kesin:<br />
     <strong>fixed</strong> olan nesnelere uygulanır.</li>
 <li>Saydamlık değeri(opacity) 1'den küçük verilen nesnelerde z-index
     kullanımı daha kolay anlaşılır.</li>
-</ul>
-<p>Konumlandırma uygulanmış elementlerde z-index etkileri<br />
-</p>
-<ul>
+<li>Konumlandırma uygulanmış elementlerde z-index etkileri<br />
+</li>
 <li>Mevcut sıralama durumunda elementin sırasını belirler</li>
 <li>Elementin kendi kısmındaki durumun belirler</li>
-</ul>
-<p>Eğer z-index değeri atanmamış ise z-eksenindeki arkadan öne doğru
+<li>Eğer z-index değeri atanmamış ise z-eksenindeki arkadan öne doğru
 sıralama aşağıdaki gibidir:<br />
-</p>
-<ul>
+</li>
 <li>Normal akıştaki kutular koddaki sıraya göre sıralanır</li>
 <li>float uygulanmış kutular</li>
 <li>Konumlandırma uygulanmış elementlerde ise kodlamadaki sıraya göre <br />
@@ -228,7 +253,7 @@ listeledik bu linklerdeki çözümleri incelemenizi tavsiye ederiz. Karşıma
 <li>Cascading Style Sheets The Definitive Guide</li>
 <li>Wrox Beginning CSS 2nd.Edition</li>
 </ul>
-<h4>Sorunlar ve çözümler</h4>
+<h2>Sorunlar ve çözümler</h2>
 <ul>
 <li><a href="http://brandonaaron.net/docs/bgiframe/">http://brandonaaron.net/docs/bgiframe/</a></li>
 <li><a href="http://www.askapache.com/css/getting-flash-to-show-up-in-front-of-content.html">http://www.askapache.com/css/getting-flash-to-show-up-in-front-of-content.html</a></li>
@@ -237,8 +262,7 @@ listeledik bu linklerdeki çözümleri incelemenizi tavsiye ederiz. Karşıma
 <li><a href="http://www.hedgerwow.com/360/bugs/css-select-free.html">http://www.hedgerwow.com/360/bugs/css-select-free.html</a></li>
 <li><a href="http://blogs.msdn.com/ie/archive/2006/01/17/514076.aspx">http://blogs.msdn.com/ie/archive/2006/01/17/514076.aspx</a></li>
 <li><a href="http://randsco.com/index.php/2005/09/11/changing_z_index_on_hover">http://randsco.com/index.php/2005/09/11/changing_z_index_on_hover</a></li>
-</ul>
-</p><p><a href=".././z-index/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././z-index/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

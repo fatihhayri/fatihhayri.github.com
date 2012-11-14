@@ -83,8 +83,7 @@
 
 </footer><!-- /.post-info --><p>CSS konseptinin üç önemli konusu <a href="http://www.fatihhayrioglu.com/?p=13">kutu modelleme</a>,
 <strong>konumlandırma(positioning)</strong> ve floating konularıdır.</p>
-<p>Burada CSS ile konumlandırma hakkında bilgi vermeye çalışacağız.
-<!--more--></p>
+<p>Burada CSS ile konumlandırma hakkında bilgi vermeye çalışacağız.</p>
 <p>Konumlandırma ile alakalı olduğu için blok-level ve inline-level
 elementlerin tanımını tekrarlayacağız.</p>
 <p><strong>Blok-level elementler :</strong> Blok-level elementingörünüş formatı bir kutu
@@ -96,7 +95,7 @@ görünür, diğer bir inline elelementiiçerebilir. Yeni satır veya boşluk
 oluşturmazlar. Örnek: a, strong,span</p>
 <p>Ancak bizbu elementlerin başlangıç değerlerini <strong>display</strong> özelliği ile
 değiştirebilriz. Yani biz bir inline-level element olan bir
-linki(<a>....</a>) blok-level bir elemente dönüştürebiliriz. Aynı
+linki(&lt;a>....&lt;/a>) blok-level bir elemente dönüştürebiliriz. Aynı
 şekilde bilr blok-level elementi inline elemente dönüştürebilriz.</p>
 <p>CSS'deüç temel konumlandırma şekli vardır: <strong>normal
 akış</strong>(position:static ve position:relative), <strong>float</strong> ve <strong>mutlak
@@ -112,34 +111,35 @@ kenarlıkla hesaplanır. Bu nedenle dikey margin, padding ve kenarlık
 değerleri etkisizdir.</p>
 <p><img alt="Normal Akış şeması" src="static/images/normal_akis.gif" /></p>
 <h2>position</h2>
-<p><strong>Yapısı :</strong> position: <deger> <strong>Aldığı Değerler :</strong>static | relative
-| absolute | fixed | inherit <strong>Başlangıç değeri:</strong> static
-<strong>Uygulanabilen elementler:</strong> tüm elementler <strong>Kalıtsallık:</strong> Yok</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer 4+(kısmen: IE4 den sonra absolute,
-relative, static destekler), IE 7 den sonra (fixed destekliyor)   
-Netscape 4+(kısmen) NN6+ sonra tümünü destekler   
-Opera 5.0+  
-CSS Profile 2.0
-
-</div>
-
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> position: &lt;deger> <br />
+<strong>Aldığı Değerler :</strong>static | relative | absolute | fixed | inherit <br />
+<strong>Başlangıç değeri:</strong> static <br />
+<strong>Uygulanabilen elementler:</strong> tüm elementler <br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p><strong>Tarayıcı Uyumu </strong> <br />
+Firefox <br />
+Chrome <br />
+Safari<br />
+Opera <br />
+İnternet Explorer <br class="tarayiciuyum" />
+</p>
 <h2>top, right, bottom, left</h2>
-<p><strong>Yapısı :</strong> top, right, bottom, left : <deger> <strong>Aldığı Değerler
-:</strong>&lt;<a href="http://www.fatihhayrioglu.com/?p=95">uzunluk</a>&gt; | &lt;<a href="http://www.fatihhayrioglu.com/?p=95">yüzde</a>&gt; | auto | inherit <strong>Başlangıç
-değeri:</strong> auto <strong>Uygulanabilen elementler:</strong> postion uygulanan
-elementlere <strong>Kalıtsallık:</strong> Yok</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer 4+(kısmen: yüzde ve uzunluk
-değeri), IE 6+ tümü(inherit hariç)   
-Netscape 4+(kısmen: yüzde ve uzunluk değeri) NN6+ sonra tümünü
-destekler   
-Opera 5.0+  
-CSS Profile 2.0
-
-</div>
-
-<h2><strong>Göreceli Konumlandırma</strong>(position:relative)</h2>
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> top, right, bottom, left : &lt;deger> 
+<strong>Aldığı Değerler :</strong>&lt;<a href="http://www.fatihhayrioglu.com/?p=95">uzunluk</a>> | &lt;<a href="http://www.fatihhayrioglu.com/?p=95">yüzde</a>> | auto | inherit 
+<strong>Başlangıç değeri:</strong> auto 
+<strong>Uygulanabilen elementler:</strong> postion uygulanan elementlere 
+<strong>Kalıtsallık:</strong> Yok</p>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu </strong> <br />
+Firefox <br />
+Chrome <br />
+Safari<br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari<br />
+Opera Mobile <br />
+Android Browser</p>
+<h2>Göreceli Konumlandırma(position:relative)</h2>
 <p>Göreceli konumlandırma anlaşılması kolay bir konsepttir. Bir elemente
 göreceli bir değer verdiğiniz de o bulunduğu yeri dikkate alarak verilen
 değerleri uygulayacaktır. Bir elementin(göreceli) başlangıç noktasını
@@ -147,11 +147,14 @@ dikey ve yatay olarak değiştirebilriz. Eğer biz elementin üst(top)
 değerine 20px tanımlarsak element bulunduğu yerden 20px aşağıya
 kayacaktır, eğer elementin sol(left) değerini 20px olarak tanımlarsak
 elementimiz soldan 20px sağa doğru kayacaktır.</p>
-<div class="codehilite"><pre> <span class="nt">p</span><span class="nf">#FarkliParagraf</span><span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">p</span><span class="nf">#FarkliParagraf</span><span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>20px; top: 20px; } </p>
 <p><img alt="CSS Nisbi konumlandırma" src="static/images/position_relative.gif" /></p>
 <p>Görecelikonumlandırma kullanılarak yeri belirlenen bir elementin
 başlangıçtaki konumundaki boşluğu ve diğer elementlerle arasındaki
@@ -186,31 +189,41 @@ Bu üstte kalma altta kalma işinide <strong>z-index</strong> özelliğiile hall
 bilriz. <strong>z-index</strong> değeri büyük olan element üstte küçük olan element
 ise altta kalacaktır.</p>
 <h2>z-index</h2>
-<p><strong>Yapısı :</strong> z-index: <deger> <strong>Aldığı Değerler :</strong>&lt;<a href="http://www.fatihhayrioglu.com/?p=95">sayısal değer</a> &gt; | auto | inherit <strong>Başlangıç değeri:</strong> auto
-<strong>Uygulanabilen elementler:</strong> postion uygulanan elementlere
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> z-index: &lt;deger> <br />
+<strong>Aldığı Değerler :</strong>&lt;<a href="http://www.fatihhayrioglu.com/?p=95">sayısal değer</a> > | auto | inherit  <br />
+<strong>Başlangıç değeri:</strong> auto <br />
+<strong>Uygulanabilen elementler:</strong> postion uygulanan elementlere <br />
 <strong>Kalıtsallık:</strong> Yok</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer 4+(kısmen: IE4 den sonra auto ve
-sayısal değerleri destekliyor)  
-Netscape 4+(kısmen) NN6+ sonra tümünü destekler   
-Opera 5.0+  
-CSS Profile 2.0
-
-</div>
-
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu </strong> <br />
+Firefox <br />
+Chrome <br />
+Safari<br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari<br />
+Opera Mobile <br />
+Android Browser</p>
 <p>Örneğin geniş bir blok içindeki bir parafratakiyazıların sağ ve altta
 olmasını istiyorsak. Dıştaki içerik kutusunugöreceli konumlandırıp
 içindeki paragrafı mutlak konumlandırarak bu işhalledebilriz.</p>
-<div class="codehilite"><pre> <span class="nf">#adresler</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">700px</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nf">#adresler</span> <span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">700px</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#adresler</span> <span class="nc">.tel</span> <span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> 
+    <span class="k">right</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span> 
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="o">::</span><span class="nd">:html</span>
+    <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="s2">&quot;adresler&quot;</span><span class="o">&gt;</span><span class="nt">Tel</span><span class="o">:</span> <span class="nt">0845</span> <span class="nt">838</span> <span class="nt">6163</span><span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
 </pre></div>
 
-
-<p>position: relative; } #adresler .tel { position: absolute; right: 10px;
-bottom: 10px; text-align: right; }      :::html</p>
-<div id="adresler">
-Tel: 0845 838 6163
-
-</div>
 
 <p>Not:Bu kullanım gelişmiş tarayıcılar için geçerlidir. IE 5.5 veIE
 6(Windwos)'da bu sorun çıkarır. Sorunu engellemek için yükseklik ve
@@ -226,7 +239,7 @@ akıştaki element kutularına etkietmeyecektir. Eğer siz Mutlak
 Konumlandırdığınız elementi genişletmekisterseniz örneğin font boyutunu
 arttırdığınızda elementi kapasayan kutu normale göre genişlese de
 etrafındaki elemtlerinakışıdaki yeri değişmeyecektir.</p>
-<h2><strong>Sabit(Fixed) Konumlandırma</strong></h2>
+<h2>Sabit(Fixed) Konumlandırma</h2>
 <p>Sabitkonumlandırma Mutlak Konumlandırmanın bir alt katagorisidir.
 Sabitkonumlandırılmış elementin sayfadaki görünümü çok farklıdır. Bunu
 özellikle websayfasında bir elementin konumu sabitlemek için
@@ -243,8 +256,7 @@ destekliyor diğer hallerde desteklemiyor. Ama bu problemi javascript ile
 <li><a href="http://www.muhammetsevim.com/yazi/css-pozisyonlama-ve-z-index/">Muhammed Sevim</a></li>
 <li><a href="http://www.amazon.com/gp/product/1590593812">Web Standards Solutions: The Markup and Style Handbook</a><br />
 </li>
-</ul>
-</p><p><a href=".././css-ile-konumlandirmapositioning/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././css-ile-konumlandirmapositioning/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     
