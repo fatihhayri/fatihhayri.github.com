@@ -2899,12 +2899,11 @@ bindiğinde z-index değerine ihtiyaç duyarız. z-index mutlak, göreceli ve
 sabit konumlandırma atandığı veya elemente eksi değer verilerek konumu
 değiştirildiğinde uygulanır.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/z-ekseni.gif" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Yapısı:z-index: &amp;lt;deger&gt;  &lt;br /&gt;
-Aldığı Değerler:&amp;lt;&lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;sayısal değer&lt;/a&gt; &gt; | auto | inherit&lt;br /&gt;
-Başlangıç değeri:auto &lt;br /&gt;
-Uygulanabilen elementler:postion uygulanan elementlere &lt;br /&gt;
-Kalıtsallık:Yok&lt;/strong&gt;&lt;br class="cssozelliktanimi" /&gt;
-&lt;/p&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt;z-index: &amp;lt;deger&gt;  &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler:&lt;/strong&gt;&amp;lt;&lt;a href="http://www.fatihhayrioglu.com/?p=95"&gt;sayısal değer&lt;/a&gt; &gt; | auto | inherit&lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt;auto &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt;postion uygulanan elementlere &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt;Yok&lt;/p&gt;
 &lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Uyumu &lt;/strong&gt; &lt;br /&gt;
 Firefox &lt;br /&gt;
 Chrome &lt;br /&gt;
@@ -6319,15 +6318,11 @@ işi için bir çok teori ve yöntem ileri sürülmektedir. Ben bunların en
 makbul olanını bulup uygulamak istedim ve bu makalede bunu sizlerle
 paylaşıyorum. Aslında bulunan çözümler beni tam olarak tatmin etmiyor
 desem yeridir. Aşağıda anlatılacak yöntem istediğimiz sonucu elde etmek
-için yeterli olacaktır. &lt;!--more--&gt;&lt;/p&gt;
-&lt;div class="ekstrabilgi"&gt;
- CSS ile dikey oratalama ile ilgili farklı yöntemler vardır. Ayrıca bazı
+için yeterli olacaktır.&lt;/p&gt;
+&lt;p&gt;CSS ile dikey oratalama ile ilgili farklı yöntemler vardır. Ayrıca bazı
 şartlara göre de kodlama önerileri vardır, biz burada bunlara değinmeden
 geçeceğiz. İlgilenenler makalenin sonunda verilen kaynaklar bölümündeki
-linkleri takip edip ilgili yöntemlere erişebilirler.
-
-&lt;/div&gt;
-
+linkleri takip edip ilgili yöntemlere erişebilirler.&lt;/p&gt;
 &lt;p&gt;CSS ile dikeyde ortalama yapmak için &lt;strong&gt;vertical-align&lt;/strong&gt; özelliği var ise
 de bu özellik HTML'deki tablo gibi çalışmaz. Yani istediğimiz sonuca
 bizi ulaştırmaz.&lt;/p&gt;
@@ -6344,26 +6339,47 @@ ortalanmak istenen elemente &lt;strong&gt;vertical-align&lt;/strong&gt; tanımı
 dikeyde ortalanır. (Bu özelliği IE kavrayamamaktadır. Kavramamakta da
 ısrarlıdır. IE 7 display:table ve türevlerini desteklemiyor.)&lt;/p&gt;
 &lt;p&gt;İki çözüm vardır altçizgi(&lt;em&gt;) ve (#) ile yapılan bir çözüm vardır.
-IE(IE7 hariç) (&lt;/em&gt;) ile tanımlanan kodu görmediği için yorumlamayacaktır.&lt;/p&gt;
-&lt;h1&gt;ile başlayan kodları tüm IE versiyonları(IE7 dahil) görmeyecektir. Bu&lt;/h1&gt;
-&lt;p&gt;işaretlerin kullanım amacı tüm versiyonlarda aynı sonucu elde etmektir.&lt;/p&gt;
+IE(IE7 hariç) (&lt;/em&gt;) ile tanımlanan kodu görmediği için yorumlamayacaktır.
+# ile başlayan kodları tüm IE versiyonları(IE7 dahil) görmeyecektir. Bu
+işaretlerin kullanım amacı tüm versiyonlarda aynı sonucu elde etmektir.&lt;/p&gt;
 &lt;p&gt;Aşağıdaki kod IE5+,FF, Opera 7, Konqueror 3.0.3 altında standart ve
 &lt;a href="http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/"&gt;garip mod&lt;/a&gt; da çalışıyor.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE HTML PUBLIC &amp;quot;-//W3C//DTD HTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE HTML PUBLIC &amp;quot;-//W3C//DTD HTML 4.01//EN&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;CSS ile dikey ortalama&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
+&lt;span class="nf"&gt;#Kapsul&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;table&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;400px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="m"&gt;#positi&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;overflow&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="nb"&gt;green&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#IcerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="m"&gt;#positi&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="m"&gt;#top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;table-cell&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;vertical-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;middle&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#alan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="m"&gt;#positi&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="m"&gt;#top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-50&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="nb"&gt;green&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Kapsul&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;IcerikAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;alan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever  since the 1500s, when an unknown printer took a galley of type and  scrambled it to make a type specimen book. &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;4.01//EN"&amp;gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;CSS ile dikey ortalama&lt;/title&gt;
-&lt;style&gt; #Kapsul{ display: table; height: 400px; #position: relative;
-overflow: hidden; border: 1px solid green; } #IcerikAlani{ #position:
-absolute; #top: 50%; display: table-cell; vertical-align: middle; }&lt;/p&gt;
-&lt;h1 -50%;="-50%;" 1px="1px" border:="border:" green;="green;" id="top:" relative;="relative;" solid="solid"&gt;alan&lt;/h1&gt;
-&lt;p&gt;&lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div id="Kapsul"&gt; &lt;div
-id="IcerikAlani"&gt; &lt;div id="alan"&gt;Lorem Ipsum is simply dummy text of
-the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since the 1500s, when an unknown
-printer took a galley of type and scrambled it to make a type specimen
-book. &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/dikey_ortalama_ornek1.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
@@ -6371,18 +6387,24 @@ book. &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt; &lt;/p&
 &lt;li&gt;&lt;a href="http://wellstyled.com/singlelang.php?lang=en&amp;amp;page=css-single-line-vertical-centering.html"&gt;http://wellstyled.com/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.hicksdesign.co.uk/journal/how-to-vertical-centering-with-css"&gt;http://www.hicksdesign.co.uk/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.student.oulu.fi/~laurirai/www/css/middle/"&gt;http://www.student.oulu.fi/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="CSS"></category><category term="dikey"></category><category term="dikey-ortalama"></category><category term="ortalamak"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>İçiçe Float Elementlerinin Kullanımı</title><link href="http://www.fatihhayrioglu.com/icice-float-elementlerinin-kullanimi/" rel="alternate"></link><updated>2006-12-05T13:56:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-12-05:icice-float-elementlerinin-kullanimi/</id><summary type="html">&lt;p&gt;İçiçe float elementlerinin kullanımı basit bir kodlama ile bize çok
+&lt;/ul&gt;</summary><category term="CSS"></category><category term="dikey"></category><category term="dikey-ortalama"></category><category term="ortalamak"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>İçiçe Float Elementlerinin Kullanımı</title><link href="http://www.fatihhayrioglu.com/icice-float-elementlerinin-kullanimi/" rel="alternate"></link><updated>2006-12-05T13:56:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-12-05:icice-float-elementlerinin-kullanimi/</id><summary type="html">&lt;p&gt;İçiçe float elementlerinin kullanımı basit bir kodlama ile bize çok
 güzel imkanlar sağlar. Bir genel float elementinin sağ üstüne bir float
 element yerleştirelim. Bu kodlama genelde menü ve resim ekleme gibi
-durumlar için kullanılır. &lt;!--more--&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#icerikAlani&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt;
+durumlar için kullanılır.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#icerikAlani&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="nb"&gt;gray&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="nf"&gt;#icerikAlani&lt;/span&gt; &lt;span class="nf"&gt;#menu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;150px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;border-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="nb"&gt;gray&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="nb"&gt;gray&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;margin-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;solid gray; } #icerikAlani #menu { float: right; width: 150px;
-border-left: 1px solid gray; border-bottom: 1px solid gray; margin-left:
-5px; } &lt;/p&gt;
 &lt;p&gt;İçerik alanına(#icerikAlani) margin ve kenarlık tanımlası yaptık. Daha
 sonra menu alanını(#menu) içerik alanının sağ üst kısmına yerleştirmek
 için &lt;strong&gt;float:right&lt;/strong&gt;, genişliğini belirlemek için &lt;strong&gt;width:150px&lt;/strong&gt;, sol
@@ -6390,33 +6412,26 @@ ve alt kenarlıklarını belirlemek için &lt;strong&gt;border-left ve
 border-bottom&lt;/strong&gt;(sağ ve üst ksımlarda zaten olduğu için buralara kenarlık
 ataması yapmadık) ve içerik metini ile arasında boşluk bırakmak için
 &lt;strong&gt;margin-left&lt;/strong&gt; atamlarını yapıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;icerikAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;icerikAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;anasayfa.html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Ana Sayfa &lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;haberler.html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Haberler&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;iletisim.html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;İletişim&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Lorem Ipsum Dolar &lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;  . . .
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;ul&gt; &lt;li&gt;&lt;a href="anasayfa.html"&gt;Ana Sayfa &lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a
-href="haberler.html"&gt;Haberler&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a
-href="iletisim.html"&gt;İletişim&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;h1&gt;Lorem
-Ipsum Dolar &lt;/h1&gt; &lt;p&gt;Lorem Ipsum is simply dummy text of the
-printing and typesetting industry. Lorem Ipsum has been the industry's
-standard dummy text ever since the 1500s, when an unknown printer took a
-galley of type and scrambled it to make a type specimen book. It has
-survived not only five centuries, but also the leap into electronic
-typesetting, remaining essentially unchanged. It was popularised in the
-1960s with the release of Letraset sheets containing Lorem Ipsum
-passages, and more recently with desktop publishing software like Aldus
-PageMaker including versions of Lorem Ipsum.&lt;/p&gt; . . . &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;Örnek sayfayı görmek için &lt;a href="/dokumanlar/icice_float_kutular_ornek.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;div class="ekstrabilgi"&gt;
-Not: Örnek kodlar ie5.0, ff2.0 ve opera9.0 da test edilmiştir.
-
-&lt;/div&gt;
-
-&lt;/p&gt;</summary><category term="CSS"></category><category term="float"></category><category term="menü"></category><category term="planlama"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>Yuvarlak Kenarlı Kutular</title><link href="http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutular/" rel="alternate"></link><updated>2006-12-02T16:41:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-12-02:yuvarlak-kenarli-kutular/</id><summary type="html">&lt;p&gt;CSS ile XHTML kodlaması yaparken daha çok köşeli kutular kullanılır.
+&lt;p&gt;Not: Örnek kodlar ie5.0, ff2.0 ve opera9.0 da test edilmiştir.&lt;/p&gt;</summary><category term="CSS"></category><category term="float"></category><category term="menü"></category><category term="planlama"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>Yuvarlak Kenarlı Kutular</title><link href="http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutular/" rel="alternate"></link><updated>2006-12-02T16:41:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-12-02:yuvarlak-kenarli-kutular/</id><summary type="html">&lt;p&gt;CSS ile XHTML kodlaması yaparken daha çok köşeli kutular kullanılır.
 Ancak CSS ile yuvarlak kenarlı kutularda yapabiliriz. CSS ile yuvarlak
 kenarlı kutu yapmanın bir çok tekniği vardır. Her tekniğin yerine ve
 durumuna göre avantajları olabilir. Biz burda en kolay ve en
-kullanışlılarını öğrenmeye çalışacağız. &lt;!--more--&gt;&lt;/p&gt;
+kullanışlılarını öğrenmeye çalışacağız. &lt;/p&gt;
 &lt;h2&gt;Sabit Genişlikte Yuvarlak Kenarlı Kutu Oluşturmak&lt;/h2&gt;
 &lt;p&gt;Sabit Genişlikte Yuvarlak Kenarlı Kutular en basit oluşturulabilen
 kutulardır. İçeriğin uzaması veya kısalması durumunda genişlik sabit
@@ -6428,29 +6443,39 @@ alta ve üste koyacağımız kutuları hazırlayalım.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/ust_yuvarlak.gif" /&gt; ust_yuvarlak.gif&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/alt_yuvarlak.gif" /&gt; alt_yuvarlak.gif&lt;/p&gt;
 &lt;p&gt;XHTML kodumuzu yazarsak:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;yuvarlakKutu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;yuvarlakKutu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Başlık&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;İçerik&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;h2&gt;Başlık&lt;/h2&gt; &lt;p&gt;İçerik&lt;/p&gt; &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;alt_yuvarlak.gif resmini &lt;strong&gt;.yuvarlakKutu&lt;/strong&gt; kapsayıcı katmanının alt
 kısımına dayalı olarak zemin resmi olarak atıyoruz. Ayrıca
 &lt;strong&gt;.yuvarlakKutu&lt;/strong&gt; zemin resminin bitiminden itibaren zemin dolgu
 rengini(#84E0FF) atıyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#84E0FF&lt;/span&gt; &lt;span class="sx"&gt;url(images/alt_yuvarlak.gif)&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt; &lt;span class="k"&gt;bottom&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/ust_yuvarlak.gif)&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt; &lt;span class="k"&gt;top&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;84E0FF url(images/alt_yuvarlak.gif) no-repeat left bottom; }&lt;/h1&gt;
-&lt;p&gt;.yuvarlakKutu h2 { background: url(images/ust_yuvarlak.gif) no-repeat
-left top; } &lt;/p&gt;
 &lt;p&gt;Başlık ve içeriğinin kutunun kenarlarına yapışmaması için padding
 değerlerini ayarlamalıyız:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;20px; } .yuvarlakKutu p { padding: 0 20px 10px 20px; } &lt;/p&gt;
 &lt;p&gt;Örnek kodları indirmek için &lt;a href="/dokumanlar/sg_yuvarlak_kenarli_kutu.zip"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Eğer başlıksız bir yapı istiyorsanız, &lt;strong&gt;h2&lt;/strong&gt; kaldırıp &lt;strong&gt;h2&lt;/strong&gt;'ye
 atadığımız zemin resmini paragraf(&lt;strong&gt;p&lt;/strong&gt;)'a atamamız yeterlidir.&lt;/p&gt;
@@ -6463,21 +6488,35 @@ farz edelim. İki adet resim hazırlarız.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/alt2_yuvarlak.gif" /&gt; alt2_yuvarlak.gif&lt;/p&gt;
 &lt;p&gt;Diğer bir yöntem ise kutuyu üç kısıma bölerek yapmaktır ki bu daha esnek
 bir yöntemdir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;424px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;424px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/orta_yuvarlak.gif)&lt;/span&gt; &lt;span class="k"&gt;repeat-y&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/ust3_yuvarlak.gif)&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt; &lt;span class="k"&gt;top&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nc"&gt;.altYuvarlak&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/alt3_yuvarlak.gif)&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt; &lt;span class="k"&gt;bottom&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nt"&gt;h2&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;padding-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;url(images/orta_yuvarlak.gif) repeat-y; } .yuvarlakKutu h2 {
-background: url(images/ust3_yuvarlak.gif) no-repeat left top;
-padding-top: 20px; } .yuvarlakKutu .altYuvarlak { background:
-url(images/alt3_yuvarlak.gif) no-repeat left bottom; padding-bottom:
-20px; } .yuvarlakKutu h2, .yuvarlakKutu p { padding-left: 20px;
-padding-right: 20px; }      :::html
-     &lt;div
-class="yuvarlakKutu"&gt; &lt;h2&gt;Başlık&lt;/h2&gt; &lt;p
-class="altYuvarlak"&gt;İçerk&lt;/p&gt; &lt;/div&gt; &lt;/p&gt;
+&lt;p&gt;HTML kodu; &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;yuvarlakKutu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Başlık&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;altYuvarlak&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;İçerk&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Örnek kodları indirmek için &lt;a href="/dokumanlar/degradeli_yuvarlak_kenarli_kutu.zip"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;Esnek Boyutlu Yuvarlak Kenarlı Kutular&lt;/h4&gt;
+&lt;h2&gt;Esnek Boyutlu Yuvarlak Kenarlı Kutular&lt;/h2&gt;
 &lt;p&gt;Yukarıdaki örnekde sadece dikeydeki genişlemelere olanak sağlıyor bazen
 hem yatayda hemde dikeyde genişleye bilen esnek yuvarlık köşeli kutulara
 ihytiyacımız olur. Bunun için yukarda uyguladığımız yöntemden biraz
@@ -6485,34 +6524,51 @@ farlı bir yöntem deneyeceğiz, iki resim değil de dört resime ihtiyacımız
 olacak. Bu dört resim için artı katmanlara ihtiyacımız olacaktır, bu
 katmanlar kodumuzu biraz temiz kod üretimi dışına çıkarsada işimizi
 görecektir:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;yuvarlakKutu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;yuvarlakKutu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;yuvarlakKutuDisi&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;yuvarlakKutuIci&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Başlık&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;İçerik&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;class="yuvarlakKutuDisi"&amp;gt; &lt;div class="yuvarlakKutuIci"&gt;
-&lt;h2&gt;Başlık&lt;/h2&gt; &lt;p&gt;İçerik&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;Dört resimin iki tanesi üst köşeleri yuvarlamak için, iki tanesi alt
 köşeleri yuvarlamak için kullanacağız.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="/images/esnek_ornek.gif" /&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;p&gt;&lt;img alt="" src="/images/esnek_ornek.gif" /&gt;  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#effce7&lt;/span&gt; &lt;span class="sx"&gt;url(images/alt_sol.gif)&lt;/span&gt;
+    &lt;span class="k"&gt;no-repeat&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt; &lt;span class="k"&gt;bottom&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.yuvarlakKutuDisi&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/alt_sag.gif)&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt; &lt;span class="k"&gt;bottom&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.yuvarlakKutuIci&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/ust_sol.gif)&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt; &lt;span class="k"&gt;top&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/ust_sag.gif)&lt;/span&gt; &lt;span class="k"&gt;no-repeat&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt; &lt;span class="k"&gt;top&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nt"&gt;h2&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nc"&gt;.yuvarlakKutu&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;padding-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding-right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;effce7 url(images/alt_sol.gif) no-repeat left bottom; }&lt;/h1&gt;
-&lt;p&gt;.yuvarlakKutuDisi { background: url(images/alt_sag.gif) no-repeat right
-bottom; padding-bottom: 5%; } .yuvarlakKutuIci { background:
-url(images/ust_sol.gif) no-repeat left top; } .yuvarlakKutu h2 {
-background: url(images/ust_sag.gif) no-repeat right top; padding-top:
-5%; } .yuvarlakKutu h2, .yuvarlakKutu p { padding-left: 5%;
-padding-right: 5%; } &lt;/p&gt;
 &lt;p&gt;Yukarıdaki örnekte esneklik sağlamak için değerler (% ve em) gibi görece
 değerler verilerek font boyutunun arttırılması durumlarında esnek bir
 kutu oluşturulmuş olur.&lt;/p&gt;
 &lt;p&gt;Örnek kodları indirmek için &lt;a href="/dokumanlar/esnek_yuvarlak_kenarli_kutu.zip"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Yuvarlak kenarlı kutu yapımında bir çok örnek ve yöntem mevcut, aşağıda
 ki link de bu metodları linkleri ile katagorize etmişler:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://css-discuss.incutio.com/?page=RoundedCorners"&gt;http://css-discuss.incutio.com/?page=RoundedCorners&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="CSS"></category><category term="esnek"></category><category term="kutular"></category><category term="Web Standartları"></category><category term="XHTML"></category><category term="yuvarlak kenar"></category></entry><entry><title>CSS ile Sekmeli(Tab) Menü Yapımı</title><link href="http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/" rel="alternate"></link><updated>2006-11-26T23:06:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-11-26:css-ile-sekmelitab-menu-yapimi/</id><summary type="html">&lt;p&gt;Sekmeli menümüzü &lt;a href="http://stopdesign.com/"&gt;Doug Bowman'ın&lt;/a&gt; &lt;a href="http://alistapart.com/articles/slidingdoors/"&gt;Sliding Doors&lt;/a&gt; tekniği ile
+&lt;p&gt;&lt;a href="http://css-discuss.incutio.com/?page=RoundedCorners"&gt;http://css-discuss.incutio.com/?page=RoundedCorners&lt;/a&gt;&lt;/p&gt;</summary><category term="CSS"></category><category term="esnek"></category><category term="kutular"></category><category term="Web Standartları"></category><category term="XHTML"></category><category term="yuvarlak kenar"></category></entry><entry><title>CSS ile Sekmeli(Tab) Menü Yapımı</title><link href="http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/" rel="alternate"></link><updated>2006-11-26T23:06:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-11-26:css-ile-sekmelitab-menu-yapimi/</id><summary type="html">&lt;p&gt;Sekmeli menümüzü &lt;a href="http://stopdesign.com/"&gt;Doug Bowman'ın&lt;/a&gt; &lt;a href="http://alistapart.com/articles/slidingdoors/"&gt;Sliding Doors&lt;/a&gt; tekniği ile
 yapacağız. Bu teknik bize esnek yapılı, yuvarlak kenarlı sekmeli menü
 yapma olanağı sağlar. Adım adım gidersek &lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.Adım&lt;/strong&gt; Başlangıç olarak her zamanki gibi XHTML kodumuzu yazalım:&lt;/p&gt;
@@ -7209,21 +7265,23 @@ genişliğe sahip olmak için:&lt;/p&gt;
 &lt;iframe src="/dokumanlar/menu.htm" width="250" height="200" frameborder="0" scroll="auto"&gt;&lt;/iframe&gt;</summary><category term="CSS"></category><category term="liste"></category><category term="menü"></category><category term="ul"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>CSS ile Web Sayfası Oluşturma III</title><link href="http://www.fatihhayrioglu.com/css-ile-web-sayfasi-olusturma-iii/" rel="alternate"></link><updated>2006-10-27T11:31:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-27:css-ile-web-sayfasi-olusturma-iii/</id><summary type="html">&lt;h2&gt;Aksak Kolonlar(Faux Column)&lt;/h2&gt;
 &lt;p&gt;CSS ile sayfa kodlaması yaparken karşımıza çıkan sorunlardan biridir
 Aksak Kolonlar(faux column). Genelde isimlendirme olarak &lt;strong&gt;Faux Kolon&lt;/strong&gt;
-diye geçsede ben burada &lt;strong&gt;Aksak kolon&lt;/strong&gt; olarak kullanacağım. &lt;!--more--&gt;
+diye geçsede ben burada &lt;strong&gt;Aksak kolon&lt;/strong&gt; olarak kullanacağım. 
 Basit bir örnek verecek olursak; içerik ve sağ kolon diye iki kolondan
 oluşan bir yapımız olsun. Bu kolonların zemin renklerinin farklı
 olduğunu düşünelim. Aşağıdaki şekildeki gibi&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="/images/sorunlu_kolonlar.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/sorunlu_kolonlar.gif" /&gt; &lt;br /&gt;
+&lt;/p&gt;
 &lt;p&gt;İçerik ile sağ kolonun farklı yükseklite olması bir sorundur ve sorunu
 çözmek için bir kaç yöntem mevcuttur. Biz burada en kolayı ve en
 kullanışlı olanı anlatmaya çalışacağız.&lt;/p&gt;
 &lt;p&gt;Bu metodda yapılan iki kolon bir kapsayıcı katman içine alınarak iki
 kolonun zemin resmi bu kapsayıcı katmana tanımlanmaktır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#kapsayiciKolon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#kapsayiciKolon&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt; &lt;span class="sx"&gt;url(zemin_ard.gif)&lt;/span&gt; &lt;span class="k"&gt;repeat-y&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt; &lt;span class="k"&gt;top&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;url(zemin_ard.gif) repeat-y left top; } &lt;/p&gt;
 &lt;p&gt;Aynı şekilde üç kolonlu yapılar içinde çözüm üretilebilir. Sabit
 genişlikte sayfalarda Aksak Kolonları düzeltmek bu kadar kolaydır. Esnek
 yapılı sayfalarda Aksak Kolonları düzeltmek biraz daha zordur. Web
@@ -7235,19 +7293,20 @@ elementin sol üst köşesine göre zemin resminizi piksel değeri vererek
 konumlandırırsınız. Yüzdesel konumlandırma ile zemin resmi
 konulandırıldığında, atanan değerler hem üst elemente göre, hem de
 elementin kendine göre konumunu belirler. Örneğin:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;#fff&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;resim&lt;/span&gt;&lt;span class="nc"&gt;.gif&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;no-repeat&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;#fff&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;resim&lt;/span&gt;&lt;span class="nc"&gt;.gif&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;no-repeat&lt;/span&gt; &lt;span class="nt"&gt;25&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="nt"&gt;10&lt;/span&gt;&lt;span class="o"&gt;%;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;25% 10%; &lt;/p&gt;
 &lt;p&gt;Yukarıdaki tanımlama sonucunda zemin resmi hem üst elementin %10 üst ve
 %25 solundan mesafe alacaktır, hemde kendi içinde %10 üst ve %25 soldan
 mesafe alacaktır. Aşağıdaki şekilde gösterilmiştir:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="/images/likit_sorunlu_kolonlar.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/likit_sorunlu_kolonlar.gif" /&gt; &lt;br /&gt;
+&lt;/p&gt;
 &lt;p&gt;Likit içerikli üç kolonlu sayfalarda Aksak kolon sorununun çözümüne
 bakalım.&lt;/p&gt;
 &lt;p&gt;Bir örnek yapacak olursak;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="/images/likit_sorunlu_kolonlar2.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/likit_sorunlu_kolonlar2.gif" /&gt;&lt;br /&gt;
+&lt;/p&gt;
 &lt;p&gt;Daha önce likit bir sayfanın nasıl yapılacağını bahsetmiştik. İsterseniz
 yine de bir &lt;a href="http://www.fatihhayrioglu.com/?p=179"&gt;göz atın&lt;/a&gt; Yukarıdaki ekranda da görüldüğü gibi orta
 kısıma birden fazla zemin rengi uygulamamız gerekiyor. Bunun için likit
@@ -7263,12 +7322,15 @@ resmini kapsayan alandan Aksak Kolona atanan zemin renginin genişlik
 değeri 460 piksel olacaktır. Aksak alanın zemin renginin dışındaki
 alalanları(1540px) transparan yapmak için zemin resmimizi .gif
 formatında yapmalıyız.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#KapsayiciAlan&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;85&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#KapsayiciAlan&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;85&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#fff&lt;/span&gt; &lt;span class="sx"&gt;url(images/sol_zemin_resmi.gif)&lt;/span&gt; &lt;span class="k"&gt;repeat-y&lt;/span&gt; &lt;span class="m"&gt;23&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;auto; text-align: left; background: #fff
-url(images/sol_zemin_resmi.gif) repeat-y 23% 0; } &lt;/p&gt;
 &lt;p&gt;Benzer şekilde ikinci bir içerik oluşturarak sağda kalan iki kolona aynı
 metod uygulanabilir. Yine 2000 piksel genişliğinde 10 piksel
 yüksekliğinde bir zemin resmi hazırlayıp bu sefer resmin sağ tarafına
@@ -7279,14 +7341,14 @@ mesafesi %77(100-23)'den başlamalıdır. Çünkü KapsayiciAlan'ın zemin
 resmi zaten uygulanmıştır bu nedenle biz ilk Kapsayici alan içine bir
 tane daha &lt;strong&gt;ikinciKapsayiciAlan&lt;/strong&gt; eklemeliyiz. Bu yeni
 &lt;strong&gt;ikinciKapsayiciAlan&lt;/strong&gt;'nınada zemin resmi atamalıyız.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#ikinciKapsayiciAlan&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#ikinciKapsayiciAlan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url(images/sag_zemin_resmi.gif)&lt;/span&gt; &lt;span class="k"&gt;repeat-y&lt;/span&gt; &lt;span class="m"&gt;77&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;url(images/sag_zemin_resmi.gif) repeat-y 77% 0; } &lt;/p&gt;
 &lt;p&gt;Bu şekilde çok güzel bir 3 kolonlu likit bir sayfa elde ederiz.&lt;/p&gt;
-&lt;p&gt;Örnek çalışma için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/aksak-3-kol-likid.htm"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="Aksak Kolonlar"></category><category term="CSS"></category><category term="CSS-Layout"></category><category term="CSS-P"></category><category term="Faux Column"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>CSS'de Tanımlamalar ve Etkinlikleri(Specificity)</title><link href="http://www.fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity/" rel="alternate"></link><updated>2006-10-08T12:22:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-08:cssde-tanimlamalar-ve-etkinliklerispecificity/</id><summary type="html">&lt;p&gt;CSS'de etkinliğin anlamı stil çatışması(aynı elemente birden fazla tanım
+&lt;p&gt;Örnek çalışma için &lt;a href="http://www.fatihhayrioglu.com/dokumanlar/aksak-3-kol-likid.htm"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;</summary><category term="Aksak Kolonlar"></category><category term="CSS"></category><category term="CSS-Layout"></category><category term="CSS-P"></category><category term="Faux Column"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>CSS'de Tanımlamalar ve Etkinlikleri(Specificity)</title><link href="http://www.fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity/" rel="alternate"></link><updated>2006-10-08T12:22:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-10-08:cssde-tanimlamalar-ve-etkinliklerispecificity/</id><summary type="html">&lt;p&gt;CSS'de etkinliğin anlamı stil çatışması(aynı elemente birden fazla tanım
 yapıldığında) olduğunda kullanılan hangi kodun web tarayıcıları
 tarafından yorumlanacağını belirlemektir. &lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;Bir XHTML sayfamıza iki adet stil dosyası eklediğimizi düşünelim. Fakat
@@ -7362,44 +7424,83 @@ standartlara ve web tarayıcılarına en uygun şekilde kodlamaktır. Hiç
 tablo kullanmayayım diye tablo kullanılması gerek yerlerde de tablo
 kullanmamak abesle iştigaldir.&lt;/p&gt;
 &lt;p&gt;Aslında şimdiye kadar ki makaleler de bu konunun temellerini
-attık.[&lt;acronym title="Stil şablonu"&gt;CSS&lt;/acronym&gt; ile konumlandırma(positioning)][] , &lt;a href="http://www.fatihhayrioglu.com/?p=160"&gt;Float ve Clear özellikler ile konumlandırma&lt;/a&gt; vd. makaleler bu işin temellerine değindik. Burada daha
+attık. CSS ile konumlandırma(positioning) , &lt;a href="http://www.fatihhayrioglu.com/?p=160"&gt;Float ve Clear özellikler ile konumlandırma&lt;/a&gt; vd. makaleler bu işin temellerine değindik. Burada daha
 elle tutulur örneklerle bu metodu anlatmaya çalışacağız.&lt;/p&gt;
 &lt;p&gt;CSS sayfa planlama metodları üç temel konu üzerine inşa edilmiştir.
-[Konumlandırma][&lt;acronym title="Stil şablonu"&gt;CSS&lt;/acronym&gt; ile konumlandırma(positioning)], &lt;a href="http://www.fatihhayrioglu.com/?p=160"&gt;floating&lt;/a&gt; ve &lt;a href="http://www.fatihhayrioglu.com/?p=113"&gt;margin&lt;/a&gt; farklılıkları. Bu üç temel konu
+CSS ile konumlandırma(positioning)], &lt;a href="http://www.fatihhayrioglu.com/?p=160"&gt;floating&lt;/a&gt; ve &lt;a href="http://www.fatihhayrioglu.com/?p=113"&gt;margin&lt;/a&gt; farklılıkları. Bu üç temel konu
 anlaşıldıktan sonra CSS ile sayfa planlamayı anlamamız çok kolaydır. Biz
 burada floating metodu ile sayfa oluşturmayı göreceğiz. Bunun dışında
 konumlandırma öğeleleri kullanarak sayfa oluşturma ve eksi margin değeri
 ile sayfa oluşturma metodlarıda vardır. Ancak biz burada bunlara
 değinmeyeceğiz.&lt;/p&gt;
-&lt;h4&gt;Sabit Genişlikteki Sayfalarda İki Kolonlu Yapı&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="" src="/images/ikikolon.gif" /&gt;&lt;/p&gt;
+&lt;h2&gt;Sabit Genişlikteki Sayfalarda İki Kolonlu Yapı&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="" src="/images/ikikolon.gif" /&gt; &lt;br /&gt;
+&lt;/p&gt;
 &lt;p&gt;İlk olarak XHTML kodlarını yazalım.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sayfa&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ustAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ...
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sayfa&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ustAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;icerik&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;anaMenu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;altAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;/div&gt; &lt;div id="icerik"&gt; ... &lt;/div&gt; &lt;div id="anaMenu"&gt; ...
-&lt;/div&gt; &lt;div id="altAlan"&gt; ... &lt;/div&gt; &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;Önemli bir nokta varki oda &lt;strong&gt;icerik&lt;/strong&gt; alanının &lt;strong&gt;anaMenu&lt;/strong&gt;'den önce
 gelmesi gerekmektedir. Erişebilirlilik(yani tüm araçlarda sayfamızın en
 iyi şekilde görünmesi) için &lt;strong&gt;icerik&lt;/strong&gt; alanının &lt;strong&gt;anaMenu&lt;/strong&gt;'den önce
 gelmesi gerekir. Çünkü pda ve cep telefonu gibi araçlarda katmanların
 sıralamasına göre ekranda görüneceğinden, ilk olarak içerik alanının
 görünmesi tercih sebebidir. şžimdi css kodumuzu yazarsak:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#sayfa&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;768px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nf"&gt;#ustAlan&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#sayfa&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;768px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#ustAlan&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;768px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#icerik&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;568px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#anaMenu&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#altAlan&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;768px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;768px; } #icerik { float: right; width: 568px; } #anaMenu { float:
-left; width: 200px; } #altAlan { width: 768px; clear: both; }&lt;/p&gt;
 &lt;p&gt;Bu kodu yazdıktan sonra sayfamız başta gördüğümüz şekildeki duruma
 gelmiş bulunmaktadır. Burada yazdığımız kodda &lt;strong&gt;"icerik&lt;/strong&gt;" alanının
 sağa, &lt;strong&gt;"anaMenu"&lt;/strong&gt; alanının sola yerleşmesi için genişlik değeri ve
 float değerleri tanınmlanmıştır. Ayrıca &lt;strong&gt;altAlan&lt;/strong&gt;'ın bu iki bölümün
 altında kalması için &lt;strong&gt;clear:both&lt;/strong&gt; tanımlaması yapılmıştır.&lt;/p&gt;
-&lt;p&gt;[&lt;acronym title="Stil şablonu"&gt;CSS&lt;/acronym&gt; ile sayfalarımızı ve elementlerimizi ortalamak][] bölümündeki metodu uygulayarak sayfamızı
+&lt;p&gt;CSS ile sayfalarımızı ve elementlerimizi ortalamak][] bölümündeki metodu uygulayarak sayfamızı
 ortalayabilriz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#sayfa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;768px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#sayfa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;768px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -7407,58 +7508,129 @@ ortalayabilriz.&lt;/p&gt;
 &lt;p&gt;Sabit Genişlikteki Sayfalarda en çok rastlanan problemler sabit genişlik
 uygulanan katmanlara pading, margin ve border değeri atandığında IE5 de
 sorunlu görünmesidir bu problemi aşmak için iki yöntem vardır. Birinci
-yöntem [&lt;acronym title="Stil şablonu"&gt;CSS&lt;/acronym&gt; ile Kutu modeli, sorunları ve çözümleri][] bölümünde anlatılmıştır. ikinci yöntem ise
+yöntem CSS ile Kutu modeli, sorunları ve çözümleri bölümünde anlatılmıştır. ikinci yöntem ise
 kapsayıcı katmanlara(&lt;strong&gt;icerik&lt;/strong&gt;, &lt;strong&gt;anaMenu&lt;/strong&gt; vb.) padding ve margin
 vermek yerine kapsayıcı katman içindeki elementlere bu atamaları
 yapmaktır.&lt;/p&gt;
 &lt;p&gt;Basit yapılı sayfalarda ikinci yöntemi, karmaşık yapılı sayfalarda ise
 birinci yöntemi denemenizi öneririm.&lt;/p&gt;
-&lt;h4&gt;Likit Sayfalarda İki Kolonlu Yapı&lt;/h4&gt;
+&lt;h2&gt;Likit Sayfalarda İki Kolonlu Yapı&lt;/h2&gt;
 &lt;p&gt;Likit Sayfalarda Sabit Genişlikteki Sayfalar'dan farklı olarak genişlik
 değerleri piksel(px) olarak değil yüzde(%) olarak verilmesidir. Bu tür
 sayfalarda sayfa genişliği web tarayıcısının boyutu ile bağlantılıdır.
 Web tarayıcısının genişliği arttırıldığında sayfa genişliği artacak, web
 tarayıcısının genişliği azaltıldığında sayfa genişli azalacaktır. Kodu
 yazarsak:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#sayfa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;83&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#sayfa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;83&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#ustAlan&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#anaMenu&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;30&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#icerik&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;70&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#altAlan&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1 30%;="30%;" float:="float:" left;="left;" width:="width:"&gt;ustAlan { width: 100%; } #anaMenu&lt;/h1&gt;
-&lt;h1&gt;icerik { float: right; width: 70%; } #altAlan { width: 100%; clear:&lt;/h1&gt;
-&lt;p&gt;both; } &lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/elastik_ikikolonlu_websitesi.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;3 Kolonlu Yapı&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="" src="/images/uckolon.gif" /&gt;&lt;/p&gt;
+&lt;h2&gt;3 Kolonlu Yapı&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="" src="/images/uckolon.gif" /&gt; &lt;br /&gt;
+&lt;/p&gt;
 &lt;p&gt;Bir çok sitede üç kolonlu yapı kullanılmaktadır. 3 kolonlu yapı ile iki
 kolonlu yapının kodlamasında fazla bir fark yoktur. Tek yapamız gereken
 yapıyı iki kolonlu bölümlere ayırmaktır, bunun için sağdaki iki kolonu
 bir kapsayıcı katman(KapsayiciAlan) içine alarak yapıyı iki kolonlu hale
 getirdik(anaMenu ve KapsayiciAlan)&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nf"&gt;#sayfa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;768px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#sayfa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;768px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#ustAlan&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;768px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#anaMenu&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#KapsayiciAlan&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;568px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#icerik&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;368px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#BannerAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#altAlan&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;768px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1 200px;="200px;" float:="float:" left;="left;" width:="width:"&gt;ustAlan { width:768px; } #anaMenu&lt;/h1&gt;
-&lt;h1&gt;KapsayiciAlan { float: right; width: 568px; } #icerik { float: left;&lt;/h1&gt;
-&lt;p&gt;width: 368px; } #BannerAlani{ float: right; width: 200px; } #altAlan {
-width:768px; clear: both; } &lt;/p&gt;
 &lt;p&gt;Ve ayrıca xhtml koda da aşağıdaki değişiklikleri yaptığımızda üç kolonlu
 yapıyı elde ederiz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sayfa&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ustAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ...
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sayfa&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ustAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;KapsayiciAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;icerik&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;BannerAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;anaMenu&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;altAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+...
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;/div&gt; &lt;div id="KapsayiciAlan"&gt; &lt;div id="icerik"&gt; ... &lt;/div&gt;
-&lt;div id="BannerAlani"&gt; ... &lt;/div&gt; &lt;/div&gt; &lt;div id="anaMenu"&gt; ...
-&lt;/div&gt; &lt;div id="altAlan"&gt; ... &lt;/div&gt; &lt;/div&gt; &lt;/p&gt;
 &lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/sabit_uckolonlu_websitesi.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Aynı şekilde Likit sayfalarda üç kolonlu yapı oluşturabiliriz. Yapmamız
 gerek tek şey değerleri (%) olarak vermektir.&lt;/p&gt;
 &lt;p&gt;4,5 vd. kolonlu yapıyı da aynı şekilde yapabiliriz. Bence 3 kolonlu
 yapıdan sonraki kadamelerde(4,5 vd.) tüm katmanlara float:left verilerek
-oluşturmak daha mantıklı ve kolay olur.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="clear"></category><category term="CSS"></category><category term="float"></category><category term="ortalamak"></category><category term="sayfa-planlama"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>Doğru DOCTYPE Kullanımı</title><link href="http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/" rel="alternate"></link><updated>2006-09-15T23:59:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-09-15:dogru-doctype-kullanimi/</id><summary type="html">&lt;p&gt;DOCTYPE, HTML veya (X)HTML dökümanımızın tipini göstermek için
+oluşturmak daha mantıklı ve kolay olur.&lt;/p&gt;</summary><category term="clear"></category><category term="CSS"></category><category term="float"></category><category term="ortalamak"></category><category term="sayfa-planlama"></category><category term="Web Standartları"></category><category term="XHTML"></category></entry><entry><title>Doğru DOCTYPE Kullanımı</title><link href="http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/" rel="alternate"></link><updated>2006-09-15T23:59:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2006-09-15:dogru-doctype-kullanimi/</id><summary type="html">&lt;p&gt;DOCTYPE, HTML veya (X)HTML dökümanımızın tipini göstermek için
 kullandığımız bir koddur.&lt;/p&gt;
 &lt;p&gt;DOCTYPE bildirimi (X)HTML kodunun başına bir veya iki satır olarak
 eklenir. Genel kullanımı:&lt;/p&gt;

@@ -92,7 +92,7 @@ yüksekliklerinden dolayı pek hoş görünmeyebilir. Bunun aksine,
 daraltılmış pencerelerde çok kısa ve parçalanmış görüneceklerdir ve
 metin boyutu arttırıldığında üst üste binmiş satırlarda görüneceklerdir.
 Bununla ilgili olarak elastik sayfa oluşturma metodu bize yardım
-edecektir. <!--more--></p>
+edecektir.</p>
 <p>Elastik Sayfalar web tarayıcılarına göre font boyutunun ve elementlerin
 genişliğinin göreceli olarak ayarlandığı sayfalardır. Genişlikleri
 <strong>em</strong>, yüzde(%) ve ex gibi göreceli birimler kullanarak
@@ -109,27 +109,61 @@ yapabilriz. Ancak bu özelliği IE6 desteklememektedir.</p>
 tasarımı yapılan bir sayfanın birimleri <strong>piksel</strong>yerine <strong>em</strong> olarak
 değiştirilirse sayfa elastik yapıya kavuşacaktır. 1em yaklaşık olarak
 10piksele denk gelir.</p>
-<div class="ekstrabilgi">
-em'in asıl tanımı küçük "**m**" harfi genişliğidir. Normalde **em** font
+<p>em'in asıl tanımı küçük "<strong>m</strong>" harfi genişliğidir. Normalde <strong>em</strong> font
 boyutu birimi olarak kullanılır ancak CSS'de width,line-height vd.
 özelliklerin birimi olarak da kullanılabilir. Em üst elemente veya diğer
 elementleri baz alarak göreceli bir değer alır. Bu özellik bize elastik
-web sayfası hazırlama imkanı verir.
-
-</div>
-
+web sayfası hazırlama imkanı verir.</p>
 <p>Çoğu web tarayıcısınnda normal font boyutu 16px'dir. 10 pikselin
 yüzdesel değeri yaklaşık olarak 62.5% civarındadır. Bu belirtilen
 değerlere göre kodumuzu yazarsak:</p>
-<div class="codehilite"><pre> <span class="nt">body</span><span class="p">{</span> <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span> <span class="k">font-size</span><span class="o">:</span><span class="m">62</span><span class="o">.</span><span class="m">5</span><span class="o">%</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">body</span><span class="p">{</span>
+    <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span><span class="m">62</span><span class="o">.</span><span class="m">5</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="o">:</span><span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#sayfa</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">72em</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#ustAlan</span>
+<span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">72em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#anaMenu</span> 
+<span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">18em</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#KapsayiciAlan</span>
+<span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">52em</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#icerik</span> 
+<span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">32em</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#BannerAlani</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">20em</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#altAlan</span> 
+<span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">72em</span><span class="p">;</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>font-family:Arial, Helvetica, sans-serif; } #sayfa{ width:72em;
-margin:0 auto; text-align:left; } #ustAlan { width:72em; } #anaMenu {
-float: left; width: 18em; } #KapsayiciAlan { float: right; width: 52em;
-} #icerik { float: left; width: 32em; } #BannerAlani{ float: right;
-width: 20em; } #altAlan { width:72em; clear: both; } </p>
 <p>Burada body elementi font boyutunu 1em eşit olan font-size:62.5%;
 atamasını yaptık. Daha sonra sayfadaki birimleri bu değeri baz alarak
 hesapladık ve em birimi vererek sayfamızı elastik bir hala getirdik.</p>
@@ -138,7 +172,6 @@ tarayıcısının font boyutu değerlerini veya yakınlaştırma(zoom) aracını
 (Opera, FF-eklentisi var ve IE 7 de var)kullanarak görebilriz. IE ve FF
 için Görünüm(View) - Metin Boyutu(Text Size) Opera için View - Zoom
 seçeneklerini kullanarak farkı görebilriz.</p>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

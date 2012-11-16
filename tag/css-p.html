@@ -84,21 +84,23 @@
 </footer><!-- /.post-info --><h2>Aksak Kolonlar(Faux Column)</h2>
 <p>CSS ile sayfa kodlaması yaparken karşımıza çıkan sorunlardan biridir
 Aksak Kolonlar(faux column). Genelde isimlendirme olarak <strong>Faux Kolon</strong>
-diye geçsede ben burada <strong>Aksak kolon</strong> olarak kullanacağım. <!--more-->
+diye geçsede ben burada <strong>Aksak kolon</strong> olarak kullanacağım. 
 Basit bir örnek verecek olursak; içerik ve sağ kolon diye iki kolondan
 oluşan bir yapımız olsun. Bu kolonların zemin renklerinin farklı
 olduğunu düşünelim. Aşağıdaki şekildeki gibi</p>
-<p><img alt="" src="static/images/sorunlu_kolonlar.gif" /></p>
+<p><img alt="" src="static/images/sorunlu_kolonlar.gif" /> <br />
+</p>
 <p>İçerik ile sağ kolonun farklı yükseklite olması bir sorundur ve sorunu
 çözmek için bir kaç yöntem mevcuttur. Biz burada en kolayı ve en
 kullanışlı olanı anlatmaya çalışacağız.</p>
 <p>Bu metodda yapılan iki kolon bir kapsayıcı katman içine alınarak iki
 kolonun zemin resmi bu kapsayıcı katmana tanımlanmaktır.</p>
-<div class="codehilite"><pre> <span class="nf">#kapsayiciKolon</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span>
+<div class="codehilite"><pre><span class="nf">#kapsayiciKolon</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span> <span class="sx">url(zemin_ard.gif)</span> <span class="k">repeat-y</span> <span class="k">left</span> <span class="k">top</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>url(zemin_ard.gif) repeat-y left top; } </p>
 <p>Aynı şekilde üç kolonlu yapılar içinde çözüm üretilebilir. Sabit
 genişlikte sayfalarda Aksak Kolonları düzeltmek bu kadar kolaydır. Esnek
 yapılı sayfalarda Aksak Kolonları düzeltmek biraz daha zordur. Web
@@ -110,19 +112,20 @@ elementin sol üst köşesine göre zemin resminizi piksel değeri vererek
 konumlandırırsınız. Yüzdesel konumlandırma ile zemin resmi
 konulandırıldığında, atanan değerler hem üst elemente göre, hem de
 elementin kendine göre konumunu belirler. Örneğin:</p>
-<div class="codehilite"><pre> <span class="nt">background</span><span class="o">:</span> <span class="nf">#fff</span> <span class="nt">url</span><span class="o">(</span><span class="nt">resim</span><span class="nc">.gif</span><span class="o">)</span> <span class="nt">no-repeat</span>
+<div class="codehilite"><pre><span class="nt">background</span><span class="o">:</span> <span class="nf">#fff</span> <span class="nt">url</span><span class="o">(</span><span class="nt">resim</span><span class="nc">.gif</span><span class="o">)</span> <span class="nt">no-repeat</span> <span class="nt">25</span><span class="o">%</span> <span class="nt">10</span><span class="o">%;</span>
 </pre></div>
 
 
-<p>25% 10%; </p>
 <p>Yukarıdaki tanımlama sonucunda zemin resmi hem üst elementin %10 üst ve
 %25 solundan mesafe alacaktır, hemde kendi içinde %10 üst ve %25 soldan
 mesafe alacaktır. Aşağıdaki şekilde gösterilmiştir:</p>
-<p><img alt="" src="static/images/likit_sorunlu_kolonlar.gif" /></p>
+<p><img alt="" src="static/images/likit_sorunlu_kolonlar.gif" /> <br />
+</p>
 <p>Likit içerikli üç kolonlu sayfalarda Aksak kolon sorununun çözümüne
 bakalım.</p>
 <p>Bir örnek yapacak olursak;</p>
-<p><img alt="" src="static/images/likit_sorunlu_kolonlar2.gif" /></p>
+<p><img alt="" src="static/images/likit_sorunlu_kolonlar2.gif" /><br />
+</p>
 <p>Daha önce likit bir sayfanın nasıl yapılacağını bahsetmiştik. İsterseniz
 yine de bir <a href="http://www.fatihhayrioglu.com/?p=179">göz atın</a> Yukarıdaki ekranda da görüldüğü gibi orta
 kısıma birden fazla zemin rengi uygulamamız gerekiyor. Bunun için likit
@@ -138,12 +141,15 @@ resmini kapsayan alandan Aksak Kolona atanan zemin renginin genişlik
 değeri 460 piksel olacaktır. Aksak alanın zemin renginin dışındaki
 alalanları(1540px) transparan yapmak için zemin resmimizi .gif
 formatında yapmalıyız.</p>
-<div class="codehilite"><pre> <span class="nf">#KapsayiciAlan</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">85</span><span class="o">%</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span>
+<div class="codehilite"><pre><span class="nf">#KapsayiciAlan</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">85</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span> 
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span> <span class="sx">url(images/sol_zemin_resmi.gif)</span> <span class="k">repeat-y</span> <span class="m">23</span><span class="o">%</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>auto; text-align: left; background: #fff
-url(images/sol_zemin_resmi.gif) repeat-y 23% 0; } </p>
 <p>Benzer şekilde ikinci bir içerik oluşturarak sağda kalan iki kolona aynı
 metod uygulanabilir. Yine 2000 piksel genişliğinde 10 piksel
 yüksekliğinde bir zemin resmi hazırlayıp bu sefer resmin sağ tarafına
@@ -154,14 +160,14 @@ mesafesi %77(100-23)'den başlamalıdır. Çünkü KapsayiciAlan'ın zemin
 resmi zaten uygulanmıştır bu nedenle biz ilk Kapsayici alan içine bir
 tane daha <strong>ikinciKapsayiciAlan</strong> eklemeliyiz. Bu yeni
 <strong>ikinciKapsayiciAlan</strong>'nınada zemin resmi atamalıyız.</p>
-<div class="codehilite"><pre> <span class="nf">#ikinciKapsayiciAlan</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nf">#ikinciKapsayiciAlan</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/sag_zemin_resmi.gif)</span> <span class="k">repeat-y</span> <span class="m">77</span><span class="o">%</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>url(images/sag_zemin_resmi.gif) repeat-y 77% 0; } </p>
 <p>Bu şekilde çok güzel bir 3 kolonlu likit bir sayfa elde ederiz.</p>
-<p>Örnek çalışma için <a href="http://www.fatihhayrioglu.com/dokumanlar/aksak-3-kol-likid.htm">tıklayınız.</a></p>
-</p><p><a href=".././css-ile-web-sayfasi-olusturma-iii/#disqus_thread">yorum var</a>.</p>
+<p>Örnek çalışma için <a href="http://www.fatihhayrioglu.com/dokumanlar/aksak-3-kol-likid.htm">tıklayınız.</a></p><p><a href=".././css-ile-web-sayfasi-olusturma-iii/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
                     

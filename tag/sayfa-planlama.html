@@ -99,44 +99,83 @@ standartlara ve web tarayıcılarına en uygun şekilde kodlamaktır. Hiç
 tablo kullanmayayım diye tablo kullanılması gerek yerlerde de tablo
 kullanmamak abesle iştigaldir.</p>
 <p>Aslında şimdiye kadar ki makaleler de bu konunun temellerini
-attık.[<acronym title="Stil şablonu">CSS</acronym> ile konumlandırma(positioning)][] , <a href="http://www.fatihhayrioglu.com/?p=160">Float ve Clear özellikler ile konumlandırma</a> vd. makaleler bu işin temellerine değindik. Burada daha
+attık. CSS ile konumlandırma(positioning) , <a href="http://www.fatihhayrioglu.com/?p=160">Float ve Clear özellikler ile konumlandırma</a> vd. makaleler bu işin temellerine değindik. Burada daha
 elle tutulur örneklerle bu metodu anlatmaya çalışacağız.</p>
 <p>CSS sayfa planlama metodları üç temel konu üzerine inşa edilmiştir.
-[Konumlandırma][<acronym title="Stil şablonu">CSS</acronym> ile konumlandırma(positioning)], <a href="http://www.fatihhayrioglu.com/?p=160">floating</a> ve <a href="http://www.fatihhayrioglu.com/?p=113">margin</a> farklılıkları. Bu üç temel konu
+CSS ile konumlandırma(positioning)], <a href="http://www.fatihhayrioglu.com/?p=160">floating</a> ve <a href="http://www.fatihhayrioglu.com/?p=113">margin</a> farklılıkları. Bu üç temel konu
 anlaşıldıktan sonra CSS ile sayfa planlamayı anlamamız çok kolaydır. Biz
 burada floating metodu ile sayfa oluşturmayı göreceğiz. Bunun dışında
 konumlandırma öğeleleri kullanarak sayfa oluşturma ve eksi margin değeri
 ile sayfa oluşturma metodlarıda vardır. Ancak biz burada bunlara
 değinmeyeceğiz.</p>
-<h4>Sabit Genişlikteki Sayfalarda İki Kolonlu Yapı</h4>
-<p><img alt="" src="static/images/ikikolon.gif" /></p>
+<h2>Sabit Genişlikteki Sayfalarda İki Kolonlu Yapı</h2>
+<p><img alt="" src="static/images/ikikolon.gif" /> <br />
+</p>
 <p>İlk olarak XHTML kodlarını yazalım.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sayfa&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span> ...
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sayfa&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;anaMenu&quot;</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;altAlan&quot;</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p></div> <div id="icerik"> ... </div> <div id="anaMenu"> ...
-</div> <div id="altAlan"> ... </div> </div> </p>
 <p>Önemli bir nokta varki oda <strong>icerik</strong> alanının <strong>anaMenu</strong>'den önce
 gelmesi gerekmektedir. Erişebilirlilik(yani tüm araçlarda sayfamızın en
 iyi şekilde görünmesi) için <strong>icerik</strong> alanının <strong>anaMenu</strong>'den önce
 gelmesi gerekir. Çünkü pda ve cep telefonu gibi araçlarda katmanların
 sıralamasına göre ekranda görüneceğinden, ilk olarak içerik alanının
 görünmesi tercih sebebidir. şžimdi css kodumuzu yazarsak:</p>
-<div class="codehilite"><pre> <span class="nf">#sayfa</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">768px</span><span class="p">;</span> <span class="p">}</span> <span class="nf">#ustAlan</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nf">#sayfa</span>
+<span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">768px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#ustAlan</span>
+<span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">768px</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#icerik</span> 
+<span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">568px</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#anaMenu</span> 
+<span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#altAlan</span> 
+<span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">768px</span><span class="p">;</span> 
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>768px; } #icerik { float: right; width: 568px; } #anaMenu { float:
-left; width: 200px; } #altAlan { width: 768px; clear: both; }</p>
 <p>Bu kodu yazdıktan sonra sayfamız başta gördüğümüz şekildeki duruma
 gelmiş bulunmaktadır. Burada yazdığımız kodda <strong>"icerik</strong>" alanının
 sağa, <strong>"anaMenu"</strong> alanının sola yerleşmesi için genişlik değeri ve
 float değerleri tanınmlanmıştır. Ayrıca <strong>altAlan</strong>'ın bu iki bölümün
 altında kalması için <strong>clear:both</strong> tanımlaması yapılmıştır.</p>
-<p>[<acronym title="Stil şablonu">CSS</acronym> ile sayfalarımızı ve elementlerimizi ortalamak][] bölümündeki metodu uygulayarak sayfamızı
+<p>CSS ile sayfalarımızı ve elementlerimizi ortalamak][] bölümündeki metodu uygulayarak sayfamızı
 ortalayabilriz.</p>
-<div class="codehilite"><pre> <span class="nf">#sayfa</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">768px</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nf">#sayfa</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">768px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -144,58 +183,129 @@ ortalayabilriz.</p>
 <p>Sabit Genişlikteki Sayfalarda en çok rastlanan problemler sabit genişlik
 uygulanan katmanlara pading, margin ve border değeri atandığında IE5 de
 sorunlu görünmesidir bu problemi aşmak için iki yöntem vardır. Birinci
-yöntem [<acronym title="Stil şablonu">CSS</acronym> ile Kutu modeli, sorunları ve çözümleri][] bölümünde anlatılmıştır. ikinci yöntem ise
+yöntem CSS ile Kutu modeli, sorunları ve çözümleri bölümünde anlatılmıştır. ikinci yöntem ise
 kapsayıcı katmanlara(<strong>icerik</strong>, <strong>anaMenu</strong> vb.) padding ve margin
 vermek yerine kapsayıcı katman içindeki elementlere bu atamaları
 yapmaktır.</p>
 <p>Basit yapılı sayfalarda ikinci yöntemi, karmaşık yapılı sayfalarda ise
 birinci yöntemi denemenizi öneririm.</p>
-<h4>Likit Sayfalarda İki Kolonlu Yapı</h4>
+<h2>Likit Sayfalarda İki Kolonlu Yapı</h2>
 <p>Likit Sayfalarda Sabit Genişlikteki Sayfalar'dan farklı olarak genişlik
 değerleri piksel(px) olarak değil yüzde(%) olarak verilmesidir. Bu tür
 sayfalarda sayfa genişliği web tarayıcısının boyutu ile bağlantılıdır.
 Web tarayıcısının genişliği arttırıldığında sayfa genişliği artacak, web
 tarayıcısının genişliği azaltıldığında sayfa genişli azalacaktır. Kodu
 yazarsak:</p>
-<div class="codehilite"><pre> <span class="nf">#sayfa</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">83</span><span class="o">%</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nf">#sayfa</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">83</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#ustAlan</span>
+<span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#anaMenu</span> 
+<span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">30</span><span class="o">%</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#icerik</span> 
+<span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">70</span><span class="o">%</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#altAlan</span> 
+<span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<h1 30%;="30%;" float:="float:" left;="left;" width:="width:">ustAlan { width: 100%; } #anaMenu</h1>
-<h1>icerik { float: right; width: 70%; } #altAlan { width: 100%; clear:</h1>
-<p>both; } </p>
 <p>Örnek kodu görmek için <a href="static/dokumanlar/elastik_ikikolonlu_websitesi.html">tıklayınız.</a></p>
-<h4>3 Kolonlu Yapı</h4>
-<p><img alt="" src="static/images/uckolon.gif" /></p>
+<h2>3 Kolonlu Yapı</h2>
+<p><img alt="" src="static/images/uckolon.gif" /> <br />
+</p>
 <p>Bir çok sitede üç kolonlu yapı kullanılmaktadır. 3 kolonlu yapı ile iki
 kolonlu yapının kodlamasında fazla bir fark yoktur. Tek yapamız gereken
 yapıyı iki kolonlu bölümlere ayırmaktır, bunun için sağdaki iki kolonu
 bir kapsayıcı katman(KapsayiciAlan) içine alarak yapıyı iki kolonlu hale
 getirdik(anaMenu ve KapsayiciAlan)</p>
-<div class="codehilite"><pre> <span class="nf">#sayfa</span><span class="p">{</span> <span class="k">width</span><span class="o">:</span><span class="m">768px</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nf">#sayfa</span><span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span><span class="m">768px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#ustAlan</span>
+<span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">768px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#anaMenu</span> 
+<span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#KapsayiciAlan</span>
+<span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">568px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#icerik</span> 
+<span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">368px</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nf">#BannerAlani</span><span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#altAlan</span> 
+<span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">768px</span><span class="p">;</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<h1 200px;="200px;" float:="float:" left;="left;" width:="width:">ustAlan { width:768px; } #anaMenu</h1>
-<h1>KapsayiciAlan { float: right; width: 568px; } #icerik { float: left;</h1>
-<p>width: 368px; } #BannerAlani{ float: right; width: 200px; } #altAlan {
-width:768px; clear: both; } </p>
 <p>Ve ayrıca xhtml koda da aşağıdaki değişiklikleri yaptığımızda üç kolonlu
 yapıyı elde ederiz.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sayfa&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span> ...
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sayfa&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;KapsayiciAlan&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;BannerAlani&quot;</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;anaMenu&quot;</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;altAlan&quot;</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p></div> <div id="KapsayiciAlan"> <div id="icerik"> ... </div>
-<div id="BannerAlani"> ... </div> </div> <div id="anaMenu"> ...
-</div> <div id="altAlan"> ... </div> </div> </p>
 <p>Örneği görmek için <a href="static/dokumanlar/sabit_uckolonlu_websitesi.html">tıklayınız.</a></p>
 <p>Aynı şekilde Likit sayfalarda üç kolonlu yapı oluşturabiliriz. Yapmamız
 gerek tek şey değerleri (%) olarak vermektir.</p>
 <p>4,5 vd. kolonlu yapıyı da aynı şekilde yapabiliriz. Bence 3 kolonlu
 yapıdan sonraki kadamelerde(4,5 vd.) tüm katmanlara float:left verilerek
-oluşturmak daha mantıklı ve kolay olur.</p>
-</p><p><a href=".././css-ile-web-sayfasi-olusturma/#disqus_thread">yorum var</a>.</p>
+oluşturmak daha mantıklı ve kolay olur.</p><p><a href=".././css-ile-web-sayfasi-olusturma/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->
@@ -240,7 +350,7 @@ ve clear özelliklerinin kullanımı. Float bir elementi Normal Akışın
 dışına çıkarmak için kullanılan bir yöntemdir. Bir biri ardına
 sıralanmış elementlere float uygulandığında elementler eğer yeterli alan
 varsa yan yana dizilirler. Float Dinamik Göreceli Konumlandırma gibidir
-ve bu amaçla kullanılabilir. <!--more--></p>
+ve bu amaçla kullanılabilir. </p>
 <p>Clear ...</p>
                 <a class="readmore" href=".././float-ve-clear-ozellikler-ile-konumlandirma/">devamını oku</a>
                 <p><a href=".././float-ve-clear-ozellikler-ile-konumlandirma/#disqus_thread">yorum var</a>.</p>

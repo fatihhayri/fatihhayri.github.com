@@ -91,22 +91,28 @@ ve clear özelliklerinin kullanımı. Float bir elementi Normal Akışın
 dışına çıkarmak için kullanılan bir yöntemdir. Bir biri ardına
 sıralanmış elementlere float uygulandığında elementler eğer yeterli alan
 varsa yan yana dizilirler. Float Dinamik Göreceli Konumlandırma gibidir
-ve bu amaçla kullanılabilir. <!--more--></p>
+ve bu amaçla kullanılabilir. </p>
 <p>Clear özelliği ile float uygulanmış element'den sonraki elementlere
 float etkisini durdurmamız mümkündür. Örneğin iki paragrafınız olsun ve
 bunlardan sadece ilkini float uygulanmış elementin yanına koymak
 istiyorsunuz, bu durumda ikinci paragrafa clear özelliği atadığınızda bu
 element float uygulanmış elementin altında konumlanacaktır.</p>
 <h2>float</h2>
-<p><strong>Yapısı :</strong> float: <deger> <strong>Aldığı Değerler :</strong>left | right | none |
-inherit <strong>Başlangıç değeri:</strong> none <strong>Uygulanabilen elementler:</strong> tüm
-elementler <strong>Kalıtsallık:</strong> Yok</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer 4+ Netscape 4+ Opera 3.6+ W3C's CSS
-Level 1+ CSS Profile 1.0
-
-</div>
-
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> float: &lt;deger> <br />
+<strong>Aldığı Değerler :</strong>left | right | none | inherit <br />
+<strong>Başlangıç değeri:</strong> none <br />
+<strong>Uygulanabilen elementler:</strong> tüm elementler <br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu </strong> <br />
+Firefox <br />
+Chrome <br />
+Safari<br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari<br />
+Opera Mobile <br />
+Android Browser</p>
 <p>Float ilk olarak resimleri konumlandırmak için kullanılmıştır.
 Resimlerin metinlere göre konumunu belirlemek için HTML 1.0 ile birlikte
 <strong>align</strong> özelliği kullanıldı. Böylelikle resimler metinlere göre sola
@@ -114,18 +120,21 @@ veya sağa konumlandırması imkanı sağlanmış oldu. Bu kullanım float ile
 benzerdir. Resimleri konumlandırmak için kullanılan bu yöntem daha sonra
 CSS'in olaya el atması ile tüm elementler için kullanıla geldi. Ayrıca
 float özelliği çoklu kolon oluşturmak için de kullanılır.</p>
-<div class="codehilite"><pre> <span class="nt">img</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">4px</span> <span class="m">4px</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">img</span> <span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">4px</span> <span class="m">4px</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
 <p><strong>float:left</strong> ataması yapılan resim sola dayanacak ve metin bu resmin
 etrafını saracaktır.</p>
 <p><img alt="" src="../static/images/floating1a.gif" /></p>
-<div class="codehilite"><pre> ![resim bilgisi][]
+<div class="codehilite"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;resim.gif&quot;</span> <span class="na">width=</span><span class="s">&quot;150&quot;</span> <span class="na">height=</span><span class="s">150</span> <span class="na">alt=</span><span class="s">&quot;resim bilgisi&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;p&gt;</span>... paragraf metni ... <span class="nt">&lt;/p&gt;</span>
 </pre></div>
 
 
-<p>... paragraf metni ...</p>
 <p>Bir elemente float uygulandığında, float uygulanan kutu kapsayıcı
 kutunun veya diğer float kutusunun dış kenarının sağına veya soluna
 kaydırılabilir. Float uygulanan kutu, dökümanın normal akışının dışına
@@ -138,11 +147,18 @@ elementlerin akışı 1.kutu yokmuş gibi devam etmiştir.</p>
 <p>Aşağıdaki şekilde <strong>float:left</strong> tanımlaması yapılarak 1.kutu kapsayıcı
 kutunun en soluna dayanmıştır. Diğer iki kutu ise normal akışına devam
 etmektedir.</p>
-<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span> <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="p">}</span> <span class="nt">img</span>
+<div class="codehilite"><pre><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">200px</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">img</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">4px</span> <span class="m">4px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>{ float:left; margin:0 4px 4px 0; } </p>
 <p>Burada her iki elemente de float uygulanarak metnin resmi sarmasına son
 verilmiştir. Bu çoklu kolon oluşturma tekniğinin basit bir örneğidir.
 Float uygulanan her element satır boyunca yan yana dizilecektir.</p>
@@ -151,17 +167,25 @@ Float uygulanan her element satır boyunca yan yana dizilecektir.</p>
 sondaki kutu kendiliğinden aşağı kayacaktır. Eğer kutular farklı
 yükseklikte ise yükseliği düşük olan kutudan sonra gelen kutu bunun
 altında devam edecektir. Bu durumu düzeltmek için clear özelliği
-kullanılır bunu aşığda göreceğiz. <img alt="" src="../static/images/floating03.gif" /></p>
+kullanılır bunu aşığda göreceğiz. </p>
+<p><img alt="" src="../static/images/floating03.gif" /> <br />
+</p>
 <h2>clear</h2>
-<p><strong>Yapısı :</strong> clear: <deger> <strong>Aldığı Değerler :</strong>none | left | right |
-both <strong>Başlangıç değeri:</strong> tanımsız <strong>Uygulanabilen elementler:</strong> tüm
-elementler <strong>Kalıtsallık:</strong> Yok</p>
-<div class="tarayiciuyum">
-**Browser Uyumu:** Internet Explorer 3+ Netscape 4+ Opera 3.6+ W3C's CSS
-Level 1+ CSS Profile 1.0
-
-</div>
-
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> clear: &lt;deger> <br />
+<strong>Aldığı Değerler :</strong>none | left | right | both <br />
+<strong>Başlangıç değeri:</strong> tanımsız <br />
+<strong>Uygulanabilen elementler:</strong> tüm elementler <br />
+<strong>Kalıtsallık:</strong> Yok</p>
+<p class="tarayiciuyum"><strong>Tarayıcı Uyumu </strong> <br />
+Firefox <br />
+Chrome <br />
+Safari<br />
+Opera <br />
+İnternet Explorer <br />
+<strong>Mobil Tarayıcılar</strong><br />
+iOS Safari<br />
+Opera Mobile <br />
+Android Browser</p>
 <p>Float ile sık sık kullanılan diğer özellik clear'dir. Float elementinin
 etkisinden kurtulmak için <strong>clear</strong> özelliğini kullanırız. Float
 uygulanmış kutu sonra gelen elementleri etkiler bu etkiden kurtulmak
@@ -173,7 +197,7 @@ uygulamasından etkilenecektir. Biz bu etkiyi kaldırmak için clear
 özelliğini kullanırız. Clear özelliği üst kutu ile araya gerekli
 mesafeyi koyacaktır, bir bakıma üst kutu ile araya üst margin değeri
 ataması yapmaktır.</p>
-<p><img alt="" src="../static/images/floating1c.gif" /></p>
+<p><img alt="" src="../static/images/floating1c.gif" /> <br />
 </p>
     </div><!-- /.entry-content -->
     

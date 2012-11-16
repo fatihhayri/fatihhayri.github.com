@@ -693,7 +693,7 @@ yüksekliklerinden dolayı pek hoş görünmeyebilir. Bunun aksine,
 daraltılmış pencerelerde çok kısa ve parçalanmış görüneceklerdir ve
 metin boyutu arttırıldığında üst üste binmiş satırlarda görüneceklerdir.
 Bununla ilgili olarak elastik sayfa oluşturma metodu bize yardım
-edecektir. &lt;!--more--&gt;&lt;/p&gt;
+edecektir.&lt;/p&gt;
 &lt;p&gt;Elastik Sayfalar web tarayıcılarına göre font boyutunun ve elementlerin
 genişliğinin göreceli olarak ayarlandığı sayfalardır. Genişlikleri
 &lt;strong&gt;em&lt;/strong&gt;, yüzde(%) ve ex gibi göreceli birimler kullanarak
@@ -710,27 +710,61 @@ yapabilriz. Ancak bu özelliği IE6 desteklememektedir.&lt;/p&gt;
 tasarımı yapılan bir sayfanın birimleri &lt;strong&gt;piksel&lt;/strong&gt;yerine &lt;strong&gt;em&lt;/strong&gt; olarak
 değiştirilirse sayfa elastik yapıya kavuşacaktır. 1em yaklaşık olarak
 10piksele denk gelir.&lt;/p&gt;
-&lt;div class="ekstrabilgi"&gt;
-em'in asıl tanımı küçük "**m**" harfi genişliğidir. Normalde **em** font
+&lt;p&gt;em'in asıl tanımı küçük "&lt;strong&gt;m&lt;/strong&gt;" harfi genişliğidir. Normalde &lt;strong&gt;em&lt;/strong&gt; font
 boyutu birimi olarak kullanılır ancak CSS'de width,line-height vd.
 özelliklerin birimi olarak da kullanılabilir. Em üst elemente veya diğer
 elementleri baz alarak göreceli bir değer alır. Bu özellik bize elastik
-web sayfası hazırlama imkanı verir.
-
-&lt;/div&gt;
-
+web sayfası hazırlama imkanı verir.&lt;/p&gt;
 &lt;p&gt;Çoğu web tarayıcısınnda normal font boyutu 16px'dir. 10 pikselin
 yüzdesel değeri yaklaşık olarak 62.5% civarındadır. Bu belirtilen
 değerlere göre kodumuzu yazarsak:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;62&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;62&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#sayfa&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;72em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#ustAlan&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;72em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#anaMenu&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;18em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#KapsayiciAlan&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;52em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#icerik&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;32em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#BannerAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;20em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;#altAlan&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;72em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;font-family:Arial, Helvetica, sans-serif; } #sayfa{ width:72em;
-margin:0 auto; text-align:left; } #ustAlan { width:72em; } #anaMenu {
-float: left; width: 18em; } #KapsayiciAlan { float: right; width: 52em;
-} #icerik { float: left; width: 32em; } #BannerAlani{ float: right;
-width: 20em; } #altAlan { width:72em; clear: both; } &lt;/p&gt;
 &lt;p&gt;Burada body elementi font boyutunu 1em eşit olan font-size:62.5%;
 atamasını yaptık. Daha sonra sayfadaki birimleri bu değeri baz alarak
 hesapladık ve em birimi vererek sayfamızı elastik bir hala getirdik.&lt;/p&gt;
@@ -738,5 +772,4 @@ hesapladık ve em birimi vererek sayfamızı elastik bir hala getirdik.&lt;/p&gt
 tarayıcısının font boyutu değerlerini veya yakınlaştırma(zoom) aracını
 (Opera, FF-eklentisi var ve IE 7 de var)kullanarak görebilriz. IE ve FF
 için Görünüm(View) - Metin Boyutu(Text Size) Opera için View - Zoom
-seçeneklerini kullanarak farkı görebilriz.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="clear"></category><category term="CSS"></category><category term="Elastik Web Sayfaları"></category><category term="em"></category><category term="float"></category><category term="Javascript"></category><category term="XHTML"></category></entry></feed>
+seçeneklerini kullanarak farkı görebilriz.&lt;/p&gt;</summary><category term="clear"></category><category term="CSS"></category><category term="Elastik Web Sayfaları"></category><category term="em"></category><category term="float"></category><category term="Javascript"></category><category term="XHTML"></category></entry></feed>

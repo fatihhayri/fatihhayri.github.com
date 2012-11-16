@@ -5518,50 +5518,95 @@ px)göre tasarımlar yapılmaktadır. Web tarayıcılarının tüm alanını
 kullanmak için elastik sayfalar kodlanıyor artık. Bana da genişliği %100
 ve yüksekliği %100 lazım oldu. Aradım bulamadım bulduklarımın
 birleştirip böyle bir sayfa elde ettim. Belki sizede lazım olur diye
-buraya yazayım dedim. &lt;!--more--&gt;&lt;/p&gt;
-&lt;div class="ekstrabilgi"&gt;
+buraya yazayım dedim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not&lt;/strong&gt;
 Aslında yüksekliğin %100 olması alt alanın web tarayıcısının alt kısmına
-yapıştırılması ile elde ediyoruz.
-
-&lt;/div&gt;
-
-&lt;h4&gt;İki Kolonlu Yapı&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="İki Kolon" src="/images/iki_kolon_yuzde.gif" /&gt;İlk olarak başlığı, iki kolonlu içeriği(solda menü, sağda
+yapıştırılması ile elde ediyoruz.&lt;/p&gt;
+&lt;h2&gt;İki Kolonlu Yapı&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="İki Kolon" src="/images/iki_kolon_yuzde.gif" /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;İlk olarak başlığı, iki kolonlu içeriği(solda menü, sağda
 içerik) ve alt kısmı olan bir sayfa iskeleti oluşturalım. Burada sol
 menü alanının genişliğini sabit tutup sağdaki içerik alanının
 genişliğini esnek yapacağız. Xhtml kodu:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=iso-8859-9&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;%100 Genişlik %100 Yükseklik – İki Kolon&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;style &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;!&lt;/span&gt;&lt;span class="nt"&gt;--&lt;/span&gt;
+&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;style/iki_kolonlu_yuzdeyuz.css&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="nt"&gt;--&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kapsul&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ustAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; üst alan
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;solAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Menü&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;icerikAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+Lorem ipsum dolor sit amet, ..., tempor at, sem.
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Sed adipiscing, ... in ligula. &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;tampon&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;altAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Alt Kısım&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" /&gt;
-&lt;title&gt;%100 Genişlik %100 Yükseklik – İki Kolon&lt;/title&gt; &lt;style
-type="text/css"&gt; &lt;!-- @import url("style/iki_kolonlu_yuzdeyuz.css");
---&gt; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="kapsul"&gt; &lt;div
-id="ustAlan"&gt; üst alan &lt;/div&gt; &lt;div id="solAlan"&gt;Menü&lt;/div&gt; &lt;div
-id="icerikAlani"&gt; Lorem ipsum dolor sit amet, ..., tempor at, sem.
-&lt;p&gt;Sed adipiscing, ... in ligula. &lt;/p&gt; &lt;/div&gt; &lt;div
-class="tampon"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div id="altAlan"&gt; &lt;p&gt;Alt
-Kısım&lt;/p&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt; &lt;/p&gt;
-&lt;p&gt;CSS Kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;p&gt;CSS Kodu;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;62&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#F78200&lt;/span&gt; &lt;span class="sx"&gt;url(../images/genel_zr.gif)&lt;/span&gt; &lt;span class="k"&gt;top&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt; &lt;span class="k"&gt;repeat-y&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="c"&gt;/* usalan tanimlari */&lt;/span&gt;
+&lt;span class="nf"&gt;#ustAlan&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;6.4em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#CCCCCC&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="c"&gt;/* icerik alani */&lt;/span&gt;
+&lt;span class="nc"&gt;.kapsul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;min-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt; &lt;span class="cp"&gt;!important&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt; &lt;span class="m"&gt;-4em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* altAlan yukseklik degeri ile ayn olmali */&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#solAlan&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;15em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;15em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#icerikAlani&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt; &lt;span class="m"&gt;16em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1em&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#altAlan&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nc"&gt;.tampon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;4em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* .tampon ile altAlan yuksekligi ayni olmali */&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nf"&gt;#altAlan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#036&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#cfc&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;font-size:62.5%; font-family:Arial, Helvetica, sans-serif; } body{
-background:#F78200 url(../images/genel_zr.gif) top left repeat-y; }
-/&lt;em&gt; usalan tanimlari &lt;/em&gt;/ #ustAlan { height: 6.4em;
-background-color:#CCCCCC; } /&lt;em&gt; icerik alani &lt;/em&gt;/ .kapsul { min-height:
-100%; height: auto !important; height: 100%; margin: 0 auto -4em; /&lt;em&gt;
-altAlan yukseklik degeri ile ayn olmali &lt;/em&gt;/ } #solAlan { float: left;
-clear:both; width: 15em; height: 15em; margin-bottom: 1em; }&lt;/p&gt;
-&lt;h1&gt;icerikAlani { margin: 0 0 1em 16em; font:1em Arial, Helvetica,&lt;/h1&gt;
-&lt;p&gt;sans-serif; } #altAlan, .tampon { height: 4em; /&lt;em&gt; .tampon ile altAlan
-yuksekligi ayni olmali &lt;/em&gt;/ } #altAlan{ text-align:center; color:#036;
-background-color:#cfc; } &lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/iki_kolonlu_yuzdeyuz.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Burada değinmemiz gereken önemli alanları belirtelim. &lt;strong&gt;.kapsul&lt;/strong&gt;
 alanındaki tanımlarda 100% yüksekliği yakalamak için yükseklik değerine
@@ -5577,56 +5622,110 @@ margin değerini &lt;strong&gt;#solAlan&lt;/strong&gt; içeriği kadar + &lt;str
 &lt;strong&gt;#altAlan&lt;/strong&gt; yüksekliği kadar &lt;strong&gt;.tampon&lt;/strong&gt; bir katman koyuyoruz. Burada
 anlamlı(semantik) kod yazma kuralının dışına çıkıyoruz ama bu kadar
 kusur kadı kızında da olur.:D&lt;/p&gt;
-&lt;h4&gt;Üç Kolonlu Yapı&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="Üç kolon" src="/images/uc_kolon_yuzde.gif" /&gt;Şimdide 3 kolonlu olanını yapalım. İki kolonlu ile üç
+&lt;h2&gt;Üç Kolonlu Yapı&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Üç kolon" src="/images/uc_kolon_yuzde.gif" /&gt; &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Şimdide 3 kolonlu olanını yapalım. İki kolonlu ile üç
 kolonlu arasında pek bir fark yoktur aslında. Sadece &lt;strong&gt;.icerikAlani&lt;/strong&gt;
 tanımında bir iki değişiklik ve sağ alan eklemesi yapılmıştır. Ayrıca
 kapsul içine bir sağa dayalı bir zemin resmi daha koyarak sağ kolonun
 zemini yeşil yapılmıştır. Yapılan değişiklikler &lt;strong&gt;kalın&lt;/strong&gt; olarak
 işaretlenmiştir.&lt;/p&gt;
-&lt;p&gt;Xhtml kodu:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="err"&gt;&amp;lt;&lt;/span&gt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML
+&lt;p&gt;HTML kodu:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/html; charset=iso-8859-9&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;%100 Genişlik %100 Yükseklik – İki Kolon&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;style &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+&lt;span class="o"&gt;&amp;lt;!&lt;/span&gt;&lt;span class="nt"&gt;--&lt;/span&gt;
+&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="nt"&gt;url&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;style/iki_kolonlu_yuzdeyuz.css&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="nt"&gt;--&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kapsul&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ustAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; üst alan 
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;solAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Menü&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sagAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Sağ Alan &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;icerikAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+Lorem ipsum dolor sit amet, ... sem. 
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Sed adipiscing, ... ligula. &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;tampon&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;altAlan&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Alt Kısım&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&amp;gt; &lt;html
-xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" /&gt;
-&lt;title&gt;%100 Genişlik %100 Yükseklik – İki Kolon&lt;/title&gt; &lt;style
-type="text/css"&gt; &lt;!-- @import url("style/iki_kolonlu_yuzdeyuz.css");
---&gt; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="kapsul"&gt; &lt;div
-id="ustAlan"&gt; üst alan &lt;/div&gt; &lt;div id="solAlan"&gt;Menü&lt;/div&gt; &lt;div
-id="sagAlan"&gt; &lt;p&gt;Sağ Alan &lt;/p&gt;&lt;/div&gt; &lt;div id="icerikAlani"&gt;
-Lorem ipsum dolor sit amet, ... sem. &lt;p&gt;Sed adipiscing, ... ligula.
-&lt;/p&gt; &lt;/div&gt; &lt;div class="tampon"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div
-id="altAlan"&gt; &lt;p&gt;Alt Kısım&lt;/p&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;&lt;/p&gt;
 &lt;p&gt;CSS Kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;font-size&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;62&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;font-family&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#F78200&lt;/span&gt; &lt;span class="sx"&gt;url(../images/genel_zr.gif)&lt;/span&gt; &lt;span class="k"&gt;top&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt; &lt;span class="k"&gt;repeat-y&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="c"&gt;/* usalan tanimlari */&lt;/span&gt; 
+&lt;span class="nf"&gt;#ustAlan&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;6.4em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#CCCCCC&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="c"&gt;/* icerik alani */&lt;/span&gt; 
+&lt;span class="nc"&gt;.kapsul&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="sx"&gt;url(../images/sag_zr.gif)&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt; &lt;span class="k"&gt;top&lt;/span&gt; &lt;span class="k"&gt;repeat-y&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;min-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt; &lt;span class="cp"&gt;!important&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt; &lt;span class="m"&gt;-4em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* altAlan yukseklik degeri ile ayn olmali */&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="nf"&gt;#solAlan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;clear&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;15em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;15em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;margin-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="nf"&gt;#icerikAlani&lt;/span&gt; 
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;16em&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt; &lt;span class="m"&gt;16em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Helvetica&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="nf"&gt;#altAlan&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nc"&gt;.tampon&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;4em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* .tampon ile altAlan yuksekligi ayni olmali */&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="nf"&gt;#altAlan&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#036&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+    &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#cfc&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt; 
+&lt;span class="c"&gt;/* 3 kolon lu yapi */&lt;/span&gt; 
+&lt;span class="nf"&gt;#sagAlan&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;15em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;font-size:62.5%; font-family:Arial, Helvetica, sans-serif; } body{
-background:#F78200 url(../images/genel_zr.gif) top left repeat-y; }
-/&lt;em&gt; usalan tanimlari &lt;/em&gt;/ #ustAlan { height: 6.4em;
-background-color:#CCCCCC; } /&lt;em&gt; icerik alani &lt;/em&gt;/ .kapsul {
-background:url(../images/sag_zr.gif) right top repeat-y; min-height:
-100%; height: auto !important; height: 100%; margin: 0 auto -4em; /&lt;em&gt;
-altAlan yukseklik degeri ile ayn olmali &lt;/em&gt;/ } #solAlan{ float: left;
-clear:both; width: 15em; height: 15em; margin-bottom: 1em; }&lt;/p&gt;
-&lt;h1&gt;icerikAlani { margin: 0 16em 1em 16em; font:Arial, Helvetica,&lt;/h1&gt;
-&lt;p&gt;sans-serif; } #altAlan, .tampon { height: 4em; /&lt;em&gt; .tampon ile altAlan
-yuksekligi ayni olmali &lt;/em&gt;/ } #altAlan{ text-align:center; color:#036;
-background-color:#cfc; } /&lt;em&gt; 3 kolon lu yapi &lt;/em&gt;/ #sagAlan { float:
-right; width: 15em; } &lt;/p&gt;
 &lt;p&gt;Örnek kodu görmek için &lt;a href="/dokumanlar/uc_kolonlu_yuzdeyuz.html"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Kodlar IE6, IE7 ve FF da denenmiştir.&lt;/p&gt;
-&lt;h4&gt;Kaynak:&lt;/h4&gt;
+&lt;h2&gt;Kaynak:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.maxdesign.com.au/presentation/liquid/example02.htm"&gt;http://www.maxdesign.com.au/presentation/liquid/example02.htm&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://ryanfait.com/sticky-footer/"&gt;http://ryanfait.com/sticky-footer/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="CSS"></category><category term="XHTML"></category></entry><entry><title>CSS için Başlangıç Stilleri</title><link href="http://www.fatihhayrioglu.com/css-icin-baslangic-stilleri/" rel="alternate"></link><updated>2007-05-23T14:41:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-05-23:css-icin-baslangic-stilleri/</id><summary type="html">&lt;h4&gt;&lt;strong&gt;Kodunuza Yorum Yapın&lt;/strong&gt;&lt;/h4&gt;
+&lt;/ul&gt;</summary><category term="CSS"></category><category term="XHTML"></category></entry><entry><title>CSS için Başlangıç Stilleri</title><link href="http://www.fatihhayrioglu.com/css-icin-baslangic-stilleri/" rel="alternate"></link><updated>2007-05-23T14:41:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2007-05-23:css-icin-baslangic-stilleri/</id><summary type="html">&lt;h4&gt;&lt;strong&gt;Kodunuza Yorum Yapın&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;Farklı web tarayıcılarının kodları farklı şekilde yorumlamalarından
 dolayı hızlı CSS kodlamak zorlaşıyor. Tasarımlar her web tarayıcısında
 aynı şekilde görünmez fakat kodlamaya başlarken başlangıç stil dosyası

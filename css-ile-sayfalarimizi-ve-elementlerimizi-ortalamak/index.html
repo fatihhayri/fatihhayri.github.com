@@ -90,15 +90,20 @@
 elementleri nasıl oratalayacağımızı göreceğiz. Inline-level elementleri
 <strong>text-align:center</strong> özelliğini kullanarak ortalayabiliriz. Blok-level
 elementleri ortalamak için ise bir iki metod vardır. Sırası ile
-inceleyelim. <!--more--></p>
+inceleyelim. </p>
 <h2>1- Genişleyebilir blok-level elementleri ortalamak</h2>
-<div class="codehilite"><pre> <span class="nc">.ortala</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="m">10</span><span class="o">%</span><span class="p">;</span> <span class="k">margin-right</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.ortala</span> <span class="p">{</span> 
+    <span class="k">margin-left</span><span class="o">:</span> <span class="m">10</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">margin-right</span><span class="o">:</span><span class="m">10</span><span class="o">%</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>10%; }      :::html</p>
-<p>Lorem Ipsum is simply dummy text of the printing and
-typesettingindustry.</p>
+<p>HTML kodu;</p>
+<div class="codehilite"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;ortala&quot;</span><span class="nt">&gt;</span>Lorem Ipsum is simply dummy text of the printing and typesettingindustry. <span class="nt">&lt;/p&gt;</span>
+</pre></div>
+
+
 <p>Genişliği sabit olmayan, genişleyebilir blok-level elementlerin
 ortalanması için bu metod kullanılır. Tüm web tarayıcılı bu metodu
 destekler.</p>
@@ -109,31 +114,49 @@ ataması yapıyoruz.</p>
 <p>W3C'de bu konu hakkında şu ifade mevcuttur: <strong>"Eğer margin-left ve
 margin-right değerleri auto verilirse bu blokun ortalanması anlamına
 gelir."</strong></p>
-<div class="codehilite"><pre> <span class="nc">.ortala2</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> <span class="k">margin-right</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.ortala2</span> <span class="p">{</span> 
+    <span class="k">margin-left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> 
+    <span class="k">margin-right</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">50em</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>auto; width: 50em; } </p>
 <p>NN4 (Mac and Win), Win/IE4, Win/IE5, Win/IE5.5, Win/IE6 (Garip mod :
 quirks-mode) web tarayıcılıar bu kodu desteklememektedir.</p>
 <p>Bu sorunu aşabilemke için iki satır kod yazmamız yeterli olacaktır.(NN4
 hariç)</p>
 <p>Bu metodu desteklemeyen web tarayıcıları için body etiketine
 <strong>text-align:center</strong> ataması yaptığımızda sorun çözülmüş demektir.</p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span> <span class="p">}</span> <span class="nc">.ortala2</span> <span class="p">{</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nc">.ortala2</span> <span class="p">{</span>
+    <span class="k">margin-left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> 
+    <span class="k">margin-right</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">50em</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>margin-left: auto; margin-right: auto; width: 50em; } </p>
 <p>Yanlız bir sorunumuz daha var. <strong>text-align:center</strong> ataması body
 içindeki tüm elementlerin ortalanmasına neden olacaktır. Bunu engellemek
 için bir katman oluşturup bu katman da hizalama değerini başlangıç
 değerine(yani sola yaslamalıyız) çevirmeliyiz.</p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span> <span class="p">}</span> <span class="nc">.ortala2</span> <span class="p">{</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nc">.ortala2</span> <span class="p">{</span>
+    <span class="k">margin-left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> 
+    <span class="k">margin-right</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">50em</span><span class="p">;</span> 
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>margin-left: auto; margin-right: auto; width: 50em; text-align: left; }</p>
 <p>Bu kodlama tüm web tarayıcılarında çalışacaktır.(NN4 hariç)</p>
 <p><strong>2.b. Konumlandırma(positioning) kullanılan elementlerin negatif margin
 ile ortalanması</strong></p>
@@ -142,15 +165,18 @@ kullanılabilir. Bu metod da bir önceki gibi fazladan bir katman
 kullanmaya gerek yoktur. Genişlik tanımı yapılan göreceli
 konumlandırılmış elementin <strong>margin-left</strong> değeri element genişliğinin
 yarısı(1/2) kadar verilerek sağlanır.</p>
-<div class="codehilite"><pre> <span class="nc">.ortala3</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">720px</span><span class="p">;</span> <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nc">.ortala3</span> <span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">720px</span><span class="p">;</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">margin-left</span><span class="o">:</span> <span class="m">-360px</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>left: 50%; margin-left: -360px; } </p>
 <p>Burada sizlere bir iki metodla element ortalamayı gösterdik. Siz
 kullandığınız yer ve ihtiyaçlarınıza göre bunlardan birini
 kullanabilirsiniz.</p>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

@@ -94,50 +94,95 @@ px)göre tasarımlar yapılmaktadır. Web tarayıcılarının tüm alanını
 kullanmak için elastik sayfalar kodlanıyor artık. Bana da genişliği %100
 ve yüksekliği %100 lazım oldu. Aradım bulamadım bulduklarımın
 birleştirip böyle bir sayfa elde ettim. Belki sizede lazım olur diye
-buraya yazayım dedim. <!--more--></p>
-<div class="ekstrabilgi">
+buraya yazayım dedim.</p>
+<p><strong>Not</strong>
 Aslında yüksekliğin %100 olması alt alanın web tarayıcısının alt kısmına
-yapıştırılması ile elde ediyoruz.
-
-</div>
-
-<h4>İki Kolonlu Yapı</h4>
-<p><img alt="İki Kolon" src="../static/images/iki_kolon_yuzde.gif" />İlk olarak başlığı, iki kolonlu içeriği(solda menü, sağda
+yapıştırılması ile elde ediyoruz.</p>
+<h2>İki Kolonlu Yapı</h2>
+<p><img alt="İki Kolon" src="../static/images/iki_kolon_yuzde.gif" /><br />
+</p>
+<p>İlk olarak başlığı, iki kolonlu içeriği(solda menü, sağda
 içerik) ve alt kısmı olan bir sayfa iskeleti oluşturalım. Burada sol
 menü alanının genişliğini sabit tutup sağdaki içerik alanının
 genişliğini esnek yapacağız. Xhtml kodu:</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=iso-8859-9&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;title&gt;</span>%100 Genişlik %100 Yükseklik – İki Kolon<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+<span class="o">&lt;!</span><span class="nt">--</span>
+<span class="k">@import</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&quot;style/iki_kolonlu_yuzdeyuz.css&quot;</span><span class="o">)</span><span class="p">;</span> 
+<span class="nt">--</span><span class="o">&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span> üst alan
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;solAlan&quot;</span><span class="nt">&gt;</span>Menü<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikAlani&quot;</span><span class="nt">&gt;</span>
+Lorem ipsum dolor sit amet, ..., tempor at, sem.
+<span class="nt">&lt;p&gt;</span>Sed adipiscing, ... in ligula. <span class="nt">&lt;/p&gt;</span> 
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tampon&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;altAlan&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p&gt;</span>Alt Kısım<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-<title>%100 Genişlik %100 Yükseklik – İki Kolon</title> <style
-type="text/css"> <!-- @import url("style/iki_kolonlu_yuzdeyuz.css");
---> </style> </head> <body> <div class="kapsul"> <div
-id="ustAlan"> üst alan </div> <div id="solAlan">Menü</div> <div
-id="icerikAlani"> Lorem ipsum dolor sit amet, ..., tempor at, sem.
-<p>Sed adipiscing, ... in ligula. </p> </div> <div
-class="tampon"></div> </div> <div id="altAlan"> <p>Alt
-Kısım</p> </div> </body> </html> </p>
-<p>CSS Kodu</p>
-<div class="codehilite"><pre> <span class="o">*</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span> <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<p>CSS Kodu;</p>
+<div class="codehilite"><pre><span class="o">*</span> <span class="p">{</span>
+<span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span><span class="m">62</span><span class="o">.</span><span class="m">5</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="o">:</span><span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#F78200</span> <span class="sx">url(../images/genel_zr.gif)</span> <span class="k">top</span> <span class="k">left</span> <span class="k">repeat-y</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* usalan tanimlari */</span>
+<span class="nf">#ustAlan</span> <span class="p">{</span>
+<span class="k">height</span><span class="o">:</span> <span class="m">6.4em</span><span class="p">;</span>
+<span class="k">background-color</span><span class="o">:</span><span class="m">#CCCCCC</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* icerik alani */</span>
+<span class="nc">.kapsul</span> <span class="p">{</span>
+    <span class="k">min-height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="k">auto</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span> <span class="m">-4em</span><span class="p">;</span> <span class="c">/* altAlan yukseklik degeri ile ayn olmali */</span>
+<span class="p">}</span>
+<span class="nf">#solAlan</span>
+<span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">clear</span><span class="o">:</span><span class="k">both</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">15em</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">15em</span><span class="p">;</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#icerikAlani</span>
+<span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">1em</span> <span class="m">16em</span><span class="p">;</span>
+    <span class="k">font</span><span class="o">:</span><span class="m">1em</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#altAlan</span><span class="o">,</span> <span class="nc">.tampon</span> <span class="p">{</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">4em</span><span class="p">;</span> <span class="c">/* .tampon ile altAlan yuksekligi ayni olmali */</span>
+<span class="p">}</span>
+<span class="nf">#altAlan</span><span class="p">{</span>
+    <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#036</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#cfc</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>font-size:62.5%; font-family:Arial, Helvetica, sans-serif; } body{
-background:#F78200 url(../images/genel_zr.gif) top left repeat-y; }
-/<em> usalan tanimlari </em>/ #ustAlan { height: 6.4em;
-background-color:#CCCCCC; } /<em> icerik alani </em>/ .kapsul { min-height:
-100%; height: auto !important; height: 100%; margin: 0 auto -4em; /<em>
-altAlan yukseklik degeri ile ayn olmali </em>/ } #solAlan { float: left;
-clear:both; width: 15em; height: 15em; margin-bottom: 1em; }</p>
-<h1>icerikAlani { margin: 0 0 1em 16em; font:1em Arial, Helvetica,</h1>
-<p>sans-serif; } #altAlan, .tampon { height: 4em; /<em> .tampon ile altAlan
-yuksekligi ayni olmali </em>/ } #altAlan{ text-align:center; color:#036;
-background-color:#cfc; } </p>
 <p>Örnek kodu görmek için <a href="../static/dokumanlar/iki_kolonlu_yuzdeyuz.html">tıklayınız.</a></p>
 <p>Burada değinmemiz gereken önemli alanları belirtelim. <strong>.kapsul</strong>
 alanındaki tanımlarda 100% yüksekliği yakalamak için yükseklik değerine
@@ -153,56 +198,110 @@ margin değerini <strong>#solAlan</strong> içeriği kadar + <strong>1em</strong
 <strong>#altAlan</strong> yüksekliği kadar <strong>.tampon</strong> bir katman koyuyoruz. Burada
 anlamlı(semantik) kod yazma kuralının dışına çıkıyoruz ama bu kadar
 kusur kadı kızında da olur.:D</p>
-<h4>Üç Kolonlu Yapı</h4>
-<p><img alt="Üç kolon" src="../static/images/uc_kolon_yuzde.gif" />Şimdide 3 kolonlu olanını yapalım. İki kolonlu ile üç
+<h2>Üç Kolonlu Yapı</h2>
+<p><img alt="Üç kolon" src="../static/images/uc_kolon_yuzde.gif" /> <br />
+</p>
+<p>Şimdide 3 kolonlu olanını yapalım. İki kolonlu ile üç
 kolonlu arasında pek bir fark yoktur aslında. Sadece <strong>.icerikAlani</strong>
 tanımında bir iki değişiklik ve sağ alan eklemesi yapılmıştır. Ayrıca
 kapsul içine bir sağa dayalı bir zemin resmi daha koyarak sağ kolonun
 zemini yeşil yapılmıştır. Yapılan değişiklikler <strong>kalın</strong> olarak
 işaretlenmiştir.</p>
-<p>Xhtml kodu:</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML
+<p>HTML kodu:</p>
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=iso-8859-9&quot;</span> <span class="nt">/&gt;</span> 
+<span class="nt">&lt;title&gt;</span>%100 Genişlik %100 Yükseklik – İki Kolon<span class="nt">&lt;/title&gt;</span> 
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span> 
+<span class="o">&lt;!</span><span class="nt">--</span>
+<span class="k">@import</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&quot;style/iki_kolonlu_yuzdeyuz.css&quot;</span><span class="o">)</span><span class="p">;</span> 
+<span class="nt">--</span><span class="o">&gt;</span>
+<span class="nt">&lt;/style&gt;</span> 
+<span class="nt">&lt;/head&gt;</span> 
+<span class="nt">&lt;body&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;ustAlan&quot;</span><span class="nt">&gt;</span> üst alan 
+<span class="nt">&lt;/div&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;solAlan&quot;</span><span class="nt">&gt;</span>Menü<span class="nt">&lt;/div&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sagAlan&quot;</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Sağ Alan <span class="nt">&lt;/p&gt;&lt;/div&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikAlani&quot;</span><span class="nt">&gt;</span>
+Lorem ipsum dolor sit amet, ... sem. 
+<span class="nt">&lt;p&gt;</span>Sed adipiscing, ... ligula. <span class="nt">&lt;/p&gt;</span> 
+<span class="nt">&lt;/div&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tampon&quot;</span><span class="nt">&gt;&lt;/div&gt;</span> 
+<span class="nt">&lt;/div&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;altAlan&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;p&gt;</span>Alt Kısım<span class="nt">&lt;/p&gt;</span> 
+<span class="nt">&lt;/div&gt;</span> 
+<span class="nt">&lt;/body&gt;</span> 
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-<title>%100 Genişlik %100 Yükseklik – İki Kolon</title> <style
-type="text/css"> <!-- @import url("style/iki_kolonlu_yuzdeyuz.css");
---> </style> </head> <body> <div class="kapsul"> <div
-id="ustAlan"> üst alan </div> <div id="solAlan">Menü</div> <div
-id="sagAlan"> <p>Sağ Alan </p></div> <div id="icerikAlani">
-Lorem ipsum dolor sit amet, ... sem. <p>Sed adipiscing, ... ligula.
-</p> </div> <div class="tampon"></div> </div> <div
-id="altAlan"> <p>Alt Kısım</p> </div> </body> </html></p>
 <p>CSS Kodu</p>
-<div class="codehilite"><pre> <span class="o">*</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span> <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="o">*</span> <span class="p">{</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">font-size</span><span class="o">:</span><span class="m">62</span><span class="o">.</span><span class="m">5</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">font-family</span><span class="o">:</span><span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">body</span><span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span><span class="m">#F78200</span> <span class="sx">url(../images/genel_zr.gif)</span> <span class="k">top</span> <span class="k">left</span> <span class="k">repeat-y</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="c">/* usalan tanimlari */</span> 
+<span class="nf">#ustAlan</span> <span class="p">{</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">6.4em</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#CCCCCC</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="c">/* icerik alani */</span> 
+<span class="nc">.kapsul</span> <span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(../images/sag_zr.gif)</span> <span class="k">right</span> <span class="k">top</span> <span class="k">repeat-y</span><span class="p">;</span> 
+    <span class="k">min-height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="k">auto</span> <span class="cp">!important</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span> <span class="m">-4em</span><span class="p">;</span> <span class="c">/* altAlan yukseklik degeri ile ayn olmali */</span> 
+<span class="p">}</span> 
+<span class="nf">#solAlan</span><span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">clear</span><span class="o">:</span><span class="k">both</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">15em</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">15em</span><span class="p">;</span> 
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nf">#icerikAlani</span> 
+<span class="p">{</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">16em</span> <span class="m">1em</span> <span class="m">16em</span><span class="p">;</span> 
+    <span class="k">font</span><span class="o">:</span><span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nf">#altAlan</span><span class="o">,</span> <span class="nc">.tampon</span> <span class="p">{</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">4em</span><span class="p">;</span> <span class="c">/* .tampon ile altAlan yuksekligi ayni olmali */</span> 
+<span class="p">}</span> 
+<span class="nf">#altAlan</span><span class="p">{</span> 
+    <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#036</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#cfc</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="c">/* 3 kolon lu yapi */</span> 
+<span class="nf">#sagAlan</span>
+<span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">15em</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>font-size:62.5%; font-family:Arial, Helvetica, sans-serif; } body{
-background:#F78200 url(../images/genel_zr.gif) top left repeat-y; }
-/<em> usalan tanimlari </em>/ #ustAlan { height: 6.4em;
-background-color:#CCCCCC; } /<em> icerik alani </em>/ .kapsul {
-background:url(../images/sag_zr.gif) right top repeat-y; min-height:
-100%; height: auto !important; height: 100%; margin: 0 auto -4em; /<em>
-altAlan yukseklik degeri ile ayn olmali </em>/ } #solAlan{ float: left;
-clear:both; width: 15em; height: 15em; margin-bottom: 1em; }</p>
-<h1>icerikAlani { margin: 0 16em 1em 16em; font:Arial, Helvetica,</h1>
-<p>sans-serif; } #altAlan, .tampon { height: 4em; /<em> .tampon ile altAlan
-yuksekligi ayni olmali </em>/ } #altAlan{ text-align:center; color:#036;
-background-color:#cfc; } /<em> 3 kolon lu yapi </em>/ #sagAlan { float:
-right; width: 15em; } </p>
 <p>Örnek kodu görmek için <a href="../static/dokumanlar/uc_kolonlu_yuzdeyuz.html">tıklayınız.</a></p>
 <p>Kodlar IE6, IE7 ve FF da denenmiştir.</p>
-<h4>Kaynak:</h4>
+<h2>Kaynak:</h2>
 <ul>
 <li><a href="http://www.maxdesign.com.au/presentation/liquid/example02.htm">http://www.maxdesign.com.au/presentation/liquid/example02.htm</a></li>
 <li><a href="http://ryanfait.com/sticky-footer/">http://ryanfait.com/sticky-footer/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

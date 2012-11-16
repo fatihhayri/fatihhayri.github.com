@@ -91,15 +91,11 @@ işi için bir çok teori ve yöntem ileri sürülmektedir. Ben bunların en
 makbul olanını bulup uygulamak istedim ve bu makalede bunu sizlerle
 paylaşıyorum. Aslında bulunan çözümler beni tam olarak tatmin etmiyor
 desem yeridir. Aşağıda anlatılacak yöntem istediğimiz sonucu elde etmek
-için yeterli olacaktır. <!--more--></p>
-<div class="ekstrabilgi">
- CSS ile dikey oratalama ile ilgili farklı yöntemler vardır. Ayrıca bazı
+için yeterli olacaktır.</p>
+<p>CSS ile dikey oratalama ile ilgili farklı yöntemler vardır. Ayrıca bazı
 şartlara göre de kodlama önerileri vardır, biz burada bunlara değinmeden
 geçeceğiz. İlgilenenler makalenin sonunda verilen kaynaklar bölümündeki
-linkleri takip edip ilgili yöntemlere erişebilirler.
-
-</div>
-
+linkleri takip edip ilgili yöntemlere erişebilirler.</p>
 <p>CSS ile dikeyde ortalama yapmak için <strong>vertical-align</strong> özelliği var ise
 de bu özellik HTML'deki tablo gibi çalışmaz. Yani istediğimiz sonuca
 bizi ulaştırmaz.</p>
@@ -116,26 +112,47 @@ ortalanmak istenen elemente <strong>vertical-align</strong> tanımı yaparak ele
 dikeyde ortalanır. (Bu özelliği IE kavrayamamaktadır. Kavramamakta da
 ısrarlıdır. IE 7 display:table ve türevlerini desteklemiyor.)</p>
 <p>İki çözüm vardır altçizgi(<em>) ve (#) ile yapılan bir çözüm vardır.
-IE(IE7 hariç) (</em>) ile tanımlanan kodu görmediği için yorumlamayacaktır.</p>
-<h1>ile başlayan kodları tüm IE versiyonları(IE7 dahil) görmeyecektir. Bu</h1>
-<p>işaretlerin kullanım amacı tüm versiyonlarda aynı sonucu elde etmektir.</p>
+IE(IE7 hariç) (</em>) ile tanımlanan kodu görmediği için yorumlamayacaktır.
+# ile başlayan kodları tüm IE versiyonları(IE7 dahil) görmeyecektir. Bu
+işaretlerin kullanım amacı tüm versiyonlarda aynı sonucu elde etmektir.</p>
 <p>Aşağıdaki kod IE5+,FF, Opera 7, Konqueror 3.0.3 altında standart ve
 <a href="http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/">garip mod</a> da çalışıyor.</p>
-<div class="codehilite"><pre> <span class="err">&lt;</span>!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>CSS ile dikey ortalama<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nf">#Kapsul</span><span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span> 
+    <span class="m">#positi</span><span class="n">on</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> 
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">green</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#IcerikAlani</span><span class="p">{</span>
+    <span class="m">#positi</span><span class="n">on</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="m">#top</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">table-cell</span><span class="p">;</span> 
+    <span class="k">vertical-align</span><span class="o">:</span> <span class="k">middle</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#alan</span><span class="p">{</span>
+    <span class="m">#positi</span><span class="n">on</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> 
+    <span class="m">#top</span><span class="o">:</span> <span class="m">-50</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">green</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;Kapsul&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;IcerikAlani&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;alan&quot;</span><span class="nt">&gt;</span>Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever  since the 1500s, when an unknown printer took a galley of type and  scrambled it to make a type specimen book. <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>4.01//EN"&gt; <html> <head> <title>CSS ile dikey ortalama</title>
-<style> #Kapsul{ display: table; height: 400px; #position: relative;
-overflow: hidden; border: 1px solid green; } #IcerikAlani{ #position:
-absolute; #top: 50%; display: table-cell; vertical-align: middle; }</p>
-<h1 -50%;="-50%;" 1px="1px" border:="border:" green;="green;" id="top:" relative;="relative;" solid="solid">alan</h1>
-<p></style> </head> <body> <div id="Kapsul"> <div
-id="IcerikAlani"> <div id="alan">Lorem Ipsum is simply dummy text of
-the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since the 1500s, when an unknown
-printer took a galley of type and scrambled it to make a type specimen
-book. </div> </div> </div> </body> </html> </p>
 <p>Örneği görmek için <a href="../static/dokumanlar/dikey_ortalama_ornek1.html">tıklayınız.</a></p>
 <h2>Kaynaklar</h2>
 <ul>
@@ -144,7 +161,6 @@ book. </div> </div> </div> </body> </html> </p>
 <li><a href="http://www.hicksdesign.co.uk/journal/how-to-vertical-centering-with-css">http://www.hicksdesign.co.uk/</a></li>
 <li><a href="http://www.student.oulu.fi/~laurirai/www/css/middle/">http://www.student.oulu.fi/</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">
