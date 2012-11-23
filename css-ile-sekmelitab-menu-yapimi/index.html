@@ -88,62 +88,75 @@
 </footer><!-- /.post-info -->
       <p>Sekmeli menümüzü <a href="http://stopdesign.com/">Doug Bowman'ın</a> <a href="http://alistapart.com/articles/slidingdoors/">Sliding Doors</a> tekniği ile
 yapacağız. Bu teknik bize esnek yapılı, yuvarlak kenarlı sekmeli menü
-yapma olanağı sağlar. Adım adım gidersek <!--more--></p>
+yapma olanağı sağlar. Adım adım gidersek;</p>
 <p><strong>1.Adım</strong> Başlangıç olarak her zamanki gibi XHTML kodumuzu yazalım:</p>
-<div class="codehilite"><pre><span class="nt">&lt;ul&gt;</span> <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ana
+<div class="codehilite"><pre><span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ana Sayfa<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Haberler<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ürünler<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<p>Sayfa</a></li> <li><a href="#">Haberler</a></li> <li><a
-href="#">Ürünler</a></li> </ul></p>
-<div class="class=" ekstrabilgi"">
-Tekniğin özeti şu menü oluşturmak için hazırlanan XHTML kodunda sırasız
+<p>Tekniğin özeti şu menü oluşturmak için hazırlanan XHTML kodunda sırasız
 listeler(li) bir zemin resmi(sekme_sag_resim.gif) ve link
 elementine(a) bir zemin resmi(sekme_sol_resim.gif) atayarak esneklik
-sağlamak.
-
-</div>
-
+sağlamak.</p>
 <p><strong>2. Adım</strong> Daha önceki menü örneklerinden de alışkın olduğumuz
 margin,padding ve liste imgelerini kaldırma işlemini yapalım:</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">list-style</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">600px</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">gray</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>none; width: 600px; float: left; border-bottom: 1px solid gray; }</p>
 <p><strong>3. Adım</strong> Yukarıda bahsettiğimiz metodu uygulamak için iki adet resim
 hazırlamalıyız.</p>
-<p><img alt="" src="../static/pdf/sekme_sol_resim.gif" /> <img alt="" src="../static/pdf/sekme_sag_resim.gif" /></p>
+<p><img alt="" src="../static/pdf/sekme_sol_resim.gif" /> <br />
+</p>
+<p><img alt="" src="../static/pdf/sekme_sag_resim.gif" /> <br />
+</p>
 <p>Bu resimlerin yüksekliklerinin uzun olmasının nedeni font boyutunun
 arttırılması(yakınlaştırma) durumunda iki satır olabilecek menülerde
 menü görünümünün bozulmaması içindir.</p>
 <p><strong>4. Adım</strong> Menüyü yatayda sıralamak için <strong>float:left</strong> tanımlaması
-yapıyoruz ve sağ zemin
-resmini(<span class="alternatifard">sekme_sag_resim.gif</span>)
-uyguluyoruz:</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span>
+yapıyoruz ve sağ zemin resmini(sekme_sag_resim.gif) uyguluyoruz:</p>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/sekme_sag_resim.gif)</span> <span class="k">no-repeat</span> <span class="k">top</span> <span class="k">right</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>url(images/sekme_sag_resim.gif) no-repeat top right; } </p>
 <p><strong>5. Adım</strong> Daha önceki örneklerde gördüğümüz gibi tüm sekmeye link
 vermek için <strong>display:block</strong> tanımlaması yapıyoruz, sekmenin sol
 kısmını tamamlamak için zemin resmi olarak(sekme_sol_resim.gif)
 ekliyoruz, tüm sekmelerde aynı yüksekliği yakalamak için
-<strong>line-height</strong>tanımlamasını yapıyoruz,
-<span class="alternatifard"><strong>text-decoration: none</strong></span> ile link
+<strong>line-height</strong>tanımlamasını yapıyoruz, <strong>text-decoration: none</strong> ile link
 alt çizgilerini kaldırıyoruz ve IE Mac ortamında sorun çıkarmaması için
 <strong>float:left</strong> ekliyoruz:</p>
-<div class="codehilite"><pre><span class="o">&lt;</span><span class="nt">ol</span><span class="o">&gt;</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+<div class="codehilite"><pre><span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(images/sekme_sol_resim.gif)</span> <span class="k">no-repeat</span> <span class="k">left</span> <span class="k">top</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">2em</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="o">:</span> <span class="m">2.5em</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background:url(images/sekme_sol_resim.gif) no-repeat left top;
-display: block; padding: 0 2em; line-height: 2.5em; text-decoration:
-none; float: left; color:#000; } </p>
 <p><strong>6. Adım</strong> Güzel bir görünüm katmak için basit bir rollover efekti
 verelim:</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#9D9C9C</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#9D9C9C</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -152,8 +165,6 @@ verelim:</p>
 menüye bir çok örnek var resimli, resimsiz, resimli rollover gibi;
 internette aratarak bir çok örnek bulabilirsiniz.</p>
 <iframe src="../static/dokumanlar/sekmeli_menu.html" width="350" height="80" frameborder="0" scrolling="no"></iframe>
-
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

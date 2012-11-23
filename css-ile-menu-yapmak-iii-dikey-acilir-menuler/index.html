@@ -90,36 +90,51 @@
 esnek, kolay düzenlenebilir ve bir çok web tarayıcısı tarafında
 desteklenen(IE6 ve öncesi dahil) açılır menü yapılabilir. Aslında
 javascript'e ihtiyaç olmamasına karşın IE7'den önceki sürümler için
-javascript kodu gerekmektedir. <!--more--></p>
+javascript kodu gerekmektedir. </p>
 <p>Açılır menü yapmak için daha önceki menü örneklerinde olduğu gibi
-sıralanmamış listeleri(<ul>) kullanacağız. Buradaki fark alt
+sıralanmamış listeleri(&lt;ul>) kullanacağız. Buradaki fark alt
 kategorilerin yani üzerine gelince açılacak menünün bir alt sırlanmış
 liste olarak eklenmesidir.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;menu&quot;</span> <span class="nt">&gt;</span> <span class="nt">&lt;li&gt;&lt;a</span>
+<div class="codehilite"><pre><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;menu&quot;</span> <span class="nt">&gt;</span> 
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Anasayfa<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Haberler<span class="nt">&lt;/a&gt;</span> 
+    <span class="nt">&lt;ul&gt;</span> 
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>şirket Haberleri <span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Yurt içi Haberleri <span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Yurt dışı Haberleri<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+    <span class="nt">&lt;/ul&gt;</span> 
+    <span class="nt">&lt;/li&gt;</span> 
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ürünler<span class="nt">&lt;/a&gt;</span> 
+    <span class="nt">&lt;ul&gt;</span> 
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Tencere<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Tava<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Ütü<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Tost Makinesi <span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>El Süpürgesi <span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+    <span class="nt">&lt;/ul&gt;</span> 
+    <span class="nt">&lt;/li&gt;</span> 
+<span class="nt">&lt;/ul&gt;</span>
 </pre></div>
 
 
-<p>href="#"&gt;Anasayfa</a></li> <li><a href="#">Haberler</a>
-<ul> <li><a href="#">şžirket Haberleri </a></li> <li><a
-href="#">Yurt içi Haberleri </a></li> <li><a href="#">Yurt
-dışı Haberleri</a></li> </ul> </li> <li><a
-href="#">Ürünler</a> <ul> <li><a
-href="#">Tencere</a></li> <li><a href="#">Tava</a></li>
-<li><a href="#">Ütü</a></li> <li><a href="#">Tost Makinesi
-</a></li> <li><a href="#">El Süpürgesi </a></li> </ul>
-</li> </ul> </p>
 <p><img alt="" src="../static/images/menu3_resim1.gif" /></p>
 <p>İlk olarak satır başı boşluklarını ve imgeleri kaldıralım.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">list-style</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="p">{</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>none; width: 150px; } </p>
 <p><img alt="" src="../static/images/menu3_resim2.gif" /></p>
 <p>Sonra ilk linkleri göreceli olarak konumlandırmalıyız. Bu konumlandırma
 aslında ikinci kademe açılacak menüye mutlak konumlandırma yapılması
 için kullanılır.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
@@ -129,11 +144,15 @@ konumlandırılmalıdır. Bunun için soldan 149px değeri verilir. 1 piksel
 sola kaydırılır ki fare ilk linki üzerinde ikinci linkin üzerine
 glemeden kaybolmasın. Ayrıca ikincil linklerin ilk sayfa açıldığında
 görünmemesi için display:none özelliği atanır.</p>
-<div class="codehilite"><pre> <span class="nt">li</span> <span class="nt">ul</span> <span class="p">{</span> <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span> <span class="m">149px</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">li</span> <span class="nt">ul</span> <span class="p">{</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span> <span class="m">149px</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>top: 0; display: none; } </p>
 <p><img alt="" src="../static/images/menu3_resim3.gif" /></p>
 <p>Açılır menü yapısını oluşturmuş olduk şimdi linkleri güzelleştirip menü
 haline getirmek için önceki menüleri yaparken uyguladığımız <a href="http://www.fatihhayrioglu.com/?p=209">kodları uygulayalım.</a> Linklerin kendine has alanlarını tanımlamak için
@@ -143,85 +162,102 @@ arasına mesafe vermek için <strong>padding</strong> verelim. Birde bir zemin r
 tanımı ver kenarlık tanımı yapalım. Üstteki linkin alt kenarlığı ile
 alttaki linkin üst kenarlığı üst üste bineceğinde alt kenarlık değerini
 sıfırlayalım.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">text-decoration</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#E2E2E2</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span> 
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span> 
+    <span class="k">border-bottom</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>none; background-color: #E2E2E2; padding: 5px; border:1px solid #000;
-border-bottom:0; } </p>
 <p>Bu kodu yazdığımızda IE linkler arasına boşluk koyacaktır(IE7 de hala bu
 sorun devam ediyor) bu durumu düzeltmek için:</p>
-<div class="codehilite"><pre> <span class="c">/* IE. gizle */</span> <span class="o">*</span> <span class="nt">html</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="c">/* IE. gizle \*/</span> 
+<span class="o">*</span> <span class="nt">html</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">1</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span> 
+<span class="o">*</span> <span class="nt">html</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">1</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span> 
+<span class="c">/* IE den gizleme sonu */</span>
 </pre></div>
 
 
-<p>left; height: 1%; } * html ul li a { height: 1%; } /<em> IE den gizleme
-sonu </em>/ </p>
 <p><img alt="" src="../static/images/menu3_resim4.gif" /></p>
 <p>En alttaki çizgimiz eksik kalmaması için ilk link ul'sinin alt kenarlık
 tanım yaparız.</p>
-<div class="codehilite"><pre> <span class="nt">ul</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">list-style</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">ul</span> <span class="p">{</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span> 
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#00</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>none; width: 150px; border-bottom: 1px solid #00; } </p>
 <p><img alt="" src="../static/images/menu3_resim5.gif" /></p>
 <p>Birincil menü görünümü tamamlandı ancak ikincil menüler görünmüyor.
 İkincil menüleri göstermek için:</p>
-<div class="codehilite"><pre> <span class="nt">li</span><span class="nd">:hover</span> <span class="nt">ul</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">li</span><span class="nd">:hover</span> <span class="nt">ul</span> <span class="p">{</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
 <p>Bu kadar basit bir kod menümüzü tamamlar. Ancak bir sorun var ki o da
 IE7'den öncesi bu kodu desteklemez.</p>
-<div class="ekstrabilgi">
-Internet Explorer 7. versiyonuna kadar :hover pseudo sınıfını sadece
-linklerde (<a>) uygulanmasını destekler diğer elementlerde bu
-özelliğin kullanımını desteklemez.
-
-</div>
-
+<p>Internet Explorer 7. versiyonuna kadar :hover pseudo sınıfını sadece
+linklerde (&lt;a>) uygulanmasını destekler diğer elementlerde bu
+özelliğin kullanımını desteklemez.</p>
 <p>Peki menümüz böyle mi kalacak hayır. IE6 ve altı için bir javascript
 kodu yazacağız.</p>
-<div class="codehilite"><pre> <span class="nx">startList</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">if</span>
+<div class="codehilite"><pre><span class="nx">startList</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> 
+<span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">all</span><span class="o">&amp;&amp;</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">)</span> <span class="p">{</span> 
+<span class="nx">navRoot</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;menu&quot;</span><span class="p">);</span> 
+<span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">navRoot</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> 
+<span class="nx">node</span> <span class="o">=</span> <span class="nx">navRoot</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span> 
+<span class="k">if</span> <span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">nodeName</span><span class="o">==</span><span class="s2">&quot;LI&quot;</span><span class="p">)</span> <span class="p">{</span> 
+<span class="nx">node</span><span class="p">.</span><span class="nx">onmouseover</span><span class="o">=</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> 
+<span class="k">this</span><span class="p">.</span><span class="nx">className</span><span class="o">+=</span><span class="s2">&quot; over&quot;</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nx">node</span><span class="p">.</span><span class="nx">onmouseout</span><span class="o">=</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> 
+<span class="k">this</span><span class="p">.</span><span class="nx">className</span><span class="o">=</span><span class="k">this</span><span class="p">.</span><span class="nx">className</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot; over&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">);</span> 
+<span class="p">}</span> 
+<span class="p">}</span> 
+<span class="p">}</span> 
+<span class="p">}</span> 
+<span class="p">}</span> 
+<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span><span class="o">=</span><span class="nx">startList</span><span class="p">;</span>
 </pre></div>
 
 
-<p>(document.all&amp;&amp;document.getElementById) { navRoot =
-document.getElementById("menu"); for (i=0; i&lt;navRoot.childNodes.length;
-i++) { node = navRoot.childNodes[i]; if (node.nodeName=="LI") {
-node.onmouseover=function() { this.className+=" over"; }
-node.onmouseout=function() { this.className=this.className.replace("
-over", ""); } } } } } window.onload=startList; </p>
 <p>Bu çözümü bize kazandıran arkadaşlara teşekkürü bir borç biliriz ve
 <a href="http://www.alistapart.com:80/articles/dropdowns/">linkini</a> de yazarız.</p>
 <p>Ayrıca aşağıdaki kodu da eklemeliyiz.</p>
-<div class="codehilite"><pre> <span class="nt">li</span><span class="nd">:hover</span> <span class="nt">ul</span><span class="o">,</span> <span class="nt">li</span><span class="nc">.over</span> <span class="nt">ul</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">li</span><span class="nd">:hover</span> <span class="nt">ul</span><span class="o">,</span> <span class="nt">li</span><span class="nc">.over</span> <span class="nt">ul</span><span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>Ayrıca kod daki<span class="alternatifard"><ul id="**menu**" ></span>
-ve javascriptteki <span class="alternatifard">navRoot =
-document.getElementById("<strong>menu</strong>");</span> aynı olmasına dikkat edelim.</p>
+<p>Ayrıca kod daki&lt;ul id="<strong>menu</strong>" > ve javascriptteki navRoot = document.getElementById("<strong>menu</strong>"); aynı olmasına dikkat edelim.<br />
+</p>
 <iframe src="../static/dokumanlar/menu3.htm" width="350" height="250" frameborder="0" scrolling="auto"></iframe>
 
 <p>Örnek kodları <a href="http://www.fatihhayrioglu.com/dokumanlar/menu3.zip">indir</a></p>
 <p>Bazı arkadaşlardan bu menünün sağda olması halin nasıl yaparız diye bir
 istek geldi bende bunun için bir kod eklemek istiyorum.
-<span style="color:#f00;">Bu ekleme 28 Mayıs 2009 da yapılmıştır.</span></p>
+Bu ekleme 28 Mayıs 2009 da yapılmıştır.</p>
 <p>Soldaki örneğe göre iki değişikliğimiz oldu. Birincisi menüyü sağa almak
 için ul ye float:right ataması yaptık. İkincisi, ikinici açılan menüyü
 soldan 149 px yerine eksi 149px ile sola almak oldu</p>
 <iframe src="../static/dokumanlar/menu3_2.htm" width="550" height="250" frameborder="0" scrolling="auto"></iframe>
 
-<h4>Kaynaklar</h4>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.alistapart.com/articles/horizdropdowns">http://www.alistapart.com/articles/horizdropdowns</a></li>
 <li><a href="http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp">http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp</a></li>
 <li><a href="http://www.seoconsultants.com/css/menus/tutorial/">http://www.seoconsultants.com/css/menus/tutorial/</a></li>
 <li><a href="http://www.cssplay.co.uk/menus/flyout2.html">http://www.cssplay.co.uk/menus/flyout2.html</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">
