@@ -1,5 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2012-12-21T11:37:00+02:00</updated><entry><title>CSS ile HTML5 Yer Tutucu’ya(placeholder) Stil Vermek</title><link href="http://www.fatihhayrioglu.com/css-ile-html5-yer-tutucu-ya-placeholder-stil-vermek/" rel="alternate"></link><updated>2012-12-21T11:37:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-12-21:css-ile-html5-yer-tutucu-ya-placeholder-stil-vermek/</id><summary type="html">&lt;p&gt;HTML5 ile birlikte gelen form elemanlarına yer tutucu(placeholder) ekleme özelliğine CSS3 ile stil verebiliyoruz. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2012-12-28T14:28:00+02:00</updated><entry><title>Git Öğreniyorum - 3</title><link href="http://www.fatihhayrioglu.com/git-ogreniyorum-3/" rel="alternate"></link><updated>2012-12-28T14:28:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-12-28:git-ogreniyorum-3/</id><summary type="html">&lt;h2&gt;Git  grep&lt;/h2&gt;
+&lt;p&gt;Git&amp;rsquo;in önemli komutu grep hakkında bir kaç bilgi vereceğim.&lt;/p&gt;
+&lt;p&gt;Ben grep&amp;rsquo;i git&amp;rsquo;in arama komutu olarak biliyordum, ancak unix sistemlerde filtreleme komutu imiş. Geniş kullanım alanı varmış yani.&lt;/p&gt;
+&lt;p&gt;Genel söz dizimi&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep &lt;span class="o"&gt;[&lt;/span&gt;özellikler&lt;span class="o"&gt;]&lt;/span&gt; arama_kelimesi &lt;span class="o"&gt;[&lt;/span&gt;dosyalar&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Örneğin&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep &lt;span class="s1"&gt;&amp;#39;kapsayamama&amp;#39;&lt;/span&gt; /home/fatih/ana.css
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıdaki örnek basit bir kullanıma örnek olarak veridi. /home/fatih/ana.css klasörü içinde kapsayamama kelimesini arayacaktır.&lt;/p&gt;
+&lt;p&gt;Grep&amp;rsquo;in bazı özellikleri vardır. Bu kısayolları kullanarak aramalarımıza bazı özellikler ekleriz.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep -v &lt;span class="s1"&gt;&amp;#39;kapsayamama&amp;#39;&lt;/span&gt; /home/fatih/ana.css
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;İçinde kapsayamama geçmeyen satırları bize verecektir. -v (invert-match)&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep -c &lt;span class="s1"&gt;&amp;#39;kapsayamama&amp;#39;&lt;/span&gt; /home/fatih/ana.css
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Aradığımız dosya içinde kapsayamama kelimesinin kaç kere geçtiğini bize gösterir. -c (count) &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep -i &lt;span class="s1"&gt;&amp;#39;kapsayamama&amp;#39;&lt;/span&gt; /home/fatih/ana.css
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Aramanın büyük-küçük harfe duyarsızlaştırır. Yani arama sonuçlarında Kapsayamama çıkar. -i (ignore-case)&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep -r &lt;span class="s1"&gt;&amp;#39;kapsayamama&amp;#39;&lt;/span&gt; /home/fatih/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Aramanın belirlene dizin ve alt dizinlerde yapılmasını belirler. -r (recursive)&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep -n &lt;span class="s1"&gt;&amp;#39;kapsayamama&amp;#39;&lt;/span&gt; /home/fatih/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;grep ile listelenen sonuçların hangi satırda olduğunu gösterir. -n (line-number)&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep &lt;span class="s1"&gt;&amp;#39;\&amp;amp;lt;script&amp;#39;&lt;/span&gt; /home/fatih/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&amp;lsquo;\&amp;amp;rsquo;(ters bölü işareti) karakteri kendisinden sonra gelen karakterin özel bir karakter olduğunu gösterir ve aramaya dahil edilmesini sağlar. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep &lt;span class="s1"&gt;&amp;#39;kapsayamama&amp;#39;&lt;/span&gt; /home/fatih/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Birden fazla arama bloğunu bir arada kullanmak için | boru(pipe) işaretini kullanırız.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep &lt;span class="s1"&gt;&amp;#39;^script&amp;#39;&lt;/span&gt; /home/fatih/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;grep aramalarımızda Düzenli İfadeleri(regex) kullanabiliriz. Yukarıdaki örnekte script ile başlayan sonuçları getir demektir.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep &lt;span class="s1"&gt;&amp;#39;script$&amp;#39;&lt;/span&gt; /home/fatih/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıdaki script ile biten satırları listeler. Düzenli ifadeler ile yapabileceklerimizi düşündüğümüzde aramalarımızı ne kadar özelleştirebileceğimizi anlarız.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git grep &amp;lt;script&amp;gt; /home/fatih | more
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;grep ile arama yaptığımızda pencere genişliği kadar çıktıları bize gösterir. Tüm satırın gösterilmesi için | more kullanırız.&lt;/p&gt;
+&lt;h2&gt;Git kodlarını renklendirmek için&lt;/h2&gt;
+&lt;p&gt;git komutları ve işlemlerini renklendirmek mümkündür. Daha okunaklı ekranlar için Git&amp;rsquo;in status, branch ve diff komutlarını renklendirelim. 
+Renklendirme için konfigürasyon dosyasına ~/.gitconfig aşağıdaki kodları eklemeniz yeterli.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;[&lt;/span&gt;color&lt;span class="o"&gt;]&lt;/span&gt;
+  branch &lt;span class="o"&gt;=&lt;/span&gt; auto
+  diff &lt;span class="o"&gt;=&lt;/span&gt; auto
+  status &lt;span class="o"&gt;=&lt;/span&gt; auto
+
+&lt;span class="o"&gt;[&lt;/span&gt;color &amp;amp;quot;branch&amp;amp;quot;&lt;span class="o"&gt;]&lt;/span&gt;
+  current &lt;span class="o"&gt;=&lt;/span&gt; yellow reverse
+  local &lt;span class="o"&gt;=&lt;/span&gt; yellow
+  remote &lt;span class="o"&gt;=&lt;/span&gt; green
+
+&lt;span class="o"&gt;[&lt;/span&gt;color &amp;amp;quot;diff&amp;amp;quot;&lt;span class="o"&gt;]&lt;/span&gt;
+  meta &lt;span class="o"&gt;=&lt;/span&gt; yellow bold
+  frag &lt;span class="o"&gt;=&lt;/span&gt; magenta bold
+  old &lt;span class="o"&gt;=&lt;/span&gt; red bold
+  new &lt;span class="o"&gt;=&lt;/span&gt; green bold
+
+&lt;span class="o"&gt;[&lt;/span&gt;color &amp;amp;quot;status&amp;amp;quot;&lt;span class="o"&gt;]&lt;/span&gt;
+  added &lt;span class="o"&gt;=&lt;/span&gt; yellow
+  changed &lt;span class="o"&gt;=&lt;/span&gt; green
+  untracked &lt;span class="o"&gt;=&lt;/span&gt; cyan
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Git dallanmalarını düzenleme&lt;/h2&gt;
+&lt;p&gt;Git'te master'a gitmiş bütün eski dallanmalarımızı(branch) -lokalden- silmek için şöyle bir komut kullanabiliriz:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;git branch --merged master | grep -v &lt;span class="s1"&gt;&amp;#39;master$&amp;#39;&lt;/span&gt; | xargs git branch -d
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Kaynak: &lt;a href="http://devblog.springest.com/a-script-to-remove-old-git-branches"&gt;http://devblog.springest.com/a-script-to-remove-old-git-branches&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/muratcorlu"&gt;Murat Çorlu&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Git te dosya adı arama&lt;/h2&gt;
+&lt;p&gt;git'te dosya adıyla arama: &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;git ls-files &lt;span class="s1"&gt;&amp;#39;*kelime*&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="ls-files" src="https://lh5.googleusercontent.com/ssBLy7QzvOHj_9wV9Oc4HOG9-ORVPgYwF7StHQ4NSIGgXYvE-yk6LldHOJBwcLLZeULMD27xSrwI1tty3o-HEWjrSETgxDj7GAnWUC7eifiEMT1PyEWs" /&gt;&lt;/p&gt;
+&lt;h2&gt;Git ile Suçluyu Bulmak&lt;/h2&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;git blame
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bir örnek yapalım:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;git blame &lt;span class="nb"&gt;source&lt;/span&gt;/css-ile-tablolari-sekillendirmek.md
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;kodu aşağıdaki sonucu döndürüyor. Her satırı tek tek en son kimin, ne zaman değiştirdiğini gösteriyor.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="blame" src="https://lh3.googleusercontent.com/ZFPqtLKQ_YrIZyJ6xBhvKcKXJvAU3YZBD38ed_-Qm5lrzEWOCTMICKB1iEF_aMiKCDXtKvzWY8ntKzbwiOokd7-5E8InMvIFoCfXw3aEY8tBCrqnuoq0" /&gt;&lt;/p&gt;
+&lt;h2&gt;Git ile Sadece Belirlenen Dosyaları Gönderme&lt;/h2&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;git add
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ile eklenecek dosya veya dosyalar eklenir ve sonra&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;git commit -m &lt;span class="s2"&gt;&amp;quot;aciklama_yaz&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ile gönderim yapılır. 
+Bir örnek yapalım. Örneği 3 dosyada değişiklik yaptık.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="commit" src="https://lh4.googleusercontent.com/k05WDteZ-iehVkxeInyuuc3XhTbgfCDnQKhfC082AA4DiwkDx0mGrxMPbwiay4FZgkCSc2D12R6wr3MgX1rbuLO1gdOGRprmQSBJB-Ck9nrFVVgGNx_F" /&gt;&lt;/p&gt;
+&lt;p&gt;Ancak biz bu değişikliklerden sadece bir tanesini(source/xhtml-ipuclari-1.md) göndermek istiyoruz&lt;/p&gt;
+&lt;p&gt;&lt;img alt="commit add" src="https://lh4.googleusercontent.com/7EnKTSdWw4-N9UI9ojX_hsSTxDU9QZ0Q-vshOKFSoxURh7xXYdZn-7nZJwLu3KYAx1KuFrBzHmtMTBF9b4O92kZym3GX6i07yxVfKPeDstYlP1mCimYT" /&gt;&lt;/p&gt;
+&lt;p&gt;Dosyayı gönderirken &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;git commit -m &lt;span class="s2"&gt;&amp;quot;xhtml makalesindeki duzeltme yapildi&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;kullanımı önemli.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="commit push" src="https://lh5.googleusercontent.com/No5ftsIV8Cil11QD7XB2sSioo7Om7N2-1nNydeuA8N5j8CInsExY9--ZoHFWmUUj7rKKtEeHcfSwQ-UZvT4ONckc63ylJsarFhFEE5-cCTJUIcCcp2i7" /&gt;&lt;/p&gt;
+&lt;p&gt;Sonuçta sadece source/xhtml-ipuclari-1.md dosyası gönderilirken diğer iki dosya  gönderilmedi.&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;Otomatik Tamamlama&lt;/h2&gt;
+&lt;p&gt;Git ile terminalde kod yazarken en güzel özelliklerden birisi &amp;lt;tab&amp;gt; tuşu ile otomatik tamamlama yapabilme özelliği. Benim bilgisayarımda hazır geliyor eğer sizde yüklü değilse kaynak bağlantıda yükleme ayrıntıları mevcut.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git co&amp;lt;tab&amp;gt;&amp;lt;tab&amp;gt;
+commit config
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıda görüldüğü gibi git co yazdık ve yazacağımız komutu unuttuk veya tamamını yazmak istemedik, ilk &amp;lt;tab&amp;gt; tuşuna bastığımızda eğer başka eşleşen kelime yoksa bize direk sonucu getirir, &amp;lt;tab&amp;gt; tuşuna iki kere basınca bu sefer eşleşen tüm kelimeler altta listelenir. Sonraki &amp;lt;tab&amp;gt; tuşuna basışlarımızda ise altta listelenen kelimeler arasında gezeceğiz. &lt;/p&gt;
+&lt;p&gt;Yukarıdaki örnekte eğer com&amp;lt;tab&amp;gt; yapsa idik commit tamamlamasını otomatik yapacaktı. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks"&gt;http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Diğer İpuçları&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/347901/what-are-your-favorite-git-features-or-tricks?page=2&amp;amp;amp;tab=active#tab-top"&gt;http://stackoverflow.com/questions/347901/what-are-your-favorite-git-features-or-tricks?page=2&amp;amp;tab=active#tab-top&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/"&gt;http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html"&gt;http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://forum.ubuntu-tr.net/index.php?topic=17445.0"&gt;http://forum.ubuntu-tr.net/index.php?topic=17445.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://oneromer.com/?p=76"&gt;http://oneromer.com/?p=76&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jblevins.org/log/git-colors"&gt;http://jblevins.org/log/git-colors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://emineker.net/911/grep/"&gt;http://emineker.net/911/grep/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.thinkfirstblinksecond.com/2012/04/05/git-auto-completion/"&gt;http://www.thinkfirstblinksecond.com/2012/04/05/git-auto-completion/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="git"></category><category term="sürüm kontrolü"></category></entry><entry><title>CSS ile HTML5 Yer Tutucu’ya(placeholder) Stil Vermek</title><link href="http://www.fatihhayrioglu.com/css-ile-html5-yer-tutucu-ya-placeholder-stil-vermek/" rel="alternate"></link><updated>2012-12-21T11:37:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-12-21:css-ile-html5-yer-tutucu-ya-placeholder-stil-vermek/</id><summary type="html">&lt;p&gt;HTML5 ile birlikte gelen form elemanlarına yer tutucu(placeholder) ekleme özelliğine CSS3 ile stil verebiliyoruz. &lt;/p&gt;
 &lt;p&gt;&lt;img alt="Firefox Placeholder" src="/images/firefox_placeholder.gif" /&gt;&lt;/p&gt;
 &lt;p&gt;Yer Tutucu(Placeholder); Formların input veya textarea alanlarında tanımlayıcı bilgileri gösterdiğimiz yapılardır.  Firefox’da sağ üstte arama motoru alanında hangi arama motorunda arama yaptığımızda bilgi veren bir yazı bir yer tutucudur. Kullanıcı bu alana odaklandığında veya bir şeyler yazdığında bu yazı kaybolur ve kullanıcının yazdığı metin görünür.&lt;/p&gt;
 &lt;p&gt;Yer tutucular ilk başta kullanıcının odaklanması ile kaybolurken, Chrome’un öncülüğünde kullanıcı bir şeyler yazdıktan sonra kaybolmaktadır. &lt;/p&gt;
@@ -1374,180 +1536,4 @@ sitelerden kaldırmayı unutmayın.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://blogs.missouristate.edu/web/2012/03/26/goodbye-ie7-we-wont-miss-you/"&gt;http://blogs.missouristate.edu/web/2012/03/26/goodbye-ie7-we-wont-miss-you/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://caniuse.com/#compare=y&amp;amp;b1=ie+7&amp;amp;b2=ie+8"&gt;http://caniuse.com/#compare=y&amp;amp;b1=ie+7&amp;amp;b2=ie+8&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;</summary><category term=":after"></category><category term=":before"></category><category term="ie7"></category><category term="internet explorer"></category></entry><entry><title>CSS3 önek Karmaşası</title><link href="http://www.fatihhayrioglu.com/css3-onek-karmasasi/" rel="alternate"></link><updated>2012-05-30T09:06:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-05-30:css3-onek-karmasasi/</id><summary type="html">&lt;p&gt;CSS3’ün güzel özelliklerini yavaş yavaş kullanmaya başladık. CSS3’ün
-yeniliklerinin yanında önek karmaşası gibi sorunlarımızda var. CSS3’de
-kodlarımı yazarken farklı tarayıcılar için önek ile kullanmak
-durumundayız.&lt;/p&gt;
-&lt;p&gt;Farklı Tarayıcı önekleri;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Chrome ve Safari (-webkit-)&lt;/li&gt;
-&lt;li&gt;Firefox (-moz-)&lt;/li&gt;
-&lt;li&gt;Opera (-o-)&lt;/li&gt;
-&lt;li&gt;Internet Explorer (-ms-)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Bu sorunun nedeni CSS3 özelliklerinin hala geliştirilmekte olması ve
-tarayıcıların geliştirme aşamasında bu özellikleri daha standartlaşmadan
-kullanmaya ve kullanıcılara kullandırtmaya başlamasından
-kaynaklanmaktadır. Bu durumu başlangıçta(belki hala) sorun olarak
-tanımlamasak da çok yoğun kullanımında bir sorun olarak karşımıza
-çıktığı kesin.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://hacks.mozilla.org/2010/09/firefox-4-recent-changes-in-firefox/"&gt;Firefox&lt;/a&gt; ve &lt;a href="http://msdn.microsoft.com/en-us/ie/ff468705.aspx"&gt;İnternet Explorer9&lt;/a&gt; bu konuda tam onaylanmış
-özellikler için öneklerden vazgeçip standart kullanımı geçiş yaparak bir
-nebze olsun sorunu gideriyorlar.&lt;/p&gt;
-&lt;p&gt;Bir örnek vererek işin ne kadar kötü göründüğüne bakabiliriz. CSS renk
-geçişi özelliğini tanımlamak için bir kod yazmamız gerektiğinde
-aşağıdaki gibi bir kod bloğunu eklememiz gerekiyor.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;#1e5799&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Old browsers */&lt;/span&gt; 
- &lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;-moz-linear-gradient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;top&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nf"&gt;#1e5799&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt; &lt;span class="nf"&gt;#2989d8&lt;/span&gt; &lt;span class="nt"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt; &lt;span class="nf"&gt;#207cca&lt;/span&gt; &lt;span class="nt"&gt;51&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt; &lt;span class="nf"&gt;#7db9e8&lt;/span&gt; &lt;span class="nt"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%);&lt;/span&gt; &lt;span class="c"&gt;/* FF3.6+ */&lt;/span&gt; 
- &lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;-webkit-gradient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;linear&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt; &lt;span class="nt"&gt;top&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt; &lt;span class="nt"&gt;bottom&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;color-stop&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#1e5799&lt;/span&gt;&lt;span class="o"&gt;),&lt;/span&gt; &lt;span class="nt"&gt;color-stop&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#2989d8&lt;/span&gt;&lt;span class="o"&gt;),&lt;/span&gt; &lt;span class="nt"&gt;color-stop&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;51&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#207cca&lt;/span&gt;&lt;span class="o"&gt;),&lt;/span&gt; &lt;span class="nt"&gt;color-stop&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#7db9e8&lt;/span&gt;&lt;span class="o"&gt;));&lt;/span&gt; &lt;span class="c"&gt;/* Chrome,Safari4+ */&lt;/span&gt;
- &lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;-webkit-linear-gradient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;top&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nf"&gt;#1e5799&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#2989d8&lt;/span&gt; &lt;span class="nt"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#207cca&lt;/span&gt; &lt;span class="nt"&gt;51&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#7db9e8&lt;/span&gt; &lt;span class="nt"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%);&lt;/span&gt; &lt;span class="c"&gt;/* Chrome10+,Safari5.1+ */&lt;/span&gt;
- &lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;-o-linear-gradient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;top&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nf"&gt;#1e5799&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#2989d8&lt;/span&gt; &lt;span class="nt"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#207cca&lt;/span&gt; &lt;span class="nt"&gt;51&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#7db9e8&lt;/span&gt; &lt;span class="nt"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%);&lt;/span&gt; &lt;span class="c"&gt;/* Opera 11.10+ */&lt;/span&gt;
- &lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;-ms-linear-gradient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;top&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nf"&gt;#1e5799&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#2989d8&lt;/span&gt; &lt;span class="nt"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#207cca&lt;/span&gt; &lt;span class="nt"&gt;51&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#7db9e8&lt;/span&gt; &lt;span class="nt"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%);&lt;/span&gt; &lt;span class="c"&gt;/* IE10+ */&lt;/span&gt;
- &lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;linear-gradient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;top&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nf"&gt;#1e5799&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#2989d8&lt;/span&gt; &lt;span class="nt"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#207cca&lt;/span&gt; &lt;span class="nt"&gt;51&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#7db9e8&lt;/span&gt; &lt;span class="nt"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%);&lt;/span&gt; &lt;span class="c"&gt;/* W3C */&lt;/span&gt;
- &lt;span class="nt"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;progid&lt;/span&gt;&lt;span class="nd"&gt;:DXImageTransform&lt;/span&gt;&lt;span class="nc"&gt;.Microsoft.gradient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt; &lt;span class="nt"&gt;startColorstr&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#1e5799&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;endColorstr&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#7db9e8&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;GradientType&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt; &lt;span class="o"&gt;);&lt;/span&gt; &lt;span class="c"&gt;/* IE6-9 */&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Şeklinde bir renk geçişi tanımı göz korkutuyor. Bu kod aslında tek satır&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;linear-gradient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;top&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nf"&gt;#1e5799&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#2989d8&lt;/span&gt; &lt;span class="nt"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#207cca&lt;/span&gt; &lt;span class="nt"&gt;51&lt;/span&gt;&lt;span class="o"&gt;%,&lt;/span&gt;&lt;span class="nf"&gt;#7db9e8&lt;/span&gt; &lt;span class="nt"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Ancak farklı tarayıcılar için kod yazınca yukarıdaki hali alıyor.&lt;/p&gt;
-&lt;p&gt;Burada gördüğümüz ve genelde önek sorunları;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Çok fazla kod mevcut kodumuzun yığın halini almasına neden oluyor,&lt;/li&gt;
-&lt;li&gt;Düzenlemesi zorlaşıyor,&lt;/li&gt;
-&lt;li&gt;Farklı tarayıcılar için üretilen önekler nedeni ile kod çoğalıyor ve
-    performansı düşürüyor.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;gibi sorunlara neden oluyor.&lt;br /&gt;
-&lt;/p&gt;
-&lt;h2&gt;Önek Sıralaması&lt;/h2&gt;
-&lt;p&gt;Burada yazılan öneklerde sıralamanın önemi vardır. Standart dışı önekler
-önce yazılır, standart önek sona yazılır. Bunun tersi durumlarda bazen
-sorun yaşayabilirsiniz. Standardın sona yazılmasındaki mantık; farklı
-tarayıcılar için yazılan önek sonradan kaldırılabilir ve kaldırıldığında
-sonradan gelen standart tanım daha baskın olması istenir.  &lt;/p&gt;
-&lt;p&gt;Standart dışı öneklerde ilk -webkit önekinin yazılmasının kesin olamasa
-da bir avantajı olabilir.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;-webkit-&lt;/li&gt;
-&lt;li&gt;-moz-&lt;/li&gt;
-&lt;li&gt;-o-&lt;/li&gt;
-&lt;li&gt;-ms-&lt;/li&gt;
-&lt;li&gt;standart&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;şeklinde bir sıralamayı uygulayabiliriz.&lt;/p&gt;
-&lt;p&gt;Önek karmaşasını çözmek için bir iki yöntem var. Bunları burada basitçe
-inceleyeceğiz.&lt;br /&gt;
-&lt;/p&gt;
-&lt;h2&gt;Çevrimiçi Araçlar İle Kod Üretmek&lt;/h2&gt;
-&lt;p&gt;Çözüm önerilerinden birisi kodlamamızı standart tanımlar ile yapıp en
-son kodu çevrimiçi araçlar yardımı ile&lt;br /&gt;
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://cssprefixer.appspot.com/"&gt;http://cssprefixer.appspot.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://prefixmycss.com/"&gt;http://prefixmycss.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://prefixr.com/"&gt;http://prefixr.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;tüm tarayıcılar için üretmek olabilir.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.prefixr.com/api/usage/"&gt;prefixr.com&lt;/a&gt;’in farklı editörler için api çözümü de var
-&lt;a href="http://www.prefixr.com/api/usage/"&gt;http://www.prefixr.com/api/usage/&lt;/a&gt;  sitesinden kendi
-editörünüze uygun apiyi yükleyerek direk editörünüzde(kısayol tuşları
-yardımı ile) bu işi yapabiliyorsunuz.&lt;br /&gt;
-&lt;/p&gt;
-&lt;h2&gt;Dinamik Olarak(SASS ve LESS) Önek Sorununa Çözüm Üretmek&lt;/h2&gt;
-&lt;p&gt;Öneklere SASS ve LESS ile çözümler üretebiliriz. Bu gibi dinamik yapılır
-CSS üreten yapılarda başlangıçta bir tanım yapılıp daha sonraki
-tanımlarımızı bu tanım üzerinden yaparak önek sorununu halledebiliriz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;SASS&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="k"&gt;@mixin&lt;/span&gt; &lt;span class="nt"&gt;border-radius&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;values&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="nt"&gt;-webkit-border-radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;values&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-    &lt;span class="nt"&gt;-moz-border-radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;values&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; 
-    &lt;span class="nt"&gt;border-radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;values&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="o"&gt;@&lt;/span&gt;&lt;span class="n"&gt;include&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;ve&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.border-radius&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;@values&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nt"&gt;-webkit-border-radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;@values&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-    &lt;span class="nt"&gt;-moz-border-radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;@values&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nt"&gt;border-radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;@values&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;sonuç olarak üretilen CSS&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;LESS ve SASS gibi yapıları sitenizde kullanıyorsanız sorunun çözümü için
-güzel bir seçenek bunlar.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;-prefix-free&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Ayrıca yine dinamik yapı içine koyabileceğimiz free-prefix yöntemide
-mevcut. Javascript yardımı ile çözüm üretilen bu yöntemde incelemeye
-değer. Ben bunun için js eklemeyi pek mantıklı bulmasam da, yerine
-kullanılabilir diye düşünüyorum.&lt;br /&gt;
-&lt;/p&gt;
-&lt;h2&gt;Sonuç&lt;/h2&gt;
-&lt;p&gt;Sonuç olarak belli bir süre bizim için sıkıntı oluşturabilecek bir sorun
-olarak görünüyor. LESS ve SASS ile olan çözümler mantıklı geliyor bana.
-Tabi hepsinin standardı desteklemesi güzel olur :D&lt;/p&gt;
-&lt;p&gt;Yakın zamanda tarayıcı temsilcileri bu konu hakkında bir toplantı
-düzenleyerek bir çözüm yolu bulmaya çalışmışlar. 7 çeşit çözüm önerisi
-sunulan toplantıdan şimdilik bir çözüm çıkmamış gibi görünmüyor. En
-azından böyle bir sorunu kabul edip çözüm üretmek için toplanılması da
-bir ilerlemedir.&lt;/p&gt;
-&lt;p&gt;Toplantıdan çıkan en ciddi çözüm önerisi -webkit- önekinin tüm
-tarayıcılar tarafından test öneki olarak kabul görmesi isteği. Opera bu
-konuda bir adım dahi atmış diyorlar. -webkit- in mobil araçlardaki
-yaygınlığı ve CSS3 özelliklerinin birçoğunu çıkardıklarını düşünürsek
-mantıklı gibi.&lt;/p&gt;
-&lt;p&gt;Zamanla göreceği bakalım neler olacak.&lt;br /&gt;
-&lt;/p&gt;
-&lt;h2&gt;Kaynaklar&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.css3.info/why-and-when-browsers-prefix-css3-features/"&gt;http://www.css3.info/why-and-when-browsers-prefix-css3-features/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/"&gt;http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/&lt;/a&gt; (araçlar)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://reference.sitepoint.com/css/vendorspecific"&gt;http://reference.sitepoint.com/css/vendorspecific&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html"&gt;http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.mightymeta.co.uk/1103/no-more-need-for-some-css3-vendor-prefixes/"&gt;http://www.mightymeta.co.uk/1103/no-more-need-for-some-css3-vendor-prefixes/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.alistapart.com/articles/prefix-or-posthack/"&gt;http://www.alistapart.com/articles/prefix-or-posthack/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/"&gt;http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://snook.ca/archives/html_and_css/not-supported"&gt;http://snook.ca/archives/html_and_css/not-supported&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://css-tricks.com/7361-ordering-css3-properties/"&gt;http://css-tricks.com/7361-ordering-css3-properties/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://coding.smashingmagazine.com/2011/10/12/prefixfree-break-free-from-css-prefix-hell/"&gt;http://coding.smashingmagazine.com/2011/10/12/prefixfree-break-free-from-css-prefix-hell/&lt;/a&gt; (çözüm)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.sitepoint.com/w3c-css-webkit-prefix-crisis"&gt;http://www.sitepoint.com/w3c-css-webkit-prefix-crisis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://lea.verou.me/2011/11/vendor-prefixes-have-failed-whats-next/"&gt;http://lea.verou.me/2011/11/vendor-prefixes-have-failed-whats-next/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://prefixmycss.com/"&gt;http://prefixmycss.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-never-type-a-vendor-prefix-again/"&gt;http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-never-type-a-vendor-prefix-again/&lt;/a&gt; (less ile çözüm)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.alistapart.com/articles/the-vendor-prefix-predicament-alas-eric-meyer-interviews-tantek-celik/"&gt;http://www.alistapart.com/articles/the-vendor-prefix-predicament-alas-eric-meyer-interviews-tantek-celik/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.sitepoint.com/css3-vendor-prefix-crisis-solutions/#fbid=qIRziNGN-f6"&gt;http://www.sitepoint.com/css3-vendor-prefix-crisis-solutions/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://annevankesteren.nl/2012/04/prefixes"&gt;http://annevankesteren.nl/2012/04/prefixes&lt;/a&gt; (opera webkit öneklerini kabul edecek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.webmonkey.com/2012/05/vendor-tokens-offer-another-way-out-of-the-css-prefix-mess/"&gt;http://www.webmonkey.com/2012/05/vendor-tokens-offer-another-way-out-of-the-css-prefix-mess/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://peter.sh/experiments/vendor-prefixed-css-property-overview/"&gt;http://peter.sh/experiments/vendor-prefixed-css-property-overview/&lt;/a&gt; (tüm önek listesi)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://leaverou.github.com/prefixfree/"&gt;http://leaverou.github.com/prefixfree/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://kilianvalkhof.com/2010/css-xhtml/css-vendor-prefixes-considered-important/"&gt;http://kilianvalkhof.com/2010/css-xhtml/css-vendor-prefixes-considered-important/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://hsivonen.iki.fi/vendor-prefixes/"&gt;http://hsivonen.iki.fi/vendor-prefixes/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://net.tutsplus.com/articles/editorials/do-you-exclusively-use-webkit-prefixes/"&gt;http://net.tutsplus.com/articles/editorials/do-you-exclusively-use-webkit-prefixes/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.glazman.org/weblog/dotclear/index.php?post/2011/11/16/CSS-vendor-prefixes-an-answer-to-Henri-Sivonen"&gt;http://www.glazman.org/weblog/dotclear/index.php?post/2011/11/16/CSS-vendor-prefixes-an-answer-to-Henri-Sivonen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://christianheilmann.com/2012/02/09/now-vendor-prefixes-have-become-a-problem-want-to-help-fix-it/"&gt;http://christianheilmann.com/2012/02/09/now-vendor-prefixes-have-become-a-problem-want-to-help-fix-it/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/"&gt;http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.sitepoint.com/12-css3-vendor-prefix-crisis-myths/"&gt;http://www.sitepoint.com/12-css3-vendor-prefix-crisis-myths/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term="-moz-"></category><category term="-ms-"></category><category term="-o-"></category><category term="css3"></category><category term="less"></category><category term="önek"></category><category term="sass"></category><category term="WebKit"></category></entry></feed>
+&lt;/p&gt;</summary><category term=":after"></category><category term=":before"></category><category term="ie7"></category><category term="internet explorer"></category></entry></feed>
