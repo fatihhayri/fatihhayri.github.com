@@ -105,8 +105,6 @@ göreceğiz. Tipografihakkında genel bir bilgi vermesi açısından güzel bir
 çalışma olan Doç. Hasip Bektaş'ın "<a href="http://www.fotografya.gen.tr/issue-6/hasip.html">İnternetteki Tipografi Sorunları ve GörselKirlenmeye Karşı Öneriler</a>" adlı makalesini okumanızı tavsiye
 ederim. Ayrıca kaynakçakısmındaki linklerden de daha fazla bilgi
 alabilirsiniz.</p>
-<!--more-->
-
 <p>Diğer makaleleri yazarken bazı konularda kaynak bulma konusunda ciddi
 sorunlar yaşadığım oldu, ancak tipografi hakkında makale yazmaya karar
 verip bilgi toplamaya başladığımda önceki yazılarımın aksine tipografi
@@ -172,11 +170,12 @@ aşağıdaki resimde çok iyi bir şekilde görmekteyiz. <br />
 sans-serif fontlar daha popülerdir. Bu söylediğimden web'de hiç serif
 font kullanılmaz diye bir mana çıkaramayız elbette kullanılabilir ancak
 sans-serif daha çok tercih edilir. Genel font kullanımı:</p>
-<div class="codehilite"><pre> <span class="nt">body</span><span class="p">{</span> <span class="k">font-family</span><span class="o">:</span><span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">body</span><span class="p">{</span> 
+    <span class="k">font-family</span><span class="o">:</span><span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>sans-serif } </p>
 <p>Şeklindedir. Burada birincil fontumuz Arial'dir alternatifi Helvatica ve
 yazı tipi ailesi sans-serif olduğunu belirtiyoruz. Normalde sadece Arial
 yazmamızda yeterlidir, ancak kullanıcının bilgisayarında bu yazı tipinin
@@ -215,43 +214,50 @@ boyutları önerilerini sıralayalım:</p>
 <li>Diğer başlıklar için 13px</li>
 </ul>
 <p>Genel bir css kodunu yazarsak</p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span><span class="k">font</span><span class="o">:</span> <span class="m">11px</span><span class="o">/</span><span class="m">1.5em</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span><span class="k">font</span><span class="o">:</span> <span class="m">11px</span><span class="o">/</span><span class="m">1.5em</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="p">;</span> <span class="p">}</span> 
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span><span class="k">font-family</span><span class="o">:</span> <span class="n">helvetica</span><span class="o">,</span> <span class="n">arial</span><span class="o">,</span> <span class="n">verdana</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">normal</span><span class="p">;}</span> 
+<span class="nt">h1</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">h3</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span><span class="m">2</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">h4</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span><span class="m">1</span><span class="o">.</span><span class="m">25</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">h5</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">12px</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">h6</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">12px</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>h1, h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana,
-sans-serif; font-weight: normal;} h1 { font-size: 24px; } h2 {
-font-size: 18px; } h3 { font-size: 16px; line-height:2; } h4 {
-font-size: 13px; line-height:1.25; font-weight:bold; } h5 { font-size:
-12px; font-weight:bold; } h6 { font-size: 12px; } </p>
 <p>veya <strong>em</strong> cinsinden</p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span><span class="k">font</span><span class="o">:</span> <span class="m">11px</span><span class="o">/</span><span class="m">1.5em</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="p">;}</span> <span class="nt">h1</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span><span class="k">font</span><span class="o">:</span> <span class="m">11px</span><span class="o">/</span><span class="m">1.5em</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="p">;}</span> 
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span><span class="k">font-family</span><span class="o">:</span> <span class="n">helvetica</span><span class="o">,</span> <span class="n">arial</span><span class="o">,</span> <span class="n">verdana</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">normal</span><span class="p">;}</span> 
+<span class="nt">h1</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">3em</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">2em</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">h3</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">1.5em</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span><span class="m">2</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">h4</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">1.2em</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span><span class="m">1</span><span class="o">.</span><span class="m">25</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">h5</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">h6</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 
 
-<p>h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana, sans-serif;
-font-weight: normal;} h1 { font-size: 3em; } h2 { font-size: 2em; } h3 {
-font-size: 1.5em; line-height:2; } h4 { font-size: 1.2em;
-line-height:1.25; font-weight:bold; } h5 { font-size: 1em;
-font-weight:bold; } h6 { font-size: 1em; } </p>
 <p>Bu konuda çok güzel bir doküman hazırlayan <a href="http://code.google.com/p/blueprintcss/" title="CSS Anaçatısı">BluePrint CSS Anaçatısının</a> tipografi kısmına göz atmanızı tavsiye ederim.</p>
 <h2>Satır Yüksekliği(line-height)</h2>
 <p>Web tipografisinin en önemli özelliklerinden biridir satır yüksekliği
 tanımı. Metinlerin görünümünde büyük etkisi vardır. Satır yüksekliği
 için genel kabul <strong>yazı boyutunun1.4-1.6 katı</strong> kadar bir mesafedir.</p>
 <p><img alt="Satırlar arası yükseklik" src="../static/images/line_height.gif" /></p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Verdana</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> 
+    <span class="k">line-height</span><span class="o">:</span> <span class="m">1.5em</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>Helvetica, Arial, Verdana, sans-serif; line-height: 1.5em; }</p>
 <p>CSS kısaltmalarında tek yazı tipi değerine tüm yazı özellikleri ekleme
 imkanı sunar.</p>
-<div class="codehilite"><pre> <span class="nt">body</span> <span class="p">{</span> <span class="k">font</span><span class="o">:</span><span class="m">11px</span><span class="o">/</span><span class="m">1.5em</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="o">,</span>
+<div class="codehilite"><pre><span class="nt">body</span> <span class="p">{</span> 
+    <span class="k">font</span><span class="o">:</span><span class="m">11px</span><span class="o">/</span><span class="m">1.5em</span> <span class="s2">&quot;Lucida Grande&quot;</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Verdana</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>Helvetica, Arial, Verdana, sans-serif; } </p>
 <h2>Yazılara Vurgu Eklemek</h2>
 <p>CSS ile yazılarımızın önemli kısımlarını vurgulamak için bir kaç yöntem
 kullanırız.</p>
@@ -259,7 +265,9 @@ kullanırız.</p>
 Normalde yazı tiplerinin kalın halleride vardır ancak web yazı
 tiplerinde böyle bir seçim yapamıyoruz bu nedenle yazılarımıza kalınlık
 kazandırmak için</p>
-<div class="codehilite"><pre> <span class="nt">h1</span><span class="p">{</span> <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">h1</span><span class="p">{</span> 
+    <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
@@ -269,22 +277,30 @@ kalınlaştırılır.</p>
 <p><strong>Eğik:</strong> Vurgu için ikinci olarak eğik(italik) yazı şekli kullanılır.
 Eğik yazı şekli ekranda okunurluğu azaltsa da kullanıcıya farklı bir
 görünüm ile dikkat çeker.</p>
-<div class="codehilite"><pre> <span class="nt">blockquote</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">1.5em</span> <span class="m">0</span> <span class="m">1.5em</span> <span class="m">1.5em</span><span class="p">;</span>
+<div class="codehilite"><pre><span class="nt">blockquote</span> <span class="p">{</span> 
+    <span class="k">margin</span><span class="o">:</span> <span class="m">1.5em</span> <span class="m">0</span> <span class="m">1.5em</span> <span class="m">1.5em</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#666</span><span class="p">;</span> 
+    <span class="k">font-style</span><span class="o">:</span> <span class="k">italic</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>color: #666; font-style: italic; } </p>
 <p><strong>Altıçizili:</strong> Üçüncü olarak altı çizili yazılar kullanılır. Web'de
 genelde altı çizili yazılar link olarak kullanılır ve böyle algılanır.</p>
-<div class="codehilite"><pre><span class="nt">a</span><span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#125AA7</span><span class="p">;</span> <span class="k">text-decoration</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">a</span><span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span> <span class="m">#125AA7</span><span class="p">;</span> 
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">underline</span><span class="p">;</span> 
+    <span class="k">outline</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>underline; outline: none; } </p>
 <p><strong>Renk:</strong> Yazılarımızda farklı alanlara vurgu yapmak için kullanılan
 özelliklerden biride renk(color) özelliğidir. Meselahatalı alanları
 belirlemek için kırmızı renk kullanımı yaygındır.</p>
-<div class="codehilite"><pre><span class="nc">.hata</span><span class="p">{</span> <span class="k">color</span><span class="o">:</span><span class="m">#f00</span><span class="p">}</span>
+<div class="codehilite"><pre><span class="nc">.hata</span><span class="p">{</span> 
+    <span class="k">color</span><span class="o">:</span><span class="m">#f00</span>
+<span class="p">}</span>
 </pre></div>
 
 
@@ -292,7 +308,7 @@ belirlemek için kırmızı renk kullanımı yaygındır.</p>
 buda kullanılabilir bir seçenektir ama en azkullanılan vurgu tipidir.</p>
 <h2>Metin hizalama</h2>
 <p>CSS'in metin ve sayfa yatay hizalaması
-için<span style="FONT-WEIGHT:bold">text-align</span> özelliğini
+için <strong>text-align</strong> özelliğini
 kullanırız. </p>
 <p><strong>Aldığı değerler:</strong> <strong>left</strong>(metni sola yaslar), <strong>right</strong>(metni sağa
 yaslar)ve  <strong>justify</strong> (metni iki yana yaslar) ve <strong>center</strong>(metini
@@ -301,13 +317,12 @@ metinlerde kullanılanılabilir ancakbazı bölümlerde kötü görünüme neden
 olabilir. Özellikle son satırda sorunları vardır.</p>
 <p><img alt="" src="../static/images/tipografi_hizalama.gif" /></p>
 <p>justify(iki yana hizalı)  kullanımında meydana gelen sorunları gören W3C
-çalışmaları devam eden CSS3 ile birlikte
-<span style="FONT-WEIGHT:bold">inter-word</span>
-ve<span style="FONT-WEIGHT:bold">inter-character</span> özelliklerini
+çalışmaları devam eden CSS3 ile birlikte <strong>inter-word</strong>
+ve <strong>inter-character</strong> özelliklerini
 eklenmiştir.Bu özellikler yardımı ile ileride justify özelliğini daha
 fazla kullanacağımızıdüşünüyorum.</p>
 <p>Ayrıca CSS3 ile birlikte
-<span style="FONT-WEIGHT:bold">text-align-last</span>özelliğide
+<strong>text-align-last</strong> özelliğide
 gelmektedir ki  bu özellik sayesinde justify ataması
 yaptığımızmetinlerin son satırında meydana gelen kelimeler arası fazla
 boşluk sorununuçözmüş olacağız. Ancak biraz daha sabır gerekiyor.</p>
@@ -322,14 +337,18 @@ yararlı olabilecek bir özelliktir.</p>
 <p>Bu özellikte genelde dokunulmayan özellikler arasındadır. Ancak her web
 sayfası aynıdeğerleri kullanacak diye bir şey yoktur. Bazen farklı
 sonuçlar elde etmek içinfarklı değerler kullanabiliriz.</p>
-<div class="codehilite"><pre><span class="nt">p</span> <span class="p">{</span><span class="k">word-spacing</span><span class="o">:</span> <span class="m">.2em</span><span class="p">;}</span>
+<div class="codehilite"><pre><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">word-spacing</span><span class="o">:</span> <span class="m">.2em</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 
 <h2>Paragrafın ilk satırını içeriden başlatmak (text-indent)</h2>
 <p>Birçok dergi, gazete ve yazıda karşılaştığımız bu yöntemi CSS yardımı
 ile çok basit bir şekilde yaparız.</p>
-<div class="codehilite"><pre> <span class="nt">p</span> <span class="p">{</span> <span class="k">text-indent</span><span class="o">:</span> <span class="m">2.5em</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nt">p</span> <span class="p">{</span> 
+    <span class="k">text-indent</span><span class="o">:</span> <span class="m">2.5em</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 

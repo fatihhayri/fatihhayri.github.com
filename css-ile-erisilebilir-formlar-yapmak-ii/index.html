@@ -88,8 +88,7 @@
 
 
 </footer><!-- /.post-info -->
-      <p>![]<a href="javascript:print()"></a>[] || ![]<a href="../static/pdf/CSS_ile_Erisilebilir_Formlar_Yapmak_II.pdf">1</a>[]</p>
-<h4>Gelişmiş Form Yapıları</h4>
+      <h2>Gelişmiş Form Yapıları</h2>
 <p>Gelişmiş yapılı formlarda tablo kullanmak daha kolayımıza geliyor. Ancak
 burada bir sorunumuz varki formlar veri içeren tablolar değildir ve
 doğru kodlama için form yapılarını oluştururken tablo kullanmak web
@@ -97,8 +96,7 @@ standartlarına uygun değildir.</p>
 <p>Biz burada daha karışık yapılı bir formu nasıl tablo kullanmadan planlar
 ve güzelleştiririz onu anlatmaya çalışacağız. Tabi bu kodlamanın bazı
 zorlukları olacaktır ama genel yapı anlaşılırsa yapılamayacak form
-kodlaması yoktur. Aşağıda kodlayacağımız formun resmini görüyoruz.
-<!--more--></p>
+kodlaması yoktur. Aşağıda kodlayacağımız formun resmini görüyoruz.</p>
 <p><img alt="CSS ile Form" src="../static/images/sonuc_sayfasi.kucukresim.gif" /></p>
 <p>Kodlamayı yaparken dikkat edeceğiz konu kullanıcıyı yormayan güzel
 görünümlü ve erişilebilirliği yüksek formlar hazırlamaktır. <a href="http://www.fatihhayrioglu.com/?p=276">Bir önceki</a> yazımızda <strong>fieldset</strong> ve <strong>legend</strong> ve <strong>label</strong>
@@ -107,343 +105,195 @@ bir bilgi vermeyeceğiz. Diğer makalelerden farklı olarak bu makalede tüm
 kodları verip sonra açıklamalarını yapacağız, bunun nedeni form
 alanlarına ait tanımların bir çoğunun genel tanımlama olması ve bir
 tanımın bir çok etiketi etkilemesidir. XHTML Kodumuzu yazalım:</p>
-<ol>
-<li><form action="gonder.html" method="post" id="formset"><br />
-</li>
-<li><fieldset> <br />
-</li>
-<li><legend>Genel Bilgiler</legend><br />
-</li>
-<li><label class="adAlani">Ad <em>&#42;</em><br />
-</li>
-<li><input name="ad" type="text" id="ad" value="" /><br />
-</li>
-<li></label><br />
-</li>
-<li><label class="soyadAlani">Soyad <em>&#42;</em><br />
-</li>
-<li><input name="soyad" type="text" id="soyad" value="" /><br />
-</li>
-<li></label><br />
-</li>
-<li><label class="adresAlani">Ev Adresi <em>&#42;</em><br />
-</li>
-<li><input name="adres" type="text" id="adres" value="" /><br />
-</li>
-<li></label><br />
-</li>
-<li><label class="sehirAlani">Şehir <em>&#42;</em><br />
-</li>
-<li><input name="sehir" type="text" id="sehir" value="" /><br />
-</li>
-<li></label><br />
-</li>
-<li><label class="postakoduAlani">Posta Kodu <em>&#42;</em><br />
-</li>
-<li><input name="postakodu" type="text" id="postakodu" value="" /></li>
-<li></label> <br />
-</li>
-<li><label class="epostaAlani hata">Eposta &#42;<br />
-</li>
-<li><input name="eposta" type="text" id="eposta" value="" class="hata"
-    /><br />
-</li>
-<li></label><br />
-</li>
-<li><label class="telAlani">Telefon<input name="tel" type="text"
-    id="tel" value="" /><br />
-</li>
-<li></label><br />
-</li>
-<li></fieldset><br />
-</li>
-<li><fieldset><br />
-</li>
-<li><legend>Konu <em>&#42;</em></legend><br />
-</li>
-<li><input id="radiobutton_1" type="radio" name="radiobutton_type"
-    value="" /><br />
-</li>
-<li><label class="konuRadyoButon" for="radiobutton_1">Lorem ipsum
-    dolor sit amet, consectetuer adipiscing elit. </label><br />
-</li>
-<li><input id="radiobutton_2" type="radio" name="radiobutton_type"
-    value="" /><br />
-</li>
-<li><label class="konuRadyoButon" for="radiobutton_2">Cras diam.
-    Suspendisse potenti. In dictum bibendum est. Aliquam semper. Sed vel
-    massa. Praesent imperdiet nisi eget lacus. </label><br />
-</li>
-<li><input id="radiobutton_3" type="radio" name="radiobutton_type"
-    value="" /><br />
-</li>
-<li><label class="konuRadyoButon" for="radiobutton_3">Phasellus quis
-    enim. </label><br />
-</li>
-<li><input id="radiobutton_4" type="radio" name="radiobutton_type"
-    value="" /><br />
-</li>
-<li><label class="konuRadyoButon" for="radiobutton_4">Vestibulum ut
-    lectus ac leo luctus aliquam. </label><br />
-</li>
-<li></fieldset><br />
-</li>
-<li><fieldset><br />
-</li>
-<li><legend>Düşünceleriniz</legend> <br />
-</li>
-<li><label class="aciklamaAlani">Düşüncelerinizi aşağıdaki alana
-    yazınız.<br /><textarea name="describe" cols="35"
-    rows="5"></textarea><br />
-</li>
-<li></label><br />
-</li>
-<li></fieldset><br />
-</li>
-<li><fieldset><br />
-</li>
-<li><legend>Onay Alanı</legend><br />
-</li>
-<li><input id="checkbox_1" type="checkbox" name="kabul" value="y"
-    /><label for="checkbox_1" class="onayAlaniIsaretKutusu">Site
-    kurallarını kabul ediyorum.</label><br />
-</li>
-<li><input id="checkbox_2" type="checkbox" name="kabul" value="y"
-    /><label for="checkbox_2" class="onayAlaniIsaretKutusu">Site
-    kurallarını kabul etmiyorum.</label><br />
-</li>
-<li></fieldset><br />
-</li>
-<li><blockquote><strong>Not:</strong> Yanında (<em>*</em>)
-    işareti olanlar zorunlu alanlardır.</blockquote><br />
-</li>
-<li><input type="submit" name="submit" value="GÖNDER"
-    class="formbutton" /> <br />
-</li>
-<li></form></li>
-</ol>
+<div class="codehilite"><pre><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;gonder.html&quot;</span> <span class="na">method=</span><span class="s">&quot;post&quot;</span> <span class="na">id=</span><span class="s">&quot;formset&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;fieldset&gt;</span>
+<span class="nt">&lt;legend&gt;</span>Genel Bilgiler<span class="nt">&lt;/legend&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adAlani&quot;</span><span class="nt">&gt;</span>Ad <span class="nt">&lt;em&gt;</span><span class="ni">&amp;#42;</span><span class="nt">&lt;/em&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;ad&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;ad&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;soyadAlani&quot;</span><span class="nt">&gt;</span>Soyad <span class="nt">&lt;em&gt;</span><span class="ni">&amp;#42;</span><span class="nt">&lt;/em&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;soyad&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;soyad&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;adresAlani&quot;</span><span class="nt">&gt;</span>Ev Adresi <span class="nt">&lt;em&gt;</span><span class="ni">&amp;#42;</span><span class="nt">&lt;/em&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;adres&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;adres&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;sehirAlani&quot;</span><span class="nt">&gt;</span>Şehir <span class="nt">&lt;em&gt;</span><span class="ni">&amp;#42;</span><span class="nt">&lt;/em&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;sehir&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;sehir&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;postakoduAlani&quot;</span><span class="nt">&gt;</span>Posta Kodu <span class="nt">&lt;em&gt;</span><span class="ni">&amp;#42;</span><span class="nt">&lt;/em&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;postakodu&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;postakodu&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;epostaAlani hata&quot;</span><span class="nt">&gt;</span>Eposta <span class="ni">&amp;#42;</span>
+<span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;eposta&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;eposta&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="na">class=</span><span class="s">&quot;hata&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;telAlani&quot;</span><span class="nt">&gt;</span>Telefon<span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;tel&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;tel&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;fieldset&gt;</span>
+<span class="nt">&lt;legend&gt;</span>Konu <span class="nt">&lt;em&gt;</span><span class="ni">&amp;#42;</span><span class="nt">&lt;/em&gt;&lt;/legend&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;radiobutton_1&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;radiobutton_type&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;konuRadyoButon&quot;</span> <span class="na">for=</span><span class="s">&quot;radiobutton_1&quot;</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;radiobutton_2&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;radiobutton_type&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;konuRadyoButon&quot;</span> <span class="na">for=</span><span class="s">&quot;radiobutton_2&quot;</span><span class="nt">&gt;</span>Cras diam. Suspendisse potenti. In dictum bibendum est. Aliquam semper. Sed vel massa. Praesent imperdiet nisi eget lacus. <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;radiobutton_3&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;radiobutton_type&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;konuRadyoButon&quot;</span> <span class="na">for=</span><span class="s">&quot;radiobutton_3&quot;</span><span class="nt">&gt;</span>Phasellus quis enim. <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;radiobutton_4&quot;</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;radiobutton_type&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;konuRadyoButon&quot;</span> <span class="na">for=</span><span class="s">&quot;radiobutton_4&quot;</span><span class="nt">&gt;</span>Vestibulum ut lectus ac leo luctus aliquam. <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;fieldset&gt;</span>
+<span class="nt">&lt;legend&gt;</span>Düşünceleriniz<span class="nt">&lt;/legend&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;aciklamaAlani&quot;</span><span class="nt">&gt;</span>Düşüncelerinizi aşağıdaki alana yazınız.<span class="nt">&lt;br</span> <span class="nt">/&gt;&lt;textarea</span> <span class="na">name=</span><span class="s">&quot;describe&quot;</span> <span class="na">cols=</span><span class="s">&quot;35&quot;</span> <span class="na">rows=</span><span class="s">&quot;5&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;fieldset&gt;</span>
+<span class="nt">&lt;legend&gt;</span>Onay Alanı<span class="nt">&lt;/legend&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox_1&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name=</span><span class="s">&quot;kabul&quot;</span> <span class="na">value=</span><span class="s">&quot;y&quot;</span> <span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox_1&quot;</span> <span class="na">class=</span><span class="s">&quot;onayAlaniIsaretKutusu&quot;</span><span class="nt">&gt;</span>Site kurallarını kabul ediyorum.<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;checkbox_2&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name=</span><span class="s">&quot;kabul&quot;</span> <span class="na">value=</span><span class="s">&quot;y&quot;</span> <span class="nt">/&gt;&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox_2&quot;</span> <span class="na">class=</span><span class="s">&quot;onayAlaniIsaretKutusu&quot;</span><span class="nt">&gt;</span>Site kurallarını kabul etmiyorum.<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;blockquote&gt;&lt;strong&gt;</span>Not:<span class="nt">&lt;/strong&gt;</span> Yanında (<span class="nt">&lt;em&gt;</span>*<span class="nt">&lt;/em&gt;</span>) işareti olanlar zorunlu alanlardır.<span class="nt">&lt;/blockquote&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">name=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;GÖNDER&quot;</span> <span class="na">class=</span><span class="s">&quot;formbutton&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+
+
 <p>Yukarıdaki kodlama aslında bir çok açıdan basit yapılı formalara
 benziyor. "Bir çok karmaşık yapı basit yapıların birleşiminden oluşur"
 genel kabulü tam durumumuzu açıklayan cümle. Bu kodlamanın farkı normal
 akış dışına çıkacak(yani iki kolonlu olacak yerlerde) elementlere id
 tanımı yaparak konumlandırma işlemi yapmaktır. Şimdi sıra CSS kodunu
 yazmaya geldi.</p>
-<ol>
-<li>/<em> genel stiller </em>/</li>
-<li>
-<ul>
-<li>{<br />
-</li>
-</ul>
-</li>
-<li>margin: 0;<br />
-</li>
-<li>padding: 0;<br />
-</li>
-<li>}</li>
-<li>body {<br />
-</li>
-<li>font: 12px/14px Arial, Helvetica, sans-serif;<br />
-</li>
-<li>background-color:#07A;<br />
-</li>
-<li>text-align: center;<br />
-</li>
-<li>margin:20px 0;</li>
-<li>}</li>
-<li>/<em> form stilleri </em>/</li>
-<li>form#formset {<br />
-</li>
-<li>width: 360px;<br />
-</li>
-<li>margin: 0 auto;<br />
-</li>
-<li>text-align: left;<br />
-</li>
-<li>color:#fff;</li>
-<li>}</li>
-<li>form#formset fieldset {<br />
-</li>
-<li>margin: 0 0 1em 0;<br />
-</li>
-<li>padding: 1.5em 1.5em 0 1.5em;</li>
-<li>border: #DDD 1px solid;<br />
-</li>
-<li>}</li>
-<li>form#formset fieldset legend {<br />
-</li>
-<li>font-weight: bold;<br />
-</li>
-<li>color: #fff;<br />
-</li>
-<li>padding:0 0.5em;<br />
-</li>
-<li>}</li>
-<li>form#formset label {<br />
-</li>
-<li>display: block;<br />
-</li>
-<li>width: 290px;<br />
-</li>
-<li>font-size: 12px;<br />
-</li>
-<li>line-height: 14px;<br />
-</li>
-<li>padding: 0px 0px 12px 0px;<br />
-</li>
-<li>}</li>
-<li>form#formset fieldset input {<br />
-</li>
-<li>display: block;<br />
-</li>
-<li>margin-top: 3px;<br />
-</li>
-<li>border:1px solid #fff;<br />
-</li>
-<li>border-left:5px solid #fff;<br />
-</li>
-<li>background-color:#09c;<br />
-</li>
-<li>color:#ffc;<br />
-</li>
-<li>}</li>
-<li>form#formset label.adAlani, form#formset label.adresAlani,
-    form#formset label.sehirAlani, form#formset label.epostaAlani {<br />
-</li>
-<li>clear: left;<br />
-</li>
-<li>}</li>
-<li>form#formset label.adAlani, form#formset label.soyadAlani,
-    form#formset label.sehirAlani, form#formset label.epostaAlani,
-    form#formset label.telAlani {<br />
-</li>
-<li>float: left;<br />
-</li>
-<li>margin: 0px 10px 0px 0px;<br />
-</li>
-<li>width: 150px;<br />
-</li>
-<li>}</li>
-<li>form#formset label.adAlani input, form#formset label.soyadAlani
-    input, form#formset label.epostaAlani input, form#formset
-    label.sehirAlani input, form#formset label.telAlani input {<br />
-</li>
-<li>float: left;<br />
-</li>
-<li>width: 150px;<br />
-</li>
-<li>padding: 0px;<br />
-</li>
-<li>}</li>
-<li>form#formset label.postakoduAlani {<br />
-</li>
-<li>float: left;<br />
-</li>
-<li>width: 80px;<br />
-</li>
-<li>}</li>
-<li>form#formset label.postakoduAlani input {<br />
-</li>
-<li>float: left;<br />
-</li>
-<li>width: 80px;<br />
-</li>
-<li>}</li>
-<li>form#formset label.adresAlani {<br />
-</li>
-<li>float: left;<br />
-</li>
-<li>width: 310px;<br />
-</li>
-<li>margin: 0px 0px 0px 0px;<br />
-</li>
-<li>}</li>
-<li>form#formset label.adresAlani input {<br />
-</li>
-<li>float: left;<br />
-</li>
-<li>width: 310px;<br />
-</li>
-<li>padding: 0px;<br />
-</li>
-<li>}</li>
-<li>form#formset fieldset input#radiobutton_1, form#formset fieldset
-    input#radiobutton_2, form#formset fieldset input#radiobutton_3,
-    form#formset fieldset input#radiobutton_4 {<br />
-</li>
-<li>clear: left;<br />
-</li>
-<li>float: left;<br />
-</li>
-<li>padding: 0px;<br />
-</li>
-<li>border:0;<br />
-</li>
-<li>margin: 0px 0px 0px 0px;<br />
-</li>
-<li>background-color:#07a;<br />
-</li>
-<li>}</li>
-<li>form#formset label.konuRadyoButon {<br />
-</li>
-<li>clear: none;<br />
-</li>
-<li>margin: 0px 0px 0px 25px;<br />
-</li>
-<li>padding: 0px 0px 15px 0px;<br />
-</li>
-<li>}</li>
-<li>form#formset fieldset input#checkbox_1, form#formset fieldset
-    input#checkbox_2, form#formset fieldset input#checkbox_3 {<br />
-</li>
-<li>clear: both;<br />
-</li>
-<li>float: left;<br />
-</li>
-<li>padding: 0px;<br />
-</li>
-<li>margin: 0px;<br />
-</li>
-<li>border:0;<br />
-</li>
-<li>background-color:#07a;<br />
-</li>
-<li>}</li>
-<li>form#formset label.onayAlaniIsaretKutusu {<br />
-</li>
-<li>clear: none;<br />
-</li>
-<li>margin: 0px 0px 0px 25px;<br />
-</li>
-<li>padding: 0px 0px 15px 0px;<br />
-</li>
-<li>}</li>
-<li>form#formset textarea {<br />
-</li>
-<li>display: block;<br />
-</li>
-<li>margin-top: 3px;<br />
-</li>
-<li>border:1px solid #fff;<br />
-</li>
-<li>border-left:5px solid #fff;<br />
-</li>
-<li>background-color:#09c;<br />
-</li>
-<li>color:#ffc;<br />
-</li>
-<li>}</li>
-<li>form#formset blockquote{<br />
-</li>
-<li>margin-bottom:10px;<br />
-</li>
-<li>}</li>
-<li>form#formset fieldset em, form#formset blockquote em{<br />
-</li>
-<li>color:#ff0;<br />
-</li>
-<li>}</li>
-</ol>
+<div class="codehilite"><pre><span class="c">/* genel stiller */</span>
+<span class="o">*</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">body</span> <span class="p">{</span>
+    <span class="k">font</span><span class="o">:</span> <span class="m">12px</span><span class="o">/</span><span class="m">14px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#07A</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">20px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* form stilleri */</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">360px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">1em</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">1.5em</span> <span class="m">1.5em</span> <span class="m">0</span> <span class="m">1.5em</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">#DDD</span> <span class="m">1px</span> <span class="k">solid</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">legend</span> <span class="p">{</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">0</span> <span class="m">0.5em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">290px</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">12px</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">12px</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">input</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">border-left</span><span class="o">:</span><span class="m">5px</span> <span class="k">solid</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#09c</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#ffc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.adAlani</span><span class="o">,</span> <span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.adresAlani</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.sehirAlani</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.epostaAlani</span> <span class="p">{</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.adAlani</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.soyadAlani</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.sehirAlani</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.epostaAlani</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.telAlani</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">10px</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.adAlani</span> <span class="nt">input</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.soyadAlani</span> <span class="nt">input</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.epostaAlani</span> <span class="nt">input</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.sehirAlani</span> <span class="nt">input</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.telAlani</span> <span class="nt">input</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.postakoduAlani</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">80px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.postakoduAlani</span> <span class="nt">input</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">80px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.adresAlani</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">310px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.adresAlani</span> <span class="nt">input</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">310px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">input</span><span class="nf">#radiobutton_1</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">input</span><span class="nf">#radiobutton_2</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">input</span><span class="nf">#radiobutton_3</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">input</span><span class="nf">#radiobutton_4</span> <span class="p">{</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#07a</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.konuRadyoButon</span> <span class="p">{</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">25px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">15px</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">input</span><span class="nf">#checkbox_1</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">input</span><span class="nf">#checkbox_2</span><span class="o">,</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">input</span><span class="nf">#checkbox_3</span> <span class="p">{</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#07a</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">label</span><span class="nc">.onayAlaniIsaretKutusu</span> <span class="p">{</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">25px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">15px</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">textarea</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">border-left</span><span class="o">:</span><span class="m">5px</span> <span class="k">solid</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#09c</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#ffc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">blockquote</span><span class="p">{</span>
+    <span class="k">margin-bottom</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+    <span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">em</span><span class="o">,</span> <span class="nt">form</span><span class="nf">#formset</span> <span class="nt">blockquote</span> <span class="nt">em</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#ff0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p>Yukarıdaki kodlamada önemli görülen tanımları biraz daha açıklamaya
 çalışalım:</p>
 <ul>
@@ -456,7 +306,7 @@ yazmaya geldi.</p>
     eğer birden fazla form olursa veya sitede genel bir css dosyası
     kullanıyorsak diğer formları etkilememek. Burada yapılan tanımlar
     genel tanımlardır.</li>
-<li><span class="alternatifard"><strong>form#formset fieldset</strong></span>
+<li>&lt;span class="alternatifard"><strong>form#formset fieldset</strong>&lt;/span>
     tanımında form alanlarını bir çerçeve içine aldık ve içerikle
     kenarlık arasına boşluk koyduk. Her bölümü ayrı çerçeveye almamızın
     nedeni bölümler arasındaki farka vurgu yapmaktır.</li>
@@ -497,74 +347,60 @@ yazmaya geldi.</p>
 gereken bir alanın doldurulmaması halinde çıkacak uyarı mesajı ve
 bilginin girilmesi gereken alanın kullanıcının daha kolay görmesi için
 stil tanımını yapalım. XHTML kodunu başına</p>
-<ol>
-<li><div class="hata"></li>
-<li>Dikkat aşağıda sarı renk ile belirtilen yerlerde hata var.</li>
-<li></div></li>
-</ol>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;hata&quot;</span><span class="nt">&gt;</span>
+    Dikkat aşağıda sarı renk ile belirtilen yerlerde hata var.
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+
 <p>tanımlaması ve hataya neden olan alana(mesela e-posta girilmemiş olsun)
 sınıf tanımlaması ekleyelim.</p>
-<ol>
-<li><label class="epostaAlani **hata**">Eposta &#42;</li>
-<li><input name="eposta" type="text" id="eposta" value=""
-    **class="hata"** /></li>
-</ol>
+<div class="codehilite"><pre><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;epostaAlani hata&quot;</span><span class="nt">&gt;</span>Eposta <span class="ni">&amp;#42;</span>
+<span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;eposta&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;eposta&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="na">class=</span><span class="s">&quot;hata&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+
 <p>CSS kodunu ekleyelim</p>
-<ol>
-<li>form#formset fieldset input.hata {<br />
-</li>
-<li>display: block;<br />
-</li>
-<li>margin-top: 3px;<br />
-</li>
-<li>border:1px solid #ff0;<br />
-</li>
-<li>border-left:5px solid #ff0;<br />
-</li>
-<li>background-color:#ccc;<br />
-</li>
-<li>color:#ffc;<br />
-</li>
-<li>}</li>
-<li>form#formset fieldset label.hata {<br />
-</li>
-<li>color:#ff0;<br />
-</li>
-<li>font-weight:bold;<br />
-</li>
-<li>}</li>
-<li>div.hata {</li>
-<li>background:#FFFFCC url(images/hata.png) no-repeat scroll 5px;</li>
-<li>border:1px solid #FFCC66;</li>
-<li>margin:0pt 0pt 10px;</li>
-<li>padding:5px 10px 5px 35px;</li>
-<li>color:#000;</li>
-<li>}</li>
-</ol>
+<div class="codehilite"><pre><span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">input</span><span class="nc">.hata</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#ff0</span><span class="p">;</span>
+    <span class="k">border-left</span><span class="o">:</span><span class="m">5px</span> <span class="k">solid</span> <span class="m">#ff0</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span><span class="m">#ccc</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#ffc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span><span class="nf">#formset</span> <span class="nt">fieldset</span> <span class="nt">label</span><span class="nc">.hata</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#ff0</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.hata</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#FFFFCC</span> <span class="sx">url(images/hata.png)</span> <span class="k">no-repeat</span> <span class="k">scroll</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#FFCC66</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0pt</span> <span class="m">0pt</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span><span class="m">5px</span> <span class="m">10px</span> <span class="m">5px</span> <span class="m">35px</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p>Hata mesajının yanına bir ünlem ikonu koyduk ve farklı zemin rengi ve
 kenarlığı ile kullanıcının dikkatini buraya çektik. Ayrıca hatanın
 meydana geldiği alanı sarı renk ile tanımlayarak daha dikkat çekici
 yaptık. Dikkat ederseniz amaç devamlı kullanıcıya formumuzu daha
 anlaşılabilir ve kolay erişilebilir yapmak.</p>
 <p>En son gönder butonunun css kodunu yazalım.</p>
-<ol>
-<li>.formbutton{<br />
-</li>
-<li>cursor:pointer;<br />
-</li>
-<li>border:0;</li>
-<li>background:#999;<br />
-</li>
-<li>color:#666;<br />
-</li>
-<li>font-weight:bold;<br />
-</li>
-<li>padding: 1px 2px;<br />
-</li>
-<li>background:url(images/buton_bg2.gif) repeat-x left top;<br />
-</li>
-<li>}</li>
-</ol>
+<div class="codehilite"><pre><span class="nc">.formbutton</span><span class="p">{</span>
+    <span class="k">cursor</span><span class="o">:</span><span class="k">pointer</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#999</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">1px</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(images/buton_bg2.gif)</span> <span class="k">repeat-x</span> <span class="k">left</span> <span class="k">top</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <p>Buton zeminine degrade 1px genişliğinde bir resim koyarak hoş görünümlü
 bir buton elde ettik.</p>
 <p>Sonuç sayfasını görmek için <a href="../static/dokumanlar/css_ile_form_2.html">tıklayınız.</a></p>
@@ -577,14 +413,10 @@ tarayıcılarında test edilmiştir.</p>
 <li>Internet Explorer 5.5 +</li>
 <li>Opera 7.54 +</li>
 </ul>
-<div class="ekstrabilgi">
-**Not:** Görünümde Firefox ve Internet Explorer arasında ufak
+<p><strong>Not:</strong> Görünümde Firefox ve Internet Explorer arasında ufak
 farklılıklar mevcut, bu farklılıkların çok ufak olması nedeni ile bir
-düzeltme kodu(fix) yazma gereği duymadık.
-
-</div>
-
-<h4>Kaynaklar</h4>
+düzeltme kodu(fix) yazma gereği duymadık.</p>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.webcredible.co.uk/user-friendly-resources/css/css-forms.shtml">http://www.webcredible.co.uk</a></li>
 <li><a href="http://www.websiteoptimization.com/speed/tweak/forms/">http://www.websiteoptimization.com/</a></li>
@@ -601,10 +433,7 @@ düzeltme kodu(fix) yazma gereği duymadık.
 <li><a href="http://www.alistapart.com/articles/prettyaccessibleforms">http://www.alistapart.com/</a></li>
 <li><a href="http://www.roscripts.com/Tableless_forms-112.html">http://www.roscripts.com/</a></li>
 </ul>
-</p>
-
-<p><img alt="CSS ile Form" src="../static/images/sonuc_sayfasi.kucukresim.gif" />]: /images/sonuc_sayfasi.gif
-    "CSS ile Form"</p>
+<p><img alt="CSS ile Form" src="../static/images/sonuc_sayfasi.kucukresim.gif" />]: /images/sonuc_sayfasi.gif</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

@@ -111,11 +111,12 @@ Explorer'ın PNG desteğini 7. sürümüne kadar desteklememesidir. Tabi web
 kodlayıcıları Internet Explorer'ı beklemeden bazı düzeltme kodları
 üretti. Internet Explorer'ın desteklediği <strong>filter</strong>'ın
 <strong>AlphaImageLoader</strong> özelliği sayesinde saydam PNG desteği sağlanmıştır.</p>
-<div class="codehilite"><pre> <span class="nt">img</span> <span class="p">{</span> <span class="n">filter</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nt">img</span> <span class="p">{</span> 
+    <span class="n">filter</span><span class="o">:</span> <span class="n">progid</span><span class="o">:</span><span class="n">DXImageTransform</span><span class="o">.</span><span class="n">Microsoft</span><span class="o">.</span><span class="n">AlphaImageLoader</span><span class="p">(</span><span class="o">...</span><span class="p">);</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>progid:DXImageTransform.Microsoft.AlphaImageLoader(...); } </p>
 <p>Bu kod problemimizi çözdü, ancak tümünü değil.</p>
 <h2>Saydam PNG düzeltmesi ile ilgili sorunlar</h2>
 <p><strong>W3C ve Diğer farklı tarayıcı desteğinin olmayışı.</strong></p>
@@ -144,20 +145,31 @@ karşılaştığım tüm sorunların üstesinden bu yöntem geldi. Siz kaynaklar
 kısmındaki linkleri takip ederek farklı yöntemleri uygulayabilirisiniz.</p>
 <p>İlk olarak bir saydam PNG resmini sitemize ekleyelim. Benim logomun bir
 gif birde png halini hazırlayıp saydam PNG'nin gözle görülür faydasını
-anlayalım.  :::html
-     &lt;!DOCTYPE html PUBLIC
-"-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Saydam PNG</title> <style> .kutu{
-background:url(images/ardalan.gif) top left no-repeat; height:80px;
-padding:10px } </style> </head> <body> <div class="kutu"><img
-src="../static/images/fatihhayri_logo.gif" alt="Logo" width="166" height="82"
-/></div> <p>fatihhayri_logo.gif uygulaması</p> <div
-class="kutu"><img src="../static/images/fatihhayri_logo.png" alt="Logo"
-width="166" height="82" /></div> <p>fatihhayri_logo.png
-uygulaması</p> </body> </html> </p>
+anlayalım.<br />
+</p>
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span> 
+<span class="nt">&lt;title&gt;</span>Saydam PNG<span class="nt">&lt;/title&gt;</span> 
+<span class="nt">&lt;style&gt;</span> 
+<span class="nc">.kutu</span><span class="p">{</span> 
+    <span class="k">background</span><span class="o">:</span><span class="sx">url(images/ardalan.gif)</span> <span class="k">top</span> <span class="k">left</span> <span class="k">no-repeat</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span><span class="m">10px</span> 
+<span class="p">}</span> 
+<span class="nt">&lt;/style&gt;</span> 
+<span class="nt">&lt;/head&gt;</span> 
+<span class="nt">&lt;body&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kutu&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/fatihhayri_logo.gif&quot;</span> <span class="na">alt=</span><span class="s">&quot;Logo&quot;</span> <span class="na">width=</span><span class="s">&quot;166&quot;</span> <span class="na">height=</span><span class="s">&quot;82&quot;</span> <span class="nt">/&gt;&lt;/div&gt;</span> 
+    <span class="nt">&lt;p&gt;</span>fatihhayri_logo.gif uygulaması<span class="nt">&lt;/p&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kutu&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/fatihhayri_logo.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;Logo&quot;</span> <span class="na">width=</span><span class="s">&quot;166&quot;</span> <span class="na">height=</span><span class="s">&quot;82&quot;</span> <span class="nt">/&gt;&lt;/div&gt;</span> 
+    <span class="nt">&lt;p&gt;</span>fatihhayri_logo.png uygulaması<span class="nt">&lt;/p&gt;</span> 
+<span class="nt">&lt;/body&gt;</span> 
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
 <p>Örnek sayfayı görmek için <a href="../static/dokumanlar/resim_ekle.html">tıklayınız.</a></p>
 <p><img alt="Saydam PNG resim" src="../static/images/saydampng_resim.gif" /></p>
 <p>Yukarıdaki örnek görüldüğü gibi logonun kenarlarındaki geçiş kısmında
@@ -168,13 +180,23 @@ görüntü aşağıdaki gibi olacaktır.</p>
 <p>Kırmızı ile işaretlediğim ve resmi saran bir gri alan gibi saracaktır.
 Bunun anlamı bu tarayıcının saydam PNG desteğinin olmadığıdır. Bu sorunu
 gidermek için yukarıda bahsettiğimiz İnternet Explorer 6'nın
-desteklediği <strong>filter</strong> tekniği uygulayacağız. [sourcecode language="javascript" highlight="4"] function fixpngs(){ var l =
-document.getElementsByTagName('img'); for(i=0;i&lt;l.length;i++){ p =
-'images/0.gif'; n = l[i].getAttribute('src'); g = n.toLowerCase();
-if(g.substring(g.length-3)=="png"){ l[i].setAttribute('src',p);
-l[i].style.cssText="filter:
-progid:DXImageTransform.Microsoft.AlphaImageLoader (src='"+n+"')"; } } }
-window.onload = fixpngs; </p>
+desteklediği <strong>filter</strong> tekniği uygulayacağız. </p>
+<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">fixpngs</span><span class="p">(){</span>
+<span class="kd">var</span> <span class="nx">l</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;img&#39;</span><span class="p">);</span>
+    <span class="k">for</span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">l</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">p</span> <span class="o">=</span> <span class="s1">&#39;images/0.gif&#39;</span><span class="p">;</span>
+    <span class="nx">n</span> <span class="o">=</span> <span class="nx">l</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">);</span>
+    <span class="nx">g</span> <span class="o">=</span> <span class="nx">n</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">g</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">g</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="s2">&quot;png&quot;</span><span class="p">){</span>
+        <span class="nx">l</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">,</span><span class="nx">p</span><span class="p">);</span>
+        <span class="nx">l</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">style</span><span class="p">.</span><span class="nx">cssText</span><span class="o">=</span><span class="s2">&quot;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src=&#39;&quot;</span><span class="o">+</span><span class="nx">n</span><span class="o">+</span><span class="s2">&quot;&#39;)&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="nx">fixpngs</span><span class="p">;</span>
+</pre></div>
+
+
 <p>Yukarıdaki js dosyasını incelersek. Sayfadaki tüm resimleri tarayıp png
 uzantılı olanları bulup IE'nin göstereceği stil özelliklerini bu png'ye
 atayacaktır. Birde burada bize saydam 1x1 saydam gif resmi gerekecektir.
@@ -186,28 +208,38 @@ resmin sol üstünde kırmızı x işareti çıkacaktır.</p>
 saydam PNG ve sayfa yüklendiğinde görünür olmaya(display:none) sonradan
 görünen alanlardaki saydam PNG ile yaşadığım sorunları bu kodun
 çözmesidir.</p>
-<p>Yukarıdaki kodu sayfamıza sadece IE7 öncesi görecek şekilde eklersek
-    :::html
-     &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML
-1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Saydam PNG</title> <style> .kutu{
-background:url(images/ardalan.gif) top left no-repeat; height:80px;
-padding:10px } </style> <!--[if lt IE 7]> <script
-type="text/javascript" src="../static/pngDuzenlemeKodu.js"></script>
-<![endif]--> </head> <body> <div class="kutu"><img
-src="../static/images/fatihhayri_logo.gif" alt="Logo" width="166" height="82"
-/></div> <p>fatihhayri_logo.gif uygulaması</p> <div
-class="kutu"><img src="../static/images/fatihhayri_logo.png" alt="Logo"
-width="166" height="82" /></div> <p>fatihhayri_logo.png
-uygulaması</p> </body> </html> </p>
+<p>Yukarıdaki kodu sayfamıza sadece IE7 öncesi görecek şekilde eklersek</p>
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span> 
+<span class="nt">&lt;title&gt;</span>Saydam PNG<span class="nt">&lt;/title&gt;</span> 
+<span class="nt">&lt;style&gt;</span> 
+<span class="nc">.kutu</span><span class="p">{</span> 
+<span class="k">background</span><span class="o">:</span><span class="sx">url(images/ardalan.gif)</span> <span class="k">top</span> <span class="k">left</span> <span class="k">no-repeat</span><span class="p">;</span> 
+<span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span> 
+<span class="k">padding</span><span class="o">:</span><span class="m">10px</span> 
+<span class="p">}</span> 
+<span class="nt">&lt;/style&gt;</span> 
+<span class="c">&lt;!--[if lt IE 7]&gt; </span>
+<span class="c">&lt;script type=&quot;text/javascript&quot; src=&quot;pngDuzenlemeKodu.js&quot;&gt;&lt;/script&gt; </span>
+<span class="c">&lt;![endif]--&gt;</span> 
+<span class="nt">&lt;/head&gt;</span> 
+<span class="nt">&lt;body&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kutu&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/fatihhayri_logo.gif&quot;</span> <span class="na">alt=</span><span class="s">&quot;Logo&quot;</span> <span class="na">width=</span><span class="s">&quot;166&quot;</span> <span class="na">height=</span><span class="s">&quot;82&quot;</span> <span class="nt">/&gt;&lt;/div&gt;</span> 
+    <span class="nt">&lt;p&gt;</span>fatihhayri_logo.gif uygulaması<span class="nt">&lt;/p&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kutu&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/fatihhayri_logo.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;Logo&quot;</span> <span class="na">width=</span><span class="s">&quot;166&quot;</span> <span class="na">height=</span><span class="s">&quot;82&quot;</span> <span class="nt">/&gt;&lt;/div&gt;</span> 
+    <span class="nt">&lt;p&gt;</span>fatihhayri_logo.png uygulaması<span class="nt">&lt;/p&gt;</span> 
+<span class="nt">&lt;/body&gt;</span> 
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
 <p>Örneği görmek için <a href="../static/dokumanlar/resim_ekle2.html">tıklayınız.</a></p>
 <p><img alt="saydam png ie6" src="../static/images/saydampng_resim2_ie6.gif" /></p>
 <p>Yukarıdaki ekran görüntüsü Internet Explorer 6'da sayfamızın
 görüntüsüdür.</p>
-<h4>Ardalan resmi olarak saydam PNG kullanımı</h4>
+<h2>Ardalan resmi olarak saydam PNG kullanımı</h2>
 <p>Resimlerde kullanımının dışında ardalan(background) resmi olarakta
 saydam PNG resimlerini kullanmamız gerekebilir. Benim en çok
 karşılaştığım durumlar resimlerin üzerine dinamik içerikli gölgeli
@@ -225,29 +257,47 @@ Ardalandaki resmin farklı sayfalarda değişeceğini düşünerek kodlayalım.<
 saydam png olarak kaydettim</p>
 <p><img alt="" src="../static/images/photoshop_png.gif" /></p>
 <p>Saydam png kullanımının farklı yönlerini anlatmak için bu bölümü 3 kısma
-ayırdık. Bu şekilde kodumuzu yazarsak:  :::html</p>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Saydam PNG</title> <style> #resim{
-background:url(images/ardalan_resmi.jpg) top left no-repeat;
-width:400px; padding-top:15px; height:300px; } #icerik{ width:207px;
-margin-left:15px; } #icerikUstu{ background:url(images/icerik_ust.png)
-top left no-repeat; height:10px; } #metinAlani{
-background:url(images/icerik_orta.png) top left repeat-y; font:11px
-Arial, Helvetica, sans-serif; padding:0 10px } </style> </head>
-<body> <div id="resim"> <div id="icerik"> <div
-id="icerikUstu"><img src="../static/images/0.gif" width="1" height="1"
-/></div> <div id="metinAlani"> Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Praesent ultricies orci quis erat. Nulla
-vulputate sapien sit amet elit. Cum sociis natoque penatibus et magnis
-dis parturient montes, nascetur ridiculus mus. Suspendisse sed nunc. In
-at ligula. Class aptent taciti sociosqu ad litora torquent per conubia
-nostra, per inceptos himenaeos. Ut augue. Phasellus scelerisque vehicula
-orci.</div> <div id="icerikAlt"><img src="../static/images/icerik_alt.png"
-width="207" height="18" alt=" " /></div> </div> </div> </body>
-</html>
+ayırdık. Bu şekilde kodumuzu yazarsak:<br />
+</p>
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span> 
+<span class="nt">&lt;title&gt;</span>Saydam PNG<span class="nt">&lt;/title&gt;</span> 
+<span class="nt">&lt;style&gt;</span> 
+<span class="nf">#resim</span><span class="p">{</span> 
+<span class="k">background</span><span class="o">:</span><span class="sx">url(images/ardalan_resmi.jpg)</span> <span class="k">top</span> <span class="k">left</span> <span class="k">no-repeat</span><span class="p">;</span> 
+<span class="k">width</span><span class="o">:</span><span class="m">400px</span><span class="p">;</span> 
+<span class="k">padding-top</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span> 
+<span class="k">height</span><span class="o">:</span><span class="m">300px</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nf">#icerik</span><span class="p">{</span> 
+<span class="k">width</span><span class="o">:</span><span class="m">207px</span><span class="p">;</span> 
+<span class="k">margin-left</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nf">#icerikUstu</span><span class="p">{</span> 
+<span class="k">background</span><span class="o">:</span><span class="sx">url(images/icerik_ust.png)</span> <span class="k">top</span> <span class="k">left</span> <span class="k">no-repeat</span><span class="p">;</span> 
+<span class="k">height</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nf">#metinAlani</span><span class="p">{</span> 
+<span class="k">background</span><span class="o">:</span><span class="sx">url(images/icerik_orta.png)</span> <span class="k">top</span> <span class="k">left</span> <span class="k">repeat-y</span><span class="p">;</span> 
+<span class="k">font</span><span class="o">:</span><span class="m">11px</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> 
+<span class="k">padding</span><span class="o">:</span><span class="m">0</span> <span class="m">10px</span> 
+<span class="p">}</span> 
+<span class="nt">&lt;/style&gt;</span> 
+<span class="nt">&lt;/head&gt;</span> 
+<span class="nt">&lt;body&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;resim&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikUstu&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/0.gif&quot;</span> <span class="na">width=</span><span class="s">&quot;1&quot;</span> <span class="na">height=</span><span class="s">&quot;1&quot;</span> <span class="nt">/&gt;&lt;/div&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;metinAlani&quot;</span><span class="nt">&gt;</span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent ultricies orci quis erat. Nulla vulputate sapien sit amet elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed nunc. In at ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut augue. Phasellus scelerisque vehicula orci.<span class="nt">&lt;/div&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerikAlt&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/icerik_alt.png&quot;</span> <span class="na">width=</span><span class="s">&quot;207&quot;</span> <span class="na">height=</span><span class="s">&quot;18&quot;</span> <span class="na">alt=</span><span class="s">&quot; &quot;</span> <span class="nt">/&gt;&lt;/div&gt;</span> 
+<span class="nt">&lt;/div&gt;</span> 
+<span class="nt">&lt;/div&gt;</span> 
+<span class="nt">&lt;/body&gt;</span> 
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
 
 <p>Örnek sayfayı görmek için <a href="../static/dokumanlar/ardalan_ekle.html">tıklayınız.</a></p>
 <p><img alt="Saydam PNG ardalan olarak kullanımı" src="../static/images/saydam_ardalan1.gif" /></p>
@@ -259,20 +309,32 @@ baktığımızda işin rengi değişecektir.</p>
 <p><img alt="Saydam PNG ardalan olarak kullanımı" src="../static/images/saydam_ardalan1_ie.gif" /></p>
 <p>Yukarıdaki resimde görüldüğü gibi saydam png resimlerinin saydam olan
 kısımları gri bir çerçeve ile kaplanmış gibi görünüyor. Yukarıdaki
-kodumuz ekleyerek bu sorunu halledebiliriz.     :::html</p>
-<!--[if lt IE 7]> <script type="text/javascript"
-src="../static/pngDuzenlemeKodu.js"></script> <![endif]-->
+kodumuz ekleyerek bu sorunu halledebiliriz.   <br />
+</p>
+<div class="codehilite"><pre><span class="c">&lt;!--[if lt IE 7]&gt; </span>
+<span class="c">    &lt;script type=&quot;text/javascript&quot; src=&quot;pngDuzenlemeKodu.js&quot;&gt;&lt;/script&gt; </span>
+<span class="c">&lt;![endif]--&gt;</span>
+</pre></div>
+
 
 <p>Ancak bu kod bize sadece alt kısma eklediğimiz resmi düzeltmeye
 yaracaktır. Orta ve üst kısımların ardalanında kullandığımız saydam png
 doyarının görünümü yine sorun görülecektir.</p>
 <p><img alt="Saydam PNG ardalan olarak kullanımı" src="../static/images/saydam_ardalan2_ie.gif" /></p>
 <p>Peki bunun için bir çözüm yok mu? Elbette var. Yine filter özelliğin
-kullanarak bu işe bir çözüm getireceğiz.    :::html</p>
-<!--[if lt IE 7]> <style> #icerikUstu{ background:transparent;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_ust.png',
-sizingMethod='crop'); } </style> <script type="text/javascript"
-src="../static/pngDuzenlemeKodu.js"></script> <![endif]-->
+kullanarak bu işe bir çözüm getireceğiz.  <br />
+</p>
+<div class="codehilite"><pre><span class="c">&lt;!--[if lt IE 7]&gt; </span>
+<span class="c">&lt;style&gt; </span>
+<span class="c">#icerikUstu{ </span>
+<span class="c">    background:transparent; </span>
+<span class="c">    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;images/icerik_ust.png&#39;, sizingMethod=&#39;crop&#39;); </span>
+<span class="c">} </span>
+<span class="c">&lt;/style&gt; </span>
+<span class="c">&lt;script type=&quot;text/javascript&quot; src=&quot;pngDuzenlemeKodu.js&quot;&gt;&lt;/script&gt; </span>
+<span class="c">&lt;![endif]--&gt;</span>
+</pre></div>
+
 
 <p>Yukarıdaki kodu sayfamıza eklediğimizde IE6 içeriğin üst kısmına
 uyguladığımız ardalan resmi düzgün görüntülenecektir. Bu koda dikkat
@@ -280,12 +342,10 @@ edersek. daha önce atadığımız ve yeni nesil tarayıcılarda görünen
 background özelliği sıfırlanıyor(<strong>background:none</strong>) Daha sonra filter
 özelliği uygulanıyor. Burada dikkat etmemiz gerek bir bölüm daha var
 filter özelliğinin iki parametresi var</p>
-<div class="codehilite"><pre>
+<div class="codehilite"><pre><span class="nt">filter</span><span class="nd">:progid:DXImageTransform</span><span class="nc">.Microsoft.AlphaImageLoader</span><span class="o">(</span><span class="nt">parametre1</span><span class="o">,</span> <span class="nt">parametre2</span><span class="o">);</span>
 </pre></div>
 
 
-<p>filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(parametre1,
-parametre2); </p>
 <p>parametre1 resmin kaynağını göstermek için kullanılır. parametre2 ise
 kullanılan ardalan resminin nasıl şekillendirileceğini gösterir. İki
 değer alır, crop ve scale.</p>
@@ -294,15 +354,29 @@ değer alır, crop ve scale.</p>
 background-repeat:repeat-y özelliğine karşılık gelen bir özelliktir.
 Bunun uygulamasını biraz sonra göreceğiz.</p>
 <p>Gelelim metin girdiğimiz kısmın arkasına uyguladığımız ardalan resmini
-uygulamaya, bunu için:  :::html
-     <!--[if lt IE 7]>
-<style> #icerikUstu{ background:transparent;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_ust.png',
-sizingMethod='crop'); } #metinAlani{ background:transparent;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_orta.png',
-sizingMethod='scale'); height:1%; } </style> <script
-type="text/javascript" src="../static/pngDuzenlemeKodu.js"></script>
-<![endif]--> </p>
+uygulamaya, bunu için:<br />
+</p>
+<div class="codehilite"><pre><span class="c">&lt;!--[if lt IE 7]&gt; </span>
+<span class="c">&lt;style&gt; </span>
+<span class="c">#icerikUstu{ </span>
+<span class="c">background:transparent; </span>
+<span class="c">filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;images/icerik_ust.png&#39;, sizingMethod=&#39;crop&#39;); </span>
+<span class="c">} </span>
+<span class="c">#metinAlani{</span>
+
+<span class="c">background:transparent;</span>
+
+<span class="c">filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;images/icerik_orta.png&#39;, sizingMethod=&#39;scale&#39;);</span>
+
+<span class="c">height:1%;</span>
+
+<span class="c">} </span>
+<span class="c">&lt;/style&gt; </span>
+<span class="c">&lt;script type=&quot;text/javascript&quot; src=&quot;pngDuzenlemeKodu.js&quot;&gt;&lt;/script&gt; </span>
+<span class="c">&lt;![endif]--&gt;</span>
+</pre></div>
+
+
 <p>Örnek sayfayı görmek için <a href="../static/dokumanlar/ardalan_ekle3.html">tıklayınız.</a></p>
 <p><img alt="Saydam PNG ardalan olarak kullanımı" src="../static/images/saydam_ardalan3_ie.gif" /></p>
 <p>Bir önceki örneğe göre farkımız crop yerine scale uygulamak oldu. Burada
@@ -318,14 +392,27 @@ ve tıkladığımızda ilgili linke gidemiyoruz. Burada link alanı sanki
 gizli bir alana altında kalıyor gibi. Bizde linkleri bu alanın üzerine
 çıkarmalıyız</p>
 <p>Bu durumu çözmek için:</p>
-<p>[sourcecode language="html" highlight="12,13,14,15"] <!--[if lt IE 7]>
-<style> #icerikUstu{ background:transparent;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_ust.png',
-sizingMethod='crop'); } #metinAlani{ background:transparent;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/icerik_orta.png',
-sizingMethod='scale'); height:1%; } #metinAlani a{ position: relative;
-z-index: 1; } </style> <script type="text/javascript"
-src="../static/pngDuzenlemeKodu.js"></script> <![endif]--> </p>
+<div class="codehilite"><pre><span class="c">&lt;!--[if lt IE 7]&gt; </span>
+<span class="c">&lt;style&gt; </span>
+<span class="c">#icerikUstu{ </span>
+<span class="c">    background:transparent; </span>
+<span class="c">    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;images/icerik_ust.png&#39;, sizingMethod=&#39;crop&#39;); </span>
+<span class="c">} </span>
+<span class="c">#metinAlani{ </span>
+<span class="c">    background:transparent; </span>
+<span class="c">    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;images/icerik_orta.png&#39;, sizingMethod=&#39;scale&#39;); </span>
+<span class="c">    height:1%; </span>
+<span class="c">} </span>
+<span class="c">#metinAlani a{</span>
+<span class="c">    position: relative;</span>
+<span class="c">    z-index: 1;</span>
+<span class="c">} </span>
+<span class="c">&lt;/style&gt; </span>
+<span class="c">&lt;script type=&quot;text/javascript&quot; src=&quot;pngDuzenlemeKodu.js&quot;&gt;&lt;/script&gt; </span>
+<span class="c">&lt;![endif]--&gt;</span>
+</pre></div>
+
+
 <p>Örnek sayfayı görmek için <a href="../static/dokumanlar/ardalan_ekle4.html">tıklayınız.</a></p>
 <h2>Sonuç</h2>
 <p>Sonuç olarak saydam PNG kullanmak çok güzel ama ie6 ile uğraşmak zor.
