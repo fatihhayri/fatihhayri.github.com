@@ -68,8 +68,120 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="./git-ogreniyorum-3/">Git Öğreniyorum - 3</a></h1> 
+                    <h1 class="entry-title"><a href="./css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/">CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-01-02T05:09:22">
+                Wed 02 January 2013
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href="./author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href="./category/misc.html">misc</a> kategorisi. </p>
+
+
+
+</footer><!-- /.post-info --><p>Slug : tum-tarayicilar-icin-css-ile-saydamlik-opacity
+Date: 2009-02-23 16:47
+Category: CSS, Web Standartları, XHTML
+Tags: css doğrulama, donuklaştırma, İnternet Tarayıcısı, opacity, saydamlık</p>
+<p>Daha önce birçok kez bu konuda bana e-posta geldi. Buraya yazmanın
+mantıklı olacağını düşündüm.  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">secici</span> <span class="p">{</span>
+    <span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* Standard: FF gt 1.5, Opera, Safari */</span>
+    <span class="n">filter</span><span class="o">:</span> <span class="n">alpha</span><span class="p">(</span><span class="k">opacity</span><span class="o">=</span><span class="m">75</span><span class="p">);</span> <span class="c">/* IE lt 8 */</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> <span class="s2">&quot;alpha(opacity=75)&quot;</span><span class="p">;</span> <span class="c">/* IE 8 */</span>
+    <span class="o">-</span><span class="n">khtml</span><span class="o">-</span><span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* Safari 1.x */</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* FF lt 1.5, Netscape */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Günümüzdeki(27 Nisan 2012) durumu düşünürsek kodu aşağıdaki gibi
+kısaltabiliriz.</p>
+<div class="codehilite"><pre><span class="nt">secici</span> <span class="p">{</span>
+    <span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* Standard: FF gt 1.5, Opera, Safari */</span>
+    <span class="n">filter</span><span class="o">:</span> <span class="n">alpha</span><span class="p">(</span><span class="k">opacity</span><span class="o">=</span><span class="m">75</span><span class="p">);</span> <span class="c">/* IE lt 8 */</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> <span class="s2">&quot;alpha(opacity=75)&quot;</span><span class="p">;</span> <span class="c">/* IE 8 */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Örneği görmek için <a href="static/dokumanlar/donukluk.html">tıklayınız.</a> Kod aslında tek satır olması gerekir ki CSS
+3 ile birlikte bu tek satır olacaktır. opacity: değer; tanımı ile
+halledeceğiz. Ama şu an yürürlükte olan tarayıcılar için yukarıdaki 5
+satır kodu yazmalıyız. Bu kodu yazmak o kadar da sorun değil, ama eğer
+bu kodu yazdığınız sayfanızı <a href="http://jigsaw.w3.org/css-validator/">W3C doğrulamasından</a> geçirirseniz
+aşağıdaki gibi bir hata alacaksınız. <img alt="donuklasma_val2" src="static/images/donuklasma_val2.gif" /> Bence W3C
+doğrulması çok önemli olmasada bazen şartlar doğrulama
+gerektirdiğinde(mesela müşteri istediğinde) bu sorunu çözmek için bir
+kaç yöntem var. Bu yöntemlerden biri javascript fonksiyonu hazırlayıp bu
+fonksiyon yardımı ile elemanlarımızı saydamlaştırma; </p>
+<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">donuklastirma</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">donukDeger</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">oe</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
+    <span class="c1">// donuklastirma degeri</span>
+    <span class="nx">oe</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;style&quot;</span><span class="p">,</span> <span class="s2">&quot;opacity:&quot;</span><span class="o">+</span> <span class="nx">donukDeger</span> <span class="o">+</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">oe</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">)</span> <span class="c1">// IE icin</span>
+    <span class="nx">oe</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="s2">&quot;alpha(opacity=&quot;</span><span class="o">+</span> <span class="nx">donukDeger</span><span class="o">*</span><span class="mi">100</span> <span class="o">+</span><span class="s2">&quot;);&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Örneği görmek
+için <a href="static/dokumanlar/donukluk_dog.html">tıklayınız.</a> Diğer bir yöntemde ise ayrı bir css kodu yazıp bu
+kodu javascript ile ekleyebiliriz <br />
+</p>
+<div class="codehilite"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span> <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;style/donuklastirma.css&quot; /&gt;&#39;</span><span class="p">);</span><span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+
+<p>Sorun: opacity tanımı kapsadığı elemanın içeriğini de etkiler bunu
+engellemek için Robert Nyman'ın bir çözümü var.
+<a href="http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/">http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/</a>
+denemedim bir bakın isterseniz.</p>
+<h2>Kaynaklar</h2>
+<ul>
+<li><a href="http://blog.evaria.com/2007/validate-css-style-opacity/">http://blog.evaria.com/2007/validate-css-style-opacity/</a></li>
+<li><a href="http://snipplr.com/view/10094/crossbrowser-opacity/">http://snipplr.com/view/10094/crossbrowser-opacity/</a></li>
+<li><a href="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/">http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/</a></li>
+<li><a href="http://www.codeguru.com/forum/showthread.php?threadid=458411">http://www.codeguru.com/forum/showthread.php?threadid=458411</a></li>
+<li><a href="http://snipplr.com/view/707/setopacity/">http://snipplr.com/view/707/setopacity/</a></li>
+<li><a href="http://www.ertugrulhaskan.com/blog/?p=548">http://www.ertugrulhaskan.com/blog/?p=548</a></li>
+<li><a href="http://www.aybim.com.tr/progs/acsstxt17.html">http://www.aybim.com.tr/progs/acsstxt17.html</a></li>
+<li><a href="http://www.mehmetduran.com/detay.aspx?detay=19">http://www.mehmetduran.com/detay.aspx?detay=19</a></li>
+<li><a href="http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5">http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5</a></li>
+<li><a href="http://www.ahmetcelik.org/?p=220">http://www.ahmetcelik.org/?p=220</a></li>
+<li><a href="http://mfyz.com/?/dokuman/82/css-ve-transparanlik/">http://mfyz.com/?/dokuman/82/css-ve-transparanlik/</a></li>
+<li><a href="http://scriptiz.org/?p=1067">http://scriptiz.org/?p=1067</a></li>
+</ul><p><a href="./css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/#disqus_thread">yorum var</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Diğer yazılar</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="./git-ogreniyorum-3/" rel="bookmark"
+                           title="Permalink to Git Öğreniyorum - 3">Git Öğreniyorum - 3</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2012-12-28T14:28:00">
                 Fri 28 December 2012
         </abbr>
@@ -83,7 +195,8 @@
 <p>etiketler: <a href="./tag/git.html">git</a><a href="./tag/surum-kontrolu.html">sürüm kontrolü</a></p>
 
 
-</footer><!-- /.post-info --><h2>Git  grep</h2>
+</footer><!-- /.post-info -->
+                <h2>Git  grep</h2>
 <p>Git&rsquo;in önemli komutu grep hakkında bir kaç bilgi vereceğim.</p>
 <p>Ben grep&rsquo;i git&rsquo;in arama komutu olarak biliyordum, ancak unix sistemlerde filtreleme komutu imiş. Geniş kullanım alanı varmış yani.</p>
 <p>Genel söz dizimi</p>
@@ -96,166 +209,11 @@
 </pre></div>
 
 
-<p>Yukarıdaki örnek basit bir kullanıma örnek olarak veridi. /home/fatih/ana.css klasörü içinde kapsayamama kelimesini arayacaktır.</p>
-<p>Grep&rsquo;in bazı özellikleri vardır. Bu kısayolları kullanarak aramalarımıza bazı özellikler ekleriz.</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep -v <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/ana.css
-</pre></div>
-
-
-<p>İçinde kapsayamama geçmeyen satırları bize verecektir. -v (invert-match)</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep -c <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/ana.css
-</pre></div>
-
-
-<p>Aradığımız dosya içinde kapsayamama kelimesinin kaç kere geçtiğini bize gösterir. -c (count) </p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep -i <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/ana.css
-</pre></div>
-
-
-<p>Aramanın büyük-küçük harfe duyarsızlaştırır. Yani arama sonuçlarında Kapsayamama çıkar. -i (ignore-case)</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep -r <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>Aramanın belirlene dizin ve alt dizinlerde yapılmasını belirler. -r (recursive)</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep -n <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>grep ile listelenen sonuçların hangi satırda olduğunu gösterir. -n (line-number)</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep <span class="s1">&#39;\&amp;lt;script&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>&lsquo;\&amp;rsquo;(ters bölü işareti) karakteri kendisinden sonra gelen karakterin özel bir karakter olduğunu gösterir ve aramaya dahil edilmesini sağlar. </p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>Birden fazla arama bloğunu bir arada kullanmak için | boru(pipe) işaretini kullanırız.</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep <span class="s1">&#39;^script&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>grep aramalarımızda Düzenli İfadeleri(regex) kullanabiliriz. Yukarıdaki örnekte script ile başlayan sonuçları getir demektir.</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep <span class="s1">&#39;script$&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>Yukarıdaki script ile biten satırları listeler. Düzenli ifadeler ile yapabileceklerimizi düşündüğümüzde aramalarımızı ne kadar özelleştirebileceğimizi anlarız.</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep &lt;script&gt; /home/fatih | more
-</pre></div>
-
-
-<p>grep ile arama yaptığımızda pencere genişliği kadar çıktıları bize gösterir. Tüm satırın gösterilmesi için | more kullanırız.</p>
-<h2>Git kodlarını renklendirmek için</h2>
-<p>git komutları ve işlemlerini renklendirmek mümkündür. Daha okunaklı ekranlar için Git&rsquo;in status, branch ve diff komutlarını renklendirelim. 
-Renklendirme için konfigürasyon dosyasına ~/.gitconfig aşağıdaki kodları eklemeniz yeterli.</p>
-<div class="codehilite"><pre><span class="o">[</span>color<span class="o">]</span>
-  branch <span class="o">=</span> auto
-  diff <span class="o">=</span> auto
-  status <span class="o">=</span> auto
-
-<span class="o">[</span>color &amp;quot;branch&amp;quot;<span class="o">]</span>
-  current <span class="o">=</span> yellow reverse
-  local <span class="o">=</span> yellow
-  remote <span class="o">=</span> green
-
-<span class="o">[</span>color &amp;quot;diff&amp;quot;<span class="o">]</span>
-  meta <span class="o">=</span> yellow bold
-  frag <span class="o">=</span> magenta bold
-  old <span class="o">=</span> red bold
-  new <span class="o">=</span> green bold
-
-<span class="o">[</span>color &amp;quot;status&amp;quot;<span class="o">]</span>
-  added <span class="o">=</span> yellow
-  changed <span class="o">=</span> green
-  untracked <span class="o">=</span> cyan
-</pre></div>
-
-
-<h2>Git dallanmalarını düzenleme</h2>
-<p>Git'te master'a gitmiş bütün eski dallanmalarımızı(branch) -lokalden- silmek için şöyle bir komut kullanabiliriz:</p>
-<div class="codehilite"><pre>git branch --merged master | grep -v <span class="s1">&#39;master$&#39;</span> | xargs git branch -d
-</pre></div>
-
-
-<p>Kaynak: <a href="http://devblog.springest.com/a-script-to-remove-old-git-branches">http://devblog.springest.com/a-script-to-remove-old-git-branches</a></p>
-<p><a href="https://twitter.com/muratcorlu">Murat Çorlu</a></p>
-<h2>Git te dosya adı arama</h2>
-<p>git'te dosya adıyla arama: </p>
-<div class="codehilite"><pre>git ls-files <span class="s1">&#39;*kelime*&#39;</span>
-</pre></div>
-
-
-<p><img alt="ls-files" src="https://lh5.googleusercontent.com/ssBLy7QzvOHj_9wV9Oc4HOG9-ORVPgYwF7StHQ4NSIGgXYvE-yk6LldHOJBwcLLZeULMD27xSrwI1tty3o-HEWjrSETgxDj7GAnWUC7eifiEMT1PyEWs" /></p>
-<h2>Git ile Suçluyu Bulmak</h2>
-<div class="codehilite"><pre>git blame
-</pre></div>
-
-
-<p>Bir örnek yapalım:</p>
-<div class="codehilite"><pre>git blame <span class="nb">source</span>/css-ile-tablolari-sekillendirmek.md
-</pre></div>
-
-
-<p>kodu aşağıdaki sonucu döndürüyor. Her satırı tek tek en son kimin, ne zaman değiştirdiğini gösteriyor.</p>
-<p><img alt="blame" src="https://lh3.googleusercontent.com/ZFPqtLKQ_YrIZyJ6xBhvKcKXJvAU3YZBD38ed_-Qm5lrzEWOCTMICKB1iEF_aMiKCDXtKvzWY8ntKzbwiOokd7-5E8InMvIFoCfXw3aEY8tBCrqnuoq0" /></p>
-<h2>Git ile Sadece Belirlenen Dosyaları Gönderme</h2>
-<div class="codehilite"><pre>git add
-</pre></div>
-
-
-<p>ile eklenecek dosya veya dosyalar eklenir ve sonra</p>
-<div class="codehilite"><pre>git commit -m <span class="s2">&quot;aciklama_yaz&quot;</span>
-</pre></div>
-
-
-<p>ile gönderim yapılır. 
-Bir örnek yapalım. Örneği 3 dosyada değişiklik yaptık.</p>
-<p><img alt="commit" src="https://lh4.googleusercontent.com/k05WDteZ-iehVkxeInyuuc3XhTbgfCDnQKhfC082AA4DiwkDx0mGrxMPbwiay4FZgkCSc2D12R6wr3MgX1rbuLO1gdOGRprmQSBJB-Ck9nrFVVgGNx_F" /></p>
-<p>Ancak biz bu değişikliklerden sadece bir tanesini(source/xhtml-ipuclari-1.md) göndermek istiyoruz</p>
-<p><img alt="commit add" src="https://lh4.googleusercontent.com/7EnKTSdWw4-N9UI9ojX_hsSTxDU9QZ0Q-vshOKFSoxURh7xXYdZn-7nZJwLu3KYAx1KuFrBzHmtMTBF9b4O92kZym3GX6i07yxVfKPeDstYlP1mCimYT" /></p>
-<p>Dosyayı gönderirken </p>
-<div class="codehilite"><pre>git commit -m <span class="s2">&quot;xhtml makalesindeki duzeltme yapildi&quot;</span>
-</pre></div>
-
-
-<p>kullanımı önemli.</p>
-<p><img alt="commit push" src="https://lh5.googleusercontent.com/No5ftsIV8Cil11QD7XB2sSioo7Om7N2-1nNydeuA8N5j8CInsExY9--ZoHFWmUUj7rKKtEeHcfSwQ-UZvT4ONckc63ylJsarFhFEE5-cCTJUIcCcp2i7" /></p>
-<p>Sonuçta sadece source/xhtml-ipuclari-1.md dosyası gönderilirken diğer iki dosya  gönderilmedi.<br /></p>
-<h2>Otomatik Tamamlama</h2>
-<p>Git ile terminalde kod yazarken en güzel özelliklerden birisi &lt;tab&gt; tuşu ile otomatik tamamlama yapabilme özelliği. Benim bilgisayarımda hazır geliyor eğer sizde yüklü değilse kaynak bağlantıda yükleme ayrıntıları mevcut.</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git co&lt;tab&gt;&lt;tab&gt;
-commit config
-</pre></div>
-
-
-<p>Yukarıda görüldüğü gibi git co yazdık ve yazacağımız komutu unuttuk veya tamamını yazmak istemedik, ilk &lt;tab&gt; tuşuna bastığımızda eğer başka eşleşen kelime yoksa bize direk sonucu getirir, &lt;tab&gt; tuşuna iki kere basınca bu sefer eşleşen tüm kelimeler altta listelenir. Sonraki &lt;tab&gt; tuşuna basışlarımızda ise altta listelenen kelimeler arasında gezeceğiz. </p>
-<p>Yukarıdaki örnekte eğer com&lt;tab&gt; yapsa idik commit tamamlamasını otomatik yapacaktı. </p>
-<p><a href="http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks">http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks</a></p>
-<h2>Diğer İpuçları</h2>
-<p><a href="http://stackoverflow.com/questions/347901/what-are-your-favorite-git-features-or-tricks?page=2&amp;amp;tab=active#tab-top">http://stackoverflow.com/questions/347901/what-are-your-favorite-git-features-or-tricks?page=2&amp;tab=active#tab-top</a></p>
-<h2>Kaynaklar</h2>
-<ul>
-<li><a href="http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/">http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/</a></li>
-<li><a href="http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html">http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html</a></li>
-<li><a href="http://forum.ubuntu-tr.net/index.php?topic=17445.0">http://forum.ubuntu-tr.net/index.php?topic=17445.0</a></li>
-<li><a href="http://oneromer.com/?p=76">http://oneromer.com/?p=76</a></li>
-<li><a href="http://jblevins.org/log/git-colors">http://jblevins.org/log/git-colors</a></li>
-<li><a href="http://emineker.net/911/grep/">http://emineker.net/911/grep/</a></li>
-<li><a href="http://www.thinkfirstblinksecond.com/2012/04/05/git-auto-completion/">http://www.thinkfirstblinksecond.com/2012/04/05/git-auto-completion/</a></li>
-</ul><p><a href="./git-ogreniyorum-3/#disqus_thread">yorum var</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Diğer yazılar</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+<p>Yukarıdaki örnek ...</p>
+                <a class="readmore" href="./git-ogreniyorum-3/">devamını oku</a>
+                <p><a href="./git-ogreniyorum-3/#disqus_thread">yorum var</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -562,45 +520,6 @@ ettirerek istemediğimiz bir durum oluşmasına neden oluyor.</p>
 <p>Sorunun çözümünü ...</p>
                 <a class="readmore" href="./css3-renk-gecisinin-body-elemanina-uygulamasindaki-sorun-ve-cozumu/">devamını oku</a>
                 <p><a href="./css3-renk-gecisinin-body-elemanina-uygulamasindaki-sorun-ve-cozumu/#disqus_thread">yorum var</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href="./internet-explorer-7-bitirmeli-miyiz/" rel="bookmark"
-                           title="Permalink to İnternet Explorer 7'yi Bitirmeli miyiz?">İnternet Explorer 7&#039;yi Bitirmeli miyiz?</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-06-14T12:56:00">
-                Thu 14 June 2012
-        </abbr>
-
-        
-        <address class="vcard author">
-                <a class="url fn" href="./author/fatih.html">Fatih</a> yazdı.
-        </address>
-        
-<p><a href="./category/css-haberler-javascript-xhtml.html">CSS, Haberler, Javascript, XHTML</a> kategorisi. </p>
-<p>etiketler: <a href="./tag/after.html">:after</a><a href="./tag/before.html">:before</a><a href="./tag/ie7.html">ie7</a><a href="./tag/internet-explorer.html">internet explorer</a></p>
-
-
-</footer><!-- /.post-info -->
-                <p><a href="http://www.fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/">“IE6 Sonrası Kod Yazma Alışkanlıklarımızı Güncellemek”</a> yazısından
-sonra ie7 istatistikleri daha çok ilgimi çeker oldu. Şu anki
-istatistiklere bakarsak %4 civarında(makaleye başladığımda %10 idi.) ie7
-kullanan kullanıcı var, peki biz bunları yoksayabilirmiyiz ve yok
-sayarsak bize neler kazandırır bu makalemde bunları irdeleyeceğim.</p>
-<p>İnternet Explorer 7. sürümünü bundan yaklaşık 5 ...</p>
-                <a class="readmore" href="./internet-explorer-7-bitirmeli-miyiz/">devamını oku</a>
-                <p><a href="./internet-explorer-7-bitirmeli-miyiz/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
             </article></li>
         

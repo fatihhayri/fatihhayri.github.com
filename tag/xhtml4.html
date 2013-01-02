@@ -291,16 +291,19 @@ bebeleri eğlendirdiğimiz oyun varya işte o oyundan geliyor bu isim.) adı ...
 </footer><!-- /.post-info -->
                 <p>Bu hata birden fazla float uygulanmış içiçe elementlerde meydana gelir.
 Son float uygulanmış elementin son karakterleri tekrarlar.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- icerik alani--&gt;</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;icerik&quot;</span><span class="nt">&gt;</span> 
+    <span class="c">&lt;!-- icerik alani--&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;anaIcerik&quot;</span><span class="nt">&gt;</span> .... <span class="nt">&lt;/div&gt;</span>
+    <span class="c">&lt;!-- anaIcerik sonu --&gt;</span> 
+    <span class="c">&lt;!-- sagkolon baslangici --&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;sagKolon&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/div&gt;</span> 
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p><div id="anaIcerik"> .... </div><!-- anaIcerik sonu --> <!--
-sagkolon baslangici --> <div id="sagKolon"> ... </div> </div></p>
 <p>Örnek sayfayı görmek için <a href="static/dokumanlar/ie_tekrarlayan_karakter_sorunu_ornek.html">tıklayınız.</a> (hatayı görmek için IE6 ile
 bakmalısınız.)</p>
-<p>Float uygulanmış elementlerin ilki ve sonuncusu arasında bir çok yorum
-kodu(<!-- bunun gibi -->) var ise bu hata ...</!--></p>
+<p>Float uygulanmış elementlerin ilki ...</p>
                 <a class="readmore" href=".././ie6un-tekrarlayan-karakter-sorunu/">devamını oku</a>
                 <p><a href=".././ie6un-tekrarlayan-karakter-sorunu/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
@@ -339,8 +342,10 @@ komşu metinlerin maruz kaldığı bir hatadır. Örneği bir elementinize
 <strong>float:left</strong> tanımı yaptınız ve yanına bir paraf yazı eklemek
 istediğinizde, ie5-6 versiyonlarında soldaki float uygulanmış element
 içeriği boyunda sağdaki metin soldan 3 piksel kadar içeriğini
-öteleyecektir. <!--more--></p>
-<div class="codehilite"><pre> <span class="nc">.solKolon</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">200px ...</span></pre></div>
+öteleyecektir. </p>
+<div class="codehilite"><pre><span class="nc">.solKolon</span> <span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px ...</span></pre></div>
                 <a class="readmore" href=".././ieun-3-piksel-metin-oteleme-hatasi/">devamını oku</a>
                 <p><a href=".././ieun-3-piksel-metin-oteleme-hatasi/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->

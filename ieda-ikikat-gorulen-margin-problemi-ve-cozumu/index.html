@@ -91,23 +91,36 @@
       <p>Bir blok-level elemente float değeri ve margin değeri atandığında IE'da
 sorun yaşarız. Örneğin float:left değeri atanmış bir içerik kutusuna
 soldan 100px kadar ayırmak istediğinde IE'de soldan 100px olması gereken
-mesafe 200px görünecektir. <!--more--></p>
+mesafe 200px görünecektir. </p>
 <p><img alt="" src="../static/images/ikikat_margin.gif" /></p>
-<div class="codehilite"><pre> <span class="nc">.kapsul1</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+<p>CSS kodu;</p>
+<div class="codehilite"><pre><span class="nc">.kapsul1</span> <span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span> 
+    <span class="k">margin-left</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>height: 150px; margin-left: 100px; }  Bu hataya yanlızca
-float ve margin atamalarını beraber kullandığımız blok-level
+<p>Bu hataya yanlızca float ve margin atamalarını beraber kullandığımız blok-level
 elementlerde karşılaşmaktayız. Bu element'ten sonraki elementlerde bu
 hata görülmeyecektir. Yani bu hataya sadece ilk float-margin uygulanan
 blok-level element maruz kalacaktır. Çözümü ise çok basit
-<strong>display:inline</strong> tanımlaması bizim sorunumuzu çözecektir.     :::css
-     .kapsul1 { float: left; width: 150px; height: 150px;
-margin-left: 100px; display: inline; }  Bu makale
-hazırlanırken <a href="http://www.positioniseverything.net/explorer/doubled-margin.html">positioniseverything.net</a> yararlanılmıştır. Daha
-ayrıntılı bilgiyi bu sitede bulabilirsiniz.(eng)</p>
+<strong>display:inline</strong> tanımlaması bizim sorunumuzu çözecektir.   <br />
 </p>
+<div class="codehilite"><pre><span class="nc">.kapsul1</span> <span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+    <span class="k">margin-left</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Bu makale hazırlanırken <a href="http://www.positioniseverything.net/explorer/doubled-margin.html">positioniseverything.net</a> yararlanılmıştır. Daha
+ayrıntılı bilgiyi bu sitede bulabilirsiniz.(eng)</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

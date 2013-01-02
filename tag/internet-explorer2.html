@@ -134,14 +134,16 @@
 
 
 </footer><!-- /.post-info -->
-                <p>Sitelerimizde <iframe> kullandığımızda Internet Explorer bu <iframe>
+                <p>Sitelerimizde &lt;iframe> kullandığımızda Internet Explorer bu &lt;iframe>
 ardalanını beyaz bir blok şeklinde görüntüleyecektir. Bu Ardalanı beyaz
 olan sitelerde sorun değil ama ardalanında resim veya farklı renk olan
-sitelerde sorun çıkarıyor. Bu durumu engellemek için <iframe> koduna
-çok basit bir özellik eklemesi yeterli oluyor.
-    :::html
-    <iframe allowtransparency="true"></iframe></p>
-<p>Örnek: http://samples.msdn.microsoft.com/workshop/samples/author ...</p>
+sitelerde sorun çıkarıyor. Bu durumu engellemek için &lt;iframe> koduna
+çok basit bir özellik eklemesi yeterli oluyor.</p>
+<div class="codehilite"><pre><span class="nt">&lt;iframe</span> <span class="na">allowtransparency=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+</pre></div>
+
+
+<p>Örnek: <a href="http://samples.msdn.microsoft.com/workshop/samples/author/dhtml/refs/allowTransparency.htm">http://samples ...</a></p>
                 <a class="readmore" href=".././ie-iframe-ardalaninda-beyaz-renk-sorunu/">devamını oku</a>
                 <p><a href=".././ie-iframe-ardalaninda-beyaz-renk-sorunu/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
@@ -258,23 +260,26 @@ renkte görüntüler seçimlik bir saydamlık kanalıyla saklanabilir."
 
 
 </footer><!-- /.post-info -->
-                <div class="codehilite"><pre> <span class="nt">our_style</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <div class="codehilite"><pre><span class="nt">our_style</span> <span class="p">{</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-color: black; }  :::html</p>
-<div class="test">
-</div>
+<p>HTML kodu;</p>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;test&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
 
 <p>Bu kod Firefox'da sorunsuz çalışmasına karşın IE'de yükseklik 10px
 görünecektir. Bir bakıma IE boş içeriğin yüksekliğini 10px kabul ediyor,
 ancak bu bizim işimizi bozuyor. Çözüm ise çok basit.</p>
-<div class="codehilite"><pre><span class="nc">.test</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span>
-</pre></div>
-
-
-<p>100px; background-color: black; }</p>
-<p>Sadece font-size tanımını ...</p>
+<div class="codehilite"><pre><span class="nc">.test</span> <span class="p">{</span> 
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">100px ...</span></pre></div>
                 <a class="readmore" href=".././css-ipuclari-14-ie-div-yuksekligi-sorunu/">devamını oku</a>
                 <p><a href=".././css-ipuclari-14-ie-div-yuksekligi-sorunu/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
@@ -386,13 +391,17 @@ sorunları <a href="http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx">htt
 
 
 </footer><!-- /.post-info -->
-                <p>Bir kodu İE'den gizlemek istiyorsak     :::css
-     p{
-color:red !important; /<em> bu kısmı ie6 görmeyecek</em>/ color:blue; }
-sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı
-görünecektir. !important css ile etkinlik için kullanılan bir etikettir.
-!important tanımlı özellik daha önce yapılmış aynı özelliğin üzerine
-çıkar. CSS ile etkinlik hakkında daha fazla ...</p>
+                <p>Bir kodu İE'den gizlemek istiyorsak   <br />
+</p>
+<div class="codehilite"><pre><span class="nt">p</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="nb">red</span> <span class="cp">!important</span><span class="p">;</span> <span class="c">/* bu kısmı ie6 görmeyecek*/</span> 
+    <span class="k">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı görünecektir. !important css ile etkinlik için kullanılan bir etikettir.
+!important tanımlı özellik daha önce yapılmış aynı özelliğin üzerine çıkar. CSS ile etkinlik hakkında daha fazla bilgi ...</p>
                 <a class="readmore" href=".././css-de-kodumuzu-ieden-gizleme/">devamını oku</a>
                 <p><a href=".././css-de-kodumuzu-ieden-gizleme/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->

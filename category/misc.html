@@ -68,8 +68,120 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././iletisim/">İletişim</a></h1> 
+                    <h1 class="entry-title"><a href=".././css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/">CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-01-02T05:09:22">
+                Wed 02 January 2013
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href=".././category/misc.html">misc</a> kategorisi. </p>
+
+
+
+</footer><!-- /.post-info --><p>Slug : tum-tarayicilar-icin-css-ile-saydamlik-opacity
+Date: 2009-02-23 16:47
+Category: CSS, Web Standartları, XHTML
+Tags: css doğrulama, donuklaştırma, İnternet Tarayıcısı, opacity, saydamlık</p>
+<p>Daha önce birçok kez bu konuda bana e-posta geldi. Buraya yazmanın
+mantıklı olacağını düşündüm.  <br />
+</p>
+<div class="codehilite"><pre><span class="nt">secici</span> <span class="p">{</span>
+    <span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* Standard: FF gt 1.5, Opera, Safari */</span>
+    <span class="n">filter</span><span class="o">:</span> <span class="n">alpha</span><span class="p">(</span><span class="k">opacity</span><span class="o">=</span><span class="m">75</span><span class="p">);</span> <span class="c">/* IE lt 8 */</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> <span class="s2">&quot;alpha(opacity=75)&quot;</span><span class="p">;</span> <span class="c">/* IE 8 */</span>
+    <span class="o">-</span><span class="n">khtml</span><span class="o">-</span><span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* Safari 1.x */</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* FF lt 1.5, Netscape */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Günümüzdeki(27 Nisan 2012) durumu düşünürsek kodu aşağıdaki gibi
+kısaltabiliriz.</p>
+<div class="codehilite"><pre><span class="nt">secici</span> <span class="p">{</span>
+    <span class="k">opacity</span><span class="o">:</span> <span class="o">.</span><span class="m">75</span><span class="p">;</span> <span class="c">/* Standard: FF gt 1.5, Opera, Safari */</span>
+    <span class="n">filter</span><span class="o">:</span> <span class="n">alpha</span><span class="p">(</span><span class="k">opacity</span><span class="o">=</span><span class="m">75</span><span class="p">);</span> <span class="c">/* IE lt 8 */</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> <span class="s2">&quot;alpha(opacity=75)&quot;</span><span class="p">;</span> <span class="c">/* IE 8 */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Örneği görmek için <a href="static/dokumanlar/donukluk.html">tıklayınız.</a> Kod aslında tek satır olması gerekir ki CSS
+3 ile birlikte bu tek satır olacaktır. opacity: değer; tanımı ile
+halledeceğiz. Ama şu an yürürlükte olan tarayıcılar için yukarıdaki 5
+satır kodu yazmalıyız. Bu kodu yazmak o kadar da sorun değil, ama eğer
+bu kodu yazdığınız sayfanızı <a href="http://jigsaw.w3.org/css-validator/">W3C doğrulamasından</a> geçirirseniz
+aşağıdaki gibi bir hata alacaksınız. <img alt="donuklasma_val2" src="static/images/donuklasma_val2.gif" /> Bence W3C
+doğrulması çok önemli olmasada bazen şartlar doğrulama
+gerektirdiğinde(mesela müşteri istediğinde) bu sorunu çözmek için bir
+kaç yöntem var. Bu yöntemlerden biri javascript fonksiyonu hazırlayıp bu
+fonksiyon yardımı ile elemanlarımızı saydamlaştırma; </p>
+<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">donuklastirma</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">donukDeger</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">oe</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
+    <span class="c1">// donuklastirma degeri</span>
+    <span class="nx">oe</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;style&quot;</span><span class="p">,</span> <span class="s2">&quot;opacity:&quot;</span><span class="o">+</span> <span class="nx">donukDeger</span> <span class="o">+</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">oe</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">)</span> <span class="c1">// IE icin</span>
+    <span class="nx">oe</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="s2">&quot;alpha(opacity=&quot;</span><span class="o">+</span> <span class="nx">donukDeger</span><span class="o">*</span><span class="mi">100</span> <span class="o">+</span><span class="s2">&quot;);&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Örneği görmek
+için <a href="static/dokumanlar/donukluk_dog.html">tıklayınız.</a> Diğer bir yöntemde ise ayrı bir css kodu yazıp bu
+kodu javascript ile ekleyebiliriz <br />
+</p>
+<div class="codehilite"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span> <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;style/donuklastirma.css&quot; /&gt;&#39;</span><span class="p">);</span><span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+
+<p>Sorun: opacity tanımı kapsadığı elemanın içeriğini de etkiler bunu
+engellemek için Robert Nyman'ın bir çözümü var.
+<a href="http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/">http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/</a>
+denemedim bir bakın isterseniz.</p>
+<h2>Kaynaklar</h2>
+<ul>
+<li><a href="http://blog.evaria.com/2007/validate-css-style-opacity/">http://blog.evaria.com/2007/validate-css-style-opacity/</a></li>
+<li><a href="http://snipplr.com/view/10094/crossbrowser-opacity/">http://snipplr.com/view/10094/crossbrowser-opacity/</a></li>
+<li><a href="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/">http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/</a></li>
+<li><a href="http://www.codeguru.com/forum/showthread.php?threadid=458411">http://www.codeguru.com/forum/showthread.php?threadid=458411</a></li>
+<li><a href="http://snipplr.com/view/707/setopacity/">http://snipplr.com/view/707/setopacity/</a></li>
+<li><a href="http://www.ertugrulhaskan.com/blog/?p=548">http://www.ertugrulhaskan.com/blog/?p=548</a></li>
+<li><a href="http://www.aybim.com.tr/progs/acsstxt17.html">http://www.aybim.com.tr/progs/acsstxt17.html</a></li>
+<li><a href="http://www.mehmetduran.com/detay.aspx?detay=19">http://www.mehmetduran.com/detay.aspx?detay=19</a></li>
+<li><a href="http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5">http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5</a></li>
+<li><a href="http://www.ahmetcelik.org/?p=220">http://www.ahmetcelik.org/?p=220</a></li>
+<li><a href="http://mfyz.com/?/dokuman/82/css-ve-transparanlik/">http://mfyz.com/?/dokuman/82/css-ve-transparanlik/</a></li>
+<li><a href="http://scriptiz.org/?p=1067">http://scriptiz.org/?p=1067</a></li>
+</ul><p><a href=".././css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/#disqus_thread">yorum var</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Diğer yazılar</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././iletisim/" rel="bookmark"
+                           title="Permalink to İletişim">İletişim</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2010-12-28T15:24:00">
                 Tue 28 December 2010
         </abbr>
@@ -83,7 +195,8 @@
 
 
 
-</footer><!-- /.post-info --><ul>
+</footer><!-- /.post-info -->
+                <ul>
 <li>Tweet Hesabım <a href="https://twitter.com/fatihhayri">@fatihhayri</a></li>
 <li>E-posta <a href="mailto:fatih.hayrioglu@gmail.com">fatih.hayrioglu@gmail.com</a></li>
 <li>Github Hesabım <a href="https://github.com/fatihhayri">github</a></li>
@@ -92,17 +205,11 @@
 <li>Soru-cevap <a href="http://www.quora.com/Fatih-Hayrio%C4%9Flu">quora</a></li>
 <li>Linkedin <a href="http://www.linkedin.com/in/fatihhayri">linkedin</a></li>
 </ul>
-<p>Lütfen freelance iş için mail atmayınız. Sorularınıza hemen cevap vermeyebilirim, iş yoğunluğumun izin verdiği zaman içerisinde sorularınızı cevaplamaya çalışacağım.</p><p><a href=".././iletisim/#disqus_thread">yorum var</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Diğer yazılar</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+<p>Lütfen freelance iş için mail atmayınız. Sorularınıza hemen cevap vermeyebilirim, iş yoğunluğumun izin verdiği zaman içerisinde sorularınızı cevaplamaya çalışacağım.</p>
+                <a class="readmore" href=".././iletisim/">devamını oku</a>
+                <p><a href=".././iletisim/#disqus_thread">yorum var</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             

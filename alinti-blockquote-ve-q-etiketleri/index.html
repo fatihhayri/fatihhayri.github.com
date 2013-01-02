@@ -90,20 +90,20 @@
 </footer><!-- /.post-info -->
       <p>W3C bir çok durum için çeşitli etiketler üretmiştir ve bu etiketlerin
 kullanılmasını önerir. Alıntıda böyle bir etikete
-sahiptir(<blockquote> ve <q>). Ancak kod yazarlarını bu etiketleri
+sahiptir(&lt;blockquote> ve &lt;q>). Ancak kod yazarlarını bu etiketleri
 kullanmaktan alı koyan bu etiketlerin başlangıçtaki görünümünün çok
 güzel olmamasıdır, tabi farklı etiketlerle uğraşmak istemeyenlerde
 vardır. İşte bizde burada hem w3c'nin dediğini yapıp hemde güzel
-görünümlü ve kullanışlı alıntılar yapacağımızı anlatacağız. <!--more--></p>
-<p>Alıntı etiketlerini(<blockquote> ve <q>) diğer sitelerden,
+görünümlü ve kullanışlı alıntılar yapacağımızı anlatacağız. </p>
+<p>Alıntı etiketlerini(&lt;blockquote> ve &lt;q>) diğer sitelerden,
 yazarlardan ve yayınlardan alıntı yapmak için kullanırız.</p>
-<p>W3C <blockquote> elementini kullanımını önermektedir. Bu kodlama
+<p>W3C &lt;blockquote> elementini kullanımını önermektedir. Bu kodlama
 bizlere ayrıcalık tanıyacaktır ve tekil bir etiketin kullanım
 avantajlarını bize sunacaktır.</p>
-<p>Herhangi bir stil tanımlaması yapmasak bile <blockquote> normal
+<p>Herhangi bir stil tanımlaması yapmasak bile &lt;blockquote> normal
 içeriğe göre daha içerden başlayacaktır. Bu küçük bir ayrıntıdır, ancak
 içerikten ayırmak için yeterlidir.</p>
-<p>Sizler burada alıntıların kullanımı göstermeden önce <cite>
+<p>Sizler burada alıntıların kullanımı göstermeden önce &lt;cite>
 etiketinden bahsedeceğiz.</p>
 <p>Bu zamanı geçmiş bir etiket değildir. Bu kod alıntıları aldığımız
 siteleri belirtmek için kullanacağımız bir özelliktir. Bu kodu
@@ -113,84 +113,118 @@ indeksleme yaparken kullanabilriz. Bu bilgi bize alıntı hakkında ileride
 bilgi vermek için kullanılabilir.</p>
 <h2>Kodlama içinde Alıntı kullanmak</h2>
 <p>Sizlere kısaca kod içerisinde alıntı kullanımını anlatacağız. Eğer cümle
-için bir alıntı yaptı iseniz, <strong><q></strong> etiketini kullanabilirsiniz.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;p&gt;</span>Bunu Mevlana&#39;nın bir sözü ile
+için bir alıntı yaptı iseniz, <strong>&lt;q></strong> etiketini kullanabilirsiniz.</p>
+<div class="codehilite"><pre><span class="nt">&lt;p&gt;</span>Bunu Mevlana&#39;nın bir sözü ile destekleyelim <span class="nt">&lt;q&gt;</span>Nice insanlar gördüm, üzerinde elbisesi yok. Nice elbiseler gördüm, içinde insan yok.<span class="nt">&lt;/q&gt;</span> ve <span class="nt">&lt;q&gt;</span>Ehil olmayanlara sabretmek ehil olanları parlatır.<span class="nt">&lt;/q&gt;</span> sözleri bize yol gösterir.<span class="nt">&lt;/p&gt;</span>
 </pre></div>
 
 
-<p>destekleyelim <q>Nice insanlar gördüm, üzerinde elbisesi yok. Nice
-elbiseler gördüm, içinde insan yok.</q> ve <q>Ehil olmayanlara
-sabretmek ehil olanları parlatır.</q> sözleri bize yol gösterir.</p></p>
 <p>Yeni nesil tarayıcılar bu kodu aşağıdaki gibi gösterecektir.</p>
 <p><img alt="Örnek 2" src="../static/images/alinti_ornek2_1.gif" /></p>
 <p>Bu kodu IE normal içerik gibi yorumlayacaktır. IE için farklı stil
 tanımı yapmamız gerekiyor.</p>
-<p>[sourcecode language="html" highlight="6,7,8,9,10,11,12,13,14,15"]
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Alıntı Örneği</title> <style> /<em> IE icin </em>/ q {
-font-style:italic; } /<em> Safari ve Firefox icin </em>/ html:not([dummy]) q
-{ font-style:normal; } </style> </head> <body> <p>Bunu
-Mevlana'nın bir sözü ile destekleyelim <q>Nice insanlar gördüm,
-üzerinde elbisesi yok. Nice elbiseler gördüm, içinde insan yok.</q> ve
-<q>Ehil olmayanlara sabretmek ehil olanları parlatır.</q> sözleri
-bize yol gösterir. </p> </body> </html> </p>
-<p><img alt="Örnek IE" src="../static/images/alinti_ornek2_ie.gif" /></p>
-<p>Böylelikle Internet Explorer da kodumuz farklı görünecektir.</p>
-<p>Bu etiketin birde dil özelliği vardır.</p>
-<div class="codehilite"><pre> <span class="nt">&lt;p&gt;</span>I said, <span class="nt">&lt;q</span> <span class="na">lang=</span><span class="s">&quot;en-us&quot;</span><span class="nt">&gt;</span>Herman, do
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span> 
+<span class="nt">&lt;title&gt;</span>Alıntı Örneği<span class="nt">&lt;/title&gt;</span> 
+<span class="nt">&lt;style&gt;</span> 
+<span class="c">/* IE icin */</span>
+<span class="nt">q</span> <span class="p">{</span> 
+<span class="k">font-style</span><span class="o">:</span><span class="k">italic</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="c">/* Safari ve Firefox icin */</span> 
+<span class="nt">html</span><span class="nd">:not</span><span class="o">([</span><span class="nt">dummy</span><span class="o">])</span> <span class="nt">q</span> <span class="p">{</span> 
+<span class="k">font-style</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">&lt;/style&gt;</span> 
+<span class="nt">&lt;/head&gt;</span> 
+<span class="nt">&lt;body&gt;</span> 
+<span class="nt">&lt;p&gt;</span>Bunu Mevlana&#39;nın bir sözü ile destekleyelim <span class="nt">&lt;q&gt;</span>Nice insanlar gördüm, üzerinde elbisesi yok. Nice elbiseler gördüm, içinde insan yok.<span class="nt">&lt;/q&gt;</span> ve 
+<span class="nt">&lt;q&gt;</span>Ehil olmayanlara sabretmek ehil olanları parlatır.<span class="nt">&lt;/q&gt;</span> sözleri bize yol gösterir. <span class="nt">&lt;/p&gt;</span> 
+<span class="nt">&lt;/body&gt;</span> 
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<p>you like bubblegum? </q> And he said, <q lang="en-us">Yes, the kind
-that comes with a comic.</q></p> </p>
-<p>Tüm dil kodlarını öğrenmek için
-<a href="http://www.w3.org/TR/html4/struct/dirlang.html#langcodes">www.w3.org/TR/html4/struct/dirlang.html#langcodes</a> adresini ziyaret
-ediniz.</p>
-<h4>Alıntı ve <strong><blockquote></strong> etiketi</h4>
+<p><img alt="Örnek IE" src="../static/images/alinti_ornek2_ie.gif" /></p>
+<p>Böylelikle Internet Explorer da kodumuz farklı görünecektir.</p>
+<p>Bu etiketin birde dil özelliği vardır.</p>
+<div class="codehilite"><pre><span class="nt">&lt;p&gt;</span>I said, <span class="nt">&lt;q</span> <span class="na">lang=</span><span class="s">&quot;en-us&quot;</span><span class="nt">&gt;</span>Herman, do you like bubblegum? <span class="nt">&lt;/q&gt;</span> And he said, <span class="nt">&lt;q</span> <span class="na">lang=</span><span class="s">&quot;en-us&quot;</span><span class="nt">&gt;</span>Yes, the kind that comes with a comic.<span class="nt">&lt;/q&gt;&lt;/p&gt;</span>
+</pre></div>
+
+
+<p>Tüm dil kodlarını öğrenmek için <a href="http://www.w3.org/TR/html4/struct/dirlang.html#langcodes">www.w3.org/TR/html4/struct/dirlang.html#langcodes</a> adresini ziyaret ediniz.</p>
+<h2>Alıntı ve <strong>&lt;blockquote></strong> etiketi</h2>
 <p>Örnek bir kod yazalım:</p>
-<p>[sourcecode language="html" highlight="8,9,10"] &lt;!DOCTYPE html PUBLIC
-"-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Alıntı Örneği</title> </head> <body>
-<blockquote>Sevgide güneş gibi ol, dostluk ve kardeşlikte akarsu gibi
-ol, hataları örtmede gece gibi ol, tevazuda toprak gibi ol, öfkede ölü
-gibi ol, her ne olursan ol, ya olduğun gibi görün, ya göründüğün gibi
-ol.</blockquote> <cite>Mevla'na Celaleddin-i Rumi</cite> </body>
-</html> </p>
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span> 
+<span class="nt">&lt;title&gt;</span>Alıntı Örneği<span class="nt">&lt;/title&gt;</span> 
+<span class="nt">&lt;/head&gt;</span> 
+<span class="nt">&lt;body&gt;</span> 
+<span class="nt">&lt;blockquote&gt;</span>Sevgide güneş gibi ol, dostluk ve kardeşlikte akarsu gibi ol, hataları örtmede gece gibi ol, tevazuda toprak gibi ol, öfkede ölü gibi 
+ol, her ne olursan ol, ya olduğun gibi görün, ya göründüğün gibi ol.<span class="nt">&lt;/blockquote&gt;</span> 
+<span class="nt">&lt;cite&gt;</span>Mevla&#39;na Celaleddin-i Rumi<span class="nt">&lt;/cite&gt;</span> 
+<span class="nt">&lt;/body&gt;</span> 
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
 <p><img alt="Alıntı Örnek 1" src="../static/images/alinti_ornek1.gif" /></p>
 <p>Görüntü istediğimiz gibi olmaya bilir. Biraz görüntüyü düzeltelim.
 Burada üç adet zemin resim ile görüntüyü düzeltebiliriz.</p>
 <p><img alt="Alıntı Üst Zemin Resmi" src="../static/images/alinti_ust.gif" /><br />
-Alıntı Üst Zemin Resmi</p>
+</p>
+<p>Alıntı Üst Zemin Resmi</p>
 <p><img alt="Alıntı Orta Zemin Resmi" src="../static/images/alinti_orta.gif" /><br />
-Alıntı Orta Zemin Resmi</p>
+</p>
+<p>Alıntı Orta Zemin Resmi</p>
 <p><img alt="Alıntı Alt Zemin Resmi" src="../static/images/alinti_alt.gif" /><br />
-Alıntı Alt Zemin Resmi</p>
+</p>
+<p>Alıntı Alt Zemin Resmi</p>
 <p>Şimdi CSS kodumuzu yazalım</p>
-<p>[sourcecode language="html" highlight="6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32"]
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; <html
-xmlns="http://www.w3.org/1999/xhtml"> <head> <meta
-http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Alıntı Örneği</title> <style> blockquote { width: 240px;
-margin:0; padding:29px 0 0 0; background:url(images/alinti_ust.gif)
-no-repeat left top; } blockquote p { margin:0; padding:10px; color:</p>
-<h1>fff; text-align:center; font:bold 14px/1.7em Georgia, "Times New</h1>
-<p>Roman", Times, serif; background: url(images/alinti_orta.gif) left
-bottom repeat-y; } cite { font-size: 1.2em; padding-bottom:29px;
-display:block; text-align:center; color:#C6D9F1;
-text-decoration:underline; width:240px; background:
-url(images/alinti_alt.gif) no-repeat left bottom; } </style>
-</head> <body> <blockquote><p>Sevgide güneş gibi ol, dostluk ve
-kardeşlikte akarsu gibi ol, hataları örtmede gece gibi ol, tevazuda
-toprak gibi ol, öfkede ölü gibi ol, her ne olursan ol, ya olduğun gibi
-görün, ya göründüğün gibi ol.</p></blockquote> <cite>Mevla'na
-Celaleddin-i Rumi</cite> </body> </html> </p>
+<div class="codehilite"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span> 
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;head&gt;</span> 
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span> 
+<span class="nt">&lt;title&gt;</span>Alıntı Örneği<span class="nt">&lt;/title&gt;</span> 
+<span class="nt">&lt;style&gt;</span> 
+<span class="nt">blockquote</span> <span class="p">{</span> 
+<span class="k">width</span><span class="o">:</span> <span class="m">240px</span><span class="p">;</span> 
+<span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+<span class="k">padding</span><span class="o">:</span><span class="m">29px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span> 
+<span class="k">background</span><span class="o">:</span><span class="sx">url(images/alinti_ust.gif)</span> <span class="k">no-repeat</span> <span class="k">left</span> <span class="k">top</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">blockquote</span> <span class="nt">p</span> <span class="p">{</span> 
+<span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+<span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span> 
+<span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span> 
+<span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span> 
+<span class="k">font</span><span class="o">:</span><span class="k">bold</span> <span class="m">14px</span><span class="o">/</span><span class="m">1.7em</span> <span class="n">Georgia</span><span class="o">,</span> <span class="s2">&quot;Times New Roman&quot;</span><span class="o">,</span> <span class="n">Times</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span> 
+<span class="k">background</span><span class="o">:</span> <span class="sx">url(images/alinti_orta.gif)</span> <span class="k">left</span> <span class="k">bottom</span> <span class="k">repeat-y</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">cite</span> 
+<span class="p">{</span> 
+<span class="k">font-size</span><span class="o">:</span> <span class="m">1.2em</span><span class="p">;</span> 
+<span class="k">padding-bottom</span><span class="o">:</span><span class="m">29px</span><span class="p">;</span> 
+<span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span> 
+<span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span> 
+<span class="k">color</span><span class="o">:</span><span class="m">#C6D9F1</span><span class="p">;</span> 
+<span class="k">text-decoration</span><span class="o">:</span><span class="k">underline</span><span class="p">;</span> 
+<span class="k">width</span><span class="o">:</span><span class="m">240px</span><span class="p">;</span> 
+<span class="k">background</span><span class="o">:</span> <span class="sx">url(images/alinti_alt.gif)</span> <span class="k">no-repeat</span> <span class="k">left</span> <span class="k">bottom</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="nt">&lt;/style&gt;</span> 
+<span class="nt">&lt;/head&gt;</span> 
+<span class="nt">&lt;body&gt;</span> 
+<span class="nt">&lt;blockquote&gt;&lt;p&gt;</span>Sevgide güneş gibi ol, dostluk ve kardeşlikte akarsu gibi ol, hataları örtmede gece gibi ol, tevazuda toprak gibi ol, öfkede ölü gibi ol, her ne olursan ol, ya olduğun gibi görün, ya göründüğün gibi ol.<span class="nt">&lt;/p&gt;&lt;/blockquote&gt;</span> 
+<span class="nt">&lt;cite&gt;</span>Mevla&#39;na Celaleddin-i Rumi<span class="nt">&lt;/cite&gt;</span> 
+<span class="nt">&lt;/body&gt;</span> 
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
 <p><img alt="Alıntı Örnek Sonuç" src="../static/images/alinti_ornek2.gif" /></p>
 <p>Yukarıda verdiğimiz zemin resimlerini yerleştirdik ve fon ve renk
 değerleri verdik.</p>
@@ -210,7 +244,6 @@ tarayıcı ve araçlarda da farklı bir görünüm sağlamış olduk.</p>
 <li><a href="http://juicystudio.com/article/fixing-ie-quotes.php">http://juicystudio.com/article/fixing-ie-quotes.php</a></li>
 <li><a href="http://historytalk.typepad.com/basic/2006/06/scholarship_xht.html">http://historytalk.typepad.com/basic/2006/06/scholarship_xht.html</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

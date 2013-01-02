@@ -94,31 +94,41 @@ katman oluştuurp bu genişliği aşan genişlikte içerikleri otomatik olarak
 satırın başına tmak için ne yapabiliriz. Normalde bunu için IE5.5+ dan
 itibaren word-wrap: break-word kodu ile bunu desteklemektedir, ancak
 Mozilla tabanlı web tarayıcıları(örn Firefox) bu koda banamısın demiyor.
-Çözüm   :::css
-     pre { white-space: pre-wrap; /<em> css-3
-</em>/ white-space: -moz-pre-wrap; /<em> Mozilla, since 1999 </em>/ white-space:
--pre-wrap; /<em> Opera 4-6 </em>/ white-space: -o-pre-wrap; /<em> Opera 7 </em>/
-word-wrap: break-word; /<em> Internet Explorer 5.5+ </em>/ } 
-    :::html
-     <pre>uzuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuun
-metin</pre> </p>
+Çözüm <br />
+</p>
+<div class="codehilite"><pre><span class="nt">pre</span> <span class="p">{</span> 
+    <span class="k">white-space</span><span class="o">:</span> <span class="n">pre</span><span class="o">-</span><span class="n">wrap</span><span class="p">;</span> <span class="c">/* css-3 */</span> 
+    <span class="k">white-space</span><span class="o">:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">pre</span><span class="o">-</span><span class="n">wrap</span><span class="p">;</span> <span class="c">/* Mozilla, since 1999 */</span> 
+    <span class="k">white-space</span><span class="o">:</span> <span class="o">-</span><span class="n">pre</span><span class="o">-</span><span class="n">wrap</span><span class="p">;</span> <span class="c">/* Opera 4-6 */</span> 
+    <span class="k">white-space</span><span class="o">:</span> <span class="o">-</span><span class="err">o</span><span class="o">-</span><span class="n">pre</span><span class="o">-</span><span class="n">wrap</span><span class="p">;</span> <span class="c">/* Opera 7 */</span>
+    <span class="n">word</span><span class="o">-</span><span class="n">wrap</span><span class="o">:</span> <span class="n">break</span><span class="o">-</span><span class="n">word</span><span class="p">;</span> <span class="c">/* Internet Explorer 5.5+ */</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>HTML kodu</p>
+<div class="codehilite"><pre><span class="nt">&lt;pre&gt;</span>uzuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuunmetin<span class="nt">&lt;/pre&gt;</span>
+</pre></div>
+
+
 <p>12 Şubat 2010'dan sonra düzenleme yapıldı</p>
 <p>Bu yazıyı yazdığımda Firefox 2 vardı ve yazdığım çözüm işe yaramamıştı.
 Şimdi işler değişti. white-space: pre-wrap özelliğini ve değerini
 Firefox 3'dan itibaren desteklediği için artık kodumuzu aşağıdaki gibi
 değiştirebiliriz. Opera eski sürümlerinide es geçerek tabi, gerçi Opera
 10'nun desteklendiği söyleniyor, ama benim testimde olmadı.</p>
-<div class="codehilite"><pre> <span class="nt">pre</span> <span class="p">{</span> <span class="k">white-space</span><span class="o">:</span> <span class="n">pre</span><span class="o">-</span><span class="n">wrap</span><span class="p">;</span> <span class="c">/* css-3 */</span>
+<div class="codehilite"><pre><span class="nt">pre</span> <span class="p">{</span> 
+    <span class="k">white-space</span><span class="o">:</span> <span class="n">pre</span><span class="o">-</span><span class="n">wrap</span><span class="p">;</span> <span class="c">/* css-3 */</span>
+    <span class="n">word</span><span class="o">-</span><span class="n">wrap</span><span class="o">:</span> <span class="n">break</span><span class="o">-</span><span class="n">word</span><span class="p">;</span> <span class="c">/* Internet Explorer 5.5+ */</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>word-wrap: break-word; /<em> Internet Explorer 5.5+ </em>/ } </p>
 <h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.quirksmode.org/css/whitespace.html">http://www.quirksmode.org/css/whitespace.html</a></li>
 <li><a href="http://reference.sitepoint.com/css/white-space">http://reference.sitepoint.com/css/white-space</a></li>
 </ul>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">

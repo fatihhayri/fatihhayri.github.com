@@ -97,19 +97,25 @@ meydana gelmesinden hoşlanmayız.</p>
 <strong>şekil.1</strong> float sorun</p>
 <p>Bir örnek yaparsak daha iyi anlayacağız.</p>
 <p>CSS kodu:</p>
-<div class="codehilite"><pre> <span class="nc">.kapsul</span> <span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.kapsul</span> <span class="p">{</span> 
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">2px</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">img</span> <span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>2px; } img { float: left; } </p>
 <p>Html kodu:</p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;img</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;koy_01.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;Bizim köy&quot;</span> <span class="na">weight=</span><span class="s">&quot;250&quot;</span> <span class="na">height=</span><span class="s">&quot;160&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>src="koy_01.jpg" alt="Bizim köy" weight="250" height="160" /&gt;
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-</div> </p>
 <p>Örneği görmek için <a href="static/dokumanlar/float_sorunu.html">tıklayınız.</a></p>
 <p>Floatuygulanan resim div(.kapsul) içindeki resme göre genişlemez. Duruma
 tersten bakarsakbazen bu görünümü kullanabileceğimiz durumlarda
@@ -122,45 +128,58 @@ göre uzamasını yani sonunun temizlenmesini isteriz. <strong>.kapsul</strong>
 uygulanan div elementin tüm içeriği kapsaması için sonuna <strong>clear</strong>
 özelliği atanmış bir nesne koymalıyız. Bu işlemi farklı yöntemlerle
 yapabiliriz.</p>
-<h4>Boş bir elemente clear atayarak çözmek</h4>
+<h2>Boş bir elemente clear atayarak çözmek</h2>
 <p>Geneldekutuların içeriğine göre uzamasını isteriz. Bu sorunu çözmek
 küçük bir yapısalekleme yapmak yeterli olacaktır.<br />
 </p>
-<div class="codehilite"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;img</span>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;kapsul&quot;</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;resim.png&quot;</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <span class="nt">&lt;/p&gt;</span> 
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;clear:both;&quot;</span><span class="nt">&gt;&lt;/div&gt;</span> 
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
-<p>src="resim.png"&gt; <p>Lorem ipsum dolor sit amet, consectetuer
-adipiscing elit. </p> <div style="clear:both;"></div> </div>
- Buşekilde sorunumuzu çözmüş oluruz ancak bu sorunla
+<p>Buşekilde sorunumuzu çözmüş oluruz ancak bu sorunla
 karşılaştığımız heryerde bu eklemeyi yapmak zorun kalacağız ve sırf bu
 düzeltme için boşbir div ekleyeceğiz. Buda mantıklı(semantik) kodlama
-açısından uygun değildir. Pekibunu başka nasıl çözeriz. <br />
+açısından uygun değildir. Pekibunu başka nasıl çözeriz.   <br />
 </p>
-<h4>:after ile çözüm</h4>
+<h2>:after ile çözüm</h2>
 <p>CSS2ile birlikte gelen <strong>:after</strong> özelliğini kullanarak çözebiliriz.
 Css(:after) kodu ile bir elementinsonuna bir içerik ekleyebiliyoruz ve
 bu elemente css komutları atayabiliyoruz.Ayrıntılı bilgi için
-<a href="http://www.fatihhayrioglu.com/?p=86" title="psedu elementleri ve seçicileri ">tıklayınız</a>.Bu özellikten yararlanarak kutunun sonuna bir nokta koyup
+<a href="http://www.fatihhayrioglu.com/?p=86">tıklayınız</a>.Bu özellikten yararlanarak kutunun sonuna bir nokta koyup
 bu noktaya<strong>clear</strong>(clear:both) ataması yaparsak sorunumuz çözülmüş
 olacaktır. Tabi birde bunoktayı görünmez yapmamız gerekiyor, Kutuların
 sonunda nokta görünmesipek hoş olmaya bilir.</p>
-<div class="codehilite"><pre> <span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> 
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> 
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>block; height: 0; clear: both; visibility: hidden; } </p>
 <p>Ayrıca<strong>display:block</strong> koyduk çünkü satır için(inline-level) elementler
 clear özelliğiatamasını kabul etmiyor. Aslında <strong>overflow</strong> ile de bu
 sorun halledilebilir ancakMozilla Firefox'un yeni sürümlerinde bu metot
 sorun çıkarıyor.</p>
-<div class="codehilite"><pre> <span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> 
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> 
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="c">/*IE-mac den bu bolumu sakla */</span> 
+<span class="o">*</span> <span class="nt">html</span> <span class="nc">.clearfix</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span> <span class="m">1</span><span class="o">%</span><span class="p">;}</span> 
+<span class="c">/* IE-mac bu bolumu saklama artik */</span>
 </pre></div>
 
 
-<p>block; height: 0; clear: both; visibility: hidden; } /<em>IE-mac den bu
-bolumu sakla </em>/ * html .clearfix {height: 1%;} /<em> IE-mac bu bolumu
-saklama artik </em>/ </p>
 <p>Tabibu kod burada kalmıyor çünkü IE ile sorunları var. Normalde IE'nin
 float uygulanmış elementin tamamı kapsamama sorunu diye bir problemi(bu
 ilginç bir durumdur) yoktur, ancak float uygulanmış elemente genişlik ve
@@ -173,47 +192,70 @@ devam ettiğini farz ederek bu satırı görmez.</p>
 <strong>display: inline-block;</strong> tanımlamasını yapıyoruz. Tabi diğer web
 tarayıcılarının bundan etkilenmemesi için IE/Mac'den gizlediğimiz alana
 <strong>display: block;</strong> atamasını eklemeliyiz.</p>
-<div class="codehilite"><pre> <span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.kapsul</span><span class="nd">:after</span> <span class="p">{</span> 
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">;</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> 
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nc">.kapsul</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+<span class="p">}</span> 
+<span class="c">/*IE-mac de bu bolumu sakla  */</span> 
+<span class="o">*</span> <span class="nt">html</span> <span class="nc">.kapsul</span> <span class="p">{</span><span class="k">height</span><span class="o">:</span> <span class="m">1</span><span class="o">%</span><span class="p">;}</span> 
+<span class="nc">.kapsul</span> <span class="p">{</span><span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;}</span> 
+<span class="c">/* IE-mac bu bolumu saklam artik */</span>
 </pre></div>
 
 
-<p>block; height: 0; clear: both; visibility: hidden; } .kapsul {display:
-inline-block;} /<em>IE-mac de bu bolumu sakla  </em>/ * html .kapsul
-{height: 1%;} .kapsul {display: block;} /<em> IE-mac bu bolumu saklam
-artik </em>/ </p>
 <p>Örneğin son halini görmek için <a href="static/dokumanlar/float_cozumu.html">tıklayınız.</a></p>
 <p><img alt="float çözümü" src="static/images/clearfix_cozum.gif" /><br />
-<strong>şekil2</strong> float sorununun çözülmüş hali</p>
+</p>
+<p><strong>şekil2</strong> float sorununun çözülmüş hali</p>
 <p>Bu metot bu sorunun çözümü için en ideal çözümdür. Bu sorunun çözümünde
-birçok insanın emeği geçmiştir. <a href="http://dougsdvds.info/" title="Doug">Doug</a>, <a href="http://www.nolocation.com/" title="Mark Hadley">Mark Hadley</a>, <a href="http://www.loungepenguin.co.uk/indexno.htm" title="Matt Keogh">Matt Keogh</a>, <a href="http://www.positioniseverything.net/design/" title="Holly'n John">Holly’n John</a> ve <a href="http://www.csscreator.com/" title="CSSCreator">Tony Asslet</a>‘a bundan dolayı
+birçok insanın emeği geçmiştir. <a href="http://dougsdvds.info/" title="Doug">Doug</a>, <a href="http://www.nolocation.com/" title="Mark Hadley">Mark Hadley</a>, <a href="http://www.loungepenguin.co.uk/indexno.htm" title="Matt Keogh">Matt Keogh</a>, <a href="http://www.positioniseverything.net/design/">Holly’n John</a> ve <a href="http://www.csscreator.com/" title="CSSCreator">Tony Asslet</a>‘a bundan dolayı
 şükranlarımızı sunarız. thank you guys :D Ayrıca bu konuda Türkçe bir
 makale yazan <a href="http://www.dahaiyi.net/yazilar/temiz-bir-clearfix-metodu/">dahaiyi.net</a>'e çok teşekkürler.</p>
 <p>Bu yöntemi biraz daha kolaylaştıralım. Sonuçta macde ie kullanan
 kalmadağına göre kodumuzu</p>
-<div class="codehilite"><pre> <span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span> <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">font-size</span><span class="o">:</span>
+<div class="codehilite"><pre><span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span> 
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> 
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> 
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">;</span> 
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="o">*</span> <span class="nt">html</span> <span class="nc">.clearfix</span> <span class="p">{</span> 
+    <span class="n">zoom</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span> 
+<span class="c">/* IE6 */</span> 
+<span class="o">*</span><span class="nd">:first-child</span><span class="o">+</span><span class="nt">html</span> <span class="nc">.clearfix</span> <span class="p">{</span> <span class="n">zoom</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span> <span class="p">}</span> 
+<span class="c">/* IE7 */</span>
 </pre></div>
 
 
-<p>0; content: " "; clear: both; height: 0; } * html .clearfix { zoom: 1;
-} /<em> IE6 </em>/ <em>:first-child+html .clearfix { zoom: 1; } /</em> IE7 */</p>
-<h4>CSS3 ile sorunun çözümü</h4>
+<h2>CSS3 ile sorunun çözümü</h2>
 <p>Bu sorunun farkında olan CSS standart geliştiriciler bu soruna kökten
 çözüm getirmişler. <a href="http://www.w3.org/TR/2002/WD-css3-box-20021024/#the-clear-after">clear-after</a> yeni özelliği sayesinde bu kodlardan
 kurtulacağız tabi biraz zaman gerekecek bu özelliği kullanmak için.
 Malum hala uygulamada değil CSS3.0</p>
-<div class="codehilite"><pre> <span class="nc">.kapsul</span> <span class="p">{</span> <span class="k">clear</span><span class="o">-</span><span class="n">after</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> <span class="p">}</span>
+<div class="codehilite"><pre><span class="nc">.kapsul</span> <span class="p">{</span> <span class="k">clear</span><span class="o">-</span><span class="n">after</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 
 
 <p>Yukarıdaki örnekteki gibi tek satırlık bir kod sorunumuzu çözecektir.</p>
-<h4>Sonuç</h4>
+<h2>Sonuç</h2>
 <p>Sonuç olarak şunu söyleyebiliriz ki bu sorunu çözmek için bir kaç çözüm
 yolu mevcut olsada şu an için <strong>:after ile çözüm</strong> başlığı altındaki
 kodu kullanmak bizim için uygundur. Ben web sitelerini kodlarken bu
 sorunla çok karşılaştığım için bir yere not ettim(Macromedia Dreamweaver
 - Snippets) ve lazım olduğu zaman hemen ekliyorum. Bu şekilde sorun
 hızlı bir şekilde çözmek mümkün oluyor.</p>
-<h4>Kaynaklar</h4>
+<h2>Kaynaklar</h2>
 <ul>
 <li><a href="http://www.positioniseverything.net/easyclearing.html">http://www.positioniseverything.net/easyclearing.html</a></li>
 <li><a href="http://www.complexspiral.com/publications/containing-floats/">http://www.complexspiral.com/publications/containing-floats/</a></li>
@@ -223,8 +265,7 @@ hızlı bir şekilde çözmek mümkün oluyor.</p>
 <li><a href="http://www.cs.hmc.edu/~mbrubeck/clear-after/">http://www.cs.hmc.edu/~mbrubeck/clear-after/</a></li>
 <li><a href="http://www.w3.org/TR/2002/WD-css3-box-20021024/#the-clear-after">http://www.w3.org/TR/2002/WD-css3-box-20021024/#the-clear-after</a><br />
 </li>
-</ul>
-</p><p><a href=".././float-uygulanmis-elementleri-tam-kapsayamama-sorunu/#disqus_thread">yorum var</a>.</p>
+</ul><p><a href=".././float-uygulanmis-elementleri-tam-kapsayamama-sorunu/#disqus_thread">yorum var</a>.</p>
                 </article>
                 
             </aside><!-- /#featured -->

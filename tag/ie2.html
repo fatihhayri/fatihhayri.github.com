@@ -177,23 +177,26 @@
 
 
 </footer><!-- /.post-info -->
-                <div class="codehilite"><pre> <span class="nt">our_style</span> <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <div class="codehilite"><pre><span class="nt">our_style</span> <span class="p">{</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>background-color: black; }  :::html</p>
-<div class="test">
-</div>
+<p>HTML kodu;</p>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;test&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
 
 <p>Bu kod Firefox'da sorunsuz çalışmasına karşın IE'de yükseklik 10px
 görünecektir. Bir bakıma IE boş içeriğin yüksekliğini 10px kabul ediyor,
 ancak bu bizim işimizi bozuyor. Çözüm ise çok basit.</p>
-<div class="codehilite"><pre><span class="nc">.test</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span>
-</pre></div>
-
-
-<p>100px; background-color: black; }</p>
-<p>Sadece font-size tanımını ...</p>
+<div class="codehilite"><pre><span class="nc">.test</span> <span class="p">{</span> 
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">height</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span><span class="m">100px ...</span></pre></div>
                 <a class="readmore" href=".././css-ipuclari-14-ie-div-yuksekligi-sorunu/">devamını oku</a>
                 <p><a href=".././css-ipuclari-14-ie-div-yuksekligi-sorunu/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
@@ -448,14 +451,19 @@ onchange</label> <span id="spDegistir"></span> </p></p>
                 <p>Bir blok-level elemente float değeri ve margin değeri atandığında IE'da
 sorun yaşarız. Örneğin float:left değeri atanmış bir içerik kutusuna
 soldan 100px kadar ayırmak istediğinde IE'de soldan 100px olması gereken
-mesafe 200px görünecektir. <!--more--></p>
+mesafe 200px görünecektir. </p>
 <p><img alt="" src="static/images/ikikat_margin.gif" /></p>
-<div class="codehilite"><pre> <span class="nc">.kapsul1</span> <span class="p">{</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+<p>CSS kodu;</p>
+<div class="codehilite"><pre><span class="nc">.kapsul1</span> <span class="p">{</span> 
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span> 
+    <span class="k">margin-left</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>height: 150px; margin-left: 100px; }  Bu hataya yanlızca
-float ve margin ...</p>
+<p>Bu hataya yanlızca float ...</p>
                 <a class="readmore" href=".././ieda-ikikat-gorulen-margin-problemi-ve-cozumu/">devamını oku</a>
                 <p><a href=".././ieda-ikikat-gorulen-margin-problemi-ve-cozumu/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
@@ -489,13 +497,17 @@ float ve margin ...</p>
 
 
 </footer><!-- /.post-info -->
-                <p>Bir kodu İE'den gizlemek istiyorsak     :::css
-     p{
-color:red !important; /<em> bu kısmı ie6 görmeyecek</em>/ color:blue; }
-sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı
-görünecektir. !important css ile etkinlik için kullanılan bir etikettir.
-!important tanımlı özellik daha önce yapılmış aynı özelliğin üzerine
-çıkar. CSS ile etkinlik hakkında daha fazla ...</p>
+                <p>Bir kodu İE'den gizlemek istiyorsak   <br />
+</p>
+<div class="codehilite"><pre><span class="nt">p</span><span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span><span class="nb">red</span> <span class="cp">!important</span><span class="p">;</span> <span class="c">/* bu kısmı ie6 görmeyecek*/</span> 
+    <span class="k">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></div>
+
+
+<p>sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı görünecektir. !important css ile etkinlik için kullanılan bir etikettir.
+!important tanımlı özellik daha önce yapılmış aynı özelliğin üzerine çıkar. CSS ile etkinlik hakkında daha fazla bilgi ...</p>
                 <a class="readmore" href=".././css-de-kodumuzu-ieden-gizleme/">devamını oku</a>
                 <p><a href=".././css-de-kodumuzu-ieden-gizleme/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->

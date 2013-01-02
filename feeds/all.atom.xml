@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2012-12-28T14:28:00+02:00</updated><entry><title>Git Öğreniyorum - 3</title><link href="http://www.fatihhayrioglu.com/git-ogreniyorum-3/" rel="alternate"></link><updated>2012-12-28T14:28:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-12-28:git-ogreniyorum-3/</id><summary type="html">&lt;h2&gt;Git  grep&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-01-02T05:09:22+02:00</updated><entry><title>CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)</title><link href="http://www.fatihhayrioglu.com/css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/" rel="alternate"></link><updated>2013-01-02T05:09:22+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-01-02:css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/</id><summary type="html">&lt;p&gt;Slug : tum-tarayicilar-icin-css-ile-saydamlik-opacity
+Date: 2009-02-23 16:47
+Category: CSS, Web Standartları, XHTML
+Tags: css doğrulama, donuklaştırma, İnternet Tarayıcısı, opacity, saydamlık&lt;/p&gt;
+&lt;p&gt;Daha önce birçok kez bu konuda bana e-posta geldi. Buraya yazmanın
+mantıklı olacağını düşündüm.  &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;secici&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Standard: FF gt 1.5, Opera, Safari */&lt;/span&gt;
+    &lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;alpha&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c"&gt;/* IE lt 8 */&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;alpha(opacity=75)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* IE 8 */&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;khtml&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Safari 1.x */&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* FF lt 1.5, Netscape */&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Günümüzdeki(27 Nisan 2012) durumu düşünürsek kodu aşağıdaki gibi
+kısaltabiliriz.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;secici&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Standard: FF gt 1.5, Opera, Safari */&lt;/span&gt;
+    &lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;alpha&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c"&gt;/* IE lt 8 */&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;alpha(opacity=75)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* IE 8 */&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/donukluk.html"&gt;tıklayınız.&lt;/a&gt; Kod aslında tek satır olması gerekir ki CSS
+3 ile birlikte bu tek satır olacaktır. opacity: değer; tanımı ile
+halledeceğiz. Ama şu an yürürlükte olan tarayıcılar için yukarıdaki 5
+satır kodu yazmalıyız. Bu kodu yazmak o kadar da sorun değil, ama eğer
+bu kodu yazdığınız sayfanızı &lt;a href="http://jigsaw.w3.org/css-validator/"&gt;W3C doğrulamasından&lt;/a&gt; geçirirseniz
+aşağıdaki gibi bir hata alacaksınız. &lt;img alt="donuklasma_val2" src="/images/donuklasma_val2.gif" /&gt; Bence W3C
+doğrulması çok önemli olmasada bazen şartlar doğrulama
+gerektirdiğinde(mesela müşteri istediğinde) bu sorunu çözmek için bir
+kaç yöntem var. Bu yöntemlerden biri javascript fonksiyonu hazırlayıp bu
+fonksiyon yardımı ile elemanlarımızı saydamlaştırma; &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;donuklastirma&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;element&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;donukDeger&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;oe&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;element&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="c1"&gt;// donuklastirma degeri&lt;/span&gt;
+    &lt;span class="nx"&gt;oe&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;setAttribute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;style&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;opacity:&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;donukDeger&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;oe&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;setAttribute&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;// IE icin&lt;/span&gt;
+    &lt;span class="nx"&gt;oe&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;setAttribute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;filter&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;alpha(opacity=&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;donukDeger&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;);&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Örneği görmek
+için &lt;a href="/dokumanlar/donukluk_dog.html"&gt;tıklayınız.&lt;/a&gt; Diğer bir yöntemde ise ayrı bir css kodu yazıp bu
+kodu javascript ile ekleyebiliriz &lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; media=&amp;quot;screen&amp;quot; href=&amp;quot;style/donuklastirma.css&amp;quot; /&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Sorun: opacity tanımı kapsadığı elemanın içeriğini de etkiler bunu
+engellemek için Robert Nyman'ın bir çözümü var.
+&lt;a href="http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/"&gt;http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/&lt;/a&gt;
+denemedim bir bakın isterseniz.&lt;/p&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.evaria.com/2007/validate-css-style-opacity/"&gt;http://blog.evaria.com/2007/validate-css-style-opacity/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://snipplr.com/view/10094/crossbrowser-opacity/"&gt;http://snipplr.com/view/10094/crossbrowser-opacity/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/"&gt;http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.codeguru.com/forum/showthread.php?threadid=458411"&gt;http://www.codeguru.com/forum/showthread.php?threadid=458411&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://snipplr.com/view/707/setopacity/"&gt;http://snipplr.com/view/707/setopacity/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.ertugrulhaskan.com/blog/?p=548"&gt;http://www.ertugrulhaskan.com/blog/?p=548&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.aybim.com.tr/progs/acsstxt17.html"&gt;http://www.aybim.com.tr/progs/acsstxt17.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.mehmetduran.com/detay.aspx?detay=19"&gt;http://www.mehmetduran.com/detay.aspx?detay=19&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5"&gt;http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.ahmetcelik.org/?p=220"&gt;http://www.ahmetcelik.org/?p=220&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://mfyz.com/?/dokuman/82/css-ve-transparanlik/"&gt;http://mfyz.com/?/dokuman/82/css-ve-transparanlik/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://scriptiz.org/?p=1067"&gt;http://scriptiz.org/?p=1067&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary></entry><entry><title>Git Öğreniyorum - 3</title><link href="http://www.fatihhayrioglu.com/git-ogreniyorum-3/" rel="alternate"></link><updated>2012-12-28T14:28:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-12-28:git-ogreniyorum-3/</id><summary type="html">&lt;h2&gt;Git  grep&lt;/h2&gt;
 &lt;p&gt;Git&amp;rsquo;in önemli komutu grep hakkında bir kaç bilgi vereceğim.&lt;/p&gt;
 &lt;p&gt;Ben grep&amp;rsquo;i git&amp;rsquo;in arama komutu olarak biliyordum, ancak unix sistemlerde filtreleme komutu imiş. Geniş kullanım alanı varmış yani.&lt;/p&gt;
 &lt;p&gt;Genel söz dizimi&lt;/p&gt;
@@ -1329,211 +1402,4 @@ için&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/"&gt;http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.naprej.com/css3_body_background_gradient"&gt;http://www.naprej.com/css3_body_background_gradient&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.richarddarling.com/drupal-css/css3-gradient-background-repeat-problem"&gt;http://www.richarddarling.com/drupal-css/css3-gradient-background-repeat-problem&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="css3"></category><category term="gradient"></category><category term="problem"></category><category term="renk geçişi"></category></entry><entry><title>İnternet Explorer 7'yi Bitirmeli miyiz?</title><link href="http://www.fatihhayrioglu.com/internet-explorer-7-bitirmeli-miyiz/" rel="alternate"></link><updated>2012-06-14T12:56:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-06-14:internet-explorer-7-bitirmeli-miyiz/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/"&gt;“IE6 Sonrası Kod Yazma Alışkanlıklarımızı Güncellemek”&lt;/a&gt; yazısından
-sonra ie7 istatistikleri daha çok ilgimi çeker oldu. Şu anki
-istatistiklere bakarsak %4 civarında(makaleye başladığımda %10 idi.) ie7
-kullanan kullanıcı var, peki biz bunları yoksayabilirmiyiz ve yok
-sayarsak bize neler kazandırır bu makalemde bunları irdeleyeceğim.&lt;/p&gt;
-&lt;p&gt;İnternet Explorer 7. sürümünü bundan yaklaşık 5 sene önce çıkardı.
-Genelde ie6’nın kötü namının yanında iyi olarak görünse de Microsoft’un
-işi düzeltemediği ara sürümlerden biri oldu hep. Windows Vista’nın
-Windows Xp ve Windows 7 arasında kalması ile pek rağbet görmedi dersek
-yeridir.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://lh4.googleusercontent.com/w0y8NKzSAkoVYSxwu3S_dL-6YFeEdqa8zYEjbgLRZ5_vx_AdB9ZtGweRi3h7Hi9s3PqDJ-qdcR4DKWo8ydjWA2zQC15AWhSnFLcrgZlhP-sg0A5LdhY" /&gt;&lt;/p&gt;
-&lt;p&gt;kaynak: &lt;a href="http://blogs.msdn.com/b/ie/"&gt;http://blogs.msdn.com/b/ie/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Yukarıdaki grafiği Microsoft’un kendi blog sitesinden aldım. Bir çok
-şeyin göstergesi aslında yukarıdaki resim. CSS2.1 tam desteğini ancak
-ie8 ile veren Microsoft ne kadar geride olduğunuda gösteriyor.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;hasLayout Sorunları:&lt;/strong&gt; Geçenki makalemde genel olarak bahsettiğim
-&lt;a href="http://www.fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/"&gt;hasLayout sorunları&lt;/a&gt; sayfa yapılarının yerleşiminde çok sık
-rastladığımız sorunların ana kaynağı.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;:before ve :after desteği:&lt;/strong&gt;Çoklu kenar çizgisi kullanımı, css3 renk
-geçişi kullanılan elementlere ikon eklemek istediğimizde, resimsiz
-tooltip oluşturmak istediğimizde vb birçok kullanım alanı olan bu iki
-özelliği kullanabileceğiz artık. Önemli bir konu &lt;a href="https://twitter.com/#!/muratcorlu"&gt;Murat Çorlu&lt;/a&gt;'nun bu
-konuda bir makale hazırlığı var. Dört gözle bekliyoruz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;content değeri desteği:&lt;/strong&gt; CSS ile html içine içerik ekleme imkanı
-sağlayan güzel bir özelliği artık kullanabileceğiz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;outline desteği:&lt;/strong&gt; Odaklanılan alanları belirlemek için kullanılan bu
-özelliği erişebilirlik açısından önemli. Artık Standart çizgilerin
-dışında istediğimiz görüntüyü veribileceğiz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Performans farkı:&lt;/strong&gt;İnternet Explorer’un kendi günlük sitesinden
-öğrendiğimize göre ie7 ile ie8 arasında en az 2,5 katlık bir performans
-farkı var.&lt;/p&gt;
-&lt;div style="padding-left:15px"&gt;
-**- Ağ İyileştirmeleri:** ie7 ve altı tarayıcılarda bir sunucudan en
-fazla 2 öğe indirilebilirken ie8’de bu sayı 6’ya çıkarılmıştır. Buda
-sırada az sayıda bekleme ve site açılış hızının artması demek oluyor.
-
-**-Script Geliştirmeleri:** Sayfadaki script yorumlamada ciddi
-hızlanmalar olmuş. SunSpider test aracına göre ie7 ile ie8 arasında
-%400’lık hız farkı var.
-
-**- Bellek Kullanımında İyileştirmeler:**ie8’de bellek ile alakalı
-400’den fazla iyileştirme yapılmış.
-
-**-Yorumlayıcı Motor Yenilikleri:** Yeni CSS2.1’e tam uyumlu yorumlayıcı
-ile daha az hatalı bir yorumlayıcıya kavuştu.
-
-**- Native Json Desteği:** ie8 ile birlikte gelen native jSON desteği
-ile daha hızlı işlem yapabiliyoruz. Ajax isteklerimiz daha hızlı artık.
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;HTML5 Selector API Desteği:&lt;/strong&gt; Javascript ile element bulmak için
-&lt;strong&gt;getElementById()&lt;/strong&gt;, &lt;strong&gt;getElementsByName()&lt;/strong&gt; and
-&lt;strong&gt;getElementsByTagName()&lt;/strong&gt; metotlarını kullanıyoruz. HTML5 Selector API
-desteği ile &lt;strong&gt;&lt;a href="https://developer.mozilla.org/En/DOM/Document.querySelector"&gt;querySelector()&lt;/a&gt;&lt;/strong&gt; ve &lt;strong&gt;&lt;a href="https://developer.mozilla.org/en/DOM/element.querySelectorAll"&gt;querySelectorAll()&lt;/a&gt;&lt;/strong&gt; diye
-iki adet metot daha gelmektedir. jQuery’den aşina olduğumuz bu seçiciler
-bize çok büyük avantajlar sağlıyor.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;localStorage Özelliği:&lt;/strong&gt;Kısaca çerezlerin(cookies) daha gelişmiş
-sürümü olarak tanımlayabiliriz bu özelliği.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;:focus desteği:&lt;/strong&gt; Klavyeden elementlere odaklanmamızı sağlayan ve
-erişebilirlik için önemli olan bu özelliği artık uygulayabiliyoruz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Data URI Desteği:&lt;/strong&gt;Internet Explorer 8 ile birlikte DATA URI desteği
-geliyor. DATA URI kısaca html dosyasından ayrı yapıların yani resimlerin
-html içine gömme imkanı verir bize. internet Explorer 8 sadece css
-dosyalarına eklenmesine izin veriyor ayrıca bir kısıtlama var ie8 en
-fazla 32kb boyutuna kadar destekliyor.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;box-sizing:&lt;/strong&gt; box-sizing özelliği bize kutunun genişliğinin border ve
-padding değerlerinin içerip içermemesi gerektiğini tanımlama imkanı
-sağlıyor. Detaylı bilgi için &lt;a href="http://www.fatihhayrioglu.com/css3-box-sizing-ozelligi/"&gt;tıklayınız.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;:active Sözde sınıfı&lt;/strong&gt;işlevselliği arttı ie7’de sadece
-bağlantılara(&lt;a&gt;) verilirken artık tüm HTML elementlerini kapsıyor.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;IE8 Geliştirici Aracı geldi:&lt;/strong&gt; Firebug kadar olmasada ie içinde böyle
-bir aracın olması büyük bir avantaj. CSS özelliklerini görebilmek ve
-değiştirme imkanı bile yeter. İnternet Explorer 7’den daha gelişmiş bir
-geliştirici aracı ile javascript hatalarımızı görmek büyük avanataj.
-Geliştirici Aracının diğer özellikleride ie8'de geliştirilmiş durumda.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Yazı ve Metin Özellikleri:&lt;/strong&gt; Yazı ve metin özellikler için CSS2.1 için
-tam destek geliyor. &lt;a href="http://www.fatihhayrioglu.com/font-ozellikleri/"&gt;font-weight&lt;/a&gt;, &lt;a href="http://www.fatihhayrioglu.com/css-siniflandirma-liste-ozellikleri/"&gt;white-space&lt;/a&gt; (pre-wrap ve
-pre-line değerleri destekleniyor), &lt;a href="http://www.fatihhayrioglu.com/cssde-metintext-ozellikleri/"&gt;word-spacing&lt;/a&gt;. Ayrıca
-&lt;strong&gt;text-decoration&lt;/strong&gt; özelliğinin &lt;strong&gt;overline&lt;/strong&gt; değeride destekleniyor.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Test Zamanı:&lt;/strong&gt; Bir çok arayüz geliştirici yazdığı kodları farklı
-tarayıcılar ile test eder. Şu an benim test ettiğim tarayıcılar (ie7,
-ie8, ie9, Chrome ve Firefox) bunların arasında en fazla zamanımı ie7
-testleri alıyor. İnternet Explorer 7 sonrasında test sürelerimde ciddi
-azalma olacağını düşünüyorum.&lt;/p&gt;
-&lt;p&gt;onhashchange özelliğini ie8+
-https://developer.mozilla.org/en/DOM/window.onhashchange&lt;/p&gt;
-&lt;h2&gt;Diğer Kazanımlar&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;inline-block özelliğini sorunsuz kullanacağız artık.
-    &lt;strong&gt;display:inline-block&lt;/strong&gt; tanımını kullanımında ie6 ve ie7 için
-    ayrıca düzeltme kodu yazıyorduk, artık buna gerek kalmadı.
-    &lt;a href="http://www.fatihhayrioglu.com/super-bir-ozellik-displayinline-block/"&gt;http://www.fatihhayrioglu.com/super-bir-ozellik-displayinline-block/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;eksi margin sorunları için çözüm üretmeye son.
-    &lt;a href="http://www.fatihhayrioglu.com/eksi-margin-kullanimi/"&gt;http://www.fatihhayrioglu.com/eksi-margin-kullanimi/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;display:table&lt;/strong&gt; desteği artık var. Dikey ortalamada fazladan
-    yazdığımız kodlara son.
-    &lt;a href="http://www.fatihhayrioglu.com/genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/"&gt;http://www.fatihhayrioglu.com/genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ie7 z-index sorunlarının sonu
-    &lt;a href="http://www.fatihhayrioglu.com/z-index/"&gt;http://www.fatihhayrioglu.com/z-index/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ilk harfi büyük göstermede artık sorun yaşamayacağız
-    &lt;a href="http://www.fatihhayrioglu.com/ilk-harfi-buyukdrop-caps-paragraflar-olusturmak/"&gt;http://www.fatihhayrioglu.com/ilk-harfi-buyukdrop-caps-paragraflar-olusturmak/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;lang seçici desteği atrık var.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/"&gt;Float Uygulanmış Elementleri Tam Kapsayamama Sorunu&lt;/a&gt; için artık
-    sadece &lt;strong&gt;:after&lt;/strong&gt;ile çözüm yeterli olacak.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/tablo-satirina-verilen-ardalan-resminin-tekrarlama-sorunu/"&gt;Tablo Satırına Verilen Ardalan Resminin Tekrarlama Sorunu&lt;/a&gt; ie
-    için yok artık.&lt;/li&gt;
-&lt;li&gt;[İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi     atamak][] sorunu yok artık&lt;/li&gt;
-&lt;li&gt;[İnternet Explorer’da sağdaki sabit kaydırma çubuğunu kaldırmak     sorunu][] yok artık&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie67da-postionrelative-uygulanmis-elemanlarda-z-index-sorunu/"&gt;ie6/7′da postion:relative Uygulanmış Elemanlarda z-index Sorunu&lt;/a&gt;
-    yok artık&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/overflow-ve-positionrelative-kullaniminda-ie-sorunu/"&gt;overflow ve position:relative kullanımında ie sorunu&lt;/a&gt; yok artık&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie6-ve-ie7de-baglantilardaki-cursor-sorunu/"&gt;IE6 ve IE7′de bağlantılardaki cursor sorunu&lt;/a&gt; yok artık&lt;/li&gt;
-&lt;li&gt;[overflow:auto içinde %100 genişlikte tablo kullanımında ie7’de     yatay kaydırma çubuğu sorunu][] yok artık&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/ie7-bitisik-kardes-secicisi-sorunu/"&gt;İE7 Bitişik Kardeş Seçicisi Sorunu&lt;/a&gt; yok artık&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/kenar-boslugumargin-cokmesi/"&gt;Kenar Boşluğu(Margin) Çökmesi&lt;/a&gt; sorunu yok artık&lt;/li&gt;
-&lt;li&gt;@import tanımlarındaki ie7 sorunları yok artık.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://test.csswg.org/suites/css2.1/20110111/html4/border-conflict-w-001.htm"&gt;border:hidden&lt;/a&gt; sorunu yok artık&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://test.csswg.org/suites/css2.1/20110111/html4/border-conflict-w-006.htm"&gt;border-style outset renk farklılığı sorunu&lt;/a&gt; yok artık&lt;/li&gt;
-&lt;li&gt;&lt;p&gt; elementi standart padding değeri ie7’de farklı idi. Şimdi
-    çözüldü.&lt;/li&gt;
-&lt;li&gt;Microsoft’un kutu modeli kabülü ile w3c’nin kutu modeli arasındaki
-    fark artık yok.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;:first-child&lt;/strong&gt; dinamik kullanım sorunu ie8 ile birlikte çözüldü.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;counters&lt;/strong&gt; desteği &lt;strong&gt;counter-increment&lt;/strong&gt; ve &lt;strong&gt;counter-reset&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;position desteği&lt;/strong&gt; &lt;a href="http://www.quirksmode.org/css/position.html"&gt;http://www.quirksmode.org/css/position.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;tablo border desteği&lt;/strong&gt;
-    &lt;a href="http://www.quirksmode.org/css/columns.html"&gt;http://www.quirksmode.org/css/columns.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;tablo visibility:collape
-    desteği&lt;/strong&gt;&lt;a href="http://www.quirksmode.org/css/columns.html"&gt;http://www.quirksmode.org/css/columns.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;empty-cells desteği&lt;/strong&gt;
-    &lt;a href="http://www.quirksmode.org/css/tables.html"&gt;http://www.quirksmode.org/css/tables.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;border-collapse sorunları&lt;/strong&gt;
-    &lt;a href="http://www.quirksmode.org/css/tables.html"&gt;http://www.quirksmode.org/css/tables.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;border-spacing desteği&lt;/strong&gt;
-    &lt;a href="http://www.quirksmode.org/css/tables.html"&gt;http://www.quirksmode.org/css/tables.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;caption-size desteği&lt;/strong&gt;
-    &lt;a href="http://www.quirksmode.org/css/tables.html"&gt;http://www.quirksmode.org/css/tables.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://ajaxian.com/archives/display-table"&gt;http://ajaxian.com/archives/display-table&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Sonuç&lt;/h2&gt;
-&lt;p&gt;Microsoft’un tarayıcı üretimindeki umursamaz tutumu sonucu oluşmuş ie7
-tarayıcısının kullanım oranının hızla düştüğü bu günlerde ie7 sonrası
-neler kazanacağımızı görmek arayüz geliştiriciler için önemlidir.
-ie6’nın yanında ufak görünse bile aslında bir çok uğraştan bizi
-kurtardığını yukarıda gördük.
-&lt;span style="text-decoration:line-through"&gt;Benim tahminim yaz aylarında
-ie7 desteğini keseceğiz gibi görünüyor.&lt;/span&gt; Sene sonu olarak
-güncelliyorum.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://sahibinden.com/"&gt;sahibinden.com&lt;/a&gt; Haziran istatistiklerine göre %4 olan ie7’nin normal
-kullanıcılar için %5’in altına indiğinde bırakılması sorun
-oluşturmayacaktır. Ancak büyük kullanıcı kitlelerine erişim sağlayan
-sitelerde %2’nin altına inmeden desteği kaldırmak mantıklı görünmüyor.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Google uygulamalarında geçen sene ie7 desteğini kaldırdı. &lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Facebook yeni zaman tünelinde ie7 desteğini kaldırdı.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Drupal 8 ile ie7 desteğini kaldırdı.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;wordpress 3.3 veya 3.4’den itibaren ie7 desteğini kaldırmayı
-düşünüyor.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Son olarak &lt;a href="http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/"&gt;Internet Explorer 8′i 7 gibi yorumlama kodu&lt;/a&gt; eklediğiniz
-sitelerden kaldırmayı unutmayın.&lt;/p&gt;
-&lt;h2&gt;Kaynaklar&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2008/03.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2008/03.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2008/03/07/internet-explorer-8-beta-1-for-developers-standards-highlights.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2008/03/07/internet-explorer-8-beta-1-for-developers-standards-highlights.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2008/07.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2008/07.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2008/04/10/html-and-dom-standards-compliance-in-ie8-beta-1.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2008/04/10/html-and-dom-standards-compliance-in-ie8-beta-1.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2009/01.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2009/01.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2008/08/19/more-tests-submitted-to-the-w3c-css-2-1-test-suite.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2008/08/19/more-tests-submitted-to-the-w3c-css-2-1-test-suite.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2008/08/26/ie8-performance.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2008/08/26/ie8-performance.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2009/03/24/what-s-new-in-jscript-for-ie8.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2009/03/24/what-s-new-in-jscript-for-ie8.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.gradientpixels.ca/blog-themes-tutorials/17-no-support-for-ie7-from-wordpress-33"&gt;http://www.gradientpixels.ca/blog-themes-tutorials/17-no-support-for-ie7-from-wordpress-33&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://css-tricks.com/browser-support-pseudo-elements/"&gt;http://css-tricks.com/browser-support-pseudo-elements/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://share.ez.no/forums/general/browser-support-no-support-for-ie7"&gt;http://share.ez.no/forums/general/browser-support-no-support-for-ie7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.netmagazine.com/news/google-apps-ditches-support-ie7"&gt;http://www.netmagazine.com/news/google-apps-ditches-support-ie7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/"&gt;http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/"&gt;http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/cc304082(VS.85).aspx"&gt;http://msdn.microsoft.com/en-us/library/cc304082(VS.85).aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html"&gt;http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.nuricankaya.com/default.asp?gunluk_id=407"&gt;http://www.nuricankaya.com/default.asp?gunluk_id=407&lt;/a&gt; (ie8
-    kitabı)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html"&gt;http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html&lt;/a&gt;
-    (querySelector desteği)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/cc304082(v=vs.85).aspx"&gt;http://msdn.microsoft.com/en-us/library/cc304082(v=vs.85).aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://haslayout.net/haslayout"&gt;http://haslayout.net/haslayout&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://ejohn.org/blog/javascript-in-internet-explorer-8/"&gt;http://ejohn.org/blog/javascript-in-internet-explorer-8/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.evotech.net/blog/2009/03/ie8-css-support/"&gt;http://www.evotech.net/blog/2009/03/ie8-css-support/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://coding.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/"&gt;http://coding.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/&lt;/a&gt;
-    (güzel)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.standardista.com/browsers/ie8-css-support-hac"&gt;http://www.standardista.com/browsers/ie8-css-support-hac&lt;/a&gt; (güzel)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.quirksmode.org/css/contents.html#t15"&gt;http://www.quirksmode.org/css/contents.html#t15&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.computerworld.com/s/article/9217279/Google_to_dump_support_for_Microsoft_s_IE7"&gt;http://www.computerworld.com/s/article/9217279/Google_to_dump_support_for_Microsoft_s_IE7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/"&gt;http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://drupal.org/node/1217788"&gt;http://drupal.org/node/1217788&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://theie7countdown.com/"&gt;http://theie7countdown.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://howlingdogthemes.com/wordpress-development/wp-to-drop-ie7-support/"&gt;http://howlingdogthemes.com/wordpress-development/wp-to-drop-ie7-support/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://gmailblog.blogspot.com/2011/06/our-plans-to-support-modern-browsers.html"&gt;http://gmailblog.blogspot.com/2011/06/our-plans-to-support-modern-browsers.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.missouristate.edu/web/2012/03/26/goodbye-ie7-we-wont-miss-you/"&gt;http://blogs.missouristate.edu/web/2012/03/26/goodbye-ie7-we-wont-miss-you/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://caniuse.com/#compare=y&amp;amp;b1=ie+7&amp;amp;b2=ie+8"&gt;http://caniuse.com/#compare=y&amp;amp;b1=ie+7&amp;amp;b2=ie+8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</summary><category term=":after"></category><category term=":before"></category><category term="ie7"></category><category term="internet explorer"></category></entry></feed>
+&lt;/ul&gt;</summary><category term="css3"></category><category term="gradient"></category><category term="problem"></category><category term="renk geçişi"></category></entry></feed>

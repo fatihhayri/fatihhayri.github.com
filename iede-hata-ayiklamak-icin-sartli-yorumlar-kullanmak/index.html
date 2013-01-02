@@ -98,47 +98,85 @@ uygulanır. <!--more--></p>
 Biz bunlardan şartlı Yorumların kullanımını öğreneceğiz. şartlı Yorumlar
 Internet Explorer 5 versiyonu ile birlikte kullanılmaya başlanmıştır.
 şartlı Yorumlar xhtml kodunun yorumlanıp yorumlanmayacağını belirler.</p>
-<div class="codehilite"><pre> <span class="c">&lt;!--[if IE]&gt; Bu kod Interner Explorer 5</span>
+<div class="codehilite"><pre><span class="c">&lt;!--[if IE]&gt; Bu kod Interner Explorer 5 ve üzeri versiyonlarda çalışır. &lt;![endif]--&gt;</span>
 </pre></div>
 
 
-<p>ve üzeri versiyonlarda çalışır. &lt;![endif]--&gt; </p>
 <p>Bu kodlama bizim bir çok hatayı ayıklamamız için biçilmiş kaftandır.
 Ayrıca şartlı komutlar bize versiyon farklılıklarına göre kod
 yazmamızıda sağlar</p>
-<div class="codehilite"><pre> <span class="o">&lt;!</span><span class="nt">--</span><span class="o">[</span><span class="nt">if</span> <span class="nt">IE</span> <span class="nt">6</span><span class="o">]&gt;</span> <span class="o">&lt;</span><span class="nt">style</span> <span class="nt">type</span><span class="o">=</span><span class="s1">&#39;text/css&#39;</span><span class="o">&gt;</span>
+<div class="codehilite"><pre><span class="c">&lt;!--[if IE 6]&gt; </span>
+<span class="c">&lt;style type=&#39;text/css&#39;&gt;</span>
+<span class="c">    a:link, a:visited, a:active { </span>
+<span class="c">        text-decoration: none; </span>
+<span class="c">    } </span>
+<span class="c">&lt;/style&gt;</span>
+<span class="c">&lt;![endif]--&gt;</span>
 </pre></div>
 
 
-<p>a:link, a:visited, a:active { text-decoration: none; } </style>
-&lt;![endif]--&gt; </p>
 <p>Bu kod ile sadece IE 6 versiyonunda linklerin altının çizilmesini
 engellemiş oluyoruz.</p>
 <p>Eğer bir kuralı yugulamka istiyor isek ve bu kuralı belli bir web
 tarayıcısından gizlemek istediğimiz durumlarda şartlı Komuta (!)
 operatörünü ekleyerek bunu sağlayabiliriz.</p>
-<div class="codehilite"><pre> <span class="c">&lt;!--[if !IE 6]&gt; &lt;style type=&#39;text/css&#39;&gt;</span>
+<div class="codehilite"><pre><span class="c">&lt;!--[if !IE 6]&gt; </span>
+<span class="c">&lt;style type=&#39;text/css&#39;&gt;</span>
+<span class="c">    a:link, a:visited, a:active { </span>
+<span class="c">        text-decoration: none; </span>
+<span class="c">    } </span>
+<span class="c">&lt;/style&gt;</span>
+<span class="c">&lt;![endif]--&gt;</span>
 </pre></div>
 
 
-<p>a:link, a:visited, a:active { text-decoration: none; } </style>
-&lt;![endif]--&gt; </p>
 <p>Bu kod ile sadece IE6'da bu kodun uygulanmasını engelledik.</p>
 <p>Bunun gibi başka işlevsel operatörlerde mevcuttur.</p>
-<p>Operatör   Açıklama                Örnek</p>
-<hr />
-<p>gt         - den büyük             &lt;!--[if IE gt 5.5]&gt;
-  gte        - den büyük veya eşit   &lt;!--[if IE gte 5.5]&gt;
-  lt         - den küçük             &lt;!--[if IE lt 5.5]&gt;
-  lte        - den küçük veya eşit   &lt;!--[if IE lte 5.5]&gt;
-  !          değilse                 &lt;!--[if !IE 5.5]&gt;</p>
-<div class="codehilite"><pre> <span class="c">&lt;!--[if lt IE 6]&gt; &lt;style</span>
+<table>
+<thead>
+<tr>
+<th>Operatör</th>
+<th align="right">Açıklama</th>
+<th align="center">Örnek</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gt</td>
+<td align="right">- den büyük</td>
+<td align="center">&lt;!--[if IE gt 5.5]&gt;</td>
+</tr>
+<tr>
+<td>gte</td>
+<td align="right">- den büyük veya eşit</td>
+<td align="center">&lt;!--[if IE gte 5.5]&gt;</td>
+</tr>
+<tr>
+<td>lt</td>
+<td align="right">- den küçük</td>
+<td align="center">&lt;!--[if IE lt 5.5]&gt;</td>
+</tr>
+<tr>
+<td>lte</td>
+<td align="right">- den küçük veya eşit</td>
+<td align="center">&lt;!--[if IE lte 5.5]&gt;</td>
+</tr>
+<tr>
+<td>!</td>
+<td align="right">değilse</td>
+<td align="center">&lt;!--[if !IE 5.5]&gt;</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span class="c">&lt;!--[if lt IE 6]&gt; </span>
+<span class="c">    &lt;style type=&quot;text/css&quot;&gt; </span>
+<span class="c">        @import (&quot;ie.css&quot;); </span>
+<span class="c">    &lt;/style&gt; </span>
+<span class="c">&lt;![endif]–&gt;</span>
 </pre></div>
 
 
-<p>type="text/css"&gt; @import ("ie.css"); </style> &lt;![endif]–&gt;</p>
 <p>Birçok hata ayıklama metodunda şartlı Komutlar kullanılabilir.</p>
-</p>
     </div><!-- /.entry-content -->
     
     <div class="comments">
