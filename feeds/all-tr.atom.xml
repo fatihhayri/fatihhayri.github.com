@@ -1,78 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all-tr.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-01-02T05:09:22+02:00</updated><entry><title>CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)</title><link href="http://www.fatihhayrioglu.com/css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/" rel="alternate"></link><updated>2013-01-02T05:09:22+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-01-02:css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlikopacity/</id><summary type="html">&lt;p&gt;Slug : tum-tarayicilar-icin-css-ile-saydamlik-opacity
-Date: 2009-02-23 16:47
-Category: CSS, Web Standartları, XHTML
-Tags: css doğrulama, donuklaştırma, İnternet Tarayıcısı, opacity, saydamlık&lt;/p&gt;
-&lt;p&gt;Daha önce birçok kez bu konuda bana e-posta geldi. Buraya yazmanın
-mantıklı olacağını düşündüm.  &lt;br /&gt;
-&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;secici&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Standard: FF gt 1.5, Opera, Safari */&lt;/span&gt;
-    &lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;alpha&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c"&gt;/* IE lt 8 */&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;alpha(opacity=75)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* IE 8 */&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;khtml&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Safari 1.x */&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* FF lt 1.5, Netscape */&lt;/span&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all-tr.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-01-15T11:37:00+02:00</updated><entry><title>CSS3 Geçiş Efektleri(Transitions)</title><link href="http://www.fatihhayrioglu.com/css3-gecis-efektleri-transitions/" rel="alternate"></link><updated>2013-01-15T11:37:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-01-15:css3-gecis-efektleri-transitions/</id><summary type="html">&lt;h2&gt;Genel Tanım&lt;/h2&gt;
+&lt;p&gt;CSS anlık geçişleri bünyesinde barındırıyordu. Birçok uygulamamızda bir
+bağlantının üzerine geldiğinde bağlantının rengi değiştiriyor,
+düğmemizin ardalan rengini değiştiriyorduk.&lt;/p&gt;
+&lt;p&gt;CSS3 ile birlikte ani geçişlere artı olarak yeni merhale merhale
+geçişler eklenmiştir. Geçişler yavaş yavaş olduğu gibi uzun uzadıya
+geçişlerde mevcuttur. Durumu daha iyi anlayabilmek için yukarıda
+bahsettiğimiz gibi bir fare imlecinin bağlantı üzerine geldiğinde renk
+değişmesini anlık değil merhale merhale değiştirelim.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/IpEnx?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Renk geçişi belli bir zaman aralığına yayılacaktır ve iki renk
+arasındaki geçişte ara renkler görünecektir. Bu geçişe bazı efektlerde
+ekleyebiliyoruz. Geçişin merhale merhale olması göze daha hoş
+gelecektir.&lt;/p&gt;
+&lt;p&gt;Bu işleri daha önce flash veya javascript yapıyorken artık CSS3 yardımı
+ile yapabilecek olmamız çok güzel bir gelişme. Basit tek satır
+kod(farklı tarayıcılar için yazılan önekler zamanla teke inecektir.) ile
+bu işi yapmak ayrı bir kolaylık tabi.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;property&lt;/span&gt; &lt;span class="nt"&gt;duration&lt;/span&gt; &lt;span class="nt"&gt;timing-function&lt;/span&gt; &lt;span class="nt"&gt;delay&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Transtion Özellikleri&lt;/h2&gt;
+&lt;p&gt;Geçiş efektlerini uygulamak için aşağıdaki özelliklerden yararlanacağız.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;transition-property&lt;/li&gt;
+&lt;li&gt;transition-duration&lt;/li&gt;
+&lt;li&gt;transition-delay&lt;/li&gt;
+&lt;li&gt;transition-timing-function&lt;/li&gt;
+&lt;li&gt;transition&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Şimdi bu özellikleri tek tek inceleyelim.&lt;/p&gt;
+&lt;h3&gt;Geçiş Efekti Hangi Özellik İle Yapılacağını Belirleme(transition-property)&lt;/h3&gt;
+&lt;p&gt;Uygulanan geçiş efektinin elemanın hangi özelliği üzerinden yapılacağını
+belirlemek için transition-property özelliğini kullanırız.&lt;/p&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; transition-property: none | all | [ \&amp;lt;IDENT&gt; ] [ ',’ \&amp;lt;IDENT&gt;]* &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler:&lt;/strong&gt; none | all | [ \&amp;lt;IDENT&gt; ] [ ',’ \&amp;lt;IDENT&gt; ]* &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; all &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;Örneğin color değeri geçiş uygulanacak elemanın başlangıç ve son rengi
+arasında bir geçiş olacağını gösterir.&lt;/p&gt;
+&lt;p&gt;all değeri tüm tanımlarda geçiş yapılacağı anlamındadır.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;property&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Günümüzdeki(27 Nisan 2012) durumu düşünürsek kodu aşağıdaki gibi
-kısaltabiliriz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;secici&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Standard: FF gt 1.5, Opera, Safari */&lt;/span&gt;
-    &lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;alpha&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;75&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c"&gt;/* IE lt 8 */&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;alpha(opacity=75)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* IE 8 */&lt;/span&gt;
+&lt;h3&gt;Geçiş Efekti Uzunluğunu Belirleme (transition-duration)&lt;/h3&gt;
+&lt;p&gt;Geçiş efektlerini uygularken verdiğimiz efektin ne kadar süre ile devam
+edeceğini ayarlayabiliyoruz. Bu ayarlamayı transition-duration özelliği
+yapıyoruz.&lt;/p&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; transition-duration: \&amp;lt;zaman&gt; [, \&amp;lt;zaman&gt;]* &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; \&amp;lt;zaman&gt; [, \&amp;lt;zaman&gt;]* &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; 0 &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;0 değeri geçişin hemen olacağı anlamına gelir. Eksi değerler 0 olarak
+yorumlanır.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;property&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;duration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0.5s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Örneği görmek için &lt;a href="/dokumanlar/donukluk.html"&gt;tıklayınız.&lt;/a&gt; Kod aslında tek satır olması gerekir ki CSS
-3 ile birlikte bu tek satır olacaktır. opacity: değer; tanımı ile
-halledeceğiz. Ama şu an yürürlükte olan tarayıcılar için yukarıdaki 5
-satır kodu yazmalıyız. Bu kodu yazmak o kadar da sorun değil, ama eğer
-bu kodu yazdığınız sayfanızı &lt;a href="http://jigsaw.w3.org/css-validator/"&gt;W3C doğrulamasından&lt;/a&gt; geçirirseniz
-aşağıdaki gibi bir hata alacaksınız. &lt;img alt="donuklasma_val2" src="/images/donuklasma_val2.gif" /&gt; Bence W3C
-doğrulması çok önemli olmasada bazen şartlar doğrulama
-gerektirdiğinde(mesela müşteri istediğinde) bu sorunu çözmek için bir
-kaç yöntem var. Bu yöntemlerden biri javascript fonksiyonu hazırlayıp bu
-fonksiyon yardımı ile elemanlarımızı saydamlaştırma; &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;donuklastirma&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;element&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;donukDeger&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;oe&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;element&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="c1"&gt;// donuklastirma degeri&lt;/span&gt;
-    &lt;span class="nx"&gt;oe&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;setAttribute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;style&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;opacity:&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;donukDeger&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;oe&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;setAttribute&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;// IE icin&lt;/span&gt;
-    &lt;span class="nx"&gt;oe&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;setAttribute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;filter&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;alpha(opacity=&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;donukDeger&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;);&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;h3&gt;transition-delay&lt;/h3&gt;
+&lt;p&gt;Uygulanan geçiş efektinin ne kadar zaman sonra başlayacağını belirler.
+Belirlenen zamana kadar animasyonu durdurur ve sonra animasyon başlar.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;property&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;duration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0.5s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0.5s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Örneği görmek
-için &lt;a href="/dokumanlar/donukluk_dog.html"&gt;tıklayınız.&lt;/a&gt; Diğer bir yöntemde ise ayrı bir css kodu yazıp bu
-kodu javascript ile ekleyebiliriz &lt;br /&gt;
-&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; media=&amp;quot;screen&amp;quot; href=&amp;quot;style/donuklastirma.css&amp;quot; /&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;p&gt;Animasyonumuz 0.5 saniye sonra başlayacaktır.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/bkFsm?type=css&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;transition-timing-function&lt;/h3&gt;
+&lt;p&gt;Oluşturacağımız geçişlere daha estetik geçişler sağlamak için kullanılan
+fonksiyonlardır. CSS3 ile birlikte gelen transition efekti başlangıç
+tanımı doğrusal bir geçiştir. Biz bu özelliğe ease, ease-in, ease-out,
+ease-in-out ve cubic-bezier değerlerini tanımlayabiliyoruz. cubic-bezier
+tanımı ise geçişleri kendimize göre tanımlama imkanı veriyor. Kendi
+zaman çizgimizi hazırlamak(cubic-bezier) biraz zor olsa da internet
+üzerindeki bazı araçlar yardımı ile bu işte kolaylaştırılmıştır.&lt;/p&gt;
+&lt;p&gt;Daha önce sizlerle paylaştığım bu araçlar&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://matthewlein.com/ceaser/"&gt;http://matthewlein.com/ceaser/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://easings.net/"&gt;http://easings.net/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jeremyckahn.github.com/stylie/"&gt;http://jeremyckahn.github.com/stylie/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ile transition-timing-function özelliğini kullanmak bir zevk haline
+geliyor.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/Alapk?type=css&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;transition kısayolu&lt;/h3&gt;
+&lt;p&gt;Yukarıda tek tek ayrı ayrı her özelliği tanımlayabildiğimiz gibi teek
+bir tannımlama ile bunları kısa bir şekilde tanımlamak da mümkün.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;transition-property&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;width&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;transition-duration&lt;/span&gt;&lt;span class="nd"&gt;:0&lt;/span&gt;&lt;span class="nc"&gt;.5s&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;transition-delay&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="nc"&gt;.5s&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;transition-timing-function&lt;/span&gt;&lt;span class="nd"&gt;:ease-in-out&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Sorun: opacity tanımı kapsadığı elemanın içeriğini de etkiler bunu
-engellemek için Robert Nyman'ın bir çözümü var.
-&lt;a href="http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/"&gt;http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/&lt;/a&gt;
-denemedim bir bakın isterseniz.&lt;/p&gt;
+&lt;p&gt;Yukarıdaki son örnekte geçiş tanımlarımız 4 adet idi. Biz burada bunları
+tek bir tanımda toplayalım.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;width&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="nc"&gt;.5s&lt;/span&gt; &lt;span class="nt"&gt;ease-in-out&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="nc"&gt;.5s&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Görüldüğü gibi kodumuz daha kısa bir hal aldı. bundan sonra bu şekilde
+kullanmayı tercih edeceğim.&lt;/p&gt;
+&lt;h3&gt;Çoklu Geçiş Kullanımı&lt;/h3&gt;
+&lt;p&gt;Yukarıda yaptığımız gibi tek bir özellik üzerinden geçiş efekti
+uygulayabildiğimiz gibi virgül ile ayırmak kaydı ile birden fazla geçiş
+efekti de uygulayabiliriz.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#788182&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;5px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;100px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="n"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt; &lt;span class="m"&gt;.5s&lt;/span&gt; &lt;span class="n"&gt;ease&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;background&lt;/span&gt; &lt;span class="m"&gt;.3s&lt;/span&gt; &lt;span class="n"&gt;ease&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="nd"&gt;:focus&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;250px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt;  &lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#50ebd6&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Son örneğimizde arama alanına odaklandığımızda genişliğini ve ardalan
+rengini geçiş efekti ile değiştirdi.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/iorBc?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;Geçiş Efektini Tetiklemek&lt;/h2&gt;
+&lt;p&gt;Geçiş efektlerini tetiklemek için genelde :hover sözde sınıfı kullanılsa
+da :active, :target, :focus gibi sözde sınıfları da kullanılabilir.&lt;/p&gt;
+&lt;p&gt;Ayrıca javascript ile DOM’a yapılan müdahaleler de buna eklenebilir.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt;&lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt;&lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#c4342f&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt;&lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt;&lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;100px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt;&lt;span class="n"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;background-color&lt;/span&gt; &lt;span class="m"&gt;2s&lt;/span&gt; &lt;span class="n"&gt;ease&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="m"&gt;1s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.tetikle&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt;&lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Javascript ilede bu bağlantıya tetikle diye bir sınıf tanımlayalım.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;querySelector&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;className&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;tetikle&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DGvlB?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;Javascript ile Geçişin Bittiğinin Kontrolü&lt;/h2&gt;
+&lt;p&gt;Javascript ile geçiş efektinin bittiğini kontrol etmek çok basit.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;myElement&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addEventListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;transitionend&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="c1"&gt;// geçiş efekti bttikten sonra bunu yap&lt;/span&gt;
+&lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Geçiş efekti tamamlandığında transitionend foksiyonunu tetkilyecektir.&lt;/p&gt;
+&lt;h2&gt;Tarayıcı Uyumu&lt;/h2&gt;
+&lt;p&gt;CSS3 ile gelen bir çok özellik gibi geçiş efekti özelliklerinin de önek
+ve internet explorer sorunları mevcuttur.&lt;/p&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
+Firefox 4+ (-moz- öneki ile), 16+ öneksiz &lt;br /&gt;
+Chrome 1+ (-webkit- öneki ile) &lt;br /&gt;
+Safari 3.2+ (-webkit- öneki ile) &lt;br /&gt;
+Opera 10.5 (-o- öneki ile), 12.10 öneksiz&lt;br /&gt;
+İnternet Explorer 10+ &lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt; &lt;br /&gt;
+iOS Safari 3.2+ (-webkit- öneki ile) &lt;br /&gt;
+Opera Mobile 10+ (-o- öneki ile), 12.10 öneksiz &lt;br /&gt;
+Android Browser 2.1+ (-webkit- öneki ile)&lt;/p&gt;
+&lt;p&gt;İnternet Explorer 10 ile gelen geçiş efekti desteğini öneksiz
+eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
+özelliğin olmaması mevcut sitelerimizde bu özellikleri kullanmamız
+önündeki en büyük engeldir.&lt;/p&gt;
 &lt;h2&gt;Kaynaklar&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.evaria.com/2007/validate-css-style-opacity/"&gt;http://blog.evaria.com/2007/validate-css-style-opacity/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://snipplr.com/view/10094/crossbrowser-opacity/"&gt;http://snipplr.com/view/10094/crossbrowser-opacity/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/"&gt;http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.codeguru.com/forum/showthread.php?threadid=458411"&gt;http://www.codeguru.com/forum/showthread.php?threadid=458411&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://snipplr.com/view/707/setopacity/"&gt;http://snipplr.com/view/707/setopacity/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.ertugrulhaskan.com/blog/?p=548"&gt;http://www.ertugrulhaskan.com/blog/?p=548&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.aybim.com.tr/progs/acsstxt17.html"&gt;http://www.aybim.com.tr/progs/acsstxt17.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.mehmetduran.com/detay.aspx?detay=19"&gt;http://www.mehmetduran.com/detay.aspx?detay=19&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5"&gt;http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.ahmetcelik.org/?p=220"&gt;http://www.ahmetcelik.org/?p=220&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://mfyz.com/?/dokuman/82/css-ve-transparanlik/"&gt;http://mfyz.com/?/dokuman/82/css-ve-transparanlik/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://scriptiz.org/?p=1067"&gt;http://scriptiz.org/?p=1067&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>Git Öğreniyorum - 3</title><link href="http://www.fatihhayrioglu.com/git-ogreniyorum-3/" rel="alternate"></link><updated>2012-12-28T14:28:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-12-28:git-ogreniyorum-3/</id><summary type="html">&lt;h2&gt;Git  grep&lt;/h2&gt;
+&lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-transitions/"&gt;http://www.w3.org/TR/css3-transitions/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.alistapart.com/articles/understanding-css3-transitions/"&gt;http://www.alistapart.com/articles/understanding-css3-transitions/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/CSS_transitions"&gt;https://developer.mozilla.org/en/CSS/CSS_transitions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://24ways.org/2009/going-nuts-with-css-transitions"&gt;http://24ways.org/2009/going-nuts-with-css-transitions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.impressivewebs.com/css3-transitions-without-hover/"&gt;http://www.impressivewebs.com/css3-transitions-without-hover/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.css3.info/preview/css3-transitions/"&gt;http://www.css3.info/preview/css3-transitions/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://samuli.hakoniemi.net/css3-transitions-are-we-there-yet/"&gt;http://samuli.hakoniemi.net/css3-transitions-are-we-there-yet/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css3.bradshawenterprises.com/transitions/"&gt;http://css3.bradshawenterprises.com/transitions/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.joelambert.co.uk/morf/"&gt;http://www.joelambert.co.uk/morf/&lt;/a&gt; (araç)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cubic-bezier.com/#.17,.67,.83,.67"&gt;http://cubic-bezier.com/&lt;/a&gt; (araç)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.roblaplaca.com/examples/bezierBuilder/"&gt;http://www.roblaplaca.com/examples/bezierBuilder/&lt;/a&gt; (araç)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.netzgesta.de/dev/cubic-bezier-timing-function.html"&gt;http://www.netzgesta.de/dev/cubic-bezier-timing-function.html&lt;/a&gt; (araç)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://slicescript.com/create-a-stylish-menu-with-css3-transitions/"&gt;http://slicescript.com/create-a-stylish-menu-with-css3-transitions/&lt;/a&gt; (örnek menü)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.kirupa.com/html5/looking_at_css3_transitions.htm"&gt;http://www.kirupa.com/html5/looking_at_css3_transitions.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://bavotasan.com/2011/a-simple-fade-with-css3/"&gt;http://bavotasan.com/2011/a-simple-fade-with-css3/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/"&gt;http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/&lt;/a&gt; (örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://caniuse.com/css-transitions"&gt;http://caniuse.com/css-transitions&lt;/a&gt; (tarayıcı desteği)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.opera.com/docs/specs/presto23/css/transitions/"&gt;http://www.opera.com/docs/specs/presto23/css/transitions/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.adobe.com/devnet/html5/articles/using-css3-transitions-a-comprehensive-guide.html"&gt;http://www.adobe.com/devnet/html5/articles/using-css3-transitions-a-comprehensive-guide.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://smashinghub.com/css3-transitions-and-animations.htm"&gt;http://smashinghub.com/css3-transitions-and-animations.htm&lt;/a&gt; (örnekler)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ie/hh673535(v=vs.85).aspx"&gt;http://msdn.microsoft.com/en-us/library/ie/hh673535(v=vs.85).aspx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tv.adobe.com/watch/learn-dreamweaver-cs6/using-the-css-transitions-panel/?go=13279"&gt;http://tv.adobe.com/watch/learn-dreamweaver-cs6/using-the-css-transitions-panel/?go=13279&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.phpkodlari.com/css-dersleri/css3-transitions-ozelligi/"&gt;http://www.phpkodlari.com/css-dersleri/css3-transitions-ozelligi/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2011/11/21/adding-personality-with-css3-transitions-and-animations.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2011/11/21/adding-personality-with-css3-transitions-and-animations.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/#transitions"&gt;http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/#transitions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://vimeo.com/49879139"&gt;http://vimeo.com/49879139&lt;/a&gt; (video)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ricostacruz.com/jquery.transit/"&gt;http://ricostacruz.com/jquery.transit/&lt;/a&gt; (jquery ile tüm tarayıcılar için)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.netmagazine.com/tutorials/more-efficient-css3-transitions"&gt;http://www.netmagazine.com/tutorials/more-efficient-css3-transitions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://proto.io/freebies/onoff/"&gt;http://proto.io/freebies/onoff/&lt;/a&gt; (örnek)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://geebart.com/blog/easy-css3-transitions-tutorial"&gt;http://geebart.com/blog/easy-css3-transitions-tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://webdesigncrowd.com/animated-navigation-css3-transitions-transforms/"&gt;http://webdesigncrowd.com/animated-navigation-css3-transitions-transforms/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://davidwalsh.name/css-transitions"&gt;http://davidwalsh.name/css-transitions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css3.bradshawenterprises.com/transitions/"&gt;http://css3.bradshawenterprises.com/transitions/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.webdesignerdepot.com/2012/12/how-to-use-the-css3-transition-property/"&gt;http://www.webdesignerdepot.com/2012/12/how-to-use-the-css3-transition-property/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.problogdesign.com/coding/get-started-with-css3-transitions-today"&gt;http://www.problogdesign.com/coding/get-started-with-css3-transitions-today&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/"&gt;http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="css3"></category><category term="geçiş-efektleri"></category><category term="transitions"></category><category term="animasyon"></category></entry><entry><title>Git Öğreniyorum - 3</title><link href="http://www.fatihhayrioglu.com/git-ogreniyorum-3/" rel="alternate"></link><updated>2012-12-28T14:28:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-12-28:git-ogreniyorum-3/</id><summary type="html">&lt;h2&gt;Git  grep&lt;/h2&gt;
 &lt;p&gt;Git&amp;rsquo;in önemli komutu grep hakkında bir kaç bilgi vereceğim.&lt;/p&gt;
 &lt;p&gt;Ben grep&amp;rsquo;i git&amp;rsquo;in arama komutu olarak biliyordum, ancak unix sistemlerde filtreleme komutu imiş. Geniş kullanım alanı varmış yani.&lt;/p&gt;
 &lt;p&gt;Genel söz dizimi&lt;/p&gt;
