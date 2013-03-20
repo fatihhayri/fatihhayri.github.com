@@ -19,7 +19,7 @@
 body {
     background: #F5F4EF;
     color: #000305;
-    font-size: 100%; /* Base font size: 14px */
+    font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.429;
     margin: 0;
@@ -29,8 +29,8 @@ body {
 
 /* Headings */
 h1 {font-size: 2em; color: #3274D0 !important; }
-h2 {font-size: 1.671em}	/* 22px */
-h3 {font-size: 1.529em}	/* 20px */
+h2 {font-size: 1.571em}	/* 22px */
+h3 {font-size: 1.429em}	/* 20px */
 h4 {font-size: 1.286em}	/* 18px */
 h5 {font-size: 1.143em}	/* 16px */
 h6 {font-size: 1em}		/* 14px */
@@ -187,12 +187,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 
 	/* Banner */
-	#banner h1 {
-		font-size: 3.2em; 
-		line-height: 0; 
-		margin-top:30px;
-		position:relative;
-	}
+	#banner h1 {font-size: 3.571em; line-height: 0; margin-top:30px;}
 	#banner h1 a:link, #banner h1 a:visited {
 		color: #3274D0;
 		display: block;
@@ -215,103 +210,13 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		background-color:#3274D0;
 		color:#fff;
 		margin-left:0.7em;
-		border-radius: 10px;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-right-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 10px;
 	}
-	
-	/* logo döndürme */
-	#ceviKazi{
-		display:none;
-		position:absolute;
-		right:80px;
-		top:-80px;
-		z-index:11;
-		/*perspective*/
-		-webkit-perspective:300px;
-		-moz-perspective:300px;
-		-ms-perspective:300px;
-		perspective:300px;
-		/*transform-style*/
-		-webkit-transform-style:preserve-3d;
-		-moz-transform-style:preserve-3d;
-		-ms-transform-style:preserve-3d;
-		transform-style:preserve-3d;
-		text-align:center;
-	}
-	#ceviKazi .gudi,
-	#ceviKazi .slogan{
-		border-radius:105px;
-		background:#333;
-		width:105px;
-		height:75px;
-		padding:15px 0;
-		display:block;
-		position:absolute;
-		color:#fff;
-		/*transition*/
-		-webkit-transition:transform 1s ease-in-out;
-		-moz-transition:transform 1s ease-in-out;
-		transition:transform 1s ease-in-out;
-		border:1px solid rgba(161, 161, 161, 0.5);
-	}
-	#ceviKazi .gudi:before,
-	#ceviKazi .slogan:before{
-		content:" ";
-		position:absolute;
-		z-index:-1;
-		top:5px;
-		left:5px;
-		right:5px;
-		bottom:5px;
-		border:5px solid #C74350;
-		border-radius:105px;
-	}
-	#ceviKazi .gudi{
-		/*transform*/
-		-webkit-transform:rotateX(0deg);
-		-moz-transform:rotateX(0deg);
-		-ms-transform:rotateX(0deg);
-		transform:rotateX(0deg);
-		/*backface-visibility*/
-		-webkit-backface-visibility:hidden;
-		-moz-backface-visibility:hidden;
-		-ms-backface-visibility:hidden;
-		backface-visibility:hidden;
-		z-index:13;
-		background:url(../images/gudi.gif) no-repeat scroll center center rgb(255, 255, 255);
-	}
-	#ceviKazi:hover .gudi{
-	/*transform*/
-		-webkit-transform:rotateX(180deg);
-		-moz-transform:rotateX(180deg);
-		-ms-transform:rotateX(180deg);
-		transform:rotateX(180deg);
-	}
-	#ceviKazi .slogan{
-		/*transform*/
-		-webkit-transform:rotateX(-180deg);
-		-moz-transform:rotateX(-180deg);
-		-ms-transform:rotateX(-180deg);
-		transform:rotateX(-180deg);
-		/*backface-visibility*/
-		-webkit-backface-visibility:hidden;
-		-moz-backface-visibility:hidden;
-		-ms-backface-visibility:hidden;
-		backface-visibility:hidden;
-		z-index:12;
-		background:#C74350;
-		font-size:24px;
-		line-height:24px;
-	}
-	#ceviKazi:hover .slogan{
-		/*transform*/
-		-webkit-transform:rotateX(0deg);
-		-moz-transform:rotateX(0deg);
-		-ms-transform:rotateX(0deg);
-		-o-transform:rotateX(0deg);
-		transform:rotateX(0deg);
-		z-index:14;
-	}
-	
 	
 	/* Main Nav */
 	#banner nav {
@@ -614,7 +519,6 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	padding:10px;
 	border-top:1px solid #F5F5F5;
 	border-bottom:1px solid #F5F5F5;
-	min-height: 110px;
 }
 
 .hentry .entry-content .post-info{
