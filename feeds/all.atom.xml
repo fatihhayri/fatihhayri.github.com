@@ -1,5 +1,424 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-01-15T11:37:00+02:00</updated><entry><title>CSS3 Geçiş Efektleri(Transitions)</title><link href="http://www.fatihhayrioglu.com/css3-gecis-efektleri-transitions/" rel="alternate"></link><updated>2013-01-15T11:37:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-01-15:css3-gecis-efektleri-transitions/</id><summary type="html">&lt;h2&gt;Genel Tanım&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-05-27T10:17:00+03:00</updated><entry><title>CSS3 Animasyon(Animation)</title><link href="http://www.fatihhayrioglu.com/css3-animasyonanimation/" rel="alternate"></link><updated>2013-05-27T10:17:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-05-27:css3-animasyonanimation/</id><summary type="html">&lt;p&gt;Bir önceki yazımda &lt;a href="http://fatihhayrioglu.com/css3-gecis-efektleri-transitions/"&gt;CSS3 geçiş efektlerini&lt;/a&gt; anlatmıştım. CSS3 animasyon özellikleri geçiş efektlerine benzer özellikleri ve daha fazlasını içermektedir. Animasyon işleri ile daha önce uğraşanlar için çok tanıdık kodları var. CSS3 Animasyon özelliği; javascript veya flash olmadan bize animasyon yapma imkanı sağlamaktadır.&lt;/p&gt;
+&lt;p&gt;Animasyon tanımlarında tanımlamalar ve zamanlama önceden yapılır sonra uygulanacak elemana tanımlanır. &lt;/p&gt;
+&lt;p&gt;Tarayıcı desteği konusunda ilk başta sıkıntılı olsa da şimdi daha iyi bir noktada. &lt;a href="http://caniuse.com/#search=css3%20animation"&gt;http://caniuse.com/#search=css3%20animation&lt;/a&gt; verilerine göre %72&amp;rsquo;lik bir desteğe sahip.&lt;/p&gt;
+&lt;p&gt;CSS3 animasyon özelliğini ie10 hariç ön ek ile desteklemektedir. Ben buradaki örneklerde öneksiz göstereceğim. &lt;/p&gt;
+&lt;h2&gt;Anahtar Kare (Keyframes)&lt;/h2&gt;
+&lt;p&gt;Daha önce flash ile uğraşmış insanlara yabancı olmayan bir kavram. Animasyonu bir süreç olarak kabul edersek, anahtar kare(keyframe) bize geçişin başlangıç ve bitişi arasındaki durumları tanımlamamız için olanak sağlar.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;@keyframes Kuralı&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CSS3 anahtar kare(keyframe) tanımı bir @kuralı olarak tanımlanır. Normal CSS tanımları içerir, ancak farklı olarak tanımlayıcı bir isim ve her kareye bir tanım yapmamızı sağlayan bir yapıya sahiptir.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@keyframes&lt;/span&gt; &lt;span class="nt"&gt;animasyom_ismi&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nt"&gt;keyframe&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;property&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;animasyom_ismi tekil bir tanımıdır, daha sonra elemente animasyon uygulamak istediğimizde kullanılmak üzere. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@keyframes&lt;/span&gt; &lt;span class="nt"&gt;soldanGelen&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="nt"&gt;50&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="nt"&gt;100&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;200px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıdaki kod ile 'soldanGelen' animasyonumuza üç adet anahtar kare(keyframe) oluşturmuş olduk. Animasyonumuzun 0%, 50% ve 100%&amp;rsquo;ün de anahtar kare (frame) meydana getirmiş olduk. Her kare&amp;rsquo;de(frame) elemana istediğimiz animasyonu uygulayabiliyoruz. &lt;/p&gt;
+&lt;p&gt;Ayrıca (0% - 100%) kullanımı yerine (from - to) kullanımıda vardır.&lt;/p&gt;
+&lt;h2&gt;Animasyon Özellikleri&lt;/h2&gt;
+&lt;p&gt;Anahtar kare(keyframe) tanımından sonra animasyon özellikleri tanımlarına geliyor sıra. Bu özellik tanımları CSS tanımlarına benzer bir yapısı vardır. Aşağıda bunları tek tek inceleyelim.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;animation-name&lt;/li&gt;
+&lt;li&gt;animation-duration&lt;/li&gt;
+&lt;li&gt;animation-timing-function&lt;/li&gt;
+&lt;li&gt;animation-iteration-count&lt;/li&gt;
+&lt;li&gt;animation-direction&lt;/li&gt;
+&lt;li&gt;animation-delay&lt;/li&gt;
+&lt;li&gt;animation-play-state&lt;/li&gt;
+&lt;li&gt;animation-fill-mode&lt;/li&gt;
+&lt;li&gt;animation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Animasyonun adı (animation-name)&lt;/h3&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; animation-name: &amp;lt;single-animation-name&amp;gt; &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; none | IDENT [, none | IDENT ]* &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; none &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;Bir elemana animasyon uygulayacağımız zaman ilk olarak bir isim tanımlamamız gerekiyor. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#gonderGelsin&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;gonder&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tek değer alır ve tanımlanan değer yukarıda belirttiğimiz gibi anahtar kare&amp;rsquo;ye parametre olarak eklenir. Bunun dışında none değeride alır. Animasyon ismini tırnak içinde yazınca Firefox&amp;rsquo;da çalışmıyor.&lt;/p&gt;
+&lt;h3&gt;Animasyonun zamanı (animation-duration)&lt;/h3&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; animation-duration: &amp;lt;zaman&amp;gt; [, &amp;lt;zaman&amp;gt;]&lt;em&gt; &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; &amp;lt;zaman&amp;gt; [, &amp;lt;zaman&amp;gt;]&lt;/em&gt; &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; 0s &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;Animasyonun ne kadar süreceğini belirtmek için bu özelliği kullanırız. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#gonderGelsin&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;gonder&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;duration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/zhlHo?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Animasyonun 3 saniye devam edeceğini gösterir. Daha önce gördüğümüz transition-duration özelliğine benzer bir özelliktir. Zaman değerleri alır; ms, s ve 0 değerleri alır.&lt;/p&gt;
+&lt;h3&gt;Zamanlama fonksiyonu (animation-timing-function)&lt;/h3&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; animation-timing-function: &amp;lt;single-timing-function&amp;gt; [ &amp;lsquo;,&amp;rsquo; &amp;lt;single-timing-function&amp;gt; ]*  &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; ease | linear | ease-in | ease-out | ease-in-out | cubic- bezier(&amp;lt;number&amp;gt;, &amp;lt;number&amp;gt;, &amp;lt;number&amp;gt;, &amp;lt;number&amp;gt;) &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; ease &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;Geçiş efektlerinde benzer diğer bir tanımı animation-timing-function tanımıdır.  &lt;a href="http://fatihhayrioglu.com/css3-gecis-efektleri-transitions/"&gt;transition-timing-function&lt;/a&gt; özelliğine benzer bir özelliktir. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;timing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;keyword&lt;/span&gt;
+  &lt;span class="c"&gt;/* veya */&lt;/span&gt;
+  &lt;span class="n"&gt;cubic&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bezier&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x2&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Aldığı değerler ease, linear, ease-in, ease-out, ve ease-in-out &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#gonderGelsin&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;gonder&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;duration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;timing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;ease&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/xBgaA?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Animasyonun esnek bir şekilde meydana gelmesini sağlar.&lt;/p&gt;
+&lt;h3&gt;Animasyonun tekrar sayısı (animation-iteration-count)&lt;/h3&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; animation-iteration-count: &amp;lt;single-animation-iteration-count&amp;gt; [ &amp;lsquo;,&amp;rsquo; &amp;lt;single-animation-iteration-count&amp;gt; ]* &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; infinite | &amp;lt;sayı&amp;gt; &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; 1 &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;Bu tanım animasyonun kaç kere tekrarlanacağını belirler. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#gonderGelsin&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;gonder&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;duration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;timing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;ease&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;iteration&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/IAKJm?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;animation-iteration-count tanımı tüm pozitif rakamları alabilir. Animasyonun daimi olarak devam etmesini istiyorsak infinite değerini atamalıyız. Başlangıç değeri 1&amp;rsquo;dir.&lt;/p&gt;
+&lt;h3&gt;Animasyonun yönünü (animation-direction)&lt;/h3&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; animation-direction: &amp;lt;single-animation-direction&amp;gt; [ &amp;lsquo;,&amp;rsquo;&amp;lt;single-animation-direction&amp;gt; ]* &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; normal | reverse | alternate | alternate-reverse &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; normal  &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;Animasyonlar normalde başlangıçtan sona doğru hareket eder. Bazen ise bu akışı tersine çevirmek isteriz. Animasyonun yönünü belirleye biliyoruz, ileri doğru veya tersine aksın diyebiliyoruz.&lt;/p&gt;
+&lt;p&gt;Başlangıç değer normal olarak tanımlıdır. Aldığı değerler&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;normal&lt;/strong&gt; Animasyon her çalışmadan baştan sona doğru çalışır. Yani animasyonun her döngüsünde baştan başlayacak. Bu özelliğin başlangıç değerdir.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;alternate&lt;/strong&gt; Animasyon sondan başa hareket eder. Animasyon terse oynarken her adımı geri doğru hareket eder. animation-timing-function foksiyonuda tersine döner, yani ease-in tanımlı ise bu tanım yapıldığında animasyon ease-out şeklinde oynayacaktır. Animasyon tekrar sayısı tanımlı ise, her tek ve çift sayı için bu durum tekrar edecektir.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;reverse&lt;/strong&gt; Animasyon her döngüde geriye doğru oynar. Animasyonun her döngüsünde sondan başa hareket eder.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;alternate-reverse&lt;/strong&gt; İlk döngüde sondan başa, sonra baştan sona doğru hareket eder. Animasyon tekrar sayısı tanımlı ise, her tek ve çift sayı için bu durum tekrar edecektir.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Örneğe devam;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#gonderGelsin&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;gonder&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;duration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;timing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;ease&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;iteration&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;direction&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;reverse&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/qLKAp?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Animasyonu tersine çevirecektir. Metin sağdan sola değil, soldan sağa doğru gelecektir.&lt;/p&gt;
+&lt;h3&gt;Animasyona ara verme (animation-delay)&lt;/h3&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; animation-delay: &amp;lt;zaman&amp;gt; [, &amp;lt;zaman&amp;gt;]&lt;em&gt; &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; &amp;lt;zaman&amp;gt; [, &amp;lt;zaman&amp;gt;]&lt;/em&gt; &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; 0ms  &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;animation-delay tanımı animasyonun başlamadan önce belli bir süre bekletmemizi sağlar.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#gonderGelsin&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;gonder&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;duration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;timing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;ease&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;iteration&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;direction&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;reverse&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;4s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/qizfH?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Tanımı ile animasyon tetiklenmesinden itibaren 4 saniye sonra başlayacaktır. Bu tanım pozitif ve negatif rakam alabilir. Pozitif değerler animasyonu bekletirken, negatif değerler atandığında animasyon hemen başlayacak ve belirlenen saniyeden sonra görünmeye başlayacaktır.&lt;/p&gt;
+&lt;h3&gt;Animasyonu Durdurma (animation-play-state)&lt;/h3&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; animation-play-state: &amp;lt;single-animation-play-state&amp;gt; [ &amp;lsquo;,&amp;rsquo; &amp;lt;single-animation-play-state&amp;gt; ]* &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; running | paused &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; running &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;Diğer bir animasyon özelliğide animation-play-state özelliğidir, animasyon yürütme kontorolünü yapar. İki değer alır; çalıştır(running) veya durdur(paused). Bir animasyonu durdurmak için &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;animation-play-state&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;paused&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tanımını yapmamız yeterlidir. Örneğimizde elemanın üzerine geldiğimizde animasyonun durdurmak için&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.polyfill&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;play&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;paused&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/yCDJc?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Tanımını eklememiz yeterli olacaktır. Bu özelliğe javascript ile erişerek daha dinamik örnekler oluşturabiliriz. &lt;/p&gt;
+&lt;h3&gt;animation-fill-mode&lt;/h3&gt;
+&lt;p&gt;Bu özellik animasyonun bitiminden sonra veya animation-duration ile belirlenen zaman sırasında nasıl davranacağını belirler. animation-fill-mode aşağıdaki değerleri alır.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;none&lt;/strong&gt; başlangıç değeridir — Başlangıç değeri olarak kullanılan bu değer ile animasyon bittikten sonra geri dönmesini sağlar ve kendi tanımlarını alır. Animasyonun başındaki &lt;strong&gt;animation-duration&lt;/strong&gt; ile tanımlanan zaman sırasında herhangi bir stil uygulanmaz. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;forwards&lt;/strong&gt; animasyon bittikten sonra; son anahtar karede animasyonda tanımlanan özellik korunur. &lt;strong&gt;none&lt;/strong&gt; değerinde animasyonun başına dönerken, &lt;strong&gt;forwards&lt;/strong&gt; tanımında son kare özellikleri korunarak kalır.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;backwards&lt;/strong&gt; Tanımlanan animasyon durdurma(animation-delay) zamanında, uygulanan animasyonun ilk karesindeki değer tanımlanır. &lt;strong&gt;none&lt;/strong&gt; değerinde durdurma zamanında herhangi bir tanım almazken, backwards tanımında tanımlana animasyonun ilk kare özelliklerini alır. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;both&lt;/strong&gt; elemente &lt;strong&gt;forwards&lt;/strong&gt; ve &lt;strong&gt;backwards&lt;/strong&gt; aynı anda uygulanır. Hem animasyonun durdurma zamanında ilk kare özelliklerini alır, hemde son kare değerleri elemanda tanımlı kalır. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; animation-fill-mode: &amp;lt;single-animation-fill-mode&amp;gt; [ &amp;lsquo;,&amp;rsquo; &amp;lt;single-animation-fill-mode&amp;gt; ]* &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; none | forwards | backwards | both &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; none &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;animation-fill-mode özelliği animasyonun dışında hedef elemana uygulanacak stillerin nasıl uygulanacağını tanımlar. &lt;/p&gt;
+&lt;p&gt;Bu özellik sayesinde bazı kesilme ve garip atlamaları engelleyebiliriz. animation-fill-mode özelliğini kullanarak fazladan kod yazmadan bu tip sorunları engelleyebilirsiniz. &lt;/p&gt;
+&lt;h3&gt;Animasyon Kısayolu(animation)&lt;/h3&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; animation: &amp;lt;single-animation&amp;gt; [ &amp;lsquo;,&amp;rsquo; &amp;lt;single-animation&amp;gt; ]* &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; &amp;lt;single-animation-name&amp;gt; || &amp;lt;time&amp;gt; || &amp;lt;timing-function&amp;gt; || &amp;lt;time&amp;gt; || &amp;lt;single-animation-iteration-count&amp;gt; || &amp;lt;single-animation-direction&amp;gt; || &amp;lt;single-animation-fill-mode&amp;gt; &lt;br /&gt;
+&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; animation-name: none &lt;br /&gt;
+&lt;strong&gt;animation-duration:&lt;/strong&gt; 0s &lt;br /&gt;
+&lt;strong&gt;animation-timing-function:&lt;/strong&gt; ease &lt;br /&gt;
+&lt;strong&gt;animation-delay:&lt;/strong&gt; 0s &lt;br /&gt;
+&lt;strong&gt;animation-iteration-count:&lt;/strong&gt; 1 &lt;br /&gt;
+&lt;strong&gt;animation-direction:&lt;/strong&gt; normal &lt;br /&gt;
+&lt;strong&gt;animation-fill-mode:&lt;/strong&gt; none &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; tüm elementler ve :before ve :after elementlerine &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
+&lt;p&gt;Yukarıda animasyon özelliklerini tanımladık. Bu tanımları önek ile birlikte yazdığımızda bir sayfaya yakın bir kod yığını ortaya çıkmaktadır. Bu kod yığınını azaltmak için ve daha kısa kod yazmak için animation tanımı ile yukarıdaki tanımları azaltabiliriz. Bu tanımlama ile animation-name, animation-duration, animation-timing-function, animation-iteration-count, animation-direction, animation-delay ve animation-fill-mode tanımlarını tek bir tanım içine almış oluruz. &lt;/p&gt;
+&lt;p&gt;Örneğimiz göz önüne alırsak;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.canCanli&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;gelsinGitsin&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;duration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;2s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;timing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ease&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;iteration&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;direction&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;alternate&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fill&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mode&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;forwards&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tanımı yerine &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.canCanli&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;gelsinGitsin&lt;/span&gt; &lt;span class="m"&gt;2s&lt;/span&gt; &lt;span class="n"&gt;ease&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt; &lt;span class="n"&gt;alternate&lt;/span&gt; &lt;span class="m"&gt;5s&lt;/span&gt; &lt;span class="n"&gt;forwards&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;7 satır kod tek satıra indi. Yukarıdaki sıra önemlidir; name, duration, timing function, count, direction, delay, and fill- mode. Her tanım birbirinden boşluk ile ayrılır. Sadece adı ve süresi yazılması gerekmektedir, diğer değerler isteğe bağlıdır.&lt;/p&gt;
+&lt;p&gt;Birden fazla tanımı virgül ile ayırırız. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.polyfill&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;gradientMove&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;reload&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;duration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;.8s&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;8s&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;iteration&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;infinite&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fill&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mode&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;timing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;linear&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yerine &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.polyfill&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;animation&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;gradientMove&lt;/span&gt; &lt;span class="m"&gt;.8s&lt;/span&gt; &lt;span class="m"&gt;4&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt; &lt;span class="n"&gt;linear&lt;/span&gt; &lt;span class="n"&gt;alternate&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;reverse&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;reload&lt;/span&gt; &lt;span class="m"&gt;8s&lt;/span&gt; &lt;span class="m"&gt;4&lt;/span&gt; &lt;span class="k"&gt;both&lt;/span&gt; &lt;span class="n"&gt;linear&lt;/span&gt; &lt;span class="n"&gt;alternate&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;reverse&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Javascript, Flash ve CSS3 Animasyon Avantaj ve Dezavantajları&lt;/h3&gt;
+
+&lt;p&gt;Animasyon işini daha önce ve hala javascript ve flash ile yaparken şimdi niye css ile yapıyoruz diye akıllara gelebilir. Bu başlık altında javascript flash ve css3 ile animasyon yapımının avantaj ve dezavantajlarını inceleyeceğiz. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Flash Artıları&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Animasyon oluşturmak için köklü ve sağlam bir Editöre sahip&lt;/li&gt;
+&lt;li&gt;Actionscript ile daha programatik ve güçlü bir animasyon yeteneğine sahip&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Flash Eksileri&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mobil ortam desteğinin az olması.&lt;/li&gt;
+&lt;li&gt;Bir plugin bağımlılığı olması ve devamlı güncelleme istegi&lt;/li&gt;
+&lt;li&gt;Arama motorları ve ekran okuyucuları gibi cihazlardan erişememe sorun.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Javascript Artıları&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gelişmiş ve iyi animasyon frameworkleri&lt;/li&gt;
+&lt;li&gt;Web geliştiricilerin alışık olduğu HTML, CSS ve DOM öğeleri üzerinden işlem yapma&lt;/li&gt;
+&lt;li&gt;CSS&amp;rsquo;e göre daha avantajlı ve programatik güç ve esneklik.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Javascript Eksileri&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kullanıan frameworkler nedeniyle yavaşlık ve fazla HTTP isteği&lt;/li&gt;
+&lt;li&gt;Sözdizimindeki framework kullanım zorluğu&lt;/li&gt;
+&lt;li&gt;Javascript ile oluşturulan içeriğin arama motorlarının erişim sıkıntıları.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;CSS3 Artıları&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bildik kullanım alanı&lt;/li&gt;
+&lt;li&gt;Standart CSS sözdizimi&lt;/li&gt;
+&lt;li&gt;Basit öğrenme &lt;/li&gt;
+&lt;li&gt;Javascripte göre daha yüksek frame oranları ve tarayıcıda daha hızlı ve esnek geçişler&lt;/li&gt;
+&lt;li&gt;Mevcut HTML elemanları üzerinde oynama imkanı ve SEO avantajı sayılabilir.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;CSS3 Eksileri&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tarayıcı desteği bakımından sıkıntılar mevcut. (İnternet Explorer sorunu)&lt;/li&gt;
+&lt;li&gt;Animasyon araçları konusunda zengin bir alan yok, daha çok kod ile üretmek zorunluluğu var.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Animasyon Olaylarının Kullanımı&lt;/h3&gt;
+&lt;p&gt;Animasyon olaylarını kullanarak animasyonlara ekstra özellikleri kazandırabiliriz. AnimationEvent nesnesini kullanarak animasyonun başladığını, bittiğini ve döngüsünü tespit edebiliriz. Javascript ile kare kare kontrolün olmaması bir sorun. &lt;/p&gt;
+&lt;p&gt;Animasyonu dinleyen bir fonksiyon&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;e&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;anim&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addEventListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;animationstart&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;listener&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addEventListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;animationend&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;listener&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addEventListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;animationiteration&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;listener&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;e&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;anim&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;className&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;polyfill&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tüm animasyon olaylarını dinleyen bir fonksiyon yaptık. İlk başlangıcı yakalamak için animasyonun uygulandığı sınıfı sonrada tanımlıyoruz. Olayları yakalamk için listener fonksiyonuna gönderiyoruz.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;listener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createElement&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;li&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;animationstart&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="nx"&gt;l&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;innerHTML&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Başlangıç: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;elapsedTime&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;animationend&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="nx"&gt;l&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;innerHTML&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Son: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;elapsedTime&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;animationiteration&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="nx"&gt;l&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;innerHTML&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Döngüye başlama: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;elapsedTime&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;output&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;appendChild&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;l&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tarayıcılara göre metot isimleri farklılık gösteriyor.&lt;/p&gt;
+&lt;table style="border:1px solid #ccc"&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;W3C standard - Firefox &lt;/td&gt;
+    &lt;td&gt;webkit &lt;/td&gt;
+    &lt;td&gt;Opera &lt;/td&gt;
+    &lt;td&gt;IE10 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;animationstart&lt;/td&gt;
+    &lt;td&gt;webkitAnimationStart&lt;/td&gt;
+    &lt;td&gt;oanimationstart&lt;/td&gt;
+    &lt;td&gt;MSAnimationStart&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;animationiteration&lt;/td&gt;
+    &lt;td&gt;webkitAnimationIteration&lt;/td&gt;
+    &lt;td&gt;oanimationiteration&lt;/td&gt;
+    &lt;td&gt;MSAnimationIteration&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;animationend&lt;/td&gt;
+    &lt;td&gt;webkitAnimationEnd&lt;/td&gt;
+    &lt;td&gt;oanimationend&lt;/td&gt;
+    &lt;td&gt;MSAnimationEnd&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DIvqF?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Uyumu &lt;/strong&gt;
+Firefox 4+ (-moz- öneki ile), 16+ öneksiz
+Chrome 1+ (-webkit- öneki ile)
+Safari 4+ (-webkit- öneki ile)
+Opera 12 (-o- öneki ile), 12.10 öneksiz
+İnternet Explorer 10+
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt;
+iOS Safari 2.0+ (-webkit- öneki ile)
+Opera Mobile desteklemiyor
+Android Browser 2.1+ (-webkit- öneki ile)&lt;/p&gt;
+&lt;h2&gt;Sonuç&lt;/h2&gt;
+&lt;p&gt;CSS3 animasyon özelliği CSS&amp;rsquo;in web&amp;rsquo;deki görselliği tek başına temsil etmesi açısından büyük bir adımdır. HTML elementlerine animasyon özelliği kazandırması gelecekte daha yaygın olarak kullanılmasına yol açacaktır. Basit ve genel kullanılan animasyonları normal CSS kodu yazar gibi kodlasak da daha gelişmiş animasyonlar için bir editör ihtiyacı ortaya çıkacağı kesindir. Bu konuda şimdi görünen en büyük editör &lt;a href="http://html.adobe.com/edge/animate/"&gt;Adobe&amp;rsquo;nin Egde&lt;/a&gt; aracıdır. Flash ile büyük bir bilgi birikimine sahip olan Adobe CSS3 animasyonuna da büyük destek sağlayacağı ortadır. Tabi rekabetin olması ve farklı araçların çıkması her zaman bizim gibi geliştiricileri için bir artıdır. &lt;/p&gt;
+&lt;p&gt;Ben sizlere burada işi teorisini açıklamaya çalıştım bilgileriniz geliştirmek için yapılmış animasyon örneklerini incelemeniz ve kendi animasyonlarınızı hazırlamanız önemli. Kaynak bölümündeki örnekleri incelemenizi öneririm.&lt;/p&gt;
+&lt;p&gt;Kalın sağlıcakla.&lt;/p&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-animations/"&gt;http://www.w3.org/TR/css3-animations/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://coding.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/"&gt;http://coding.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.vanseodesign.com/css/animation/"&gt;http://www.vanseodesign.com/css/animation/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://webexpedition18.com/articles/css-animations-resources-tutorials/"&gt;http://webexpedition18.com/articles/css-animations-resources-tutorials/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css3/css3_animations.asp"&gt;http://www.w3schools.com/css3/css3_animations.asp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css3.bradshawenterprises.com/animations/"&gt;http://css3.bradshawenterprises.com/animations/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://daneden.me/animate/"&gt;http://daneden.me/animate/&lt;/a&gt; (örnek kütüphanesi)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations"&gt;https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.netmagazine.com/tutorials/masterclass-css-animations"&gt;http://www.netmagazine.com/tutorials/masterclass-css-animations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-tricks.com/snippets/css/keyframe-animation-syntax/"&gt;http://css-tricks.com/snippets/css/keyframe-animation-syntax/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.webkit.org/blog/138/css-animation/"&gt;http://www.webkit.org/blog/138/css-animation/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://matthewlein.com/ceaser/"&gt;http://matthewlein.com/ceaser/&lt;/a&gt; (animasyon aracı)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sitepoint.com/build-awesome-apps-with-css3-animations/#fbid=qIRziNGN-f6"&gt;http://www.sitepoint.com/build-awesome-apps-with-css3-animations/#fbid=qIRziNGN-f6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://caniuse.com/css-animation"&gt;http://caniuse.com/css-animation&lt;/a&gt; (tarayıcı desteği)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.hongkiat.com/blog/css3-animation-transition-demos/"&gt;http://www.hongkiat.com/blog/css3-animation-transition-demos/&lt;/a&gt; (örnekler)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.webdirections.org/blog/let-the-web-move-you-css3-animations-and-transitions/"&gt;http://www.webdirections.org/blog/let-the-web-move-you-css3-animations-and-transitions/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://samuli.hakoniemi.net/having-fun-with-css-keyframes/"&gt;http://samuli.hakoniemi.net/having-fun-with-css-keyframes/&lt;/a&gt; (Örnekli anlatım)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://westciv.com/tools/animations/"&gt;http://westciv.com/tools/animations/&lt;/a&gt; (animasyon aracı)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/"&gt;http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dev.opera.com/articles/view/css3-vs-jquery-animations/"&gt;http://dev.opera.com/articles/view/css3-vs-jquery-animations/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.blogomen.com/css3-animasyonlar-1/"&gt;http://www.blogomen.com/css3-animasyonlar-1/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.onextrapixel.com/2011/08/31/enhance-your-sites-with-css3-animations/"&gt;http://www.onextrapixel.com/2011/08/31/enhance-your-sites-with-css3-animations/&lt;/a&gt; (örnekli anlatım)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://24ways.org/2009/css-animations/"&gt;http://24ways.org/2009/css-animations/&lt;/a&gt; (örnekli anlatım, loading)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/11/14/creative-css-loading-animations/"&gt;http://tympanus.net/codrops/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/11/14/creative-css-loading-animations/"&gt;http://tympanus.net/codrops/2012/11/14/creative-css-loading-animations/&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/12/31/how-to-create-a-simple-multi-item-slider/"&gt;http://tympanus.net/codrops/2012/12/31/how-to-create-a-simple-multi-item-slider/&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/06/25/timed-notifications-with-css-animations/"&gt;http://tympanus.net/codrops/2012/06/25/timed-notifications-with-css-animations/&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tympanus.net/codrops/?s=keyframe"&gt;http://tympanus.net/codrops/?s=keyframe&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.androidfools.com/2013/android-news/how-to-create-bounce-effect-with-css3-animation/"&gt;http://www.androidfools.com/2013/android-news/how-to-create-bounce-effect-with-css3-animation/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dev.opera.com/articles/view/css3-animations/"&gt;http://dev.opera.com/articles/view/css3-animations/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations?redirectlocale=en-US&amp;amp;redirectslug=CSS%2FUsing_CSS_animations"&gt;https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations?redirectlocale=en-US&amp;amp;redirectslug=CSS%2FUsing_CSS_animations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sitepoint.com/css3-animation-javascript-event-handlers/"&gt;http://www.sitepoint.com/css3-animation-javascript-event-handlers/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.valhead.com/2013/01/04/tutorial-css-animation-fill-mode/"&gt;http://www.valhead.com/2013/01/04/tutorial-css-animation-fill-mode/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.kirupa.com/html5/all_about_css_animations.htm"&gt;http://www.kirupa.com/html5/all_about_css_animations.htm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="CSS3"></category><category term="Animasyon"></category><category term="anahtar-kare"></category></entry><entry><title>CSS3 Geçiş Efektleri(Transitions)</title><link href="http://www.fatihhayrioglu.com/css3-gecis-efektleri-transitions/" rel="alternate"></link><updated>2013-01-15T11:37:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-01-15:css3-gecis-efektleri-transitions/</id><summary type="html">&lt;h2&gt;Genel Tanım&lt;/h2&gt;
 &lt;p&gt;CSS anlık geçişleri bünyesinde barındırıyordu. Birçok uygulamamızda bir
 bağlantının üzerine geldiğinde bağlantının rengi değiştiriyor,
 düğmemizin ardalan rengini değiştiriyorduk.&lt;/p&gt;
@@ -1542,37 +1961,4 @@ imkanı veriyor&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.h-online.com/open/news/item/Firebug-1-10-released-with-new-cookie-manager-1641591.html"&gt;http://www.h-online.com/open/news/item/Firebug-1-10-released-with-new-cookie-manager-1641591.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.softwareishard.com/blog/firebug/firebug-tip-trace-styles/"&gt;http://www.softwareishard.com/blog/firebug/firebug-tip-trace-styles/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://getfirebug.com/cookies"&gt;https://getfirebug.com/cookies&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="çerez düzenleme"></category><category term="firebug"></category><category term="Firefox"></category><category term="medya sorguları"></category></entry><entry><title>CSS3 Renk Geçişinin &lt;body&gt; elemanına uygulamasındaki sorun ve çözümü</title><link href="http://www.fatihhayrioglu.com/css3-renk-gecisinin-body-elemanina-uygulamasindaki-sorun-ve-cozumu/" rel="alternate"></link><updated>2012-06-25T13:24:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-06-25:css3-renk-gecisinin-body-elemanina-uygulamasindaki-sorun-ve-cozumu/</id><summary type="html">&lt;p&gt;CSS3 yeniliklerinde yaralanıyoruz, tabi bazı sorunlar ortaya çıkıyor.
-Hatasız kod olmayacağı için, hata olur ama bir çözümüde vardır elbet
-diye düşünmemiz lazım.&lt;/p&gt;
-&lt;p&gt;Sorun tam olarak bir sayfanın ardalanının tamamına renk geçişi uygulamak
-istediğimizde belli bir yere kadar uygulayıp kalan kısmını tekrar
-ettirerek istemediğimiz bir durum oluşmasına neden oluyor.&lt;/p&gt;
-&lt;p&gt;Sorunun çözümünü aradığımda ilk sonuç &lt;a href="http://stackoverflow.com/"&gt;http://stackoverflow.com/&lt;/a&gt;
-sitesinde buldum biraz daha araştırınca benzer cevaplar gördüm ve
-sizlerle paylaşmak istedim.&lt;/p&gt;
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VUcqt/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;strong&gt;background-image&lt;/strong&gt; özelliğine eklenen renk geçişi kodu tekrar
-edecektir, biz bu tekrarı istemediğimiz için.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;background-repeat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;no-repeat&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;ekledik. Ayrıca uygulana renk geçişinin sayfa zemininde sabitlenmesi
-için&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;background-attachment&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;fixed&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;kodunu ekledik.&lt;/p&gt;
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KAg2U/2/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Diğer kod eklemeleri farklı tarayıcılar içindir.&lt;/p&gt;
-&lt;h2&gt;Kaynaklar&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats"&gt;http://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/"&gt;http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.naprej.com/css3_body_background_gradient"&gt;http://www.naprej.com/css3_body_background_gradient&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.richarddarling.com/drupal-css/css3-gradient-background-repeat-problem"&gt;http://www.richarddarling.com/drupal-css/css3-gradient-background-repeat-problem&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="css3"></category><category term="gradient"></category><category term="problem"></category><category term="renk geçişi"></category></entry></feed>
+&lt;/ul&gt;</summary><category term="çerez düzenleme"></category><category term="firebug"></category><category term="Firefox"></category><category term="medya sorguları"></category></entry></feed>
