@@ -73,8 +73,88 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="./css3-plan-modulleri/">CSS3 Plan Modülleri</a></h1> 
+                    <h1 class="entry-title"><a href="./ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/">İE için renk geçişi çözümü filtre tanımını sıfırlamak</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-07-17T12:05:00">
+                Wed 17 July 2013
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href="./author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href="./category/css.html">CSS</a> kategorisi. </p>
+<p>etiketler: <a href="./tag/css.html">css</a><a href="./tag/css3.html">css3</a><a href="./tag/renk-gecisi.html">renk-geçişi</a><a href="./tag/filtre.html">filtre</a><a href="./tag/hata-ayiklama.html">hata-ayıklama</a><a href="./tag/sifirlama.html">sıfırlama</a></p>
+
+
+</footer><!-- /.post-info --><p>CSS3 ile gelen güzel özelliklerden birisi <a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/">renk geçişleri</a>. Bu güzel özelliği kullanmamızdaki en büyük engel İE’nin bu özelliği İE 10 sürümünde destekliyor olması. Ancak farklı bir yöntem ile bu desteği İE’nin tüm sürümlerine kazandırabiliyoruz. <strong>filtre tanımı</strong>. filtre tanımı yardımı ile İE için çözüm oluşturabiliyoruz. Tam karşılamasa da desteği sağlaması büyük ölçüde işimizi görüyor.</p>
+<p>Uygulamada filtre bazı sorunlar neden oluyor. Bunlardan birisi renk geçişi kullanılan bir tanımın ezilmesi veya sıfırlanması sırasında normal renk geçişini</p>
+<div class="codehilite"><pre><span class="nc">.deneme</span><span class="p">{</span>
+
+<span class="k">background</span><span class="o">:</span> <span class="k">none</span>
+
+<span class="o">//</span> <span class="n">veya</span>
+
+<span class="k">background</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+
+
+<p>tanımı sıfırlıyor veya ezebiliyor iken filter’ı sıfırlamak için farklı bir yol izlememiz gerekiyor. </p>
+<div class="codehilite"><pre><span class="nt">filter</span><span class="o">:</span> <span class="nt">-</span><span class="o">;</span>
+</pre></div>
+
+
+<p>veya</p>
+<div class="codehilite"><pre><span class="nt">filter</span><span class="o">:</span> <span class="nt">progid</span><span class="nd">:DXImageTransform</span><span class="nc">.Microsoft.gradient</span><span class="o">(</span><span class="nt">enabled</span> <span class="o">=</span> <span class="nt">false</span><span class="o">);</span>
+</pre></div>
+
+
+<p>İkincisi daha anlaşılır geldi bana.</p>
+<p>Genelde bu bazı sorunlara neden oluyor. Renk geçişi tanımlanmış bir öğenin seçili veya :hover gibi farklı durumlarında tek renk tanımı veya transparan ardalan tanımı yapılırken genelde filtre tanımı unutuluyor ve buda İE’de soruna neden oluyor. Aman dikkat.</p>
+<p>Sağlıcakla Kalın.</p>
+<h2>Kaynaklar</h2>
+<ul>
+<li>
+<p><a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/">http://fatihhayrioglu.com/css-renk-gecisleri-gradients/</a></p>
+</li>
+<li>
+<p><a href="http://caniuse.com/#search=gradient">http://caniuse.com/#search=gradient</a></p>
+</li>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx</a></p>
+</li>
+<li>
+<p><a href="http://stackoverflow.com/a/3749340/296373">http://stackoverflow.com/a/3749340/296373</a></p>
+</li>
+</ul><p><a href="./ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/#disqus_thread">yorum var</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Diğer yazılar</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="./css3-plan-modulleri/" rel="bookmark"
+                           title="Permalink to CSS3 Plan Modülleri">CSS3 Plan Modülleri</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-07-10T12:17:00">
                 Wed 10 July 2013
         </abbr>
@@ -88,92 +168,12 @@
 <p>etiketler: <a href="./tag/css3.html">CSS3</a><a href="./tag/plan.html">plan</a><a href="./tag/css3-coklu-kolonlar.html">css3 çoklu kolonlar</a><a href="./tag/css3-esnek-kutular.html">css3 esnek kutular</a><a href="./tag/css3-izgara-modulu.html">css3 ızgara modulü</a><a href="./tag/css3-bolgeler-modulu.html">css3 bölgeler modülü</a><a href="./tag/css3-istisnalar-modulu.html">css3 istisnalar modülü</a></p>
 
 
-</footer><!-- /.post-info --><p>CSS3 plan modülleri hala üzerinde çalışmaya devam edilen yapılardır. CSS3 plan yapılarını kökten değiştirecek ve ihtiyaçları tam karşılayacak şekilde değişikliklere gidiyor. Henüz gelişme aşamasındaki bu yaklaşımlar hakkında biriz bilgi sahibi olalım. Daha önce bahsettiğimiz ve burada genel manası ile sizlere bahsedeceğim modüller var. Daha önceki makalelerimde çoklu kolonlar(multi column layout) ve Esnek kutu yerleşimi(flexible box layout) konularını ilgili makalelerinden daha detaylı bilgiyi edine bilirsiniz.</p>
-<h2>CSS3 Çoklu Kolonlar(multi column) Modülü</h2>
-<p>Bu modülün tamamlanmış ve tüm yeni nesil tarayıcılar tarafından desteklenmektedir. CSS3 plan modülleri arasında öğrenilmeye başlanacak en iyi modüldür.</p>
-<p>Detaylı bilgi için <a href="http://fatihhayrioglu.com/css3-coklu-kolonlar/">http://fatihhayrioglu.com/css3-coklu-kolonlar/</a></p>
-<h2>CS3 Esnek Kutu (flexible box) Modülü</h2>
-<p>Esnek kutu modeli yeni planlama modülleri arasında en çok isminden söz ettiren modül. Bazı karışık plan sorunlarına güzel çözümler üretmektedir.</p>
-<p>Detaylı bilgi için  <a href="http://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/">http://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/</a></p>
-<h2>CSS3 Izgara(Grid) Modülü</h2>
-<p>CSS ızgara modülünü Microsoft önerdi ve şu an kararlı bir şekilde çalışıyor. İnternet Explorer 10 ile test edebileceğimiz bir modül. </p>
-<p>Izgara Düzeni; sayfa veya uygulamaları büyük bloklara bölmeye yarayan bir modüldür. Bu bölme işlemi tablo düzeni gibi satır ve sütunlara bölerek yapar. </p>
-<p>Tablo kullanımına benzese de herhangi bir fiziksel html elemanına(table, td ve tr gibi.) ihtiyacı olmaması farklı çözünürlükteki araçlar uyumlu yapıları olmasını sağlıyor.</p>
-<p><img alt="image alt text" src="https://lh3.googleusercontent.com/tg0fRkWdz5LW0-orjNt6KV87DIeKKT9KfK182C7LiiM4ghtjU8clOlVOARQE_v2rxOxRDECgaBzBWBNiCNiZXXIC83527EgKgyQTn4uEOp4QeW1XN92dC7VXDA" /></p>
-<ul>
-<li>
-<p><a href="http://www.w3.org/TR/css3-grid-layout/">http://www.w3.org/TR/css3-grid-layout/</a></p>
-</li>
-<li>
-<p><a href="http://24ways.org/2012/css3-grid-layout/">http://24ways.org/2012/css3-grid-layout/</a></p>
-</li>
-<li>
-<p><a href="http://hugogiraudel.com/2013/04/04/css-grid-layout/">http://hugogiraudel.com/2013/04/04/css-grid-layout/</a></p>
-</li>
-<li>
-<p><a href="http://msdn.microsoft.com/en-us/library/ie/hh673533(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/ie/hh673533(v=vs.85).aspx</a></p>
-</li>
-<li>
-<p><a href="http://css-tricks.com/almanac/properties/g/grid/">http://css-tricks.com/almanac/properties/g/grid/</a></p>
-</li>
-<li>
-<p><a href="http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html">http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html</a> </p>
-</li>
-</ul>
-<h2>CSS3 Bölgeler (Regions) Modülü</h2>
-<p>CSS3 Bölgeler modülü Adobe tarafından üretilip w3c’ye önerilen bir modül. Tarayıcı desteği konusunda sıkıntılı bir modül. Sadece İnternet Explorer 10’un desteği var şu an. Karışık yapılı planlamaları karşılayabilecek bir modül. Dergi ,gazete ve test kitabı benzeri planlamalar için gayet başarılı bir modül. Bu modülü kullanarak çok çekici sayfalar oluşturulabilir.</p>
-<p><img alt="image alt text" src="https://lh6.googleusercontent.com/cOMC8CFYufbAVW6BewUVQXQUTHunnCoM_4NwHg3GJ3sHUP3JoOKN6pd7aienJ6p-CZBcDkTKYK7vValnfpiA2jN-AW7Qb9U_hwg8FxcGYXm2hmSYDQOlTrWevQ" /></p>
-<ul>
-<li>
-<p><a href="http://net.tutsplus.com/tutorials/html-css-techniques/diving-into-css-regions/">http://net.tutsplus.com/tutorials/html-css-techniques/diving-into-css-regions/</a></p>
-</li>
-<li>
-<p><a href="http://msdn.microsoft.com/en-us/library/ie/hh673537(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/ie/hh673537(v=vs.85).aspx</a></p>
-</li>
-<li>
-<p><a href="http://blogs.adobe.com/webplatform/category/features/css-regions/">http://blogs.adobe.com/webplatform/category/features/css-regions/</a></p>
-</li>
-<li>
-<p><a href="http://www.adobe.com/devnet/html5/articles/css3-regions.html">http://www.adobe.com/devnet/html5/articles/css3-regions.html</a></p>
-</li>
-<li>
-<p><a href="http://galjot.si/css-regions">http://galjot.si/css-regions</a></p>
-</li>
-<li>
-<p><a href="http://css-tricks.com/content-folding/">http://css-tricks.com/content-folding/</a></p>
-</li>
-</ul>
-<h2>CSS3 İstisna (Exclusions) Modülü</h2>
-<p>CSS3 İstisnalar ve şekiller modülü ile yazılar resimlerin etrafında veya içerisinde sarılabiliyoruz. </p>
-<p><img alt="image alt text" src="https://lh3.googleusercontent.com/JXuDGguZWQC8-Tidk0jGIo17zrvh0XJo3ClbOj-cyI-O1CJKNNQwO_8lRQGtjDf4U3GUxjFsuzfFFLID5_lNEyrQqypZCrXWFvcA-m_7LzamWSz6QmuwIV1IMg" /></p>
-<ul>
-<li>
-<p><a href="http://dev.w3.org/csswg/css-exclusions/">http://dev.w3.org/csswg/css-exclusions/</a></p>
-</li>
-<li>
-<p><a href="http://www.techrepublic.com/blog/webmaster/experiment-with-css3-exclusions-and-shapes-module/2586">http://www.techrepublic.com/blog/webmaster/experiment-with-css3-exclusions-and-shapes-module/2586</a></p>
-</li>
-<li>
-<p><a href="http://blog.digitalbackcountry.com/2012/03/experimenting-with-css-exclusions/">http://blog.digitalbackcountry.com/2012/03/experimenting-with-css-exclusions/</a></p>
-</li>
-<li>
-<p><a href="http://adobe.github.io/web-platform/samples/css-exclusions/">http://adobe.github.io/web-platform/samples/css-exclusions/</a></p>
-</li>
-</ul>
-<h2>Sonuç</h2>
-<p>Web alemi geliştikçe ve farklı mecralara yayıldıkça farklı sayfa planlarına ihtiyaç duyulmaktadır. CSS3 bu konuda çabalıyor, ancak bana göre tüm isteklere bir çözüm bulmak zor. CSS3’ün bir çok yeni özelliği tarayıcılar tarafından desteklenmekte iken bazı planlama modülleri destek ve gelişme açısından geride kalmaktadır. </p>
-<p>Ben daha önce desteği fazla olan çoklu kolan ve esnek kutu modelini anlatmıştım. Izgara modülü, Bölgeler ve İsitisnalar modülleri henüz yeterliliklerini kabul ettiremedikleri için sadece biraz bahsedip geçtim. İleride bu modüller gelişip desteğini arttırırsa detaylı yazılarını yazabilirim.</p>
-<p>Kalın sağlıcakla</p><p><a href="./css3-plan-modulleri/#disqus_thread">yorum var</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Diğer yazılar</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+</footer><!-- /.post-info -->
+                <p>CSS3 plan modülleri hala üzerinde çalışmaya devam edilen yapılardır. CSS3 plan yapılarını kökten değiştirecek ve ihtiyaçları tam karşılayacak şekilde değişikliklere gidiyor. Henüz gelişme aşamasındaki bu yaklaşımlar hakkında biraz bilgi sahibi olalım. Daha önce bahsettiğimiz ve burada genel manası ile sizlere bahsedeceğim modüller var. Daha önceki makalelerimde çoklu kolonlar(multi column ...</p>
+                <a class="readmore" href="./css3-plan-modulleri/">devamını oku</a>
+                <p><a href="./css3-plan-modulleri/#disqus_thread">yorum var</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -483,46 +483,6 @@ yetişir. Ben aşağıda sıraladığım bir çok aracı kullandım. Bazıların
 bu yazıyı yazarken araştırırken buldum ...</p>
                 <a class="readmore" href="./css3-cevrimici-araclari/">devamını oku</a>
                 <p><a href="./css3-cevrimici-araclari/#disqus_thread">yorum var</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href="./css3-javascriptten-rol-caliyor/" rel="bookmark"
-                           title="Permalink to CSS3 Javascript’ten Rol (Ç)alıyor">CSS3 Javascript&#8217;ten Rol (Ç)alıyor</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-07-31T15:39:00">
-                Tue 31 July 2012
-        </abbr>
-
-        
-        <address class="vcard author">
-                <a class="url fn" href="./author/fatih.html">Fatih</a> yazdı.
-        </address>
-        
-<p><a href="./category/css.html">CSS</a> kategorisi. </p>
-<p>etiketler: <a href="./tag/checked.html">:checked</a><a href="./tag/target.html">:target</a><a href="./tag/bitisik-kardes-seciciler.html">bitişik kardeş seçiciler</a><a href="./tag/css3.html">css3</a><a href="./tag/etkinlik.html">Etkinlik</a><a href="./tag/genel-kardes-seciciler.html">Genel Kardeş Seçiciler</a><a href="./tag/javascript.html">Javascript</a><a href="./tag/kardes-seciciler.html">kardeş seçiciler</a></p>
-
-
-</footer><!-- /.post-info -->
-                <p>Geçen haftasonu c.tesi günü(28 Temmuz 2012) <a href="http://jstanbul.org/2012/">jstanbul etkinliğinde</a>
-sunduğum “CSS3 Javascript’ten Rol Çalıyor” makalesidir. Etkinlikte
-internet erişimim olmadığı için örnekleri gösterememiştim, burada
-bağlantıları da paylaşıyorum umarım yararlı olur.</p>
-<p>Sunuma erişmek isteyenlere <a href="https://docs.google.com/presentation/d/13cNTBiY4ewyRpCwmKD_CyKgMs3z4md27YH-ZcVtubcA/edit">sunumun linki.</a></p>
-<p>Bu başlık şöyle çıktı; Hasan Yalçın’ın “<a href="http://www.hasanyalcin.com/e-kitap-modern-web-tasarimi/">Modern Web Tasarımı</a>” kitabı
-için HTML5 ve ...</p>
-                <a class="readmore" href="./css3-javascriptten-rol-caliyor/">devamını oku</a>
-                <p><a href="./css3-javascriptten-rol-caliyor/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
             </article></li>
         

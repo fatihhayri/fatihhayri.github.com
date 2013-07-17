@@ -73,8 +73,88 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././iede-textareada-enter-calismiyor/">IE&#039;de Textarea&#039;da Enter çalışmıyor</a></h1> 
+                    <h1 class="entry-title"><a href=".././ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/">İE için renk geçişi çözümü filtre tanımını sıfırlamak</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-07-17T12:05:00">
+                Wed 17 July 2013
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href=".././category/css.html">CSS</a> kategorisi. </p>
+<p>etiketler: <a href=".././tag/css.html">css</a><a href=".././tag/css3.html">css3</a><a href=".././tag/renk-gecisi.html">renk-geçişi</a><a href=".././tag/filtre.html">filtre</a><a href=".././tag/hata-ayiklama.html">hata-ayıklama</a><a href=".././tag/sifirlama.html">sıfırlama</a></p>
+
+
+</footer><!-- /.post-info --><p>CSS3 ile gelen güzel özelliklerden birisi <a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/">renk geçişleri</a>. Bu güzel özelliği kullanmamızdaki en büyük engel İE’nin bu özelliği İE 10 sürümünde destekliyor olması. Ancak farklı bir yöntem ile bu desteği İE’nin tüm sürümlerine kazandırabiliyoruz. <strong>filtre tanımı</strong>. filtre tanımı yardımı ile İE için çözüm oluşturabiliyoruz. Tam karşılamasa da desteği sağlaması büyük ölçüde işimizi görüyor.</p>
+<p>Uygulamada filtre bazı sorunlar neden oluyor. Bunlardan birisi renk geçişi kullanılan bir tanımın ezilmesi veya sıfırlanması sırasında normal renk geçişini</p>
+<div class="codehilite"><pre><span class="nc">.deneme</span><span class="p">{</span>
+
+<span class="k">background</span><span class="o">:</span> <span class="k">none</span>
+
+<span class="o">//</span> <span class="n">veya</span>
+
+<span class="k">background</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+
+
+<p>tanımı sıfırlıyor veya ezebiliyor iken filter’ı sıfırlamak için farklı bir yol izlememiz gerekiyor. </p>
+<div class="codehilite"><pre><span class="nt">filter</span><span class="o">:</span> <span class="nt">-</span><span class="o">;</span>
+</pre></div>
+
+
+<p>veya</p>
+<div class="codehilite"><pre><span class="nt">filter</span><span class="o">:</span> <span class="nt">progid</span><span class="nd">:DXImageTransform</span><span class="nc">.Microsoft.gradient</span><span class="o">(</span><span class="nt">enabled</span> <span class="o">=</span> <span class="nt">false</span><span class="o">);</span>
+</pre></div>
+
+
+<p>İkincisi daha anlaşılır geldi bana.</p>
+<p>Genelde bu bazı sorunlara neden oluyor. Renk geçişi tanımlanmış bir öğenin seçili veya :hover gibi farklı durumlarında tek renk tanımı veya transparan ardalan tanımı yapılırken genelde filtre tanımı unutuluyor ve buda İE’de soruna neden oluyor. Aman dikkat.</p>
+<p>Sağlıcakla Kalın.</p>
+<h2>Kaynaklar</h2>
+<ul>
+<li>
+<p><a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/">http://fatihhayrioglu.com/css-renk-gecisleri-gradients/</a></p>
+</li>
+<li>
+<p><a href="http://caniuse.com/#search=gradient">http://caniuse.com/#search=gradient</a></p>
+</li>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx</a></p>
+</li>
+<li>
+<p><a href="http://stackoverflow.com/a/3749340/296373">http://stackoverflow.com/a/3749340/296373</a></p>
+</li>
+</ul><p><a href=".././ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/#disqus_thread">yorum var</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Diğer yazılar</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././iede-textareada-enter-calismiyor/" rel="bookmark"
+                           title="Permalink to IE'de Textarea'da Enter çalışmıyor">IE&#039;de Textarea&#039;da Enter çalışmıyor</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2010-09-30T21:22:00">
                 Thu 30 September 2010
         </abbr>
@@ -88,7 +168,8 @@
 <p>etiketler: <a href=".././tag/enter-calismiyor.html">enter çalışmıyor</a><a href=".././tag/ie.html">ie</a><a href=".././tag/sifirlama.html">sıfırlama</a><a href=".././tag/white-space.html">white-space</a><a href=".././tag/white-spacenormal.html">white-space:normal</a><a href=".././tag/white-spacepre.html">white-space:pre</a></p>
 
 
-</footer><!-- /.post-info --><p>Projede karşılaştığım sorunlardan biri textarea elemanı içinde enter’a
+</footer><!-- /.post-info -->
+                <p>Projede karşılaştığım sorunlardan biri textarea elemanı içinde enter’a
 basınca alt satıra geçmiyordu. Diğer tarayıcılarda sorun yokken ie
 sürümlerinde böyle bir sorun çıkıyordu.</p>
 <p>Sonra incelediğimde ve araştırdığımda bu sorunun benim kullandığım
@@ -101,41 +182,22 @@ sıfırlama kodundaki bir durumdan kaynaklandığını gördüm.</p>
 
 
 <p>Örneği görmek için <a href="static/dokumanlar/textareada_enter_calistirmak.html">tıklayınız.</a></p>
-<p>Sıfırlama kodundaki yukarıdaki kodda white-space:normal; tanımlaması
-sorunu çıkarıyor. Bu kodu çıkarınca sorun ortadan kalkıyor. Ancak yinede
-ie’nin textarea’daki white-space:normal; kullanımında sorun oluşturduğu
-gerçeğini bu ortadan kaldırmıyor.</p>
-<p>Bu durumu halletmenin daha düzgün bir yolu var</p>
-<div class="codehilite"><pre><span class="nt">textarea</span> <span class="p">{</span> 
-    <span class="k">white-space</span><span class="o">:</span><span class="n">pre</span><span class="p">;</span> 
-<span class="p">}</span>
-</pre></div>
-
-
-<p>Örneği görmek için <a href="static/dokumanlar/textareada_enter_calistirmak2.html">tıklayınız.</a></p>
-<p>Tanımıda bu sorunu gidermek için yeterlidir.</p>
-<h2>Kaynaklar</h2>
-<ul>
-<li><a href="http://stackoverflow.com/questions/1282202/enter-does-not-work-in-textarea-in-internet-explorer-8">http://stackoverflow.com/questions/1282202/enter-does-not-work-in-textarea-in-internet-explorer-8</a></li>
-<li><a href="http://www.fourmilab.ch/fourmilog/archives/2005-04/000510.html">http://www.fourmilab.ch/fourmilog/archives/2005-04/000510.html</a></li>
-<li><a href="http://stackoverflow.com/questions/737614/textarea-css-ie7-and-enter-key-creating-inline-space">http://stackoverflow.com/questions/737614/textarea-css-ie7-and-enter-key-creating-inline-space</a></li>
-</ul><p><a href=".././iede-textareada-enter-calismiyor/#disqus_thread">yorum var</a>.</p>
-                </article>
+<p>Sıfırlama kodundaki ...</p>
+                <a class="readmore" href=".././iede-textareada-enter-calismiyor/">devamını oku</a>
+                <p><a href=".././iede-textareada-enter-calismiyor/#disqus_thread">yorum var</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+        
+            </ol><!-- /#posts-list -->
+            
                 
-                    
 <p class="paginator">
     
     Page 1 / 1
     
 </p>
 
-                
-            </aside><!-- /#featured -->
-            
-        
-        
-        
-            </ol><!-- /#posts-list -->
             
             </section><!-- /#content -->
         

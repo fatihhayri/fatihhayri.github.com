@@ -73,8 +73,88 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././css3-gecis-efektleri-transitions/">CSS3 Geçiş Efektleri(Transitions)</a></h1> 
+                    <h1 class="entry-title"><a href=".././ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/">İE için renk geçişi çözümü filtre tanımını sıfırlamak</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-07-17T12:05:00">
+                Wed 17 July 2013
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href=".././category/css.html">CSS</a> kategorisi. </p>
+<p>etiketler: <a href=".././tag/css.html">css</a><a href=".././tag/css3.html">css3</a><a href=".././tag/renk-gecisi.html">renk-geçişi</a><a href=".././tag/filtre.html">filtre</a><a href=".././tag/hata-ayiklama.html">hata-ayıklama</a><a href=".././tag/sifirlama.html">sıfırlama</a></p>
+
+
+</footer><!-- /.post-info --><p>CSS3 ile gelen güzel özelliklerden birisi <a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/">renk geçişleri</a>. Bu güzel özelliği kullanmamızdaki en büyük engel İE’nin bu özelliği İE 10 sürümünde destekliyor olması. Ancak farklı bir yöntem ile bu desteği İE’nin tüm sürümlerine kazandırabiliyoruz. <strong>filtre tanımı</strong>. filtre tanımı yardımı ile İE için çözüm oluşturabiliyoruz. Tam karşılamasa da desteği sağlaması büyük ölçüde işimizi görüyor.</p>
+<p>Uygulamada filtre bazı sorunlar neden oluyor. Bunlardan birisi renk geçişi kullanılan bir tanımın ezilmesi veya sıfırlanması sırasında normal renk geçişini</p>
+<div class="codehilite"><pre><span class="nc">.deneme</span><span class="p">{</span>
+
+<span class="k">background</span><span class="o">:</span> <span class="k">none</span>
+
+<span class="o">//</span> <span class="n">veya</span>
+
+<span class="k">background</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+
+
+<p>tanımı sıfırlıyor veya ezebiliyor iken filter’ı sıfırlamak için farklı bir yol izlememiz gerekiyor. </p>
+<div class="codehilite"><pre><span class="nt">filter</span><span class="o">:</span> <span class="nt">-</span><span class="o">;</span>
+</pre></div>
+
+
+<p>veya</p>
+<div class="codehilite"><pre><span class="nt">filter</span><span class="o">:</span> <span class="nt">progid</span><span class="nd">:DXImageTransform</span><span class="nc">.Microsoft.gradient</span><span class="o">(</span><span class="nt">enabled</span> <span class="o">=</span> <span class="nt">false</span><span class="o">);</span>
+</pre></div>
+
+
+<p>İkincisi daha anlaşılır geldi bana.</p>
+<p>Genelde bu bazı sorunlara neden oluyor. Renk geçişi tanımlanmış bir öğenin seçili veya :hover gibi farklı durumlarında tek renk tanımı veya transparan ardalan tanımı yapılırken genelde filtre tanımı unutuluyor ve buda İE’de soruna neden oluyor. Aman dikkat.</p>
+<p>Sağlıcakla Kalın.</p>
+<h2>Kaynaklar</h2>
+<ul>
+<li>
+<p><a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/">http://fatihhayrioglu.com/css-renk-gecisleri-gradients/</a></p>
+</li>
+<li>
+<p><a href="http://caniuse.com/#search=gradient">http://caniuse.com/#search=gradient</a></p>
+</li>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx</a></p>
+</li>
+<li>
+<p><a href="http://stackoverflow.com/a/3749340/296373">http://stackoverflow.com/a/3749340/296373</a></p>
+</li>
+</ul><p><a href=".././ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/#disqus_thread">yorum var</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Diğer yazılar</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././css3-gecis-efektleri-transitions/" rel="bookmark"
+                           title="Permalink to CSS3 Geçiş Efektleri(Transitions)">CSS3 Geçiş Efektleri(Transitions)</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-01-15T11:37:00">
                 Tue 15 January 2013
         </abbr>
@@ -88,263 +168,19 @@
 <p>etiketler: <a href=".././tag/css3.html">css3</a><a href=".././tag/gecis-efektleri.html">geçiş-efektleri</a><a href=".././tag/transitions.html">transitions</a><a href=".././tag/animasyon.html">animasyon</a></p>
 
 
-</footer><!-- /.post-info --><h2>Genel Tanım</h2>
+</footer><!-- /.post-info -->
+                <h2>Genel Tanım</h2>
 <p>CSS anlık geçişleri bünyesinde barındırıyordu. Birçok uygulamamızda bir
 bağlantının üzerine geldiğinde bağlantının rengi değiştiriyor,
 düğmemizin ardalan rengini değiştiriyorduk.</p>
 <p>CSS3 ile birlikte ani geçişlere artı olarak yeni merhale merhale
 geçişler eklenmiştir. Geçişler yavaş yavaş olduğu gibi uzun uzadıya
 geçişlerde mevcuttur. Durumu daha iyi anlayabilmek için yukarıda
-bahsettiğimiz gibi bir fare imlecinin bağlantı üzerine geldiğinde renk
-değişmesini anlık değil merhale merhale değiştirelim.</p>
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/IpEnx?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
-
-<p>Renk geçişi belli bir zaman aralığına yayılacaktır ve iki renk
-arasındaki geçişte ara renkler görünecektir. Bu geçişe bazı efektlerde
-ekleyebiliyoruz. Geçişin merhale merhale olması göze daha hoş
-gelecektir.</p>
-<p>Bu işleri daha önce flash veya javascript yapıyorken artık CSS3 yardımı
-ile yapabilecek olmamız çok güzel bir gelişme. Basit tek satır
-kod(farklı tarayıcılar için yazılan önekler zamanla teke inecektir.) ile
-bu işi yapmak ayrı bir kolaylık tabi.</p>
-<div class="codehilite"><pre><span class="nt">transition</span><span class="o">:</span> <span class="nt">property</span> <span class="nt">duration</span> <span class="nt">timing-function</span> <span class="nt">delay</span><span class="o">;</span>
-</pre></div>
-
-
-<h2>Transtion Özellikleri</h2>
-<p>Geçiş efektlerini uygulamak için aşağıdaki özelliklerden yararlanacağız.</p>
-<ul>
-<li>transition-property</li>
-<li>transition-duration</li>
-<li>transition-delay</li>
-<li>transition-timing-function</li>
-<li>transition</li>
-</ul>
-<p>Şimdi bu özellikleri tek tek inceleyelim.</p>
-<h3>Geçiş Efekti Hangi Özellik İle Yapılacağını Belirleme(transition-property)</h3>
-<p>Uygulanan geçiş efektinin elemanın hangi özelliği üzerinden yapılacağını
-belirlemek için transition-property özelliğini kullanırız.</p>
-<p class="cssozelliktanimi"><strong>Yapısı:</strong> transition-property: none | all | [ \&lt;IDENT> ] [ ',’ \&lt;IDENT>]* <br />
-<strong>Aldığı Değerler:</strong> none | all | [ \&lt;IDENT> ] [ ',’ \&lt;IDENT> ]* <br />
-<strong>Başlangıç değeri:</strong> all <br />
-<strong>Uygulanabilen elementler:</strong> tüm elementler ve :before ve :after elementlerine <br />
-<strong>Kalıtsallık:</strong> Yok</p>
-<p>Örneğin color değeri geçiş uygulanacak elemanın başlangıç ve son rengi
-arasında bir geçiş olacağını gösterir.</p>
-<p>all değeri tüm tanımlarda geçiş yapılacağı anlamındadır.</p>
-<div class="codehilite"><pre><span class="nt">a</span><span class="p">{</span>
-    <span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">property</span><span class="o">:</span> <span class="k">color</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
-    <span class="k">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<h3>Geçiş Efekti Uzunluğunu Belirleme (transition-duration)</h3>
-<p>Geçiş efektlerini uygularken verdiğimiz efektin ne kadar süre ile devam
-edeceğini ayarlayabiliyoruz. Bu ayarlamayı transition-duration özelliği
-yapıyoruz.</p>
-<p class="cssozelliktanimi"><strong>Yapısı :</strong> transition-duration: \&lt;zaman> [, \&lt;zaman>]* <br />
-<strong>Aldığı Değerler :</strong> \&lt;zaman> [, \&lt;zaman>]* <br />
-<strong>Başlangıç değeri:</strong> 0 <br />
-<strong>Uygulanabilen elementler:</strong> tüm elementler ve :before ve :after elementlerine <br />
-<strong>Kalıtsallık:</strong> Yok</p>
-<p>0 değeri geçişin hemen olacağı anlamına gelir. Eksi değerler 0 olarak
-yorumlanır.</p>
-<div class="codehilite"><pre><span class="nt">a</span><span class="p">{</span>
-    <span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">property</span><span class="o">:</span> <span class="k">color</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span><span class="m">0.5s</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
-    <span class="k">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<h3>transition-delay</h3>
-<p>Uygulanan geçiş efektinin ne kadar zaman sonra başlayacağını belirler.
-Belirlenen zamana kadar animasyonu durdurur ve sonra animasyon başlar.</p>
-<div class="codehilite"><pre><span class="nt">a</span><span class="p">{</span>
-    <span class="k">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">property</span><span class="o">:</span> <span class="k">color</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span><span class="m">0.5s</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">0.5s</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
-    <span class="k">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<p>Animasyonumuz 0.5 saniye sonra başlayacaktır.</p>
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/bkFsm?type=css&amp;height=250" id="cp_embed_hgplm"></iframe>
-
-<h3>transition-timing-function</h3>
-<p>Oluşturacağımız geçişlere daha estetik geçişler sağlamak için kullanılan
-fonksiyonlardır. CSS3 ile birlikte gelen transition efekti başlangıç
-tanımı doğrusal bir geçiştir. Biz bu özelliğe ease, ease-in, ease-out,
-ease-in-out ve cubic-bezier değerlerini tanımlayabiliyoruz. cubic-bezier
-tanımı ise geçişleri kendimize göre tanımlama imkanı veriyor. Kendi
-zaman çizgimizi hazırlamak(cubic-bezier) biraz zor olsa da internet
-üzerindeki bazı araçlar yardımı ile bu işte kolaylaştırılmıştır.</p>
-<p>Daha önce sizlerle paylaştığım bu araçlar</p>
-<ul>
-<li><a href="http://matthewlein.com/ceaser/">http://matthewlein.com/ceaser/</a></li>
-<li><a href="http://easings.net/">http://easings.net/</a></li>
-<li><a href="http://jeremyckahn.github.com/stylie/">http://jeremyckahn.github.com/stylie/</a></li>
-</ul>
-<p>ile transition-timing-function özelliğini kullanmak bir zevk haline
-geliyor.</p>
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/Alapk?type=css&amp;height=250" id="cp_embed_hgplm"></iframe>
-
-<h3>transition kısayolu</h3>
-<p>Yukarıda tek tek ayrı ayrı her özelliği tanımlayabildiğimiz gibi teek
-bir tannımlama ile bunları kısa bir şekilde tanımlamak da mümkün.</p>
-<div class="codehilite"><pre><span class="nt">transition-property</span><span class="o">:</span> <span class="nt">width</span><span class="o">;</span>
-<span class="nt">transition-duration</span><span class="nd">:0</span><span class="nc">.5s</span><span class="o">;</span>
-<span class="nt">transition-delay</span><span class="o">:</span> <span class="nt">0</span><span class="nc">.5s</span><span class="o">;</span>
-<span class="nt">transition-timing-function</span><span class="nd">:ease-in-out</span><span class="o">;</span>
-</pre></div>
-
-
-<p>Yukarıdaki son örnekte geçiş tanımlarımız 4 adet idi. Biz burada bunları
-tek bir tanımda toplayalım.</p>
-<div class="codehilite"><pre><span class="nt">transition</span><span class="o">:</span> <span class="nt">width</span> <span class="nt">0</span><span class="nc">.5s</span> <span class="nt">ease-in-out</span> <span class="nt">0</span><span class="nc">.5s</span><span class="o">;</span>
-</pre></div>
-
-
-<p>Görüldüğü gibi kodumuz daha kısa bir hal aldı. bundan sonra bu şekilde
-kullanmayı tercih edeceğim.</p>
-<h3>Çoklu Geçiş Kullanımı</h3>
-<p>Yukarıda yaptığımız gibi tek bir özellik üzerinden geçiş efekti
-uygulayabildiğimiz gibi virgül ile ayırmak kaydı ile birden fazla geçiş
-efekti de uygulayabiliriz.</p>
-<div class="codehilite"><pre><span class="nt">input</span><span class="p">{</span>
-<span class="err">  </span> <span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
-<span class="err">  </span> <span class="k">background-color</span><span class="o">:</span><span class="m">#788182</span><span class="p">;</span>
-<span class="err">  </span> <span class="k">border</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
-<span class="err">  </span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">5px</span><span class="p">;</span>
-<span class="err">  </span> <span class="k">width</span><span class="o">:</span><span class="m">100px</span><span class="p">;</span>
-<span class="err">  </span> <span class="k">padding</span><span class="o">:</span><span class="m">5px</span> <span class="m">10px</span><span class="p">;</span>
-<span class="err">  </span> <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
-<span class="err">  </span> <span class="n">transition</span><span class="o">:</span> <span class="k">width</span> <span class="m">.5s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">out</span><span class="o">,</span> <span class="k">background</span> <span class="m">.3s</span> <span class="n">ease</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">input</span><span class="nd">:focus</span> <span class="p">{</span>
-<span class="err">  </span> <span class="k">width</span><span class="o">:</span><span class="m">250px</span><span class="p">;</span>
-<span class="err">  </span> <span class="k">background-color</span><span class="o">:</span><span class="m">#50ebd6</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<p>Son örneğimizde arama alanına odaklandığımızda genişliğini ve ardalan
-rengini geçiş efekti ile değiştirdi.</p>
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/iorBc?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
-
-<h2>Geçiş Efektini Tetiklemek</h2>
-<p>Geçiş efektlerini tetiklemek için genelde :hover sözde sınıfı kullanılsa
-da :active, :target, :focus gibi sözde sınıfları da kullanılabilir.</p>
-<p>Ayrıca javascript ile DOM’a yapılan müdahaleler de buna eklenebilir.</p>
-<div class="codehilite"><pre><span class="nt">a</span><span class="p">{</span>
-<span class="err"> </span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span>
-<span class="err"> </span><span class="k">background-color</span><span class="o">:</span><span class="m">#c4342f</span><span class="p">;</span>
-<span class="err"> </span><span class="k">padding</span><span class="o">:</span><span class="m">5px</span> <span class="m">10px</span><span class="p">;</span>
-<span class="err"> </span><span class="k">width</span><span class="o">:</span><span class="m">100px</span><span class="p">;</span>
-<span class="err"> </span><span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
-<span class="err"> </span><span class="n">transition</span><span class="o">:</span> <span class="k">background-color</span> <span class="m">2s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">out</span> <span class="m">1s</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">a</span><span class="nc">.tetikle</span> <span class="p">{</span>
-<span class="err"> </span><span class="k">background-color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<p>Javascript ilede bu bağlantıya tetikle diye bir sınıf tanımlayalım.</p>
-<div class="codehilite"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">&#39;tetikle&#39;</span><span class="p">;</span>
-</pre></div>
-
-
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DGvlB?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
-
-<h2>Javascript ile Geçişin Bittiğinin Kontrolü</h2>
-<p>Javascript ile geçiş efektinin bittiğini kontrol etmek çok basit.</p>
-<div class="codehilite"><pre><span class="nx">myElement</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;transitionend&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-<span class="c1">// geçiş efekti bttikten sonra bunu yap</span>
-<span class="p">},</span> <span class="kc">true</span><span class="p">);</span>
-</pre></div>
-
-
-<p>Geçiş efekti tamamlandığında transitionend foksiyonunu tetkilyecektir.</p>
-<h2>Tarayıcı Uyumu</h2>
-<p>CSS3 ile gelen bir çok özellik gibi geçiş efekti özelliklerinin de önek
-ve internet explorer sorunları mevcuttur.</p>
-<p class="tarayiciuyum"><strong>Tarayıcı Destekleme Listesi</strong><br />
-Firefox 4+ (-moz- öneki ile), 16+ öneksiz <br />
-Chrome 1+ (-webkit- öneki ile) <br />
-Safari 3.2+ (-webkit- öneki ile) <br />
-Opera 10.5 (-o- öneki ile), 12.10 öneksiz<br />
-İnternet Explorer 10+ <br />
-<strong>Mobil Tarayıcılar</strong> <br />
-iOS Safari 3.2+ (-webkit- öneki ile) <br />
-Opera Mobile 10+ (-o- öneki ile), 12.10 öneksiz <br />
-Android Browser 2.1+ (-webkit- öneki ile)</p>
-<p>İnternet Explorer 10 ile gelen geçiş efekti desteğini öneksiz
-eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
-özelliğin olmaması mevcut sitelerimizde bu özellikleri kullanmamız
-önündeki en büyük engeldir.</p>
-<h2>Kaynaklar</h2>
-<ul>
-<li><a href="http://www.w3.org/TR/css3-transitions/">http://www.w3.org/TR/css3-transitions/</a></li>
-<li><a href="http://www.alistapart.com/articles/understanding-css3-transitions/">http://www.alistapart.com/articles/understanding-css3-transitions/</a></li>
-<li><a href="https://developer.mozilla.org/en/CSS/CSS_transitions">https://developer.mozilla.org/en/CSS/CSS_transitions</a></li>
-<li><a href="http://24ways.org/2009/going-nuts-with-css-transitions">http://24ways.org/2009/going-nuts-with-css-transitions</a></li>
-<li><a href="http://www.impressivewebs.com/css3-transitions-without-hover/">http://www.impressivewebs.com/css3-transitions-without-hover/</a></li>
-<li><a href="http://www.css3.info/preview/css3-transitions/">http://www.css3.info/preview/css3-transitions/</a></li>
-<li><a href="http://samuli.hakoniemi.net/css3-transitions-are-we-there-yet/">http://samuli.hakoniemi.net/css3-transitions-are-we-there-yet/</a></li>
-<li><a href="http://css3.bradshawenterprises.com/transitions/">http://css3.bradshawenterprises.com/transitions/</a></li>
-<li><a href="http://www.joelambert.co.uk/morf/">http://www.joelambert.co.uk/morf/</a> (araç)</li>
-<li><a href="http://cubic-bezier.com/#.17,.67,.83,.67">http://cubic-bezier.com/</a> (araç)</li>
-<li><a href="http://www.roblaplaca.com/examples/bezierBuilder/">http://www.roblaplaca.com/examples/bezierBuilder/</a> (araç)</li>
-<li><a href="http://www.netzgesta.de/dev/cubic-bezier-timing-function.html">http://www.netzgesta.de/dev/cubic-bezier-timing-function.html</a> (araç)</li>
-<li><a href="http://slicescript.com/create-a-stylish-menu-with-css3-transitions/">http://slicescript.com/create-a-stylish-menu-with-css3-transitions/</a> (örnek menü)</li>
-<li><a href="http://www.kirupa.com/html5/looking_at_css3_transitions.htm">http://www.kirupa.com/html5/looking_at_css3_transitions.htm</a></li>
-<li><a href="http://bavotasan.com/2011/a-simple-fade-with-css3/">http://bavotasan.com/2011/a-simple-fade-with-css3/</a></li>
-<li><a href="http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/">http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/</a> (örnek)</li>
-<li><a href="http://caniuse.com/css-transitions">http://caniuse.com/css-transitions</a> (tarayıcı desteği)</li>
-<li><a href="http://www.opera.com/docs/specs/presto23/css/transitions/">http://www.opera.com/docs/specs/presto23/css/transitions/</a></li>
-<li><a href="http://www.adobe.com/devnet/html5/articles/using-css3-transitions-a-comprehensive-guide.html">http://www.adobe.com/devnet/html5/articles/using-css3-transitions-a-comprehensive-guide.html</a></li>
-<li><a href="http://smashinghub.com/css3-transitions-and-animations.htm">http://smashinghub.com/css3-transitions-and-animations.htm</a> (örnekler)</li>
-<li><a href="http://msdn.microsoft.com/en-us/library/ie/hh673535(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/ie/hh673535(v=vs.85).aspx</a></li>
-<li><a href="http://tv.adobe.com/watch/learn-dreamweaver-cs6/using-the-css-transitions-panel/?go=13279">http://tv.adobe.com/watch/learn-dreamweaver-cs6/using-the-css-transitions-panel/?go=13279</a></li>
-<li><a href="http://www.phpkodlari.com/css-dersleri/css3-transitions-ozelligi/">http://www.phpkodlari.com/css-dersleri/css3-transitions-ozelligi/</a></li>
-<li><a href="http://blogs.msdn.com/b/ie/archive/2011/11/21/adding-personality-with-css3-transitions-and-animations.aspx">http://blogs.msdn.com/b/ie/archive/2011/11/21/adding-personality-with-css3-transitions-and-animations.aspx</a></li>
-<li><a href="http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/#transitions">http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/#transitions</a></li>
-<li><a href="http://vimeo.com/49879139">http://vimeo.com/49879139</a> (video)</li>
-<li><a href="http://ricostacruz.com/jquery.transit/">http://ricostacruz.com/jquery.transit/</a> (jquery ile tüm tarayıcılar için)</li>
-<li><a href="http://www.netmagazine.com/tutorials/more-efficient-css3-transitions">http://www.netmagazine.com/tutorials/more-efficient-css3-transitions</a></li>
-<li><a href="http://proto.io/freebies/onoff/">http://proto.io/freebies/onoff/</a> (örnek)</li>
-<li><a href="http://geebart.com/blog/easy-css3-transitions-tutorial">http://geebart.com/blog/easy-css3-transitions-tutorial</a></li>
-<li><a href="http://webdesigncrowd.com/animated-navigation-css3-transitions-transforms/">http://webdesigncrowd.com/animated-navigation-css3-transitions-transforms/</a></li>
-<li><a href="http://davidwalsh.name/css-transitions">http://davidwalsh.name/css-transitions</a></li>
-<li><a href="http://css3.bradshawenterprises.com/transitions/">http://css3.bradshawenterprises.com/transitions/</a></li>
-<li><a href="http://www.webdesignerdepot.com/2012/12/how-to-use-the-css3-transition-property/">http://www.webdesignerdepot.com/2012/12/how-to-use-the-css3-transition-property/</a></li>
-<li><a href="http://www.problogdesign.com/coding/get-started-with-css3-transitions-today">http://www.problogdesign.com/coding/get-started-with-css3-transitions-today</a></li>
-<li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/">http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/</a></li>
-</ul><p><a href=".././css3-gecis-efektleri-transitions/#disqus_thread">yorum var</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Diğer yazılar</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+bahsettiğimiz gibi bir ...</p>
+                <a class="readmore" href=".././css3-gecis-efektleri-transitions/">devamını oku</a>
+                <p><a href=".././css3-gecis-efektleri-transitions/#disqus_thread">yorum var</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -667,46 +503,6 @@ benim orada gördüğüm bir uygulama idi.</p>
     <span class="k">border</span><span class="o">:</span> <span class="m">10px</span> <span class="k">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span> <span class="m">0 ...</span></pre></div>
                 <a class="readmore" href=".././saydam-kenar-cizgileri-olusturmak/">devamını oku</a>
                 <p><a href=".././saydam-kenar-cizgileri-olusturmak/#disqus_thread">yorum var</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href=".././css3-pointer-events-ozelligi/" rel="bookmark"
-                           title="Permalink to CSS3 pointer-events özelliği">CSS3 pointer-events özelliği</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2011-12-08T00:01:00">
-                Thu 08 December 2011
-        </abbr>
-
-        
-        <address class="vcard author">
-                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
-        </address>
-        
-<p><a href=".././category/haberler.html">Haberler</a> kategorisi. </p>
-<p>etiketler: <a href=".././tag/css3.html">css3</a><a href=".././tag/pointer-events.html">pointer-events</a><a href=".././tag/svg.html">svg</a></p>
-
-
-</footer><!-- /.post-info -->
-                <p>CSS3 ile gelen yeni özellikleri tararken ilginç ve güzel bir özellik ile
-karşılaştım. pointer-events özelliği. SVG ile birlikte uzun süredir
-kullanılan bu özellik CSS3 ile birlikte HTML elemanlarında uygulanıyor.</p>
-<p>Farenin işlevini yerine getirip getirmeyeceğini belirlemek için
-kullanılır. Örneğin bir menüde mevcut sayfayı gösteren menü elemanının
-tıklanma olayını kaldırabiliriz.</p>
-<p>pointer-event özelliği ...</p>
-                <a class="readmore" href=".././css3-pointer-events-ozelligi/">devamını oku</a>
-                <p><a href=".././css3-pointer-events-ozelligi/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
             </article></li>
         

@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-07-10T12:17:00+03:00</updated><entry><title>CSS3 Plan Modülleri</title><link href="http://www.fatihhayrioglu.com/css3-plan-modulleri/" rel="alternate"></link><updated>2013-07-10T12:17:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-07-10:css3-plan-modulleri/</id><summary type="html">&lt;p&gt;CSS3 plan modülleri hala üzerinde çalışmaya devam edilen yapılardır. CSS3 plan yapılarını kökten değiştirecek ve ihtiyaçları tam karşılayacak şekilde değişikliklere gidiyor. Henüz gelişme aşamasındaki bu yaklaşımlar hakkında biriz bilgi sahibi olalım. Daha önce bahsettiğimiz ve burada genel manası ile sizlere bahsedeceğim modüller var. Daha önceki makalelerimde çoklu kolonlar(multi column layout) ve Esnek kutu yerleşimi(flexible box layout) konularını ilgili makalelerinden daha detaylı bilgiyi edine bilirsiniz.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-07-17T12:05:00+03:00</updated><entry><title>İE için renk geçişi çözümü filtre tanımını sıfırlamak</title><link href="http://www.fatihhayrioglu.com/ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/" rel="alternate"></link><updated>2013-07-17T12:05:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-07-17:ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/</id><summary type="html">&lt;p&gt;CSS3 ile gelen güzel özelliklerden birisi &lt;a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/"&gt;renk geçişleri&lt;/a&gt;. Bu güzel özelliği kullanmamızdaki en büyük engel İE’nin bu özelliği İE 10 sürümünde destekliyor olması. Ancak farklı bir yöntem ile bu desteği İE’nin tüm sürümlerine kazandırabiliyoruz. &lt;strong&gt;filtre tanımı&lt;/strong&gt;. filtre tanımı yardımı ile İE için çözüm oluşturabiliyoruz. Tam karşılamasa da desteği sağlaması büyük ölçüde işimizi görüyor.&lt;/p&gt;
+&lt;p&gt;Uygulamada filtre bazı sorunlar neden oluyor. Bunlardan birisi renk geçişi kullanılan bir tanımın ezilmesi veya sıfırlanması sırasında normal renk geçişini&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.deneme&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+
+&lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;
+
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;veya&lt;/span&gt;
+
+&lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#f00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;tanımı sıfırlıyor veya ezebiliyor iken filter’ı sıfırlamak için farklı bir yol izlememiz gerekiyor. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;-&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;veya&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;progid&lt;/span&gt;&lt;span class="nd"&gt;:DXImageTransform&lt;/span&gt;&lt;span class="nc"&gt;.Microsoft.gradient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;enabled&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;false&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;İkincisi daha anlaşılır geldi bana.&lt;/p&gt;
+&lt;p&gt;Genelde bu bazı sorunlara neden oluyor. Renk geçişi tanımlanmış bir öğenin seçili veya :hover gibi farklı durumlarında tek renk tanımı veya transparan ardalan tanımı yapılırken genelde filtre tanımı unutuluyor ve buda İE’de soruna neden oluyor. Aman dikkat.&lt;/p&gt;
+&lt;p&gt;Sağlıcakla Kalın.&lt;/p&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/"&gt;http://fatihhayrioglu.com/css-renk-gecisleri-gradients/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://caniuse.com/#search=gradient"&gt;http://caniuse.com/#search=gradient&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx"&gt;http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/a/3749340/296373"&gt;http://stackoverflow.com/a/3749340/296373&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="css"></category><category term="css3"></category><category term="renk-geçişi"></category><category term="filtre"></category><category term="hata-ayıklama"></category><category term="sıfırlama"></category></entry><entry><title>CSS3 Plan Modülleri</title><link href="http://www.fatihhayrioglu.com/css3-plan-modulleri/" rel="alternate"></link><updated>2013-07-10T12:17:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-07-10:css3-plan-modulleri/</id><summary type="html">&lt;p&gt;CSS3 plan modülleri hala üzerinde çalışmaya devam edilen yapılardır. CSS3 plan yapılarını kökten değiştirecek ve ihtiyaçları tam karşılayacak şekilde değişikliklere gidiyor. Henüz gelişme aşamasındaki bu yaklaşımlar hakkında biraz bilgi sahibi olalım. Daha önce bahsettiğimiz ve burada genel manası ile sizlere bahsedeceğim modüller var. Daha önceki makalelerimde çoklu kolonlar(multi column layout) ve Esnek kutu yerleşimi(flexible box layout) konularını ilgili makalelerinden daha detaylı bilgiyi edine bilirsiniz.&lt;/p&gt;
 &lt;h2&gt;CSS3 Çoklu Kolonlar(multi column) Modülü&lt;/h2&gt;
-&lt;p&gt;Bu modülün tamamlanmış ve tüm yeni nesil tarayıcılar tarafından desteklenmektedir. CSS3 plan modülleri arasında öğrenilmeye başlanacak en iyi modüldür.&lt;/p&gt;
+&lt;p&gt;Bu modülün tamamlanmış ve tüm yeni nesil tarayıcılar tarafından desteklenmiş olması güzel bir a. CSS3 plan modülleri arasında öğrenilmeye başlanacak en iyi modüldür.&lt;/p&gt;
 &lt;p&gt;Detaylı bilgi için &lt;a href="http://fatihhayrioglu.com/css3-coklu-kolonlar/"&gt;http://fatihhayrioglu.com/css3-coklu-kolonlar/&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;CS3 Esnek Kutu (flexible box) Modülü&lt;/h2&gt;
 &lt;p&gt;Esnek kutu modeli yeni planlama modülleri arasında en çok isminden söz ettiren modül. Bazı karışık plan sorunlarına güzel çözümler üretmektedir.&lt;/p&gt;
@@ -1524,436 +1565,4 @@ bunun yanında @font-face kodunu üretmek içinde kullanışlı.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.shoutmeloud.com/9-great-free-online-css-sprite-generator.html"&gt;http://www.shoutmeloud.com/9-great-free-online-css-sprite-generator.html&lt;/a&gt; (sprite araçları)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.catswhocode.com/blog/awesome-css3-generators-to-simplify-front-end-development"&gt;http://www.catswhocode.com/blog/awesome-css3-generators-to-simplify-front-end-development&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;</summary><category term="border-radius"></category><category term="box-shadow"></category><category term="css3"></category><category term="çevrimiçi araçlar"></category><category term="filtre"></category><category term="font-face"></category><category term="text-shadow"></category><category term="transform"></category></entry><entry><title>CSS3 Javascript’ten Rol (Ç)alıyor</title><link href="http://www.fatihhayrioglu.com/css3-javascriptten-rol-caliyor/" rel="alternate"></link><updated>2012-07-31T15:39:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-07-31:css3-javascriptten-rol-caliyor/</id><summary type="html">&lt;p&gt;Geçen haftasonu c.tesi günü(28 Temmuz 2012) &lt;a href="http://jstanbul.org/2012/"&gt;jstanbul etkinliğinde&lt;/a&gt;
-sunduğum “CSS3 Javascript’ten Rol Çalıyor” makalesidir. Etkinlikte
-internet erişimim olmadığı için örnekleri gösterememiştim, burada
-bağlantıları da paylaşıyorum umarım yararlı olur.&lt;/p&gt;
-&lt;p&gt;Sunuma erişmek isteyenlere &lt;a href="https://docs.google.com/presentation/d/13cNTBiY4ewyRpCwmKD_CyKgMs3z4md27YH-ZcVtubcA/edit"&gt;sunumun linki.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Bu başlık şöyle çıktı; Hasan Yalçın’ın “&lt;a href="http://www.hasanyalcin.com/e-kitap-modern-web-tasarimi/"&gt;Modern Web Tasarımı&lt;/a&gt;” kitabı
-için HTML5 ve CSS3 yeniliklerini bir cümle ile anlatmak istersen ne
-dersin demesi ile başladı. “Geliştirilen kodlama teknolojilerinde, css3
-tasarımcıdan, html5 programcıdan rol çalıyor!” diye bir cümle kurmuştum.
-Bu cümlenin CSS3 kısmı eksik kaldığını zamanla gördüm. CSS3 sadece
-tasarımcıdan değil Javascript’ten de rol çalışıyor bunu gördüm.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Katman Mimarisi ve Js'in Yeri&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;İçerik Katmanı (HTML)&lt;/li&gt;
-&lt;li&gt;Gösterim Katmanı (CSS)&lt;/li&gt;
-&lt;li&gt;Davranış Katmanı (Javascript)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;CSS3 ve HTML5’den önce bir kitapta şöyle bir şema görmüştüm.&lt;/p&gt;
-&lt;p&gt;Content katmanı Web sayfamızın içeriğini belirler. Web sayfamızda
-kullandığımız tüm yazılar, resimler, linkler, formlar vs. content
-kapsamında ele alınır. Content’i belirlemek için HTML kullanılır. Yani
-Web sayfamızdaki içeriği HTML ile belirtiyoruz. Bu içeriği kullanıcıya
-sunmak için presentation katmanı kullanılır. Bu katman ile Web
-sayfasında bulunan içeriği görsel olarak şekillendirip kullanıcıya
-sunarız. Bu sunumu gerçekleştirmek için CSS kullanılır ve son olarak
-behavior katmanı ise Web sayfamızın davranışını belirler. Sayfamızda
-bulunan olaylar, tetiklemeler, işlemler vs. davranış kapsamında ele
-alınır ve sayfanın davranışını belirlemek için JavaScript kullanılır&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://lh3.googleusercontent.com/vpPsX1QEnEPQ47r-njUoFDl2Voe8-s_jjHTWy0DqMaCMqEJvUr8RVG5kbaU8sTCmstV8amogPcGzzcjdwlA9Jt4ZD3JKy_0ZShyypmSRnuLDO1rDOOw" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Küme Mimarisi&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Genel anlamı ile yukarıdaki mantık doğru olsa da aslında hepsi bir
-birine bağımlı teknolojiler bunlar ve birbirinden rol çalabiliyorlar.&lt;/p&gt;
-&lt;p&gt;CSS3 ile birlikte değil aslında CSS2 versiyonunda da bir hareketlilik
-vardı. :hover Her ne kadar Murat Çorlu :hover’ın bir dinamizm
-getirdiğini kabul etmese de bence CSS’in sayfa düzeni işine girişmeden
-önceki en büyük dikkat çekiciliği linklerin :hover etkisine ulaşıp
-değiştirme imkanıdır.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://lh4.googleusercontent.com/95nmxa7YDsw2ZhJEJh-dzlF9iCmvrEiROQzYy1tcxaf5MMLONknL8OSnGV9b8tlZ4KcD5G9d5dgb65dZXn4AwDx44CUzmfe2nS0Kkqh_RBUhQ0Y-7LE" /&gt;&lt;/p&gt;
-&lt;h2&gt;Javascript’ten Rol Çalan Özellikler&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;:checked Sözde Sınıfı&lt;/li&gt;
-&lt;li&gt;:target Sözde Sınıfı&lt;/li&gt;
-&lt;li&gt;Kardeş Seçiciler (Bitişik ve Genel)&lt;/li&gt;
-&lt;li&gt;CSS3 Animasyon&lt;/li&gt;
-&lt;li&gt;CSS3 Transition&lt;/li&gt;
-&lt;li&gt;:hover Sözde Sınıfı&lt;/li&gt;
-&lt;li&gt;medya sorguları (media query)&lt;/li&gt;
-&lt;li&gt;calc() değeri&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;İkinci Liste&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Seçiciler (first-child, last-child, nth-child)&lt;/li&gt;
-&lt;li&gt;CSS3 Transform&lt;/li&gt;
-&lt;li&gt;CSS3 Esnek Kutu Yerleşimi&lt;/li&gt;
-&lt;li&gt;::selection seçicisi&lt;/li&gt;
-&lt;li&gt;pointer-events&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Biz burada tıklama olanağı kazandıran :checked Sözde Sınıfı, :target
-Sözde Sınıfını ve Kardeş(Siblings) Seçicileri irdeleyeceğiz.&lt;br /&gt;
-&lt;/p&gt;
-&lt;h2&gt;:checked Sözde Sınıfı&lt;/h2&gt;
-&lt;p&gt;CSS ile bize tıklama yakalamayı sağlayan diğer bir özellik :checked
-sözde sınıfıdır. Normalde checkbox ve radio butonların işaretli olup
-olmaması durumu için çıkan bu özellik, tıklama yakalama özelliği yardımı
-ile bir çok uygulama yapımı için kullanılıyor.&lt;/p&gt;
-&lt;p&gt;radyo butonlar ve işaret kutuları label ile kullanılmaktadır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;rad1&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;rad&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;label&lt;/span&gt; &lt;span class="na"&gt;for=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;rad1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Radio 1&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;for tanımı yardımı ile label ile radyo buton veya işaret kutusuna erişim
-sağlanır. for ile radyo buton ve işaret kutusu id’si aynı olmalıdır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;radio&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="nd"&gt;:checked&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nt"&gt;label&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Tanımı ile tıklama yakalama işini yapabiliyoruz.&lt;/p&gt;
-&lt;p&gt;Hemen bunu basit bir gizle göster işini nasıl yaparız onu gösterelim.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;che1&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;che&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;label&lt;/span&gt; &lt;span class="na"&gt;for=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;che1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Radio 1&lt;span class="nt"&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;icerikAlani&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Gizli İçerik&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Yukarıdaki koda birde div ekledik. Amacımız bir tıkla bu divi göstermek,
-eğer açıksa bir tıkla gizlemek.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;],&lt;/span&gt; 
-&lt;span class="nc"&gt;.icerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="nt"&gt;label&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-    &lt;span class="k"&gt;cursor&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;pointer&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;checkbox&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="nd"&gt;:checked&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt; &lt;span class="nc"&gt;.icerikAlani&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/ZSudF/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Sadece bu kod yardımı ile gizle göster işini yapabiliyoruz. tilda(~)
-işareti Genel Kardeş Seçicisi yardımı ile aynı seviyede olan
-“icerikAlani” sınıfını buluyor ve gösteriyoruz.&lt;/p&gt;
-&lt;h2&gt;target seçicisi&lt;/h2&gt;
-&lt;p&gt;target seçicisi ve CSS’in tıklamaları yakalayabilme yeteneği kazanması.
-CSS ile tanım yapmak için seçicileri kullanıyoruz. Aslında benzer
-mantığı jquery ile javascript mecrasına da taşımış durumda. CSS3
-öncesinde biz elemanların tıklanmasını CSS ile yakalayamıyorduk. ta ki
-:target seçicisi gelen kadar. :taget seçicisi bize elemanlara
-tıklandığını yakalama imkanı sağladı ve artık js ile tıklama yakalamayı
-beklememize gerek kalmadı.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://lh5.googleusercontent.com/4yjEkJVa1J_cI3cO1muSf2wcDFOhhiPbb4catla8LrfBeOr2HQJ8dkVsL20m10DGy3e0p8nx8mgNiL9RsUZU_3YLtmAdhVHmyVPk4lc4LCWy-Y8dcYY" /&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;dl&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;dt&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;dn1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#dn1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Deneme Başlık&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/dt&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;dd&amp;gt;&lt;/span&gt;Deneme 1 İçerik&lt;span class="nt"&gt;&amp;lt;/dd&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;dt&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;dn2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#dn2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Deneme Başlık 2&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/dt&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;dd&amp;gt;&lt;/span&gt;Deneme 2 İçerik&lt;span class="nt"&gt;&amp;lt;/dd&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;/dl&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;CSS kodu;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;dt&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="k"&gt;font-weight&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;bold&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="nt"&gt;dt&lt;/span&gt;&lt;span class="nd"&gt;:target&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nt"&gt;dd&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="nt"&gt;dd&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/3TwVF/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;:target sözde sınıfının dezavantajı sayfa imlecini ilgili içeriğe
-kaydırması ve adres barda #tanim ile geçiş sağlanmasıdır. Geri tuşları
-biraz devre dışı kalıyor.&lt;/p&gt;
-&lt;h2&gt;Kardeş(Siblings) Seçiciler&lt;/h2&gt;
-&lt;p&gt;CSS'in bir diğer sorunu sadece kapsayıcı eleman içindeki elemanlara
-erişebilmesi.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Deneme metni &lt;span class="nt"&gt;&amp;lt;span&amp;gt;&lt;/span&gt;bir&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt; 
-&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;icerik&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Burada içerik olsun&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;CSS ile sadece bir kapsayıcı eleman içine müdahale edebilirken&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="nt"&gt;span&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="c"&gt;/* tanımlar */&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Kardeş seçiciler yardımı ile artık kapsayıcı içinde olmayan elemanlara
-da erişebiliyoruz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.icerik&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;veya&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.icerik&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;gibi tanımlar ile DOM’deki aynı seviyedeki elemana erişim
-sağlayabiliyoruz.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Bitişik Kardeş Seçicileri (Bir ufak kardeş)&lt;/li&gt;
-&lt;li&gt;Genel Kardeş Seçicisi&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Bitişik Kardeş Seçicileri&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Bitişik Kardeş Seçicileri biribiri ardına gelen aynı seviyedeki
-elementlerden sonra gelenine stil tanımlamak için kullanılır. Tam olarak
-“Bir Ufak Kardeş Seçicisi” olmalıdır.&lt;/p&gt;
-&lt;p&gt;Bir örnek verelim bir başlığımız var ve sonrasında ard arda paragraflar
-geliyor. Biz başlık ile hemen ardından gelen paragrafın arasına mesafe
-koymak için bu seçiciyi kullanabiliriz.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt; 
-    &lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Başlık 2&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt; 
-    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Buraya &lt;span class="nt"&gt;&amp;lt;em&amp;gt;&lt;/span&gt;önemli&lt;span class="nt"&gt;&amp;lt;/em&amp;gt;&lt;/span&gt; ve &lt;span class="nt"&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;iyi&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt;kod gir&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt; 
-    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Buraya &lt;span class="nt"&gt;&amp;lt;em&amp;gt;&lt;/span&gt;önemli&lt;span class="nt"&gt;&amp;lt;/em&amp;gt;&lt;/span&gt; ve &lt;span class="nt"&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;iyi&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt;kod gir&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt; 
-&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Dökümanın yapısı:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://lh3.googleusercontent.com/5_tW3nlZFloDpPOHXcWF77YXq3KHxQeAU1kRukATtTmYVJCtpauvbE1KavxlDyLuEPCIuEEPnWF-S4YT_pyK_ojHrIGb9_B1m2TKfiwlJ0tz_jl9F0c" /&gt;&lt;/p&gt;
-&lt;p&gt;Biz burada h2 ve h3 arasında boşluk vermek için aşağıdaki kodu
-kullanırız:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;margin-top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Bu seçiciyi ie7’nin seçicisini destekliyor.&lt;/p&gt;
-&lt;p&gt;Sonuç olarak konunun başında söylediğimiz gibi CSS, (X)HTML
-elementlerinin kendi aralarındaki ilişkileri kullanarak bize bir çok
-avantaj sağlar. Bu sayede bir çok kod yığınından kurtulmuş oluruz ve
-kodlarımız bir düzene girer. Bu kuralları uyguladıkça önemini daha iyi
-anlayacağız.&lt;/p&gt;
-&lt;p&gt;Çocuk Seçicileri ve Bitişik Kardeş Seçicileri‘ni Internet Explorer 7
-versiyonundan itibaren desteklemeye başlamıştır. Bu nedenle kullanımı
-konusunda dikkat etmeliyiz.&lt;/p&gt;
-&lt;h2&gt;Genel Kardeş Seçicisi&lt;/h2&gt;
-&lt;p&gt;CSS2.1 ile birlikte gelen bitiş kardeş seçicilerine benzer bir
-seçicidir. Bitişik kardeş seçicisine göre daha seçici ve kullanışlı bir
-seçicidir. Aynı kapsayıcıya sahip elemanların belirtilen elemandan
-sonraki aynı seviyedeki elemanların tümünü yakalamak için kullanılır.
-Burada dikkat edilmesi gereken konu belirtilen elemandan sonraki aynı
-seviyedeki elemanları seçiyor olması. Tanımlama yaparken araya işaret
-olarak tilde(~) koyuyoru&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://lh4.googleusercontent.com/vj2KHp2RiSKreip3GaQdea_XNRudYOQo-Fv4T2DsbZL8NPBbGPHGmRqlgPdkwveuti3Esty4YuJsWNSswvLPm06jc_2QO-QAzXV-WP_bYD44XpknnUM" /&gt;&lt;/p&gt;
-&lt;p&gt;Bir örnek yapacak olursak bir resmimiz var bunu sola hizalayacağız ve
-sağdanda metinler akacak. Bu resim ve paragraflar arasına padding
-tanımlamak için genel kardeş seçicisi birebirdir.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;img&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="k"&gt;padding-left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;110px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;html kodu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kedi.jpg&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;96&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;96&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;kedi&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Kedi (Felis catus),...&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;2,5 ile 12 kilo ...&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Kediler hoş görünüşlü, ..&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Bu seçiciyi ie7’nin seçicisini destekliyor.&lt;/p&gt;
-&lt;h2&gt;CSS3 Yarıdımı İle Js’den Çalınan Roller&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Akordiyon Uygulaması&lt;/li&gt;
-&lt;li&gt;Sekme Uygulaması&lt;/li&gt;
-&lt;li&gt;Slider Uygulamaları&lt;/li&gt;
-&lt;li&gt;Lightbox, modal Uygulamaları&lt;/li&gt;
-&lt;li&gt;Animasyon ve efektler&lt;/li&gt;
-&lt;li&gt;Tooltip&lt;/li&gt;
-&lt;li&gt;Menü Uygulamaları&lt;/li&gt;
-&lt;li&gt;Özel Form Elemanları&lt;/li&gt;
-&lt;li&gt;Diğer Uygulamalar&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Akordiyon Uygulaması&lt;/h2&gt;
-&lt;p&gt;Akordiyon uygulamaları web sayfalarında biraz yerden kazanmak birazda
-görsellik kazandırmak için tercih edilen yapılardır. Mevcutta ve daha
-önceleri javascript daha doğrusu jquery ile yapılan bu uygulamaları
-artık CSS yardımı ile yapabiliyoruz.&lt;/p&gt;
-&lt;p&gt;CSS ile yapılan akordiyon menülerde kardeş seçicileri ve :checked Sözde
-sınıfı/:target Sözde Seçicisi yardımı ile oluşturuluyor. Gizlenmiş input
-alanına tıklandığında kardeş seçicisi le ile ulaşılan içerik
-göster-gizle yapılıyor. Araya animasyon koyarak daha görsel sonuçlar
-elde edilebiliyor.&lt;/p&gt;
-&lt;p&gt;Bu işi benzer bir mantık ile :target seçicisi yardımı ile yapabiliyoruz.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/02/21/accordion-with-css3/"&gt;http://tympanus.net/codrops/2012/02/21/accordion-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.red-team-design.com/css3-accordion"&gt;http://www.red-team-design.com/css3-accordion&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.hongkiat.com/blog/css-content-accordion/"&gt;http://www.hongkiat.com/blog/css-content-accordion/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://css.dzone.com/articles/pure-css3-accordion"&gt;http://css.dzone.com/articles/pure-css3-accordion&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://aravindms.com/cody/accordioncs3#contact"&gt;http://aravindms.com/cody/accordioncs3#contact&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/10/12/flexible-slide-to-top-accordion/"&gt;http://tympanus.net/codrops/2011/10/12/flexible-slide-to-top-accordion/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/"&gt;http://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Sekme Uygulaması&lt;/h2&gt;
-&lt;p&gt;Yine yer sıkıntısı nedeni ile oluşturulmuş çözümlerden birisi de sekmeli
-yapılardır.&lt;/p&gt;
-&lt;p&gt;CSS ile oluşturulurken yine kardeş seçicileri ve :checked Sözde
-sınıfı/:target Sözde Seçicisi yardımı ile oluşturuluyor.&lt;/p&gt;
-&lt;p&gt;CSS3 sekmeli yapıları gizli radyo butonuun :checked Sözde sınıfı yardımı
-ile tıklama özelliği kazandırılmış alana tıklayınca belirli alanların
-gözterilmesi mantığı ile yapılmaktadır.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://css-tricks.com/css3-tabs/"&gt;http://css-tricks.com/css3-tabs/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.sitepoint.com/css3-tabs-using-target-selector"&gt;http://www.sitepoint.com/css3-tabs-using-target-selector&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/Tutorials/CSS3ContentTabs/"&gt;http://tympanus.net/Tutorials/CSS3ContentTabs/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.webstuffshare.com/2010/01/updated-pure-css-tab-menu/"&gt;http://www.webstuffshare.com/2010/01/updated-pure-css-tab-menu/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Slider&lt;/h2&gt;
-&lt;p&gt;Şu aralar çok fazla tercih edilen slider uygulamalarını sadece CSS ile
-yapabilmek çok süper.&lt;/p&gt;
-&lt;p&gt;Çalışma mantığı, javascript ile yaptığımız mantık ile aynıdır. float ile
-yan yana sıralanmış içerik &lt;br /&gt;
-overflow:hidden ile sadece seçilen resmi gösteriyoruz. Her tıklamada
-margin-left değeri içerik kadar sola doğru çekecek bir değer verilerek
-yapılır.&lt;/p&gt;
-&lt;p&gt;Bir çok şekilde uygulaması olan silder'ın farklı çeşitlerini görmek için
-codrops sitesine uğramanızı öneriyorum. Makalede linkleri mevcut.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://coding.smashingmagazine.com/2012/04/25/pure-css3-cycling-slideshow/"&gt;http://coding.smashingmagazine.com/2012/04/25/pure-css3-cycling-slideshow/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/04/30/fluid-css3-slideshow-with-parallax-effect/"&gt;http://tympanus.net/codrops/2012/04/30/fluid-css3-slideshow-with-parallax-effect/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/Tutorials/CSS3SlidingImagePanels/"&gt;http://tympanus.net/Tutorials/CSS3SlidingImagePanels/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/06/12/css-only-responsive-layout-with-smooth-transitions/"&gt;http://tympanus.net/codrops/2012/06/12/css-only-responsive-layout-with-smooth-transitions/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/01/02/fullscreen-background-image-slideshow-with-css3/"&gt;http://tympanus.net/codrops/2012/01/02/fullscreen-background-image-slideshow-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/12/21/slopy-elements-with-css3/"&gt;http://tympanus.net/codrops/2011/12/21/slopy-elements-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/11/21/elastic-image-slideshow-with-thumbnail-preview/"&gt;http://tympanus.net/codrops/2011/11/21/elastic-image-slideshow-with-thumbnail-preview/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/Tutorials/CircleNavigationEffect/"&gt;http://tympanus.net/Tutorials/CircleNavigationEffect/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/03/23/responsive-content-navigator-with-css3/"&gt;http://tympanus.net/codrops/2012/03/23/responsive-content-navigator-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.c5theme.com/addons/responsive-slider/"&gt;http://www.c5theme.com/addons/responsive-slider/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://csscience.com/responsiveslidercss3/"&gt;http://csscience.com/responsiveslidercss3/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Lightbox, modal&lt;/h2&gt;
-&lt;p&gt;Site içinde kullanılan resimlerin daha büyüğünü görmek için kullanılan
-yapılardır. Sadece resimler değil içerik içinde geçerli. Bir nevi
-popup'ın yerini aldı lightbox.&lt;/p&gt;
-&lt;p&gt;Mantık olarak küçük bir resme tıklayınca büyük resmi göstereceğiz.
-:target sözde sınıfı yardımı ile ilgili büyük resmi yakalayıp göstererek
-yapılıyor.&lt;/p&gt;
-&lt;p&gt;Ayrıca animasyon ve transition yardımı ile görsel olarak güzel geçişler
-yapabiliyoruz.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/12/26/css3-lightbox/"&gt;http://tympanus.net/codrops/2011/12/26/css3-lightbox/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.nealgrosskopf.com/tech/thread.php?pid=75"&gt;http://www.nealgrosskopf.com/tech/thread.php?pid=75&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://alexindigo.github.com/lightbox/#gallery"&gt;http://alexindigo.github.com/lightbox/#gallery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/"&gt;http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.paulrhayes.com/2011-03/css-modal/"&gt;http://www.paulrhayes.com/2011-03/css-modal/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.webstuffshare.com/2012/04/create-elegant-modal-window-using-css-scale-transform/"&gt;http://www.webstuffshare.com/2012/04/create-elegant-modal-window-using-css-scale-transform/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://playground.deaxon.com/css/lightbox/#home"&gt;http://playground.deaxon.com/css/lightbox/#home&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Animasyon, Efektler vd.&lt;/h2&gt;
-&lt;p&gt;Daha çok flash ile yapılan animasyon ve efektler, aynı zamanda
-javascript ile de bir çok animasyon ve efekt yapabiliyoruz.&lt;/p&gt;
-&lt;p&gt;CSS3 yardımı ile artık CSS ile de yapabiliyoruz.&lt;/p&gt;
-&lt;p&gt;Bu konuda CSS3 Animasyon ve CSS3 Transition özellikleri
-kullanılmaktadır.&lt;/p&gt;
-&lt;p&gt;Şu an için flashdaki efekt ve animasyonların hepsi yapılamasa da güzel
-bir çok örnek yapılabilmekte.&lt;/p&gt;
-&lt;p&gt;Animasyona alışık olmayan CSS kod yazarlarını zorlayacak uygulamalar.
-Ancak uğraşması zevkli.&lt;br /&gt;
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/12/07/splash-and-coming-soon-page-effects-with-css3/"&gt;http://tympanus.net/codrops/2011/12/07/splash-and-coming-soon-page-effects-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/"&gt;http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/05/22/creating-an-animated-3d-bouncing-ball-with-css3/"&gt;http://tympanus.net/codrops/2012/05/22/creating-an-animated-3d-bouncing-ball-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/05/14/annotation-overlay-effect-with-css3/"&gt;http://tympanus.net/codrops/2012/05/14/annotation-overlay-effect-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/05/21/animated-3d-bar-chart-with-css3/"&gt;http://tympanus.net/codrops/2012/05/21/animated-3d-bar-chart-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/04/17/rotating-words-with-css-animations/"&gt;http://tympanus.net/codrops/2012/04/17/rotating-words-with-css-animations/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/01/10/animated-web-banners-with-css3/"&gt;http://tympanus.net/codrops/2012/01/10/animated-web-banners-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/01/09/filter-functionality-with-css3/"&gt;http://tympanus.net/codrops/2012/01/09/filter-functionality-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/12/12/experiments-with-background-clip-text/"&gt;http://tympanus.net/codrops/2011/12/12/experiments-with-background-clip-text/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/11/09/interactive-html5-typography/"&gt;http://tympanus.net/codrops/2011/11/09/interactive-html5-typography/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/11/07/animated-buttons-with-css3/"&gt;http://tympanus.net/codrops/2011/11/07/animated-buttons-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/"&gt;http://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://monkeyandcrow.com/blog/css3_splitview/"&gt;http://monkeyandcrow.com/blog/css3_splitview/&lt;/a&gt; (spliteview)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Tooltip&lt;/h2&gt;
-&lt;p&gt;CSS2 ile de yapabildiğimiz tooltip uygulamaları CSS3 ile daha görsel ve
-efektli görünüm kazandırabiliyoruz.&lt;/p&gt;
-&lt;p&gt;:before ve :after Sözde elementleri ve CSS3 Animasyon/ CSS3 Transition
-yardımı ile bir çok güzel tooltip yapabiliyoruz.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.red-team-design.com/css3-tooltips"&gt;http://www.red-team-design.com/css3-tooltips&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2012/02/01/how-to-create-animated-tooltips-with-css3/"&gt;http://tympanus.net/codrops/2012/02/01/how-to-create-animated-tooltips-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://sixrevisions.com/css/css-only-tooltips/"&gt;http://sixrevisions.com/css/css-only-tooltips/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Menü&lt;/h2&gt;
-&lt;p&gt;Bir çok menü uygulaması uzun süredir javascript'ten bağımsız olarak
-sadece CSS ile yapılmakta.&lt;/p&gt;
-&lt;p&gt;CSS3'ün yeni özellikleri görsellik ve efektli ve resimsiz çözümler
-üretmemizi sağlıyor.&lt;/p&gt;
-&lt;p&gt;@font-face özelliği ve CSS3 renk geçişi yardımı ile resimsiz güzel
-menüler elde edebiliyoruz.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://tympanus.net/codrops/2011/10/24/creative-css3-animation-menus/"&gt;http://tympanus.net/codrops/2011/10/24/creative-css3-animation-menus/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://webdesignerwall.com/tutorials/css3-dropdown-menu"&gt;http://webdesignerwall.com/tutorials/css3-dropdown-menu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.cssplay.co.uk/menus/cssplay-radial.html"&gt;http://www.cssplay.co.uk/menus/cssplay-radial.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://thecodeplayer.com/walkthrough/make-a-stopwatch-using-css3-without-images-or-javascript"&gt;http://thecodeplayer.com/walkthrough/make-a-stopwatch-using-css3-without-images-or-javascript&lt;/a&gt;
-    (kronometre)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/"&gt;http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/&lt;/a&gt;
-    (ağaç gibi dallanmalı menü)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.htmldrive.net/items/show/437/CSS3-only-horizontal-drop-line-tab-menu"&gt;http://www.htmldrive.net/items/show/437/CSS3-only-horizontal-drop-line-tab-menu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cssdeck.com/item/511/soothing-css3-dropdown-animation"&gt;http://cssdeck.com/item/511/soothing-css3-dropdown-animation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/"&gt;http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.webstuffshare.com/2010/04/nice-menu-css-animation-jquery-animate/"&gt;http://www.webstuffshare.com/2010/04/nice-menu-css-animation-jquery-animate/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Özel Form Elemanları&lt;/h2&gt;
-&lt;p&gt;İşletim sisteminin standart form elemanlarından sıkılmış bir çok
-kullanıcı gibi tasarımcılarda &lt;br /&gt;
-özel form elemanları tasarlamaktadır. Arayüz geliştiricileri zorlayan
-bu konuda yardımımıza javascript yetişiyordu.&lt;/p&gt;
-&lt;p&gt;Artık CSS3 :checked Sözde sınıfı yardımı ile güzel radyo butonları ve
-işaret kutuları oluşturabiliyoruz.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.thecssninja.com/css/custom-inputs-using-css"&gt;http://www.thecssninja.com/css/custom-inputs-using-css&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.wufoo.com/2011/06/13/custom-radio-buttons-and-checkboxes/"&gt;http://www.wufoo.com/2011/06/13/custom-radio-buttons-and-checkboxes/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://proto.io/freebies/onoff/"&gt;http://proto.io/freebies/onoff/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Diğer Uygulamalar&lt;/h2&gt;
-&lt;p&gt;Bunun dışında yine kardeş seçicileri, :checked, :target sözde seçileri,
-CSS3 Animasyon, CS3 Transtion özelliklerini kullanarak bir çok farklı
-uygulama yapılmaktadır. Benim gördüğüm&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://cssdeck.com/item/269/css-news-ticker"&gt;http://cssdeck.com/item/269/css-news-ticker&lt;/a&gt; - haber barı&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cssdeck.com/item/513/colourful-css-loader"&gt;http://cssdeck.com/item/513/colourful-css-loader&lt;/a&gt; - loading&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.hongkiat.com/blog/css3-animation-advanced-marquee/"&gt;http://www.hongkiat.com/blog/css3-animation-advanced-marquee/&lt;/a&gt;
-    (marquee)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.webstuffshare.com/2012/04/how-to-create-animated-list-view-using-css3-only/"&gt;http://www.webstuffshare.com/2012/04/how-to-create-animated-list-view-using-css3-only/&lt;/a&gt;
-    (liste görünümü)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://thecodeplayer.com/walkthrough/make-a-stopwatch-using-css3-without-images-or-javascript"&gt;http://thecodeplayer.com/walkthrough/make-a-stopwatch-using-css3-without-images-or-javascript&lt;/a&gt;
-    (kronometre)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.ryancollins.me/?p=1041"&gt;http://www.ryancollins.me/?p=1041&lt;/a&gt; (gizle -göster)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Kaynaklar&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://speckyboy.com/2010/04/26/30-pure-css-alternatives-to-javascript/"&gt;http://speckyboy.com/2010/04/26/30-pure-css-alternatives-to-javascript/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://css-tricks.com/the-checkbox-hack/"&gt;http://css-tricks.com/the-checkbox-hack/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.inserthtml.com/2012/04/css-click-states/"&gt;http://www.inserthtml.com/2012/04/css-click-states/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://designshack.net/articles/css/using-checkboxes-to-toggle-css-and-create-click-events/"&gt;http://designshack.net/articles/css/using-checkboxes-to-toggle-css-and-create-click-events/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://calebogden.com/css-target/"&gt;http://calebogden.com/css-target/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.bilisimdergi.com/3-Katman-Mimarisi-ve-JavaScript-14-5.html"&gt;http://www.bilisimdergi.com/3-Katman-Mimarisi-ve-JavaScript-14-5.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cscie12.dce.harvard.edu/lecture_notes/2010/20100324/handout.html"&gt;http://cscie12.dce.harvard.edu/lecture_notes/2010/20100324/handout.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term=":checked"></category><category term=":target"></category><category term="bitişik kardeş seçiciler"></category><category term="css3"></category><category term="Etkinlik"></category><category term="Genel Kardeş Seçiciler"></category><category term="Javascript"></category><category term="kardeş seçiciler"></category></entry></feed>
+&lt;/p&gt;</summary><category term="border-radius"></category><category term="box-shadow"></category><category term="css3"></category><category term="çevrimiçi araçlar"></category><category term="filtre"></category><category term="font-face"></category><category term="text-shadow"></category><category term="transform"></category></entry></feed>

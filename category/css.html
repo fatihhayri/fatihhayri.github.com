@@ -73,8 +73,88 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././chrome-un-99999999px-sorunu/">Chrome'un -99999999px sorunu</a></h1> 
+                    <h1 class="entry-title"><a href=".././ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/">İE için renk geçişi çözümü filtre tanımını sıfırlamak</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-07-17T12:05:00">
+                Wed 17 July 2013
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href=".././category/css.html">CSS</a> kategorisi. </p>
+<p>etiketler: <a href=".././tag/css.html">css</a><a href=".././tag/css3.html">css3</a><a href=".././tag/renk-gecisi.html">renk-geçişi</a><a href=".././tag/filtre.html">filtre</a><a href=".././tag/hata-ayiklama.html">hata-ayıklama</a><a href=".././tag/sifirlama.html">sıfırlama</a></p>
+
+
+</footer><!-- /.post-info --><p>CSS3 ile gelen güzel özelliklerden birisi <a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/">renk geçişleri</a>. Bu güzel özelliği kullanmamızdaki en büyük engel İE’nin bu özelliği İE 10 sürümünde destekliyor olması. Ancak farklı bir yöntem ile bu desteği İE’nin tüm sürümlerine kazandırabiliyoruz. <strong>filtre tanımı</strong>. filtre tanımı yardımı ile İE için çözüm oluşturabiliyoruz. Tam karşılamasa da desteği sağlaması büyük ölçüde işimizi görüyor.</p>
+<p>Uygulamada filtre bazı sorunlar neden oluyor. Bunlardan birisi renk geçişi kullanılan bir tanımın ezilmesi veya sıfırlanması sırasında normal renk geçişini</p>
+<div class="codehilite"><pre><span class="nc">.deneme</span><span class="p">{</span>
+
+<span class="k">background</span><span class="o">:</span> <span class="k">none</span>
+
+<span class="o">//</span> <span class="n">veya</span>
+
+<span class="k">background</span><span class="o">:</span> <span class="m">#f00</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+
+
+<p>tanımı sıfırlıyor veya ezebiliyor iken filter’ı sıfırlamak için farklı bir yol izlememiz gerekiyor. </p>
+<div class="codehilite"><pre><span class="nt">filter</span><span class="o">:</span> <span class="nt">-</span><span class="o">;</span>
+</pre></div>
+
+
+<p>veya</p>
+<div class="codehilite"><pre><span class="nt">filter</span><span class="o">:</span> <span class="nt">progid</span><span class="nd">:DXImageTransform</span><span class="nc">.Microsoft.gradient</span><span class="o">(</span><span class="nt">enabled</span> <span class="o">=</span> <span class="nt">false</span><span class="o">);</span>
+</pre></div>
+
+
+<p>İkincisi daha anlaşılır geldi bana.</p>
+<p>Genelde bu bazı sorunlara neden oluyor. Renk geçişi tanımlanmış bir öğenin seçili veya :hover gibi farklı durumlarında tek renk tanımı veya transparan ardalan tanımı yapılırken genelde filtre tanımı unutuluyor ve buda İE’de soruna neden oluyor. Aman dikkat.</p>
+<p>Sağlıcakla Kalın.</p>
+<h2>Kaynaklar</h2>
+<ul>
+<li>
+<p><a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/">http://fatihhayrioglu.com/css-renk-gecisleri-gradients/</a></p>
+</li>
+<li>
+<p><a href="http://caniuse.com/#search=gradient">http://caniuse.com/#search=gradient</a></p>
+</li>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx">http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx</a></p>
+</li>
+<li>
+<p><a href="http://stackoverflow.com/a/3749340/296373">http://stackoverflow.com/a/3749340/296373</a></p>
+</li>
+</ul><p><a href=".././ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/#disqus_thread">yorum var</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Diğer yazılar</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././chrome-un-99999999px-sorunu/" rel="bookmark"
+                           title="Permalink to Chrome'un -99999999px sorunu">Chrome'un -99999999px sorunu</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2012-11-14T09:32:00">
                 Wed 14 November 2012
         </abbr>
@@ -88,29 +168,13 @@
 <p>etiketler: <a href=".././tag/css.html">css</a><a href=".././tag/chrome.html">chrome</a><a href=".././tag/problem.html">problem</a><a href=".././tag/gizle-goster.html">gizle-göster</a></p>
 
 
-</footer><!-- /.post-info --><p>Diğer tarayıcılar rastlamadığım için bir sorun olarak yazıyorum. sizlerde eğer böyle bir tanım yaptı iseniz veya kullandığınız kod bloklarında kullanılmış ise benzer sorunu sizde yaşıyor olabilirsiniz.</p>
-<p>Bazı elemanları gizle göster yapmak için görünür alanın dışına çıkarırız. Bunun için genelde left tanımına görünür alanın içine girmeyecek büyüklükte bir değer girerek yaparız. Amaç daha hızlı olarak elemanları gizle-göster yapmak. Örneğin</p>
-<div class="codehilite"><pre><span class="nt">left</span><span class="nd">:-9999px</span>
-</pre></div>
-
-
-<p>gibi. Bazen yüksek çözünürlükteki ekranlar düşünülerek bu değer uçuk bir rakam verilir. </p>
-<div class="codehilite"><pre><span class="nt">left</span><span class="nd">:-99999999px</span>
-</pre></div>
-
-
-<p>gibi. Bu durumda Chrome 7. karakterden sonraki tanımları görmüyor ve bu atama yapılmamış gibi davranıyor. </p>
-<iframe scrolling="no" height="150" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="150" src="http://codepen.io/fatihhayri/embed/mcICs?type=css&amp;height=150" id="cp_embed_hgplm"></iframe><p><a href=".././chrome-un-99999999px-sorunu/#disqus_thread">yorum var</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Diğer yazılar</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+</footer><!-- /.post-info -->
+                <p>Diğer tarayıcılar rastlamadığım için bir sorun olarak yazıyorum. sizlerde eğer böyle bir tanım yaptı iseniz veya kullandığınız kod bloklarında kullanılmış ise benzer sorunu sizde yaşıyor olabilirsiniz.</p>
+<p>Bazı elemanları gizle göster yapmak için görünür alanın dışına çıkarırız. Bunun için genelde left tanımına görünür alanın içine girmeyecek büyüklükte bir değer girerek yaparız ...</p>
+                <a class="readmore" href=".././chrome-un-99999999px-sorunu/">devamını oku</a>
+                <p><a href=".././chrome-un-99999999px-sorunu/#disqus_thread">yorum var</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -430,45 +494,6 @@ yöntemlerin kendice avantajları olduğu kadar resim işleme ve düzenleme
 işlemleri ...</p>
                 <a class="readmore" href=".././font-face-yardimi-ile-ikon-eklemek-yeni-tl-sembolu-eklemek/">devamını oku</a>
                 <p><a href=".././font-face-yardimi-ile-ikon-eklemek-yeni-tl-sembolu-eklemek/#disqus_thread">yorum var</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href=".././coklu-kenar-cizgisiborder-kullanimi/" rel="bookmark"
-                           title="Permalink to Çoklu Kenar Çizgisi(Border) Kullanımı">Çoklu Kenar Çizgisi(Border) Kullanımı</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-02-29T16:11:00">
-                Wed 29 February 2012
-        </abbr>
-
-        
-        <address class="vcard author">
-                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
-        </address>
-        
-<p><a href=".././category/css.html">CSS</a> kategorisi. </p>
-<p>etiketler: <a href=".././tag/after.html">:after</a><a href=".././tag/before.html">:before</a><a href=".././tag/box-shadow.html">box-shadow</a><a href=".././tag/coklu-kenar-cizgisi.html">çoklu kenar çizgisi</a><a href=".././tag/ie7olum.html">ie7olum</a><a href=".././tag/outline.html">outline</a></p>
-
-
-</footer><!-- /.post-info -->
-                <p>CSS kenar çizgileri kullanımı bir çoğumuz için çok basit bir iştir.
-Ancak yanına bir çizgi daha konduğu zaman kara kara düşünürüz ne
-yapalımda bu işin altında kalkalım diye. Resim kullanırız genelde sorunu
-halletmek için.</p>
-<p>Burada basit bir yol ile bu işi nasıl yapacağımızı anlatacağım.</p>
-<p>Çoklu kenar çizgisi uygulanacak eleman relative ...</p>
-                <a class="readmore" href=".././coklu-kenar-cizgisiborder-kullanimi/">devamını oku</a>
-                <p><a href=".././coklu-kenar-cizgisiborder-kullanimi/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
             </article></li>
         
