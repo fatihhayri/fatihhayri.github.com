@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all-tr.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-08-06T15:10:00+03:00</updated><entry><title>CSS3 Yeni Değerleri</title><link href="http://www.fatihhayrioglu.com/css3-yeni-degerleri/" rel="alternate"></link><updated>2013-08-06T15:10:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-08-06:css3-yeni-degerleri/</id><summary type="html">&lt;p&gt;CSS3 özellikleri anlatan makalelerden sonra fark ettim ki yeni CSS3 değerleri hakkında bir makale yazmam gerekiyor. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all-tr.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-08-12T18:00:00+03:00</updated><entry><title>@support kuralı ile CSS özelliklerinin kontrolü</title><link href="http://www.fatihhayrioglu.com/support-kurali-ile-css-ozelliklerinin-kontrolu/" rel="alternate"></link><updated>2013-08-12T18:00:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-08-12:support-kurali-ile-css-ozelliklerinin-kontrolu/</id><summary type="html">&lt;p&gt;Bir özelliğin tarayıcılar tarafından desteklenip desteklenemediğini genelde javascript kontrol ediyoruz. @support kuralı sayesinde artık CSS ile bu kontrolü yapabiliyoruz. &lt;/p&gt;
+&lt;p&gt;@media kuralına benzer basit bir kullanımı var. Farklı tarayıcılar için kod yazmaya ihtiyaç duyan bizler için çok süper bir özellik. &lt;a href="http://modernizr.com/"&gt;Modernizr&lt;/a&gt;’ın javascript ile yaptığını css ile yapacağız artık.&lt;/p&gt;
+&lt;h2&gt;Basit Yapısı&lt;/h2&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@supports&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;ozellik&lt;/span&gt;&lt;span class="nd"&gt;:deger&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="c"&gt;/* stilleri buraya yaz */&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bir örnek yapacak olursak;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@supports&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;display&lt;/span&gt;&lt;span class="nd"&gt;:flex&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nt"&gt;section&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;flex&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tarayıcı eğer display:flex’i destekliyorsa bu blok css’e eklenecektir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;@media&lt;/strong&gt; kuralı gibi &lt;strong&gt;and, or&lt;/strong&gt; ve &lt;strong&gt;not&lt;/strong&gt; operatörleri kullanılabilmektedir.&lt;/p&gt;
+&lt;h2&gt;ve(and) operatörü&lt;/h2&gt;
+&lt;p&gt;Birden fazla koşula bağlı sorgular oluşturabiliyoruz.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@supports&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;table-cell&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;and&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;list-item&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;veya(or) operatörü&lt;/h2&gt;
+&lt;p&gt;Veya operatörü yardımı ile iki koşul öne sürüp birisinin gerçekleşmesi durumu için css tanımları yapılabiliyor. Örneğin farklı tarayıcı önekleri için;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@supports&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;-webkit-flex&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;or&lt;/span&gt;
+           &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;-moz-flex&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;or&lt;/span&gt;
+           &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;flex&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+     &lt;span class="c"&gt;/* stiller buraya */&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Olumsuzluk(not) operatörü&lt;/h2&gt;
+&lt;p&gt;Desteklemiyorsa sorgusu için not operatörünü kullanabiliyoruz.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@supports&lt;/span&gt; &lt;span class="nt"&gt;not&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;flex&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="c"&gt;/* alternatif stil */&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Tarayıcı Desteği&lt;/h2&gt;
+&lt;p&gt;Yeni nesil tarayıcılar desteğini sunarken İnternet Explorer’ın ve mobil tarafının eksik kalması işin kötü kısmı. Asıl İnternet Explorer için gerekli bir özellik aslında :D&lt;/p&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi &lt;/strong&gt; &lt;br /&gt;
+Firefox 22+ &lt;br /&gt;
+Chrome 28 + &lt;br /&gt;
+Safari Desteklemiyor &lt;br /&gt;
+Opera 12.1 + &lt;br /&gt;
+İnternet Explorer Desteklemiyor  &lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar &lt;/strong&gt; &lt;br /&gt;
+iOS Safari Desteklemiyor &lt;br /&gt;
+Opera Mobile Desteklemiyor &lt;br /&gt;
+Android Browser Desteklemiyor&lt;/p&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-conditional/#at-supports"&gt;http://www.w3.org/TR/css3-conditional/#at-supports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports"&gt;https://developer.mozilla.org/en-US/docs/Web/CSS/@supports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dev.opera.com/articles/view/native-css-feature-detection-via-the-supports-rule/"&gt;http://dev.opera.com/articles/view/native-css-feature-detection-via-the-supports-rule/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://caniuse.com/#search=@support"&gt;http://caniuse.com/#search=@support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://davidwalsh.name/css-supports"&gt;http://davidwalsh.name/css-supports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sitepoint.com/supports-native-css-feature-detection/"&gt;http://www.sitepoint.com/supports-native-css-feature-detection/&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://amdhas.com/blog/learning-css3-supports"&gt;http://amdhas.com/blog/learning-css3-supports&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.inserthtml.com/2012/09/css3-conditional-statements/"&gt;http://www.inserthtml.com/2012/09/css3-conditional-statements/&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://docs.webplatform.org/wiki/css/atrules/@supports"&gt;http://docs.webplatform.org/wiki/css/atrules/@supports&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;</summary><category term=":@support-kuralı"></category><category term="kontrol"></category><category term="css"></category></entry><entry><title>CSS3 Yeni Değerleri</title><link href="http://www.fatihhayrioglu.com/css3-yeni-degerleri/" rel="alternate"></link><updated>2013-08-06T15:10:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-08-06:css3-yeni-degerleri/</id><summary type="html">&lt;p&gt;CSS3 özellikleri anlatan makalelerden sonra fark ettim ki yeni CSS3 değerleri hakkında bir makale yazmam gerekiyor. &lt;/p&gt;
 &lt;p&gt;CSS tanımları 3 ana yapıdan oluşmaktadır. Seçiciler, özellik ve değer. CSS3 ile gelen yeni seçicileri &lt;a href="http://fatihhayrioglu.com/css3-secicileri/"&gt;CSS3 Seçicileri&lt;/a&gt; makalesinde anlatmıştık. CSS3 özelliklerini CSS Dersleri altındaki CSS3 başlığı altında anlattık. Sıra geldi CSS3 ile gelen yeni değerler. &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Anahtar Kelime Değeri&lt;ul&gt;
@@ -1258,350 +1325,4 @@ olursa bana iletirseniz çok sevinirim.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://fatihhayrioglu.com/kutu-modeli-margin-ozellikleri/"&gt;http://fatihhayrioglu.com/kutu-modeli-margin-ozellikleri/&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</summary><category term="fatihhayrioglu.com"></category><category term="wordpress"></category><category term="pelican"></category><category term="github"></category></entry><entry><title>CSS3 Dönüştürme(Transforms) ve 3B Dönüştürme</title><link href="http://www.fatihhayrioglu.com/css3-donusturmetransforms-ve-3b-donusturme/" rel="alternate"></link><updated>2012-09-11T13:50:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-09-11:css3-donusturmetransforms-ve-3b-donusturme/</id><summary type="html">&lt;p&gt;CSS3 Dönüştürme özelliği 2 ve 3 boyutlu dönüştürme özelliği olmak üzere
-ikiye ayrılıyor. Daha önce &lt;a href="http://www.fatihhayrioglu.com/css3-donusturme-ozellikleritransforms-ve-2b-donusturme/"&gt;2 Boyutlu Dönüştürme özelliklerini&lt;/a&gt;
-incelemiştik. Bu makalede 3 Boyutlu Dönüştürme işlemlerini
-inceleyeceğiz. Bu konular daha çok örnek yapıp pekiştirilecek konular,
-ancak ilk başta teorisini öğrenmek gerektiğini düşünüyorum.&lt;/p&gt;
-&lt;p&gt;2 boyutlu dönüştürme özelliklerine göre daha az tarayıcı desteğine sahip
-olan bu özellikler, zamanla daha çok yer kazanacaktır.&lt;/p&gt;
-&lt;p&gt;3 Boyutlu dönüşüm özelliklerinin tanımına girmeden biraz web’de 3.
-boyutu biraz irdelemekte yarar var. Web mecrasın hep 2 boyutlu düzlem
-üzerinde çalıştı. Tüm özellikler iki boyutlu düzlem için geliştirildi
-genişlik, yükseklik tanımları örnek olarak verilebilir. Bir başka örnek
-konumlandırma özelliklerinden verilebilir. Konumlandırma tanımları
-sol(left), sağ(right), üst(top) ve alt(bottom) olarak kullanılmaktadır.&lt;/p&gt;
-&lt;p&gt;z-index tanımında anlattığımız gibi 3. boyut kavramında girdiğimizde
-z-ekseni tanımını göz önünde bulundurmamız gerekiyor.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://lh5.googleusercontent.com/FqOtVg0Y4BZkUpShrSu1wFcWannArGxh5edEiR-5YkTQQJbH_wPcaUFB5rb7AgazIxwKBc89hLsxobUZad1lQ9LuznL0eg9F_KXIdAMQEsGxFioDs0o" /&gt;&lt;/p&gt;
-&lt;p&gt;Şeklinde çizdiğimiz z-ekseni bize 3. boyutu göstermektedir.&lt;/p&gt;
-&lt;p&gt;3 Boyutlu Dönüşüm özelliklerini inceleyelim.&lt;/p&gt;
-&lt;h2&gt;Dönüşüm Stili(transform-style) Özelliği&lt;/h2&gt;
-&lt;p&gt;3 Boyutlu dönüşüm özelliklerinden ilk inceleyeceğimiz özellik dönüşüm
-stili olarak tanımlayacağımız özellik transform-style. Eğer dönüşüm
-uygulanan elemanın alt elemanlarınada 3. boyutu uygulayacak iseniz bu
-özelliğin preserve-3d tanımını  kullanmalısınız. Bunun anlamı alt
-elemanlar kapsayıcı eleman gibi 3. boyutu davransın demektir.&lt;/p&gt;
-&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; transform-style: keyword; &lt;br /&gt;
-&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt; [ flat | preserve-3d ]&lt;br /&gt;
-&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; flat &lt;br /&gt;
-&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; Blok-level ve satıriçi elementler&lt;br /&gt;
-&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/p24Mk/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-style.html"&gt;http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-style.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;3 Boyutlu Dönüşüm Fonksiyonları&lt;/h2&gt;
-&lt;p&gt;2 Boyutlu dönüşümü tanımlarken kullandığımız transform özelliği 3
-Boyutlu tanımlarımız içinde geçerlidir. Farklı olan 3. boyutun
-fonksiyonlarıdır. &lt;br /&gt;
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;perspective&lt;/li&gt;
-&lt;li&gt;translateX, translateY, translateZ, translate3d&lt;/li&gt;
-&lt;li&gt;matrix3d&lt;/li&gt;
-&lt;li&gt;rotateX, rotateY, rotateZ, rotate3d&lt;/li&gt;
-&lt;li&gt;scaleX, scaleY, scaleZ, scale3d&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2 Boyutlu dönüştürme özelliklerine z-ekseni eklenmiş özelliklerdir.&lt;/p&gt;
-&lt;h2&gt;Bakış Açısı(perspective)&lt;/h2&gt;
-&lt;p&gt;Perspective özelliği elemanların görüntüsünün bakış açısını
-değiştirmek(derinlik hissi) için kullanılır. perspective özelliği 3
-Boyutlu Dönüştürme işlemleri için önemli bir özelliktir. perspective
-özelliği kolay kullanımı vardır, tabi karışık yapılı  alanlardaki
-kullanımı hariç.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“Perspektif, &lt;a href="http://tr.wikipedia.org/wiki/Nesne"&gt;nesnelerin&lt;/a&gt; görünümünü 3 boyutlu olarak düz bir yüzeyde,
-yani 2 boyuta indirgeyerek, göstermeye yarayan bir iz düşüm tekniğidir.
-Yani, teknik bir çizimdir. Perspektif çizimde, nesnenin gözlemciye göre
-olan pozisyonunun ve uzaklığının etkileri esas alınarak çizim yapılır.
-Söz konusu çizimler gözlemcide, biçim ve orantı bakımından, renklerden
-bağımsız olarak, 3 boyutlu bir gerçeklik izlenimi yaratır.” -
-&lt;a href="http://wikipedia.org/"&gt;wikipedia.org&lt;/a&gt;&lt;br /&gt;
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;perspective&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;derinlik&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Derinlik değeri bir uzunluğu(px olarak) veya none değerlerini alır.&lt;/p&gt;
-&lt;p class="deneme_class"&gt;&lt;strong&gt;Yapısı :&lt;/strong&gt; transform: perspective(derinlik) &lt;br /&gt;
-&lt;strong&gt;Aldığı Değerler :&lt;/strong&gt;none | &lt;uzunluk&gt;&lt;br /&gt;
-&lt;strong&gt;Başlangıç değeri:&lt;/strong&gt; none &lt;br /&gt;
-&lt;strong&gt;Uygulanabilen elementler:&lt;/strong&gt; Blok-level ve satır içi elemanlar&lt;br /&gt;
-&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; Yok&lt;/p&gt;
-&lt;p&gt;Derinlik hissini anlamak için aşağıdaki örneklere bir göz atın. İlk
-kodumuz normal perspective ataması olmayan bir kutu&lt;br /&gt;
-&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;translate&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;0px&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;0px&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;-200px&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;İkinci sağdaki kutu ise perspective uygulanmış kutu;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;perspective&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;500px&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;translate3d&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;0px&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;0px&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;-200px&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Cjwcw/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Bir örnek daha yaparak ile pekiştirelim.&lt;/p&gt;
-&lt;p&gt;soldaki kutu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;rotatey&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;30deg&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;sağdaki kutu&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;perspective&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;300px&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;rotatey&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;30deg&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/HECGV/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Perspektifi anlamak için güzel bir örnek &lt;a href="http://www.ryancollins.me/?p=993"&gt;http://www.ryancollins.me/?p=993&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;translateX, translateY, translateZ, translate3d&lt;/h2&gt;
-&lt;p&gt;translateX ve translateY tanımlarını dha önce 2 boyutlu Dönüştürme
-özelliklerinde incelemiştik. Şimdi de translateZ ve üçünü bir arada
-kullanabildiğimiz translate3d kullanımlarını göreceğiz.&lt;/p&gt;
-&lt;p&gt;translateZ değeri z-ekseninde elemanı hareket ettirmeye yarar. Yüzde
-değeri almaz.&lt;br /&gt;
-&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;translateZ&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;uzunluk&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Uzunluk değeri bir sayıdır. Perspective özelliğini anlatırken verdiğimiz
-ilk örnekte bu özelliğe değinmiştik.&lt;/p&gt;
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Cjwcw/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;translate3d tanımı 3 ekseninde aynı anda tanımını sağlamamızı sağlayan
-bir kısaltmadır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;translate3d&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;y&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;z&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Bir örnek kod yazarsak&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt; &lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;translate3d&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;20px&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;60px&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;30px&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/kTTm3/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Görünümü konumlandırma ile sağlayabilirdik ancak buradaki izometrik
-hissi transitions ve animasyon uygulamalarında daha çok ön plana
-çıkacaktır.&lt;/p&gt;
-&lt;h2&gt;scaleX, scaleY, scaleZ, scale3d&lt;/h2&gt;
-&lt;p&gt;2 boyutlu dönüştürmede bahsettiğimiz gibi scale özelliği elemanları
-büyütmek veya küçültmek için kullanılır. scaleX ve scaleY değerlerini
-daha önce görmüştük. Burada scaleZ ve scale3d özelliklerini
-tanımlayacağız.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;- scaleZ&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scaleZ&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;number&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;scaleZ tanımı biraz farklı davranır. Dönüşüm uygulanmış elemanlarda
-büyültme veya küçültme işlemi 3 boyutlu eksen yapmak mümkün değil.
-Burada yaptığımız daha çok 3 boyutlu eksende 2 boyutlu görüntü elde
-etmektir. Bundan dolayı scaleZ değeri translateZ, rotate veya
-perspective değerlerinin bir ile kullanmak daha anlamlı olacaktır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;perspective&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;500px&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;scaleZ&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;rotateX&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;45&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/6Uaet/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Yıldız savaşları filmindeki yazılara benzer bir görüntü elde ediyoruz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;- scale3d&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;scale3d özelliği tüm scale özelliklerini bir tanımda toplayan bir
-kısaltmadır.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;scale3d&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;y&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;z&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;&lt;strong&gt;rotateX, rotateY, rotateZ ve rotate3d&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.fatihhayrioglu.com/css3-donusturme-ozellikleritransforms-ve-2b-donusturme/"&gt;İki boyutlu düzlemde rotate değeri&lt;/a&gt;tek tanım ile yetinilirken 3 boyutlu düzlemde 3 adet
-rotate tanımı yapmak gerekir. Bundan dolayı rotateX, rotateY ve rotateZ
-tanımları 3 boyutlu düzlemde döndürme işlemleri için tanımlanmıştır.&lt;/p&gt;
-&lt;p&gt;Tanımların sayısı üçe çıksa da tanımlar 2 boyutlu tanım ile aynıdır.
-Negatif değer alabilirler.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;- rotateX&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;rotateX&lt;/span&gt;&lt;span class="o"&gt;(&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="err"&gt;çı&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;rotateX tanımı ile verilen açı değeri kadar saat yönünde elemanı
-x-ekseninde çevirmeye yarar.&lt;/p&gt;
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/mNFnR/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Yatay eksende elemanımız orta noktasından 45 derece saat yönünde
-eğilmiştir.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;- rotateY&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;rotateY&lt;/span&gt;&lt;span class="o"&gt;(&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="err"&gt;çı&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;rotateY tanımı ile verilen açı değeri kadar saat yönünde elemanı
-y-ekseninde çevirmeye yarar.&lt;/p&gt;
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ScQL3/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Dikey eksende elemanımız orta noktasından 45 derece saat yönünde
-eğilmiştir.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;- rotateZ&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;rotateZ&lt;/span&gt;&lt;span class="o"&gt;(&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="err"&gt;çı&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;rotateZ tanımı ile verilen açı değeri kadar saat yönünde elemanı
-z-ekseninde çevirmeye yarar.&lt;/p&gt;
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/PQBcR/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;z-ekseninde elemanımız orta noktasından 45 derece saat yönünde
-eğilmiştir.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;- rotate3d&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;rotate3d&lt;/span&gt;&lt;span class="o"&gt;(&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;rakam&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;,&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;rakam&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;,&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;rakam&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;,&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="err"&gt;çı&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;rotate3d özelliği saat yönünde 3 boyutlu döndürme işlemi yapar. Son
-değer açı değerini verirken ilk üç değer vektörel tabanlı rakamlar
-olarak tanımlanır. Başlangıç değeri 0,0,0 olarak tanımlıdır. Rakamlar
-&lt;a href="http://tr.wikipedia.org/wiki/Kartezyen_koordinat_sistemi"&gt;Kartezyen koordinat sistemi&lt;/a&gt;’ne göre değer alır. Ben bu rakamlara pek
-takılmayalım diyorum, çevrimiçi araçlar ile bu işi halledebiliriz gibime
-geliyor.&lt;/p&gt;
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ubkKv/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;strong&gt;İpucu:&lt;/strong&gt;Japon makaledeki örnek hoşuma gitti göz atmakta yarar var.
-&lt;a href="http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-rotatexyz.html"&gt;http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-rotatexyz.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;matrix3d&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;matrix3d fonksiyonu tek elden 3 boyutlu dönüşüm yapmamıza olanak
-sağlamak amacıyla oluşturulan 4x4 bir matrisi olan 16 değerli bir
-özelliktir.&lt;/p&gt;
-&lt;p&gt;Bana biraz karışık gelen bir durum. Programatik olarak 3 boyutlu
-dönüşümleri yapmaya yarayan bir fonksiyon olarak tanımlayabilirim.&lt;br /&gt;
-&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;matrix3d&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;m01&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m02&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m03&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m04&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;m05&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m06&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m07&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m08&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m09&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m10&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m11&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m12&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;m13&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m14&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m15&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;m16&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;&lt;a href="http://www.eleqtriq.com/images/static/demos/2010/css3d/matrix3dexplorer.html"&gt;http://www.eleqtriq.com/images/static/demos/2010/css3d/matrix3dexplorer.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Bu araç ile matrix3d daha kullanışlı oluyor.&lt;/p&gt;
-&lt;h2&gt;perspective-origin&lt;/h2&gt;
-&lt;p&gt;perspektif özelliği ile birlikte kullanılır, elemanın görüntülenen bakış
-açısının orijin noktasını değiştirmemizi sağlar. Elemanın perspektif
-görüntüsünün açısını değiştirir. x ve y değerleri alır. Başlangıç değeri
-kapsayıcının orta noktası olan 50% 50%’dir.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://lh3.googleusercontent.com/X06_E_pJOi7N5Ks5qP3b3PmAWRO6WGhSsmUGiqsvSUNi1E0Hy8uhCGnb1I9fG9XGSxypWDToKaS8UckIB8rCeL1_cu-b8eq4qMFMofq0lS3y8PsGd8M" /&gt;&lt;/p&gt;
-&lt;p&gt;x-değeri sol(left), sağ(right) ve orta(center) değerlerini alır.
-y-değeri üst(top), alt(bottom) ve orta(center) değerleri alır. Yüzde
-değerleri de alır.&lt;/p&gt;
-&lt;p&gt;Bu durumu şöyle düşünebiliriz; bir kameramız olsun baktığımız alana
-farklı bir açıdan bakmak istediğimizde perspektif orijinimizi
-değiştiriyoruz.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://lh3.googleusercontent.com/JKKV66baIfWahnoL-PwOvPBdkfaZ1NQbwfhDbJK0OY5GvrlHY1Ae46Is4LO5NKNCeAKXIFAxNBbVonVpLiLqzfXDh_RRzQOo424GIX1BdhHfG3Z-l6U" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-perspective-origin.html"&gt;http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-perspective-origin.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;transform-origin&lt;/h2&gt;
-&lt;p&gt;Dönüşümün orjin olarak nereye referans alacağını tanımlamamızı sağlar.&lt;/p&gt;
-&lt;p&gt;2 boyutlu dönüştürmede bahsettiğimiz bu özellik 3 boyutlu dönüşümde
-benzer bir kullanımı var ek olarak z-ekseni tanımıda eklenmektedir. &lt;br /&gt;
-&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;transform-origin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;y&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;z&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;z tanımı z-eksenindeki mesafeyi belirtmemiz için kullanılmaktadır.&lt;/p&gt;
-&lt;iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/s2vE2/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-origin.html"&gt;http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-origin.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;backface-visibility&lt;/h2&gt;
-&lt;p&gt;Bu özellik 3 boyutlu elemanın arkasının gösterilip gösterilmeyeceğini
-belirliyor. visibility özelliği gibi işliyor. hidden ve visible
-değerlerini alıyor.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://desandro.github.com/3dtransforms/examples/carousel-01.html"&gt;Carousel örneğinde&lt;/a&gt; bu özelliği daha iyi anlarız.&lt;br /&gt;
-&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;backface&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;visible&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;backface&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;visible&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;backface&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;visible&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;backface&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;visible&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-    &lt;span class="n"&gt;backface&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;visible&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;&lt;img alt="" src="https://lh5.googleusercontent.com/-_u7c5fYsGBuRvvC7sZcjcFv7cPrnxHdzIK_I9BSS1YAo-iCG7kqLabPr6nH70Ddy3gSBIf7qXQOcxWOOVTD84gOunmLxBwm_HOWZNFw1_1PKP2bF4I" /&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;backface&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;backface&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;backface&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;backface&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-    &lt;span class="n"&gt;backface&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;&lt;img alt="" src="https://lh6.googleusercontent.com/4_txr7vPaKubClq_bmUHbO8e15bHpHPC9echzaXq1Qeu3DwwTIT4Gs060WD0dtA0rLNIOf0aI_yiglZJsJcYAO8JEWh2MdbuTPTSUf3Oo9taTgazbI8" /&gt;&lt;/p&gt;
-&lt;p&gt;Yukarıda görüldüğü gibi ilk resimde elemanların arkası görünürken ikinci
-resimde gizlenmiştir.&lt;/p&gt;
-&lt;h2&gt;Tarayıcı Desteği&lt;/h2&gt;
-&lt;p&gt;Yeni nesil tarayıcıların dahi son zamanlarda desteklediği 3 boyutlu
-dönüşüm özellikleri, sessiz tarayıcı güncellemeleri sayesinde Firefox,
-Chrome’un tam desteğine kavuştu. Aynı şeyi İnternet Explorer için
-söyleyemiyoruz maalesef. İnternet Explorer henüz yayınlanmayan 10.
-sürümünden itibaren destekliyor.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tarayıcı Destekleme Listesi&lt;/strong&gt;&lt;br /&gt;
-Firefox 12+ (-moz- öneki ile)&lt;br /&gt;
-Chrome 12+ (-webkit- öneki ile)&lt;br /&gt;
-Safari 5.1+ (-webkit- öneki ile)&lt;br /&gt;
-Opera desteklemiyor&lt;br /&gt;
-İnternet Explorer 10+ (-ms- öneki ile)&lt;br /&gt;
-Mobil Tarayıcılar&lt;br /&gt;
-iOS Safari 3.2+ (-webkit- öneki ile)&lt;br /&gt;
-Opera Mobile desteklemiyor&lt;br /&gt;
-Android Browser 3.0+ (-webkit- öneki ile)&lt;br class="tarayiciuyum" /&gt;
-&lt;/p&gt;
-&lt;h2&gt;Kaynaklar&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.w3.org/TR/css3-3d-transforms/"&gt;http://www.w3.org/TR/css3-3d-transforms/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.queness.com/post/11403/embrace-the-awesome-css-3d-transforms"&gt;http://www.queness.com/post/11403/embrace-the-awesome-css-3d-transforms&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://coding.smashingmagazine.com/2012/01/06/adventures-in-the-third-dimension-css-3-d-transforms/"&gt;http://coding.smashingmagazine.com/2012/01/06/adventures-in-the-third-dimension-css-3-d-transforms/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.webstuffshare.com/2012/04/showing-product-information-with-css3-3d-transform/"&gt;http://www.webstuffshare.com/2012/04/showing-product-information-with-css3-3d-transform/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.addyosmani.com/resources/3dstack/"&gt;http://www.addyosmani.com/resources/3dstack/&lt;/a&gt; (jquery ile birlikte güzel bir örnek)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.webkit.org/blog/386/3d-transforms/"&gt;http://www.webkit.org/blog/386/3d-transforms/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://24ways.org/2010/intro-to-css-3d-transforms"&gt;http://24ways.org/2010/intro-to-css-3d-transforms&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://sandbox.webpro.nl/css3/3d-transforms-interactive-demo.html"&gt;http://sandbox.webpro.nl/css3/3d-transforms-interactive-demo.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://2012.beercamp.com/"&gt;http://2012.beercamp.com/&lt;/a&gt; 3d aykırı örnek&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://css3.bradshawenterprises.com/demos/cubecarousel.php"&gt;http://css3.bradshawenterprises.com/demos/cubecarousel.php&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.developerdrive.com/2012/04/transforming-elements-in-3d-using-css3/"&gt;http://www.developerdrive.com/2012/04/transforming-elements-in-3d-using-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.queness.com/post/11493/create-css-3d-transform-card-flip-gallery"&gt;http://www.queness.com/post/11493/create-css-3d-transform-card-flip-gallery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.eleqtriq.com/2010/05/understanding-css-3d-transforms/"&gt;http://www.eleqtriq.com/2010/05/understanding-css-3d-transforms/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.netmagazine.com/features/20-stunning-examples-css-3d-transforms"&gt;http://www.netmagazine.com/features/20-stunning-examples-css-3d-transforms&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.caniuse.com/#feat=transforms3d"&gt;http://www.caniuse.com/#feat=transforms3d&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://bartaz.github.com/meetjs/css3d-summit/#/title"&gt;http://bartaz.github.com/meetjs/css3d-summit/#/title&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.developerdrive.com/2012/05/how-to-make-smooth-transitions-with-css3/"&gt;http://www.developerdrive.com/2012/05/how-to-make-smooth-transitions-with-css3/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://tutorialzine.com/2012/02/apple-like-login-form/"&gt;http://tutorialzine.com/2012/02/apple-like-login-form/&lt;/a&gt; (apple gibi form)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.inserthtml.com/2012/03/css-3d-transforms/"&gt;http://www.inserthtml.com/2012/03/css-3d-transforms/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.inserthtml.com/2011/09/css3-3d-transforms-keyframes/"&gt;http://www.inserthtml.com/2011/09/css3-3d-transforms-keyframes/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/transform-function#translate3d%28%29"&gt;https://developer.mozilla.org/en/CSS/transform-function#translate3d%28%29&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blogs.msdn.com/b/ie/archive/2012/02/02/css3-3d-transforms-in-ie10.aspx"&gt;http://blogs.msdn.com/b/ie/archive/2012/02/02/css3-3d-transforms-in-ie10.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm"&gt;http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ie/hh673529%28v=vs.85%29.aspx"&gt;http://msdn.microsoft.com/en-us/library/ie/hh673529%28v=vs.85%29.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.found.co.uk/css3-3d-transforms-the-future-of-user-experience/"&gt;http://www.found.co.uk/css3-3d-transforms-the-future-of-user-experience/&lt;/a&gt; (kullanıcı deneyimlerine etkisi hakkında)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.html5-css3.fr/css3/transformations-3d-css3"&gt;http://www.html5-css3.fr/css3/transformations-3d-css3&lt;/a&gt; (fransızca)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.inserthtml.com/2012/03/css-3d-transforms/"&gt;http://www.inserthtml.com/2012/03/css-3d-transforms/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.satine.org/research/webkit/snowleopard/snowstack.html"&gt;http://www.satine.org/research/webkit/snowleopard/snowstack.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://unformedbuilding.com/articles/learn-about-css-transforms/"&gt;http://unformedbuilding.com/articles/learn-about-css-transforms/&lt;/a&gt; japonca güzel&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://developer.mozilla.org/en/CSS/transform-function"&gt;https://developer.mozilla.org/en/CSS/transform-function&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://desandro.github.com/3dtransforms/docs/perspective.html"&gt;http://desandro.github.com/3dtransforms/docs/perspective.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://caniuse.com/#feat=transforms3d"&gt;http://caniuse.com/#feat=transforms3d&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="css3"></category><category term="matrix3d"></category><category term="perspective"></category><category term="rotate3d"></category><category term="rotateX"></category><category term="rotateY"></category><category term="rotateZ"></category><category term="scale3d"></category><category term="scaleZ"></category><category term="transform-style"></category><category term="translate3d"></category><category term="translateZ"></category></entry></feed>
+&lt;/ol&gt;</summary><category term="fatihhayrioglu.com"></category><category term="wordpress"></category><category term="pelican"></category><category term="github"></category></entry></feed>
