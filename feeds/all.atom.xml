@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-08-12T18:00:00+03:00</updated><entry><title>@support kuralı ile CSS özelliklerinin kontrolü</title><link href="http://www.fatihhayrioglu.com/support-kurali-ile-css-ozelliklerinin-kontrolu/" rel="alternate"></link><updated>2013-08-12T18:00:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-08-12:support-kurali-ile-css-ozelliklerinin-kontrolu/</id><summary type="html">&lt;p&gt;Bir özelliğin tarayıcılar tarafından desteklenip desteklenemediğini genelde javascript kontrol ediyoruz. @support kuralı sayesinde artık CSS ile bu kontrolü yapabiliyoruz. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-08-13T15:00:00+03:00</updated><entry><title>CSS3 ile Kısa Çizgi(tire) Ekleme</title><link href="http://www.fatihhayrioglu.com/css3-ile-kisa-cizgitire-ekleme/" rel="alternate"></link><updated>2013-08-13T15:00:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-08-13:css3-ile-kisa-cizgitire-ekleme/</id><summary type="html">&lt;p&gt;Kısa çizginin(-) tanımına internette baktığımızda kullanım alanlarının başında ilk sırada &lt;/p&gt;
+&lt;p&gt;"Satır sonunda, yer kalmadığı için yarım kalan kelimelerin bölünmüş olduğunu, yani devamının altta olduğunu göstermek için satır sonunda kullanılır. Bu görevde kullanılınca birleştirme çizgisi denir."&lt;/p&gt;
+&lt;p&gt;Bilgisi yer alır. Bu işi web mecrasında yapmak için CSS3 ile gelen hyphens(kısa çizgi) özelliği kullanılır. Şimdi bu makalede bu özelliği inceleyeceğiz.&lt;/p&gt;
+&lt;p&gt;CSS kısa çizgi özelliği bir satıra sığmayan kelimenin nasıl bölüneceğini belirler. Bu bölme işini HTML’de tanımlana &lt;strong&gt;lang&lt;/strong&gt; özniteliğinde belirtilen dile göre yapar. &lt;/p&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; hyphens: &amp;lt;deger&amp;gt; &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler:&lt;/strong&gt; none | manual | auto &lt;br /&gt;
+&lt;strong&gt;Başlangıç Değeri:&lt;/strong&gt; manual &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen Elementler:&lt;/strong&gt; Tüm elementler &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; var&lt;/p&gt;
+&lt;p&gt;Değerlerini inceleyelim.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;none:&lt;/strong&gt; Satır sonuna sığmayan kelime tire ile ayrılmaz. Sadece boşluk olan bölümlerden satır başı yaptırılır.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;manual:&lt;/strong&gt; Kelimeler satıra sığmadığında sadece kelime içinde tire geçiyorsa ise tireli olan kısımdan kesilir. &amp;shy; karakterini tire konacak yere koymamız gerekiyor. Normalde gözükmüyor ama kelime kesildiğinde tire gözüküyor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;auto:&lt;/strong&gt; Kelimeler satırsa sığmadığında tarayıcı tarafından otomatik olarak HTML’de belirtilen dile göre bölünür. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bir örnek yapalım.&lt;/p&gt;
+&lt;iframe scrolling="no" height="150" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="150" src="http://codepen.io/fatihhayri/embed/DEHAm?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;img alt="kesik çizgi" src="https://lh5.googleusercontent.com/dLphRC85oPKym9mntIkeU3TRd98fz7oKiq-M1IRVHtPp3u3-OjKHKfuBttoH8gq0NCEqnBxUhBR_ge5rdaKA9gKJXpglfkzdHbMHbTd6GK4tGOuK8qc923bL2A" /&gt;&lt;/p&gt;
+&lt;p&gt;Firefox’da denedim çalışıyor. Gayetde güzel çalışıyor. Unutulmaması gereken şey dil tanımının yapılması. Chrome’da auto çalışmıyor.&lt;/p&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Desteği&lt;/strong&gt; &lt;br /&gt;
+Google Chrome 29+ (-webkit öneki ile &lt;strong&gt;auto&lt;/strong&gt; hariç) &lt;br /&gt;
+Safari 5.1+ (-webkit öneki ile) &lt;br /&gt;
+Firefox6+ (-moz öneki ile) &lt;br /&gt;
+Opera desteklemiyor &lt;br /&gt;
+İnternet Explorer10+ (-ms öneki ile) &lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar&lt;/strong&gt; &lt;br /&gt;
+Android desteklemiyor &lt;br /&gt;
+Opera Mobile desteklemiyor &lt;br /&gt;
+Safari Mobile 4.2(-webkit öneki ile)&lt;/p&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens"&gt;https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://drublic.de/blog/css3-auto-hyphenation-for-text-elements/"&gt;http://drublic.de/blog/css3-auto-hyphenation-for-text-elements/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.hongkiat.com/blog/css3-hyphenation/"&gt;http://www.hongkiat.com/blog/css3-hyphenation/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.turkceciler.com/kisa-cizgi.html"&gt;http://www.turkceciler.com/kisa-cizgi.html&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://caniuse.com/#search=hyphens"&gt;http://caniuse.com/#search=hyphens&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="kısa-çizgi"></category><category term="tire"></category><category term="css3"></category></entry><entry><title>@support kuralı ile CSS özelliklerinin kontrolü</title><link href="http://www.fatihhayrioglu.com/support-kurali-ile-css-ozelliklerinin-kontrolu/" rel="alternate"></link><updated>2013-08-12T18:00:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-08-12:support-kurali-ile-css-ozelliklerinin-kontrolu/</id><summary type="html">&lt;p&gt;Bir özelliğin tarayıcılar tarafından desteklenip desteklenemediğini genelde javascript kontrol ediyoruz. @support kuralı sayesinde artık CSS ile bu kontrolü yapabiliyoruz. &lt;/p&gt;
 &lt;p&gt;@media kuralına benzer basit bir kullanımı var. Farklı tarayıcılar için kod yazmaya ihtiyaç duyan bizler için çok süper bir özellik. &lt;a href="http://modernizr.com/"&gt;Modernizr&lt;/a&gt;’ın javascript ile yaptığını css ile yapacağız artık.&lt;/p&gt;
 &lt;h2&gt;Basit Yapısı&lt;/h2&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@supports&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;ozellik&lt;/span&gt;&lt;span class="nd"&gt;:deger&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -1273,56 +1310,4 @@ commit config
 
 
 &lt;p&gt;gibi. Bu durumda Chrome 7. karakterden sonraki tanımları görmüyor ve bu atama yapılmamış gibi davranıyor. &lt;/p&gt;
-&lt;iframe scrolling="no" height="150" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="150" src="http://codepen.io/fatihhayri/embed/mcICs?type=css&amp;amp;height=150" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;</summary><category term="css"></category><category term="chrome"></category><category term="problem"></category><category term="gizle-göster"></category></entry><entry><title>Sitenin Alt Yapısını Değiştirdik</title><link href="http://www.fatihhayrioglu.com/sitenin-alt-yapisini-degistirdik/" rel="alternate"></link><updated>2012-10-15T11:54:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-10-15:sitenin-alt-yapisini-degistirdik/</id><summary type="html">&lt;p&gt;Uzun süredir wordpress alt yapısı ile devam ettiğim sitemi hosting
-sorunları nedeni ile değiştirmek zorunda kaldım. Şu an yeni sistem
-üzerinden sizlere ulaşıyorum. Biliyorum bir çok eksiğim var, zamanla
-düzeltmeyi öngörüyorum.&lt;/p&gt;
-&lt;p&gt;Wordpress’in sistemi kullanıcı sayısı belli bir sayının üzerine çıkınca
-sistemi zorluyor. İlk sorunu seneler önce tekil kullanıcı sayısının
-100’ü geçmesi ile yaşadım. Hosting şirketimi değiştirdim. İkinci
-sorunumu 2-3 sene önce tekil kullanıcı sayısı 700-800 civarında iken
-yaşadım, cache eklentisi kurarak onu aştım. Üçüncü ve son sorunumu geçen
-hafta yaşadım tekil kullanıcı sayım 1300-1500 aralığında idi ve hosting
-şirketi cpu’ya çok yüklendiğim için sitemi kapatmıştı. Zor anlardı benim
-için belli bir uğraş sonunda sorunu düzeltemedim ve wordpress ile olan
-birlikteliğime son verme kararı aldık. Hakkını vermeliyim Wordpress’in
-bana çok büyük katkıları oldu.  Ben wordpress alt yapısını çok
-bilmediğimden de bu sorun olabilir. &lt;a href="http://muratcorlu.com/"&gt;Murat Çorlu&lt;/a&gt;’nun önerisi ve
-yardımı ile siteyi statik html’e çevirmeye karar verdik. Sonuçta bilgi
-paylaşmaktı amaç. Sitemi statik html çevirmek ve github’dan host etmeye
-karar verdik. &lt;a href="http://docs.getpelican.com/en/3.0/"&gt;Pelican&lt;/a&gt; ve &lt;a href="https://github.com/"&gt;github&lt;/a&gt; alt yapısını kullandık. Yorumlar
-zaten &lt;a href="http://disqus.com/"&gt;http://disqus.com/&lt;/a&gt; dan alıyordum. Statik sitenin dinamik olan
-bir kaç parçası hariç her şeyinin böylelikle daha basit ve sorunsuz
-olarak yayınlayabilirdik. Kurulum ve desteği için Murat Çorlu’ya ne
-kadar teşekkür etsem azdır.&lt;/p&gt;
-&lt;p&gt;Her yenilik beraberinde bazı sorunları getiriyor. Aşağıdaki listeyi
-çıkardım, yavaş yavaş bunları düzelteceğim. Sizlerinde gördüğü eksikler
-olursa bana iletirseniz çok sevinirim.&lt;/p&gt;
-&lt;h2&gt;Sitenin Eksikleri&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;RSS Düzelt&lt;/li&gt;
-&lt;li&gt;Fontu Değiştir.&lt;/li&gt;
-&lt;li&gt;İçeriği düzenle&lt;ol&gt;
-&lt;li&gt;Türkçe karakter sorunu var highlight içeriğinde&lt;/li&gt;
-&lt;li&gt;Highlight ikinci satırlar patlak&lt;/li&gt;
-&lt;li&gt;Dipteki linkler sorunlu&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;İçerikteki üstte sağda bilgi alanına genişlik ver .post-info
-    width:200px&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Kod kısmını düzenle&lt;/li&gt;
-&lt;li&gt;Sayfalardan info kısmını kaldır&lt;/li&gt;
-&lt;li&gt;Kitap sayfasını düzelt&lt;/li&gt;
-&lt;li&gt;Temayı Türkçeleştir&lt;/li&gt;
-&lt;li&gt;Arama ekle&lt;/li&gt;
-&lt;li&gt;Tarayıcı Uyumu kısmı sorunlu&lt;/li&gt;
-&lt;li&gt;Yapısı Bölümü sorunlu&lt;/li&gt;
-&lt;li&gt;Siteden gelen resimler sorunlu&lt;/li&gt;
-&lt;li&gt;Sitedeki örnek htmller sorunlu (http://fatihhayrioglu.com/static/dokumanlar/ardalan_ekle4.html)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Highlight tasarımını değiştir&lt;/li&gt;
-&lt;li&gt;Site tasarımına el at.&lt;/li&gt;
-&lt;li&gt;Açılmayan Sayfalar&lt;ol&gt;
-&lt;li&gt;&lt;a href="http://fatihhayrioglu.com/kutu-modeli-margin-ozellikleri/"&gt;http://fatihhayrioglu.com/kutu-modeli-margin-ozellikleri/&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</summary><category term="fatihhayrioglu.com"></category><category term="wordpress"></category><category term="pelican"></category><category term="github"></category></entry></feed>
+&lt;iframe scrolling="no" height="150" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="150" src="http://codepen.io/fatihhayri/embed/mcICs?type=css&amp;amp;height=150" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;</summary><category term="css"></category><category term="chrome"></category><category term="problem"></category><category term="gizle-göster"></category></entry></feed>
