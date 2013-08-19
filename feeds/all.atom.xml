@@ -1,5 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-08-13T15:00:00+03:00</updated><entry><title>CSS3 ile Kısa Çizgi(tire) Ekleme</title><link href="http://www.fatihhayrioglu.com/css3-ile-kisa-cizgitire-ekleme/" rel="alternate"></link><updated>2013-08-13T15:00:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-08-13:css3-ile-kisa-cizgitire-ekleme/</id><summary type="html">&lt;p&gt;Kısa çizginin(-) tanımına internette baktığımızda kullanım alanlarının başında ilk sırada &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-08-19T14:00:00+03:00</updated><entry><title>CSS Filtre Efektleri</title><link href="http://www.fatihhayrioglu.com/css-filtre-efektleri/" rel="alternate"></link><updated>2013-08-19T14:00:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-08-19:css-filtre-efektleri/</id><summary type="html">&lt;p&gt;CSS filtreleri photoshop’a benzer filtreleri HTML elemanlarına uygulamamızı sağlıyor. Tek satır CSS kodu ile bu efektleri verebilmek çok hoş. CSS gittikçe web’in görselliğini tek başına karşılayacak bir yöne doğru evriliyor. &lt;strong&gt;Bu özelliği şimdilik sadece webkit tabanlı tarayıcılar destekliyor.&lt;/strong&gt; Bu filtreler genelde resimler, ardalan resimleri ve kenar çizgilerine uygulanmaktadır.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; İnternet Explorer eski sürümleri standart olmayan filtre desteğini sunuyor.&lt;/p&gt;
+&lt;p class="cssozelliktanimi"&gt;&lt;strong&gt;Yapısı:&lt;/strong&gt; filter: &amp;lt;filter-function&amp;gt; [&amp;lt;filter-function&amp;gt;]* | none &lt;br /&gt;
+&lt;strong&gt;Aldığı Değerler:&lt;/strong&gt; grayscale | blur | sepia | saturate | opacity | brightness | contrast | hue-rotate | invert &lt;br /&gt;
+&lt;strong&gt;Başlangıç Değeri:&lt;/strong&gt; none &lt;br /&gt;
+&lt;strong&gt;Uygulanabilen Elementler:&lt;/strong&gt; Grafikler ve kapsayıcı elementler &lt;br /&gt;
+&lt;strong&gt;Kalıtsallık:&lt;/strong&gt; yok&lt;/p&gt;
+&lt;p&gt;Sayfa yüklenmeden önce filtre elemana uygulanır ve sonra sayfaya yüklenir. Biz filtre eklediğimizde orjinal resme bu efekt sayfa taranmadan önce uygulanır. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="wall-e" src="https://lh3.googleusercontent.com/S6R3hlIIAUcaGWKadN2mp8myRdFDBFiS3TlLM4NMSSvzE49cMFin_ODX-W69biYjPrISBsvgtuhoYX-87AkXsEe1tgNc5hb2SH47aGM6EkWFyoy8xup8VDqv9g" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/hasansama"&gt;Hasan Şama&lt;/a&gt;(@hasansama)’nın çektiği fotoğraf üzerinde efektleri deneyelim. - Resmin ana fikri kabuklar wall-e’nin etrafını sarmış. - &lt;/p&gt;
+&lt;h2&gt;Siyah-Beyaz (GRAYSCALE) Efekti&lt;/h2&gt;
+&lt;p&gt;Tanımlana resmi siyah-beyaz hale getirir.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/zmDlv?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Tek satır kod ile bunu yapabilmek süper bir şey. 100% değer tam filtreleme yaparken 0% değeri ise filtre’sız halini veriyor.&lt;/p&gt;
+&lt;h2&gt;hue-rotate(Renk Tekeri)&lt;/h2&gt;
+&lt;p&gt;Hue(renk) renk çemberinde 0 ile 360 arasındaki renklere karşılık gelir. 0 kırmızı, 120 yeşil ve 240 mavidir. &lt;a href="http://www.colorschemedesigner.com/"&gt;http://www.colorschemedesigner.com/&lt;/a&gt; Sitesindeki tekerdeki her açı için farklı renkler mevcuttur. Verdiğimiz her değer renk tekerinde bir renge karşılık geliyor.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/hHCsj?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Örnekler tanımlardan daha açıklayıcı oluyor. 240 mavi tonlarını öne çıkarır.&lt;/p&gt;
+&lt;h2&gt;Kahverengi ağırlıklı Filtre (Sepia)&lt;/h2&gt;
+&lt;p&gt;Sepia filtresi kahverengi tonları önce çıkaran antik görünümlü resimler oluşturmamızı sağlar.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/nHqAj?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;Kontrast (Contrast)&lt;/h2&gt;
+&lt;p&gt;Resmin kontrast değeri ile oynarız. 0% değeri resmi siyah yaparken 100% değer resmin orjinalini verir.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/meryf?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Televizyondaki kontrasta alışık olanların seveceği bir filtre.&lt;/p&gt;
+&lt;h2&gt;Bulanıklaştırmak(Blur)&lt;/h2&gt;
+&lt;p&gt;Resmimize bulanıklaştırmak için kullanılabileceğimiz bir filtredir.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/CrgBA?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Uygulanan bulanıklaştırmanın yarıçap değeri olarak belirlenen değerdir. Yüksek değerlerler resmi daha bulanık yapacaktır.&lt;/p&gt;
+&lt;h2&gt;Ters Çevirmek (Invert)&lt;/h2&gt;
+&lt;p&gt;Resmin görüntüsünün terse çevrilmesini sağlar. Verilen değer resmin ne kadar terse çevrileceğini belirler. 100% değeri resmi tamamen çevirir.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/LqFDy?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;100% değeri resmi fotoğraf negatifi görünümü kazandırıyor.&lt;/p&gt;
+&lt;h2&gt;Saydamlık (opacity)&lt;/h2&gt;
+&lt;p&gt;Resimlerin saydamlığını ayarlamak için uygulanan filtredir. &lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DpdcL?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;CSS’deki opacity ile çakışan bir özellik. Bunun daha hızlı çalıştığı yazıyor.&lt;/p&gt;
+&lt;h2&gt;Parlaklık (brightness)&lt;/h2&gt;
+&lt;p&gt;Yine televizyondan alışık olduğumuz parlaklık filtresi. &lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/bxGDl?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;Gölge(drop-shadow)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;box-shadow’a benzer parametreleri var.&lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/jxmsl?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;CSS’de zaten box-shadow vardı niye buna ihtiyaç var derseniz. Örnekteki saydam içeriği olan alanların gölgeyi etkilediğini dikkatinize sunarım.&lt;/p&gt;
+&lt;h2&gt;Çoklu Filtre Kullanımı&lt;/h2&gt;
+&lt;p&gt;Aralarında boşluk bırakarak birden fazla filtre kullanabiliyoruz. İşte burada tasarımcılardan sağlam rol çalıyoruz. :D Artık bizimde resim işleme aracımız var. &lt;/p&gt;
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/jHtuK?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Resmi siyah beyaz yapıp, ayrıca kontrastını düşürerek baskı görünümü verebiliyoruz. Tabi geniş kullanım olanakları olan bir alan gerisi sizin tasarım görüşünüze kalmış.&lt;/p&gt;
+&lt;h2&gt;Tarayıcı Desteği&lt;/h2&gt;
+&lt;p&gt;Şimdilik sadece webkit kullanan tarayıcılar(Chrome, Safari, Opera ve iOS Safari) tarafından destekleniyor. &lt;/p&gt;
+&lt;p class="tarayiciuyum"&gt;&lt;strong&gt;Tarayıcı Desteği &lt;/strong&gt; &lt;br /&gt;
+Google Chrome 18+ (-webkit öneki) &lt;br /&gt;
+Safari 6+ (-webkit öneki ile) &lt;br /&gt;
+Firefox desteklemiyor &lt;br /&gt;
+Opera 15+ (-webkit öneki ile)  &lt;br /&gt;
+İnternet Explorer desteklemiyor &lt;br /&gt;
+&lt;strong&gt;Mobil Tarayıcılar &lt;/strong&gt; &lt;br /&gt;
+Android desteklemiyor  &lt;br /&gt;
+Opera Mobile desteklemiyor  &lt;br /&gt;
+Safari Mobile 6.0(-webkit öneki ile)&lt;/p&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.html5rocks.com/en/tutorials/filters/understanding-css/"&gt;http://www.html5rocks.com/en/tutorials/filters/understanding-css/&lt;/a&gt; &lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://html5-demos.appspot.com/static/css/filters/index.html"&gt;http://html5-demos.appspot.com/static/css/filters/index.html&lt;/a&gt; (araç) &lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://caniuse.com/#feat=css-filters"&gt;http://caniuse.com/#feat=css-filters&lt;/a&gt; &lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter"&gt;https://developer.mozilla.org/en-US/docs/Web/CSS/filter&lt;/a&gt; &lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/"&gt;http://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/&lt;/a&gt; &lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.hongkiat.com/blog/css-filter/"&gt;http://www.hongkiat.com/blog/css-filter/&lt;/a&gt; &lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.teamtreehouse.com/css-filter-effects"&gt;http://blog.teamtreehouse.com/css-filter-effects&lt;/a&gt; &lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://davidwalsh.name/css-filters"&gt;http://davidwalsh.name/css-filters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="filtre"></category><category term="webkit"></category><category term="css3"></category><category term="efekt"></category></entry><entry><title>CSS3 ile Kısa Çizgi(tire) Ekleme</title><link href="http://www.fatihhayrioglu.com/css3-ile-kisa-cizgitire-ekleme/" rel="alternate"></link><updated>2013-08-13T15:00:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-08-13:css3-ile-kisa-cizgitire-ekleme/</id><summary type="html">&lt;p&gt;Kısa çizginin(-) tanımına internette baktığımızda kullanım alanlarının başında ilk sırada &lt;/p&gt;
 &lt;p&gt;"Satır sonunda, yer kalmadığı için yarım kalan kelimelerin bölünmüş olduğunu, yani devamının altta olduğunu göstermek için satır sonunda kullanılır. Bu görevde kullanılınca birleştirme çizgisi denir."&lt;/p&gt;
 &lt;p&gt;Bilgisi yer alır. Bu işi web mecrasında yapmak için CSS3 ile gelen hyphens(kısa çizgi) özelliği kullanılır. Şimdi bu makalede bu özelliği inceleyeceğiz.&lt;/p&gt;
 &lt;p&gt;CSS kısa çizgi özelliği bir satıra sığmayan kelimenin nasıl bölüneceğini belirler. Bu bölme işini HTML’de tanımlana &lt;strong&gt;lang&lt;/strong&gt; özniteliğinde belirtilen dile göre yapar. &lt;/p&gt;
@@ -1298,16 +1385,4 @@ commit config
 &lt;li&gt;&lt;a href="http://blog.ajcw.com/2011/02/styling-the-html5-placeholder/"&gt;http://blog.ajcw.com/2011/02/styling-the-html5-placeholder/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css"&gt;http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.yunusbassahan.com/blog/html5/html5-placeholder-ozelligi.html"&gt;http://www.yunusbassahan.com/blog/html5/html5-placeholder-ozelligi.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="css"></category><category term="placeholder"></category><category term="yer-tutucu"></category></entry><entry><title>Chrome'un -99999999px sorunu</title><link href="http://www.fatihhayrioglu.com/chrome-un-99999999px-sorunu/" rel="alternate"></link><updated>2012-11-14T09:32:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2012-11-14:chrome-un-99999999px-sorunu/</id><summary type="html">&lt;p&gt;Diğer tarayıcılar rastlamadığım için bir sorun olarak yazıyorum. sizlerde eğer böyle bir tanım yaptı iseniz veya kullandığınız kod bloklarında kullanılmış ise benzer sorunu sizde yaşıyor olabilirsiniz.&lt;/p&gt;
-&lt;p&gt;Bazı elemanları gizle göster yapmak için görünür alanın dışına çıkarırız. Bunun için genelde left tanımına görünür alanın içine girmeyecek büyüklükte bir değer girerek yaparız. Amaç daha hızlı olarak elemanları gizle-göster yapmak. Örneğin&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;left&lt;/span&gt;&lt;span class="nd"&gt;:-9999px&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;gibi. Bazen yüksek çözünürlükteki ekranlar düşünülerek bu değer uçuk bir rakam verilir. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;left&lt;/span&gt;&lt;span class="nd"&gt;:-99999999px&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;gibi. Bu durumda Chrome 7. karakterden sonraki tanımları görmüyor ve bu atama yapılmamış gibi davranıyor. &lt;/p&gt;
-&lt;iframe scrolling="no" height="150" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="150" src="http://codepen.io/fatihhayri/embed/mcICs?type=css&amp;amp;height=150" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;</summary><category term="css"></category><category term="chrome"></category><category term="problem"></category><category term="gizle-göster"></category></entry></feed>
+&lt;/ul&gt;</summary><category term="css"></category><category term="placeholder"></category><category term="yer-tutucu"></category></entry></feed>

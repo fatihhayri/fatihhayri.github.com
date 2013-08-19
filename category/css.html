@@ -73,8 +73,134 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././css3-ile-kisa-cizgitire-ekleme/">CSS3 ile Kısa Çizgi(tire) Ekleme</a></h1> 
+                    <h1 class="entry-title"><a href=".././css-filtre-efektleri/">CSS Filtre Efektleri</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-08-19T14:00:00">
+                Mon 19 August 2013
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href=".././category/css.html">CSS</a> kategorisi. </p>
+<p>etiketler: <a href=".././tag/filtre.html">filtre</a><a href=".././tag/webkit.html">webkit</a><a href=".././tag/css3.html">css3</a><a href=".././tag/efekt.html">efekt</a></p>
+
+
+</footer><!-- /.post-info --><p>CSS filtreleri photoshop’a benzer filtreleri HTML elemanlarına uygulamamızı sağlıyor. Tek satır CSS kodu ile bu efektleri verebilmek çok hoş. CSS gittikçe web’in görselliğini tek başına karşılayacak bir yöne doğru evriliyor. <strong>Bu özelliği şimdilik sadece webkit tabanlı tarayıcılar destekliyor.</strong> Bu filtreler genelde resimler, ardalan resimleri ve kenar çizgilerine uygulanmaktadır.</p>
+<p><strong>Not:</strong> İnternet Explorer eski sürümleri standart olmayan filtre desteğini sunuyor.</p>
+<p class="cssozelliktanimi"><strong>Yapısı:</strong> filter: &lt;filter-function&gt; [&lt;filter-function&gt;]* | none <br />
+<strong>Aldığı Değerler:</strong> grayscale | blur | sepia | saturate | opacity | brightness | contrast | hue-rotate | invert <br />
+<strong>Başlangıç Değeri:</strong> none <br />
+<strong>Uygulanabilen Elementler:</strong> Grafikler ve kapsayıcı elementler <br />
+<strong>Kalıtsallık:</strong> yok</p>
+<p>Sayfa yüklenmeden önce filtre elemana uygulanır ve sonra sayfaya yüklenir. Biz filtre eklediğimizde orjinal resme bu efekt sayfa taranmadan önce uygulanır. </p>
+<p><img alt="wall-e" src="https://lh3.googleusercontent.com/S6R3hlIIAUcaGWKadN2mp8myRdFDBFiS3TlLM4NMSSvzE49cMFin_ODX-W69biYjPrISBsvgtuhoYX-87AkXsEe1tgNc5hb2SH47aGM6EkWFyoy8xup8VDqv9g" /></p>
+<p><a href="https://twitter.com/hasansama">Hasan Şama</a>(@hasansama)’nın çektiği fotoğraf üzerinde efektleri deneyelim. - Resmin ana fikri kabuklar wall-e’nin etrafını sarmış. - </p>
+<h2>Siyah-Beyaz (GRAYSCALE) Efekti</h2>
+<p>Tanımlana resmi siyah-beyaz hale getirir.</p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/zmDlv?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<p>Tek satır kod ile bunu yapabilmek süper bir şey. 100% değer tam filtreleme yaparken 0% değeri ise filtre’sız halini veriyor.</p>
+<h2>hue-rotate(Renk Tekeri)</h2>
+<p>Hue(renk) renk çemberinde 0 ile 360 arasındaki renklere karşılık gelir. 0 kırmızı, 120 yeşil ve 240 mavidir. <a href="http://www.colorschemedesigner.com/">http://www.colorschemedesigner.com/</a> Sitesindeki tekerdeki her açı için farklı renkler mevcuttur. Verdiğimiz her değer renk tekerinde bir renge karşılık geliyor.</p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/hHCsj?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<p>Örnekler tanımlardan daha açıklayıcı oluyor. 240 mavi tonlarını öne çıkarır.</p>
+<h2>Kahverengi ağırlıklı Filtre (Sepia)</h2>
+<p>Sepia filtresi kahverengi tonları önce çıkaran antik görünümlü resimler oluşturmamızı sağlar.</p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/nHqAj?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<h2>Kontrast (Contrast)</h2>
+<p>Resmin kontrast değeri ile oynarız. 0% değeri resmi siyah yaparken 100% değer resmin orjinalini verir.</p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/meryf?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<p>Televizyondaki kontrasta alışık olanların seveceği bir filtre.</p>
+<h2>Bulanıklaştırmak(Blur)</h2>
+<p>Resmimize bulanıklaştırmak için kullanılabileceğimiz bir filtredir.</p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/CrgBA?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<p>Uygulanan bulanıklaştırmanın yarıçap değeri olarak belirlenen değerdir. Yüksek değerlerler resmi daha bulanık yapacaktır.</p>
+<h2>Ters Çevirmek (Invert)</h2>
+<p>Resmin görüntüsünün terse çevrilmesini sağlar. Verilen değer resmin ne kadar terse çevrileceğini belirler. 100% değeri resmi tamamen çevirir.</p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/LqFDy?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<p>100% değeri resmi fotoğraf negatifi görünümü kazandırıyor.</p>
+<h2>Saydamlık (opacity)</h2>
+<p>Resimlerin saydamlığını ayarlamak için uygulanan filtredir. </p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DpdcL?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<p>CSS’deki opacity ile çakışan bir özellik. Bunun daha hızlı çalıştığı yazıyor.</p>
+<h2>Parlaklık (brightness)</h2>
+<p>Yine televizyondan alışık olduğumuz parlaklık filtresi. </p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/bxGDl?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<p><strong>Gölge(drop-shadow)</strong></p>
+<p>box-shadow’a benzer parametreleri var.</p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/jxmsl?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<p>CSS’de zaten box-shadow vardı niye buna ihtiyaç var derseniz. Örnekteki saydam içeriği olan alanların gölgeyi etkilediğini dikkatinize sunarım.</p>
+<h2>Çoklu Filtre Kullanımı</h2>
+<p>Aralarında boşluk bırakarak birden fazla filtre kullanabiliyoruz. İşte burada tasarımcılardan sağlam rol çalıyoruz. :D Artık bizimde resim işleme aracımız var. </p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/jHtuK?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<p>Resmi siyah beyaz yapıp, ayrıca kontrastını düşürerek baskı görünümü verebiliyoruz. Tabi geniş kullanım olanakları olan bir alan gerisi sizin tasarım görüşünüze kalmış.</p>
+<h2>Tarayıcı Desteği</h2>
+<p>Şimdilik sadece webkit kullanan tarayıcılar(Chrome, Safari, Opera ve iOS Safari) tarafından destekleniyor. </p>
+<p class="tarayiciuyum"><strong>Tarayıcı Desteği </strong> <br />
+Google Chrome 18+ (-webkit öneki) <br />
+Safari 6+ (-webkit öneki ile) <br />
+Firefox desteklemiyor <br />
+Opera 15+ (-webkit öneki ile)  <br />
+İnternet Explorer desteklemiyor <br />
+<strong>Mobil Tarayıcılar </strong> <br />
+Android desteklemiyor  <br />
+Opera Mobile desteklemiyor  <br />
+Safari Mobile 6.0(-webkit öneki ile)</p>
+<h2>Kaynaklar</h2>
+<ul>
+<li><a href="http://www.html5rocks.com/en/tutorials/filters/understanding-css/">http://www.html5rocks.com/en/tutorials/filters/understanding-css/</a> <br />
+</li>
+<li><a href="http://html5-demos.appspot.com/static/css/filters/index.html">http://html5-demos.appspot.com/static/css/filters/index.html</a> (araç) <br />
+</li>
+<li><a href="http://caniuse.com/#feat=css-filters">http://caniuse.com/#feat=css-filters</a> <br />
+</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">https://developer.mozilla.org/en-US/docs/Web/CSS/filter</a> <br />
+</li>
+<li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/">http://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/</a> <br />
+</li>
+<li><a href="http://www.hongkiat.com/blog/css-filter/">http://www.hongkiat.com/blog/css-filter/</a> <br />
+</li>
+<li><a href="http://blog.teamtreehouse.com/css-filter-effects">http://blog.teamtreehouse.com/css-filter-effects</a> <br />
+</li>
+<li><a href="http://davidwalsh.name/css-filters">http://davidwalsh.name/css-filters</a></li>
+</ul><p><a href=".././css-filtre-efektleri/#disqus_thread">yorum var</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Diğer yazılar</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././css3-ile-kisa-cizgitire-ekleme/" rel="bookmark"
+                           title="Permalink to CSS3 ile Kısa Çizgi(tire) Ekleme">CSS3 ile Kısa Çizgi(tire) Ekleme</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-08-13T15:00:00">
                 Tue 13 August 2013
         </abbr>
@@ -88,54 +214,14 @@
 <p>etiketler: <a href=".././tag/kisa-cizgi.html">kısa-çizgi</a><a href=".././tag/tire.html">tire</a><a href=".././tag/css3.html">css3</a></p>
 
 
-</footer><!-- /.post-info --><p>Kısa çizginin(-) tanımına internette baktığımızda kullanım alanlarının başında ilk sırada </p>
+</footer><!-- /.post-info -->
+                <p>Kısa çizginin(-) tanımına internette baktığımızda kullanım alanlarının başında ilk sırada </p>
 <p>"Satır sonunda, yer kalmadığı için yarım kalan kelimelerin bölünmüş olduğunu, yani devamının altta olduğunu göstermek için satır sonunda kullanılır. Bu görevde kullanılınca birleştirme çizgisi denir."</p>
-<p>Bilgisi yer alır. Bu işi web mecrasında yapmak için CSS3 ile gelen hyphens(kısa çizgi) özelliği kullanılır. Şimdi bu makalede bu özelliği inceleyeceğiz.</p>
-<p>CSS kısa çizgi özelliği bir satıra sığmayan kelimenin nasıl bölüneceğini belirler. Bu bölme işini HTML’de tanımlana <strong>lang</strong> özniteliğinde belirtilen dile göre yapar. </p>
-<p class="cssozelliktanimi"><strong>Yapısı:</strong> hyphens: &lt;deger&gt; <br />
-<strong>Aldığı Değerler:</strong> none | manual | auto <br />
-<strong>Başlangıç Değeri:</strong> manual <br />
-<strong>Uygulanabilen Elementler:</strong> Tüm elementler <br />
-<strong>Kalıtsallık:</strong> var</p>
-<p>Değerlerini inceleyelim.</p>
-<ul>
-<li><strong>none:</strong> Satır sonuna sığmayan kelime tire ile ayrılmaz. Sadece boşluk olan bölümlerden satır başı yaptırılır.</li>
-<li><strong>manual:</strong> Kelimeler satıra sığmadığında sadece kelime içinde tire geçiyorsa ise tireli olan kısımdan kesilir. &shy; karakterini tire konacak yere koymamız gerekiyor. Normalde gözükmüyor ama kelime kesildiğinde tire gözüküyor.</li>
-<li><strong>auto:</strong> Kelimeler satırsa sığmadığında tarayıcı tarafından otomatik olarak HTML’de belirtilen dile göre bölünür. </li>
-</ul>
-<p>Bir örnek yapalım.</p>
-<iframe scrolling="no" height="150" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="150" src="http://codepen.io/fatihhayri/embed/DEHAm?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
-
-<p><img alt="kesik çizgi" src="https://lh5.googleusercontent.com/dLphRC85oPKym9mntIkeU3TRd98fz7oKiq-M1IRVHtPp3u3-OjKHKfuBttoH8gq0NCEqnBxUhBR_ge5rdaKA9gKJXpglfkzdHbMHbTd6GK4tGOuK8qc923bL2A" /></p>
-<p>Firefox’da denedim çalışıyor. Gayetde güzel çalışıyor. Unutulmaması gereken şey dil tanımının yapılması. Chrome’da auto çalışmıyor.</p>
-<p class="tarayiciuyum"><strong>Tarayıcı Desteği</strong> <br />
-Google Chrome 29+ (-webkit öneki ile <strong>auto</strong> hariç) <br />
-Safari 5.1+ (-webkit öneki ile) <br />
-Firefox6+ (-moz öneki ile) <br />
-Opera desteklemiyor <br />
-İnternet Explorer10+ (-ms öneki ile) <br />
-<strong>Mobil Tarayıcılar</strong> <br />
-Android desteklemiyor <br />
-Opera Mobile desteklemiyor <br />
-Safari Mobile 4.2(-webkit öneki ile)</p>
-<h2>Kaynaklar</h2>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens">https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens</a></li>
-<li><a href="http://drublic.de/blog/css3-auto-hyphenation-for-text-elements/">http://drublic.de/blog/css3-auto-hyphenation-for-text-elements/</a></li>
-<li><a href="http://www.hongkiat.com/blog/css3-hyphenation/">http://www.hongkiat.com/blog/css3-hyphenation/</a></li>
-<li><a href="http://www.turkceciler.com/kisa-cizgi.html">http://www.turkceciler.com/kisa-cizgi.html</a> </li>
-<li><a href="http://caniuse.com/#search=hyphens">http://caniuse.com/#search=hyphens</a></li>
-</ul><p><a href=".././css3-ile-kisa-cizgitire-ekleme/#disqus_thread">yorum var</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Diğer yazılar</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+<p>Bilgisi yer alır. Bu işi web mecrasında yapmak için CSS3 ile gelen hyphens(kısa çizgi ...</p>
+                <a class="readmore" href=".././css3-ile-kisa-cizgitire-ekleme/">devamını oku</a>
+                <p><a href=".././css3-ile-kisa-cizgitire-ekleme/#disqus_thread">yorum var</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -438,45 +524,6 @@ durumundayız.</p>
 <p>Bu sorunun nedeni CSS3 özelliklerinin hala geliştirilmekte olması ...</p>
                 <a class="readmore" href=".././css3-onek-karmasasi/">devamını oku</a>
                 <p><a href=".././css3-onek-karmasasi/#disqus_thread">yorum var</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href=".././ie6ie7-filtre-renk-gecisi-tanimi-konumlandirma-sorunu-ve-cozumsuzulugu-d/" rel="bookmark"
-                           title="Permalink to IE6/IE7 filtre "Renk Geçişi Tanımı - Konumlandırma" Sorunu ve Çözümsüzülüğü :D">IE6/IE7 filtre &quot;Renk Geçişi Tanımı - Konumlandırma&quot; Sorunu ve Çözümsüzülüğü :D</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-05-23T09:40:00">
-                Wed 23 May 2012
-        </abbr>
-
-        
-        <address class="vcard author">
-                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
-        </address>
-        
-<p><a href=".././category/css.html">CSS</a> kategorisi. </p>
-<p>etiketler: <a href=".././tag/-ms-filtre.html">-ms-filtre</a><a href=".././tag/filtre.html">filtre</a><a href=".././tag/gradient.html">gradient</a><a href=".././tag/ie6.html">ie6</a><a href=".././tag/ie7.html">ie7</a><a href=".././tag/problem.html">problem</a></p>
-
-
-</footer><!-- /.post-info -->
-                <p>CSS3 ile birlikte bir çok güzel özellik geldi. Bunlardan bir tanesi
-<a href="http://www.fatihhayrioglu.com/css-renk-gecisleri-gradients/">CSS3 renk geçişi(gradient) özelliği</a>. Bu özelliği uygulamamızda en
-büyük etki CSS3 renk geçişini desteklemeyen İnternet Explorer için
-filtre ile çözüm oluşturuyor olabilmemiz.</p>
-<p>Uygularımızda CSS3 renk geçişini uyguladıkça <strong>filtre</strong> uygulamalarında
-yaşanan sorunlar ortaya çıkmaya başladı. Daha önce bu konuda ...</p>
-                <a class="readmore" href=".././ie6ie7-filtre-renk-gecisi-tanimi-konumlandirma-sorunu-ve-cozumsuzulugu-d/">devamını oku</a>
-                <p><a href=".././ie6ie7-filtre-renk-gecisi-tanimi-konumlandirma-sorunu-ve-cozumsuzulugu-d/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
             </article></li>
         
