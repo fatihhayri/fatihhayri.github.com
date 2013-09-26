@@ -58,6 +58,8 @@
                 
                     <li><a href="/css-dersleri/">CSS Dersleri</a></li>
                 
+                    <li><a href="/git/">Git</a></li>
+                
                     <li><a href="/kitap/">Kitap</a></li>
                 
                     <li><a href="/iletisim/">İletişim</a></li>
@@ -95,31 +97,32 @@
 </footer><!-- /.post-info -->
       <p><a href="http://forum.ceviz.net/">Ceviz forumda</a> okudum. "TC kimlik numarasının ilk 10 rakamının
 toplamının verdiği sonucun 1'ler basamağı 11. sayıya eşitir." bunun için
-bir javascript kodu yazdım. Sizlerede lazım olur diye buraya yazıyorum.
-<!--more--></p>
+bir javascript kodu yazdım. Sizlerede lazım olur diye buraya yazıyorum.</p>
 <p>javascript kodu:</p>
-<div class="codehilite"><pre> <span class="kd">function</span> <span class="nx">tckimlikkontorolu</span><span class="p">(</span><span class="nx">tcno</span><span class="p">)</span> <span class="p">{</span>
+<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">tckimlikkontorolu</span><span class="p">(</span><span class="nx">tcno</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">tckontrol</span><span class="p">,</span><span class="nx">toplam</span><span class="p">;</span> <span class="nx">tckontrol</span> <span class="o">=</span> <span class="nx">tcno</span><span class="p">;</span> <span class="nx">tcno</span> <span class="o">=</span> <span class="nx">tcno</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span> <span class="nx">toplam</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span>
+    <span class="nb">Number</span><span class="p">(</span><span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span> <span class="o">+</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span> <span class="o">+</span>
+    <span class="nb">Number</span><span class="p">(</span><span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span> <span class="o">+</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span> <span class="o">+</span>
+    <span class="nb">Number</span><span class="p">(</span><span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span> <span class="o">+</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span> <span class="o">+</span>
+    <span class="nb">Number</span><span class="p">(</span><span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">))</span> <span class="o">+</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">));</span> 
+    <span class="nx">strtoplam</span> <span class="o">=</span> <span class="nb">String</span><span class="p">(</span><span class="nx">toplam</span><span class="p">);</span> <span class="nx">onunbirlerbas</span> <span class="o">=</span> <span class="nx">strtoplam</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">strtoplam</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span><span class="nx">strtoplam</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nx">onunbirlerbas</span> <span class="o">==</span> <span class="nx">tcno</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;doğru&quot;</span><span class="p">);</span> 
+    <span class="p">}</span> <span class="k">else</span><span class="p">{</span> 
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;yanlış&quot;</span><span class="p">);</span> 
+    <span class="p">}</span> 
+<span class="p">}</span>
 </pre></div>
 
 
-<p>var tckontrol,toplam; tckontrol = tcno; tcno = tcno.value; toplam =
-Number(tcno.substring(0,1)) + Number(tcno.substring(1,2)) +
-Number(tcno.substring(2,3)) + Number(tcno.substring(3,4)) +
-Number(tcno.substring(4,5)) + Number(tcno.substring(5,6)) +
-Number(tcno.substring(6,7)) + Number(tcno.substring(7,8)) +
-Number(tcno.substring(8,9)) + Number(tcno.substring(9,10)); strtoplam =
-String(toplam); onunbirlerbas = strtoplam.substring(strtoplam.length,
-strtoplam.length-1); if(onunbirlerbas == tcno.substring(10,11)) {
-alert("doğru"); } else{ alert("yanlış"); } } </p>
 <p>html kodu:</p>
-<div class="codehilite"><pre> <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;tckimlikno&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span>
+<div class="codehilite"><pre> <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;tckimlikno&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;tckimlikno&quot;</span> <span class="na">onblur=</span><span class="s">&quot;tckimlikkontorolu(this);&quot;</span> <span class="na">maxlength=</span><span class="s">&quot;11&quot;</span> <span class="nt">/&gt;</span>
 </pre></div>
 
 
-<p>id="tckimlikno" onblur="tckimlikkontorolu(this);" maxlength="11" /&gt;</p>
-<p>Ben bu kodu blur ile tetikledim siz bunu değiştirebilirsiniz. Çalışan
-kodu görmek için <a href="../static/dokumanlar/tckimlikno.html">tıklayınız.</a></p>
-</p>
+<p>Ben bu kodu blur ile tetikledim siz bunu değiştirebilirsiniz. </p>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/kfdyH?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
     </div><!-- /.entry-content -->
     
     <div class="comments">

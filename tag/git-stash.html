@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+        <title>Fatih Hayrioğlu'nun not defteri - git-stash</title>
+        <meta charset="utf-8">
+        <meta http-equiv="PRAGMA" content="NO-CACHE">
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+        <meta name="google-site-verification" content="nPLDxGDgobGWgcj8nKtiU1eQCgPANk9weInbGZ4Fj_w">
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
+        
+        <link href="http://feeds.feedburner.com/fatihhayri" type="application/atom+xml" rel="alternate" title="Fatih Hayrioğlu'nun not defteri Atom Feed" />
+        
+        
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie.css"/>
+                <script src=".././js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href=".././css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+        <div id="searchBar" class="clearfix">
+            <section class="body">
+                <!-- SiteSearch Google -->
+                <form action="http://www.fatihhayrioglu.com/arama" id="cse-search-box">
+                  <div>
+                    <input type="hidden" name="cx" value="004780390133711217154:ljzeact7g-o" />
+                    <input type="hidden" name="cof" value="FORID:11" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="text" name="q" size="31" />
+                    <input type="submit" name="sa" value="Ara" />
+                  </div>
+                </form>
+                <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=tr"></script>
+                <!-- SiteSearch Google -->
+            </section>
+        </div>
+        <header id="banner" class="body">
+                <h1>
+					<div id="ceviKazi">
+					    <span class="gudi"> </span>
+					    <span class="slogan">damlaya damlaya göl olur.</span>
+					  </div>
+					<a href="../.">Fatih Hayrioğlu'nun not defteri</a> <strong>{ CSS, HTML ve Javascript }</strong></h1>
+                <nav><ul>
+                
+                    <li><a href="/">Anasayfa</a></li>
+                
+                    <li><a href="/hakkimda/">Hakkımda</a></li>
+                
+                    <li><a href="/css-dersleri/">CSS Dersleri</a></li>
+                
+                    <li><a href="/git/">Git</a></li>
+                
+                    <li><a href="/kitap/">Kitap</a></li>
+                
+                    <li><a href="/iletisim/">İletişim</a></li>
+                
+                
+                </ul></nav>
+        </header><!-- /#banner -->
+                
+
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././git-ogreniyorum-4/">Git Öğreniyorum - 4</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2013-09-26T14:59:00">
+                Thu 26 September 2013
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href=".././category/git.html">Git</a> kategorisi. </p>
+<p>etiketler: <a href=".././tag/git.html">git</a><a href=".././tag/ipuclari.html">ipuçları</a><a href=".././tag/git-reset.html">git-reset</a><a href=".././tag/git-stash.html">git-stash</a><a href=".././tag/gitignore.html">gitignore</a></p>
+
+
+</footer><!-- /.post-info --><h2>1- .gitignore kullanımı</h2>
+<p>.gitignore dosyası git reposundan hariç tutulacak dosyaların listesinin bulunduğu repo ana dizinde bulunan bir ayar dosyasıdır. </p>
+<p>Ana dizinde oluşturduğumuz .gitignore dosyasını git okuyup belirtilen kriterleri es geçecektir. Her bir satır bir kuralı tanımlar. diyez(#) ile başlayan satırlar yorum satırıdır.</p>
+<div class="codehilite"><pre><span class="cp"># Belirli bir dosyayı es geçmek için</span>
+<span class="n">config</span><span class="p">.</span><span class="n">php</span>
+
+<span class="cp"># Belirli bir dizini es geçmek için</span>
+<span class="n">logs</span><span class="o">/</span>
+
+<span class="cp"># Belirli bir uzantılı dosyaları es geçmek için</span>
+<span class="o">*</span><span class="p">.</span><span class="n">styl</span>
+
+<span class="cp"># log dosyalarını es geç ama error.log dosyaları hariç.</span>
+<span class="o">*</span><span class="p">.</span><span class="n">log</span>
+<span class="o">!</span><span class="n">errors</span><span class="p">.</span><span class="n">log</span>
+</pre></div>
+
+
+<h2>2- git stash ile çalışmalarımıza ara vermek</h2>
+<p>Bazen uzun çalışmalarımızın ortasında acil başka işler giriyor. Bu gibi durumlar için git’in stash gibi bir çözünü görmek güzel. </p>
+<p>İşleyiş şöyle ara vermek istediğimiz brach’de iken </p>
+<div class="codehilite"><pre><span class="n">git</span> <span class="n">stash</span> <span class="n">save</span>
+</pre></div>
+
+
+<p>komutunu yazarak işi saklıyoruz</p>
+<div class="codehilite"><pre><span class="n">Saved</span> <span class="n">working</span> <span class="n">directory</span> <span class="n">and</span> <span class="n">index</span> <span class="n">state</span> <span class="n">WIP</span> <span class="n">on</span> <span class="n">FATIH</span><span class="o">-</span><span class="mi">195</span><span class="o">:</span> <span class="n">f6e1ee0</span> <span class="n">Merge</span> <span class="n">branch</span> <span class="err">&#39;</span><span class="n">master</span><span class="err">&#39;</span> <span class="n">into</span> <span class="n">FATIH</span><span class="o">-</span><span class="mi">195</span>
+<span class="n">HEAD</span> <span class="n">is</span> <span class="n">now</span> <span class="n">at</span> <span class="n">f6e1ee0</span> <span class="n">Merge</span> <span class="n">branch</span> <span class="err">&#39;</span><span class="n">master</span><span class="err">&#39;</span> <span class="n">into</span> <span class="n">FATIH</span><span class="o">-</span><span class="mi">195</span>
+</pre></div>
+
+
+<p>İşin saklandığını bize bildiren yukarıdaki gibi bir mesaj çıkacak.</p>
+<p>Sonra diğer işimizi yapabiliriz. Diğer işimiz bittikten sonra yarım bıraktığımız işe geri dönüp</p>
+<div class="codehilite"><pre><span class="n">git</span> <span class="n">stash</span> <span class="n">pop</span>
+</pre></div>
+
+
+<p>yazınca sakladığımız değişiklikleri gün yüzüne çıkarırız. İşe kaldığımız yerden devam edebiliriz. </p>
+<h2>3- Önceki branch’a geç kısayolu</h2>
+<div class="codehilite"><pre><span class="n">git</span> <span class="n">co</span> <span class="o">-</span>
+</pre></div>
+
+
+<p><strong>Not:</strong> Daha önceki ipuçlarda belirttiğim <strong>checkout = co</strong> kısayolunu tanımladığınızı varsayıyorum.</p>
+<p><a href="https://twitter.com/muratcorlu">@muratcorlu</a> teşekkür.</p>
+<h2>4- ignore etmeden gizleme</h2>
+<div class="codehilite"><pre><span class="nx">git</span> <span class="nx">update</span><span class="na">-index</span> <span class="o">--</span><span class="nx">assume</span><span class="na">-unchanged</span> <span class="o">&lt;</span><span class="nx">dosya_adi</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<p><a href="http://twitter.com/mpaltun">@mpaltun</a> teşekkür.</p>
+<h2>5- Son değişiklikleri geri almak</h2>
+<p>Bazen yaptığımız değişiklikleri geri almak isteriz. Yapacağımız geri alma işlemine göre aşağıdaki 5 seçenekten birini seçmemiz gerekecek. <strong>Bu komutlar yaptığınız işlerin geri dönülmeyecek şekilde silinmesine neden olabilir. Yazdığınız kodları dikkatli kullanın.</strong></p>
+<p><strong>git reset --hard</strong> <br />
+Son gönderiye geri almak. Eğer birleştirme sonucu çakışmalar çıktı ise ve bu çakışmayı geri almak istiyorsanız bu kodu kullanabiliriz. </p>
+<p><strong>git reset --hard ORIG_HEAD</strong> veya <strong>git reset --hard origin/master</strong> <br />
+En son birleştirilmiş stabil duruma geri döndürür. Daha yeni birleştirme işleri için kullanışlıdır. Eğer birleştirme işinizde çakışma varsa “<strong>git reset --hard</strong>” kullanınız.</p>
+<p><strong>git reset --soft HEAD^</strong> <br />
+Son gönderinizde bazı şeyleri unuttunuz mu? Bu durumdan kurtulmak kolay. Son gönderiyi geri almak istiyorsak ve yapılan değişikliklerinde bir yerlerde saklanmasını istiyorsak bu komutu kullanmalıyız.</p>
+<p><strong>git commit --amend</strong> <br />
+Yaptığınız değişiklikleri koruyarak önceki gönderiyi yenilemek istiyorsak bu komutu kullanırız. Ayrıca önceki gönderi mesajını yenilemek içinde kullanılır bu komut.</p>
+<p><strong>git checkout -- &lt;dosya_adi&gt;</strong> <br />
+Sadece belirtilen dosyayı geri almak için kullanılır. </p>
+<h2>6- Arama sonuçları dosyaya yazdırma</h2>
+<div class="codehilite"><pre><span class="n">git</span> <span class="n">grep</span> <span class="err">“</span><span class="n">arama_metni</span><span class="err">”</span> <span class="n">dosya_adi</span>
+</pre></div>
+
+
+<p><a href="https://twitter.com/muratcorlu">@muratcorlu</a> teşekkür.</p>
+<h2>7 - İki bilgisayar arasında dosya kopyalama</h2>
+<p>Git ile ilgisi yok ama bana lazım olur buraya kaydedeyim. Sanal bir makineye masaüstünden dosya kopyalamak için</p>
+<div class="codehilite"><pre><span class="n">cd</span> <span class="n">Desktop</span>
+</pre></div>
+
+
+<p>ile masaüstüne geçtikten sonra</p>
+<div class="codehilite"><pre><span class="n">scp</span> <span class="n">dosya_adi</span> <span class="n">kullanici</span><span class="err">@</span><span class="n">sunucu_ip</span><span class="o">:</span>
+</pre></div>
+
+
+<p>ile dosyanızı belirtilen sunucunun ana klasörüne atabiliyoruz.</p>
+<p><a href="https://twitter.com/muratcorlu">@muratcorlu</a> teşekkür.</p>
+<h2>Kaynaklar</h2>
+<ul>
+<li><a href="http://mustafavelioglu.com/posts/2012/11/08/global-gitignore-kullanimi/">http://mustafavelioglu.com/posts/2012/11/08/global-gitignore-kullanimi/</a></li>
+<li><a href="http://git-scm.com/docs/gitignore">http://git-scm.com/docs/gitignore</a></li>
+<li><a href="http://vigo.github.com/git-tips/ipucu/2013/02/18/git-stash-anlik-mudahale-ya-da-zulalama/">http://vigo.github.com/git-tips/ipucu/2013/02/18/git-stash-anlik-mudahale-ya-da-zulalama/</a></li>
+<li><a href="https://gist.github.com/mesuutt/4564848/raw/277478fa242fc5f0a5dddb862d51f79fa4fb9304/git_notlari.md">https://gist.github.com/mesuutt/4564848/raw/277478fa242fc5f0a5dddb862d51f79fa4fb9304/git_notlari.md</a></li>
+<li><a href="http://marklodato.github.io/visual-git-guide/index-en.html">http://marklodato.github.io/visual-git-guide/index-en.html</a></li>
+<li><a href="http://git-scm.com/book/en/Git-Basics-Undoing-Things">http://git-scm.com/book/en/Git-Basics-Undoing-Things</a> </li>
+<li><a href="https://www.atlassian.com/git/tutorial/undoing-changes">https://www.atlassian.com/git/tutorial/undoing-changes</a> </li>
+</ul><p><a href=".././git-ogreniyorum-4/#disqus_thread">yorum var</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+            </ol><!-- /#posts-list -->
+            
+            </section><!-- /#content -->
+        
+    
+
+
+        <section id="extras" class="body">
+        
+        
+                <div class="social">
+                        <h2>Sosyal</h2>
+                        <ul>
+                            <li><a href="http://feeds.feedburner.com/fatihhayri" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+
+                        
+                            <li><a href="http://twitter.com/fatihhayri">@fatihhayri</a></li>
+                        
+                        </ul>
+                </div><!-- /.social -->
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                <a href="http://getpelican.com/">Pelican</a> alt yapısı ve <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a> teması kullanılmıştır. Yardımlarından dolayı <a href="http://muratcorlu.com/">Murat Çorlu</a>'ya teşekkürler.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-785768-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'fatihhayri';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>

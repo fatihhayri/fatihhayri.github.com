@@ -58,6 +58,8 @@
                 
                     <li><a href="/css-dersleri/">CSS Dersleri</a></li>
                 
+                    <li><a href="/git/">Git</a></li>
+                
                     <li><a href="/kitap/">Kitap</a></li>
                 
                     <li><a href="/iletisim/">İletişim</a></li>
@@ -73,8 +75,138 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././git-ogreniyorum-3/">Git Öğreniyorum - 3</a></h1> 
+                    <h1 class="entry-title"><a href=".././git-ogreniyorum-4/">Git Öğreniyorum - 4</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-09-26T14:59:00">
+                Thu 26 September 2013
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href=".././author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href=".././category/git.html">Git</a> kategorisi. </p>
+<p>etiketler: <a href=".././tag/git.html">git</a><a href=".././tag/ipuclari.html">ipuçları</a><a href=".././tag/git-reset.html">git-reset</a><a href=".././tag/git-stash.html">git-stash</a><a href=".././tag/gitignore.html">gitignore</a></p>
+
+
+</footer><!-- /.post-info --><h2>1- .gitignore kullanımı</h2>
+<p>.gitignore dosyası git reposundan hariç tutulacak dosyaların listesinin bulunduğu repo ana dizinde bulunan bir ayar dosyasıdır. </p>
+<p>Ana dizinde oluşturduğumuz .gitignore dosyasını git okuyup belirtilen kriterleri es geçecektir. Her bir satır bir kuralı tanımlar. diyez(#) ile başlayan satırlar yorum satırıdır.</p>
+<div class="codehilite"><pre><span class="cp"># Belirli bir dosyayı es geçmek için</span>
+<span class="n">config</span><span class="p">.</span><span class="n">php</span>
+
+<span class="cp"># Belirli bir dizini es geçmek için</span>
+<span class="n">logs</span><span class="o">/</span>
+
+<span class="cp"># Belirli bir uzantılı dosyaları es geçmek için</span>
+<span class="o">*</span><span class="p">.</span><span class="n">styl</span>
+
+<span class="cp"># log dosyalarını es geç ama error.log dosyaları hariç.</span>
+<span class="o">*</span><span class="p">.</span><span class="n">log</span>
+<span class="o">!</span><span class="n">errors</span><span class="p">.</span><span class="n">log</span>
+</pre></div>
+
+
+<h2>2- git stash ile çalışmalarımıza ara vermek</h2>
+<p>Bazen uzun çalışmalarımızın ortasında acil başka işler giriyor. Bu gibi durumlar için git’in stash gibi bir çözünü görmek güzel. </p>
+<p>İşleyiş şöyle ara vermek istediğimiz brach’de iken </p>
+<div class="codehilite"><pre><span class="n">git</span> <span class="n">stash</span> <span class="n">save</span>
+</pre></div>
+
+
+<p>komutunu yazarak işi saklıyoruz</p>
+<div class="codehilite"><pre><span class="n">Saved</span> <span class="n">working</span> <span class="n">directory</span> <span class="n">and</span> <span class="n">index</span> <span class="n">state</span> <span class="n">WIP</span> <span class="n">on</span> <span class="n">FATIH</span><span class="o">-</span><span class="mi">195</span><span class="o">:</span> <span class="n">f6e1ee0</span> <span class="n">Merge</span> <span class="n">branch</span> <span class="err">&#39;</span><span class="n">master</span><span class="err">&#39;</span> <span class="n">into</span> <span class="n">FATIH</span><span class="o">-</span><span class="mi">195</span>
+<span class="n">HEAD</span> <span class="n">is</span> <span class="n">now</span> <span class="n">at</span> <span class="n">f6e1ee0</span> <span class="n">Merge</span> <span class="n">branch</span> <span class="err">&#39;</span><span class="n">master</span><span class="err">&#39;</span> <span class="n">into</span> <span class="n">FATIH</span><span class="o">-</span><span class="mi">195</span>
+</pre></div>
+
+
+<p>İşin saklandığını bize bildiren yukarıdaki gibi bir mesaj çıkacak.</p>
+<p>Sonra diğer işimizi yapabiliriz. Diğer işimiz bittikten sonra yarım bıraktığımız işe geri dönüp</p>
+<div class="codehilite"><pre><span class="n">git</span> <span class="n">stash</span> <span class="n">pop</span>
+</pre></div>
+
+
+<p>yazınca sakladığımız değişiklikleri gün yüzüne çıkarırız. İşe kaldığımız yerden devam edebiliriz. </p>
+<h2>3- Önceki branch’a geç kısayolu</h2>
+<div class="codehilite"><pre><span class="n">git</span> <span class="n">co</span> <span class="o">-</span>
+</pre></div>
+
+
+<p><strong>Not:</strong> Daha önceki ipuçlarda belirttiğim <strong>checkout = co</strong> kısayolunu tanımladığınızı varsayıyorum.</p>
+<p><a href="https://twitter.com/muratcorlu">@muratcorlu</a> teşekkür.</p>
+<h2>4- ignore etmeden gizleme</h2>
+<div class="codehilite"><pre><span class="nx">git</span> <span class="nx">update</span><span class="na">-index</span> <span class="o">--</span><span class="nx">assume</span><span class="na">-unchanged</span> <span class="o">&lt;</span><span class="nx">dosya_adi</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<p><a href="http://twitter.com/mpaltun">@mpaltun</a> teşekkür.</p>
+<h2>5- Son değişiklikleri geri almak</h2>
+<p>Bazen yaptığımız değişiklikleri geri almak isteriz. Yapacağımız geri alma işlemine göre aşağıdaki 5 seçenekten birini seçmemiz gerekecek. <strong>Bu komutlar yaptığınız işlerin geri dönülmeyecek şekilde silinmesine neden olabilir. Yazdığınız kodları dikkatli kullanın.</strong></p>
+<p><strong>git reset --hard</strong> <br />
+Son gönderiye geri almak. Eğer birleştirme sonucu çakışmalar çıktı ise ve bu çakışmayı geri almak istiyorsanız bu kodu kullanabiliriz. </p>
+<p><strong>git reset --hard ORIG_HEAD</strong> veya <strong>git reset --hard origin/master</strong> <br />
+En son birleştirilmiş stabil duruma geri döndürür. Daha yeni birleştirme işleri için kullanışlıdır. Eğer birleştirme işinizde çakışma varsa “<strong>git reset --hard</strong>” kullanınız.</p>
+<p><strong>git reset --soft HEAD^</strong> <br />
+Son gönderinizde bazı şeyleri unuttunuz mu? Bu durumdan kurtulmak kolay. Son gönderiyi geri almak istiyorsak ve yapılan değişikliklerinde bir yerlerde saklanmasını istiyorsak bu komutu kullanmalıyız.</p>
+<p><strong>git commit --amend</strong> <br />
+Yaptığınız değişiklikleri koruyarak önceki gönderiyi yenilemek istiyorsak bu komutu kullanırız. Ayrıca önceki gönderi mesajını yenilemek içinde kullanılır bu komut.</p>
+<p><strong>git checkout -- &lt;dosya_adi&gt;</strong> <br />
+Sadece belirtilen dosyayı geri almak için kullanılır. </p>
+<h2>6- Arama sonuçları dosyaya yazdırma</h2>
+<div class="codehilite"><pre><span class="n">git</span> <span class="n">grep</span> <span class="err">“</span><span class="n">arama_metni</span><span class="err">”</span> <span class="n">dosya_adi</span>
+</pre></div>
+
+
+<p><a href="https://twitter.com/muratcorlu">@muratcorlu</a> teşekkür.</p>
+<h2>7 - İki bilgisayar arasında dosya kopyalama</h2>
+<p>Git ile ilgisi yok ama bana lazım olur buraya kaydedeyim. Sanal bir makineye masaüstünden dosya kopyalamak için</p>
+<div class="codehilite"><pre><span class="n">cd</span> <span class="n">Desktop</span>
+</pre></div>
+
+
+<p>ile masaüstüne geçtikten sonra</p>
+<div class="codehilite"><pre><span class="n">scp</span> <span class="n">dosya_adi</span> <span class="n">kullanici</span><span class="err">@</span><span class="n">sunucu_ip</span><span class="o">:</span>
+</pre></div>
+
+
+<p>ile dosyanızı belirtilen sunucunun ana klasörüne atabiliyoruz.</p>
+<p><a href="https://twitter.com/muratcorlu">@muratcorlu</a> teşekkür.</p>
+<h2>Kaynaklar</h2>
+<ul>
+<li><a href="http://mustafavelioglu.com/posts/2012/11/08/global-gitignore-kullanimi/">http://mustafavelioglu.com/posts/2012/11/08/global-gitignore-kullanimi/</a></li>
+<li><a href="http://git-scm.com/docs/gitignore">http://git-scm.com/docs/gitignore</a></li>
+<li><a href="http://vigo.github.com/git-tips/ipucu/2013/02/18/git-stash-anlik-mudahale-ya-da-zulalama/">http://vigo.github.com/git-tips/ipucu/2013/02/18/git-stash-anlik-mudahale-ya-da-zulalama/</a></li>
+<li><a href="https://gist.github.com/mesuutt/4564848/raw/277478fa242fc5f0a5dddb862d51f79fa4fb9304/git_notlari.md">https://gist.github.com/mesuutt/4564848/raw/277478fa242fc5f0a5dddb862d51f79fa4fb9304/git_notlari.md</a></li>
+<li><a href="http://marklodato.github.io/visual-git-guide/index-en.html">http://marklodato.github.io/visual-git-guide/index-en.html</a></li>
+<li><a href="http://git-scm.com/book/en/Git-Basics-Undoing-Things">http://git-scm.com/book/en/Git-Basics-Undoing-Things</a> </li>
+<li><a href="https://www.atlassian.com/git/tutorial/undoing-changes">https://www.atlassian.com/git/tutorial/undoing-changes</a> </li>
+</ul><p><a href=".././git-ogreniyorum-4/#disqus_thread">yorum var</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Diğer yazılar</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href=".././git-ogreniyorum-3/" rel="bookmark"
+                           title="Permalink to Git Öğreniyorum - 3">Git Öğreniyorum - 3</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2012-12-28T14:28:00">
                 Fri 28 December 2012
         </abbr>
@@ -88,7 +220,8 @@
 <p>etiketler: <a href=".././tag/git.html">git</a><a href=".././tag/surum-kontrolu.html">sürüm kontrolü</a></p>
 
 
-</footer><!-- /.post-info --><h2>Git  grep</h2>
+</footer><!-- /.post-info -->
+                <h2>Git  grep</h2>
 <p>Git&rsquo;in önemli komutu grep hakkında bir kaç bilgi vereceğim.</p>
 <p>Ben grep&rsquo;i git&rsquo;in arama komutu olarak biliyordum, ancak unix sistemlerde filtreleme komutu imiş. Geniş kullanım alanı varmış yani.</p>
 <p>Genel söz dizimi</p>
@@ -101,166 +234,11 @@
 </pre></div>
 
 
-<p>Yukarıdaki örnek basit bir kullanıma örnek olarak veridi. /home/fatih/ana.css klasörü içinde kapsayamama kelimesini arayacaktır.</p>
-<p>Grep&rsquo;in bazı özellikleri vardır. Bu kısayolları kullanarak aramalarımıza bazı özellikler ekleriz.</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep -v <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/ana.css
-</pre></div>
-
-
-<p>İçinde kapsayamama geçmeyen satırları bize verecektir. -v (invert-match)</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep -c <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/ana.css
-</pre></div>
-
-
-<p>Aradığımız dosya içinde kapsayamama kelimesinin kaç kere geçtiğini bize gösterir. -c (count) </p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep -i <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/ana.css
-</pre></div>
-
-
-<p>Aramanın büyük-küçük harfe duyarsızlaştırır. Yani arama sonuçlarında Kapsayamama çıkar. -i (ignore-case)</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep -r <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>Aramanın belirlene dizin ve alt dizinlerde yapılmasını belirler. -r (recursive)</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep -n <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>grep ile listelenen sonuçların hangi satırda olduğunu gösterir. -n (line-number)</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep <span class="s1">&#39;\&amp;lt;script&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>&lsquo;\&amp;rsquo;(ters bölü işareti) karakteri kendisinden sonra gelen karakterin özel bir karakter olduğunu gösterir ve aramaya dahil edilmesini sağlar. </p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep <span class="s1">&#39;kapsayamama&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>Birden fazla arama bloğunu bir arada kullanmak için | boru(pipe) işaretini kullanırız.</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep <span class="s1">&#39;^script&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>grep aramalarımızda Düzenli İfadeleri(regex) kullanabiliriz. Yukarıdaki örnekte script ile başlayan sonuçları getir demektir.</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep <span class="s1">&#39;script$&#39;</span> /home/fatih/
-</pre></div>
-
-
-<p>Yukarıdaki script ile biten satırları listeler. Düzenli ifadeler ile yapabileceklerimizi düşündüğümüzde aramalarımızı ne kadar özelleştirebileceğimizi anlarız.</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git grep &lt;script&gt; /home/fatih | more
-</pre></div>
-
-
-<p>grep ile arama yaptığımızda pencere genişliği kadar çıktıları bize gösterir. Tüm satırın gösterilmesi için | more kullanırız.</p>
-<h2>Git kodlarını renklendirmek için</h2>
-<p>git komutları ve işlemlerini renklendirmek mümkündür. Daha okunaklı ekranlar için Git&rsquo;in status, branch ve diff komutlarını renklendirelim. 
-Renklendirme için konfigürasyon dosyasına ~/.gitconfig aşağıdaki kodları eklemeniz yeterli.</p>
-<div class="codehilite"><pre><span class="o">[</span>color<span class="o">]</span>
-  branch <span class="o">=</span> auto
-  diff <span class="o">=</span> auto
-  status <span class="o">=</span> auto
-
-<span class="o">[</span>color &amp;quot;branch&amp;quot;<span class="o">]</span>
-  current <span class="o">=</span> yellow reverse
-  local <span class="o">=</span> yellow
-  remote <span class="o">=</span> green
-
-<span class="o">[</span>color &amp;quot;diff&amp;quot;<span class="o">]</span>
-  meta <span class="o">=</span> yellow bold
-  frag <span class="o">=</span> magenta bold
-  old <span class="o">=</span> red bold
-  new <span class="o">=</span> green bold
-
-<span class="o">[</span>color &amp;quot;status&amp;quot;<span class="o">]</span>
-  added <span class="o">=</span> yellow
-  changed <span class="o">=</span> green
-  untracked <span class="o">=</span> cyan
-</pre></div>
-
-
-<h2>Git dallanmalarını düzenleme</h2>
-<p>Git'te master'a gitmiş bütün eski dallanmalarımızı(branch) -lokalden- silmek için şöyle bir komut kullanabiliriz:</p>
-<div class="codehilite"><pre>git branch --merged master | grep -v <span class="s1">&#39;master$&#39;</span> | xargs git branch -d
-</pre></div>
-
-
-<p>Kaynak: <a href="http://devblog.springest.com/a-script-to-remove-old-git-branches">http://devblog.springest.com/a-script-to-remove-old-git-branches</a></p>
-<p><a href="https://twitter.com/muratcorlu">Murat Çorlu</a></p>
-<h2>Git te dosya adı arama</h2>
-<p>git'te dosya adıyla arama: </p>
-<div class="codehilite"><pre>git ls-files <span class="s1">&#39;*kelime*&#39;</span>
-</pre></div>
-
-
-<p><img alt="ls-files" src="https://lh5.googleusercontent.com/ssBLy7QzvOHj_9wV9Oc4HOG9-ORVPgYwF7StHQ4NSIGgXYvE-yk6LldHOJBwcLLZeULMD27xSrwI1tty3o-HEWjrSETgxDj7GAnWUC7eifiEMT1PyEWs" /></p>
-<h2>Git ile Suçluyu Bulmak</h2>
-<div class="codehilite"><pre>git blame
-</pre></div>
-
-
-<p>Bir örnek yapalım:</p>
-<div class="codehilite"><pre>git blame <span class="nb">source</span>/css-ile-tablolari-sekillendirmek.md
-</pre></div>
-
-
-<p>kodu aşağıdaki sonucu döndürüyor. Her satırı tek tek en son kimin, ne zaman değiştirdiğini gösteriyor.</p>
-<p><img alt="blame" src="https://lh3.googleusercontent.com/ZFPqtLKQ_YrIZyJ6xBhvKcKXJvAU3YZBD38ed_-Qm5lrzEWOCTMICKB1iEF_aMiKCDXtKvzWY8ntKzbwiOokd7-5E8InMvIFoCfXw3aEY8tBCrqnuoq0" /></p>
-<h2>Git ile Sadece Belirlenen Dosyaları Gönderme</h2>
-<div class="codehilite"><pre>git add
-</pre></div>
-
-
-<p>ile eklenecek dosya veya dosyalar eklenir ve sonra</p>
-<div class="codehilite"><pre>git commit -m <span class="s2">&quot;aciklama_yaz&quot;</span>
-</pre></div>
-
-
-<p>ile gönderim yapılır. 
-Bir örnek yapalım. Örneği 3 dosyada değişiklik yaptık.</p>
-<p><img alt="commit" src="https://lh4.googleusercontent.com/k05WDteZ-iehVkxeInyuuc3XhTbgfCDnQKhfC082AA4DiwkDx0mGrxMPbwiay4FZgkCSc2D12R6wr3MgX1rbuLO1gdOGRprmQSBJB-Ck9nrFVVgGNx_F" /></p>
-<p>Ancak biz bu değişikliklerden sadece bir tanesini(source/xhtml-ipuclari-1.md) göndermek istiyoruz</p>
-<p><img alt="commit add" src="https://lh4.googleusercontent.com/7EnKTSdWw4-N9UI9ojX_hsSTxDU9QZ0Q-vshOKFSoxURh7xXYdZn-7nZJwLu3KYAx1KuFrBzHmtMTBF9b4O92kZym3GX6i07yxVfKPeDstYlP1mCimYT" /></p>
-<p>Dosyayı gönderirken </p>
-<div class="codehilite"><pre>git commit -m <span class="s2">&quot;xhtml makalesindeki duzeltme yapildi&quot;</span>
-</pre></div>
-
-
-<p>kullanımı önemli.</p>
-<p><img alt="commit push" src="https://lh5.googleusercontent.com/No5ftsIV8Cil11QD7XB2sSioo7Om7N2-1nNydeuA8N5j8CInsExY9--ZoHFWmUUj7rKKtEeHcfSwQ-UZvT4ONckc63ylJsarFhFEE5-cCTJUIcCcp2i7" /></p>
-<p>Sonuçta sadece source/xhtml-ipuclari-1.md dosyası gönderilirken diğer iki dosya  gönderilmedi.<br /></p>
-<h2>Otomatik Tamamlama</h2>
-<p>Git ile terminalde kod yazarken en güzel özelliklerden birisi &lt;tab&gt; tuşu ile otomatik tamamlama yapabilme özelliği. Benim bilgisayarımda hazır geliyor eğer sizde yüklü değilse kaynak bağlantıda yükleme ayrıntıları mevcut.</p>
-<div class="codehilite"><pre><span class="nv">$ </span>git co&lt;tab&gt;&lt;tab&gt;
-commit config
-</pre></div>
-
-
-<p>Yukarıda görüldüğü gibi git co yazdık ve yazacağımız komutu unuttuk veya tamamını yazmak istemedik, ilk &lt;tab&gt; tuşuna bastığımızda eğer başka eşleşen kelime yoksa bize direk sonucu getirir, &lt;tab&gt; tuşuna iki kere basınca bu sefer eşleşen tüm kelimeler altta listelenir. Sonraki &lt;tab&gt; tuşuna basışlarımızda ise altta listelenen kelimeler arasında gezeceğiz. </p>
-<p>Yukarıdaki örnekte eğer com&lt;tab&gt; yapsa idik commit tamamlamasını otomatik yapacaktı. </p>
-<p><a href="http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks">http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks</a></p>
-<h2>Diğer İpuçları</h2>
-<p><a href="http://stackoverflow.com/questions/347901/what-are-your-favorite-git-features-or-tricks?page=2&amp;amp;tab=active#tab-top">http://stackoverflow.com/questions/347901/what-are-your-favorite-git-features-or-tricks?page=2&amp;tab=active#tab-top</a></p>
-<h2>Kaynaklar</h2>
-<ul>
-<li><a href="http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/">http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/</a></li>
-<li><a href="http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html">http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html</a></li>
-<li><a href="http://forum.ubuntu-tr.net/index.php?topic=17445.0">http://forum.ubuntu-tr.net/index.php?topic=17445.0</a></li>
-<li><a href="http://oneromer.com/?p=76">http://oneromer.com/?p=76</a></li>
-<li><a href="http://jblevins.org/log/git-colors">http://jblevins.org/log/git-colors</a></li>
-<li><a href="http://emineker.net/911/grep/">http://emineker.net/911/grep/</a></li>
-<li><a href="http://www.thinkfirstblinksecond.com/2012/04/05/git-auto-completion/">http://www.thinkfirstblinksecond.com/2012/04/05/git-auto-completion/</a></li>
-</ul><p><a href=".././git-ogreniyorum-3/#disqus_thread">yorum var</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Diğer yazılar</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+<p>Yukarıdaki örnek ...</p>
+                <a class="readmore" href=".././git-ogreniyorum-3/">devamını oku</a>
+                <p><a href=".././git-ogreniyorum-3/#disqus_thread">yorum var</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
