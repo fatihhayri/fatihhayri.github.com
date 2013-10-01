@@ -1,5 +1,363 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-09-26T15:04:00+03:00</updated><entry><title>Git</title><link href="http://www.fatihhayrioglu.com/git/" rel="alternate"></link><updated>2013-09-26T15:04:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-09-26:git/</id><summary type="html">&lt;p&gt;Git hakkında yazdığımı ipuçlarını bu sayfada toplayıp daha düzenli hale getirdim.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-10-01T14:09:00+03:00</updated><entry><title>Stylus ile Dinamik CSS Yazmak</title><link href="http://www.fatihhayrioglu.com/stylus-ile-dinamik-css-yazmak/" rel="alternate"></link><updated>2013-10-01T14:09:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-10-01:stylus-ile-dinamik-css-yazmak/</id><summary type="html">&lt;p&gt;&lt;img alt="enter image description here" src="/images/stylus_logo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;CSS ile kod yazarken büyük projelerde ne kadar dikkatli olsak da sonunda normal olarak binlerce satırlık kodlar çıkabiliyor. Düzenli olmamız ve Firebug yardımı olsa da bu kodlar içinde dolaşmak ve yönetmek bazı sorunlar neden oluyor. Dinamik CSS burada devreye giriyor. &lt;/p&gt;
+&lt;p&gt;Dinamik CSS yazımında; değişken tanımı, css fonksiyonları, fazla kod işaretçilerinden kurtarma kalıtsallık ve 4 işlem gibi özellikleri ile bizlere yardımcı oluyor. Kısacası CSS’e dinamik bir yazım olanağı kazandırıyor.&lt;/p&gt;
+&lt;h2&gt;Başlangıç&lt;/h2&gt;
+&lt;p&gt;Başlama bakımından less sadece bir js dosyası ile başlayabildiğimiz için daha mantıklı less tak-çalıştır mantığı ile çalışırken sass ve stylus için biraz ortam hazırlamak gerekiyor.&lt;/p&gt;
+&lt;p&gt;Tabi bu ortam hazırlama işini bir sefer yapıyoruz. Bir kere kurup sonra devamlı çalışıyoruz. Ayrıca hemen çalıştır less'in performans sıkıntıları sorun oluyor.&lt;/p&gt;
+&lt;p&gt;Ben burada stylus’u sizlere anlatmaya çalışacağım. Birinin diğerine göre çok büyük avantajları olmadığı için sizde bu 3 ön-derleyiciden birini seçebilirsiniz. &lt;a href="http://webmagazin.co/sass-kullanalim-ve-kullandiralim/"&gt;SASS için bu makaleyi&lt;/a&gt;, &lt;a href="http://webmagazin.co/less-csse-heyecan-katin-genel-bakis/"&gt;LESS içinde bu makaleyi&lt;/a&gt; okuyabilirsiniz. Ayrıca google araması sonucu başka Türkçe makalelere erişebiliyoruz.&lt;/p&gt;
+&lt;p&gt;Benim stylus'u seçmemdeki etkenlerden bazıları sahibinden.com'daki bazı etkenlerdi. Siz seçim yaparken kendi etkenlerinizi göz önünde bulundurarak bir seçim yapın derim.&lt;/p&gt;
+&lt;h2&gt;Stylus'u Kurmak&lt;/h2&gt;
+&lt;p&gt;Farklı işletim sistemlerinde stylus'u kurmak çok basit bir işlem.&lt;/p&gt;
+&lt;h3&gt;Ubuntu&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;repository&lt;/span&gt; &lt;span class="n"&gt;ppa&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;chris&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;lea&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;js&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;update&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;nodejs&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;npm&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt; &lt;span class="n"&gt;stylus&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;MacOS&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;curl&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//npmjs.org/install.sh | sh&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;npm&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt; &lt;span class="n"&gt;stylus&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Window&lt;/h3&gt;
+&lt;p&gt;Bu adresten &lt;a href="http://nodejs.org/"&gt;nodejs&lt;/a&gt;'i indirip kurun.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="enter image description here" src="/images/nodejs_kurmak.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Sonra komut satırına &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;npm&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;stylus&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;yazıp stylus'u kurun. npm nodejs'in paket yükleme aracı. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="nodejs kurulumu" src="/images/stylus_kurmak.PNG" /&gt;&lt;/p&gt;
+&lt;p&gt;Kurulum işi bitti. &lt;/p&gt;
+&lt;h2&gt;Stylus'u kullanmak&lt;/h2&gt;
+&lt;p&gt;Şimdi sıra stylus yazmaya geldi. Bir dosya açıp stylus yazmaya başladık ve dosyamızı kaydettik. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.deneme&lt;/span&gt;
+    &lt;span class="nt"&gt;margin&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt; &lt;span class="nt"&gt;auto&lt;/span&gt;
+    &lt;span class="nt"&gt;width&lt;/span&gt; &lt;span class="nt"&gt;150px&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Örneğin anasayfa.styl peki sayfamızda bunu nasıl göreceğiz. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;stylus&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;styl&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;anasayfa&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Komutunu çalıştırdığımızda anasayfa.css dosyası oluşturulacaktır. Dosya içeriği &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.deneme&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="k"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;150px&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Her defasında kodu çevirme kodunu yazmak yerine izleme(watch -w) komutu ile yaptığımız değişikliğin anında .css oluşturmasını sağlayabiliyoruz. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;stylus&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt; &lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;styl&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;anasayfa&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Çıkan dosyaların aynı klasörde olması karmaşaya neden olabilir. Çıktı dosyalarını farklı klasöre koyabiliyoruz.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;stylus&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt; &lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;styl&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Dinamik CSS yazılan bu sistemlerde sıkıntılardan bir tanesi yazdığınız kodu sayfaya .css olarak ekldiğiniz için kaynak koddaki .styl satırını Firebug vb. araçlarda göremiyoruz. Stylus'un bu durumu çözmek için iki çözümü var. İlki satır numaralarını göster(line -l) komutu&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;stylus&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;styl&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıdaki şekilde bir tanım sonucunda her tanımın üzerine styl dosyasındaki satırı yazılır.&lt;/p&gt;
+&lt;p&gt;Ayrıca FireBug'ın bir yan eklentisi olan FireStylus eklentisi var. Ancak ben çalıştıramadım. :(&lt;/p&gt;
+&lt;h2&gt;Stylus Kalsör ve Dosya Yapısı&lt;/h2&gt;
+&lt;p&gt;Stylus ile kod yazarken klasör ve dosyaların yerini baştan ayarlamak sonda sorun yaşamamak adına önemli&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+    &lt;span class="o"&gt;|--&lt;/span&gt; &lt;span class="n"&gt;styl&lt;/span&gt;
+        &lt;span class="o"&gt;|--&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;styl&lt;/span&gt; 
+        &lt;span class="o"&gt;|--&lt;/span&gt; &lt;span class="n"&gt;reset&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;styl&lt;/span&gt; 
+        &lt;span class="o"&gt;|--&lt;/span&gt; &lt;span class="n"&gt;buttons&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;styl&lt;/span&gt; 
+        &lt;span class="o"&gt;|--&lt;/span&gt; &lt;span class="n"&gt;global&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;styl&lt;/span&gt; 
+    &lt;span class="o"&gt;|--&lt;/span&gt; &lt;span class="n"&gt;css&lt;/span&gt;
+        &lt;span class="o"&gt;|--&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;
+        &lt;span class="o"&gt;|--&lt;/span&gt; &lt;span class="n"&gt;reset&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;
+        &lt;span class="o"&gt;|--&lt;/span&gt; &lt;span class="n"&gt;buttons&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;
+        &lt;span class="o"&gt;|--&lt;/span&gt; &lt;span class="n"&gt;global&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;index.styl diye dosya oluşuturup diğer .styl dosyalarını bu dosya içinden çağırarak değişken ve css fonksiyonlarına her dosyadan erişme imkanı sağlamalıyız. index.styl dosyası&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// Core variables and mixins&lt;/span&gt;
+&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;variables&lt;/span&gt;
+&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;mixins&lt;/span&gt;
+
+&lt;span class="c1"&gt;// CSS Reset&lt;/span&gt;
+&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;reset&lt;/span&gt;
+
+&lt;span class="c1"&gt;// global&lt;/span&gt;
+&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;global&lt;/span&gt;
+&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;layout&lt;/span&gt;
+
+&lt;span class="c1"&gt;// Components: Buttons &amp;amp; Alerts&lt;/span&gt;
+&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;buttons&lt;/span&gt;
+&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;icons&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Şeklinde bir yapı kurmak mantıklı.&lt;/p&gt;
+&lt;h3&gt;Daha az kod yazmak, Esneklik&lt;/h3&gt;
+&lt;p&gt;Stylus ile daha az kod yazıyoruz, ancak daha az kod yazarken kod içinde kaybolmuyoruz bu önemli.&lt;/p&gt;
+&lt;p&gt;Sass ve Less bu konuda normal css işaretlerini kullanırken stylus bu konuda bayağı bir esneklik sağlıyor. Sass’ında Stylus benzeri kullanım opsiyonu olduğunu duydum. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;body&lt;/span&gt;
+    &lt;span class="nt"&gt;padding&lt;/span&gt; &lt;span class="nt"&gt;10px&lt;/span&gt; &lt;span class="nt"&gt;5px&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıdaki koda ilk baktığımızda CSS ile olan farklarını hemen dikkat çekiyor. Aslında kırpılmış CSS kodu gibi. Süslü parantezler yok({}), seçici ile değer arasındaki iki nokta üst üste(:) ve sondaki noktalı virgül(;) yok.&lt;/p&gt;
+&lt;p&gt;Yorumlama sonucu css;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;10px&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;İç İçe Seçiciler (Nesting)&lt;/h3&gt;
+&lt;p&gt;Etkinlik için ard arda uzun seçiciler yazmak yerine iç içe tanımlar ile bu daha kolay sağlanır. Bu bize temiz bir Kalıtsallık sağlar ve kısa kodlar ile işimizi halletmemize yardım eder.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt;
+        &lt;span class="nt"&gt;li&lt;/span&gt;
+                &lt;span class="nt"&gt;float&lt;/span&gt; &lt;span class="nt"&gt;left&lt;/span&gt;
+                &lt;span class="nt"&gt;a&lt;/span&gt;
+                    &lt;span class="nt"&gt;color&lt;/span&gt; &lt;span class="nt"&gt;red&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Sonuç CSS;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;CSS yazımını kolaylaştırıyor. Ancak dikkat etmek gerekiyor çok içiçe kullanımda üretilen CSS seçici yığınına dönebilir.&lt;/p&gt;
+&lt;h3&gt;Değişkenler(Variable)&lt;/h3&gt;
+&lt;p&gt;Değişkenler bir kere tanımlanan bir değeri bir çok defa kullanmamızı sağlayan yapılardır. Bir yerde değiştirdiğimizde tüm projede değiştirmenize olanak sağlar.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;yazi-tipi-boyutu&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;14px&lt;/span&gt;
+
+&lt;span class="nt"&gt;body&lt;/span&gt;
+    &lt;span class="nt"&gt;font&lt;/span&gt; &lt;span class="nt"&gt;yazi-tipi-boyutu&lt;/span&gt; &lt;span class="nt"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;sans-serif&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Sonuç CSS;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;14px&lt;/span&gt; &lt;span class="n"&gt;Arial&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;sans-serif&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Değişken kullanımı css prececor ile yapılan güzel bir özellik ki CSS4 ile birlikte normal css’e de gelecek.&lt;/p&gt;
+&lt;p&gt;Stylus'ta ayrıca koşullu değişken tanımı da vardır.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;position&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; 
+    &lt;span class="nt"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;arguments&lt;/span&gt; 
+    &lt;span class="nt"&gt;z-index&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;1&lt;/span&gt; &lt;span class="nt"&gt;unless&lt;/span&gt; &lt;span class="k"&gt;@z-index&lt;/span&gt;
+
+&lt;span class="nf"&gt;#logo&lt;/span&gt; 
+    &lt;span class="nt"&gt;z-index&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;20&lt;/span&gt; 
+    &lt;span class="nt"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;absolute&lt;/span&gt;
+
+&lt;span class="nf"&gt;#logo2&lt;/span&gt; 
+    &lt;span class="nt"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;absolute&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tanımı ile z-index tanımı olmayanlara 1 otomatik olarak tanımlanır. &lt;/p&gt;
+&lt;h3&gt;Yorum satırı&lt;/h3&gt;
+&lt;p&gt;Stylus’da yorumlar javascript kullanımı gibi&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nt"&gt;ie7&lt;/span&gt; &lt;span class="nt"&gt;fix&lt;/span&gt; &lt;span class="nt"&gt;et&lt;/span&gt;
+&lt;span class="nt"&gt;body&lt;/span&gt;
+    &lt;span class="nt"&gt;margin&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt; &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nt"&gt;ie7&lt;/span&gt; &lt;span class="nt"&gt;fix&lt;/span&gt;
+
+&lt;span class="c"&gt;/*&lt;/span&gt;
+&lt;span class="c"&gt;* Çoklu satırlı yorum&lt;/span&gt;
+&lt;span class="c"&gt;*/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Kalıtsallık&lt;/h3&gt;
+&lt;p&gt;Bir özelliğin veya benzer bir sınıfın diğer bir özelliğe kalıtsal olarak geçmesini sağlar. &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;form&lt;/span&gt;
+    &lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nt"&gt;text&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+        &lt;span class="nt"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;5px&lt;/span&gt;
+        &lt;span class="nt"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;1px&lt;/span&gt; &lt;span class="nt"&gt;solid&lt;/span&gt; &lt;span class="nf"&gt;#eee&lt;/span&gt;
+        &lt;span class="nt"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;#ddd&lt;/span&gt;
+&lt;span class="nt"&gt;textarea&lt;/span&gt;
+    &lt;span class="k"&gt;@extends&lt;/span&gt; &lt;span class="nt"&gt;form&lt;/span&gt; &lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nt"&gt;text&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="nt"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;10px&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;@extends ile hiyerarşik kalıtsallık alınabiliyor. Bu özellik şu an sadece stylus'ta var. &lt;/p&gt;
+&lt;p&gt;Sonuç CSS&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;form&lt;/span&gt; &lt;span class="nt"&gt;input&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nt"&gt;text&lt;/span&gt;&lt;span class="o"&gt;],&lt;/span&gt;
+&lt;span class="nt"&gt;form&lt;/span&gt; &lt;span class="nt"&gt;textarea&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="k"&gt;solid&lt;/span&gt; &lt;span class="m"&gt;#eee&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#ddd&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;textarea&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;CSS Foksiyonları(mixing)&lt;/h3&gt;
+&lt;p&gt;Css fonksiyonları bir sınıfa tanımlanmış tüm özellikleri başka bir yerde kullanmanıza yarar. Değişkenlere benzer fakat tüm sınıfı içerir. Ayrıca fonksiyon gibi parametre de alabilir. &lt;/p&gt;
+&lt;p&gt;Stylus’un az kod yazma prensibi bu tip karmaşık yapılarda diğer seçenekler göre ön plana çımasını sağlıyor.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;border-radius&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;n&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="nt"&gt;-webkit-border-radius&lt;/span&gt; &lt;span class="nt"&gt;n&lt;/span&gt;
+    &lt;span class="nt"&gt;-moz-border-radius&lt;/span&gt; &lt;span class="nt"&gt;n&lt;/span&gt;
+    &lt;span class="nt"&gt;-ms-border-radius&lt;/span&gt; &lt;span class="nt"&gt;n&lt;/span&gt;
+    &lt;span class="nt"&gt;-o-border-radius&lt;/span&gt; &lt;span class="nt"&gt;n&lt;/span&gt;
+    &lt;span class="nt"&gt;border-radius&lt;/span&gt; &lt;span class="nt"&gt;n&lt;/span&gt;
+&lt;span class="nf"&gt;#btn&lt;/span&gt;
+    &lt;span class="nt"&gt;border-radius&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;3px&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="c"&gt;/* veya border-radius 3px */&lt;/span&gt;
+    &lt;span class="nt"&gt;background&lt;/span&gt; &lt;span class="nf"&gt;#e9573f&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;n parametrik olarak değiştirme imkanı veriyor bize. &lt;/p&gt;
+&lt;p&gt;Sonuç CSS&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#btn&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#e9573f&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Bu şekilde CSS3'ün önek(prefix) sorununa çözüm bulmuşta oluyoruz. NIB'i incelemekte yarar var.&lt;/p&gt;
+&lt;h3&gt;4 İşlem&lt;/h3&gt;
+&lt;p&gt;CSS içinde dört işlem işlerini yapabiliyoruz.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;leftSpace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;10&lt;/span&gt;
+
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.link&lt;/span&gt;
+    &lt;span class="nt"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;24px&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;2&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="nt"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;5&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nt"&gt;leftSpace&lt;/span&gt;
+    &lt;span class="nt"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;4px&lt;/span&gt; &lt;span class="nt"&gt;-&lt;/span&gt; &lt;span class="nt"&gt;2&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Sonuçta css aşağıdaki gibi olacakttır;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nc"&gt;.link&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;50&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;2px&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;CSS'e Dönmek&lt;/h3&gt;
+&lt;p&gt;Bazı durumlarda stylus ile işin içinden çıkamadığımız haller oluyor. Bu gibi durumlarda çözüm bulamazsak normal CSS kodu yazabiliyoruz. Bu kod blokları yorumlanmadan kalıyor.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;@css&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Sonuç CSS;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;font&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;14px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ben bu durumu svg kullanımda yaşadım. Ara sıra işe yarıyor.&lt;/p&gt;
+&lt;h3&gt;Editör Özellikleri&lt;/h3&gt;
+&lt;p&gt;Stylus yazmak için ben normaldede kullandığım Sublime Text 22yi editör olarak kullanıyorum. Sizlere de öneririm.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sublime Text'in pkaet kontrolü açıp(MacOs'da Command+Shift+p , Linux/Windows'da Control+Shift+p)&lt;/li&gt;
+&lt;li&gt;"Package Control: Install Package" seçin (bir kaç saniye bekletebilir)&lt;/li&gt;
+&lt;li&gt;"Stylus" seçiniz.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Paket kontrolü otomatik olarak son sürüm renklendirme ve otomatik tamamlama seçenklerini indirecektir. &lt;/p&gt;
+&lt;p&gt;Kaynak; &lt;a href="https://github.com/billymoon/Stylus/"&gt;https://github.com/billymoon/Stylus/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Girintileri görmek&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Girintilerin yoğun olarak kullanıldığı Stylus'ta girintileri görmek önem kazanıyor. Sublime Text'te girintileri göstermek için &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;preferences&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;settings&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;default&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;ta&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;draw_white_space&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;all&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;yaparak gösterebiliyoruz.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sublime Text2 girintileri görmek" src="/images/girintileri_gormek.png" /&gt;&lt;/p&gt;
+&lt;h3&gt;CSS'leri Stylus'a Çevirmek&lt;/h3&gt;
+&lt;p&gt;Daha önce yazdığımız CSS kodlarını stylus'a çevirmek istiyorsanız. Bunu komut satırı ile yapabiliyoruz. Büyük (-C) işareti yardımı ile bunu yapıyoruz.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;stylus&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt; &lt;span class="n"&gt;dosya_adi&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;css&lt;/span&gt; &lt;span class="n"&gt;cikan_dosya&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;styl&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ve css dosyamız stylus'a çevrildi. Bu çevirme işi beni çok tatmin etmedi.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://css2stylus.com/"&gt;http://css2stylus.com/&lt;/a&gt; çevrimi içi araç stylus dan daha iyi çeviriyor.&lt;/p&gt;
+&lt;h2&gt;Hataları Ayıklama&lt;/h2&gt;
+&lt;p&gt;Diğer rakiplerine göre hata bulma ve düzenlemek stylus ile daha kolay.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="enter image description here" src="/images/stylus_hata.jpg" /&gt;&lt;/p&gt;
+&lt;h2&gt;Sorunlar&lt;/h2&gt;
+&lt;p&gt;Stylus ile çalışmaya başladıktan sonra yaşadığım bazı sorunlar var. Bazılarını çözememe karşın bazıları ile hala sorunluyuz.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sublime text 2 stylus otomatik tamamlamayı çalıştıramadım&lt;/li&gt;
+&lt;li&gt;Firestylus çalıştıramadım, veya  &lt;br /&gt;
+&lt;strong&gt;stylus -l &lt;dosya_adi&gt; şeklinde css içine basıyor.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Girintileme nedeni ile çıktı olan css de seçici zinciri uzuyor&lt;/li&gt;
+&lt;li&gt;özellik seçicileri kullanımında sıkıntı var &lt;br /&gt;
+&lt;strong&gt;Çözüldü&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;otomatik kısaltma bazı sorunlara neden oluyor. örn #ffffff &lt;br /&gt;
+&lt;strong&gt;&lt;a href="https://github.com/LearnBoost/stylus/issues/581"&gt;https://github.com/LearnBoost/stylus/issues/581&lt;/a&gt; burada çözümü var, ama -1 aldı benden&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Sonuç&lt;/h2&gt;
+&lt;p&gt;Stylus ile kod yazmaya başladığımda ilk başlarda biraz acemilik yaşadım ama hemen alıştım ve sonra geri dönmek sorun oldu. İnsan kolaya çok çabuk alışıyor. &lt;/p&gt;
+&lt;p&gt;Stylus'a geçtikten sonra dinamik sprite işine göz atmayı düşünüyorum. &lt;/p&gt;
+&lt;p&gt;Zamanla editörlerin ve tarayıcıların bu konuda ilerleme katederek daha hal alacağını&lt;/p&gt;
+&lt;p&gt;Kullandıkça stylus ile alakalı paylaşım devam edecektir. &lt;/p&gt;
+&lt;p&gt;Kalın sağlıcakla.&lt;/p&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[&lt;a href="http://learnboost.github.io/stylus/docs/selectors.html"&gt;http://learnboost.github.io/stylus/docs/selectors.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.viget.com/inspire/some-lesser-known-features-of-less/"&gt;http://www.viget.com/inspire/some-lesser-known-features-of-less/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://coding.smashingmagazine.com/2011/09/09/an-introduction-to-less-and-comparison-to-sass/"&gt;http://coding.smashingmagazine.com/2011/09/09/an-introduction-to-less-and-comparison-to-sass/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sitepoint.com/a-comprehensive-introduction-to-less/"&gt;http://www.sitepoint.com/a-comprehensive-introduction-to-less/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.vanseodesign.com/css/css-preprocessors/"&gt;http://www.vanseodesign.com/css/css-preprocessors/&lt;/a&gt; (****)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.hongkiat.com/blog/less-tips-tools/"&gt;http://www.hongkiat.com/blog/less-tips-tools/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://designshack.net/articles/css/sass-vs-stylus-who-wins-the-minimal-syntax-battle/"&gt;http://designshack.net/articles/css/sass-vs-stylus-who-wins-the-minimal-syntax-battle/&lt;/a&gt; (sass ve stylus karşılaştırması)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/"&gt;http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/&lt;/a&gt; (sass, less ve stylus karşılaştırması)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://learnboost.github.com/stylus/"&gt;http://learnboost.github.com/stylus/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-tricks.com/poll-results-popularity-of-css-preprocessors/"&gt;http://css-tricks.com/poll-results-popularity-of-css-preprocessors/&lt;/a&gt; anket&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-tricks.com/sass-vs-less/ sass ve less karşılaştırması"&gt;http://css-tricks.com/sass-vs-less/ sass ve less karşılaştırması&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://thechangelog.com/stylus-expressive-robust-feature-rich-css-language/"&gt;http://thechangelog.com/stylus-expressive-robust-feature-rich-css-language/&lt;/a&gt; (stylus)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sitepoint.com/a-comprehensive-introduction-to-less/"&gt;http://www.sitepoint.com/a-comprehensive-introduction-to-less/&lt;/a&gt; (less e başlamak)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sitepoint.com/a-comprehensive-introduction-to-less-mixins/"&gt;http://www.sitepoint.com/a-comprehensive-introduction-to-less-mixins/&lt;/a&gt; (lesss mixins)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://verekia.com/less-css/dont-read-less-css-tutorial-highly-addictive"&gt;http://verekia.com/less-css/dont-read-less-css-tutorial-highly-addictive&lt;/a&gt; (less)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.wellfireinteractive.com/blog/introduction-to-stylus/"&gt;http://www.wellfireinteractive.com/blog/introduction-to-stylus/&lt;/a&gt; (stylus)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://nylira.com/stylus-the-revolutionary-successor-to-css/"&gt;http://nylira.com/stylus-the-revolutionary-successor-to-css/&lt;/a&gt; (stylus örnek kaşılaştırma)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://visionmedia.github.io/nib/"&gt;http://visionmedia.github.io/nib/&lt;/a&gt; (stylus)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://robdodson.me/blog/2012/12/28/debug-less-with-chrome-developer-tools/"&gt;http://robdodson.me/blog/2012/12/28/debug-less-with-chrome-developer-tools/&lt;/a&gt; (less chrome)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://npmjs.org/~tjholowaychuk"&gt;https://npmjs.org/~tjholowaychuk&lt;/a&gt; (stylus geliştiricilerinden)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://npmjs.org/~kizu"&gt;https://npmjs.org/~kizu&lt;/a&gt; (stylus geliştiricilerinden) ie için çözüm önerisi&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/shomeya/bootstrap-stylus/blob/v1.4.0-stylus/lib/mixins.styl"&gt;https://github.com/shomeya/bootstrap-stylus/blob/v1.4.0-stylus/lib/mixins.styl&lt;/a&gt; (stylus örnekleri)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://daker.me/2013/07/why-stylus-fit-better-my-needs.html"&gt;http://daker.me/2013/07/why-stylus-fit-better-my-needs.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://willnathan.com/valise/2013/3/22/installing-nib-for-stylus-within-express"&gt;http://willnathan.com/valise/2013/3/22/installing-nib-for-stylus-within-express&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/andris9/stylus-sprite"&gt;https://github.com/andris9/stylus-sprite&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="dinamk-css"></category><category term="css"></category><category term="stylus"></category><category term="degişken"></category><category term="css-fonksiyonu"></category></entry><entry><title>Git</title><link href="http://www.fatihhayrioglu.com/git/" rel="alternate"></link><updated>2013-09-26T15:04:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-09-26:git/</id><summary type="html">&lt;p&gt;Git hakkında yazdığımı ipuçlarını bu sayfada toplayıp daha düzenli hale getirdim.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://fatihhayrioglu.com/surum-kontrol-sistemi-git/"&gt;Sürüm Kontrol Sistemi Git&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;Genel Tanımlar&lt;/li&gt;
@@ -714,79 +1072,4 @@ Android Browser Desteklemiyor&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://caniuse.com/#search=gradient"&gt;http://caniuse.com/#search=gradient&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx"&gt;http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://stackoverflow.com/a/3749340/296373"&gt;http://stackoverflow.com/a/3749340/296373&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="css"></category><category term="css3"></category><category term="renk-geçişi"></category><category term="filtre"></category><category term="hata-ayıklama"></category><category term="sıfırlama"></category></entry><entry><title>CSS3 Plan Modülleri</title><link href="http://www.fatihhayrioglu.com/css3-plan-modulleri/" rel="alternate"></link><updated>2013-07-10T12:17:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-07-10:css3-plan-modulleri/</id><summary type="html">&lt;p&gt;CSS3 plan modülleri hala üzerinde çalışmaya devam edilen yapılardır. CSS3 plan yapılarını kökten değiştirecek ve ihtiyaçları tam karşılayacak şekilde değişikliklere gidiyor. Henüz gelişme aşamasındaki bu yaklaşımlar hakkında biraz bilgi sahibi olalım. Daha önce bahsettiğimiz ve burada genel manası ile sizlere bahsedeceğim modüller var. Daha önceki makalelerimde çoklu kolonlar(multi column layout) ve Esnek kutu yerleşimi(flexible box layout) konularını ilgili makalelerinden daha detaylı bilgiyi edine bilirsiniz.&lt;/p&gt;
-&lt;h2&gt;CSS3 Çoklu Kolonlar(multi column) Modülü&lt;/h2&gt;
-&lt;p&gt;Bu modülün tamamlanmış ve tüm yeni nesil tarayıcılar tarafından desteklenmiş olması güzel bir a. CSS3 plan modülleri arasında öğrenilmeye başlanacak en iyi modüldür.&lt;/p&gt;
-&lt;p&gt;Detaylı bilgi için &lt;a href="http://fatihhayrioglu.com/css3-coklu-kolonlar/"&gt;http://fatihhayrioglu.com/css3-coklu-kolonlar/&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;CS3 Esnek Kutu (flexible box) Modülü&lt;/h2&gt;
-&lt;p&gt;Esnek kutu modeli yeni planlama modülleri arasında en çok isminden söz ettiren modül. Bazı karışık plan sorunlarına güzel çözümler üretmektedir.&lt;/p&gt;
-&lt;p&gt;Detaylı bilgi için  &lt;a href="http://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/"&gt;http://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;CSS3 Izgara(Grid) Modülü&lt;/h2&gt;
-&lt;p&gt;CSS ızgara modülünü Microsoft önerdi ve şu an kararlı bir şekilde çalışıyor. İnternet Explorer 10 ile test edebileceğimiz bir modül. &lt;/p&gt;
-&lt;p&gt;Izgara Düzeni; sayfa veya uygulamaları büyük bloklara bölmeye yarayan bir modüldür. Bu bölme işlemi tablo düzeni gibi satır ve sütunlara bölerek yapar. &lt;/p&gt;
-&lt;p&gt;Tablo kullanımına benzese de herhangi bir fiziksel html elemanına(table, td ve tr gibi.) ihtiyacı olmaması farklı çözünürlükteki araçlar uyumlu yapıları olmasını sağlıyor.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="image alt text" src="https://lh3.googleusercontent.com/tg0fRkWdz5LW0-orjNt6KV87DIeKKT9KfK182C7LiiM4ghtjU8clOlVOARQE_v2rxOxRDECgaBzBWBNiCNiZXXIC83527EgKgyQTn4uEOp4QeW1XN92dC7VXDA" /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://www.w3.org/TR/css3-grid-layout/"&gt;http://www.w3.org/TR/css3-grid-layout/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://24ways.org/2012/css3-grid-layout/"&gt;http://24ways.org/2012/css3-grid-layout/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://hugogiraudel.com/2013/04/04/css-grid-layout/"&gt;http://hugogiraudel.com/2013/04/04/css-grid-layout/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ie/hh673533(v=vs.85).aspx"&gt;http://msdn.microsoft.com/en-us/library/ie/hh673533(v=vs.85).aspx&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://css-tricks.com/almanac/properties/g/grid/"&gt;http://css-tricks.com/almanac/properties/g/grid/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html"&gt;http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html&lt;/a&gt; &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;CSS3 Bölgeler (Regions) Modülü&lt;/h2&gt;
-&lt;p&gt;CSS3 Bölgeler modülü Adobe tarafından üretilip w3c’ye önerilen bir modül. Tarayıcı desteği konusunda sıkıntılı bir modül. Sadece İnternet Explorer 10’un desteği var şu an. Karışık yapılı planlamaları karşılayabilecek bir modül. Dergi ,gazete ve test kitabı benzeri planlamalar için gayet başarılı bir modül. Bu modülü kullanarak çok çekici sayfalar oluşturulabilir.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="image alt text" src="https://lh6.googleusercontent.com/cOMC8CFYufbAVW6BewUVQXQUTHunnCoM_4NwHg3GJ3sHUP3JoOKN6pd7aienJ6p-CZBcDkTKYK7vValnfpiA2jN-AW7Qb9U_hwg8FxcGYXm2hmSYDQOlTrWevQ" /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://net.tutsplus.com/tutorials/html-css-techniques/diving-into-css-regions/"&gt;http://net.tutsplus.com/tutorials/html-css-techniques/diving-into-css-regions/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ie/hh673537(v=vs.85).aspx"&gt;http://msdn.microsoft.com/en-us/library/ie/hh673537(v=vs.85).aspx&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://blogs.adobe.com/webplatform/category/features/css-regions/"&gt;http://blogs.adobe.com/webplatform/category/features/css-regions/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://www.adobe.com/devnet/html5/articles/css3-regions.html"&gt;http://www.adobe.com/devnet/html5/articles/css3-regions.html&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://galjot.si/css-regions"&gt;http://galjot.si/css-regions&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://css-tricks.com/content-folding/"&gt;http://css-tricks.com/content-folding/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;CSS3 İstisna (Exclusions) Modülü&lt;/h2&gt;
-&lt;p&gt;CSS3 İstisnalar ve şekiller modülü ile yazılar resimlerin etrafında veya içerisinde sarılabiliyoruz. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="image alt text" src="https://lh3.googleusercontent.com/JXuDGguZWQC8-Tidk0jGIo17zrvh0XJo3ClbOj-cyI-O1CJKNNQwO_8lRQGtjDf4U3GUxjFsuzfFFLID5_lNEyrQqypZCrXWFvcA-m_7LzamWSz6QmuwIV1IMg" /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://dev.w3.org/csswg/css-exclusions/"&gt;http://dev.w3.org/csswg/css-exclusions/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://www.techrepublic.com/blog/webmaster/experiment-with-css3-exclusions-and-shapes-module/2586"&gt;http://www.techrepublic.com/blog/webmaster/experiment-with-css3-exclusions-and-shapes-module/2586&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://blog.digitalbackcountry.com/2012/03/experimenting-with-css-exclusions/"&gt;http://blog.digitalbackcountry.com/2012/03/experimenting-with-css-exclusions/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://adobe.github.io/web-platform/samples/css-exclusions/"&gt;http://adobe.github.io/web-platform/samples/css-exclusions/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Sonuç&lt;/h2&gt;
-&lt;p&gt;Web alemi geliştikçe ve farklı mecralara yayıldıkça farklı sayfa planlarına ihtiyaç duyulmaktadır. CSS3 bu konuda çabalıyor, ancak bana göre tüm isteklere bir çözüm bulmak zor. CSS3’ün bir çok yeni özelliği tarayıcılar tarafından desteklenmekte iken bazı planlama modülleri destek ve gelişme açısından geride kalmaktadır. &lt;/p&gt;
-&lt;p&gt;Ben daha önce desteği fazla olan çoklu kolan ve esnek kutu modelini anlatmıştım. Izgara modülü, Bölgeler ve İsitisnalar modülleri henüz yeterliliklerini kabul ettiremedikleri için sadece biraz bahsedip geçtim. İleride bu modüller gelişip desteğini arttırırsa detaylı yazılarını yazabilirim.&lt;/p&gt;
-&lt;p&gt;Kalın sağlıcakla&lt;/p&gt;</summary><category term="CSS3"></category><category term="plan"></category><category term="css3 çoklu kolonlar"></category><category term="css3 esnek kutular"></category><category term="css3 ızgara modulü"></category><category term="css3 bölgeler modülü"></category><category term="css3 istisnalar modülü"></category></entry></feed>
+&lt;/ul&gt;</summary><category term="css"></category><category term="css3"></category><category term="renk-geçişi"></category><category term="filtre"></category><category term="hata-ayıklama"></category><category term="sıfırlama"></category></entry></feed>
