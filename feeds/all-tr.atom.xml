@@ -1,5 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all-tr.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-10-01T14:09:00+03:00</updated><entry><title>Stylus ile Dinamik CSS Yazmak</title><link href="http://www.fatihhayrioglu.com/stylus-ile-dinamik-css-yazmak/" rel="alternate"></link><updated>2013-10-01T14:09:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-10-01:stylus-ile-dinamik-css-yazmak/</id><summary type="html">&lt;p&gt;&lt;img alt="enter image description here" src="/images/stylus_logo.png" /&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Fatih Hayrioğlu'nun not defteri</title><link href="http://www.fatihhayrioglu.com/" rel="alternate"></link><link href="http://www.fatihhayrioglu.com/feeds/all-tr.atom.xml" rel="self"></link><id>http://www.fatihhayrioglu.com/</id><updated>2013-11-05T14:59:00+02:00</updated><entry><title>jQuery İpuçları - 5</title><link href="http://www.fatihhayrioglu.com/jquery-ipuclari-5/" rel="alternate"></link><updated>2013-11-05T14:59:00+02:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-11-05:jquery-ipuclari-5/</id><summary type="html">&lt;h2&gt;event.preventDefault()&lt;/h2&gt;
+&lt;p&gt;Eğer bu fonksiyon çağrıldı ise başlangıçta tetiklenen olay çalışmayacaktır. event.preventDefault() jQuery bağlantı kontrolü için sık sık başvurduğumuz bir metottur. &lt;/p&gt;
+&lt;p&gt;Bir örnek ile daha kolay açıklarız durumu&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Tıkla&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Yukarıdaki gibi bir bağlantımız olsun. Biz bu bağlantıya müdahale edip bir işlem yaptırmak istediğimizde tarayıcı bunu bir bağlantı olarak gördüğü için &lt;strong&gt;href&lt;/strong&gt; içindeki değeri uygulayacaktır. &lt;strong&gt;href&lt;/strong&gt; içinde diyez(#) olduğundan sayfayı yukarı kaydıracaktır. Biz tarayıcının &lt;strong&gt;href&lt;/strong&gt; değerini yorumlamasını durdurmak ve kendi işimizi yapmak için &lt;strong&gt;event.preventDefault()&lt;/strong&gt; metodunu kullanırız.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;a&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+   &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;preventDefault&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+   &lt;span class="c1"&gt;// kendi işimizi yapalım&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;fonksiyona parametre olarak &lt;strong&gt;event(e)&lt;/strong&gt; vererek &lt;strong&gt;e.preventDefault();&lt;/strong&gt; kısaltmasını kullanabiliyoruz. Bağlantı fonksiyonun ilk satırında olması önemli. Basit ama bilinmesi gereken bir konu.&lt;/p&gt;
+&lt;h2&gt;Her zamana son versiyonu çekmek için&lt;/h2&gt;
+&lt;p&gt;jQuery sürümlerini güncellemek bazen sıkıntı olabiliyor. İlk jQuery ipuçları makalemde yazdığım &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt; &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="nx"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;/script&amp;gt;&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt; &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+ &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="c1"&gt;//isler burada&lt;/span&gt;
+ &lt;span class="p"&gt;});&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Koda bakarsak, jquery 1.2.6 sürümü çekiliyor. Bunun yerine her daim güncel bir jQuery sürümü çekmek için &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt; &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;
+&lt;span class="nx"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;http://code.jquery.com/jquery-latest.min.js&amp;quot;&lt;/span&gt; &lt;span class="nx"&gt;charset&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;jQuery’nini kendi CDN son sürümü çekebiliyoruz.&lt;/p&gt;
+&lt;h2&gt;Form elemanları sıfırlamak için&lt;/h2&gt;
+&lt;p&gt;Bazen form elemanlarını sıfırlamak sorun olabiliyor. jQuery ile bir yöntem ararken stackoverflow’da gördüğüm bir cevabı not edeyim dedim.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;resetForm&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$form&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;$form&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input:text, input:password, input:file, select, textarea&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;val&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="nx"&gt;$form&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;input:radio, input:checkbox&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+         &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;removeAttr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;checked&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;removeAttr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;selected&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;// kullanımı:&lt;/span&gt;
+&lt;span class="nx"&gt;resetForm&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#myform&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt; &lt;span class="c1"&gt;// id ile &lt;/span&gt;
+&lt;span class="nx"&gt;resetForm&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;form[name=myName]&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt; &lt;span class="c1"&gt;// name ile&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;kaynak:&lt;/strong&gt; &lt;a href="http://stackoverflow.com/questions/680241/blank-out-a-form-with-jquery"&gt;http://stackoverflow.com/questions/680241/blank-out-a-form-with-jquery&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;popup penceresi açmak&lt;/h2&gt;
+&lt;p&gt;Ey gidi eski günler. Ne popup kullanırdık. Şimdilerde çok nadir kullanılsa da ihtiyaç olduğu durumlar için basit bir yöntem gördüm ve paylaşayım dedim.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;a.popup&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;live&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
+        &lt;span class="nx"&gt;newwindow&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;href&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;height=200,width=150&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;focus&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;newwindow&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;focus&lt;/span&gt;&lt;span class="p"&gt;()}&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;kaynak:&lt;/strong&gt; &lt;a href="http://www.jquery4u.com/windows/jquery-cleanly-open-links-popup-windows/"&gt;http://www.jquery4u.com/windows/jquery-cleanly-open-links-popup-windows/&lt;/a&gt; &lt;/p&gt;
+&lt;h2&gt;textarea karakter sayımı&lt;/h2&gt;
+&lt;p&gt;Kullanıcının yazdığı metin girdi alanlarına belli sayıda karakter girmesi istendiğinde girdi alanı üzerine, altına veya herhangi bir yanına bir sayaç koyarız. Bu işi jQuery ile yapmak gayet basit. &lt;/p&gt;
+&lt;p&gt;HTML kodu;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;count&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;0&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;textarea&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;textarea&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;rows=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;cols=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;30&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/textarea&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;jQuery Kodu;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;textarea&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;bind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;keydown keyup keypress change&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;thisValueLength&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;val&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.count&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;html&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;thisValueLength&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/CzjJI?type=result&amp;amp;height=250" id="cp_embed_hgplm"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;kaynak: http://black-flag.net/jquery/20120229-3696.html &lt;/p&gt;
+&lt;h2&gt;Jquery Trim() sorunu ve çözümü&lt;/h2&gt;
+&lt;p&gt;Son olarakta sizlerle karşılaştığım bir sorunu ve çözümünü paylaşmak istiyorum. Bir form elemanı değerini &lt;strong&gt;trim()&lt;/strong&gt; fonksiyonu yardımı ile alıp kullandığım kodun bir kısmında ie8’de sorun yaşadım.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;val&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;trim&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;!=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Message: Object doesn't support this property or method&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hatasını veriyordu ie8, çözümü stackoverflow’da buldum. Yazılımcı dostu site sağ olsun tüm aradıklarımı buluyorum. Çözüm;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;trim&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;val&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;şeklinde yazınca sorun çözüldü.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;kaynak:&lt;/strong&gt; &lt;a href="http://stackoverflow.com/questions/3439316/ie8-and-jquerys-trim"&gt;http://stackoverflow.com/questions/3439316/ie8-and-jquerys-trim&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Bunların dışında gördüğüm güzel linkleri aşağıda kaynaklar bölümünde paylaştım. Her biri incelemeye değer.&lt;/p&gt;
+&lt;p&gt;Kalın sağlıcakla.&lt;/p&gt;
+&lt;h2&gt;Kaynaklar&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://james.padolsey.com/javascript/jquery-code-smells/"&gt;http://james.padolsey.com/javascript/jquery-code-smells/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://addyosmani.com/blog/31-jquery-snippets/"&gt;http://addyosmani.com/blog/31-jquery-snippets/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tutorialspoint.com/jquery/event-preventdefault.htm"&gt;http://www.tutorialspoint.com/jquery/event-preventdefault.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-tricks.com/return-false-and-prevent-default/"&gt;http://css-tricks.com/return-false-and-prevent-default/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html"&gt;http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx"&gt;http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://net.tutsplus.com/tutorials/javascript-ajax/20-helpful-jquery-methods-you-should-be-using/"&gt;http://net.tutsplus.com/tutorials/javascript-ajax/20-helpful-jquery-methods-you-should-be-using/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://addyosmani.com/blog/31-jquery-snippets/"&gt;http://addyosmani.com/blog/31-jquery-snippets/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tuttoaster.com/some-good-and-advanced-jquery-techniques/"&gt;http://www.tuttoaster.com/some-good-and-advanced-jquery-techniques/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.codenothing.com/archives/2010/8-jquery-micro-optimization-tips/"&gt;http://www.codenothing.com/archives/2010/8-jquery-micro-optimization-tips/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tripwiremagazine.com/2010/01/jquery-1.4-released-sneak-peek-on-new-features-and-enhancements.html"&gt;http://www.tripwiremagazine.com/2010/01/jquery-1.4-released-sneak-peek-on-new-features-and-enhancements.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx"&gt;http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-plus.com/2010/10/4-useful-jquery-selectors/"&gt;http://css-plus.com/2010/10/4-useful-jquery-selectors/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.javascriptbank.com/more-10-jquery-javascript-tips-tricks-improve-code.html"&gt;http://www.javascriptbank.com/more-10-jquery-javascript-tips-tricks-improve-code.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html"&gt;http://jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/"&gt;http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jquerybyexample.blogspot.com/2012/02/prevent-default-behavior-using-jquery.html"&gt;http://jquerybyexample.blogspot.com/2012/02/prevent-default-behavior-using-jquery.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://css-tricks.com/return-false-and-prevent-default/"&gt;http://css-tricks.com/return-false-and-prevent-default/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.quirksmode.org/js/events_order.html"&gt;http://www.quirksmode.org/js/events_order.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://javascript.info/tutorial/bubbling-and-capturing"&gt;http://javascript.info/tutorial/bubbling-and-capturing&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html"&gt;http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html"&gt;http://jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://api.jquery.com/event.preventDefault/"&gt;http://api.jquery.com/event.preventDefault/&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html"&gt;http://jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://jquerybyexample.blogspot.com/2011/10/jquery-performance-tips-tricks-from.html"&gt;http://jquerybyexample.blogspot.com/2011/10/jquery-performance-tips-tricks-from.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;everflow: auto;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="jQuery"></category><category term="preventDefault"></category><category term="popup"></category><category term="sayaç"></category></entry><entry><title>Stylus ile Dinamik CSS Yazmak</title><link href="http://www.fatihhayrioglu.com/stylus-ile-dinamik-css-yazmak/" rel="alternate"></link><updated>2013-10-01T14:09:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-10-01:stylus-ile-dinamik-css-yazmak/</id><summary type="html">&lt;p&gt;&lt;img alt="enter image description here" src="/images/stylus_logo.png" /&gt;&lt;/p&gt;
 &lt;p&gt;CSS ile kod yazarken büyük projelerde ne kadar dikkatli olsak da sonunda normal olarak binlerce satırlık kodlar çıkabiliyor. Düzenli olmamız ve Firebug yardımı olsa da bu kodlar içinde dolaşmak ve yönetmek bazı sorunlar neden oluyor. Dinamik CSS burada devreye giriyor. &lt;/p&gt;
 &lt;p&gt;Dinamik CSS yazımında; değişken tanımı, css fonksiyonları, fazla kod işaretçilerinden kurtarma kalıtsallık ve 4 işlem gibi özellikleri ile bizlere yardımcı oluyor. Kısacası CSS’e dinamik bir yazım olanağı kazandırıyor.&lt;/p&gt;
 &lt;h2&gt;Başlangıç&lt;/h2&gt;
@@ -1039,37 +1167,4 @@ Android Browser Desteklemiyor&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://www.suburban-glory.com/blog?page=130"&gt;http://www.suburban-glory.com/blog?page=130&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/attr"&gt;https://developer.mozilla.org/en-US/docs/Web/CSS/attr&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="http://demosthenes.info/blog/345/Understanding-UA-StyleSheets-and-the-CSS3-initial-Value"&gt;http://demosthenes.info/blog/345/Understanding-UA-StyleSheets-and-the-CSS3-initial-Value&lt;/a&gt; (initial değeri)&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="CSS"></category><category term="CSS3"></category><category term="CSS-Değerleri"></category><category term="ch"></category><category term="rem"></category><category term="vw"></category><category term="vh"></category><category term="vmin"></category><category term="vmax"></category><category term="rgba"></category><category term="hsl"></category><category term="hsla"></category><category term="turn"></category><category term="calc()"></category><category term="counter()"></category><category term="attr()"></category><category term="cycle()"></category></entry><entry><title>İE için renk geçişi çözümü filtre tanımını sıfırlamak</title><link href="http://www.fatihhayrioglu.com/ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/" rel="alternate"></link><updated>2013-07-17T12:05:00+03:00</updated><author><name>Fatih</name></author><id>tag:www.fatihhayrioglu.com,2013-07-17:ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/</id><summary type="html">&lt;p&gt;CSS3 ile gelen güzel özelliklerden birisi &lt;a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/"&gt;renk geçişleri&lt;/a&gt;. Bu güzel özelliği kullanmamızdaki en büyük engel İE’nin bu özelliği İE 10 sürümünde destekliyor olması. Ancak farklı bir yöntem ile bu desteği İE’nin tüm sürümlerine kazandırabiliyoruz. &lt;strong&gt;filtre tanımı&lt;/strong&gt;. filtre tanımı yardımı ile İE için çözüm oluşturabiliyoruz. Tam karşılamasa da desteği sağlaması büyük ölçüde işimizi görüyor.&lt;/p&gt;
-&lt;p&gt;Uygulamada filtre bazı sorunlar neden oluyor. Bunlardan birisi renk geçişi kullanılan bir tanımın ezilmesi veya sıfırlanması sırasında normal renk geçişini&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nc"&gt;.deneme&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-
-&lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;none&lt;/span&gt;
-
-&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;veya&lt;/span&gt;
-
-&lt;span class="k"&gt;background&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#f00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;tanımı sıfırlıyor veya ezebiliyor iken filter’ı sıfırlamak için farklı bir yol izlememiz gerekiyor. &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;-&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;veya&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;progid&lt;/span&gt;&lt;span class="nd"&gt;:DXImageTransform&lt;/span&gt;&lt;span class="nc"&gt;.Microsoft.gradient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;enabled&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;false&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;İkincisi daha anlaşılır geldi bana.&lt;/p&gt;
-&lt;p&gt;Genelde bu bazı sorunlara neden oluyor. Renk geçişi tanımlanmış bir öğenin seçili veya :hover gibi farklı durumlarında tek renk tanımı veya transparan ardalan tanımı yapılırken genelde filtre tanımı unutuluyor ve buda İE’de soruna neden oluyor. Aman dikkat.&lt;/p&gt;
-&lt;p&gt;Sağlıcakla Kalın.&lt;/p&gt;
-&lt;h2&gt;Kaynaklar&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://fatihhayrioglu.com/css-renk-gecisleri-gradients/"&gt;http://fatihhayrioglu.com/css-renk-gecisleri-gradients/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://caniuse.com/#search=gradient"&gt;http://caniuse.com/#search=gradient&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx"&gt;http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://stackoverflow.com/a/3749340/296373"&gt;http://stackoverflow.com/a/3749340/296373&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="css"></category><category term="css3"></category><category term="renk-geçişi"></category><category term="filtre"></category><category term="hata-ayıklama"></category><category term="sıfırlama"></category></entry></feed>
+&lt;/ul&gt;</summary><category term="CSS"></category><category term="CSS3"></category><category term="CSS-Değerleri"></category><category term="ch"></category><category term="rem"></category><category term="vw"></category><category term="vh"></category><category term="vmin"></category><category term="vmax"></category><category term="rgba"></category><category term="hsl"></category><category term="hsla"></category><category term="turn"></category><category term="calc()"></category><category term="counter()"></category><category term="attr()"></category><category term="cycle()"></category></entry></feed>
