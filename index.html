@@ -75,8 +75,188 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="./jquery-ipuclari-5/">jQuery İpuçları - 5</a></h1> 
+                    <h1 class="entry-title"><a href="./resimlerimizi-retina-ekranlara-uygun-hale-getirmek/">Resimlerimizi retina ekranlara uygun hale getirmek</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2014-02-06T14:59:00">
+                Thu 06 February 2014
+        </abbr>
+
+        
+        <address class="vcard author">
+                <a class="url fn" href="./author/fatih.html">Fatih</a> yazdı.
+        </address>
+        
+<p><a href="./category/css.html">css</a> kategorisi. </p>
+<p>etiketler: <a href="./tag/retina.html">retina</a><a href="./tag/uyumlu-web.html">uyumlu-web</a><a href="./tag/picture.html">picture</a><a href="./tag/srcset.html">srcset</a></p>
+
+
+</footer><!-- /.post-info --><p>İlk defa bir konuda yeterli Türkçe kaynak bulma sevincini yaşıyorum. Kaynaklar kısmındaki Türkçe bağlantıların her biri çok güzel bilgiler veriyor. Bana yazacak bir şey kalmadı :D Süper, süper, süper.</p>
+<p>Ben sizlere bu makalelerden okuduklarımı özet olarak yazacağım. </p>
+<p><strong>Retina ekran</strong> tanımı ile ilk iPhone 4 ile tanıştık. Retina ekran yüksek çözünürlüklü ekran manasınadır. Görüntü teknolojilerinin gelişmesi ile  firmalar daha net görüntü elde edecek çözümlere yöneliyor.</p>
+<p>İnsanlar hızla yüksek çözünürlükte aletler satın alıyor ve buda biz web sitesi geliştiricilere fazladan iş yükü çıkarıyor. Bir yandan gelişmeler sevindirirken, bir yandan fazladan iş çıkması üzüyor.</p>
+<p>Genelde hazırlanan resimlerin kaliteleri, retina ekranlar için düşük kalır. Bundan dolayı retina ekranlarda resimlerimiz daha bulanık görünür. </p>
+<p>Yukarıdaki resimde görüldüğü gibi resmin normal halinde net bir görüntü var iken sağdaki 2 kat büyütülmüş resimdeki net olmayan bulanık bir görüntü görünmektedir.</p>
+<p>Yukarıdaki görüntü kısaca olayı özetliyor aslında. Android ekranlar 1.5:1 oranına sahip, apple ürünleri(retina) 2:1 oranına sahip.</p>
+<p>Evet elimizde yeni bir sorunumuz daha var. Peki bu sorunu nasıl çözeriz. Bu sorunun çözümü için çeşitli yöntemler var. Bunları sırası ile aktarmaya çalışacağım. Kendi projenize hangisi uygun ise siz onu kullanabilirsiniz.</p>
+<h2>1 - CSS ile uyarlama</h2>
+<div class="codehilite"><pre><span class="c">/* düşük çözünürlükteki tanım */</span>
+<span class="nc">.logo</span> <span class="p">{</span>
+    <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(/images/logo.png)</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* yüksek çözünürlük için tanım */</span>
+<span class="k">@media</span> <span class="o">(</span><span class="nt">min-device-pixel-ratio</span><span class="o">:</span> <span class="nt">2</span><span class="o">),</span>
+<span class="o">(</span><span class="nt">min-resolution</span><span class="o">:</span> <span class="nt">192dpi</span><span class="o">)</span> <span class="p">{</span>
+    <span class="nc">.image</span> <span class="p">{</span>
+        <span class="k">background</span><span class="o">:</span> <span class="sx">url(/images/logo@2x.png)</span> <span class="k">no-repeat</span><span class="p">;</span>
+        <span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span> <span class="m">200px</span> <span class="m">300px</span><span class="p">;</span> <span class="c">/* ilki genişlik ikinici yükseklik */</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>CSS’in güzel özelliklerinden biri olan medya sorgularını kullanarak yüksek çözünürlükteki ekranları yakaladık. Yakaladığımız bu sınıfa yüksek çözünürlükte bir resim tanımladık. Burada illa ki <strong>@2x</strong> ismi vermek zorunda değiliz, ancak daha anlaşılır olsun diye ve normal resim ile karışmasın diye bu tanım genelde kullanılmakta. </p>
+<p>İkinci püf noktası <strong>backgrund-size</strong> tanımı ile retina için oluşturduğumuz resmimizi normal boyutunda görünmesini sağlamaktır. Yoksa resim hazırlandığı gibi iki kat büyük görünür.</p>
+<h2>2 - CSS ile image-set tanımı</h2>
+<p>Webkit tarafından geliştirilen bu yöntem ile basit bir şekilde farklı piksel yoğunluğundaki araçlar için <strong>background-image</strong> tanımı yapabiliyoruz. Bu sayede cihaza göre en iyi çözünürlükte resim sunma imkanı sağlıyor.</p>
+<div class="codehilite"><pre><span class="nt">background-image</span><span class="o">:</span>  <span class="nt">-webkit-image-set</span><span class="o">(</span>
+  <span class="nt">url</span><span class="o">(</span><span class="nt">icon1x</span><span class="nc">.jpg</span><span class="o">)</span> <span class="nt">1x</span><span class="o">,</span>
+  <span class="nt">url</span><span class="o">(</span><span class="nt">icon2x</span><span class="nc">.jpg</span><span class="o">)</span> <span class="nt">2x</span>
+<span class="o">);</span>
+</pre></div>
+
+
+<p>Her piksel yoğunluğu için bir resim tanımı yapabiliyoruz. Biz iki tanım yapıyoruz, tarayıcı bunlardan birisini seçerek kullanıcıya gösteriyor. Bu özelliği sadece webkit tabanlı tarayıcılar destekliyor. Zamanla desteği çoğalırsa güzel olacak.</p>
+<h2>3 - Javascript ile çözüm üretmek</h2>
+<p>CSS ile bütünleşik kolay bir çözüm yok, bunun için ufak bir javascript ile bu sorunu tüm projemizde çözebiliriz. </p>
+<p>Javascript ile bir kaç çözüm mevcut bu konuda. En mantıklı çözüm eğer kullanıcı retina kullanan bir makineden geliyor ise resimlerin 2x hallerini göster, window.matchMedia metodu bu işi için biçilmiş kaftan tabi bu metodu desteklemeyen tarayıcılar bir sorun olarak ortaya çıkıyor. Destekleyenler için bu metodu kullanan; desteklemeyenler için alternatif çözüm üreten bir kod yazmış Scott Jehl diye bir arkadaş. <a href="https://github.com/scottjehl/picturefill">Picturefill</a> adını verdiği kodun kullanımı;</p>
+<div class="codehilite"><pre><span class="nt">&lt;span</span> <span class="na">data-picture</span> <span class="na">data-alt=</span><span class="s">&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">data-src=</span><span class="s">&quot;small.jpg&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">data-src=</span><span class="s">&quot;medium.jpg&quot;</span>     <span class="na">data-media=</span><span class="s">&quot;(min-width: 400px)&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">data-src=</span><span class="s">&quot;large.jpg&quot;</span>      <span class="na">data-media=</span><span class="s">&quot;(min-width: 800px)&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">data-src=</span><span class="s">&quot;extralarge.jpg&quot;</span> <span class="na">data-media=</span><span class="s">&quot;(min-width: 1000px)&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="c">&lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;</span>
+        <span class="nt">&lt;noscript&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;small.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/noscript&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+</pre></div>
+
+
+<p>Boyutu gayet küçük güzel bir çözüm. </p>
+<p>Şimdilik kaydı ile güzel bir çözüm olarak kullanılabilir, ama buna HTML’in bir çözüm bulması şart.</p>
+<h2>4 - HTML5 ile uyarlanabilir resim çözümü</h2>
+<p>2012 senesinde HTML5 geliştiricileri uyarlanabilir web içindeki sorunlardan biri olan resimlerin uyarlanması konusunda çalışmalar yaptı. Geniş katılımlı ortak bir çözüm arayan grup, bu sorunun çözümüne dair önerileri ve bazı sonuçlara varıldı. </p>
+<p>Bu konuda bir organizasyon oluşturup birde site açıldı <a href="http://responsiveimages.org/">http://responsiveimages.org/</a> sitesinden bilgi almak mümkün. <strong>Responsive Images Community Group (RICG)</strong>, W3C’den farklı bir oluşum.</p>
+<p>Farklı tarayıcı üreticileri konu hakkında fikirlerini sunduğu bu platformda </p>
+<div class="codehilite"><pre><span class="nt">&lt;picture&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">media=</span><span class="s">&quot;(min-width: 40em)&quot;</span> <span class="na">srcset=</span><span class="s">&quot;big.jpg 1x, big-hd.jpg 2x&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">srcset=</span><span class="s">&quot;small.jpg 1x, small-hd.jpg 2x&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;fallback.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/picture&gt;</span>
+</pre></div>
+
+
+<p>Yeni bir element(<strong>&lt;picture&gt;</strong>) ile üretilen yukarıdaki gibi bir sonuç kod bloku çıktı. Farklı medya tipleri için resim tanımı yapılabilen bir çözüm. </p>
+<p>Farklı görüşlerin ve önerileri çıktığı topluluktan herkesin kabul ettiği bir çözüm çıkmadı. Ancak bir çok programcı <strong>&lt;picture&gt;</strong> etiketine olumlu bakıyor.</p>
+<h2>5 - W3C’nin (srcset) parametresi ile çözüm</h2>
+<p>w3c yeni <strong>&lt;picture&gt;</strong> elementi yerine mevcut <strong>&lt;img&gt;</strong> elementi içinde yeni bir parametre olarak <strong>srcset</strong> konarak bir çözüm oluşturma yoluna gitti. </p>
+<div class="codehilite"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;logo.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;SampleCorp&quot;</span>
+  <span class="na">srcset=</span><span class="s">&quot;large.png 600w 200h 1x,</span>
+<span class="s">    large_2x-res.png 600w 200h 2x,</span>
+<span class="s">    mobile-icon.png 200w 200h&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<p>Mantık olarak aynı ancak yazım olarak farklı bir yöntem. <strong>600w = 600px</strong> genişlikte ve <strong>200h = 200px</strong> yükseklikteki araçlar için <strong>large.png</strong>; 2x ile belirtilen retina ekranlarda <strong>large_2x-res.png</strong> resmini yüklenmesini; daha düşük boyutlardaki ekranlarda  <strong>mobile-icon.png</strong> yüklenmesini belirtiyor yukarıdaki kod.</p>
+<p>Webkit’in desteği ile bir adım öne çıkın bu kod, genel kabul görür mü bakacağız. </p>
+<p>Ayrıca desteklemeyenler için <a href="https://github.com/borismus/srcset-polyfill">https://github.com/borismus/srcset-polyfill</a> bir çözüm olarak kullanılabilir. </p>
+<p><strong>polyfill</strong>; özelliklerin farklı tarayıcılar tarafından destekleyen/desteklemeyen ayrımını javascript yardımı ile tek bir noktada toplamaya yarayan kod blokları olarak açıklanabilir.</p>
+<h2>6 - İkonik resimler için @font-face ile çözüm</h2>
+<p>Sitenizde çok fazla ikon kullanıyorsanız bunların her biri için retina çözümleri oluşturmak sorun olacaktır. Burada resim yerine ikonları <strong><a href="http://fatihhayrioglu.com/font-face-kullanimi/">@font-face</a></strong> ile ekleyerek bu sorunu çözebiliriz. Yazı tipleri gibi yaz tipi içindeki vektörel ikonlarda kendiliğinden retina ekrana uyumlu hale gelecektir. </p>
+<p>İkonlarınız için bir yazı tipi dosyası oluşturup sitenize ekleyerek tüm ikonlarınızı retinaya uyumlu hale getirmiş olursunuz.</p>
+<div class="codehilite"><pre><span class="nt">&lt;h3&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span> <span class="na">data-icon=</span><span class="s">&quot;&amp;#x21dd;&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+  Stats
+<span class="nt">&lt;/h3&gt;</span>
+</pre></div>
+
+
+<p>span etiketi data özniteliğine kullanacağımız ikonun unicode’unu yazıyoruz ve CSS kodu;</p>
+<div class="codehilite"><pre><span class="o">[</span><span class="nt">data-icon</span><span class="o">]</span><span class="nd">:before</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="o">:</span> <span class="n">icons</span><span class="p">;</span> <span class="c">/* BYO icon font, mapped smartly */</span>
+  <span class="k">content</span><span class="o">:</span> <span class="n">attr</span><span class="p">(</span><span class="n">data</span><span class="o">-</span><span class="k">icon</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>CSS ile data özniteliğinden aldığımız içeriği elemanın öncesine ekliyoruz. </p>
+<h2>7 - Bitmap resim yerine SVG resim kullanarak çözüm üretmek</h2>
+<p>Bitmap resimler retina ekranlarda yukarıda bahsettiğimiz bozulmaya neden olurken vektörel resimler(SVG) çözünürlüğün artması veya azalması ile bozulmaz. Bu sayede iki kere resim yükleme derdinde kurtulmuş oluruz. </p>
+<p>Çok renkli resimler hariç tüm resimler ve ikonlarımız için SVG kullanabiliriz. </p>
+<div class="codehilite"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;deneme.svg&quot;</span> <span class="na">width=</span><span class="s">&quot;150&quot;</span> <span class="na">height=</span><span class="s">&quot;200&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+
+
+<p>CSS kodu;</p>
+<div class="codehilite"><pre><span class="nc">.image</span> <span class="p">{</span>
+    <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(example.svg)</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span> <span class="m">150px</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>SVG desteğinin ie8 hariç olması bizim için büyük avantaj. SVG konusuna ayrıca daha detaylı değinmemiz gerekiyor. Şimdilik bu kadar ile yetinelim.</p>
+<h2>Sonuç</h2>
+<p>Bu konu için henüz tam ve kolay bir çözüm üzerinde anlaşılmamış olsa da işimizi görecek kodlar mevcut. Konu hakkındaki gelişmeleri izlemeye devam edeceğiz. </p>
+<p>Yukarıdaki çözümlerden yaptığımız projeye göre en uygunun olan bir veya birkaçını kullanacağız artık.</p>
+<p>Kalın sağlıcakla.</p>
+<h2>Kaynaklar</h2>
+<ul>
+<li><a href="http://www.ozdemir.info.tr/?p=396">http://www.ozdemir.info.tr/?p=396</a> </li>
+<li><a href="http://www.huseyinemanet.com/post/43506500952/retina-display-icin-kod-yazmak">http://www.huseyinemanet.com/post/43506500952/retina-display-icin-kod-yazmak</a> </li>
+<li><a href="http://css-tricks.com/snippets/css/retina-display-media-query/">http://css-tricks.com/snippets/css/retina-display-media-query/</a></li>
+<li><a href="http://www.sitepoint.com/css-techniques-for-retina-displays/">http://www.sitepoint.com/css-techniques-for-retina-displays/</a></li>
+<li><a href="http://www.leemunroe.com/designing-for-high-resolution-retina-displays/">http://www.leemunroe.com/designing-for-high-resolution-retina-displays/</a></li>
+<li><a href="http://mashable.com/2013/05/22/convert-to-retina/">http://mashable.com/2013/05/22/convert-to-retina/</a></li>
+<li><a href="http://bjango.com/articles/designingforretina/">http://bjango.com/articles/designingforretina/</a> </li>
+<li><a href="http://metinyilmaz.me/retina-display-ve-website-optimizasyonu/">http://metinyilmaz.me/retina-display-ve-website-optimizasyonu/</a> </li>
+<li><a href="http://designmodo.com/design-retina-displays/">http://designmodo.com/design-retina-displays/</a> </li>
+<li><a href="http://www.studiopress.com/design/css-background-size-graphics.htm">http://www.studiopress.com/design/css-background-size-graphics.htm</a> </li>
+<li><a href="https://coderwall.com/p/6ltcnw">https://coderwall.com/p/6ltcnw</a> </li>
+<li><a href="http://www.html5rocks.com/en/mobile/high-dpi/">http://www.html5rocks.com/en/mobile/high-dpi/</a> </li>
+<li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/better-responsive-images-with-the-picture-element/">http://net.tutsplus.com/tutorials/html-css-techniques/better-responsive-images-with-the-picture-element/</a> </li>
+<li><a href="http://html5doctor.com/html5-adaptive-images-end-of-round-one/">http://html5doctor.com/html5-adaptive-images-end-of-round-one/</a> </li>
+<li><a href="http://css-tricks.com/examples/IconFont/">http://css-tricks.com/examples/IconFont/</a> </li>
+</ul><p><a href="./resimlerimizi-retina-ekranlara-uygun-hale-getirmek/#disqus_thread">yorum var</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Diğer yazılar</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="./jquery-ipuclari-5/" rel="bookmark"
+                           title="Permalink to jQuery İpuçları - 5">jQuery İpuçları - 5</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-11-05T14:59:00">
                 Tue 05 November 2013
         </abbr>
@@ -90,142 +270,19 @@
 <p>etiketler: <a href="./tag/jquery.html">jQuery</a><a href="./tag/preventdefault.html">preventDefault</a><a href="./tag/popup.html">popup</a><a href="./tag/sayac.html">sayaç</a></p>
 
 
-</footer><!-- /.post-info --><h2>event.preventDefault()</h2>
+</footer><!-- /.post-info -->
+                <h2>event.preventDefault()</h2>
 <p>Eğer bu fonksiyon çağrıldı ise başlangıçta tetiklenen olay çalışmayacaktır. event.preventDefault() jQuery bağlantı kontrolü için sık sık başvurduğumuz bir metottur. </p>
 <p>Bir örnek ile daha kolay açıklarız durumu</p>
 <div class="codehilite"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Tıkla<span class="nt">&lt;/a&gt;</span>
 </pre></div>
 
 
-<p>Yukarıdaki gibi bir bağlantımız olsun. Biz bu bağlantıya müdahale edip bir işlem yaptırmak istediğimizde tarayıcı bunu bir bağlantı olarak gördüğü için <strong>href</strong> içindeki değeri uygulayacaktır. <strong>href</strong> içinde diyez(#) olduğundan sayfayı yukarı kaydıracaktır. Biz tarayıcının <strong>href</strong> değerini yorumlamasını durdurmak ve kendi işimizi yapmak için <strong>event.preventDefault()</strong> metodunu kullanırız.</p>
-<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-   <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-   <span class="c1">// kendi işimizi yapalım</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<p>fonksiyona parametre olarak <strong>event(e)</strong> vererek <strong>e.preventDefault();</strong> kısaltmasını kullanabiliyoruz. Bağlantı fonksiyonun ilk satırında olması önemli. Basit ama bilinmesi gereken bir konu.</p>
-<h2>Her zamana son versiyonu çekmek için</h2>
-<p>jQuery sürümlerini güncellemek bazen sıkıntı olabiliyor. İlk jQuery ipuçları makalemde yazdığım </p>
-<div class="codehilite"><pre><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
-<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
- <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//isler burada</span>
- <span class="p">});</span>
-<span class="o">&lt;</span><span class="err">/script&gt;</span>
-</pre></div>
-
-
-<p>Koda bakarsak, jquery 1.2.6 sürümü çekiliyor. Bunun yerine her daim güncel bir jQuery sürümü çekmek için </p>
-<div class="codehilite"><pre><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span>
-<span class="nx">src</span><span class="o">=</span><span class="s2">&quot;http://code.jquery.com/jquery-latest.min.js&quot;</span> <span class="nx">charset</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="err">/script&gt;</span>
-</pre></div>
-
-
-<p>jQuery’nini kendi CDN son sürümü çekebiliyoruz.</p>
-<h2>Form elemanları sıfırlamak için</h2>
-<p>Bazen form elemanlarını sıfırlamak sorun olabiliyor. jQuery ile bir yöntem ararken stackoverflow’da gördüğüm bir cevabı not edeyim dedim.</p>
-<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">resetForm</span><span class="p">(</span><span class="nx">$form</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">$form</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;input:text, input:password, input:file, select, textarea&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
-    <span class="nx">$form</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;input:radio, input:checkbox&#39;</span><span class="p">)</span>
-         <span class="p">.</span><span class="nx">removeAttr</span><span class="p">(</span><span class="s1">&#39;checked&#39;</span><span class="p">).</span><span class="nx">removeAttr</span><span class="p">(</span><span class="s1">&#39;selected&#39;</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="c1">// kullanımı:</span>
-<span class="nx">resetForm</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myform&#39;</span><span class="p">));</span> <span class="c1">// id ile </span>
-<span class="nx">resetForm</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;form[name=myName]&#39;</span><span class="p">));</span> <span class="c1">// name ile</span>
-</pre></div>
-
-
-<p><strong>kaynak:</strong> <a href="http://stackoverflow.com/questions/680241/blank-out-a-form-with-jquery">http://stackoverflow.com/questions/680241/blank-out-a-form-with-jquery</a></p>
-<h2>popup penceresi açmak</h2>
-<p>Ey gidi eski günler. Ne popup kullanırdık. Şimdilerde çok nadir kullanılsa da ihtiyaç olduğu durumlar için basit bir yöntem gördüm ve paylaşayım dedim.</p>
-<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a.popup&#39;</span><span class="p">).</span><span class="nx">live</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-        <span class="nx">newwindow</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">),</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;height=200,width=150&#39;</span><span class="p">);</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">focus</span><span class="p">)</span> <span class="p">{</span><span class="nx">newwindow</span><span class="p">.</span><span class="nx">focus</span><span class="p">()}</span>
-        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
-<span class="p">});</span>
-</pre></div>
-
-
-<p><strong>kaynak:</strong> <a href="http://www.jquery4u.com/windows/jquery-cleanly-open-links-popup-windows/">http://www.jquery4u.com/windows/jquery-cleanly-open-links-popup-windows/</a> </p>
-<h2>textarea karakter sayımı</h2>
-<p>Kullanıcının yazdığı metin girdi alanlarına belli sayıda karakter girmesi istendiğinde girdi alanı üzerine, altına veya herhangi bir yanına bir sayaç koyarız. Bu işi jQuery ile yapmak gayet basit. </p>
-<p>HTML kodu;</p>
-<div class="codehilite"><pre><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;count&quot;</span><span class="nt">&gt;</span>0<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;textarea</span> <span class="na">name=</span><span class="s">&quot;textarea&quot;</span> <span class="na">rows=</span><span class="s">&quot;10&quot;</span> <span class="na">cols=</span><span class="s">&quot;30&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
-</pre></div>
-
-
-<p>jQuery Kodu;</p>
-<div class="codehilite"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;textarea&#39;</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;keydown keyup keypress change&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="kd">var</span> <span class="nx">thisValueLength</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">().</span><span class="nx">length</span><span class="p">;</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.count&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">thisValueLength</span><span class="p">);</span>
-<span class="p">});</span>
-</pre></div>
-
-
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/CzjJI?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
-
-<p>kaynak: <a href="http://black-flag.net/jquery/20120229-3696.html">http://black-flag.net/jquery/20120229-3696.html</a></p>
-<h2>Jquery Trim() sorunu ve çözümü</h2>
-<p>Son olarakta sizlerle karşılaştığım bir sorunu ve çözümünü paylaşmak istiyorum. Bir form elemanı değerini <strong>trim()</strong> fonksiyonu yardımı ile alıp kullandığım kodun bir kısmında ie8’de sorun yaşadım.</p>
-<div class="codehilite"><pre><span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#test&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">().</span><span class="nx">trim</span><span class="p">()</span><span class="o">!=</span><span class="s1">&#39;&#39;</span><span class="p">){</span>
-</pre></div>
-
-
-<blockquote>
-<p>Message: Object doesn't support this property or method</p>
-</blockquote>
-<p>Hatasını veriyordu ie8, çözümü stackoverflow’da buldum. Yazılımcı dostu site sağ olsun tüm aradıklarımı buluyorum. Çözüm;</p>
-<div class="codehilite"><pre><span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">.</span><span class="nx">trim</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#test&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">){</span>
-</pre></div>
-
-
-<p>şeklinde yazınca sorun çözüldü.</p>
-<p><strong>kaynak:</strong> <a href="http://stackoverflow.com/questions/3439316/ie8-and-jquerys-trim">http://stackoverflow.com/questions/3439316/ie8-and-jquerys-trim</a> </p>
-<p>Bunların dışında gördüğüm güzel linkleri aşağıda kaynaklar bölümünde paylaştım. Her biri incelemeye değer.</p>
-<p>Kalın sağlıcakla.</p>
-<h2>Kaynaklar</h2>
-<ul>
-<li><a href="http://james.padolsey.com/javascript/jquery-code-smells/">http://james.padolsey.com/javascript/jquery-code-smells/</a></li>
-<li><a href="http://addyosmani.com/blog/31-jquery-snippets/">http://addyosmani.com/blog/31-jquery-snippets/</a></li>
-<li><a href="http://www.tutorialspoint.com/jquery/event-preventdefault.htm">http://www.tutorialspoint.com/jquery/event-preventdefault.htm</a></li>
-<li><a href="http://css-tricks.com/return-false-and-prevent-default/">http://css-tricks.com/return-false-and-prevent-default/</a></li>
-<li><a href="http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html">http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html</a></li>
-<li><a href="http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx">http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx</a></li>
-<li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/20-helpful-jquery-methods-you-should-be-using/">http://net.tutsplus.com/tutorials/javascript-ajax/20-helpful-jquery-methods-you-should-be-using/</a></li>
-<li><a href="http://addyosmani.com/blog/31-jquery-snippets/">http://addyosmani.com/blog/31-jquery-snippets/</a></li>
-<li><a href="http://www.tuttoaster.com/some-good-and-advanced-jquery-techniques/">http://www.tuttoaster.com/some-good-and-advanced-jquery-techniques/</a></li>
-<li><a href="http://www.codenothing.com/archives/2010/8-jquery-micro-optimization-tips/">http://www.codenothing.com/archives/2010/8-jquery-micro-optimization-tips/</a></li>
-<li><a href="http://www.tripwiremagazine.com/2010/01/jquery-1.4-released-sneak-peek-on-new-features-and-enhancements.html">http://www.tripwiremagazine.com/2010/01/jquery-1.4-released-sneak-peek-on-new-features-and-enhancements.html</a></li>
-<li><a href="http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx">http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx</a></li>
-<li><a href="http://css-plus.com/2010/10/4-useful-jquery-selectors/">http://css-plus.com/2010/10/4-useful-jquery-selectors/</a></li>
-<li><a href="http://www.javascriptbank.com/more-10-jquery-javascript-tips-tricks-improve-code.html">http://www.javascriptbank.com/more-10-jquery-javascript-tips-tricks-improve-code.html</a></li>
-<li><a href="http://jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html">http://jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html</a></li>
-<li><a href="http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/">http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/</a> </li>
-<li><a href="http://jquerybyexample.blogspot.com/2012/02/prevent-default-behavior-using-jquery.html">http://jquerybyexample.blogspot.com/2012/02/prevent-default-behavior-using-jquery.html</a></li>
-<li><a href="http://css-tricks.com/return-false-and-prevent-default/">http://css-tricks.com/return-false-and-prevent-default/</a></li>
-<li><a href="http://www.quirksmode.org/js/events_order.html">http://www.quirksmode.org/js/events_order.html</a></li>
-<li><a href="http://javascript.info/tutorial/bubbling-and-capturing">http://javascript.info/tutorial/bubbling-and-capturing</a> </li>
-<li><a href="http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html">http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html</a> </li>
-<li><a href="http://jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html">http://jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html</a> </li>
-<li><a href="http://api.jquery.com/event.preventDefault/">http://api.jquery.com/event.preventDefault/</a> </li>
-<li><a href="http://jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html">http://jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html</a></li>
-<li><a href="http://jquerybyexample.blogspot.com/2011/10/jquery-performance-tips-tricks-from.html">http://jquerybyexample.blogspot.com/2011/10/jquery-performance-tips-tricks-from.html</a></li>
-</ul><p><a href="./jquery-ipuclari-5/#disqus_thread">yorum var</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Diğer yazılar</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+<p>Yukarıdaki gibi bir bağlantımız olsun. Biz bu bağlantıya müdahale edip bir işlem yaptırmak istediğimizde tarayıcı bunu bir ...</p>
+                <a class="readmore" href="./jquery-ipuclari-5/">devamını oku</a>
+                <p><a href="./jquery-ipuclari-5/#disqus_thread">yorum var</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -528,41 +585,6 @@
 <h2>Basit Yapısı ...</h2>
                 <a class="readmore" href="./support-kurali-ile-css-ozelliklerinin-kontrolu/">devamını oku</a>
                 <p><a href="./support-kurali-ile-css-ozelliklerinin-kontrolu/#disqus_thread">yorum var</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href="./css3-yeni-degerleri/" rel="bookmark"
-                           title="Permalink to CSS3 Yeni Değerleri">CSS3 Yeni Değerleri</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-08-06T15:10:00">
-                Tue 06 August 2013
-        </abbr>
-
-        
-        <address class="vcard author">
-                <a class="url fn" href="./author/fatih.html">Fatih</a> yazdı.
-        </address>
-        
-<p><a href="./category/css.html">CSS</a> kategorisi. </p>
-<p>etiketler: <a href="./tag/css.html">CSS</a><a href="./tag/css3.html">CSS3</a><a href="./tag/css-degerleri.html">CSS-Değerleri</a><a href="./tag/ch.html">ch</a><a href="./tag/rem.html">rem</a><a href="./tag/vw.html">vw</a><a href="./tag/vh.html">vh</a><a href="./tag/vmin.html">vmin</a><a href="./tag/vmax.html">vmax</a><a href="./tag/rgba.html">rgba</a><a href="./tag/hsl.html">hsl</a><a href="./tag/hsla.html">hsla</a><a href="./tag/turn.html">turn</a><a href="./tag/calc.html">calc()</a><a href="./tag/counter.html">counter()</a><a href="./tag/attr.html">attr()</a><a href="./tag/cycle.html">cycle()</a></p>
-
-
-</footer><!-- /.post-info -->
-                <p>CSS3 özellikleri anlatan makalelerden sonra fark ettim ki yeni CSS3 değerleri hakkında bir makale yazmam gerekiyor. </p>
-<p>CSS tanımları 3 ana yapıdan oluşmaktadır. Seçiciler, özellik ve değer. CSS3 ile gelen yeni seçicileri <a href="http://fatihhayrioglu.com/css3-secicileri/">CSS3 Seçicileri</a> makalesinde anlatmıştık. CSS3 özelliklerini CSS Dersleri altındaki CSS3 başlığı altında anlattık. Sıra geldi CSS3 ile gelen yeni ...</p>
-                <a class="readmore" href="./css3-yeni-degerleri/">devamını oku</a>
-                <p><a href="./css3-yeni-degerleri/#disqus_thread">yorum var</a>.</p>
                 </div><!-- /.entry-content -->
             </article></li>
         
