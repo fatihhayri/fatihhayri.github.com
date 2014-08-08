@@ -1,0 +1,17 @@
+---
+layout: post
+title: UFUKLARIN SULTANI / Fatih Sultan Mehmed - Mustafa Armağan
+Date: 2007-01-14 16:10
+Category: Kitaplar
+tags: Kitaplar
+---
+
+![Ufukların Sultanı][]Fatih Sultan Mehmet Han'a ve İstanbul'ın fethine
+farklı açıdan bakan mükkemmel bir kitap. Herkesin okumasını tavsiye
+ederim. Fetih ve Fatih bizlere ve dünaya bir çok güzellikler kazandırdığ
+kesin ama bunları bilmek ve anlatmak gerek. Bu kitap ve bunu gibi bilgi
+kaynakları zamanla daha da artacaktır. Ayrıntılı bilgi için
+[tıklayınız][].
+
+  [Ufukların Sultanı]: /images/ufuklarinsul.kucukresim.jpg
+  [tıklayınız]: http://www.timas.com.tr/kitap.php?id=1181
