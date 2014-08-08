@@ -10,24 +10,12 @@ image:
 share: true
 ---
 
-They say three times the charm, so here is another free responsive Jekyll theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. If you've used my previous themes most of this should be familiar territory...
+Nüfusa 1978 Trabzon/Sürmene doğumlu olarak kaydedilmişim. 
 
-## What HPSTR brings to the table:
+İlk, orta ve lise eğitimimi İstanbul Zeytinburnu’nda tamamladıktan sonra Üniversiteyi Fırat Üniversitesi’nde okudum. 
 
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Background image support.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Comments powered by [Disqus](http://disqus.com) if you choose to enable.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting]({{ site.url }}/code-highlighting-post/) to make your code examples look snazzy
-* [Grunt](http://gruntjs.com) build script for easy theme development
+Bölümüm her nekadar Çevre Mühendisliği olsa da hayatımı web sayfası kodlaması yaparak geçirmekteyim. web amelesi 22.04.2002-22.04.2007 tarihleri arasında Turkline‘da çalıştım, 22.04.2007-08.03.2010 tarihleri arasında PixelPlus‘da çalıştım, 08.03.2010-01.03.2011 arasında LiveGO.com‘da çalıştım ve şimdide sahibinden.com‘da çalışıyorum. Öncesi var ancak bahse değmez. 
 
-<div markdown="0"><a href="{{ site.url }}/theme-setup" class="btn btn-info">Install the Theme</a></div>
+Çalıştığım projeleri yazayım mı bilmiyorum. Zamanı gelince yazarım. 
 
-[^1]: Example: *domain.com/category-name/post-title*
+Bu not defterini yazmaktaki amacım araştırıp bulduğum bilgileri ve tuttuğum notları kenarda köşe de kaybetmemek ve bunları internet ortamında paylaşmak. Ayrıca işe gidip gelirken otobüste okuduğum kitaplardan aldığım notları burada yazmak.
