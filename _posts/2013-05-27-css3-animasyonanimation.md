@@ -22,27 +22,29 @@ Daha önce flash ile uğraşmış insanlara yabancı olmayan bir kavram. Animasy
 
 CSS3 anahtar kare(keyframe) tanımı bir @kuralı olarak tanımlanır. Normal CSS tanımları içerir, ancak farklı olarak tanımlayıcı bir isim ve her kareye bir tanım yapmamızı sağlayan bir yapıya sahiptir.
 
-    :::css
-    @keyframes animasyom_ismi {
-      keyframe {
-        property : value;
-      }
-    }
+{% highlight css %}
+@keyframes animasyom_ismi {
+  keyframe {
+    property : value;
+  }
+}
+{% endhighlight %}
 
 animasyom_ismi tekil bir tanımıdır, daha sonra elemente animasyon uygulamak istediğimizde kullanılmak üzere.
 
-    :::css
-    @keyframes soldanGelen {
-      0% {
-        left: 0;
-      }
-      50% {
-        left: 100px;
-      }
-      100% {
-        left: 200px;
-      }
-    }
+{% highlight css %}
+@keyframes soldanGelen {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+{% endhighlight %}
 
 
 Yukarıdaki kod ile 'soldanGelen' animasyonumuza üç adet anahtar kare(keyframe) oluşturmuş olduk. Animasyonumuzun 0%, 50% ve 100%&rsquo;ün de anahtar kare (frame) meydana getirmiş olduk. Her kare&rsquo;de(frame) elemana istediğimiz animasyonu uygulayabiliyoruz.
@@ -74,10 +76,11 @@ Anahtar kare(keyframe) tanımından sonra animasyon özellikleri tanımlarına g
 
 Bir elemana animasyon uygulayacağımız zaman ilk olarak bir isim tanımlamamız gerekiyor.
 
-    :::css
-    #gonderGelsin {
-      animation-name: gonder;
-    }
+{% highlight css %}
+#gonderGelsin {
+  animation-name: gonder;
+}
+{% endhighlight %}
 
 Tek değer alır ve tanımlanan değer yukarıda belirttiğimiz gibi anahtar kare&rsquo;ye parametre olarak eklenir. Bunun dışında none değeride alır. Animasyon ismini tırnak içinde yazınca Firefox&rsquo;da çalışmıyor.
 
@@ -92,11 +95,12 @@ Tek değer alır ve tanımlanan değer yukarıda belirttiğimiz gibi anahtar kar
 
 Animasyonun ne kadar süreceğini belirtmek için bu özelliği kullanırız.
 
-    :::css
-    #gonderGelsin {
-      animation-name: gonder;
-      animation-duration: 3s;
-    }
+{% highlight css %}
+#gonderGelsin {
+  animation-name: gonder;
+  animation-duration: 3s;
+}
+{% endhighlight %}
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/zhlHo?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
@@ -113,21 +117,23 @@ Animasyonun 3 saniye devam edeceğini gösterir. Daha önce gördüğümüz tran
 
 Geçiş efektlerinde benzer diğer bir tanımı animation-timing-function tanımıdır.  <a href="http://fatihhayrioglu.com/css3-gecis-efektleri-transitions/">transition-timing-function</a> özelliğine benzer bir özelliktir.
 
-    :::css
-    div {
-      animation-timing-function: keyword
-      /* veya */
-      cubic-bezier(x1, y1, x2, y2);
-    }
+{% highlight css %}
+div {
+  animation-timing-function: keyword
+  /* veya */
+  cubic-bezier(x1, y1, x2, y2);
+}
+{% endhighlight %}
 
 Aldığı değerler ease, linear, ease-in, ease-out, ve ease-in-out
 
-    :::css
-    #gonderGelsin {
-      animation-name: gonder;
-      animation-duration: 3s;
-      animation-timing-function:ease;
-    }
+{% highlight css %}
+#gonderGelsin {
+  animation-name: gonder;
+  animation-duration: 3s;
+  animation-timing-function:ease;
+}
+{% endhighlight %}
 
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/xBgaA?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
@@ -145,13 +151,14 @@ Animasyonun esnek bir şekilde meydana gelmesini sağlar.
 
 Bu tanım animasyonun kaç kere tekrarlanacağını belirler.
 
-    :::css
-    #gonderGelsin {
-      animation-name: gonder;
-      animation-duration: 3s;
-      animation-timing-function:ease;
-      animation-iteration-count: 3;
-    }
+{% highlight css %}
+#gonderGelsin {
+  animation-name: gonder;
+  animation-duration: 3s;
+  animation-timing-function:ease;
+  animation-iteration-count: 3;
+}
+{% endhighlight %}
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/IAKJm?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
@@ -177,14 +184,15 @@ Başlangıç değer normal olarak tanımlıdır. Aldığı değerler
 
 Örneğe devam;
 
-    :::css
-    #gonderGelsin {
-      animation-name: gonder;
-      animation-duration: 3s;
-      animation-timing-function:ease;
-      animation-iteration-count: 3;
-      animation-direction:reverse;
-    }
+{% highlight css %}
+#gonderGelsin {
+  animation-name: gonder;
+  animation-duration: 3s;
+  animation-timing-function:ease;
+  animation-iteration-count: 3;
+  animation-direction:reverse;
+}
+{% endhighlight %}
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/qLKAp?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
@@ -201,15 +209,16 @@ Animasyonu tersine çevirecektir. Metin sağdan sola değil, soldan sağa doğru
 
 animation-delay tanımı animasyonun başlamadan önce belli bir süre bekletmemizi sağlar.
 
-    :::css
-    #gonderGelsin {
-      animation-name: gonder;
-      animation-duration: 3s;
-      animation-timing-function:ease;
-      animation-iteration-count: 3;
-      animation-direction:reverse;
-      animation-delay: 4s;
-    }
+{% highlight css %}
+#gonderGelsin {
+  animation-name: gonder;
+  animation-duration: 3s;
+  animation-timing-function:ease;
+  animation-iteration-count: 3;
+  animation-direction:reverse;
+  animation-delay: 4s;
+}
+{% endhighlight %}
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/qizfH?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
@@ -226,15 +235,17 @@ Tanımı ile animasyon tetiklenmesinden itibaren 4 saniye sonra başlayacaktır.
 
 Diğer bir animasyon özelliğide animation-play-state özelliğidir, animasyon yürütme kontorolünü yapar. İki değer alır; çalıştır(running) veya durdur(paused). Bir animasyonu durdurmak için
 
-    :::css
-    animation-play-state: paused;
+{% highlight css %}
+animation-play-state: paused;
+{% endhighlight %}
 
 Tanımını yapmamız yeterlidir. Örneğimizde elemanın üzerine geldiğimizde animasyonun durdurmak için
 
-    :::css
-    .polyfill:hover{
-      animation-play-state: paused;
-    }
+{% highlight css %}
+.polyfill:hover{
+  animation-play-state: paused;
+}
+{% endhighlight %}
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/yCDJc?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
@@ -280,43 +291,47 @@ Yukarıda animasyon özelliklerini tanımladık. Bu tanımları önek ile birlik
 
 Örneğimiz göz önüne alırsak;
 
-    :::css
-    .canCanli {
-      animation-name: gelsinGitsin;
-      animation-duration: 2s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: 2;
-      animation-direction: alternate;
-      animation-delay: 5s;
-      animation-fill-mode: forwards;
-    }
+{% highlight css %}
+.canCanli {
+  animation-name: gelsinGitsin;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+{% endhighlight %}
 
 Tanımı yerine
 
-    :::css
-    .canCanli {
-      animation: gelsinGitsin 2s ease-in-out 2 alternate 5s forwards;
-    }
+{% highlight css %}
+.canCanli {
+  animation: gelsinGitsin 2s ease-in-out 2 alternate 5s forwards;
+}
+{% endhighlight %}
 
 7 satır kod tek satıra indi. Yukarıdaki sıra önemlidir; name, duration, timing function, count, direction, delay, and fill- mode. Her tanım birbirinden boşluk ile ayrılır. Sadece adı ve süresi yazılması gerekmektedir, diğer değerler isteğe bağlıdır.
 
 Birden fazla tanımı virgül ile ayırırız.
 
-    :::css
-    .polyfill {
-      animation-name: gradientMove, reload;
-      animation-duration: .8s, 8s;
-      animation-iteration-count: infinite;
-      animation-fill-mode: both;
-      animation-timing-function: linear;
-    }
+{% highlight css %}
+.polyfill {
+  animation-name: gradientMove, reload;
+  animation-duration: .8s, 8s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+{% endhighlight %}
 
 Yerine
 
-    :::css
-    .polyfill {
-      animation:gradientMove .8s 4 both linear alternate-reverse, reload 8s 4 both linear alternate-reverse;
-    }
+{% highlight css %}
+.polyfill {
+  animation:gradientMove .8s 4 both linear alternate-reverse, reload 8s 4 both linear alternate-reverse;
+}
+{% endhighlight %}
 
 <h3>Javascript, Flash ve CSS3 Animasyon Avantaj ve Dezavantajları</h3>
 
@@ -365,36 +380,38 @@ Animasyon olaylarını kullanarak animasyonlara ekstra özellikleri kazandırabi
 
 Animasyonu dinleyen bir fonksiyon
 
-    :::javascript
-    function setup() {
-      var e = document.getElementById("anim");
-      e.addEventListener("animationstart", listener, false);
-      e.addEventListener("animationend", listener, false);
-      e.addEventListener("animationiteration", listener, false);
+{% highlight javascript %}
+function setup() {
+  var e = document.getElementById("anim");
+  e.addEventListener("animationstart", listener, false);
+  e.addEventListener("animationend", listener, false);
+  e.addEventListener("animationiteration", listener, false);
 
-      var e = document.getElementById("anim");
-      e.className = "polyfill";
-    }
+  var e = document.getElementById("anim");
+  e.className = "polyfill";
+}
+{% endhighlight %}
 
 
 Tüm animasyon olaylarını dinleyen bir fonksiyon yaptık. İlk başlangıcı yakalamak için animasyonun uygulandığı sınıfı sonrada tanımlıyoruz. Olayları yakalamk için listener fonksiyonuna gönderiyoruz.
 
-    :::javascript
-    function listener(e) {
-        var l = document.createElement("li");
-        switch(e.type) {
-          case "animationstart":
-            l.innerHTML = "Başlangıç: " + e.elapsedTime;
-            break;
-          case "animationend":
-            l.innerHTML = "Son: " + e.elapsedTime;
-            break;
-          case "animationiteration":
-            l.innerHTML = "Döngüye başlama: " + e.elapsedTime;
-            break;
-        }
-        document.getElementById("output").appendChild(l);
-      }
+{% highlight javascript %}
+function listener(e) {
+    var l = document.createElement("li");
+    switch(e.type) {
+      case "animationstart":
+        l.innerHTML = "Başlangıç: " + e.elapsedTime;
+        break;
+      case "animationend":
+        l.innerHTML = "Son: " + e.elapsedTime;
+        break;
+      case "animationiteration":
+        l.innerHTML = "Döngüye başlama: " + e.elapsedTime;
+        break;
+    }
+    document.getElementById("output").appendChild(l);
+}
+{% endhighlight %}
 
 Tarayıcılara göre metot isimleri farklılık gösteriyor.
 
@@ -431,17 +448,20 @@ Tarayıcılara göre metot isimleri farklılık gösteriyor.
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DIvqF?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
-**Tarayıcı Uyumu **
-Firefox 4+ (-moz- öneki ile), 16+ öneksiz
-Chrome 1+ (-webkit- öneki ile)
-Safari 4+ (-webkit- öneki ile)
-Opera 12 (-o- öneki ile), 12.10 öneksiz
-İnternet Explorer 10+
+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+ (-webkit)**|**10+**|**4.0+ (-moz)**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 2.0+ (-webkit- öneki ile)
-Opera Mobile desteklemiyor
-Android Browser 2.1+ (-webkit- öneki ile)
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**2.0+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 ## Sonuç
 
@@ -487,3 +507,10 @@ Kalın sağlıcakla.
   - <a href="http://www.sitepoint.com/css3-animation-javascript-event-handlers/">http://www.sitepoint.com/css3-animation-javascript-event-handlers/</a>
   - <a href="http://www.valhead.com/2013/01/04/tutorial-css-animation-fill-mode/">http://www.valhead.com/2013/01/04/tutorial-css-animation-fill-mode/</a>
   - <a href="http://www.kirupa.com/html5/all_about_css_animations.htm">http://www.kirupa.com/html5/all_about_css_animations.htm</a>
+
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

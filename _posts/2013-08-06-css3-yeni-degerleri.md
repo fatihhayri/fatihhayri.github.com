@@ -48,17 +48,19 @@ Tarayıcılar HTML elemanları yorumlarken belirli başlangıç değerleri kabul
 
 Örnekte görüldüğü gibi kapsayıcı **div** elemanına atanan kırmızı rengi ilk paragraf için **initial** değeri ile tarayıcının ilk kabul değerine(siyah) döndürülmüştür.
 
-**Tarayıcı Destekleme Listesi**
-Firefox
-Chrome
-Safari
-Opera Desteklemiyor
-İnternet Explorer Desteklemiyor
-**Mobil Tarayıcılar **
-iOS Safari Desteklemiyor
-Opera Mobile Desteklemiyor
-Android Browser
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+**|*desteklemiyor*|**19+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**1.0+**|**destekliyor**|**-**|
+{: .tarayici-uyumi}
 
 ## Göreceli Değerler
 
@@ -72,29 +74,30 @@ Android Browser
 
 Örnekte de görüldüğü gibi her yazı tipinin sıfır karakteri genişli farklıdır.
 
-**Tarayıcı Destekleme Listesi**
-Firefox
-Chrome Desteklemiyor
-Safari Desteklemiyor
-Opera Desteklemiyor
-İnternet Explorer 9+
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|*desteklemiyor*|*9+*|*+*|
+{: .tarayici-uyumi}
 
 **rem Değeri**
 
 Tanımlanan yazı tipine göre  baz alınan değerdir. **em** değerine benzerdir. **em** değeri elemana tanımlanan yazı tipini baz alırken **rem** değeri her zaman kök(root) elementinin yazı tipini baz alır. HTML bir dokümanda kök eleman her zaman html’dir. font-size:1em tanımı html elemanı yazı tipi boyutuna eşit olacaktır.
 
-**Tarayıcı Destekleme Listesi**
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer 8+
-**Mobil Tarayıcılar **
-iOS Safari
-Opera Mobile Desteklemiyor
-Android Browser
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**8.0+**|**+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## Bakış Alanı Değerleri (View Port)
 
@@ -108,10 +111,11 @@ Bakış Alanının %1 değeri bu üçüne de eşittir. Örneğin Bakış alanı 
 
 Bir elemanın yüksekliğinin yarısını ifade etmek için
 
-	:::css
-	div{
-		height:50vh;
-	}
+{% highlight css %}
+div{
+	height:50vh;
+}
+{% endhighlight %}
 
 tanımını yapmamız yeterli olacaktır.
 
@@ -129,17 +133,19 @@ Genelde biz tasarımlarımızı kullanıcının bakış alanına sığdırmak is
 
 Bakış Alanı değerleri ekranın satır uzunluğunu okunabilir seviyede tutmazı olanak sağlar. Metinlerin ekranı farklı araçlarda optimum sığmasına olanak sağlarlar.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 19+
-Chrome 26+
-Safari 6+(kısmen)
-Opera 15+
-İnternet Explorer 9+(kısmen)
-**Mobil Tarayıcılar **
-iOS Safari 6+(kısmen)
-Opera Mobile Desteklemiyor
-Android Browser Desteklemiyor
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**26+ (-webkit)**|**9.0+ (kısmen)**|**19+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|*desteklemiyor*|**6.0 (kısmen)**|**36**|
+{: .tarayici-uyumi}
 
 ## Renk Değerleri
 
@@ -155,24 +161,27 @@ Hue(renk) renk çemberinde 0 ile 360 arasındaki renklere karşılık gelir. 0 k
 
 Örnek :
 
-	:::css
-	.div {
-		color:hsl(240,%50,%50)
-	}
+{% highlight css %}
+.div {
+	color:hsl(240,%50,%50)
+}
+{% endhighlight %}
 
 hsla değeride rgb ve rgba benzeridir. Renk değerine opaklık değeri eklenmiş halidir.
 
-**Tarayıcı Destekleme Listesi**
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer 9+
-**Mobil Tarayıcılar **
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**9+**|**+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## Açı Değeri
 
@@ -186,17 +195,19 @@ Turn değeri bir daireyi ifade eder. Animasyon işlerin çok işe yarar bir değ
 
 CSS tanımlarında derece ve turn değer tek değerdir, bundan dolayı kullanılırken derece ile yapışık kullanılmalıdır, araya boşluk bırakılmamalıdır.
 
-**Tarayıcı Destekleme Listesi**
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer 9+
-**Mobil Tarayıcılar **
-iOS Safari Desteklemiyor
-Opera Mobile Desteklemiyor
-Android Browser Desteklemiyor
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**9.0+**|**+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|*desteklemiyor*|*desteklemiyor*|*desteklemiyor*|
+{: .tarayici-uyumi}
 
 ## Fonsiyonel Değerler
 
@@ -208,10 +219,11 @@ Daha önce bu konuya değinmiştim. [CSS3 calc() değeri](http://fatihhayrioglu.
 
 Yeni değerlerden biride cycle() değeri. cycle() değeri iç içe elemanlar arasında aynı özelliğin farklı değerlerini sırası ile uygulamak için kullanılır.
 
-	:::css
-	li > ul {
-		list-style-type: cycle(disk, circle, square, box);
-	}
+{% highlight css %}
+li > ul {
+	list-style-type: cycle(disk, circle, square, box);
+}
+{% endhighlight %}
 
 5 adet iç içe liste elemanlarına sırası ile disk, circle, square, box işaretleri uygulanır. Şu an hiç bir tarayıcı desteklememektedir.
 
@@ -225,17 +237,19 @@ Bu fonksiyonu kullanarak basit bir tooltip uygulaması yapabiliriz.
 
 Örneği incelediğimizde html içinde bağlantıya **data-title** özniteliği olarak eklenen bilgilendirme **:hover** durumunda elemanın sözde :after sınıfı ile görünür hale getirilmektedir.
 
-**Tarayıcı Destekleme Listesi**
-Firefox
-Chrome
-Safari 3.1+
-Opera
-İnternet Explorer 8+
-**Mobil Tarayıcılar **
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**8.0+**|**+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 Basit kullanımı tüm tarayıcılarda varken CSS3 ile birlikte gelen yenilikleri henüz destekleyen tarayıcı yok. Daha önce sadece **content** özelliği desteği varken CSS3 ile tüm özellik desteği geldi, CSS2’de sadece **string** döndürürken CSS3 ile string dışında değer döndürme desteği de geldi.
 
@@ -249,17 +263,20 @@ counter() değeri CSS ile sıralı rakamlar oluşturmamızı sağlar.
 
 Kodu [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters?redirectlocale=en-US&redirectslug=CSS%2FCounters)’de gördüm. Değeri tanımlamak için güzel bir örnek.
 
-**Tarayıcı Destekleme Listesi**
-Firefox
-Chrome
-Safari 3.1+
-Opera
-İnternet Explorer 8+
-**Mobil Tarayıcılar **
-iOS Safari Desteklemiyor
-Opera Mobile Desteklemiyor
-Android Browser Desteklemiyor
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**8.0+**|**+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|*desteklemiyor*|*desteklemiyor*|*desteklemiyor*|
+{: .tarayici-uyumi}
+
 
 ## Kaynaklar
 
@@ -297,3 +314,8 @@ Android Browser Desteklemiyor
 * [http://demosthenes.info/blog/345/Understanding-UA-StyleSheets-and-the-CSS3-initial-Value](http://demosthenes.info/blog/345/Understanding-UA-StyleSheets-and-the-CSS3-initial-Value) (initial değeri)
 
 
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

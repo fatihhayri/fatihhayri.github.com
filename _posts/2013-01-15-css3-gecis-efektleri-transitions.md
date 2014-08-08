@@ -32,8 +32,9 @@ ile yapabilecek olmamız çok güzel bir gelişme. Basit tek satır
 kod(farklı tarayıcılar için yazılan önekler zamanla teke inecektir.) ile
 bu işi yapmak ayrı bir kolaylık tabi.
 
-	:::css
-	transition: property duration timing-function delay;
+{% highlight css %}
+transition: property duration timing-function delay;
+{% endhighlight %}
 
 ## Transtion Özellikleri
 
@@ -64,15 +65,16 @@ arasında bir geçiş olacağını gösterir.
 
 all değeri tüm tanımlarda geçiş yapılacağı anlamındadır.
 
-	:::css
-	a{
-		color:red;
-		transition-property: color;
-	}
+{% highlight css %}
+a{
+   color:red;
+   transition-property: color;
+}
 
-	a:hover {
-		color:blue;
-	}
+a:hover {
+   color:blue;
+}
+{% endhighlight %}
 
 ### Geçiş Efekti Uzunluğunu Belirleme (transition-duration)
 
@@ -90,31 +92,33 @@ yapıyoruz.
 0 değeri geçişin hemen olacağı anlamına gelir. Eksi değerler 0 olarak
 yorumlanır.
 
-	:::css
-	a{
-		color:red;
-		transition-property: color;
-		transition-duration:0.5s;
-	}
-	a:hover {
-		color:blue;
-	}
+{% highlight css %}
+a{
+   color:red;
+   transition-property: color;
+   transition-duration:0.5s;
+}
+a:hover {
+   color:blue;
+}
+{% endhighlight %}
 
 ### transition-delay
 
 Uygulanan geçiş efektinin ne kadar zaman sonra başlayacağını belirler.
 Belirlenen zamana kadar animasyonu durdurur ve sonra animasyon başlar.
 
-	:::css
-	a{
-		color:red;
-		transition-property: color;
-		transition-duration:0.5s;
-		transition-delay: 0.5s;
-	}
-	a:hover {
-		color:blue;
-	}
+{% highlight css %}
+a {
+   color:red;
+   transition-property: color;
+   transition-duration:0.5s;
+   transition-delay: 0.5s;
+}
+a:hover {
+   color:blue;
+}
+{% endhighlight %}
 
 Animasyonumuz 0.5 saniye sonra başlayacaktır.
 
@@ -146,17 +150,19 @@ geliyor.
 Yukarıda tek tek ayrı ayrı her özelliği tanımlayabildiğimiz gibi teek
 bir tannımlama ile bunları kısa bir şekilde tanımlamak da mümkün.
 
-	:::css
-	transition-property: width;
-	transition-duration:0.5s;
-	transition-delay: 0.5s;
-	transition-timing-function:ease-in-out;
+{% highlight css %}
+transition-property: width;
+transition-duration:0.5s;
+transition-delay: 0.5s;
+transition-timing-function:ease-in-out;
+{% endhighlight %}
 
 Yukarıdaki son örnekte geçiş tanımlarımız 4 adet idi. Biz burada bunları
 tek bir tanımda toplayalım.
 
-	:::css
-	transition: width 0.5s ease-in-out 0.5s;
+{% highlight css %}
+transition: width 0.5s ease-in-out 0.5s;
+{% endhighlight %}
 
 Görüldüğü gibi kodumuz daha kısa bir hal aldı. bundan sonra bu şekilde
 kullanmayı tercih edeceğim.
@@ -167,22 +173,23 @@ Yukarıda yaptığımız gibi tek bir özellik üzerinden geçiş efekti
 uygulayabildiğimiz gibi virgül ile ayırmak kaydı ile birden fazla geçiş
 efekti de uygulayabiliriz.
 
-	:::css
-	input{
-	   display:block;
-	   background-color:#788182;
-	   border:0;
-	   border-radius:5px;
-	   width:100px;
-	   padding:5px 10px;
-	   color:#fff;
-	   transition: width .5s ease-in-out, background .3s ease;
-	}
+{% highlight css %}
+input{
+   display:block;
+   background-color:#788182;
+   border:0;
+   border-radius:5px;
+   width:100px;
+   padding:5px 10px;
+   color:#fff;
+   transition: width .5s ease-in-out, background .3s ease;
+}
 
-	input:focus {
-	   width:250px;
-	   background-color:#50ebd6
-	}
+input:focus {
+   width:250px;
+   background-color:#50ebd6
+}
+{% endhighlight %}
 
 Son örneğimizde arama alanına odaklandığımızda genişliğini ve ardalan
 rengini geçiş efekti ile değiştirdi.
@@ -196,23 +203,25 @@ da :active, :target, :focus gibi sözde sınıfları da kullanılabilir.
 
 Ayrıca javascript ile DOM’a yapılan müdahaleler de buna eklenebilir.
 
-	:::css
-	a{
-	 display:block;
-	 background-color:#c4342f;
-	 padding:5px 10px;
-	 width:100px;
-	 color:#fff;
-	 transition: background-color 2s ease-in-out 1s;
-	}
-	a.tetikle {
-	 background-color:blue;
-	}
+{% highlight css %}
+a{
+ display:block;
+ background-color:#c4342f;
+ padding:5px 10px;
+ width:100px;
+ color:#fff;
+ transition: background-color 2s ease-in-out 1s;
+}
+a.tetikle {
+ background-color:blue;
+}
+{% endhighlight %}
 
 Javascript ilede bu bağlantıya tetikle diye bir sınıf tanımlayalım.
 
-	:::javascript
-	document.querySelector('a').className = 'tetikle';
+{% highlight javascript %}
+document.querySelector('a').className = 'tetikle';
+{% endhighlight %}
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DGvlB?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
@@ -220,10 +229,11 @@ Javascript ilede bu bağlantıya tetikle diye bir sınıf tanımlayalım.
 
 Javascript ile geçiş efektinin bittiğini kontrol etmek çok basit.
 
-	:::javascript
-	myElement.addEventListener("transitionend", function() {
-	// geçiş efekti bttikten sonra bunu yap
-	}, true);
+{% highlight javascript %}
+myElement.addEventListener("transitionend", function() {
+// geçiş efekti bttikten sonra bunu yap
+}, true);
+{% endhighlight %}
 
 Geçiş efekti tamamlandığında transitionend foksiyonunu tetkilyecektir.
 
@@ -232,17 +242,19 @@ Geçiş efekti tamamlandığında transitionend foksiyonunu tetkilyecektir.
 CSS3 ile gelen bir çok özellik gibi geçiş efekti özelliklerinin de önek
 ve internet explorer sorunları mevcuttur.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 4+ (-moz- öneki ile), 16+ öneksiz
-Chrome 1+ (-webkit- öneki ile)
-Safari 3.2+ (-webkit- öneki ile)
-Opera 10.5 (-o- öneki ile), 12.10 öneksiz
-İnternet Explorer 10+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+ (-webkit)**|**10+**|**4.0+ (-moz)**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 3.2+ (-webkit- öneki ile)
-Opera Mobile 10+ (-o- öneki ile), 12.10 öneksiz
-Android Browser 2.1+ (-webkit- öneki ile)
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 İnternet Explorer 10 ile gelen geçiş efekti desteğini öneksiz
 eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
@@ -288,3 +300,8 @@ eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
 -   [http://www.problogdesign.com/coding/get-started-with-css3-transitions-today](http://www.problogdesign.com/coding/get-started-with-css3-transitions-today)
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/](http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/)
 
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png
