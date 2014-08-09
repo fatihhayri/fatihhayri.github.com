@@ -54,10 +54,11 @@ Genel kullanımı
 Aldığı değerleri dönüşüm fonksiyonları bölümünde detaylı bir şekilde
 inceleyeceğiz.
 
-	:::css
-	p{
-		transform: translate(-150px, 75px);
-	}
+{% highlight css %}
+p{
+	transform: translate(-150px, 75px);
+}
+{% endhighlight %}
 
 Uygulandığı paragrafı kendi orijin noktasına göre 75px sağa ve 150px
 aşağıya öteleyecektir. Göreceli bir tanımda(örn: % gibi) referans olarak
@@ -81,18 +82,20 @@ döndürdüğümüzde elmanın ortasında göre işlem yapar.) Üstten 50% solda
 tanımlanabilir. İlk değeri X ekseninden mesafesini, ikinci değer Y
 sekseninden mesafesini tanımlar.
 
-	:::css
-	p{
-		transform-origin:0, 0;
-	}
+{% highlight css %}
+p{
+	transform-origin:0, 0;
+}
+{% endhighlight %}
 
 Yüzde değerlerinde referans olarak elemanın kutu alanı alınır.
 
 Daha iyi anlamak için aşağıda da göreceğimiz döndürme(rotate)
 uygulayarak görelim.
 
-	:::css
-	transform: rotate(-10deg);
+{% highlight css %}
+transform: rotate(-10deg);
+{% endhighlight %}
 
 ![][1]
 
@@ -120,8 +123,9 @@ dönüştürme işlemlerini yapabiliyoruz. Biz burada bir CSS3 transform
 translate değeri elemanı bir noktadan başka bir noktaya taşımamızı
 sağlıyor.
 
-	:::css
-	 translate (x, y)
+{% highlight css %}
+translate (x, y)
+{% endhighlight %}
 
 Bu sayede biz elemanı orijinal konumundan x-ekseninde soldan mesafesi ve
 y-ekseninde üstten mesafesini tanımlayarak taşıyabiliyoruz. Basit bir
@@ -129,10 +133,11 @@ kullanımı vardır.
 
 Bir örnek yapalım;
 
-	:::css
-	 #tasinan{
-	 	transform:translate(150px,100px);
-	}
+{% highlight css %}
+#tasinan{
+ 	transform:translate(150px,100px);
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/s6hZX/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -143,17 +148,19 @@ translateY özelliklerini kullanabiliriz.
 
 Yukarıdaki örneği
 
-	:::css
-	 #tasinan{
-	 	transform:translateX(150px);
-	}
+{% highlight css %}
+#tasinan{
+ 	transform:translateX(150px);
+}
+{% endhighlight %}
 
 aynı şekilde y ekseninde hareket için
 
-	:::css
-	 #tasinan{
-	 	transform:translateY(100px);
-	}
+{% highlight css %}
+#tasinan{
+ 	transform:translateY(100px);
+}
+{% endhighlight %}
 
 şeklinde uygulanabilir.
 
@@ -163,10 +170,11 @@ aynı şekilde y ekseninde hareket için
 animasyon oluşturabiliriz. Hem translate özelliğini daha iyi anlamış
 oluruz.
 
-	:::css
-	 #tasinan{
-	 	transition: all 5s;
-	}
+{% highlight css %}
+#tasinan{
+ 	transition: all 5s;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AF5hS/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -180,15 +188,17 @@ rotate değeri yardımı ile sabit bir noktaya göre elemanı belirlenen açı
 ile döndürebiliyoruz. Bu sabit nokta transform-origin tanımı ile
 değiştirilebiliyor.
 
-	:::css
-	 rotate(<açı>)
+{% highlight css %}
+rotate(<açı>)
+{% endhighlight %}
 
 Bir örnek ile konuyu daha iyi anlayalım.
 
-	:::css
-	 .deneme{
-	 	transform:rotate(45deg);
-	}
+{% highlight css %}
+.deneme{
+ 	transform:rotate(45deg);
+}
+{% endhighlight %}
 
 Yukarıdaki kod ile tanımlanan HTML elemanını 45 (deg-degrees)derece
 döndürdük. Saat yönüne çevirdiğimiz gibi, eksi değer vererek saat
@@ -200,10 +210,11 @@ rad(radyen) ve turn.
 turn değerini biraz daha inceleyelim. turn değeri dairenin etrafını
 gösteriyor.
 
-	:::css
-	 .deneme{
-	 	transform:rotate(.5trun);
-	}
+{% highlight css %}
+.deneme{
+ 	transform:rotate(.5trun);
+}
+{% endhighlight %}
 
 0.5 olarakta tanımlanabilecek bu değer elemanımızı yarım daire kadar
 döndürecektir.
@@ -214,14 +225,15 @@ döndürecektir.
 
 Bir örnekte animasyonlu yapalım.
 
-	:::css
-	 .deneme{
-	 	transition: all 0.5s;
-	}
+{% highlight css %}
+.deneme{
+ 	transition: all 0.5s;
+}
 
-	.deneme:hover{    
-		transform:rotate(45deg);
-	}
+.deneme:hover{    
+	transform:rotate(45deg);
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aCKL9/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -241,10 +253,11 @@ büyütebilir veya küçültebiliriz.
 
 Bir örnek ile konuyu daha iyi anlayalım.
 
-	:::css
-	 .denemeBuyut{
-	 	transform:scale(1.5);
-	}
+{% highlight css %}
+.denemeBuyut{
+ 	transform:scale(1.5);
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/eCb2C/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -260,17 +273,19 @@ Elemanları sadece bir eksen ölçeklemek için scaleX ve scaleY
 
 Yukarıdaki örneği
 
-	:::css
-	 .denemeBuyut{
-	 	transform:scaleX(1.5);
-	}
+{% highlight css %}
+.denemeBuyut{
+ 	transform:scaleX(1.5);
+}
+{% endhighlight %}
 
 aynı şekilde y ekseninde hareket için
 
-	:::css
-	 .denemeBuyut{
-	 	transform:scaleY(2);
-	}
+{% highlight css %}
+.denemeBuyut{
+ 	transform:scaleY(2);
+}
+{% endhighlight %}
 
 şeklinde uygulanabilir.
 
@@ -295,10 +310,11 @@ y için farklı açı değerleride belirleyebiliyoruz.
 
 Bir örnek yapalım.
 
-	:::css
-	 .deneme{
-	 	transform: skew(10deg, 20deg);
-	}
+{% highlight css %}
+.deneme{
+ 	transform: skew(10deg, 20deg);
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/fRpmS/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -309,17 +325,19 @@ kullanabiliriz.
 
 Yukarıdaki örneği
 
-	:::css
-	 .denemeBuyut{
-		transform:skewX(10deg);
-	}
+{% highlight css %}
+.denemeBuyut{
+	transform:skewX(10deg);
+}
+{% endhighlight %}
 
 aynı şekilde y ekseninde eğiklik için
 
-	:::css
-	 .denemeBuyut{
-	 	transform:skewY(20deg);
-	}
+{% highlight css %}
+.denemeBuyut{
+ 	transform:skewY(20deg);
+}
+{% endhighlight %}
 
 şeklinde uygulanabilir.
 
@@ -335,10 +353,11 @@ Dönüşüm fonksiyonları yukarıda tanımladığımız gibi tek tek
 tanımlanabildiği gibi kısaltma olarak arada boşluk bırakılarak
 birliktede tanımlanabilir.
 
-	:::css
-	 div {
-	 	transform: translate(10px 30%) scale(2.0) rotate(45deg) skew(5deg, 20deg);
-	}
+{% highlight css %}
+div {
+ 	transform: translate(10px 30%) scale(2.0) rotate(45deg) skew(5deg, 20deg);
+}
+{% endhighlight %}
 
 Böylece kodlamamızda bayağı bir kısaltmaya gitmiş oluruz. Çoklu tanım
 uygulandığında bu fonksiyonlar soldan sağa doğru sırası ile
@@ -359,8 +378,9 @@ aşağıdaki şekilde gösterilir
 
 Bu yazımı css koduna çevirirsek;
 
-	:::css
-	 transform: matrix(1.5, 0, 0, 1.2, 0, 0)
+{% highlight css %}
+transform: matrix(1.5, 0, 0, 1.2, 0, 0)
+{% endhighlight %}
 
 Matris değerleri hakkında daha fazla bilgi için
 [http://www.w3.org/TR/SVG/coords.html#EstablishingANewUserSpace][]
@@ -386,6 +406,20 @@ iOS Safari 3.2+ (-webkit- öneki ile)
 Opera Mobile 11+ (-o- öneki ile)
 Android Browser 2.1+ (-webkit- öneki ile)
 {: .tarayiciuyum }
+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**10+ (-webkit)**|**9+ (-ms)**|**3.5+ (-moz)**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 ie6-8 için çözüm [http://www.useragentman.com/IETransformsTranslator/][]
 sitesindeki araç ile üretilmiştir. Dönüştürme kadar esnek olmasada çok
@@ -502,3 +536,9 @@ sağlayacaktır.
   [http://msdn.microsoft.com/en-us/magazine/gg709742.aspx]: http://msdn.microsoft.com/en-us/magazine/gg709742.aspx
   [http://www.useragentman.com/blog/2011/01/07/css3-matrix-transform-for-the-mathematically-challenged/]: http://www.useragentman.com/blog/2011/01/07/css3-matrix-transform-for-the-mathematically-challenged/
   [http://www.alsacreations.com/article/lire/1418-css3-transformations-2d.html]: http://www.alsacreations.com/article/lire/1418-css3-transformations-2d.html
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

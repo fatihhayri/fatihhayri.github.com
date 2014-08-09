@@ -33,20 +33,22 @@ Bir örnek vererek işin ne kadar kötü göründüğüne bakabiliriz. CSS renk
 geçişi özelliğini tanımlamak için bir kod yazmamız gerektiğinde
 aşağıdaki gibi bir kod bloğunu eklememiz gerekiyor.
 
-	:::css
-	 background: #1e5799; /* Old browsers */
-	 background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
-	 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
-	 background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
-	 background: -o-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
-	 background: -ms-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
-	 background: linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
-	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+{% highlight css %}
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+background: linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+{% endhighlight %}
 
 Şeklinde bir renk geçişi tanımı göz korkutuyor. Bu kod aslında tek satır
 
-	:::css
-	 background: linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+{% highlight css %}
+background: linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+{% endhighlight %}
 
 Ancak farklı tarayıcılar için kod yazınca yukarıdaki hali alıyor.
 
@@ -105,38 +107,41 @@ tanımlarımızı bu tanım üzerinden yaparak önek sorununu halledebiliriz.
 
 **SASS**
 
-	:::css
-	 @mixin border-radius($values) {
-	 	-webkit-border-radius: $values;
-		-moz-border-radius: $values;
-		border-radius: $values;
-	}
+{% highlight css %}
+@mixin border-radius($values) {
+    -webkit-border-radius: $values;
+    -moz-border-radius: $values;
+    border-radius: $values;
+}
 
-	div {
-		@include border-radius(10px);
-	}
+div {
+	@include border-radius(10px);
+}
+{% endhighlight %}
 
 ve
 
-	:::css
-	.border-radius(@values) {
-		-webkit-border-radius: @values;
-		-moz-border-radius: @values;
-		border-radius: @values;
-	}
+{% highlight css %}
+.border-radius(@values) {
+	-webkit-border-radius: @values;
+	-moz-border-radius: @values;
+	border-radius: @values;
+}
 
-	div {
-		.border-radius(10px);
-	}
+div {
+	.border-radius(10px);
+}
+{% endhighlight %}
 
 sonuç olarak üretilen CSS
 
-	:::css
-	 div {
-	 	-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		border-radius: 10px;
-	}
+{% highlight css %}
+div {
+ 	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+{% endhighlight %}
 
 LESS ve SASS gibi yapıları sitenizde kullanıyorsanız sorunun çözümü için
 güzel bir seçenek bunlar.

@@ -24,8 +24,9 @@ karşılaşıyoruz.
 Javascript ile üretilen güzel bir çözüm mevcut. **html5shiv** olarak
 adlandırılan bu teknik temel mantık olarak
 
-	:::javascript
-	 document.createElement("section");
+{% highlight javascript %}
+document.createElement("section");
+{% endhighlight %}
 
 ile HTML5 eleman desteği olmayan tarayıcılar için js yardımı ile eleman
 oluşturarak çözüyor. Birde **<section>** ve diğer blok-level etiketler
@@ -39,15 +40,17 @@ Kullanımı çok basit. Internet Explorer 9 öncesi için [şartlı yorumlar][]
 ile kontrolü koyup diğer tarayıcılarda yüklenmesini engelleyerek daha
 mantıklı bir işlem yapıyoruz.
 
-	:::html
-	 <!--[if lt IE 9]> <script src="dist/html5shiv.js"></script> <![endif]-->
+{% highlight html %}
+<!--[if lt IE 9]> <script src="dist/html5shiv.js"></script> <![endif]-->
+{% endhighlight %}
 
 Ayrıca google hostunda da barındırılıyor bu kod
 
-	:::html
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+{% highlight html %}
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+{% endhighlight %}
 
 Bu şekilde daha hızlı bir erişim sağlanmış olur. Tabi büyük projelerin
 kendilerinde barındırmaları daha mantıklı.

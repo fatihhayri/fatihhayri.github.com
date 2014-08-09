@@ -82,10 +82,11 @@ Söz konusu çizimler gözlemcide, biçim ve orantı bakımından, renklerden
 bağımsız olarak, 3 boyutlu bir gerçeklik izlenimi yaratır.” -
 [wikipedia.org][]
 
-	:::css
-	div {
-		transform: perspective(derinlik);
-	}
+{% highlight css %}
+div {
+    transform: perspective(derinlik);
+}
+{% endhighlight %}
 
 
 Derinlik değeri bir uzunluğu(px olarak) veya none değerlerini alır.
@@ -100,14 +101,16 @@ Derinlik değeri bir uzunluğu(px olarak) veya none değerlerini alır.
 Derinlik hissini anlamak için aşağıdaki örneklere bir göz atın. İlk
 kodumuz normal perspective ataması olmayan bir kutu
 
-	:::css
-	transform: translate(0px, 0px, -200px);
+{% highlight css %}
+transform: translate(0px, 0px, -200px);
+{% endhighlight %}
 
 
 İkinci sağdaki kutu ise perspective uygulanmış kutu;
 
-	:::css
-	transform: perspective(500px) translate3d(0px, 0px, -200px);
+{% highlight css %}
+transform: perspective(500px) translate3d(0px, 0px, -200px);
+{% endhighlight %}
 
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Cjwcw/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -116,14 +119,16 @@ Bir örnek daha yaparak ile pekiştirelim.
 
 soldaki kutu
 
-	:::css
-	transform: rotatey(30deg);
+{% highlight css %}
+transform: rotatey(30deg);
+{% endhighlight %}
 
 
 sağdaki kutu
 
-	:::css
-	transform: perspective(300px) rotatey(30deg);
+{% highlight css %}
+transform: perspective(300px) rotatey(30deg);
+{% endhighlight %}
 
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/HECGV/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -139,10 +144,11 @@ kullanabildiğimiz translate3d kullanımlarını göreceğiz.
 translateZ değeri z-ekseninde elemanı hareket ettirmeye yarar. Yüzde
 değeri almaz.
 
-	:::css
-	div {
-		transform: translateZ(uzunluk);
-	}
+{% highlight css %}
+div {
+    transform: translateZ(uzunluk);
+}
+{% endhighlight %}
 
 
 Uzunluk değeri bir sayıdır. Perspective özelliğini anlatırken verdiğimiz
@@ -153,16 +159,18 @@ ilk örnekte bu özelliğe değinmiştik.
 translate3d tanımı 3 ekseninde aynı anda tanımını sağlamamızı sağlayan
 bir kısaltmadır.
 
-	:::css
-	translate3d(x, y, z)
+{% highlight css %}
+translate3d(x, y, z)
+{% endhighlight %}
 
 
 Bir örnek kod yazarsak
 
-	:::css
-	 div {
-	 	transform: translate3d(20px, 60px, 30px);
-	}
+{% highlight css %}
+ div {
+    transform: translate3d(20px, 60px, 30px);
+}
+{% endhighlight %}
 
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/kTTm3/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -180,10 +188,11 @@ tanımlayacağız.
 
 **- scaleZ**
 
-	:::css
-	div {
-		transform: scaleZ(number);
-	}
+{% highlight css %}
+div {
+    transform: scaleZ(number);
+}
+{% endhighlight %}
 
 scaleZ tanımı biraz farklı davranır. Dönüşüm uygulanmış elemanlarda
 büyültme veya küçültme işlemi 3 boyutlu eksen yapmak mümkün değil.
@@ -191,10 +200,11 @@ Burada yaptığımız daha çok 3 boyutlu eksende 2 boyutlu görüntü elde
 etmektir. Bundan dolayı scaleZ değeri translateZ, rotate veya
 perspective değerlerinin bir ile kullanmak daha anlamlı olacaktır.
 
-	:::css
-	div {
-		transform: perspective(500px) scaleZ(2) rotateX(45deg);
-	}
+{% highlight css %}
+div {
+    transform: perspective(500px) scaleZ(2) rotateX(45deg);
+}
+{% endhighlight %}
 
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/6Uaet/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -206,8 +216,9 @@ Yıldız savaşları filmindeki yazılara benzer bir görüntü elde ediyoruz.
 scale3d özelliği tüm scale özelliklerini bir tanımda toplayan bir
 kısaltmadır.
 
-	:::css
-	scale3d(x, y, z)
+{% highlight css %}
+scale3d(x, y, z)
+{% endhighlight %}
 
 
 **rotateX, rotateY, rotateZ ve rotate3d**
@@ -221,8 +232,9 @@ Negatif değer alabilirler.
 
 **- rotateX**
 
-	:::css
-	rotateX(<açı>)
+{% highlight css %}
+rotateX(<açı>)
+{% endhighlight %}
 
 
 rotateX tanımı ile verilen açı değeri kadar saat yönünde elemanı
@@ -235,8 +247,9 @@ eğilmiştir.
 
 **- rotateY**
 
-	:::css
-	rotateY(<açı>)
+{% highlight css %}
+rotateY(<açı>)
+{% endhighlight %}
 
 
 rotateY tanımı ile verilen açı değeri kadar saat yönünde elemanı
@@ -249,8 +262,9 @@ eğilmiştir.
 
 **- rotateZ**
 
-	:::css
-	rotateZ(<açı>)
+{% highlight css %}
+rotateZ(<açı>)
+{% endhighlight %}
 
 
 rotateZ tanımı ile verilen açı değeri kadar saat yönünde elemanı
@@ -263,8 +277,9 @@ eğilmiştir.
 
 **- rotate3d**
 
-	:::css
-	rotate3d(<rakam>, <rakam>, <rakam>,<açı>)
+{% highlight css %}
+rotate3d(<rakam>, <rakam>, <rakam>,<açı>)
+{% endhighlight %}
 
 
 rotate3d özelliği saat yönünde 3 boyutlu döndürme işlemi yapar. Son
@@ -288,11 +303,11 @@ sağlamak amacıyla oluşturulan 4x4 bir matrisi olan 16 değerli bir
 Bana biraz karışık gelen bir durum. Programatik olarak 3 boyutlu
 dönüşümleri yapmaya yarayan bir fonksiyon olarak tanımlayabilirim.
 
-	:::css
-	div {
-	transform: matrix3d( m01,m02,m03,m04, m05,m06,m07,m08,m09,m10,m11,m12, m13,m14,m15,m16);
-	}
-
+{% highlight css %}
+div {
+transform: matrix3d( m01,m02,m03,m04, m05,m06,m07,m08,m09,m10,m11,m12, m13,m14,m15,m16);
+}
+{% endhighlight %}
 
 [http://www.eleqtriq.com/images/static/demos/2010/css3d/matrix3dexplorer.html][]
 
@@ -326,8 +341,9 @@ Dönüşümün orjin olarak nereye referans alacağını tanımlamamızı sağla
 2 boyutlu dönüştürmede bahsettiğimiz bu özellik 3 boyutlu dönüşümde
 benzer bir kullanımı var ek olarak z-ekseni tanımıda eklenmektedir.
 
-	:::css
-	transform-origin: x,y,z;
+{% highlight css %}
+transform-origin: x,y,z;
+{% endhighlight %}
 
 
 z tanımı z-eksenindeki mesafeyi belirtmemiz için kullanılmaktadır.
@@ -344,25 +360,27 @@ değerlerini alıyor.
 
 [Carousel örneğinde][] bu özelliği daha iyi anlarız.
 
-	:::css
-	figure{
-		-webkit-backface-visibility:visible;
-		-moz-backface-visibility:visible;
-		-ms-backface-visibility:visible;
-		-o-backface-visibility:visible;
-		backface-visibility:visible;
-	}
+{% highlight css %}
+figure{
+    -webkit-backface-visibility:visible;
+    -moz-backface-visibility:visible;
+    -ms-backface-visibility:visible;
+    -o-backface-visibility:visible;
+    backface-visibility:visible;
+}
+{% endhighlight %}
 
 ![Carousel örneğinde][3]
 
-	:::css
-	figure{
-		-webkit-backface-visibility:hidden;
-		-moz-backface-visibility:hidden;
-		-ms-backface-visibility:hidden;
-		-o-backface-visibility:hidden;
-		backface-visibility:hidden;
-	}
+{% highlight css %}
+figure{
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
+}
+{% endhighlight %}
 
 ![Carousel örneğinde][4]
 
@@ -388,6 +406,20 @@ iOS Safari 3.2+ (-webkit- öneki ile)
 Opera Mobile desteklemiyor
 Android Browser 3.0+ (-webkit- öneki ile)
 {: .tarayiciuyum }
+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**12+ (-webkit)**|**10+ (-ms)**|**12+ (-moz)**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**3.0+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 ## Kaynaklar
 
@@ -470,3 +502,9 @@ Android Browser 3.0+ (-webkit- öneki ile)
   [https://developer.mozilla.org/en/CSS/transform-function]: https://developer.mozilla.org/en/CSS/transform-function
   [http://desandro.github.com/3dtransforms/docs/perspective.html]: http://desandro.github.com/3dtransforms/docs/perspective.html
   [http://caniuse.com/#feat=transforms3d]: http://caniuse.com/#feat=transforms3d
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

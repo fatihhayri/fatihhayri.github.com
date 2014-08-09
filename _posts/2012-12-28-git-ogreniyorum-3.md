@@ -14,65 +14,77 @@ Ben grep&rsquo;i git&rsquo;in arama komutu olarak biliyordum, ancak unix sisteml
 
 Genel söz dizimi
 
-	:::bash
-	$ git grep [özellikler] arama_kelimesi [dosyalar]
+{% highlight bash %}
+$ git grep [özellikler] arama_kelimesi [dosyalar]
+{% endhighlight %}
 
 Örneğin
 
-	:::bash
-	$ git grep 'kapsayamama' /home/fatih/ana.css
+{% highlight bash %}
+$ git grep 'kapsayamama' /home/fatih/ana.css
+{% endhighlight %}
 
 Yukarıdaki örnek basit bir kullanıma örnek olarak veridi. /home/fatih/ana.css klasörü içinde kapsayamama kelimesini arayacaktır.
 
 Grep&rsquo;in bazı özellikleri vardır. Bu kısayolları kullanarak aramalarımıza bazı özellikler ekleriz.
 
-	:::bash
-	$ git grep -v 'kapsayamama' /home/fatih/ana.css
+{% highlight bash %}
+$ git grep -v 'kapsayamama' /home/fatih/ana.css
+{% endhighlight %}
 
 İçinde kapsayamama geçmeyen satırları bize verecektir. -v (invert-match)
 
-	:::bash
-	$ git grep -c 'kapsayamama' /home/fatih/ana.css
+{% highlight bash %}
+$ git grep -c 'kapsayamama' /home/fatih/ana.css
+{% endhighlight %}
 
 Aradığımız dosya içinde kapsayamama kelimesinin kaç kere geçtiğini bize gösterir. -c (count)
 
-	:::bash
-	$ git grep -i 'kapsayamama' /home/fatih/ana.css
+{% highlight bash %}
+$ git grep -i 'kapsayamama' /home/fatih/ana.css
+{% endhighlight %}
 
 Aramanın büyük-küçük harfe duyarsızlaştırır. Yani arama sonuçlarında Kapsayamama çıkar. -i (ignore-case)
 
-	:::bash
-	$ git grep -r 'kapsayamama' /home/fatih/
+{% highlight bash %}
+$ git grep -r 'kapsayamama' /home/fatih/
+{% endhighlight %}
 
 Aramanın belirlene dizin ve alt dizinlerde yapılmasını belirler. -r (recursive)
 
-	:::bash
-	$ git grep -n 'kapsayamama' /home/fatih/
+{% highlight bash %}
+$ git grep -n 'kapsayamama' /home/fatih/
+{% endhighlight %}
 
 grep ile listelenen sonuçların hangi satırda olduğunu gösterir. -n (line-number)
 
-	:::bash
-	$ git grep '\&lt;script' /home/fatih/
+{% highlight bash %}
+$ git grep '\&lt;script' /home/fatih/
+{% endhighlight %}
 
 &lsquo;\&rsquo;(ters bölü işareti) karakteri kendisinden sonra gelen karakterin özel bir karakter olduğunu gösterir ve aramaya dahil edilmesini sağlar.
 
-	:::bash
-	$ git grep 'kapsayamama' /home/fatih/
+{% highlight bash %}
+$ git grep 'kapsayamama' /home/fatih/
+{% endhighlight %}
 
 Birden fazla arama bloğunu bir arada kullanmak için | boru(pipe) işaretini kullanırız.
 
-	:::bash
-	$ git grep '^script' /home/fatih/
+{% highlight bash %}
+$ git grep '^script' /home/fatih/
+{% endhighlight %}
 
 grep aramalarımızda Düzenli İfadeleri(regex) kullanabiliriz. Yukarıdaki örnekte script ile başlayan sonuçları getir demektir.
 
-	:::bash
-	$ git grep 'script$' /home/fatih/
+{% highlight bash %}
+$ git grep 'script$' /home/fatih/
+{% endhighlight %}
 
 Yukarıdaki script ile biten satırları listeler. Düzenli ifadeler ile yapabileceklerimizi düşündüğümüzde aramalarımızı ne kadar özelleştirebileceğimizi anlarız.
 
-	:::bash
-	$ git grep <script> /home/fatih | more
+{% highlight bash %}
+$ git grep <script> /home/fatih | more
+{% endhighlight %}
 
 grep ile arama yaptığımızda pencere genişliği kadar çıktıları bize gösterir. Tüm satırın gösterilmesi için | more kullanırız.
 
@@ -81,34 +93,36 @@ grep ile arama yaptığımızda pencere genişliği kadar çıktıları bize gö
 git komutları ve işlemlerini renklendirmek mümkündür. Daha okunaklı ekranlar için Git&rsquo;in status, branch ve diff komutlarını renklendirelim.
 Renklendirme için konfigürasyon dosyasına ~/.gitconfig aşağıdaki kodları eklemeniz yeterli.
 
-	:::bash
-	[color]
-	  branch = auto
-	  diff = auto
-	  status = auto
+{% highlight bash %}
+[color]
+  branch = auto
+  diff = auto
+  status = auto
 
-	[color &quot;branch&quot;]
-	  current = yellow reverse
-	  local = yellow
-	  remote = green
+[color &quot;branch&quot;]
+  current = yellow reverse
+  local = yellow
+  remote = green
 
-	[color &quot;diff&quot;]
-	  meta = yellow bold
-	  frag = magenta bold
-	  old = red bold
-	  new = green bold
+[color &quot;diff&quot;]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 
-	[color &quot;status&quot;]
-	  added = yellow
-	  changed = green
-	  untracked = cyan
+[color &quot;status&quot;]
+  added = yellow
+  changed = green
+  untracked = cyan
+{% endhighlight %}
 
 ##Git dallanmalarını düzenleme
 
 Git'te master'a gitmiş bütün eski dallanmalarımızı(branch) -lokalden- silmek için şöyle bir komut kullanabiliriz:
 
-	:::bash
-	git branch --merged master | grep -v 'master$' | xargs git branch -d
+{% highlight bash %}
+git branch --merged master | grep -v 'master$' | xargs git branch -d
+{% endhighlight %}
 
 Kaynak: [http://devblog.springest.com/a-script-to-remove-old-git-branches](http://devblog.springest.com/a-script-to-remove-old-git-branches)
 
@@ -118,20 +132,23 @@ Kaynak: [http://devblog.springest.com/a-script-to-remove-old-git-branches](http:
 
 git'te dosya adıyla arama:
 
-	:::bash
-	git ls-files '*kelime*'
+{% highlight bash %}
+git ls-files '*kelime*'
+{% endhighlight %}
 
 ![ls-files](https://lh5.googleusercontent.com/ssBLy7QzvOHj_9wV9Oc4HOG9-ORVPgYwF7StHQ4NSIGgXYvE-yk6LldHOJBwcLLZeULMD27xSrwI1tty3o-HEWjrSETgxDj7GAnWUC7eifiEMT1PyEWs)
 
 ##Git ile Suçluyu Bulmak
 
-	:::bash
-	git blame
+{% highlight bash %}
+git blame
+{% endhighlight %}
 
 Bir örnek yapalım:
 
-	:::bash
-	git blame source/css-ile-tablolari-sekillendirmek.md
+{% highlight bash %}
+git blame source/css-ile-tablolari-sekillendirmek.md
+{% endhighlight %}
 
 kodu aşağıdaki sonucu döndürüyor. Her satırı tek tek en son kimin, ne zaman değiştirdiğini gösteriyor.
 
@@ -139,13 +156,15 @@ kodu aşağıdaki sonucu döndürüyor. Her satırı tek tek en son kimin, ne za
 
 ##Git ile Sadece Belirlenen Dosyaları Gönderme
 
-	:::bash
-	git add
+{% highlight bash %}
+git add
+{% endhighlight %}
 
 ile eklenecek dosya veya dosyalar eklenir ve sonra
 
-	:::bash
-	git commit -m "aciklama_yaz"
+{% highlight bash %}
+git commit -m "aciklama_yaz"
+{% endhighlight %}
 
 ile gönderim yapılır.
 Bir örnek yapalım. Örneği 3 dosyada değişiklik yaptık.
@@ -158,8 +177,9 @@ Ancak biz bu değişikliklerden sadece bir tanesini(source/xhtml-ipuclari-1.md) 
 
 Dosyayı gönderirken
 
-	:::bash
-	git commit -m "xhtml makalesindeki duzeltme yapildi"
+{% highlight bash %}
+git commit -m "xhtml makalesindeki duzeltme yapildi"
+{% endhighlight %}
 
 kullanımı önemli.
 
@@ -171,9 +191,10 @@ Sonuçta sadece source/xhtml-ipuclari-1.md dosyası gönderilirken diğer iki do
 
 Git ile terminalde kod yazarken en güzel özelliklerden birisi &lt;tab&gt; tuşu ile otomatik tamamlama yapabilme özelliği. Benim bilgisayarımda hazır geliyor eğer sizde yüklü değilse kaynak bağlantıda yükleme ayrıntıları mevcut.
 
-	:::bash
-	$ git co<tab><tab>
-	commit config
+{% highlight bash %}
+$ git co<tab><tab>
+commit config
+{% endhighlight %}
 
 Yukarıda görüldüğü gibi git co yazdık ve yazacağımız komutu unuttuk veya tamamını yazmak istemedik, ilk &lt;tab&gt; tuşuna bastığımızda eğer başka eşleşen kelime yoksa bize direk sonucu getirir, &lt;tab&gt; tuşuna iki kere basınca bu sefer eşleşen tüm kelimeler altta listelenir. Sonraki &lt;tab&gt; tuşuna basışlarımızda ise altta listelenen kelimeler arasında gezeceğiz.
 

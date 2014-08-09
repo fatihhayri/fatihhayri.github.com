@@ -18,19 +18,19 @@ sitesini kullanıyorum.
 
 Sorunu görmek için aşağıdaki gibi bir örnek yaptım;
 
-	:::css
-	 #test{
-		padding:10px;
-		background: #ffffff; /* Old browsers */
-		background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+*/
-		background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,#ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
-		background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-	}
-
+{% highlight css %}
+#test{
+	padding:10px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+*/
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,#ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+{% endhighlight %}
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/2gKwm/4/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ie7’de(6’yı kâle bile almıyorum :D) renk geçişinin uygulanmadığını görüyoruz.

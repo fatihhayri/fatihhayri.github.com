@@ -23,14 +23,16 @@ sizlerle paylaşmak istedim.
 **background-image** özelliğine eklenen renk geçişi kodu tekrar
 edecektir, biz bu tekrarı istemediğimiz için.
 
-	:::css
-	background-repeat: no-repeat;
+{% highlight css %}
+background-repeat: no-repeat;
+{% endhighlight %}
 
 ekledik. Ayrıca uygulana renk geçişinin sayfa zemininde sabitlenmesi
 için
 
-	:::css
-	background-attachment: fixed;
+{% highlight css %}
+background-attachment: fixed;
+{% endhighlight %}
 
 kodunu ekledik.
 

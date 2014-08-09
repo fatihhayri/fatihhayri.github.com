@@ -87,44 +87,48 @@ ile bir çok uygulama yapımı için kullanılıyor.
 
 radyo butonlar ve işaret kutuları label ile kullanılmaktadır.
 
-	:::html
-	<input id="rad1" type="radio" name="rad">
-	<label for="rad1">Radio 1</label>
+{% highlight html %}
+<input id="rad1" type="radio" name="rad">
+<label for="rad1">Radio 1</label>
+{% endhighlight %}
 
 for tanımı yardımı ile label ile radyo buton veya işaret kutusuna erişim
 sağlanır. for ile radyo buton ve işaret kutusu id’si aynı olmalıdır.
 
-	:::css
-	input[type="radio"]:checked+label{
-		font-weight: bold;
-	}
+{% highlight css %}
+input[type="radio"]:checked+label{
+	font-weight: bold;
+}
+{% endhighlight %}
 
 Tanımı ile tıklama yakalama işini yapabiliyoruz.
 
 Hemen bunu basit bir gizle göster işini nasıl yaparız onu gösterelim.
 
-	:::html
-	<input id="che1" type="checkbox" name="che">
-	<label for="che1">Radio 1</label>
-	<div class="icerikAlani">Gizli İçerik</div>
+{% highlight html %}
+<input id="che1" type="checkbox" name="che">
+<label for="che1">Radio 1</label>
+<div class="icerikAlani">Gizli İçerik</div>
+{% endhighlight %}
 
 Yukarıdaki koda birde div ekledik. Amacımız bir tıkla bu divi göstermek,
 eğer açıksa bir tıkla gizlemek.
 
-	:::css]
-	input[type="checkbox"],
-	.icerikAlani{
-		display:none;
-	}
+{% highlight css %}]
+input[type="checkbox"],
+.icerikAlani{
+	display:none;
+}
 
-	label{
-		color:blue;
-		cursor:pointer;
-	}
+label{
+	color:blue;
+	cursor:pointer;
+}
 
-	input[type="checkbox"]:checked ~ .icerikAlani{
-		display:block;
-	}​
+input[type="checkbox"]:checked ~ .icerikAlani{
+	display:block;
+}​
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/ZSudF/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -145,32 +149,34 @@ beklememize gerek kalmadı.
 
 ![][2]
 
-	:::html
-	<dl>
-		<dt id="dn1">
-			<a href="#dn1">Deneme Başlık</a>
-		</dt>
-		<dd>Deneme 1 İçerik</dd>
-		<dt id="dn2">
-			<a href="#dn2">Deneme Başlık 2</a>
-		</dt>
-		<dd>Deneme 2 İçerik</dd>
-	</dl>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+{% highlight html %}
+<dl>
+	<dt id="dn1">
+		<a href="#dn1">Deneme Başlık</a>
+	</dt>
+	<dd>Deneme 1 İçerik</dd>
+	<dt id="dn2">
+		<a href="#dn2">Deneme Başlık 2</a>
+	</dt>
+	<dd>Deneme 2 İçerik</dd>
+</dl>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+{% endhighlight %}
 
 CSS kodu;
 
-	:::css
-	dt{
-		font-weight:bold;
-	}
+{% highlight css %}
+dt{
+	font-weight:bold;
+}
 
-	dt:target + dd{
-		display:block;
-	}
+dt:target + dd{
+	display:block;
+}
 
-	dd{
-		display:none;
-	}​
+dd{
+	display:none;
+}​
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/3TwVF/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -184,31 +190,35 @@ Kardeş(Siblings) Seçiciler
 CSS'in bir diğer sorunu sadece kapsayıcı eleman içindeki elemanlara
 erişebilmesi.
 
-	:::html
-	<p>Deneme metni <span>bir</span></p>
-	<div class="icerik">Burada içerik olsun</div>
+{% highlight html %}
+<p>Deneme metni <span>bir</span></p>
+<div class="icerik">Burada içerik olsun</div>
+{% endhighlight %}
 
 CSS ile sadece bir kapsayıcı eleman içine müdahale edebilirken
 
-	:::css
-	p span{
-		/* tanımlar */
-	}
+{% highlight css %}
+p span{
+	/* tanımlar */
+}
+{% endhighlight %}
 
 Kardeş seçiciler yardımı ile artık kapsayıcı içinde olmayan elemanlara
 da erişebiliyoruz.
 
-	:::css
-	p + div.icerik{
-		display:block;
-	}
+{% highlight css %}
+p + div.icerik{
+	display:block;
+}
+{% endhighlight %}
 
 veya
 
-	:::css
-	p ~ div.icerik{
-		display:block;
-	}
+{% highlight css %}
+p ~ div.icerik{
+	display:block;
+}
+{% endhighlight %}
 
 gibi tanımlar ile DOM’deki aynı seviyedeki elemana erişim
 sağlayabiliyoruz.
@@ -226,12 +236,13 @@ Bir örnek verelim bir başlığımız var ve sonrasında ard arda paragraflar
 geliyor. Biz başlık ile hemen ardından gelen paragrafın arasına mesafe
 koymak için bu seçiciyi kullanabiliriz.
 
-	:::html
-	<body>
-		<h2>Başlık 2</h2>
-		<p>Buraya <em>önemli</em> ve <strong>iyi</strong>kod gir</p>
-		<p>Buraya <em>önemli</em> ve <strong>iyi</strong>kod gir</p>
-	</body>
+{% highlight html %}
+<body>
+	<h2>Başlık 2</h2>
+	<p>Buraya <em>önemli</em> ve <strong>iyi</strong>kod gir</p>
+	<p>Buraya <em>önemli</em> ve <strong>iyi</strong>kod gir</p>
+</body>
+{% endhighlight %}
 
 Dökümanın yapısı:
 
@@ -240,10 +251,11 @@ Dökümanın yapısı:
 Biz burada h2 ve h3 arasında boşluk vermek için aşağıdaki kodu
 kullanırız:
 
-	:::css
-	h2 + p {
-		margin-top: 10px;
-	}
+{% highlight css %}
+h2 + p {
+	margin-top: 10px;
+}
+{% endhighlight %}
 
 Bu seçiciyi ie7’nin seçicisini destekliyor.
 
@@ -273,22 +285,24 @@ Bir örnek yapacak olursak bir resmimiz var bunu sola hizalayacağız ve
 sağdanda metinler akacak. Bu resim ve paragraflar arasına padding
 tanımlamak için genel kardeş seçicisi birebirdir.
 
-	:::css
-	img{
-		float:left;
-	}
+{% highlight css %}
+img{
+	float:left;
+}
 
-	img ~ p{
-		padding-left:110px;
-	}
+img ~ p{
+	padding-left:110px;
+}
+{% endhighlight %}
 
 html kodu
 
-	:::html
-	<img src="kedi.jpg" width="96" height="96" alt="kedi" />
-	<p>Kedi (Felis catus),...</p>
-	<p>2,5 ile 12 kilo ...</p>
-	<p>Kediler hoş görünüşlü, ..</p>
+{% highlight html %}
+<img src="kedi.jpg" width="96" height="96" alt="kedi" />
+<p>Kedi (Felis catus),...</p>
+<p>2,5 ile 12 kilo ...</p>
+<p>Kediler hoş görünüşlü, ..</p>
+{% endhighlight %}
 
 Bu seçiciyi ie7’nin seçicisini destekliyor.
 

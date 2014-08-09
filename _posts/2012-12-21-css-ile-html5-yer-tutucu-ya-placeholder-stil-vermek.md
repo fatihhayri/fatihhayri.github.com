@@ -19,15 +19,17 @@ Yer tutucunun en büyük sorunu İnternet Explorer 10’da desteklenmesi. ie 8-9
 
 Daha önce ve şimdilerde desteklemeyen tarayıcılar için bu işlemi javascript ile yaparken HTML5 ile birlikte artık placeholder HTML5 özelliği ile direk HTML ile kullanabiliyoruz.
 
-	:::html
-	<input type="text" name="arama" placeholder="Arama Metnini Giriniz" />
+{% highlight html %}
+<input type="text" name="arama" placeholder="Arama Metnini Giriniz" />
+{% endhighlight %}
 
 Kodu ile bu yapıyı uygulayabiliyoruz. Yer tutucuların stillerine müdahale edebiliyoruz.
 
-	:::css
-	::-webkit-input-placeholder {}
-	:-moz-placeholder {}
-	:-ms-input-placeholder {}
+{% highlight css %}
+::-webkit-input-placeholder {}
+:-moz-placeholder {}
+:-ms-input-placeholder {}
+{% endhighlight %}
 
 Burada dikkat etmemiz gereken kısım -webkit tanımının başında iki adet iki nokta üst üste olması.
 
