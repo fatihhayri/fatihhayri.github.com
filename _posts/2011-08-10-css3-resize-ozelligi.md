@@ -157,3 +157,10 @@ görünse de Firefox desteği standartlaşması daha olasıdır.
   [https://developer.mozilla.org/en/CSS/resize]: https://developer.mozilla.org/en/CSS/resize
   [http://www.yousaytoo.com/the-css3-resize-property/784883]: http://www.yousaytoo.com/the-css3-resize-property/784883
   [http://robertnyman.com/css3/]: http://robertnyman.com/css3/
+
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png
