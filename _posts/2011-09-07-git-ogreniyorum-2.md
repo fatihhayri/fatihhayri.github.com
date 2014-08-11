@@ -144,13 +144,13 @@ komutları ve ipuçlarını paylaşacağım.
 Bir branchdeki veya bir dosya üzerindeki değişiklikleri görmek için
 branchde iken
 
-{% highlight git %}
+{% highlight bash %}
 $git log
 {% endhighlight %}
 
 yazarız bu komut bize
 
-{% highlight git %}
+{% highlight bash %}
 commit f491239170cb1463c7c3cd970862d6de636ba787 Author: Matt McCutchen &lt;matt@mattmccutchen.net&gt; Date:   Thu Aug 14 13:37:41 2008 -0400 git format-patch documentation: clarify what --cover-letter does commit 7950659dc9ef7f2b50b18010622299c508bfdfc3 Author: Eric Raible &lt;raible@gmail.com&gt; Date:   Thu Aug 14 10:12:54 2008 -0700 bash completion: 'git apply' should use 'fix' not 'strip' Bring completion up to date with the man page.
 {% endhighlight %}
 
@@ -160,7 +160,7 @@ commit … ile başlayan satırda verilen numara yapılan ve gönderilen her
 iş için farklıdır biz bu sözdizimini kullanarak iki farklı gönderi
 arasındaki farkı bulabiliriz.
 
-{% highlight git %}
+{% highlight bash %}
 $git diff f491239170cb1463c7c3cd970862d6de636ba787 7950659dc9ef7f2b50b18010622299c508bfdfc3  Html/index.html
 {% endhighlight %}
 
@@ -168,7 +168,7 @@ $git diff f491239170cb1463c7c3cd970862d6de636ba787 7950659dc9ef7f2b50b1801062229
 gösterir yukarıdaki kod. Farkları renkli görmek için --color
 parametresini kullanabiliriz.
 
-{% highlight git %}
+{% highlight bash %}
 $git diff --color  d76192b2c7a61d2aea62c7aec21e14cda72f9e32 fe0dba7b841e86b095d2aefbd6bd755a0d9d1e90  Html/index.html
 {% endhighlight %}
 
@@ -179,7 +179,7 @@ görmek için renkler güzel oluyor.
 
 git branch -d: Yanlışlıkla açtığımız branchlerı silmek için
 
-{% highlight git %}
+{% highlight bash %}
 $git branch -d branch_ismi
 {% endhighlight %}
 
@@ -193,21 +193,21 @@ git config dosyasına kısayolllarımızı ekleyebiliyoruz. git cofig ile ilgili
 
 Global congif dosyasına eklemek için
 
-{% highlight git %}
+{% highlight bash %}
 $git config --global alias.ci commit
 {% endhighlight %}
 
 **ci** kısaltma **commit** normali. Eğer projeye özgü kısayollar
 oluşturmak için
 
-{% highlight git %}
+{% highlight bash %}
 $git config alias.ci commit
 {% endhighlight %}
 
 **--global** parametresini kaldırmamız yeterli olacaktır. git config
 dosyasını görmek için
 
-{% highlight git %}
+{% highlight bash %}
 $git config --edit
 {% endhighlight %}
 
@@ -230,14 +230,14 @@ bağlantıda Git kaynakları listelenmiş. Git’in güzel yanlarında birisi
 
 ## Başka Branch’den dosya almak
 
-{% highlight git %}
+{% highlight bash %}
 $git checkout branch_adi dosya_adi
 {% endhighlight %}
 
 Benzer bir şekilde branchde yaptığımız değişikliği geri almak için
 master’dan dosyayı alabiliriz.
 
-{% highlight git %}
+{% highlight bash %}
 $git checkout master dosya_adi
 {% endhighlight %}
 
@@ -245,7 +245,7 @@ $git checkout master dosya_adi
 
 Çalıştığımız branchde değişiklik yaptığımız dosyaları görmek için
 
-{% highlight git %}
+{% highlight bash %}
 $git diff master --name-only
 {% endhighlight %}
 
