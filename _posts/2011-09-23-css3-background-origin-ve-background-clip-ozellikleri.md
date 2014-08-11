@@ -37,37 +37,44 @@ Aldığı değerleri kısaca açıklarsak
 
 ![][100]
 
-	:::css
-	#kutu1 {
-	    -moz-background-origin: border;
-	    -webkit-background-origin: border;
-	    -webkit-background-origin: border-box;
-	    background-origin: border-box;
-	}
-	#kutu2 {
-	    -moz-background-origin: padding;
-	    -webkit-background-origin: padding;
-	    -webkit-background-origin: padding-box;
-	    background-origin: padding-box;
-	}
-	#kutu3 {
-	    -moz-background-origin: content;
-	    -webkit-background-origin: content;
-	    -webkit-background-origin: content-box;
-	    background-origin: content-box;
-	}
+{% highlight css %}
+#kutu1 {
+    -moz-background-origin: border;
+    -webkit-background-origin: border;
+    -webkit-background-origin: border-box;
+    background-origin: border-box;
+}
+#kutu2 {
+    -moz-background-origin: padding;
+    -webkit-background-origin: padding;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+}
+#kutu3 {
+    -moz-background-origin: content;
+    -webkit-background-origin: content;
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Rf6Mv/31/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **background-position:fixed** tanımlı elementlere etki etmez.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 3.6+ (-moz- öneki ile) 4+ (öneksiz)
-Chrome 1+ (-webkit- öneki ile)
-Safari 3.0+ (-webkit- öneki ile)
-Opera 10.5
-İnternet Explorer 9+
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+**|**9+**|**3.6+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+**|**3.2+**|**36+**|
+{: .tarayici-uyumi}
 
 ## background-clip
 
@@ -94,37 +101,38 @@ Aldığı değerleri kısaca açıklarsak
 **border-box** tanımı eğer **background-origin:border-box** ise
 uygulanır.
 
-	:::css
-	#kutu1{
-	 -moz-background-origin: border;
-	 -webkit-background-origin: border;
-	 -webkit-background-origin: border-box;
-	 background-origin: border-box;
-	 -moz-background-clip:border;
-	 -webkit-background-clip:border;
-	 -webkit-background-clip:border-box;
-	 background-clip:border-box;
-	}
+{% highlight css %}
+#kutu1{
+ -moz-background-origin: border;
+ -webkit-background-origin: border;
+ -webkit-background-origin: border-box;
+ background-origin: border-box;
+ -moz-background-clip:border;
+ -webkit-background-clip:border;
+ -webkit-background-clip:border-box;
+ background-clip:border-box;
+}
 
-	#kutu2{
-	 -moz-background-origin: border;
-	 -webkit-background-origin: border;
-	 -webkit-background-origin: border-box;
-	 -moz-background-clip:padding;
-	 -webkit-background-clip:padding;
-	 -webkit-background-clip:padding-box;
-	 background-clip:padding-box;
-	}
+#kutu2{
+ -moz-background-origin: border;
+ -webkit-background-origin: border;
+ -webkit-background-origin: border-box;
+ -moz-background-clip:padding;
+ -webkit-background-clip:padding;
+ -webkit-background-clip:padding-box;
+ background-clip:padding-box;
+}
 
-	#kutu3{
-	      -moz-background-origin: border;
-	 -webkit-background-origin: border;
-	 -webkit-background-origin: border-box;
-	 -moz-background-clip:content;
-	 -webkit-background-clip:content;
-	 -webkit-background-clip:content-box;
-	 background-clip:content-box;
-	}
+#kutu3{
+      -moz-background-origin: border;
+ -webkit-background-origin: border;
+ -webkit-background-origin: border-box;
+ -moz-background-clip:content;
+ -webkit-background-clip:content;
+ -webkit-background-clip:content-box;
+ background-clip:content-box;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/uzFeu/4/embedded/result,css,html"></iframe>
 
@@ -133,13 +141,19 @@ uygulanır.
 farkları gördüğünüz gibi. Resim sırası ile border, padding ve içerik
 alanından kırpılmıştır.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 3.6+ (-moz- öneki ile) 4+ (öneksiz)
-Chrome 1+ (-webkit- öneki ile)
-Safari 3.0+ (-webkit- öneki ile)
-Opera 10.5
-İnternet Explorer 9+
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+**|**9+**|**3.6+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+**|**3.2+**|**36+**|
+{: .tarayici-uyumi}
 
 **backgroun-origin** özelliği **background-image** konumunun kapsama
 alanını belirlerken, **background-clip** ise background alanını kırpmak
@@ -162,16 +176,17 @@ Chrome ve Safari desteklemektedir. Bu değer atandığında metinin
 ardalanına resim uygulanıyor geri kalan kısımlara ise saydam ardalan
 olarak kalıyor.
 
-	:::css
-	#kutu1 {
-	   -moz-background-origin: border;
-	   -webkit-background-origin: border;
-	   -webkit-background-origin: border-box;
-	   background-origin: border-box;
-	   -webkit-background-clip:text;
-	   -webkit-text-fill-color:transparent;
-	   font:bold 72px Arial, Helvetica, sans-serif;
-	}
+{% highlight css %}
+#kutu1 {
+   -moz-background-origin: border;
+   -webkit-background-origin: border;
+   -webkit-background-origin: border-box;
+   background-origin: border-box;
+   -webkit-background-clip:text;
+   -webkit-text-fill-color:transparent;
+   font:bold 72px Arial, Helvetica, sans-serif;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/gqaC9/3/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -220,3 +235,9 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.
   [http://css-class.com/test/css/backgrounds/background-origin1.htm]: http://css-class.com/test/css/backgrounds/background-origin1.htm
   [http://css-infos.net/property/background-origin]: http://css-infos.net/property/background-origin
   [https://www.youtube.com/watch?v=7xVS2FX2Mao&feature=related]: https://www.youtube.com/watch?v=7xVS2FX2Mao&feature=related
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

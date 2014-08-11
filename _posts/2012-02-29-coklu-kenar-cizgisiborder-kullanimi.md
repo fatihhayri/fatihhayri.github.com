@@ -17,29 +17,31 @@ Burada basit bir yol ile bu işi nasıl yapacağımızı anlatacağım.
 padding değeri uygulanacak ikinci kenar çizgisi dikkate alınarak
 atanmalıdır.
 
-	:::css
-	#cokluKenarCizgisi{
-		border: 5px solid #FF0000;
-		padding: 20px;
-		position: relative;
-		z-index: 10;
-	}
+{% highlight css %}
+#cokluKenarCizgisi{
+	border: 5px solid #FF0000;
+	padding: 20px;
+	position: relative;
+	z-index: 10;
+}
+{% endhighlight %}
 
 Sözde elemanlar ile ikinci kenar çizgisini ekleyelim. z-index eksi değer
 vererek içeriğin arkasına atarız.
 
-	:::css
-	 #cokluKenarCizgisi:before{
-		border: 5px solid #06F;
-		bottom: 0;
-		content: "";
-		display: block;
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
-		z-index: -1;
-	}
+{% highlight css %}
+ #cokluKenarCizgisi:before{
+	border: 5px solid #06F;
+	bottom: 0;
+	content: "";
+	display: block;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 230px" src="http://jsfiddle.net/fatihhayri/L8ZHT/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -51,25 +53,26 @@ ekleyebiliyoruz.
 Tek kenara çoklu çizgi genelde lazım olan bir kod olduğu için burada
 onuda paylaşıyorum.
 
-	:::css
-	#cokluKenarCizgisi{
-		background: #F0F0F0;
-		border-bottom: 2px solid #f00;
-		color: #000000;
-		padding: 10px 10px 11px;
-		position: relative;
-	}
+{% highlight css %}
+#cokluKenarCizgisi{
+	background: #F0F0F0;
+	border-bottom: 2px solid #f00;
+	color: #000000;
+	padding: 10px 10px 11px;
+	position: relative;
+}
 
-	#cokluKenarCizgisi:before{
-		background: #0FF;
-		bottom: 0;
-		content: "";
-		display: block;
-		height: 1px;
-		left: 0;
-		position: absolute;
-		width: 100%;
-	}
+#cokluKenarCizgisi:before{
+	background: #0FF;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/c6e9s/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -77,13 +80,19 @@ Daha falza örnek için
 [http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/demo/borders.html][]
 sayfasına bakınız.
 
-**Tarayıcı Uyumu:**
-Internet Explorer 7.0: desteklemiyor, 8+ destekliyor
-Firefox 3.5+
-Chrome 4+
-Opera 10+
-Safari 4+
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**4.0+ (-webkit)**|**8+**|**3.5+ (-moz)**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 Burada önemli nokta ie7’nin :before ve :after desteğinin olmaması.
 Kullanım yüzdesi %6,46 olduğu göz önüne alınırsa göz ardı edilebilir.
@@ -93,59 +102,74 @@ border-radius uygulanmış elemanlara bu metot kullanılabilir.
 
 İki kenar çizgisi oluşturmak için outline kullanılabilir.
 
-	:::css
-	#cokluKenarCizgisi{
-		border: 5px solid #FF0000;
-		outline: 5px solid blue;
-		padding: 20px;
-	}
+{% highlight css %}
+#cokluKenarCizgisi{
+	border: 5px solid #FF0000;
+	outline: 5px solid blue;
+	padding: 20px;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 280px" src="http://jsfiddle.net/fatihhayri/Aprbj/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 İkiden fazla kenar çigisi kullanamasakta iyi bir alternatif olarak
 kullanılabilir.
 
-**Tarayıcı Uyumu:**
-Internet Explorer 7.0: desteklemiyor, 8+ destekliyor
-Firefox 3.5+
-Chrome 4+
-Opera 10+
-Safari 4+
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**4.0+ (-webkit)**|**8+**|**3.5+ (-moz)**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 ie7 yine sorun
 
 ## box-shadow ile çoklu kenar çizgisi oluşturmak
 
-	:::css
-	#cokluKenarCizgisi{
-		border: 5px solid #FF0000;
-		padding: 10px;
-		moz-box-shadow: 0 0 0 5px #06F;
-		webkit-box-shadow: 0 0 0 5px #06F;
-		box-shadow: 0 0 0 5px #06F;
-	}
+{% highlight css %}
+#cokluKenarCizgisi{
+	border: 5px solid #FF0000;
+	padding: 10px;
+	moz-box-shadow: 0 0 0 5px #06F;
+	webkit-box-shadow: 0 0 0 5px #06F;
+	box-shadow: 0 0 0 5px #06F;
+}
+{% endhighlight %}
 
 Çoklu gölge kullanımı ile birdne fazla kenar çizgiside ekleyebiliriz.
 
-	:::css
-	#cokluKenarCizgisi{
-		border: 5px solid #FF0000;
-		padding: 10px;
-		moz-box-shadow: 0 0 0 5px #06F, 0 0 0 10px #FF0;
-		webkit-box-shadow: 0 0 0 5px #06F, 0 0 0 10px #FF0;
-		box-shadow: 0 0 0 5px #06F, 0 0 0 10px #FF0;
-	}
+{% highlight css %}
+#cokluKenarCizgisi{
+	border: 5px solid #FF0000;
+	padding: 10px;
+	moz-box-shadow: 0 0 0 5px #06F, 0 0 0 10px #FF0;
+	webkit-box-shadow: 0 0 0 5px #06F, 0 0 0 10px #FF0;
+	box-shadow: 0 0 0 5px #06F, 0 0 0 10px #FF0;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 250px" src="http://jsfiddle.net/fatihhayri/bPmQG/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-**Tarayıcı Uyumu:**
-Internet Explorer 7.0, 8.0: desteklemiyor, 9+ destekliyor
-Firefox 3.5+
-Chrome 4+
-Opera 10+
-Safari 4+
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**4.0+ (-webkit)**|**9+**|**3.5+ (-moz)**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 Burada destek konusundn daha büyük bir sorunumuz var ie7’in yanında
 box-shadow özelliğini ie8’de desteklemiyor.
@@ -174,3 +198,10 @@ Kalın sağlıcakla
   [http://css-tricks.com/snippets/css/multiple-borders/]: http://css-tricks.com/snippets/css/multiple-borders/
   [http://www.impressivewebs.com/multiple-borders-css/]: http://www.impressivewebs.com/multiple-borders-css/
   [http://www.sitepoint.com/css3-multiple-borders/]: http://www.sitepoint.com/css3-multiple-borders/
+
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

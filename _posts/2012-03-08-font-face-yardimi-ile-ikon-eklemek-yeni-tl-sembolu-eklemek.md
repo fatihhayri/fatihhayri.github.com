@@ -29,17 +29,18 @@ eksilerinide bahsedip son kararı sizin vermenizi isteyeceğim.
 [font-face kullanımını][] anlattığım makalemi okuyarak yazıları sitelere
 nasıl gömdüğümüzü öğrenebilirsiniz.
 
-	:::css
-	@font-face {
-		font-family:'Graublau Web';
-		src:local('Graublau Web Regular'), local('Graublau Web'), url(GraublauWeb.woff) format(woff), url(GraublauWeb.svg#GraublauWeb) format(svg), url(GraublauWeb.otf) format(opentype);
-		font-weight:400;
-		font-style:normal;
-	}
+{% highlight css %}
+@font-face {
+	font-family:'Graublau Web';
+	src:local('Graublau Web Regular'), local('Graublau Web'), url(GraublauWeb.woff) format(woff), url(GraublauWeb.svg#GraublauWeb) format(svg), url(GraublauWeb.otf) format(opentype);
+	font-weight:400;
+	font-style:normal;
+}
 
-	p {
-		font-family:"Graublau Web", serif;
-	}
+p {
+	font-family:"Graublau Web", serif;
+}
+{% endhighlight %}
 
 şeklinde genel kullanımı göstermiştik. Benzer bir şekilde bir şekilli
 yazı tipi ekleyip ikon ekleyebiliriz.
@@ -48,29 +49,31 @@ yazı tipi ekleyip ikon ekleyebiliriz.
 
 ![][100]
 
-	:::css
-	 @font-face{
-		font-family: 'ModernPictogramsNormal';
-		font-style: normal;
-		font-weight: normal;
-		src: url('modernpics-webfont.eot');
-		src: url('modernpics-webfont.eot?#iefix') format('embedded-opentype'),
-	url('modernpics-webfont.woff') format('woff'),
-	url('modernpics-webfont.ttf') format('truetype'),
-	url('modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
-	}
+{% highlight css %}
+ @font-face{
+	font-family: 'ModernPictogramsNormal';
+	font-style: normal;
+	font-weight: normal;
+	src: url('modernpics-webfont.eot');
+	src: url('modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+url('modernpics-webfont.woff') format('woff'),
+url('modernpics-webfont.ttf') format('truetype'),
+url('modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+}
+{% endhighlight %}
 
 kodu ile yazı tipini sayfamızda çağırmış olduk. Menü elemanlarının her
 biri için seçtiğimiz ikonları atamak için ilgili elemanın
 öncesine(:before) yazı tipinde ilgili ikonu ifade eden harfi ekliyoruz.
 
-	:::css
-	li#alisveris a:before{
-		color: #f00;
-		content: "i";
-		font: 24px "ModernPictogramsNormal";
-		padding-right: 5px;
-	}
+{% highlight css %}
+li#alisveris a:before{
+	color: #f00;
+	content: "i";
+	font: 24px "ModernPictogramsNormal";
+	padding-right: 5px;
+}
+{% endhighlight %}
 
 Alışveriş için seçtiğimiz sepet ikonun “i” harfi ile ifade edildiği için “i” harfini ekledik. Kodu biraz daha düzenli yazarsak.
 
@@ -118,30 +121,32 @@ silip sadece ikonu bırakarak yazı tipi dosya boyutunu küçültebiliriz.
 
 Bağlantısından küçük dosyayı indirebilirsiniz.
 
-	:::css
-	@font-face{
-		font-family: 'AbakuTLSymSansRegular';
-		font-style: normal;
-		font-weight: normal;
-		src: url('abakutlsymsans.eot');
-		src: url('abakutlsymsans.eot?#iefix')
-	format('embedded-opentype'), url('abakutlsymsans.woff') format('woff'),
-	url('abakutlsymsans.ttf') format('truetype'),
-	url('abakutlsymsans.svg#AbakuTLSymSansRegular') format('svg');
-	}
+{% highlight css %}
+@font-face{
+	font-family: 'AbakuTLSymSansRegular';
+	font-style: normal;
+	font-weight: normal;
+	src: url('abakutlsymsans.eot');
+	src: url('abakutlsymsans.eot?#iefix')
+format('embedded-opentype'), url('abakutlsymsans.woff') format('woff'),
+url('abakutlsymsans.ttf') format('truetype'),
+url('abakutlsymsans.svg#AbakuTLSymSansRegular') format('svg');
+}
+{% endhighlight %}
 
 ![][3]
 
 Şeklinde sayfaya ekledik. Sembol olunca rakamların başına konuyor. araya
 biraz da mesafe koyalım.(padding-right:5px bunun için)
 
-	:::css
-	p:before{
-		content: "t";
-		font-family: "AbakuTLSymSansRegular", serif;
-		font-size: 24px;
-		padding-right: 5px;
-	}
+{% highlight css %}
+p:before{
+	content: "t";
+	font-family: "AbakuTLSymSansRegular", serif;
+	font-size: 24px;
+	padding-right: 5px;
+}
+{% endhighlight %}
 
 ile sayfamıza ekledik.
 

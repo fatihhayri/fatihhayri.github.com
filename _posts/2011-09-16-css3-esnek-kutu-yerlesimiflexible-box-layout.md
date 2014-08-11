@@ -60,13 +60,14 @@ yılındaki standartları desteklemektedir ve yeni standartlaşan
 tanımı yaparak başlıyoruz. Farklı tarayıcılar önek ile birlikte
 desteklemektedir;
 
-	:::css
-	#esnekKutu{
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-box;
-		display: box;
-	}
+{% highlight css %}
+#esnekKutu{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: box;
+}
+{% endhighlight %}
 
 Tanımı ile kapsayıcı elemanı tanımlıyoruz. Bu tanım ile kapsayıcı eleman
 içersindeki alt elemanların artık esnek yapılı olacağını ve EKYM
@@ -74,15 +75,16 @@ içersindeki alt elemanların artık esnek yapılı olacağını ve EKYM
 
 Çok basit bir şekilde kutularımızı yanyana dizebiliriz mesela
 
-	:::css
-	#esnekKutuKapsul{
-	 display: box;
-	 display:-webkit-box;
-	 display:-moz-box;
-	 display:-ms-box;
-	 width:600px;
-	 border:1px solid #03C;
-	}
+{% highlight css %}
+#esnekKutuKapsul{
+ display: box;
+ display:-webkit-box;
+ display:-moz-box;
+ display:-ms-box;
+ width:600px;
+ border:1px solid #03C;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/4KSzt/embedded/result,css,html"></iframe>
 
@@ -116,18 +118,19 @@ Bunlardan başka iki değer daha mevcuttur. **inline-axis** yatayda ve
 **block-axis** dikeyde sıralamayı sağlar. Bu tanımlar **horizontal** ve
 **vertical** gibi davranırlar.
 
-	:::css
-	#esnekKutuKapsul{
-		display: box;
-		display:-webkit-box;
-		display:-moz-box;
-		box-orient:vertical;
-		-moz-box-orient:vertical;
-		-webkit-box-orient:vertical;
-		width:200px;
-		height:600px;
-		border:1px solid #03C;
-	}
+{% highlight css %}
+#esnekKutuKapsul{
+	display: box;
+	display:-webkit-box;
+	display:-moz-box;
+	box-orient:vertical;
+	-moz-box-orient:vertical;
+	-webkit-box-orient:vertical;
+	width:200px;
+	height:600px;
+	border:1px solid #03C;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AsVDn/embedded/result,css,html"></iframe>
 
@@ -146,21 +149,22 @@ Bunlardan başka iki değer daha mevcuttur. **inline-axis** yatayda ve
 sıralama yönünü belirler. İki değer alır; normal ve **reverse**.
 **reverse** tanımlandığında sıralama yönü normalin tam tersine döner.
 
-	:::css
-	#esnekKutuKapsul{
-		display: box;
-		display:-webkit-box;
-		display:-moz-box;
-		box-orient:vertical;
-		-moz-box-orient:vertical;
-		-webkit-box-orient:vertical;
-		box-direction: reverse;
-		-moz-box-direction: reverse;
-		-webkit-box-direction: reverse;
-		width:200px;
-		height:600px;
-		border:1px solid #03C;
-	}
+{% highlight css %}
+#esnekKutuKapsul{
+	display: box;
+	display:-webkit-box;
+	display:-moz-box;
+	box-orient:vertical;
+	-moz-box-orient:vertical;
+	-webkit-box-orient:vertical;
+	box-direction: reverse;
+	-moz-box-direction: reverse;
+	-webkit-box-direction: reverse;
+	width:200px;
+	height:600px;
+	border:1px solid #03C;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/S4c44/embedded/result,css,html"></iframe>
 
@@ -197,17 +201,18 @@ kalan boşluk alanına göre değerlendirme yapılır.
 Bu özellik tanımı 2009’da tanımlandı şu an yenileniyor **flex-pack**
 olarak değişecek. Tarayıcılar destekleyen kadar bu şekilde devam edecek.
 
-	:::css
-	#esnekKutuKapsul{
-	     display: box;
-	     display:-webkit-box;
-	     display:-moz-box;
-	     width:600px;
-	     border:1px solid #03C;
-	     box-pack:center;
-	     -webkit-box-pack:center;
-	     -moz-box-pack:center;
-	}
+{% highlight css %}
+#esnekKutuKapsul{
+     display: box;
+     display:-webkit-box;
+     display:-moz-box;
+     width:600px;
+     border:1px solid #03C;
+     box-pack:center;
+     -webkit-box-pack:center;
+     -moz-box-pack:center;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/MwWcm/embedded/result,css,html"></iframe>
 
@@ -231,26 +236,27 @@ genişlikleri yayılacaktır. **start** ve **end** değerleri eğer
 horizantal tanımlı ise sol ve sağa yaslayacaktır, **vertical** tanımlı
 ise üste ve alta yaslayacaktır. **center** değeri ise ortalayacaktır.
 
-	:::css
-	#esnekKutuKapsul{
-	    display: box;
-	    display:-webkit-box;
-	    display:-moz-box;
-	    width:600px;
-	    border:1px solid #03C;
-	    box-orient:horizantal;
-	    -moz-box-orient:horizantal;
-	    -webkit-box-orient:horizantal;
-	    box-align: center;
-	    -webkit-box-align: center;
-	    -moz-box-align: center;
-    }
-    .esnekKutu{
-         background-color:#999999;
-         width:150px;
-         height:150px;
-         margin-right:15px;
-    }
+{% highlight css %}
+#esnekKutuKapsul{
+    display: box;
+    display:-webkit-box;
+    display:-moz-box;
+    width:600px;
+    border:1px solid #03C;
+    box-orient:horizantal;
+    -moz-box-orient:horizantal;
+    -webkit-box-orient:horizantal;
+    box-align: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+}
+.esnekKutu{
+     background-color:#999999;
+     width:150px;
+     height:150px;
+     margin-right:15px;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ZYz2M/1/embedded/result,css,html"></iframe>
 
@@ -291,27 +297,28 @@ benzer etki yapacak **flex-flow** tanımı gelecek gibi.
 **box-ordinal-group** özelliği kapsayıcı kutunun içindeki esnek
 kutuların sıralamasını belirlememizi sağlar.
 
-	:::css
-	#esnekKutu1 {
-	    box-ordinal-group: 2;
-	    -webkit-box-ordinal-group: 2;
-	    -moz-box-ordinal-group: 2;
-	    background-color:#0CF;
-	}
+{% highlight css %}
+#esnekKutu1 {
+    box-ordinal-group: 2;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    background-color:#0CF;
+}
 
-	#esnekKutu3 {
-	    box-ordinal-group: 2;
-	    -webkit-box-ordinal-group: 2;
-	    -moz-box-ordinal-group: 2;
-	    background-color:#9C3;
-	}
+#esnekKutu3 {
+    box-ordinal-group: 2;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    background-color:#9C3;
+}
 
-	#esnekKutu4 {
-	    box-ordinal-group: 1;
-	    -webkit-box-ordinal-group: 1;
-	    -moz-box-ordinal-group: 1;
-	    background-color:#FC9;
-	}
+#esnekKutu4 {
+    box-ordinal-group: 1;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    background-color:#FC9;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/TaFBM/embedded/result,css,html"></iframe>
 
@@ -349,53 +356,54 @@ için toplam boşluk genişliği(Kapasayıcı eleman ile kutuların genişliği
 toplamı arasındaki fark) bu sayıya bölünerek elde edilen değer kutu
 genişliğini belirler.
 
-	:::css
-	#esnekKutuKapsul {
-	     background: gray;
-	    border: blue;
-	    display: box;
-	   display: -webkit-box;
-	   display: -moz-box;
-	   display: -ms-box;
-	   width:100%;
-	}
+{% highlight css %}
+#esnekKutuKapsul {
+     background: gray;
+    border: blue;
+    display: box;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-box;
+   width:100%;
+}
 
-	.esnekKutu {
-	   background-color:#999999;
-	   height:150px;
-	}
+.esnekKutu {
+   background-color:#999999;
+   height:150px;
+}
 
-	#esnekKutu1 {
-	    background-color:#0CF;
-	    border: orange solid 1px;
-	    box-flex: 2;
-	    -webkit-box-flex: 2;
-	    -moz-box-flex: 2;
-	    -ms-box-flex: 2;
-	}
+#esnekKutu1 {
+    background-color:#0CF;
+    border: orange solid 1px;
+    box-flex: 2;
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -ms-box-flex: 2;
+}
 
-	#esnekKutu2 {
-	    background: lightgray;
-	    border: red solid 1px;
-	    box-flex: 1;
-	    -webkit-box-flex: 1;
-	    -moz-box-flex: 1;
-	    -ms-box-flex: 1;
-	}
+#esnekKutu2 {
+    background: lightgray;
+    border: red solid 1px;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+}
 
-	#esnekKutu3 {
-	    background-color:#9C3;
-	    border: red solid 1px;
-	    box-flex: 0;
-	    -webkit-box-flex: 0;
-	    -moz-box-flex: 0;
-	    -ms-box-flex: 0;
-	}
+#esnekKutu3 {
+    background-color:#9C3;
+    border: red solid 1px;
+    box-flex: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -ms-box-flex: 0;
+}
 
-	#esnekKutu4 {
-	    background-color:#FC9;
-	    border: red solid 1px;
-	}
+#esnekKutu4 {
+    background-color:#FC9;
+    border: red solid 1px;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/h7KAa/embedded/result,css,html"></iframe>
 
@@ -407,46 +415,47 @@ bir tanesinin **box-flex** değeri 2 olarak değiştirilirse, değiştirilen
 kutunun genişliği 250px(100 + 300/4 * 2 = 250) olurken diğer iki
 kutunun genişliği 175px(100 + 300/4 * 1 = 175) olacaktır.
 
-	:::css
-	#esnekKutuKapsul {
-	   background: gray;
-	   border: blue;
-	   display: box;
-	   display: -webkit-box;
-	   display: -moz-box;
-	   display: -ms-box;
-	   width:600px;
-	}
+{% highlight css %}
+#esnekKutuKapsul {
+   background: gray;
+   border: blue;
+   display: box;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-box;
+   width:600px;
+}
 
-	.esnekKutu {
-	   background-color:#999999;
-	   height:150px;
-	   width:100px;
-	}
+.esnekKutu {
+   background-color:#999999;
+   height:150px;
+   width:100px;
+}
 
-	#esnekKutu1 {
-	   background-color:#0CF;
-	   box-flex: 2;
-	   -webkit-box-flex: 2;
-	   -moz-box-flex: 2;
-	   -ms-box-flex: 2;
-	}
+#esnekKutu1 {
+   background-color:#0CF;
+   box-flex: 2;
+   -webkit-box-flex: 2;
+   -moz-box-flex: 2;
+   -ms-box-flex: 2;
+}
 
-	#esnekKutu2 {
-	   background: lightgray;
-	   box-flex: 1;
-	   -webkit-box-flex: 1;
-	   -moz-box-flex: 1;
-	   -ms-box-flex: 1;
-	}
+#esnekKutu2 {
+   background: lightgray;
+   box-flex: 1;
+   -webkit-box-flex: 1;
+   -moz-box-flex: 1;
+   -ms-box-flex: 1;
+}
 
-	#esnekKutu3 {
-	   background-color:#9C3;
-	   box-flex: 1;
-	   -webkit-box-flex: 1;
-	   -moz-box-flex: 1;
-	   -ms-box-flex: 1;
-	}
+#esnekKutu3 {
+   background-color:#9C3;
+   box-flex: 1;
+   -webkit-box-flex: 1;
+   -moz-box-flex: 1;
+   -ms-box-flex: 1;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Dyjq2/embedded/result,css,html"></iframe>
 
@@ -462,18 +471,19 @@ gözüküyor)
 standartlarda **box-flex** vede **box-flex-group** özelliklerini
 kapsayan **flex()** fonksiyonu ile yenilenmektedir.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 3+ (-moz- öneki ile)
-Chrome 5+ (-webkit- öneki ile)
-Safari 3.2+ (-webkit- öneki ile)
-Opera desteklemiyor
-İnternet Explorer 10+ (-ms- öneki ile)
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**21.0+ (-webkit)**|**10+ (-ms)**|**28+ (-moz)**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 3.2+ (-webkit- öneki ile)
-Opera Mini desteklemiyor
-Opera Mobile destelemiyor
-Android Browser 2.2+ (-webkit- öneki ile)
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 ## Sonuç
 
@@ -551,3 +561,9 @@ Kalın sağlıcakla
   [http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox]: http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox
   [http://caniuse.com/flexbox]: http://caniuse.com/flexbox
   [http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/]: http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

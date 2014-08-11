@@ -14,20 +14,21 @@ benim orada gördüğüm bir uygulama idi.
 Benzer bir uygulamayı yapmak için kodları yazdım. Daha önce bahsettiğim
 [rgba tanımı][] ile bu iş çok basit olacaktı.
 
-	:::css
-	 #popup{
-		position: absolute;
-		top: 90px;
-		left: 40%;
-		border: 10px solid rgba(0,0,0, 0.5);
-		text-align: center;
-		font-size: 24px;
-		background-color: #FFFFFF;
-		width: 350px;
-		padding: 50px 0;
-		border-radius: 10px;
-		z-index: 100;
-	}
+{% highlight css %}
+ #popup{
+	position: absolute;
+	top: 90px;
+	left: 40%;
+	border: 10px solid rgba(0,0,0, 0.5);
+	text-align: center;
+	font-size: 24px;
+	background-color: #FFFFFF;
+	width: 350px;
+	padding: 50px 0;
+	border-radius: 10px;
+	z-index: 100;
+}
+{% endhighlight %}
 
 Ancak aşağıdaki gibi bir görüntü elde ettim.
 ![][1]
@@ -38,23 +39,24 @@ Ancak aşağıdaki gibi bir görüntü elde ettim.
 çözümü bana ilaç gibi geldi. Çözüm [background-clip özelliği][] tanımı
 ile sağlanıyor.
 
-	:::css
-	#popup{
-		position: absolute;
-		top: 90px;
-		left: 40%;
-		border: 10px solid rgba(0,0,0, 0.5);
-		text-align: center;
-		font-size: 24px;
-		background-color: #FFFFFF;
-		width: 350px;
-		padding: 50px 0;
-		border-radius: 10px;
-		z-index: 100;
-		moz-background-clip: padding;
-		webkit-background-clip: padding;
-		background-clip: padding-box;
-	}
+{% highlight css %}
+#popup{
+	position: absolute;
+	top: 90px;
+	left: 40%;
+	border: 10px solid rgba(0,0,0, 0.5);
+	text-align: center;
+	font-size: 24px;
+	background-color: #FFFFFF;
+	width: 350px;
+	padding: 50px 0;
+	border-radius: 10px;
+	z-index: 100;
+	moz-background-clip: padding;
+	webkit-background-clip: padding;
+	background-clip: padding-box;
+}
+{% endhighlight %}
 
 ![][2]
 

@@ -44,35 +44,45 @@ stroke ve all: Sadece SVG içindir.
 
 Bir örnek ile durumu daha iyi görelim.
 
-	:::html
-	<ul class="menu">
-		<li><a href="index.html">Ana Sayfa</a></li>
-		<li><a href="hakkimizda.html" class=”on”>Hakkımızda</a></li>
-		<li><a href="urunler.html">Ürünler</a></li>
-	</ul>
+{% highlight css %}
+<ul class="menu">
+	<li><a href="index.html">Ana Sayfa</a></li>
+	<li><a href="hakkimizda.html" class=”on”>Hakkımızda</a></li>
+	<li><a href="urunler.html">Ürünler</a></li>
+</ul>
+{% endhighlight %}
 
 Hakkımızda sayfasında olduğumuzda kullanıcının hakkımızda linkine
 tıklaması mantıklı değildir, hakkımızda bağlantısının fare tıklama
 olayını kaldırmak için
 
-	:::css
-	.menu a.on {
-		pointer-events: none;
-		cursor: default;
-	}
+{% highlight css %}
+.menu a.on {
+	pointer-events: none;
+	cursor: default;
+}
+{% endhighlight %}
 
 Tanımı istediğimiz sonucu verecektir.
 
 CSS3 ile dinamik bileşenlerin CSS ile halledilmesi işine alıştık. Bu tip
 CSS ile halledebilmemiz güzel.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 3.6+
-Chrome 2+
-Safari 4+
-Opera -
-İnternet Explorer -
-{: .tarayiciuyum}
+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+ (-webkit)**|**11+**|**3.6+ (-moz)**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
+
 
 ## Kaynaklar
 
@@ -89,3 +99,9 @@ Opera -
   [http://css-tricks.com/6379-pointer-events-current-nav/]: http://css-tricks.com/6379-pointer-events-current-nav/
   [http://hacks.mozilla.org/2009/12/pointer-events-for-html-in-firefox-3-6/]: http://hacks.mozilla.org/2009/12/pointer-events-for-html-in-firefox-3-6/
   [http://www.webkit.org/specs/PointerEventsProperty.html]: http://www.webkit.org/specs/PointerEventsProperty.html
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

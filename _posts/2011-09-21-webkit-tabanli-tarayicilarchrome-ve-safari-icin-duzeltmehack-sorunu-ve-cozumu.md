@@ -10,26 +10,29 @@ Genelde [tarayıcı düzeltmelerini][] ie için yaparız. Ancak bu sefer
 Chrome için bir düzeltme yapmam gerekti(Chrome’un line-height ile olan
 sorun) araştırdım ve media sorgusu ile bir düzeltme kodu buldum.
 
-	:::css
-	@media screen and (-webkit-min-device-pixel-ratio:0) {
-	    .arama { background-color: #FF0000; }
-	    #solAlan {color: #0000FF;}
-	}
+{% highlight css %}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .arama { background-color: #FF0000; }
+    #solAlan {color: #0000FF;}
+}
+{% endhighlight %}
 
 Şeklinde bir kod işimi gördü, ancak projeyi yayına atarken sıkıştırıp
 gönderiyoruz ve sıkıştırılınca
 
-	:::css
-	@media screen and(-webkit-min-device-pixel-ratio:0)
+{% highlight css %}
+@media screen and(-webkit-min-device-pixel-ratio:0)
+{% endhighlight %}
 
 Satırındaki **and** ve **(** arasındaki boşluğu sıkıştırma esnasında yok
 ediyor ve buda bu düzeltmenin uygulanmamasına neden oluyor. Çözüm için
 araya çakma bir yöntem(**/*!*/**) ile boşluk bırakmalıyız.
 
-	:::css
-	@media screen and/*!*/(-webkit-min-device-pixel-ratio:0) {
-		...
-	}
+{% highlight css %}
+@media screen and/*!*/(-webkit-min-device-pixel-ratio:0) {
+	...
+}
+{% endhighlight %}
 
 
 Şeklinde çözüm üretebiliyoruz.

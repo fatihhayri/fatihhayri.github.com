@@ -35,21 +35,23 @@ satır başına atmak için kullanılır.
 Bir örnek verecek olursak 150px genişliğindeki bir alan içinde bir
 metnimiz olsun.
 
-	:::html
-	<div id="link">
-		Loremipsumdolorsitametconsecteturadipiscingelit.
-		Nam semper venenatis lobortis.
-		Donec odio nisl, vehicula vitae molestie ac,
-		euismod ac nibh.
-	</div>
+{% highlight html %}
+<div id="link">
+	Loremipsumdolorsitametconsecteturadipiscingelit.
+	Nam semper venenatis lobortis.
+	Donec odio nisl, vehicula vitae molestie ac,
+	euismod ac nibh.
+</div>
+{% endhighlight %}
 
 CSS kodu
 
-	:::css
-	#link{
-		width:150px;
-		border:1px solid #999;
-	}
+{% highlight css %}
+#link{
+	width:150px;
+	border:1px solid #999;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AdWMx/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -60,18 +62,19 @@ CSS kodu
 Önceki yazımda bu işi white-space ile halletmiştim, ama mantıklı olan
 **word-wrap** ile çözmek.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 3.5+
-Chrome 1+
-Safari 3.1+
-Opera 10.5+
-İnternet Explorer 5.5+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+ (-webkit)**|**5.5+**|**3.5+ (-moz)**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 3.2+
-Opera Mini 5+
-Opera Mobile10+
-Android Browser 2.1+
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 ## text-wrap
 
@@ -117,10 +120,11 @@ desteği mevcut.
 Tanım yaparken ilk olarak yazı tipinin rengini yaparız, sonrada dış hat
 çizgisini tanımlarız.
 
-	:::css
-	font:bold 24px Arial, Helvetica, sans-serif;
-	color: #c00;
-	-webkit-text-stroke: 1px #000;
+{% highlight css %}
+font:bold 24px Arial, Helvetica, sans-serif;
+color: #c00;
+-webkit-text-stroke: 1px #000;
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3dsPG/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -131,26 +135,29 @@ Dış Çizgili ve Saydam zeminli Yazı Tipleri Oluşturmak
 
 Saydam zeminli yazı tipleri tanımlamak için **text-fill-color** özelliği kullanılır.
 
-	:::css
-	font:bold 24px Arial, Helvetica, sans-serif;
-	color: #c00;
-	-webkit-text-stroke: 1px #000;
-	-webkit-text-fill-color: transparent;
+{% highlight css %}
+font:bold 24px Arial, Helvetica, sans-serif;
+color: #c00;
+-webkit-text-stroke: 1px #000;
+-webkit-text-fill-color: transparent;
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/yWWbb/embedded/css,html,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-**Tarayıcı Destekleme Listesi**
-Firefox desteklemiyor
-Chrome 4+ (-webkit- öneki ile)
-Safari 3.2+ (-webkit- öneki ile)
-Opera desteklemiyor
-İnternet Explorer desteklemiyor
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**4.0+ (-webkit)**|*desteklemiyor*|*desteklemiyor*|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 4.1+ (-webkit- öneki ile)
-Opera Mini desteklemiyor
-Opera Mobile destelemiyor
-Android Browser 2.1+ (-webkit- öneki ile)
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**4.1+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
+
 
 ## text-align (yeni değerler)
 
@@ -180,11 +187,12 @@ ile aynı etkiyi yapar.
 justify uygulanmış bir metnin son satırının sağa yaslı olmasını
 istiyorsak
 
-	:::css
-	p {
-		text-align: justify;
-		-ms-text-align-last: right;
-	}
+{% highlight css %}
+p {
+	text-align: justify;
+	-ms-text-align-last: right;
+}
+{% endhighlight %}
 
 ![][100]
 
@@ -212,23 +220,25 @@ davranacaktır ancak farklı olarak sonuna üç nokta(...) koyacaktır.
 CSS3 ile birlikte üç nokta yerine kendi istediğimiz özel karkateri cümle
 satır sonuna ekleyebiliyoruz.
 
-	:::css
-	p {
-		text-overflow: 'herhangibirsey';
-	}
+{% highlight css %}
+p {
+	text-overflow: 'herhangibirsey';
+}
+{% endhighlight %}
 
-**Tarayıcı Destekleme Listesi**
-Firefox 7+
-Chrome 1+
-Safari 3.1+
-Opera 9.0 (-o- ön eki ile)
-İnternet Explorer 6+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+ (-webkit)**|**6.0+**|**7.0+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 3.2+
-Opera Mini 5.0+ (-o- öneki ile)
-Opera Mobile 10.0 (-o- öneki ile)
-Android Browser 2.1+
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+**|**3.2+**|**36+**|
+{: .tarayici-uyumi}
 
 ## text-rendering
 
@@ -266,13 +276,20 @@ resim kaynağı: [https://developer.mozilla.org/en/CSS/text-rendering][]
 Tanımlarda dikkatimiz çeken karakter aralığı olarak Y ve o arasındaki
 mesafe ve ffl görünümündeki farklar kendini gösteriyor.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 3.0+
-Chrome 4.0+
-Safari 5+
-Opera desteklemiyor
-İnternet Explorer desteklemiyor
-{: .tarayiciuyum}
+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**4.0+**|*desteklemiyor*|**3.0+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**4.0+**|**4.3+**|**36+**|
+{: .tarayici-uyumi}
 
 Chrome auto değerini optimizeSpeed olarak yorumluyor, geometricPrecision
  değerini tam olarak 13. sürümden itibaren yorumluyor.
@@ -379,3 +396,9 @@ Kalın sağlıcakla.
   [http://coding.smashingmagazine.com/2010/03/01/css-and-the-future-of-text/]: http://coding.smashingmagazine.com/2010/03/01/css-and-the-future-of-text/
   [http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography-part-2]: http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography-part-2
   [http://www.webreference.com/programming/corecss/2/4.html]: http://www.webreference.com/programming/corecss/2/4.html
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

@@ -45,11 +45,12 @@ Arial uyguladığımız 2. kolon ve Trebuchet Ms uyguladığımız 3. kolon ayn�
 yüksekliğe sahipken ilk kolondaki verdana uyguladığımız metin yüksekliği
 daha yüksektir. Aynı yüksekiği yakalamak için
 
-	:::css
-	.kolon1{
-		font:12px/18px Verdana, Geneva, sans-serif;
-		font-size-adjust:0.47;
-	}
+{% highlight css %}
+.kolon1{
+	font:12px/18px Verdana, Geneva, sans-serif;
+	font-size-adjust:0.47;
+}
+{% endhighlight %}
 
 aynı yüksekliği yakalamamızı sağlayacaktır.
 
