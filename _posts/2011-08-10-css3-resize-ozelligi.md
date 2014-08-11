@@ -24,11 +24,12 @@ hücreleri ve inline block elementler\\
 **none:** boyutlandırma seçeneğini kaldırır
 **inherit:** kalıtsal olarak bu değeri üst elementten alır.
 
-	:::css
-	div{
-		overflow:auto; /* bu tanim gerekli */
-		resize:both;
-	}
+{% highlight css %}
+div{
+	overflow:auto; /* bu tanim gerekli */
+	resize:both;
+}
+{% endhighlight %}
 
 overflow değeri scroll, auto veya hidden değerlerinde etki ederken
 overflow: visible tanımında ise etki yapmaz.
@@ -40,33 +41,35 @@ kaldırabiliyoruz.
 
 Bir örnek yapalım
 
-	:::css
-	.icerik{
-	    box-shadow: rgb(136, 136, 136) 5px 5px 5px;
-	    border-radius: 5px;
-	    resize: both;
-	    overflow: auto;
-	    border: 1px solid #dedede;
-	    padding:10px;
-	    width: 300px;
-	    height: 200px;
-	}
+{% highlight css %}
+.icerik{
+    box-shadow: rgb(136, 136, 136) 5px 5px 5px;
+    border-radius: 5px;
+    resize: both;
+    overflow: auto;
+    border: 1px solid #dedede;
+    padding:10px;
+    width: 300px;
+    height: 200px;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aDnP6/3/embedded/result,css,html"></iframe>
 
 Sadece bir yöne boyutlandırabiliyoruz
 
-	:::css
-	.siir{
-	    width: 170px;
-	    height: 200px;
-	    resize: vertical;
-	    overflow: hidden;
-	    position: relative;
-	    padding: 0 25px;
-	    border: 1px solid #DDD;
-	    font-family: georgia, serif;
-	}
+{% highlight css %}
+.siir{
+    width: 170px;
+    height: 200px;
+    resize: vertical;
+    overflow: hidden;
+    position: relative;
+    padding: 0 25px;
+    border: 1px solid #DDD;
+    font-family: georgia, serif;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/k2wHc/2/embedded/result,css,html"></iframe>
 
@@ -75,56 +78,59 @@ değerlerini belirleyebiliyoruz. Anı şekilde max-height ve max-width
 değerleri ile de maksimum değerleri belirlenebilir. Bu özelliklerle
 kullanıcının sayfa görünümünü bozmasını engelleyebiliriz.
 
-	:::css
-	.siir{
-	    width: 170px;
-	    height: 200px;
-	    resize: vertical;
-	    overflow: hidden;
-	    position: relative;
-	    padding: 0 25px;
-	    border: 1px solid #DDD;
-	    font-family: georgia, serif;
-	    max-height: 650px;
-	    min-height: 200px;
-	}
+{% highlight css %}
+.siir{
+    width: 170px;
+    height: 200px;
+    resize: vertical;
+    overflow: hidden;
+    position: relative;
+    padding: 0 25px;
+    border: 1px solid #DDD;
+    font-family: georgia, serif;
+    max-height: 650px;
+    min-height: 200px;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/yLZDQ/embedded/result,css,html"></iframe>
 
 Resimler için güzel bir uygulama olabilir.
 
-	:::css
-	.vasak{
-		width: 200px;
-		margin: 0 10px;
-		height: 150px;
-		resize: both;
-		overflow: hidden;
-		position: relative;
-		padding: 15px;
-		border: 1px solid #DDD;
-	}
+{% highlight css %}
+.vasak{
+	width: 200px;
+	margin: 0 10px;
+	height: 150px;
+	resize: both;
+	overflow: hidden;
+	position: relative;
+	padding: 15px;
+	border: 1px solid #DDD;
+}
 
-	.vasak img{
-		width:100%;
-		height:auto;
-	}
+.vasak img{
+	width:100%;
+	height:auto;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Xk3Gr/8/embedded/result,css,html"></iframe>
 
 **Tarayıcı Desteği**
-Google Chrome 5+
-Safari 5+
-Firefox4+
-Opera desteklemiyor
-İnternet Explorer desteklemiyor
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**5.0+**|*desteklemiyor*|**4.0+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-Android desteklemiyor
-Firefox mobile desteklemiyor
-IE Phone desteklemiyor
-Opera Mobile desteklemiyor
-Safari Mobile desteklemiyor
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|*desteklemiyor*|*desteklemiyor*|*desteklemiyor*|
+{: .tarayici-uyumi}
+
 
 resize özelliği W3C Basic User Interface Module ile önerilen bir
 özelliğidir. Tarayıcıların destekleme durumuna göre ileride

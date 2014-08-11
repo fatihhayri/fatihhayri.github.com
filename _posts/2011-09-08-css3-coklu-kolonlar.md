@@ -58,14 +58,15 @@ Elemanı ayıracağımız kolon sayısını belirlememizi sağlar. Başlangıç
 değeri auto olarak tanımlıdır. Bu sayede sadece **column-width** tanımı
 ile ile
 
-	:::css
-	#cokluKolon{
-	  -moz-column-count:3;
-	  -webkit-column-count:3;
-	  column-count:3;
-	  width:968px;
-	  margin:0 auto;
-	}
+{% highlight css %}
+#cokluKolon{
+  -moz-column-count:3;
+  -webkit-column-count:3;
+  column-count:3;
+  width:968px;
+  margin:0 auto;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/HZZ8t/1/embedded/css,result,html"></iframe>
 
@@ -73,18 +74,20 @@ Genişlik tanımı yapılmadan kolonlara bölme işlemi gerçekleşmiyor.
 Tarayıcılara göre farklı öneklerle kullanmamız dışında tek satırsa
 elemanları kolonlara bölmek bize çok büyük kolaylık sağlayacaktır.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 1.5+
-Chrome 2+
-Safari 3+
-Opera 11.1+
-İnternet Explorer 10+
+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**10+**|**1.5+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 3.2+
-Opera Mini desteklemiyor
-Opera Mobile11.1+
-Android Browser 2.1+
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+**|**3.2+**|**36+**|
+{: .tarayici-uyumi}
 
 ## column-width
 
@@ -92,68 +95,72 @@ Elemanları kolonlara bölmek için diğer bir yöntemde **column-width** ile
 genişlik tanımı yapmaktır. Tarayıcılar belirlenen genişliğe göre
 kapsayıcının genişliğine göre otomatik olarak kolonlara bölecektir.
 
-	:::css
-	#cokluKolon{
-      -moz-column-width:150px;
-      -webkit-column-width:150px;
-      column-width:150px;
-	}
+{% highlight css %}
+#cokluKolon{
+    -moz-column-width:150px;
+    -webkit-column-width:150px;
+    column-width:150px;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/SkXL4/1/embedded/css,result,html"></iframe>
 
 Bir genişlik tanımı yapılırsa **column-width** değeri tanımlandığı kadar
 kolona bölüyor.
 
-	:::css
-	#cokluKolon{
-      -moz-column-width:150px;
-      -webkit-column-width:150px;
-      column-width:150px;
-      width:950px;
-	}
+{% highlight css %}
+#cokluKolon{
+    -moz-column-width:150px;
+    -webkit-column-width:150px;
+    column-width:150px;
+    width:950px;
+}
+{% endhighlight %}
 
 column-width ile **column-count** aynı anda kullanabiliriz.
 
-	:::css
-	#cokluKolon{
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
-      -webkit-column-width: 150px;
-      -moz-column-width: 150px;
-      column-width: 150px;
-	}
+{% highlight css %}
+#cokluKolon{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    column-width: 150px;
+}
+{% endhighlight %}
 
-**Tarayıcı Destekleme Listesi**
-Firefox 1.5+
-Chrome 2+
-Safari 3+
-Opera 11.1+
-İnternet Explorer 10+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**10+**|**1.5+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 3.2+
-Opera Mini desteklemiyor
-Opera Mobile11.1+
-Android Browser 2.1+
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+**|**3.2+**|**36+**|
+{: .tarayici-uyumi}
 
 ## columns
 
 **column-count** ve **column-width** değerlerini tek seferde
 kullanabileceğimiz bir kısayol tanımıdır.
 
-	:::css
-	div {
-		columns: 200px 5;
-	}
+{% highlight css %}
+div {
+	columns: 200px 5;
+}
+{% endhighlight %}
 
-**Tarayıcı Destekleme Listesi**
-Firefox desteklemiyor
-Chrome (-webkit- öneki ile)
-Safari (-webkit- öneki ile)
-Opera 11.1+
-İnternet Explorer 10+
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**10+**|*desteklemeiyor*|
+{: .tarayici-uyumi}
 
 Burada araya girip gördüğüm bir sorunu yazayım. **column-count** ve
 **column-width** tanımları birlikte yapılınca veya columns tanımı
@@ -161,15 +168,16 @@ yapıldığında Firefox ve Google Chrome ile Opera farklı yorumluyor. Opera
 yorumlarken her halükarda **column-width** değerini üstün kılarken,
 Firefox ve Chrome **column-coun**t değerini üstün kılıyor.
 
-	:::css
-	#cokluKolon{
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
-      -webkit-column-width: 150px;
-      -moz-column-width: 150px;
-      column-width: 150px;
-  	}
+{% highlight css %}
+#cokluKolon{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    column-width: 150px;
+}
+{% endhighlight %}
 
 Bu tanımda Firefox ve Chrome 2 kolonlu bir yapı gösteriyor ve genişlik
 olarak 150px tanımını görmüyor. Opera ise **column-width** değerini
@@ -182,29 +190,31 @@ margin anlamında kullanılır.
 
 Başlangıç değeri 1em olarak tanımlıdır.
 
-	:::css
-	#cokluKolon{
-      -webkit-column-gap: 50px;
-      -moz-column-gap: 50px;
-      column-gap: 50px;
-  	}
+{% highlight css %}
+#cokluKolon{
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/vdnRk/1/embedded/css,result,html"></iframe>
 
 **column-gap**’in güzelliği son kolona bu boşluğu uygulamıyor olması.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 1.5+
-Chrome 2+
-Safari 3+
-Opera 11.1+
-İnternet Explorer 10+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**10+**|**1.5+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 3.2+
-Opera Mini desteklemiyor
-Opera Mobile11.1+
-Android Browser 2.1+
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+**|**3.2+**|**36+**|
+{: .tarayici-uyumi}
 
 ## column-rule
 
@@ -213,30 +223,32 @@ ile benzer bir yapısı var. **column-rule-size,
 column-rule-style**ve**column-rule**-color gibi ayrı ayrı tanımlama
 yapılabileceği gibi **column-rule** kısaltması ile tanım yapabiliyoruz.
 
-	:::css
-	#cokluKolon{
-      -webkit-column-rule: 3px solid #000;
-      -moz-column-rule: 3px solid #000;
-      column-rule: 3px solid #000;
-  	}
+{% highlight css %}
+#cokluKolon{
+    -webkit-column-rule: 3px solid #000;
+    -moz-column-rule: 3px solid #000;
+    column-rule: 3px solid #000;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3SMhX/embedded/css,result,html"></iframe>
 
 **column-gap** gibi sadece aradaki kolonlara uygulanan bir özellik bu
 son kolona uygulanmıyor.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 1.5+
-Chrome 2+
-Safari 3+
-Opera 11.1+
-İnternet Explorer 10+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**10+**|**1.5+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 3.2+
-Opera Mini desteklemiyor
-Opera Mobile11.1+
-Android Browser 2.1+
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+**|**3.2+**|**36+**|
+{: .tarayici-uyumi}
 
 ## break-before, break-after ve break-inside
 
@@ -273,13 +285,12 @@ desteklemektedir.
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aPtVe/3/embedded/css,result,html"></iframe>
 
-**Tarayıcı Destekleme Listesi**
-Firefox desteklemiyor
-Chrome (-webkit- öneki ile)
-Safari (-webkit- öneki ile)
-Opera 11.1+ (gerçekleyemedim)
-İnternet Explorer 10+ (gerçekleyemedim)
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**10+**|*desteklemiyor*|
+{: .tarayici-uyumi}
 
 ## column-span
 
@@ -292,26 +303,26 @@ sayısı 2,3,4 vs.) all değeri tüm kolonlar boyunca başlığın uzaması içi
 kullanılır. Sayı değerleri ise belirtilen sayıdaki kolonlarda uzamasını
 için kullanılır.
 
-	:::css
-	#cokluKolon h2{
-	  -webkit-column-span:all;
-	  -moz-column-span:all;
-	  column-span:all;
-	  background-color:#0CF;
-	}
+{% highlight css %}
+#cokluKolon h2{
+  -webkit-column-span:all;
+  -moz-column-span:all;
+  column-span:all;
+  background-color:#0CF;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/x6B67/embedded/css,result,html"></iframe>
 
 Şu anda destekleyen tarayıcılar **all ve none** değerlerini destekliyor
 sayısal değeri destekleyen tarayıcı henüz yok.(Eylül 2011)
 
-**Tarayıcı Destekleme Listesi**
-Firefox desteklemiyor
-Chrome (-webkit- öneki ile) kısmen
-Safari (-webkit- öneki ile) kısmen
-Opera 11.1+
-İnternet Explorer 10+
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**10+**|*desteklemiyor*|
+{: .tarayici-uyumi}
 
 ## column-fill
 
@@ -332,13 +343,12 @@ iki değer arasında bir fark görmedim.
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/WSWbt/embedded/css,result,html"></iframe>
 
-**Tarayıcı Destekleme Listesi**
-Firefox desteklemiyor
-Chrome (-webkit- öneki ile)
-Safari (-webkit- öneki ile)
-Opera 11.1+
-İnternet Explorer 10+
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**10+**|*desteklemiyor*|
+{: .tarayici-uyumi}
 
 ## İnternet Explorer İçin Çözüm
 
@@ -430,3 +440,10 @@ Kalın sağlıcakla
   [http://www.juude.info/css-columns.php]: http://www.juude.info/css-columns.php
   [http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/]: http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/
   [http://help.dottoro.com/lcxquvkf.php]: http://help.dottoro.com/lcxquvkf.php
+
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

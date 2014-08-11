@@ -22,18 +22,20 @@ Soruna gelirsek; Sorun Bitişik Kardeş Seçicileri kullandığımız elemanlar
 arasında eğer HTML yorum satırı eklersek ie7 bitişik kardeş seçicisi ile
 tanımladığımız bildirimleri yorumlamıyor.
 
-	:::html
-	<h2>Başlık</h2>
-	<!-- html yorumu -->
-	<p>Paragraf</p>
+{% highlight html %}
+<h2>Başlık</h2>
+<!-- html yorumu -->
+<p>Paragraf</p>
+{% endhighlight %}
 
 
 CSS kodu
 
-	:::css
-	h2 + p {
-		background-color: #fc0;
-	}
+{% highlight css %}
+h2 + p {
+	background-color: #fc0;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/Ubk9Q/embedded/result,html,css"></iframe>
 
@@ -48,11 +50,12 @@ satırımı silmek istemem. Çözüm[ie6 sorunları][] ile uğraşırken
 bulduğumuz şekilde olacaktır. Şartlı yorumları kullanarak çözüme
 ulaşmakta mümkündür.
 
-	:::html
-	<h2>Başlık</h2>
-	<!--[if !IE]>Başlık yaz <![endif]-->
-	<p>Paragraf</p>
-	<p>Paragraf 2</p>
+{% highlight html %}
+<h2>Başlık</h2>
+<!--[if !IE]>Başlık yaz <![endif]-->
+<p>Paragraf</p>
+<p>Paragraf 2</p>
+{% endhighlight %}
 
 Şeklinde bir çözüm işimizi görecektir.
 

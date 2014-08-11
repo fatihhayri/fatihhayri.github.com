@@ -26,32 +26,37 @@ dir ile aynı anlamdadır.
 
 Sonuç aşağıdaki gibi olacaktır
 
-	:::bash
-	ls
-	aFolder    another.txt    bilgilendirme.txt   deneme.html
+{% highlight bash %}
+ls
+aFolder    another.txt    bilgilendirme.txt   deneme.html
+{% endhighlight %}
 
 ## cd (Change Directory)
 
 Bu komut ile dosyalar arası geçiş için kullanırız. Mesela image
 klasörüne geçmek için
 
-	:::bash
-	cd images
+{% highlight bash %}
+cd images
+{% endhighlight %}
 
 Tek seviyede değil birden fazla seviyede geçişte yapabiliriz.
 
-	:::bash
-	cd images/icons/ust
+{% highlight bash %}
+cd images/icons/ust
+{% endhighlight %}
 
 Bir alt klasöre inmek için
 
-	:::bash
-	cd ..
+{% highlight bash %}
+cd ..
+{% endhighlight %}
 
 Kök dizinine(root) inmek için ise
 
-	:::bash
-	cd
+{% highlight bash %}
+cd
+{% endhighlight %}
 
 yazmak yeterlidir. Ufak bir ipucu klasör isimlerinin uzun olması
 durumunda akılda tutmak zor oluyor. Klasör veya dosya isminin başında
@@ -63,35 +68,40 @@ tamamlayabilirsiniz.
 Yeni klasör oluşturmak için kullanıyoruz. Mac ve Windows’ta kullanımı
 aynıdır.
 
-	:::bash
-	mkdir yeniKlasor
+{% highlight bash %}
+mkdir yeniKlasor
+{% endhighlight %}
 
 ## rm (remove)
 
 Dosya ve klasörleri silmek için kullanılır. Silme işlemlerinde her zaman
 dikkatli olmak lazım.
 
-	:::bash
-	rm deneme.html
-	rm images_klasoru
+{% highlight bash %}
+rm deneme.html
+rm images_klasoru
+{% endhighlight %}
 
 ## cp (copy) ve mv (move)
 
 Çok basit bir kullanımı vardır. İlk parametre kopyalanacak dosyayı
 ikinci parametre ise hedefi gösterir.
 
-	:::bash
-	cp deneme.html ~/dosya/deneme.html
+{% highlight bash %}
+cp deneme.html ~/dosya/deneme.html
+{% endhighlight %}
 
 Eğer taşımak istiyorsanız, aynı şekilde kullanabiliriz.
 
-	:::bash
-	mv deneme.html /dosya/deneme.html
+{% highlight bash %}
+mv deneme.html /dosya/deneme.html
+{% endhighlight %}
 
 mv komutu dosya ismini değiştirmek içinde kullanılabilir.
 
-	:::bash
-	mv deneme.html /dosya/test.html
+{% highlight bash %}
+mv deneme.html /dosya/test.html
+{% endhighlight %}
 
 deneme.html dosyası ismi test.html olarak değiştirilip taşınmıştır.
 
@@ -106,8 +116,9 @@ içinde açabiliyoruz.
 
 Mesela MacOs için ilgili klasörde iken
 
-	:::bash
-	nano deneme.html
+{% highlight bash %}
+nano deneme.html
+{% endhighlight %}
 
 komutu deneme.html dosyamızı nano editöründe açmamızı sağlayacaktır.
 
@@ -133,13 +144,15 @@ komutları ve ipuçlarını paylaşacağım.
 Bir branchdeki veya bir dosya üzerindeki değişiklikleri görmek için
 branchde iken
 
-	:::git
-	$git log
+{% highlight git %}
+$git log
+{% endhighlight %}
 
 yazarız bu komut bize
 
-	:::git
-	commit f491239170cb1463c7c3cd970862d6de636ba787 Author: Matt McCutchen &lt;matt@mattmccutchen.net&gt; Date:   Thu Aug 14 13:37:41 2008 -0400 git format-patch documentation: clarify what --cover-letter does commit 7950659dc9ef7f2b50b18010622299c508bfdfc3 Author: Eric Raible &lt;raible@gmail.com&gt; Date:   Thu Aug 14 10:12:54 2008 -0700 bash completion: 'git apply' should use 'fix' not 'strip' Bring completion up to date with the man page.
+{% highlight git %}
+commit f491239170cb1463c7c3cd970862d6de636ba787 Author: Matt McCutchen &lt;matt@mattmccutchen.net&gt; Date:   Thu Aug 14 13:37:41 2008 -0400 git format-patch documentation: clarify what --cover-letter does commit 7950659dc9ef7f2b50b18010622299c508bfdfc3 Author: Eric Raible &lt;raible@gmail.com&gt; Date:   Thu Aug 14 10:12:54 2008 -0700 bash completion: 'git apply' should use 'fix' not 'strip' Bring completion up to date with the man page.
+{% endhighlight %}
 
 gibi bir sonuç döndürür. O dosya veya o branch üzerinde yapılan tüm
 değişiklikler hakkında bilgileri içeren bir listedir bu. Bu listede
@@ -147,15 +160,17 @@ commit … ile başlayan satırda verilen numara yapılan ve gönderilen her
 iş için farklıdır biz bu sözdizimini kullanarak iki farklı gönderi
 arasındaki farkı bulabiliriz.
 
-	:::git
-	$git diff f491239170cb1463c7c3cd970862d6de636ba787 7950659dc9ef7f2b50b18010622299c508bfdfc3  Html/index.html
+{% highlight git %}
+$git diff f491239170cb1463c7c3cd970862d6de636ba787 7950659dc9ef7f2b50b18010622299c508bfdfc3  Html/index.html
+{% endhighlight %}
 
 İki farklı branchdeki HTML/index.html dosyasındaki farklılıkları
 gösterir yukarıdaki kod. Farkları renkli görmek için --color
 parametresini kullanabiliriz.
 
-	:::git
-	$git diff --color  d76192b2c7a61d2aea62c7aec21e14cda72f9e32 fe0dba7b841e86b095d2aefbd6bd755a0d9d1e90  Html/index.html
+{% highlight git %}
+$git diff --color  d76192b2c7a61d2aea62c7aec21e14cda72f9e32 fe0dba7b841e86b095d2aefbd6bd755a0d9d1e90  Html/index.html
+{% endhighlight %}
 
 Eklenenleri yeşil, çıkarılanları kırmızı renkte gösterecektir. Ayrımı
 görmek için renkler güzel oluyor.
@@ -164,8 +179,9 @@ görmek için renkler güzel oluyor.
 
 git branch -d: Yanlışlıkla açtığımız branchlerı silmek için
 
-	:::git
-	$git branch -d branch_ismi
+{% highlight git %}
+$git branch -d branch_ismi
+{% endhighlight %}
 
 ## Kısayol kullanmak
 
@@ -177,20 +193,23 @@ git config dosyasına kısayolllarımızı ekleyebiliyoruz. git cofig ile ilgili
 
 Global congif dosyasına eklemek için
 
-	:::git
-	$git config --global alias.ci commit
+{% highlight git %}
+$git config --global alias.ci commit
+{% endhighlight %}
 
 **ci** kısaltma **commit** normali. Eğer projeye özgü kısayollar
 oluşturmak için
 
-	:::git
-	$git config alias.ci commit
+{% highlight git %}
+$git config alias.ci commit
+{% endhighlight %}
 
 **--global** parametresini kaldırmamız yeterli olacaktır. git config
 dosyasını görmek için
 
-	:::git
-	$git config --edit
+{% highlight git %}
+$git config --edit
+{% endhighlight %}
 
 yazmamız yeterli burada eklediğimiz kısayolları görebiliriz. Benim
 listem aşağıdaki gibi.
@@ -211,21 +230,24 @@ bağlantıda Git kaynakları listelenmiş. Git’in güzel yanlarında birisi
 
 ## Başka Branch’den dosya almak
 
-	:::git
-	$git checkout branch_adi dosya_adi
+{% highlight git %}
+$git checkout branch_adi dosya_adi
+{% endhighlight %}
 
 Benzer bir şekilde branchde yaptığımız değişikliği geri almak için
 master’dan dosyayı alabiliriz.
 
-	:::git
-	$git checkout master dosya_adi
+{% highlight git %}
+$git checkout master dosya_adi
+{% endhighlight %}
 
 ## Değişen dosya isimleri
 
 Çalıştığımız branchde değişiklik yaptığımız dosyaları görmek için
 
-	:::git
-	$git diff master --name-only
+{% highlight git %}
+$git diff master --name-only
+{% endhighlight %}
 
 kodunu kullanıyoruz.
 

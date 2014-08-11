@@ -50,15 +50,16 @@ değerlerinin içerip içermemesi gerektiğini tanımlama imkanı sağlıyor.
 
 CSS kodu;
 
-	:::css
-	#kutu{
-		display:block;
-		border:10px solid #069;
-		padding:20px;
-		width:200px;
-		height:200px;
-		background:#CCC;
-	}
+{% highlight css %}
+#kutu{
+	display:block;
+	border:10px solid #069;
+	padding:20px;
+	width:200px;
+	height:200px;
+	background:#CCC;
+}
+{% endhighlight %}
 
 
 <iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/ZeMYW/1/embedded/result,css,html"></iframe>
@@ -70,17 +71,18 @@ Farklı tarayıcılar önek ile destek sağlamaktadır. Firefox(-moz-),
 Chrome(-webkit-) ve Safari (-webkit-) Yukarıdaki koda box-border tanımı
 yapıldığında
 
-	:::css
-	#kutu{
-	  display:block;
-	  border:10px solid #069;
-	  padding:20px; width:200px;
-	  height:200px;
-	  background:#CCC;
-	  box-sizing:border-box;
-	  -webkit-box-sizing:border-box;
-	  -moz-box-sizing:border-box;
-	}
+{% highlight css %}
+#kutu{
+  display:block;
+  border:10px solid #069;
+  padding:20px; width:200px;
+  height:200px;
+  background:#CCC;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/y6uyv/embedded/result,css,html"></iframe>
 
@@ -90,22 +92,23 @@ ise 140px olacaktır.
 Her iki değerin kullanılabileceği yerler vardır. border-box tanımının
 esnek yapılı alanlarda bize avantaj sağlayacağı kesindir.
 
-	:::css
-	.kutuSol{
-		float: left;
-		width: 30%;
-		background-color: pink;
-		border:3px red dotted;
-		height: 150px;
-	}
+{% highlight css %}
+.kutuSol{
+	float: left;
+	width: 30%;
+	background-color: pink;
+	border:3px red dotted;
+	height: 150px;
+}
 
-	.kutuSag{
-		float: left;
-		background-color: lightgreen;
-		width: 70%;
-		border: 3px green dotted;
-		height: 150px;
-	}
+.kutuSag{
+	float: left;
+	background-color: lightgreen;
+	width: 70%;
+	border: 3px green dotted;
+	height: 150px;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/jP3Dv/1/embedded/result,css,html"></iframe>
 
@@ -118,22 +121,23 @@ yoktur. En azından [calc()][] özelliği tam desteklenene kadar yoktur.
 
 Çözüm olarak box-border tanımı ile sorunumuza çözüm üretebiliriz.
 
-	:::css
-	.kutuSol{
-	 float: left;
-	 width: 30%;
-	 background-color: pink;
-	 border: 3px red dotted;
-	 height: 150px;
-	}
+{% highlight css %}
+.kutuSol{
+ float: left;
+ width: 30%;
+ background-color: pink;
+ border: 3px red dotted;
+ height: 150px;
+}
 
-	.kutuSag{
-	 float: left;
-	 background-color: lightgreen;
-	 width: 70%;
-	 border: 3px green dotted;
-	 height: 150px;
-	}
+.kutuSag{
+ float: left;
+ background-color: lightgreen;
+ width: 70%;
+ border: 3px green dotted;
+ height: 150px;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/z2bQA/1/embedded/result,css,html"></iframe>
 
@@ -141,18 +145,19 @@ Farklı araçlar ile web sayfaları gezilmeye başlayalı beri esnek yapılı
 sayfalar revaçtadır. Websitelerimizi artık daha esnek planlamak zorunda
 kalacağız. Bu durumda bu özellik bize çok büyük yararlar sağlayacaktır.
 
-**Tarayıcı Destekleme Listesi**
-Firefox 1+ (-moz- ön eki ile)
-Chrome 1+ (-webkit- ön eki ile)
-Safari 3+ (-webkit- ön eki ile)
-Opera 7+
-İnternet Explorer 8+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+**|**8.0+**|**1.0+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 3.2+ (-webkit- ön eki ile)
-Opera Mini 5+
-Opera Mobile10+
-Android Browser 2.1+ (-webkit- ön eki ile)
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 Trayaıcı destek listesinde görüldüğü gibi sorun sadece ie7 sürümü ve
 aşağısında yaşanmaktadır.

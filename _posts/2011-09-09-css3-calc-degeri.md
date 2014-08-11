@@ -25,13 +25,14 @@ geleceğiz.
 Genelde esnek yapılı alanlar ve sayfa düzeni oluştururken göreceli değer
 ve sabit margin, padding ve border tanımları ile sorun yaşarız.
 
-	:::css
-	#sagKolon{
-	  width:calc(300px - 1em);
-	  width:-moz-calc(300px - 1em);
-	  float:left;
-	  background-color:#CC9933;
-	}
+{% highlight css %}
+#sagKolon{
+  width:calc(300px - 1em);
+  width:-moz-calc(300px - 1em);
+  float:left;
+  background-color:#CC9933;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VaBqn/3/embedded/css,result,html"></iframe>
 
@@ -43,32 +44,36 @@ olacaktır.
 
 Birden fazla işlem içinde kullanıma izin vardır.
 
-	:::css
-	div {
-	    width: calc(100% - 20px + 2px*2);
-	}
+{% highlight css %}
+div {
+    width: calc(100% - 20px + 2px*2);
+}
+{% endhighlight %}
 
 İşlem sırası matematik ve javascriptten bildiğimiz gibi çarpma, bölme,
 mod, toplama , çıkarma sıralaması ile olur.
 
-	:::css
-	p {
-	    margin: calc(1rem - 2px) calc(1rem - 1px)
-	}
+{% highlight css %}
+p {
+    margin: calc(1rem - 2px) calc(1rem - 1px)
+}
+{% endhighlight %}
 
 şeklinde margin üst/alt ve sağ/sol tanımları yapılabilir.
 
-**Tarayıcı Destekleme Listesi**
-Firefox
-Chrome
-Safari
-Opera 15+
-İnternet Explorer 9+
-**Mobil Tarayıcılar **
-iOS Safari 6+
-Opera Mobile Desteklemiyor
-Android Browser Desteklemiyor
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**19+**|**9+**|**4.0+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**4.4+**|**6.1+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 ## Kaynaklar
 
@@ -91,3 +96,9 @@ Android Browser Desteklemiyor
   [http://bloqk.com/makale/css_calc_kullanimi.html]: http://bloqk.com/makale/css_calc_kullanimi.html
   [http://www.thecssninja.com/demo/css_calc/]: http://www.thecssninja.com/demo/css_calc/
   [http://www.sitepoint.com/css3-calc-function]: http://www.sitepoint.com/css3-calc-function
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

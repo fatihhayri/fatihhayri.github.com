@@ -94,26 +94,28 @@ yazarken bile ie7’nin çıkmasını beklemişim.
 
 Basit Özellik Seçicisi
 
-	:::css
-	 a [title] {
-		color:#f00
-	}
+{% highlight css %}
+ a [title] {
+	color:#f00
+}
+{% endhighlight %}
 
 Sadece title özelliği tanımlanmış bağlantı elementlerini yakalamamıza
 sağlar.
 
 **Özellik Değeri Seçicisi**
 
-	:::css
-	input[type="text"] {
-		border: 1px solid #177F75;
-		font-family:Verdana, Arial, Helvetica, sans-serif;
-	}
+{% highlight css %}
+input[type="text"] {
+	border: 1px solid #177F75;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
 
-	input[type="submit"]{
-		margin-left: 201px;
-		background-color: #00CC00;
-	}
+input[type="submit"]{
+	margin-left: 201px;
+	background-color: #00CC00;
+}
+{% endhighlight %}
 
 Özellik değeri seçicisi daha fazla esneklik sağlar. Yukarıda örnekte
 görüldüğü gibi Form elemanlarını ayırmak zor oluyordu. Normal bir input
@@ -128,20 +130,22 @@ yazısında bu özelliğin bize ne kadar avantaj sağladığını görüyoruz.
 Bir etiketin özellik değerindeki boşluklarla ayrılmış kısımlarına göre
 tanımlama yapmamızı sağlar.
 
-	:::css
-	a[title~="Google"] {
-		text-decoration:overline;
-	}
+{% highlight css %}
+a[title~="Google"] {
+	text-decoration:overline;
+}
+{% endhighlight %}
 
 **Dikkate Değer Özellik Seçicisi**
 
 Bir etiketin özellik değerindeki kesik çizgi(-) ile ayrılmış kısımlarına
 göre tanımlama yapmamızı sağlar.
 
-	:::css
-	*[lang|="en"] {
-		color: red;
-	}
+{% highlight css %}
+*[lang|="en"] {
+	color: red;
+}
+{% endhighlight %}
 
 Bunların dışında CSS3 ile birlikte gelen Özellik seçicileride var. Daha
 gelişmiş özellikler ile gelen CSS3’ni de desteklemektedir. Makaleye
@@ -153,16 +157,17 @@ bunları yazmamışım bile ie6 desteklemiyor diye.
 
 Mesela web siteleri ile e-posta ayrımını yapmak için mesela
 
-	:::css
-	a[href^="http:"] {
-		background:("baglanti.gif") 0 0 no-repeat;
-		padding-left:15px;
-	}
+{% highlight css %}
+a[href^="http:"] {
+	background:("baglanti.gif") 0 0 no-repeat;
+	padding-left:15px;
+}
 
-	a[href^="mailto:"] {
-		background:("posta.gif") 0 0 no-repeat;
-		padding-left:15px;
-	}
+a[href^="mailto:"] {
+	background:("posta.gif") 0 0 no-repeat;
+	padding-left:15px;
+}
+{% endhighlight %}
 
 
 **Belirlenen Sözdizimi ile Biten Özellik Değer Seçicisi**
@@ -172,37 +177,39 @@ Mesela web siteleri ile e-posta ayrımını yapmak için mesela
 Mesela farklı dosya tiplerine verilen bağlantıları ayırt etmek için
 bağlantıların başına ikon koymak istediğimizde
 
-	:::css
-	a[href$='.pdf'] {
-      display:inline-block;
-      padding-left:20px;
-      line-height:18px;
-      background:transparent url(/Images/PDFIcon.gif) center left no-repeat;
-	}
+{% highlight css %}
+a[href$='.pdf'] {
+  display:inline-block;
+  padding-left:20px;
+  line-height:18px;
+  background:transparent url(/Images/PDFIcon.gif) center left no-repeat;
+}
 
-	a[href$='.doc'] {
-      display:inline-block;
-      padding-left:20px;
-      line-height:18px;
-      background:transparent url(/Images/WordDocIcon.gif) center left no-repeat;
-	}
+a[href$='.doc'] {
+  display:inline-block;
+  padding-left:20px;
+  line-height:18px;
+  background:transparent url(/Images/WordDocIcon.gif) center left no-repeat;
+}
 
-	a[href$='.zip'], a[href$='.gzip'], a[href$='.rar'] {
-      display:inline-block;
-      padding-left:20px;
-      line-height:18px;
-      background:transparent url(/Images/ZIPIcon.gif) center left no-repeat;
-	}
+a[href$='.zip'], a[href$='.gzip'], a[href$='.rar'] {
+  display:inline-block;
+  padding-left:20px;
+  line-height:18px;
+  background:transparent url(/Images/ZIPIcon.gif) center left no-repeat;
+}
+{% endhighlight %}
 
 **İçinde Belirlenen Sözdizimi Geçen Özellik Değer Seçicisi**
 
 Özellik içeriğinde belirlenen değerin geçip geçmemesine göre ayırt
 etmemizi sağlar.
 
-	:::css
-	a[href*="example.com"] {
-  		color:#ff0
-  	}
+{% highlight css %}
+a[href*="example.com"] {
+	color:#ff0
+}
+{% endhighlight %}
 
 Sadece özellik seçicileri değil ayrıca çocuk seçicileri, bitişik kardeş
 seçicisi, :first-child
@@ -214,10 +221,11 @@ istediğimizde kullandığımız seçici. Bir menüde liste elemanlarına
 tanımlama yaparken tüm alt elemanlara değilde sadece ilk menü liste
 elemanlarına etki yapmasını istediğimizde çok işimize yarar mesela
 
-	:::css
-	ul > li{
-  		list-style:none
-  	}
+{% highlight css %}
+ul > li{
+	list-style:none
+}
+{% endhighlight %}
 
 Çocuk seçicisi bizi fazla kod yazmaktan korur. Mesela bir menü için
 tanımlama yaptığımızda eğer menünün alt elemanlarına farklı stiller
@@ -239,10 +247,11 @@ belirtilen elemandan sonraki aynı seviyedeki elemanları seçmek için
 kullanılır. Seçici işareti olarak elemanlar arasına tilde(~) işareti
 konulur.
 
-	:::css
-	E ~ F {
+{% highlight css %}
+E ~ F {
 
-	}
+}
+{% endhighlight %}
 
 Bitişik kardeş seçicisine göre daha avantajlı bir seçicidir. Burada
 dikkat edilmesi gereken bir durum vardır oda genel kardeş seçicisi
@@ -253,20 +262,22 @@ Bir örnek yapacak olursak bir resmimiz var bunu sola hizalayacağız ve
 sağdanda metinler akacak. Bu resim ve paragraflar arasına padding
 tanımlamak için genel kardeş seçicisi birebirdir.
 
-	:::css
-	img{
-      float:left;
-  	}
-
-	img ~ p{
-    	padding-left:110px;
+{% highlight css %}
+img{
+  float:left;
 	}
 
-	:::html
-	<img src="kedi.jpg" width="96" height="96" alt="kedi" />
-	<p>Kedi (Felis catus),...</p>
-	<p>2,5 ile 12 kilo ...</p>
-	<p>Kediler hoş görünüşlü, ..</p>
+img ~ p{
+	padding-left:110px;
+}
+{% endhighlight %}
+
+{% highlight html %}
+<img src="kedi.jpg" width="96" height="96" alt="kedi" />
+<p>Kedi (Felis catus),...</p>
+<p>2,5 ile 12 kilo ...</p>
+<p>Kediler hoş görünüşlü, ..</p>
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KGkAK/1/embedded/result,css,html"></iframe>
 
@@ -281,23 +292,25 @@ itibaren destekliyor.
 Mesela bir listemiz olsun yanyana sıraladığımız aralarında 10px’lik
 mesafelerin olduğu biz eğer tanımı
 
-	:::css
-	ul li{
-  		margin-right:10px
-  	}
+{% highlight css %}
+ul li{
+	margin-right:10px
+}
+{% endhighlight %}
 
 şeklinde yaparsak listenin son elemanı sonrasınada 10px atayacaktır ve
 bu sorun olacaktır. Biz first-child seçicisini de düşünerek kodumuzu
 şöyle değiştirelim.
 
-	:::css
-	ul li{
-		margin-left:10px
-	}
+{% highlight css %}
+ul li{
+	margin-left:10px
+}
 
-	ul li:first-child{
-		margin-left:0
-	}
+ul li:first-child{
+	margin-left:0
+}
+{% endhighlight %}
 
 
 Evet sağ margin yerine sol margin verdik ama first-child ile
@@ -317,14 +330,15 @@ Ancak artık js kullanmadan açılır menüler yapabileceğiz. Tabi sadece
 menü değil tüm html elementlerinde :hover sahte sınıfını
 kullanabileceğiz.
 
-	:::css
-	ul li ul{
-		display:none
-	}
+{% highlight css %}
+ul li ul{
+	display:none
+}
 
-	ul li:hover ul{
-		display:block
-	}
+ul li:hover ul{
+	display:block
+}
+{% endhighlight %}
 
 kodu kısaca bize menü oluşturma imkanı veriyor. liste öğesine bu şekilde
 yapılan tanımlarda alt menüye geçildiğinde ve üzerinde iken üst menüde
@@ -333,14 +347,15 @@ seçili görünecektir ve buda kullanıcı dostu bir görünüm sağlayacaktır.
 Ayrıca diğer alanlarda :hover kullanarak js olmadan gizle-göster yapma
 imkanımız var artık.
 
-	:::css
-	div > p{
-		display:none
-	}
+{% highlight css %}
+div > p{
+	display:none
+}
 
-	div:hover > p{
-		display:block
-	}
+div:hover > p{
+	display:block
+}
+{% endhighlight %}
 
 :hover sahte seçicisinin nimetlerinden yaralanmayı unutmayın. Menülere
 özgürlük. Gizel-Göster CSS
@@ -383,30 +398,32 @@ değerlerini içerir kalan kısmıda içerik alanı değeri olarak belirlenir.�
 
 Bundan dolayı
 
-	:::css
-	#icerik{
-      width:230px;
-      padding:10px;
-      border:5px solid #000; /* Bundan sonraki kısmı ie5win sakla */
-      voice-family: "\"}\"";
-      voice-family:inherit;
-      width:200px;
-  	}
+{% highlight css %}
+#icerik{
+  width:230px;
+  padding:10px;
+  border:5px solid #000; /* Bundan sonraki kısmı ie5win sakla */
+  voice-family: "\"}\"";
+  voice-family:inherit;
+  width:200px;
+}
 
-	html>body #icerik {
-    	width:200px;
-  	}
+html>body #icerik {
+	width:200px;
+}
+{% endhighlight %}
 
 
 şeklinde bir css çözümü veya
 
-	:::css
-	#icerik{
-	  width:200px;
-	  _width:230px;
-	  padding:10px;
-	  border:5px solid #000;
-	}
+{% highlight css %}
+#icerik{
+  width:200px;
+  _width:230px;
+  padding:10px;
+  border:5px solid #000;
+}
+{% endhighlight %}
 
 çözüm üretiyorduk. Yoksa sitemiz ie6’da yamuk görünüyordu. Bloklar aşağı
 kaçıyor hiç istemidiğimiz görüntüler ortaya çıkıyordu. Ama artık çift
@@ -427,11 +444,13 @@ ie6 postion özelliğinin fixed değerini desteklemiyordu. Bizde çözüm için
 ie6 birden fazla sınıf içeren elemanlara bu iki sınıfı kullanarak
 tanımlama yaptığımızda bunu görmüyordu.
 
-	:::html
+{% highlight html %}
 	<div class="liste onemli">...</div>
+{% endhighlight %}
 
-	:::css
-	div.liste.onemli {... }
+{% highlight css %}
+div.liste.onemli {... }
+{% endhighlight %}
 
 Tanımı yaptığımızda ie6 burada .onemli için tanım yapmış gibi
 davranıyordu. Artık daha kolay seçim yapabileceğiz. Ufak ama güzel bir
