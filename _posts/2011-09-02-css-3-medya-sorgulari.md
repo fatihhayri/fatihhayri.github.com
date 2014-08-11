@@ -129,7 +129,7 @@ Sadece bu şartlar geçerli olduğunda uygula anlamınadır.
 @media only screen and  (color) {
 	body {
 		background:blue
-		}
+	}
 }
 {% endhighlight %}
 
@@ -256,7 +256,7 @@ işimize yarar.
 @media screen and (max-device-width: 480px) {
 	body{
 		background: #f00;
-		}
+	}
 }
 {% endhighlight %}
 
@@ -388,6 +388,7 @@ olan sorununuz çözlüyor.
 	<link rel="stylesheet" type="text/css" href="ana.css" media="only screen and (max-width: 480px)" />
 	<!--[if lt IE 9]> <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	<script src="jquery.mediaqueries.js" type="text/javascript"></script> <![endif]-->
+{% endhighlight %}
 
 IE9 öncesi tarayıcılar için böyle bir ekleme yaparak sorunu çözebiliriz.
 
