@@ -56,10 +56,11 @@ köşe, 4 kenar ve 1 adet orta kısım. Köşeler sabit boyutunu korur. Diğer
 bölümler ise sabit, genişleyebilir veya her ikisi tanımlarına göre
 çeşitli durumlar alabilir.
 
-	:::css
-	.test{
-		border-image-slice: 5px 5px 5px 5px;
-	}
+{% highlight css %}
+.test{
+	border-image-slice: 5px 5px 5px 5px;
+}
+{% endhighlight %}
 
 ![][1]
 
@@ -70,17 +71,19 @@ Yüzde değerleri tanımlanırken (%) işareti konulması zorunludur, ancak
 piksel tanımlarında px koymak zorunlu değildir. Yukarıdaki tanım
 aşağıdaki gibi de yapılabilir.
 
-	:::css
-	.test{
-		border-image-slice: 5 5 5 5;
-	}
+{% highlight css %}
+.test{
+	border-image-slice: 5 5 5 5;
+}
+{% endhighlight %}
 
 Tüm değerler eşit ise tek tanım ile de ifade edilebilir.
 
-	:::css
-	.test{
-		border-image-slice: 5;
-	}
+{% highlight css %}
+.test{
+	border-image-slice: 5;
+}
+{% endhighlight %}
 
 Başta belirttiğimiz gibi 9 bölüme ayrılan resmin kenarları ve orta
 kısmına border-image ile işlev atayabiliyoruz. Orta kısım kenarların
@@ -102,36 +105,40 @@ sitelerini ziyaret ediniz.
 border-image-width tanımlı ise CSS2’den aşina olduğumuz border-width
 tanımını ezer.
 
-	:::css
-	.test{
-		border-image-width: 5px 5px 5px 5px
-	}
+{% highlight css %}
+.test{
+	border-image-width: 5px 5px 5px 5px
+}
+{% endhighlight %}
 
 tüm değerler aynı ise tek tanım ile kısaltma yapılabilir
 
-	:::css
-	.test{
-		border-image-width: 5px;
-	}
+{% highlight css %}
+.test{
+	border-image-width: 5px;
+}
+{% endhighlight %}
 
 Genel tanımda ise taksim ile ayrılarak belirtilir.
 
-	:::css
-	.test{
-		border-image: url(“images/test.gif”) 5 / 5px;
-	}
+{% highlight css %}
+.test{
+	border-image: url(“images/test.gif”) 5 / 5px;
+}
+{% endhighlight %}
 
 Bu kısaltmayı Opera henüz desteklememektedir. Bu nedenle bunun yerine
 border-width değerini kullanabiliriz.
 
-	:::css
-	.test{
-		border-image: url(“images/test.gif”) 5 repeat;
-	}
+{% highlight css %}
+.test{
+	border-image: url(“images/test.gif”) 5 repeat;
+}
 
-	.test{
-		border-width:5px;
-	}
+.test{
+	border-width:5px;
+}
+{% endhighlight %}
 
 **border-image-outset**
 border-image dış hat çizgisi kutunun dışına taşan kısmı belirtir. Şu an
@@ -167,46 +174,49 @@ Bu özellikleri tek tek şu an hiç bir tarayıcı desteklememektedir, bundan
 dolayı şimdilik kaydı ile **border-image** kısaltması kullanılmalıdır.
 Yukarıda konu daha iyi anlaşılması için ayrı ayrı gösterilmiştir.
 
-	:::css
-	.test{
-	    width:300px;
-	    height:300px;
-	    border-width: 33px;
-	    -moz-border-image: url(border_image_desen.png) 33 stretch;
-	    -webkit-border-image: url(border_image_desen.png) 33 stretch;
-	    -o-border-image: url(border_image_desen.png) 33 stretch;
-	    border-image: url(border_image_desen.png) 33 stretch;
-	}
+{% highlight css %}
+.test{
+    width:300px;
+    height:300px;
+    border-width: 33px;
+    -moz-border-image: url(border_image_desen.png) 33 stretch;
+    -webkit-border-image: url(border_image_desen.png) 33 stretch;
+    -o-border-image: url(border_image_desen.png) 33 stretch;
+    border-image: url(border_image_desen.png) 33 stretch;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/myzQX/26/embedded/result,css,html"></iframe>
 
 **strech**
 
-	:::css
-	.test{
-	    width:300px;
-	    height:300px;
-	    border-width: 33px;
-	    -moz-border-image: url(border_image_desen.png) 33 repeat;
-	    -webkit-border-image: url(border_image_desen.png) 33 repeat;
-	    -o-border-image: url(border_image_desen.png) 33 repeat;
-	    border-image: url(border_image_desen.png) 33 repeat;
-	}
+{% highlight css %}
+.test{
+    width:300px;
+    height:300px;
+    border-width: 33px;
+    -moz-border-image: url(border_image_desen.png) 33 repeat;
+    -webkit-border-image: url(border_image_desen.png) 33 repeat;
+    -o-border-image: url(border_image_desen.png) 33 repeat;
+    border-image: url(border_image_desen.png) 33 repeat;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/egcdh/2/embedded/result,css,html"></iframe>
 
 **repeat**
 
-	:::css
-	.test{
-	    width:300px;
-	    height:300px;
-	    border-width: 33px;
-	    -moz-border-image: url(border_image_desen.png) 33 round;
-	    -webkit-border-image: url(/border_image_desen.png) 33 round;
-	    -o-border-image: url(border_image_desen.png) 33 round;
-	    border-image: url(border_image_desen.png) 33 round;
-	}
+{% highlight css %}
+.test{
+    width:300px;
+    height:300px;
+    border-width: 33px;
+    -moz-border-image: url(border_image_desen.png) 33 round;
+    -webkit-border-image: url(/border_image_desen.png) 33 round;
+    -o-border-image: url(border_image_desen.png) 33 round;
+    border-image: url(border_image_desen.png) 33 round;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VnJnz/2/embedded/result,css,html"></iframe>
 
@@ -227,14 +237,15 @@ Esneme sadece üst ve alttan olduğu için sadece sağ ve sol değerlerini
 tanımladık. Aynı şekilde genişlikleri(border-width) tanımladık. Ortaya
 esnek bir buton çıktık.
 
-	:::css
-	a.backButton{
-		-webkit-border-image:url(backButton.png) 0 5 0 14 stretch;
-		-moz-border-image:url(backButton.png) 0 5 0 14 stretch;
-		-o-border-image:url(backButton.png) 0 5 0 14 stretch;
-		border-image:url(backButton.png) 0 5 0 14 stretch;
-		border-width:0 5px 0 14px;
-	}
+{% highlight css %}
+a.backButton{
+	-webkit-border-image:url(backButton.png) 0 5 0 14 stretch;
+	-moz-border-image:url(backButton.png) 0 5 0 14 stretch;
+	-o-border-image:url(backButton.png) 0 5 0 14 stretch;
+	border-image:url(backButton.png) 0 5 0 14 stretch;
+	border-width:0 5px 0 14px;
+}
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3SHNk/14/embedded/result,css,html"></iframe>
 
@@ -242,18 +253,20 @@ Yukarıdaki örnekte görüldüğü gibi basit bir kod ile(siz bakmayın
 öneklerin kalabalığına) ensek bir buton elde etmiş oluyoruz.
 Kullandığımız resimde boyut olarak küçük.
 
-**Tarayıcı Destekleme Listesi**
-Firefox3.5+ (-moz- öneki ile ) kısmen
-Chrome2.0+ (-webkit- öneki ile) kısmen
-Safari3.1+ (-webkit- öneki ile) kısmen
-Opera10.5(-o- ön eki ile) kısmen
-İnternet Explorer 9 desteklemiyor 10 belli değil
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+ (-webkit)**|**11+**|**3.5+ (-moz)**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari 3.2+ (-webkit ön eki ile)
-Opera Mini desteklemiyor
-Opera Mobile11.0+ (-o- ön eki ile)
-Android Browser 2.1+ (-webkit- ön eki ile)
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
+
 
 ##Sonuç
 
@@ -310,3 +323,10 @@ uygulanabilirliği var.
   [http://people.opera.com/pepelsbey/experiments/bdi/]: http://people.opera.com/pepelsbey/experiments/bdi/
   [http://michaelhan.net/wordsets/20/]: http://michaelhan.net/wordsets/20/
   [http://www.impressivewebs.com/space-round-css3-background/]: http://www.impressivewebs.com/space-round-css3-background/
+
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

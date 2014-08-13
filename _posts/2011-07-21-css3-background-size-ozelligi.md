@@ -63,22 +63,29 @@ background-size:0 değeri resmin görünmemesini sağlar.
 CSS3 diğer özelliklerinde olduğu gibi background-size özelliğini
 destekleyen farklı tarayıcılar kendi öneklerini kullanmaktadır.
 
-	:::css
-	.deneme {
-		background-image: url(bg-image.png);
-		-moz-background-size: 100% 100%;           /* Firefox 3.6 */
-		-o-background-size: 100% 100%;           /* Opera 9.5 */
-		-webkit-background-size: 100% 100%;           /* Safari 3.0, Chrome */
-		background-size: 100% 100%;           /* w3c, Firefox 4.0, ie9  */
-	}
+{% highlight css %}
+.deneme {
+	background-image: url(bg-image.png);
+	-moz-background-size: 100% 100%;           /* Firefox 3.6 */
+	-o-background-size: 100% 100%;           /* Opera 9.5 */
+	-webkit-background-size: 100% 100%;           /* Safari 3.0, Chrome */
+	background-size: 100% 100%;           /* w3c, Firefox 4.0, ie9  */
+}
+{% endhighlight %}
 
-**Browser Uyumu:**
-Internet Explorer 9+
-Firefox 3.6+(-moz-), 4+(standart)
-Chrome1 (-webkit-),3+(standart)
-Safari3+(-webkit-), 4.1(standart)
-Opera 9.5+(-o-), 10+(standart)
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+ (-webkit)**|**9+**|**3.6+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 <iframe width="100%" height="300" src="http://jsfiddle.net/fatihhayri/TrWy2/8/embedded/result,css,html" frameborder="0"></iframe>
 
@@ -143,3 +150,9 @@ Kalın sağlıcakla
   [http://www.alistapart.com/articles/supersize-that-background-please/]: http://www.alistapart.com/articles/supersize-that-background-please/
   [http://dev.w3.org/csswg/css3-page/img_scale.png]: http://dev.w3.org/csswg/css3-page/img_scale.png
   [100]: /images/background-size_cover_contain.gif
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

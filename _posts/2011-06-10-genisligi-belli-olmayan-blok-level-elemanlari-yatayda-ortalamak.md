@@ -23,57 +23,61 @@ paylaşacağım, siz kendinize uygun olan metodu uygulayabilirsiniz.
 Genelde bu yöntemi anlatırken menü örnekleri üzerinden anlatılmış bende
 geleneği bozmayayım.
 
-	:::html
-	div id="menuKapsulu">
-		<ul>
-		   <li>Elma</li>
-		   <li>Armut</li>
-		   <li>Malta Eriği</li>
-		</ul>
-	</div>
+{% highlight html %}
+div id="menuKapsulu">
+	<ul>
+	   <li>Elma</li>
+	   <li>Armut</li>
+	   <li>Malta Eriği</li>
+	</ul>
+</div>
+{% endhighlight %}
 
 Alışkın olduğumuz bir menü kodu. CSS kodumuzu ekleyelim. İlk olarak
 kapsayıcı eleman tanımlarını yazalım.
 
-	:::css
-	#menuKapsulu{
-	  float:left;
-	  width:100%;
-	  background:#369;
-	  overflow:hidden;
-	  position:relative;
-	}
+{% highlight css %}
+#menuKapsulu{
+  float:left;
+  width:100%;
+  background:#369;
+  overflow:hidden;
+  position:relative;
+}
+{% endhighlight %}
 
 Menü kapsayıcısının sayfayı tam kaplaması için %100 değeri ve float:left
 değeri atandı.
 
-	:::css
-	#menuKapsulu ul{
-	  clear:left;
-	  float:left;
-	  list-style:none;
-	  margin:0;
-	  padding:0;
-	  position:relative;
-	  left:50%;
-	  text-align:center;
-	  background-color:#990000
-	}
+{% highlight css %}
+#menuKapsulu ul{
+  clear:left;
+  float:left;
+  list-style:none;
+  margin:0;
+  padding:0;
+  position:relative;
+  left:50%;
+  text-align:center;
+  background-color:#990000
+}
+{% endhighlight %}
 
 float:left değeri ile içeriği çepeçevre kapsaması sağlanıyor. left:50%
 değeri ile menu ortalanıyor. Ancak bu ortalama içeriğin genişliğini
 içermez.
 
-	:::css
-	#menuKapsulu ul li{
-	  display:block;
-	  float:left;
-	  list-style:none;
-	  margin:0 10px 0 0;
-	  padding:10px 0;
-	  position:relative;
-	  right:50%;
-	}
+{% highlight css %}
+#menuKapsulu ul li{
+  display:block;
+  float:left;
+  list-style:none;
+  margin:0 10px 0 0;
+  padding:10px 0;
+  position:relative;
+  right:50%;
+}
+{% endhighlight %}
 
 
 Buradaki püf noktası; right:50% değeri ile menü genişliğinden dolayı
@@ -105,19 +109,20 @@ tanımını bu sefer genişliği belli olmayan alanlar içinde kullanıyoruz.
 
 HTML kodumuz aynı;
 
-	:::html
-	<div id="menuKapsulu">
-	   <ul>
-	       <li>Elma</li>
-	       <li>Armut</li>
-	       <li>Malta Eriği</li>
+{% highlight html %}
+<div id="menuKapsulu">
+   <ul>
+       <li>Elma</li>
+       <li>Armut</li>
+       <li>Malta Eriği</li>
 
-		</ul>
-	</div>
+	</ul>
+</div>
+{% endhighlight %}
 
 Ortalanacak alana margin:0 auto ve display:table tanımlarını yapıyoruz.
 
-	:::css
+{% highlight css %}
 	 #menuKapsulu ul{ list-style:none; margin-left: auto;
 margin-right: auto; display: table; } #menuKapsulu ul li{ float:left;
 margin:0 10px 0 0; padding:10px 0; }
@@ -127,19 +132,20 @@ Sonuç istediğimiz gibi, ancak bir sorunumuz varki oda display:table
 olacak derseniz bu bir hasLayout sorunu ve çözüm için zoom:1 tanımı
 kullanmamız gerekiyor.
 
-	:::css
-	#menuKapsulu ul{
-	 list-style:none;
-	 margin-left: auto;
-	 margin-right: auto;
-	 display: table;
-	}
+{% highlight css %}
+#menuKapsulu ul{
+ list-style:none;
+ margin-left: auto;
+ margin-right: auto;
+ display: table;
+}
 
-	#menuKapsulu ul li{
-	 float:left;
-	 margin:0 10px 0 0;
-	 padding:10px 0;
-	}
+#menuKapsulu ul li{
+ float:left;
+ margin:0 10px 0 0;
+ padding:10px 0;
+}
+{% endhighlight %}
 
 Kapsayıcı kapsüle text-align:center tanımı yapıyoruz sonra listemize
 display:inline yapıyoruz. text-align:center inline elemanları ortalıyor

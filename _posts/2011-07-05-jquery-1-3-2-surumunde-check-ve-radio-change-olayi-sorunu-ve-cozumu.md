@@ -18,10 +18,11 @@ meydana gelmesi.
 
 Çözüm için yapmamız gerekn çok basit
 
-	:::javascript
-	$("#fatih").click(function() {
-		this.blur();
-	});
+{% highlight javascript %}
+$("#fatih").click(function() {
+	this.blur();
+});
+{% endhighlight %}
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/zEBUg/embedded/"></iframe>
 

@@ -13,18 +13,26 @@ birçok yenilikte olduğu gibi bu özellikte basit bir şekilde
 sayfalarımıza güzel etkiler kazandırır. :target sözde sınıfı :hover
 seçicisi gibi dinamik bir seçicidir.
 
-	:::css
-	h3:target {
-		background-color: #ff0
-	}
+{% highlight css %}
+h3:target {
+	background-color: #ff0
+}
+{% endhighlight %}
 
-**Browser Uyumu:**
-Internet Explorer 9+ ;
-Firefox 1+ ;
-Safari 3.1+ ;
-Opera 9.5+;
-Chrome 2+
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**9+**|**1.0+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+**|**3.2+**|**36+**|
+{: .tarayici-uyumi}
+
 
 Sayfa içi bağlantıları nasıl yaptığımı hatırlayalım.
 
@@ -56,10 +64,11 @@ belirginleştirilmiştir.
 
 ![][3]
 
-	:::css
-	ol.references > li:target {
-		background-color:#def;
-	}
+{% highlight css %}
+ol.references > li:target {
+	background-color:#def;
+}
+{% endhighlight %}
 
 Bunun dışında eğlenceli örnekler geliştirilmiştir.
 
@@ -69,10 +78,11 @@ Bunun dışında eğlenceli örnekler geliştirilmiştir.
 
 ![][4]
 
-	:::css
-	#faq > li:target > div{
-		display:block;
-	}
+{% highlight css %}
+#faq > li:target > div{
+	display:block;
+}
+{% endhighlight %}
 
 örnekte gizle-göster ile basit bir akordeon içerik yapısı
 oluşturulabilir.
@@ -83,16 +93,17 @@ oluşturulabilir.
 
 ![][5]
 
-	:::css
-	dt:target+dd{
-	    display:block;
-	}
-	    dt:target img{
-	    cursor:default;
-	    border-bottom:5px solid #000;
-	    border-top:5px solid #000;
-	    margin-top:401px;
-	}
+{% highlight css %}
+dt:target+dd{
+    display:block;
+}
+    dt:target img{
+    cursor:default;
+    border-bottom:5px solid #000;
+    border-top:5px solid #000;
+    margin-top:401px;
+}
+{% endhighlight %}
 
 Örneğinde ise basit bir galeri yapısı kurulabilir.
 
@@ -129,3 +140,10 @@ Zamanla çok daha güzel örneklerin çıkacağını düşünüyorum.
   [http://webdesignernotebook.com/css/the-css3-target-pseudo-class-and-css-animations/]: http://webdesignernotebook.com/css/the-css3-target-pseudo-class-and-css-animations/
   [http://kaioa.com/node/93]: http://kaioa.com/node/93
   [http://reference.sitepoint.com/css/pseudoclass-target]: http://reference.sitepoint.com/css/pseudoclass-target
+
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

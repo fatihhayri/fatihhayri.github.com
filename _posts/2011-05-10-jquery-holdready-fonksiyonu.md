@@ -21,11 +21,12 @@ gibi durumlarda araya girip bu dosyaları yükletmemiz gerekir ve sonra
 işleyişi devam ettirmemiz gerekir. İşte bu gibi durumlarda holdReady
 fonksiyonu kullanılabilir.
 
-	:::javascript
-	$.holdReady(true); // biraz bekle
-	$.getScript("myplugin.js", function() { // dosyayi yukledik
-	     $.holdReady(false); // simdi sen isine donebilirsin
-	});
+{% highlight javascript %}
+$.holdReady(true); // biraz bekle
+$.getScript("myplugin.js", function() { // dosyayi yukledik
+     $.holdReady(false); // simdi sen isine donebilirsin
+});
+{% endhighlight %}
 
 Bu metot <head\> içinde document.ready olayından önce çağrılmalıdır.
 Eğer sonrasında çağrılırsa işlevsiz kalır. En iyi kullanım yeri jquery
@@ -33,38 +34,40 @@ kütüphanesi eklendikten sonrasıdır.
 
 Küçük bir örnek yapalım;
 
-	:::html
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Başlıksız Belge</title>
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.min.js"></script>
-	<script>
-	$.holdReady(true); // durdur
-	$.getScript("deneme.js", function() { // yukle
-		$("p").css("background-color", "#f00");
-	     $.holdReady(false); // devam et
-	});
+{% highlight html %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Başlıksız Belge</title>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.min.js"></script>
+<script>
+$.holdReady(true); // durdur
+$.getScript("deneme.js", function() { // yukle
+	$("p").css("background-color", "#f00");
+     $.holdReady(false); // devam et
+});
 
-	$(document).ready(function(e) {
-	    $("p").css("background-color", "#9C6");
-		alert("iki");
-	});
-	</script>
-	</head>
+$(document).ready(function(e) {
+    $("p").css("background-color", "#9C6");
+	alert("iki");
+});
+</script>
+</head>
 
-	<body>
-	<p>Deneme.</p>
-	</body>
-	</html>
+<body>
+<p>Deneme.</p>
+</body>
+</html>
+{% endhighlight %}
 
 Eklediğimiz deneme.js
 
-	:::javascript
-	// ilk yüklenecek dosya
-	$("p").css("background-color", "#ff0");
-	alert("bir");
+{% highlight javascript %}
+// ilk yüklenecek dosya
+$("p").css("background-color", "#ff0");
+alert("bir");
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 

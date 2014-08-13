@@ -89,13 +89,15 @@ satırlarını kullanıyoruz.
 **git status:** Bulunduğumuz durumu gösteren koddur. Yapılan
 değişiklikleri, eklemeler ve silinen dosyaları gösterir.
 
-	:::php
-	$git status
+{% highlight bash %}
+$git status
+{% endhighlight %}
 
 **git branch:**Oluşturulan dallanmaları(brach) görmek için
 
-	:::php
-	$git branch
+{% highlight bash %}
+$git branch
+{% endhighlight %}
 
 **git-create-branch:** Bu kod sadece bizim şirkete özel bir kod,
 (kendime notlar) :D Yeni bir dallanma(branch) oluşturmak için. -x
@@ -104,51 +106,60 @@ kullanılan iki kategori var düzeltme(fix) ve özellik(feature).
 Düzeltme(fix) için -x ; Özellik(feature) için -e kısa yollarını
 kullanıyoruz.
 
-	:::php
-	$git-create-branch -x dallanma_ismi
+{% highlight bash %}
+$git-create-branch -x dallanma_ismi
+{% endhighlight %}
 
 **git pull:**master’dan güncel hali almak için
 
-	:::php
-	$git pull
+{% highlight bash %}
+$git pull
+{% endhighlight %}
 
 **git add:**Depoya bir dosya eklemek için
 
-	:::php
-	$git add dosya_yolu/dosya_adi
+{% highlight bash %}
+$git add dosya_yolu/dosya_adi
+{% endhighlight %}
 
 Birden fazla dosya eklemek için arada boşluk bırakarak ekleme
 yapılabiliyor.
 
-	:::php
-	$git add dosya_yolu/dosya_adi dosya_yolu/dosya_adi dosya_yolu/dosya_adi
+{% highlight bash %}
+$git add dosya_yolu/dosya_adi dosya_yolu/dosya_adi dosya_yolu/dosya_adi
+{% endhighlight %}
 
 **git commit:** Değişiklikleri yaptıktan sonra yorum ekliyoruz. -am
 kısaltması all ve message baş harflerini ifade eder.
 
-	:::php
-	$git commit -am "yorum_yaz"
+{% highlight bash %}
+$git commit -am "yorum_yaz"
+{% endhighlight %}
 
 **git push:** Yorumu yazdıktan sonra dosyaları gönderiyoruz
 
-	:::php
-	$git push
+{% highlight bash %}
+$git push
+{% endhighlight %}
 
 **git checkout:** Dallanma(Branch) değiştirmek için
 
-	:::php
-	$git checkout branch_ismi
+{% highlight bash %}
+$git checkout branch_ismi
+{% endhighlight %}
 
 ilk defa geçilen bir branch ise
 
-	:::php
-	$git checkout origin/feature/branch_ismi --track
+{% highlight bash %}
+$git checkout origin/feature/branch_ismi --track
+{% endhighlight %}
 
 **git grep:** Mevcut branch içinde bir kelime veya ifadeleri bulamak
 için
 
-	:::php
-	$git grep "aranacak_kelime"
+{% highlight bash %}
+$git grep "aranacak_kelime"
+{% endhighlight %}
 
 komutunu kullanıyoruz.
 
@@ -156,28 +167,30 @@ komutunu kullanıyoruz.
 şeyler yaptı ise çakışma(conflict) oluyor, düzeltmek için
 birleştirme(merge) işlemini yapıyoruz.
 
-	:::php
+{% highlight bash %}
 	$git merge master
 
 veya
 
-	:::php
-	$git merge origin
+{% highlight bash %}
+$git merge origin
+{% endhighlight %}
 
 yapıp değişiklikleri görebiliyoruz. Bu komutu yazdıktan sonra çakışmanın
 olduğu dosyayı açıyoruz.
 
-	:::php
-	# MASTER / ORIGIN
+{% highlight bash %}
+# MASTER / ORIGIN
 
-	git merge master
-	git merge origin
+git merge master
+git merge origin
 
-	# <<<<< HEAD
-	@MASTER
-	======================
-	@REVISION-2
-	>>>>>>>>>>>>
+# <<<<< HEAD
+@MASTER
+======================
+@REVISION-2
+>>>>>>>>>>>>
+{% endhighlight %}
 
 Şeklinde bir işaretlerle karşılaşırız. Burada hangi alan doğru ise onu
 bırakıp diğer alanı silerek dosyayı kaydediyoruz ve dosyanın son hali o
@@ -185,8 +198,9 @@ oluyor.
 
 **git help:** son olarak bir komut hakkında yardım almak için
 
-	:::php
-	$git help komut_adi
+{% highlight bash %}
+$git help komut_adi
+{% endhighlight %}
 
 ile komut hakkında bilgi alabiliyoruz.
 
