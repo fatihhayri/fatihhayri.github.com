@@ -168,7 +168,8 @@ komutunu kullanıyoruz.
 birleştirme(merge) işlemini yapıyoruz.
 
 {% highlight bash %}
-	$git merge master
+$git merge master
+{% highlight bash %}
 
 veya
 
