@@ -169,7 +169,7 @@ birleştirme(merge) işlemini yapıyoruz.
 
 {% highlight bash %}
 $git merge master
-{% highlight bash %}
+{% endhighlight %}
 
 veya
 

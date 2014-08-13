@@ -123,9 +123,19 @@ HTML kodumuz aynı;
 Ortalanacak alana margin:0 auto ve display:table tanımlarını yapıyoruz.
 
 {% highlight css %}
-	 #menuKapsulu ul{ list-style:none; margin-left: auto;
-margin-right: auto; display: table; } #menuKapsulu ul li{ float:left;
-margin:0 10px 0 0; padding:10px 0; }
+#menuKapsulu ul{ 
+  list-style:none; 
+  margin-left: auto;
+  margin-right: auto; 
+  display: table; 
+} 
+
+#menuKapsulu ul li{ 
+  float:left;
+  margin:0 10px 0 0; 
+  padding:10px 0; 
+}
+{% endhighlight %}
 
 Sonuç istediğimiz gibi, ancak bir sorunumuz varki oda display:table
 özelliğini İnternet Explorer 6 ve 7. sürümleri desteklemiyor. Peki, ne

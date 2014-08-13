@@ -334,7 +334,8 @@ Bu terimleri uygulayarak daha iyi öğreneceğimizi düşünüyorum.
 En basit radyal renk geçişi
 
 {% highlight css %}
-	radial-gradient(circle farthest-side, #ff9900, #ff0000)
+radial-gradient(circle farthest-side, #ff9900, #ff0000)
+{% endhighlight %}
 
 ![][3]
 
