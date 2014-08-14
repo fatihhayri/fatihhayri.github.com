@@ -37,136 +37,143 @@ Sadede gelelim ve biz kendi hiyerarşik yerimimizi yapalım.
 
 HTML kodu;
 
-	:::html
-	<ul id="yerimi" class="kapsul">
-	    <li><a href="#">Ana Sayfa</a></li>
-	    <li><a href="#">Birinci alt Menü</a></li>
-	    <li><a href="#">İkinci alt Menü</a></li>
-	    <li><a href="#">Üçüncü alt menü</a></li>
-	    <li>Bulunduğumuz sayfa</li>
-	</ul>
+{% highlight html %}
+<ul id="yerimi" class="kapsul">
+    <li><a href="#">Ana Sayfa</a></li>
+    <li><a href="#">Birinci alt Menü</a></li>
+    <li><a href="#">İkinci alt Menü</a></li>
+    <li><a href="#">Üçüncü alt menü</a></li>
+    <li>Bulunduğumuz sayfa</li>
+</ul>
+{% endhighlight %}
 
 Gelelim CSS kodumuza, liste başlangıç değerlerini sıfırlayalım.
 Listelerin başındaki sabit yuvarlak ikonları kaldırıp, etrafındaki
 boşlukları kaldıralım.
 
-	:::css
-	ul#yerimi,
-	ul#yerimi li{
-		list-style:none;
-		margin:0;
-		padding:0;
-	}
+{% highlight css %}
+ul#yerimi,
+ul#yerimi li{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+{% endhighlight %}
 
 
 Listeyi yatay yapmak için float:left tanımı yapıyoruz. İnternet Explorer
 6 için bağlantıya da float:left atamamız gerekecek.
 
-	:::css
-	ul#yerimi li {
-		float:left;
-		font:12px Arial, Helvetica, sans-serif;
-		line-height:30px;
-		padding-left:15px;
-		font-weight:bold
-	}
+{% highlight css %}
+ul#yerimi li {
+	float:left;
+	font:12px Arial, Helvetica, sans-serif;
+	line-height:30px;
+	padding-left:15px;
+	font-weight:bold
+}
+{% endhighlight %}
 
 
 Bağlantılara şeklini verelim ve görselliğini düzenleyelim.
 
-	:::css
-	ul#yerimi li a {
-		display:block;
-		float:left;
-		color:#0086C0;
-		text-decoration:none;
-		height:30px;
-		font-weight:normal
-	}
+{% highlight css %}
+ul#yerimi li a {
+	display:block;
+	float:left;
+	color:#0086C0;
+	text-decoration:none;
+	height:30px;
+	font-weight:normal
+}
 
-	ul#yerimi li a:hover {
-		text-decoration:underline
-	}
+ul#yerimi li a:hover {
+	text-decoration:underline
+}
+{% endhighlight %}
 
 Her kademe arasına ayraç koyalım. Burada şöyle bir ipucu var ki, oda
 bulunduğumuz sayfaya link koymuyoruz ve bu sayede araya koyacağımız
 ayraçları sadece linklere vererek kolayca çözüm sağlıyoruz.
 
-	:::css
-	ul#yerimi li a {
-		display:block;
-		float:left;
-		color:#0086C0;
-		text-decoration:none;
-		background:url(bc_separator.png) top right no-repeat;
-		height:30px;
-		padding-right:15px;
-		font-weight:normal
-	}
+{% highlight css %}
+ul#yerimi li a {
+	display:block;
+	float:left;
+	color:#0086C0;
+	text-decoration:none;
+	background:url(bc_separator.png) top right no-repeat;
+	height:30px;
+	padding-right:15px;
+	font-weight:normal
+}
+{% endhighlight %}
 
 Son olarakta tüm alana bir ardalan resmi koyup birde kenar çizgisi
 ekleyelim.
 
-	:::css
-	ul#yerimi {
-		border:1px solid #cacaca;
-		background:url(bc_bg.png) 0 0 repeat-x
-	}
+{% highlight css %}
+ul#yerimi {
+	border:1px solid #cacaca;
+	background:url(bc_bg.png) 0 0 repeat-x
+}
+{% endhighlight %}
 
 Bu eklemeyide yapınca [Float Uygulanmış Elementleri Tam Kapsayamama (clearfix) sorunu][] ile karşılaşırız. Çözüm linkteki gibidir. sonuç
 olarak CSS kodumuz;
 
-	:::css
-	.kapsul:after {
-		content: ".";
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;
-	}
+{% highlight css %}
+.kapsul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
 
-	.kapsul {
-		display: inline-block;
-	} /*IE-mac de bu bolumu sakla
+.kapsul {
+	display: inline-block;
+} /*IE-mac de bu bolumu sakla
 
-	*/ * html
-	.kapsul { height: 1%; }
-	.kapsul { display: block; } /* IE-mac bu bolumu saklam artik */
+*/ * html
+.kapsul { height: 1%; }
+.kapsul { display: block; } /* IE-mac bu bolumu saklam artik */
 
-	ul#yerimi {
-		border:1px solid #cacaca;
-		background:url(bc_bg.png) 0 0 repeat-x
-	}
+ul#yerimi {
+	border:1px solid #cacaca;
+	background:url(bc_bg.png) 0 0 repeat-x
+}
 
-	ul#yerimi,
-	ul#yerimi li {
-		list-style:none;
-		margin:0;
-		padding:0;
-	}
+ul#yerimi,
+ul#yerimi li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
 
-	ul#yerimi li {
-		float:left;
-		font:12px Arial, Helvetica, sans-serif;
-		line-height:30px;
-		padding-left:15px;
-		font-weight:bold
-	}
+ul#yerimi li {
+	float:left;
+	font:12px Arial, Helvetica, sans-serif;
+	line-height:30px;
+	padding-left:15px;
+	font-weight:bold
+}
 
-	ul#yerimi li a{
-		display:block;
-		float:left;
-		color:#0086C0;
-		text-decoration:none;
-		background:url(bc_separator.png) top right no-repeat;
-		height:30px;
-		padding-right:15px;
-		font-weight:normal
-	}
+ul#yerimi li a{
+	display:block;
+	float:left;
+	color:#0086C0;
+	text-decoration:none;
+	background:url(bc_separator.png) top right no-repeat;
+	height:30px;
+	padding-right:15px;
+	font-weight:normal
+}
 
-	ul#yerimi li a:hover {
-		text-decoration:underline
-	}
+ul#yerimi li a:hover {
+	text-decoration:underline
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 

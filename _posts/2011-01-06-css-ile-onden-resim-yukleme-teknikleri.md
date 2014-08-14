@@ -26,32 +26,36 @@ ardalan resmini tanımlarız ve konumunuda sayfa dışına vererek(-9999px)
 görünmez yaparız. Böylelikle resim yüklenmiş olur ve sonradan yüklenen
 alanlar açıldığında görüntü problemi yaşamamış oluruz.
 
-	:::html
-	 <div class="resimYukle"></div>
+{% highlight html %}
+<div class="resimYukle"></div>
+{% endhighlight %}
 
 CSS kodumuzda
 
-	:::css
-	.resimYukle{
-		background:url(/images/bg.gif) -9999px -9999px no-repeat
-	}
+{% highlight css %}
+.resimYukle{
+	background:url(/images/bg.gif) -9999px -9999px no-repeat
+}
+{% endhighlight %}
 
 Bu durum için fazladan bir div açıp onun ardalanına bu resmi
 atayabiliridk ama eğer sayfa içinde ardalan tanımı olmayan bir eleman
 varsa bunu tanımlayarak fazladan bir divden kurtulmuş oluruz. Bir not bu
 kodu css kodumuzun sonuna eklememiz daha mantıklıdır.
 
-	:::css
-	.baskaBirEleman{
-		background:url(/images/bg.gif) -9999px -9999px no-repeat
-	}
+{% highlight css %}
+.baskaBirEleman{
+	background:url(/images/bg.gif) -9999px -9999px no-repeat
+}
+{% endhighlight %}
 
 Benzer bir kodu :after seçicisi ve content özelliği ile de yapabiliriz.
 
-	:::css
-	body:after {
-		content: url(img01.png) url(img02.png) url(img03.png) url(img04.png) url(img05.png)
-	}
+{% highlight css %}
+body:after {
+	content: url(img01.png) url(img02.png) url(img03.png) url(img04.png) url(img05.png)
+}
+{% endhighlight %}
 
 Bu kodu ie7 ve ie6 desteklemiyor maalesef.
 

@@ -23,27 +23,29 @@ gelelim ve hemen bir örnek yapalım.
 
 HTML kodu;
 
-	:::html
-	 <h1>
-		<span>Ged tortor odio</span>
-	</h1>
+{% highlight html %}
+ <h1>
+	<span>Ged tortor odio</span>
+</h1>
+{% endhighlight %}
 
 CSS kodu;
 
-	:::css
-	h1{
-		border-bottom:3px solid #9faf41;
-	}
+{% highlight css %}
+h1{
+	border-bottom:3px solid #9faf41;
+}
 
-	h1 span{
-		float:left;
-		padding:0 10px;
-		background-color:#111;
-		margin-left:10px;
-		margin-top:-15px;
-		display:block;
-		font-size:24px
-	}
+h1 span{
+	float:left;
+	padding:0 10px;
+	background-color:#111;
+	margin-left:10px;
+	margin-top:-15px;
+	display:block;
+	font-size:24px
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 

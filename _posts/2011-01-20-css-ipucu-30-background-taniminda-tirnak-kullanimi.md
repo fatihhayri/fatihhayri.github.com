@@ -10,13 +10,15 @@ CSS kodu yazarken background tanımlarında bazı yerlerde tırnaklı tanım
 yapıldığını, bazı yerlerde ise tırnaksız tanım yapıldığını
 görmüşsünüzdür.
 
-	:::css
-	 background("deneme.gif");
+{% highlight css %}
+background("deneme.gif");
+{% endhighlight %}
 
 veya
 
-	:::css
-	 background(deneme.gif);
+{% highlight css %}
+background(deneme.gif);
+{% endhighlight %}
 
 Ben birkaç güne kadar arada bir farkın olmadığını düşünüyordum.(Aslında
 benim gibi özel durumlar hariç bir fark olmadığı hakkındaki düşüncem
@@ -32,14 +34,16 @@ tanımdan sonraki özelliklerin renklendirmesini bozuyor.
 
 ![][100]
 
-	:::css
-	 background(deneme.gif?v={VERSION});
+{% highlight css %}
+background(deneme.gif?v={VERSION});
+{% endhighlight %}
 
 Dün ise eğer bu tanımı tırnak içinde yazarsam Dreamweaver otomatik
 tamamlaması ve kod renklendirmesini bozmadığını gördüm ve sevindim.
 
-	:::css
-	 background("deneme.gif?v={VERSION}");
+{% highlight css %}
+background("deneme.gif?v={VERSION}");
+{% endhighlight %}
 
 ![][1]
 

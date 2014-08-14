@@ -24,40 +24,42 @@ HTML Kodu(Tabloya verilen border ve bordercolor tanımları örneğe
 görsellik kazandırmak için eklenmiştir, sorun ile alakalı kodlar
 değildir.)
 
-	:::html
-	<div id="kapsul">
-	  <table width="100%" cellspacing="0" cellpadding="0" border="1" bordercolor="#0000FF">
-	  <tr>
-	    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </td>
-	    <td>Mauris facilisis elementum ipsum nec semper. </td>
-	    <td>Vestibulum nec turpis at lectus pulvinar consequat nec in lectus. </td>
-	  </tr>
-	  <tr>
-	    <td>Aliquam sit amet est ac est eleifend. </td>
-	    <td>Vivamus imperdiet.</td>
-	    <td>Pellentesque sagittis ultrices laoreet.</td>
-	  </tr>
-	  <tr>
-	    <td>In hac habitasse platea dictumst.</td>
-	    <td>Sed sed leo elit, eu ultricies metus.  </td>
-	    <td>Aenean massa nulla.</td>
-	  </tr>
-	  <tr>
-	    <td>In hac habitasse platea dictumst.</td>
-	    <td>Sed sed leo elit, eu ultricies metus.  </td>
-	    <td>Aenean massa nulla.</td>
-	  </tr>
-	  </table>
-	</div>
+{% highlight html %}
+<div id="kapsul">
+  <table width="100%" cellspacing="0" cellpadding="0" border="1" bordercolor="#0000FF">
+  <tr>
+    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </td>
+    <td>Mauris facilisis elementum ipsum nec semper. </td>
+    <td>Vestibulum nec turpis at lectus pulvinar consequat nec in lectus. </td>
+  </tr>
+  <tr>
+    <td>Aliquam sit amet est ac est eleifend. </td>
+    <td>Vivamus imperdiet.</td>
+    <td>Pellentesque sagittis ultrices laoreet.</td>
+  </tr>
+  <tr>
+    <td>In hac habitasse platea dictumst.</td>
+    <td>Sed sed leo elit, eu ultricies metus.  </td>
+    <td>Aenean massa nulla.</td>
+  </tr>
+  <tr>
+    <td>In hac habitasse platea dictumst.</td>
+    <td>Sed sed leo elit, eu ultricies metus.  </td>
+    <td>Aenean massa nulla.</td>
+  </tr>
+  </table>
+</div>
+{% endhighlight %}
 
 CSS Kodu
 
-	:::css
-	#kapsul{
-		width:40%;
-		height:150px;
-		overflow:auto
-	}
+{% highlight css %}
+#kapsul{
+	width:40%;
+	height:150px;
+	overflow:auto
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -77,54 +79,57 @@ gereken kaydırma çubuğu yatayda da çıkıyor.
 overflow:auto verdiğimiz katmana, hemde yeni oluşturduğumuz katmana
 zoom:1 özelliği atıyoruz.
 
-	:::html
-	<div id="kapsul">
-	  <div id="kapsulIci">
-	    <table width="100%" cellspacing="0" cellpadding="0" border="1" bordercolor="#0000FF">
-	    <tr>
-	    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </td>
-	    <td>Mauris facilisis elementum ipsum nec semper. </td>
-	    <td>Vestibulum nec turpis at lectus pulvinar consequat nec in lectus. </td>
-	    </tr>
-	    <tr>
-	    <td>Aliquam sit amet est ac est eleifend. </td>
-	    <td>Vivamus imperdiet.</td>
-	    <td>Pellentesque sagittis ultrices laoreet.</td>
-	    </tr>
-	    <tr>
-	    <td>In hac habitasse platea dictumst.</td>
-	    <td>Sed sed leo elit, eu ultricies metus.  </td>
-	    <td>Aenean massa nulla.</td>
-	    </tr>
-	    <tr>
-	    <td>In hac habitasse platea dictumst.</td>
-	    <td>Sed sed leo elit, eu ultricies metus.  </td>
-	    <td>Aenean massa nulla.</td>
-	    </tr>
-	    </table>
-	  </div>
-	</div>
+{% highlight html %}
+<div id="kapsul">
+  <div id="kapsulIci">
+    <table width="100%" cellspacing="0" cellpadding="0" border="1" bordercolor="#0000FF">
+    <tr>
+    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </td>
+    <td>Mauris facilisis elementum ipsum nec semper. </td>
+    <td>Vestibulum nec turpis at lectus pulvinar consequat nec in lectus. </td>
+    </tr>
+    <tr>
+    <td>Aliquam sit amet est ac est eleifend. </td>
+    <td>Vivamus imperdiet.</td>
+    <td>Pellentesque sagittis ultrices laoreet.</td>
+    </tr>
+    <tr>
+    <td>In hac habitasse platea dictumst.</td>
+    <td>Sed sed leo elit, eu ultricies metus.  </td>
+    <td>Aenean massa nulla.</td>
+    </tr>
+    <tr>
+    <td>In hac habitasse platea dictumst.</td>
+    <td>Sed sed leo elit, eu ultricies metus.  </td>
+    <td>Aenean massa nulla.</td>
+    </tr>
+    </table>
+  </div>
+</div>
+{% endhighlight %}
 
 CSS kodu
 
-	:::css
-	#kapsul{
-		width:40%;
-		height:150px;
-		zoom:1;
-		overflow:auto;
-	}
+{% highlight css %}
+#kapsul{
+	width:40%;
+	height:150px;
+	zoom:1;
+	overflow:auto;
+}
 
-	#kapsulIci{
-		zoom:1;
-	}
+#kapsulIci{
+	zoom:1;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][1]
 
 Ayrıca yukarıdaki çözüm ie6 bazen sorun çıkarıyor, bu gibi durumlarda
 
-	:::html
-	<!--[if lt IE 7]><style> #kapsulIci { overflow: auto; }</style><![endif]-->
+{% highlight html %}
+<!--[if lt IE 7]><style> #kapsulIci { overflow: auto; }</style><![endif]-->
+{% endhighlight %}
 
 Eklememiz gerekiyor.
 

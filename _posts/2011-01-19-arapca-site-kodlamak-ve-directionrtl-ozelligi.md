@@ -35,29 +35,28 @@ Aldığı değerler
 Yazı akışının soldan sağa doğru değilde sağdan sola doğru olmasını
 css'in bu özelliği ile sağlayabiliyoruz.
 
-	:::css
-	body{
-		direction:rtl
-	}
+{% highlight css %}
+body{
+	direction:rtl
+}
+{% endhighlight %}
 
 body elemanına vererek tüm siteyi sağdan sola doğru akmasını
 sağlayabildiğimiz gibi, sadece bir eleman ve içeriğinide sağdan sola
 doğru akmasını sağlayabiliyoruz.
 
-	:::css
-	div#deneme{
-		direction:rtl
-	}
+{% highlight css %}
+div#deneme{
+	direction:rtl
+}
+{% endhighlight %}
 
-**Browser Uyumu:**
-Internet Explorer 5.5+
-FF 1+
-Chrome2+
-Safari1.3+
-Opera 9.2+
-W3C's CSS Level 2+
-CSS Profile 2.0
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**5.5+**|**1.0+**|
+{: .tarayici-uyumi}
 
 Biz LiveGOfda tüm html'in sağdan sola akmasını sağlayacak şekilde
 kodlamadık. Belli alanlarda sağdan sola akmasını sağladık geri kalan
@@ -125,3 +124,10 @@ sıralamaya çalıştım, umarım sizede lazım olduğunda işinize yarar.
   [http://rtl-this.com/tutorial/rtling-hello-world-webpage]: http://rtl-this.com/tutorial/rtling-hello-world-webpage
   [http://stackoverflow.com/questions/2560966/text-right-to-left-css]: http://stackoverflow.com/questions/2560966/text-right-to-left-css
   [http://reference.sitepoint.com/css/direction]: http://reference.sitepoint.com/css/direction
+
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png
