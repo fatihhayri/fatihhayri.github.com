@@ -6,9 +6,11 @@ Category: css
 tags: css ok
 ---
 
-CSS'in kazanımlarında birisi web'in görselliğini tek başına karşılama hedefi ve bu yönde bize kazandırdığı yöntemler.
+CSS'in web'in görselliğini tek başına karşılama hedefi ve bu yönde bize kazandırdığı yöntemler biz kod yazarlarının elini güçlendiriyor. CSS3 ile bunu daha çok hissetmeye başladık.
 
-CSS 3'ün hayatımıza girmesi ile birlikte daha az resim işleme programı(Photoshop) kullanıyoruz. Bir çok görsel işlevi CSS özellikleri ile yapıyoruz artık. Üçgen okları CSS ile yaparak hız ve esneklik kazanıyoruz. Aslında bu özellik CSS3 ile gelmedi zaten CSS ile yaptığımız kenar çizgisi(border) tanımını kullanarak yapacağız. 
+CSS 3'ün hayatımıza girmesi ile birlikte daha az resim işleme programı(Photoshop) kullanıyoruz. Bir çok görsel işlevi CSS özellikleri ile yapıyoruz artık. 
+
+Üçgen okları CSS ile yaparak hız ve esneklik kazanıyoruz. Aslında bu özellik CSS3 ile gelmedi zaten CSS2.1 ile yaptığımız kenar çizgisi(border) tanımını kullanarak yapacağız. 
 
 Tarayıcılar kenar çigizisi tanımlarını işlerken köşelerini belli bir açı ile kapatıyor. 
 
@@ -16,7 +18,7 @@ Tarayıcılar kenar çigizisi tanımlarını işlerken köşelerini belli bir a�
 
 Yukarıdaki kodlama sonucunda görüldüğü gibi tarayıcılar kenar çizgisi tanımlarını eğer içerik boş ise üçgen bir ok gibi yorumluyor. Bu görselliği kullanarak istediğimiz üçgen oklarımızı elde edebiliriz.
 
-Bir konuşma balonunu hiç resim kullanmadan sadece CSS kullanarak elde edebiliriz.
+Aşağıdaki gibi bir konuşma balonunu hiç resim kullanmadan sadece CSS kullanarak elde edebiliriz.
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/hJBjA?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
@@ -36,11 +38,11 @@ Ara yönlerde ok üretmek de mümkün. Aşağıda sağ üst köşeye tanımlanm�
 
 ## Kenar çizgili(border) oklar üretmek
 
-Web sitemizde bazen okları kenar çizgisi ile kullanmak isteyebiliriz. Sadece CSS ile bunu çözmek mümkün. Yukarıdaki örneklerden birisine kenar çizgisi ekleyerek bu durumu göstermeye çalışalım. Mantık aslında aynı, iki ok oluşturup kenar çizgisi olarak kullanacağımızı oku kenar çigisi genişliği kadar büyük yapmaktan geçiyor yöntem. Konumlandırırken de bu durumu göz önüne almak gerekiyor.
+Web sitemizde bazen okları kenar çizgisi ile kullanmak isteyebiliriz. Sadece CSS ile bunu çözmek mümkün. Yukarıdaki örneklerden birisine kenar çizgisi ekleyerek bu durumu göstermeye çalışalım. Mantık aslında aynı, iki ok oluşturup kenar çizgisi olarak kullanacağımız oku kenar çigisi genişliği kadar büyük yapmaktan geçiyor yöntem. Konumlandırırken de bu durumu göz önüne almak gerekiyor.
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/JhrdC?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
-Yukarıdaki örnekten farklı olarak **:before** ile kenar çizgisini ekledik. Normal okumuzun genişliği **15px** iken buna 1px lik kenar çizgisi eklemek için ikinci oluşturduğumuz okumuzu(kenar çigisi) **16px** üretiyoruz. Siz eğer farklı kenar çigisi boyutu kullanacak iseniz ona göre genişliği belirlemelisiniz. 
+Yukarıdaki örnekten farklı olarak **:before** ile kenar çizgisini ekledik. Normal okumuzun genişliği **15px** iken buna **1px**'lik kenar çizgisi eklemek için ikinci oluşturduğumuz okumuzu(kenar çigisi) **16px** üretiyoruz. Siz eğer farklı kenar çigisi boyutu kullanacak iseniz ona göre genişliği belirlemelisiniz. 
 
 konmulandırma yaparkende **1px**'lik oynamalar yaparak sonuca ulaşıyoruz.
 
@@ -54,7 +56,7 @@ pointer-events: none;
 
 eklemekte yarar var.
 
-2 - Firefox'da yorumlamasında köşelerde grilikler oluşursa
+2 - Firefox yorumlamasında köşelerde grilikler oluşursa
 
 {% highlight css %}
 border-style: inset
@@ -78,7 +80,7 @@ Kullanmanızı öneririm.
 
 ## Sonuç
 
-CSS'in güçlenmesi ile görsel bir çok işimizi kod yazarak halledebilmek bizim için büyük nimet. Bu nimetlerden yararlanmakta fayda var. Bİr elemente bu şartlarda iki ok(:before ve :after ile) ekleme imkanımız olduğu unutulmamalıdır.
+CSS'in güçlenmesi ile görsel bir çok işimizi kod yazarak halledebilmek bizim için büyük nimet. Bu nimetlerden yararlanmakta fayda var. Bir elemente bu şartlarda iki ok(:before ve :after ile) ekleme imkanımız olduğu unutulmamalıdır.
 
 Sadece üçgen ok değil farklı şekillerde elde etmek mümkün bu yöntem ile.
 
