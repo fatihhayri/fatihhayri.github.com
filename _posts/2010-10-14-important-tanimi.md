@@ -24,28 +24,30 @@ Peki, biz sayısal değeri küçük olan tanımın etkin olmasını istersek ne
 yapabiliriz? Bu sorunun cevabı ve bu ihtiyacı karşılayan tanım
 !important tanımıdır. Bir örnekle durumu gösterelim
 
-	:::html
-	<ul class="menu">
-	    <li>Menü 1</li>
-	    <li>Menü 2</li>
-	    <li>Menü 3
-	        <ul>
-	          <li class="deneme">Alt Menü</li>
-	        </ul>
-	    </li>
-	    <li>Menü 4</li>
-	</ul>
+{% highlight html %}
+<ul class="menu">
+    <li>Menü 1</li>
+    <li>Menü 2</li>
+    <li>Menü 3
+        <ul>
+          <li class="deneme">Alt Menü</li>
+        </ul>
+    </li>
+    <li>Menü 4</li>
+</ul>
+{% endhighlight %}
 
 CSS kodumuzda aşağıdaki gibi olsun
 
-	:::css
-	ul.menu li{
-		background-color:#3CF;
-	}
+{% highlight css %}
+ul.menu li{
+	background-color:#3CF;
+}
 
-	li.deneme{
-		background-color:#f00;
-	}
+li.deneme{
+	background-color:#f00;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -67,10 +69,11 @@ bulunmaktadır. Bir tanesi istediğimiz atamanın üste çıkması için seçici
 değerini arttırmak, yani örnek kodumuzda bu li.deneme yerine ul
 li.deneme şeklinde yaparak seçici etkinliğini arttırarak yapmaktır.
 
-	:::css
-	ul.menu li.deneme{
-  		background-color:#F00;
-  	}
+{% highlight css %}
+ul.menu li.deneme{
+	background-color:#F00;
+}
+{% endhighlight %}
 
 
 Örneği görmek için [tıklayınız.][2]
@@ -84,10 +87,11 @@ Diğer bir çözüm ise etkin olmasını istediğimiz tanımın sonuna kardeşim
 bu önemli bunu etkin yap demek, yani sonuna !important eklemek ile
 olur.
 
-	:::css
-	li.deneme{
-	   background-color:#f00 !important;
-	}
+{% highlight css %}
+li.deneme{
+   background-color:#f00 !important;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][3]
 
@@ -117,18 +121,20 @@ acil bir düzeltme gerektiğin genelde lazım oluyor important tanımı. Eğer
 html içinden bir tanım yapıldı ise css ile yaptığımız hiç bir tanım
 satıriçi kodu ezemiyecektir. Tek çare important tanımıdır.
 
-	:::html
-	<ul style="background-color:#3CF">
-		<li class="deneme">Deneme</li>
-	<ul
+{% highlight html %}
+<ul style="background-color:#3CF">
+	<li class="deneme">Deneme</li>
+<ul>
+{% endhighlight %}
 
 Tanımı olsun biz bu elemanı background rengini değiştirmek istersek
 sadece important ile değiştirebiliriz.
 
-	:::css
-	li.deneme{
-	   background-color:#f00 !important;
-	}
+{% highlight css %}
+li.deneme{
+   background-color:#f00 !important;
+}
+{% endhighlight %}
 
 Tanımı li elemanının background rengini kırmızı yapacaktır.
 

@@ -74,14 +74,16 @@ Daha sonra ufak tefek düzeltmeler için html sayfamızı bir html editörü
 ile açarız. <body\> bg rengi olarak beyaz atanmış olarak gelir
 htmlimiz, bizim bg rengimiz gridir bu atamayı yaparız.
 
-	:::html
-	<body bgcolor="#858585" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+{% highlight html %}
+<body bgcolor="#858585" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+{% endhighlight %}
 
 Daha sonra mailing ortalamak için table elementine align=”center”
 eklemesi yaparız.
 
-	:::html
-	<table width="638" height="572" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+{% highlight html %}
+<table width="638" height="572" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+{% endhighlight %}
 
 Daha sonra bir önceki makalemizde önerdiğimiz eklemeleri yaparız.
 Resimlerin alt etiketini doldururuz. Resimlerin bulunduğu yeri tam
@@ -95,16 +97,18 @@ olarak kodlamak için resmi bu tablo hücresine bg resmi olarak
 tanımlarız. Resim tek renk görünsede aslında degradeli bir yapıya sahip
 olduğu için tablo hücresinin bg resmi olarak tanımlıyoruz.
 
-	:::html
-	<td colspan="2" background="images/odul_mailing_04.gif" width="638" height="172"></td>
+{% highlight html %}
+<td colspan="2" background="images/odul_mailing_04.gif" width="638" height="172"></td>
+{% endhighlight %}
 
 Daha sonra metinleri bu hücrenin içine yerleştirip stillerini ve
 biçimlerini tanımlıyoruz.
 
-	:::html
-	<td colspan="2" background="images/odul_mailing_04.gif" width="638" height="172" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#444444; padding-left:15px; padding-right:15px"><p><a href="#" style="color:#95ad62">Phasellus vitae</a> metus at elit commodo sollicitudin. Quisque bibendum risus non urna consequat ut luctus erat pulvinar. <strong>Proin libero eros</strong>, dapibus vel accumsan sed, malesuada eu urna. Integer lorem urna, venenatis sit amet interdum tincidunt, tristique in sem. </p>
-	<p><a href="#"  style="color:#95ad62">Morbi ornare</a> , <strong>nterdum elit, ac sollicitudin enim convallis sit amet. Suspendisse potenti.</strong> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-	<p>Cras porta aliquet viverra. Nulla facilisi. Praesent quam neque, suscipit <a href="#"  style="color:#95ad62">scelerisque</a></p></td>
+{% highlight html %}
+<td colspan="2" background="images/odul_mailing_04.gif" width="638" height="172" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#444444; padding-left:15px; padding-right:15px"><p><a href="#" style="color:#95ad62">Phasellus vitae</a> metus at elit commodo sollicitudin. Quisque bibendum risus non urna consequat ut luctus erat pulvinar. <strong>Proin libero eros</strong>, dapibus vel accumsan sed, malesuada eu urna. Integer lorem urna, venenatis sit amet interdum tincidunt, tristique in sem. </p>
+<p><a href="#"  style="color:#95ad62">Morbi ornare</a> , <strong>nterdum elit, ac sollicitudin enim convallis sit amet. Suspendisse potenti.</strong> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<p>Cras porta aliquet viverra. Nulla facilisi. Praesent quam neque, suscipit <a href="#"  style="color:#95ad62">scelerisque</a></p></td>
+{% endhighlight %}
 
 CSS kodlarımızı satıriçine yazdık, bu nedenle dikkat ediniz bağlantılara
 tanımladığımız rengi her bir bağlantıya tek tek tanımladık. Mailing

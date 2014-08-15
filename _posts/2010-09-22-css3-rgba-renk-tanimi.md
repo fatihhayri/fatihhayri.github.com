@@ -10,8 +10,9 @@ CSS ile renk değeri ataması yapılırken çeşitli yöntemler kullanıyoruz.
 Daha önce [CSS Birimleri][]  makalemizde anlatmıştık. İki tip renk
 tanımı var. Renk isimleri ile tanımlama(İngilizce renk isimleri)
 
-	:::css
-	background-color:red
+{% highlight css %}
+background-color:red
+{% endhighlight %}
 
 tanımı kırmızı renkli bir ardalan elde etmemizi sağlar
 
@@ -19,16 +20,18 @@ RGB(Red-Green-Blue) yani Kırmızı-Yeşil-Mavi renklerin baz alındığı renk
 standardı. Açıkçası ben projelerimde her zaman rgb standardını
 kullanmaktayım.
 
-	:::css
-	background-color:#ff0000
+{% highlight css %}
+background-color:#ff0000
+{% endhighlight %}
 
 Tanımı kırmızı renkte ardalanlar elde etmemizi sağlar. Bu tanımı birde
 kısaltması mevcuttur. Eğer bir birine benzer 2’li elemanlardan oluşan
 bir renk tanımı varsa yukarıdaki gibi benzer değerleri bir kere
 yazarakta aynı sonucu elde edebiliriz.
 
-	:::css
-	background-color:#f00
+{% highlight css %}
+background-color:#f00
+{% endhighlight %}
 
 Yukarıdaki tanımda bize kırmızı rengi verecektir.
 
@@ -55,41 +58,46 @@ değerler bize saydamlık etkisi tanımlamamızı sağlayacaktır.
 
 Normalde css ile renk tanımı yaparken
 
-	:::css
-	 background-color:#1259C7
+{% highlight css %}
+background-color:#1259C7
+{% endhighlight %}
 
 tanımı kullanıyorum. Benzer şekilde
 
-	:::css
-	background-color:rgb(18,89,199)
+{% highlight css %}
+background-color:rgb(18,89,199)
+{% endhighlight %}
 
 Tanımıda bize aynı sonucu verir. RGBA ile dördüncü değer olarak alfa
 saydamlık derecesini ekleriz.
 
-	:::css
-	background-color:rgba(18,89,199,0.4)
+{% highlight css %}
+background-color:rgba(18,89,199,0.4)
+{% endhighlight %}
 
 Şeklinde bir tanım yapıyoruz. 0.4 değeri bize % 40’lık bir saydamlık
 sağlayacaktır.
 
 Durumu daha iyi anlamak için bir örnek yapalım
 
-	:::css
-	p.renk1{ background-color:rgba(18,89,199,0.2); width:70px; height:70px}
-	p.renk2{ background-color:rgba(18,89,199,0.4); width:70px; height:70px}
-	p.renk3{ background-color:rgba(18,89,199,0.6); width:70px; height:70px}
-	p.renk4{ background-color:rgba(18,89,199,0.8); width:70px; height:70px}
-	p.renk5{ background-color:rgba(18,89,199,1); width:70px; height:70px}
+{% highlight css %}
+p.renk1{ background-color:rgba(18,89,199,0.2); width:70px; height:70px}
+p.renk2{ background-color:rgba(18,89,199,0.4); width:70px; height:70px}
+p.renk3{ background-color:rgba(18,89,199,0.6); width:70px; height:70px}
+p.renk4{ background-color:rgba(18,89,199,0.8); width:70px; height:70px}
+p.renk5{ background-color:rgba(18,89,199,1); width:70px; height:70px}
+{% endhighlight %}
 
 
 HTML kodu
 
-	:::html
-	<p class="renk1"></p>
-    <p class="renk2"></p>
-    <p class="renk3"></p>
-    <p class="renk4"></p>
-    <p class="renk5"></p>
+{% highlight html %}
+<p class="renk1"></p>
+<p class="renk2"></p>
+<p class="renk3"></p>
+<p class="renk4"></p>
+<p class="renk5"></p>
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -105,13 +113,14 @@ Farklı kullanım alanları ve birçok avantajı vardır bizim için bu
 tanımın. Örneği Facebook lightbox’ı olarak nitelendirilen bir görüntüyü
 elde etmek çok basit bir hal alıyor bu özelliği kullanarak.
 
-	:::css
-	...
-    border:10px solid rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    ...
+{% highlight css %}
+...
+border:10px solid rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+...
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][2]
 
@@ -134,24 +143,30 @@ olan ie9 hariç hiç bir İnternet Explorer sürümü bu özelliği
 desteklememektedir, ne yazıkki ie8 dahil hiç bir ie sürümü bu özelliği
 desteklemiyor.
 
-**Tarayıcı Uyumu:**
-Internet Explorer desteklemiyor (İE9 destekliyor)
-Firefox 3+
-Safari 3+
-Opera 10+
-W3C’s CSS Level 3+
-CSS Profile 3.0
-{: .tarayiciuyum}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+**|**9+**|**3.0+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+**|**3.2+**|**36+**|
+{: .tarayici-uyumi}
 
 ## İnternet Explorer için Çözüm Önerileri
 
 Çözüm için CSS-Tricks’te bir çözüm önerisi var
 
-	:::css
-	p.renk1{
-      background: rgb(200, 54, 54); /* desteklemeyenler icin */
-      background: rgba(200, 54, 54, 0.5);
-    }
+{% highlight css %}
+p.renk1{
+  background: rgb(200, 54, 54); /* desteklemeyenler icin */
+  background: rgba(200, 54, 54, 0.5);
+}
+{% endhighlight %}
 
 
 Bu çözüm önerisinde desteklemeyen tarayıcılarda katı renk hali
@@ -160,16 +175,17 @@ görüntülenecektir.
 
 Diğer bir yöntem;
 
-	:::html
-	<!--[if IE]>
-      	<style type="text/css">
-    	.color-block {
-    		background:transparent;
-    		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000050,endColorstr=#99000050);
-    		zoom: 1;
-    	}
-    	</style>
-    <![endif]-->
+{% highlight html %}
+<!--[if IE]>
+  	<style type="text/css">
+	.color-block {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000050,endColorstr=#99000050);
+		zoom: 1;
+	}
+	</style>
+<![endif]-->
+{% endhighlight %}
 
 Şeklinde sadece ie için üretilen bir kod ile çözüm sağlanır destekleyen
 tarayıcılar için standart kod kullanılır.
@@ -205,3 +221,9 @@ tarayıcılar için standart kod kullanılır.
   [http://www.css3.info/introduction-opacity-rgba/]: http://www.css3.info/introduction-opacity-rgba/
   [http://dorward.me.uk/www/css/alpha-colour/]: http://dorward.me.uk/www/css/alpha-colour/
   [http://www.robertnyman.com/css3/rgba/rgba.html]: http://www.robertnyman.com/css3/rgba/rgba.html
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

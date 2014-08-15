@@ -18,32 +18,34 @@ bir elemana iki background-image atayamadığımız için iç içe iki eleman
 koyarız. (Sliding Door) esnek yapılar olarak adlandırılan yöntem
 kullandığımızda başımıza geliyor.
 
-	:::css
-	a {
-	    display:block;
-	    float:left;
-	    width:auto; background:url(cancanli_butonlar_ard.gif) 0 0 no-repeat;
-	    text-decoration:none;
-	    font-size:14px;
-	    font-weight:bold
-	}
+{% highlight css %}
+a {
+    display:block;
+    float:left;
+    width:auto; background:url(cancanli_butonlar_ard.gif) 0 0 no-repeat;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold
+}
 
-	a span {
-	    display:block;
-	    float:left; background:url(cancanli_butonlar_ard.gif) right -36px no-repeat;
-	    height:28px;
-	    width:150px;
-	    padding:0 20px;
-	    line-height:28px;
-	    color:#363636
-	}
+a span {
+    display:block;
+    float:left; background:url(cancanli_butonlar_ard.gif) right -36px no-repeat;
+    height:28px;
+    width:150px;
+    padding:0 20px;
+    line-height:28px;
+    color:#363636
+}
+{% endhighlight %}
 
 HTML kodu
 
-	:::html
-	<a href="#">
-		<span>Örnek Buton Metni</span>
-	</a>
+{% highlight html %}
+<a href="#">
+	<span>Örnek Buton Metni</span>
+</a>
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -61,17 +63,18 @@ tarayıcılarda normal olarak el işareti görüntülenecektir.
 
 Çözümü çok basit tabi
 
-	:::css
-	a span {
-	    display:block;
-	    float:left; background:url(cancanli_butonlar_ard.gif) right -36px no-repeat;
-	    height:28px;
-	    width:150px;
-	    padding:0 20px;
-	    line-height:28px;
-	    color:#363636;
-	    cursor:pointer
-	}
+{% highlight css %}
+a span {
+    display:block;
+    float:left; background:url(cancanli_butonlar_ard.gif) right -36px no-repeat;
+    height:28px;
+    width:150px;
+    padding:0 20px;
+    line-height:28px;
+    color:#363636;
+    cursor:pointer
+}
+{% endhighlight %}
 
 cursor:pointer özelliğini eklemek yeterli oluyor.
 

@@ -13,11 +13,12 @@ sürümlerinde böyle bir sorun çıkıyordu.
 Sonra incelediğimde ve araştırdığımda bu sorunun benim kullandığım
 sıfırlama kodundaki bir durumdan kaynaklandığını gördüm.
 
-	:::css
-	textarea, input, select {
-	    font:inherit;
-	    white-space:normal;
-	}
+{% highlight css %}
+textarea, input, select {
+    font:inherit;
+    white-space:normal;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -28,10 +29,11 @@ gerçeğini bu ortadan kaldırmıyor.
 
 Bu durumu halletmenin daha düzgün bir yolu var
 
-	:::css
-	textarea {
-		white-space:pre;
-	}
+{% highlight css %}
+textarea {
+	white-space:pre;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][1]
 
