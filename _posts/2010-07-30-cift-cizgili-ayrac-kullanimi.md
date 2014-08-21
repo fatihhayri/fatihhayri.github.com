@@ -13,59 +13,61 @@ kullanıyorum, ama bazende soldaki öğenin sağ kenar çizgisine bir renk,
 sağdaki öğenin sol kenar çizgisine farklı bir renk atayarak çözüm
 üretmeyi deniyorum.
 
-	:::css
-	.clearfix:after{
-		clear: both;
-		content: ".";
-		display: block;
-		height: 0;
-		visibility: hidden;
-	}
+{% highlight css %}
+.clearfix:after{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
 
-	.clearfix{
-		display: inline-block;
-	}
+.clearfix{
+	display: inline-block;
+}
 
-	* html .clearfix{
-		height: 1%;
-	}
+* html .clearfix{
+	height: 1%;
+}
 
-	.clearfix{
-		display: block;
-	}
+.clearfix{
+	display: block;
+}
 
-	ul{
-		background-color: #008bc6;
-		margin: 0 auto;
-		padding: 10px;
-		width: 450px;
-	}
+ul{
+	background-color: #008bc6;
+	margin: 0 auto;
+	padding: 10px;
+	width: 450px;
+}
 
-	ul li{
-		border-left: 1px solid #05a3e6;
-		border-right: 1px solid #046e9b;
-		float: left;
-		list-style: none;
-	}
+ul li{
+	border-left: 1px solid #05a3e6;
+	border-right: 1px solid #046e9b;
+	float: left;
+	list-style: none;
+}
 
-	ul li a{
-		color: #fff;
-		display: block;
-		font: bold 12px Arial, Helvetica, sans-serif;
-		margin-right: 10px;
-		padding: 0 10px;
-		text-decoration: none;
-	}
+ul li a{
+	color: #fff;
+	display: block;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	margin-right: 10px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+{% endhighlight %}
 
 HTML
 
-	:::html
-	<ul class="clearfix">
-	   <li><a href="">Bak postacı</a></li>
-	    <li><a href="">geliyor</a></li>
-	    <li><a href="">selam veriyor</a></li>
-	    <li><a href="">her kes ona bakıyor</a></li>
-	</ul>
+{% highlight html %}
+<ul class="clearfix">
+   <li><a href="">Bak postacı</a></li>
+    <li><a href="">geliyor</a></li>
+    <li><a href="">selam veriyor</a></li>
+    <li><a href="">her kes ona bakıyor</a></li>
+</ul>
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -73,14 +75,15 @@ HTML
 kaldırmak için bu öğelere sınıf atamalıyız ve bu kenar çizgilerini
 sıfırlamalıyız.
 
-	:::css
-	ul li.ilkOge{
-		border-left:0;
-	}
+{% highlight css %}
+ul li.ilkOge{
+	border-left:0;
+}
 
-	ul li.sonOge{
-		border-right:0;
-	}
+ul li.sonOge{
+	border-right:0;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][1]
 
@@ -88,36 +91,37 @@ sıfırlamalıyız.
 
 Bu uygulamayı dikey menü olarakta yapabiliriz.
 
-	:::css
-	ul{
-		background-color: #008bc6;
-		margin: 0 auto;
-		padding: 10px;
-		width: 200px;
-	}
+{% highlight css %}
+ul{
+	background-color: #008bc6;
+	margin: 0 auto;
+	padding: 10px;
+	width: 200px;
+}
 
-	ul li{
-		border-bottom: 1px solid #05a3e6;
-		border-top: 1px solid #046e9b;
-		list-style: none;
-	}
+ul li{
+	border-bottom: 1px solid #05a3e6;
+	border-top: 1px solid #046e9b;
+	list-style: none;
+}
 
-	ul li.ilkOge{
-		border-top: 0;
-	}
+ul li.ilkOge{
+	border-top: 0;
+}
 
-	ul li.sonOge{
-		border-bottom: 0;
-	}
+ul li.sonOge{
+	border-bottom: 0;
+}
 
-	ul li a{
-		color: #fff;
-		display: block;
-		font: bold 12px Arial, Helvetica, sans-serif;
-		margin-right: 10px;
-		padding: 10px 0;
-		text-decoration: none;
-	}
+ul li a{
+	color: #fff;
+	display: block;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	margin-right: 10px;
+	padding: 10px 0;
+	text-decoration: none;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][2]
 
@@ -131,28 +135,30 @@ Explorer’da çalışmayacaktır.
 
 HTML kodu
 
-	:::html
-	<a href="">
-		+ <span>Çizgili buton</span>
-	</a>
+{% highlight html %}
+<a href="">
+	+ <span>Çizgili buton</span>
+</a>
+{% endhighlight %}
 
 CSS kodu
 
-	:::css
-	a{
-		background-color:#ed145b;
-		padding:5px 10px;
-		color:#fff;
-		text-decoration:none;
-		font-weight:bold;
-		font-size:16px;
-	}
+{% highlight css %}
+a{
+	background-color:#ed145b;
+	padding:5px 10px;
+	color:#fff;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:16px;
+}
 
-	a span{
-		border-left:2px groove rgba(144, 71, 95, 0.55);
-		display:inline-block;
-		padding-left:6px
-	}
+a span{
+	border-left:2px groove rgba(144, 71, 95, 0.55);
+	display:inline-block;
+	padding-left:6px
+}
+{% endhighlight %}
 
 Koda biraz açıklama getirelim. border’a verilen groove özelliği bizim
 istediğimiz etkiyi yapan bir özelliktir. Bu özellik ile eklenen çizgiler

@@ -6,6 +6,8 @@ Category: CSS, Haberler
 tags: box-align, box-direction, box-flex, box-flex-group, box-lines, box-ordinal-group, box-orient, box-pack, css3
 ---
 
+Bu yazı eski bir standarttan bahsetmektedir. Yenisi [Yenilenmiş Flex(Esnek Kutu) Modülü](/yenilenmis-flex-modulu/)
+
 CSS asıl çıkışını kazanmasında sayfa yerleşimini CSS ile ayarlamaya
 başladığımızda yaptı. CSS3 ile birlikte bize daha avantajlı sayfa
 yerleşimi özellikleri sunmayı gaye edinen W3C bizlere işimiz

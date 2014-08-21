@@ -16,10 +16,11 @@ Bu durum için çok kısa bir css kodu işimizi görüyor.
 
 ![][100]
 
-	:::css
-	textarea{
-		resize:none
-	}
+{% highlight css %}
+textarea{
+	resize:none
+}
+{% endhighlight %}
 
 Sadece bu kod ile istediğimizi elde edebiliriz. Tek sakıncası bu kodu sadece webkit tabanlı tarayıcılar desteklediği için sayfamızı w3c CSS kontrolünden geçirdiğimizde hata verecek olmasıdır.
 

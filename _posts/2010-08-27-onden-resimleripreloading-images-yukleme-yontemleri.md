@@ -35,24 +35,26 @@ benim hoşuma gitmiyor.
 
 CSS ile bu işi yapan bir örnek verelim.
 
-	:::css
-	div#preloaded-images {
-	   position: absolute;
-	   overflow: hidden;
-	   left: -9999px;
-	   top: -9999px;
-	   height: 1px;
-	   width: 1px;
-	}
+{% highlight css %}
+div#preloaded-images {
+   position: absolute;
+   overflow: hidden;
+   left: -9999px;
+   top: -9999px;
+   height: 1px;
+   width: 1px;
+}
+{% endhighlight %}
 
 HTML kodu
 
-	:::html
-	<div id="preloaded-images">
-	 <img src="http://deneme.com/image-01.png" width="1" height="1" alt="Image 01" />
-	 <img src="http://deneme.com/image-02.png" width="1" height="1" alt="Image 02" />
-	 <img src="http://deneme.com/image-03.png" width="1" height="1" alt="Image 03" />
-	</div>
+{% highlight html %}
+<div id="preloaded-images">
+ <img src="http://deneme.com/image-01.png" width="1" height="1" alt="Image 01" />
+ <img src="http://deneme.com/image-02.png" width="1" height="1" alt="Image 02" />
+ <img src="http://deneme.com/image-03.png" width="1" height="1" alt="Image 03" />
+</div>
+{% endhighlight %}
 
 Yukarıda görüldüğü gibi html içine eklenen resimler CSS yardımı ile
 kullanıcının göremeyeceği bölgelere itilmiştir. Bu şekilde bir çözüm
@@ -68,49 +70,51 @@ aşağıdaki koddur. Bu kodun diğerlerine göre avantajı yükleme yaptığım�
 sayfanın yüklenmesi bittikten sonra bizim önden yükleme yaptığımız
 resimleri yüklemesidir.
 
-	:::javascript
-	function preloader() {
-	  if (document.images) {
-	    var img1 = new Image();
-	    var img2 = new Image();
-	    var img3 = new Image();
+{% highlight javascript %}
+function preloader() {
+  if (document.images) {
+    var img1 = new Image();
+    var img2 = new Image();
+    var img3 = new Image();
 
-	    img1.src = "http://domain.tld/path/to/image-001.gif";
-	    img2.src = "http://domain.tld/path/to/image-002.gif";
-	    img3.src = "http://domain.tld/path/to/image-003.gif";
-	  }
-	}
-	function addLoadEvent(func) {
-	  var oldonload = window.onload;
-	  if (typeof window.onload != 'function') {
-	    window.onload = func;
-	  } else {
-	    window.onload = function() {
-	    if (oldonload) {
-	      oldonload();
-	    }
-	    func();
-	    }
-	  }
-	}
-	addLoadEvent(preloader);
+    img1.src = "http://domain.tld/path/to/image-001.gif";
+    img2.src = "http://domain.tld/path/to/image-002.gif";
+    img3.src = "http://domain.tld/path/to/image-003.gif";
+  }
+}
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+    if (oldonload) {
+      oldonload();
+    }
+    func();
+    }
+  }
+}
+addLoadEvent(preloader);
+{% endhighlight %}
 
 Yukarıdaki javascript kodu işimizi görecektir.
 
 jQuery ile daha kısa ve basit bir kod ile bu işi yapabiliriz.
 
-	:::javascript
-	// resim onyükleme fonksiyonu
-	 jQuery.preloadImages = function()
-	 {
-	   for(var i = 0; i<arguments.length; i++)
-	   {
-	   jQuery("<img>").attr("src", arguments[i]);
-	   }
-	 };
+{% highlight javascript %}
+// resim onyükleme fonksiyonu
+jQuery.preloadImages = function()
+{
+	for(var i = 0; i<arguments.length; i++)
+{
+	jQuery("<img>").attr("src", arguments[i]);
+}
+};
 
-	// yükleme yap
-	 $.preloadImages("images/dexter.jpg", "images/saydam_ardalan1.gif", "images/ornek_sayfa.jpg");
+// yükleme yap
+$.preloadImages("images/dexter.jpg", "images/saydam_ardalan1.gif", "images/ornek_sayfa.jpg");
+{% endhighlight %}
 
 ![][100]
 
@@ -123,25 +127,26 @@ yüklemeliyiz.
 
 Bunun için kodumuzu aşağıdaki değiştirmeliyiz.
 
-	:::javascript
-	 $(document).ready(function() {
-	 $(window).bind('load', function()
-	 {
+{% highlight javascript %}
+ $(document).ready(function() {
+ $(window).bind('load', function()
+ {
 
-	   // resim onyükleme fonksiyonu
-	   jQuery.preloadImages = function()
-	   {
-	   for(var i = 0; i<arguments.length; i++)
-	   {
-	     jQuery("<img>").attr("src", arguments[i]);
-	   }
-	   };
+   // resim onyükleme fonksiyonu
+   jQuery.preloadImages = function()
+   {
+   for(var i = 0; i<arguments.length; i++)
+   {
+     jQuery("<img>").attr("src", arguments[i]);
+   }
+   };
 
-	   // yükleme yap
-	   $.preloadImages("images/dexter.jpg", "images/saydam_ardalan1.gif", "images/ornek_sayfa.jpg");
+   // yükleme yap
+   $.preloadImages("images/dexter.jpg", "images/saydam_ardalan1.gif", "images/ornek_sayfa.jpg");
 
-	 });
-	});
+ });
+});
+{% endhighlight %}
 
 Eklediğimiz sadece $(window).bind(‘load’ function()) kısmıdır. Burada
 sayfa yüklendikten sonra bu işlemi yap diyoruz.

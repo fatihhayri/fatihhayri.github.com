@@ -244,6 +244,7 @@ Date: 2006-08-05 22:06
     -   [CSS3 Animasyon(Animation)](/css3-animasyonanimation/)
     -   [CSS3 Plan Modülleri](/css3-plan-modulleri/)
     -   [CSS Filtre Efektleri](/css-filtre-efektleri/)
+    -   [Yenilenmiş Flex(Esnek Kutu) Modülü](/yenilenmis-flex-modulu/)
 
 -   CSS Kaynakları
     -   [Web Standards Solutions: The Markup and Style Handbook : Dan Cederholm][]

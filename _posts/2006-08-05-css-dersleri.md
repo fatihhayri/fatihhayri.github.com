@@ -238,7 +238,7 @@ Date: 2006-08-05 22:06
     -   [CSS3 Kenar Resimleri (border-image)][]
     -   [CSS3 Çoklu Kolonlar][]
     -   [CSS3 calc() değeri][]
-    -   [CSS3 Esnek Kutu Yerleşimi(Flexible Box Layout)][]
+    -   [Yenilenmiş Flex(Esnek Kutu) Modülü](/yenilenmis-flex-modulu/)
     -   [CSS3 pointer-events özelliği][]
     -   [CSS3 Dönüştürme Özellikleri(Transforms) ve 2B Dönüştürme][]
     -   [CSS3 Dönüştürme(Transforms) ve 3B Dönüştürme][]
