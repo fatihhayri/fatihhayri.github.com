@@ -21,13 +21,19 @@ tasarımları tercih ediyor. Bu arada şunuda söylemeden geçemeyeceğim bazı
 sitelerde hiç hoş durmuyor yuvarlak kenar, her şeyi yerinde ve göz
 zevkine uygun kullanmak en iyisi.
 
-**Yapısı :** <border-radius\>{1,4} [ / <border-radius\>{1,4}]?\\
-**Aldığı Değerler :** [ <uzunluk> | <yüzde> ] [ <uzunluk\> | <yüzde\> ]? \\
-**Başlangıç değeri:** tanımlama yok\\
-**Uygulanabilen elementler:**tüm elementler ve tabiki tablo elementine
-border-collapse değeri collapse olarak atalı ise uygulanır\\
-**Kalıtsallık:** Yok
-{: .cssozelliktanimi}
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**1.0+**|**9+**|**1.0+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 **Tek değer atanmış ise,** dört köşeyede aynı değer uygulanır.
 **İki değer atanmış ise,** ilk değer sol üst ve sağ alt köşeye; ikinci
@@ -56,10 +62,11 @@ Elips şeklinde sonuçlar elde etmke için (/) ayracı kullanılır.
 
 CSS kodu;
 
-	:::css
-	-webkit-border-radius:  40px 10px;
-	-moz-border-radius:  40px/10px;
-	border-radius:  40px/10px;
+{% highlight css %}
+-webkit-border-radius:  40px 10px;
+-moz-border-radius:  40px/10px;
+border-radius:  40px/10px;
+{% endhighlight %}
 
 **Uygulama**
 
@@ -74,16 +81,17 @@ bu durum düzelir. 
 
 İlk örneğimizi yapalım
 
-	:::css
-	div#kutu {
-	    width: 400px;
-	    padding: 20px;
-	    border-radius: 10px; /* Standart */
-	    -moz-border-radius: 10px; /* Firefox */
-	    -webkit-border-radius: 10px; /* Safari ve Chrome */
-	    background: #F00;
-	    margin-bottom: 10px;
-	}
+{% highlight css %}
+div#kutu {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px; /* Standart */
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari ve Chrome */
+    background: #F00;
+    margin-bottom: 10px;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -91,19 +99,20 @@ bu durum düzelir. 
 
 İkinci örnek
 
-	:::css
-	div#kutu{
-	    width: 400px;
-	    padding: 20px;
-	    border-top-right-radius: 10px;
-	    border-bottom-left-radius: 10px;
-	    -moz-border-radius-topright: 10px;
-	    -moz-border-radius-bottomleft: 10px;
-	    -webkit-border-top-right-radius: 10px;
-	    -webkit-border-bottom-left-radius: 10px;
-	    background: #F00;
-	    white-space:pre
-	 }
+{% highlight css %}
+div#kutu{
+    width: 400px;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    background: #F00;
+    white-space:pre
+ }
+ {% endhighlight %}
 
 Örneği görmek için [tıklayınız.][1]
 
@@ -150,13 +159,14 @@ olmaması. Yazdığımız border-radius değerini alıp desteklemeyen
 tarayıcılara göre kod yazıyor. Script tanımını css kodu içerisinden
 yapıyoruz.
 
-	:::css
-	.curved {
-	    border-radius:10px;
-	    -moz-border-radius:10px;
-	    -webkit-border-radius:10px;
-	    behavior:url(border-radius.htc);
-	}
+{% highlight css %}
+.curved {
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    behavior:url(border-radius.htc);
+}
+{% endhighlight %}
 
 Köşe yumuşatması güzeldir. 4.8 kb'lık dosya boyutu ile çok cazip boyuta
 sahip.
@@ -259,3 +269,10 @@ sitesinde olduğu gibi.)
     "http://doctype.com/having-trouble-styling-cross-browser-buttons-input-submit"
   [http://stackoverflow.com/questions/2687804/emulating-css3-border-radius-and-box-shadow-in-ie7-8]: http://stackoverflow.com/questions/2687804/emulating-css3-border-radius-and-box-shadow-in-ie7-8
     "http://stackoverflow.com/questions/2687804/emulating-css3-border-radius-and-box-shadow-in-ie7-8"
+
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

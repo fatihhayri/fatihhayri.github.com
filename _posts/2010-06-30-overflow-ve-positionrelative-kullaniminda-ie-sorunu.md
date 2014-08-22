@@ -21,28 +21,30 @@ overflow uyguladığım elemanın dışına çıkıyor ve scroll olmuyor.
 
 Şöyle küçük bir örnek durumu daha iyi gösterecektir.
 
-	:::html
-	<div id="icerikAlani">
-	    <p>İlk paragaraf</p>
-	    <p class="relative">position:relative uygulanan kısım</p>
-	</div>
+{% highlight html %}
+<div id="icerikAlani">
+    <p>İlk paragaraf</p>
+    <p class="relative">position:relative uygulanan kısım</p>
+</div>
+{% endhighlight %}
 
 CSS kodu da şöyle
 
-	:::css
-	#icerikAlani{
-	    height:80px;
-	    overflow:auto;
-	    width:200px;
-	    height:80px;
-	    background-color:#ccc
-	}
+{% highlight css %}
+#icerikAlani{
+    height:80px;
+    overflow:auto;
+    width:200px;
+    height:80px;
+    background-color:#ccc
+}
 
-	.relative{
-	    position:relative;
-	    background-color:lightblue;
-	    width:150px;
-	}
+.relative{
+    position:relative;
+    background-color:lightblue;
+    width:150px;
+}
+{% endhighlight %}
 
 
 Sonuca ie 6 ve 7 ile baktığımızda aşağıdaki gibi bir sorun ile

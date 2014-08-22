@@ -3,33 +3,34 @@ layout: post
 title: Float:left ve Text-align:right Atanmş Elemana Metin Yerine Resim Uygulama
 Date: 2010-07-28 22:22
 Category: CSS, XHTML
-tags: float:left, metin yerine resim koymak, text-align:right, text-indent
+tags: float:left metin yerine resim koymak text-align:right text-indent
 ---
 
 Daha önce [Metin Yerine Resim ekleme][] yöntemini anlatmıştım ve bir çok
 yerde örnekler ile göstermiştim. Bu yöntemin uygulandığı eleman içindeki
 metni ekran dışına çıkarmak için text-indent:-9999px değeri atarız.
 
-	:::css
-	h1 {
-		text-indent: -9999px;
-		background:url(selam.gif) no-repeat;
-		width: 62px;
-		height:19px;
-	}
-
+{% highlight css %}
+h1 {
+	text-indent: -9999px;
+	background:url(selam.gif) no-repeat;
+	width: 62px;
+	height:19px;
+}
+{% endhighlight %}
 
 Burada şöyle bir sorunumuz oluyor eğer bu elemana text-align:right
 tanımıda atamış isek. Maalesef metin ekran dışına çıkmıyor.
 
-	:::css
-	h1 {
-		text-indent: -9999px;
-		background:url(selam.gif) no-repeat;
-		width: 62px;
-		height:19px;
-	    text-align:right
-	}
+{% highlight css %}
+h1 {
+	text-indent: -9999px;
+	background:url(selam.gif) no-repeat;
+	width: 62px;
+	height:19px;
+    text-align:right
+}
+{% endhighlight %}
 
 Bu sorunu gidermek için sola dayalı sistemlerde negatif text-indent
 değeri veriyoruz, sağa dayalı sistemlerde de pozitif değer vererek bu
@@ -37,27 +38,28 @@ durumu çözebiliyoruz. Bu çözüm yeni nesil tarayıcılarda sorun
 çıkarmazken İnternet Explore’da scroll çıkarmak kaydı ile sorun
 oluşturuyor.
 
-	:::css
-	h1 {
-		text-indent: 9999px;
-		background:url(selam.gif) no-repeat;
-		width: 62px;
-		height:19px;
-	}
-
+{% highlight css %}
+h1 {
+	text-indent: 9999px;
+	background:url(selam.gif) no-repeat;
+	width: 62px;
+	height:19px;
+}
+{% endhighlight %}
 
 Tüm tarayıcılarda çözüm için ise yapmamız çok kolay bir şey aslında.
 text-align:left tanımı atamak. Metin yerine resim koyma metodu uygulanan
 metinlerin hizalaması sola olmalıdır.
 
-	:::css
-	h1 {
-		text-indent: -999px;
-		background:url(selam.gif) no-repeat;
-		width: 62px;
-		height:19px;
-	    text-align:left
-	}
+{% highlight css %}
+h1 {
+	text-indent: -999px;
+	background:url(selam.gif) no-repeat;
+	width: 62px;
+	height:19px;
+    text-align:left
+}
+{% endhighlight %}
 
 Bu sorun ile genelde metin yerine resim metodu uygulanmış elemanını
 kapsayan bir elemana text-align:right uygulandığında rastlarız.

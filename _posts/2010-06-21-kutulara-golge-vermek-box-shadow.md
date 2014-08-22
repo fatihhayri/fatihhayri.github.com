@@ -26,10 +26,11 @@ box-shadow yapısını inceleyelim.
 
 Temel kullanımı.
 
-	:::css
-	.golgeliKutu {
-		box-shadow: 3px 3px 4px #000;
-	}
+{% highlight css %}
+.golgeliKutu {
+	box-shadow: 3px 3px 4px #000;
+}
+{% endhighlight %}
 
 Değerler metinlere gölge verme(text-shadow) özelliği ile aynı anlamı
 taşır.
@@ -51,12 +52,13 @@ alır.
 Farklı tarayıcılar için ön ek kullanılarak çözüm üretilir. -moz Firefox
 için, -webkit Safari ve Google Chrome için.
 
-	:::css
-	.golgeliKutu {
-		 box-shadow: 3px 3px 4px #000;
-		 -moz-box-shadow: 3px 3px 4px #000;
-		 -webkit-box-shadow: 3px 3px 4px #000;
-	 }
+{% highlight css %}
+.golgeliKutu {
+	 box-shadow: 3px 3px 4px #000;
+	 -moz-box-shadow: 3px 3px 4px #000;
+	 -webkit-box-shadow: 3px 3px 4px #000;
+ }
+ {% endhighlight %}
 
 **Tarayıcı Uyumu:**
 Internet Explorer 9+
@@ -68,24 +70,40 @@ W3C's CSS Level 3+
 CSS Profile 3.0
 {: .tarayiciuyum}
 
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**2.0+**|**9+**|**3.5+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**2.1+ (-webkit)**|**3.2+**|**36+**|
+{: .tarayici-uyumi}
+
 Örnek bir kutu görmek için bir kaç tanım daha ekleyelim.
 
-	:::css
-	.golgeliKutu {
-		box-shadow: 3px 3px 4px #000;
-		-moz-box-shadow: 3px 3px 4px #000;
-		-webkit-box-shadow: 3px 3px 4px #000;
-		width:250px;
-		padding:5px;
-		font:12px Arial, Helvetica, sans-serif;
-		background:#CCC
-	}
+{% highlight css %}
+.golgeliKutu {
+	box-shadow: 3px 3px 4px #000;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	width:250px;
+	padding:5px;
+	font:12px Arial, Helvetica, sans-serif;
+	background:#CCC
+}
+{% endhighlight %}
 
 HTML kodu
 
-	:::html
-	<div class="golgeliKutu"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper commodo fermentum. Proin eu sollicitudin neque. Sed enim tellus, condimentum sed interdum vitae, mattis et nisl. Sed nec nisl est, sagittis lobortis eros. Integer pharetra turpis eu est eleifend faucibus. Phasellus pulvinar massa sagittis nisl posuere at rhoncus velit blandit. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-	</div>
+{% highlight html %}
+<div class="golgeliKutu"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper commodo fermentum. Proin eu sollicitudin neque. Sed enim tellus, condimentum sed interdum vitae, mattis et nisl. Sed nec nisl est, sagittis lobortis eros. Integer pharetra turpis eu est eleifend faucibus. Phasellus pulvinar massa sagittis nisl posuere at rhoncus velit blandit. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+{% endhighlight %}
 
 ![Gölgeli Kutu][]
 
@@ -102,16 +120,17 @@ box-shadow tanımında tek bir gölge tanımı yapılabildiği gibi, birden
 fazla gölge tanımıda yapılabilmektedir. Her bir tanım birbirinden virgül
 ile ayrılır.
 
-	:::css
-	.golgeliKutu {
-	    box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
-	    -moz-box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
-	    -webkit-box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
-	    width:250px;
-	    padding:5px;
-	    font:12px Arial, Helvetica, sans-serif;
-	    background:#CCC
-	}
+{% highlight css %}
+.golgeliKutu {
+    box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
+    -moz-box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
+    -webkit-box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
+    width:250px;
+    padding:5px;
+    font:12px Arial, Helvetica, sans-serif;
+    background:#CCC
+}
+{% endhighlight %}
 
 
 ![Çoklu Gölgeli Kutu][]
@@ -123,15 +142,16 @@ ile ayrılır.
 Kutulara gölge verirken kutu içinede gölge verebiliyoruz. inset eklemesi
 ile kutu içine gölge verme imkanımız var.
 
-	:::css
-	.golgeliKutu {
-	    box-shadow: inset 0 0 0.5em blue;;
-	    -moz-box-shadow: inset 0 0 0.5em blue;
-	    -webkit-box-shadow: inset 0 0 0.5em blue;
-	    width:250px;
-	    padding:5px;
-	    font:12px Arial, Helvetica, sans-serif;
-	}
+{% highlight css %}
+.golgeliKutu {
+    box-shadow: inset 0 0 0.5em blue;;
+    -moz-box-shadow: inset 0 0 0.5em blue;
+    -webkit-box-shadow: inset 0 0 0.5em blue;
+    width:250px;
+    padding:5px;
+    font:12px Arial, Helvetica, sans-serif;
+}
+{% endhighlight %}
 
 ![İçe Gölge][]
 
@@ -150,29 +170,31 @@ keskin gölgeler görürüz. X ve Y değerleri ile açı verebiliriz. Shadow
 filtresi daha gerçekçi çözümler üretir ancak shadow filtresinde de x ve
 y tanımlarını yapmamıza izin vermez.
 
-	:::css
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+{% highlight css %}
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+{% endhighlight %}
 
 İE8 için farklı diğer ie'ler için farklı kodlar yazıyoruz. Bu kodu
 yukarıdaki kod ile birleştirirsek
 
-	:::css
-	.golgeliKutu {
-	    width:250px;
-	    font:12px Arial, Helvetica, sans-serif;
-	    background:#CCC;
-	    padding:5px;
-	    -moz-box-shadow: 3px 3px 4px #000;
-	    -webkit-box-shadow: 3px 3px 4px #000;
-	    box-shadow: 3px 3px 4px #000;
-	    /* For IE 8 */
-	    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
-	    /* For IE 5.5 - 7 */
-	    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
-	}
+{% highlight css %}
+.golgeliKutu {
+    width:250px;
+    font:12px Arial, Helvetica, sans-serif;
+    background:#CCC;
+    padding:5px;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+{% endhighlight %}
 
 ![ie gölgeli kutu][]
 
@@ -223,3 +245,10 @@ kullanılabilir.
   [http://www.elektronotdienst-nuernberg.de/bugs/box-shadow_inset.html]: http://www.elektronotdienst-nuernberg.de/bugs/box-shadow_inset.html
   [http://davidwalsh.name/css-box-shadow]: http://davidwalsh.name/css-box-shadow
   [http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/]: http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/
+
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png

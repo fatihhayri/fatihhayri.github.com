@@ -15,20 +15,22 @@ ie6'da bazense ie6 ve ie7'de oluyor.
 
 Bir örnek verelim
 
-	:::html
-	<ul id="menu">
-	  <li><a href="#">Menu Bir</a></li>
-	  <li><a href="#">Menu İki</a></li>
-	  <li><a href="#">Menu Üç</a></li>
-	  <li><a href="#">Menu Dört</a> </li>
-	</ul>
+{% highlight html %}
+<ul id="menu">
+  <li><a href="#">Menu Bir</a></li>
+  <li><a href="#">Menu İki</a></li>
+  <li><a href="#">Menu Üç</a></li>
+  <li><a href="#">Menu Dört</a> </li>
+</ul>
+{% endhighlight %}
 
 CSS kodumuzda da
 
-	:::css
-	ul#menu li a{
-		display:block
-	}
+{% highlight css %}
+ul#menu li a{
+	display:block
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -57,10 +59,11 @@ biri yapılması durumunda bu sorun düzelecektir.
 
 Biz bir tanesini seçelim.
 
-	:::html
-	* html ul#menu li a {
-		height: 1px;
-	}
+{% highlight html %}
+* html ul#menu li a {
+	height: 1px;
+}
+{% endhighlight %}
 
 
 Örneği görmek için [tıklayınız.][1]

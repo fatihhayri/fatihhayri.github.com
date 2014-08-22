@@ -21,21 +21,23 @@ kaynaklardaki bir örneği vereceğim burada size ben.
 
 HTML kodu
 
-	:::html
-	<div>
-		<a href="#">foo<span>bar</span></a>
-	</div>
+{% highlight html %}
+<div>
+	<a href="#">foo<span>bar</span></a>
+</div>
+{% endhighlight %}
 
 CSS Kodu
 
-	:::css
-	span {
-		display: none;
-	}
+{% highlight css %}
+span {
+	display: none;
+}
 
-	a:hover span {
-		display: inline;
-	}
+a:hover span {
+	display: inline;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -53,19 +55,20 @@ sorunu ie7 çözmüş görünüşe göre.
 **padding-top:0** değeri atayıp sonrada **a:hover span** seçicisinede
 **padding-top:0** değeri atayınca oluyor.
 
-	:::css
-	a:hover{
-		padding-top:0;
-	}
+{% highlight css %}
+a:hover{
+	padding-top:0;
+}
 
-	span {
-		display:none;
-	}
+span {
+	display:none;
+}
 
-	a:hover span {
-		display: inline;
-		padding-top:0;
-	}
+a:hover span {
+	display: inline;
+	padding-top:0;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][1]
 

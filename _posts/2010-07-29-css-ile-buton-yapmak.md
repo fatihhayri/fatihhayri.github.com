@@ -56,22 +56,23 @@ olarak alabiliriz basit butonlara
 
 HTML kodu
 
-	:::html
-	<input type="submit" class="gonder" value="Gönder" />
+{% highlight html %}
+<input type="submit" class="gonder" value="Gönder" />
+{% endhighlight %}
 
 CSS kodu
 
-	:::css
-	input.gonder{
-	    color: #224059;
-	    background-color: #b5c9e2;
-	    border-top: 2px #cce3ff solid;
-	    border-left: 2px #cce3ff solid;
-	    border-bottom: 2px #31557f solid;
-	    border-right: 2px #31557f solid;
-	    font:bold 12px Arial, Helvetica, sans-serif;
-	}
-
+{% highlight css %}
+input.gonder{
+    color: #224059;
+    background-color: #b5c9e2;
+    border-top: 2px #cce3ff solid;
+    border-left: 2px #cce3ff solid;
+    border-bottom: 2px #31557f solid;
+    border-right: 2px #31557f solid;
+    font:bold 12px Arial, Helvetica, sans-serif;
+}
+{% endhighlight %}
 
 ![][1]
 
@@ -92,52 +93,54 @@ efektli görünüm elde ederiz.
 
 HTML Kodu
 
-	:::html
-	 <a class="buton" href="#">
-		<span>3 boyutlu buton</span>
-	</a>
+{% highlight html %}
+ <a class="buton" href="#">
+	<span>3 boyutlu buton</span>
+</a>
+{% endhighlight %}
 
 CSS kodumuzu yukarıdaki belirttiğimiz gib yazalım
 
-	:::css
-	a.buton{
-	    float:left;
-	    font-size:14px;
-	    font-weight:bold;
-	    border-top:1px solid #999;
-	    border-left:1px solid #999;
-	    border-right:1px solid #333;
-	    border-bottom:1px solid #333;
-	    color:#333;
-	    width:auto;
-	    text-decoration:none
-	}
+{% highlight css %}
+a.buton{
+    float:left;
+    font-size:14px;
+    font-weight:bold;
+    border-top:1px solid #999;
+    border-left:1px solid #999;
+    border-right:1px solid #333;
+    border-bottom:1px solid #333;
+    color:#333;
+    width:auto;
+    text-decoration:none
+}
 
-	a.buton:hover{
-	    border-top:1px solid #333;
-	    border-left:1px solid #333;
-	    border-right:1px solid #999;
-	    border-bottom:1px solid #999;
-	    color:#333;
-	}
+a.buton:hover{
+    border-top:1px solid #333;
+    border-left:1px solid #333;
+    border-right:1px solid #999;
+    border-bottom:1px solid #999;
+    color:#333;
+}
 
-	a.buton span{
-	    background:#d4d0c8 url(buton_ard.gif) repeat-x;
-	    float:left;
-	    line-height:24px;
-	    height:24px;
-	    padding:0 10px;
-	    border-right:1px solid #777;
-	    border-bottom:1px solid #777;
-	}
+a.buton span{
+    background:#d4d0c8 url(buton_ard.gif) repeat-x;
+    float:left;
+    line-height:24px;
+    height:24px;
+    padding:0 10px;
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+}
 
-	a.buton:hover span{
-	    border:none;
-	    border-top:1px solid #777;
-	    border-left:1px solid #777;
-	    background:#d4d0c8 url(buton_fare_ard.gif) repeat-x;
-	    cursor:pointer;
-	}
+a.buton:hover span{
+    border:none;
+    border-top:1px solid #777;
+    border-left:1px solid #777;
+    background:#d4d0c8 url(buton_fare_ard.gif) repeat-x;
+    cursor:pointer;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -190,36 +193,72 @@ resmini gösteriyoruz. Kodu yazarsak daha iyi anlayacaksınız.
 
 HTML kodu;
 
-	:::html
-	 <a href="#"><span>Örnek Buton Metni</span></a>
+{% highlight html %}
+<a href="#"><span>Örnek Buton Metni</span></a>
+{% endhighlight %}
 
 CSS Kodu
 
-	:::css
-	a{display:block; float:left; width:auto; background:url(cancanli_butonlar_normal.gif) 0 0 no-repeat; text-decoration:none; font-size:14px; font-weight:bold}
-	    a span{display:block; float:left; cursor:pointer; background:url(cancanli_butonlar_normal.gif) right -36px no-repeat; height:28px; padding:0 20px; line-height:28px; color:#363636}
+{% highlight css %}
+a{
+	display:block; 
+	float:left; 
+	width:auto; 
+	background:url(cancanli_butonlar_normal.gif) 0 0 no-repeat; 
+	text-decoration:none; 
+	font-size:14px; 
+	font-weight:bold
+}
+
+a span{
+	display:block; 
+	float:left; 
+	cursor:pointer; 
+	background:url(cancanli_butonlar_normal.gif) right -36px no-repeat; 
+	height:28px; 
+	padding:0 20px; 
+	line-height:28px; 
+	color:#363636
+}
+{% endhighlight %}
 
 
 a span için eklenen
 
-	:::css
-	float:left; cursor:pointer;
+{% highlight css %}
+float:left; 
+cursor:pointer;
+{% endhighlight %}
 
 özellikleri ie6'daki genişlik sorununu gidermek için eklenmiştir.
 
 Bu örneğe fare üzerine geldiğindeki halinide ekleyelim
 
-	:::css
-	/* fare geldi kac */
-	a:hover{background:url(cancanli_butonlar_ard.gif) 0 -68px no-repeat;}
-	    a:hover span{background:url(cancanli_butonlar_ard.gif) right -100px no-repeat; color:#706e6e}
+{% highlight css %}
+/* fare geldi kac */
+a:hover{
+	background:url(cancanli_butonlar_ard.gif) 0 -68px no-repeat;
+}
+
+a:hover span{
+	background:url(cancanli_butonlar_ard.gif) right -100px no-repeat; 
+	color:#706e6e
+}
+{% endhighlight %}
 
 Son olarakta odaklanma halini ekleyerek bu örneği bitirelim.
 
-	:::css
-	/* buraya odaklan odaklan */
-	a:focus{background:url(cancanli_butonlar_ard.gif) 0 -134px no-repeat;}
-	    a:focus span{background:url(cancanli_butonlar_ard.gif) right -164px no-repeat; color:#363636}
+{% highlight css %}
+/* buraya odaklan odaklan */
+a:focus{
+	background:url(cancanli_butonlar_ard.gif) 0 -134px no-repeat;
+}
+
+a:focus span{
+	background:url(cancanli_butonlar_ard.gif) right -164px no-repeat; 
+	color:#363636
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][7]
 
@@ -233,82 +272,88 @@ janjanlı güzel butonlar geliştirebiliyoruz. Ayrıca bu işi çok kolay bir
 
 HTML kodu
 
-	:::html
-	 <a href="#" class="buton">CSS3 Buton</a>
+{% highlight html %}
+<a href="#" class="buton">CSS3 Buton</a>
+{% endhighlight %}
 
 Evet html kodummuz bu kadar.
 
 CSS Kodlarını yazalım
 
-	:::css
-	a.buton{
-	    background:#2981E4;
-	    padding:5px 10px;
-	    text-decoration:none;
-	    color:#fff;
-	    font:bold 14px Arial, Helvetica, sans-serif;
-	}
+{% highlight css %}
+a.buton{
+    background:#2981E4;
+    padding:5px 10px;
+    text-decoration:none;
+    color:#fff;
+    font:bold 14px Arial, Helvetica, sans-serif;
+}
+{% endhighlight %}
 
 Şimdide CSS3 özellikleri ile bu örneğimizi geliştirelim.
 
 İlk olarak köşeleri yuvarlatıyoruz.
 
-	:::css
-	a.buton{
-	    background:#2981E4;
-	    padding:5px 10px;
-	    text-decoration:none;
-	    color:#fff;
-	    font:bold 14px Arial, Helvetica, sans-serif;
-	    -moz-border-radius: 7px;
-	    -webkit-border-radius: 7px;
-	    border-radius: 7px;
-	}
+{% highlight css %}
+a.buton{
+    background:#2981E4;
+    padding:5px 10px;
+    text-decoration:none;
+    color:#fff;
+    font:bold 14px Arial, Helvetica, sans-serif;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+{% endhighlight %}
 
 Gölge verelim
 
-	:::css
-	a.buton{
-	    background:#2981E4;
-	    padding:5px 10px;
-	    text-decoration:none;
-	    color:#fff;
-	    font:bold 20px Arial, Helvetica, sans-serif;
-	    -moz-border-radius: 7px;
-	    -webkit-border-radius: 7px;
-	    border-radius: 7px;
-	    box-shadow: 3px 3px 4px #000;
-	    -moz-box-shadow: 0 1px 2px #000;
-	    -webkit-box-shadow: 3px 3px 4px #000;
-	}
+{% highlight css %}
+a.buton{
+    background:#2981E4;
+    padding:5px 10px;
+    text-decoration:none;
+    color:#fff;
+    font:bold 20px Arial, Helvetica, sans-serif;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px #000;
+    -moz-box-shadow: 0 1px 2px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+}
+{% endhighlight %}
 
 Metine gölge verelim
 
-	:::css
-	a.buton{
-	    background:#2981E4;
-	    padding:5px 10px;
-	    text-decoration:none;
-	    color:#fff;
-	    font:bold 20px Arial, Helvetica, sans-serif;
-	    -moz-border-radius: 7px;
-	    -webkit-border-radius: 7px;
-	    border-radius: 7px;
-	    box-shadow: 0 1px 2px #000;
-	    -moz-box-shadow: 0 1px 2px #000;
-	    -webkit-box-shadow: 0 1px 2px #000;
-	    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
-	}
+{% highlight css %}
+a.buton{
+    background:#2981E4;
+    padding:5px 10px;
+    text-decoration:none;
+    color:#fff;
+    font:bold 20px Arial, Helvetica, sans-serif;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px #000;
+    -moz-box-shadow: 0 1px 2px #000;
+    -webkit-box-shadow: 0 1px 2px #000;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+}
+{% endhighlight %}
 
 ![][9]
 
 Şimdide fare üzerine geldiğindeki halinide ekleyelim.
 
-	:::css
-	a.buton:hover{
-	    background-color:#006699;
-	    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-	}
+{% highlight css %}
+a.buton:hover{
+    background-color:#006699;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][10]
 
@@ -316,33 +361,34 @@ Metine gölge verelim
 
 Bu sefer CSS3'ün renk geçişi(gradients) özelliğindende yararlanalım.
 
-	:::css
-	a.buton{
-	    background:#d21b00;
-	    background: -moz-linear-gradient(top, #d21b00, #8e0700);
-	    background: -webkit-gradient(linear, left top, left bottom, from(#d21b00), to(#8e0700));
-	    padding:20px 25px;
-	    text-decoration:none;
-	    color:#fff;
-	    font:bold 36px Arial, Helvetica, sans-serif;
-	    -moz-border-radius: 7px;
-	    -webkit-border-radius: 7px;
-	    border-radius: 7px;
-	    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
-	    border:5px solid #fff;
-	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
-	    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
-	    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
-	}
+{% highlight css %}
+a.buton{
+    background:#d21b00;
+    background: -moz-linear-gradient(top, #d21b00, #8e0700);
+    background: -webkit-gradient(linear, left top, left bottom, from(#d21b00), to(#8e0700));
+    padding:20px 25px;
+    text-decoration:none;
+    color:#fff;
+    font:bold 36px Arial, Helvetica, sans-serif;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
+    border:5px solid #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+}
 
-	a.buton:hover{
-	    background: -moz-linear-gradient(top, #8e0700, #d21b00);
-	    background: -webkit-gradient(linear, left top, left bottom, from(#8e0700), to(#d21b00));
-	    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
-	    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75);
-	    -moz-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75);
-	    -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75);
-	}
+a.buton:hover{
+    background: -moz-linear-gradient(top, #8e0700, #d21b00);
+    background: -webkit-gradient(linear, left top, left bottom, from(#8e0700), to(#d21b00));
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75);
+}
+{% endhighlight %}
 
 
 Örneği görmek için [tıklayınız.][11]

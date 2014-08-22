@@ -10,28 +10,31 @@ Daha önce gözüme çarpmamış olmaması ilginç geldi. Belki çarpmıştırda
 es geçmişimdir. Durumu şöyle açıklayayım. Basit bir menü oluşturmak
 istedim.
 
-	:::html
-	<ul>
-	  <li>deneme</li>
-	  <li>olarak</li>
-	  <li>bir örnek </li>
-	</ul>
+{% highlight html %}
+<ul>
+  <li>deneme</li>
+  <li>olarak</li>
+  <li>bir örnek </li>
+</ul>
+{% endhighlight %}
 
 Yatay bir menü olacağı için
 
-	:::css
-	ul li{
-		display:inline;
-	}
+{% highlight css %}
+ul li{
+	display:inline;
+}
+{% endhighlight %}
 
 eklemesini yaptım, daha sonra da padding değerleri ekleyince fark ortaya
 çıktı.
 
-	:::css
-	ul li{
-		padding:0 12px;
-		background-color:#999
-	}
+{% highlight css %}
+ul li{
+	padding:0 12px;
+	background-color:#999
+}
+{% endhighlight %}
 
 İşin aslı İnternet Explorer 6 ve 7’de istediğim gibi olurken yeni nesil
 tarayıcılarda arada fazladan boşluklar atanmış gördüm. margin:0 değeri
@@ -45,16 +48,18 @@ Aradaki boşlukları kaldırmak için bir kaç yöntem var. Yatay menü
 oluşturmak için diğer bir yöntem olan float yöntemini denemek bunlardan
 biri
 
-	:::css
-	ul li{
-		float:left
-	}
+{% highlight css %}
+ul li{
+	float:left
+}
+{% endhighlight %}
 
 Diğer bir çözüm yolu ise aradaki boşlukları kaldırmak.
 
-	:::html
-	<ul>
-		<li>deneme</li><li>olarak</li><li>bir örnek </li>
-	</ul>
+{% highlight html %}
+<ul>
+	<li>deneme</li><li>olarak</li><li>bir örnek </li>
+</ul>
+{% endhighlight %}
 
   [100]: https://lh4.googleusercontent.com/pEfwOl1XzeOmHs7SKQmlHJ4bY4pKA47H_mfon9utneJmtdtYIHjs-DNtAKzVYBZ1ngfV27w1Xty-BLB7bwIi3CyOP5mUsiRznL08IYJHKqK9a762

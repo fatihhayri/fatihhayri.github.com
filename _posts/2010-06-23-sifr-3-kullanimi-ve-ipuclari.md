@@ -49,11 +49,12 @@ görünmeyecektir, sadece web sunucusu kurulu makinelerde çalışacaktır. Bu
 daha önceden meydana gelen bazı sorunları gidermek için eklenmiş bir
 özelliktir.
 
-	:::html
-	<link rel="stylesheet" href="style/sIFR-screen.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="style/sIFR-print.css" type="text/css" media="print" />
-	<script type="text/javascript" src="js/sifr.js"></script>
-	<script type="text/javascript" src="js/sifr-config.js"></script>
+{% highlight html %}
+<link rel="stylesheet" href="style/sIFR-screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="style/sIFR-print.css" type="text/css" media="print" />
+<script type="text/javascript" src="js/sifr.js"></script>
+<script type="text/javascript" src="js/sifr-config.js"></script>
+{% endhighlight %}
 
 Yukarıdaki bir ekleme ile sIFR harici dosyalarını sayfamıza eklemeliyiz.
 
@@ -61,14 +62,15 @@ Bu dosyaları yerlerine koyup sayfamıza kodu ekledikten sonra yapacağımız
 ilk şey **sifr-config.js** dosyasını açıp swf dosyamızın yerini doğru
 bir şekilde eklemek olmalıdır.
 
-	:::javascript
-	var yazi_tipi = {
-	     src: '/dosya_yolu/yazi_tipi.swf'
-	};
-	sIFR.activate(yazi_tipi);
-	sIFR.replace(yazi_tipi, {
-	       selector: 'h2'
-	});
+{% highlight javascript %}
+var yazi_tipi = {
+     src: '/dosya_yolu/yazi_tipi.swf'
+};
+sIFR.activate(yazi_tipi);
+sIFR.replace(yazi_tipi, {
+       selector: 'h2'
+});
+{% endhighlight %}
 
 Şeklinde örnek aldığımız kodlardan **yazi_tipi** adı geçen yerlere
 kendi dosya ismimizi yazmalıyız.
@@ -79,13 +81,14 @@ sIFR ile eklediğimiz metinlere css kodları ile özellik tanımı
 yapabiliriz. Alışık olduğumuz CSS özellik tanımlarını kullanma olanağı
 vererek bize çok büyük avantaj sağlıyor.
 
-	:::javascript
-	sIFR.replace(yazi_tipi, {
-	      selector: 'h2',
-	      css: [
-	      '.sIFR-root { font-size:36px; font-weight:bold; color:#ff0000; letter-spacing: -1.5}'
-	      ]
-	});
+{% highlight javascript %}
+sIFR.replace(yazi_tipi, {
+      selector: 'h2',
+      css: [
+      '.sIFR-root { font-size:36px; font-weight:bold; color:#ff0000; letter-spacing: -1.5}'
+      ]
+});
+{% endhighlight %}
 
 Örnek olması için yukarıda kodları yazdım, ancak bu kısma istediğimiz
 kodları ekleyebiliriz. letter-spacing tanımı ile harfler arası mesafeyi
@@ -94,13 +97,14 @@ ayarlayabiliriz. Değeri verirken birimini yazmıyoruz. Benzer şekilde bir
 
 **Satır yüksekliğini ayarlamak**
 
-	:::javascript
-	sIFR.replace(yazi_tipi, {
-	      selector: 'h2',
-	      css: [
-	      '.sIFR-root { font-size:36px; font-weight:bold; leading: 1; letter-spacing: -1.5}'
-	      ]
-	});
+{% highlight javascript %}
+sIFR.replace(yazi_tipi, {
+      selector: 'h2',
+      css: [
+      '.sIFR-root { font-size:36px; font-weight:bold; leading: 1; letter-spacing: -1.5}'
+      ]
+});
+{% endhighlight %}
 
 **leading: 1** tanımı satır yüksekliğini(line-height tanımı yerine
 kullanılır) ayarlamak için kullanılır. Değer verilirken birim
@@ -113,24 +117,26 @@ eklediğimizde bunun için birde stil tanımı yapmalıyız.
 
 HTML kodu
 
-	:::html
-	<h2>
-		<a href="#">Başlık</a>
-	</h2>
+{% highlight html %}
+<h2>
+	<a href="#">Başlık</a>
+</h2>
+{% endhighlight %}
 
 
 sifr-config.js dosyasında
 
-	:::javascript
-	sIFR.replace(yazi_tipi, {
-	  selector: 'h2'
-	  ,css: [
-	    '.sIFR-root { text-align: center; font-weight: bold; }'
-	    ,'a { text-decoration: none; }'
-	    ,'a:link { color: #000000; }'
-	    ,'a:hover { color: #CCCCCC; }'
-	  ]
-	});
+{% highlight javascript %}
+sIFR.replace(yazi_tipi, {
+  selector: 'h2'
+  ,css: [
+    '.sIFR-root { text-align: center; font-weight: bold; }'
+    ,'a { text-decoration: none; }'
+    ,'a:link { color: #000000; }'
+    ,'a:hover { color: #CCCCCC; }'
+  ]
+});
+{% endhighlight %}
 
 Yukarıdaki tanımlama ile eklediğimiz bağlantının farklı durumları içinde
 tanım yapabiliyoruz. 
@@ -138,15 +144,16 @@ tanım yapabiliyoruz. 
 Benzer şekilde sIFR uyguladığımız eleman içindeki elemanlarada stil
 ekleyebiliriz. Örneğin
 
-	:::javascript
-	sIFR.replace(yazi_tipi, {
-	       selector: 'h2',
-	       css: [
-	       '.sIFR-root { font-size:24px; font-weight:normal; color:#9f0000; }',
-	       'em { font-style:italic; }',
-	       'strong { font-weight:bold; color:#333333; }'
-	       ]
-	});
+{% highlight javascript %}
+sIFR.replace(yazi_tipi, {
+       selector: 'h2',
+       css: [
+       '.sIFR-root { font-size:24px; font-weight:normal; color:#9f0000; }',
+       'em { font-style:italic; }',
+       'strong { font-weight:bold; color:#333333; }'
+       ]
+});
+{% endhighlight %}
 
 Böylece sIFR içindeki her elemana farklı renk tanımı yapabiliriz.
 
@@ -156,14 +163,15 @@ sIFR ile eklediğimiz metnin altında kalan alanlar nedeni ile bazen
 saydam olarak eklemek isteriz.  Yapmamız gereken çok basittir. Bir satır
 kod ile ardalanı saydam yapabiliriz.
 
-	:::javascript
-	sIFR.replace(yazi_tipi, {
-	      selector: 'h2',
-	      css: [
-	      '.sIFR-root { font-size:36px; font-weight:bold; color:#ff0000; }'
-	      ],
-	wmode: 'transparent'
-	});
+{% highlight javascript %}
+sIFR.replace(yazi_tipi, {
+      selector: 'h2',
+      css: [
+      '.sIFR-root { font-size:36px; font-weight:bold; color:#ff0000; }'
+      ],
+wmode: 'transparent'
+});
+{% endhighlight %}
 
 **wmode: 'transparent'**eklemesi işimizi görecektir.
 
@@ -174,21 +182,22 @@ sFIR sayfa yüklendiğinde uygulandığından diğer sekmelerdeki metinlere
 uygulanmayacaktır. Diğer sekmelerdeki metinlerede uygulamak için her
 sekme için uygulanan sFIR fonksiyonu çağırmalıyız.
 
-	:::javascript
-	$(tabs).click(function () {
-	    // her sekme icin uygulana tanimlar
-	    //diger eylemler
+{% highlight javascript %}
+$(tabs).click(function () {
+    // her sekme icin uygulana tanimlar
+    //diger eylemler
 
-	    // uygulana sFIR fonksiyonunun tetikliyoruz.
-	    sIFR.replace(baslik, {
-	        selector: 'h1'
-	        ,wmode: 'transparent'
-	        ,css: [
-	          '.sIFR-root { margin:0; color: #009200; font-size:20px;}'
-	        ]
-	    });
+    // uygulana sFIR fonksiyonunun tetikliyoruz.
+    sIFR.replace(baslik, {
+        selector: 'h1'
+        ,wmode: 'transparent'
+        ,css: [
+          '.sIFR-root { margin:0; color: #009200; font-size:20px;}'
+        ]
+    });
 
-	});
+});
+{% endhighlight %}
 
 ## Sonuç
 

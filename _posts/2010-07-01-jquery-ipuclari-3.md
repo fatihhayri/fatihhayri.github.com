@@ -18,10 +18,11 @@ içeriklerdeki elemanlara bir olay atadığımızda(click, mouseover vd.)
 çalışmayacaktır. jQuery geliştiricileri bunun için live() fonksiyonunu
 geliştirmiş.
 
-	:::javascript
-	 $('a.acilSusam').live('mouseover',function() {
-		// yapilacak islemler
-	});
+{% highlight javascript %}
+ $('a.acilSusam').live('mouseover',function() {
+	// yapilacak islemler
+});
+{% endhighlight %}
 
 ## 2 - Tarayıcı Penceresinin Boyutlarını Değişmesini Yakalamak
 
@@ -29,53 +30,58 @@ Belki ara sıra lazım olacak bir kod ama bazen gerekiyor işte. Pencere
 boyutu her değiştiğine bazı işlemleri yapmak sistemimizi yorabilir diye
 setTimeout yardımı ile belli aralıklarla bunu yaptırıyoruz.
 
-	:::javascript
-	function pencereBoyutuDegisti() {
-		alert("Değişti");
-	};
+{% highlight javascript %}
+function pencereBoyutuDegisti() {
+	alert("Değişti");
+};
 
-	var resizeTimer = null;
-	$(window).bind('resize', function() {
-	    if (resizeTimer) clearTimeout(resizeTimer);
-	    resizeTimer = setTimeout(pencereBoyutuDegisti, 100);
-	});
+var resizeTimer = null;
+$(window).bind('resize', function() {
+    if (resizeTimer) clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(pencereBoyutuDegisti, 100);
+});
+{% endhighlight %}
 
 ## 3 - Element miktarını bulmak
 
 Bir dokümanda seçilen elemandan kaç adet olduğu bulmak için;
 
-	:::javascript
-	$('element').size();
+{% highlight javascript %}
+$('element').size();
+{% endhighlight %}
 
 ## 4 - Bir elemanın index değerini bulmak
 
 index değerini bulmanın farklı bir yolu
 
-	:::javascript
-	("ul > li").click(function () {
-		var index = $(this).prevAll().length;
-	});
+{% highlight javascript %}
+("ul > li").click(function () {
+	var index = $(this).prevAll().length;
+});
+{% endhighlight %}
 
 ## 5- Bir elemanın görünür olup olmadığını yakalamak
 
-	:::javascript
-	if($(".eleman").is(":visible")) {
-	    alert('Burda');
-	}
+{% highlight javascript %}
+if($(".eleman").is(":visible")) {
+    alert('Burda');
+}
+{% endhighlight %}
 
 ## 6- Kaç tane alt elemanı(çocuk elemanı) var
 
-	:::html
-	<div id="foo">
-	<div id="bar"></div>
-	<div id="baz">
-	<div id="biz">
-	</div>
-	<span><span>
-	</div>
+{% highlight html %}
+<div id="foo">
+<div id="bar"></div>
+<div id="baz">
+<div id="biz">
+</div>
+<span><span>
+</div>
 
-	//kac tane alt elemanı oldugunu bulmak icin
-	$("#foo > div").length
+//kac tane alt elemanı oldugunu bulmak icin
+$("#foo > div").length
+{% endhighlight %}
 
 
 ## 7- jQuery Kopya Kağıdı(Cheat Sheet)
@@ -91,18 +97,19 @@ herisi göremez)
 
 ## 8 - Select Elemanı ipuçları
 
-	:::javascript
-	// secili olan ögenin metnini almak
-	$("#myselect option:selected").text();
+{% highlight javascript %}
+// secili olan ögenin metnini almak
+$("#myselect option:selected").text();
 
-	// secili olan ögenin degerini almak icin
-	$("#myselect option:selected").val();
+// secili olan ögenin degerini almak icin
+$("#myselect option:selected").val();
 
-	// secili ogenin index degeri
-	$("#myselect option").index($("#myselect option:selected"));
+// secili ogenin index degeri
+$("#myselect option").index($("#myselect option:selected"));
 
-	// indeksi 2 olan ögeyi seçili hale getirmek
-	$("#myselect option:eq(2)").attr("selected", "selected");
+// indeksi 2 olan ögeyi seçili hale getirmek
+$("#myselect option:eq(2)").attr("selected", "selected");
+{% endhighlight %}
 
 
 ## Kaynaklar

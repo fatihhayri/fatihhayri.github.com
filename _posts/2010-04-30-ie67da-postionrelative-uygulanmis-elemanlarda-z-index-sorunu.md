@@ -14,38 +14,40 @@ Genelde bu durumla liste(li) elemanı içinde üzerine gelince açılan bir
 alan(menü) açtırmak istediğimizde karşılaşıyoruz. Basit bir
 örnek ile durumu gösterelim.
 
-	:::css
-	.anaKatman {
-	    position: relative;
-	    width: 300px;
-	    border: 1px solid black;
-	}
+{% highlight css %}
+.anaKatman {
+    position: relative;
+    width: 300px;
+    border: 1px solid black;
+}
 
-	.acilanBolum {
-	    position:absolute;
-	    left:0;
-	    width: 150px;
-	    border: 1px solid red;
-	    background: gray;
-	    z-index: 1000;
-	}
+.acilanBolum {
+    position:absolute;
+    left:0;
+    width: 150px;
+    border: 1px solid red;
+    background: gray;
+    z-index: 1000;
+}
+{% endhighlight %}
 
 HTML kısmı
 
-	:::html
-	<div class="anaKatman">
-	    <div class="acilanBolum">
-	        Curabitur dapibus lacus elit. Maecenas nec ligula ipsum. Vivamus accumsan sollicitudin augue, vel sollicitudin mi varius sed. Proin in erat sit amet dolor tincidunt scelerisque eget nec felis. Curabitur dapibus lacus elit. Maecenas nec ligula ipsum.
-	    </div>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non diam sit amet erat facilisis ultrices id vel turpis. Etiam pulvinar arcu ac felis pretium mollis. Etiam augue orci, iaculis non mollis et, venenatis vel ipsum.
-	</div>
+{% highlight html %}
+<div class="anaKatman">
+    <div class="acilanBolum">
+        Curabitur dapibus lacus elit. Maecenas nec ligula ipsum. Vivamus accumsan sollicitudin augue, vel sollicitudin mi varius sed. Proin in erat sit amet dolor tincidunt scelerisque eget nec felis. Curabitur dapibus lacus elit. Maecenas nec ligula ipsum.
+    </div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non diam sit amet erat facilisis ultrices id vel turpis. Etiam pulvinar arcu ac felis pretium mollis. Etiam augue orci, iaculis non mollis et, venenatis vel ipsum.
+</div>
 
-	<div class="anaKatman">
-		Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum.
-	</div>
-	<div class="anaKatman">
-		Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum.
-	</div>
+<div class="anaKatman">
+	Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum.
+</div>
+<div class="anaKatman">
+	Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum.
+</div>
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -67,20 +69,21 @@ değerleri 10, 20, 30 gibi.
 
 HTMl kodunu aşağıdaki gibi değiştirince sorun çözüldü.
 
-	:::html
-	<div class="anaKatman" style="z-index:3">
-	<div class="acilanBolum">
-		Curabitur dapibus lacus elit. Maecenas nec ligula ipsum. Vivamus accumsan sollicitudin augue, vel sollicitudin mi varius sed. Proin in erat sit amet dolor tincidunt scelerisque eget nec felis. Curabitur dapibus lacus elit. Maecenas nec ligula ipsum.
-	</div>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non diam sit amet erat facilisis ultrices id vel turpis. Etiam pulvinar arcu ac felis pretium mollis. Etiam augue orci, iaculis non mollis et, venenatis vel ipsum.
-	</div>
+{% highlight html %}
+<div class="anaKatman" style="z-index:3">
+<div class="acilanBolum">
+	Curabitur dapibus lacus elit. Maecenas nec ligula ipsum. Vivamus accumsan sollicitudin augue, vel sollicitudin mi varius sed. Proin in erat sit amet dolor tincidunt scelerisque eget nec felis. Curabitur dapibus lacus elit. Maecenas nec ligula ipsum.
+</div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non diam sit amet erat facilisis ultrices id vel turpis. Etiam pulvinar arcu ac felis pretium mollis. Etiam augue orci, iaculis non mollis et, venenatis vel ipsum.
+</div>
 
-	<div class="anaKatman" style="z-index:2">
-	Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum.
-	</div>
-	<div class="anaKatman" style="z-index:1">
-	Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum.
-	</div>
+<div class="anaKatman" style="z-index:2">
+Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum.
+</div>
+<div class="anaKatman" style="z-index:1">
+Pellentesque sodales vehicula dictum. Nulla facilisi. Integer eget lectus eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer imperdiet dictum interdum.
+</div>
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][2]
 
