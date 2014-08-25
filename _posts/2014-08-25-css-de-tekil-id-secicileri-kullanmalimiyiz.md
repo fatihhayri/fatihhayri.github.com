@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS'de Tekil(Id) Seçicileri Kullanmalımıyız?
+title: CSS'de Tekil(Id) Seçicileri Kullanmalı mıyız?
 Date: 2014-08-25 14:17
 Category: css
 tags: css tekil-seçici sınıf-seçicisi

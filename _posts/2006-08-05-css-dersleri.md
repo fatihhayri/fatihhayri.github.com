@@ -88,7 +88,7 @@ Date: 2006-08-05 22:06
     -   [Eksi Margin Kullanımı][]
     -   [Süper bir özellik display:inline-block][]
     -   [Stylus ile Dinamik CSS Yazmak](/stylus-ile-dinamik-css-yazmak/)
-    -   [CSS'de Tekil(Id) Seçicileri Kullanmalımıyız?](/css-de-tekil-id-secicileri-kullanmalimiyiz/)
+    -   [CSS'de Tekil(Id) Seçicileri Kullanmalı mıyız?](/css-de-tekil-id-secicileri-kullanmalimiyiz/)
 
 -   CSS Teknikleri
     -   [Xhtml - CSS : Başlıklar][]
