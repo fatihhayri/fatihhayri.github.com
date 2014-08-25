@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS'de Tekil(Id) Seçicileri Kullanmayın
+title: CSS'de Tekil(Id) Seçicileri Kullanmalımıyız?
 Date: 2014-08-25 14:17
 Category: css
 tags: css tekil-seçici sınıf-seçicisi
@@ -12,7 +12,7 @@ Biraz düşündükten sonra [google dokümanların][3] bu konuda biçilmiş kaft
 
 Aşağıda toparladığım kaynakların çoğu id’ye karşı ben Murat Çorlu ile tartışmaya başladığımda tekil seçicilere tamamen karşı değildim. Ancak Steve Souders’ın CSS Test sayfasındaki [tekil seçicileri][4] ile [sınıf seçicileri][5] arasındaki ufak farkı görünce fikrim değişti. Tabi bu testleri yeni nesil tarayıcılar yaptığımızda arada az fark görünürken ie8 gibi tarayıcılarda aradaki büyük fark ortaya çıkmasıda ayrı bir konu. 
 
-Aşağıda ben burada tartışılan konuları başlıklar altında toplayıp özetini sizlere sunacağım. Tabi başlıktan da anlayacağınız gibi tarafım belli.
+Aşağıda ben burada tartışılan konuları başlıklar altında toplayıp özetini sizlere sunacağım. 
 
 ## Performans
 
