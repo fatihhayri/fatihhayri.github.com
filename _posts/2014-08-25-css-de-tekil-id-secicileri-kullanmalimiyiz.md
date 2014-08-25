@@ -56,7 +56,7 @@ Aslında bu sorun ile hiç karşılaşmamak için projenin başında her şeyi p
 
 ## Sonuç
 
-Sonuç olarak son 1-2 yıldır daha çok sınıf seçicilerini tercih ettiğim dünyada çokta tekil seçici ihtiyacı duymadım. Arıca yukarıda bahsettiğim sebeplerden dolayı bana sınıf seçicilerini kullanmak daha mantıklı geliyor.
+Sonuç olarak son 1-2 yıldır daha çok sınıf seçicilerini tercih ettiğim dünyada çokta tekil seçici ihtiyacı duymadım. Ayrıca yukarıda bahsettiğim sebeplerden dolayı bana sınıf seçicilerini kullanmak daha mantıklı geliyor.
 
 Tabi isteyen tekil seçicileri kullanmaya devam eder, kimseye bu konuda zorlama yapmak mümükün değil. Sahibinden.com'da çalşıyorsanız zorlama var o başka :D
 
