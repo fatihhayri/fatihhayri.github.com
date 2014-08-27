@@ -31,7 +31,7 @@ Kodun da **eot**, **otf** ve **svg** kodlarına gerek kalmadı. Kodumuz daha bas
 
 **ttf**'in tutunmasının nedeni mobildeki Android tarayıcısı. Zamanla ttf'inde bitip tek başına **woff** kullanımına ulaşacağız inşallah.
 
-woff'un tarayıcı desteğini hatırlatmakta yarar var.
+woff'un tarayıcı desteğini hatırlamakta yarar var. Mobildeki android tarayıcılar sorun oluyor :/
 
 **Tarayıcı Desteği**
 
@@ -44,7 +44,7 @@ woff'un tarayıcı desteğini hatırlatmakta yarar var.
 
 |![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
 |:------------------------:|:----------------------:|:-------------------:|
-|**4.4+ (-webkit)**|**5.1+ (-webkit)**|**36+**|
+|**4.4+**|**5.1+**|**36+**|
 {: .tarayici-uyumi}
 
 ## Kaynak
