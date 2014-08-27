@@ -19,7 +19,7 @@ Sitemizde özel yazı tiplerini kullanmak için kullandığımız @font-face biz
 }
 {% endhighlight %}
 
-Kodu yerine **eot**, **otf** ve **svg** kodlarına gerek kalmadı. Kodumuz daha basit bir hal aldı. 
+Kodun da **eot**, **otf** ve **svg** kodlarına gerek kalmadı. Kodumuz daha basit bir hal aldı. 
 
 {% highlight css %}
 @font-face {
@@ -29,8 +29,31 @@ Kodu yerine **eot**, **otf** ve **svg** kodlarına gerek kalmadı. Kodumuz daha 
 }
 {% endhighlight %}
 
-**ttf**'in tutunmasının nedeni Mobildeki Android tarayıcısı. Zamanla ttf'inde bitip tek başına **woff** kullanımına ulaşacağız inşallah.
+**ttf**'in tutunmasının nedeni mobildeki Android tarayıcısı. Zamanla ttf'inde bitip tek başına **woff** kullanımına ulaşacağız inşallah.
+
+woff'un tarayıcı desteğini hatırlatmakta yarar var.
+
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**5.0+**|**9+**|**3.6+**|
+{: .tarayici-uyumi}
+
+**Mobil Tarayıcılar**
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**4.4+ (-webkit)**|**5.1+ (-webkit)**|**36+**|
+{: .tarayici-uyumi}
 
 ## Kaynak
 
  - [http://css-tricks.com/snippets/css/using-font-face/](http://css-tricks.com/snippets/css/using-font-face/)
+ - [http://caniuse.com/#search=woff](http://caniuse.com/#search=woff)
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png
