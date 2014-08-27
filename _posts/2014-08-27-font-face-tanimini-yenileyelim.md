@@ -1,6 +1,6 @@
 ---
 layout: post
-title: font-face tanımını yenileyelim.
+title: font-face tanımını yenileyelim
 Date: 2014-08-27 14:55
 Category: css
 tags: css font-face woff ttf

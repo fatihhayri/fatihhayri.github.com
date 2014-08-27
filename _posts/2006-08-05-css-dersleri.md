@@ -82,6 +82,7 @@ Date: 2006-08-05 22:06
     -   [Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)][]
     -   [sIFR 3 Kullanımı ve İpuçları][]
     -   [@font-face kullanımı][]
+        +   [font-face tanımını yenileyelim](/font-face-tanimini-yenileyelim/)
     -   [CSS ile gölge vermek][]
     -   [CSS ve Tipografi][]
     -   [Internet Explorer 6 için saydam PNG desteği][]
