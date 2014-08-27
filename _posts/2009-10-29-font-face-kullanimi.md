@@ -98,13 +98,16 @@ Ethan  
 Evet yazı tipi dosyalarımız hazırsa kodumuzu yazmaya başlayabiliriz.
 @font-face kod yapısı
 
-	:::css
-	@font-face {
+{% highlight css %}
+@font-face {
     font-family: Gentium;
     src: url(http://site/fonts/Gentium.ttf);
-    }
+}
 
-    p { font-family: Gentium, serif; }
+p { 
+    font-family: Gentium, serif; 
+}
+{% endhighlight %}
 
 
 Kod yapımız iki kısımdan oluşmaktadır. İlk başta özel yazı tipimizi
@@ -115,19 +118,22 @@ ve farklı yazı tipi ile farklı kod yazmamız gerekiyor. Bundan başka bir
 kaç sorunuda gidermek için [Paul Irish][]'in yazdığı makaleden
 çıkardığımız kod:
 
-	:::css
-	@font-face {
-	    font-family: 'Graublau Web';
-	    src: url('GraublauWeb.eot');
-	    src: local('Graublau Web Regular'), local('Graublau Web'),
-	    url('GraublauWeb.woff') format('woff'),
-	    url('GraublauWeb.svg#GraublauWeb') format('svg'),
-	    url('GraublauWeb.otf') format('opentype');
-	    font-weight: normal;
-	    font-style: normal;
-	}
+{% highlight css %}
+@font-face {
+    font-family: 'Graublau Web';
+    src: url('GraublauWeb.eot');
+    src: local('Graublau Web Regular'), local('Graublau Web'),
+    url('GraublauWeb.woff') format('woff'),
+    url('GraublauWeb.svg#GraublauWeb') format('svg'),
+    url('GraublauWeb.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-	p { font-family: "Graublau Web", serif; }
+p { 
+    font-family: "Graublau Web", serif; 
+}
+{% endhighlight %}
 
 
 11 Kasım 2011 eklendi: font-weight: normal; font-style: normal;
@@ -154,19 +160,21 @@ diğer farklı yazı tipi üretme araçları
 
 .ttf ve .eot uzantılı dosyalarım hazırsa kodu yazmaya başlayabiliriz.
 
-	:::css
-	@font-face {
-	        font-family: 'TR Centurion Old  Italic';
-	        src: url('TR_Centurion_Old_Italik.eot');
-	        src: local('TR Centurion Old  Italic'), local('TRCenturionOldItalic'), url('TR_Centurion_Old_Italik.woff') format('woff'), url('TR_Centurion_Old_Italik.svg#TRCenturionOldItalic') format('svg'), url('TR_Centurion_Old_Italik.TTF') format('truetype');
-	}
+{% highlight css %}
+@font-face {
+        font-family: 'TR Centurion Old  Italic';
+        src: url('TR_Centurion_Old_Italik.eot');
+        src: local('TR Centurion Old  Italic'), local('TRCenturionOldItalic'), url('TR_Centurion_Old_Italik.woff') format('woff'), url('TR_Centurion_Old_Italik.svg#TRCenturionOldItalic') format('svg'), url('TR_Centurion_Old_Italik.TTF') format('truetype');
+}
+{% endhighlight %}
 
 Daha sonra bu yazı tipini sayfamızda kullanabiliriz.
 
-	:::css
-	h1{font:44px 'TR Centurion Old Italic', Arial, sans-serif; color:#1259C7;}
-	h3{font:24px 'TR Centurion Old Italic', Arial, sans-serif; color:#1259C7;}
-	p.ilkParagraf{font:16px/1.5em 'TR Centurion Old Italic', Arial, sans-serif;}
+{% highlight css %}
+h1{font:44px 'TR Centurion Old Italic', Arial, sans-serif; color:#1259C7;}
+h3{font:24px 'TR Centurion Old Italic', Arial, sans-serif; color:#1259C7;}
+p.ilkParagraf{font:16px/1.5em 'TR Centurion Old Italic', Arial, sans-serif;}
+{% endhighlight %}
 
 Örnek sayfayı görmek için [tıklayınız.][] Yazı tipi özgürlüğüne hoş
 geldiniz. 
