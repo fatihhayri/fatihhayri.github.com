@@ -6,7 +6,7 @@ Category: genel
 tags: sağlık ağrılar
 ---
 
-Bizim gibi hayatını bilgisayar başında geçiren kişiler için çalışma ortamının yererli donanıma sahip olması önem kazanıyor. İlk başta çok etkilerini hissetmesek de zamanla kendini gösteriyor rahatsızlıklar. 
+Bizim gibi hayatını bilgisayar başında geçiren kişiler için çalışma ortamının yeterli donanıma sahip olması önem kazanıyor. İlk başta çok etkilerini hissetmesek de zamanla kendini gösteriyor rahatsızlıklar. 
 
 Gününün en az 8 saatini bilgisayar başında geçiren ben ve benim gibiler için ağrılar ve hastalıklar kapınızı çalmadan alınması gereken önlemler var. Bu önlemler biraz can sıkıcı, zorlayıcı ve cebe dokunan detaylar olsa da sonuç göz önüne alındığında atılması gereken adımlar bunlar.
 
