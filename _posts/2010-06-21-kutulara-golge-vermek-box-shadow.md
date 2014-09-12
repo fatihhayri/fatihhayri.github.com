@@ -60,16 +60,6 @@ için, -webkit Safari ve Google Chrome için.
  }
  {% endhighlight %}
 
-**Tarayıcı Uyumu:**
-Internet Explorer 9+
-Firefox 3.5+
-Chrome 2+
-Safari 3+
-Opera 10.5+
-W3C's CSS Level 3+
-CSS Profile 3.0
-{: .tarayiciuyum}
-
 **Tarayıcı Desteği**
 
 |![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|

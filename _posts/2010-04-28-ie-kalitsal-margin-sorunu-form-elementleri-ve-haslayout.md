@@ -19,33 +19,35 @@ karşılaşıyorum.
 
 yukarıdaki gibi bir tasarımı koda çevirirken
 
-	:::html
-	<div class="dis">
-	    <div class="ic"><input type="text" value="Arama" /></div>
-	</div>
+{% highlight html %}
+<div class="dis">
+    <div class="ic"><input type="text" value="Arama" /></div>
+</div>
+{% endhighlight %}
 
 
 CSS kodu
 
-	:::css
-	div.dis{
-		margin-left:65px;
-	}
+{% highlight css %}
+div.dis{
+	margin-left:65px;
+}
 
-	div.ic{
-	    width:241px;
-	    height:25px;
-	    background:url(arama_ardalan.gif) 0 0 no-repeat
-	}
+div.ic{
+    width:241px;
+    height:25px;
+    background:url(arama_ardalan.gif) 0 0 no-repeat
+}
 
-	div.ic input{
-	    border:0;
-	    background:none;
-	    width:204px;
-	    margin:4px 0 0 5px;
-	    font-size:11px;
-	    color:#534013;
-	}
+div.ic input{
+    border:0;
+    background:none;
+    width:204px;
+    margin:4px 0 0 5px;
+    font-size:11px;
+    color:#534013;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -73,11 +75,12 @@ tanımı var ise oluyor. Kaynak kısmında verdiğim sitede bir kaç çözüm
 zoom:1 tanımı ile bu sorunu aştım. Margin tanımı olan elemana zoom:1
 tanımı yapınca sorun çözüldü
 
-	:::css
-	div.dis{
-		margin-left:65px;
-		zoom:1
-	}
+{% highlight css %}
+div.dis{
+	margin-left:65px;
+	zoom:1
+}
+{% endhighlight %}
 
 
 Örneği görmek için [tıklayınız.][3]

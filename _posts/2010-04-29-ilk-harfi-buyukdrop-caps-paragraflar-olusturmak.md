@@ -41,27 +41,29 @@ desteklemesi.
 
 HTML kodlarımız
 
-	:::html
-	<p class="introduction">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-	</p>
+{% highlight html %}
+<p class="introduction">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+{% endhighlight %}
 
 CSS kodlarımız
 
-	:::css
-	p{
-		width:350px;
-		background-color:#272722;
-		padding:10px;
-		color:#fff;
-	}
+{% highlight css %}
+p{
+	width:350px;
+	background-color:#272722;
+	padding:10px;
+	color:#fff;
+}
 
-	p.introduction:first-letter {
-		font-size:4.2em;
-		float: left;
-		line-height: 1em;
-		margin: 0.13em 0.13em 0.13em 0;
-	}
+p.introduction:first-letter {
+	font-size:4.2em;
+	float: left;
+	line-height: 1em;
+	margin: 0.13em 0.13em 0.13em 0;
+}
+{% endhighlight %}
 
 
 Örneği görmek için [tıklayınız.][]
@@ -88,25 +90,26 @@ için 1em yapmak gerekiyor.
 görüntü elde edebiliriz. Yazı tipini(PaladinFLF)
 [http://www.fontsquirrel.com/fontface][] sitesinden aldım.
 
-	:::css
-	@font-face {
-		font-family:'PaladinFLFRegular';
-		src: url('PaladinFLF.eot');
-		src: local('☺'), url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont') format('svg');
-	}
+{% highlight css %}
+@font-face {
+	font-family:'PaladinFLFRegular';
+	src: url('PaladinFLF.eot');
+	src: local('☺'), url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont') format('svg');
+}
 
-	p{
-		width:350px;
-		background-color:#272722;
-		padding:10px;
-		color:#fff;
-	}
+p{
+	width:350px;
+	background-color:#272722;
+	padding:10px;
+	color:#fff;
+}
 
-	p.introduction:first-letter {
-		font: 4.2em/1em 'PaladinFLFRegular', Arial, sans-serif;
-		float: left;
-		margin: 0.13em 0.13em 0.13em 0;
-	}
+p.introduction:first-letter {
+	font: 4.2em/1em 'PaladinFLFRegular', Arial, sans-serif;
+	float: left;
+	margin: 0.13em 0.13em 0.13em 0;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][3]
 
@@ -116,35 +119,37 @@ görüntü elde edebiliriz. Yazı tipini(PaladinFLF)
 
 İlk harfin etrafına kenar çizgisi atayıp ardalan rengini değiştirelim.
 
-	:::css
-	@font-face {
-		font-family: 'PaladinFLFRegular';
-		src: url('PaladinFLF.eot');
-		src: local('☺'), url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont') format('svg');
-	}
+{% highlight css %}
+@font-face {
+	font-family: 'PaladinFLFRegular';
+	src: url('PaladinFLF.eot');
+	src: local('☺'), url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont') format('svg');
+}
 
-	p{
-		width:350px;
-		background-color:#272722;
-		padding:10px;
-		color:#fff;
-	}
+p{
+	width:350px;
+	background-color:#272722;
+	padding:10px;
+	color:#fff;
+}
 
-	p.introduction:first-letter {
-		font: 4.2em/0.6em 'PaladinFLFRegular', Arial, sans-serif;
-	    float: left;
-	    margin: 0.13em 0.13em 0 0;
-		border:3px solid #fff;
-		padding:0.13em;
-		background-color:#F30;
-		line-height:1em;
-	}
+p.introduction:first-letter {
+	font: 4.2em/0.6em 'PaladinFLFRegular', Arial, sans-serif;
+    float: left;
+    margin: 0.13em 0.13em 0 0;
+	border:3px solid #fff;
+	padding:0.13em;
+	background-color:#F30;
+	line-height:1em;
+}
+{% endhighlight %}
 
 HTML kodları
 
-	:::html
-	<p class="introduction">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-	</p>
+{% highlight html %}
+<p class="introduction">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][5]
 
@@ -154,29 +159,30 @@ HTML kodları
 
 Harfin ardalanına bir resim koyup üzerine harfi koymayı deniyorum.
 
-	:::css
-	 @font-face {
-		font-family: 'PaladinFLFRegular';
-		src: url('PaladinFLF.eot');
-		src: local('☺'), url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont') format('svg');
-	}
+{% highlight css %}
+ @font-face {
+	font-family: 'PaladinFLFRegular';
+	src: url('PaladinFLF.eot');
+	src: local('☺'), url('PaladinFLF.ttf') format('truetype'), url('PaladinFLF.svg#webfont') format('svg');
+}
 
-	p{
-		width:350px;
-		background-color:#272722;
-		padding:10px;
-		color:#fff;
-	}
+p{
+	width:350px;
+	background-color:#272722;
+	padding:10px;
+	color:#fff;
+}
 
-	p.introduction:first-letter {
-		font: 4em/1em 'PaladinFLFRegular', Arial, sans-serif;
-	    float: left;
-	    margin: 0.13em 0.13em 0 0;
-		padding:0.4em 0.5em 0.4em 0.3em ;
-		background-color:#F30;
-		background:url(t.jpg) 0 0 no-repeat;
-		text-shadow:2px 2px 2px #999
-	}
+p.introduction:first-letter {
+	font: 4em/1em 'PaladinFLFRegular', Arial, sans-serif;
+    float: left;
+    margin: 0.13em 0.13em 0 0;
+	padding:0.4em 0.5em 0.4em 0.3em ;
+	background-color:#F30;
+	background:url(t.jpg) 0 0 no-repeat;
+	text-shadow:2px 2px 2px #999
+}
+{% endhighlight %}
 
 
 Örneği görmek için [tıklayınız.][7]
@@ -191,24 +197,25 @@ Firefox ile yukarıdaki gibi güzel bir sonuç elde ediyoruz. Ancak
 Bu duruma çözüm üretmek için bir kaç yol var. İlki resmi direk içeriğe
 ekleyip **float:left** ile sola yaslayarak çözmek 
 
-	:::css
-	p{
-		width:350px;
-		background-color:#272722;
-		padding:10px;
-		color:#fff;
-	}
+{% highlight css %}
+p{
+	width:350px;
+	background-color:#272722;
+	padding:10px;
+	color:#fff;
+}
 
-	p.introduction img {
-		float:left;
-		margin-right:0.8em
-	}
+p.introduction img {
+	float:left;
+	margin-right:0.8em
+}
+{% endhighlight %}
 
 HTML kodu
 
-	:::html
-	<p class="introduction"><img src="t1.jpg" width="93" height="100" />empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Velit esse cillum dolore eu fugiat nulla pariatur</p>
-
+{% highlight html %}
+<p class="introduction"><img src="t1.jpg" width="93" height="100" />empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Velit esse cillum dolore eu fugiat nulla pariatur</p>
+{% endhighlight %}
 
 
 Örneği görmek için [tıklayınız.][10]
@@ -223,10 +230,14 @@ tanımlamaktır.
 Sayfamızın ilk paragrafının ilk harfine uygulama yapıyoruz.
 [first-child][] seçicisi bu imkanı bize sağlar. ancak bu özelliği ie < 9 desteklemiyor.
 
-	:::css
-	p:first-child:first-letter{
-	  font-size: 4.2em;  float: left;  line-height: 1em;  margin: 0.13em 0.13em 0.13em 0;
-	}
+{% highlight css %}
+p:first-child:first-letter{
+  font-size: 4.2em;  
+  float: left;  
+  line-height: 1em;  
+  margin: 0.13em 0.13em 0.13em 0;
+}
+{% endhighlight %}
 
 
 ## Kaynaklar

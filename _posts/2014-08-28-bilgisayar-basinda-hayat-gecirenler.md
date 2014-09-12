@@ -18,9 +18,9 @@ Bu yazımda sizlere olması gereken oturma şekli nedir, bilgisayarla aranızdak
 
 ## Göz
 
-Ben bigiayasar başında çalışırken yaşadığım ilk sorunum gözlerimle oldu. Tabi o zamanlar tüplü ekranlar vardı. Birde benim ekranım titreme yaptığı için ayrı bir soruna neden oluyordu. Şükür ki ekran teknolojisinin hızla gelişmesi ve daha sağlıklı yönde adımalr atılması bizleri biraz daha rahatlatttı. 
+Ben bigisayar başında çalışırken yaşadığım ilk sorunum gözlerimle oldu. Tabi o zamanlar tüplü ekranlar vardı. Birde benim ekranım titreme yaptığı için ayrı bir soruna neden oluyordu. Şükür ki ekran teknolojisinin hızla gelişmesi ve daha sağlıklı yönde adımlar atılması bizleri biraz daha rahatlatttı. 
 
-En son göz bozukluları nedeni ile doktora gittiğimde gözlerimde gözlük kullanacak bir sorun olmadığını, ama kronik bir göz iltihabı olduğundan ötürü zaman zaman yanmalar olabileceğini öğrendim. 
+En son göz bozuklukları nedeni ile doktora gittiğimde gözlerimde gözlük kullanacak bir sorun olmadığını, ama kronik bir göz iltihabı olduğundan ötürü zaman zaman yanmalar olabileceğini öğrendim. 
 
 Her gün gözlerimi **göz yakmayan bir bebek şampuanı ile yıkamamı**, **belli aralıklarla gözleri dinlendirmemi** ve **devamlı suni göz yaşı damlatma** mı önerdi doktor. Birde 6 ayda bir doktor kontrolü.
 
@@ -32,9 +32,9 @@ Sonraki sorunum bel ağrıları ile oldu. Dönemsel olarak bel ağrıları beni 
 
 Bir arada bileklerimde ağrılar hissettim. Biraz internettte araştırnca Karpal Tünel Sendromu ( El bileğinde sinir sıkışması ) gibi genel olarak tüm bilgisayar kullanıcılarının müzdarip olduğu bir sorun ile karşı karşıya olduğumu gördüm.
 
-Çözüm olarak sunulan çözümlerdne birisi; dikey mouse çözümü hoşuma gitti. Hemen sahibinden.com'dan(Burada çalışmadan önce yaptığım tek alışveriş) bir çin malı dikey mouse aldım. Gayet ucuzdu işimi görür mü diye aldım. Tabi "ucuzdur vardır bir  illeti, pahalıdır vardır bir hikmeti" sözü mucibince mouse tekeri kırıldı ve mouse işlevsiz hale geldi. 
+Çözüm olarak sunulan çözümlerden birisi; dikey mouse çözümü hoşuma gitti. Hemen sahibinden.com'dan(Burada çalışmadan önce yaptığım tek alışveriş) bir çin malı dikey mouse aldım. Gayet ucuzdu işimi görür mü diye aldım. Tabi "ucuzdur vardır bir  illeti, pahalıdır vardır bir hikmeti" sözü mucibince mouse tekeri kırıldı ve mouse işlevsiz hale geldi. 
 
-Tabi sonra ağrılar geçince çok üstüne düşmedim. Ta ki 2-3 ay önce ağrılarım tekrar edinceye kadar. Bende bu sefer daha kaliteli bir dikey mouse almak için araştırmalara başladım. Yine çin malı ama bu sefer [çinden bir mouse](https://www.dx.com/p/delux-m618-2-4ghz-wireless-vertical-laser-mouse-black-dark-grey-2-x-aaa-171935#.U_8NP7y1ZMY) aldım. Birinci hafta ki alışma sürecinden sonra gayet başarılı bir deneyim sunduğunu söyliyebilirim. Tabi hareket ve spor şart. 
+Tabi sonra ağrılar geçince çok üstüne düşmedim. Ta ki 2-3 ay önce ağrılarım tekrar edinceye kadar. Bende bu sefer daha kaliteli bir dikey mouse almak için araştırmalara başladım. Yine çin malı ama bu sefer [çinden bir mouse](https://www.dx.com/p/delux-m618-2-4ghz-wireless-vertical-laser-mouse-black-dark-grey-2-x-aaa-171935#.U_8NP7y1ZMY) aldım. Birinci hafta ki alışma sürecinden sonra gayet başarılı bir deneyim sunduğunu söyleyebilirim. Tabi hareket ve spor şart. 
 
 ## Boyun
 
@@ -48,9 +48,9 @@ Belli aralıklarla sırt ağrıları yaşıyorum. Dik durmak en güzel çözüm 
 
 ## Sonuç
 
-Bu işi yapayorsak ve yapacaksak bu tip sorunlarla karşılaşmamız normal. Ekmeğimizi bu işten çıkarıyor isek kendimize bazı kurallar koyup onlara olabildiğince uymaya çalışmalıyız. 
+Bu işi yapıyorsak ve yapacaksak bu tip sorunlarla karşılaşmamız normal. Ekmeğimizi bu işten çıkarıyor isek kendimize bazı kurallar koyup onlara olabildiğince uymaya çalışmalıyız. 
 
-Bu konularda çok başarılı olduğumu söyleyemem, bu yazı benim içinde güzel bir başlangıca vesile olur inşallah. Sizlerde önerilerinizi paylaşırsanız çok sevinirim.
+Bu konularda çok başarılı olduğumu söyleyemem, bu yazı benim içinde güzel bir başlangıca vesile olur inşallah. Sizler de önerilerinizi paylaşırsanız çok sevinirim.
 
 Benim aldığım önlemler ve almam gereken önlemler;
 
@@ -60,11 +60,11 @@ Daha çok cebi ilgilendiren bu konuda bir şeyler yapmak daha kolay. Şirketin b
 
 Şirketin bize sunduğu ortam olarak Türkiye'de en iyi ofislerden birine sahip olduğumuzu düşünüyorum. Işık, ortam, masa ve araç gereçler bakımından gayet iyi bir durumdayız. Artı olarak;
 
-- İki ekranda kullandığım için ikinci ekranı daha çok kullandığım dizüstü bilgisayarımın üstüne aldım. Bunun içi ekran yükseltici aldım. Daha doğrusu şirket verdi. 
+- İki ekran kullandığım için ikinci ekranı daha çok kullandığım dizüstü bilgisayarımın üstüne aldım. Bunun içi ekran yükseltici aldım. Daha doğrusu şirket verdi. 
 - Dizüstü bilgisayarı göz hizama kaldırmak için altına yükseltme aparatı aldım. Daha doğrusu şirket verdi. 
 - Harici bir klavye alarak daha esnek bir çalışma ortamı oluştu.
 - Son olarakta dikey mouse alıp ergonomik ortam oluşturma işini tamamladım.
-- Ayrıca dik durmayı unutmamı sağlamka için [TimeOut](http://www.dejal.com/timeout/) programını kurdum.
+- Ayrıca dik durmayı unutmamı sağlamak için [TimeOut](http://www.dejal.com/timeout/) programını kurdum.
 
 ### Hareket etmek ve/veya spor yapmak
 
@@ -80,7 +80,7 @@ Bir an önce spora başlamalıyım. Bu cümleyi kurmamış olan var mı?
 
 Genelde ağrılarım olunca doktora uğruyorum. Bu aralar çok gittim. Ama bir ağrı sızım olmadan da doktora uğramam gerekiyor. 
 
-Maalesef en az değerini bildiğim iki şeyden birisi sağlık. Birinciside zaman. 
+Maalesef en az değerini bildiğim iki şeyden birisi sağlık. Birincisi de zaman. 
 
 Küçüklükten kalma bir korku mu bilmiyorum ama doktora gitmek her zaman bana itici ve zor geliyor. 
 
