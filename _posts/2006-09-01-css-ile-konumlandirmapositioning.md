@@ -221,6 +221,6 @@ destekliyor diğer hallerde desteklemiyor. Ama bu problemi javascript ile
   [CSS Nisbi konumlandırma]: /images/position_relative.gif
   [100]: /images/position_absolute.gif
   [link]: http://www.howtocreate.co.uk/fixedPosition.html
-  [CSS Mastery: Advanced Web Standards Solutions]: http://www.friendsofed.com/book.html?isbn=1590596145
+  [CSS Mastery: Advanced Web Standards Solutions]: http://www.apress.com/9781590596142
   [Muhammed Sevim]: http://www.muhammetsevim.com/yazi/css-pozisyonlama-ve-z-index/
   [Web Standards Solutions: The Markup and Style Handbook]: http://www.amazon.com/gp/product/1590593812
