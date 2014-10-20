@@ -208,6 +208,7 @@ Date: 2006-08-05 22:06
     -   [CSS İpucu 31 : Webkit Tabanlı Tarayıcılar(Chrome ve Safari) İçin Düzeltme(Hack) Sorunu ve Çözümü][]
     -   [CSS İpucu 32: CSS3 Renk Geçişinin elemanına uygulamasındaki sorun ve çözümü][]
     -   [CSS İpucu 33: İE için renk geçişi çözümü filtre tanımını sıfırlamak](/ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/)
+    -   [Çoklu :not seçicisi kullanımı](/coklu-not-secicisi-kullanimi/)
 
 -   CSS 3
     -   [CSS3 Hakkında](/css3-hakkinda/)
