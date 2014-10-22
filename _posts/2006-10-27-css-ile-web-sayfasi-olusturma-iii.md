@@ -24,10 +24,11 @@ kullanışlı olanı anlatmaya çalışacağız.
 Bu metodda yapılan iki kolon bir kapsayıcı katman içine alınarak iki
 kolonun zemin resmi bu kapsayıcı katmana tanımlanmaktır.
 
-	:::css
-	#kapsayiciKolon{
-		background: #fff url(zemin_ard.gif) repeat-y left top;
-	}
+{% highlight css %}
+#kapsayiciKolon{
+	background: #fff url(zemin_ard.gif) repeat-y left top;
+}
+{% endhighlight %}
 
 Aynı şekilde üç kolonlu yapılar içinde çözüm üretilebilir. Sabit
 genişlikte sayfalarda Aksak Kolonları düzeltmek bu kadar kolaydır. Esnek
@@ -42,8 +43,9 @@ konumlandırırsınız. Yüzdesel konumlandırma ile zemin resmi
 konulandırıldığında, atanan değerler hem üst elemente göre, hem de
 elementin kendine göre konumunu belirler. Örneğin:
 
-	:::css
-	background: #fff url(resim.gif) no-repeat 25% 10%;
+{% highlight css %}
+background: #fff url(resim.gif) no-repeat 25% 10%;
+{% endhighlight %}
 
 Yukarıdaki tanımlama sonucunda zemin resmi hem üst elementin %10 üst ve
 %25 solundan mesafe alacaktır, hemde kendi içinde %10 üst ve %25 soldan
@@ -75,13 +77,14 @@ değeri 460 piksel olacaktır. Aksak alanın zemin renginin dışındaki
 alalanları(1540px) transparan yapmak için zemin resmimizi .gif
 formatında yapmalıyız.
 
-	:::css
-	#KapsayiciAlan {
-	    width: 85%;
-	    margin: 0 auto;
-	    text-align: left;
-	    background: #fff url(images/sol_zemin_resmi.gif) repeat-y 23% 0;
-	}
+{% highlight css %}
+#KapsayiciAlan {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
+    background: #fff url(images/sol_zemin_resmi.gif) repeat-y 23% 0;
+}
+{% endhighlight %}
 
 Benzer şekilde ikinci bir içerik oluşturarak sağda kalan iki kolona aynı
 metod uygulanabilir. Yine 2000 piksel genişliğinde 10 piksel
@@ -94,10 +97,11 @@ resmi zaten uygulanmıştır bu nedenle biz ilk Kapsayici alan içine bir
 tane daha **ikinciKapsayiciAlan** eklemeliyiz. Bu yeni
 **ikinciKapsayiciAlan**'nınada zemin resmi atamalıyız.
 
-	:::css
-	#ikinciKapsayiciAlan{
-		background: url(images/sag_zemin_resmi.gif) repeat-y 77% 0;
-	}
+{% highlight css %}
+#ikinciKapsayiciAlan{
+	background: url(images/sag_zemin_resmi.gif) repeat-y 77% 0;
+}
+{% endhighlight %}
 
 Bu şekilde çok güzel bir 3 kolonlu likit bir sayfa elde ederiz.
 
