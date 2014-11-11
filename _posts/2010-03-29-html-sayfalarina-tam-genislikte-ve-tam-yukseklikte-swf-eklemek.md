@@ -16,12 +16,13 @@ bu konuyu göz atmıştım.
 
 ## Birinci Yöntem
 
-	:::css
-	body {
-	    height: 100%;
-	    width: 100%;
-	    margin: 0;
-	}
+{% highlight css %}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+{% endhighlight %}
 
 şeklinde bir kod. Ancak bu kod ne yazık ki Firefox ve Opera'da
 çalışmıyor. Yada çalışması için html sayfamızdan DOCTYPE'ı silmemiz
@@ -30,29 +31,32 @@ ikinci yöntemi öneriyorum.
 
 ## İkinci Yöntem
 
+{% highlight javascript %}
 swfobject.embedSWF("test.swf", "myContent", "100%", "100%", "9.0.0",
 "expressInstall.swf");
+{% endhighlight %}
 
 Genişlik ve yüksekliğini 100% veriyoruz ve css kodumuzu yazıyoruz.
 
-	:::css
-	/* hide from ie on mac \*/
-	html {
-	    height: 100%;
-	    overflow: hidden;
-	}
+{% highlight css %}
+/* hide from ie on mac \*/
+html {
+    height: 100%;
+    overflow: hidden;
+}
 
-	#myContent {
-	    height: 100%;
-	}
-	/* end hide */
+#myContent {
+    height: 100%;
+}
+/* end hide */
 
-	body {
-	    height: 100%;
-	    margin: 0;
-	    padding: 0;
-	    background-color: #090;
-	}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #090;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız][]
 

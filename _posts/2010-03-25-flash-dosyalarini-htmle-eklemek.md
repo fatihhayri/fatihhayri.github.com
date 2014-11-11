@@ -62,46 +62,48 @@ vardır.
 Indirdigimiz dosya içerisinden çikan index.html sayfasi statik bir flash
 eklemeye örnektir. Kodlarini incelersek
 
-	:::html
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-	<head>
-		<title>SWFObject 2 static publishing example page</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<script type="text/javascript" src="swfobject.js"></script>
-		<script type="text/javascript"> swfobject.registerObject("myId", "9.0.0", "expressInstall.swf"); </script>
-	</head>
-	<body>
-	<div>
-		<object id="myId" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="300" height="120">
-		<param name="movie" value="test.swf" />
-		<!--[if !IE]>-->
-		<object type="application/x-shockwave-flash" data="test.swf" width="300" height="120">
-		<!--<![endif]-->
-	<div>
-	<h1>Alternatif içerik</h1>
-	<p>Kullanıcının bilgisayarında flash yüklü değilse burayı gösterecek
-	<a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a>
-	</p>
-	</div>
+{% highlight html %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>SWFObject 2 static publishing example page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<script type="text/javascript" src="swfobject.js"></script>
+	<script type="text/javascript"> swfobject.registerObject("myId", "9.0.0", "expressInstall.swf"); </script>
+</head>
+<body>
+<div>
+	<object id="myId" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="300" height="120">
+	<param name="movie" value="test.swf" />
 	<!--[if !IE]>-->
-	</object>
+	<object type="application/x-shockwave-flash" data="test.swf" width="300" height="120">
 	<!--<![endif]-->
-	</object>
-	</div>
-	</body>
-	</html>
+<div>
+<h1>Alternatif içerik</h1>
+<p>Kullanıcının bilgisayarında flash yüklü değilse burayı gösterecek
+<a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a>
+</p>
+</div>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+</body>
+</html>
+{% endhighlight %}
 
 Kodu iki kısıma ayıralım. İlk head içerisindeki javascript kısmı ve body
 içerisindeki html kısmı
 
 **head içerisindeki javascript kısmı**
 
-	:::html
-	<script type="text/javascript" src="swfobject.js"></script>
-	<script type="text/javascript">
-		swfobject.registerObject("myId", "9.0.0", "expressInstall.swf");
-	</script>
+{% highlight html %}
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript">
+	swfobject.registerObject("myId", "9.0.0", "expressInstall.swf");
+</script>
+{% endhighlight %}
 
 registerObject fonksiyonuna html içindeki elemanın id'sini(myId), flash
 sürümünü ve flash olmayanlar için yüklemeye yönlendiren dosyanın
@@ -138,12 +140,13 @@ Bu kodumuzda head içindeki ve body içindeki kısımları ile ikiye ayrılır.
 
 **body içerisindeki kısmı**
 
-	:::html
-	<div id="myContent">
-		<h1>Alternatif içerik</h1>
-		<p>Kullanıcının bilgisayarında flash yüklü değilse burayı gösterecek <a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a>
-		</p>
-	</div>
+{% highlight html %}
+<div id="myContent">
+	<h1>Alternatif içerik</h1>
+	<p>Kullanıcının bilgisayarında flash yüklü değilse burayı gösterecek <a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a>
+	</p>
+</div>
+{% endhighlight %}
 
 Dinamik kodlama ile flash(swf) dosyalarının eklenme mantığı şöyledir;
 bir eleman oluşturulur ve bu elemana dinamik olarak özellikleri atanır
@@ -153,11 +156,12 @@ yazdığımız içeriği kullanıcı görüyor, flash var ise de flash görünü
 
 **head içindeki kısımları**
 
-	:::html
-	<script type="text/javascript" src="swfobject.js"></script>
-	<script type="text/javascript">
-		swfobject.embedSWF("test.swf", "myContent", "300", "120", "9.0.0", "expressInstall.swf");
-	</script>
+{% highlight html %}
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript">
+	swfobject.embedSWF("test.swf", "myContent", "300", "120", "9.0.0", "expressInstall.swf");
+</script>
+{% endhighlight %}
 
 swfobject.js dosyasını ekliyoruz. Sonrada html içerisine ekleyeceğimiz
 swf dosyasının bilgilerini giriyoruz. Sırası ile incelersek
@@ -175,24 +179,26 @@ Dinamik yöntemin avantajlarını sayarken kolay kullanımı olduğunu
 söylemiştik. Mesela yeni parametre eklerken kodumuzu söyle değiştirmemiz
 yeterli olacaktır
 
-	:::javascript
-	var flashvars = {};
-	flashvars.xmlPath = "xml/data.xml";
-	var params = {};
-	params.menu = "false";
-	params.wmode = "opaque";
-	var attributes = {};
-	attributes.id = "myDynamicContent";
-	attributes.name = "myDynamicContent";
-	swfobject.embedSWF("test.swf", "myAlternativeContent", "300", "120", "9.0.0", false, flashvars, params, attributes);
+{% highlight javascript %}
+var flashvars = {};
+flashvars.xmlPath = "xml/data.xml";
+var params = {};
+params.menu = "false";
+params.wmode = "opaque";
+var attributes = {};
+attributes.id = "myDynamicContent";
+attributes.name = "myDynamicContent";
+swfobject.embedSWF("test.swf", "myAlternativeContent", "300", "120", "9.0.0", false, flashvars, params, attributes);
+{% endhighlight %}
 
 İlk başta değişkenleri tanımlayıp sonra embed kodu içine ekliyoruz. Bir
 başka şekli ile
 
-	:::javascript
-	<script type="text/javascript">
-		swfobject.embedSWF("test.swf", "myContent", "300", "120", "9.0.0","expressInstall.swf", {xmlPath:"xml/data.xml"}, {menu:"false", wmode:"opaque"}, {id:"myDynamicContent",name:"myDynamicContent"});
-	</script>
+{% highlight javascript %}
+<script type="text/javascript">
+	swfobject.embedSWF("test.swf", "myContent", "300", "120", "9.0.0","expressInstall.swf", {xmlPath:"xml/data.xml"}, {menu:"false", wmode:"opaque"}, {id:"myDynamicContent",name:"myDynamicContent"});
+</script>
+{% endhighlight %}
 
 şeklinde de yazabiliyoruz. Parametre olarak ben genelde ya flashvars ile
 xml yolunu yazıyorum, yada wmode özelliğini yazıyorum. Diğerlerini pek

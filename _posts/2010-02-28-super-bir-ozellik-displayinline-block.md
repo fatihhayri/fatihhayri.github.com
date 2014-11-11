@@ -27,43 +27,45 @@ bir içeriğimiz olsun ve bu içerikteki belli bir kısmı paragraf etiketi
 içine alalım ve bunlara sırası ile **display:block**, **display:inline**
 ve **display:inline-block** tanımları atayalım
 
-	:::html
-	<div id="denemeBir"> Lorem ipsum dolor sit amet... <p>Praesent id nunc eros. Integer mauris orci, venenatis ac tempor ut, gravida ac diam. </p> Pellentesque...</div>
-	<div id="denemeIki">Quisque at venenatis nulla...<p>Nam fermentum porttitor hendrerit.</p> Mauris ante nulla..</div>
-	<div id="denemeUc"> Sed urna neque...<p>Sed est lacus, laoreet at malesuada quis, convallis ut nibh.</p> Sed dapibus...</div>
+{% highlight html %}
+<div id="denemeBir"> Lorem ipsum dolor sit amet... <p>Praesent id nunc eros. Integer mauris orci, venenatis ac tempor ut, gravida ac diam. </p> Pellentesque...</div>
+<div id="denemeIki">Quisque at venenatis nulla...<p>Nam fermentum porttitor hendrerit.</p> Mauris ante nulla..</div>
+<div id="denemeUc"> Sed urna neque...<p>Sed est lacus, laoreet at malesuada quis, convallis ut nibh.</p> Sed dapibus...</div>
+{% endhighlight %}
 
 CSS kodu
 
-	:::css
-	div{
-		border: 1px solid #000;
-		margin: 10px 0;
-	}
+{% highlight css %}
+div{
+	border: 1px solid #000;
+	margin: 10px 0;
+}
 
-	p{
-		border: 1px dotted #000;
-	}
+p{
+	border: 1px dotted #000;
+}
 
-	div#denemeBir p{
-		background-color: #FF0;
-		display: block;
-		text-align: center;
-		width: 50px;
-	}
+div#denemeBir p{
+	background-color: #FF0;
+	display: block;
+	text-align: center;
+	width: 50px;
+}
 
-	div#denemeIki p{
-		background-color: #0FF;
-		display: inline;
-		text-align: center;
-		width: 50px;
-	}
+div#denemeIki p{
+	background-color: #0FF;
+	display: inline;
+	text-align: center;
+	width: 50px;
+}
 
-	div#denemeUc p{
-		background-color: #F0F;
-		display: inline-block;
-		text-align: center;
-		width: 50px;
-	}
+div#denemeUc p{
+	background-color: #F0F;
+	display: inline-block;
+	text-align: center;
+	width: 50px;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -89,28 +91,29 @@ kullanırız neler yapabiliriz buna bakalım.
 
 ## Float kullanmadan display:inline-block ile elemanları yan yana dizmek
 
-	:::html
-	<div id="menu">
-		<a href="">Ana Sayfa</a>
-		<a href="">Ürünler</a>
-		<a href="">İletişim</a>
-	</div>
+{% highlight html %}
+<div id="menu">
+	<a href="">Ana Sayfa</a>
+	<a href="">Ürünler</a>
+	<a href="">İletişim</a>
+</div>
+{% endhighlight %}
 
 CSS kodumuzu yazalım;
 
-	:::css
-	#menu a{
-	  width:150px;
-	  height:50px;
-	  display: inline-block;
-	  margin:0;
-	  padding:5px;
-	  color: #1B1B1B;
-	  background-color: #E2E2E2;
-	  text-decoration: none;
-	  border-top:5px solid #999
-	}
-
+{% highlight css %}
+#menu a{
+  width:150px;
+  height:50px;
+  display: inline-block;
+  margin:0;
+  padding:5px;
+  color: #1B1B1B;
+  background-color: #E2E2E2;
+  text-decoration: none;
+  border-top:5px solid #999
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][1]
 
@@ -132,42 +135,44 @@ seviyedeki elemanlar arasında olduğunu unutmamak lazım.
 Bir örnek yapalım. Yan yana dizilmiş üç kutu hazırlayalım ve bunları
 kapsayıcı katmana göre dikey olarak üstte, ortada ve altta hizalayalım.
 
-	:::html
-	<div class="anaKapsul">
-	    <div class="solKutu">Sol</div>
-	    <div class="ortaKutu">Orta</div>
-	    <div class="sagKutu">Sağ</div>
-	</div>
+{% highlight html %}
+<div class="anaKapsul">
+    <div class="solKutu">Sol</div>
+    <div class="ortaKutu">Orta</div>
+    <div class="sagKutu">Sağ</div>
+</div>
+{% endhighlight %}
 
 CSS kodumuzu yazalım.
 
-	:::css
-	.anaKapsul{
-		border: 1px gray solid;
-		padding: 5px;
-		text-align: center;
-	}
-	.solKutu{
-		background-color: lightblue;
-		display: inline-block;
-		height: 200px;
-		vertical-align: middle;
-		width: 200px;
-	}
-	.ortaKutu{
-		background-color: yellow;
-		display: inline-block;
-		height: 150px;
-		vertical-align: middle;
-		width: 200px;
-	}
-	.sagKutu{
-		background-color: gray;
-		display: inline-block;
-		height: 100px;
-		vertical-align: bottom;
-		width: 200px;
-	}
+{% highlight css %}
+.anaKapsul{
+	border: 1px gray solid;
+	padding: 5px;
+	text-align: center;
+}
+.solKutu{
+	background-color: lightblue;
+	display: inline-block;
+	height: 200px;
+	vertical-align: middle;
+	width: 200px;
+}
+.ortaKutu{
+	background-color: yellow;
+	display: inline-block;
+	height: 150px;
+	vertical-align: middle;
+	width: 200px;
+}
+.sagKutu{
+	background-color: gray;
+	display: inline-block;
+	height: 100px;
+	vertical-align: bottom;
+	width: 200px;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][3]
 
@@ -181,15 +186,16 @@ elemnalara **display:inline ve zoom:1** tanımı yapmalıyız. Bunun için
 [tüm tarayıcılar için düzeltmeler][] kısmındaki kodlardan
 yararlanacağım.
 
-	:::css
-	*:first-child+html div.anaKapsul div{
-		display: inline;
-		zoom: 1;
-	}
-	* html div.anaKapsul div{
-		display: inline;
-		zoom: 1;
-	}
+{% highlight css %}
+*:first-child+html div.anaKapsul div{
+	display: inline;
+	zoom: 1;
+}
+* html div.anaKapsul div{
+	display: inline;
+	zoom: 1;
+}
+{% endhighlight %}
 
 Bu kodları ekledikten sonra sorunumuz düzeldi.
 

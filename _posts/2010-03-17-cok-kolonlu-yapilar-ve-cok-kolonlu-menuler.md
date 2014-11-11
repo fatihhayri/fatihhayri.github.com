@@ -54,34 +54,36 @@ elemanına **float** ve sabit genişlik tanımı yaparak yan yana dizeriz.
 Dezavantajı listelemek istediğimiz ögeleri yan yana dizer. Normalde
 istenen birinci kolonu bitirdikten sonra ikinci kolona geçmesidir.
 
-	:::html
-	<ul>
-	    <li>Birinci Oge</li>
-	    <li>İkinci Oge</li>
-	    <li>Üçüncü Öge</li>
-	    <li>Dördüncü Öge</li>
-	    <li>Beşinci Öge</li>
-	    <li>Altıncı Öge</li>
-	    <li>Yedinci Öge</li>
-	    <li>Sekizinci Öge</li>
-	    <li>Dokuzuncu Öge</li>
-	    <li>Onuncu Öge</li>
-	</ul>
+{% highlight html %}
+<ul>
+    <li>Birinci Oge</li>
+    <li>İkinci Oge</li>
+    <li>Üçüncü Öge</li>
+    <li>Dördüncü Öge</li>
+    <li>Beşinci Öge</li>
+    <li>Altıncı Öge</li>
+    <li>Yedinci Öge</li>
+    <li>Sekizinci Öge</li>
+    <li>Dokuzuncu Öge</li>
+    <li>Onuncu Öge</li>
+</ul>
+{% endhighlight %}
 
 CSS kodumuz
 
-	:::css
-	ul {
-	    width: 700px;
-	    list-style-type:none;
-	}
-	li {
-	    width:180px;
-	    margin:15px 0 0 0;
-	    padding:0 10px 0 0;
-	    line-height:15px;
-	    float:left;
-	}
+{% highlight css %}
+ul {
+    width: 700px;
+    list-style-type:none;
+}
+li {
+    width:180px;
+    margin:15px 0 0 0;
+    padding:0 10px 0 0;
+    line-height:15px;
+    float:left;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -92,69 +94,71 @@ sağdan 10px padding değeri ile yan yana dizeriz. 
 
 HTML Kodu;
 
-	:::html
-	<ul id="menu">
-	    <li><a href="">Tencere</a>
-	        <ul class="kapsul">
-	        <li><a href="">Birinci Oge</a></li>
-	        <li><a href="">İkinci Oge</a></li>
-	        ....
-	        <li><a href="">Onuncu Öge</a></li>
-	        </ul>
-	    </li>
-	    <li><a href="">Tava</a></li>
-	    <li><a href="">Çaydanlık</a></li>
-	    <li><a href="">Leğen</a>
-	        <ul class="kapsulSolda">
-	        <li><a href="">Birinci Oge</a></li>
-	        <li><a href="">İkinci Oge</a></li>
-	        .....
-	        <li><a href="">Onuncu Öge</a></li>
-	        </ul>
-	    </li>
-	</ul>
+{% highlight html %}
+<ul id="menu">
+    <li><a href="">Tencere</a>
+        <ul class="kapsul">
+        <li><a href="">Birinci Oge</a></li>
+        <li><a href="">İkinci Oge</a></li>
+        ....
+        <li><a href="">Onuncu Öge</a></li>
+        </ul>
+    </li>
+    <li><a href="">Tava</a></li>
+    <li><a href="">Çaydanlık</a></li>
+    <li><a href="">Leğen</a>
+        <ul class="kapsulSolda">
+        <li><a href="">Birinci Oge</a></li>
+        <li><a href="">İkinci Oge</a></li>
+        .....
+        <li><a href="">Onuncu Öge</a></li>
+        </ul>
+    </li>
+</ul>
+{% endhighlight %}
 
 CSS kodu;(kodun uzun olduğuna bakmayın çoğu kod menü elemanlarını daha
 güzel görünmesini sağlamak için eklenmiştir.) Bunu menüye uygulayalım
 
-	:::css
-	ul{
-		margin:0;
-		padding:0;
-		list-style:none
-	}
+{% highlight css %}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none
+}
 
-	ul li{
-		float:left;
-		width:180px;
-		border-top:3px solid #fff;
-		position:relative
-	}
+ul li{
+	float:left;
+	width:180px;
+	border-top:3px solid #fff;
+	position:relative
+}
 
-	ul li:hover,
-	ul li.over{
-		border-top:3px solid #C30;
-		background-color:#eee;
-		width:180px;
-	}
+ul li:hover,
+ul li.over{
+	border-top:3px solid #C30;
+	background-color:#eee;
+	width:180px;
+}
 
-	ul li a{
-		font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
-		text-decoration:none;
-		display:block;
-		padding:5px 5px 5px 10px;
-		color:#0657ad;
-		font-weight:bold
-	}
-
+ul li a{
+	font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	display:block;
+	padding:5px 5px 5px 10px;
+	color:#0657ad;
+	font-weight:bold
+}
+{% endhighlight %}
 
 İlk menü öğelerini oluşturduk.
 
-	:::css
-	ul li:hover ul,
-	ul li.over ul{
-		display:block;
-	}
+{% highlight css %}
+ul li:hover ul,
+ul li.over ul{
+	display:block;
+}
+{% endhighlight %}
 
 Burada virgülün ilk kısmı ie6 hariç olan kısmı için ie6 için ise
 aşağıdaki javascript kodunu yazacağız.
@@ -163,85 +167,88 @@ Tabi başımızın belası ie6 için menüyü açmak için javascript yardımı
 almamız gerekiyor. Çünkü ie6 linklerin haricinde :hover işleyişini
 uygulamıyor
 
-	:::javascript
-	startList = function() {
-		if (document.all&&document.getElementById) {
-			navRoot = document.getElementById("menu");
-			for (i=0; i<navRoot.childNodes.length; i++) {
-				node = navRoot.childNodes[i];
-				if (node.nodeName=="LI") {
-					node.onmouseover=function() {
-						this.className+=" over";
-					}
-					node.onmouseout=function() {
-						this.className=this.className.replace(" over", "");
-					}
+{% highlight javascript %}
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("menu");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i];
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+					this.className=this.className.replace(" over", "");
 				}
 			}
 		}
 	}
-	window.onload=startList;
+}
+window.onload=startList;
+{% endhighlight %}
 
 Açılan menü kısmının tam kapsanması için kapsayamama kodu ekleyeceğiz.
 
-	:::css
-	ul li ul:after {
-		content: ".";
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;
-	}
+{% highlight css %}
+ul li ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
 
-	ul li ul {
-		display: inline-block;
-	}
-	/*IE-mac de bu bolumu sakla \ */
-	* html ul li ul {height: 1%;}
-	ul li ul {display: block;}
-	/* IE-mac bu bolumu saklam artik */
+ul li ul {
+	display: inline-block;
+}
+/*IE-mac de bu bolumu sakla \ */
+* html ul li ul {height: 1%;}
+ul li ul {display: block;}
+/* IE-mac bu bolumu saklam artik */
+{% endhighlight %}
 
 Açılacak menü ul sinin tanımlarını yapıyoruz.
 
-	:::css
-	ul li ul {
-		width: 580px;
-		list-style-type:none;
-		display:none;
-		border-bottom:3px solid #C30;
-		background-color:#eee;
-		padding:5px 0 10px 10px;
-		position:absolute;
-	}
+{% highlight css %}
+ul li ul {
+	width: 580px;
+	list-style-type:none;
+	display:none;
+	border-bottom:3px solid #C30;
+	background-color:#eee;
+	padding:5px 0 10px 10px;
+	position:absolute;
+}
 
-	ul li li {
-		width:180px;
-		margin:5px 0 0 0;
-		padding:0 10px 0 0;
-		line-height:15px;
-		float:left;
-		border:0;
-	}
+ul li li {
+	width:180px;
+	margin:5px 0 0 0;
+	padding:0 10px 0 0;
+	line-height:15px;
+	float:left;
+	border:0;
+}
 
-	ul li li:hover{
-		border:0
-	}
+ul li li:hover{
+	border:0
+}
 
-	ul li li a{
-		color:#0657ad;
-		text-decoration:underline;
-		padding:0;
-		font-weight:normal
-	}
+ul li li a{
+	color:#0657ad;
+	text-decoration:underline;
+	padding:0;
+	font-weight:normal
+}
 
-	ul li li a:hover{
-		color:#C30;
-		text-decoration:none
-	}
+ul li li a:hover{
+	color:#C30;
+	text-decoration:none
+}
 
-	ul li ul.kapsulSolda{
-		right:0
-	}
+ul li ul.kapsulSolda{
+	right:0
+}
+{% endhighlight %}
 
 Kolonlama için yukarıdaki yöntemi uyguluyoruz.
 
@@ -254,70 +261,71 @@ kolonlara sağdan ve üstten margin değerleri vererek yapmaktır. Bu
 metodun avantajı kolon dizilişinin istediğimiz gibi olmasıdır. Bu
 metotta çoğaltacağımız kolonlara ek sınıflar eklemeliyiz. 
 
-	:::html
-	<ul>
-	    <li class="kolon1"><a href="#">Öğe 1</a></li>
-	    <li class="kolon1"><a href="#">Öğe 2</a></li>
-	    <li class="kolon1"><a href="#">Öğe 3</a></li>
-	    <li class="kolon1"><a href="#">Öğe 4</a></li>
-	    <li class="kolon1"><a href="#">Öğe 5</a></li>
-	    <li class="kolon2 sifirla"><a href="#">Öğe 6</a></li>
-	    <li class="kolon2"><a href="#">Öğe 7</a></li>
-	    <li class="kolon2"><a href="#">Öğe 8</a></li>
-	    <li class="kolon2"><a href="#">Öğe 9</a></li>
-	    <li class="kolon2"><a href="#">Öğe 10</a></li>
-	    <li class="kolon3 sifirla"><a href="#">Öğe 11</a></li>
-	    <li class="kolon3"><a href="#">Öğe 12</a></li>
-	    <li class="kolon3"><a href="#">Öğe 13</a></li>
-	    <li class="kolon3"><a href="#">Öğe 14</a></li>
-	    <li class="kolon3"><a href="#">Öğe 15</a></li>
-	    <li class="kolon3"><a href="#">Öğe 16</a></li>
-	</ul>
+{% highlight html %}
+<ul>
+    <li class="kolon1"><a href="#">Öğe 1</a></li>
+    <li class="kolon1"><a href="#">Öğe 2</a></li>
+    <li class="kolon1"><a href="#">Öğe 3</a></li>
+    <li class="kolon1"><a href="#">Öğe 4</a></li>
+    <li class="kolon1"><a href="#">Öğe 5</a></li>
+    <li class="kolon2 sifirla"><a href="#">Öğe 6</a></li>
+    <li class="kolon2"><a href="#">Öğe 7</a></li>
+    <li class="kolon2"><a href="#">Öğe 8</a></li>
+    <li class="kolon2"><a href="#">Öğe 9</a></li>
+    <li class="kolon2"><a href="#">Öğe 10</a></li>
+    <li class="kolon3 sifirla"><a href="#">Öğe 11</a></li>
+    <li class="kolon3"><a href="#">Öğe 12</a></li>
+    <li class="kolon3"><a href="#">Öğe 13</a></li>
+    <li class="kolon3"><a href="#">Öğe 14</a></li>
+    <li class="kolon3"><a href="#">Öğe 15</a></li>
+    <li class="kolon3"><a href="#">Öğe 16</a></li>
+</ul>
+{% endhighlight %}
 
 CSS kodumuzu yazalım
 
-	:::css
-	ul{
-		margin: 0 0 1em 2em;
-		padding: 0;
-	}
+{% highlight css %}
+ul{
+	margin: 0 0 1em 2em;
+	padding: 0;
+}
 
-	ul li{
-		line-height: 1.2em;
-		margin: 0;
-		padding: 0;
-	}
+ul li{
+	line-height: 1.2em;
+	margin: 0;
+	padding: 0;
+}
 
-	* html ul li{
-		position: relative;
-	}
+* html ul li{
+	position: relative;
+}
 
-	ul li.kolon1{
-		margin-left: 0em;
-	}
+ul li.kolon1{
+	margin-left: 0em;
+}
 
-	ul li.kolon2{
-		margin-left: 10em;
-	}
+ul li.kolon2{
+	margin-left: 10em;
+}
 
-	ul li.kolon3{
-		margin-left: 20em;
-	}
+ul li.kolon3{
+	margin-left: 20em;
+}
 
-	li.sifirla{
-		margin-top: -6em;
-	}
+li.sifirla{
+	margin-top: -6em;
+}
 
-	ul li a{
-		display: block;
-		text-decoration: none;
-		width: 7em;
-	}
+ul li a{
+	display: block;
+	text-decoration: none;
+	width: 7em;
+}
 
-	ul li a:hover{
-		text-decoration: underline;
-	}
-
+ul li a:hover{
+	text-decoration: underline;
+}
+{% endhighlight %}
 
 Örnek kodu görmek için [tıklayınız.][2]
 
@@ -337,46 +345,47 @@ Bu metotta çoklu kolonlara ayrılacak listeler kapsayıcı katmanlar ile
 ayrılarak her bir kolon oluşturulur. Bu metotta yükseklik ile ilgi bir
 şey yapmaya gerek yoktur ve esnek bir yapıya sahiptir. 
 
-	:::html
-	<div class="licol">
-	    <ol>
-	        <li>Let me not to the marriage of true minds</li>
-	        <li>Admit impediments; love is not love</li>
-	        <li>Which alters when it alteration finds</li>
-	        <li>Or bends with the remover to remove</li>
-	    </ol>
-	</div>
-	<div class="licol">
-	    <ol start="5">
-	        <li>Oh, no, it is an ever fixed mark</li>
-	        <li>That looks on tempests and is never shaken;</li>
-	        <li>It is the star to every wand'ring bark</li>
-	        <li>Whose worth's unknown, although his height be taken</li>
-	    </ol>
-	</div>
-	<div class="licol">
-	    <ol start="9">
-	        <li>Love's not Time's fool, though rosy lips and cheeks</li>
-	        <li>Within his bending sickle's compass come;</li>
-	        <li>Love alters not with his brief hours and weeks</li>
-	        <li>But bears it out even to the edge of Doom</li>
-	    </ol>
-	</div>
-
+{% highlight html %}
+<div class="licol">
+    <ol>
+        <li>Let me not to the marriage of true minds</li>
+        <li>Admit impediments; love is not love</li>
+        <li>Which alters when it alteration finds</li>
+        <li>Or bends with the remover to remove</li>
+    </ol>
+</div>
+<div class="licol">
+    <ol start="5">
+        <li>Oh, no, it is an ever fixed mark</li>
+        <li>That looks on tempests and is never shaken;</li>
+        <li>It is the star to every wand'ring bark</li>
+        <li>Whose worth's unknown, although his height be taken</li>
+    </ol>
+</div>
+<div class="licol">
+    <ol start="9">
+        <li>Love's not Time's fool, though rosy lips and cheeks</li>
+        <li>Within his bending sickle's compass come;</li>
+        <li>Love alters not with his brief hours and weeks</li>
+        <li>But bears it out even to the edge of Doom</li>
+    </ol>
+</div>
+{% endhighlight %}
 
 CSS kodumuzda kısadır.
 
-	:::css
-	li {
-	    margin:15px 0 0 0;
-	    padding:0 10px 0 0;
-	    line-height:15px;
-	}
+{% highlight css %}
+li {
+    margin:15px 0 0 0;
+    padding:0 10px 0 0;
+    line-height:15px;
+}
 
-	.licol {
-	    float: left;
-	    width: 200px;
-	}
+.licol {
+    float: left;
+    width: 200px;
+}
+{% endhighlight %}
 
 Örnek kodu görmek için [tıklayınız.][3]
 
@@ -384,117 +393,122 @@ Diğer metotlara göre avantajlı görünen bu metodun da kendince sorunları
 vardır. Menü yaparken kapsayıcı bir katman(div) atayıp bu katman içinde
 ul'leri float ve genişlik vererek yan yana koyarız.
 
-	:::html
-	<ul id="menu">
-	    <li>
-	        <a href="">Tencere</a>
-	            <div class="ucluKolon">
-	              <ul>
-	                <li><a href="">Let me not to the marriage of true minds</a></li>
-	                ...
-	              </ul>
-	              <ul>
-	                <li><a href="">Oh, no, it is an ever fixed mark</a></li>
-	                ...
-	              </ul>
-	              <ul>
-	                <li><a href="">Love's not Time's fool, though rosy lips and cheeks</a></li>
-	                ...
-	              </ul>
-	            </div>
-	    </li>
-	....
-	</ul>
+{% highlight html %}
+<ul id="menu">
+    <li>
+        <a href="">Tencere</a>
+            <div class="ucluKolon">
+              <ul>
+                <li><a href="">Let me not to the marriage of true minds</a></li>
+                ...
+              </ul>
+              <ul>
+                <li><a href="">Oh, no, it is an ever fixed mark</a></li>
+                ...
+              </ul>
+              <ul>
+                <li><a href="">Love's not Time's fool, though rosy lips and cheeks</a></li>
+                ...
+              </ul>
+            </div>
+    </li>
+....
+</ul>
+{% endhighlight %}
 
 İlk menü kısmını ilk yaptığımız ile aynı kodlara sahip olacaktır.
 
-	:::css
-	ul{
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
+{% highlight css %}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 
-	ul li{
-		border-top: 3px solid #fff;
-		float: left;
-		position: relative;
-		width: 180px;
-	}
+ul li{
+	border-top: 3px solid #fff;
+	float: left;
+	position: relative;
+	width: 180px;
+}
 
-	ul li:hover, ul li.over{
-		background-color: #eee;
-		border-top: 3px solid #C30;
-		width: 180px;
-	}
+ul li:hover, ul li.over{
+	background-color: #eee;
+	border-top: 3px solid #C30;
+	width: 180px;
+}
 
-	ul li a{
-		color: #0657ad;
-		display: block;
-		font: 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
-		font-weight: bold;
-		padding: 5px 5px 5px 10px;
-		text-decoration: none;
-	}
-
+ul li a{
+	color: #0657ad;
+	display: block;
+	font: 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 5px 5px 5px 10px;
+	text-decoration: none;
+}
+{% endhighlight %}
 
 Daha sonra kapsayıcı katman tanımlarını yapıyoruz. Tabi öncesine
 kapsayamama sorunu kodunu ekleyerek. Kapsayamama sorunu kodlarını başa
 ekliyoruz çünkü bu kısmı sayfa normal gösteriminde gizlememiz gerekiyor.
 
-	:::css
-	div.ucluKolon:after{
-		clear: both;
-		content: ".";
-		display: block;
-		height: 0;
-		visibility: hidden;
-	}
+{% highlight css %}
+div.ucluKolon:after{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
 
-	div.ucluKolon{
-		display: inline-block;
-	}
+div.ucluKolon{
+	display: inline-block;
+}
 
-	* html div.ucluKolon{
-		height: 1%;
-	}
+* html div.ucluKolon{
+	height: 1%;
+}
 
-	div.ucluKolon{
-		display: block;
-	}
+div.ucluKolon{
+	display: block;
+}
 
-	div.ucluKolon{
-		background-color: #eee;
-		border-bottom: 3px solid #C30;
-		display: none;
-		padding: 5px 0 10px 10px;
-		position: absolute;
-		width: 600px;
-	}
+div.ucluKolon{
+	background-color: #eee;
+	border-bottom: 3px solid #C30;
+	display: none;
+	padding: 5px 0 10px 10px;
+	position: absolute;
+	width: 600px;
+}
+{% endhighlight %}
 
 Üst menüde en sağdaki menü elemanının altında açılan menü sağ doğru
 değilde sola doğru açılacak, bunun için
 
-	:::css
-	.sagda{
-		right:0
-	}
+{% highlight css %}
+.sagda{
+	right:0
+}
+{% endhighlight %}
 
 Üç kolonlu yapıyı oluşturmak için katman içindeki ul'lere genişlik ve
 float tanımı yapıyoruz.
 
-	:::css
-	div.ucluKolon ul{
-		float:left;
-		width:200px
-	}
+{% highlight css %}
+div.ucluKolon ul{
+	float:left;
+	width:200px
+}
+{% endhighlight %}
 
 üst menülerin üzerine gelince açılması için
 
-	:::css
-	ul li:hover div.ucluKolon, ul li.over div.ucluKolon{
-		display:block
-	}
+{% highlight css %}
+ul li:hover div.ucluKolon, ul li.over div.ucluKolon{
+	display:block
+}
+{% endhighlight %}
 
 ie6 için javascript kodumuzu yazıyoruz. Yukarıdaki kodun aynısı.
 
@@ -505,29 +519,31 @@ ie6 için javascript kodumuzu yazıyoruz. Yukarıdaki kodun aynısı.
 CSS3 ile birlikte gelen yeni bir özellik sayesinde işler çok
 kolaylaştırıyor. 
 
-	:::html
-	<ul id="menu">
-	    <li>Birinci Oge</li>
-	    <li>İkinci Oge</li>
-	    <li>Üçüncü Öge</li>
-	    <li>Dördüncü Öge</li>
-	    <li>Beşinci Öge</li>
-	    <li>Altıncı Öge</li>
-	    <li>Yedinci Öge</li>
-	    <li>Sekizinci Öge</li>
-	    <li>Dokuzuncu Öge</li>
-	    <li>Onuncu Öge</li>
-	</ul>
+{% highlight html %}
+<ul id="menu">
+    <li>Birinci Oge</li>
+    <li>İkinci Oge</li>
+    <li>Üçüncü Öge</li>
+    <li>Dördüncü Öge</li>
+    <li>Beşinci Öge</li>
+    <li>Altıncı Öge</li>
+    <li>Yedinci Öge</li>
+    <li>Sekizinci Öge</li>
+    <li>Dokuzuncu Öge</li>
+    <li>Onuncu Öge</li>
+</ul>
+{% endhighlight %}
 
 CSS kodumuz ise iki satır
 
-	:::css
-	ul#menu{
-	    width:700px;
-	    column-count: 3;
-	    -moz-column-count: 3;
-	    -webkit-column-count: 3;
-	}
+{% highlight css %}
+ul#menu{
+    width:700px;
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+}
+{% endhighlight %}
 
 Örnek kodu görmek için [tıklayınız.][5]
 
@@ -548,29 +564,30 @@ söylemek gerekirse bunun dışında çalışan javascript kodu bulamadım. 
 Bu kodu kullanırken css kodunuzu harici kullanmalıyız aksi halde kod
 çalışmıyor. 
 
-	:::html
-	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-	"http://www.w3.org/TR/html4/strict.dtd">
-	<html>
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Çoklu kolon</title>
-	<link href="kolon.css" rel="stylesheet" />
-	<!--[if IE]><script type="text/javascript" src="css3-multi-column.js"></script><![endif]-->
-	</head>
-	<body>
-	    <ul class="column">
-	        <li>list item</li>
-	        <li>list item</li>
-	        <li>list item</li>
-	        <li>list item</li>
-	        <li>list item</li>
-	        <li>list item</li>
-	        <li>list item</li>
-	        <li>list item</li>
-	    </ul>
-	</body>
-	</html>
+{% highlight html %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Çoklu kolon</title>
+<link href="kolon.css" rel="stylesheet" />
+<!--[if IE]><script type="text/javascript" src="css3-multi-column.js"></script><![endif]-->
+</head>
+<body>
+    <ul class="column">
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ul>
+</body>
+</html>
+{% endhighlight %}
 
 Bu javascript dosyasını ekleyince css3 aşağıdaki özelliklere karşılık
 gelen özellikleri
