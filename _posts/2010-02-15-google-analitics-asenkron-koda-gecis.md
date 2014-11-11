@@ -22,26 +22,27 @@ sistem, buda sitemizin daha hızlı açılmasını sağlayacaktır.
 
 Kodlar aşağıdaki gibi;
 
-	:::html
-	<!DOCTYPE html>
-	<html>
-	<head>
-	<title>Başlık</title>
-	</head>
-	<body>
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
-	  _gaq.push(['_trackPageview']);
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
-	  })();
-	</script>
-	<!-- site icegi buradan sonra gelir -->
-	</body>
-	</html>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Başlık</title>
+</head>
+<body>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+  })();
+</script>
+<!-- site icegi buradan sonra gelir -->
+</body>
+</html>
+{% endhighlight %}
 
 Kodumuz eskisi gibi karmaşık ama siz karmaşıklığa aldanmayın. Burada
 yapacağımız şey çok basit. 9. satırdaki **UA-XXXXXXX-X** kısım yerine

@@ -20,10 +20,11 @@ Chrome gibi yeni nesil tarayıcılar eğer içerik uzun değilse kaydırma
 olsun yada olması sağda yatay kaydırma çubuğu daima görünüyor. Bu durumu
 eşitlemek için çok basit bir kod yazmamız yeteli oluyor.
 
-	:::css
-	html{
-		overflow:auto;
-	}
+{% highlight css %}
+html{
+	overflow:auto;
+}
+{% endhighlight %}
 
 ## Kaynaklar
 

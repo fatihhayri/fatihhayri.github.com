@@ -25,8 +25,9 @@ istemediğimiz etiketleri kaldırıyoruz.
 Örneğin benim ilk kaldırdığım kod widows kodu. Bu kod için xml
 dosyasındaki aşağıdaki kodu silmek gerekiyor.
 
-	:::xml
+{% highlight xml %}
 	<menuitem label="widows" value="widows:"icon="shared/mm/images/hintMisc.gif" />
+{% endhighlight %}
 
 Bunun dışında xml dokümanındaki kullanmadığım ve bir daha
 kullanmayacağım css kodlarını sildim. Silerken dikkat edin bu dosya
