@@ -36,26 +36,28 @@ Eksi Margin'i iki yerde uygularız.
 Herhangi bir konumlandırma ataması yapılmayan tüm elemanlar sabit
 konumlandırılmıştır.
 
-	:::css
-	#kutu1 {
-	    width: 200px;
-	    height: 100px;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9
-	}
+{% highlight css %}
+#kutu1 {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9
+}
 
-	#kutu2 {
-	    width: 200px;
-	    height: 100px;
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf
-	}
+#kutu2 {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf
+}
+{% endhighlight %}
 
 HTML;
 
-	:::html
-	<div id="kutu1"></div>
-	<div id="kutu2"></div>
+{% highlight html %}
+<div id="kutu1"></div>
+<div id="kutu2"></div>
+{% endhighlight %}
 
 Örnke kodu görmek için [tıklayınız.][]
 
@@ -66,21 +68,22 @@ kutuya eksi margin atarsak örneğin alttan -20px gibi.
 
 Alttaki kutuyu kendi üzerine doğru 20px çekecektir.
 
-	:::css
-	#kutu1 {
-	    width: 200px;
-	    height: 100px;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9;
-	    margin-bottom:-20px
-	}
+{% highlight css %}
+#kutu1 {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9;
+    margin-bottom:-20px
+}
 
-	#kutu2 {
-	    width: 200px;
-	    height: 100px;
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf
-	}
+#kutu2 {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf
+}
+{% endhighlight %}
 
 Örnke kodu görmek için [tıklayınız.][1]
 
@@ -88,21 +91,22 @@ Alttaki kutuyu kendi üzerine doğru 20px çekecektir.
 
 Eğer ikinci kutuya yukarıdan eksi margin verirsek
 
-	:::css
-	#kutu1 {
-	    width: 200px;
-	    height: 100px;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9;
-	}
+{% highlight css %}
+#kutu1 {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9;
+}
 
-	#kutu2 {
-	    width: 200px;
-	    height: 100px;
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf;
-	    margin-top:-20px
-	}
+#kutu2 {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf;
+    margin-top:-20px
+}
+{% endhighlight %}
 
 Örnke kodu görmek için [tıklayınız.][2]
 
@@ -124,11 +128,11 @@ kullanırız. Bu bize arama motorları içinde avantaj sağlar. 
 
 Normal bir içerik ve başlık kullanımına örnek verelim.
 
-	:::html
-	<p>Integer sagittis ... elementum. </p>
-	<h1>Donec id ultricies mi.</h1>
-	<p>Lorem ipsum ... eros.</p>
-
+{% highlight html %}
+<p>Integer sagittis ... elementum. </p>
+<h1>Donec id ultricies mi.</h1>
+<p>Lorem ipsum ... eros.</p>
+{% endhighlight %}
 
 Görünüm aşağıdaki gibi olacaktır
 
@@ -145,37 +149,39 @@ Bir başka çözüm yolu ise ki bu daha kolaydır ve genelde tercih edilir.
 Başlık etiketinin alt margin değerine eksi değer vererek paragraf
 yaklaştırılır. 
 
-	:::css
-	h1{
-		margin-bottom:-20px
-	}
+{% highlight css %}
+h1{
+	margin-bottom:-20px
+}
+{% endhighlight %}
 
 ![negatifmargin_baslik2][]
 
 **1.3. Statik elemanlarda bir başka durumda kutuların iç içe olma
 durumunda vardır.**
 
-	:::css
-	#kutu1 {
-	    width:200px;
-	    height: 130px;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9;
-	}
-	#kutu2 {
-	    height: 100px;
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf;
-	    margin:10px -20px
-	}
+{% highlight css %}
+#kutu1 {
+    width:200px;
+    height: 130px;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9;
+}
+#kutu2 {
+    height: 100px;
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf;
+    margin:10px -20px
+}
+{% endhighlight %}
 
 HTML;
 
-	:::html
-	<div id="kutu1">
-		<div id="kutu2"></div>
-	</div>
-
+{% highlight html %}
+<div id="kutu1">
+	<div id="kutu2"></div>
+</div>
+{% endhighlight %}
 
 İçteki kutuya sağdan ve soldan eksi değerler verdiğimizde dış kutunu
 genişliğini otomatik olarak alan içerideki kutu sağ ve soldan verilen
@@ -200,38 +206,40 @@ ie6'da ise yukarıdaki gibi görünmektedir.
 Bu durumu düzeltmek için düzeltme kodu yazmalıyız. ie7 için min-height:0
 tanımı yeterlidir.
 
-	:::css
-	#kutu1 {
-	    width:200px;
-	    height: 130px;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9;
-	}
-	#kutu2 {
-	    height: 100px;
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf;
-	    margin:10px -20px;
-	    min-height:0
-	}
+{% highlight css %}
+#kutu1 {
+    width:200px;
+    height: 130px;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9;
+}
+#kutu2 {
+    height: 100px;
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf;
+    margin:10px -20px;
+    min-height:0
+}
+{% endhighlight %}
 
 ie6 için ise daha farklı bir kod yazmalıyız.
 
-	:::css
-	#kutu1 {
-	    width:200px;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9;
-	}
-	#kutu2 {
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf;
-	    margin:10px -20px;
-	}
-	* html #kutu2{
-	    position:relative;
-	    height:1px
-	}
+{% highlight css %}
+#kutu1 {
+    width:200px;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9;
+}
+#kutu2 {
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf;
+    margin:10px -20px;
+}
+* html #kutu2{
+    position:relative;
+    height:1px
+}
+{% endhighlight %}
 
 Örnke kodu görmek için [tıklayınız.][4]
 
@@ -244,49 +252,51 @@ görür.
 
 Float uygulanmış iki elemanı düşünelim.
 
-	:::css
-	#kutu1 {
-	    float:left;
-	    width: 200px;
-	    height: 100px;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9;
-	}
-	#kutu2 {
-	    float:left;
-	    width: 200px;
-	    height: 80px;
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf
-	}
+{% highlight css %}
+#kutu1 {
+    float:left;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9;
+}
+#kutu2 {
+    float:left;
+    width: 200px;
+    height: 80px;
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf
+}
+{% endhighlight %}
 
-
-	:::html
-	<div id="kutu1">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ultricies mi.
-	</div>
-	<div id="kutu2">
-		Etiam vel arcu nisl. Sed pharetra gravida diam sed mattis.
-	</div>
+{% highlight html %}
+<div id="kutu1">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ultricies mi.
+</div>
+<div id="kutu2">
+	Etiam vel arcu nisl. Sed pharetra gravida diam sed mattis.
+</div>
+{% endhighlight %}
 
 Birinci kutuya sağ eksi margin verdiğimizde
 
-	:::css
-	#kutu1 {
-	    float:left;
-	    width: 200px;
-	    height: 100px;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9;
-	    margin-right:-50px
-	}
-	#kutu2 {
-	    float:left;
-	    width: 200px;
-	    height: 80px;
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf
-	}
+{% highlight css %}
+#kutu1 {
+    float:left;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9;
+    margin-right:-50px
+}
+#kutu2 {
+    float:left;
+    width: 200px;
+    height: 80px;
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf
+}
+{% endhighlight %}
 
 Örnke kodu görmek için [tıklayınız.][5]
 
@@ -311,39 +321,41 @@ oluşturmak istediğimizde yarar.
 sağ kolon eklemek istersek, yukarıdaki kodu devam ettirmemiz yeterli
 olacaktır.
 
-	:::css
-	#kutu1 {
-	    float:left;
-	    width: 100%;
-	    height: 100px;
-	    background-color:#e5ecf9;
-	    margin-right:-200px
-	}
-	#kutu2 {
-	    float:left;
-	    width: 200px;
-	    height: 80px;
-	    background-color:#ffb4bf
-	}
+{% highlight css %}
+#kutu1 {
+    float:left;
+    width: 100%;
+    height: 100px;
+    background-color:#e5ecf9;
+    margin-right:-200px
+}
+#kutu2 {
+    float:left;
+    width: 200px;
+    height: 80px;
+    background-color:#ffb4bf
+}
+{% endhighlight %}
 
-	:::html
-	<div id="kutu1">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ultricies mi.</p>
-	</div>
-	<div id="kutu2">
-		<p>Etiam vel arcu nisl. Sed pharetra gravida diam sed mattis.</p>
-	</div>
+{% highlight html %}
+<div id="kutu1">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ultricies mi.</p>
+</div>
+<div id="kutu2">
+	<p>Etiam vel arcu nisl. Sed pharetra gravida diam sed mattis.</p>
+</div>
+{% endhighlight %}
 
 ![float_eksimargin_esnek][]
 
 %100 içeriği sağ kolonun altında kalıyor. Bunu engellemek için
 içeriğindeki paragrafa sağ margin değeri atamalıyız.
 
-	:::css
-	#kutu1 p{
-		margin-right:220px
-	}
-
+{% highlight css %}
+#kutu1 p{
+	margin-right:220px
+}
+{% endhighlight %}
 
 Normalde 200px yeterli olacaktı ancak içerik ile sağ kolon arasına 20px
 lik bir mesafe koyarak birbirine yapışmasınıda engellemiş olduk.
@@ -353,23 +365,24 @@ lik bir mesafe koyarak birbirine yapışmasınıda engellemiş olduk.
 Sağ ve sol kolon diye bir ayrım yapmak içinde soldaki kolonun ardalan
 rengini kaldırıp içindeki paragrafa vererek bu sorunu çözebiliriz.
 
-	:::css
-	#kutu1 {
-	    float:left;
-	    width: 100%;
-	    margin-right:-200px
-	}
-	#kutu1 p{
-	    margin:0 220px 0 0;
-	    height: 100px;
-	    background-color:#e5ecf9;
-	}
-	#kutu2 {
-	    float:left;
-	    width: 200px;
-	    height: 80px;
-	    background-color:#ffb4bf
-	}
+{% highlight css %}
+#kutu1 {
+    float:left;
+    width: 100%;
+    margin-right:-200px
+}
+#kutu1 p{
+    margin:0 220px 0 0;
+    height: 100px;
+    background-color:#e5ecf9;
+}
+#kutu2 {
+    float:left;
+    width: 200px;
+    height: 80px;
+    background-color:#ffb4bf
+}
+{% endhighlight %}
 
 Örnke kodu görmek için [tıklayınız.][6]
 
@@ -380,28 +393,29 @@ rengini kaldırıp içindeki paragrafa vererek bu sorunu çözebiliriz.
 Yukarıda yan yana elemanlardaki durumu gösterdik peki iç içe elemanlarda
 eksi margin kullanımda nasıl sonuçlar çıkacaktır.
 
-	:::css
-	#kutu1 {
-	    float:left;
-	    width: 200px;
-	    height: 100px;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9;
-	}
-	#kutu2 {
-	    float:right;
-	    width: 50px;
-	    height: 80px;
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf;
-	}
+{% highlight css %}
+#kutu1 {
+    float:left;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9;
+}
+#kutu2 {
+    float:right;
+    width: 50px;
+    height: 80px;
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf;
+}
+{% endhighlight %}
 
-	:::html
-	<div id="kutu1">
-	  <div id="kutu2">Donec id ultricies mi.</div>
-	  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-	 </div>
-
+{% highlight html %}
+<div id="kutu1">
+  <div id="kutu2">Donec id ultricies mi.</div>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ </div>
+{% endhighlight %}
 
 Örnke kodu görmek için [tıklayınız.][7]
 
@@ -410,27 +424,28 @@ eksi margin kullanımda nasıl sonuçlar çıkacaktır.
 Birinci kutu içerisinde sağa hizalanmış ikinci kutuyu sağa doğru birinci
 kutu dışarısına çıkararak bir çok uygulamada işimizie yaracaktır.
 
-	:::css
-	#kutu1 {
-	    float:left;
-	    width: 200px;
-	    height: 100px;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9;
-	}
-	#kutu2 {
-	    float:right;
-	    width: 80px;
-	    height: 80px;
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf;
-	    margin:10px -50px 0 0
-	}
-	* html #kutu2{
-	    position:relative;
-	}
+{% highlight css %}
+#kutu1 {
+    float:left;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9;
+}
+#kutu2 {
+    float:right;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf;
+    margin:10px -50px 0 0
+}
+* html #kutu2{
+    position:relative;
+}
+{% endhighlight %}
 
-Örnke kodu görmek için [tıklayınız.][8]
+Örnek kodu görmek için [tıklayınız.][8]
 
 ![float_eksimargin_icice2][]
 
@@ -438,49 +453,53 @@ Bir başka uygulama şeklide
 
 Bir içerik ve başlığı normal şekilde normal akış içerisinde iken
 
-	:::css
-	#kutu1 {
-	    float:left;
-	    border: 2px solid #659ad8;
-	    background-color:#e5ecf9;
-	    padding:0 20px
-	}
-	#kutu1 h2{
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf;
-	}
+{% highlight css %}
+#kutu1 {
+    float:left;
+    border: 2px solid #659ad8;
+    background-color:#e5ecf9;
+    padding:0 20px
+}
+#kutu1 h2{
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf;
+}
+{% endhighlight %}
 
-	:::html
-	<div id="kutu1">
-	    <h2>Donec id ultricies mi.</h2>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor vehicula nisl, et tincidunt sapien venenatis quis. .. felis.</p>
-	</div>
+{% highlight html %}
+<div id="kutu1">
+    <h2>Donec id ultricies mi.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor vehicula nisl, et tincidunt sapien venenatis quis. .. felis.</p>
+</div>
+{% endhighlight %}
 
-Örnke kodu görmek için [tıklayınız.][9]
+Örnek kodu görmek için [tıklayınız.][9]
 
 ![float_eksimargin_icice3][]
 
 Ancak buradaki başlığı kutu dışına alarak farklı bir görünüm elde
 edebiliriz.
 
-	:::css
-	#kutu1 h2{
-	    border: 2px solid #cd8a93;
-	    background-color:#ffb4bf;
-	    margin-top:-20px
-	}
+{% highlight css %}
+#kutu1 h2{
+    border: 2px solid #cd8a93;
+    background-color:#ffb4bf;
+    margin-top:-20px
+}
+{% endhighlight %}
 
-Örnke kodu görmek için [tıklayınız.][10]
+Örnek kodu görmek için [tıklayınız.][10]
 
 ![float_eksimargin_icice4][]
 
 ve tabi ie 6 için
 
-	:::css
-	* html #kutu1 h2{
-		position:relative;
-		height:1px
-	}
+{% highlight css %}
+* html #kutu1 h2{
+	position:relative;
+	height:1px
+}
+{% endhighlight %}
 
 **Eksi Margin Uygulamaları**
 

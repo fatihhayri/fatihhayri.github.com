@@ -17,35 +17,35 @@ ie6 liste background özelliklerini(resim veya renk) görmüyor.
 
 Bu durmu bir örnek ile gösterelim.
 
-	:::html
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>ie lsite ardalan sorunu</title>
-	<style>
-	#menuKapsul{
-	position:relative;
-	float:left;
-	}
-	ul li{
-	background:url(ikon.gif) 3px 9px no-repeat;
-	list-style:none;
-	padding-left:12px;
-	}
-	</style>
-	</head>
-	<body>
-	<div id="menuKapsul">
-		<ul>
-	    	<li>Liste 1</li>
-	        <li>Liste 2</li>
-	        <li>Liste 3</li>
-	    </ul>
-	</div>
-	</body>
-	</html>
-
+{% highlight html %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ie lsite ardalan sorunu</title>
+<style>
+#menuKapsul{
+position:relative;
+float:left;
+}
+ul li{
+background:url(ikon.gif) 3px 9px no-repeat;
+list-style:none;
+padding-left:12px;
+}
+</style>
+</head>
+<body>
+<div id="menuKapsul">
+	<ul>
+    	<li>Liste 1</li>
+        <li>Liste 2</li>
+        <li>Liste 3</li>
+    </ul>
+</div>
+</body>
+</html>
+{% endhighlight %}
 
 Yukarı görülen basit bir listenin ardalanına resim yerleştiriyoruz.
 Kapsayıcı elemanada **position:relative;** ve **float:left;** tanımları
@@ -58,13 +58,14 @@ görünmemesidir. Sorunu çözerken bayağı bir cebelleşmiştim. Sonunda
 Çözüm ise çok basit. Ardalan resmi uyguladığımız liste öğesine
 **postion:relative** tanımı yapıyoruz ve bu kadar düzeliyor.
 
-	:::css
-	ul li{
-		background:url(ikon.gif) 3px 9px no-repeat;
-		list-style:none;
-		padding-left:12px;
-		position:relative
-	}
+{% highlight css %}
+ul li{
+	background:url(ikon.gif) 3px 9px no-repeat;
+	list-style:none;
+	padding-left:12px;
+	position:relative
+}
+{% endhighlight %}
 
 bu kadar bu kod bizim sorunlarımızı gideriyor.
 
