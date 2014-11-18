@@ -186,7 +186,7 @@ Yukarıda konu daha iyi anlaşılması için ayrı ayrı gösterilmiştir.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/myzQX/26/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/myzQX/35/embedded/result,css,html"></iframe>
 
 **strech**
 
@@ -202,7 +202,7 @@ Yukarıda konu daha iyi anlaşılması için ayrı ayrı gösterilmiştir.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/egcdh/2/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/egcdh/11/embedded/result,css,html"></iframe>
 
 **repeat**
 
@@ -218,7 +218,7 @@ Yukarıda konu daha iyi anlaşılması için ayrı ayrı gösterilmiştir.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VnJnz/2/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VnJnz/3/embedded/result,css,html"></iframe>
 
 **round**
 
@@ -247,7 +247,7 @@ a.backButton{
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3SHNk/14/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3SHNk/16/embedded/result,css,html"></iframe>
 
 Yukarıdaki örnekte görüldüğü gibi basit bir kod ile(siz bakmayın
 öneklerin kalabalığına) ensek bir buton elde etmiş oluyoruz.
