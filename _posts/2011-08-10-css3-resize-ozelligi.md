@@ -115,7 +115,7 @@ Resimler için güzel bir uygulama olabilir.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Xk3Gr/8/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Xk3Gr/10/embedded/result,css,html"></iframe>
 
 **Tarayıcı Desteği**
 
