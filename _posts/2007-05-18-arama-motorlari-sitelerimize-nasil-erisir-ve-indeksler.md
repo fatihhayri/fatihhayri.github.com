@@ -107,10 +107,6 @@ yazıyı [webmaster blog][]’umuzda yayınladık:
 -   [Using robots.txt files][]
 -   [All about Googlebot][]
 
-Başlıca arama motorları tarafından kullanılan bot’ların kullanışlı bir
-listesini aşağıdaki adreste bulabilirsiniz:
-[http://www.robotstxt.org/wc/active/html/index.html][]
-
 > Bu çeviri makale için eDe'ye teşekkür ederim. Fatih Hayrioğlu
 
 
@@ -123,4 +119,3 @@ listesini aşağıdaki adreste bulabilirsiniz:
   [webmaster blog]: http://googlewebmastercentral.blogspot.com/
   [Using robots.txt files]: http://sitemaps.blogspot.com/2006/02/using-robotstxt-file.html
   [All about Googlebot]: http://googlewebmastercentral.blogspot.com/2006/08/all-about-googlebot.html
-  [http://www.robotstxt.org/wc/active/html/index.html]: http://www.robotstxt.org/wc/active/html/index.html

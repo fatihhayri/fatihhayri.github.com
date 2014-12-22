@@ -33,6 +33,4 @@ yürekten bağlandığı bir siyasî rejimin, komünizmin, can çekiştiğini,
 bugünkü dağılma ya da çöküşün kaçınılmazlığını da görüyoruz bu çok
 duygulandıran ve düşündüren romanda.
 
-  [Elveda Gülsarı]: /images/gulsari.kucukresim.jpg
   ![Elveda Gülsarı][]]: /images/gulsari.jpg
-    "Elveda Gülsarı"
