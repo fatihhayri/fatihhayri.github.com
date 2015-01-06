@@ -83,7 +83,7 @@ böyle bir javascript kodu var. Ayrıca [Polymer](https://www.polymer-project.or
 
 ## Sonuç
 
-Bir çok alanda kullnılabilecek güzel bir yapı. Benim ilk duyduğumda sadece html ile yapılan bir yapı olduğunu düşünmüştüm. Sonra işin içine javascript girdiğini öğrendiğimde biraz soğudum, ama buda iyidir. Sadece html ile yapmak daha güzel olurdu. 
+Bir çok alanda kullanılabilecek güzel bir yapı. Benim ilk duyduğumda sadece html ile yapılan bir yapı olduğunu düşünmüştüm. Sonra işin içine javascript girdiğini öğrendiğimde biraz soğudum, ama buda iyidir. Sadece html ile yapmak daha güzel olurdu. 
 
 Sonuç olarak güzel bir özellik ama bazı sorunlarıda beraberinde getiriyor. Örneğin sonradan javascript yardımı ile eklenen html arama motorlarının tarama alanı dışana çıkması sorunu oluşturacaktır. Google'un javascriptleri yorumlayacağı durumda bu sorun olmaktan çıkacak gibi. Ama henüz erken.
 
