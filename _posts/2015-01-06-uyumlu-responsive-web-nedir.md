@@ -18,7 +18,7 @@ Durum böyle olunca masaüstü için tasarlanan ve kodlanan web siteleri mobil c
 
 Bir arada masaüstü için farklı mobil için farklı site tasarlanıp kodlamayı seçenler olsa da, bu işten yavaş yavaş vaz geçiliyor.
 
-![uyumlu_web][ Uyumlu Web]
+![Uyumlu Web][uyumlu_web]
 
 Yukarıdaki resimdeki örnekte görüldüğü gibi tarayıcınızın genişliğini değiştirdiğinizde farklı tasarımlar görmektesiniz. Bu sayede siteniz farklı araçlara aynı kaynak üzerinde **uyumlu** hale gelmiş oldu. Tabi web sitelerini uyumlu hale getirmek emek isteyen bir çalışma gerektirmektedir. Üç liraya beş köfte olmuyor maalesef. Projelenmesinden tasarımına ve kodlanmasına kadar eski alışkanlıklarınızı değiştirmemiz gerekiyor.
 
@@ -82,4 +82,4 @@ Kalın sağlıcakla.
  -  [http://caniuse.com/#search=media](http://caniuse.com/#search=media)
  - [http://borayalcin.me/2012/03/08/responsive-design-icin-turkce-karsilik/](http://borayalcin.me/2012/03/08/responsive-design-icin-turkce-karsilik/)
 
-  [uyumlu_web]: /images/uyumlu_web.png
+[uyumlu_web]: /images/uyumlu_web.png
