@@ -32,7 +32,7 @@ Uyumlu web sayfaları kodlayarak farklı platformlar için kodlanan sayfalar tü
 
 ### Daha az çalışma zamanı
 
-Uyumlu web sayfası hazırlarken bir site üzerinden tüm platforma ait işler yapılırken. Diğer seçeneklerde akıllı telefonlar için ayrı, masaüstü için ayrı, tabletler için ayrı v.s vs. kodlama yapmak gerekir. Bu da çok büyük bir zaman kaybına neden olur.
+Uyumlu web sayfası hazırlarken bir site üzerinden tüm platforma ait işler yapılırken. Diğer seçeneklerde akıllı telefonlar için ayrı, masaüstü için ayrı, tabletler için ayrı kodlama yapmak gerekir. Bu da çok büyük bir zaman kaybına neden olur.
 
 Uyumlu web ile tüm platformlar için tek elden site yönetimi sağlanır. Websiteniz her platformdan erişilebilir olur. Doğru bir yapı kurarak ileride ortaya çıkabilecek farklı araçlar için otomatik çözüm üretmiş olursunuz.
 
@@ -42,7 +42,7 @@ Web sitenizin birden çok farklı sürümünü oluşturmak hantal bir yapı ve y
 
 ### Daha az para
 
-Farklı platformlar için uygulama veya site yaptırmak ekstra para harcamasına neden olacaktır. iPad uygulaması için ayrı emek ve para, iphone için ayrı emek ve para, Android uygulaması için ayrı emek ve para, masaüstü site için ayrı emek ve para harcaması bir çok şirket için büyük bir gider kalemi olarak görülebilir. 
+Farklı platformlar için uygulama veya site yaptırmak fazladan para harcamasına neden olacaktır. iPad uygulaması için ayrı emek ve para, iphone için ayrı emek ve para, Android uygulaması için ayrı emek ve para, masaüstü site için ayrı emek ve para harcaması bir çok şirket için büyük bir gider kalemi olarak görülebilir. 
 
 Uyumlu web sayfaları ile tek bir site ile bu farklı araç ve platformlara tek yerden çözüm ve tek ödeme yapma imakanımız var. Patronlar, kulağa hoş geliyor değil mi?
 
@@ -60,15 +60,15 @@ Uyumlu web sayflarının esnekliği sayesinde yeni çıkacak olan araçlar ve pl
 
 ### Paylaşıma tek çözüm
 
-Paylaşım yapılan bir sayfanıza farklı platformlardan erişiminde sorun yaşamayız. Diğer seçeneklerde iki farklı url'leden dolayı sorun yaşanır. Örneğin akıllı telefondan bakarken paylaşılan bağlantıya masaüstü kullanıcı açtığında karşısına mobil için tasarlanmış sayfa gelir. Buda güzel bir deneyim olmaz.
+Paylaşım yapılan bir sayfamızın farklı platformlardan erişiminde sorun yaşamayız. Diğer seçeneklerde iki farklı url'leden dolayı sorun yaşanır. Örneğin akıllı telefondan bakarken paylaşılan bağlantıya masaüstü kullanıcı açtığında karşısına mobil için tasarlanmış sayfa gelir. Buda güzel bir deneyim olmaz.
 
 ### Yüksek tarayıcı destek oranı
 
-Uyumlu web sayfaları kodlarken kullandığımız @media sorguları ie8 hariç tüm tarayıcılar desteklemektedir. Şu an ki orana baktığımızda tarayıcı destek oranı %97'dir. Bu oran çok yüksek bir oran. 
+Uyumlu web sayfaları kodlarken kullandığımız @media sorgularını ie8 hariç tüm tarayıcılar desteklemektedir. Şu an ki orana baktığımızda tarayıcı destek oranı %97'dir. Bu oran çok yüksek bir oran. 
 
 ## Sonuç
 
-Sonuç olarak baktığımızda arkasına aldığı rüzgar ile eksiklerinide yakın zamanda gidereceğini düşünürsek web sitelerinin uyumlu web dünyasına hızlıca gireceğini tahmit etmek çok büyük bir kehanet değildir. Resim ve performans sorunları için üretilen çözümler ile ihtiyaçları tam karşılayan bir yapı olarak önümüze çıkıyor uyumlu web. 
+Sonuç olarak baktığımızda arkasına aldığı rüzgar ile eksiklerinide yakın zamanda gidereceğini düşünürsek web sitelerinin uyumlu web dünyasına hızlıca gireceğini tahmin etmek çok büyük bir kehanet değildir. Resim ve performans sorunları için üretilen çözümler ile ihtiyaçları tam karşılayan bir yapı olarak önümüze çıkıyor uyumlu web. 
 
 Kalın sağlıcakla.
 
