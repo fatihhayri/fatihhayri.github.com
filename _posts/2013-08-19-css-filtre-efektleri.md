@@ -6,7 +6,7 @@ Category: CSS
 tags: filtre webkit css3 efekt
 ---
 
-CSS filtreleri photoshop’a benzer filtreleri HTML elemanlarına uygulamamızı sağlıyor. Tek satır CSS kodu ile bu efektleri verebilmek çok hoş. CSS gittikçe web’in görselliğini tek başına karşılayacak bir yöne doğru evriliyor. **Bu özelliği şimdilik sadece webkit tabanlı tarayıcılar destekliyor.** Bu filtreler genelde resimler, ardalan resimleri ve kenar çizgilerine uygulanmaktadır.
+CSS filtreleri photoshop’a benzer filtreleri HTML elemanlarına uygulamamızı sağlıyor. Tek satır CSS kodu ile bu efektleri verebilmek çok hoş. CSS gittikçe web’in görselliğini tek başına karşılayacak bir yöne doğru gidiyor. Bu filtreler genelde resimler, ardalan resimleri ve kenar çizgilerine uygulanmaktadır.
 
 **Not:** İnternet Explorer eski sürümleri standart olmayan filtre desteğini sunuyor.
 
@@ -103,7 +103,7 @@ Resmi siyah beyaz yapıp, ayrıca kontrastını düşürerek baskı görünümü
 
 |![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
 |:-----------------:|:---------------:|:-------------------:|
-|**18+ (-webkit)**|*desteklemiyor*|*desteklemiyor*|
+|**18+ (-webkit)**|*desteklemiyor*|*35+*|
 {: .tarayici-uyumi}
 
 **Mobil Tarayıcılar**
