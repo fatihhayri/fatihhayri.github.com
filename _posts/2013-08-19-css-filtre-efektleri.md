@@ -103,7 +103,7 @@ Resmi siyah beyaz yapıp, ayrıca kontrastını düşürerek baskı görünümü
 
 |![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
 |:-----------------:|:---------------:|:-------------------:|
-|**18+ (-webkit)**|*desteklemiyor*|**35+*|
+|**18+ (-webkit)**|*desteklemiyor*|**35+**|
 {: .tarayici-uyumi}
 
 **Mobil Tarayıcılar**
