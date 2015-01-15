@@ -65,7 +65,7 @@ Ayar tamam. Şimdi bu özelliği uygulamak için **git grep -n** ile arama yapt�
 
 **Cmd(⌘)** basıp metnin üzerine gelince el işareti çıkıyor, ekran görüntüsünde gözükmemiş.
 
-Özellik süper değiil mi?
+Özellik süper değil mi?
 
 ### Karakterler arasında gezmek
 
