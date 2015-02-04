@@ -6,7 +6,7 @@ Category: Web Standartları
 tags: ActiveX, fare imleci, flash, ie, internet explorer, kenarlık
 ---
 
-[İnternet Explorer ActiveX][] güncellmesi yaptıktan sonra sitelerde
+[İnternet Explorer ActiveX][] güncellemesi yaptıktan sonra sitelerde
 kullanılan flash dosyalarının üzerine mouse ile gelen ziyaretçilerin
 karşısına swf alanını kapsayan çirkin bir kenar çizgisi çıkıyor. Embeded yerine
 FlashObject nesnesi kullanarak bu sorun çözülebilir. Macromedia bunun
