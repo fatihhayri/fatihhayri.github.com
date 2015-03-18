@@ -15,13 +15,14 @@ de daha fazlası var
 kütüphanesini kendi hostu üzerinden yüklememizi sağlıyor. Bu bize ön
 belleğe alınana dosyanın daha hızlı yüklenmesini sağlar.
 
-	:::javascript
+{% highlight javascript %}
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
 	<script type="text/javascript">
 	 $(document).ready(function() {
 		//isler burada
 	 });
 	</script>
+{% endhighlight %}
 
 Bu sayede jquery kütüphanesini her projeye eklerken kopyala yapıştır ile
 de uğraşmak zorunda kalmıyoruz. İstediğimiz her yerde jQuery kullanma
@@ -29,34 +30,36 @@ imkanıda veriyor bize bu kod.
 
 **2- jquery kısaltması:** jquery kodlarımzı yazarken bazen 
 
-	:::javascript
-	$(document).ready(function (){});
-
+{% highlight javascript %}
+$(document).ready(function (){});
+{% endhighlight %}
 
 aklımıza gelmeye bilir
 
-	:::javascript
-	$(function (){});
+{% highlight javascript %}
+$(function (){});
+{% endhighlight %}
 
 bu daha kolay ve akılda kalıcı bence
 
 **3- fare üzerinde iken ve üzerinden gittiğinde**
 
-	:::javascript
-	$("li").hover( function () {
-		// fare üzerinde iken bunu yap
-	}, function () {
-		// fare kaçınca bunu yap
-	});
-
+{% highlight javascript %}
+$("li").hover( function () {
+	// fare üzerinde iken bunu yap
+}, function () {
+	// fare kaçınca bunu yap
+});
+{% endhighlight %}
 
 **4- not seçicisi:** Bir seri elemana yaptırdığımız bir işi aradan bir
 tane elemanın yapmasını istiyorsak bu seçiciyi uygulayabiliriz.
 
-	:::javascript
-	$('ul#sekme li a').not("ul li#diger a").click(function(){
-	    // yapılacak işler
-	});
+{% highlight javascript %}
+$('ul#sekme li a').not("ul li#diger a").click(function(){
+    // yapılacak işler
+});
+{% endhighlight %}
 
 Yukarıdaki kodlamada biz sekmelere bir tanım yapıyoruz ama en son
 sekmeye tıklayınca bu işlemin yapılmasını istemiyoruz. Bu iş için
@@ -67,37 +70,41 @@ biçilmiş kaftan :not seçicisi
 http://www.fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/ anlatırken
 kullanmıştım.
 
-	:::javascript
-	$(this).parent('li').addClass('sekmeSecili').siblings().removeClass('sekmeSecili');
-
+{% highlight javascript %}
+$(this).parent('li').addClass('sekmeSecili').siblings().removeClass('sekmeSecili');
+{% endhighlight %}
 
 Bu kodda da görüldüğü gibi tıklanan sekmeye sekmeSecili sınıfı atıyoruz
 diğer sekmelerde aynı sınıf varsa onları kaldırıyoruz.
 
 **6- HTML içine jQuery den eleman eklemek:**
 
-	:::javascript
-	var ekleBunu = $('<div></div>');
-	ekleBunu.attr("id","yeniKatman").appendTo("body");
+{% highlight javascript %}
+var ekleBunu = $('<div></div>');
+ekleBunu.attr("id","yeniKatman").appendTo("body");
+{% endhighlight %}
 
 **7- Bir elemanın varlığını kontrol etmek**
 
-	:::javascript
-	if ($("#someDiv").length) {
-		// eğer varsa bunu yap
-	}
+{% highlight javascript %}
+if ($("#someDiv").length) {
+	// eğer varsa bunu yap
+}
+{% endhighlight %}
 
 **8- Kolay kullanılan tarayıcıyı yakalama**
 
-	:::javascript
-	$.browser.safari
-	$.browser.msie
-	$.browser.mozilla
+{% highlight javascript %}
+$.browser.safari
+$.browser.msie
+$.browser.mozilla
+{% endhighlight %}
 
 tarayıcı sürümünü yakalamak için
 
-	:::javascript
-	if ($.browser.msie && $.browser.version <= 7 ) 
+{% highlight javascript %}
+if ($.browser.msie && $.browser.version <= 7 ) 
+{% endhighlight %}
 
 ## Kaynaklar
 
