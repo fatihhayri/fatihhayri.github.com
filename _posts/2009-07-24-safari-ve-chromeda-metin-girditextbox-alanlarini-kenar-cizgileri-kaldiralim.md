@@ -29,49 +29,50 @@ odaklanma çizgileri sorun çıkarıyor. Bir örnek yapalım.
 En son projelerimden bonus.com.tr'de böyle bir sorun ile karşılaştığımda
 buna bir çözüm aradım. İlk kodum şöyle idi.
 
-	:::html
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Untitled Document</title>
-	<style type="text/css">
-	body{background-color:#52c520;}
+{% highlight html %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body{background-color:#52c520;}
 
-	.aramaMetinKutusu{
-		background:url(images/arama_zemini.gif) 0 0 no-repeat;
-		width:202px;
-		height:29px;
-	}
+.aramaMetinKutusu{
+	background:url(images/arama_zemini.gif) 0 0 no-repeat;
+	width:202px;
+	height:29px;
+}
 
-	.aramaMetinKutusuOdak{
-		background:url(images/arama_zemini.gif) 0 -31px no-repeat;
-		width:202px;
-		height:29px;
-	}
+.aramaMetinKutusuOdak{
+	background:url(images/arama_zemini.gif) 0 -31px no-repeat;
+	width:202px;
+	height:29px;
+}
 
-	.aramaMetinKutusu input{
-		width:190px;
-		margin:5px 0 0 4px;
-		border:none;
-	}
+.aramaMetinKutusu input{
+	width:190px;
+	margin:5px 0 0 4px;
+	border:none;
+}
 
-	.aramaMetinKutusuOdak input:focus{
-		width:190px;
-		margin:5px 0 0 4px;
-		border:none;
-		background-color:#F6FFD4
-	}
+.aramaMetinKutusuOdak input:focus{
+	width:190px;
+	margin:5px 0 0 4px;
+	border:none;
+	background-color:#F6FFD4
+}
 
-	</style>
-	</head>
+</style>
+</head>
 
-	<body>
-	<div class="aramaMetinKutusu">
-	    <input type="text" name="arama" onfocus="this.parentNode.className='aramaMetinKutusuOdak'" onblur="this.parentNode.className='aramaMetinKutusu'" />
-	</div>
-	</body>
-	</html>
+<body>
+<div class="aramaMetinKutusu">
+    <input type="text" name="arama" onfocus="this.parentNode.className='aramaMetinKutusuOdak'" onblur="this.parentNode.className='aramaMetinKutusu'" />
+</div>
+</body>
+</html>
+{% endhighlight %}
 
 Bu kodlarım Firefox ve IE'de sorunsuz çalıştı. Daha sonra sayfayı Google
 Chrome'da test ettiğimde aşağıdaki gibi bir sorun ile karşılaştım.
@@ -81,10 +82,11 @@ Chrome'da test ettiğimde aşağıdaki gibi bir sorun ile karşılaştım.
 Sorunun çözümünü araştırdığımda dış kenar çizgisini sıfırlamam
 gerektiğini gördüm.  
 
-	:::css
-	input{
-		outline:0
-	}
+{% highlight css %}
+input{
+	outline:0
+}
+{% endhighlight %}
 
 tanımı bizi çözüme ulaştırdı.
 

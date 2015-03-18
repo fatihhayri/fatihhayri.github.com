@@ -41,10 +41,11 @@ elemanlarını seçince sola doğru uzayarak çıkan kesikli çizgi yoksa ie ve
 chrome daki gibi elemanı saran kesikli çizgi bence kötü görünmüyor.
 Firefox'daki bu sorunu çözmek için bir kod var.
 
-	:::css
-	a{
-		visibility:hidden
-	}
+{% highlight css %}
+a{
+	visibility:hidden
+}
+{% endhighlight %}
 
 tanımı ie ve chrome gibi göstermesini sağlıyor.
 
@@ -53,10 +54,11 @@ tanımı ie ve chrome gibi göstermesini sağlıyor.
 Bide bu çizgileri hiç görmek istemeyenler var. Bunu engellemenin en
 kolay yolu outline:none veya outline:0 tanımlarıdır.
 
-	:::css
-	a{
-		outline:none
-	}
+{% highlight css %}
+a{
+	outline:none
+}
+{% endhighlight %}
 
 Bu tanım bir çok css sıfırlama tekniğinde yer almaktadır. Örneğin [Eric Meyer][]'in sıfırlama tekniğinde. Bu yöntem bir çok yerde çözüm olarak
 sunulmaktadır. Kaynaklar kısmındaki linkler bunlardan bir kaçı.
@@ -76,12 +78,13 @@ yardımcımız alttaki tarayıcı çubuğunda her tab tuşuna bastığımızda
 bağlantıdan bağlantıya geçişlerde durum çubuğunda bağlantıların
 gösterilmesidir.
 
-	:::css
-	a {
-		color: #004276;
-		text-decoration: none;
-		outline: none;
-	}
+{% highlight css %}
+a {
+	color: #004276;
+	text-decoration: none;
+	outline: none;
+}
+{% endhighlight %}
 
 tanımı nedeni ile dış hat çizgileri bize yardımcı olmayacaktır. 
 
@@ -89,13 +92,13 @@ tanımı nedeni ile dış hat çizgileri bize yardımcı olmayacaktır. 
 outline değeri standart bırakılmış ve ayrıca odaklanmalar için ayrı bir
 tanım yapılmıştır. 
 
-	:::css
-	a:active, a:focus, a:hover {
-		background-color:#FFFFCC;
-		color:#BF1722;
-		text-decoration:underline;
-	}
-
+{% highlight css %}
+a:active, a:focus, a:hover {
+	background-color:#FFFFCC;
+	color:#BF1722;
+	text-decoration:underline;
+}
+{% endhighlight %}
 
 Tanımları yardımı ile odaklanılan bağlantılar daha belirgin hale
 getirilmiştir. Böylece klavyesi ile siteyi gezmeye çalışan insanlara
@@ -128,19 +131,20 @@ içinde bir çözüm üretelim. Farenin üzerine geldiği hali(:hover)
 klavyenin tab'ı ile geldiğinde de uygulayalım. outline'ı kaldıralım
 tabi.
 
-	:::css
-	a.anasayfayaDon {
-	    display: block;
-	    width: 80px;
-	    height: 80px;
-	    background: url(images/degisen_resim.gif) 0 0 no-repeat;
-	    text-decoration: none;
-	    text-indent:-999px;
-	}
-	a:hover.anasayfayaDon, a:focus.anasayfayaDon {
-	    background-position: -80px 0;
-	    outline:none;
-	}
+{% highlight css %}
+a.anasayfayaDon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url(images/degisen_resim.gif) 0 0 no-repeat;
+    text-decoration: none;
+    text-indent:-999px;
+}
+a:hover.anasayfayaDon, a:focus.anasayfayaDon {
+    background-position: -80px 0;
+    outline:none;
+}
+{% endhighlight %}
 
 ![][1]
 
@@ -152,12 +156,12 @@ sınıfını kullanacağız. Buna rağmen olmayacaktır. outline özelliklerini
 desteklemeyen ie 6 ve ie7'de ise hala outline kesikli çizgilerinin
 görülmesi ilginç.  Bunun içinde şöyle bir çözüm yolu var. 
 
-	:::css
-	a:hover.anasayfayaDon, a:focus.anasayfayaDon, a:active.anasayfayaDon {
-	    background-position: -80px 0;
-	    outline:expression(hideFocus='true'); outline:none;
-	}
-
+{% highlight css %}
+a:hover.anasayfayaDon, a:focus.anasayfayaDon, a:active.anasayfayaDon {
+    background-position: -80px 0;
+    outline:expression(hideFocus='true'); outline:none;
+}
+{% endhighlight %}
 
 expression özelliğini sadece ie destekliyor. Daha önce bahsetmiştik. Bu
 bir bakıma css içinde javascript çalıştırmak gibi bir şeydir. Bu kod

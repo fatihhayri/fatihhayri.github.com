@@ -19,17 +19,19 @@ olmamdan dolayı buraya eklemeyi uygun gördüm. Daha önce [çıktı almak içi
 
 Kodumuz çok basit
 
-	:::html
-	<!--[if !IE]>–> <link media="only screen and (max-device-width: 480px)" href="iPhone.css" type="text/css" rel="stylesheet" /> <!–<![endif]–>
+{% highlight html %}
+<!--[if !IE]>–> <link media="only screen and (max-device-width: 480px)" href="iPhone.css" type="text/css" rel="stylesheet" /> <!–<![endif]–>
+{% endhighlight %}
 
 veyahut
 
-	:::css
-	@media only screen and (max-device-width:480px) {   
-		body {
-			color:#000;
-		}
+{% highlight css %}
+@media only screen and (max-device-width:480px) {   
+	body {
+		color:#000;
 	}
+}
+{% endhighlight %}
 
 şeklinde bir tanımlamada yapabiliyoruz. İlk koddaki ie şartlı koşulu
 bazı eski ie sürümlerinde bu kodu algılama durumu içindir.
