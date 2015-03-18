@@ -23,20 +23,21 @@ gerektiğinde aynı elemana .bolumA, .bolumB, vd. gibi sınıflar atadım.
 Bir bölümü olmayan sayfalarda ana resmimi görünecek bölümü olan
 sayfalarda ise ilgili resim görünecekti. 
 
-	:::css
-	#tanitimAlani{
-	    background:transparent url(../images/genel.jpg) no-repeat scroll center top;
-	    text-align:center;
-	    width:100%;
-	}
+{% highlight css %}
+#tanitimAlani{
+    background:transparent url(../images/genel.jpg) no-repeat scroll center top;
+    text-align:center;
+    width:100%;
+}
 
-	#tanitimAlani.bolumA {
-		background:transparent url(../images/bolumA.jpg) no-repeat scroll center top;
-	}
+#tanitimAlani.bolumA {
+	background:transparent url(../images/bolumA.jpg) no-repeat scroll center top;
+}
 
-	#tanitimAlani.bolumB {
-		background:transparent url(../images/bolumB.jpg) no-repeat scroll center top;
-	}
+#tanitimAlani.bolumB {
+	background:transparent url(../images/bolumB.jpg) no-repeat scroll center top;
+}
+{% endhighlight %}
 
 Tanımı ile yapıyordum. Bu düşüncem tüm tarayıcılarda sorunsuz çalışırken
 ie6 sorun çıkardı. İlk atanan genel resmini gösterdi sadece, bölüm
@@ -48,23 +49,24 @@ id ile atadığım genel ardalan resmi tanımı kaldırıp genel içinde bir
 sınıf(.bolumGenel) tanımladım ve bu sorunu aştım. Yani kodumu şöyle
 değiştirdim.
 
-	:::css
-	#tanitimalani{
-	    text-align:center;
-	    width:100%;
-	}
+{% highlight css %}
+#tanitimalani{
+    text-align:center;
+    width:100%;
+}
 
-	.bolumA {
-		background:transparent url(../images/bolumA.jpg) no-repeat scroll center top;
-	}
+.bolumA {
+	background:transparent url(../images/bolumA.jpg) no-repeat scroll center top;
+}
 
-	.bolumB {
-		background:transparent url(../images/bolumB.jpg) no-repeat scroll center top;
-	}
+.bolumB {
+	background:transparent url(../images/bolumB.jpg) no-repeat scroll center top;
+}
 
-	.bolumGenel {
-		background:transparent url(../images/genel.jpg) no-repeat scroll center top;
-	}
+.bolumGenel {
+	background:transparent url(../images/genel.jpg) no-repeat scroll center top;
+}
+{% endhighlight %}
 
 hribar.info'nun yaptığı örnek güzel inceleyin.
 
