@@ -47,7 +47,7 @@ a{ position:relative;}
 <a href="javascript:;">menu aç
 <div><input type="text" /></div>
 </a>
-<p><img src="http://www.fatihhayrioglu.com/wp-content/ie7_kaydirma_cubugu.jpg" width="450" height="398" /></p>
+<p><img src="http://fatihhayrioglu.com/images/ie7_kaydirma_cubugu.jpg" width="450" height="398" /></p>
 </body>
 </html>
 {% endhighlight %}
