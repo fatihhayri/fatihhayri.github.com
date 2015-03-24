@@ -26,7 +26,7 @@ Aşağıda son yıllarda arayüz geliştiricilerin dünyasını olumlu yönde et
 
 ## Modern Arayüz Geliştiricileri Ne Yapar? 
 
-Eski statik HTML, CSS ve Javascript yazma zamanı geride kaldı artık. Notepad ile htlm kodu yazdığımız, **style** klasöründe statik css dosyaları ile oluşturduğumuz web siteleri. Hayat şimdi daha hızlı işliyor. Eskiden projelerde hız, ekip çalışması ve optimizasyon düşünülmeden yazılır ve yayına çıkardı. Gerçi buna bazı sitelerde gerekte yoktu.
+Eski statik HTML, CSS ve Javascript yazma zamanı geride kaldı artık. Notepad ile html kodu yazdığımız, **style** klasöründe statik css dosyaları ile oluşturduğumuz web siteleri. Hayat şimdi daha hızlı işliyor. Eskiden projelerde hız, ekip çalışması ve optimizasyon düşünülmeden yazılır ve yayına çıkardı. Gerçi buna bazı sitelerde gerekte yoktu.
 
 Bir siteyi kodlarken artık arayüz geliştiricileri aşağıdaki listedeki işlemleri yapmak durumunda;
 
