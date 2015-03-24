@@ -16,7 +16,7 @@ Sonra arayüz geliştiriciliğin aslında tek başına bir sektör olduğu kanı
 
 Tüm bu gelişmeler hep ihtiyaçların artması ve bu ihtiyaçları karşılamak için yapılan çalışmalar sonucunda doğdu. Ne kadar iyi sonuç almak istiyorsanız, bir konuda o kadar ihtisaşlaşmış insan gücüne ihtiyacınız var demektir. Bir insana bu ihtiyaçların hepsini yüklerseniz, o insan süperman değilse bu ihtiyaçları belli bir oranda karşılayacaktır. İstekler genelde üst düzeyde olduğu için herşeyi yapan insanların bu istekleri karşılama imkanı kısıtılı oluyor tabi.
 
-Bazı yöneticiler çalışanların bu kadar bölümlere ayrılmasını yönetim ve götürülerini(maddi) düşünerek istemeyebilir. Hala tam yetkili programcıların(Full Stack developer) olacağını ve burada iyi işler çıkacağını düşünen ir kesim var.
+Bazı yöneticiler çalışanların bu kadar bölümlere ayrılmasını yönetim ve götürülerini(maddi) düşünerek istemeyebilir. Hala tam yetkili programcıların(Full Stack developer) olacağını ve burada iyi işler çıkacağını düşünen bir kesim var.
 
 Burada şu ayrımı iyi yapmak lazım. Her bölümde çalışan kişiler ilişkide olduğu birimlerin ne iş yaptığı ve kabiliyetlerinin ne olduğu hakkında bilgi sahibi olmalıdır. Bir arayüz geliştirici; hem tasarımcının kabiliyetlerini hemde sunucu taraflı programlama yapanların kabiliyetleri hakkında bilgi sahibi olmalıdır. Bu iletişim ve iş genelinde çözüm oluşturmak için önemli bir ayrıntıdır. Ancak bu hiç bir zaman bir arayüz geliştiricinin çok iyi derecede tasarım yapabilmesi veya sunucu taraflı kodlamayı yalayıp yutması anlamına gelmez. Tasarımcılardan örnek verecek olursak; bir tasarımcı arayüz geliştiricinin neler yapabildiğini, kabiliyetlerini bilmeli, ama gidip farklı tarayıcılar için kodlama yapmamalı. Ne demiş atalar "taş yerinde ağırdır".
 
