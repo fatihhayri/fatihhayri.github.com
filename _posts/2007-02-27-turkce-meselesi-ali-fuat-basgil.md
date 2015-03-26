@@ -3,6 +3,7 @@ layout: post
 title: Türkçe Meselesi - Ali Fuat Başgil
 Date: 2007-02-27 10:20
 Category: Kitaplar
+---
 
 ![turkce_meseli][]1940'lı yıllarda Türkçeyi sadeleştirme amaçlı
 çalışmaları ve Ord. Prof. Ali Fuat Başgil'in bu çalışmlara karşı yazdığı

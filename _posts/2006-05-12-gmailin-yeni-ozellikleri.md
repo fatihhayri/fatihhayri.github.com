@@ -3,9 +3,10 @@ layout: post
 title: Gmail&#039;in yeni özellikleri
 Date: 2006-05-12 17:13
 Category: Haberler
+---
 
 Gmail in yeni özelliklerini gmail hesabı olanlar görebilir. Biz
-olmayanlar için yazalım <font size="-1">**Gmail'in yeni bir
+olmayanlar için yazalım **Gmail'in yeni bir
 özelliği var, Gmail Talk** Artık Gmail hesapları, bu sohbet özelliği ile
 otomatik olarak etkinleştirilmektedir. Gmail Talk için özel bir şey
 yapmanıza gerek yok, o hesabınızın bir parçası. Ã?evrimiçi olduklarında
@@ -38,7 +39,7 @@ kaydetme özelliği sayesinde yazdıklarınızı otomatik olarak kaydediliyor,
 artık yazdıklarınızı kaybetmeyeceksiniz. **Kendiniz olun**
 @googlemail.com.tr ya da @okulunuzunadı.edu.tr ya da
 @özelalanadınız.com.tr. G-mail'den e-posta gönderirken, 'Gönderen:'
-kısmında diğer e-posta adreslerinizi kullanabilirsiniz. </font>
+kısmında diğer e-posta adreslerinizi kullanabilirsiniz.
 
   [Daha fazla bilgi edinin]: http://mail.google.com/mail/help/intl/tr/chat.html
   [1]: http://mail.google.com/support/bin/answer.py?answer=25760&hl=en_GB

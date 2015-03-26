@@ -3,6 +3,7 @@ layout: post
 title: Nil&#039;den Tuna&#039;ya - Haluk Dursun
 Date: 2006-07-26 23:08
 Category: Kitaplar
+---
 
 ![Nil'den Tuna'ya][] nildentunaya.jpgBir çok Osmanlı şehrinde şimdide
 bir çok izler bulan ve bunları gezerek araştıran Haluk Dursun çok güzel

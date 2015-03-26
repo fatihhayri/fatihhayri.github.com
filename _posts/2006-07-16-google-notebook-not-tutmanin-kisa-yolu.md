@@ -3,6 +3,7 @@ layout: post
 title: Google Notebook - Not tutmanın kısa yolu
 Date: 2006-07-16 00:24
 Category: Haberler
+---
 
 Bu gün Ceyhun'la Google Desktop'daki Scratch Pad üzerine konuşuyorduk.
 Güzel bir araç ancak eksik olduğunda n bahsediyorduk. Bir tablama ile

@@ -3,6 +3,7 @@ layout: post
 title: İbretler Kitabı - Üsame İbn Münkız
 Date: 2006-09-26 09:12
 Category: Kitaplar
+---
 
 ![Usame ibn Munkız- İbretler Kitabı][] Bulunduğu devir hakkında bir çok
 ayrıntıya yer verilen çok güzel bir kaynak. Gerçekten ibret verici

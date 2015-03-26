@@ -3,6 +3,7 @@ layout: post
 title: MEDİNE MÜDAFAASI / Çöl Kaplanı Fahrettin Paşa - Feridun Kandemir
 Date: 2007-02-24 16:03
 Category: Kitaplar
+---
 
 ![][100]Türklerin arap yarım adası ve balkanları kaybetlerinin üzerinden
 daha 100 yıl bile geçmemişken Türk milletinin bu yörelere olan bu kadar

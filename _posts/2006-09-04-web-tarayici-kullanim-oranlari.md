@@ -3,6 +3,7 @@ layout: post
 title: Web Tarayıcı Kullanım oranları
 Date: 2006-09-04 22:57
 Category: Haberler
+---
 
 Firefox hızlı çıkışına devam ediyor. Dünya genelinde geçen ay %1.4'lük
 artış sağlayan Firefox yükselmeye devam ederek genel web tarayıcıları

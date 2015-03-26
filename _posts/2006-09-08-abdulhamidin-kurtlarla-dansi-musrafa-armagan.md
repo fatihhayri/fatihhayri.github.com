@@ -3,6 +3,7 @@ layout: post
 title: Abdülhamid&#039;in Kurtlarla Dansı - Mustafa Armağan
 Date: 2006-09-08 23:01
 Category: Kitaplar
+---
 
 ![Abdülhamid'in Kurtlarla Dansı][]Abdülmamid hakkında bir çok kitap var.
 Bunun en büyük nedeni de Abdülhamid zamanın resmi tarih ve ideoliji

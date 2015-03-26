@@ -3,6 +3,7 @@ layout: post
 title: Adobe  Macromedia Dreamweaver CS4 Beta
 Date: 2008-05-28 17:32
 Category: Haberler
+---
 
 Adobe Macromedia Dreamweaver CS4 Betası çıktı yeni özellikleri ile
 birlikte. Aslında birçok web kodlayıcısının beklediği değişikliklerdi

@@ -3,6 +3,7 @@ layout: post
 title: Darulislam, Darulharb -İslam Hukukunda Ülke Kavramı - Doç. Dr. Ahmet Özel
 Date: 2006-08-20 14:02
 Category: Kitaplar
+---
 
 ![Darulislam, Darulharb -İslam Hukukunda Ülke Kavramı][]Aslında çok
 önemli bir meseleye değinilmiş kitapta.  Aldığım bir kaç not

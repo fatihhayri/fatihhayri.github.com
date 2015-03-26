@@ -14,7 +14,7 @@ Sonra sonra tasarım işinin, görselliğin başka bir boyut olduğunu kısa sü
 
 Sonra arayüz geliştiriciliğin aslında tek başına bir sektör olduğu kanısına vardık. Arayüz Geliştiriciliği ile sunucu taraflı kodlamanın ayrı ayrı olması daha verimli sonuçlar vereceği konusunda kabullenmeler başladı ve **arayüz geliştiricileri**(Front-End) olduk. 
 
-Tüm bu gelişmeler hep ihtiyaçların artması ve bu ihtiyaçları karşılamak için yapılan çalışmalar sonucunda doğdu. Ne kadar iyi sonuç almak istiyorsanız, bir konuda o kadar ihtisaşlaşmış insan gücüne ihtiyacınız var demektir. Bir insana bu ihtiyaçların hepsini yüklerseniz, o insan süperman değilse bu ihtiyaçları belli bir oranda karşılayacaktır. İstekler genelde üst düzeyde olduğu için herşeyi yapan insanların bu istekleri karşılama imkanı kısıtılı oluyor tabi.
+Tüm bu gelişmeler hep ihtiyaçların artması ve bu ihtiyaçları karşılamak için yapılan çalışmalar sonucunda doğdu. Ne kadar iyi sonuç almak istiyorsanız, bir konuda o kadar ihtisaslaşmış insan gücüne ihtiyacınız var demektir. Bir insana bu ihtiyaçların hepsini yüklerseniz, o insan süperman değilse bu ihtiyaçları belli bir oranda karşılayacaktır. İstekler genelde üst düzeyde olduğu için herşeyi yapan insanların bu istekleri karşılama imkanı kısıtılı oluyor tabi.
 
 Bazı yöneticiler çalışanların bu kadar bölümlere ayrılmasını yönetim ve götürülerini(maddi) düşünerek istemeyebilir. Hala tam yetkili programcıların(Full Stack developer) olacağını ve burada iyi işler çıkacağını düşünen bir kesim var.
 
@@ -26,19 +26,19 @@ Aşağıda son yıllarda arayüz geliştiricilerin dünyasını olumlu yönde et
 
 ## Modern Arayüz Geliştiricileri Ne Yapar? 
 
-Eski statik HTML, CSS ve Javascript yazma zamanı geride kaldı artık. Notepad ile html kodu yazdığımız, **style** klasöründe statik css dosyaları ile oluşturduğumuz web siteleri. Hayat şimdi daha hızlı işliyor. Eskiden projelerde hız, ekip çalışması ve optimizasyon düşünülmeden yazılır ve yayına çıkardı. Gerçi buna bazı sitelerde gerekte yoktu.
+Eski statik HTML, CSS ve Javascript yazma zamanı geride kaldı artık. Notepad ile html kodu yazdığımız, **style** klasöründe statik css dosyaları ile oluşturduğumuz web siteleri. Hayat şimdi daha hızlı işliyor. Eskiden projelerde hız, ekip çalışması ve optimizasyon düşünülmeden yazılır ve yayına çıkardı. Gerçi buna bazı sitelerde gerek te yoktu.
 
 Bir siteyi kodlarken artık arayüz geliştiricileri aşağıdaki listedeki işlemleri yapmak durumunda;
 
  - Birden fazla kişi çalışıyorsa; bir sürüm kontrol sistemi ile kodlarını farklı sürümlerde saklamayı ihmal etmezler. (Git, SVN vd.)
- - Site dosya yapısını ilerideki genişlemleride dikkate alarak kurgularlar.
+ - Site dosya yapısını ilerideki genişlemeleri de dikkate alarak kurgularlar.
  - Sorunların çözümünü araştırmak için etkin olarak arama sistemlerini kullanırlar. (Google, StackOverflow, Kullanılan araçların dokümantasyonlarını)
  - Farklı tarayıcı ve platformlar için kod yazarlar. iPhone, Windows'da IE8, Android Table vs. (Simülatör ve Sanal Makineler)
  - Tasarımcı ile iletişimi sağlam tutup, UX konusunda fikir paylaşımında bulunurlar.
  - Sunucu taraflı kod yazarları ile iletişimini sağlam tutup, proje alt yapısını birlikte kurarlar. 
  - Dinamik sprite yöntemi ile birleştirmeliler.
- - Kod düzenin düzgün tutmak için çaba sarf ederler. Hatalı koldarı kontrol etmelidirler.
- - Kullanıdığı harici eklentileri, uygulama çatılarını güncel tutumakla yükümlüdürler.
+ - Kod düzenin düzgün tutmak için çaba sarf ederler. Hatalı kodları kontrol etmelidirler.
+ - Kullandığı harici eklentileri, uygulama çatılarını güncel tutmakla yükümlüdürler.
  - Optimizasyon işlerini en baştan düşünerek kodlarını yazarlar
  - Erişilebilirlik kurallarını kontrol eder
  - Otomatik test senaryolarını yazar. (Karma / Jasmine)
@@ -96,7 +96,7 @@ Arayüz geliştiricileri uygulama çatıları, eklentiler ve uygulama geliştirm
      - [X Code Simülator](https://developer.apple.com/xcode/downloads/)
      - [Chrome Developer Tools](https://developer.chrome.com/devtools) 
 
-Yukarıda listelemeye çalıştığım bir çok konu hakkında bilgi sahibi olamız gerekiyor. Listelemeyi unuttuğum şeylerde vardır muhtemelen. Her projede hangi ihtiyaçların olduğunu çıkarmak ve hangi araçları kullanmak gerektiğine karar vermek gerekiyor. 
+Yukarıda listelemeye çalıştığım bir çok konu hakkında bilgi sahibi olamız gerekiyor. Listelemeyi unuttuğum şeyler de vardır muhtemelen. Her projede hangi ihtiyaçların olduğunu çıkarmak ve hangi araçları kullanmak gerektiğine karar vermek gerekiyor. 
 
 Ben konuların yanına benim yazdığım konuların linklerini koydum. Çok az şey yazdığımı fark ettim. Zamanımı iyi değerlendirebilirsem hepsi hakkında bir şeyler yazmak isterim. 
 
