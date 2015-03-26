@@ -45,40 +45,41 @@ işaretlerin kullanım amacı tüm versiyonlarda aynı sonucu elde etmektir.
 Aşağıdaki kod IE5+,FF, Opera 7, Konqueror 3.0.3 altında standart ve
 [garip mod][] da çalışıyor.
 
-	:::html
-	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-	<html>
-	<head>
-	<title>CSS ile dikey ortalama</title>
-	<style>
-	#Kapsul{
-		display: table;
-		height: 400px;
-		#position: relative;
-		overflow: hidden;
-		border: 1px solid green;
-	}
-	#IcerikAlani{
-		#position: absolute;
-		#top: 50%;
-		display: table-cell;
-		vertical-align: middle;
-	}
-	#alan{
-		#position: relative;
-		#top: -50%;
-		border: 1px solid green;
-	}
-	</style>
-	</head>
-	<body>
-	  <div id="Kapsul">
-	    <div id="IcerikAlani">
-	    <div id="alan">Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry's standard dummy text ever  since the 1500s, when an unknown printer took a galley of type and  scrambled it to make a type specimen book. </div>
-	    </div>
-	  </div>
-	</body>
-	</html>
+{% highlight html %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>CSS ile dikey ortalama</title>
+<style>
+#Kapsul{
+	display: table;
+	height: 400px;
+	#position: relative;
+	overflow: hidden;
+	border: 1px solid green;
+}
+#IcerikAlani{
+	#position: absolute;
+	#top: 50%;
+	display: table-cell;
+	vertical-align: middle;
+}
+#alan{
+	#position: relative;
+	#top: -50%;
+	border: 1px solid green;
+}
+</style>
+</head>
+<body>
+  <div id="Kapsul">
+    <div id="IcerikAlani">
+    <div id="alan">Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry's standard dummy text ever  since the 1500s, when an unknown printer took a galley of type and  scrambled it to make a type specimen book. </div>
+    </div>
+  </div>
+</body>
+</html>
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
