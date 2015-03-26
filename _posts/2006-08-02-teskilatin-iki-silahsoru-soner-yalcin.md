@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Teşkilatın İki Silahşörü : Soner Yalçın
+title: Teşkilatın İki Silahşörü - Soner Yalçın
 Date: 2006-08-02 23:36
 Category: Kitaplar
 ---
