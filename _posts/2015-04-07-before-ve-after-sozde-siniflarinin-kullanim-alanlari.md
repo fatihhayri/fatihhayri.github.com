@@ -8,7 +8,7 @@ tags: before after ikon gölge
 
 :before ve :after sözde sınıfları tanımlandığı elemanla ilişkili ve alt eleman olarak eklenir, isimlerinden de anlaşılacağı gibi içeriğin başına ve sonuna eklenirler. Kullanım alanlarını gördükçe ne kadar faydalı seçiciler olduğunu daha iyi anlayacağız. 
 
-Bu makalede özellikle kullanım alanlarına değineceğim.  Daha önce bir çok sayfada kullandığım ve sitemde örneklerini verdiğim bu seçicileri önemine binaen daha detaylı anlatacağım.  http://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/ yazımda anlatmıştım. Basit bir kullanımı var. 
+Bu makalede özellikle kullanım alanlarına değineceğim.  Daha önce bir çok sayfada kullandığım ve sitemde örneklerini verdiğim bu seçicileri önemine binaen daha detaylı anlatacağım.  [pseudo sınıfları ve pseudo elementleri](http://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/) yazımda anlatmıştım. Basit bir kullanımı var. 
 
 {% highlight css %}
 p.not:before { 
