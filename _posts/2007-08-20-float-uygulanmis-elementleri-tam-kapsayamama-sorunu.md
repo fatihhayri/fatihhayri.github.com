@@ -26,23 +26,25 @@ Bir örnek yaparsak daha iyi anlayacağız.
 
 CSS kodu:
 
-	:::css
-	.kapsul {
-		border: 1px solid #000;
-		padding: 2px;
-	}
+{% highlight css %}
+.kapsul {
+	border: 1px solid #000;
+	padding: 2px;
+}
 
-	img {
-		float: left;
-	}
+img {
+	float: left;
+}
+{% endhighlight %}
 
 Html kodu:
 
-	:::html
-	<div class="kapsul">
-		<img src="koy_01.jpg" alt="Bizim köy" weight="250" height="160" />
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-	</div>
+{% highlight html %}
+<div class="kapsul">
+	<img src="koy_01.jpg" alt="Bizim köy" weight="250" height="160" />
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+</div>
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -64,12 +66,13 @@ yapabiliriz.
 Geneldekutuların içeriğine göre uzamasını isteriz. Bu sorunu çözmek
 küçük bir yapısalekleme yapmak yeterli olacaktır.
 
-	:::html
-	<div class="kapsul">
-		<img src="resim.png">
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-		<div style="clear:both;"></div>
-	</div>
+{% highlight html %}
+<div class="kapsul">
+	<img src="resim.png">
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+	<div style="clear:both;"></div>
+</div>
+{% endhighlight %}
 
 Buşekilde sorunumuzu çözmüş oluruz ancak bu sorunla
 karşılaştığımız heryerde bu eklemeyi yapmak zorun kalacağız ve sırf bu
@@ -86,31 +89,33 @@ bu noktaya**clear**(clear:both) ataması yaparsak sorunumuz çözülmüş
 olacaktır. Tabi birde bunoktayı görünmez yapmamız gerekiyor, Kutuların
 sonunda nokta görünmesipek hoş olmaya bilir.
 
-	:::css
-	.kapsul:after {
-		content: ".";
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;
-	}
+{% highlight css %}
+.kapsul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+{% endhighlight %}
 
 Ayrıca**display:block** koyduk çünkü satır için(inline-level) elementler
 clear özelliğiatamasını kabul etmiyor. Aslında **overflow** ile de bu
 sorun halledilebilir ancakMozilla Firefox'un yeni sürümlerinde bu metot
 sorun çıkarıyor.
 
-	:::css
-	.kapsul:after {
-		content: ".";
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;
-	}
-	/*IE-mac den bu bolumu sakla */
-	* html .clearfix {height: 1%;}
-	/* IE-mac bu bolumu saklama artik */
+{% highlight css %}
+.kapsul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/*IE-mac den bu bolumu sakla */
+* html .clearfix {height: 1%;}
+/* IE-mac bu bolumu saklama artik */
+{% endhighlight %}
 
 Tabibu kod burada kalmıyor çünkü IE ile sorunları var. Normalde IE'nin
 float uygulanmış elementin tamamı kapsamama sorunu diye bir problemi(bu
@@ -126,22 +131,23 @@ Sıra geldi IE/Mac'de sorunu aşmaya, IE/Mac'deki sorunu aşmak için
 tarayıcılarının bundan etkilenmemesi için IE/Mac'den gizlediğimiz alana
 **display: block;** atamasını eklemeliyiz.
 
-	:::css
-	.kapsul:after {
-		content: ".";
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;
-	}
+{% highlight css %}
+.kapsul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
 
-	.kapsul {
-		display: inline-block;
-	}
-	/*IE-mac de bu bolumu sakla  */
-	* html .kapsul {height: 1%;}
-	.kapsul {display: block;}
-	/* IE-mac bu bolumu saklam artik */
+.kapsul {
+	display: inline-block;
+}
+/*IE-mac de bu bolumu sakla  */
+* html .kapsul {height: 1%;}
+.kapsul {display: block;}
+/* IE-mac bu bolumu saklam artik */
+{% endhighlight %}
 
 Örneğin son halini görmek için [tıklayınız.][1]
 
@@ -157,23 +163,23 @@ makale yazan [dahaiyi.net][]'e çok teşekkürler.
 Bu yöntemi biraz daha kolaylaştıralım. Sonuçta macde ie kullanan
 kalmadağına göre kodumuzu
 
-	:::css
-	.clearfix:after {
-		visibility: hidden;
-		display: block;
-		font-size: 0;
-		content: " ";
-		clear: both;
-		height: 0;
-	}
+{% highlight css %}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
 
-	* html .clearfix {
-		zoom: 1;
-	}
-	/* IE6 */
-	*:first-child+html .clearfix { zoom: 1; }
-	/* IE7 */
-
+* html .clearfix {
+	zoom: 1;
+}
+/* IE6 */
+*:first-child+html .clearfix { zoom: 1; }
+/* IE7 */
+{% endhighlight %}
 
 ## CSS3 ile sorunun çözümü
 
@@ -182,8 +188,9 @@ Bu sorunun farkında olan CSS standart geliştiriciler bu soruna kökten
 kurtulacağız tabi biraz zaman gerekecek bu özelliği kullanmak için.
 Malum hala uygulamada değil CSS3.0
 
-	:::css
-	.kapsul { clear-after: both; }
+{% highlight html %}
+.kapsul { clear-after: both; }
+{% endhighlight %}
 
 Yukarıdaki örnekteki gibi tek satırlık bir kod sorunumuzu çözecektir.
 
