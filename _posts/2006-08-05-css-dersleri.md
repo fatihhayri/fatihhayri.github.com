@@ -125,6 +125,7 @@ Date: 2006-08-05 22:06
     -   [CSS ile üçgen ok yapmak](/css-ile-ucgen-ok-yapmak/)
     -   [z-index koordinasyonu](/zindex-koordinasyonu/)
     -   [min-width, max-width](/min-width-max-width/)
+    -   [:before ve :after Sözde Sınıflarının Kullanım Alanları](/before-ve-after-sozde-siniflarinin-kullanim-alanlari/)
 
 -   CSS Problemleri ve Çözüm Önerileri
     -   [IE'de Hata Ayıklamak için şartlı Yorumlar Kullanmak][]
