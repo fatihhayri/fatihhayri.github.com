@@ -94,12 +94,13 @@ değerine 20px tanımlarsak element bulunduğu yerden 20px aşağıya
 kayacaktır, eğer elementin sol(left) değerini 20px olarak tanımlarsak
 elementimiz soldan 20px sağa doğru kayacaktır.
 
-	:::css
-	p#FarkliParagraf{
-		position: relative;
-		left: 20px;
-		top: 20px;
-	}
+{% highlight css %}
+p#FarkliParagraf{
+	position: relative;
+	left: 20px;
+	top: 20px;
+}
+{% endhighlight %}
 
 ![CSS Nisbi konumlandırma][]
 
@@ -163,26 +164,27 @@ Android Browser
 olmasını istiyorsak. Dıştaki içerik kutusunugöreceli konumlandırıp
 içindeki paragrafı mutlak konumlandırarak bu işhalledebilriz.
 
-	:::css
-	#adresler {
-		width: 700px;
-		height: 100px;
-		position: relative;
-	}
+{% highlight css %}
+#adresler {
+	width: 700px;
+	height: 100px;
+	position: relative;
+}
 
-	#adresler .tel {
-		position: absolute;
-		right: 10px;
-		bottom: 10px;
-		text-align: right;
-	}
+#adresler .tel {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	text-align: right;
+}
+{% endhighlight %}
 
-
-	:::html
-		<div id="adresler">Tel: 0845 838 6163</div>
+{% highlight html %}
+<div id="adresler">Tel: 0845 838 6163</div>
+{% endhighlight %}
 
 Not:Bu kullanım gelişmiş tarayıcılar için geçerlidir. IE 5.5 veIE
-6(Windwos)'da bu sorun çıkarır. Sorunu engellemek için yükseklik ve
+6(Windos)'da bu sorun çıkarır. Sorunu engellemek için yükseklik ve
 genişliktanımı yapılmalıdır.
 
 Mutlak konumlandırma sayfa planlamasınınyaparken çok kullanılır.
