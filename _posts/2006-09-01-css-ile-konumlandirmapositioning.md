@@ -184,7 +184,7 @@ içindeki paragrafı mutlak konumlandırarak bu işhalledebilriz.
 {% endhighlight %}
 
 Not:Bu kullanım gelişmiş tarayıcılar için geçerlidir. IE 5.5 veIE
-6(Windos)'da bu sorun çıkarır. Sorunu engellemek için yükseklik ve
+6(Windows)'da bu sorun çıkarır. Sorunu engellemek için yükseklik ve
 genişliktanımı yapılmalıdır.
 
 Mutlak konumlandırma sayfa planlamasınınyaparken çok kullanılır.
