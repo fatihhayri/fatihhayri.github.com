@@ -174,6 +174,7 @@ Date: 2006-08-05 22:06
     -   [IE6/IE7 filtre “Renk Geçişi Tanımı – Konumlandırma” Sorunu ve Çözümsüzülüğü :D][]
     -   [IE8 Açılır Menü İçindeki Input Alanı Üzerince Gelince Menü Kapanma Sorunu](/ie8-acilir-menu-icindeki-input-alani-uzerince-gelince-menu-kapanma-sorunu/)
 	-   [Chrome'un -99999999px sorunu](/chrome-un-99999999px-sorunu/ "Chrome'un -99999999px sorunu")
+    -   [Aksak Kolonlara linear-gradient İle Çözüm Bulmak](/aksak-kolonlara-linear-gradient-ile-cozum-bulmak/)
 
 -   CSS İpuçları
     -   [CSS İpuçları 1 : üç kelimeli font tanımı][]
