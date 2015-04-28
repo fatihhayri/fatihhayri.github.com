@@ -28,7 +28,6 @@ tags: 0 yükseklik, Developer Tools, firebug, Firefox 3.1, HTML 5, ie8, Javascri
     [Bağlantı][9] 
 -   FireBug1.2.1 sürümü yayınlamış. Değişen bazı hataların giderilmesi.
     [Bağlanatı][] 
--   HTML 5 web alameni nasıl değiştirecek. [Bağlantı][10] 
 -   Daron Yöndem'den ie8 hakkında güzel makaleler. [Bağlantı][11] 
 
 
@@ -53,7 +52,5 @@ tags: 0 yükseklik, Developer Tools, firebug, Firefox 3.1, HTML 5, ie8, Javascri
     "web2.0 - web 3.0"
   [Bağlanatı]: https://addons.mozilla.org/en-US/firefox/addon/1843
     "FireBug1.2.1."
-  [10]: http://www.webmonkey.com/blog/How_HTML_5_Is_Already_Changing_the_Web
-    "HTML 5"
   [11]: http://daron.yondem.com/tr/CategoryView.aspx?category=IE+8.0
     "ie 8"
