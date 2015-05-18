@@ -6,9 +6,9 @@ Category: css
 tags: css kaydırma-çubuğu -webkit
 ---
 
-Daha önce yazacaktım ama desteği çok düşüktü. Webkit'in %82(mobil + web) desteğinden sonra uygulanabilirliği arttı. Ben Firefox'dan destek bekledim ama ondan ses çıkmadı. 
+Daha önce yazacaktım ama desteği çok düşüktü. Webkit'in %82(mobil + web) desteğinden sonra uygulanabilirliği arttı. Ben Firefox'tan destek bekledim ama ondan ses çıkmadı. 
 
-Tasarımcıların form elemanlarını tasarlama sevdası hiç bitmedi, bitmeyecekte :D Tüm ihtiyaçları CSS ile halledebilsek sorun yokta işin içine javascript girince durum değişiyor. Çünkü CSS işin işlevsel kısmını yine doğal haline bırakıp görselliğine yönelirken; javascript ile yapılan çözümler işin işlevselliğine de müdahale ediyor. İşin doğallığı bozuluncada tonla sorun çıkıyor.
+Tasarımcıların form elemanlarını tasarlama sevdası hiç bitmedi, bitmeyecek de :D Tüm ihtiyaçları CSS ile halledebilsek sorun yok da işin içine javascript girince durum değişiyor. Çünkü CSS işin işlevsel kısmını yine doğal haline bırakıp görselliğine yönelirken; javascript ile yapılan çözümler işin işlevselliğine de müdahale ediyor. İşin doğallığı bozulunca da tonla sorun çıkıyor.
 
 Neyse biz gelelim kendimize özel kaydırma çubuğu(scroll) yapmaya;
 
@@ -21,11 +21,11 @@ Bu kadar basit bir kod ile özel kaydırma çubuğu elde ettik. Biz yukarıda 3 
 
 ![enter image description here](http://fatihhayrioglu.com/images/scrollbar_map_webkit.gif)
 
- 1. **::-webkit-scrollbar** kaydırma çubuğu alanını tanımlar. Genelde diğer elemanları kapsar 
+ 1. **::-webkit-scrollbar** Kaydırma çubuğu alanını tanımlar. Genelde diğer elemanları kapsar 
  2. **::-webkit-scrollbar-button** Yön tuşlarını seçmeye yarar.
- 3. **::-webkit-scrollbar-track** kaydırma çubuğunun altta kalan boş kısmını seçmeye yarar.
- 4. **::-webkit-scrollbar-track-piece** kaydırma çubuğunun tutamacı dışında kalan boşluğu seçmemize yarar.
- 5. **::-webkit-scrollbar-thumb** kaydırma çubuğunun tutamacını seçmemize yarar.
+ 3. **::-webkit-scrollbar-track** Kaydırma çubuğunun altta kalan boş kısmını seçmeye yarar.
+ 4. **::-webkit-scrollbar-track-piece** Kaydırma çubuğunun tutamacı dışında kalan boşluğu seçmemize yarar.
+ 5. **::-webkit-scrollbar-thumb** Kaydırma çubuğunun tutamacını seçmemize yarar.
  6. **::-webkit-scrollbar-corner** Yatay ve dikey kaydırma çubuğunun köşesini seçmemizi sağlar.
  7. **::-webkit-resizer** Yatay ve dikey kaydırma çubuğunun köşesinde boyutlandırma çıkması durmunu seçmemizi sağlar. 
  
