@@ -26,7 +26,9 @@ SVG içeriğine CSS ile müdahale edebiliyoruz. Mesela bir ikon yaptık bunun re
 
 Bir sitenin farklı temaları için renk tanımları yaparken renk geçişlerin de ve renk tanımların da kullanılabilir.
 
-  background-image: linear-gradient(to bottom, currentColor, #fff);
+{% highlight html %}
+background-image: linear-gradient(to bottom, currentColor, #fff);
+{% endhighlight %}
 
 **Tarayıcı Desteği**
 
