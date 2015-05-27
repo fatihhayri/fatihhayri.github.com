@@ -44,7 +44,7 @@ background-image: linear-gradient(to bottom, currentColor, #fff);
 |**+**|**+**|**+**|
 {: .tarayici-uyumi}
 
-Kalın sağlıcakla.
+Kalın sağlıcakla..
 
 ## Kaynaklar
 
