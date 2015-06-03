@@ -103,7 +103,6 @@ Ben konuların yanına benim yazdığım konuların linklerini koydum. Çok az �
 ## Kaynaklar
 
  - [http://blog.salsitasoft.com/the-shifting-definition-of-front-end-developer/](http://blog.salsitasoft.com/the-shifting-definition-of-front-end-developer/)
- - [http://blog.chartbeat.com/2014/01/30/modern-front-end-workflow-start-finish/](http://blog.chartbeat.com/2014/01/30/modern-front-end-workflow-start-finish/)
  - [http://www.nczonline.net/blog/2013/10/07/node-js-and-the-new-web-front-end/](http://www.nczonline.net/blog/2013/10/07/node-js-and-the-new-web-front-end/)
  - [http://juristr.com/blog/2014/08/node-grunt-yeoman-bower/](http://juristr.com/blog/2014/08/node-grunt-yeoman-bower/)
  - [http://code.tutsplus.com/tutorials/essential-tools-for-a-modern-front-end-development-workflow--pre-66083](http://code.tutsplus.com/tutorials/essential-tools-for-a-modern-front-end-development-workflow--pre-66083)

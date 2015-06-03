@@ -134,13 +134,11 @@ Kalın sağlıcakla.
 ## Kaynaklar
 
 - [http://james.padolsey.com/javascript/jquery-code-smells/][4]
-- [http://addyosmani.com/blog/31-jquery-snippets/][5]
 - [http://www.tutorialspoint.com/jquery/event-preventdefault.htm][6]
 - [http://css-tricks.com/return-false-and-prevent-default/][7]
 - [http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html][8]
 - [http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx][9]
 - [http://net.tutsplus.com/tutorials/javascript-ajax/20-helpful-jquery-methods-you-should-be-using/][10]
-- [http://addyosmani.com/blog/31-jquery-snippets/][11]
 - [http://www.tuttoaster.com/some-good-and-advanced-jquery-techniques/][12]
 - [http://www.codenothing.com/archives/2010/8-jquery-micro-optimization-tips/][13]
 - [http://www.tripwiremagazine.com/2010/01/jquery-1.4-released-sneak-peek-on-new-features-and-enhancements.html][14]
@@ -149,7 +147,6 @@ Kalın sağlıcakla.
 - [http://www.javascriptbank.com/more-10-jquery-javascript-tips-tricks-improve-code.html][17]
 - [http://jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html][18]
 - [http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/][19]
-- [http://jquerybyexample.blogspot.com/2012/02/prevent-default-behavior-using-jquery.html][20]
 - [http://css-tricks.com/return-false-and-prevent-default/][21]
 - [http://www.quirksmode.org/js/events_order.html][22]
 - [http://javascript.info/tutorial/bubbling-and-capturing][23]
@@ -157,20 +154,16 @@ Kalın sağlıcakla.
 - [http://jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html][25]
 - [http://api.jquery.com/event.preventDefault/][26]
 - [http://jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html][27]
-- [http://jquerybyexample.blogspot.com/2011/10/jquery-performance-tips-tricks-from.html][28]
-
 
   [1]: http://stackoverflow.com/questions/680241/blank-out-a-form-with-jquery
   [2]: http://www.jquery4u.com/windows/jquery-cleanly-open-links-popup-windows/
   [3]: http://stackoverflow.com/questions/3439316/ie8-and-jquerys-trim
   [4]: http://james.padolsey.com/javascript/jquery-code-smells/
-  [5]: http://addyosmani.com/blog/31-jquery-snippets/
   [6]: http://www.tutorialspoint.com/jquery/event-preventdefault.htm
   [7]: http://css-tricks.com/return-false-and-prevent-default/
   [8]: http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html
   [9]: http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx
   [10]: http://net.tutsplus.com/tutorials/javascript-ajax/20-helpful-jquery-methods-you-should-be-using/
-  [11]: http://addyosmani.com/blog/31-jquery-snippets/
   [12]: http://www.tuttoaster.com/some-good-and-advanced-jquery-techniques/
   [13]: http://www.codenothing.com/archives/2010/8-jquery-micro-optimization-tips/
   [14]: http://www.tripwiremagazine.com/2010/01/jquery-1.4-released-sneak-peek-on-new-features-and-enhancements.html
@@ -179,7 +172,6 @@ Kalın sağlıcakla.
   [17]: http://www.javascriptbank.com/more-10-jquery-javascript-tips-tricks-improve-code.html
   [18]: http://jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html
   [19]: http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/
-  [20]: http://jquerybyexample.blogspot.com/2012/02/prevent-default-behavior-using-jquery.html
   [21]: http://css-tricks.com/return-false-and-prevent-default/
   [22]: http://www.quirksmode.org/js/events_order.html
   [23]: http://javascript.info/tutorial/bubbling-and-capturing
@@ -187,5 +179,4 @@ Kalın sağlıcakla.
   [25]: http://jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html
   [26]: http://api.jquery.com/event.preventDefault/
   [27]: http://jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html
-  [28]: http://jquerybyexample.blogspot.com/2011/10/jquery-performance-tips-tricks-from.html
   [103]: http://black-flag.net/jquery/20120229-3696.html
