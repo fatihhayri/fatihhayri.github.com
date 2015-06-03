@@ -17,7 +17,6 @@ tags: arama motoru, Blog Ödülleri, css doğrulama, google pagerank, Macromedia
 -   "WordPress Türkçe 2.5.1" - wordpress.tr [Bağlantı][5]
 -   Blog ödülleri sahiplerini bulmuş. [Bağlantı][6]
 -   Opera Drangfly çıkarmış. Firefox Firebug benzeri bir araç.
-    [Bağlantı][7]
 -   "“Güvenilir Yorumcular” isminde bir WP eklentisi yazdım" -
     eburhan.com [Bağlantı][8]
 -   "İnternet’te Reklam ve Banner Standartları" - Hasan Yalçın
@@ -42,8 +41,6 @@ tags: arama motoru, Blog Ödülleri, css doğrulama, google pagerank, Macromedia
     "wordpress 2.5.1"
   [6]: http://blog.blogodulleri.com/2008/05/10/blog-odulleri-2008-sonuclari/
     "blog ödülleri"
-  [7]: http://dev.opera.com/articles/view/introduction-to-opera-dragonfly/
-    "Dragonfly"
   [8]: http://www.eburhan.com/guvenilir-yorumcular-isminde-bir-wp-eklentisi-yazdim/
     "wordpress yorumlar"
   [9]: http://www.hasanyalcin.com/?p=476 "web banner"

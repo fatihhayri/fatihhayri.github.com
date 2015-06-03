@@ -488,7 +488,6 @@ Kalın sağlıcakla
 -   [http://ajaxian.com/archives/css-gradients-in-action][]
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-understanding-css3-gradients/][]
 -   [http://www.dynamicdrive.com/style/csslibrary/item/css3_linear_gradients/][]
--   [http://developer.practicalecommerce.com/articles/2111-Three-Techniques-for-Cross-Browser-CSS-Gradients][]
 -   [http://www.the-art-of-web.com/css/radial-gradients/][]
 -   [http://www.webdesignerdepot.com/2010/11/adding-transparencies-and-gradients-with-css/][]
 -   [http://www.display-inline.fr/projects/css-gradient/][]
@@ -522,7 +521,6 @@ Kalın sağlıcakla
   [http://www.w3.org/TR/css3-images/#gradients]: http://www.w3.org/TR/css3-images/#gradients
   [https://developer.mozilla.org/en/Using_gradients]: https://developer.mozilla.org/en/Using_gradients
   [http://developer.apple.com/library/safari/#documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Gradients/Gradients.html]: http://developer.apple.com/library/safari/#documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Gradients/Gradients.html
-  [http://dev.opera.com/articles/view/css3-linear-gradients/]: http://dev.opera.com/articles/view/css3-linear-gradients/
   [http://www.red-team-design.com/css-gradients-quick-tutorial]: http://www.red-team-design.com/css-gradients-quick-tutorial
   [http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/]: http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/
   [http://robertnyman.com/2010/02/15/css-gradients-for-all-web-browsers-without-using-images/]: http://robertnyman.com/2010/02/15/css-gradients-for-all-web-browsers-without-using-images/
@@ -533,7 +531,6 @@ Kalın sağlıcakla
   [http://ajaxian.com/archives/css-gradients-in-action]: http://ajaxian.com/archives/css-gradients-in-action
   [http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-understanding-css3-gradients/]: http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-understanding-css3-gradients/
   [http://www.dynamicdrive.com/style/csslibrary/item/css3_linear_gradients/]: http://www.dynamicdrive.com/style/csslibrary/item/css3_linear_gradients/
-  [http://developer.practicalecommerce.com/articles/2111-Three-Techniques-for-Cross-Browser-CSS-Gradients]: http://developer.practicalecommerce.com/articles/2111-Three-Techniques-for-Cross-Browser-CSS-Gradients
   [http://www.the-art-of-web.com/css/radial-gradients/]: http://www.the-art-of-web.com/css/radial-gradients/
   [http://www.webdesignerdepot.com/2010/11/adding-transparencies-and-gradients-with-css/]: http://www.webdesignerdepot.com/2010/11/adding-transparencies-and-gradients-with-css/
   [http://www.display-inline.fr/projects/css-gradient/]: http://www.display-inline.fr/projects/css-gradient/
@@ -544,7 +541,6 @@ Kalın sağlıcakla
   [http://24ways.org/2010/everything-you-wanted-to-know-about-gradients]: http://24ways.org/2010/everything-you-wanted-to-know-about-gradients
   [http://leaverou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/]: http://leaverou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/
   [http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGradients]: http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGradients
-  [http://developer.practicalecommerce.com/articles/2395-CSS3-Gradients-Revisited]: http://developer.practicalecommerce.com/articles/2395-CSS3-Gradients-Revisited
   [http://www.webdirections.org/blog/css3-radial-gradients/]: http://www.webdirections.org/blog/css3-radial-gradients/
   [http://designfestival.com/a-farewell-to-css3-gradients/]: http://designfestival.com/a-farewell-to-css3-gradients/
 

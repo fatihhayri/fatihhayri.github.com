@@ -214,7 +214,7 @@ Kalın sağlıcakla.
 
 -   [http://helephant.com/2009/11/css3-multiple-background-images/][]
 -   [http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/][]
--   [http://dev.opera.com/articles/view/css3-border-background-boxshadow/#multiple-background][]
+-   [https://dev.opera.com/articles/css3-border-background-boxshadow/#multiple-background][]
 -   [http://www.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/][]
 -   [http://www.w3.org/TR/css3-background/#the-background-image][]
 -   [http://www.zenelements.com/blog/css3-background-images/][]
@@ -241,7 +241,7 @@ Kalın sağlıcakla.
   [6]: https://lh3.googleusercontent.com/oxpb3X9kHeRE5dTNBgxITu8aboSFcjEy794Lk6s_f2yZaGQ907oICh-OWvcfbaK5NK7aLjgSnXrv8v6EU8biB5g4kiahmYf1tTaOqBboxqapOSS2_YY
   [http://helephant.com/2009/11/css3-multiple-background-images/]: http://helephant.com/2009/11/css3-multiple-background-images/
   [http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/]: http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/
-  [http://dev.opera.com/articles/view/css3-border-background-boxshadow/#multiple-background]: http://dev.opera.com/articles/view/css3-border-background-boxshadow/#multiple-background
+  [https://dev.opera.com/articles/css3-border-background-boxshadow/#multiple-background]: https://dev.opera.com/articles/css3-border-background-boxshadow/#multiple-background
   [http://www.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/]: http://www.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/
   [http://www.w3.org/TR/css3-background/#the-background-image]: http://www.w3.org/TR/css3-background/#the-background-image
   [http://www.zenelements.com/blog/css3-background-images/]: http://www.zenelements.com/blog/css3-background-images/

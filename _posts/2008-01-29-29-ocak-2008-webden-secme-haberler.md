@@ -15,7 +15,6 @@ tags: ardalan, CSS, Haberler, html5, ie, ie8, XHTML
 -   "Google Alan adı tadıcılığına el koydu" [Bağlantı][3]
 -   IE8 çıkıyor ve web âlemini değiştirmeye kararlı. Standart mod ve
     garip mod kavramını değiştecek gibi. [Bağlantı][4]
--   Opera'dan HTML5'e dair bir makale. [Bağlantı][5]
 -   "Elementlerinizi sıfırlayın" [Bağlantı][6]
 -   Linki resimlere stil vermek. [Bağlantı][7]
 -   CSS kodlarınız IE'ye uygun hale getirmek için 5 ipucu. [Bağlantı][8]
@@ -30,8 +29,6 @@ tags: ardalan, CSS, Haberler, html5, ie, ie8, XHTML
     "Tatlı alan adı"
   [4]: http://www.456bereastreet.com/archive/200801/standards_mode_is_the_new_quirks_mode/
     "IE8"
-  [5]: http://dev.opera.com/articles/view/the-first-working-draft-of-html-5-is-her/
-    "HTML5"
   [6]: http://www.orhanekici.com/elementlerinizi-sifirlayin "sıfırla"
   [7]: http://cssglobe.com/post/1238/style-your-image-links
     "linki resimlere stil ver"

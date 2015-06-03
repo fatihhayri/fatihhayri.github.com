@@ -442,9 +442,8 @@ sağlayacaktır.
 -   [http://24ways.org/2009/going-nuts-with-css-transitions][]
 -   [http://www.the-art-of-web.com/css/css-animation/][]
 -   [http://css3.bradshawenterprises.com/][]
--   [http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/][]
+-   [https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/][]
 -   [http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/][]
--   [http://www.t-infection.com/css3de-transforms-donusturme-islemleri/][] (Türkçe kaynak)
 -   [http://www.useragentman.com/IETransformsTranslator/][] (ie için çözüm)
 -   [http://www.standardista.com/css3-transforms][]
 -   [http://www.webdesigncreare.co.uk/blog/html-css/css3-transforms.html][]
@@ -498,9 +497,8 @@ sağlayacaktır.
   [http://24ways.org/2009/going-nuts-with-css-transitions]: http://24ways.org/2009/going-nuts-with-css-transitions
   [http://www.the-art-of-web.com/css/css-animation/]: http://www.the-art-of-web.com/css/css-animation/
   [http://css3.bradshawenterprises.com/]: http://css3.bradshawenterprises.com/
-  [http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/]: http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/
+  [https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/]: https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/
   [http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/]: http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/
-  [http://www.t-infection.com/css3de-transforms-donusturme-islemleri/]: http://www.t-infection.com/css3de-transforms-donusturme-islemleri/
   [http://www.standardista.com/css3-transforms]: http://www.standardista.com/css3-transforms
   [http://www.webdesigncreare.co.uk/blog/html-css/css3-transforms.html]: http://www.webdesigncreare.co.uk/blog/html-css/css3-transforms.html
   [http://professionalaspnet.com/archive/2011/03/17/IE9-Supports-CSS3-Transforms_2100_.aspx]: http://professionalaspnet.com/archive/2011/03/17/IE9-Supports-CSS3-Transforms_2100_.aspx

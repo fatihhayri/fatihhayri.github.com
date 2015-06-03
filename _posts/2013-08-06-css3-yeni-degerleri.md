@@ -299,7 +299,7 @@ Kodu [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters?redir
 * [http://generatedcontent.org/post/21279324555/viewportunits](http://generatedcontent.org/post/21279324555/viewportunits) (esnek değerler)
 * [http://css-tricks.com/viewport-sized-typography/](http://css-tricks.com/viewport-sized-typography/) (viewport)
 * [http://snook.ca/archives/html_and_css/vm-vh-units](http://snook.ca/archives/html_and_css/vm-vh-units) (viewport)
-* [http://dev.opera.com/articles/view/css-viewport-units/](http://dev.opera.com/articles/view/css-viewport-units/) (viewport)
+* [http://dev.opera.com/articles/css-viewport-units/](http://dev.opera.com/articles/css-viewport-units/) (viewport)
 * [http://caniuse.com/viewport-units](http://caniuse.com/viewport-units)
 * [http://www.impressivewebs.com/alternative-units-css3-rotate-transforms/](http://www.impressivewebs.com/alternative-units-css3-rotate-transforms/) (turn)
 * [http://cssvalues.com/](http://cssvalues.com/)

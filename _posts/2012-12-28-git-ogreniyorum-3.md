@@ -202,16 +202,12 @@ Yukarıdaki örnekte eğer com&lt;tab&gt; yapsa idik commit tamamlamasını otom
 
 [http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks](http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks)
 
-##Diğer İpuçları
-
-[http://stackoverflow.com/questions/347901/what-are-your-favorite-git-features-or-tricks?page=2&amp;tab=active#tab-top](http://stackoverflow.com/questions/347901/what-are-your-favorite-git-features-or-tricks?page=2&amp;tab=active#tab-top)
 
 ##Kaynaklar
 
- - [http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/](http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/)
+ - http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/
  - [http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html](http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html)
  - [http://forum.ubuntu-tr.net/index.php?topic=17445.0](http://forum.ubuntu-tr.net/index.php?topic=17445.0)
- - [http://oneromer.com/?p=76](http://oneromer.com/?p=76)
+ - http://oneromer.com/?p=76
  - [http://jblevins.org/log/git-colors](http://jblevins.org/log/git-colors)
- - [http://emineker.net/911/grep/](http://emineker.net/911/grep/)
- - [http://www.thinkfirstblinksecond.com/2012/04/05/git-auto-completion/](http://www.thinkfirstblinksecond.com/2012/04/05/git-auto-completion/)
+ - http://www.thinkfirstblinksecond.com/2012/04/05/git-auto-completion/

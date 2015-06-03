@@ -94,4 +94,3 @@ Kalın sağlıcakla.
  - [http://codeitdown.com/css-triangles-responsive/](http://codeitdown.com/css-triangles-responsive/)
  - [http://css-tricks.com/adobe-like-arrow-headers/](http://css-tricks.com/adobe-like-arrow-headers/)
  - [http://codepen.io/minimalmonkey/pen/KIaGD](http://codepen.io/minimalmonkey/pen/KIaGD)
- - [http://www.csslab.cl/2014/06/10/triangulos-con-css-less-mixin/](http://www.csslab.cl/2014/06/10/triangulos-con-css-less-mixin/)

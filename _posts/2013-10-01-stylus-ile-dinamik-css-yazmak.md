@@ -407,7 +407,6 @@ Stylus ile çalışmaya başladıktan sonra yaşadığım bazı sorunlar var. Ba
  - özellik seçicileri kullanımında sıkıntı var
    **Çözüldü**
  - otomatik kısaltma bazı sorunlara neden oluyor. örn #ffffff
-   **[https://github.com/LearnBoost/stylus/issues/581](https://github.com/LearnBoost/stylus/issues/581) burada çözümü var, ama -1 aldı benden**
 
 ## Sonuç
 
@@ -440,13 +439,11 @@ Kalın sağlıcakla.
 - [http://verekia.com/less-css/dont-read-less-css-tutorial-highly-addictive](http://verekia.com/less-css/dont-read-less-css-tutorial-highly-addictive) (less)
 - [http://www.wellfireinteractive.com/blog/introduction-to-stylus/](http://www.wellfireinteractive.com/blog/introduction-to-stylus/) (stylus)
 - [http://nylira.com/stylus-the-revolutionary-successor-to-css/](http://nylira.com/stylus-the-revolutionary-successor-to-css/) (stylus örnek kaşılaştırma)
-- [http://visionmedia.github.io/nib/](http://visionmedia.github.io/nib/) (stylus)
 - [http://robdodson.me/blog/2012/12/28/debug-less-with-chrome-developer-tools/](http://robdodson.me/blog/2012/12/28/debug-less-with-chrome-developer-tools/) (less chrome)
 - [https://npmjs.org/~tjholowaychuk](https://npmjs.org/~tjholowaychuk) (stylus geliştiricilerinden)
 - [https://npmjs.org/~kizu](https://npmjs.org/~kizu) (stylus geliştiricilerinden) ie için çözüm önerisi
 - [https://github.com/shomeya/bootstrap-stylus/blob/v1.4.0-stylus/lib/mixins.styl](https://github.com/shomeya/bootstrap-stylus/blob/v1.4.0-stylus/lib/mixins.styl) (stylus örnekleri)
 - [http://daker.me/2013/07/why-stylus-fit-better-my-needs.html](http://daker.me/2013/07/why-stylus-fit-better-my-needs.html)
-- [http://willnathan.com/valise/2013/3/22/installing-nib-for-stylus-within-express](http://willnathan.com/valise/2013/3/22/installing-nib-for-stylus-within-express)
 - [https://github.com/andris9/stylus-sprite](https://github.com/andris9/stylus-sprite)
 
   [1]: /images/stylus_logo.png

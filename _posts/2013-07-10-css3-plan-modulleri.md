@@ -70,8 +70,6 @@ CSS3 İstisnalar ve şekiller modülü ile yazılar resimlerin etrafında veya i
 
 * [http://www.techrepublic.com/blog/webmaster/experiment-with-css3-exclusions-and-shapes-module/2586](http://www.techrepublic.com/blog/webmaster/experiment-with-css3-exclusions-and-shapes-module/2586)
 
-* [http://blog.digitalbackcountry.com/2012/03/experimenting-with-css-exclusions/](http://blog.digitalbackcountry.com/2012/03/experimenting-with-css-exclusions/)
-
 * [http://adobe.github.io/web-platform/samples/css-exclusions/](http://adobe.github.io/web-platform/samples/css-exclusions/)
 
 ## Sonuç

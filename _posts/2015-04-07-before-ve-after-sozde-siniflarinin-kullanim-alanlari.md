@@ -136,7 +136,6 @@ Kalın sağlıcakla.
  - [http://reference.sitepoint.com/css/pseudoelement-before](http://reference.sitepoint.com/css/pseudoelement-before)
  - [http://reference.sitepoint.com/css/pseudoelement-after](http://reference.sitepoint.com/css/pseudoelement-after)
  - [http://calebogden.com/css-before-and-after/](http://calebogden.com/css-before-and-after/)
- - [http://forrst.com/posts/CSS_tabs_using_before_and_after-Rbx](http://forrst.com/posts/CSS_tabs_using_before_and_after-Rbx)
  - [http://www.hongkiat.com/blog/pseudo-element-before-after/](http://www.hongkiat.com/blog/pseudo-element-before-after/)
  - [http://red-team-design.com/css3-breadcrumbs/](http://red-team-design.com/css3-breadcrumbs/)
 

@@ -318,7 +318,7 @@ Sağlıcakla kalın.
 -   [http://fredericiana.com/2009/06/10/stylish-text-with-the-css-text-shadow-property/][]
 -   [http://maettig.com/code/css/text-shadow.html][] Örnek
 -   [http://www.howtocreate.co.uk/textshadow.html][]
--   [http://dev.opera.com/articles/view/css-text-shadows-and-background-sizing/][]
+-   [https://dev.opera.com/articles/css-text-shadows-and-background-sizing/][]
 -   [http://hacks.mozilla.org/2009/06/text-shadow/][]
 -   [http://kilianvalkhof.com/2008/javascript/text-shadow-in-ie-with-jquery/][]
 -   [http://line25.com/tutorials/create-a-letterpress-effect-with-css-text-shadow][]

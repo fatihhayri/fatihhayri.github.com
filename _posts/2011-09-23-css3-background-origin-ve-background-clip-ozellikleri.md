@@ -205,7 +205,7 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.
 -   [http://css-tricks.com/7423-transparent-borders-with-background-clip/][]
 -   [https://developer.mozilla.org/en/CSS/background-clip][]
 -   [https://developer.mozilla.org/en/CSS/background-origin][]
--   [http://dev.opera.com/articles/view/css3-border-background-boxshadow/][]
+-   [https://dev.opera.com/articles/css3-border-background-boxshadow/][]
 -   [http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/][]
 -   [http://www.css3.info/webkit-introduces-background-cliptext/][]
 -   [http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/][]
@@ -226,7 +226,7 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.
   [http://css-tricks.com/7423-transparent-borders-with-background-clip/]: http://css-tricks.com/7423-transparent-borders-with-background-clip/
   [https://developer.mozilla.org/en/CSS/background-clip]: https://developer.mozilla.org/en/CSS/background-clip
   [https://developer.mozilla.org/en/CSS/background-origin]: https://developer.mozilla.org/en/CSS/background-origin
-  [http://dev.opera.com/articles/view/css3-border-background-boxshadow/]: http://dev.opera.com/articles/view/css3-border-background-boxshadow/
+  [https://dev.opera.com/articles/css3-border-background-boxshadow/]: https://dev.opera.com/articles/css3-border-background-boxshadow/
   [http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/]: http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/
   [http://www.css3.info/webkit-introduces-background-cliptext/]: http://www.css3.info/webkit-introduces-background-cliptext/
   [http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/]: http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/

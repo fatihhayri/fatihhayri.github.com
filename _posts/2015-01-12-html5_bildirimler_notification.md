@@ -91,8 +91,6 @@ Mobil tarafında sadece Firefox(onunda desteği az) destekliyor. Diğer mobil ta
  - [https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
  - [http://blog.teamtreehouse.com/adding-desktop-notifications-to-your-web-applications](http://blog.teamtreehouse.com/adding-desktop-notifications-to-your-web-applications)
  - [http://blog.brunoscopelliti.com/start-using-web-notification](http://blog.brunoscopelliti.com/start-using-web-notification)
- - [http://www.girliemac.com/blog/2014/03/21/notifications/](http://www.girliemac.com/blog/2014/03/21/notifications/)
-
 
 [firefox]: /images/ff.png
 [chrome]: /images/ch.png

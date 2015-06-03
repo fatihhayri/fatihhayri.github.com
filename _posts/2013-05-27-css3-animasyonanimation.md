@@ -476,8 +476,7 @@ Kalın sağlıcakla.
   - <a href="http://www.w3.org/TR/css3-animations/">http://www.w3.org/TR/css3-animations/</a>
   - <a href="http://coding.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/">http://coding.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/</a>
   - <a href="http://www.vanseodesign.com/css/animation/">http://www.vanseodesign.com/css/animation/</a>
-  - <a href="http://webexpedition18.com/articles/css-animations-resources-tutorials/">http://webexpedition18.com/articles/css-animations-resources-tutorials/</a>
-  - <a href="http://www.w3schools.com/css3/css3_animations.asp">http://www.w3schools.com/css3/css3_animations.asp</a>
+  - <a href="http://www.w3schools.com/css/css3_animations.asp">http://www.w3schools.com/css/css3_animations.asp</a>
   - <a href="http://css3.bradshawenterprises.com/animations/">http://css3.bradshawenterprises.com/animations/</a>
   - <a href="http://daneden.me/animate/">http://daneden.me/animate/</a> (örnek kütüphanesi)
   - <a href="https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations">https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations</a>
@@ -492,8 +491,7 @@ Kalın sağlıcakla.
   - <a href="http://samuli.hakoniemi.net/having-fun-with-css-keyframes/">http://samuli.hakoniemi.net/having-fun-with-css-keyframes/</a> (Örnekli anlatım)
   - <a href="http://westciv.com/tools/animations/">http://westciv.com/tools/animations/</a> (animasyon aracı)
   - <a href="http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/">http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/</a>
-  - <a href="http://dev.opera.com/articles/view/css3-vs-jquery-animations/">http://dev.opera.com/articles/view/css3-vs-jquery-animations/</a>
-  - <a href="http://www.blogomen.com/css3-animasyonlar-1/">http://www.blogomen.com/css3-animasyonlar-1/</a>
+  - <a href="https://dev.opera.com/articles/css3-vs-jquery-animations/">https://dev.opera.com/articles/css3-vs-jquery-animations/</a>
   - <a href="http://www.onextrapixel.com/2011/08/31/enhance-your-sites-with-css3-animations/">http://www.onextrapixel.com/2011/08/31/enhance-your-sites-with-css3-animations/</a> (örnekli anlatım)
   - <a href="http://24ways.org/2009/css-animations/">http://24ways.org/2009/css-animations/</a> (örnekli anlatım, loading)
   - <a href="http://tympanus.net/codrops/2012/11/14/creative-css-loading-animations/">http://tympanus.net/codrops/</a>
@@ -501,8 +499,7 @@ Kalın sağlıcakla.
   - <a href="http://tympanus.net/codrops/2012/12/31/how-to-create-a-simple-multi-item-slider/">http://tympanus.net/codrops/2012/12/31/how-to-create-a-simple-multi-item-slider/</a>
   - <a href="http://tympanus.net/codrops/2012/06/25/timed-notifications-with-css-animations/">http://tympanus.net/codrops/2012/06/25/timed-notifications-with-css-animations/</a>
   - <a href="http://tympanus.net/codrops/?s=keyframe">http://tympanus.net/codrops/?s=keyframe</a>
-  - <a href="http://www.androidfools.com/2013/android-news/how-to-create-bounce-effect-with-css3-animation/">http://www.androidfools.com/2013/android-news/how-to-create-bounce-effect-with-css3-animation/</a>
-  - <a href="http://dev.opera.com/articles/view/css3-animations/">http://dev.opera.com/articles/view/css3-animations/</a>
+  - <a href="https://dev.opera.com/articles/css3-animations/">https://dev.opera.com/articles/css3-animations/</a>
   - <a href="https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations?redirectlocale=en-US&amp;redirectslug=CSS%2FUsing_CSS_animations">https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations?redirectlocale=en-US&amp;redirectslug=CSS%2FUsing_CSS_animations</a>
   - <a href="http://www.sitepoint.com/css3-animation-javascript-event-handlers/">http://www.sitepoint.com/css3-animation-javascript-event-handlers/</a>
   - <a href="http://www.valhead.com/2013/01/04/tutorial-css-animation-fill-mode/">http://www.valhead.com/2013/01/04/tutorial-css-animation-fill-mode/</a>

@@ -93,4 +93,3 @@ Kalın sağlıcakla.
  - [http://lifehacker.com/this-graphic-explains-all-the-health-hazards-of-sitting-1595834900](http://lifehacker.com/this-graphic-explains-all-the-health-hazards-of-sitting-1595834900)
  - [http://lifehacker.com/5800720/the-sitting-is-killing-you-infographic-illustrates-the-stress-of-prolonged-sitting-importance-of-getting-up](http://lifehacker.com/5800720/the-sitting-is-killing-you-infographic-illustrates-the-stress-of-prolonged-sitting-importance-of-getting-up)
  - [http://apps.washingtonpost.com/g/page/national/the-health-hazards-of-sitting/750/](http://apps.washingtonpost.com/g/page/national/the-health-hazards-of-sitting/750/)
- - [http://www.kardio.com/kardio-blog/sitting-is-killing-you-an-infographic-to-prom](http://www.kardio.com/kardio-blog/sitting-is-killing-you-an-infographic-to-prom)

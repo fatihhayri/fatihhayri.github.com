@@ -91,7 +91,7 @@ Yeni standartlar açısından bir çok kazanımımız olacağı kesin ama hala �
   [4]: http://www.fatihhayrioglu.com/css3-background-origin-ve-background-clip-ozellikleri/
   [5]: http://www.fatihhayrioglu.com/css3-donusturme-ozellikleritransforms-ve-2b-donusturme/
   [6]: http://www.fatihhayrioglu.com/font-face-kullanimi/
-  [7]: http://www.fatihhayrioglu.com/tum-tarayicilar-icin-css-ile-saydamlik-opacity/
+  [7]: http://www.fatihhayrioglu.com//css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlik/
   [8]: http://www.fatihhayrioglu.com/css-renk-gecisleri-gradients/
   [9]: https://developer.mozilla.org/en-US/docs/HTML/Canvas
   [10]: https://developer.mozilla.org/en-US/docs/SVG

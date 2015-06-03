@@ -339,7 +339,6 @@ Bu işi benzer bir mantık ile :target seçicisi yardımı ile yapabiliyoruz.
 -   [http://www.red-team-design.com/css3-accordion][]
 -   [http://www.hongkiat.com/blog/css-content-accordion/][]
 -   [http://css.dzone.com/articles/pure-css3-accordion][]
--   [http://aravindms.com/cody/accordioncs3#contact][]
 -   [http://tympanus.net/codrops/2011/10/12/flexible-slide-to-top-accordion/][]
 -   [http://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/][]
 
@@ -534,7 +533,6 @@ Kaynaklar
   [http://www.red-team-design.com/css3-accordion]: http://www.red-team-design.com/css3-accordion
   [http://www.hongkiat.com/blog/css-content-accordion/]: http://www.hongkiat.com/blog/css-content-accordion/
   [http://css.dzone.com/articles/pure-css3-accordion]: http://css.dzone.com/articles/pure-css3-accordion
-  [http://aravindms.com/cody/accordioncs3#contact]: http://aravindms.com/cody/accordioncs3#contact
   [http://tympanus.net/codrops/2011/10/12/flexible-slide-to-top-accordion/]: http://tympanus.net/codrops/2011/10/12/flexible-slide-to-top-accordion/
   [http://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/]: http://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/
   [http://css-tricks.com/css3-tabs/]: http://css-tricks.com/css3-tabs/

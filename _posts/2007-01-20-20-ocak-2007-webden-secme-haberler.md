@@ -20,9 +20,6 @@ tags: CSS, Firefox, form, html
     bulabilirsiniz. [Link][1]
 -   Güzel kodlama yapmak için 21 öneri. [Link][2]
 -   10 güzel CSS ipucu [Link][3]
--   Her ne kadar şu an HTML'in son sürümü HTML4'de olsa HTML 5 üzerinde
-    bazı çalışmalar başlanmış durumda. Opera "HTML5 kullanarak
-    formlarımızı geliştirmek" adlı bir yazı yayınlamış. [Link][4]
 -   Firefox'un gizli sayfalarına ulaşmaya ne dersiniz ? [Link][5]
 -   12 Temel CSS web sayfası planı [Link][6]
 -
@@ -34,8 +31,6 @@ tags: CSS, Firefox, form, html
     "Link"
   [2]: http://www.digital-web.com/articles/markup_as_craft/ "Link"
   [3]: http://www.72dpiintheshade.com/2007/01/16/top-10-css-tips-from-a-professional-css-architect/
-    "Link"
-  [4]: http://dev.opera.com/articles/view/improve-your-forms-using-html5/
     "Link"
   [5]: http://www.our-picks.com/archives/2007/01/18/the-7-hidden-pages-within-your-firefox-browser/
     "Link"

@@ -192,7 +192,6 @@ sitelerden kaldırmayı unutmayın.
 -   [http://blogs.msdn.com/b/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx][]
 -   [http://blogs.msdn.com/b/ie/archive/2009/03/24/what-s-new-in-jscript-for-ie8.aspx][]
 -   [http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx][]
--   [http://www.gradientpixels.ca/blog-themes-tutorials/17-no-support-for-ie7-from-wordpress-33][]
 -   [http://css-tricks.com/browser-support-pseudo-elements/][]
 -   [http://share.ez.no/forums/general/browser-support-no-support-for-ie7][]
 -   [http://www.netmagazine.com/news/google-apps-ditches-support-ie7][]
@@ -217,7 +216,6 @@ sitelerden kaldırmayı unutmayın.
 -   [http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/][]
 -   [http://drupal.org/node/1217788][]
 -   [http://theie7countdown.com/][]
--   [http://howlingdogthemes.com/wordpress-development/wp-to-drop-ie7-support/][]
 -   [http://gmailblog.blogspot.com/2011/06/our-plans-to-support-modern-browsers.html][]
 -   [http://blogs.missouristate.edu/web/2012/03/26/goodbye-ie7-we-wont-miss-you/][]
 -   [http://caniuse.com/#compare=y&b1=ie+7&b2=ie+8][]
@@ -267,7 +265,6 @@ sitelerden kaldırmayı unutmayın.
   [http://blogs.msdn.com/b/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx]: http://blogs.msdn.com/b/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx
   [http://blogs.msdn.com/b/ie/archive/2009/03/24/what-s-new-in-jscript-for-ie8.aspx]: http://blogs.msdn.com/b/ie/archive/2009/03/24/what-s-new-in-jscript-for-ie8.aspx
   [http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx]: http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx
-  [http://www.gradientpixels.ca/blog-themes-tutorials/17-no-support-for-ie7-from-wordpress-33]: http://www.gradientpixels.ca/blog-themes-tutorials/17-no-support-for-ie7-from-wordpress-33
   [http://css-tricks.com/browser-support-pseudo-elements/]: http://css-tricks.com/browser-support-pseudo-elements/
   [http://share.ez.no/forums/general/browser-support-no-support-for-ie7]: http://share.ez.no/forums/general/browser-support-no-support-for-ie7
   [http://www.netmagazine.com/news/google-apps-ditches-support-ie7]: http://www.netmagazine.com/news/google-apps-ditches-support-ie7
@@ -288,7 +285,6 @@ sitelerden kaldırmayı unutmayın.
   [http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/]: http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/
   [http://drupal.org/node/1217788]: http://drupal.org/node/1217788
   [http://theie7countdown.com/]: http://theie7countdown.com/
-  [http://howlingdogthemes.com/wordpress-development/wp-to-drop-ie7-support/]: http://howlingdogthemes.com/wordpress-development/wp-to-drop-ie7-support/
   [http://gmailblog.blogspot.com/2011/06/our-plans-to-support-modern-browsers.html]: http://gmailblog.blogspot.com/2011/06/our-plans-to-support-modern-browsers.html
   [http://blogs.missouristate.edu/web/2012/03/26/goodbye-ie7-we-wont-miss-you/]: http://blogs.missouristate.edu/web/2012/03/26/goodbye-ie7-we-wont-miss-you/
   [http://caniuse.com/#compare=y&b1=ie+7&b2=ie+8]: http://caniuse.com/#compare=y&b1=ie+7&b2=ie+8

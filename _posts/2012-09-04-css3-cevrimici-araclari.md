@@ -228,7 +228,7 @@ Toplu
   [http://ianli.com/blueprinter/]: http://ianli.com/blueprinter/
   [http://1kbgrid.com/]: http://1kbgrid.com/
   [http://gridinator.com/]: http://gridinator.com/
-  [http://grid.mindplay.dk/]: http://grid.mindplay.dk/,
+  [http://grid.mindplay.dk/]: http://grid.mindplay.dk/
   [http://www.3dcsstext.com/]: http://www.3dcsstext.com/
   [http://www.typetester.org/]: http://www.typetester.org/
   [http://www.csstypeset.com/]: http://www.csstypeset.com/

@@ -133,11 +133,9 @@ Kalın sağlıcakla
 -   [http://webdesign.about.com/od/styleproperties/p/blspfontsizeadj.htm][]
 -   [https://developer.mozilla.org/samples/cssref/font-size-adjust.html][]
 -   [http://css-infos.net/property/-webkit-text-size-adjust][]
--   [http://www.emdpi.com/cssfontsizeadjust.html][]
 -   [http://www.impressivewebs.com/little-known-css3-type/][]
 -   [https://developer.mozilla.org/en/CSS/font-size-adjust][]
 -   [http://www.w3.org/TR/WD-font/#font-size-adjust][]
--   [http://www.siku-siku.com/blog/2010/11/22/preserving-the-x-height-of-your-preferred-font-choice/][]
 -   [http://babylon-design.com/mais-c-est-quoi-au-juste-font-size-adjust/][]
 -   [http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/][]
 -   [http://www.webspaceworks.com/resources/fonts-web-typography/43/][]
@@ -145,9 +143,7 @@ Kalın sağlıcakla
 -   [http://www.opera.com/docs/specs/presto27/css/fonts/][]
 -   [http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/][]
 -   [http://www.fatihhayrioglu.com/css-ve-tipografi/][]
--   [http://webforfreaks.com/cssandtype/index.php?chemin=content/2011-06-11/][]
 -   [http://brunildo.org/test/xheight.pl][]
--   [http://www.xhtml-lab.com/css3-reference/font-size-adjust][] (güzel)
 -   [http://www.w3schools.com/cssref/css3_pr_font-stretch.asp][]
 -   [https://developer.mozilla.org/en/CSS/font-stretch][] (font-stretch)
 -   [http://msdn.microsoft.com/library/ff974090.aspx][] (font-stretch)
@@ -159,7 +155,6 @@ Kalın sağlıcakla
 -   [http://szafranek.net/works/articles/font-smoothing-explained/][]
 -   [http://maxvoltar.com/archive/-Webkit-font-smoothing][]
 -   [http://www.usabilitypost.com/2010/08/26/font-smoothing/][]
--   [http://daneden.me/2010/12/css-font-smoothing/][]
 
   [@font-face kullanımı]: http://www.fatihhayrioglu.com/font-face-kullanimi/
   [100]: https://lh6.googleusercontent.com/YW1f1GQqHZCiepSVsvkodxuovf2J1IIFEtdiaBZw4q2s6oM38friVO4jli_8FedEtou75rN8hzxyxal0ApDp1lYyM0Fgb4i0R3qH8yOWbIcbuoZqLYg
@@ -174,20 +169,16 @@ Kalın sağlıcakla
   [http://webdesign.about.com/od/styleproperties/p/blspfontsizeadj.htm]: http://webdesign.about.com/od/styleproperties/p/blspfontsizeadj.htm
   [https://developer.mozilla.org/samples/cssref/font-size-adjust.html]: https://developer.mozilla.org/samples/cssref/font-size-adjust.html
   [http://css-infos.net/property/-webkit-text-size-adjust]: http://css-infos.net/property/-webkit-text-size-adjust
-  [http://www.emdpi.com/cssfontsizeadjust.html]: http://www.emdpi.com/cssfontsizeadjust.html
   [http://www.impressivewebs.com/little-known-css3-type/]: http://www.impressivewebs.com/little-known-css3-type/
   [https://developer.mozilla.org/en/CSS/font-size-adjust]: https://developer.mozilla.org/en/CSS/font-size-adjust
   [http://www.w3.org/TR/WD-font/#font-size-adjust]: http://www.w3.org/TR/WD-font/#font-size-adjust
-  [http://www.siku-siku.com/blog/2010/11/22/preserving-the-x-height-of-your-preferred-font-choice/]: http://www.siku-siku.com/blog/2010/11/22/preserving-the-x-height-of-your-preferred-font-choice/
   [http://babylon-design.com/mais-c-est-quoi-au-juste-font-size-adjust/]: http://babylon-design.com/mais-c-est-quoi-au-juste-font-size-adjust/
   [http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/]: http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/
   [http://www.webspaceworks.com/resources/fonts-web-typography/43/]: http://www.webspaceworks.com/resources/fonts-web-typography/43/
   [http://www.opera.com/docs/specs/presto27/css/fonts/]: http://www.opera.com/docs/specs/presto27/css/fonts/
   [http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/]: http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/
   [http://www.fatihhayrioglu.com/css-ve-tipografi/]: http://www.fatihhayrioglu.com/css-ve-tipografi/
-  [http://webforfreaks.com/cssandtype/index.php?chemin=content/2011-06-11/]: http://webforfreaks.com/cssandtype/index.php?chemin=content/2011-06-11/
   [http://brunildo.org/test/xheight.pl]: http://brunildo.org/test/xheight.pl
-  [http://www.xhtml-lab.com/css3-reference/font-size-adjust]: http://www.xhtml-lab.com/css3-reference/font-size-adjust
   [http://www.w3schools.com/cssref/css3_pr_font-stretch.asp]: http://www.w3schools.com/cssref/css3_pr_font-stretch.asp
   [https://developer.mozilla.org/en/CSS/font-stretch]: https://developer.mozilla.org/en/CSS/font-stretch
   [http://msdn.microsoft.com/library/ff974090.aspx]: http://msdn.microsoft.com/library/ff974090.aspx
@@ -199,4 +190,3 @@ Kalın sağlıcakla
   [http://szafranek.net/works/articles/font-smoothing-explained/]: http://szafranek.net/works/articles/font-smoothing-explained/
   [http://maxvoltar.com/archive/-Webkit-font-smoothing]: http://maxvoltar.com/archive/-Webkit-font-smoothing
   [http://www.usabilitypost.com/2010/08/26/font-smoothing/]: http://www.usabilitypost.com/2010/08/26/font-smoothing/
-  [http://daneden.me/2010/12/css-font-smoothing/]: http://daneden.me/2010/12/css-font-smoothing/

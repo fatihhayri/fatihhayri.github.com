@@ -155,7 +155,6 @@ ile sayfamıza ekledik.
 ## Kaynaklar
 
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-ever-thought-about-using-font-face-for-icons/][]
--   [http://developer.appdirect.com/blog/make_beautiful_icons_with_image_sprites_css3_font_face_or_svg][]
 -   [http://ikwebdesigner.com/special-characters/#howto][]
 -   [http://www.sitepoint.com/webfont-icons/][]
 -   [http://zocial.smcllns.com/sample.html][]
@@ -179,7 +178,6 @@ ile sayfamıza ekledik.
   [3]: /images/Screen-shot-2012-03-08-at-10.47.01-AM.png
   [/dokumanlar/fontface/tl_deneme.html]: /dokumanlar/fontface/tl_deneme.html
   [http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-ever-thought-about-using-font-face-for-icons/]: http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-ever-thought-about-using-font-face-for-icons/
-  [http://developer.appdirect.com/blog/make_beautiful_icons_with_image_sprites_css3_font_face_or_svg]: http://developer.appdirect.com/blog/make_beautiful_icons_with_image_sprites_css3_font_face_or_svg
   [http://ikwebdesigner.com/special-characters/#howto]: http://ikwebdesigner.com/special-characters/#howto
   [http://www.sitepoint.com/webfont-icons/]: http://www.sitepoint.com/webfont-icons/
   [http://zocial.smcllns.com/sample.html]: http://zocial.smcllns.com/sample.html

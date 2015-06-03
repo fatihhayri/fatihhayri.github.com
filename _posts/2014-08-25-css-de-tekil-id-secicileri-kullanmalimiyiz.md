@@ -84,8 +84,8 @@ Kalın sağlıcakla.
  - [http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/][20]
 
 
-  [1]: twitter.com/muratcorlu
-  [2]: twitter.com/ademilter
+  [1]: https://twitter.com/muratcorlu
+  [2]: https://twitter.com/ademilter
   [3]: https://docs.google.com/document/d/1AsRKkOUiyyqG9CnXGyz7f9eQUMcAT3oh8ZeWtBZwQ_Y/edit?usp=sharing
   [4]: http://stevesouders.com/efws/css-selectors/csscreate.php?n=1000&sel=#id&body=background:%20#CFD&ne=1000
   [5]: http://stevesouders.com/efws/css-selectors/csscreate.php?n=1000&sel=.class&body=background:%20#CFD&ne=1000

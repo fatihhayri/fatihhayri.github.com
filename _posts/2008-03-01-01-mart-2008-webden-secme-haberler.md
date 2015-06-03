@@ -30,7 +30,7 @@ tags: CSS, facebook, gtalk, ie, jquery, lightbox, liste, silverlight, text-shado
 
   [Bağlantı]: http://weblogs.asp.net/scottgu/archive/2008/02/22/first-look-at-silverlight-2.aspx
     "Silverlight 2. sürüm"
-  [1]: http://dev.opera.com/articles/view/css-text-shadows-and-background-sizing/
+  [1]: https://dev.opera.com/articles/css-text-shadows-and-background-sizing/
     "metin gölgeleme"
   [2]: http://konstruktors.com/blog/design-suggetions/125-how-to-create-beautiful-and-elegant-html-lists-using-css/
     "CSS listeler"

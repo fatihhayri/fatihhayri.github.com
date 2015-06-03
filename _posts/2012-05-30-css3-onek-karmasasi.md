@@ -179,7 +179,6 @@ Zamanla göreceği bakalım neler olacak.
 -   [http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/][] (araçlar)
 -   [http://reference.sitepoint.com/css/vendorspecific][]
 -   [http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html][]
--   [http://www.mightymeta.co.uk/1103/no-more-need-for-some-css3-vendor-prefixes/][]
 -   [http://www.alistapart.com/articles/prefix-or-posthack/][]
 -   [http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/][]
 -   [http://snook.ca/archives/html_and_css/not-supported][]
@@ -214,7 +213,6 @@ Zamanla göreceği bakalım neler olacak.
   [http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/]: http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/
   [http://reference.sitepoint.com/css/vendorspecific]: http://reference.sitepoint.com/css/vendorspecific
   [http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html]: http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html
-  [http://www.mightymeta.co.uk/1103/no-more-need-for-some-css3-vendor-prefixes/]: http://www.mightymeta.co.uk/1103/no-more-need-for-some-css3-vendor-prefixes/
   [http://www.alistapart.com/articles/prefix-or-posthack/]: http://www.alistapart.com/articles/prefix-or-posthack/
   [http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/]: http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/
   [http://snook.ca/archives/html_and_css/not-supported]: http://snook.ca/archives/html_and_css/not-supported

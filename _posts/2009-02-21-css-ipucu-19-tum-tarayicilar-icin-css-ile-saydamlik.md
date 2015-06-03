@@ -9,24 +9,26 @@ tags: css doğrulama, donuklaştırma, İnternet Tarayıcısı, opacity, saydaml
 Daha önce birçok kez bu konuda bana e-posta geldi. Buraya yazmanın
 mantıklı olacağını düşündüm.
 
-	:::css
-	secici {
-	    opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
-	    filter: alpha(opacity=75); /* IE lt 8 */
-	    -ms-filter: "alpha(opacity=75)"; /* IE 8 */
-	    -khtml-opacity: .75; /* Safari 1.x */
-	    -moz-opacity: .75; /* FF lt 1.5, Netscape */
-	}
+{% highlight css %}
+secici {
+    opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
+    filter: alpha(opacity=75); /* IE lt 8 */
+    -ms-filter: "alpha(opacity=75)"; /* IE 8 */
+    -khtml-opacity: .75; /* Safari 1.x */
+    -moz-opacity: .75; /* FF lt 1.5, Netscape */
+}
+{% endhighlight %}
 
 Günümüzdeki(27 Nisan 2012) durumu düşünürsek kodu aşağıdaki gibi
 kısaltabiliriz.
 
-	:::css
-	secici {
-	    opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
-	    filter: alpha(opacity=75); /* IE lt 8 */
-	    -ms-filter: "alpha(opacity=75)"; /* IE 8 */
-	}
+{% highlight css %}
+secici {
+    opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
+    filter: alpha(opacity=75); /* IE lt 8 */
+    -ms-filter: "alpha(opacity=75)"; /* IE 8 */
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][] Kod aslında tek satır olması gerekir ki CSS
 3 ile birlikte bu tek satır olacaktır. opacity: değer; tanımı ile
@@ -39,23 +41,24 @@ gerektirdiğinde(mesela müşteri istediğinde) bu sorunu çözmek için bir
 kaç yöntem var. Bu yöntemlerden biri javascript fonksiyonu hazırlayıp bu
 fonksiyon yardımı ile elemanlarımızı saydamlaştırma;
 
-
-	:::javascript
-	function donuklastirma(element, donukDeger){
-	    var oe = document.getElementById(element);
-	    // donuklastirma degeri
-	    oe.setAttribute("style", "opacity:"+ donukDeger +";")
-	    if (oe.style.setAttribute) // IE icin
-	    oe.style.setAttribute("filter", "alpha(opacity="+ donukDeger*100 +");")
-	}
+{% highlight javascript %}
+function donuklastirma(element, donukDeger){
+    var oe = document.getElementById(element);
+    // donuklastirma degeri
+    oe.setAttribute("style", "opacity:"+ donukDeger +";")
+    if (oe.style.setAttribute) // IE icin
+    oe.style.setAttribute("filter", "alpha(opacity="+ donukDeger*100 +");")
+}
+{% endhighlight %}
 
 
 Örneği görmek
 için [tıklayınız.][1] Diğer bir yöntemde ise ayrı bir css kodu yazıp bu
 kodu javascript ile ekleyebiliriz
 
-	:::html
-	<script type="text/javascript"> document.write('<link rel="stylesheet" type="text/css" media="screen" href="style/donuklastirma.css" />');</script>
+{% highlight javascript %}
+<script type="text/javascript"> document.write('<link rel="stylesheet" type="text/css" media="screen" href="style/donuklastirma.css" />');</script>
+{% endhighlight %}
 
 Sorun: opacity tanımı kapsadığı elemanın içeriğini de etkiler bunu
 engellemek için Robert Nyman'ın bir çözümü var.

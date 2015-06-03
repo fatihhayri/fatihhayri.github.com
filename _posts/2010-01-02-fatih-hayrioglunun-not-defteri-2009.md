@@ -165,7 +165,7 @@ Geçen seneyi değerlendirirsem. Genel manada pek verimli bir sene olmadı.
     "Float Uygulanmış Elementleri Tam Kapsayamama Sorunu İpuçları"
   [CSS İpucu 18: Optimizasyon İçin CSS Medya Dosyalarını Birleştirmek]: http://www.fatihhayrioglu.com/optimizasyon-icin-css-medya-dosyalarini-birlestirmek/
     "CSS İpucu 18: Optimizasyon İçin CSS Medya Dosyalarını Birleştirmek"
-  [CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)]: http://www.fatihhayrioglu.com/tum-tarayicilar-icin-css-ile-saydamlik-opacity/
+  [CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)]: http://www.fatihhayrioglu.com//css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlik/
     "CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)"
   [Basit Resimli Menü Yapmak]: http://www.fatihhayrioglu.com/basit-resimli-menu-yapmak/
     "Basit Resimli Menü Yapmak"

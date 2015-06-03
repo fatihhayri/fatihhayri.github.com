@@ -25,8 +25,6 @@ tags: Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, s
 -   WordPress'de spam'ı engellemek için 4 adım. [Link][9]
 -   <span class="titlespec">WordPress "Feed Styler" </span>WordPress RSS
     beslemelerini düzenlemek için bir eklenti. [Link][10]
--   Firefox, IE derken şimdi de Opera kod yazarlarına yardımcı araç
-    olarak "Opera Developer Tools" çıkardı. [Link][11]
 -   Hasan Yalçın ilk WordPress temasını yaptı. Hayırlı uğurlu olsun.
     [Link][12]
 
@@ -46,6 +44,4 @@ tags: Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, s
   [9]: http://www.helpero.com/news/Computers/Software/4-Easy-Steps-to-Kill-Blog-Spam-for-Ever_298.html
     "Link"
   [10]: http://www.devlounge.net/extras/feed-styler "Link"
-  [11]: http://dev.opera.com/articles/view/opera-developer-tools/?page=2
-    "Link"
   [12]: http://www.hasanyalcin.com/?p=227 "Link"

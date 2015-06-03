@@ -85,7 +85,7 @@ Yeni nesil tarayıcılar desteğini sunarken İnternet Explorer’ın ve mobil t
 
 * [http://www.w3.org/TR/css3-conditional/#at-supports](http://www.w3.org/TR/css3-conditional/#at-supports)
 * [https://developer.mozilla.org/en-US/docs/Web/CSS/@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
-* [http://dev.opera.com/articles/view/native-css-feature-detection-via-the-supports-rule/](http://dev.opera.com/articles/view/native-css-feature-detection-via-the-supports-rule/)
+* [https://dev.opera.com/articles/native-css-feature-detection/](https://dev.opera.com/articles/native-css-feature-detection/)
 * [http://caniuse.com/#search=@support](http://caniuse.com/#search=@support)
 * [http://davidwalsh.name/css-supports](http://davidwalsh.name/css-supports)
 * [http://www.sitepoint.com/supports-native-css-feature-detection/](http://www.sitepoint.com/supports-native-css-feature-detection/)

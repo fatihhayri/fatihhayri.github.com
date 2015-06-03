@@ -275,7 +275,6 @@ eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
 -   [http://cubic-bezier.com/](http://cubic-bezier.com/#.17,.67,.83,.67) (araç)
 -   [http://www.roblaplaca.com/examples/bezierBuilder/](http://www.roblaplaca.com/examples/bezierBuilder/) (araç)
 -   [http://www.netzgesta.de/dev/cubic-bezier-timing-function.html](http://www.netzgesta.de/dev/cubic-bezier-timing-function.html) (araç)
--   [http://slicescript.com/create-a-stylish-menu-with-css3-transitions/](http://slicescript.com/create-a-stylish-menu-with-css3-transitions/) (örnek menü)
 -   [http://www.kirupa.com/html5/looking\_at\_css3\_transitions.htm](http://www.kirupa.com/html5/looking_at_css3_transitions.htm)
 -   [http://bavotasan.com/2011/a-simple-fade-with-css3/](http://bavotasan.com/2011/a-simple-fade-with-css3/)
 -   [http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/](http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/) (örnek)
@@ -298,7 +297,7 @@ eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
 -   [http://css3.bradshawenterprises.com/transitions/](http://css3.bradshawenterprises.com/transitions/)
 -   [http://www.webdesignerdepot.com/2012/12/how-to-use-the-css3-transition-property/](http://www.webdesignerdepot.com/2012/12/how-to-use-the-css3-transition-property/)
 -   [http://www.problogdesign.com/coding/get-started-with-css3-transitions-today](http://www.problogdesign.com/coding/get-started-with-css3-transitions-today)
--   [http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/](http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/)
+-   [http://code.tutsplus.com/tutorials/css-fundamentals-css3-transitions--pre-10922](http://code.tutsplus.com/tutorials/css-fundamentals-css3-transitions--pre-10922)
 
 [firefox]: /images/ff.png
 [chrome]: /images/ch.png
