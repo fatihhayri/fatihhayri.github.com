@@ -889,7 +889,6 @@ Firefox için -moz ön eki kullanılması gerekiyor.
 -   [http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/][]
 -   [http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/][]
 -   [http://perishablepress.com/awesome-new-css3-selectors/][] (ilginç)
--   [http://developer.practicalecommerce.com/articles/2386-Taking-CSS3-Selectors-to-the-Nth][]
 -   [https://developer.mozilla.org/en/firefox_3.5_for_developers][]
 -   [https://developer.mozilla.org/en/CSS/%3Achecked][]
 -   [https://developer.mozilla.org/en/CSS/:nth-child][]
@@ -928,7 +927,6 @@ Firefox için -moz ön eki kullanılması gerekiyor.
   [http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/]: http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/
   [http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/]: http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/
   [http://perishablepress.com/awesome-new-css3-selectors/]: http://perishablepress.com/awesome-new-css3-selectors/
-  [http://developer.practicalecommerce.com/articles/2386-Taking-CSS3-Selectors-to-the-Nth]: http://developer.practicalecommerce.com/articles/2386-Taking-CSS3-Selectors-to-the-Nth
   [https://developer.mozilla.org/en/firefox_3.5_for_developers]: https://developer.mozilla.org/en/firefox_3.5_for_developers
   [https://developer.mozilla.org/en/CSS/%3Achecked]: https://developer.mozilla.org/en/CSS/%3Achecked
   [https://developer.mozilla.org/en/CSS/:nth-child]: https://developer.mozilla.org/en/CSS/:nth-child

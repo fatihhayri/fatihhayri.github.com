@@ -123,7 +123,6 @@ Kalın sağlıcakla
 -   [http://www.css3.info/liquid-faux-columns-with-background-size/][]
 -   [http://css-tricks.com/3458-perfect-full-page-background-image/][]
 -   [http://www.cssplay.co.uk/boxes/css3-background.html][] (örnek)
--   [http://www.pziecina.com/design/turorial_demos/resize_background.php][]
 -   [http://www.alistapart.com/articles/supersize-that-background-please/][]
 -   [http://whereswalden.com/files/mozilla/background-size/more-examples.html][]
 -   [http://dev.w3.org/csswg/css3-page/img_scale.png][]
@@ -146,7 +145,6 @@ Kalın sağlıcakla
   [http://www.css3.info/liquid-faux-columns-with-background-size/]: http://www.css3.info/liquid-faux-columns-with-background-size/
   [http://css-tricks.com/3458-perfect-full-page-background-image/]: http://css-tricks.com/3458-perfect-full-page-background-image/
   [http://www.cssplay.co.uk/boxes/css3-background.html]: http://www.cssplay.co.uk/boxes/css3-background.html
-  [http://www.pziecina.com/design/turorial_demos/resize_background.php]: http://www.pziecina.com/design/turorial_demos/resize_background.php
   [http://www.alistapart.com/articles/supersize-that-background-please/]: http://www.alistapart.com/articles/supersize-that-background-please/
   [http://dev.w3.org/csswg/css3-page/img_scale.png]: http://dev.w3.org/csswg/css3-page/img_scale.png
   [100]: /images/background-size_cover_contain.gif

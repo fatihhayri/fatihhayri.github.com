@@ -401,7 +401,6 @@ mi ama olmadı.
 -   [http://www.w3.org/TR/css3-mediaqueries/][]
 -   [http://www.css3.info/modules/compatibility-table-media-queries/][]
 -   [http://webdesignerwall.com/general/the-wall-is-redesigned][] (örnek uygulama)
--   [http://blog.bloop.co/the-practicalities-of-css-media-queries-lesso][] (avantaj ve dezavantajları)
 -   [http://www.broken-links.com/2011/02/21/using-media-queries-in-the-real-world/][] (ie için çözüm önerili)
 -   [http://mediaqueri.es/][] (örnekler içeriyor)
 -   [http://www.catswhocode.com/blog/create-an-adaptable-website-layout-with-css3-media-queries][]
@@ -409,7 +408,6 @@ mi ama olmadı.
 -   [http://webdesignerwall.com/tutorials/css3-media-queries][]
 -   [https://developer.mozilla.org/en/CSS/media_queries][]
 -   [http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/][]
--   [http://www.1stwebdesigner.com/css/how-to-use-css3-orientation-media-queries/][]
 -   [http://ie.microsoft.com/testdrive/HTML5/CSS3MediaQueries/Default.html][]
 -   [http://www.catswhocode.com/blog/create-an-adaptable-website-layout-with-css3-media-queries][]
 -   [http://www.alistapart.com/articles/responsive-web-design/][]
@@ -443,14 +441,12 @@ mi ama olmadı.
   [http://www.w3.org/TR/css3-mediaqueries/]: http://www.w3.org/TR/css3-mediaqueries/
   [http://www.css3.info/modules/compatibility-table-media-queries/]: http://www.css3.info/modules/compatibility-table-media-queries/
   [http://webdesignerwall.com/general/the-wall-is-redesigned]: http://webdesignerwall.com/general/the-wall-is-redesigned
-  [http://blog.bloop.co/the-practicalities-of-css-media-queries-lesso]: http://blog.bloop.co/the-practicalities-of-css-media-queries-lesso
   [http://www.broken-links.com/2011/02/21/using-media-queries-in-the-real-world/]: http://www.broken-links.com/2011/02/21/using-media-queries-in-the-real-world/
   [http://mediaqueri.es/]: http://mediaqueri.es/
   [http://www.catswhocode.com/blog/create-an-adaptable-website-layout-with-css3-media-queries]: http://www.catswhocode.com/blog/create-an-adaptable-website-layout-with-css3-media-queries
   [http://webdesignerwall.com/tutorials/adaptive-mobile-design-with-css3-media-queries]: http://webdesignerwall.com/tutorials/adaptive-mobile-design-with-css3-media-queries
   [http://webdesignerwall.com/tutorials/css3-media-queries]: http://webdesignerwall.com/tutorials/css3-media-queries
   [http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/]: http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/
-  [http://www.1stwebdesigner.com/css/how-to-use-css3-orientation-media-queries/]: http://www.1stwebdesigner.com/css/how-to-use-css3-orientation-media-queries/
   [http://ie.microsoft.com/testdrive/HTML5/CSS3MediaQueries/Default.html]: http://ie.microsoft.com/testdrive/HTML5/CSS3MediaQueries/Default.html
   [http://www.alistapart.com/articles/responsive-web-design/]: http://www.alistapart.com/articles/responsive-web-design/
   [http://reference.sitepoint.com/css/mediaqueries]: http://reference.sitepoint.com/css/mediaqueries

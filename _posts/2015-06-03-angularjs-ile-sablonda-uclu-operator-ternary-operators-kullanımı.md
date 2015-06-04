@@ -14,7 +14,7 @@ Kullanımı çok basit.
 
 {% highlight javascript %}
 {% raw %}
-{{ Koşul ? "koşul doğru ise" : "koşul yanlış ise" }}
+{{ Kosul ? "koşul doğru ise" : "koşul yanlış ise" }}
 {% endraw %}
 {% endhighlight %}
 

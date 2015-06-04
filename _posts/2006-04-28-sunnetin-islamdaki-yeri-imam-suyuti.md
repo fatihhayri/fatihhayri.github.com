@@ -3,6 +3,7 @@ layout: post
 title: Sünnetin İslamdaki Yeri - İmam Suyuti
 Date: 2006-04-28 23:17
 Category: Kitaplar
+---
 
 ![sunnetinislamdakiyeri.jpg][]Sünnet üzerine bukadar yorumların
 yapıldığı günümüzde sünnete karşı olanlara verilmiş güzel bir cevap.

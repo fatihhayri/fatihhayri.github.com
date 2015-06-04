@@ -386,14 +386,12 @@ Kalın sağlıcakla
 -   [http://www.alistapart.com/articles/css3multicolumn][A List Apart]
 -   [http://www.vanseodesign.com/css/multi-columns/][] (güzel)
 -   [http://css-tricks.com/snippets/css/multiple-columns/][] (basit)
--   [http://www.zenelements.com/blog/css3-multiple-columns/][] (basit)
 -   [http://www.css3.info/preview/multi-column-layout/][]
 -   [http://www.quirksmode.org/css/multicolumn.html][]
 -   [http://webdesignernotebook.com/css/remembering-the-css3-multi-column-layout-module/][]
 -   [http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/][]
 -   [http://css-tricks.com/13372-seamless-responsive-photo-grid/][]
 -   [http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns][]
--   [http://kmsm.ca/2010/an-almost-complete-guide-to-css3-multi-column-layouts/][]
 -   [http://dev.opera.com/articles/view/css3-multi-column-layout/][]
 -   [http://www.my-html-codes.com/css3-multiple-columns][] (orta)
 -   [http://www.456bereastreet.com/archive/200509/css3_multicolumn_layout_considered_harmful/][]
@@ -403,30 +401,25 @@ Kalın sağlıcakla
 -   [http://www.superiorwebsys.com/blog/20/Creating_A_Multi-Column_Layout_Using_CSS3/][]
 -   [http://caniuse.com/multicolumn][] (tarayıcı destek)
 -   [http://people.opera.com/pepelsbey/experiments/multicol/][] (güzel örnek)
--   [http://people.opera.com/zibin/multicol/index.html][] (güzel örnek)
 -   [http://www.juude.info/css-columns.php][] (güzel)
--   [http://www.csscripting.com/css-multi-column/](http://www.csscripting.com/css-multi-column/) (js ile çözüm)
 -   [http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/][] (sorunları)
 -   [http://help.dottoro.com/lcxquvkf.php][]
 
   [Tipografi]: http://www.fatihhayrioglu.com/css-ve-tipografi/
   [A List Apart]: http://www.alistapart.com/articles/css3multicolumn
   [Column Script from Michael van Ouwerkerk]: http://13thparallel.com/archive/column-script/
-  [Multi Column Layout Demonstration from CSS Scripting]: http://www.csscripting.com/css-multi-column/
   [Multi-column layout with CSS3 (and some JavaScript)]: http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript
   [Esnek Kutu Planlama Modülü]: http://www.w3.org/TR/css3-flexbox/
   [Daha önce çok kolonlu menülerde]: http://www.fatihhayrioglu.com/cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/
   [http://www.w3.org/TR/css3-multicol/]: http://www.w3.org/TR/css3-multicol/
   [http://www.vanseodesign.com/css/multi-columns/]: http://www.vanseodesign.com/css/multi-columns/
   [http://css-tricks.com/snippets/css/multiple-columns/]: http://css-tricks.com/snippets/css/multiple-columns/
-  [http://www.zenelements.com/blog/css3-multiple-columns/]: http://www.zenelements.com/blog/css3-multiple-columns/
   [http://www.css3.info/preview/multi-column-layout/]: http://www.css3.info/preview/multi-column-layout/
   [http://www.quirksmode.org/css/multicolumn.html]: http://www.quirksmode.org/css/multicolumn.html
   [http://webdesignernotebook.com/css/remembering-the-css3-multi-column-layout-module/]: http://webdesignernotebook.com/css/remembering-the-css3-multi-column-layout-module/
   [http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/]: http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/
   [http://css-tricks.com/13372-seamless-responsive-photo-grid/]: http://css-tricks.com/13372-seamless-responsive-photo-grid/
   [http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns]: http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns
-  [http://kmsm.ca/2010/an-almost-complete-guide-to-css3-multi-column-layouts/]: http://kmsm.ca/2010/an-almost-complete-guide-to-css3-multi-column-layouts/
   [http://dev.opera.com/articles/view/css3-multi-column-layout/]: http://dev.opera.com/articles/view/css3-multi-column-layout/
   [http://www.my-html-codes.com/css3-multiple-columns]: http://www.my-html-codes.com/css3-multiple-columns
   [http://www.456bereastreet.com/archive/200509/css3_multicolumn_layout_considered_harmful/]: http://www.456bereastreet.com/archive/200509/css3_multicolumn_layout_considered_harmful/
@@ -436,7 +429,6 @@ Kalın sağlıcakla
   [http://www.superiorwebsys.com/blog/20/Creating_A_Multi-Column_Layout_Using_CSS3/]: http://www.superiorwebsys.com/blog/20/Creating_A_Multi-Column_Layout_Using_CSS3/
   [http://caniuse.com/multicolumn]: http://caniuse.com/multicolumn
   [http://people.opera.com/pepelsbey/experiments/multicol/]: http://people.opera.com/pepelsbey/experiments/multicol/
-  [http://people.opera.com/zibin/multicol/index.html]: http://people.opera.com/zibin/multicol/index.html
   [http://www.juude.info/css-columns.php]: http://www.juude.info/css-columns.php
   [http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/]: http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/
   [http://help.dottoro.com/lcxquvkf.php]: http://help.dottoro.com/lcxquvkf.php

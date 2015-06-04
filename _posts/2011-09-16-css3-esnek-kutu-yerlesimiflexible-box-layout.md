@@ -518,17 +518,12 @@ Kalın sağlıcakla
 -   [http://www.456bereastreet.com/archive/201103/the_css3_flexible_box_layout_flexbox/][]
 -   [http://hacks.mozilla.org/2010/04/the-css-3-flexible-box-model/][]
 -   [http://www.the-haystack.com/2010/01/23/css3-flexbox-part-1/][]
--   [http://ie.microsoft.com/testdrive/html5/flexin/default.html][]
--   [http://htmlrockstars.com/blog/the-flexible-box-layout-module-css3/][]
 -   [http://blog.w3conversions.com/2011/02/css3-flexible-box-model-layout-coolness-also-oddities-confusion/][]
 -   [http://www.netmagazine.com/tutorials/css3-flexible-box-model-explained][]
 -   [http://adactio.com/journal/4778/][]
 -   [http://www.vanseodesign.com/css/flexbox/][] (güzel)
 -   [http://oli.jp/2011/css3-flexbox/][] (karmaşık yerleşim uygulamalı)
 -   [http://blog.isotoma.com/2010/08/css3-flexbox/][]
--   [http://www.w3schools.com/css3/css3_reference.asp#box][]
--   [http://portfo.li/madebyted/477862-css3-flexible-box-layout-module-aka-flex-box-introduction-and-demos-test-cases][]
--   [http://ontwik.com/css/css-3-the-flexible-box-model/][] (video)
 -   [http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox][] (güzel)
 -   [http://caniuse.com/flexbox][] (tarayıcı desteği)
 -   [http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/][]
@@ -550,16 +545,11 @@ Kalın sağlıcakla
   [http://www.456bereastreet.com/archive/201103/the_css3_flexible_box_layout_flexbox/]: http://www.456bereastreet.com/archive/201103/the_css3_flexible_box_layout_flexbox/
   [http://hacks.mozilla.org/2010/04/the-css-3-flexible-box-model/]: http://hacks.mozilla.org/2010/04/the-css-3-flexible-box-model/
   [http://www.the-haystack.com/2010/01/23/css3-flexbox-part-1/]: http://www.the-haystack.com/2010/01/23/css3-flexbox-part-1/
-  [http://ie.microsoft.com/testdrive/html5/flexin/default.html]: http://ie.microsoft.com/testdrive/html5/flexin/default.html
-  [http://htmlrockstars.com/blog/the-flexible-box-layout-module-css3/]: http://htmlrockstars.com/blog/the-flexible-box-layout-module-css3/
   [http://blog.w3conversions.com/2011/02/css3-flexible-box-model-layout-coolness-also-oddities-confusion/]: http://blog.w3conversions.com/2011/02/css3-flexible-box-model-layout-coolness-also-oddities-confusion/
   [http://www.netmagazine.com/tutorials/css3-flexible-box-model-explained]: http://www.netmagazine.com/tutorials/css3-flexible-box-model-explained
   [http://adactio.com/journal/4778/]: http://adactio.com/journal/4778/
   [http://www.vanseodesign.com/css/flexbox/]: http://www.vanseodesign.com/css/flexbox/
   [http://blog.isotoma.com/2010/08/css3-flexbox/]: http://blog.isotoma.com/2010/08/css3-flexbox/
-  [http://www.w3schools.com/css3/css3_reference.asp#box]: http://www.w3schools.com/css3/css3_reference.asp#box
-  [http://portfo.li/madebyted/477862-css3-flexible-box-layout-module-aka-flex-box-introduction-and-demos-test-cases]: http://portfo.li/madebyted/477862-css3-flexible-box-layout-module-aka-flex-box-introduction-and-demos-test-cases
-  [http://ontwik.com/css/css-3-the-flexible-box-model/]: http://ontwik.com/css/css-3-the-flexible-box-model/
   [http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox]: http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox
   [http://caniuse.com/flexbox]: http://caniuse.com/flexbox
   [http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/]: http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/

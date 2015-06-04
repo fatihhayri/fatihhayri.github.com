@@ -61,9 +61,8 @@ ulaşmakta mümkündür.
 
 ## Kaynaklar
 
--   [http://oncemade.com/adjacent-sibling-selector-bug-ie7/][]
+-   http://oncemade.com/adjacent-sibling-selector-bug-ie7/
 -   [http://www.fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/][ie6 sorunları]
 
 
   [ie6 sorunları]: http://www.fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/
-  [http://oncemade.com/adjacent-sibling-selector-bug-ie7/]: http://oncemade.com/adjacent-sibling-selector-bug-ie7/

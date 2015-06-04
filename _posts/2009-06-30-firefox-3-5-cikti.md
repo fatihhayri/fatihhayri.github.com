@@ -6,7 +6,7 @@ Category: Haberler
 tags: Firefox, Geolocation, gizli-sekme, İnternet Tarayıcısı, TraceMonkey, yeni-sürüm
 ---
 
-<object width="450" height="259"><param name="movie" value="http://www.youtube.com/v/k5Zbc-Rg6e8&amp;hl=en&amp;fs=1&amp;"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/k5Zbc-Rg6e8&amp;hl=en&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="450" height="259"></embed></object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k5Zbc-Rg6e8" frameborder="0" allowfullscreen></iframe>
 
 ![firefox-128][]
 
