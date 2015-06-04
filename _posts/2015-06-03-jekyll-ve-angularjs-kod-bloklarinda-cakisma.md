@@ -10,7 +10,7 @@ Bir önceki makale paylaştığım Angularjs ipucunda kullandığım kodları re
 
 Kodları göstermek yerine yorumladı. Bunu engellemk için aşağıdaki şekilde yazmam gerekti.
 
-<iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/jPBvVG/?height=268&theme-id=13521&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+<iframe height='133' scrolling='no' src='//codepen.io/fatihhayri/embed/jPBvVG/?height=133&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 Jekyll ve Angularjs kullananların işine yarar.
