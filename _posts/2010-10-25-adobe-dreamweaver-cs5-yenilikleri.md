@@ -156,7 +156,6 @@ Kalın sağlıcakla.
 -   [http://tv.adobe.com/watch/learn-dreamweaver-cs5/getting-started-gs-what-is-dreamweaver-cs5-/][]
 -   [http://www.mymac.com/2010/07/cs5-dreamweaver-whats-new/][]
 -   [http://webdesign.about.com/od/dreamweaver/p/differences-dreamweaver-cs5-and-dreamweaver-cs4.htm][]
--   [http://www.wpbeginner.com/news/wordpress-themes-made-easy-with-adobe-dreamweaver-cs5/][]
 -   [http://www.thinkdigit.com/Features/Adobe-Dreamweaver-CS5-Review_4420.html][]
 -   [http://www.pcmag.com/slideshow_viewer/0,1205,l%253D249944%2526a%253D249895%2526po%253D9,00.asp?p=y][]
 -   [http://cs5.org/?p=1373][]
@@ -174,7 +173,6 @@ Kalın sağlıcakla.
   [http://tv.adobe.com/watch/learn-dreamweaver-cs5/getting-started-gs-what-is-dreamweaver-cs5-/]: http://tv.adobe.com/watch/learn-dreamweaver-cs5/getting-started-gs-what-is-dreamweaver-cs5-/
   [http://www.mymac.com/2010/07/cs5-dreamweaver-whats-new/]: http://www.mymac.com/2010/07/cs5-dreamweaver-whats-new/
   [http://webdesign.about.com/od/dreamweaver/p/differences-dreamweaver-cs5-and-dreamweaver-cs4.htm]: http://webdesign.about.com/od/dreamweaver/p/differences-dreamweaver-cs5-and-dreamweaver-cs4.htm
-  [http://www.wpbeginner.com/news/wordpress-themes-made-easy-with-adobe-dreamweaver-cs5/]: http://www.wpbeginner.com/news/wordpress-themes-made-easy-with-adobe-dreamweaver-cs5/
   [http://www.thinkdigit.com/Features/Adobe-Dreamweaver-CS5-Review_4420.html]: http://www.thinkdigit.com/Features/Adobe-Dreamweaver-CS5-Review_4420.html
   [http://www.pcmag.com/slideshow_viewer/0,1205,l%253D249944%2526a%253D249895%2526po%253D9,00.asp?p=y]: http://www.pcmag.com/slideshow_viewer/0,1205,l%253D249944%2526a%253D249895%2526po%253D9,00.asp?p=y
   [http://cs5.org/?p=1373]: http://cs5.org/?p=1373

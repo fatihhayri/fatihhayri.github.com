@@ -189,7 +189,6 @@ ul#yerimi li a:hover {
 -   [http://css-tricks.com/triangle-breadcrumbs/][]
 -   [http://css-tricks.com/markup-for-breadcrumbs/][]
 -   [http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx][]
--   [http://alpha.patterntap.com/collections/Breadcrumbs][] (örnekler)
 -   [http://patterntap.com/tap/collection/breadcrumbs][] (örnekler)
 
   [100]: https://lh5.googleusercontent.com/FDz5-mF3VgIWJI8MfO35IYd7x3yE6HxDsZLz2X_TpBBFW9xWDQLwej_QBHdt3jcgVXbbyOOJ5cA8WQtDwteT_mW0t9aG6iABRKG0RJW4hIF_tKaqmwE
@@ -212,5 +211,4 @@ ul#yerimi li a:hover {
   [http://css-tricks.com/triangle-breadcrumbs/]: http://css-tricks.com/triangle-breadcrumbs/
   [http://css-tricks.com/markup-for-breadcrumbs/]: http://css-tricks.com/markup-for-breadcrumbs/
   [http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx]: http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx
-  [http://alpha.patterntap.com/collections/Breadcrumbs]: http://alpha.patterntap.com/collections/Breadcrumbs
   [http://patterntap.com/tap/collection/breadcrumbs]: http://patterntap.com/tap/collection/breadcrumbs

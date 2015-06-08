@@ -113,7 +113,6 @@ Kalın sağlıcakla
 -   [http://www.chromaticsites.com/web-design-blog/2008-04-03/13-reasons-why-css-is-superior-to-tables-in-website-design/][]
 -   [http://www.andybudd.com/archives/2004/05/an_objective_look_at_table_based_vs_css_based_design/][]
 -   [http://www.stopdesign.com/present/2004/ddw-seattle/tables/][]
--   [http://osman.borutecene.com/tablosuz-tasarim-fetisi-ve-erisilebilirligi-zayif-web-standartlari/][]
 -   [http://erkana.wordpress.com/2006/09/15/tablosuz-tasarim-tableless/][]
 -   [http://eskiz.ksahin.com/?category=web-tasarim/tablosuz-tasarm-tablolu-tasarma-kar][]
 -   [http://alastairc.ac/2006/08/why-css-is-important-for-accessibility/][]
@@ -129,7 +128,6 @@ Kalın sağlıcakla
   [http://www.chromaticsites.com/web-design-blog/2008-04-03/13-reasons-why-css-is-superior-to-tables-in-website-design/]: http://www.chromaticsites.com/web-design-blog/2008-04-03/13-reasons-why-css-is-superior-to-tables-in-website-design/
   [http://www.andybudd.com/archives/2004/05/an_objective_look_at_table_based_vs_css_based_design/]: http://www.andybudd.com/archives/2004/05/an_objective_look_at_table_based_vs_css_based_design/
   [http://www.stopdesign.com/present/2004/ddw-seattle/tables/]: http://www.stopdesign.com/present/2004/ddw-seattle/tables/
-  [http://osman.borutecene.com/tablosuz-tasarim-fetisi-ve-erisilebilirligi-zayif-web-standartlari/]: http://osman.borutecene.com/tablosuz-tasarim-fetisi-ve-erisilebilirligi-zayif-web-standartlari/
   [http://erkana.wordpress.com/2006/09/15/tablosuz-tasarim-tableless/]: http://erkana.wordpress.com/2006/09/15/tablosuz-tasarim-tableless/
   [http://eskiz.ksahin.com/?category=web-tasarim/tablosuz-tasarm-tablolu-tasarma-kar]: http://eskiz.ksahin.com/?category=web-tasarim/tablosuz-tasarm-tablolu-tasarma-kar
   [http://alastairc.ac/2006/08/why-css-is-important-for-accessibility/]: http://alastairc.ac/2006/08/why-css-is-important-for-accessibility/

@@ -215,7 +215,6 @@ $('li').has('ul').css('background-color', 'red');
 
 -   [http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html][]
 -   [http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx][]
--   [http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/][]
 -   [http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/][]
 
   [Jquery ipuçları - 1]: http://www.fatihhayrioglu.com/jquery-ipuclari/
@@ -227,5 +226,4 @@ $('li').has('ul').css('background-color', 'red');
   [2]: /dokumanlar/has_metodu.html
   [http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html]: http://www.tripwiremagazine.com/2009/10/jquery-and-general-javascript-tips-to-improve-your-code.html
   [http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx]: http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx
-  [http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/]: http://webdevmania.com/archive/top_10_jquery_snippets_including_jquery_1.4/
   [http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/]: http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/

@@ -281,9 +281,7 @@ olan yenilikleri takip etmek ve geri kalmamaktır. Ferruh Mavituna'nın
 -   [http://www.makeuseof.com/tag/7-cool-google-reader-features-which-you-might-have-missed/][]
 -   [http://gigaom.com/collaboration/5-tips-for-getting-the-most-out-of-google-reader/][]
 -   [http://googlesystem.blogspot.com/2010/01/track-page-changes-using-google-reader.html][]
--   [http://jalaj.net/2009/02/22/3-google-reader-feature-most-people-dont-use/][]
 -   [http://lifehacker.com/233712/hack-attack-getting-good-with-google-reader][]
--   [http://labs.postrank.com/gr][]
 
 
   [100]: https://docs.google.com/File?id=dhctmbn6_465drvt8nvt_b
@@ -303,7 +301,6 @@ olan yenilikleri takip etmek ve geri kalmamaktır. Ferruh Mavituna'nın
   [12]: /images/gr_iceaktar_disa_aktar-300x122.gif "gr_iceaktar_disa_aktar"
   [13]: /images/gr_rssyokmu.gif "gr_rssyokmu"
   [14]: /images/gr_pagerank-300x84.gif "gr_pagerank"
-  [PageRank]: http://labs.postrank.com/gr "PageRank"
   [Benim Google Reader Dosyam (.xml)]: /dokumanlar/google-reader-subscriptions.xml
   [bir makalede]: http://www.businessinsider.com/twitter-has-killed-rss-readers-traffic-to-google-reader-down-27-year-over-year-2010-9 "bir makalede"
   [Verimli Bilgi Takibi]: http://ferruh.mavituna.com/verimli-bilgi-takibi-oku/ "Verimli Bilgi Takibi"
@@ -319,6 +316,5 @@ olan yenilikleri takip etmek ve geri kalmamaktır. Ferruh Mavituna'nın
   [http://www.makeuseof.com/tag/7-cool-google-reader-features-which-you-might-have-missed/]: http://www.makeuseof.com/tag/7-cool-google-reader-features-which-you-might-have-missed/
   [http://gigaom.com/collaboration/5-tips-for-getting-the-most-out-of-google-reader/]: http://gigaom.com/collaboration/5-tips-for-getting-the-most-out-of-google-reader/
   [http://googlesystem.blogspot.com/2010/01/track-page-changes-using-google-reader.html]: http://googlesystem.blogspot.com/2010/01/track-page-changes-using-google-reader.html
-  [http://jalaj.net/2009/02/22/3-google-reader-feature-most-people-dont-use/]: http://jalaj.net/2009/02/22/3-google-reader-feature-most-people-dont-use/
   [http://lifehacker.com/233712/hack-attack-getting-good-with-google-reader]: http://lifehacker.com/233712/hack-attack-getting-good-with-google-reader
   [http://labs.postrank.com/gr]: http://labs.postrank.com/gr

@@ -168,7 +168,6 @@ yükselme yaşansa bile daha sonra düşüşün devam edeceğini düşünüyorum
 -   **[http://www.bildirgec.org/yazi/internet-explorer-9-un-beta][]**
 -   **[http://gizmodo.com/5638742/internet-explorer-9-uh-nice][]**
 -   **[http://lifehacker.com/5638885/internet-explorer-screenshot-tour-the-best-new-features-in-ie9][]**
--   **[http://www.turk.internet.com/portal/yazigoster.php?yaziid=29437][]**
 -   **[http://www.nuricankaya.com/default.asp?gunluk_id=455][]**
 -   **[http://www.nuricankaya.com/resimler/2010_Eylul/ie9guide.pdf][] **
 -   **[http://www.engadget.com/2011/03/14/internet-explorer-9-launches-tonight-weve-got-your-early-look/][] **
@@ -202,7 +201,6 @@ yükselme yaşansa bile daha sonra düşüşün devam edeceğini düşünüyorum
   [http://www.bildirgec.org/yazi/internet-explorer-9-un-beta]: http://www.bildirgec.org/yazi/internet-explorer-9-un-beta
   [http://gizmodo.com/5638742/internet-explorer-9-uh-nice]: http://gizmodo.com/5638742/internet-explorer-9-uh-nice
   [http://lifehacker.com/5638885/internet-explorer-screenshot-tour-the-best-new-features-in-ie9]: http://lifehacker.com/5638885/internet-explorer-screenshot-tour-the-best-new-features-in-ie9
-  [http://www.turk.internet.com/portal/yazigoster.php?yaziid=29437]: http://www.turk.internet.com/portal/yazigoster.php?yaziid=29437
   [http://www.nuricankaya.com/default.asp?gunluk_id=455]: http://www.nuricankaya.com/default.asp?gunluk_id=455
   [http://www.nuricankaya.com/resimler/2010_Eylul/ie9guide.pdf]: http://www.nuricankaya.com/resimler/2010_Eylul/ie9guide.pdf
   [http://www.engadget.com/2011/03/14/internet-explorer-9-launches-tonight-weve-got-your-early-look/]: http://www.engadget.com/2011/03/14/internet-explorer-9-launches-tonight-weve-got-your-early-look/

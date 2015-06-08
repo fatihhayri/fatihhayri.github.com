@@ -102,8 +102,6 @@ sıralamaya çalıştım, umarım sizede lazım olduğunda işinize yarar.
 
 ## Kaynaklar
 
--   [http://www.siddhatech.com/rtl-css.html][]
--   [http://2tbsp.com/node/113][]
 -   [http://wwwhelp.wordpress.com/2009/06/02/css-programming-for-right-to-left-languages/][]
 -   [http://www.viget.com/blog/designing-for-rtl-languages-the-basics/][]
 -   [http://stackoverflow.com/questions/2546022/css-direction-rtl-element-order-problem][]
@@ -116,8 +114,6 @@ sıralamaya çalıştım, umarım sizede lazım olduğunda işinize yarar.
   [100]: /images/livego_arapca.jpg
   [http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4107&fileID=3813]: http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4107&fileID=3813
   [Faik]: http://twitter.com/faik
-  [http://www.siddhatech.com/rtl-css.html]: http://www.siddhatech.com/rtl-css.html
-  [http://2tbsp.com/node/113]: http://2tbsp.com/node/113
   [http://wwwhelp.wordpress.com/2009/06/02/css-programming-for-right-to-left-languages/]: http://wwwhelp.wordpress.com/2009/06/02/css-programming-for-right-to-left-languages/
   [http://www.viget.com/blog/designing-for-rtl-languages-the-basics/]: http://www.viget.com/blog/designing-for-rtl-languages-the-basics/
   [http://stackoverflow.com/questions/2546022/css-direction-rtl-element-order-problem]: http://stackoverflow.com/questions/2546022/css-direction-rtl-element-order-problem

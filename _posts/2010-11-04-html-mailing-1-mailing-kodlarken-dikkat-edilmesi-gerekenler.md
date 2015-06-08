@@ -223,11 +223,9 @@ Kalın sağlıcakla.
 -   [http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/][]
 -   [http://www.anandgraves.com/html-email-guide][] (iyi)
 -   [http://www.email-standards.org/][] (iyi)
--   [http://www.mailchimp.com/articles/email_marketing_guide/][] (iyi)
 -   [http://css-tricks.com/using-css-in-html-emails-the-real-story/][]
 -   [http://www.email-standards.org/clients/][]
 -   [http://www.campaignmonitor.com/css/][]
--   [http://www.xavierfrenette.com/articles/css-support-in-webmail/][]
 -   [http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html][]
 
 
@@ -238,9 +236,7 @@ Kalın sağlıcakla.
   [http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/]: http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/
   [http://www.anandgraves.com/html-email-guide]: http://www.anandgraves.com/html-email-guide
   [http://www.email-standards.org/]: http://www.email-standards.org/
-  [http://www.mailchimp.com/articles/email_marketing_guide/]: http://www.mailchimp.com/articles/email_marketing_guide/
   [http://css-tricks.com/using-css-in-html-emails-the-real-story/]: http://css-tricks.com/using-css-in-html-emails-the-real-story/
   [http://www.email-standards.org/clients/]: http://www.email-standards.org/clients/
   [http://www.campaignmonitor.com/css/]: http://www.campaignmonitor.com/css/
-  [http://www.xavierfrenette.com/articles/css-support-in-webmail/]: http://www.xavierfrenette.com/articles/css-support-in-webmail/
   [http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html]: http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html

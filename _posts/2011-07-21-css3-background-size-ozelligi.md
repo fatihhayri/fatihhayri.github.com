@@ -116,9 +116,7 @@ Kalın sağlıcakla
 -   [http://hacks.mozilla.org/2009/12/css-backgrounds-firefox-36/][]
 -   [http://www.css3.info/preview/background-size/][]
 -   [http://www.w3schools.com/cssref/css3_pr_background-size.asp][]
--   [http://markupflux.com/2011/01/17/how-to-make-a-full-screen-background-image-that-scales-and-crops-as-needed/][]
 -   [http://www.quirksmode.org/css/background.html][]
--   [http://www.paulmccrodden.com/2011/02/problems-css3-background-size-cover-iefilters/][]
 -   [http://webdesign.about.com/od/styleproperties/p/blspbgsize.htm][]
 -   [http://www.css3.info/liquid-faux-columns-with-background-size/][]
 -   [http://css-tricks.com/3458-perfect-full-page-background-image/][]
@@ -138,9 +136,7 @@ Kalın sağlıcakla
   [http://hacks.mozilla.org/2009/12/css-backgrounds-firefox-36/]: http://hacks.mozilla.org/2009/12/css-backgrounds-firefox-36/
   [http://www.css3.info/preview/background-size/]: http://www.css3.info/preview/background-size/
   [http://www.w3schools.com/cssref/css3_pr_background-size.asp]: http://www.w3schools.com/cssref/css3_pr_background-size.asp
-  [http://markupflux.com/2011/01/17/how-to-make-a-full-screen-background-image-that-scales-and-crops-as-needed/]: http://markupflux.com/2011/01/17/how-to-make-a-full-screen-background-image-that-scales-and-crops-as-needed/
   [http://www.quirksmode.org/css/background.html]: http://www.quirksmode.org/css/background.html
-  [http://www.paulmccrodden.com/2011/02/problems-css3-background-size-cover-iefilters/]: http://www.paulmccrodden.com/2011/02/problems-css3-background-size-cover-iefilters/
   [http://webdesign.about.com/od/styleproperties/p/blspbgsize.htm]: http://webdesign.about.com/od/styleproperties/p/blspbgsize.htm
   [http://www.css3.info/liquid-faux-columns-with-background-size/]: http://www.css3.info/liquid-faux-columns-with-background-size/
   [http://css-tricks.com/3458-perfect-full-page-background-image/]: http://css-tricks.com/3458-perfect-full-page-background-image/

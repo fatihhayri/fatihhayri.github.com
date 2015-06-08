@@ -185,7 +185,6 @@ Kalın sağlıcakla
 -   [http://css-tricks.com/3458-perfect-full-page-background-image/][]
 -   [http://cookbooks.adobe.com/post_Scale_Background_image_to_browser_size-17590.html][]
 -   [http://www.paulmccrodden.com/2011/02/problems-css3-background-size-cover-iefilters/][]
--   [http://www.pziecina.com/design/turorial_demos/resize_background.php][]
 -   [http://css-tricks.com/766-how-to-resizeable-background-image/][]
 -   [http://paulmason.name/blog/item/full-screen-background-image-pure-css-code][]
 -   [http://www.quackit.com/html/codes/html_stretch_background_image.cfm][]
@@ -198,7 +197,6 @@ Kalın sağlıcakla
   [http://css-tricks.com/3458-perfect-full-page-background-image/]: http://css-tricks.com/3458-perfect-full-page-background-image/
   [http://cookbooks.adobe.com/post_Scale_Background_image_to_browser_size-17590.html]: http://cookbooks.adobe.com/post_Scale_Background_image_to_browser_size-17590.html
   [http://www.paulmccrodden.com/2011/02/problems-css3-background-size-cover-iefilters/]: http://www.paulmccrodden.com/2011/02/problems-css3-background-size-cover-iefilters/
-  [http://www.pziecina.com/design/turorial_demos/resize_background.php]: http://www.pziecina.com/design/turorial_demos/resize_background.php
   [http://css-tricks.com/766-how-to-resizeable-background-image/]: http://css-tricks.com/766-how-to-resizeable-background-image/
   [http://paulmason.name/blog/item/full-screen-background-image-pure-css-code]: http://paulmason.name/blog/item/full-screen-background-image-pure-css-code
   [http://www.quackit.com/html/codes/html_stretch_background_image.cfm]: http://www.quackit.com/html/codes/html_stretch_background_image.cfm
