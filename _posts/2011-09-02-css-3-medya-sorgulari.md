@@ -428,7 +428,6 @@ mi ama olmadı.
 -   [http://richardshepherd.com/css-media-queries-jquery/][]
 -   [http://css.dzone.com/news/bulletproof-css3-media-queries][]
 -   [http://tests.zerointerface.nl/css3-mediaqueries/][] (test sitesi)
--   [http://www.sercaneraslan.com/css/index.php?page=medya_tipleri][]
 -   [http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/][]
 -   [http://www.quirksmode.org/blog/archives/2010/08/combining_media.html][]
 -   [http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx][]
@@ -466,7 +465,6 @@ mi ama olmadı.
   [http://richardshepherd.com/css-media-queries-jquery/]: http://richardshepherd.com/css-media-queries-jquery/
   [http://css.dzone.com/news/bulletproof-css3-media-queries]: http://css.dzone.com/news/bulletproof-css3-media-queries
   [http://tests.zerointerface.nl/css3-mediaqueries/]: http://tests.zerointerface.nl/css3-mediaqueries/
-  [http://www.sercaneraslan.com/css/index.php?page=medya_tipleri]: http://www.sercaneraslan.com/css/index.php?page=medya_tipleri
   [http://www.quirksmode.org/blog/archives/2010/08/combining_media.html]: http://www.quirksmode.org/blog/archives/2010/08/combining_media.html
   [http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx]: http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx
 

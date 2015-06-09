@@ -244,12 +244,9 @@ p:first-child:first-letter{
 
 -   [http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/][]
 -   [http://safalra.com/web-design/typography/css-drop-caps/][]
--   [http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=111][]
--   [http://www.pauldruce.com/CSS%20DROP%20CAP][] (bazı sorunlar ve çözüm)
 -   [http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps][] (jquery ile)
 -   [http://www.htmldog.com/articles/dropcaps/][]
 -   [http://css-tricks.com/snippets/css/drop-caps/][]
--   [http://oncemade.com/css-tip-drop-caps/][]
 -   [http://azizname.blogspot.com/2006/10/magazine-style-drop-caps.html][]
 -   [http://dailydropcap.com/][] (günlük örnekler)
 -   [http://jackosborne.co.uk/articles/pseudo-drop-caps/][]
@@ -275,12 +272,9 @@ p:first-child:first-letter{
   [first-child]: http://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
   [http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/]: http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/
   [http://safalra.com/web-design/typography/css-drop-caps/]: http://safalra.com/web-design/typography/css-drop-caps/
-  [http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=111]: http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=111
-  [http://www.pauldruce.com/CSS%20DROP%20CAP]: http://www.pauldruce.com/CSS%20DROP%20CAP
   [http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps]: http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps
   [http://www.htmldog.com/articles/dropcaps/]: http://www.htmldog.com/articles/dropcaps/
   [http://css-tricks.com/snippets/css/drop-caps/]: http://css-tricks.com/snippets/css/drop-caps/
-  [http://oncemade.com/css-tip-drop-caps/]: http://oncemade.com/css-tip-drop-caps/
   [http://azizname.blogspot.com/2006/10/magazine-style-drop-caps.html]: http://azizname.blogspot.com/2006/10/magazine-style-drop-caps.html
   [http://dailydropcap.com/]: http://dailydropcap.com/
   [http://jackosborne.co.uk/articles/pseudo-drop-caps/]: http://jackosborne.co.uk/articles/pseudo-drop-caps/

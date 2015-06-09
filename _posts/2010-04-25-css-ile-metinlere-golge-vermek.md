@@ -326,9 +326,6 @@ Sağlıcakla kalın.
 -   [http://reference.sitepoint.com/css/text-shadow][]
 -   [http://cordobo.com/1119-provide-visual-feedback-css/][]
 -   [http://www.catswhocode.com/blog/10-resources-to-get-the-most-out-of-the-css-text-shadow-property][]
--   [http://www.admixweb.com/2009/12/04/using-text-shadow-in-htmlcss/][]
--   [http://www.cagintranet.com/archive/css-tip-easy-cross-browser-valid-css-text-shadows/][]
--   [http://www.t-infection.com/css3-ve-yenilikler-metinlere-golge-efekti-vermek/][]
 -   [http://line25.com/articles/using-css-text-shadow-to-create-cool-text-effects][]
 -   [http://designshack.co.uk/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/][]
 
@@ -366,9 +363,6 @@ Sağlıcakla kalın.
   [http://reference.sitepoint.com/css/text-shadow]: http://reference.sitepoint.com/css/text-shadow
   [http://cordobo.com/1119-provide-visual-feedback-css/]: http://cordobo.com/1119-provide-visual-feedback-css/
   [http://www.catswhocode.com/blog/10-resources-to-get-the-most-out-of-the-css-text-shadow-property]: http://www.catswhocode.com/blog/10-resources-to-get-the-most-out-of-the-css-text-shadow-property
-  [http://www.admixweb.com/2009/12/04/using-text-shadow-in-htmlcss/]: http://www.admixweb.com/2009/12/04/using-text-shadow-in-htmlcss/
-  [http://www.cagintranet.com/archive/css-tip-easy-cross-browser-valid-css-text-shadows/]: http://www.cagintranet.com/archive/css-tip-easy-cross-browser-valid-css-text-shadows/
-  [http://www.t-infection.com/css3-ve-yenilikler-metinlere-golge-efekti-vermek/]: http://www.t-infection.com/css3-ve-yenilikler-metinlere-golge-efekti-vermek/
   [http://line25.com/articles/using-css-text-shadow-to-create-cool-text-effects]: http://line25.com/articles/using-css-text-shadow-to-create-cool-text-effects
   [http://designshack.co.uk/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/]: http://designshack.co.uk/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/
   [100]: http://webexpedition18.com/articles/css3-text-shadow-property/

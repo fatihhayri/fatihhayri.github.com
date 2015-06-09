@@ -618,13 +618,10 @@ yazdım linklerini.
 -   [http://green-beast.com/experiments/css_double_lists.php][]
 -   [http://css-discuss.incutio.com/?page=MultipleColumnLists][]
 -   [http://welcome.hp.com/country/tr/tr/welcome.html][]
--   [http://css.flepstudio.org/en/css3/multi-column.html][] (css3 multi column)
 -   [http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/][]
 -   [http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript][]
--   [http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/][] (jquery yardımı işle güzel)
 -   [http://codeasily.com/jquery/multi-column-list-with-jquery][] (jquery multi kolon eklentisi)
 -   [http://welcome.totheinter.net/columnizer-jquery-plugin/][] (jquery multi kolon eklentisi)
--   [http://www.zenelements.co.uk/blog/css3-multiple-columns/][] (css3 multi-kolon ve destekleme listesi)
 -   [http://www.americanstandard-us.com/][] (örnek)
 -   [http://www.gatesfoundation.org/Pages/home.aspx][] (örnek)
 -   [http://www.cssplay.co.uk/menus/multi-column.html][] (örnek)
@@ -654,13 +651,10 @@ yazdım linklerini.
   [http://green-beast.com/experiments/css_double_lists.php]: http://green-beast.com/experiments/css_double_lists.php
   [http://css-discuss.incutio.com/?page=MultipleColumnLists]: http://css-discuss.incutio.com/?page=MultipleColumnLists
   [http://welcome.hp.com/country/tr/tr/welcome.html]: http://welcome.hp.com/country/tr/tr/welcome.html
-  [http://css.flepstudio.org/en/css3/multi-column.html]: http://css.flepstudio.org/en/css3/multi-column.html
   [http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/]: http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/
   [http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript]: http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript
-  [http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/]: http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/
   [http://codeasily.com/jquery/multi-column-list-with-jquery]: http://codeasily.com/jquery/multi-column-list-with-jquery
   [http://welcome.totheinter.net/columnizer-jquery-plugin/]: http://welcome.totheinter.net/columnizer-jquery-plugin/
-  [http://www.zenelements.co.uk/blog/css3-multiple-columns/]: http://www.zenelements.co.uk/blog/css3-multiple-columns/
   [http://www.americanstandard-us.com/]: http://www.americanstandard-us.com/
   [http://www.gatesfoundation.org/Pages/home.aspx]: http://www.gatesfoundation.org/Pages/home.aspx
   [http://www.cssplay.co.uk/menus/multi-column.html]: http://www.cssplay.co.uk/menus/multi-column.html
