@@ -74,8 +74,7 @@ Firefox 3.5 indirmek için [tıklayınız.][]
 
 -   [http://www.dkszone.net/2009/06/new-features-in-firefox-35.html][]
 -   [http://www.youtube.com/watch?v=k5Zbc-Rg6e8][]
--   [https://developer.mozilla.org/en/Firefox_3.5_for_developers][]
-    (web geliştiriciler için yenilikler)
+-   https://developer.mozilla.org/en/Firefox_3.5_for_developers
 -   [http://www.maximumpc.com/article/features/9_amazing_new_features_firefox_35][]
 -   [http://www.marcozehe.de/2009/06/26/new-accessibility-features-in-firefox-3-5/][]
     (erişebilirlik açısından)
@@ -91,7 +90,6 @@ Firefox 3.5 indirmek için [tıklayınız.][]
   [tıklayınız.]: http://www.mozilla.com/en-US/
   [http://www.dkszone.net/2009/06/new-features-in-firefox-35.html]: http://www.dkszone.net/2009/06/new-features-in-firefox-35.html
   [http://www.youtube.com/watch?v=k5Zbc-Rg6e8]: http://www.youtube.com/watch?v=k5Zbc-Rg6e8
-  [https://developer.mozilla.org/en/Firefox_3.5_for_developers]: https://developer.mozilla.org/en/Firefox_3.5_for_developers
   [http://www.maximumpc.com/article/features/9_amazing_new_features_firefox_35]: http://www.maximumpc.com/article/features/9_amazing_new_features_firefox_35
   [http://www.marcozehe.de/2009/06/26/new-accessibility-features-in-firefox-3-5/]: http://www.marcozehe.de/2009/06/26/new-accessibility-features-in-firefox-3-5/
   [http://osrevolution.com/os-software/firefox-35-features-review]: http://osrevolution.com/os-software/firefox-35-features-review

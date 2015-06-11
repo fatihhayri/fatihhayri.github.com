@@ -21,7 +21,7 @@ tags: Alıntı, ASP.NET, CSS kenar çizgisi, Firefox 3, Firefox Picnic, jquery, 
 -   Firefox 3 bu 17 Haziranda çıkıyormuş. [Bağlantı][8]
 -   TTNetVideo sitesi açılmış. Sadece TTNET üyelerine hizmet etmesi
     eksi. [Bağlantı][9]
--   10 adet kullanışlı jQuery eklentisi. [Bağlantı][10]
+-   10 adet kullanışlı jQuery eklentisi. Kırık bağlantı.
 -   Alıntı(Blockqoute) kodlamak ve alıntı kod örnekleri. [Bağlantı][11]
 -   Firefox Picnic eklentisini anlatan güzel bir video. [Bağlantı][12]
 
@@ -42,8 +42,6 @@ tags: Alıntı, ASP.NET, CSS kenar çizgisi, Firefox 3, Firefox Picnic, jquery, 
   [8]: http://developer.mozilla.org/devnews/index.php/2008/06/11/coming-tuesday-june-17th-firefox-3/
     "Firefox 3"
   [9]: http://www.ttnetvideo.com/Pages/Anasayfa.aspx "ttnet video"
-  [10]: http://enhance.qd-creative.co.uk/index.php/2008/javascript/10-useful-jquery-plugins
-    "jQuery eklentisi"
   [11]: http://www.smashingmagazine.com/2008/06/12/block-quotes-and-pull-quotes-examples-and-good-practices/
     "alıntı"
   [12]: http://www.flickr.com/photos/torley/2571773193/ "Firefox picnic"

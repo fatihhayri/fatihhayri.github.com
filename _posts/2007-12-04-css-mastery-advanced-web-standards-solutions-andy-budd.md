@@ -13,8 +13,6 @@ kitap. Bu kitaba bir çok makalede değindim. Ama ayrıca bir bilgi vermek
 istedim. Kitap yeni başlayanlardan ziyade CSS konusunda biraz mürekkep
 yalamış arkadaşalr için çok güzel bir kaynak. Bir çok yeni metodun
 anlatımı mevcut kitap içinde. Kitabın ingilizce olması bir dezavantaj
-ama malum ingilizce dışında kitap bulma imkanımızda yok. Ayrıntılı bilgi
-için [tıklayınız.][]
+ama malum ingilizce dışında kitap bulma imkanımızda yok. 
 
   [CSS Mastery: Advanced Web Standards Solutions - Andy Budd]: /images/css_mastery1.kucukresim.jpg
-  [tıklayınız.]: http://www.cssmastery.com/

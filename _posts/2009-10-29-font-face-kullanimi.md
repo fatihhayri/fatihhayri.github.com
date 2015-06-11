@@ -301,7 +301,6 @@ aksaklığımız oldu ise affola.
 -   [http://randsco.com/index.php/2009/07/04/p680][] (farklı tarayıcılar
     için)
 -   [http://craigmod.com/journal/font-face/][]
--   [http://nimbupani.com/blog/font-in-your-face.html][]
 -   [http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/][]
     (detaylı anlatım)
 -   [http://www.zeldman.com/2009/08/17/web-fonts-and-standards/][]
@@ -321,10 +320,7 @@ aksaklığımız oldu ise affola.
 -   [http://randsco.com/index.php/2009/07/04/p680][]
 -   [http://opentype.info/demo/webfontdemo.html][] (örnek)
 -   [http://devfiles.myopera.com/articles/593/webfonts.html][] (örnek)
--   [http://www.hipertipo.org/stuff/webfonts/ModularSerif.html][]
-    (örnek)
 -   [http://www.typotheque.com/webfonts/sample][] (örnek)
--   [http://nimbupani.com/blog/about-fonts-in-svg.html][] (SVG hakkında)
 -   [http://www.spoono.com/html/tutorials/tutorial.php?id=19][] (EOT
     hakkında bilgi)
 -   [http://www.phpied.com/gzip-your-font-face-files/][] (optimizasyon)
@@ -385,8 +381,6 @@ aksaklığımız oldu ise affola.
     "http://randsco.com/index.php/2009/07/04/p680"
   [http://craigmod.com/journal/font-face/]: http://craigmod.com/journal/font-face/
     "http://craigmod.com/journal/font-face/"
-  [http://nimbupani.com/blog/font-in-your-face.html]: http://nimbupani.com/blog/font-in-your-face.html
-    "http://nimbupani.com/blog/font-in-your-face.html"
   [http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/]: http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/
     "http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/"
   [http://www.zeldman.com/2009/08/17/web-fonts-and-standards/]: http://www.zeldman.com/2009/08/17/web-fonts-and-standards/
@@ -415,12 +409,8 @@ aksaklığımız oldu ise affola.
     "http://opentype.info/demo/webfontdemo.html"
   [http://devfiles.myopera.com/articles/593/webfonts.html]: http://devfiles.myopera.com/articles/593/webfonts.html
     "http://devfiles.myopera.com/articles/593/webfonts.html"
-  [http://www.hipertipo.org/stuff/webfonts/ModularSerif.html]: http://www.hipertipo.org/stuff/webfonts/ModularSerif.html
-    "http://www.hipertipo.org/stuff/webfonts/ModularSerif.html"
   [http://www.typotheque.com/webfonts/sample]: http://www.typotheque.com/webfonts/sample
     "http://www.typotheque.com/webfonts/sample"
-  [http://nimbupani.com/blog/about-fonts-in-svg.html]: http://nimbupani.com/blog/about-fonts-in-svg.html
-    "http://nimbupani.com/blog/about-fonts-in-svg.html"
   [http://www.spoono.com/html/tutorials/tutorial.php?id=19]: http://www.spoono.com/html/tutorials/tutorial.php?id=19
     "http://www.spoono.com/html/tutorials/tutorial.php?id=19"
   [http://www.phpied.com/gzip-your-font-face-files/]: http://www.phpied.com/gzip-your-font-face-files/

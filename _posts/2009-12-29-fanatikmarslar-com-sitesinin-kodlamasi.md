@@ -136,8 +136,7 @@ oluşturuyor.
 -   DocType olarak xhtml-strict kullanıyoruz. Doküman tipleri hakkında
     ayrıntılı bil için [tıklayınız.][]
 -   Karakter kodumuz utf-8. uft-8 seçimi bizim karakter kodu konusunda
-    sorunsuz çalışmamız için önemlidir. Ayrıntılı bilgi için
-    [tıklayınız.][6]
+    sorunsuz çalışmamız için önemlidir. 
 -   Genel html kodları (html, head ve body)
 
 İlk yaptığım iş başlık kısmını değiştirmek olur.
@@ -237,4 +236,3 @@ Bir sonraki makalede kaldığımız yerden devam edeceğiz.
   [4]: /images/fan-listele-200x300.jpg
   [5]: /images/fm_eskiz.gif "fm_eskiz"
   [tıklayınız.]: http://fatihhayrioglu.com/dogru-doctype-kullanimi/
-  [6]: http://www.makaleci.com/webmaster-yardimcisi/utf-8-nedir-kodlar-karakterler-ve-hakkinda-hersey-418.html

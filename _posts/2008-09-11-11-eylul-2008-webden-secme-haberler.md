@@ -6,7 +6,7 @@ Category: Haberler
 tags: CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, upload, WordPress
 ---
 
--   jQuery ile yapılmış güzel bir efekt. [Bağlantı][]
+-   jQuery ile yapılmış güzel bir efekt. Bağlantı kırık.
 -   FireFox, Opera ve Webkit'den sonra Internet Explorer'da kendi özel
     ön ekini CSS özelliklerine eklemiş. [Bağlantı][1]
 -   Partilerin İnternet Stratejileri - hasanyalcin.com [Bağlantı][2]
@@ -25,15 +25,11 @@ tags: CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, upl
 -   CSS 3.0 çalışmalarını sürdüren grup kenarlık(border) ve
     ardalan(background) üzerine son çalışmalarını tamamlamış.
     [Bağlantı][11] 
--   Tek tıklama ile dosya göndermek için jquery eklentisi.
-    [Bağlantı][12] 
+-   Tek tıklama ile dosya göndermek için jquery eklentisi. Bağlantı kırık.
 -   jQuery ile menü elemanlarına efekt vermek. [Bağlantı][13] 
 -   Wordpress Temanızdan Silebileceğiniz 13 Etiket - alemsite.com geçen
-    haberlerde bahsettiğim konuyu Selman Kara Türkçeye çevirmiş.
-    [Bağlantı][14]
+    haberlerde bahsettiğim konuyu Selman Kara Türkçeye çevirmiş. Bağlantı kırık
 
-  [Bağlantı]: http://swedishfika.com/2008/03/04/creating-a-fading-header/
-    "jquery"
   [1]: http://blogs.msdn.com/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx
     "ie 8"
   [2]: http://www.hasanyalcin.com/partilerin-internet-stratejileri/
@@ -55,10 +51,5 @@ tags: CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, upl
   [10]: http://arstechnica.com/articles/paedia/mozilla-committed-to-gecko.ars
     "webkit - mozilla"
   [11]: http://www.w3.org/blog/CSS/2008/09/10/css3_backgrounds_and_borders_working_dra
-    "css 3"
-  [12]: http://www.michaelmitchell.co.nz/one-click-upload/
-    "dosya gönder"
   [13]: http://www.tyssendesign.com.au/articles/animated-navigation-items-using-jquery/
     "jQuery menü efektli"
-  [14]: http://www.alemsite.com/wordpress-temanizdan-silebileceginiz-13-etiket.html
-    "wordpress"

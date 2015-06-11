@@ -6,7 +6,7 @@ Category: Haberler
 tags: Ajax, arama motoru, firebug, Güzel Menü, Javascript, RSS çeviri, wordpress tema
 ---
 
--   En çok kullanılan 15 javascript/ajax kodu. [Bağlantı][]
+-   En çok kullanılan 15 javascript/ajax kodu. Kırık bağlantı.
 -   RSS yazılarını Google Translate yardımı ile isteidğiniz dile
     çevirmenizi sağlayan bir hizmet, ne yazık ki Türkçe yok, ama farklı
     dillerdeki yazıları İngilizce'ye çevirip okumakta az bişey değil.
@@ -31,8 +31,6 @@ tags: Ajax, arama motoru, firebug, Güzel Menü, Javascript, RSS çeviri, wordpr
 -   SmashingMagazine güzel bir wordpress teması daha. [Bağlantı][12]
 
 
-  [Bağlantı]: http://acomment.net/16-top-javascriptajax-effects-for-modern-web-design/246
-    "javascript ajax"
   [1]: http://mloovi.com/ "RSS dil çevirici"
   [2]: http://www.readwriteweb.com/archives/the_future_of_blogging_reveale.php
     "günlüklerin geleceği"

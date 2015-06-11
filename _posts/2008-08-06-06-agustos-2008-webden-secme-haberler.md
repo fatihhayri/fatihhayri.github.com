@@ -14,7 +14,7 @@ tags: Asp.net 3.5, blog, FaceLift, Form metinleri, mesaj kutusu, sFIR, tablo, w3
 -   Güzel derlenmiş CSS linkleri [Bağlantı][4]
 -   Ücretsiz güzel bir wordpress teması. [Bağlantı][5]
 -   Fare imlecinin tıklandığı yerde mesaj kutusu açmak. [Bağlantı][6]
--   Tablo Etiketinin Gönlünü Almak 2 - webdeneyimleri.com [Bağlantı][7]
+-   Tablo Etiketinin Gönlünü Almak 2 - webdeneyimleri.com Kırık bağlantı.
 -   sFIR tekniğine alternatif bir yöntem FaceLift, avantajları ve
     dezavantajları ile incelemeye değer. Bence en büyük dezavantajı PHP
     ile çalışması. [Bağlantı][8]
@@ -22,7 +22,7 @@ tags: Asp.net 3.5, blog, FaceLift, Form metinleri, mesaj kutusu, sFIR, tablo, w3
 -   Sitemize sFIR 3 ile farklı yazı tipleri nasıl ekleriz?
     [Bağlantı][10]
 -   Mozilla Laboratuvarları geleceğin internet tarayıcıları hakkında
-    düşünüp bir video hazırlamışlar. [Bağlantı][11]
+    düşünüp bir video hazırlamışlar. Kırık bağlantı.
 -   Blog Yazılarına Daha Fazla Yorum Almanın Yolları - selcukhoca.com
     [Bağlantı][12]
 -   WordPress 2.7 de eklenti yönetimi - blog.wolkanca.com [Bağlantı][13]
@@ -41,15 +41,10 @@ tags: Asp.net 3.5, blog, FaceLift, Form metinleri, mesaj kutusu, sFIR, tablo, w3
     "wordpress teması"
   [6]: http://roshanbh.com.np/2008/08/pop-up-message-mouse-clicked-position-jquery.html
     "fare mesajı"
-  [7]: http://www.webdeneyimleri.com/tablo-etiketinin-gonlunu-almak-2/
-    "tablolar"
   [8]: http://facelift.mawhorter.net/ "FaceLift"
   [9]: http://www.sitepoint.com/blogs/2008/08/05/mining-the-sitepoint-css-reference/
     "css ipuçları"
   [10]: http://nettuts.com/javascript-ajax/how-to-implement-sifr3-into-your-website/
-    "sFIR3"
-  [11]: http://adaptivepath.com/aurora/
-    "geleceğin internet tarayıcıları"
   [12]: http://www.selcukhoca.com/blog-yazilarina-daha-fazla-yorum-almanin-yollari/
     "blog yazılarına yorum"
   [13]: http://blog.wolkanca.com/wordpress-27-de-eklenti-yonetimi/?source=rss

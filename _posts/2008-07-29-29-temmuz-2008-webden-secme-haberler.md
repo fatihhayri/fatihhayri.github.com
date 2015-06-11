@@ -22,11 +22,11 @@ tags: açılır-menü, CSS, css hataları, css ile site yapmak, CSS sıfırlama,
 -   jQuery ile uygulamalarımıza klavye kısayolu eklemek. [Bağlantı][9]
 -   6 adet kullanışlı jQuery ipucu. [Bağlantı][10]
 -   jQuery ile “çek-bırak” özellikli nesneler oluşturmak - eburhan.com
-    [Bağlantı][11]
+    Kırık bağlantı.
 -   Geçen sene web ile uğraşanlar için anket düzenleyen A List Apart bu
     senede anket düzenlemiş. Türkiye'yi Asya kıtasına eklemişler dikkat.
     [Bağlantı][12]
--   CSS Sıfırlama Tekniği - webdeneyimleri.com [Bağlantı][13]
+-   CSS Sıfırlama Tekniği - webdeneyimleri.com Kırık bağlantı.
 
   [Bağlantı]: http://www.noupe.com/css/using-css-to-fix-anything-20-common-bugs-and-fixes.html
   [2]: http://marcgrabanski.com/article/jquery-select-list-values
@@ -38,6 +38,4 @@ tags: açılır-menü, CSS, css hataları, css ile site yapmak, CSS sıfırlama,
   [8]: http://eyecon.ro/spacegallery/#about "resim galerisisi"
   [9]: http://www.hackszine.com/blog/archive/2008/07/web_application_hotkeys_with_j.html?CMP=OTC-7G2N43923558
   [10]: http://johannburkard.de/blog/programming/javascript/6-more-jquery-tips-text-searching-page-load-time-and-others.html
-  [11]: http://www.eburhan.com/jquery-ile-cek-birak-ozellikli-nesneler-olusturmak/
   [12]: http://www.alistapart.com/articles/survey2008 "webciler"
-  [13]: http://www.webdeneyimleri.com/css-sifirlama-teknigi/

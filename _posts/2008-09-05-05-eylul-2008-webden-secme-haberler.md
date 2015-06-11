@@ -25,8 +25,8 @@ tags: Apple.com, Freelance, Google Chrome, WordPress
     [Bağlantı][7]
 -   John Resig Google Chrome ile alevlenen javascript motorları hakkında
     bir yazı yazmış. [Bağlantı][8]
--   Safari'nin metinleri kötü taramasını engellemek. [Bağlantı][9]
--   Apple.com'dan alacağımız 5 CSS dersi. [Bağlantı][10]
+-   Safari'nin metinleri kötü taramasını engellemek. Kırık
+-   Apple.com'dan alacağımız 5 CSS dersi. Kırık
 -   Sayfa ardalan resminin ilk yüklenmesini istersek. [Bağlantı][11]
 -   İnternet Explorer 8 ile birlikte FireBug alternatifi Web Developer
     Tool'unu geliştirmiş. [Bağlantı][12]
@@ -51,11 +51,6 @@ tags: Apple.com, Freelance, Google Chrome, WordPress
   [7]: http://mashable.com/2008/09/03/wordpress-stats-tracking-tools/
     "WordPress istatistikleri"
   [8]: http://ejohn.org/blog/javascript-performance-rundown/
-    "javascript motorları"
-  [9]: http://jonnotie.nl/blog/fix-the-bad-text-rendering-in-safari-take-two/
-    "Safari"
-  [10]: http://www.catswhocode.com/blog/web-design/5-tutorials-to-web-design-the-applecom-way-633
-    "Apple"
   [11]: http://help-developer.com/index.php/2008/09/loading-the-background-image-first/#belowad
     "ardalan resmi"
   [12]: http://blogs.msdn.com/ie/archive/2008/09/03/developer-tools-in-internet-explorer-8-beta-2.aspx

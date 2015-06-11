@@ -16,6 +16,4 @@ kullandı isek yeni sürümü indirip sifr.fla dosyamızı yeniden export
 ederek oluşan .swf dosyasını atmak. sIFR'ın yeni sürümü sIFR3 beta'da
 böyle bir sorun yok. Bu kadar basit bir çözüm. Ama içimdeki sIFR
 sevgisini biraz daha azaltan bir gelişme oldu bu benim için. Kaynak:
-[http://novemberborn.net/sifr/2.0.7][]
-
-  [http://novemberborn.net/sifr/2.0.7]: http://novemberborn.net/sifr/2.0.7
+http://novemberborn.net/sifr/2.0.7

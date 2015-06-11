@@ -81,11 +81,8 @@ karşınızda olana dek hoşça kalın.(Bu ie6 oldukça nasıl hoş kalacağız 
 ayrı bir konu.)
 
 -   [http://www.positioniseverything.net/explorer/ie-listbug.html][]
--   [http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&productId=1&postId=481][]
 
   [100]: /images/ie_liste_sorunu.gif
   [tıklayınız.]: /dokumanlar/liste_ardalani.html
   [http://www.positioniseverything.net/explorer/ie-listbug.html]: http://www.positioniseverything.net/explorer/ie-listbug.html
     "http://www.positioniseverything.net/explorer/ie-listbug.html"
-  [http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&productId=1&postId=481]: http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&productId=1&postId=481
-    "http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&productId=1&postId=481"

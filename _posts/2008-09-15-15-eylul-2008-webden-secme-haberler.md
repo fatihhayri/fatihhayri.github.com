@@ -25,10 +25,9 @@ tags: 0 yükseklik, Developer Tools, firebug, Firefox 3.1, HTML 5, ie8, Javascri
     inceleyelim. - daron.yondem.com [Bağlantı][7] 
 -   CSS ile yapılmış açılır menü örnekleri. [Bağlantı][8] 
 -   Web 2.0 bitti ,Web 3.0'ı beklerken - blog.harunpeksen.net
-    [Bağlantı][9] 
 -   FireBug1.2.1 sürümü yayınlamış. Değişen bazı hataların giderilmesi.
     [Bağlanatı][] 
--   Daron Yöndem'den ie8 hakkında güzel makaleler. [Bağlantı][11] 
+-   Daron Yöndem'den ie8 hakkında güzel makaleler. 
 
 
   [Bağlantı]: http://css-tricks.com/videos/css-tricks-video-35.php
@@ -47,10 +46,4 @@ tags: 0 yükseklik, Developer Tools, firebug, Firefox 3.1, HTML 5, ie8, Javascri
   [7]: http://daron.yondem.com/tr/PermaLink.aspx?guid=349de328-1866-4210-bd2c-409c01121ff5
     "ie 8 delveloper tool"
   [8]: http://hiddenpixels.com/javascript/css-dropdown-menus-sample-and-tutorials/
-    "açılır menü örnekleri"
-  [9]: http://blog.harunpeksen.net/2008/09/web-20-bitti-web-30i-beklerken.html
-    "web2.0 - web 3.0"
   [Bağlanatı]: https://addons.mozilla.org/en-US/firefox/addon/1843
-    "FireBug1.2.1."
-  [11]: http://daron.yondem.com/tr/CategoryView.aspx?category=IE+8.0
-    "ie 8"

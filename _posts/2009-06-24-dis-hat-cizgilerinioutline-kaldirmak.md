@@ -177,7 +177,7 @@ sonunda örneğimiz ie de de çalışacaktır.
 -   [http://snipplr.com/view/15704/eliminating-the-dotted-line-box-that-appears-around-a-link/][]
 -   [http://webaim.org/blog/plague-of-outline-0/][](kaldırılmamalı)
 -   [http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links][]
--   [http://sackclothstudios.com/css/outline-the-neglected-css-property][]
+-   http://sackclothstudios.com/css/outline-the-neglected-css-property
 -   [http://arjaneising.nl/css/dont-remove-the-outline-from-links][]
     (kaldırılmamalı)
 -   [http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/][]
@@ -216,8 +216,6 @@ sonunda örneğimiz ie de de çalışacaktır.
     "http://webaim.org/blog/plague-of-outline-0/"
   [http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links]: http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links
     "http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links"
-  [http://sackclothstudios.com/css/outline-the-neglected-css-property]: http://sackclothstudios.com/css/outline-the-neglected-css-property
-    "http://sackclothstudios.com/css/outline-the-neglected-css-property"
   [http://arjaneising.nl/css/dont-remove-the-outline-from-links]: http://arjaneising.nl/css/dont-remove-the-outline-from-links
     "http://arjaneising.nl/css/dont-remove-the-outline-from-links"
   [http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/]: http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/

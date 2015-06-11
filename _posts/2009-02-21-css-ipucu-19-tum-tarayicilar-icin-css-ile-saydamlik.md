@@ -67,13 +67,13 @@ denemedim bir bakın isterseniz.
 
 ## Kaynaklar
 
--   [http://blog.evaria.com/2007/validate-css-style-opacity/][]
+-   http://blog.evaria.com/2007/validate-css-style-opacity/
 -   [http://snipplr.com/view/10094/crossbrowser-opacity/][]
 -   [http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/][]
 -   [http://www.codeguru.com/forum/showthread.php?threadid=458411][]
 -   [http://snipplr.com/view/707/setopacity/][]
 -   [http://www.ertugrulhaskan.com/blog/?p=548][]
--   [http://www.aybim.com.tr/progs/acsstxt17.html][]
+-   http://www.aybim.com.tr/progs/acsstxt17.html
 -   [http://www.mehmetduran.com/detay.aspx?detay=19][]
 -   [http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5][]
 -   [http://www.ahmetcelik.org/?p=220][]
@@ -85,13 +85,11 @@ denemedim bir bakın isterseniz.
   [donuklasma_val2]: /images/donuklasma_val2.gif
   [1]: /dokumanlar/donukluk_dog.html
   [http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/]: http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/
-  [http://blog.evaria.com/2007/validate-css-style-opacity/]: http://blog.evaria.com/2007/validate-css-style-opacity/
   [http://snipplr.com/view/10094/crossbrowser-opacity/]: http://snipplr.com/view/10094/crossbrowser-opacity/
   [http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/]: http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/
   [http://www.codeguru.com/forum/showthread.php?threadid=458411]: http://www.codeguru.com/forum/showthread.php?threadid=458411
   [http://snipplr.com/view/707/setopacity/]: http://snipplr.com/view/707/setopacity/
   [http://www.ertugrulhaskan.com/blog/?p=548]: http://www.ertugrulhaskan.com/blog/?p=548
-  [http://www.aybim.com.tr/progs/acsstxt17.html]: http://www.aybim.com.tr/progs/acsstxt17.html
   [http://www.mehmetduran.com/detay.aspx?detay=19]: http://www.mehmetduran.com/detay.aspx?detay=19
   [http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5]: http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5
   [http://www.ahmetcelik.org/?p=220]: http://www.ahmetcelik.org/?p=220

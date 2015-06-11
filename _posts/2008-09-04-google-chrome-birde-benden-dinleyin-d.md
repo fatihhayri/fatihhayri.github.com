@@ -87,14 +87,14 @@ Türkçe kaynak
 -   [http://www.savassakar.com/?p=2029][]
 -   [http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome][]
 -   [http://www.potkal.com/yazi_icerik.asp?y1405][]
--   [http://www.mondaynay.com/2008/09/google-chrome-beta-web-browser/][]
--   [http://www.blicca.com/programlar/internet-tarayicilari/google-chrome-beta.html][]
+-   http://www.mondaynay.com/2008/09/google-chrome-beta-web-browser/
+-   http://www.blicca.com/programlar/internet-tarayicilari/google-chrome-beta.html
 -   [http://turk.internet.com/haber/yazigoster.php3?yazi21847][]
--   [http://www.burakkutbay.com/google-chrome-tarayici-analizi/][]
+-   http://www.burakkutbay.com/google-chrome-tarayici-analizi/
 -   [http://www.chip.com.tr/konu/Google-Chrome-dan-ilk-guvenlik-acigi_8529.html][]
--   [http://blog-tr-ego.blogspot.com/2008/09/chrome-nedir.html][]
--   [http://notoku.com/google-chrome-acik-kaynakli-tarayici-projesi/][]
--   [http://zokoba.blogspot.com/2008/09/google-chrome-ilk-izlenimler.html][]
+-   http://blog-tr-ego.blogspot.com/2008/09/chrome-nedir.html
+-   http://notoku.com/google-chrome-acik-kaynakli-tarayici-projesi/
+-   http://zokoba.blogspot.com/2008/09/google-chrome-ilk-izlenimler.html
 -   [http://www.mafiamax.com/2008/09/google-chrome-on-incelemesi.html][]
 -   [http://www.siberkultur.com/?q=google-chrome-cikti][]
 -   [http://www.webrazzi.com/2008/09/03/google-chrome-hakkindaki-goruslerim-ve-gorusleriniz/][]
@@ -107,7 +107,7 @@ Genel kaynak
 -   [http://www.mattcutts.com/blog/google-chrome-communication/][]
 -   [http://mashable.com/2008/09/03/awesome-google-chrome/][]
 -   [http://blog.wired.com/business/2008/09/chrome-eliminat.html][]
--   [http://www.popularmechanics.com/technology/industry/4280717.html][]
+-   http://www.popularmechanics.com/technology/industry/4280717.html
 -   [http://blogs.zdnet.com/hardware/?p=2481][]
 -   [http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html][]
 -   [http://lifehacker.com/5044484/google-chrome-first-look][]
@@ -122,7 +122,6 @@ Genel kaynak
 -   [http://webworkerdaily.com/2008/09/02/google-chrome-is-it-ready-for-web-workers/][]
 -   [http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&tag=feed&subj=Webware][]
 -   [http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&tag=feed&subj=Webware][]
--   [http://internetducttape.com/2008/09/02/why-google-chrome-isnt-my-default-browser/][]
 -   [http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/][]
 -   [http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/][]
 -   [http://davidwalsh.name/detecting-google-chrome-javascript][]
@@ -131,10 +130,8 @@ Genel kaynak
 
 javascript motoru 
 
--   [http://www.blicca.com/haberler/yazilim/mozilla-tracemonkey-vs-chrome-v8.html][]
 -   [http://arstechnica.com/journals/linux.ars/2008/09/03/new-firefox-javascript-engine-is-faster-than-chromes-v8][]
 -   [http://prosenjit23.wordpress.com/2008/09/03/google-chrome-mozilla-firefox-microsoft-ie-sunspider-javascript-performance-test-results/][]
--   [http://blogs.zoho.com/uncategorized/firefox-31-google-chrome-javascript-wins-flashsilverlight-lose/][]
 
   [100]: /images/chrome_438x359-300x245.jpg
     "Google Chrome"
@@ -149,14 +146,8 @@ javascript motoru 
   [http://www.savassakar.com/?p=2029]: http://www.savassakar.com/?p=2029
   [http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome]: http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome
   [http://www.potkal.com/yazi_icerik.asp?y1405]: http://www.potkal.com/yazi_icerik.asp?y1405
-  [http://www.mondaynay.com/2008/09/google-chrome-beta-web-browser/]: http://www.mondaynay.com/2008/09/google-chrome-beta-web-browser/
-  [http://www.blicca.com/programlar/internet-tarayicilari/google-chrome-beta.html]: http://www.blicca.com/programlar/internet-tarayicilari/google-chrome-beta.html
   [http://turk.internet.com/haber/yazigoster.php3?yazi21847]: http://turk.internet.com/haber/yazigoster.php3?yazi21847
-  [http://www.burakkutbay.com/google-chrome-tarayici-analizi/]: http://www.burakkutbay.com/google-chrome-tarayici-analizi/
   [http://www.chip.com.tr/konu/Google-Chrome-dan-ilk-guvenlik-acigi_8529.html]: http://www.chip.com.tr/konu/Google-Chrome-dan-ilk-guvenlik-acigi_8529.html
-  [http://blog-tr-ego.blogspot.com/2008/09/chrome-nedir.html]: http://blog-tr-ego.blogspot.com/2008/09/chrome-nedir.html
-  [http://notoku.com/google-chrome-acik-kaynakli-tarayici-projesi/]: http://notoku.com/google-chrome-acik-kaynakli-tarayici-projesi/
-  [http://zokoba.blogspot.com/2008/09/google-chrome-ilk-izlenimler.html]: http://zokoba.blogspot.com/2008/09/google-chrome-ilk-izlenimler.html
   [http://www.mafiamax.com/2008/09/google-chrome-on-incelemesi.html]: http://www.mafiamax.com/2008/09/google-chrome-on-incelemesi.html
   [http://www.siberkultur.com/?q=google-chrome-cikti]: http://www.siberkultur.com/?q=google-chrome-cikti
   [http://www.webrazzi.com/2008/09/03/google-chrome-hakkindaki-goruslerim-ve-gorusleriniz/]: http://www.webrazzi.com/2008/09/03/google-chrome-hakkindaki-goruslerim-ve-gorusleriniz/
@@ -167,7 +158,6 @@ javascript motoru 
   [http://www.mattcutts.com/blog/google-chrome-communication/]: http://www.mattcutts.com/blog/google-chrome-communication/
   [http://mashable.com/2008/09/03/awesome-google-chrome/]: http://mashable.com/2008/09/03/awesome-google-chrome/
   [http://blog.wired.com/business/2008/09/chrome-eliminat.html]: http://blog.wired.com/business/2008/09/chrome-eliminat.html
-  [http://www.popularmechanics.com/technology/industry/4280717.html]: http://www.popularmechanics.com/technology/industry/4280717.html
   [http://blogs.zdnet.com/hardware/?p=2481]: http://blogs.zdnet.com/hardware/?p=2481
   [http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html]: http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html
   [http://lifehacker.com/5044484/google-chrome-first-look]: http://lifehacker.com/5044484/google-chrome-first-look
@@ -181,13 +171,10 @@ javascript motoru 
   [http://webworkerdaily.com/2008/09/02/google-chrome-is-it-ready-for-web-workers/]: http://webworkerdaily.com/2008/09/02/google-chrome-is-it-ready-for-web-workers/
   [http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&tag=feed&subj=Webware]: http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&tag=feed&subj=Webware
   [http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&tag=feed&subj=Webware]: http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&tag=feed&subj=Webware
-  [http://internetducttape.com/2008/09/02/why-google-chrome-isnt-my-default-browser/]: http://internetducttape.com/2008/09/02/why-google-chrome-isnt-my-default-browser/
   [http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/]: http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/
   [http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/]: http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/
   [http://davidwalsh.name/detecting-google-chrome-javascript]: http://davidwalsh.name/detecting-google-chrome-javascript
   [http://lifehacker.com/5044518/enable-chromes-best-features-in-firefox]: http://lifehacker.com/5044518/enable-chromes-best-features-in-firefox
   [http://lifehacker.com/5044668/beta-browser-speed-tests-which-is-fastest]: http://lifehacker.com/5044668/beta-browser-speed-tests-which-is-fastest
-  [http://www.blicca.com/haberler/yazilim/mozilla-tracemonkey-vs-chrome-v8.html]: http://www.blicca.com/haberler/yazilim/mozilla-tracemonkey-vs-chrome-v8.html
   [http://arstechnica.com/journals/linux.ars/2008/09/03/new-firefox-javascript-engine-is-faster-than-chromes-v8]: http://arstechnica.com/journals/linux.ars/2008/09/03/new-firefox-javascript-engine-is-faster-than-chromes-v8
   [http://prosenjit23.wordpress.com/2008/09/03/google-chrome-mozilla-firefox-microsoft-ie-sunspider-javascript-performance-test-results/]: http://prosenjit23.wordpress.com/2008/09/03/google-chrome-mozilla-firefox-microsoft-ie-sunspider-javascript-performance-test-results/
-  [http://blogs.zoho.com/uncategorized/firefox-31-google-chrome-javascript-wins-flashsilverlight-lose/]: http://blogs.zoho.com/uncategorized/firefox-31-google-chrome-javascript-wins-flashsilverlight-lose/

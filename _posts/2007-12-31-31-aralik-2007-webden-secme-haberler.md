@@ -13,7 +13,7 @@ tags: Firefox, Haberler, innerHTml, linq, opacity
 -   Doğrulanmış CSS ile saydamlaştırma özelliği eklemek. Bilindiği gibi
     opacity özelliğinin farklı tarayıcılardaki kodu W3C validator'dan
     geçmiyor, CSS3 ile bu durum düzeltilmiş olsa bile, şimdilik burada
-    anlatılan metot mantıklı. [Bağlantı][1]
+    anlatılan metot mantıklı.
 -   Eburhan'dan "Css ile hazırladığım mesaj kutuları" [Bağlantı][2]
 -   google chart api(grafik) hakkında bir makale. [Bağlantı][3]
 -   Daron Yöndem - LINQ2XML. [Bağlantı][4]
@@ -28,7 +28,6 @@ tags: Firefox, Haberler, innerHTml, linq, opacity
 
   [Bağlantı]: http://daron.yondem.com/tr/PermaLink.aspx?guid=86729470-1741-4039-8fe4-b66371f1b2cf
     "LINQ"
-  [1]: http://blog.evaria.com/2007/validate-css-style-opacity/ "opacity"
   [2]: http://www.eburhan.com/css-ile-hazirladigim-mesaj-kutulari/
     "mesaj kutuları"
   [3]: http://techtracer.com/2007/12/17/the-power-of-google-chart-api/

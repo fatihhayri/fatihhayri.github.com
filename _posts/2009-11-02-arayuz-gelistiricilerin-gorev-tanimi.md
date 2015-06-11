@@ -55,7 +55,6 @@ motoruna uygunluk ve erişebilirlik ve javascript  için gelecekte ayrı
 birimler kurulabilir. Daha da ileri gidip jquery geliştirici bile
 aranabilir. Malum sektör hızlı gelişiyor.
 
--   [http://v1.garrettdimon.com/archives/the-time-is-now-for-front-end-architects][]
 -   [http://www.cherny.com/webdev/105/front-end-web-designers-developers-and-engineers][]
 -   [http://fuelyourcoding.com/steps-to-becoming-a-front-end-web-developer/][]
 -   [http://onlinetools.org/articles/fed2.html][]
@@ -64,8 +63,7 @@ aranabilir. Malum sektör hızlı gelişiyor.
   [**CSS Bilmek:** Çok iyi derecede CSS bilmelidir. Katman tabanlı kodlamayı bilmelidir. Tablosuz sayfa yapısını tasarlamalıdır.]: http://www.fatihhayrioglu.com/css-dersleri/
   [HTML Mailing -1: Mailing Kodlarken Dikkat Edilmesi Gerekenler]: http://www.fatihhayrioglu.com/html-mailing-1-mailing-kodlarken-dikkat-edilmesi-gerekenler/
   [HTML Mailing 2 – Mailing HTML Kodunun Yazılması]: http://www.fatihhayrioglu.com/html-mailing-2-mailing-html-kodunun-yazilmasi/
-  [**Yenilikçi:** Web mecrasındaki gelişmeleri takip etmeli ve uygulamalarında bu yenilikleri gerektiğinde kullanmalıdır.]: http://www.fatihhayrioglu.com/yeniliklerin-takibi-ve-google-reader/
-  [http://v1.garrettdimon.com/archives/the-time-is-now-for-front-end-architects]: http://v1.garrettdimon.com/archives/the-time-is-now-for-front-end-architects
+  [**Yenilikçi:** Web mecrasındaki gelişmeleri takip etmeli ve uygulamalarında bu yenilikleri gerektiğinde kullanmalıdır.]: http://www.fatihhayrioglu.com/yeniliklerin-takibi/
   [http://www.cherny.com/webdev/105/front-end-web-designers-developers-and-engineers]: http://www.cherny.com/webdev/105/front-end-web-designers-developers-and-engineers
   [http://fuelyourcoding.com/steps-to-becoming-a-front-end-web-developer/]: http://fuelyourcoding.com/steps-to-becoming-a-front-end-web-developer/
   [http://onlinetools.org/articles/fed2.html]: http://onlinetools.org/articles/fed2.html

@@ -91,7 +91,7 @@ FireBug'daki javascript kodları renklendirme yapılmadığı için kod yığın
 
 ![Renklendirme Öncesi][]
 
-[https://addons.mozilla.org/en-US/firefox/addon/7575][]
+https://addons.mozilla.org/en-US/firefox/addon/7575
 
 Bu eklenti her ne kadar test aşamasında olsa da güzel bir eklenti.
 
@@ -108,9 +108,6 @@ Bu arada FireBug 1.3 çalışmalarına başlanmış bile.
 -   [http://ejohn.org/blog/firebug-12-released/][]
 -   [http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt][]
 -   [https://addons.mozilla.org/en-US/firefox/addon/1843][]
--   [http://www.railsjedi.com/posts/24-Firebug-1-2-Excitement][]
-    açılmıyorsa
-    [http://64.233.183.104/search?q=cache:nJW1FmPsOkUJ:www.railsjedi.com/posts/24-Firebug-1-2-Excitement+Firebug+1+2+Excitement&hl=en&ct=clnk&cd=1&client=firefox-a][]
 -   [http://ajaxian.com/archives/firebug-12-beta-for-firefox-3-rc-1][]
 -   [http://blog.mozilla.com/about_mozilla/2008/08/25/firebug-12-released/][]
 -   [http://www.ajaxonomy.com/2008/javascript/firebug-12-released][]
@@ -129,14 +126,11 @@ Bu arada FireBug 1.3 çalışmalarına başlanmış bile.
   [Birlikte aç]: /images/birlikteac.gif
   [Suspend/Resume]: /images/suspend_resume.gif
   [Renklendirme Öncesi]: /images/renklendirme_oncesi.gif
-  [https://addons.mozilla.org/en-US/firefox/addon/7575]: https://addons.mozilla.org/en-US/firefox/addon/7575
   [Renklendirme Sonrası]: /images/renklendir.gif
   [http://ejohn.org/blog/firebug-12-released/]: http://ejohn.org/blog/firebug-12-released/
   [http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt]: http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt
     "http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt"
   [https://addons.mozilla.org/en-US/firefox/addon/1843]: https://addons.mozilla.org/en-US/firefox/addon/1843
-  [http://www.railsjedi.com/posts/24-Firebug-1-2-Excitement]: http://www.railsjedi.com/posts/24-Firebug-1-2-Excitement
-  [http://64.233.183.104/search?q=cache:nJW1FmPsOkUJ:www.railsjedi.com/posts/24-Firebug-1-2-Excitement+Firebug+1+2+Excitement&hl=en&ct=clnk&cd=1&client=firefox-a]: http://64.233.183.104/search?q=cache:nJW1FmPsOkUJ:www.railsjedi.com/posts/24-Firebug-1-2-Excitement+Firebug+1+2+Excitement&hl=en&ct=clnk&cd=1&client=firefox-a
   [http://ajaxian.com/archives/firebug-12-beta-for-firefox-3-rc-1]: http://ajaxian.com/archives/firebug-12-beta-for-firefox-3-rc-1
   [http://blog.mozilla.com/about_mozilla/2008/08/25/firebug-12-released/]: http://blog.mozilla.com/about_mozilla/2008/08/25/firebug-12-released/
   [http://www.ajaxonomy.com/2008/javascript/firebug-12-released]: http://www.ajaxonomy.com/2008/javascript/firebug-12-released

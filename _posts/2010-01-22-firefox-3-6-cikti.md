@@ -71,13 +71,13 @@ Gelelim yeniliklere;
         konulan sayfa backgroundunu artık css ile yapabileceğiz, ama
         şimdi değil. Ah ulan Microsoft
     -   pointer-events özelliği desteği gelmiş. Bu özelliği bende ilk
-        defa görüyorum desem yalan olmaz. [Buradaki örnek][]
+        defa görüyorum desem yalan olmaz.
         aydınlatıcı.
     -   ve bunun haricinde irili ufaklı özellikler gelmiş ve sorunlar
         giderilmiş.
 
 -   **HTML5 ve DOM Desteği:** Yeni DOM ve HTML5 destekleri gelmiş.
-    [Drag&Drop API][] ve [File API][]. Örnekleri görmek için [videoyu     izleyin][].
+    Drag&Drop API ve [File API][]. Örnekleri görmek için [videoyu     izleyin][].
 -   **Hız:**İlk kurulumdan sonra daha hızlı olduğunu söyleyebilirim,
     ancak bunu kullandıkça göreceğiz. FireBug1.5 ve Firefox3.6
     performansının daha iyi olduğunu kesin. Mozilla'nın iddiasına göre
@@ -95,12 +95,10 @@ Birde yapımcılarından Mike Beltzner'dan dinleyelim
 
 -   [http://www.mozilla.org/firefox/][]
 -   [http://blog.mozilla.com/blog/2010/01/21/firefox-3-6-release/][]
--   [https://developer.mozilla.org/En/Firefox_3.6_for_developers][]
 -   [http://hacks.mozilla.org/2010/01/firefox-3-6-is-here/][]
 -   [http://lifehacker.com/5453782/firefox-36-officially-available-brings-speed-increases-one+click-themes-and-more][]
 -   [http://download.cnet.com/8301-2007_4-10438907-12.html][]
 -   [http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/][]
--   [http://demos.hacks.mozilla.org/openweb/uploadingFiles/][]
 
   [Buradan indirebilirsiniz.]: http://www.mozilla-europe.org/en/firefox/ "Buradan indirebilirsiniz."
   [Personas]: http://www.getpersonas.com/ "Personas"
@@ -111,16 +109,12 @@ Birde yapımcılarından Mike Beltzner'dan dinleyelim
   [Çoklu background desteği]: https://developer.mozilla.org/en/CSS/Multiple_backgrounds "Çoklu background desteği"
   [1]: https://developer.mozilla.org/En/CSS/Media_queries#Mozilla-specific_media_features "tıklayınız."
   [Background genişletme]: https://developer.mozilla.org/en/CSS/Scaling_background_images "Background genişletme"
-  [Buradaki örnek]: http://demos.hacks.mozilla.org/openweb/pointer-events/ "Buradaki örnek"
-  [Drag&Drop API]: http://demos.hacks.mozilla.org/openweb/uploadingFiles/ "Drag&Drop API"
   [File API]: http://hacks.mozilla.org/2009/12/w3c-fileapi-in-firefox-3-6/ "File API"
   [videoyu izleyin]: http://hacks.mozilla.org/2009/12/file-drag-and-drop-in-firefox-3-6/ "videoyu izleyin"
   [2]: http://hacks.mozilla.org/2009/10/orientation-for-firefox/ "videoyu izleyin"
   [http://www.mozilla.org/firefox/]: http://www.mozilla.org/firefox/
   [http://blog.mozilla.com/blog/2010/01/21/firefox-3-6-release/]: http://blog.mozilla.com/blog/2010/01/21/firefox-3-6-release/
-  [https://developer.mozilla.org/En/Firefox_3.6_for_developers]: https://developer.mozilla.org/En/Firefox_3.6_for_developers
   [http://hacks.mozilla.org/2010/01/firefox-3-6-is-here/]: http://hacks.mozilla.org/2010/01/firefox-3-6-is-here/
   [http://lifehacker.com/5453782/firefox-36-officially-available-brings-speed-increases-one+click-themes-and-more]: http://lifehacker.com/5453782/firefox-36-officially-available-brings-speed-increases-one+click-themes-and-more
   [http://download.cnet.com/8301-2007_4-10438907-12.html]: http://download.cnet.com/8301-2007_4-10438907-12.html
   [http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/]: http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/
-  [http://demos.hacks.mozilla.org/openweb/uploadingFiles/]: http://demos.hacks.mozilla.org/openweb/uploadingFiles/

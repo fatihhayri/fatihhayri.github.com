@@ -14,13 +14,12 @@ tags: CSS filtreleme, display:inline-block, Erişebilirlik, Google Analytics, Go
 -   Internet Explorer 8.0 Beta 2 ile gelen güvenlik yenilikleri -
     daron.yondem.com [Bağlantı][3] 
 -   display-inline:block hakkında güzel bir makale. [Bağlantı][4] 
--   Ağustos ayında yayınlanmış güzel makaleler. Süper derleme
-    [Bağlantı][5] 
+-   Ağustos ayında yayınlanmış güzel makaleler. Süper derleme. Kırık bağlantı.
 -   Web tasarımlarınızın erişebilirliğini ölçebileceğimiz 10 araç.
     [Bağlantı][6] 
 -   30 günde mootools öğrenmeyi anlatan güzel bir site. [Bağlantı][7] 
 -   Birebir tasarıma uygun kod yazmak için güzel bir yöntem.
-    [Bağlantı][8] 
+    Kırık bağlantı.
 -   Internet Explorer 6'yı engelleyelim. [Bağlantı][9] 
 -   FireFox, Internet Explorer, Safari ve Opera'ya göre filtreleme
     yapmak. [Bağlantı][10]
@@ -31,7 +30,7 @@ tags: CSS filtreleme, display:inline-block, Erişebilirlik, Google Analytics, Go
     için [tıklayınız][]. Özelliklerini incelemek için [tıklayınız][12]
      [Bağlantı][13]
 -   Html elemanlarının CSS testini sağlamak için hazırlanmış güzel bir
-    html dosyası. [Bağlantı][14] 
+    html dosyası. Kırık bağlantı.
 -   jQuery'nin güzel bir eklentisi jParallax. [Bağlantı][15] 
 -   Profoyonel sitelerden temel olarak nasıl yardım alabilriz.
     [Bağlantı][16] 
@@ -50,14 +49,9 @@ tags: CSS filtreleme, display:inline-block, Erişebilirlik, Google Analytics, Go
     "internet explorer 8"
   [4]: http://www.search-this.com/2008/08/28/lets-all-get-inline-in-a-block-in-a-block/
     "inline-block"
-  [5]: http://www.noupe.com/best-of/websites-you-shouldnt-have-missed-in-august.html
-    "makaleler"
   [6]: http://sixrevisions.com/web-standards/accessibility_testtools/
     "erişebilirlik"
   [7]: http://www.consideropen.com/blog/2008/08/30-days-of-mootools-12-tutorials-day-1-intro-to-the-library/
-    "mootools"
-  [8]: http://aloestudios.com/2008/08/pixel-precision-with-diagnostic-css/
-    "güzel teknik"
   [9]: http://css-tricks.com/ie-6-blocker-script/ "ie 6"
   [10]: http://www.nealgrosskopf.com/tech/thread.asp?pid=20 "filtreleme"
   [11]: http://www.google.com/googlebooks/chrome/ "Google Chrome"
@@ -66,8 +60,6 @@ tags: CSS filtreleme, display:inline-block, Erişebilirlik, Google Analytics, Go
   [12]: http://www.google.com/chrome/intl/en/features.html#
     "Google Chrome Özellikleri"
   [13]: http://www.google.com/chrome/?hl=en "Google Chrome"
-  [14]: http://www.sitefromscratch.com/content/html-xhtml-css-testing
-    "css test,"
   [15]: http://webdev.stephband.info/parallax.html "jparallax"
   [16]: http://www.smashingmagazine.com/2008/08/26/how-simple-web-design-helps-your-business/
     "yardım"

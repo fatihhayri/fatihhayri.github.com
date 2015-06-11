@@ -145,7 +145,7 @@ getirilecek.
 
 -   [http://developer.mozilla.org/web-tech/2008/10/14/firefox-31-beta-1-an-overview-of-features-for-web-developers/][]
 -   [http://www.siberkultur.com/?q=firefox-3-1][]
--   [http://mehmetergin.blogspot.com/2008/10/firefox-geolocation-api-specification.html][]
+-   http://mehmetergin.blogspot.com/2008/10/firefox-geolocation-api-specification.html
 -   [http://lifehacker.com/5063481/firefox-31-adds-keyword-filters-to-the-awesomebar][]
 -   [http://lifehacker.com/396154/firefox-31-new-features-already-in-the-works][]
 -   [http://lifehacker.com/5048604/firefox-31-to-add-private-browsing-mode][]
@@ -154,7 +154,6 @@ getirilecek.
 -   [http://lifehacker.com/5063202/firefox-31-beta-1-now-available-for-download-first-look][]
 -   [http://www.readwriteweb.com/archives/firefox_31_beta_1_geolocation.php][]
 -   [http://blogs.zdnet.com/hardware/?p=2781][]
--   [http://news.cnet.com/8301-17939_109-10066397-2.html?part=rss&tag=feed&subj=Webware][]
 -   [http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords][]
 -   [http://www.tgdaily.com/html_tmp/content-view-39752-140.html][]
 -   [http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744][]
@@ -172,7 +171,6 @@ getirilecek.
     "Adres Bar"
   [http://developer.mozilla.org/web-tech/2008/10/14/firefox-31-beta-1-an-overview-of-features-for-web-developers/]: http://developer.mozilla.org/web-tech/2008/10/14/firefox-31-beta-1-an-overview-of-features-for-web-developers/
   [http://www.siberkultur.com/?q=firefox-3-1]: http://www.siberkultur.com/?q=firefox-3-1
-  [http://mehmetergin.blogspot.com/2008/10/firefox-geolocation-api-specification.html]: http://mehmetergin.blogspot.com/2008/10/firefox-geolocation-api-specification.html
   [http://lifehacker.com/5063481/firefox-31-adds-keyword-filters-to-the-awesomebar]: http://lifehacker.com/5063481/firefox-31-adds-keyword-filters-to-the-awesomebar
   [http://lifehacker.com/396154/firefox-31-new-features-already-in-the-works]: http://lifehacker.com/396154/firefox-31-new-features-already-in-the-works
   [http://lifehacker.com/5048604/firefox-31-to-add-private-browsing-mode]: http://lifehacker.com/5048604/firefox-31-to-add-private-browsing-mode
@@ -181,7 +179,6 @@ getirilecek.
   [http://lifehacker.com/5063202/firefox-31-beta-1-now-available-for-download-first-look]: http://lifehacker.com/5063202/firefox-31-beta-1-now-available-for-download-first-look
   [http://www.readwriteweb.com/archives/firefox_31_beta_1_geolocation.php]: http://www.readwriteweb.com/archives/firefox_31_beta_1_geolocation.php
   [http://blogs.zdnet.com/hardware/?p=2781]: http://blogs.zdnet.com/hardware/?p=2781
-  [http://news.cnet.com/8301-17939_109-10066397-2.html?part=rss&tag=feed&subj=Webware]: http://news.cnet.com/8301-17939_109-10066397-2.html?part=rss&tag=feed&subj=Webware
   [http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords]: http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords
   [http://www.tgdaily.com/html_tmp/content-view-39752-140.html]: http://www.tgdaily.com/html_tmp/content-view-39752-140.html
   [http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744]: http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744

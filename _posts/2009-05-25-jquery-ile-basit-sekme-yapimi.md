@@ -108,7 +108,7 @@ biz tıklamışız işlevi görüyoruz.
 Evet koda baktığımızda 5-6 satırlık bir jQuery kodu ile sekmeli bir yapı
 oluşturduk. jQuery'yi bu yüzden çok güzel. Bende öğrenmeye devam
 ediyorum. Öğrendikçe sizlerle paylaşacağım. bu konuda ve bir çok yerde
-yardımlarından dolayı [Orhan Ekici][]'ye(şu an yapım aşamasında)
+yardımlarından dolayı Orhan Ekici'ye
 teşekkürlerimi sunmadan geçemeyeceğim. İnşallah yakında sitesini açarda
 internet alemine güzel bilgiler sunar.
 
@@ -137,7 +137,6 @@ Safari 3.2.2 sürümlerinde test ettim.
 
   [sekme_ornek]: /images/sekme_ornek-150x90.gif
     "sekme_ornek"
-  [Orhan Ekici]: http://orhanekici.info/ "Orhan Ekici"
   [jQuery UI]: http://jqueryui.com/ "jQuery UI"
   [sekme ekelentisi]: http://docs.jquery.com/UI/Tabs "sekme ekelentisi"
   [tıklayınız.]: /dokumanlar/sekme.html

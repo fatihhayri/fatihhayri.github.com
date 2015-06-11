@@ -79,7 +79,7 @@ Kaynak
 
 -   [http://9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html][]
 -   [http://webdesign.maratz.com/lab/visited_links_styling/][]
--   [http://www.webmonkey.com/tutorial/Control_Visited_Link_Colors_With_CSS][]
+-   http://www.webmonkey.com/tutorial/Control_Visited_Link_Colors_With_CSS
 -   [http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/][]
 -   [http://www.westciv.com/style_master/house/tutorials/quick/visited_links/index.html][]
 -   [http://onemarco.com/2007/06/06/better-visited-links/][]
@@ -96,7 +96,6 @@ Kaynak
   [1]: /dokumanlar/ziyaret_edilmis_baglantilar2.html
   [http://9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html]: http://9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html
   [http://webdesign.maratz.com/lab/visited_links_styling/]: http://webdesign.maratz.com/lab/visited_links_styling/
-  [http://www.webmonkey.com/tutorial/Control_Visited_Link_Colors_With_CSS]: http://www.webmonkey.com/tutorial/Control_Visited_Link_Colors_With_CSS
   [http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/]: http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/
   [http://www.westciv.com/style_master/house/tutorials/quick/visited_links/index.html]: http://www.westciv.com/style_master/house/tutorials/quick/visited_links/index.html
   [http://onemarco.com/2007/06/06/better-visited-links/]: http://onemarco.com/2007/06/06/better-visited-links/

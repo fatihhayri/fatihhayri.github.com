@@ -208,7 +208,6 @@ Bu kodları ekledikten sonra sorunumuz düzeldi.
 -   [http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html][]
 -   [http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/][]
 -   [http://www.quirksmode.org/css/display.html#t03][]
--   [http://blog.ternstyle.us/blog/float-vs-inline-block][]
 -   [http://www.sitepoint.com/forums/showthread.php?t=596130][] (sorun )
 
   [tıklayınız.]: /dokumanlar/display_inline_block.html
@@ -228,5 +227,4 @@ Bu kodları ekledikten sonra sorunumuz düzeldi.
   [http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html]: http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html
   [http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/]: http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/
   [http://www.quirksmode.org/css/display.html#t03]: http://www.quirksmode.org/css/display.html#t03
-  [http://blog.ternstyle.us/blog/float-vs-inline-block]: http://blog.ternstyle.us/blog/float-vs-inline-block
   [http://www.sitepoint.com/forums/showthread.php?t=596130]: http://www.sitepoint.com/forums/showthread.php?t=596130

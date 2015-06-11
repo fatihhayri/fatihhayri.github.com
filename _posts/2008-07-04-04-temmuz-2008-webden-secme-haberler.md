@@ -13,7 +13,7 @@ tags: Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, 
 -   İnternet Tarayıcıları ve web geliştirici araçları hakkında güzel bir
     inceleme. [Bağlantı][3]
 -   Volkan Görgülü yeni bir stei açmış, XHTML ve CSS hakkında ilk konusu
-    "CSS Sprite Tekniği" [Bağlantı][4]
+    "CSS Sprite Tekniği" Kırık bağlantı.
 -   Firefox 3 rekoru kırabildi mi? - cnetturkiye.com [Bağlantı][5]
 -   Uygulamalarımızda kullanabileceğimiz 15 CSS + XHTML uygulaması.
     [Bağlantı][6]
@@ -22,7 +22,7 @@ tags: Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, 
 -   55 adet iyi kalitede ikon setleri. [Bağlantı][8]
 -   600 Milyondan Fazla Web Kullanıcısı Risk Altında - turk.internet.com
     [Bağlantı][9]
--   Javascript ile sayfa adresindeki bilgileri almak. [Bağlantı][10]
+-   Javascript ile sayfa adresindeki bilgileri almak. Kırık bağlantı.
 -   WordPress eski sürümleri hackleniyor. Bir çok arkadaşımın ve benimde
     karşılaştığım bir sorun. Güncellemeleri hemen yapmak lazım
     [Bağlantı][11]
@@ -38,8 +38,6 @@ tags: Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, 
     "wordpress etiket"
   [3]: http://css-tricks.com/cutting-edge-browsers-and-their-development-tools/
     "web araçları"
-  [4]: http://www.webdeneyimleri.com/css-sprite-teknigi/
-    "css  sprite tekniği"
   [5]: http://cnetturkiye.com/haberler/925 "Firefox 3"
   [6]: http://socialcmsbuzz.com/15-css-and-html-tutorials-you-can-use-in-your-projects-01072008/
     "uygulamlar"
@@ -49,8 +47,6 @@ tags: Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, 
     "ikonlar"
   [9]: http://turk.internet.com/haber/yazigoster.php3?yaziid=21345
     "web riski"
-  [10]: http://softwareblogs.intel.com/2008/07/02/javascript-pathsquerystrings-and-encoding/
-    "adres bilgisi"
   [11]: http://successcreeations.com/older-versions-of-wordpress-hacked/464/
     "WordPress"
   [12]: http://www.hasanyalcin.com/?p=507 "Tasarım fiyatlandırma"

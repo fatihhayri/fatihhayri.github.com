@@ -287,7 +287,7 @@ sitesini ziyaret etmenizi öneririm.
 -   [http://www.thewebhelp.com/css/pagination_style_template/][]
 -   [http://css.dzone.com/news/a-digg-flickr-pagination-style][]
 -   [http://www.smashingmagazine.com/2007/11/16/pagination-gallery-examples-and-good-practices/][]
--   [http://komunitasweb.com/2009/03/42-pagination-design-inspiration/][]
+-   http://komunitasweb.com/2009/03/42-pagination-design-inspiration/
 
   [sayfalama_]: /images/sayfalama_-150x96.gif
     "sayfalama_"
@@ -315,5 +315,3 @@ sitesini ziyaret etmenizi öneririm.
     "http://css.dzone.com/news/a-digg-flickr-pagination-style"
   [http://www.smashingmagazine.com/2007/11/16/pagination-gallery-examples-and-good-practices/]: http://www.smashingmagazine.com/2007/11/16/pagination-gallery-examples-and-good-practices/
     "http://www.smashingmagazine.com/2007/11/16/pagination-gallery-examples-and-good-practices/"
-  [http://komunitasweb.com/2009/03/42-pagination-design-inspiration/]: http://komunitasweb.com/2009/03/42-pagination-design-inspiration/
-    "http://komunitasweb.com/2009/03/42-pagination-design-inspiration/"

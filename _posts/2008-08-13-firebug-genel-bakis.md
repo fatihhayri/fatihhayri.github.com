@@ -145,16 +145,13 @@ göreceğiz.
 -   [http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug][]
 -   [http://www.google.com/search?hl=en&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=Debugging+With+Firebug&btnG=Search][]
 -   [http://www.youtube.com/watch?v=FsX6qwQqGgQ][]
--   [http://blog.veanndesign.com/2008/04/12/everything-about-firebug-21-great-resources/][]
 -   [http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug][]
 -   [http://groups.google.com/group/firebug][]
 -   [http://www.seifi.org/javascript/firebug_tips_and_tricks.html][]
--   [http://www.webdeneyimleri.com/firebug-firefox-eklentisi/][Volkan Görgülü'nün video anlatımı]
 -   [http://www.bildirgec.org/yazi/firebug-web-gelistirimi-gelistirildi][]
 -   [http://www.burcudogan.com/firebug-ve-hata-ayiklama-sanati-83.html][]
 -   [http://code.google.com/p/fbug/source/browse/branches/firebug1.1/locale/tr-TR/firebug.dtd?r=350][]
 
-  [Volkan Görgülü'nün video anlatımı]: http://www.webdeneyimleri.com/firebug-firefox-eklentisi/
   [Michael Sync]: http://michaelsync.net/
   [http://getfirebug.com/]: http://getfirebug.com/
   [FireFox'un eklentiler]: https://addons.mozilla.org/en-US/firefox/addon/1843
@@ -177,7 +174,6 @@ göreceğiz.
   [http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug]: http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug
   [http://www.google.com/search?hl=en&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=Debugging+With+Firebug&btnG=Search]: http://www.google.com/search?hl=en&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=Debugging+With+Firebug&btnG=Search
   [http://www.youtube.com/watch?v=FsX6qwQqGgQ]: http://www.youtube.com/watch?v=FsX6qwQqGgQ
-  [http://blog.veanndesign.com/2008/04/12/everything-about-firebug-21-great-resources/]: http://blog.veanndesign.com/2008/04/12/everything-about-firebug-21-great-resources/
   [http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug]: http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug
   [http://groups.google.com/group/firebug]: http://groups.google.com/group/firebug
   [http://www.seifi.org/javascript/firebug_tips_and_tricks.html]: http://www.seifi.org/javascript/firebug_tips_and_tricks.html

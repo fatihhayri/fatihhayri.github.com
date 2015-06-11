@@ -64,14 +64,12 @@ girmeyin ama hızda bir atış olduğu hissediliyor.
 -   [http://webmasterformat.com/news/google-analytics-asynchronous-tracking][]
 -   [http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better/][]
 -   [http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html][]
--   [http://www.webmonkey.com/blog/New_Asynchronous_Script_Stops_Google_Analytics_From_Slowing_Down_Your_Site][]
 -   [http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support][]
 -   [http://www.webresourcesdepot.com/new-google-analytics-code-for-better-load-times/][]
 -   [http://www.stevesouders.com/blog/2009/12/01/google-analytics-goes-async/][]
 -   [http://googlesystem.blogspot.com/2009/12/optimized-google-analytics-code.html][]
 -   [http://blog.chartbeat.com/2009/12/04/google-analytics-goes-asynchronous/][]
 -   [http://www.further.co.uk/blog/New-Google-Analytics-Asynchronous-Tracking-Code-241][]
--   [http://www.highposition.net/article/google-analytics-launches-asynchronous-tracking-code-for-greater-speed/4561763][]
 
   [http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html]: http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html
     "http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html"
@@ -83,8 +81,6 @@ girmeyin ama hızda bir atış olduğu hissediliyor.
     "http://webmasterformat.com/news/google-analytics-asynchronous-tracking"
   [http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better/]: http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better/
     "http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better/"
-  [http://www.webmonkey.com/blog/New_Asynchronous_Script_Stops_Google_Analytics_From_Slowing_Down_Your_Site]: http://www.webmonkey.com/blog/New_Asynchronous_Script_Stops_Google_Analytics_From_Slowing_Down_Your_Site
-    "http://www.webmonkey.com/blog/New_Asynchronous_Script_Stops_Google_Analytics_From_Slowing_Down_Your_Site"
   [http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support]: http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support
     "http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support"
   [http://www.webresourcesdepot.com/new-google-analytics-code-for-better-load-times/]: http://www.webresourcesdepot.com/new-google-analytics-code-for-better-load-times/
@@ -97,5 +93,4 @@ girmeyin ama hızda bir atış olduğu hissediliyor.
     "http://blog.chartbeat.com/2009/12/04/google-analytics-goes-asynchronous/"
   [http://www.further.co.uk/blog/New-Google-Analytics-Asynchronous-Tracking-Code-241]: http://www.further.co.uk/blog/New-Google-Analytics-Asynchronous-Tracking-Code-241
     "http://www.further.co.uk/blog/New-Google-Analytics-Asynchronous-Tracking-Code-241"
-  [http://www.highposition.net/article/google-analytics-launches-asynchronous-tracking-code-for-greater-speed/4561763]: http://www.highposition.net/article/google-analytics-launches-asynchronous-tracking-code-for-greater-speed/4561763
     "http://www.highposition.net/article/google-analytics-launches-asynchronous-tracking-code-for-greater-speed/4561763"

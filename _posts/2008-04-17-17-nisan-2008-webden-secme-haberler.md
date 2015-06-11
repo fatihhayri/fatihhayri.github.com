@@ -11,7 +11,7 @@ tags: Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek ya
 -   Anlamlı kod yazmak. [Bağlantı][2]
 -   Güzel ücretsiz ardaalan resimleri. [Bağlantı][3]
 -   Firefox'un en kullanışlı (web kodlayanlar için) Firebug hakkında
-    bilgi alabileceğimiz 12 site. [Bağlantı][4]
+    bilgi alabileceğimiz 12 site. Kırık bağlantı.
 -   Otomatik uyarı mesajı ile form alanlarını kullanışlı yapmak.
     [Bağlantı][5]
 -   CSS kendini geliştiriyor. CSS renk geçişi(gradiyant) vermek için kod
@@ -38,8 +38,6 @@ tags: Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek ya
   [2]: http://www.ibm.com/developerworks/xml/library/x-plansemantic/index.html?ca=drs-
     "anlamlı kod yazmak"
   [3]: http://squidfingers.com/patterns/ "ardalan resimleri"
-  [4]: http://blog.veanndesign.com/2008/04/12/everything-about-firebug-21-great-resources/
-    "Firebug makaleleri"
   [5]: http://woork.blogspot.com/2008/04/improve-form-usability-with-auto.html
     "erişilebilir formlar"
   [6]: http://webkit.org/blog/175/introducing-css-gradients/
