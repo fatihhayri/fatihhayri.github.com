@@ -22,7 +22,7 @@ tags: ağaç menü, akordiyon, css editörleri, farklı tarayıcılara göre kod
     makale. [Bağlantı][8] 
 -   25 adet Minimalistik site örneği. [Bağlantı][9] 
 -   Firfox3'ün yeni renk profil desteği. Renkler daha canlı.
-    [Bağlantı][10] 
+    Kırık bağlantı.
 
 
   [Bağlantı]: http://lifehacker.com/396312/power-users-guide-to-firefox-3
@@ -38,5 +38,3 @@ tags: ağaç menü, akordiyon, css editörleri, farklı tarayıcılara göre kod
   [8]: http://dbaron.org/log/20080613-firefox3-css "Firefox 3 - CSS"
   [9]: http://vandelaydesign.com/blog/galleries/minimal-websites-designs/
     "minimalistik site"
-  [10]: http://www.dria.org/wordpress/archives/2008/04/29/633/
-    "Firefox3"
