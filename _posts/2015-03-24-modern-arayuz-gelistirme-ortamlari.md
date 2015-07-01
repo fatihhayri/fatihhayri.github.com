@@ -57,7 +57,7 @@ Yukarıda saydığım ve saymayı unuttuğum görevler ile uğraşmak durmunda k
  - **İhtiyaçların Yönetimi** (Dependency management)
 Arayüz geliştiricileri uygulama çatıları, eklentiler ve uygulama geliştirme araçları kullanarak projelerini geliştirirler. Açık kaynak bu araçları kullanmak bizlere büyük hız ve avantaj sağlamaktadır. Ancak her güzelin bir kusuru olduğu gibi, bu kod yapılarınında güncel tutma ve verimli kullanma konusunda sıkıntıları vardır. İşte tam bu noktada aşağıdaki araçlar bizi bu dertten kurtarıyor.
      - [Bower](http://bower.io/)
-     - [Npm](https://www.npmjs.com/)
+     - [Npm](https://www.npmjs.com/) Npm hakkındaki yazımı [okuyun](/nodejs-npm/)
      - [Bundler](http://bundler.io/)
  - **Javascript Uygulama Çatıları(Framework)**
  Javascript önem kazanması ile bir çok javascript uygulama çatıları çıktı. Javascript Uygulama Çatılarını; düzensiz ve belli bir mimariden uzak kod yazan bizleri bir düzene sokan ana çatılar olarak özetleyebilirim. Bu sayede anlaşılır, sürdürülebilir ve kolay yönetilebilir yapılar üretebiliyoruz. 
