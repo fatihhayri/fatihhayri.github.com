@@ -58,7 +58,7 @@ Aldığı değerleri kısaca açıklarsak
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Rf6Mv/31/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Rf6Mv/49/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **background-position:fixed** tanımlı elementlere etki etmez.
 
@@ -134,7 +134,7 @@ uygulanır.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/uzFeu/4/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Rf6Mv/50/embedded/result,css,html"></iframe>
 
 **background-origin:border-box** olarak tanımladığımızda
 **background-clip** özelliğini daha iyi anlarız. Her üç kutudaki
@@ -188,7 +188,7 @@ olarak kalıyor.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/gqaC9/3/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/gqaC9/9/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **-webkit-text-fill-color:transparent** ile metnin ardalanını
 saydamlaştırıyoruz ve elemanın ardalanındaki resmi gösteriyoruz. Çok
