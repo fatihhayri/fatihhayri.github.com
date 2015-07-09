@@ -1,6 +1,6 @@
 {% endhighlight %}---
 layout: post
-title: Nodejs ve npm
+title: text-transform: uppercase
 Date: 2015-07-01 13:18
 Category: css
 tags: css türkçe text-transform:uppercase lang
