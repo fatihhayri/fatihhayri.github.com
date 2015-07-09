@@ -213,6 +213,7 @@ Date: 2006-08-05 22:06
     -   [CSS İpucu 33: İE için renk geçişi çözümü filtre tanımını sıfırlamak](/ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/)
     -   [Çoklu :not seçicisi kullanımı](/coklu-not-secicisi-kullanimi/)
     -   [last-child seçicisi](/last-child-secisi/)
+    -   [text-transform:uppercase](/text-transform-uppercase/)
 
 -   CSS 3
     -   [CSS3 Hakkında](/css3-hakkinda/)
