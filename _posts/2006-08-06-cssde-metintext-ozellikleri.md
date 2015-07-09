@@ -259,6 +259,7 @@ metinlerizinaltını çizmek gibi.
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
+
 {% highlight css %}
 a:link, a:visited, a:active {
 	text-decoration: none
@@ -286,3 +287,10 @@ Bu özellik CSS2 ile birlikte geldi ancak internet tarayıcıları bu
 
 
   [<uzunluk değeri >]: http://www.fatihhayrioglu.com/?p=95
+
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png
