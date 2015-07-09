@@ -26,22 +26,25 @@ bir özelliktir.
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
-	:::css
-	p {
-		text-indent: 10px;
-	}
+{% highlight css %}
+p {
+	text-indent: 10px;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## text-align
 
@@ -55,22 +58,25 @@ Sadece metinler için kullanılmaz, diğer elementler içinde kullanılır.
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
-	:::css
-	p {
-		text-align: justify;
-	}
+{% highlight css %}
+p {
+	text-align: justify;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## vertical-align
 
@@ -92,22 +98,25 @@ Bir elementin içeriğinin dikey hizalaması için kullanılır.
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
-	:::css
-	img {
-		vertical-align: baseline;
-	}
+{% highlight css %}
+img {
+	vertical-align: baseline;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## line-height
 
@@ -121,22 +130,25 @@ Satırlar arasındaki yüksekliği belirler. **normal**, **pixel** veya
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
-	:::css
-	div{
-		line-height:30px
-	}
+{% highlight css %}
+div{
+	line-height:30px
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## word-spacing
 
@@ -149,22 +161,25 @@ Kelimeler arasındaki boşluk değerini belirler. Eksi değer alabilir.
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
-	:::css
-	p {
-		word-spacing: 10px;
-	}
+{% highlight css %}
+p {
+	word-spacing: 10px;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## letter-spacing
 
@@ -177,22 +192,25 @@ Harfler arasındaki boşluk değerini belirler. Eksi değer alabilir.
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
-	:::css
-	p {
-		letter-spacing: 5px;
-	}
+{% highlight css %}
+p {
+	letter-spacing: 5px;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## text-transform
 
@@ -209,22 +227,25 @@ Metnin Büyük-Küçük harf çevirmek için kullanılır.
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
-	:::css
-	p {
-		text-transform: capitalize;
-	}
+{% highlight css %}
+p {
+	text-transform: capitalize;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## text-decoration
 
@@ -238,22 +259,25 @@ metinlerizinaltını çizmek gibi.
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
-	:::css
-	a:link, a:visited, a:active {
-		text-decoration: none
-	}
+{% highlight css %}
+a:link, a:visited, a:active {
+	text-decoration: none
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## text-shadow
 
