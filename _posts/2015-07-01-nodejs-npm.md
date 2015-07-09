@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nodejs ve npm
-Date: 2015-01-01 13:18
+Date: 2015-07-01 13:18
 Category: nodejs
 tags: nodejs npm package.json
 ---
