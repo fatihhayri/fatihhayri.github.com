@@ -17,6 +17,7 @@ bu konuyu göz atmıştım.
 ## Birinci Yöntem
 
 {% highlight css %}
+html,
 body {
     height: 100%;
     width: 100%;
@@ -24,10 +25,10 @@ body {
 }
 {% endhighlight %}
 
-şeklinde bir kod. Ancak bu kod ne yazık ki Firefox ve Opera'da
+şeklinde bir kod. <span style="text-decoration:line-through">Ancak bu kod ne yazık ki Firefox ve Opera'da
 çalışmıyor. Yada çalışması için html sayfamızdan DOCTYPE'ı silmemiz
 gerekiyor. Bence bu pek mantıklı bir kullanım değil, o nedenle ben
-ikinci yöntemi öneriyorum.
+ikinci yöntemi öneriyorum.</span>
 
 ## İkinci Yöntem
 
