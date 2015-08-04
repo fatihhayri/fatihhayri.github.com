@@ -6,9 +6,15 @@ Category: css
 tags: css background-position right bottom css3
 ---
 
-CSS'in devamlı geliştirilmekte olmasının avantajları ve dezavantajları var. Dezavantajlara flex özelliğinin 3 kere değişmesini gösterebiliriz. Avantajları çok tabi. Bunlardan bir tanesi örnek bu makalenin konusudur. Artalan resimlerinin konumlandırmasında bazı sorunlar vardı. Bu sorunları görerek mevcut tanım geliştirildi.
+CSS'in devamlı geliştirilmekte olmasının avantajları ve dezavantajları var. Dezavantajlara flex özelliğinin 3 kere değişmesini gösterebiliriz. Avantajları çok tabi. Bunlardan bir tanesine örnek bu makalenin konusudur. Artalan resimlerinin konumlandırmasında bazı sorunlar vardı. Bu sorunları görerek mevcut tanım geliştirildi.
 
 Daha önce anlattığımız [artalan tanımına](http://fatihhayrioglu.com/hizli-css-referansi/) artı özellikler eklendi. 
+
+{% highlight css %}
+div {
+    background-position: 20px 30px;
+}
+{% endhighlight %}
 
 <iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/jPXgmX/?height=268&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/fatihhayri/pen/jPXgmX/'>jPXgmX</a> by Fatih  (<a href='http://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
@@ -16,6 +22,12 @@ Daha önce anlattığımız [artalan tanımına](http://fatihhayrioglu.com/hizli
 yukarıdaki örnekte yaptığımız gibi sabit hizalama tanımı yaptığımızda her zaman elemanın sol ve üst köşesine göre mesafe belirtebiliyorduk. Tam işte burada yenilik geldi. Gerçi yenilik geleli bayağı zaman oluyor. Ben bu yazıyı daha önce yazmak istemiştim ama zamanım olmamıştı. Şimdiye nasipmiş.
 
 Yeni gelen özellikten sonra artık sağ ve alttan belli mesafede artalan resmi hizalyabiliyoruz. Hemen bir örnek yapalım. 
+
+{% highlight css %}
+div {
+    background-position: right 20px bottom 80px;
+}
+{% endhighlight %}
 
 <iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/qdLeXa/?height=268&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/fatihhayri/pen/qdLeXa/'>qdLeXa</a> by Fatih  (<a href='http://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
