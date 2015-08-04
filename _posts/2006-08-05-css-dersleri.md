@@ -19,6 +19,7 @@ Date: 2006-08-05 22:06
     -   [CSS'de Kısaltmalar][]
     -   [Hızlı CSS Referansı][]
 		-   [CSS - Zemin(Background) Özellikleri][Hızlı CSS Referansı]
+        -   [Dört değerli background-position tanımı](/dort-degerli-background-position-tanimi/)
         -   [Font Özellikleri][]
         -   [CSS Sınıflandırma-Liste Özellikleri][]
         -   [CSS Kutu Modeli Özellikleri 1 - Kenarlık(border) Özellikleri][]
