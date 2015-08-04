@@ -212,7 +212,7 @@ tanımlanabilir. Örn: **IMG**, **INPUT**, **TEXTAREA**, **SELECT**, ve
 
 **Yapısı :** background-position: <deger\>\\
 **Aldığı Değerler :** [[<percentage>][renk] | [<length>][renk]]{1,2}
-| [top | center | bottom] || [left | center | right]\\
+| [top | center | bottom] || [left | center | right] \\
 **Başlangıç değeri:** 0% 0%\\
 **Uygulanabilen elementler:** [Block-level ve replaced elementler][renk]\\
 **Kalıtsallık:** Yok
