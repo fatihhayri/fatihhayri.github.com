@@ -21,7 +21,7 @@ div {
 
 yukarıdaki örnekte yaptığımız gibi sabit hizalama tanımı yaptığımızda her zaman elemanın sol ve üst köşesine göre mesafe belirtebiliyorduk. Tam işte burada yenilik geldi. Gerçi yenilik geleli bayağı zaman oluyor. Ben bu yazıyı daha önce yazmak istemiştim ama zamanım olmamıştı. Şimdiye nasipmiş.
 
-Yeni gelen özellikten sonra artık sağ ve alttan belli mesafede artalan resmi hizalyabiliyoruz. Hemen bir örnek yapalım. 
+Yeni gelen özellikten sonra artık sağ ve alttan belli mesafede artalan resmi hizalayabiliyoruz. Hemen bir örnek yapalım. 
 
 {% highlight css %}
 div {
