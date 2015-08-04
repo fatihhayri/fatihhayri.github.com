@@ -40,10 +40,11 @@ gösterir.
 
 Örneğin:
 
-	:::css
-	p.deneme {
-		border-style: solid dashed dotted solid;
-	}
+{% highlight css %}
+p.deneme {
+	border-style: solid dashed dotted solid;
+}
+{% endhighlight %}
 
 ## CSS - Zemin(BACKGROUND) Özellikleri
 
@@ -78,22 +79,25 @@ Elementlerin zeminine bir renk atamak için kullanılır.
 
 **Örnek:**
 
-	:::css
-	p {
-		background-color: #ddd;
-	}
+{% highlight css %}
+p {
+	background-color: #ddd;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu**
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ### background-image
 
@@ -108,22 +112,25 @@ Elementlerin zeminine resim eklemek için kullanılır.
 
 **Örnek:**
 
-	:::css
-	body {
-		background-image: url(/images/deneme.gif)
-	}
+{% highlight css %}
+body {
+	background-image: url(/images/deneme.gif)
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu**
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ### background-repeat
 
@@ -139,23 +146,26 @@ resmin tekrarı ile özellikleri belirler.
 
 **Örnek:**
 
-	:::css
-	body {
-		background: white url(deneme.gif);
-		background-repeat: repeat-x;
-	}
+{% highlight css %}
+body {
+	background: white url(deneme.gif);
+	background-repeat: repeat-x;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu**
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ### background-attachment
 
@@ -171,23 +181,26 @@ scroll etmesini veya sayfanın zeminin de çakılı kalmasını sağlar.
 
 **Örnek:**
 
-	:::css
-	body {
-		background: white url(deneme.gif);
-		background-attachment: fixed;
-	}
+{% highlight css %}
+body {
+	background: white url(deneme.gif);
+	background-attachment: fixed;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu**
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ### background-position
 
@@ -236,25 +249,27 @@ edilecektir. Yüzde değerler ve uzunluk değerleri eksi değerler alabilir.
 
 **Örnek:**
 
-	:::css
-	body {
-		background-image: url(deneme.gif);
-		background-repeat: no-repeat;
-		background-position: center;
-	}
+{% highlight css %}
+body {
+	background-image: url(deneme.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+{% endhighlight %}
 
+**Tarayıcı Desteği**
 
-**Tarayıcı Uyumu**
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ### background
 
@@ -270,37 +285,46 @@ kullanımı sağlar.
 
 **Örnek:**
 
-	:::css
-	body{
-		background: white url(deneme.gif)
-	}
+{% highlight css %}
+body{
+	background: white url(deneme.gif)
+}
 
-	blockquote {
-		background: #f00
-	}
+blockquote {
+	background: #f00
+}
 
-	p {
-		background: url(../images/deneme.png) #f00 fixed
-	}
+p {
+	background: url(../images/deneme.png) #f00 fixed
+}
 
-	table{
-		background: #0c0 url(deneme.jpg) no-repeat bottom right
-	}
+table{
+	background: #0c0 url(deneme.jpg) no-repeat bottom right
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu**
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
 
 
 
   [Kutu Modeli]: /images/basit_boxmodel.gif
   [renk]: http://www.fatihhayrioglu.com/?p=95
   [block-level]: #
+
+[firefox]: /images/ff.png
+[chrome]: /images/ch.png
+[explorer]: /images/ie.png
+[msafari]:/images/sm.png
+[android]:/images/an.png
