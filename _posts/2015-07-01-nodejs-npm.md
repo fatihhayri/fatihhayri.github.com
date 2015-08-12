@@ -9,15 +9,15 @@ tags: nodejs npm package.json
 ![enter image description here](http://fatihhayrioglu.com/images/nodejs-npm.png)
 {: .resimler-sagda}
 
-Arayüz geliştiricileri olarak yoğun bir şekilde javascript kullanıyoruz. Birçok javascript kütüphanesini kullanıyoruz, peki sunucu taraflı kodlama da javascript kullanılsa nasıl olur? Bu soruya cevap zaten nodejs var diyenlere aferin :D Peki ama Nodejs sunucu taraflı javascript biz arayüz geliştiriyoruz ne işimiz olur? Demeyelim, okumaya devam.
+Arayüz geliştiricileri olarak yoğun bir şekilde javascript kullanıyoruz. Birçok javascript kütüphanesini kullanıyoruz, peki sunucu taraflı kodlama da javascript kullanılsa nasıl olur? Bu soruya cevap zaten "nodejs var" diyenlere aferin :D Peki ama "Nodejs sunucu taraflı javascript biz arayüz geliştiriyoruz ne işimiz olur?" demeyelim, okumaya devam.
 
-Sonuçta kullandığımız bir dilin farklı bir yanı nodejs, farklı kabiliyetleri var. Tabi size derinlemesine öğrenin demiyeceğim tabiki daha önce bahsettiğim gibi her arayüz geliştiricisi etkileşimde olduğu bölümlerin kabiliyetlerini bilmeli, bu yapılan işin kalitesi ve hızı için önelidir. Zaman bulursanız derinlemesine de öğrenmekte fayda var.
+Sonuçta kullandığımız bir dilin farklı bir yanı nodejs, farklı kabiliyetleri var. Tabi size derinlemesine öğrenin demiyeceğim tabiki daha önce bahsettiğim gibi her arayüz geliştiricisi etkileşimde olduğu bölümlerin kabiliyetlerini bilmeli, bu yapılan işin kalitesi ve hızı için önemlidir. Zaman bulursanız derinlemesine de öğrenmekte fayda var.
 
 ## Yükleme
 
 İlk olarak bilgisayarımıza nodejs'i yükleyerek başlayalım. Windows ve Mac kullanıcıları için [nodejs.org](http://nodejs.org) sitesinde kurulum dosyası mevcut, linux kullanıcılar ise alışık oldukları yol ile komut satırından  **sudo apt-get update** ve sonra **sudo apt-get install node** kod ile bu işi halledebilirler.
 
-"Nodjs; Google'un geliştirdiği ve Chrome'da javascript derlemekte kullandığı C/C++ ile geliştirilmiş V8 motoru üzerinde çalışmaktadır. Nodjs,  olay tabanlı olarak sunucu üzerinde javascript çalıştırmayı sağlayan bir yapıdır.  I/O ve ağ işlemlerini bloklamadan(asenkron) olarak yaptığı için kaynak yönetimi gibi konularda diğer yazılım dillerine ve platformlarına göre daha farklı bir konumdadır ve bu özellik NodeJS'in temelini oluşturan bir yapıdır. Bu da NodeJS için performans odaklı olmasını sağlar." - [nodejstr.com](nodejstr.com)
+"Nodejs; Google'ın geliştirdiği ve Chrome'da javascript derlemekte kullandığı C/C++ ile geliştirilmiş V8 motoru üzerinde çalışmaktadır. Nodejs,  olay tabanlı olarak sunucu üzerinde javascript çalıştırmayı sağlayan bir yapıdır.  I/O ve ağ işlemlerini bloklamadan(asenkron) olarak yaptığı için kaynak yönetimi gibi konularda diğer yazılım dillerine ve platformlarına göre daha farklı bir konumdadır ve bu özellik NodeJS'in temelini oluşturan bir yapıdır. Bu da NodeJS'in performans odaklı olmasını sağlar." - [nodejstr.com](nodejstr.com)
 
 Nodejs'in yüklendiğini kontrol etmek için genelde sürüm kontrolü kodu kullanılır.
 
@@ -35,7 +35,7 @@ Sonucu bize nodejs'in kurulduğunu ve kurulan sürümün 0.12.0 olduğunu göste
 
 ## Paket Yönetimi (NPM)
 
-Paket yönetimi açık kaynak kullanıcılarının yabancı olmadığı bir konu. Paket Yöneticisi; Bağımlılıkları takip ederek paket inşa etme, kurma, kaldırma, yükseltme vd. işlevleri yerine getirir. Nodjs'in paket yöneticisi NPM'dir. NPM üçüncü parti modülleri yüklemek için birebirdir. 
+Paket yönetimi açık kaynak kullanıcılarının yabancı olmadığı bir konu. Paket Yöneticisi; Bağımlılıkları takip ederek paket inşa etme, kurma, kaldırma, yükseltme vd. işlevleri yerine getirir. Nodejs'in paket yöneticisi NPM'dir. NPM üçüncü parti modülleri yüklemek için birebirdir. 
 
 Paket sözcüğü biraz sunucu taraflı bir tanım gibi geliyor bana. Arayüz geliştiricileri için genelde npm eklenti yönetimi için kullanılıyor. grunt ve eklentilerinin eklenmesi, güncellenmesi ve silinmesi işlemlerini yoğun olarak npm ile yaparız.
 
@@ -81,7 +81,7 @@ npm install -g grunt-cli
 npm install -g grunt --save-dev
 {% endhighlight %}
 
-Bu konmutu yazdıktan sonra node'da kayıtlı grunt paketini sunucudan indirecektir. Proje dosyalarının olduğu klasöre **node_modules** klasörünün eklendiğini görceksiniz. package.json dosyasını açtığımızda 
+Bu komutu yazdıktan sonra node'da kayıtlı grunt paketini sunucudan indirecektir. Proje dosyalarının olduğu klasöre **node_modules** klasörünün eklendiğini göreceksiniz. package.json dosyasını açtığımızda 
 
 {% highlight bash %}
 "devDependencies": {
@@ -129,13 +129,13 @@ Komutunu yazmalıyız. Sondaki --save-dev parametresi yine package.json'ın otom
 
 ### Modülü Güncellemek
 
-Projemizde ekli olan modülleri durumlarını öğrenmek için;
+Projemizde ekli olan modüllerin durumlarını öğrenmek için;
 
 {% highlight bash %}
 npm outdated
 {% endhighlight %}
 
-Komutu ile güncellemesi gelen modüllerin adı, mevcut sürümü, istenen sürümü, son sürümü ve yeri bilgilerini verir.
+Komutu ile güncellemesi gelen modüllerin adı, mevcut sürümü, istenen sürümü, son sürümü ve yer bilgilerini verir.
 
 ![enter image description here](http://fatihhayrioglu.com/images/npm_outdated.gif)
 
@@ -147,7 +147,7 @@ npm update grunt-contrib-cssmin --save-dev
 
 Kodu ile modülü güncelleyebiliriz.
 
-Daha önce oluşturulmuş projelerde **package.json** dosyası görürseniz, yapacağıznı ilk iş 
+Daha önce oluşturulmuş projelerde **package.json** dosyası görürseniz, yapacağınız ilk iş 
 
 {% highlight bash %}
 npm install

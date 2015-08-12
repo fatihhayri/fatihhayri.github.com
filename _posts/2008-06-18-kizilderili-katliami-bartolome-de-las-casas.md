@@ -23,9 +23,7 @@ ele geçirildiğini Eski Dünya'nın gözleri önüne sermiş ve birçok dile
 tercüme edilmiş çarpıcı bir tarihi eserdir. Kitapta anlatılanlar insanın
 kanını donduracak cinsten. Anlatılan o kadar feci ki inanmakta
 zorlanıyor insan. Bu konuda 3-4 tane daha kitap okumak lazım kesin emin
-olmak için. Ayrıntılı bilgi için [tıklayınız.][]
+olmak için.
 
   [100]: /images/kizildereli.jpg
     "kizildereli"
-
-  [tıklayınız.]: http://en.eren.com.tr/goster/kitap/kitap.asp?kitap=218029&SID=652213573063

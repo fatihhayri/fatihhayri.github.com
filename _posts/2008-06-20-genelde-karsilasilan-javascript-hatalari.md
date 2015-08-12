@@ -145,8 +145,6 @@ araç.
     **
 -   [http://www.javascriptsearch.com/guides/Beginner/articles/070625Mistakes.html][]
     (kısa kısa) **
--   [http://www.webmonkey.com/98/29/index4a_page3.html?tw=programming][]
-    ***
 -   [Beginning JavaScript][]
 
 
@@ -163,6 +161,5 @@ araç.
   [http://www.ddj.com/184412486]: http://www.ddj.com/184412486
   [http://www.sitepoint.com/blogs/2004/08/18/five-common-mistakes-in-influencing-others/]: http://www.sitepoint.com/blogs/2004/08/18/five-common-mistakes-in-influencing-others/
   [http://www.javascriptsearch.com/guides/Beginner/articles/070625Mistakes.html]: http://www.javascriptsearch.com/guides/Beginner/articles/070625Mistakes.html
-  [http://www.webmonkey.com/98/29/index4a_page3.html?tw=programming]: http://www.webmonkey.com/98/29/index4a_page3.html?tw=programming
   [Beginning JavaScript]: http://www.wrox.com/WileyCDA/WroxTitle/productCd-0764555871.html
     "Beginning JavaScript"

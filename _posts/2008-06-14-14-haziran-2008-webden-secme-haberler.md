@@ -14,7 +14,6 @@ tags: Alıntı, ASP.NET, CSS kenar çizgisi, Firefox 3, Firefox Picnic, jquery, 
 -   VDSL geliyor. 16 Mbit ve 32 Mbit internet hızı geliyor.
     [Bağlantı][4]
 -   pilli ilan sitesi açılmış. pillinetwork'den yeni bir site.
-    [Bağlantı][5]
 -   mailinglerde CSS destek tablosu. [Bağlantı][6]
 -   Google aramalarında sitelerdeki intro ları geçmek için link ekliyor
     artık, tabi link flash dışında ise. [Bağlantı][7]
@@ -35,7 +34,6 @@ tags: Alıntı, ASP.NET, CSS kenar çizgisi, Firefox 3, Firefox Picnic, jquery, 
   [3]: http://www.search-this.com/2008/06/04/css-bordering-on-the-ridiculous/
     "css kenarlık"
   [4]: http://www.internethaber.com/news_detail.php?id=144831 "vdsl"
-  [5]: http://ilan.pilli.com/ "pilli ilan"
   [6]: http://www.campaignmonitor.com/css/ "amiling - css"
   [7]: http://googlesystem.blogspot.com/2008/06/skip-flash-intros-in-google-search.html
     "google skip intro"
