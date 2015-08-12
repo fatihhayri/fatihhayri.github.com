@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Arayüz Geliştiriciler İçin Paket Yönetimi: Bower
+title: Arayüz Geliştiriciler İçin Paket Yönetimi - Bower
 Date: 2015-08-12 13:18
 Category: bower
 tags: bower paket-yönetimi twitter bower.json
