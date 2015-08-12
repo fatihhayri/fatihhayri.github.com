@@ -22,12 +22,11 @@ Sistemde npm yüklü ise komut satırına aşağıdaki kodu yazalım.
 npm install -g bower
 {% endhighlight %}
 
-npm yazısından bildiğimiz gibi -g parametresi kurulacak kod blokunun gene
-e kurulmasını sağlıyor. Kurduktan sonra bir sonraki adıma geçelim.
+npm yazısından bildiğimiz gibi -g parametresi kurulacak kod blokunun genele kurulmasını sağlıyor. Kurduktan sonra bir sonraki adıma geçelim.
 
 # Paket bulmak
 
-Npm'den bildiğimiz gibi kütüphane ve eklentiler paket olarak adlandırılıyor. Eklemek istediğimiz paketleri aramanın iki yolu var. [Bower'ın arama](http://bower.io/search/) sayfasını kullanmak yada komut satırından aşağıdaki kodu yazarak aramak.
+Npm'den bildiğimiz gibi kütüphane ve eklentiler paket olarak adlandırılıyor. Eklemek istediğimiz paketleri aramanın iki yolu var. [Bower'ın arama](http://bower.io/search/) sayfasını kullanmak ya da komut satırından aşağıdaki kodu yazarak aramak.
 
 {% highlight bash %}
 bower search <sorgu>
@@ -74,7 +73,7 @@ bower install bootstrap#3.2.0
 
 ![enter image description here](http://fatihhayrioglu.com/images/bower-install.gif)
 
-Paket yüklendiğinde proje klasöründe **bower_components** klaösürü oluşturur ve içine dosyaları indirir. Bower bu klasörü otomatik olarak seçer ve adlandırır, ancak konfigürasyon (.bowerrc) dosyası yolu ile bize yolu ve ismini değiştirme imkanı verir.   
+Paket yüklendiğinde proje klasöründe **bower_components** klasörü oluşturur ve içine dosyaları indirir. Bower bu klasörü otomatik olarak seçer ve adlandırır, ancak konfigürasyon (.bowerrc) dosyası yolu ile bize yolu ve ismini değiştirme imkanı verir.   
 
 **bower_components** klasörünü incelediğimizde yüklediğimiz paket ve bağımlılıkları otomatik yüklendiğini görürüz.
 
@@ -102,13 +101,13 @@ bower uninstall jquery modernizr sass-bootstrap
 
 ## bower.json dosyası
 
-Eğer birden fazla paket kullanacaksanız bir **bower.json** dosyası ile bu paketleri yönetmek daha mantıklıdır. Zaten tek ktüphane için bower kullanmakta çok mantıklı gelmiyor bana. bower.json dosyasını kendimiz elle oluşturabildiğimiz gibi. 
+Eğer birden fazla paket kullanacaksanız bir **bower.json** dosyası ile bu paketleri yönetmek daha mantıklıdır. Zaten tek kütüphane için bower kullanmakta çok mantıklı gelmiyor bana. bower.json dosyasını kendimiz elle oluşturabildiğimiz gibi 
 
 {% highlight bash %}
 bower init
 {% endhighlight %}
 
-Komutunu yazıp, sorulan soralara cevap verip bir bower.json dosyası elde edebiliriz. 
+komutunu yazıp, sorulan soralara cevap verip bir bower.json dosyası elde edebiliriz. 
 
 Örnek bir bower.json dosyası
 
@@ -128,7 +127,7 @@ Komutunu yazıp, sorulan soralara cevap verip bir bower.json dosyası elde edebi
 
 ## Paketi güncellemek
 
-Paketlerimizi güncellemek için aşağıdaki komutu yazamamız yeterlidir.
+Paketlerimizi güncellemek için aşağıdaki komutu yazmamız yeterlidir.
 
 {% highlight bash %}
 bower update
