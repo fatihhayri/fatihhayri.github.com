@@ -56,7 +56,7 @@ Yukarıda saydığım ve saymayı unuttuğum görevler ile uğraşmak durmunda k
      - [Codekit](http://incident57.com/codekit/)
  - **İhtiyaçların Yönetimi** (Dependency management)
 Arayüz geliştiricileri uygulama çatıları, eklentiler ve uygulama geliştirme araçları kullanarak projelerini geliştirirler. Açık kaynak bu araçları kullanmak bizlere büyük hız ve avantaj sağlamaktadır. Ancak her güzelin bir kusuru olduğu gibi, bu kod yapılarınında güncel tutma ve verimli kullanma konusunda sıkıntıları vardır. İşte tam bu noktada aşağıdaki araçlar bizi bu dertten kurtarıyor.
-     - [Bower](http://bower.io/)
+     - [Bower](http://bower.io/) Bower hakkında yazımı [okuyun](/arayuz-gelistiriciler-icin-paket-yonetimi-bower/)
      - [Npm](https://www.npmjs.com/) Npm hakkındaki yazımı [okuyun](/nodejs-npm/)
      - [Bundler](http://bundler.io/)
  - **Javascript Uygulama Çatıları(Framework)**
