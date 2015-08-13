@@ -125,6 +125,14 @@ komutunu yazıp, sorulan soralara cevap verip bir bower.json dosyası elde edebi
 }
 {% endhighlight %}
 
+Yeni bir paket ekledeğimizde **bower.json** dosyasını güncellemek için **--save** parametresini eklememiz gerekir.
+
+{% highlight bash %}
+bower install jquery --save
+{% endhighlight %}
+
+Bu kullanımı alışkanlık haline getirmekte fayda var. Her paket indirdiğimizde bower-json dosyasını ayrıca açıp güncellemek çok mantıklı değil.
+
 ## Paketi güncellemek
 
 Paketlerimizi güncellemek için aşağıdaki komutu yazmamız yeterlidir.

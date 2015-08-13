@@ -24,7 +24,7 @@ tags: css form, css stil değiştir, Firefox 3, jquery, WordPress, wordpress tem
     makale. [Bağlantı][10]
 -   jQuery ile sürgülü üst menü. [Bağlantı][11]
 -   Esnek yapılı genişlikte yuvarkla kenarlı alanlar yapmak.
--   Firefox 3 yazıtipi ve metin yenilikleri. [Bağlantı][13]
+-   Firefox 3 yazıtipi ve metin yenilikleri.
 
 
   [Bağlantı]: http://woork.blogspot.com/2008/06/clean-and-pure-css-form-design.html
@@ -44,5 +44,3 @@ tags: css form, css stil değiştir, Firefox 3, jquery, WordPress, wordpress tem
   [10]: http://yoast.com/articles/wordpress-seo/ "wordpress - seo"
   [11]: http://www.webresourcesdepot.com/sliding-top-menu-with-jquery/
     "jQuery"
-  [13]: http://www.dria.org/wordpress/archives/2008/06/10/651/
-    "Firefox 3"
