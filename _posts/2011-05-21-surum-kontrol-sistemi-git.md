@@ -197,6 +197,12 @@ git merge origin
 bırakıp diğer alanı silerek dosyayı kaydediyoruz ve dosyanın son hali o
 oluyor.
 
+**git push:** Lokalde yaptığımız değişiklikleri uzak suncuya göndermek için kullandığımız komuttur. Bu komutu yazdığımızda değişikliklere artık tüm kullanıcılar erişebilir hale gelir. 
+
+{% highlight bash %}
+$git push
+{% endhighlight %}
+
 **git help:** son olarak bir komut hakkında yardım almak için
 
 {% highlight bash %}
