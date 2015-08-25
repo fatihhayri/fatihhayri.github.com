@@ -10,7 +10,7 @@ tags: sass grunt stylus css-önişlemcileri
 
 [Sahibinden.com](http://sahibinden.com)'da Stylus ile kod yazarken [mobiwan](http://www.mobiwan.mobi/)'da tercihimiz genelde Sass oluyor. Bende hazır Sass kodluyoruz bir makale yazmanın sırası geldi diye düşünüp bu makaleyi yazmaya başladım. Bu yazım Sass'a giriş niteliğinde olacaktır. Daha sonra zamanım olursa devamı gelir inşallah.
 
-"CSS ile kod yazarken büyük projelerde ne kadar dikkatli olsak da sonunda normal olarak binlerce satırlık kodlar çıkabiliyor. Düzenli olmamız ve Firebug yardımı olsa da bu kodlar içinde dolaşmak ve yönetmek bazı sorunlar neden oluyor. Dinamik CSS burada devreye giriyor.
+"CSS ile kod yazarken büyük projelerde ne kadar dikkatli olsak da sonunda normal olarak binlerce satırlık kodlar çıkabiliyor. Düzenli olmamız ve Firebug yardımı olsa da bu kodlar içinde dolaşmak ve yönetmek bazı sorunlara neden oluyor. Dinamik CSS burada devreye giriyor.
 
 Dinamik CSS yazımında; değişken tanımı, css fonksiyonları, fazla kod işaretçilerinden kurtarma kalıtsallık ve 4 işlem gibi özellikleri ile bizlere yardımcı oluyor. Kısacası CSS’e dinamik bir yazım olanağı kazandırıyor."
 
