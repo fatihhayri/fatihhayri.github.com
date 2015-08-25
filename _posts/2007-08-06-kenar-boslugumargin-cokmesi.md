@@ -38,16 +38,18 @@ bir çökme meydana gelir. Bir örnek yapalım.
 
 Html kodu:
 
-	:::html
-	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<p>
-	<p>Morbi eros lacus, volutpat at, interdum nec, dignissim at, turpis.</p>
+{% highlight html %}
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<p>
+<p>Morbi eros lacus, volutpat at, interdum nec, dignissim at, turpis.</p>
+{% endhighlight %}
 
 CSS kodu:
 
-	:::css
-	p{
-		margin:10px 0;
-	}
+{% highlight css %}
+p {
+	margin:10px 0;
+}
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][]
 
@@ -67,13 +69,14 @@ Resim - 2 Görünen kenar boşluğu görünümü         
 olarak vereceğim, ayrıca makalenin sonundaki çözümlerde göz atmanızda
 yarar var.
 
-	:::css
-	p{
-		margin:10px 0;
-		float:left;
-		clear:both;
-		width:100%
-	}
+{% highlight css %}
+p {
+	margin:10px 0;
+	float:left;
+	clear:both;
+	width:100%
+}
+{% endhighlight %}
 
 Bu kodlar sonrasında resim-1 deki görüntüyü alırız.
 
@@ -82,26 +85,28 @@ Bu kodlar sonrasında resim-1 deki görüntüyü alırız.
 Bir elemente ve içindeki elemente kenar boşluğu atadığımızda içte kalan
 elementin kenar boşlukları kaybolacaktır. Bir uygulama yapalım:
 
-	:::css
-	* {
-		margin:0;
-		padding:0;
-	}
+{% highlight css %}
+* {
+	margin:0;
+	padding:0;
+}
 
-	div#kapsul{
-		margin:10px;
-		background-color:#0066CC;
-	}
+div#kapsul{
+	margin:10px;
+	background-color:#0066CC;
+}
 
-	p{
-		margin:10px;
-		background-color:#0CF;
-	}
+p{
+	margin:10px;
+	background-color:#0CF;
+}
+{% endhighlight %}
 
 Html kodu yazalım:
 
-	:::html
-	<div id="kapsul"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> </div>
+{% highlight html %}
+<div id="kapsul"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> </div>
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][1]
 
@@ -121,22 +126,23 @@ Resim - 2 Olması gereken kenar boşluğu
 eklersek ve paragrafın kenar boşluk değerini de 1px azaltırsak sorun
 çözülür. Kodu aşağıdaki gibi değiştirirsek sorunumuz hallolacaktır.
 
-	:::css
-	*{
-		margin:0;
-		padding:0;
-	}
+{% highlight css %}
+* {
+	margin:0;
+	padding:0;
+}
 
-	div#kapsul{
-		margin:10px;
-		padding:1px;
-		background-color:#0066CC;
-	}
+div#kapsul {
+	margin:10px;
+	padding:1px;
+	background-color:#0066CC;
+}
 
-	p{
-		margin:9px;
-		background-color:#0CF;
-	}
+p {
+	margin:9px;
+	background-color:#0CF;
+}
+{% endhighlight %}
 
 ## 3- Sadece İçteki Elemente Kenar Boşluğu Uyulanmış İç içe Bulunan Elementler Arasında Meydana Gelen Çökme
 
@@ -146,26 +152,28 @@ varken(margin:10px) dıştaki **kapsul** nesnesinin kenar boşluğu
 değerinin sıfır olması durumunda meydana gelir. İçteki elementin dikey
 kenar boşlukları çökecektir.
 
-	:::css
-	*{
-		margin:0;
-		padding:0;
-	}
+{% highlight css %}
+* {
+	margin:0;
+	padding:0;
+}
 
-	div#kapsul{
-		margin:0;
-		background-color:#0066CC;
-	}
+div#kapsul{
+	margin:0;
+	background-color:#0066CC;
+}
 
-	p{
-		margin:10px;
-		background-color:#0CF;
-	}
+p{
+	margin:10px;
+	background-color:#0CF;
+}
+{% endhighlight %}
 
 Html kodu yazarsak:
 
-	:::html
-	<div id="kapsul"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> </div>
+{% highlight html %}
+<div id="kapsul"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> </div>
+{% endhighlight %}
 
 ![][2]
 
