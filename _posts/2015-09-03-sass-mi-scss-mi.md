@@ -12,7 +12,7 @@ SCSS CSS3'ün gelişmiş bir kullanımı olarak sunulmakatadır. Ayrıca SCSS'ni
 
 Örnekle aradaki farklı inceleyelim.
 
-Sasss
+Sass
 
 {% highlight sass %}
 // Variable
@@ -63,6 +63,7 @@ Kod sonrasında iki tercih arasındaki artılar sıralarsak;
 **Sass'ın artıları**
 
  - Kısa ve kolay sözdizimi
+ - Noktalı virgül, süslü parantez kullanılmıyor; @mixin, @include yerine = ve + kullanılıyor.
  - Daha temiz bir görünüm
  - Blokların seviyelerini daha hızlı düzenleme imkanı
 
@@ -71,8 +72,6 @@ Kod sonrasında iki tercih arasındaki artılar sıralarsak;
  - CSS ile tam uyumluk
  - CSS'e yakın sözdizimi. CSS'den daha hızlı geçiş imkanı
  - Daha düzenli kullanım
-
-İki kod arasındaki farklar Sass'da işaretçilerin neredeyse hiç kullanılmadığı (iki nokta üst üste : ) hariç. Sass; Girintili kodlama. Minimum işaretçi kullanımı. SCSS; CSS'e benzer kodlama yapısından dolayı CSS'den SCSS'ye geçişin kolay olması. 
 
 [sasstoscss](http://www.sasstoscss.com/) gibi çevrimiçi araçlar sayesinde iki seçenek arasında çevirim yapmak kolay. Bence siz hangisinde rahat ediyorsanız onu tercih edin. Ben Stylus'tan geçtiğim için .sass daha kullanışlı geliyor bana. 
 
