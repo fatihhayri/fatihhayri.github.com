@@ -9,25 +9,25 @@ tags: sass css-önişlemcileri compass
 
 [Compass](http://compass-style.org/); Sass'ın araç kutusu gibi tanımlayabiliriz. Önek sorununa çözüm oluşturan mixinleri, otomatik sprite yapma imkanı, dikey hizalama kolaylıkları, kolay ızgara sayfa planları sunan bir Sass araç kutusu olarak tanımlanabilir. Ayrıca eklenti desteği yardımı ile daha fazla geliştirilebilen bir araç kutusu. 
 
-Peki ben niye Compass kullanmıyoum. Compass'ın bana sunduğu tüm bu yetenekleri ben grunt / gulp ile halledebildiğim için ben compass kullanmıyorum. Compass proje büyüdükçe yavaşlığa sebep olurken grun / gulp çözümleri bana bu imkanları daha hızlı sağlamasıda cabası. 
+Peki ben niye Compass kullanmıyoum. Compass'ın bana sunduğu tüm bu yetenekleri ben grunt / gulp ile halledebildiğim için ben compass kullanmıyorum. Compass proje büyüdükçe yavaşlığa sebep olurken grunt / gulp çözümleri bana bu imkanları daha hızlı sağlaması da cabası. 
 
 ## Önek Çözümü 
 
 Compass'ın kolaylıklarından birisi önek sorununa çözüm oluşturan hazır mixinleri içinde barındırması.
 
-Önek sorunu CSS3'ün ilk yayılmaya başladığında ciddi bir sorundu ve tüm tarayıcılar için önek üretmek gerekiyordu ancak şu an bir çok özellikte öneksiz kullanım imkanı var. Kalanlar içinde grunt/gulp'ın [Autoprefixer](https://github.com/postcss/autoprefixer) eklentisini kullanmak daha mantıklı yada kendi mixinlerini yazmak.
+Önek sorunu CSS3'ün ilk yayılmaya başladığında ciddi bir sorundu ve tüm tarayıcılar için önek üretmek gerekiyordu ancak şu an bir çok özellikte öneksiz kullanım imkanı var. Kalanlar içinde grunt/gulp'ın [Autoprefixer](https://github.com/postcss/autoprefixer) eklentisini kullanmak daha mantıklı ya da kendi mixinlerini yazmak.
 
 ## Sprite
 
-Compass'ın avantajlarından biri de dinamik sprite oluşturma imkanının olması. Sprite resimlerini elle yapmaktansa dinamik oluşturmak güzel bir yöntem ancak bunun içinde grunt/gulp eklentileri var. Hemde compass'ın çözümünden daha kolay kullanımı var. [spritesmith](https://github.com/Ensighten/grunt-spritesmith) eklentisi gayet kullanışlı.
+Compass'ın avantajlarından biri de dinamik sprite oluşturma imkanının olması. Sprite resimlerini elle yapmaktansa dinamik oluşturmak güzel bir yöntem ancak bunun için de grunt/gulp eklentileri var. Hem de compass'ın çözümünden daha kolay kullanımı var. [spritesmith](https://github.com/Ensighten/grunt-spritesmith) eklentisi gayet kullanışlı.
 
 ## Diğer araçlar
 
-Compass'ın sağladığı diğer bir kaç aracıda her proje kullanmıyoruz. Kullandıklarımız içinde farklı çözümler oluşturulabilir. Örneğin kolay renk tanımları, yetenekli matematiksel işlemler ve sayfa planlaması için ızgara kullanım kolaylığı. 
+Compass'ın sağladığı diğer birkaç aracı da her proje kullanmıyoruz. Kullandıklarımız içinde farklı çözümler oluşturulabilir. Örneğin kolay renk tanımları, yetenekli matematiksel işlemler ve sayfa planlaması için ızgara kullanım kolaylığı. 
 
 ## Sonuç
 
-Sonuç olarak şunu söyliyebilirim ki; bir projeyi kodlarken bütün popüler kütüphaneleri kullanacağız diye bir şey yok. Eğer gerekiyorsa kullanırız, gerekmiyorsa boşa şişkinlik yapmaya gerek yok. Ben yaptığım projelerde compass kullanmıyorum ve hiç de aramadım. Yani tercih meselesi, ama kullanmadan önce iyi bir araştırın sonra karar verin derim. Bu arada mixin yazarken compass'ın dokümantasyonunda yaralanıyorum o ayrı :)
+Sonuç olarak şunu söyleyebilirim ki; bir projeyi kodlarken bütün popüler kütüphaneleri kullanacağız diye bir şey yok. Eğer gerekiyorsa kullanırız, gerekmiyorsa boşa şişkinlik yapmaya gerek yok. Ben yaptığım projelerde compass kullanmıyorum ve hiç de aramadım. Yani tercih meselesi, ama kullanmadan önce iyi bir araştırın sonra karar verin derim. Bu arada mixin yazarken compass’ın dokümantasyonundan yaralanıyorum o ayrı :)
 
 Kalın sağlıcakla.
 
