@@ -13,7 +13,7 @@ Peki ben niye Compass kullanmıyoum. Compass'ın bana sunduğu tüm bu yetenekle
 
 ## Önek Çözümü 
 
-Compass'ın kolaylıklarından birisi önek sorununa çözüm oluşturan hazır mixinleri içinde barındırması.
+Compass'ın kolaylıklarından biri önek sorununa çözüm oluşturan hazır mixinleri içinde barındırması.
 
 Önek sorunu CSS3'ün ilk yayılmaya başladığında ciddi bir sorundu ve tüm tarayıcılar için önek üretmek gerekiyordu ancak şu an bir çok özellikte öneksiz kullanım imkanı var. Kalanlar içinde grunt/gulp'ın [Autoprefixer](https://github.com/postcss/autoprefixer) eklentisini kullanmak daha mantıklı ya da kendi mixinlerini yazmak.
 
@@ -27,7 +27,7 @@ Compass'ın sağladığı diğer birkaç aracı da her proje kullanmıyoruz. Kul
 
 ## Sonuç
 
-Sonuç olarak şunu söyleyebilirim ki; bir projeyi kodlarken bütün popüler kütüphaneleri kullanacağız diye bir şey yok. Eğer gerekiyorsa kullanırız, gerekmiyorsa boşa şişkinlik yapmaya gerek yok. Ben yaptığım projelerde compass kullanmıyorum ve hiç de aramadım. Yani tercih meselesi, ama kullanmadan önce iyi bir araştırın sonra karar verin derim. Bu arada mixin yazarken compass’ın dokümantasyonundan yaralanıyorum o ayrı :)
+Sonuç olarak şunu söyleyebilirim ki; bir projeyi kodlarken bütün popüler kütüphaneleri kullanacağız diye bir şey yok. Eğer gerekiyorsa kullanırız, gerekmiyorsa boşa şişkinlik yapmaya gerek yok. Ben yaptığım projelerde compass kullanmıyorum ve hiç de aramadım. Yani tercih meselesi, ama kullanmadan önce iyi bir araştırın sonra karar verin derim. Bu arada mixin yazarken compass’ın dokümantasyonundan yararlanıyorum o ayrı :)
 
 Kalın sağlıcakla.
 
