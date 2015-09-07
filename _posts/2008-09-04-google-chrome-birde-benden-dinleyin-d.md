@@ -6,7 +6,7 @@ Category: Haberler
 tags: Google Chrome, İnternet Tarayıcısı, safari, Web Standartları, web tarayıcısı, WebKit
 ---
 
-![][100] Her yeni çıkan tarayıcının ardından inceleme yapıp yazı
+![][100]{: .resimler-sagda} Her yeni çıkan tarayıcının ardından inceleme yapıp yazı
 yazıyorum genelde. Tabi Google Chrome içinde bunu yapacaktım ki baktım
 çok fazla kaynak var. Beni asıl hayrete düşüren Türkçe kaynaklarında çok
 fazla olması idi. Sonra bir birinin tekrarı içerik oluşturmamak için
@@ -23,33 +23,36 @@ Benim gördüğüm tek sorun kısayol background tanımında tanımlanan
 renkerler gelmiyor. Sayfa yenileme ve 5-10 saniye geçtikten sonra
 geliyor.
 
-	:::cs
-	background:#f00 url(../images/ardalan.gif) top left repaet-x;
+{% highlight css %}
+background:#f00 url(../images/ardalan.gif) top left repaet-x;
+{% endhighlight %}
 
 ardalan rengi olan #f00 gelmiyor.
 
 CSS filtrelemesi olarak Safari için kullanılan filtreleme
 kullanılabilir.
 
-	:::html
-    <html>
-    <head>
-    <style>
-    body:nth-of-type(1) p{
-       color: #ff0000; // sadece safari ve chrome görecek
-    }
-    </style>
-    </html>
-    <body>
-    <p>deneme olarak bunu yazıyorum</p>
-    </body>
-    </html>
+{% highlight html %}
+<html>
+<head>
+<style>
+body:nth-of-type(1) p{
+   color: #ff0000; // sadece safari ve chrome görecek
+}
+</style>
+</html>
+<body>
+<p>deneme olarak bunu yazıyorum</p>
+</body>
+</html>
+{% endhighlight %}
 
 
 Javascript ile yakalamak içinde 
 
-	:::javascript
-	var is_chrome = navigator.userAgent.toLowerCase().indexOf(‘chrome’) > -1;
+{% highlight javascript %}
+var is_chrome = navigator.userAgent.toLowerCase().indexOf(‘chrome’) > -1;
+{% endhighlight %}
 
 yeterli oluyor. Ayrıca javascript hata yakalama konsolu
 için [http://www1.qainsight.net:8080/2008/09/04/How+To+View+JavaScript+Errors+In+Google+Chrome.aspx][]siteyi
