@@ -16,37 +16,33 @@ böler) **Pseudo elementi** ise bir elementi alt kısımlara böler (örneğin
 bir paragrafın ilk harfi, bir paragrafın ilk satırı gibi.)
 Pseudo sınıfına örnek:
 
-{% highlight css %}
-a:visited {
-    color: red;
-}
-{% endhighlight %}
+	:::css
+	a:visited {
+		color: red;
+	}
 
 Pseudo elementine örnek:
 
-{% highlight css %}
-p:first-line {
-    font-weight: bold;
-}
-{% endhighlight %}
+	:::css
+	p:first-line {
+		font-weight: bold;
+	}
 
 Pseudo sınıf ve elemtleri HTML class özelliği olarak belirtilmemiştir. Normal
 sınıflar pseudo sınıf ve elementleri ile kullanılabilir.
 
-{% highlight css %}
-a.disariyalinkller:link,
-a.disariyalinkller:visited {
-    color: maroon;
-}
-{% endhighlight %}
+	:::css
+	a.disariyalinkller:link,
+	a.disariyalinkller:visited {
+		color: maroon;
+	}
 
 Aynı şekilde id seçicileri ile birlikte de kullanılabilirler
 
-{% highlight css %}
-a#altkisim:link{
-    font-weight: bold;
-}
-{% endhighlight %}
+	:::css
+	a#altkisim:link{
+		font-weight: bold;
+	}
 
 Pseudo sınıflarını da ikiye ayıra biliriz. **Link Pseduo Sınıfıları** ve **Dinamik Pseudo Sınıfları**
 
@@ -59,27 +55,25 @@ stil tanımlarını ziyaret edilmiş sayfa linklerine de uygular. **:visited
 -** Henüz ziyaret edilmiş sayfa linklerine stil tanımlaması yapmak için
 kullanılır.
 
-{% highlight  %}
-a:link {
-    color: blue;
-}
+	:::css
+	a:link {
+		color: blue;
+	}
 
-a:visited {
-    color: red;
-}
-{% endhighlight %}
+	a:visited {
+		color: red;
+	}
 
 Bunun yerine genelde aşağıdaki gibi bir kod da kullanılır
 
-{% highlight css %}
-a {
-    color: blue;
-}
+	:::css
+	a {
+		color: blue;
+	}
 
-a:visited {
-    color: red;
-}
-{% endhighlight %}
+	a:visited {
+		color: red;
+	}
 
 Bu kodlama ile kullanıcaya ziyaret ettiği sayfa linkleri farklı renkte gösterilerek içeriksel bir
 bilgi görsel olarak verilebilir.
@@ -110,32 +104,30 @@ imleci geldiğinde yapılacak tanımlama için Örn: bir linkin üzerine fare
 ile geldiğimizde renk değiştirmesini sağlamak için Linkler için genel
 kullanım
 
-{% highlight css %}
-a:link {
-    color: navy;
-}
+	:::css
+	a:link {
+		color: navy;
+	}
 
-a:visited {
-    color: gray;
-}
+	a:visited {
+		color: gray;
+	}
 
-a:hover {
-    color: red;
-}
+	a:hover {
+		color: red;
+	}
 
-a:active {
-    color: yellow;
-}
-{% endhighlight %}
+	a:active {
+		color: yellow;
+	}
 
 **:focus** için bir örnek verecek olursak
 
-{% highlight css %}
-input:focus {
-    background: silver;
-    font-weight: bold;
-}
-{% endhighlight %}
+	:::css
+	input:focus {
+		background: silver;
+		font-weight: bold;
+	}
 
 
 **Tarayıcı Uyumu**
@@ -151,29 +143,27 @@ Opera
 Diğer bir pseudo sınıfımız **:first-child**'dır. **first:child:**
 Belirtilen elementin ilk Çocuk Elementine stil atamak için kullanılır.
 
-{% highlight css %}
-p:first-child {
-    font-weight: bold;
-}
+	:::css
+	p:first-child {
+		font-weight: bold;
+	}
 
-li:first-child {
-    color:#f00;
-}
-{% endhighlight %}
+	li:first-child {
+		color:#f00;
+	}
 
 HTML;
 
-{% highlight html %}
-<div>
-    <p>Bu paragraf ilk çocuk elementidir ve sonuç olarak kalın olacaktır</p>
-    <ul>
-        <li>Bu liste ilk çocuk elementidir ve font rengi kırmızı olacak</li>
-        <li>Bu <strong>çocuk element </strong>değil</li>
-        <li>Bu da değil</li>
-    </ul>
-    <p>Bu pragraf <em>bir</em> çocuk element değil.</p>
-</div>
-{% endhighlight %}
+	:::html
+	<div>
+	    <p>Bu paragraf ilk çocuk elementidir ve sonuç olarak kalın olacaktır</p>
+	    <ul>
+	        <li>Bu liste ilk çocuk elementidir ve font rengi kırmızı olacak</li>
+	        <li>Bu <strong>çocuk element </strong>değil</li>
+	        <li>Bu da değil</li>
+	    </ul>
+	    <p>Bu pragraf <em>bir</em> çocuk element değil.</p>
+	</div>
 
 **Tarayıcı Uyumu**
 Firefox
@@ -188,20 +178,19 @@ Opera
 Lang pseudo sınıfı içerikteki bir elemente farklı bir dil de yazmamızı
 sağlar. Atanabilecek dil listesi ve kullanılacak kısaltmalara [ISO 639 and RFC 1776 standards][] erişebilirsiniz.
 
-{% highlight html %}
-    <html>
-    <head>
-    <title>lang test</title>
-    <style type="text/css">
-    p:lang(fr) {
-        color: red;
-    }
-    </style>
-    </head><body>
-    <p lang="fr">Bonjour le monde!</p>
-    </body>
-    </html>
-{% endhighlight %}
+	:::html
+	<html>
+	<head>
+	<title>lang test</title>
+	<style type="text/css">
+	p:lang(fr) {
+		color: red;
+	}
+	</style>
+	</head><body>
+	<p lang="fr">Bonjour le monde!</p>
+	</body>
+	</html>
 
 **Tarayıcı Uyumu**
 Firefox
@@ -217,15 +206,14 @@ CSS2.1 ile birlikte aynı seçiciye ait pseudo elemntlerini birleştirme
 özelliği de gelmiştir. Örneğin ziyaret edilmiş linklerin hover özelliği
 ile ziyaret edilmemiş linklerin hover özelliğini farklı atamak istesek
 
-{% highlight css %}
-a:link:hover {
-    color: red;
-}
+	:::css
+	a:link:hover {
+		color: red;
+	}
 
-a:visited:hover{
-    color: pink;
-}
-{% endhighlight %}
+	a:visited:hover{
+		color: pink;
+	}
 
 Sıralama önemli değildir.
 
@@ -249,15 +237,13 @@ Bir blok-level elementin ilk harfine stil tanımlması yapmak için
 kullanılır. Örnek verecek olursak h1 elementinin baş harfinin büyük
 olması için :
 
-{% highlight css %}
-h1:first-letter {
-    font-size:200%;
-}
-{% endhighlight %}
+	:::css
+	h1:first-letter {
+		font-size:200%;
+	}
 
-{% highlight html %}
-<h1>Bu büyük bir başlık</h1>
-{% endhighlight %}
+	:::html
+	<h1>Bu büyük bir başlık</h1>
 
 **Tarayıcı Uyumu**
 Firefox
@@ -272,11 +258,10 @@ Opera
 Bir metnin ilk elementine stil atamak için kullanılır. Örneğin
 paragraflarınızın ilk satırlarını renklendirmek isitiyorsunuz.
 
-{% highlight css %}
-p:first-line {
-    color: red;
-}
-{% endhighlight %}
+	:::css
+	p:first-line {
+		color: red;
+	}
 
 **Tarayıcı Uyumu**
 Firefox
@@ -292,20 +277,18 @@ Opera
 Bir elementin öncesine ve sonrasına bir içerik veya özellik eklemek için
 kullanılır. Notlarımızın başına otomatik oalrak Not yazmak için
 
-{% highlight css %}
-p.not:before {
-    content: "Not."
-}
-{% endhighlight %}
+	:::css
+	P.not:before {
+		content: "Not."
+	}
 
 kodu yeterlidir. Aynı şekilde paragraflarımzın sonuna
 otomatik bitti yazıp nokta koymak istersek
 
-{% highlight css %}
-body:after {
-    content: " Bitti.";
-}
-{% endhighlight %}
+	:::css
+	body:after {
+		content: " Bitti.";
+	}
 
 yeterlidir.
 
