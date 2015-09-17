@@ -1,6 +1,6 @@
 # Fatih Hayrioğlu'nun Not Defteri
 
-Çalışırken araştırdığım ve bulduğum bilgileri kendim ve ilgilenen herekes için aldığım notları paylaştığım web günlüğüm.
+Çalışırken araştırdığım ve bulduğum bilgileri kendim ve ilgilenen herkes için aldığım notları paylaştığım web günlüğüm.
 
 Alt yapı olarak GithubPage - Jekyll tema olarakta HPSTR Jekyll Theme kullanıyorum.
 
