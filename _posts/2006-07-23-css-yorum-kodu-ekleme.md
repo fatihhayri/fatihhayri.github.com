@@ -17,10 +17,12 @@ CSS'de yorum eklemek çok kolaydır.
 
 {% highlight css %}
 /* Genel Stiller */
-    body {
-        font-size: 67.5%;
-        /* genel font tanımı */
-    }
-/* Birden fazla satır içeren kodları bu şekilde kullanabilriz. */
+body {
+    font-size: 67.5%;
+    /* genel font tanımı */
+}
+/* Birden fazla satır 
+   içeren kodları bu şekilde 
+   kullanabilriz. */
 {% endhighlight %}
 
