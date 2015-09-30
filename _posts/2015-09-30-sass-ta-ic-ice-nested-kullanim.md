@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sass'ta iç içe(nested) kullanım
+title: Sass'ta iç içe(nested) kullanımı
 Date: 2015-09-30 10:03
 Category: css
 tags: sass css-önişlemcileri iç-içe
