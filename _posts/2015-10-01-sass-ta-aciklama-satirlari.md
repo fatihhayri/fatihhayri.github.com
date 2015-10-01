@@ -40,7 +40,7 @@ Burada şöyle bir durum var. Tek satırlık açıklama satırları CSS tarafın
 }
 {% endhighlight %}
 
-şeklinde olacaktır. CSS standardı olan açıklama satırları dururken tek satrılık açıklama satırı silinmiştir. Bu genelde istenen bir özelliktir. 
+şeklinde olacaktır. CSS standardı olan açıklama satırları dururken tek satırlık açıklama satırı silinmiştir. Bu genelde istenen bir özelliktir. 
 
 Ayrıca sass'ınızı sıkıştırıyorsanız açıklama satırlarınız sıkıştırma sırasında silinir. Silinmemesini istiyorsanız açıklama satırınız **/*!** ile başlamalıdır.
 
@@ -88,7 +88,7 @@ body {
 
 şeklinde olacaktır.
 
-## Açıklama satırı ile düzenli kod blokları
+## Açıklama satırı ile düzenli kod blokları oluşturmak
 
 Açıklama satırlarını belirli tiplere ayırarak kodlarımızı daha düzenli hale getirebiliriz. Bootstrap 4. sürümündeki örnekleri incelersek.
 
@@ -124,7 +124,7 @@ $btn-padding-y: .375rem !default
 $btn-font-weight: normal !default
 {% endhighlight %}
     
-Yukarıdaki standarda baştığımızda ana başlıklar bir boşluk sonrasında bir açıklama alanı içeriyor.
+Yukarıdaki standarda baktığımızda ana başlıklar bir boşluk sonrasında bir açıklama alanı içeriyor.
 
 **İçindekiler tablosu**
 
@@ -154,7 +154,7 @@ Kod aralarındaki açıklamalar için tek satırlık açıklama satırı eklenir
 $font-size-root: 16px !default
 {% endhighlight %}
 
-Bootstrap güzel bir örnek ancak başka örneklerde mevcut onlarıda inceleyip benzer bir yapı kurulabilir. 
+Bootstrap güzel bir örnek ancak başka örneklerde mevcut onlarıda inceleyip benzer bir yapıyı kendi projelermize entegre edebiliriz.
 
 Kalın sağlıcakla.
 
