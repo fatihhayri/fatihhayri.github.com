@@ -17,102 +17,107 @@ kısmı geçip sonrasına devam ediyoruz.
 Kaldığımız yerden devam edersek. Linkleri yatay olarak dizmek için
 **display:inline** özelliğini kullanıyoruz:
 
-	:::css
-	ul.menu {
-	    list-style-type: none;
-	    padding: 0;
-	    margin: 0;
-	}
+{% highlight css %}
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-	ul.menu li {
-		display: inline;
-	}
+ul.menu li {
+	display: inline;
+}
+{% endhighlight %}
 
 ![][100]
 
 Linklerin altındaki çizgileri kaldırıyoruz:
 
-	:::css
-	ul.menu {
-	    list-style-type: none;
-	    padding: 0;
-	    margin: 0;
-	}
+{% highlight css %}
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-	ul.menu li {
-		display: inline;
-	}
+ul.menu li {
+	display: inline;
+}
 
-	ul.menu li a {
-		text-decoration: none;
-	}
+ul.menu li a {
+	text-decoration: none;
+}
+{% endhighlight %}
 
 ![][1]
 
 Linkler arasına biraz boşluk veriyoruz:
 
-	:::css
-	ul.menu {
-	    list-style-type: none;
-	    padding: 0;
-	    margin: 0;
-	}
+{% highlight css %}
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-	ul.menu li {
-		display: inline;
-	}
+ul.menu li {
+	display: inline;
+}
 
-	ul.menu li a {
-	    text-decoration: none;
-	    padding: .2em 1em;
-	}
+ul.menu li a {
+    text-decoration: none;
+    padding: .2em 1em;
+}
+{% endhighlight %}
 
 ![][2]
 
 Menüyü biraz renklendiriyoruz:
 
-	:::css
-	ul.menu {
-	    list-style-type: none;
-	    padding: 0;
-	    margin: 0;
-	}
+{% highlight css %}
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-	ul.menu li {
-		display: inline;
-	}
+ul.menu li {
+	display: inline;
+}
 
-	ul.menu li a {
-	  text-decoration: none;
-	  padding: .2em 1em;
-	  color: #1B1B1B;
-	  background-color: #E2E2E2;
-	}
+ul.menu li a {
+  text-decoration: none;
+  padding: .2em 1em;
+  color: #1B1B1B;
+  background-color: #E2E2E2;
+}
+{% endhighlight %}
 
 ![][3]
 
 Son olarakta rollover efekti vermek için **a:hover** özelliğine renk
 atıyoruz:
 
-	:::css
-	ul.menu {
-	    list-style-type: none;
-	    padding: 0;
-	    margin: 0;
-	}
-	ul.menu li {
-		display: inline;
-	}
-	ul.menu li a {
-	    text-decoration: none;
-	    padding: .2em 1em;
-	    color: #1B1B1B;
-	    background-color: #E2E2E2;
-	}
-	ul.menu li a:hover
-	{
-	background-color: #999;
-	}
+{% highlight css %}
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.menu li {
+	display: inline;
+}
+ul.menu li a {
+    text-decoration: none;
+    padding: .2em 1em;
+    color: #1B1B1B;
+    background-color: #E2E2E2;
+}
+ul.menu li a:hover
+{
+background-color: #999;
+}
+{% endhighlight %}
 
 Sonuç işte:
 
