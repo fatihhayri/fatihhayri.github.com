@@ -56,7 +56,7 @@ kodlarımızı başlamalıyız.(Bende bunu ara sıra unutuyorum. Ama unutmamak
 gerekli)
 
 {% highlight css %}
-/************************************************
+/********************************************
 MYK Medya - http://myk-medya.com/ yahoyt.com
 fatih hayrioglu
 28 Mayis 2009

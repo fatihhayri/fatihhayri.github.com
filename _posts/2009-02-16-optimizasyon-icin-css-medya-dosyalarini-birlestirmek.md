@@ -21,34 +21,37 @@ basit yöntem css ve js dosyalarını birleştirmekten geçiyor.
 Genelde projelermizde css dosyalarımızı genel stil için ve yazıcı için
 olmak üzere ikiye ayırıyoruz.
 
-	:::html
-	<link rel="stylesheet" href="/style/iskelet.css" type="text/css" media="screen"></link>
-	<link rel="stylesheet" href="/style/yazici.css" type="text/css" media="print"></link>
+{% highlight html %}
+<link rel="stylesheet" href="/style/iskelet.css" type="text/css" media="screen"></link>
+<link rel="stylesheet" href="/style/yazici.css" type="text/css" media="print"></link>
+{% endhighlight %}
 
 Normal ve çıktı almak için bunları bir css dosyasında birleştirerek HTTP istek sayısını azaltabiliriz.
 
-	:::html
-	<link rel="stylesheet" href="/style/iskelet.css" type="text/css"></link>
+{% highlight html %}
+<link rel="stylesheet" href="/style/iskelet.css" type="text/css"></link>
+{% endhighlight %}
 
 gibi iskelet.css içeriğinin yapısı ise aşağıdaki gibi olacaktır.
 
-	:::css
-	/* all media */
-	@media all {
-		body {
-			color:#666;
-			font:13px arial, helvetica, sans-serif;
-			padding:20px 0 30px 0;
-			}
-	}
+{% highlight css %}
+/* all media */
+@media all {
+    body {
+        color:#666;
+        font:13px arial, helvetica, sans-serif;
+        padding:20px 0 30px 0;
+        }
+}
 
-	@media print {
-		body {
-			color:#000;
-			font:12px arial, helvetica, sans-serif;
-			padding:0;
-			}
-	}
+@media print {
+    body {
+        color:#000;
+        font:12px arial, helvetica, sans-serif;
+        padding:0;
+        }
+}
+{% endhighlight %}
 
 şeklinde yaparak css dosyalarımızı tek dosya içerisinde toplayabiliriz. Daha fazla sayıda css
 dosyası kullanmamız durumunda ise sunucu veya istemci taraflı kod

@@ -13,19 +13,22 @@ görmüştüm. İnternet Explorer 8'in hızlı yayılması ile alakalı.
 Burada ie8'de css düzeltmesi yapmamız gerektiğinde nasıl bir yol
 izleyeceğimiz konusunda bir ipucu vereceğim.
 
-	:::css
-	.uyari {
-		color /***/: red9
-	}
+{% highlight css %}
+.uyari {
+    color /***/: red9
+}
+{% endhighlight %}
 
 
 Bir çok yerde bu kodun tek başına ie8 için yeterli olduğu yazıyor. Ama
 ben test ettiğimde ie7'de bu kodu görüyor. Bunun için
 
-	:::css
-	.uyari{color:blue} /* tum taricilar */
-    .uyari { color /*\**/: red\9 } /* ie8 ve ie 7 */
-    *+html .uyari{color:blue} /* ie 7 */
+
+{% highlight css %}
+.uyari{color:blue} /* tum taricilar */
+.uyari { color /*\**/: red\9 } /* ie8 ve ie 7 */
+*+html .uyari{color:blue} /* ie 7 */
+{% endhighlight %}
 
 Şeklinde bir çözüm işimize yaracaktır.
 
@@ -33,20 +36,22 @@ ben test ettiğimde ie7'de bu kodu görüyor. Bunun için
 
 Ayrıca şartlı yorumlar yardımı ile de yapabiliriz.
 
-	:::html
-	<!–[if gte IE 8]>
-		<style type="text/css">
-		.uyari {
-			color: red;
-		}
-	    </style>
-	<![endif]–>
+{% highlight html %}
+<!–[if gte IE 8]>
+    <style type="text/css">
+    .uyari {
+        color: red;
+    }
+    </style>
+<![endif]–>
+{% endhighlight %}
 
 
 Ayrıca daha önce bahsettiğimiz ie7 gibi yorumlama kodu var.
 
-	:::html
-	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+{% highlight html %}
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+{% endhighlight %}
 
 Testlerimi [ietester][] ile yaptım.
 

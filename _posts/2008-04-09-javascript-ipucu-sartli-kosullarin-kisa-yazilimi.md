@@ -13,10 +13,14 @@ yardımı dokunur bir ihtimal diye yazıyorum.
 
 Javascript'te if..else şartlı ifadesini herkes biliyor.
 
-	:::javascript
-	 if(kosul) { //kosulun gerçekleşmesi
-halinde olacak olay } else{ //kosulun gerçekleşmemesi halinde olacak
-olay }
+{% highlight javascript %}
+if(kosul) { 
+  //kosulun gerçekleşmesi halinde olacak olay 
+} 
+else { 
+  //kosulun gerçekleşmemesi halinde olacak olay 
+}
+{% endhighlight %}
 
 Bu kodu bir kere yazmak sorun değil ama bir çok programcı bilir ki bu
 bir kodlama da sadece bir kere yazılmaz ve çok fazla yazıncada bıkkınlık
@@ -31,14 +35,14 @@ kısa bir yazım şekli sunmuşlar.
 
 Bir örnek yapalım.
 
-	:::javascript
-	 durum = (yas >= 18) ? "yetişkin" :
-"küçük";
+{% highlight javascript %}
+durum = (yas >= 18) ? "yetişkin" : "küçük";
+{% endhighlight %}
 
 **yas** değeri 18'den büyük ve eşit olması durumunda **durum**
 değişikeninin değeri "yetişkin" değilse "küçük" olacaktır.
 
-#### Kaynaklar
+## Kaynaklar
 
 -   [http://javascriptant.com/articles/28/the-conditional-operator-ternary-operactor][]
 -   [http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Guide:Operators:Special_Operators][]

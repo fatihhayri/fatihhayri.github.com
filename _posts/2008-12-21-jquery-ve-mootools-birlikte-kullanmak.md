@@ -12,10 +12,12 @@ multibox lightbox kolonunu kullandım. Tabi jquery ve mootools ile
 birlikte kullanmamdan dolayı hata vermeye başladı. Çözüm çok basit $
 işareti yerine jQuery yazmak yeterli.
 
-	:::javascript
-	$.ajax
+{% highlight javascript %}
+$.ajax
+{% endhighlight %}
 
 yerine
 
-	:::javascript
-	jQuery.ajax
+{% highlight javascript %}
+jQuery.ajax
+{% endhighlight %}

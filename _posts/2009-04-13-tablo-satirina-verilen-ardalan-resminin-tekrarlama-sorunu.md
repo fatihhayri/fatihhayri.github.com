@@ -12,11 +12,12 @@ Google Chrome) sorun çıkarıyor. Biz burada Internet Explorer için nasıl
 bir çözüm üretebiliriz onu göstereceğiz. Webkit tabanlı tarayıcılar için
 çözüm bulamadım üzgünüm.
 
-	:::css
-	table tr{
-		background:url(images/southpark.gif) 0 0 no-repeat;
-		height:130px;
-	}
+{% highlight css %}
+table tr{
+    background:url(images/southpark.gif) 0 0 no-repeat;
+    height:130px;
+}
+{% endhighlight %}
 
 ![İE de hatalı resmi][]
 
@@ -24,18 +25,19 @@ bir çözüm üretebiliriz onu göstereceğiz. Webkit tabanlı tarayıcılar iç
 sorunsuz çalışırken IE ve Webkit tabanlı tarayıcılarda sorun
 çıkaracaktır. Çözüm için
 
-	:::css
-	table tr{
-		background:url(images/southpark.gif) 0 0 no-repeat;
-		height:130px;
-		position:relative;
-	}
+{% highlight css %}
+table tr{
+    background:url(images/southpark.gif) 0 0 no-repeat;
+    height:130px;
+    position:relative;
+}
 
-	table tr td{
-		color:#fff;
-		font:12px Arial, Helvetica, sans-serif;
-		background:none;
-	}
+table tr td{
+    color:#fff;
+    font:12px Arial, Helvetica, sans-serif;
+    background:none;
+}
+{% endhighlight %}
 
 ![İE düzeltişmiş görüntüsü][]
 

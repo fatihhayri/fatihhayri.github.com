@@ -11,7 +11,8 @@ Firefox İnternet Explorer'un tersine eğer sayfa yüksekliği kaydırma
 çıkarmıyor. Bu özellikle çerçeveli sayfalarda sorun çıkarabilir. Bunun
 için bir çözüm.
 
-	:::css
-	html{
-		overflow:-moz-scrollbars-vertical;
-	}
+{% highlight css %}
+html{
+    overflow:-moz-scrollbars-vertical;
+}
+{% endhighlight %}

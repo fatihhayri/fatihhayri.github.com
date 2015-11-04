@@ -17,15 +17,16 @@ Explorer'un(8. sürüm dahil) desteğinin söz konusu olmaması.
 
 Kodlama çok basit
 
-	:::css
-	::-moz-selection {
-	    background:#c00;
-	    color:#fff;
-	}
-	::selection {
-	    background:#c00;
-	    color:#fff;
-	}
+{% highlight css %}
+::-moz-selection {
+    background:#c00;
+    color:#fff;
+}
+::selection {
+    background:#c00;
+    color:#fff;
+}
+{% endhighlight %}
 
 
 Kodlamanın birinci kısmı(**::-moz-selection**) mozilla tabanlı yani
@@ -35,16 +36,17 @@ Webkit tabanlı tarayıcılar ve Opera 9.5 bu kodu destekliyor.
 Ayrıca diğer seçicilerede bunu uygulayabiliyoruz. Bağlantılar için
 farklı bir renk tanımlayalım mesela
 
-	:::css
-	a::-moz-selection {
-	    background:#1259C7;
-	    color:#fff;
-	}
+{% highlight css %}
+a::-moz-selection {
+    background:#1259C7;
+    color:#fff;
+}
 
-	a::selection {
-	    background:#1259C7;
-	    color:#fff;
-	}
+a::selection {
+    background:#1259C7;
+    color:#fff;
+}
+{% endhighlight %}
 
 Örnek olarak bu sitede herhangi bir metni seçince göreceksiniz.
 

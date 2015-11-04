@@ -18,22 +18,23 @@ içerik yapımı jQuery ile çok basit. Bunu burada beraber göreceğiz.
 
 XHTML kodumuz:
 
-	:::html
-	<div class="sekmeAlani">
-	<!--[if !IE]>sekmeler<![endif]-->
-	<ul class="sekmeler">
-	<li class="s1"><a href="javascript:void(0);" class="s1">Sekme1</a></li>
-	<li class="s2"><a href="javascript:void(0);" class="s2">Sekme2</a></li>
-	<li class="s3"><a href="javascript:void(0);" class="s3">Sekme3</a></li>
-	<li class="s4"><a href="javascript:void(0);" class="s4">Sekme4</a></li>
-	</ul>
+{% highlight html %}
+<div class="sekmeAlani">
+<!--[if !IE]>sekmeler<![endif]-->
+<ul class="sekmeler">
+<li class="s1"><a href="javascript:void(0);" class="s1">Sekme1</a></li>
+<li class="s2"><a href="javascript:void(0);" class="s2">Sekme2</a></li>
+<li class="s3"><a href="javascript:void(0);" class="s3">Sekme3</a></li>
+<li class="s4"><a href="javascript:void(0);" class="s4">Sekme4</a></li>
+</ul>
 
-	<!--[if !IE]>sekme icerikleri<![endif]-->
-	<div class="s1">...</div>
-	<div class="s2">...</div>
-	<div class="s3">...</div>
-	<div class="s4">...</div>
-	</div>
+<!--[if !IE]>sekme icerikleri<![endif]-->
+<div class="s1">...</div>
+<div class="s2">...</div>
+<div class="s3">...</div>
+<div class="s4">...</div>
+</div>
+{% endhighlight %}
 
 
 Burada aslında href="javascript:void(0);" özelliğini kullanmayabiliriz,
@@ -46,25 +47,27 @@ Hemen uygulamaya geçersek.
 Kodumuza jQuery kütüphanesini ekleyelim. Firefox'un YSlow eklentisinin
 belirttiği gibi javascript kodlarını sayfamızın altına koyalım.
 
-	:::html
-	<script type="text/javascript" src="jquery.js"></script>
-  	</body>
-  	</html>
+{% highlight html %}
+<script type="text/javascript" src="jquery.js"></script>
+</body>
+</html>
+{% endhighlight %}
 
 jQuery kodumuzu yazmaya başlayalım. Mantık olarak sekmeli menüler olsun,
 sekmeli içerikler olsun aynıdır. Sekmelere tıklayınca o sekmeye ait
 içerikler görünecek, diğerleri görünmez olacaktır. bu mantığa göre
 kodumuzu yazalım.
 
-	:::javascript
-	$(document).ready(function() {
-	  $('div.sekmeAlani ul.sekmeler li a').click(function(){
-	     $(this).parent('li').addClass('sekmeSecili').siblings().removeClass('sekmeSecili');
-	     var mevcutSinif = this.className.slice(0,2);
-	     $('div.sekmeAlani > div').hide().filter('div.'+mevcutSinif).show();
-	   });
-	  $('.sekmeAlani ul.sekmeler li a:first').click();
-	});
+{% highlight javascript %}
+$(document).ready(function() {
+  $('div.sekmeAlani ul.sekmeler li a').click(function(){
+     $(this).parent('li').addClass('sekmeSecili').siblings().removeClass('sekmeSecili');
+     var mevcutSinif = this.className.slice(0,2);
+     $('div.sekmeAlani > div').hide().filter('div.'+mevcutSinif).show();
+   });
+  $('.sekmeAlani ul.sekmeler li a:first').click();
+});
+{% endhighlight %}
 
 Kodumuz sadece bu kadar.
 

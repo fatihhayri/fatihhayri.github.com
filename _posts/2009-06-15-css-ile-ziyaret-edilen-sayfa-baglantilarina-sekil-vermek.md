@@ -31,10 +31,11 @@ değiştirmediğimiz müddetçe. Biz bağlantıya genel tanım yaptığımızda 
 özellik bir bakıma göz ardı edilecektir. Bir çok projede bu tanımlamayı
 yazpıyoruz.
 
-	:::css
-	a{
-		color:#f00;
-	}
+{% highlight css %}
+a {
+    color:#f00;
+}
+{% endhighlight %}
 
 ![genel_bag_renk][]
 
@@ -44,10 +45,11 @@ ziyaret edilmiş sayfa stilinide belirler.
 Bizim amacımız ziyaret edilmiş bağlantıları farklı stil ile belirterek
 ayrımı göstermek. Bir çok yerde  yazı üstünü çizerek belirlenir.
 
-	:::css
-	a:visited {
-		text-decoration: line-through;
-	}
+{% highlight css %}
+a:visited {
+    text-decoration: line-through;
+}
+{% endhighlight %}
 
 ![ziy_sayfa_uzeri_ciz][]
 
@@ -57,13 +59,14 @@ Diğer bir yöntemde ardalan resmi koymak. Bu yöntem ile hoş bir görüntüde
 sağlamış oluyoruz. [http://www.evalotta.net/][] sitesi buna çok güzel
 bir örnek.
 
-	:::css
-	a:visited {
-		padding-right:20px;
-		background:url(images/ziyaret_edilmis_baglanti.gif) right top no-repeat;
-		color:#666;
-		text-decoration:none;
-	}
+{% highlight css %}
+a:visited {
+    padding-right:20px;
+    background:url(images/ziyaret_edilmis_baglanti.gif) right top no-repeat;
+    color:#666;
+    text-decoration:none;
+}
+{% endhighlight %}
 
 ![ziy_sayfa_oki][]
 
