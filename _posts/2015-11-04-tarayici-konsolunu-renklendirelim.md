@@ -13,10 +13,10 @@ Bir yerden sonra **console.log** ile konsola bastığım değerler arasından ba
 ![console log](http://fatihhayrioglu.com/images/console-log-1.png)
 
 {% highlight javascript %}
-console.log('%c top ' + bottomScrolling, 'background:red; color: white; font-size: 14px');
+console.log('%c Şampiyon Trabzonspor', 'background: #379DE8; color: #550329; font-size: 24px');
 {% endhighlight %}
 
-**console.log** içindeki ilk virgüle kadar olan yer içeriği, virgülden sonraki kısımda konsolda görünecek alana atadığımız css kodlarını gösteriyor. CSS ile yapıyor olmak süper. Şimdi süper oldu.
+**console.log** içindeki ilk virgüle kadar olan yer içeriği, virgülden sonraki kısımda konsolda görünecek alana atadığımız css kodlarını gösteriyor. CSS ile yapıyor olmak süper. Şimdi süper oldu. Dikkat edilecek husus ilk bloka **%c** ile başlamalıyız.
 
 ![console log renkli](http://fatihhayrioglu.com/images/console-log-2.png)
 
