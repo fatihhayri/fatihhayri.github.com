@@ -99,18 +99,18 @@ Renklendirme için konfigürasyon dosyasına ~/.gitconfig aşağıdaki kodları 
   diff = auto
   status = auto
 
-[color &quot;branch&quot;]
+[color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
 
-[color &quot;diff&quot;]
+[color "diff"]
   meta = yellow bold
   frag = magenta bold
   old = red bold
   new = green bold
 
-[color &quot;status&quot;]
+[color "status"]
   added = yellow
   changed = green
   untracked = cyan

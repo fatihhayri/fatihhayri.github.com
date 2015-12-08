@@ -14,16 +14,18 @@ inceleyelim.
 
 ## 1- Genişleyebilir blok-level elementleri ortalamak
 
-	:::css
-	.ortala {
-		margin-left: 10%;
-		margin-right:10%;
-	}
+{% highlight css %}
+.ortala {
+	margin-left: 10%;
+	margin-right:10%;
+}
+{% endhighlight %}
 
 HTML kodu;
 
-	:::html
-	<p class="ortala">Lorem Ipsum is simply dummy text of the printing and typesettingindustry. </p>
+{% highlight html %}
+<p class="ortala">Lorem Ipsum is simply dummy text of the printing and typesettingindustry. </p>
+{% endhighlight %}
 
 Genişliği sabit olmayan, genişleyebilir blok-level elementlerin
 ortalanması için bu metod kullanılır. Tüm web tarayıcılı bu metodu
@@ -40,12 +42,13 @@ W3C'de bu konu hakkında şu ifade mevcuttur: **"Eğer margin-left ve
 margin-right değerleri auto verilirse bu blokun ortalanması anlamına
 gelir."**
 
-	:::css
-	.ortala2 {
-		margin-left: auto;
-		margin-right: auto;
-		width: 50em;
-	}
+{% highlight css %}
+.ortala2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
+}
+{% endhighlight %}
 
 NN4 (Mac and Win), Win/IE4, Win/IE5, Win/IE5.5, Win/IE6 (Garip mod :
 quirks-mode) web tarayıcılıar bu kodu desteklememektedir.
@@ -56,34 +59,35 @@ hariç)
 Bu metodu desteklemeyen web tarayıcıları için body etiketine
 **text-align:center** ataması yaptığımızda sorun çözülmüş demektir.
 
-	:::css
-	body {
-		text-align: center;
-	}
+{% highlight css %}
+body {
+	text-align: center;
+}
 
-	.ortala2 {
-		margin-left: auto;
-		margin-right: auto;
-		width: 50em;
-	}
+.ortala2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
+}
+{% endhighlight %}
 
 Yanlız bir sorunumuz daha var. **text-align:center** ataması body
 içindeki tüm elementlerin ortalanmasına neden olacaktır. Bunu engellemek
 için bir katman oluşturup bu katman da hizalama değerini başlangıç
 değerine(yani sola yaslamalıyız) çevirmeliyiz.
 
-	:::css
-	body {
-		text-align: center;
-	}
+{% highlight css %}
+body {
+	text-align: center;
+}
 
-	.ortala2 {
-		margin-left: auto;
-		margin-right: auto;
-		width: 50em;
-		text-align: left;
-	}
-
+.ortala2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
+	text-align: left;
+}
+{% endhighlight %}
 
 Bu kodlama tüm web tarayıcılarında çalışacaktır.(NN4 hariç)
 
@@ -96,13 +100,14 @@ kullanmaya gerek yoktur. Genişlik tanımı yapılan göreceli
 konumlandırılmış elementin **margin-left** değeri element genişliğinin
 yarısı(1/2) kadar verilerek sağlanır.
 
-	:::css
-	.ortala3 {
-		width: 720px;
-		position: relative;
-		left: 50%;
-		margin-left: -360px;
-	}
+{% highlight css %}
+.ortala3 {
+	width: 720px;
+	position: relative;
+	left: 50%;
+	margin-left: -360px;
+}
+{% endhighlight %}
 
 Burada sizlere bir iki metodla element ortalamayı gösterdik. Siz
 kullandığınız yer ve ihtiyaçlarınıza göre bunlardan birini
