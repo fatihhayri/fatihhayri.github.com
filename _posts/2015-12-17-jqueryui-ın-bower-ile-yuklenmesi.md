@@ -45,7 +45,9 @@ Aşağıdaki gibi bir yol izlemek gerekiyor çözüm için.
 </script>
 {% endhighlight %}
 
-Siz istediğiniz elemanı eklerken hangi çekirdek koda ihtiyacı olduğunu **bower_components/jquery-ui/ui/** klasörü içindeki eklemek istediğiniz elemanın ilgili dosyasını açın. Örneğin sıralama ( sorting ) için **sortable.js**
+İstediğiniz elemanı eklerken hangi çekirdek koda ihtiyacımız olduğunu nasıl anlayacağız. 
+
+**bower_components/jquery-ui/ui/** klasörü içindeki eklemek istediğiniz elemanın ilgili dosyasını açın. Örneğin sıralama ( sorting ) için **sortable.js**
 
 {% highlight javascript %}
 (function( factory ) {
@@ -60,6 +62,8 @@ if ( typeof define === "function" && define.amd ) {
 		], factory );
 ....
 {% endhighlight %}
+
+Yukarıdaki kod kısmında ihtiyacı olan çekirdek eleman listesi var. Bunu kullanacağız.
 
 Aynı şekilde tüm elemanlara uygulanabilir.
 
