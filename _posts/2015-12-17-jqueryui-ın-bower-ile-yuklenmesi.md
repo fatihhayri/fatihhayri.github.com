@@ -32,6 +32,8 @@ Peki bower ile eklerken nasıl oluyor?
 
 Mesela sadece sıralama işi için kullanacağımız dosyaları yüklemek istediğimizde ne yapmalıyız. 
 
+Aşağıdaki gibi bir yol izlemek gerekiyor çözüm için.
+
 {% highlight html %}
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/jquery-ui/ui/core.js"></script>
