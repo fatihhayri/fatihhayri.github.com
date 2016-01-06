@@ -29,16 +29,18 @@ kullanılacaktır.
 bildiğimiz link ekleme koduna fazladan sadece **media** kısmı eklenerek
 değeri **print** atanır.
 
-	:::html
-	<link rel="stylesheet" type="text/css" href="ciktistil.css" media="print">
+{% highlight html %}
+<link rel="stylesheet" type="text/css" href="ciktistil.css" media="print">
+{% endhighlight %}
 
 Diğer bir yöntemde import kullanımıdır.
 
-	:::css
-	<style type="text/css">
-    	@import url("webicin.css") screen;
-    	@import url("ciktial.css") print;
-	</style>
+{% highlight html %}
+<style type="text/css">
+  @import url("webicin.css") screen;
+  @import url("ciktial.css") print;
+</style>
+{% endhighlight %}
 
 ## Çıktıya Uygun CSS Hazırlarken Dikkat Edilecek Hususlar
 
@@ -51,22 +53,24 @@ kullanılmalıdır(Times New Roman veya Garamond gibi) Örneğin sayfa
 içindeki h1 veya p için yapılan sans-serfi fontları serif fontlarla
 değiştirelim.
 
-	:::css
-	h1, p {
-		font-family: Garamond, "Times New Roman", Times, serif;
-	}
+{% highlight css %}
+h1, p {
+  font-family: Garamond, "Times New Roman", Times, serif;
+}
+{% endhighlight %}
 
 Web için verilen değerler **px** veya **em** yerine **pt** değeri
 kullanılmalıdır. Çıktı alırken daha iyi sonuçlar verir.
 
-	:::css
-	h1 {
-		font: 24pt Garamond, "Times New Roman", Times, serif;
-	}
+{% highlight css %}
+h1 {
+  font: 24pt Garamond, "Times New Roman", Times, serif;
+}
 
-	p {
-		font: 12pt Garamond, "Times New Roman", Times, serif;
-	}
+p {
+  font: 12pt Garamond, "Times New Roman", Times, serif;
+}
+{% endhighlight %}
 
 Ayrıca **line-height** değeri, **font-weight** değeri, **word-spacing**
 ve **text-align** değerlerini de çıktı ama durumu için düzenlemeliyiz.
@@ -85,10 +89,11 @@ Bir elementin **display** özelliğini "**none**" yaparak çıktı alırken
 görütülenmesini engelleriz. Örneğin solmenu için #SolMenu tanımlması
 yapmış isek
 
-	:::css
-	#SolMenu{
-		display:none
-	}
+{% highlight css %}
+#SolMenu{
+  display:none
+}
+{% endhighlight %}
 
 kodu ile bu bölümü çıktı alırken görüntü dışında bırakacağız. Bu yöntemi
 formlar, menüler, bannerlar, ana resimler hariç diğer resimler vb.
@@ -99,27 +104,28 @@ gereksiz bölümleri bu şekilde çıkarmalıyız.
 Çıktı alırken yazıların tabloları ve diğer elementlerin daha açık ve net
 görünmesi için aralarına belirli mesafeler vermeliyiz.
 
-	:::css
-	table {
-		margin-top:10px;
-	}
+{% highlight css %}
+table {
+  margin-top:10px;
+}
 
-	div {
-		margin:10px
-	}
+div {
+  margin:10px
+}
+{% endhighlight %}
 
 Çıktı alacağımız sayfalarda **px** vd. birimler yerine **inç** birimini
 kullanmak daha iyi sonuçlar verir.
 
-	:::css
-	table{
-		margin:sin
-	}
+{% highlight css %}
+table{
+  margin:sin
+}
 
-	div{
-		margin:1in
-	}
-
+div{
+  margin:1in
+}
+{% endhighlight %}
 
 Renklerle ilgili olarakta şunu söyleyebilriz ki, web sitelerinde bir çok
 renk kullanılır ancak bu renklerin çıktı alırken görünümü web
