@@ -43,21 +43,22 @@ değinmeyeceğiz.
 
 İlk olarak XHTML kodlarını yazalım.
 
-	:::html
-	<div id="sayfa">
-	<div id="ustAlan">
-	...
-	</div>
-	<div id="icerik">
-	...
-	</div>
-	<div id="anaMenu">
-	...
-	</div>
-	<div id="altAlan">
-	...
-	</div>
-	</div>
+{% highlight html %}
+<div id="sayfa">
+  <div id="ustAlan">
+  ...
+  </div>
+  <div id="icerik">
+  ...
+  </div>
+  <div id="anaMenu">
+  ...
+  </div>
+  <div id="altAlan">
+  ...
+  </div>
+</div>
+{% endhighlight %}
 
 Önemli bir nokta varki oda **icerik** alanının **anaMenu**'den önce
 gelmesi gerekmektedir. Erişebilirlilik(yani tüm araçlarda sayfamızın en
@@ -66,35 +67,35 @@ gelmesi gerekir. Çünkü pda ve cep telefonu gibi araçlarda katmanların
 sıralamasına göre ekranda görüneceğinden, ilk olarak içerik alanının
 görünmesi tercih sebebidir. şžimdi css kodumuzu yazarsak:
 
-	:::css
-	#sayfa
-	{
-		width:768px;
-	}
+{% highlight css %}
+#sayfa
+{
+  width:768px;
+}
 
-	#ustAlan
-	{
-		width: 768px;
-	}
+#ustAlan
+{
+  width: 768px;
+}
 
-	#icerik
-	{
-	    float: right;
-	    width: 568px;
-	}
+#icerik
+{
+    float: right;
+    width: 568px;
+}
 
-	#anaMenu
-	{
-	    float: left;
-	    width: 200px;
-	}
+#anaMenu
+{
+    float: left;
+    width: 200px;
+}
 
-	#altAlan
-	{
-	    width: 768px;
-	    clear: both;
-	}
-
+#altAlan
+{
+    width: 768px;
+    clear: both;
+}
+{% endhighlight %}
 
 Bu kodu yazdıktan sonra sayfamız başta gördüğümüz şekildeki duruma
 gelmiş bulunmaktadır. Burada yazdığımız kodda **"icerik**" alanının
@@ -105,12 +106,12 @@ altında kalması için **clear:both** tanımlaması yapılmıştır.
 CSS ile sayfalarımızı ve elementlerimizi ortalamak][] bölümündeki metodu uygulayarak sayfamızı
 ortalayabilriz.
 
-	:::css
-	#sayfa{
-	    width: 768px;
-	    margin:0 auto;
-	}
-
+{% highlight css %}
+#sayfa{
+    width: 768px;
+    margin:0 auto;
+}
+{% endhighlight %}
 
 Örnek kodları görmek için [tıklayınız.][]
 
@@ -134,34 +135,35 @@ Web tarayıcısının genişliği arttırıldığında sayfa genişliği artacak
 tarayıcısının genişliği azaltıldığında sayfa genişli azalacaktır. Kodu
 yazarsak:
 
-	:::css
-	#sayfa{
-	    width:83%;
-	    margin:0 auto;
-	}
+{% highlight css %}
+#sayfa{
+    width:83%;
+    margin:0 auto;
+}
 
-	#ustAlan
-	{
-		width: 100%;
-	}
+#ustAlan
+{
+  width: 100%;
+}
 
-	#anaMenu
-	{
-	    float: left;
-	    width: 30%;
-	}
+#anaMenu
+{
+    float: left;
+    width: 30%;
+}
 
-	#icerik
-	{
-	    float: right;
-	    width: 70%;
-	}
+#icerik
+{
+    float: right;
+    width: 70%;
+}
 
-	#altAlan
-	{
-	    width: 100%;
-	    clear: both;
-	}
+#altAlan
+{
+    width: 100%;
+    clear: both;
+}
+{% endhighlight %}
 
 Örnek kodu görmek için [tıklayınız.][1]
 
@@ -175,69 +177,66 @@ yapıyı iki kolonlu bölümlere ayırmaktır, bunun için sağdaki iki kolonu
 bir kapsayıcı katman(KapsayiciAlan) içine alarak yapıyı iki kolonlu hale
 getirdik(anaMenu ve KapsayiciAlan)
 
-	:::css
-	#sayfa{
-	    width:768px;
-	    margin:0 auto;
-	}
+{% highlight css %}
+#sayfa {
+    width:768px;
+    margin:0 auto;
+}
 
-	#ustAlan
-	{
-		width:768px;
-	}
+#ustAlan {
+  width:768px;
+}
 
-	#anaMenu
-	{
-	    float: left;
-	    width: 200px;
-	}
+#anaMenu {
+    float: left;
+    width: 200px;
+}
 
-	#KapsayiciAlan
-	{
-	    float: right;
-	    width: 568px;
-	}
+#KapsayiciAlan {
+    float: right;
+    width: 568px;
+}
 
-	#icerik
-	{
-	    float: left;
-	    width: 368px;
-	}
+#icerik {
+    float: left;
+    width: 368px;
+}
 
-	#BannerAlani{
-	    float: right;
-	    width: 200px;
-	}
+#BannerAlani {
+    float: right;
+    width: 200px;
+}
 
-	#altAlan
-	{
-	    width:768px;
-	    clear: both;
-	}
+#altAlan {
+    width:768px;
+    clear: both;
+}
+{% endhighlight %}
 
 Ve ayrıca xhtml koda da aşağıdaki değişiklikleri yaptığımızda üç kolonlu
 yapıyı elde ederiz.
 
-	:::html
-	<div id="sayfa">
-	<div id="ustAlan">
-	...
-	</div>
-	<div id="KapsayiciAlan">
-	<div id="icerik">
-	...
-	</div>
-	<div id="BannerAlani">
-	...
-	</div>
-	</div>
-	<div id="anaMenu">
-	...
-	</div>
-	<div id="altAlan">
-	...
-	</div>
-	</div>
+{% highlight html %}
+<div id="sayfa">
+  <div id="ustAlan">
+  ...
+  </div>
+  <div id="KapsayiciAlan">
+    <div id="icerik">
+    ...
+    </div>
+    <div id="BannerAlani">
+    ...
+    </div>
+  </div>
+  <div id="anaMenu">
+  ...
+  </div>
+  <div id="altAlan">
+  ...
+  </div>
+</div>
+{% endhighlight %}
 
 Örneği görmek için [tıklayınız.][3]
 
