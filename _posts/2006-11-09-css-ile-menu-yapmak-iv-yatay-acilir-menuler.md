@@ -6,44 +6,48 @@ Category: CSS, Web Standartları, XHTML
 tags: CSS, css-menü, float, liste, menü, Web Standartları, XHTML, Yatay Açılır Menüler
 ---
 
+**Güncelleme:** Bu makale 08/01/2016 tarihinde yeniden düzenlenmiştir. IE için yazılan script'e gerek kalmadı.
+
 **Güncelleme:** Bu makale bazı sorunlar nedeni ile 19/12/2006 tarihinde
 yeniden düzenlenmiştir.
 
 [Bir önceki makalede][] dikey açılır menüleri gördük. Bu makalede yatay
 açılır menülere bir örnek vereceğiz. Html kodumuz aynı olsun
 
-	:::html
-	<ul id="menu" >
-	    <li><a href="#">Anasayfa</a></li>
-	    <li><a href="#">Haberler</a>
-	    <ul>
-	        <li><a href="#">şirket Haberleri </a></li>
-	        <li><a href="#">Yurt içi Haberleri </a></li>
-	        <li><a href="#">Yurt dışı Haberleri</a></li>
-	    </ul>
-	    </li>
-	    <li><a href="#">Ürünler</a>
-	    <ul>
-	        <li><a href="#">Tencere</a></li>
-	        <li><a href="#">Tava</a></li>
-	        <li><a href="#">Ütü</a></li>
-	        <li><a href="#">Tost Makinesi </a></li>
-	        <li><a href="#">El Süpürgesi </a></li>
-	    </ul>
-	    </li>
-	</ul>
+{% highlight html %}
+<ul id="menu" >
+    <li><a href="#">Anasayfa</a></li>
+    <li><a href="#">Haberler</a>
+    <ul>
+        <li><a href="#">şirket Haberleri </a></li>
+        <li><a href="#">Yurt içi Haberleri </a></li>
+        <li><a href="#">Yurt dışı Haberleri</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Ürünler</a>
+    <ul>
+        <li><a href="#">Tencere</a></li>
+        <li><a href="#">Tava</a></li>
+        <li><a href="#">Ütü</a></li>
+        <li><a href="#">Tost Makinesi </a></li>
+        <li><a href="#">El Süpürgesi </a></li>
+    </ul>
+    </li>
+</ul>
+{% endhighlight %}
 
 ![][100]
 
 İlk olarak satır başı boşluklarını ve imgeleri kaldıralım. Dikey menüde
 olduğu gibi.
 
-	:::css
-	ul#menu, ul#menu ul {
-	    list-style: none;
-	    margin: 0;
-	    padding: 0;
-	}
+{% highlight css %}
+ul#menu, ul#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+{% endhighlight %}
 
 Daha sonra menümüzü yatay hale getirmek için **float**özelliğini
 kullanalım. Normalde bunun için **display:inline** kodunu da
@@ -60,103 +64,84 @@ olacaktır ve bu kullanım ile çok güzel sonuçlar elde edeceğiz.
 
 [CSS ile konumlandırma(positioning)][]
 
-	:::css
-	ul#menu li {
-	    float: left;
-	    position: relative;
-	    width: 150px;
-	}
+{% highlight css %}
+ul#menu li {
+    float: left;
+    position: relative;
+    width: 150px;
+}
+{% endhighlight %}
 
 Sonra ikincil linkleri sayfaya ilk açıldığında görünmez(display:none)
 yapalım. Birincil linklere göre konumlandırmak için postion:absolute
 özelliği ve top:19px (satır yüksekliği 15px + 2px alttan(sonra
 ekleyeceğiz) + 2px üstten(sonra ekleyeceğiz)) özelliğini kullanalım.
 
-	:::css
-	ul#menu li ul {
-	    display: none;
-	    position: absolute;
-	    top: 19px; /* yukseklik 15px + sonradan eklenecek paddingler 4px toplam 19px */
-	    left: 0;
-	}
+{% highlight css %}
+ul#menu li ul {
+    display: none;
+    position: absolute;
+    top: 19px; /* yukseklik 15px + sonradan eklenecek paddingler 4px toplam 19px */
+    left: 0;
+}
+{% endhighlight %}
 
 Yalnız burada IE sorun çıkaracaktır. IE ve Opera ikincil menüleri
 konumlandırmasında sorun çıkarır, bunu engellemek için:
 
-	:::css
-	ul#menu li > ul {
-	    top: auto;
-	    left: auto;
-	}
-
+{% highlight css %}
+ul#menu li > ul {
+    top: auto;
+    left: auto;
+}
+{% endhighlight %}
 
 ![][1]
 
 Görünümü biraz güzelleştirelim:
 
-	:::css
-	ul#menu li a {
-	    font: bold 11px arial, helvetica, sans-serif;
-	    display: block;
-	    border-width: 1px;
-	    border-style: solid;
-	    border-color: #ccc #888 #555 #bbb;
-	    margin: 0;
-	    padding: 2px 3px;
-	    color: #000;
-	    background: #efefef;
-	    text-decoration: none;
-	}
-
+{% highlight css %}
+ul#menu li a {
+    font: bold 11px arial, helvetica, sans-serif;
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc #888 #555 #bbb;
+    margin: 0;
+    padding: 2px 3px;
+    color: #000;
+    background: #efefef;
+    text-decoration: none;
+}
+{% endhighlight %}
 
 ve rollover hali için:
 
-	:::css
-	ul#menu li a:hover {
-	    color: #a00;
-	    background: #fff;
-	}
+{% highlight css %}
+ul#menu li a:hover {
+    color: #a00;
+    background: #fff;
+}
+{% endhighlight %}
 
 Sonra birincil linklerin üzerine gelince ikincil linklerin görünmesi
 için:
 
-	:::css
-	ul#menu li:hover ul {
-		display: block;
-	}
-
-
-[Önceki makalede][Bir önceki makalede] belirttiğimiz gibi bu kod IE'de
-çalışmayacaktır. IE'de çalışması için aşağıdaki kodları yazmalıyız.
-
-	:::javascript
-	startList = function() {
-	    if (document.all&&document.getElementById) {
-	        navRoot = document.getElementById("menu");
-	        for (i=0; i<navRoot.childNodes.length; i++) {
-	            node = navRoot.childNodes[i];
-	            if (node.nodeName=="LI") {
-	                node.onmouseover=function() {
-	                this.className+=" over";
-	                }
-	                node.onmouseout=function() {
-	                this.className=this.className.replace(" over", "");
-	                }
-	            }
-	        }
-	    }
-	}
-	window.onload=startList;
+{% highlight css %}
+ul#menu li:hover ul {
+  display: block;
+}
+{% endhighlight %}
 
 Ayrıca aşağıdaki kodu da eklemeliyiz.
 
-	:::css
-	ul#menu li:hover ul, ul#menu li.over ul{
-		display: block;
-	}
+{% highlight css %}
+  ul#menu li:hover ul, ul#menu li.over ul{
+    display: block;
+  }
+{% endhighlight %}
 
-Önemli bir not olarak koddaki <ul id="**menu**" \> ve javascriptteki navRoot = document.getElementById("**menu**"); aynı olmasına dikkat
-edelim.
+Önemli bir not olarak koddaki <ul id="**menu**" \> ve javascriptteki navRoot = document.getElementById("**menu**"); aynı olmasına dikkat edelim.
 
 işte sonuç:
 
