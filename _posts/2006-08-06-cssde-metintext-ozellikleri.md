@@ -20,7 +20,7 @@ Paragrafların ilk cümlelerin soldan içeriye kaydırılması için kullanılan
 bir özelliktir.
 
 **Yapısı :** text-indent: <deger\> \\
-**Aldığı Değerler :** [<uzunluk değeri\>][] | [<yüzde\>][<uzunluk değeri >] \\
+**Aldığı Değerler :** [<uzunluk değeri\>] | [<yüzde\>][<uzunluk değeri \>] \\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** Blok-level elementler\\
 **Kalıtsallık:** Var
@@ -52,7 +52,7 @@ Bir elemntin diğerlerine göre hizasını berlilemek için kullanılır.
 Sadece metinler için kullanılmaz, diğer elementler içinde kullanılır.
 
 **Yapısı :** text-align: <deger\>\\
-**Aldığı Değerler :** [<uzunluk değeri\>][] | [<yüzde\>][<uzunluk değeri >] | inherit\\
+**Aldığı Değerler :** [<uzunluk değeri\>][] | [<yüzde\>][<uzunluk değeri \>] | inherit\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** tüm elementler\\
 **Kalıtsallık:** Yok
@@ -262,7 +262,7 @@ metinlerizinaltını çizmek gibi.
 
 {% highlight css %}
 a:link, a:visited, a:active {
-	text-decoration: none
+  text-decoration: none
 }
 {% endhighlight %}
 
