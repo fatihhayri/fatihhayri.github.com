@@ -19,16 +19,16 @@ kontrol eder. Metin özellikleri metin düzeni için çok avantajlı
 Paragrafların ilk cümlelerin soldan içeriye kaydırılması için kullanılan
 bir özelliktir.
 
-**Yapısı :** text-indent: <deger\> \\
-**Aldığı Değerler :** [<uzunluk değeri\>] | [<yüzde\>][<uzunluk değeri \>] \\
-**Başlnagıç değeri:** 0\\
-**Uygulanabilen elementler:** Blok-level elementler\\
+**Yapısı :** text-indent: <deger\> 
+**Aldığı Değerler :** [<uzunluk değeri\>] | [<yüzde\>][<uzunluk değeri \>] 
+**Başlnagıç değeri:** 0 
+**Uygulanabilen elementler:** Blok-level elementler
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
 {% highlight css %}
 p {
-	text-indent: 10px;
+  text-indent: 10px;
 }
 {% endhighlight %}
 
@@ -51,16 +51,16 @@ p {
 Bir elemntin diğerlerine göre hizasını berlilemek için kullanılır.
 Sadece metinler için kullanılmaz, diğer elementler içinde kullanılır.
 
-**Yapısı :** text-align: <deger\>\\
-**Aldığı Değerler :** [<uzunluk değeri\>][] | [<yüzde\>][<uzunluk değeri \>] | inherit\\
-**Başlnagıç değeri:** 0\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** text-align: <deger\> 
+**Aldığı Değerler :** [<uzunluk değeri\>][] | [<yüzde\>][<uzunluk değeri \>] | inherit 
+**Başlnagıç değeri:** 0 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
 {% highlight css %}
 p {
-	text-align: justify;
+  text-align: justify;
 }
 {% endhighlight %}
 
@@ -91,16 +91,16 @@ Bir elementin içeriğinin dikey hizalaması için kullanılır.
 -   bottom : Alt (Elemente göre)
 -   text-bottom : Alt(Metin içeriğine göre)
 
-**Yapısı :** vertical-align: <deger\>\\
-**Aldığı Değerler :**[<yüzde>][<uzunluk değeri\>] | baseline | sub | super | top | text-top | middle | bottom | text-bottom\\
-**Başlnagıç değeri:** baseline\\
-**Uygulanabilen elementler:** inline elementler\\
+**Yapısı :** vertical-align: <deger\> 
+**Aldığı Değerler :**[<yüzde>][<uzunluk değeri\>] | baseline | sub | super | top | text-top | middle | bottom | text-bottom 
+**Başlnagıç değeri:** baseline 
+**Uygulanabilen elementler:** inline elementler 
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
 {% highlight css %}
 img {
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 {% endhighlight %}
 
@@ -123,16 +123,16 @@ img {
 Satırlar arasındaki yüksekliği belirler. **normal**, **pixel** veya
 **yüzde**değerlerin den birini alabilir.
 
-**Yapısı :** line-height: <deger\>\\
-**Aldığı Değerler :** normal | [&lt;sayı&gt;][<uzunluk değeri\>] | [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >]\\
-**Başlnagıç değeri:** normal\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** line-height: <deger\> 
+**Aldığı Değerler :** normal | [&lt;sayı&gt;][<uzunluk değeri\>] | [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] 
+**Başlnagıç değeri:** normal 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
 {% highlight css %}
 div{
-	line-height:30px
+  line-height:30px
 }
 {% endhighlight %}
 
@@ -154,16 +154,16 @@ div{
 
 Kelimeler arasındaki boşluk değerini belirler. Eksi değer alabilir.
 
-**Yapısı :** word-spacing: <deger\>\\
-**Aldığı Değerler :** normal | [<uzunluk değeri\>][]\\
-**Başlnagıç değeri:** normal\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** word-spacing: <deger\> 
+**Aldığı Değerler :** normal | [<uzunluk değeri\>] 
+**Başlnagıç değeri:** normal 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
 {% highlight css %}
 p {
-	word-spacing: 10px;
+  word-spacing: 10px;
 }
 {% endhighlight %}
 
@@ -185,16 +185,16 @@ p {
 
 Harfler arasındaki boşluk değerini belirler. Eksi değer alabilir.
 
-**Yapısı :** letter-spacing: <deger\>\\
-**Aldığı Değerler :** normal | [<uzunluk değeri\>][]\\
-**Başlnagıç değeri:** normal\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** letter-spacing: <deger\> 
+**Aldığı Değerler :** normal | [<uzunluk değeri\>] 
+**Başlnagıç değeri:** normal 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
 {% highlight css %}
 p {
-	letter-spacing: 5px;
+  letter-spacing: 5px;
 }
 {% endhighlight %}
 
@@ -220,16 +220,16 @@ Metnin Büyük-Küçük harf çevirmek için kullanılır.
 -   **lowercase**(hepsini küçük harf yap)
 -   **capitalize**(sadece baş harfleri büyük yap)
 
-**Yapısı :** text-transform: <deger\>\\
-**Aldığı Değerler :** none | capitalize | uppercase | lowercase\\
-**Başlnagıç değeri:** none\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** text-transform: <deger\> 
+**Aldığı Değerler :** none | capitalize | uppercase | lowercase 
+**Başlnagıç değeri:** none 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
 {% highlight css %}
 p {
-	text-transform: capitalize;
+  text-transform: capitalize;
 }
 {% endhighlight %}
 
@@ -252,10 +252,10 @@ p {
 Bu özellik metinlerimize özel işaretler koymamızı sağlar. Örneğin
 metinlerizinaltını çizmek gibi.
 
-**Yapısı :** text-decoration: <deger\>\\
-**Aldığı Değerler :**none | [ underline || overline || line-through || blink ]\\
-**Başlnagıç değeri:** none\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** text-decoration: <deger\> 
+**Aldığı Değerler :**none | [ underline || overline || line-through || blink ] 
+**Başlnagıç değeri:** none 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
