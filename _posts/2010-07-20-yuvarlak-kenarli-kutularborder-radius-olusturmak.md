@@ -7,9 +7,9 @@ tags: border-radius, css3, ie6, ie7, ie8, yuvarlak kenar, yuvarlak kenarlı kutu
 ---
 
 Web tasarımcılarını tercih ettiği tekniklerden biridir yuvarlak köşeli
-alanlar oluşturmak.  IE hariç css ile bu yapıyı kurmak çok basittir.
-Burada beraber yuvarlak kenarlı yapıları oluşturmayı göreceğiz. Ayrıca
-IE için javascript çözümlerini ele alacağız.
+alanlar oluşturmak.  <s>IE hariç css ile bu yapıyı kurmak çok basittir.</s>
+Burada beraber yuvarlak kenarlı yapıları oluşturmayı göreceğiz. <s>Ayrıca
+IE için javascript çözümlerini ele alacağız.</s>
 
 border-radius özelliği CSS3 ile birlikte geldi ve HTML elemanlarına
 yuvarlak kenar özelliği verme işine yarıyor. Web 2.0 ve yeni stiller ile
@@ -63,21 +63,19 @@ Elips şeklinde sonuçlar elde etmke için (/) ayracı kullanılır.
 CSS kodu;
 
 {% highlight css %}
--webkit-border-radius:  40px 10px;
--moz-border-radius:  40px/10px;
 border-radius:  40px/10px;
 {% endhighlight %}
 
 **Uygulama**
 
-Bugünkü durumda border-radius tanımı tek bir tanımlama olarak
+<s>Bugünkü durumda border-radius tanımı tek bir tanımlama olarak
 atanmamaktadır, farklı tarayıcılar ön ek kullanarak bu özelliği
 desteklemektedir. Webkit tabanlı tarayıcılar(Safari ve Google Chrome)
 için -webkit, Gecko tabanlı(Firefox) tarayıcılar için -moz ön ekleri
-kullanılmaktadır. 
+kullanılmaktadır. </s>
 
-Bu durum bazen çok uzun kodlar üretmemize neden oluyor. İleride umarım
-bu durum düzelir. 
+<s>Bu durum bazen çok uzun kodlar üretmemize neden oluyor. İleride umarım
+bu durum düzelir. </s>
 
 İlk örneğimizi yapalım
 
@@ -85,9 +83,7 @@ bu durum düzelir. 
 div#kutu {
     width: 400px;
     padding: 20px;
-    border-radius: 10px; /* Standart */
-    -moz-border-radius: 10px; /* Firefox */
-    -webkit-border-radius: 10px; /* Safari ve Chrome */
+    border-radius: 10px;
     background: #F00;
     margin-bottom: 10px;
 }
@@ -105,10 +101,6 @@ div#kutu{
     padding: 20px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    -moz-border-radius-topright: 10px;
-    -moz-border-radius-bottomleft: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -webkit-border-bottom-left-radius: 10px;
     background: #F00;
     white-space:pre
  }
@@ -162,8 +154,6 @@ yapıyoruz.
 {% highlight css %}
 .curved {
     border-radius:10px;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
     behavior:url(border-radius.htc);
 }
 {% endhighlight %}
@@ -199,7 +189,7 @@ değerlendirmelere sizin kendi uygulamalarınızdaki sonuçlarıda ekleyerek
 bir scripti seçmenizi öneririm. 
 
 Bence en güzeli eğer tercih imkanınız varsa destekleyen tarayıcılar için
-kodu yazmak desteklemeyenler için olduğu gibi bırakmak(twitter.com
+kodu yazmak desteklemeyenler için olduğu gibi bırakmak (twitter.com
 sitesinde olduğu gibi.)
 
 ## Kaynaklar

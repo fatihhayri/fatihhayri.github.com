@@ -6,6 +6,8 @@ Category: CSS, Javascript, XHTML
 tags: absolute, CSS, fixed, postion, sabit, sayfa-dibine-yapışık
 ---
 
+**Ocak 2016'da güncellendi. IE eski sürümleri için eklenen kısımlar gereksiz artık.**
+
 Bu konuya bir çalışmam dolayısıyla **position:fixed** özelliğini
 kullanma gereksinimi duyduğum için girdim, sonra araştırma sonuçları bir
 makale konusu olabileceğini düşünerek bu makaleyi yazdım. Biraz
@@ -22,9 +24,9 @@ konumlandırılmış elementin sayfadaki görünümü çok farklıdır. Bunu
 kullanabiliriz. Sabit konumlandırma ile yerleştirilmiş element
 belirtilen yerde asılı kalacaktır. Web tarayıcısının kaydırma çubuğu
 aşağı yukarı kaydırılması ile Sabit Konumlandırma ile yerleştirilmiş
-elementin yeri değişmeyecektir ve sabit kalacaktır. ~~Ne yazık ki IE 6 bu
+elementin yeri değişmeyecektir ve sabit kalacaktır. <s>Ne yazık ki IE 6 bu
 özelliği desteklemiyor. IE 7 strick yorumlayıcısı kullanılıyorsa
-destekliyor diğer hallerde desteklemiyor.~~ "
+destekliyor diğer hallerde desteklemiyor.</s>"
 
 Şeklinde genel bir bilgi verip bırakmıştık. Şimdi biraz daha ayrıntısına
 inelim.
@@ -32,9 +34,9 @@ inelim.
 Sabit konumlandırmayı sayfanın belli bir alanını sabitleyip diğer
 alanları bu kısmın yanından, altından kaydırmak için kullanırız genelde.
 
-~~Aslında bunun için CSS bize **position:fixed** kodunu sunmaktadır. Ancak
+<s>Aslında bunun için CSS bize **position:fixed** kodunu sunmaktadır. Ancak
 bu kodu IE6 ve önceki sürümlerde desteklememesi bize alternatif çözümler
-aramaya sevk ediyor. Buda bize bir makale yazma gereksinimi doğuruyor.~~
+aramaya sevk ediyor. Buda bize bir makale yazma gereksinimi doğuruyor.</s>
 
 İlk metodumuz normal konumlandırma özelliğinin fixed uygulanmış
 şeklidir.
@@ -72,16 +74,16 @@ div#icerik {
 
 Örneği görmek için [tıklayınız.][]
 
-~~Baştada belirttiğimiz gibi buradaki en büyük sorunumuz IE6 ve daha eski
+<s>Baştada belirttiğimiz gibi buradaki en büyük sorunumuz IE6 ve daha eski
 sürümlerde bu kodun çalışmamasıdır. Bundan sonraki metot buna çözüm
-aramak içindir.~~
+aramak içindir.</s>
 
 ## ~~IE6'da çalışan postion:fixed metodu~~
 
-~~Bu metot IE'un css içinde **expression()** komutunu yardımı ile
+<s>Bu metot IE'un css içinde **expression()** komutunu yardımı ile
 javascript kodu işletmemize izin vermesi prensinden dayanır. Bizde bu
 metodda bu komut yardımı ile **position:fixed** sorununu çözeceğiz.
-**expression()** yardımı ile daha önce IE'nin [min-width ve min-height sorununu][] çözdüğümüzü hatırlayın.~~
+**expression()** yardımı ile daha önce IE'nin [min-width ve min-height sorununu][] çözdüğümüzü hatırlayın.</s>
 
 {% highlight html %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -124,44 +126,44 @@ div#ustAlan {
 
 Örnek sayfayı görmek için [tıklayınız.][1]
 
-~~Yukarıdaki kodu iki kısımda inceleyebiliriz. Birinci kısım ilk örnekte
+<s>Yukarıdaki kodu iki kısımda inceleyebiliriz. Birinci kısım ilk örnekte
 olduğu gibi **position:fixed** kullanılan IE7, FF, Opera ve Safari için
 yazılan kısımdır. İkinci kısım IE7'den önceki sürümleri belirten şartlı
 koşul içerisindeki kodlamadır. Bu sürümlerde **position:fixed**
 desteklenmediği için **postion:absolute** değeri atanmış ve üst
 değerimizi(top) javascript'in **documentElement.scrollTop** değeri
-yardımı ile belirlenip sabitlenmiştir.~~
+yardımı ile belirlenip sabitlenmiştir.</s>
 
-~~Ayrıca alt alanı sabitlemek için~~
+<s>Ayrıca alt alanı sabitlemek için</s>
 
 {% highlight css %}
 bottom: auto; top: expression((documentElement.scrollTop + documentElement.clientHeight – this.clientHeight));
 {% endhighlight %}
 
-~~Kodlaması kullanılır. Örneği görmek için [tıklayınız.][2]~~
+<s>Kodlaması kullanılır. Örneği görmek için [tıklayınız.][2]</s>
 
-~~Sabitlemek istediğimiz nesneyi üstten 10piksel aşağıda sabitlemek için~~
+<s>Sabitlemek istediğimiz nesneyi üstten 10piksel aşağıda sabitlemek için</s>
 
 {% highlight css %}
 top: expression(eval(documentElement.scrollTop) + 10);
 {% endhighlight %}
 
-~~şeklinde kodlarız. Bu kodlama tekniği kullanılarak birçok farklı şablon
-elde edilebilir.~~
+<s>şeklinde kodlarız. Bu kodlama tekniği kullanılarak birçok farklı şablon
+elde edilebilir.</s>
 
-~~Bu yöntemin bazı sorunları vardır, bunlara değinmeden geçmeyelim.~~
+<s>Bu yöntemin bazı sorunları vardır, bunlara değinmeden geçmeyelim.</s>
 
--   ~~Bu metot IE5'de ve IE7, IE6'da [garip modda][] çalışmaz.~~
--   ~~Bu metot javascript'in hizmet dışı bırakıldığı tarayıcılarda
-    çalışmaz.~~
--   ~~**background: url('http://') fixed;** anlamsız kodu
+-   <s>Bu metot IE5'de ve IE7, IE6'da [garip modda][] çalışmaz.</s>
+-   <s>Bu metot javascript'in hizmet dışı bırakıldığı tarayıcılarda
+    çalışmaz.</s>
+-   <s>**background: url('http://') fixed;** anlamsız kodu
     kullanılmaktadır. Bu kod kaydırma çubuğu hareket ettikçe sabitlenen
-    nesnenin kıpranmaması içindir.~~
+    nesnenin kıpranmaması içindir.</s>
 
-~~Bunun dışında bir çok alternatif yöntem vardır. Benim deneyip en son
+<s>Bunun dışında bir çok alternatif yöntem vardır. Benim deneyip en son
 kullanmaya karar verdiğim metot bu olduğu için sizlere bu kodu
 gösterdim. Ancak diğer örnekleri görmeniz için alternatif çalışmaların
-linklerini kaynaklar kısmında sizlere vereceğim.~~
+linklerini kaynaklar kısmında sizlere vereceğim.</s>
 
 ## Kaynaklar
 

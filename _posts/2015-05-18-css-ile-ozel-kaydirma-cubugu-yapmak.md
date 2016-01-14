@@ -35,7 +35,7 @@ Farklı durumları yakalayabilmemiz için kaydırma çubuğunun sahte(pseudo) s�
 
 **:horizontal**, **:vertical**, **:decrement**, **:increment**, **:start**, **:end**, **:double-button**, **:single-button**, **:no-button**, **:corner-present**, **:window-inactive**
 
-Bu sözde sınıfları tanımlamak yerine örnekleri incleyerek daha iyi anlayacağımızı düşünüyorum. 
+Bu sözde sınıfları tanımlamak yerine örnekleri inceleyerek daha iyi anlayacağımızı düşünüyorum. 
 
  - [http://codepen.io/fatihhayri/pen/aOZLgX?editors=110](http://codepen.io/fatihhayri/pen/aOZLgX?editors=110)
  - [http://codepen.io/anon/pen/EaxBWP?editors=110](http://codepen.io/anon/pen/EaxBWP?editors=110)
