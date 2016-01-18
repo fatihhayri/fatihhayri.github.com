@@ -6,7 +6,7 @@ Category: css
 tags: css background-attachment css3
 ---
 
-**background-attechment** özelliğinden çok öncelerden [bahsetmiştim](http://localhost:4000/hizli-css-referansi/). Benim bahsettiğimde iki değer alıyordu; **scroll** ve **fixed** değerleri. Ancak bunlara CSS3 ile birlikte yeni bir değer daha eklenmiş; **local** değeri. Gerçi ekleneli bayağı olmuş. (2009)
+**background-attechment** özelliğinden çok öncelerden [bahsetmiştim](/hizli-css-referansi/). Benim bahsettiğimde iki değer alıyordu; **scroll** ve **fixed** değerleri. Ancak bunlara CSS3 ile birlikte yeni bir değer daha eklenmiş; **local** değeri. Gerçi ekleneli bayağı olmuş. (2009)
 
 Benim yazdığım ilk makalede şöyle tanımlamışım bu özelliği "background-attachment özelliği zemine eklenen resmin sayfa ile
 scroll etmesini veya sayfanın zeminin de çakılı kalmasını sağlar."
