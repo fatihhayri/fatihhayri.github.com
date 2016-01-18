@@ -21,7 +21,7 @@ sorunlar yaşanabilir.
 
 Bu özellik uygulana eleman içindeki akışın yönünü belirler.
 
-Yapısı : direction: <deger\>\\
+Yapısı : direction: (değer)
 Aldığı Değerler : ltr | rtl | inherit\\
 Başlangıç değeri: ltr\\
 Kalıtsallık: Var

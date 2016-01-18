@@ -21,7 +21,7 @@ tags: hanging-punctuation, text-align-last, text-overflow, text-rendering, text-
 CSS3 **word-wrap** özelliği diğer CSS3 özelliklerinden farklı olarak tüm
 tarayıcılar(IE dahil) tarafından desteklenmektedir.
 
-**Yapısı :**word-wrap: <deger\>\\
+**Yapısı :**word-wrap: (değer)
 **Aldığı Değerler:** normal | break-word\\
 **Başlangıç değeri:** normal\\
 **Uygulanabilen elementler:** Tüm Elemanlara\\
@@ -81,7 +81,7 @@ CSS kodu
 **text-wrap** özelliği **word-wrap**’e benzer bir özelliktir.
 **word-wrap**’in kelimeye yaptığı etkiyi **text-wrap** metinlere yapar.
 
-**Yapısı :** text-wrap: <deger\>\\
+**Yapısı :** text-wrap: (değer)
 **Aldığı Değerler:** normal | none | unrestricted | suppress\\
 **Başlangıç değeri:** normal\\
 **Uygulanabilen elementler:**Tüm Elemanlara\\
@@ -111,7 +111,7 @@ CSS3 ile birlikte metinlerin etrafına dış çizgisi çizmemize olanak
 sağlıyor. Şu an sadece webkit tabanlı tarayıcıların(Safari, Chrome)
 desteği mevcut.
 
-**Yapısı :**text-stroke: <deger\>\\
+**Yapısı :**text-stroke: (değer)
 **Aldığı Değerler :** thickness | blur | color\\
 **Başlangıç değeri:** none\\
 **Kalıtsallık:**Var
@@ -178,7 +178,7 @@ CSS3 ile birlikte gelen bu özellik son satırın veya justify tanımlanmış
 elemanların satırlarının hizalanmasını sağlar. Bu özellik **text-align**
 ile aynı etkiyi yapar.
 
-**Yapısı :**text-align-last: <deger\>\\
+**Yapısı :**text-align-last: (değer)
 **Aldığı Değerler :** center | end | justify | left | right | start\\
 **Başlangıç değeri:** start\\
 **Kalıtsallık:** Var
@@ -249,7 +249,7 @@ okunabilirlik ve geometrik hassasiyet bakımından farklı şekilde
 yorumlarlar; text-rendering özelliği bu farklılıkları bizim kontrolümüze
 sunana bir özelliktir.
 
-**Yapısı :**text-rendering: <deger\>\\
+**Yapısı :**text-rendering: (değer)
 **Aldığı Değerler :** auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit\\
 **Başlangıç değeri:** auto\\
 **Uygulanabilen elementler:** Tüm Elemanlara\\

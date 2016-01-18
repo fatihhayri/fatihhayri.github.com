@@ -12,7 +12,7 @@ Padding içerik alanı ile kenarlık arasındaki alandır.
 
 ## padding-top
 
-**Yapısı :** padding-top: <deger\>\\
+**Yapısı :** padding-top: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] | inherit\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -41,7 +41,7 @@ Android Browser
 
 ## padding-right
 
-**Yapısı :** padding-right: <deger\>\\
+**Yapısı :** padding-right: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] | inherit\\
 **Başlangıç değeri:** 0\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -71,7 +71,7 @@ Android Browser
 
 ## padding-bottom
 
-**Yapısı :** padding-bottom: <deger\>\\
+**Yapısı :** padding-bottom: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] | inherit\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -101,7 +101,7 @@ Android Browser
 
 ## padding-left
 
-**Yapısı :** padding-left: <deger\>\\
+**Yapısı :** padding-left: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] | inherit\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -131,7 +131,7 @@ Android Browser
 
 ## padding
 
-**Yapısı :** padding: <deger\>\\
+**Yapısı :** padding: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >]{1,4} | inherit\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** Block-level ve replaced elementler\\

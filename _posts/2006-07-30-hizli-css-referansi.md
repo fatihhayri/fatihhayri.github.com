@@ -28,10 +28,10 @@ Sırası ile aşağıdaki özelliklere değinilecektir.
 
 Burada standart bir özellik tanımı kullanılacaktır.
 
-**Yapısı :** özellik_ismi: <deger\>\\
-**Aldığı Değerler :** alınan_deger1 | alınan_deger2 {1,4}*\\
-**Başlangıç değeri:** Özelliğin atama yapılmadığı zaman ki değeri\\
-**Uygulanabilen elementler:** özelliğin uygulanacağı elementlerin isimleri\\
+**Yapısı :** özellik_ismi: (deger) 
+**Aldığı Değerler :** alınan_deger1 | alınan_deger2 {1,4}* 
+**Başlangıç değeri:** Özelliğin atama yapılmadığı zaman ki değeri 
+**Uygulanabilen elementler:** özelliğin uygulanacağı elementlerin isimleri 
 **Kalıtsallık:** Bu özelliğin atanması halinde alt elementlerini(örn: çocuk ve torun elementlerini) etkileyip etkilemeyeceği
 {: .cssozelliktanimi}
 
@@ -42,7 +42,7 @@ gösterir.
 
 {% highlight css %}
 p.deneme {
-	border-style: solid dashed dotted solid;
+  border-style: solid dashed dotted solid;
 }
 {% endhighlight %}
 
@@ -70,10 +70,10 @@ Zemin özelliklerini tek tek incelersek:
 
 Elementlerin zeminine bir renk atamak için kullanılır.
 
-**Yapısı :** background-color: <deger\>\\
-**Aldığı Değerler :** [renk][] | transparent\\
-**Başlangıç değeri:** transparent\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** background-color: (değer) 
+**Aldığı Değerler :** (renk) | transparent 
+**Başlangıç değeri:** transparent 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -81,7 +81,7 @@ Elementlerin zeminine bir renk atamak için kullanılır.
 
 {% highlight css %}
 p {
-	background-color: #ddd;
+  background-color: #ddd;
 }
 {% endhighlight %}
 
@@ -103,10 +103,10 @@ p {
 
 Elementlerin zeminine resim eklemek için kullanılır.
 
-**Yapısı :** background-image: <deger\>\\
-**Aldığı Değerler :** [url][renk] | none\\
-**Başlangıç değeri:** none\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** background-image: (değer) 
+**Aldığı Değerler :** (url) | none 
+**Başlangıç değeri:** none 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -114,7 +114,7 @@ Elementlerin zeminine resim eklemek için kullanılır.
 
 {% highlight css %}
 body {
-	background-image: url(/images/deneme.gif)
+  background-image: url(/images/deneme.gif)
 }
 {% endhighlight %}
 
@@ -137,10 +137,10 @@ body {
 **background-repeat** özelliği **background-image** ile zemine eklenen
 resmin tekrarı ile özellikleri belirler.
 
-**Yapısı :** background-image: <deger\>\\
-**Aldığı Değerler :** repeat | repeat-x | repeat-y | no-repeat\\
-**Başlangıç değeri:** repeat\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** background-image: (değer)
+**Aldığı Değerler :** repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}
+**Başlangıç değeri:** repeat 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -148,8 +148,8 @@ resmin tekrarı ile özellikleri belirler.
 
 {% highlight css %}
 body {
-	background: white url(deneme.gif);
-	background-repeat: repeat-x;
+  background: white url(deneme.gif);
+  background-repeat: repeat-x;
 }
 {% endhighlight %}
 
@@ -172,10 +172,10 @@ body {
 **background-attachment** özelliği zemine eklenen resmin sayfa ile
 scroll etmesini veya sayfanın zeminin de çakılı kalmasını sağlar.
 
-**Yapısı :** background-attachment: <deger\>\\
-**Aldığı Değerler :** scroll | fixed\\
-**Başlangıç değeri:** scroll\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** background-attachment: (değer) 
+**Aldığı Değerler :** scroll | fixed | local 
+**Başlangıç değeri:** scroll 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -183,8 +183,8 @@ scroll etmesini veya sayfanın zeminin de çakılı kalmasını sağlar.
 
 {% highlight css %}
 body {
-	background: white url(deneme.gif);
-	background-attachment: fixed;
+  background: white url(deneme.gif);
+  background-attachment: fixed;
 }
 {% endhighlight %}
 
@@ -210,7 +210,7 @@ ve replaced(Bu elementler kendine özgü boyutları olan elementler olarak
 tanımlanabilir. Örn: **IMG**, **INPUT**, **TEXTAREA**, **SELECT**, ve
 **OBJECT**) elementlere uygulanır.
 
-**Yapısı :** background-position: <deger\>\\
+**Yapısı :** background-position: (değer)
 **Aldığı Değerler :** [[<percentage>][renk] | [<length>][renk]]{1,2}
 | [top | center | bottom] || [left | center | right] \\
 **Başlangıç değeri:** 0% 0%\\
@@ -251,9 +251,9 @@ edilecektir. Yüzde değerler ve uzunluk değerleri eksi değerler alabilir.
 
 {% highlight css %}
 body {
-	background-image: url(deneme.gif);
-	background-repeat: no-repeat;
-	background-position: center;
+  background-image: url(deneme.gif);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 {% endhighlight %}
 
@@ -276,7 +276,7 @@ body {
 Bu özellik Zemin(background) ile ilgili tüm özelliklerin bir arada
 kullanımı sağlar.
 
-**Yapısı :** background: <deger\>\\
+**Yapısı :** background: (değer)
 **Aldığı Değerler :** <background-color\><background-color\> || <background-image\> || <background-repeat\> || <background-attachment\> || <background-position\>\\
 **Başlangıç değeri:** Tanımsız\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -287,19 +287,19 @@ kullanımı sağlar.
 
 {% highlight css %}
 body{
-	background: white url(deneme.gif)
+  background: white url(deneme.gif)
 }
 
 blockquote {
-	background: #f00
+  background: #f00
 }
 
 p {
-	background: url(../images/deneme.png) #f00 fixed
+  background: url(../images/deneme.png) #f00 fixed
 }
 
 table{
-	background: #0c0 url(deneme.jpg) no-repeat bottom right
+  background: #0c0 url(deneme.jpg) no-repeat bottom right
 }
 {% endhighlight %}
 

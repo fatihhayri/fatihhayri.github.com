@@ -20,7 +20,7 @@ sağlar. CSS fontlar üzerinde tam hakimolmamızı sağlar.
 
 ## color
 
-**Yapısı :** color: <deger\>\\
+**Yapısı :** color: (değer)
 **Aldığı Değerler :**<[renk][]> | inherit\\
 **Başlangıç değeri:**web tarayıcısı belirler\\
 **Uygulanabilen elementler:** tüm elementler\\

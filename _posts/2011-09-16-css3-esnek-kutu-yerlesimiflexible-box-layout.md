@@ -95,7 +95,7 @@ Kapsayıcı tanımlanan **display:box** tanımı ile içindeki elemanlar birer
 
 ## box-orient
 
-**Yapısı:** box-orient: <deger\>\\
+**Yapısı:** box-orient: (değer)
 **Aldığı Değerler:** horizontal | vertical | inline-axis | block-axis\\
 **Başlangıç değeri:** inline-axis\\
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri\\
@@ -140,7 +140,7 @@ Bunlardan başka iki değer daha mevcuttur. **inline-axis** yatayda ve
 
 ## box-direction
 
-**Yapısı:** box-direction: <deger\>\\
+**Yapısı:** box-direction: (değer)
 **Aldığı Değerler:** normal | reverse\\
 **Başlangıç değeri:** inline-axis\\
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri alan elemanlara\\
@@ -185,7 +185,7 @@ Değişikliklerin olabileceği dikkate alınmalıdır.
 
 ## box-pack
 
-**Yapısı :** box-pack: <deger\>\\
+**Yapısı :** box-pack: (değer)
 **Aldığı Değerler :** start | end | center | justify\\
 **Başlangıç değeri:** start\\
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri alan elemanlara\\
@@ -220,7 +220,7 @@ olarak değişecek. Tarayıcılar destekleyen kadar bu şekilde devam edecek.
 
 ## box-align
 
-**Yapısı :** box-align: <deger\>\\
+**Yapısı :** box-align: (değer)
 **Aldığı Değerler :** stretch | start | end | center | baseline\\
 **Başlangıç değeri:** stretch\\
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri alan elemanlara\\
@@ -340,7 +340,7 @@ Yeni EKYM standardında **box-ordinal-group** yerine **flex-order**
 
 ## box-flex
 
-**Yapısı :** box-ordinal-group: <deger\>\\
+**Yapısı :** box-ordinal-group: (değer)
 **Aldığı Değerler :** <sayı\>\\
 **Başlangıç değeri:** 0\\
 **Uygulanabilen elementler:** display:box ve display:inline-box değeri

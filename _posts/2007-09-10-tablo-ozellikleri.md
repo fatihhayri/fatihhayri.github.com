@@ -30,7 +30,7 @@ tabi o zamana kadar Firefox IE'yi silip süpürmezse :D
 
 ## table-layout
 
-**Yapısı :** table-layout: <deger\>\\
+**Yapısı :** table-layout: (değer)
 **Aldığı Değerler :** auto | fixed | kalıtsallık\\
 **Başlnagıç değeri:** auto\\
 **Uygulanabilen elementler:** display: table ve display:inline-table olarak belirlenen elementlere\\

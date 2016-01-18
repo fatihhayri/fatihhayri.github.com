@@ -95,7 +95,7 @@ Android Browser
 
 ## border-width
 
-**Yapısı :** border-width: <deger\>\\
+**Yapısı :** border-width: (değer)
 **Aldığı Değerler :** [ thin | medium | thick | <[uzunluk değeri][]> ]{1,4} | inherit\\
 **Başlnagıç değeri:** tanımlama yok\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -130,7 +130,7 @@ Android Browser
 
 ## border-top-width, border-right-width, border-bottom-width, border-left-width
 
-**Yapısı :** border-[top,left,right,bottom]-width: <deger\>\\
+**Yapısı :** border-[top,left,right,bottom]-width: (değer)
 **Aldığı Değerler :** thin | medium | thick | <[uzunluk değeri][] > |
 inherit\\
 **Başlnagıç değeri:** tanımlama yok\\
@@ -162,7 +162,7 @@ Android Browser
 
 ## border-color
 
-**Yapısı :** border-color: <deger\>\\
+**Yapısı :** border-color: (değer)
 **Aldığı Değerler :** [ <[renk][uzunluk değeri]> | transparent ]{1,4}
 | inherit\\
 **Başlnagıç değeri:** tanımlama yok\\
@@ -196,7 +196,7 @@ Android Browser
 
 ## border-top-color, border-right-color, border-bottom-color, border-left-color
 
-**Yapısı :** border-[top,left,right,bottom]-color: <deger\>\\
+**Yapısı :** border-[top,left,right,bottom]-color: (değer)
 **Aldığı Değerler :** [ <[renk][uzunluk değeri]> | transparent ]{1,4}
 | inherit\\
 **Başlnagıç değeri:** tanımlama yok\\

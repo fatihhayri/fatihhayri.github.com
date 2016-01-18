@@ -21,7 +21,7 @@ element float uygulanmış elementin altında konumlanacaktır.
 
 ## float
 
-**Yapısı :** float: <deger\>\\
+**Yapısı :** float: (değer)
 **Aldığı Değerler :**left | right | none | inherit\\
 **Başlangıç değeri:** none\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -106,7 +106,7 @@ kullanılır bunu aşığda göreceğiz.
 
 ## clear
 
-**Yapısı :** clear: <deger\>\\
+**Yapısı :** clear: (değer)
 **Aldığı Değerler :**none | left | right | both\\
 **Başlangıç değeri:** tanımsız\\
 **Uygulanabilen elementler:** tüm elementler\\

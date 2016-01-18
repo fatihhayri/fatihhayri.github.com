@@ -18,7 +18,7 @@ Kutu modeli özelliklerine devam ediyoruz. Sırasıyla aşağıdaki
 
 ## width
 
-**Yapısı :** width: <deger\>\\
+**Yapısı :** width: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] | auto | inherit\\
 **Başlnagıç değeri:** auto\\
 **Uygulanabilen elementler:** [Block-level ve replaced elementler][]\\
@@ -50,7 +50,7 @@ Android Browser
 
 ## height
 
-**Yapısı :** height: <deger\>\\
+**Yapısı :** height: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | auto | inherit\\
 **Başlangıç değeri:** auto\\
 **Uygulanabilen elementler:** [Block-level ve replaced elementler][]\\
@@ -81,7 +81,7 @@ Android Browser
 
 ## float
 
-**Yapısı :** float: <deger\>\\
+**Yapısı :** float: (değer)
 **Aldığı Değerler :** left | right | none |inherit\\
 **Başlnagıç değeri:** none\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -119,7 +119,7 @@ Android Browser
 
 ## clear
 
-**Yapısı :** clear: <deger\>\\
+**Yapısı :** clear: (değer)
 **Aldığı Değerler :** none | left | right | both\\
 **Başlnagıç değeri:** tanımsız\\
 **Uygulanabilen elementler:** tüm elementler\\

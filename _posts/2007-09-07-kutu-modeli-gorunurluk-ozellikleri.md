@@ -21,7 +21,7 @@ sıralanmıştır.
 
 ## Overflow
 
-**Yapısı:** overflow: <deger\>\\
+**Yapısı:** overflow: (değer)
 **Aldığı Değerler:** visible | hidden | scroll | auto | inherit\\
 **Başlnagıç değeri:** visible\\
 **Uygulanabilen elementler:** blok-level elementler ve replacement

@@ -24,7 +24,7 @@ tepkiyi belirler. Bu tepki aşağıdaki çerçevededir.
 pointer event özelliği aslında SVG içerikleri için uygulanan bir
 özelliktir.
 
-**Yapısı :**pointer-events: <deger\>\\
+**Yapısı :**pointer-events: (değer)
 **Aldığı Değerler:** auto | none | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | inherit\\
 **Başlangıç değeri:** auto\\
 **Uygulanabilen elementler:** Tüm Elemanlara\\

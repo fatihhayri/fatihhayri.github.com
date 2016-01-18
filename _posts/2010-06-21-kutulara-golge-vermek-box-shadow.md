@@ -17,7 +17,7 @@ tanımlama ile bu fazlalıklar ve zorluklardan kurtulabiliyoruz.
 
 box-shadow yapısını inceleyelim.
 
-**Yapısı :** box-shadow: <deger\>, <deger\>\\
+**Yapısı :** box-shadow: <deger\>, (değer)
 **Aldığı Değerler :** none | <gölge\> [ , <gölge\> ]*\\
 **Başlangıç değeri:**tanımlama yok\\
 **Uygulanabilen elementler:** tüm elementler\\

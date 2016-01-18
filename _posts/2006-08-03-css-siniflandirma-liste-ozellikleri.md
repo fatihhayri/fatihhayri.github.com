@@ -19,7 +19,7 @@ display ve white-space özelliklerinden de bahsedilecektir.
 
 ## list-style-type
 
-**Yapısı :** list-style-type: <deger\>\\
+**Yapısı :** list-style-type: (değer)
 **Aldığı Değerler :** disc | circle | square | decimal | lower-roman | upper-roman | lower-alpha | upper-alpha | none\\
 **Başlangıç değeri:** disc\\
 **Uygulanabilen elementler:** [display][] değeri list-item alan elementler\\
@@ -54,7 +54,7 @@ Android Browser
 
 ## list-style-image
 
-**Yapısı :** list-style-image: <deger\>\\
+**Yapısı :** list-style-image: (değer)
 **Aldığı Değerler :** <[url][]> | none\\
 **Başlangıç değeri:** none\\
 **Uygulanabilen elementler:** [display][] değeri list-item alan elementler\\
@@ -83,7 +83,7 @@ Android Browser
 
 ## list-style-position
 
-**Yapısı :** list-style-position: <deger\>\\
+**Yapısı :** list-style-position: (değer)
 **Aldığı Değerler :** inside | outside\\
 **Başlangıç değeri:** outside\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -114,7 +114,7 @@ Android Browser
 
 ## list-style
 
-**Yapısı :** list-style: <deger\>\\
+**Yapısı :** list-style: (değer)
 **Aldığı Değerler :** <list-style-type\> |<list-style-position\> | <[url][]>\\
 **Başlangıç değeri:**0\\
 **Uygulanabilen elementler:** display değeri list-item alan elementler\\
@@ -147,7 +147,7 @@ Android Browser
 
 ## white-space
 
-**Yapısı :** white-space: <deger\>\\
+**Yapısı :** white-space: (değer)
 **Aldığı Değerler :** normal | pre | nowrap\\
 **Başlangıç değeri:** normal\\
 **Uygulanabilen elementler:** [Block-level elementler][]\\
@@ -178,7 +178,7 @@ Android Browser
 
 ## display
 
-**Yapısı :** display: <deger\>\\
+**Yapısı :** display: (değer)
 **Aldığı Değerler :** none | inline | block | inline-block | list-item | run-in | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row |
 table-column-group | table-column | table-cell | table-caption | inherit\\
 **Başlangıç değeri:** inline\\

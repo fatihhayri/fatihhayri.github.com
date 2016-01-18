@@ -23,7 +23,7 @@ atın.
 
 ## margin-top
 
-**Yapısı :** margin-top: <deger\>\\
+**Yapısı :** margin-top: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] | auto\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -52,7 +52,7 @@ Android Browser
 
 ## margin-right
 
-**Yapısı :** margin-right: <deger\>\\
+**Yapısı :** margin-right: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] | auto\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -81,7 +81,7 @@ Android Browser
 
 ## margin-bottom
 
-**Yapısı :** margin-bottom: <deger\>\\
+**Yapısı :** margin-bottom: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] | auto\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -110,7 +110,7 @@ Android Browser
 
 ## margin-left
 
-**Yapısı :** margin-left: <deger\>\\
+**Yapısı :** margin-left: (değer)
 **Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] | auto\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -140,7 +140,7 @@ Android Browser
 
 ## margin
 
-**Yapısı :** margin: <deger\>\\
+**Yapısı :** margin: (değer)
 **Aldığı Değerler :** [[<percentage>][] | [<length>][<percentage>] |auto]{1,4}\\
 **Başlnagıç değeri:** Tanımsız\\
 **Uygulanabilen elementler:** tüm elementler\\

@@ -12,7 +12,7 @@ ile sınarlandırabilriz. Bu özellikler CSS2 ile birlikte gelmiştir.
 
 ## min-width, min-height
 
-**Yapısı :** min-width, min-height: <deger\>\\
+**Yapısı :** min-width, min-height: (değer)
 **Aldığı Değerler :** [<uzunluk değeri \>][] | [<yüzde\>][<uzunluk değeri \>] | inherit\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** inline nonreplacement elementler ve tablo elementlere\\
@@ -46,7 +46,7 @@ Aynı şekilde max-width ve max-height tanımlamalarıda yapılır.
 
 ## max-width, max-height
 
-**Yapısı :** max-width, max-height: <deger\>\\
+**Yapısı :** max-width, max-height: (değer)
 **Aldığı Değerler :** [<uzunluk değeri \>][] | [<yüzde\>][<uzunluk değeri \>] | none | inherit\\
 **Başlnagıç değeri:** 0\\
 **Uygulanabilen elementler:** inline nonreplacement elementler ve tablo elementlere\\

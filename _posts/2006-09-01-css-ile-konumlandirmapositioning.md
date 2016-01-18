@@ -48,7 +48,7 @@ değerleri etkisizdir.
 
 ## position
 
-**Yapısı :** position: <deger\>\\
+**Yapısı :** position: (değer)
 **Aldığı Değerler :**static | relative | absolute | fixed | inherit\\
 **Başlangıç değeri:** static\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -65,7 +65,7 @@ Opera
 
 ## top, right, bottom, left
 
-**Yapısı :** top, right, bottom, left : <deger\>\\
+**Yapısı :** top, right, bottom, left : (değer)
 **Aldığı Değerler :**<[uzunluk][]\> | <[yüzde][uzunluk]\> | auto | inherit\\
 **Başlangıç değeri:** auto\\
 **Uygulanabilen elementler:** postion uygulanan elementlere\\
@@ -141,7 +141,7 @@ ise altta kalacaktır.
 
 ## z-index
 
-**Yapısı :** z-index: <deger\>\\
+**Yapısı :** z-index: (değer)
 **Aldığı Değerler :**<[sayısal değer][uzunluk] \> | auto | inherit\\
 **Başlangıç değeri:** auto\\
 **Uygulanabilen elementler:** postion uygulanan elementlere\\

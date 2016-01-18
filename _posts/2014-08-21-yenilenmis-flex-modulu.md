@@ -46,7 +46,7 @@ Esnek Kutu Yerleşimi Modülünün son standartlaşmış sürümünü(2014 mart)
 
 ### display:flex ve display:inline-flex
 
-**Yapısı:** display: <deger\>\\
+**Yapısı:** display: (değer)
 **Aldığı (Yeni) Değerler:** flex | inline-flex\\
 **Başlangıç değeri:** flex\\
 **Uygulanabilen Elementler:** Tüm elemanlara\\
@@ -73,7 +73,7 @@ Kapsayıcı elemana tanımlanan **display:flex** özelliği yardımı ile alt el
 
 ### flex-direction
 
-**Yapısı:** flex-direction: <deger\>\\
+**Yapısı:** flex-direction: (değer)
 **Aldığı Değerler:** row | row-reverse | column | column-reverse\\
 **Başlangıç değeri:** row\\
 **Uygulanabilen Elementler:** Esnek kapsayıcı elemanlara\\
@@ -93,7 +93,7 @@ Bir örnekle bu özelliği deneyelim.
 
 ### flex-wrap
 
-**Yapısı:** flex-wrap: <deger\>\\
+**Yapısı:** flex-wrap: (değer)
 **Aldığı Değerler:** nowrap | wrap | wrap-reverse\\
 **Başlangıç değeri:** row\\
 **Uygulanabilen Elementler:** Esnek kapsayıcı elemanlara\\
@@ -125,7 +125,7 @@ Yukarıda bahsettiğimiz iki özelliğin(flex-direction ve flex-wrap) kısayolud
 
 ### justify-content
 
-**Yapısı:** justify-content: <deger\>\\
+**Yapısı:** justify-content: (değer)
 **Aldığı Değerler:** flex-start | flex-end | center | space-between | space-around\\
 **Başlangıç Değeri:** flex-start\\
 **Uygulanabilen Elementler:** Esnek kapsayıcı elemanlara\\
@@ -144,7 +144,7 @@ Esnek kapsayıcı içindeki elemnaların x ekseninden nasıl hizalanacağını b
 
 ### align-items
 
-**Yapısı:** align-items: <deger\>\\
+**Yapısı:** align-items: (değer)
 **Aldığı Değerler:** stretch | flex-start | flex-end | center | baseline\\
 **Başlangıç Değeri:** stretch\\
 **Uygulanabilen Elementler:** Esnek kapsayıcı elemanlara\\
@@ -163,7 +163,7 @@ Bu özellik kutuların y ekseninde nasıl hizalanacağını belirler. justify-co
 
 ### align-content
 
-**Yapısı:** align-content: <deger\>\\
+**Yapısı:** align-content: (değer)
 **Aldığı Değerler:** stretch | flex-start | flex-end | center | space-between | space-around\\
 **Başlangıç Değeri:** stretch\\
 **Uygulanabilen Elementler:** Esnek kapsayıcı elemanlara\\

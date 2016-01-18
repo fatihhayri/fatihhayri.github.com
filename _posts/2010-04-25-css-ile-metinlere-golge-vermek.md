@@ -28,7 +28,7 @@ yöntemleri kullanabileceğimizi anlatmaya çalışacağım.
 Bu özellik bir element içindeki metne bir veya daha fazla gölge vermek
 için kullanılır. Aldığı değerler belli sıralaması vardır.
 
-**Yapısı :** text-shadow: <deger\>\\
+**Yapısı :** text-shadow: (değer)
 **Aldığı Değerler :** shadow,… | none | inherit\\
 **Başlangıç değeri:** tanımlama yok\\
 **Uygulanabilen elementler:**tüm elementler\\

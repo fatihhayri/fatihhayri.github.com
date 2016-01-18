@@ -31,7 +31,7 @@ W3C bu durum için bu kabulü bir özelliğe atadı ve bize seçme imkanı
 tanıdı. Artık biz kutu modelinin nasıl davranacağını seçebileceğiz.
 
 
-**Yapısı :** box-sizing: <deger\>\\
+**Yapısı :** box-sizing: (değer)
 **Aldığı Değerler :** content-box | border-box\\
 **Başlangıç değeri:** content-box\\
 **Uygulanabilen elementler:** Tüm Elemanlara\\
