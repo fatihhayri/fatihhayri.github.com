@@ -8,50 +8,45 @@ tags: CSS, css eklemek, import, link, style, Web Standartları, XHTML
 
 ## 1- Kod içinde (In-line)
 
-Direk olarak (X)HTML elementin içine **style** özelliği kullanılarak
-uygulamak.
+Direk olarak HTML elementin içine **style** özelliği kullanılarak uygulamak.
 
 {% highlight html %}
 <div style="color:red">Deneme yazımız</div>
 {% endhighlight %}
 
-Tüm CSS komutlarını kodların içine direk uygulamak önerilen bir kodlama
-şekli değildir. Ancak özel durumlarda kullanılabilir.
+Tüm CSS komutlarını kodların içine direk uygulamak önerilen bir kodlama şekli değildir. Ancak özel durumlarda kullanılabilir.
 
 ## 2- style Elementi kullanılarak
 
-<head\> kısmında <style\> elementi içinde CSS kodumuzu yazarak
-uygulamak.
+<head\> kısmında <style\> elementi içinde CSS kodumuzu yazarak uygulamak.
 
 {% highlight html %}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-<title>CSS'i Uygulamak </title>
-<style type="text/css">
-div{
-	color:red;
-}
-</style>
+  <meta charset="utf-8">
+  <title>CSS'i Uygulamak </title>
+  <style type="text/css">
+    div{
+      color:red;
+    }
+  </style>
 </head>
 {% endhighlight %}
 
-Birinci yönteme göre avantajı (X)HTML kod ile CSS bir birinden
-ayrıştırılmış olmasıdır.
+Birinci yönteme göre avantajı HTML kod ile CSS bir birinden ayrıştırılmış olmasıdır.
 
 ## 3- Harici Stil şablonu Kullanımı
 
-Bu metod da CSS kodlarımzı **.css** uzantılı bir dosyaya kaydederiz.
-**ornek.css**
+Bu metod da CSS kodlarımzı **.css** uzantılı bir dosyaya kaydederiz. **ornek.css**
 
 {% highlight css %}
 p {
-	color: red;
+  color: red;
 }
 
 a {
-	color: blue;
+  color: blue;
 }
 {% endhighlight %}
 
@@ -59,69 +54,59 @@ a {
 Daha sonra bu kodu gereken sayfalarımıza uygularız.
 
 {% highlight html %}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-<title>CSS'i Uygulamak</title>
-<link rel="stylesheet" type="text/css" href="ornek.css" />
+  <meta charset="utf-8">
+  <title>CSS'i Uygulamak</title>
+  <link rel="stylesheet" type="text/css" href="ornek.css" />
 </head>
 {% endhighlight %}
 
 Bu yöntemin diğerlerine göre en büyük avantajı bir kere yazılan kod
 lazım olan tüm sayfalara eklenebilmesidir. Bu sayede harici eklenen css
 kodu bir kere yüklendikten sonra diğer kullandığımız sayfalarda tekrar
-yüklenemeyerek bize hız kazandıracaktır.
+yüklenmeyerek bize hız kazandıracaktır.
 
 ## 4- @import ile eklemek
 
-üncü yöntem ile kullanımı benzerdir.
+Üçüncü yöntem ile kullanımı benzerdir.
 
 {% highlight html %}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-<title>CSS'i Uygulamak</title>
-<style type="text/css">
-@import "ornek.css";
-</style>
+  <meta charset="utf-8">
+  <title>CSS'i Uygulamak</title>
+  <style type="text/css">
+    @import "ornek.css";
+  </style>
 </head>
 {% endhighlight %}
 
-Bu yöntemle eklenen harici css dosyası eski web tarayıcıları tarafından
-görüntülenemeyecektir.(Örn: NN4)
+<s>Bu yöntemle eklenen harici css dosyası eski web tarayıcıları tarafından görüntülenmeyecektir.(Örn: NN4)</s>
 
-@import ile eklenen kod link ile eklenen kodlamadan önce yorumlanır web
-tarayıcıları tarafından. Ayrıca css dosyalarımızda @import özelliğini
-kullanarak devamlı kullandığmız kodları css dosyamıza harici olarak
-ekleyebilriz böylelikle tekrarlardan kurtulmuş oluruz. **(11.10.2006
-güncellendi )**
+<s>@import ile eklenen kod link ile eklenen kodlamadan önce yorumlanır web tarayıcıları tarafından. Ayrıca css dosyalarımızda @import özelliğini kullanarak devamlı kullandığmız kodları css dosyamıza harici olarak ekleyebilriz böylelikle tekrarlardan kurtulmuş oluruz. **(11.10.2006 güncellendi )**</s>
 
-Sonuç olarak burada dört adet CSS uygulama metodu gördük ancak bu
-metodlardan dördüncüsü avantajları bakımından önerilen bir yöntemdir.
+@import yöntemi performans sorunları ile tercih edilmemektedir. **19.01.2016 güncellendi**
 
-Ayrıca içeriği büyük olan sitelerde css kodunun parçalara ayrılması ve
-kullanılan sayfa CSS'inde hangi parçalar gerekli ise onların import
-edilmesi önerilir. Bu sayfade kodun bir kısmında yaptığımız değişiklik
-için tüm css kodu incelenip değiştirlmesi gerekmez ve kod yönetimi
-kolaylaşır.
+Sonuç olarak burada dört adet CSS uygulama metodu gördük ancak bu metodlardan dördüncüsü avantajları bakımından önerilen bir yöntemdir.
+
+Ayrıca içeriği büyük olan sitelerde css kodunun parçalara ayrılması ve kullanılan sayfa CSS'inde hangi parçalar gerekli ise onların import edilmesi önerilir. Bu sayfade kodun bir kısmında yaptığımız değişiklik için tüm css kodu incelenip değiştirlmesi gerekmez ve kod yönetimi kolaylaşır.
 
 {% highlight html %}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-<title>CSS'i Uygulamak</title>
-<style type="text/css">
-@import "ornek.css";
-</style>
+  <meta charset="utf-8">
+  <title>CSS'i Uygulamak</title>
+  <style type="text/css">
+    @import "ornek.css";
+  </style>
 </head>
 {% endhighlight %}
 
-Ürünler bölümü için bir css dosyası ekleyelim sonra parçalara
-ayırdığımız css kodlarının ürünlere lazım olanlarını **urunler.css**
-içine ekleyelim.
+Ürünler bölümü için bir css dosyası ekleyelim sonra parçalara ayırdığımız css kodlarının ürünlere lazım olanlarını **urunler.css** içine ekleyelim.
 
 **urunler.css**
 
@@ -131,4 +116,6 @@ içine ekleyelim.
 @import url(/css/renkler.css);
 @import url(/css/urunlereozel.css);
 {% endhighlight %}
+
+**Not:** Normal css'de import tercih edilmezken, Sass, Less ve Stylus gibi dinamik CSS yapılarında tercih edilir. Örnek bir kullanım için [tıklayınız.](/sass-klasor-yapisi/)
 

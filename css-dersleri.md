@@ -18,7 +18,8 @@ Date: 2006-08-05 22:06
     -   [CSS'i Web Sayfalarına Eklemek][]
     -   [CSS'de Kısaltmalar][]
     -   [Hızlı CSS Referansı][]
-		-   [CSS - Zemin(Background) Özellikleri][Hızlı CSS Referansı]
+        -   [CSS - Zemin(Background) Özellikleri][Hızlı CSS Referansı]
+        -   [background-attachment local değeri](/background-attachment-local-degeri/)
         -   [Font Özellikleri][]
         -   [CSS Sınıflandırma-Liste Özellikleri][]
         -   [CSS Kutu Modeli Özellikleri 1 - Kenarlık(border) Özellikleri][]
@@ -29,10 +30,10 @@ Date: 2006-08-05 22:06
         -   [CSS Metin(Text) Özellikleri][]
         -   [Tablo Özellikleri][]
         -   [Dış hat çizgisi(outline) özellikleri][]
-	-   [Arapça Site Kodlamak ve direction:rtl özelliği][]
+    -   [Arapça Site Kodlamak ve direction:rtl özelliği][]
     -   [CSS Editörleri][]
     -   [İnternet Tarayıcıları][]
-		-   [Sessiz Tarayıcı Güncelleme Özelliği][]
+        -   [Sessiz Tarayıcı Güncelleme Özelliği][]
         -   [Firefox 6][]
         -   [Firefox 5][]
         -   [Firefox 4][]
@@ -47,7 +48,7 @@ Date: 2006-08-05 22:06
     -   [CSS Kod Yazma Düzeni][]
     -   [CSS Seçicilerinin Optimizasyonu][]
 -   Gelişmiş CSS Dersleri
-	-   [CSS'de Kalıtsallık(Inheritance)][]
+    -   [CSS'de Kalıtsallık(Inheritance)][]
     -   [CSS'de Tanımlamalar ve Etkinlikleri(Specificity)][]
     -   [!important Tanımı][]
     -   [CSS'de Çıktı alma (Print)][]
@@ -167,7 +168,7 @@ Date: 2006-08-05 22:06
     -   [İnternet Explorer hasLayout Kabulü ve Sorunları][]
     -   [İnternet Explorer’da Renk Geçişi Sorunu ve Çözümü][]
     -   [IE6/IE7 filtre “Renk Geçişi Tanımı – Konumlandırma” Sorunu ve Çözümsüzülüğü :D][]
-	-   [Chrome'un -99999999px sorunu](/chrome-un-99999999px-sorunu/ "Chrome'un -99999999px sorunu")
+    -   [Chrome'un -99999999px sorunu](/chrome-un-99999999px-sorunu/ "Chrome'un -99999999px sorunu")
 
 -   CSS İpuçları
     -   [CSS İpuçları 1 : üç kelimeli font tanımı][]
@@ -240,7 +241,7 @@ Date: 2006-08-05 22:06
     -   [CSS3 pointer-events özelliği][]
     -   [CSS3 Dönüştürme Özellikleri(Transforms) ve 2B Dönüştürme][]
     -   [CSS3 Dönüştürme(Transforms) ve 3B Dönüştürme][]
-	-   [CSS3 Geçiş Efektleri(Transitions)](/css3-gecis-efektleri-transitions/)
+    -   [CSS3 Geçiş Efektleri(Transitions)](/css3-gecis-efektleri-transitions/)
     -   [CSS3 Çevrimiçi Araçları][]
     -   [CSS3 Animasyon(Animation)](/css3-animasyonanimation/)
     -   [CSS3 Plan Modülleri](/css3-plan-modulleri/)

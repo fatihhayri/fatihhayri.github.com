@@ -6,6 +6,8 @@ Category: CSS, XHTML
 tags: CSS, gölge, resimlere_gölge, XHTML
 ---
 
+Bu makalede geçen yöntemlere artık gerek kalmamıştır. CSS3 ile gelen [box-shadow](/kutulara-golge-vermek-box-shadow/) özelliği bu işi kökünden hallediyor. **(19.01.2016 güncellendi)**
+
 Resimlere gölge vermek bir çok tasarımcının kullandığı derinlik hissi
 veren güzel bir efekttir. Bir çok insan bu efekti vermek için resim
 düzenleme programlarını kullanmaktadır. Resimlere CSS ile de gölge

@@ -6,21 +6,15 @@ Category: CSS, Web Standartları, XHTML
 tags: box-shadow, css3, gölgeli kutular, kutu gölgesi
 ---
 
-Şuanki şartlar düşünüldüğünde normal olarak bir kutunun gölgesini vermek
-için daha öncede açıkladığımız gibi bir kaç yöntem var. Bu yöntemleri
-incelemek için http://www.fatihhayrioglu.com/css-ile-golge-vermek/
-bağlantısındaki yazıya göz atalım. Buradaki yöntemleri incelediğimizde
-çok fazla gereksiz ve fazladan katman(div) kullanmak zorunda kaldığımızı
-göreceksiniz. CSS3 ile gelen box-shadow özelliği sayesinde çok basit bir
-tanımlama ile bu fazlalıklar ve zorluklardan kurtulabiliyoruz.
-
+<s>Şuanki şartlar düşünüldüğünde normal olarak bir kutunun gölgesini vermek için daha öncede açıkladığımız gibi bir kaç yöntem var. Bu yöntemleri incelemek için http://www.fatihhayrioglu.com/css-ile-golge-vermek/ bağlantısındaki yazıya göz atalım.</s> Buradaki yöntemleri incelediğimizde çok fazla gereksiz ve fazladan katman(div) kullanmak zorunda kaldığımızı
+göreceksiniz. CSS3 ile gelen box-shadow özelliği sayesinde çok basit bir tanımlama ile bu fazlalıklar ve zorluklardan kurtulabiliyoruz.
 
 box-shadow yapısını inceleyelim.
 
-**Yapısı :** box-shadow: <deger\>, (değer)
-**Aldığı Değerler :** none | <gölge\> [ , <gölge\> ]*\\
-**Başlangıç değeri:**tanımlama yok\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Yapısı :** box-shadow: (değer)
+**Aldığı Değerler :** none | (gölge) [ , (gölge) ] 
+**Başlangıç değeri:** tanımlama yok 
+**Uygulanabilen elementler:** tüm elementler 
 **Kalıtsallık:**Yok
 {: .cssozelliktanimi}
 
@@ -28,35 +22,27 @@ Temel kullanımı.
 
 {% highlight css %}
 .golgeliKutu {
-	box-shadow: 3px 3px 4px #000;
+  box-shadow: 3px 3px 4px #000;
 }
 {% endhighlight %}
 
-Değerler metinlere gölge verme(text-shadow) özelliği ile aynı anlamı
-taşır.
+Değerler metinlere gölge verme (text-shadow) özelliği ile aynı anlamı taşır.
 
-**3px;** İlk değer yataydaki mesafe içindir. Artı değerler kutunun
-sağından itibaren uzaklık değeridir, negatif değerler kutunun soluna
-doğru mesafeyi gösterir.
+**3px;** İlk değer yataydaki mesafe içindir. Artı değerler kutunun sağından itibaren uzaklık değeridir, negatif değerler kutunun soluna doğru mesafeyi gösterir.
 
-**3px;** İkinci değer dikeydeki mesafe içindir. Artı değerler kutunun
-altına doğru mesafeyi gösterir, eksi değerler ise kutunun üstüne doğru
-mesafesini gösterir.
+**3px;** İkinci değer dikeydeki mesafe içindir. Artı değerler kutunun altına doğru mesafeyi gösterir, eksi değerler ise kutunun üstüne doğru mesafesini gösterir.
 
-**4px;** Bulanıklık(blur) değeridir. Gölgelerin gerçeğe yaklaşması için
-kullanılır. Bulanık yatay ve dikey için verilen değerler göre şekil
-alır.
+**4px;** Bulanıklık(blur) değeridir. Gölgelerin gerçeğe yaklaşması için kullanılır. Bulanık yatay ve dikey için verilen değerler göre şekil alır.
 
 **#000;** renk değeri. Gölgenin renk değerini gösterir.
 
-Farklı tarayıcılar için ön ek kullanılarak çözüm üretilir. -moz Firefox
-için, -webkit Safari ve Google Chrome için.
+<s>Farklı tarayıcılar için ön ek kullanılarak çözüm üretilir. -moz Firefox için, -webkit Safari ve Google Chrome için.</s>
 
 {% highlight css %}
 .golgeliKutu {
-	 box-shadow: 3px 3px 4px #000;
-	 -moz-box-shadow: 3px 3px 4px #000;
-	 -webkit-box-shadow: 3px 3px 4px #000;
+   box-shadow: 3px 3px 4px #000;
+   -moz-box-shadow: 3px 3px 4px #000;
+   -webkit-box-shadow: 3px 3px 4px #000;
  }
  {% endhighlight %}
 
@@ -64,101 +50,80 @@ için, -webkit Safari ve Google Chrome için.
 
 |![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
 |:-----------------:|:---------------:|:-------------------:|
-|**2.0+**|**9+**|**3.5+**|
+|**+**|**9+**|**+**|
 {: .tarayici-uyumi}
 
 **Mobil Tarayıcılar**
 
 |![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
 |:------------------------:|:----------------------:|:-------------------:|
-|**2.1+ (-webkit)**|**3.2+**|**36+**|
+|**+**|**+**|**+**|
 {: .tarayici-uyumi}
 
 Örnek bir kutu görmek için bir kaç tanım daha ekleyelim.
 
 {% highlight css %}
-.golgeliKutu {
-	box-shadow: 3px 3px 4px #000;
-	-moz-box-shadow: 3px 3px 4px #000;
-	-webkit-box-shadow: 3px 3px 4px #000;
-	width:250px;
-	padding:5px;
-	font:12px Arial, Helvetica, sans-serif;
-	background:#CCC
+.golgeli-kutu {
+  box-shadow: 2px 2px 6px #000;
+  width:250px;
+  padding:5px;
+  font:12px Arial, Helvetica, sans-serif;
+  background:#CCC
 }
 {% endhighlight %}
 
 HTML kodu
 
 {% highlight html %}
-<div class="golgeliKutu"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper commodo fermentum. Proin eu sollicitudin neque. Sed enim tellus, condimentum sed interdum vitae, mattis et nisl. Sed nec nisl est, sagittis lobortis eros. Integer pharetra turpis eu est eleifend faucibus. Phasellus pulvinar massa sagittis nisl posuere at rhoncus velit blandit. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<div class="golgeli-kutu"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper commodo fermentum. Proin eu sollicitudin neque. Sed enim tellus, condimentum sed interdum vitae, mattis et nisl. Sed nec nisl est, sagittis lobortis eros. Integer pharetra turpis eu est eleifend faucibus. Phasellus pulvinar massa sagittis nisl posuere at rhoncus velit blandit. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </div>
 {% endhighlight %}
 
-![Gölgeli Kutu][]
+<iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/XXzeBR/?height=268&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
 
-Örneği görüntülemek için [tıklayınız.][]
-
-Bu kod sayesinde bir çok avantaj sağlarız. Fazla kod yığınından
-kurtuluruz, kolay içerik yenileme imkanı sağlar, hızlı yüklenir,
-geleceğe uyumludur. Dezavantaj olarak ie'nin desteklememesi sayıla
-bilir.
+Bu kod sayesinde bir çok avantaj sağlarız. Fazla kod yığınından kurtuluruz, kolay içerik yenileme imkanı sağlar, hızlı yüklenir, geleceğe uyumludur. <s>Dezavantaj olarak ie'nin desteklememesi sayıla bilir.</s>
 
 **Birden çok gölge kullanımı**
 
-box-shadow tanımında tek bir gölge tanımı yapılabildiği gibi, birden
-fazla gölge tanımıda yapılabilmektedir. Her bir tanım birbirinden virgül
-ile ayrılır.
+box-shadow tanımında tek bir gölge tanımı yapılabildiği gibi, birden fazla gölge tanımıda yapılabilmektedir. Her bir tanım birbirinden virgül ile ayrılır.
 
 {% highlight css %}
-.golgeliKutu {
-    box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
-    -moz-box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
-    -webkit-box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
-    width:250px;
-    padding:5px;
-    font:12px Arial, Helvetica, sans-serif;
-    background:#CCC
+.golgeli-kutu {
+  box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
+  width:250px;
+  padding:5px;
+  font:12px Arial, Helvetica, sans-serif;
+  background:#CCC;
 }
 {% endhighlight %}
 
-
-![Çoklu Gölgeli Kutu][]
-
-Örneği görmek için [tıklayınız.][1]
+<iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/mVqBGv/?height=268&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
 
 **inset ile kutu içine gölge vermek**
 
-Kutulara gölge verirken kutu içinede gölge verebiliyoruz. inset eklemesi
-ile kutu içine gölge verme imkanımız var.
+Kutulara gölge verirken kutu içinede gölge verebiliyoruz. **inset** eklemesi ile kutu içine gölge verme imkanımız var.
 
 {% highlight css %}
-.golgeliKutu {
-    box-shadow: inset 0 0 0.5em blue;;
-    -moz-box-shadow: inset 0 0 0.5em blue;
-    -webkit-box-shadow: inset 0 0 0.5em blue;
-    width:250px;
-    padding:5px;
-    font:12px Arial, Helvetica, sans-serif;
+.golgeli-kutu {
+  box-shadow: inset 0 0 0.5em blue;;
+  width:250px;
+  padding:5px;
+  font:12px Arial, Helvetica, sans-serif;
 }
 {% endhighlight %}
 
-![İçe Gölge][]
-
-Örneği görmek için [tıklayınız.][2]
+<iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/YwErJJ/?height=268&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
 
 ## İE İçin Çözüm
 
-İE içinde çözümler üretilmiştir. Her ne kadar **box-shadow** esnekliği
-ve kolaylığını bize sağlamasada bir çözüm yöntemi vardır.
+İE içinde çözümler üretilmiştir. Her ne kadar **box-shadow** esnekliği ve kolaylığını bize sağlamasada bir çözüm yöntemi vardır.
 
-İnternet Explorer için çözüm üretilirken **DropShadow** ve **Shadow**
-filtrelerinden yararlanılır.
+İnternet Explorer için çözüm üretilirken **DropShadow** ve **Shadow** filtrelerinden yararlanılır.
 
-Dropshadow filtresi uygulamasında bulanıklık ataması yapılmadan daha
-keskin gölgeler görürüz. X ve Y değerleri ile açı verebiliriz. Shadow
-filtresi daha gerçekçi çözümler üretir ancak shadow filtresinde de x ve
-y tanımlarını yapmamıza izin vermez.
+Dropshadow filtresi uygulamasında bulanıklık ataması yapılmadan daha keskin gölgeler görürüz. X ve Y değerleri ile açı verebiliriz. Shadow filtresi daha gerçekçi çözümler üretir ancak shadow filtresinde de x ve y tanımlarını yapmamıza izin vermez.
 
 {% highlight css %}
 /* For IE 8 */
@@ -171,13 +136,11 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Colo
 yukarıdaki kod ile birleştirirsek
 
 {% highlight css %}
-.golgeliKutu {
+.golgeli-kutu {
     width:250px;
     font:12px Arial, Helvetica, sans-serif;
     background:#CCC;
     padding:5px;
-    -moz-box-shadow: 3px 3px 4px #000;
-    -webkit-box-shadow: 3px 3px 4px #000;
     box-shadow: 3px 3px 4px #000;
     /* For IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
@@ -190,8 +153,7 @@ yukarıdaki kod ile birleştirirsek
 
 Örneği görmek için [tıklayınız.][3]
 
-Tam olarak box-shadow etkisi gibi etki etmese de bir çözüm olarak
-kullanılabilir.
+Tam olarak box-shadow etkisi gibi etki etmese de bir çözüm olarak kullanılabilir.
 
 ## Kaynaklar
 
