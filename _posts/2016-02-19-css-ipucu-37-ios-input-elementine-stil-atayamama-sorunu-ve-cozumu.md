@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS İpucu 37 : iOS input elementine stil atayamama sorunu ve çözümü
+title: CSS İpucu 37 - iOS input elementine stil atayamama sorunu ve çözümü
 Date: 2016-02-19 12:00
 Category: css
 tags: ipucu webkit input
