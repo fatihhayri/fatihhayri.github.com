@@ -334,8 +334,6 @@ a.buton{
 }
 {% endhighlight %}
 
-![][9]
-
 Şimdide fare üzerine geldiğindeki halinide ekleyelim.
 
 {% highlight css %}
@@ -355,8 +353,7 @@ Bu sefer CSS3'ün renk geçişi(gradients) özelliğindende yararlanalım.
 {% highlight css %}
 a.buton{
     background:#d21b00;
-    background: -moz-linear-gradient(top, #d21b00, #8e0700);
-    background: -webkit-gradient(linear, left top, left bottom, from(#d21b00), to(#8e0700));
+    background: linear-gradient(top, #d21b00, #8e0700);
     padding:20px 25px;
     text-decoration:none;
     color:#fff;
@@ -368,8 +365,7 @@ a.buton{
 }
 
 a.buton:hover{
-    background: -moz-linear-gradient(top, #8e0700, #d21b00);
-    background: -webkit-gradient(linear, left top, left bottom, from(#8e0700), to(#d21b00));
+    background: linear-gradient(top, #8e0700, #d21b00);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75);
 }
@@ -378,8 +374,6 @@ a.buton:hover{
 
 <iframe height='171' scrolling='no' src='//codepen.io/fatihhayri/embed/mPbRMP/?height=171&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
-
-![][12]
 
 CSS3 özellikleri yardımı ile resim kullanmadan bir çok örnek
 yapabiliriz. 
