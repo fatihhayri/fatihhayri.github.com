@@ -190,7 +190,7 @@ Başlangıç değer normal olarak tanımlıdır. Aldığı değerler
   animation-duration: 3s;
   animation-timing-function:ease;
   animation-iteration-count: 3;
-  animation-direction:reverse;
+  animation-direction: alternate-reverse;
 }
 {% endhighlight %}
 
