@@ -29,39 +29,25 @@ içerik) ve alt kısmı olan bir sayfa iskeleti oluşturalım. Burada sol
 menü alanının genişliğini sabit tutup sağdaki içerik alanının
 genişliğini esnek yapacağız. Xhtml kodu:
 
-	:::html
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-	<title>%100 Genişlik %100 Yükseklik – İki Kolon</title>
-	<style type="text/css">
-	<!--
-	@import url("style/iki_kolonlu_yuzdeyuz.css");
-	-->
-	</style>
-	</head>
-	<body>
+{% highlight html %}
 	<div class="kapsul">
-	<div id="ustAlan"> üst alan
-	</div>
-	<div id="solAlan">Menü</div>
-	<div id="icerikAlani">
-	Lorem ipsum dolor sit amet, ..., tempor at, sem.
-	<p>Sed adipiscing, ... in ligula. </p>
-	</div>
-	<div class="tampon"></div>
+		<div id="ustAlan"> üst alan
+		</div>
+		<div id="solAlan">Menü</div>
+		<div id="icerikAlani">
+		Lorem ipsum dolor sit amet, ..., tempor at, sem.
+		<p>Sed adipiscing, ... in ligula. </p>
+		</div>
+		<div class="tampon"></div>
 	</div>
 	<div id="altAlan">
-	<p>Alt Kısım</p>
+		<p>Alt Kısım</p>
 	</div>
-	</body>
-	</html>
-
+{% endhighlight %}
 
 CSS Kodu;
 
-	:::css
+{% highlight css %}
 	* {
 	margin: 0;
 	}
@@ -106,8 +92,9 @@ CSS Kodu;
 	    color:#036;
 	    background-color:#cfc;
 	}
+{% endhighlight %}
 
-Örnek kodu görmek için [tıklayınız.][]
+<iframe height='473' scrolling='no' src='//codepen.io/fatihhayri/embed/LNLPwj/?height=473&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
 
 Burada değinmemiz gereken önemli alanları belirtelim. **.kapsul**
 alanındaki tanımlarda 100% yüksekliği yakalamak için yükseklik değerine
@@ -139,42 +126,27 @@ işaretlenmiştir.
 
 HTML kodu:
 
-	:::html
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
-	<title>%100 Genişlik %100 Yükseklik – İki Kolon</title>
-	<style type="text/css">
-	<!--
-	@import url("style/iki_kolonlu_yuzdeyuz.css");
-	-->
-	</style>
-	</head>
-	<body>
+{% highlight html %}
 	<div class="kapsul">
-	<div id="ustAlan"> üst alan
-	</div>
-	<div id="solAlan">Menü</div>
-	<div id="sagAlan">
-
-	<p>Sağ Alan </p></div>
-	<div id="icerikAlani">
-	Lorem ipsum dolor sit amet, ... sem.
-	<p>Sed adipiscing, ... ligula. </p>
-	</div>
-	<div class="tampon"></div>
+		<div id="ustAlan"> üst alan</div>
+		<div id="solAlan">Menü</div>
+		<div id="sagAlan">
+			<p>Sağ Alan </p>
+		</div>
+		<div id="icerikAlani">
+		Lorem ipsum dolor sit amet, ... sem.
+		<p>Sed adipiscing, ... ligula. </p>
+		</div>
+		<div class="tampon"></div>
 	</div>
 	<div id="altAlan">
-	<p>Alt Kısım</p>
+		<p>Alt Kısım</p>
 	</div>
-	</body>
-	</html>
-
+{% endhighlight %}
 
 CSS Kodu
 
-	:::css
+{% highlight html %}
 	* {
 		margin: 0;
 	}
@@ -225,8 +197,10 @@ CSS Kodu
 	    float: right;
 	    width: 15em;
 	}
+{% endhighlight %}
 
-Örnek kodu görmek için [tıklayınız.][1]
+<iframe height='444' scrolling='no' src='//codepen.io/fatihhayri/embed/rewNBL/?height=444&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
 
 Kodlar IE6, IE7 ve FF da denenmiştir.
 
@@ -236,8 +210,6 @@ Kodlar IE6, IE7 ve FF da denenmiştir.
 -   [http://ryanfait.com/sticky-footer/][]
 
   [İki Kolon]: /images/iki_kolon_yuzde.gif
-  [tıklayınız.]: /dokumanlar/iki_kolonlu_yuzdeyuz.html
   [Üç kolon]: /images/uc_kolon_yuzde.gif
-  [1]: /dokumanlar/uc_kolonlu_yuzdeyuz.html
   [http://www.maxdesign.com.au/presentation/liquid/example02.htm]: http://www.maxdesign.com.au/presentation/liquid/example02.htm
   [http://ryanfait.com/sticky-footer/]: http://ryanfait.com/sticky-footer/
