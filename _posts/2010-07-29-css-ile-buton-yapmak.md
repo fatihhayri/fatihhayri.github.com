@@ -301,8 +301,6 @@ a.buton{
     text-decoration:none;
     color:#fff;
     font:bold 14px Arial, Helvetica, sans-serif;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
     border-radius: 7px;
 }
 {% endhighlight %}
@@ -316,12 +314,8 @@ a.buton{
     text-decoration:none;
     color:#fff;
     font:bold 20px Arial, Helvetica, sans-serif;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
     border-radius: 7px;
     box-shadow: 3px 3px 4px #000;
-    -moz-box-shadow: 0 1px 2px #000;
-    -webkit-box-shadow: 3px 3px 4px #000;
 }
 {% endhighlight %}
 
@@ -334,17 +328,11 @@ a.buton{
     text-decoration:none;
     color:#fff;
     font:bold 20px Arial, Helvetica, sans-serif;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
     border-radius: 7px;
     box-shadow: 0 1px 2px #000;
-    -moz-box-shadow: 0 1px 2px #000;
-    -webkit-box-shadow: 0 1px 2px #000;
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
 }
 {% endhighlight %}
-
-![][9]
 
 Şimdide fare üzerine geldiğindeki halinide ekleyelim.
 
@@ -355,7 +343,8 @@ a.buton:hover{
 }
 {% endhighlight %}
 
-Örneği görmek için [tıklayınız.][10]
+<iframe height='108' scrolling='no' src='//codepen.io/fatihhayri/embed/qZWRrz/?height=108&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
 
 **İkinci bir örnek yapalım.**
 
@@ -364,36 +353,27 @@ Bu sefer CSS3'ün renk geçişi(gradients) özelliğindende yararlanalım.
 {% highlight css %}
 a.buton{
     background:#d21b00;
-    background: -moz-linear-gradient(top, #d21b00, #8e0700);
-    background: -webkit-gradient(linear, left top, left bottom, from(#d21b00), to(#8e0700));
+    background: linear-gradient(top, #d21b00, #8e0700);
     padding:20px 25px;
     text-decoration:none;
     color:#fff;
     font:bold 36px Arial, Helvetica, sans-serif;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
     border-radius: 7px;
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.75);
     border:5px solid #fff;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
 }
 
 a.buton:hover{
-    background: -moz-linear-gradient(top, #8e0700, #d21b00);
-    background: -webkit-gradient(linear, left top, left bottom, from(#8e0700), to(#d21b00));
+    background: linear-gradient(top, #8e0700, #d21b00);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.75);
 }
 {% endhighlight %}
 
 
-Örneği görmek için [tıklayınız.][11]
-
-![][12]
+<iframe height='171' scrolling='no' src='//codepen.io/fatihhayri/embed/mPbRMP/?height=171&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
 
 CSS3 özellikleri yardımı ile resim kullanmadan bir çok örnek
 yapabiliriz. 
