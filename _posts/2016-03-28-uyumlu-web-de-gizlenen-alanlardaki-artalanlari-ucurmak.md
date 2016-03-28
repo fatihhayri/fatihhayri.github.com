@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS İpucu 38: Uyumlu web'de gizlenen alanlardaki artalanları uçurmak
+title: CSS İpucu 38 - Uyumlu web'de gizlenen alanlardaki artalanları uçurmak
 Date: 2016-03-28 10:00
 Category: css
 tags: ipucu background-image uyumlu-web
