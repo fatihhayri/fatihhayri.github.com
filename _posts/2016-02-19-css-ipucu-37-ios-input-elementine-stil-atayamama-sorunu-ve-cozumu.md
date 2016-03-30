@@ -12,7 +12,7 @@ iOS input elementine yaptığımız CSS tanımlarını uygulamıyor. Webkit'in f
 
 Normalde aşağıdaki gibi görünmesi gereken buton;
 
-![enter image description here](http://fatihhayrioglu.com/images/ios-webkit-bug-2.gif){:height="40px" width="400px"}
+![enter image description here](http://fatihhayrioglu.com/images/ios-webkit-bug-2.png){:height="40px" width="400px"}
 
 Böyle görünüyor
 
