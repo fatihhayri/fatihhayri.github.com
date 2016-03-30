@@ -35,11 +35,11 @@ Sıra geldi istediğim işletim sistemini kurmaya. Bu konuda Microsoft bize çok
  - MSEdge on Win10
 
 
-![enter image description here](http://fatihhayrioglu.com/images/microsft-imaj.png)
+![enter image description here](http://fatihhayrioglu.com/images/microsft-imaj.png){:height="290px" width="550px"}
 
 Ben Windows 7 üzerinde Internet Explorer 11 seçtim. Sonrada ( Select Platform ) kısmından VirtualBox'ı seçtim. 
 
-![enter image description here](http://fatihhayrioglu.com/images/microsoft-imaj-2.png)
+![enter image description here](http://fatihhayrioglu.com/images/microsoft-imaj-2.png){:height="219px" width="500px"}
 
 Sağ taraftan Download.zip'a tıklayıp windows imajını indirdim. Dosya boyutu **3,81 Gb**. Uygun zamanda indirmekte yarar var.
 
@@ -47,15 +47,15 @@ Bu dosyayı dokümanlarda uygun bir yere taşıyıp [Rar Extrator Free](https://
 
 Sonuç aşağıdaki gibi.
 
-![enter image description here](http://fatihhayrioglu.com/images/virtualbox-ie11.png)
+![enter image description here](http://fatihhayrioglu.com/images/virtualbox-ie11.png){:height="442px" width="550px"}
 
 Daha sonra Windows üzerinde ağ ayarlarını yaparak kendi bilgisayarınıza ağ üzerinden ulaşabilirsiniz. Ben daha önce bu konuda sorun yaşarken bu sefer sorun yaşamadım.
 
-![enter image description here](http://fatihhayrioglu.com/images/virtualbox-ie11-acik.png) 
+![enter image description here](http://fatihhayrioglu.com/images/virtualbox-ie11-acik.png){:height="436px" width="550px"}
 
 Direk bilgisayarımın ip'sini yazarak İnternet Explorer testlerime başladım.
 
-![enter image description here](http://fatihhayrioglu.com/images/ie11-testi.png)
+![enter image description here](http://fatihhayrioglu.com/images/ie11-testi.png){:height="436px" width="550px"}
 
 Kalın sağlıcakla.
 

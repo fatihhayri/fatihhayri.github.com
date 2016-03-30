@@ -11,7 +11,7 @@ tags: bootstrap ızgara-sistemi sayfa-planı
 
 Izgara ( Grid ) sistemleri sitemizin belli standarda uygun ve hızlı bir şekilde sayfa planını oluşturmamıza yarayan sistemlerdir. Bu sistemlerin uygulaması tasarımdan başlar. Tasarımcı bu sisteme uygun bir site çıkarır. Kod yazarken bizde bu yapıyı uygularız. Bu durum maalesef tasarımcı, arayüz geliştirici arasındaki koordinasyon eksikliğinden çok fazla projede uygulanamamasına neden oluyor. Daha sistemli ve standart çalışmak için güzel yapılar. 
 
-![enter image description here](http://fatihhayrioglu.com/images/izgara-sistemi.gif)
+![enter image description here](http://fatihhayrioglu.com/images/izgara-sistemi.gif){:height="299px" width="524px"}
 
 Biz arayüz geliştiriciler için bulunmaz bir nimet olan ızgara yapıları sayesinde, kodlama sürelerimiz ciddi ölçüde azalır. Genişlikler, ara boşluklar belli olduğu için sayfa planını oluşturmak çok basit bir hal alır. Daha önce ben 
 [PSD'den HTML'e - fanatikmarslar.com Sitesinin Kodlaması](http://fatihhayrioglu.com/fanatikmarslar-com-sitesinin-kodlamasi/) makalesinde anlattığım gibi tüm bu değerleri tek tek ölçüp tanımlamam gerekiyordu. Ancak ızgara sistemi ile oluşturulan sitelerde bu değerler belli ve atanmış olduğu için bu kısmı hızlıca geçeriz.
@@ -38,7 +38,7 @@ Normal ızgara sistemlerine benzer bir yapıya sahip bootstrap ızgara sistemi, 
 
 Bootstrap 2'ye göre bootstrap 3 daha fazla kesme noktasına (breakpoint) sahip. Bootstrap 2'de mobil ve masaüstü noktaları varken, bootstrap 3 mobil, tablet, masaüstü ve daha büyük ekranlar olmak üzere dört durma noktası mevcuttur. Ayrıca Öncelik Mobilde (Mobile First) akımı etkisine giren 3. sürüm bunun etkilerini grid sistemde göstermiştir. 
 
-![enter image description here](http://fatihhayrioglu.com/images/izgara-uyumlu-web.gif)
+![enter image description here](http://fatihhayrioglu.com/images/izgara-uyumlu-web.gif){:height="289px" width="473px"}
 
 Uyumlu web sitesi kodlarken bir ızgara sistemi kullanmak neredeyse zorunlu hale geliyor. Normal zamanlarda kullanmıyorsak bile uyumlu web siteleri yaparken olmazsa olmazımız oluyor.
 

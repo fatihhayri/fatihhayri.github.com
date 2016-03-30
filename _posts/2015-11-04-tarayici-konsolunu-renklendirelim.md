@@ -10,7 +10,7 @@ Arayüz geliştiriciler neredeyse kod yazdığı editörleriyle geçirdiği zama
 
 Bir yerden sonra **console.log** ile konsola bastığım değerler arasından bazı değerleri ayırt etmek gerekiyor. Bunun için tarayıcıların CSS yardımı ile bir çözümü mevcut.
 
-![console log](http://fatihhayrioglu.com/images/console-log-1.png)
+![console log](http://fatihhayrioglu.com/images/console-log-1.png){:height="316px" width="1056px"}
 
 {% highlight javascript %}
 console.log('%c Şampiyon Trabzonspor', 'background: #379DE8; color: #550329; font-size: 24px');
@@ -18,7 +18,7 @@ console.log('%c Şampiyon Trabzonspor', 'background: #379DE8; color: #550329; fo
 
 **console.log** içindeki ilk virgüle kadar olan yer içeriği, virgülden sonraki kısımda konsolda görünecek alana atadığımız css kodlarını gösteriyor. CSS ile yapıyor olmak süper. Şimdi süper oldu. Dikkat edilecek husus ilk bloka **%c** ile başlamalıyız.
 
-![console log renkli](http://fatihhayrioglu.com/images/console-log-2.png)
+![console log renkli](http://fatihhayrioglu.com/images/console-log-2.png){:height="308px" width="1248px"}
 
 ## Kaynaklar
 
