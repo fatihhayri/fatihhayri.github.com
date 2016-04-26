@@ -92,6 +92,7 @@ paragraf içinde geçen **b** elementlerine özel bir atama yapmak istiyoruz bun
 blockquote b, p b {
   color: gray;
 }
+{% endhighlight %}
 
 Koda dikkat edersek her iki atamayı ayrı ayrı yapmak yerine araya bir virgül koyarak birlikte yaptığımızı görürsünüz.
 
@@ -222,6 +223,11 @@ katman, .uyari sınıfı içindeki tüm elementler kırmızı olacaktır.
 
 
 
-  [100]: /images/hiyerarsi.gif
-  [1]: /images/hiyerarsi02.gif
-  [2]: /images/hiyerarsi03.gif
+[100]: /images/hiyerarsi.gif
+[1]: /images/hiyerarsi02.gif
+[2]: /images/hiyerarsi03.gif
+[firefox]: http://fatihhayrioglu.com//images/ff.png
+[chrome]: http://fatihhayrioglu.com//images/ch.png
+[explorer]: http://fatihhayrioglu.com//images/ie.png
+[msafari]:http://fatihhayrioglu.com//images/sm.png
+[android]:http://fatihhayrioglu.com//images/an.png
