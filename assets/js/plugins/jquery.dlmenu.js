@@ -12,9 +12,6 @@
 
 	'use strict';
 
-	// global
-	var Modernizr = window.Modernizr, $body = $( 'body' );
-
 	$.DLMenu = function( options, element ) {
 		this.$el = $( element );
 		this._init( options );
@@ -40,27 +37,6 @@
 			// cache some elements and initialize some variables
 			this._config();
 			
-			var animEndEventNames = {
-					'WebkitAnimation' : 'webkitAnimationEnd',
-					'OAnimation' : 'oAnimationEnd',
-					'msAnimation' : 'MSAnimationEnd',
-					'animation' : 'animationend'
-				},
-				transEndEventNames = {
-					'WebkitTransition' : 'webkitTransitionEnd',
-					'MozTransition' : 'transitionend',
-					'OTransition' : 'oTransitionEnd',
-					'msTransition' : 'MSTransitionEnd',
-					'transition' : 'transitionend'
-				};
-			// animation end event name
-			this.animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ] + '.dlmenu';
-			// transition end event name
-			this.transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ] + '.dlmenu',
-			// support for css animations and css transitions
-			this.supportAnimations = Modernizr.cssanimations,
-			this.supportTransitions = Modernizr.csstransitions;
-
 			this._initEvents();
 
 		},
@@ -99,7 +75,7 @@
 
 					var $flyin = $submenu.clone().css( 'opacity', 0 ).insertAfter( self.$menu ),
 						onAnimationEndFn = function() {
-							self.$menu.off( self.animEndEventName ).removeClass( self.options.animationClasses.classout ).addClass( 'dl-subview' );
+							self.$menu.off( self.animationend ).removeClass( self.options.animationClasses.classout ).addClass( 'dl-subview' );
 							$item.addClass( 'dl-subviewopen' ).parents( '.dl-subviewopen:first' ).removeClass( 'dl-subviewopen' ).addClass( 'dl-subview' );
 							$flyin.remove();
 						};
@@ -107,12 +83,7 @@
 					setTimeout( function() {
 						$flyin.addClass( self.options.animationClasses.classin );
 						self.$menu.addClass( self.options.animationClasses.classout );
-						if( self.supportAnimations ) {
-							self.$menu.on( self.animEndEventName, onAnimationEndFn );
-						}
-						else {
-							onAnimationEndFn.call();
-						}
+						self.$menu.on( self.animationend, onAnimationEndFn );
 
 						self.options.onLevelClick( $item, $item.children( 'a:first' ).text() );
 					} );
@@ -135,19 +106,14 @@
 					$flyin = $submenu.clone().insertAfter( self.$menu );
 
 				var onAnimationEndFn = function() {
-					self.$menu.off( self.animEndEventName ).removeClass( self.options.animationClasses.classin );
+					self.$menu.off( self.animationend ).removeClass( self.options.animationClasses.classin );
 					$flyin.remove();
 				};
 
 				setTimeout( function() {
 					$flyin.addClass( self.options.animationClasses.classout );
 					self.$menu.addClass( self.options.animationClasses.classin );
-					if( self.supportAnimations ) {
-						self.$menu.on( self.animEndEventName, onAnimationEndFn );
-					}
-					else {
-						onAnimationEndFn.call();
-					}
+					self.$menu.on( self.animationend, onAnimationEndFn );
 
 					$item.removeClass( 'dl-subviewopen' );
 					
@@ -179,12 +145,7 @@
 			this.$menu.addClass( 'dl-menu-toggle' );
 			this.$trigger.removeClass( 'dl-active' );
 			
-			if( this.supportTransitions ) {
-				this.$menu.on( this.transEndEventName, onTransitionEndFn );
-			}
-			else {
-				onTransitionEndFn.call();
-			}
+			this.$menu.on( this.transEndEventName, onTransitionEndFn );
 
 			this.open = false;
 		},
