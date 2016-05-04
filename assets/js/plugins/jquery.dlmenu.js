@@ -12,6 +12,8 @@
 
 	'use strict';
 
+	// global
+
 	$.DLMenu = function( options, element ) {
 		this.$el = $( element );
 		this._init( options );
@@ -37,6 +39,14 @@
 			// cache some elements and initialize some variables
 			this._config();
 			
+			// animation end event name
+			this.animEndEventName = 'animationend.dlmenu';
+			// transition end event name
+			this.transEndEventName = 'transitionend.dlmenu',
+			// support for css animations and css transitions
+			this.supportAnimations = true,
+			this.supportTransitions = true;
+
 			this._initEvents();
 
 		},
@@ -75,7 +85,7 @@
 
 					var $flyin = $submenu.clone().css( 'opacity', 0 ).insertAfter( self.$menu ),
 						onAnimationEndFn = function() {
-							self.$menu.off( self.animationend ).removeClass( self.options.animationClasses.classout ).addClass( 'dl-subview' );
+							self.$menu.off( self.animEndEventName ).removeClass( self.options.animationClasses.classout ).addClass( 'dl-subview' );
 							$item.addClass( 'dl-subviewopen' ).parents( '.dl-subviewopen:first' ).removeClass( 'dl-subviewopen' ).addClass( 'dl-subview' );
 							$flyin.remove();
 						};
@@ -83,7 +93,12 @@
 					setTimeout( function() {
 						$flyin.addClass( self.options.animationClasses.classin );
 						self.$menu.addClass( self.options.animationClasses.classout );
-						self.$menu.on( self.animationend, onAnimationEndFn );
+						if( self.supportAnimations ) {
+							self.$menu.on( self.animEndEventName, onAnimationEndFn );
+						}
+						else {
+							onAnimationEndFn.call();
+						}
 
 						self.options.onLevelClick( $item, $item.children( 'a:first' ).text() );
 					} );
@@ -106,14 +121,19 @@
 					$flyin = $submenu.clone().insertAfter( self.$menu );
 
 				var onAnimationEndFn = function() {
-					self.$menu.off( self.animationend ).removeClass( self.options.animationClasses.classin );
+					self.$menu.off( self.animEndEventName ).removeClass( self.options.animationClasses.classin );
 					$flyin.remove();
 				};
 
 				setTimeout( function() {
 					$flyin.addClass( self.options.animationClasses.classout );
 					self.$menu.addClass( self.options.animationClasses.classin );
-					self.$menu.on( self.animationend, onAnimationEndFn );
+					if( self.supportAnimations ) {
+						self.$menu.on( self.animEndEventName, onAnimationEndFn );
+					}
+					else {
+						onAnimationEndFn.call();
+					}
 
 					$item.removeClass( 'dl-subviewopen' );
 					
@@ -145,7 +165,12 @@
 			this.$menu.addClass( 'dl-menu-toggle' );
 			this.$trigger.removeClass( 'dl-active' );
 			
-			this.$menu.on( this.transEndEventName, onTransitionEndFn );
+			if( this.supportTransitions ) {
+				this.$menu.on( this.transEndEventName, onTransitionEndFn );
+			}
+			else {
+				onTransitionEndFn.call();
+			}
 
 			this.open = false;
 		},
@@ -157,7 +182,7 @@
 		_openMenu : function() {
 			var self = this;
 			// clicking somewhere else makes the menu close
-			$body.off( 'click' ).on( 'click.dlmenu', function() {
+			$('body').off( 'click' ).on( 'click.dlmenu', function() {
 				self._closeMenu() ;
 			} );
 			this.$menu.addClass( 'dl-menuopen dl-menu-toggle' ).on( this.transEndEventName, function() {
