@@ -16,7 +16,7 @@ Blog'un kazandırdığı avantajlardan birisi; yeni bir çalışma ortamında ve
 
 Geçen sene şöyle bir şeyi daha gördüm ki tek alan adı üzerinde çalıştığım şirketlerde (zingat.com, sahibinden.com) web ajanslarından daha az üretken oluyorum. Web ajanslarında devamlı farklı projelerle uğraşmanın iyi yanı. Tabi onunda kendince dezavantajları da var.
 
-Blog'da beni düşündüren durumlardan birisi de yazılar hakkında olumlu veya olmusuz çok fazla geribildirimin olmaması. Genelde "güzel yazı", "eline sağlık" mesajları geliyor. Ben daha çok abi "bu yazıda şu kısım yanlış olmuş" veya "şöyle bir kod var abi bu daha iyi" yazan yorumları beğeniyorum. Bende çok şey istiyorum galiba :)
+Blog'da beni düşündüren durumlardan birisi de yazılar hakkında olumlu veya olmusuz çok fazla geribildirimin olmaması. Genelde "güzel yazı", "eline sağlık" mesajları geliyor. Ben daha çok abi "bu yazıda şu kısım yanlış olmuş" veya "şöyle bir kod var abi bu daha iyi" yazan yorumları beğeniyorum. Ben de çok şey istiyorum galiba :)
 
 Daha üretken bir sene olması dileğiyle.
 Kalın sağlıcakla.
