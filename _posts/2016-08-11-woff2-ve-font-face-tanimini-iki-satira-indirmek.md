@@ -11,11 +11,11 @@ tags: font-face woff2 safari ios
 
 Twiiter'da bu gönderiyi görünce [font-face tanımını yenileyelim](http://fatihhayrioglu.com/font-face-tanimini-yenileyelim/) yazısında yenilediğim font-face tanımını acaba iki satıra indirebilirmiyim dedim içimden.  
 
-Woff formatı özel yazı formatlarının kullanımının yayılması için güzel bir adımdı. 2. sürümü daha küçük yazı tipi dosyaları sağlayarak bunu bir adam daha ileri getirdi.
+Woff formatı özel yazı tiplerinin kullanımının yayılması için güzel bir adımdı. 2. sürümü daha küçük yazı tipi dosyaları sağlayarak bunu bir adım daha ileri attı.
 
 ![enter image description here](http://fatihhayrioglu.com/images/yazi-tipi-boyutlari.png)
 
- Woff2 formatı bir önceki sürümüne nazaran %50'ye varan kazanımları var. Diğer yazı tiplerinden kat ve kat kazanımı olduğu resimde görünüyor.
+ Woff2 formatı bir önceki sürümüne nazaran %50'ye varan kazanım sağladı. Diğer yazı tiplerinden kat ve kat kazanımı olduğu resimde görünüyor.
 
 Özel yazı tipi için mevcutta kullandığım kod;
 
