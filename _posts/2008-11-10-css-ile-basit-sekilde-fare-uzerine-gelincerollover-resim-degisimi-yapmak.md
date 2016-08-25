@@ -23,26 +23,28 @@ göstermek için koydum, normal resimde bu olmayacak)
 
 ![anasayfaya dön][]
 
-Xhtml kodumuzu yazalım
+Html kodumuzu yazalım
 
-	:::html
-	<a class="anasayfayaDon" href="anasayfa.htm">Ana Sayfaya Dön</a>
+{% highlight html %}
+<a class="anasayfayaDon" href="anasayfa.htm">Ana Sayfaya Dön</a>
+{% endhighlight %}
 
 CSS kodumuzu yazalım
 
-	:::css
-	a.anasayfayaDon {
-	    display: block;
-	    width: 80px;
-	    height: 80px;
-	    background: url(images/degisen_resim.gif) 0 0 no-repeat;
-	    text-decoration: none;
-	    text-indent:-999px;
-	}
+{% highlight html %}
+a.anasayfayaDon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url(images/degisen_resim.gif) 0 0 no-repeat;
+  text-decoration: none;
+  text-indent:-999px;
+}
 
-	a:hover.anasayfayaDon {
-	    background-position: -80px 0;
-	}
+a:hover.anasayfayaDon {
+  background-position: -80px 0;
+}
+{% endhighlight %}
 
 Yöntemi daha önce anlattığımız gibi ardalan kaydırmaca yöntemidir.
 Hazırladığımız ardalan resminin ilk olarak istediğimiz kısmını
