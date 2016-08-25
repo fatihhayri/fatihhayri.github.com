@@ -5,12 +5,10 @@ Date: 2006-10-03 06:59
 Category: Kitaplar
 ---
 
-![İngiliz Casusunun İtirafları][]İngilizlerin islam düşmanlığı aslında
-insan düşmanlığı hakkında yazılmış güzel bir kitap. Müslümanları
-savaşlarla yenemeyen ingilizler ve benzerleri müslümanları içten
-yıkmıştır. şunu da belirtmekte yara varki bizde onlara yardımcı olmuşuz
-bu konu. Osmanlının yükseliş devrinde de bir çok giriş olmuşsa da bunu
-becerememişlerdir. Dünyaya demokrasi ve insan hakları dersi vermeye
-çalışan ingilizlerin iç yüzü bu kitap da görünüyor.
+![İngiliz Casusunun İtirafları][]
 
-  [İngiliz Casusunun İtirafları]: /images/ing_casus.thumbnail.gif
+İngilizlerin islam düşmanlığı (insan düşmanlığı) hakkında yazılmış güzel bir kitap. Müslümanları savaşlarla yenemeyen İngilizler müslümanları içten yıkmıştır. Şunu da belirtmeliyim, bizde onlara yardımcı olmuşuz. Osmanlı'nın yükseliş devrinde de bir çok girişim olmuşsa da bunu becerememişler. 
+
+Dünyaya demokrasi ve insan hakları dersi vermeye çalışan İngiliz'lerin iç yüzü bu kitap da görünüyor.
+
+[İngiliz Casusunun İtirafları]: /images/ing_casus.thumbnail.gif
