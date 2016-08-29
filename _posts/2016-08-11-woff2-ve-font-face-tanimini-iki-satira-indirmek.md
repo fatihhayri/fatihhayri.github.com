@@ -19,24 +19,27 @@ Woff formatı özel yazı tiplerinin kullanımının yayılması için güzel bi
 
 Özel yazı tipi için mevcutta kullandığım kod;
 
-    @font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans'), local('OpenSans'),
-         url('open-sans.woff2') format('woff2'),
-         url('open-sans.woff') format('woff'),
-         url('open-sans.ttf') format('truetype'); /* Safari, Android, iOS */
-  }
+{% highlight css %}
+@font-face {
+font-family: 'Open Sans';
+src: local('Open Sans'), local('OpenSans'),
+     url('open-sans.woff2') format('woff2'),
+     url('open-sans.woff') format('woff'),
+     url('open-sans.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+{% endhighlight %}
 
 Safari'nin yakın zamanda woff2 desteğini sunmasıyla birlikte tek sıkıntı Internet Explorer Edge 14'ün öncesi  ve Android Browser desteğinin küçülmesini beklemek olacak. Büyük sorun ie değil Android Browser.
 
 Nihai kod aşağıdaki gib olacak inşallah;
 
-    @font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans'), local('OpenSans'),
-         url('open-sans.woff2') format('woff2');
-  }
-
+{% highlight css %}
+@font-face {
+font-family: 'Open Sans';
+src: local('Open Sans'), local('OpenSans'),
+     url('open-sans.woff2') format('woff2');
+}
+{% endhighlight %}
 Temiz.
 
 ## Kaynaklar
