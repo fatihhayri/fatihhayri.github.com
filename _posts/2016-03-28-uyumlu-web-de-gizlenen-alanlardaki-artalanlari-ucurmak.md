@@ -39,4 +39,5 @@ yerine
 kullanımı bize performans olarak geri dönecektir.
 
 ## Kaynaklar
+
  - [http://stackoverflow.com/a/12444431/296373](http://stackoverflow.com/a/12444431/296373)

@@ -9,7 +9,7 @@ tags: bootstrap ızgara-sistemi sayfa-planı
 [İlk makalede](/bootstrap-izgara-Grid-sistemi-1/) genel ızgara yapısı ve bootstrap ızgara yapısının ana elemanlarından bahsettim. Bu makalede bootstrap ızgara yapısının detaylarına değineceğim.
 
 
-##Farklı yükseklikte kutular için satır yapısını koruma
+## Farklı yükseklikte kutular için satır yapısını koruma
 
 Kutular `float:left` ile yan yana dizildiğinde kutulardan birinin yüksekliği fazla ise satır yapısı bozulur. Aşağıdaki örneği büyük pencere açınız.
 
@@ -26,7 +26,7 @@ Yukarıdaki kod bloğunu kodumuza eklediğimizde satır yapımız korunacaktır.
 <iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/ONxrZL/?height=268&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
-##İç içe kolon kullanımı
+## İç içe kolon kullanımı
 
 Bootstrap ızgara yapısı iç içe kolon kullanımını destekler. Genelde sitelerimiz tek kolonlu yapılarından oluşmaz. İç içe kolonların olduğu daha karışık planlardan oluşur. Bu durumda nasıl bir yol izlemeliyiz?
 
