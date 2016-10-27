@@ -111,7 +111,7 @@ body{
 
 #ortalaAlan p{
     background:url(gudi.gif) 0 0 no-repeat;
-    color:##333333;
+    color:#333333;
     font:24px "Trebuchet MS", Arial, Helvetica, sans-serif;
     padding-left:35px;
     margin:10px

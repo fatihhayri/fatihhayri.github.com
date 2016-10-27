@@ -6,7 +6,7 @@ Category: git
 tags: git, sürüm kontrolü
 ---
 
-##Git  grep
+## Git  grep
 
 Git&rsquo;in önemli komutu grep hakkında bir kaç bilgi vereceğim.
 
@@ -116,7 +116,7 @@ Renklendirme için konfigürasyon dosyasına ~/.gitconfig aşağıdaki kodları 
   untracked = cyan
 {% endhighlight %}
 
-##Git dallanmalarını düzenleme
+## Git dallanmalarını düzenleme
 
 Git'te master'a gitmiş bütün eski dallanmalarımızı(branch) -lokalden- silmek için şöyle bir komut kullanabiliriz:
 
@@ -128,7 +128,7 @@ Kaynak: [http://devblog.springest.com/a-script-to-remove-old-git-branches](http:
 
 [Murat Çorlu](https://twitter.com/muratcorlu)
 
-##Git te dosya adı arama
+## Git te dosya adı arama
 
 git'te dosya adıyla arama:
 
@@ -138,7 +138,7 @@ git ls-files '*kelime*'
 
 ![ls-files](https://lh5.googleusercontent.com/ssBLy7QzvOHj_9wV9Oc4HOG9-ORVPgYwF7StHQ4NSIGgXYvE-yk6LldHOJBwcLLZeULMD27xSrwI1tty3o-HEWjrSETgxDj7GAnWUC7eifiEMT1PyEWs)
 
-##Git ile Suçluyu Bulmak
+## Git ile Suçluyu Bulmak
 
 {% highlight bash %}
 git blame
@@ -154,7 +154,7 @@ kodu aşağıdaki sonucu döndürüyor. Her satırı tek tek en son kimin, ne za
 
 ![blame](https://lh3.googleusercontent.com/ZFPqtLKQ_YrIZyJ6xBhvKcKXJvAU3YZBD38ed_-Qm5lrzEWOCTMICKB1iEF_aMiKCDXtKvzWY8ntKzbwiOokd7-5E8InMvIFoCfXw3aEY8tBCrqnuoq0)
 
-##Git ile Sadece Belirlenen Dosyaları Gönderme
+## Git ile Sadece Belirlenen Dosyaları Gönderme
 
 {% highlight bash %}
 git add
@@ -187,7 +187,7 @@ kullanımı önemli.
 
 Sonuçta sadece source/xhtml-ipuclari-1.md dosyası gönderilirken diğer iki dosya  gönderilmedi.<br />
 
-##Otomatik Tamamlama
+## Otomatik Tamamlama
 
 Git ile terminalde kod yazarken en güzel özelliklerden birisi &lt;tab&gt; tuşu ile otomatik tamamlama yapabilme özelliği. Benim bilgisayarımda hazır geliyor eğer sizde yüklü değilse kaynak bağlantıda yükleme ayrıntıları mevcut.
 
@@ -203,7 +203,7 @@ Yukarıdaki örnekte eğer com&lt;tab&gt; yapsa idik commit tamamlamasını otom
 [http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks](http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks)
 
 
-##Kaynaklar
+## Kaynaklar
 
  - http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/
  - [http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html](http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html)

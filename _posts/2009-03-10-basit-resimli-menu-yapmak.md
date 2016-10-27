@@ -118,7 +118,7 @@ görüntüsünü elde etmek için resimdeki konumu yukarıdan -40px, soldan
 -120px olarak atamalıyız. Ardalan konumu belirlerken resmin sıfır
 noktası sol üst köşesidir, bu nedenle değerler eksi(-) değer alır.
 
-##Kaynaklar
+## Kaynaklar
 
 
 -   [http://www.webdesignerwall.com/tutorials/advanced-css-menu/][]

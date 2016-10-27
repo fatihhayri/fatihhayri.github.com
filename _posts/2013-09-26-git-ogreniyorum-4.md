@@ -6,7 +6,7 @@ Category: Git
 tags: git, ipuçları, git-reset, git-stash, gitignore
 ---
 
-##1- .gitignore kullanımı
+## 1- .gitignore kullanımı
 
 .gitignore dosyası git reposundan hariç tutulacak dosyaların listesinin bulunduğu repo ana dizinde bulunan bir ayar dosyasıdır.
 
@@ -27,7 +27,7 @@ logs/
 !errors.log
 {% endhighlight %}
 
-##2- git stash ile çalışmalarımıza ara vermek
+## 2- git stash ile çalışmalarımıza ara vermek
 
 Bazen uzun çalışmalarımızın ortasında acil başka işler giriyor. Bu gibi durumlar için git’in stash gibi bir çözünü görmek güzel.
 
@@ -54,7 +54,7 @@ git stash pop
 
 yazınca sakladığımız değişiklikleri gün yüzüne çıkarırız. İşe kaldığımız yerden devam edebiliriz.
 
-##3- Önceki branch’a geç kısayolu
+## 3- Önceki branch’a geç kısayolu
 
 {% highlight bash %}
 git co -
@@ -64,7 +64,7 @@ git co -
 
 [@muratcorlu][1] teşekkür.
 
-##4- ignore etmeden gizleme
+## 4- ignore etmeden gizleme
 
 {% highlight bash %}
 git update-index --assume-unchanged <dosya_adi>
@@ -72,7 +72,7 @@ git update-index --assume-unchanged <dosya_adi>
 
 [@mpaltun][2] teşekkür.
 
-##5- Son değişiklikleri geri almak
+## 5- Son değişiklikleri geri almak
 
 Bazen yaptığımız değişiklikleri geri almak isteriz. Yapacağımız geri alma işlemine göre aşağıdaki 5 seçenekten birini seçmemiz gerekecek. **Bu komutlar yaptığınız işlerin geri dönülmeyecek şekilde silinmesine neden olabilir. Yazdığınız kodları dikkatli kullanın.**
 
@@ -91,7 +91,7 @@ Yaptığınız değişiklikleri koruyarak önceki gönderiyi yenilemek istiyorsa
 **git checkout -- &lt;dosya_adi&gt;**
 Sadece belirtilen dosyayı geri almak için kullanılır.
 
-##6- Arama sonuçları dosyaya yazdırma
+## 6- Arama sonuçları dosyaya yazdırma
 
 {% highlight bash %}
 git grep “arama_metni” > dosya_adi
@@ -99,7 +99,7 @@ git grep “arama_metni” > dosya_adi
 
 [@muratcorlu][3] teşekkür.
 
-##7 - İki bilgisayar arasında dosya kopyalama
+## 7 - İki bilgisayar arasında dosya kopyalama
 
 Git ile ilgisi yok ama bana lazım olur buraya kaydedeyim. Sanal bir makineye masaüstünden dosya kopyalamak için
 
@@ -117,7 +117,7 @@ ile dosyanızı belirtilen sunucunun ana klasörüne atabiliyoruz.
 
 [@muratcorlu][4] teşekkür.
 
-##Kaynaklar
+## Kaynaklar
 
 - [http://mustafavelioglu.com/posts/2012/11/08/global-gitignore-kullanimi/][5]
 - [http://git-scm.com/docs/gitignore][6]

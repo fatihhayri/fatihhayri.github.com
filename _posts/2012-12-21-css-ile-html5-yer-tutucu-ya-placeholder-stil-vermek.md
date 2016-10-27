@@ -41,7 +41,7 @@ Yer tutucu stiline tanımlana bilen özellikler ve tarayıcıların desteğini g
 
 kaynak:[http://blog.ajcw.com/](http://blog.ajcw.com/)
 
-##Kaynaklar
+## Kaynaklar
 
 - [http://blog.ajcw.com/2011/02/styling-the-html5-placeholder/](http://blog.ajcw.com/2011/02/styling-the-html5-placeholder/)
 - [http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css](http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css)

@@ -56,7 +56,7 @@ kararlı sürüme kadar bunların düzeltileceğine inanıyorum.
 
 Popüler Tarayıcılara bir göz atalım:
 
-##Firefox
+## Firefox
 
 Mozilla alt yapısını kullanan Firefox, açık kaynak kodlu olması, web
 standartlarına uyumluluğu ve web geliştiricilere güzel
@@ -74,7 +74,7 @@ Benim için en önemli artısı FireBug gibi bir aracı barındırması,
 standartlara uyumluluğu ve güvenlik açıklarına hızlı cevap vermesi
 bakımından güzel bir tarayıcı.
 
-##İnternet Explorer
+## İnternet Explorer
 
 Halal dünya üzerinde en çok kullanılan
 internet tarayıcısı olma özeliğini koruyor. Tabi bunun en
@@ -97,7 +97,7 @@ CSS Dersleri bölümündeki problemler ve çözüm önerileri bölümünü doldu
 internet explorer umut ediyoruz ki bu sorunları halledip bize daha iyi
 tarayıcılar sunacaktır.
 
-##Opera
+## Opera
 
 Diğer bir popüler internet tarayıcısıda Opera'dır. Opera her ne
 kadar hızlı erişim ve kullanışlı özellikleri olsada hiç bir zaman
@@ -105,7 +105,7 @@ yeterli ilgiyi kazanmadır. Daha çok mobil araçlarda kullanılan Opera
 mini ile adını duyuran Opera güzel bir alternatif olarak kalmaya devam
 ediyor.
 
-###Safari
+### Safari
 
 Apple firması son zamanlarda geçtiği atak ile bir çok yenilikler sunuyor
 kullanıcılara. Mac her nekadar fazla tercih edilen bir işletim sistemi

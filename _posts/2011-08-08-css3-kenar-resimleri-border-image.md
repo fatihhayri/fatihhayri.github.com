@@ -268,7 +268,7 @@ Kullandığımız resimde boyut olarak küçük.
 {: .tarayici-uyumi}
 
 
-##Sonuç
+## Sonuç
 
 border-image özelliği gayet kullanışlı bir özellik. Birçok konuda elimiz
 rahatlatacak bir özellik. Uyguladıkça daha güzel örneklerin çıkacağına
@@ -276,7 +276,7 @@ inanıyorum. Standartlar tam oturmasa da zamanla daha iyi olacaktır. Bu
 özellikte bazı şimdilik eksik kalan yerler olsa da mobil uygulamalarda
 uygulanabilirliği var.
 
-##Kaynaklar
+## Kaynaklar
 
 -   [http://www.w3.org/TR/css3-background/#border-images][]
 -   [http://www.css3.info/preview/border-image/][]

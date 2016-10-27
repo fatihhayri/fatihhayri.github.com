@@ -14,7 +14,7 @@ Tarayıcı desteği konusunda ilk başta sıkıntılı olsa da şimdi daha iyi b
 
 CSS3 animasyon özelliğini ie10 hariç ön ek ile desteklemektedir. Ben buradaki örneklerde öneksiz göstereceğim.
 
-##Anahtar Kare (Keyframes)
+## Anahtar Kare (Keyframes)
 
 Daha önce flash ile uğraşmış insanlara yabancı olmayan bir kavram. Animasyonu bir süreç olarak kabul edersek, anahtar kare(keyframe) bize geçişin başlangıç ve bitişi arasındaki durumları tanımlamamız için olanak sağlar.
 
@@ -51,7 +51,7 @@ Yukarıdaki kod ile 'soldanGelen' animasyonumuza üç adet anahtar kare(keyframe
 
 Ayrıca (0% - 100%) kullanımı yerine (from - to) kullanımıda vardır.
 
-##Animasyon Özellikleri
+## Animasyon Özellikleri
 
 Anahtar kare(keyframe) tanımından sonra animasyon özellikleri tanımlarına geliyor sıra. Bu özellik tanımları CSS tanımlarına benzer bir yapısı vardır. Aşağıda bunları tek tek inceleyelim.
 
@@ -65,7 +65,7 @@ Anahtar kare(keyframe) tanımından sonra animasyon özellikleri tanımlarına g
  - animation-fill-mode
  - animation
 
-###Animasyonun adı (animation-name)
+### Animasyonun adı (animation-name)
 
 **Yapısı :** animation-name: &lt;single-animation-name&gt;\\
 **Aldığı Değerler :** none | IDENT [, none | IDENT ]*\\
@@ -84,7 +84,7 @@ Bir elemana animasyon uygulayacağımız zaman ilk olarak bir isim tanımlamamı
 
 Tek değer alır ve tanımlanan değer yukarıda belirttiğimiz gibi anahtar kare&rsquo;ye parametre olarak eklenir. Bunun dışında none değeride alır. Animasyon ismini tırnak içinde yazınca Firefox&rsquo;da çalışmıyor.
 
-###Animasyonun zamanı (animation-duration)
+### Animasyonun zamanı (animation-duration)
 
 **Yapısı :** animation-duration: &lt;zaman&gt; [, &lt;zaman&gt;]*\\
 **Aldığı Değerler :** &lt;zaman&gt; [, &lt;zaman&gt;]*\\
@@ -106,7 +106,7 @@ Animasyonun ne kadar süreceğini belirtmek için bu özelliği kullanırız.
 
 Animasyonun 3 saniye devam edeceğini gösterir. Daha önce gördüğümüz transition-duration özelliğine benzer bir özelliktir. Zaman değerleri alır; ms, s ve 0 değerleri alır.
 
-###Zamanlama fonksiyonu (animation-timing-function)
+### Zamanlama fonksiyonu (animation-timing-function)
 
 **Yapısı :** animation-timing-function: &lt;single-timing-function&gt; [ &lsquo;,&rsquo; &lt;single-timing-function&gt; ]*\\
 **Aldığı Değerler :** ease | linear | ease-in | ease-out | ease-in-out | cubic- bezier(&lt;number&gt;, &lt;number&gt;, &lt;number&gt;, &lt;number&gt;)\\
@@ -140,7 +140,7 @@ Aldığı değerler ease, linear, ease-in, ease-out, ve ease-in-out
 
 Animasyonun esnek bir şekilde meydana gelmesini sağlar.
 
-###Animasyonun tekrar sayısı (animation-iteration-count)
+### Animasyonun tekrar sayısı (animation-iteration-count)
 
 **Yapısı :** animation-iteration-count: &lt;single-animation-iteration-count&gt; [ &lsquo;,&rsquo; &lt;single-animation-iteration-count&gt; ]*\\
 **Aldığı Değerler :** infinite | &lt;sayı&gt;\\
