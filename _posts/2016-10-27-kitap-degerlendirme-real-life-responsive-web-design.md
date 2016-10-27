@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kitap değerlendirme: Real-Life Responsive Web Design
+title: Real-Life Responsive Web Design - Smashing Magazine
 Date: 2016-10-27 10:19
 Category: css
 tags: kitap, responsive, uyumlu-web, smashingmag
@@ -74,7 +74,7 @@ mobil uygulamalara bir adım daha yaklaştıran bir alan.
 
 ## Sonuç
 
-11. bölümde var ama beni pek sarmadı, asıl benim pdf okurken beğendiğim **Performans optimizasyon yol haritası** kısmının basılı kitapta olmaması kitabın tek eksiği bence. 
+Onbirinci bölümde var ama beni pek sarmadı, asıl benim pdf okurken beğendiğim **Performans optimizasyon yol haritası** kısmının basılı kitapta olmaması kitabın tek eksiği bence. 
 
 Sonuç olarak her arayüz geliştiricinin muhakkak okuması gereken bir kitap. Başucu kitabı. 
 

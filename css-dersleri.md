@@ -256,6 +256,7 @@ Date: 2006-08-05 22:06
     -   [More Eric Meyer on CSS][]
     -   [CSS Mastery: Advanced Web Standards Solutions - Andy Budd][]
     -   [Bir Projenin Bana Kazandırdıkları (LiveGO.com)][]
+    -   [Real-Life Responsive Web Design - Smashing Magazine](/kitap-degerlendirme-real-life-responsive-web-design/)
 
 -   CSS Geliştirme Araçları
     -   [FireBug - Genel Bakış][]
