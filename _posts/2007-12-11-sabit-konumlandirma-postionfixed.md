@@ -6,164 +6,55 @@ Category: CSS, Javascript, XHTML
 tags: absolute, CSS, fixed, postion, sabit, sayfa-dibine-yapışık
 ---
 
-**Ocak 2016'da güncellendi. IE eski sürümleri için eklenen kısımlar gereksiz artık.**
+**Ocak 2016'da güncellendi.**
 
 Bu konuya bir çalışmam dolayısıyla **position:fixed** özelliğini
 kullanma gereksinimi duyduğum için girdim, sonra araştırma sonuçları bir
-makale konusu olabileceğini düşünerek bu makaleyi yazdım. Biraz
-araştırınca birden fazla yöntem olduğunu gördüm. Bir ikisini uyguladım
-ve sonuçta birinde karar kıldım. Sizlere bu süreci ve **postion:fixed**
+makale konusu olabileceğini düşünerek bu makaleyi yazdım. Sizlere bu süreci ve **postion:fixed**
 hakkında genel bir bilgi sunacağım.
 
 Bu konuya daha önce [CSS ile konumlandırma(positioning)][] kısmında
 kısaca değinmiştik.
 
-"Sabitkonumlandırma Mutlak Konumlandırmanın bir alt kategorisidir. Sabit
-konumlandırılmış elementin sayfadaki görünümü çok farklıdır. Bunu
-özellikle web sayfasında bir elementin konumunu sabitlemek için
-kullanabiliriz. Sabit konumlandırma ile yerleştirilmiş element
-belirtilen yerde asılı kalacaktır. Web tarayıcısının kaydırma çubuğu
-aşağı yukarı kaydırılması ile Sabit Konumlandırma ile yerleştirilmiş
-elementin yeri değişmeyecektir ve sabit kalacaktır. <s>Ne yazık ki IE 6 bu
-özelliği desteklemiyor. IE 7 strick yorumlayıcısı kullanılıyorsa
-destekliyor diğer hallerde desteklemiyor.</s>"
-
-Şeklinde genel bir bilgi verip bırakmıştık. Şimdi biraz daha ayrıntısına
-inelim.
+" Sabit konumlandırma (position:fixed) Mutlak Konumlandırmanın (position:absolute) bir alt kategorisidir. Sabit konumlandırılmış elementin sayfadaki görünümü çok farklıdır. Bunu özellikle web sayfasında bir elementin konumunu sabitlemek için kullanabiliriz. Sabit konumlandırma ile yerleştirilmiş element belirtilen yerde asılı kalacaktır. Web tarayıcısının kaydırma çubuğu aşağı yukarı kaydırılması ile Sabit Konumlandırma ile yerleştirilmiş elementin yeri değişmeyecektir ve sabit kalacaktır."
 
 Sabit konumlandırmayı sayfanın belli bir alanını sabitleyip diğer
 alanları bu kısmın yanından, altından kaydırmak için kullanırız genelde.
 
-<s>Aslında bunun için CSS bize **position:fixed** kodunu sunmaktadır. Ancak
-bu kodu IE6 ve önceki sürümlerde desteklememesi bize alternatif çözümler
-aramaya sevk ediyor. Buda bize bir makale yazma gereksinimi doğuruyor.</s>
-
-İlk metodumuz normal konumlandırma özelliğinin fixed uygulanmış
-şeklidir.
+Mutlak konumlandırma (position: absolute) ile benzer özelliklere sahiptir; tanımlanan elementi normal akışın dışına çıkarır. Göreceli konumlandırılmış ana elemente bağlıdır. 
 
 {% highlight html %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <style type="text/css">
-body {
-	margin:0;
-	padding:0;
+.ustKisim {
+  position: fixed;
+  background: gray;
+  color: yellow;
+  height: 50px;
+  width: 150px;
+  top: 50px;
+  margin-left: -170px;
 }
-div#ustKisim {
-	position:fixed;
-	background: gray;
-	color: yellow;
-	height:50px;
-	width:100%;
-	top:0;
-	left:0;
-}
-div#icerik {
-	margin:75px 0 0 0;
+
+.icerik {
+  margin: 50px auto 0 auto;
+  width: 400px;
 }
 </style>
 </head>
 <body>
-	<div id="ustKisim">Lorem ipsum dolor sit amet</div>
-	<div id="icerik">
-	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nec erat. Fusce magna massa, nonummy eget, aliquam tempus, imperdiet vel, odio. Sed mauris. Quisque sodales urna vitae lorem. Vestibulum aliquet, odio aliquam convallis lobortis, turpis metus semper ligula, ut vulputate sem justo eu quam. Sed feugiat, lectus sit amet porttitor auctor, nulla odio volutpat nisl, sit amet egestas augue diam at urna. Sed justo arcu, luctus eget, porta in, auctor sit amet, massa. Integer interdum. Nunc condimentum scelerisque enim. Pellentesque orci. Maecenas at neque. Sed non diam ac turpis pretium dictum. Phasellus ligula felis, aliquet nec, tristique non, posuere a, magna. Duis eu quam quis tortor vehicula sodales. Donec et mi eget augue bibendum interdum. Proin dapibus odio.</p>
+<div class="icerik">
+  <div class="ustKisim">Sabit alan</div>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nec erat. Fusce magna massa, nonummy eget, aliquam tempus, imperdiet vel, odio. Sed mauris. Quisque sodales urna vitae lorem. Vestibulum aliquet, odio aliquam convallis lobortis, turpis metus semper ligula, ut vulputate sem justo eu quam. Sed feugiat, lectus sit amet porttitor auctor, nulla odio volutpat nisl, sit amet egestas augue diam at urna. Sed justo arcu, luctus eget, porta in, auctor sit amet, massa. Integer interdum. Nunc condimentum scelerisque enim. Pellentesque orci. Maecenas at neque. Sed non diam ac turpis pretium dictum. Phasellus ligula felis, aliquet nec, tristique non, posuere a, magna. Duis eu quam quis tortor vehicula sodales. Donec et mi eget augue bibendum interdum. Proin dapibus odio.</p>
+</div>
 </body>
 </html>
 {% endhighlight %}
 
-Örneği görmek için [tıklayınız.][]
-
-<s>Baştada belirttiğimiz gibi buradaki en büyük sorunumuz IE6 ve daha eski
-sürümlerde bu kodun çalışmamasıdır. Bundan sonraki metot buna çözüm
-aramak içindir.</s>
-
-## ~~IE6'da çalışan postion:fixed metodu~~
-
-<s>Bu metot IE'un css içinde **expression()** komutunu yardımı ile
-javascript kodu işletmemize izin vermesi prensinden dayanır. Bizde bu
-metodda bu komut yardımı ile **position:fixed** sorununu çözeceğiz.
-**expression()** yardımı ile daha önce IE'nin [min-width ve min-height sorununu][] çözdüğümüzü hatırlayın.</s>
-
-{% highlight html %}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Sabit Konumlandırma</title>
-<style>
-body {
-	background: #ffc;
-	font: 12px sans-serif;
-	margin: 0;
-	padding: 0;
-}
-div#ustAlan {
-	width: 100%;
-	height: 100px;
-	background: pink;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index:100;
-}
-#icerik{
-	position:absolute;
-	top:105px;
-}
-</style>
-</head>
-<body>
-	<div id="ustAlan">Sabit Konumlandırma</div>
-	<div id="icerik">
-	<p>Lorem ipsum dolor sit amet ….</p>
-	</div>
-</body>
-</html>
-{% endhighlight %}
-
-![Sabit Konumlandırma][]
-
-Örnek sayfayı görmek için [tıklayınız.][1]
-
-<s>Yukarıdaki kodu iki kısımda inceleyebiliriz. Birinci kısım ilk örnekte
-olduğu gibi **position:fixed** kullanılan IE7, FF, Opera ve Safari için
-yazılan kısımdır. İkinci kısım IE7'den önceki sürümleri belirten şartlı
-koşul içerisindeki kodlamadır. Bu sürümlerde **position:fixed**
-desteklenmediği için **postion:absolute** değeri atanmış ve üst
-değerimizi(top) javascript'in **documentElement.scrollTop** değeri
-yardımı ile belirlenip sabitlenmiştir.</s>
-
-<s>Ayrıca alt alanı sabitlemek için</s>
-
-{% highlight css %}
-bottom: auto; top: expression((documentElement.scrollTop + documentElement.clientHeight – this.clientHeight));
-{% endhighlight %}
-
-<s>Kodlaması kullanılır. Örneği görmek için [tıklayınız.][2]</s>
-
-<s>Sabitlemek istediğimiz nesneyi üstten 10piksel aşağıda sabitlemek için</s>
-
-{% highlight css %}
-top: expression(eval(documentElement.scrollTop) + 10);
-{% endhighlight %}
-
-<s>şeklinde kodlarız. Bu kodlama tekniği kullanılarak birçok farklı şablon
-elde edilebilir.</s>
-
-<s>Bu yöntemin bazı sorunları vardır, bunlara değinmeden geçmeyelim.</s>
-
--   <s>Bu metot IE5'de ve IE7, IE6'da [garip modda][] çalışmaz.</s>
--   <s>Bu metot javascript'in hizmet dışı bırakıldığı tarayıcılarda
-    çalışmaz.</s>
--   <s>**background: url('http://') fixed;** anlamsız kodu
-    kullanılmaktadır. Bu kod kaydırma çubuğu hareket ettikçe sabitlenen
-    nesnenin kıpranmaması içindir.</s>
-
-<s>Bunun dışında bir çok alternatif yöntem vardır. Benim deneyip en son
-kullanmaya karar verdiğim metot bu olduğu için sizlere bu kodu
-gösterdim. Ancak diğer örnekleri görmeniz için alternatif çalışmaların
-linklerini kaynaklar kısmında sizlere vereceğim.</s>
+<iframe height='323' scrolling='no' title='position: fixed' src='//codepen.io/fatihhayri/embed/qqEMJa/?height=323&theme-id=13521&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/fatihhayri/pen/qqEMJa/'>position: fixed</a> by Fatih  (<a href='http://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
 
 ## Kaynaklar
 
