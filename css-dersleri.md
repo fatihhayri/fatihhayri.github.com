@@ -123,6 +123,7 @@ Date: 2006-08-05 22:06
     -   [İnternet Explorer 7'yi Bitirmeli miyiz?][]
     -   [İnternet Explorer 8 Olmasa Neler Olurdu](/internet-explorer-8-olmasa-neler-olurdu)
     -   [Dikey Ortalamada Son Nokta](/dikey-ortalamada-son-nokta/)
+    -   [CSS ile uzun metinleri üç nokta ile kesme](/CSS-ile-uzun-metinleri-uc-nokta-ile-kesme/)
 
 -   CSS Problemleri ve Çözüm Önerileri
     -   [IE'de Hata Ayıklamak için şartlı Yorumlar Kullanmak][]
