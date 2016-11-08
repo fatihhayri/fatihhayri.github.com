@@ -43,6 +43,8 @@ Kod çok basit.
 
 `-webkit-line-clamp: 3` tanımı ile kaç satırın görünmesi bu satır ile tanımlıyoruz. Yukarıdaki gibi bu tanımı bir mixin yapıp istediğimiz yerde kullanabiliriz.
 
+Mobilde ve dar alanlarda güzel iş görüyor. 
+
 {% highlight scss %}
 // Clamps a block of text to a certain number of lines,
 // followed by an ellipsis in Webkit and Blink based browsers
