@@ -10,7 +10,7 @@ image:
 
 Son haftalarda Visual Studio Code ile kod yazıyorum. Güzel yanları var ama Sublime Text'in hızını bulamadım. Henüz Sublime'a geri dönmüş değilim ama yinede bazı özelliklerini arıyorum.
 
-Visual Studio Code'a geçtim dediğimde [Murat](twitter.com/muratcorlu) ile biraz konuştuk. Konuşurken fark ettim ki aslında Sublime Text'te olan bir özelliği bilmediğim için kullanamıyormuşum. 
+Visual Studio Code'a geçtim dediğimde [Murat](http://twitter.com/muratcorlu) ile biraz konuştuk. Konuşurken fark ettim ki aslında Sublime Text'te olan bir özelliği bilmediğim için kullanamıyormuşum. 
 
 Örneğin proje detay sayfasının less'ini ararken. (cmd + p)
 
