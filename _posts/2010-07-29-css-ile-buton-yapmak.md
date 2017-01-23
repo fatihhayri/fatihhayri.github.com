@@ -409,7 +409,6 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
 -   [http://www.smashingmagazine.com/2009/11/18/designing-css-buttons-techniques-and-resources/][]
 -   [http://www.monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors][](iyi)
 -   [http://www.smashingmagazine.com/2009/06/03/9-crucial-ui-features-of-social-media-and-networking-sites/][] (genel anlamı)
--   [http://www.oscaralexander.com/tutorials/how-to-make-sexy-buttons-with-css.html][]
 -   [http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/][]
 -   [http://particletree.com/features/rediscovering-the-button-element/][] (button elemanı hakkında)
 -   [http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/][] (güzel)
