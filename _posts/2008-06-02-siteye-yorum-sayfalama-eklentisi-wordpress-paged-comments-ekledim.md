@@ -12,20 +12,26 @@ eklentinin nasıl ekleneceğini yazmayacağım. Bir kaç ipucu ekledim onları
 yazacağım. [Sırrı Özden][]'in Türkçeye çevirdiği eklentiyi ben [orjinal sitesinden][] yükledim. Görünümü değiştirmek için stil dosyama bir satır
 css kodu ekledim.
 
-1.  p.comment-page-numbers a{
-2.  color:#333;
-3.  }
+{% highlight css %}
+p.comment-page-numbers a{
+  color:#333;
+}
+{% endhighlight %}
 
 Tek sorunum sıralamada her sayfayı 1,2,3...10 diye sıralaması idi. Benim
 eski kodumda bir "i" değerini arttırarak bu değeri verdiği için
 
-1.  <?php echo $i; ?>
+{% highlight php %}
+<?php echo $i; ?>
+{% endhighlight %}
 
 şeklinde yorum sayısını yazdırıyordum. Burada yorum sayısını düzgün
 sayması için yukarıdaki kodu
 
-1.  <?php echo $comment_number; $comment_number +=
+{% highlight php %}
+<?php echo $comment_number; $comment_number +=
     $comment_delta;?>
+{% endhighlight %}
 
 bu kod ile değiştirdim düzeldi.
 
