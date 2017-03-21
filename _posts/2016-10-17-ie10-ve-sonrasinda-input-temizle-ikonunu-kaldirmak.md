@@ -12,7 +12,7 @@ Uzatmadan hemen sorunu ve çözümü yazayım.
 
 **Sorun**: İnternet Explorer 10 ve üzeri sürümlerinde metin girdi alanlarında (input text) alanlarına kullanıcı bir şeyler yazınca otomatik olarak input'un sağında silmek için bir X butonu çıkarıyor. Tabi tasarımcı arkada bu alana bir ikon koyunca üst üste biniyor. 
 
-![enter image description here](http://fatihhayrioglu.com/images/ie10-kapa-ikonu-sorunu.png)
+![ie10 kapa](http://fatihhayrioglu.com/images/ie10-kapa-ikonu-sorunu.png)
 
 **Çözüm**: Google'da bir arama yap ve stackoverflow'da gelen sonuç senin çözümündür :)
 

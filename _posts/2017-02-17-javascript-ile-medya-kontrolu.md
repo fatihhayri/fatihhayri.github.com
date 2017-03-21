@@ -1,24 +1,53 @@
 ---
 layout: post
-title: CSS ile büyük kardeşe söz geçirme
+title: Javascript ile medya kontrolü
 Date: 2017-02-17 16:05
-Category: CSS
-tags: [kardeş seçici, ipucu]
+Category: Javascript
+tags: [medya-sorgusu, css]
 ---
 
-Başlığa bakınca sanki bir aile olayına dair bir yazı geçecek anlamı çıkarmayın. HTML'deki elemanların birbiriyle olan ilişkilerini anlatmak için soyağacı benzetmesi yaparız ve birçok yerde kullanırız. Ebeveyn, çocuk, kardeş seçicileri gibi. Bu yazımın konusunda CSS'in seçicileri ile ilgili olacaktır.
+CSS ile birlikte çok fazla medya kontrolünü kullanıyoruz.
 
-CSS ile aynı seviyedeki elemanların ilişkilerini kullanarak bazı seçme işleri yaparız.  Bu durumlar için iki adet seçicimiz vardır. [Bitişik kardeş seçicisi](http://fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/) (+) artı işareti ile kullandığımız ve [genel kardeş seçicisi](http://fatihhayrioglu.com/css3-secicileri/) (~) tilda işareti ile kullandığımız. Gayet kullanışlı seçiciler olan bu kardeş kökenli seçicilerimizin bir sorunu var. Sorunu yine soyağacı benzetmemiz üzerinden tanımlarsak, büyük kardeşe erişememe sorunumuz vardır. Belirlediğimiz bir elemanın öncesindeki kardeşi seçecek bir CSS seçicisi yoktur. Sorunu anladığımıza göre benim bu sorunu tekrar hatırlamama neden olan durumu da açıklayayım size.
 
-[zingat.com](zingat.com) anasayfasındaki büyük resmin üzerindeki gri kutuların hepsi gri yani pasif görünüyordu. Üzerine gelince büyüyor, rengi değişiyor. Yeni istek ise, ilki aktif gözüksün, diğerlerinin üzerine gelince ilki pasif olsun.  İş küçük bir iş gibi görünse de ilk olarak aklıma CSS ile bunu yapmanın imkanı yok javascript ile yapmak lazım dedim. Sonra işi flex ve order yardımı ile yapabileceğim fikri aklıma geldi ve bu yazı ortaya çıktı.
+{% highlight css %}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+}
 
-Mantık şöyle; CSS önceki elemana erişemiyorsa bende ilk elemanı sona atarım ve CSS ile işimi çözerim.
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+}
 
-flex tanımlı bir kapsayıcı içindeki kutuları order ile sona atarsam artık CSS ile erişilebilir hale getirmiş oluyorum. Kod örneği aşağıdaki gibi.
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+}
+{% endhighlight %}
 
-<iframe height='500' scrolling='no' title='YZEKMz' src='//codepen.io/fatihhayri/embed/YZEKMz/?height=300&theme-id=13521&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
-</iframe>
+Peki bu kontrolleri javascript tarafında nasıl yaparız diye araştırınca `window.matchMedia` ile karşılaştım. Bildiğimiz CSS medya kulanımının aynısını yapabiliyoruz.
 
-Belki sizin de işinize yarar.
+{% highlight javascript %}
+var ms = window.matchMedia("SORGU");
+{% endhighlight %}
 
-Kalın sağlıcakla.
+SORGU yazan kısma CSS'de yazdığımız kısmı birebir yazıp kontrol edebiliyoruz.
+
+{% highlight javascript %}
+var ms = window.matchMedia("screen and (min-width:720px)");
+{% endhighlight %}
+
+Sonra kontrolümüzü yapalım.
+
+{% highlight javascript %}
+if (ms.matches) {
+  // ekran genişliği en az 720px
+} else {
+  // ekran genişliği 720px den büyük olanlar.
+}
+{% endhighlight %}
+
+Tarayıcı desteğinin %100'e yakın olması da ayrı bi güzellik.
+
+## Kaynaklar
+
+ -  [https://www.w3.org/TR/cssom-view-1/#dom-window-matchmedia](https://www.w3.org/TR/cssom-view-1/#dom-window-matchmedia)
+ - [https://www.sitepoint.com/javascript-media-queries/](https://www.sitepoint.com/javascript-media-queries/)
