@@ -5,7 +5,7 @@ Date: 2017-02-17 16:05
 Category: CSS
 tags: [kardeş seçici, ipucu]
 image:
-  feature: anasayfa-ilk-gornum.png
+  feature: anasayfa-ilk-gornum.jpg
 ---
 
 Başlığa bakınca sanki bir aile olayına dair bir yazı geçecek anlamı çıkarmayın. HTML'deki elemanların birbiriyle olan ilişkilerini anlatmak için soyağacı benzetmesi yaparız ve birçok yerde kullanırız. Ebeveyn, çocuk, kardeş seçicileri gibi. Bu yazımın konusunda CSS'in seçicileri ile ilgili olacaktır.
