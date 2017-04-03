@@ -26,7 +26,7 @@ Bir örnek vereyim.
 **Yeni çeviri**
 *"Elbette, yaygın olarak benimsenen tasarım kalıplarının kullanılmasında gerçek bir değer var. Hamburger simgesi gibi bir simge, kullanıcılarınıza başka yerlerde kullandıklarından dolayı tanıdıklarsa, giriş engelini azaltabilir ve gezinmeyi daha sezgisel yapabilirsiniz. Bu hafifçe devalüasyon yapmamız gereken bir şey değildir: Bir unsurun aşinalık olması hem sitelerimize hem de izleyicilerimize güçlü bir fayda sağlayabilir. Bununla birlikte, tasarım modellerinin tek başına her yerde kullanımını değerlendirmemeliyiz. Sonuçta, kalıplar sadece kalıplardır: kurallar veya varsayılanlar değildir. Aslında, orada oldukça yeni alternatif gezinti modelleri var. Şimdi bunlardan birkaçına bir göz atalım."*
 
-Gayet başarılı bence. Ayrıca kendini geliştme özelliği sayesinde ileride mükemmele yakın çeviriler alacağımızı ümit ediyorum.
+Gayet başarılı bence. Ayrıca kendini geliştirme özelliği sayesinde ileride mükemmele yakın çeviriler alacağımızı ümit ediyorum.
 
 Tek sıkıntı 5000 karakter limiti olması. Ben [Chrome'un translate eklentisini](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=tr) kullanıyorum. Normalde tooltip ile hızlıca çeviriye erişme imkanı tanısa da 5000 karakterden sonrası için sağ üstteki eklenti ikonunu tıklamamı istiyor. Umarım ilerde bu sınır kaldırılır.  
 
