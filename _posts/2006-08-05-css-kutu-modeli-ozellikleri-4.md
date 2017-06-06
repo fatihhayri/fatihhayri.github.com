@@ -19,7 +19,7 @@ Kutu modeli özelliklerine devam ediyoruz. Sırasıyla aşağıdaki
 ## width
 
 **Yapısı :** width: (değer)
-**Aldığı Değerler :** [&lt;uzunluk değeri &gt;][] | [&lt;yüzde&gt;][&lt;uzunluk değeri &gt;] | auto | inherit\\ 
+**Aldığı Değerler :** &lt;uzunluk değeri &gt; | &lt;yüzde&gt; &lt;uzunluk değeri &gt; | auto | inherit\\ 
 **Başlnagıç değeri:** auto\\ 
 **Uygulanabilen elementler:** [Block-level ve replaced elementler][]\\ 
 **Kalıtsallık:** Yok
@@ -33,7 +33,7 @@ almaz.
 
 {% highlight css %}
 p {
-	width: 200px;
+ width: 200px;
 }
 {% endhighlight %}
 
@@ -54,9 +54,9 @@ p {
 ## height
 
 **Yapısı :** height: (değer)
-**Aldığı Değerler :** [<uzunluk değeri >][] | auto | inherit\\  
-**Başlangıç değeri:** auto\\  
-**Uygulanabilen elementler:** [Block-level ve replaced elementler][]\\  
+**Aldığı Değerler :** &lt;uzunluk değeri&gt; | auto | inherit \\  
+**Başlangıç değeri:** auto \\  
+**Uygulanabilen elementler:** &lt;Block-level ve replaced elementler&gt; \\  
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -67,7 +67,7 @@ değeri almaz.
 
 {% highlight css %}
 h2 {
-	height: 0.25in;
+ height: 0.25in;
 }
 {% endhighlight %}
 
@@ -86,9 +86,9 @@ h2 {
 ## float
 
 **Yapısı :** float: (değer)
-**Aldığı Değerler :** left | right | none |inherit\\  
-**Başlnagıç değeri:** none\\  
-**Uygulanabilen elementler:** tüm elementler\\  
+**Aldığı Değerler :** left | right | none |inherit \\   
+**Başlnagıç değeri:** none \\  
+**Uygulanabilen elementler:** tüm elementler \\  
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -105,8 +105,8 @@ akar. Bu HTML3,2 deki resime(**img**) uygulanan **align="left"** ve
 
 {% highlight css %}
 p img {
-	float: left;
-	margin: 25px;
+ float: left;
+ margin: 25px;
 }
 {% endhighlight %}
 
@@ -125,9 +125,9 @@ p img {
 ## clear
 
 **Yapısı :** clear: (değer)
-**Aldığı Değerler :** none | left | right | both\\  
-**Başlnagıç değeri:** tanımsız\\  
-**Uygulanabilen elementler:** tüm elementler\\  
+**Aldığı Değerler :** none | left | right | both \\  
+**Başlnagıç değeri:** tanımsız \\  
+**Uygulanabilen elementler:** tüm elementler \\  
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -143,7 +143,7 @@ biridir.
 
 {% highlight css %}
 h3 {
-	clear: left;
+ clear: left;
 }
 {% endhighlight %}
 
@@ -160,6 +160,8 @@ h3 {
 {: .tarayici-uyumi}
 
   [Kutu Modeli]: /images/basit_boxmodel.gif
-  [<uzunluk değeri >]: http://www.fatihhayrioglu.com/?p=95
-  [Block-level ve replaced elementler]: http://www.fatihhayrioglu.com/?p=13
-  [ebveyn elementi]: http://www.fatihhayrioglu.com/?p=62
+  [firefox]: http://fatihhayrioglu.com//images/ff.png
+  [chrome]: http://fatihhayrioglu.com//images/ch.png
+  [explorer]: http://fatihhayrioglu.com//images/ie.png
+  [msafari]:http://fatihhayrioglu.com//images/sm.png
+  [android]:http://fatihhayrioglu.com//images/an.png
