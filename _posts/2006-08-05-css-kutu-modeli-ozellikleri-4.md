@@ -19,9 +19,9 @@ Kutu modeli özelliklerine devam ediyoruz. Sırasıyla aşağıdaki
 ## width
 
 **Yapısı :** width: (değer)
-**Aldığı Değerler :** &lt;uzunluk değeri &gt; | &lt;yüzde&gt; &lt;uzunluk değeri &gt; | auto | inherit\\ 
-**Başlnagıç değeri:** auto\\ 
-**Uygulanabilen elementler:** [Block-level ve replaced elementler][]\\ 
+**Aldığı Değerler :** uzunluk değeri | yüzde, uzunluk değeri | auto | inherit \\ 
+**Başlnagıç değeri:** auto \\ 
+**Uygulanabilen elementler:** Block-level ve replaced elementler \\ 
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -48,7 +48,7 @@ p {
 
 |![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
 |:------------------------:|:----------------------:|:-------------------:|
-|**-**|**+**|**+**|
+|**+**|**+**|**+**|
 {: .tarayici-uyumi}
 
 ## height
@@ -71,6 +71,8 @@ h2 {
 }
 {% endhighlight %}
 
+**Tarayıcı Desteği**
+
 |![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
 |:-----------------:|:---------------:|:-------------------:|
 |**+**|**+**|**+**|
@@ -80,7 +82,7 @@ h2 {
 
 |![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
 |:------------------------:|:----------------------:|:-------------------:|
-|**-**|**+**|**+**|
+|**+**|**+**|**+**|
 {: .tarayici-uyumi}
 
 ## float
@@ -110,6 +112,8 @@ p img {
 }
 {% endhighlight %}
 
+**Tarayıcı Desteği**
+
 |![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
 |:-----------------:|:---------------:|:-------------------:|
 |**+**|**+**|**+**|
@@ -119,7 +123,7 @@ p img {
 
 |![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
 |:------------------------:|:----------------------:|:-------------------:|
-|**-**|**+**|**+**|
+|**+**|**+**|**+**|
 {: .tarayici-uyumi}
 
 ## clear
@@ -147,6 +151,8 @@ h3 {
 }
 {% endhighlight %}
 
+**Tarayıcı Desteği**
+
 |![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
 |:-----------------:|:---------------:|:-------------------:|
 |**+**|**+**|**+**|
@@ -156,7 +162,7 @@ h3 {
 
 |![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
 |:------------------------:|:----------------------:|:-------------------:|
-|**-**|**+**|**+**|
+|**+**|**+**|**+**|
 {: .tarayici-uyumi}
 
   [Kutu Modeli]: /images/basit_boxmodel.gif
