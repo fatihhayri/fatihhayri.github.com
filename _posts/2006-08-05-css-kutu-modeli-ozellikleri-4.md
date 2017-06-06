@@ -19,9 +19,9 @@ Kutu modeli özelliklerine devam ediyoruz. Sırasıyla aşağıdaki
 ## width
 
 **Yapısı :** width: (değer)
-**Aldığı Değerler :** [<uzunluk değeri >][] | [<yüzde>][<uzunluk değeri >] | auto | inherit\\
-**Başlnagıç değeri:** auto\\
-**Uygulanabilen elementler:** [Block-level ve replaced elementler][]\\
+**Aldığı Değerler :** [&lt;uzunluk değeri &gt;][] | [&lt;yüzde&gt;][&lt;uzunluk değeri &gt;] | auto | inherit\\ 
+**Başlnagıç değeri:** auto\\ 
+**Uygulanabilen elementler:** [Block-level ve replaced elementler][]\\ 
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -31,29 +31,32 @@ kendi asıl genişliğidir. (Örneğin bir resmin genişliği gibi) Yüzde
 değeri [ebveyn elementi][] kıstas alarak uygulanır. Negatif değeri
 almaz.
 
-	:::css
-	p {
-		width: 200px;
-	}
+{% highlight css %}
+p {
+	width: 200px;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+**Tarayıcı Desteği**
+
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**-**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## height
 
 **Yapısı :** height: (değer)
-**Aldığı Değerler :** [<uzunluk değeri >][] | auto | inherit\\
-**Başlangıç değeri:** auto\\
-**Uygulanabilen elementler:** [Block-level ve replaced elementler][]\\
+**Aldığı Değerler :** [<uzunluk değeri >][] | auto | inherit\\  
+**Başlangıç değeri:** auto\\  
+**Uygulanabilen elementler:** [Block-level ve replaced elementler][]\\  
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -62,29 +65,30 @@ değeri alır. Elementlerin başlangıçtaki yükseklik değeri **auto** yani
 kendi asıl yüksekliğidir. (Örneğin bir resmin yüksekliği gibi) Negatif
 değeri almaz.
 
-	:::css
-	h2 {
-		height: 0.25in;
-	}
+{% highlight css %}
+h2 {
+	height: 0.25in;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**-**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## float
 
 **Yapısı :** float: (değer)
-**Aldığı Değerler :** left | right | none |inherit\\
-**Başlnagıç değeri:** none\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Aldığı Değerler :** left | right | none |inherit\\  
+**Başlnagıç değeri:** none\\  
+**Uygulanabilen elementler:** tüm elementler\\  
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -99,30 +103,31 @@ akar. Bu HTML3,2 deki resime(**img**) uygulanan **align="left"** ve
 özelliği CSS ile tablosuz web sitesi oluşturma metodunun en önemli
 öğelerinden biridir.
 
-	:::css
-	p img {
-		float: left;
-		margin: 25px;
-	}
+{% highlight css %}
+p img {
+	float: left;
+	margin: 25px;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**-**|**+**|**+**|
+{: .tarayici-uyumi}
 
 ## clear
 
 **Yapısı :** clear: (değer)
-**Aldığı Değerler :** none | left | right | both\\
-**Başlnagıç değeri:** tanımsız\\
-**Uygulanabilen elementler:** tüm elementler\\
+**Aldığı Değerler :** none | left | right | both\\  
+**Başlnagıç değeri:** tanımsız\\  
+**Uygulanabilen elementler:** tüm elementler\\  
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -136,22 +141,23 @@ sonraki derslerde daha ayrıntılı gösterilecektir. **clear** özelliği CSS
 ile tablosuz web sitesi oluşturma metodunun en önemli öğelerinden
 biridir.
 
-	:::css
-	h3 {
-		clear: left;
-	}
+{% highlight css %}
+h3 {
+	clear: left;
+}
+{% endhighlight %}
 
-**Tarayıcı Uyumu **
-Firefox
-Chrome
-Safari
-Opera
-İnternet Explorer
+|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
+|:-----------------:|:---------------:|:-------------------:|
+|**+**|**+**|**+**|
+{: .tarayici-uyumi}
+
 **Mobil Tarayıcılar**
-iOS Safari
-Opera Mobile
-Android Browser
-{: .tarayiciuyum}
+
+|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
+|:------------------------:|:----------------------:|:-------------------:|
+|**-**|**+**|**+**|
+{: .tarayici-uyumi}
 
   [Kutu Modeli]: /images/basit_boxmodel.gif
   [<uzunluk değeri >]: http://www.fatihhayrioglu.com/?p=95
