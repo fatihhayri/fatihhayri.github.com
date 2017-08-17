@@ -42,39 +42,39 @@ Performans sorunları sonrası bu ibre normal javascript tarafına yöneliyor.
 
 Meşhur jquery girişi:
 
-{% highlight javascript %}
-$(document).ready(function() { 
-  // DOM hazır
-});
-{% endhighlight %}
+	{% highlight javascript %}
+	$(document).ready(function() { 
+	  // DOM hazır
+	});
+	{% endhighlight %}
 
 veya kısa şekli
 
-{% highlight javascript %}
-$(function() {
-  // DOM hazır
-});
-{% endhighlight %}
+	{% highlight javascript %}
+	$(function() {
+	  // DOM hazır
+	});
+	{% endhighlight %}
 
 Peki bu kodu javascript ile nasıl yaparız. İki yöntem var tercih sizin.
 
 **DOMContentLoaded**
 
-{% highlight javascript %}
-document.addEventListener('DOMContentLoaded', function() {
-  // DOM hazır
-});
-{% endhighlight %}
+	{% highlight javascript %}
+	document.addEventListener('DOMContentLoaded', function() {
+	  // DOM hazır
+	});
+	{% endhighlight %}
 
 **onreadystatechange**
 
-{% highlight javascript %}
-document.onreadystatechange = function () {
-  if (document.readyState == "complete") {
-    // DOM hazır
-  }
-}
-{% endhighlight %}
+	{% highlight javascript %}
+	document.onreadystatechange = function () {
+	  if (document.readyState == "complete") {
+	    // DOM hazır
+	  }
+	}
+	{% endhighlight %}
 
 Nasıl güzel değil mi?
 
