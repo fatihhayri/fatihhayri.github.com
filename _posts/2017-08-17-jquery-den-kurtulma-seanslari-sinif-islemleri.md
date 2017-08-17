@@ -46,7 +46,7 @@ Seçtiğimiz elemana ait sınıfı silmek istediğimizde
 
 yine çok benzer tanımlar.
 
-## Sınıfın varlığını kontrol edelim
+## Sınıfın varlığını kontrol edelim
 
 Bir çok yerde seçilen eleman atanmış bir sınıfın olup olmadığını kontrol ederiz ve buna göre işlem yaparız.
 
@@ -64,7 +64,7 @@ Bir çok yerde seçilen eleman atanmış bir sınıfın olup olmadığını kont
 
 benzer kullanım.
 
-## Sınıf geçişi (toggle)
+## Sınıf geçişi (toggle)
 
 Çok tercih edilen bir diğer sınıf işlemedir. 
 
