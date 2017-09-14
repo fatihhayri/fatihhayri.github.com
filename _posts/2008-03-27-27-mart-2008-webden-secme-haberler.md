@@ -54,7 +54,7 @@ tags: .net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, mo
     "cssile değişen alanlar"
   [12]: http://www.filamentgroup.com/lab/creating_accessible_charts_using_canvas_and_jquery/
     "jQuery ile grafik"
-  [13]: http://www.virtualhosting.com/blog/2008/microformats-university-100-articles-and-resources/
+  [13]: http://html.com/blog/100-microformats-articles-resources/
     "mikroformat"
   [14]: http://blog.wolkanca.com/wordpress-25-ile-gelecek-olan-yenilikler/
     "wordpress 2.5"
