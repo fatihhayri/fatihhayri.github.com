@@ -220,6 +220,7 @@ Date: 2006-08-05 22:06
     -   [CSS ile HTML5 Yer Tutucu'ya(placeholder) Stil Vermek](/css-ile-html5-yer-tutucu-ya-placeholder-stil-vermek/)
     -   [CSS3 önek Karmaşası][]
     -   [CSS3 resize özelliği][]
+    -   [CSS3 ile resimleri oranını koruyarak sığdırma](/css-ile-resim-oranini-koruma/)
     -   [CSS3 ile Kısa Çizgi(tire) Ekleme](/css3-ile-kisa-cizgitire-ekleme/)
     -   [CSS ile metinlere gölge vermek(text-shadow)][]
     -   [Kutulara Gölge Vermek (box-shadow)][]
