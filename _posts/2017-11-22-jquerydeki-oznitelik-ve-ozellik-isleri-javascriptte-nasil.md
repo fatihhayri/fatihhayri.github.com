@@ -111,7 +111,8 @@ Ben bu ve benzer durumlarda  jQuery'nin javascript gerçeklerini tam anlamama en
 
 Kalın sağlıcakla.
 
-## Kaynaklar
+
+## Kaynaklar
 
  - [https://javascript.info/dom-attributes-and-properties#dom-properties-are-typed](https://javascript.info/dom-attributes-and-properties#dom-properties-are-typed)
  - [https://plainjs.com/javascript/attributes/](https://plainjs.com/javascript/attributes/)
