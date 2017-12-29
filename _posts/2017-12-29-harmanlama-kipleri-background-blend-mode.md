@@ -59,6 +59,8 @@ Bir çok farklı efektler elde edilebilir. [codepen.io](https://codepen.io/) sit
 
 video örneği çok güzel. https://codepen.io/dudleystorey/pen/wavpGe
 
+<p class="ciu_embed" data-feature="css-backgroundblendmode" data-periods="future_1,current,past_1,past_2">  <a href="http://caniuse.com/#feat=css-backgroundblendmode">Can I Use css-backgroundblendmode?</a> Data on support for the css-backgroundblendmode feature across the major browsers from caniuse.com. </p>
+
 Kalın sağlıcakla.
 
 ## Kaynaklar
