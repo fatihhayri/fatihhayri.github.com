@@ -1,3 +1,11 @@
+---
+layout: post
+title:  Harmanlama kipleri (background-blend-mode ve mix-blend-mode)
+Date: 2017-12-29 15:37
+Category: CSS
+tags: [background-blend-mode, mix-blend-mode]
+---
+
 Harmanlama kipleri (blend-mode) grafik işleme araçlarına aşina olanların bildiği bir özelliktir. İki farklı resmi veya yazıyı farklı filtreler ile harmanlayıp güzel tasarım sonuçları çıkaran bir yöntemdir. Bu yöntemi artık CSS ile yapabiliyoruz. CSS'in [filter](/css-filtre-efektleri/)'dan sonra **blend-mode** özelliği ile iyice grafik işlerini bünyesinde topladı. Harmanlama kiplerini iki farklı özellik ile uygulayabiliriz.
 
  - background-blend-mode
