@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Parcel Yapılandırma Dosyası Gerektirmeyen Paket Çözümü
+title: Parceljs'i denemek
 Date: 2018-02-01 14:43
 Category: Web Araçları
 tags: [webpack, paketleme, parcel, parceljs, browserify, rollupjs]
+image:
+  feature: parceljs.png
 ---
 
 Arayüz geliştiricilerin dünyası [Nodejs](https://nodejs.org/) sonrasında olumlu olarak değişti. Değişmeye de devam ediyor. Hızlı gelişen bu dünyada en büyük sorunlardan bir tanesi çok fazla araç çıkıyor ve bu araçları öğrenmek zaman alıyor. 
