@@ -133,9 +133,9 @@ npm run start
   
 deyince hata verdi :(
  
-İlk denemem de hata aldım biraz araştırdığımda cevabını da bulamadım. İlk denemem için fazla zamanım olmadığı için öylece bıraktım.
+İlk denememde hata aldım biraz araştırdığımda cevabını da bulamadım. İlk denemem için fazla zamanım olmadığı için öylece bıraktım.
  
-Sonra belirli bir süre sonra ikinci bir deneme yapayım dedim. Aynı yoları izledim. Yine aynı hatayı aldım biraz araştırınca hatanın Nodejs sürümünden kaynakladığını öğrendim. Hatayı şimdi net hatırlamıyorumama şu idi sanki
+Sonra belirli bir süre sonra ikinci bir deneme yapayım dedim. Aynı yoları izledim. Yine aynı hatayı aldım biraz araştırınca hatanın Nodejs sürümünden kaynakladığını öğrendim. Hatayı şimdi net hatırlamıyorum ama şu idi sanki
 
 {% highlight bash %}
 Can't find variable: require
