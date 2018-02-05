@@ -6,7 +6,7 @@ Category: Web Araçları
 tags: [flex, css3]
 ---
 
-Yaklaşık bir hafta önce flex hakkında Bursa'da Girişimci Engelliler Derneği'nin davetlisi olarak bir seminere gittim. Seminer çok güzel geçti. Seminer için [Bülent Sakarya](https://twitter.com/bulentsakarya) ve Samet Şahin'e teşekkürler. Seminere katılan arkadaşlara bir şeyler anlatırken ben bir şeyler öğrendim. Bu makalede bunları sizlerle paylaşacağım.
+Yaklaşık bir hafta önce flex hakkında Bursa'da Girişimci Engelliler Derneği'nin davetlisi olarak bir seminere gittim. Seminer çok güzel geçti. Seminer için [Bülent Sakarya](https://twitter.com/bulentsakarya) ve Samet Şahin'e teşekkürler. Seminere katılan arkadaşlara bir şeyler anlatmak için hazırlanırken ben bir şeyler öğrendim. Bu makalede bunları sizlerle paylaşacağım.
 
 <blockquote class="twitter-tweet" data-lang="tr"><p lang="tr" dir="ltr"><a href="https://t.co/pxYirymXug">https://t.co/pxYirymXug</a>&#39;dan Fatih Hayrioğlu CSS Flex anlatıyor. <a href="https://t.co/u8DyNAe3jg">pic.twitter.com/u8DyNAe3jg</a></p>&mdash; Bülent Sakarya (@bulentsakarya) <a href="https://twitter.com/bulentsakarya/status/957234288390561792?ref_src=twsrc%5Etfw">27 Ocak 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
