@@ -2,7 +2,7 @@
 layout: post
 title: Flex'ın gizli kalmış güzel bir özelliği
 Date: 2018-02-05 16:43
-Category: Web Araçları
+Category: CSS
 tags: [flex, css3]
 ---
 

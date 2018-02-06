@@ -251,6 +251,10 @@ Date: 2006-08-05 22:06
     -   [CSS3 Çoklu Kolonlar][]
     -   [CSS3 calc() değeri][]
     -   [Yenilenmiş Flex(Esnek Kutu) Modülü](/yenilenmis-flex-modulu/)
+        -   [
+Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](http://fatihhayrioglu.com/flex-ile-yatayda-ve-dikeyde-ortali-alanlar-olusturmak/)
+        -   [Flex'ın gizli kalmış güzel bir özelliği](http://fatihhayrioglu.com/flexin-gizli-kalmis-guzel-bir-ozelligi/)
+        -   [Flex ile sayfa dibine yapışık alt alanlar (sticky footer) yapmak](http://fatihhayrioglu.com/flex-ile-sayfa-dibine-yapisik-alt-alanlar-sticky-footer-yapmak/)
     -   [CSS3 pointer-events özelliği][]
     -   [CSS3 Dönüştürme Özellikleri(Transforms) ve 2B Dönüştürme][]
     -   [CSS3 Dönüştürme(Transforms) ve 3B Dönüştürme][]
