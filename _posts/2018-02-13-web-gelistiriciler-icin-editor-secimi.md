@@ -217,7 +217,7 @@ Ben sahibinden.com'da çalışırken kullanmak zorunda kaldığım için mi bilm
  - Bütünleşik test araçları
  - Hızlı güncelleme
  - Yeni nesil Javascript kütüphane desteği (vue, react, angular, node, require ve daha fazlası)
- - Öğretim görevlisi, öğrenciler veya edu maili olanlara ücretsiz (Bu bilg için [Kadir](https://twitter.com/serkesp)'e teşekkürlerimi sunarım.)
+ - Öğretim görevlisi, öğrenciler veya edu maili olanlara ücretsiz (Bu bilg için [Kadir](https://twitter.com/serkesp)'e ve [Akın](https://akin.ayturan.com/)'a teşekkürlerimi sunarım.)
 
 ### Eksiler
 
