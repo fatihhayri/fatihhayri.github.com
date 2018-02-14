@@ -133,7 +133,7 @@ Adobe'un Atom ile aynı zamanda (2014) çıkardığı editörüdür.
 
  - Çoklu platform desteği. Windows, Mac ve Linux
  - Tarayıcı üzerinde canlı önizleme
- - Hızlı CSS düzeneleme
+ - Hızlı CSS düzenleme imkanı
  - Eklenti desteği
  - Kullanışlı ara ve değiştir
  - Ücretsiz ve açık kaynak olması
@@ -152,7 +152,7 @@ Kullanmadığım için kendi tanımları ve internette gördüğüm eksilerini y
 
 ![NotePad ++](/images/notepad++.gif)
 
-Vim dışında bu listedeki en eski editör. 2003 senesinde çıkmış. Sadece Window'ta çalışıyor.
+Vim dışında bu listedeki en eski editör. 2003 senesinde çıkmış. Sadece Windows'ta çalışıyor.
 
 ### Artıları
 
@@ -198,7 +198,7 @@ Vim dışında bu listedeki en eski editör. 2003 senesinde çıkmış. Sadece W
 
 ## Yorum
 
-Ben sahibinden.com'da çalışırken kullanmak zorunda kaldığım için mi bilmiyorum ama çok sevemediğim bir editör. Öğrenme eğrisi en yüksek editör diyebilirim. Uzak bilgisayarlar ile çalışanlar için kullanış bir editör. 
+Ben sahibinden.com'da çalışırken kullanmak zorunda kaldığım için mi bilmiyorum ama çok sevemediğim bir editör. Öğrenme eğrisi en yüksek editör diyebilirim. Uzak bilgisayarlar ile çalışanlar için kullanışlı bir editör. 
 
 ## [WebStorm  - jetbrains.com/webstorm](https://www.jetbrains.com/webstorm/)
 
@@ -217,6 +217,7 @@ Ben sahibinden.com'da çalışırken kullanmak zorunda kaldığım için mi bilm
  - Bütünleşik test araçları
  - Hızlı güncelleme
  - Yeni nesil Javascript kütüphane desteği (vue, react, angular, node, require ve daha fazlası)
+ - Öğretim görevlisi, öğrenciler veya edu maili olanlara ücretsiz (Bu bilg için [Kadir](https://twitter.com/serkesp)'e teşekkürlerimi sunarım.)
 
 ### Eksiler
 
@@ -278,3 +279,4 @@ Kalın sağlıcakla.
  - [http://blog.liveedu.tv/10-best-text-editors-programming-2016/](http://blog.liveedu.tv/10-best-text-editors-programming-2016/)
  - [https://blog.codeship.com/5-code-editors-for-web-application-and-api-development/](https://blog.codeship.com/5-code-editors-for-web-application-and-api-development/)
  - [https://tomthedev.com/blog-page/atom-vs-sublime-vs-brackets-vs-vs-code](https://tomthedev.com/blog-page/atom-vs-sublime-vs-brackets-vs-vs-code)
+ - [https://www.jetbrains.com/student/](https://www.jetbrains.com/student/)
