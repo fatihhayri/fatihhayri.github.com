@@ -187,7 +187,7 @@ Vim dışında bu listedeki en eski editör. 2003 senesinde çıkmış. Sadece W
  - Linux'da başlangıçta kurulu gelmesi
  - Çoklu platform desteği. Windows, Mac ve Linux
  - Ücretsiz ve açık kaynak olması
- - 3. parti paket desteği
+ - Üçüncü parti paket desteği
 
 ### Eksiler
 
