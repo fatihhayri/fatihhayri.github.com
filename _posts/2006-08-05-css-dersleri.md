@@ -31,7 +31,7 @@ Date: 2006-08-05 22:06
         -   [Tablo Özellikleri][]
         -   [Dış hat çizgisi(outline) özellikleri][]
 	-   [Arapça Site Kodlamak ve direction:rtl özelliği][]
-    -   [CSS Editörleri][]
+    -   [Web Geliştiriciler İçin Editör Seçimi](http://fatihhayrioglu.com/web-gelistiriciler-icin-editor-secimi/)
     -   [İnternet Tarayıcıları][]
 		-   [Sessiz Tarayıcı Güncelleme Özelliği][]
         -   [Firefox 6][]
@@ -308,7 +308,6 @@ Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](http://fatihhayrioglu.c
   [Tablo Özellikleri]: /tablo-ozellikleri/
   [Dış hat çizgisi(outline) özellikleri]: /dis-hat-cizgisioutline-ozellikleri/
   [Arapça Site Kodlamak ve direction:rtl özelliği]: /arapca-site-kodlamak-ve-directionrtl-ozelligi/
-  [CSS Editörleri]: /css-editorleri/
   [İnternet Tarayıcıları]: /internet-tarayicilari/
   [Sessiz Tarayıcı Güncelleme Özelliği]: /sessiz-tarayici-guncelleme-ozelligi/
   [Firefox 6]: /firefox-6/

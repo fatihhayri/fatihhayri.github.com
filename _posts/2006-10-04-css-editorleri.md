@@ -6,6 +6,8 @@ Category: CSS
 tags: BBEdit, CoffeeCup-HTML-Editor, CSS, CSSEdit, emacs, Macromedia-Dreamweaver, Microsoft Expression, Microsoft FrontPage, NotePad, Style-Master, TextEdit, TopStyle, vi, vim, WordPad
 ---
 
+  > Bu yazı eskidi. Yenisini yazdım yenisini okumak için [tıklayınız.](http://fatihhayrioglu.com/web-gelistiriciler-icin-editor-secimi/)
+
 Kendinize hala CSS için hangi editörü kurmalıyım diye soruyorsanız işte
 size cevap
 
