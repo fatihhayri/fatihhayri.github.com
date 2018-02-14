@@ -224,6 +224,7 @@ Ben sahibinden.com'da çalışırken kullanmak zorunda kaldığım için mi bilm
  - Ara sıra yaşanan performans sorunları
  - Karışık arayüz
  - Hız sorunları
+ - İlk açılışı yavaş. [Akın](https://akin.ayturan.com/)'a teşekkürler
  - Yıllık 129$ fiyat ve 30 gün deneme imkanı
 
 ### Yorum
