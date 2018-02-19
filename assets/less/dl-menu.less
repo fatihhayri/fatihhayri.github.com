@@ -4,11 +4,7 @@
 	top: 0;
 	left: 0;
 	z-index: 1000;
-	-webkit-perspective: 1000px;
-	-moz-perspective: 1000px;
 	perspective: 1000px;
-	-webkit-perspective-origin: 50% 200%;
-	-moz-perspective-origin: 50% 200%;
 	perspective-origin: 50% 200%;
 	@media @medium {
 		position: fixed;
@@ -57,8 +53,6 @@
 	ul {
 		padding: 0;
 		list-style: none;
-		-webkit-transform-style: preserve-3d;
-		-moz-transform-style: preserve-3d;
 		transform-style: preserve-3d;
 	}
 	li {
@@ -91,6 +85,18 @@
 			line-height: 20px;
 			color: @white;
 			outline: none;
+
+			svg {
+				width: 14px;
+				height: 14px;
+				display: inline-block;
+				vertical-align: baseline;
+				margin-right: 5px;
+
+				path {
+					fill: @white;
+				}
+			}
 		}
 		.dl-back > a {
 			padding-left: 30px;
@@ -99,19 +105,16 @@
 		.dl-back:after,
 		> a:not(:only-child):after {
 			position: absolute;
-			top: 0;
-			line-height: 50px;
-			font-family: 'fontawesome';
-			color: @white;
-			speak: none;
-			-webkit-font-smoothing: antialiased;
-			content: "\f105";
+			top: 17px;
+			content: "";
+			background: url("/assets/icons/back.svg") 0 0 no-repeat; 
+			background-size: 14px 14px;
+			width: 14px;
+			height: 14px;
+			display: inline-block;
 		}
 		.dl-back:after {
 			left: 10px;
-			color: rgba(212,204,198,0.5);
-			-webkit-transform: rotate(180deg);
-			-moz-transform: rotate(180deg);
 			transform: rotate(180deg);
 		}
 		> a:after {
@@ -129,11 +132,7 @@
 		opacity: 0;
 		pointer-events: none;
 		box-shadow: 0 12px 24px fade(@black,35);
-		-webkit-transform: translateY(10px);
-		-moz-transform: translateY(10px);
 		transform: translateY(10px);
-		-webkit-backface-visibility: hidden;
-		-moz-backface-visibility: hidden;
 		backface-visibility: hidden;
 		@media @medium {
 			.border-radius(3px,3px,3px,3px);
@@ -148,8 +147,6 @@
 	.dl-menu.dl-menuopen {
 		opacity: 1;
 		pointer-events: auto;
-		-webkit-transform: translateY(0px);
-		-moz-transform: translateY(0px);
 		transform: translateY(0px);
 	}
 	.dl-submenu {
@@ -182,21 +179,7 @@ All this is done for any sub-level being entered.
 }
 /* Animation classes for moving out and in */
 .dl-menu.dl-animate-out {
-	-webkit-animation: MenuAnimOut 0.4s ease;
-	-moz-animation: MenuAnimOut 0.4s ease;
 	animation: MenuAnimOut 0.4s ease;
-}
-@-webkit-keyframes MenuAnimOut {
-	100% {
-		-webkit-transform: translateZ(300px);
-		opacity: 0;
-	}
-}
-@-moz-keyframes MenuAnimOut {
-	100% {
-		-moz-transform: translateZ(300px);
-		opacity: 0;
-	}
 }
 @keyframes MenuAnimOut {
 	100% {
@@ -205,29 +188,7 @@ All this is done for any sub-level being entered.
 	}
 }
 .dl-menu.dl-animate-in {
-	-webkit-animation: MenuAnimIn 0.4s ease;
-	-moz-animation: MenuAnimIn 0.4s ease;
 	animation: MenuAnimIn 0.4s ease;
-}
-@-webkit-keyframes MenuAnimIn {
-	0% {
-		-webkit-transform: translateZ(300px);
-		opacity: 0;
-	}
-	100% {
-		-webkit-transform: translateZ(0px);
-		opacity: 1;
-	}
-}
-@-moz-keyframes MenuAnimIn {
-	0% {
-		-moz-transform: translateZ(300px);
-		opacity: 0;
-	}
-	100% {
-		-moz-transform: translateZ(0px);
-		opacity: 1;
-	}
 }
 @keyframes MenuAnimIn {
 	0% {
@@ -240,29 +201,7 @@ All this is done for any sub-level being entered.
 	}
 }
 .dl-menuwrapper > .dl-submenu.dl-animate-in {
-	-webkit-animation: SubMenuAnimIn 0.4s ease;
-	-moz-animation: SubMenuAnimIn 0.4s ease;
 	animation: SubMenuAnimIn 0.4s ease;
-}
-@-webkit-keyframes SubMenuAnimIn {
-	0% {
-		-webkit-transform: translateZ(-300px);
-		opacity: 0;
-	}
-	100% {
-		-webkit-transform: translateZ(0px);
-		opacity: 1;
-	}
-}
-@-moz-keyframes SubMenuAnimIn {
-	0% {
-		-moz-transform: translateZ(-300px);
-		opacity: 0;
-	}
-	100% {
-		-moz-transform: translateZ(0px);
-		opacity: 1;
-	}
 }
 @keyframes SubMenuAnimIn {
 	0% {
@@ -275,29 +214,7 @@ All this is done for any sub-level being entered.
 	}
 }
 .dl-menuwrapper > .dl-submenu.dl-animate-out {
-	-webkit-animation: SubMenuAnimOut 0.4s ease;
-	-moz-animation: SubMenuAnimOut 0.4s ease;
 	animation: SubMenuAnimOut 0.4s ease;
-}
-@-webkit-keyframes SubMenuAnimOut {
-	0% {
-		-webkit-transform: translateZ(0px);
-		opacity: 1;
-	}
-	100% {
-		-webkit-transform: translateZ(-300px);
-		opacity: 0;
-	}
-}
-@-moz-keyframes SubMenuAnimOut {
-	0% {
-		-moz-transform: translateZ(0px);
-		opacity: 1;
-	}
-	100% {
-		-moz-transform: translateZ(-300px);
-		opacity: 0;
-	}
 }
 @keyframes SubMenuAnimOut {
 	0% {
@@ -322,8 +239,6 @@ All this is done for any sub-level being entered.
 		position: relative;
 		opacity: 1;
 		pointer-events: auto;
-		-webkit-transform: none;
-		-moz-transform: none;
 		transform: none;
 	}
 	.dl-menuwrapper li .dl-submenu {
