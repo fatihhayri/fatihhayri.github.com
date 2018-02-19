@@ -14,21 +14,23 @@ Performans hiç olmadığı kadar önemli bir hale geldi. Google'un arama sonuç
 
 Google Chrome Developer Tool'da sağdaki menüden More Tools - Coverage ile pencereyi açabilirsiniz. Daha kısa olarak Developer Tools'u açtıktan sonra ⌘+⌥+I (Mac) veya Control+Shift+I (Windows, Linux) basıp açılan menüde **Show Coverage** yazın ve enter'a basın.
 
-![Developer Tools Coverage](/images/kod-kullanim-orani-baslangic.gif)
-
 Gelen ekrandan kayıt butonuna tıklayarak hesaplamayı başlatabilirsiniz. Burada dinamik olarak eklenen alanları açarak bu hesaplamanın daha iyi sonuçlar vermesini sağlayabilirsiniz. Gizle göster ile açılan alanlar vs. Kayıt butonuna tekrar basarak hesaplamayı bitirin. Sonuç listesi aşağıdaki gibi görünecektir.
 
-Listede sayfadaki kaynaklar ve bunları kullanım oranlarını var. Her bir linkin üzeirne tıklayarak detayını Source (Kaynak) sekmesinde görebilrisiniz.
+![Developer Tools Coverage](/images/kod-kullanim-orani-baslangic.gif)
 
-Detaysayfasını incelediğimizde kod satırlarının olsundaki kırmızı çizgi kullanılmayan yerleri yeşil çizgiler ise kullanılan alnları göstermektedir.
+Listede sayfadaki kaynaklar ve bunların kullanım oranlarını var. Her bir linkin üzerine tıklayarak detayını Source (Kaynak) sekmesinde görebilrisiniz.
+
+Detay sayfasını incelediğimizde kod satırlarının solundaki kırmızı çizgi kullanılmayan yerleri yeşil çizgiler ise kullanılan alanları göstermektedir.
 
 ![Developer Tools Coverage](/images/kod-kullanim-orani-detay.gif)
 
-Örneği yaptığım fatihhayrioglu.com'da fontawesome'ın 7-8 yer kullanıldığını gördüm. Bunların yerine satıriçi SVG ikon kullanıp fontawesome'ı kaldırdım. Başlangıçta %75 kullanılmayan kod varken fontawesome'ı çıkarınca %57.5'e düştü. Şimdilik bu kadar. 
+Örneği yaptığım fatihhayrioglu.com'da fontawesome'ın 7-8 yerde kullanıldığını gördüm. Bunların yerine satıriçi SVG ikon kullanıp fontawesome'ı kaldırdım. Başlangıçta %75 kullanılmayan kod varken fontawesome'ı çıkarınca %57.5'e düştü. Şimdilik bu kadar. 
 
 ![Developer Tools Coverage](/images/kod-kullanim-orani-sonuc.gif)
 
 Aynı şekilde Javascript kaynakları içinde sonuçlar var. Herbirini inceleyip kullanılmayan veya az kullanılan kaynakları sayfadan çıkararak sayfalarımızı hızlandırabiliriz.
+
+Kalın sağlıcakla.
 
 
 ## Kaynaklar
