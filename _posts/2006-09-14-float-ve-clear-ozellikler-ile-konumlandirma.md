@@ -48,20 +48,22 @@ benzerdir. Resimleri konumlandırmak için kullanılan bu yöntem daha sonra
 CSS'in olaya el atması ile tüm elementler için kullanıla geldi. Ayrıca
 float özelliği çoklu kolon oluşturmak için de kullanılır.
 
-	:::css
-	img {
-		float:left;
-		margin:0 4px 4px 0;
-	}
+{% highlight css %}
+img {
+  float:left;
+  margin:0 4px 4px 0;
+}
+{% endhighlight %}
 
 **float:left** ataması yapılan resim sola dayanacak ve metin bu resmin
 etrafını saracaktır.
 
 ![][100]
 
-	:::html
-	<img src="resim.gif" width="150" height=150 alt="resim bilgisi" />
-	<p>... paragraf metni ... </p>
+{% highlight html %}
+<img src="resim.gif" width="150" height=150 alt="resim bilgisi" />
+<p>... paragraf metni ... </p>
+{% endhighlight %}
 
 Bir elemente float uygulandığında, float uygulanan kutu kapsayıcı
 kutunun veya diğer float kutusunun dış kenarının sağına veya soluna
@@ -79,16 +81,18 @@ Aşağıdaki şekilde **float:left** tanımlaması yapılarak 1.kutu kapsayıcı
 kutunun en soluna dayanmıştır. Diğer iki kutu ise normal akışına devam
 etmektedir.
 
-	:::css
-	p {
-		float:left;
-	    width:200px;
-	    margin:0;
-	}
-	img {
-	    float:left;
-	    margin:0 4px 4px 0;
-	}
+{% highlight css %}
+p {
+  float:left;
+  width:200px;
+  margin:0;
+}
+
+img {
+  float:left;
+  margin:0 4px 4px 0;
+}
+{% endhighlight %}
 
 Burada her iki elemente de float uygulanarak metnin resmi sarmasına son
 verilmiştir. Bu çoklu kolon oluşturma tekniğinin basit bir örneğidir.

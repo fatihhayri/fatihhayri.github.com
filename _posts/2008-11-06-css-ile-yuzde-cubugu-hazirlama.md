@@ -17,22 +17,22 @@ Bu yöntemin uygulaması gayet basittir. Diğer yöntemlerden avantajıda
 fazladan kod kullanılmamasıdır, sadece iki resim ile işimizi
 halledeceğiz. Anlamlı kodlama açısından avantajlıdır.
 
-
-
 Sayfamıza saydam bir resim ekleriz ve ardalan konumunu kod içinde
 belirleriz
 
-	:::html
-	<img src="/images/yuzde_cubugu.png" alt="%45" class="yuzdeCubugu" style="background-position: -50px 0;" />
+{% highlight html %}
+<img src="/images/yuzde_cubugu.png" alt="%45" class="yuzdeCubugu" style="background-position: -50px 0;" />
+{% endhighlight %}
 
 Sonrasında CSS kodumuzu yazarsak;
 
-	:::css
-	img.yuzdeCubugu {
-		background: url(/images/yuzdeCubugu_ard.gif) top left no-repeat;
-		padding: 0;
-		margin: 0;
-	}
+{% highlight css %}
+img.yuzdeCubugu {
+  background: url(/images/yuzdeCubugu_ard.gif) top left no-repeat;
+  padding: 0;
+  margin: 0;
+}
+{% endhighlight %}
 
 Kod kısmı bu kadar. Evet bu kadar kod ile yüzde çubuğunu oluşturduk.
 Kodun mantığını incelersek;
@@ -59,14 +59,15 @@ Resimlerimiz
 
 ![][1]
 
-Xhtml kodumuzu yazalım.
+HTML kodumuzu yazalım.
 
-	:::html
-	<h1>Amerika Seçim Sonuçları</h1>
-	<p>Obama (%56)</p>
-	<img src="yuzde_cubugu.gif" width="104" height="14" alt="%56" class="yuzde1" style="background-position: -42px 0;" />
-	<p>McCain (%44)</p>
-	<img src="yuzde_cubugu.gif" width="104" height="14" alt="%44" class="yuzde2" style="background-position: -54px 0;" />
+{% highlight html %}
+<h1>Amerika Seçim Sonuçları</h1>
+<p>Obama (%56)</p>
+<img src="yuzde_cubugu.gif" width="104" height="14" alt="%56" class="yuzde1" style="background-position: -42px 0;" />
+<p>McCain (%44)</p>
+<img src="yuzde_cubugu.gif" width="104" height="14" alt="%44" class="yuzde2" style="background-position: -54px 0;" />
+{% endhighlight %}
 
 Yüzde çubuğunun genişliğini 100px yaptım ki, ayarlaması kolay olsun.
 Resim genişliğinin 104px görünmesinin nedeni 2px sağdan ve 2px soldan
@@ -80,29 +81,30 @@ Aynı şekilde **McCain**'in yüzdesini de hesaplarsak. 100 - 44 - = -54px
 
 CSS kodumuz;
 
-	:::css
-	h1{
-	    font:18px Arial, Helvetica, sans-serif;
-	    color:#666;
-	}
+{% highlight css %}
+h1 {
+  font:18px Arial, Helvetica, sans-serif;
+  color:#666;
+}
 
-	p{
-	    font:bold 12px Arial, Helvetica, sans-serif;
-	    margin-bottom:5px;
-	    color:#666;
-	}
+p {
+  font:bold 12px Arial, Helvetica, sans-serif;
+  margin-bottom:5px;
+  color:#666;
+}
 
-	img.yuzde1 {
-	 background:url(gosteri1.gif) 0 0 no-repeat;
-	 padding: 0;
-	 margin: 0;
-	}
+img.yuzde1 {
+  background:url(gosteri1.gif) 0 0 no-repeat;
+  padding: 0;
+  margin: 0;
+}
 
-	img.yuzde2 {
-	 background:url(gosteri2.gif) 0 0 no-repeat;
-	 padding: 0;
-	 margin: 0;
-	}
+img.yuzde2 {
+  background:url(gosteri2.gif) 0 0 no-repeat;
+  padding: 0;
+  margin: 0;
+}
+{% endhighlight %}
 
 ![anket sonuç ekranı][]
 

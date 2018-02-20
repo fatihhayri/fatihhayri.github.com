@@ -44,53 +44,50 @@ web sayfası hazırlama imkanı verir.
 yüzdesel değeri yaklaşık olarak 62.5% civarındadır. Bu belirtilen
 değerlere göre kodumuzu yazarsak:
 
-	:::css
-	body{
-	    text-align:center;
-	    font-size:62.5%;
-	    font-family:Arial, Helvetica, sans-serif;
-	}
-	#sayfa{
-	    width:72em;
-	    margin:0 auto;
-	    text-align:left;
-	}
+{% highlight css %}
+body{
+  text-align:center;
+  font-size:62.5%;
+  font-family:Arial, Helvetica, sans-serif;
+}
 
-	#ustAlan
-	{
-		width:72em;
-	}
+#sayfa{
+  width:72em;
+  margin:0 auto;
+  text-align:left;
+}
 
-	#anaMenu
-	{
-	    float: left;
-	    width: 18em;
-	}
+#ustAlan {
+  width:72em;
+}
 
-	#KapsayiciAlan
-	{
-	    float: right;
-	    width: 52em;
-	}
+#anaMenu {
+  float: left;
+  width: 18em;
+}
 
-	#icerik
-	{
-	    float: left;
-	    width: 32em;
-	}
+#KapsayiciAlan {
+  float: right;
+  width: 52em;
+}
 
-	#BannerAlani{
-	    float: right;
-	    width: 20em;
-	}
+#icerik {
+  float: left;
+  width: 32em;
+}
 
-	#altAlan
-	{
-	    width:72em;
-	    clear: both;
-	}
+#BannerAlani {
+  float: right;
+  width: 20em;
+}
 
-Burada body elementi font boyutunu 1em eşit olan font-size:62.5%;
+#altAlan {
+  width:72em;
+  clear: both;
+}
+{% endhighlight %}
+
+Burada **body** elementi font boyutunu **1em** eşit olan **font-size:62.5%;**
 atamasını yaptık. Daha sonra sayfadaki birimleri bu değeri baz alarak
 hesapladık ve em birimi vererek sayfamızı elastik bir hala getirdik.
 
@@ -99,4 +96,3 @@ tarayıcısının font boyutu değerlerini veya yakınlaştırma(zoom) aracını
 (Opera, FF-eklentisi var ve IE 7 de var)kullanarak görebilriz. IE ve FF
 için Görünüm(View) - Metin Boyutu(Text Size) Opera için View - Zoom
 seçeneklerini kullanarak farkı görebilriz.
-

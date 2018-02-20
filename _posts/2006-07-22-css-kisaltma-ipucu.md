@@ -12,8 +12,9 @@ sitemizi hız ve tutarlılık kazandıracaktır. Örneğin sitemizde kullanılan
 genel yazı tipi ve yazı tipi rengini body içinde tanımlayarak bir çok
 tekrarı engellemiş oluruz.
 
-	:::css
-	body {
-		font:Arial, Helvetica, sans-serif;
-		color: #474747
-	}
+{% highlight css %}
+body {
+  font:Arial, Helvetica, sans-serif;
+  color: #474747
+}
+{% endhighlight %}

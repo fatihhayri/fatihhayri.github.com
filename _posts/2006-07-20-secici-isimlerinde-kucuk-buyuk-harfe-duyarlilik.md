@@ -15,12 +15,14 @@ sorunu bertaraf etmiş oluruz. HTML ve XHTML'in her ikisinde de
 özellikler(attributes) küçük büyük harfe duyarlıdır. Eğer farklı harf
 büyüklükleri kullanıyorsanız buna çok fazla dikkat etmelisiniz.
 
-	:::css
-	.DenemeYazisi{
-		font:12px Arial, Verdan, serif
-	}
+{% highlight css %}
+.DenemeYazisi{
+  font:12px Arial, Verdan, serif
+}
+{% endhighlight %}
 
 HTML kodu;
 
-	:::html
-	<p class="DenemeYazisi">Dikkatli ol!</p>
+{% highlight html %}
+<p class="DenemeYazisi">Dikkatli ol!</p>
+{% endhighlight %}

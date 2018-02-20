@@ -19,7 +19,7 @@ avantajları bulunmaktadır. Belli başlı avantajlarını sıralarsak:
 
 CSS HTML'e göre bir çok stil özelliğine sahiptir. CSS'in sayfa içeriği
 öğelerinin sayfa görünümü öğelerinden ayrılması için geliştirildiğini
-düşünürsek avantajı baştan anlaşılmış olur. 	:::html
+düşünürsek avantajı baştan anlaşılmış olur.
 
 
 ## CSS'e Giriş
@@ -31,16 +31,17 @@ de bunu tek bir elementle yapabiliriz ve ayrıca daha fazla stil
 özellikleride atayabiliriz.(örn: kenarlık, rollover vs stillerini
 ekleyebiliriz.)
 
-	:::css
-	h1 {
-		color: white;
-		font:italic 11px Arial, serif;
-		text-decoration: underline;
-		background: yellow url(titlebg.gif) repeat-x;
-		border: 1px solid red;
-		margin-bottom: 0;
-		padding: 5px;
-	}
+{% highlight css %}
+h1 {
+  color: white;
+  font:italic 11px Arial, serif;
+  text-decoration: underline;
+  background: yellow url(titlebg.gif) repeat-x;
+  border: 1px solid red;
+  margin-bottom: 0;
+  padding: 5px;
+}
+{% endhighlight %}
 
 ## Kullanım Kolaylığı
 
@@ -48,23 +49,28 @@ HTML'de her elmente artı özellikler eklemek için başka bir element ve
 özellik eklmemiz gerekiyor ve bu işlemi geniş çaplı bir sitede yaptığımızı
 düşünürseniz çok büyük zaman kaybı ve uğraş gerektiğini göreceksiniz.
 
-	:::html
-	<h1><font color="blue">Başlık</font></h1>
+{% highlight html %}
+<h1>
+  <font color="blue">Başlık</font>
+</h1>
+{% endhighlight %}
 
 Bunun gibi onlarca veya yüzlerce başlığınız olduğunu düşünün, gerçekten çok zor. CSS'de aynı işlem için
 
-	:::css
-	h1 {
-		color: blue;
-	}
+{% highlight css %}
+h1 {
+  color: blue;
+}
+{% endhighlight %}
 
 hatta daha sonra bu elementin özelliklerinde değişiklik yapmamızda kolay olacaktır. Hatta bu
 işlemi sadece bu etiket için değil diğer etiketlerede uygulayabiliriz.
 
-	:::css
-	h1, h2 {
-		color: blue;
-	}
+{% highlight css %}
+h1, h2 {
+  color: blue;
+}
+{% endhighlight %}
 
 Ayrıcatek bir CSS dosyası ile sitenin tamamının yönetmekte web kodlamacıları
 için çok büyük kolaylıktır. Sadece bir dosyada değişlik yaparak tüm

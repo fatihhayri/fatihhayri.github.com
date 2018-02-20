@@ -12,18 +12,20 @@ hata gelebilir. Bu gayet normal bir haldir. Mesele bu hataları
 çözmektir. Hata çözmede izlenecek yöntemlerden bir tanesi elementlere
 kenar çizgisi(border) atamaktır.
 
-	:::css
-	 li a {
-		border: 1px solid red;
-	}
+{% highlight css %}
+li a {
+  border: 1px solid red;
+}
+{% endhighlight %}
 
 Diğer bir yöntemde elemente ardalan rengi(background-color) uygulamaktır.
 
 CSS kodu;
 
-	:::css
-	#icerikalani {
-		background-color:#999;
-	}
+{% highlight css %}
+.icerikalani {
+  background-color:#999;
+}
+{% endhighlight %}
 
 Böylece elementin etki alanı görülecek ve hatayı tespit kolaylaşacaktır.

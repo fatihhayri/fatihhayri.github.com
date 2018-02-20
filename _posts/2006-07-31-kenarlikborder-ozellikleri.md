@@ -43,11 +43,11 @@ değeri varsa tüm kenarlık değeri ataması yapılmış demektir. Eğer iki
 veya üç değer ataması yapılmış ise [margin][]'de gördüğümüz sıralama söz
 konusudur.
 
-	:::css
-	p.yeni {
-		border-style: solid;
-	}
-
+{% highlight css %}
+p.yeni {
+  border-style: solid;
+}
+{% endhighlight %}
 
 **Tarayıcı Uyumu **
 Firefox
@@ -75,11 +75,12 @@ Android Browser
 border-left-style** border-style özelliğinin her kenara ayrı ayrı
 atamasını yapabilmek için kullanılır.
 
-	:::css
-	h1{
-		border-style: solid;
-		border-left-style: none;
-	}
+{% highlight css %}
+h1{
+  border-style: solid;
+  border-left-style: none;
+}
+{% endhighlight %}
 
 **Tarayıcı Uyumu **
 Firefox
@@ -107,14 +108,14 @@ için **border-width** değeri kullanılır.
 
 **border-width** yüzde değeri alamaz.
 
-	:::css
-	p {
-		margin: 5px;
-		background-color: silver;
-		border-style: solid;
-		border-width: 1px;
-	}
-
+{% highlight css %}
+p {
+  margin: 5px;
+  background-color: silver;
+  border-style: solid;
+  border-width: 1px;
+}
+{% endhighlight %}
 
 **Tarayıcı Uyumu **
 Firefox
@@ -142,11 +143,12 @@ inherit\\
 border-left-width** border-width özelliğinin her kenara ayrı ayrı
 atamasını yapabilmek için kullanılır.
 
-	:::css
-	h2 {
-		border-left-width: medium;
-		border-style: solid;
-	}
+{% highlight css %}
+h2 {
+  border-left-width: medium;
+  border-style: solid;
+}
+{% endhighlight %}
 
 **Tarayıcı Uyumu **
 Firefox
@@ -173,11 +175,12 @@ Android Browser
 **border-color** özelliği kenarlık rengini belirler. (X)html'deki
 **bordercolor** ile benzerdir.
 
-	:::css
-	p {
-		border-style: solid;
-		border-color: gray;
-	}
+{% highlight css %}
+p {
+  border-style: solid;
+  border-color: gray;
+}
+{% endhighlight %}
 
 Tek değer tüm kenarlık renklerini belirler, her kenar için ayrı renk
 tanımlamasıda yapılabilir.
@@ -211,11 +214,12 @@ için kullanılır.
 CSS2 ile birlikte gelen transparent özelliği vardır ki bu kenarlığı yok
 etmez sadece görünmez yapar.
 
-	:::css
-	p {
-		border-style: solid;
-		border-color: gray;
-	}
+{% highlight css %}
+p {
+  border-style: solid;
+  border-color: gray;
+}
+{% endhighlight %}
 
 Tek değer tüm kenarlık renklerini belirler, her kenar için ayrı renk
 tanımlamasıda yapılabilir.
@@ -244,22 +248,23 @@ Android Browser
 **border**yukarıda sıraladığımız özellikleri tek sefer de tanımlamak
 için kullanılır. Bir [kısaltmadır][].
 
-	:::css
-	h1 {
-		border: thick silver solid;
-	}
-
+{% highlight css %}
+h1 {
+  border: thick silver solid;
+}
+{% endhighlight %}
 
 Bu özellikleri tek tek atamak isteseydik şöyle bir kod yazmamız
 gerekecekti.
 
-	:::css
-	h1 {
-		border-top: thick silver solid;
-		border-bottom: thick silver solid;
-		border-right: thick silver solid;
-		border-left: thick silver solid;
-	}
+{% highlight css %}
+h1 {
+  border-top: thick silver solid;
+  border-bottom: thick silver solid;
+  border-right: thick silver solid;
+  border-left: thick silver solid;
+}
+{% endhighlight %}
 
 **Tarayıcı Uyumu **
 Firefox

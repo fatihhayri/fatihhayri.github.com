@@ -55,12 +55,13 @@ genişlik veya yükseklik değeri tüm kutu model element değerini ifade
 eder. Yani tüm padding ve border değerlerini içerir kalan kısmıda içerik
 alanı değeri olarak belirlenir.
 
-	:::css
-	#icerik{
-		width:200px;
-		padding:10px;
-		border:5px solid #000;
-	}
+{% highlight css %}
+#icerik{
+  width:200px;
+  padding:10px;
+  border:5px solid #000;
+}
+{% endhighlight %}
 
 Standart web tarayıcıları bu durumu şöyle yorumlayacaklardır. 200px +
 10px sol kenar iç boşluğu + 5px sol kenar çizgisi + 10px sağ kenar iç
@@ -74,15 +75,16 @@ kenar dış boğluklarını(margin) da dikkate elmalıyız. Bu sorunun çözüm�
 için üretilmiş bir çok yöntem vardır. Ancak bence en sağlamı
 [tantek][]'in ürettiği koddur ve burada bundan bahsedeceğim.
 
-	:::css
-	#icerik{
-		width:230px;
-		padding:10px;
-		border:5px solid #000; /* Bundan sonraki kısmı ie5win sakla */
-		voice-family: ""}"";
-		voice-family:inherit;
-		width:200px;
-	}
+{% highlight css %}
+#icerik{
+  width:230px;
+  padding:10px;
+  border:5px solid #000; /* Bundan sonraki kısmı ie5win sakla */
+  voice-family: ""}"";
+  voice-family:inherit;
+  width:200px;
+}
+{% endhighlight %}
 
 Burdaki ilk genişilk değeri(2. satırdaki) IE'un IE6/strict'den önceki
 versiyonların yorumlayacağı genişlik değeri, ikinci genişlik değeri(7.
@@ -90,18 +92,20 @@ satırdaki) ise standart yorumu destekleyen web tarayıcılarının
 kullanacağı değerdir. Bu kodlamada son olarak Opera 5 için bir kod
 ekleyeceğiz.
 
-	:::css
-	#icerik{
-		width:230px;
-		padding:10px;
-		border:5px solid #000; /* Bundan sonraki kısmı ie5win sakla */
-		voice-family: ""}"";
-		voice-family:inherit;
-		width:200px;
-	}
-	html>body #icerik {
-		width:200px;
-	}
+{% highlight css %}
+#icerik{
+  width:230px;
+  padding:10px;
+  border:5px solid #000; /* Bundan sonraki kısmı ie5win sakla */
+  voice-family: ""}"";
+  voice-family:inherit;
+  width:200px;
+}
+
+html>body #icerik {
+  width:200px;
+}
+{% endhighlight %}
 
 Not: Aynı şeyler yükseklik(height) içinde geçerlidir.
 

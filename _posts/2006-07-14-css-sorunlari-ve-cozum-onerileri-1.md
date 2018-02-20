@@ -11,8 +11,9 @@ Bir yazı tipi(font) tanımlaması yapılırken eğer yazı tipi adı arasında
 boşluk varsa(örn: Times New Roman) uygulamada sorun olur. Sorunun çözümü
 boşluk olan yazı tipi ismini çift tırnak("") içine almaktır.
 
-	:::css
-	body{
-		font-family: times, "times new roman", serif;
-	}
+{% highlight css %}
+body{
+  font-family: times, "Times New Roman", serif;
+}
+{% endhighlight %}
 
