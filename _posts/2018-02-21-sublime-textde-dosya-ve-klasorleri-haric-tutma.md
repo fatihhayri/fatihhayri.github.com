@@ -5,7 +5,7 @@ Date: 2018-02-26 15:43
 Category: Sublime Text
 tags: [sublime-text, exclude, hariç-tutma]
 image:
-  feature: kod-kullanim-orani-sonuc.gif
+  feature: sublime-text-editor.png
 ---
 
 Editörlerde proje geliştiriken bazı klasör ve dosyaları arama sonuçlarında, hızlı erişim menüsünde ve tanımlamaya git (Go to defination..) penceresinde görmek istemeyiz. Bu dosyalara örnek olarak harici kütüphane kodları, küçültülmüş kaynak dosyaları, yayına çıkma süreçleri için gereken yapılandırma dosyaları verilebilir. Bu gibi durumlar için birkaç çözüm önerisi var. Uygun olan çözümü kullanabilirsiniz.
