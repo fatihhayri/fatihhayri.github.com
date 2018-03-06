@@ -12,21 +12,21 @@ description: "Yazı arşivi"
     {% if forloop.first %}
     <article>
       <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
-      <ul>
+      <ol>
     {% endif %}
 
         <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 
     {% if forloop.last %}
-      </ul>
+      </ol>
     </article>
     {% else %}
         {% if this_year != next_year %}
-          </ul>
+          </ol>
         </article>
         <article>
           <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
-          <ul>
+          <ol>
         {% endif %}
     {% endif %}
 {% endfor %}

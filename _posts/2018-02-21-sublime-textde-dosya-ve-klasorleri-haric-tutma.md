@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sublime Text'de dosya ve klasörleri hariç tutma
+title: Sublime Text'te dosya ve klasörleri hariç tutma
 Date: 2018-02-26 15:43
 Category: Sublime Text
 tags: [sublime-text, exclude, hariç-tutma]
@@ -76,7 +76,7 @@ Bu kullanımın eksileri;
 
 Çok fazla projede çalışıyorsanız Sublime Text'in genel yapılandırma dosyasındaki tanımlar çok işinize yaramayabilir. 
 
-Çözüm olarak il başta proje oluşturmanız gerekiyor. Proje oluşturunca ana dizinde **proje_adi.sublime-project** adında bir dosya otomatik olarak eklenecektir. Bu dosya içinde yukarıdakine benzer bir tanım ile projeye özel dosya ve klasörleri hariç tutabiliriz. 
+Çözüm olarak ilk başta proje oluşturmanız gerekiyor. Proje oluşturunca ana dizinde **proje_adi.sublime-project** adında bir dosya otomatik olarak eklenecektir. Bu dosya içinde yukarıdakine benzer bir tanım ile projeye özel dosya ve klasörleri hariç tutabiliriz. 
 
 {% highlight bash %}
 {
@@ -156,9 +156,9 @@ Eklenti kullanımı basit. İki adet yapılandırma dosyanız oluyor. **Default*
 }
 {% endhighlight %}
 
-**User** dosyasındaki kuralları aktifleştirmek için Komut tablasını açıp (**Cmd+Shift+p** - windows için Ctrl+Shift+p) **ToggleExclude** yazarak seçenekleri görebilirsiniz. Karşınıza 3 senek çıkacaktır. Default, User ve Enable/disable seçenekleri. Bu seçenklerden sonuncusu olan Enebale/Disable ile User'daki kuralları aktifleştirebilirsiniz. Aynı yoldan giderek pasifleştirebilirsiniz.
+**User** dosyasındaki kuralları aktifleştirmek için Komut tablasını açıp (**Cmd+Shift+p** - windows için Ctrl+Shift+p) **ToggleExclude** yazarak seçenekleri görebilirsiniz. Karşınıza 3 seçenek çıkacaktır. Default, User ve Enable/disable seçenekleri. Bu seçeneklerden sonuncusu olan Enebale/Disable ile User'daki kuralları aktifleştirebilirsiniz. Aynı yoldan giderek pasifleştirebilirsiniz.
 
-Çalışma şartlarınız ve ortamınıza göre yukarıdaki yöntemlerden birini veya bir kaçını kullanabilirsiniz. 
+Çalışma şartlarınız ve ortamınıza göre yukarıdaki yöntemlerden birini veya birkaçını kullanabilirsiniz. 
 
 Kalın sağlıcakla.
 
