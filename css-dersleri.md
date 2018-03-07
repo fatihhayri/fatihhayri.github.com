@@ -251,6 +251,7 @@ Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](http://fatihhayrioglu.c
     -   [CSS3 Dönüştürme Özellikleri(Transforms) ve 2B Dönüştürme][]
     -   [CSS3 Dönüştürme(Transforms) ve 3B Dönüştürme][]
     -   [CSS3 Geçiş Efektleri(Transitions)](/css3-gecis-efektleri-transitions/)
+        - [CSS geçiş efekti ile gizle/göster yaparken karşılaşılan sorunlar ve çözüm önerileri](/css-gecis-efekti-ile-gizle-goster-yaparken-karsilasilan-sorunlar-ve-cozum-onerileri/)
     -   [CSS3 Çevrimiçi Araçları][]
     -   [CSS3 Animasyon(Animation)](/css3-animasyonanimation/)
     -   [CSS3 Plan Modülleri](/css3-plan-modulleri/)
