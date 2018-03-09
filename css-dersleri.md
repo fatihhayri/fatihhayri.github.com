@@ -254,6 +254,7 @@ Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](http://fatihhayrioglu.c
         - [CSS geçiş efekti ile gizle/göster yaparken karşılaşılan sorunlar ve çözüm önerileri](/css-gecis-efekti-ile-gizle-goster-yaparken-karsilasilan-sorunlar-ve-cozum-onerileri/)
     -   [CSS3 Çevrimiçi Araçları][]
     -   [CSS3 Animasyon(Animation)](/css3-animasyonanimation/)
+        - [CSS Çoklu Animasyon Kullanımında Safari Sorunu ve Çözümü](/css-coklu-animasyon-kullaniminda-safari-sorunu-ve-cozumu/)
     -   [CSS3 Plan Modülleri](/css3-plan-modulleri/)
     -   [CSS Filtre Efektleri](/css-filtre-efektleri/)
     -   [Yenilenmiş Flex(Esnek Kutu) Modülü](/yenilenmis-flex-modulu/)
