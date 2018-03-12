@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flex ile  100% Genişlik ve 100% Yükseklite Sayfa İskeleti Hazırlama
+title: Flex ile  100% Genişlik ve 100% Yükseklikte Sayfa İskeleti Hazırlama
 Date: 2018-03-12 14:20
 Category: CSS
 tags: [css, flex, 3-kolonlu]
