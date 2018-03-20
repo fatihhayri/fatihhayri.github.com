@@ -21,7 +21,7 @@ Sticky kullanımlarında kaydırma çubuğu, elemana gelene kadar sabit kalsın 
 
 Elemanın sticky olması için dikeydeki kaydırmalarda **top / bottom** değeri, yataydaki kaydırmalarda **left / right** değeri tanımlamak gerekiyor.
 
-<iframe height='681' scrolling='no' title='POEqBg' src='//codepen.io/fatihhayri/embed/POEqBg/?height=681&theme-id=13521&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/fatihhayri/pen/POEqBg/'>POEqBg</a> by Fatih  (<a href='https://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='366' scrolling='no' title='position:sticky' src='//codepen.io/fatihhayri/embed/QqbmpM/?height=366&theme-id=13521&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/fatihhayri/pen/QqbmpM/'>position:sticky</a> by Fatih  (<a href='https://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ## Desteklemeyen tarayıcılar için çözüm
