@@ -5,6 +5,8 @@ $(function() {
   $( '#dl-menu' ).dlmenu({
     animationClasses : { classin : 'dl-animate-in', classout : 'dl-animate-out' }
   });
+
+  new LazyLoad();
 });
 
 $(".close-menu").click(function () {

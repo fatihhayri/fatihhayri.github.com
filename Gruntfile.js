@@ -49,20 +49,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    imagemin: {
-      dist: {
-        options: {
-          optimizationLevel: 7,
-          progressive: true
-        },
-        files: [{
-          expand: true,
-          cwd: 'images/',
-          src: '{,*/}*.{png,jpg,jpeg}',
-          dest: 'images/'
-        }]
-      }
-    },
     svgmin: {
       dist: {
         files: [{
@@ -101,7 +87,6 @@ module.exports = function(grunt) {
     'clean',
     'recess',
     'uglify',
-    'newer:imagemin',
     'svgmin'
   ]);
   grunt.registerTask('dev', [
