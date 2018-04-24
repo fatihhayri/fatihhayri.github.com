@@ -230,6 +230,7 @@ Date: 2006-08-05 22:06
     -   [CSS3 Module: Paged Media][]
     -   [CSS3 Yazı Tipi Özellikleri][]
         - [CSS4 sistem fontu (system-ui) değeri](/css4-sistem-fontu-system-ui-degeri/)
+        - [font-display özelliği](/font-display-ozelligi/)
     -   [CSS3 Metin Özellikleri][]
     -   [CSS3 box-sizing Özelliği][]
     -   [HTML 5'in yeni elementlerine bir göz atalım][]
