@@ -45,6 +45,12 @@
           {% endcase %}
           {{ page.date | date: "%Y" }}
         </h2>
+        {% if site.reading_time %}
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          {% include read-time.html %}
+        </p><!-- /.entry-reading-time -->
+        {% endif %}
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
