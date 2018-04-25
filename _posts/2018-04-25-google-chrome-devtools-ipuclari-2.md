@@ -5,7 +5,7 @@ Date: 2018-04-24 10:20
 Category: Web Araçları
 tags: [google, devtools, ipuçları]
 image:
-  feature: tarayici-sayfa-taramasi.gif
+  feature: lokal-screenshot.gif
 ---
 
 [İlk yazıyı](http://fatihhayrioglu.com/google-chrome-devtools-ipuclari/) yazdıktan sonra hangi özellikleri kullandığıma daha çok dikkat etmeye başladım. Hemen başlayalım. Sırayla yazalım.
