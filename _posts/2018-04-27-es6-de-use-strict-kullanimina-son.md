@@ -24,9 +24,9 @@ ES5 ile birilikte eğer projemizde bu kurallara uymalısınız demek için
 
 kodunu kodumuzun veya kod blokumuzun içine yazmamız gerekiyordu. 
 
---ES6 sonrası bu satırı yazmaya gerek yok. :)--
+~~ES6 sonrası bu satırı yazmaya gerek yok. :)~~
 
-[Doğan](https://twitter.com/dodothebird)'ın uyarıyla bir düzeltme yapacağım ES6 sadece module yapı kullanılan yerlerde 'use strict' kullanmay gerek duymuyor. Onun dışında aynen devam. [https://stackoverflow.com/questions/31685262/not-recommended-to-use-use-strict-in-es6/31685340#31685340](https://stackoverflow.com/questions/31685262/not-recommended-to-use-use-strict-in-es6/31685340#31685340)
+[Doğan](https://twitter.com/dodothebird)'ın uyarısıyla bir düzeltme yapacağım; ES6 sadece module kodu içinde 'use strict' kullanmaya gerek duymuyor. [https://stackoverflow.com/questions/31685262/not-recommended-to-use-use-strict-in-es6/31685340#31685340](https://stackoverflow.com/questions/31685262/not-recommended-to-use-use-strict-in-es6/31685340#31685340)
 
 Kalın sağlıcakla.
 
