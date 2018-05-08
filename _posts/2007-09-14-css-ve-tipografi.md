@@ -7,22 +7,22 @@ tags: CSS, font, font-family, font-size, font-weight, letter-spacing, line-heigh
 ---
 
 **"Tipografi**([Yunanca][]τύπος (*typos*)="form" ve γραφία
-(*graphia*)="yazmak" sözcüklerinden)yazıyı bir forma sokma sanatı ve
-tekniğidir. Font (yazı tipi), font büyüklüğü,satır uzunluğu, satır arası
-boşluk ve benzeri unsurların kombinasyonları ileyapılır. Yayımlanacak
-yazınsal içeriğin bir forma sokulması veya tasarımı olarakda
+(*graphia*)="yazmak" sözcüklerinden) yazıyı bir forma sokma sanatı ve
+tekniğidir. Font (yazı tipi), font büyüklüğü, satır uzunluğu, satır arası
+boşluk ve benzeri unsurların kombinasyonları ile yapılır. Yayımlanacak
+yazınsal içeriğin bir forma sokulması veya tasarımı olarak ta
 tanımlanabilir. Türkçe *tipografya* olarak da çevrilmiştir.
-TerimTürkçe'yeFransızca'dangeçmiştir." Kaynak: [Vikipedi][]
+Terim Türkçe'ye Fransızca'dan geçmiştir." Kaynak: [Vikipedi][]
 
 İlk CSS derslerimizde CSS'in avantajlarını sıralarken metinlere daha
 fazla hükmetme özelliğine sahip olduğumuzdan bahsetmiştik.
-Tipografihakkında sizlere genel bir bilgi verecek değilim, bu benim
-haddimede değil zaten. Biz buradadaha çok Stil Şablonlarının bize
-tipografi adına kazandırdıklarını göstermeyeçalışacağız ve CSS ile
-sayfalarımızı daha dikkat çekici ve okuna bilir hale getireceğimizi
-göreceğiz. Tipografihakkında genel bir bilgi vermesi açısından güzel bir
+Tipografi hakkında sizlere genel bir bilgi verecek değilim, bu benim
+haddimede değil zaten. Biz burada daha çok Stil Şablonlarının bize
+tipografi adına kazandırdıklarını göstermeye çalışacağız ve CSS ile
+sayfalarımızı daha dikkat çekici ve okunabilir hale getireceğimizi
+göreceğiz. Tipografi hakkında genel bir bilgi vermesi açısından güzel bir
 çalışma olan Doç. Hasip Bektaş'ın "[İnternetteki Tipografi Sorunları ve GörselKirlenmeye Karşı Öneriler][]" adlı makalesini okumanızı tavsiye
-ederim. Ayrıca kaynakçakısmındaki linklerden de daha fazla bilgi
+ederim. Ayrıca kaynakça kısmındaki linklerden de daha fazla bilgi
 alabilirsiniz.
 
 Diğer makaleleri yazarken bazı konularda kaynak bulma konusunda ciddi
@@ -30,7 +30,7 @@ sorunlar yaşadığım oldu, ancak tipografi hakkında makale yazmaya karar
 verip bilgi toplamaya başladığımda önceki yazılarımın aksine tipografi
 hakkında çok fazla bilgi bulunduğunu gördüm. Ne yazık ki bunların çoğu
 yine İngilizce. Bu kaynak çokluğu bu makalemin gecikmesine neden oldu.
-Ama olsun bilginin fazla olmasınınbir sakıncası yok.
+Ama olsun bilginin fazla olmasının bir sakıncası yok.
 
 CSS ile birlikte gelen bir çok avantaj mevcut bunları önceki
 derslerimizde yazdık. Şunu söyleyebilirim ki web sitelerine CSS en büyük
@@ -47,7 +47,7 @@ padding, background-color ve background-images özelikleride vardır.
 kullanıcıya sunulan metinlerin genişlikleri önem kazanmıştır. Birçok
 kaynakta sayfanın ölçüsü verilirken karakter sayısı bir birine yakın
 değerler verilmektedir. Genel olarak tek kolonlu yapı kullanan
-sayfalarda kolon genişliği 52-78 karakter(boşluklar dâhill) içerecek
+sayfalarda kolon genişliği 52-78 karakter(boşluklar dahil) içerecek
 şekilde ayarlanması tipografi bakımdan uygun görülmüştür. İki kolon bir
 yapı düşünülüyor ise her bir kolonun 40-50 karakter içermesi daha uygun
 görülüyor.
@@ -64,7 +64,7 @@ sığacaktır. Yazı boyutunu arttırdığımızda mesela 1.5em'e çıkardığı
 satır içindeki karakter sayısı değişmeyecektir, çünkü genişlik
 değerimizde yazı boyutu ile bağlantılı olduğu için oda artacaktır. Em
 genellikle elastik sayfalar oluştururken kullanırız. Em ve elastik
-sayfalar hakkında daha ayrılı bilgi için [CSS Birimleri][] ve [CSS İLE WEB SAYFASI OLUŞTURMA II][] makalelerine  göz atın.
+sayfalar hakkında daha ayrılı bilgi için [CSS Birimleri][] ve [CSS İLE WEB SAYFASI OLUŞTURMA II][] makalelerine göz atın.
 
 ## Yazı Tipleri
 
@@ -94,15 +94,16 @@ aşağıdaki resimde çok iyi bir şekilde görmekteyiz.
 
 ![serif sans-serif][]
 
-serif fontlar yazılı alanda bayağı popülerdir. Web âleminde ise
+serif fontlar yazılı alanda bayağı popülerdir. Web aleminde ise
 sans-serif fontlar daha popülerdir. Bu söylediğimden web'de hiç serif
 font kullanılmaz diye bir mana çıkaramayız elbette kullanılabilir ancak
 sans-serif daha çok tercih edilir. Genel font kullanımı:
 
-	:::css
-	body{
-		font-family:Arial, Helvetica, sans-serif
-	}
+{% highlight css %}
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+{% endhighlight %}
 
 Şeklindedir. Burada birincil fontumuz Arial'dir alternatifi Helvatica ve
 yazı tipi ailesi sans-serif olduğunu belirtiyoruz. Normalde sadece Arial
@@ -149,27 +150,29 @@ boyutları önerilerini sıralayalım:
 
 Genel bir css kodunu yazarsak
 
-	:::css
-	body {font: 11px/1.5em "Lucida Grande"; }
-	h1, h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana, sans-serif; font-weight: normal;}
-	h1 { font-size: 24px; }
-	h2 { font-size: 18px; }
-	h3 { font-size: 16px; line-height:2; }
-	h4 { font-size: 13px; line-height:1.25; font-weight:bold; }
-	h5 { font-size: 12px; font-weight:bold; }
-	h6 { font-size: 12px; }
+{% highlight css %}
+body {font: 11px/1.5em "Lucida Grande"; }
+h1, h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana, sans-serif; font-weight: normal;}
+h1 { font-size: 24px; }
+h2 { font-size: 18px; }
+h3 { font-size: 16px; line-height:2; }
+h4 { font-size: 13px; line-height:1.25; font-weight:bold; }
+h5 { font-size: 12px; font-weight:bold; }
+h6 { font-size: 12px; }
+{% endhighlight %}
 
 veya **em** cinsinden
 
-	:::css
-	body {font: 11px/1.5em "Lucida Grande";}
-	h1, h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana, sans-serif; font-weight: normal;}
-	h1 { font-size: 3em; }
-	h2 { font-size: 2em; }
-	h3 { font-size: 1.5em; line-height:2; }
-	h4 { font-size: 1.2em; line-height:1.25; font-weight:bold; }
-	h5 { font-size: 1em; font-weight:bold; }
-	h6 { font-size: 1em; }
+{% highlight css %}
+body {font: 11px/1.5em "Lucida Grande";}
+h1, h2, h3, h4, h5, h6 {font-family: helvetica, arial, verdana, sans-serif; font-weight: normal;}
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; line-height:2; }
+h4 { font-size: 1.2em; line-height:1.25; font-weight:bold; }
+h5 { font-size: 1em; font-weight:bold; }
+h6 { font-size: 1em; }
+{% endhighlight %}
 
 Bu konuda çok güzel bir doküman hazırlayan [BluePrint CSS Anaçatısının][] tipografi kısmına göz atmanızı tavsiye ederim.
 
@@ -181,20 +184,22 @@ için genel kabul **yazı boyutunun1.4-1.6 katı** kadar bir mesafedir.
 
 ![Satırlar arası yükseklik][]
 
-	:::css
-	body {
-	    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-	    line-height: 1.5em;
-	}
+{% highlight css %}
+body {
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    line-height: 1.5em;
+}
+{% endhighlight %}
 
 
 CSS kısaltmalarında tek yazı tipi değerine tüm yazı özellikleri ekleme
 imkanı sunar.
 
-	:::css
-	body {
-		font:11px/1.5em "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-	}
+{% highlight css %}
+body {
+    font:11px/1.5em "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+{% endhighlight %}
 
 ## Yazılara Vurgu Eklemek
 
@@ -206,10 +211,11 @@ Normalde yazı tiplerinin kalın halleride vardır ancak web yazı
 tiplerinde böyle bir seçim yapamıyoruz bu nedenle yazılarımıza kalınlık
 kazandırmak için
 
-	:::css
-	h1{
-		font-weight:bold;
-	}
+{% highlight css %}
+h1{
+    font-weight:bold;
+}
+{% endhighlight %}
 
 kodunu kullanırız. Kalın yazılmış yazılar diğer yazılara göre  daha
 dikkat çekici görünecektir. Genelde başlıklar ve önemli alanlar
@@ -219,31 +225,34 @@ kalınlaştırılır.
 Eğik yazı şekli ekranda okunurluğu azaltsa da kullanıcıya farklı bir
 görünüm ile dikkat çeker.
 
-	:::css
-	blockquote {
-		margin: 1.5em 0 1.5em 1.5em;
-		color: #666;
-		font-style: italic;
-	}
+{% highlight css %}
+blockquote {
+    margin: 1.5em 0 1.5em 1.5em;
+    color: #666;
+    font-style: italic;
+}
+{% endhighlight %}
 
 **Altıçizili:** Üçüncü olarak altı çizili yazılar kullanılır. Web'de
 genelde altı çizili yazılar link olarak kullanılır ve böyle algılanır.
 
-	:::css
-	a{
-		color: #125AA7;
-		text-decoration: underline;
-		outline: none;
-	}
+{% highlight css %}
+a{
+    color: #125AA7;
+    text-decoration: underline;
+    outline: none;
+}
+{% endhighlight %}
 
 **Renk:** Yazılarımızda farklı alanlara vurgu yapmak için kullanılan
 özelliklerden biride renk(color) özelliğidir. Meselahatalı alanları
 belirlemek için kırmızı renk kullanımı yaygındır.
 
-	:::css
-	.hata{
-		color:#f00
-	}
+{% highlight css %}
+.hata{
+    color:#f00
+}
+{% endhighlight %}
 
 **Büyük Yazı:** Vurgu yapmak için nadiren de olsa tipografi bakımdan
 buda kullanılabilir bir seçenektir ama en azkullanılan vurgu tipidir.
@@ -289,20 +298,22 @@ Bu özellikte genelde dokunulmayan özellikler arasındadır. Ancak her web
 sayfası aynıdeğerleri kullanacak diye bir şey yoktur. Bazen farklı
 sonuçlar elde etmek içinfarklı değerler kullanabiliriz.
 
-	:::css
-	p {
-		word-spacing: .2em;
-	}
+{% highlight css %}
+p {
+    word-spacing: .2em;
+}
+{% endhighlight %}
 
 ## Paragrafın ilk satırını içeriden başlatmak (text-indent)
 
 Birçok dergi, gazete ve yazıda karşılaştığımız bu yöntemi CSS yardımı
 ile çok basit bir şekilde yaparız.
 
-	:::css
-	p {
-		text-indent: 2.5em;
-	}
+{% highlight css %}
+p {
+    text-indent: 2.5em;
+}
+{% endhighlight %}
 
 Göreceli değer kullanmak daha mantıklıdır.
 

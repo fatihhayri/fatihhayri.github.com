@@ -21,7 +21,7 @@ sağlar. CSS fontlar üzerinde tam hakimolmamızı sağlar.
 ## color
 
 **Yapısı :** color: (değer)
-**Aldığı Değerler :**<renk> | inherit\\
+**Aldığı Değerler :**<renk \> | inherit\\
 **Başlangıç değeri:**web tarayıcısı belirler\\
 **Uygulanabilen elementler:** tüm elementler\\
 **Kalıtsallık:** Var
@@ -157,7 +157,7 @@ Android Browser
 
 ## font-weight
 
-**Yapısı :**font-weight: <değer\>\\
+**Yapısı :**font-weight: <değer \>\\
 **Aldığı Değerler :**normal | **bold** | **bolder** | lighter | 100 | 200 | 300 | 400 | 500 | **600** | **700** | **800** | **900**\\
 **Başlangıç değeri:**normal\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -188,7 +188,7 @@ Android Browser
 
 ## font-style
 
-**Yapısı :**font-style: <değer\>\\
+**Yapısı :**font-style: <değer \>\\
 **Aldığı Değerler :** normal | italic | oblique | inherit\\
 **Başlangıç değeri:**normal\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -222,7 +222,7 @@ Android Browser
 
 ## font-variant
 
-**Yapısı :**font-variant: <değer\>\\
+**Yapısı :**font-variant: <değer \>\\
 **Aldığı Değerler :**normal | small-caps | inherit\\
 **Başlangıç değeri:**normal\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -257,7 +257,7 @@ Türkçe karakterlerde sorun çıkardığı unutulmamalı
 Yukardı anlatılan font özelliklerinin hatta ek olrak **line-height**
 değerinide tek sefer de tanımlamak için kullanılır. Bir kısaltmadır.
 
-**Yapısı :**font: <değer\>\\
+**Yapısı :**font: <değer \>\\
 **Aldığı Değerler :**[ <font-style\> || <font-variant\> || <font-weight\> ]? <font-size\> [ / <line-height\> ]? <font-family\>\\
 **Başlangıç değeri:**tanımsız\\
 **Uygulanabilen elementler:** tüm elementler\\
