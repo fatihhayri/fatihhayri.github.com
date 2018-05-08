@@ -7,7 +7,7 @@ tags: uzun-metin, üç-nok, kısaltma
 ---
 
 
-[zingat.com](www.zingat.com)'un satılık ve kiralık arama sonuç sayfalarını kodlarken her bir kutunun belirli yüksekliği olduğu için gelen başlığın harita açıldığında altında kalan metinlerin üzerine binmesi sorununu haletmek için [Murat](http://twitter.com/muratcorlu)'la bu metni 2 satır ile sınırlandırmalıyız dedik. En güzel çözüm CSS ile webkit-line-clamp yardımı ile bunu yapmaktı. Acaba bu özelliğin desteği ne kadar diye biraz bakınca %92'ye yakın destek bizi bu kodu kullanmaya itti.
+[zingat.com](https://www.zingat.com)'un satılık ve kiralık arama sonuç sayfalarını kodlarken her bir kutunun belirli yüksekliği olduğu için gelen başlığın harita açıldığında altında kalan metinlerin üzerine binmesi sorununu haletmek için [Murat](http://twitter.com/muratcorlu)'la bu metni 2 satır ile sınırlandırmalıyız dedik. En güzel çözüm CSS ile webkit-line-clamp yardımı ile bunu yapmaktı. Acaba bu özelliğin desteği ne kadar diye biraz bakınca %92'ye yakın destek bizi bu kodu kullanmaya itti.
 
 Daha önce uzun metinleri tek satırda sabitlemek için aşağıdaki yöntemi kullanıyordum.
 

@@ -6,7 +6,7 @@ Category: javascript
 tags: jquery, callback, DOM
 ---
 
-Kod yazarken bazı alışkanlıklarımız oluyor. Kütüphanelerin ve standartların yeniliklerini takip etmeyince kullandığınız kodun daha basit ve sade olan yeniliklerinden haberimiz olmuyor. jQuery'nin yeniliklerini çok önemsemiyorum, ancak mevcut çalıştığım sitede ([zingat.com](zingat.com)) ve birçok projede jquery kullanmaya devam ediyoruz. Bu öğrendiğim özellik ile yeniliklerin takibinin önemini bir kez daha gördüm. 
+Kod yazarken bazı alışkanlıklarımız oluyor. Kütüphanelerin ve standartların yeniliklerini takip etmeyince kullandığınız kodun daha basit ve sade olan yeniliklerinden haberimiz olmuyor. jQuery'nin yeniliklerini çok önemsemiyorum, ancak mevcut çalıştığım sitede ([zingat.com](https://www.zingat.com)) ve birçok projede jquery kullanmaya devam ediyoruz. Bu öğrendiğim özellik ile yeniliklerin takibinin önemini bir kez daha gördüm. 
 
 Yapmak istediğim iş dinamik olarak değişen bir bağlantının sonuna bir parametre ekleme isteğim ile ortaya çıktı. Normalde kodumu aşağıdaki gibi yazarım.
 

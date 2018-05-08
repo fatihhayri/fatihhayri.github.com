@@ -17,7 +17,7 @@ Sonuçta kullandığımız bir dilin farklı bir yanı nodejs, farklı kabiliyet
 
 İlk olarak bilgisayarımıza nodejs'i yükleyerek başlayalım. Windows ve Mac kullanıcıları için [nodejs.org](http://nodejs.org) sitesinde kurulum dosyası mevcut, linux kullanıcılar ise alışık oldukları yol ile komut satırından  **sudo apt-get update** ve sonra **sudo apt-get install node** kod ile bu işi halledebilirler.
 
-"Nodejs; Google'ın geliştirdiği ve Chrome'da javascript derlemekte kullandığı C/C++ ile geliştirilmiş V8 motoru üzerinde çalışmaktadır. Nodejs,  olay tabanlı olarak sunucu üzerinde javascript çalıştırmayı sağlayan bir yapıdır.  I/O ve ağ işlemlerini bloklamadan(asenkron) olarak yaptığı için kaynak yönetimi gibi konularda diğer yazılım dillerine ve platformlarına göre daha farklı bir konumdadır ve bu özellik NodeJS'in temelini oluşturan bir yapıdır. Bu da NodeJS'in performans odaklı olmasını sağlar." - [nodejstr.com](nodejstr.com)
+"Nodejs; Google'ın geliştirdiği ve Chrome'da javascript derlemekte kullandığı C/C++ ile geliştirilmiş V8 motoru üzerinde çalışmaktadır. Nodejs,  olay tabanlı olarak sunucu üzerinde javascript çalıştırmayı sağlayan bir yapıdır.  I/O ve ağ işlemlerini bloklamadan(asenkron) olarak yaptığı için kaynak yönetimi gibi konularda diğer yazılım dillerine ve platformlarına göre daha farklı bir konumdadır ve bu özellik NodeJS'in temelini oluşturan bir yapıdır. Bu da NodeJS'in performans odaklı olmasını sağlar." - [nodejstr.com](http://nodejstr.com)
 
 Nodejs'in yüklendiğini kontrol etmek için genelde sürüm kontrolü kodu kullanılır.
 

@@ -123,7 +123,7 @@ yerine göreceli(realtive) konumlandırma kullanmaktır.
 IE5x de padding sorunu olsa da tüm web tarayıcılarında gayet güzel
 sonuçlar verir.
 
-Örnek çalışmayı görmek için [tıklayınız.][1]
+Örnek çalışmayı görmek için [tıklayınız.](http://fatihhayrioglu.com/dokumanlar/clagnut_golge.html)
 
 ## Fuzzy metodu ile gölge vermek
 
@@ -219,7 +219,7 @@ Böylece tüm yeni nesil web tarayıcılarında bu metodu sağlıklı bir
 
 Bu metodu tüm png zemin resmi uygularınızda uygulayabilirsiniz.
 
-Örnek çalışmayı görmek için [tıklayınız.][2]
+Örnek çalışmayı görmek için [tıklayınız.](http://fatihhayrioglu.com/dokumanlar/fuzzy_golge.html)
 
 ## Onion Skin metodu ile Gölge eklemek
 
@@ -276,7 +276,7 @@ tanımlarını yapıyoruz:
 	    display: block;
 	}
 
-Örnek çalışmayı görmek için [tıklayınız.][3]
+Örnek çalışmayı görmek için [tıklayınız.](http://fatihhayrioglu.com/dokumanlar/onion_golge.html)
 
 Bu metot kolay uygulanabilirlik bakımından avantajlıdır. Ancak fazladan
 iki adet katman kullanılması bakımından pek anlamlı kod
@@ -296,12 +296,9 @@ tanımlamamıza olanak sağlıyor. Ama bunu için beklemek zorundayız.
   [blok-level]: http://www.fatihhayrioglu.com/?p=151
   [tıklayınız.]: /dokumanlar/basit_golge.html
   [www.clagnut.com]: http://www.clagnut.com
-  [1]: /dokumanlar/clagnut_golge.html
   [Fuzzy]: /dokumanlar/images/fuzzy.gif
   [Maske PNG örneği]: /dokumanlar/images/maske_png.gif
-  [2]: /dokumanlar/fuzzy_golge.html
   [Onion Skinned]: /dokumanlar/images/onion_skin.gif
-  [3]: /dokumanlar/onion_golge.html
   [http://alistapart.com/articles/onionskin/]: http://alistapart.com/articles/onionskin/
   [http://alistapart.com/articles/cssdrop2/]: http://alistapart.com/articles/cssdrop2/
   [http://www.1976design.com/blog/archive/2003/11/14/shadows/]: http://www.1976design.com/blog/archive/2003/11/14/shadows/

@@ -14,7 +14,7 @@ CSS ile aynı seviyedeki elemanların ilişkilerini kullanarak bazı seçme işl
 
 ![zingat.com kutular](http://fatihhayrioglu.com/images/anasayfa-kutular.jpg)
 
-[zingat.com](zingat.com) anasayfasındaki büyük resmin üzerindeki gri kutuların hepsi gri yani pasif görünüyordu. Üzerine gelince büyüyor, rengi değişiyor. Yeni istek ise, ilki aktif gözüksün, diğerlerinin üzerine gelince ilki pasif olsun.  İş küçük bir iş gibi görünse de ilk olarak aklıma CSS ile bunu yapmanın imkanı yok javascript ile yapmak lazım dedim. Sonra işi flex ve order yardımı ile yapabileceğim fikri aklıma geldi ve bu yazı ortaya çıktı.
+[zingat.com](https://www.zingat.com) anasayfasındaki büyük resmin üzerindeki gri kutuların hepsi gri yani pasif görünüyordu. Üzerine gelince büyüyor, rengi değişiyor. Yeni istek ise, ilki aktif gözüksün, diğerlerinin üzerine gelince ilki pasif olsun.  İş küçük bir iş gibi görünse de ilk olarak aklıma CSS ile bunu yapmanın imkanı yok javascript ile yapmak lazım dedim. Sonra işi flex ve order yardımı ile yapabileceğim fikri aklıma geldi ve bu yazı ortaya çıktı.
 
 Mantık şöyle; CSS önceki elemana erişemiyorsa bende ilk elemanı sona atarım ve CSS ile işimi çözerim.
 

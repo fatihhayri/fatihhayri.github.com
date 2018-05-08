@@ -96,7 +96,7 @@ Arayüzünü Sublime Text'ten alıştığım temaya benzetememem ve herhangi bir
 
 ![Atom](/images/atom-editor.gif)
 
-Github tarafından [Electron]((https://electronjs.org/)) alt yapısı ile geliştirilmiş bir editör. 2014 senesinde çıkmış.
+Github tarafından [Electron](https://electronjs.org/) alt yapısı ile geliştirilmiş bir editör. 2014 senesinde çıkmış.
 
 ### Artıları
 
