@@ -21,7 +21,7 @@ sağlar. CSS fontlar üzerinde tam hakimolmamızı sağlar.
 ## color
 
 **Yapısı :** color: (değer)
-**Aldığı Değerler :**<[renk][]> | inherit\\
+**Aldığı Değerler :**<renk> | inherit\\
 **Başlangıç değeri:**web tarayıcısı belirler\\
 **Uygulanabilen elementler:** tüm elementler\\
 **Kalıtsallık:** Var
@@ -29,10 +29,11 @@ sağlar. CSS fontlar üzerinde tam hakimolmamızı sağlar.
 
 (**color**) metinlerimizin rengini tanımlamamız için kullanılır.
 
-	:::css
-	 p{
-		color:#f00; /* kırmızı renk kodu */
-	}
+{% highlight css %}
+p{
+    color:#f00; /* kırmızı renk kodu */
+}
+{% endhighlight %}
 
 Renk kullanımına daha önce değinmiştik. Detay için [tıklayınız.][renk]
 
@@ -50,7 +51,7 @@ Android Browser
 
 ## font-family
 
-**Yapısı :** font-family : [[<font aile ismi \> | <soysal aile ismi \>],]* [<font aile ismi \> | <soysal aile ismi \>] | inherit\\
+**Yapısı :** font-family : <font aile ismi \> | <soysal aile ismi \>,* [<font aile ismi \> | <soysal aile ismi \> | inherit\\
 **Aldığı Değerler :** <font aile ismi \> | <soysal aile ismi \>\\
 **Başlangıç değeri:**web tarayıcısı belirler\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -69,18 +70,21 @@ Metinlerin kullanılacağı font ailesini belirlemek için kullanılır.
 Birden fazla fontailesi kullanılacaksa aralarına virgül (,) konur.
 Genelde son font ailesiolarak soysal font ailesi yazılır. Örnek:
 
-	:::css
-	p {
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-	}
+{% highlight css %}
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+{% endhighlight %}
 
 Eğer font ismi bir den fazla kelimeden olşuyorsa çift tırnak içine
 alınır.Örn:
 
-	:::css
-	h1 {
-		font-family: Georgia, "Times New Roman", serif;
-	}
+{% highlight css %}
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+{% endhighlight %}
+
 
 **Tarayıcı Uyumu **
 Firefox
@@ -97,7 +101,7 @@ Android Browser
 
 ## font-size
 
-**Yapısı :**font-size: <kesin değerler \> | <göreceli değerler \> | <[uzunluk][renk]> | <[yüzde][renk]>\\
+**Yapısı :**font-size: <kesin değerler \> | <göreceli değerler \> | <uzunluk renk> | <yüzde renk>\\
 **Aldığı Değerler :** -   <kesin değerler \> | <göreceli değerler \>\\
 **Başlangıç değeri:**medium\\
 **Uygulanabilen elementler:** tüm elementler\\
@@ -119,22 +123,24 @@ Mesela 11px değeri HTML'de2 ve 3 değeri arasında bir değer denk geliyor
 ve HTML font elementi ile birlikte kullanılamıyordu.CSS'de font boyutunu
 belirlemek için bir çok birim kullanılır. Örn: px, em,pt, in, cm vd.
 
-	:::css
-	td {
-		font-size :12px;
-	}
 
-	td {
-		font-size : 150%;
-	}
+{% highlight css %}
+td {
+    font-size :12px;
+}
 
-	td {
-		font-size : xx-small;
-	}
+td {
+    font-size : 150%;
+}
 
-	td {
-		font-size : x-large;
-	}
+td {
+    font-size : xx-small;
+}
+
+td {
+    font-size : x-large;
+}
+{% endhighlight %}
 
 
 **Tarayıcı Uyumu **
@@ -162,10 +168,11 @@ Fontun kalınlık incelik durumunu belirler.
 **100(ince)-900(kalın)**arasında bir değer alabildiği gibi bold, bolder
 ve normal değerlerini de alır.
 
-	:::css
-	p{
-		font-weight: bolder;
-	}
+{% highlight css %}
+p{
+    font-weight: bolder;
+}
+{% endhighlight %}
 
 **Tarayıcı Uyumu **
 Firefox
@@ -190,14 +197,15 @@ Android Browser
 
 Fontun eğik(italiktik) olup olamamasını belirler.
 
-	:::css
-	p {
-		font-style: italic;
-	}
+{% highlight css %}
+p {
+    font-style: italic;
+}
 
-	h4{
-		font-style: oblique;
-	}
+h4{
+    font-style: oblique;
+}
+{% endhighlight %}
 
 **Tarayıcı Uyumu **
 Firefox
@@ -224,11 +232,11 @@ Android Browser
 Metnin küçü-büyük harf ile gösterilmesini belirler. İki değer alır.
 **normal | small-caps.**
 
-	:::css
-	span {
-		font-variant: small-caps;
-	}
-
+{% highlight css %}
+span {
+    font-variant: small-caps;
+}
+{% endhighlight %}
 
 **Tarayıcı Uyumu **
 Firefox
@@ -247,7 +255,7 @@ Türkçe karakterlerde sorun çıkardığı unutulmamalı
 ## font
 
 Yukardı anlatılan font özelliklerinin hatta ek olrak **line-height**
-değerinide tek sefer de tanımlamak için kullanılır. Bir [kısaltmadır][].
+değerinide tek sefer de tanımlamak için kullanılır. Bir kısaltmadır.
 
 **Yapısı :**font: <değer\>\\
 **Aldığı Değerler :**[ <font-style\> || <font-variant\> || <font-weight\> ]? <font-size\> [ / <line-height\> ]? <font-family\>\\
@@ -256,11 +264,11 @@ değerinide tek sefer de tanımlamak için kullanılır. Bir [kısaltmadır][].
 **Kalıtsallık:** Var
 {: .cssozelliktanimi}
 
-	:::css
-	h2 {
-		font: bold italic 200%/1.2 Verdana, Helvetica, Arial, sans-serif;
-	}
-
+{% highlight css %}
+h2 {
+    font: bold italic 200%/1.2 Verdana, Helvetica, Arial, sans-serif;
+}
+{% endhighlight %}
 
 **Tarayıcı Uyumu **
 Firefox
@@ -273,9 +281,3 @@ iOS Safari
 Opera Mobile
 Android Browser
 {: .tarayiciuyum}
-
-
-
-
-  [renk]: http://www.fatihhayrioglu.com/?p=95
-  [kısaltmadır]: http://www.fatihhayrioglu.com/?p=6
