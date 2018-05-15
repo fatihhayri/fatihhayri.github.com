@@ -8,7 +8,7 @@ image:
   feature: es6.jpeg
 ---
 
-[zingat.com](https://zingat.com)'da kullanıcı oranı % 0.7 seviyelerine düşen Internet Explorer 11 desteğini yakın zamanda sonlandıracağız. Bunun biz kod yazarlarına bazı kazançları olacak. Bunların başında javascript ES6 standardına geçme imkanı sağlaması olacaktır. Bu geçişi [Babel](https://babeljs.io/) ile daha önce de yapabilirdik ancak nasip olmadı. Nasip IE'yi bitirme adımı sonrasınaymış. Bu geçiş sürecinde yaptığımız değişiklik ve yenilikleri buraya yazmayı düşündüm ve hayata geçiriyorum.
+[zingat.com](https://zingat.com)'da kullanıcı oranı % 1.7 seviyelerine düşen Internet Explorer 11 desteğini yakın zamanda sonlandıracağız. Bunun biz kod yazarlarına bazı kazançları olacak. Bunların başında javascript ES6 standardına geçme imkanı sağlaması olacaktır. Bu geçişi [Babel](https://babeljs.io/) ile daha önce de yapabilirdik ancak nasip olmadı. Nasip IE'yi bitirme adımı sonrasınaymış. Bu geçiş sürecinde yaptığımız değişiklik ve yenilikleri buraya yazmayı düşündüm ve hayata geçiriyorum.
 
 **İlk madde: Strict Mode**
 
