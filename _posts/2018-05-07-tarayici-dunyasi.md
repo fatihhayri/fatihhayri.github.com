@@ -19,7 +19,7 @@ Hızlı güncellenen standartlar karşısından tarayıcının hızlı güncelle
 
 ![ie11 son](/images/ie11-son-k.jpg)
 
-Geçen hafta [zingat.com](https://zingat.com)'da Internet Explorer'ın tüm sürümlerine desteği sonlandırdık. Bu sayesde birçok avantajı geliştiriciler olarak elde ettik. Destek verdiğimiz tarayıcı listesinde otomatik güncellenmeyen iki tarayıcı kaldı. Mobil Safari ve Samsung Internet. 
+Geçen hafta [zingat.com](https://zingat.com)'da Internet Explorer'ın tüm sürümlerine desteği sonlandırdık. Bu sayede birçok avantajı geliştiriciler olarak elde ettik. Destek verdiğimiz tarayıcı listesinde otomatik güncellenmeyen iki tarayıcı kaldı. Mobil Safari ve Samsung Internet.
 
 Mobil dünyadaki bu iki tarayıcının bizim sitedeki kullanı oranı:
 

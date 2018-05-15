@@ -28,7 +28,7 @@ eleman.remove();
 	
 Süper. 
 
-Peki biz hala IE11 destekliyorsanız size de eskiye destek için [remove polyfills](https://github.com/cferdinandi/vanilla-javascript-cheat-sheet/blob/master/polyfills/remove.js)'ini öneriyorum.
+Peki siz hala IE11 destekliyorsanız size de eskiye destek için [remove polyfills](https://github.com/cferdinandi/vanilla-javascript-cheat-sheet/blob/master/polyfills/remove.js)'ini öneriyorum.
 
 <p class="ciu_embed" data-feature="childnode-remove" data-periods="future_1,current,past_1">  <a href="http://caniuse.com/#feat=childnode-remove">Can I Use childnode-remove?</a> Data on support for the childnode-remove feature across the major browsers from caniuse.com. </p>
 
