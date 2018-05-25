@@ -10,11 +10,11 @@ image:
 
 Daha önce bu konuda bir makale yazmıştım. [CSS Editörleri](http://fatihhayrioglu.com/css-editorleri/) başlığı ile yazdığım bu makaleye gelen bir yorum bu konuda tekrar bir yazı yazmam gerektiğini hatırlattı bana. 
 
-Yazının üzerinden 11 seneden fazla zaman geçmiş. Yazıda bahsettiğim Front Page, CoffeeCup HTML Editor ve TopStyle kapıya kilit vurmuş. Macromedia Dreamweaver olmuş Adobe Dreamweaver. Style Master'ın kullananı kalmamış. CSSEdit isim değiştirmiş Espresso olmuş. Microsoft® Expression ölü doğan projeler listesine eklenmiş. Geliştirici dünyası hız gelişiyor.
+Yazının üzerinden 11 seneden fazla zaman geçmiş. Yazıda bahsettiğim Front Page, CoffeeCup HTML Editor ve TopStyle kapıya kilit vurmuş. Macromedia Dreamweaver olmuş Adobe Dreamweaver. Style Master'ın kullananı kalmamış. CSSEdit isim değiştirmiş Espresso olmuş. Microsoft® Expression ölü doğan projeler listesine eklenmiş. Geliştirici dünyası hızlı gelişiyor.
 
 Ben bu yazıda sizlere güncel editörlerden bahsedeceğim. 
 
-Genel olarak kod yazma araçlarını ikiye ayırabilriz. Metin editörleri ve Tümleşik Geliştirme Ortamı diye Türkçe'ye çevirdiğimiz IDE'ler.  
+Genel olarak kod yazma araçlarını ikiye ayırabiliriz. Metin editörleri ve Tümleşik Geliştirme Ortamı diye Türkçe'ye çevirdiğimiz IDE'ler.  
 
 Sırası ile aşağıdaki editörleri inceleyeceğiz.
 
@@ -52,17 +52,17 @@ Sırası ile aşağıdaki editörleri inceleyeceğiz.
 
  - 80$ ücret
  - Çok hızlı güncellenmiyor
- - Üçüncü parti bazı eklentilerin programı karasız hale getirmesi
+ - Üçüncü parti bazı eklentilerin programı kararsız hale getirmesi
  
 ### Yorum
 
-Uzun süredir Sublime Text kullanıyorum. Ara sıra diğer editörleri ve IDE'leri denesem de Sublime Text'ten va geçemiyorum. Hızı ve arayüzü beni etkileyen en önemli etkenler. Eklentilerin yardımyla bir arayüz geliştiricinin tüm ihtiyaçlarını karşılaycak bir araç oluyor. 
+Uzun süredir Sublime Text kullanıyorum. Ara sıra diğer editörleri ve IDE'leri denesem de Sublime Text'ten vazgeçemiyorum. Hızı ve arayüzü beni etkileyen en önemli etkenler. Eklentilerin yardımyla bir arayüz geliştiricinin tüm ihtiyaçlarını karşılaycak bir araç oluyor. 
 
 ## [Visual Studio Code  - code.visualstudio.com](https://code.visualstudio.com/)
 
 ![Visual Studio Code](/images/vs-code.gif)
 
-Listedeki en yeni editör. Microsoft'un gelişmiş IDE'si Visual Studio'nun ismini kullansa da [Electron](https://electronjs.org/) alt yapısı ile tekar yazılan açık kaynaklı bir editör.
+Listedeki en yeni editör. Microsoft'un gelişmiş IDE'si Visual Studio'nun ismini kullansa da [Electron](https://electronjs.org/) alt yapısı ile tekrar yazılan açık kaynaklı bir editör.
 
 ### Artıları
 
@@ -140,7 +140,7 @@ Adobe'un Atom ile aynı zamanda (2014) çıkardığı editörüdür.
 
 ### Eksiler
 
- - Performas sorunu
+ - Performans sorunu
  - Yüksek hafıza kullanım
  - Atom kadar hızlı güncellenmiyor
 
@@ -204,7 +204,7 @@ Ben sahibinden.com'da çalışırken kullanmak zorunda kaldığım için mi bilm
 
 ![WebStorm](/images/webstorm-editor.gif)
 
-Şimiye kadar yazdıklarımız metin editörü kategorisindeydi. WebStorm ise Tümleşik bir araçtır.
+Şimdiye kadar yazdıklarımız metin editörü kategorisindeydi. WebStorm ise Tümleşik bir araçtır.
 
 ### Artıları
 
@@ -229,7 +229,7 @@ Ben sahibinden.com'da çalışırken kullanmak zorunda kaldığım için mi bilm
 
 ### Yorum
 
-2-3 kere denememe rağmen çok alışamadım. Bazı ayarları yapınca hızlandığı söyleyen arkadaşlarım var. Ancak Sublime Text hızını görünce geçemedim bir türlü. Arayüzü de beni cezbetmiyor.
+2-3 kere denememe rağmen çok alışamadım. Bazı ayarları yapınca hızlandığını söyleyen arkadaşlarım var. Ancak Sublime Text hızını görünce geçemedim bir türlü. Arayüzü de beni cezbetmiyor.
 
 ## [Adobe Dreamweaver  - adobe.com/tr/products/dreamweaver.html](https://www.adobe.com/tr/products/dreamweaver.html)
 
@@ -254,7 +254,7 @@ WYSIWYG (What you see is what you get / Ne görürsen onu alırsın)  bir editö
 
 ### Yorum
 
-Eski göz ağrım. Yavaşlığı ve bütünleşik yapıdaki kullanmadığım kısımları çıkaramamamdan dolayı vazgeçmiştim. Fiyatı da vaz geçememde önemli bir etken tabi.
+Eski göz ağrım. Yavaşlığı ve bütünleşik yapıdaki kullanmadığım kısımları çıkaramamamdan dolayı vazgeçmiştim. Fiyatı da vazgeçmemde önemli bir etken tabi.
 
 
 ## Sonuç
