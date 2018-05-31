@@ -5,11 +5,8 @@
 	<ul class="dl-menu">
 		<li><a href="{{ site.url }}">Ana Sayfa</a></li>
 		<li>
-			<a href="#">Hakkımda</a>
+			<li><a href="{{ site.url }}/posts/" title="Şimdiye kadar yazdığım tüm yazıların listesi">Tüm Yazılar</a></li>
 		</li>
-		<li>
-			<li><a href="{{ site.url }}/posts/">Tüm Yazılar</a></li>
-		</li>
-		{% for link in site.links %}<li>{% if link.external %}<a href="{{ link.url }}">{{ link.title }}</a>{% else %}<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>{% endif %}</li>{% endfor %}
+		{% for link in site.links %}<li>{% if link.external %}<a href="{{ link.url }}">{{ link.title }}</a>{% else %}<a href="{{ site.url }}{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>{% endif %}</li>{% endfor %}
 	</ul><!-- /.dl-menu -->
 </nav><!-- /.dl-menuwrapper -->
