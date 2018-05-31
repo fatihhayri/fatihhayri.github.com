@@ -1034,10 +1034,11 @@ svg:not(:root) {
   }
 }
 
-.dl-menuwrapper button {
+.dl-menuwrapper label {
   position: relative;
   top: 0;
   left: 0;
+  display: block;
   width: 48px;
   height: 45px;
   overflow: hidden;
@@ -1055,7 +1056,7 @@ svg:not(:root) {
 }
 
 @media only screen and (min-width: 48em) {
-  .dl-menuwrapper button {
+  .dl-menuwrapper label {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -1064,13 +1065,13 @@ svg:not(:root) {
   }
 }
 
-.dl-menuwrapper button:hover,
-.dl-menuwrapper button.dl-active,
+.dl-menuwrapper label:hover,
+.dl-menuwrapper label.dl-active,
 .dl-menuwrapper ul {
   background: #aaa;
 }
 
-.dl-menuwrapper button:after {
+.dl-menuwrapper label:after {
   position: absolute;
   top: 10px;
   left: 16%;
@@ -1081,13 +1082,14 @@ svg:not(:root) {
   box-shadow: 0 10px 0 #ffffff, 0 20px 0 #ffffff;
 }
 
-.dl-menuwrapper button.dl-active {
+.dl-menuwrapper label.dl-active {
   display: none;
 }
 
 .dl-menuwrapper ul {
   padding: 0;
   list-style: none;
+  transition: all .1s linear;
   transform-style: preserve-3d;
 }
 
@@ -1116,11 +1118,6 @@ svg:not(:root) {
   font-size: 0.7777777777777778rem;
 }
 
-.dl-menuwrapper li i {
-  display: inline-block;
-  width: 2em;
-}
-
 .dl-menuwrapper li a {
   position: relative;
   display: block;
@@ -1132,43 +1129,9 @@ svg:not(:root) {
   outline: none;
 }
 
-.dl-menuwrapper li a svg {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-right: 5px;
-  vertical-align: baseline;
-}
-
-.dl-menuwrapper li a svg path {
-  fill: #ffffff;
-}
-
 .dl-menuwrapper li .dl-back > a {
   padding-left: 30px;
   background: rgba(0, 0, 0, 0.2);
-}
-
-.dl-menuwrapper li .dl-back:after,
-.dl-menuwrapper li > a:not(:only-child):after {
-  position: absolute;
-  top: 17px;
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  background: url("/assets/icons/back.svg") 0 0 no-repeat;
-  background-size: 14px 14px;
-  content: "";
-}
-
-.dl-menuwrapper li .dl-back:after {
-  left: 10px;
-  transform: rotate(180deg);
-}
-
-.dl-menuwrapper li > a:after {
-  right: 10px;
-  color: rgba(0, 0, 0, 0.15);
 }
 
 .dl-menuwrapper .dl-menu {
@@ -1196,18 +1159,6 @@ svg:not(:root) {
   }
 }
 
-.dl-menuwrapper .dl-menu.dl-menu-toggle {
-  -webkit-transition: all 0.3s ease;
-     -moz-transition: all 0.3s ease;
-          transition: all 0.3s ease;
-}
-
-.dl-menuwrapper .dl-menu.dl-menuopen {
-  pointer-events: auto;
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .dl-menuwrapper .dl-submenu {
   border-radius: 3px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
@@ -1217,133 +1168,34 @@ svg:not(:root) {
   display: none;
 }
 
-/* 
-When a submenu is openend, we will hide all li siblings.
-For that we give a class to the parent menu called "dl-subview".
-We also hide the submenu link. 
-The opened submenu will get the class "dl-subviewopen".
-All this is done for any sub-level being entered.
-*/
-
-.dl-menu.dl-subview li,
-.dl-menu.dl-subview li.dl-subviewopen > a,
-.dl-menu.dl-subview li.dl-subview > a {
+.menu-overlay {
   display: none;
 }
 
-.dl-menu.dl-subview li.dl-subview,
-.dl-menu.dl-subview li.dl-subview .dl-submenu,
-.dl-menu.dl-subview li.dl-subviewopen,
-.dl-menu.dl-subview li.dl-subviewopen > .dl-submenu,
-.dl-menu.dl-subview li.dl-subviewopen > .dl-submenu > li {
-  display: block;
-}
-
-/* Animation classes for moving out and in */
-
-.dl-menu.dl-animate-out {
-  animation: MenuAnimOut 0.4s ease;
-}
-
-@keyframes MenuAnimOut {
-  100% {
-    opacity: 0;
-    transform: translateZ(300px);
-  }
-}
-
-.dl-menu.dl-animate-in {
-  animation: MenuAnimIn 0.4s ease;
-}
-
-@keyframes MenuAnimIn {
-  0% {
-    opacity: 0;
-    transform: translateZ(300px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateZ(0);
-  }
-}
-
-.dl-menuwrapper > .dl-submenu.dl-animate-in {
-  animation: SubMenuAnimIn 0.4s ease;
-}
-
-@keyframes SubMenuAnimIn {
-  0% {
-    opacity: 0;
-    transform: translateZ(-300px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateZ(0);
-  }
-}
-
-.dl-menuwrapper > .dl-submenu.dl-animate-out {
-  animation: SubMenuAnimOut 0.4s ease;
-}
-
-@keyframes SubMenuAnimOut {
-  0% {
-    opacity: 1;
-    transform: translateZ(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateZ(-300px);
-  }
-}
-
-/* No Touch Fallback */
-
-.no-touch .dl-menuwrapper li a:hover {
-  background: rgba(255, 248, 213, 0.1);
-}
-
-/* No JS Fallback */
-
-.no-js .dl-trigger {
+input[type="checkbox"].menu-ac-kapa {
   display: none;
 }
 
-.no-js .dl-menuwrapper .dl-menu {
-  position: relative;
+input[type="checkbox"].menu-ac-kapa:checked ~ nav ul {
   pointer-events: auto;
   opacity: 1;
-  transform: none;
+  transform: translateY(-45px);
 }
 
-.no-js .dl-menuwrapper li .dl-submenu {
+input[type="checkbox"].menu-ac-kapa:checked ~ nav ul li {
   display: block;
 }
 
-.no-js .dl-menuwrapper li.dl-back {
-  display: none;
-}
-
-.no-js .dl-menuwrapper li > a:not(:only-child) {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.no-js .dl-menuwrapper li > a:not(:only-child):after {
-  content: '';
-}
-
-.dl-menuwrapper button:hover,
-.dl-menuwrapper button.dl-active,
-.dl-menuwrapper ul {
-  background: #424242;
-}
-
-.dl-menu li {
-  display: none;
-}
-
-.dl-menuopen li {
+input[type="checkbox"].menu-ac-kapa:checked ~ .menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
   display: block;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -1494,18 +1346,7 @@ body {
   height: 200%;
   min-height: 400px;
   overflow: hidden;
-  background: url(../../images/site.png) center center no-repeat;
-  background-size: cover;
-}
-
-.entry-image:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(66, 66, 66, 0.3);
-  content: '';
+  background: #1ABC9C;
 }
 
 .entry-image img {
