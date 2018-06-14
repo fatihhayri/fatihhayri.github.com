@@ -12,7 +12,7 @@ Tipografinin web sitelerinde önemli bir yeri var. Yazı tipi tasarım ve okunab
 
 Yazı tiplerini sistemde yüklü yazı tipleri ve özel yazı tipleri diye ikiye ayırabiliriz. Bu makalede özel yazı tipleri üzerine duracağız. 
 
-Geçmişten beri özel yazı tiplerini sayfalarımıza eklemenin farklı yöntemlerini denedik. (Örn: sFIR, cufon, resim vb. ) Günümüzde artık bu daha kolay. [@font-face](http://fatihhayrioglu.com/woff2-ve-font-face-tanimini-iki-satira-indirmek/) ile özel yazı tiplerini sayfalarımıza kolayca ekleyebiliyoruz. 
+Geçmişten beri özel yazı tiplerini sayfalarımıza eklemenin farklı yöntemlerini denedik. (Örn: sFIR, cufon, resim vb. ) Günümüzde artık bu daha kolay. [@font-face](https://fatihhayrioglu.com/woff2-ve-font-face-tanimini-iki-satira-indirmek/) ile özel yazı tiplerini sayfalarımıza kolayca ekleyebiliyoruz. 
 
 Özel yazı tipleri hakkında daha fazla bilgiye sahip olmalıyız. Nasıl yüklenir? Yükleme sırası nasıldır? Bu yazıda bu konulara biraz değineceğiz.
 

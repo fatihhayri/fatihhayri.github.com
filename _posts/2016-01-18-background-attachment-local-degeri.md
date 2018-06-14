@@ -52,8 +52,8 @@ Kalın sağlıcakla.
  - [http://tympanus.net/codrops/css_reference/background-attachment/](http://tympanus.net/codrops/css_reference/background-attachment/)
 
 
-[firefox]: http://fatihhayrioglu.com//images/ff.png
-[chrome]: http://fatihhayrioglu.com//images/ch.png
-[explorer]: http://fatihhayrioglu.com//images/ie.png
-[msafari]:http://fatihhayrioglu.com//images/sm.png
-[android]:http://fatihhayrioglu.com//images/an.png
+[firefox]: https://fatihhayrioglu.com//images/ff.png
+[chrome]: https://fatihhayrioglu.com//images/ch.png
+[explorer]: https://fatihhayrioglu.com//images/ie.png
+[msafari]:https://fatihhayrioglu.com//images/sm.png
+[android]:https://fatihhayrioglu.com//images/an.png

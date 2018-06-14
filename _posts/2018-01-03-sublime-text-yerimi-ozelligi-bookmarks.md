@@ -12,11 +12,11 @@ Normal şartlarda kodlarımızın küçük bloklar halinde farklı dosyalarda ol
 
 Uzun sayfalarda editörde belli bloklar arasında yukarı aşağı gezinmek sorun oluyor. Bu durumu çözecek bir özellik editör yerimi (Bookmarking) özelliği.
 
-![sublime text bookmarking](http://fatihhayrioglu.com/images/sublime-text-bookmarking2.gif)
+![sublime text bookmarking](https://fatihhayrioglu.com/images/sublime-text-bookmarking2.gif)
 
 Yerimi ekleme kısayolu (MacOS için) `kntrl + shift + r` tekrar bastığınız da ise kaldırıyor.
 
-![sublime text bookmarking](http://fatihhayrioglu.com/images/sublime-text-bookmarking.gif)
+![sublime text bookmarking](https://fatihhayrioglu.com/images/sublime-text-bookmarking.gif)
 
 Yerimim eklendiğini satır numarası yazan yerin solunda yerimi ikonu çıkıyor. Yerimleri arasınra gezinmek için kısayol olarak `fn + F2` kullanıyoruz. Bu tuş kombinasyonuna her bastığımızda yerimleri arasında geziniyoruz.
 

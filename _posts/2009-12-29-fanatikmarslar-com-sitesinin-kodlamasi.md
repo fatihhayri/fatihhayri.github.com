@@ -235,4 +235,4 @@ Bir sonraki makalede kaldığımız yerden devam edeceğiz.
   [3]: /images/fan-gonder-200x300.jpg
   [4]: /images/fan-listele-200x300.jpg
   [5]: /images/fm_eskiz.gif "fm_eskiz"
-  [tıklayınız.]: http://fatihhayrioglu.com/dogru-doctype-kullanimi/
+  [tıklayınız.]: https://fatihhayrioglu.com/dogru-doctype-kullanimi/

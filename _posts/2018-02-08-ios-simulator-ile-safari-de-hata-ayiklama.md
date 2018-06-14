@@ -14,7 +14,7 @@ Mobil dünyanın gelişmesi ile siteler için gelen hataların bir çoğu artık
 
 Mac Os kullanıyorsanız Xcode başta kurulu gelmiyor. İlk olarak Xcode kurmanız gerekiyor. Ücretsiz bir program olan Xcode'u ister App Store'dan isterseniz internetten kurabilirsiniz.
 
-![xcode install](http://fatihhayrioglu.com/images/xcode-install.png)
+![xcode install](https://fatihhayrioglu.com/images/xcode-install.png)
 
 Bende yüklü olduğu için buton metni **open** şeklinde ama siz ilk yüklüyorsanız **install** olması lazım.
 
@@ -24,7 +24,7 @@ Bende yüklü olduğu için buton metni **open** şeklinde ama siz ilk yüklüyo
 
 Masaüstü Safari tarayıcısında geliştirici menüsü kapalı geliyor. Açmak için **Safari > Preferences** menüsüne tıklıyoruz. Gelen pencerede **Advanced** sekmesindeki **Show Develop menu in menu bar** işaret kutusunu işaretli hale getiriyoruz. 
 
-![Safari Advanced](http://fatihhayrioglu.com/images/safari-dev-tools.gif)
+![Safari Advanced](https://fatihhayrioglu.com/images/safari-dev-tools.gif)
 
 Artık üst menüde **Develop** geldi. Masaüsütü testlerimizi yapmak içinde bu ayarı yapmak gerekiyor.
 
@@ -34,17 +34,17 @@ Artık üst menüde **Develop** geldi. Masaüsütü testlerimizi yapmak içinde 
 
 Sonra simülatörde **Web Inspector** açmak için **Settings > Safari > Advanced** ve **Web Inspector** aktifleştiriyoruz.
 
-![web inspector](http://fatihhayrioglu.com/images/iphone-web-inspector.gif)
+![web inspector](https://fatihhayrioglu.com/images/iphone-web-inspector.gif)
 
 ## 4. Adım Hata ayıklamak
 
 Ayarlar bittikten sonra iOS simülatöründe Safari adres çubuğuna inceleyeceğimiz adresi yazıyoruz. Ben **fatihhayrioglu.com** yazdım.
 
-![Safari inpect](http://fatihhayrioglu.com/images/safari-inspect-1.png)
+![Safari inpect](https://fatihhayrioglu.com/images/safari-inspect-1.png)
 
 Sonra bilgisayarımızdaki Safari tarayıcısını açıp. Üst menüden **Develop > Simulator > fatihhayrioglu.com** şeklinde görünecektir. Tıklayarak geliştirici aracını açıyoruz.
 
-![Safari inpect](http://fatihhayrioglu.com/images/safari-inspect-2.png)
+![Safari inpect](https://fatihhayrioglu.com/images/safari-inspect-2.png)
 
 Safari Developer Tool'u açılacaktır. Artık kodunuzu incelemeye başlayabilirsiniz. Tüm geliştirme araçları nimetlerinden yararlanabilirsiniz. Elemanları denetleyebilir, js ile kesme noktaları koyup javascript hatalarını ayıklayabilir, ağ sekmesinden site kaynaklarının yüklenme zamanları ve sırasını görebilirsiniz. Geliştirme araçlarındaki diğer işlerini de aynı şekilde yapabiliyoruz.
 

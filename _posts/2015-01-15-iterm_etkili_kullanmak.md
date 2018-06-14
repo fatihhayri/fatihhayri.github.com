@@ -39,7 +39,7 @@ iTerm'de kendimize özel kısayollar da ekleyebiliyoruz.
 
 Örnek yapalım. Örneğin tek kelimeyi silmek ve tüm satırı silmek için **Alt(⌥) + Backspace(⌫)** ve **Cmd(⌘)+Backspace(⌫)** tanımlarını yapalım. 
 
-![enter image description here](http://fatihhayrioglu.com/images/iterm/iterm_ozel_kisayol.gif)
+![enter image description here](https://fatihhayrioglu.com/images/iterm/iterm_ozel_kisayol.gif)
 
  - Alttan artı(+) işaretine basıp yeni bir ekleme yapıyoruz.
  - **Keyboard Shortcut**'a ekleyeceğimiz kısayolunu tuşluyoruz.
@@ -61,7 +61,7 @@ Bu özellikte süper. Bu özelliği kullanmak için önce iTerm'den Sublime Text
 
 Ayar tamam. Şimdi bu özelliği uygulamak için **git grep -n** ile arama yaptıktan sonra **Cmd(⌘) + click** ile dosyaya tıkladığımızda ilgili satıra gideriz.
 
-![enter image description here](http://fatihhayrioglu.com/images/iterm/iterm_ilgili_satir_sublime.gif)
+![enter image description here](https://fatihhayrioglu.com/images/iterm/iterm_ilgili_satir_sublime.gif)
 
 **Cmd(⌘)** basıp metnin üzerine gelince el işareti çıkıyor, ekran görüntüsünde gözükmemiş.
 
@@ -86,23 +86,23 @@ jekyl serve --config _config_dev.yml
 
 **jekyl** yanlış yazmışım mesela bunu düzeltmek için satır başına(**fn + ←**) gidelim, sonra kelimeler aradına gezmek için kısayollara gidip aşağıdaki gibi bir tanım yapmalaıyız.
 
-![enter image description here](http://fatihhayrioglu.com/images/iterm/karakterler_arasi_gezinme.gif)
+![enter image description here](https://fatihhayrioglu.com/images/iterm/karakterler_arasi_gezinme.gif)
 
 ### Geçmiş kodların listesi
 
 Önceki yazdığımız kodların listesini görmek için **Cmd(⌘) + Shift(⇧) + H** kısayolunu kullanıyoruz. 
 
-![enter image description here](http://fatihhayrioglu.com/images/iterm/pastehistory.png)
+![enter image description here](https://fatihhayrioglu.com/images/iterm/pastehistory.png)
 
 Daha efsane olan. **Cmd(⌘) + Alt(⌥) + B** ile altta çıkan bardan "oynat Uğurcum" yapabiliyoruz.
 
-![enter image description here](http://fatihhayrioglu.com/images/iterm/instantreplay.gif)
+![enter image description here](https://fatihhayrioglu.com/images/iterm/instantreplay.gif)
 
 ### Otomatik tamamlama
 
 Bir kaç karakter girdikten sonra **Cmd(⌘) + Shift(⇧) + ;** basarak daha önce kullandığınız ve girdiğiniz karakterlere uyan öneriler sunuyor. Burada şöyle bir şey var ilgili panelin geçmişinde arama yaptığı için daha faydalı oluyor.
 
-![enter image description here](http://fatihhayrioglu.com/images/iterm/autocomplete.png)
+![enter image description here](https://fatihhayrioglu.com/images/iterm/autocomplete.png)
 
 Ayrıca [https://iterm2.com/features.html](https://iterm2.com/features.html) göz atmanızı öneririm.
 

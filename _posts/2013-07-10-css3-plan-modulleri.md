@@ -12,13 +12,13 @@ CSS3 plan modülleri hala üzerinde çalışmaya devam edilen yapılardır. CSS3
 
 Bu modülün tamamlanmış ve tüm yeni nesil tarayıcılar tarafından desteklenmiş olması güzel bir a. CSS3 plan modülleri arasında öğrenilmeye başlanacak en iyi modüldür.
 
-Detaylı bilgi için [http://fatihhayrioglu.com/css3-coklu-kolonlar/](http://fatihhayrioglu.com/css3-coklu-kolonlar/)
+Detaylı bilgi için [https://fatihhayrioglu.com/css3-coklu-kolonlar/](https://fatihhayrioglu.com/css3-coklu-kolonlar/)
 
 ## CS3 Esnek Kutu (flexible box) Modülü
 
 Esnek kutu modeli yeni planlama modülleri arasında en çok isminden söz ettiren modül. Bazı karışık plan sorunlarına güzel çözümler üretmektedir.
 
-Detaylı bilgi için  [http://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/](http://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/)
+Detaylı bilgi için  [https://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/](https://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/)
 
 ## CSS3 Izgara(Grid) Modülü
 

@@ -8,7 +8,7 @@ image:
   feature: lokal-screenshot.gif
 ---
 
-[İlk yazıyı](http://fatihhayrioglu.com/google-chrome-devtools-ipuclari/) yazdıktan sonra hangi özellikleri kullandığıma daha çok dikkat etmeye başladım. Hemen başlayalım. Sırayla yazalım.
+[İlk yazıyı](https://fatihhayrioglu.com/google-chrome-devtools-ipuclari/) yazdıktan sonra hangi özellikleri kullandığıma daha çok dikkat etmeye başladım. Hemen başlayalım. Sırayla yazalım.
 
 ## 1. CSS değişikliklerini geri almak
 

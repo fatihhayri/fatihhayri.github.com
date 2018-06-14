@@ -35,7 +35,7 @@ Bootstrap'in benzer bir çözümü mevcut (LESS)
 
 Benzer bir çözümü biz kullanabiliriz. 
 
-**zindex.styl** isimli bir stylus dosyası oluşturalım. Stylus hakkında detaylı bilgi almak için [tıklayınız](http://fatihhayrioglu.com/stylus-ile-dinamik-css-yazmak/).
+**zindex.styl** isimli bir stylus dosyası oluşturalım. Stylus hakkında detaylı bilgi almak için [tıklayınız](https://fatihhayrioglu.com/stylus-ile-dinamik-css-yazmak/).
 
 {% highlight css %}
 zindexBelow =           -1

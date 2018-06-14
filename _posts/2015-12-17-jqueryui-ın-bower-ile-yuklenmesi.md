@@ -6,14 +6,14 @@ Category: jquery
 tags: javascript jquery jqueryui bower
 ---
 
-![enter image description here](http://fatihhayrioglu.com/images/jqueryui-bower.jpg)
+![enter image description here](https://fatihhayrioglu.com/images/jqueryui-bower.jpg)
 {: .resimler-sagda}
 
 jquery'nin gelişmiş arayüz elemanları kütüphanesi jquery-ui yüksek boyutuna rağmen tercih edilen bir kütüphanedir. Ben yüksek boyutundan dolayı kullanmasam da bazen ihtiyacımı en iyi gören kütüphane olduğunda tercih ederim. 
 
 Kullanacağımız arayüz elemanına özel Jquery-ui'ı indirebiliyoruz. [jQuery-ui indirme](http://jqueryui.com/download/) sayfasında gerekli elemanları seçip indir dediğimizde jquery-ui çekirdek kodu ve kullanılan elmanların javascriptlerini bize sunuyor. Buraya kadar her şey güzel. 
 
-Bu makaleyi yazmama sebep olan durum ise yeni arayüz geliştirme ortamlarında yoğun olarak kullanılan [bower](http://fatihhayrioglu.com/arayuz-gelistiriciler-icin-paket-yonetimi-bower/) ile jquery-ui'ın kullanım kısmı. Tüm kütüphaneyi ekleyeceksek kolay. 
+Bu makaleyi yazmama sebep olan durum ise yeni arayüz geliştirme ortamlarında yoğun olarak kullanılan [bower](https://fatihhayrioglu.com/arayuz-gelistiriciler-icin-paket-yonetimi-bower/) ile jquery-ui'ın kullanım kısmı. Tüm kütüphaneyi ekleyeceksek kolay. 
 
 {% highlight html %}
 <script src="bower_components/jquery/dist/jquery.min.js"></script>

@@ -8,7 +8,7 @@ image:
   feature: yuzde-yuz-site.gif
 ---
 
-Daha önce bu konuda bir makale yazmıştım. [100% Genişlik ve 100% Yükseklite Sayfa İskeleti Hazırlama](http://fatihhayrioglu.com/100-genislik-ve-100-yukseklite-sayfa-iskeleti-hazirlama/) bağlantısını tıklayarak makaleye erişebilirsiniz. Aynı yapıyı flex ile yapsam nasıl olur bir bakalım.
+Daha önce bu konuda bir makale yazmıştım. [100% Genişlik ve 100% Yükseklite Sayfa İskeleti Hazırlama](https://fatihhayrioglu.com/100-genislik-ve-100-yukseklite-sayfa-iskeleti-hazirlama/) bağlantısını tıklayarak makaleye erişebilirsiniz. Aynı yapıyı flex ile yapsam nasıl olur bir bakalım.
 
 Bu yapının bize sağladıklarını listelersek.
 
@@ -31,7 +31,7 @@ HTML kodu;
 <footer>Alt Alan</footer>
 {% endhighlight %}
 
-[Flex ile sayfa dibine yapışık alt alanlar (sticky footer) yapmak](http://fatihhayrioglu.com/flex-ile-sayfa-dibine-yapisik-alt-alanlar-sticky-footer-yapmak/) yazısında gördüğümüz gibi orta alanın tam sayfayı kaplaması ve alt alanın dibe yapışması için:
+[Flex ile sayfa dibine yapışık alt alanlar (sticky footer) yapmak](https://fatihhayrioglu.com/flex-ile-sayfa-dibine-yapisik-alt-alanlar-sticky-footer-yapmak/) yazısında gördüğümüz gibi orta alanın tam sayfayı kaplaması ve alt alanın dibe yapışması için:
 
 {% highlight css %}
 body {

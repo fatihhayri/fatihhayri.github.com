@@ -33,10 +33,10 @@ Dinamik üretilen bağlantılar için güzel bir çözüm bence;
 Ayrıca inidirilecek dokümanın formatını değiştirebiliyoruz.
 
 {% highlight html %}
-<a href="http://fatihhayrioglu.com/last-child-secisi/index.html" download="last_child.txt">last-child seçicisi makalesini indir(txt)</a>
+<a href="https://fatihhayrioglu.com/last-child-secisi/index.html" download="last_child.txt">last-child seçicisi makalesini indir(txt)</a>
 {% endhighlight %}
 
-Örnek: <a href="http://fatihhayrioglu.com/last-child-secisi/index.html" download="last_child.txt">last-child seçicisi makalesini indir(txt)</a>
+Örnek: <a href="https://fatihhayrioglu.com/last-child-secisi/index.html" download="last_child.txt">last-child seçicisi makalesini indir(txt)</a>
 
 
 > Dosya eğer bağlantı ile aynı domain değilse Firefox eski indirme alışkanlıklarına dönüyor.

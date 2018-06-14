@@ -6,7 +6,7 @@ Category: CSS
 tags: css, css3, renk-geçişi, filtre, hata-ayıklama, sıfırlama
 ---
 
-CSS3 ile gelen güzel özelliklerden birisi [renk geçişleri](http://fatihhayrioglu.com/css-renk-gecisleri-gradients/). Bu güzel özelliği kullanmamızdaki en büyük engel İE’nin bu özelliği İE 10 sürümünde destekliyor olması. Ancak farklı bir yöntem ile bu desteği İE’nin tüm sürümlerine kazandırabiliyoruz. **filtre tanımı**. filtre tanımı yardımı ile İE için çözüm oluşturabiliyoruz. Tam karşılamasa da desteği sağlaması büyük ölçüde işimizi görüyor.
+CSS3 ile gelen güzel özelliklerden birisi [renk geçişleri](https://fatihhayrioglu.com/css-renk-gecisleri-gradients/). Bu güzel özelliği kullanmamızdaki en büyük engel İE’nin bu özelliği İE 10 sürümünde destekliyor olması. Ancak farklı bir yöntem ile bu desteği İE’nin tüm sürümlerine kazandırabiliyoruz. **filtre tanımı**. filtre tanımı yardımı ile İE için çözüm oluşturabiliyoruz. Tam karşılamasa da desteği sağlaması büyük ölçüde işimizi görüyor.
 
 Uygulamada filtre bazı sorunlar neden oluyor. Bunlardan birisi renk geçişi kullanılan bir tanımın ezilmesi veya sıfırlanması sırasında normal renk geçişini
 
@@ -38,7 +38,7 @@ Sağlıcakla Kalın.
 
 ## Kaynaklar
 
-* [http://fatihhayrioglu.com/css-renk-gecisleri-gradients/](http://fatihhayrioglu.com/css-renk-gecisleri-gradients/)
+* [https://fatihhayrioglu.com/css-renk-gecisleri-gradients/](https://fatihhayrioglu.com/css-renk-gecisleri-gradients/)
 * [http://caniuse.com/#search=gradient](http://caniuse.com/#search=gradient)
 * [http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx)
 * [http://stackoverflow.com/a/3749340/296373](http://stackoverflow.com/a/3749340/296373)

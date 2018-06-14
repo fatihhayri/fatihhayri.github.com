@@ -16,11 +16,11 @@ CSS ile bunun çözümü kolay. Örneğin tablolardan oluşan bir web sayfanız 
 
 Aşağıdaki gibi bir sayfamız olsun.
 
-![enter image description here](http://fatihhayrioglu.com/images/puan-tablosu.gif)
+![enter image description here](https://fatihhayrioglu.com/images/puan-tablosu.gif)
 
 Bu sayfanın çıktısı almak istediğimizde
 
-![enter image description here](http://fatihhayrioglu.com/images/puan-tablosu-cikti-al.gif)
+![enter image description here](https://fatihhayrioglu.com/images/puan-tablosu-cikti-al.gif)
 
 İki tabloyu çıktı alırken ayırsak iyi olur.
 
@@ -42,7 +42,7 @@ Sayfayı bölmek istediğimiz yere
 
 ekliyoruz. Sonuç
 
-![enter image description here](http://fatihhayrioglu.com/images/puan-tablosu-son.gif)
+![enter image description here](https://fatihhayrioglu.com/images/puan-tablosu-son.gif)
 
 Benzer mantıkla çıktı alırken sayfalama ayrımı yapabiliriz.
 

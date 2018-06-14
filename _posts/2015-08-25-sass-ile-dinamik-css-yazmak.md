@@ -6,7 +6,7 @@ Category: css
 tags: sass grunt stylus css-önişlemcileri
 ---
 
-Üç adet popüler CSS önişlemcisi var. SASS, LESS ve Stylus. Dinamik CSS yazımı ile ilgili daha önce [Stylus](http://fatihhayrioglu.com/stylus-ile-dinamik-css-yazmak/) ile ilgili bir makale yazmıştım. Stylus yazımda da belirttiğim gibi bunlardan birini tercih etmek yeterli bence. Birbirlerine olan üstünlükleri çok ayırt edici değil. Sass'ın diğerlerine göre ilk olmak ve çok fazla dokümantasyonunun olması gibi avantajları var. Buna karşı bence Stylus'un yazımı daha kolay. Bir iki nokta üst üste -:- yazmadım diye hata almak hoşuma gitmiyor. 
+Üç adet popüler CSS önişlemcisi var. SASS, LESS ve Stylus. Dinamik CSS yazımı ile ilgili daha önce [Stylus](https://fatihhayrioglu.com/stylus-ile-dinamik-css-yazmak/) ile ilgili bir makale yazmıştım. Stylus yazımda da belirttiğim gibi bunlardan birini tercih etmek yeterli bence. Birbirlerine olan üstünlükleri çok ayırt edici değil. Sass'ın diğerlerine göre ilk olmak ve çok fazla dokümantasyonunun olması gibi avantajları var. Buna karşı bence Stylus'un yazımı daha kolay. Bir iki nokta üst üste -:- yazmadım diye hata almak hoşuma gitmiyor. 
 
 [Sahibinden.com](http://sahibinden.com)'da Stylus ile kod yazarken [mobiwan](http://www.mobiwan.mobi/)'da tercihimiz genelde Sass oluyor. Bende hazır Sass kodluyoruz bir makale yazmanın sırası geldi diye düşünüp bu makaleyi yazmaya başladım. Bu yazım Sass'a giriş niteliğinde olacaktır. Daha sonra zamanım olursa devamı gelir inşallah.
 

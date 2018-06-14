@@ -16,7 +16,7 @@ jQuery yeni sürümü 2.0 ie birlikte İE8 ve alt sürümlerin değini kaldırd�
 
 ## CSS3 desteği (%15 den %54 çıkıyor.)
 
- - [CSS3 Seçici Desteği](http://fatihhayrioglu.com/css3-secicileri/)
+ - [CSS3 Seçici Desteği](https://fatihhayrioglu.com/css3-secicileri/)
     - :target seçicisi
     - :disabled
     - :enabled
@@ -34,7 +34,7 @@ jQuery yeni sürümü 2.0 ie birlikte İE8 ve alt sürümlerin değini kaldırd�
     - :empty sözde sınıfı
     - Olumsuz(:not) Sözde Sınıfı
     - ::selection Sözde Elementi
- - [CSS3 Değerleri](http://fatihhayrioglu.com/css3-yeni-degerleri/)
+ - [CSS3 Değerleri](https://fatihhayrioglu.com/css3-yeni-degerleri/)
     - ch değeri
     - Bakış Alanı Değerleri (View Port)
     - Renk değerleri (rgba, hsl, hsla)
@@ -78,7 +78,7 @@ Yeni standartlar açısından bir çok kazanımımız olacağı kesin ama hala �
  - [http://www.computerworld.com/s/article/9231316/Google_to_drop_support_for_IE8_on_Nov._15](http://www.computerworld.com/s/article/9231316/Google_to_drop_support_for_IE8_on_Nov._15)
  - [http://net.tutsplus.com/articles/editorials/jquery-in-2013-or-how-to-properly-drop-ie/](http://net.tutsplus.com/articles/editorials/jquery-in-2013-or-how-to-properly-drop-ie/)
  - [http://www.sitepoint.com/browser-trends-july-2013/](http://www.sitepoint.com/browser-trends-july-2013/)
- - [http://fatihhayrioglu.com/internet-explorer-9/](http://fatihhayrioglu.com/internet-explorer-9/)
+ - [https://fatihhayrioglu.com/internet-explorer-9/](https://fatihhayrioglu.com/internet-explorer-9/)
  - [http://robinwinslow.co.uk/2013/02/28/time-to-say-goodbye-to-ie8/](http://robinwinslow.co.uk/2013/02/28/time-to-say-goodbye-to-ie8/)
  - [http://msdn.microsoft.com/en-us/library/cc351024(VS.85).aspx](http://msdn.microsoft.com/en-us/library/cc351024(VS.85).aspx)
  - [http://theie8countdown.com/](http://theie8countdown.com/)

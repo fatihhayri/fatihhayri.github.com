@@ -19,7 +19,7 @@ Bu kadar basit bir kod ile özel kaydırma çubuğu elde ettik. Biz yukarıda 3 
 
 ## Özel Scroll Sahte(Pseudo) Elemanları
 
-![enter image description here](http://fatihhayrioglu.com/images/scrollbar_map_webkit.gif)
+![enter image description here](https://fatihhayrioglu.com/images/scrollbar_map_webkit.gif)
 
  1. **::-webkit-scrollbar** Kaydırma çubuğu alanını tanımlar. Genelde diğer elemanları kapsar 
  2. **::-webkit-scrollbar-button** Yön tuşlarını seçmeye yarar.

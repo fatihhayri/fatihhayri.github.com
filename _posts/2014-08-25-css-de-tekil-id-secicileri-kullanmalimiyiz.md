@@ -89,7 +89,7 @@ Kalın sağlıcakla.
   [3]: https://docs.google.com/document/d/1AsRKkOUiyyqG9CnXGyz7f9eQUMcAT3oh8ZeWtBZwQ_Y/edit?usp=sharing
   [4]: http://stevesouders.com/efws/css-selectors/csscreate.php?n=1000&sel=#id&body=background:%20#CFD&ne=1000
   [5]: http://stevesouders.com/efws/css-selectors/csscreate.php?n=1000&sel=.class&body=background:%20#CFD&ne=1000
-  [6]: http://fatihhayrioglu.com/cssin-yapisi/
+  [6]: https://fatihhayrioglu.com/cssin-yapisi/
   [7]: http://csswizardry.com/2011/09/writing-efficient-css-selectors/
   [8]: http://nimbleworks.co.uk/blog/css-id-selectors-never-say-never/
   [9]: http://stackoverflow.com/questions/6376279/css-why-not-use-id-another-reason-than-tightly-coupled

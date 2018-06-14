@@ -201,7 +201,7 @@ Kalın sağlıcakla.
   [1]: https://github.com/scottjehl/picturefill
   [2]: http://responsiveimages.org/
   [3]: https://github.com/borismus/srcset-polyfill
-  [4]: http://fatihhayrioglu.com/font-face-kullanimi/
+  [4]: https://fatihhayrioglu.com/font-face-kullanimi/
   [5]: http://www.ozdemir.info.tr/?p=396
   [6]: http://www.huseyinemanet.com/post/43506500952/retina-display-icin-kod-yazmak
   [7]: http://css-tricks.com/snippets/css/retina-display-media-query/

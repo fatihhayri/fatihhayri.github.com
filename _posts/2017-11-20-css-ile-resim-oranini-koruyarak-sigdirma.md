@@ -6,7 +6,7 @@ Category: CSS
 tags: [css, object-fit, objct-position, aspect-ratio]
 ---
 
-Ardalan resimler için uyguladığımız [background-size](http://fatihhayrioglu.com/css3-background-size-ozelligi/) ve [background-position](http://fatihhayrioglu.com/hizli-css-referansi/) özelliklerine benzer bir kullanımı `<img>` ve `<video>` etiketleri içine uygulamamızı sağlayan özellikler. 
+Ardalan resimler için uyguladığımız [background-size](https://fatihhayrioglu.com/css3-background-size-ozelligi/) ve [background-position](https://fatihhayrioglu.com/hizli-css-referansi/) özelliklerine benzer bir kullanımı `<img>` ve `<video>` etiketleri içine uygulamamızı sağlayan özellikler. 
 
 Bu özelliğe ihtiyacımız çok eksilere dayanır. Görsel içeriğin kullanıcı tarafından girildiği sitelerde gelen resim boyutlarını istenen tasarımdaki içerik kutusuna sığdırma isteklerini karşılamak için bu özellikleri kullanırız. Bu özellik yaygınlaşmadan önce bu gibi ihtiyaçları karşılamak için resimleri ardalan resmine çevirip, **background-size** ve **background-position** ile halletmeye çalışırdım. Şimdi tarayıcı desktek oranları bayağı arttı ve artık kullanabiliriz. 
 

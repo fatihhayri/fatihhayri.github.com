@@ -8,7 +8,7 @@ image:
   feature: show-hide-css-transitions.gif
 ---
 
-CSS [geçiş efekti](http://fatihhayrioglu.com/css3-gecis-efektleri-transitions/) özelliği güzel bir özellik. Bir çok basit animasyon işinde kullanılan geçiş efekti özelliğinin bir elemanı gizle/göster (toggle) ettirmek istediğimizde bazı sorunları var. Çözüm aradığımda bir kaç yöntem karşıma çıktı. Bu sorun ile ilk karşılaştığımda sahibinden.com'da bana özel sol menüsü yapıyorduk, çözümü bulunca ben bunun bir makalesini yazmalıyım demiştim ancak nasip değilmiş olmadı. Kısmet şimdiye imiş.
+CSS [geçiş efekti](https://fatihhayrioglu.com/css3-gecis-efektleri-transitions/) özelliği güzel bir özellik. Bir çok basit animasyon işinde kullanılan geçiş efekti özelliğinin bir elemanı gizle/göster (toggle) ettirmek istediğimizde bazı sorunları var. Çözüm aradığımda bir kaç yöntem karşıma çıktı. Bu sorun ile ilk karşılaştığımda sahibinden.com'da bana özel sol menüsü yapıyorduk, çözümü bulunca ben bunun bir makalesini yazmalıyım demiştim ancak nasip değilmiş olmadı. Kısmet şimdiye imiş.
 
 Elemanı gizle/göster yapmak için ilk düşündüğümüz geçiş efekti yükseklik değerini başlangıçta sıfır verelim tıklanınca veya üzerine gelince **auto**'ya çevirelim. Sorun burada başlıyor CSS **height** değerini sıfırdan auto'ya çekemiyor. 
 

@@ -139,7 +139,7 @@ Tüm liste için [tıklayınız][13].
 -   [http://www.webcredible.co.uk][]
 -   [http://www.mezzoblue.com][]
 
-  [<!DOCTYPE> switch]: http://fatihhayrioglu.com/dogru-doctype-kullanimi/
+  [<!DOCTYPE> switch]: https://fatihhayrioglu.com/dogru-doctype-kullanimi/
   [tıklayınız]: http://www.positioniseverything.net/explorer/peekaboo.html
   [tıklayınız.]: http://www.positioniseverything.net/explorer/guillotine.html
   [1]: http://www.fatihhayrioglu.com/?p=232

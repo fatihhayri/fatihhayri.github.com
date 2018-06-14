@@ -8,7 +8,7 @@ image:
   feature: sublime-text-editor.png
 ---
 
-Daha önce bu konuda bir makale yazmıştım. [CSS Editörleri](http://fatihhayrioglu.com/css-editorleri/) başlığı ile yazdığım bu makaleye gelen bir yorum bu konuda tekrar bir yazı yazmam gerektiğini hatırlattı bana. 
+Daha önce bu konuda bir makale yazmıştım. [CSS Editörleri](https://fatihhayrioglu.com/css-editorleri/) başlığı ile yazdığım bu makaleye gelen bir yorum bu konuda tekrar bir yazı yazmam gerektiğini hatırlattı bana. 
 
 Yazının üzerinden 11 seneden fazla zaman geçmiş. Yazıda bahsettiğim Front Page, CoffeeCup HTML Editor ve TopStyle kapıya kilit vurmuş. Macromedia Dreamweaver olmuş Adobe Dreamweaver. Style Master'ın kullananı kalmamış. CSSEdit isim değiştirmiş Espresso olmuş. Microsoft® Expression ölü doğan projeler listesine eklenmiş. Geliştirici dünyası hız gelişiyor.
 

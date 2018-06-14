@@ -9,11 +9,11 @@ tags: font-face woff2 safari ios
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">There&#39;ll be woff2 support in Safari 10.<a href="https://t.co/CYy2Y4uIBY">https://t.co/CYy2Y4uIBY</a><a href="https://twitter.com/hashtag/webfonts?src=hash">#webfonts</a> Good news!<br><br>Also Font Loading! ❤️<br>IndexedDB!<br>ShadowDOM!</p>&mdash; Marco Hengstenberg (@nice2meatu) <a href="https://twitter.com/nice2meatu/status/763697596275843072">August 11, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Twiiter'da bu gönderiyi görünce [font-face tanımını yenileyelim](http://fatihhayrioglu.com/font-face-tanimini-yenileyelim/) yazısında yenilediğim font-face tanımını acaba iki satıra indirebilirmiyim dedim içimden.  
+Twiiter'da bu gönderiyi görünce [font-face tanımını yenileyelim](https://fatihhayrioglu.com/font-face-tanimini-yenileyelim/) yazısında yenilediğim font-face tanımını acaba iki satıra indirebilirmiyim dedim içimden.  
 
 Woff formatı özel yazı tiplerinin kullanımının yayılması için güzel bir adımdı. 2. sürümü daha küçük yazı tipi dosyaları sağlayarak bunu bir adım daha ileri attı.
 
-![enter image description here](http://fatihhayrioglu.com/images/yazi-tipi-boyutlari.png)
+![enter image description here](https://fatihhayrioglu.com/images/yazi-tipi-boyutlari.png)
 
  Woff2 formatı bir önceki sürümüne nazaran %50'ye varan kazanım sağladı. Diğer yazı tiplerinden kat ve kat kazanımı olduğu resimde görünüyor.
 

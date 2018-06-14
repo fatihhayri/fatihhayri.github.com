@@ -84,7 +84,7 @@ npm için
 npm init -y
 {% endhighlight %}
   
-çalıştıralım. Gerekli bilgileri verdikten sonra **package.json** dosyamız hazır olacaktır. Detaylı bilgiye [buradan](http://fatihhayrioglu.com/nodejs-npm/) ulaşabilirsiniz.
+çalıştıralım. Gerekli bilgileri verdikten sonra **package.json** dosyamız hazır olacaktır. Detaylı bilgiye [buradan](https://fatihhayrioglu.com/nodejs-npm/) ulaşabilirsiniz.
 
 Sıra geldi basit bir site yapısı oluşturmaya. Basit olduğu için bir html ve bir js dosyası oluşturup başlayalım.
 
@@ -143,7 +143,7 @@ Can't find variable: require
 
 Ondan dolayı proje ismini **parcel-ikinci-deneme** yaptım. :)
 
-Çözüm için nvm kurmam gerekti. Sonra nvm ile ilgili bir makale de yazdım. [NVM Nedir? Nasıl Kullanılır?](http://fatihhayrioglu.com/nvm-nedir-nasil-kullanilir/) İşin ilginç olan tarafı Parcel dokümantasyonlarında node sürümüyle ilgili bir bilgilendirmenin olmamasıydı. Ben node'un 8.9.3 sürümüne geçince hata düzeldi.
+Çözüm için nvm kurmam gerekti. Sonra nvm ile ilgili bir makale de yazdım. [NVM Nedir? Nasıl Kullanılır?](https://fatihhayrioglu.com/nvm-nedir-nasil-kullanilir/) İşin ilginç olan tarafı Parcel dokümantasyonlarında node sürümüyle ilgili bir bilgilendirmenin olmamasıydı. Ben node'un 8.9.3 sürümüne geçince hata düzeldi.
 
 Sonra tekrar 
 
@@ -153,15 +153,15 @@ npm run start
 
 deyince çalıştı ve aşağıdaki gibi bir görüntü verdi.
 
-![parcel ilk çalışma](http://fatihhayrioglu.com/images/parcel-run.png)
+![parcel ilk çalışma](https://fatihhayrioglu.com/images/parcel-run.png)
 
 Tarayıcıda **http://localhost:1234/** açınca tarayıcının konsolunda **'Şampiyon Trabzonspor'** yazısını gördüm. Sevindim :)
 
-![parceljs ilk deneme chrome sonuç](http://fatihhayrioglu.com/images/parcel-browser.png)
+![parceljs ilk deneme chrome sonuç](https://fatihhayrioglu.com/images/parcel-browser.png)
 
 Parcel bizim için bir yerel sunucu çalıştırdı. Ayrıca projede otomatik **dist** klasörü oluşturdu. İçinde iki adet dosya var.
 
-![parcel dist](http://fatihhayrioglu.com/images/pacel-dist.png)
+![parcel dist](https://fatihhayrioglu.com/images/pacel-dist.png)
 
 Evet parcel'i çalıştırdık ama çok da birşey yapmadık. Biraz iş ekleyelim.
 
@@ -215,7 +215,7 @@ npm run start
 
 Parcel kodumuzu derleyip aşağıdaki gib bir sonuç verecektir. Ayrıca **dist** kalsörüne de **pacell.css** dosyasını ekleyecektir.
 
-![parceljs sass eklemek](http://fatihhayrioglu.com/images/parcel-sonuc1.gif)
+![parceljs sass eklemek](https://fatihhayrioglu.com/images/parcel-sonuc1.gif)
 
 ## ES6 import kullanımı
 
@@ -246,7 +246,7 @@ document.getElementById('icerik').innerHTML = bilgi;
 
 sonuç aşağıdaki gibi görünecektir.
 
-![parceljs es6 import denemesi sonucu](http://fatihhayrioglu.com/images/parcel-sonuc-2.gif)
+![parceljs es6 import denemesi sonucu](https://fatihhayrioglu.com/images/parcel-sonuc-2.gif)
 
 ## Projeyi yayına alma
 

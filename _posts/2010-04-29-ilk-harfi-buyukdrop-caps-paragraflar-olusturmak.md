@@ -253,7 +253,7 @@ p:first-child:first-letter{
 -   [http://www.akxl.net/labs/articles/text-wrapped-drop-caps-in-css-using-the-first-letter-selector/][]
 -   [http://www.users.globalnet.co.uk/~arcus/html/dropcaps.html][]
 
-  [first-letter]: http://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
+  [first-letter]: https://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
   [tıklayınız.]: /dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk.html
   [100]: /images/drop_caps_01.gif
   [1]: /images/drop_caps_02.gif
@@ -269,7 +269,7 @@ p:first-child:first-letter{
   [9]: /images/drop_caps_07.gif
   [10]: /dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk4c.html
   [11]: /images/drop_caps_08.gif
-  [first-child]: http://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
+  [first-child]: https://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
   [http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/]: http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/
   [http://safalra.com/web-design/typography/css-drop-caps/]: http://safalra.com/web-design/typography/css-drop-caps/
   [http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps]: http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps

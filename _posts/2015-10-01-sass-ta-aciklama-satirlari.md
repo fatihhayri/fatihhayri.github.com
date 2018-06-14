@@ -8,7 +8,7 @@ tags: sass css-önişlemcileri açıklama-satırı
 
 Açıklama satırlarının önemini tekrar anlatmaya gerek yok. Bir çok zaman unuttuğumuz veya iki kelime ile geçiştirdiğimiz açıklama satırları takım çalışmaları ve uzun süreli projelerin olmazsa olmazı. Yani tüm projelerin :)
 
-Sass [CSS'in açıklama satırı](http://fatihhayrioglu.com/css-yorum-kodu-ekleme/) kullanımını aynen destekler.
+Sass [CSS'in açıklama satırı](https://fatihhayrioglu.com/css-yorum-kodu-ekleme/) kullanımını aynen destekler.
 
 {% highlight sass %}
 /* Programcının kodu 

@@ -40,7 +40,7 @@ bower search bootstrap
 
 Araması sonucundan bootstrap ile ilgili kütüphaneler listelenir. 
 
-![enter image description here](http://fatihhayrioglu.com/images/bower-search.png)
+![enter image description here](https://fatihhayrioglu.com/images/bower-search.png)
 
 Her bir satır bir paketi tanımlar. İlk mor renkli kısım ismi, ikinci beyaz kısımda paketin indireceği git adresini gösterir.
 
@@ -71,13 +71,13 @@ Normalde yüklemek istediğimiz paketi yazdığımızda paketin son sürümü y�
 bower install bootstrap#3.2.0
 {% endhighlight %}
 
-![enter image description here](http://fatihhayrioglu.com/images/bower-install.gif)
+![enter image description here](https://fatihhayrioglu.com/images/bower-install.gif)
 
 Paket yüklendiğinde proje klasöründe **bower_components** klasörü oluşturur ve içine dosyaları indirir. Bower bu klasörü otomatik olarak seçer ve adlandırır, ancak konfigürasyon (.bowerrc) dosyası yolu ile bize yolu ve ismini değiştirme imkanı verir.   
 
 **bower_components** klasörünü incelediğimizde yüklediğimiz paket ve bağımlılıkları otomatik yüklendiğini görürüz.
 
-![enter image description here](http://fatihhayrioglu.com/images/bower-comp.gif)
+![enter image description here](https://fatihhayrioglu.com/images/bower-comp.gif)
 
 İlk yüklemeden sonra yüklediğiniz dosyayı html dokümanınıza eklemeniz gerekir. Bower paketleri genelde javascript dosyaları içerir, bazen css ve resim dosyası içerir.
 

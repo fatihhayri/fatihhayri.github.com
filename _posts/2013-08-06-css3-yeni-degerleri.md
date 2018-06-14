@@ -8,7 +8,7 @@ tags: CSS, CSS3, CSS-Değerleri, ch, rem, vw, vh, vmin, vmax, rgba, hsl, hsla, t
 
 CSS3 özelliklerini anlatan makalelerden sonra, yeni CSS3 değerleri hakkında bir makale yazmam gerektiğini fark ettim..
 
-CSS tanımları 3 ana yapıdan oluşmaktadır. Seçiciler, özellikler ve değerler. CSS3 ile gelen yeni seçicileri [CSS3 Seçicileri](http://fatihhayrioglu.com/css3-secicileri/) makalesinde anlatmıştık. CSS3 özelliklerini CSS Dersleri altındaki CSS3 başlığı altında anlattık. Sıra geldi CSS3 ile gelen yeni değerlere.
+CSS tanımları 3 ana yapıdan oluşmaktadır. Seçiciler, özellikler ve değerler. CSS3 ile gelen yeni seçicileri [CSS3 Seçicileri](https://fatihhayrioglu.com/css3-secicileri/) makalesinde anlatmıştık. CSS3 özelliklerini CSS Dersleri altındaki CSS3 başlığı altında anlattık. Sıra geldi CSS3 ile gelen yeni değerlere.
 
 Bir liste olarak sıralarsak;
 
@@ -23,13 +23,13 @@ Bir liste olarak sıralarsak;
     * vmin
     * vmax
 * Renk Değerleri
-    * [rgba renk değeri](http://fatihhayrioglu.com/css3-rgba-renk-tanimi/)
+    * [rgba renk değeri](https://fatihhayrioglu.com/css3-rgba-renk-tanimi/)
     * hsl renk değeri
     * hsla renk değeri
 * Açı Değeri
     * turn
 * Fonksiyonel Değerler
-    * [calc()](http://fatihhayrioglu.com/css3-calc-degeri/)
+    * [calc()](https://fatihhayrioglu.com/css3-calc-degeri/)
     * counter()
     * attr()
     * cycle()
@@ -151,7 +151,7 @@ Bakış Alanı değerleri ekranın satır uzunluğunu okunabilir seviyede tutmaz
 
 **rgba() Değeri**
 
-Daha önce bu değeri anlatmıştım. [CSS3 RGBA Renk Tanımı](http://fatihhayrioglu.com/css3-rgba-renk-tanimi/)
+Daha önce bu değeri anlatmıştım. [CSS3 RGBA Renk Tanımı](https://fatihhayrioglu.com/css3-rgba-renk-tanimi/)
 
 **hsl ve hsla Değerleri**
 
@@ -213,7 +213,7 @@ CSS tanımlarında derece ve turn değer tek değerdir, bundan dolayı kullanıl
 
 **calc() Değeri**
 
-Daha önce bu konuya değinmiştim. [CSS3 calc() değeri](http://fatihhayrioglu.com/css3-calc-degeri/)
+Daha önce bu konuya değinmiştim. [CSS3 calc() değeri](https://fatihhayrioglu.com/css3-calc-degeri/)
 
 **cycle() Değeri**
 

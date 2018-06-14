@@ -10,7 +10,7 @@ Daha önce bu konuda bir yazı yazmıştım.
 [Sayfa Dibine Yapışık Alt Alanlar (Sticky Footer)](
 Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)) Yazının tarihi 2009. Flex ile bu işin daha kolay yapıldığını daha önce görmüştüm ama bir türlü zaman ayırıp bir yazı yazamamıştım. Nasip şimdiyeymiş.
 
-![sticky footer](http://fatihhayrioglu.com/images/sticky-oncesi.gif)
+![sticky footer](https://fatihhayrioglu.com/images/sticky-oncesi.gif)
 
 2009'daki yazıyı incelerseniz kodlar biraz hack içeriyor. Flex ise bu konuya basit bir şekilde çözüm üretiyor. Dün yazdığım yazıdaki çözüm ile bir çözüm oluşturuyoruz. `margin-top: auto` güzel bir kullanım.
 
@@ -54,4 +54,4 @@ Kalın sağlıcakla.
  - [https://teamtreehouse.com/library/css-flexbox-layout/building-a-layout-with-flexbox/creating-a-sticky-footer-with-flexbox](https://teamtreehouse.com/library/css-flexbox-layout/building-a-layout-with-flexbox/creating-a-sticky-footer-with-flexbox)
  - [https://medium.com/@paynoattn/flexbox-sticky-footer-d19dab50c34](https://medium.com/@paynoattn/flexbox-sticky-footer-d19dab50c34)
  - [https://www.erbilen.net/css-flex-ile-sticky-footer-yapmak/](https://www.erbilen.net/css-flex-ile-sticky-footer-yapmak/)
- - [http://fatihhayrioglu.com/flexin-gizli-kalmis-guzel-bir-ozelligi/](http://fatihhayrioglu.com/flexin-gizli-kalmis-guzel-bir-ozelligi/)
+ - [https://fatihhayrioglu.com/flexin-gizli-kalmis-guzel-bir-ozelligi/](https://fatihhayrioglu.com/flexin-gizli-kalmis-guzel-bir-ozelligi/)

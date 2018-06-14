@@ -71,15 +71,15 @@ Artık Sublime Text javascript hatalarını göstermeye başladı.
 
 Örnek olması için javascript dosyasında 1431. satırın sonundaki noktalı virgülü sildim. 1-2 sn sonra Sublime Text hatayı gösterdi.
 
-![Sublime Text linter](http://fatihhayrioglu.com/images/linting-gosterimi.gif)
+![Sublime Text linter](https://fatihhayrioglu.com/images/linting-gosterimi.gif)
 
 Sağda satır sayısı yanında kırmızı yuvarlak bir uyarı, kod satırının içinde de kırmızı alt çizgi ile bie hatayı gösteriyor Sublime Text.
 
-![Sublime Text linter statusbar](http://fatihhayrioglu.com/images/sublime-text-status-error.gif)
+![Sublime Text linter statusbar](https://fatihhayrioglu.com/images/sublime-text-status-error.gif)
 
 Alt durum çubuğunda hatanın satır ve kolonu belirtiliyor. Ayrıca hatayı nasıl düzelteceğimizin bilgisini veriyor. (Bende kurulu pretier eklentisi mi yapıyor bunu emin olamadım)
 
-![Sublime Text linter console](http://fatihhayrioglu.com/images/sublime-text-console-hata.gif)
+![Sublime Text linter console](https://fatihhayrioglu.com/images/sublime-text-console-hata.gif)
 
 Sublime text konsolunda hatalar ve ikazlar liste halinde gösteriliyor. Uzun satırlı dosyalarda hataların takibi zorlaşıyor. Sublime Text konsolda hepsinin listesini görmek güzel oluyor.
 

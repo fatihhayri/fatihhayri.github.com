@@ -16,10 +16,10 @@ Visual Studio Code'a geçtim dediğimde [Murat](http://twitter.com/muratcorlu) i
 
 "project detail" araması bana javascript, css (less) ve html dosyalarını gösteriyor. 
 
-![sublime text arama](http://fatihhayrioglu.com/images/project-detail.png)
+![sublime text arama](https://fatihhayrioglu.com/images/project-detail.png)
 
 Daha önce dosya tipine göre filtrelemek istediğimde "*.less" şeklinde denemiştim ama olmamıştı. Meğer "project detail .less" araması istediğime ulaştırıyormuş :)
 
-![sublime text arama](http://fatihhayrioglu.com/images/project-detail-less.png)
+![sublime text arama](https://fatihhayrioglu.com/images/project-detail-less.png)
 
 Kalın sağlıcakla.

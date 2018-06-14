@@ -8,7 +8,7 @@ tags: font-face, font-family, font-style, font-weight
 
 Artık her projemizde @font-face kullanıyoruz. Kullanırken bazı sorunlar yaşıyoruz ve bu sorunlara çözümler üretiyoruz. Bu makalenin konusu da bu sorunlardan birini çözüyor. 
 
-Hemen meseleye girelim. Bir @font-face tanımı yapalım. Ben burada daha kısa olsun diye woff2 yapıyorum ama siz [Woff2 ve font-face tanımını iki satıra indirmek](http://fatihhayrioglu.com/woff2-ve-font-face-tanimini-iki-satira-indirmek/) yazımdaki ilk kodu kullanın.
+Hemen meseleye girelim. Bir @font-face tanımı yapalım. Ben burada daha kısa olsun diye woff2 yapıyorum ama siz [Woff2 ve font-face tanımını iki satıra indirmek](https://fatihhayrioglu.com/woff2-ve-font-face-tanimini-iki-satira-indirmek/) yazımdaki ilk kodu kullanın.
 
 {% highlight css %}
 @font-face {

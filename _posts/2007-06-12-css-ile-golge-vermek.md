@@ -123,7 +123,7 @@ yerine göreceli(realtive) konumlandırma kullanmaktır.
 IE5x de padding sorunu olsa da tüm web tarayıcılarında gayet güzel
 sonuçlar verir.
 
-Örnek çalışmayı görmek için [tıklayınız.](http://fatihhayrioglu.com/dokumanlar/clagnut_golge.html)
+Örnek çalışmayı görmek için [tıklayınız.](https://fatihhayrioglu.com/dokumanlar/clagnut_golge.html)
 
 ## Fuzzy metodu ile gölge vermek
 
@@ -219,7 +219,7 @@ Böylece tüm yeni nesil web tarayıcılarında bu metodu sağlıklı bir
 
 Bu metodu tüm png zemin resmi uygularınızda uygulayabilirsiniz.
 
-Örnek çalışmayı görmek için [tıklayınız.](http://fatihhayrioglu.com/dokumanlar/fuzzy_golge.html)
+Örnek çalışmayı görmek için [tıklayınız.](https://fatihhayrioglu.com/dokumanlar/fuzzy_golge.html)
 
 ## Onion Skin metodu ile Gölge eklemek
 
@@ -276,7 +276,7 @@ tanımlarını yapıyoruz:
 	    display: block;
 	}
 
-Örnek çalışmayı görmek için [tıklayınız.](http://fatihhayrioglu.com/dokumanlar/onion_golge.html)
+Örnek çalışmayı görmek için [tıklayınız.](https://fatihhayrioglu.com/dokumanlar/onion_golge.html)
 
 Bu metot kolay uygulanabilirlik bakımından avantajlıdır. Ancak fazladan
 iki adet katman kullanılması bakımından pek anlamlı kod

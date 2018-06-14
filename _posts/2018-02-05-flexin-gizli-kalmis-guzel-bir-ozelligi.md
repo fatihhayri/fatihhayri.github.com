@@ -13,7 +13,7 @@ Yaklaşık bir hafta önce flex hakkında Bursa'da Girişimci Engelliler Derneğ
 
 Flex'in bize kazandırdığı en güzel özelliklerden birisi de hizalama özellikleri. Burada anlatacağım konu `flex` ile `margin` tanımının `auto` değerinin birlikte kullanımı ile ortaya çıkan süper bir özellik.
 
-![flex ve margin auto](http://fatihhayrioglu.com/images/yatay-flex-auto-ornegi.png)
+![flex ve margin auto](https://fatihhayrioglu.com/images/yatay-flex-auto-ornegi.png)
 
 [zingat.com](https://zingat.com)'dan bir örnek ile bu konuyu anlatmaya başlıyayım. Yukarıda gördüğünüz sonucu normal float ile oluşturmak için bazı değişiklikler yapmak gerekiyor. Örneğin ikonları sahte elemanlarda kullanmak zorunda olmamız gibi. Flexi le bunu yapmanın kolay bir yolu var.
 
@@ -47,7 +47,7 @@ kısmıdır. Flex ile sıraladığımız menü elemanlarından twitter sınıfı
 
 Dikeyde benzer örnekler yapabiliriz. Zamanında uğraştığım için iyi biliyorum. livego'da çalışırken sol menü yapımında bu tip bir kod çok ihtiyaç duymuştum. Çok ciddi zamanımı almıştı sol ve sağ kolonlar.
 
-![livego flex ve margin auto](http://fatihhayrioglu.com/images/livegohome.jpg)
+![livego flex ve margin auto](https://fatihhayrioglu.com/images/livegohome.jpg)
 
 Şimdi aynı sonucu elde etmek sadece iki satır kod.
 

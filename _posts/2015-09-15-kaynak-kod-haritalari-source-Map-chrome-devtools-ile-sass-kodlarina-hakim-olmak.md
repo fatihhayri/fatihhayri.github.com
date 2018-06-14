@@ -50,10 +50,10 @@ Ben ilk baştan beri kaynak kod haritası desteğini sunan Chrome ile nasıl kul
 **1 - Chrome DevTools ayarları**
 Chrome DevTools'da Settings - General sekmesinde  “**Enable CSS source maps**” zaten seçili ( eskiden seçili gelmiyordu.) geliyor. “**Auto-reload generated CSS**” işretlememiz yeterli. Aşağıdaki hareketli gif'teki gibi.
 
-![enter image description here](http://fatihhayrioglu.com/images/devtools-source-map.gif)
+![enter image description here](https://fatihhayrioglu.com/images/devtools-source-map.gif)
 
 **2 - Sass'ı --watch ile çalıştırma**
-[İlk yazdığım Sass yazısında](http://fatihhayrioglu.com/sass-ile-dinamik-css-yazmak/) bahsettiğim komut satırından Sass'ı çalıştırma kısmındaki gibi.
+[İlk yazdığım Sass yazısında](https://fatihhayrioglu.com/sass-ile-dinamik-css-yazmak/) bahsettiğim komut satırından Sass'ı çalıştırma kısmındaki gibi.
 
 {% highlight bash %}
 sass --watch sass/deneme.sass:css/deneme.css
@@ -68,12 +68,12 @@ Chrome'un güzel özelliklerinden birisi çalışma alanı oluşturmak. Yakında
 
 DevTools'da Settings - Workspace sekmesinden **Folders** kısmından **Add folder...** tıklayarak proje dosyalarını seçelim. Chrome bizden ilgili klasör için yetki isteyecektir, izin verelim. 
 
-![enter image description here](http://fatihhayrioglu.com/images/devtools-calisma-alani.gif)
+![enter image description here](https://fatihhayrioglu.com/images/devtools-calisma-alani.gif)
 
 **4 - Son adım**
 Son adım olarak haritalanacak kaynak kod dosyasını seçmemiz gerekiyor. Çalışma alanımızdan **deneme.sass** dosyasına sağ tıklayıp çıkan menüden “**Map to network resource.**” seçeriz. Açılan menüden kendi dosyamızı seçeriz. Bundan sonra bir popup çıkıp yenileme istediğini bize bildirir. Evet deyip işi bitirelim.
 
-![enter image description here](http://fatihhayrioglu.com/images/devtools-map.gif)
+![enter image description here](https://fatihhayrioglu.com/images/devtools-map.gif)
 
 ## Şimdi hareket zamanı
 
@@ -81,7 +81,7 @@ Tüm bu işleri yaptıktan sonra herhangi bir tanımı tıklayarak kaynak koduna
 
 Mükemmel bir şey. 
 
-![enter image description here](http://fatihhayrioglu.com/images/devtools-map-end.gif)
+![enter image description here](https://fatihhayrioglu.com/images/devtools-map-end.gif)
 
 ## Sonuç 
 

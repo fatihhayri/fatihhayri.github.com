@@ -8,7 +8,7 @@ tags: before after ikon gölge
 
 :before ve :after sözde sınıfları tanımlandığı elemanla ilişkili ve alt eleman olarak eklenir, isimlerinden de anlaşılacağı gibi içeriğin başına ve sonuna eklenirler. Kullanım alanlarını gördükçe ne kadar faydalı seçiciler olduğunu daha iyi anlayacağız. 
 
-Bu makalede özellikle kullanım alanlarına değineceğim.  Daha önce bir çok sayfada kullandığım ve sitemde örneklerini verdiğim bu seçicileri önemine binaen daha detaylı anlatacağım.  [pseudo sınıfları ve pseudo elementleri](http://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/) yazımda anlatmıştım. Basit bir kullanımı var. 
+Bu makalede özellikle kullanım alanlarına değineceğim.  Daha önce bir çok sayfada kullandığım ve sitemde örneklerini verdiğim bu seçicileri önemine binaen daha detaylı anlatacağım.  [pseudo sınıfları ve pseudo elementleri](https://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/) yazımda anlatmıştım. Basit bir kullanımı var. 
 
 {% highlight css %}
 p.not:before { 
@@ -37,7 +37,7 @@ a:before {
 
 Tanımlanan ikonları konumlandırmak bu yöntem ile çok kolay oluyor.  
 
-Aynı yöntemle yazı tipi ikolnarıda eklenebilir. Yazı tipi ikonları kullanırken content kısmına ilgili karakter konulur. [http://fatihhayrioglu.com/font-face-yardimi-ile-ikon-eklemek-yeni-tl-sembolu-eklemek/](http://fatihhayrioglu.com/font-face-yardimi-ile-ikon-eklemek-yeni-tl-sembolu-eklemek/)
+Aynı yöntemle yazı tipi ikolnarıda eklenebilir. Yazı tipi ikonları kullanırken content kısmına ilgili karakter konulur. [https://fatihhayrioglu.com/font-face-yardimi-ile-ikon-eklemek-yeni-tl-sembolu-eklemek/](https://fatihhayrioglu.com/font-face-yardimi-ile-ikon-eklemek-yeni-tl-sembolu-eklemek/)
 
 ## clearfix
 
@@ -60,7 +60,7 @@ Bİr çok arayüz geliştiricinin hazır kod kütüphanesinde vardır bu kod. Ş
 
 ## Çoklu kenar kullanımı
 
-Daha önceki [çoklu kenar oluşturmak](http://fatihhayrioglu.com/coklu-kenar-cizgisiborder-kullanimi/) yazımdaki örnekte görebileceğimiz gibi.
+Daha önceki [çoklu kenar oluşturmak](https://fatihhayrioglu.com/coklu-kenar-cizgisiborder-kullanimi/) yazımdaki örnekte görebileceğimiz gibi.
 
 {% highlight css %}
 #cokluKenarCizgisi:before{
@@ -82,7 +82,7 @@ Kapsayıcı elemanın genişlik ve yüksekliğini alması için **position:absol
 
 ## CSS ile şekil eklemek 
 
-[CSS ile üçgen yapmak](http://fatihhayrioglu.com/css-ile-ucgen-ok-yapmak/) yazımızdaki örneği inceleyelim.
+[CSS ile üçgen yapmak](https://fatihhayrioglu.com/css-ile-ucgen-ok-yapmak/) yazımızdaki örneği inceleyelim.
 
 {% highlight css %}
 .konusma-balonu:after{

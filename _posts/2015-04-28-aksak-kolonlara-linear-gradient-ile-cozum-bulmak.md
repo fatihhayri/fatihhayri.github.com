@@ -7,11 +7,11 @@ tags: aksak kolon linear-gradient
 ---
 
 
-Daha önce kolon yüksekliklerini eşitlemek için [Aksak Kolonlar(Faux Column)](http://fatihhayrioglu.com/css-ile-web-sayfasi-olusturma-iii/) yazımda bir çözüm önerisi vardı. 
+Daha önce kolon yüksekliklerini eşitlemek için [Aksak Kolonlar(Faux Column)](https://fatihhayrioglu.com/css-ile-web-sayfasi-olusturma-iii/) yazımda bir çözüm önerisi vardı. 
 
 Bu çözümlere bir tane daha ekliyorum.
 
-[CSS Renk Geçişleri (Gradients)](http://fatihhayrioglu.com/css-renk-gecisleri-gradients/) yazısında renk geçişlerinden bahsetmiştik. **Renk geçişlerini tanımlarken genelde yüzdesel tanımlasak ta aslında piksel'de kullanabiliyoruz.** Bu kullanım bize aksak kolonların çözümünü sağlıyor. Peki renk geçişi diyorsun ama bize tek renkli ardalan renkleri lazım diye sorarsanız. Renk geçişinde ilk rengin bitişi ile diğer renge geçişin olduğu yerleri aynı durma noktası yaparsak ardalan rengi tek renk olur. Örnekten daha iyi anlayacağız. 
+[CSS Renk Geçişleri (Gradients)](https://fatihhayrioglu.com/css-renk-gecisleri-gradients/) yazısında renk geçişlerinden bahsetmiştik. **Renk geçişlerini tanımlarken genelde yüzdesel tanımlasak ta aslında piksel'de kullanabiliyoruz.** Bu kullanım bize aksak kolonların çözümünü sağlıyor. Peki renk geçişi diyorsun ama bize tek renkli ardalan renkleri lazım diye sorarsanız. Renk geçişinde ilk rengin bitişi ile diğer renge geçişin olduğu yerleri aynı durma noktası yaparsak ardalan rengi tek renk olur. Örnekten daha iyi anlayacağız. 
 
 <iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/ZGYqqY/?height=268&theme-id=13521' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
@@ -37,4 +37,4 @@ Kalın sağlıcakla.
 
  - [http://css-snippets.com/gradient-columns/](http://css-snippets.com/gradient-columns/)
  - [http://code.tutsplus.com/tutorials/quick-tip-mimic-equal-columns-with-css3-gradients--net-16310](http://code.tutsplus.com/tutorials/quick-tip-mimic-equal-columns-with-css3-gradients--net-16310)
- - [http://fatihhayrioglu.com/css-ile-web-sayfasi-olusturma-iii/](http://fatihhayrioglu.com/css-ile-web-sayfasi-olusturma-iii/)
+ - [https://fatihhayrioglu.com/css-ile-web-sayfasi-olusturma-iii/](https://fatihhayrioglu.com/css-ile-web-sayfasi-olusturma-iii/)

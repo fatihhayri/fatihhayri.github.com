@@ -6,7 +6,7 @@ Category: CSS, CSS3
 tags: CSS3, Animasyon, anahtar-kare
 ---
 
-Bir önceki yazımda <a href="http://fatihhayrioglu.com/css3-gecis-efektleri-transitions/">CSS3 geçiş efektlerini</a> anlatmıştım. CSS3 animasyon özellikleri geçiş efektlerine benzer özellikleri ve daha fazlasını içermektedir. Animasyon işleri ile daha önce uğraşanlar için çok tanıdık kodları var. CSS3 Animasyon özelliği; javascript veya flash olmadan bize animasyon yapma imkanı sağlamaktadır.
+Bir önceki yazımda <a href="https://fatihhayrioglu.com/css3-gecis-efektleri-transitions/">CSS3 geçiş efektlerini</a> anlatmıştım. CSS3 animasyon özellikleri geçiş efektlerine benzer özellikleri ve daha fazlasını içermektedir. Animasyon işleri ile daha önce uğraşanlar için çok tanıdık kodları var. CSS3 Animasyon özelliği; javascript veya flash olmadan bize animasyon yapma imkanı sağlamaktadır.
 
 Animasyon tanımlarında tanımlamalar ve zamanlama önceden yapılır sonra uygulanacak elemana tanımlanır.
 
@@ -115,7 +115,7 @@ Animasyonun 3 saniye devam edeceğini gösterir. Daha önce gördüğümüz tran
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
-Geçiş efektlerinde benzer diğer bir tanımı animation-timing-function tanımıdır.  <a href="http://fatihhayrioglu.com/css3-gecis-efektleri-transitions/">transition-timing-function</a> özelliğine benzer bir özelliktir.
+Geçiş efektlerinde benzer diğer bir tanımı animation-timing-function tanımıdır.  <a href="https://fatihhayrioglu.com/css3-gecis-efektleri-transitions/">transition-timing-function</a> özelliğine benzer bir özelliktir.
 
 {% highlight css %}
 div {

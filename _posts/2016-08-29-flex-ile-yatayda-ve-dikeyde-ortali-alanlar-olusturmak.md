@@ -6,7 +6,7 @@ Category: css
 tags: flexbox, ortalama
 ---
 
-Yaklaşık 6 sene önce bu başlığa yakın bir başlık ile bir makale yazmışım. [Yatay ve Dikeyde Ortalı Alanlar Oluşturmak](http://fatihhayrioglu.com/yatay-ve-dikeyde-ortali-alanlar-olusturmak/) yeni gelen özellikler ile bu kodu daha basit nasıl yapabilirim diye bakınırken [flexbox](http://fatihhayrioglu.com/yenilenmis-flex-modulu/) özelliği aklıma geldi. 
+Yaklaşık 6 sene önce bu başlığa yakın bir başlık ile bir makale yazmışım. [Yatay ve Dikeyde Ortalı Alanlar Oluşturmak](https://fatihhayrioglu.com/yatay-ve-dikeyde-ortali-alanlar-olusturmak/) yeni gelen özellikler ile bu kodu daha basit nasıl yapabilirim diye bakınırken [flexbox](https://fatihhayrioglu.com/yenilenmis-flex-modulu/) özelliği aklıma geldi. 
 
 Peki flexbox ile bu işi nasıl yaparım.
 

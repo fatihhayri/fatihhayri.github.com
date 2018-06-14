@@ -6,7 +6,7 @@ Category: nodejs
 tags: nodejs npm package.json
 ---
 
-![enter image description here](http://fatihhayrioglu.com/images/nodejs-npm.png)
+![enter image description here](https://fatihhayrioglu.com/images/nodejs-npm.png)
 {: .resimler-sagda}
 
 Arayüz geliştiricileri olarak yoğun bir şekilde javascript kullanıyoruz. Birçok javascript kütüphanesini kullanıyoruz, peki sunucu taraflı kodlama da javascript kullanılsa nasıl olur? Bu soruya cevap zaten "nodejs var" diyenlere aferin :D Peki ama "Nodejs sunucu taraflı javascript biz arayüz geliştiriyoruz ne işimiz olur?" demeyelim, okumaya devam.
@@ -47,7 +47,7 @@ npm init
 
 Komutu yardımıyla sorulan soralara cevap vererek de oluşturabiliriz. 
 
-![enter image description here](http://fatihhayrioglu.com/images/npm_init.gif)
+![enter image description here](https://fatihhayrioglu.com/images/npm_init.gif)
 
 Sırası ile bize; 
 
@@ -63,7 +63,7 @@ Sırası ile bize;
 
 sorularını soruyor. Kendi cevaplarımızı yazarak package.json dosyamızı oluştururuz. Bu yöntemi izlemek zorunda değiliz kendimizde bu dosyayı oluşturabiliriz. Standart bir json dosyası.
 
-![enter image description here](http://fatihhayrioglu.com/images/npm_init_sonuc.gif)
+![enter image description here](https://fatihhayrioglu.com/images/npm_init_sonuc.gif)
 
 >  İzin sorunları yaşadığınız durumlarda kodlarınızın başına **sudo** komutunu eklemeyi unutmayın. (Mac ve Linux kullanıcıları için)
 
@@ -137,7 +137,7 @@ npm outdated
 
 Komutu ile güncellemesi gelen modüllerin adı, mevcut sürümü, istenen sürümü, son sürümü ve yer bilgilerini verir.
 
-![enter image description here](http://fatihhayrioglu.com/images/npm_outdated.gif)
+![enter image description here](https://fatihhayrioglu.com/images/npm_outdated.gif)
 
 Güncellemek istediğimiz modülü
 

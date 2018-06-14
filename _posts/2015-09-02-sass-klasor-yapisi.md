@@ -6,7 +6,7 @@ Category: css
 tags: sass css-önişlemcileri klasör-yapısı
 ---
 
-[Bir önceki yazımda](http://fatihhayrioglu.com/sass-ile-dinamik-css-yazmak/) Sass'a giriş yapmıştık. Bu makale de klasör yapımızın Sass sonrası nasıl olması gerektiğini gösterelim. 
+[Bir önceki yazımda](https://fatihhayrioglu.com/sass-ile-dinamik-css-yazmak/) Sass'a giriş yapmıştık. Bu makale de klasör yapımızın Sass sonrası nasıl olması gerektiğini gösterelim. 
 
 Klasör yapısını baştan ayarlamak her zaman iyidir. Her ne kadar ben burada bir yapı sunsam da klasör yapısı geliştiricinin kendi çalışma şartlarına göre esnetip yenilemesi gerekir.
 
@@ -16,7 +16,7 @@ Kalsör yapısına geçmeden önce CSS'den de bildiğimiz **import** kuralına d
 
 ## Sass'da @import kullanımı
 
-CSS'de de diğer css [dosyalarını içeri aktarmak için kullandığımız](http://fatihhayrioglu.com/cssi-web-sayfalarina-eklemek/) bu yöntem benzer amaçla ve bazı artı eklemelerle Sass'da da var. CSS'de @import yavaşlığa neden olduğundan dolayı pek tercih edilmezdi. Ancak bu sorunlar Sass'ta olmadığı için burada kullanmakta bir mahsur yok.
+CSS'de de diğer css [dosyalarını içeri aktarmak için kullandığımız](https://fatihhayrioglu.com/cssi-web-sayfalarina-eklemek/) bu yöntem benzer amaçla ve bazı artı eklemelerle Sass'da da var. CSS'de @import yavaşlığa neden olduğundan dolayı pek tercih edilmezdi. Ancak bu sorunlar Sass'ta olmadığı için burada kullanmakta bir mahsur yok.
 
 Sass import'ta dosya isminin tamamını yazmaya gerek yoktur. Örneğin **main.sass** dosyasını import ederken 
 
@@ -116,7 +116,7 @@ Küçük projelerde dosyalar içinde birleştirdiğimiz birimleri tek tek ayrı 
 
 **pages:** Sayfaların her biri için oluşturulan sayfaya özel kodların bulunduğu sass dosyaları içerir. Örneğin anasayfa (home.sass), hakkımızda, iletişim vs.
 
-**vendors**: Kullandığımız eklentilerin sass dosyalarını koyduğumuz klasör. Burada şöyle bir durum var. Eğer eklentileri [bower](http://fatihhayrioglu.com/arayuz-gelistiriciler-icin-paket-yonetimi-bower/) ile ekliyorsak eklentileri **_bower_components** içindeki CSS dosyasını değiştirmeden kendi projemizde eklentinin CSS'lerini ezdiğimiz dosyayı barandırmak mantıklı olacaktır.
+**vendors**: Kullandığımız eklentilerin sass dosyalarını koyduğumuz klasör. Burada şöyle bir durum var. Eğer eklentileri [bower](https://fatihhayrioglu.com/arayuz-gelistiriciler-icin-paket-yonetimi-bower/) ile ekliyorsak eklentileri **_bower_components** içindeki CSS dosyasını değiştirmeden kendi projemizde eklentinin CSS'lerini ezdiğimiz dosyayı barandırmak mantıklı olacaktır.
 
 **main.sass**: Yukarıdaki tüm dosyaları içeren ana dosyadır. Bu dosya derlenerek tek bir css dosyasını oluşturur.
 

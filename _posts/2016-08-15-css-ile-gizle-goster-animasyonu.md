@@ -12,7 +12,7 @@ tags: transition, max-height
 
 Öncelikler ve ikinci sıraya düşenler için farklı çözümler oluşturuldu. Ben burada size daha önce bu işlemler için javascript ile yaptığımız çözümleri CSS ile yapmayı göstereceğim.
 
-CSS bize kullanıcı etkileşimini yakalamakta yardımcı oluyor. CSS3 öncesinde **:hover** ile kullanıcının faresinin imleci ile belirlediğimiz elemanın üzerine geldiğinde bir iş yapabiliyoruz. CSS3 sonrasında **:checked** veya **:target** ile kullanıcının tıklamlarında bir işlem yapabiliyoruz artık. [CSS3 Javascript’ten Rol (Ç)alıyor](http://fatihhayrioglu.com/css3-javascriptten-rol-caliyor/) yazımda bahsetmiştim. 
+CSS bize kullanıcı etkileşimini yakalamakta yardımcı oluyor. CSS3 öncesinde **:hover** ile kullanıcının faresinin imleci ile belirlediğimiz elemanın üzerine geldiğinde bir iş yapabiliyoruz. CSS3 sonrasında **:checked** veya **:target** ile kullanıcının tıklamlarında bir işlem yapabiliyoruz artık. [CSS3 Javascript’ten Rol (Ç)alıyor](https://fatihhayrioglu.com/css3-javascriptten-rol-caliyor/) yazımda bahsetmiştim. 
 
 Normal mantık olarak CSS ile gizle-göster işini yapmak için ilk akla gelen `display` veya `visibility` özelliği yardımı ile bu işi yapmak. Ancak her iki özelliği de kullanamıyoruz. Çünkü CSS bu elemanlara erişemiyorum diyor. Bizde bu nedenle başka çözümlere yöneliyoruz. `opacity` özelliğini kullanabiliriz. Veyahut `height` değerini kullanabiliriz. `height` değerinin şöyle bir dezavantajı var bir elemana `height` atadığınızda o elemanın yüksekliği o değere sabitlenir. Halbuki biz değişik içerikteki alanları gizle-göster yapabiliriz. Bunun için yardımımıza `max-height` özelliği yetişiyor.
 

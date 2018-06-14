@@ -47,7 +47,7 @@ Bir siteyi kodlarken artık arayüz geliştiricileri aşağıdaki listedeki işl
 Yukarıda saydığım ve saymayı unuttuğum görevler ile uğraşmak durmunda kalan arayüz geliştiricileri için işleri hızlandırma ihtiyacı doğdu. Bu ihtiyaçları karşılamak için farklı farklı çözümler çıktı. Aşağıda ben sizlere bu ihtiyaçları karşılamak için oluşturulan çözümleri listeleyeceğim ve kısaca bilgilendireceğim.
 
  - **Sürüm Kontrol Sistemleri**
-     - [Git](http://git-scm.com/) - Git sayfama [göz atın](http://fatihhayrioglu.com/git/)
+     - [Git](http://git-scm.com/) - Git sayfama [göz atın](https://fatihhayrioglu.com/git/)
      - [SVN](http://subversion.apache.org/)
  - **İskelet Oluşturma** (Scaffolding)
  Genellikle es geçilen bu kısım aslında web site/uygulamasının en önemli yerlerinden biridir. Bizim için hazır iskelet yapısı oluşturmaya yarayan araçlar;
@@ -76,7 +76,7 @@ Arayüz geliştiricileri uygulama çatıları, eklentiler ve uygulama geliştirm
  Statik dosyalara(HTML, CSS) dinamizim kazandıran ve işaretleme dillerini işaretlerden kurtaran araçlar olarak özetleyebiliriz bu araçları;
      - [Sass](http://sass-lang.com/) (CSS) 
      - [Less](http://lesscss.org/) (CSS) 
-     - [Stylus](http://learnboost.github.io/stylus/) (CSS) Stylus hakkındaki [benim yazım](http://fatihhayrioglu.com/stylus-ile-dinamik-css-yazmak/)
+     - [Stylus](http://learnboost.github.io/stylus/) (CSS) Stylus hakkındaki [benim yazım](https://fatihhayrioglu.com/stylus-ile-dinamik-css-yazmak/)
      - [Haml](http://haml.info/tutorial.html) (HTML) 
      - [Jade](http://jade-lang.com/) (HTML)
      - [Slim](http://slim-lang.com/) (HTML)

@@ -246,9 +246,9 @@ Date: 2006-08-05 22:06
     -   [CSS3 calc() değeri][]
     -   [CSS3 Esnek Kutu Yerleşimi(Flexible Box Layout)][]
         -   [
-Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](http://fatihhayrioglu.com/flex-ile-yatayda-ve-dikeyde-ortali-alanlar-olusturmak/)
-        -   [Flex'ın gizli kalmış güzel bir özelliği](http://fatihhayrioglu.com/flexin-gizli-kalmis-guzel-bir-ozelligi/)
-        -   [Flex ile sayfa dibine yapışık alt alanlar (sticky footer) yapmak](http://fatihhayrioglu.com/flex-ile-sayfa-dibine-yapisik-alt-alanlar-sticky-footer-yapmak/)
+Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](https://fatihhayrioglu.com/flex-ile-yatayda-ve-dikeyde-ortali-alanlar-olusturmak/)
+        -   [Flex'ın gizli kalmış güzel bir özelliği](https://fatihhayrioglu.com/flexin-gizli-kalmis-guzel-bir-ozelligi/)
+        -   [Flex ile sayfa dibine yapışık alt alanlar (sticky footer) yapmak](https://fatihhayrioglu.com/flex-ile-sayfa-dibine-yapisik-alt-alanlar-sticky-footer-yapmak/)
         -   [Flex ile  100% Genişlik ve 100% Yükseklite Sayfa İskeleti Hazırlama](/flex-ile-100-genislik-ve-100-yukseklite-sayfa-iskeleti-hazirlama/)
     -   [CSS3 pointer-events özelliği][]
     -   [CSS3 Dönüştürme Özellikleri(Transforms) ve 2B Dönüştürme][]

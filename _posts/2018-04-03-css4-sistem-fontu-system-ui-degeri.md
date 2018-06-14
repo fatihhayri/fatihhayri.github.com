@@ -12,7 +12,7 @@ Site hızının gittikçe önemini arttırmasıyla birlikte web sitesi geliştir
 
 Yazı tipi seçimi ilk başlarda çok zor bir tercih değildi. 
 
-![Dreamweaver yazı tipi ekleme](http://fatihhayrioglu.com/images/dw_format_text-min.jpg)
+![Dreamweaver yazı tipi ekleme](https://fatihhayrioglu.com/images/dw_format_text-min.jpg)
 
 Yukarıdaki ekran eskilerden DW'da yazı tipi seçim ekranı. Tanım şu şekildeydi.
 
@@ -20,11 +20,11 @@ Yukarıdaki ekran eskilerden DW'da yazı tipi seçim ekranı. Tanım şu şekild
 font-family: Arial, Helvetica, sans-serif;
 {% endhighlight %}
 
-> Burada birincil fontumuz Arial’dir alternatifi Helvatica ve yazı tipi ailesi sans-serif olduğunu belirtiyoruz. Normalde sadece Arial yazmamız da yeterlidir, ancak kullanıcının bilgisayarında bu yazı tipinin olmaması durumu düşünülerek alternatif yazı tipi ve yazı tipi ailesi yazılmıştır. [http://fatihhayrioglu.com/css-ve-tipografi/](http://fatihhayrioglu.com/css-ve-tipografi/)
+> Burada birincil fontumuz Arial’dir alternatifi Helvatica ve yazı tipi ailesi sans-serif olduğunu belirtiyoruz. Normalde sadece Arial yazmamız da yeterlidir, ancak kullanıcının bilgisayarında bu yazı tipinin olmaması durumu düşünülerek alternatif yazı tipi ve yazı tipi ailesi yazılmıştır. [https://fatihhayrioglu.com/css-ve-tipografi/](https://fatihhayrioglu.com/css-ve-tipografi/)
 
 Aynı yazıda farklı yazı tiplerini kullanmak için Adobe Flash yardımıyla sFIR yöntemini kullanabilirsiniz diye bir paragrafta var. Evet o zamanlar farklı yazı tipini kullanmak için genelde resim, sFIR veya cufon gibi dolambaçlı yollar kullanırdık.
 
-Sonra [font-face](http://fatihhayrioglu.com/woff2-ve-font-face-tanimini-iki-satira-indirmek/) tanımı çıktı ve artık kullanıcının bilgisayarına istediğimiz yazı tipini ekleyebiliyoruz. Sonrasında kullanılan yazı tipi çeşitleri artmaya başladı ve web için yazı tipi çeşidi olan woff yazı tipi ve sonrasında ikinci sürümü olan woff2 çıktı. woff2 ile birlikte özel yazı tipleri daha optimize. Ama bu bile yetmeyebiliyor.
+Sonra [font-face](https://fatihhayrioglu.com/woff2-ve-font-face-tanimini-iki-satira-indirmek/) tanımı çıktı ve artık kullanıcının bilgisayarına istediğimiz yazı tipini ekleyebiliyoruz. Sonrasında kullanılan yazı tipi çeşitleri artmaya başladı ve web için yazı tipi çeşidi olan woff yazı tipi ve sonrasında ikinci sürümü olan woff2 çıktı. woff2 ile birlikte özel yazı tipleri daha optimize. Ama bu bile yetmeyebiliyor.
 
 Makalenin başında da yazdığım gibi her kaynak kullanılırken iki kere düşünülüyor diye. İşte bir çok popüler site GitHub, Wordpress, Bootstrap, Medium, Ghost gibi siteler özel yazı tipi kullanımını sorguladı ve sistem yazı tipi dediğimiz kullanıcının **aracında** kullandığı yazı tiplerine yöneldi. Dikkat ediyorsanız bilgisayarındaki demedim, çünkü zaman değişti ve bir çok araçtan internete erişim var artık. Yazımın başında verdiğim 
 

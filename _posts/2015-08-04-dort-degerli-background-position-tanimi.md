@@ -8,7 +8,7 @@ tags: css background-position right bottom css3
 
 CSS'in devamlı geliştirilmekte olmasının avantajları ve dezavantajları var. Dezavantajlara flex özelliğinin 3 kere değişmesini gösterebiliriz. Avantajları çok tabi. Bunlardan bir tanesine örnek bu makalenin konusudur. Artalan resimlerinin konumlandırmasında bazı sorunlar vardı. Bu sorunları görerek mevcut tanım geliştirildi.
 
-Daha önce anlattığımız [artalan tanımına](http://fatihhayrioglu.com/hizli-css-referansi/) artı özellikler eklendi. 
+Daha önce anlattığımız [artalan tanımına](https://fatihhayrioglu.com/hizli-css-referansi/) artı özellikler eklendi. 
 
 {% highlight css %}
 div {
@@ -59,8 +59,8 @@ Kalın sağlıcakla.
 - [https://css-tricks.com/almanac/properties/b/background-position/](https://css-tricks.com/almanac/properties/b/background-position/)
 - [http://stackoverflow.com/a/16528840/296373](http://stackoverflow.com/a/16528840/296373)
 
-[firefox]: http://fatihhayrioglu.com//images/ff.png
-[chrome]: http://fatihhayrioglu.com//images/ch.png
-[explorer]: http://fatihhayrioglu.com//images/ie.png
-[msafari]:http://fatihhayrioglu.com//images/sm.png
-[android]:http://fatihhayrioglu.com//images/an.png
+[firefox]: https://fatihhayrioglu.com//images/ff.png
+[chrome]: https://fatihhayrioglu.com//images/ch.png
+[explorer]: https://fatihhayrioglu.com//images/ie.png
+[msafari]:https://fatihhayrioglu.com//images/sm.png
+[android]:https://fatihhayrioglu.com//images/an.png

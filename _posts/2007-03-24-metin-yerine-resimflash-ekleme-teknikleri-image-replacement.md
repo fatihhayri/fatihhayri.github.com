@@ -307,7 +307,7 @@ başlıklar için kullanmak gayet mantıklı. Takdir ve seçim sizin.
 
   [tıklayınız.]: /dokumanlar/birinci_teknik.html
   [1]: /dokumanlar/ikinci_teknik.html
-  [CSS ile Menü Oluşturmak V - Resimli Menüler]: http://fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/
+  [CSS ile Menü Oluşturmak V - Resimli Menüler]: https://fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/
   [2]: /dokumanlar/ucuncu_teknik.html
   [Mehmet Doğan]: http://www.altiustutasarim.com/arsiv/2005/03/css_fir_teknigi.php
   [Mike Davidson]: http://www.mikeindustries.com

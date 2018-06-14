@@ -285,7 +285,7 @@ a:link, a:visited, a:active {
 Bu özellik CSS2 ile birlikte geldi ancak internet tarayıcıları bu
 özelliği desteklemeyince CSS2.1 kaldırıldı. CSS3 ile birlikte tekrar geldi.
 
-[http://fatihhayrioglu.com/css-ile-metinlere-golge-vermek/](http://fatihhayrioglu.com/css-ile-metinlere-golge-vermek/)
+[https://fatihhayrioglu.com/css-ile-metinlere-golge-vermek/](https://fatihhayrioglu.com/css-ile-metinlere-golge-vermek/)
 
   [<uzunluk değeri >]: http://www.fatihhayrioglu.com/?p=95
 
