@@ -178,7 +178,7 @@ Internet Explorer 7/6/5.5, Opera 9.6 ile test edilmiştir.
 -   [http://www.javascriptkit.com/dhtmltutors/csshacks2.shtml][]
 -   [http://vikaskhera.wordpress.com/2008/08/02/css-hacks-browser-specific-selectors/][]
     (****)
--   [http://centricle.com/ref/css/filters/][] Önemli bir liste(****)
+-   http://centricle.com/ref/css/filters
 -   [http://www.siberkultur.com/?q=css-hackleri][] (***)
 -   [http://www.sitepoint.com/article/browser-specific-css-hacks/][]
     (***) sürümler eski
@@ -207,8 +207,6 @@ Internet Explorer 7/6/5.5, Opera 9.6 ile test edilmiştir.
     "http://www.javascriptkit.com/dhtmltutors/csshacks2.shtml"
   [http://vikaskhera.wordpress.com/2008/08/02/css-hacks-browser-specific-selectors/]: http://vikaskhera.wordpress.com/2008/08/02/css-hacks-browser-specific-selectors/
     "http://vikaskhera.wordpress.com/2008/08/02/css-hacks-browser-specific-selectors/"
-  [http://centricle.com/ref/css/filters/]: http://centricle.com/ref/css/filters/
-    "http://centricle.com/ref/css/filters/"
   [http://www.siberkultur.com/?q=css-hackleri]: http://www.siberkultur.com/?q=css-hackleri
     "http://www.siberkultur.com/?q=css-hackleri"
   [http://www.sitepoint.com/article/browser-specific-css-hacks/]: http://www.sitepoint.com/article/browser-specific-css-hacks/

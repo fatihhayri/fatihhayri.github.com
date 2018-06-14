@@ -17,7 +17,7 @@ tags: .net, CSS, google, Haberler, Javascript, jquery, table, WordPress
     konuşma metinlerini takip etmesini sağlayan, koca puntolarla
     yazılmış metnin yavaş yavaş aktığı ekran) javascript ile yapmışlar.
     Basit ama sunumlarda yardımcı olabilir. [Bağlantı][1]
--   ".NET Framework 3.5 açık kaynak kodları karşınızda!" [Bağlantı][2]
+-   ".NET Framework 3.5 açık kaynak kodları karşınızda!"
 -   Eric Meyer css başlangıç dosyasını yenilemiş. [Bağlantı][3]
 -   Google grafik üreteci için çevrimiçi araç. Çok güzel. [Bağlantı][4]
 -   CSS ile geçiş efektli yazılar hazırlamak. [Bağlantı][5]
@@ -33,8 +33,6 @@ tags: .net, CSS, google, Haberler, Javascript, jquery, table, WordPress
   [Bağlantı]: http://p.sohei.org/jquery-plugins/tablehover/
     "hover efektikli tablolar"
   [1]: http://www.cueprompter.com/ "Prompter"
-  [2]: http://daron.yondem.com/tr/PermaLink.aspx?guid=d23bbb25-5fdf-4599-824a-cb8f8931fa3d
-    "açık kaynak .ner framework"
   [3]: http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
     "css başlangıç dosyası"
   [4]: http://almaer.com/chartmaker/ "googlechart aracı"

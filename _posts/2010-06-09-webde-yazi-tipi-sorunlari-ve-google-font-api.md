@@ -96,7 +96,7 @@ istemediği bir durum. Konu hakkında farklı tarayıcılarda farklı
 sorunlarda var.
 
 İşte bu noktada Google her zaman ki gibi web mecrasının geliştirmek ve
-hızlandırmak konusundaki çabaları kendini gösterdi ve [Google Font API][] aracını bizlerin kullanımına sundu.
+hızlandırmak konusundaki çabaları kendini gösterdi ve [Google Font][] aracını bizlerin kullanımına sundu.
 
 Peki bu araç ne işimize yarayacak? Bu araç sayesinde ortak bir yazı tipi
 havuzu oluşturulmuş olacak. Ayrıca bir çok site tarafından kullanılınca
@@ -147,8 +147,8 @@ Kalın Sağlıcakla
   [2]: /images/anti_aliasing.gif
   [-webkit-font-smoothing]: http://maxvoltar.com/archive/-webkit-font-smoothing
     "-webkit-font-smoothing"
-  [Google Font API]: http://code.google.com/intl/tr-TR/apis/webfonts/
-    "Google Font API"
+  [Google Font]: https://fonts.google.com/
+    "Google Font"
   [http://www.ozdtasarim.com/blog/googledan-font-face-hizmeti-google-font-api.html]: http://www.ozdtasarim.com/blog/googledan-font-face-hizmeti-google-font-api.html
     "http://www.ozdtasarim.com/blog/googledan-font-face-hizmeti-google-font-api.html"
   [http://code.google.com/apis/webfonts/docs/getting_started.html]: http://code.google.com/apis/webfonts/docs/getting_started.html

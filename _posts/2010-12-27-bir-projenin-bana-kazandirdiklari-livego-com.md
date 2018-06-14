@@ -97,7 +97,6 @@ Türkiye’de umarım onlarda bilgilerini bizlerle paylaşırlar.
 
   [100]: /images/liveGO_white_72dpi_300px.jpg
   [messengerfx.com]: http://messengerfx.com
-  [www.livego.com]: http://www.livego.com
   [CSS ile metinlere gölge vermek]: http://www.fatihhayrioglu.com/css-ile-metinlere-golge-vermek/
   [İE kalıtsal margin sorunu: form elementleri ve hasLayout]: http://www.fatihhayrioglu.com/ie-kalitsal-margin-sorunu-form-elementleri-ve-haslayout/
   [ie6/7′da postion:relative Uygulanmış Elemanlarda z-index Sorunu]: http://www.fatihhayrioglu.com/ie67da-postionrelative-uygulanmis-elemanlarda-z-index-sorunu/

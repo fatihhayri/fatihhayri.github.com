@@ -89,7 +89,7 @@ $("#foo > div").length
 jQuery'nini bir çok özelliği var ve bunları aklımızda tutma imkanımız
 yok. Bir kopya kağıdı işimize yaraya bilir.
 
-[http://www.futurecolors.ru/jquery/][]
+-http://www.futurecolors.ru/jquery/-
 
 Burada son sürümün kopya kağıdı mevcut. Bende css3 özelliklerini
 kullanarak biraz renklendirdim. [Benim renklendirdiğim][](CSS3 içerir,
@@ -114,7 +114,7 @@ $("#myselect option:eq(2)").attr("selected", "selected");
 
 ## Kaynaklar
 
--   [http://blog.kenmoredesign.com/2009/02/02/useful-jquery-snippets/][]
+-   http://blog.kenmoredesign.com/2009/02/02/useful-jquery-snippets
 -   [http://tympanus.net/codrops/2010/01/07/some-useful-javascript-jquery-snippets-part-2/][]
 -   [http://www.catswhocode.com/blog/10-jquery-snippets-for-efficient-developers][]
 -   [http://tympanus.net/codrops/2010/01/08/some-useful-javascript-jquery-snippets-part-3/][]
@@ -122,9 +122,7 @@ $("#myselect option:eq(2)").attr("selected", "selected");
 
   [Jquery ipuçları - 1]: http://www.fatihhayrioglu.com/jquery-ipuclari/
   [Jquery ipuçları - 2]: http://www.fatihhayrioglu.com/jquery-ipuclari-2/
-  [http://www.futurecolors.ru/jquery/]: http://www.futurecolors.ru/jquery/
   [Benim renklendirdiğim]: /dokumanlar/jQuery14.htm
-  [http://blog.kenmoredesign.com/2009/02/02/useful-jquery-snippets/]: http://blog.kenmoredesign.com/2009/02/02/useful-jquery-snippets/
   [http://tympanus.net/codrops/2010/01/07/some-useful-javascript-jquery-snippets-part-2/]: http://tympanus.net/codrops/2010/01/07/some-useful-javascript-jquery-snippets-part-2/
   [http://www.catswhocode.com/blog/10-jquery-snippets-for-efficient-developers]: http://www.catswhocode.com/blog/10-jquery-snippets-for-efficient-developers
   [http://tympanus.net/codrops/2010/01/08/some-useful-javascript-jquery-snippets-part-3/]: http://tympanus.net/codrops/2010/01/08/some-useful-javascript-jquery-snippets-part-3/

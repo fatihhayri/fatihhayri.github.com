@@ -7,7 +7,7 @@ tags: Ajax, CSS, Haberler, html, Javascript, web2.0
 ---
 
 -   CSS ile form yapmak hakkında güzel bir makale. [Link][]
--   CSS ile değişik boyutlara uyarlanabilen bir buton örneği. [Link][1]
+-   -CSS ile değişik boyutlara uyarlanabilen bir buton örneği-
 -   Iphone uygulama olarak web2.0 yani web üzerinden uygulama
     çalıştıracakmış. Peki nasıl uygulama geliştireceğiz? [Link][2]
 -   Google FeedBurner'ı aldı ilk icraatı Pro paketeni ücretsiz yapmak
@@ -20,8 +20,6 @@ tags: Ajax, CSS, Haberler, html, Javascript, web2.0
 
 
   [Link]: http://www.uie.com/articles/web_forms/ "Link"
-  [1]: http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors
-    "Link"
   [2]: http://developer.apple.com/iphone/designingcontent.html "Link"
   [3]: http://googlesystem.blogspot.com/2007/07/google-makes-feedburner-pro-free.html
     "Link"

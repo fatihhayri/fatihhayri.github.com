@@ -113,7 +113,7 @@ Bu arada FireBug 1.3 çalışmalarına başlanmış bile.
 -   [http://www.ajaxonomy.com/2008/javascript/firebug-12-released][]
 -   [http://ajaxian.com/archives/firebug-12-the-final-release-is-out-there][]
 -   [http://ostatic.com/171732-blog/firebug-group-releases-1-2][]
--   [http://justtalkaboutweb.com/2008/04/09/firebug-12-works-with-firefox-3-beta-5/][]
+-   http://justtalkaboutweb.com/2008/04/09/firebug-12-works-with-firefox-3-beta-5
 
 
   [100]: /images/firebug_12.jpg "FireBug"
@@ -136,4 +136,3 @@ Bu arada FireBug 1.3 çalışmalarına başlanmış bile.
   [http://www.ajaxonomy.com/2008/javascript/firebug-12-released]: http://www.ajaxonomy.com/2008/javascript/firebug-12-released
   [http://ajaxian.com/archives/firebug-12-the-final-release-is-out-there]: http://ajaxian.com/archives/firebug-12-the-final-release-is-out-there
   [http://ostatic.com/171732-blog/firebug-group-releases-1-2]: http://ostatic.com/171732-blog/firebug-group-releases-1-2
-  [http://justtalkaboutweb.com/2008/04/09/firebug-12-works-with-firefox-3-beta-5/]: http://justtalkaboutweb.com/2008/04/09/firebug-12-works-with-firefox-3-beta-5/

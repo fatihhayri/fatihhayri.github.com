@@ -407,18 +407,18 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
 ## Kaynaklar
 
 -   [http://www.smashingmagazine.com/2009/11/18/designing-css-buttons-techniques-and-resources/][]
--   [http://www.monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors][](iyi)
+-   http://www.monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors
 -   [http://www.smashingmagazine.com/2009/06/03/9-crucial-ui-features-of-social-media-and-networking-sites/][] (genel anlamı)
 -   [http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/][]
 -   [http://particletree.com/features/rediscovering-the-button-element/][] (button elemanı hakkında)
 -   [http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/][] (güzel)
 -   [http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors/][]
--   [http://blog.anomalyinnovations.com/2010/03/creating-a-realistic-looking-button-with-css3/][]
+-   http://blog.anomalyinnovations.com/2010/03/creating-a-realistic-looking-button-with-css3
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/][]
 -   [http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/][]
 -   [http://codecanyon.net/item/fancy-2-line-css-buttons/109049][]
 -   [http://codecanyon.net/item/css3-buttons/109193][]
--   [http://vandelaydesign.com/blog/galleries/button-design-showcase/][]
+-   http://vandelaydesign.com/blog/galleries/button-design-showcase
 -   [http://www.leemunroe.com/call-to-action-buttons/][]
 -   [http://www.uxbooth.com/blog/good-call-to-action-buttons/][] (tasarımda dahil)
 -   [http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/][]
@@ -428,13 +428,12 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
 -   [http://articles.techrepublic.com.com/5100-10878_11-5323375.html][]
 -   [http://www.thesitewizard.com/css/3d-buttons.shtml][]
 -   [http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm][]
--   [http://cssglobe.com/post/1614/4-uber-cool-css-techniques-for-links][]
 -   [http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/][]
 -   [http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/][]
 -   [http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx][]
 -   [http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/][]
 -   [http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/][]
--   [http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors][]
+-   http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors
 -   [http://blog.typekit.com/2011/02/10/type-study-an-all-css-button/][]
 
   [100]: /images/csss_buton_01.gif
@@ -455,18 +454,15 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
   [http://speckyboy.com/2010/02/15/20-css3-tutorials-and-techiques-for-creating-buttons/]: http://speckyboy.com/2010/02/15/20-css3-tutorials-and-techiques-for-creating-buttons/
   [http://www.smileycat.com/design_elements/buttons/#002024]: http://www.smileycat.com/design_elements/buttons/#002024
   [http://www.smashingmagazine.com/2009/11/18/designing-css-buttons-techniques-and-resources/]: http://www.smashingmagazine.com/2009/11/18/designing-css-buttons-techniques-and-resources/
-  [http://www.monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors]: http://www.monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors
   [http://www.smashingmagazine.com/2009/06/03/9-crucial-ui-features-of-social-media-and-networking-sites/]: http://www.smashingmagazine.com/2009/06/03/9-crucial-ui-features-of-social-media-and-networking-sites/
   [http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/]: http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/
   [http://particletree.com/features/rediscovering-the-button-element/]: http://particletree.com/features/rediscovering-the-button-element/
   [http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/]: http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/
   [http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors/]: http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors/
-  [http://blog.anomalyinnovations.com/2010/03/creating-a-realistic-looking-button-with-css3/]: http://blog.anomalyinnovations.com/2010/03/creating-a-realistic-looking-button-with-css3/
   [http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/]: http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/
   [http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/]: http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/
   [http://codecanyon.net/item/fancy-2-line-css-buttons/109049]: http://codecanyon.net/item/fancy-2-line-css-buttons/109049
   [http://codecanyon.net/item/css3-buttons/109193]: http://codecanyon.net/item/css3-buttons/109193
-  [http://vandelaydesign.com/blog/galleries/button-design-showcase/]: http://vandelaydesign.com/blog/galleries/button-design-showcase/
   [http://www.leemunroe.com/call-to-action-buttons/]: http://www.leemunroe.com/call-to-action-buttons/
   [http://www.uxbooth.com/blog/good-call-to-action-buttons/]: http://www.uxbooth.com/blog/good-call-to-action-buttons/
   [http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/]: http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/
@@ -475,11 +471,9 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
   [http://articles.techrepublic.com.com/5100-10878_11-5323375.html]: http://articles.techrepublic.com.com/5100-10878_11-5323375.html
   [http://www.thesitewizard.com/css/3d-buttons.shtml]: http://www.thesitewizard.com/css/3d-buttons.shtml
   [http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm]: http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm
-  [http://cssglobe.com/post/1614/4-uber-cool-css-techniques-for-links]: http://cssglobe.com/post/1614/4-uber-cool-css-techniques-for-links
   [http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/]: http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/
   [http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/]: http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/
   [http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx]: http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx
   [http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/]: http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/
   [http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/]: http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/
-  [http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors]: http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors
   [http://blog.typekit.com/2011/02/10/type-study-an-all-css-button/]: http://blog.typekit.com/2011/02/10/type-study-an-all-css-button/

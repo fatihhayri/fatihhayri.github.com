@@ -115,9 +115,9 @@ test edilmiştir.
 
 ## Kaynaklar
 
--   [http://cssglobe.com/post/1468/pure-css-animated-progress-bar][]
+-   http://cssglobe.com/post/1468/pure-css-animated-progress-bar
 -   [http://pootato.org/tutorials/css/css-progress-bar/][]
--   [http://www.barenakedapp.com/the-design/displaying-percentages][]
+-   http://www.barenakedapp.com/the-design/displaying-percentages
 -   [http://www.webappers.com/2007/07/31/webappers-simple-ajax-progress-bar-with-css/][]
 -   http://mattberseth.com/blog/2008/07/jqueryui_progressbar_widget.html
 -   [http://www.dmry.net/css-ile-basit-bir-ilerleme-durum-cubugu-yapimi][]
@@ -131,8 +131,6 @@ test edilmiştir.
   [%56]: yuzde_cubugu.gif
   [anket sonuç ekranı]: /images/anket_sonuc_ekrani.gif
   [tıklayınız.]: /dokumanlar/yuzde_cubugu.html
-  [http://cssglobe.com/post/1468/pure-css-animated-progress-bar]: http://cssglobe.com/post/1468/pure-css-animated-progress-bar
   [http://pootato.org/tutorials/css/css-progress-bar/]: http://pootato.org/tutorials/css/css-progress-bar/
-  [http://www.barenakedapp.com/the-design/displaying-percentages]: http://www.barenakedapp.com/the-design/displaying-percentages
   [http://www.webappers.com/2007/07/31/webappers-simple-ajax-progress-bar-with-css/]: http://www.webappers.com/2007/07/31/webappers-simple-ajax-progress-bar-with-css/
   [http://www.dmry.net/css-ile-basit-bir-ilerleme-durum-cubugu-yapimi]: http://www.dmry.net/css-ile-basit-bir-ilerleme-durum-cubugu-yapimi

@@ -31,8 +31,7 @@ olunmadığım' İddia etmeye devam etti... Zavallı Fatma'lar! Cezayir
 Savaşı'nın sürdüğü yıllar boyunca, terör vebasının gerçek kurbanı
 oldular. Yumuşak huylu, ağırbaşlı, neşeli, kınalı, gönül okşayıcı zavaHı
 genç kadınlar; çocukluğumda beni seven ilk kadıniar. En m saftaydılar,
-evet..." Ayrıntılı bilgi için [tıklayınız.][]
+evet..."
 
   [Bir Fransız yalanı]: /images/bir_fransiz_yalani-90x150.jpg
     "Bir Fransız yalanı"
-  [tıklayınız.]: http://www.tumkitaplar.com/kitap/index.pl?kitap=83219

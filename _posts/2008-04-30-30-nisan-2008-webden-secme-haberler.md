@@ -25,7 +25,7 @@ tags: adım adım kodlama, arama motoru, CSS maskeleme, css teknikleri, Dragon F
     güzel örnekler. Bu arada bende değiştirmeyi düşünüyordum.
     [Bağlantı][8]
 -   Adım adım web sitesi kodlama. [Bağlantı][9]
--   4 adet güzel CSS tekniği. [Bağlantı][10]
+-   -4 adet güzel CSS tekniği-
 -   30 adet güzel css kodu. [Bağlantı][11]
 -   Google Dokümanlara CSS düzenleme seçeneği eklemiş. [Bağlantı][12]
 -   Efektif web sayfaları hazırlamak için 5 önemli bilgi. [Bağlantı][13]
@@ -47,8 +47,6 @@ tags: adım adım kodlama, arama motoru, CSS maskeleme, css teknikleri, Dragon F
   [8]: http://www.templamatic.com/blog.asp?BlogID=21 "tarih alanı"
   [9]: http://nettuts.com/site-builds/build-a-sleek-portfolio-site-from-scratch/
     "adım adım web sitesi kodlama"
-  [10]: http://www.cssglobe.com/post/1614/4-uber-cool-css-techniques-for-links
-    "css tekniği"
   [11]: http://sixrevisions.com/css/30_css_techniques_examples
     "css teknikleri"
   [12]: http://googlesystem.blogspot.com/2008/04/new-in-google-docs-insert-videos-edit.html

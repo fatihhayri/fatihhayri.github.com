@@ -139,7 +139,7 @@ yumuşatması güzel. Background resimleri ile iyi çalışıyor, ancak CSS3
 ile olan uygulamalarda sorun çıkarıyor. CSS3 border-radius destekleyen
 tarayıcı kontrolü yapmıyorlar ve fazladan yüklenmeye neden oluyorlar.
 
-[Nifty Corners][] ve [jquery Corner][]
+[Nifty Corners][]
 
 Köşe yumuşatması güzel değil. Yuvarlak kenar için üretilen kodda
 gereksiz bir çok eleman var. Pek önerilebilecek bir çözüm değil.
@@ -224,7 +224,6 @@ sitesinde olduğu gibi.)
   [Curvy Corners]: http://www.curvycorners.net/
   [jQuery Plugin Curvy Corners]: http://blue-anvil.com/jquerycurvycorners/test.html
   [Nifty Corners]: http://www.html.it/articoli/niftycube/index.html
-  [jquery Corner]: http://www.methvin.com/jquery/jq-corner-demo.html
   [HTML Remix]: http://www.htmlremix.com/
   [css3pie]: http://css3pie.com/ "css3pie"
   [http://webdesignernotebook.com/css/an-ode-to-border-radius/]: http://webdesignernotebook.com/css/an-ode-to-border-radius/
@@ -233,7 +232,6 @@ sitesinde olduğu gibi.)
     "http://leaverou.me/2009/02/css3-border-radius-today/"
   [http://www.the-art-of-web.com/css/border-radius/]: http://www.the-art-of-web.com/css/border-radius/
     "http://www.the-art-of-web.com/css/border-radius/"
-  [http://www.css3.info/preview/rounded-border/]: http://www.css3.info/preview/rounded-border/http://www.css3.info/preview/rounded-border/
     "http://www.css3.info/preview/rounded-border/"
   [http://24ways.org/2006/rounded-corner-boxes-the-css3-way]: http://24ways.org/2006/rounded-corner-boxes-the-css3-way
     "http://24ways.org/2006/rounded-corner-boxes-the-css3-way"

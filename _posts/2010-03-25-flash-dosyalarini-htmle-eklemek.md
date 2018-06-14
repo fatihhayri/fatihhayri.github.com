@@ -236,7 +236,7 @@ Hoşçakalın.
 -   [http://groups.google.com/group/swfobject/browse_thread/thread/eeb1c721a0c10a90?pli=1][]
 -   [http://www.alistapart.com/articles/flashembedcagematch/][]
 -   [http://www.reelseo.com/swfobject-video-seo/][]
--   [http://www.gotoandlearn.com/play?id=77][]
+-   http://www.gotoandlearn.com/play?id=77
 
 
   [İnternet Explorer'ın ActiveX güncellemesi sonrası]: http://www.fatihhayrioglu.com/internet-explorer-activex-guncelmesi-ve-sonrasinda-flashswf-kullanilan-sayfalardaki-sorunlar/
@@ -249,5 +249,4 @@ Hoşçakalın.
   [http://www.ispringsolutions.com/articles/how_to_insert_flash_into_html.html]: http://www.ispringsolutions.com/articles/how_to_insert_flash_into_html.html
   [http://groups.google.com/group/swfobject/browse_thread/thread/eeb1c721a0c10a90?pli=1]: http://groups.google.com/group/swfobject/browse_thread/thread/eeb1c721a0c10a90?pli=1
   [http://www.alistapart.com/articles/flashembedcagematch/]: http://www.alistapart.com/articles/flashembedcagematch/
-  [http://www.reelseo.com/swfobject-video-seo/]: http://www.reelseo.com/swfobject-video-seo/
-  [http://www.gotoandlearn.com/play?id=77]: http://www.gotoandlearn.com/play?id=77
+  [http://www.reelseo.com/swfobject-video-seo/]: http://www.reelseo.com/swfobject-video-seo

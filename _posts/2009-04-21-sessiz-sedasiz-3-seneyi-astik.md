@@ -8,10 +8,8 @@ tags: fatihhayrioglu.com, yıl-dönümü
 
 Bu aralar not defterime yeteri kadar zaman ayıramıyorum. Bunun
 göstergelerinden biri 14.04.2006'da başlayan not defteri serüvenin yıl
-dönümünü kaçırmam. Daha çok [delicio.us][](web'den seçme haberler),
-[friendfeed][] ve [twitter][]'dan ufak yazılar ve linkler vererek
+dönümünü kaçırmam. Daha çok delicio.us(web'den seçme haberler),
+http://friendfeed.com/fatihhayri ve [twitter][]'dan ufak yazılar ve linkler vererek
 geçiriyorum günleri. Önümüzdeki yıl daha verimli olur inşallah.
 
-  [delicio.us]: http://delicio.us/fatihhayri
-  [friendfeed]: http://friendfeed.com/fatihhayri
   [twitter]: http://twitter.com/fatihhayri

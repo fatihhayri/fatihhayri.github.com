@@ -506,11 +506,6 @@ ve tabi ie 6 için
 -   [Konumlandırma(positioning) kullanılan elementlerin negatif margin     ile ortalanması][]
 -   [CSS ile gölge vermek][]
 
-Ayrıca
-
-[Eksi margin Kullanarak çoklu kolon][] oluşturmak adlı güzel bir makale
-var.
-
 ## Sonuç
 
 Sonuç olarak eksi margin bir çok uygulamamızda kullanacağımız bir
@@ -524,19 +519,19 @@ uygulamamızda eksi margin'i kullanmaya devam edeceğiz.
 -   [http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/][]
 -   [http://www.brunildo.org/test/NegMOutH.html][]
 -   [http://csscreator.com/node/1703][] (ie sorun düzeltme)
--   [http://www.communitymx.com/abstract.cfm?cid=B0029][] (bilgi)
+-   http://www.communitymx.com/abstract.cfm?cid=B0029
 -   [http://www.alistapart.com/articles/negativemargins/][] (Uygulama)
 -   [http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/][]
     (ayrıntılı bilgi)
 -   [http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm][]
     (karşı çıkış)
--   [http://haslayout.net/css/negmargin][] (hata bilgisi)
+-   http://haslayout.net/css/negmargin
 -   [http://csscreator.com/node/28664][] (küçük bilgi)
 -   [http://www.simplebits.com/notebook/2005/05/23/negative.html][]
     (negatif margin kullanılcak bir örnek)
 -   [http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra][]
     (negatif margin ile sayfa yapısı oluşturma)
--   [http://haslayout.net/css/Negative-Margin-Bug][] (negatif margin
+-   http://haslayout.net/css/Negative-Margin-Bug (negatif margin
     sorunları)
 
   [tıklayınız.]: /dokumanlar/sabit_konumlu.html
@@ -582,16 +577,12 @@ uygulamamızda eksi margin'i kullanmaya devam edeceğiz.
     "float_eksimargin_icice4"
   [Konumlandırma(positioning) kullanılan elementlerin negatif margin ile   ortalanması]: http://www.fatihhayrioglu.com/css-ile-sayfalarimizi-ve-elementlerimizi-ortalamak/
   [CSS ile gölge vermek]: http://www.fatihhayrioglu.com/css-ile-golge-vermek/
-  [Eksi margin Kullanarak çoklu kolon]: http://www.communitymx.com/abstract.cfm?cid=27F87
   [http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/]: http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/
   [http://www.brunildo.org/test/NegMOutH.html]: http://www.brunildo.org/test/NegMOutH.html
   [http://csscreator.com/node/1703]: http://csscreator.com/node/1703
-  [http://www.communitymx.com/abstract.cfm?cid=B0029]: http://www.communitymx.com/abstract.cfm?cid=B0029
   [http://www.alistapart.com/articles/negativemargins/]: http://www.alistapart.com/articles/negativemargins/
   [http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/]: http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/
   [http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm]: http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm
-  [http://haslayout.net/css/negmargin]: http://haslayout.net/css/negmargin
   [http://csscreator.com/node/28664]: http://csscreator.com/node/28664
   [http://www.simplebits.com/notebook/2005/05/23/negative.html]: http://www.simplebits.com/notebook/2005/05/23/negative.html
   [http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra]: http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra
-  [http://haslayout.net/css/Negative-Margin-Bug]: http://haslayout.net/css/Negative-Margin-Bug

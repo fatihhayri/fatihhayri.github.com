@@ -176,11 +176,11 @@ sonunda örneğimiz ie de de çalışacaktır.
 -   [http://css-tricks.com/removing-the-dotted-outline/][]
 -   [http://snipplr.com/view/15704/eliminating-the-dotted-line-box-that-appears-around-a-link/][]
 -   [http://webaim.org/blog/plague-of-outline-0/][](kaldırılmamalı)
--   [http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links][]
+-   http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links
 -   http://sackclothstudios.com/css/outline-the-neglected-css-property
 -   [http://arjaneising.nl/css/dont-remove-the-outline-from-links][]
     (kaldırılmamalı)
--   [http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/][]
+-   http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css
 -   [http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/][]
     (kaldırılmamalı)
 -   [http://jlaine.net/2007/1/23/hidden-css-stuff-the-outline-property][]
@@ -213,12 +213,8 @@ sonunda örneğimiz ie de de çalışacaktır.
     "http://snipplr.com/view/15704/eliminating-the-dotted-line-box-that-appears-around-a-link/"
   [http://webaim.org/blog/plague-of-outline-0/]: http://webaim.org/blog/plague-of-outline-0/
     "http://webaim.org/blog/plague-of-outline-0/"
-  [http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links]: http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links
-    "http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links"
   [http://arjaneising.nl/css/dont-remove-the-outline-from-links]: http://arjaneising.nl/css/dont-remove-the-outline-from-links
     "http://arjaneising.nl/css/dont-remove-the-outline-from-links"
-  [http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/]: http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/
-    "http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css/"
   [http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/]: http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/
     "http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/"
   [http://jlaine.net/2007/1/23/hidden-css-stuff-the-outline-property]: http://jlaine.net/2007/1/23/hidden-css-stuff-the-outline-property

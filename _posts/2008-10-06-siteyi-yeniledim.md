@@ -25,7 +25,7 @@ tags: delicous, fatihhayrioglu.com, Sans-serif Racer, sitem, yeni
     daha üzerine çözünürlükte olması düşük çözünürlükte site kalmaması
     beni bu değişikliğe itti.
 -   Web'den haberler kısmı tamamen yenilendi. Haberler kısmında
-    [delicious][] alt yapısı kullanılıyor artık. Web'den seçme haberleri
+    -delicious- alt yapısı kullanılıyor artık. Web'den seçme haberleri
     sağ kolona koyarak içerikten ayırdım. Eklediğim haberleri anında sağ
     kolon görebileceksiniz.   
 -   Alt sayfaya yazı bilgisi alanı eklendi. pdf, çıktısını al, gerizleme
@@ -56,4 +56,3 @@ tags: delicous, fatihhayrioglu.com, Sans-serif Racer, sitem, yeni
 
 
   [100]: /images/yeni.gif
-  [delicious]: http://delicio.us/

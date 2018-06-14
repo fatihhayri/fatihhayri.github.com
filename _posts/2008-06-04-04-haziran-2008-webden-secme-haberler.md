@@ -12,7 +12,7 @@ tags: Ajax, ASP.NET, css düzeltmeleri, günlük, İnternet Tarayıcısı, jquer
     [Bağlantı][1]
 -   Tarayıcılar için CSS düzeltmeleri. [Bağlantı][2]
 -   Güzel WordPress temaları. [Bağlantı][3]
--   ASP.NET ve Culture ayarları - Daron Yöndem [Bağlantı][4]
+-   ASP.NET ve Culture ayarları - Daron Yöndem
 -   jQuery yardımı ile klavyeden sayfalarda gezinme. [Bağlantı][5]
 -   Güzel bir SQL Server ipuçları sayfası. [Bağlantı][6]
 -   CSS ile ikon tanımlama. [Bağlantı][7]
@@ -35,8 +35,6 @@ tags: Ajax, ASP.NET, css düzeltmeleri, günlük, İnternet Tarayıcısı, jquer
     "tarayıcılar css düzeltmesi"
   [3]: http://www.wpzoom.com/wordpress-themes-sets/45-free-premium-wordpress-themes-with-magazine-or-grid-layouts/
     "wordpress temaları"
-  [4]: http://daron.yondem.com/tr/PermaLink.aspx?guid=54009553-010c-4955-a841-f9416cd73734
-    "asp.net kültür seçimi"
   [5]: http://nettuts.com/javascript-ajax/how-to-create-a-keypress-navigation-using-jquery/
     "klavye kullana"
   [6]: http://forum.lessthandot.com/viewtopic.php?f=17&t=306

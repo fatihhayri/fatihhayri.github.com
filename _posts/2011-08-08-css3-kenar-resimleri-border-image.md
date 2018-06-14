@@ -290,11 +290,11 @@ uygulanabilirliği var.
 -   [https://developer.mozilla.org/en/CSS/-moz-border-image][] (standartlar)
 -   [http://www.dynamicdrive.com/style/csslibrary/item/image_frames_using_css3_border_image/][] (güzel örnekler)
 -   [http://caniuse.com/border-image][] (destek listesi)
--   [http://ensightful.com/walrus-ivory-tusk-with-animals][] (örnek)
+-   http://ensightful.com/walrus-ivory-tusk-with-animals
 -   [http://border-image.com/][http://border-image.com] (çevrimiçi araç)
 -   [http://www.norabrowndesign.com/css-experiments/border-image-anim.html][] (örnek)
 -   [http://dev.opera.com/articles/view/css3-border-background-boxshadow/#border-image][]
--   [http://people.opera.com/pepelsbey/experiments/bdi/][]
+-   http://people.opera.com/pepelsbey/experiments/bdi
 -   [http://ejohn.org/blog/border-image-in-firefox/][]
 -   [http://michaelhan.net/wordsets/20/][]
 -   [http://www.impressivewebs.com/space-round-css3-background/][] (round ve space)
@@ -318,9 +318,7 @@ uygulanabilirliği var.
   [https://developer.mozilla.org/en/CSS/-moz-border-image]: https://developer.mozilla.org/en/CSS/-moz-border-image
   [http://www.dynamicdrive.com/style/csslibrary/item/image_frames_using_css3_border_image/]: http://www.dynamicdrive.com/style/csslibrary/item/image_frames_using_css3_border_image/
   [http://caniuse.com/border-image]: http://caniuse.com/border-image
-  [http://ensightful.com/walrus-ivory-tusk-with-animals]: http://ensightful.com/walrus-ivory-tusk-with-animals
   [http://dev.opera.com/articles/view/css3-border-background-boxshadow/#border-image]: http://dev.opera.com/articles/view/css3-border-background-boxshadow/#border-image
-  [http://people.opera.com/pepelsbey/experiments/bdi/]: http://people.opera.com/pepelsbey/experiments/bdi/
   [http://michaelhan.net/wordsets/20/]: http://michaelhan.net/wordsets/20/
   [http://www.impressivewebs.com/space-round-css3-background/]: http://www.impressivewebs.com/space-round-css3-background/
 

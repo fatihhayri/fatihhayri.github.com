@@ -34,7 +34,7 @@ tags: Ajax, google, Javascript, mootools, yui
     [Bağlantı][19]
 -   Google Reader Türkçe desteğide sunuyor. Bir kaç yerde ingilizce
     kalan yerler hariç güzel olmuş.
--   Thunderbird 3.0 sürüm geliyor. [Bağlantı][20]
+-   Thunderbird 3.0 sürüm geliyor.
 
 
   [Bağlantı]: http://woork.blogspot.com/2008/01/digg-like-navigation-bar-using-css.html
@@ -73,4 +73,3 @@ tags: Ajax, google, Javascript, mootools, yui
     "küçük ve büyük resim"
   [19]: http://www.artviper.net/test/ajaxslide/
     "geçiş efekti ile alan göstyermek"
-  [20]: http://cnetturkiye.com/haberler/253 "Thunderbird 3.0"

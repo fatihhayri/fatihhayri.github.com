@@ -61,11 +61,11 @@ girmeyin ama hızda bir atış olduğu hissediliyor.
 -   [http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html][]
 -   [http://www.electrictoolbox.com/google-analytics-asynchronous-tracking/][]
 -   [http://davidwalsh.name/async-google-analytics][]
--   [http://webmasterformat.com/news/google-analytics-asynchronous-tracking][]
--   [http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better/][]
+-   http://webmasterformat.com/news/google-analytics-asynchronous-tracking
+-   http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better
 -   [http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html][]
 -   [http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support][]
--   [http://www.webresourcesdepot.com/new-google-analytics-code-for-better-load-times/][]
+-   http://www.webresourcesdepot.com/new-google-analytics-code-for-better-load-times
 -   [http://www.stevesouders.com/blog/2009/12/01/google-analytics-goes-async/][]
 -   [http://googlesystem.blogspot.com/2009/12/optimized-google-analytics-code.html][]
 -   [http://blog.chartbeat.com/2009/12/04/google-analytics-goes-asynchronous/][]
@@ -77,14 +77,8 @@ girmeyin ama hızda bir atış olduğu hissediliyor.
     "http://www.electrictoolbox.com/google-analytics-asynchronous-tracking/"
   [http://davidwalsh.name/async-google-analytics]: http://davidwalsh.name/async-google-analytics
     "http://davidwalsh.name/async-google-analytics"
-  [http://webmasterformat.com/news/google-analytics-asynchronous-tracking]: http://webmasterformat.com/news/google-analytics-asynchronous-tracking
-    "http://webmasterformat.com/news/google-analytics-asynchronous-tracking"
-  [http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better/]: http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better/
-    "http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better/"
   [http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support]: http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support
     "http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support"
-  [http://www.webresourcesdepot.com/new-google-analytics-code-for-better-load-times/]: http://www.webresourcesdepot.com/new-google-analytics-code-for-better-load-times/
-    "http://www.webresourcesdepot.com/new-google-analytics-code-for-better-load-times/"
   [http://www.stevesouders.com/blog/2009/12/01/google-analytics-goes-async/]: http://www.stevesouders.com/blog/2009/12/01/google-analytics-goes-async/
     "http://www.stevesouders.com/blog/2009/12/01/google-analytics-goes-async/"
   [http://googlesystem.blogspot.com/2009/12/optimized-google-analytics-code.html]: http://googlesystem.blogspot.com/2009/12/optimized-google-analytics-code.html

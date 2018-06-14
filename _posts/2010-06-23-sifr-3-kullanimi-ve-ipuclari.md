@@ -19,7 +19,7 @@ Aslında ben sIFR kullanımını daha önce anlattım.  [Metin Yerine Resim/Fla
 sIFR kullanımını anlattım. Burada sIFR'ın yeni sürümünü ve ipuçlarını
 yazacağım. 
 
-sIFR3'ün son sürümünü [http://dev.novemberborn.net/sifr3/nightlies/][]
+sIFR3'ün son sürümünü http://dev.novemberborn.net/sifr3/nightlies
 adresinden en üstteki bağlantıdan son sürümü indirebilirsiniz.
 
 [Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)][]
@@ -207,7 +207,7 @@ kısmınaeklerseniz güzel bir dokümantasyon oluşturmuş oluruz.
 
 ## Kaynaklar
 
--   [http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/][]
+-   http://v4.designintellection.com/this-is-how-you-get-sifr-to-work
 -   [http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/][]
 
   [100]: /images/sifr1.gif "sifr"
@@ -215,9 +215,6 @@ kısmınaeklerseniz güzel bir dokümantasyon oluşturmuş oluruz.
     "daha öncede bahsettiğimiz gibi"
   [Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)]: http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
     "Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)"
-  [http://dev.novemberborn.net/sifr3/nightlies/]: http://dev.novemberborn.net/sifr3/nightlies/
-    "http://dev.novemberborn.net/sifr3/nightlies/"
-  [http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/]: http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/
     "http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/"
   [http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/]: http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/
     "http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/"

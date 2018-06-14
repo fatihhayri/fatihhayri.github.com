@@ -108,7 +108,7 @@ Ne diyelim Internet Explorer 6'ya ölüm.
 
 ## Kaynaklar
 
--   [http://wisdump.com/web-programming/campaigns-to-kill-the-web-browser-that-just-wont-die-internet-explorer-6/][]
+-   http://wisdump.com/web-programming/campaigns-to-kill-the-web-browser-that-just-wont-die-internet-explorer-6
 -   [http://cdharrison.com/2008/09/04/death-to-ie6/][]
 -   [http://www.webmaster-source.com/2008/09/04/fighting-internet-explorer-6/][]
 -   http://leblog.exuberance.com/2006/03/the_explorer_ta.html
@@ -122,7 +122,7 @@ Ne diyelim Internet Explorer 6'ya ölüm.
 -   [http://css-tricks.com/why-people-still-use-ie-6/][]
 -   http://elliotjaystocks.com/blog/archive/2008/death-to-ie6/
 -   [http://iedeathmarch.org/][]
--   [http://www.devlounge.net/column/the-death-of-internet-explorer-6-still-prematurely-called][]
+-   http://www.devlounge.net/column/the-death-of-internet-explorer-6-still-prematurely-called
 -   [http://websitetips.com/css/solutions/][]
 -   [http://my.opera.com/zomg/blog/2007/07/31/common-crossbrowser-css-issues][]
 
@@ -149,7 +149,6 @@ Ne diyelim Internet Explorer 6'ya ölüm.
   [CSS ile Menü Yapmak III - Dikey Açılır Menüler]: http://www.fatihhayrioglu.com/?p=216
   [CSS ile Menü Yapmak IV - Yatay Açılır Menüler]: http://www.fatihhayrioglu.com/?p=217
   [http://css-tricks.com/why-people-still-use-ie-6/]: http://css-tricks.com/why-people-still-use-ie-6/
-  [http://wisdump.com/web-programming/campaigns-to-kill-the-web-browser-that-just-wont-die-internet-explorer-6/]: http://wisdump.com/web-programming/campaigns-to-kill-the-web-browser-that-just-wont-die-internet-explorer-6/
   [http://cdharrison.com/2008/09/04/death-to-ie6/]: http://cdharrison.com/2008/09/04/death-to-ie6/
   [http://www.webmaster-source.com/2008/09/04/fighting-internet-explorer-6/]: http://www.webmaster-source.com/2008/09/04/fighting-internet-explorer-6/
   [http://www.siberkultur.com/?q=37signals-ie6-destegini-kaldiriyor]: http://www.siberkultur.com/?q=37signals-ie6-destegini-kaldiriyor
@@ -158,6 +157,5 @@ Ne diyelim Internet Explorer 6'ya ölüm.
   [http://www.infoq.com/news/2008/07/ie6_on_its_way_out]: http://www.infoq.com/news/2008/07/ie6_on_its_way_out
   [http://www.sitepoint.com/blogs/2008/08/25/is-it-time-to-ditch-ie6/]: http://www.sitepoint.com/blogs/2008/08/25/is-it-time-to-ditch-ie6/
   [http://iedeathmarch.org/]: http://iedeathmarch.org/
-  [http://www.devlounge.net/column/the-death-of-internet-explorer-6-still-prematurely-called]: http://www.devlounge.net/column/the-death-of-internet-explorer-6-still-prematurely-called
   [http://websitetips.com/css/solutions/]: http://websitetips.com/css/solutions/
   [http://my.opera.com/zomg/blog/2007/07/31/common-crossbrowser-css-issues]: http://my.opera.com/zomg/blog/2007/07/31/common-crossbrowser-css-issues

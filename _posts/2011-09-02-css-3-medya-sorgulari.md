@@ -358,7 +358,7 @@ min-monochrome, max-monochrome, resolution, min-resolution,
 max-resolution, scan, grid medya özellikleride vardır. Ayrıca Firefox
 mobile için tanımladığı kendine ait medya özellikleride bulunmaktadır.
 Bu medya özellikleri hakkındaki detaylı bilgiye
-[https://developer.mozilla.org/en/CSS/media_queries][] sitesinden
+https://developer.mozilla.org/en/CSS/media_queries sitesinden
 erişebilirsiniz.
 
 **Tarayıcı Desteği**
@@ -406,13 +406,12 @@ mi ama olmadı.
 -   [http://www.catswhocode.com/blog/create-an-adaptable-website-layout-with-css3-media-queries][]
 -   [http://webdesignerwall.com/tutorials/adaptive-mobile-design-with-css3-media-queries][]
 -   [http://webdesignerwall.com/tutorials/css3-media-queries][]
--   [https://developer.mozilla.org/en/CSS/media_queries][]
 -   [http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/][]
--   [http://ie.microsoft.com/testdrive/HTML5/CSS3MediaQueries/Default.html][]
+-   http://ie.microsoft.com/testdrive/HTML5/CSS3MediaQueries/Default.html]
 -   [http://www.catswhocode.com/blog/create-an-adaptable-website-layout-with-css3-media-queries][]
 -   [http://www.alistapart.com/articles/responsive-web-design/][]
 -   [http://reference.sitepoint.com/css/mediaqueries][]
--   [http://www.webdesignlondon-tristar.co.uk/website-design-london/css3-media-queries-responsive-web-design][]
+-   http://www.webdesignlondon-tristar.co.uk/website-design-london/css3-media-queries-responsive-web-design
 -   [http://www.maxdesign.com.au/articles/css3-media-queries/][] (slayt gösterisi)
 -   [http://msdn.microsoft.com/en-us/scriptjunkie/gg619395.aspx][]
 -   [http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/][]
@@ -446,10 +445,8 @@ mi ama olmadı.
   [http://webdesignerwall.com/tutorials/adaptive-mobile-design-with-css3-media-queries]: http://webdesignerwall.com/tutorials/adaptive-mobile-design-with-css3-media-queries
   [http://webdesignerwall.com/tutorials/css3-media-queries]: http://webdesignerwall.com/tutorials/css3-media-queries
   [http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/]: http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/
-  [http://ie.microsoft.com/testdrive/HTML5/CSS3MediaQueries/Default.html]: http://ie.microsoft.com/testdrive/HTML5/CSS3MediaQueries/Default.html
   [http://www.alistapart.com/articles/responsive-web-design/]: http://www.alistapart.com/articles/responsive-web-design/
   [http://reference.sitepoint.com/css/mediaqueries]: http://reference.sitepoint.com/css/mediaqueries
-  [http://www.webdesignlondon-tristar.co.uk/website-design-london/css3-media-queries-responsive-web-design]: http://www.webdesignlondon-tristar.co.uk/website-design-london/css3-media-queries-responsive-web-design
   [http://www.maxdesign.com.au/articles/css3-media-queries/]: http://www.maxdesign.com.au/articles/css3-media-queries/
   [http://msdn.microsoft.com/en-us/scriptjunkie/gg619395.aspx]: http://msdn.microsoft.com/en-us/scriptjunkie/gg619395.aspx
   [http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/]: http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/

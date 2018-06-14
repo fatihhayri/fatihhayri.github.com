@@ -232,15 +232,15 @@ kolaylıklar sağlıyor.
 
 -   [http://theburningmonk.com/2010/12/having-fun-with-css3-box-shadow-property/][] (box-shadow özelliği)
 -   [http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/][]
--   [http://matthamm.com/box-shadow-curl.html][] (kelebek köşe örneği)
--   [http://www.webdesignshock.com/css3-box-shadow/][]
+-   http://matthamm.com/box-shadow-curl.html
+-   http://www.webdesignshock.com/css3-box-shadow/
 -   [http://www.red-team-design.com/how-to-create-slick-effects-with-css3-box-shadow][]
 -   [http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/][]
--   [http://blog.syndicate-fx.com/code-snippets/css3-boxshadow-effects/][]
+-   http://blog.syndicate-fx.com/code-snippets/css3-boxshadow-effects/
 -   [http://www.ballyhooblog.com/realistic-css3-box-shadows/][]
 -   [http://www.sitepoint.com/pure-css3-paper-curl/][]
 -   [http://www.css3.info/preview/box-shadow/][]
--   [http://www.wewillbeok.com/likeacastshadow/][] (farklı bir örnek)
+-   http://www.wewillbeok.com/likeacastshadow/
 -   [http://toolboxdigital.com/2011/03/css3-3d-gradient-box/][]
 -   [http://www.paulund.co.uk/creating-different-css3-box-shadows-effects][]
 -   [http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/][] (makaleye örnek)
@@ -253,15 +253,11 @@ kolaylıklar sağlıyor.
   [Önceki makalede]: http://www.fatihhayrioglu.com/coklu-kenar-cizgisiborder-kullanimi/
   [http://theburningmonk.com/2010/12/having-fun-with-css3-box-shadow-property/]: http://theburningmonk.com/2010/12/having-fun-with-css3-box-shadow-property/
   [http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/]: http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/
-  [http://matthamm.com/box-shadow-curl.html]: http://matthamm.com/box-shadow-curl.html
-  [http://www.webdesignshock.com/css3-box-shadow/]: http://www.webdesignshock.com/css3-box-shadow/
   [http://www.red-team-design.com/how-to-create-slick-effects-with-css3-box-shadow]: http://www.red-team-design.com/how-to-create-slick-effects-with-css3-box-shadow
   [http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/]: http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/
-  [http://blog.syndicate-fx.com/code-snippets/css3-boxshadow-effects/]: http://blog.syndicate-fx.com/code-snippets/css3-boxshadow-effects/
   [http://www.ballyhooblog.com/realistic-css3-box-shadows/]: http://www.ballyhooblog.com/realistic-css3-box-shadows/
   [http://www.sitepoint.com/pure-css3-paper-curl/]: http://www.sitepoint.com/pure-css3-paper-curl/
   [http://www.css3.info/preview/box-shadow/]: http://www.css3.info/preview/box-shadow/
-  [http://www.wewillbeok.com/likeacastshadow/]: http://www.wewillbeok.com/likeacastshadow/
   [http://toolboxdigital.com/2011/03/css3-3d-gradient-box/]: http://toolboxdigital.com/2011/03/css3-3d-gradient-box/
   [http://www.paulund.co.uk/creating-different-css3-box-shadows-effects]: http://www.paulund.co.uk/creating-different-css3-box-shadows-effects
   [http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/]: http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/

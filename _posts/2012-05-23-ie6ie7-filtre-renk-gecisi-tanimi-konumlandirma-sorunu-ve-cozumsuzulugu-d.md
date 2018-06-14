@@ -37,7 +37,7 @@ olması bizi sevindiriyor.
 ## Kaynak
 
 -   [http://clogsandmills.com/blog/ie6-ie7-filter-bug/][]
--   [http://www.briangervais.com/blog/css-gradients-with-internet-explorer-ie6-10][]
+-   http://www.briangervais.com/blog/css-gradients-with-internet-explorer-ie6-10
 -   [http://brian.pontarelli.com/2011/09/20/ie-filter-gradient-and-positioning-bug/][]
 
 
@@ -45,5 +45,4 @@ olması bizi sevindiriyor.
   [İnternet Explorer’da Renk Geçişi Sorunu ve Çözümü]: http://www.fatihhayrioglu.com/internet-explorerda-renk-gecisi-sorunu-ve-cozumu/
   [nternet Explorer 7’nin %5’in altına düşmüş oranı]: http://labs.sahibinden.com/yazi/sahibinden-com-nisan-2012-ziyaretci-teknoloji-istatistikleri/
   [http://clogsandmills.com/blog/ie6-ie7-filter-bug/]: http://clogsandmills.com/blog/ie6-ie7-filter-bug/
-  [http://www.briangervais.com/blog/css-gradients-with-internet-explorer-ie6-10]: http://www.briangervais.com/blog/css-gradients-with-internet-explorer-ie6-10
   [http://brian.pontarelli.com/2011/09/20/ie-filter-gradient-and-positioning-bug/]: http://brian.pontarelli.com/2011/09/20/ie-filter-gradient-and-positioning-bug/

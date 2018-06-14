@@ -150,14 +150,14 @@ html, body, form, #kapsul {
 ## Kaynaklar
 
 -   [http://www.cssstickyfooter.com/][]
--   [http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/][]
--   [http://ryanfait.com/resources/footer-stick-to-bottom-of-page/][]
+-   http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer
+-   http://ryanfait.com/resources/footer-stick-to-bottom-of-page
 -   http://cokbasit.blogspot.com/2009/01/yapkan-taban-sticky-footer.html
 -   [http://css-tricks.com/sticky-footer/][]
--   [http://www.waycoolwebdesign.com/Blog/2008/11/15/CSS-Sticky-Footer][]
+-   http://www.waycoolwebdesign.com/Blog/2008/11/15/CSS-Sticky-Footer
 -   [http://stever.ca/web-design/css-sticky-footer/][]
--   [http://brassblogs.com/blog/sticky-footer][]
--   [http://www.davidjrush.com/blog/2009/01/css-sticky-footer/][]
+-   http://brassblogs.com/blog/sticky-footer
+-   http://www.davidjrush.com/blog/2009/01/css-sticky-footer
 
   [yapisik_altalan]: /images/yapisik_altalan.gif
   [cssstickyfooter.com]: http://www.cssstickyfooter.com
@@ -165,10 +165,5 @@ html, body, form, #kapsul {
   [tıklayınız.]: /dokumanlar/sayfa_dibine_yapisik.html
   [100]: http://www.cssstickyfooter.com/using-sticky-footer-code.html
   [http://www.cssstickyfooter.com/]: http://www.cssstickyfooter.com/
-  [http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/]: http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/
-  [http://ryanfait.com/resources/footer-stick-to-bottom-of-page/]: http://ryanfait.com/resources/footer-stick-to-bottom-of-page/
   [http://css-tricks.com/sticky-footer/]: http://css-tricks.com/sticky-footer/
-  [http://www.waycoolwebdesign.com/Blog/2008/11/15/CSS-Sticky-Footer]: http://www.waycoolwebdesign.com/Blog/2008/11/15/CSS-Sticky-Footer
   [http://stever.ca/web-design/css-sticky-footer/]: http://stever.ca/web-design/css-sticky-footer/
-  [http://brassblogs.com/blog/sticky-footer]: http://brassblogs.com/blog/sticky-footer
-  [http://www.davidjrush.com/blog/2009/01/css-sticky-footer/]: http://www.davidjrush.com/blog/2009/01/css-sticky-footer/

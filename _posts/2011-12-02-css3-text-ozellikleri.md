@@ -341,9 +341,9 @@ Kalın sağlıcakla.
 -   [http://www.impressivewebs.com/word-wrap-css3/][]
 -   [http://www.opera.com/docs/specs/presto27/css/text/][]
 -   [http://caniuse.com/wordwrap][] (wordp-wrap destek listesi)
--   [https://developer.mozilla.org/En/CSS/Word-wrap][]
+-   https://developer.mozilla.org/En/CSS/Word-wrap
 -   [http://www.w3.org/TR/css3-text/][]
--   [http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property][](text-stroke)
+-   http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property
 -   [http://css-tricks.com/7405-adding-stroke-to-web-text/][](text-stroke)
 -   [http://www.webkit.org/blog/85/introducing-text-stroke/][]
 -   [http://code.stephenmorley.org/html-and-css/white-space-handling/][]
@@ -364,7 +364,7 @@ Kalın sağlıcakla.
 -   [http://htmlcss.wikia.com/wiki/Text-rendering][]
 -   [http://coding.smashingmagazine.com/2010/03/01/css-and-the-future-of-text/][]
 -   [http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography-part-2][]
--   [http://www.webreference.com/programming/corecss/2/4.html][]
+-   http://www.webreference.com/programming/corecss/2/4.html
 
   [100]: https://lh6.googleusercontent.com/3FsatoE0FmU_5BhUEy_zEiJ1IOKvCEw08hEBmUC65r2zb0sqP9w__9fwRPhdr8_avR3u4Bu0jDa2WAWnnaINNAY_tRNPtlLOO8RkvDlPQuB8Xm87Buc
   [1]: https://lh3.googleusercontent.com/miG_QKLBFvURtfSYFo3_P8q2QBZPWOGG2s-zMI7n7U97JH9TkMWd-tt3NnhL1nzD_DyQcqV1gmoqaK5FvhnR-XYI4AnQHl4H4A7h5TL884lG0H2OtmI
@@ -376,8 +376,6 @@ Kalın sağlıcakla.
   [http://www.impressivewebs.com/word-wrap-css3/]: http://www.impressivewebs.com/word-wrap-css3/
   [http://www.opera.com/docs/specs/presto27/css/text/]: http://www.opera.com/docs/specs/presto27/css/text/
   [http://caniuse.com/wordwrap]: http://caniuse.com/wordwrap
-  [https://developer.mozilla.org/En/CSS/Word-wrap]: https://developer.mozilla.org/En/CSS/Word-wrap
-  [http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property]: http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property
   [http://css-tricks.com/7405-adding-stroke-to-web-text/]: http://css-tricks.com/7405-adding-stroke-to-web-text/
   [http://www.webkit.org/blog/85/introducing-text-stroke/]: http://www.webkit.org/blog/85/introducing-text-stroke/
   [http://code.stephenmorley.org/html-and-css/white-space-handling/]: http://code.stephenmorley.org/html-and-css/white-space-handling/
@@ -395,7 +393,6 @@ Kalın sağlıcakla.
   [http://htmlcss.wikia.com/wiki/Text-rendering]: http://htmlcss.wikia.com/wiki/Text-rendering
   [http://coding.smashingmagazine.com/2010/03/01/css-and-the-future-of-text/]: http://coding.smashingmagazine.com/2010/03/01/css-and-the-future-of-text/
   [http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography-part-2]: http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography-part-2
-  [http://www.webreference.com/programming/corecss/2/4.html]: http://www.webreference.com/programming/corecss/2/4.html
 
 [firefox]: /images/ff.png
 [chrome]: /images/ch.png

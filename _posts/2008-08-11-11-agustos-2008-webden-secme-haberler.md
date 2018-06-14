@@ -13,7 +13,7 @@ tags: Ajax, arama motoru, firebug, Güzel Menü, Javascript, RSS çeviri, wordpr
     [Bağlantı][1]
 -   İnternet günlüklerinin(blog) geleceği hakkında yazılmış güzel bir
     makale. [Bağlantı][2]
--   Javascript güvenliği ile ilgili bir makale. [Bağlantı][3]
+-   Javascript güvenliği ile ilgili bir makale. http://www.nowareshosting.com/forums/index.php?showtopic=57
 -   "Blog’da kullandığım ve tavsiye ettiğim eklentiler" -
     blog.wolkanca.com [Bağlantı][4]
 -   Arama motorlarına uyumluluk için en iyi yöntemler. [Bağlantı][5]
@@ -34,8 +34,6 @@ tags: Ajax, arama motoru, firebug, Güzel Menü, Javascript, RSS çeviri, wordpr
   [1]: http://mloovi.com/ "RSS dil çevirici"
   [2]: http://www.readwriteweb.com/archives/the_future_of_blogging_reveale.php
     "günlüklerin geleceği"
-  [3]: http://www.nowareshosting.com/forums/index.php?showtopic=57
-    "javascript güvenliği"
   [4]: http://blog.wolkanca.com/blogda-kullandigim-ve-tavsiye-ettigim-eklentiler/#comment-176466
     "wordpress eklentileri"
   [5]: http://blog.searchistheos.com/2008/07/search-engine-optimization-seo-best.html

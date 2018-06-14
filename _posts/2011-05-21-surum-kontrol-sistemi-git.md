@@ -44,7 +44,7 @@ sıralanmıştır.
 -   Bazaar
 
 Sadece isimleri verip geçeceğim. Farklı sistemleri karşılaştıran birçok
-site var. [http://whygitisbetterthanx.com/][] sitesinden Git’in
+site var. internette küçük bir arama ile Git’in
 diğerlerine göre avantajlarını görebilirsiniz.
 
 Git’in en büyük farkı merkezi değil, dağıtık olması. Bu şu anlama
@@ -234,7 +234,6 @@ ediyorum, özellikle [Doruk][], bu konuda bildiğim bir çok şeyi ondan
 
   [100]: /images/git-logo.png "git-logo"
   [1]: https://lh5.googleusercontent.com/fm9u2bysZrSh8Kl-1TUzVT8bdKzgwrpEU0ztXz0gH-bALti4VlkvArqxqwcKhCC4PiXXoTyDm-cOw4aE46skicF6UWh95eAH8KlTiiJM8VTzDisO2A
-  [http://whygitisbetterthanx.com/]: http://whygitisbetterthanx.com/
   [2]: https://lh6.googleusercontent.com/aaVMUy_pCM6En6Q48EF2M-7FrFFS44ADVrqkZQuDAOMQc6GPVx3sX_vYQnFcgYeqKLgGlw-CrREnbWcAvZYqLPb0hXdcYQFSILnNqQxV_XXfkSkXdw
   [Doruk]: http://twitter.com/#!/dorukozalp
   [http://inchoo.net/tools/basic-git-usage-from-console/]: http://inchoo.net/tools/basic-git-usage-from-console/

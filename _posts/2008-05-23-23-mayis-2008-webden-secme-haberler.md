@@ -11,7 +11,7 @@ tags: css3, dikey-ortalama, Esnek ardalan, favicon, Flash Player, jquery, master
 -   Adobe Flash Player yeniliyor. FlashPlayer 10 betas ıçıkmış.
     [Bağlantı][1]
 -   "ASP.NET içerisinde Web.Config Inheritance'ı engellemek" - Daron
-    Yöndem [Bağlantı][2]
+    Yöndem
 -   Asp.Net MasterPage kullanım ipuçları. [Bağlantı][3]
 -   Favori ikon kullanmanın avantajları. Basit ama güzel bir bilgi.
     [Bağlantı][4]
@@ -35,8 +35,6 @@ tags: css3, dikey-ortalama, Esnek ardalan, favicon, Flash Player, jquery, master
   [Bağlantı]: http://www.javascriptkit.com/script/script2/doctextresizer.shtml
     "büyük - küçük metin"
   [1]: http://labs.adobe.com/wiki/index.php/Astro "FlashPlayer 10"
-  [2]: http://daron.yondem.com/tr/PermaLink.aspx?guid=ea94b572-7e9c-4099-ae20-9503e26a9d9b
-    "web.congif"
   [3]: http://odetocode.com/Articles/450.aspx "asp.net masterpage"
   [4]: http://www.designvsart.com/blog/2008/05/19/the-importance-of-favicons/
     "favori ikon"

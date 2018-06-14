@@ -19,7 +19,7 @@ tags: Acid 3 test, ie8, jquery, Web Standartları, web3.0, wordpress 2.5, yuvarl
 -   8 güzel jquery uygulamalı ders. [Bağlantı][4]
 -   CSS 1,2,3 özellik listesi. [Bağlantı][5]
 -   jQuery ağaç menü örneği. [Bağlantı][6]
--   "Web 3.0 - Semantik Web" [][][Bağlantı][7]
+-   -"Web 3.0 - Semantik Web"-
 -   jquery ile farklı bir büyük resim gösterme tekniği. [Bağlantı][8]
 -   "Tek bir resim dosyası ile yuvarlak köşeli kutular yapmak"
     [Bağlantı][9]
@@ -45,7 +45,6 @@ tags: Acid 3 test, ie8, jquery, Web Standartları, web3.0, wordpress 2.5, yuvarl
   [6]: http://abeautifulsite.net/notebook.php?article=58
     "jquery ağaç menü"
   [100]: http://Web%203.0%20-%20Semantik%20Web "web 3.0"
-  [7]: http://www.websoldier.net/web-30-semantik-web/ "web 3.0"
   [8]: http://fancy.klade.lv/ "jquery resim göster"
   [9]: http://www.eburhan.com/tek-bir-resim-dosyasi-ile-yuvarlak-koseli-kutular-yapmak/
     "tek resimle yuvarlak kenarlı kutular"

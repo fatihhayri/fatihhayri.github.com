@@ -110,7 +110,6 @@ sıralamaya çalıştım, umarım sizede lazım olduğunda işinize yarar.
 -   [http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4107&fileID=3813][]
 -   [http://reference.sitepoint.com/css/direction][]
 
-  [LiveGO]: http://www.livego.com
   [100]: /images/livego_arapca.jpg
   [http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4107&fileID=3813]: http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4107&fileID=3813
   [Faik]: http://twitter.com/faik

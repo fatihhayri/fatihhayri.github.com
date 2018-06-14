@@ -14,7 +14,7 @@ yeni bir sürüm gibi. Yeni özelliklere bir göz atalım.
 ## Geolocation
 
 Geode internet tarayıcıları için yeni kavram. Mozilla laboratuarlarının
-[geleceğin tarayıcıları hakkındaki düşüncelerinden][] biri idi bu.
+geleceğin tarayıcıları hakkındaki düşüncelerinden biri idi bu.
 Kullanıcıların yerini belirleyip ona göre sayfalar ve içerikler sunmak .
 Örneğin yeni bir yere taşındınız ve en yakın yemek yyiyecek yeri veya
 marketi bulmak için internet tarayıcını size yardımcı olabilecek.
@@ -155,12 +155,10 @@ getirilecek.
 -   [http://www.readwriteweb.com/archives/firefox_31_beta_1_geolocation.php][]
 -   [http://blogs.zdnet.com/hardware/?p=2781][]
 -   [http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords][]
--   [http://www.tgdaily.com/html_tmp/content-view-39752-140.html][]
+-   http://www.tgdaily.com/html_tmp/content-view-39752-140.html
 -   [http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744][]
 -   [http://www.pclabs.com.tr/2008/05/23/mozilla-firefox-31-bu-sene-sonunda-cikiyor/][]
 
-  [geleceğin tarayıcıları hakkındaki düşüncelerinden]: http://labs.mozilla.com/projects/concept-series/
-    "Geleceğin konsept tarayıcıları"
   [Buradan]: https://people.mozilla.com/%7Edolske/dist/geode/geode-latest.xpi
     "Buradan"
   [W3C Geolocation specification]: http://dev.w3.org/geo/api/spec-source.html
@@ -180,6 +178,5 @@ getirilecek.
   [http://www.readwriteweb.com/archives/firefox_31_beta_1_geolocation.php]: http://www.readwriteweb.com/archives/firefox_31_beta_1_geolocation.php
   [http://blogs.zdnet.com/hardware/?p=2781]: http://blogs.zdnet.com/hardware/?p=2781
   [http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords]: http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords
-  [http://www.tgdaily.com/html_tmp/content-view-39752-140.html]: http://www.tgdaily.com/html_tmp/content-view-39752-140.html
   [http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744]: http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744
   [http://www.pclabs.com.tr/2008/05/23/mozilla-firefox-31-bu-sene-sonunda-cikiyor/]: http://www.pclabs.com.tr/2008/05/23/mozilla-firefox-31-bu-sene-sonunda-cikiyor/

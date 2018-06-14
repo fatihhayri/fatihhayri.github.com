@@ -295,7 +295,7 @@ aksaklığımız oldu ise affola.
 -   [http://www.w3.org/TR/css3-webfonts/#font-descriptions][]
 -   [http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/][]
     (kod yapısı)
--   [http://www.kadirgunay.com/font-face-kullanimi-ve-kolayliklari.html][]
+-   http://www.kadirgunay.com/font-face-kullanimi-ve-kolayliklari.html
 -   [http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/][]
     (detaylı)
 -   [http://randsco.com/index.php/2009/07/04/p680][] (farklı tarayıcılar
@@ -316,12 +316,12 @@ aksaklığımız oldu ise affola.
 -   [http://www.alistapart.com/articles/cssatten][]
 -   [http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work][]
 -   [http://reference.sitepoint.com/css/at-fontface][]
--   [http://www.seomium.com/xhtml-css-javascript-kodlama/ucretsiz-ve-yasal-fontlarla-font-face-kullanimi.html][]
+-   http://www.seomium.com/xhtml-css-javascript-kodlama/ucretsiz-ve-yasal-fontlarla-font-face-kullanimi.html
 -   [http://randsco.com/index.php/2009/07/04/p680][]
 -   [http://opentype.info/demo/webfontdemo.html][] (örnek)
 -   [http://devfiles.myopera.com/articles/593/webfonts.html][] (örnek)
 -   [http://www.typotheque.com/webfonts/sample][] (örnek)
--   [http://www.spoono.com/html/tutorials/tutorial.php?id=19][] (EOT
+-   http://www.spoono.com/html/tutorials/tutorial.php?id=19 (EOT
     hakkında bilgi)
 -   [http://www.phpied.com/gzip-your-font-face-files/][] (optimizasyon)
 -   [http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/][]
@@ -373,8 +373,6 @@ aksaklığımız oldu ise affola.
     "http://www.w3.org/TR/css3-webfonts/#font-descriptions"
   [http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/]: http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/
     "http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/"
-  [http://www.kadirgunay.com/font-face-kullanimi-ve-kolayliklari.html]: http://www.kadirgunay.com/font-face-kullanimi-ve-kolayliklari.html
-    "http://www.kadirgunay.com/font-face-kullanimi-ve-kolayliklari.html"
   [http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/]: http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/
     "http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/"
   [http://randsco.com/index.php/2009/07/04/p680]: http://randsco.com/index.php/2009/07/04/p680
@@ -403,16 +401,12 @@ aksaklığımız oldu ise affola.
     "http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work"
   [http://reference.sitepoint.com/css/at-fontface]: http://reference.sitepoint.com/css/at-fontface
     "http://reference.sitepoint.com/css/at-fontface"
-  [http://www.seomium.com/xhtml-css-javascript-kodlama/ucretsiz-ve-yasal-fontlarla-font-face-kullanimi.html]: http://www.seomium.com/xhtml-css-javascript-kodlama/ucretsiz-ve-yasal-fontlarla-font-face-kullanimi.html
-    "http://www.seomium.com/xhtml-css-javascript-kodlama/ucretsiz-ve-yasal-fontlarla-font-face-kullanimi.html"
   [http://opentype.info/demo/webfontdemo.html]: http://opentype.info/demo/webfontdemo.html
     "http://opentype.info/demo/webfontdemo.html"
   [http://devfiles.myopera.com/articles/593/webfonts.html]: http://devfiles.myopera.com/articles/593/webfonts.html
     "http://devfiles.myopera.com/articles/593/webfonts.html"
   [http://www.typotheque.com/webfonts/sample]: http://www.typotheque.com/webfonts/sample
     "http://www.typotheque.com/webfonts/sample"
-  [http://www.spoono.com/html/tutorials/tutorial.php?id=19]: http://www.spoono.com/html/tutorials/tutorial.php?id=19
-    "http://www.spoono.com/html/tutorials/tutorial.php?id=19"
   [http://www.phpied.com/gzip-your-font-face-files/]: http://www.phpied.com/gzip-your-font-face-files/
     "http://www.phpied.com/gzip-your-font-face-files/"
   [http://paulirish.com/2009/the-direction-forward-with-web-fonts/]: http://paulirish.com/2009/the-direction-forward-with-web-fonts/

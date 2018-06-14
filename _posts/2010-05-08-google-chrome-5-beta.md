@@ -14,7 +14,7 @@ eklemesi olmaması idi. Ayrıca Chrome'un pazar payınında bu yazının
 gecikmesinde etkisi olduğunu kabul etmeliyim. 
 
 Google chrome'un hızlı yükselişi ve hız konusundaki insanlara verdiği
-izlenim kısa sürede kendinden bahsettirdi.  [Son tarayıcı kullanım oranlarına göre][] Google Chrome en hızlı yükselen tarayıcı oldu ve
+izlenim kısa sürede kendinden bahsettirdi.  Son tarayıcı kullanım oranlarına göre Google Chrome en hızlı yükselen tarayıcı oldu ve
 kullanım oranını %6,73 oldu.
 
 Arayüz geliştiricileri için tarayıcılar ve sürümleri çok önemlidir. Her
@@ -115,7 +115,6 @@ bu durumun dışında tutmalı. 
 -   [http://download.cnet.com/Google-Chrome-beta/3000-2356_4-10958228.html][]
 
 
-  [Son tarayıcı kullanım oranlarına göre]: http://www.dailytech.com/Microsofts+IE+Sinks+While+Google+Chromes+Market+Share+Triples/article18293.htm
   [100]: /images/chrome5_01.gif
   [1]: /images/chrome5_02.gif
   [2]: /images/chrome5_03.gif

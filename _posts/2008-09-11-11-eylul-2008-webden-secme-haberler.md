@@ -12,7 +12,7 @@ tags: CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, upl
 -   Partilerin İnternet Stratejileri - hasanyalcin.com [Bağlantı][2]
 -   TechCrunch50′den ilk gün izlenimleri - webrazzi.com [Bağlantı][3]
 -   CSS ile Konumlandırma ilgili güzel bir ipucu
-    uyugulama. [Bağlantı][4]
+    uyugulama.
 -   WordPress 2.6.2 sürümü çıkmış yükselttim. Yaklaşık 5 dakikamı aldı.
     Bir sorun görünmüyor.
 -   Form girdi alanlarını maskelemk için jquery ile yapılmış bir
@@ -36,8 +36,6 @@ tags: CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, upl
     "partilerini nternet sayfası"
   [3]: http://www.webrazzi.com/2008/09/09/techcrunch-50den-ilk-gun-izlenimleri/
     "TechCruch"
-  [4]: http://greg-wood.co.uk/blog/article/a-nice-little-css-positioning-technique
-    "css - p"
   [5]: http://digitalbush.com/projects/masked-input-plugin/
     "form girdi maskeleme"
   [6]: http://perishablepress.com/press/2007/10/23/a-killer-collection-of-global-css-reset-styles/

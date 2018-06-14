@@ -7,7 +7,7 @@ tags: Ajax, CSS performansı, css3, firebug, jquery, RSS ikonları, Seçiciler, 
 ---
 
 -   1 piksel kırılma ile yuvarlak kenarlı köşeler yapmak. [Bağlantı][]
--   Güzel bir Firebug makalesi. [Bağlantı][1]
+-   Güzel bir Firebug makalesi. http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug
 -   Butonların web tarayıcılarına göre kenar içi boşluğu(padding)
     farklılıkları. [Bağlantı][2]
 -   CSS performansı hakkında güzel bir makale. [Bağlantı][3]
@@ -22,8 +22,6 @@ tags: Ajax, CSS performansı, css3, firebug, jquery, RSS ikonları, Seçiciler, 
 
   [Bağlantı]: http://www.askthecssguy.com/2008/03/one_pixel_notched_corners_as_u.html
     "1 piksel"
-  [1]: http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug
-    "Firebug"
   [2]: http://www.designdetector.com/demos/buttons-padding-demo.html
     "butonlar"
   [3]: http://jpsykes.com/152/testing-css-performance-pt-2

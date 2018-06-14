@@ -219,7 +219,7 @@ Kalın sağlıcakla.
 -   [http://event-horizon.twiddles.com/sites/experimental/css3-bg/][]
 -   [http://css-tricks.com/css3-multiple-backgrounds-obsoletes-sliding-doors/][]
 -   [http://www.storiesinflight.com/html5/backgrounds.html][] (paralaks)
--   [http://www.lifeathighroad.com/css3-lessons/css3-lessons-multiple-background-images/][]
+-   http://www.lifeathighroad.com/css3-lessons/css3-lessons-multiple-background-images
 -   [http://www.paulrhayes.com/experiments/parallax/#experiment][]
 
   [Yuvarlak kenarlı kutular]: http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutular/
@@ -243,7 +243,6 @@ Kalın sağlıcakla.
   [http://event-horizon.twiddles.com/sites/experimental/css3-bg/]: http://event-horizon.twiddles.com/sites/experimental/css3-bg/
   [http://css-tricks.com/css3-multiple-backgrounds-obsoletes-sliding-doors/]: http://css-tricks.com/css3-multiple-backgrounds-obsoletes-sliding-doors/
   [http://www.storiesinflight.com/html5/backgrounds.html]: http://www.storiesinflight.com/html5/backgrounds.html
-  [http://www.lifeathighroad.com/css3-lessons/css3-lessons-multiple-background-images/]: http://www.lifeathighroad.com/css3-lessons/css3-lessons-multiple-background-images/
   [http://www.paulrhayes.com/experiments/parallax/#experiment]: http://www.paulrhayes.com/experiments/parallax/#experiment
 
 

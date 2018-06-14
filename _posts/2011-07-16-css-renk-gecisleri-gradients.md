@@ -483,7 +483,7 @@ Kalın sağlıcakla
 -   [http://webkit.org/blog/175/introducing-css-gradients/][]
 -   [http://www.westciv.com/tools/gradients/][] (Çevirimiçi araç)
 -   [http://css-tricks.com/css3-gradients/][] (Ayrıntılı)
--   [http://www.puremango.co.uk/2010/04/css-gradient-background/][]
+-   http://www.puremango.co.uk/2010/04/css-gradient-background
 -   [http://hacks.mozilla.org/2009/11/css-gradients-firefox-36/][]
 -   [http://ajaxian.com/archives/css-gradients-in-action][]
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-understanding-css3-gradients/][]
@@ -526,7 +526,6 @@ Kalın sağlıcakla
   [http://robertnyman.com/2010/02/15/css-gradients-for-all-web-browsers-without-using-images/]: http://robertnyman.com/2010/02/15/css-gradients-for-all-web-browsers-without-using-images/
   [http://webkit.org/blog/175/introducing-css-gradients/]: http://webkit.org/blog/175/introducing-css-gradients/
   [http://css-tricks.com/css3-gradients/]: http://css-tricks.com/css3-gradients/
-  [http://www.puremango.co.uk/2010/04/css-gradient-background/]: http://www.puremango.co.uk/2010/04/css-gradient-background/
   [http://hacks.mozilla.org/2009/11/css-gradients-firefox-36/]: http://hacks.mozilla.org/2009/11/css-gradients-firefox-36/
   [http://ajaxian.com/archives/css-gradients-in-action]: http://ajaxian.com/archives/css-gradients-in-action
   [http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-understanding-css3-gradients/]: http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-understanding-css3-gradients/

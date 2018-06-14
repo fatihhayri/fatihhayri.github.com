@@ -167,14 +167,13 @@ alınıyor ve daha hızlı erişiliyor.
 ## Kaynaklar
 
 -   [http://ff.im/dAPK6][Ben bu sorun için bir çözüm bulmuştum ancak Hüseyin Mert daha iyi bir çözüm buldu.]
--   [http://www.myinkblog.com/2009/08/04/10-tips-for-writing-better-jquery-code/][]
+-   http://www.myinkblog.com/2009/08/04/10-tips-for-writing-better-jquery-code
 -   [http://drupal.org/node/116548][]
 -   [http://snipplr.com/view/25148/jquery-search-text-replace/][]
 -   [http://docs.google.com/Doc?docid=0AXwjxxctLLc5ZGZwYnQ3Z2RfNTBkZjZ3MnJmOA&hl=tr][]
 
   [İpucu serisinin ilkine buradan ulaşabilirsiniz.]: http://www.fatihhayrioglu.com/jquery-ipuclari/
   [Ben bu sorun için bir çözüm bulmuştum ancak Hüseyin Mert daha iyi bir çözüm buldu.]: http://ff.im/dAPK6
-  [http://www.myinkblog.com/2009/08/04/10-tips-for-writing-better-jquery-code/]: http://www.myinkblog.com/2009/08/04/10-tips-for-writing-better-jquery-code/
   [http://drupal.org/node/116548]: http://drupal.org/node/116548
   [http://snipplr.com/view/25148/jquery-search-text-replace/]: http://snipplr.com/view/25148/jquery-search-text-replace/
   [http://docs.google.com/Doc?docid=0AXwjxxctLLc5ZGZwYnQ3Z2RfNTBkZjZ3MnJmOA&hl=tr]: http://docs.google.com/Doc?docid=0AXwjxxctLLc5ZGZwYnQ3Z2RfNTBkZjZ3MnJmOA&hl=tr

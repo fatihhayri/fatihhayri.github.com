@@ -23,7 +23,7 @@ tags: firebug, Firefox, HTML Form, internet explorer, jquery, saydam png, sorun,
 -   5 adet FireBug ekletisi. Eklentinin eklentisi olurmu demeyin.
     Kırık bağlantı.
 -   Garaj kapısı açılışı gibi menü yapmak. [Bağlantı][10]
--   jQuery ipucu: metin dosyasından veri almak. [Bağlantı][11]
+-   jQuery ipucu: metin dosyasından veri almak.
 
 
   [Bağlantı]: http://nettuts.com/javascript-ajax/15-resources-to-get-you-started-with-jquery-from-scratch/
@@ -41,5 +41,3 @@ tags: firebug, Firefox, HTML Form, internet explorer, jquery, saydam png, sorun,
     "Form ipuçları"
   [10]: http://css-tricks.com/garage-door-style-menu-using-animated-background-images-with-jquery/
     "Garaj kapısı açılışı"
-  [11]: http://www.detacheddesigns.com/blog/blogSpecific.aspx?BlogId=110
-    "metin dosyasından veri almak"

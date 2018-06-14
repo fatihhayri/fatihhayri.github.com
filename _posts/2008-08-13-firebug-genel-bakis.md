@@ -145,7 +145,7 @@ göreceğiz.
 -   [http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug][]
 -   [http://www.google.com/search?hl=en&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=Debugging+With+Firebug&btnG=Search][]
 -   [http://www.youtube.com/watch?v=FsX6qwQqGgQ][]
--   [http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug][]
+-   http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug
 -   [http://groups.google.com/group/firebug][]
 -   [http://www.seifi.org/javascript/firebug_tips_and_tricks.html][]
 -   [http://www.bildirgec.org/yazi/firebug-web-gelistirimi-gelistirildi][]
@@ -174,7 +174,6 @@ göreceğiz.
   [http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug]: http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug
   [http://www.google.com/search?hl=en&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=Debugging+With+Firebug&btnG=Search]: http://www.google.com/search?hl=en&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=Debugging+With+Firebug&btnG=Search
   [http://www.youtube.com/watch?v=FsX6qwQqGgQ]: http://www.youtube.com/watch?v=FsX6qwQqGgQ
-  [http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug]: http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug
   [http://groups.google.com/group/firebug]: http://groups.google.com/group/firebug
   [http://www.seifi.org/javascript/firebug_tips_and_tricks.html]: http://www.seifi.org/javascript/firebug_tips_and_tricks.html
   [http://www.bildirgec.org/yazi/firebug-web-gelistirimi-gelistirildi]: http://www.bildirgec.org/yazi/firebug-web-gelistirimi-gelistirildi

@@ -400,7 +400,7 @@ Kalın sağlıcakla
 -   [http://www.stuffandnonsense.co.uk/archives/css3_multi-column_thriller.html][]
 -   [http://www.superiorwebsys.com/blog/20/Creating_A_Multi-Column_Layout_Using_CSS3/][]
 -   [http://caniuse.com/multicolumn][] (tarayıcı destek)
--   [http://people.opera.com/pepelsbey/experiments/multicol/][] (güzel örnek)
+-   http://people.opera.com/pepelsbey/experiments/multicol
 -   [http://www.juude.info/css-columns.php][] (güzel)
 -   [http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/][] (sorunları)
 -   [http://help.dottoro.com/lcxquvkf.php][]
@@ -428,7 +428,6 @@ Kalın sağlıcakla
   [http://www.stuffandnonsense.co.uk/archives/css3_multi-column_thriller.html]: http://www.stuffandnonsense.co.uk/archives/css3_multi-column_thriller.html
   [http://www.superiorwebsys.com/blog/20/Creating_A_Multi-Column_Layout_Using_CSS3/]: http://www.superiorwebsys.com/blog/20/Creating_A_Multi-Column_Layout_Using_CSS3/
   [http://caniuse.com/multicolumn]: http://caniuse.com/multicolumn
-  [http://people.opera.com/pepelsbey/experiments/multicol/]: http://people.opera.com/pepelsbey/experiments/multicol/
   [http://www.juude.info/css-columns.php]: http://www.juude.info/css-columns.php
   [http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/]: http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/
   [http://help.dottoro.com/lcxquvkf.php]: http://help.dottoro.com/lcxquvkf.php

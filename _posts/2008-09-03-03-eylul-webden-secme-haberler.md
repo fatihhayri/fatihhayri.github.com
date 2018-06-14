@@ -12,7 +12,7 @@ tags: CSS filtreleme, display:inline-block, Erişebilirlik, Google Analytics, Go
     iş tatlıya bağlanır. [Bağlantı][1] 
 -   Internet Explorer 8.0 Beta 2 yayınlanmış. [Bağlantı][2] 
 -   Internet Explorer 8.0 Beta 2 ile gelen güvenlik yenilikleri -
-    daron.yondem.com [Bağlantı][3] 
+    daron.yondem.com
 -   display-inline:block hakkında güzel bir makale. [Bağlantı][4] 
 -   Ağustos ayında yayınlanmış güzel makaleler. Süper derleme. Kırık bağlantı.
 -   Web tasarımlarınızın erişebilirliğini ölçebileceğimiz 10 araç.
@@ -45,8 +45,6 @@ tags: CSS filtreleme, display:inline-block, Erişebilirlik, Google Analytics, Go
     "yazı tipi gömme"
   [2]: http://blogs.msdn.com/ie/archive/2008/08/27/internet-explorer-8-beta-2-now-available.aspx
     "ie 8 beta 2"
-  [3]: http://daron.yondem.com/tr/PermaLink.aspx?guid=b5a6af1b-2b5b-42ca-ae4b-ccd1c99441d3
-    "internet explorer 8"
   [4]: http://www.search-this.com/2008/08/28/lets-all-get-inline-in-a-block-in-a-block/
     "inline-block"
   [6]: http://sixrevisions.com/web-standards/accessibility_testtools/

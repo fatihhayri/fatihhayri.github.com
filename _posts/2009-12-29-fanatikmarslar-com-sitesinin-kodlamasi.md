@@ -21,7 +21,7 @@ için marşınızı paylaşabileceğiniz bir taraftar sitesidir.
 
 [Ayrıca Mustafa'nın siteyi tanıttığı televidyon'daki etohum programınıda izleminizi][] öneririm.
 
-Bu projede [Mustafa Özyurt][] ve [Hasan Yalçın][] ile birilikte
+Bu projede Mustafa Özyurt ve [Hasan Yalçın][] ile birilikte
 çalıştım. İki arkadaşımada teşekkürlerimi sunarak yazıma başlıyorum.
 Mustafa Özyurt hem projenin sahibi, hemde programlamasını yaptı.
 Tasarımlarda sevgili dostum Hasan Yalçın'a ait. Bende html, css ve
@@ -226,7 +226,6 @@ kodlaması ile başlayalım
 Bir sonraki makalede kaldığımız yerden devam edeceğiz.
 
   [Ayrıca Mustafa'nın siteyi tanıttığı televidyon'daki etohum programınıda izleminizi]: http://televidyon.com/p/2107/fanatikmarslarcom
-  [Mustafa Özyurt]: http://www.websoldier.net/
   [Hasan Yalçın]: http://www.hasanyalcin.com/
   [Klasör Yapısı]: /images/ders_01.gif
   [100]: /images/ders_02-e1262041236446.gif

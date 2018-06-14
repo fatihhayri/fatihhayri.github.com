@@ -14,7 +14,7 @@ tags: CSS, firebug, Firefox, jquery, Monitör çözünürlüğü, seo, tablo, Tw
     [Bağlantı][2]
 -   İyi bir jQuery kullanmak için izlenmesi gerek yol. [Bağlantı][3]
 -   Web kod yazarları için kod örnekleri sunan güzel bir site. Zamanla
-    içeriğinin dahada artacağını ümit ediyorum. [Bağlantı][4]
+    içeriğinin dahada artacağını ümit ediyorum.
 -   İnternette yazı tipi kullanma seçenekleri. Kırık bağlantı.
 -   CSS ve SEO - brkcan.com Kırık bağlantı.
 -   SEO Dediğin Tek Dişi Kalmış Canavar - mafiamax.com [Bağlantı][7]
@@ -36,7 +36,6 @@ tags: CSS, firebug, Firefox, jquery, Monitör çözünürlüğü, seo, tablo, Tw
   [2]: http://www.search-this.com/2008/08/13/my-css-is-cat-categories-with-css/
     "css katagoriler"
   [3]: http://effectize.com/jquery-developer-guide "jQuery"
-  [4]: http://devsnippets.com/ "kod örnekleri"
   [7]: http://www.mafiamax.com/2008/08/seo-dedigin-tek-disi-kalmis-canavar.html
   [10]: http://yuiblog.com/blog/2008/08/13/yui3pr1/ "yui 3"
   [11]: http://www.cssnewbie.com/generating-automatic-website-footnotes-with-jquery/

@@ -11,7 +11,7 @@ tags: css form, css stil değiştir, Firefox 3, jquery, WordPress, wordpress tem
 -   Sitelerimizi test edebileceğimiz 13 güzel araç. [Bağlantı][2]
 -   Javascript Css stil değiştirici hazırlamak - spaksu.com
     [Bağlantı][3]
--   jQuery animasyon yeteneklerini öğrenin. [Bağlantı][4]
+-   jQuery animasyon yeteneklerini öğrenin.
 -   Gelişmiş javascript animasyonları kullanılan 10 site. Gerçekten
     flash benzeri çözümler bunlar. [Bağlantı][5]
 -   5 dakikada CSS ile sayfa planı çıkarmak.
@@ -33,8 +33,6 @@ tags: css form, css stil değiştir, Firefox 3, jquery, WordPress, wordpress tem
     "test et"
   [3]: http://www.spaksu.com/javascript-css-stil-degistirici-hazirlamak/
     "css şekil değiştirme"
-  [4]: http://www.detacheddesigns.com/blog/blogSpecific.aspx?BlogId=78
-    "jquery animasyon"
   [5]: http://css.dzone.com/news/10-websites-that-use-javascrip
     "javascript mi flash mı"
   [7]: http://www.econsultant.com/i-want-wordpress-plugins/index.html#blogroll

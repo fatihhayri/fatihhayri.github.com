@@ -39,7 +39,7 @@ Gelelim yeniliklere;
     Eski pluginlerin bir çok dezavantajını gören Firefox bu konuda daha
     güzel bir çözüm bulmuş ama ne kadar kullanılır bilemem.
 -   **Gelişmiş Video Desteği:**Videolara tam ekran desteği ve HTML5 ile
-    gelen [poster frames][] desteği gelmiş. Şimdilik genel projelerimiz
+    gelen poster frames desteği gelmiş. Şimdilik genel projelerimiz
     için pek bir şey ifade etmiyor.
 -   **Javascript Performansı:** Javascript performansında hızlandırmaya
     gidilmiş. Ayrıntılı bilgi için [tıklayınız.][]
@@ -63,8 +63,7 @@ Gelelim yeniliklere;
         desteklemediği için şimdilik duracağız. Bu özelliği kullanımı
         ile neler yapabileceğimizi düşünmek bile yeter. Ah ulan
         Microsoft.
-    -   Farklı medya tiplerinin desteği geldi. Ayrıntı için
-        [tıklayınız.][1]
+    -   Farklı medya tiplerinin desteği geldi.
     -   [Background genişletme][] özelliği geldi, CSS3 ile birlikte
         gelen bu özellik, Firefox3.6 ile destekleniyor. Flash ile
         yapılan %100 genişlik ve yükseklikteki sitelerde ardalana
@@ -102,12 +101,10 @@ Birde yapımcılarından Mike Beltzner'dan dinleyelim
 
   [Buradan indirebilirsiniz.]: http://www.mozilla-europe.org/en/firefox/ "Buradan indirebilirsiniz."
   [Personas]: http://www.getpersonas.com/ "Personas"
-  [poster frames]: https://developer.mozilla.org/En/HTML/Element/Video "poster frames"
   [tıklayınız.]: http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/ "tıklayınız."
   [font-face]: http://www.fatihhayrioglu.com/font-face-kullanimi/ "font-face"
   [Gradyen]: https://developer.mozilla.org/en/Using_gradients "Gradyen"
   [Çoklu background desteği]: https://developer.mozilla.org/en/CSS/Multiple_backgrounds "Çoklu background desteği"
-  [1]: https://developer.mozilla.org/En/CSS/Media_queries#Mozilla-specific_media_features "tıklayınız."
   [Background genişletme]: https://developer.mozilla.org/en/CSS/Scaling_background_images "Background genişletme"
   [File API]: http://hacks.mozilla.org/2009/12/w3c-fileapi-in-firefox-3-6/ "File API"
   [videoyu izleyin]: http://hacks.mozilla.org/2009/12/file-drag-and-drop-in-firefox-3-6/ "videoyu izleyin"

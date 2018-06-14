@@ -6,6 +6,4 @@ Category: CSS
 
 CSS'in farklı Web Taracılarındaki sorunları nedeni ile yazdığımız
 filtrelerin tam listesini sunan güzel bir site
-[http://www.centricle.com/ref/css/filters/][]
-
-  [http://www.centricle.com/ref/css/filters/]: http://www.centricle.com/ref/css/filters/
+-http://www.centricle.com/ref/css/filters/-

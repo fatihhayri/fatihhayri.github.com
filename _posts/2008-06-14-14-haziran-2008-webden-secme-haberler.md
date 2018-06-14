@@ -6,7 +6,7 @@ Category: Haberler
 tags: Alıntı, ASP.NET, CSS kenar çizgisi, Firefox 3, Firefox Picnic, jquery, json, mailing, rss, Vdsl, wordpress güvenlik
 ---
 
--   Asp.Net 3.5'da JSon kullanmak. [Bağlantı][]
+-   Asp.Net 3.5'da JSon kullanmak.
 -   Hackerlar gözünü günlüklere çevirmiş. WordPress kullanıcıları dikkat
     güvenlik önlemleriniz alın. Bende buna dahilim. [Bağlantı][1]
 -   Güzel bir RSS ikon seti listesi. [Bağlantı][2]
@@ -25,8 +25,6 @@ tags: Alıntı, ASP.NET, CSS kenar çizgisi, Firefox 3, Firefox Picnic, jquery, 
 -   Firefox Picnic eklentisini anlatan güzel bir video. [Bağlantı][12]
 
 
-  [Bağlantı]: http://dotnetslackers.com/articles/aspnet/Using-JSON-With-ASPNET-35.aspx
-    "asp.net json"
   [1]: http://www.techcrunch.com/2008/06/11/my-blog-was-hacked-is-yours-next-huge-wordpress-security-issues/
     "wordpress güvenlik"
   [2]: http://shoutingzone.com/blackhat/index.php?topic=1053.0

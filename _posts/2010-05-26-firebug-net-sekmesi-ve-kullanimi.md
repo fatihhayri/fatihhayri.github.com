@@ -180,7 +180,7 @@ tanımlanan bu istek ve cevaplarıda Net panelinden izlememiz mümkündür.
 Bir sayfada ajax isteği olduğu durumları Net panelindeki XHR sekmesinden
 izleyebilir ve bilgilerini buradan alabiliriz.
 
-[http://www.janodvarko.cz/firebug/tests/BreakOnXHR/breakOnXHR.html][]
+http://www.janodvarko.cz/firebug/tests/BreakOnXHR/breakOnXHR.html
 Örnek sayfasını incelersek
 
 ![][10]
@@ -226,7 +226,6 @@ açıkça gösterir ve düzeltmemiz için önerilerde bulunur.
   [7]: /images/fh_firebug_net_sekme_09.png
   [8]: /images/fh_firebug_net_sekme_10.gif
   [9]: /images/fh_firebug_net_sekme_11.gif
-  [http://www.janodvarko.cz/firebug/tests/BreakOnXHR/breakOnXHR.html]: http://www.janodvarko.cz/firebug/tests/BreakOnXHR/breakOnXHR.html
   [10]: /images/firebug_net8-255x300.gif
   [YSlow]: https://addons.mozilla.org/en-US/firefox/addon/5369/ "YSlow"
   [Page Speed]: http://code.google.com/speed/page-speed/ "Page Speed"

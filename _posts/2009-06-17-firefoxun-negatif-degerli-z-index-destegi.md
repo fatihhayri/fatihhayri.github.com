@@ -32,7 +32,7 @@ tanımı kullanabiliriz.
 
 -   [http://buynowshop.com/2009/05/css-tip-firefox-z-index-value/][]
 -   [http://www.codingforums.com/archive/index.php/t-112997.html][]
--   [http://74.125.77.132/search?q=cache:RJsWV8wD1lwJ:www.experts-exchange.com/Web_Development/Web_Languages-Standards/CSS/Q_21249004.html+firefox+z-index+support+negative+value&cd=6&hl=en&ct=clnk&client=firefox-a][]
+-   http://74.125.77.132/search?q=cache:RJsWV8wD1lwJ:www.experts-exchange.com/Web_Development/Web_Languages-Standards/CSS/Q_21249004.html+firefox+z-index+support+negative+value&cd=6&hl=en&ct=clnk&client=firefox-a
 -   [http://forums.mozillazine.org/viewtopic.php?f=9&t=20413&start=0&st=0&sk=t&sd=a][]
 -   [http://css.dzone.com/news/css-support-firefox-3-and-oper][]
 -   [http://archivist.incutio.com/viewlist/css-discuss/5061][]
@@ -42,8 +42,6 @@ tanımı kullanabiliriz.
     "http://buynowshop.com/2009/05/css-tip-firefox-z-index-value/"
   [http://www.codingforums.com/archive/index.php/t-112997.html]: http://www.codingforums.com/archive/index.php/t-112997.html
     "http://www.codingforums.com/archive/index.php/t-112997.html"
-  [http://74.125.77.132/search?q=cache:RJsWV8wD1lwJ:www.experts-exchange.com/Web_Development/Web_Languages-Standards/CSS/Q_21249004.html+firefox+z-index+support+negative+value&cd=6&hl=en&ct=clnk&client=firefox-a]: http://74.125.77.132/search?q=cache:RJsWV8wD1lwJ:www.experts-exchange.com/Web_Development/Web_Languages-Standards/CSS/Q_21249004.html+firefox+z-index+support+negative+value&cd=6&hl=en&ct=clnk&client=firefox-a
-    "http://74.125.77.132/search?q=cache:RJsWV8wD1lwJ:www.experts-exchange.com/Web_Development/Web_Languages-Standards/CSS/Q_21249004.html+firefox+z-index+support+negative+value&cd=6&hl=en&ct=clnk&client=firefox-a"
   [http://forums.mozillazine.org/viewtopic.php?f=9&t=20413&start=0&st=0&sk=t&sd=a]: http://forums.mozillazine.org/viewtopic.php?f=9&t=20413&start=0&st=0&sk=t&sd=a
     "http://forums.mozillazine.org/viewtopic.php?f=9&t=20413&start=0&st=0&sk=t&sd=a"
   [http://css.dzone.com/news/css-support-firefox-3-and-oper]: http://css.dzone.com/news/css-support-firefox-3-and-oper

@@ -205,7 +205,7 @@ Bu kodları ekledikten sonra sorunumuz düzeldi.
 -   [http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/][]
 -   [http://helephant.com/2009/08/a-great-big-welcome-to-inline-block/][]
 -   [http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/][]
--   [http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html][]
+-   http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html
 -   [http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/][]
 -   [http://www.quirksmode.org/css/display.html#t03][]
 -   [http://www.sitepoint.com/forums/showthread.php?t=596130][] (sorun )
@@ -224,7 +224,6 @@ Bu kodları ekledikten sonra sorunumuz düzeldi.
   [http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/]: http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/
   [http://helephant.com/2009/08/a-great-big-welcome-to-inline-block/]: http://helephant.com/2009/08/a-great-big-welcome-to-inline-block/
   [http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/]: http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/
-  [http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html]: http://kempwire.com/browsers/firefox-2-does-not-support-inline-block.html
   [http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/]: http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/
   [http://www.quirksmode.org/css/display.html#t03]: http://www.quirksmode.org/css/display.html#t03
   [http://www.sitepoint.com/forums/showthread.php?t=596130]: http://www.sitepoint.com/forums/showthread.php?t=596130

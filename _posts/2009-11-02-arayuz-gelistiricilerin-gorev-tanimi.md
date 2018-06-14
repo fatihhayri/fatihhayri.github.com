@@ -56,7 +56,7 @@ birimler kurulabilir. Daha da ileri gidip jquery geliştirici bile
 aranabilir. Malum sektör hızlı gelişiyor.
 
 -   [http://www.cherny.com/webdev/105/front-end-web-designers-developers-and-engineers][]
--   [http://fuelyourcoding.com/steps-to-becoming-a-front-end-web-developer/][]
+-   http://fuelyourcoding.com/steps-to-becoming-a-front-end-web-developer
 -   [http://onlinetools.org/articles/fed2.html][]
 
   [FirendFeed'deki Arayüz Geliştiricileri]: http://friendfeed.com/arayuz-gelistiriciler
@@ -65,5 +65,4 @@ aranabilir. Malum sektör hızlı gelişiyor.
   [HTML Mailing 2 – Mailing HTML Kodunun Yazılması]: http://www.fatihhayrioglu.com/html-mailing-2-mailing-html-kodunun-yazilmasi/
   [**Yenilikçi:** Web mecrasındaki gelişmeleri takip etmeli ve uygulamalarında bu yenilikleri gerektiğinde kullanmalıdır.]: http://www.fatihhayrioglu.com/yeniliklerin-takibi/
   [http://www.cherny.com/webdev/105/front-end-web-designers-developers-and-engineers]: http://www.cherny.com/webdev/105/front-end-web-designers-developers-and-engineers
-  [http://fuelyourcoding.com/steps-to-becoming-a-front-end-web-developer/]: http://fuelyourcoding.com/steps-to-becoming-a-front-end-web-developer/
   [http://onlinetools.org/articles/fed2.html]: http://onlinetools.org/articles/fed2.html

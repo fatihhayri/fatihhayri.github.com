@@ -19,7 +19,7 @@ tags: blog, caps-lock, font, Haberler, oval-buton, takvim
 -   Explorer 7 birinci yılını doldurmuş. 300 milyon kullanıcıya ulaşmış.
     [Bağlantı][8]
 -   Kurumların çalışanlarının bloglarının kurumların kendi sitelerinden
-    daha popüler olduğunu biliyor muydunuz? [Bağlantı][9]
+    daha popüler olduğunu biliyor muydunuz?
 -   IE6'de Saydam PNG çözümü. [Bağlantı][10]
 -   Caps Lock tuşunu açın scripti. [Bağlantı][11]
 -   Kullanışlı CSS araçları [Bağlantı][12]
@@ -41,8 +41,6 @@ tags: blog, caps-lock, font, Haberler, oval-buton, takvim
     "css format"
   [8]: http://blogs.msdn.com/ie/archive/2007/11/30/the-first-year-of-ie7.aspx
     "ie 7"
-  [9]: http://daron.yondem.com/tr/PermaLink.aspx?guid=9334431f-c6dc-480b-8823-ed261ace530d
-    "günlük yükselişi"
   [10]: http://24ways.org/2007/supersleight-transparent-png-in-ie6
     "saydam png"
   [11]: http://24ways.org/2007/capturing-caps-lock "caps lock"

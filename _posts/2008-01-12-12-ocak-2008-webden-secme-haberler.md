@@ -10,7 +10,7 @@ tags: Anlamlı web, css3.0, favicon, google, Haberler, Opera, seo, text-decorati
     [Bağlantı][]
 -   Yahoo Medya player ile sitenize görüntü/ses oynatıcı gömebilirsiniz.
     [Bağlantı][1]
--   VS.NET 2008 yenilikleri. [Bağlantı][2]
+-   VS.NET 2008 yenilikleri.
 -   CSS düzeltme olmadan kullanmak. [Bağlantı][3]
 -   50 güzel favori ikonu. [Bağlantı][4]
 -   CSS3'ün 3 yeni özelliği(birden fazla zemin resmi, saydamlık ve
@@ -31,8 +31,6 @@ tags: Anlamlı web, css3.0, favicon, google, Haberler, Opera, seo, text-decorati
 
   [Bağlantı]: http://www.orhanekici.com/?p=5 "SEO"
   [1]: http://developer.yahoo.com/mediaplayer/ "görüntü oynatıcı"
-  [2]: http://daron.yondem.com/tr/PermaLink.aspx?guid=cac3b33a-789c-4830-9e60-7804f1cf9213
-    "vs.net 2008 yenilikleri"
   [3]: http://www.digital-web.com/articles/CSS_not_hacks/ "css hack"
   [4]: http://www.smashingmagazine.com/2008/01/01/favicons-episode-5-the-delicate-beauties/
     "favicon"

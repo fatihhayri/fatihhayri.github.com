@@ -41,8 +41,7 @@ Sultan Mehmed Han’ın “Fatih” olmasına şahit olacak; bu idealist Hakanı
 uykusuz gecelerinde ona arkadaşlık edeceksiniz. Bizans Surlarının
 önünde, bazen onun dualarına eşlik edecek, şiirleriyle tanışacak, at
 üstünde geçen elli yıllık bir ömrün azmine, iradesine, hayran
-kalacaksınız. Ayrıntılı bilgi için [tıklayınız.][]
+kalacaksınız.
 
   [sahicihan]: /images/sahicihan-95x150.jpg
     "sahicihan"
-  [tıklayınız.]: http://www.bky.com.tr/book_details.asp?id=143&r=08.02.2009+16%3A17%3A17

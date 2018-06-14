@@ -63,7 +63,7 @@ aşağıda veriyorum.
 
 -   [http://davidwalsh.name/combine-css-media-styles-file][]
 -   [http://developer.yahoo.com/performance/rules.html#num_http][]
--   [http://www.vulgarisoip.com/2007/06/21/minify-your-external-javascript-and-css-with-php/][]
+-   http://www.vulgarisoip.com/2007/06/21/minify-your-external-javascript-and-css-with-php
 -   [http://www.websiteoptimization.com/speed/tweak/http/][]
 -   [http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml][]
 -   [http://yuiblog.com/blog/2006/11/28/performance-research-part-1/][]
@@ -75,8 +75,6 @@ aşağıda veriyorum.
   [optimizedenonce]: /images/optimizedenonce-300x108.gif "optimizedenonce"
   [http://davidwalsh.name/combine-css-media-styles-file]: http://davidwalsh.name/combine-css-media-styles-file "http://davidwalsh.name/combine-css-media-styles-file"
   [http://developer.yahoo.com/performance/rules.html#num_http]: http://developer.yahoo.com/performance/rules.html#num_http "http://developer.yahoo.com/performance/rules.html#num_http"
-  [http://www.vulgarisoip.com/2007/06/21/minify-your-external-javascript-and-css-with-php/]: http://www.vulgarisoip.com/2007/06/21/minify-your-external-javascript-and-css-with-php/
-    "http://www.vulgarisoip.com/2007/06/21/minify-your-external-javascript-and-css-with-php/"
   [http://www.websiteoptimization.com/speed/tweak/http/]: http://www.websiteoptimization.com/speed/tweak/http/
     "http://www.websiteoptimization.com/speed/tweak/http/"
   [http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml]: http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml

@@ -447,7 +447,7 @@ sağlayacaktır.
 -   [http://www.useragentman.com/IETransformsTranslator/][] (ie için çözüm)
 -   [http://www.standardista.com/css3-transforms][]
 -   [http://www.webdesigncreare.co.uk/blog/html-css/css3-transforms.html][]
--   [http://professionalaspnet.com/archive/2011/03/17/IE9-Supports-CSS3-Transforms_2100_.aspx][]
+-   http://professionalaspnet.com/archive/2011/03/17/IE9-Supports-CSS3-Transforms_2100_.aspx
 -   [http://www.sitepoint.com/a-primer-on-css3-transforms/][]
 -   [https://developer.mozilla.org/en/css/-moz-transform][]
 -   [http://blog.typekit.com/2011/01/25/case-study-getting-hardboiled-with-css3-2d-transforms/][]
@@ -501,7 +501,6 @@ sağlayacaktır.
   [http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/]: http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/
   [http://www.standardista.com/css3-transforms]: http://www.standardista.com/css3-transforms
   [http://www.webdesigncreare.co.uk/blog/html-css/css3-transforms.html]: http://www.webdesigncreare.co.uk/blog/html-css/css3-transforms.html
-  [http://professionalaspnet.com/archive/2011/03/17/IE9-Supports-CSS3-Transforms_2100_.aspx]: http://professionalaspnet.com/archive/2011/03/17/IE9-Supports-CSS3-Transforms_2100_.aspx
   [http://www.sitepoint.com/a-primer-on-css3-transforms/]: http://www.sitepoint.com/a-primer-on-css3-transforms/
   [https://developer.mozilla.org/en/css/-moz-transform]: https://developer.mozilla.org/en/css/-moz-transform
   [http://blog.typekit.com/2011/01/25/case-study-getting-hardboiled-with-css3-2d-transforms/]: http://blog.typekit.com/2011/01/25/case-study-getting-hardboiled-with-css3-2d-transforms/

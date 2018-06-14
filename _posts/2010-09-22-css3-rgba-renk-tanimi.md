@@ -196,7 +196,7 @@ tarayıcılar için standart kod kullanılır.
 -   [http://www.w3.org/TR/css3-color/#rgba-color][]
 -   [http://css-tricks.com/rgba-browser-support/][]
 -   [http://www.gograybox.com/blog/qt-css3-rgba/][]
--   [http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock][]
+-   http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock
 -   [http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/][]
 -   [http://www.css3.info/introduction-opacity-rgba/][]
 -   [http://dorward.me.uk/www/css/alpha-colour/][]
@@ -216,7 +216,6 @@ tarayıcılar için standart kod kullanılır.
   [http://www.w3.org/TR/css3-color/#rgba-color]: http://www.w3.org/TR/css3-color/#rgba-color
   [http://css-tricks.com/rgba-browser-support/]: http://css-tricks.com/rgba-browser-support/
   [http://www.gograybox.com/blog/qt-css3-rgba/]: http://www.gograybox.com/blog/qt-css3-rgba/
-  [http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock]: http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock
   [http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/]: http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/
   [http://www.css3.info/introduction-opacity-rgba/]: http://www.css3.info/introduction-opacity-rgba/
   [http://dorward.me.uk/www/css/alpha-colour/]: http://dorward.me.uk/www/css/alpha-colour/

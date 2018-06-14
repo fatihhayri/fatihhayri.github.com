@@ -877,17 +877,17 @@ Firefox için -moz ön eki kullanılması gerekiyor.
 -   [http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/][]
 -   [http://tools.css3.info/selectors-test/test.html][] (test aracı)
 -   [http://24ways.org/2009/cleaner-code-with-css3-selectors][]
--   [http://ie.microsoft.com/testdrive/HTML5/CSS3Selectors/Default.html][]
+-   http://ie.microsoft.com/testdrive/HTML5/CSS3Selectors/Default.html
 -   [http://www.w3schools.com/cssref/css_selectors.asp][]
 -   [http://www.quirksmode.org/blog/archives/2010/06/ies_big_leap_fo.html][]
 -   [http://www.quirksmode.org/css/contents.html][]
 -   [http://selectivizr.com/][] (ie için çözüm)
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/][]
--   [http://inspectelement.com/tutorials/a-look-at-some-of-the-new-selectors-introduced-in-css3/][]
+-   http://inspectelement.com/tutorials/a-look-at-some-of-the-new-selectors-introduced-in-css3/
 -   [http://caniuse.com/css-sel3][] (tarayıcı destek listesi)
 -   [http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/][]
 -   [http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/][]
--   [http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/][]
+-   http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/
 -   [http://perishablepress.com/awesome-new-css3-selectors/][] (ilginç)
 -   [https://developer.mozilla.org/en/firefox_3.5_for_developers][]
 -   [https://developer.mozilla.org/en/CSS/%3Achecked][]
@@ -915,17 +915,14 @@ Firefox için -moz ön eki kullanılması gerekiyor.
   [http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/]: http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/
   [http://tools.css3.info/selectors-test/test.html]: http://tools.css3.info/selectors-test/test.html
   [http://24ways.org/2009/cleaner-code-with-css3-selectors]: http://24ways.org/2009/cleaner-code-with-css3-selectors
-  [http://ie.microsoft.com/testdrive/HTML5/CSS3Selectors/Default.html]: http://ie.microsoft.com/testdrive/HTML5/CSS3Selectors/Default.html
   [http://www.w3schools.com/cssref/css_selectors.asp]: http://www.w3schools.com/cssref/css_selectors.asp
   [http://www.quirksmode.org/blog/archives/2010/06/ies_big_leap_fo.html]: http://www.quirksmode.org/blog/archives/2010/06/ies_big_leap_fo.html
   [http://www.quirksmode.org/css/contents.html]: http://www.quirksmode.org/css/contents.html
   [http://selectivizr.com/]: http://selectivizr.com/
   [http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/]: http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/
-  [http://inspectelement.com/tutorials/a-look-at-some-of-the-new-selectors-introduced-in-css3/]: http://inspectelement.com/tutorials/a-look-at-some-of-the-new-selectors-introduced-in-css3/
   [http://caniuse.com/css-sel3]: http://caniuse.com/css-sel3
   [http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/]: http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/
   [http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/]: http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/
-  [http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/]: http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/
   [http://perishablepress.com/awesome-new-css3-selectors/]: http://perishablepress.com/awesome-new-css3-selectors/
   [https://developer.mozilla.org/en/firefox_3.5_for_developers]: https://developer.mozilla.org/en/firefox_3.5_for_developers
   [https://developer.mozilla.org/en/CSS/%3Achecked]: https://developer.mozilla.org/en/CSS/%3Achecked

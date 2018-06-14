@@ -9,7 +9,7 @@ tags: Firefox, Haberler, innerHTml, linq, opacity
 26 Aralık
 
 
--   "LINQ'nun diğer yüzü :)" [Bağlantı][]
+-   "LINQ'nun diğer yüzü :)" http://daron.yondem.com/tr/PermaLink.aspx?guid=86729470-1741-4039-8fe4-b66371f1b2cf
 -   Doğrulanmış CSS ile saydamlaştırma özelliği eklemek. Bilindiği gibi
     opacity özelliğinin farklı tarayıcılardaki kodu W3C validator'dan
     geçmiyor, CSS3 ile bu durum düzeltilmiş olsa bile, şimdilik burada
@@ -26,8 +26,6 @@ tags: Firefox, Haberler, innerHTml, linq, opacity
 -   Firefox 3(Beta)'ün 5 güzel yenliği. [Bağlantı][10]
 
 
-  [Bağlantı]: http://daron.yondem.com/tr/PermaLink.aspx?guid=86729470-1741-4039-8fe4-b66371f1b2cf
-    "LINQ"
   [2]: http://www.eburhan.com/css-ile-hazirladigim-mesaj-kutulari/
     "mesaj kutuları"
   [3]: http://techtracer.com/2007/12/17/the-power-of-google-chart-api/

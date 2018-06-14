@@ -14,7 +14,7 @@ tags: Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, 
     inceleme. [Bağlantı][3]
 -   Volkan Görgülü yeni bir stei açmış, XHTML ve CSS hakkında ilk konusu
     "CSS Sprite Tekniği" Kırık bağlantı.
--   Firefox 3 rekoru kırabildi mi? - cnetturkiye.com [Bağlantı][5]
+-   Firefox 3 rekoru kırabildi mi? - cnetturkiye.com
 -   Uygulamalarımızda kullanabileceğimiz 15 CSS + XHTML uygulaması.
     [Bağlantı][6]
 -   Firefox3 en çok indirilen program olarak Guinness rekorlar kitabına
@@ -38,7 +38,6 @@ tags: Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, 
     "wordpress etiket"
   [3]: http://css-tricks.com/cutting-edge-browsers-and-their-development-tools/
     "web araçları"
-  [5]: http://cnetturkiye.com/haberler/925 "Firefox 3"
   [6]: http://socialcmsbuzz.com/15-css-and-html-tutorials-you-can-use-in-your-projects-01072008/
     "uygulamlar"
   [7]: http://www.mozilla.com/en-US/press/mozilla-2008-07-02.html

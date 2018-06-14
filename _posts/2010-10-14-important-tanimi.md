@@ -152,7 +152,7 @@ okunaksız hale getirebilir, buna dikkat etmek gerekir.
 
 ## Kaynaklar
 
--   [http://bytesizecss.com/blog/post/ie6-and-the-important-rule/][]
+-   http://bytesizecss.com/blog/post/ie6-and-the-important-rule
 -   [http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/][]
 -   [http://www.electrictoolbox.com/using-important-css/][]
 -   [http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml][]
@@ -169,7 +169,6 @@ okunaksız hale getirebilir, buna dikkat etmek gerekir.
   [4]: https://lh4.googleusercontent.com/k4feQBZhKIgAEdx-nVS7HLKHhYCjBboutU5CxKoI_sxdt53CUgH98KJB0fXzcpVbDbrEq3-y9Bi8Mxbo_nkBEPFhfhY-fxVKdVS13qJnykWupm4qOg
   [http://www.fatihhayrioglu.com/css-de-kodumuzu-ieden-gizleme/]: http://www.fatihhayrioglu.com/css-de-kodumuzu-ieden-gizleme/
   [Fatih Turan]: http://www.fatihturan.com/
-  [http://bytesizecss.com/blog/post/ie6-and-the-important-rule/]: http://bytesizecss.com/blog/post/ie6-and-the-important-rule/
   [http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/]: http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/
   [http://www.electrictoolbox.com/using-important-css/]: http://www.electrictoolbox.com/using-important-css/
   [http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml]: http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml

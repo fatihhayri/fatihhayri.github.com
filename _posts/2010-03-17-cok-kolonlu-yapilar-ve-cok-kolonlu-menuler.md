@@ -557,7 +557,7 @@ Aslında bu yöntem bir önceki metodun tamamlayıcı bir metodudur.
 Bu metotta css3 column-count özelliği ile yine css ile kodu yazacağız,
 javascript ile de desteklemeyen tarayıcılara uyumlu hale getireceğiz.
 
-Bu javascript kodunu [csscripting.com][] sitende yayınlanmış, ancak bu
+Bu javascript kodunu csscripting.com sitende yayınlanmış, ancak bu
 site yayında değil [cvwdesign.com][] sitesinde kodu buldum. Açıkça
 söylemek gerekirse bunun dışında çalışan javascript kodu bulamadım. 
 
@@ -609,7 +609,7 @@ yazdım linklerini.
 
 -   [http://www.useit.com/alertbox/mega-dropdown-menus.html][] (genel bilgi)
 -   [http://articles.techrepublic.com.com/5100-10878_11-5810687.html][] 
--   [http://www.communitymx.com/content/article.cfm?page=1&cid=27F87][]
+-   http://www.communitymx.com/content/article.cfm?page=1&cid=27F87
 -   [http://www.alistapart.com/articles/multicolumnlists/][]
 -   [http://archivist.incutio.com/viewlist/css-discuss/88422][]
 -   [http://www.cssplay.co.uk/menus/drop_lists.html][] (örnek)
@@ -636,13 +636,11 @@ yazdım linklerini.
   [3]: /dokumanlar/cok_kolonlu/metot3.html
   [4]: /dokumanlar/cok_kolonlu/metot3_.html
   [5]: /dokumanlar/cok_kolonlu/metot4.html
-  [csscripting.com]: http://www.csscripting.com/ "csscripting.com"
   [cvwdesign.com]: http://www.cvwdesign.com "cvwdesign.com"
   [çevrimiçi yui kompresor]: http://refresh-sf.com/yui/
   [6]: /dokumanlar/cok_kolonlu/metot5.html
   [http://www.useit.com/alertbox/mega-dropdown-menus.html]: http://www.useit.com/alertbox/mega-dropdown-menus.html
   [http://articles.techrepublic.com.com/5100-10878_11-5810687.html]: http://articles.techrepublic.com.com/5100-10878_11-5810687.html
-  [http://www.communitymx.com/content/article.cfm?page=1&cid=27F87]: http://www.communitymx.com/content/article.cfm?page=1&cid=27F87
   [http://www.alistapart.com/articles/multicolumnlists/]: http://www.alistapart.com/articles/multicolumnlists/
   [http://archivist.incutio.com/viewlist/css-discuss/88422]: http://archivist.incutio.com/viewlist/css-discuss/88422
   [http://www.cssplay.co.uk/menus/drop_lists.html]: http://www.cssplay.co.uk/menus/drop_lists.html

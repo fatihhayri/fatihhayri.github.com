@@ -22,7 +22,7 @@ En çok örnek verilen site:  [apple.com][]
 Basit yapılı bir yerimi: bonus.com.tr
 
 ![][2]
-Basit yapılı bir örnek daha: [http://turkcetwitter.livego.com/][]
+Basit yapılı bir örnek daha: http://turkcetwitter.livego.com/
 
 ![][3]
 Farklı renkte bir uygulama: [http://www.ligonier.org/rym/][]
@@ -183,7 +183,7 @@ ul#yerimi li a:hover {
 
 -   [http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/][]
 -   [http://quince.infragistics.com/Patterns/Breadcrumbs.aspx][]
--   [http://www.patternry.com/p=breadcrumbs/][] (mantalitesi)
+-   http://www.patternry.com/p=breadcrumbs
 -   [http://www.useit.com/alertbox/breadcrumbs.html][] (mantalite)
 -   [http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs][]
 -   [http://css-tricks.com/triangle-breadcrumbs/][]
@@ -195,7 +195,6 @@ ul#yerimi li a:hover {
   [apple.com]: http://apple.com/
   [1]: https://lh4.googleusercontent.com/no7XnBrOmyF66RtVSzdoxXAsrl6frfkf9rI4LWlhPPDkhHfTY1TCySUw6f_Dq8f3QetCwumi1a-GICmJBWvIEB5fnHlmn1e6MPibppSRuDHT5tRdKo0
   [2]: https://lh5.googleusercontent.com/IQt1148PPVIL-vSBZKHip_6cp2n37DrNCQFUA-7MDqSlZcz0tFbNMW2mFpWUtKPB7my3QgXWxiNS7WHV-4WS2XF_Hy2ClKOzQS-o8YqsdGp8aHRAFLQ
-  [http://turkcetwitter.livego.com/]: http://turkcetwitter.livego.com/
   [3]: https://lh5.googleusercontent.com/F_sdKWSr8txPpfc9z_nEoAKylGdLE0NvacGpz2ZSVwC4MIAvjBZTXqWhJcNDxH0XvMPbEg-oQyIjFjYff0rvmG2la7v04rNTKDgKi_4yyajGYivoSsM
   [http://www.ligonier.org/rym/]: http://www.ligonier.org/rym/
   [4]: https://lh4.googleusercontent.com/75rWf8zu_B2K74XYemzIurOBOa77xi2G_T_GURm84FGlxDl0ggS_n_YBhPy1G7lsByC_ukLT-w_B4EE3qRFYL1UupuMb9OHAA30dgiCV1A_1nTV-8es
@@ -205,7 +204,6 @@ ul#yerimi li a:hover {
   [5]: https://lh3.googleusercontent.com/OjH1IANl7PK66MMTvt58TUuh-jpAteN0eNeRmErj7ndN5bceqRpoxyqz1gox1LsEFUkX3vw4Qh7hISY0C3yuCTJkY4nFIi8hVtPnj8Oqo-U2zeGyabs
   [http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/]: http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/
   [http://quince.infragistics.com/Patterns/Breadcrumbs.aspx]: http://quince.infragistics.com/Patterns/Breadcrumbs.aspx
-  [http://www.patternry.com/p=breadcrumbs/]: http://www.patternry.com/p=breadcrumbs/
   [http://www.useit.com/alertbox/breadcrumbs.html]: http://www.useit.com/alertbox/breadcrumbs.html
   [http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs]: http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs
   [http://css-tricks.com/triangle-breadcrumbs/]: http://css-tricks.com/triangle-breadcrumbs/

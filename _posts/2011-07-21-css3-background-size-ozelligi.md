@@ -117,7 +117,7 @@ Kalın sağlıcakla
 -   [http://www.css3.info/preview/background-size/][]
 -   [http://www.w3schools.com/cssref/css3_pr_background-size.asp][]
 -   [http://www.quirksmode.org/css/background.html][]
--   [http://webdesign.about.com/od/styleproperties/p/blspbgsize.htm][]
+-   http://webdesign.about.com/od/styleproperties/p/blspbgsize.htm
 -   [http://www.css3.info/liquid-faux-columns-with-background-size/][]
 -   [http://css-tricks.com/3458-perfect-full-page-background-image/][]
 -   [http://www.cssplay.co.uk/boxes/css3-background.html][] (örnek)
@@ -137,7 +137,6 @@ Kalın sağlıcakla
   [http://www.css3.info/preview/background-size/]: http://www.css3.info/preview/background-size/
   [http://www.w3schools.com/cssref/css3_pr_background-size.asp]: http://www.w3schools.com/cssref/css3_pr_background-size.asp
   [http://www.quirksmode.org/css/background.html]: http://www.quirksmode.org/css/background.html
-  [http://webdesign.about.com/od/styleproperties/p/blspbgsize.htm]: http://webdesign.about.com/od/styleproperties/p/blspbgsize.htm
   [http://www.css3.info/liquid-faux-columns-with-background-size/]: http://www.css3.info/liquid-faux-columns-with-background-size/
   [http://css-tricks.com/3458-perfect-full-page-background-image/]: http://css-tricks.com/3458-perfect-full-page-background-image/
   [http://www.cssplay.co.uk/boxes/css3-background.html]: http://www.cssplay.co.uk/boxes/css3-background.html

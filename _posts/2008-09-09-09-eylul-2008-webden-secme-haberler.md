@@ -15,8 +15,7 @@ tags: Fix Feed, form, gameQuery, Google Chrome, ie6, jquery, poster, rss, WordPr
 -   WordPress sitenizde silmeniz gerek 13 kod. [Bağlantı][5]
 -   gameQuery ile oyun kodlamak. jQuery alt yapısını kullana gameQuery
     bize oyun kodlamak için kolaylıklar sağlıyor [Bağlantı][6]
--   Şehriderya Wordpress Teması Huzurlarınızda… - sehriderya.net
-    [Bağlantı][7]
+-   Şehriderya Wordpress Teması Huzurlarınızda... - sehriderya.net
 -   Web tasarımcıları için posterler. [Bağlantı][8]
 -   jQuery öğrenmeye başlamak için.
 -   Internet Explorer 6 bloklamak için. [Bağlantı][10]
@@ -40,8 +39,6 @@ tags: Fix Feed, form, gameQuery, Google Chrome, ie6, jquery, poster, rss, WordPr
   [5]: http://www.problogdesign.com/general-tips/13-tags-to-delete-from-your-theme/
     "wordpress kod sil"
   [6]: http://gamequery.onaluf.org/#description "GameQuery"
-  [7]: http://www.sehriderya.net/2008/09/07/sehriderya-wordpress-temasi-huzurlarinizda/
-    "WordPress Teması"
   [8]: http://sixrevisions.com/resources/cheat_sheets_for_web_designers/
   [10]: http://css-tricks.com/ie-6-blocker-script/ "ie 6 blok"
   [11]: http://www.readwriteweb.com/archives/rww_predictions_browser_wars.php

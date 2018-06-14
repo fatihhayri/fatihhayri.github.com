@@ -55,7 +55,7 @@ var is_chrome = navigator.userAgent.toLowerCase().indexOf(‘chrome’) > -1;
 {% endhighlight %}
 
 yeterli oluyor. Ayrıca javascript hata yakalama konsolu
-için [http://www1.qainsight.net:8080/2008/09/04/How+To+View+JavaScript+Errors+In+Google+Chrome.aspx][]siteyi
+için http://www1.qainsight.net:8080/2008/09/04/How+To+View+JavaScript+Errors+In+Google+Chrome.aspx siteyi
 incelmenizi öneririm.
 
 Erişilebilirlik açısından karnesi kötü
@@ -86,8 +86,8 @@ tarayıcının başımızın üstünde yeri var deriz.
 Türkçe kaynak
 
 -   [http://www.macosxpc.com/2008/09/02/googledan-webkit-tabanli-internet-tarayicisi/][]
--   [http://cnetturkiye.com/haberler/1267][]
--   [http://www.savassakar.com/?p=2029][]
+-   http://cnetturkiye.com/haberler/1267
+-   http://www.savassakar.com/?p=2029
 -   [http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome][]
 -   [http://www.potkal.com/yazi_icerik.asp?y1405][]
 -   http://www.mondaynay.com/2008/09/google-chrome-beta-web-browser/
@@ -101,7 +101,7 @@ Türkçe kaynak
 -   [http://www.mafiamax.com/2008/09/google-chrome-on-incelemesi.html][]
 -   [http://www.siberkultur.com/?q=google-chrome-cikti][]
 -   [http://www.webrazzi.com/2008/09/03/google-chrome-hakkindaki-goruslerim-ve-gorusleriniz/][]
--   [http://www.mmistanbul.com/makale/title/google-chrome-ve-browser-savaslari][]
+-   http://www.mmistanbul.com/makale/title/google-chrome-ve-browser-savaslari
 
 Genel kaynak
 
@@ -119,10 +119,10 @@ Genel kaynak
 -   [http://mashable.com/2008/09/02/chrome-windows/][]
 -   [http://www.niallkennedy.com/blog/2008/09/google-chrome.html][]
 -   [http://gigaom.com/2008/09/02/why-did-google-abandon-firefox/][]
--   [http://www.tgdaily.com/content/view/39174/118/][]
+-   http://www.tgdaily.com/content/view/39174/118
 -   [http://www.techcrunch.com/2008/09/02/getclicky-analytics-service-tracking-2-google-chrome-usage/][]
 -   [http://ptech.allthingsd.com/20080902/first-test-of-googles-new-browser/][]
--   [http://webworkerdaily.com/2008/09/02/google-chrome-is-it-ready-for-web-workers/][]
+-   http://webworkerdaily.com/2008/09/02/google-chrome-is-it-ready-for-web-workers
 -   [http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&tag=feed&subj=Webware][]
 -   [http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&tag=feed&subj=Webware][]
 -   [http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/][]
@@ -141,12 +141,9 @@ javascript motoru 
 
   [tıklayınız.]: http://www.evotech.net/blog/2008/09/google-chrome-browser-css-selector-support/
     "css özellik listesi"
-  [http://www1.qainsight.net:8080/2008/09/04/How+To+View+JavaScript+Errors+In+Google+Chrome.aspx]: http://www1.qainsight.net:8080/2008/09/04/How+To+View+JavaScript+Errors+In+Google+Chrome.aspx
   [http://www.paciellogroup.com/blog/?p=92]: http://www.paciellogroup.com/blog/?p=92
   [Acid 3]: http://acid3.acidtests.org/ "Acid 3"
   [http://www.macosxpc.com/2008/09/02/googledan-webkit-tabanli-internet-tarayicisi/]: http://www.macosxpc.com/2008/09/02/googledan-webkit-tabanli-internet-tarayicisi/
-  [http://cnetturkiye.com/haberler/1267]: http://cnetturkiye.com/haberler/1267
-  [http://www.savassakar.com/?p=2029]: http://www.savassakar.com/?p=2029
   [http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome]: http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome
   [http://www.potkal.com/yazi_icerik.asp?y1405]: http://www.potkal.com/yazi_icerik.asp?y1405
   [http://turk.internet.com/haber/yazigoster.php3?yazi21847]: http://turk.internet.com/haber/yazigoster.php3?yazi21847
@@ -154,7 +151,6 @@ javascript motoru 
   [http://www.mafiamax.com/2008/09/google-chrome-on-incelemesi.html]: http://www.mafiamax.com/2008/09/google-chrome-on-incelemesi.html
   [http://www.siberkultur.com/?q=google-chrome-cikti]: http://www.siberkultur.com/?q=google-chrome-cikti
   [http://www.webrazzi.com/2008/09/03/google-chrome-hakkindaki-goruslerim-ve-gorusleriniz/]: http://www.webrazzi.com/2008/09/03/google-chrome-hakkindaki-goruslerim-ve-gorusleriniz/
-  [http://www.mmistanbul.com/makale/title/google-chrome-ve-browser-savaslari]: http://www.mmistanbul.com/makale/title/google-chrome-ve-browser-savaslari
   [http://www.google.com/chrome/]: http://www.google.com/chrome/
     "Google Chrome"
   [http://gizmodo.com/5044958/dr-frankensteins-browser-the-strangely-obvious-ancestry-of-google-chrome]: http://gizmodo.com/5044958/dr-frankensteins-browser-the-strangely-obvious-ancestry-of-google-chrome
@@ -168,10 +164,8 @@ javascript motoru 
   [http://mashable.com/2008/09/02/chrome-windows/]: http://mashable.com/2008/09/02/chrome-windows/
   [http://www.niallkennedy.com/blog/2008/09/google-chrome.html]: http://www.niallkennedy.com/blog/2008/09/google-chrome.html
   [http://gigaom.com/2008/09/02/why-did-google-abandon-firefox/]: http://gigaom.com/2008/09/02/why-did-google-abandon-firefox/
-  [http://www.tgdaily.com/content/view/39174/118/]: http://www.tgdaily.com/content/view/39174/118/
   [http://www.techcrunch.com/2008/09/02/getclicky-analytics-service-tracking-2-google-chrome-usage/]: http://www.techcrunch.com/2008/09/02/getclicky-analytics-service-tracking-2-google-chrome-usage/
   [http://ptech.allthingsd.com/20080902/first-test-of-googles-new-browser/]: http://ptech.allthingsd.com/20080902/first-test-of-googles-new-browser/
-  [http://webworkerdaily.com/2008/09/02/google-chrome-is-it-ready-for-web-workers/]: http://webworkerdaily.com/2008/09/02/google-chrome-is-it-ready-for-web-workers/
   [http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&tag=feed&subj=Webware]: http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&tag=feed&subj=Webware
   [http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&tag=feed&subj=Webware]: http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&tag=feed&subj=Webware
   [http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/]: http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/

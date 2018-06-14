@@ -322,7 +322,7 @@ Sağlıcakla kalın.
 -   [http://hacks.mozilla.org/2009/06/text-shadow/][]
 -   [http://kilianvalkhof.com/2008/javascript/text-shadow-in-ie-with-jquery/][]
 -   [http://line25.com/tutorials/create-a-letterpress-effect-with-css-text-shadow][]
--   [http://owltastic.com/2009/12/shadows-and-css3/][]
+-   http://owltastic.com/2009/12/shadows-and-css3
 -   [http://reference.sitepoint.com/css/text-shadow][]
 -   [http://cordobo.com/1119-provide-visual-feedback-css/][]
 -   [http://www.catswhocode.com/blog/10-resources-to-get-the-most-out-of-the-css-text-shadow-property][]
@@ -359,7 +359,6 @@ Sağlıcakla kalın.
   [http://hacks.mozilla.org/2009/06/text-shadow/]: http://hacks.mozilla.org/2009/06/text-shadow/
   [http://kilianvalkhof.com/2008/javascript/text-shadow-in-ie-with-jquery/]: http://kilianvalkhof.com/2008/javascript/text-shadow-in-ie-with-jquery/
   [http://line25.com/tutorials/create-a-letterpress-effect-with-css-text-shadow]: http://line25.com/tutorials/create-a-letterpress-effect-with-css-text-shadow
-  [http://owltastic.com/2009/12/shadows-and-css3/]: http://owltastic.com/2009/12/shadows-and-css3/
   [http://reference.sitepoint.com/css/text-shadow]: http://reference.sitepoint.com/css/text-shadow
   [http://cordobo.com/1119-provide-visual-feedback-css/]: http://cordobo.com/1119-provide-visual-feedback-css/
   [http://www.catswhocode.com/blog/10-resources-to-get-the-most-out-of-the-css-text-shadow-property]: http://www.catswhocode.com/blog/10-resources-to-get-the-most-out-of-the-css-text-shadow-property

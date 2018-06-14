@@ -20,7 +20,7 @@ tags: CSS, CSS Anaçatısı, CSS ile form yapmak, CSS kodlarını optimize etmek
 -   Güzel bir geçiş efektli uygulama. [Bağlantı][5]
 -   CSS ile en iyi sekmeli menü yapmak için 5 kural. Kırık bağlantı
 -   8 adet kullanıcı odaklanma ölçek araç ve nasıl kullanıldıkları
-    anlatan güzel bir makale. [Bağlantı][7]
+    anlatan güzel bir makale. 
 -   CSS hakkında bilmemiz gerekenler, 9 başlık altında. Kırık bağlantı.
 -   jQuery ile yapılmış güzel bir site girişi scripti. [Bağlantı][9]
 -   SmashingMagazine'den çok güzel bir WordPress teması. [Bağlantı][10]
@@ -33,7 +33,6 @@ tags: CSS, CSS Anaçatısı, CSS ile form yapmak, CSS kodlarını optimize etmek
   [2]: http://adactio.com/journal/1498 "CSS Framework"
   [3]: http://web-kreation.com/index.php/tutorials/nice-login-and-signup-panel-using-mootools-12/
   [5]: http://www.dynamicdrive.com/dynamicindex4/stepcarousel.htm
-  [7]: http://www.knowtebook.com/8-heatmap-tools-and-why-how-to-use-them-1274.htm
   [9]: http://nettuts.com/javascript-ajax/build-a-top-panel-with-jquery/
     "site girişi"
   [10]: http://www.smashingmagazine.com/2008/08/20/notepad-chaos-a-free-wordpress-theme/

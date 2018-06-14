@@ -17,7 +17,7 @@ tags: Ajax, akordiyon, Google-Search, jquery, mailing, mootools, performans, Scr
 -   Web sitelerinde kullanıcılara yazı boyutu rengi vb. değişiklikleri
     değiştirme imkanı vermek. Örnekler, fikirler ve tartışmalar
     [Bağlantı][5]
--   5 jQuery sorusu ve cevabı. [Bağlantı][6]
+-   5 jQuery sorusu ve cevabı.
 -   Hasan Köroğlu sitemde arama yaptığında aranan kriterin farklı renkte
     gösterilmesi halinde daha iyi olacağını söyledi bende [search     hilite][] eklentisi ile bunu hallettim. Öneri için teşekkürler Hasan
 -   Asp.net'de ajax kullanımı hakkında 46 makale.
@@ -45,8 +45,6 @@ tags: Ajax, akordiyon, Google-Search, jquery, mailing, mootools, performans, Scr
     "script injection"
   [5]: http://www.smashingmagazine.com/2008/06/05/style-switchers-are-back-ideas-examples-and-a-contest/
     "web sitemi değiştir"
-  [6]: http://www.detacheddesigns.com/blog/blogSpecific.aspx?BlogId=74
-    "jquery ?"
   [search hilite]: http://www.blog.mediaprojekte.de/cms-systeme/wordpress/wordpress-plugin-search-hilite/
     "search hilite"
   [8]: http://roshanbh.com.np/2008/06/accordion-menu-using-jquery.html

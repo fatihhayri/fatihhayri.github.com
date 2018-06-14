@@ -143,7 +143,7 @@ Sağlıcakla kalın.
 
 ## Kaynaklar
 
--   [http://www.mediaministryblog.com/2009/08/how-to-create-a-free-email-newsletter/][]
+-   http://www.mediaministryblog.com/2009/08/how-to-create-a-free-email-newsletter
 -   [http://www.anandgraves.com/html-email-guide/#unnecessary_htmltags][]
 -   [http://css-tricks.com/using-css-in-html-emails-the-real-story/][]
 -   [http://www.devwebpro.com/create-an-email-newsletter-template-part-2/][]
@@ -161,7 +161,6 @@ Sağlıcakla kalın.
   [5]: /images/mail_yapmak_format_drdn.gif
   [6]: /dokumanlar/mailing_yapmak/mailing.html
   [http://www.campaignmonitor.com/templates/]: http://www.campaignmonitor.com/templates/
-  [http://www.mediaministryblog.com/2009/08/how-to-create-a-free-email-newsletter/]: http://www.mediaministryblog.com/2009/08/how-to-create-a-free-email-newsletter/
   [http://www.anandgraves.com/html-email-guide/#unnecessary_htmltags]: http://www.anandgraves.com/html-email-guide/#unnecessary_htmltags
   [http://css-tricks.com/using-css-in-html-emails-the-real-story/]: http://css-tricks.com/using-css-in-html-emails-the-real-story/
   [http://www.devwebpro.com/create-an-email-newsletter-template-part-2/]: http://www.devwebpro.com/create-an-email-newsletter-template-part-2/

@@ -178,16 +178,16 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
 -   O'Reilly - Even Faster Websites.pdf 14. konu
 -   [http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/][]
 -   [http://ajaxian.com/archives/css-child-selector-performance][]
--   [http://jackslocum.com/blog/2007/07/10/css-selectors-speed-myths/][]
+-   http://jackslocum.com/blog/2007/07/10/css-selectors-speed-myths
 -   [http://hacks.mozilla.org/2009/06/dom-selectors-api/][]
 -   [http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors][]
--   [http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/][]
+-   http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3
 -   [http://www.infoq.com/news/2009/01/jquery-1.3][]
 -   [http://code.google.com/speed/page-speed/docs/rendering.html][] (google'dan notlar)
 -   [http://fatagnus.com/guidelines-for-writing-efficient-css-selectors/][]
 -   [http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors][]
 -   [http://css-tricks.com/efficiently-rendering-css/][]
--   [http://www.nuvographics.com/articles/efficientcss/][]
+-   http://www.nuvographics.com/articles/efficientcss
 -   [http://www.css-101.org/descendant-selector/go_fetch_yourself.php][] (yeni)
 
   [Writing Efficient CSS for use in the Mozilla UI]: https://developer.mozilla.org/en/Writing_Efficient_CSS
@@ -210,14 +210,10 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
     "http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/"
   [http://ajaxian.com/archives/css-child-selector-performance]: http://ajaxian.com/archives/css-child-selector-performance
     "http://ajaxian.com/archives/css-child-selector-performance"
-  [http://jackslocum.com/blog/2007/07/10/css-selectors-speed-myths/]: http://jackslocum.com/blog/2007/07/10/css-selectors-speed-myths/
-    "http://jackslocum.com/blog/2007/07/10/css-selectors-speed-myths/"
   [http://hacks.mozilla.org/2009/06/dom-selectors-api/]: http://hacks.mozilla.org/2009/06/dom-selectors-api/
     "http://hacks.mozilla.org/2009/06/dom-selectors-api/"
   [http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors]: http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors
     "http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors"
-  [http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/]: http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/
-    "http://blog.archive.jpsykes.com/153/more-css-performance-testing-pt-3/"
   [http://www.infoq.com/news/2009/01/jquery-1.3]: http://www.infoq.com/news/2009/01/jquery-1.3
     "http://www.infoq.com/news/2009/01/jquery-1.3"
   [http://code.google.com/speed/page-speed/docs/rendering.html]: http://code.google.com/speed/page-speed/docs/rendering.html
@@ -226,6 +222,4 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
     "http://fatagnus.com/guidelines-for-writing-efficient-css-selectors/"
   [http://css-tricks.com/efficiently-rendering-css/]: http://css-tricks.com/efficiently-rendering-css/
     "http://css-tricks.com/efficiently-rendering-css/"
-  [http://www.nuvographics.com/articles/efficientcss/]: http://www.nuvographics.com/articles/efficientcss/
-    "http://www.nuvographics.com/articles/efficientcss/"
   [http://www.css-101.org/descendant-selector/go_fetch_yourself.php]: http://www.css-101.org/descendant-selector/go_fetch_yourself.php

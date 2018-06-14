@@ -15,8 +15,7 @@ Link değişmiş. [http://feeds.feedburner.com/fatihhayri](http://feeds.feedburn
 
 ## Kaynak
 
-[http://www.teknolojiherseyim.com/feedburner-hesabini-google-feedproxyye-nasil-tasiriz/][]
+http://www.teknolojiherseyim.com/feedburner-hesabini-google-feedproxyye-nasil-tasiriz/
 
 
   [http://feeds2.feedburner.com/fatihhayri]: http://feeds2.feedburner.com/fatihhayri
-  [http://www.teknolojiherseyim.com/feedburner-hesabini-google-feedproxyye-nasil-tasiriz/]: http://www.teknolojiherseyim.com/feedburner-hesabini-google-feedproxyye-nasil-tasiriz/

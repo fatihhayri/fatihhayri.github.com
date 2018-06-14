@@ -6,7 +6,7 @@ Category: Haberler
 tags: delicious, E-Devlet, em, gelişmiş günlük yazmak, google özel arama, jquery, Renk seçim aracı, resim galerisi, Tablolar, video çekimli internet sitesi
 ---
 
--   Resim galerisi için ücretsiz Flash çözümleri. [Bağlantı][]
+-   Resim galerisi için ücretsiz Flash çözümleri. http://www.visual-blast.com/flash/free-flash-gallery-solutions-for-your-images/
 -   EM tabanlı esnek yapılı site yapmak. Kırık bağlantı.
 -   Sitemize özel Google araması eklemek. Videolu anlatım. [Bağlantı][2]
 -   Video çekimli internet projesi nasıl yapılır? - bigumigu.com
@@ -29,8 +29,6 @@ tags: delicious, E-Devlet, em, gelişmiş günlük yazmak, google özel arama, j
 -   Tablo Etiketinin Gönlünü Almak - webdeneyimleri.com Kırık bağlantı.
 
 
-  [Bağlantı]: http://www.visual-blast.com/flash/free-flash-gallery-solutions-for-your-images/
-    "resim galerisi"
   [2]: http://css-tricks.com/videos/css-tricks-video-29.php
     "gooogle araması ekle"
   [3]: http://bigumigu.com/haber.asp?hid=3530
