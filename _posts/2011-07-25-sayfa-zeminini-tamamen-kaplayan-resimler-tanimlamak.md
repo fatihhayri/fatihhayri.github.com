@@ -160,7 +160,7 @@ yapıyoruz.
 Sonuç olarak tüm tarayıcılarda çalışan sayfa zeminini kapsayan zemin
 resmi tanımlamış olduk.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ePxPv/embedded/css,html,result"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/ePxPv/embedded/css,html,result"></iframe>
 
 ## Sonuç
 

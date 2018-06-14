@@ -39,7 +39,7 @@ div {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/7wyeD/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/7wyeD/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 blur değeri spread  değerinden büyük ise farklı,
 
@@ -51,7 +51,7 @@ div {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/NKXZG/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/NKXZG/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 blur değeri spread  değerinden küçük ise farklı bir gölge efekti görüyoruz.
 
@@ -70,7 +70,7 @@ div {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/RPqUC/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/RPqUC/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ## Tek Köşeye Gölge Vermek
 
@@ -90,7 +90,7 @@ div {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3f7SU/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/3f7SU/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **2. Yöntem** Diğer köşelere herhangi bir kenar çizgisi veya gölge
 atamadan sadece bir köşeye gölge tanımlamak;
@@ -106,7 +106,7 @@ div {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/juVMm/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/juVMm/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Mantık olarak iki gölge tanımı yapıyoruz, birincisi spread ile kutu
 ardalan rengi ile aynı renkte 4px bir alan oluşturuyoruz, ikinci gölge
@@ -128,7 +128,7 @@ div {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/5pVbj/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/5pVbj/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Eğer kenar çizgisi kullanılacaksa;
 
@@ -144,7 +144,7 @@ div {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/5pVbj/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/5pVbj/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Blur değeri kadar eksi spread değeri atayarak bu çözüm oluşturulmuştur.
 
@@ -173,7 +173,7 @@ div:before {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/x9Pbr/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/x9Pbr/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Çıkmasını istediğimiz kenara padding tanımı yapılır, :before seçicisi
 ile o köşeye ait kenar değeri padding ile aynı tanımlanır. :before
@@ -206,7 +206,7 @@ div:before {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/j9bAp/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/j9bAp/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Yukarıdaki yöntemin tersi yapılır ve kaldırılacak köşeye eksi değer
 atanır.

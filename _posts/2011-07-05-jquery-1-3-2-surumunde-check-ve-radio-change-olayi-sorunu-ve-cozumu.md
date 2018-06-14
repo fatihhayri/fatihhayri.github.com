@@ -14,7 +14,7 @@ olayının işlememesi, daha doğrusu ilk tıklamada değil ikinci tıklamada
 çalışması ve bu sorunun sadece Internet Explorer sürümlerinde(6,7,8)
 meydana gelmesi.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Y4n5j/1/embedded/"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/Y4n5j/1/embedded/"></iframe>
 
 Çözüm için yapmamız gerekn çok basit
 
@@ -24,7 +24,7 @@ $("#fatih").click(function() {
 });
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/zEBUg/embedded/"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/zEBUg/embedded/"></iframe>
 
 Aslında yaptığımız input alanından focus’u kaldırmak oldu. Evet belki
 pek işinize yaramıyacak ama benim gibi çok arayan bir kişi buradan

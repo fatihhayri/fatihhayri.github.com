@@ -47,7 +47,7 @@ elemanlar kapsayıcı eleman gibi 3. boyutu davransın demektir.
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi }
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/p24Mk/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/p24Mk/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 [http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-style.html][]
 
@@ -113,7 +113,7 @@ transform: perspective(500px) translate3d(0px, 0px, -200px);
 {% endhighlight %}
 
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Cjwcw/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/Cjwcw/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Bir örnek daha yaparak ile pekiştirelim.
 
@@ -131,7 +131,7 @@ transform: perspective(300px) rotatey(30deg);
 {% endhighlight %}
 
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/HECGV/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/HECGV/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Perspektifi anlamak için güzel bir örnek [http://www.ryancollins.me/?p=993][]
 
@@ -154,7 +154,7 @@ div {
 Uzunluk değeri bir sayıdır. Perspective özelliğini anlatırken verdiğimiz
 ilk örnekte bu özelliğe değinmiştik.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Cjwcw/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/Cjwcw/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 translate3d tanımı 3 ekseninde aynı anda tanımını sağlamamızı sağlayan
 bir kısaltmadır.
@@ -173,7 +173,7 @@ Bir örnek kod yazarsak
 {% endhighlight %}
 
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/kTTm3/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/kTTm3/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Görünümü konumlandırma ile sağlayabilirdik ancak buradaki izometrik
 hissi transitions ve animasyon uygulamalarında daha çok ön plana
@@ -207,7 +207,7 @@ div {
 {% endhighlight %}
 
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/6Uaet/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/6Uaet/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Yıldız savaşları filmindeki yazılara benzer bir görüntü elde ediyoruz.
 
@@ -240,7 +240,7 @@ rotateX(<açı>)
 rotateX tanımı ile verilen açı değeri kadar saat yönünde elemanı
 x-ekseninde çevirmeye yarar.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/mNFnR/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/mNFnR/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Yatay eksende elemanımız orta noktasından 45 derece saat yönünde
 eğilmiştir.
@@ -255,7 +255,7 @@ rotateY(<açı>)
 rotateY tanımı ile verilen açı değeri kadar saat yönünde elemanı
 y-ekseninde çevirmeye yarar.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ScQL3/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/ScQL3/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Dikey eksende elemanımız orta noktasından 45 derece saat yönünde
 eğilmiştir.
@@ -270,7 +270,7 @@ rotateZ(<açı>)
 rotateZ tanımı ile verilen açı değeri kadar saat yönünde elemanı
 z-ekseninde çevirmeye yarar.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/PQBcR/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/PQBcR/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 z-ekseninde elemanımız orta noktasından 45 derece saat yönünde
 eğilmiştir.
@@ -289,7 +289,7 @@ olarak tanımlanır. Başlangıç değeri 0,0,0 olarak tanımlıdır. Rakamlar
 takılmayalım diyorum, çevrimiçi araçlar ile bu işi halledebiliriz gibime
 geliyor.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ubkKv/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/ubkKv/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **İpucu:**Japon makaledeki örnek hoşuma gitti göz atmakta yarar var.
 [http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-rotatexyz.html][]
@@ -346,7 +346,7 @@ transform-origin: x,y,z;
 
 z tanımı z-eksenindeki mesafeyi belirtmemiz için kullanılmaktadır.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/s2vE2/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/s2vE2/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 [http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-origin.html][]
 

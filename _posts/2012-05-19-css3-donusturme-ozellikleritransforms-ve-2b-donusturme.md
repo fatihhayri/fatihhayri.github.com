@@ -139,7 +139,7 @@ Bir örnek yapalım;
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/s6hZX/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/s6hZX/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **- Eksene Özgü Yöntemler**
 
@@ -176,7 +176,7 @@ oluruz.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AF5hS/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/AF5hS/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Fare imlecinin mavi alan üzerine getirdiğimizde animasyonlu bir şekilde
 kutu translate komutu ile atadığımız yeni yerine hareket edecektir.
@@ -219,7 +219,7 @@ gösteriyor.
 0.5 olarakta tanımlanabilecek bu değer elemanımızı yarım daire kadar
 döndürecektir.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/cyFrq/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/cyFrq/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **- Animasyon Yardımlı Örnek**
 
@@ -235,7 +235,7 @@ Bir örnekte animasyonlu yapalım.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aCKL9/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/aCKL9/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Yukarıdaki örnektede görüldüğü gibi birçok güzel uygulama bu yöntem ile
 yapılabilir.
@@ -259,7 +259,7 @@ Bir örnek ile konuyu daha iyi anlayalım.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/eCb2C/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/eCb2C/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Daha iyi bir anlatım için örnekte iki kutu kullandım birisi kutunun
 normal hali(mavi kutu), diğer ise kutunun ölçeklenmiş hali(kırmızı
@@ -293,7 +293,7 @@ aynı şekilde y ekseninde hareket için
 
 Bir tanede animasyonlu bir örnek yapalım.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/J7n6w/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/J7n6w/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **skew(eğme)**
 
@@ -316,7 +316,7 @@ Bir örnek yapalım.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/fRpmS/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/fRpmS/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **- Eksene Özgü Yöntemler**
 
@@ -345,7 +345,7 @@ aynı şekilde y ekseninde eğiklik için
 
 Bir tanede animasyonlu bir örnek yapalım.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/bGunN/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/bGunN/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ## Çoklu Değer Kullanımı
 

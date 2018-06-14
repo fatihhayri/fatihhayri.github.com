@@ -71,7 +71,7 @@ float:left değeri ile içeriği çepeçevre kapsaması sağlanıyor. left:50% d
 
 Buradaki püf noktası; right:50% değeri ile menü genişliğinden dolayı sağa doğru kayan içeriği tam olarak ortalı hale getiriyoruz.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/GGSHL/embedded/result,html,css"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/GGSHL/embedded/result,html,css"></iframe>
 
 İnternet Explorer 6+, Firefox2+, Safari, Chrome ve Opera destekliyor.
 
@@ -139,7 +139,7 @@ Sonuç istediğimiz gibi, <s>ancak bir sorunumuz varki oda display:table özelli
 
 Kapsayıcı kapsüle text-align:center tanımı yapıyoruz sonra listemize display:inline yapıyoruz. text-align:center inline elemanları ortalıyor bildiğiniz gibi. Burada yaptığmızda bu
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/xNtcS/6/embedded/result,html,css"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/xNtcS/6/embedded/result,html,css"></iframe>
 
 **Avantajları**
 

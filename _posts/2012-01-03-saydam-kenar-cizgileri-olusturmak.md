@@ -33,7 +33,7 @@ Benzer bir uygulamayı yapmak için kodları yazdım. Daha önce bahsettiğim
 Ancak aşağıdaki gibi bir görüntü elde ettim.
 ![][1]
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/UYJWH/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/UYJWH/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Çözümü biraz araştırdım ancak pek bir şey bulamadım derken css-tricks’in
 çözümü bana ilaç gibi geldi. Çözüm [background-clip özelliği][] tanımı
@@ -60,7 +60,7 @@ ile sağlanıyor.
 
 ![][2]
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/qjmyS/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/qjmyS/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ## Kaynak
 

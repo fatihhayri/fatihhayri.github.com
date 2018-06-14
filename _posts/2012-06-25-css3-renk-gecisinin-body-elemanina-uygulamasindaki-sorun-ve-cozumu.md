@@ -18,7 +18,7 @@ Sorunun çözümünü aradığımda ilk sonuç [http://stackoverflow.com/][]
 sitesinde buldum biraz daha araştırınca benzer cevaplar gördüm ve
 sizlerle paylaşmak istedim.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VUcqt/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/VUcqt/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **background-image** özelliğine eklenen renk geçişi kodu tekrar
 edecektir, biz bu tekrarı istemediğimiz için.
@@ -36,7 +36,7 @@ background-attachment: fixed;
 
 kodunu ekledik.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KAg2U/2/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/KAg2U/2/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Diğer kod eklemeleri farklı tarayıcılar içindir.
 

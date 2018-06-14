@@ -68,7 +68,7 @@ ile ile
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/HZZ8t/1/embedded/css,result,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/HZZ8t/1/embedded/css,result,html"></iframe>
 
 Genişlik tanımı yapılmadan kolonlara bölme işlemi gerçekleşmiyor.
 Tarayıcılara göre farklı öneklerle kullanmamız dışında tek satırsa
@@ -103,7 +103,7 @@ kapsayıcının genişliğine göre otomatik olarak kolonlara bölecektir.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/SkXL4/1/embedded/css,result,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/SkXL4/1/embedded/css,result,html"></iframe>
 
 Bir genişlik tanımı yapılırsa **column-width** değeri tanımlandığı kadar
 kolona bölüyor.
@@ -198,7 +198,7 @@ Başlangıç değeri 1em olarak tanımlıdır.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/vdnRk/1/embedded/css,result,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/vdnRk/1/embedded/css,result,html"></iframe>
 
 **column-gap**’in güzelliği son kolona bu boşluğu uygulamıyor olması.
 
@@ -231,7 +231,7 @@ yapılabileceği gibi **column-rule** kısaltması ile tanım yapabiliyoruz.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3SMhX/embedded/css,result,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/3SMhX/embedded/css,result,html"></iframe>
 
 **column-gap** gibi sadece aradaki kolonlara uygulanan bir özellik bu
 son kolona uygulanmıyor.
@@ -283,7 +283,7 @@ Webkit bu özelliği önek ile **-webkit-column-break-before,
 -webkit-column-break-after**ve**-webkit-column-break-inside** olarak
 desteklemektedir.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aPtVe/3/embedded/css,result,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/aPtVe/3/embedded/css,result,html"></iframe>
 
 **Tarayıcı Desteği**
 
@@ -312,7 +312,7 @@ için kullanılır.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/x6B67/embedded/css,result,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/x6B67/embedded/css,result,html"></iframe>
 
 Şu anda destekleyen tarayıcılar **all ve none** değerlerini destekliyor
 sayısal değeri destekleyen tarayıcı henüz yok.(Eylül 2011)
@@ -341,7 +341,7 @@ balance.**
 Her ne kadar yukarıdaki bir tanımlama yapılmış olsa da ben uygulamadan
 iki değer arasında bir fark görmedim.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/WSWbt/embedded/css,result,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/WSWbt/embedded/css,result,html"></iframe>
 
 **Tarayıcı Desteği**
 

@@ -39,7 +39,7 @@ yakalamamıza yaracak güzel bir özellik.
 Bir örnek verecek olursak; Verdana, Arial ve Trebuchet MS uyguladığımız
 3 aynı metinin sonucu aşağıdaki gibi olacaktır.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/2VLW6/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/2VLW6/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Arial uyguladığımız 2. kolon ve Trebuchet Ms uyguladığımız 3. kolon aynı
 yüksekliğe sahipken ilk kolondaki verdana uyguladığımız metin yüksekliği
@@ -54,7 +54,7 @@ daha yüksektir. Aynı yüksekiği yakalamak için
 
 aynı yüksekliği yakalamamızı sağlayacaktır.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/dkJye/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/dkJye/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Bu özelliği daha iyi anlamak için [http://brunildo.org][] sitesindeki
 örnek çok güzel.

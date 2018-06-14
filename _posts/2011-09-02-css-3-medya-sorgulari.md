@@ -206,7 +206,7 @@ kontrol edebilme imkanına sahibiz.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/77SMV/embedded/css,result"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/77SMV/embedded/css,result"></iframe>
 
 ve
 
@@ -216,7 +216,7 @@ ve
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/bhLFF/embedded/css,result"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/bhLFF/embedded/css,result"></iframe>
 
 İlk örnekte genişliği en fazla 480px olana kadar uygulanır, ikinci
 örnekte ise genişliği en az 680px olan tarayıcı genişliklerinde
@@ -260,7 +260,7 @@ işimize yarar.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Z8BnJ/embedded/css,result"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/Z8BnJ/embedded/css,result"></iframe>
 
 şeklinde iphone kullanıcılarını yakalayabiliriz. Bilgisayarımızda
 tarayıcı genişliği ile bu sonuca erişemeyiz. Örneği görmek için iphone
@@ -287,7 +287,7 @@ geliştirirken dikkate almalıyız.
 tarayıcınızın genişliği yüksekliğinden büyük ise uygulanır, portrait
 değeride tam tersi durumlarda.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/QEwTP/embedded/css,result"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/QEwTP/embedded/css,result"></iframe>
 
 Tarayıcınızın genişliği ile oynayarak sonucu görebilirsiniz. iPad’de
 daha çok yatay kullanımda daha geniş yer varken site tam gösterilirken

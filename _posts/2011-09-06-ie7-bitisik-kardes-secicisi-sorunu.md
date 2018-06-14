@@ -37,7 +37,7 @@ h2 + p {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/Ubk9Q/embedded/result,html,css"></iframe>
+<iframe style="width: 100%; height: 200px" src="https://jsfiddle.net/fatihhayri/Ubk9Q/embedded/result,html,css"></iframe>
 
 Uygulaması bütün tarayıcılarda sorunsuz çalışırken ie7’de sonuç
 vermeyecektir. DOM’daki öğelerin konumuna göre çalışan bu seçicinin

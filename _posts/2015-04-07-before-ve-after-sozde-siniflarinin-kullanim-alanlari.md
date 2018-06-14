@@ -78,7 +78,7 @@ Daha önceki [çoklu kenar oluşturmak](https://fatihhayrioglu.com/coklu-kenar-c
 
 Kapsayıcı elemanın genişlik ve yüksekliğini alması için **position:absolute** tanımlanıp; **left, right, top** ve **bottom** değerleri sıfırlanmıştır. 
 
-<iframe style="width: 100%; height: 230px" src="http://jsfiddle.net/fatihhayri/L8ZHT/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 230px" src="https://jsfiddle.net/fatihhayri/L8ZHT/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ## CSS ile şekil eklemek 
 

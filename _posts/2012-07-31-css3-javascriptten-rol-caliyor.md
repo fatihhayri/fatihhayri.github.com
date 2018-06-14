@@ -130,7 +130,7 @@ input[type="checkbox"]:checked ~ .icerikAlani{
 }​
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/ZSudF/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 200px" src="https://jsfiddle.net/fatihhayri/ZSudF/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Sadece bu kod yardımı ile gizle göster işini yapabiliyoruz. tilda(~)
 işareti Genel Kardeş Seçicisi yardımı ile aynı seviyede olan
@@ -178,7 +178,7 @@ dd{
 }​
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/3TwVF/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 200px" src="https://jsfiddle.net/fatihhayri/3TwVF/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 :target sözde sınıfının dezavantajı sayfa imlecini ilgili içeriğe
 kaydırması ve adres barda #tanim ile geçiş sağlanmasıdır. Geri tuşları

@@ -240,7 +240,7 @@ html kodu
 <p>Kediler hoş görünüşlü, ..</p>
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KGkAK/16/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/KGkAK/16/embedded/result,css,html"></iframe>
 
 Bu seçiciyi ie7’nin seçicisini destekliyor.
 
@@ -330,7 +330,7 @@ HTML kodumuz
 <input type="submit"> </form>
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 180px" src="http://jsfiddle.net/fatihhayri/KM9B4/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 180px" src="https://jsfiddle.net/fatihhayri/KM9B4/embedded/result,css,html"></iframe>
 
 Basit bir örnek vermiş olsak dahi bu seçiciler ile neler
 yapabileceğimizi düşünmek bile sevindiriyor bizi.
@@ -398,7 +398,7 @@ tr:nth-child(even) {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/F6UnC/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 400px" src="https://jsfiddle.net/fatihhayri/F6UnC/embedded/result,css,html"></iframe>
 
 Formül için örnek verecek olursak; dinamik bir seçim oluşturmak için
 gayet iyi sonuçlar verecek bir özelliktir. Matematik derslerindende
@@ -567,7 +567,7 @@ ul li:first-child a{
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/GUKPu/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/GUKPu/embedded/result,css,html"></iframe>
 
 Önceden bu işleri yapmak için javascript kullanmak zorunda idik. Şimdi
 CSS3 ile hepsini halledebiliyoruz. Süper değil mi?
@@ -650,7 +650,7 @@ olan elemanları seçmek için kullanılır. Tek çocuk seçicisi diyebiliriz.
 :first-child:last-child veya :nth-child(1):nth-last-child(1) seçicileri
 ile aynı şeyi seçer.
 
-<iframe style="width: 100%; height: 250px" src="http://jsfiddle.net/fatihhayri/FGUGH/embedded/html,css,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 250px" src="https://jsfiddle.net/fatihhayri/FGUGH/embedded/html,css,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 **Tarayıcı Desteği**
@@ -680,7 +680,7 @@ ul.deneme > li > a:only-of-type {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/cEdgX/1/embedded/html,css,result"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/cEdgX/1/embedded/html,css,result"></iframe>
 
 Aynı seviyedeki bağlantılara sarı ardalan rengi tanımlayacaktır. Listede
 ikinci sıradaki ögede 2 adet link olduğu için seçmedi, 4. sıradaki ögede
@@ -809,7 +809,7 @@ body :not(blockquote){
 kodu body içindeki tüm elemanlara kenar çizgisi ata, dipnot(blockquote)
 hariç şeklinde uygulanacaktır.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/W6d4u/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/W6d4u/embedded/result,css,html"></iframe>
 
 Çok kullanışlı bir seçicidir.
 

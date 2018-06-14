@@ -34,7 +34,7 @@ ve sabit margin, padding ve border tanımları ile sorun yaşarız.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/VaBqn/3/embedded/css,result,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/VaBqn/3/embedded/css,result,html"></iframe>
 
 Firefox önek(**-moz-**) ile bu değeri desteklerken İnternet Explorer
 standartlardaki şekli destekler.

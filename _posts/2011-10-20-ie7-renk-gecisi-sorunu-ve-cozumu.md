@@ -32,7 +32,7 @@ div{
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/S9eB2/embedded/result,html,css"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/S9eB2/embedded/result,html,css"></iframe>
 
 Şöyle bir kodumuz olsun uygulamaya ie7’de baktığımızda background:#ffd65e; /* Old browsers */ satırının sonucunu görüyoruz, halbuki ie7
 doğrusal renk geçişini destekliyor, ancak hasLayout sorunu nedeni ile bu
@@ -55,7 +55,7 @@ div{
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ReFgk/1/embedded/result,html,css"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/ReFgk/1/embedded/result,html,css"></iframe>
 
 ## Kaynaklar
 

@@ -39,7 +39,7 @@ li ~ li {
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/CZxWW/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 200px" src="https://jsfiddle.net/fatihhayri/CZxWW/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Tanımı tüm dertlerimize son veriyor. Eğer tek eleman varsa bu seçici es
 geçiliyor. Ama iki veya daha fazla eleman var ise bu seçici devreye
@@ -53,7 +53,7 @@ Aynı sorunu first-child ile çözebileceğim aklıma geldi akşam bir an.
 Tabi iki satır kod bloğu oluyor. Minimum kod ile çözmek istersek Genel
 Kardeş Seçicilerini tercih edeceğiz.  :D
 
-<iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/EUm8J/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 200px" src="https://jsfiddle.net/fatihhayri/EUm8J/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Kalın sağlıcakla.
 

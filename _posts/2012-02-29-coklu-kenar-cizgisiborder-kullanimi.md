@@ -43,7 +43,7 @@ vererek içeriğin arkasına atarız.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 230px" src="http://jsfiddle.net/fatihhayri/L8ZHT/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 230px" src="https://jsfiddle.net/fatihhayri/L8ZHT/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Bu örnekte sadece iki kenar çizgisi için kod verildi, ancak yine sadece
 :before ve background-color ile üç kenar çizgisi ve hatta :before,
@@ -74,7 +74,7 @@ onuda paylaşıyorum.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 200px" src="http://jsfiddle.net/fatihhayri/c6e9s/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 200px" src="https://jsfiddle.net/fatihhayri/c6e9s/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Daha falza örnek için
 [http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/demo/borders.html][]
@@ -110,7 +110,7 @@ border-radius uygulanmış elemanlara bu metot kullanılabilir.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 280px" src="http://jsfiddle.net/fatihhayri/Aprbj/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 280px" src="https://jsfiddle.net/fatihhayri/Aprbj/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 İkiden fazla kenar çigisi kullanamasakta iyi bir alternatif olarak
 kullanılabilir.
@@ -155,7 +155,7 @@ ie7 yine sorun
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 250px" src="http://jsfiddle.net/fatihhayri/bPmQG/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 250px" src="https://jsfiddle.net/fatihhayri/bPmQG/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **Tarayıcı Desteği**
 

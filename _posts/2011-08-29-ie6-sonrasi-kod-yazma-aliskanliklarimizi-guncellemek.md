@@ -279,7 +279,7 @@ img ~ p{
 <p>Kediler hoş görünüşlü, ..</p>
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/KGkAK/1/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/KGkAK/1/embedded/result,css,html"></iframe>
 
 **:first-child sözde seçicisi**
 

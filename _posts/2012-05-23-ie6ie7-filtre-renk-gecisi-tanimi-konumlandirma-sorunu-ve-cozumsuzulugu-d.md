@@ -23,13 +23,13 @@ ilgilendiriyor artık :) görünmüyor.
 Araştırdığım kadarı ile bir çözüm yok. Bulabilen varsa yazarsa çok
 sevinirim. Ben kaçak bir çözüm buldum :D
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AErWW/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/AErWW/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ie7 için filtre tanımı kaldırarak sorunu giderdim. Ancak diğer ie
 sürümlerin için bir çözüm oluşturmam gerekti. Bunun için **-ms-filtre**
 özelliğini kullanmak bana mantıklı geldi. İ[nternet Explorer 7’nin %5’in altına düşmüş oranı][] ile görmezden gelinebileceğini düşünüyorum. :D
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/tAFG2/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/tAFG2/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 IE7 masum görünüyor ama bizi uğraştırmıyorda değil. Yakınsa son bulacak
 olması bizi sevindiriyor.

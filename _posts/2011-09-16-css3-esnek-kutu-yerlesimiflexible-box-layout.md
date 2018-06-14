@@ -88,7 +88,7 @@ içersindeki alt elemanların artık esnek yapılı olacağını ve EKYM
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/4KSzt/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/4KSzt/embedded/result,css,html"></iframe>
 
 Kapsayıcı tanımlanan **display:box** tanımı ile içindeki elemanlar birer
 **inline-block** eleman gibi davranır ve yanyana sıralanır.
@@ -134,7 +134,7 @@ Bunlardan başka iki değer daha mevcuttur. **inline-axis** yatayda ve
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AsVDn/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/AsVDn/embedded/result,css,html"></iframe>
 
 **box-orient:vertical** ile esnek kutularımızı dikeyde sıraladık.
 
@@ -168,7 +168,7 @@ sıralama yönünü belirler. İki değer alır; normal ve **reverse**.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/S4c44/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/S4c44/embedded/result,css,html"></iframe>
 
 Yukarıdaki örnekte sıralama yukarıdan aşağı **Esnek Kutu1, Esnek Kutu2**
 ve **Esnek Kutu3** iken **box-direction: reverse;** tanımı ile sıralama
@@ -216,7 +216,7 @@ olarak değişecek. Tarayıcılar destekleyen kadar bu şekilde devam edecek.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/MwWcm/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/MwWcm/embedded/result,css,html"></iframe>
 
 ## box-align
 
@@ -260,7 +260,7 @@ ise üste ve alta yaslayacaktır. **center** değeri ise ortalayacaktır.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/ZYz2M/1/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/ZYz2M/1/embedded/result,css,html"></iframe>
 
 ## box-lines
 
@@ -322,7 +322,7 @@ kutuların sıralamasını belirlememizi sağlar.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/TaFBM/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/TaFBM/embedded/result,css,html"></iframe>
 
 Dört adet kutumuz var. Bunların üç tanesine **box-ordinal-group** değeri
 tanımladık.
@@ -407,7 +407,7 @@ genişliğini belirler.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/h7KAa/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/h7KAa/embedded/result,css,html"></iframe>
 
 Daha sabit bir örnek verelim; genişliği 600px olan kapsayıcı eleman ve
  üç adet 100px’lik kutumuz olsun(Bu durumdan boşluk değeri 300px
@@ -459,7 +459,7 @@ kutunun genişliği 175px(100 + 300/4 * 1 = 175) olacaktır.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Dyjq2/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/Dyjq2/embedded/result,css,html"></iframe>
 
 Eğer kutu genişlikleri toplamı kapsayıcı kutunun genişliğinden büyük ise
 genişlik hesaplamasında benzer birim hesabına göre küçülme olacaktır. 0

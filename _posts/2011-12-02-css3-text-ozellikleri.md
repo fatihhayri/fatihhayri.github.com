@@ -53,11 +53,11 @@ CSS kodu
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/AdWMx/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/AdWMx/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **word-wrap** ile bu uzun kelimeyi aşağı atarak sayfadaki patlaklığı düzeltebiliriz.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/vZFZb/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/vZFZb/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Önceki yazımda bu işi white-space ile halletmiştim, ama mantıklı olan
 **word-wrap** ile çözmek.
@@ -126,7 +126,7 @@ color: #c00;
 -webkit-text-stroke: 1px #000;
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/3dsPG/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/3dsPG/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **text-stroke** tanımının ilk değeri dış çizgisinin kalınlığını ikinci
 tanım rengini belirler.
@@ -142,7 +142,7 @@ color: #c00;
 -webkit-text-fill-color: transparent;
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/yWWbb/embedded/css,html,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/yWWbb/embedded/css,html,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **Tarayıcı Desteği**
 

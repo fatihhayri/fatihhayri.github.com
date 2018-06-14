@@ -62,7 +62,7 @@ CSS kodu;
 {% endhighlight %}
 
 
-<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/ZeMYW/1/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 400px" src="https://jsfiddle.net/fatihhayri/ZeMYW/1/embedded/result,css,html"></iframe>
 
 Başlangıç değeri content-box’dır. Kutu genişliği 10px + 20px + 200 + 20
 + 10px = 260px olacaktır.
@@ -84,7 +84,7 @@ yapıldığında
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/y6uyv/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 400px" src="https://jsfiddle.net/fatihhayri/y6uyv/embedded/result,css,html"></iframe>
 
 Kutunun genişlik değeri 200px olacaktır. İçerik alanı genişlik değeri
 ise 140px olacaktır.
@@ -110,7 +110,7 @@ esnek yapılı alanlarda bize avantaj sağlayacağı kesindir.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/jP3Dv/1/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 400px" src="https://jsfiddle.net/fatihhayri/jP3Dv/1/embedded/result,css,html"></iframe>
 
 Esnek yapılı bir içerikte genişlik tanımlarımızı yüzde olarak
 verdiğimizde ve de padding ve border tanımı yaptığımızda kutularımızın
@@ -139,7 +139,7 @@ yoktur. En azından [calc()][] özelliği tam desteklenene kadar yoktur.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/fatihhayri/z2bQA/1/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 400px" src="https://jsfiddle.net/fatihhayri/z2bQA/1/embedded/result,css,html"></iframe>
 
 Farklı araçlar ile web sayfaları gezilmeye başlayalı beri esnek yapılı
 sayfalar revaçtadır. Websitelerimizi artık daha esnek planlamak zorunda

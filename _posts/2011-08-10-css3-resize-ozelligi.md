@@ -54,7 +54,7 @@ Bir örnek yapalım
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/aDnP6/3/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/aDnP6/3/embedded/result,css,html"></iframe>
 
 Sadece bir yöne boyutlandırabiliyoruz
 
@@ -71,7 +71,7 @@ Sadece bir yöne boyutlandırabiliyoruz
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/k2wHc/2/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/k2wHc/2/embedded/result,css,html"></iframe>
 
 min-height ve min-width değerleri ile boyutlandırmanın minimum
 değerlerini belirleyebiliyoruz. Anı şekilde max-height ve max-width
@@ -93,7 +93,7 @@ kullanıcının sayfa görünümünü bozmasını engelleyebiliriz.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/yLZDQ/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/yLZDQ/embedded/result,css,html"></iframe>
 
 Resimler için güzel bir uygulama olabilir.
 
@@ -115,7 +115,7 @@ Resimler için güzel bir uygulama olabilir.
 }
 {% endhighlight %}
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Xk3Gr/10/embedded/result,css,html"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/Xk3Gr/10/embedded/result,css,html"></iframe>
 
 **Tarayıcı Desteği**
 

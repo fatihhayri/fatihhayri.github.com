@@ -31,7 +31,7 @@ Sorunu görmek için aşağıdaki gibi bir örnek yaptım;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
 {% endhighlight %}
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/2gKwm/4/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/2gKwm/4/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ie7’de(6’yı kâle bile almıyorum :D) renk geçişinin uygulanmadığını görüyoruz.
 
@@ -39,7 +39,7 @@ ie7’de(6’yı kâle bile almıyorum :D) renk geçişinin uygulanmadığını 
 
 Çözüm ise bir önceki [hasLayout][hasLayout’] makalesinde olduğu gibi sadece zoom:1 eklemek.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/fatihhayri/Q2z89/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/Q2z89/embedded/css,result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Ben tüm renk geçişi kodlarımın sonuna unutmazsam zoom:1 ekliyorum sizede öneririm.
 
