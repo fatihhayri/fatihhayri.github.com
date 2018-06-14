@@ -62,7 +62,7 @@ Kalın sağlıcakla.
  - [https://caniuse.com/#feat=hidden](https://caniuse.com/#feat=hidden)
  - [https://www.quora.com/What-are-the-speed-differences-between-jQuery-hide-show-and-addClass-removeClass](https://www.quora.com/What-are-the-speed-differences-between-jQuery-hide-show-and-addClass-removeClass)
  - [https://www.learningjquery.com/2010/05/now-you-see-me-showhide-performance](https://www.learningjquery.com/2010/05/now-you-see-me-showhide-performance)
- - [http://www.davetech.com/blog/high-performance-jquery](http://www.davetech.com/blog/high-performance-jquery)
+ - http://www.davetech.com/blog/high-performance-jquery
  - [https://github.com/jquery/jquery/issues/2057](https://github.com/jquery/jquery/issues/2057)
  - [https://github.com/jquery/jquery.com/issues/88#issuecomment-72400007](https://github.com/jquery/jquery.com/issues/88#issuecomment-72400007)
  - [https://github.com/easydigitaldownloads/easy-digital-downloads/issues/3065](https://github.com/easydigitaldownloads/easy-digital-downloads/issues/3065)

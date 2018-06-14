@@ -18,7 +18,7 @@ Başlama bakımından less sadece bir js dosyası ile başlayabildiğimiz için 
 
 Tabi bu ortam hazırlama işini bir sefer yapıyoruz. Bir kere kurup sonra devamlı çalışıyoruz. Ayrıca hemen çalıştır less'in performans sıkıntıları sorun oluyor.
 
-Ben burada stylus’u sizlere anlatmaya çalışacağım. Birinin diğerine göre çok büyük avantajları olmadığı için sizde bu 3 ön-derleyiciden birini seçebilirsiniz. [SASS için bu makaleyi][2], [LESS içinde bu makaleyi][3] okuyabilirsiniz. Ayrıca google araması sonucu başka Türkçe makalelere erişebiliyoruz.
+Ben burada stylus’u sizlere anlatmaya çalışacağım. Birinin diğerine göre çok büyük avantajları olmadığı için sizde bu 3 ön-derleyiciden birini seçebilirsiniz. [SASS için bu makaleyi](/sass) okuyabilirsiniz. Ayrıca google araması sonucu başka Türkçe makalelere erişebiliyoruz.
 
 Benim stylus'u seçmemdeki etkenlerden bazıları sahibinden.com'daki bazı etkenlerdi. Siz seçim yaparken kendi etkenlerinizi göz önünde bulundurarak bir seçim yapın derim.
 
@@ -447,8 +447,6 @@ Kalın sağlıcakla.
 - [https://github.com/andris9/stylus-sprite](https://github.com/andris9/stylus-sprite)
 
   [1]: /images/stylus_logo.png
-  [2]: http://webmagazin.co/sass-kullanalim-ve-kullandiralim/
-  [3]: http://webmagazin.co/less-csse-heyecan-katin-genel-bakis/
   [4]: http://nodejs.org/
   [5]: /images/nodejs_kurmak.png
   [6]: http://css2stylus.com/

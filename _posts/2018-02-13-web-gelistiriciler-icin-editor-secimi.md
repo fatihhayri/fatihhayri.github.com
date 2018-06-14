@@ -275,7 +275,7 @@ Kalın sağlıcakla.
 
  - [http://aslanbakan.com/tr/blog/sublime-text-3-incelemesi-ve-en-iyi-33-eklenti/](http://aslanbakan.com/tr/blog/sublime-text-3-incelemesi-ve-en-iyi-33-eklenti/)
  - [https://www.makeuseof.com/tag/what-is-data-analysis/](https://www.makeuseof.com/tag/what-is-data-analysis/)
- - [https://www.templatemonster.com/blog/best-code-editors-2017/](https://www.templatemonster.com/blog/best-code-editors-2017/)
+ - https://www.templatemonster.com/blog/best-code-editors-2017/
  - [https://www.slant.co/topics/12/~best-programming-text-editors](https://www.slant.co/topics/12/~best-programming-text-editors)
  - [http://blog.liveedu.tv/10-best-text-editors-programming-2016/](http://blog.liveedu.tv/10-best-text-editors-programming-2016/)
  - [https://blog.codeship.com/5-code-editors-for-web-application-and-api-development/](https://blog.codeship.com/5-code-editors-for-web-application-and-api-development/)

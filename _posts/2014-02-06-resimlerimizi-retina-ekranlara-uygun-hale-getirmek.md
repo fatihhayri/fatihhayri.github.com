@@ -181,8 +181,8 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
- - [http://www.ozdemir.info.tr/?p=396][5]
- - [http://www.huseyinemanet.com/post/43506500952/retina-display-icin-kod-yazmak][6]
+ - http://www.ozdemir.info.tr/?p=396
+ - http://www.huseyinemanet.com/post/43506500952/retina-display-icin-kod-yazmak
  - [http://css-tricks.com/snippets/css/retina-display-media-query/][7]
  - [http://www.sitepoint.com/css-techniques-for-retina-displays/][8]
  - [http://www.leemunroe.com/designing-for-high-resolution-retina-displays/][9]
@@ -202,8 +202,6 @@ Kalın sağlıcakla.
   [2]: http://responsiveimages.org/
   [3]: https://github.com/borismus/srcset-polyfill
   [4]: https://fatihhayrioglu.com/font-face-kullanimi/
-  [5]: http://www.ozdemir.info.tr/?p=396
-  [6]: http://www.huseyinemanet.com/post/43506500952/retina-display-icin-kod-yazmak
   [7]: http://css-tricks.com/snippets/css/retina-display-media-query/
   [8]: http://www.sitepoint.com/css-techniques-for-retina-displays/
   [9]: http://www.leemunroe.com/designing-for-high-resolution-retina-displays/

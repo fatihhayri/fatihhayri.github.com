@@ -105,4 +105,4 @@ Kalın sağlıcakla.
  - [http://www.sitepoint.com/understanding-bootstrap-grid-system/](http://www.sitepoint.com/understanding-bootstrap-grid-system/)
  - [http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php](http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php)
  - [http://shoelace.io/](http://shoelace.io/)
- - [http://blog.jetstrap.com/2013/08/bootstrap-3-grids-explained/](http://blog.jetstrap.com/2013/08/bootstrap-3-grids-explained/)
+ - http://blog.jetstrap.com/2013/08/bootstrap-3-grids-explained/

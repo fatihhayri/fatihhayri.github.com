@@ -162,6 +162,6 @@ Kalın sağlıcakla.
  - [http://www.jskoleji.com/2013/09/nodejs-ilk-uygulamamizi-yaziyoruz.html](http://www.jskoleji.com/2013/09/nodejs-ilk-uygulamamizi-yaziyoruz.html)
  - [http://speckyboy.com/2013/11/13/node-js-for-front-end-developers/](http://speckyboy.com/2013/11/13/node-js-for-front-end-developers/)
  - [http://kod5.org/node-js-npm-kavramlari-uzerine/](http://kod5.org/node-js-npm-kavramlari-uzerine/)
- - [http://www.nodejstr.com/search/label/node%20js%20nedir](http://www.nodejstr.com/search/label/node%20js%20nedir)
+ - http://www.nodejstr.com/search/label/node%20js%20nedir
  - [http://www.sitepoint.com/beginners-guide-node-package-manager/](http://www.sitepoint.com/beginners-guide-node-package-manager/)
  - [http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo](http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo)

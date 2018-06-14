@@ -36,7 +36,6 @@ Kalın sağlıcakla.
 
  - [https://blog.google/products/translate/found-translation-more-accurate-fluent-sentences-google-translate/](https://blog.google/products/translate/found-translation-more-accurate-fluent-sentences-google-translate/)
  - [https://www.cnet.com/news/google-translate-machine-learning-neural-networks/](https://www.cnet.com/news/google-translate-machine-learning-neural-networks/)
- - [http://www.haber10.com/fotogaleri/teknoloji/google_translate_yenilendi-668931#image-0](http://www.haber10.com/fotogaleri/teknoloji/google_translate_yenilendi-668931#image-0)
  - [http://www.haberturk.com/ekonomi/teknoloji/haber/1324438-google-translate-turkce-dahil-8-dilde-dusunerek-cevirecek](http://www.haberturk.com/ekonomi/teknoloji/haber/1324438-google-translate-turkce-dahil-8-dilde-dusunerek-cevirecek)
  - [http://www.sosyalmedyakafe.com/2016/11/yeni-google-translate-guncellemesi-turkce.html](http://www.sosyalmedyakafe.com/2016/11/yeni-google-translate-guncellemesi-turkce.html)
  - [http://googlesystem.blogspot.com.tr/2016/12/google-translates-5000-character-limit.html](http://googlesystem.blogspot.com.tr/2016/12/google-translates-5000-character-limit.html)

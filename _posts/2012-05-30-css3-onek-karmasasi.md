@@ -88,8 +88,8 @@ inceleyeceğiz.
 Çözüm önerilerinden birisi kodlamamızı standart tanımlar ile yapıp en
 son kodu çevrimiçi araçlar yardımı ile
 
--   [http://cssprefixer.appspot.com/][]
--   [http://prefixmycss.com/][]
+-   http://cssprefixer.appspot.com/
+-   http://prefixmycss.com/
 -   [http://prefixr.com/][]
 
 tüm tarayıcılar için üretmek olabilir.
@@ -176,7 +176,7 @@ Zamanla göreceği bakalım neler olacak.
 ## Kaynaklar
 
 -   [http://www.css3.info/why-and-when-browsers-prefix-css3-features/][]
--   [http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/][] (araçlar)
+-   http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/
 -   [http://reference.sitepoint.com/css/vendorspecific][]
 -   [http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html][]
 -   [http://www.alistapart.com/articles/prefix-or-posthack/][]
@@ -186,7 +186,7 @@ Zamanla göreceği bakalım neler olacak.
 -   [http://coding.smashingmagazine.com/2011/10/12/prefixfree-break-free-from-css-prefix-hell/][] (çözüm)
 -   [http://www.sitepoint.com/w3c-css-webkit-prefix-crisis][]
 -   [http://lea.verou.me/2011/11/vendor-prefixes-have-failed-whats-next/][]
--   [http://prefixmycss.com/][]
+-   http://prefixmycss.com/
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-never-type-a-vendor-prefix-again/][] (less ile çözüm)
 -   [http://www.alistapart.com/articles/the-vendor-prefix-predicament-alas-eric-meyer-interviews-tantek-celik/][]
 -   [http://www.sitepoint.com/css3-vendor-prefix-crisis-solutions/][]
@@ -205,12 +205,9 @@ Zamanla göreceği bakalım neler olacak.
 
   [Firefox]: http://hacks.mozilla.org/2010/09/firefox-4-recent-changes-in-firefox/
   [İnternet Explorer9]: http://msdn.microsoft.com/en-us/ie/ff468705.aspx
-  [http://cssprefixer.appspot.com/]: http://cssprefixer.appspot.com/
-  [http://prefixmycss.com/]: http://prefixmycss.com/
   [http://prefixr.com/]: http://prefixr.com/
   [prefixr.com]: http://www.prefixr.com/api/usage/
   [http://www.css3.info/why-and-when-browsers-prefix-css3-features/]: http://www.css3.info/why-and-when-browsers-prefix-css3-features/
-  [http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/]: http://www.webresourcesdepot.com/instantly-prefix-css3-code-prefixmycss/
   [http://reference.sitepoint.com/css/vendorspecific]: http://reference.sitepoint.com/css/vendorspecific
   [http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html]: http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html
   [http://www.alistapart.com/articles/prefix-or-posthack/]: http://www.alistapart.com/articles/prefix-or-posthack/

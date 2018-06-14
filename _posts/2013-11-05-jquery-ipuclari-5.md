@@ -136,7 +136,7 @@ Kalın sağlıcakla.
 - [http://james.padolsey.com/javascript/jquery-code-smells/][4]
 - [http://www.tutorialspoint.com/jquery/event-preventdefault.htm][6]
 - [http://css-tricks.com/return-false-and-prevent-default/][7]
-- [http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html][8]
+- http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html
 - [http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx][9]
 - [http://net.tutsplus.com/tutorials/javascript-ajax/20-helpful-jquery-methods-you-should-be-using/][10]
 - [http://www.tuttoaster.com/some-good-and-advanced-jquery-techniques/][12]
@@ -146,11 +146,10 @@ Kalın sağlıcakla.
 - [http://css-plus.com/2010/10/4-useful-jquery-selectors/][16]
 - [http://www.javascriptbank.com/more-10-jquery-javascript-tips-tricks-improve-code.html][17]
 - [http://jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html][18]
-- [http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/][19]
+- http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/
 - [http://css-tricks.com/return-false-and-prevent-default/][21]
 - [http://www.quirksmode.org/js/events_order.html][22]
 - [http://javascript.info/tutorial/bubbling-and-capturing][23]
-- [http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html][24]
 - [http://jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html][25]
 - [http://api.jquery.com/event.preventDefault/][26]
 - [http://jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html][27]
@@ -161,7 +160,6 @@ Kalın sağlıcakla.
   [4]: http://james.padolsey.com/javascript/jquery-code-smells/
   [6]: http://www.tutorialspoint.com/jquery/event-preventdefault.htm
   [7]: http://css-tricks.com/return-false-and-prevent-default/
-  [8]: http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html
   [9]: http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx
   [10]: http://net.tutsplus.com/tutorials/javascript-ajax/20-helpful-jquery-methods-you-should-be-using/
   [12]: http://www.tuttoaster.com/some-good-and-advanced-jquery-techniques/
@@ -171,11 +169,9 @@ Kalın sağlıcakla.
   [16]: http://css-plus.com/2010/10/4-useful-jquery-selectors/
   [17]: http://www.javascriptbank.com/more-10-jquery-javascript-tips-tricks-improve-code.html
   [18]: http://jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html
-  [19]: http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/
   [21]: http://css-tricks.com/return-false-and-prevent-default/
   [22]: http://www.quirksmode.org/js/events_order.html
   [23]: http://javascript.info/tutorial/bubbling-and-capturing
-  [24]: http://neeraj.name/2010/10/25/return-false-in-jquery-1.4.3.html
   [25]: http://jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html
   [26]: http://api.jquery.com/event.preventDefault/
   [27]: http://jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html

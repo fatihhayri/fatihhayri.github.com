@@ -204,7 +204,7 @@ sitelerden kaldırmayı unutmayın.
 -   [http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html][]
     (querySelector desteği)
 -   [http://msdn.microsoft.com/en-us/library/cc304082(v=vs.85).aspx][]
--   [http://haslayout.net/haslayout][]
+-   http://haslayout.net/haslayout
 -   [http://ejohn.org/blog/javascript-in-internet-explorer-8/][]
 -   [http://www.evotech.net/blog/2009/03/ie8-css-support/][]
 -   [http://coding.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/][]
@@ -226,7 +226,7 @@ sitelerden kaldırmayı unutmayın.
   [http://blogs.msdn.com/b/ie/]: http://blogs.msdn.com/b/ie/
   [hasLayout sorunları]: http://www.fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/
   [Murat Çorlu]: https://twitter.com/#!/muratcorlu
-  [querySelector()]: https://developer.mozilla.org/En/DOM/Document.querySelector
+  [querySelector()]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
   [querySelectorAll()]: https://developer.mozilla.org/en/DOM/element.querySelectorAll
   [tıklayınız.]: http://www.fatihhayrioglu.com/css3-box-sizing-ozelligi/
   [font-weight]: http://www.fatihhayrioglu.com/font-ozellikleri/
@@ -275,7 +275,6 @@ sitelerden kaldırmayı unutmayın.
   [http://www.nuricankaya.com/default.asp?gunluk_id=407]: http://www.nuricankaya.com/default.asp?gunluk_id=407
   [http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html]: http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html
   [http://msdn.microsoft.com/en-us/library/cc304082(v=vs.85).aspx]: http://msdn.microsoft.com/en-us/library/cc304082(v=vs.85).aspx
-  [http://haslayout.net/haslayout]: http://haslayout.net/haslayout
   [http://ejohn.org/blog/javascript-in-internet-explorer-8/]: http://ejohn.org/blog/javascript-in-internet-explorer-8/
   [http://www.evotech.net/blog/2009/03/ie8-css-support/]: http://www.evotech.net/blog/2009/03/ie8-css-support/
   [http://coding.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/]: http://coding.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/

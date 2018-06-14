@@ -150,6 +150,6 @@ Kalın sağlıcakla.
 
  - [https://scotch.io/tutorials/reorder-css-columns-using-bootstrap](https://scotch.io/tutorials/reorder-css-columns-using-bootstrap)
  - [http://stackoverflow.com/a/18070242/296373](http://stackoverflow.com/a/18070242/296373)
- - [http://v4-alpha.getbootstrap.com/getting-started/flexbox/](http://v4-alpha.getbootstrap.com/getting-started/flexbox/)
+ - [https://getbootstrap.com/docs/4.0/utilities/flex/](https://getbootstrap.com/docs/4.0/utilities/flex/)
  - [http://designmodo.com/bootstrap-4-flexbox/](http://designmodo.com/bootstrap-4-flexbox/)
  - [https://scotch.io/bar-talk/whats-new-in-bootstrap-4](https://scotch.io/bar-talk/whats-new-in-bootstrap-4)

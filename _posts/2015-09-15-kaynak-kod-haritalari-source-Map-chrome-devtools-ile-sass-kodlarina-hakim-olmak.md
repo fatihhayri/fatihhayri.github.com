@@ -98,6 +98,6 @@ Kalın sağlıcakla.
  - [https://developer.chrome.com/devtools/docs/css-preprocessors](https://developer.chrome.com/devtools/docs/css-preprocessors)
  - [https://www.youtube.com/watch?v=L6wAn2mhZGA](https://www.youtube.com/watch?v=L6wAn2mhZGA)
  - [https://medium.com/@toolmantim/getting-started-with-css-sourcemaps-and-in-browser-sass-editing-b4daab987fb0](https://medium.com/@toolmantim/getting-started-with-css-sourcemaps-and-in-browser-sass-editing-b4daab987fb0)
- - [http://oguzhan.in/sass-source-maps-chrome/](http://oguzhan.in/sass-source-maps-chrome/)
+ - http://oguzhan.in/sass-source-maps-chrome/
  - [http://code.tutsplus.com/tutorials/developing-with-sass-and-chrome-devtools--net-32805](http://code.tutsplus.com/tutorials/developing-with-sass-and-chrome-devtools--net-32805)
  - [https://www.youtube.com/watch?v=tQdbJHtu6kU](https://www.youtube.com/watch?v=tQdbJHtu6kU)

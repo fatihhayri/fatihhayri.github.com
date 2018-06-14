@@ -108,7 +108,7 @@ Ben konuların yanına benim yazdığım konuların linklerini koydum. Çok az �
  - [http://code.tutsplus.com/tutorials/essential-tools-for-a-modern-front-end-development-workflow--pre-66083](http://code.tutsplus.com/tutorials/essential-tools-for-a-modern-front-end-development-workflow--pre-66083)
  - [http://addyosmani.com/blog/199-slides-on-front-end-tooling-workflows/](http://addyosmani.com/blog/199-slides-on-front-end-tooling-workflows/)
  - [http://tooling.github.io/book-of-modern-frontend-tooling/index.html](http://tooling.github.io/book-of-modern-frontend-tooling/index.html)
- - [http://www.learnjade.com/](http://www.learnjade.com/)
+ - http://www.learnjade.com/
  - [http://slim-lang.com/](http://slim-lang.com/)
- - [http://blog.kartaca.com/2013/09/angularjs-ve-backbonejs/](http://blog.kartaca.com/2013/09/angularjs-ve-backbonejs/)
+ - http://blog.kartaca.com/2013/09/angularjs-ve-backbonejs/
  - [http://learn.shayhowe.com/advanced-html-css/](http://learn.shayhowe.com/advanced-html-css/)

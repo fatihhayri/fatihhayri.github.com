@@ -23,7 +23,7 @@ tags: delicious, E-Devlet, em, gelişmiş günlük yazmak, google özel arama, j
 -   6 kullanışlı jquery ipucu. [Bağlantı][10]
 -   jQuery içinde diğer javascript kütüphanelerini kullanmak.
     [Bağlantı][11]
--   Çevrimiçi yuvarlak köşeli kutular yapmak için. [Bağlantı][12]
+-   Çevrimiçi yuvarlak köşeli kutular yapmak için. [Bağlantı]
 -   Blog Yöneticilerine Tavsiyeler - h-yaman.com [Bağlantı][13]
 -   E-Devlet Yolunda Tökezlerken... - hasanyalcin.com [Bağlantı][14]
 -   Tablo Etiketinin Gönlünü Almak - webdeneyimleri.com Kırık bağlantı.
@@ -46,6 +46,5 @@ tags: delicious, E-Devlet, em, gelişmiş günlük yazmak, google özel arama, j
     "jQuery"
   [11]: http://docs.jquery.com/Using_jQuery_with_Other_Libraries
     "jQuery"
-  [12]: http://cssround.com/ "cssround"
   [13]: http://www.h-yaman.com/blog-yoneticilerine-tavsiyeler "blog yaz"
   [14]: http://www.hasanyalcin.com/?p=555 "e-devlet"

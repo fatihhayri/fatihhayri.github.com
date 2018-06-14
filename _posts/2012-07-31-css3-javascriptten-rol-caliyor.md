@@ -6,7 +6,7 @@ Category: CSS
 tags: :checked, :target, bitişik kardeş seçiciler, css3, Etkinlik, Genel Kardeş Seçiciler, Javascript, kardeş seçiciler
 ---
 
-Geçen haftasonu c.tesi günü(28 Temmuz 2012) [jstanbul etkinliğinde][]
+Geçen haftasonu c.tesi günü(28 Temmuz 2012) jstanbul etkinliğinde
 sunduğum “CSS3 Javascript’ten Rol Çalıyor” makalesidir. Etkinlikte
 internet erişimim olmadığı için örnekleri gösterememiştim, burada
 bağlantıları da paylaşıyorum umarım yararlı olur.
@@ -358,7 +358,7 @@ gözterilmesi mantığı ile yapılmaktadır.
 -   [http://css-tricks.com/css3-tabs/][]
 -   [http://www.sitepoint.com/css3-tabs-using-target-selector][]
 -   [http://tympanus.net/Tutorials/CSS3ContentTabs/][]
--   [http://www.webstuffshare.com/2010/01/updated-pure-css-tab-menu/][]
+-   http://www.webstuffshare.com/2010/01/updated-pure-css-tab-menu
 
 Slider
 ------
@@ -385,7 +385,7 @@ codrops sitesine uğramanızı öneriyorum. Makalede linkleri mevcut.
 -   [http://tympanus.net/Tutorials/CircleNavigationEffect/][]
 -   [http://tympanus.net/codrops/2012/03/23/responsive-content-navigator-with-css3/][]
 -   [http://www.c5theme.com/addons/responsive-slider/][]
--   [http://csscience.com/responsiveslidercss3/][]
+-   http://csscience.com/responsiveslidercss3/
 
 Lightbox, modal
 ---------------
@@ -406,7 +406,7 @@ yapabiliyoruz.
 -   [http://alexindigo.github.com/lightbox/#gallery][]
 -   [http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/][]
 -   [http://www.paulrhayes.com/2011-03/css-modal/][]
--   [http://www.webstuffshare.com/2012/04/create-elegant-modal-window-using-css-scale-transform/][]
+-   http://www.webstuffshare.com/2012/04/create-elegant-modal-window-using-css-scale-transform/
 -   [http://playground.deaxon.com/css/lightbox/#home][]
 
 Animasyon, Efektler vd.
@@ -473,7 +473,7 @@ menüler elde edebiliyoruz.
 -   [http://www.htmldrive.net/items/show/437/CSS3-only-horizontal-drop-line-tab-menu][]
 -   [http://cssdeck.com/item/511/soothing-css3-dropdown-animation][]
 -   [http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/][]
--   [http://www.webstuffshare.com/2010/04/nice-menu-css-animation-jquery-animate/][]
+-   http://www.webstuffshare.com/2010/04/nice-menu-css-animation-jquery-animate
 
 
 
@@ -503,7 +503,7 @@ uygulama yapılmaktadır. Benim gördüğüm
 -   [http://cssdeck.com/item/513/colourful-css-loader][] - loading
 -   [http://www.hongkiat.com/blog/css3-animation-advanced-marquee/][]
     (marquee)
--   [http://www.webstuffshare.com/2012/04/how-to-create-animated-list-view-using-css3-only/][]
+-   http://www.webstuffshare.com/2012/04/how-to-create-animated-list-view-using-css3-only
     (liste görünümü)
 -   [http://thecodeplayer.com/walkthrough/make-a-stopwatch-using-css3-without-images-or-javascript][]
     (kronometre)
@@ -516,12 +516,11 @@ Kaynaklar
 -   [http://css-tricks.com/the-checkbox-hack/][]
 -   [http://www.inserthtml.com/2012/04/css-click-states/][]
 -   [http://designshack.net/articles/css/using-checkboxes-to-toggle-css-and-create-click-events/][]
--   [http://calebogden.com/css-target/][]
--   [http://www.bilisimdergi.com/3-Katman-Mimarisi-ve-JavaScript-14-5.html][]
+-   http://calebogden.com/css-target/
+-   http://www.bilisimdergi.com/3-Katman-Mimarisi-ve-JavaScript-14-5.html
 -   [http://cscie12.dce.harvard.edu/lecture_notes/2010/20100324/handout.html][]
 
 
-  [jstanbul etkinliğinde]: http://jstanbul.org/2012/
   [sunumun linki.]: https://docs.google.com/presentation/d/13cNTBiY4ewyRpCwmKD_CyKgMs3z4md27YH-ZcVtubcA/edit
   [Modern Web Tasarımı]: http://www.hasanyalcin.com/e-kitap-modern-web-tasarimi/
   [50]: /images/3katman.gif
@@ -538,7 +537,6 @@ Kaynaklar
   [http://css-tricks.com/css3-tabs/]: http://css-tricks.com/css3-tabs/
   [http://www.sitepoint.com/css3-tabs-using-target-selector]: http://www.sitepoint.com/css3-tabs-using-target-selector
   [http://tympanus.net/Tutorials/CSS3ContentTabs/]: http://tympanus.net/Tutorials/CSS3ContentTabs/
-  [http://www.webstuffshare.com/2010/01/updated-pure-css-tab-menu/]: http://www.webstuffshare.com/2010/01/updated-pure-css-tab-menu/
   [http://coding.smashingmagazine.com/2012/04/25/pure-css3-cycling-slideshow/]: http://coding.smashingmagazine.com/2012/04/25/pure-css3-cycling-slideshow/
   [http://tympanus.net/codrops/2012/04/30/fluid-css3-slideshow-with-parallax-effect/]:http://tympanus.net/codrops/2012/04/30/fluid-css3-slideshow-with-parallax-effect/
   [http://tympanus.net/Tutorials/CSS3SlidingImagePanels/]: http://tympanus.net/Tutorials/CSS3SlidingImagePanels/
@@ -549,13 +547,11 @@ Kaynaklar
   [http://tympanus.net/Tutorials/CircleNavigationEffect/]: http://tympanus.net/Tutorials/CircleNavigationEffect/
   [http://tympanus.net/codrops/2012/03/23/responsive-content-navigator-with-css3/]: http://tympanus.net/codrops/2012/03/23/responsive-content-navigator-with-css3/
   [http://www.c5theme.com/addons/responsive-slider/]: http://www.c5theme.com/addons/responsive-slider/
-  [http://csscience.com/responsiveslidercss3/]: http://csscience.com/responsiveslidercss3/
   [http://tympanus.net/codrops/2011/12/26/css3-lightbox/]: http://tympanus.net/codrops/2011/12/26/css3-lightbox/
   [http://www.nealgrosskopf.com/tech/thread.php?pid=75]: http://www.nealgrosskopf.com/tech/thread.php?pid=75
   [http://alexindigo.github.com/lightbox/#gallery]: http://alexindigo.github.com/lightbox/#gallery
   [http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/]: http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/
   [http://www.paulrhayes.com/2011-03/css-modal/]: http://www.paulrhayes.com/2011-03/css-modal/
-  [http://www.webstuffshare.com/2012/04/create-elegant-modal-window-using-css-scale-transform/]: http://www.webstuffshare.com/2012/04/create-elegant-modal-window-using-css-scale-transform/
   [http://playground.deaxon.com/css/lightbox/#home]: http://playground.deaxon.com/css/lightbox/#home
   [http://tympanus.net/codrops/2011/12/07/splash-and-coming-soon-page-effects-with-css3/]: http://tympanus.net/codrops/2011/12/07/splash-and-coming-soon-page-effects-with-css3/
   [http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/]: http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/
@@ -581,19 +577,15 @@ Kaynaklar
   [http://www.htmldrive.net/items/show/437/CSS3-only-horizontal-drop-line-tab-menu]: http://www.htmldrive.net/items/show/437/CSS3-only-horizontal-drop-line-tab-menu
   [http://cssdeck.com/item/511/soothing-css3-dropdown-animation]: http://cssdeck.com/item/511/soothing-css3-dropdown-animation
   [http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/]: http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/
-  [http://www.webstuffshare.com/2010/04/nice-menu-css-animation-jquery-animate/]: http://www.webstuffshare.com/2010/04/nice-menu-css-animation-jquery-animate/
   [http://www.thecssninja.com/css/custom-inputs-using-css]: http://www.thecssninja.com/css/custom-inputs-using-css
   [http://www.wufoo.com/2011/06/13/custom-radio-buttons-and-checkboxes/]: http://www.wufoo.com/2011/06/13/custom-radio-buttons-and-checkboxes/
   [http://proto.io/freebies/onoff/]: http://proto.io/freebies/onoff/
   [http://cssdeck.com/item/269/css-news-ticker]: http://cssdeck.com/item/269/css-news-ticker
   [http://cssdeck.com/item/513/colourful-css-loader]: http://cssdeck.com/item/513/colourful-css-loader
   [http://www.hongkiat.com/blog/css3-animation-advanced-marquee/]: http://www.hongkiat.com/blog/css3-animation-advanced-marquee/
-  [http://www.webstuffshare.com/2012/04/how-to-create-animated-list-view-using-css3-only/]: http://www.webstuffshare.com/2012/04/how-to-create-animated-list-view-using-css3-only/
   [http://www.ryancollins.me/?p=1041]: http://www.ryancollins.me/?p=1041
   [http://speckyboy.com/2010/04/26/30-pure-css-alternatives-to-javascript/]: http://speckyboy.com/2010/04/26/30-pure-css-alternatives-to-javascript/
   [http://css-tricks.com/the-checkbox-hack/]: http://css-tricks.com/the-checkbox-hack/
   [http://www.inserthtml.com/2012/04/css-click-states/]: http://www.inserthtml.com/2012/04/css-click-states/
   [http://designshack.net/articles/css/using-checkboxes-to-toggle-css-and-create-click-events/]: http://designshack.net/articles/css/using-checkboxes-to-toggle-css-and-create-click-events/
-  [http://calebogden.com/css-target/]: http://calebogden.com/css-target/
-  [http://www.bilisimdergi.com/3-Katman-Mimarisi-ve-JavaScript-14-5.html]: http://www.bilisimdergi.com/3-Katman-Mimarisi-ve-JavaScript-14-5.html
   [http://cscie12.dce.harvard.edu/lecture_notes/2010/20100324/handout.html]: http://cscie12.dce.harvard.edu/lecture_notes/2010/20100324/handout.html

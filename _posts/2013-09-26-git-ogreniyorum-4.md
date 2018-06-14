@@ -125,7 +125,7 @@ ile dosyanızı belirtilen sunucunun ana klasörüne atabiliyoruz.
 - [https://gist.github.com/mesuutt/4564848/raw/277478fa242fc5f0a5dddb862d51f79fa4fb9304/git_notlari.md][8]
 - [http://marklodato.github.io/visual-git-guide/index-en.html][9]
 - [http://git-scm.com/book/en/Git-Basics-Undoing-Things][10]
-- [https://www.atlassian.com/git/tutorial/undoing-changes][11]
+- https://www.atlassian.com/git/tutorial/undoing-changes
 
 
   [1]: https://twitter.com/muratcorlu
@@ -138,4 +138,3 @@ ile dosyanızı belirtilen sunucunun ana klasörüne atabiliyoruz.
   [8]: https://gist.github.com/mesuutt/4564848/raw/277478fa242fc5f0a5dddb862d51f79fa4fb9304/git_notlari.md
   [9]: http://marklodato.github.io/visual-git-guide/index-en.html
   [10]: http://git-scm.com/book/en/Git-Basics-Undoing-Things
-  [11]: https://www.atlassian.com/git/tutorial/undoing-changes

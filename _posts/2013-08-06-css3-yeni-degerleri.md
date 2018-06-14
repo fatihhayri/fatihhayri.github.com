@@ -283,7 +283,7 @@ Kodu [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters?redir
 * [http://www.w3.org/TR/css3-values/](http://www.w3.org/TR/css3-values/) (tümü)
 * [http://www.standardista.com/css3/css-values-lengths-times-frequenc-angles/](http://www.standardista.com/css3/css-values-lengths-times-frequenc-angles/) (tümü)
 * [https://developer.mozilla.org/en-US/docs/CSS/length](https://developer.mozilla.org/en-US/docs/CSS/length) (tümü)
-* [http://www.kabayview.com/css3/whats-new-in-css3-values-and-units](http://www.kabayview.com/css3/whats-new-in-css3-values-and-units) (tümü)
+* http://www.kabayview.com/css3/whats-new-in-css3-values-and-units
 * [http://html.nhndesign.com/html_guide/?appendix/CSS3_Values___Units](http://html.nhndesign.com/html_guide/?appendix/CSS3_Values___Units) (tümü)
 * [http://www.tumblr.com/tagged/values-and-units](http://www.tumblr.com/tagged/values-and-units) (tümü)
 * [http://generatedcontent.org/post/11933972962/css3values](http://generatedcontent.org/post/11933972962/css3values) (tümü)

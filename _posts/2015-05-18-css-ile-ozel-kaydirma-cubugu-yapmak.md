@@ -63,13 +63,13 @@ Bu sözde sınıfları tanımlamak yerine örnekleri inceleyerek daha iyi anlaya
  - [https://www.webkit.org/blog/363/styling-scrollbars/](https://www.webkit.org/blog/363/styling-scrollbars/)
  - [https://css-tricks.com/almanac/properties/s/scrollbar/](https://css-tricks.com/almanac/properties/s/scrollbar/)
  - [http://cssdeck.com/labs/css3-webkit-vertical-scrollbars/](http://cssdeck.com/labs/css3-webkit-vertical-scrollbars/)
- - [http://codemug.com/html/custom-scrollbars-using-css/](http://codemug.com/html/custom-scrollbars-using-css/)
+ - http://codemug.com/html/custom-scrollbars-using-css/
  - [http://stackoverflow.com/a/14150577/296373](http://stackoverflow.com/a/14150577/296373)
  - [http://www.hongkiat.com/blog/css-scroll-bar/](http://www.hongkiat.com/blog/css-scroll-bar/)
  - [http://webdesign.tutsplus.com/articles/quick-tip-styling-scrollbars-to-match-your-ui-design--webdesign-9430](http://webdesign.tutsplus.com/articles/quick-tip-styling-scrollbars-to-match-your-ui-design--webdesign-9430)
  - [http://mikethedj4.github.io/Webkit-Scrollbar-Generator/](http://mikethedj4.github.io/Webkit-Scrollbar-Generator/)
  - [http://beautifulpixels.com/goodies/create-custom-webkit-scrollbar/](http://beautifulpixels.com/goodies/create-custom-webkit-scrollbar/)
- - [http://almaer.com/blog/creating-custom-scrollbars-with-css-how-css-isnt-great-for-every-task](http://almaer.com/blog/creating-custom-scrollbars-with-css-how-css-isnt-great-for-every-task)
+ - http://almaer.com/blog/creating-custom-scrollbars-with-css-how-css-isnt-great-for-every-task
  - [http://gs.statcounter.com/#all-browser_version_partially_combined-TR-monthly-201502-201504-bar](http://gs.statcounter.com/#all-browser_version_partially_combined-TR-monthly-201502-201504-bar)
  - [http://codepen.io/shimizurei/pen/vgHbF?editors=110](http://codepen.io/shimizurei/pen/vgHbF?editors=110)
 

@@ -135,7 +135,7 @@ Kalın sağlıcakla.
  - [http://stackoverflow.com/questions/4181884/after-and-before-css-pseudo-elements-hack-for-ie-7](http://stackoverflow.com/questions/4181884/after-and-before-css-pseudo-elements-hack-for-ie-7)
  - [http://reference.sitepoint.com/css/pseudoelement-before](http://reference.sitepoint.com/css/pseudoelement-before)
  - [http://reference.sitepoint.com/css/pseudoelement-after](http://reference.sitepoint.com/css/pseudoelement-after)
- - [http://calebogden.com/css-before-and-after/](http://calebogden.com/css-before-and-after/)
+ - http://calebogden.com/css-before-and-after/
  - [http://www.hongkiat.com/blog/pseudo-element-before-after/](http://www.hongkiat.com/blog/pseudo-element-before-after/)
  - [http://red-team-design.com/css3-breadcrumbs/](http://red-team-design.com/css3-breadcrumbs/)
 

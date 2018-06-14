@@ -102,7 +102,7 @@ ile kodumuz içindeki bağlantının en yakın div ebeveyni yakalanmış olur. J
 document.getElementsByTagName('a').closest('div');
 {% endhighlight %}
 
-Bu yeni bir özellik olmasına rağmen şu an Türkiye'deki desteği %83 seviyesinde. Desteklmeyen tarayıcılar için [https://github.com/cferdinandi/getClosest](https://github.com/cferdinandi/getClosest) kullanılabilir.
+Bu yeni bir özellik olmasına rağmen şu an Türkiye'deki desteği %83 seviyesinde. Desteklmeyen tarayıcılar için [https://github.com/jonathantneal/closest](https://github.com/jonathantneal/closest) kullanılabilir.
 
 <p class="ciu_embed" data-feature="element-closest" data-periods="future_1,current,past_1,past_2">  <a href="http://caniuse.com/#feat=element-closest">Can I Use element-closest?</a> Data on support for the element-closest feature across the major browsers from caniuse.com. </p>
 

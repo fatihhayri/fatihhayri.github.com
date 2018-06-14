@@ -206,7 +206,7 @@ Yukarıdaki örnekte eğer com&lt;tab&gt; yapsa idik commit tamamlamasını otom
 ## Kaynaklar
 
  - http://bariseser.net/grep-komutu-ve-kullanimi-kendime-not/
- - [http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html](http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html)
+ - http://www.hostingsiteniz.com/grep-komutu-kullanimi-t24.0.html
  - [http://forum.ubuntu-tr.net/index.php?topic=17445.0](http://forum.ubuntu-tr.net/index.php?topic=17445.0)
  - http://oneromer.com/?p=76
  - [http://jblevins.org/log/git-colors](http://jblevins.org/log/git-colors)

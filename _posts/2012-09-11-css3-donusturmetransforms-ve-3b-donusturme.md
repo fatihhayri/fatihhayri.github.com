@@ -424,11 +424,11 @@ Android Browser 3.0+ (-webkit- öneki ile)
 -   [http://www.w3.org/TR/css3-3d-transforms/][]
 -   [http://www.queness.com/post/11403/embrace-the-awesome-css-3d-transforms][]
 -   [http://coding.smashingmagazine.com/2012/01/06/adventures-in-the-third-dimension-css-3-d-transforms/][]
--   [http://www.webstuffshare.com/2012/04/showing-product-information-with-css3-3d-transform/][]
+-   http://www.webstuffshare.com/2012/04/showing-product-information-with-css3-3d-transform/
 -   [http://www.addyosmani.com/resources/3dstack/][] (jquery ile birlikte güzel bir örnek)
 -   [http://www.webkit.org/blog/386/3d-transforms/][]
 -   [http://24ways.org/2010/intro-to-css-3d-transforms][]
--   [http://sandbox.webpro.nl/css3/3d-transforms-interactive-demo.html][]
+-   http://sandbox.webpro.nl/css3/3d-transforms-interactive-demo.html
 -   [http://css3.bradshawenterprises.com/demos/cubecarousel.php][]
 -   [http://www.developerdrive.com/2012/04/transforming-elements-in-3d-using-css3/][]
 -   [http://www.queness.com/post/11493/create-css-3d-transform-card-flip-gallery][]
@@ -442,7 +442,7 @@ Android Browser 3.0+ (-webkit- öneki ile)
 -   [http://www.inserthtml.com/2011/09/css3-3d-transforms-keyframes/][]
 -   [https://developer.mozilla.org/en/CSS/transform-function#translate3d%28%29][]
 -   [http://blogs.msdn.com/b/ie/archive/2012/02/02/css3-3d-transforms-in-ie10.aspx][]
--   [http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm][]
+-   http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm
 -   [http://msdn.microsoft.com/en-us/library/ie/hh673529%28v=vs.85%29.aspx][]
 -   [http://www.found.co.uk/css3-3d-transforms-the-future-of-user-experience/][] (kullanıcı deneyimlerine etkisi hakkında)
 -   [http://www.html5-css3.fr/css3/transformations-3d-css3][] (fransızca)
@@ -471,11 +471,9 @@ Android Browser 3.0+ (-webkit- öneki ile)
   [http://www.w3.org/TR/css3-3d-transforms/]: http://www.w3.org/TR/css3-3d-transforms/
   [http://www.queness.com/post/11403/embrace-the-awesome-css-3d-transforms]: http://www.queness.com/post/11403/embrace-the-awesome-css-3d-transforms
   [http://coding.smashingmagazine.com/2012/01/06/adventures-in-the-third-dimension-css-3-d-transforms/]: http://coding.smashingmagazine.com/2012/01/06/adventures-in-the-third-dimension-css-3-d-transforms/
-  [http://www.webstuffshare.com/2012/04/showing-product-information-with-css3-3d-transform/]: http://www.webstuffshare.com/2012/04/showing-product-information-with-css3-3d-transform/
   [http://www.addyosmani.com/resources/3dstack/]: http://www.addyosmani.com/resources/3dstack/
   [http://www.webkit.org/blog/386/3d-transforms/]: http://www.webkit.org/blog/386/3d-transforms/
   [http://24ways.org/2010/intro-to-css-3d-transforms]: http://24ways.org/2010/intro-to-css-3d-transforms
-  [http://sandbox.webpro.nl/css3/3d-transforms-interactive-demo.html]: http://sandbox.webpro.nl/css3/3d-transforms-interactive-demo.html
   [http://2012.beercamp.com/]: http://2012.beercamp.com/
   [http://css3.bradshawenterprises.com/demos/cubecarousel.php]: http://css3.bradshawenterprises.com/demos/cubecarousel.php
   [http://www.developerdrive.com/2012/04/transforming-elements-in-3d-using-css3/]: http://www.developerdrive.com/2012/04/transforming-elements-in-3d-using-css3/
@@ -490,7 +488,6 @@ Android Browser 3.0+ (-webkit- öneki ile)
   [http://www.inserthtml.com/2011/09/css3-3d-transforms-keyframes/]: http://www.inserthtml.com/2011/09/css3-3d-transforms-keyframes/
   [https://developer.mozilla.org/en/CSS/transform-function#translate3d%28%29]: https://developer.mozilla.org/en/CSS/transform-function#translate3d%28%29
   [http://blogs.msdn.com/b/ie/archive/2012/02/02/css3-3d-transforms-in-ie10.aspx]: http://blogs.msdn.com/b/ie/archive/2012/02/02/css3-3d-transforms-in-ie10.aspx
-  [http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm]: http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm
   [http://msdn.microsoft.com/en-us/library/ie/hh673529%28v=vs.85%29.aspx]: http://msdn.microsoft.com/en-us/library/ie/hh673529%28v=vs.85%29.aspx
   [http://www.found.co.uk/css3-3d-transforms-the-future-of-user-experience/]: http://www.found.co.uk/css3-3d-transforms-the-future-of-user-experience/
   [http://www.html5-css3.fr/css3/transformations-3d-css3]: http://www.html5-css3.fr/css3/transformations-3d-css3

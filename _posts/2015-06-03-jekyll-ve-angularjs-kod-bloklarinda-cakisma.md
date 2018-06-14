@@ -17,4 +17,4 @@ Jekyll ve Angularjs kullananların işine yarar.
 
 ## Kaynaklar
 
- - [http://www.ngroutes.com/questions/AUuADqEOa5vEqxqlK7u2/change-start-and-end-symbol-in-jekyll-to-avoid-angular-conflict.html](http://www.ngroutes.com/questions/AUuADqEOa5vEqxqlK7u2/change-start-and-end-symbol-in-jekyll-to-avoid-angular-conflict.html)
+ - http://www.ngroutes.com/questions/AUuADqEOa5vEqxqlK7u2/change-start-and-end-symbol-in-jekyll-to-avoid-angular-conflict.html

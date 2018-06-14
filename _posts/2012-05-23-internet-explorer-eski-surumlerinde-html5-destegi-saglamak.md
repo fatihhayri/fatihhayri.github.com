@@ -66,7 +66,7 @@ desteği için [Modernizr][] incelemekte yarar var.
 -   [http://ejohn.org/blog/html5-shiv/][]
 -   [http://www.pcpro.co.uk/blogs/2011/03/07/making-html5-work-in-old-versions-of-internet-explorer/][]
 -   [http://drupal.org/project/remysharp_html5shim][]
--   [http://debeterevormgever.nl/en/articles/html5-elements-ie-without-javascript][] (js siz çözüm.)
+-   http://debeterevormgever.nl/en/articles/html5-elements-ie-without-javascript
 -   [http://paulirish.com/2011/the-history-of-the-html5-shiv/][] (html5 shiv in geçmişi)
 -   [http://viget.com/inspire/html5-elements-irresponsible-choice-right-now][]
 
@@ -79,6 +79,5 @@ desteği için [Modernizr][] incelemekte yarar var.
   [http://ejohn.org/blog/html5-shiv/]: http://ejohn.org/blog/html5-shiv/
   [http://www.pcpro.co.uk/blogs/2011/03/07/making-html5-work-in-old-versions-of-internet-explorer/]: http://www.pcpro.co.uk/blogs/2011/03/07/making-html5-work-in-old-versions-of-internet-explorer/
   [http://drupal.org/project/remysharp_html5shim]: http://drupal.org/project/remysharp_html5shim
-  [http://debeterevormgever.nl/en/articles/html5-elements-ie-without-javascript]: http://debeterevormgever.nl/en/articles/html5-elements-ie-without-javascript
   [http://paulirish.com/2011/the-history-of-the-html5-shiv/]: http://paulirish.com/2011/the-history-of-the-html5-shiv/
   [http://viget.com/inspire/html5-elements-irresponsible-choice-right-now]: http://viget.com/inspire/html5-elements-irresponsible-choice-right-now

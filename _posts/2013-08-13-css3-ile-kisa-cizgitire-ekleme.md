@@ -55,7 +55,7 @@ Firefox’da denedim çalışıyor. Gayetde güzel çalışıyor. Unutulmaması 
 * [https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens)
 * [http://drublic.de/blog/css3-auto-hyphenation-for-text-elements/](http://drublic.de/blog/css3-auto-hyphenation-for-text-elements/)
 * [http://www.hongkiat.com/blog/css3-hyphenation/](http://www.hongkiat.com/blog/css3-hyphenation/)
-* [http://www.turkceciler.com/kisa-cizgi.html](http://www.turkceciler.com/kisa-cizgi.html)
+* http://www.turkceciler.com/kisa-cizgi.html
 * [http://caniuse.com/#search=hyphens](http://caniuse.com/#search=hyphens)
 
 

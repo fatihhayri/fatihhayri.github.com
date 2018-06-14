@@ -95,4 +95,4 @@ Kalın sağlıcakla.
  - [https://responsivedesign.is/articles/difference-between-sass-and-scss](https://responsivedesign.is/articles/difference-between-sass-and-scss)
  - [http://www.sasstoscss.com/](http://www.sasstoscss.com/)
  - [http://designshack.net/articles/css/sass-vs-stylus-who-wins-the-minimal-syntax-battle/](http://designshack.net/articles/css/sass-vs-stylus-who-wins-the-minimal-syntax-battle/)
- - [https://www.makerscabin.com/web/sass/learn/syntax](https://www.makerscabin.com/web/sass/learn/syntax)
+ - https://www.makerscabin.com/web/sass/learn/syntax

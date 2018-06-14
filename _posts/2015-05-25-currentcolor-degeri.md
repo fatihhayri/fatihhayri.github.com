@@ -52,7 +52,7 @@ Kalın sağlıcakla..
  - [http://www.quirksmode.org/css/color/currentcolor.html](http://www.quirksmode.org/css/color/currentcolor.html)
  - [http://blogs.adobe.com/dreamweaver/2015/02/extending-the-color-cascade-with-the-css-currentcolor-variable.html#.VV744lm8PRY](http://blogs.adobe.com/dreamweaver/2015/02/extending-the-color-cascade-with-the-css-currentcolor-variable.html#.VV744lm8PRY)
  - [http://osvaldas.info/keeping-css-short-with-currentcolor](http://osvaldas.info/keeping-css-short-with-currentcolor)
- - [http://ademilter.com/arayuz-gelistiriciyi-gelistiren-kodlar/](http://ademilter.com/arayuz-gelistiriciyi-gelistiren-kodlar/)
+ - http://ademilter.com/arayuz-gelistiriciyi-gelistiren-kodlar/
  - [http://demosthenes.info/blog/908/The-First-CSS-Variable-currentColor](http://demosthenes.info/blog/908/The-First-CSS-Variable-currentColor)
  - [http://caniuse.com/#feat=currentcolor](http://caniuse.com/#feat=currentcolor)
  - [http://codepen.io/scottkellum/pen/Fhxql/](http://codepen.io/scottkellum/pen/Fhxql/)

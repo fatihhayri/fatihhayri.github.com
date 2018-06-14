@@ -38,7 +38,7 @@ dört köşesi aynı değer olmayan oval kenarları test etmek açısından
 kullanılabilir.
 
 -   [http://border-radius.com/][]
--   [http://cssround.com/][]
+-   http://cssround.com/
 
 Buton
 -----
@@ -60,7 +60,7 @@ Kutu Gölgeleme
 Daha önce bu konuda bir yazı yazdım ama bu tip bir araçta örnek kod
 saklamanın yerine alabilir. Gayet kullanışlı bir araç
 
--   [http://www.wordpressthemeshock.com/css-drop-shadow/][]
+-   http://www.wordpressthemeshock.com/css-drop-shadow/
 
 Sayfa Planı
 -----------
@@ -68,8 +68,8 @@ Sayfa Planı
 Grid yapılarını gelişmesi ile bir çok hazır kodlar üretilmeye başlandı.
 
 -   [http://csslayoutgenerator.com/][]
--   [http://grids.heroku.com/][]
--   [http://ianli.com/blueprinter/][]
+-   http://grids.heroku.com/
+-   http://ianli.com/blueprinter/
 -   [http://1kbgrid.com/][]
 -   [http://gridinator.com/][]
 -   [http://grid.mindplay.dk/][]
@@ -95,7 +95,7 @@ kendi sprite’ını kendin yapmak.
 -   [http://spritegen.website-performance.org/][]
 -   [http://csssprites.com/][]
 -   [http://www.floweringmind.com/sprite-creator/index.php][]
--   [http://spriteme.org/][]
+-   http://spriteme.org/
 
 Border-image
 ------------
@@ -143,7 +143,7 @@ CSS ile ok
 Transform
 ---------
 
--   [http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm][]
+-   http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm
 
 Filtre
 ------
@@ -188,7 +188,7 @@ Toplu
     box-shadow
     text-rotation
     font-face
--   [http://www.webtutorialplus.com/css3-generator.aspx][]
+-   http://www.webtutorialplus.com/css3-generator.aspx
     border-radius
     gradient
     2d transform
@@ -216,16 +216,12 @@ Toplu
   [http://westciv.com/tools/gradients/]: http://westciv.com/tools/gradients/
   [http://gradients.glrzad.com/]: http://gradients.glrzad.com/
   [http://border-radius.com/]: http://border-radius.com/
-  [http://cssround.com/]: http://cssround.com/
   [http://css3button.net/]: http://css3button.net/
   [http://www.cssbuttongenerator.com/]: http://www.cssbuttongenerator.com/
   [http://css-tricks.com/examples/ButtonMaker/]: http://css-tricks.com/examples/ButtonMaker/
   [http://www.cssportal.com/css3-button-generator/]: http://www.cssportal.com/css3-button-generator/
   [http://css3buttongenerator.com/]: http://css3buttongenerator.com/
-  [http://www.wordpressthemeshock.com/css-drop-shadow/]: http://www.wordpressthemeshock.com/css-drop-shadow/
   [http://csslayoutgenerator.com/]: http://csslayoutgenerator.com/
-  [http://grids.heroku.com/]: http://grids.heroku.com/
-  [http://ianli.com/blueprinter/]: http://ianli.com/blueprinter/
   [http://1kbgrid.com/]: http://1kbgrid.com/
   [http://gridinator.com/]: http://gridinator.com/
   [http://grid.mindplay.dk/]: http://grid.mindplay.dk/
@@ -237,7 +233,6 @@ Toplu
   [http://spritegen.website-performance.org/]: http://spritegen.website-performance.org/
   [http://csssprites.com/]: http://csssprites.com/
   [http://www.floweringmind.com/sprite-creator/index.php]: http://www.floweringmind.com/sprite-creator/index.php
-  [http://spriteme.org/]: http://spriteme.org/
   [http://border-image.com/]: http://border-image.com/
   [http://matthewlein.com/ceaser/]: http://matthewlein.com/ceaser/
   [http://jeremyckahn.github.com/stylie/]: http://jeremyckahn.github.com/stylie/
@@ -250,13 +245,11 @@ Toplu
   [http://debray.jerome.free.fr/index.php?outils/Generateur-de-multi-colonnes-en-css3]: http://debray.jerome.free.fr/index.php?outils/Generateur-de-multi-colonnes-en-css3
   [http://www.aaronlumsden.com/multicol/]: http://www.aaronlumsden.com/multicol/
   [http://cssarrowplease.com/]: http://cssarrowplease.com/
-  [http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm]: http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm
   [http://html5-demos.appspot.com/static/css/filters/index.html]: http://html5-demos.appspot.com/static/css/filters/index.html
   [http://css3generator.com/]: http://css3generator.com/
   [http://www.css3.me/]: http://www.css3.me/
   [http://css3gen.com/]: http://css3gen.com/
   [http://www.css3maker.com/index.html]: http://www.css3maker.com/index.html
-  [http://www.webtutorialplus.com/css3-generator.aspx]: http://www.webtutorialplus.com/css3-generator.aspx
   [http://css3.pascal-seven.de/]: http://css3.pascal-seven.de/
   [http://www.layerstyles.org/builder.html]: http://www.layerstyles.org/builder.html
   [http://www.sitepoint.com/10-best-css3-code-generators/#fbid=ovoh-eTTYCI]: http://www.sitepoint.com/10-best-css3-code-generators/#fbid=ovoh-eTTYCI

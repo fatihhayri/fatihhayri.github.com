@@ -52,7 +52,7 @@ CSS3 Bölgeler modülü Adobe tarafından üretilip w3c’ye önerilen bir modü
 
 * [http://msdn.microsoft.com/en-us/library/ie/hh673537(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/ie/hh673537(v=vs.85).aspx)
 
-* [http://blogs.adobe.com/webplatform/category/features/css-regions/](http://blogs.adobe.com/webplatform/category/features/css-regions/)
+* http://blogs.adobe.com/webplatform/category/features/css-regions/
 
 * [http://www.adobe.com/devnet/html5/articles/css3-regions.html](http://www.adobe.com/devnet/html5/articles/css3-regions.html)
 

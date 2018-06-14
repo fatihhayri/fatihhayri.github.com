@@ -74,11 +74,11 @@ Kalın sağlıcakla.
  - [http://oli.jp/2011/ids/][10]
  - [http://2002-2012.mattwilcox.net/archive/entry/id/1054/][11]
  - [http://twobanjos.com/blog/2011/06/why-well-stop-using-id-in-our-stylesheets/][12]
- - [https://talentopoly.com/posts/1858-don_t_use_id_selectors_in_css][13]
+ - https://talentopoly.com/posts/1858-don_t_use_id_selectors_in_css
  - [http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/][14]
  - [http://css-tricks.com/efficiently-rendering-css/][15] 
  - [http://www.vanseodesign.com/css/css-selector-performance/][16]
- - [https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS][17]
+ - [https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no][17]
  - [https://developers.google.com/speed/docs/best-practices/rendering?hl=es-ES#UseEfficientCSSSelectors][18]
  - [http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html][19]
  - [http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/][20]
@@ -96,11 +96,10 @@ Kalın sağlıcakla.
   [10]: http://oli.jp/2011/ids/
   [11]: http://2002-2012.mattwilcox.net/archive/entry/id/1054/
   [12]: http://twobanjos.com/blog/2011/06/why-well-stop-using-id-in-our-stylesheets/
-  [13]: https://talentopoly.com/posts/1858-don_t_use_id_selectors_in_css
   [14]: http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/
   [15]: http://css-tricks.com/efficiently-rendering-css/
   [16]: http://www.vanseodesign.com/css/css-selector-performance/
-  [17]: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS
+  [17]: https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
   [18]: https://developers.google.com/speed/docs/best-practices/rendering?hl=es-ES#UseEfficientCSSSelectors
   [19]: http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html
   [20]: http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/

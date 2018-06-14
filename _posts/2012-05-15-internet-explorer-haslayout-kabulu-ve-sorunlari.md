@@ -106,7 +106,7 @@ Kalın sağlıcakla
 
 ## Kaynaklar
 
--   [http://haslayout.net/haslayout][] (site)
+-   http://haslayout.net/haslayout
 -   [http://www.satzansatz.de/cssd/onhavinglayout.html][] (detaylı)
 -   [http://reference.sitepoint.com/css/haslayout][]
 -   [http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx][]
@@ -129,7 +129,6 @@ Kalın sağlıcakla
   [Trident]: http://en.wikipedia.org/wiki/Trident_(layout_engine)
   [ie6’yı öldürdük]: http://www.fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/
   [%7(makaleyi yazdığımda idi şimdi %4,5 kadar düştü)]: http://labs.sahibinden.com/yazi/sahibinden-com-ziyaretcileri-2011-yili-teknoloji-analizi/
-  [http://haslayout.net/haslayout]: http://haslayout.net/haslayout
   [http://www.satzansatz.de/cssd/onhavinglayout.html]: http://www.satzansatz.de/cssd/onhavinglayout.html
   [http://reference.sitepoint.com/css/haslayout]: http://reference.sitepoint.com/css/haslayout
   [http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx]: http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx

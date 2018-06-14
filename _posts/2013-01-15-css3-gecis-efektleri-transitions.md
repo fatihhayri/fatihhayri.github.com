@@ -291,7 +291,7 @@ eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
 -   [http://ricostacruz.com/jquery.transit/](http://ricostacruz.com/jquery.transit/) (jquery ile tüm tarayıcılar için)
 -   [http://www.netmagazine.com/tutorials/more-efficient-css3-transitions](http://www.netmagazine.com/tutorials/more-efficient-css3-transitions)
 -   [http://proto.io/freebies/onoff/](http://proto.io/freebies/onoff/) (örnek)
--   [http://geebart.com/blog/easy-css3-transitions-tutorial](http://geebart.com/blog/easy-css3-transitions-tutorial)
+-   http://geebart.com/blog/easy-css3-transitions-tutorial
 -   [http://webdesigncrowd.com/animated-navigation-css3-transitions-transforms/](http://webdesigncrowd.com/animated-navigation-css3-transitions-transforms/)
 -   [http://davidwalsh.name/css-transitions](http://davidwalsh.name/css-transitions)
 -   [http://css3.bradshawenterprises.com/transitions/](http://css3.bradshawenterprises.com/transitions/)

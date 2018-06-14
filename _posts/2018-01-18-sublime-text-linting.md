@@ -95,7 +95,7 @@ Hatasız kod yazmak dileğiyle. Hadi kalın sağlıcakla.
 
 ## Kaynaklar
 
- - [http://www.sublimelinter.com/en/latest/about.html](http://www.sublimelinter.com/en/latest/about.html)
+ - http://www.sublimelinter.com/en/latest/about.html
  - [https://eslint.org/](https://eslint.org/)
  - [https://helpx.adobe.com/tr/dreamweaver/using/linting-code.html](https://helpx.adobe.com/tr/dreamweaver/using/linting-code.html)
  - [http://aslanbakan.com/tr/blog/sublime-text-3-incelemesi-ve-en-iyi-33-eklenti/](http://aslanbakan.com/tr/blog/sublime-text-3-incelemesi-ve-en-iyi-33-eklenti/)
