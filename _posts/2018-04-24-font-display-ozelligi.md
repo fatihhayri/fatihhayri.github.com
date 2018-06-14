@@ -1,6 +1,8 @@
 ---
 layout: post
 title: font-display özelliği
+description: yazı tipi yükleme süreçlerini düzenlememize olanak sağlayan font-display özelliği hakkında
+lang: tr_TR
 Date: 2018-04-24 10:20
 Category: CSS
 tags: [css4, font-display]

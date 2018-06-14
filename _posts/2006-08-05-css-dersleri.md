@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CSS Dersleri
+description: CSS hakkında 250'den fazla yazı
 Date: 2006-08-05 22:06
 ---
 

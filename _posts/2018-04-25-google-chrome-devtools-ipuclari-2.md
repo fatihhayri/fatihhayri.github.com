@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Google Chrome DevTools İpuçları 2
+description: Google Chrome DevTools İpuçları, CSS, ekran görüntüsü, animasyon tipleri, css değerlerini arttırmak azaltmak
+lang: tr_TR
 Date: 2018-04-24 10:20
 Category: Web Araçları
 tags: [google, devtools, ipuçları]

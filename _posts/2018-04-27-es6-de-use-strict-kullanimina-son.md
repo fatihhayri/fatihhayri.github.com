@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ES6'de "use strict" Kullanımına son
+description: ES6'de "use strict" Kullanımına hakkında
+lang: tr_TR
 Date: 2018-04-27 11:41
 Category: Javascript
 tags: [es6, use-strict]

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ES6 ile DOM'dan bir eleman silmek
+description: ES6 ile DOM'dan bir eleman silmek için remove fonksiyonu kullanmak
+lang: tr_TR
 Date: 2018-05-15 11:06
 Category: Javascript
 tags: [es6, remove, sil]

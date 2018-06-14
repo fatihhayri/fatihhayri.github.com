@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Tarayıcı Dünyası
+description: web tarayıcılarının son durumu hakkında bir değerlendirme
+lang: tr_TR
 Date: 2018-05-07 10:41
 Category: Genel
 tags: [tarayıcı, chrome, safari, samsung-internet, android, internet-explorer]
