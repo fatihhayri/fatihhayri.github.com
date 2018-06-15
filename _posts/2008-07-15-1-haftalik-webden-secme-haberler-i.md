@@ -20,7 +20,6 @@ tags: ASP.NET, dü?me, firebug, ie6, ie8, jquery, poster, WordPress
 -   Web site ardalan resimleri. [Bağlantı][10]
 -   Asp.net 3 aşamalı kod yazma tekniği. [Bağlantı][11]
 -   IE6 için PNG düzenlemesi, alternatif bir script uygulaması.
-    [Bağlantı][12]
 -   WordPress 2.6 sürüm yayınlandı. [Bağlantı][13]
 -   "Digg Yeni Tavsiye Sistemi" - m3hmet.com Kırık bağlantı.
 -   "IE 8: Virüslere karşı SmartScreen-Filter" - chip.com.tr
@@ -43,7 +42,6 @@ tags: ASP.NET, dü?me, firebug, ie6, ie8, jquery, poster, WordPress
   [10]: http://www.smashingmagazine.com/2008/07/09/textures-and-patterns-design-showcase/
     "ardalan resimleri"
   [11]: http://dotnetfunda.com/articles/article71.aspx "3 aşamalı kod"
-  [12]: http://labs.unitinteractive.com/unitpngfix.php "pngfix"
   [13]: http://wordpress.org/development/2008/07/wordpress-26-tyner/
     "WordPress"
   [15]: http://www.chip.com.tr/konu/IE-8-Viruslere-karsi-SmartScreen-Filter_7637.html

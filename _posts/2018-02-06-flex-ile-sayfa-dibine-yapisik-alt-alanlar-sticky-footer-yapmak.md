@@ -7,8 +7,7 @@ tags: [flex, css3]
 ---
 
 Daha önce bu konuda bir yazı yazmıştım. 
-[Sayfa Dibine Yapışık Alt Alanlar (Sticky Footer)](
-Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)) Yazının tarihi 2009. Flex ile bu işin daha kolay yapıldığını daha önce görmüştüm ama bir türlü zaman ayırıp bir yazı yazamamıştım. Nasip şimdiyeymiş.
+[Sayfa Dibine Yapışık Alt Alanlar (Sticky Footer)](/sayfa-dibine-yapisik-alt-alanlarsticky-footer/) Yazının tarihi 2009. Flex ile bu işin daha kolay yapıldığını daha önce görmüştüm ama bir türlü zaman ayırıp bir yazı yazamamıştım. Nasip şimdiyeymiş.
 
 ![sticky footer](https://fatihhayrioglu.com/images/sticky-oncesi.gif)
 

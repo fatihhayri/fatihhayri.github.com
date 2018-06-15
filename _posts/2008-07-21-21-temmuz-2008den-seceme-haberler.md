@@ -18,7 +18,7 @@ tags: firebug, Firefox, HTML Form, internet explorer, jquery, saydam png, sorun,
 -   Kitap sayfasındaki download için uyguladığım eklentide açık varmış,
     bende eklentiyi kaldırıp direk link verdim. s4l1h uyarısı için
     teşekkürler
--   20 adet CSS ile yapılmış güzel menü uygulaması. [Bağlantı][7]
+-   20 adet CSS ile yapılmış güzel menü uygulaması.
 -   HTML form kullanımları için güzel ipuçları. [Bağlantı][8]
 -   5 adet FireBug ekletisi. Eklentinin eklentisi olurmu demeyin.
     Kırık bağlantı.
@@ -35,8 +35,6 @@ tags: firebug, Firefox, HTML Form, internet explorer, jquery, saydam png, sorun,
     "ücretsiz wordpress"
   [4]: http://www.techcrunch.com/2008/07/16/is-this-the-future-of-search/
   [6]: http://www.twinhelix.com/css/iepngfix/ "ie png fix"
-  [7]: http://socialcmsbuzz.com/20-more-css-based-navigation-menus-for-your-projects-18072008/
-    "menüler"
   [8]: http://woork.blogspot.com/2008/07/useful-tips-to-enrich-your-html-forms.html
     "Form ipuçları"
   [10]: http://css-tricks.com/garage-door-style-menu-using-animated-background-images-with-jquery/

@@ -3,7 +3,7 @@ layout: post
 title: CSS Kutu Modeli Özellikleri -4
 Date: 2006-08-05 13:17
 Category: CSS
-tags: clear, CSS, float, height, width
+tags: [clear, CSS, float, height, width]
 ---
 
 Kutu modeli özelliklerine devam ediyoruz. Sırasıyla aşağıdaki
@@ -25,7 +25,7 @@ Kutu modeli özelliklerine devam ediyoruz. Sırasıyla aşağıdaki
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
-[Blok-level ve replaced elementlerin][Block-level ve replaced elementler](örn: img, input, textarea vd.) tümü bir genişlik(width)
+Blok-level ve replaced elementlerin(örn: img, input, textarea vd.) tümü bir genişlik(width)
 değeri alır. Elementlerin başlangıçtaki genişlik değeri **auto** yani
 kendi asıl genişliğidir. (Örneğin bir resmin genişliği gibi) Yüzde
 değeri [ebveyn elementi][] kıstas alarak uygulanır. Negatif değeri
@@ -60,7 +60,7 @@ p {
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
-[Blok-level ve replaced elementlerin][Block-level ve replaced elementler](örn: img, input, textarea vd.) tümü bir yükseklik(height)
+Blok-level ve replaced elementlerin(örn: img, input, textarea vd.) tümü bir yükseklik(height)
 değeri alır. Elementlerin başlangıçtaki yükseklik değeri **auto** yani
 kendi asıl yüksekliğidir. (Örneğin bir resmin yüksekliği gibi) Negatif
 değeri almaz.

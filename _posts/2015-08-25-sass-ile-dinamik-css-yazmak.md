@@ -209,7 +209,7 @@ Kalın sağlıcakla.
  - [http://code.tutsplus.com/categories/sass](http://code.tutsplus.com/categories/sass)
  - [http://sass-guidelin.es/](http://sass-guidelin.es/)
  - [http://www.gelistiricigunlugu.com/sass-nedir/](http://www.gelistiricigunlugu.com/sass-nedir/)
- - [http://webmagazin.co/sass-kullanalim-ve-kullandiralim/](http://webmagazin.co/sass-kullanalim-ve-kullandiralim/)
+ - http://webmagazin.co/sass-kullanalim-ve-kullandiralim/
  - [http://www.erbilen.net/1200-sass-dersleri.html](http://www.erbilen.net/1200-sass-dersleri.html)
  - [http://www.yunusbassahan.com/blog/sass/sass-kurulumu-ve-program-tercihi.html](http://www.yunusbassahan.com/blog/sass/sass-kurulumu-ve-program-tercihi.html)
  - [http://sonsuzdongu.com/blog/sass-a-giris](http://sonsuzdongu.com/blog/sass-a-giris)

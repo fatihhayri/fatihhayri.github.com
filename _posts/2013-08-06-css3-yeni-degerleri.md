@@ -309,7 +309,7 @@ Kodu [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters?redir
 * [http://meyerweb.com/eric/thoughts/2012/05/15/defining-ch/](http://meyerweb.com/eric/thoughts/2012/05/15/defining-ch/) ch değeri
 * [http://programlama.eu.com/HTMLandCSS/css3/colors/css3-colors-s1.htm](http://programlama.eu.com/HTMLandCSS/css3/colors/css3-colors-s1.htm) (hsl)
 * [http://www.yakuter.com/css3-color-renk-modulu/](http://www.yakuter.com/css3-color-renk-modulu/)
-* [http://www.suburban-glory.com/blog?page=130](http://www.suburban-glory.com/blog?page=130)
+* http://www.suburban-glory.com/blog?page=130
 * [https://developer.mozilla.org/en-US/docs/Web/CSS/attr](https://developer.mozilla.org/en-US/docs/Web/CSS/attr)
 * [http://demosthenes.info/blog/345/Understanding-UA-StyleSheets-and-the-CSS3-initial-Value](http://demosthenes.info/blog/345/Understanding-UA-StyleSheets-and-the-CSS3-initial-Value) (initial değeri)
 
