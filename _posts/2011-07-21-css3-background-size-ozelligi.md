@@ -3,7 +3,7 @@ layout: post
 title: CSS3 background-size özelliği
 Date: 2011-07-21 22:00
 Category: CSS
-tags: ardalan boyutu, background-size, contain, cover, css3
+tags: [ardalan boyutu, background-size, contain, cover, css3]
 ---
 
 background-size özelliği background-image ile tanımlanan resmin

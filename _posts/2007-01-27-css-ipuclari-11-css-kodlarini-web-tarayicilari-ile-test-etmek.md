@@ -3,7 +3,7 @@ layout: post
 title: CSS İpuçları 11 - CSS Kodlarını Web Tarayıcıları ile Test etmek
 Date: 2007-01-27 16:20
 Category: CSS
-tags: CSS, Hata ayıklama, İnternet Tarayıcısı, test-etmek
+tags: [CSS, Hata ayıklama, İnternet Tarayıcısı, test-etmek]
 ---
 
 CSS ile web sayfası oluştururken en çok yaptığımız işlerden biri

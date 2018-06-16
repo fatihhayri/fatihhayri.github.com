@@ -3,7 +3,7 @@ layout: post
 title: jQuery ve mootools birlikte kullanmak
 Date: 2008-12-21 14:01
 Category: Ajax, Javascript
-tags: Javascript, jquery, mootools
+tags: [Javascript, jquery, mootools]
 ---
 
 Ben genellikle jQuery ile çalışıyorum, ama bazen diğer javascript

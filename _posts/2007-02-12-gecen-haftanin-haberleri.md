@@ -3,13 +3,13 @@ layout: post
 title: Geçen Haftanın Haberleri
 Date: 2007-02-12 22:28
 Category: Haberler
-tags: CSS, gmail, google, Google-Calendar
+tags: [CSS, gmail, google, Google-Calendar]
 ---
 
 -   Superonline sitesini yenilemiş. Kodlaması gayet güzel. Ancak
     reklamlar siteyi çekilmez kılıyor. [Link][]
 -   Google Calendar notlarınızı SMS ile hatırlatıyor. C# Türk ilgili
-    duyurusu. [Link][1]
+    duyurusu.
 -   Safari stroke(font etrafında kenarlık verme) özelliğini çıkardı ve
     destekliyor. Ancak daha standartlaşmadığı için kullanılması
     sakıncalı. CSS3 standardı içine alınırsa güzel olur. CSS3 yeni
@@ -22,7 +22,7 @@ tags: CSS, gmail, google, Google-Calendar
 -   Altı Üstü tasarım'dan web sayfası üreticisinin karşılaştığı müşteri
     sorunlarına çok güzel değinmiş. [Link][4]
 -   Galatasaray Üniversitesi Mühendislik Klubü bir web yarışması
-    düzenlemiş. Amaç sanal üniversite sitesi oluşturmak. [Link][5]
+    düzenlemiş. Amaç sanal üniversite sitesi oluşturmak.
 -   GMail artık davetiyesiz alınabiliyor. Ayrıca görünümde de bazı
     değişiklikler yapılmış. [Link][6]
 -   CSS ile hazırlanmış hazır sayfa planları. [Link][7]
@@ -36,14 +36,9 @@ tags: CSS, gmail, google, Google-Calendar
 
 
   [Link]: http://www.superonline.com/index.html "Link"
-  [1]: http://www.csharpturk.net/Detay.aspx?mid=40 "Link"
   [2]: http://www.456bereastreet.com/archive/200702/new_css_properties_in_safari/
-    "Link"
   [3]: http://www.alistapart.com/articles/multicolumnlayouts "Link"
   [4]: http://www.altiustutasarim.com/arsiv/2007/02/curuk_musteri.php
-    "Link"
-  [5]: http://www.gsumk.org/carieerdays.asp "Link"
   [6]: https://www.google.com/accounts/NewAccount?nui=1&service=reader&continue=http%3A%2F%2Fwww.google.com%2Freader%2Fview%2F
-    "Link"
   [7]: http://www.code-sucks.com/css%20layouts/index.php "Link"
   [8]: http://www.tv8.com.tr/scripts/news/detail.asp?NewsID=61179&page=detail&type=news

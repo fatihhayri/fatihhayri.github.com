@@ -3,7 +3,7 @@ layout: post
 title: CSS İle Web Sayfası Oluşturma
 Date: 2006-09-28 11:46
 Category: CSS, Web Standartları, XHTML
-tags: clear, CSS, float, ortalamak, sayfa-planlama, Web Standartları, XHTML
+tags: [clear, CSS, float, ortalamak, sayfa-planlama, Web Standartları, XHTML]
 ---
 
 CSS'in en büyük avantajlarından biri ve en önemlisi başka bir koda(XHTML

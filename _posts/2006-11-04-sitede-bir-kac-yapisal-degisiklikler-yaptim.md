@@ -3,7 +3,7 @@ layout: post
 title: Sitede birkaç yapısal değişiklik yaptım
 Date: 2006-11-04 16:33
 Category: Haberler
-tags: etiket, ilgili-linkler, pdf, saat dilimi
+tags: [etiket, ilgili-linkler, pdf, saat dilimi]
 ---
 
 Gerek arkadaşlardan gelen istekler ve gerekse daha yararlı olacağını

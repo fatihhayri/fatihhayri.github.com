@@ -3,7 +3,7 @@ layout: post
 title: Genelde Karşılaşılan Javascript Hataları
 Date: 2008-06-20 10:25
 Category: Javascript
-tags: hata, Javascript, javascript hataları
+tags: [hata, Javascript, javascript hataları]
 ---
 
 Genelde javascript yazımına ara verdiğimde veya program yazıp sonra

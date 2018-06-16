@@ -3,7 +3,7 @@ layout: post
 title: Internet Explorer 8&#039;e kısa bir bakış
 Date: 2008-03-11 00:53
 Category: Haberler
-tags: Ajax, aktiviteler, CSS, ie8, Javascript, webslice
+tags: [Ajax, aktiviteler, CSS, ie8, Javascript, webslice]
 ---
 
 Internet Explorer 8 Beta 1 yayınlandı. Bu bizim gibi web kodlamacıları

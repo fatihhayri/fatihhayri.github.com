@@ -3,7 +3,7 @@ layout: post
 title: Özellik Seçicileri(Attribute Selectors)
 Date: 2007-01-06 15:42
 Category: CSS, Web Standartları, XHTML
-tags: Attribute Selectors, CSS, özellik, Özellik-seçicileri, Web Standartları, XHTML
+tags: [Attribute Selectors, CSS, özellik, Özellik-seçicileri, Web Standartları, XHTML]
 ---
 
 Bu konuya biraz geç değindik biliyorum. Ancak bu konuyu [(X)HTML Sayfa Yapısı ve CSS Kullanımı][] makalesi içinde yazmayı düşündüğümde IE bu

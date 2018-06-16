@@ -3,7 +3,7 @@ layout: post
 title: Petrol Fırtınası - Raif Karadağ
 Date: 2007-12-25 22:49
 Category: Kitaplar
-tags: ihanet, Kitaplar, petrol, Petrol Fırtınası, Raif Karadağ, suikast, tekel
+tags: [ihanet, Kitaplar, petrol, Petrol Fırtınası, Raif Karadağ, suikast, tekel]
 ---
 
 ![Petrol Fırtınası - Raif Karadağ][]Petrolün gerçek yüzünü gösteren

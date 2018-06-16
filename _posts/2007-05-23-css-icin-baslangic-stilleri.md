@@ -3,7 +3,7 @@ layout: post
 title: CSS için Başlangıç Stilleri
 Date: 2007-05-23 14:41
 Category: CSS, XHTML
-tags: CSS, XHTML
+tags: [CSS, XHTML]
 ---
 
 ## Kodunuza Yorum Yapın

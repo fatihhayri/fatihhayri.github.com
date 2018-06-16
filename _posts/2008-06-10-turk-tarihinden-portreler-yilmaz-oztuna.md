@@ -3,7 +3,7 @@ layout: post
 title: Türk Tarihinden Portreler - Yılmaz Öztuna
 Date: 2008-06-10 08:45
 Category: Kitaplar
-tags: Biyografi, Portreler, Türk Tarihi
+tags: [Biyografi, Portreler, Türk Tarihi]
 ---
 
 ![ Türk Tarihinden Portreler][]Kitap bir çok Türk büyüğünün

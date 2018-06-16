@@ -3,7 +3,7 @@ layout: post
 title: Internet Explorer 8&#039;in Nihai Sürümü Çıktı
 Date: 2009-03-20 10:57
 Category: Haberler
-tags: ie8, internet explorer, İnternet Tarayıcısı, microsoft
+tags: [ie8, internet explorer, İnternet Tarayıcısı, microsoft]
 ---
 
 Microsoft Internet Explorer 8'in nihai sürümünü dün yayınladı. Önceki

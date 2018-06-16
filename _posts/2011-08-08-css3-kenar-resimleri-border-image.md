@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Kenar  Resimleri (border-image)
 Date: 2011-08-08 22:55
 Category: CSS
-tags: border-image, css3, esnek butonlar, kenar resimleri
+tags: [border-image, css3, esnek butonlar, kenar resimleri]
 ---
 
 CSS3 ile birlikte gelen yeni özellikleri araştırmaya devam ediyorum.

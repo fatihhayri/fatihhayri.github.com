@@ -3,7 +3,7 @@ layout: post
 title: 8 Ocak 2008 Web&#039;den Seçme Haberler
 Date: 2008-01-08 23:22
 Category: Haberler
-tags: Ajax, google-belgeler-etablolar, gwt, Haberler, jquery, outlook, Team Fondation Server, thunderbird
+tags: [Ajax, google-belgeler-etablolar, gwt, Haberler, jquery, outlook, Team Fondation Server, thunderbird]
 ---
 
 -   Ajax editörleri [Bağlantı][]

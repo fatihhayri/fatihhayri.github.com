@@ -3,7 +3,7 @@ layout: post
 title: 11 Eylül 2008 web&#039;den seçme haberler
 Date: 2008-09-11 13:59
 Category: Haberler
-tags: CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, upload, WordPress
+tags: [CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, upload, WordPress]
 ---
 
 -   jQuery ile yapılmış güzel bir efekt. Bağlantı kırık.

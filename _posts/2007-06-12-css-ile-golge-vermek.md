@@ -3,7 +3,7 @@ layout: post
 title: CSS ile gölge vermek
 Date: 2007-06-12 23:09
 Category: CSS, XHTML
-tags: CSS, gölge, resimlere_gölge, XHTML
+tags: [CSS, gölge, resimlere_gölge, XHTML]
 ---
 
 Bu makalede geçen yöntemlere artık gerek kalmamıştır. CSS3 ile gelen [box-shadow](/kutulara-golge-vermek-box-shadow/) özelliği bu işi kökünden hallediyor. **(19.01.2016 güncellendi)**
@@ -289,7 +289,7 @@ tanımlamamıza olanak sağlıyor. Ama bunu için beklemek zorundayız.
 -   [http://alistapart.com/articles/cssdrop2/][]
 -   [http://www.clagnut.com][www.clagnut.com]
 -   [http://www.1976design.com/blog/archive/2003/11/14/shadows/][]
--   [http://www.friendsofed.com/book.html?isbn=1590596145][]
+-   http://www.friendsofed.com/book.html?isbn=1590596145
 
 
   [100]: /dokumanlar/images/golge01.jpg
@@ -302,4 +302,3 @@ tanımlamamıza olanak sağlıyor. Ama bunu için beklemek zorundayız.
   [http://alistapart.com/articles/onionskin/]: http://alistapart.com/articles/onionskin/
   [http://alistapart.com/articles/cssdrop2/]: http://alistapart.com/articles/cssdrop2/
   [http://www.1976design.com/blog/archive/2003/11/14/shadows/]: http://www.1976design.com/blog/archive/2003/11/14/shadows/
-  [http://www.friendsofed.com/book.html?isbn=1590596145]: http://www.friendsofed.com/book.html?isbn=1590596145

@@ -3,7 +3,7 @@ layout: post
 title: 03 Eylül 2007 Web&#039;den Seçme Haberler
 Date: 2007-09-03 09:26
 Category: Haberler
-tags: BluePrint, css3.0, google, Haberler, web2.0, Yahoo javascript
+tags: [BluePrint, css3.0, google, Haberler, web2.0, Yahoo javascript]
 ---
 
 -   CSS3'deki listeler daha süslü olacakmış. [Link][]
@@ -13,12 +13,12 @@ tags: BluePrint, css3.0, google, Haberler, web2.0, Yahoo javascript
     geliştirmiş, güzelde olmuş. [Link][2]
 -   Hem İE hemde Firefox'a göre web sayfası tasarlarken nelere dikkat
     etmeliyiz. [Link][3]
--   İşaret kutularının(chechkbox) şeklini değiştirelim. [Link][4]
+-   İşaret kutularının(chechkbox) şeklini değiştirelim. 
 -   Google arama sonuçlarında yeni bilgileri aramak için kullandığımız
     Gelişmiş Arama kısmındaki Tarih alanına yeni tarihler eklemiş. Daha
     önce en yakın tarih olarak 3 ayı seçebilirken şimdi günlük aramalar
     yapmamıza olanak sağlıyor. [Link][5]
--   Web2.0 tasarım ipuçları [Link][6]
+-   Web2.0 tasarım ipuçları
 -   Gmail'in az bilinen özellikleri. [Link][7]
 
 
@@ -29,10 +29,7 @@ tags: BluePrint, css3.0, google, Haberler, web2.0, Yahoo javascript
     "yui lightbox"
   [3]: http://www.informationweek.com/news/showArticle.jhtml?articleID=201802175
     "Firefox ve İE kodlama "
-  [4]: http://dev.lipidity.com/fancy-form/ "işaret kutuları"
   [5]: http://googlesystem.blogspot.com/2007/08/easy-way-to-find-recent-web-pages.html
     "Google Arama"
-  [6]: http://www.webdesignfromscratch.com/web-2.0-design-style-guide.cfm
-    "web2.0"
   [7]: http://gmailblog.blogspot.com/2007/08/top-10-little-known-gmail-features-part.html
     "Gmail"

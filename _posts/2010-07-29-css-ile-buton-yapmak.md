@@ -3,7 +3,7 @@ layout: post
 title: CSS ile buton yapmak
 Date: 2010-07-29 21:53
 Category: CSS, XHTML
-tags: border-radius, box-shadow, buton, css3, oval-buton, renk geçişi, sprite, text-shadow
+tags: [border-radius, box-shadow, buton, css3, oval-buton, renk geçişi, sprite, text-shadow]
 ---
 
 Butonlar web sitelerinin oluşturan önemli öğelerden biridir. Butonlar;

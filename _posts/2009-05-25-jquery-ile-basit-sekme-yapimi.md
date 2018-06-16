@@ -3,7 +3,7 @@ layout: post
 title: jQuery ile Basit Sekme Yapımı
 Date: 2009-05-25 09:40
 Category: Javascript
-tags: Javascript, jquery, sekme
+tags: [Javascript, jquery, sekme]
 ---
 
 ![sekme_ornek][]Web sitelerinden uzun içerikler her zaman kullanıcıyı

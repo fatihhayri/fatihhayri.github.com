@@ -3,7 +3,7 @@ layout: post
 title: Tanzîmât Paşaları Âlî ve Fuâd Paşalar
 Date: 2007-07-07 11:01
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![Tanzîmât Paşaları Âlî ve Fuâd Paşalar][]](/images/tanzimat_pasalari.jpg "Tanzîmât Paşaları Âlî ve Fuâd Paşalar")

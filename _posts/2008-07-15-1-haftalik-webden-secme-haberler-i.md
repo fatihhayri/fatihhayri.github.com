@@ -3,7 +3,7 @@ layout: post
 title: 1 Haftalık web&#039;den seçme haberler - I
 Date: 2008-07-15 13:30
 Category: Haberler
-tags: ASP.NET, dü?me, firebug, ie6, ie8, jquery, poster, WordPress
+tags: [ASP.NET, firebug, ie6, ie8, jquery, poster, WordPress]
 ---
 
 -   FireBug hakkında güzel bir makale. [Bağlantı][]

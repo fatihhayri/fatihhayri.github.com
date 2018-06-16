@@ -3,7 +3,7 @@ layout: post
 title: CSS&#039;i Web Sayfalarına Eklemek
 Date: 2006-07-23 21:47
 Category: CSS, Web Standartları, XHTML
-tags: CSS, css eklemek, import, link, style, Web Standartları, XHTML
+tags: [CSS, css eklemek, import, link, style, Web Standartları, XHTML]
 ---
 
 ## 1- Kod içinde (In-line)

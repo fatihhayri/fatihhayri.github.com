@@ -3,7 +3,7 @@ layout: post
 title: CSS 3 medya sorguları
 Date: 2011-09-02 14:07
 Category: CSS
-tags: css3, genişlik, ipad, iPhone, medya sorguları, mobil araçlar
+tags: [css3, genişlik, ipad, iPhone, medya sorguları, mobil araçlar]
 ---
 
 Mobil sektörün hızla ilerlemesi ve akıllı araçlar pazarının büyümesi ile

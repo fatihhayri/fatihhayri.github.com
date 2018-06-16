@@ -3,7 +3,7 @@ layout: post
 title: Saydam Kenar Çizgileri Oluşturmak
 Date: 2012-01-03 00:01
 Category: CSS
-tags: css3, saydam köşeler
+tags: [css3, saydam köşeler]
 ---
 
 İlk olarak Facebook’un popup ve lightbox olarak uyguladığı, en azından

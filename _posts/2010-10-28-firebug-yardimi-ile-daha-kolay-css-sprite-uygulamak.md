@@ -4,7 +4,7 @@ title: CSS İpucu 28&#58; FireBug yardımı ile daha kolay CSS Sprite Uygulamak
 Slug: firebug-yardimi-ile-daha-kolay-css-sprite-uygulamak
 Date: 2010-10-28 22:39
 Category: CSS, XHTML
-tags: background-kaydırma, background-position, css-sprite, fanatikmarslar.com, trabzonspor
+tags: [background-kaydırma, background-position, css-sprite, fanatikmarslar.com, trabzonspor]
 ---
 
 CSS Sprite yöntemini birçok yerde uyguladım, CSS Sprite tekniği ile

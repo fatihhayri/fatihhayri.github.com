@@ -3,7 +3,7 @@ layout: post
 title: Yazılamamış Destanlar - Mehmed Niyazi
 Date: 2007-01-24 23:56
 Category: Kitaplar
-tags: destanlar, kahramanlar, Kitaplar, Mehmet Niyazi
+tags: [destanlar, kahramanlar, Kitaplar, Mehmet Niyazi]
 ---
 
 ![][100]Balkan savaşına dair yazılmış güzel bir kahramanlık destanı. Mehmed

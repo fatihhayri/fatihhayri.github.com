@@ -3,7 +3,7 @@ layout: post
 title: Doğru DOCTYPE Kullanımı
 Date: 2006-09-15 23:59
 Category: CSS, Web Standartları, XHTML
-tags: CSS, DOCTYPE, mod, Web Standartları, XHTML
+tags: [CSS, DOCTYPE, mod, Web Standartları, XHTML]
 ---
 
 DOCTYPE, HTML veya (X)HTML dökümanımızın tipini göstermek için

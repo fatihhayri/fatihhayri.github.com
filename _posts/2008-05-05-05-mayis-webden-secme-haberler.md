@@ -3,7 +3,7 @@ layout: post
 title: 05 Mayıs web&#039;den seçme haberler
 Date: 2008-05-05 09:44
 Category: Haberler
-tags: css kod, datagrid, feedburner, form denetimi, google pagerank, ie6, javscript, jquery, klavye olayları, RSS okuyucu, sosyal-imleme
+tags: [css kod, datagrid, feedburner, form denetimi, google pagerank, ie6, javscript, jquery, klavye olayları, RSS okuyucu, sosyal-imleme]
 ---
 
 -   Javascript ile yapılmış geçiş efektli açılır menü.

@@ -3,7 +3,7 @@ layout: post
 title: HTML Sayfa Yapısı ve CSS Kullanımı
 Date: 2006-07-02 15:13
 Category: CSS
-tags: CSS, doküman-yapısı, hiyerarşi, HTML
+tags: [CSS, doküman-yapısı, hiyerarşi, HTML]
 ---
 
 CSS güçlüdür, çünkü CSS uygun stilleri ve bu stilleri nasıl uygulanacağını belirlemek için HTML dökümanının yapısını kullanır. HTML Sayfa yapısına stil uygulamanın bir çok yolu vardır. Ancak bu yolları öğrenmeden önce HTML hiyerarşisini öğrenmemiz gerekir.

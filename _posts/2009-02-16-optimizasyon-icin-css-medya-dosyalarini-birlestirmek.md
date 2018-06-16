@@ -4,7 +4,7 @@ title: CSS İpucu 18&#58; Optimizasyon İçin CSS Medya Dosyalarını Birleştir
 Slug: optimizasyon-icin-css-medya-dosyalarini-birlestirmek
 Date: 2009-02-16 15:36
 Category: CSS, XHTML
-tags: birleştirme, CSS, firebug, Firefox, optimize, yazıcı, YSlow
+tags: [birleştirme, CSS, firebug, Firefox, optimize, yazıcı, YSlow]
 ---
 
 Bir çok web kod yazarı için sayfaların yavaş açılması büyük bir

@@ -3,7 +3,7 @@ layout: post
 title: 14 Ağustos 2008 web&#039;den seçme haberler
 Date: 2008-08-14 10:04
 Category: Haberler
-tags: Ajax sayfalama, arama motoru, Chris Coyier, Etkinlik, float:center, FriendFeed, jQuery uygulaması, string, wordpress güvenlik
+tags: [ajax-sayfalama, arama-motoru, Chris Coyier, Etkinlik, float, FriendFeed, jQuery uygulaması, string, wordpress güvenlik]
 ---
 
 -   FriendFeed Nedir? Ne değildir? - webdeneyimleri.com Kırık bağlantı.

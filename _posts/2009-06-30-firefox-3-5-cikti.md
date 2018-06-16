@@ -3,7 +3,7 @@ layout: post
 title: Firefox 3.5 çıktı
 Date: 2009-06-30 18:10
 Category: Haberler
-tags: Firefox, Geolocation, gizli-sekme, İnternet Tarayıcısı, TraceMonkey, yeni-sürüm
+tags: [Firefox, Geolocation, gizli-sekme, İnternet Tarayıcısı, TraceMonkey, yeni-sürüm]
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k5Zbc-Rg6e8" frameborder="0" allowfullscreen></iframe>

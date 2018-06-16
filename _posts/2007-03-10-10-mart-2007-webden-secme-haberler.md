@@ -3,7 +3,7 @@ layout: post
 title: 10 Mart 2007 Web&#039;den seçme haberler
 Date: 2007-03-10 16:47
 Category: Haberler
-tags: adsl, bandtwith, CSS, Haberler, ie7, Javascript, optimize, Web Standartları, youtube
+tags: [adsl, bandtwith, CSS, Haberler, ie7, Javascript, optimize, Web Standartları, youtube]
 ---
 
 -   Javascript ve CSS ile yapılan resim gösterme kodları. [Link][]
@@ -15,7 +15,7 @@ tags: adsl, bandtwith, CSS, Haberler, ie7, Javascript, optimize, Web Standartlar
 -   Web sitelerinin bant genişliği kullanımı optimize etmeyi anlatan
     İngilizce makale. [Link][3]
 -   Javascript ve CSS ile hazırlanmış güzel bir geçiş efektli açılır
-    menü örneği anlatımı ve kodu. [Link][4]
+    menü örneği anlatımı ve kodu.
 -   Türkiye'de youtube yasaklandı. Türkiye'ye yasaklanmasının bize ne
     gibi bir faydası var anlamıyorum. Neyse ki hatayı çabuk gördüler ve
     gelen tepkiler nedeni ile kalktı yasak. Bence İnternet İhtisas
@@ -39,8 +39,6 @@ tags: adsl, bandtwith, CSS, Haberler, ie7, Javascript, optimize, Web Standartlar
     "Link"
   [2]: http://tutorialblog.org/grid-systems-in-web-design/ "Link"
   [3]: http://www.codinghorror.com/blog/archives/000807.html "Link"
-  [4]: http://www.harrymaugans.com/2007/03/06/how-to-create-an-animated-sliding-collapsible-div-with-javascript-and-css/#slideexample
-    "Link"
   [5]: http://www.ntvmsnbc.com/news/401979.asp "Link"
   [6]: http://www.ntvmsnbc.com/ "Link"
   [7]: http://www.turktelekom.com.tr/ "Link"

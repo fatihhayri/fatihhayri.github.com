@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Yeni Değerleri
 Date: 2013-08-06 15:10
 Category: CSS
-tags: CSS, CSS3, CSS-Değerleri, ch, rem, vw, vh, vmin, vmax, rgba, hsl, hsla, turn, calc(), counter(), attr(), cycle()
+tags: [CSS, CSS3, CSS-Değerleri, ch, rem, vw, vh, vmin, vmax, rgba, hsl, hsla, turn, calc(), counter(), attr(), cycle()]
 ---
 
 CSS3 özelliklerini anlatan makalelerden sonra, yeni CSS3 değerleri hakkında bir makale yazmam gerektiğini fark ettim..

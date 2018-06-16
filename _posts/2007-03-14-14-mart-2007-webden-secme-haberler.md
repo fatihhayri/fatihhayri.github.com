@@ -3,7 +3,7 @@ layout: post
 title: 14 Mart 2007 Web&#039;den seçme haberler
 Date: 2007-03-14 14:16
 Category: Haberler
-tags: Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, spam, WordPress
+tags: [Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, spam, WordPress]
 ---
 
 -   50 adet Firefox eklentisi [Link][], 20 tanede burada sıralanmış.
@@ -12,7 +12,7 @@ tags: Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, s
     örneği. [Link][2]
 -   Javascript ve CSS yardımı ile Font kontrolü scripti. [Link][3]
 -   71 Adet CSS ile yapılmış menü listesi linklerinin sıralandığı bir
-    sayfa. [Link][4]
+    sayfa.
 -   İnternet üzerindeki renk seçim araçlarının kısa açıklması ve
     linkleri. [Link][5]
 -   Javascript ile yapılmış güzel örnekler(LightBox, Animasyonlu resim
@@ -35,8 +35,6 @@ tags: Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, s
     "Link"
   [2]: http://www.eogallery.com/ "Link"
   [3]: http://www.lalit.org/lab/fontdetect.php "Link"
-  [4]: http://razvan.seopedia.ro/2006/07/19/71-de-meniuri-css-utopic/
-    "Link"
   [5]: http://www.drweb.de/weblog/weblog/?p=791 "Link"
   [6]: http://www.phatfusion.net/ "Link"
   [7]: http://www.code-sucks.com/css%20layouts/faux-css-layouts/ "Link"

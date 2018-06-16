@@ -3,7 +3,7 @@ layout: post
 title: 01 Mart 2008 web&#039;den seçme haberler
 Date: 2008-03-01 21:25
 Category: Haberler
-tags: CSS, facebook, gtalk, ie, jquery, lightbox, liste, silverlight, text-shadow
+tags: [CSS, facebook, gtalk, ie, jquery, lightbox, liste, silverlight, text-shadow]
 ---
 
 -   Microsoft Silverlight 2. sürümüne bir göz atalım. [Bağlantı][]

@@ -3,7 +3,7 @@ layout: post
 title: Blackberry için web sayfası
 Date: 2008-11-29 20:07
 Category: ASP.NET, CSS, Javascript
-tags: asp, blackberry, web-programlama, web-sitesi
+tags: [asp, blackberry, web-programlama, web-sitesi]
 ---
 
 Blackberry css media="handheld" ile girdiğimiz kodları görmüyor, aslında

@@ -3,7 +3,7 @@ layout: post
 title: WordPress Ultimate Tag Warrior Türkçe Kurulumu
 Date: 2006-11-02 12:00
 Category: WordPress
-tags: Ultimate-Tag-Warrior, Ultimate-Tag-Warrior-Türkçe, WordPress
+tags: [Ultimate-Tag-Warrior, Ultimate-Tag-Warrior-Türkçe, WordPress]
 ---
 
 İlk olarak drym.net den Türkçesini indirin [link][]

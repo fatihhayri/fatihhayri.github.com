@@ -4,7 +4,7 @@ title: (X)Html - CSS &#58; Başlıklar
 Slug: basliklar
 Date: 2007-07-30 13:14
 Category: CSS, Web Standartları, XHTML
-tags: ardalan-kaydırmaca, başlıklar, CSS, css-sprite-tekniği, metin, metin yerine resim koymak, Web Standartları, XHTML
+tags: [ardalan-kaydırmaca, başlıklar, CSS, css-sprite-tekniği, metin, metin yerine resim koymak, Web Standartları, XHTML]
 ---
 
 Başlıklar bir siteye girdiğimizde dikkatimiziçeken ilk unsurlardandır.

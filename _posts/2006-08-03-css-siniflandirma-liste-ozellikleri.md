@@ -3,7 +3,7 @@ layout: post
 title: CSS Sınıflandırma-Liste Özellikleri
 Date: 2006-08-03 00:07
 Category: CSS
-tags: CSS, display, list-style, list-style-image, list-style-position, list-style-type, white-space
+tags: [CSS, display, list-style, list-style-image, list-style-position, list-style-type, white-space]
 ---
 
 Liste özelliği ilk olarak listeleme amaçlı kullanılsa da şimdilerde menü

@@ -3,7 +3,7 @@ layout: post
 title:  IE6&#039;da Liste Ardalan Görmeme Sorunu
 Date: 2009-12-07 16:55
 Category: CSS, XHTML
-tags: ardalan-görünmeme, ardalan-özellikleri, hata, ie, ie6
+tags: [ardalan-görünmeme, ardalan-özellikleri, hata, ie, ie6]
 ---
 
 ![][100]İE hatalar serisini devam ediyoruz, ben uğraşmaktan ve yazmaktan

@@ -3,7 +3,7 @@ layout: post
 title: FireBug - Genel Bakış
 Date: 2008-08-13 10:47
 Category: CSS, Javascript, XHTML
-tags: CSS Düzenleme, css ile site yapmak, CSS yazma, firebug, Firefox, Javascript, XHTML düzenleme
+tags: [CSS Düzenleme, css ile site yapmak, CSS yazma, firebug, Firefox, Javascript, XHTML düzenleme]
 ---
 
 Uzun zamandır kullandığım halde neden FireBug hakkında bir makale

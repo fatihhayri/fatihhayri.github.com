@@ -4,7 +4,7 @@ title: CSS3 Metin Özellikleri
 Slug: css3-text-ozellikleri
 Date: 2011-12-02 01:11
 Category: CSS
-tags: hanging-punctuation, text-align-last, text-overflow, text-rendering, text-stroke, text-wrap, word-wrap
+tags: [hanging-punctuation, text-align-last, text-overflow, text-rendering, text-stroke, text-wrap, word-wrap]
 ---
 
 - word-wrap özelliği

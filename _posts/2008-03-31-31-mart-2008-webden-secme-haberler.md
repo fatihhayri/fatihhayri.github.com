@@ -3,7 +3,7 @@ layout: post
 title: 31 Mart 2008 web&#039;den seçme haberler
 Date: 2008-03-31 15:45
 Category: Haberler
-tags: Acid 3 test, ie8, jquery, Web Standartları, web3.0, wordpress 2.5, yuvarlak kenar
+tags: [Acid 3 test, ie8, jquery, Web Standartları, web3.0, wordpress 2.5, yuvarlak kenar]
 ---
 
 -   Sitemi barındırdığım hosting firması sunucularını taşımış. Bunun
@@ -16,7 +16,7 @@ tags: Acid 3 test, ie8, jquery, Web Standartları, web3.0, wordpress 2.5, yuvarl
     daha beklemekte yarar var gibi. [Bağlantı][2]
 -   Windows XP kullananlar için IE8 beta 1'de ie5.5, ie6.0 ve ie7 test
     imkanı sağlayan bir araç. [Bağlantı][3]
--   8 güzel jquery uygulamalı ders. [Bağlantı][4]
+-   8 güzel jquery uygulamalı ders.
 -   CSS 1,2,3 özellik listesi. [Bağlantı][5]
 -   jQuery ağaç menü örneği. [Bağlantı][6]
 -   -"Web 3.0 - Semantik Web"-
@@ -38,8 +38,6 @@ tags: Acid 3 test, ie8, jquery, Web Standartları, web3.0, wordpress 2.5, yuvarl
   [2]: http://wordpress.org/development/2008/03/wordpress-25-brecker/
     "wordpress 2.5"
   [3]: http://www.my-debugbar.com/wiki/IETester/HomePage "My DebugBar"
-  [4]: http://tutorialblog.org/8-fantastic-jquery-tutorials-for-designers/
-    "jquery"
   [5]: http://meiert.com/en/indices/css-properties/
     "css özellik listesi"
   [6]: http://abeautifulsite.net/notebook.php?article=58

@@ -3,7 +3,7 @@ layout: post
 title: Genişliği Belli Olmayan Blok-level Elemanları Yatayda Ortalamak
 Date: 2011-06-10 21:04
 Category: CSS, XHTML
-tags: Blok-level, CSS, display:table, genişliği belli olmayan, ortalama
+tags: [Blok-level, CSS, display, table, genişliği belli olmayan, ortalama]
 ---
 
 ![][100]

@@ -3,7 +3,7 @@ layout: post
 title: Windows Vista / Windows Defender Güncellemesindeki Sorunu ve Çözümü
 Date: 2009-01-30 12:02
 Category: Haberler
-tags: problem, vista, windows, windows-defender
+tags: [problem, vista, windows, windows-defender]
 ---
 
 İşletim sistemi olarak Vista kullanıyorum, genel itibari ile pek sorunum

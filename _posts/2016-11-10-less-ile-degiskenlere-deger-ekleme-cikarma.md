@@ -3,7 +3,7 @@ layout: post
 title: LESS ile değişkenlere değer ekleme çıkarma
 Date: 2016-11-10 11:27
 Category: css
-tags: less, foknsiyon, yükleniyor
+tags: [less, foknsiyon, yükleniyor]
 ---
 
 Konu kısa hemen anlatıp bitireyim. zingat.com'da CSS önişlemcisi LESS. Boostrap'den dolayı LESS tercih edilmiş. Neyse soruna gelelim. Bir css fonksiyonunu (mixin) yazmaya karar verdim. Bir hareketli yükleniyor ikonu  yapayım dedim. Herşey güzel gidiyordu ta ki değerini 24px değilde 24 olarak göndereyim dediğimde sorun ortaya çıktı.

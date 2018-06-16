@@ -3,7 +3,7 @@ layout: post
 title: 09 Eylül 2008 web&#039;den seçme haberler
 Date: 2008-09-09 13:21
 Category: Haberler
-tags: Fix Feed, form, gameQuery, Google Chrome, ie6, jquery, poster, rss, WordPress
+tags: [Fix Feed, form, gameQuery, Google Chrome, ie6, jquery, poster, rss, WordPress]
 ---
 
 -   Özel form elemanları tasarlamak. [Bağlantı][]

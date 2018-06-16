@@ -3,7 +3,7 @@ layout: post
 title: 3 kitap okudum
 Date: 2007-07-20 09:08
 Category: Kitaplar
-tags: Haberler, Kitaplar
+tags: [Haberler, Kitaplar]
 ---
 
 Okuduğum kitapları buraya yazamıyorum, zaman ayıramıyorum. Şimdi burada

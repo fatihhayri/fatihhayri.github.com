@@ -3,7 +3,7 @@ layout: post
 title: CSS'de Tekil(Id) Seçicileri Kullanmalı mıyız?
 Date: 2014-08-25 14:17
 Category: css
-tags: css tekil-seçici sınıf-seçicisi
+tags: [css tekil-seçici sınıf-seçicisi]
 ---
 
 Tartışmayı [@muratcorlu][1] açtı. :D Daha doğrusu bir makale üzerinden bu konuyu tartışmaya başladık. Sonra twitter’da paylaştım konuyu, [@ademilter][2] konuyu tartışmak için bir platform açalım orada tartışalım önerisinde bulundu. 

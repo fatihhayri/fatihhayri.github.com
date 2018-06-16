@@ -3,7 +3,7 @@ layout: post
 title: 1 haftalık haberler
 Date: 2008-08-26 14:50
 Category: Haberler
-tags: CSS, CSS Anaçatısı, CSS ile form yapmak, CSS kodlarını optimize etmek, jquery, WordPress, wordpress tema
+tags: [CSS, CSS Anaçatısı, CSS ile form yapmak, CSS kodlarını optimize etmek, jquery, WordPress, wordpress tema]
 ---
 
 -   WordPRess 2.6.1 sürümüne yükselttim. Otomatik güncelleme eklentisi

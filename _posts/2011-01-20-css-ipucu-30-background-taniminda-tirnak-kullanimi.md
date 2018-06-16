@@ -3,7 +3,7 @@ layout: post
 title: CSS İpucu 30 background tanımında tırnak kullanımı
 Date: 2011-01-20 21:49
 Category: CSS, XHTML
-tags: background, Dreamweaver, tırnak işareti
+tags: [background, Dreamweaver, tırnak işareti]
 ---
 
 CSS kodu yazarken background tanımlarında bazı yerlerde tırnaklı tanım

@@ -4,7 +4,7 @@ title: CSS İpuçları - 1
 Slug: css-sorunlari-ve-cozum-onerileri-1
 Date: 2006-07-14 23:14
 Category: CSS
-tags: CSS, font, font-isimleri, yazı tipi, yazı-tipi isimleri
+tags: [CSS, font, font-isimleri, yazı tipi, yazı-tipi isimleri]
 ---
 
 Bir yazı tipi(font) tanımlaması yapılırken eğer yazı tipi adı arasında

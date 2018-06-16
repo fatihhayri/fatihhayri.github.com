@@ -3,7 +3,7 @@ layout: post
 title: Sabit Konumlandırma (Postion:fixed)
 Date: 2007-12-11 22:41
 Category: CSS, Javascript, XHTML
-tags: absolute, CSS, fixed, postion, sabit, sayfa-dibine-yapışık
+tags: [absolute, CSS, fixed, postion, sabit, sayfa-dibine-yapışık]
 ---
 
 **Ocak 2016'da güncellendi.**

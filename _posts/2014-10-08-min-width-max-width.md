@@ -3,7 +3,7 @@ layout: post
 title: min-width, max-width
 Date: 2014-10-08 14:55
 Category: css
-tags: min-width, max-width
+tags: [min-width, max-width]
 ---
 
 Bu özellikler blok-level ve yerine konulabilir element(örneğin resim) içerik alanının asgari / azami genişliğini tanımlar. **max-width** margin, padding ve kenarlıkları içermez.

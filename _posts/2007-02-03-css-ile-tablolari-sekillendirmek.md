@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Tabloları şekillendirmek
 Date: 2007-02-03 16:44
 Category: CSS, Web Standartları, XHTML
-tags: CSS, table, Web Standartları, XHTML
+tags: [CSS, table, Web Standartları, XHTML]
 ---
 
 Bu makalemizde CSS ile tablolarımızı nasıl daha okunaklı ve güzel
@@ -287,7 +287,7 @@ tarayıcıları ile test edilmiştir.
 ## Kaynaklar
 
 -   [http://veerle.duoh.com/][]
--   [http://icant.co.uk/][] (CSS ile yapılmış bir çok tablo örneği)
+-   http://icant.co.uk (CSS ile yapılmış bir çok tablo örneği)
 -   [http://alistapart.com/][]
 
 
@@ -301,5 +301,4 @@ tarayıcıları ile test edilmiştir.
   [4]: /dokumanlar/tablo03.gif
   [tıklayınız.]: /dokumanlar/tablo_ornek1.html
   [http://veerle.duoh.com/]: http://veerle.duoh.com/index.php/blog/comments/a_css_styled_table/
-  [http://icant.co.uk/]: http://icant.co.uk/csstablegallery/index.php?css=1#r1
   [http://alistapart.com/]: http://alistapart.com/articles/tableruler/

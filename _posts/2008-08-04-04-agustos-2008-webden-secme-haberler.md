@@ -3,7 +3,7 @@ layout: post
 title: 04 Ağustos 2008 web&#039;den seçme haberler
 Date: 2008-08-04 13:37
 Category: Haberler
-tags: delicious, E-Devlet, em, gelişmiş günlük yazmak, google özel arama, jquery, Renk seçim aracı, resim galerisi, Tablolar, video çekimli internet sitesi
+tags: [delicious, E-Devlet, em, gelişmiş günlük yazmak, google özel arama, jquery, Renk seçim aracı, resim galerisi, Tablolar, video çekimli internet sitesi]
 ---
 
 -   Resim galerisi için ücretsiz Flash çözümleri. http://www.visual-blast.com/flash/free-flash-gallery-solutions-for-your-images/

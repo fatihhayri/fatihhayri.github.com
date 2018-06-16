@@ -3,7 +3,7 @@ layout: post
 title: Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak
 Date: 2016-08-29 14:50
 Category: css
-tags: flexbox, ortalama
+tags: [flexbox, ortalama]
 ---
 
 Yaklaşık 6 sene önce bu başlığa yakın bir başlık ile bir makale yazmışım. [Yatay ve Dikeyde Ortalı Alanlar Oluşturmak](https://fatihhayrioglu.com/yatay-ve-dikeyde-ortali-alanlar-olusturmak/) yeni gelen özellikler ile bu kodu daha basit nasıl yapabilirim diye bakınırken [flexbox](https://fatihhayrioglu.com/yenilenmis-flex-modulu/) özelliği aklıma geldi. 

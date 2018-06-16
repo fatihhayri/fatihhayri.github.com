@@ -3,7 +3,7 @@ layout: post
 title: Compass kullanmıyorum
 Date: 2015-09-07 17:03
 Category: css
-tags: sass css-önişlemcileri compass
+tags: [sass css-önişlemcileri compass]
 ---
 
 

@@ -3,7 +3,7 @@ layout: post
 title: 05 Nisan 2008 web&#039;den seçme haberler
 Date: 2008-04-05 16:16
 Category: Haberler
-tags: ASP.NET, bloglar için gelir, css ile site yapmak, css in geleceği, css teknikleri, dikey menü, Erişebilirlik, ie css, jquery, öneriler, satıriçi kod, sql injection, super cache, wordpress2.5, xhtml ve html
+tags: [ASP.NET, bloglar için gelir, css ile site yapmak, css in geleceği, css teknikleri, dikey menü, Erişebilirlik, ie css, jquery, öneriler, satıriçi kod, sql injection, super cache, wordpress2.5, xhtml ve html]
 ---
 
 -   Asp.net'de satıriçi kod yazmak.

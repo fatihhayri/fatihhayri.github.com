@@ -3,7 +3,7 @@ layout: post
 title: font-face tanımını yenileyelim
 Date: 2014-08-27 14:55
 Category: css
-tags: css font-face woff ttf
+tags: [css font-face woff ttf]
 ---
 
 Sitemizde özel yazı tiplerini kullanmak için kullandığımız @font-face bize çok güzel imkanlar sağladığı kesin. Bir sorunu var bu özelliğin kod bloku çok uzun ve karışık. Daha önce yazdığım [font-face kullanımı](/font-face-kullanimi/) yazısının üzerinden çok zaman geçti. Bir çok tarayıcı bu listeden düştü. En son ie8 düştü.

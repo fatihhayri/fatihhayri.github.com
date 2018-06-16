@@ -3,7 +3,7 @@ layout: post
 title: HTML Mailing -1&#58; Mailing Kodlarken Dikkat Edilmesi Gerekenler
 Date: 2010-11-04 00:27
 Category: XHTML
-tags: e-posta, gmail, hotmail, mailing, spam
+tags: [e-posta, gmail, hotmail, mailing, spam]
 ---
 
 İnsanlar bildirileri, duyuruları yaymak için çeşitli araçlara

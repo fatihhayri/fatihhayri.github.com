@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Yüzde Çubuğu Hazırlama
 Date: 2008-11-06 15:26
 Category: CSS, XHTML
-tags: anket, ardalan, CSS, teknik, yüzde-çubuğu
+tags: [anket, ardalan, CSS, teknik, yüzde-çubuğu]
 ---
 
 Yüzde çubuğuna ben anket yaparken ihtiyaç duydum. CSS ile yüzde çubuğu

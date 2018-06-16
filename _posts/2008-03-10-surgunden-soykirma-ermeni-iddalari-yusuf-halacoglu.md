@@ -3,7 +3,7 @@ layout: post
 title: Sürgünden Soykırma Ermeni İddaları - Yusuf Halaçoğlu
 Date: 2008-03-10 23:37
 Category: Kitaplar
-tags: sözde soykırım, Sürgünden Soykırma Ermeni iddaları, tehcir, Yusuf Halaçoğlu
+tags: [sözde soykırım, Sürgünden Soykırma Ermeni iddaları, tehcir, Yusuf Halaçoğlu]
 ---
 
 ![Sürgünden Soykırma Ermeni İddaları - Yusuf Halaçoğlu][]Ermeni

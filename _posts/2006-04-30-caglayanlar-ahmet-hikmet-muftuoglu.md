@@ -3,10 +3,10 @@ layout: post
 title: Çağlayanlar - Ahmet Hikmet Müftüoğlu
 Date: 2006-04-30 23:59
 Category: Kitaplar
-tags: Ahmet Hikmet Müftüoğlu, Çağlayanlar, hikaye, Kitaplar, millet, savaş, vatan
+tags: [Ahmet Hikmet Müftüoğlu, Çağlayanlar, hikaye, Kitaplar, millet, savaş, vatan]
 ---
 
-![Çağlayanlar][]Çağlayanlar'da yer alan hikayeler tamamen vatani ve
+<span class="kitap-resmi">![Çağlayanlar][]</span> Çağlayanlar'da yer alan hikayeler tamamen vatani ve
 milli duygularla yazılmış nesirlerdir. Trablusgarp Savaşı dolayısıyla
 kaleme aldığı Padişahım Alınız Menekşelerimi, Veriniz Gülümü adlı
 hikayesi, Anadolu insanının mert ve heybetli yapısının dile getirildiği
@@ -17,5 +17,5 @@ uyandırdığı derin duygu ve acılardan alan ve toplam 18 hikayeden oluşan
 Çağlayanlar halka milli ve vatani bir şuur kazandırmak amacıyla da
 kaleme alınmıştır.
 
-  [Çağlayanlar]: /images/caglayanlar.thumbnail.jpg
+  [Çağlayanlar]: /images/caglayanlar.jpg
     "Çağlayanlar"

@@ -4,7 +4,7 @@ title: Sitemi düzenleme çabalarım II&#58; &quot;Son Okuduğum 10 Kitap&quot;
 Slug: sitemi-duzenleme-cabalarim-son-okudugum-10-kitap
 Date: 2008-04-10 21:46
 Category: CSS, XHTML
-tags: blok-bağlantılar, css teknikleri, Kitaplar, liste
+tags: [blok-bağlantılar, css teknikleri, Kitaplar, liste]
 ---
 
 Son zamanlarda sitemin(fatihhayrioglu'nun not defteri) bazı bölümlerini

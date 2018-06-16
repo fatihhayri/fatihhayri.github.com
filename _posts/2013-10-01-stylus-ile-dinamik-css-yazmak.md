@@ -3,7 +3,7 @@ layout: post
 title: Stylus ile Dinamik CSS Yazmak
 Date: 2013-10-01 14:09
 Category: CSS
-tags: dinamk-css, css, stylus, degişken, css-fonksiyonu
+tags: [dinamk-css, css, stylus, degişken, css-fonksiyonu]
 ---
 
 ![enter image description here][1]
@@ -432,7 +432,6 @@ Kalın sağlıcakla.
 - [http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/](http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/) (sass, less ve stylus karşılaştırması)
 - [http://learnboost.github.com/stylus/](http://learnboost.github.com/stylus/)
 - [http://css-tricks.com/poll-results-popularity-of-css-preprocessors/](http://css-tricks.com/poll-results-popularity-of-css-preprocessors/) anket
-- [http://css-tricks.com/sass-vs-less/ sass ve less karşılaştırması](http://css-tricks.com/sass-vs-less/ sass ve less karşılaştırması)
 - [http://thechangelog.com/stylus-expressive-robust-feature-rich-css-language/](http://thechangelog.com/stylus-expressive-robust-feature-rich-css-language/) (stylus)
 - [http://www.sitepoint.com/a-comprehensive-introduction-to-less/](http://www.sitepoint.com/a-comprehensive-introduction-to-less/) (less e başlamak)
 - [http://www.sitepoint.com/a-comprehensive-introduction-to-less-mixins/](http://www.sitepoint.com/a-comprehensive-introduction-to-less-mixins/) (lesss mixins)

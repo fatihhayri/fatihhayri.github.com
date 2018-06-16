@@ -3,7 +3,7 @@ layout: post
 title: 28 Kasım 2007 Web&#039;den Seçme Haberler
 Date: 2007-11-28 17:13
 Category: Haberler
-tags: CSS, Haberler, iframe, masterpage, slideshow, vs.net
+tags: [CSS, Haberler, iframe, masterpage, slideshow, vs.net]
 ---
 
 -   VS.net 2008 ve .net Framework 3.5 hakkında güzel bir yazı.

@@ -4,7 +4,7 @@ title: HTML 5&#039;in yeni elementlerine bir göz atalım
 Slug: html-5in-yeni-elementlerini-bir-goz-atalim
 Date: 2007-08-14 11:09
 Category: CSS, Web Standartları, XHTML
-tags: CSS, html, html5, Web Standartları, XHTML
+tags: [CSS, html, html5, Web Standartları, XHTML]
 ---
 
 11 Ağust'ta yazdığım haberler içerisinde yer alan "HTML5'in yeni

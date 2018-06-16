@@ -3,7 +3,7 @@ layout: post
 title: Javascript’te “null” ve “undefined” farkı
 Date: 2011-08-18 14:19
 Category: Javascript
-tags: boş, null, tanımsız, typeof, undefined
+tags: [boş, null, tanımsız, typeof, undefined]
 ---
 
 Javascript diğer birçok dilden farklı olarak **null** ve **undefined**

@@ -3,7 +3,7 @@ layout: post
 title: HTML5&#58; Doküman Yapısını Oluşturan Elemanlar
 Date: 2010-11-27 18:28
 Category: HTML5
-tags: DOCTYPE, head, html5
+tags: [DOCTYPE, head, html5]
 ---
 
 HTML5 ve CSS3 hayatımıza girmeye başladı. Her ne kadar Microsoft nedeni

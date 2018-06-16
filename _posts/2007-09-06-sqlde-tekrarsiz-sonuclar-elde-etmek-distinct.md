@@ -3,7 +3,7 @@ layout: post
 title: Sql&#039;de Tekrarsız sonuçlar elde etmek - DISTINCT
 Date: 2007-09-06 13:17
 Category: Sql
-tags: Distinct, Sql, tablo, Tekrarsız sonuçlar
+tags: [Distinct, Sql, tablo, Tekrarsız sonuçlar]
 ---
 
 Bu kodu her defasında kullanmadan önce nasıl kullanıldığını arıyorum. Bu

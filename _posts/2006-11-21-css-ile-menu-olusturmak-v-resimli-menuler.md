@@ -3,12 +3,12 @@ layout: post
 title: CSS ile Menü Oluşturmak V - Resimli Menüler
 Date: 2006-11-21 17:03
 Category: CSS, Web Standartları, XHTML
-tags: arkaplan-resmi, background, CSS, Image-Replacement, menü, resimli-menü, Web Standartları, XHTML, zemin-resmi
+tags: [arkaplan-resmi, background, CSS, Image-Replacement, menü, resimli-menü, Web Standartları, XHTML, zemin-resmi]
 ---
 
 ## "Arkaplan Resmi kaydırmaca" ile Resimli Menüler
 
-Arkaplan Resmi kaydırmaca tanımlamasını [cemsid][]'den aldım. CSS ile
+Arkaplan Resmi kaydırmaca tanımlamasını cemsid'den aldım. CSS ile
 menü yapımı serimize devam ediyoruz. CSS ile yapılan bir çok menü örneği
 mevcut biz burada bunları katagorize edip her bir katagoriye bir örnek
 yaparak mantığını anlatmaya çalıyoruz, mantığını anladıktan sonra CSS
@@ -206,7 +206,6 @@ Bizde öyle yapalım. Mesela **Muz** bölümünde olduğumuzu farz edelim.
 Örnek kodları indirmek için [tıklayınız.][]
 
 
-  [cemsid]: http://www.cemshid.com/makale/arkaplan_resmi_kaydirmaca.html
   [100]: /images/menu.jpg
   [1]: /images/resimlimenu_01.jpg
   [2]: /images/resimlimenu_02.gif

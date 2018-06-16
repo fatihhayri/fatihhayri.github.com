@@ -3,7 +3,7 @@ layout: post
 title: 13 Eylül 2007 Web&#039;den Seçme Haberler
 Date: 2007-09-13 18:01
 Category: Haberler
-tags: CSS, favicon, google reader, Haberler, Javascript, jquery, microsoft, yui
+tags: [CSS, favicon, google reader, Haberler, Javascript, jquery, microsoft, yui]
 ---
 
 -   Google Rader arama ipuçları. [Link][]

@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Animasyon(Animation)
 Date: 2013-05-27 10:17
 Category: CSS, CSS3
-tags: CSS3, Animasyon, anahtar-kare
+tags: [CSS3, Animasyon, anahtar-kare]
 ---
 
 Bir önceki yazımda <a href="https://fatihhayrioglu.com/css3-gecis-efektleri-transitions/">CSS3 geçiş efektlerini</a> anlatmıştım. CSS3 animasyon özellikleri geçiş efektlerine benzer özellikleri ve daha fazlasını içermektedir. Animasyon işleri ile daha önce uğraşanlar için çok tanıdık kodları var. CSS3 Animasyon özelliği; javascript veya flash olmadan bize animasyon yapma imkanı sağlamaktadır.

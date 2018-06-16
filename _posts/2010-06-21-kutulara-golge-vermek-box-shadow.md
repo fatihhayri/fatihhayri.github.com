@@ -3,7 +3,7 @@ layout: post
 title: Kutulara Gölge Vermek (box-shadow)
 Date: 2010-06-21 22:18
 Category: CSS, Web Standartları, XHTML
-tags: box-shadow, css3, gölgeli kutular, kutu gölgesi
+tags: [box-shadow, css3, gölgeli kutular, kutu gölgesi]
 ---
 
 <s>Şuanki şartlar düşünüldüğünde normal olarak bir kutunun gölgesini vermek için daha öncede açıkladığımız gibi bir kaç yöntem var. Bu yöntemleri incelemek için http://www.fatihhayrioglu.com/css-ile-golge-vermek/ bağlantısındaki yazıya göz atalım.</s> Buradaki yöntemleri incelediğimizde çok fazla gereksiz ve fazladan katman(div) kullanmak zorunda kaldığımızı

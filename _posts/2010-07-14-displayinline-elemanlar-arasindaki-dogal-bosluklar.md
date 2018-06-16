@@ -3,7 +3,7 @@ layout: post
 title: display:inline elemanlar arasındaki doğal boşluklar
 Date: 2010-07-14 22:14
 Category: CSS, XHTML
-tags: boşluk, display:inline, display:inline-block, menü
+tags: [boşluk, display, inline, inline-block, menü]
 ---
 
 Daha önce gözüme çarpmamış olmaması ilginç geldi. Belki çarpmıştırda ben

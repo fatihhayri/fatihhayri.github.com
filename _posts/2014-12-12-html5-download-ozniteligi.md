@@ -3,7 +3,7 @@ layout: post
 title: HTML5 download özniteliği
 Date: 2014-12-12 18:05
 Category: html
-tags: html5 download 
+tags: [html5 download ]
 ---
 
 HTML'de bir dokümanı kullanıcıya indirtmek için bir bağlantı verdiğimizde parantez içinde "sağ tılayın ve çıkan menüden farklı kaydet'e basın" ibaresini yazardık. Bu konuda farklı çözümler var; tarayıcıya eklenti kuranlar, .htcacces'den ayar yapanlar filan. Tabi kullanıcılar için çok iyi bir deneyim değil ve kod yazanlar için ayrı bir uğraş gerektiren çözümler. W3C bunu fark etmiş olmalı ki bize basit ve güzel bir çözüm üretmiş. 

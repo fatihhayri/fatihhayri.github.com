@@ -3,7 +3,7 @@ layout: post
 title: z-index koordinasyonu
 Date: 2014-09-24 14:55
 Category: css
-tags: z-index
+tags: [z-index]
 ---
 
 z-index kullanımı; tek kişi ile çalışılan ve daha basit yapılı sitelerde pek sorun çıkarmıyor. Ama çok kişinin çalıştığı ve büyük boyutlu projelerde farklı kişilerin tanımladığı z-index değerleri birbirini eziyor ve sorunlara neden oluyor. z-index sorunları nedeni ile sitemizde gözükmeyen veya belli durumlarda gözükmemesi gereken alanların görünmesi gibi görsel sorunlara neden olabilir. 

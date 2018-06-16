@@ -3,7 +3,7 @@ layout: post
 title: Float:left ve Text-align:right Atanmş Elemana Metin Yerine Resim Uygulama
 Date: 2010-07-28 22:22
 Category: CSS, XHTML
-tags: float:left metin yerine resim koymak text-align:right text-indent
+tags: [float, left, text-align, right, text-indent]
 ---
 
 Daha önce [Metin Yerine Resim ekleme][] yöntemini anlatmıştım ve bir çok

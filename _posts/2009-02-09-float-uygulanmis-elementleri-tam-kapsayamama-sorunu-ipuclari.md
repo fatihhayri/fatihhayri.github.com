@@ -3,7 +3,7 @@ layout: post
 title: Float Uygulanmış Elementleri Tam Kapsayamama Sorunu İpuçları
 Date: 2009-02-09 10:18
 Category: CSS
-tags: float, ipucu, kapsayamama-sorunu, sorun
+tags: [float, ipucu, kapsayamama-sorunu, sorun]
 ---
 
 ## 1- Firefox 3'de form elemenalarının Tıklanamaması Sorunu

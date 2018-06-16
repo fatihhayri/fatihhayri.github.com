@@ -3,7 +3,7 @@ layout: post
 title: Çoklu Kenar Çizgisi(Border) Kullanımı
 Date: 2012-02-29 16:11
 Category: CSS
-tags: :after, :before, box-shadow, çoklu kenar çizgisi, ie7olum, outline
+tags: [after, before, box-shadow, çoklu kenar çizgisi, ie7olum, outline]
 ---
 
 CSS kenar çizgileri kullanımı bir çoğumuz için çok basit bir iştir.

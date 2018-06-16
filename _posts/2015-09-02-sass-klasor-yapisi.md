@@ -3,7 +3,7 @@ layout: post
 title: Sass Klasör yapısı
 Date: 2015-09-02 12:18
 Category: css
-tags: sass css-önişlemcileri klasör-yapısı
+tags: [sass css-önişlemcileri klasör-yapısı]
 ---
 
 [Bir önceki yazımda](https://fatihhayrioglu.com/sass-ile-dinamik-css-yazmak/) Sass'a giriş yapmıştık. Bu makale de klasör yapımızın Sass sonrası nasıl olması gerektiğini gösterelim. 

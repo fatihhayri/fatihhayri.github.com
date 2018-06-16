@@ -3,7 +3,7 @@ layout: post
 title: ie7 Renk Geçişi Sorunu ve Çözümü
 Date: 2011-10-20 22:27
 Category: CSS
-tags: css sorunları, filtre, ie7, renk geçişi
+tags: [css sorunları, filtre, ie7, renk geçişi]
 ---
 
 CSS3 artık bazı özellikleri ile hayatımıza giriyor, tabi kod yığını

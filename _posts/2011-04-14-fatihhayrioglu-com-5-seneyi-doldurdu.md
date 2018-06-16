@@ -3,7 +3,7 @@ layout: post
 title: fatihhayrioglu.com 5. seneyi doldurdu
 Date: 2011-04-14 20:39
 Category: Haberler
-tags: 5.sene, fatihhayrioglu.com, istatistik
+tags: [5.sene, fatihhayrioglu.com, istatistik]
 ---
 
 Geçen sene 49 adet makale yayınlamışım. Amacım daha çok paylaşımda

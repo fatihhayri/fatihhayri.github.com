@@ -3,7 +3,7 @@ layout: post
 title: İnternet Explorer&#039;da sağdaki sabit kaydırma çubuğunu kaldırmak
 Date: 2010-02-11 18:12
 Category: CSS
-tags: ie, ie6, ie7, ipucu, kaydırma-çubuğu, overflow
+tags: [ie, ie6, ie7, ipucu, kaydırma-çubuğu, overflow]
 ---
 
 ![][100]

@@ -3,7 +3,7 @@ layout: post
 title: 25 Haziran 2008 web&#039;den seçme haberler
 Date: 2008-06-25 13:18
 Category: Haberler
-tags: ağaç menü, akordiyon, css editörleri, farklı tarayıcılara göre kod yazmak, Firefox 3, içiiçe açılır menü, jquery, web site hızı
+tags: [ağaç menü, akordiyon, css editörleri, farklı tarayıcılara göre kod yazmak, Firefox 3, içiiçe açılır menü, jquery, web site hızı]
 ---
 
 -   Firefox 3 hakkında gelişmiş ipuçları. [Bağlantı][] 

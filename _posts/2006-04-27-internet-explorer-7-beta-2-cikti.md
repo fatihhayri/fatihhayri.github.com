@@ -3,7 +3,7 @@ layout: post
 title: İnternet Explorer 7 Beta 2 çıktı
 Date: 2006-04-27 01:27
 Category: Haberler
-tags: ie7, internet explorer, microsoft
+tags: [ie7, internet explorer, microsoft]
 ---
 
 İnternet Explorer 7'nin Beta 2'sini çıkardı.

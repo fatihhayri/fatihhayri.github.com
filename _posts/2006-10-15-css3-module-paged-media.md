@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Module&#58; Paged Media
 Date: 2006-10-15 23:23
 Category: CSS, Haberler
-tags: CSS, css3, paged-media, print
+tags: [CSS, css3, paged-media, print]
 ---
 
 W3C son CSS3 taslaklarının da Paged Media özelliğini duyurdu. Paged

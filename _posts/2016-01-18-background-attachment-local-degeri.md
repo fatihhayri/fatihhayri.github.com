@@ -3,7 +3,7 @@ layout: post
 title: background-attachment local değeri
 Date: 2016-01-18 08:40
 Category: css
-tags: css background-attachment css3
+tags: [css background-attachment css3]
 ---
 
 **background-attachment** özelliğinden çok öncelerden [bahsetmiştim](/hizli-css-referansi/). Benim bahsettiğimde iki değer alıyordu; **scroll** ve **fixed** değerleri. Ancak bunlara CSS3 ile birlikte yeni bir değer daha eklenmiş; **local** değeri. Gerçi ekleneli bayağı olmuş. (2009)

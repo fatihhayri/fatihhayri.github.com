@@ -3,7 +3,7 @@ layout: post
 title: 24 Mart 2008 web&#039;den seçme haberler
 Date: 2008-03-24 00:04
 Category: Haberler
-tags: Ajax, ASP.NET, flash, form, Google Analytics, mootools, safari, Windows Presentation Framework, yorum
+tags: [Ajax, ASP.NET, flash, form, Google Analytics, mootools, safari, Windows Presentation Framework, yorum]
 ---
 
 -   Not defterimin yorum kısmını biraz değiştirdim. Görsel olarak biraz

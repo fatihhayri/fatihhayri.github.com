@@ -3,7 +3,7 @@ layout: post
 title: CSS3 :target seçicisi
 Date: 2011-05-03 20:34
 Category: CSS
-tags: :target seçicisi, css3, hedef seçme
+tags: [target seçicisi, css3, hedef seçme]
 ---
 
 :target seçicisi CSS3 ile birlikte gelen yeni seçilerden biri. :target

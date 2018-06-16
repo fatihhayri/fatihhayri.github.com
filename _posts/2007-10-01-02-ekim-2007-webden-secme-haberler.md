@@ -3,7 +3,7 @@ layout: post
 title: 01 Ekim 2007 Web&#039;den Seçme Haberler
 Date: 2007-10-01 23:17
 Category: Haberler
-tags: css3.0, Erişebilirlik, Haberler, png, rss, Vdsl, WordPress, yui
+tags: [css3.0, Erişebilirlik, Haberler, png, rss, Vdsl, WordPress, yui]
 ---
 
 -   CSS3.0 ile ilgili yenilikler devam ediyor. Açı verme özelliği

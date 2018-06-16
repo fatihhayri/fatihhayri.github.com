@@ -3,7 +3,7 @@ layout: post
 title: CSS İpuçları 14 - IE div yüksekliği sorunu
 Date: 2008-01-10 22:32
 Category: CSS, XHTML
-tags: CSS, div yüksekliği sorunu, ie, internet explorer, XHTML
+tags: [CSS, div yüksekliği sorunu, ie, internet explorer, XHTML]
 ---
 
 	:::css

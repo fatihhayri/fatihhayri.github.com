@@ -3,7 +3,7 @@ layout: post
 title: CSS İpuçları - 12 &#58; 3 köşeye border tanımı
 Date: 2007-04-24 16:26
 Category: CSS, XHTML
-tags: CSS, XHTML
+tags: [CSS, XHTML]
 ---
 
 Normalde tüm köşelere kenarlık(border) tanımlarken:

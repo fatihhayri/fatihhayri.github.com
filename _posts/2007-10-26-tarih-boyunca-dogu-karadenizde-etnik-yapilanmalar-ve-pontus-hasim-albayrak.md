@@ -3,7 +3,7 @@ layout: post
 title: Tarih Boyunca Doğu Karadeniz&#039;de Etnik Yapılanmalar ve Pontus - Haşim Albayrak
 Date: 2007-10-26 09:36
 Category: Kitaplar
-tags: araştırma, Arsin, Do?u Karadeniz, Haşim Albayrak, karadeniz, Kitaplar, lazca, of, pontus, rumca, sürmene, Trabzon
+tags: [araştırma, Arsin, Doğu Karadeniz, Haşim Albayrak, karadeniz, Kitaplar, lazca, of, pontus, rumca, sürmene, Trabzon]
 ---
 
 ![Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus - Haşim Albayrak][]Trabzon'un geçmişine değinen bu kitap bilimsel yaklaşımı

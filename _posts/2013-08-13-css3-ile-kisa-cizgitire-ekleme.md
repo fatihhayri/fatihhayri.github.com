@@ -3,7 +3,7 @@ layout: post
 title: CSS3 ile Kısa Çizgi(tire) Ekleme
 Date: 2013-08-13 15:00
 Category: CSS
-tags: kısa-çizgi, tire, css3
+tags: [kısa-çizgi, tire, css3]
 ---
 
 Kısa çizginin(-) tanımına internette baktığımızda kullanım alanlarının başında ilk sırada

@@ -3,7 +3,7 @@ layout: post
 title: İpucu&#58; Dreamweaver&#39;da Kullanılmayan Özellikleri Kaldırmak
 Date: 2010-01-15 00:46
 Category: XHTML
-tags: Dreamweaver, kodu gizle
+tags: [Dreamweaver, kodu gizle]
 ---
 
 ![][100]Css ile kod yazarken gereksiz bazı kodlar kod yazma hızımı

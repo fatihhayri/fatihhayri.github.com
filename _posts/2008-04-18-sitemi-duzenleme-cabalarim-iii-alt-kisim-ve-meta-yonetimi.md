@@ -3,7 +3,7 @@ layout: post
 title: Sitemi düzenleme çabalarım III&#58; Alt kısım ve meta yönetimi
 Date: 2008-04-18 13:56
 Category: Haberler, WordPress
-tags: css doğrulama, seo, sitemi düzenliyorum, WordPress, wpSEO, Xhtml doğrulama
+tags: [css doğrulama, seo, sitemi düzenliyorum, WordPress, wpSEO, Xhtml doğrulama]
 ---
 
 Sitemi düzenlemeye devam ediyorum. Amacım daha işlevsel ve güzel bir

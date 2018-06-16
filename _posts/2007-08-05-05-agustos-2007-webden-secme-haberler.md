@@ -3,7 +3,7 @@ layout: post
 title: 05 Ağustos 2007 Web&#039;den Seçme Haberler
 Date: 2007-08-05 12:34
 Category: Haberler
-tags: domain, Firefox, google reader, Haberler, Javascript, Microsoft-Visula-Sturdio-2008-Beta, web2.0
+tags: [domain, Firefox, google reader, Haberler, Javascript, Microsoft-Visula-Sturdio-2008-Beta, web2.0]
 ---
 
 -   Mürekkep.org "Blogküre’ye sorduk: com, org, net… Domain tercihinde

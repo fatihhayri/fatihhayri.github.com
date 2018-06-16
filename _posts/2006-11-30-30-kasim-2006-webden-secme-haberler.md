@@ -3,7 +3,7 @@ layout: post
 title: 30 Kasım 2006 Web&#039;den Seçme haberler
 Date: 2006-11-30 23:24
 Category: Haberler
-tags: bandtwith, CSS, lightbox, WordPress, yakuter
+tags: [bandtwith, CSS, lightbox, WordPress, yakuter]
 ---
 
 -   Yakuter'den 'Dinamik Olarak Sitil Değiştirmek'? isimli güzel bir
@@ -17,7 +17,7 @@ tags: bandtwith, CSS, lightbox, WordPress, yakuter
 -   Web sitemizi nasıl optimize edebiliriz ve bant-genişliğin en iyi
     nasıl kullanabilmemizi anlatan güzel bir makale [Link][4]
 -   Farklı bir lightbox stilinin gösterildiği ve kodunun verildiği bir
-    site [Link][5]
+    site
 -   Yakuter'den bir css maklesi daha "CSS ile Gölge Yapımı" [Link][6]
 
 
@@ -26,5 +26,4 @@ tags: bandtwith, CSS, lightbox, WordPress, yakuter
   [2]: http://www.456bereastreet.com/archive/200611/resolution_vs_browser_size_vs_fixed_or_adaptive_width/
   [3]: http://lesliefranke.com/files/reference/csscheatsheet.html
   [4]: http://yuiblog.com/blog/2006/11/28/performance-research-part-1/
-  [5]: http://orangoo.com/labs/GreyBox/
   [6]: http://www.yakuter.com/css-ile-golge-yapimi

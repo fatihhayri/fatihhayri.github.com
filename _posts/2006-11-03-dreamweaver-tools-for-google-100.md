@@ -3,7 +3,7 @@ layout: post
 title: Dreamweaver Tools for Google&#039;¢ 1.0.0
 Date: 2006-11-03 18:59
 Category: Haberler, Web Standartları, XHTML
-tags: Dreamweaver, google maps, Google-Checkout, Google-Search, Web Standartları, XHTML
+tags: [Dreamweaver, google maps, Google-Checkout, Google-Search, Web Standartları, XHTML]
 ---
 
 Dreamweaver kullananlar için Google araçlarını sitenize kolayca

@@ -9,7 +9,7 @@ Türkiye Cumhuriyeti'nin kurumları ile birlikte Osmanlı Devletinin devamı
 olduğunu gösteren tarihi polisiye tadında bir kitap.  Tarihi
 bilgilerin inandırıcılığı tatmin edici olmasada akıcı anlatım kitabı
 okunur kılmış. Ayrıntılı bilgi için
-[http://www.netkitap.com/m_ayrinti.asp?id=26840][] Kitabın Arka
+http://www.netkitap.com/m_ayrinti.asp?id=26840 Kitabın Arka
 Kapağından: " 'Soner Bey beni arıyormuşsunuz!' Tanışmamız telefonda bu
 cümleyle başladı. Tarih 16 haziran 1999." Torun "Yakub Cemil"
 yurtdışında katıldığı silahlı operasyonları ve dedesi, İttihat ve
@@ -35,5 +35,3 @@ iki sadık dostumuz vardı: biri hayat, diğeri ölüm!.." Sistemler,
 rejimler değişti, teşkilat hep aynı kaldı. Fedaileri dün Dede Yakub
 Cemil'di, bugün Torun "Yakub Cemil." İki Silahşorun Gerçek
 Yaşamöyküsü...
-
-  [http://www.netkitap.com/m_ayrinti.asp?id=26840]: http://www.netkitap.com/m_ayrinti.asp?id=26840

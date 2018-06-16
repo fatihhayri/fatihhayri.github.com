@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Menü Yapmak
 Date: 2006-11-05 20:50
 Category: CSS, Web Standartları, XHTML
-tags: CSS, liste, menü, ul, Web Standartları, XHTML
+tags: [CSS, liste, menü, ul, Web Standartları, XHTML]
 ---
 
 Web sitelerinin vazgeçilmez öğelerinde biridir menüler. Menüler

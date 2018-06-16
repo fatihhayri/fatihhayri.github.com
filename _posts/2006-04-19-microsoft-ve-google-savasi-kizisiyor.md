@@ -3,7 +3,7 @@ layout: post
 title: Microsoft ve Google savaşı kızışıyor
 Date: 2006-04-19 14:15
 Category: Haberler
-tags: google, Google Suggest, microsoft, Microsoft Live
+tags: [google, Google Suggest, microsoft, Microsoft Live]
 ---
 
 Google Suggest'e karşılık Ajax ile yapılmış [Microsoft Live][]'ı

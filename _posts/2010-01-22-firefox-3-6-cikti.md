@@ -4,7 +4,7 @@ title: Firefox 3.6 çıktı
 Slug: firefox-3-6-cikti
 Date: 2010-01-22 00:11
 Category: Haberler
-tags: çoklu background, Firefox, Firefox3.6, font-face, gradyen, İnternet Tarayıcısı, woff
+tags: [çoklu background, Firefox, Firefox3.6, font-face, gradyen, İnternet Tarayıcısı, woff]
 ---
 
 Firefox 3.5 çıkalı daha 6 ay oldu, bazıları şunu diyebilir bu kadar kısa

@@ -3,7 +3,7 @@ layout: post
 title: Javascript kodlarımızı eski versiyon web tarayıcılarından gizlemek
 Date: 2006-10-17 15:57
 Category: Javascript, XHTML
-tags: Javascript, kodu gizle, XHTML
+tags: [Javascript, kodu gizle, XHTML]
 ---
 
 Eski versiyon web tarayıcılarında javascript kodlarımız saklamak için

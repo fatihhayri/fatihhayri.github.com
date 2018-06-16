@@ -3,7 +3,7 @@ layout: post
 title: Vista&#039;da Adobe Flash sorununun çözülmesi
 Date: 2007-11-08 16:10
 Category: Haberler
-tags: adobe, Çözüm, flash, Haberler, microsoft, sorun, vista
+tags: [adobe, Çözüm, flash, Haberler, microsoft, sorun, vista]
 ---
 
 Vista'ya alışmadığımı itiraf etmeliyim. Bu gün birden IE7 flash

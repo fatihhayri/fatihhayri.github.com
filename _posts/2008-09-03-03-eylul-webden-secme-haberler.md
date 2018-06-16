@@ -3,7 +3,7 @@ layout: post
 title: 03 Eylül Web&#039;den seçme haberler
 Date: 2008-09-03 10:32
 Category: Haberler
-tags: CSS filtreleme, display:inline-block, Erişebilirlik, Google Analytics, Google Chrome, internet explorer, internet explorer 6, jParallax, yazı tipi
+tags: [CSS filtreleme, display, inline-block, Erişebilirlik, Google Analytics, Google Chrome, internet explorer, internet explorer 6, jParallax, yazı tipi]
 ---
 
 -   Hasan Yalçın sitesini yenilemiş. Hayırlı olsun. [Bağlantı][] 

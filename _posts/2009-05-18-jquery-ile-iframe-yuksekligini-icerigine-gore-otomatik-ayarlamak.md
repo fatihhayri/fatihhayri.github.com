@@ -3,7 +3,7 @@ layout: post
 title: Jquery İle IFrame Yüksekliğini İçeriğine Göre Otomatik Ayarlamak
 Date: 2009-05-18 10:31
 Category: Haberler
-tags: iframe, Javascript, jquery, jQuery plugin
+tags: [iframe, Javascript, jquery, jQuery plugin]
 ---
 
 Ben bu işe başladığımdan beri çerçeve(frame) kullanmak hoşa gitmemiştir.

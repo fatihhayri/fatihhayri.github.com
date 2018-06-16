@@ -3,7 +3,7 @@ layout: post
 title: 04 Ekim 2007 Web&#039;den Seçme Haberler
 Date: 2007-10-04 15:55
 Category: Haberler
-tags: css3.0, Dreamweaver, font, form, google, Haberler, microsoft, msn-live, spry, yahoo, yuvarlak kenar
+tags: [css3.0, Dreamweaver, font, form, google, Haberler, microsoft, msn-live, spry, yahoo, yuvarlak kenar]
 ---
 
 -   Adobe Dreamweaver CS3'de de bulunan javascript kütüphanesini(Spry)

@@ -3,7 +3,7 @@ layout: post
 title: Bir Nesli Nasıl Mahvettiler - Osman Yüksel SERDENGEÇTİ
 Date: 2006-09-17 14:48
 Category: Kitaplar
-tags: Bir Nesli Nasıl Mahvettiler, memleket, Osman Yüksel SERDENGEÇTİ, siyaset
+tags: [Bir Nesli Nasıl Mahvettiler, memleket, Osman Yüksel SERDENGEÇTİ, siyaset]
 ---
 
 ![Bir nesli nasıl mahvettiler - Osman yüksel Serdengeçti][]Yanlış

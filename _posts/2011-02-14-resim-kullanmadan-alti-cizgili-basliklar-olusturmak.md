@@ -3,7 +3,7 @@ layout: post
 title: Resim Kullanmadan Altı Çizgili Başlıklar Oluşturmak
 Date: 2011-02-14 23:35
 Category: CSS
-tags: altı çizili başlıklar, clearfix, html
+tags: [altı çizili başlıklar, clearfix, html]
 ---
 
 ![][100]

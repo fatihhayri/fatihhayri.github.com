@@ -3,7 +3,7 @@ layout: post
 title: İhanet Noktası - Dan Brown
 Date: 2007-05-15 09:31
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![İhanet Noktası][]Gerçekten güzel bir roman. Gerilim seven herkese

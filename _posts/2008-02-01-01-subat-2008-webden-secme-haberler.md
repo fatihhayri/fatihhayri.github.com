@@ -3,7 +3,7 @@ layout: post
 title: 01 Şubat 2008 web&#039;den seçme haberler
 Date: 2008-02-01 16:08
 Category: Haberler
-tags: acidtest3, CSS, Eric Meyer, Firefox, float, Haberler, jquery, line-height, WordPress
+tags: [acidtest3, CSS, Eric Meyer, Firefox, float, Haberler, jquery, line-height, WordPress]
 ---
 
 -   line-height ve menülerde kullanımı.

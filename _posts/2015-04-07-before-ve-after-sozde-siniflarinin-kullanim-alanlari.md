@@ -3,7 +3,7 @@ layout: post
 title: :before ve :after Sözde Sınıflarının Kullanım Alanları
 Date: 2015-04-07 14:41
 Category: css
-tags: before after ikon gölge
+tags: [before after ikon gölge]
 ---
 
 :before ve :after sözde sınıfları tanımlandığı elemanla ilişkili ve alt eleman olarak eklenir, isimlerinden de anlaşılacağı gibi içeriğin başına ve sonuna eklenirler. Kullanım alanlarını gördükçe ne kadar faydalı seçiciler olduğunu daha iyi anlayacağız. 

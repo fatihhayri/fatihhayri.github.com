@@ -3,7 +3,7 @@ layout: post
 title: 'CSS İpucu 19 - Tüm Tarayıcılar İçin CSS İle Saydamlık'
 Date: 2009-02-21 16:47
 Category: CSS, Web Standartları, XHTML
-tags: css doğrulama, donuklaştırma, İnternet Tarayıcısı, opacity, saydamlık
+tags: [css doğrulama, donuklaştırma, İnternet Tarayıcısı, opacity, saydamlık]
 ---
 
 Daha önce birçok kez bu konuda bana e-posta geldi. Buraya yazmanın

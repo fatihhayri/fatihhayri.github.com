@@ -3,7 +3,7 @@ layout: post
 title: Jquery ipuçları
 Date: 2009-10-22 23:33
 Category: Javascript
-tags: ipuçları, jquery, kolaylık
+tags: [ipuçları, jquery, kolaylık]
 ---
 
 jQuery'i artık neredeyse her projemde kullanıyorum. Aklıma gelen ve not

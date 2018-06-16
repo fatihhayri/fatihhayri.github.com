@@ -3,10 +3,10 @@ layout: post
 title: İş Hayatında Motivasyon -Üzeyir Garih
 Date: 2006-06-27 22:32
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
-![motivsyon.jpg][]Üzeyir Garih'in Kişisel Gelişim Başarı Serisindeki
+<span class="kitap-resmi">![motivsyon.jpg][]</span> Üzeyir Garih'in Kişisel Gelişim Başarı Serisindeki
 kitaplarında biri. Çok güzel ve yararlı olan bu kitabı tüm yöneticiler
 ve yönetilenlerin okumasını tavsiye ederim. Herkese yaralı
 olması bakımından bir kaç not vermek istiyorum so kısımdan

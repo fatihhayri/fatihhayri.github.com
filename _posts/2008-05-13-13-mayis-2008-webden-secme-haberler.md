@@ -3,7 +3,7 @@ layout: post
 title: 13 Mayıs 2008 web&#039;den seçme haberler
 Date: 2008-05-13 16:27
 Category: Haberler
-tags: arama motoru, Blog Ödülleri, css doğrulama, google pagerank, Macromedia-Dreamweaver, menü, Opera, reklam, trojan, WordPress
+tags: [arama motoru, Blog Ödülleri, css doğrulama, google pagerank, Macromedia-Dreamweaver, menü, Opera, reklam, trojan, WordPress]
 ---
 
 -   Doğrulamadan geçen bir saydamlık uygulaması. 

@@ -3,7 +3,7 @@ layout: post
 title: Kuleli 1919 - Şeref Tipi
 Date: 2009-01-06 23:06
 Category: Kitaplar
-tags: 1919, Bursa Işıklar, cumhuriyet, İşgal-yılları, Kuleli, osmanlı, Şeref Tipi, Türkiye
+tags: [1919, Bursa Işıklar, cumhuriyet, İşgal-yılları, Kuleli, osmanlı, Şeref Tipi, Türkiye]
 ---
 
 ![kuleli1919][]Meleketimizin zor günlerinde nelerin olduğunu bizlere

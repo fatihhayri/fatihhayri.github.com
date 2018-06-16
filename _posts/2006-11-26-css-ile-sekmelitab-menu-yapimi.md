@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Sekmeli(Tab) Menü Yapımı
 Date: 2006-11-26 23:06
 Category: CSS, Web Standartları, XHTML
-tags: CSS, menü, sekme, tab, Web Standartları, XHTML
+tags: [CSS, menü, sekme, tab, Web Standartları, XHTML]
 ---
 
 Sekmeli menümüzü [Doug Bowman'ın][] [Sliding Doors][] tekniği ile

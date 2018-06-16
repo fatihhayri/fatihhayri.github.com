@@ -3,7 +3,7 @@ layout: post
 title: İnternet Explorer 8&#039;in CSS Desteği
 Date: 2010-03-31 22:50
 Category: CSS, Haberler
-tags: :active, :after, :before, content, Data URI, display:inline-block, focus, hasLayout, ie8, outline
+tags: [active, after, before, content, Data URI, display, inline-block, focus, hasLayout, ie8, outline]
 ---
 
 Biraz geç kalmış bir yazı olacak, ancak İnternet Explorer 8 çıktığından

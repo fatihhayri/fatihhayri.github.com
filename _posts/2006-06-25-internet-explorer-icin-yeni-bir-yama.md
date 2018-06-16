@@ -11,9 +11,8 @@ güvenlik sorunları saptanmıştır. Microsoft'un bu güncelleştirmesini
 yükleyerek bilgisayarınızı koruyabilirsiniz. Bu öğeyi yükledikten sonra
 bilgisayarınızı yeniden başlatmanız gerekebilir." - Microsoft Türkiye
 sorunun kaynağının createTextRange() DHTML metodu olduğu belirtiliyor.
-Türkçe yamayı indirmek için tıklayınız: [microsoft.turkiye][] Ayrıca
+Türkçe yamayı indirmek için tıklayınız:  http://www.microsoft.com/downloads/details.aspx?FamilyId=033C41E1-2B36-4696-987A-099FC57E0129&displaylang=tr Ayrıca
 ayrıntılı bilgi için tıklayınız
 [http://www.kb.cert.org/vuls/id/876678][]
 
-  [microsoft.turkiye]: http://www.microsoft.com/downloads/details.aspx?FamilyId=033C41E1-2B36-4696-987A-099FC57E0129&displaylang=tr
   [http://www.kb.cert.org/vuls/id/876678]: http://www.kb.cert.org/vuls/id/876678

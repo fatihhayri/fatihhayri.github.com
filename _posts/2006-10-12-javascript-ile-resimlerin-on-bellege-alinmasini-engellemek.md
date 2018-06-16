@@ -3,7 +3,7 @@ layout: post
 title: javascript ile resimlerin ön belleğe alınmasını engellemek
 Date: 2006-10-12 11:12
 Category: Javascript
-tags: Caching, Javascript, math, Ön-bellek, radom, resimler
+tags: [Caching, Javascript, math, Ön-bellek, radom, resimler]
 ---
 
 	:::javascript

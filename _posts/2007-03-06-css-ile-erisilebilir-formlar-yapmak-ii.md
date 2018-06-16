@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Erişilebilir Formlar Yapmak - II
 Date: 2007-03-06 00:10
 Category: CSS, Web Standartları, XHTML
-tags: CSS, Web Standartları, XHTML
+tags: [CSS, Web Standartları, XHTML]
 ---
 
 ## Gelişmiş Form Yapıları

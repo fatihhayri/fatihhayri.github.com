@@ -3,7 +3,7 @@ layout: post
 title: Saray Hatıralarım - Safiye Ünivar
 Date: 2006-05-08 21:06
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 Sultan Reşad zamanında sarayda muallimelik(öğretmenlik) yapmış olan

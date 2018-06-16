@@ -3,7 +3,7 @@ layout: post
 title: Tarih Sohbetleri 3 - Yılmaz Öztuna
 Date: 2007-06-25 22:10
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![tarih_sohbetleri3.jpg][]Tarih sohbetlerinin 3. ve sonuncusu olan

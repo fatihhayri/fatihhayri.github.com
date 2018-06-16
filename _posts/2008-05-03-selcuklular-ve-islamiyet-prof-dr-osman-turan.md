@@ -3,7 +3,7 @@ layout: post
 title: Selçuklular ve İslâmiyet - Prof. Dr. Osman Turan
 Date: 2008-05-03 12:01
 Category: Kitaplar
-tags: İslam, Osman Turan, Saltuk Buğra Han, Selçuklular, Süleyman Şah, Türk Tarihi, Türkler
+tags: [İslam, Osman Turan, Saltuk Buğra Han, Selçuklular, Süleyman Şah, Türk Tarihi, Türkler]
 ---
 
 ![Selçuklular ve İslamiyet][]Tarihi seviyorum ama bu kitap ile

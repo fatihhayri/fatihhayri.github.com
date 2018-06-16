@@ -3,7 +3,7 @@ layout: post
 title: Dikey Ortalamada Son Nokta
 Date: 2015-03-26 16:41
 Category: css
-tags: dikey-ortalama transform
+tags: [dikey-ortalama transform]
 ---
 
 CSS'de sorun olan noktalardan biridir dikeyde elemanları ortalamak. Farklı çözüm önerileri sunulmuştur. Bende daha önce yazmıştım bir tane. [CSS ile Dikey Ortalama](/css-ile-dikey-ortalama/)

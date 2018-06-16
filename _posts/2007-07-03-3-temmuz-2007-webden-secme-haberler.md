@@ -3,7 +3,7 @@ layout: post
 title: 3 Temmuz 2007 Web&#039;den Seçme Haberler
 Date: 2007-07-03 09:09
 Category: Haberler
-tags: Haberler
+tags: [Haberler]
 ---
 
 -   Google Belgeler ve E-Tablolar aracını geliştirmiş. Gayet şık

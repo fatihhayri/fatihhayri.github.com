@@ -3,7 +3,7 @@ layout: post
 title: CSS&#039;de Tanımlamalar ve Etkinlikleri(Specificity)
 Date: 2006-10-08 12:22
 Category: CSS, Web Standartları, XHTML
-tags: class, CSS, css2, CSS2.1, id, important, öncelik, özellik, seçici, Specificity, Web Standartları, XHTML
+tags: [class, CSS, css2, CSS2.1, id, important, öncelik, özellik, seçici, Specificity, Web Standartları, XHTML]
 ---
 
 CSS'de etkinliğin anlamı stil çatışması(aynı elemente birden fazla tanım

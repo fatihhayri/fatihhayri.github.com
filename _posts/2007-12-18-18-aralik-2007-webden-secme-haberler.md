@@ -3,7 +3,7 @@ layout: post
 title: 18 Aralık 2007 Web&#039;den Seçme Haberler
 Date: 2007-12-18 11:02
 Category: Haberler
-tags: .net, Ajax, CSS, Haberler, jquery
+tags: [.net, Ajax, CSS, Haberler, jquery]
 ---
 
 -   Yaklaşık haftadır site üzerinden e-posta alamıyorum. Sorunun

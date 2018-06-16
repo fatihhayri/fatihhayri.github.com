@@ -3,7 +3,7 @@ layout: post
 title: Firefox 3.0 çıktı
 Date: 2008-06-17 20:18
 Category: Haberler
-tags: Firefox 3, İnternet Tarayıcısı
+tags: [Firefox 3, İnternet Tarayıcısı]
 ---
 
 İnternet Tarayıcı savaşları kızıştı. Geçen hafta [Opera 9.5][] tanıttık

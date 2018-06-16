@@ -3,7 +3,7 @@ layout: post
 title: 23 Şubat 2008 web&#039;den seçme haberler
 Date: 2008-02-23 17:07
 Category: Haberler
-tags: Ajax, google, Javascript, mootools, yui
+tags: [Ajax, google, Javascript, mootools, yui]
 ---
 
 -   Digg menü benzerini CSS ile oluşturulması. [Bağlantı][]
@@ -31,7 +31,6 @@ tags: Ajax, google, Javascript, mootools, yui
 -   CSS kütüphanesi blueprint 0.7 sürümü çıkmış. [Bağlantı][17]
 -   Güzel bir resim galerisi uygulaması. [Bağlantı][18]
 -   Mootools ile yapılmış güzel bir geçiş efektli alan ekleme scripti.
-    [Bağlantı][19]
 -   Google Reader Türkçe desteğide sunuyor. Bir kaç yerde ingilizce
     kalan yerler hariç güzel olmuş.
 -   Thunderbird 3.0 sürüm geliyor.
@@ -67,5 +66,3 @@ tags: Ajax, google, Javascript, mootools, yui
     "blueprint 0.7"
   [18]: http://www.cabel.name/draft1/2008/02/fancyzoom-10.html
     "küçük ve büyük resim"
-  [19]: http://www.artviper.net/test/ajaxslide/
-    "geçiş efekti ile alan göstyermek"

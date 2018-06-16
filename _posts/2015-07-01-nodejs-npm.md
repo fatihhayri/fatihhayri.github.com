@@ -3,7 +3,7 @@ layout: post
 title: Nodejs ve npm
 Date: 2015-07-01 13:18
 Category: nodejs
-tags: nodejs npm package.json
+tags: [nodejs npm package.json]
 ---
 
 ![enter image description here](https://fatihhayrioglu.com/images/nodejs-npm.png)

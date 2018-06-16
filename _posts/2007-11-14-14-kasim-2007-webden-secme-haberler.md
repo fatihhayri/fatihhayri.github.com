@@ -3,7 +3,7 @@ layout: post
 title: 14 Kasım 2007 Web&#039;den Seçme Haberler
 Date: 2007-11-14 21:54
 Category: Haberler
-tags: CSS, google, Haberler, html5, ie, Javascript, SmashMagazine, sosyal-imleme
+tags: [CSS, google, Haberler, html5, ie, Javascript, SmashMagazine, sosyal-imleme]
 ---
 
 -   Google PageRank değerlendirmesini 1 Ocak itibari ile kapatacakmış.

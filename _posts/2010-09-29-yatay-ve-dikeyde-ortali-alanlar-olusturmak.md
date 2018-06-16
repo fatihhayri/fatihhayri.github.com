@@ -3,7 +3,7 @@ layout: post
 title: Yatay ve Dikeyde Ortalı Alanlar Oluşturmak
 Date: 2010-09-29 22:20
 Category: CSS, XHTML
-tags: ortalama, sayfaya ortalama, yatay ve dikşeyde ortalama
+tags: [ortalama, sayfaya ortalama, yatay ve dikşeyde ortalama]
 ---
 
 ![][100]

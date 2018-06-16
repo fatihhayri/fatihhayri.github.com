@@ -3,7 +3,7 @@ layout: post
 title: jQuery ipuçları - 3
 Date: 2010-07-01 00:10
 Category: Javascript, jquery
-tags: ipuçları, jquery, live(), resize, select, size()
+tags: [ipuçları, jquery, live(), resize, select, size()]
 ---
 
 [Jquery ipuçları - 1][]

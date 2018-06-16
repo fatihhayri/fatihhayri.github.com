@@ -3,7 +3,7 @@ layout: post
 title: 09 Ekim 2007 Web&#039;den Seçme Haberler
 Date: 2007-10-09 09:13
 Category: Haberler
-tags: diyagram, Haberler, jquery, safari, web2.0
+tags: [diyagram, Haberler, jquery, safari, web2.0]
 ---
 
 -   Çoklu Safari web tarayıcı testi için 10 farklı Safari sürümünde test

@@ -3,7 +3,7 @@ layout: post
 title: 26 Ocak 2007 Web&#039;den seçme haberler
 Date: 2007-01-26 00:31
 Category: Haberler
-tags: adobe, CSS, google, Javascript, rss, WordPress
+tags: [adobe, CSS, google, Javascript, rss, WordPress]
 ---
 
 
@@ -19,7 +19,7 @@ tags: adobe, CSS, google, Javascript, rss, WordPress
     [fotoğraf galerisi örneği][]. Adobe Spry için [Link][2]
 -   Sayın Mehmet Doğan'ın yeni ismiyle http://www.altiustutasarim.com'da
     "Google reklam (adsense) yayıncılarına tavsiyeler!" isimli
-    makalesini okumanızı tavsiye ederim. [Link][3]
+    makalesini okumanızı tavsiye ederim.
 -   5 adet güzel CSS konusu [Link][4]
 -   Title etiketi hakkında bilinmesi gereken 9 ipucu [Link][5]
 -   Bir tane daha javascript kütüphanesi [Link][6]
@@ -37,7 +37,7 @@ tags: adobe, CSS, google, Javascript, rss, WordPress
     [Link][12] Google tüm arama araçlarına yazım kontrolünü koymuş Keşke
     Türkçe yazım hatalarını da kontrol etse [Link][13]
 -   Biliyorsunuz WordPress 2.1 çıktı GrifiDizayn güncellemiş ve tuttuğu
-    notları bizlerle paylaşmış. [Link][14]
+    notları bizlerle paylaşmış.
 -   Javascript ile programlama hakkında güzel video anlatımı. Tek sorun
     İngilizce olması [Link][15]
 
@@ -48,8 +48,6 @@ tags: adobe, CSS, google, Javascript, rss, WordPress
   [fotoğraf galerisi örneği]: http://labs.adobe.com/technologies/spry/demos/gallery/
     "fotoğraf galerisi örneği"
   [2]: http://labs.adobe.com/wiki/index.php/Spry "Link"
-  [3]: http://www.altiustutasarim.com/arsiv/2007/01/google_reklam_adsense_yayincil.php
-    "Link"
   [4]: http://www.wait-till-i.com/index.php?p=385 "Link"
   [5]: http://www.seomoz.org/blogdetail.php?ID=1649 "Link"
   [6]: http://www.blueshoes.org/en/javascript/?1 "Link"
@@ -64,6 +62,4 @@ tags: adobe, CSS, google, Javascript, rss, WordPress
   [12]: http://googlesystem.blogspot.com/2007/01/google-image-search-has-cleaner-look.html
     "Link"
   [13]: http://googlesystem.blogspot.com/2007/01/googles-spell-checker-included-in-all.html
-    "Link"
-  [14]: http://www.gfxdizayn.com/wordpress-guncelleme-notlari/ "Link"
   [15]: http://yuiblog.com/blog/2007/01/24/video-crockford-tjpl/ "Link"

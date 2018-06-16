@@ -4,7 +4,7 @@ title: CSS İpucu 21&#58; CSS ile Seçilen Metinlerin Rengini Değiştirmek
 Slug: css-ile-secilen-metinlerin-rengini-degistirmek
 Date: 2009-06-01 16:33
 Category: CSS, XHTML
-tags: css3, Firefox, Google-Checkout, internet explorer, Opera, safari, seçili-metin, WebKit
+tags: [css3, Firefox, Google-Checkout, internet explorer, Opera, safari, seçili-metin, WebKit]
 ---
 
 ![metin_secme_rengi][]

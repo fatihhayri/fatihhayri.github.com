@@ -4,7 +4,7 @@ title: CSS Kutu Modeli - Margin Özellikleri
 Slug: kutu-modeli-margin-ozellikleri
 Date: 2006-08-03 23:38
 Category: CSS
-tags: bottom, CSS, left, Margin, margin-right, margin-top
+tags: [bottom, CSS, left, Margin, margin-right, margin-top]
 ---
 
 Margin özelliği elementin etrafındaki boşluk olarak tanımlanır.

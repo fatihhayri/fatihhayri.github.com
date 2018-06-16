@@ -3,7 +3,7 @@ layout: post
 title: IE6/IE7 filtre &quot;Renk Geçişi Tanımı - Konumlandırma&quot; Sorunu ve Çözümsüzülüğü :D
 Date: 2012-05-23 09:40
 Category: CSS
-tags: -ms-filtre, filtre, gradient, ie6, ie7, problem
+tags: [-ms-filtre, filtre, gradient, ie6, ie7, problem]
 ---
 
 CSS3 ile birlikte bir çok güzel özellik geldi. Bunlardan bir tanesi

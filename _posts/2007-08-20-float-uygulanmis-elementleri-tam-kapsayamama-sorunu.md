@@ -3,7 +3,7 @@ layout: post
 title: Float Uygulanmış Elementleri Tam Kapsayamama Sorunu
 Date: 2007-08-20 09:47
 Category: CSS, Web Standartları, XHTML
-tags: :after, clear, clearfix, CSS, float, kapsayamama-sorunu, Web Standartları, XHTML
+tags: [after, clear, clearfix, CSS, float, kapsayamama-sorunu, Web Standartları, XHTML]
 ---
 
 Float CSS ile web sayfası kodlamak için en çok kullandığımız özelliktir.

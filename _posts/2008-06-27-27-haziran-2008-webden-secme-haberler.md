@@ -3,7 +3,7 @@ layout: post
 title: 27 Haziran 2008 web&#039;den seçme haberler
 Date: 2008-06-27 15:36
 Category: Haberler
-tags: css-menü, daktilo efekti, jquery, Opera 9.5, otomatik önerme, poster
+tags: [css-menü, daktilo efekti, jquery, Opera 9.5, otomatik önerme, poster]
 ---
 
 -   Web için posterler. CSS, Html, Javascript vb. Çıktılarını alıp

@@ -3,7 +3,7 @@ layout: post
 title: 08 Ağustos 2007 Web&#039;den Seçme Haberler
 Date: 2007-08-08 09:00
 Category: Haberler
-tags: CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress
+tags: [CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress]
 ---
 
 -   BluPrint CSS Anaçatısını(Framework) çıkardı. Amaç aynı şeyleri
@@ -19,7 +19,7 @@ tags: CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress
 -   eburhan "jQuery Dünyasına adım atıyoruz" adlı güzel bir makale
     yazmış. [Link][4]
 -   "Blogcular sendika kurma yolunda" ben isminide buldum "Günlük
-    Sendikası" [Link][5]
+    Sendikası"
 -   "Web standartlarının kralı Jeffrey Zeldman" adlı bir makale.
     [Link][6]
 -   Muhammet Sevim sFIR 3.0 versiyonu ve yeniliklerini anlatmış. Link
@@ -39,7 +39,6 @@ tags: CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress
   [3]: http://www.seobook.com/archives/002380.shtml "wordpress"
   [4]: http://www.eburhan.com/jquery-dunyasina-adim-atiyoruz/
     "Jquery Dünyasına adım"
-  [5]: http://www.ntvmsnbc.com/news/416535.asp "Günlük Sendikası"
   [6]: http://www.businessweek.com/innovate/content/aug2007/id2007086_670396.htm
     "Jeffry Zeldman"
   [8]: http://uxmatters.com/MT/archives/000191.php "Web Formlar"

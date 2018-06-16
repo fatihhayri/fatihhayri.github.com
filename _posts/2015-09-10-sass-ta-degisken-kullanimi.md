@@ -3,7 +3,7 @@ layout: post
 title: Sass'ta değişken kullanımı
 Date: 2015-09-10 16:03
 Category: css
-tags: sass css-önişlemcileri değişkenler
+tags: [sass css-önişlemcileri değişkenler]
 ---
 
 

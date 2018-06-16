@@ -4,7 +4,7 @@ title: CSS İpuçları  6 &#58; CSS kısaltmaları hakkında
 Slug: css-kisaltma-ipucu
 Date: 2006-07-22 22:51
 Category: CSS
-tags: CSS, kalıtsallık, yazı tipi
+tags: [CSS, kalıtsallık, yazı tipi]
 ---
 
 Genel özellikleri bir kere tanımlayarak tekrarlardan kurtulabiliriz. Bu

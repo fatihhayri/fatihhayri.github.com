@@ -3,7 +3,7 @@ layout: post
 title: 17 Nisan 2008 web&#039;den seçme haberler
 Date: 2008-04-17 09:09
 Category: Haberler
-tags: Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek yapı, firebug, google web yönetici merkezi, günlük, jquery, kullanışlı form elemanları, lightbox, open id, saydam png, WordPress
+tags: [Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek yapı, firebug, google web yönetici merkezi, günlük, jquery, kullanışlı form elemanları, lightbox, open id, saydam png, WordPress]
 ---
 
 -   Esnek yapılı silder geliştirmek. [Bağlantı][]

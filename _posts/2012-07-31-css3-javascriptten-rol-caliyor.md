@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Javascript&#8217;ten Rol (Ç)alıyor
 Date: 2012-07-31 15:39
 Category: CSS
-tags: :checked, :target, bitişik kardeş seçiciler, css3, Etkinlik, Genel Kardeş Seçiciler, Javascript, kardeş seçiciler
+tags: [checked, target, bitişik kardeş seçiciler, css3, Etkinlik, Genel Kardeş Seçiciler, Javascript, kardeş seçiciler]
 ---
 
 Geçen haftasonu c.tesi günü(28 Temmuz 2012) jstanbul etkinliğinde

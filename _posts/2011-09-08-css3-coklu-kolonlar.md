@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Çoklu Kolonlar
 Date: 2011-09-08 20:50
 Category: CSS
-tags: column-break, column-count, column-fill, column-gap, column-rule, column-span, column-width, columns, css3, çoklu kolonlar
+tags: [column-break, column-count, column-fill, column-gap, column-rule, column-span, column-width, columns, css3, çoklu kolonlar]
 ---
 
 Çoklu kolonlar metinlerin normal akışı dışında kolonlara bölünmesini ve

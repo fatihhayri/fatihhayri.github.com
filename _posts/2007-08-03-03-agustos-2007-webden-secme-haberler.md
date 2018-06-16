@@ -3,7 +3,7 @@ layout: post
 title: 03 Ağustos 2007 Web&#039;den Seçme Haberler
 Date: 2007-08-03 09:04
 Category: Haberler
-tags: adsl, Ajax, CSS, Haberler, Javascript, lightbox, Xray, yahoo
+tags: [adsl, Ajax, CSS, Haberler, Javascript, lightbox, Xray, yahoo]
 ---
 
 -   Ajax'a dair Temmuz ayı bilgileri için tıklayınız. [Link][]

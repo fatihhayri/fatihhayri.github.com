@@ -4,7 +4,7 @@ title: Internet Explorer 8&#039;i 7 gibi yorumlama kodu
 Slug: internet-explorer-8i-7-gibi-yorumla-kodu
 Date: 2009-03-23 16:32
 Category: XHTML
-tags: ie7, ie8, internet explorer, İnternet Tarayıcısı
+tags: [ie7, ie8, internet explorer, İnternet Tarayıcısı]
 ---
 
 Bildiğiniz gibi Microsoft Internet Explorer 8'i geçen hafta duyurdu.

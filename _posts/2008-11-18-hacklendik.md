@@ -3,7 +3,7 @@ layout: post
 title: Hacklendik
 Date: 2008-11-18 22:15
 Category: Haberler
-tags: apache, ftp, google, hack, htaccess, malware, WordPress
+tags: [apache, ftp, google, hack, htaccess, malware, WordPress]
 ---
 
 Bu gün siteme girmeye çalışan Firefox ve Google üzerinden girmeye

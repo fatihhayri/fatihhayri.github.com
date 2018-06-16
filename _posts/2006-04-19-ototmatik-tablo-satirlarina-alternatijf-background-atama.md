@@ -3,7 +3,7 @@ layout: post
 title: Ototmatik tablo satırlarına alternatif background atama
 Date: 2006-04-19 18:06
 Category: CSS, Javascript, Web Standartları
-tags: ardalan, background, Javascript, otomatik satır renklendirme, table, zebra tablolar
+tags: [ardalan, background, Javascript, otomatik satır renklendirme, table, zebra tablolar]
 ---
 
 Tabloları daha anlaşılır yapmak için bir satırın background'un farklı

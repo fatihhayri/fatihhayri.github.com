@@ -3,7 +3,7 @@ layout: post
 title: Sayfa Zeminini Tamamen Kaplayan Resimler Tanımlamak
 Date: 2011-07-25 22:02
 Category: CSS
-tags: background-size, tam ekran, zemin-resmi
+tags: [background-size, tam ekran, zemin-resmi]
 ---
 
 Sitem üzerinden birçok mesaj aldım bu konuda. Sonunda yazmaya karar

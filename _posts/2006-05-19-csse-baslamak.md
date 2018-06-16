@@ -3,7 +3,7 @@ layout: post
 title: CSS&#039;e başlamak
 Date: 2006-05-19 16:11
 Category: CSS, Web Standartları
-tags: başlamak, CSS, css avantajları, esnek yapı, ilk-adım, Web Standartları
+tags: [başlamak, CSS, css avantajları, esnek yapı, ilk-adım, Web Standartları]
 ---
 
 Cascading Style Sheets (CSS) HTML 'deki bazı problemleri halletmek için

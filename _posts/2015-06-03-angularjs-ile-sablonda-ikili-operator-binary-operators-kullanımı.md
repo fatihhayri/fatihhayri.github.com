@@ -3,7 +3,7 @@ layout: post
 title: Angularjs İle Şablonda İkili Operatör (binary operators) Kullanımı
 Date: 2015-06-03 16:00
 Category: angularjs
-tags: angularjs üçlü-operatörler 
+tags: [angularjs üçlü-operatörler ]
 ---
 
 Angularjs'in şablonlar (HTML) üzerindeki hakimiyetini seviyorum. Basit bir konu ama yazmakta yarar var. 

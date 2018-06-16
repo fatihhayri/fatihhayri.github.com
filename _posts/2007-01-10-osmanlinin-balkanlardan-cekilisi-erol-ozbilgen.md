@@ -3,7 +3,7 @@ layout: post
 title:  Osmanlının Balkanlardan Çekilişi - Erol Özbilgen
 Date: 2007-01-10 23:14
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![Osmanlının Balkanlardan Çekilişi - Süleyman Hüsnü Paşa][]Osmanlı

@@ -3,7 +3,7 @@ layout: post
 title: Arayüz Geliştiricileri İçin Web Sitesi Kodlamak Semineri - Ankara
 Date: 2011-02-15 22:25
 Category: Haberler
-tags: arayüz geliştirici, seminer, tütev, web-sitesi
+tags: [arayüz geliştirici, seminer, tütev, web-sitesi]
 ---
 
 ![][100]

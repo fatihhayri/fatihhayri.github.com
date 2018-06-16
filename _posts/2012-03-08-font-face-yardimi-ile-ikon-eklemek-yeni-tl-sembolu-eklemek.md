@@ -3,7 +3,7 @@ layout: post
 title: font-face yardımı ile ikon eklemek - Yeni TL sembolü eklemek
 Date: 2012-03-08 10:48
 Category: CSS
-tags: font-face, İkon, Türk Lirası, yeni tl sembolü
+tags: [font-face, İkon, Türk Lirası, yeni tl sembolü]
 ---
 
 İkonlar web aleminde kendi iyi bir yer bulmuş öğelerdir. Şimdiye kadar

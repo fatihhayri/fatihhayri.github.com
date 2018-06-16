@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Menü Yapmak IV - Yatay Açılır Menüler
 Date: 2006-11-09 06:52
 Category: CSS, Web Standartları, XHTML
-tags: CSS, css-menü, float, liste, menü, Web Standartları, XHTML, Yatay Açılır Menüler
+tags: [CSS, css-menü, float, liste, menü, Web Standartları, XHTML, Yatay Açılır Menüler]
 ---
 
 **Güncelleme:** Bu makale 08/01/2016 tarihinde yeniden düzenlenmiştir. IE için yazılan script'e gerek kalmadı.
@@ -159,7 +159,7 @@ alt kademeli, değişik renklerde ve değişik ebatlarda menü yapılabilir.
 
 -   [http://www.alistapart.com/articles/dropdowns/][]
 -   [http://www.compassdesigns.net/][]
--   [http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp#hs6][]
+-   http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp#hs6
 -   [http://www.cssplay.co.uk/menus/index.html][]
 
   [Bir önceki makalede]: http://www.fatihhayrioglu.com/?p=216
@@ -170,5 +170,4 @@ alt kademeli, değişik renklerde ve değişik ebatlarda menü yapılabilir.
   [indir]: /dokumanlar/menu4yeni.zip
   [http://www.alistapart.com/articles/dropdowns/]: http://www.alistapart.com/articles/dropdowns/
   [http://www.compassdesigns.net/]: http://www.compassdesigns.net/tutorials/joomla-tutorials/css-drop-down-menu.html
-  [http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp#hs6]: http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp#hs6
   [http://www.cssplay.co.uk/menus/index.html]: http://www.cssplay.co.uk/menus/index.html

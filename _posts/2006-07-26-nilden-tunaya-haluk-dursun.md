@@ -5,7 +5,7 @@ Date: 2006-07-26 23:08
 Category: Kitaplar
 ---
 
-![Nil'den Tuna'ya][] nildentunaya.jpgBir çok Osmanlı şehrinde şimdide
+<span class="kitap-resmi">![Nil'den Tuna'ya][]</span> Bir çok Osmanlı şehrinde şimdide
 bir çok izler bulan ve bunları gezerek araştıran Haluk Dursun çok güzel
 bir kitap yazmış. İnsanın bu diyarları gezesi geliyor. Tarih Gezerek
 öğrenilir. Coğrafya'nında Tarih üzerinde büyük etkisi vardır tezini

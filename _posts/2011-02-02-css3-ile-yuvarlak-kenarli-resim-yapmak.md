@@ -3,7 +3,7 @@ layout: post
 title: CSS3 ile yuvarlak kenarlı resim yapmak
 Date: 2011-02-02 00:45
 Category: CSS
-tags: border-radius, css3, Firefox, Google Chrome, problem, safari
+tags: [border-radius, css3, Firefox, Google Chrome, problem, safari]
 ---
 
 Bir resminize kenar çizgisi tanımı yapıp daha sonrada köşelerini

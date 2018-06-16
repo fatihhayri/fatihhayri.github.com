@@ -4,7 +4,7 @@ title: CSS İpucu 16&#58; Evrensel seçicilerde yazıtipi kısaltması kullanım
 Slug: css-ipucu-15-evrensel-secicilerde-yazitipi-kisaltmasi-kullaniminda-sorun
 Date: 2008-05-30 16:15
 Category: CSS, XHTML
-tags: CSS, Evrensel-Seçiciler, tüm-elemanlar
+tags: [CSS, Evrensel-Seçiciler, tüm-elemanlar]
 ---
 
 Evrensel seçicisi olan olan * ile yaptığımız font tanımları sorun

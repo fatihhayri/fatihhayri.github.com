@@ -3,10 +3,10 @@ layout: post
 title: Henry FORD - Beynelminel Yahudi
 Date: 2006-04-22 13:35
 Category: Kitaplar
-tags: Beynelminel Yahudi, Ford, Henry FORD, siyonist, yahudi
+tags: [Beynelminel Yahudi, Ford, Henry FORD, siyonist, yahudi]
 ---
 
-![Beynelminel Yahudi - Henry Ford][]Dünyanın en büyük sanayi devlerinden
+<span class="kitap-resmi">![Beynelminel Yahudi - Henry Ford][]</span> Dünyanın en büyük sanayi devlerinden
 biri olan Henry Ford, büyük ticari dehası ile kurduğu sanayi
 imparatorluğunun zirvesindeyken bir komployla karşı karşıya kaldığını,
 bu noktada büyük bir kumpasın içine düşürüldüğünü fark etti.

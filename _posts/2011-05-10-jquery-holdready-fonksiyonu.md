@@ -3,7 +3,7 @@ layout: post
 title: Jquery holdReady() fonksiyonu
 Date: 2011-05-10 22:24
 Category: Javascript, jquery
-tags: document.ready, dom, holdReady()
+tags: [document.ready, dom, holdReady()]
 ---
 
 Jquery son sürümü 1.6 çıktı. Dokümanları incelerken gözüme holdReady()

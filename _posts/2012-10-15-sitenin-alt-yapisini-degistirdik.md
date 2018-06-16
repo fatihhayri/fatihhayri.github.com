@@ -3,7 +3,7 @@ layout: post
 title: Sitenin Alt Yapısını Değiştirdik
 Date: 2012-10-15 11:54
 Category: Haberler
-tags: fatihhayrioglu.com, wordpress, pelican, github
+tags: [fatihhayrioglu.com, wordpress, pelican, github]
 ---
 
 Uzun süredir wordpress alt yapısı ile devam ettiğim sitemi hosting

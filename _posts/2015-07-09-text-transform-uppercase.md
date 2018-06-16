@@ -3,7 +3,7 @@ layout: post
 title: text-transform:uppercase
 Date: 2015-07-01 13:18
 Category: css
-tags: css türkçe text-transform:uppercase lang
+tags: [css, text-transform, uppercase, lang]
 ---
 
 Daha önce denediğimde bazı tarayıcıların sorun çıkardığını hatırlıyorum. Aklımda öyle kalmış. Bundan dolayı bu özelliği bugüne kadar hiç kullanmadım. Bir iş dolayısıyla kullanmam gerektiğinde çalıştığını görünce sevindim. Hatta denedeğim tüm tarayıcılarda (IE8 dahi) çalıştı.

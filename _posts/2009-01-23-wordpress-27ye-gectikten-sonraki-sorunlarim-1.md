@@ -3,7 +3,7 @@ layout: post
 title: WordPress 2.7&#039;ye geçtikten sonraki sorunlarım - 1
 Date: 2009-01-23 11:29
 Category: Haberler, WordPress
-tags: eklenti, Google Sitemap, sorun, WordPress, WordPress Eklentileri, wordpress2.7
+tags: [eklenti, Google Sitemap, sorun, WordPress, WordPress Eklentileri, wordpress2.7]
 ---
 
 WordPress 2.7 sürümünün çok güzel özellikleri var. Ancak yeni sürüme

@@ -3,7 +3,7 @@ layout: post
 title: Javascript ile TC kimlik no doğrulama
 Date: 2007-07-16 16:38
 Category: Javascript
-tags: Haberler, Javascript
+tags: [Haberler, Javascript]
 ---
 
 [Ceviz forumda][] okudum. "TC kimlik numarasının ilk 10 rakamının

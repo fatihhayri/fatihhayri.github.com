@@ -3,7 +3,7 @@ layout: post
 title: 22 Ağustos 2007 Web&#039;den Seçme Haberler
 Date: 2007-08-22 13:57
 Category: Haberler
-tags: .net, CSS, Haberler, Javascript, kahramanlar, web2.0
+tags: [.net, CSS, Haberler, Javascript, kahramanlar, web2.0]
 ---
 
 -   Adobe Flash Player 9'u güncelledi. Bu güncellemede yüksek kaliteili
@@ -18,7 +18,7 @@ tags: .net, CSS, Haberler, Javascript, kahramanlar, web2.0
 -   eburhan'dan CSS ile zarif arama formları hazırlama adlı güzel bir
     makale. [Link][5]
 -   ferruh.mavituna.com dan "Programcı Tıkanıklığı" adlı güzel bir
-    makale. [Link][6]
+    makale.
 -   HasanYalcin.com "Tasarımcılara en çok söylene 10 yalan" adlı bir
     makale. [Link][7]
 -   Tüm web2.0 uygulamalarını listesi. [Link][8]
@@ -38,8 +38,6 @@ tags: .net, CSS, Haberler, Javascript, kahramanlar, web2.0
     "JSON"
   [5]: http://www.eburhan.com/css-ile-zarif-arama-kutulari-hazirlamak/
     "CSS arama"
-  [6]: http://ferruh.mavituna.com/makale/programci-tikanikligi/
-    "Programcı Tıkanıklığı"
   [7]: http://www.hasanyalcin.com/?p=319 "Tsarımcılar"
   [8]: http://techmagazine.ws/full-web-20-api-list/
     "tüm web2.0 uygulamları"

@@ -3,7 +3,7 @@ layout: post
 title: Windows Vista .net Framework güncelleme sorunu ve çözümü
 Date: 2009-06-17 10:53
 Category: Haberler
-tags: .net-framework, hata-kodu, windows-vista
+tags: [.net-framework, hata-kodu, windows-vista]
 ---
 
 Windows vista sp 1 kullanıyorum ve yaklaşık 2-3 hafta önce bir

@@ -7,6 +7,4 @@ Category: CSS
 
 Sadece CSS kodları kullanarak resimlere Flash benzeri bir hareket vermek
 aklınıza gelirmi idi? Bazı arkadaşların başına güneş vurmuş olmalı işte
-örnek: Makale için [tıklayınız][](en)
-
-  [tıklayınız]: http://www.webreference.com/programming/css_animation/index.html
+örnek: Makale için tıklayınız. http://www.webreference.com/programming/css_animation/index.html

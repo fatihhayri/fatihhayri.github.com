@@ -3,7 +3,7 @@ layout: post
 title: 08 Mart 2008 web&#039;den seçme haberler
 Date: 2008-03-08 14:49
 Category: Haberler
-tags: CSS, css3, ie8, jquery, zoque
+tags: [CSS, css3, ie8, jquery, zoque]
 ---
 
 -   IE8 Beta 1 çıktı. Daha hızlı bir ie, tam CSS2.1 desteği, ajax ile

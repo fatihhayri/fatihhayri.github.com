@@ -3,7 +3,7 @@ layout: post
 title: Arapça Site Kodlamak ve direction:rtl özelliği
 Date: 2011-01-19 15:47
 Category: CSS, XHTML
-tags: arapça site, direction:rtl, farsça, ibranice, livego.com, unicode-bidi
+tags: [arapça site, direction, rtl, farsça, ibranice, livego.com, unicode-bidi]
 ---
 
 [LiveGO][]'ya zaman zaman dil desteği ekliyoruz. Son olarak Almanca ve

@@ -3,7 +3,7 @@ layout: post
 title: Önden Resimleri(Preloading images) Yükleme Yöntemleri
 Date: 2010-08-27 22:44
 Category: CSS, Javascript, XHTML
-tags: önyükleme, performans, resim, web site hızlandırma
+tags: [önyükleme, performans, resim, web site hızlandırma]
 ---
 
 Web sitelerimizi hızlandırmak için çeşitli yöntemler ve metotlar

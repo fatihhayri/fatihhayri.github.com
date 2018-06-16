@@ -3,7 +3,7 @@ layout: post
 title: WordPress&#039;de Türkçe sorununu nasıl çözmeye çalışıyorum
 Date: 2006-04-23 22:10
 Category: WordPress
-tags: Crimson Editor, Türkçe karakter sorunu, utf-8, WordPress
+tags: [Crimson Editor, Türkçe karakter sorunu, utf-8, WordPress]
 ---
 
 WordPress kuran herkes gibi benimde Türkçe Karakterlerle sorunum oldu.

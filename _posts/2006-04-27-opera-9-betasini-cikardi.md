@@ -3,7 +3,7 @@ layout: post
 title: Opera 9 betasını çıkardı
 Date: 2006-04-27 23:32
 Category: Haberler
-tags: BitTorrent, İçerik Sabitleyici, İnternet Tarayıcısı, Opera, Opera 9, Widgets
+tags: [BitTorrent, İçerik Sabitleyici, İnternet Tarayıcısı, Opera, Opera 9, Widgets]
 ---
 
 ![opera 9 beta][]Yeni özellikleri gerçekten çok güzel.

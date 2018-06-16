@@ -3,7 +3,7 @@ layout: post
 title: CSS ile konumlandırma(positioning)
 Date: 2006-09-01 22:43
 Category: CSS
-tags: Blok-level, bottom, CSS, Göreceli-Konumlandırma, Inline-level, left, Mutlak-Konumlandırma, position, right, Sabit-Konumlandırma, top, z-index
+tags: [Blok-level, bottom, CSS, Göreceli-Konumlandırma, Inline-level, left, Mutlak-Konumlandırma, position, right, Sabit-Konumlandırma, top, z-index]
 ---
 
 CSS konseptinin üç önemli konusu [kutu modelleme][], **konumlandırma ( positioning )** ve floating konularıdır.

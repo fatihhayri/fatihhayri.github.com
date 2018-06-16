@@ -3,7 +3,7 @@ layout: post
 title: CSS Hata Ayıklama Yöntemleri
 Date: 2007-01-04 23:05
 Category: CSS, XHTML
-tags: Attribute, backslash, CSS, Çocuk-Seçicileri, Firefox, Hata ayıklama, ie-fix, ie-hata, ie6, ie7, important, Opera, owen, XHTML
+tags: [Attribute, backslash, CSS, Çocuk-Seçicileri, Firefox, Hata ayıklama, ie-fix, ie-hata, ie6, ie7, important, Opera, owen, XHTML]
 ---
 
 [IE'de Hata Ayıklamak için şžartlı Yorumlar Kullanmak][] adlı makalede
@@ -166,11 +166,11 @@ da biz burada genel kabul görmüş yöntemleri yazmayı uygun bulduk.
 ## Kaynaklar
 
 -   [http://www.webdevout.net/articles/css_hacks.php][]
--   [http://swik.net/CSS/CSS+Hacks][]
+-   http://swik.net/CSS/CSS+Hacks
 -   [http://css-discuss.incutio.com/?page=CssHack][]
 -   [http://www.quirksmode.org/css/csshacks.html][]
 -   [http://tantek.com/CSS/Examples/boxmodelhack.html][tantek]
--   [http://www.albin.net/CSS/OwenHack.html][]
+-   http://www.albin.net/CSS/OwenHack.html
 
   [IE'de Hata Ayıklamak için şžartlı Yorumlar Kullanmak]: http://www.fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/
     "IE'de Hata Ayıklamak için şartlı Yorumlar Kullanmak"
@@ -182,7 +182,5 @@ da biz burada genel kabul görmüş yöntemleri yazmayı uygun bulduk.
   [Css de kodumuzu İE'den gizleme]: http://www.fatihhayrioglu.com/?p=31
   [IE'da min-width, min-height,max-width, max-height Kullanmak]: http://www.fatihhayrioglu.com/?p=182
   [http://www.webdevout.net/articles/css_hacks.php]: http://www.webdevout.net/articles/css_hacks.php
-  [http://swik.net/CSS/CSS+Hacks]: http://swik.net/CSS/CSS+Hacks
   [http://css-discuss.incutio.com/?page=CssHack]: http://css-discuss.incutio.com/?page=CssHack
   [http://www.quirksmode.org/css/csshacks.html]: http://www.quirksmode.org/css/csshacks.html
-  [http://www.albin.net/CSS/OwenHack.html]: http://www.albin.net/CSS/OwenHack.html

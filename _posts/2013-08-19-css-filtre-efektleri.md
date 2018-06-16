@@ -3,7 +3,7 @@ layout: post
 title: CSS Filtre Efektleri
 Date: 2013-08-19 14:00
 Category: CSS
-tags: filtre webkit css3 efekt
+tags: [filtre webkit css3 efekt]
 ---
 
 CSS filtreleri photoshop’a benzer filtreleri HTML elemanlarına uygulamamızı sağlıyor. Tek satır CSS kodu ile bu efektleri verebilmek çok hoş. CSS gittikçe web’in görselliğini tek başına karşılayacak bir yöne doğru gidiyor. Bu filtreler genelde resimler, ardalan resimleri ve kenar çizgilerine uygulanmaktadır.

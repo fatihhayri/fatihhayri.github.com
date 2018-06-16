@@ -3,11 +3,11 @@ layout: post
 title: 28 Ağustos 2007 Web&#039;den Seçme Haberler
 Date: 2007-08-28 10:46
 Category: Haberler
-tags: CSS, Haberler, jquery, sipru, WordPress
+tags: [CSS, Haberler, jquery, sipru, WordPress]
 ---
 
--   Çeşitli İletişim Formu Örnekleri .[Link][]
--   Web Gelişriciler için kaynaklar. [Link][1]
+-   Çeşitli İletişim Formu Örnekleri.
+-   Web Gelişriciler için kaynaklar.
 -   JQuery ile yapılmış flash benzeri hoş bir menü örneği. [Link][2]
 -   Türksat, KabloInternet hızını 6 Mbps’ye çıkarmış. [Link][3]
 -   Doğuş grubu Türkiye'nin ilk masaüstü TV platformunu çıkarmış. Beta
@@ -22,10 +22,6 @@ tags: CSS, Haberler, jquery, sipru, WordPress
 -   WordPress 2.3 Beta1 çıkmış. [Link][9]
 
 
-  [Link]: http://www.free-css-templates.com/webdesign/contact-forms-showcase/
-    "İletişim Formu Örnekleri"
-  [1]: http://www.realsoftwaredevelopment.com/2007/08/ultimate-web-de.html
-    "linkler"
   [2]: http://gmarwaha.com/blog/?p=7 "hoş menü"
   [3]: http://www.ntvmsnbc.com/news/418420.asp "6 Mbps"
   [4]: http://www.ntvmsnbc.com/sipru/ "Sipru"

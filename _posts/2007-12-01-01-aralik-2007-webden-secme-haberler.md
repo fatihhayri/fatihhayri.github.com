@@ -3,7 +3,7 @@ layout: post
 title: 01 Aralık 2007 Web&#039;den Seçme Haberler
 Date: 2007-12-01 17:42
 Category: Haberler
-tags: clearfix, e-posta, google reader, Haberler, web-form
+tags: [clearfix, e-posta, google reader, Haberler, web-form]
 ---
 
 -   CSS ve Javascript birleşimi ile oluşturulmuş bir css kütüphanesi

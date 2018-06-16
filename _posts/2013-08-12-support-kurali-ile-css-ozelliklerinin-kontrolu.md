@@ -3,7 +3,7 @@ layout: post
 title: support kuralı ile CSS özelliklerinin kontrolü
 Date: 2013-08-12 18:00
 Category: CSS
-tags: support-kuralı kontrol css
+tags: [support-kuralı kontrol css]
 ---
 
 Bir özelliğin tarayıcılar tarafından desteklenip desteklenmediğini genelde javascript ile kontrol ediyoruz. @support kuralı sayesinde artık CSS ile bu kontrolü yapabiliyoruz.
@@ -90,7 +90,7 @@ Yeni nesil tarayıcılar desteğini sunarken İnternet Explorer’ın ve mobil t
 * [http://davidwalsh.name/css-supports](http://davidwalsh.name/css-supports)
 * [http://www.sitepoint.com/supports-native-css-feature-detection/](http://www.sitepoint.com/supports-native-css-feature-detection/)
 * [http://www.inserthtml.com/2012/09/css3-conditional-statements/](http://www.inserthtml.com/2012/09/css3-conditional-statements/)
-* [http://docs.webplatform.org/wiki/css/atrules/@supports](http://docs.webplatform.org/wiki/css/atrules/@supports)
+* http://docs.webplatform.org/wiki/css/atrules/@supports
 
 [firefox]: /images/ff.png
 [chrome]: /images/ch.png

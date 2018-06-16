@@ -3,7 +3,7 @@ layout: post
 title: CSS ile üçgen ok yapmak
 Date: 2014-08-11 17:17
 Category: css
-tags: css ok
+tags: [css ok]
 ---
 
 CSS'in web'in görselliğini tek başına karşılama hedefi ve bu yönde bize kazandırdığı yöntemler biz kod yazarlarının elini güçlendiriyor. CSS3 ile bunu daha çok hissetmeye başladık.

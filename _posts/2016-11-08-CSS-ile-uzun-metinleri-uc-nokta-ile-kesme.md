@@ -3,7 +3,7 @@ layout: post
 title: CSS ile uzun metinleri üç nokta ile kesme
 Date: 2016-11-08 12:13
 Category: css
-tags: uzun-metin, üç-nok, kısaltma
+tags: [uzun-metin, üç-nok, kısaltma]
 ---
 
 

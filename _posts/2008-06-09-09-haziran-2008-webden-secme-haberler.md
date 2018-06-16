@@ -3,7 +3,7 @@ layout: post
 title: 09 Haziran 2008 web&#039;den seçme haberler
 Date: 2008-06-09 10:21
 Category: Haberler
-tags: Ajax, akordiyon, Google-Search, jquery, mailing, mootools, performans, Script injection, tipografi, web2.0
+tags: [Ajax, akordiyon, Google-Search, jquery, mailing, mootools, performans, Script injection, tipografi, web2.0]
 ---
 
 -   Html mailing nasıl kodlanır. [Bağlantı][]

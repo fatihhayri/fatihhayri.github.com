@@ -4,7 +4,7 @@ title: CSS ile  Stil Vermek
 Slug: css-ile-hr-stil-vermek
 Date: 2007-03-17 01:37
 Category: CSS, Web Standartları, XHTML
-tags: CSS, horizantal-rule, hr, Web Standartları, XHTML, yatay-çizgi
+tags: [CSS, horizantal-rule, hr, Web Standartları, XHTML, yatay-çizgi]
 ---
 
 CSS ile birlikte kodlama yaparken bir çok yerde <hr\> etiketi yerine
@@ -116,13 +116,11 @@ yaptığımızda bazı web tarayıcılarında kaymalara neden oluyor, bu sorunu
 -   [http://www.sovavsiti.cz/css/hr.html][]
 -   [http://sonspring.com/journal/styling-hr][]
 -   [http://bitesizestandards.com/bites/styling-horizontal-rules-with-css][]
--   [http://www.blakems.com/experimental/hr/][]
--   [http://www.saila.com/usage/tips/defn.shtml?hr][]
+-   http://www.blakems.com/experimental/hr
+-   http://www.saila.com/usage/tips/defn.shtml?hr
 -   [http://www.sitepoint.com/examples/hr/][]
 
   [http://www.sovavsiti.cz/css/hr.html]: http://www.sovavsiti.cz/css/hr.html
   [http://sonspring.com/journal/styling-hr]: http://sonspring.com/journal/styling-hr
   [http://bitesizestandards.com/bites/styling-horizontal-rules-with-css]: http://bitesizestandards.com/bites/styling-horizontal-rules-with-css
-  [http://www.blakems.com/experimental/hr/]: http://www.blakems.com/experimental/hr/
-  [http://www.saila.com/usage/tips/defn.shtml?hr]: http://www.saila.com/usage/tips/defn.shtml?hr
   [http://www.sitepoint.com/examples/hr/]: http://www.sitepoint.com/examples/hr/

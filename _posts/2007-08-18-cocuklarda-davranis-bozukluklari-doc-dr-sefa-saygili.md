@@ -3,7 +3,7 @@ layout: post
 title: Çocuklarda Davranış Bozuklukları - Doç. Dr. Sefa Saygılı
 Date: 2007-08-18 15:50
 Category: Kitaplar
-tags: Çocuk bakımı, çocuk yetiştirme, Kitaplar
+tags: [Çocuk bakımı, çocuk yetiştirme, Kitaplar]
 ---
 
 ![Çocuklarda Davranış Bozuklukları][]Bu kitabı 2. yeğenim doğduğunda

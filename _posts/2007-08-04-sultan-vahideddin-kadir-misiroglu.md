@@ -3,7 +3,7 @@ layout: post
 title: Sultan Vahideddin - Kadir Mısıroğlu
 Date: 2007-08-04 12:27
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![Sultan Vahideddin - Kadir Mısıroğlu][]Okullarda oktulan tarih

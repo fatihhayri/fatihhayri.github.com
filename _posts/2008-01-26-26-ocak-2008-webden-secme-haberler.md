@@ -3,7 +3,7 @@ layout: post
 title: 26 Ocak 2008 Web&#039;den Seçme Haberler
 Date: 2008-01-26 17:32
 Category: Haberler
-tags: ASP.NET, CSS, em, Eric Meyer, facebook, feedburner, Haberler, html5, ie8, jquery, Visual-Studio, WordPress
+tags: [ASP.NET, CSS, em, Eric Meyer, facebook, feedburner, Haberler, html5, ie8, jquery, Visual-Studio, WordPress]
 ---
 
 -   HTML 5 çıktı. Uzun zamandır üzerinde çalışılan 5. sürümü sonunda

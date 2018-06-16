@@ -3,7 +3,7 @@ layout: post
 title: 18 Eylül 2007 Web&#039;den Seçme Haberler
 Date: 2007-09-18 21:43
 Category: Haberler
-tags: Ajax, ASP.NET, google-belgeler-etablolar, Haberler, jquery, php, png, sunum
+tags: [Ajax, ASP.NET, google-belgeler-etablolar, Haberler, jquery, php, png, sunum]
 ---
 
 -   jquery örnekleri. [Link][]

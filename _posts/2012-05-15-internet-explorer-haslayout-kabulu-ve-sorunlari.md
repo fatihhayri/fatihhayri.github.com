@@ -3,7 +3,7 @@ layout: post
 title: İnternet Explorer hasLayout Kabulü ve Sorunları
 Date: 2012-05-15 17:44
 Category: CSS, XHTML
-tags: hasLayout, ie7, ie8, microsoft, zoom:1
+tags: [hasLayout, ie7, ie8, microsoft, zoom]
 ---
 
 **Makaleye başlamadan önce Internet Explorer 8 standart modda hasLayout

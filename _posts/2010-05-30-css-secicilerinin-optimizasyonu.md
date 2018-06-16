@@ -3,7 +3,7 @@ layout: post
 title: CSS Seçicilerinin Optimizasyonu
 Date: 2010-05-30 16:26
 Category: CSS
-tags: Evrensel-Seçiciler, Id-Seçicisi, optimize, performans, seçici optimizasyonu, Torun-Seçicisi
+tags: [Evrensel-Seçiciler, Id-Seçicisi, optimize, performans, seçici optimizasyonu, Torun-Seçicisi]
 ---
 
 Bu konuyu hiç yazmayı düşünmüyordum, [Writing Efficient CSS for use in the Mozilla UI][] makalesini okuyan kadar. Bu makaleyi okuduğumda bir

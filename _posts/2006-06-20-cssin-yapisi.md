@@ -3,7 +3,7 @@ layout: post
 title: CSS&#039;in Yapısı
 Date: 2006-06-20 23:24
 Category: CSS, Web Standartları, XHTML
-tags: CSS, css yapı, etiket, Evrensel-Seçiciler, Gruplama, Id-Seçicisi, özellik, Sınıf Seçicisi, Web Standartları, XHTML
+tags: [CSS, css yapı, etiket, Evrensel-Seçiciler, Gruplama, Id-Seçicisi, özellik, Sınıf Seçicisi, Web Standartları, XHTML]
 ---
 
 ## CSS'in Yapısı

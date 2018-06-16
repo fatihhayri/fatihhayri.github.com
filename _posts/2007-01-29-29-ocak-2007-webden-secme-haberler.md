@@ -3,7 +3,7 @@ layout: post
 title: 29 Ocak 2007 WEb&#039;den seçme haberler
 Date: 2007-01-29 21:46
 Category: Haberler
-tags: Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, youtube
+tags: [Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, youtube]
 ---
 
 -   Bu site çok güzel gerekli linkleri bir araya topluyor. şžimdide
@@ -23,7 +23,7 @@ tags: Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, you
     kararlı sürümü yeni özellikleri ile birlikte çıkmış. [Link][8]
 -   Youtube videoları artık Google Video'da aranabilecekmiş. [Link][9]
 -   TenoSeyir'de WordPress 2.1 hakkında güzel bir makale yayınlanmış
-    bilgi almak ve geçiş yapmak isteyene okuması önerilir. [Link][10]
+    bilgi almak ve geçiş yapmak isteyene okuması önerilir.
 -   Ajax ile ilgili Türkçe site eksikliği var. Ajax-tr bu boşluğu
     kapatır. Ajax-tr açılmış [Link][11]
 
@@ -43,7 +43,4 @@ tags: Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, you
     "Link"
   [8]: http://getfirebug.com/ "Link"
   [9]: http://googleblog.blogspot.com/2007/01/look-ahead-at-google-video-and-youtube.html
-    "Link"
-  [10]: http://feeds.feedburner.com/%7Er/TeknoSeyir/%7E3/81798391/
-    "Link"
   [11]: http://ajax-tr.com/ "Link"

@@ -3,7 +3,7 @@ layout: post
 title: 11 Nisan 2007 Web&#039;den seçme haberler
 Date: 2007-04-11 15:48
 Category: Haberler
-tags: CSS, Dreamweaver, Haberler, Javascript, WordPress, yahoo
+tags: [CSS, Dreamweaver, Haberler, Javascript, WordPress, yahoo]
 ---
 
 -   Azer Koçulu'nun sitesini ben yeni gördüm ama güzel ve farklı
@@ -21,7 +21,7 @@ tags: CSS, Dreamweaver, Haberler, Javascript, WordPress, yahoo
     [Link][6]
 -   Yahoo javascript kütüphanesi güncellenmiş. YUI Version 2.2.1 hatalar
     giderilmiş ve yeni bazı özellikler eklenmiş. [Link][7]
--   WordPress taşımak hakkında yazılmış güzel bir makale. [Link][8]
+-   WordPress taşımak hakkında yazılmış güzel bir makale.
 
 
   [Link]: http://azer.kodfabrik.com/ "Link"
@@ -34,5 +34,3 @@ tags: CSS, Dreamweaver, Haberler, Javascript, WordPress, yahoo
   [5]: http://www.hasanyalcin.com/?p=262 "Link"
   [6]: http://www.oceangray.net/dreamweaver-wordpress-extension/ "Link"
   [7]: http://yuiblog.com/blog/2007/04/09/yui-221-released/ "Link"
-  [8]: http://turbochargedcms.com/2007/04/moving-your-wordpress-blog-to-a-different-host-and-address/
-    "Link"

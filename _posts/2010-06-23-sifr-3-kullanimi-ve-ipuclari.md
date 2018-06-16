@@ -3,7 +3,7 @@ layout: post
 title: sIFR 3 Kullanımı ve İpuçları
 Date: 2010-06-23 22:23
 Category: CSS, XHTML
-tags: ipuçları, metin yerine resim koyma, sFIR
+tags: [ipuçları, metin yerine resim koyma, sFIR]
 ---
 
 ![][100]

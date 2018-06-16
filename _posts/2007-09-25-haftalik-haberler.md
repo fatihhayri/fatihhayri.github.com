@@ -3,7 +3,7 @@ layout: post
 title: Haftalık haberler
 Date: 2007-09-25 22:02
 Category: Haberler
-tags: ASP.NET, css3.0, Firefox, float, Haberler, Javascript, Web Standartları
+tags: [ASP.NET, css3.0, Firefox, float, Haberler, Javascript, Web Standartları]
 ---
 
 -   Javascript ile resimlerimize sayfa kıvrımı eklemek. [Link][]

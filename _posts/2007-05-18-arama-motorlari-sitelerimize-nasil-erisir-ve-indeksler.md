@@ -3,7 +3,7 @@ layout: post
 title: Arama motorları sitelerimize nasıl erişir ve indeksler
 Date: 2007-05-18 18:53
 Category: Web Standartları
-tags: Web Standartları
+tags: [Web Standartları]
 ---
 
 Posted by Dan Crow, Product Manager, Çeviri: *eDe*

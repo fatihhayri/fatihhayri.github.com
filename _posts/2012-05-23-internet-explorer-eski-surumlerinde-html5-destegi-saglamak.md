@@ -3,7 +3,7 @@ layout: post
 title: İnternet Explorer Eski Sürümlerinde HTML5 Desteği Sağlamak
 Date: 2012-05-23 13:40
 Category: HTML5
-tags: html5shiv, ie6, ie7, ie8, problem
+tags: [html5shiv, ie6, ie7, ie8, problem]
 ---
 
 HTML5 ve özellikleri hayatımız gireli bayağı bir zaman oluyor. Ancak

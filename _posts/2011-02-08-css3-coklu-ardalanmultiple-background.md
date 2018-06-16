@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Çoklu Ardalan(Multiple Background)
 Date: 2011-02-08 23:03
 Category: CSS
-tags: Alıntı, css3, çoklu ardalan, multiple background, paralaks
+tags: [Alıntı, css3, çoklu ardalan, multiple background, paralaks]
 ---
 
 CSS3 standart geliştiricileri önceki sürümlerde eksik olan birçok sorunu

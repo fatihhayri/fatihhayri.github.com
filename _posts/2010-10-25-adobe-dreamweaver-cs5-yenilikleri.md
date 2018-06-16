@@ -3,7 +3,7 @@ layout: post
 title: Adobe Dreamweaver CS5 Yenilikleri
 Date: 2010-10-25 22:17
 Category: Haberler
-tags: adobe, cs5, CSS, css3, Dreamweaver, editör, firebug, html, html5
+tags: [adobe, cs5, CSS, css3, Dreamweaver, editör, firebug, html, html5]
 ---
 
 Adobe Dreamweaver editör olarak beğenerek kullandığım bir editör.

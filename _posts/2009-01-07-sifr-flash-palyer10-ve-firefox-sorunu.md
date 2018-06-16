@@ -3,7 +3,7 @@ layout: post
 title: sIFR, Flash Player10 ve Firefox sorunu
 Date: 2009-01-07 14:37
 Category: CSS, Javascript, Web Standartları, XHTML
-tags: Firefox, Flash Player, safari, sIFR
+tags: [Firefox, Flash Player, safari, sIFR]
 ---
 
 Bir çok projemde sIFR kullanıyorum. Yaklaşık 1-2 ay önce Flash Player 10

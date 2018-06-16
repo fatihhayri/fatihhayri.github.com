@@ -3,7 +3,7 @@ layout: post
 title: Arayüz Geliştiricilerin Görev Tanımı
 Date: 2009-11-02 23:36
 Category: CSS, Web Standartları, XHTML
-tags: arama motoru, arayüz-geliştiriciler, CSS, Erişebilirlik, Javascript
+tags: [arama motoru, arayüz-geliştiriciler, CSS, Erişebilirlik, Javascript]
 ---
 
 Şu anki bulunduğum durum ve [FirendFeed'deki Arayüz Geliştiricileri][]

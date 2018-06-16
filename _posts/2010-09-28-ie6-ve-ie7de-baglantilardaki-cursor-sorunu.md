@@ -3,7 +3,7 @@ layout: post
 title: IE6 ve IE7&#039;de bağlantılardaki cursor sorunu
 Date: 2010-09-28 22:24
 Category: CSS, XHTML
-tags: cursor sorunu, esnek yapılı butonlar, ie6, ie7, sliding door, sorun
+tags: [cursor sorunu, esnek yapılı butonlar, ie6, ie7, sliding door, sorun]
 ---
 
 Aslında başlığı nasıl atacağımı şaşırdığım için kısa bir başlık attım.

@@ -3,7 +3,7 @@ layout: post
 title: 21 Ocak Web&#039;den Seçme Haberler
 Date: 2008-01-21 21:14
 Category: Haberler
-tags: .net, CSS, google, Haberler, Javascript, jquery, table, WordPress
+tags: [.net, CSS, google, Haberler, Javascript, jquery, table, WordPress]
 ---
 
 -   Tabloları daha anlaşılır yapmak için fare imleci hangi satır üzerine

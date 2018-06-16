@@ -4,7 +4,7 @@ title: CSS İpuçları  5 &#58; CSS seçicilerini tanımlarken küçük-büyük 
 Slug: secici-isimlerinde-kucuk-buyuk-harfe-duyarlilik
 Date: 2006-07-20 01:18
 Category: CSS
-tags: CSS, html, küçük büyük harf, seçici, selector
+tags: [CSS, html, küçük büyük harf, seçici, selector]
 ---
 
 Eğer XHTML ile CSS kullanıyorsak seçici(selector) olarak kullandığımız

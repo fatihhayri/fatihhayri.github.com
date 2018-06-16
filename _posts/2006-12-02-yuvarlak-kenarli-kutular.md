@@ -3,7 +3,7 @@ layout: post
 title: Yuvarlak Kenarlı Kutular
 Date: 2006-12-02 16:41
 Category: CSS, Web Standartları, XHTML
-tags: CSS, esnek, kutular, Web Standartları, XHTML, yuvarlak kenar
+tags: [CSS, esnek, kutular, Web Standartları, XHTML, yuvarlak kenar]
 ---
 
 CSS ile XHTML kodlaması yaparken daha çok köşeli kutular kullanılır.

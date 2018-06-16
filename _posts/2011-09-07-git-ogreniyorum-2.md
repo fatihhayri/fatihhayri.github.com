@@ -4,7 +4,7 @@ title: Git Öğreniyorum -2
 Slug: git-ogreniyorum-2
 Date: 2011-09-07 21:40
 Category: Haberler
-tags: git, macos, sürüm kontrol sistemi, terminal
+tags: [git, macos, sürüm kontrol sistemi, terminal]
 ---
 
 Daha önce [Sürüm Kontrol Sistemi Git][] adlı bir makale yazmıştım,

@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap Izgara (Grid) Sistemi - 2
 Date: 2016-05-20 18:48
 Category: css
-tags: bootstrap ızgara-sistemi sayfa-planı
+tags: [bootstrap ızgara-sistemi sayfa-planı]
 ---
 
 [İlk makalede](/bootstrap-izgara-Grid-sistemi-1/) genel ızgara yapısı ve bootstrap ızgara yapısının ana elemanlarından bahsettim. Bu makalede bootstrap ızgara yapısının detaylarına değineceğim.

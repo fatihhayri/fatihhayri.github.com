@@ -3,7 +3,7 @@ layout: post
 title: Web&#039;de Yazı Tipi Sorunları ve Google Font API
 Date: 2010-06-09 22:20
 Category: CSS, Web Standartları
-tags: aliasing, font-face, google font api, sorunlar, yazı tipi, yazı tipi gömme
+tags: [aliasing, font-face, google font api, sorunlar, yazı tipi, yazı tipi gömme]
 ---
 
 ![][100]Web sitelerini oluşturan öğelerden en önemlisi muhakkak yazılardır.

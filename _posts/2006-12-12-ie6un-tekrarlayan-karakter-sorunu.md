@@ -3,7 +3,7 @@ layout: post
 title: IE6&#039;un Tekrarlayan Karakter Sorunu
 Date: 2006-12-12 15:50
 Category: Ajax, ASP.NET, CSS, Javascript, Web Standartları, XHTML
-tags: comment, CSS, fix, tekralayan-karakter, Web Standartları, XHTML, yorum
+tags: [comment, CSS, fix, tekralayan-karakter, Web Standartları, XHTML, yorum]
 ---
 
 Bu hata birden fazla float uygulanmış içiçe elementlerde meydana gelir.
@@ -51,7 +51,7 @@ Bu sorun [IE7][] versiyonunda giderilmiştir.
 ## Kaynaklar
 
 -   [http://www.positioniseverything.net/explorer/dup-characters.html][]
--   [http://www.friendsofed.com/][]
+-   http://www.friendsofed.com
 
 
   [tıklayınız.]: /dokumanlar/ie_tekrarlayan_karakter_sorunu_ornek.html
@@ -60,4 +60,3 @@ Bu sorun [IE7][] versiyonunda giderilmiştir.
   [1]: /dokumanlar/ie_tekrarlayan_karakter_sorunu_ornek2.html
   [IE7]: http://www.fatihhayrioglu.com/internet-explorer-7-ve-css/
   [http://www.positioniseverything.net/explorer/dup-characters.html]: http://www.positioniseverything.net/explorer/dup-characters.html
-  [http://www.friendsofed.com/]: http://www.friendsofed.com/book.html?isbn=1590596145

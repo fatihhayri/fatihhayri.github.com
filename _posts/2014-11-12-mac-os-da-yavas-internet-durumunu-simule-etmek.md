@@ -3,7 +3,7 @@ layout: post
 title: Mac OS'da Yavaş İnternet Durumunu Simüle Etmek
 Date: 2014-11-12 18:05
 Category: genel
-tags: Network Link Conditioner
+tags: [Network Link Conditioner]
 ---
 
 Biz web geliştiricilerin kullandığı makineler genelde genel ortalamaya nispeten iyi makinelerdir. Normal kullanıcının yaşadığı bazı sorunları biz kendi makinemizde yaşamayız. Genelde kod yazarının gelen soruna karşı cevabı "abi bende sorun olmuyor"

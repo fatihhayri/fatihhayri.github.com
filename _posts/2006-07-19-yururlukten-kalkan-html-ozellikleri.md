@@ -4,7 +4,7 @@ title: CSS İpuçları  4 &#58; CSS ile birlikte yürürlükten kalkan HTML öze
 Slug: yururlukten-kalkan-html-ozellikleri
 Date: 2006-07-19 00:35
 Category: CSS, XHTML
-tags: align, bgcolor, CSS, name, text, XHTML
+tags: [align, bgcolor, CSS, name, text, XHTML]
 ---
 
 CSS kullanımı ile tedavülden kalkan veya kullanımı azalan özellikleri

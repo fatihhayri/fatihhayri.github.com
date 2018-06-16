@@ -3,7 +3,7 @@ layout: post
 title: currentColor değeri
 Date: 2015-05-25 16:00
 Category: css
-tags: css currentColor değişken inherit
+tags: [css currentColor değişken inherit]
 ---
 
 

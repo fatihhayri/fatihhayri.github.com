@@ -3,7 +3,7 @@ layout: post
 title: 23 Aralık 2006&#039;dan Seçme Web Haberleri
 Date: 2006-12-25 00:38
 Category: Haberler
-tags: adobe, CSS, google, Javascript, Netwibes
+tags: [adobe, CSS, google, Javascript, Netwibes]
 ---
 
 -   3 kolay adımla Karmaşık Likit Tasarım yapmayı anlatan güzel bir

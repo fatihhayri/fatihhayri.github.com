@@ -3,7 +3,7 @@ layout: post
 title: AngularJs'de toggle ve toggleClass
 Date: 2015-04-20 16:41
 Category: angularjs
-tags: toggle toggleClass ng-class
+tags: [toggle toggleClass ng-class]
 ---
 
 Genelde jquery'den angular'a geçtiğimiz için daha önceki alışkanlıkları ve kolaylıkları angular'da da arıyoruz. Bunlardan bir taneside **toggle** ve **toggleClass**.

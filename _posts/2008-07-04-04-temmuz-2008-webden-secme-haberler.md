@@ -3,7 +3,7 @@ layout: post
 title: 04 Temmuz 2008 web&#039;den seçme haberler
 Date: 2008-07-04 17:06
 Category: Haberler
-tags: Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, Tatil, WordPress, wordpress güvenlik
+tags: [Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, Tatil, WordPress, wordpress güvenlik]
 ---
 
 -   CSS Firefox 3 filtresi. [Bağlantı][]

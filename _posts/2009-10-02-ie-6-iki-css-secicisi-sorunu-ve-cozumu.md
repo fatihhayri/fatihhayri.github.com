@@ -3,7 +3,7 @@ layout: post
 title: İE 6 iki CSS seçicisi Sorunu ve Çözümü
 Date: 2009-10-02 14:42
 Category: CSS, XHTML
-tags: hata, Hata ayıklama, ie6, iki-seçici-sorunu
+tags: [hata, Hata ayıklama, ie6, iki-seçici-sorunu]
 ---
 
 Yine bir ie6 sorunu ile karşınızdayız. Microsoft ie6 kullananları

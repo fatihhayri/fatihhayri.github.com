@@ -3,7 +3,7 @@ layout: post
 title: web 2.0 nedir hakkında yazılar
 Date: 2006-11-21 16:30
 Category: Haberler
-tags: internet, tagging, web2.0
+tags: [internet, tagging, web2.0]
 ---
 
 web 2.0 nedir diye düşünüyordum. Bu gün ceyhun da sorunca gerçekten ne

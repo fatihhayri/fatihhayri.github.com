@@ -3,7 +3,7 @@ layout: post
 title: Bu Millet Neden Ağlar - O.Yüksel SERDENGEÇTİ
 Date: 2007-03-26 21:29
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![bumillet.jpg][]Milletimizin çektiği çileleri, 1940'lardaki dünya

@@ -3,7 +3,7 @@ layout: post
 title: 09 Nisan 2008 web&#039;den seçme haberler
 Date: 2008-04-09 20:00
 Category: Haberler
-tags: css teknikleri, GQuery, Javascript, WordPress
+tags: [css teknikleri, GQuery, Javascript, WordPress]
 ---
 
 -   Google GWT ve jquery birleştirip GQuery doğmuş. [Bağlantı][]

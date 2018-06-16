@@ -3,7 +3,7 @@ layout: post
 title: WordPress İpuçları - 1
 Date: 2006-07-26 23:12
 Category: WordPress
-tags: daha-fazla-linki, WordPress
+tags: [daha-fazla-linki, WordPress]
 ---
 
 Yazdığınız kodların anasayfada özeti görünsün daha sonrası tıklayınca

@@ -3,7 +3,7 @@ layout: post
 title: Türk Dış Politikası Belirsizlik Döneminde - İan O. Lesser/ F. Stephen Larrabee
 Date: 2007-04-28 12:37
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![Türk Dış Politikası Belirsizlik Döneminde][]ABD'deki ünlü

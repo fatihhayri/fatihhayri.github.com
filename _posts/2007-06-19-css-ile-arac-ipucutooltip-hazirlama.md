@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Araç İpucu(Tooltip) Hazırlama
 Date: 2007-06-19 08:54
 Category: CSS, Web Standartları, XHTML
-tags: açıklama-balonu, araç-ipucu, CSS, Haberler, tooltip, Web Standartları, XHTML
+tags: [açıklama-balonu, araç-ipucu, CSS, Haberler, tooltip, Web Standartları, XHTML]
 ---
 
 Bazı web tarayıcıları title tanımlı nesnelerin üzerine gelince

@@ -3,7 +3,7 @@ layout: post
 title: İlk Osmanlılar ve Batı Anadolu Beylikler Dünyası - Feridun M. Emecen
 Date: 2007-01-30 21:54
 Category: Kitaplar
-tags: beylikler, Feridun Emecen, Kitaplar, Orhan-gazi, Osman-gazi, osmanlı
+tags: [beylikler, Feridun Emecen, Kitaplar, Orhan-gazi, Osman-gazi, osmanlı]
 ---
 
 ![][100] Kitap Osmanlıların ilk dönemlerini anlatan bir eser. Beylikler

@@ -3,7 +3,7 @@ layout: post
 title: WP:Popülarite Eklentisini Kurulumu ve Ayarlarının yapılması
 Date: 2006-11-07 09:25
 Category: WordPress
-tags: en çok, hit, oy, popularity-contest, WordPress
+tags: [en çok, hit, oy, popularity-contest, WordPress]
 ---
 
 http://alexking.org/projects/wordpress/plugins/popularity-contest.zip

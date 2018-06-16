@@ -3,7 +3,7 @@ layout: post
 title: 26 Mayıs 2008 web&#039;den seçme haberler
 Date: 2008-05-26 14:35
 Category: Haberler
-tags: akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explorer, jquery, mesaj kutuları, tablo
+tags: [akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explorer, jquery, mesaj kutuları, tablo]
 ---
 
 -   CSS ile düzenlenmiş tablolar. [Bağlantı][]

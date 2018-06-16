@@ -3,7 +3,7 @@ layout: post
 title: 05 Haziran 2007 Web&#039;den Seçme Haberler
 Date: 2007-06-05 09:45
 Category: Haberler
-tags: CSS, google, Haberler, Javascript, microsoft, tooltip, XHTML
+tags: [CSS, google, Haberler, Javascript, microsoft, tooltip, XHTML]
 ---
 
 -   Microsoft bilgisayar kullanma mantığımızı değiştiriyor. [Link][]

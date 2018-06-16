@@ -3,7 +3,7 @@ layout: post
 title: Sultan II. Abdülhamid Han&#039;ın Notları - Dr. Alaeddin Yalçınkaya
 Date: 2007-03-21 23:03
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![Sultan II. Abdülhamid Han’ın Notları][]Sultan II. Abdülhamid

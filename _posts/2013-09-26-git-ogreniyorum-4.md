@@ -3,7 +3,7 @@ layout: post
 title: Git Öğreniyorum - 4
 Date: 2013-09-26 14:59
 Category: Git
-tags: git, ipuçları, git-reset, git-stash, gitignore
+tags: [git, ipuçları, git-reset, git-stash, gitignore]
 ---
 
 ## 1- .gitignore kullanımı

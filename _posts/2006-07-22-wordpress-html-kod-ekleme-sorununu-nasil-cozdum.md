@@ -3,7 +3,7 @@ layout: post
 title: WordPress HTML kod ekleme sorununu nasıl çözdüm
 Date: 2006-07-22 21:02
 Category: WordPress
-tags: WordPress, wysiwtg, XHTML
+tags: [WordPress, wysiwtg, XHTML]
 ---
 
 WordPress'de HTML kod ekleyince bu kodu yorumlayıp sayfaya o şekilde

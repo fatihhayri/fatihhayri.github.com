@@ -3,7 +3,7 @@ layout: post
 title: 11 Haziran 2008 web&#039;den seçme haberler
 Date: 2008-06-11 13:31
 Category: Haberler
-tags: css form, css stil değiştir, Firefox 3, jquery, WordPress, wordpress tema
+tags: [css form, css stil değiştir, Firefox 3, jquery, WordPress, wordpress tema]
 ---
 
 -   CSS ile sade ve temiz Form yapmak. [Bağlantı][]

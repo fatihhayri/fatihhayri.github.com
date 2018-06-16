@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Basit Şekilde Fare Üzerine Gelince(Rollover) Resim Değişimi Yapmak
 Date: 2008-11-10 10:48
 Category: CSS, Web Standartları, XHTML
-tags: fare üzerine gelince, link, resim, rollover
+tags: [fare üzerine gelince, link, resim, rollover]
 ---
 
 Daha önce bu konuya [Resimli Menüler][] kısmında anlatmıştım, ama orada

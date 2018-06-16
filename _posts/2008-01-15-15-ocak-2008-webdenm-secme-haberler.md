@@ -3,7 +3,7 @@ layout: post
 title: 15 Ocak 2008 Web&#039;den Seçme Haberler
 Date: 2008-01-15 22:38
 Category: Haberler
-tags: acid, CSS, google maps, Haberler, jquery, lightbox, seo
+tags: [acid, CSS, google maps, Haberler, jquery, lightbox, seo]
 ---
 
 -   Birçok javascript kütüphanesi css seçicilerinin tarayıcı sorunlarını

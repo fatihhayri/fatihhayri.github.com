@@ -3,7 +3,7 @@ layout: post
 title: Internet Explorer 6 için saydam PNG desteği
 Date: 2008-04-28 09:02
 Category: Haberler, Web Standartları
-tags: AlphaImageLoader, ie6, internet explorer, saydam png, transparent png
+tags: [AlphaImageLoader, ie6, internet explorer, saydam png, transparent png]
 ---
 
 "PNG, "Taşınabilir Ağ Grafiği" anlamındaki (Portable Network Graphics)

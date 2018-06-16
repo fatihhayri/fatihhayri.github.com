@@ -3,7 +3,7 @@ layout: post
 title: Kaynak kod haritaları (Source Map) + Chrome Devtools ile Sass kodlarına hakim olmak
 Date: 2015-09-15 12:03
 Category: css
-tags: sass css-önişlemcileri kaynak-kod-haritaları chrome devtools
+tags: [sass css-önişlemcileri kaynak-kod-haritaları chrome devtools]
 ---
 
 Sass'ın ve diğer CSS önişlemcilerinin başlangıçtaki sorunlarından biri de Chrome Developer Tools ve Firebug gibi araçlar ile öğeyi incele dediğimizde kaynak dosyadaki yerini değilde üretilen .css dosyasındaki yerini göstermesidir. Buda bizim için büyük bir sorun.

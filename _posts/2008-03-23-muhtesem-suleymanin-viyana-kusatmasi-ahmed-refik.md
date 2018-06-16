@@ -3,7 +3,7 @@ layout: post
 title: Muhteşem Süleyman&#039;ın Viyana Kuşatması - Ahmed Refik
 Date: 2008-03-23 22:27
 Category: Kitaplar
-tags: Ahmet Refik, kuşatma, Muhteşem Süleyman, osmanlı, Viyana kuşatması, zafer
+tags: [Ahmet Refik, kuşatma, Muhteşem Süleyman, osmanlı, Viyana kuşatması, zafer]
 ---
 
 ![Muhteşem Süleyman’ın Viyana Kuşatması - Ahmed Refik][]Kitap

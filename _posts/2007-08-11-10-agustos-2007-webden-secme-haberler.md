@@ -3,7 +3,7 @@ layout: post
 title: 11 Ağustos 2007 Web&#039;den Seçme Haberler
 Date: 2007-08-11 11:41
 Category: Haberler
-tags: ASP.NET, CSS, Haberler, html, regular-expression
+tags: [ASP.NET, CSS, Haberler, html, regular-expression]
 ---
 
 <ul>

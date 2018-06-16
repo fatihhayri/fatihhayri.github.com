@@ -3,7 +3,7 @@ layout: post
 title: Google Analitics Asenkron Kod&#039;a Geçiş
 Date: 2010-02-15 12:34
 Category: Haberler, Javascript
-tags: Google Analytics, Javascript, site izleme
+tags: [Google Analytics, Javascript, site izleme]
 ---
 
 Bir çok sitede site trafiğini izlemek için insanlar google analitics

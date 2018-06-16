@@ -3,7 +3,7 @@ layout: post
 title: CSS Birimleri
 Date: 2006-07-25 00:25
 Category: CSS
-tags: CSS, renk-birimleri, url-birimleri, uzunlu-birimleri, yüzde-birimleri
+tags: [CSS, renk-birimleri, url-birimleri, uzunlu-birimleri, yüzde-birimleri]
 ---
 
 Bu makalede CSS'de kullanılan tüm birimleri göreceğiz. Birimler genelde

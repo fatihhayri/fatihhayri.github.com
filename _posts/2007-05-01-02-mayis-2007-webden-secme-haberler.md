@@ -3,7 +3,7 @@ layout: post
 title: 02 Mayıs 2007 Web&#039;den seçme haberler
 Date: 2007-05-01 23:26
 Category: Haberler
-tags: Haberler
+tags: [Haberler]
 ---
 
 -   Html/Xhtml dokümanlarının garip modda(quirks) nasıl yorumlar

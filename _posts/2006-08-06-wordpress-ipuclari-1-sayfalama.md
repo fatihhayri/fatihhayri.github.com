@@ -3,7 +3,7 @@ layout: post
 title: WordPress İpuçları - 3 &#58; Konuları Sayfalama
 Date: 2006-08-06 13:31
 Category: WordPress
-tags: eklenti, sayfalama, WordPress
+tags: [eklenti, sayfalama, WordPress]
 ---
 
 ![Sayfalama][]WoprdPress'de girdiğimiz konuların sayfalanması için

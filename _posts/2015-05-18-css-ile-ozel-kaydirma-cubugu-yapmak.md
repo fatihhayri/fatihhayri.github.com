@@ -3,7 +3,7 @@ layout: post
 title: CSS İle Özel Kaydırma Çubuğu Yapmak
 Date: 2015-05-18 16:00
 Category: css
-tags: css kaydırma-çubuğu -webkit
+tags: [css kaydırma-çubuğu -webkit]
 ---
 
 Daha önce yazacaktım ama desteği çok düşüktü. Webkit'in %82(mobil + web) desteğinden sonra uygulanabilirliği arttı. Ben Firefox'tan destek bekledim ama ondan ses çıkmadı. 
@@ -67,7 +67,7 @@ Bu sözde sınıfları tanımlamak yerine örnekleri inceleyerek daha iyi anlaya
  - [http://stackoverflow.com/a/14150577/296373](http://stackoverflow.com/a/14150577/296373)
  - [http://www.hongkiat.com/blog/css-scroll-bar/](http://www.hongkiat.com/blog/css-scroll-bar/)
  - [http://webdesign.tutsplus.com/articles/quick-tip-styling-scrollbars-to-match-your-ui-design--webdesign-9430](http://webdesign.tutsplus.com/articles/quick-tip-styling-scrollbars-to-match-your-ui-design--webdesign-9430)
- - [http://mikethedj4.github.io/Webkit-Scrollbar-Generator/](http://mikethedj4.github.io/Webkit-Scrollbar-Generator/)
+ - http://mikethedj4.github.io/Webkit-Scrollbar-Generator/
  - [http://beautifulpixels.com/goodies/create-custom-webkit-scrollbar/](http://beautifulpixels.com/goodies/create-custom-webkit-scrollbar/)
  - http://almaer.com/blog/creating-custom-scrollbars-with-css-how-css-isnt-great-for-every-task
  - [http://gs.statcounter.com/#all-browser_version_partially_combined-TR-monthly-201502-201504-bar](http://gs.statcounter.com/#all-browser_version_partially_combined-TR-monthly-201502-201504-bar)

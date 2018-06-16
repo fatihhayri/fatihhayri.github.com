@@ -3,7 +3,7 @@ layout: post
 title: WordPress İpuçları - 2&#58; Çöp(spam) Yorumları nasıl engelledim?
 Date: 2006-08-02 23:28
 Category: WordPress
-tags: WordPress
+tags: [WordPress]
 ---
 
 WordPress kurduğumdan beri her gün istisnasız çöp yorum geliyordu. Bunu

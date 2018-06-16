@@ -3,7 +3,7 @@ layout: post
 title: String.split() Metodu
 Date: 2006-12-22 14:34
 Category: Javascript
-tags: Javascript, regular-expression, split, String.split()-Metodu
+tags: [Javascript, regular-expression, split, String.split()-Metodu]
 ---
 
 Split metodu, uygulandığı string'i parçalara böler ve bu parçaları bir

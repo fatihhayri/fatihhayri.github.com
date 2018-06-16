@@ -3,7 +3,7 @@ layout: post
 title: Sql&#039;de birden fazla kritere göre sıralamak
 Date: 2006-11-01 13:02
 Category: Sql
-tags: order-by, sıralama, Sql
+tags: [order-by, sıralama, Sql]
 ---
 
 Bu gün başıma geldide öğrendim ve sizlerle paylaşmak istedim. Sql'de bir

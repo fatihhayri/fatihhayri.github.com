@@ -3,7 +3,7 @@ layout: post
 title: Adobe Creative Suite 4 çıktı
 Date: 2008-09-25 11:41
 Category: Haberler
-tags: adobe, Dreamweaver, Fireworks, Photoshop
+tags: [adobe, Dreamweaver, Fireworks, Photoshop]
 ---
 
 Adobe Creative Suite 4 benim açımdan sadece Dreamweaver önemli.

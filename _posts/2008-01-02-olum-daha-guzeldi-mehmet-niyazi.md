@@ -3,7 +3,7 @@ layout: post
 title: Ölüm Daha Güzeldi - Mehmet Niyazi
 Date: 2008-01-02 14:07
 Category: Kitaplar
-tags: Azeri, Haberler, Kitaplar, Mehmet Niyazi, Ölüm Daha Güzeldi, roman, Rusya, Zulüm
+tags: [Azeri, Haberler, Kitaplar, Mehmet Niyazi, Ölüm Daha Güzeldi, roman, Rusya, Zulüm]
 ---
 
 ![Ölüm Daha Güzeldi - Mehmet Niyazi][]Sovyet rusyası zamanında Azeri

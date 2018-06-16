@@ -3,7 +3,7 @@ layout: post
 title: Sultan Abdülaziz / Bir Mazlum Padişah - Kadir Mısıroğlu
 Date: 2007-09-09 12:20
 Category: Kitaplar
-tags: bibliyografi, cinayet, darbe, Kitaplar, sultan-abdulaziz, tanzimat
+tags: [bibliyografi, cinayet, darbe, Kitaplar, sultan-abdulaziz, tanzimat]
 ---
 
 ![Sultan Abdülaziz / Bir Mazlum Padişah - Kadir Mısıroğlu][]Osmanlı'nın yıkılış döneminde başa gelmiş olan

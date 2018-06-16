@@ -3,7 +3,7 @@ layout: post
 title: CSS&#039;de Metin(Text) Özellikleri
 Date: 2006-08-06 21:55
 Category: CSS
-tags: CSS, letter-spacing, line-height, text-align, text-decoration, text-indent, text-shadow, text-transform, vertical-align, word-spacing
+tags: [CSS, letter-spacing, line-height, text-align, text-decoration, text-indent, text-shadow, text-transform, vertical-align, word-spacing]
 ---
 
 Font ile Metin(Text) arasında ne fark var ikiside aynı diyorsanız

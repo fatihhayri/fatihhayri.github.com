@@ -3,7 +3,7 @@ layout: post
 title: (X)Html Elementlerini gizleme ve göstermek
 Date: 2006-09-07 19:11
 Category: Javascript
-tags: eleman gizle, fonksiyon, göster-gizle, Javascript
+tags: [eleman gizle, fonksiyon, göster-gizle, Javascript]
 ---
 
 	:::javascript

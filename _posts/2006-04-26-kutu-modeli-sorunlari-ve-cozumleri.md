@@ -113,7 +113,7 @@ Not: Aynı şeyler yükseklik(height) içinde geçerlidir.
 
 -   [http://tantek.com/CSS/Examples/boxmodelhack.html][]
 -   [http://css-discuss.incutio.com/?page=BoxModelHack][]
--   [http://www.createwebmagic.com/css101/lesson2/?inc=part3][]
+-   http://www.createwebmagic.com/css101/lesson2/?inc=part3
 -   [CSS Hacks and Filters : Making Cascading Stylesheets Work][]
 
   [100]: /images/basit_boxmodel.gif
@@ -121,5 +121,4 @@ Not: Aynı şeyler yükseklik(height) içinde geçerlidir.
   [tantek]: http://www.tantek.com/CSS/Examples/boxmodelhack.html
   [http://tantek.com/CSS/Examples/boxmodelhack.html]: http://tantek.com/CSS/Examples/boxmodelhack.html
   [http://css-discuss.incutio.com/?page=BoxModelHack]: http://css-discuss.incutio.com/?page=BoxModelHack
-  [http://www.createwebmagic.com/css101/lesson2/?inc=part3]: http://www.createwebmagic.com/css101/lesson2/?inc=part3
   [CSS Hacks and Filters : Making Cascading Stylesheets Work]: http://www.amazon.com/gp/product/0764579851/ref=sr_11_1/103-3062475-1085468?%5Fencoding=UTF8

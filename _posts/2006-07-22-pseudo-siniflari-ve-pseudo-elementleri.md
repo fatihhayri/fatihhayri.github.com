@@ -4,7 +4,7 @@ title: Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)
 Slug: pseudo-siniflari-ve-pseudo-elementleri
 Date: 2006-07-22 20:36
 Category: CSS
-tags: CSS, link, Pseudo-elementleri, Pseudo-sınıfı, sözde-elementler, sözde-sınıflar
+tags: [CSS, link, Pseudo-elementleri, Pseudo-sınıfı, sözde-elementler, sözde-sınıflar]
 ---
 
 Pseudo sınıf ve elementleri CSS'i destekleyen web tarayıcıları

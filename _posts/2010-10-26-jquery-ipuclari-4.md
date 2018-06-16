@@ -3,7 +3,7 @@ layout: post
 title: jquery ipuçları - 4
 Date: 2010-10-26 23:04
 Category: Javascript, jquery
-tags: closest(), console.log, delay(), has(), next(), parent(), parents(), prev()
+tags: [closest(), console.log, delay(), has(), next(), parent(), parents(), prev()]
 ---
 
 [Jquery ipuçları - 1][]

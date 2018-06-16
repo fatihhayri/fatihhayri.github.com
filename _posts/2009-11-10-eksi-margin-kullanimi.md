@@ -3,7 +3,7 @@ layout: post
 title: Eksi Margin Kullanımı
 Date: 2009-11-10 00:37
 Category: CSS, XHTML
-tags: eksi-margin, Elastik Web Sayfaları, float, Margin, Sabit-Konumlandırma
+tags: [eksi-margin, Elastik Web Sayfaları, float, Margin, Sabit-Konumlandırma]
 ---
 
 Margin özelliği eksi değer alabilir. Eksi değerler bize tasarımsal

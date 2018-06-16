@@ -3,7 +3,7 @@ layout: post
 title: CSS&#039;de Kalıtsallık(Inheritance)
 Date: 2007-01-14 15:43
 Category: CSS, Web Standartları, XHTML
-tags: CSS, inheritance, kalıtsallık, Web Standartları, XHTML
+tags: [CSS, inheritance, kalıtsallık, Web Standartları, XHTML]
 ---
 
 HTML dokümanlarının yapısından ve CSS ile olan ilişkisinden [(X)HTML Sayfa Yapısı ve CSS Kullanımı][] makalesinde bahsetmiştik, bu makaleden
@@ -128,7 +128,7 @@ nedeni ile de bir çok sorunla karşılaştığımızıda unutmayalım.
 
 ## Kaynaklar
 
--   [http://www.simplebits.com/][]
+-   http://www.simplebits.com
 -   [http://www.devarticles.com][]
 -   [http://www.w3.org/TR/REC-CSS1#inheritance][]
 -   [http://www.adobe.com/][]
@@ -138,7 +138,6 @@ nedeni ile de bir çok sorunla karşılaştığımızıda unutmayalım.
 
   [(X)HTML Sayfa Yapısı ve CSS Kullanımı]: http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
   [Hızlı CSS Referansı]: http://www.fatihhayrioglu.com/hizli-css-referansi/
-  [http://www.simplebits.com/]: http://www.simplebits.com/notebook/2003/04/15/css_inheritance.html
   [http://www.devarticles.com]: http://www.devarticles.com/c/a/Web-Style-Sheets/Learn-CSS-Introduction-to-Inheritance-Specificity-and-Cascade/3/
   [http://www.w3.org/TR/REC-CSS1#inheritance]: http://www.w3.org/TR/REC-CSS1#inheritance
   [http://www.adobe.com/]: http://www.adobe.com/devnet/dreamweaver/articles/css_inheritance.html

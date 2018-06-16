@@ -3,7 +3,7 @@ layout: post
 title: '!important Tanımı'
 Date: 2010-10-14 22:41
 Category: CSS, XHTML
-tags: Etkinlik, firebug, Firefox, important
+tags: [Etkinlik, firebug, Firefox, important]
 ---
 
 [Friendfeed’de bir serzenişim üzerine Fatih Turan’ın bir cevabı][]

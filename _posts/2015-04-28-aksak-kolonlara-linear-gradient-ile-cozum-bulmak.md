@@ -3,7 +3,7 @@ layout: post
 title: Aksak Kolonlara linear-gradient İle Çözüm Bulmak
 Date: 2015-04-28 16:41
 Category: css
-tags: aksak kolon linear-gradient
+tags: [aksak kolon linear-gradient]
 ---
 
 

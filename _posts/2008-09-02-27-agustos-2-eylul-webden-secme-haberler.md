@@ -3,7 +3,7 @@ layout: post
 title: 27 Ağustos - 2 Eylül web&#039;den seçme haberler
 Date: 2008-09-02 09:04
 Category: Haberler
-tags: CSS, firebug, Firefox 3, hr, Javascript, jQuery plugin, safari, WordPress
+tags: [CSS, firebug, Firefox 3, hr, Javascript, jQuery plugin, safari, WordPress]
 ---
 
 -   Javascript ile resim bilgilerini elde etmek. Kırık bağlantı

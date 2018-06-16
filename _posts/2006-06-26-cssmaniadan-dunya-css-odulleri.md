@@ -3,7 +3,7 @@ layout: post
 title: CSSMania&#039;dan Dünya CSS Ödülleri
 Date: 2006-06-26 23:33
 Category: CSS, Haberler
-tags: CSS, cssmania, web, yarışma
+tags: [CSS, cssmania, web, yarışma]
 ---
 
 CSS Site tanıtım sitelerinin ünlülerinden [CSSMania][] İlk Dünya CSS
@@ -21,8 +21,6 @@ CSS Site tanıtım sitelerinin ünlülerinden [CSSMania][] İlk Dünya CSS
 -   Web Araçları
 
 Güzel sitelrin yarıltığı güzel bir yarışma Ayrıntılı bilg için
-[CSSMania][1]
 
 
   [CSSMania]: http://cssmania.com/
-  [1]: http://awards.cssmania.com/2006/06/05/css-world-awards-nominations.php

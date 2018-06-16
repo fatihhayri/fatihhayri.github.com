@@ -3,7 +3,7 @@ layout: post
 title: Mac Os’da Kısa Sürede Lokal Http Sunucu Oluşturma
 Date: 2015-03-18 10:41
 Category: genel
-tags: HTTPServer MacOs python
+tags: [HTTPServer MacOs python]
 ---
 
 Bazı projeleri geliştirmek için kendi bilgisayarımızda bir HTTP sunucuya ihtiyacımız oluyor. Mac OS'ta bu iş çok basit.

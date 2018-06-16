@@ -3,7 +3,7 @@ layout: post
 title: 19 Kasım 2007 Web&#039;den Seçme Haberler
 Date: 2007-11-19 20:40
 Category: Haberler
-tags: Ajax, ASP.NET, CSS, Firefox, Haberler, json, safari, slideshow, table
+tags: [Ajax, ASP.NET, CSS, Firefox, Haberler, json, safari, slideshow, table]
 ---
 
 -   .Net 3.5 çıkıyor. Mehmet N. Çankaya bize .net3.5 posterini sunmuş.

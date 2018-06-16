@@ -3,7 +3,7 @@ layout: post
 title: Webkit Tabanlı Tarayıcılar(Chrome ve Safari) İçin Düzeltme(Hack) Sorunu ve Çözümü
 Date: 2011-09-21 15:52
 Category: CSS
-tags: chrome, css düzeltme, media, safari, WebKit
+tags: [chrome, css düzeltme, media, safari, WebKit]
 ---
 
 Genelde [tarayıcı düzeltmelerini][] ie için yaparız. Ancak bu sefer

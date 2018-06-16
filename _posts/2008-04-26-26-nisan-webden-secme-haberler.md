@@ -3,7 +3,7 @@ layout: post
 title: 26 Nisan web&#039;den seçme haberler
 Date: 2008-04-26 13:15
 Category: Haberler
-tags: Ajax, Firefox, jquery, lightbox, WordPress
+tags: [Ajax, Firefox, jquery, lightbox, WordPress]
 ---
 
 -   Metin alanı girdilerini otomatik değer önerme işini ajax yardımı

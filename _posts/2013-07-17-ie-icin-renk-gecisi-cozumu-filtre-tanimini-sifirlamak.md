@@ -3,7 +3,7 @@ layout: post
 title: İE için renk geçişi çözümü filtre tanımını sıfırlamak
 Date: 2013-07-17 12:05
 Category: CSS
-tags: css, css3, renk-geçişi, filtre, hata-ayıklama, sıfırlama
+tags: [css, css3, renk-geçişi, filtre, hata-ayıklama, sıfırlama]
 ---
 
 CSS3 ile gelen güzel özelliklerden birisi [renk geçişleri](https://fatihhayrioglu.com/css-renk-gecisleri-gradients/). Bu güzel özelliği kullanmamızdaki en büyük engel İE’nin bu özelliği İE 10 sürümünde destekliyor olması. Ancak farklı bir yöntem ile bu desteği İE’nin tüm sürümlerine kazandırabiliyoruz. **filtre tanımı**. filtre tanımı yardımı ile İE için çözüm oluşturabiliyoruz. Tam karşılamasa da desteği sağlaması büyük ölçüde işimizi görüyor.

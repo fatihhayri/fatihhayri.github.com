@@ -3,7 +3,7 @@ layout: post
 title: İE kalıtsal margin sorunu&#58; form elementleri ve hasLayout
 Date: 2010-04-28 23:58
 Category: CSS, Web Standartları, XHTML
-tags: hasLayout, ie, ie6, ie7, kalıtsal margin sorunu, Margin
+tags: [hasLayout, ie, ie6, ie7, kalıtsal margin sorunu, Margin]
 ---
 
 İnternet Explorer ile bir çok sorun yaşıyoruz genelde ie'nin boyut

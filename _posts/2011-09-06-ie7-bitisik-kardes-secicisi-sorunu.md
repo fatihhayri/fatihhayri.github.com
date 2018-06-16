@@ -3,7 +3,7 @@ layout: post
 title: İE7 Bitişik Kardeş Seçicisi Sorunu
 Date: 2011-09-06 18:45
 Category: CSS
-tags: bitişik kardeş seçiciler, ie7, sorun
+tags: [bitişik kardeş seçiciler, ie7, sorun]
 ---
 
 Geçen hafta “IE6 Sonrası Kod Yazma Alışkanlıklarımızı Güncellemek” adlı

@@ -3,7 +3,7 @@ layout: post
 title: 24 Ağustos 2007 Web&#039;den Seçme Haberler
 Date: 2007-08-24 15:26
 Category: Haberler
-tags: .net, css3.0, Haberler, jquery, lightbox, microsoft, SiggRaph2007, tafita
+tags: [.net, css3.0, Haberler, jquery, lightbox, microsoft, SiggRaph2007, tafita]
 ---
 
 -   .Net'de trace sonuçlarını anlamak ile ilgili bir makale. [Link][]
@@ -18,7 +18,7 @@ tags: .net, css3.0, Haberler, jquery, lightbox, microsoft, SiggRaph2007, tafita
     tasarımınızı veriyorsunuz onlar kesip biçip size HTML veriyor. Tabi
     parayla [Link][6]
 -   Web Uygulamaları: İşlerinizi web'den yapmaya ne dersiniz. [Link][7]
--   100 adet web geliştircileri için link. [Link][8]
+-   100 adet web geliştircileri için link.
 -   JQuery Türkiye grubu kurulmuş. [Link][9]
 -   Web tasarımcılarının hoşuna gidecek CSS3.0 özellikleri. [Link][10]
 
@@ -35,8 +35,6 @@ tags: .net, css3.0, Haberler, jquery, lightbox, microsoft, SiggRaph2007, tafita
     "Çevirim içi HTML"
   [7]: http://www.smashingmagazine.com/2007/08/22/web-applications-improve-your-workflow/
     "web üzerinden iş yapmak"
-  [8]: http://www.softwaredeveloper.com/features/i-got-99-problems-080707/
-    "100 web link"
   [9]: http://groups.google.com/group/jquery-turkish "jquery Türkiye"
   [10]: http://www.clazh.com/new-css-30-features-that-web-designers-would-love/
     "CSS3.0"

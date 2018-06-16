@@ -3,7 +3,7 @@ layout: post
 title: fatihhayrioglu.com 4. seneyi doldurdu
 Date: 2010-04-28 14:45
 Category: Haberler
-tags: fatihhayrioglu.com
+tags: [fatihhayrioglu.com]
 ---
 
 Yine sitenin yıl dönümünü kaçırdım, güya ayrıntılı bir yazı yazacaktım.

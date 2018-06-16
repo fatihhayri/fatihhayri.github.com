@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Resim Haritaları(imagemap) yapmak
 Date: 2008-11-17 11:14
 Category: Haberler
-tags: flickr, fotoğraf, imagemap, resim-haritaları
+tags: [flickr, fotoğraf, imagemap, resim-haritaları]
 ---
 
 Ben ilk defa Flickr'da(bir örnek verelim. [Dexter HTML kesiyormuş.][] :)

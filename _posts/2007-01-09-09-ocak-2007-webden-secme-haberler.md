@@ -3,7 +3,7 @@ layout: post
 title: 09 Ocak 2007 web&#039;den seçme haberler
 Date: 2007-01-09 18:38
 Category: Haberler
-tags: arama motoru, CSS, Firefox, google reader, html, tab, tipografi, web2.0, yahoo
+tags: [arama motoru, CSS, Firefox, google reader, html, tab, tipografi, web2.0, yahoo]
 ---
 
 -   [Alispart][]'da web sitelerindeki boş alanlar üzerine yazılmış bir
@@ -22,8 +22,8 @@ tags: arama motoru, CSS, Firefox, google reader, html, tab, tipografi, web2.0, y
 -   Browster linklerin nereye gittiğini bize küçük resimle gösteriyormuş
     [Link][7]
 -   Yahoo 10 Milyon $'a [MyBlogLog][] satın aldığı söylentileri var.
--   [Dreamweaver Sayfası][]ndan çok güzel bir makale **Dreamweaver ve
-    CSS Kullanarak Sayfa Ara Yüz Tasarımı (Layout) Yapmak** [Link][8]
+-   Dreamweaver Sayfası'ndan www.dw.gen.tr çok güzel bir makale **Dreamweaver ve
+    CSS Kullanarak Sayfa Ara Yüz Tasarımı (Layout) Yapmak**
 
 
   [Alispart]: http://www.alistapart.com/
@@ -36,5 +36,3 @@ tags: arama motoru, CSS, Firefox, google reader, html, tab, tipografi, web2.0, y
   [6]: http://www.computerworld.com/action/article.do?command=viewArticleBasic&taxonomyName=development&articleId=9007378
   [7]: http://www.browster.com/
   [MyBlogLog]: http://www.mybloglog.com/
-  [Dreamweaver Sayfası]: http://www.dw.gen.tr
-  [8]: http://www.dw.gen.tr/makale/detay/dreamweaver-css-sayfa-tasarimi-layout

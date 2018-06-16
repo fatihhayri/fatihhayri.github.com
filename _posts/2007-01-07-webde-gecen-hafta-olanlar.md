@@ -3,7 +3,7 @@ layout: post
 title: Web&#039;de Geçen hafta olanlar
 Date: 2007-01-07 16:24
 Category: Haberler
-tags: Atom, Blogger, CSS, Firefox, google, google reader, gtalk, GUtil, Javascript, Maxthon, rss, spam
+tags: [Atom, Blogger, CSS, Firefox, google, google reader, gtalk, GUtil, Javascript, Maxthon, rss, spam]
 ---
 
 Genelde günlük veya iki günlük haber yazıyordum ancak araya giren uzun
@@ -35,7 +35,7 @@ uzunca haber vereceğiz bu sefer
     olacaktır :D [Link][9]
 -   CSS sayfa planlamasını statik, likit ve elastik olmak üzere üç ana
     şekilde ve bunların birleşimini kullanarak sayfalarımızı kodlarız
-    peki hangisini seçmeliyiz. Güzel ve faydalı bir makale [Link][10]
+    peki hangisini seçmeliyiz. Güzel ve faydalı bir makale
 -   Geçen aylarda Google arama sonuçları içerisine kendi ürünlerini
     öneren reklamlar koymaya başlamıştı. Bir çok site ve kişiden
     eleştiri alınca bu uygulamadan vazgeçmiş. [Link][11]
@@ -43,7 +43,7 @@ uzunca haber vereceğiz bu sefer
     gibi görünüyor. [Link][12]
 -   Google'un bir çok servisini kullanıyorsunuz ve bunlara erişmek için
     bir menüye mi ihtiyacınız var işte size yardımcı olacak bir Firefox
-    eklentisi GUtil! [Link][13]
+    eklentisi GUtil!
 
 
   [http://googlesystem.blogspot.com/]: http://googlesystem.blogspot.com/2006/12/how-to-add-search-to-google-reader.html
@@ -57,7 +57,5 @@ uzunca haber vereceğiz bu sefer
   [7]: http://slash7.com/articles/2006/12/30/6-things-you-need-to-know-about-color
   [8]: http://www.readwriteweb.com/archives/biggest_web_trend_2007.php
   [9]: http://www.maxthon.com/
-  [10]: http://fadtastic.net/2006/12/30/how-do-you-lay-out-the-layout/
   [11]: http://googlesystem.blogspot.com/2007/01/google-removes-self-promoting-tips.html
   [12]: http://www.google.com/talk/
-  [13]: https://addons.mozilla.org/firefox/3755/

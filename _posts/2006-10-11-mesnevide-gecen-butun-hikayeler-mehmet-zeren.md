@@ -3,7 +3,7 @@ layout: post
 title: Mesnevi&#039;de Geçen Bütün Hikayeler - Mehmet Zeren
 Date: 2006-10-11 17:01
 Category: Kitaplar
-tags: hikayeler, hikayeleri, kitap, Kitaplar, Mehmet Zeren, Mesnevi, Mesnevi'de Geçen Bütün Hikayeler
+tags: [hikayeler, hikayeleri, kitap, Kitaplar, Mehmet Zeren, Mesnevi, Mesnevi'de Geçen Bütün Hikayeler]
 ---
 
 ![][100]Her okuya muhakkak bir şeyler katacak. Okuyanın dercesine göre

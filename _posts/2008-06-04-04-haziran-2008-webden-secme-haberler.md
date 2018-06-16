@@ -3,7 +3,7 @@ layout: post
 title: 04 Haziran 2008 web&#039;den seçme haberler
 Date: 2008-06-04 10:41
 Category: Haberler
-tags: Ajax, ASP.NET, css düzeltmeleri, günlük, İnternet Tarayıcısı, jquery, klavye olayları, mootools, sql server, WordPress
+tags: [Ajax, ASP.NET, css düzeltmeleri, günlük, İnternet Tarayıcısı, jquery, klavye olayları, mootools, sql server, WordPress]
 ---
 
 -   Yeni çıkacak internet tarayıcılarının karşılaştırması. [Bağlantı][]

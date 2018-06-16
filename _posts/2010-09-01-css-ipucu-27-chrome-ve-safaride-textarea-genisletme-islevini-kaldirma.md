@@ -3,7 +3,7 @@ layout: post
 title: CSS İpucu 27&#58; Chrome ve Safari&#039;de textarea genişletme işlevini kaldırma
 Date: 2010-09-01 14:45
 Category: CSS
-tags: Google Chrome, safari, textarea, textarea genişletme, WebKit
+tags: [Google Chrome, safari, textarea, textarea genişletme, WebKit]
 ---
 
 Webkit tabanlı tarayıcılarda(Google Chrome ve Safari) textarea’ların sağ

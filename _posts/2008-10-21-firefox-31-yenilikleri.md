@@ -3,7 +3,7 @@ layout: post
 title: Firefox 3.1 Yenilikleri
 Date: 2008-10-21 10:50
 Category: CSS, Haberler, Javascript, Web Standartları, XHTML
-tags: Firefox, font-face, geode, gps, internet, İnternet Tarayıcısı, Javascript, tarayıcı, yazı tipi
+tags: [Firefox, font-face, geode, gps, internet, İnternet Tarayıcısı, Javascript, tarayıcı, yazı tipi]
 ---
 
 Firefox 3.1 Beta1 çıktı. Aslında sadece bir haber değeri taşıyan bir

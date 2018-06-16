@@ -3,7 +3,7 @@ layout: post
 title: FireBug Net Sekmesi ve Kullanımı
 Date: 2010-05-26 23:36
 Category: CSS, Javascript, XHTML
-tags: Ajax, firebug, Firefox, http, net sekmesi, page speed, YSlow
+tags: [Ajax, firebug, Firefox, http, net sekmesi, page speed, YSlow]
 ---
 
 FireBug hakkında elle tutulur bir bilgi olmadığı için bu makaleyi

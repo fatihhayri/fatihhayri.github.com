@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Renk Geçişinin &lt;body&gt; elemanına uygulamasındaki sorun ve çözümü
 Date: 2012-06-25 13:24
 Category: CSS, XHTML
-tags: css3, gradient, problem, renk geçişi
+tags: [css3, gradient, problem, renk geçişi]
 ---
 
 CSS3 yeniliklerinde yaralanıyoruz, tabi bazı sorunlar ortaya çıkıyor.

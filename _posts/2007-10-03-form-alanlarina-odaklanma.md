@@ -3,7 +3,7 @@ layout: post
 title: Form alanlarına odaklanma
 Date: 2007-10-03 17:40
 Category: CSS, Javascript, XHTML
-tags: CSS, focus, form, Javascript, odaklanma, XHTML
+tags: [CSS, focus, form, Javascript, odaklanma, XHTML]
 ---
 
 Form alanları genelde kullanıcıların en çok sıkıldıkları alanlardır. Bu

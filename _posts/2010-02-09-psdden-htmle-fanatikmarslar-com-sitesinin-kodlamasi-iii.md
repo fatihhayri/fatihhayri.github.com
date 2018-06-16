@@ -4,7 +4,7 @@ title: PSD&#039;den HTML&#039;e – fanatikmarslar.com Sitesinin Kodlaması III
 Slug: psdden-htmle-fanatikmarslar-com-sitesinin-kodlamasi-iii
 Date: 2010-02-09 00:14
 Category: CSS, Javascript, Web Standartları, XHTML
-tags: adım adım kodlama, alt sayfa, css-kodlama-düzeni, CSS-Layout, farklı tarayıcılara göre kod yazmak, psdtohtml, site-kodlama, tezahürat dinle, tezahürat ekle
+tags: [adım adım kodlama, alt sayfa, css-kodlama-düzeni, CSS-Layout, farklı tarayıcılara göre kod yazmak, psdtohtml, site-kodlama, tezahürat dinle, tezahürat ekle]
 ---
 
 ## Alt Sayfaların Kodlanması

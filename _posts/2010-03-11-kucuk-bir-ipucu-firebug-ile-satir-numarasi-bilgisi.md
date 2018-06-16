@@ -3,7 +3,7 @@ layout: post
 title: Küçük bir ipucu&#58; FireBug ile satır numarası bilgisi
 Date: 2010-03-11 23:44
 Category: CSS
-tags: DragonFly, firebug, Firefox, ipucu, Opera, satır-numarası
+tags: [DragonFly, firebug, Firefox, ipucu, Opera, satır-numarası]
 ---
 
 ![][100]

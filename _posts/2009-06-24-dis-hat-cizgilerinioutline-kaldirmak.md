@@ -3,7 +3,7 @@ layout: post
 title: Dış Hat Çizgilerini(outline) Kaldırmak
 Date: 2009-06-24 11:01
 Category: CSS
-tags: dış-hat-çizgisi, Firefox 3, ie6, ie7, ie8, klav, klavye-kullanmak, outline
+tags: [dış-hat-çizgisi, Firefox 3, ie6, ie7, ie8, klav, klavye-kullanmak, outline]
 ---
 
 Ben bu konuyu aslında dış hat çizgilerini kaldırmak olarak
@@ -187,8 +187,7 @@ sonunda örneğimiz ie de de çalışacaktır.
 -   [http://sonspring.com/journal/removing-dotted-links][]
 -   [http://codylindley.com/Javascript/223/hiding-the-browsers-focus-borders-should-i-shouldnt-i][]
 -   [http://www.maratz.com/blog/archives/2006/01/20/outline-property-for-image-replaced-link/][]
--   [http://diveintomark.org/archives/2006/04/25/new-focus-indicator][]
-    (odaklanmayı arttıran firefox eklentisi)
+-   http://diveintomark.org/archives/2006/04/25/new-focus-indicator
 
   [dış hat çizgisi özellikleri]: http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
     "dış hat çizgisi özellikleri"
@@ -224,5 +223,3 @@ sonunda örneğimiz ie de de çalışacaktır.
     "http://codylindley.com/Javascript/223/hiding-the-browsers-focus-borders-should-i-shouldnt-i"
   [http://www.maratz.com/blog/archives/2006/01/20/outline-property-for-image-replaced-link/]: http://www.maratz.com/blog/archives/2006/01/20/outline-property-for-image-replaced-link/
     "http://www.maratz.com/blog/archives/2006/01/20/outline-property-for-image-replaced-link/"
-  [http://diveintomark.org/archives/2006/04/25/new-focus-indicator]: http://diveintomark.org/archives/2006/04/25/new-focus-indicator
-    "http://diveintomark.org/archives/2006/04/25/new-focus-indicator"

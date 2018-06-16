@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Ziyaret Edilen Sayfa Bağlantılarına Şekil Vermek
 Date: 2009-06-15 16:58
 Category: CSS, Web Standartları
-tags: bağlantı, ie6, kullanılabilirlik, sözde-elementler, sözde-sınıflar, visited, ziyaret-edilmiş-sayfa
+tags: [bağlantı, ie6, kullanılabilirlik, sözde-elementler, sözde-sınıflar, visited, ziyaret-edilmiş-sayfa]
 ---
 
 [Sözde sınıf ve elementler makalesinde][] değindiğim bir konu idi bu.

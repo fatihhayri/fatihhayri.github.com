@@ -3,7 +3,7 @@ layout: post
 title: 15 Eylül 2008 web&#039;den seçme haberler
 Date: 2008-09-15 11:17
 Category: Haberler
-tags: 0 yükseklik, Developer Tools, firebug, Firefox 3.1, HTML 5, ie8, Javascript, jquery, mootools, yazı tipi
+tags: [0 yükseklik, Developer Tools, firebug, Firefox 3.1, HTML 5, ie8, Javascript, jquery, mootools, yazı tipi]
 ---
 
 -   Css-trics'ten jquery hakkında güzel bir video. [Bağlantı][] 

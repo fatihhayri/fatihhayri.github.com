@@ -3,7 +3,7 @@ layout: post
 title: CSS&#039;e başlamak kitabı hazır
 Date: 2008-02-26 00:40
 Category: Haberler
-tags: background, Başlangıç, Border, content, CSS, css'in teorisi, font, inherit, kitap, list, Margin, outline, Padding, table, text
+tags: [background, Başlangıç, Border, content, CSS, css'in teorisi, font, inherit, kitap, list, Margin, outline, Padding, table, text]
 ---
 
 ![CSS'e başlamak][]Uzun süredir üzerinde çalıştığım CSS’e başlangıç

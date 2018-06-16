@@ -3,7 +3,7 @@ layout: post
 title: İE 7 ile Düzelen CSS sorunları
 Date: 2006-08-26 00:23
 Category: CSS, Haberler
-tags: düzeltmeler, ie7, internet explorer, İnternet Tarayıcısı
+tags: [düzeltmeler, ie7, internet explorer, İnternet Tarayıcısı]
 ---
 
 Bilindiği gibi İE hataları ile CSS kod yazarlarını zorlayan bir web

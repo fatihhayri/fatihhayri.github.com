@@ -3,7 +3,7 @@ layout: post
 title: 13 Aralık 2007 Web&#039;den Seçme Haberler
 Date: 2007-12-13 14:00
 Category: Haberler
-tags: CSS, css3.0, Google Analytics, Haberler, Movable-Type, Team Fondation Server, tipografi, writemaps
+tags: [CSS, css3.0, Google Analytics, Haberler, Movable-Type, Team Fondation Server, tipografi, writemaps]
 ---
 
 -   Online site planlama aracı. [Bağlantı][]

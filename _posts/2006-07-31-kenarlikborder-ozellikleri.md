@@ -4,7 +4,7 @@ title: CSS Kutu Modeli - Kenarlık(border) Özellikleri
 Slug: kenarlikborder-ozellikleri
 Date: 2006-07-31 22:56
 Category: CSS
-tags: Border, border-bottom, border-left, border-right, border-top, CSS, kenarlık
+tags: [Border, border-bottom, border-left, border-right, border-top, CSS, kenarlık]
 ---
 
 Kenarlık(border), içerik alanı ve padding etrafındaki bir veya daha

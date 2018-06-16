@@ -3,7 +3,7 @@ layout: post
 title: Linkle javascript tetikleme
 Date: 2006-11-06 12:19
 Category: Javascript
-tags: bağlantı, fonksiyon-tetikleme, Javascript
+tags: [bağlantı, fonksiyon-tetikleme, Javascript]
 ---
 
 Javascript kodlarını tetiklemenin bir yöntemi de link ile çağırmaktır.

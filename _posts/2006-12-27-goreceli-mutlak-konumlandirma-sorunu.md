@@ -3,7 +3,7 @@ layout: post
 title: Göreceli-Mutlak Konumlandırma Sorunu
 Date: 2006-12-27 15:57
 Category: CSS, XHTML
-tags: CSS, Göreceli-Konumlandırma, Mutlak-Konumlandırma, sorun, XHTML
+tags: [CSS, Göreceli-Konumlandırma, Mutlak-Konumlandırma, sorun, XHTML]
 ---
 
 Bu hata göreceli olarak konumlandırılmış(position:relative) bir

@@ -3,7 +3,7 @@ layout: post
 title: 24 Ekim 2007 Web&#039;den Seçme Haberler
 Date: 2007-10-24 15:43
 Category: Haberler
-tags: css3.0, e-posta, Haberler, Javascript, jquery, netscape, sildeshow
+tags: [css3.0, e-posta, Haberler, Javascript, jquery, netscape, sildeshow]
 ---
 
 -   Javascript slideshow örnekleri. [Bağlantı][]

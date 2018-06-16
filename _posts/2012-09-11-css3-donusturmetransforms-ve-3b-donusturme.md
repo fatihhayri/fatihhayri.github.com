@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Dönüştürme(Transforms) ve 3B Dönüştürme
 Date: 2012-09-11 13:50
 Category: Haberler
-tags: css3, matrix3d, perspective, rotate3d, rotateX, rotateY, rotateZ, scale3d, scaleZ, transform-style, translate3d, translateZ
+tags: [css3, matrix3d, perspective, rotate3d, rotateX, rotateY, rotateZ, scale3d, scaleZ, transform-style, translate3d, translateZ]
 ---
 
 CSS3 Dönüştürme özelliği 2 ve 3 boyutlu dönüştürme özelliği olmak üzere

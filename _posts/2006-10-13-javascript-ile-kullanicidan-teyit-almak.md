@@ -3,7 +3,7 @@ layout: post
 title: javascript ile kullanıcıdan teyit almak
 Date: 2006-10-13 11:02
 Category: Javascript
-tags: confirm, evet, Javascript, teyit-almak
+tags: [confirm, evet, Javascript, teyit-almak]
 ---
 
 Bazen kullanıcıdan bir iş için teyit almak durumunda kalırız, böyle

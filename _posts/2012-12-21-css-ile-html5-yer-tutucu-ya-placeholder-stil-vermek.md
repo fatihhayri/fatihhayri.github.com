@@ -4,7 +4,7 @@ title: CSS ile HTML5 Yer Tutucu’ya(placeholder) Stil Vermek
 Slug: css-ile-html5-yer-tutucu-ya-placeholder-stil-vermek
 Date: 2012-12-21 11:37
 Category: CSS, HTML5
-tags: css, placeholder, yer-tutucu
+tags: [css, placeholder, yer-tutucu]
 ---
 
 HTML5 ile birlikte gelen form elemanlarına yer tutucu(placeholder) ekleme özelliğine CSS3 ile stil verebiliyoruz.

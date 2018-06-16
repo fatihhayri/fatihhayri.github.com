@@ -3,7 +3,7 @@ layout: post
 title: CSS3 calc() değeri
 Date: 2011-09-09 14:59
 Category: CSS
-tags: -moz-calc(), calc(), css3, hesaplama fonksiyonu
+tags: [-moz-calc(), calc(), css3, hesaplama fonksiyonu]
 ---
 
 Firefox’un CSS3 içine eklediği bir değer olarak eklendi. İnternet

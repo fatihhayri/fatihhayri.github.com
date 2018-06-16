@@ -3,7 +3,7 @@ layout: post
 title: font-face kullanımı
 Date: 2009-10-29 19:15
 Category: CSS, XHTML
-tags: farklı tarayıcılara göre kod yazmak, font-face, yazı tipi, yazı tipi gömme
+tags: [farklı tarayıcılara göre kod yazmak, font-face, yazı tipi, yazı tipi gömme]
 ---
 
 ## @font-face Genel Bilgi

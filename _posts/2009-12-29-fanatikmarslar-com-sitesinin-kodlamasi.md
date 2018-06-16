@@ -4,7 +4,7 @@ title: PSD&#039;den HTML&#039;e - fanatikmarslar.com Sitesinin Kodlaması
 Slug: fanatikmarslar-com-sitesinin-kodlamasi
 Date: 2009-12-29 11:13
 Category: CSS, XHTML
-tags: adım adım kodlama, CSS, css-kodlama-düzeni, CSS-Layout, Dreamweaver, fanatikmarslar.com, psdtohtml
+tags: [adım adım kodlama, CSS, css-kodlama-düzeni, CSS-Layout, Dreamweaver, fanatikmarslar.com, psdtohtml]
 ---
 
 Yaptığım bir projeyi baştan sonra anlatmak uzun süredir düşündüğüm ama

@@ -3,7 +3,7 @@ layout: post
 title: Google Chrome 5 (Beta)
 Date: 2010-05-08 20:32
 Category: Haberler
-tags: Google, Chrome, Tarayıcı
+tags: [Google, Chrome, Tarayıcı]
 ---
 
 Daha önce her çıkan tarayıcının yeni sürümleri hakkında bir araştırma

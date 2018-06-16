@@ -3,7 +3,7 @@ layout: post
 title: Tablo Özellikleri
 Date: 2007-09-10 22:00
 Category: CSS, Web Standartları, XHTML
-tags: boder-spacing, border-collapse, caption-side, CSS, empty-cells, table, table-layout, tablo, Web Standartları, XHTML
+tags: [boder-spacing, border-collapse, caption-side, CSS, empty-cells, table, table-layout, tablo, Web Standartları, XHTML]
 ---
 
 Daha önce "[CSS ile Tabloları şekillendirmek][]" adlı makalemizde tablo

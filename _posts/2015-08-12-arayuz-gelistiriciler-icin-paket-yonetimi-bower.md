@@ -3,7 +3,7 @@ layout: post
 title: Arayüz Geliştiriciler İçin Paket Yönetimi - Bower
 Date: 2015-08-12 13:18
 Category: bower
-tags: bower paket-yönetimi twitter bower.json
+tags: [bower paket-yönetimi twitter bower.json]
 ---
 
 Nodejs ve npm'i anlattıktan sonra Bower'ı anlatmamak olmaz. Bower için npm'in arayüz geliştiriciler için olanı demek yanlış olmaz herhalde. Javascript'in sunucu tarafına geçmesi ile arayüz geliştiriciler daha çok otomatize olmaya başladı. 

@@ -3,7 +3,7 @@ layout: post
 title: Firefox&#039;un Negatif Değerli z-index Desteği
 Date: 2009-06-17 21:09
 Category: CSS
-tags: Firefox, Firefox 2, ie6, ie7, negatif-değer, z-index
+tags: [Firefox, Firefox 2, ie6, ie7, negatif-değer, z-index]
 ---
 
 Geçen bir projede z-index ile ilgili bir tanım yaptım. Üçlü bir tanımdı

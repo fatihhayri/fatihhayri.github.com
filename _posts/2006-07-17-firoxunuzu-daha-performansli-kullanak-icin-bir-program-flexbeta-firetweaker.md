@@ -6,7 +6,6 @@ Category: Haberler
 
 ![scr1.jpg][]Program sizin seçiminize göre web tarayıcınızı(Firefox)
 optimize ediyor. Programla Fİrefox'unuzu daha performanlı kullanmanız
-mümkün. Ayrıntılı bilgi ve programı indirmek için [tıklayınız.][]
+mümkün. Ayrıntılı bilgi ve programı indirmek için http://www.emilsoft.net/products/firetweaker.php
 
   [scr1.jpg]: /images/scr1.thumbnail.jpg
-  [tıklayınız.]: http://www.emilsoft.net/products/firetweaker.php

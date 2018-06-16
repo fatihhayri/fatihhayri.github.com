@@ -3,7 +3,7 @@ layout: post
 title: 19 Haziran 2008 web&#039;den seçeme haberler
 Date: 2008-06-19 09:52
 Category: Haberler
-tags: CSS takvim, Firefox 3, Firefox Eklentileri, Glubble, jQuery UI, safari, Site Kapatma, Vista Aero düğme, WordPress
+tags: [CSS takvim, Firefox 3, Firefox Eklentileri, Glubble, jQuery UI, safari, Site Kapatma, Vista Aero düğme, WordPress]
 ---
 
 -   CSS ile Vista Aero düğmelerine benzer düğme oluşturmak [Bağlantı][] 

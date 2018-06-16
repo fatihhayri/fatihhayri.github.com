@@ -3,7 +3,7 @@ layout: post
 title: FİLİSTİN DRAMI&#039;NIN DÜŞÜNDÜRDÜKLERİ - Kadir Mısıroğlu
 Date: 2007-08-01 11:07
 Category: Kitaplar
-tags: filistin, Kitaplar
+tags: [filistin, Kitaplar]
 ---
 
 ![FİLİSTİN DRAMI’NIN DÜŞÜNDÜRDÜKLERİ][]Yahudilerin Filistin

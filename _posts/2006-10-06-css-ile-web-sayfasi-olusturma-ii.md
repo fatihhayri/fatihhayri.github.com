@@ -3,7 +3,7 @@ layout: post
 title: CSS İLE WEB SAYFASI OLUŞTURMA II
 Date: 2006-10-06 10:38
 Category: CSS, Javascript, XHTML
-tags: clear, CSS, Elastik Web Sayfaları, em, float, Javascript, XHTML
+tags: [clear, CSS, Elastik Web Sayfaları, em, float, Javascript, XHTML]
 ---
 
 ## Elastik Web Sayfaları Oluşturma

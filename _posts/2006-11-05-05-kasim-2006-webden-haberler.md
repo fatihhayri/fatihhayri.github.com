@@ -14,7 +14,6 @@ Category: Haberler
     sonra sol üstten File-Save as PDF.. seçeneğini tıklayıp pdf
     dosyanızı bilgisayarınıza indirebilirsiniz.
 -   CSS ile hazırlanmış en iyi 10 resim galerisi kodu için
-    [tıklayınız.][]
 -   Alispart'dan güzel bir makale daha; kullanıcının font boyutunu
     belirleyip ona göre sayfa hazırlamaya ne dersiniz. İşte makale
     yalnız İngilizce [tıklayın.][]
@@ -22,5 +21,4 @@ Category: Haberler
 
   [tıklayınız]: http://www.allpeers.com/
   [bu linkten]: http://docs.google.com/?action=updoc
-  [tıklayınız.]: http://youneed2see.com/web/99/Top_10_CSS_image_gallery_tutorials
   [tıklayın.]: http://alistapart.com/articles/fontresizing

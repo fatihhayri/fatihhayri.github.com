@@ -3,7 +3,7 @@ layout: post
 title: 18 Ocak 2007 Web&#039;den seçme haberler
 Date: 2007-01-18 00:03
 Category: Haberler
-tags: Ajax, CSS, Erişebilirlik, Google Analytics, html, internet explorer, Wikipedia, Wikiseek, WordPress, XHTML
+tags: [Ajax, CSS, Erişebilirlik, Google Analytics, html, internet explorer, Wikipedia, Wikiseek, WordPress, XHTML]
 ---
 
 18 Ocak 2007 Web'den seçme haberler

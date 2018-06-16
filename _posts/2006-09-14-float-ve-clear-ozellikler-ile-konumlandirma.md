@@ -3,7 +3,7 @@ layout: post
 title: Float ve Clear  özellikler ile konumlandırma
 Date: 2006-09-14 01:07
 Category: CSS
-tags: clear, CSS, float, planlama, sayfa-planlama
+tags: [clear, CSS, float, planlama, sayfa-planlama]
 ---
 
 CSS ile sayfa planlamak için kullanılan yöntemlerden bir tanesidir float

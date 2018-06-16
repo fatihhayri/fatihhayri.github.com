@@ -3,7 +3,7 @@ layout: post
 title: 30 Nisan 2008 web&#039;den seçme haberler
 Date: 2008-04-30 09:13
 Category: Haberler
-tags: adım adım kodlama, arama motoru, CSS maskeleme, css teknikleri, Dragon Fly, efektif web sayfaları, javascript desteği, jquery, lightbox, mesaj popupları, Opera, safari, WebKit
+tags: [adım adım kodlama, arama motoru, CSS maskeleme, css teknikleri, Dragon Fly, efektif web sayfaları, javascript desteği, jquery, lightbox, mesaj popupları, Opera, safari, WebKit]
 ---
 
 -   jQuery ile veri süzme ve sıralama işlemi yapıla bilen güzel bir

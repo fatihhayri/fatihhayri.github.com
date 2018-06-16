@@ -3,7 +3,7 @@ layout: post
 title: 20 Haziran 2007 Web’den Seçme Haberler
 Date: 2007-06-20 11:09
 Category: Haberler
-tags: Haberler
+tags: [Haberler]
 ---
 
 -   Javascript ile yapılmış akordiyon menü örneği 

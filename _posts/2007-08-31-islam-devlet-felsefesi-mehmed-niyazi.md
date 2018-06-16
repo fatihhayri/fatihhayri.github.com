@@ -3,7 +3,7 @@ layout: post
 title: İslam Devlet Felsefesi - Mehmed Niyazi
 Date: 2007-08-31 23:09
 Category: Kitaplar
-tags: devlet, İslam, İslam Devlet Felsefesi, islam tarihi, Kitaplar, Mehmet Niyazi
+tags: [devlet, İslam, İslam Devlet Felsefesi, islam tarihi, Kitaplar, Mehmet Niyazi]
 ---
 
 ![İslam Devlet Felsefesi - Mehmed Niyazi][]Bu kitabı okurken kendimi

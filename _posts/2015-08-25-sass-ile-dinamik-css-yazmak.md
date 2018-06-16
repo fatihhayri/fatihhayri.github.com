@@ -3,7 +3,7 @@ layout: post
 title: SASS ile Dinamik CSS Yazmak
 Date: 2015-08-25 13:18
 Category: css
-tags: sass grunt stylus css-önişlemcileri
+tags: [sass grunt stylus css-önişlemcileri]
 ---
 
 Üç adet popüler CSS önişlemcisi var. SASS, LESS ve Stylus. Dinamik CSS yazımı ile ilgili daha önce [Stylus](https://fatihhayrioglu.com/stylus-ile-dinamik-css-yazmak/) ile ilgili bir makale yazmıştım. Stylus yazımda da belirttiğim gibi bunlardan birini tercih etmek yeterli bence. Birbirlerine olan üstünlükleri çok ayırt edici değil. Sass'ın diğerlerine göre ilk olmak ve çok fazla dokümantasyonunun olması gibi avantajları var. Buna karşı bence Stylus'un yazımı daha kolay. Bir iki nokta üst üste -:- yazmadım diye hata almak hoşuma gitmiyor. 

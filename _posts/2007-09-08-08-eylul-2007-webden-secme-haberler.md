@@ -3,7 +3,7 @@ layout: post
 title: 08 Eylül 2007 Web&#039;den Seçme Haberler
 Date: 2007-09-08 18:24
 Category: Haberler
-tags: CoScripter, CSS, google maps, GridView, Haberler, Javascript
+tags: [CoScripter, CSS, google maps, GridView, Haberler, Javascript]
 ---
 
 -   Asp.net'de GridView elementinde açılır menü ile süzme işlemini
@@ -17,7 +17,7 @@ tags: CoScripter, CSS, google maps, GridView, Haberler, Javascript
     formaliteleri geçmenizi sağlayan bir eklenti. [Link][3]
 -   Gelecekte Web'in yöneleceği 10 alan [Link][4]
 -   Dünyanın önde gelen programcılarından 170 öneri. [Link][5]
--   Alışveriş sitelerinde en fazla yapılan 10 tasarım hatası. [Link][6]
+-   Alışveriş sitelerinde en fazla yapılan 10 tasarım hatası.
 -   Web programcıları için 10 şahane öneri [Link][7]
 -   Google Map'e mesafe ölçme aracı eklemiş. Google Eart'deki bu güzel
     ve kullanışlı özellik artık map ile elimizin altında. [Link][8]
@@ -34,8 +34,6 @@ tags: CoScripter, CSS, google maps, GridView, Haberler, Javascript
     "web'in geleceği"
   [5]: http://www.smashingmagazine.com/2007/09/07/170-expert-ideas-from-worlds-leading-developers/
     "170 öneri"
-  [6]: http://psychology.wichita.edu/surl/usabilitynews/92/shoppingcart.html
-    "alışveriş sitesi hatalları"
   [7]: http://www.aclevercookie.com/10-tips-for-budding-web-programmers-and-designers/
     "10 öneri"
   [8]: http://googlesystem.blogspot.com/2007/09/measuring-distances-in-google-maps.html

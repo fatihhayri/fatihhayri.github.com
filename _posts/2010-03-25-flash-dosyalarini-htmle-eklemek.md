@@ -3,7 +3,7 @@ layout: post
 title: Flash dosyalarını(swf) HTML&#039;e eklemek
 Date: 2010-03-25 00:46
 Category: Javascript, XHTML
-tags: flash-eklemek, swf-dosyası, swfobject, wmode
+tags: [flash-eklemek, swf-dosyası, swfobject, wmode]
 ---
 
 Flash dosyalarını html sayfalarımıza eklemek baştan beri tam oturmamış

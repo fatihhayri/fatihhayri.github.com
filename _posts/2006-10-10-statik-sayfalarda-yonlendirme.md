@@ -3,7 +3,7 @@ layout: post
 title: Statik sayfalarda yönlendirme
 Date: 2006-10-10 15:04
 Category: Javascript, XHTML
-tags: Javascript, location.href, meta, XHTML, yönlendirme
+tags: [Javascript, location.href, meta, XHTML, yönlendirme]
 ---
 
 Statik sayfalarda yönlendirme için javascript ve xhtml kullanırız.

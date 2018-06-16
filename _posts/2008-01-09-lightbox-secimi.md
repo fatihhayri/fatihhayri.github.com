@@ -3,7 +3,7 @@ layout: post
 title: Lightbox seçimi
 Date: 2008-01-09 23:36
 Category: CSS, Javascript
-tags: CSS, Javascript, jquery, lightbox, Lightwindow, mootools, Slimbox
+tags: [CSS, Javascript, jquery, lightbox, Lightwindow, mootools, Slimbox]
 ---
 
 Lightbox; popup veya mesaj kutusu benzeri, sayfa içinde açılan kutulara

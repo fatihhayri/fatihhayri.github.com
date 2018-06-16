@@ -3,7 +3,7 @@ layout: post
 title: Şâh-ı Cihan Fatih Sultan Mehmed Han - Ahmet Çoşkun
 Date: 2009-02-08 16:36
 Category: Kitaplar
-tags: bibliyografi, Fatih-Sultan-Mehmet, Fetih, İstanbul, osmanlı, Padişah
+tags: [bibliyografi, Fatih-Sultan-Mehmet, Fetih, İstanbul, osmanlı, Padişah]
 ---
 
 ![sahicihan][]Bilemiyorum ismimi aldığım için mi, ama Fatih Sultan

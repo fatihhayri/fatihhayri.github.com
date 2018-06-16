@@ -4,7 +4,7 @@ title: Genişlik ve Yüksekliğin Sınırlarını Belirlemek(min-width, min-heig
 Slug: min-width-min-heightmax-width-max-height
 Date: 2006-10-09 11:21
 Category: CSS, Javascript, Web Standartları, XHTML
-tags: CSS, css2, expression, ie-fix, Javascript, maksimum, max-height, max-width, min-height, min-width, Web Standartları, XHTML
+tags: [CSS, css2, expression, ie-fix, Javascript, maksimum, max-height, max-width, min-height, min-width, Web Standartları, XHTML]
 ---
 
 Bir kapsayıcı kutunun genişlik değerini minimum ve maksimum değerleri

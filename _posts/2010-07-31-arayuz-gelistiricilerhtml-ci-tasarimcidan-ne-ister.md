@@ -3,7 +3,7 @@ layout: post
 title: Arayüz Geliştiriciler(HTML-ci) Tasarımcıdan Ne İster?
 Date: 2010-07-31 11:20
 Category: CSS, XHTML
-tags: :active, :hover, akış şeması, arayüz geliştirici, focus, İkon, kaynak dosyalar, png, psd, tasarımcı
+tags: [active, hover, akış şeması, arayüz geliştirici, focus, İkon, kaynak dosyalar, png, psd, tasarımcı]
 ---
 
 **Web Sitesi Hakkında Bilgi ve İçerik Toplama Süreci** - **Tasarım

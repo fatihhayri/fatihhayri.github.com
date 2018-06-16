@@ -3,7 +3,7 @@ layout: post
 title: Batının Oluşumu - Christopher DAWSON
 Date: 2008-02-18 21:56
 Category: Kitaplar
-tags: ab, Avrupa, Avrupa Birliği, Batı düşüncesi, Batının Oluşumu, Christopher DAWSON, roma
+tags: [ab, Avrupa, Avrupa Birliği, Batı düşüncesi, Batının Oluşumu, Christopher DAWSON, roma]
 ---
 
 ![Batının Oluşumu - Christopher DAWSON][]Batının oluşumunu incelemek

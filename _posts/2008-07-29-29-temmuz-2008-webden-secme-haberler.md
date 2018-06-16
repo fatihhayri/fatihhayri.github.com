@@ -3,7 +3,7 @@ layout: post
 title: 29 Temmuz 2008 web&#039;den seçme haberler
 Date: 2008-07-29 16:06
 Category: Haberler
-tags: açılır-menü, CSS, css hataları, css ile site yapmak, CSS sıfırlama, çek bırak, dikey kayan haber scripti, Firefox, hızlı döngü, internette gezmek, Javascript, jquery, klavye kısayolları, outline, resim galerisi, textbox
+tags: [açılır-menü, CSS, css hataları, css ile site yapmak, CSS sıfırlama, çek bırak, dikey kayan haber scripti, Firefox, hızlı döngü, internette gezmek, Javascript, jquery, klavye kısayolları, outline, resim galerisi, textbox]
 ---
 
 -   CSS'de 20 adet genel karşılaşılan hatalar. [Bağlantı][]

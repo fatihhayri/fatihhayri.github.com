@@ -4,7 +4,7 @@ title: CSS3 Geçiş Efektleri(Transitions)
 Slug: css3-gecis-efektleri-transitions
 Date: 2013-01-15 11:37
 Category: CSS, HTML5
-tags: css3, geçiş-efektleri, transitions, animasyon
+tags: [css3, geçiş-efektleri, transitions, animasyon]
 ---
 
 ## Genel Tanım

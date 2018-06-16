@@ -3,7 +3,7 @@ layout: post
 title: HTML içine html eklemek(import)
 Date: 2014-12-30 11:05
 Category: html
-tags: html5 import asyn
+tags: [html5 import asyn]
 ---
 
 

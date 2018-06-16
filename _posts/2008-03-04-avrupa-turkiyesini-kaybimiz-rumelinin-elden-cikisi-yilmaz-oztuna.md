@@ -3,7 +3,7 @@ layout: post
 title: Avrupa Türkiyesi&#039;ni Kaybımız  Rumeli&#039;nin Elden Çıkışı - Yılmaz Öztuna
 Date: 2008-03-04 00:41
 Category: Kitaplar
-tags: 93 harbi, Avrupa, Avrupa Türkiyesi'ni Kaybımız  Rumeli'nin Elden Çıkışı, balkanlar, osmanlı, rumeli, Türkiye, Yılmaz Öztuna
+tags: [93 harbi, Avrupa, Avrupa Türkiyesi'ni Kaybımız  Rumeli'nin Elden Çıkışı, balkanlar, osmanlı, rumeli, Türkiye, Yılmaz Öztuna]
 ---
 
 ![Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı - Yılmaz Öztuna][]Balkan savaşları ve ibretlerle dolu zamanları çok iyi

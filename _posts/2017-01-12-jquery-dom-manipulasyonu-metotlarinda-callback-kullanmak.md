@@ -3,7 +3,7 @@ layout: post
 title: jQuery DOM manipülasyonu metotlarında callback kullanmak
 Date: 2017-01-12 09:48
 Category: javascript
-tags: jquery, callback, DOM
+tags: [jquery, callback, DOM]
 ---
 
 Kod yazarken bazı alışkanlıklarımız oluyor. Kütüphanelerin ve standartların yeniliklerini takip etmeyince kullandığınız kodun daha basit ve sade olan yeniliklerinden haberimiz olmuyor. jQuery'nin yeniliklerini çok önemsemiyorum, ancak mevcut çalıştığım sitede ([zingat.com](https://www.zingat.com)) ve birçok projede jquery kullanmaya devam ediyoruz. Bu öğrendiğim özellik ile yeniliklerin takibinin önemini bir kez daha gördüm. 

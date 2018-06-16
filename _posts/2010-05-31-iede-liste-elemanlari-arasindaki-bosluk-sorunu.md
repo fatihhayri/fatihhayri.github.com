@@ -3,7 +3,7 @@ layout: post
 title: IE&#039;de Liste elemanları arasındaki boşluk sorunu
 Date: 2010-05-31 22:11
 Category: CSS
-tags: hasLayout, ie, ie6, ie7, liste boşluk sorunu, sorun
+tags: [hasLayout, ie, ie6, ie7, liste boşluk sorunu, sorun]
 ---
 
 Bu sorun ile çok karşılaştım. Bir çok insanda bu sorun nedeni ile bana

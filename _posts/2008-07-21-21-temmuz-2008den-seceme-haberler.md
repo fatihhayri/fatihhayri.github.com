@@ -3,7 +3,7 @@ layout: post
 title: 21 Temmuz 2008&#039;den seçme haberler
 Date: 2008-07-21 16:46
 Category: Haberler, Web Standartları
-tags: firebug, Firefox, HTML Form, internet explorer, jquery, saydam png, sorun, transparent png, WordPress
+tags: [firebug, Firefox, HTML Form, internet explorer, jquery, saydam png, sorun, transparent png, WordPress]
 ---
 
 -   jQuery'e başlamak için 15 adet makale. [Bağlantı][]

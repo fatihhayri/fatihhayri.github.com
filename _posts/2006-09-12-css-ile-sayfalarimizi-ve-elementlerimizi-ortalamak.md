@@ -3,7 +3,7 @@ layout: post
 title: CSS ile sayfalarımızı ve elementlerimizi ortalamak
 Date: 2006-09-12 22:55
 Category: CSS
-tags: Blok-level, CSS, Konumlandırma, ortalamak
+tags: [Blok-level, CSS, Konumlandırma, ortalamak]
 ---
 
 CSS'de kullandığımız içerik alanlarını (blok-level ve inline-level) elementleri nasıl oratalayacağımızı göreceğiz. Inline-level elementleri **text-align:center** özelliğini kullanarak ortalayabiliriz. Blok-level elementleri ortalamak için ise bir iki metod vardır. Sırası ile inceleyelim.

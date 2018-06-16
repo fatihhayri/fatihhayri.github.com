@@ -3,7 +3,7 @@ layout: post
 title: 23 Mayıs 2008 web&#039;den seçme haberler
 Date: 2008-05-23 09:17
 Category: Haberler
-tags: css3, dikey-ortalama, Esnek ardalan, favicon, Flash Player, jquery, masterpage, WordPress Eklentileri
+tags: [css3, dikey-ortalama, Esnek ardalan, favicon, Flash Player, jquery, masterpage, WordPress Eklentileri]
 ---
 
 -   Metinleri büyütmek için css ve javascript ile yapılmış örneği.

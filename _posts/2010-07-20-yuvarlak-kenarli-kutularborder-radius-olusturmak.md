@@ -3,7 +3,7 @@ layout: post
 title: Yuvarlak kenarlı kutular(border-radius) oluşturmak
 Date: 2010-07-20 22:52
 Category: CSS, XHTML
-tags: border-radius, css3, ie6, ie7, ie8, yuvarlak kenar, yuvarlak kenarlı kutular
+tags: [border-radius, css3, ie6, ie7, ie8, yuvarlak kenar, yuvarlak kenarlı kutular]
 ---
 
 Web tasarımcılarını tercih ettiği tekniklerden biridir yuvarlak köşeli

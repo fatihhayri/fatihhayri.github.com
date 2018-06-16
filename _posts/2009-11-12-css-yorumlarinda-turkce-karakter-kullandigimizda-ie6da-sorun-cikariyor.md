@@ -3,7 +3,7 @@ layout: post
 title: CSS Yorumlarında Türkçe Karakter Kullandığımızda İE6&#039;da Sorun Çıkarıyor
 Date: 2009-11-12 23:00
 Category: CSS
-tags: ie6, sorun, Türkçe-karakter, yorum-satırı
+tags: [ie6, sorun, Türkçe-karakter, yorum-satırı]
 ---
 
 Bu durumla bir kaç defa karşılaştım ve sonuncusunda [FirendFeed][]'de

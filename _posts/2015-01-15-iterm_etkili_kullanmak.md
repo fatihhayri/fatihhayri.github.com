@@ -3,7 +3,7 @@ layout: post
 title: iTerm'ü Etkili Kullanmak
 Date: 2015-01-15 11:05
 Category: genel
-tags: iTerm kısayollar
+tags: [iTerm kısayollar]
 ---
 
 Yaklaşık 4 senedir Mac ve aynı zamanda terminal kullanıyorum. Mac'in kendi terminali yerine biraz daha özellikli diye [Mustafa Paltun](https://twitter.com/mpaltun)'un önerisi ile [iTerm](http://iterm2.com/) kullanmaya başladım. 

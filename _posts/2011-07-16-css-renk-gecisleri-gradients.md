@@ -3,7 +3,7 @@ layout: post
 title: CSS Renk Geçişleri (Gradients)
 Date: 2011-07-16 21:28
 Category: CSS
-tags: doğrusal renk geçişi, gradient, radyal renk geçişi, renk geçişi
+tags: [doğrusal renk geçişi, gradient, radyal renk geçişi, renk geçişi]
 ---
 
 CSS ile renk geçişi CSS3 ile birlikte gelen güzel bir özelliktir. Resim

@@ -4,7 +4,7 @@ title: Tüm tarayıcılar için CSS Düzeltmeleri(Hack)
 Slug: tum-tarayicilar-icin-css-duzeltmelerihack
 Date: 2008-12-03 00:25
 Category: CSS, XHTML
-tags: CSS, css düzeltmeleri, düzeltme, hack, ipucu, kod-gizlemek
+tags: [CSS, css düzeltmeleri, düzeltme, hack, ipucu, kod-gizlemek]
 ---
 
 <div style="border:1px solid #f00; font-weight:bold; padding:20px; background-color:#ffd2d3 ">

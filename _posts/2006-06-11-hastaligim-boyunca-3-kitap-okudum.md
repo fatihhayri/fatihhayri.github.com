@@ -3,7 +3,7 @@ layout: post
 title: Hastalığım boyunca 3 kitap okudum
 Date: 2006-06-11 10:26
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 Birincisi Ahmet Refik'in Cem Suran adlı kitabı, kitap cem sultanın

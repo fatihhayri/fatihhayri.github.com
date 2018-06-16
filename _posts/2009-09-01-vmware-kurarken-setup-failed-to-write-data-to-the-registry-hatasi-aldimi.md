@@ -3,7 +3,7 @@ layout: post
 title: VMware Kurarken &quot;Setup failed to write data to the registry&quot; hatası aldım
 Date: 2009-09-01 16:18
 Category: Haberler
-tags: hata, sanal-makina, VMware
+tags: [hata, sanal-makina, VMware]
 ---
 
 VMware güzel bir program. Bilgisayarıma kurarken bi yerde takılıyor ve

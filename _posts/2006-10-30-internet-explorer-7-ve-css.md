@@ -3,7 +3,7 @@ layout: post
 title: Internet Explorer 7 ve CSS
 Date: 2006-10-30 19:50
 Category: CSS, Web Standartları
-tags: CSS, Internet-explorer7, ie7, microsoft, Web Standartları
+tags: [CSS, Internet-explorer7, ie7, microsoft, Web Standartları]
 ---
 
 Internet Explorer 7 tam sürümü yayınlandı, peki bu yeni sürüm

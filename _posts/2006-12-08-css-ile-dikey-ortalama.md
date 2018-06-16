@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Dikey Ortalama
 Date: 2006-12-08 22:24
 Category: CSS, Web Standartları, XHTML
-tags: CSS, dikey, dikey-ortalama, ortalamak, Web Standartları, XHTML
+tags: [CSS, dikey, dikey-ortalama, ortalamak, Web Standartları, XHTML]
 ---
 
 Benimde çok fazla sıkıntısını çektiğim elementlerin dikey de ortalama

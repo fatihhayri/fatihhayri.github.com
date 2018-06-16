@@ -3,7 +3,7 @@ layout: post
 title: 09 Aralık Web&#039;den Seçme Haberler
 Date: 2006-12-09 14:07
 Category: Haberler
-tags: arama motoru, CSS, dikey-ortalama, Faux Column, firebug, Firefox, Javascript, tipografi, web2.0, yuvarlak kenar
+tags: [arama motoru, CSS, dikey-ortalama, Faux Column, firebug, Firefox, Javascript, tipografi, web2.0, yuvarlak kenar]
 ---
 
 Bir web'den seçme haberler bölümünde daha beraberiz :D TV programı gibi

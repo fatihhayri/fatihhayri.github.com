@@ -3,7 +3,7 @@ layout: post
 title: 13 Temmuz 2007 Web&#039;den Seçme Haberler
 Date: 2007-07-13 08:31
 Category: Haberler
-tags: blog, Firefox, Freelance, google, Haberler, Javascript, lightbox
+tags: [blog, Firefox, Freelance, google, Haberler, Javascript, lightbox]
 ---
 
 -   Güzel bir haber Ceviz forum geri dönmüş.

@@ -3,7 +3,7 @@ layout: post
 title: Google Reader&#039;a arama özelliği eklemek
 Date: 2007-08-16 14:52
 Category: Haberler, Javascript
-tags: arama, google reader, Greasmonkey, Haberler, Javascript
+tags: [arama, google reader, Greasmonkey, Haberler, Javascript]
 ---
 
 [RSS][] okumak için Google Reader'ı kullanıyorum. Program kurmadan RSS

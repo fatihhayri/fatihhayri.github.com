@@ -3,7 +3,7 @@ layout: post
 title: HTML5 Bildirimler(Notification)
 Date: 2015-01-12 11:05
 Category: html
-tags: html5 bildirimler
+tags: [html5 bildirimler]
 ---
 
 HTML5 API'leri, mobil uygulamalarda olup web sayfalarında kullanamadığımız özellikleri API olarak ekleyerek eksikleri gideriyor. Bunlardan bir tanesi de Web Notification API. Mobil uygulamlarda kullanıcıya anlık bildirimler göndermek için kullanılan bilgileri bu API sayesinde web sayfalarımızdan da yapabiliyoruz. 

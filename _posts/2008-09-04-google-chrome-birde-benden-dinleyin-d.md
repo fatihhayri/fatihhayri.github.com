@@ -3,7 +3,7 @@ layout: post
 title: Google Chrome - Birde benden dinleyin :D
 Date: 2008-09-04 16:38
 Category: Haberler
-tags: Google Chrome, İnternet Tarayıcısı, safari, Web Standartları, web tarayıcısı, WebKit
+tags: [Google Chrome, İnternet Tarayıcısı, safari, Web Standartları, web tarayıcısı, WebKit]
 ---
 
 ![][100]{: .resimler-sagda} Her yeni çıkan tarayıcının ardından inceleme yapıp yazı

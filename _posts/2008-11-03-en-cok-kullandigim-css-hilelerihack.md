@@ -3,7 +3,7 @@ layout: post
 title: En çok kullandığım CSS Hileleri(Hack)
 Date: 2008-11-03 16:34
 Category: CSS, Web Standartları, XHTML
-tags: clearfix, Dreamweaver, float, hileler, Kutu-Modeli, min-height, snippets
+tags: [clearfix, Dreamweaver, float, hileler, Kutu-Modeli, min-height, snippets]
 ---
 
 Yaklaşık 3-4 senedir css ile web sayfası kodluyorum. CSS ile web sayfası

@@ -3,7 +3,7 @@ layout: post
 title: Uyumlu(Responsive) Web Nedir?
 Date: 2015-01-06 11:05
 Category: css
-tags: css media-query uyumlu-web responsive
+tags: [css media-query uyumlu-web responsive]
 ---
 
 Herkesin dilinde olan responsive web tasarımı nedir? Farklı çeviri önerileri var, ben **Uyumlu web** çevirisini beğendim ve bundan sonra Uyumlu web diye kullanacağım. 

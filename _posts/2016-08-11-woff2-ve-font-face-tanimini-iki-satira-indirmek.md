@@ -3,7 +3,7 @@ layout: post
 title: Woff2 ve font-face tanımını iki satıra indirmek
 Date: 2016-08-11 17:50
 Category: css
-tags: font-face woff2 safari ios
+tags: [font-face woff2 safari ios]
 ---
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">There&#39;ll be woff2 support in Safari 10.<a href="https://t.co/CYy2Y4uIBY">https://t.co/CYy2Y4uIBY</a><a href="https://twitter.com/hashtag/webfonts?src=hash">#webfonts</a> Good news!<br><br>Also Font Loading! ❤️<br>IndexedDB!<br>ShadowDOM!</p>&mdash; Marco Hengstenberg (@nice2meatu) <a href="https://twitter.com/nice2meatu/status/763697596275843072">August 11, 2016</a></blockquote>

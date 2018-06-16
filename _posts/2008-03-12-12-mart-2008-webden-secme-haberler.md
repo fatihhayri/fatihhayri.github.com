@@ -3,7 +3,7 @@ layout: post
 title: 12 Mart 2008 web&#039;den seçme haberler
 Date: 2008-03-12 11:09
 Category: Haberler
-tags: Ajax, google reader, ie8, jquery, json, morecss, png, rss, tipografi
+tags: [Ajax, google reader, ie8, jquery, json, morecss, png, rss, tipografi]
 ---
 
 -   jquery ile listler arasında öğe taşıma örneği. [Bağlantı][]

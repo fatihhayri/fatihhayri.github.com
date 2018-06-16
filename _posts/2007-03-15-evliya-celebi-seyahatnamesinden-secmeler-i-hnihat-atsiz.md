@@ -3,7 +3,7 @@ layout: post
 title: Evliya Çelebi Seyahatnamesi&#039;nden Seçmeler I - H.Nihat Atsız
 Date: 2007-03-15 23:18
 Category: Kitaplar
-tags: Evliya Çelebi, Kitaplar, Nihat Atsız, seyahatname
+tags: [Evliya Çelebi, Kitaplar, Nihat Atsız, seyahatname]
 ---
 
 Evliya Çelebi'nin Seyahatnamaseni şimdiye kadar okumamak benim için bir

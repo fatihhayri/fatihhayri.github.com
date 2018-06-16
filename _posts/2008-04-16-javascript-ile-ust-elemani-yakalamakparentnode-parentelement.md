@@ -3,7 +3,7 @@ layout: post
 title: Javascript ile üst Elemanı yakalamak(parentNode &amp; parentElement)
 Date: 2008-04-16 10:18
 Category: Javascript
-tags: Firefox, ie, Javascript, parentElement, parentNode
+tags: [Firefox, ie, Javascript, parentElement, parentNode]
 ---
 
 Ben şahsen 4-5 defa karşılaştığım bir sorun. İç içe bulunan bir kod

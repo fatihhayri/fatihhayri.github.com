@@ -3,7 +3,7 @@ layout: post
 title: Safari ve Chrome&#039;da metin girdi(textbox) alanlarını kenar çizgileri kaldıralım
 Date: 2009-07-24 09:54
 Category: CSS, XHTML
-tags: dış-hat-çizgisi, Google Chrome, outline, özel-metin-girdi-alanları, safari, textbox
+tags: [dış-hat-çizgisi, Google Chrome, outline, özel-metin-girdi-alanları, safari, textbox]
 ---
 
 Safari ve Google Chrome tarayıcıları her hangi bir metin girdi

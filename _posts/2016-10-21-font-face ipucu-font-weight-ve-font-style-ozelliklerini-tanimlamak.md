@@ -3,7 +3,7 @@ layout: post
 title: font-face ipucu, font-weight ve font-style özelliklerini tanımlamak
 Date: 2016-10-21 14:10
 Category: css
-tags: font-face, font-family, font-style, font-weight
+tags: [font-face, font-family, font-style, font-weight]
 ---
 
 Artık her projemizde @font-face kullanıyoruz. Kullanırken bazı sorunlar yaşıyoruz ve bu sorunlara çözümler üretiyoruz. Bu makalenin konusu da bu sorunlardan birini çözüyor. 

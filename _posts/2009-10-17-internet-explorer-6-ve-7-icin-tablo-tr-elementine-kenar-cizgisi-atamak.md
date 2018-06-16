@@ -3,7 +3,7 @@ layout: post
 title: İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak
 Date: 2009-10-17 18:54
 Category: CSS
-tags: ie6, ie7, internet explorer, kenar-çizgisi, problem
+tags: [ie6, ie7, internet explorer, kenar-çizgisi, problem]
 ---
 
 Yine bir İnternet Explorer sorunu ile karşı karşıyayız. Bu seferki

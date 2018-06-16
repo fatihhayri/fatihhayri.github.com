@@ -3,7 +3,7 @@ layout: post
 title: Byte-Order Mark found in UTF-8 File.
 Date: 2008-09-15 09:31
 Category: Web Standartları, XHTML
-tags: karakter, utf-8, w3c, w3c doğrulama
+tags: [karakter, utf-8, w3c, w3c doğrulama]
 ---
 
 Bazı siteleri w3 kontrolünden geçirirken "The Unicode Byte-Order Mark

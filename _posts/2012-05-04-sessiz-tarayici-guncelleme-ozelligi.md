@@ -3,7 +3,7 @@ layout: post
 title: Sessiz Tarayıcı Güncelleme Özelliği
 Date: 2012-05-04 10:50
 Category: CSS, HTML5
-tags: chrome, farklı tarayıcılara göre kod yazmak, Firefox, internet, internet explorer, İnternet Tarayıcısı
+tags: [chrome, farklı tarayıcılara göre kod yazmak, Firefox, internet, internet explorer, İnternet Tarayıcısı]
 ---
 
 Firefox 12 ile birlikte gelen Sessiz Güncelleme Özelliği bana bu yazıyı

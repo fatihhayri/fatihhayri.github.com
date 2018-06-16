@@ -3,7 +3,7 @@ layout: post
 title: Kızılderili Katliamı - Bartolome De Las Casas
 Date: 2008-06-18 21:54
 Category: Haberler
-tags: Amerika, Bartolome De Las Casas, Kızılderili Katliamı, Soykırım, Zulüm
+tags: [Amerika, Bartolome De Las Casas, Kızılderili Katliamı, Soykırım, Zulüm]
 ---
 
 

@@ -4,7 +4,7 @@ title: CSS İpuçları - 2
 Slug: hata-yakalama-yontemleri
 Date: 2006-07-15 23:59
 Category: CSS
-tags: background, CSS, Hata ayıklama, kenar-çizgisi
+tags: [background, CSS, Hata ayıklama, kenar-çizgisi]
 ---
 
 CSS ile sayfa planlama ve gelişmiş sayfa tasarımlarında başınıza bir çok

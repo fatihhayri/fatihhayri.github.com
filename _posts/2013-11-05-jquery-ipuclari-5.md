@@ -3,7 +3,7 @@ layout: post
 title: jQuery İpuçları - 5
 Date: 2013-11-05 14:59
 Category: jQuery
-tags: jQuery, preventDefault, popup, sayaç
+tags: [jQuery, preventDefault, popup, sayaç]
 ---
 
 

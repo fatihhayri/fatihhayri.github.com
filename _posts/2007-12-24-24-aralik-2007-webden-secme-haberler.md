@@ -3,7 +3,7 @@ layout: post
 title: 24 Aralık 2007 Web&#039;den Seçme Haberler
 Date: 2007-12-24 21:30
 Category: Haberler
-tags: Ajax, Google Analytics, Haberler, ie, lightbox, tipografi, WordPress
+tags: [Ajax, Google Analytics, Haberler, ie, lightbox, tipografi, WordPress]
 ---
 
 -   Nihayet e-posta sorununu hallettik. Yardımları için [Ceyhun][]'a

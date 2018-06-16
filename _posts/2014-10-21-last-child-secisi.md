@@ -3,7 +3,7 @@ layout: post
 title: last-child seçicisi
 Date: 2014-10-21 14:55
 Category: css
-tags: last-child
+tags: [last-child]
 ---
 
 Daha önce [CSS3 seçicileri](/css3-secicileri/) kısmında biraz anlattım. Burada biraz daha detay bilgi vereceğim. 

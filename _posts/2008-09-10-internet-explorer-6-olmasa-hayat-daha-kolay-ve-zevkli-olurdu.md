@@ -3,7 +3,7 @@ layout: post
 title: Internet Explorer 6 olmasa hayat daha kolay ve zevkli olurdu
 Date: 2008-09-10 10:23
 Category: CSS, Javascript, Web Standartları, XHTML
-tags: ie6, internet explorer, İnternet Tarayıcısı
+tags: [ie6, internet explorer, İnternet Tarayıcısı]
 ---
 
 ![][100]

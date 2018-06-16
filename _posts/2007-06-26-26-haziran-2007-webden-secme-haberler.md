@@ -3,7 +3,7 @@ layout: post
 title: 26 Haziran 2007 Web&#039;den Seçme Haberler
 Date: 2007-06-26 13:51
 Category: Haberler
-tags: Ajax, CSS, font, Haberler, html, Javascript, last.fm, web2.0
+tags: [Ajax, CSS, font, Haberler, html, Javascript, last.fm, web2.0]
 ---
 
 -   CSS ile yuvarlak(O şeklinde) menü örneği. [Link][]

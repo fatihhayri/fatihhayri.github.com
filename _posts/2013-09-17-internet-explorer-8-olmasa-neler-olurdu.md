@@ -3,7 +3,7 @@ layout: post
 title: İnternet Explorer 8 Olmasa Neler Olurdu
 Date: 2013-09-17 15:00
 Category: CSS
-tags: ie8, son, tarayıcı
+tags: [ie8, son, tarayıcı]
 ---
 
 Sırayla İnternet Explorer sürümlerini bitirme yazıları yazmak sevindirici. İE8 şu anda %10 civarında ve düşmeye devam ediyor. Hala çok yoğun olarak kullanılan Windows XP’de İnternet Explorer 8 üstü tarayıcı kurulamıyor olması İE8’in güncellenmemesine neden oluyor. İE 8 yeni standartlar konusunda kısır bir tarayıcı HTML5 ve CSS3 özelliklerinin çoğunu desteklemiyor. Yeni stadart test iiçin yapılan ACID3 testi bunun en yii göstergesi; 100 üzerinden 23 alarak sınıfta kalıyor.

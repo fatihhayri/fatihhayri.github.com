@@ -3,7 +3,7 @@ layout: post
 title: 18 Ekim 2007 Web&#039;den Seçme Haberler
 Date: 2007-10-18 09:48
 Category: Haberler
-tags: adobe, CSS, flash, Haberler, lightbox
+tags: [adobe, CSS, flash, Haberler, lightbox]
 ---
 
 -   Web sayfalarında geniş zeminli resimlerin kullanımı.

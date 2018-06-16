@@ -3,7 +3,7 @@ layout: post
 title: 27 Ekim 2006 Web&#039;den haberler
 Date: 2006-10-27 00:18
 Category: Haberler
-tags: alistapart, arama motoru, Document object model, google, ie7, sitepoint, yui
+tags: [alistapart, arama motoru, Document object model, google, ie7, sitepoint, yui]
 ---
 
 Biz bayram tatilinde iken bayağı bir gelişme olmuş bende bunları
@@ -43,7 +43,7 @@ sizlerle paylaşmak istedim
 -   Yine Javascript ile ilgili bir makale, Yahoo javascript
     kütüphanelerini kullanarak çok güzel şeyler elde etmişler.
 
-    [http://www.dustindiaz.com][]
+    http://www.dustindiaz.com
 -   4 günde 3 milyon IE7 indirilmiş
 
 -   Firefox2.0 çıktı ve 3.0 çalışılıyor ve hatta 4.0 hazırlıkları
@@ -61,7 +61,7 @@ sizlerle paylaşmak istedim
     hızlı kullanmamız için eklentiler çıkarıyor. Bunlardan biri de Dojo
     bir göz atın
 
-    [http://blog.dojotoolkit.org][]
+    http://blog.dojotoolkit.org
 
 
   [http://www.alistapart.com/articles/printtopreview]: http://www.alistapart.com/articles/printtopreview
@@ -69,7 +69,5 @@ sizlerle paylaşmak istedim
   [http://www.markboulton.co.uk]: http://www.markboulton.co.uk/journal/comments/five_simple_steps_to_designing_with_colour/
   [http://www.sitepoint.com]: http://www.sitepoint.com/article/html-37-steps-perfect-markup
   [http://skuer.com/]: http://skuer.com/
-  [http://www.dustindiaz.com]: http://www.dustindiaz.com/yahoo-store-gets-rich-interface-with-yui/
   [http://blogs.msdn.com]: http://blogs.msdn.com/bgold/archive/2006/10/24/css-friendly-asp-net-2-0-control-adapters-beta-3-now-available.aspx
   [http://www.sitevista.com/cssvista/]: http://www.sitevista.com/cssvista/
-  [http://blog.dojotoolkit.org]: http://blog.dojotoolkit.org/2006/10/23/dojo-04-is-here

@@ -3,7 +3,7 @@ layout: post
 title: Operasyon Ergenekon - Şamil Tayyar
 Date: 2009-01-17 13:04
 Category: Kitaplar
-tags: darbe, derin-devlet, ergenekon, operasyon-ergenekon, susurluk, şamil-tayyar
+tags: [darbe, derin-devlet, ergenekon, operasyon-ergenekon, susurluk, şamil-tayyar]
 ---
 
 ![Operasyon Ergenekon][]Bu kitabı bir arkadaşımın önerisi ile okumaya

@@ -3,7 +3,7 @@ layout: post
 title: Modern Arayüz Geliştirme Ortamları
 Date: 2015-03-24 10:41
 Category: genel
-tags: modern arayüz geliştime
+tags: [modern arayüz geliştime]
 ---
 
 Arayüz geliştiricilerinin hayatı hiç bir zaman durağan olmadı. Her zaman kendini güncellemek gerekiyor. 

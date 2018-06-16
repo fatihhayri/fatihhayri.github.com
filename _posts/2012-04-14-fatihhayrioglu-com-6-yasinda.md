@@ -3,7 +3,7 @@ layout: post
 title: fatihhayrioglu.com 6. yaşında
 Date: 2012-04-14 16:22
 Category: Haberler
-tags: 6.sene, css3, fatihhayrioglu.com
+tags: [6.sene, css3, fatihhayrioglu.com]
 ---
 
 Seneler ne kadar hızlı geçiyor. 6 sene az değil. Geçen seneye şöyle bir

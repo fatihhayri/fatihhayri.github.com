@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Menü Yapmak III - Dikey Açılır Menüler
 Date: 2006-11-08 07:04
 Category: CSS, Web Standartları, XHTML
-tags: açılır-menü, CSS, dikey açılır menü, drop-down-menu, liste, menü, pop-out-menu, Web Standartları, XHTML
+tags: [açılır-menü, CSS, dikey açılır menü, drop-down-menu, liste, menü, pop-out-menu, Web Standartları, XHTML]
 ---
 
 Bu tip menüleri javascript ile yapabiliriz. HTML ve CSS ile de daha
@@ -188,8 +188,8 @@ soldan 149 px yerine eksi 149px ile sola almak oldu
 ## Kaynaklar
 
 -   [http://www.alistapart.com/articles/horizdropdowns][]
--   [http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp][]
--   [http://www.seoconsultants.com/css/menus/tutorial/][]
+-   http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp
+-   http://www.seoconsultants.com/css/menus/tutorial
 -   [http://www.cssplay.co.uk/menus/flyout2.html][]
 
   [100]: /images/menu3_resim1.gif
@@ -201,6 +201,4 @@ soldan 149 px yerine eksi 149px ile sola almak oldu
   [linkini]: http://www.alistapart.com:80/articles/dropdowns/
   [indir]: /dokumanlar/menu3.zip
   [http://www.alistapart.com/articles/horizdropdowns]: http://www.alistapart.com/articles/horizdropdowns
-  [http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp]: http://www.tanfa.co.uk/css/examples/menu/tutorial-h.asp
-  [http://www.seoconsultants.com/css/menus/tutorial/]: http://www.seoconsultants.com/css/menus/tutorial/
   [http://www.cssplay.co.uk/menus/flyout2.html]: http://www.cssplay.co.uk/menus/flyout2.html

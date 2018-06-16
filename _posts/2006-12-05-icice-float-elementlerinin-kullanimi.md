@@ -3,7 +3,7 @@ layout: post
 title: İçiçe Float Elementlerinin Kullanımı
 Date: 2006-12-05 13:56
 Category: CSS, Web Standartları, XHTML
-tags: CSS, float, menü, planlama, Web Standartları, XHTML
+tags: [CSS, float, menü, planlama, Web Standartları, XHTML]
 ---
 
 İçiçe float elementlerinin kullanımı basit bir kodlama ile bize çok

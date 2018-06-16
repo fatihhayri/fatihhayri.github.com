@@ -3,7 +3,7 @@ layout: post
 title: Yavuz Sultan Selim - Yılmaz Öztuna
 Date: 2006-08-23 23:23
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![Yavuz Sultan Selim - Yılmaz Öztuna][]Büyük Türk "Fenomeni" Yavuz

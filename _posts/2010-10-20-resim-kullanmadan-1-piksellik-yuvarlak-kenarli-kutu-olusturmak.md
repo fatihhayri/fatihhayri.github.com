@@ -3,7 +3,7 @@ layout: post
 title: Resim Kullanmadan 1 piksellik Yuvarlak Kenarlı Kutu Oluşturmak
 Date: 2010-10-20 21:46
 Category: CSS, Web Standartları, XHTML
-tags: 1px, Border, eksi-margin, Margin, yuvarlak kenar, yuvarlak kenarlı kutular
+tags: [1px, Border, eksi-margin, Margin, yuvarlak kenar, yuvarlak kenarlı kutular]
 ---
 
 ![][100]

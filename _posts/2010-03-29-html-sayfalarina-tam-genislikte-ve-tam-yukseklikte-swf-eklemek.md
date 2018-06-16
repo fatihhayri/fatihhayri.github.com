@@ -4,7 +4,7 @@ title: HTML Sayfalarına %100 genişlikte ve %100 yükseklikte flash dosyaları 
 Slug: html-sayfalarina-tam-genislikte-ve-tam-yukseklikte-swf-eklemek
 Date: 2010-03-29 21:46
 Category: CSS, XHTML
-tags: 0, flash, html, swf, swfobject, tam ekran
+tags: [0, flash, html, swf, swfobject, tam ekran]
 ---
 
 Site üzerinden gelen bazı sorular belli aralıklarla farklı kişilerden

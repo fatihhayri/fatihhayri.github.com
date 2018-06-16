@@ -3,7 +3,7 @@ layout: post
 title: 21 Ağustos 2007 Web&#039;den Seçme Haberler
 Date: 2007-08-21 22:50
 Category: Haberler
-tags: css3.0, firebug, Haberler, table, tipografi, Visual-Studio, web2.0, xslt
+tags: [css3.0, firebug, Haberler, table, tipografi, Visual-Studio, web2.0, xslt]
 ---
 
 -   VS.Net ile birlikte gelen ajax kontrollerinden takvim'i ve genel
@@ -16,7 +16,6 @@ tags: css3.0, firebug, Haberler, table, tipografi, Visual-Studio, web2.0, xslt
 -   Beklemek zorunda olduğumuz bir kaç CSS özelliği. [Link][4]
 -   Tipografi hakkında çok güzel bir site açılmış. [Link][5]
 -   Farklı web tarayıcılarında sayfalarımızı nasıl test ederiz.
-    [Link][6]
 -   Kullandığınız tarayıcının CSS3.0 ne kadar desteklediğini test etmek
     için bu siteye uğrayın.
 -   XSLT ve CSS işlevselliği hakkında bir makale. [Link][8]
@@ -36,8 +35,6 @@ tags: css3.0, firebug, Haberler, table, tipografi, Visual-Studio, web2.0, xslt
   [4]: http://www.css3.info/css-techniques-i-cant-wait-to-be-rid-of/
     "CSS3.0"
   [5]: http://ilovetypography.com/ "tipografi"
-  [6]: http://www.vandelaydesign.com/blog/design/effectively-testing-your-website-in-multiple-browsers/
-    "web tarayıcılarına göre test"
   [8]: http://itc-382.blogspot.com/2007/08/magic-of-xslt.html
     "XSLT ve CSS"
   [9]: http://www.paulspoerry.com/index.php/2007/05/18/125-code-snippets-for-web-designers/

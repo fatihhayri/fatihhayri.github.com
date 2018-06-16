@@ -2,7 +2,7 @@
 layout: page
 permalink: /about/
 title: Fatih Hayrioğlu
-tags: fatihhayrioglu.com
+tags: [fatihhayrioglu.com]
 ---
 
 Nüfusa 1978 Trabzon/Sürmene doğumlu olarak kaydedilmişim. 

@@ -3,7 +3,7 @@ layout: post
 title: Süper bir özellik display:inline-block
 Date: 2010-02-28 21:28
 Category: CSS, XHTML
-tags: dikey-ortalama, display:inline-block, Kutu-Modeli, kutular, vertical-align
+tags: [dikey-ortalama, display, inline-block, Kutu-Modeli, kutular, vertical-align]
 ---
 
 Alışkanlıklar kolay kolay bırakılmıyor. Zamanında

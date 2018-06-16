@@ -3,7 +3,7 @@ layout: post
 title: 23 Ocak 2007 WEb&#039;den seçme haberler
 Date: 2007-01-23 11:35
 Category: Haberler
-tags: CSS, istatistik, Javascript, web2.0, WordPress
+tags: [CSS, istatistik, Javascript, web2.0, WordPress]
 ---
 
 -   Daha önceki haberlerde de bahsettiğimiz Javascript kütüphanesi

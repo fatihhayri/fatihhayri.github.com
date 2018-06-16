@@ -3,7 +3,7 @@ layout: post
 title: Googe Chrome 12 ile birlikte gelen güzel bir özellik(Built-in de-obfuscation)
 Date: 2011-06-22 19:31
 Category: Haberler, Javascript
-tags: Built-in de-obfuscation, chrome, tarayıcı
+tags: [Built-in de-obfuscation, chrome, tarayıcı]
 ---
 
 Javascript kodlarının daha hızlı yüklenmesi, dosya boyutunun azaltılması

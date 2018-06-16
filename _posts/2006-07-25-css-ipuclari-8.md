@@ -3,7 +3,7 @@ layout: post
 title: CSS İpuçları - 8
 Date: 2006-07-25 01:01
 Category: CSS
-tags: class, CSS, id, sınıf
+tags: [class, CSS, id, sınıf]
 ---
 
 Sınıf ve Id isimlerimizi fiziksel özelliklerine göre değil işlevsel

@@ -3,7 +3,7 @@ layout: post
 title: 27 Eylül 2007 Web&#039;den Seçme Haberler
 Date: 2007-09-27 15:01
 Category: Haberler
-tags: Anlamlı web, ASP.NET, CSS, ekran, gelen, Haberler, mootools, sildeshow
+tags: [Anlamlı web, ASP.NET, CSS, ekran, gelen, Haberler, mootools, sildeshow]
 ---
 
 -   Asp.net ile sitelerin ekran görüntüsünü almak. [Bağlantı][]

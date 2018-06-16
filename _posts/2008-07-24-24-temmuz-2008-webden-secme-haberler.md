@@ -3,7 +3,7 @@ layout: post
 title: 24 Temmuz 2008 web&#039;den seçme haberler
 Date: 2008-07-24 17:31
 Category: Haberler
-tags: CSS ile bar yapmak, Firefox, gmail, internet explorer 6, iPhone, jquery, Küçük ekranlı araçlar, outlook, psd den xhtml e, WordPress, yazı tipi gömme
+tags: [CSS ile bar yapmak, Firefox, gmail, internet explorer 6, iPhone, jquery, Küçük ekranlı araçlar, outlook, psd den xhtml e, WordPress, yazı tipi gömme]
 ---
 
 -   CSS ile Bar Yapımı - aorgun.net Kırık bağlantı.

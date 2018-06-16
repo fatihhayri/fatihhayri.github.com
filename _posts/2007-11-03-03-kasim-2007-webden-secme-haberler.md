@@ -3,7 +3,7 @@ layout: post
 title: 03 Kasım 2007 Web&#039;den Seçme Haberler
 Date: 2007-11-03 17:13
 Category: Haberler
-tags: Anlamlı web, ASP.NET, CSS, Haberler, safari, Visual-Studio, xslt, z-index
+tags: [Anlamlı web, ASP.NET, CSS, Haberler, safari, Visual-Studio, xslt, z-index]
 ---
 
 -   Hard drive hızının Visula Studio performansına etkisi. [Bağlantı][]

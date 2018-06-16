@@ -3,7 +3,7 @@ layout: post
 title: Angularjs'de doğrulanmayan input değerine erişmek
 Date: 2014-11-12 18:05
 Category: angularjs
-tags: angularjs model
+tags: [angularjs model]
 ---
 
 Sahibinden.com'da angularjs ile çalışıyoruz. Bazı sorunlarla karşılaşıyoruz. Bunları buraya yazmanın benzer sorunları yaşayanlar için güzel bir kaynak olacağını düşündüm. 

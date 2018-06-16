@@ -3,7 +3,7 @@ layout: post
 title: IE10 ve sonrasında input temizle ikonunu kaldırmak
 Date: 2016-10-17 11:42
 Category: css
-tags: ie, düzenleme
+tags: [ie, düzenleme]
 ---
 
 Uzun süredir İnternet Explorer için düzeltme yazmamıştım. Ne güzel dünya. Gerçi bu bir düzeltme midir bilemedim.

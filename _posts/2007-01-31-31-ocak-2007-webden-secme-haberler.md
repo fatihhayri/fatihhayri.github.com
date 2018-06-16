@@ -3,7 +3,7 @@ layout: post
 title: 31 Ocak 2007 WEb&#039;den seçme haberler
 Date: 2007-01-31 23:41
 Category: Haberler
-tags: gmail, google, Javascript, web, WordPress, Zoho-Notebook
+tags: [gmail, google, Javascript, web, WordPress, Zoho-Notebook]
 ---
 
 -   Türk Telekomünikasyon Aşž'den yapılan yazılı açıklamada, Türkiye

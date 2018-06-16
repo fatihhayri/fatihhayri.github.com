@@ -3,7 +3,7 @@ layout: post
 title: Sürüm Kontrol Sistemi Git
 Date: 2011-05-21 12:15
 Category: Haberler
-tags: git, linux, mac, sürüm kontrol sistemi
+tags: [git, linux, mac, sürüm kontrol sistemi]
 ---
 
 ![][100]

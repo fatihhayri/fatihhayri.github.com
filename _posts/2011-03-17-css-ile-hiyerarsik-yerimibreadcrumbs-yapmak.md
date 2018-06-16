@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Hiyerarşik Yerimi(Breadcrumbs) Yapmak
 Date: 2011-03-17 18:21
 Category: CSS, Web Standartları, XHTML
-tags: Breadcrumbs, hiyerarşik yerimi, menü, navigasyon
+tags: [Breadcrumbs, hiyerarşik yerimi, menü, navigasyon]
 ---
 
 Kodladığım bir çok sitede eğer site alt sayfalar ve onlarında alt

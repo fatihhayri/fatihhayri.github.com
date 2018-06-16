@@ -4,7 +4,7 @@ title: CSS İpucu 29 CSS ile Önden Resim Yükleme Teknikleri
 Slug: css-ile-onden-resim-yukleme-teknikleri
 Date: 2011-01-06 23:31
 Category: CSS
-tags: background, önden resim yüklemek, preloading
+tags: [background, önden resim yüklemek, preloading]
 ---
 
 :hover display:none ile gizlenmiş öğelere atanmış ardaalan resimlerini

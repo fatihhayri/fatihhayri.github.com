@@ -3,7 +3,7 @@ layout: post
 title: WordPress sürümümü yükselttim
 Date: 2008-04-23 17:50
 Category: Haberler
-tags: WordPress, wordpress 2.5, yükseltme
+tags: [WordPress, wordpress 2.5, yükseltme]
 ---
 
 WordPress sürümümü son sürüm olan 2.5'e yükselttim. Güvenlik ve e-posta

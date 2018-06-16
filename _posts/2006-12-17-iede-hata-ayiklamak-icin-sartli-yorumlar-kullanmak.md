@@ -3,7 +3,7 @@ layout: post
 title: IE&#039;de Hata Ayıklamak için şartlı Yorumlar Kullanmak
 Date: 2006-12-17 16:03
 Category: CSS, Web Standartları, XHTML
-tags: CSS, hata, Hata ayıklama, ie-fix, Web Standartları, XHTML, yorum
+tags: [CSS, hata, Hata ayıklama, ie-fix, Web Standartları, XHTML, yorum]
 ---
 
 CSS ile web sitesi kodlamanın en büyük sorunu CSS'in özelliklerini

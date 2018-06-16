@@ -3,7 +3,7 @@ layout: post
 title: 21 Nisan 2008 web&#039;den seçme haberler
 Date: 2008-04-21 09:20
 Category: Haberler
-tags: ASP.NET, css başlangıç dosyası, dinamik css, gmail, google pagerank, jquery, kısayollar, menü, resim galerisi, web-form
+tags: [ASP.NET, css başlangıç dosyası, dinamik css, gmail, google pagerank, jquery, kısayollar, menü, resim galerisi, web-form]
 ---
 
 -   Asp.net MVC kaynak kodları yayımlandı. MVC üzerine bir makale.

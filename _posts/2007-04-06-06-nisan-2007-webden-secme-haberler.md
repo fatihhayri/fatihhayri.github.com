@@ -3,7 +3,7 @@ layout: post
 title: 06 Nisan 2007 Web&#039;den seçme haberler
 Date: 2007-04-06 16:42
 Category: Haberler
-tags: CSS, Dreamweaver, flash, google maps, Haberler, WordPress
+tags: [CSS, Dreamweaver, flash, google maps, Haberler, WordPress]
 ---
 
 -   Kolay şekilde ajax kodları yazmamız için ücretsiz bir editör TIBCO.
@@ -16,7 +16,7 @@ tags: CSS, Dreamweaver, flash, google maps, Haberler, WordPress
 -   Güzel bir Dreamweaver Eğitim sayfa listesi. [Link][5]
 -   Google kişiye özel harita oluşturmamıza olanak sağlıyor artık.
     [Link][6]
--   Ceyhun Aksan'dan "Wordpress İpuçları ve SEO" makalesi. [Link][7]
+-   Ceyhun Aksan'dan "Wordpress İpuçları ve SEO" makalesi.
 -   Teknosyer'den çok güzel bir makale "ASP sistemden WordPress’e geçiş"
     . [Link][8]
 
@@ -32,6 +32,4 @@ tags: CSS, Dreamweaver, flash, google maps, Haberler, WordPress
   [5]: http://www.smashingmagazine.com/2007/04/04/adobe-dreamweaver-tutorials/
     "Link"
   [6]: http://googlesystem.blogspot.com/2007/04/create-personalized-google-maps.html
-    "Link"
-  [7]: http://www.ceyhunaksan.com/wordpress-ipuclari-ve-seo/ "Link"
   [8]: http://www.teknoseyir.com/asp-sistemden-wordpresse-gecis/ "Link"

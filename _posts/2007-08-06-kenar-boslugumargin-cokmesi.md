@@ -3,7 +3,7 @@ layout: post
 title: Kenar Boşluğu(Margin) Çökmesi
 Date: 2007-08-06 09:13
 Category: CSS, XHTML
-tags: CSS, kenar-dış-boşluğu, Margin, margin-çökmesi, marj, XHTML
+tags: [CSS, kenar-dış-boşluğu, Margin, margin-çökmesi, marj, XHTML]
 ---
 
 Daha önceki makalelerimde devamlı margin kelimesini kullandım ancak bu

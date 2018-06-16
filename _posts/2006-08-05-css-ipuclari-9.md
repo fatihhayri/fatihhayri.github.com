@@ -3,7 +3,7 @@ layout: post
 title: CSS İpuçları - 9
 Date: 2006-08-05 14:22
 Category: CSS
-tags: CSS, XHTML, yorum
+tags: [CSS, XHTML, yorum]
 ---
 
 Kodlarınıza yorum satırı ekleyerek daha anlaşılır ve erişilebilir kılın.

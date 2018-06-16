@@ -3,7 +3,7 @@ layout: post
 title: 18 Mart 2008 web&#039;den seçme haberler
 Date: 2008-03-18 11:27
 Category: Haberler
-tags: asp.net 2.0, bitişik kardeş seçiciler, CSS, css ipuçları, css-menü, ie8, sayfalama, WordPress
+tags: [asp.net 2.0, bitişik kardeş seçiciler, CSS, css ipuçları, css-menü, ie8, sayfalama, WordPress]
 ---
 
 -   SitePoint CSS referansından sonra HTML referansını yayınladı. Güzel

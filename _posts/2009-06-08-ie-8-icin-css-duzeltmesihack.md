@@ -3,7 +3,7 @@ layout: post
 title:  IE 8 için CSS Düzeltmesi(Hack)
 Date: 2009-06-08 10:58
 Category: CSS, XHTML
-tags: css-düzelmesi, ie8, ie8-fix, internet explorer, İnternet Tarayıcısı
+tags: [css-düzelmesi, ie8, ie8-fix, internet explorer, İnternet Tarayıcısı]
 ---
 
 ![ie8][]İnternet Explorer 8 çıktı ve hızla yayılıyor. Sitemi ziyaret

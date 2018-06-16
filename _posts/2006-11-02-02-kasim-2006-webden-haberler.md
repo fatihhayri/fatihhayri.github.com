@@ -3,7 +3,7 @@ layout: post
 title: 2 Kasım 2006 Web&#039;den haberler
 Date: 2006-11-02 08:21
 Category: Haberler
-tags: blog, dynamic drive, google, istatistik, jotspot, youtube
+tags: [blog, dynamic drive, google, istatistik, jotspot, youtube]
 ---
 
 -   Dynamic Drive CSS Sayfa şžablonları bölümünde güzel sayfa şablonları

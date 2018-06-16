@@ -3,7 +3,7 @@ layout: post
 title: OSMANLI ALİMLERİ VE SANATKARLARI &#58; Ahmed Refik
 Date: 2006-08-09 00:11
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![Osmanlı Alimleri ve Sanatkarları][]Osmanlı Uygarlığının temel taşları

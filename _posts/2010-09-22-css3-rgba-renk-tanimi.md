@@ -3,7 +3,7 @@ layout: post
 title: CSS3 RGBA Renk Tanımı
 Date: 2010-09-22 22:55
 Category: CSS, Web Standartları
-tags: alfa kanalı, css3, renk tanımı, renk-birimleri, rgba, saydamlık
+tags: [alfa kanalı, css3, renk tanımı, renk-birimleri, rgba, saydamlık]
 ---
 
 CSS ile renk değeri ataması yapılırken çeşitli yöntemler kullanıyoruz.

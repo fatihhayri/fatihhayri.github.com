@@ -3,7 +3,7 @@ layout: post
 title: CSS İpucu 20&#58; Firefox&#039;da Kaydırma Çubuğu Çıkarma
 Date: 2009-04-16 10:21
 Category: CSS
-tags: Firefox, ipucu, kaydırma-çubuğu, mozilla, overflow
+tags: [Firefox, ipucu, kaydırma-çubuğu, mozilla, overflow]
 ---
 
 Firefox İnternet Explorer'un tersine eğer sayfa yüksekliği kaydırma

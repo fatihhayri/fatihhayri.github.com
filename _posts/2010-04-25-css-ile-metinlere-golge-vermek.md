@@ -3,7 +3,7 @@ layout: post
 title: CSS ile metinlere gölge vermek
 Date: 2010-04-25 15:30
 Category: CSS, Web Standartları, XHTML
-tags: dropshadow, glow, gölge, ie desteklemiyor, metin, text-shadow
+tags: [dropshadow, glow, gölge, ie desteklemiyor, metin, text-shadow]
 ---
 
 Metinlere gölge vermek, site görselliği açısından her zaman

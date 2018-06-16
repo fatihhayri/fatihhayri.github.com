@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Seçicileri
 Date: 2011-09-05 21:50
 Category: CSS
-tags: css3, css3 seçicileri, nth seçicileri, Özellik-seçicileri
+tags: [css3, css3 seçicileri, nth seçicileri, Özellik-seçicileri]
 ---
 
 CSS için seçiciler çok önemlidir. CSS3 ile birlikte gelen yeni seçiciler

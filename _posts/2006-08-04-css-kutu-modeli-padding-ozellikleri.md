@@ -3,7 +3,7 @@ layout: post
 title: CSS Kutu Modeli - Padding Özellikleri
 Date: 2006-08-04 23:29
 Category: CSS
-tags: CSS, Padding, padding-bottom, padding-left, padding-right, padding-top
+tags: [CSS, Padding, padding-bottom, padding-left, padding-right, padding-top]
 ---
 
 Padding içerik alanı ile kenarlık arasındaki alandır.

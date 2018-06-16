@@ -3,7 +3,7 @@ layout: post
 title: 14 Mayıs 2008 web&#039;den seçme haberler
 Date: 2008-05-14 14:09
 Category: Haberler
-tags: Ajax, CSS performansı, css3, firebug, jquery, RSS ikonları, Seçiciler, yuvarlak kenar
+tags: [Ajax, CSS performansı, css3, firebug, jquery, RSS ikonları, Seçiciler, yuvarlak kenar]
 ---
 
 -   1 piksel kırılma ile yuvarlak kenarlı köşeler yapmak. [Bağlantı][]

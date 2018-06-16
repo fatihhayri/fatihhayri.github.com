@@ -3,7 +3,7 @@ layout: post
 title: CSS Kod Yazma Düzeni
 Date: 2009-06-03 16:08
 Category: CSS
-tags: CSS, CSS kodlarını optimize etmek, css-kodlama-düzeni, Dreamweaver, optimize, standart
+tags: [CSS, CSS kodlarını optimize etmek, css-kodlama-düzeni, Dreamweaver, optimize, standart]
 ---
 
 CSS yazarken bazı kurallar koyarsak ve bu kurallara göre kodumuzu
@@ -409,7 +409,7 @@ ul{margin:0; padding:0; list-style:none;}
     (dw ayarları)
 -   [http://www.smashingmagazine.com/2008/05/02/improving-code-readability-with-css-styleguides/][]
     (süper)
--   [http://www.louddog.com/bloggity/2008/03/css-best-practices.php][]
+-   http://www.louddog.com/bloggity/2008/03/css-best-practices.php
 -   [http://css-tricks.com/indent-css-changes-you-are-unsure-about/][]
 -   [http://woork.blogspot.com/2008/03/write-well-structured-css-file-without.html][]
     (güzel)
@@ -448,8 +448,6 @@ ul{margin:0; padding:0; list-style:none;}
     "http://help.adobe.com/en_US/Dreamweaver/10.0_Using/WS6A10E93F-6587-4e1b-956C-03CBD7F678BBa.html"
   [http://www.smashingmagazine.com/2008/05/02/improving-code-readability-with-css-styleguides/]: http://www.smashingmagazine.com/2008/05/02/improving-code-readability-with-css-styleguides/
     "http://www.smashingmagazine.com/2008/05/02/improving-code-readability-with-css-styleguides/"
-  [http://www.louddog.com/bloggity/2008/03/css-best-practices.php]: http://www.louddog.com/bloggity/2008/03/css-best-practices.php
-    "http://www.louddog.com/bloggity/2008/03/css-best-practices.php"
   [http://css-tricks.com/indent-css-changes-you-are-unsure-about/]: http://css-tricks.com/indent-css-changes-you-are-unsure-about/
     "http://css-tricks.com/indent-css-changes-you-are-unsure-about/"
   [http://woork.blogspot.com/2008/03/write-well-structured-css-file-without.html]: http://woork.blogspot.com/2008/03/write-well-structured-css-file-without.html

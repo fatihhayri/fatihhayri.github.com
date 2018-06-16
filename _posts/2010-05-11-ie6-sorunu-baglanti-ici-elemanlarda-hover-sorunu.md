@@ -3,7 +3,7 @@ layout: post
 title: İE6 sorunu&#58; Bağlantı içi elemanlarda hover sorunu
 Date: 2010-05-11 23:19
 Category: CSS
-tags: :hover, bağlantı içi, ie6, sorun
+tags: [hover, bağlantı içi, ie6, sorun]
 ---
 
 Yine bir ie6 sorunu ile karşı karşıyayız. Evet proje biraz dallı budaklı

@@ -3,7 +3,7 @@ layout: post
 title: Web Standards Solutions&#58; The Markup and Style Handbook &#58; Dan Cederholm
 Date: 2006-08-11 00:32
 Category: CSS, Kitaplar
-tags: CSS, markup, solution, standart, web
+tags: [CSS, markup, solution, standart, web]
 ---
 
 ![Web Standartları][]Web standartlarına en uygun kodlamayı nasıl

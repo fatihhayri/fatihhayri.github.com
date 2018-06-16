@@ -3,7 +3,7 @@ layout: post
 title: Bilgisayar başında hayat geçirenlere
 Date: 2014-08-28 14:55
 Category: genel
-tags: sağlık ağrılar
+tags: [sağlık ağrılar]
 ---
 
 Bizim gibi hayatını bilgisayar başında geçiren kişiler için çalışma ortamının yeterli donanıma sahip olması önem kazanıyor. İlk başta çok etkilerini hissetmesek de zamanla kendini gösteriyor rahatsızlıklar. 

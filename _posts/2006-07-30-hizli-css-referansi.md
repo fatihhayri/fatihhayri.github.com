@@ -3,7 +3,7 @@ layout: post
 title: Hızlı CSS Referansı
 Date: 2006-07-30 14:41
 Category: CSS
-tags: ardalan-özellikleri, background, background-attachment, background-color, background-image, background-position, background-repeat, CSS
+tags: [ardalan-özellikleri, background, background-attachment, background-color, background-image, background-position, background-repeat, CSS]
 ---
 
 CSS, web kodlayıcılarına (X)HTML dökümanlarına stil uygulamalarını

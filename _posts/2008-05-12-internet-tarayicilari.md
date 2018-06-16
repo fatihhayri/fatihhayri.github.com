@@ -3,7 +3,7 @@ layout: post
 title: İnternet Tarayıcıları
 Date: 2008-05-12 22:27
 Category: Haberler
-tags: firebug, Firefox, ie, İnternet Tarayıcısı, Opera, safari, web tarayıcısı, WebKit
+tags: [firebug, Firefox, ie, İnternet Tarayıcısı, Opera, safari, web tarayıcısı, WebKit]
 ---
 
 ![İnternet Tarayıcıları][]

@@ -3,7 +3,7 @@ layout: post
 title: Futbol ve Küreselleşme - Pascal Boniface
 Date: 2009-03-26 11:07
 Category: Kitaplar
-tags: futbol, futbol-anlayışı, küreşelleşme
+tags: [futbol, futbol-anlayışı, küreşelleşme]
 ---
 
 ![Futbol ve küreselleşme][]Bir oyun olarak gördüğümüz futbol'un ne kadar

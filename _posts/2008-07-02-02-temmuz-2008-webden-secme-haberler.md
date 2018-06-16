@@ -3,7 +3,7 @@ layout: post
 title: 02 Temmuz 2008 web&#039;den seçme haberler
 Date: 2008-07-02 13:10
 Category: Haberler
-tags: aranabilir swf, Atom, BlogEngine.Net, float, Google Sitemap, jquery, js ile resim yakınlaştırma, otomatik önerme, rss
+tags: [aranabilir swf, Atom, BlogEngine.Net, float, Google Sitemap, jquery, js ile resim yakınlaştırma, otomatik önerme, rss]
 ---
 
 -   Asp.net'de otomatik önermeli metin grdi alanları yapmak.

@@ -3,10 +3,10 @@ layout: post
 title: Bir Darbenin Anatomisi - Yılmaz Öztuna
 Date: 2006-06-28 23:10
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
-![birdarbenin_anatomisi.jpg][]Gizli kalmış tarihi aydınlatan mükemmel
+<span class="kitap-resmi">![birdarbenin_anatomisi.jpg][]</span> Gizli kalmış tarihi aydınlatan mükemmel
 bir kitap. Osmanlının yıklışa geçtiği dönemi Sultan Abdulaziz'in katilin
 anlatan bir kitap. Herşeyi tüm çıplaklığı ile anlatan bir
 kitap. Arka Kapak: Yılmaz Öztuna bu kitabında 1876 askeri

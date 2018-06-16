@@ -3,7 +3,7 @@ layout: post
 title: CSS3 resize özelliği
 Date: 2011-08-10 13:18
 Category: CSS
-tags: boyut değiştirme, css3, resize
+tags: [boyut değiştirme, css3, resize]
 ---
 
 resize özelliği kullanıcıya elementin boyutlarını ayarlama imkanı

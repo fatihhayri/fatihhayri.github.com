@@ -3,7 +3,7 @@ layout: post
 title: 11 Ağustos 2008 web&#039;den seçme haberler
 Date: 2008-08-11 15:22
 Category: Haberler
-tags: Ajax, arama motoru, firebug, Güzel Menü, Javascript, RSS çeviri, wordpress tema
+tags: [Ajax, arama motoru, firebug, Güzel Menü, Javascript, RSS çeviri, wordpress tema]
 ---
 
 -   En çok kullanılan 15 javascript/ajax kodu. Kırık bağlantı.

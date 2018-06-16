@@ -3,7 +3,7 @@ layout: post
 title: IE&#039;da İkikat görülen Margin Problemi ve Çözümü
 Date: 2006-08-10 14:40
 Category: CSS
-tags: CSS, Çözüm, double margin, ie, ie-fix, sorun
+tags: [CSS, Çözüm, double margin, ie, ie-fix, sorun]
 ---
 
 Bir blok-level elemente float değeri ve margin değeri atandığında IE'da

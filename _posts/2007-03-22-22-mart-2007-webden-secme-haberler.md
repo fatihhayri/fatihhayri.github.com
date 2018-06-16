@@ -3,7 +3,7 @@ layout: post
 title: 22 Mart 2007 Web&#039;den seçme haberler
 Date: 2007-03-22 23:37
 Category: Haberler
-tags: Accesskey, adobe, Ajax, Apollo, CSS, dotMobi, google, Haberler, ie7, Javascript, popup
+tags: [Accesskey, adobe, Ajax, Apollo, CSS, dotMobi, google, Haberler, ie7, Javascript, popup]
 ---
 
 -   WordPress 2.1' e geçtikten sonra Bana ulaşın kısmında sorun
@@ -25,8 +25,8 @@ tags: Accesskey, adobe, Ajax, Apollo, CSS, dotMobi, google, Haberler, ie7, Javas
     [Link][2]
 -   Yeni bir javascript kütüphanesi. DED|Chain daha kolay eklemeyi
     gösteren ve YUI, jQuery gibi kütüphanelerinin kullanımını anlatan
-    bir site. [Link][3]
--   dotMobi, cep telefonları için web geliştirme rehberi. [Link][4]
+    bir site.
+-   dotMobi, cep telefonları için web geliştirme rehberi.
 -   Javascript ve DOM ile Accesskey'ler atamak ve düzenlemeyi anlatan
     İngilizce bir makale. [Link][5]
 -   Tasarım kodlamacıların takip etmesi gereken 42 site. [Link][6]
@@ -44,11 +44,7 @@ tags: Accesskey, adobe, Ajax, Apollo, CSS, dotMobi, google, Haberler, ie7, Javas
     "Link"
   [duyurdu]: http://labs.adobe.com/technologies/apollo/ "duyurdu"
   [link]: http://www.adobe.com/devnet/videos/apollo_demo07/index.html
-    "link"
   [2]: http://ajaxian.com/archives/choosing-an-ajax-framework "Link"
-  [3]: http://dedchain.dustindiaz.com/ "Link"
-  [4]: http://www.blueflavor.com/blog/mobile/dotmobi_mobile_web_developers_guide.php
-    "Link"
   [5]: http://www.thinkvitamin.com/features/javascript/setting-and-retrieving-accesskeys-with-javascript-and-dom
     "Link"
   [6]: http://www.smashingmagazine.com/2007/03/19/40-designtech-magazines-to-read/

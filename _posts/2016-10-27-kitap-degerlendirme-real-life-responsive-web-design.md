@@ -3,7 +3,7 @@ layout: post
 title: Real-Life Responsive Web Design - Smashing Magazine
 Date: 2016-10-27 10:19
 Category: css
-tags: kitap, responsive, uyumlu-web, smashingmag
+tags: [kitap, responsive, uyumlu-web, smashingmag]
 ---
 
 

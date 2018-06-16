@@ -3,7 +3,7 @@ layout: post
 title: CSS3 background-origin ve background-clip özellikleri
 Date: 2011-09-23 21:18
 Category: CSS
-tags: -webkit-background-clip:text, -webkit-text-fill-color:transparent, background-clip, background-origin, css3
+tags: [-webkit-background-clip, -webkit-text-fill-color, background-clip, background-origin, css3]
 ---
 
 [background özelliklerini][] anlatırken background tanımlarının içerik

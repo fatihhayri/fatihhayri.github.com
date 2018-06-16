@@ -3,7 +3,7 @@ layout: post
 title: CSS Mastery&#58; Advanced Web Standards Solutions - Andy Budd
 Date: 2007-12-04 14:44
 Category: CSS, Kitaplar
-tags: Advanced Web Standards Solutions, Andy Budd, CSS, css ipuçları, CSS Mastery, css teknikleri, css yöntemleri, gelişmiş css dersleri, Kitaplar
+tags: [Advanced Web Standards Solutions, Andy Budd, CSS, css ipuçları, CSS Mastery, css teknikleri, css yöntemleri, gelişmiş css dersleri, Kitaplar]
 ---
 
 ![CSS Mastery: Advanced Web Standards Solutions - Andy Budd][]

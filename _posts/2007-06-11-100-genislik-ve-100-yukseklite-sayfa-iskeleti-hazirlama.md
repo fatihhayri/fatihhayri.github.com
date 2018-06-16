@@ -3,7 +3,7 @@ layout: post
 title: 100% Genişlik ve 100% Yükseklite Sayfa İskeleti Hazırlama
 Date: 2007-06-11 20:44
 Category: CSS, XHTML
-tags: CSS, XHTML
+tags: [CSS, XHTML]
 ---
 
 Gelişen teknolojiyle birlikte ekran boyutları artıyor ve sayfalar daha

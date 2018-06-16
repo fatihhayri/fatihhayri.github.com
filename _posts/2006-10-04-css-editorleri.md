@@ -3,7 +3,7 @@ layout: post
 title: CSS Editörleri
 Date: 2006-10-04 14:15
 Category: CSS
-tags: BBEdit, CoffeeCup-HTML-Editor, CSS, CSSEdit, emacs, Macromedia-Dreamweaver, Microsoft Expression, Microsoft FrontPage, NotePad, Style-Master, TextEdit, TopStyle, vi, vim, WordPad
+tags: [BBEdit, CoffeeCup-HTML-Editor, CSS, CSSEdit, emacs, Macromedia-Dreamweaver, Microsoft Expression, Microsoft FrontPage, NotePad, Style-Master, TextEdit, TopStyle, vi, vim, WordPad]
 ---
 
   > Bu yazı eskidi. Yenisini yazdım yenisini okumak için [tıklayınız.](https://fatihhayrioglu.com/web-gelistiriciler-icin-editor-secimi/)
@@ -47,7 +47,7 @@ barındırmalarından dolayı çoğu web kodlamacısı bu editörleri tercih
 etmektedir.
 
 -   Windows için **Microsoft FrontPage**
-    [http://www.microsoft.com/frontpage/][]
+    http://www.microsoft.com/frontpage
 
 -   Windows and Mac OS X **Macromedia Dreamweaver**
     [http://www.macromedia.com/software/dreamweaver/][]
@@ -70,7 +70,6 @@ editör daha mevcuttur.
   [http://www.bradsoft.com/topstyle/]: http://www.bradsoft.com/topstyle/
   [http://www.westciv.com/style_master/]: http://www.westciv.com/style_master/
   [http://www.macrabbit.com/cssedit/]: http://www.macrabbit.com/cssedit/
-  [http://www.microsoft.com/frontpage/]: http://www.microsoft.com/frontpage/
   [http://www.macromedia.com/software/dreamweaver/]: http://www.macromedia.com/software/dreamweaver/
   [http://www.coffeecup.com/editor/]: http://www.coffeecup.com/editor/
   [http://www.barebones.com/products/bbedit/]: http://www.barebones.com/products/bbedit/

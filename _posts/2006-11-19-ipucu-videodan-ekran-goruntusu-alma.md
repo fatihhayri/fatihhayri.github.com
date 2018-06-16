@@ -3,7 +3,7 @@ layout: post
 title: ipucu - video&#039;dan ekran görüntüsü alma
 Date: 2006-11-19 15:49
 Category: Haberler
-tags: printscreen, resim, video
+tags: [printscreen, resim, video]
 ---
 
 Ben bu iş(video'dan ekran görüntüsü almak) için hep program kullanmayı

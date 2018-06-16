@@ -3,7 +3,7 @@ layout: post
 title: fatihhayrioglu.com 10 seneyi devirdi
 Date: 2016-05-04 11:50
 Category: genel
-tags: fatihhayrioglu.com 10-sene
+tags: [fatihhayrioglu.com 10-sene]
 ---
 
 Başta kendim için not almak amacıyla başladığım blog sonraları bu iş ile ilgilenen kişlerin başvurduğu bir site haline geldi, son yıllarda yazı sayısı azalsa da hayatına devam ediyor. 10 seneye 600 küsür yazı ve bunlardan çıkan 2 kitap sığdırdım. Yazı yazmak kendim açısından da öğretici oluyor. Ne kadar az yazıyorsam aslında öğrenme sürecimde o kadar azalmış oluyor. 

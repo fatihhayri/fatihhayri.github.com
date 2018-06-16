@@ -3,7 +3,7 @@ layout: post
 title: Bana yazın kısmı tekrar yayında
 Date: 2007-07-28 11:50
 Category: Haberler
-tags: Haberler
+tags: [Haberler]
 ---
 
 Şimdiki sunucuya taşınmadan önce ve wordpress'in yeni versiyonunu

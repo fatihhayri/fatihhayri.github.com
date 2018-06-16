@@ -3,7 +3,7 @@ layout: post
 title: FireBug İpucu &#58; FireBug&#039;ın Yetenekleri
 Date: 2008-10-23 11:27
 Category: CSS, XHTML
-tags: anında-düzeltme, eklenti, firebug, Firefox
+tags: [anında-düzeltme, eklenti, firebug, Firefox]
 ---
 
 FireBug ile ilgili bir makale yazacağım ama bugün internette gezerken

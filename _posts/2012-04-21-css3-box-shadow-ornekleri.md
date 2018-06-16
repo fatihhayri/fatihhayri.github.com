@@ -3,7 +3,7 @@ layout: post
 title: CSS3 box-shadow örnekleri
 Date: 2012-04-21 15:51
 Category: CSS
-tags: box-shadow, örnekler, snippets, tek köşeye gölge
+tags: [box-shadow, örnekler, snippets, tek köşeye gölge]
 ---
 
 CSS3 özellikleri hayatımıza girmeye başladı. Artık projelerimizde CSS3

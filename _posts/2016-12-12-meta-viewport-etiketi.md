@@ -3,7 +3,7 @@ layout: post
 title: meta viewport etiketi
 Date: 2016-12-12 15:27
 Category: css
-tags: viewport, meta, uyumlu-web
+tags: [viewport, meta, uyumlu-web]
 ---
 
 Görünür alanı (viewport) kullanıcının kullandığı tarayıcının görünür alanı olarak tanımlayabiliriz. Bir web sayfasını görüntülemek için kullanılabilir alan olara düşünebiliriz. 

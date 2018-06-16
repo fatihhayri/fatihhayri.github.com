@@ -3,7 +3,7 @@ layout: post
 title: Fatih Hayrioğlu&#039;nun not defteri - 2009
 Date: 2010-01-02 18:02
 Category: CSS, Haberler
-tags: 2009, CSS, ie6
+tags: [2009, CSS, ie6]
 ---
 
 Geçen seneyi değerlendirirsem. Genel manada pek verimli bir sene olmadı.

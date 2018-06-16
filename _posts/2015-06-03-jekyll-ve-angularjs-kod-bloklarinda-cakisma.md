@@ -3,7 +3,7 @@ layout: post
 title: Jekyll ve AngularJs kod Bloklarında Çakışma
 Date: 2015-06-04 12:13
 Category: angularjs
-tags: angularjs jekyll
+tags: [angularjs jekyll]
 ---
 
 Bir önceki makale paylaştığım Angularjs ipucunda kullandığım kodları renklendirmek ve kod bloku olduğunu göstermek için jekyll'de kullandığım kodlar sorun oluşturdu.

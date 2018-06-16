@@ -3,7 +3,7 @@ layout: post
 title: Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)
 Date: 2009-06-12 13:58
 Category: CSS, Web Standartları, XHTML
-tags: alta-yapışık-alanlar, CSS, kapsayamama-sorunu, sticky-footer
+tags: [alta-yapışık-alanlar, CSS, kapsayamama-sorunu, sticky-footer]
 ---
 
 ![yapisik_altalan][]

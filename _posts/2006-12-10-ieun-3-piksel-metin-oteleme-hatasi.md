@@ -3,7 +3,7 @@ layout: post
 title: IE&#039;un 3 piksel Metin Öteleme Hatası
 Date: 2006-12-10 18:42
 Category: CSS, Web Standartları, XHTML
-tags: CSS, IE-Three-Pixel-Gap, ie-fix, ie-hata, ie7, Web Standartları, XHTML
+tags: [CSS, IE-Three-Pixel-Gap, ie-fix, ie-hata, ie7, Web Standartları, XHTML]
 ---
 
 Bu hata IE5-6/Win versiyonlarında görünür. Float uygulanmış elementlere
@@ -90,8 +90,8 @@ gerekiyor:/
 -   [http://www.positioniseverything.net/explorer/threepxtest.html][]
 -   [http://www.simplebits.com/notebook/2004/07/30/3pixels.html][]
 -   [http://krijnhoetmer.nl/stuff/css/three-pixel-bug/][]
--   [http://www.communitymx.com/][]
--   [http://www.friendsofed.com/][]
+-   http://www.communitymx.com
+-   http://www.friendsofed.com
 
 
   [100]: /dokumanlar/3piksel_sorunu.gif
@@ -101,5 +101,3 @@ gerekiyor:/
   [http://www.positioniseverything.net/explorer/threepxtest.html]: http://www.positioniseverything.net/explorer/threepxtest.html
   [http://www.simplebits.com/notebook/2004/07/30/3pixels.html]: http://www.simplebits.com/notebook/2004/07/30/3pixels.html
   [http://krijnhoetmer.nl/stuff/css/three-pixel-bug/]: http://krijnhoetmer.nl/stuff/css/three-pixel-bug/
-  [http://www.communitymx.com/]: http://www.communitymx.com/content/article.cfm?page=2&cid=C37E0
-  [http://www.friendsofed.com/]: http://www.friendsofed.com/book.html?isbn=1590596145

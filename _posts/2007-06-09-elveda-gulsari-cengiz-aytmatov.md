@@ -3,7 +3,7 @@ layout: post
 title: Elveda Gülsarı - Cengiz Aytmatov
 Date: 2007-06-09 21:14
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![Elveda Gülsarı][]Gerçekten güzel bir roman. Bazı yerlerde

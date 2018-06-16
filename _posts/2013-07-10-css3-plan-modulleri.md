@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Plan Modülleri
 Date: 2013-07-10 12:17
 Category: CSS, CSS3
-tags: CSS3, plan, css3 çoklu kolonlar, css3 esnek kutular, css3 ızgara modulü, css3 bölgeler modülü, css3 istisnalar modülü
+tags: [CSS3, plan, css3 çoklu kolonlar, css3 esnek kutular, css3 ızgara modulü, css3 bölgeler modülü, css3 istisnalar modülü]
 ---
 
 CSS3 plan modülleri hala üzerinde çalışmaya devam edilen yapılardır. CSS3 plan yapılarını kökten değiştirecek ve ihtiyaçları tam karşılayacak şekilde değişikliklere gidiyor. Henüz gelişme aşamasındaki bu yaklaşımlar hakkında biraz bilgi sahibi olalım. Daha önce bahsettiğimiz ve burada genel manası ile sizlere bahsedeceğim modüller var. Daha önceki makalelerimde çoklu kolonlar(multi column layout) ve Esnek kutu yerleşimi(flexible box layout) konularını ilgili makalelerinden daha detaylı bilgiyi edine bilirsiniz.

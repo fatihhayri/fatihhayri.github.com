@@ -3,7 +3,7 @@ layout: post
 title: Çift çizgili ayraç kullanımı
 Date: 2010-07-30 18:19
 Category: CSS, XHTML
-tags: çift çizgi, grove, menü, rgba
+tags: [çift çizgi, grove, menü, rgba]
 ---
 
 Genelde menülerde kullanılan bir durumdur bu. Menü öğelerini ayırmak

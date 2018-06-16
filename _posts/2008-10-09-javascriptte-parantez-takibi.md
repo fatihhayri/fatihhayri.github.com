@@ -3,7 +3,7 @@ layout: post
 title: Javascript&#039;te Parantez Takibi
 Date: 2008-10-09 14:55
 Category: Javascript
-tags: Dreamweaver, Javascript, NotePad, parantez
+tags: [Dreamweaver, Javascript, NotePad, parantez]
 ---
 
 Javascript ve jquery ile program yazarken en çok parantezleri nerede

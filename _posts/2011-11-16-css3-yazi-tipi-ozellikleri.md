@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Yazı Tipi Özellikleri
 Date: 2011-11-16 23:33
 Category: CSS
-tags: font-effect, font-emphasize, font-face, font-smooth, font-stretch
+tags: [font-effect, font-emphasize, font-face, font-smooth, font-stretch]
 ---
 
 Yazı tipi özellikleri her ne kadar CSS2.1 standartlarında olsada

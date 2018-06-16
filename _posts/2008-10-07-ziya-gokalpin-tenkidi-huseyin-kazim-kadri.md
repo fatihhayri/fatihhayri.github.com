@@ -3,7 +3,7 @@ layout: post
 title: Ziya Gökalp&#039;in Tenkidi - Hüseyin Kazım Kadri
 Date: 2008-10-07 23:20
 Category: Kitaplar
-tags: cumhuriyet, Hüseyin Kazım Kadri, milliyetçilik, ziya gökalp
+tags: [cumhuriyet, Hüseyin Kazım Kadri, milliyetçilik, ziya gökalp]
 ---
 
 ![Ziya Gökalp'ın Tenkidi][]

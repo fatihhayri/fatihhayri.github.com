@@ -3,7 +3,7 @@ layout: post
 title: Siteyi yeniledim.
 Date: 2008-10-06 09:19
 Category: Haberler
-tags: delicous, fatihhayrioglu.com, Sans-serif Racer, sitem, yeni
+tags: [delicous, fatihhayrioglu.com, Sans-serif Racer, sitem, yeni]
 ---
 
 ## ![][100]Fatih Hayrioğlu’nun not defteri - Sürüm 2.0

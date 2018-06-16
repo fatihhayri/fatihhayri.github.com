@@ -3,7 +3,7 @@ layout: post
 title: Sultan Abdulaziz - Hafız Mehmet Bey
 Date: 2007-08-07 16:27
 Category: Kitaplar
-tags: cinayet, darbe, Kitaplar, sultan-abdulaziz
+tags: [cinayet, darbe, Kitaplar, sultan-abdulaziz]
 ---
 
 ![Sultan Abdulaziz - Hafız Mehmet Bey][]Sultan Abdulaziz'in

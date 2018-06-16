@@ -3,10 +3,10 @@ layout: post
 title: Satır Dönüşü(word wrap) Firefox sorunu nasıl çözülür?
 Date: 2006-11-06 14:12
 Category: CSS, XHTML
-tags: CSS, Firefox, problem, satır-başı, XHTML
+tags: [CSS, Firefox, problem, satır-başı, XHTML]
 ---
 
-[http://forum.ceviz.net/showthread.php?p=249585#post249585][] Cevap
+http://forum.ceviz.net/showthread.php?p=249585#post249585 Cevap
 yazarken araştırdım da burayada yazayım dedim. Sabit bir genişlikte bir
 katman oluştuurp bu genişliği aşan genişlikte içerikleri otomatik olarak
 satırın başına tmak için ne yapabiliriz. Normalde bunu için IE5.5+ dan
@@ -51,6 +51,5 @@ pre {
 -   [http://www.quirksmode.org/css/whitespace.html][]
 -   [http://reference.sitepoint.com/css/white-space][]
 
-  [http://forum.ceviz.net/showthread.php?p=249585#post249585]: http://forum.ceviz.net/showthread.php?p=249585#post249585
   [http://www.quirksmode.org/css/whitespace.html]: http://www.quirksmode.org/css/whitespace.html
   [http://reference.sitepoint.com/css/white-space]: http://reference.sitepoint.com/css/white-space

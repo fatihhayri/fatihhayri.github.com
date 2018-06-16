@@ -3,7 +3,7 @@ layout: post
 title: overflow ve position:relative  kullanımında ie sorunu
 Date: 2010-06-30 22:07
 Category: CSS, XHTML
-tags: ie, ie6, ie7, overflow, position:relative, sorun
+tags: [ie, ie6, ie7, overflow, position, relative, sorun]
 ---
 
 Bir sorun ile daha karşınızdayım. Evet yine ie ve yine sorun. Bir

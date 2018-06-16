@@ -3,7 +3,7 @@ layout: post
 title: CSS ve Tipografi
 Date: 2007-09-14 08:49
 Category: CSS, Web Standartları, XHTML
-tags: CSS, font, font-family, font-size, font-weight, letter-spacing, line-height, satır-yüksekliği, tipografi, Web Standartları, word-spacing, XHTML, yazı tipi, yazı-tipi isimleri
+tags: [CSS, font, font-family, font-size, font-weight, letter-spacing, line-height, satır-yüksekliği, tipografi, Web Standartları, word-spacing, XHTML, yazı tipi, yazı-tipi isimleri]
 ---
 
 **"Tipografi**([Yunanca][]τύπος (*typos*)="form" ve γραφία

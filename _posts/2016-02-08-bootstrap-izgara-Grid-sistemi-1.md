@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap Izgara (Grid) Sistemi - 1
 Date: 2016-02-08 16:00
 Category: css
-tags: bootstrap ızgara-sistemi sayfa-planı
+tags: [bootstrap ızgara-sistemi sayfa-planı]
 ---
 
 

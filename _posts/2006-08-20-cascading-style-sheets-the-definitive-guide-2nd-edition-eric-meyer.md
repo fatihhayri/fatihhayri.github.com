@@ -3,7 +3,7 @@ layout: post
 title: Cascading Style Sheets&#58; The Definitive Guide, 2nd Edition - Eric Meyer
 Date: 2006-08-20 14:26
 Category: CSS, Kitaplar
-tags: CSS, Eric Meyer, kitap
+tags: [CSS, Eric Meyer, kitap]
 ---
 
 ![Cascading Style Sheets: The Definitive Guide, 2nd Edition - Eric Meyer][]

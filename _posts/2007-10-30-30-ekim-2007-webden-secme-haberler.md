@@ -3,7 +3,7 @@ layout: post
 title: 30 Ekim 2007 Web&#039;den Seçme Haberler
 Date: 2007-10-30 23:07
 Category: Haberler
-tags: CSS, gmail, Haberler, Javascript, optimize, tab, vs.net
+tags: [CSS, gmail, Haberler, Javascript, optimize, tab, vs.net]
 ---
 
 -   CSS ve javascript dosyalarını otomatik yüklemek. [Bağlantı][]

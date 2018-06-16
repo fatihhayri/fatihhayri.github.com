@@ -3,7 +3,7 @@ layout: post
 title: 4 Ocak 2008 Web&#039;den Seçme Haberler
 Date: 2008-01-04 14:53
 Category: Haberler
-tags: clearfix, css3.0, Firefox, google, Haberler, icon, pdf, yui
+tags: [clearfix, css3.0, Firefox, google, Haberler, icon, pdf, yui]
 ---
 
 -   YUI 2.4.0 çıkmış. Birçok yenilikler var. [Bağlantı][]

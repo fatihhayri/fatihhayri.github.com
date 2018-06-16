@@ -3,7 +3,7 @@ layout: post
 title: More Eric Meyer on CSS
 Date: 2006-09-04 22:33
 Category: CSS, Kitaplar
-tags: CSS, css-ile-planlama, kitap, site-kodlama
+tags: [CSS, css-ile-planlama, kitap, site-kodlama]
 ---
 
 ![Eric Meyer'in Güzel kitaplarında biri][]Bu kitap uygulamalı CSS

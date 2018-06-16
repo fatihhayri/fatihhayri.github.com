@@ -3,7 +3,7 @@ layout: post
 title: 2. seneyi bitirdik
 Date: 2008-04-14 22:09
 Category: Haberler
-tags: 2.sene, fatihhayrioglu.com, günlük, site düzenleme
+tags: [2.sene, fatihhayrioglu.com, günlük, site düzenleme]
 ---
 
 ​2. seneyi doldurduk. Geçen seneye bakınca 85 haber, 27 makale, 24 kitap

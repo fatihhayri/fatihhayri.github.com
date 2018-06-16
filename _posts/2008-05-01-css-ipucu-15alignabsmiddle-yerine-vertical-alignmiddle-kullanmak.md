@@ -3,7 +3,7 @@ layout: post
 title: CSS İpucu 15:align=&quot;absmiddle&quot; yerine vertical-align:middle kullanmak
 Date: 2008-05-01 21:06
 Category: Haberler
-tags: align="absmiddle, Çözüm, sorun, vertical-align:middle, Xhtml doğrulama
+tags: [align, absmiddle, Çözüm, sorun, vertical-align, Xhtml doğrulama]
 ---
 
 Web sitemiz doğrularken(validation) aşağıdaki hatayı aldım.

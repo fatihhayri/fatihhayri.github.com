@@ -3,7 +3,7 @@ layout: post
 title: jQuery İpuçları - 2
 Date: 2010-02-19 23:36
 Category: Javascript, jquery
-tags: ie6, ipuçları, jquery, kontrol kutuları, metot zincirleme, toggle, toggleClass, zebra tablolar
+tags: [ie6, ipuçları, jquery, kontrol kutuları, metot zincirleme, toggle, toggleClass, zebra tablolar]
 ---
 
 Genel olarak kullandığım ve dikkatimi çeken jquery ipuçlarını sizlerle

@@ -3,7 +3,7 @@ layout: post
 title: 1 Haftalık web’den seçme haberler - II
 Date: 2008-07-16 13:49
 Category: Haberler
-tags: Firefox, jquery, mootools, Screengrab, WordPress, WordPress2.6
+tags: [Firefox, jquery, mootools, Screengrab, WordPress, WordPress2.6]
 ---
 
 -   Web tasarımcıları için link derlemesi. [Bağlantı][]

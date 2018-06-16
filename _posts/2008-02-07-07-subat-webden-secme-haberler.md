@@ -3,7 +3,7 @@ layout: post
 title: 07 Şubat web&#039;den şeçme haberler
 Date: 2008-02-07 00:46
 Category: Haberler
-tags: css3.0, Dreamweaver, google, Haberler, jquery, mailing, yahoo
+tags: [css3.0, Dreamweaver, google, Haberler, jquery, mailing, yahoo]
 ---
 
 -   Dreamweaver ile javascript kütüphaneleri kolay kullanmamız için

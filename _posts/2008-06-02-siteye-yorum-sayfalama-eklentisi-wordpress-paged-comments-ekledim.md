@@ -3,7 +3,7 @@ layout: post
 title: Siteye Yorum Sayfalama Eklentisi (WordPress Paged Comments) Ekledim
 Date: 2008-06-02 15:13
 Category: Haberler
-tags: Paged Comments, sitemi düzenliyorum, yorum
+tags: [Paged Comments, sitemi düzenliyorum, yorum]
 ---
 
 Daha önce bir kaç kere aklıma geldi ama yapamadığım bir işti. En son bir

@@ -3,7 +3,7 @@ layout: post
 title: 10 Aralık 2007 Web&#039;den Seçme Haberler
 Date: 2007-12-10 22:31
 Category: Haberler
-tags: CSS, Haberler, jquery, volta, yui
+tags: [CSS, Haberler, jquery, volta, yui]
 ---
 
 -   Yahoo'nun javascript kütüphanesi YUI'nin 2.4.0 sürümü çıkmış. Yeni

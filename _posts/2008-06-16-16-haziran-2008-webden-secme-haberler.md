@@ -3,7 +3,7 @@ layout: post
 title: 16 Haziran 2008 web&#039;den seçme haberler
 Date: 2008-06-16 15:53
 Category: Haberler
-tags: Erişebilirlik, Firefox 3, google-belgeler-etablolar, İnternet Tarayıcısı, jquery, Takvim scripti, web araçları, WordPress
+tags: [Erişebilirlik, Firefox 3, google-belgeler-etablolar, İnternet Tarayıcısı, jquery, Takvim scripti, web araçları, WordPress]
 ---
 
 -   Firefox 3'ün desteklediği CSS özellikleri. [Bağlantı][]

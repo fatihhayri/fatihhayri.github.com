@@ -3,7 +3,7 @@ layout: post
 title: Yeniliklerin Takibi
 Date: 2010-10-22 23:49
 Category: Haberler
-tags: google reader, güncel, haber, makale, rss, rss reader, yazı, yenilikleri takip
+tags: [google reader, güncel, haber, makale, rss, rss reader, yazı, yenilikleri takip]
 ---
 
 Google Reader kapandı :(

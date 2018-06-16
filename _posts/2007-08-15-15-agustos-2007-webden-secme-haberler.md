@@ -3,7 +3,7 @@ layout: post
 title: 15 Ağustos 2007 Web&#039;den Seçme Haberler
 Date: 2007-08-15 21:12
 Category: Haberler
-tags: Firefox, Haberler, Javascript, jquery, prototip, Visual-Studio
+tags: [Firefox, Haberler, Javascript, jquery, prototip, Visual-Studio]
 ---
 
 -   Firefox'da linklere odaklandığımızda linklerin etrafında çıkardığı

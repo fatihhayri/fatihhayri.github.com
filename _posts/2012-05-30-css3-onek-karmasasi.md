@@ -3,7 +3,7 @@ layout: post
 title: CSS3 önek Karmaşası
 Date: 2012-05-30 09:06
 Category: CSS
-tags: -moz-, -ms-, -o-, css3, less, önek, sass, WebKit
+tags: [-moz-, -ms-, -o-, css3, less, önek, sass, WebKit]
 ---
 
 CSS3’ün güzel özelliklerini yavaş yavaş kullanmaya başladık. CSS3’ün

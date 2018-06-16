@@ -3,7 +3,7 @@ layout: post
 title: Dört değerli background-position tanımı
 Date: 2015-08-04 13:18
 Category: css
-tags: css background-position right bottom css3
+tags: [css background-position right bottom css3]
 ---
 
 CSS'in devamlı geliştirilmekte olmasının avantajları ve dezavantajları var. Dezavantajlara flex özelliğinin 3 kere değişmesini gösterebiliriz. Avantajları çok tabi. Bunlardan bir tanesine örnek bu makalenin konusudur. Artalan resimlerinin konumlandırmasında bazı sorunlar vardı. Bu sorunları görerek mevcut tanım geliştirildi.

@@ -3,7 +3,7 @@ layout: post
 title: Tablo mu? Div mi? Karmaşasına Son Noktayı HTML5 koydu
 Date: 2010-12-01 23:13
 Category: CSS, HTML5
-tags: css ile kodlama, divli yapı, Erişebilirlik, html5, kullanılabilirlik, tablolu yapı
+tags: [css ile kodlama, divli yapı, Erişebilirlik, html5, kullanılabilirlik, tablolu yapı]
 ---
 
 Ben bu siteyi açtığımdan beri CSS tabanlı yani div ile kodlamanın

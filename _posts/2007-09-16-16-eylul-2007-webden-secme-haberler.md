@@ -3,7 +3,7 @@ layout: post
 title: 16 Eylül 2007 Web&#039;den Seçme Haberler
 Date: 2007-09-16 11:52
 Category: Haberler
-tags: arama motoru, ASP.NET, css3.0, google, google reader, google-web-mater-tool, Haberler, Javascript, pdf
+tags: [arama motoru, ASP.NET, css3.0, google, google reader, google-web-mater-tool, Haberler, Javascript, pdf]
 ---
 
 -   Javascript'ten asp.net ve asp.net'den javascript'e veri göndermeyi

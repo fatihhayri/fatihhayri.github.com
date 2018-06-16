@@ -4,7 +4,7 @@ title: CSS İpuçları 7 &#58; CSS yorum kodu ekleme
 Slug: css-yorum-kodu-ekleme
 Date: 2006-07-23 23:20
 Category: CSS, Web Standartları
-tags: CSS, iki-satır-yorumlar, uzun-yorumlar, Web Standartları, yorum
+tags: [CSS, iki-satır-yorumlar, uzun-yorumlar, Web Standartları, yorum]
 ---
 
 CSS kodlarımızı yazdığımızda kod yapımız, kullandığımız teknikleri ve

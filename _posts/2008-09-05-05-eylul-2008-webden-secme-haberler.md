@@ -3,7 +3,7 @@ layout: post
 title: 05 Eylül 2008 web&#039;den seçme haberler
 Date: 2008-09-05 14:35
 Category: Haberler
-tags: Apple.com, Freelance, Google Chrome, WordPress
+tags: [Apple.com, Freelance, Google Chrome, WordPress]
 ---
 
 -   Google Chrome'un kızıştırdığı pazarda Firefox yeni javascript

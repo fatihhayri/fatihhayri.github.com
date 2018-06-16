@@ -3,7 +3,7 @@ layout: post
 title: Dini ve Milli Şiirler Antolojisi - Rıza Akdemir
 Date: 2007-08-12 12:59
 Category: Kitaplar
-tags: bayrak, din, Kitaplar, millet, sair, siir, vatan
+tags: [bayrak, din, Kitaplar, millet, sair, siir, vatan]
 ---
 
 Uzun süredi şiir kitabı okumuyordum. Bu kitap dini ve milli şiirlerimizi

@@ -4,7 +4,7 @@ title: FireBug 1.4 sürümü çıktı
 Slug: firebug-1-4-surumu-cikti
 Date: 2009-07-19 14:13
 Category: CSS, XHTML
-tags: firebug, Firefox, Hata ayıklama, web
+tags: [firebug, Firefox, Hata ayıklama, web]
 ---
 
 Firebug 1.4 sürümü çıktı. Firebug web sitelerine tarayıcı üzerinden

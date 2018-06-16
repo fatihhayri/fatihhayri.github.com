@@ -3,7 +3,7 @@ layout: post
 title: CSS ile sayfalama görselliğini ayarlama
 Date: 2009-05-29 15:33
 Category: CSS, Web Standartları, XHTML
-tags: CSS, gezinme-alanları, Javascript, sayfalama, Web Standartları
+tags: [CSS, gezinme-alanları, Javascript, sayfalama, Web Standartları]
 ---
 
 ![sayfalama_][]Web sitelerin kodlarken genelde hafızamdaki hazır

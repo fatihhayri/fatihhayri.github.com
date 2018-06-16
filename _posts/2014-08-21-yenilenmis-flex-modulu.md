@@ -3,7 +3,7 @@ layout: post
 title: Yenilenmiş Flex(Esnek Kutu) Modülü
 Date: 2014-08-21 15:17
 Category: css
-tags: css flex esnek-kutu
+tags: [css flex esnek-kutu]
 ---
 
 Bildiğiniz gibi CSS3 modülleri halen geliştirilmeye devam ediyor. Bu modüllerden değişikliğe uğrayanlar oluyor. Flex modülü değişikliğe uğrayan modüllerden birisi. Daha önce yazdığım [CSS3 Esnek Kutu Yerleşimi(Flexible Box Layout)][1] makalemde anlattığım esnek kutu özelliği bu özelliğin ilk standartlaşmış hali idi. Daha sonra iki kere daha değişti bu modül. 
@@ -303,7 +303,7 @@ Kalın sağlıcakla
 - [http://coding.smashingmagazine.com/2013/05/22/centering-elements-with-flexbox/][5] 
 - [http://msdn.microsoft.com/en-us/library/ie/hh673531(v=vs.85).aspx][6]
 - [https://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/][7]
-- [http://burakcan.me/css-flexbox-yapisina-goz-atalim/][8]
+- http://burakcan.me/css-flexbox-yapisina-goz-atalim/
 - [http://blog.teamtreehouse.com/responsive-design-of-the-future-with-flexbox][9]
 
 
@@ -314,7 +314,6 @@ Kalın sağlıcakla
   [5]: http://coding.smashingmagazine.com/2013/05/22/centering-elements-with-flexbox/
   [6]: http://msdn.microsoft.com/en-us/library/ie/hh673531%28v=vs.85%29.aspx
   [7]: https://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/
-  [8]: http://burakcan.me/css-flexbox-yapisina-goz-atalim/
   [9]: http://blog.teamtreehouse.com/responsive-design-of-the-future-with-flexbox
   
   

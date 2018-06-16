@@ -3,7 +3,7 @@ layout: post
 title: Akismet ile sorun
 Date: 2007-04-16 20:21
 Category: Haberler
-tags: Haberler
+tags: [Haberler]
 ---
 
 WordPress'in Akismet'ini etkinleştirmiştim. İyi bir şey olduğunu

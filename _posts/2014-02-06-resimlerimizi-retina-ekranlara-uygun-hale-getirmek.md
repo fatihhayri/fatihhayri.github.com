@@ -3,7 +3,7 @@ layout: post
 title: Resimlerimizi retina ekranlara uygun hale getirmek
 Date: 2014-02-06 14:59
 Category: css
-tags: retina, uyumlu-web, picture, srcset
+tags: [retina, uyumlu-web, picture, srcset]
 ---
 
 İlk defa bir konuda yeterli Türkçe kaynak bulma sevincini yaşıyorum. Kaynaklar kısmındaki Türkçe bağlantıların her biri çok güzel bilgiler veriyor. Bana yazacak bir şey kalmadı :D Süper, süper, süper.

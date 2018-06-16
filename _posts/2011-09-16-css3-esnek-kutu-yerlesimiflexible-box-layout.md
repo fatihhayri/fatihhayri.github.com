@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Esnek Kutu Yerleşimi(Flexible Box Layout)
 Date: 2011-09-16 22:47
 Category: CSS, Haberler
-tags: box-align, box-direction, box-flex, box-flex-group, box-lines, box-ordinal-group, box-orient, box-pack, css3
+tags: [box-align, box-direction, box-flex, box-flex-group, box-lines, box-ordinal-group, box-orient, box-pack, css3]
 ---
 
 Bu yazı eski bir standarttan bahsetmektedir. Yenisi [Yenilenmiş Flex(Esnek Kutu) Modülü](/yenilenmis-flex-modulu/)

@@ -3,7 +3,7 @@ layout: post
 title: Internet Explorer İşaret kutularının(checkbox) onchange tetiklemesindeki sorun ve çözüm önerisi
 Date: 2007-08-09 09:45
 Category: Javascript
-tags: hata, Hata ayıklama, ie, ie-hata, ie6, işaret-kutucuğu, Javascript
+tags: [hata, Hata ayıklama, ie, ie-hata, ie6, işaret-kutucuğu, Javascript]
 ---
 
 Aslında konuyu başlıkta anlattım. İşaret kutularına **onchange** ekleyip

@@ -3,7 +3,7 @@ layout: post
 title: WordPress İpuçları - 4 &#58; Takvim eklemek
 Date: 2006-08-06 14:13
 Category: WordPress
-tags: takvim-eklemek, tarih, WordPress
+tags: [takvim-eklemek, tarih, WordPress]
 ---
 
 WordPress'e takvim eklemek çok basit, zaten bunu için WordPress

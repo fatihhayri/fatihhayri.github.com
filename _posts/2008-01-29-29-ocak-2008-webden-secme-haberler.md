@@ -3,7 +3,7 @@ layout: post
 title: 29 ocak 2008 web&#039;den seçme haberler
 Date: 2008-01-29 23:16
 Category: Haberler
-tags: ardalan, CSS, Haberler, html5, ie, ie8, XHTML
+tags: [ardalan, CSS, Haberler, html5, ie, ie8, XHTML]
 ---
 
 -   W3C'nin içeriğini Türkçeye çevirmişler. Gerçekten güzel bir doküman

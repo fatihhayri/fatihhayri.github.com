@@ -3,7 +3,7 @@ layout: post
 title: Tarayıcı konsolunu renklendirelim
 Date: 2015-11-04 17:03
 Category: tarayıcı
-tags: tarayıcı console.log renlendirme
+tags: [tarayıcı console.log renlendirme]
 ---
 
 Arayüz geliştiriciler neredeyse kod yazdığı editörleriyle geçirdiği zaman kadar veya daha fazla tarayıcı konsollarında zaman geçiriyor. Tabi bu gibi durumlarda konsolların yeteneklerini öğrenmek işimizi kolaylaştırıyor. Sizlere dün yaşadığın bir sorunu ve güzel bir çözümü anlatmaya çalışacağım.

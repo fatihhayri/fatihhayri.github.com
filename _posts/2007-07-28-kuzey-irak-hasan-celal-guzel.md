@@ -3,7 +3,7 @@ layout: post
 title: Kuzey Irak - Hasan Celal Güzel
 Date: 2007-07-28 11:42
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![Kuzey Irak - Hasan Celal Güzel][]Türkiye Cumhuriyeti'nin en iyi

@@ -4,7 +4,7 @@ title: CSS İpuçları  3 &#58; CSS ile birlikte yürürlükten kalkan HTML elem
 Slug: yururlukten-kalkan-html-elementleri
 Date: 2006-07-18 00:06
 Category: CSS, XHTML
-tags: big, center, CSS, font, hr, layer, meun, small, XHTML
+tags: [big, center, CSS, font, hr, layer, meun, small, XHTML]
 ---
 
 CSS kullanımı ile birlikte bazı HTML elementlerinin kullanımı azalmış

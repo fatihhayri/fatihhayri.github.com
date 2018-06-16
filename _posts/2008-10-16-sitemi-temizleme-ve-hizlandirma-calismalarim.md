@@ -3,7 +3,7 @@ layout: post
 title: Sitemi temizleme ve hızlandırma çalışmalarım
 Date: 2008-10-16 09:19
 Category: Haberler
-tags: hızlandırma, Ön-bellek, site, temizleme, WordPress
+tags: [hızlandırma, Ön-bellek, site, temizleme, WordPress]
 ---
 
 Siteyi yeniledikten sonra daha önce eğilmediğim bazı konulara eğilmeye

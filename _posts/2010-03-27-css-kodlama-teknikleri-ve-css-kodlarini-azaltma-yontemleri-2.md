@@ -3,7 +3,7 @@ layout: post
 title: CSS Kodlama Teknikleri ve CSS Kodlarını Azaltma Yöntemleri - 2
 Date: 2010-03-27 19:07
 Category: CSS, Web Standartları, XHTML
-tags: bildirim alanları, css-menü, Kod Azaltma, Torun-Seçicisi
+tags: [bildirim alanları, css-menü, Kod Azaltma, Torun-Seçicisi]
 ---
 
 Her projeye başladığımızda belli bir bilgi birikimi ile başlarız. Ancak

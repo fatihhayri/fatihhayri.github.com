@@ -3,7 +3,7 @@ layout: post
 title: CSS3 pointer-events özelliği
 Date: 2011-12-08 00:01
 Category: Haberler
-tags: css3, pointer-events, svg
+tags: [css3, pointer-events, svg]
 ---
 
 CSS3 ile gelen yeni özellikleri tararken ilginç ve güzel bir özellik ile

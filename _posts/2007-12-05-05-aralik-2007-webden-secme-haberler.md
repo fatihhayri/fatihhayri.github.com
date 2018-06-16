@@ -4,7 +4,7 @@ title: 05 Aralık 2007 Web&#039;den Seçme Haberler
 Slug: 05-aralik-2007-webden-secme-haberler
 Date: 2007-12-05 15:50
 Category: Haberler
-tags: blog, caps-lock, font, Haberler, oval-buton, takvim
+tags: [blog, caps-lock, font, Haberler, oval-buton, takvim]
 ---
 
 -   Hangi Yazı tipi formatını seçmeliyiz. [Bağlantı][]

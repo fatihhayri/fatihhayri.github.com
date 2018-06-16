@@ -3,7 +3,7 @@ layout: post
 title: 17 Ağustos 2007 Web&#039;den Seçme Haberler
 Date: 2007-08-17 08:50
 Category: Haberler
-tags: ASP.NET, background, CSS, dasBlog, GridView, Haberler, Javascript, jquery, uzmantv, web
+tags: [ASP.NET, background, CSS, dasBlog, GridView, Haberler, Javascript, jquery, uzmantv, web]
 ---
 
 -   Asp.net GridView ile birden fazla satır eklemeyi anlatan güzel bir

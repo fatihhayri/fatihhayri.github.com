@@ -3,7 +3,7 @@ layout: post
 title: Safari'de jquery attr() metodunun çalışmama sorunu
 Date: 2016-01-22 11:40
 Category: jquery
-tags: jquery safari attr prop
+tags: [jquery safari attr prop]
 ---
 
 iPhone'da yazdığım bir kodun çalışmadığını gördüm. Aşağıdakine benzer bir **selectbox**'ın ilgili **option**'ununu seçmek için kullandığım bir kod parçası.

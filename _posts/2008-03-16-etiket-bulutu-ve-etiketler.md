@@ -3,7 +3,7 @@ layout: post
 title: Sitemi düzenleme çabalarım I&#58; Etiket Bulutu ve etiketler
 Date: 2008-03-16 19:04
 Category: Web Standartları, WordPress
-tags: etiket, Etiket bulutu, WordPress, yağmur
+tags: [etiket, Etiket bulutu, WordPress, yağmur]
 ---
 
 Etiket bulutları kullanıcının isteğine hızlı erişmesini sağlayan ve

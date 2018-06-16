@@ -3,7 +3,7 @@ layout: post
 title: İlk harfi büyük(drop caps) paragraflar oluşturmak
 Date: 2010-04-29 23:40
 Category: CSS, Web Standartları, XHTML
-tags: :first-child, :first-letter, css3, drop caps, font-face, ie6, ie7, ilk harfi büyük paragraf
+tags: [first-child, first-letter, css3, drop caps, font-face, ie6, ie7, ilk harfi büyük paragraf]
 ---
 
 Geçen gün Kadir Günay bana sormuştu bu konuyu benim aklımda da css ile

@@ -3,7 +3,7 @@ layout: post
 title: 11 Şubat Web&#039;den seçme haberler
 Date: 2008-02-11 21:41
 Category: Haberler
-tags: GridView, jquery, vs.net
+tags: [GridView, jquery, vs.net]
 ---
 
 -   Asp.net performansını arttıracak ve esneklik sağlayacak 10 öneri.

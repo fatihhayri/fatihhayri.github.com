@@ -4,7 +4,7 @@ title: FireBug 1.5 Çıktı
 Slug: firebug-1-5-cikti
 Date: 2010-01-27 00:11
 Category: Haberler
-tags: css düzeltmeleri, firebug, Firefox, Firefox Eklentileri
+tags: [css düzeltmeleri, firebug, Firefox, Firefox Eklentileri]
 ---
 
 FireBug 1.5 sürümü çıktı. Çıkalı biraz zamanda oldu ama ben anca

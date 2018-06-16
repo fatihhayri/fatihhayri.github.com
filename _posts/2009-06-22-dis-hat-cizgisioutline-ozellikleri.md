@@ -3,7 +3,7 @@ layout: post
 title: Dış hat çizgisi(outline) özellikleri
 Date: 2009-06-22 22:55
 Category: CSS
-tags: bağlantılar, Border, dış-hat-çizgisi, Erişebilirlik, kenar-çizgisi, klavye-kullanmak, outline
+tags: [bağlantılar, Border, dış-hat-çizgisi, Erişebilirlik, kenar-çizgisi, klavye-kullanmak, outline]
 ---
 
 ![dış hat çizgisi][]

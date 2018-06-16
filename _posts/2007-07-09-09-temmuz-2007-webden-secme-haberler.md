@@ -3,7 +3,7 @@ layout: post
 title: 09 Temmuz 2007 Web&#039;den Seçme Haberler
 Date: 2007-07-09 09:42
 Category: Haberler
-tags: Ajax, CSS, Haberler, html, Javascript, web2.0
+tags: [Ajax, CSS, Haberler, html, Javascript, web2.0]
 ---
 
 -   CSS ile form yapmak hakkında güzel bir makale. [Link][]

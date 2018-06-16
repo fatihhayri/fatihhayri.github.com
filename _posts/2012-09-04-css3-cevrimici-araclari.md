@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Çevrimiçi Araçları
 Date: 2012-09-04 14:02
 Category: CSS
-tags: border-radius, box-shadow, css3, çevrimiçi araçlar, filtre, font-face, text-shadow, transform
+tags: [border-radius, box-shadow, css3, çevrimiçi araçlar, filtre, font-face, text-shadow, transform]
 ---
 
 CSS3 Arayüz Geliştiriciler için bir çok güzel özellik getirdi. Bu yeni
@@ -94,7 +94,7 @@ kendi sprite’ını kendin yapmak.
 -   [http://css-sprit.es/][]
 -   [http://spritegen.website-performance.org/][]
 -   [http://csssprites.com/][]
--   [http://www.floweringmind.com/sprite-creator/index.php][]
+-   http://www.floweringmind.com/sprite-creator/index.php
 -   http://spriteme.org/
 
 Border-image
@@ -232,7 +232,6 @@ Toplu
   [http://css-sprit.es/]: http://css-sprit.es/
   [http://spritegen.website-performance.org/]: http://spritegen.website-performance.org/
   [http://csssprites.com/]: http://csssprites.com/
-  [http://www.floweringmind.com/sprite-creator/index.php]: http://www.floweringmind.com/sprite-creator/index.php
   [http://border-image.com/]: http://border-image.com/
   [http://matthewlein.com/ceaser/]: http://matthewlein.com/ceaser/
   [http://jeremyckahn.github.com/stylie/]: http://jeremyckahn.github.com/stylie/

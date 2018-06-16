@@ -3,7 +3,7 @@ layout: post
 title: MacOs veya Linux üzerinde Internet Explorer testi yapmak
 Date: 2016-02-11 10:00
 Category: genel
-tags: virtualbox sanal-makine sistem-imajı internet-explorer
+tags: [virtualbox sanal-makine sistem-imajı internet-explorer]
 ---
 
 

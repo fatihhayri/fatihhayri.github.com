@@ -3,7 +3,7 @@ layout: post
 title: CSS&#039;de Çıktı alma (Print)
 Date: 2006-07-28 00:38
 Category: CSS
-tags: CSS, çıktı-alma, import, print, yazıcı
+tags: [CSS, çıktı-alma, import, print, yazıcı]
 ---
 
 Web sayfalarının çıktılarını almak her zaman sorunludur. Web sayfaları

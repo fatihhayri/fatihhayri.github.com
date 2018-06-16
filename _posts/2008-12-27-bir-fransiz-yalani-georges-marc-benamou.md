@@ -3,7 +3,7 @@ layout: post
 title: Bir Fransız Yalanı - Georges-Marc Benamou
 Date: 2008-12-27 13:55
 Category: Kitaplar
-tags: Cezayir Savaşı, Fransa, Harkiler, Soykırım
+tags: [Cezayir Savaşı, Fransa, Harkiler, Soykırım]
 ---
 
 ![Bir Fransız yalanı][]Fransızıların Cezayir'de yaptıklarını farklı bir

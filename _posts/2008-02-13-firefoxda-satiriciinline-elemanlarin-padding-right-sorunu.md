@@ -3,7 +3,7 @@ layout: post
 title: Firefox&#039;da satıriçi(inline) elemanların padding-right sorunu
 Date: 2008-02-13 00:07
 Category: CSS, XHTML
-tags: Firefox, hata, Hata ayıklama, padding-right
+tags: [Firefox, hata, Hata ayıklama, padding-right]
 ---
 
 Şimdiye kadar hep Internet Explorer ile ilgili sorunlara değindim. Şimdi

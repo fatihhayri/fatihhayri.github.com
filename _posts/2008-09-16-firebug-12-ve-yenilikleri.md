@@ -3,7 +3,7 @@ layout: post
 title: FireBug 1.2 ve yenilikleri
 Date: 2008-09-16 10:40
 Category: CSS, Haberler, Javascript, XHTML
-tags: CSS, firebug, Firefox 3, Hata yakalama, Javascript, XHTML
+tags: [CSS, firebug, Firefox 3, Hata yakalama, Javascript, XHTML]
 ---
 
 ![][100]Daha önce [FireBug'ın genel özelliklerinden][] bahsettik. Sıra

@@ -3,7 +3,7 @@ layout: post
 title: CSS İpucu 22&#58; iPhone için CSS Yazmak
 Date: 2009-07-22 12:38
 Category: CSS
-tags: CSS, iPhone
+tags: [CSS, iPhone]
 ---
 
 ![apple-iphone][]

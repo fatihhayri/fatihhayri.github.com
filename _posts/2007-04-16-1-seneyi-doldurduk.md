@@ -3,7 +3,7 @@ layout: post
 title: 1. seneyi doldurduk
 Date: 2007-04-16 14:47
 Category: Haberler
-tags: Haberler
+tags: [Haberler]
 ---
 
 Siteyi açalı bir sene oldu(14 Nisan) ve geçti. Amacım CSS vd. web ile

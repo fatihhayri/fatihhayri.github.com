@@ -3,7 +3,7 @@ layout: post
 title: Font Özellikleri
 Date: 2006-08-01 23:12
 Category: CSS
-tags: CSS, font, font-family, font-size, font-weight, line-height
+tags: [CSS, font, font-family, font-size, font-weight, line-height]
 ---
 
 Font özellikleri sayfalarımızdaki metinlerin font ailesini, kalınlık

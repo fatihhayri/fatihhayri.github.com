@@ -3,7 +3,7 @@ layout: post
 title: WordPress sürümün yükselttim.
 Date: 2008-02-10 21:59
 Category: Haberler
-tags: WordPress, yükseltme
+tags: [WordPress, yükseltme]
 ---
 
 Bu haftasonu WordPress sürümünü son sürüm olan 2.3.3 yükselttim. Tabi

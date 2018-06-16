@@ -3,7 +3,7 @@ layout: post
 title: Sass'ta iç içe(nested) kullanımı
 Date: 2015-09-30 10:03
 Category: css
-tags: sass css-önişlemcileri iç-içe
+tags: [sass css-önişlemcileri iç-içe]
 ---
 
 Sass'ın temel yazım kurallarından biriside iç içe (nested) kullanımdır. CSS ile kod yazarken girintiler çok önemli değildir. Biz daha iyi bir düzen için girintileme yapıyorduk ama bu girintiler CSS için bir şey ifade etmiyordu. Sass'ta ise girintilerin bir anlamı ve işlevi var.

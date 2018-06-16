@@ -4,7 +4,7 @@ title: Bir Projenin Bana Kazandırdıkları (LiveGO.com)
 Slug: bir-projenin-bana-kazandirdiklari-livego-com
 Date: 2010-12-27 21:47
 Category: CSS, Haberler
-tags: CSS, livego.com, makale yazmak, proje
+tags: [CSS, livego.com, makale yazmak, proje]
 ---
 
 ![][100]

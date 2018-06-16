@@ -3,7 +3,7 @@ layout: post
 title: Süleyman Çelebi ve Mevlid-i Şerif - Ahmed Aymutlu
 Date: 2007-09-26 22:15
 Category: Kitaplar
-tags: Ahmed Aymutlu, hz.muhammed, Kitaplar, mevlid, salat, selam, Süleyman Çelebi ve Mevlid-i Şerif
+tags: [Ahmed Aymutlu, hz.muhammed, Kitaplar, mevlid, salat, selam, Süleyman Çelebi ve Mevlid-i Şerif]
 ---
 
 ![Süleyman Çelebi ve Mevlid-i Şerif - Ahmed Aymutlu][]Anlamını tam

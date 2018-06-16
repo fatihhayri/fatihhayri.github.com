@@ -3,11 +3,10 @@ layout: post
 title: Çanakkale Mahşeri - Mehmet Niyazi
 Date: 2006-04-28 01:02
 Category: Kitaplar
-tags: Çanakkale Mahşeri, destan, Kitaplar, Mehmet Niyazi, roman
+tags: [Çanakkale Mahşeri, destan, Kitaplar, Mehmet Niyazi, roman]
 ---
 
-<p>
-![Çanakkale Mahşeri][]Bu kitabı eskiden okumştum bu gün Çanakkale
+<span class="kitap-resmi">![Çanakkale Mahşeri][]</span> Bu kitabı eskiden okumuştum bugün Çanakkale
 Savaşın'da Krite Zaferinin yıldönümü olduğunu görünce bu kitabı eklemek
 istedim. Hayatımda okuduğum romanların en iyisi diyebilirim. Bunda
 Çanakkale Destanından bahsetmiş olmasını çok büyük etkisi var tabi.
@@ -31,7 +30,7 @@ Sonra kitabın web sayfasında şu metni gördüm:
 Ayrıntı için [http://www.otuken.com.tr/kitapdetay.asp?kitapID=162][]
 
 
-  [Çanakkale Mahşeri]: /images/canakkale_mahseri.thumbnail.jpg
+  [Çanakkale Mahşeri]: /images/canakkale_mahseri.jpg
     "Çanakkale Mahşeri"
   [http://www.otuken.com.tr/kitapdetay.asp?kitapID=162]: http://www.otuken.com.tr/kitapdetay.asp?kitapID=162
     "Çanakkale Mahşeri - Mehmet Nİyazi"

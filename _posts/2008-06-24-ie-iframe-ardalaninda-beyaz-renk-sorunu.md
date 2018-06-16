@@ -3,7 +3,7 @@ layout: post
 title: IE iframe ardalanında beyaz renk sorunu
 Date: 2008-06-24 10:05
 Category: XHTML
-tags: allowtransparency, beyaz ardaaln sorunu, iframe, internet explorer, İnternet Tarayıcısı
+tags: [allowtransparency, beyaz ardaaln sorunu, iframe, internet explorer, İnternet Tarayıcısı]
 ---
 
 Sitelerimizde <iframe\> kullandığımızda Internet Explorer bu <iframe\>

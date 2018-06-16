@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Hakkında
 Date: 2013-08-23 14:00
 Category: CSS
-tags: css3, modül, animasyon, tepkisel-tasarım
+tags: [css3, modül, animasyon, tepkisel-tasarım]
 ---
 
 Css3 tek kelime ile heyecan verici. CSS web sitelerinin görünümünü düzenlemek ve yönetmek için kullanılan bir standarttır. CSS3 ile birlikte site görünümünü tek başına idare etme konusunda çok büyük bir gelişme gösterdi. CSS sadece yazı tipini ayarlayan ve sayfa planını oluşturduğumuz yapının üstüne tasarım araçlarına özel özellikleri(animasyon ve geçiş efektleri) olan bir standart haline geldi. CSS3 sayesinde web sitelerinin görsel işleri daha hızlı ve esnek şekilde halledilebiliyor. Photoshop’a daha az ihtiyacımız olacak.

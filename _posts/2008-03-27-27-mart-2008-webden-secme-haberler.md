@@ -3,7 +3,7 @@ layout: post
 title: 27 Mart 2008 web&#039;den seçme haberler
 Date: 2008-03-27 17:09
 Category: Haberler
-tags: .net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, mootools, web, WordPress, wordpress 2.5
+tags: [.net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, mootools, web, WordPress, wordpress 2.5]
 ---
 
 -   Web çalışanları üzerinde yapılan bir anket sonuçları. [Bağlantı][]

@@ -3,7 +3,7 @@ layout: post
 title: 27 Temmuz 2007 Web&#039;den Seçme Haberler
 Date: 2007-07-27 10:13
 Category: Haberler
-tags: Ajax, CSS, Haberler, html, Javascript, web2.0, WordPress
+tags: [Ajax, CSS, Haberler, html, Javascript, web2.0, WordPress]
 ---
 
 -   Çeşitli 404 Hata sayfaları. [Link][]

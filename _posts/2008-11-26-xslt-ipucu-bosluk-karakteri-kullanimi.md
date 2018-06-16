@@ -3,7 +3,7 @@ layout: post
 title: xslt ipucu&#58; boşluk karakteri kullanımı
 Date: 2008-11-26 17:56
 Category: Haberler
-tags: boşluk, karakter, xml, xslt
+tags: [boşluk, karakter, xml, xslt]
 ---
 
 XSLT'de   gibi boşluk karakteri verdiğimizde hata veriyor. Bunun bir

@@ -3,7 +3,7 @@ layout: post
 title: Basit Resimli Menü Yapmak
 Date: 2009-03-10 18:45
 Category: CSS, XHTML
-tags: ardalan-kaydırmaca, ardalan-özellikleri, css-sprites, menü-yapmak, resimli-menü
+tags: [ardalan-kaydırmaca, ardalan-özellikleri, css-sprites, menü-yapmak, resimli-menü]
 ---
 
 Daha önce resimli menü yapımını anlatmıştım.

@@ -3,7 +3,7 @@ layout: post
 title: Adnan Menderes&#039;in Günlüğü - Taşkın Tuna
 Date: 2007-09-16 11:10
 Category: Kitaplar
-tags: 1960, adnan, darbe, idam, Kitaplar, menderes, roman
+tags: [1960, adnan, darbe, idam, Kitaplar, menderes, roman]
 ---
 
 ![Adnan Menderes’in Günlüğü - Taşkın Tuna][]Kitabı ben ilk önce

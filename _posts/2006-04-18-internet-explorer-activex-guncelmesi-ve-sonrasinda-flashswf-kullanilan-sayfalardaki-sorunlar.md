@@ -3,7 +3,7 @@ layout: post
 title: İnternet Explorer ActiveX Güncelmesi ve sonrasında Flash(swf) kullanılan sayfalardaki sorunlar
 Date: 2006-04-18 15:33
 Category: Web Standartları
-tags: ActiveX, fare imleci, flash, ie, internet explorer, kenarlık
+tags: [ActiveX, fare imleci, flash, ie, internet explorer, kenarlık]
 ---
 
 [İnternet Explorer ActiveX][] güncellemesi yaptıktan sonra sitelerde

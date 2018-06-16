@@ -3,7 +3,7 @@ layout: post
 title: 14 Haziran 2008 web&#039;den seçme haberler
 Date: 2008-06-14 13:38
 Category: Haberler
-tags: Alıntı, ASP.NET, CSS kenar çizgisi, Firefox 3, Firefox Picnic, jquery, json, mailing, rss, Vdsl, wordpress güvenlik
+tags: [Alıntı, ASP.NET, CSS kenar çizgisi, Firefox 3, Firefox Picnic, jquery, json, mailing, rss, Vdsl, wordpress güvenlik]
 ---
 
 -   Asp.Net 3.5'da JSon kullanmak.

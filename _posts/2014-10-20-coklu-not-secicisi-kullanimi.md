@@ -3,7 +3,7 @@ layout: post
 title: Çoklu :not seçicisi kullanımı
 Date: 2014-10-20 14:55
 Category: css
-tags: :not
+tags: [not]
 ---
 
 CSS'in güzelliklerinden birisi seçicilerinin gücüdür. Ben burada bunlardan birinin ipucunu göstermek istiyorum.

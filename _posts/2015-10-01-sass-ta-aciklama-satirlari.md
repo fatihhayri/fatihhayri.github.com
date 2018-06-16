@@ -3,7 +3,7 @@ layout: post
 title: Sass'ta açıklama satırları
 Date: 2015-10-01 10:03
 Category: css
-tags: sass css-önişlemcileri açıklama-satırı
+tags: [sass css-önişlemcileri açıklama-satırı]
 ---
 
 Açıklama satırlarının önemini tekrar anlatmaya gerek yok. Bir çok zaman unuttuğumuz veya iki kelime ile geçiştirdiğimiz açıklama satırları takım çalışmaları ve uzun süreli projelerin olmazsa olmazı. Yani tüm projelerin :)

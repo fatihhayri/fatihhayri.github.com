@@ -3,7 +3,7 @@ layout: post
 title: HTML Dokümanında Javascript Dosyalarını Nereye Koymalıyız?
 Date: 2011-03-24 00:09
 Category: Javascript, XHTML
-tags: defer, hız, javascript dosylarının yeri, paralel yükleme, performans
+tags: [defer, hız, javascript dosylarının yeri, paralel yükleme, performans]
 ---
 
 ## Javascript’i web sitelerine eklemek

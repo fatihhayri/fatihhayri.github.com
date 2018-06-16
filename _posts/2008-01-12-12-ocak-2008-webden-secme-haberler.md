@@ -3,7 +3,7 @@ layout: post
 title: 12 Ocak 2008 Web&#039;den Seçme Haberler
 Date: 2008-01-12 14:40
 Category: Haberler
-tags: Anlamlı web, css3.0, favicon, google, Haberler, Opera, seo, text-decoration, vs.net, WordPress, yahoo
+tags: [Anlamlı web, css3.0, favicon, google, Haberler, Opera, seo, text-decoration, vs.net, WordPress, yahoo]
 ---
 
 -   Orhan Ekici "Nedir bu seo?" adlı güzel bir makale yazmış. orhanekici.com

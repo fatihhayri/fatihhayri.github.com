@@ -3,7 +3,7 @@ layout: post
 title: IE8 Açılır Menü İçindeki Input Alanı Üzerince Gelince Menü Kapanma Sorunu
 Date: 2010-02-26 23:26
 Category: CSS, jquery, XHTML
-tags: ie8, input, menü, sorun
+tags: [ie8, input, menü, sorun]
 ---
 
 Sorun tam olarak şu; açılır bir menü eğer bir resim üzerinde ise menü

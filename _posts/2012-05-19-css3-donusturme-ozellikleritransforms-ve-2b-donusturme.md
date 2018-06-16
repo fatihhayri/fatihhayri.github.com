@@ -3,7 +3,7 @@ layout: post
 title: CSS3 Dönüştürme Özellikleri(Transforms) ve 2B Dönüştürme
 Date: 2012-05-19 15:35
 Category: CSS, XHTML
-tags: css3, dönüştürme, matrix, rotate, scale, skew, transfor-origin, transform, translate
+tags: [css3, dönüştürme, matrix, rotate, scale, skew, transfor-origin, transform, translate]
 ---
 
 Webkit ekibinin ilk olarak 2008 yılında CSS’e kattığı bu özellik daha

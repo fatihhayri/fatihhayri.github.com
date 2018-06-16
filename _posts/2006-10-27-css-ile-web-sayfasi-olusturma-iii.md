@@ -3,7 +3,7 @@ layout: post
 title: CSS ile Web Sayfası Oluşturma III
 Date: 2006-10-27 11:31
 Category: CSS, Web Standartları, XHTML
-tags: Aksak Kolonlar, CSS, CSS-Layout, CSS-P, Faux Column, Web Standartları, XHTML
+tags: [Aksak Kolonlar, CSS, CSS-Layout, CSS-P, Faux Column, Web Standartları, XHTML]
 ---
 
 ## Aksak Kolonlar(Faux Column)

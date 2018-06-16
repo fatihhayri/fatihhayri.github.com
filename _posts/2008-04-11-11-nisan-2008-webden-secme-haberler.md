@@ -3,7 +3,7 @@ layout: post
 title: 11 Nisan 2008 web&#039;den seçme haberler
 Date: 2008-04-11 21:40
 Category: Haberler
-tags: google, Javascript, jquery, kapatma davası, mootools, rss, WordPress
+tags: [google, Javascript, jquery, kapatma davası, mootools, rss, WordPress]
 ---
 
 -   Güzel site alt kısımları. [Bağlantı][]

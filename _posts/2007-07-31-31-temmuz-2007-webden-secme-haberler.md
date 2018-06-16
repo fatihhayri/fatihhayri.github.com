@@ -3,7 +3,7 @@ layout: post
 title: 31 Temmuz 2007 Web&#039;den Seçme Haberler
 Date: 2007-07-31 09:22
 Category: Haberler
-tags: csharp, CSS, Dust-Me, Firefox, google, Haberler, jquery, web, WordPress
+tags: [csharp, CSS, Dust-Me, Firefox, google, Haberler, jquery, web, WordPress]
 ---
 
 -   20 adet online CSS aracı. [Link][]

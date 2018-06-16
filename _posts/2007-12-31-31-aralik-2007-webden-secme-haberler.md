@@ -3,7 +3,7 @@ layout: post
 title: 31 Aralık 2007 Web&#039;den Seçme Haberler
 Date: 2007-12-31 11:24
 Category: Haberler
-tags: Firefox, Haberler, innerHTml, linq, opacity
+tags: [Firefox, Haberler, innerHTml, linq, opacity]
 ---
 
 26 Aralık

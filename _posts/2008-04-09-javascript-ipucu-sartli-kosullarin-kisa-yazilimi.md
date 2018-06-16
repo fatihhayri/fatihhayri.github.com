@@ -3,7 +3,7 @@ layout: post
 title: Javascript ipucu&#58; Şartlı ifadelerin(if..else) kısa yazılımı
 Date: 2008-04-09 00:02
 Category: Ajax, Javascript
-tags: if else, ipucu, Javascript, şarlı-ifadeler
+tags: [if else, ipucu, Javascript, şarlı-ifadeler]
 ---
 
 Bir çok kere lazım oldu ve aramak zorunda kaldım ve her aramam da 10-15

@@ -3,7 +3,7 @@ layout: post
 title: Git Öğreniyorum - 3
 Date: 2012-12-28 14:28
 Category: git
-tags: git, sürüm kontrolü
+tags: [git, sürüm kontrolü]
 ---
 
 ## Git  grep

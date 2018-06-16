@@ -3,7 +3,7 @@ layout: post
 title: Sessiz sedasız 3. seneyi aştık
 Date: 2009-04-21 10:16
 Category: Haberler
-tags: fatihhayrioglu.com, yıl-dönümü
+tags: [fatihhayrioglu.com, yıl-dönümü]
 ---
 
 Bu aralar not defterime yeteri kadar zaman ayıramıyorum. Bunun

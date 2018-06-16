@@ -3,7 +3,7 @@ layout: post
 title: Sass mı SCSS mi
 Date: 2015-09-03 12:18
 Category: css
-tags: sass css-önişlemcileri uzantı-seçimi
+tags: [sass css-önişlemcileri uzantı-seçimi]
 ---
 
 Sass ile kod yazmaya başlarken ikileme düşüren bir sorun. Sass mı kullansam SCSS  ( Sassy CSS - Sass'lı CSS ) mı kullansam tercihidir. Sass ilk kodlanmaya başladığında [Haml](http://haml.info/) ile birlikte çıktığı için söz dizimi benzer şekilde uygulanmış ve uzantıları .sass olarak üretilmeye başlanmış. Sonra Sass 3 ile birlikte SCSS kullanılmaya başlanmış. Şu an her ikisine de destek vermektedir. Bir tercih imkanı vermesi güzel ama yeni başlayanlar için bir kafa karışıklığına neden olması da dezavantaj.

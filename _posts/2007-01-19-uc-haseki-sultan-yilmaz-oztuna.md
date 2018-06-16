@@ -3,7 +3,7 @@ layout: post
 title: Üç Haseki Sultan - Yılmaz Öztuna
 Date: 2007-01-19 00:08
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![Üç Haseki Sultan][]Osmanlı Develetine farklı açıdan bakan bu kitap

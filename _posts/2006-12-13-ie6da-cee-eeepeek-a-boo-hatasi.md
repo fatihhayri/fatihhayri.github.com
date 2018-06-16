@@ -3,7 +3,7 @@ layout: post
 title: IE6&#039;da CEE-EEE(peek-a-boo) Hatası
 Date: 2006-12-13 14:56
 Category: CSS, Web Standartları, XHTML
-tags: cee-eee, CSS, hata, ie6, peek-a-boo, Web Standartları, XHTML
+tags: [cee-eee, CSS, hata, ie6, peek-a-boo, Web Standartları, XHTML]
 ---
 
 Bir diğer garip ve bizi sinirden çatlatan IE sorunu benim CEE-EEE(web de

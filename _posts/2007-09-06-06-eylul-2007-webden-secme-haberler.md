@@ -3,12 +3,12 @@ layout: post
 title: 06 Eylül 2007 Web&#039;den Seçme Haberler
 Date: 2007-09-06 10:57
 Category: Haberler
-tags: google, google reader, Haberler, internet, silverlight, SmashMagazine, tipografi, viewstate
+tags: [google, google reader, Haberler, internet, silverlight, SmashMagazine, tipografi, viewstate]
 ---
 
 -   Asp.Net ViewState özelliği hakkında güzel bir makale. [Link][]
 -   Telekom internet alt yapısına yatırım yapıyormuş. Hadi hayırlısı
-    bakalım. [Link][1]
+    bakalım.
 -   Daha önce Google Reader'a arama eklemeyi anlattık. Ama gerek
     kalmamış çünkü Google kendi aramasını eklemiş. Google'dan
     beklediğimden daha yavaş oldu bu, bence daha önce çıkmalıydı. Neyse
@@ -33,7 +33,6 @@ tags: google, google reader, Haberler, internet, silverlight, SmashMagazine, tip
 
   [Link]: http://www.csharpnedir.com/makalegoster.asp?Mid=776
     "asp.net viewstate"
-  [1]: http://www.ntvmsnbc.com/news/419170.asp "internet"
   [2]: http://googlesystem.blogspot.com/2007/09/google-reader-adds-search.html
     "Google reader arama"
   [3]: http://www.lukew.com/resources/articles/PSactions.asp

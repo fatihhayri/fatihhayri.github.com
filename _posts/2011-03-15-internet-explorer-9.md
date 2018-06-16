@@ -3,7 +3,7 @@ layout: post
 title: Internet Explorer 9
 Date: 2011-03-15 22:17
 Category: CSS, Haberler, HTML5
-tags: css3, GPU, html5, internet explorer 9
+tags: [css3, GPU, html5, internet explorer 9]
 ---
 
 Dün(14 Mart) akşamı Microsoft İnternet Explorer tarayıcısını son sürümü

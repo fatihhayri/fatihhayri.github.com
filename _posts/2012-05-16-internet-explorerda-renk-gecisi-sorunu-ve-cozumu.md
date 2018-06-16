@@ -3,7 +3,7 @@ layout: post
 title: İnternet Explorer&#039;da Renk Geçişi Sorunu ve Çözümü
 Date: 2012-05-16 10:18
 Category: CSS, XHTML
-tags: hasLayout, ie, problem, renk geçişi, sorun, zoom:1
+tags: [hasLayout, ie, problem, renk geçişi, sorun, zoom]
 ---
 
 [CSS3 ile renk geçişi hakkında yazdığımız][] makalede İnternet Explorer

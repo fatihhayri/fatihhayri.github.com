@@ -3,14 +3,14 @@ layout: post
 title: CSS&#039;de Kısaltmalar
 Date: 2006-04-19 12:09
 Category: CSS
-tags: background, Border, CSS, font, kenar-boşluğu, kısaltmalar, liste, Margin, Padding, renk
+tags: [background, Border, CSS, font, kenar-boşluğu, kısaltmalar, liste, Margin, Padding, renk]
 ---
 
 CSS; kodlama yaparken bizim bazı kısaltmaları kullanmamıza izin verir.
-Böylece hem fazla kod yığınından kurtulmuş oluruz, hemde sayfa
-boyutlarını en aza indirmiş oluruz.
+Böylece hem fazla kod yığınından kurtulmuş oluruz, hem de sayfa
+boyutunu azaltmış oluruz.
 
-## 1. Font
+## 1. Yazı tipi (Font)
 
 Normalde bir font tanımlarken 4 adet CSS kodu kullanılır:
 
@@ -21,7 +21,7 @@ font-size: 11px;
 line-height: 15px;
 {% endhighlight %}
 
-Kısaltma olarak kullanlan kod ise tek satır:
+Kısaltma olarak kullanılan kod ise tek satır:
 
 {% highlight css %}
 font: bold 11px/15px verdana, sans-serif;
@@ -29,8 +29,7 @@ font: bold 11px/15px verdana, sans-serif;
 
 ## 2. Background
 
-Background tanımlarken 5 adet atama yapmamız gerekirken kısaltma
-kullanarak tek tanıma indirebilriz.
+Background tanımlarken 5 adet atama yapmamız gerekirken kısaltmayla tek tanıma indirebiliriz.
 
 {% highlight css %}
 background-color: #000;
@@ -51,17 +50,17 @@ background: {
 ## 3. Renkler(Hex-decimal)
 
 CSS stillerinde renkler genelde hex-decimal renk kodu ile tanımlanır
-örneğin **color: #ff0000;** kırmızı. Renkler 6 karakterle
-gösterilsede bir çok renk(web tabanlı) 3 karakterin tekrarlanması ile
+örneğin `color: #ff0000;` kırmızı. Renkler 6 karakterle
+gösterilse de bir çok renk(web tabanlı) 3 karakterin tekrarlanması ile
 oluşturulur. Örneğin, kırmızı'nın hex-decimal kodunun kısaltırsak
 **color: #f00;**. Buradaki her karakter hex-decimal koddaki iki
 karaktere karşılık gelmektedir. Mesela, beyaz renk kullanacağınızda,
-**color: white;** veya **color: #ffffff;** kulanımı önermeyiz.
-Kısaltılmış olanı **color: #fff;** kullanmanız daha avantajlıdır.
+`color: white;` veya `color: #ffffff;` kullanımı önermeyiz.
+Kısaltılmış olanı `color: #fff;` kullanmanız daha avantajlıdır.
 
 ## 4. Border
 
-Kenarklık tanımlamalarında her özellik için bir tanımlama yapılır. örnek
+Kenarlık tanımlamalarında her özellik için bir tanımlama yapılır. örnek
 olarak bir elementin üst kenarına atama yapmak için:
 
 {% highlight css %}
@@ -76,7 +75,7 @@ Kısaltırsak:
 border-top: 2px dashed #f00;
 {% endhighlight %}
 
-Bu özellikleri tüm kenarlara uygulmak için:
+Bu özellikleri tüm kenarlara uygulamak için:
 
 {% highlight css %}
 border: 2px dashed #f00;
@@ -84,7 +83,7 @@ border: 2px dashed #f00;
 
 ## 5. Margin ve Padding'ler
 
-Margin ve paddingler de normal tanımlama şöyledir:
+Margin ve padding'ler de normal tanımlama şöyledir:
 
 {% highlight css %}
 margin-top: 10px;
@@ -93,7 +92,7 @@ margin-bottom: 20px;
 margin-left: 15px;
 {% endhighlight %}
 
-kıslatılmış hali:
+Kısaltılmış hali:
 
 {% highlight css %}
 margin: 10px 5px 20px 15px;
@@ -112,7 +111,7 @@ sağ, alt ve sol
 
 ## 6. Listeler
 
-Liste tanılmalrında da kısaltmalar mümkündür
+Liste tanımlarında kısaltma kullanılır.
 
 {% highlight css %}
 ul {
@@ -130,17 +129,17 @@ ul li {
 } /* burda özel bir durum vardır eğer resim yoksa yedek olarak square özelliği gösterilecektir. */
 {% endhighlight %}
 
-## 7. Sıfır '0' ın Kısaltma olarak kullanılması
+## 7. Sıfır(0)'ın Kısaltma olarak kullanılması
 
 Kısaltmalarda son olarak '0' ın kullanımına değineceğiz. Normalde bir
 elemente değer ataması yapılırken değerin yanına birimi de yazılır(örn:
-3px, 0.2em vd.), Ancak sıfır '0' için bu zorunlu değilidir.
+3px, 0.2em vd.), Ancak sıfır '0' için bu zorunlu değildir.
 
 {% highlight css %}
 padding:0;
 {% endhighlight %}
 
-Bu durumun bir istisnası mevcuttur oda yüzde değerlerinde atama yapılırken **0%**olarak atama
+Bu durumun bir istisnası mevcuttur oda yüzde değerlerinde atama yapılırken `0%` olarak atama
 yapılmalıdır.
 
 ## Kaynaklar

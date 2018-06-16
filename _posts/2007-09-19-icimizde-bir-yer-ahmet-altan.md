@@ -3,7 +3,7 @@ layout: post
 title: İçimizde Bir Yer - Ahmet Altan
 Date: 2007-09-19 19:19
 Category: Kitaplar
-tags: Ahmet Altan, felsefe, hikaye, İçimizde Bir Yer, Kitaplar
+tags: [Ahmet Altan, felsefe, hikaye, İçimizde Bir Yer, Kitaplar]
 ---
 
 ![İçimizde Bir Yer - Ahmet Altan][]Açıkçası ben kitaptan pek bir

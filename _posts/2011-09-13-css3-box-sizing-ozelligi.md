@@ -3,7 +3,7 @@ layout: post
 title: CSS3 box-sizing Özelliği
 Date: 2011-09-13 19:25
 Category: CSS
-tags: -moz-box-sizing, -webkit-box-sizing, box-border, box-sizing, css3
+tags: [-moz-box-sizing, -webkit-box-sizing, box-border, box-sizing, css3]
 ---
 
 Daha önce [CSS ile Kutu modeli, sorunları ve çözümleri][] adlı makalede

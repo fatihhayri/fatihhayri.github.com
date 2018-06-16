@@ -3,7 +3,7 @@ layout: post
 title: 14 Haziran 2007 Web&#039;den Seçme Haberler
 Date: 2007-06-14 08:40
 Category: Haberler
-tags: CSS, geyikposta, Haberler, tab, tooltip
+tags: [CSS, geyikposta, Haberler, tab, tooltip]
 ---
 
 -   Geyik bir olay geyikposta.com yasallığı tartışılacak bir site.

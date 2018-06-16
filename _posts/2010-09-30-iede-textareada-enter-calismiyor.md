@@ -3,7 +3,7 @@ layout: post
 title: IE&#039;de Textarea&#039;da Enter çalışmıyor
 Date: 2010-09-30 21:22
 Category: CSS, XHTML
-tags: enter çalışmıyor, ie, sıfırlama, white-space, white-space:normal, white-space:pre
+tags: [enter çalışmıyor, ie, sıfırlama, white-space, white-space, normal, white-space, pre]
 ---
 
 Projede karşılaştığım sorunlardan biri textarea elemanı içinde enter’a

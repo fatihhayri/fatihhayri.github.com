@@ -3,7 +3,7 @@ layout: post
 title: 28 Mayıs 2008 web&#039;den seçme haberler
 Date: 2008-05-28 09:53
 Category: Haberler
-tags: ASP.NET, css3, Dreamweaver, Google javascript kütüphanesi api, iframe gibi div, jquery, mootools, resim galerisi, seo
+tags: [ASP.NET, css3, Dreamweaver, Google javascript kütüphanesi api, iframe gibi div, jquery, mootools, resim galerisi, seo]
 ---
 
 -   "Tasarımcılar için SEO Rehberi" - siberkultur.com [Bağlantı][]

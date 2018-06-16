@@ -3,7 +3,7 @@ layout: post
 title: ie6&#039;da border-color:transparent desteği sağlamak
 Date: 2011-06-29 23:22
 Category: CSS
-tags: Border, kenar-çizgisi, saydam border, transparent
+tags: [Border, kenar-çizgisi, saydam border, transparent]
 ---
 
 Geçen araştırırken gördüm. border-color:transparent özelliğini İnternet

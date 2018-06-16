@@ -3,7 +3,7 @@ layout: post
 title: jquery-ui'ın bower ile yüklenmesi
 Date: 2015-12-17 08:40
 Category: jquery
-tags: javascript jquery jqueryui bower
+tags: [javascript jquery jqueryui bower]
 ---
 
 ![enter image description here](https://fatihhayrioglu.com/images/jqueryui-bower.jpg)

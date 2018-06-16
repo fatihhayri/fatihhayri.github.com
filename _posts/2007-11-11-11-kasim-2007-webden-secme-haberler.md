@@ -3,7 +3,7 @@ layout: post
 title: 11 Kasım 2007 Web&#039;den Seçme Haberler
 Date: 2007-11-11 14:50
 Category: Haberler
-tags: ASP.NET, CSS, Etiket bulutu, Firefox, Haberler, ie, menü, mootools, paypal, php, site, web2.0
+tags: [ASP.NET, CSS, Etiket bulutu, Firefox, Haberler, ie, menü, mootools, paypal, php, site, web2.0]
 ---
 
 -   CSS ile yapılmış parlak yatay menü örnekleri [Bağlantı][]

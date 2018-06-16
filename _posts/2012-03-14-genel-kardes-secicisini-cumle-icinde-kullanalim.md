@@ -3,7 +3,7 @@ layout: post
 title: ~  &quot;Genel Kardeş Seçicisini&quot;  Cümle İçinde Kullanalım
 Date: 2012-03-14 14:55
 Category: CSS
-tags: ardışık elemanlar, Genel Kardeş Seçiciler, General Sibling Selector, ie6yaolum
+tags: [ardışık elemanlar, Genel Kardeş Seçiciler, General Sibling Selector, ie6yaolum]
 ---
 
 Okul yıllarına döndüm bir an. Türkçe derslerinde bir atasözü veya deyim

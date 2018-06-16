@@ -3,7 +3,7 @@ layout: post
 title: CSS ile gizle göster animasyonu
 Date: 2016-08-15 14:50
 Category: css
-tags: transition, max-height
+tags: [transition, max-height]
 ---
 
 ![ilk web sitesi](/images/first-web-page.jpg)

@@ -3,7 +3,7 @@ layout: post
 title: Siyasetname - Nizamülmülk
 Date: 2007-05-01 22:45
 Category: Kitaplar
-tags: Kitaplar
+tags: [Kitaplar]
 ---
 
 ![siyasetname.jpg][]Selçuklu vezirlerinden Nizamülmülk'ün o devirde

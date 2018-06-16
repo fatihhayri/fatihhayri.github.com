@@ -3,7 +3,7 @@ layout: post
 title: iframe virüsü ve Saldırgan Site damgalamasından kurtulmanın yolu
 Date: 2009-08-15 22:51
 Category: XHTML
-tags: google-web-master-tools, iframe, malware
+tags: [google-web-master-tools, iframe, malware]
 ---
 
 Yaklaşık 2-3 haftadır bir çok yerde karşılaştığımız bu sorunun

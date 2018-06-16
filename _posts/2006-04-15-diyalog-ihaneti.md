@@ -3,10 +3,10 @@ layout: post
 title: Diyalog İhaneti
 Date: 2006-04-15 15:22
 Category: Kitaplar
-tags: diyalog, diyalog ihaneti, Hıristiyanlık, İslam, Müslümanlık, Yumni Sezen
+tags: [diyalog, diyalog ihaneti, Hıristiyanlık, İslam, Müslümanlık, Yumni Sezen]
 ---
 
-![Diyalog İhaneti][]Diyalog'un hedefinin ne olduğu gösteren güzel bir
+<span class="kitap-resmi">![Diyalog İhaneti][]</span> Diyalog'un hedefinin ne olduğu gösteren güzel bir
 kitap. Çarpıcı tespitleri var. Dinlerarası Diyalog, iddia edilenin aksine, İslam süzgecinden geçemeyecek durumdadır. İddialar saptırmadır.
 Dinlerarası Diyalog, Türk Milleti'nin ve diğer Müslüman aleminin hiçbir
 derdine deva olmayacak bir anlayıştır. Aksine iman ve maneviyat bunalımı
@@ -21,6 +21,6 @@ kadar hep ön planda ve gündemde, Hz. Muhammed'in adı bile geçmemektedir.
 Neresinden bakılırsa bakılsın Dinlerarası Diyalog, Müslüman için bir
 çıkmaz sokaktır... [http://kitap.antoloji.com/kitap.asp?kitap=225961][]
 
-  [Diyalog İhaneti]: /images/diyalog_ihaneti_yumni_sezer.gif
+  [Diyalog İhaneti]: /images/diyalog_ihaneti_yumni_sezer.jpg
     "Diyalog İhaneti"
   [http://kitap.antoloji.com/kitap.asp?kitap=225961]: http://kitap.antoloji.com/kitap.asp?kitap=225961

@@ -3,7 +3,7 @@ layout: post
 title: Çok kolonlu yapılar ve çok kolonlu menüler
 Date: 2010-03-17 00:04
 Category: CSS, Javascript, jquery, Web Standartları, XHTML
-tags: css3, çok kolonlu, çok kolonlu menüler, Javascript, jquery
+tags: [css3, çok kolonlu, çok kolonlu menüler, Javascript, jquery]
 ---
 
 ![](/images/rei.jpg)

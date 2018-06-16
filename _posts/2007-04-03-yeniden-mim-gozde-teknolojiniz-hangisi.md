@@ -3,7 +3,7 @@ layout: post
 title: Yeniden Mim Gözde Teknolojiniz Hangisi?
 Date: 2007-04-03 18:51
 Category: Haberler
-tags: Haberler
+tags: [Haberler]
 ---
 
 [Hamdi Yaman][]'ın bize pasladığı yeni mim'imiz Gözde Teknolojimizin

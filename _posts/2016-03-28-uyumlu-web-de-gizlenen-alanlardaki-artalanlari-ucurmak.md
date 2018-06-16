@@ -3,7 +3,7 @@ layout: post
 title: CSS İpucu 38 - Uyumlu web'de gizlenen alanlardaki artalanları uçurmak
 Date: 2016-03-28 10:00
 Category: css
-tags: ipucu background-image uyumlu-web
+tags: [ipucu background-image uyumlu-web]
 ---
 
 Mobilde her kilobaytın hesabı yapıldığı için ve masaüstüne göre nispeten daha yavaş bağlantılar nedeniyle uyumlu web çalışmalarında performan daha fazla önem kazanıyor.

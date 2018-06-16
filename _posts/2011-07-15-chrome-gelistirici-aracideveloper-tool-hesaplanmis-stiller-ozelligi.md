@@ -3,7 +3,7 @@ layout: post
 title: Chrome Geliştirici Aracı(Developer Tool) Hesaplanmış Stiller Özelliği
 Date: 2011-07-15 10:02
 Category: CSS
-tags: chrome geliştirici aracı, firebug, hesaplanmış stiller
+tags: [chrome geliştirici aracı, firebug, hesaplanmış stiller]
 ---
 
 Firefox kullanmamdaki en büyük sebeplerden birisi tabiki Firebug,

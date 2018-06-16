@@ -3,7 +3,7 @@ layout: post
 title: 18 Ağustos 2008 web&#039;den seçme haberler
 Date: 2008-08-18 17:27
 Category: Haberler
-tags: CSS, firebug, Firefox, jquery, Monitör çözünürlüğü, seo, tablo, Twitter, Web Standartları, yui
+tags: [CSS, firebug, Firefox, jquery, Monitör çözünürlüğü, seo, tablo, Twitter, Web Standartları, yui]
 ---
 
 -   Firefox 3.1 ile birlikte gelen yeni CSS3 desteklerinden biri yeni

@@ -4,7 +4,7 @@ title: Kutu Modeli - Görünüm Efekti Özellikleri
 Slug: kutu-modeli-gorunurluk-ozellikleri
 Date: 2007-09-07 14:41
 Category: CSS, Web Standartları, XHTML
-tags: clip, CSS, görünürlük-özellikleri, Kutu-Modeli, overflow, visibility, Web Standartları, XHTML
+tags: [clip, CSS, görünürlük-özellikleri, Kutu-Modeli, overflow, visibility, Web Standartları, XHTML]
 ---
 
 Bu aralar CSS kitabına(e-kitap) ağırlık verdim. Kitaptaki eksik

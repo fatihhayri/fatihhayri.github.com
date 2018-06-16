@@ -3,7 +3,7 @@ layout: post
 title: 06 Ağustos 2008 web&#039;den seçme haberler
 Date: 2008-08-06 13:55
 Category: Haberler
-tags: Asp.net 3.5, blog, FaceLift, Form metinleri, mesaj kutusu, sFIR, tablo, w3c doğrulama, WordPress, wordpress tema
+tags: [Asp.net 3.5, blog, FaceLift, Form metinleri, mesaj kutusu, sFIR, tablo, w3c doğrulama, WordPress, wordpress tema]
 ---
 
 -   Asp.Net 3.5 ile gelen yenilikler. [Bağlantı][]

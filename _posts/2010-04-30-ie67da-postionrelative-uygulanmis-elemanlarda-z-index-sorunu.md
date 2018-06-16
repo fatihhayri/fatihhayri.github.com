@@ -3,7 +3,7 @@ layout: post
 title: ie6/7&#039;da postion:relative Uygulanmış Elemanlarda z-index Sorunu
 Date: 2010-04-30 23:46
 Category: CSS, Web Standartları, XHTML
-tags: ie6, ie7, liste, postion:relative, z-index
+tags: [ie6, ie7, liste, postion, relative, z-index]
 ---
 
 Bu sorunla neredeyse 4-5 kere karşılaşmışımdır. En son yaptığım projede

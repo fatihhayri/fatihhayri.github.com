@@ -3,7 +3,7 @@ layout: post
 title: Tablo Satırına Verilen Ardalan Resminin Tekrarlama Sorunu
 Date: 2009-04-13 13:29
 Category: CSS, Web Standartları, XHTML
-tags: hata, internet explorer, sorun, tablo, tablo-satırı, tr, WebKit
+tags: [hata, internet explorer, sorun, tablo, tablo-satırı, tr, WebKit]
 ---
 
 Tablo satırına ardalan resmi tanımladığımızda Firefox ve Opera'da sorun

@@ -3,7 +3,7 @@ layout: post
 title: Alıntı&#58; blockquote ve q etiketleri
 Date: 2007-11-12 11:52
 Category: CSS, Web Standartları, XHTML
-tags: Alıntı, blockquote, CSS, quotes, Web Standartları, XHTML
+tags: [Alıntı, blockquote, CSS, quotes, Web Standartları, XHTML]
 ---
 
 W3C bir çok durum için çeşitli etiketler üretmiştir ve bu etiketlerin

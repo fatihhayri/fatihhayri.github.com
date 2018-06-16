@@ -3,7 +3,7 @@ layout: post
 title: Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)
 Date: 2007-03-24 22:39
 Category: CSS, Web Standartları, XHTML
-tags: CSS, Web Standartları, XHTML
+tags: [CSS, Web Standartları, XHTML]
 ---
 
 Xhtml ile kodlama yaparken genelde metinleri kullanırız. Çünkü
