@@ -14,7 +14,7 @@ tags: Ajax, CSS, font, Haberler, html, Javascript, last.fm, web2.0
     bilgiler için tıklayınız. [Link][2]
 -   Font kullanım oranlarını gösteren web tasarım ve kodlayıcıları için
     kullanışlı bir site. [Link][3]
--   Javascript ile resimlere yansıma efekti veren script. [Link][4]
+-   Javascript ile resimlere yansıma efekti veren script. 
 -   Html5 yeniliklerini kısa kısa anlatan İngilizce bir makale.
     [Link][5]
 -   İnternet radyosu Last.fm tabi farklı bir radyo artık Türkçe.
@@ -29,7 +29,6 @@ tags: Ajax, CSS, font, Haberler, html, Javascript, last.fm, web2.0
   [2]: http://googlesystem.blogspot.com/2007/06/google-numbers-facts.html
     "Link"
   [3]: http://www.visibone.com/font/FontResults.html "Link"
-  [4]: http://cow.neondragon.net/stuff/reflection/ "Link"
   [5]: http://www.bestwebezy.com/web-20/html-5-what-now/ "Link"
   [6]: http://www.lastfm.com.tr/ "Link"
   [7]: http://www.readwriteweb.com/archives/keeping_tabs_on_web_20_lists.php

@@ -20,8 +20,8 @@ tags: ASP.NET, css3, Dreamweaver, Google javascript kütüphanesi api, iframe gi
     [Bağlantı][6]
 -   Adobe Dreamweaver CS4 Beta'yı duyurdu. Güzel yeni özellikleri var
     gibi. [Bağlantı][7]
--   jQuery ve Mootolls karşılaştırması. [Bağlantı][8]
--   Asp.net'de mesaj kutularını CSS ile oluşturmak. [Bağlantı][9]
+-   jQuery ve Mootolls karşılaştırması.
+-   Asp.net'de mesaj kutularını CSS ile oluşturmak.
 -   CSS ile süslü resim galerisi yapmak. [Bağlantı][10]
 
 
@@ -39,9 +39,5 @@ tags: ASP.NET, css3, Dreamweaver, Google javascript kütüphanesi api, iframe gi
   [6]: http://www.chromaticsites.com/web-design-blog/2008-05-26/the-official-successful-website-checklist-challenge/
     "web yapılması gerkenler listesi"
   [7]: http://labs.adobe.com/technologies/dreamweavercs4/ "dw cs 4"
-  [8]: http://forum.kohanaphp.com/comments.php?DiscussionID=521&Focus=3328#Comment_3328
-    "javascript ve mootools karşılaştırması"
-  [9]: http://www.jankoatwarpspeed.com/post/2008/05/28/Create-MessageBox-user-control-using-ASPNET-and-CSS.aspx
-    "asp.net mesaj kutularını css ile düzenlemek"
   [10]: http://www.webdesignerwall.com/tutorials/css-decorative-gallery/
     "css ile süslü resim galerisi"

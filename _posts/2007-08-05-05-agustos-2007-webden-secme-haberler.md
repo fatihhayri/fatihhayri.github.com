@@ -15,12 +15,11 @@ tags: domain, Firefox, google reader, Haberler, Javascript, Microsoft-Visula-Stu
 -   Adsl kullanıcılarına indirim geldi. Ancak bazı hesaplarda indirim
     olmaması düşündürücü. Bir indirimden ziyade yönlendirme yapılmış
     gibi. Limitli kullanıcıya verilmiş ceza sanki. Neyse hayırlı olsun.
-    [Link][4]
 -   Google Trend'e karşı Yahoo Buzz Index. Rekabet her zaman iyidir.
     [Link][5]
 -   Microsoft Visula Sturdio 2008 Beta 2 çıktı. En güzel özelliklerinden
     biri javascript kod yazım kolaylığının birlikte gelmesi. [Link][6]
--   Geldik yazmış "Web 2.0′a Geçiş için 12 Kural" [Link][7]
+-   Geldik yazmış "Web 2.0′a Geçiş için 12 Kural"
 
 
   [Link]: http://www.murekkep.org/blogkureye-sorduk-com-org-net-domain-tercihinde-hangisini-neden-seciyorsunuz
@@ -30,10 +29,7 @@ tags: domain, Firefox, google reader, Haberler, Javascript, Microsoft-Visula-Stu
     "Firefox"
   [3]: http://googlesystem.blogspot.com/2007/08/blogroll-powered-by-google-reader.html
     "Google Reader"
-  [4]: http://www.ttnet.net.tr/yeni.htm "Adsl yeni tarife"
   [5]: http://www.readwriteweb.com/archives/yahoo_buzzlist_versus_google_trends.php
     "Yahoo Buzz Index"
   [6]: http://blogs.msdn.com/webdevtools/archive/2007/08/03/better-javascript-intellisense-with-silverlight-1-0.aspx
     "VS.NET 2008"
-  [7]: http://geldik.biz/2007/08/03/web-20a-gecis-icin-12-kural/
-    "Web2.0"

@@ -10,7 +10,7 @@ tags: Ajax, CSS performansı, css3, firebug, jquery, RSS ikonları, Seçiciler, 
 -   Güzel bir Firebug makalesi. http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug
 -   Butonların web tarayıcılarına göre kenar içi boşluğu(padding)
     farklılıkları. [Bağlantı][2]
--   CSS performansı hakkında güzel bir makale. [Bağlantı][3]
+-   CSS performansı hakkında güzel bir makale.
 -   Asp.net'de jquery yardımı ile takvimden tarih seçme uygulaması.
     [Bağlantı][4]
 -   jQuery'de uzmanlaşmak isteyenler için güzel bir makale. [bağlantı][]
@@ -24,8 +24,6 @@ tags: Ajax, CSS performansı, css3, firebug, jquery, RSS ikonları, Seçiciler, 
     "1 piksel"
   [2]: http://www.designdetector.com/demos/buttons-padding-demo.html
     "butonlar"
-  [3]: http://jpsykes.com/152/testing-css-performance-pt-2
-    "css performansı"
   [4]: http://elegantcode.com/2008/05/06/using-jquery-datepicker-in-aspnet/
     "takvimden tarih seç"
   [bağlantı]: http://www.learningjquery.com/2008/05/using-low-pro-for-jquery

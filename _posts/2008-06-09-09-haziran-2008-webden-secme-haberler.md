@@ -10,9 +10,8 @@ tags: Ajax, akordiyon, Google-Search, jquery, mailing, mootools, performans, Scr
 -   CSS ve tipografi ile 10 uygulama. [Bağlantı][1]
 -   Sitelerde bir çok yerde javascript kullanıyoruz. Buda beraberinde
     bazı yavaşlamalar getiriyor. Bunu en aza indirebilmek için güzel bir
-    makale yazmışlar. [Bağlantı][2]
+    makale yazmışlar.
 -   jQuery yardımı ile kaydırma çubuğu hareketi ile içeriği yüklemek.
-    [Bağlantı][3]
 -   Script injection ataklarını anlamak. [Bağlantı][4]
 -   Web sitelerinde kullanıcılara yazı boyutu rengi vb. değişiklikleri
     değiştirme imkanı vermek. Örnekler, fikirler ve tartışmalar
@@ -37,10 +36,6 @@ tags: Ajax, akordiyon, Google-Search, jquery, mailing, mootools, performans, Scr
     "html mailing"
   [1]: http://www.3point7designs.com/blog/2008/06/02/10-examples-of-beautiful-css-typography-and-how-they-did-it/
     "css ve tipografi"
-  [2]: http://bdn.backbase.com/blog/grauw/javascript-html-construction-benchmark
-    "hızlı javascript"
-  [3]: http://www.webresourcesdepot.com/load-content-while-scrolling-with-jquery/
-    "kaydırma çubuğu"
   [4]: http://aspalliance.com/1648_Understanding_Script_Injection_Attacks.all
     "script injection"
   [5]: http://www.smashingmagazine.com/2008/06/05/style-switchers-are-back-ideas-examples-and-a-contest/

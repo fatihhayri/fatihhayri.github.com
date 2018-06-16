@@ -13,7 +13,7 @@ tags: .net, css3.0, Haberler, jquery, lightbox, microsoft, SiggRaph2007, tafita
 -   Tüm IE versiyonları için düzeltme(hack) kodu. [Link][3]
 -   Resim gösterimine farklı bir mantık getiren SiggRaph2007 izleminizi
     tavsiye ederim. [Link][4]
--   Asp.net ajax ile satır içi metinleri düzenleme. [Link][5]
+-   Asp.net ajax ile satır içi metinleri düzenleme.
 -   İnternet üzerinden XHTML/HTML kodlaması yapan siteler. Siz
     tasarımınızı veriyorsunuz onlar kesip biçip size HTML veriyor. Tabi
     parayla [Link][6]
@@ -31,8 +31,6 @@ tags: .net, css3.0, Haberler, jquery, lightbox, microsoft, SiggRaph2007, tafita
   [3]: http://spittingcat.blogspot.com/2007/08/ie-css-hack-including-ie7.html
     "IE hack"
   [4]: http://www.youtube.com/watch?v=vIFCV2spKtg "SiggRaph2007"
-  [5]: http://encosia.com/index.php/2007/08/23/seamless-inline-text-editing-with-aspnet-ajax/
-    "asp.net ajax satıriçi"
   [6]: http://www.smashingmagazine.com/2007/08/23/xhtmlcss-coding-services/
     "Çevirim içi HTML"
   [7]: http://www.smashingmagazine.com/2007/08/22/web-applications-improve-your-workflow/

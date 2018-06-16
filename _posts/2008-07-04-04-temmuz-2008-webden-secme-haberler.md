@@ -7,7 +7,7 @@ tags: Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, 
 ---
 
 -   CSS Firefox 3 filtresi. [Bağlantı][]
--   Alan Adları Değişiyor - perfectgate.net [Bağlantı][1]
+-   Alan Adları Değişiyor - perfectgate.net 
 -   Bırakın yazılarınızı okurlarınız etiketlesin - blog.wolkanca.com
     [Bağlantı][2]
 -   İnternet Tarayıcıları ve web geliştirici araçları hakkında güzel bir
@@ -16,7 +16,6 @@ tags: Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, 
     "CSS Sprite Tekniği" Kırık bağlantı.
 -   Firefox 3 rekoru kırabildi mi? - cnetturkiye.com
 -   Uygulamalarımızda kullanabileceğimiz 15 CSS + XHTML uygulaması.
-    [Bağlantı][6]
 -   Firefox3 en çok indirilen program olarak Guinness rekorlar kitabına
     girmiş. [Bağlantı][7]
 -   55 adet iyi kalitede ikon setleri. [Bağlantı][8]
@@ -33,13 +32,10 @@ tags: Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, 
 
   [Bağlantı]: http://snipplr.com/view/7043/firefox-3-css-hack/
     "Firefox 3 filtresi"
-  [1]: http://perfectgate.net/alan-adlari-degisiyor/ "alan adları"
   [2]: http://blog.wolkanca.com/birakin-yazilarinizi-okurlari-etiketlesin/
     "wordpress etiket"
   [3]: http://css-tricks.com/cutting-edge-browsers-and-their-development-tools/
     "web araçları"
-  [6]: http://socialcmsbuzz.com/15-css-and-html-tutorials-you-can-use-in-your-projects-01072008/
-    "uygulamlar"
   [7]: http://www.mozilla.com/en-US/press/mozilla-2008-07-02.html
     "Firefox 3"
   [8]: http://www.smashingmagazine.com/2008/07/02/55-free-high-quality-icon-sets/

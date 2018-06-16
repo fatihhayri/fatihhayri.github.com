@@ -16,7 +16,7 @@ tags: Firefox, Haberler, innerHTml, linq, opacity
     anlatılan metot mantıklı.
 -   Eburhan'dan "Css ile hazırladığım mesaj kutuları" [Bağlantı][2]
 -   google chart api(grafik) hakkında bir makale. [Bağlantı][3]
--   Daron Yöndem - LINQ2XML. [Bağlantı][4]
+-   Daron Yöndem - LINQ2XML.
 -   Güzel bir css menü örneği. [Bağlantı][5]
 -   innerHTml kullanımının bize kaybettirdiği zamanı kazanmak.
     [Bağlantı][6]
@@ -30,8 +30,6 @@ tags: Firefox, Haberler, innerHTml, linq, opacity
     "mesaj kutuları"
   [3]: http://techtracer.com/2007/12/17/the-power-of-google-chart-api/
     "google chart api"
-  [4]: http://daron.yondem.com/tr/PermaLink.aspx?guid=3dc9614e-471c-4c41-ad54-d7c2276b15a7
-    "LINQ"
   [5]: http://www.3point7designs.com/blog/2007/12/22/advanced-css-menu-trick/
     "css menü"
   [6]: http://ajaxian.com/archives/replacehtml-for-when-innerhtml-dogs-you-down

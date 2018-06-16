@@ -21,4 +21,4 @@ sürümde güvenliğin daha iyi olduğu söyleniyor. Avantajım bu oldu. Her
 sürüm yükseltmede kalıcı bağlantımı yazının ismi olarak yapamadım yine.
 Bu kalıcı bağlantı işi beni çok yordu.
 
-  [yakuter]: http://www.yakuter.com/duzenleniyor
+  [yakuter]: http://www.yakuter.com

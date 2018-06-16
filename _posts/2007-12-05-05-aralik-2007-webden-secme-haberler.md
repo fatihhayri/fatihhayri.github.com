@@ -10,9 +10,8 @@ tags: blog, caps-lock, font, Haberler, oval-buton, takvim
 -   Hangi Yazı tipi formatını seçmeliyiz. [Bağlantı][]
 -   Örnek kullanıma hazır css ile yapılmış oval butonlar. [Bağlantı][1]
 -   Ziyaret edilmiş linklerin kenarına işaret koymak. [Bağlantı][2]
--   Güzel bir CSS ile yapılmış resimli menü örneği. [Bağlantı][3]
+-   Güzel bir CSS ile yapılmış resimli menü örneği.
 -   İyi bir javascript kod yazarı olmak isteyenlere ipuçları
-    [Bağlantı][4]
 -   Güzel ve kullanışlı takvim uygulamaları. [Bağlantı][5]
 -   2007'nin en iyi CSS web sayfaları. [Bağlantı][6]
 -   CSS yazarken denenebilecek yeni bir format. [Bağlantı][7]
@@ -31,9 +30,6 @@ tags: blog, caps-lock, font, Haberler, oval-buton, takvim
     "oval butonlar"
   [2]: http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/
     "ziyaret edildi"
-  [3]: http://elliotjaystocks.com/blog/archive/2007/css-tutorial-better-nav-image-replacement/
-    "Resimli menü"
-  [4]: http://www.dustindiaz.com/javascript-no-no/ "javascript ipuçları"
   [5]: http://www.electricprism.com/aeron/calendar/ "takvim örnekleri"
   [6]: http://www.webdesignerwall.com/trends/best-of-css-design-2007/
     "2007'nin en iyileri"

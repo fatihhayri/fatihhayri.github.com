@@ -9,7 +9,7 @@ tags: Paged Comments, sitemi düzenliyorum, yorum
 Daha önce bir kaç kere aklıma geldi ama yapamadığım bir işti. En son bir
 iki istek gelince bu yönde kurmaya karaverdim. Aslında ben buraya
 eklentinin nasıl ekleneceğini yazmayacağım. Bir kaç ipucu ekledim onları
-yazacağım. [Sırrı Özden][]'in Türkçeye çevirdiği eklentiyi ben [orjinal sitesinden][] yükledim. Görünümü değiştirmek için stil dosyama bir satır
+yazacağım. Sırrı Özden'in Türkçeye çevirdiği eklentiyi ben [orjinal sitesinden][] yükledim. Görünümü değiştirmek için stil dosyama bir satır
 css kodu ekledim.
 
 {% highlight css %}
@@ -35,6 +35,4 @@ sayması için yukarıdaki kodu
 
 bu kod ile değiştirdim düzeldi.
 
-
-  [Sırrı Özden]: http://www.srro.net/paged-comments-yorum-sayfalama-eklentisi-turkce/
   [orjinal sitesinden]: http://www.keyvan.net/code/paged-comments/

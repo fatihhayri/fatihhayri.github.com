@@ -139,18 +139,15 @@ Bazen başlıkları resim yapmamız gerektiğidurumlar olabilir bunun için
 Metin Yerine Resim Koyma Metotlarından biriniuygulayabiliriz. Ayrıntılı
 bilgi için "[Metin Yerine Resim/FlashEkleme Teknikleri (Image Replacement)][]" makalemize göz atın.
 
--   [http://www.communitymx.com/content/article.cfm?cid=A1A37][]
--   [http://www.paulmichaelsmith.com/blog/examples/headingicons/sample.php][]
+-   http://www.communitymx.com/content/article.cfm?cid=A1A37
+-   http://www.paulmichaelsmith.com/blog/examples/headingicons/sample.php
 -   [http://eu.wiley.com/WileyCDA/WileyTitle/productCd-047009754X.html][]
 -   [http://www.sitepoint.com/books/cssdesign1/][]
--   [http://www.friendsofed.com/book.html?isbn=1590593812][]
+-   http://www.friendsofed.com/book.html?isbn=1590593812
 
   [tıklayınız.]: /dokumanlar/baslik_deneme1.html
   [Başlıklar]: /images/basliklar.gif
   [1]: /dokumanlar/baslik_deneme2.html
   [Metin Yerine Resim/FlashEkleme Teknikleri (Image Replacement)]: http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
-  [http://www.communitymx.com/content/article.cfm?cid=A1A37]: http://www.communitymx.com/content/article.cfm?cid=A1A37
-  [http://www.paulmichaelsmith.com/blog/examples/headingicons/sample.php]: http://www.paulmichaelsmith.com/blog/examples/headingicons/sample.php
   [http://eu.wiley.com/WileyCDA/WileyTitle/productCd-047009754X.html]: http://eu.wiley.com/WileyCDA/WileyTitle/productCd-047009754X.html
   [http://www.sitepoint.com/books/cssdesign1/]: http://www.sitepoint.com/books/cssdesign1/
-  [http://www.friendsofed.com/book.html?isbn=1590593812]: http://www.friendsofed.com/book.html?isbn=1590593812

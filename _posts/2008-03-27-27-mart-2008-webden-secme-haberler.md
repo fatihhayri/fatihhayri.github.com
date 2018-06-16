@@ -26,7 +26,7 @@ tags: .net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, mo
 -   Mikroformat hakkında 100'den fazla derleme link. [Bağlantı][13]
 -   WordPress 2.5 hakkında Wolkanca'dan geniş ve güzel bir bilgi.
     [Bağlantı][14]
--   "Wordpress bloğunuzu korumak için öneriler" [Bağlantı][15]
+-   "Wordpress bloğunuzu korumak için öneriler"
 
 
   [Bağlantı]: http://www.nitobi.com/survey/ "web üzerine bir anket"
@@ -58,5 +58,3 @@ tags: .net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, mo
     "mikroformat"
   [14]: http://blog.wolkanca.com/wordpress-25-ile-gelecek-olan-yenilikler/
     "wordpress 2.5"
-  [15]: http://www.teknolojiherseyim.com/wordpress-blogunuzu-korumak-icin-oneriler/
-    "wordpress güvenlik"

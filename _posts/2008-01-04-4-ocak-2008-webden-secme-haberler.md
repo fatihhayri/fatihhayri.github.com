@@ -8,19 +8,17 @@ tags: clearfix, css3.0, Firefox, google, Haberler, icon, pdf, yui
 
 -   YUI 2.4.0 çıkmış. Birçok yenilikler var. [Bağlantı][]
 -   Photoshop icon üretme eklentisi. [Bağlantı][1]
--   Fatih Turan'dan "Firefox 3′de CSS İçin İyileştirmeler" [Bağlantı][2]
+-   Fatih Turan'dan "Firefox 3′de CSS İçin İyileştirmeler"
 -   Erkut Ercan'dan "CSS 3.0 / Yeni Versiyonla Gelen Bazı Özelikler"
-    [Bağlantı][3]
 -   Ogalican "Css İle Yatay İstatistik Kutusu" makalesini okuyun.
-    [Bağlantı][4]
 -   HTML+ CSS sayflarından yüksek kaliteli pdf dokümanı oluşturmanın
     video anlatımı. [Bağlantı][5]
 -   Google'dan 2007 istatistikleri. [Bağlantı][6]
 -   Netscape web tarayıcısı artık yeni sürüm çıkarmayacakmış.
     [Bağlantı][7]
 -   2007'de en çok indirilen programlar. [Bağlantı][8]
--   "2007 yılında ülkemizdeki olumlu internet gelişmeleri" [Bağlantı][9]
--   Kendimize özel selecbox oluşturalım. [Bağlantı][10]
+-   "2007 yılında ülkemizdeki olumlu internet gelişmeleri"
+-   Kendimize özel selecbox oluşturalım.
 -   Minimum kod kullanarak gölgeli kutu yapmak. [Bağlantı][11]
 -   HTML ve CSS ile esneyebilir resimler eklemek. [Bağlantı][12]
 -   Float Uygulanmış Elementleri Tam Kapsayamama Sorununa yeni çözümler.
@@ -32,11 +30,6 @@ tags: clearfix, css3.0, Firefox, google, Haberler, icon, pdf, yui
 
   [Bağlantı]: http://developer.yahoo.com/yui/ "YUI 2.4.0"
   [1]: http://www.sibcode.com/icon-plugin/index.htm "ikon yap"
-  [2]: http://www.fatihturan.com/web-tasarim/firefox-3de-css-icin-iyilestirmeler
-    "Firefox 3 ve CSS"
-  [3]: http://www.erkutercan.com/blog/?p=28 "CSS3"
-  [4]: http://www.ogalican.com/blog/css-ile-yatay-istatislik-kutusu
-    "Bağlantı"
   [5]: http://www.youtube.com/watch?v=vcXUrNSvjhU "pdf yap"
   [6]: http://googlesystem.blogspot.com/2007/12/2007-metrics.html
     "Google istatistikleri"
@@ -44,9 +37,6 @@ tags: clearfix, css3.0, Firefox, google, Haberler, icon, pdf, yui
     "Netscape"
   [8]: http://www.download.com/8301-2007_4-9835850-12.html
     "2007 İndirilenler"
-  [9]: http://www.muratbuyurgan.com/2007/12/28/2007-yilinda-ulkemizdeki-olumlu-internet-gelismeleri/
-    "internet 2007"
-  [10]: http://www.cult-f.net/2007/12/14/elselect/ "özel slectbox"
   [11]: http://tjkdesign.com/articles/drop-shadow_and_AlphaImageLoader.asp
     "minimum kod ve gölgeli kutu"
   [12]: http://www.sitepoint.com/blogs/2007/12/20/stretchy-images-with-html-and-css/

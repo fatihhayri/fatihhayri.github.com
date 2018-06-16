@@ -10,7 +10,7 @@ tags: CSS, Haberler, web2.0, WordPress
     benderastlıyorum, sorun için herkesten özür diliyorum, çözmeye
     çalışacağım.
 -   CSS'in önemine dikkat çekmek isteyen bir grubun uyguladığı çıplak
-    CSS sayfafestivali! bu sene 2. sinin düzenliyor.[Link][]
+    CSS sayfafestivali! bu sene 2. sinin düzenliyor.
 -   CSS ile yazıcıya göre sayfa kodlamayı anlatan güzel bir İngilizce
     makale.[Link][1]
 -   Meta etiketleri hakkında yazılmış güzel bir İngilizce
@@ -23,7 +23,6 @@ tags: CSS, Haberler, web2.0, WordPress
     Logo,Metin ve Sunum".[Link][7]
 
 
-  [Link]: http://naked.dustindiaz.com/ "Link"
   [1]: http://www.webcredible.co.uk/user-friendly-resources/css/print-stylesheet.shtml
     "Link"
   [2]: http://www.seomoz.org/blog/making-the-most-of-meta-description-tags

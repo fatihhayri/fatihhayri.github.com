@@ -18,11 +18,11 @@ tags: css3.0, firebug, Haberler, table, tipografi, Visual-Studio, web2.0, xslt
 -   Farklı web tarayıcılarında sayfalarımızı nasıl test ederiz.
     [Link][6]
 -   Kullandığınız tarayıcının CSS3.0 ne kadar desteklediğini test etmek
-    için bu siteye uğrayın. [Link][7]
+    için bu siteye uğrayın.
 -   XSLT ve CSS işlevselliği hakkında bir makale. [Link][8]
 -   Web programcılarının bir kenara not etmesi gereken 125 kod örneği.
     [Link][9]
--   Firebug'ın bilmediğimiz 10 özelliği. [Link][10]
+-   Firebug'ın bilmediğimiz 10 özelliği.
 -   5000 adet web2.0 logosunu 5 dakikada görmeye ne dersiniz. [Link][11]
 
 
@@ -38,12 +38,9 @@ tags: css3.0, firebug, Haberler, table, tipografi, Visual-Studio, web2.0, xslt
   [5]: http://ilovetypography.com/ "tipografi"
   [6]: http://www.vandelaydesign.com/blog/design/effectively-testing-your-website-in-multiple-browsers/
     "web tarayıcılarına göre test"
-  [7]: http://www.css3.info/selectors-test/test.html "CSS3.0 test"
   [8]: http://itc-382.blogspot.com/2007/08/magic-of-xslt.html
     "XSLT ve CSS"
   [9]: http://www.paulspoerry.com/index.php/2007/05/18/125-code-snippets-for-web-designers/
     "saklanası kodlar"
-  [10]: http://web-wire.blogspot.com/2007/04/10-things-you-didnt-know-about-firebug.html
-    "FireBug"
   [11]: http://www.youtube.com/watch?v=Hs_xnyJtWEc&eurl=http%3A%2F%2Fwww%2Egoogle%2Ecom%2Freader%2Fview%2F
     "web2.0 logoları"

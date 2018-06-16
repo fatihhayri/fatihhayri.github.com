@@ -20,10 +20,10 @@ bazılarını denedim ve çeşitli sitelerde kullandım ve sonuçta birinde
 karar kıldım. Sırası ile denediğim genel lightbox kodları:
 
 -   prototype ve scriptaculous tabanlı en meşhur Lokesh Dhakar'ın
-    yaptığı [Lightbox 2.0][]
+    yaptığı
 -   Lightbox2.0'ın prototype.lite ve moo.fx. kullanılarak revize edilmiş
-    daha küçük hali olan [Litebox][]
--   [Lightwindow][], prototype alt yapısını kullanıyor, bir çok yerde
+    daha küçük hali olan 
+-   Lightwindow, prototype alt yapısını kullanıyor, bir çok yerde
     kullanılması güzel(flash, iframe, komutla), boyutu yüksek olması dez
     avantajı, ayrıca değiştirmeye pek eleverişli değil.
 -   Son olarak benim karar kıldığım mootools javascript kütüphanesi
@@ -74,34 +74,24 @@ varsa ve slimbox bu nesnenin altında kalıyorsa. slimebox.css da
 
 -   [http://particletree.com/features/lightbox-gone-wild/][]
 -   [http://www.digitalia.be/software/slimbox][Slimbox]
--   [http://www.artviper.net/test/ajaxslide/index.html][] (farklı bir
-    uygulama şekli)
+-   http://www.artviper.net/test/ajaxslide/index.html
 -   [http://clientside.cnet.com/cnet.gf/docs/files/common/3rdParty/Slimbox/slimbox-js.html][]
     (kaynak)
--   [http://scripts.ajaxflakes.com/category/lightbox/][] (lightbox
-    listesi)
--   [http://www.ajaxrain.com/tag.php?tag=popup&page=1][] (lightbox
-    listesi)
+-   http://scripts.ajaxflakes.com/category/lightbox/
+-   http://www.ajaxrain.com/tag.php?tag=popup&page=1
 -   [http://jadedpixel.stikipad.com/design/show/A+Better+Lightbox][]
     (karşılaştırma)
 -   [http://homepage.mac.com/yukikun/software/slimbox_ex/][]
     (geliştirilmiş sildebox)
--   [http://www.chazzuka.com/blog/index.php?p=21&][] (karşılaştırma)
+-   http://www.chazzuka.com/blog/index.php?p=21
 -   [http://www.phatfusion.net/lightbox/index.htm][] (slimebox
     farklılaştırılmış
 
 
   [Lightbox örneği]: /images/lightbox.gif
-  [Lightbox 2.0]: http://www.huddletogether.com/projects/lightbox2
-  [Litebox]: http://www.doknowevil.net/litebox/
-  [Lightwindow]: http://stickmanlabs.com/lightwindow/
   [Slimbox]: http://www.digitalia.be/software/slimbox
   [http://particletree.com/features/lightbox-gone-wild/]: http://particletree.com/features/lightbox-gone-wild/
-  [http://www.artviper.net/test/ajaxslide/index.html]: http://www.artviper.net/test/ajaxslide/index.html
   [http://clientside.cnet.com/cnet.gf/docs/files/common/3rdParty/Slimbox/slimbox-js.html]: http://clientside.cnet.com/cnet.gf/docs/files/common/3rdParty/Slimbox/slimbox-js.html
-  [http://scripts.ajaxflakes.com/category/lightbox/]: http://scripts.ajaxflakes.com/category/lightbox/
-  [http://www.ajaxrain.com/tag.php?tag=popup&page=1]: http://www.ajaxrain.com/tag.php?tag=popup&page=1
   [http://jadedpixel.stikipad.com/design/show/A+Better+Lightbox]: http://jadedpixel.stikipad.com/design/show/A+Better+Lightbox
   [http://homepage.mac.com/yukikun/software/slimbox_ex/]: http://homepage.mac.com/yukikun/software/slimbox_ex/
-  [http://www.chazzuka.com/blog/index.php?p=21&]: http://www.chazzuka.com/blog/index.php?p=21&
   [http://www.phatfusion.net/lightbox/index.htm]: http://www.phatfusion.net/lightbox/index.htm

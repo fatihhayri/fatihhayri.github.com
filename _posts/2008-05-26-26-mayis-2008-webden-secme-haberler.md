@@ -16,7 +16,6 @@ tags: akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explor
 -   "Tek bir bilgisayarda birden fazla Internet Explorer" - eburhan.com
     [Bağlantı][6]
 -   Basite indirgenmiş güzel bir yatay akordiyon menü örneği.
-    [Bağlantı][7]
 -   HTML5 ile birlikte gelen sıralı listeleri tersten sıralama özelliği.
     [Bağlantı][8]
 -   Firefox3 1 ay içerisinde çıkması bekleniyor. Firefox3'ün gizli
@@ -41,8 +40,6 @@ tags: akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explor
   [5]: http://docs.jquery.com/Release:jQuery_1.2.5 "jquery 1.2.5"
   [6]: http://www.eburhan.com/tek-bir-bilgisayarda-birden-fazla-internet-explorer/
     "ie kur"
-  [7]: http://www.leigeber.com/2008/05/horizontal-javascript-accordion-menu/
-    "yatay akordiyon"
   [8]: http://css.dzone.com/news/html-5-reverse-ordered-lists
     "tersten sırala"
   [9]: http://www.sitepoint.com/blogs/2008/05/23/two-hidden-features-new-in-firefox-3/

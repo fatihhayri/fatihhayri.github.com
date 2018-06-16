@@ -173,7 +173,7 @@ yazayım bu büyük buna böyle yazayım diye bir ayrım yapmasıda pek
 mantıklı ve mümkün değildir. Bu nedenle kendi standardımızı en iyiye
 göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
 
--   [https://developer.mozilla.org/en/Writing_Efficient_CSS][]
+-   [https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no][]
 -   [http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/][]
 -   O'Reilly - Even Faster Websites.pdf 14. konu
 -   [http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/][]
@@ -190,7 +190,7 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
 -   http://www.nuvographics.com/articles/efficientcss
 -   [http://www.css-101.org/descendant-selector/go_fetch_yourself.php][] (yeni)
 
-  [Writing Efficient CSS for use in the Mozilla UI]: https://developer.mozilla.org/en/Writing_Efficient_CSS
+  [Writing Efficient CSS for use in the Mozilla UI]: https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
     "Writing Efficient CSS for use in the Mozilla UI"
   [(X)HTML Sayfa Yapısı ve CSS Kullanımı]: http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
     "(X)HTML Sayfa Yapısı ve CSS Kullanımı"
@@ -202,8 +202,8 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
     "stevesouders.com'un test sayfasını"
   [google'un önerileride]: http://code.google.com/speed/page-speed/docs/rendering.html
     "google'un önerileride"
-  [https://developer.mozilla.org/en/Writing_Efficient_CSS]: https://developer.mozilla.org/en/Writing_Efficient_CSS
-    "https://developer.mozilla.org/en/Writing_Efficient_CSS"
+  [https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no]: https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
+    "https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no"
   [http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/]: http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/
     "http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/"
   [http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/]: http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/

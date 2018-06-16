@@ -143,7 +143,7 @@ yapacağız.
 	}
 
 İki adet kitap ikonu oluşturmalıyız, biri normal hali diğeride üzerine
-geldiğimizde görünecek halleri. Ben bunu [http://www.iconlet.com/][]'den
+geldiğimizde görünecek halleri. Ben bunu http://www.iconlet.com/'den
 aldım. Ardalan resmi olarak tanımlayalım.
 
 ![][2]
@@ -196,7 +196,6 @@ Ayrıca ben "Son Okuduğum 10 Kitap" alanın alt kısım alanının biraz
   [100]: /images/ardlana_paylasimi.gif
   [Örnek 2]: /dokumanlar/okudugum_kitap_02.html
   [1]: /images/okd_kit_ekrangor1.gif
-  [http://www.iconlet.com/]: http://www.iconlet.com/
   [2]: /images/kita_ikon_tipleri.gif
   [3]: /dokumanlar/okudugum_kitap_03.html
   [4]: /images/okd_kit_ekrangor2.gif

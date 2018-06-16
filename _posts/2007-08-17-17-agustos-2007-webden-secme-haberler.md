@@ -20,7 +20,7 @@ tags: ASP.NET, background, CSS, dasBlog, GridView, Haberler, Javascript, jquery,
     kısaltmak araçlar çıkıyor işte size YUI'nin javascript boyut azaltma
     aracını anlatan güzel bir makale. [Link][5]
 -   CSS ile zemin resimli arama alanları yapmayı anlatan güzel bir
-    makale. [Link][6]
+    makale. 
 -   Artık web'de bir çok ders görsel olarak yayınlanmakta işte size tüm
     bilgilendirme videolarını içeren bir site. [Link][7]
 -   .Net ile yapılmış açık kaynak projeler artıyor. **dasBlog 2.0
@@ -43,8 +43,6 @@ tags: ASP.NET, background, CSS, dasBlog, GridView, Haberler, Javascript, jquery,
     "javascript dosyalarını hafifletmek"
   [5]: http://www.julienlecomte.net/blog/2007/08/13/introducing-the-yui-compressor/
     "YUI javascript boyutu azaltma"
-  [6]: http://blog.reindel.com/2007/08/13/howto-spruce-up-your-search-box-with-css-and-a-background-image
-    "CSS arama"
   [7]: http://freevideolectures.com/webdesign.html "video ders"
   [8]: http://www.hanselman.com/blog/dasBlog20Released.aspx
     ".net ile yapılmış günlük"

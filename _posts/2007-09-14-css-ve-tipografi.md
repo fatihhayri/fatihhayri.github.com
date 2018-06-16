@@ -326,7 +326,7 @@ Web tipografisinde CSS'in yeri çok önemlidir. sFIR gibi yeni metotların
 geliştirilmesi ile web'de tipografi bakımından daha iyi sonuçlar
 alacağımıza inanıyorum. Ancak sFIR bana biraz zorlama bir metot gibi
 geliyor. Bu konuda işletim sistemi üreticilerinin daha farklı çözümlere
-gitmeleri gerektiğini düşünüyorum. [Microsoft][]'un bu yönde çalışmaları
+gitmeleri gerektiğini düşünüyorum. Microsoft'un bu yönde çalışmaları
 var ancak hala tam sonuçlanmış çözümler değil.
 
 Son olarak CSS ile yapılabileceklere bir örnek olması açısından
@@ -350,7 +350,7 @@ Sınırları zorlayan güzel örnekler
 -   [http://www.mandarindesign.com/troops.html][] (uygulamlar var)
 -   [http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/][]
 -   [http://typetester.maratz.com/][]
--   [http://www.webstyleguide.com/type/][]
+-   http://www.webstyleguide.com/type
 -   [http://www.sitepoint.com/blogs/2007/04/30/typography-baseline-rhythm-deciphered/][]
 -   [http://ceyhunaksan.com/css-ve-tipografi/][]
 -   [http://topfunky.com/baseline-rhythm-calculator/][] (tipografi çevirimiçi aracı)
@@ -371,7 +371,6 @@ Sınırları zorlayan güzel örnekler
   [BluePrint CSS Anaçatısının]: http://code.google.com/p/blueprintcss/
   [Satırlar arası yükseklik]: /images/line_height.gif
   [2]: /images/tipografi_hizalama.gif
-  [Microsoft]: http://www.microsoft.com/typography/web/embedding/weft3/default.htm
   [3point7designs.com]: http://www.3point7designs.com/advanced_type.html
   [http://webtypography.net/toc/]: http://webtypography.net/toc/%20
   [http://www.sitepoint.com/print/anatomy-web-fonts]: http://www.sitepoint.com/print/anatomy-web-fonts
@@ -387,7 +386,6 @@ Sınırları zorlayan güzel örnekler
   [http://www.mandarindesign.com/troops.html]: http://www.mandarindesign.com/troops.html
   [http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/]: http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/
   [http://typetester.maratz.com/]: http://typetester.maratz.com/
-  [http://www.webstyleguide.com/type/]: http://www.webstyleguide.com/type/
   [http://www.sitepoint.com/blogs/2007/04/30/typography-baseline-rhythm-deciphered/]: http://www.sitepoint.com/blogs/2007/04/30/typography-baseline-rhythm-deciphered/
   [http://ceyhunaksan.com/css-ve-tipografi/]: http://ceyhunaksan.com/css-ve-tipografi/
   [http://topfunky.com/baseline-rhythm-calculator/]: http://topfunky.com/baseline-rhythm-calculator/

@@ -7,7 +7,7 @@ tags: Ajax, google, Javascript, mootools, yui
 ---
 
 -   Digg menü benzerini CSS ile oluşturulması. [Bağlantı][]
--   overflow yardımı ile resim galerisi. [Bağlantı][1]
+-   overflow yardımı ile resim galerisi.
 -   ie için PNG düzelmelerinden biri. [Bağlantı][2]
 -   50+ adet jQuery uygulaması. [Bağlantı][3]
 -   "jQuery ve ajax işlemleri" [Bağlantı][4]
@@ -16,7 +16,7 @@ tags: Ajax, google, Javascript, mootools, yui
 -   Asp.net'de jQuery kullanımı. [Bağlantı][7]
 -   Ajax ile yapılmış ülke ve şehir isimleri açılır menü örneği.
     [Bağlantı][8]
--   XHTML2 ve HTML5 [Bağlantı][9]
+-   XHTML2 ve HTML5 
 -   Lightview 2. sürümü çıkmış. [Bağlantı][10]
 -   CSS menü javascript yardımı ile aktif tab uygulaması. [Bağlantı][11]
 -   37 CSS ve ajax tabanlı menü örneği. [Bağlantı][12]
@@ -39,8 +39,6 @@ tags: Ajax, google, Javascript, mootools, yui
 
   [Bağlantı]: http://woork.blogspot.com/2008/01/digg-like-navigation-bar-using-css.html
     "Digg menu"
-  [1]: http://www.cssglobe.com/post/1305/create-resizing-thumbnails-using-overflow-property
-    "küçük büyük resim"
   [2]: http://www.andrewsellick.com/27/css-png-hack-for-internet-explorer-ie
     "css png"
   [3]: http://www.noupe.com/jquery/50-amazing-jquery-examples-part1.html
@@ -53,8 +51,6 @@ tags: Ajax, google, Javascript, mootools, yui
     "asp.net - jquery"
   [8]: http://www.noboxmedia.com/20/massive-ajax-countryarea-drop-down-list/
     "ülke sehir"
-  [9]: http://immike.net/blog/2008/02/06/xhtml-2-vs-html-5/
-    "xhtml2.0 html 5.0"
   [10]: http://www.nickstakenburg.com/projects/lightview/ "lightbox2.0"
   [11]: http://www.cssnewbie.com/navigation/intelligent-navigation/
     "css menü ve javascript"

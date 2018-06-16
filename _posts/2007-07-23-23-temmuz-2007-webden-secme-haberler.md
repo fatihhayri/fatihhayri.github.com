@@ -11,8 +11,7 @@ tags: Haberler
     uygulaması. [Link][]
 -   İkon dizaynı ile ilgili güzel bir makale. [Link][1]
 -   Google PageRank etkileyen faktörleri anlatan güzel bir makale.
-    [Link][2]
--   Güzel bir akordiyon menü örneği. [Link][3]
+-   Güzel bir akordiyon menü örneği.
 -   Popülerliğini arttıran javascript'e tekrardan bir göz atmak
     isteyenler için güzel bir İngilizce kaynak. [Link][4]
 -   En pahalı internet Türkiye'de [Link][5]
@@ -31,9 +30,6 @@ tags: Haberler
 
   [Link]: http://www.cheesetube.com "http://www.cheesetube.com"
   [1]: http://mezzoblue.com/archives/2007/07/11/icon_design/ "Link"
-  [2]: http://sametatdag.blogspot.com/2007/06/google-page-ranki-olumlu-etkileyen.html
-    "Link"
-  [3]: http://stickmanlabs.com/accordion/ "Link"
   [4]: http://developer.mozilla.org/en/docs/A_re-introduction_to_JavaScript
     "Link"
   [5]: http://www.ntvmsnbc.com/news/414369.asp "En pahalı internet"

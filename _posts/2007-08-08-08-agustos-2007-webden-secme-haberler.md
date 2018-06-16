@@ -23,10 +23,10 @@ tags: CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress
 -   "Web standartlarının kralı Jeffrey Zeldman" adlı bir makale.
     [Link][6]
 -   Muhammet Sevim sFIR 3.0 versiyonu ve yeniliklerini anlatmış. Link
--   Tek satır CSS kodla IE 6 göçertmişler. [Link][7]
+-   Tek satır CSS kodla IE 6 göçertmişler. 
 -   Web sitelerinde dinamik yardımı anlatan güzel bir makale. [Link][8]
 -   20 en iyi blog web kodlma denetiminden sınıfta kalmış. Bende kendimi
-    test ettim bunların arasından 5. oldum.[Link][9]
+    test ettim bunların arasından 5. oldum.
 -   Son haberde benden yorumlar için rss ekledim. Sağda yazıların
     altında
 
@@ -42,8 +42,4 @@ tags: CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress
   [5]: http://www.ntvmsnbc.com/news/416535.asp "Günlük Sendikası"
   [6]: http://www.businessweek.com/innovate/content/aug2007/id2007086_670396.htm
     "Jeffry Zeldman"
-  [7]: http://immike.net/blog/2007/08/06/single-line-of-html-crashes-ie-6/
-    "Link"
   [8]: http://uxmatters.com/MT/archives/000191.php "Web Formlar"
-  [9]: http://bugleak.com/2007/08/top-blogs-fail-w3c-markup-validation/
-    "Link"

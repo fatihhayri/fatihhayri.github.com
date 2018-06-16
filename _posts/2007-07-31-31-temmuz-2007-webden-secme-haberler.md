@@ -10,7 +10,7 @@ tags: csharp, CSS, Dust-Me, Firefox, google, Haberler, jquery, web, WordPress
 -   Sayfalarınızdaki kullanılmayan css atamalarını gösteren bir Firefox
     eklentisi. [Link][1]
 -   Web ile alakalı güzel ve renkli bir site açılmış. [Link][2]
--   Firefox tablarını kontrol etmenin 10 yolu. [Link][3]
+-   Firefox tablarını kontrol etmenin 10 yolu.
 -   C# ve .Net kullanlara güzel araçlar ve öneriler. [Link][4]
 -   Ünlü javascript kütüphanelerinden jquery hakkında 10 ipuçu.
     [Link][5] buda ikinci 10 . [Link][6]
@@ -18,15 +18,13 @@ tags: csharp, CSS, Dust-Me, Firefox, google, Haberler, jquery, web, WordPress
     [Link][7]
 -   Google siteleri artık neredeyse gerçek zamanlı indeksliyormuş.
     [Link][8]
--   WordPress özel arşiv sayfası oluşturma eklentisi. [Link][9]
+-   WordPress özel arşiv sayfası oluşturma eklentisi.
 
 
   [Link]: http://cssjuice.com/20-popular-css-online-tools/
     "CSS Araçları"
   [1]: http://www.sitepoint.com/dustmeselectors/ "Dust-Me"
   [2]: http://www.webdesignerwall.com/ "web designer wall"
-  [3]: http://www.friedbeef.com/2007/07/13/top-10-ways-best-ways-to-manage-firefox-tabs/
-    "Firefox tab"
   [4]: http://blog.lowesoftware.com/software-development/a-developers-toolkit-for-c-and-net
     "c# ve .Net"
   [5]: http://www.phpfour.com/blog/2007/06/30/jquery-essentials/
@@ -36,5 +34,3 @@ tags: csharp, CSS, Dust-Me, Firefox, google, Haberler, jquery, web, WordPress
   [7]: http://mashable.com/2007/07/28/web-development/ "web"
   [8]: http://googlesystem.blogspot.com/2007/07/google-indexing-many-web-pages-in-real.html
     "Google"
-  [9]: http://www.fikirbozan.net/wordpress-icin-arsiv-sayfalari-olusturmak-fikirbozan-arsivcik-10/
-    "Link"

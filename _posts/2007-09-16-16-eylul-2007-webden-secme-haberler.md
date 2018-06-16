@@ -7,7 +7,7 @@ tags: arama motoru, ASP.NET, css3.0, google, google reader, google-web-mater-too
 ---
 
 -   Javascript'ten asp.net ve asp.net'den javascript'e veri göndermeyi
-    anlatan güzel makale. [Link][]
+    anlatan güzel makale. 
 -   Arama motorlarının anlaya bileceği PDF dosyası oluşturmanın
     ipuçları. [Link][1]
 -   CSS3 ile birlikte sayfa planlamayı kolaylaştıran araçlar geliyor.
@@ -23,8 +23,6 @@ tags: arama motoru, ASP.NET, css3.0, google, google reader, google-web-mater-too
     [Link][6]
 
 
-  [Link]: http://www.adamwolkov.com/blog/13/09/12/2007/javascript_and_aspnet_hacks.aspx
-    "asp.ne ve javascript"
   [1]: http://searchengineland.com/070912-095906.php
     "arama motoruna uygun PDF"
   [2]: http://www.css3.info/more-layout-options-with-grid-positioning/

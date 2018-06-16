@@ -16,13 +16,13 @@ tags: CSS, css3, ie8, jquery, zoque
 -   Çıktı alırken linklerde yaşana link kaynağının görüntülenmemesi ve
     linklenememesi için güzel bir çözüm önerisi. [Bağlantı][4]
 -   CSS kod yazma düzeni ile ilgili bir yöntem. [Bağlantı][5]
--   İçeriği css ile dikeyde ortalamayı anlatan bir makale. [Bağlantı][6]
+-   İçeriği css ile dikeyde ortalamayı anlatan bir makale.
 -   Arama sonuçlarını javascript ve css ile belirgin hale getirmek.
     [Bağlantı][7]
 -   "Site Turu hazırlayan servisler ve uygulamalar" [Bağlantı][8]
 -   zoque forum 9. yaşına girmiş. Bilgi paylaşımdan dolayı teşekkürler..
     [Bağlantı][9]
--   IE8 beta sonrası tarayıcı test sonuçları. [Bağlantı][10]
+-   IE8 beta sonrası tarayıcı test sonuçları.
 
 
   [Bağlantı]: http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm
@@ -36,12 +36,8 @@ tags: CSS, css3, ie8, jquery, zoque
     "çıktı al linkleri"
   [5]: http://www.thuiven.com/viewentry/csi-css-html-coding/
     "css kodları"
-  [6]: http://www.vdotmedia.com/blog/vertically-center-content-with-css/
-    "dikeyde ortalama"
   [7]: http://eriwen.com/javascript/highlight-search-results-with-js/
     "css ve javascript ile arama"
   [8]: http://www.eburhan.com/site-turu-hazirlayan-servisler-ve-uygulamalar/
     "site turu"
   [9]: http://forum.zoque.net/ "zok form"
-  [10]: http://bdn.backbase.com/blog/sjoerd/performance-is-everything
-    "tarayıcı testi"

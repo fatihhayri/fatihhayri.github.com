@@ -53,7 +53,7 @@ wp_tag_cloud('smallest=8&amp;largest=16&amp;number=50&amp;unit=pt');
 ?></div>
 
 Kodunu ekledim ve ilgili CSS kodlarını ana stil dosyama
-ekledim.İkonlarımıda [http://www.iconlet.com/][] den aldım.
+ekledim.İkonlarımıda http://www.iconlet.com/ den aldım.
 
 Sonuçta etiket bulutu ve etiketlerime kavuştum. Hemde Türkçe karakter
 sorunumda yok.
@@ -67,14 +67,12 @@ Herkese bulutlu ve yağmurlu günler diliyorum. Malum susuz kaldık.
 
 ## Kaynak
 
--   [http://alexbrie.net/1836/how-to-import-ultimate-warrior-tags-into-wordpress-23-and-how-to-easily-backup-your-wordpress-database/][]
+-   http://alexbrie.net/1836/how-to-import-ultimate-warrior-tags-into-wordpress-23-and-how-to-easily-backup-your-wordpress-database
 -   [http://codex.wordpress.org/Template_Tags/wp_tag_cloud#Cloud_displayed_under_Popular_Tags_title][]
 -   http://poplarware.com/tagplugin.html
 
 
   [teknoseyir]: http://www.teknoseyir.com/etiket-tag-sistemi/
   [bildirgeç]: http://www.bildirgec.org/etiket/etiket-bulutu
-  [http://www.iconlet.com/]: http://www.iconlet.com/
   [Advanced Tag Entry]: http://poplarware.com/tagplugin.html
-  [http://alexbrie.net/1836/how-to-import-ultimate-warrior-tags-into-wordpress-23-and-how-to-easily-backup-your-wordpress-database/]: http://alexbrie.net/1836/how-to-import-ultimate-warrior-tags-into-wordpress-23-and-how-to-easily-backup-your-wordpress-database/
   [http://codex.wordpress.org/Template_Tags/wp_tag_cloud#Cloud_displayed_under_Popular_Tags_title]: http://codex.wordpress.org/Template_Tags/wp_tag_cloud#Cloud_displayed_under_Popular_Tags_title

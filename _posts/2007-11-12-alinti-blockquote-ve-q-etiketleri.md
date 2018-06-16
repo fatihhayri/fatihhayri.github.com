@@ -176,13 +176,13 @@ tarayıcı ve araçlarda da farklı bir görünüm sağlamış olduk.
 -   [http://www.cameraontheroad.com/?p=154 iyi örnek][]
 -   [Dan Cederholm - Web Standards Solutions The Markup and Style     Handbook][]
 -   [http://24ways.org/2005/swooshy-curly-quotes-without-images][]
--   [http://monc.se/kitchen/129/rendering-quotes-with-css][]
+-   http://monc.se/kitchen/129/rendering-quotes-with-css
 -   [http://www.shapeshed.com/journal/quotations_in_css/][]
 -   [http://diveintomark.org/archives/2002/05/04/the_q_tag][]
 -   [http://simonwillison.net/2003/May/21/stylingBlockquotes/][]
 -   [http://www.456bereastreet.com/archive/200411/quotations_and_citations_quoting_text/][]
 -   [http://juicystudio.com/article/fixing-ie-quotes.php][]
--   [http://historytalk.typepad.com/basic/2006/06/scholarship_xht.html][]
+-   http://historytalk.typepad.com/basic/2006/06/scholarship_xht.html
 
 
   [Örnek 2]: /images/alinti_ornek2_1.gif
@@ -195,12 +195,9 @@ tarayıcı ve araçlarda da farklı bir görünüm sağlamış olduk.
   [Alıntı Örnek Sonuç]: /images/alinti_ornek2.gif
   [göz at.]: /dokumanlar/alinti_ornek_sonuc.html
   [http://www.cameraontheroad.com/?p=154 iyi örnek]: http://www.cameraontheroad.com/?p=154%20iyi%20örnek
-  [Dan Cederholm - Web Standards Solutions The Markup and Style   Handbook]: http://www.simplebits.com/publications/solutions/
   [http://24ways.org/2005/swooshy-curly-quotes-without-images]: http://24ways.org/2005/swooshy-curly-quotes-without-images
-  [http://monc.se/kitchen/129/rendering-quotes-with-css]: http://monc.se/kitchen/129/rendering-quotes-with-css
   [http://www.shapeshed.com/journal/quotations_in_css/]: http://www.shapeshed.com/journal/quotations_in_css/
   [http://diveintomark.org/archives/2002/05/04/the_q_tag]: http://diveintomark.org/archives/2002/05/04/the_q_tag
   [http://simonwillison.net/2003/May/21/stylingBlockquotes/]: http://simonwillison.net/2003/May/21/stylingBlockquotes/
   [http://www.456bereastreet.com/archive/200411/quotations_and_citations_quoting_text/]: http://www.456bereastreet.com/archive/200411/quotations_and_citations_quoting_text/
   [http://juicystudio.com/article/fixing-ie-quotes.php]: http://juicystudio.com/article/fixing-ie-quotes.php
-  [http://historytalk.typepad.com/basic/2006/06/scholarship_xht.html]: http://historytalk.typepad.com/basic/2006/06/scholarship_xht.html

@@ -10,7 +10,7 @@ tags: aranabilir swf, Atom, BlogEngine.Net, float, Google Sitemap, jquery, js il
     Kırık bağlantı.
 -   jQuery ile fare imlecinin konumu almak. [Bağlantı][1]
 -   RSS ve ATOM beslemelerinizi geliştirin. Kırık bağlantı.
--   jQuery ilerleme çubuğu eklentisi. [Bağlantı][3]
+-   jQuery ilerleme çubuğu eklentisi. 
 -   Jquery Kaynakları - mfyz.com [Bağlantı][4]
 -   vandelaydesign'ın Haziran ayı seçtikleri güzel bir liste.
     Kırık bağlantı.
@@ -22,15 +22,13 @@ tags: aranabilir swf, Atom, BlogEngine.Net, float, Google Sitemap, jquery, js il
 -   Asp.net, linq ve ajax ile sohbet odası yapmak. [Bağlantı][9]
 -   Linklerimizi ayrı pencerede açmak üzerine güzel bir makale.
     [Bağlantı][10]
--   BlogEngine.NET 1.4 yayınlandı! [][][Bağlantı][11]
+-   BlogEngine.NET 1.4 yayınlandı!
 -   10 adet sıra dışı jquery uygulaması. Kırık bağlantı.
 -   Google SEO için sitemap.xml nedir? - ercanaltug.blogspot.com
     [Bağlantı][13]
 
   [1]: http://css.dzone.com/tips/jquery-tracking-the-position-o
     "fare imlecini yeri"
-  [3]: http://t.wits.sg/2008/06/20/jquery-progress-bar-11/
-    "ilerleme çubuğu"
   [4]: http://www.mfyz.com/?/gunluk/223/jquery-kaynaklari/
     "jQuery kaynakları"
   [7]: http://www.netzgesta.de/shiftzoom/ "resimleri yakınlaştır"
@@ -41,7 +39,5 @@ tags: aranabilir swf, Atom, BlogEngine.Net, float, Google Sitemap, jquery, js il
     "ayrı pencerede aç"
   [100]: http://www.ugurcelenk.com/post/2008/07/BlogEngineNET-14-yayinlandi.aspx
     "blog.net 1.4"
-  [11]: http://www.necatbolpaca.com/post/2008/07/01/BlogEngineNET-14-memlekete-hosgeldin%21.aspx
-    "Bağlantı"
   [13]: http://ercanaltug.blogspot.com/2008/06/google-seo-iin-sitemapxml-nedir.html
     "google sitemap"

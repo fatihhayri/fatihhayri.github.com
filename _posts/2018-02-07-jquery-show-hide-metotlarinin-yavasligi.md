@@ -6,7 +6,7 @@ Category: Javascript
 tags: [javascript, show, hide, hidden]
 ---
 
-hide() metodunun yavaşlığı ile ilgili daha önce gördüğü test'te 25 kat daha yavaş diye bir ibare geçiyordu. O testin adresini bulamadım ama benzer testler var bu konuda [bu testte](https://jsperf.com/vanilla-js-v-jquery-hide/3) %98 daha yavaş diyor.
+hide() metodunun yavaşlığı ile ilgili daha önce gördüğü test'te 25 kat daha yavaş diye bir ibare geçiyordu. O testin adresini bulamadım ama benzer testler var bu konuda bu testte https://jsperf.com/vanilla-js-v-jquery-hide/3 %98 daha yavaş diyor.
 
 Şimdi bir konuda arama yaparken [Paul Irish'in yazdığı yoruma](https://github.com/jquery/jquery.com/issues/88#issuecomment-72400007) denk geldim.
 
@@ -66,4 +66,3 @@ Kalın sağlıcakla.
  - [https://github.com/jquery/jquery/issues/2057](https://github.com/jquery/jquery/issues/2057)
  - [https://github.com/jquery/jquery.com/issues/88#issuecomment-72400007](https://github.com/jquery/jquery.com/issues/88#issuecomment-72400007)
  - [https://github.com/easydigitaldownloads/easy-digital-downloads/issues/3065](https://github.com/easydigitaldownloads/easy-digital-downloads/issues/3065)
- - [https://jsperf.com/vanilla-js-v-jquery-hide/3](https://jsperf.com/vanilla-js-v-jquery-hide/3)

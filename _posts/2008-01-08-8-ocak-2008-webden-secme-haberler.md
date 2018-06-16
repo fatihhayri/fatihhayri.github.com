@@ -19,9 +19,9 @@ tags: Ajax, google-belgeler-etablolar, gwt, Haberler, jquery, outlook, Team Fond
 -   "Team Foundation Server Sistem Gereksinimleri" [Bağlantı][7]
 -   Asp.Net ipuçları. [Bağlantı][8]
 -   Güzel bir resim galerisi örneği MooFlow0.1 [Bağlantı][9]
--   jquery ile oval kenarlık yapmak. [Bağlantı][10]
+-   jquery ile oval kenarlık yapmak. 
 -   Ahmet Küçükoğlu'ndan "CSS ile Düzenlenen Formlardaki Hatalar ve
-    Çözümleri" [Bağlantı][11]
+    Çözümleri" 
 -   IE7 isimli javascript dosyası ie5 ve ie6 daki css ve javascript
     sorunlarımızı gidermemizi sağlıyor. [Bağlantı][12]
 -   Sizde benim gibi "Web Seminerleri" ne katılamayanlardan iseniz,
@@ -45,9 +45,5 @@ tags: Ajax, google-belgeler-etablolar, gwt, Haberler, jquery, outlook, Team Fond
   [8]: http://blogs.msdn.com/lucascan/archive/2008/01/06/lucascan-s-top-5-tips-for-a-healthy-asp-net-application.aspx
     "ipuçları"
   [9]: http://www.outcut.de/MooFlow/# "Mootools"
-  [10]: http://parkerfox.parkerfox.railsplayground.net/cornerz/
-    "oval kenarlar"
-  [11]: http://www.ahmetblog.net/css-form-duzenleme-hatalari-ve-cozumu/
-    "metin kutularında resim"
   [12]: http://code.google.com/p/ie7-js/ "ie"
   [13]: http://www.hasanyalcin.com/?p=369 "web seminerleri"

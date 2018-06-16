@@ -10,7 +10,7 @@ tags: css3.0, Dreamweaver, font, form, google, Haberler, microsoft, msn-live, sp
     yenilemiş. [Bağlantı][]
 -   csharpnedir.com'dan "WPF - Yeni Nesil Form Kontrolleri - 2" isimli
     bir makale yayınlamış. [Bağlantı][1]
--   Yuvarlak kenarlı kutu yapmak hakkında geniş bilgi. [Bağlantı][2]
+-   Yuvarlak kenarlı kutu yapmak hakkında geniş bilgi.
 -   CSS3.0 ile birlikte kullanıcıya istediğimiz yazı tipini
     kullandırabilecekmişiz. Mozilla şimdilik desteklemiyor ancak 2008
     içinde desteklemesi bekleniyormuş. Burada bir iki sorun daha var ama
@@ -30,8 +30,6 @@ tags: css3.0, Dreamweaver, font, form, google, Haberler, microsoft, msn-live, sp
     "spry"
   [1]: http://www.csharpnedir.com/makalegoster.asp?Mid=797
     "yeni form kontrolleri"
-  [2]: http://www.designvitality.com/blog/2007/09/css-rounded-corners-gradients-shadows-without-images/
-    "yuvarlak kenar"
   [3]: http://www.css3.info/webkit-has-web-fonts-support/ "yazı tipi "
   [4]: http://search.yahoo.com/ "yahoo arama"
   [5]: http://www.propeller.com/viewstory/2007/10/03/comparing-the-top-3-search-engines/?url=http%3A%2F%2Fwww.elegantdirectory.com%2Farticles%2Fcomparing-the-top-3-search-engines.html&frame=true

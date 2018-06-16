@@ -19,7 +19,6 @@ tags: Ajax, ASP.NET, flash, form, Google Analytics, mootools, safari, Windows Pr
     örnek. [Bağlantı][3]
 -   Google Analitics'e alternatif siteler ve uygulamalar. [Bağlantı][4]
 -   Mootools kullanılarak yapılmış güzel bir kaydırma çubuğu örneği.
-    [Bağlantı][5]
 -   Asp.net açık kaynak olma yolunda hızla ilerliyor. Asp.net MVC kaynak
     kodlarını yayınladı. [Bağlantı][6]
 -   4 adımda site yapmayı anlatan cameronmoll.com 3. yazısında ajax ile
@@ -44,8 +43,6 @@ tags: Ajax, ASP.NET, flash, form, Google Analytics, mootools, safari, Windows Pr
     "asp.net flash"
   [4]: http://webtecker.com/2008/03/20/list-of-google-analytics-alternatives/
     "site analizi"
-  [5]: http://www.solutoire.com/experiments/scrollbar/index.html
-    "mootools ile kaydırma çubuğu"
   [6]: http://www.codeplex.com/aspnet/Release/ProjectReleases.aspx?ReleaseId=11833
     "asp.net mvc"
   [7]: http://cameronmoll.com/archives/2008/03/extensible_css_interface_adding_ajax_interacti/

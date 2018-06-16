@@ -9,7 +9,7 @@ tags: Firefox, Haberler, Javascript, jquery, prototip, Visual-Studio
 -   Firefox'da linklere odaklandığımızda linklerin etrafında çıkardığı
     noktaları(hotdot) yok etmenin kolay yolu. [Link][]
 -   Prototip javascript kütüphanesinin güzelliklerini karşılaştırmalı
-    bir şekilde anlatan güzel bir makale. [Link][1]
+    bir şekilde anlatan güzel bir makale.
 -   Ağustos ayının en popüler 30 günlüğü. [Link][2]
 -   Tüm tasarımcıların favorilerine eklemesi gereken 10 link. [Link][3]
 -   Smashing Magazine Temmuz ayının en iyilerini yayınlamış. [Link][4]
@@ -17,14 +17,13 @@ tags: Firefox, Haberler, Javascript, jquery, prototip, Visual-Studio
 -   VS 2008'in zaman kazandıran 5 yeni özelliği. [Link][6]
 -   Online renk seçim aracı. Color Sheme Generator 2 [Link][7]
 -   Javascript ile renk paleti yapımını anlatan ve örnek dosyalarını
-    veren güzel bir makale. [Link][8]
+    veren güzel bir makale. 
 -   Web site tasarımında yenilikçi tasarımları örneği ile anlatan güzel
     bir makale. [Link][9]
 
 
   [Link]: http://seo-nola.blogspot.com/2007/08/remove-dotted-border-around-link-in.html
     "link etrafındaki noktalar"
-  [1]: http://thinkweb2.com/projects/prototype-checklist/ "Prototip"
   [2]: http://www.ebizmba.com/articles/popular-blogs.html
     "popüler günlük"
   [3]: http://designer-daily.com/10-lists-every-designer-should-bookmark-323
@@ -36,7 +35,5 @@ tags: Firefox, Haberler, Javascript, jquery, prototip, Visual-Studio
     "VS.Net 2008"
   [7]: http://www.wellstyled.com/tools/colorscheme2/index-en.html
     "Color Sheme Generator 2"
-  [8]: http://www.webreference.com/programming/javascript/mk/column3/index.html
-    "Renk seçim paleti"
   [9]: http://www.digital-web.com/articles/designing_the_future_of/
     "Geleceğin Tasarımı"

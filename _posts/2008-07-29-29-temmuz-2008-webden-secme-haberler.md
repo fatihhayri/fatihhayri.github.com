@@ -19,7 +19,7 @@ tags: açılır-menü, CSS, css hataları, css ile site yapmak, CSS sıfırlama,
     [Bağlantı][7]
 -   jQuery ile yapılmış güzel bir resim galerisi. Farklı bir galeri.
     [Bağlantı][8]
--   jQuery ile uygulamalarımıza klavye kısayolu eklemek. [Bağlantı][9]
+-   jQuery ile uygulamalarımıza klavye kısayolu eklemek.
 -   6 adet kullanışlı jQuery ipucu. [Bağlantı][10]
 -   jQuery ile “çek-bırak” özellikli nesneler oluşturmak - eburhan.com
     Kırık bağlantı.
@@ -36,6 +36,5 @@ tags: açılır-menü, CSS, css hataları, css ile site yapmak, CSS sıfırlama,
   [6]: http://woork.blogspot.com/2008/07/fantastic-news-ticker-newsvine-like.html
   [7]: http://www.jankoatwarpspeed.com/post/2008/07/27/Enhance-your-input-fields-with-simple-CSS-tricks.aspx
   [8]: http://eyecon.ro/spacegallery/#about "resim galerisisi"
-  [9]: http://www.hackszine.com/blog/archive/2008/07/web_application_hotkeys_with_j.html?CMP=OTC-7G2N43923558
   [10]: http://johannburkard.de/blog/programming/javascript/6-more-jquery-tips-text-searching-page-load-time-and-others.html
   [12]: http://www.alistapart.com/articles/survey2008 "webciler"

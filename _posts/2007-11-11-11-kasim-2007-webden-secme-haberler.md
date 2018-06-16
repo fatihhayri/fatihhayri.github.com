@@ -18,7 +18,6 @@ tags: ASP.NET, CSS, Etiket bulutu, Firefox, Haberler, ie, menü, mootools, paypa
     da gösterilmiş. [Bağlantı][5]
 -   Etiket bulutu örnekleri. [Bağlantı][6]
 -   IE6'daki saydam PNG'lerdeki sorunu çözmek için bir metod
-    [Bağlantı][7]
 -   Firefox 3 betası çıktı ilk izlenimler yayınlanmaya başlandı bile.
     [Bağlantı][8]
 -   Web'in gelişimini açıklayan güzel bir resim. [Bağlantı][9]
@@ -38,8 +37,6 @@ tags: ASP.NET, CSS, Etiket bulutu, Firefox, Haberler, ie, menü, mootools, paypa
   [5]: http://www.codeguru.com/csharp/.net/net_asp/miscellaneous/article.php/c14309/
     "Bağlantı"
   [6]: http://www.smashingmagazine.com/2007/11/07/tag-clouds-gallery-examples-and-good-practices/
-    "Bağlantı"
-  [7]: http://komodomedia.com/blog/index.php/2007/11/05/css-png-image-fix-for-ie/
     "Bağlantı"
   [8]: http://lifehacker.com/software/screenshot-tour/first-look-at-firefox-30-319968.php
     "Bağlantı"

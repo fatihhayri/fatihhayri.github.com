@@ -32,10 +32,9 @@ tags: GridView, jquery, vs.net
 -   "Web Standartlarını Öğrenmek ve Kullanmak için 10 Sebep".
     [Bağlantı][13]
 -   "Nasıl Web Tasarımcısı Olunur?" [Bağlantı][14]
--   "İnternet’i ne zaman anlarız?" [Bağlantı][15]
--   "css ve current page hadisesi" [Bağlantı][16]
+-   "İnternet’i ne zaman anlarız?"
+-   "css ve current page hadisesi"
 -   "web tasarım da minimalizm" çok güzel Türkçe bir kaynak.
-    [Bağlantı][17]
 
 
   [Bağlantı]: http://www.codeproject.com/KB/aspnet/10ASPNetPerformance.aspx
@@ -63,8 +62,3 @@ tags: GridView, jquery, vs.net
     "yazıtipi indir"
   [13]: http://www.gencbasari.com/?p=326 "SEO ipuçları"
   [14]: http://www.hasanyalcin.com/?p=394 "nasıl?"
-  [15]: http://www.muratbuyurgan.com/2008/02/06/interneti-ne-zaman-anlariz/
-    "internet - örütbağ mı desek"
-  [16]: http://www.pardonan.com/css-ve-current-page-hadisesi/
-    "mevcut sayfa"
-  [17]: http://www.pardonan.com/web-tasarim-da-minimalizm/ "minimalizm"

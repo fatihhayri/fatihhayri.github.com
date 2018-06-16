@@ -12,7 +12,6 @@ tags: Ajax, ASP.NET, CSS, Firefox, Haberler, json, safari, slideshow, table
 -   Mac deki resim galerisine benzer güzel bir slidshow uygulaması.
     [Bağlantı][2]
 -   eval() fonksiyonunu kullanmadan Ajax uygulamalarında Json kullanmak.
-    [Bağlantı][3]
 -   Javascript kütüphanelerinin listesi. [Bağlantı][4]
 -   Firefox 3'den iyi haberler gelmeye devam ediyor. Firefox 3
     Eklentilerin hafıza sömürme işine çözüm bulmuş. [Bağlantı][5]
@@ -29,8 +28,6 @@ tags: Ajax, ASP.NET, CSS, Firefox, Haberler, json, safari, slideshow, table
     "Süzülebilir tablolar"
   [2]: http://mediaeventservices.com/blog/2007/11/15/ajax-image-gallery-powered-by-slideflow-like-cover-flow/
     "Slideshow"
-  [3]: http://www.ajaxonomy.com/2007/json/using-json-in-ajax-with-out-using-eval/
-    "ajax -json"
   [4]: http://technotarget.com/ajax-dhtml-and-javascript-libraries/
     "javascript kütüphaneleri"
   [5]: http://blog.wired.com/monkeybites/2007/11/firefox-3-add-o.html

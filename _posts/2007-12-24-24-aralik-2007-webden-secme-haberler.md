@@ -15,7 +15,6 @@ tags: Ajax, Google Analytics, Haberler, ie, lightbox, tipografi, WordPress
     geleceğine dair haberler var. [Bağlantı][2]
 -   CSS kod yazım teknikleri. [Bağlantı][3]
 -   Basit bir şekilde CSS yapısı oluşturmak isteyenler için linkler.
-    [Bağlantı][4]
 -   IE8 çalışmaları devam ediyor, betası 2008'in ilk yarısında
     bekleniyor. Yeni sürümünün standartlara daha uygun olacağı
     anlaşılıyor. Web standartlarına uygunluğu test eden Acid2 testinden
@@ -23,7 +22,6 @@ tags: Ajax, Google Analytics, Haberler, ie, lightbox, tipografi, WordPress
 -   Güzel bir resim galerisi uygulaması. [Bağlantı][6]
 -   Ahmet Küçükoğlu "Css ile Lightbox(ışık Kutuları) Hazırlama" Her ne
     kadar js yapılanlar kadar estetik olmasa da güzel bir alternatif
-    [Bağlantı][7]
 -   Güzel tasarım için renk ve tipografi. [Bağlantı][8]
 -   Google Analytics kodunuzu değiştirin! [Bağlantı][9]
 -   SmashMagazine wordpress temasına bir göz atın. [Bağlantı][10]
@@ -37,13 +35,9 @@ tags: Ajax, Google Analytics, Haberler, ie, lightbox, tipografi, WordPress
   [2]: http://www.w3.org/TR/2007/WD-css3-grid-20070905/ "Grid"
   [3]: http://thedesigncanopy.com/2007/12/17/writing-css-code-inline-andorvs-block/
     "css yaz"
-  [4]: http://vandelaydesign.com/blog/design/css-layout-tools/
-    "css yapıları"
   [5]: http://channel9.msdn.com/Showpost.aspx?postid=367207 "ACID2"
   [6]: http://www.dynamicdrive.com/dynamicindex17/featuredcontentglider.htm
     "slideshow"
-  [7]: http://www.ahmetblog.net/css-ile-lightboxisik-kutulari-hazirlama/
-    "css ile lightbox"
   [8]: http://www.colourlovers.com/blog/2007/12/19/color-and-typography-in-good-design/
     "renk ve tipografi"
   [9]: http://beyn.org/google-analytics-kodunu-degistirin/

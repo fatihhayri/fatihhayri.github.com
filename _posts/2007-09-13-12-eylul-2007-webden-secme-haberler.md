@@ -12,7 +12,7 @@ tags: CSS, favicon, google reader, Haberler, Javascript, jquery, microsoft, yui
 -   Micrsoft Google'u takip etmeye devam ediyor. Windows Live
     Translator. Türkçe olsa yine iyiydi ama yok. Seneye çıkacakmış
     Türkçe Link
--   CSS ile yapılmış bar grafik örnekleri. [Link][3]
+-   CSS ile yapılmış bar grafik örnekleri.
 -   SmashMagazine'den Kullanıcı odaklı program yazmanın 20 yolunu
     anlatan güzel bir makale. [Link][4]
 -   YUI javascript kütüphanesi ile yapılmış bir yükleme betiği.
@@ -23,7 +23,7 @@ tags: CSS, favicon, google reader, Haberler, Javascript, jquery, microsoft, yui
     [Link][8]
 -   Resim yükleniyor efektini CSS ile vermek. Gayet dahiyane bir yöntem.
     [Link][9]
--   web tasarımcılarına lazım olacak 77 güzel link. [Link][10]
+-   web tasarımcılarına lazım olacak 77 güzel link.
 -   Favori ikon tasarımı hakkında güzel bir çalışma. [Link][11]
 
 
@@ -33,8 +33,6 @@ tags: CSS, favicon, google reader, Haberler, Javascript, jquery, microsoft, yui
     "mailing"
   [2]: http://www.geekwisdom.com/dyn/passwdmeter
     "javascript ile sağlıklı şifre"
-  [3]: http://applestooranges.com/blog/post/css-for-bar-graphs/
-    "css grafik"
   [4]: http://www.smashingmagazine.com/2007/09/10/20-alternate-ways-to-focus-on-users/#comment-88795
     "Kullanıcı odaklı kodlama"
   [5]: http://thecodecentral.com/2007/09/04/asynchronous-file-upload-yuis-approach
@@ -46,7 +44,5 @@ tags: CSS, favicon, google reader, Haberler, Javascript, jquery, microsoft, yui
     "jQuery1.2"
   [9]: http://weblog.404creative.com/index.php/2007/07/21/emuate-ajax-image-loading-with-css/
     "yükleniyor"
-  [10]: http://www.vandelaydesign.com/blog/design/resources-simplify-design/
-    "77 link"
   [11]: http://www.smashingmagazine.com/2007/09/11/creative-favicons-tiny-artwork/
     "favicon"

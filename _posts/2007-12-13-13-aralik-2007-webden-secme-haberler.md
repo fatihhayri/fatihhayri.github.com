@@ -14,10 +14,9 @@ tags: CSS, css3.0, Google Analytics, Haberler, Movable-Type, Team Fondation Serv
     yönetimini kolaylaştırarak ürünü ortaya çıkartmada etkin rol oynar.
     [Bağlantı][1]
 -   CSS ile site planlamak hakkında yazılmış güzel bir makale.
-    [Bağlantı][2]
--   Hangi javascript kütüphanesini kullanmalıyım? [Bağlantı][3]
+-   Hangi javascript kütüphanesini kullanmalıyım? 
 -   Tasarımcılar için 10 güzel ipucu. [Bağlantı][4]
--   2007 Web trendleri ve klişeleri. [Bağlantı][5]
+-   2007 Web trendleri ve klişeleri. 
 -   Yeni bir CSS kütüphanesi. [Bağlantı][6]
 -   Tipografi: metin kontrast ve akışını ayarlama. [Bağlantı][7]
 -   CSS ile doküman ikonlarını eklemek. Tek sorun IE6'nın bunu
@@ -33,13 +32,7 @@ tags: CSS, css3.0, Google Analytics, Haberler, Movable-Type, Team Fondation Serv
 
   [Bağlantı]: http://www.writemaps.com/index.php/tour/ "site haritası"
   [1]: http://www.csharpnedir.com/makalegoster.asp?Mid=814# "tfs"
-  [2]: http://www.andyrutledge.com/bad-layout-conventions.php
-    "kötü planlama"
-  [3]: http://blog.reindel.com/2007/10/30/how-to-choose-a-javascript-framework/
-    "javascript kütüphanesini seç"
   [4]: http://24ways.org/2007/10-ways-to-get-design-approval "10 ipucu"
-  [5]: http://www.modernlifeisrubbish.co.uk/article/2007-more-web-design-trends-and-cliches
-    "2007 web trendleri"
   [6]: http://elements.projectdesigns.org/ "css kütüphanesi"
   [7]: http://www.webdesignerwall.com/tutorials/typographic-contrast-flow/
     "Tipografi"

@@ -13,7 +13,7 @@ tags: CSS, Haberler, iframe, masterpage, slideshow, vs.net
     [Bağlantı][2]
 -   En iyi yazı tipi ve satır yüksekliğini seçmeyi anlatan güzel bir
     makale. [Bağlantı][3]
--   Çok güzel ve farklı bir resim galerisi. [Bağlantı][4]
+-   Çok güzel ve farklı bir resim galerisi.
 -   Metin alanı ve buton hizlamak için güzel bir CSS ipucu.
     [Bağlantı][5]
 -   Web sitelerimizin geleceği ve CSS planlama hakkında güzel bir
@@ -33,8 +33,6 @@ tags: CSS, Haberler, iframe, masterpage, slideshow, vs.net
     "Bağlantı"
   [3]: http://www.alistapart.com/articles/howtosizetextincss
     "yazı tipi ve satır yüksekliği"
-  [4]: http://194.95.111.244/%7Ecountzero/scripts/_myImageFlow/
-    "farklı bir resim galerisi"
   [5]: http://nclud.com/sketchbook/css-fix-for-graphical-input-submit-button-off-set
     "güzel bir ipucu"
   [6]: http://www.smileycat.com/miaow/archives/000857.php

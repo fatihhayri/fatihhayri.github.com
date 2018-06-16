@@ -11,7 +11,7 @@ tags: ASP.NET, css başlangıç dosyası, dinamik css, gmail, google pagerank, j
 -   Asp.net MVC ile adım adım kod yazmak. [Bağlantı][1]
 -   CSS ve javascript ile yapılan çok sevimli menüler. [Bağlantı][2]
 -   Web formların farklı ve güzel alternatifler. [Bağlantı][3]
--   Zaman kazandıracak 10 Gmail ipucu. [Bağlantı][4]
+-   Zaman kazandıracak 10 Gmail ipucu. 
 -   jquery ile zebra tablolar yapmak. [Bağlantı][5]
 -   CSS başlangıç dosyaları üzerine farklı bir değerlendirme. Bende
     katılmıyor değilim.[Bağlantı][6]
@@ -34,8 +34,6 @@ tags: ASP.NET, css başlangıç dosyası, dinamik css, gmail, google pagerank, j
     "menü örnekleri"
   [3]: http://www.smashingmagazine.com/2008/04/17/web-form-design-modern-solutions-and-creative-ideas/
     "güzel web formları"
-  [4]: http://webworkerdaily.com/2008/04/16/10-gmail-tips-and-time-savers/
-    "gmail ipuçları"
   [5]: http://skfox.com/2008/04/17/jquery-example-zebra-tables-striping/
     "jquery zebra tablo"
   [6]: http://snook.ca/archives/html_and_css/no_css_reset/

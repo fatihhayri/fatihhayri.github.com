@@ -9,8 +9,8 @@ tags: CSS, gmail, Haberler, Javascript, optimize, tab, vs.net
 -   CSS ve javascript dosyalarını otomatik yüklemek. [Bağlantı][]
 -   13 adımda web optimizasyonu. [Bağlantı][1]
 -   Farklı web tarayıcılarına göre kodlama yapmak için bilgilendirici
-    bir makale. [Bağlantı][2]
--   Resimsiz veya az resim kullanılmış güzel siteler. [Bağlantı][3]
+    bir makale.
+-   Resimsiz veya az resim kullanılmış güzel siteler.
 -   10 adet javascript ajax tab menü örneği. [Bağlantı][4]
 -   Google pagerank değerlerini güncellemiş.
 -   İlginç bir menü çalışması. Tasarımı menüye ilginçlik katıyor aslında
@@ -25,10 +25,6 @@ tags: CSS, gmail, Haberler, Javascript, optimize, tab, vs.net
     "css ve javascript otomatik olarak yüklemek"
   [1]: http://www.sitepoint.com/article/web-site-optimization-steps
     "web optimizasyonu"
-  [2]: http://www.designvitality.com/blog/2007/10/designing-for-every-browser-how-to-make-your-site-fully-cross-browser-compatible/
-    "tarayıcılar"
-  [3]: http://fadtastic.net/2007/10/25/beautiful-sites-with-no-or-very-few-images/
-    "resimsiz siteler"
   [4]: http://tutorialblog.org/10-javascript-ajax-tabs/ "tab menu "
   [5]: http://www.webdesignerwall.com/tutorials/advanced-css-menu/
     "Bağlantı"

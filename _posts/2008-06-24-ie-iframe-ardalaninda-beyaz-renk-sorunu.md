@@ -12,7 +12,8 @@ olan sitelerde sorun değil ama ardalanında resim veya farklı renk olan
 sitelerde sorun çıkarıyor. Bu durumu engellemek için <iframe\> koduna
 çok basit bir özellik eklemesi yeterli oluyor.
 
-	:::html
-	<iframe allowtransparency="true"></iframe>
 
-Örnek: [http://samples.msdn.microsoft.com/workshop/samples/author/dhtml/refs/allowTransparency.htm](http://samples.msdn.microsoft.com/workshop/samples/author/dhtml/refs/allowTransparency.htm)
+{% highlight html %}
+<iframe allowtransparency="true"></iframe>
+{% endhighlight %}
+	

@@ -14,7 +14,6 @@ metodlarla bize gösteriyor. Konu sonlarındaki ipuçlarıda gerçekten çok
 iyi İkinci bölümde ise yükselen kodlama tekniği CSS ile web sayfası
 planlamaya ayrıntıları ile gösteriyor. Tabi web standartlarına uygun
 şekilde. Sadece Web sayfaları değil palm, cep telefonu vd. için kodlama
-önerileri mevcut. Ayrıntılı bilgi için [tıklayınız.][]
+önerileri mevcut. Ayrıntılı bilgi için http://www.simplebits.com/publications/solutions/
 
   [Web Standartları]: /images/solutions_cover.thumbnail.gif
-  [tıklayınız.]: http://www.simplebits.com/publications/solutions/

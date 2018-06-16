@@ -129,7 +129,7 @@ olması şart bence.
 
 -   [http://www.fatihhayrioglu.com/?p=470][]
 -   [http://www.fatihhayrioglu.com/?p=259][]
--   [http://www.bilgisayartoplulugu.com/index.php?option=com_content&view=article&id=16:hangi-internet-taraycs-daha-iyi&catid=6:web&Itemid=11][]
+-   http://www.bilgisayartoplulugu.com/index.php?option=com_content&view=article&id=16:hangi-internet-taraycs-daha-iyi&catid=6:web&Itemid=11
 -   [http://upload.wikimedia.org/wikipedia/commons/7/74/Timeline_of_web_browsers.svg][]
 
 not: Son olarak Nisan 2008'da tarayıcı kullanım oranları.
@@ -144,5 +144,4 @@ not: Son olarak Nisan 2008'da tarayıcı kullanım oranları.
     "web tarayıcıları testi"
   [http://www.fatihhayrioglu.com/?p=470]: http://www.fatihhayrioglu.com/?p=470
   [http://www.fatihhayrioglu.com/?p=259]: http://www.fatihhayrioglu.com/?p=259
-  [http://www.bilgisayartoplulugu.com/index.php?option=com_content&view=article&id=16:hangi-internet-taraycs-daha-iyi&catid=6:web&Itemid=11]: http://www.bilgisayartoplulugu.com/index.php?option=com_content&view=article&id=16:hangi-internet-taraycs-daha-iyi&catid=6:web&Itemid=11
   [http://www.favbrowser.com/internet-explorer-opera-mini-gains-firefox-and-safari-loses-april-08/]: http://www.favbrowser.com/internet-explorer-opera-mini-gains-firefox-and-safari-loses-april-08/

@@ -137,8 +137,7 @@ araç.
     **
 -   [http://javascript.internet.com/debug-guide.html][] (ayrıntılı)
     ****
--   [http://swik.net/JavaScript/Common+JavaScript+Development+Mistakes][]
-    **
+-   http://swik.net/JavaScript/Common+JavaScript+Development+Mistakes
 -   [http://www.javascriptlint.com/][] *
 -   [http://www.ddj.com/184412486][] **
 -   [http://www.sitepoint.com/blogs/2004/08/18/five-common-mistakes-in-influencing-others/][]
@@ -156,7 +155,6 @@ araç.
   [http://javascript.about.com/od/reference/a/error.htm]: http://javascript.about.com/od/reference/a/error.htm
   [http://www.c-point.com/javascript_tutorial/common_mistakes.htm]: http://www.c-point.com/javascript_tutorial/common_mistakes.htm
   [http://javascript.internet.com/debug-guide.html]: http://javascript.internet.com/debug-guide.html
-  [http://swik.net/JavaScript/Common+JavaScript+Development+Mistakes]: http://swik.net/JavaScript/Common+JavaScript+Development+Mistakes
   [http://www.javascriptlint.com/]: http://www.javascriptlint.com/
   [http://www.ddj.com/184412486]: http://www.ddj.com/184412486
   [http://www.sitepoint.com/blogs/2004/08/18/five-common-mistakes-in-influencing-others/]: http://www.sitepoint.com/blogs/2004/08/18/five-common-mistakes-in-influencing-others/

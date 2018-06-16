@@ -58,7 +58,7 @@ Mutlak konumlandırma (position: absolute) ile benzer özelliklere sahiptir; tan
 
 ## Kaynaklar
 
--   [http://home.tampabay.rr.com/bmerkey/examples/fake-position-fixed.html][]
+-   http://home.tampabay.rr.com/bmerkey/examples/fake-position-fixed.html
 -   [http://tagsoup.com/cookbook/css/fixed/][]
 -   [http://annevankesteren.nl/test/examples/ie/position-fixed.html][]
 -   [http://annevankesteren.nl/2005/01/position-fixed-in-ie][]
@@ -78,7 +78,6 @@ Mutlak konumlandırma (position: absolute) ile benzer özelliklere sahiptir; tan
   [1]: /dokumanlar/sab_konum_ust.html
   [2]: /dokumanlar/sab_konum_alt.html
   [garip modda]: http://www.fatihhayrioglu.com/?p=164
-  [http://home.tampabay.rr.com/bmerkey/examples/fake-position-fixed.html]: http://home.tampabay.rr.com/bmerkey/examples/fake-position-fixed.html
   [http://tagsoup.com/cookbook/css/fixed/]: http://tagsoup.com/cookbook/css/fixed/
   [http://annevankesteren.nl/test/examples/ie/position-fixed.html]: http://annevankesteren.nl/test/examples/ie/position-fixed.html
   [http://annevankesteren.nl/2005/01/position-fixed-in-ie]: http://annevankesteren.nl/2005/01/position-fixed-in-ie

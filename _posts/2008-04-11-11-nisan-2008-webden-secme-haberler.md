@@ -12,10 +12,10 @@ tags: google, Javascript, jquery, kapatma davası, mootools, rss, WordPress
 -   CSS 8 güzel tekniği. [Bağlantı][3]
 -   Google Grupları mahkeme kararı ile kapanmış. Yakında Google'ı da
     kapatırlarsa hiç şaşmayalım. Nasıl bir anlayıştır, anlamak mümkün
-    değil. [Bağlantı][4]
+    değil.
 -   CSS ile akordeon menü yapımı. Javascriptdeki gibi olmasa da idare
     eder. [Bağlantı][5]
--   Basit bir şekilde özel kaydırma çubuğu yapmak. [Bağlantı][6]
+-   Basit bir şekilde özel kaydırma çubuğu yapmak.
 -   41 mootools uygulaması. [Bağlantı][7]
 -   CSS mutlak konumlandırma hakkında güzel bir makale. [Bağlantı][8]
 -   37 adet mükemmel jquery uygulaması. jQuery'i seviyorum.
@@ -28,9 +28,7 @@ tags: google, Javascript, jquery, kapatma davası, mootools, rss, WordPress
   [1]: http://speckyboy.com/2008/04/08/top-10-security-and-protection-plugins-for-wordpress/
   [2]: http://azer.googlecode.com/files/ileri_seviye_javascript.pdf
   [3]: http://www.sitepoint.com/article/tomorrows-css-today
-  [4]: http://www.internethaber.com/news_detail.php?id=136392
   [5]: http://www.cssnewbie.com/css-only-accordion/
-  [6]: http://cssglobe.com/post/1495/easy-scroll-accessible-content-scroller
   [7]: http://speckyboy.com/2008/04/09/41-of-the-best-mootools-ajax-example-downloads/
   [8]: http://www.search-this.com/2008/04/09/css-an-absolute-mess/
   [9]: http://www.noupe.com/ajax/37-more-shocking-jquery-plugins.html

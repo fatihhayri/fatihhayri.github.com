@@ -207,9 +207,8 @@ Kodlar IE6, IE7 ve FF da denenmiştir.
 ## Kaynak:
 
 -   [http://www.maxdesign.com.au/presentation/liquid/example02.htm][]
--   [http://ryanfait.com/sticky-footer/][]
+-   http://ryanfait.com/sticky-footer
 
   [İki Kolon]: /images/iki_kolon_yuzde.gif
   [Üç kolon]: /images/uc_kolon_yuzde.gif
   [http://www.maxdesign.com.au/presentation/liquid/example02.htm]: http://www.maxdesign.com.au/presentation/liquid/example02.htm
-  [http://ryanfait.com/sticky-footer/]: http://ryanfait.com/sticky-footer/

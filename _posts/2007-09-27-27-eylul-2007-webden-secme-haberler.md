@@ -9,7 +9,7 @@ tags: Anlamlı web, ASP.NET, CSS, ekran, gelen, Haberler, mootools, sildeshow
 -   Asp.net ile sitelerin ekran görüntüsünü almak. [Bağlantı][]
 -   Asp.net ile dinamik css dosyaları eklemek. [Bağlantı][1]
 -   53 CSS uygulaması. [Bağlantı][2]
--   CSS dosyalarımızı optimize etmenin bir kaç yolu. [Bağlantı][3]
+-   CSS dosyalarımızı optimize etmenin bir kaç yolu. 
 -   Çerezler hakkında bilmediğimiz 3 şey. [Bağlantı][4]
 -   SmashMagazine yine yapacağını yapmış ve güzel bir makale yazmış. CSS
     Anaçatıları ve başlangıç dosylarını anlatan çok güzel bir makale.
@@ -32,8 +32,6 @@ tags: Anlamlı web, ASP.NET, CSS, ekran, gelen, Haberler, mootools, sildeshow
     "asp.net ile dinamik css eklemek"
   [2]: http://www.smashingmagazine.com/2007/01/19/53-css-techniques-you-couldnt-live-without/
     "53 css uygulaması"
-  [3]: http://www.elliotswan.com/2007/09/19/howto-3-easy-ways-to-speed-up-css-development-while-staying-organized/
-    "CSS dosyalarını optimize etmek"
   [4]: http://www.sitepoint.com/blogs/2007/09/24/3-things-about-cookies-you-may-not-know/
     "çerezler"
   [5]: http://www.smashingmagazine.com/2007/09/21/css-frameworks-css-reset-design-from-scratch/

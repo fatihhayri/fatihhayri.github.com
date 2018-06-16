@@ -7,7 +7,6 @@ tags: .net, 404, Haberler, WordPress
 ---
 
 -   Mavikurt "Özbiçim nedir?(microformats)" adlı bir makale yazmış.
-    [Link][]
 -   Adobe çevirimiçi resim editörü çıkaracakmış. Yani Adobe Phoshop'un
     çevirimiçi olanını 6 sonra çıkaracakmış. [Link][1]
 -   .Net ile hata kontrolü yaparken hata mesajı yerine resim kullanmayı
@@ -22,7 +21,6 @@ tags: .net, 404, Haberler, WordPress
     eklentinin(codepress) nasıl ekleneceğin anlatmış. [Link][4]
 
 
-  [Link]: http://mavikurt.com/ozbicimler-microformats/ "özbiçim"
   [1]: http://news.com.com/2100-7345_3-6163015.html
     "Online Adobe Photoshop"
   [2]: http://www.c-sharpcorner.com/UploadFile/deepakvraghavan/EnhancedRequiredFieldValidator08072007112220AM/EnhancedRequiredFieldValidator.aspx

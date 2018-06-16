@@ -23,8 +23,8 @@ tags: Ajax, google reader, ie8, jquery, json, morecss, png, rss, tipografi
 -   "jQuery ve JSON işlemleri" [Bağlantı][10]
 -   "2008'de İlk Kurumsal Değişimler ve Yenilikler" [Bağlantı][11]
 -   MoreCSS.js css kodları ile genel kullandığımız javascript
-    işlevlerini yerine getirmemizi sağlayan bir kod. [Bağlantı][12]
--   8 adet CSS ipucu. [Bağlantı][13]
+    işlevlerini yerine getirmemizi sağlayan bir kod.
+-   8 adet CSS ipucu.
 
 
   [Bağlantı]: http://ajax.dzone.com/news/easy-multi-select-transfer-jqu
@@ -48,6 +48,3 @@ tags: Ajax, google reader, ie8, jquery, json, morecss, png, rss, tipografi
   [10]: http://www.eburhan.com/jquery-ve-json-islemleri/
     "jquery ve json"
   [11]: http://www.hasanyalcin.com/?p=421 "2008 yenilikleri"
-  [12]: http://yellowgreen.de/morecss "css ve javascript"
-  [13]: http://www.cssglobe.com/post/1392/8-premium-one-line-css-tips
-    "css ipuçları"

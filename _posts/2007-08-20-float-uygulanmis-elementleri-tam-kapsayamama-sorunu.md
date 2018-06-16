@@ -207,7 +207,7 @@ hızlı bir şekilde çözmek mümkün oluyor.
 
  - [http://www.positioniseverything.net/easyclearing.html][]
  - [http://www.complexspiral.com/publications/containing-floats/][]
- - [http://www.dahaiyi.net/yazilar/temiz-bir-clearfix-metodu/][dahaiyi.net]
+ - http://www.dahaiyi.net/yazilar/temiz-bir-clearfix-metodu
  - [http://csscreator.com/?q=attributes/containedfloat.php][]
  - [http://css-discuss.incutio.com/?page=ClearingSpace][]
  - [http://www.cs.hmc.edu/~mbrubeck/clear-after/][]
@@ -223,7 +223,6 @@ hızlı bir şekilde çözmek mümkün oluyor.
   [Matt Keogh]: http://www.loungepenguin.co.uk/indexno.htm "Matt Keogh"
   [Holly’n John]: http://www.positioniseverything.net/design/
   [Tony Asslet]: http://www.csscreator.com/ "CSSCreator"
-  [dahaiyi.net]: http://www.dahaiyi.net/yazilar/temiz-bir-clearfix-metodu/
   [clear-after]: http://www.w3.org/TR/2002/WD-css3-box-20021024/#the-clear-after
   [http://www.positioniseverything.net/easyclearing.html]: http://www.positioniseverything.net/easyclearing.html
   [http://www.complexspiral.com/publications/containing-floats/]: http://www.complexspiral.com/publications/containing-floats/

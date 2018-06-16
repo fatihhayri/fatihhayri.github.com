@@ -8,7 +8,6 @@ tags: css3.0, e-posta, Haberler, Javascript, jquery, netscape, sildeshow
 
 -   Javascript slideshow örnekleri. [Bağlantı][]
 -   Javascript ve ajax ile fare imlecinin hareketlerini kaydetme işlemi.
-    [Bağlantı][1]
 -   Asp.net ile gelişmiş eposta gönderme işlemleri; cevap yaz, önem
     seviyesi, ve teyit alma. [Bağlantı][2]
 -   CSS3.0 hazırlayan takım ile yapılmış bir söyleşi. [Bağlantı][3]
@@ -21,8 +20,6 @@ tags: css3.0, e-posta, Haberler, Javascript, jquery, netscape, sildeshow
 
   [Bağlantı]: http://www.maxkiesler.com/index.php/weblog/comments/ajax_amp_javascript_galleries_slideshows_and_effects_redux/
     "slide show"
-  [1]: http://pure.rednoize.com/2007/10/18/record-mouse-movement-using-javascript-and-ajax/
-    "fare"
   [2]: http://aspnet.4guysfromrolla.com/articles/101707-1.aspx
     "asp.net ile eposta"
   [3]: http://xhtml.com/en/css/conversation-with-css-3-team/ "css3.0"

@@ -12,7 +12,7 @@ tags: Ajax, ASP.NET, google-belgeler-etablolar, Haberler, jquery, php, png, sunu
 -   Asp.net ve php ile programlama ile ekran görüntüsü almak. [Link][3]
 -   PNG-8 ve PNG-24 formatlarını inceleyen güzel bir makale. [Link][4]
 -   Ajax ile yapılmış sayfalama betiği. [Link][5]
--   Php ile zamana göre farklı css uygulama betiği. [Link][6]
+-   Php ile zamana göre farklı css uygulama betiği. 
 -   Google Belgeler ve E-Tablolar aracına sunum seçeneği de ekledi.
     [Link][7]
 
@@ -26,7 +26,5 @@ tags: Ajax, ASP.NET, google-belgeler-etablolar, Haberler, jquery, php, png, sunu
     "png"
   [5]: http://www.dynamicdrive.com/dynamicindex17/ajaxpaginate/index.htm
     "sayfalama betiği"
-  [6]: http://www.prdesign-studio.co.uk/HarryRoberts/index.php?2007/09/10/08/15/29-create-a-timed-stylesheet-using-php
-    "zaman ayarlı css"
   [7]: http://googlesystem.blogspot.com/2007/09/google-presentations-finally-launched.html
     "Google Belgeler ve E-tabloalr ve sunu"

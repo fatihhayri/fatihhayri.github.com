@@ -7,7 +7,7 @@ tags: adım adım kodlama, arama motoru, CSS maskeleme, css teknikleri, Dragon F
 ---
 
 -   jQuery ile veri süzme ve sıralama işlemi yapıla bilen güzel bir
-    uygulama. [Bağlantı][]
+    uygulama. 
 -   WebKit(Safari) geliştiricileri işi biraz da abarttı mı ne? Şimdide
     resimlere CSS ile alfa maske uygulamışlar. [Bağlantı][1]
 -   Javascript ajax ile birlikte çok önem kazandı. Bir çok projede
@@ -17,7 +17,7 @@ tags: adım adım kodlama, arama motoru, CSS maskeleme, css teknikleri, Dragon F
 -   Apple firması son zamanalarda bayağı bir atağa geçti. İnternet
     tarayıcısı Safari'de kendini bayağı geliştiriyor. Niye Safari
     kullanayım diyenler. [Bağlantı][4]
--   Lightbox ile özel diyalog kutuları oluşturmak. [Bağlantı][5]
+-   Lightbox ile özel diyalog kutuları oluşturmak.
 -   51'den fazla jQuery uygulaması ve makalesi. [Bağlantı][6]
 -   Opera Firefox'un Firebug'u gibi bir hata ayıklama aracı geliştirmiş
     Dragon fly ve 6 Mayıs'da bizlere sunacakmış. [Bağlantı][7]
@@ -31,7 +31,6 @@ tags: adım adım kodlama, arama motoru, CSS maskeleme, css teknikleri, Dragon F
 -   Efektif web sayfaları hazırlamak için 5 önemli bilgi. [Bağlantı][13]
 
 
-  [Bağlantı]: http://webplicity.net/flexigrid/
   [1]: http://webkit.org/blog/181/css-masks/ "css maske"
   [2]: http://roshanbh.com.np/2008/04/how-to-know-handle-disabled-javascript.html
     "javascript açık"
@@ -39,8 +38,6 @@ tags: adım adım kodlama, arama motoru, CSS maskeleme, css teknikleri, Dragon F
     "arama motorlarına uygun sayfalar"
   [4]: http://codebetter.com/blogs/jeff.lynch/archive/2008/04/24/why-safari-may-become-the-browser-of-choice.aspx
     "Safari yi seç"
-  [5]: http://www.leigeber.com/2008/04/custom-javascript-dialog-boxes/
-    "özel kutular"
   [6]: http://www.noupe.com/tutorial/51-best-of-jquery-tutorials-and-examples.html
     "jquery"
   [7]: http://www.opera.com/dragonfly/ "dragonfly"
