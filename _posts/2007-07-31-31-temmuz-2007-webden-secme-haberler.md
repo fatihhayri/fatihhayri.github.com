@@ -11,7 +11,7 @@ tags: [csharp, CSS, Dust-Me, Firefox, google, Haberler, jquery, web, WordPress]
     eklentisi. [Link][1]
 -   Web ile alakalı güzel ve renkli bir site açılmış. [Link][2]
 -   Firefox tablarını kontrol etmenin 10 yolu.
--   C# ve .Net kullanlara güzel araçlar ve öneriler. [Link][4]
+-   C# ve .Net kullanlara güzel araçlar ve öneriler.
 -   Ünlü javascript kütüphanelerinden jquery hakkında 10 ipuçu.
     [Link][5] buda ikinci 10 . [Link][6]
 -   Web programcıları ve geliştricileri için 120 adet araç ve kaynak.
@@ -25,8 +25,6 @@ tags: [csharp, CSS, Dust-Me, Firefox, google, Haberler, jquery, web, WordPress]
     "CSS Araçları"
   [1]: http://www.sitepoint.com/dustmeselectors/ "Dust-Me"
   [2]: http://www.webdesignerwall.com/ "web designer wall"
-  [4]: http://blog.lowesoftware.com/software-development/a-developers-toolkit-for-c-and-net
-    "c# ve .Net"
   [5]: http://www.phpfour.com/blog/2007/06/30/jquery-essentials/
     "jquery"
   [6]: http://www.phpfour.com/blog/2007/07/28/jquery-essentials-round-2/

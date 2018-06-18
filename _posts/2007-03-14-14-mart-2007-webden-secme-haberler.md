@@ -7,7 +7,6 @@ tags: [Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, 
 ---
 
 -   50 adet Firefox eklentisi [Link][], 20 tanede burada sıralanmış.
-    [Link][1]
 -   EOGallery javascript ile hazırlanmış güzel bir resim galerisi
     örneği. [Link][2]
 -   Javascript ve CSS yardımı ile Font kontrolü scripti. [Link][3]
@@ -30,8 +29,6 @@ tags: [Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, 
 
 
   [Link]: http://www.netmag.co.uk/zine/home/the-top-50-firefox-extensions
-    "Link"
-  [1]: http://www.computerworld.com/action/article.do?command=viewArticleBasic&articleId=9011975&pageNumber=1
     "Link"
   [2]: http://www.eogallery.com/ "Link"
   [3]: http://www.lalit.org/lab/fontdetect.php "Link"

@@ -412,7 +412,7 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
 -   [http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/][]
 -   [http://particletree.com/features/rediscovering-the-button-element/][] (button elemanı hakkında)
 -   [http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/][] (güzel)
--   [http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors/][]
+-   http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors
 -   http://blog.anomalyinnovations.com/2010/03/creating-a-realistic-looking-button-with-css3
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/][]
 -   [http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/][]
@@ -425,7 +425,7 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
 -   [http://www.smileycat.com/design_elements/buttons/#002024][]
 -   [http://www.tripwiremagazine.com/design/css-techniques/24-essential-submit-button-enhancements.html][]
 -   [http://www.vanseodesign.com/css/css-navigation-buttons/][]
--   [http://articles.techrepublic.com.com/5100-10878_11-5323375.html][]
+-   http://articles.techrepublic.com.com/5100-10878_11-5323375.html
 -   [http://www.thesitewizard.com/css/3d-buttons.shtml][]
 -   [http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm][]
 -   [http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/][]
@@ -458,7 +458,6 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
   [http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/]: http://www.dynamicdrive.com/style/csslibrary/item/bold_css_buttons/
   [http://particletree.com/features/rediscovering-the-button-element/]: http://particletree.com/features/rediscovering-the-button-element/
   [http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/]: http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/
-  [http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors/]: http://www.filamentgroup.com/lab/styling_the_button_element_with_sliding_doors/
   [http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/]: http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/
   [http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/]: http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/
   [http://codecanyon.net/item/fancy-2-line-css-buttons/109049]: http://codecanyon.net/item/fancy-2-line-css-buttons/109049
@@ -468,7 +467,6 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
   [http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/]: http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/
   [http://www.tripwiremagazine.com/design/css-techniques/24-essential-submit-button-enhancements.html]: http://www.tripwiremagazine.com/design/css-techniques/24-essential-submit-button-enhancements.html
   [http://www.vanseodesign.com/css/css-navigation-buttons/]: http://www.vanseodesign.com/css/css-navigation-buttons/
-  [http://articles.techrepublic.com.com/5100-10878_11-5323375.html]: http://articles.techrepublic.com.com/5100-10878_11-5323375.html
   [http://www.thesitewizard.com/css/3d-buttons.shtml]: http://www.thesitewizard.com/css/3d-buttons.shtml
   [http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm]: http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm
   [http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/]: http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/

@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![İhanet Noktası][]Gerçekten güzel bir roman. Gerilim seven herkese
+<span class="kitap-resmi">![İhanet Noktası][]</span> Gerçekten güzel bir roman. Gerilim seven herkese
 tavsiye ederim. Ben aslında pek roman okuyan birisi değilim. Bana biraz
 zaman kaybı gibi geliyor. Kitap güzel, insan kendini aksiyon filmi
 seyrediyor gibi hissediyor. Tabi yönetmeni kendi olunca daha zevkli

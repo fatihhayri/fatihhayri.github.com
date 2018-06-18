@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![Osmanlının Balkanlardan Çekilişi - Süleyman Hüsnü Paşa][]Osmanlı
+<span class="kitap-resmi">![Osmanlının Balkanlardan Çekilişi - Süleyman Hüsnü Paşa][]</span> Osmanlı
 tarihinin en karışık dönemlerinde biri olan Sultan Abdülaziz ve Sultan
 Abdülhamid'in dönemlerinde aktif rol oynamış bir paşanın(Süleyman Hüsnü
 Paşa) yazıları baz alınarak dönemi birde paşa tarafından görmemizi

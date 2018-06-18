@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Ahmed Aymutlu, hz.muhammed, Kitaplar, mevlid, salat, selam, Süleyman Çelebi ve Mevlid-i Şerif]
 ---
 
-![Süleyman Çelebi ve Mevlid-i Şerif - Ahmed Aymutlu][]Anlamını tam
+<span class="kitap-resmi">![Süleyman Çelebi ve Mevlid-i Şerif - Ahmed Aymutlu][]</span> Anlamını tam
 anlamıyla bilmeden dinlediğim mevlitlerin niye bana o kadar tesir
 etmediğini şimdi anladım. Çünkü okunan mevlidin yarısından çoğunu
 anlamıyormuşum. Süleyman Çelebi mübarek o kadar güzel yazmış şimdi bile

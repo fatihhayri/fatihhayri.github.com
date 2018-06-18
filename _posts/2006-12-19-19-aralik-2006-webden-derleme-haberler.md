@@ -15,7 +15,7 @@ birikmiş
 -   Html sayfalar html içerik eklememizi sağlayan güzel bir makale,
     iframe kullanımına son verebilirsiniz.
 -   CSS ile standart fontların dışında font kullanmanın yollarından biri
-    sIFR'ın 3 betası çıkmış incelemeye değer. [Link][3]
+    sIFR'ın 3 betası çıkmış incelemeye değer.
 -   IE 7'nin gelecekte destekleyeceği yeni özellikler [Link][4]
 -   CSS ile font kullanımı hakkında ilginç bir makale.
 -   Ajax hakkında ipuçları veren güzel bir site [Link][6]
@@ -31,7 +31,6 @@ birikmiş
 
   [Link]: http://24ways.org/2006/css-production-notes
   [1]: http://www.456bereastreet.com/archive/200612/97_of_websites_still_inaccessible/
-  [3]: http://novemberborn.net/sifr3/beta1
   [4]: http://www.456bereastreet.com/archive/200612/10_must_haves_in_ie_next/
   [6]: http://ajaxcookbook.org/
   [7]: http://www.javascriptkit.com/script/treeview/index.shtml

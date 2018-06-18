@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Bir Nesli Nasıl Mahvettiler, memleket, Osman Yüksel SERDENGEÇTİ, siyaset]
 ---
 
-![Bir nesli nasıl mahvettiler - Osman yüksel Serdengeçti][]Yanlış
+<span class="kitap-resmi">![Bir nesli nasıl mahvettiler - Osman yüksel Serdengeçti][]</span> Yanlış
 hesaplar, yanlış politikalar ve tüm yanlışlar bu milleti bu hale
 getirdi. Bu yanlışları düzeltmek için daha çok çalışmalıyız. Daha çok
 uğraşmalıyız.  Üstad güzel yazmış ve güzel yerlere dokunmuş.
@@ -21,4 +21,4 @@ haykıran korkusuz bir adamın meydan okuyuşlarını görmek için
 okuyacaksınız. Bu eser, içindeki birbirinden güzel birçok yazı bir yana,
 sırf "Ayasofya Davası" için bile kitaplıkta bulundurulmaya değer.
 
-  [Bir nesli nasıl mahvettiler - Osman yüksel Serdengeçti]: /images/birnesli_nasil_mahvettiler.thumbnail.gif
+  [Bir nesli nasıl mahvettiler - Osman yüksel Serdengeçti]: /images/birnesli_nasil_mahvettiler.gif

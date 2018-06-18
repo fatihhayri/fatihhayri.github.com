@@ -19,7 +19,7 @@ tags: [Ajax, CSS, font, Haberler, html, Javascript, last.fm, web2.0]
     [Link][5]
 -   İnternet radyosu Last.fm tabi farklı bir radyo artık Türkçe.
     [Link][6]
--   web2.0 listeleyen sitelerin listesi. [Link][7]
+-   web2.0 listeleyen sitelerin listesi.
 
 
   [Link]: http://casteyo.wordpress.com/2007/06/20/how-to-do-a-circular-menu-with-css/
@@ -31,5 +31,3 @@ tags: [Ajax, CSS, font, Haberler, html, Javascript, last.fm, web2.0]
   [3]: http://www.visibone.com/font/FontResults.html "Link"
   [5]: http://www.bestwebezy.com/web-20/html-5-what-now/ "Link"
   [6]: http://www.lastfm.com.tr/ "Link"
-  [7]: http://www.readwriteweb.com/archives/keeping_tabs_on_web_20_lists.php
-    "Link"

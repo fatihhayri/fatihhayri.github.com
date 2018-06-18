@@ -107,7 +107,7 @@ Kalın sağlıcakla
 ## Kaynaklar
 
 -   http://haslayout.net/haslayout
--   [http://www.satzansatz.de/cssd/onhavinglayout.html][] (detaylı)
+-   http://www.satzansatz.de/cssd/onhavinglayout.html
 -   [http://reference.sitepoint.com/css/haslayout][]
 -   [http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx][]
     (detaylı, kaynağından)
@@ -122,14 +122,13 @@ Kalın sağlıcakla
 -   [http://stackoverflow.com/questions/1794350/what-is-haslayout][]
 -   [http://stackoverflow.com/search?q=hasLayout][]
 -   [http://www.webmasterworld.com/forum83/6999.htm][]
--   [http://msdn.microsoft.com/en-us/library/ms533776.aspx][]
+-   http://msdn.microsoft.com/en-us/library/ms533776.aspx
 
 
   [Mosaic]: http://en.wikipedia.org/wiki/Mosaic_web_browser
   [Trident]: http://en.wikipedia.org/wiki/Trident_(layout_engine)
   [ie6’yı öldürdük]: http://www.fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/
   [%7(makaleyi yazdığımda idi şimdi %4,5 kadar düştü)]: http://labs.sahibinden.com/yazi/sahibinden-com-ziyaretcileri-2011-yili-teknoloji-analizi/
-  [http://www.satzansatz.de/cssd/onhavinglayout.html]: http://www.satzansatz.de/cssd/onhavinglayout.html
   [http://reference.sitepoint.com/css/haslayout]: http://reference.sitepoint.com/css/haslayout
   [http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx]: http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx
   [http://css-class.com/articles/explorer/guillotine/]: http://css-class.com/articles/explorer/guillotine/
@@ -139,4 +138,3 @@ Kalın sağlıcakla
   [http://stackoverflow.com/questions/1794350/what-is-haslayout]: http://stackoverflow.com/questions/1794350/what-is-haslayout
   [http://stackoverflow.com/search?q=hasLayout]: http://stackoverflow.com/search?q=hasLayout
   [http://www.webmasterworld.com/forum83/6999.htm]: http://www.webmasterworld.com/forum83/6999.htm
-  [http://msdn.microsoft.com/en-us/library/ms533776.aspx]: http://msdn.microsoft.com/en-us/library/ms533776.aspx

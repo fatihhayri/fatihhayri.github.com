@@ -5,7 +5,7 @@ Date: 2006-09-26 09:12
 Category: Kitaplar
 ---
 
-![Usame ibn Munkız- İbretler Kitabı][] Bulunduğu devir hakkında bir çok
+<span class="kitap-resmi">![Usame ibn Munkız- İbretler Kitabı][]</span> Bulunduğu devir hakkında bir çok
 ayrıntıya yer verilen çok güzel bir kaynak. Gerçekten ibret verici
 hikayeler var. Kitabın Arka Kapağından: "Haçlılar dönemi
 müellifleri arasında çekici üslubuyla dikkat çeken bir sima daha
@@ -22,4 +22,4 @@ Müslümanlar üzerindeki etkilerini anlatan insan elinden çıkma sayılı
 belgelerden biri olan Üsame İbn Münkız'ın anılarıdır." Bernard Lewis,
 The Muslim Discovery of Europe
 
-  [Usame ibn Munkız- İbretler Kitabı]: /images/ibretler_kitabi.thumbnail.jpg
+  [Usame ibn Munkız- İbretler Kitabı]: /images/ibretler_kitabi.jpg

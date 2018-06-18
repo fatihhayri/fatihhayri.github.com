@@ -181,11 +181,11 @@ Kalın sağlıcakla.
 
  - [http://bower.io/](http://bower.io/)
  - [https://github.com/bower/bower](https://github.com/bower/bower)
- - [http://kodcu.com/2014/05/bower-nedir-nasil-kullanilir/](http://kodcu.com/2014/05/bower-nedir-nasil-kullanilir/)
+ - http://kodcu.com/2014/05/bower-nedir-nasil-kullanilir/
  - [http://code.tutsplus.com/tutorials/meet-bower-a-package-manager-for-the-web--net-27774](http://code.tutsplus.com/tutorials/meet-bower-a-package-manager-for-the-web--net-27774)
  - [http://blog.teamtreehouse.com/getting-started-bower](http://blog.teamtreehouse.com/getting-started-bower)
  - [https://css-tricks.com/whats-great-bower/](https://css-tricks.com/whats-great-bower/)
- - [http://www.web-and-development.com/twitter-bower-browser-package-manager/](http://www.web-and-development.com/twitter-bower-browser-package-manager/)
+ - http://www.web-and-development.com/twitter-bower-browser-package-manager/
  - [https://blog.openshift.com/day-1-bower-manage-your-client-side-dependencies/](https://blog.openshift.com/day-1-bower-manage-your-client-side-dependencies/)
  - [http://www.boxuk.com/blog/unboxing-bower/](http://www.boxuk.com/blog/unboxing-bower/)
  - [http://germanforblack.com/post/46734908388/i-built-a-plugin-for-sublime-text-that-integrates](http://germanforblack.com/post/46734908388/i-built-a-plugin-for-sublime-text-that-integrates)

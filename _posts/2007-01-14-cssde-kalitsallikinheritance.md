@@ -132,7 +132,7 @@ nedeni ile de bir çok sorunla karşılaştığımızıda unutmayalım.
 -   [http://www.devarticles.com][]
 -   [http://www.w3.org/TR/REC-CSS1#inheritance][]
 -   [http://www.adobe.com/][]
--   [http://www.creativepro.com/][]
+-   http://www.creativepro.com
 -   [http://meyerweb.com/][]
 
 
@@ -141,5 +141,4 @@ nedeni ile de bir çok sorunla karşılaştığımızıda unutmayalım.
   [http://www.devarticles.com]: http://www.devarticles.com/c/a/Web-Style-Sheets/Learn-CSS-Introduction-to-Inheritance-Specificity-and-Cascade/3/
   [http://www.w3.org/TR/REC-CSS1#inheritance]: http://www.w3.org/TR/REC-CSS1#inheritance
   [http://www.adobe.com/]: http://www.adobe.com/devnet/dreamweaver/articles/css_inheritance.html
-  [http://www.creativepro.com/]: http://www.creativepro.com/story/feature/14776.html
   [http://meyerweb.com/]: http://meyerweb.com/eric/articles/webrev/199903.html

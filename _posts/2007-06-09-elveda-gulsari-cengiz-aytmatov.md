@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![Elveda Gülsarı][]Gerçekten güzel bir roman. Bazı yerlerde
+<span class="kitap-resmi">![Elveda Gülsarı][]</span> Gerçekten güzel bir roman. Bazı yerlerde
 gerçekten etkilendim. Kitaba isminide veren Gülsarı adlı atın doğumu ve
 ölümü ile biten roman aslında sovyet devrimine inanamış Kırgızların
 yaşadıkları zorlu hayatı anlatan güzel bir roman.  Kitabın

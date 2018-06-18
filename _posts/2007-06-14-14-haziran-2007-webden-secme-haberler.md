@@ -10,7 +10,7 @@ tags: [CSS, geyikposta, Haberler, tab, tooltip]
     Ama kim ne kadar yasal tartışılır. Amaç geyik yapmak :D
 -   "Kablo tarihe karışıyor" bilimadamları kablosuz güç iletmeyi
     başarmış. Bilgisayarcıların en büyük derdi kablolarla uğraşmak
-    bakalım bunu kökten çözebilecekler mi? [Link][]
+    bakalım bunu kökten çözebilecekler mi? 
 -   Mac kullanıcılarının web tarayıcısı Safari Windows versiyonunu
     çıkarmış. Şimdilik beta aşamasında olan web tarayıcı diğerlerinden 2
     kat daha hızlı olduğu iddasında. 29 Haziranda IPhone'unu çıkarmaya
@@ -23,7 +23,7 @@ tags: [CSS, geyikposta, Haberler, tab, tooltip]
     google kullanıcı arama kayıtlarının artık 18 ay süre ile
     depolanacağını ve sonra silineceğini açıkladı. 
 -   Javascript kütüphanelerinin CSS seçici sorgulamasına göre testini
-    yapan bir site. [Link][5]
+    yapan bir site.
 -   Mehmet Nuri Çankaya'nın "Microsoft Popfly" yazsını bir göz atın.
     [Link][6]
 -   40 adet ajax, javascript ve css ile yapılmış bilgi
@@ -31,12 +31,9 @@ tags: [CSS, geyikposta, Haberler, tab, tooltip]
 -   14 ücretsiz web istatistiği tutan aracın değerlendirildiği İngilzice
     bir makale.
 
-
-  [Link]: http://www.ntvmsnbc.com/news/410595.asp "Link"
   [1]: http://www.apple.com/safari/ "Link"
   [2]: http://www.wittysparks.com/2007/06/10/26-best-ways-to-implement-ajax-css-and-javascript-based-tabs/
     "Link"
   [3]: http://usabilitychecklist.blogspot.com/2007/06/50-beautiful-css-based-web-designs.html
-  [5]: http://mootools.net/slickspeed/
   [6]: http://www.nuricankaya.com/default.asp?gunluk_id=201
   [7]: http://www.smashingmagazine.com/2007/06/12/tooltips-scripts-ajax-javascript-css-dhtml/

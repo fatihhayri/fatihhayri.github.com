@@ -19,7 +19,7 @@ tags: [Fix Feed, form, gameQuery, Google Chrome, ie6, jquery, poster, rss, WordP
 -   Web tasarımcıları için posterler. [Bağlantı][8]
 -   jQuery öğrenmeye başlamak için.
 -   Internet Explorer 6 bloklamak için. [Bağlantı][10]
--   İnternet Tarayıcıları savaşı 2.0 [Bağlantı][11]
+-   İnternet Tarayıcıları savaşı 2.0
 -   eBurhan Fix Feed v1.1 yayınlandı… - eburhan.com - kırık
 -   Internet Explorer 8'deki CSS gelişmeleri. [Bağlantı][13]
 -   Google Chrome'un bilinmeyen yanları. [Bağlantı][14]
@@ -41,8 +41,6 @@ tags: [Fix Feed, form, gameQuery, Google Chrome, ie6, jquery, poster, rss, WordP
   [6]: http://gamequery.onaluf.org/#description "GameQuery"
   [8]: http://sixrevisions.com/resources/cheat_sheets_for_web_designers/
   [10]: http://css-tricks.com/ie-6-blocker-script/ "ie 6 blok"
-  [11]: http://www.readwriteweb.com/archives/rww_predictions_browser_wars.php
-    "internet tarayıcıları"
   [13]: http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx
     "ie 8"
   [14]: http://lifehacker.com/5045904/the-power-users-guide-to-google-chrome

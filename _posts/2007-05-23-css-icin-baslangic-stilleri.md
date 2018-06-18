@@ -71,7 +71,7 @@ olmadığını bilmemi sağlıyor.
 
 #### **Floating ve Clearing için Sınıflar Yapmak**
 
-Sonra clearing için bir sınıfım ve bundan başka [Andy Budd][] ve onun
+Sonra clearing için bir sınıfım ve bundan başka Andy Budd ve onun
 mükemmel kitabından öğrendiğim bazı şeyler var. Floatlan’mış
 elementlerin clear’lenmesi genel bir iştir. Bir de herhalde elementleri
 sağa veya sola float’lamak isteyeceksin bunları yapmak benim de hoşuma
@@ -245,7 +245,6 @@ Eğer başlangıç dosyalarımın bir kopyasını isterseniz [buradan alabilirsi
 
   [Tantek Celik]: http://tantek.com/log/2004/undohtml.css
   [tıklayınız.]: /dokumanlar/duzenlenen%20tantek.css
-  [Andy Budd]: http://www.shapeshed.com/journal/default_styles_for_css/www.andybudd.com/
   [Richard Rutter’un yaklaşımını]: http://clagnut.com/blog/348/
   [Andy Budd'un]: http://www.andybudd.com/
   [buradan alabilirsiniz.]: http://www.shapeshed.com/downloads/default_css.zip

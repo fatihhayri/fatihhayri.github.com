@@ -15,7 +15,7 @@ tags: [adobe, CSS, google, Javascript, Netwibes]
 -   Netvibes Türkiye hem de Türkçe açılmış [Link][3]
 -   CSS'in 10 yıllık gelişimi kronolojisi [Link][4]
 -   2007 'de web üzerinde ne gibi gelişmeler olabilir işte sizin için
-    derlenmiş bir makale [Link][5]
+    derlenmiş bir makale
 -   Adobe'dan CSS kodlayıcıları için mükemmel bir site CSS hatalarını ve
     çözümlerinin sunulduğu CSS kodlayıcıları için başucu sitesi
     [Link][6]
@@ -26,5 +26,4 @@ tags: [adobe, CSS, google, Javascript, Netwibes]
   [2]: http://www.alistapart.com/articles/makingcompactformsmoreaccessible
   [3]: http://www.netvibes.com/
   [4]: http://www.w3.org/Style/CSS10/
-  [5]: http://www.readwriteweb.com/archives/2007_web_predictions.php
   [6]: http://www.adobe.com/cfusion/communityengine/index.cfm?event=homepage&productId=1

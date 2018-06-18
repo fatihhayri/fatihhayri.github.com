@@ -18,7 +18,7 @@ tags: [CSS, facebook, gtalk, ie, jquery, lightbox, liste, silverlight, text-shad
     cep telefonuna uygulama yazmak ne kadar mantıklı. [Bağlantı][6]
 -   jQuery alt yapısını kullana facebook benzeri lightbox uygulaması.
     [Bağlantı][7]
--   CSS ipucu; body kenar çizgisi atama. [Bağlantı][8]
+-   CSS ipucu; body kenar çizgisi atama. 
 -   Gtalk ile web sitenizden anında sohbet scripti. [Bağlantı][9]
 -   IE8 de doctype geçişi. [Bağlantı][10]
 -   Yuvarlak kenarlı tab menü yapmak. 
@@ -40,8 +40,6 @@ tags: [CSS, facebook, gtalk, ie, jquery, lightbox, liste, silverlight, text-shad
   [6]: http://mobileopportunity.blogspot.com/2008/02/mobile-applications-rip.html
     "cepte program"
   [7]: http://famspam.com/facebox "facebook lightbox örneği"
-  [8]: http://css-tricks.com/css-trick-creating-a-body-border/
-    "body elemanınna kenar çizgisi atama"
   [9]: http://googlesystem.blogspot.com/2008/02/chat-with-your-sites-visitors-using.html
     "gtalk web sitemde"
   [10]: http://www.456bereastreet.com/archive/200802/doctype_switching_for_ie_8/

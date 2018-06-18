@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [futbol, futbol-anlayışı, küreşelleşme]
 ---
 
-![Futbol ve küreselleşme][]Bir oyun olarak gördüğümüz futbol'un ne kadar
+<span class="kitap-resmi">![Futbol ve küreselleşme][]</span> Bir oyun olarak gördüğümüz futbol'un ne kadar
 dikkate değer bir olgu olduğunu anlamamıza yarayan güzel bir kitap. Ben
 futbol için çok fazla para harcandığını düşünüyorum açıkçası, bu paralar
 ile neler yapılmaz ki. Bende seviyorum futbolu ilgili ile izliyorum, ama

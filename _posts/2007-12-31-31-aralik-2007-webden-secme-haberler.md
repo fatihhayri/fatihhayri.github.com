@@ -23,7 +23,7 @@ tags: [Firefox, Haberler, innerHTml, linq, opacity]
 -   javascript'e dair güzel notlar. [Bağlantı][7]
 -   mailing hakkında güzel bir yazı. [Bağlantı][8]
 -   Microsoft Vista'yı hızlandırmanın 5 ipucu. [Bağlantı][9]
--   Firefox 3(Beta)'ün 5 güzel yenliği. [Bağlantı][10]
+-   Firefox 3(Beta)'ün 5 güzel yenliği.
 
 
   [2]: http://www.eburhan.com/css-ile-hazirladigim-mesaj-kutulari/
@@ -39,6 +39,3 @@ tags: [Firefox, Haberler, innerHTml, linq, opacity]
   [8]: http://www.37signals.com/svn/posts/604-navigating-the-html-email-jungle
     "mailing"
   [9]: http://www.funtechtalk.com/5-ways-to-speed-up-windows-vista/
-    "Vista"
-  [10]: http://www.computerworld.com/action/article.do?command=viewArticleBasic&articleId=9054138
-    "Firefox 3 Beta"

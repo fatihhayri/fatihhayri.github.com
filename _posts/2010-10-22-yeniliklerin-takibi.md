@@ -278,7 +278,7 @@ olan yenilikleri takip etmek ve geri kalmamaktır. Ferruh Mavituna'nın
 -   [http://www.youtube.com/watch?v=SG6ehDYNCsk&feature=related][]
 -   [http://lifehacker.com/tag/google-reader/][]
 -   [http://www.lifehack.org/articles/technology/10-smart-hacks-for-google-reader.html][]
--   [http://www.makeuseof.com/tag/7-cool-google-reader-features-which-you-might-have-missed/][]
+-   http://www.makeuseof.com/tag/7-cool-google-reader-features-which-you-might-have-missed
 -   [http://gigaom.com/collaboration/5-tips-for-getting-the-most-out-of-google-reader/][]
 -   [http://googlesystem.blogspot.com/2010/01/track-page-changes-using-google-reader.html][]
 -   [http://lifehacker.com/233712/hack-attack-getting-good-with-google-reader][]
@@ -313,7 +313,6 @@ olan yenilikleri takip etmek ve geri kalmamaktır. Ferruh Mavituna'nın
   [http://www.youtube.com/watch?v=SG6ehDYNCsk&feature=related]: http://www.youtube.com/watch?v=SG6ehDYNCsk&feature=related
   [http://lifehacker.com/tag/google-reader/]: http://lifehacker.com/tag/google-reader/
   [http://www.lifehack.org/articles/technology/10-smart-hacks-for-google-reader.html]: http://www.lifehack.org/articles/technology/10-smart-hacks-for-google-reader.html
-  [http://www.makeuseof.com/tag/7-cool-google-reader-features-which-you-might-have-missed/]: http://www.makeuseof.com/tag/7-cool-google-reader-features-which-you-might-have-missed/
   [http://gigaom.com/collaboration/5-tips-for-getting-the-most-out-of-google-reader/]: http://gigaom.com/collaboration/5-tips-for-getting-the-most-out-of-google-reader/
   [http://googlesystem.blogspot.com/2010/01/track-page-changes-using-google-reader.html]: http://googlesystem.blogspot.com/2010/01/track-page-changes-using-google-reader.html
   [http://lifehacker.com/233712/hack-attack-getting-good-with-google-reader]: http://lifehacker.com/233712/hack-attack-getting-good-with-google-reader

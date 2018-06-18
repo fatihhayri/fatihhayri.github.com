@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Cezayir Savaşı, Fransa, Harkiler, Soykırım]
 ---
 
-![Bir Fransız yalanı][]Fransızıların Cezayir'de yaptıklarını farklı bir
+<span class="kitap-resmi">![Bir Fransız yalanı][]</span> Fransızıların Cezayir'de yaptıklarını farklı bir
 şekilde el alan yazar bizlere yapılan soykırımı tüm açıklığı ile
 anlatıyor. Birçok belge ve araştırmaya dayanan kitap Cumhurbaşkanını
 danışmanı bir Fransız yazar tarafından yazılmış olmasıda farklı bir

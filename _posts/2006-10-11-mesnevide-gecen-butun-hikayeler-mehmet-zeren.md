@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [hikayeler, hikayeleri, kitap, Kitaplar, Mehmet Zeren, Mesnevi, Mesnevi'de Geçen Bütün Hikayeler]
 ---
 
-![][100]Her okuya muhakkak bir şeyler katacak. Okuyanın dercesine göre
+<span class="kitap-resmi">![][100]</span> Her okuya muhakkak bir şeyler katacak. Okuyanın dercesine göre
 anlayacağı mükemmel bir kitap. Kaynağı sağlam. Hikayelerin
 özünü anlamak veya hikayeleri anlamak insana başka şeyler katıyor.
 Herkse tavsiye edilir. Arka Kapak:Tamamı altı cilt olan Mesnevi, yirmi
@@ -18,4 +18,4 @@ ve hikayede verilmek isteneni kavraması oldukça zordur.
 Uzunbir çalışmanın ürünü olan elinizdeki bu eser, aynı zamanda
 Mesnevi'deki hikayelerin tamamını içine alan ilk büyük çalışmadır...
 
-  [100]: /images/mevlana.thumbnail.jpg
+  [100]: /images/mevlana.jpg

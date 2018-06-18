@@ -8,14 +8,14 @@ tags: [Anlamlı web, ASP.NET, CSS, Haberler, safari, Visual-Studio, xslt, z-inde
 
 -   Hard drive hızının Visula Studio performansına etkisi. [Bağlantı][]
 -   CSS'de farklı tarayıcılar için yapılan düzeltmeleri kısa ipuçları
-    şeklinde anlatan güzel bir makale. [Bağlantı][1]
+    şeklinde anlatan güzel bir makale. 
 -   z-index çalışma prensipleri test edebileceğiniz güzel bir uygulama.
     [Bağlantı][2]
 -   Asp.net viewstate özelliği hakkında bir makale. [Bağlantı][3]
 -   Anlamlı kod yazımına dair güzel bir makale. [Bağlantı][4]
 -   65 mükemmel Flash dizaynı. [Bağlantı][5]
 -   Microsoft IE javascript üzerine yoğunlaşmış, bakalım firefox'un
-    hızını durdurabilecek bir numara çıkacak mı? [Bağlantı][6]
+    hızını durdurabilecek bir numara çıkacak mı? 
 -   Asp.net ile sitenizi izleyin ver kullanıcı bilgilerini toplayın.
     [Bağlantı][7]
 -   Asp.net ve Xslt kullanımını anlatan güzel bir makale. [Bağlantı][8]
@@ -29,7 +29,6 @@ tags: [Anlamlı web, ASP.NET, CSS, Haberler, safari, Visual-Studio, xslt, z-inde
 
   [Bağlantı]: http://weblogs.asp.net/scottgu/archive/2007/11/01/tip-trick-hard-drive-speed-and-visual-studio-performance.aspx
     "Bağlantı"
-  [1]: http://www.solidstategroup.com/page/1592 "css hack"
   [2]: http://tjkdesign.com/articles/z-index/teach_yourself_how_elements_stack.asp
     "z-index test"
   [3]: http://www.dotnetjohn.com/articles.aspx?articleid=247
@@ -38,8 +37,6 @@ tags: [Anlamlı web, ASP.NET, CSS, Haberler, safari, Visual-Studio, xslt, z-inde
     "anlamlı kod yaz"
   [5]: http://www.smashingmagazine.com/2007/10/30/65-excellent-flash-designs/
     "flash"
-  [6]: http://news.yahoo.com/s/infoworld/20071101/tc_infoworld/93067
-    "javascript"
   [7]: http://www.beansoftware.com/ASP.NET-Tutorials/Tracking-WebSite-Statistic.aspx
     "site izleme"
   [8]: http://aspalliance.com/1479_Using_XSLT_to_Transform_XML_Using_ASPNET

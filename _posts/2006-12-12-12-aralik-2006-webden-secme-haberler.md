@@ -17,7 +17,6 @@ tags: [Ajax, CSS, Firefox, form, google, ie, web2.0, yahoo, youtube]
 -   Javascript örneklerinin kategorilerine ayrılıp listelendiği güzel
     bir site
 -   2006'da yükselen web konuları hakkında bir makale ana başlıkları
-    [Link][2]
     a. RSS güçlenerek büyüdü
     b.Web 2.0 bir çıkış yaptı
     c. Büyük şirketlerin kapışma yılı olgu: Google bir çok yeni ürün
@@ -40,6 +39,5 @@ tags: [Ajax, CSS, Firefox, form, google, ie, web2.0, yahoo, youtube]
 
   [Link]: http://www.shapeshed.com/journal/overlapping_tabbed_navigation_in_css/
   [http://www.craythur.com]: http://www.craythur.com/
-  [2]: http://www.readwriteweb.com/archives/2006_web_technology_trends.php
   [3]: http://24ways.org/2006/showing-good-form
   [4]: http://www.techcrunch.com/2006/12/11/google-copies-ie7-promo-material-from-yahoo/

@@ -390,7 +390,7 @@ Kalın sağlıcakla
 -   [http://www.quirksmode.org/css/multicolumn.html][]
 -   [http://webdesignernotebook.com/css/remembering-the-css3-multi-column-layout-module/][]
 -   [http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/][]
--   [http://css-tricks.com/13372-seamless-responsive-photo-grid/][]
+-   http://css-tricks.com/13372-seamless-responsive-photo-grid
 -   [http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns][]
 -   [http://dev.opera.com/articles/view/css3-multi-column-layout/][]
 -   [http://www.my-html-codes.com/css3-multiple-columns][] (orta)
@@ -418,7 +418,6 @@ Kalın sağlıcakla
   [http://www.quirksmode.org/css/multicolumn.html]: http://www.quirksmode.org/css/multicolumn.html
   [http://webdesignernotebook.com/css/remembering-the-css3-multi-column-layout-module/]: http://webdesignernotebook.com/css/remembering-the-css3-multi-column-layout-module/
   [http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/]: http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/
-  [http://css-tricks.com/13372-seamless-responsive-photo-grid/]: http://css-tricks.com/13372-seamless-responsive-photo-grid/
   [http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns]: http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns
   [http://dev.opera.com/articles/view/css3-multi-column-layout/]: http://dev.opera.com/articles/view/css3-multi-column-layout/
   [http://www.my-html-codes.com/css3-multiple-columns]: http://www.my-html-codes.com/css3-multiple-columns

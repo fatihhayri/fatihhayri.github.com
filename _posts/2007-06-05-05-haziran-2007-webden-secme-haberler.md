@@ -15,7 +15,7 @@ tags: [CSS, google, Haberler, Javascript, microsoft, tooltip, XHTML]
     ileride tüm servislere yayılacakmış. [Link][3]
 -   Firefox'un kullananlar %25'e yükselmiş.[Link][5]
 -   Erişilebilir ve arama motorlarına göre optimize edilmiş sayfalar
-    hazırlamanın ipuçlarının anlatıldığı İngilizce bir makale. [Link][6]
+    hazırlamanın ipuçlarının anlatıldığı İngilizce bir makale.
 
 
   [Link]: http://www.microsoft.com/surface/ "Link"
@@ -24,5 +24,3 @@ tags: [CSS, google, Haberler, Javascript, microsoft, tooltip, XHTML]
     "Link"
   [3]: http://gears.google.com/ "Link"
   [5]: http://www.w3counter.com/globalstats.php?date=2007-05-20 "Link"
-  [6]: http://www.qodo.co.uk/blog/designing-accessible-websites-my-top-design-tips/
-    "Link"

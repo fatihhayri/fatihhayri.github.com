@@ -337,11 +337,11 @@ Sınırları zorlayan güzel örnekler
 
 -   [http://webtypography.net/toc/][]
 -   [http://www.sitepoint.com/print/anatomy-web-fonts][]
--   [http://www.markboulton.co.uk/journal/comments/five_simple_steps_to_better_typography/][]
+-   http://www.markboulton.co.uk/journal/comments/five_simple_steps_to_better_typography
 -   [http://www.digital-web.com/articles/css_typography/][] (css ve tipografi hakkında genel bir yazı)
 -   [http://www.digital-web.com/articles/css_101/][] (uygulamalı css ve tipografi)
 -   [http://www.fotografya.gen.tr/issue-6/hasip.html][İnternetteki Tipografi Sorunları ve GörselKirlenmeye Karşı Öneriler] (genel tipografi bilgisi Türkçe)
--   [http://www.webmonkey.com/design/fonts/tutorials/tutorial3.html][]
+-   http://www.webmonkey.com/design/fonts/tutorials/tutorial3.html
 -   [http://clagnut.com/search/index.php?q=typography][] (tipografi linkleri)
 -   [http://www.wpdfd.com/issues/23/typography/][] (genel bilgi)
 -   [http://www.3point7designs.com/blog/2006/09/20/advanced-typography-techniques-using-css/][] 
@@ -352,7 +352,7 @@ Sınırları zorlayan güzel örnekler
 -   [http://typetester.maratz.com/][]
 -   http://www.webstyleguide.com/type
 -   [http://www.sitepoint.com/blogs/2007/04/30/typography-baseline-rhythm-deciphered/][]
--   [http://ceyhunaksan.com/css-ve-tipografi/][]
+-   http://ceyhunaksan.com/css-ve-tipografi
 -   [http://topfunky.com/baseline-rhythm-calculator/][] (tipografi çevirimiçi aracı)
 -   [http://www.wpdfd.com/issues/23/typography/][]
 -   [http://www.peachpit.com/store/product.aspx?isbn=0321305256][]
@@ -374,10 +374,8 @@ Sınırları zorlayan güzel örnekler
   [3point7designs.com]: http://www.3point7designs.com/advanced_type.html
   [http://webtypography.net/toc/]: http://webtypography.net/toc/%20
   [http://www.sitepoint.com/print/anatomy-web-fonts]: http://www.sitepoint.com/print/anatomy-web-fonts
-  [http://www.markboulton.co.uk/journal/comments/five_simple_steps_to_better_typography/]: http://www.markboulton.co.uk/journal/comments/five_simple_steps_to_better_typography/
   [http://www.digital-web.com/articles/css_typography/]: http://www.digital-web.com/articles/css_typography/
   [http://www.digital-web.com/articles/css_101/]: http://www.digital-web.com/articles/css_101/
-  [http://www.webmonkey.com/design/fonts/tutorials/tutorial3.html]: http://www.webmonkey.com/design/fonts/tutorials/tutorial3.html
   [http://clagnut.com/search/index.php?q=typography]: http://clagnut.com/search/index.php?q=typography
   [http://www.wpdfd.com/issues/23/typography/]: http://www.wpdfd.com/issues/23/typography/
   [http://www.3point7designs.com/blog/2006/09/20/advanced-typography-techniques-using-css/]: http://www.3point7designs.com/blog/2006/09/20/advanced-typography-techniques-using-css/
@@ -387,6 +385,5 @@ Sınırları zorlayan güzel örnekler
   [http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/]: http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/
   [http://typetester.maratz.com/]: http://typetester.maratz.com/
   [http://www.sitepoint.com/blogs/2007/04/30/typography-baseline-rhythm-deciphered/]: http://www.sitepoint.com/blogs/2007/04/30/typography-baseline-rhythm-deciphered/
-  [http://ceyhunaksan.com/css-ve-tipografi/]: http://ceyhunaksan.com/css-ve-tipografi/
   [http://topfunky.com/baseline-rhythm-calculator/]: http://topfunky.com/baseline-rhythm-calculator/
   [http://www.peachpit.com/store/product.aspx?isbn=0321305256]: http://www.peachpit.com/store/product.aspx?isbn=0321305256

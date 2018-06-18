@@ -38,7 +38,7 @@ Tablo kullanımına benzese de herhangi bir fiziksel html elemanına(table, td v
 
 * [http://msdn.microsoft.com/en-us/library/ie/hh673533(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/ie/hh673533(v=vs.85).aspx)
 
-* [http://css-tricks.com/almanac/properties/g/grid/](http://css-tricks.com/almanac/properties/g/grid/)
+* http://css-tricks.com/almanac/properties/g/grid/
 
 * [http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html](http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html)
 

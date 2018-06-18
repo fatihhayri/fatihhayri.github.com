@@ -71,7 +71,7 @@ saldırgan site listesinden çıkarıyor.
 ## Kaynaklar
 
 -   [http://sites.google.com/site/webmasterhelpforum/en/faq-malware-and-hacked-sites](http://sites.google.com/site/webmasterhelpforum/en/faq-malware-and-hacked-sites)
--   [http://www.cogzidel.com/blog/2009/07/malware-affects-your-google-listing-google-webmaster-tools-will-save-you/](http://www.cogzidel.com/blog/2009/07/malware-affects-your-google-listing-google-webmaster-tools-will-save-you/)
+-   http://www.cogzidel.com/blog/2009/07/malware-affects-your-google-listing-google-webmaster-tools-will-save-you/
 
   [iframe_kodu]: /images/iframe_kodu1.gif
     "iframe_kodu"

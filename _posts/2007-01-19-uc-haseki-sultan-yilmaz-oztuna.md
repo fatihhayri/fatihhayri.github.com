@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![Üç Haseki Sultan][]Osmanlı Develetine farklı açıdan bakan bu kitap
+<span class="kitap-resmi">![Üç Haseki Sultan][]</span> Osmanlı Develetine farklı açıdan bakan bu kitap
 gayet akıcı anlatımı ile bize güzel bilgiler veriyor. Kitabı nasıl
 özetleyeceğimi tam anlat isterken kitabın son sayfasındaki aşağıdaki
 alıntıyı yapmam yeterli olur diye düşündüm. "Zira kadın tesiri, Türk

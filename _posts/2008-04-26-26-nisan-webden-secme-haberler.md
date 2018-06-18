@@ -11,7 +11,7 @@ tags: [Ajax, Firefox, jquery, lightbox, WordPress]
 -   Javascript kodu yazanlar için jquery dersi. [Bağlantı][1]
 -   50'den fazla anlatımlı CSS kod örneği. [Bağlantı][2]
 -   jQuery ile Metin girdi alanların şablonlarını belirlemek. Güzel bir
-    örnek [Bağlantı][3]
+    örnek 
 -   Lightbox uygulamalarının karşılaştırma listesi. [Bağlantı][4]
 -   Firefox 3'de favoriler kısmı yenilenmiş.
 -   Smashing Magazine'den web'de yazı hakkında güzel bir makale.
@@ -29,8 +29,6 @@ tags: [Ajax, Firefox, jquery, lightbox, WordPress]
   [1]: http://simonwillison.net/2007/Aug/15/jquery/ "jquery dersi"
   [2]: http://www.noupe.com/css/using-css-to-do-anything-50-creative-examples-and-tutorials.html
     "css kodları"
-  [3]: http://digitalbush.com/projects/masked-input-plugin
-    "metin girdi alanların şablonları"
   [4]: http://planetozh.com/projects/lightbox-clones/ "lighbox"
   [6]: http://www.smashingmagazine.com/2008/04/23/5-principles-and-ideas-of-setting-type-on-the-web/
     "web metinleri"

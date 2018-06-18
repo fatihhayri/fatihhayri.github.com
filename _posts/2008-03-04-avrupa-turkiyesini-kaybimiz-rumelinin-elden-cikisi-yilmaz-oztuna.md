@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [93 harbi, Avrupa, Avrupa Türkiyesi'ni Kaybımız  Rumeli'nin Elden Çıkışı, balkanlar, osmanlı, rumeli, Türkiye, Yılmaz Öztuna]
 ---
 
-![Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı - Yılmaz Öztuna][]Balkan savaşları ve ibretlerle dolu zamanları çok iyi
+<span class="kitap-resmi">![Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı - Yılmaz Öztuna][]</span> Balkan savaşları ve ibretlerle dolu zamanları çok iyi
 irdeleyen kitap bize vatan toprağının elimizden nasıl hatalar ve
 ihanetle elimizden çıktığını gösteriyor. Her nekadar bazı iyiniyetli
 insanlar bişeyler yapmak istesede ülke idare temek için sadece iyi

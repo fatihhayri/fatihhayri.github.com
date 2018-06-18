@@ -10,7 +10,7 @@ tags: [CSS, css3, ie8, jquery, zoque]
     daha kolay iletişim, daha az hafıza kullanım oranı ve Acid2
     testinden geçmiş. [Bağlantı][]
 -   CSS3 ile araç ipucu yapmak. [Bağlantı][1]
--   10 adet CSS düzeltme kodu. Güzel bir derleme. [Bağlantı][2]
+-   10 adet CSS düzeltme kodu. Güzel bir derleme.
 -   10 adet jquery ile yapılmış güzel örnekler ve nasıl yapıldığını
     anlatan güzel bir çalışma. [Bağlantı][3]
 -   Çıktı alırken linklerde yaşana link kaynağının görüntülenmemesi ve
@@ -28,8 +28,6 @@ tags: [CSS, css3, ie8, jquery, zoque]
   [Bağlantı]: http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm
     "ie 8"
   [1]: http://www.css3.info/tooltips-with-css3/ "araç ipucu css3"
-  [2]: http://stylizedweb.com/2008/02/14/10-best-css-hacks/
-    "css ipuçları"
   [3]: http://www.webdesignerwall.com/tutorials/jquery-tutorials-for-designers/
     "10 jquery"
   [4]: http://css.dzone.com/news/optimize-your-links-print-usin

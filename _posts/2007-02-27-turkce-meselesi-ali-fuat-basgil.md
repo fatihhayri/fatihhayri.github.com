@@ -5,7 +5,7 @@ Date: 2007-02-27 10:20
 Category: Kitaplar
 ---
 
-![turkce_meseli][]1940'lı yıllarda Türkçeyi sadeleştirme amaçlı
+<span class="kitap-resmi">![turkce_meseli][]</span> 1940'lı yıllarda Türkçeyi sadeleştirme amaçlı
 çalışmaları ve Ord. Prof. Ali Fuat Başgil'in bu çalışmlara karşı yazdığı
 makaleleri kitapta yer alıyor. Hala geçerliliğini koruyan sözleri ile
 kitap okumaya değer. **Kitaptan:**Bir memleketin milli dili o memleketin

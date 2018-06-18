@@ -36,11 +36,10 @@ document.getElementById("Dugme").parentNode.id; alert("Üst elemanı:
 
 ## Kaynaklar
 
--   [http://www.w3schools.com/htmldom/dom_nodetree.asp][]
+-   http://www.w3schools.com/htmldom/dom_nodetree.asp
 -   [http://www.java2s.com/Code/JavaScriptReference/Javascript-Properties/parentNodeSyntaxandNote.htm][]
 -   http://ronsguide.com/js/parentnode
 
 
   [tıklayınız.]: /dokumanlar/parentNode.htm
-  [http://www.w3schools.com/htmldom/dom_nodetree.asp]: http://www.w3schools.com/htmldom/dom_nodetree.asp
   [http://www.java2s.com/Code/JavaScriptReference/Javascript-Properties/parentNodeSyntaxandNote.htm]: http://www.java2s.com/Code/JavaScriptReference/Javascript-Properties/parentNodeSyntaxandNote.htm

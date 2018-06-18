@@ -119,7 +119,7 @@ Kalın sağlıcakla
 -   [http://www.quirksmode.org/css/background.html][]
 -   http://webdesign.about.com/od/styleproperties/p/blspbgsize.htm
 -   [http://www.css3.info/liquid-faux-columns-with-background-size/][]
--   [http://css-tricks.com/3458-perfect-full-page-background-image/][]
+-   [http://css-tricks.com/perfect-full-page-background-image/][]
 -   [http://www.cssplay.co.uk/boxes/css3-background.html][] (örnek)
 -   [http://www.alistapart.com/articles/supersize-that-background-please/][]
 -   [http://whereswalden.com/files/mozilla/background-size/more-examples.html][]
@@ -138,7 +138,7 @@ Kalın sağlıcakla
   [http://www.w3schools.com/cssref/css3_pr_background-size.asp]: http://www.w3schools.com/cssref/css3_pr_background-size.asp
   [http://www.quirksmode.org/css/background.html]: http://www.quirksmode.org/css/background.html
   [http://www.css3.info/liquid-faux-columns-with-background-size/]: http://www.css3.info/liquid-faux-columns-with-background-size/
-  [http://css-tricks.com/3458-perfect-full-page-background-image/]: http://css-tricks.com/3458-perfect-full-page-background-image/
+  [http://css-tricks.com/perfect-full-page-background-image/]: http://css-tricks.com/perfect-full-page-background-image/
   [http://www.cssplay.co.uk/boxes/css3-background.html]: http://www.cssplay.co.uk/boxes/css3-background.html
   [http://www.alistapart.com/articles/supersize-that-background-please/]: http://www.alistapart.com/articles/supersize-that-background-please/
   [http://dev.w3.org/csswg/css3-page/img_scale.png]: http://dev.w3.org/csswg/css3-page/img_scale.png

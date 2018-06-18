@@ -10,7 +10,7 @@ tags: [CSS, google, Haberler, html5, ie, Javascript, SmashMagazine, sosyal-imlem
     [Bağlantı][]
 -   SmashMagazine neredeyse tüm konularını buraya taşıyorum. Bunu hak
     ediyorlar bence. Bu seferde sitelerdeki üst alandaki resimleri
-    irdelemişler. [Bağlantı][1]
+    irdelemişler.
 -   MSNBC yeni sitesi üzerine bir makale. [Bağlantı][2]
 -   Mehmet Doğan günlüğüne son yazısını yazmış. Üzülmemek elde değil :(
     [Bağlantı][3]
@@ -30,8 +30,6 @@ tags: [CSS, google, Haberler, html5, ie, Javascript, SmashMagazine, sosyal-imlem
 
   [Bağlantı]: http://tech.propeller.com/story/2007/11/11/google-shutting-down-pagerank-stcfx-web-everything
     "Bağlantı"
-  [1]: http://www.smashingmagazine.com/2007/11/11/smashing-magazine-header-graphics-contest/
-    "Üst Resimleri"
   [2]: http://www.mikeindustries.com/blog/archive/2007/11/msnbc-redesigns-taste-the-rainbow
     "Bağlantı"
   [3]: http://www.altiustutasarim.com/arsiv/2007/11/son_yazi.php

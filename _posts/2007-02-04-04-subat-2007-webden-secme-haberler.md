@@ -12,7 +12,7 @@ tags: [Firefox, google-translate, gTrans, html, internet, Javascript, web, XHTML
 -   Javascript ile sayfalarımıza ses eklemek, oynatmak ve durdurmak
     nasıl olur.
 -   Daha önceki haberlerde bahsettiğimiz Prototype 1.5 javascript
-    kütüphanesinin dokümantasyonunu hazırlamışlar(pdf). [Link][2]
+    kütüphanesinin dokümantasyonunu hazırlamışlar(pdf).
 -   Firefox'unuzu hızlandırmak mı istiyorsunuz. İşte size ekran
     görüntüleri ile anlatılmığı güzel bir makale [Link][3]
 -   Etkin bir Web Master olmanın 10 yolunu anlatan güzel bir makale
@@ -25,7 +25,6 @@ tags: [Firefox, google-translate, gTrans, html, internet, Javascript, web, XHTML
 
 
   [Link]: http://feeds.feedburner.com/%7Er/mdogan/%7E3/84930126/enflasyon_ve_trafikten_sonra_s.php
-  [2]: http://beta.bigmedium.com/projects/prototype-pdf/ "Link"
   [3]: http://www.ubuntugeek.com/speed-up-firefox-web-browser.html
   [5]: http://wiki.whatwg.org/wiki/HtmlVsXhtml "Link"
   [6]: http://mcrenox.com.ar/gtrans/ "Link"

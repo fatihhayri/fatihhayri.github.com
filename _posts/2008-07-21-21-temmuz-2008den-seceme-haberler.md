@@ -9,7 +9,7 @@ tags: [firebug, Firefox, HTML Form, internet explorer, jquery, saydam png, sorun
 -   jQuery'e başlamak için 15 adet makale. [Bağlantı][]
 -   İnsanlar hala niçin Internet Explorer 6 kullanır. [Bağlantı][1]
 -   jQuery ile satıriçi grafik uygulaması yapmak. [Bağlantı][2]
--   Mükemmel bir WordPress teması hemde ücretsiz. [Bağlantı][3]
+-   Mükemmel bir WordPress teması hemde ücretsiz.
 -   Gelecekte arama nasıl olacak, yakın gelecek. [Bağlantı][4]
 -   Firebug adlı FireFox Eklentisi - webdeneyimleri.com Kırık bağlantı.
 -   IE PNG Fix 2.0 Alfa 2 ile artık ie6 da ardalana tekrarı ve konumu
@@ -22,7 +22,7 @@ tags: [firebug, Firefox, HTML Form, internet explorer, jquery, saydam png, sorun
 -   HTML form kullanımları için güzel ipuçları. [Bağlantı][8]
 -   5 adet FireBug ekletisi. Eklentinin eklentisi olurmu demeyin.
     Kırık bağlantı.
--   Garaj kapısı açılışı gibi menü yapmak. [Bağlantı][10]
+-   Garaj kapısı açılışı gibi menü yapmak. 
 -   jQuery ipucu: metin dosyasından veri almak.
 
 
@@ -31,11 +31,7 @@ tags: [firebug, Firefox, HTML Form, internet explorer, jquery, saydam png, sorun
   [1]: http://css-tricks.com/why-people-still-use-ie-6/ "ie6"
   [2]: http://omnipotent.net/jquery.sparkline/#examples
     "satıriçi grafik"
-  [3]: http://www.smashingmagazine.com/2008/07/16/wordpress-fun-a-free-wordpress-theme/
-    "ücretsiz wordpress"
   [4]: http://www.techcrunch.com/2008/07/16/is-this-the-future-of-search/
   [6]: http://www.twinhelix.com/css/iepngfix/ "ie png fix"
   [8]: http://woork.blogspot.com/2008/07/useful-tips-to-enrich-your-html-forms.html
     "Form ipuçları"
-  [10]: http://css-tricks.com/garage-door-style-menu-using-animated-background-images-with-jquery/
-    "Garaj kapısı açılışı"

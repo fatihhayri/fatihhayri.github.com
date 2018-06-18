@@ -20,7 +20,6 @@ tags: [css3.0, firebug, Haberler, table, tipografi, Visual-Studio, web2.0, xslt]
     için bu siteye uğrayın.
 -   XSLT ve CSS işlevselliği hakkında bir makale. [Link][8]
 -   Web programcılarının bir kenara not etmesi gereken 125 kod örneği.
-    [Link][9]
 -   Firebug'ın bilmediğimiz 10 özelliği.
 -   5000 adet web2.0 logosunu 5 dakikada görmeye ne dersiniz. [Link][11]
 
@@ -37,7 +36,5 @@ tags: [css3.0, firebug, Haberler, table, tipografi, Visual-Studio, web2.0, xslt]
   [5]: http://ilovetypography.com/ "tipografi"
   [8]: http://itc-382.blogspot.com/2007/08/magic-of-xslt.html
     "XSLT ve CSS"
-  [9]: http://www.paulspoerry.com/index.php/2007/05/18/125-code-snippets-for-web-designers/
-    "saklanası kodlar"
   [11]: http://www.youtube.com/watch?v=Hs_xnyJtWEc&eurl=http%3A%2F%2Fwww%2Egoogle%2Ecom%2Freader%2Fview%2F
     "web2.0 logoları"

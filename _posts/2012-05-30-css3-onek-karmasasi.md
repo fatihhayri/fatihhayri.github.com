@@ -182,7 +182,7 @@ Zamanla göreceği bakalım neler olacak.
 -   [http://www.alistapart.com/articles/prefix-or-posthack/][]
 -   [http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/][]
 -   [http://snook.ca/archives/html_and_css/not-supported][]
--   [http://css-tricks.com/7361-ordering-css3-properties/][]
+-   http://css-tricks.com/7361-ordering-css3-properties
 -   [http://coding.smashingmagazine.com/2011/10/12/prefixfree-break-free-from-css-prefix-hell/][] (çözüm)
 -   [http://www.sitepoint.com/w3c-css-webkit-prefix-crisis][]
 -   [http://lea.verou.me/2011/11/vendor-prefixes-have-failed-whats-next/][]
@@ -213,7 +213,6 @@ Zamanla göreceği bakalım neler olacak.
   [http://www.alistapart.com/articles/prefix-or-posthack/]: http://www.alistapart.com/articles/prefix-or-posthack/
   [http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/]: http://www.webmonkey.com/2010/09/firefox-4-to-drop-some-css-vendor-prefixes/
   [http://snook.ca/archives/html_and_css/not-supported]: http://snook.ca/archives/html_and_css/not-supported
-  [http://css-tricks.com/7361-ordering-css3-properties/]: http://css-tricks.com/7361-ordering-css3-properties/
   [http://coding.smashingmagazine.com/2011/10/12/prefixfree-break-free-from-css-prefix-hell/]: http://coding.smashingmagazine.com/2011/10/12/prefixfree-break-free-from-css-prefix-hell/
   [http://www.sitepoint.com/w3c-css-webkit-prefix-crisis]: http://www.sitepoint.com/w3c-css-webkit-prefix-crisis
   [http://lea.verou.me/2011/11/vendor-prefixes-have-failed-whats-next/]: http://lea.verou.me/2011/11/vendor-prefixes-have-failed-whats-next/

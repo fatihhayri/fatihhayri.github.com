@@ -14,7 +14,6 @@ tags: [ajax-sayfalama, arama-motoru, Chris Coyier, Etkinlik, float, FriendFeed, 
 -   Gooogle Döküman aracına formlar ve resim galerisi bölümü eklemiş.
     [Bağlantı][5]
 -   SmashingMagazine'de bahsedilen site güzel bir jquery uygulaması.
-    [Bağlantı][6]
 -   Javascript 6 adet string fonksiyonu. [Bağlantı][7]
 -   Webciler için 25 adet güzel uygulama. [Bağlantı][8]
 -   Volkan Görgülü xhtml ve css kodlamayı güzel bir video ders ile
@@ -39,7 +38,6 @@ tags: [ajax-sayfalama, arama-motoru, Chris Coyier, Etkinlik, float, FriendFeed, 
     "5 önemli çözüm önerisi"
   [5]: http://googlesystem.blogspot.com/2008/08/photo-albums-in-google-docs.html
     "Google dökümanlar"
-  [6]: http://www.arcinspirations.com/kobe/ "güzel site"
   [7]: http://blog.trendics.com/development/javascript/6-essential-javascript-string-functions/
     "string fonksiyonları"
   [8]: http://woork.blogspot.com/2008/08/25-awesome-tutorials-for-web-designers.html

@@ -59,7 +59,7 @@ girmeyin ama hızda bir atış olduğu hissediliyor.
 ## Kaynak
 
 -   [http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html][]
--   [http://www.electrictoolbox.com/google-analytics-asynchronous-tracking/][]
+-   http://www.electrictoolbox.com/google-analytics-asynchronous-tracking
 -   [http://davidwalsh.name/async-google-analytics][]
 -   http://webmasterformat.com/news/google-analytics-asynchronous-tracking
 -   http://www.webresourcesdepot.com/tracking-new-rss-subscribers-with-google-analytics-to-understand-them-better
@@ -69,12 +69,10 @@ girmeyin ama hızda bir atış olduğu hissediliyor.
 -   [http://www.stevesouders.com/blog/2009/12/01/google-analytics-goes-async/][]
 -   [http://googlesystem.blogspot.com/2009/12/optimized-google-analytics-code.html][]
 -   [http://blog.chartbeat.com/2009/12/04/google-analytics-goes-asynchronous/][]
--   [http://www.further.co.uk/blog/New-Google-Analytics-Asynchronous-Tracking-Code-241][]
+-   http://www.further.co.uk/blog/New-Google-Analytics-Asynchronous-Tracking-Code-241
 
   [http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html]: http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html
     "http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html"
-  [http://www.electrictoolbox.com/google-analytics-asynchronous-tracking/]: http://www.electrictoolbox.com/google-analytics-asynchronous-tracking/
-    "http://www.electrictoolbox.com/google-analytics-asynchronous-tracking/"
   [http://davidwalsh.name/async-google-analytics]: http://davidwalsh.name/async-google-analytics
     "http://davidwalsh.name/async-google-analytics"
   [http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support]: http://ajaxian.com/archives/google-analytics-unblocks-the-web-w-async-support
@@ -85,6 +83,4 @@ girmeyin ama hızda bir atış olduğu hissediliyor.
     "http://googlesystem.blogspot.com/2009/12/optimized-google-analytics-code.html"
   [http://blog.chartbeat.com/2009/12/04/google-analytics-goes-asynchronous/]: http://blog.chartbeat.com/2009/12/04/google-analytics-goes-asynchronous/
     "http://blog.chartbeat.com/2009/12/04/google-analytics-goes-asynchronous/"
-  [http://www.further.co.uk/blog/New-Google-Analytics-Asynchronous-Tracking-Code-241]: http://www.further.co.uk/blog/New-Google-Analytics-Asynchronous-Tracking-Code-241
-    "http://www.further.co.uk/blog/New-Google-Analytics-Asynchronous-Tracking-Code-241"
     "http://www.highposition.net/article/google-analytics-launches-asynchronous-tracking-code-for-greater-speed/4561763"

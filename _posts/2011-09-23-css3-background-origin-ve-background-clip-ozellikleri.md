@@ -202,13 +202,13 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.
 -   [http://www.quirksmode.org/css/background.html][]
 -   [http://www.w3schools.com/cssref/css3_pr_background-clip.asp][]
 -   [http://www.standardista.com/css3/css3-background-properties/][]
--   [http://css-tricks.com/7423-transparent-borders-with-background-clip/][]
+-   http://css-tricks.com/7423-transparent-borders-with-background-clip
 -   [https://developer.mozilla.org/en/CSS/background-clip][]
 -   [https://developer.mozilla.org/en/CSS/background-origin][]
 -   https://dev.opera.com/articles/css3-border-background-boxshadow/
 -   [http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/][]
 -   [http://www.css3.info/webkit-introduces-background-cliptext/][]
--   [http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/][]
+-   http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face
 -   [http://www.webkit.org/blog/164/background-clip-text/][] (text)
 -   [http://www.impressivewebs.com/background-clip-css3/][] (güzel)
 -   [http://css-class.com/test/css/backgrounds/background-origin1.htm][]
@@ -223,12 +223,10 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.
   [http://www.quirksmode.org/css/background.html]: http://www.quirksmode.org/css/background.html
   [http://www.w3schools.com/cssref/css3_pr_background-clip.asp]: http://www.w3schools.com/cssref/css3_pr_background-clip.asp
   [http://www.standardista.com/css3/css3-background-properties/]: http://www.standardista.com/css3/css3-background-properties/
-  [http://css-tricks.com/7423-transparent-borders-with-background-clip/]: http://css-tricks.com/7423-transparent-borders-with-background-clip/
   [https://developer.mozilla.org/en/CSS/background-clip]: https://developer.mozilla.org/en/CSS/background-clip
   [https://developer.mozilla.org/en/CSS/background-origin]: https://developer.mozilla.org/en/CSS/background-origin
   [http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/]: http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/
   [http://www.css3.info/webkit-introduces-background-cliptext/]: http://www.css3.info/webkit-introduces-background-cliptext/
-  [http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/]: http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face/
   [http://www.webkit.org/blog/164/background-clip-text/]: http://www.webkit.org/blog/164/background-clip-text/
   [http://www.impressivewebs.com/background-clip-css3/]: http://www.impressivewebs.com/background-clip-css3/
   [http://css-class.com/test/css/backgrounds/background-origin1.htm]: http://css-class.com/test/css/backgrounds/background-origin1.htm

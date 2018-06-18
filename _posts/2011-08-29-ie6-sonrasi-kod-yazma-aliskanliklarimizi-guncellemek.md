@@ -122,7 +122,7 @@ görüldüğü gibi Form elemanlarını ayırmak zor oluyordu. Normal bir input
 tanımı yapmak istediğimizde her özelliği için ayrı class yazmak zorunda
 kalıyorduk. Özellik değeri seçicisi ile artık ayrımı yukarıdaki gibi
 yapmak çok kolay.
-[http://dev.opera.com/articles/view/styling-forms-with-attribute-selectors/][]
+http://dev.opera.com/articles/view/styling-forms-with-attribute-selectors
 yazısında bu özelliğin bize ne kadar avantaj sağladığını görüyoruz.
 
 **Kısmi Özellik Değeri Seçicisi**
@@ -538,7 +538,7 @@ ie6 öldü.
 -   [http://www.w3counter.com/trends][]
 -   [http://www.dedoimedo.com/computers/internet-explorer-6-retire.html][]
 -   [http://garmahis.com/tools/ie6-update-warning/][]
--   [http://css-tricks.com/482-ie-css-bugs-thatll-get-you-every-time/][]
+-   http://css-tricks.com/482-ie-css-bugs-thatll-get-you-every-time
 -   [http://technologytales.com/2007/06/22/ie6-and-javascript-performance/][](js)
 -   [http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html][]
 -   [http://ajaxian.com/archives/ie7-twice-as-performant-as-ie6-but-half-as-slow-as-ff-15][]
@@ -548,7 +548,6 @@ ie6 öldü.
   [Internet Explorer 6 için saydam PNG desteği]: http://www.fatihhayrioglu.com/internet-explorer-6-icin-saydam-png-destegi/
   [100]: /images/saydampng_resim.gif
   [Bu konuyu]: http://www.fatihhayrioglu.com/ozellik-secicileriattribute-selectors/
-  [http://dev.opera.com/articles/view/styling-forms-with-attribute-selectors/]: http://dev.opera.com/articles/view/styling-forms-with-attribute-selectors/
   [Box Model Sorunu ve Çözümü]: http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
   [Sabit Konumlandırma (Postion:fixed)]: http://www.fatihhayrioglu.com/sabit-konumlandirma-postionfixed/
   [IE’de Hata Ayıklamak için şartlı Yorumlar Kullanmak]: http://www.fatihhayrioglu.com/?p=236

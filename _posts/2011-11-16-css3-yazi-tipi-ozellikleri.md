@@ -126,7 +126,7 @@ Kalın sağlıcakla
 
 -   [http://www.w3.org/TR/css3-fonts/][]
 -   [http://www.css3.info/more-type-control-with-css3-fonts/][]
--   [http://www.quackit.com/css/properties/css_font-size-adjust.cfm][]
+-   http://www.quackit.com/css/properties/css_font-size-adjust.cfm
 -   [http://webdesignernotebook.com/css/the-little-known-font-size-adjust-css3-property/][]
 -   http://www.fonttester.com/help/css_property/font-size-adjust.html
 -   [http://www.blackinci.com/css/15-css-font-ozellikleri.html#adjust][]
@@ -161,7 +161,6 @@ Kalın sağlıcakla
   [1]: https://lh4.googleusercontent.com/aMIBse-JRBvgYWQD0dMw5EFWhV4HCBeSYKeLfJS-6UMGSdHv0YsQiIA60djkovRsZ0dK8zLYak1yxEt6LdGHv4WGE2cagkiMqBlmrPdT1c_zyURGC0g
   [http://www.w3.org/TR/css3-fonts/]: http://www.w3.org/TR/css3-fonts/
   [http://www.css3.info/more-type-control-with-css3-fonts/]: http://www.css3.info/more-type-control-with-css3-fonts/
-  [http://www.quackit.com/css/properties/css_font-size-adjust.cfm]: http://www.quackit.com/css/properties/css_font-size-adjust.cfm
   [http://webdesignernotebook.com/css/the-little-known-font-size-adjust-css3-property/]: http://webdesignernotebook.com/css/the-little-known-font-size-adjust-css3-property/
   [http://www.blackinci.com/css/15-css-font-ozellikleri.html#adjust]: http://www.blackinci.com/css/15-css-font-ozellikleri.html#adjust
   [https://developer.mozilla.org/samples/cssref/font-size-adjust.html]: https://developer.mozilla.org/samples/cssref/font-size-adjust.html

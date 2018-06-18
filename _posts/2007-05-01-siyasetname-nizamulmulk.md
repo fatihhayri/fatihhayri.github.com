@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![siyasetname.jpg][]Selçuklu vezirlerinden Nizamülmülk'ün o devirde
+<span class="kitap-resmi">![siyasetname.jpg][]</span> Selçuklu vezirlerinden Nizamülmülk'ün o devirde
 Padişahlar için yazığı bu kitap, bu gün bile işlevselliğini koruması bu
 kitabı klasikler arasına sokmuştur. Öneriler, hikmetli sözler,
 hikayerler ve kısaslar ile güzel bir bilgi kaynağı. Ayrıntılı bilgi için

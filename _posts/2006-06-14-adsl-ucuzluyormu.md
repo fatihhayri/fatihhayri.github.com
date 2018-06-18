@@ -6,6 +6,4 @@ Category: Haberler
 
 Türk Telekom'dan yapılan açıklmada ADSL hatlarının hızlarının
 arttırlması veya ucuzlatılmasının düşünüldüğü berlirtildi Ayrıntı için
-[http://www.haberx.com/n/261279/adsl-ucuzlayacak.htm][]
-
-  [http://www.haberx.com/n/261279/adsl-ucuzlayacak.htm]: http://www.haberx.com/n/261279/adsl-ucuzlayacak.htm
+http://www.haberx.com/n/261279/adsl-ucuzlayacak.htm

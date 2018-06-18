@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [ab, Avrupa, Avrupa Birliği, Batı düşüncesi, Batının Oluşumu, Christopher DAWSON, roma]
 ---
 
-![Batının Oluşumu - Christopher DAWSON][]Batının oluşumunu incelemek
+<span class="kitap-resmi">![Batının Oluşumu - Christopher DAWSON][]</span> Batının oluşumunu incelemek
 AB'ye girmeyi planladığımız şu günlerde biraz daha önem kazanmaktadır.
 AB'ni oluşturan unsurlar ve kökenlerini anlatan güzel bir kitap. Batıyı
 oluşturan etkenleri incelerken batının daha önce birliği sağladığı veya

@@ -21,7 +21,7 @@ oldu. Neyse biz haberlere bir göz atalım.
 -   En kolay şekilde daha kolay kullanılan formlar nasıl yaparız. İşte
     makale [Link][4]
 -   Amerikanın en çok tıklana sitelerini listesini görmek için tıklayın
-    . [Link][5]
+    .
 -   Web2.0 hakkında son bir yazı olduğunu iddia ediyor. [Link][6]
 -   CSS ile nasıl sexy buton yapılacağını anlatan bir makale [Link][7]
 -   Firefox bu işin peşini pek bırakcak gibi değil. Firefox 3.0 Alfa1
@@ -40,7 +40,6 @@ oldu. Neyse biz haberlere bir göz atalım.
   [2]: http://exanimo.com/css/vertical-centering-with-a-floated-shim
   [3]: http://www.3point7designs.com/advanced_type.html
   [4]: http://www.netmag.co.uk/zine/home/designing-simple-accessible-forms
-  [5]: http://www.readwriteweb.com/archives/top_20_websites_us_oct06.php
   [6]: http://www.profy.com/2006/12/07/what-is-web-20-once-and-for-all/
   [7]: http://www.nublue.co.uk/blog/css-hover-button/
   [8]: http://releases.mozilla.org/pub/mozilla.org/firefox/releases/granparadiso/alpha1/

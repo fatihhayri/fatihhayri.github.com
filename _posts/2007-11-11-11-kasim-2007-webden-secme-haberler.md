@@ -16,7 +16,7 @@ tags: [ASP.NET, CSS, Etiket bulutu, Firefox, Haberler, ie, menü, mootools, payp
 -   Asp.net projelerinizde tablo yerine div kullanmayı anlatan bir
     makale, ayrıca makalede div ile kodlamanın kazandırdığı performansı
     da gösterilmiş. [Bağlantı][5]
--   Etiket bulutu örnekleri. [Bağlantı][6]
+-   Etiket bulutu örnekleri. 
 -   IE6'daki saydam PNG'lerdeki sorunu çözmek için bir metod
 -   Firefox 3 betası çıktı ilk izlenimler yayınlanmaya başlandı bile.
     [Bağlantı][8]
@@ -35,8 +35,6 @@ tags: [ASP.NET, CSS, Etiket bulutu, Firefox, Haberler, ie, menü, mootools, payp
   [3]: http://moomonth.com/ "Bağlantı"
   [4]: http://artypapers.com/csshelppile/pcdtr/ "Bağlantı"
   [5]: http://www.codeguru.com/csharp/.net/net_asp/miscellaneous/article.php/c14309/
-    "Bağlantı"
-  [6]: http://www.smashingmagazine.com/2007/11/07/tag-clouds-gallery-examples-and-good-practices/
     "Bağlantı"
   [8]: http://lifehacker.com/software/screenshot-tour/first-look-at-firefox-30-319968.php
     "Bağlantı"

@@ -9,14 +9,13 @@ tags: [clearfix, e-posta, google reader, Haberler, web-form]
 -   CSS ve Javascript birleşimi ile oluşturulmuş bir css kütüphanesi
     CSS.js Programlanabilir CSS, tarayıcı uyumsuzluklarının giderilmesi
     ve özel CSS özelliklerinin kullanımına izin vermesi gibi güzel
-    özellikleri barındırıyor. [Bağlantı][]
+    özellikleri barındırıyor.
 -   Nintendo yeni sitesini açmış. Siteye Dojo, Mootools vd. javascript
     kütüphaneler ile güzel bir işlevsellik kazandırılmış. [Bağlantı][1]
 -   web tasarımcılarına öneriler, bir sunum tadında hazırlanmış güzel
     site. [Bağlantı][2]
 -   Html E-postalar hakkında güzel ve geniş bir bilgi. [Bağlantı][3]
 -   clearfix metodundan kaynaklanan boşluk sorunu ve çözüm önerisi.
-    [Bağlantı][4]
 -   Html e-posta hazırlarken CSS kullanımında neler dikkat etmeliyiz.
     [Bağlantı][5]
 -   Web standartlarında mail hazırlamak hakkında bir site. [Bağlantı][6]
@@ -28,14 +27,11 @@ tags: [clearfix, e-posta, google reader, Haberler, web-form]
     [Bağlantı][10]
 -   CSS'in sorunları üzerine yazılmış bir makale. [Bağlantı][11]
 
-  [Bağlantı]: http://revnode.com/oss/css/ "Dinamik CSS"
   [1]: http://www.nintendo.com/games/guide#qhardware=Wii&qesrbRating=&qplay=&qgenre=&qrelease=&
     "nintendo sitesi"
   [2]: http://www.interface-research.com/ "web tasarımı"
   [3]: http://css-tricks.com/more-information-regarding-html-emails/
     "mailing"
-  [4]: http://www.nclud.com/sketchbook/mind-the-gap-clearfix-is-clearly-broken
-    "clearfix"
   [5]: http://www.thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered
     "mailing ve css"
   [6]: http://www.email-standards.org/ "email-standards.org"

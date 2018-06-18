@@ -27,7 +27,7 @@ haberler var
 -   Kullanıcılar ve Arama motorlarına uygun blog yazma önerileri
     [Link][9]
 -   Web üzeriden işletim sistemi fikri herkesi sarmış görünüyor. Biz
-    Google dedik ancak bu işi sadece Google düşünmemiş. [Link][10]
+    Google dedik ancak bu işi sadece Google düşünmemiş.
 -   Linux ve MacOs'da bulunan tab geçiş efekti firefox ile Windows'ta.
     Biraz yavaşlamay neden olduğunu söyleyeyim tabi bu benim
     bilgisayarımın özelikleri ile alakalıda olabilir 
@@ -53,7 +53,6 @@ haberler var
   [6]: http://sidekiq.com/
   [7]: http://www.instigatorblog.com/8-steps-to-growing-your-blog-community-by-1/2007/01/09/
   [9]: http://searchengineland.com/070109-141617.php
-  [10]: http://www.readwriteweb.com/archives/gravityzoo_review.php
   [12]: http://yuiblog.com/blog/2007/01/04/performance-research-part-2/
   [13]: http://www.sergiopereira.com/articles/prototype.js.html
   [14]: http://rakaz.nl/item/make_your_pages_load_faster_by_combining_and_compressing_javascript_and_css_files

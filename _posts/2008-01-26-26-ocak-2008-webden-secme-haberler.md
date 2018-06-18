@@ -13,14 +13,14 @@ tags: [ASP.NET, CSS, em, Eric Meyer, facebook, feedburner, Haberler, html5, ie8,
 -   "FeedBurner Kullanmanın 5 Temel Faydası"
 -   jQuery yardımı ile kolay uygulanabilir kaydırma çubuğu(scroll)
     scripti. Güzel çalışma
--   12 Adımda profesyonel web siteleri üretmek [Bağlantı][6]
+-   12 Adımda profesyonel web siteleri üretmek 
 -   Web Standartları yeni tarayıcılar ve IE8 hakkında yazılmış güzel bir
     makale. [Bağlantı][7]
 -   Yukarıdaki yazıya Eric Meyer üstad karşılık yazmış. [Bağlantı][8]
 -   "CSS ile Düzenlenen Formlardaki Hatalar ve Çözümleri 3" Ahmet bu
     sefer fieldset, legend, form ve input konularına değinmiş.
 -   Güzel bir wordpress teması. [Bağlantı][10]
--   FaceBook kendi javascript kütüphanesini çıkarmış. [Bağlantı][11]
+-   FaceBook kendi javascript kütüphanesini çıkarmış.
 -   Gelişmiş bir lightbox uygulaması. Biraz karışık görüne bilir ama
     değişik ihtiyaçlara karşılık veriyor. [Bağlantı][12]
 -   Firefox 3 ile birlikte hareketli PNG desteğide geliyormuş.
@@ -33,14 +33,10 @@ tags: [ASP.NET, CSS, em, Eric Meyer, facebook, feedburner, Haberler, html5, ie8,
 
   [Bağlantı]: http://www.w3.org/TR/html5/ "HTML5"
   [1]: http://www.w3.org/TR/html5-diff/ "4 - 5 farkı"
-  [6]: http://www.chromaticsites.com/web-design-blog/2008-01-22/12-steps-to-creating-a-professional-web-design/
-    "12 adım"
   [7]: http://www.alistapart.com/articles/beyonddoctype "web geleceği"
   [8]: http://www.alistapart.com/articles/fromswitchestotargets
     "bir üstteki yazıya yorum"
   [10]: http://neutronics.syokz.org/ "wprdpress"
-  [11]: http://developers.facebook.com/news.php?blog=1&story=73
-    "FaceBook javascript kütüphanesi"
   [12]: http://mjijackson.com/shadowbox/ "Shadowbox"
   [13]: http://animatedpng.com/ "hareketli PNG"
   [15]: http://www.emmaalvarez.com/2008/01/top-best-50-blogger-wordpress.html

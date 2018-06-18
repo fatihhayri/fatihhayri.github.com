@@ -15,7 +15,7 @@ tags: [CoScripter, CSS, google maps, GridView, Haberler, Javascript]
     [Link][2]
 -   CoScripter Firefox eklentisi sitlerde devamlı yapmaktan bıktığınız
     formaliteleri geçmenizi sağlayan bir eklenti. [Link][3]
--   Gelecekte Web'in yöneleceği 10 alan [Link][4]
+-   Gelecekte Web'in yöneleceği 10 alan 
 -   Dünyanın önde gelen programcılarından 170 öneri. [Link][5]
 -   Alışveriş sitelerinde en fazla yapılan 10 tasarım hatası.
 -   Web programcıları için 10 şahane öneri [Link][7]
@@ -30,8 +30,6 @@ tags: [CoScripter, CSS, google maps, GridView, Haberler, Javascript]
   [2]: http://www.tutorial5.com/content/view/129/52/ "filigram yapmak"
   [3]: http://services.alphaworks.ibm.com/coscripter/browse/about
     "CoScripter"
-  [4]: http://www.readwriteweb.com/archives/10_future_web_trends.php
-    "web'in geleceği"
   [5]: http://www.smashingmagazine.com/2007/09/07/170-expert-ideas-from-worlds-leading-developers/
     "170 öneri"
   [7]: http://www.aclevercookie.com/10-tips-for-budding-web-programmers-and-designers/

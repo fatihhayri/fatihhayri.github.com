@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![27mayis_iht_sebepleri][] İlk baskısı 1966 yılında yapılmış olan
+<span class="kitap-resmi">![27mayis_iht_sebepleri][]</span> İlk baskısı 1966 yılında yapılmış olan
 '27 Mayıs İhtilali ve Sebepleri', kitabın yazarı olan Ord. Prof. Ali
 Fuad Başgil'in ölümünün 40. yılı anısına tekrar basılmış. Kitapta o
 dönemde yaşananların yakın bir tanığı olan Başgil, ihtilali anlatıyor.

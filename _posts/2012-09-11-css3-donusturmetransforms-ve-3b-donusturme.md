@@ -425,7 +425,7 @@ Android Browser 3.0+ (-webkit- öneki ile)
 -   [http://www.queness.com/post/11403/embrace-the-awesome-css-3d-transforms][]
 -   [http://coding.smashingmagazine.com/2012/01/06/adventures-in-the-third-dimension-css-3-d-transforms/][]
 -   http://www.webstuffshare.com/2012/04/showing-product-information-with-css3-3d-transform/
--   [http://www.addyosmani.com/resources/3dstack/][] (jquery ile birlikte güzel bir örnek)
+-   http://www.addyosmani.com/resources/3dstack/
 -   [http://www.webkit.org/blog/386/3d-transforms/][]
 -   [http://24ways.org/2010/intro-to-css-3d-transforms][]
 -   http://sandbox.webpro.nl/css3/3d-transforms-interactive-demo.html
@@ -471,7 +471,6 @@ Android Browser 3.0+ (-webkit- öneki ile)
   [http://www.w3.org/TR/css3-3d-transforms/]: http://www.w3.org/TR/css3-3d-transforms/
   [http://www.queness.com/post/11403/embrace-the-awesome-css-3d-transforms]: http://www.queness.com/post/11403/embrace-the-awesome-css-3d-transforms
   [http://coding.smashingmagazine.com/2012/01/06/adventures-in-the-third-dimension-css-3-d-transforms/]: http://coding.smashingmagazine.com/2012/01/06/adventures-in-the-third-dimension-css-3-d-transforms/
-  [http://www.addyosmani.com/resources/3dstack/]: http://www.addyosmani.com/resources/3dstack/
   [http://www.webkit.org/blog/386/3d-transforms/]: http://www.webkit.org/blog/386/3d-transforms/
   [http://24ways.org/2010/intro-to-css-3d-transforms]: http://24ways.org/2010/intro-to-css-3d-transforms
   [http://2012.beercamp.com/]: http://2012.beercamp.com/

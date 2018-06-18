@@ -22,7 +22,7 @@ tags: [.net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, m
 -   Flickr benzeri CSS ile resim üzerine map yapmak. [Bağlantı][10]
 -   CSS ile fare üzerine gelince değişen alanlar yapmak için güzel bir
     uygulama. [Bağlantı][11]
--   jQuery ile esnek yapılı grafikler oluşturmak. [Bağlantı][12]
+-   jQuery ile esnek yapılı grafikler oluşturmak.
 -   Mikroformat hakkında 100'den fazla derleme link. [Bağlantı][13]
 -   WordPress 2.5 hakkında Wolkanca'dan geniş ve güzel bir bilgi.
     [Bağlantı][14]
@@ -52,8 +52,6 @@ tags: [.net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, m
     "css image map"
   [11]: http://snook.ca/archives/html_and_css/content_overlay_css/
     "cssile değişen alanlar"
-  [12]: http://www.filamentgroup.com/lab/creating_accessible_charts_using_canvas_and_jquery/
-    "jQuery ile grafik"
   [13]: http://html.com/blog/100-microformats-articles-resources/
     "mikroformat"
   [14]: http://blog.wolkanca.com/wordpress-25-ile-gelecek-olan-yenilikler/

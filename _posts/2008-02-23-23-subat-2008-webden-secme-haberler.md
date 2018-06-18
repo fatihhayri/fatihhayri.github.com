@@ -28,7 +28,7 @@ tags: [Ajax, google, Javascript, mootools, yui]
 -   Özellikle günlük sitelerinde kullanılmak üzere tarih formatı
     örnekleri. [Bağlantı][15]
 -   "jQuery ve efekt işlemleri" [Bağlantı][16]
--   CSS kütüphanesi blueprint 0.7 sürümü çıkmış. [Bağlantı][17]
+-   CSS kütüphanesi blueprint 0.7 sürümü çıkmış.
 -   Güzel bir resim galerisi uygulaması. [Bağlantı][18]
 -   Mootools ile yapılmış güzel bir geçiş efektli alan ekleme scripti.
 -   Google Reader Türkçe desteğide sunuyor. Bir kaç yerde ingilizce
@@ -62,7 +62,5 @@ tags: [Ajax, google, Javascript, mootools, yui]
     "tarih formatları"
   [16]: http://www.eburhan.com/jquery-ve-efekt-islemleri/
     "jquery ve efekt"
-  [17]: http://bjorkoy.com/past/2008/2/20/blueprint_07_has_arrived/
-    "blueprint 0.7"
   [18]: http://www.cabel.name/draft1/2008/02/fancyzoom-10.html
     "küçük ve büyük resim"

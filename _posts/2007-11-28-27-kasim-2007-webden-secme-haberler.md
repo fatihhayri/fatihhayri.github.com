@@ -15,7 +15,6 @@ tags: [CSS, Haberler, iframe, masterpage, slideshow, vs.net]
     makale. [Bağlantı][3]
 -   Çok güzel ve farklı bir resim galerisi.
 -   Metin alanı ve buton hizlamak için güzel bir CSS ipucu.
-    [Bağlantı][5]
 -   Web sitelerimizin geleceği ve CSS planlama hakkında güzel bir
     makale. [Bağlantı][6]
 -   CSS ile yemek fiyat listesi veya kitap indeksi gibi sayfalar
@@ -33,8 +32,6 @@ tags: [CSS, Haberler, iframe, masterpage, slideshow, vs.net]
     "Bağlantı"
   [3]: http://www.alistapart.com/articles/howtosizetextincss
     "yazı tipi ve satır yüksekliği"
-  [5]: http://nclud.com/sketchbook/css-fix-for-graphical-input-submit-button-off-set
-    "güzel bir ipucu"
   [6]: http://www.smileycat.com/miaow/archives/000857.php
     "web sitemizin geleceği"
   [7]: http://www.search-this.com/2007/11/26/css-a-recipe-for-success/

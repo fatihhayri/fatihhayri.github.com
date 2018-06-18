@@ -8,7 +8,7 @@ tags: [hasLayout, ie, ie6, ie7, kalıtsal margin sorunu, Margin]
 
 İnternet Explorer ile bir çok sorun yaşıyoruz genelde ie'nin boyut
 taramalarında. Bu sorunların kaynağı "hasLayout" olarak adlandırılan ie
-kabulü. hasLayout hakkında ayrıntılı bilgi için [bu siteye göz atın][].
+kabulü. hasLayout hakkında ayrıntılı bilgi için -bu siteye göz atın-.
 Microsoft bu tanımlamadaki hatasını kabul etti ve ie8 de "hasLayout"
 kabulunü bıraktı. Buna da şükür.
 
@@ -95,7 +95,6 @@ elemanında bu sorun ile karşılaşılmıyor.
 
 -   [http://www.positioniseverything.net/explorer/inherited_margin.html][]
 
-  [bu siteye göz atın]: http://www.satzansatz.de/cssd/onhavinglayout.html
   [100]: /images/arama_ardalan1.gif
   [tıklayınız.]: /dokumanlar/margin_inherit_form/inherit_margin_form_orn.html
   [1]: /images/margin_inherit_ff.gif

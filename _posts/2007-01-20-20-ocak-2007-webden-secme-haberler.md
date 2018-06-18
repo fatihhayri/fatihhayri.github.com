@@ -15,7 +15,7 @@ tags: [CSS, Firefox, form, html]
     kararı aldım. Listelerde ve RSS'de olacak ancak anasayfada
     çıkmayacak bilginize
 -   AltıÜstü Tasarım sitesinde "Form Tasarımı Hakkında Birkaç Tavsiye"
-    adlı güzel bir makale var okumanız tavsiye olunur. [Link][]
+    adlı güzel bir makale var okumanız tavsiye olunur.
 -   53 CSS Tekniği diye yayımlanan yazıda bir çok CSS ipuçlarını
     bulabilirsiniz. [Link][1]
 -   Güzel kodlama yapmak için 21 öneri. [Link][2]
@@ -24,8 +24,6 @@ tags: [CSS, Firefox, form, html]
 -   12 Temel CSS web sayfası planı [Link][6]
 -
 
-
-  [Link]: http://www.altiustutasarim.com/arsiv/2007/01/form_tasarimi_hakkinda_birkac.php
   [1]: http://www.smashingmagazine.com/2007/01/19/53-css-techniques-you-couldnt-live-without/
   [2]: http://www.digital-web.com/articles/markup_as_craft/ "Link"
   [5]: http://www.our-picks.com/archives/2007/01/18/the-7-hidden-pages-within-your-firefox-browser/

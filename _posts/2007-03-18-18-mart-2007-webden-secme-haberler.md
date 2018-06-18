@@ -13,7 +13,7 @@ tags: [feedburner, Haberler, html5, Javascript, WordPress]
     çalışmaları devam ediyor. Çalışma kurulu açıklandı ve şimdi de
     kullanıcı ve programcılardan bilgi almak için e-posta listesi
     oluşturulmuş.
--   Sayfa içi linklemede otomatik kaydırma örneği. [Link][1]
+-   Sayfa içi linklemede otomatik kaydırma örneği.
 -   CSS ile yapılmış 53 adet menü linkleri. [Link][2]
 -   Bir çok CSS menü içeren güzel bir link topluluğu. [Link][3]
 -   74 Adet CSS galeri sitesinin linkleri ve kısa bilgileri. [Link][4]
@@ -27,7 +27,6 @@ tags: [feedburner, Haberler, html5, Javascript, WordPress]
 
 
   [http://feeds.feedburner.com/fatihhayri]: http://feeds.feedburner.com/fatihhayri
-  [1]: http://tobielangel.com/2007/3/11/a-fistful-of-dollars "Link"
   [2]: http://www.smashingmagazine.com/2007/03/14/css-based-navigation-menus-modern-solutions/
     "Link"
   [3]: http://www.cssplay.co.uk/menus/index.html "Link"

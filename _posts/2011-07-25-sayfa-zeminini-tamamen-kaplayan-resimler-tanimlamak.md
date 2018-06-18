@@ -171,7 +171,7 @@ uygulamak için bizi düşündürüyor.
 Tüm tarayıcıların desteklediği ikinci yöntem sadece CSS ile çözüm
 ürettiği için tercih edilebilir. Ayrıca javascript ile bazı çözümler
 olsa da ben css ile çözümü olan bir kodu javascript ile çözme taraftarı
-değilim. Javascript uygulamaları için[http://css-tricks.com/3458-perfect-full-page-background-image/][]
+değilim. Javascript uygulamaları için[http://css-tricks.com/perfect-full-page-background-image/][]
 linkindeki örnekleri incelemenizi öneriyorum.
 
 Baktığım sitelerdeki uygulanabilir bu iki yöntemi sizlerle paylaştım
@@ -182,22 +182,21 @@ Kalın sağlıcakla
 
 ## Kaynaklar
 
--   [http://css-tricks.com/3458-perfect-full-page-background-image/][]
+-   [http://css-tricks.com/perfect-full-page-background-image/][]
 -   [http://cookbooks.adobe.com/post_Scale_Background_image_to_browser_size-17590.html][]
--   [http://css-tricks.com/766-how-to-resizeable-background-image/][]
+-   [http://css-tricks.com/how-to-resizeable-background-image/][]
 -   [http://paulmason.name/blog/item/full-screen-background-image-pure-css-code][]
--   [http://www.quackit.com/html/codes/html_stretch_background_image.cfm][]
+-   http://www.quackit.com/html/codes/html_stretch_background_image.cfm
 -   [http://www.cssplay.co.uk/layouts/background.html][]
 
   [CSS3’ün background-size özelliğini anlattım]: http://www.fatihhayrioglu.com/css3-background-size-ozelligi/
   [tıklayınız.]: /dokumanlar/tam_sayfa_bg.html
   [100]: https://lh6.googleusercontent.com/x55IiCT52mJIMb9oYddTeHpX7Ww7ti3puoZiped0VQ-SflPtR_mrldscvuWoco7aOWi0dbQ2llnOVRuch-2dgpR_LSkZU76CiKam4NThM2DYry7j-Po
   [http://interfacelift.com/wallpaper/details/2421/empty_bottles.html]: http://interfacelift.com/wallpaper/details/2421/empty_bottles.html
-  [http://css-tricks.com/3458-perfect-full-page-background-image/]: http://css-tricks.com/3458-perfect-full-page-background-image/
+  [http://css-tricks.com/perfect-full-page-background-image/]: http://css-tricks.com/perfect-full-page-background-image/
   [http://cookbooks.adobe.com/post_Scale_Background_image_to_browser_size-17590.html]: http://cookbooks.adobe.com/post_Scale_Background_image_to_browser_size-17590.html
-  [http://css-tricks.com/766-how-to-resizeable-background-image/]: http://css-tricks.com/766-how-to-resizeable-background-image/
+  [http://css-tricks.com/how-to-resizeable-background-image/]: http://css-tricks.com/how-to-resizeable-background-image/
   [http://paulmason.name/blog/item/full-screen-background-image-pure-css-code]: http://paulmason.name/blog/item/full-screen-background-image-pure-css-code
-  [http://www.quackit.com/html/codes/html_stretch_background_image.cfm]: http://www.quackit.com/html/codes/html_stretch_background_image.cfm
   [http://www.cssplay.co.uk/layouts/background.html]: http://www.cssplay.co.uk/layouts/background.html
 
 

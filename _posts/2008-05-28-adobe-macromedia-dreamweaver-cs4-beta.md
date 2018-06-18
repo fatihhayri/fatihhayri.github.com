@@ -97,7 +97,7 @@ edilecek bir yenilik.
 
 Yenilikler hakkında daha fazla bilgi edinmek için Lynda.com'daki
 videoları izlemenizi öneririm.
-[http://movielibrary.lynda.com/html/modPage.asp?ID=592][]
+http://movielibrary.lynda.com/html/modPage.asp?ID=592
 
 #### **Kaynaklar**
 
@@ -105,7 +105,7 @@ videoları izlemenizi öneririm.
 -   http://www.wz2k.co.uk/index.php/2008/05/dreamweaver-cs4-beta-released
 -   http://www.communitymx.com/content/article.cfm?cid=6D4C1
 -   [http://www.flashmagazine.com/News/detail/dreamweaver_fireworks_and_soundbooth_cs4/][]
--   [http://movielibrary.lynda.com/html/modPage.asp?ID=592][]
+-   http://movielibrary.lynda.com/html/modPage.asp?ID=592
 
 
   [100]: /images/dw03-150x101.jpg "dw03"
@@ -118,6 +118,5 @@ videoları izlemenizi öneririm.
   [3]: /images/dw_javascript-300x107.jpg
     "dw_javascript"
 
-  [http://movielibrary.lynda.com/html/modPage.asp?ID=592]: http://movielibrary.lynda.com/html/modPage.asp?ID=592
   [http://labs.adobe.com/technologies/dreamweavercs4/]: http://labs.adobe.com/technologies/dreamweavercs4/
   [http://www.flashmagazine.com/News/detail/dreamweaver_fireworks_and_soundbooth_cs4/]: http://www.flashmagazine.com/News/detail/dreamweaver_fireworks_and_soundbooth_cs4/

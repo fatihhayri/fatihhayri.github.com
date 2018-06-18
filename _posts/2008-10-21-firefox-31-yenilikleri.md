@@ -143,7 +143,7 @@ ile kullandığımız bu özellik yeni sürüm ile birlikte geliyor.**
 Bunun haricinde Firefox 3.1 ile birlikte bir çok kullanışlı özellikler
 getirilecek.
 
--   [http://developer.mozilla.org/web-tech/2008/10/14/firefox-31-beta-1-an-overview-of-features-for-web-developers/][]
+-   http://developer.mozilla.org/web-tech/2008/10/14/firefox-31-beta-1-an-overview-of-features-for-web-developers
 -   [http://www.siberkultur.com/?q=firefox-3-1][]
 -   http://mehmetergin.blogspot.com/2008/10/firefox-geolocation-api-specification.html
 -   [http://lifehacker.com/5063481/firefox-31-adds-keyword-filters-to-the-awesomebar][]
@@ -167,7 +167,6 @@ getirilecek.
     "font-face"
   [1]: /images/firefox31_adres_bar-300x61.gif
     "Adres Bar"
-  [http://developer.mozilla.org/web-tech/2008/10/14/firefox-31-beta-1-an-overview-of-features-for-web-developers/]: http://developer.mozilla.org/web-tech/2008/10/14/firefox-31-beta-1-an-overview-of-features-for-web-developers/
   [http://www.siberkultur.com/?q=firefox-3-1]: http://www.siberkultur.com/?q=firefox-3-1
   [http://lifehacker.com/5063481/firefox-31-adds-keyword-filters-to-the-awesomebar]: http://lifehacker.com/5063481/firefox-31-adds-keyword-filters-to-the-awesomebar
   [http://lifehacker.com/396154/firefox-31-new-features-already-in-the-works]: http://lifehacker.com/396154/firefox-31-new-features-already-in-the-works

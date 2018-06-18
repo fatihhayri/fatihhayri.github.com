@@ -20,7 +20,7 @@ tags: [CSS, css3.0, Google Analytics, Haberler, Movable-Type, Team Fondation Ser
 -   Yeni bir CSS kütüphanesi. [Bağlantı][6]
 -   Tipografi: metin kontrast ve akışını ayarlama. [Bağlantı][7]
 -   CSS ile doküman ikonlarını eklemek. Tek sorun IE6'nın bunu
-    desteklememesi. [Bağlantı][8]
+    desteklememesi.
 -   CSS2 ve CSS3 arasındaki renk tanımlama farklılıklarını anlatan bir
     makale. [Bağlantı][9]
 -   Ücretli günlük uygulamalarında Movable Type açık kaynak olmuş, yani
@@ -36,7 +36,6 @@ tags: [CSS, css3.0, Google Analytics, Haberler, Movable-Type, Team Fondation Ser
   [6]: http://elements.projectdesigns.org/ "css kütüphanesi"
   [7]: http://www.webdesignerwall.com/tutorials/typographic-contrast-flow/
     "Tipografi"
-  [8]: http://pooliestudios.com/projects/iconize/ "css doküman ikonları"
   [9]: http://kilianvalkhof.com/2007/design/understanding-css-colour-modes/
     "renk tanımlama"
   [10]: http://www.movabletype.org/2007/12/movable_type_open_source.html

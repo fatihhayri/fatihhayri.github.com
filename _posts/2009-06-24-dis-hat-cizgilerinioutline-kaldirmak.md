@@ -183,7 +183,7 @@ sonunda örneğimiz ie de de çalışacaktır.
 -   http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css
 -   [http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/][]
     (kaldırılmamalı)
--   [http://jlaine.net/2007/1/23/hidden-css-stuff-the-outline-property][]
+-   http://jlaine.net/2007/1/23/hidden-css-stuff-the-outline-property
 -   [http://sonspring.com/journal/removing-dotted-links][]
 -   [http://codylindley.com/Javascript/223/hiding-the-browsers-focus-borders-should-i-shouldnt-i][]
 -   [http://www.maratz.com/blog/archives/2006/01/20/outline-property-for-image-replaced-link/][]
@@ -216,7 +216,6 @@ sonunda örneğimiz ie de de çalışacaktır.
     "http://arjaneising.nl/css/dont-remove-the-outline-from-links"
   [http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/]: http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/
     "http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/"
-  [http://jlaine.net/2007/1/23/hidden-css-stuff-the-outline-property]: http://jlaine.net/2007/1/23/hidden-css-stuff-the-outline-property
   [http://sonspring.com/journal/removing-dotted-links]: http://sonspring.com/journal/removing-dotted-links
     "http://sonspring.com/journal/removing-dotted-links"
   [http://codylindley.com/Javascript/223/hiding-the-browsers-focus-borders-should-i-shouldnt-i]: http://codylindley.com/Javascript/223/hiding-the-browsers-focus-borders-should-i-shouldnt-i

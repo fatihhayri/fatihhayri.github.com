@@ -20,7 +20,7 @@ tags: [Accesskey, adobe, Ajax, Apollo, CSS, dotMobi, google, Haberler, ie7, Java
     yazılmış bir javascript. [Link][1]
 -   Adobe'un ajax, flex, Flash, Html, Javascript kodlama aracı
     Apollo'nun Alfa versiyonunu [duyurdu][]. Tanıtım videosunu seyretmek
-    isteyenler için [link][]
+    isteyenler için
 -   Bir çok ajax anaçatısı(framework) var ama hangisini seçmeliyiz.
     [Link][2]
 -   Yeni bir javascript kütüphanesi. DED|Chain daha kolay eklemeyi
@@ -30,7 +30,7 @@ tags: [Accesskey, adobe, Ajax, Apollo, CSS, dotMobi, google, Haberler, ie7, Java
 -   Javascript ve DOM ile Accesskey'ler atamak ve düzenlemeyi anlatan
     İngilizce bir makale. [Link][5]
 -   Tasarım kodlamacıların takip etmesi gereken 42 site. [Link][6]
--   Javascript ve CSS ile yapılmış güzel örnekler. [Link][7]
+-   Javascript ve CSS ile yapılmış güzel örnekler. 
 -   Popup hakkında yazılmış çok güzel ve ayrıntılı bir makale. [Link][8]
 -   IE7 iddia edilene aksine piksel değeri olarak atanan metin
     boyutlandırılması yapılan metinlerin metin boyutlarını arttıramama
@@ -43,13 +43,10 @@ tags: [Accesskey, adobe, Ajax, Apollo, CSS, dotMobi, google, Haberler, ie7, Java
   [1]: http://santrajan.blogspot.com/2007/03/cross-browser-keyboard-handler.html
     "Link"
   [duyurdu]: http://labs.adobe.com/technologies/apollo/ "duyurdu"
-  [link]: http://www.adobe.com/devnet/videos/apollo_demo07/index.html
   [2]: http://ajaxian.com/archives/choosing-an-ajax-framework "Link"
   [5]: http://www.thinkvitamin.com/features/javascript/setting-and-retrieving-accesskeys-with-javascript-and-dom
     "Link"
   [6]: http://www.smashingmagazine.com/2007/03/19/40-designtech-magazines-to-read/
-    "Link"
-  [7]: http://www.roscripts.com/CSS_creme_of_the_month-123.html "Link"
   [8]: http://accessify.com/features/tutorials/the-perfect-popup/ "Link"
   [9]: http://www.456bereastreet.com/archive/200703/ie_7_does_not_resize_text_sized_in_pixels/
     "Link"

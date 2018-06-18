@@ -468,7 +468,7 @@ sağlayacaktır.
 -   [http://johnbhall.com/iphone-4s/][] iphone 4s örnek
 -   [http://www.dynamicdrive.com/style/csslibrary/item/spinning_icons_using_css3_transform/][] Basit döndirme örneği
 -   [http://css3.bradshawenterprises.com/transforms/][]
--   [http://css3playground.com/slinky.php][]
+-   http://css3playground.com/slinky.php
 -   [http://coding.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/][] rotate ie için
 -   [http://www.impressivewebs.com/alternative-units-css3-rotate-transforms/][] (farklı değerler)
 -   [http://www.html5rocks.com/en/tutorials/webgl/webgl_transforms/][]
@@ -519,7 +519,6 @@ sağlayacaktır.
   [http://www.splashnology.com/article/cross-browser-2d-transformations-with-animation/1827/]: http://www.splashnology.com/article/cross-browser-2d-transformations-with-animation/1827/
   [http://www.htmlgoodies.com/html5/css/learn-css3-from-a-z-2d-transformations.html#fbid=CH7CpzZeM2i]: http://www.htmlgoodies.com/html5/css/learn-css3-from-a-z-2d-transformations.html#fbid=CH7CpzZeM2i
   [http://johnbhall.com/iphone-4s/]: http://johnbhall.com/iphone-4s/
-  [http://css3playground.com/slinky.php]: http://css3playground.com/slinky.php
   [http://coding.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/]: http://coding.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/
   [http://www.impressivewebs.com/alternative-units-css3-rotate-transforms/]: http://www.impressivewebs.com/alternative-units-css3-rotate-transforms/
   [http://www.html5rocks.com/en/tutorials/webgl/webgl_transforms/]: http://www.html5rocks.com/en/tutorials/webgl/webgl_transforms/

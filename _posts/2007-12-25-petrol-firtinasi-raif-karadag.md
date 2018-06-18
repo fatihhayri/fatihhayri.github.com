@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [ihanet, Kitaplar, petrol, Petrol Fırtınası, Raif Karadağ, suikast, tekel]
 ---
 
-![Petrol Fırtınası - Raif Karadağ][]Petrolün gerçek yüzünü gösteren
+<span class="kitap-resmi">![Petrol Fırtınası - Raif Karadağ][]</span> Petrolün gerçek yüzünü gösteren
 güzel bir kitap. Kitap her ne kadar 1950'lere kadar ki bir dönemi
 anlatsa da gerisini tahmin etmek zor değil. Bazı şeyler sonuçsuz kalıyor
 gibi görünse de aslında herşey apaçık ortada. Anlatılan olaylar

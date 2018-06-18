@@ -5,7 +5,7 @@ Date: 2006-08-20 14:02
 Category: Kitaplar
 ---
 
-![Darulislam, Darulharb -İslam Hukukunda Ülke Kavramı][]Aslında çok
+<span class="kitap-resmi">![Darulislam, Darulharb -İslam Hukukunda Ülke Kavramı][]</span> Aslında çok
 önemli bir meseleye değinilmiş kitapta.  Aldığım bir kaç not
 : Darülislam, mü'minlerin imamının hakimiyeti altında ve İslam ahkamının
 yürürlükte olduğu beldelerdir. Darülharp ise kafirlerin reisinin emir ve
@@ -20,4 +20,4 @@ müelliflerin İslam'ın milletlerarası münasebetlere yaklaşımı, özellikle
 cihadla ilgili maksatlı ve ilmi tarafsızlıktan uzak görüşlerinin
 yanlışlığı ortaya konulmuştur.
 
-  [Darulislam, Darulharb -İslam Hukukunda Ülke Kavramı]: /images/darulislam_darulharp.thumbnail.jpg
+  [Darulislam, Darulharb -İslam Hukukunda Ülke Kavramı]: /images/darulislam_darulharp.jpg

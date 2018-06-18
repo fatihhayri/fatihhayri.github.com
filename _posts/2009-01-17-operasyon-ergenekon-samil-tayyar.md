@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [darbe, derin-devlet, ergenekon, operasyon-ergenekon, susurluk, şamil-tayyar]
 ---
 
-![Operasyon Ergenekon][]Bu kitabı bir arkadaşımın önerisi ile okumaya
+<span class="kitap-resmi">![Operasyon Ergenekon][]</span> Bu kitabı bir arkadaşımın önerisi ile okumaya
 başladım, genelde tarih okurum güncel meselelere dair pek kitap
 okumuyorum. Bu konuda şöyle bir durum var; Konu her ne kadar güncel
 görünsede aslında devlet gelenekleri açısından düşünüldüğünde gerek

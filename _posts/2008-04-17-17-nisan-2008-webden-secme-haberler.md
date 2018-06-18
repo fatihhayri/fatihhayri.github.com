@@ -6,7 +6,7 @@ Category: Haberler
 tags: [Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek yapı, firebug, google web yönetici merkezi, günlük, jquery, kullanışlı form elemanları, lightbox, open id, saydam png, WordPress]
 ---
 
--   Esnek yapılı silder geliştirmek. [Bağlantı][]
+-   Esnek yapılı silder geliştirmek.
 -   "Wordpress Kurulumu - 3! Kod Optimizasyonu!" [Bağlantı][1]
 -   Anlamlı kod yazmak. [Bağlantı][2]
 -   Güzel ücretsiz ardaalan resimleri. [Bağlantı][3]
@@ -31,8 +31,6 @@ tags: [Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek y
     mükemmel bir araç olmuş, herkese öneririm. [Bağlantı][15]
 
 
-  [Bağlantı]: http://www.filamentgroup.com/lab/developing_an_accessible_slider/
-    "esnek slilder"
   [1]: http://www.alialtugkoca.com/arsiv/wordpress-kurulumu-3-kod-optimizasyonu/
     "wordpress kurulumu"
   [2]: http://www.ibm.com/developerworks/xml/library/x-plansemantic/index.html?ca=drs-

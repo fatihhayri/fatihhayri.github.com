@@ -12,7 +12,7 @@ tags: [Ajax, arama motoru, firebug, Güzel Menü, Javascript, RSS çeviri, wordp
     dillerdeki yazıları İngilizce'ye çevirip okumakta az bişey değil.
     [Bağlantı][1]
 -   İnternet günlüklerinin(blog) geleceği hakkında yazılmış güzel bir
-    makale. [Bağlantı][2]
+    makale.
 -   Javascript güvenliği ile ilgili bir makale. http://www.nowareshosting.com/forums/index.php?showtopic=57
 -   "Blog’da kullandığım ve tavsiye ettiğim eklentiler" -
     blog.wolkanca.com [Bağlantı][4]
@@ -32,8 +32,6 @@ tags: [Ajax, arama motoru, firebug, Güzel Menü, Javascript, RSS çeviri, wordp
 
 
   [1]: http://mloovi.com/ "RSS dil çevirici"
-  [2]: http://www.readwriteweb.com/archives/the_future_of_blogging_reveale.php
-    "günlüklerin geleceği"
   [4]: http://blog.wolkanca.com/blogda-kullandigim-ve-tavsiye-ettigim-eklentiler/#comment-176466
     "wordpress eklentileri"
   [5]: http://blog.searchistheos.com/2008/07/search-engine-optimization-seo-best.html

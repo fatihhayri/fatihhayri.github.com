@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![Sultan II. Abdülhamid Han’ın Notları][]Sultan II. Abdülhamid
+<span class="kitap-resmi">![Sultan II. Abdülhamid Han’ın Notları][]</span> Sultan II. Abdülhamid
 Han’ın NotlarıOsmanlı tarihinde belkide en çok üzerine kitap yazılan ve
 tartışılan devri Sultan II. Abdülhamid Han devridir. Bazıları "Ulu
 Hakan" der bazıları "Kızıl Sultan". Bu tartışmalı devir benimde çok

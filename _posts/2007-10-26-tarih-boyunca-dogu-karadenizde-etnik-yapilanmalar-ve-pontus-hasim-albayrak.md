@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [araştırma, Arsin, Doğu Karadeniz, Haşim Albayrak, karadeniz, Kitaplar, lazca, of, pontus, rumca, sürmene, Trabzon]
 ---
 
-![Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus - Haşim Albayrak][]Trabzon'un geçmişine değinen bu kitap bilimsel yaklaşımı
+<span class="kitap-resmi">![Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus - Haşim Albayrak][]</span>Trabzon'un geçmişine değinen bu kitap bilimsel yaklaşımı
 ile biraz sıkıcı ama bilgilendirici bir kaynak. Bu konuda daha fazla
 kaynağa ihtiyaç var ayrıca. Son dönemde Doğu Karadeniz'le ilgili yapılan
 tüm tartışmalarda öne çıkan bir kavram var; PONTUS... Doğu Karadeniz'in

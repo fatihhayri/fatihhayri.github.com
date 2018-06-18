@@ -7,6 +7,4 @@ Category: Haberler
 
 Symantec, 2006'nın ilk 6 ayında internet tarayıcılarına solucan
 programlarla yapılan saldırıların sayısının Firefox'ta 3, Microsoft
-IE'de 2 katına çıktığını vurguluyor. haberin devamı için [tıklayınız.][]
-
-  [tıklayınız.]: http://ntvmsnbc.com/news/385998.asp
+IE'de 2 katına çıktığını vurguluyor. haberin devamı için tıklayınız. ntvmsnbc.com/news/385998.asp

@@ -9,7 +9,7 @@ tags: [etiket, Etiket bulutu, WordPress, yağmur]
 Etiket bulutları kullanıcının isteğine hızlı erişmesini sağlayan ve
 arama motorları açısından önemli olan bir araçtır. Türkçe günlük
 yazarları pek tercih etmese de bence güzel bir uygulama. Etiket sistemi
-hakkında ayrıntılı bilgiyi [teknoseyir][] ve [bildirgeç][] 'ten
+hakkında ayrıntılı bilgiyi teknoseyir ve [bildirgeç][] 'ten
 alabilirisiniz.
 
 
@@ -59,7 +59,7 @@ Sonuçta etiket bulutu ve etiketlerime kavuştum. Hemde Türkçe karakter
 sorunumda yok.
 
 Daha sonra “Ultimate Tag Warrior”dan alışık olduğum daha önce
-kullandığım etiketlerin listesini görmek için “[Advanced Tag Entry][]”
+kullandığım etiketlerin listesini görmek için "Advanced Tag Entry"
 eklentisini kurdum. Ben çok fazla eklenti kurma taraftarı değilim ama
 etiket tutarlılığı için bunu eklemek zorundaydım.
 
@@ -71,8 +71,5 @@ Herkese bulutlu ve yağmurlu günler diliyorum. Malum susuz kaldık.
 -   [http://codex.wordpress.org/Template_Tags/wp_tag_cloud#Cloud_displayed_under_Popular_Tags_title][]
 -   http://poplarware.com/tagplugin.html
 
-
-  [teknoseyir]: http://www.teknoseyir.com/etiket-tag-sistemi/
   [bildirgeç]: http://www.bildirgec.org/etiket/etiket-bulutu
-  [Advanced Tag Entry]: http://poplarware.com/tagplugin.html
   [http://codex.wordpress.org/Template_Tags/wp_tag_cloud#Cloud_displayed_under_Popular_Tags_title]: http://codex.wordpress.org/Template_Tags/wp_tag_cloud#Cloud_displayed_under_Popular_Tags_title

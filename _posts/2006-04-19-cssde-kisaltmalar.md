@@ -146,11 +146,9 @@ yapılmalıdır.
 
 -   [http://www.w3schools.com/css/default.asp][]
 -   [http://www.eyeofdesign.com][]
--   [http://www.spoono.com][]
--   [http://www.dustindiaz.com/css-shorthand/][]
+-   http://www.spoono.com
+-   http://www.dustindiaz.com/css-shorthand
 
 
   [http://www.w3schools.com/css/default.asp]: http://www.w3schools.com/css/default.asp
   [http://www.eyeofdesign.com]: http://www.eyeofdesign.com/css/background.php
-  [http://www.spoono.com]: http://www.spoono.com/csst/tutorials/tutorial.php?id=5
-  [http://www.dustindiaz.com/css-shorthand/]: http://www.dustindiaz.com/css-shorthand/

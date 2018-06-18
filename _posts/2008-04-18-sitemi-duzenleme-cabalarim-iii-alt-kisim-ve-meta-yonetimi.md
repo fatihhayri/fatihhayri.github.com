@@ -18,7 +18,7 @@ merkezindeki verilere bakınca İçerik Analizi sayfasında
 Sorunları listeleniyordu. Bunları düzeltmek için wordpress eklentisi
 aramaya koyuldum. Sonuçta iki eklenti arasında kararsız kaldım. All in
 One SEO ve wpSEO Bir kaç yerde dolaştıktan ve
-[smashingmagazine.com][]'den etkilenerek wpSEO yükledim. Tek sorunum
+smashingmagazine.com'den etkilenerek wpSEO yükledim. Tek sorunum
 "Simple Tagging Plugin" ve "Ultimate Tag Warrior" etiketlerin alırken
 WordPres2.3.3 versiyonuyla birlikte gelen etiketleri kabul etmemesi.
 
@@ -32,5 +32,4 @@ ikonlarını ekledim. Düzeltmeler devam edecek.
 
 
   [wpSEO]: http://www.wpseo.org/
-  [smashingmagazine.com]: http://www.smashingmagazine.com/2007/08/20/wpseo-more-seo-for-wordpress/
   [Squidfingers]: http://squidfingers.com/patterns/

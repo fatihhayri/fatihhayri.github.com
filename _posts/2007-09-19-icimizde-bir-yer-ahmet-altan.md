@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Ahmet Altan, felsefe, hikaye, İçimizde Bir Yer, Kitaplar]
 ---
 
-![İçimizde Bir Yer - Ahmet Altan][]Açıkçası ben kitaptan pek bir
+<span class="kitap-resmi">![İçimizde Bir Yer - Ahmet Altan][]</span> Açıkçası ben kitaptan pek bir
 zevk almadım. Bana biraz yavan geldi. Yunanlıların tanrı felsefesi,
 cinsellik içeren hikayeler ve aşk ile alakalı yazıların olduğu bir
 kitap. Belki ben bu tip kitaplara fazla ilgi duymamamdan kaynaklana bir

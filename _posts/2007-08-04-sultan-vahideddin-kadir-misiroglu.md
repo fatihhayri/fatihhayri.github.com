@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![Sultan Vahideddin - Kadir Mısıroğlu][]Okullarda oktulan tarih
+<span class="kitap-resmi">![Sultan Vahideddin - Kadir Mısıroğlu][]</span> Okullarda oktulan tarih
 içinde en çok eleştirilen ve vatan haini olarak nitelenen Sultan
 Vahideddin hakkında bir bakıma karşıt görüşü savunan Kadir Mısıroğlu bu
 kitapla bize Sultan Vahideddin'i geniş kapsamlı olarak değerlendirme

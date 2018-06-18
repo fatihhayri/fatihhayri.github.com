@@ -16,7 +16,7 @@ tags: [Anlamlı web, css3.0, favicon, google, Haberler, Opera, seo, text-decorat
     boyutlandırabilme). 
 -   Alta çizgi atmanın(text-deocariotn:underline) farklı tarayıcılardaki
     durumu. [Bağlantı][6]
--   Anlamlı kod yazmayı anlatan bir kitaptan alıntılar. [Bağlantı][7]
+-   Anlamlı kod yazmayı anlatan bir kitaptan alıntılar.
 -   Bu oyunu bilgisayarımda oynayabilirmiyim? Bunu test eden bir site.
     Çok güzel bir araç [Bağlantı][8]
 -   100 Adet güzel ücretsiz wordpress teması. [Bağlantı][9]
@@ -33,8 +33,6 @@ tags: [Anlamlı web, css3.0, favicon, google, Haberler, Opera, seo, text-decorat
     "favicon"
   [6]: http://www.onderhond.com/blog/work/underlining-inconsistency
     "altını çiz"
-  [7]: http://www.readwriteweb.com/archives/semantic_web_what_is_the_killer_app.php
-    "anlamlı kod"
   [8]: http://www.systemrequirementslab.com/referrer/srtest "oyun testi"
   [9]: http://www.smashingmagazine.com/2008/01/08/100-excellent-free-high-quality-wordpress-themes/
     "100 güzel wordpress"

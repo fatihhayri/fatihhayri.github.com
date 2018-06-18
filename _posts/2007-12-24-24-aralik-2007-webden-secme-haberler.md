@@ -23,8 +23,8 @@ tags: [Ajax, Google Analytics, Haberler, ie, lightbox, tipografi, WordPress]
 -   Ahmet Küçükoğlu "Css ile Lightbox(ışık Kutuları) Hazırlama" Her ne
     kadar js yapılanlar kadar estetik olmasa da güzel bir alternatif
 -   Güzel tasarım için renk ve tipografi. [Bağlantı][8]
--   Google Analytics kodunuzu değiştirin! [Bağlantı][9]
--   SmashMagazine wordpress temasına bir göz atın. [Bağlantı][10]
+-   Google Analytics kodunuzu değiştirin!
+-   SmashMagazine wordpress temasına bir göz atın.
 
 
   [Ceyhun]: http://www.jayhoon.com/
@@ -40,7 +40,3 @@ tags: [Ajax, Google Analytics, Haberler, ie, lightbox, tipografi, WordPress]
     "slideshow"
   [8]: http://www.colourlovers.com/blog/2007/12/19/color-and-typography-in-good-design/
     "renk ve tipografi"
-  [9]: http://beyn.org/google-analytics-kodunu-degistirin/
-    "Google Analitics kodunu değiştirin"
-  [10]: http://www.smashingmagazine.com/2007/12/21/dilectio-a-smashing-wordpress-theme/
-    "wordpress teması"

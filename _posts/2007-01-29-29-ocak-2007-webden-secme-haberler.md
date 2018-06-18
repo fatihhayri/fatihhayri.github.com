@@ -15,7 +15,7 @@ tags: [Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, yo
 -   İnternetin yenilikleri ve haberlerini izlemeke için 7 öneri
     [Link][4]
 -   Yahoo javascript kütüphanesine şimdi bide javascript tiyatrosu ile
-    bu bilgileri kullanıcıya video anlatımı ile sunuyor. [Link][5]
+    bu bilgileri kullanıcıya video anlatımı ile sunuyor.
 -   Xform ve Firefox'da kullanımı ile ilgili güzel bir makale [Link][6]
 -   Google'un anlatımı ile arama motorlarında en iyi indekslenme notları
     [Link][7]
@@ -36,7 +36,6 @@ tags: [Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, yo
   [3]: http://www.dynamicdrive.com/dynamicindex4/thumbnail.htm "Link"
   [4]: http://www.lifehack.org/articles/lifehack/7-ways-to-track-internets-trends-and-popular-news.html
     "Link"
-  [5]: http://developer.yahoo.com/yui/theater/ "Link"
   [6]: http://www-128.ibm.com/developerworks/xml/library/x-xformsfirefox/
     "Link"
   [7]: http://googleblog.blogspot.com/2007/01/controlling-how-search-engines-access.html

@@ -6,9 +6,7 @@ Category: Kitaplar
 tags: [cumhuriyet, Hüseyin Kazım Kadri, milliyetçilik, ziya gökalp]
 ---
 
-![Ziya Gökalp'ın Tenkidi][]
-
-Ziya Gökalp'in fikirleri Osmanlı'nın son zamanlarını ve Cumhuriyet Türkiye'sini etkiledi. Fransız ihtilalinin
+<span class="kitap-resmi">![Ziya Gökalp'ın Tenkidi][]</span> Ziya Gökalp'in fikirleri Osmanlı'nın son zamanlarını ve Cumhuriyet Türkiye'sini etkiledi. Fransız ihtilalinin
 etkisi ile dünyada yayılan milliyetçilik akımına katılan Ziya Gökalp ve
 fikirleri birçok kişiyi etkilemiştir. Bu fikirlerin olumsuz yanlarını ve
 eksilerini anlatan birçok yazı yazıldı. Hüseyin Kazım Kadri'nin bu

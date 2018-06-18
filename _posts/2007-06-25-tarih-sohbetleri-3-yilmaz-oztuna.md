@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![tarih_sohbetleri3.jpg][]Tarih sohbetlerinin 3. ve sonuncusu olan
+<span class="kitap-resmi">![tarih_sohbetleri3.jpg][]</span> Tarih sohbetlerinin 3. ve sonuncusu olan
 bu kitap daha çok yakın tarihimizle alakalı. Kitap Dış politika ve İç
 politika diye iki bölüme ayrılmış notları içeriyor. Yakın tarihimize ait
 bir çok olayı tekrar gözden geçirmek ve tarihi olaylarla bağlantısını

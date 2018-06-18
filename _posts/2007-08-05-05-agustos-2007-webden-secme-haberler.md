@@ -16,9 +16,8 @@ tags: [domain, Firefox, google reader, Haberler, Javascript, Microsoft-Visula-St
     olmaması düşündürücü. Bir indirimden ziyade yönlendirme yapılmış
     gibi. Limitli kullanıcıya verilmiş ceza sanki. Neyse hayırlı olsun.
 -   Google Trend'e karşı Yahoo Buzz Index. Rekabet her zaman iyidir.
-    [Link][5]
 -   Microsoft Visula Sturdio 2008 Beta 2 çıktı. En güzel özelliklerinden
-    biri javascript kod yazım kolaylığının birlikte gelmesi. [Link][6]
+    biri javascript kod yazım kolaylığının birlikte gelmesi.
 -   Geldik yazmış "Web 2.0′a Geçiş için 12 Kural"
 
 
@@ -29,7 +28,3 @@ tags: [domain, Firefox, google reader, Haberler, Javascript, Microsoft-Visula-St
     "Firefox"
   [3]: http://googlesystem.blogspot.com/2007/08/blogroll-powered-by-google-reader.html
     "Google Reader"
-  [5]: http://www.readwriteweb.com/archives/yahoo_buzzlist_versus_google_trends.php
-    "Yahoo Buzz Index"
-  [6]: http://blogs.msdn.com/webdevtools/archive/2007/08/03/better-javascript-intellisense-with-silverlight-1-0.aspx
-    "VS.NET 2008"

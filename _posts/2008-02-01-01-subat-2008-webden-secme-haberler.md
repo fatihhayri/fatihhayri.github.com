@@ -19,7 +19,7 @@ tags: [acidtest3, CSS, Eric Meyer, Firefox, float, Haberler, jquery, line-height
 -   "Ahmetblog.net - CSS Image Menu 2.0" 
 -   jQuery form doğrulama eklentisi güncellenmiş güzel özellikler var.
     [Bağlantı][9]
--   Firefox Avrupa'da ve genelde yükselmeye devam ediyor. [Bağlantı][10]
+-   Firefox Avrupa'da ve genelde yükselmeye devam ediyor.
 -   Tarayıcı savaşlarında 2009'da neler olur? [Bağlantı][11]
 
 
@@ -32,6 +32,4 @@ tags: [acidtest3, CSS, Eric Meyer, Firefox, float, Haberler, jquery, line-height
   [7]: http://ejohn.org/blog/javascript-pretty-date/ "zaman gösterici"
   [9]: http://bassistance.de/2008/01/20/release-validation-plugin-12/
     "jquery form doğrulama"
-  [10]: http://www.itwire.com/content/view/16329/53/
-    "firefox yükseliyor"
   [11]: http://ejohn.org/blog/the-browsers-of-2009/ "tarayıcı savaşları"

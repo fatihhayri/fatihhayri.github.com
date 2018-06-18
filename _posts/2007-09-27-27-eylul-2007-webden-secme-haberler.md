@@ -17,7 +17,7 @@ tags: [Anlamlı web, ASP.NET, CSS, ekran, gelen, Haberler, mootools, sildeshow]
 -   CSS Seçicilerinin tarayıcı destekleme çizelgesi. [Bağlantı][6]
 -   Mootools ile yapılmış çok güzel bir slideshow örneği. [Bağlantı][7]
 -   Çok güzel Vs.Net ipuçları. [Bağlantı][8]
--   Anlamı web siteleri yapmak hakkında bir makale. [Bağlantı][9]
+-   Anlamı web siteleri yapmak hakkında bir makale.
 -   WordPress 2.3 yayınlandı. Diğer sürümlere nazaran daha çok
     yenilikler var. En kısa zamanda geçmek lazım. [Bağlantı][10]
 -   WordPress2.3 hakkında bilmemeiz gerekenler. [Bağlantı][11]
@@ -41,8 +41,6 @@ tags: [Anlamlı web, ASP.NET, CSS, ekran, gelen, Haberler, mootools, sildeshow]
   [7]: http://www.e2interactive.com/e2_photo_gallery/ "slideshow"
   [8]: http://www.chinhdo.com/chinh/blog/20070920/top-11-visual-studio-2005-ide-tips-and-tricks-to-make-you-a-more-productive-developer/
     "Vs.net ipuçları"
-  [9]: http://www.readwriteweb.com/archives/the_top-down_semantic_web.php
-    "Anlamlı web"
   [10]: http://wordpress.org/development/2007/09/wordpress-23/
     "wordPress 2.3"
   [11]: http://technosailor.com/10-things-you-need-to-know-about-wordpress-23/

@@ -14,21 +14,20 @@ tags: [Haberler]
 -   Güzel bir akordiyon menü örneği.
 -   Popülerliğini arttıran javascript'e tekrardan bir göz atmak
     isteyenler için güzel bir İngilizce kaynak. [Link][4]
--   En pahalı internet Türkiye'de [Link][5]
+-   En pahalı internet Türkiye'de
 -   Javascript'in aşamlarını anlatan güzel bir stie. [Link][6]
 -   A List Apart'ta yayınlanan güzel bir makale "Mutlak Konumlandırmanın
     Sorunları" [Link][7]
 -   WordPress için 30 Adet Ajax eklentisi. [Link][8]
 -   Mevcut web tarayıcılarının CSS3 özelliklerini destekleme listesi.
     [Link][9]
--   Uygulaması en basit akordiyon menü örneği. [Link][10]
+-   Uygulaması en basit akordiyon menü örneği.
 -   Web tarayıcılarının CSS3 seçicilerini destekleme listesi. [Link][11]
 
 
   [1]: http://mezzoblue.com/archives/2007/07/11/icon_design/ "Link"
   [4]: http://developer.mozilla.org/en/docs/A_re-introduction_to_JavaScript
     "Link"
-  [5]: http://www.ntvmsnbc.com/news/414369.asp "En pahalı internet"
   [6]: http://www.neilmix.com/narrativejs/doc/overview.html
     "Javascript'in aşamları"
   [7]: http://alistapart.com/articles/conflictingabsolutepositions
@@ -36,6 +35,4 @@ tags: [Haberler]
   [8]: http://mashable.com/2007/07/20/ajax-wordpress/
     "30 Ajax eklentisi"
   [9]: http://westciv.com/iphonetests/ "Link"
-  [10]: http://www.dezinerfolio.com/2007/07/19/simple-javascript-accordions/
-    "akordiyon menü"
   [11]: http://www.css3.info/modules/selector-compat "Link"

@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Çocuk bakımı, çocuk yetiştirme, Kitaplar]
 ---
 
-![Çocuklarda Davranış Bozuklukları][]Bu kitabı 2. yeğenim doğduğunda
+<span class="kitap-resmi">![Çocuklarda Davranış Bozuklukları][]</span> Bu kitabı 2. yeğenim doğduğunda
 almıştım. Şimdi 4. yeğenim doğdu ve ancak okuyabildim :D Kitap
 çocuklardaki davranış bozuklukları ve bunlara karşı ailelerinin nasıl
 davranacağı hakkıda bilgi içeiryor. Aslında işin özü çocuklara zaman

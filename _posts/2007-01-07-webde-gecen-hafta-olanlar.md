@@ -27,7 +27,7 @@ uzunca haber vereceğiz bu sefer
     başlandı. İşte size bir örnek daha [Link][6]
 -   Renklerin kullanımı ile ilgili güzel bir makale [Link][7]
 -   2007'de Web üzerinde hangi alanda en büyük gelişme olur diye bir
-    anket yapmışlar ve sonuçları ve yorumu güzel. [Link][8]
+    anket yapmışlar ve sonuçları ve yorumu güzel.
 -   Çin yapımı Maxthon(myIE diyede anılıyor) web tarayıcısının 2.0
     betası çıkmış. Internet Explorer alt yapısını kullanan ve IE
     kendince bir şeyler katıp web tarayıcı piyasasına girmeye çalışan
@@ -55,7 +55,6 @@ uzunca haber vereceğiz bu sefer
   [5]: http://www.smashingmagazine.com/2006/12/29/css-based-tables-modern-solutions/
   [6]: http://artypapers.com/ap.awards/2006/
   [7]: http://slash7.com/articles/2006/12/30/6-things-you-need-to-know-about-color
-  [8]: http://www.readwriteweb.com/archives/biggest_web_trend_2007.php
   [9]: http://www.maxthon.com/
   [11]: http://googlesystem.blogspot.com/2007/01/google-removes-self-promoting-tips.html
   [12]: http://www.google.com/talk/

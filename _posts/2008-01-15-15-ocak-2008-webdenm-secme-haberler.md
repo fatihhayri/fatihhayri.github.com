@@ -12,7 +12,7 @@ tags: [acid, CSS, google maps, Haberler, jquery, lightbox, seo]
     üzerine bir yorum. [Bağlantı][1]
 -   Lightview yuvarlak kenarlı bir lightbox uygulaması. [Bağlantı][2]
 -   Kaynak kodların yayınlandığı ve saklandığı bir site. [Bağlantı][3]
--   Güzel css teknikleri. [Bağlantı][4]
+-   Güzel css teknikleri.
 -   Ahmet Küçükoğlu "CSS ile Düzenlenen Formlardaki Hatalar ve Çözümleri
     2" 
 -   Eburhan "jQuery ve Olaylar" [Bağlantı][6]
@@ -30,8 +30,6 @@ tags: [acid, CSS, google maps, Haberler, jquery, lightbox, seo]
   [2]: http://www.nickstakenburg.com/projects/lightview/
     "yuvarlak kenarlı lightbox"
   [3]: http://snipplr.com/ "kaynak kodlar"
-  [4]: http://mondaybynoon.com/2008/01/14/improving-your-process-css-techniques-part-2/
-    "css teknikleri"
   [6]: http://www.eburhan.com/jquery-ve-olaylar/ "olaylar"
   [8]: http://www.linkz.net/ "Linkz"
   [9]: http://docs.jquery.com/Release:jQuery_1.2.2 "jQuery 1.2.2"

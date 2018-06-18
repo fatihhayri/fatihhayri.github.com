@@ -7,7 +7,7 @@ Category: CSS
 -   [BrainJar.com][]
 -   [Dijital Web][]
 -   [Cascading Style Sheets CSS Tutorials - Javascript Styles Change     Styles Hover Styles][]
--   [Cascading Style Sheets Forum][]
+-   Cascading Style Sheets Forum
 -   [Cre8asite forums. CSS, Style, and Positioning. [ Search Engine     Optimization, Usability and Web Design. ]
 -   [CSS Garden][]
 -   [CSS Vault][]
@@ -46,7 +46,6 @@ Category: CSS
 
   [BrainJar.com]: http://www.brainjar.com/
   [Dijital Web]: http://www.digital-web.com/
-  [Cascading Style Sheets Forum]: http://www.csscreator.com/css-forum/index.php
   [Cre8asite forums. CSS, Style, and Positioning. [ Search Engine   Optimization, Usability and Web Design. ]]: http://www.cre8asiteforums.com/viewforum.php?f=38
   [CSS Garden]: http://www.csszengarden.com/
   [CSS Vault]: http://cssvault.com/

@@ -8,7 +8,7 @@ tags: [background, CSS, google-video, Haberler, lightbox, png, sildeshow, WordPr
 
 -   WordPress 2.2 verisiyonu çıkmış. [Link][]
 -   Nisan 2007'deki en iyi web makaleleri ve araçları. [Link][1]
--   8 CSS hack(düzeltme) ayrıntılı anlatan bir makale. [Link][2]
+-   8 CSS hack(düzeltme) ayrıntılı anlatan bir makale. 
 -   Html buton elementini yeniden keşfetmek adlı bir makale. [Link][3]
 -   Smashing Magazine bu seferde lightbox ve sildeshow scriptlerini
     listelemiş güzel bir liste. [Link][4]
@@ -22,8 +22,6 @@ tags: [background, CSS, google-video, Haberler, lightbox, png, sildeshow, WordPr
 
   [Link]: http://wordpress.org/development/2007/05/wordpress-22/ "Link"
   [1]: http://www.smashingmagazine.com/2007/05/15/best-of-april-2007/
-    "Link"
-  [2]: http://www.solidstategroup.com/page/1592 "Link"
   [3]: http://particletree.com/features/rediscovering-the-button-element/
     "Link"
   [4]: http://www.smashingmagazine.com/2007/05/18/30-best-solutions-for-image-galleries-slideshows-lightboxes/

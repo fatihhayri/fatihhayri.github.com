@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [destanlar, kahramanlar, Kitaplar, Mehmet Niyazi]
 ---
 
-![][100]Balkan savaşına dair yazılmış güzel bir kahramanlık destanı. Mehmed
+<span class="kitap-resmi">![][100]</span> Balkan savaşına dair yazılmış güzel bir kahramanlık destanı. Mehmed
 Niyazi'nin her zaman ki gibi akıcı ve insanı içine çeken güzel anlatımı
 ile atalarımızı bu toprakları bize bırakmak için neler çektiğini, ne
 kahramanlıklar gösterdiklerini anlatan çok güzel bir eser. İnsanın milli

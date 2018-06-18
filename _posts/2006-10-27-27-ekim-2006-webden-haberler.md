@@ -31,7 +31,7 @@ sizlerle paylaşmak istedim
 -   Web sitelerini tasarlarken en çok ihtiyaç duyulan konuların başında
     gelir renk seçimi 5 adımda renk seçimi ile ilgi güzel bir makale
 
-    [http://www.markboulton.co.uk][]
+    http://www.markboulton.co.uk
 -   37 adımda mükemmel (X)HTML kodlamayı anlatan güzel bir çalışma.
     Güzel ipuçları
 
@@ -56,7 +56,7 @@ sizlerle paylaşmak istedim
 -   CSS editörlerine yeni bir tane daha eklendi. En azından ben yeni
     duydum. Web tarayıcıları bitişik çalışan güzel ve bedava bir editör
 
-    [http://www.sitevista.com/cssvista/][]
+    http://www.sitevista.com/cssvista
 -   Ajax fırtınasından sonra bir çok programcı Ajax'ı daha kolay ve
     hızlı kullanmamız için eklentiler çıkarıyor. Bunlardan biri de Dojo
     bir göz atın
@@ -66,8 +66,6 @@ sizlerle paylaşmak istedim
 
   [http://www.alistapart.com/articles/printtopreview]: http://www.alistapart.com/articles/printtopreview
   [http://www.webstandards.org]: http://www.webstandards.org/2006/10/18/video-presentation-douglas-crockford-on-the-theory-of-the-dom/
-  [http://www.markboulton.co.uk]: http://www.markboulton.co.uk/journal/comments/five_simple_steps_to_designing_with_colour/
   [http://www.sitepoint.com]: http://www.sitepoint.com/article/html-37-steps-perfect-markup
   [http://skuer.com/]: http://skuer.com/
   [http://blogs.msdn.com]: http://blogs.msdn.com/bgold/archive/2006/10/24/css-friendly-asp-net-2-0-control-adapters-beta-3-now-available.aspx
-  [http://www.sitevista.com/cssvista/]: http://www.sitevista.com/cssvista/

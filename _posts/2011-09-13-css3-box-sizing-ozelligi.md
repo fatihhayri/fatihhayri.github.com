@@ -180,7 +180,7 @@ Kalın sağlıcakla
 -   [http://www.w3.org/TR/css3-ui/#box-sizing][]
 -   [http://www.goldentwine.com/blog/css3-user-interface-box-sizing][]
 -   [http://csshead.com/controlling-width-with-css3-box-sizing/][]
--   [http://css-tricks.com/7323-box-sizing/][]
+-   http://css-tricks.com/7323-box-sizing
 -   [https://www.youtube.com/watch?v=rNqqfMJnpKY&feature=related][] (video)
 -   [http://maymay.net/blog/2004/10/28/observations-on-the-css3-box-sizing-property-and-how-designers-use-style-sheets/][]
 -   [http://www.w3cplus.com/content/css3-box-sizing][] (çince)
@@ -196,7 +196,6 @@ Kalın sağlıcakla
   [http://www.w3.org/TR/css3-ui/#box-sizing]: http://www.w3.org/TR/css3-ui/#box-sizing
   [http://www.goldentwine.com/blog/css3-user-interface-box-sizing]: http://www.goldentwine.com/blog/css3-user-interface-box-sizing
   [http://csshead.com/controlling-width-with-css3-box-sizing/]: http://csshead.com/controlling-width-with-css3-box-sizing/
-  [http://css-tricks.com/7323-box-sizing/]: http://css-tricks.com/7323-box-sizing/
   [https://www.youtube.com/watch?v=rNqqfMJnpKY&feature=related]: https://www.youtube.com/watch?v=rNqqfMJnpKY&feature=related
   [http://maymay.net/blog/2004/10/28/observations-on-the-css3-box-sizing-property-and-how-designers-use-style-sheets/]: http://maymay.net/blog/2004/10/28/observations-on-the-css3-box-sizing-property-and-how-designers-use-style-sheets/
   [http://www.w3cplus.com/content/css3-box-sizing]: http://www.w3cplus.com/content/css3-box-sizing

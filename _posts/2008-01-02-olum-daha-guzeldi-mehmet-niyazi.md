@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Azeri, Haberler, Kitaplar, Mehmet Niyazi, Ölüm Daha Güzeldi, roman, Rusya, Zulüm]
 ---
 
-![Ölüm Daha Güzeldi - Mehmet Niyazi][]Sovyet rusyası zamanında Azeri
+<span class="kitap-resmi">![Ölüm Daha Güzeldi - Mehmet Niyazi][]</span> Sovyet rusyası zamanında Azeri
 soydaşlarımızı yapılanları anlatan güzel bir kitap aslında ruslar sadece
 Azerilere değil tüm Türk Cumhuriyetlerine yaptığı zulüme örnek bir
 roman. Ermeni soykırımını devamlı üzerimize kakan batı dünyasının

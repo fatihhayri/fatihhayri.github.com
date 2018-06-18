@@ -16,7 +16,7 @@ tags: [CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, up
 -   WordPress 2.6.2 sürümü çıkmış yükselttim. Yaklaşık 5 dakikamı aldı.
     Bir sorun görünmüyor.
 -   Form girdi alanlarını maskelemk için jquery ile yapılmış bir
-    script. [Bağlantı][5]
+    script.
 -   CSS sıfırlama teknikleri hakkında güzel bir makale. [Bağlantı][6]
 -   Google Chrome'dan beklenen 10 şey. [Bağlantı][7]
 -   Web kod yazarları için 20 Firefox eklentisi. [Bağlantı][8]
@@ -36,8 +36,6 @@ tags: [CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, up
     "partilerini nternet sayfası"
   [3]: http://www.webrazzi.com/2008/09/09/techcrunch-50den-ilk-gun-izlenimleri/
     "TechCruch"
-  [5]: http://digitalbush.com/projects/masked-input-plugin/
-    "form girdi maskeleme"
   [6]: http://perishablepress.com/press/2007/10/23/a-killer-collection-of-global-css-reset-styles/
     "css sıfırlama"
   [7]: http://news.cnet.com/8301-17939_109-10033296-2.html?tag=TOCcarouselArea.0

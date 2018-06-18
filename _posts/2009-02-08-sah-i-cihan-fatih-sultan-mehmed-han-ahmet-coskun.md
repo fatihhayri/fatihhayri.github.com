@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [bibliyografi, Fatih-Sultan-Mehmet, Fetih, İstanbul, osmanlı, Padişah]
 ---
 
-![sahicihan][]Bilemiyorum ismimi aldığım için mi, ama Fatih Sultan
+<span class="kitap-resmi">![sahicihan][]</span> Bilemiyorum ismimi aldığım için mi, ama Fatih Sultan
 Mehmet ile ilgili bir çok kitap okdum. Kitapçıda görünce dayanamıyorum
 alıyorum. Genel hatları ile Fatih Sultan Mehmet'i anlatan güzel
 ayrıntılar içeren bir eser. Bir yerdeki tespit çok hoşuma gitti sizlerle

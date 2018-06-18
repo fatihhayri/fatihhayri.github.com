@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [devlet, İslam, İslam Devlet Felsefesi, islam tarihi, Kitaplar, Mehmet Niyazi]
 ---
 
-![İslam Devlet Felsefesi - Mehmed Niyazi][]Bu kitabı okurken kendimi
+<span class="kitap-resmi">![İslam Devlet Felsefesi - Mehmed Niyazi][]</span> Bu kitabı okurken kendimi
 kitabın derinliklerine indiremedim. Derin bir mevzu ama beni biraz aştı
 sanki bu nedenle kitabın kendi özeti ile yetiniyorum. Yazar bu kitapta
 İslâm'ın temel prensipleriyle İslâm tarihinde geçmiş uygulamaları hukuk

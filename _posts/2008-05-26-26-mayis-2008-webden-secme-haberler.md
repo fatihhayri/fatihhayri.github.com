@@ -23,7 +23,7 @@ tags: [akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explo
 -   Dışa link için css ile ikon koymak. [Bağlantı][10]
 -   jquery ile ilgili farklı bir büyük resim uygulaması. [Bağlantı][11]
 -   Tarayıcı Uyumluluğu İçin CSS Sıfırlama - yakuter.com [Bağlantı][12]
--   30 dakikada jQuery giriş yapmak. [Bağlantı][13]
+-   30 dakikada jQuery giriş yapmak. 
 -   jQuery ile animasyon geçişli içerikler. [Bağlantı][14]
 
 
@@ -49,7 +49,5 @@ tags: [akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explo
     "jquery büyük resim"
   [12]: http://www.yakuter.com/tarayici-uyumlulugu-icin-css-sifirlama/
     "tarayıcı uyumu"
-  [13]: http://cotradeco.com/posts/629-learn-jquery-in-30-minutes
-    "jquery"
   [14]: http://nettuts.com/javascript-ajax/how-to-load-in-and-animate-content-with-jquery/
     "jquery"

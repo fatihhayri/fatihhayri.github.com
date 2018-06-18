@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [cinayet, darbe, Kitaplar, sultan-abdulaziz]
 ---
 
-![Sultan Abdulaziz - Hafız Mehmet Bey][]Sultan Abdulaziz'in
+<span class="kitap-resmi">![Sultan Abdulaziz - Hafız Mehmet Bey][]</span> Sultan Abdulaziz'in
 mabeyencilerinden Hafız Mehmet Bey'in yaşadıkları olayları anlattığı bu
 kitap 70 küsür sayfalık küçük bir eser ama içeriği güzel. Ancak ben size
 yinede Sultan Abdulaziz ile ilgili [Yılmaz Öztuna'nın Bir Darbenin Anatomisi][]kitabını öneririm. Bu kitap Sultan Abdulaziz'e karşı

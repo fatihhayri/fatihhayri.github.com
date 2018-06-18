@@ -14,7 +14,7 @@ tags: [Ajax, ASP.NET, CSS, Firefox, Haberler, json, safari, slideshow, table]
 -   eval() fonksiyonunu kullanmadan Ajax uygulamalarında Json kullanmak.
 -   Javascript kütüphanelerinin listesi. [Bağlantı][4]
 -   Firefox 3'den iyi haberler gelmeye devam ediyor. Firefox 3
-    Eklentilerin hafıza sömürme işine çözüm bulmuş. [Bağlantı][5]
+    Eklentilerin hafıza sömürme işine çözüm bulmuş.
 -   Sitelerdeki sayfalama örnekleri ve güzellikleri [Bağlantı][6]
 -   Safari 3'ün yeni özellikleri. [Bağlantı][7]
 -   En iyi CSS araçları. [Bağlantı][8]
@@ -30,8 +30,6 @@ tags: [Ajax, ASP.NET, CSS, Firefox, Haberler, json, safari, slideshow, table]
     "Slideshow"
   [4]: http://technotarget.com/ajax-dhtml-and-javascript-libraries/
     "javascript kütüphaneleri"
-  [5]: http://blog.wired.com/monkeybites/2007/11/firefox-3-add-o.html
-    "Firefox 3 Beta "
   [6]: http://www.smashingmagazine.com/2007/11/16/pagination-gallery-examples-and-good-practices/
     "sayfalama"
   [7]: http://webkit.org/blog/122/webkit-3-10-new-things/ "Bağlantı"

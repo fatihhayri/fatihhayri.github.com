@@ -74,11 +74,8 @@ unutmayın.
 
 [CodeHints.xml dosyasını indirmek için tıklayınız. (Şenol'un geliştridiği)][]
 
-Yazının sonunda [Şenol][1]'a tekrar teşekkürlerimi sunarım.
+Yazının sonunda Şenol'a tekrar teşekkürlerimi sunarım.
 
-## Kaynak
-
--   [http://ff.im/efoQ4][]
 
   [100]: /images/code_hig-300x194.gif
   [friendfeed]: http://friendfeed.com/fatihhayri "friendfeed"
@@ -86,5 +83,3 @@ Yazının sonunda [Şenol][1]'a tekrar teşekkürlerimi sunarım.
   [Şenol]: http://friendfeed.com/senol1 "Şenol"
   [CodeHints.xml dosyasını indirmek için tıklayınız.]: /dokumanlar/CodeHints.rar
   [CodeHints.xml dosyasını indirmek için tıklayınız. (Şenol'un   geliştridiği)]: http://www.4shared.com/file/197529116/bfc9e2ec/CodeHints.html?err=no-sess
-  [1]: http://friendfeed.com/senol1
-  [http://ff.im/efoQ4]: http://ff.im/efoQ4

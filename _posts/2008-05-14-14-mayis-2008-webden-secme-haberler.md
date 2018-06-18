@@ -6,7 +6,7 @@ Category: Haberler
 tags: [Ajax, CSS performansı, css3, firebug, jquery, RSS ikonları, Seçiciler, yuvarlak kenar]
 ---
 
--   1 piksel kırılma ile yuvarlak kenarlı köşeler yapmak. [Bağlantı][]
+-   1 piksel kırılma ile yuvarlak kenarlı köşeler yapmak.
 -   Güzel bir Firebug makalesi. http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug
 -   Butonların web tarayıcılarına göre kenar içi boşluğu(padding)
     farklılıkları. [Bağlantı][2]
@@ -20,8 +20,6 @@ tags: [Ajax, CSS performansı, css3, firebug, jquery, RSS ikonları, Seçiciler,
 -   CSS nitelikli seçicileri hakkında güzel bir makale. [Bağlantı][8]
 
 
-  [Bağlantı]: http://www.askthecssguy.com/2008/03/one_pixel_notched_corners_as_u.html
-    "1 piksel"
   [2]: http://www.designdetector.com/demos/buttons-padding-demo.html
     "butonlar"
   [4]: http://elegantcode.com/2008/05/06/using-jquery-datepicker-in-aspnet/

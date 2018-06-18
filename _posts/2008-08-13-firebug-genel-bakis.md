@@ -142,7 +142,7 @@ göreceğiz.
 -   [http://www.digitalmediaminute.com/screencast/firebug-js/][]
 -   [http://www.ddj.com/development-tools/196802787][]
 -   [http://ajaxian.com/archives/ajax-debugging-with-firebug][]
--   [http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug][]
+-   http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug
 -   [http://www.google.com/search?hl=en&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=Debugging+With+Firebug&btnG=Search][]
 -   [http://www.youtube.com/watch?v=FsX6qwQqGgQ][]
 -   http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug
@@ -171,7 +171,6 @@ göreceğiz.
   [http://www.digitalmediaminute.com/screencast/firebug-js/]: http://www.digitalmediaminute.com/screencast/firebug-js/
   [http://www.ddj.com/development-tools/196802787]: http://www.ddj.com/development-tools/196802787
   [http://ajaxian.com/archives/ajax-debugging-with-firebug]: http://ajaxian.com/archives/ajax-debugging-with-firebug
-  [http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug]: http://www.reybango.com/index.cfm/2007/7/22/VIDEO-Ajax-Debugging-Using-Firebug
   [http://www.google.com/search?hl=en&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=Debugging+With+Firebug&btnG=Search]: http://www.google.com/search?hl=en&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=Debugging+With+Firebug&btnG=Search
   [http://www.youtube.com/watch?v=FsX6qwQqGgQ]: http://www.youtube.com/watch?v=FsX6qwQqGgQ
   [http://groups.google.com/group/firebug]: http://groups.google.com/group/firebug

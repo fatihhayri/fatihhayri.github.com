@@ -324,7 +324,7 @@ display:none özelliği kullanılır.
 -   [http://www.w3.org/TR/CSS21/visufx.html][]
 -   [http://www.seifi.org/css/creating-thumbnails-using-the-css-clip-property.html][]
 -   [http://www.ibloomstudios.com/articles/misunderstood_css_clip/][]
--   [http://www.w3schools.com/css/pr_pos_clip.asp][]
+-   http://www.w3schools.com/css/pr_pos_clip.asp
 
   [overflow]: /images/overflow.gif
   [overflow scroll]: /images/overflow_scroll.gif
@@ -344,4 +344,3 @@ display:none özelliği kullanılır.
   [http://www.w3.org/TR/CSS21/visufx.html]: http://www.w3.org/TR/CSS21/visufx.html
   [http://www.seifi.org/css/creating-thumbnails-using-the-css-clip-property.html]: http://www.seifi.org/css/creating-thumbnails-using-the-css-clip-property.html
   [http://www.ibloomstudios.com/articles/misunderstood_css_clip/]: http://www.ibloomstudios.com/articles/misunderstood_css_clip/
-  [http://www.w3schools.com/css/pr_pos_clip.asp]: http://www.w3schools.com/css/pr_pos_clip.asp

@@ -5,7 +5,7 @@ Date: 2007-02-24 16:03
 Category: Kitaplar
 ---
 
-![][100]Türklerin arap yarım adası ve balkanları kaybetlerinin üzerinden
+<span class="kitap-resmi">![][100]</span> Türklerin arap yarım adası ve balkanları kaybetlerinin üzerinden
 daha 100 yıl bile geçmemişken Türk milletinin bu yörelere olan bu kadar
 alakasızlığı ilginç. Bir zamanlar Şam, Medine, selanik vb. G.Antep,
 Manisa, Edirne gibi bizim şehirlerimizdi. Hala kültürümüz oralarda ama

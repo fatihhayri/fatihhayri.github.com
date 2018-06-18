@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [İslam, Osman Turan, Saltuk Buğra Han, Selçuklular, Süleyman Şah, Türk Tarihi, Türkler]
 ---
 
-![Selçuklular ve İslamiyet][]Tarihi seviyorum ama bu kitap ile
+<span class="kitap-resmi">![Selçuklular ve İslamiyet][]</span> Tarihi seviyorum ama bu kitap ile
 birlikte anladımki bilgilerim genelde yakın tarih ve Osmanlı tarihi
 hakkında. Selçuklu ve öncesi hakkında pek bilgim yok. Bu dönem hakkında
 daha fazla kitap okumalıyım. Kitap'dan aldığım bir kaç önemli not:

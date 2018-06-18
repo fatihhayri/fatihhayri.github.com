@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [1960, adnan, darbe, idam, Kitaplar, menderes, roman]
 ---
 
-![Adnan Menderes’in Günlüğü - Taşkın Tuna][]Kitabı ben ilk önce
+<span class="kitap-resmi">![Adnan Menderes’in Günlüğü - Taşkın Tuna][]</span> Kitabı ben ilk önce
 Roman olduğunu bilmeden okudum. Şahsen şaşırdım. Çünkü kitabın yazarı
 kitabı Adnan Menderes'in ruhunu çağırıp onun ağzından yazmış gibi
 anlatıyor. Sonra bu kitabın bu şekilde kurgulanmış belgelerle yazılmış

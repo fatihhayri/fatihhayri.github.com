@@ -25,7 +25,7 @@ tags: [CSS, firebug, Firefox, jquery, Monitör çözünürlüğü, seo, tablo, T
 -   jQuery ile otomatik dipnot yapmak. [Bağlantı][11]
 -   Monitör çözünürlükleri ve site tasarımları üzerine güzel bir makale.
     Kırık bağlantı.
--   Mailing hakkında geniş bilgi. [Bağlantı][13]
+-   Mailing hakkında geniş bilgi. http://tutorialblog.org/resources-for-creating-testing-and-sending-html-emails/
 -   Web standartlarında yanlış anladığımız 5 konu. Kırık bağlantı.
 
 
@@ -39,4 +39,3 @@ tags: [CSS, firebug, Firefox, jquery, Monitör çözünürlüğü, seo, tablo, T
   [7]: http://www.mafiamax.com/2008/08/seo-dedigin-tek-disi-kalmis-canavar.html
   [10]: http://yuiblog.com/blog/2008/08/13/yui3pr1/ "yui 3"
   [11]: http://www.cssnewbie.com/generating-automatic-website-footnotes-with-jquery/
-  [13]: http://tutorialblog.org/resources-for-creating-testing-and-sending-html-emails/

@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![Osmanlı Alimleri ve Sanatkarları][]Osmanlı Uygarlığının temel taşları
+<span class="kitap-resmi">![Osmanlı Alimleri ve Sanatkarları][]</span> Osmanlı Uygarlığının temel taşları
 olan alim ve sanatkarları anlatan eser, Osmanlı'nın son dönem
 tarihçilerinden Ahmed Refik tarafından hazırlanmıştır. Mimar Sinan'dan,
 İbrahim Müteferrika'ya zirve şahsiyetlerinin ilginç biyoğrafilerini bu
@@ -15,4 +15,4 @@ hatırlatan ahmet Refik'ten tarih severlerin okuması gereken bir eser.
 Bir zamanlar dünyayı parmağında oynatan insanları şimdi insanların
 hatırlarında bile yer almadığını görmek üzücü
 
-  [Osmanlı Alimleri ve Sanatkarları]: /images/osmanli_alim.thumbnail.jpg
+  [Osmanlı Alimleri ve Sanatkarları]: /images/osmanli_alim.jpg

@@ -19,8 +19,7 @@ hoşgörü, Müslüman'a tuzak şeklinde gelişen bu diyaloga, olanları göz
 bakabiliriz. Bu faaliyette Hz. İsa, etrafında bütünleşmemiz istenecek
 kadar hep ön planda ve gündemde, Hz. Muhammed'in adı bile geçmemektedir.
 Neresinden bakılırsa bakılsın Dinlerarası Diyalog, Müslüman için bir
-çıkmaz sokaktır... [http://kitap.antoloji.com/kitap.asp?kitap=225961][]
+çıkmaz sokaktır... http://kitap.antoloji.com/kitap.asp?kitap=225961
 
   [Diyalog İhaneti]: /images/diyalog_ihaneti_yumni_sezer.jpg
     "Diyalog İhaneti"
-  [http://kitap.antoloji.com/kitap.asp?kitap=225961]: http://kitap.antoloji.com/kitap.asp?kitap=225961

@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [beylikler, Feridun Emecen, Kitaplar, Orhan-gazi, Osman-gazi, osmanlı]
 ---
 
-![][100] Kitap Osmanlıların ilk dönemlerini anlatan bir eser. Beylikler
+<span class="kitap-resmi">![][100]</span> Kitap Osmanlıların ilk dönemlerini anlatan bir eser. Beylikler
 dönemine ait belge ve bilgilerin az olması asıl sorunu teşkil ediyor.
 Eserin bilimsel bir çalışma olması biraz akıcılığı ve okunabilirliği
 etkilesede verdiği bilgiler güzel. Kitabın arkapağından : Bu kitap,

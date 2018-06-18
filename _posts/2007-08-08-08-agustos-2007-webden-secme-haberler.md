@@ -21,7 +21,6 @@ tags: [CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress]
 -   "Blogcular sendika kurma yolunda" ben isminide buldum "Günlük
     Sendikası"
 -   "Web standartlarının kralı Jeffrey Zeldman" adlı bir makale.
-    [Link][6]
 -   Muhammet Sevim sFIR 3.0 versiyonu ve yeniliklerini anlatmış. Link
 -   Tek satır CSS kodla IE 6 göçertmişler. 
 -   Web sitelerinde dinamik yardımı anlatan güzel bir makale. [Link][8]
@@ -39,6 +38,4 @@ tags: [CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress]
   [3]: http://www.seobook.com/archives/002380.shtml "wordpress"
   [4]: http://www.eburhan.com/jquery-dunyasina-adim-atiyoruz/
     "Jquery Dünyasına adım"
-  [6]: http://www.businessweek.com/innovate/content/aug2007/id2007086_670396.htm
-    "Jeffry Zeldman"
   [8]: http://uxmatters.com/MT/archives/000191.php "Web Formlar"

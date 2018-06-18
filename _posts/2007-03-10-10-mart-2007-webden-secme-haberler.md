@@ -21,7 +21,7 @@ tags: [adsl, bandtwith, CSS, Haberler, ie7, Javascript, optimize, Web Standartla
     gelen tepkiler nedeni ile kalktı yasak. Bence İnternet İhtisas
     Mahkemeleri(İİM) olmalı çünkü internet üzerinden bir çok suç
     işleniyor ve cezasız kalıyor ve bir çok olaya haddinden fazla ve
-    bilinçsiz cezalar veriliyor. [Link][5]
+    bilinçsiz cezalar veriliyor.
 -   NTVMSNBC.com sitesini yenilemiş. Daha güzel olmuş. İlk dikkatimi
     çekenler video eklemişler, görselliği biraz düzeltmişler kodlama web
     standartlarına uygun olmaması. [Link][6]
@@ -39,7 +39,6 @@ tags: [adsl, bandtwith, CSS, Haberler, ie7, Javascript, optimize, Web Standartla
     "Link"
   [2]: http://tutorialblog.org/grid-systems-in-web-design/ "Link"
   [3]: http://www.codinghorror.com/blog/archives/000807.html "Link"
-  [5]: http://www.ntvmsnbc.com/news/401979.asp "Link"
   [6]: http://www.ntvmsnbc.com/ "Link"
   [7]: http://www.turktelekom.com.tr/ "Link"
   [8]: http://www.brothercake.com/reference/ie7/starplus-tests.html

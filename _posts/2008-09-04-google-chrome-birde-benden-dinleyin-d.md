@@ -114,7 +114,7 @@ Genel kaynak
 -   [http://blogs.zdnet.com/hardware/?p=2481][]
 -   [http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html][]
 -   [http://lifehacker.com/5044484/google-chrome-first-look][]
--   [http://www.readwriteweb.com/archives/does_google_have_rights_to_all.php][]
+-   http://www.readwriteweb.com/archives/does_google_have_rights_to_all.php
 -   [http://mashable.com/2008/09/03/awesome-google-chrome/][]
 -   [http://mashable.com/2008/09/02/chrome-windows/][]
 -   [http://www.niallkennedy.com/blog/2008/09/google-chrome.html][]
@@ -160,7 +160,6 @@ javascript motoru 
   [http://blogs.zdnet.com/hardware/?p=2481]: http://blogs.zdnet.com/hardware/?p=2481
   [http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html]: http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html
   [http://lifehacker.com/5044484/google-chrome-first-look]: http://lifehacker.com/5044484/google-chrome-first-look
-  [http://www.readwriteweb.com/archives/does_google_have_rights_to_all.php]: http://www.readwriteweb.com/archives/does_google_have_rights_to_all.php
   [http://mashable.com/2008/09/02/chrome-windows/]: http://mashable.com/2008/09/02/chrome-windows/
   [http://www.niallkennedy.com/blog/2008/09/google-chrome.html]: http://www.niallkennedy.com/blog/2008/09/google-chrome.html
   [http://gigaom.com/2008/09/02/why-did-google-abandon-firefox/]: http://gigaom.com/2008/09/02/why-did-google-abandon-firefox/

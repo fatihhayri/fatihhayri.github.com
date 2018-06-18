@@ -15,7 +15,6 @@ tags: [Ajax, akordiyon, Google-Search, jquery, mailing, mootools, performans, Sc
 -   Script injection ataklarını anlamak. [Bağlantı][4]
 -   Web sitelerinde kullanıcılara yazı boyutu rengi vb. değişiklikleri
     değiştirme imkanı vermek. Örnekler, fikirler ve tartışmalar
-    [Bağlantı][5]
 -   5 jQuery sorusu ve cevabı.
 -   Hasan Köroğlu sitemde arama yaptığında aranan kriterin farklı renkte
     gösterilmesi halinde daha iyi olacağını söyledi bende [search     hilite][] eklentisi ile bunu hallettim. Öneri için teşekkürler Hasan
@@ -38,8 +37,6 @@ tags: [Ajax, akordiyon, Google-Search, jquery, mailing, mootools, performans, Sc
     "css ve tipografi"
   [4]: http://aspalliance.com/1648_Understanding_Script_Injection_Attacks.all
     "script injection"
-  [5]: http://www.smashingmagazine.com/2008/06/05/style-switchers-are-back-ideas-examples-and-a-contest/
-    "web sitemi değiştir"
   [search hilite]: http://www.blog.mediaprojekte.de/cms-systeme/wordpress/wordpress-plugin-search-hilite/
     "search hilite"
   [8]: http://roshanbh.com.np/2008/06/accordion-menu-using-jquery.html

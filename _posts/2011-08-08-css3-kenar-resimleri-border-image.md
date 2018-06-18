@@ -281,7 +281,7 @@ uygulanabilirliği var.
 -   [http://www.w3.org/TR/css3-background/#border-images][]
 -   [http://www.css3.info/preview/border-image/][]
 -   [http://www.sitepoint.com/css3-border-image/][] (güzel)
--   [http://css-tricks.com/6883-understanding-border-image/][]
+-   [http://css-tricks.com/understanding-border-image/][]
 -   [http://www.useragentman.com/blog/2011/03/29/pixel-perfect-css3-border-image-in-depth/][]
 -   [http://www.seyfullahkilic.com/web-tasariminizi-css3-ile-gelecege-tasiyin][]
 -   [http://www.zurb.com/playground/awesome-overlays][] (grafik)
@@ -309,7 +309,7 @@ uygulanabilirliği var.
   [http://www.w3.org/TR/css3-background/#border-images]: http://www.w3.org/TR/css3-background/#border-images
   [http://www.css3.info/preview/border-image/]: http://www.css3.info/preview/border-image/
   [http://www.sitepoint.com/css3-border-image/]: http://www.sitepoint.com/css3-border-image/
-  [http://css-tricks.com/6883-understanding-border-image/]: http://css-tricks.com/6883-understanding-border-image/
+  [http://css-tricks.com/understanding-border-image/]: http://css-tricks.com/understanding-border-image/
   [http://www.useragentman.com/blog/2011/03/29/pixel-perfect-css3-border-image-in-depth/]: http://www.useragentman.com/blog/2011/03/29/pixel-perfect-css3-border-image-in-depth/
   [http://www.seyfullahkilic.com/web-tasariminizi-css3-ile-gelecege-tasiyin]: http://www.seyfullahkilic.com/web-tasariminizi-css3-ile-gelecege-tasiyin
   [http://www.zurb.com/playground/awesome-overlays]: http://www.zurb.com/playground/awesome-overlays

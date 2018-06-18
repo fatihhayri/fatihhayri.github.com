@@ -23,7 +23,7 @@ tags: [CSS, CSS Anaçatısı, CSS ile form yapmak, CSS kodlarını optimize etme
     anlatan güzel bir makale. 
 -   CSS hakkında bilmemiz gerekenler, 9 başlık altında. Kırık bağlantı.
 -   jQuery ile yapılmış güzel bir site girişi scripti. [Bağlantı][9]
--   SmashingMagazine'den çok güzel bir WordPress teması. [Bağlantı][10]
+-   SmashingMagazine'den çok güzel bir WordPress teması.
 
 
   [Bağlantı]: http://www.smashingmagazine.com/2008/08/18/7-principles-of-clean-and-optimized-css-code/
@@ -35,5 +35,3 @@ tags: [CSS, CSS Anaçatısı, CSS ile form yapmak, CSS kodlarını optimize etme
   [5]: http://www.dynamicdrive.com/dynamicindex4/stepcarousel.htm
   [9]: http://nettuts.com/javascript-ajax/build-a-top-panel-with-jquery/
     "site girişi"
-  [10]: http://www.smashingmagazine.com/2008/08/20/notepad-chaos-a-free-wordpress-theme/
-    "wordpress teması"

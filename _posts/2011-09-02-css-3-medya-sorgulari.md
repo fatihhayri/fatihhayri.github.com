@@ -418,7 +418,7 @@ mi ama olmadı.
 -   [http://code.google.com/p/css3-mediaqueries-js/][] (ie eski sürümleri için js kodu)
 -   [http://blog.iwalt.com/2010/06/targeting-the-iphone-4-retina-display-with-css3-media-queries.html][] (iphone 4 için )
 -   [http://aralbalkan.com/3331][] (iphone 4 için)
--   [http://css-tricks.com/6731-css-media-queries/][]
+-   http://css-tricks.com/6731-css-media-queries
 -   [http://colly.com/][] (örnek site)
 -   [http://www.opera.com/docs/specs/presto27/css/mediaqueries/][] (Opera desteği)
 -   [http://www.cloudfour.com/ipad-css/][]
@@ -453,7 +453,6 @@ mi ama olmadı.
   [http://code.google.com/p/css3-mediaqueries-js/]: http://code.google.com/p/css3-mediaqueries-js/
   [http://blog.iwalt.com/2010/06/targeting-the-iphone-4-retina-display-with-css3-media-queries.html]: http://blog.iwalt.com/2010/06/targeting-the-iphone-4-retina-display-with-css3-media-queries.html
   [http://aralbalkan.com/3331]: http://aralbalkan.com/3331
-  [http://css-tricks.com/6731-css-media-queries/]: http://css-tricks.com/6731-css-media-queries/
   [http://colly.com/]: http://colly.com/
   [http://www.opera.com/docs/specs/presto27/css/mediaqueries/]: http://www.opera.com/docs/specs/presto27/css/mediaqueries/
   [http://www.cloudfour.com/ipad-css/]: http://www.cloudfour.com/ipad-css/

@@ -9,7 +9,7 @@ tags: [Ajax, CSS, Haberler, html, Javascript, web2.0]
 -   CSS ile form yapmak hakkında güzel bir makale. [Link][]
 -   -CSS ile değişik boyutlara uyarlanabilen bir buton örneği-
 -   Iphone uygulama olarak web2.0 yani web üzerinden uygulama
-    çalıştıracakmış. Peki nasıl uygulama geliştireceğiz? [Link][2]
+    çalıştıracakmış. Peki nasıl uygulama geliştireceğiz?
 -   Google FeedBurner'ı aldı ilk icraatı Pro paketeni ücretsiz yapmak
     olmuş. Güzel [Link][3]
 -   Beğenerek takip ettiğim ceviz.net kapanmış. Sorunlar aşılır ve
@@ -20,7 +20,6 @@ tags: [Ajax, CSS, Haberler, html, Javascript, web2.0]
 
 
   [Link]: http://www.uie.com/articles/web_forms/ "Link"
-  [2]: http://developer.apple.com/iphone/designingcontent.html "Link"
   [3]: http://googlesystem.blogspot.com/2007/07/google-makes-feedburner-pro-free.html
     "Link"
   [4]: http://www.oyyla.com/Teknoloji/Ceviz-net-Kapandi/ "Link"

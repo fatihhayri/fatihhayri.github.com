@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![bumillet.jpg][]Milletimizin çektiği çileleri, 1940'lardaki dünya
+<span class="kitap-resmi">![bumillet.jpg][]</span> Milletimizin çektiği çileleri, 1940'lardaki dünya
 halindeki şartlarda anlatan O.Yüksel Serdengeçti. Günümüz Türkiyesinde
 hala benzer sorunlarla uğraştığımızı düşünürsek ne kadar yerimizde
 saydığımızı gösteriyor.  O.Yüksel Serdengeçti, Doğu

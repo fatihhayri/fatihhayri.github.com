@@ -6,7 +6,7 @@ Category: Kitaplar
 tags: [Kitaplar]
 ---
 
-![Tanzîmât Paşaları Âlî ve Fuâd Paşalar][]](/images/tanzimat_pasalari.jpg "Tanzîmât Paşaları Âlî ve Fuâd Paşalar")
+<span class="kitap-resmi">![Tanzîmât Paşaları Âlî ve Fuâd Paşalar][]](/images/tanzimat_pasalari.jpg "Tanzîmât Paşaları Âlî ve Fuâd Paşalar")</span>
 
 İnsanların değeri ölünce ve zamanla anlaşılıyor. Bu her meslek dalı için geçerli. Hele bir
 imparatorluğu yönetiyorsanız. Devrinde bir çok icraatı eleştirilen Ali

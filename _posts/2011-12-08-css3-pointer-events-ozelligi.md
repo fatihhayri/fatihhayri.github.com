@@ -89,14 +89,13 @@ CSS ile halledebilmemiz güzel.
 -   [https://developer.mozilla.org/en/CSS/pointer-events][]
 -   [http://robertnyman.com/2010/03/22/css-pointer-events-to-allow-clicks-on-underlying-elements/][]
 -   [http://robertnyman.com/css3/pointer-events/pointer-events.html][]
--   [http://css-tricks.com/6379-pointer-events-current-nav/][]
+-   http://css-tricks.com/6379-pointer-events-current-nav
 -   [http://hacks.mozilla.org/2009/12/pointer-events-for-html-in-firefox-3-6/][]
 -   [http://www.webkit.org/specs/PointerEventsProperty.html][]
 
   [https://developer.mozilla.org/en/CSS/pointer-events]: https://developer.mozilla.org/en/CSS/pointer-events
   [http://robertnyman.com/2010/03/22/css-pointer-events-to-allow-clicks-on-underlying-elements/]: http://robertnyman.com/2010/03/22/css-pointer-events-to-allow-clicks-on-underlying-elements/
   [http://robertnyman.com/css3/pointer-events/pointer-events.html]: http://robertnyman.com/css3/pointer-events/pointer-events.html
-  [http://css-tricks.com/6379-pointer-events-current-nav/]: http://css-tricks.com/6379-pointer-events-current-nav/
   [http://hacks.mozilla.org/2009/12/pointer-events-for-html-in-firefox-3-6/]: http://hacks.mozilla.org/2009/12/pointer-events-for-html-in-firefox-3-6/
   [http://www.webkit.org/specs/PointerEventsProperty.html]: http://www.webkit.org/specs/PointerEventsProperty.html
 

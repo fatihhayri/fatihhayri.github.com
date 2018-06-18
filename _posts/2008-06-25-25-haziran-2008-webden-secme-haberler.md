@@ -10,7 +10,7 @@ tags: [ağaç menü, akordiyon, css editörleri, farklı tarayıcılara göre ko
 -   Farklı tarayıcılara göre kod yazarken dikkate alacağımız ipuçları.
     Kırık bağlantı.
 -   SmashingMagazine.com CSS editörleri hakkında güzel bir bilgi
-    derlemesi yapmış. [Bağlantı][2] 
+    derlemesi yapmış.
 -   Adım adım PSD'den HTML sayfa kodlama. [Bağlantı][3] 
 -   jQuery ağaç menü örnekleri. Kırık bağlantı.
 -   jQuery içiçe iki açılır menü. [Bağlantı][5] 
@@ -27,8 +27,6 @@ tags: [ağaç menü, akordiyon, css editörleri, farklı tarayıcılara göre ko
 
   [Bağlantı]: http://lifehacker.com/396312/power-users-guide-to-firefox-3
     "Firefox 3"
-  [2]: http://www.smashingmagazine.com/2008/06/19/css-editors-reviewed/c
-    "css editörleri"
   [3]: http://nettuts.com/site-builds/from-psd-to-html-building-a-set-of-website-designs-step-by-step/
   [5]: http://www.givainc.com/labs/mcdropdown_jquery_plugin.htm
     "jquery içiçe menü"
