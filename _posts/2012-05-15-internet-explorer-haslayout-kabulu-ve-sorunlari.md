@@ -111,8 +111,7 @@ Kalın sağlıcakla
 -   [http://reference.sitepoint.com/css/haslayout][]
 -   [http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx][]
     (detaylı, kaynağından)
--   [http://css-class.com/articles/explorer/guillotine/][] (hasLayout
-    hatası)
+-   http://css-class.com/articles/explorer/guillotine/
 -   [http://www.alsacreations.com/article/lire/76-haslayout-internet-explorer.html][]
     (farklı dil)
 -   [http://jaspan.com/ie-inherited-margin-bug-form-elements-and-haslayout][]
@@ -131,7 +130,6 @@ Kalın sağlıcakla
   [%7(makaleyi yazdığımda idi şimdi %4,5 kadar düştü)]: http://labs.sahibinden.com/yazi/sahibinden-com-ziyaretcileri-2011-yili-teknoloji-analizi/
   [http://reference.sitepoint.com/css/haslayout]: http://reference.sitepoint.com/css/haslayout
   [http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx]: http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx
-  [http://css-class.com/articles/explorer/guillotine/]: http://css-class.com/articles/explorer/guillotine/
   [http://www.alsacreations.com/article/lire/76-haslayout-internet-explorer.html]: http://www.alsacreations.com/article/lire/76-haslayout-internet-explorer.html
   [http://jaspan.com/ie-inherited-margin-bug-form-elements-and-haslayout]: http://jaspan.com/ie-inherited-margin-bug-form-elements-and-haslayout
   [http://onwebdev.blogspot.com/2011/02/css-internet-explorer-bugs-and.html]: http://onwebdev.blogspot.com/2011/02/css-internet-explorer-bugs-and.html
