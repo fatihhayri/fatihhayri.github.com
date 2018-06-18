@@ -7,7 +7,7 @@ tags: [Apple.com, Freelance, Google Chrome, WordPress]
 ---
 
 -   Google Chrome'un kızıştırdığı pazarda Firefox yeni javascript
-    motorunun daha hızlı olduğunu idda ediyor. [Bağlantı][]
+    motorunun daha hızlı olduğunu idda ediyor.
 -   Google Chrome bir çok özelliğinin yanında beni en çok etkileyen
     javascript yorumlama hızı. test sonuçları ortada. Firefox'un uzun
     süredir üzerinde çalıştığı yeni javascript yorumlama sistemide
@@ -34,8 +34,6 @@ tags: [Apple.com, Freelance, Google Chrome, WordPress]
     bir video ders. 
 
 
-  [Bağlantı]: http://weblogs.mozillazine.org/roadmap/archives/2008/09/tracemonkey_update.html
-    "Google Chrom - Firefox"
   [1]: http://news.cnet.com/8301-1001_3-10030888-92.html?tag=newsEditorsPicksArea.0
     "google chrome test"
   [3]: http://www.smashingmagazine.com/2008/09/03/40-creative-design-layouts-getting-out-of-the-box/

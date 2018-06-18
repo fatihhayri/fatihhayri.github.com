@@ -79,8 +79,7 @@ varsa ve slimbox bu nesnenin altında kalıyorsa. slimebox.css da
     (kaynak)
 -   http://scripts.ajaxflakes.com/category/lightbox/
 -   http://www.ajaxrain.com/tag.php?tag=popup&page=1
--   [http://jadedpixel.stikipad.com/design/show/A+Better+Lightbox][]
-    (karşılaştırma)
+-   jadedpixel.stikipad.com/design/show/A+Better+Lightbox
 -   [http://homepage.mac.com/yukikun/software/slimbox_ex/][]
     (geliştirilmiş sildebox)
 -   http://www.chazzuka.com/blog/index.php?p=21
@@ -92,6 +91,5 @@ varsa ve slimbox bu nesnenin altında kalıyorsa. slimebox.css da
   [Slimbox]: http://www.digitalia.be/software/slimbox
   [http://particletree.com/features/lightbox-gone-wild/]: http://particletree.com/features/lightbox-gone-wild/
   [http://clientside.cnet.com/cnet.gf/docs/files/common/3rdParty/Slimbox/slimbox-js.html]: http://clientside.cnet.com/cnet.gf/docs/files/common/3rdParty/Slimbox/slimbox-js.html
-  [http://jadedpixel.stikipad.com/design/show/A+Better+Lightbox]: http://jadedpixel.stikipad.com/design/show/A+Better+Lightbox
   [http://homepage.mac.com/yukikun/software/slimbox_ex/]: http://homepage.mac.com/yukikun/software/slimbox_ex/
   [http://www.phatfusion.net/lightbox/index.htm]: http://www.phatfusion.net/lightbox/index.htm

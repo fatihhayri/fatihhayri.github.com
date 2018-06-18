@@ -8,7 +8,7 @@ tags: [feedburner, Haberler, html5, Javascript, WordPress]
 
 -   Arkadaşlar uzun süredir düşünüp yapmadığım RSS'imi feedburder'a
     taşıma işlemini gerçekleştirdim. RSS'den beslenenlere duyurulur.
-    [http://feeds.feedburner.com/fatihhayri][]
+    feeds.feedburner.com/fatihhayri
 -   Daha önceki haberlerimizde de bahsettiğimiz gibi HTML5/XHTML2.0
     çalışmaları devam ediyor. Çalışma kurulu açıklandı ve şimdi de
     kullanıcı ve programcılardan bilgi almak için e-posta listesi
@@ -26,7 +26,6 @@ tags: [feedburner, Haberler, html5, Javascript, WordPress]
 -   CSS ile hazırlanmış 25 güzel kodlama. [Link][9]
 
 
-  [http://feeds.feedburner.com/fatihhayri]: http://feeds.feedburner.com/fatihhayri
   [2]: http://www.smashingmagazine.com/2007/03/14/css-based-navigation-menus-modern-solutions/
     "Link"
   [3]: http://www.cssplay.co.uk/menus/index.html "Link"

@@ -16,7 +16,7 @@ tags: [CSS, Google Analytics, Haberler, html, jquery, mootools, mynet, seo, web2
 -   5 unutulmuş Html elementini anlatan güzel bir İngilizce makale.
     [Link][4]
 -   70 adet en iyi CSS kodu'nun sıralandığı mükemmel bir makale. Herkese
-    bu makaleyi favorilerine eklemesini öneririm. [Link][5]
+    bu makaleyi favorilerine eklemesini öneririm.
 -   JQuery ile kolayca ajax kullanmayı anlatan İngilizce makale.
     [Link][6]
 -   CSS ile Mac menü yapımını anlatan bir makale. Görünüm harika.
@@ -33,8 +33,6 @@ tags: [CSS, Google Analytics, Haberler, html, jquery, mootools, mynet, seo, web2
   [Link]: http://livepipe.net/projects/control_textarea/ "Link"
   [2]: http://analytics.blogspot.com/2007/05/new-version-of-google-analytics.html
   [4]: http://www.sitepoint.com/blogs/2007/04/16/html-the-top-five-forgotten-elements/
-    "Link"
-  [5]: http://www.smashingmagazine.com/2007/05/10/70-expert-ideas-for-better-css-coding/
     "Link"
   [6]: http://www.sitepoint.com/article/ajax-jquery "Link"
   [7]: http://www.ndesign-studio.com/blog/mac/css-dock-menu "Link"

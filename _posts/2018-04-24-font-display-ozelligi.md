@@ -87,7 +87,7 @@ Test için yukarıdaki sayfayı ayrı bir pencerede açıp Chrome Dev Tools'dan 
 
 Ayrıca [https://font-display.glitch.me/](https://font-display.glitch.me/) sitesindeki örnek ve Umar Hansa'nın [https://www.youtube.com/watch?v=yRrrL0Mg1pM&t=518s](https://www.youtube.com/watch?v=yRrrL0Mg1pM&t=518s) anlatımı uygulamada nasıl göründüğünü görmek için güzel kaynaklar.
 
-<p class="ciu_embed" data-feature="css-font-rendering-controls" data-periods="future_1,current,past_1,past_2">  <a href="http://caniuse.com/#feat=css-font-rendering-controls">Can I Use css-font-rendering-controls?</a> Data on support for the css-font-rendering-controls feature across the major browsers from caniuse.com. </p>
+{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="11.3" si="6.2" %}
 
 ## Sonuç
 

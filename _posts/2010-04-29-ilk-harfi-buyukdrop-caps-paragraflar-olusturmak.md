@@ -250,7 +250,7 @@ p:first-child:first-letter{
 -   [http://azizname.blogspot.com/2006/10/magazine-style-drop-caps.html][]
 -   [http://dailydropcap.com/][] (günlük örnekler)
 -   http://jackosborne.co.uk/articles/pseudo-drop-caps
--   [http://www.akxl.net/labs/articles/text-wrapped-drop-caps-in-css-using-the-first-letter-selector/][]
+-   http://www.akxl.net/labs/articles/text-wrapped-drop-caps-in-css-using-the-first-letter-selector
 -   [http://www.users.globalnet.co.uk/~arcus/html/dropcaps.html][]
 
   [first-letter]: https://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
@@ -277,5 +277,4 @@ p:first-child:first-letter{
   [http://css-tricks.com/snippets/css/drop-caps/]: http://css-tricks.com/snippets/css/drop-caps/
   [http://azizname.blogspot.com/2006/10/magazine-style-drop-caps.html]: http://azizname.blogspot.com/2006/10/magazine-style-drop-caps.html
   [http://dailydropcap.com/]: http://dailydropcap.com/
-  [http://www.akxl.net/labs/articles/text-wrapped-drop-caps-in-css-using-the-first-letter-selector/]: http://www.akxl.net/labs/articles/text-wrapped-drop-caps-in-css-using-the-first-letter-selector/
   [http://www.users.globalnet.co.uk/~arcus/html/dropcaps.html]: http://www.users.globalnet.co.uk/~arcus/html/dropcaps.html

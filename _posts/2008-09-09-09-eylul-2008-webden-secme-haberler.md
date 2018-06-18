@@ -21,10 +21,9 @@ tags: [Fix Feed, form, gameQuery, Google Chrome, ie6, jquery, poster, rss, WordP
 -   Internet Explorer 6 bloklamak için. [Bağlantı][10]
 -   İnternet Tarayıcıları savaşı 2.0
 -   eBurhan Fix Feed v1.1 yayınlandı… - eburhan.com - kırık
--   Internet Explorer 8'deki CSS gelişmeleri. [Bağlantı][13]
+-   Internet Explorer 8'deki CSS gelişmeleri.
 -   Google Chrome'un bilinmeyen yanları. [Bağlantı][14]
 -   SmashingMagazine'den güzel bir WordPress teması daha Agregado.
-    [Bağlantı][15]
 -   12 adet WordPress RSS eklentisi. [Bağlantı][16]
 
 
@@ -41,11 +40,7 @@ tags: [Fix Feed, form, gameQuery, Google Chrome, ie6, jquery, poster, rss, WordP
   [6]: http://gamequery.onaluf.org/#description "GameQuery"
   [8]: http://sixrevisions.com/resources/cheat_sheets_for_web_designers/
   [10]: http://css-tricks.com/ie-6-blocker-script/ "ie 6 blok"
-  [13]: http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx
-    "ie 8"
   [14]: http://lifehacker.com/5045904/the-power-users-guide-to-google-chrome
     "Google Chrome"
-  [15]: http://www.smashingmagazine.com/2008/09/08/agregado-a-free-wordpress-theme/
-    "WordPress teması"
   [16]: http://mashable.com/2008/09/08/rss-plugins-for-wordpress/
     "WordPress RSS eklentisi"

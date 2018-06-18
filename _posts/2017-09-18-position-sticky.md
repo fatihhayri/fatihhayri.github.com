@@ -57,9 +57,7 @@ Javascript ile çözüm oluşturmak için aşağıdaki çözümlerden biri terci
 
 Kullanıcı ihtiyacı olan bir özellik. Standartlaşması süper. W3C kullanıcı ihtiyaçlarını karşılamada çok yavaş kalıyor. Bu nedenle birçok şeyi olması gerektiği gibi değil çakma çözümler ile yapıyoruz. Umarım zamanla bu değişir.
 
-**Tarayıcı desteği**
-
-<p class="ciu_embed" data-feature="css-sticky" data-periods="future_1,current,past_1,past_2">  <a href="http://caniuse.com/#feat=css-sticky">Can I Use css-sticky?</a> Data on support for the css-sticky feature across the major browsers from caniuse.com. </p>
+{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+ (-webkit)" si="6.2" %}
 
 
 ## Kaynaklar

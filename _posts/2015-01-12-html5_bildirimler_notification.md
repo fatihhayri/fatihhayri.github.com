@@ -63,20 +63,8 @@ Başlık, içerik, ikon, etiketleme, metin başlangıç yönü ve dil seçenekle
 
 ![HTML5 bilgilendirme][html5_bilgilendirme]
 
-**Tarayıcı Desteği**
 
-|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
-|:-----------------:|:---------------:|:-------------------:|
-|**22**|**-**|**22**|
-{: .tarayici-uyumi}
-
-**Mobil Tarayıcılar**
-
-|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
-|:------------------------:|:----------------------:|:-------------------:|
-|**-**|**-**|**-**|
-{: .tarayici-uyumi}
-
+{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
 
 Mobil tarafında sadece Firefox(onunda desteği az) destekliyor. Diğer mobil tarayıcılar da desteklerse süper olacaktır.
 
@@ -92,9 +80,4 @@ Mobil tarafında sadece Firefox(onunda desteği az) destekliyor. Diğer mobil ta
  - [http://blog.teamtreehouse.com/adding-desktop-notifications-to-your-web-applications](http://blog.teamtreehouse.com/adding-desktop-notifications-to-your-web-applications)
  - [http://blog.brunoscopelliti.com/start-using-web-notification](http://blog.brunoscopelliti.com/start-using-web-notification)
 
-[firefox]: /images/ff.png
-[chrome]: /images/ch.png
-[explorer]: /images/ie.png
-[msafari]:/images/sm.png
-[android]:/images/an.png
 [html5_bilgilendirme]: /images/html5_bilgilendirme1.jpg

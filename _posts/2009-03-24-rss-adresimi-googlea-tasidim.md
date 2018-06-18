@@ -11,7 +11,7 @@ vermeye başladı. Bende RSS taşıyayım dedim. Yeni adresim;
 [http://feeds2.feedburner.com/fatihhayri][] oldu. Eski RSS'ler 2009
 sonuna kadar bu adres yönlenecekmiş. 
 
-Link değişmiş. [http://feeds.feedburner.com/fatihhayri](http://feeds.feedburner.com/fatihhayri)
+Link değişmiş. feeds.feedburner.com/fatihhayri
 
 ## Kaynak
 

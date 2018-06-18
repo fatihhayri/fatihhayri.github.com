@@ -8,8 +8,8 @@ tags: [Dreamweaver, kodu gizle]
 
 ![][100]Css ile kod yazarken gereksiz bazı kodlar kod yazma hızımı
 kesiyordu, bazen hızla kod yazarken arada başka kodları yazdığımda
-olmuyor değildi. Bu sorunumu [friendfeed][]'de [paylaştım][] ve sağolsun
-arkadaşlar bu konuda bana yardımcı oldu. [Şenol][]'un yardımları ile
+olmuyor değildi. Bu sorunumu friendfeed'de paylaştım ve sağolsun
+arkadaşlar bu konuda bana yardımcı oldu. Şenol'un yardımları ile
 sorunun çözümünü bulduk.
 
 Bu ipucunu burada paylaşma ihtiyacı duydum.
@@ -72,14 +72,10 @@ unutmayın.
 
 Şenol'un hazırladığı
 
-[CodeHints.xml dosyasını indirmek için tıklayınız. (Şenol'un geliştridiği)][]
+CodeHints.xml dosyasını indirmek için tıklayınız. (Şenol'un geliştridiği)
 
 Yazının sonunda Şenol'a tekrar teşekkürlerimi sunarım.
 
 
   [100]: /images/code_hig-300x194.gif
-  [friendfeed]: http://friendfeed.com/fatihhayri "friendfeed"
-  [paylaştım]: http://ff.im/efoQ4 "paylaştım"
-  [Şenol]: http://friendfeed.com/senol1 "Şenol"
   [CodeHints.xml dosyasını indirmek için tıklayınız.]: /dokumanlar/CodeHints.rar
-  [CodeHints.xml dosyasını indirmek için tıklayınız. (Şenol'un   geliştridiği)]: http://www.4shared.com/file/197529116/bfc9e2ec/CodeHints.html?err=no-sess

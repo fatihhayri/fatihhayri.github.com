@@ -191,7 +191,7 @@ Hoşçakalın.
 
 ## Kaynaklar
 
--   [http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx][]
+-   http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx
 -   [http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/][]
 -   [http://www.howtocreate.co.uk/ie8.html][]
 -   [http://reference.sitepoint.com/css][]
@@ -275,8 +275,6 @@ Hoşçakalın.
   [-ms-word-wrap]: http://msdn.microsoft.com/en-us/library/ms531186%28v=VS.85%29.aspx
   [-ms-writing-mode]: http://msdn.microsoft.com/en-us/library/ms531187%28v=VS.85%29.aspx
   [-ms-zoom]: http://msdn.microsoft.com/en-us/library/ms531189%28v=VS.85%29.aspx
-  [http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx]: http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx
-    "http://msdn.microsoft.com/en-us/library/cc304082%28VS.85%29.aspx"
   [http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/]: http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/
     "http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/"
   [http://www.howtocreate.co.uk/ie8.html]: http://www.howtocreate.co.uk/ie8.html

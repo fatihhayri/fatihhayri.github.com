@@ -17,7 +17,6 @@ tags: [Ajax, google reader, ie8, jquery, json, morecss, png, rss, tipografi]
 -   RSS kullanışlı bir teknoloji, ancak bir sorunumuz varki aynı haberi
     birden fazla yerde okuyoruz ve istemediğimiz haberlerinde üzerinden
     geçiyoruz bunu filtrelemek için bazı yollar mevcut. bunlardan biri
-    [Bağlantı][8]
 -   IE8 yorumları gelmeye başladı. Javascriptteki yenilikleri.
     [Bağlantı][9]
 -   "jQuery ve JSON işlemleri" [Bağlantı][10]
@@ -41,8 +40,6 @@ tags: [Ajax, google reader, ie8, jquery, json, morecss, png, rss, tipografi]
     "Bağlantı"
   [7]: http://www.eburhan.com/css-ile-sarkan-menuler-hazirlamak/
     "css sarkan menü"
-  [8]: http://www.readwriteweb.com/archives/6_ways_to_filter_your_rss_feeds.php
-    "RSS filtrele"
   [9]: http://ejohn.org/blog/javascript-in-internet-explorer-8/
     "ie8 javascript"
   [10]: http://www.eburhan.com/jquery-ve-json-islemleri/

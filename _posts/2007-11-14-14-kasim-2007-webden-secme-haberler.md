@@ -13,7 +13,6 @@ tags: [CSS, google, Haberler, html5, ie, Javascript, SmashMagazine, sosyal-imlem
     irdelemişler.
 -   MSNBC yeni sitesi üzerine bir makale. [Bağlantı][2]
 -   Mehmet Doğan günlüğüne son yazısını yazmış. Üzülmemek elde değil :(
-    [Bağlantı][3]
 -   Sosyal imleme sitesi webiket.net bir göz atın.
 -   HTML5 ile birlikte gelen medya etiketlerine javascript ile erişim
     hakkında bir makale. [Bağlantı][5]
@@ -31,8 +30,6 @@ tags: [CSS, google, Haberler, html5, ie, Javascript, SmashMagazine, sosyal-imlem
   [Bağlantı]: http://tech.propeller.com/story/2007/11/11/google-shutting-down-pagerank-stcfx-web-everything
     "Bağlantı"
   [2]: http://www.mikeindustries.com/blog/archive/2007/11/msnbc-redesigns-taste-the-rainbow
-    "Bağlantı"
-  [3]: http://www.altiustutasarim.com/arsiv/2007/11/son_yazi.php
     "Bağlantı"
   [5]: http://webkit.org/blog/140/html5-media-support/ "Bağlantı"
   [6]: http://www.my-debugbar.com/wiki/ToDo/Beta "Bağlantı"

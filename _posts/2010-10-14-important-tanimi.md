@@ -157,9 +157,9 @@ okunaksız hale getirebilir, buna dikkat etmek gerekir.
 -   [http://www.electrictoolbox.com/using-important-css/][]
 -   [http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml][]
 -   [http://www.yellowjug.com/web-design/the-importance-of-important-in-css/][]
--   [http://friendfeed.com/arayuz-gelistiriciler/120084de/css-yazarken-ustten-gelen-degerleri-ezmek-icin][Friendfeed’de     bir serzenişim üzerine Fatih Turan’ın bir cevabı]
+-   friendfeed.com/arayuz-gelistiriciler/
 
-  [Friendfeed’de bir serzenişim üzerine Fatih Turan’ın bir cevabı]: http://friendfeed.com/arayuz-gelistiriciler/120084de/css-yazarken-ustten-gelen-degerleri-ezmek-icin
+  friendfeed.com/arayuz-gelistiriciler/120084de/css-yazarken-ustten-gelen-degerleri-ezmek-icin
   [CSS’de Tanımlamalar ve Etkinlikleri(Specificity)]: http://www.fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity/
   [tıklayınız.]: /dokumanlar/important_kullanimi.html
   [100]: https://lh3.googleusercontent.com/Dnco6jKWpezF_20xMVvlddnRWHtrZp8qUbfziW1cBRUBlGc8ep3trPV1SgOgPyU7mS4ltgeqmdotsuVLbtwBwvLyhAPmKGfpLYvM_qeSH2JNSCFgEA

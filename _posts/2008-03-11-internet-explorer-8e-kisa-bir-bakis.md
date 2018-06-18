@@ -73,7 +73,7 @@ Tarayıcı rekabetinin kızışması bize avantajlar sağlıyor. Rekabet güzel
 -   [http://annevankesteren.nl/2008/03/ie8-bad][]
 -   [http://www.chip.com.tr/konu/Internet-Explorer-8-Beta-ile-neler-geliyor_5874.html][]
 -   [http://www.bildirgec.org/etiket/internet-explorer-8][]
--   http://www.computerworld.com/action/article.do?command=viewArticleBasic&articleId=9067198&pageNumber=1
+-   computerworld.com/action/article.do?command=viewArticleBasic&articleId=9067198&pageNumber=1
 
 
   [http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm]: http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm

@@ -31,7 +31,7 @@ değil mi? Kontrol zamanı
 
 -   http://www.melihbayramdede.com/2009/03/19/internet-explorer-8-yayinlandi-hemen-indirin/
 -   [http://ajaxian.com/archives/ie-8-launches-at-mix09-probably-without-one-of-your-features][] 
--   [http://www.readwriteweb.com/archives/microsoft_releases_internet_explorer8_rc1.php][] 
+-   http://www.readwriteweb.com/archives/microsoft_releases_internet_explorer8_rc1.php
 -   [http://www.computerworld.com/action/article.do?command=viewArticleBasic&articleId=9129906][] 
 -   http://blog.wired.com/business/2009/01/more-details-ab.html
 -   [http://www.microsoft.com/windows/internet-explorer/beta/readiness/developers-new.aspx][] 
@@ -51,8 +51,6 @@ değil mi? Kontrol zamanı
     "tıklayınız."
   [http://ajaxian.com/archives/ie-8-launches-at-mix09-probably-without-one-of-your-features]: http://ajaxian.com/archives/ie-8-launches-at-mix09-probably-without-one-of-your-features
     "http://ajaxian.com/archives/ie-8-launches-at-mix09-probably-without-one-of-your-features"
-  [http://www.readwriteweb.com/archives/microsoft_releases_internet_explorer8_rc1.php]: http://www.readwriteweb.com/archives/microsoft_releases_internet_explorer8_rc1.php
-    "http://www.readwriteweb.com/archives/microsoft_releases_internet_explorer8_rc1.php"
   [http://www.computerworld.com/action/article.do?command=viewArticleBasic&articleId=9129906]: http://www.computerworld.com/action/article.do?command=viewArticleBasic&articleId=9129906
     "http://www.computerworld.com/action/article.do?command=viewArticleBasic&articleId=9129906"
   [http://www.microsoft.com/windows/internet-explorer/beta/readiness/developers-new.aspx]: http://www.microsoft.com/windows/internet-explorer/beta/readiness/developers-new.aspx

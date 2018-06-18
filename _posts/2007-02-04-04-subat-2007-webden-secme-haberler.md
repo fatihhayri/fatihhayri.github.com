@@ -8,7 +8,7 @@ tags: [Firefox, google-translate, gTrans, html, internet, Javascript, web, XHTML
 
 -   Son zamanlarda Türkiye'yi sarsan Hrant Dink cinayeti ile ilgili
     olarak İnternet üzerinde bir çok olumsuz yazışmalar var. Bu durum
-    üzerine Mehmet Doğan'ın yazdığı yazı gerçekten güzel. [Link][]
+    üzerine Mehmet Doğan'ın yazdığı yazı gerçekten güzel.
 -   Javascript ile sayfalarımıza ses eklemek, oynatmak ve durdurmak
     nasıl olur.
 -   Daha önceki haberlerde bahsettiğimiz Prototype 1.5 javascript
@@ -24,7 +24,6 @@ tags: [Firefox, google-translate, gTrans, html, internet, Javascript, web, XHTML
     [Link][6]
 
 
-  [Link]: http://feeds.feedburner.com/%7Er/mdogan/%7E3/84930126/enflasyon_ve_trafikten_sonra_s.php
   [3]: http://www.ubuntugeek.com/speed-up-firefox-web-browser.html
   [5]: http://wiki.whatwg.org/wiki/HtmlVsXhtml "Link"
   [6]: http://mcrenox.com.ar/gtrans/ "Link"

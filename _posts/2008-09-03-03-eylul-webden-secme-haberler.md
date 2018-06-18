@@ -31,7 +31,7 @@ tags: [CSS filtreleme, display, inline-block, Erişebilirlik, Google Analytics, 
      [Bağlantı][13]
 -   Html elemanlarının CSS testini sağlamak için hazırlanmış güzel bir
     html dosyası. Kırık bağlantı.
--   jQuery'nin güzel bir eklentisi jParallax. [Bağlantı][15] 
+-   jQuery'nin güzel bir eklentisi jParallax.
 -   Profoyonel sitelerden temel olarak nasıl yardım alabilriz.
     [Bağlantı][16] 
 -   Modern web sitelerinde javascript'in yeri. [Bağlantı][17] 
@@ -58,7 +58,6 @@ tags: [CSS filtreleme, display, inline-block, Erişebilirlik, Google Analytics, 
   [12]: http://www.google.com/chrome/intl/en/features.html#
     "Google Chrome Özellikleri"
   [13]: http://www.google.com/chrome/?hl=en "Google Chrome"
-  [15]: http://webdev.stephband.info/parallax.html "jparallax"
   [16]: http://www.smashingmagazine.com/2008/08/26/how-simple-web-design-helps-your-business/
     "yardım"
   [17]: http://www.webdesignerwall.com/general/javascript-in-modern-web-design/

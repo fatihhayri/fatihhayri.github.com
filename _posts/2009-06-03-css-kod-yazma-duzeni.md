@@ -414,7 +414,7 @@ ul{margin:0; padding:0; list-style:none;}
 -   [http://woork.blogspot.com/2008/03/write-well-structured-css-file-without.html][]
     (güzel)
 -   [http://woork.blogspot.com/2008/01/optimize-your-css-files-to-improve-code.html][]
--   [http://www.smashingmagazine.com/2007/05/10/70-expert-ideas-for-better-css-coding/][]
+-   http://www.smashingmagazine.com/2007/05/10/70-expert-ideas-for-better-css-coding
 -   [http://css-tricks.com/video-screencasts/8-css-formatting/][]
     (video)
 -   [http://www.graphicrating.com/2009/02/23/css-code-readability-tips/][]
@@ -454,8 +454,6 @@ ul{margin:0; padding:0; list-style:none;}
     "http://woork.blogspot.com/2008/03/write-well-structured-css-file-without.html"
   [http://woork.blogspot.com/2008/01/optimize-your-css-files-to-improve-code.html]: http://woork.blogspot.com/2008/01/optimize-your-css-files-to-improve-code.html
     "http://woork.blogspot.com/2008/01/optimize-your-css-files-to-improve-code.html"
-  [http://www.smashingmagazine.com/2007/05/10/70-expert-ideas-for-better-css-coding/]: http://www.smashingmagazine.com/2007/05/10/70-expert-ideas-for-better-css-coding/
-    "http://www.smashingmagazine.com/2007/05/10/70-expert-ideas-for-better-css-coding/"
   [http://css-tricks.com/video-screencasts/8-css-formatting/]: http://css-tricks.com/video-screencasts/8-css-formatting/
     "http://css-tricks.com/video-screencasts/8-css-formatting/"
   [http://www.graphicrating.com/2009/02/23/css-code-readability-tips/]: http://www.graphicrating.com/2009/02/23/css-code-readability-tips/

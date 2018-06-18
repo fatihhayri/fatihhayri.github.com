@@ -540,7 +540,7 @@ ie6 öldü.
 -   [http://garmahis.com/tools/ie6-update-warning/][]
 -   http://css-tricks.com/482-ie-css-bugs-thatll-get-you-every-time
 -   [http://technologytales.com/2007/06/22/ie6-and-javascript-performance/][](js)
--   [http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html][]
+-   http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html
 -   [http://ajaxian.com/archives/ie7-twice-as-performant-as-ie6-but-half-as-slow-as-ff-15][]
 -   [http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/][]
 
@@ -576,6 +576,6 @@ ie6 öldü.
   [http://garmahis.com/tools/ie6-update-warning/]: http://garmahis.com/tools/ie6-update-warning/
   [http://css-tricks.com/482-ie-css-bugs-thatll-get-you-every-time/]: http://css-tricks.com/482-ie-css-bugs-thatll-get-you-every-time/
   [http://technologytales.com/2007/06/22/ie6-and-javascript-performance/]: http://technologytales.com/2007/06/22/ie6-and-javascript-performance/
-  [http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html]: http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html
+  http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html
   [http://ajaxian.com/archives/ie7-twice-as-performant-as-ie6-but-half-as-slow-as-ff-15]: http://ajaxian.com/archives/ie7-twice-as-performant-as-ie6-but-half-as-slow-as-ff-15
   [http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/]: http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/

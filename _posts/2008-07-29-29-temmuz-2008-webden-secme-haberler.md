@@ -10,7 +10,7 @@ tags: [açılır-menü, CSS, css hataları, css ile site yapmak, CSS sıfırlama
 -   jQuery ipucu: açılır menüde seçili olan seçeneği ve değerini bulmak.
     [Bağlantı][2]
 -   Javascript yazarken en hızlı kodu yazmak önemli. En hızlı döngüyü
-    nasıl yazarız? [Bağlantı][3]
+    nasıl yazarız? 
 -   CSS ile sayfa planlaması için 40 adet ders, ipucu ve demolar.
     [Bağlantı][4]
 -   CSS ile outline kesik çizgilerini kaldırmak. [Bağlantı][5]
@@ -30,7 +30,6 @@ tags: [açılır-menü, CSS, css hataları, css ile site yapmak, CSS sıfırlama
 
   [Bağlantı]: http://www.noupe.com/css/using-css-to-fix-anything-20-common-bugs-and-fixes.html
   [2]: http://marcgrabanski.com/article/jquery-select-list-values
-  [3]: http://blogs.sun.com/greimer/entry/best_way_to_code_a
   [4]: http://www.noupe.com/css/css-layouts-40-tutorials-tips-demos-and-best-practices.html
   [5]: http://css-tricks.com/removing-the-dotted-outline/
   [6]: http://woork.blogspot.com/2008/07/fantastic-news-ticker-newsvine-like.html

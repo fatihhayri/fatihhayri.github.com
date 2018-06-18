@@ -293,8 +293,8 @@ başlıklar için kullanmak gayet mantıklı. Takdir ve seçim sizin.
 
 ## Kaynaklar
 
--   http://www.altiustutasarim.com/arsiv/2005/03/css_fir_teknigi.php
--   [http://www.ampsoft.net/­webdesign-l/image-button.html][]
+-   altiustutasarim.com/arsiv/2005/03/css_fir_teknigi.php
+-   http://www.ampsoft.net/­webdesign-l/image-button.html
 -   [http://www.mezzoblue.com/tests/revised-image-replacement/][]
 -   [http://www.digital-web.com/articles/in_defense_of_fahrner_image_replacement/][]
 -   [http://alistapart.com/articles/fir/][]
@@ -316,7 +316,6 @@ başlıklar için kullanmak gayet mantıklı. Takdir ve seçim sizin.
   [4]: /images/sirf_03.gif
   [5]: /images/sirf_04.gif
   [6]: /dokumanlar/fatih.html
-  [http://www.ampsoft.net/­webdesign-l/image-button.html]: http://www.ampsoft.net/­webdesign-l/image-button.html
   [http://www.mezzoblue.com/tests/revised-image-replacement/]: http://www.mezzoblue.com/tests/revised-image-replacement/
   [http://www.digital-web.com/articles/in_defense_of_fahrner_image_replacement/]: http://www.digital-web.com/articles/in_defense_of_fahrner_image_replacement/
   [http://alistapart.com/articles/fir/]: http://alistapart.com/articles/fir/

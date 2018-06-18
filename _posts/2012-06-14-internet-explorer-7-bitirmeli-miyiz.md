@@ -197,13 +197,13 @@ sitelerden kaldırmayı unutmayın.
 -   [http://www.netmagazine.com/news/google-apps-ditches-support-ie7][]
 -   [http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/][]
 -   [http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/][]
--   http://msdn.microsoft.com/en-us/library/cc304082(VS.85).aspx
--   [http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html][]
+-   msdn.microsoft.com/en-us/library/cc304082(VS.85).aspx
+-   http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html
 -   [http://www.nuricankaya.com/default.asp?gunluk_id=407][] (ie8
     kitabı)
 -   [http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html][]
     (querySelector desteği)
--   http://msdn.microsoft.com/en-us/library/cc304082(v=vs.85).aspx
+-   msdn.microsoft.com/en-us/library/cc304082(v=vs.85).aspx
 -   http://haslayout.net/haslayout
 -   [http://ejohn.org/blog/javascript-in-internet-explorer-8/][]
 -   [http://www.evotech.net/blog/2009/03/ie8-css-support/][]
@@ -270,7 +270,6 @@ sitelerden kaldırmayı unutmayın.
   [http://www.netmagazine.com/news/google-apps-ditches-support-ie7]: http://www.netmagazine.com/news/google-apps-ditches-support-ie7
   [http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/]: http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/
   [http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/]: http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/
-  [http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html]: http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html
   [http://www.nuricankaya.com/default.asp?gunluk_id=407]: http://www.nuricankaya.com/default.asp?gunluk_id=407
   [http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html]: http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html
   [http://ejohn.org/blog/javascript-in-internet-explorer-8/]: http://ejohn.org/blog/javascript-in-internet-explorer-8/

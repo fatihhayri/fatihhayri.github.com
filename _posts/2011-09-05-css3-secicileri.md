@@ -885,7 +885,7 @@ Firefox için -moz ön eki kullanılması gerekiyor.
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/][]
 -   http://inspectelement.com/tutorials/a-look-at-some-of-the-new-selectors-introduced-in-css3/
 -   [http://caniuse.com/css-sel3][] (tarayıcı destek listesi)
--   [http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/][]
+-   http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors
 -   [http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/][]
 -   http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/
 -   [http://perishablepress.com/awesome-new-css3-selectors/][] (ilginç)
@@ -920,7 +920,6 @@ Firefox için -moz ön eki kullanılması gerekiyor.
   [http://selectivizr.com/]: http://selectivizr.com/
   [http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/]: http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/
   [http://caniuse.com/css-sel3]: http://caniuse.com/css-sel3
-  [http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/]: http://www.yourinspirationweb.com/en/why-you-should-know-the-new-css3-selectors/
   [http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/]: http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/
   [http://perishablepress.com/awesome-new-css3-selectors/]: http://perishablepress.com/awesome-new-css3-selectors/
   [https://developer.mozilla.org/en/firefox_3.5_for_developers]: https://developer.mozilla.org/en/firefox_3.5_for_developers

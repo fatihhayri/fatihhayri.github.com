@@ -105,7 +105,7 @@ Bu arada FireBug 1.3 çalışmalarına başlanmış bile.
 
 #### Kaynaklar
 
--   [http://ejohn.org/blog/firebug-12-released/][]
+-   http://ejohn.org/blog/firebug-12-released
 -   [http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt][]
 -   [https://addons.mozilla.org/en-US/firefox/addon/1843][]
 -   [http://ajaxian.com/archives/firebug-12-beta-for-firefox-3-rc-1][]
@@ -127,7 +127,6 @@ Bu arada FireBug 1.3 çalışmalarına başlanmış bile.
   [Suspend/Resume]: /images/suspend_resume.gif
   [Renklendirme Öncesi]: /images/renklendirme_oncesi.gif
   [Renklendirme Sonrası]: /images/renklendir.gif
-  [http://ejohn.org/blog/firebug-12-released/]: http://ejohn.org/blog/firebug-12-released/
   [http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt]: http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt
     "http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt"
   [https://addons.mozilla.org/en-US/firefox/addon/1843]: https://addons.mozilla.org/en-US/firefox/addon/1843

@@ -6,8 +6,8 @@ Category: CSS
 tags: [ie6, sorun, Türkçe-karakter, yorum-satırı]
 ---
 
-Bu durumla bir kaç defa karşılaştım ve sonuncusunda [FirendFeed][]'de
-yazdım, hatta benden önce [Burak Dönertaş][]'da yazmış konuyu. Konuyu
+Bu durumla bir kaç defa karşılaştım ve sonuncusunda FirendFeed'de
+yazdım, hatta benden önce Burak Dönertaş'da yazmış konuyu. Konuyu
 biraz daha ayrıntısı ile burada paylaşmak istedim.
 
 Sorunu başlıkta açıklayıcı bir şekilde anlattım sanırım. Biraz daha
@@ -73,8 +73,6 @@ olursa sorun oluyor.
 
 Not: Karakter kodu değişiklikleri için NotePad++ kullandım.
 
-  [FirendFeed]: http://ff.im/af0XB
-  [Burak Dönertaş]: http://ff.im/86KsI
   [ansi_ff]: /images/ansi_ff.gif
   [ansi_ie6]: /images/ansi_ie6.gif
   [utf8_ie6]: /images/utf8_ie6.gif

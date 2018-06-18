@@ -57,9 +57,7 @@ Görüldüğü gibi normal şartlarda resimler büzülmüş görünecektir. `obj
 
 Bu gibi bir çok durum için kullanışlı özellikler. 
 
-**Tarayıcı desteği**
-
-<p class="ciu_embed" data-feature="object-fit" data-periods="future_1,current,past_1,past_2">  <a href="http://caniuse.com/#feat=object-fit">Can I Use object-fit?</a> Data on support for the object-fit feature across the major browsers from caniuse.com. </p>
+{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
 
 Kalın sağlıcakla.
 

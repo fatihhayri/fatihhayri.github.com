@@ -296,7 +296,7 @@ uygulanabilirliği var.
 -   [http://dev.opera.com/articles/view/css3-border-background-boxshadow/#border-image][]
 -   http://people.opera.com/pepelsbey/experiments/bdi
 -   [http://ejohn.org/blog/border-image-in-firefox/][]
--   [http://michaelhan.net/wordsets/20/][]
+-   http://michaelhan.net/wordsets/20
 -   [http://www.impressivewebs.com/space-round-css3-background/][] (round ve space)
 
   [100]: https://lh6.googleusercontent.com/Gf9iv6Tv28So_gkr9zPUPwPa7TLnEwYv7SYRzuM_A42Y6DOrfD16-W_Lp7wH4Hd5TVpbVVsrrm_NuT5OzRsKFHnqD3P1m05LMXOVFVq2yGx01zO-e_A
@@ -318,7 +318,6 @@ uygulanabilirliği var.
   [http://www.dynamicdrive.com/style/csslibrary/item/image_frames_using_css3_border_image/]: http://www.dynamicdrive.com/style/csslibrary/item/image_frames_using_css3_border_image/
   [http://caniuse.com/border-image]: http://caniuse.com/border-image
   [http://dev.opera.com/articles/view/css3-border-background-boxshadow/#border-image]: http://dev.opera.com/articles/view/css3-border-background-boxshadow/#border-image
-  [http://michaelhan.net/wordsets/20/]: http://michaelhan.net/wordsets/20/
   [http://www.impressivewebs.com/space-round-css3-background/]: http://www.impressivewebs.com/space-round-css3-background/
 
 

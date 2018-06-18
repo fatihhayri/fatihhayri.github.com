@@ -111,7 +111,7 @@ Kalın sağlıcakla
 -   [http://reference.sitepoint.com/css/haslayout][]
 -   [http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx][]
     (detaylı, kaynağından)
--   http://css-class.com/articles/explorer/guillotine/
+-   css-class.com/articles/explorer/guillotine
 -   [http://www.alsacreations.com/article/lire/76-haslayout-internet-explorer.html][]
     (farklı dil)
 -   [http://jaspan.com/ie-inherited-margin-bug-form-elements-and-haslayout][]

@@ -20,7 +20,7 @@ tags: [CSS, gmail, google, Google-Calendar]
     güncelledi. Bizde bundan nasibimizi aldık. 2'den 4'e çıkmak güzel
     bir duygu.
 -   Altı Üstü tasarım'dan web sayfası üreticisinin karşılaştığı müşteri
-    sorunlarına çok güzel değinmiş. [Link][4]
+    sorunlarına çok güzel değinmiş.
 -   Galatasaray Üniversitesi Mühendislik Klubü bir web yarışması
     düzenlemiş. Amaç sanal üniversite sitesi oluşturmak.
 -   GMail artık davetiyesiz alınabiliyor. Ayrıca görünümde de bazı
@@ -38,6 +38,5 @@ tags: [CSS, gmail, google, Google-Calendar]
   [Link]: http://www.superonline.com/index.html "Link"
   [2]: http://www.456bereastreet.com/archive/200702/new_css_properties_in_safari/
   [3]: http://www.alistapart.com/articles/multicolumnlayouts "Link"
-  [4]: http://www.altiustutasarim.com/arsiv/2007/02/curuk_musteri.php
   [6]: https://www.google.com/accounts/NewAccount?nui=1&service=reader&continue=http%3A%2F%2Fwww.google.com%2Freader%2Fview%2F
   [7]: http://www.code-sucks.com/css%20layouts/index.php "Link"

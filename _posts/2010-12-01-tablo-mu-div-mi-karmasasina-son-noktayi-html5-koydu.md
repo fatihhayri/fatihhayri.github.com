@@ -110,7 +110,7 @@ Kalın sağlıcakla
 -   [http://resources.bravenet.com/articles/site_building/CSS/tables_bad_css_good/][]
 -   [http://www.sitepoint.com/article/tables-vs-css/][] (güzel anlatım, ama geniş)
 -   [http://webdesign.about.com/od/layout/a/aa111102a.htm][] (güzel)
--   [http://www.chromaticsites.com/web-design-blog/2008-04-03/13-reasons-why-css-is-superior-to-tables-in-website-design/][]
+-   http://www.chromaticsites.com/web-design-blog/2008-04-03/13-reasons-why-css-is-superior-to-tables-in-website-design
 -   [http://www.andybudd.com/archives/2004/05/an_objective_look_at_table_based_vs_css_based_design/][]
 -   [http://www.stopdesign.com/present/2004/ddw-seattle/tables/][]
 -   [http://erkana.wordpress.com/2006/09/15/tablosuz-tasarim-tableless/][]
@@ -125,7 +125,6 @@ Kalın sağlıcakla
   [http://resources.bravenet.com/articles/site_building/CSS/tables_bad_css_good/]: http://resources.bravenet.com/articles/site_building/CSS/tables_bad_css_good/
   [http://www.sitepoint.com/article/tables-vs-css/]: http://www.sitepoint.com/article/tables-vs-css/
   [http://webdesign.about.com/od/layout/a/aa111102a.htm]: http://webdesign.about.com/od/layout/a/aa111102a.htm
-  [http://www.chromaticsites.com/web-design-blog/2008-04-03/13-reasons-why-css-is-superior-to-tables-in-website-design/]: http://www.chromaticsites.com/web-design-blog/2008-04-03/13-reasons-why-css-is-superior-to-tables-in-website-design/
   [http://www.andybudd.com/archives/2004/05/an_objective_look_at_table_based_vs_css_based_design/]: http://www.andybudd.com/archives/2004/05/an_objective_look_at_table_based_vs_css_based_design/
   [http://www.stopdesign.com/present/2004/ddw-seattle/tables/]: http://www.stopdesign.com/present/2004/ddw-seattle/tables/
   [http://erkana.wordpress.com/2006/09/15/tablosuz-tasarim-tableless/]: http://erkana.wordpress.com/2006/09/15/tablosuz-tasarim-tableless/

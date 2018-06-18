@@ -9,7 +9,7 @@ tags: [CSS, firebug, Firefox 3, hr, Javascript, jQuery plugin, safari, WordPress
 -   Javascript ile resim bilgilerini elde etmek. Kırık bağlantı
 -   Web uygulamalarını hızlandırmak için çözüm yolları.
 -   FireBug 1.2 sürümü yani Firefox 3 içi olanı kararlı sürümü
-    yayınlanmak üzereymiş. [Bağlantı][2]
+    yayınlanmak üzereymiş.
 -   11 WordPress uygulaması ipucu. [Bağlantı][3]
 -   CSS ile nasıl gölgeli menü yapılır. Kırık bağlantı.
 -   10 ünlü CSS geliştiricisinden CSS teknikleri. [Bağlantı][5]
@@ -28,7 +28,6 @@ tags: [CSS, firebug, Firefox 3, hr, Javascript, jQuery plugin, safari, WordPress
     geliyor. Akismet'i kurdum. İnşallah sorunları gideririz.
 
 
-  [2]: http://ejohn.org/blog/firebug-12-released/ "FireBug"
   [3]: http://www.noupe.com/wordpress/most-desired-wordpress-hacks-11-common-requests-and-fixes.html
   [5]: http://nettuts.com/html-css-techniques/10-principles-of-the-css-masters/
     "css uygulamaları"

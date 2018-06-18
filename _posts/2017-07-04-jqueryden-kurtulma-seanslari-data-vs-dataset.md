@@ -50,8 +50,6 @@ el.dataset.dateOfBirth = '26-02-1987'; // veriyi atayalım
 
 jQuery ile ilişkimizi sonlandırmaya kararlıyım. Tarayıcı desteğini bizim site için güzel IE11 ve sonrası. Daha eski tarayıcılara destek verenler için getAttribute denenebilir.
 
-<p class="ciu_embed" data-feature="dataset" data-periods="future_1,current,past_1,past_2">   <a href="http://caniuse.com/#feat=dataset">Can I Use dataset?</a> Data on support for the css-line-clamp feature across the major browsers from caniuse.com. </p>
-
 Kalın sağlıcakla
 
 ## Kaynaklar

@@ -58,7 +58,7 @@ Kısa ve net. Süper
 
 Tarayıcı desteği konusunda gayet güzel yerde Türkiye'de %88 civarında. Windows üzerinden Edge ve Firefox'a (sorunları var) da tam desteği gelince kullanılabilir.
 
-<p class="ciu_embed" data-feature="font-family-system-ui" data-periods="future_1,current,past_1,past_2">  <a href="http://caniuse.com/#feat=font-family-system-ui">Can I Use font-family-system-ui?</a> Data on support for the font-family-system-ui feature across the major browsers from caniuse.com. </p>
+{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="6.2" %}
 
 ## Sonuç 
 

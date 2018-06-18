@@ -89,8 +89,6 @@ jQuery'den esinlenerek classList API'yi geliştirdiler. Artık aynı yetenekler 
 jQuery ile aynı kolaylıkta bir kullanım sağlayan normal js çözümlerini tercih etmek bize hız kazandıracaktır. 
 
 IE10 ve sonrası için desteği olan bu özellikleri rahatlıkla kullanabiliriz.
-
-<p class="ciu_embed" data-feature="classlist" data-periods="future_1,current,past_1,past_2">  <a href="http://caniuse.com/#feat=classlist">Can I Use classlist?</a> Data on support for the css-line-clamp feature across the major browsers from caniuse.com. </p>
 	
 ## Kaynaklar
 

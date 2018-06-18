@@ -11,7 +11,7 @@ tags: [CSS, gmail, Haberler, Javascript, optimize, tab, vs.net]
 -   Farklı web tarayıcılarına göre kodlama yapmak için bilgilendirici
     bir makale.
 -   Resimsiz veya az resim kullanılmış güzel siteler.
--   10 adet javascript ajax tab menü örneği. [Bağlantı][4]
+-   10 adet javascript ajax tab menü örneği.
 -   Google pagerank değerlerini güncellemiş.
 -   İlginç bir menü çalışması. Tasarımı menüye ilginçlik katıyor aslında
     bildiğimiz resimli css menü [Bağlantı][5]
@@ -25,7 +25,6 @@ tags: [CSS, gmail, Haberler, Javascript, optimize, tab, vs.net]
     "css ve javascript otomatik olarak yüklemek"
   [1]: http://www.sitepoint.com/article/web-site-optimization-steps
     "web optimizasyonu"
-  [4]: http://tutorialblog.org/10-javascript-ajax-tabs/ "tab menu "
   [5]: http://www.webdesignerwall.com/tutorials/advanced-css-menu/
     "Bağlantı"
   [6]: http://dotnettipoftheday.org/tips/speedup_visual_studio.aspx

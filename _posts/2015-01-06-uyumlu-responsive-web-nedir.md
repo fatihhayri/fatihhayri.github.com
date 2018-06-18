@@ -80,6 +80,6 @@ Kalın sağlıcakla.
  - [http://alistapart.com/article/responsive-web-design](http://alistapart.com/article/responsive-web-design)
  - [http://googlewebmastercentral.blogspot.com.tr/2014/11/helping-users-find-mobile-friendly-pages.html](http://googlewebmastercentral.blogspot.com.tr/2014/11/helping-users-find-mobile-friendly-pages.html)
  -  [http://caniuse.com/#search=media](http://caniuse.com/#search=media)
- - [http://borayalcin.me/2012/03/08/responsive-design-icin-turkce-karsilik/](http://borayalcin.me/2012/03/08/responsive-design-icin-turkce-karsilik/)
+ - borayalcin.me/2012/03/08/responsive-design-icin-turkce-karsilik/
 
 [uyumlu_web]: /images/uyumlu_web.png

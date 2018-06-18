@@ -104,7 +104,7 @@ document.getElementsByTagName('a').closest('div');
 
 Bu yeni bir özellik olmasına rağmen şu an Türkiye'deki desteği %83 seviyesinde. Desteklmeyen tarayıcılar için [https://github.com/jonathantneal/closest](https://github.com/jonathantneal/closest) kullanılabilir.
 
-<p class="ciu_embed" data-feature="element-closest" data-periods="future_1,current,past_1,past_2">  <a href="http://caniuse.com/#feat=element-closest">Can I Use element-closest?</a> Data on support for the element-closest feature across the major browsers from caniuse.com. </p>
+{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="6.2" %}
 
 ### Kardeş (siblings) seçicisi
 

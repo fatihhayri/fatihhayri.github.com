@@ -10,7 +10,6 @@ tags: [CSS, Haberler, iframe, masterpage, slideshow, vs.net]
     [Bağlantı][]
 -   IFrame sunucu taraflı(asp.net) kullanmak. [Bağlantı][1]
 -   .net'in şablonları(masterpage) en iyi kullanmayı anlatan bir makale.
-    [Bağlantı][2]
 -   En iyi yazı tipi ve satır yüksekliğini seçmeyi anlatan güzel bir
     makale. [Bağlantı][3]
 -   Çok güzel ve farklı bir resim galerisi.
@@ -27,8 +26,6 @@ tags: [CSS, Haberler, iframe, masterpage, slideshow, vs.net]
   [Bağlantı]: http://aspnet.4guysfromrolla.com/articles/112107-1.aspx
     ".net framework 3.5"
   [1]: http://www.eggheadcafe.com/tutorials/aspnet/4c4c5f62-678e-4e05-87fd-4477a0d1987c/using-serverside-iframes.aspx
-    "Bağlantı"
-  [2]: http://www.codeproject.com/aspnet/CreatingBetterMasterPage.asp
     "Bağlantı"
   [3]: http://www.alistapart.com/articles/howtosizetextincss
     "yazı tipi ve satır yüksekliği"
