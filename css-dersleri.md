@@ -271,6 +271,9 @@ Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](https://fatihhayrioglu.
     -   [Bootstrap Izgara (Grid) Sistemi - 2](/bootstrap-izgara-grid-sistemi-2/)
     -   [Uyumlu web'de gizlenen alanlardaki artalanları uçurmak](/uyumlu-web-de-gizlenen-alanlardaki-artalanlari-ucurmak/)
 
+-   CSS 4
+    -   [CSS Değişkenleri (Custom Properties)](/css-degiskenleri-custom-properties/)
+
 -   CSS Kaynakları
     -   [Web Standards Solutions: The Markup and Style Handbook : Dan Cederholm][]
     -   [Cascading Style Sheets: The Definitive Guide, 2nd Edition - Eric Meyer][]
