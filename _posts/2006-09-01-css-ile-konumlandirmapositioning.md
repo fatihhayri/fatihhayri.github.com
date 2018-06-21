@@ -1,6 +1,8 @@
 ---
 layout: post
 title: CSS ile konumlandırma(positioning)
+description: CSS konumlandırma nedir? position özelliği ve değerleri hakkında tüm bilgiler içeren bir yazı. relative, static, absolute, fixed
+lang: tr_TR
 Date: 2006-09-01 22:43
 Category: CSS
 tags: [Blok-level, bottom, CSS, Göreceli-Konumlandırma, Inline-level, left, Mutlak-Konumlandırma, position, right, Sabit-Konumlandırma, top, z-index]
@@ -16,7 +18,7 @@ Konumlandırma ile alakalı olduğu için blok-level ve inline-level elementleri
 
 **Inline-level Elementler :** Inline-level elementler bir içerik gibi görünür, diğer bir inline elelementi içerebilir. Yeni satır veya boşluk oluşturmazlar. Örnek: a, strong,span
 
-Ancak bizbu elementlerin başlangıç değerlerini **display** özelliği ile değiştirebiliriz. Yani biz bir inline-level element olan  linki(<a\>....</a\>) blok-level bir elemente dönüştürebiliriz. Aynı şekilde bir blok-level elementi inline elemente dönüştürebiliriz.
+Ancak biz bu elementlerin başlangıç değerlerini **display** özelliği ile değiştirebiliriz. Yani biz bir inline-level element olan  span(<span\>....</span\>) blok-level bir elemente dönüştürebiliriz. Aynı şekilde bir blok-level elementi inline elemente dönüştürebiliriz.
 
 CSS'de üç temel konumlandırma şekli vardır: **normal akış**(position:static ve position:relative), **float** ve **mutlak konumlar**(position:absolute). Tüm elementler başlangıçta **normal akış** şeklinde konumlandırılmıştır.
 
@@ -30,10 +32,10 @@ Inlene kutular yatay olarak tasarlanır. Yatay boşluk margin, padding ve kenarl
 
 ## position
 
-**Yapısı :** position: (değer)
-**Aldığı Değerler :**static | relative | absolute | fixed | inherit 
-**Başlangıç değeri:** static 
-**Uygulanabilen elementler:** tüm elementler 
+**Yapısı :** position: (değer)<br/>
+**Aldığı Değerler :**static | relative | absolute | fixed | inherit<br/>
+**Başlangıç değeri:** static<br/>
+**Uygulanabilen elementler:** tüm elementler<br/>
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -53,10 +55,10 @@ Inlene kutular yatay olarak tasarlanır. Yatay boşluk margin, padding ve kenarl
 
 ## top, right, bottom, left
 
-**Yapısı :** top, right, bottom, left : (değer)
-**Aldığı Değerler :** (uzunluk) | (yüzde) | auto | inherit 
-**Başlangıç değeri:** auto 
-**Uygulanabilen elementler:** position uygulanan elementlere 
+**Yapısı :** top, right, bottom, left : (değer)<br/>
+**Aldığı Değerler :** (uzunluk) | (yüzde) | auto | inherit<br/>
+**Başlangıç değeri:** auto<br/>
+**Uygulanabilen elementler:** position uygulanan elementlere<br/>
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 
@@ -106,10 +108,10 @@ Mutlak Konumlandırma ile yerleştirilmiş element sayfada elementi normal akı�
 
 ## z-index
 
-**Yapısı :** z-index: (değer)
-**Aldığı Değerler :** (sayısal değer) | auto | inherit 
-**Başlangıç değeri:** auto 
-**Uygulanabilen elementler:** position uygulanan elementlere 
+**Yapısı :** z-index: (değer)<br/>
+**Aldığı Değerler :** (sayısal değer) | auto | inherit<br/>
+**Başlangıç değeri:** auto<br/>
+**Uygulanabilen elementler:** position uygulanan elementlere<br/>
 **Kalıtsallık:** Yok
 {: .cssozelliktanimi}
 

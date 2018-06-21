@@ -1,6 +1,8 @@
 ---
 layout: post
 title: HTML içine html eklemek(import)
+description: HTML sayfalarına CSS, Javascript, resim video, ses vd. dosyaları ekleyebilirken diğer html dosyalarını eklemek için iframe, ajax isteği ile veya çakma script dosyası gibi gösterilmiş html dosyaları ile ekleyerek yapıyorduk. HTML import ile artık html dosyalarımızı html içine ekleyebileceğiz.
+lang: tr_TR
 Date: 2014-12-30 11:05
 Category: html
 tags: [html5 import asyn]
