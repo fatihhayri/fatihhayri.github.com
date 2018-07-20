@@ -133,7 +133,7 @@ ediyorum. Normalde ve genellikle tek ve iki css dokümanı ile projeyi
 bitiriyorum. Performans açısından bu daha iyi ayrıca.
 
 Eğer CSS sıfırlama tekniklerinden birini kullanacaksam Bunu imzadan
-sonraya yazmak. Yada site genel tanımlarını başa yazmak. [YUI CSS Reset][] ve [Eric Meyer][]'in ki var mesela.
+sonraya yazmak. Yada site genel tanımlarını başa yazmak. YUI CSS Reset ve [Eric Meyer][]'in ki var mesela.
 
 {% highlight css %}
 /************************
@@ -424,7 +424,6 @@ ul{margin:0; padding:0; list-style:none;}
     "css_duzenleme2"
   [http://www.fatihhayrioglu.com/cssde-kisaltmalar/]: http://www.fatihhayrioglu.com/cssde-kisaltmalar/
     "http://www.fatihhayrioglu.com/cssde-kisaltmalar/"
-  [YUI CSS Reset]: http://developer.yahoo.com/yui/reset/ "YUI CSS REset"
   [Eric Meyer]: http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
     "Eric Meyer"
   [yazdığım]: http://www.fatihhayrioglu.com/css-editorleri/ "yazdığım"

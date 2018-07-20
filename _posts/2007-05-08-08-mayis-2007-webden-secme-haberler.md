@@ -9,7 +9,7 @@ tags: [Ajax, CSS, Firefox, float, Haberler, Javascript, web, WordPress]
 -   Javascript kütüphanelerinden Mootools'un 1.1 versiyonu çıkmış. Yeni
     özellikleri incelemeye değer. 
 -   Javascript kütüphanelerinden Prototype 1.5.1 versiyonu çıkmış.
--   Resimleri yakınlaştırma scripti, gayet başarılı. [Link][2]
+-   Resimleri yakınlaştırma scripti, gayet başarılı.
 -   Mehmet Nuri Çankaya'nın "Semantik Web" makalesine bir göz atın.
     [Link][3]
 -   Andy Budd CSS3.0 hakkında bir makale yazmış "CSS2.2"!
@@ -24,7 +24,6 @@ tags: [Ajax, CSS, Firefox, float, Haberler, Javascript, web, WordPress]
 -   Gelişen javascript ile programlama ile ilgili güzel bir video dersi.
 
 
-  [2]: http://valid.tjp.hu/tjpzoom/ "Link"
   [3]: http://www.nuricankaya.com/default.asp?gunluk_id=188 "Link"
   [5]: http://veerle.duoh.com/blog/comments/css_hover_effect/ "Link"
   [6]: http://blogs.zdnet.com/microsoft/?p=416 "Link"

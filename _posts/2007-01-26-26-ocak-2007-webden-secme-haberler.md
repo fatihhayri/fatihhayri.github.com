@@ -10,7 +10,7 @@ tags: [adobe, CSS, google, Javascript, rss, WordPress]
 26 Ocak 2007 Web'den seçme haberler
 
 -   CSS galeri sitelerinin listesi [Link][]
--   10 adet CSS ipucu [Link][1]
+-   10 adet CSS ipucu
 -   Gün geçmiyor ki ben sizlere buradan bir javascript kütüphanesi link
     vermeyeyim. Evet bu iş önemli arkadaşlar. şžimdi de Adobe bu işe el
     atmış ve Spry adında bir javascript kütüphanesini bizlere sunmuş.
@@ -43,8 +43,6 @@ tags: [adobe, CSS, google, Javascript, rss, WordPress]
 
 
   [Link]: http://www.listible.com/list/full-list-of-css-galleries "Link"
-  [1]: http://www.mediasurgery.co.uk/articles/2007/01/24/10-quickfire-practical-css-web-design-tips-and-tricks/
-    "Link"
   [fotoğraf galerisi örneği]: http://labs.adobe.com/technologies/spry/demos/gallery/
     "fotoğraf galerisi örneği"
   [2]: http://labs.adobe.com/wiki/index.php/Spry "Link"

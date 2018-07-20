@@ -11,7 +11,6 @@ tags: [adsl, bandtwith, CSS, Haberler, ie7, Javascript, optimize, Web Standartla
     makale. [Link][1]
 -   Web sayfalarına belli aralıklarda ızgaralara bölüp sonra bu
     ızgaralar üzerine sayfayı oturmak üzerine yazılmış güzel bir makale.
-    [Link][2]
 -   Web sitelerinin bant genişliği kullanımı optimize etmeyi anlatan
     İngilizce makale. [Link][3]
 -   Javascript ve CSS ile hazırlanmış güzel bir geçiş efektli açılır
@@ -36,8 +35,6 @@ tags: [adsl, bandtwith, CSS, Haberler, ie7, Javascript, optimize, Web Standartla
 
   [Link]: http://vikjavev.no/highslide/ "Link"
   [1]: http://nefariousdesigns.co.uk/archive/2007/03/semantics-and-structure/
-    "Link"
-  [2]: http://tutorialblog.org/grid-systems-in-web-design/ "Link"
   [3]: http://www.codinghorror.com/blog/archives/000807.html "Link"
   [6]: http://www.ntvmsnbc.com/ "Link"
   [7]: http://www.turktelekom.com.tr/ "Link"

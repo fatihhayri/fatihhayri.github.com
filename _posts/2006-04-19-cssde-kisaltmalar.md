@@ -145,10 +145,9 @@ yapılmalıdır.
 ## Kaynaklar
 
 -   [http://www.w3schools.com/css/default.asp][]
--   [http://www.eyeofdesign.com][]
+-   http://www.eyeofdesign.com
 -   http://www.spoono.com
 -   http://www.dustindiaz.com/css-shorthand
 
 
   [http://www.w3schools.com/css/default.asp]: http://www.w3schools.com/css/default.asp
-  [http://www.eyeofdesign.com]: http://www.eyeofdesign.com/css/background.php

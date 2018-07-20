@@ -478,7 +478,7 @@ Kalın sağlıcakla.
   - <a href="http://www.vanseodesign.com/css/animation/">http://www.vanseodesign.com/css/animation/</a>
   - <a href="http://www.w3schools.com/css/css3_animations.asp">http://www.w3schools.com/css/css3_animations.asp</a>
   - <a href="http://css3.bradshawenterprises.com/animations/">http://css3.bradshawenterprises.com/animations/</a>
-  - <a href="http://daneden.me/animate/">http://daneden.me/animate/</a> (örnek kütüphanesi)
+  - http://daneden.me/animate/">http://daneden.me/animate
   - <a href="https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations">https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations</a>
   - <a href="http://www.netmagazine.com/tutorials/masterclass-css-animations">http://www.netmagazine.com/tutorials/masterclass-css-animations</a>
   - <a href="http://css-tricks.com/snippets/css/keyframe-animation-syntax/">http://css-tricks.com/snippets/css/keyframe-animation-syntax/</a>

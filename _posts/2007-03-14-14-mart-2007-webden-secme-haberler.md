@@ -8,7 +8,7 @@ tags: [Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, 
 
 -   50 adet Firefox eklentisi [Link][], 20 tanede burada sıralanmış.
 -   EOGallery javascript ile hazırlanmış güzel bir resim galerisi
-    örneği. [Link][2]
+    örneği.
 -   Javascript ve CSS yardımı ile Font kontrolü scripti. [Link][3]
 -   71 Adet CSS ile yapılmış menü listesi linklerinin sıralandığı bir
     sayfa.
@@ -21,22 +21,18 @@ tags: [Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, 
 -   Margin kullandığımız bazı durumlarda web tarayıcıları arasındaki
     farklardan yakınırız. Bu hatayı gidermek için yazılmış güzel bir
     İngilizce makale. [Link][8]
--   WordPress'de spam'ı engellemek için 4 adım. [Link][9]
--   <span class="titlespec">WordPress "Feed Styler" </span>WordPress RSS
+-   WordPress'de spam'ı engellemek için 4 adım.
+-   WordPress "Feed Styler" WordPress RSS
     beslemelerini düzenlemek için bir eklenti. [Link][10]
 -   Hasan Yalçın ilk WordPress temasını yaptı. Hayırlı uğurlu olsun.
     [Link][12]
 
 
   [Link]: http://www.netmag.co.uk/zine/home/the-top-50-firefox-extensions
-    "Link"
-  [2]: http://www.eogallery.com/ "Link"
   [3]: http://www.lalit.org/lab/fontdetect.php "Link"
   [5]: http://www.drweb.de/weblog/weblog/?p=791 "Link"
   [6]: http://www.phatfusion.net/ "Link"
   [7]: http://www.code-sucks.com/css%20layouts/faux-css-layouts/ "Link"
   [8]: http://www.search-this.com/2007/03/12/no-margin-for-error/ "Link"
-  [9]: http://www.helpero.com/news/Computers/Software/4-Easy-Steps-to-Kill-Blog-Spam-for-Ever_298.html
-    "Link"
   [10]: http://www.devlounge.net/extras/feed-styler "Link"
   [12]: http://www.hasanyalcin.com/?p=227 "Link"

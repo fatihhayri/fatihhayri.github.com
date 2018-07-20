@@ -239,7 +239,6 @@ ve etkilesimli kod yazmamızı saglamak.
 
 -   [http://www.blooberry.com/][]
 -   [http://www.456bereastreet.com/][]
--   [http://css.maxdesign.com.au/][]
 -   [http://westciv.com/][]
 
   [(X)HTML Sayfa Yapısı ve CSS Kullanımı]: http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
@@ -253,5 +252,4 @@ ve etkilesimli kod yazmamızı saglamak.
   [3]: /dokumanlar/dikkate_deger_secici.html
   [http://www.blooberry.com/]: http://www.blooberry.com/indexdot/css/syntax/selectors/attribute.htm
   [http://www.456bereastreet.com/]: http://www.456bereastreet.com/archive/200510/css_21_selectors_part_2/
-  [http://css.maxdesign.com.au/]: http://css.maxdesign.com.au/selectutorial/selectors_attribute.htm
   [http://westciv.com/]: http://westciv.com/style_master/academy/browser_support/selectors.html

@@ -9,7 +9,7 @@ tags: [Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, yo
 -   Bu site çok güzel gerekli linkleri bir araya topluyor. şžimdide
     ajax, CSS vd. web derslerinin linklerini bizlere sunmuş. [Link][]
 -   CSS ile text-decoration renklendirme. [Link][1]
--   Ücretsiz Bilişim Teknolojileri ile ilgili e-kitaplar [Link][2]
+-   Ücretsiz Bilişim Teknolojileri ile ilgili e-kitaplar
 -   Resim küçük halini ve tıklayınca büyük hali gösteren bir çok script
     mevcut. Buna güzel bir örnek [Link][3]
 -   İnternetin yenilikleri ve haberlerini izlemeke için 7 öneri
@@ -31,8 +31,6 @@ tags: [Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, yo
   [Link]: http://www.smashingmagazine.com/2007/01/26/tutorials-round-up-ajax-css-javascript-php-mysql-and-more/
     "Link"
   [1]: http://bitesizestandards.com/bites/coloring-text-decoration
-    "Link"
-  [2]: http://www.freetechebooks.com/ "Link"
   [3]: http://www.dynamicdrive.com/dynamicindex4/thumbnail.htm "Link"
   [4]: http://www.lifehack.org/articles/lifehack/7-ways-to-track-internets-trends-and-popular-news.html
     "Link"

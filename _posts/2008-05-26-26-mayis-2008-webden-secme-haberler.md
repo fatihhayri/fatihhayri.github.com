@@ -6,7 +6,7 @@ Category: Haberler
 tags: [akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explorer, jquery, mesaj kutuları, tablo]
 ---
 
--   CSS ile düzenlenmiş tablolar. [Bağlantı][]
+-   CSS ile düzenlenmiş tablolar.
 -   input ve button arasında farklılıklar. [Bağlantı][1]
 -   CSS ile mesaj kutuları hazırlamak. [Bağlantı][2]
 -   jQuery ile yapılmış güzel bir tarih aralığı seçimi. [Bağlantı][3]
@@ -27,8 +27,6 @@ tags: [akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explo
 -   jQuery ile animasyon geçişli içerikler. [Bağlantı][14]
 
 
-  [Bağlantı]: http://cssconcept.com/css-tables/professional-solutions-for-css-tables
-    "css ile tablo düzenleme"
   [1]: http://trevordavis.net/blog/tutorial/input-vs-button/
     "input ve buton"
   [2]: http://www.jankoatwarpspeed.com/post/2008/05/22/CSS-Message-Boxes-for-different-message-types.aspx

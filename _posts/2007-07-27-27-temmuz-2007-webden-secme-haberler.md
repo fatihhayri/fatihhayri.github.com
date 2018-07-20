@@ -28,7 +28,7 @@ tags: [Ajax, CSS, Haberler, html, Javascript, web2.0, WordPress]
     css kodlarının bazılarını zamanla kullanılmaz ama yine de css
     dokümanımız içibde kalır. Şimdi size bahsedeceğim araç bu gereksiz
     css kodlarını sizlere bildiriyor. "CSS Redundancy Checker".
--   Javascript anlatan güze videolar. [Link][7]
+-   Javascript anlatan güze videolar.
 
 
   [Link]: http://www.smashingmagazine.com/2007/07/25/wanted-your-404-error-pages/
@@ -45,4 +45,3 @@ tags: [Ajax, CSS, Haberler, html, Javascript, web2.0, WordPress]
   [5]: http://www.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/
     "Link"
   [Link Burdada 50 adet vermişler Link    ]: http://mashable.com/2007/07/26/wordpress-admin-plugins/ "WordPress"
-  [7]: http://101out.com/jss.php "javascript"

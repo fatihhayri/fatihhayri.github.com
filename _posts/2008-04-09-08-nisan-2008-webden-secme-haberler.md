@@ -27,9 +27,8 @@ tags: [css teknikleri, GQuery, Javascript, WordPress]
     yapma. [Bağlantı][13]
 -   CSS'siz günümüz kutlu olsun. Gerçi biz uygulamıyoruz. Seneye
     inşallah.
--   "Acid3 Testi Çıktı, birinci kim?" [Bağlantı][15]
+-   "Acid3 Testi Çıktı, birinci kim?"
 -   "Web sitemin standartlara uyumluluğunu nasıl test ederim?"
-    [Bağlantı][16]
 -   İlham alınacak 60 WordPress sitesi. [Bağlantı][17]
 
 
@@ -43,6 +42,4 @@ tags: [css teknikleri, GQuery, Javascript, WordPress]
   [9]: http://sixrevisions.com/tools-of-the-trade/helpful_wordpress_plugins_advanced_users/
   [11]: http://blog.wolkanca.com/wordpress-bloglarinda-sayfa-sablonu-kullanmak/
   [13]: http://www.alistapart.com/articles/accessibledatavisualization
-  [15]: http://www.gokceyalcin.com/acid3en-iyi-tarayici-best-browser
-  [16]: http://www.siberkultur.com/?q=web-standartlari-nedir-nasil-yapilir
   [17]: http://www.noupe.com/design/60-unusual-wp-blog-designs.html

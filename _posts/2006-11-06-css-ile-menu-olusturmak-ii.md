@@ -130,7 +130,7 @@ aşağıda verdiğimiz Kaynaklar kısmında ve gerekse İnternette aratarak bir
 
 ## Kaynaklar
 
--   [http://css.maxdesign.com.au/][]
+-   http://css.maxdesign.com.au/
 -   [http://www.cssplay.co.uk/menus/index.html][]
 -   [http://www.alvit.de/handbook/#navmenus][]
 -   [http://exploding-boy.com/images/EBmenus/menus.html][]
@@ -140,7 +140,6 @@ aşağıda verdiğimiz Kaynaklar kısmında ve gerekse İnternette aratarak bir
   [1]: /images/menu_resim2.gif
   [2]: /images/menu_resim3.gif
   [3]: /images/menu_resim4.gif
-  [http://css.maxdesign.com.au/]: http://css.maxdesign.com.au/
   [http://www.cssplay.co.uk/menus/index.html]: http://www.cssplay.co.uk/menus/index.html
   [http://www.alvit.de/handbook/#navmenus]: http://www.alvit.de/handbook/#navmenus
   [http://exploding-boy.com/images/EBmenus/menus.html]: http://exploding-boy.com/images/EBmenus/menus.html

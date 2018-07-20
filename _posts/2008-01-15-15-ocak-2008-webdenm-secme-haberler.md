@@ -17,7 +17,7 @@ tags: [acid, CSS, google maps, Haberler, jquery, lightbox, seo]
     2" 
 -   Eburhan "jQuery ve Olaylar" http://www.eburhan.com/jquery-ve-olaylar/
 -   "İnsanların Web Sitenizi Bulmasını Sağlayın: 8 SEO İpucu"
--   İnternet reklamcılığının yeni sitesi Linkz açılmış. [Bağlantı][8]
+-   İnternet reklamcılığının yeni sitesi Linkz açılmış.
 -   jQuery 2. yaş gününde yeni versiyonunu çıkardı. jQuery 1.2.2 Bazı
     hatalar düzeltilmiş, %300 daha hızlı olmuş ve bazı özellikler
     eklenmiş. [Bağlantı][9]
@@ -30,7 +30,6 @@ tags: [acid, CSS, google maps, Haberler, jquery, lightbox, seo]
   [2]: http://www.nickstakenburg.com/projects/lightview/
     "yuvarlak kenarlı lightbox"
   [3]: http://snipplr.com/ "kaynak kodlar"
-  [8]: http://www.linkz.net/ "Linkz"
   [9]: http://docs.jquery.com/Release:jQuery_1.2.2 "jQuery 1.2.2"
   [10]: http://www.webmasterworld.com/accessibility_usability/3548855.htm
     "26 adım"

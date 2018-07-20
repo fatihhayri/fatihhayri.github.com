@@ -6,7 +6,7 @@ Category: Haberler
 tags: [css3.0, e-posta, Haberler, Javascript, jquery, netscape, sildeshow]
 ---
 
--   Javascript slideshow örnekleri. [Bağlantı][]
+-   Javascript slideshow örnekleri. 
 -   Javascript ve ajax ile fare imlecinin hareketlerini kaydetme işlemi.
 -   Asp.net ile gelişmiş eposta gönderme işlemleri; cevap yaz, önem
     seviyesi, ve teyit alma. [Bağlantı][2]
@@ -18,8 +18,6 @@ tags: [css3.0, e-posta, Haberler, Javascript, jquery, netscape, sildeshow]
 -   eburhan Netscape 9'un 9 yeni özelliğini yazmış. http://www.eburhan.com/netscape-9-ile-birlikte-gelen-9-yeni-ozellik/
 
 
-  [Bağlantı]: http://www.maxkiesler.com/index.php/weblog/comments/ajax_amp_javascript_galleries_slideshows_and_effects_redux/
-    "slide show"
   [2]: http://aspnet.4guysfromrolla.com/articles/101707-1.aspx
     "asp.net ile eposta"
   [3]: http://xhtml.com/en/css/conversation-with-css-3-team/ "css3.0"

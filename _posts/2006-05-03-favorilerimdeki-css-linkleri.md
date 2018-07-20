@@ -30,7 +30,7 @@ Category: CSS
 -   [Free CSS Resources, freeprogrammingresources.com][]
 -   [HTML, XHTML & CSS][]
 -   [k css stuff][]
--   [Listutorial Step by step CSS list tutorial][]
+-   Listutorial Step by step CSS list tutorial
 -   [Little Boxes][]
 -   [Mandarin Design Frequently Asked Questions][]
 -   [The CSS and XHTML Lab 456 Berea Street][]
@@ -67,7 +67,6 @@ Category: CSS
   [Free CSS Resources, freeprogrammingresources.com]: http://www.freeprogrammingresources.com/freecss.html
   [HTML, XHTML & CSS]: http://tek-tips.com/threadminder.cfm?pid=215
   [k css stuff]: http://www.v2studio.com/k/style/
-  [Listutorial Step by step CSS list tutorial]: http://css.maxdesign.com.au/listutorial/
   [Little Boxes]: http://www.thenoodleincident.com/tutorials/box_lesson/boxes.html
   [Mandarin Design Frequently Asked Questions]: http://www.mandarindesign.com/faq.html#tripleframe
   [The CSS and XHTML Lab 456 Berea Street]: http://www.456bereastreet.com/lab/
