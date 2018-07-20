@@ -16,7 +16,7 @@ tags: [Haberler]
 -   Emeritüs Prof. Dr. Tuncer Ören'in "Bilişimde Özenli Türkçe" yazısı
     çok güzel herkesin okumasını yavsiye ederim. [Link][4]
 -   eburhan'dan "HTML Etiketlerini Yeniden Keşfetmek: optgroup" güzel
-    bir makale. [Link][5]
+    bir makale. http://www.eburhan.com/html-etiketlerini-yeniden-kesfetmek-optgroup/
 -   Xhtml kodunuzu javascript koduna çeviren internet üzerinde çalışan
     bir araç
 -   Opera küçük ekranlı araçlar için Opera Mini4'ün betasını yayınladı.
@@ -26,8 +26,6 @@ tags: [Haberler]
   [3]: http://googlesystem.blogspot.com/2007/06/get-fresh-search-results-from-google.html
     "Link"
   [4]: http://www.bilimbilmek.com/sayfa/bilisimde_ozenli_turkce.html
-    "Link"
-  [5]: http://www.eburhan.com/html-etiketlerini-yeniden-kesfetmek-optgroup/
     "Link"
   [7]: http://my.opera.com/community/blog/beta-of-opera-mini-4-is-here
     "Link"

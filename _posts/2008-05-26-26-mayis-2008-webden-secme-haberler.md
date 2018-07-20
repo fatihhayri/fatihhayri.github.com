@@ -14,7 +14,7 @@ tags: [akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explo
 -   jQuery yeni sürümü çıkmış 1.2.5 bazı sorunlar giderilmiş.
     [Bağlantı][5]
 -   "Tek bir bilgisayarda birden fazla Internet Explorer" - eburhan.com
-    [Bağlantı][6]
+    http://www.eburhan.com/tek-bir-bilgisayarda-birden-fazla-internet-explorer/
 -   Basite indirgenmiş güzel bir yatay akordiyon menü örneği.
 -   HTML5 ile birlikte gelen sıralı listeleri tersten sıralama özelliği.
     [Bağlantı][8]
@@ -38,8 +38,6 @@ tags: [akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explo
   [4]: http://nettuts.com/javascript-ajax/create-a-cool-animated-navigation-with-css-and-jquery/
     "jquery css"
   [5]: http://docs.jquery.com/Release:jQuery_1.2.5 "jquery 1.2.5"
-  [6]: http://www.eburhan.com/tek-bir-bilgisayarda-birden-fazla-internet-explorer/
-    "ie kur"
   [8]: http://css.dzone.com/news/html-5-reverse-ordered-lists
     "tersten sırala"
   [9]: http://www.sitepoint.com/blogs/2008/05/23/two-hidden-features-new-in-firefox-3/

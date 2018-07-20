@@ -16,7 +16,7 @@ tags: [arama motoru, ASP.NET, css3.0, google, google reader, google-web-mater-to
 -   CSS ile Vista görünümlü menü yapmak. [Link][3]
 -   Google WebMaster Tool aracını geliştirmiş. [Link][4]
 -   eburhan "JavaScript ve Css ile hazırlanmış kod renklendiricileri"
-    adlı güzel bir makale yazmış. [Link][5]
+    adlı güzel bir makale yazmış. http://www.eburhan.com/javascript-ve-css-ile-hazirlanmis-kod-renklendiricileri/
 -   Google 10 yaşına girmiş. 10 senede en tepeye çıkmak nasıl duygudur
     acaba.
 -   Google Reader'ın çehresini değiştirmek isteyenler için bir çözüm.
@@ -31,7 +31,5 @@ tags: [arama motoru, ASP.NET, css3.0, google, google reader, google-web-mater-to
     "vista görünümlü menü"
   [4]: http://googlesystem.blogspot.com/2007/09/number-of-igoogle-google-reader.html
     "Google WebMaster Tool"
-  [5]: http://www.eburhan.com/javascript-ve-css-ile-hazirlanmis-kod-renklendiricileri/
-    "kod renklendiriciler"
   [6]: http://www.hicksdesign.co.uk/journal/google-reader-theme-12
     "Google Reader"

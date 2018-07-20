@@ -11,7 +11,7 @@ tags: [CSS takvim, Firefox 3, Firefox Eklentileri, Glubble, jQuery UI, safari, S
 -   40 adet WordPress uygulması ve ipucu. [Bağlantı][2] 
 -   Firefox'un gelişim süreci ekran görüntüleriyle. [Bağlantı][3] 
 -   jQuery IU 1.5 ile birlikte gelen ThemaRoller anlatan güzel bir
-    video. [Bağlantı][4] 
+    video.
 -   Web tasarımcılarının izlemesi gereken 12 süper site. [Bağlantı][5] 
 -   Safari'nin metin yorumlamasını normale çevirmek.
 -   En çok aranan Wordpress ipuçları - dmry.net [Bağlantı][7] 
@@ -33,7 +33,6 @@ tags: [CSS takvim, Firefox 3, Firefox Eklentileri, Glubble, jQuery UI, safari, S
     "wordpress eklentileri"
   [3]: http://lifehacker.com/396206/the-history-of-firefox-10-to-30-in-screenshots
     "Firefox gelişim"
-  [4]: http://www.query7.com/jquery-ui-15/ "jQuery UI"
   [5]: http://sixrevisions.com/web_design/readers_pick_websites_for_webdesign/
     "12 süper site"
   [7]: http://www.dmry.net/en-cok-aranan-wordpress-ipuclari "wordpress"

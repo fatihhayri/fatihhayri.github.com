@@ -19,7 +19,7 @@ tags: [CSS, css3, ie8, jquery, zoque]
 -   İçeriği css ile dikeyde ortalamayı anlatan bir makale.
 -   Arama sonuçlarını javascript ve css ile belirgin hale getirmek.
     [Bağlantı][7]
--   "Site Turu hazırlayan servisler ve uygulamalar" [Bağlantı][8]
+-   "Site Turu hazırlayan servisler ve uygulamalar" http://www.eburhan.com/site-turu-hazirlayan-servisler-ve-uygulamalar/
 -   zoque forum 9. yaşına girmiş. Bilgi paylaşımdan dolayı teşekkürler..
     [Bağlantı][9]
 -   IE8 beta sonrası tarayıcı test sonuçları.
@@ -36,6 +36,4 @@ tags: [CSS, css3, ie8, jquery, zoque]
     "css kodları"
   [7]: http://eriwen.com/javascript/highlight-search-results-with-js/
     "css ve javascript ile arama"
-  [8]: http://www.eburhan.com/site-turu-hazirlayan-servisler-ve-uygulamalar/
-    "site turu"
   [9]: http://forum.zoque.net/ "zok form"

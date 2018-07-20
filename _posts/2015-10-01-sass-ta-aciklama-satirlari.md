@@ -162,5 +162,5 @@ Kalın sağlıcakla.
 
  - [http://www.yunusbassahan.com/blog/sass/sass-yorum-satirlari.html](http://www.yunusbassahan.com/blog/sass/sass-yorum-satirlari.html)
  - [http://www.sitepoint.com/css-sass-styleguide/](http://www.sitepoint.com/css-sass-styleguide/)
- - [http://createstopbecreative.com/2015/05/12/sass-practically-applying-comments/](http://createstopbecreative.com/2015/05/12/sass-practically-applying-comments/)
+ - http://createstopbecreative.com/2015/05/12/sass-practically-applying-comments/
  - [https://github.com/twbs/bootstrap/tree/v4-dev](https://github.com/twbs/bootstrap/tree/v4-dev)

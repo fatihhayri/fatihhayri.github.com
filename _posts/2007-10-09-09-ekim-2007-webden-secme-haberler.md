@@ -15,7 +15,7 @@ tags: [diyagram, Haberler, jquery, safari, web2.0]
 -   Bağlantılarımıza başlık(title) eklemenin arama motorlarları için
     önemi. [Bağlantı][5]
 -   eburhan "jquery ve seçiciler" adlı güzel bir makale yazmış.
-    [Bağlantı][6]
+    http://www.eburhan.com/jquery-ve-seciciler/
 -   CSS ile diyagram çizmeye ne dersiniz.
 -   Sadece tablo satırını değil hem satırı hemde kolonunu seçmek için
     ilginç bir örnek. [Bağlantı][8]
@@ -31,5 +31,4 @@ tags: [diyagram, Haberler, jquery, safari, web2.0]
     "font download"
   [5]: http://www.seomoz.org/ugc/link-tilte-attribute-and-its-seo-benefit
     "Bağlantı"
-  [6]: http://www.eburhan.com/jquery-ve-seciciler/ "Bağlantı"
   [8]: http://cssglobe.com/lab/tablecloth/ "tablo seç"

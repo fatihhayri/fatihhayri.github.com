@@ -10,7 +10,7 @@ tags: [Ajax, google, Javascript, mootools, yui]
 -   overflow yardımı ile resim galerisi.
 -   ie için PNG düzelmelerinden biri. [Bağlantı][2]
 -   50+ adet jQuery uygulaması. [Bağlantı][3]
--   "jQuery ve ajax işlemleri" [Bağlantı][4]
+-   "jQuery ve ajax işlemleri" http://www.eburhan.com/jquery-ve-ajax-islemleri/
 -   javascript kütüphanelerinden YUI 2.5 sürümü çıkmış. [Bağlantı][5]
 -   3 tane javascript ipucu. [Bağlantı][6]
 -   Asp.net'de jQuery kullanımı. [Bağlantı][7]
@@ -27,7 +27,7 @@ tags: [Ajax, google, Javascript, mootools, yui]
     [Bağlantı][14]
 -   Özellikle günlük sitelerinde kullanılmak üzere tarih formatı
     örnekleri. [Bağlantı][15]
--   "jQuery ve efekt işlemleri" [Bağlantı][16]
+-   "jQuery ve efekt işlemleri" http://www.eburhan.com/jquery-ve-efekt-islemleri/
 -   CSS kütüphanesi blueprint 0.7 sürümü çıkmış.
 -   Güzel bir resim galerisi uygulaması. [Bağlantı][18]
 -   Mootools ile yapılmış güzel bir geçiş efektli alan ekleme scripti.
@@ -42,7 +42,6 @@ tags: [Ajax, google, Javascript, mootools, yui]
     "css png"
   [3]: http://www.noupe.com/jquery/50-amazing-jquery-examples-part1.html
     "jQuery"
-  [4]: http://www.eburhan.com/jquery-ve-ajax-islemleri/ "jquery ve ajax"
   [5]: http://yuiblog.com/blog/2008/02/20/yui-250-released/ "yui 2.5"
   [6]: http://ajaxian.com/archives/cursing-with-javascript-three-random-tips
     "3 javascript ipucu"
@@ -60,7 +59,5 @@ tags: [Ajax, google, Javascript, mootools, yui]
   [14]: http://www.iconspedia.com/ "imgeler"
   [15]: http://www.smashingmagazine.com/2008/02/22/gallery-of-date-stamps-and-calendars/
     "tarih formatları"
-  [16]: http://www.eburhan.com/jquery-ve-efekt-islemleri/
-    "jquery ve efekt"
   [18]: http://www.cabel.name/draft1/2008/02/fancyzoom-10.html
     "küçük ve büyük resim"

@@ -21,7 +21,7 @@ tags: [css3.0, Dreamweaver, google, Haberler, jquery, mailing, yahoo]
     [Bağlantı][7]
 -   Erişilebilirlik için 10 kural. [Bağlantı][8]
 -   web kodlayıcılarının yaptığı 8 hata.
--   jQuery ve DOM işlemleri [Bağlantı][10]
+-   jQuery ve DOM işlemleri http://www.eburhan.com/jquery-ve-dom-islemleri/
 -   Tasarımcının Sağ, Programcının Sol Eli: HTML Coder [Bağlantı][11]
 
 
@@ -39,5 +39,4 @@ tags: [css3.0, Dreamweaver, google, Haberler, jquery, mailing, yahoo]
     "seçili metnin artalanı"
   [8]: http://www.webcredible.co.uk/user-friendly-resources/web-accessibility/errors.shtml
     "erişebilirlik"
-  [10]: http://www.eburhan.com/jquery-ve-dom-islemleri/ "jquery ve DOM"
   [11]: http://www.hasanyalcin.com/?p=390 "tasarımcı koder"

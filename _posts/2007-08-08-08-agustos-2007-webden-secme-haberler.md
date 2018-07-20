@@ -17,7 +17,7 @@ tags: [CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress]
     makale. [Link][2]
 -   WordPress günlüğünüzü optimize etmek hakkında bir makale. [Link][3]
 -   eburhan "jQuery Dünyasına adım atıyoruz" adlı güzel bir makale
-    yazmış. [Link][4]
+    yazmış. http://www.eburhan.com/jquery-dunyasina-adim-atiyoruz/
 -   "Blogcular sendika kurma yolunda" ben isminide buldum "Günlük
     Sendikası"
 -   "Web standartlarının kralı Jeffrey Zeldman" adlı bir makale.
@@ -36,6 +36,4 @@ tags: [CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress]
   [2]: http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/
     "negatif kenar boşluğu"
   [3]: http://www.seobook.com/archives/002380.shtml "wordpress"
-  [4]: http://www.eburhan.com/jquery-dunyasina-adim-atiyoruz/
-    "Jquery Dünyasına adım"
   [8]: http://uxmatters.com/MT/archives/000191.php "Web Formlar"

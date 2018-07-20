@@ -17,7 +17,7 @@ tags: [arama motoru, Blog Ödülleri, css doğrulama, google pagerank, Macromedi
 -   Blog ödülleri sahiplerini bulmuş.
 -   Opera Drangfly çıkarmış. Firefox Firebug benzeri bir araç.
 -   "“Güvenilir Yorumcular” isminde bir WP eklentisi yazdım" -
-    eburhan.com [Bağlantı][8]
+    eburhan.com http://www.eburhan.com/guvenilir-yorumcular-isminde-bir-wp-eklentisi-yazdim/
 -   "İnternet’te Reklam ve Banner Standartları" - Hasan Yalçın
     [Bağlantı][9]
 -   "Yeni PR Güncellemesi ve MMistanbul’un Büyük Başarısı"
@@ -31,6 +31,4 @@ tags: [arama motoru, Blog Ödülleri, css doğrulama, google pagerank, Macromedi
     "arama motorlarına uygun menüler"
   [5]: http://www.wordpress-tr.com/wordpress-turkce-251/
     "wordpress 2.5.1"
-  [8]: http://www.eburhan.com/guvenilir-yorumcular-isminde-bir-wp-eklentisi-yazdim/
-    "wordpress yorumlar"
   [9]: http://www.hasanyalcin.com/?p=476 "web banner"

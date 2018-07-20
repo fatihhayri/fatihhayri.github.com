@@ -15,7 +15,7 @@ tags: [css3.0, e-posta, Haberler, Javascript, jquery, netscape, sildeshow]
 -   jQuery güzel resim geçiş efektleri. Flash'ı zorlayan efektler.
     [Bağlantı][5]
 -   CSS ile yapılmış dikey bar grafikleri. [Bağlantı][6]
--   eburhan Netscape 9'un 9 yeni özelliğini yazmış. [Bağlantı][7]
+-   eburhan Netscape 9'un 9 yeni özelliğini yazmış. http://www.eburhan.com/netscape-9-ile-birlikte-gelen-9-yeni-ozellik/
 
 
   [Bağlantı]: http://www.maxkiesler.com/index.php/weblog/comments/ajax_amp_javascript_galleries_slideshows_and_effects_redux/
@@ -27,5 +27,3 @@ tags: [css3.0, e-posta, Haberler, Javascript, jquery, netscape, sildeshow]
   [5]: http://www.malsup.com/jquery/cycle/ "Bağlantı"
   [6]: http://meyerweb.com/eric/css/edge/bargraph/demo-table.html
     "Bağlantı"
-  [7]: http://www.eburhan.com/netscape-9-ile-birlikte-gelen-9-yeni-ozellik/
-    "netscape 9"

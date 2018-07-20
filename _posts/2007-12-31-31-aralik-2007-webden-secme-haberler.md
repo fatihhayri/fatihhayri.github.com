@@ -14,7 +14,7 @@ tags: [Firefox, Haberler, innerHTml, linq, opacity]
     opacity özelliğinin farklı tarayıcılardaki kodu W3C validator'dan
     geçmiyor, CSS3 ile bu durum düzeltilmiş olsa bile, şimdilik burada
     anlatılan metot mantıklı.
--   Eburhan'dan "Css ile hazırladığım mesaj kutuları" [Bağlantı][2]
+-   Eburhan'dan "Css ile hazırladığım mesaj kutuları" http://www.eburhan.com/css-ile-hazirladigim-mesaj-kutulari/
 -   google chart api(grafik) hakkında bir makale. [Bağlantı][3]
 -   Daron Yöndem - LINQ2XML.
 -   Güzel bir css menü örneği. [Bağlantı][5]
@@ -26,8 +26,6 @@ tags: [Firefox, Haberler, innerHTml, linq, opacity]
 -   Firefox 3(Beta)'ün 5 güzel yenliği.
 
 
-  [2]: http://www.eburhan.com/css-ile-hazirladigim-mesaj-kutulari/
-    "mesaj kutuları"
   [3]: http://techtracer.com/2007/12/17/the-power-of-google-chart-api/
     "google chart api"
   [5]: http://www.3point7designs.com/blog/2007/12/22/advanced-css-menu-trick/

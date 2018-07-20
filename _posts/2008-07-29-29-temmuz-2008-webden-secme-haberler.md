@@ -22,7 +22,6 @@ tags: [açılır-menü, CSS, css hataları, css ile site yapmak, CSS sıfırlama
 -   jQuery ile uygulamalarımıza klavye kısayolu eklemek.
 -   6 adet kullanışlı jQuery ipucu. [Bağlantı][10]
 -   jQuery ile “çek-bırak” özellikli nesneler oluşturmak - eburhan.com
-    Kırık bağlantı.
 -   Geçen sene web ile uğraşanlar için anket düzenleyen A List Apart bu
     senede anket düzenlemiş. Türkiye'yi Asya kıtasına eklemişler dikkat.
     [Bağlantı][12]

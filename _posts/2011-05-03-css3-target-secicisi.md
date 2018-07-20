@@ -74,7 +74,7 @@ Bunun dışında eğlenceli örnekler geliştirilmiştir.
 
 ## Örnek 2: Basit Akordiyon
 
-[http://kaioa.com/b/0903/target_faq_demo.html][]
+http://kaioa.com/b/0903/target_faq_demo.html
 
 ![][4]
 
@@ -89,7 +89,7 @@ oluşturulabilir.
 
 ## Örnek3: Galeri
 
-[http://kaioa.com/b/0903/target_gallery_demo.html#i1][]
+http://kaioa.com/b/0903/target_gallery_demo.html#i1
 
 ![][5]
 
@@ -118,7 +118,7 @@ Zamanla çok daha güzel örneklerin çıkacağını düşünüyorum.
 -   [http://www.css3.info/making-an-image-gallery-with-target/][]
 -   [http://virtuelvis.com/gallery/css3/target/interface.html#recycle][]
 -   [http://webdesignernotebook.com/css/the-css3-target-pseudo-class-and-css-animations/][]
--   [http://kaioa.com/node/93][]
+-   http://kaioa.com/node/93
 -   [http://reference.sitepoint.com/css/pseudoclass-target][]
 
   [tıklayınız.]: /dokumanlar/target_sozde_sinifi/target_sozde_sinif.html
@@ -127,9 +127,9 @@ Zamanla çok daha güzel örneklerin çıkacağını düşünüyorum.
   [2]: /dokumanlar/target_sozde_sinifi/target_sozde_sinif_yatay.html
   [http://tr.wikipedia.org/wiki/Trabzon_%28il%29]: http://tr.wikipedia.org/wiki/Trabzon_%28il%29
   [3]: https://lh6.googleusercontent.com/0G2gsPGXTQ2SDAqEYXAMsVPpCRvSyTzkoR_Ubb-P2eq3zdhBo4ARPTD06UnDknSB3U2XEPJ443-fcloiH22zHNodmCLgBui2jGpJQZDJiw95lZWlpQ
-  [http://kaioa.com/b/0903/target_faq_demo.html]: http://kaioa.com/b/0903/target_faq_demo.html
+  http://kaioa.com/b/0903/target_faq_demo.html
   [4]: https://lh6.googleusercontent.com/WxInkt_K1Za-AOK1mwFR6QdopkG_Jclf-0V7rM3rcGQI6BHXmerN7GNbKQOMN8UudczO0029sdlSjgc7UYXBpgye2ISmIWMgx9z5ERDMEp9mbMYIxw
-  [http://kaioa.com/b/0903/target_gallery_demo.html#i1]: http://kaioa.com/b/0903/target_gallery_demo.html#i1
+  http://kaioa.com/b/0903/target_gallery_demo.html#i1
   [5]: https://lh5.googleusercontent.com/JIw7mpQZ1vZlRkcjZijKVbCoe5SqXeq4TGx0pNrW0qSVOhmS3u-7xQacBlvxzWBf55OWlzYxf2B7k0u89CHVa2fFdlTL4F410blisNOAz9eF2LjNlw
   [http://dev.opera.com/articles/view/css3-target-based-interfaces/]: http://dev.opera.com/articles/view/css3-target-based-interfaces/
   [http://thinkvitamin.com/design/stay-on-target/]: http://thinkvitamin.com/design/stay-on-target/
@@ -138,7 +138,7 @@ Zamanla çok daha güzel örneklerin çıkacağını düşünüyorum.
   [http://www.css3.info/making-an-image-gallery-with-target/]: http://www.css3.info/making-an-image-gallery-with-target/
   [http://virtuelvis.com/gallery/css3/target/interface.html#recycle]: http://virtuelvis.com/gallery/css3/target/interface.html#recycle
   [http://webdesignernotebook.com/css/the-css3-target-pseudo-class-and-css-animations/]: http://webdesignernotebook.com/css/the-css3-target-pseudo-class-and-css-animations/
-  [http://kaioa.com/node/93]: http://kaioa.com/node/93
+  http://kaioa.com/node/93
   [http://reference.sitepoint.com/css/pseudoclass-target]: http://reference.sitepoint.com/css/pseudoclass-target
 
 

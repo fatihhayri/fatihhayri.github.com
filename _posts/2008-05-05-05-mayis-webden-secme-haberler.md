@@ -25,7 +25,7 @@ tags: [css kod, datagrid, feedburner, form denetimi, google pagerank, ie6, javsc
 -   Profesyonel Web Forumları. [Bağlantı][10]
 -   "Yoksa Siz Hala Internet Explorer 6 mı Kullanıyorsunuz?" - mafiamax
     [Bağlantı][11]
--   "Snarfer: ücretsiz RSS okuyucu" - eburhan [Bağlantı][12]
+-   "Snarfer: ücretsiz RSS okuyucu" - eburhan http://www.eburhan.com/snarfer-ucretsiz-rss-okuyucu/
 
 
   [1]: http://www.codedigest.com/Articles/ASPNET/77_Useful_Datagrid_Tips.aspx
@@ -44,4 +44,3 @@ tags: [css kod, datagrid, feedburner, form denetimi, google pagerank, ie6, javsc
     "web forumları"
   [11]: http://www.mafiamax.com/2008/05/yoksa-siz-hala-internet-explorer-6-mi.html
     "ie6 kullanmayın"
-  [12]: http://www.eburhan.com/snarfer-ucretsiz-rss-okuyucu/ "Bağlantı"

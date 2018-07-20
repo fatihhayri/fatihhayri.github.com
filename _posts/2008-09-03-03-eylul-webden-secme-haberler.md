@@ -27,7 +27,7 @@ tags: [CSS filtreleme, display, inline-block, Erişebilirlik, Google Analytics, 
     tarayıcı rekabeti kızıştıracak gibi. [Bağlantı][11] 
 -   Google Chrome çıktı. Hızlı, sade ve güven veriyor. Stadandartları
     destekliyor. Acid 2 testinden tam puan aldı. İndirmek
-    için [tıklayınız][]. Özelliklerini incelemek için [tıklayınız][12]
+    için [tıklayınız][]. Özelliklerini incelemek için tıklayınız
      [Bağlantı][13]
 -   Html elemanlarının CSS testini sağlamak için hazırlanmış güzel bir
     html dosyası. Kırık bağlantı.
@@ -55,8 +55,6 @@ tags: [CSS filtreleme, display, inline-block, Erişebilirlik, Google Analytics, 
   [11]: http://www.google.com/googlebooks/chrome/ "Google Chrome"
   [tıklayınız]: http://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B1B64D896-77F6-CE49-9924-B655FE0095AA%7D%26lang%3Dtr%26browser%3D3%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dfalse%26brand%3DCHMG%26appguid%3D%7B00058422-BABE-4310-9B8B-B8DEB5D0B68A%7D%26appname%3DChromeGears%26needsadmin%3Dfalse%26brand%3DCHMG/update2/installers/ChromeSetup.exe
     "Google Chrome indir"
-  [12]: http://www.google.com/chrome/intl/en/features.html#
-    "Google Chrome Özellikleri"
   [13]: http://www.google.com/chrome/?hl=en "Google Chrome"
   [16]: http://www.smashingmagazine.com/2008/08/26/how-simple-web-design-helps-your-business/
     "yardım"

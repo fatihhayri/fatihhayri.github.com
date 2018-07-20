@@ -22,7 +22,7 @@ tags: [Acid 3 test, ie8, jquery, Web Standartları, web3.0, wordpress 2.5, yuvar
 -   -"Web 3.0 - Semantik Web"-
 -   jquery ile farklı bir büyük resim gösterme tekniği. [Bağlantı][8]
 -   "Tek bir resim dosyası ile yuvarlak köşeli kutular yapmak"
-    [Bağlantı][9]
+    http://www.eburhan.com/tek-bir-resim-dosyasi-ile-yuvarlak-koseli-kutular-yapmak/
 -   Web standartları açısından Acid testleri bayağı bir önem kazandı.
     Opera yeni çıkaracağı web tarayıcısının Acid3 testinden 100/100
     aldığını duyurdu. Ne diyelim darısı diğerlerinin başına.
@@ -39,8 +39,6 @@ tags: [Acid 3 test, ie8, jquery, Web Standartları, web3.0, wordpress 2.5, yuvar
     "css özellik listesi"
   [100]: http://Web%203.0%20-%20Semantik%20Web "web 3.0"
   [8]: http://fancy.klade.lv/ "jquery resim göster"
-  [9]: http://www.eburhan.com/tek-bir-resim-dosyasi-ile-yuvarlak-koseli-kutular-yapmak/
-    "tek resimle yuvarlak kenarlı kutular"
   [11]: http://www.selcukhoca.com/blogtan-para-kazanmak/#comment-2819
     "blog"
   [12]: http://www.yakuter.com/kategorinin-yazilari-eklentisi-2/

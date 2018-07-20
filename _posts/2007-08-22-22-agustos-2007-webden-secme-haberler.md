@@ -16,7 +16,7 @@ tags: [.net, CSS, Haberler, Javascript, kahramanlar, web2.0]
 -   burcudogan.com JSON'ı ne için kullanabiliriz adlı bir makale.
     [Link][4]
 -   eburhan'dan CSS ile zarif arama formları hazırlama adlı güzel bir
-    makale. [Link][5]
+    makale. http://www.eburhan.com/css-ile-zarif-arama-kutulari-hazirlamak/
 -   ferruh.mavituna.com dan "Programcı Tıkanıklığı" adlı güzel bir
     makale.
 -   HasanYalcin.com "Tasarımcılara en çok söylene 10 yalan" adlı bir
@@ -36,8 +36,6 @@ tags: [.net, CSS, Haberler, Javascript, kahramanlar, web2.0]
     "CSS3.0"
   [4]: http://www.burcudogan.com/jsoni-ne-icin-nerde-kullanabiliriz-36.html
     "JSON"
-  [5]: http://www.eburhan.com/css-ile-zarif-arama-kutulari-hazirlamak/
-    "CSS arama"
   [7]: http://www.hasanyalcin.com/?p=319 "Tsarımcılar"
   [8]: http://techmagazine.ws/full-web-20-api-list/
     "tüm web2.0 uygulamları"

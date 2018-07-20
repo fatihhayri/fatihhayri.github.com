@@ -10,7 +10,7 @@ image:
 
 Arayüz geliştiricilerin dünyası [Nodejs](https://nodejs.org/) sonrasında olumlu olarak değişti. Değişmeye de devam ediyor. Hızlı gelişen bu dünyada en büyük sorunlardan bir tanesi çok fazla araç çıkıyor ve bu araçları öğrenmek zaman alıyor. 
 
-Bu gelişmelerin başında Grunt, Gulp gibi işleri otomatize eden yapılar ve sonrasında paketleme araçları olarak geçen [Webpack](https://webpack.js.org/), [Browserify](http://browserify.org/) ve [Rollup](https://rollupjs.org/guide/en) gibi yapılar. Bu araçlar çok güzel ve bizi bir çok dertten kurtarıyor. Ancak ilk pargrafta bahsettiğim gibi bazı geliştiriciler bu nasıl bir iş her hafta yeni bir şey çıkıyor takip edemiyoruz diye yakınıyor. 
+Bu gelişmelerin başında Grunt, Gulp gibi işleri otomatize eden yapılar ve sonrasında paketleme araçları olarak geçen [Webpack](https://webpack.js.org/), [Browserify](http://browserify.org/) ve [Rollup](https://github.com/rollup/rollup) gibi yapılar. Bu araçlar çok güzel ve bizi bir çok dertten kurtarıyor. Ancak ilk pargrafta bahsettiğim gibi bazı geliştiriciler bu nasıl bir iş her hafta yeni bir şey çıkıyor takip edemiyoruz diye yakınıyor. 
 
 Tam bunları söylerken size yeni bir geliştirme aracını tanıtmak istiyorum. Parceljs. Parcel bizlere yapılandırma dosyası olmadan paketleme yapma imkanı sağlayan bir araç. Webpack çok güzel ve kullanışlı ancak yapılandırma dosyasını oluşturmak çok zor. Ayrıca webpack'in öğrenme eğrisi yüksek. (Benim gördüğüm kadarıyla.)
 
