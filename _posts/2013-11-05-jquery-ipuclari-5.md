@@ -103,7 +103,7 @@ $('textarea').bind('keydown keyup keypress change',function(){
 });
 {% endhighlight %}
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/CzjJI?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/CzjJI?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 kaynak: [http://black-flag.net/jquery/20120229-3696.html][103]
 

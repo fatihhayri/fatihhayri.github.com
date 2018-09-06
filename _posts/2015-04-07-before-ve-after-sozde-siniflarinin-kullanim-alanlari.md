@@ -108,7 +108,7 @@ Kapsayıcı elemanın genişlik ve yüksekliğini alması için **position:absol
 
 CSS ile oluşturulan ok :before ile, okun kenarçizgisi ise :after ile ekleniyor.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/JhrdC?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/JhrdC?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 CSS ile şekil üretirken altıgen yapmak içinde :after yardımı ile çözümler mevcut. [http://www.cssportal.com/css3-shapes/](http://www.cssportal.com/css3-shapes/)
 

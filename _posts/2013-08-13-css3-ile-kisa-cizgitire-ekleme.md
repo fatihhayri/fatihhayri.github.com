@@ -29,7 +29,7 @@ Değerlerini inceleyelim.
 
 Bir örnek yapalım.
 
-<iframe scrolling="no" height="150" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="150" src="http://codepen.io/fatihhayri/embed/DEHAm?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="150" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="150" src="//codepen.io/fatihhayri/embed/DEHAm?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 ![kesik çizgi](/images/tire_isareti.png)
 

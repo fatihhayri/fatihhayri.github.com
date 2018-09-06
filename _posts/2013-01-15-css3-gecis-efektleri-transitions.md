@@ -20,7 +20,7 @@ bahsettiğimiz gibi bir fare imlecinin bağlantı üzerine geldiğinde renk
 değişmesini anlık değil merhale merhale değiştirelim.
 
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/IpEnx?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/IpEnx?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Renk geçişi belli bir zaman aralığına yayılacaktır ve iki renk
 arasındaki geçişte ara renkler görünecektir. Bu geçişe bazı efektlerde
@@ -122,7 +122,7 @@ a:hover {
 
 Animasyonumuz 0.5 saniye sonra başlayacaktır.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/bkFsm?type=css&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/bkFsm?type=css&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 ### transition-timing-function
 
@@ -143,7 +143,7 @@ Daha önce sizlerle paylaştığım bu araçlar
 ile transition-timing-function özelliğini kullanmak bir zevk haline
 geliyor.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/Alapk?type=css&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/Alapk?type=css&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 ### transition kısayolu
 
@@ -194,7 +194,7 @@ input:focus {
 Son örneğimizde arama alanına odaklandığımızda genişliğini ve ardalan
 rengini geçiş efekti ile değiştirdi.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/iorBc?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/iorBc?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 ## Geçiş Efektini Tetiklemek
 
@@ -223,7 +223,7 @@ Javascript ilede bu bağlantıya tetikle diye bir sınıf tanımlayalım.
 document.querySelector('a').className = 'tetikle';
 {% endhighlight %}
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DGvlB?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/DGvlB?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 ## Javascript ile Geçişin Bittiğinin Kontrolü
 

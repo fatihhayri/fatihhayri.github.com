@@ -44,7 +44,7 @@ initial değeri atanan elemanın belirlenen özelliğinin başlangıç değerine
 
 Tarayıcılar HTML elemanları yorumlarken belirli başlangıç değerleri kabul ederek yorumlarlar. User Agent Stilleri olarak adlandırılan bu özelliklere sonradan tanımlanan CSS özellikleri ezer. Her tarayıcının kendine özel UA Stillleri vardır. CSS3 ile gelen initial değeri ile başlangıç değerine döndürme imkanımız oluyor.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/wAJel?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/wAJel?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Örnekte görüldüğü gibi kapsayıcı **div** elemanına atanan kırmızı rengi ilk paragraf için **initial** değeri ile tarayıcının ilk kabul değerine(siyah) döndürülmüştür.
 
@@ -70,7 +70,7 @@ Tarayıcılar HTML elemanları yorumlarken belirli başlangıç değerleri kabul
 
 ![ch değeri](https://lh6.googleusercontent.com/u37sIJEYI4ncu1kqWM8HXZP225cmrkmBu_sQdzxo1jt2R--qIHZbVx6g8zGO525qeA0ChiTPGpia0yTqBCcAIQMuozLurd3tH1x1ZZm2VOTtYgfflqgf6MMWZA)
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/xcGsn?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/xcGsn?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Örnekte de görüldüğü gibi her yazı tipinin sıfır karakteri genişli farklıdır.
 
@@ -233,7 +233,7 @@ attr() fonksiyon değeri seçilen elemanın bir özniteliğini(attribute) almak 
 
 Bu fonksiyonu kullanarak basit bir tooltip uygulaması yapabiliriz.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/uDsHn?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/uDsHn?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Örneği incelediğimizde html içinde bağlantıya **data-title** özniteliği olarak eklenen bilgilendirme **:hover** durumunda elemanın sözde :after sınıfı ile görünür hale getirilmektedir.
 
@@ -259,7 +259,7 @@ counter() değeri CSS ile sıralı rakamlar oluşturmamızı sağlar.
 
 İç içe listelerde kitap indekslerindeki gibi bir rakamlandırma bu özellik sayesinde yapabiliyoruz.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/Inmdu?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/Inmdu?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Kodu [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters?redirectlocale=en-US&redirectslug=CSS%2FCounters)’de gördüm. Değeri tanımlamak için güzel bir örnek.
 

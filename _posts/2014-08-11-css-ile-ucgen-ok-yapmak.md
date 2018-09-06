@@ -14,13 +14,13 @@ CSS 3'ün hayatımıza girmesi ile birlikte daha az resim işleme programı(Phot
 
 Tarayıcılar kenar çigizisi tanımlarını işlerken köşelerini belli bir açı ile kapatıyor. 
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/qCLuJ?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/qCLuJ?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Yukarıdaki kodlama sonucunda görüldüğü gibi tarayıcılar kenar çizgisi tanımlarını eğer içerik boş ise üçgen bir ok gibi yorumluyor. Bu görselliği kullanarak istediğimiz üçgen oklarımızı elde edebiliriz.
 
 Aşağıdaki gibi bir konuşma balonunu hiç resim kullanmadan sadece CSS kullanarak elde edebiliriz.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/hJBjA?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/hJBjA?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Yukarıdaki kodu incelersek; 
 
@@ -30,17 +30,17 @@ Yukarıdaki kodu incelersek;
 
 Farklı boyutlarda oklar üretmek mümkün. Değerlerle biraz oynayarak istediğimiz görsellikte sonuçlar elde edebiliriz.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DIbrn?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/DIbrn?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Ara yönlerde ok üretmek de mümkün. Aşağıda sağ üst köşeye tanımlanmış bir ok görülüyor.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/mrjsB?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/mrjsB?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 ## Kenar çizgili(border) oklar üretmek
 
 Web sitemizde bazen okları kenar çizgisi ile kullanmak isteyebiliriz. Sadece CSS ile bunu çözmek mümkün. Yukarıdaki örneklerden birisine kenar çizgisi ekleyerek bu durumu göstermeye çalışalım. Mantık aslında aynı, iki ok oluşturup kenar çizgisi olarak kullanacağımız oku kenar çigisi genişliği kadar büyük yapmaktan geçiyor yöntem. Konumlandırırken de bu durumu göz önüne almak gerekiyor.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/JhrdC?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/JhrdC?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Yukarıdaki örnekten farklı olarak **:before** ile kenar çizgisini ekledik. Normal okumuzun genişliği **15px** iken buna **1px**'lik kenar çizgisi eklemek için ikinci oluşturduğumuz okumuzu(kenar çigisi) **16px** üretiyoruz. Siz eğer farklı kenar çigisi boyutu kullanacak iseniz ona göre genişliği belirlemelisiniz. 
 
@@ -93,4 +93,4 @@ Kalın sağlıcakla.
  - [http://stackoverflow.com/questions/18456331/how-can-i-create-an-arrow-using-only-css](http://stackoverflow.com/questions/18456331/how-can-i-create-an-arrow-using-only-css)
  - [http://codeitdown.com/css-triangles-responsive/](http://codeitdown.com/css-triangles-responsive/)
  - [http://css-tricks.com/adobe-like-arrow-headers/](http://css-tricks.com/adobe-like-arrow-headers/)
- - [http://codepen.io/minimalmonkey/pen/KIaGD](http://codepen.io/minimalmonkey/pen/KIaGD)
+ - [//codepen.io/minimalmonkey/pen/KIaGD](//codepen.io/minimalmonkey/pen/KIaGD)

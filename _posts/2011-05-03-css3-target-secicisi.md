@@ -36,7 +36,7 @@ h3:target {
 
 Sayfa içi bağlantıları nasıl yaptığımı hatırlayalım.
 
-<iframe scrolling="no" height="350" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/Fmvnz?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="350" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/Fmvnz?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 ![][100]
 
@@ -44,7 +44,7 @@ Benzer yapının yatay kaydırma çubuğu ile olanını yapabiliriz
 
 ![][1]
 
-<iframe scrolling="no" height="350" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/JuKqF?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="350" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/JuKqF?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Sayfa içi linklerden farklı olarak **name** ile değil **id** ile
 tanımlanan alanları hedef seçiyoruz. Buda bizi fazla kod yazmaktan

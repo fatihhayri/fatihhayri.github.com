@@ -52,7 +52,7 @@ Değişen kısım.
 
 Genişlik ve yükseklik burada tam sayfa kullandığımız için 100% verildi. Tabi siz istediğiniz genişlik ve yükseklik tanımını yaparak çalışabilirsiniz. 
 
-<iframe height='265' scrolling='no' src='//codepen.io/fatihhayri/embed/KrOJgO/?height=265&theme-id=light&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/fatihhayri/pen/KrOJgO/'>flex ile yatay-dikey ortalı alanlar</a> by Fatih  (<a href='http://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='265' scrolling='no' src='//codepen.io/fatihhayri/embed/KrOJgO/?height=265&theme-id=light&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 Kalın sağlıcakla.

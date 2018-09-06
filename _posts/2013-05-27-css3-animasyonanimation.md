@@ -102,7 +102,7 @@ Animasyonun ne kadar süreceğini belirtmek için bu özelliği kullanırız.
 }
 {% endhighlight %}
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/zhlHo?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/zhlHo?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Animasyonun 3 saniye devam edeceğini gösterir. Daha önce gördüğümüz transition-duration özelliğine benzer bir özelliktir. Zaman değerleri alır; ms, s ve 0 değerleri alır.
 
@@ -136,7 +136,7 @@ Aldığı değerler ease, linear, ease-in, ease-out, ve ease-in-out
 {% endhighlight %}
 
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/xBgaA?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/xBgaA?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Animasyonun esnek bir şekilde meydana gelmesini sağlar.
 
@@ -160,7 +160,7 @@ Bu tanım animasyonun kaç kere tekrarlanacağını belirler.
 }
 {% endhighlight %}
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/IAKJm?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/IAKJm?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 animation-iteration-count tanımı tüm pozitif rakamları alabilir. Animasyonun daimi olarak devam etmesini istiyorsak infinite değerini atamalıyız. Başlangıç değeri 1&rsquo;dir.
 
@@ -194,7 +194,7 @@ Başlangıç değer normal olarak tanımlıdır. Aldığı değerler
 }
 {% endhighlight %}
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/qLKAp?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/qLKAp?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Animasyonu tersine çevirecektir. Metin sağdan sola değil, soldan sağa doğru gelecektir.
 
@@ -220,7 +220,7 @@ animation-delay tanımı animasyonun başlamadan önce belli bir süre bekletmem
 }
 {% endhighlight %}
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/qizfH?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/qizfH?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Tanımı ile animasyon tetiklenmesinden itibaren 4 saniye sonra başlayacaktır. Bu tanım pozitif ve negatif rakam alabilir. Pozitif değerler animasyonu bekletirken, negatif değerler atandığında animasyon hemen başlayacak ve belirlenen saniyeden sonra görünmeye başlayacaktır.
 
@@ -247,7 +247,7 @@ Tanımını yapmamız yeterlidir. Örneğimizde elemanın üzerine geldiğimizde
 }
 {% endhighlight %}
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/yCDJc?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/yCDJc?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Tanımını eklememiz yeterli olacaktır. Bu özelliğe javascript ile erişerek daha dinamik örnekler oluşturabiliriz.
 
@@ -446,7 +446,7 @@ Tarayıcılara göre metot isimleri farklılık gösteriyor.
 </table>
 
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DIvqF?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/DIvqF?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 
 **Tarayıcı Desteği**

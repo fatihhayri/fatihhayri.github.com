@@ -11,7 +11,7 @@ tags: [uzun-metin, üç-nok, kısaltma]
 
 Daha önce uzun metinleri tek satırda sabitlemek için aşağıdaki yöntemi kullanıyordum.
 
-<iframe height='300' scrolling='no' title='KNpXOV' src='//codepen.io/fatihhayri/embed/KNpXOV/?height=300&theme-id=13521&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/fatihhayri/pen/KNpXOV/'>KNpXOV</a> by Fatih  (<a href='http://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='300' scrolling='no' title='KNpXOV' src='//codepen.io/fatihhayri/embed/KNpXOV/?height=300&theme-id=13521&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 Bu iş için bir mixin yazmak güzel oluyor.
@@ -38,7 +38,7 @@ Peki bu işi iki veya daha fazla satır için yapan bir CSS kodu yok mu? Var aş
 
 Kod çok basit.
 
-<iframe height='300' scrolling='no' title='MbwOYb' src='//codepen.io/fatihhayri/embed/MbwOYb/?height=300&theme-id=13521&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/fatihhayri/pen/MbwOYb/'>MbwOYb</a> by Fatih  (<a href='http://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='300' scrolling='no' title='MbwOYb' src='//codepen.io/fatihhayri/embed/MbwOYb/?height=300&theme-id=13521&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 `-webkit-line-clamp: 3` tanımı ile kaç satırın görünmesi bu satır ile tanımlıyoruz. Yukarıdaki gibi bu tanımı bir mixin yapıp istediğimiz yerde kullanabiliriz.

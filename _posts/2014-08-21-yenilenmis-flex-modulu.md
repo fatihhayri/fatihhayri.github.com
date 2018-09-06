@@ -67,7 +67,7 @@ Esnek Kutu Yerleşimi Modülünün son standartlaşmış sürümünü(2014 mart)
 
 Basit bir örnek yapalım.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/wGIaJ?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/wGIaJ?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
 
 Kapsayıcı elemana tanımlanan **display:flex** özelliği yardımı ile alt elemanlara tanımlanan **flex** özellikleri ile sayfa yerleşimimizi çok kolay şekilde yapmamıza olanak sağlamaktadır.
 
@@ -89,7 +89,7 @@ Kapsayıcı elemana tanımlanan **display:flex** özelliği yardımı ile alt el
 
 Bir örnekle bu özelliği deneyelim.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/pCsjk?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/pCsjk?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
 
 ### flex-wrap
 
@@ -108,7 +108,7 @@ Bir örnekle bu özelliği deneyelim.
 
 Örneğmize iki satır olacak şekilde bir iki kutu daha ekleyerek bu özelliğin kullanımını görelim.
 
-<iframe scrolling="no" height="450" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="450" src="http://codepen.io/fatihhayri/embed/qkCjK?type=result&amp;height=450" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="450" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="450" src="//codepen.io/fatihhayri/embed/qkCjK?type=result&amp;height=450" id="cp_embed_hgplm"></iframe>
 
 wrap-revers tanımı ile ikinci satırı üste eklemiş olduk.
 
@@ -194,7 +194,7 @@ Bu özellik kutuların y ekseninde nasıl hizalanacağını belirler. justify-co
 
 Varsayılan olarak esnek kutular kodda yazılan sıra ile dizilir. **order** özelliği esnek kapsayıcı içindeki öğelerin kaçıncı sıralda görünmesi gerektiğini belirlememizi sağlar.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/wukiy?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/wukiy?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
 
 Yukarıdaki örnekte ikinci sıradaki eleman ordr tanımı ile üçüncü sıraya atılmıştır.
 
@@ -211,7 +211,7 @@ Yukarıdaki örnekte ikinci sıradaki eleman ordr tanımı ile üçüncü sıray
 
 **flex-grow** tanımı yapılmış eleman diğer esnek kutulardan verilen dğer kadar daha büyük olacaktır. Bu özellik sayesinde kutular kendi aralarında belirlenen oranlarda esnek olarak genişleyip küçülecektir.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/bwAHn?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/bwAHn?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
 
 Tüm elemanlara 1 değeri verilip bir esnek öğenin **flex-grow** değeri 2 tanımlanırsa, bu öğe diğer öğelere göre her zaman iki kat daha büyük görünecektir. Negatif değer almaz.
 
@@ -228,7 +228,7 @@ Esnek kutu için büzülme faktörünü belirler.
 
 **flex-shrink** tanımlanmış eleman, esnek kapsayıcı eleman içindeki diğer elemanlara göre göreceli olarak nasıl büzüleceğini belirler. 
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/unxaD?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/unxaD?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
 
 Yukarıdaki örnekte normal durumda eşit genişlikte görülmektedir. Ancak tarayıcı genişliği daraltılınca **flex-shrink** değeri **2** olarak belirlenen kutu daha fazla büzülecektir. Uyumlu web siteleri yaparken işe yarar bu özellik.
 
@@ -243,7 +243,7 @@ Yukarıdaki örnekte normal durumda eşit genişlikte görülmektedir. Ancak tar
 
 Esnek kutunun optimum boyutunu belirlemek için kullanılır. Eğer boş alan müsait ise esnek kutu belirlenen değer kadar genişlikte olacaktır. 
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/DFnuy?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/DFnuy?type=result&amp;height=350" id="cp_embed_hgplm"></iframe>
 
 Örnekte görüldüğü gibi boş alan var ise ilk eleman genişliği **300px**, ikinci eleman genişliği **30%**. Tarayıcı genişliği daraltılınca boş alan kalmayınca esnek kutu genişliği esenmeye başlıyor.
 

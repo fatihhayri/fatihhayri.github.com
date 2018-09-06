@@ -55,7 +55,7 @@ CSS kodunun önemli alanlarını yukarıya yazdım. Tüm kodu görmek için code
 
 Ayrıca gizle-göster yapılacak alana **padding, margin** ve **border** tanımlarsak animasyonda takılmalar olabiliyor. Bunun yerine bu kapsayıcının içindeki elemanlara bu değerleri vererek bu sorunu çözebiliyoruz.
 
-<iframe height='349' scrolling='no' src='//codepen.io/fatihhayri/embed/LkqgPv/?height=349&theme-id=13521&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/fatihhayri/pen/LkqgPv/'>Gizle - göster transtion</a> by Fatih  (<a href='http://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='349' scrolling='no' src='//codepen.io/fatihhayri/embed/LkqgPv/?height=349&theme-id=13521&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 ## Kaynaklar

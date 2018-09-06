@@ -53,7 +53,7 @@ Mutlak konumlandırma (position: absolute) ile benzer özelliklere sahiptir; tan
 </html>
 {% endhighlight %}
 
-<iframe height='323' scrolling='no' title='position: fixed' src='//codepen.io/fatihhayri/embed/qqEMJa/?height=323&theme-id=13521&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/fatihhayri/pen/qqEMJa/'>position: fixed</a> by Fatih  (<a href='http://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='323' scrolling='no' title='position: fixed' src='//codepen.io/fatihhayri/embed/qqEMJa/?height=323&theme-id=13521&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 ## Kaynaklar

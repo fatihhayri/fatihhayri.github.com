@@ -37,7 +37,7 @@ html kodu:
 
 Ben bu kodu blur ile tetikledim siz bunu değiştirebilirsiniz.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/kfdyH?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/kfdyH?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 
   [Ceviz forumda]: http://forum.ceviz.net/

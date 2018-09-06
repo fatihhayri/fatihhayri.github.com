@@ -16,7 +16,7 @@ div {
 }
 {% endhighlight %}
 
-<iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/jPXgmX/?height=268&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/fatihhayri/pen/jPXgmX/'>jPXgmX</a> by Fatih  (<a href='http://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/jPXgmX/?height=268&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 yukarıdaki örnekte yaptığımız gibi sabit hizalama tanımı yaptığımızda her zaman elemanın sol ve üst köşesine göre mesafe belirtebiliyorduk. Tam işte burada yenilik geldi. Gerçi yenilik geleli bayağı zaman oluyor. Ben bu yazıyı daha önce yazmak istemiştim ama zamanım olmamıştı. Şimdiye nasipmiş.
@@ -29,7 +29,7 @@ div {
 }
 {% endhighlight %}
 
-<iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/qdLeXa/?height=268&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/fatihhayri/pen/qdLeXa/'>qdLeXa</a> by Fatih  (<a href='http://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='268' scrolling='no' src='//codepen.io/fatihhayri/embed/qdLeXa/?height=268&theme-id=13521&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 Gayet kullanışlı bir özellik. Zamanında çok aramışlığım vardı. Eskiden çözüm için genelde Photoshop'ta resime sağdan ve alttan belirttiğimiz mesafeyi verip saydam olarak kaydederdik.

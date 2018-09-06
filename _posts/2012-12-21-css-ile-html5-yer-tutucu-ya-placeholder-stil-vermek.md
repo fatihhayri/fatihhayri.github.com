@@ -33,7 +33,7 @@ Kodu ile bu yapıyı uygulayabiliyoruz. Yer tutucuların stillerine müdahale ed
 
 Burada dikkat etmemiz gereken kısım -webkit tanımının başında iki adet iki nokta üst üste olması.
 
-<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="http://codepen.io/fatihhayri/embed/iJGwq?type=css&amp;height=250" id="cp_embed_hgplm"></iframe>
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/iJGwq?type=css&amp;height=250" id="cp_embed_hgplm"></iframe>
 
 Yer tutucu stiline tanımlana bilen özellikler ve tarayıcıların desteğini gösteren aşağıdaki tablo önemli
 
