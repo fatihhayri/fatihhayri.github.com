@@ -174,6 +174,7 @@ Date: 2006-08-05 22:06
     -   [IE10 ve sonrasında input temizle ikonunu kaldırmak](/ie10-ve-sonrasinda-input-temizle-ikonunu-kaldirmak/)
     -   [LESS ile değişkenlere piksel ekleme çıkarma](/less-ile-degiskenlere-piksel-ekleme-cikarma/)
     -   [iOS'ta overflow uygulanmış alanlardaki kaydırma sorunu ve çözümü](/ios-ta-overflow-uygulanmis-alanlardaki-kaydirma-sorunu-ve-cozumu/)
+    -   [Çoklu kolon kullanımında Internet Explorer 11 sorunu ve çözümü](/coklu-kolon-kullaniminda-ie11-sorunu-ve-cozumu/)
 
 -   CSS İpuçları
     -   [CSS İpuçları 1 : üç kelimeli font tanımı][]
