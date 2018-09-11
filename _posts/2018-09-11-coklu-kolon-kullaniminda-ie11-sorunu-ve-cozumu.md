@@ -16,7 +16,7 @@ Uzun süredir Internet Explorer(IE) sorunuyla alakalı yazı yazmıyordum. Çün
 
 İstekte bulunan arkadaş IE 11 desteğini de sağlayalım deyince IE 11'de test ettim bir de ne göreyim IE 11 iki kolona bölerken birinci kolondaki son öge içindeki içeriği yandaki kolono taşımış! 
 
-<a class="jsbin-embed" href="https://jsbin.com/yuridejofo/1/embed?html,css,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.4"></script>
+codepen.io'nun ie desteği yokmuş :) [http://jsbin.com/yuridejofo/1/embed?html,css,output](http://jsbin.com/yuridejofo/1/embed?html,css,output) buradan bakabilirsiniz.
 
 Çözümü basit `li` elemanına `overflow:hidden` tanımlamak yeterli oluyor.
 
