@@ -27,7 +27,7 @@ image:
 </ul>
 {% endhighlight %}
 
-`selected` sınıfı tanımlı bir bağlatının DOM sıralamasına göre yukarıya doğru ilk `ul` elemanını yaklamak gibi bir amacımız olsun.
+`selected` sınıfı tanımlı bir bağlatının DOM sıralamasına göre yukarıya doğru ilk `ul` elemanını yakalamak gibi bir amacımız olsun.
 
 Bunun için `closest` öncesi şöyle bir iş yapıyorduk.
 
