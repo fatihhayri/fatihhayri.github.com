@@ -8,7 +8,7 @@ Category: CSS
 tags: [animation, animation-fill-mode, z-index]
 ---
 
-Çalıştığım projede([vault.live](http://vault.com/)) [animated.css](https://daneden.github.io/animate.css/) kütüphanesi kullanılıyor. Bir sorun ile kaşılaştık. animasyon uygulanan kutularda açılan menüler diğer kutuların altında kalıyordu. 
+Çalıştığım projede([vault.live](https://vault.live/){:target='_blank' title='vault.live'}) [animated.css](https://daneden.github.io/animate.css/){:target='_blank' title='animate.css'} kütüphanesi kullanılıyor. Bir sorun ile kaşılaştık. animasyon uygulanan kutularda açılan menüler diğer kutuların altında kalıyordu. 
 
 Bir arama sonucu stackoverflow.com'da cevabını buldum.
 
@@ -34,4 +34,4 @@ Sağlıcakla kalın.
 
 # Kaynak
 
- - [https://stackoverflow.com/a/39495529/296373](https://stackoverflow.com/a/39495529/296373)
+ - [https://stackoverflow.com/a/39495529/296373](https://stackoverflow.com/a/39495529/296373){:target='_blank'}

@@ -73,6 +73,6 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
- - [https://developer.mozilla.org/en-US/docs/Web/API/Element/closest](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest)
- - [https://gomakethings.com/a-native-vanilla-javascript-way-to-get-the-closest-matching-parent-element/](https://gomakethings.com/a-native-vanilla-javascript-way-to-get-the-closest-matching-parent-element/)
- - [https://gomakethings.com/checking-event-target-selectors-with-event-bubbling-in-vanilla-javascript/](https://gomakethings.com/checking-event-target-selectors-with-event-bubbling-in-vanilla-javascript/)
+ - [https://developer.mozilla.org/en-US/docs/Web/API/Element/closest](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest){:target='_blank'}
+ - [https://gomakethings.com/a-native-vanilla-javascript-way-to-get-the-closest-matching-parent-element/](https://gomakethings.com/a-native-vanilla-javascript-way-to-get-the-closest-matching-parent-element/){:target='_blank'}
+ - [https://gomakethings.com/checking-event-target-selectors-with-event-bubbling-in-vanilla-javascript/](https://gomakethings.com/checking-event-target-selectors-with-event-bubbling-in-vanilla-javascript/){:target='_blank'}
