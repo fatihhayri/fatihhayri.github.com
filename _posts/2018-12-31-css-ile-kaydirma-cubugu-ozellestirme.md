@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS ile kaydırma çubuğunu özelleştirme
+title: CSS ile kaydırma çubuğu özelleştirme
 description: CSS ile kaydırma çubuğunu özelleştirme. Yeni çıkan Fİrefox sürümüyle birlikte glene kaydırma çubuğu özelliklerini açıklıyoruz
 lang: tr_TR
 Date: 2018-12-31 10:50
