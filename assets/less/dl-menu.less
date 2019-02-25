@@ -125,13 +125,17 @@
 input[type="checkbox"].menu-ac-kapa {
 	display: none;
 
-	&:checked ~ nav ul {
-		opacity: 1;
-		pointer-events: auto;
-		transform: translateY(-45px);
+	&:checked ~ nav {
+		z-index: 1002;
 
-		li {
-			display: block;
+		ul {
+			opacity: 1;
+			pointer-events: auto;
+			transform: translateY(-45px);
+
+			li {
+				display: block;
+			}
 		}
 	}
 
