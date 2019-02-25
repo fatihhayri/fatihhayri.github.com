@@ -10,9 +10,9 @@ image:
   feature: grid-terimleri.png
 ---
 
-CSS Grid (Izgara) hakkında bir şeyler yazmaya daha önce karar verdim. Ancak CSS'in diğer konularına göre öğrenmesi biraz daha zor olan bu konuyu anlatmakta zor. 17 tane özelliği ve yeni terimleriyle anlaşılması zor bir konu. Nereden nasıl başlayacağım konusunda kararsız kaldım. Nihayet bu ilk yazıyla ilk adımı attım. Bu yazıda giriş yazısı ve terminolojiyi anlatmaya çalışacağım.
+CSS Grid (Izgara) hakkında bir şeyler yazmaya daha önce karar verdim. Ancak CSS'in diğer konularına göre öğrenmesi biraz daha zor olan bu konuyu anlatmak da zor. 17 tane özelliği ve yeni terimleriyle anlaşılması zor bir konu. Nereden nasıl başlayacağım konusunda kararsız kaldım. Nihayet bu ilk yazıyla ilk adımı attım. Bu yazıda giriş yazısı ve terminolojiyi anlatmaya çalışacağım.
 
-2011 yılında Microsoft ekibi tarafından W3C'ye önerildi ve ilk olarak IE10 **-ms** öneki ile adapte edildi. Bende ilk olarak Microsoft tarafından geliştiriliyor olmasıyla biraz mesafeli yaklaştım. Malum Internet Explorer ile yaşadığımız kötü geçmişimizden kaynaklı. Zamanla CSS Grid'e alıştım.
+2011 yılında Microsoft ekibi tarafından W3C'ye önerildi ve ilk olarak IE10 **-ms** öneki ile adapte edildi. Ben de ilk olarak Microsoft tarafından geliştiriliyor olmasıyla biraz mesafeli yaklaştım. Malum Internet Explorer ile yaşadığımız kötü geçmişimizden kaynaklı. Zamanla CSS Grid'e alıştım.
 
 ## Giriş
 
@@ -22,7 +22,7 @@ Sayfa planları bir çerçeve içine alınacak ve basitçe çözülecek yapılar
 
 Sayfa planlama konusunda **grid** ile birlikte önemli kazanımlarımız oldu. Bunların başında **float** ve **flex** ile devam eden tek eksenli sayfa planlamaları yerine iki eksenli sayfa planlamasını yapabiliyoruz artık. 
 
-İki eksenli sayfa planlamayı en son tablo ile  sayfa planı oluştururken kullanıyorduk. Tekrar iki eksenli sayfa planlama metoduyla sayfalarımız kurgulamamız gerekiyor. Bu tek eksenli planlamaya göre büyük kolaylıklar sağlıyor. Bu arada aklınıza tablo ile iki eksenli sayfa planı yapıyorduk niye gird'e gerek var demeyin. Tablo yapıları çok sabit yapılardı esnek ve üzerine geçen sistemler için çok uygun değildi. 
+İki eksenli sayfa planlamayı en son tablo ile  sayfa planı oluştururken kullanıyorduk. Tekrar iki eksenli sayfa planlama metoduyla sayfalarımız kurgulamamız gerekiyor. Bu tek eksenli planlamaya göre büyük kolaylıklar sağlıyor. Bu arada aklınıza tablo ile iki eksenli sayfa planı yapıyorduk niye grid’e gerek var demeyin. Tablo yapıları çok sabit yapılardı esnek ve üzerine geçen sistemler için çok uygun değildi. 
 
 İki eksenli sayfa planlamanın uyumlu (responsive) web geliştirmelerinde büyük kolaylığı var. Örneğin mobilde en alt sırada olan bir öğeyi masaüstünde sağ üste koymak grid öncesinde zordu. İki eksenli sayfa planından sayfadaki tüm ögeler ve sıralaması html'deki yerinden bağımsız şekilde sıralana biliyor ve  farklı özellikleri tanımlanabiliyor. Süper değil mi?
 
@@ -46,7 +46,7 @@ Grid container **display** özelliğine aşağıdakilerden biri tanımlayınca o
  - **display: inline-grid** tanımlanan elemanı satır içi bir ızgara kapsayıcı yapar
  - **display: subgrid** tanımlanan eleman hem ızgara öğesi hemde bir ızgara kapsayıcısı olur
 
-> Dikkat: subgrid değeri CSS Grid Layout Level 2 ile birlikte gelecek, henüz hiç bir tarayıcı desteklemiyor.
+> Dikkat: subgrid değeri CSS Grid Layout Level 2 ile birlikte gelecek, henüz hiçbir tarayıcı desteklemiyor.
 
 Kapsayıcı Izgara elemanı atamasından sonra birinci seviye altındaki tüm çocuk elemanları birer grid ögesi olur. 
 
