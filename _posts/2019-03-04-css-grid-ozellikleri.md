@@ -96,11 +96,11 @@ Değerler listesi her bir grid izinin boyutunu ve grid çizgisi ismini belirler.
  Tekrarlanan içerikli sayfa yapısından kolonları daha basit ve anlaşılır kılan bir değer yapısıdır. Bu işlevselliği bize `repeat()` fonksiyonunu sağlar. 
     
     {% highlight css %}
-    grid-template-columns: 30px 100px 30px 100px 30px 100px 30px 100px;
+grid-template-columns: 30px 100px 30px 100px 30px 100px 30px 100px;
     
-    /* yukaridaki kodu repeat fonksiyonu ile yazalim * /
+/* yukaridaki kodu repeat fonksiyonu ile yazalim * /
     
-    grid-template-columns: repeat(4, 30px 100px);
+grid-template-columns: repeat(4, 30px 100px);
     {% endhighlight %}
     
  - **Grid çizgisi ismi**: Projeler büyüdükçe tanımlanan değerler anlamsız olmaya başlayıp kod okunurluğu düşer. Bu durumun önüne geçmek için grid çizgilerini adlandırıp tanımlarımızın içinde kullanırız. Verdiğimiz bu isimlere grid çizgi ismi denir.  

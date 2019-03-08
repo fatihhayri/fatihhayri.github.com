@@ -92,7 +92,7 @@ Tarayıcı desteği konusunda çok güzel yerlerde CSS Grid Modülü. Makaleyi y
 
 {% include browser-usage.html ch="+" ie="+" ff="+" mch="+" sa="+" si="6.4+" %}
 
-Yarımdımlarından dolayı [Serkan Bektaş](https://twitter.com/serkanbektasim)'a teşekkürlerimi sunarım. 
+Yardımlarından dolayı [Serkan Bektaş](https://twitter.com/serkanbektasim)'a teşekkürlerimi sunarım. 
 
 ## Kaynaklar
 
