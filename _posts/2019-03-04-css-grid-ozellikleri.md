@@ -66,16 +66,16 @@ Kapsayıcı (container) bir grid oluşturduktan sonra sayfa planını oluşturma
 
  - **none değeri**: Başlangıç değeridir. Bu değer atanan kapsayıcı grid **Explicit (Belirlenmiş) Grid** kapsamının dışına çıkar. (grid-template-area özelliği ile Belirli Grid özellikleri kapsamına sokulmuş olabilir.)  **Explicit (Belirlenmiş) ve Implicit (Belirsiz) Izgaralar** kavramlarını daha sonra daha detaylı anlatacağız.
 
- - **`<track-list>` İz listesi değer kümesi / `<auto-track-list>`Otomatik iz listesi değer kümesi**
+ - **İz listesi değer kümesi(track-list) / Otomatik iz listesi değer kümesi(auto-track-list)**
 Değerler listesi her bir grid izinin boyutunu ve grid çizgisi ismini belirler. 
 
-    [ `<Grid çizgisi isimi>`? [ `<İz boyutu>` | `<İz tekrar işlevi>` ] ]+ `<Grid çizgisi isimi>`?
+    [ Grid çizgisi isimi ? [ İz boyutu | İz tekrar işlevi ] ]+ Grid çizgisi isimi ?
 
  
-	 - **`<track-size>` grid iz boyut değerleri:**
+	 - **grid iz boyut değerleri (track-size):**
 		 - **ölçü değerleri** CSS uzunluk (px, em, vm vh, ...) değerleri ve yüzde değerler. Tanımlanan değer kolon genişliğini belirler ve eksi değer alamaz. Örneğin 25%, 250px, 100vw gibi.
 		 
-	 	 - **esnek değer:** fr(ing. fraction) birimi "kesir" anlamına gelir. px veya % gibi bir uzunluk değil, bunun yerine "esnek" bir birim olarak kabul edilir. CSS grid ile birlikte gelen bir değerdir. Kullanılabilir alanı esnek bir şekilde tanımlamamızı sağlar.  İleride bu değere daha detaylı değineceğiz.	
+	 	 - **esnek değer:** fr(ing. fraction) birimi "kesir" anlamına gelir. px veya % gibi bir uzunluk değil, bunun yerine "esnek" bir birim olarak kabul edilir. CSS grid ile birlikte gelen bir değerdir. Kullanılabilir alanı tanımlamamızı sağlayan esnek bir birimdir.  İleride bu değere daha detaylı değineceğiz. [fr birimi](/fr-birimi)
 	 &nbsp;&nbsp;&nbsp;
 
 	 	 ![enter image description here](https://fatihhayrioglu.com/images/min-content-max-content.jpg)
@@ -85,7 +85,7 @@ Değerler listesi her bir grid izinin boyutunu ve grid çizgisi ismini belirler.
 	 	 - **min-content:** Izgara izi içindeki ızgara ögesinin en az daraldığı durumdaki değeridir. Metin taşmadan daralabileceği en son noktadaki değerdir.
 	 	 -  **auto:** En fazla `max-content` değeri kadar, en az `min-content` değeri kadar değer alır.
 	 - **minmax(min, max):** min değerine eşit veya daha büyük ve max değerden küçük veya ona eşit bir boyut aralığı tanımlar. Eğer max değeri min değerinden küçükse max değeri yok sayılır ve fonksiyon min değeri olarak kabul edilir. 
-	 - **fit-content( `<ölçü değeri | yüzde değeri>` )** Belirlenen değer `max-content`değerinden büyükse `max-content`değerini alır, grid ögesi en az `auto` değeri kadar olur. `minmax(auto, max-content)` şeklinde formulize edilmiş.
+	 - **fit-content( ölçü değeri | yüzde değeri )** Belirlenen değer `max-content`değerinden büyükse `max-content`değerini alır, grid ögesi en az `auto` değeri kadar olur. `minmax(auto, max-content)` şeklinde formulize edilmiş.
 	 - **inherit:** Kalıtsal olarak aldığı değere döner. ebeveyninden aldığı değere döndürür.
 	 
 	 - **initial:** Başlangıç değerine döndürür.
