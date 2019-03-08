@@ -85,7 +85,7 @@ Değerler listesi her bir grid izinin boyutunu ve grid çizgisi ismini belirler.
 	 	 - **min-content:** Izgara izi içindeki ızgara ögesinin en az daraldığı durumdaki değeridir. Metin taşmadan daralabileceği en son noktadaki değerdir.
 	 	 -  **auto:** En fazla `max-content` değeri kadar, en az `min-content` değeri kadar değer alır.
 	 - **minmax(min, max):** min değerine eşit veya daha büyük ve max değerden küçük veya ona eşit bir boyut aralığı tanımlar. Eğer max değeri min değerinden küçükse max değeri yok sayılır ve fonksiyon min değeri olarak kabul edilir. 
-	 - **fit-content( ölçü değeri | yüzde değeri )** Belirlenen değer `max-content`değerinden büyükse `max-content`değerini alır, grid ögesi en az `auto` değeri kadar olur. `minmax(auto, max-content)` şeklinde formulize edilmiş.
+	 - **fit-content** (ölçü değeri | yüzde değeri) Belirlenen değer `max-content`değerinden büyükse `max-content`değerini alır, grid ögesi en az `auto` değeri kadar olur. `minmax(auto, max-content)` şeklinde formulize edilmiş.
 	 - **inherit:** Kalıtsal olarak aldığı değere döner. ebeveyninden aldığı değere döndürür.
 	 
 	 - **initial:** Başlangıç değerine döndürür.
