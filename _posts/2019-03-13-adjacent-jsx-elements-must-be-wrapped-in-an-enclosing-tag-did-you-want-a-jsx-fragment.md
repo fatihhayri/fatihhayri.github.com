@@ -66,7 +66,7 @@ class BasitOrnek extends Component {
 }
 ```
 
-Sadece `<>` ve `</>` ile daha basit kullanımı var. Babel kullanıyorsanız 7+ sonrası destekliyormuş.
+Sadece `<>` ve `</>` ile daha basit kullanımı var. Bu kullanım için Babel 7+ gerekiyormuş.
 
 ## Kaynaklar
 
