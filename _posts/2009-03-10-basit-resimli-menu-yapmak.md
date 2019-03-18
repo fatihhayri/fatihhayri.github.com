@@ -83,6 +83,10 @@ ul li a{
 }
 {% endhighlight %}
 
+**CSS Öğren**
+CSS hakkında daha fazla bilgiye ulaşman çok kolay. CSS Dersleri sayfasında CSS hakkında bilmen gereken tüm bilgilere dair makale bulunuyor. [Hemen Öğrenmeye Başla](/css-dersleri)
+{: .tanitim}
+
 
 Her bir menü nesnesinin yukarıdaki resimdeki konumunu belirlemeye geldi
 sıra.

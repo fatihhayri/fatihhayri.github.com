@@ -57,6 +57,10 @@ alır.
 
 #000; renk değeri. Gölgenin renk değerini gösterir.
 
+**CSS Öğren**
+CSS hakkında daha fazla bilgiye ulaşman çok kolay. CSS Dersleri sayfasında CSS hakkında bilmen gereken tüm bilgilere dair makale bulunuyor. [Hemen Öğrenmeye Başla](/css-dersleri)
+{: .tanitim}
+
 **Birden fazla gölge kullanımı**
 
 Birden fazla gölge tanımı yapabiliyoruz. Aralarında virgül kullanarak

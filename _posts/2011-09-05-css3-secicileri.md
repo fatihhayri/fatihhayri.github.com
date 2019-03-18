@@ -137,6 +137,12 @@ a[href$='.rss'] {
 |**2.1+**|**3.2+**|**36+**|
 {: .tarayici-uyumi}
 
+
+**CSS Öğren**
+CSS hakkında daha fazla bilgiye ulaşman çok kolay. CSS Dersleri sayfasında CSS hakkında bilmen gereken tüm bilgilere dair makale bulunuyor. [Hemen Öğrenmeye Başla](/css-dersleri)
+{: .tanitim}
+
+
 **İçinde Belirlenen Sözdizimi Geçen Özellik Değer Seçicisi**
 
 Belirlenen sözdizimi özellik değerinde geçen elemanları seçmek için
