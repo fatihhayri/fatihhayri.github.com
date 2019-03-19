@@ -268,6 +268,7 @@ Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](https://fatihhayrioglu.
     -   [CSS Grid'e (Izgara) Giriş](/css-grid-giris/)
         -   [CSS Grid Özellikleri](/css-grid-ozellikleri/)
         -   [fr birimi](/fr-birimi/)
+        -   [CSS Izgara çizgi isimlendirmesi ve kullanımı](/grid-izgara-cizgi-isimlendirmesi-ve-kullanimi/)
         
 
 -   CSS Kaynakları
