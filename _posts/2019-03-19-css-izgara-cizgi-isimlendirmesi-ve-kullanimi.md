@@ -22,17 +22,17 @@ body {
 
 CSS Grid modülündeyse bu kuralı değiştirip kullanıcının girdiği bazı değerleri anlamlandırmıştır. Grid isimlendirme başlığı altında anlatacağımız bu tanımlar birazının bizim birazının W3C'nin belirlediği isimlerdir. 
 
-Bu makalede daha önce grid özellikleri yazımızda kısaca bahsedip geçtiğimiz grid çizgisi isimlendirmesi ve kullanımını göreceğiz.
+Bu makalede daha önce [grid özellikleri](https://fatihhayrioglu.com/css-grid-ozellikleri/) yazımızda kısaca bahsedip geçtiğimiz grid çizgisi isimlendirmesi ve kullanımını göreceğiz.
 
-Kendi belirlediğimiz değerlerin CSS'de kullanılması alışık olmadığımız durumlar olduğu için başta garipseyebiliriz ancak alışınca güzel oluyor.
+Kendi belirlediğimiz değerlerin CSS'te kullanılması alışık olmadığımız durumlar olduğu için başta garipseyebiliriz ancak alışınca güzel oluyor.
 
 ![CSS Grid Modülü terimleri](https://fatihhayrioglu.com/images/grid-terimleri.png)
 
 CSS Grid örneklerinde grid çizgisini belirleyen rakamlar yerine isimleri kullanmak daha okunaklı olmasını sağlar. 
 
-Basit yapılı grid kodlarında çok ihtiyaç duymasak da daha gelişmiş yapıdaki sayfa planlarının geliştirilmesi ve yönetilmesinde grid çizgi isimleri işe yarıyor. 
+Basit yapılı grid kodlarında çok ihtiyaç duymasak ta daha gelişmiş yapıdaki sayfa planlarının geliştirilmesi ve yönetilmesinde grid çizgi isimleri işe yarıyor. 
 
-Bu tanımları yorum satırıyla çözemezmiydik? Evet çözerdik ama buradaki tanımları yeri geldiğinde grid hücre ve alanlarını konumlandırırken kullanabiliyoruz. Bizim belirlediğimiz isimleri bir CSS değeri gibi kullanacağız.
+Bu tanımları yorum satırıyla çözemez miydik? Evet çözerdik ama buradaki tanımları yeri geldiğinde grid hücre ve alanlarını konumlandırırken kullanabiliyoruz. Bizim belirlediğimiz isimleri bir CSS değeri gibi kullanacağız.
 
 İnsanlar rakamlara göre isimleri daha anlaşılır bulur.
 
@@ -52,11 +52,11 @@ HTML'imiz yukarıdaki gibi olur.
 
 CSS kodunu yazmadan önce sayfa yapısını düşünelim.
 
-3 kolonlu bir sayfa planımız olacak, yani `grid-template-columns` özelliğine 3 adet tanım yapacağız. 3 adet te satır olacak `grid-template-rows` özelliğine 3 tanım yapacağız.
+3 kolonlu bir sayfa planımız olacak, yani `grid-template-columns` özelliğine 3 adet tanım yapacağız. 3 adet de satır olacak `grid-template-rows` özelliğine 3 tanım yapacağız.
 
 Belirlediğimiz bu 3 kolonun genişlikleri sabit genişlik olarak belirlendiyse tek tek bu genişlikleri tanımlarız ama esnek bir yapı olsun istersek dikeyde tahminen 10 parça bir alanımız olsa bunları içeriklerine göre 3 e bölersek 3 birim 5 birim ve 2 birim gibi bir sonuç çıkar. Kolon kodumuz `grid-template-columns: 3fr 5fr 2fr` olur.
 
-Gelelim satırları belirlemeye satır yüksekliği genelde içeriğe göre şekillenir ancak biz satır yüksekliklerini de esnek 3 parçaya bölelim. Yükseklik tanımlarında ilk olarak gösteren aracın yüksekliğini almak için `height: 100vh` tanımlarız. 11 parçaya bölüp gelecek içeriğe göre 3 e bölersek satırları `grid-template-rows: 3fr 6fr 2fr` şeklinde paylaştırabiliriz.
+Gelelim satırları belirlemeye satır yüksekliği genelde içeriğe göre şekillenir ancak biz satır yüksekliklerini de esnek 3 parçaya bölelim. Yükseklik tanımlarında ilk olarak gösteren aracın yüksekliğini almak için `height: 100vh` tanımlarız. 11 parçaya bölüp gelecek içeriğe göre 3'e bölersek satırları `grid-template-rows: 3fr 6fr 2fr` şeklinde paylaştırabiliriz.
 
 Kodumuz aşağıdaki gibi olacaktır. 
 
@@ -95,7 +95,7 @@ main footer {
 İstediğimiz sonucu elde ettik. 
 
 Kodu biraz yorumlarsak. Grid çizgilerine tarayıcılar yukarıda görüldüğü gibi rakamlar atar. Biz bu rakamları kullanarak grid ögelerimizi ve grid alanlarımızı konumlandırabiliyoruz. `<header>` için yaptığımız tanımda `grid-column: 1 / 4`
-tanımı **header** elemanının  kolon yerleşiminin grid çizgisinin 1. sinden başlayıp 4. sinde sonlandığı belirtiyor. `grid-row` tanımıysa header elemanının dikey grid çizgisinin 1. sinde olduğunu gösteriyor. Aslında burada da başı ve sonu olarak tanımlayabilriz, `grid-row: 1/2` şeklinde. Buradaki yazım kısayoludur. 
+tanımı **header** elemanının  kolon yerleşiminin grid çizgisinin 1.'sinden başlayıp 4.'ünde sonlandığını belirtiyor. `grid-row` tanımıysa header elemanının dikey grid çizgisinin 1.'sinde olduğunu gösteriyor. Aslında burada da başı ve sonu olarak tanımlayabilriz, `grid-row: 1/2` şeklinde. Buradaki yazım kısayoludur. 
 
 Benzer şekilde **footer** elemanına da tanımlar yaptık tek fark footer elemanı dikeyde 3. satırın sonrasında olması.
 
@@ -118,7 +118,7 @@ gibi. Aynı şekilde
 
 `*-end`
 
-kullanımı da çizgi ismi bitişi için kullanılır. Tanımlarımızı köşeli parantez [] içinde kullanıyoruz. Bu tanımları sadece başlangıç değerleriyle yapabildiğimiz gibi başlangıç ve bitiş değerlerini yazarakta yapabiliriz. 
+kullanımı da çizgi ismi bitişi için kullanılır. Tanımlarımızı köşeli parantez [] içinde kullanıyoruz. Bu tanımları sadece başlangıç değerleriyle yapabildiğimiz gibi başlangıç ve bitiş değerlerini yazarak da yapabiliriz. 
 
 > Izgara çizgi isimlerinde CSS'in kullandığı anahtar kelimler kullanılamaz `auto` ve `span` vd.
 
@@ -150,7 +150,7 @@ Tanımladığımız isimlerin işlevsel olarak kullanılıyor olması süper bir
 <iframe height="424" style="width: 100%;" scrolling="no" title="grid çizgi isimlendirme -3" src="//codepen.io/fatihhayri/embed/wOmjNO/?height=424&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-**uyumlu (responsive) web öncelikli bir kod yapısı kullanırsak**
+**Uyumlu (responsive) web öncelikli bir kod yapısı kullanırsak**
 
 Mobil öncelikli bir yapı ve uyumlu web kodlarını eklersek kod rakamlı kullanım için daha da karmaşıklaşır. Ancak isimlendirme ile yapılan uyumlu web kodları bu karışıklığı da önleyerek işimizi kolaylaştırıyor.
 
