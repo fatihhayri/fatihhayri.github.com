@@ -21,7 +21,7 @@ ES6 konuları hakkında birşeyler yazmalıyım dedim, kaynakları araştırırk
 
 Ben okuduğum kaynaklara göre bir sınıflandırma yaptım. Bu konuda farklı önerisi olan arkadaşların fikirlerine açığım. Zaten listenin github'da olma sebebide bu. Bu listeyi canlı tutmak.
 
-[ES6 Türkçe Kaynaklar](https://github.com/fatihhayri/es6-turkce-kaynaklar)
+![github logo](https://fatihhayrioglu.com/images/github-logo.png) [ES6 Türkçe Kaynaklar](https://github.com/fatihhayri/es6-turkce-kaynaklar)
 
 React içinde kullandığım ES6 özelliklerini listelerken neredeyse tüm özellikleri React içinde aktif olarak kullandığımızı gördüm. En aktif kullandığım 8 konu başlığı
 
