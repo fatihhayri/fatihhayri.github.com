@@ -6,8 +6,9 @@ Category: css
 tags: [uzun-metin, üç-nok, kısaltma]
 ---
 
+> Temmuze 2019'da güncellendi.
 
-[zingat.com](https://www.zingat.com)'un satılık ve kiralık arama sonuç sayfalarını kodlarken her bir kutunun belirli yüksekliği olduğu için gelen başlığın harita açıldığında altında kalan metinlerin üzerine binmesi sorununu haletmek için [Murat](http://twitter.com/muratcorlu)'la bu metni 2 satır ile sınırlandırmalıyız dedik. En güzel çözüm CSS ile webkit-line-clamp yardımı ile bunu yapmaktı. Acaba bu özelliğin desteği ne kadar diye biraz bakınca %92'ye yakın destek bizi bu kodu kullanmaya itti.
+[zingat.com](https://www.zingat.com)'un satılık ve kiralık arama sonuç sayfalarını kodlarken her bir kutunun belirli yüksekliği olduğu için gelen başlığın harita açıldığında altında kalan metinlerin üzerine binmesi sorununu haletmek için [Murat](http://twitter.com/muratcorlu)'la bu metni 2 satır ile sınırlandırmalıyız dedik. En güzel çözüm CSS ile webkit-line-clamp yardımı ile bunu yapmaktı. Acaba bu özelliğin desteği ne kadar diye biraz bakınca %92'ye(şu an %98 Temmuz 2019) yakın destek bizi bu kodu kullanmaya itti.
 
 Daha önce uzun metinleri tek satırda sabitlemek için aşağıdaki yöntemi kullanıyordum.
 
@@ -64,7 +65,7 @@ Mobilde ve dar alanlarda güzel iş görüyor.
 {% endhighlight %}
 
 
-{% include browser-usage.html ch="+ (-webkit)" ie="-" ff="-" mch="+ (-webkit)" sa="+ (-webkit)" si="+ (-webkit)" %}
+{% include browser-usage.html ch="+ (-webkit)" ie="-" ff="68+" mch="+ (-webkit)" sa="+ (-webkit)" si="+ (-webkit)" %}
 
 ## Kaynaklar
 
