@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Placeholder(yertutucu)'ları :placeholder-shown sözde sınıf ile daha kullanışlı hale gitirmek
+title: Placeholder(yertutucu)'ları :placeholder-shown sözde sınıfı ile daha kullanışlı hale gitirmek
 description: kullanıcı bir içerik girdiğinde yertutucunun üstüne doğru kaymasını sağlayan uygulamalar
 lang: tr_TR
 Date: 2019-11-01 08:10
