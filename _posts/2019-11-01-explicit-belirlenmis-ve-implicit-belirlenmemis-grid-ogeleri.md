@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Explicit(belirlenmiş) ve implicit(belirlenmemiş) grid ögeleri
-description: Sublime Text'i react'a hazır hale geitrelim. 
+description: explicit (belirlenmiş), implicit(belirlenmemiş)  tanımları, grid-auto-columns, grid-template-rows ve grid-auto-flow özellikleri
 lang: tr_TR
 Date: 2019-11-01 08:10
 Category: CSS
