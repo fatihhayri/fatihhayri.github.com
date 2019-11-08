@@ -51,7 +51,7 @@ Farklı tanımlardan etkilenmiş button ögesi `all:unset` ile sıfırlanmışt�
 
 İyi planlanmamış projelerde bazen bir elemana uygulanan atamları sıfırlamak gerekiyor, bu gibi durumlar için çok süper özellik. Gönül ister ki projeler başta daha iyi planlansın ve bu tip ihtiyaçlar olması ama gerçek böyle olmuyor maalesef.
 
-Firefox geliştirme aracında çok güzel bir gösterme şekli var. `all:unset` ile değişen ve değmeyen değerleri gösteriyor. 
+Firefox geliştirme aracında çok güzel bir gösterme şekli var. `all:unset` ile değişen ve değiştiremediği (örnek color) değerleri gösteriyor. 
 
 ![all unset](https://fatihhayrioglu.com/images/firefox-dev-unset.png)
 
