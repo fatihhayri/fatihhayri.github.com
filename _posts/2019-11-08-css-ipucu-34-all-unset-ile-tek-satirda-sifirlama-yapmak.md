@@ -49,13 +49,13 @@ Sonuç aşağıdaki gibi olacaktır.
 
 Farklı tanımlardan etkilenmiş button ögesi `all:unset` ile sıfırlanmıştır. Tek satır kod ile bunu yapabilmek çok güzel.
 
-İyi planlanmamış projelerde bazen bir elemana uygulanan atamları sıfırlamak gerekiyor, bu gibi durumlar için çok süper özellik. Gönül ister ki projeler başta daha iyi planlansın ve bu tip ihtiyaçlar olması ama gerçek böyle olmuyor maalesef.
+İyi planlanmamış projelerde bazen bir elemana uygulanan atamaları sıfırlamak gerekiyor, bu gibi durumlar için çok süper özellik. Gönül ister ki projeler başta daha iyi planlansın ve bu tip ihtiyaçlar olmasın ama gerçek böyle olmuyor maalesef.
 
 Firefox geliştirme aracında çok güzel bir gösterme şekli var. `all:unset` ile değişen ve değiştiremediği (örnek color) değerleri gösteriyor. 
 
 ![all unset](https://fatihhayrioglu.com/images/firefox-dev-unset.png)
 
-`all` özelliği bunun dışında `initial`, `inherit` ve `revert` değerleri alır. Bu değerler ve farklını da başka bir makale yazsak iyi olur.
+`all` özelliği bunun dışında `initial`, `inherit` ve `revert` değerleri alır. Bu değerler ve farklarını da başka bir makale yazsak iyi olur.
 
 Kalın sağlıcakla.
 
