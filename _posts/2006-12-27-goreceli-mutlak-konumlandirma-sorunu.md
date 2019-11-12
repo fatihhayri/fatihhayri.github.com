@@ -31,10 +31,11 @@ uygulanmış kapsayıcı katmana genişlik ve yükseklik vermektir.
 İkinci bir çözüm olarak yükseklik göreceli olduğu durumlar için
 uygulanan bir yöntemdir.
 
-	:::css
-	/* IE-mac den gizle */
-	* html .container1 {height: 1%;}
-	/* IE-mac den gizleme sonu */
+```css
+/* IE-mac den gizle */
+* html .container1 {height: 1%;}
+/* IE-mac den gizleme sonu */
+```
 
 ## Kaynak
 

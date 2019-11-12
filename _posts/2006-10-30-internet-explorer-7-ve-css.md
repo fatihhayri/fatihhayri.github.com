@@ -63,9 +63,12 @@ göre.
 
 
 
-	:::css
-	 div { border-left: 1px solid red;
-padding-bottom: 1px; }
+```css
+div {
+  border-left: 1px solid red;
+  padding-bottom: 1px;
+}
+```
 
 -   **Line-height/Replaced Element Sorunu:** Eğer line-height uygulanmış
     bir satırda replaced element varsa line-height değeri sorunlu

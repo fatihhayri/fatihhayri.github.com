@@ -23,29 +23,33 @@ Javascript 1.2 ile birlikte regular expression kullanımı da eklenmiştir.
 
 ![][100]
 
-	:::css
-	 ilkDeyim = " Merhaba dünya ben geldim. ";
-bolme = ilkDeyim.split(" ", 3); document.write(bolme)
+```javascript
+ilkDeyim = " Merhaba dünya ben geldim. ";
+bolme = ilkDeyim.split(" ", 3);
+document.write(bolme)
+```
 
 sonuç aşağıdaki gibi olacaktır.
 
-	:::css
-	 ["Merhaba", "dünya", "ben"]
+```javascript
+["Merhaba", "dünya", "ben"]
+````
 
 Bir tane de regular expression kullanarak örnek yaparsak.
 
-	:::html
-	 <html> <head> </head> <body>
+```html
+<html> <head> </head> <body>
 <script> sayiRegExp = new RegExp("[0-9]", "g"); ilkDeyim =
 "A0B1C2D3E4F5G"; harfDizi = ilkDeyim.split(sayiRegExp); for(i=0; i <
 harfDizi.length; i++) { document.write(harfDizi[i]);
 document.write("<br/>"); } </script> </body> </html>
-
+```
 
 Yukarıdaki kodun sonucunda aşağıdaki gibi olacaktır.
 
-	:::html
-	 A B C D E F G
+```html
+A B C D E F G
+```
 
 
   [100]: /dokumanlar/split.gif
