@@ -10,7 +10,7 @@ image:
   feature: css-dersleri.png
 ---
 
-CSS'de tüm özelliklere atanan 4 değer vardır. `initial`, `inherit`, `unset` ve `revert`. Burada bu değerlere değineceğiz. `unset `'den [bir önceki yazımda](https://fatihhayrioglu.com/css-ipucu-34-all-unset-ile-tek-satirda-sifirlama-yapmak/) bahsettik. Yaptıkları iş aynı olsa da uygulandıklarında farklı davranış sergilerler. Yaptıkları iş atamaları geri almak. Amiyane tabirle geri vites.
+CSS'te tüm özelliklere atanan 4 değer vardır. `initial`, `inherit`, `unset` ve `revert`. Burada bu değerlere değineceğiz. `unset `'ten [bir önceki yazımda](https://fatihhayrioglu.com/css-ipucu-34-all-unset-ile-tek-satirda-sifirlama-yapmak/) bahsettik. Yaptıkları iş aynı olsa da uygulandıklarında farklı davranış sergilerler. Yaptıkları iş atamaları geri almak. Amiyane tabirle geri vites.
 
 Bu makaledeki değerleri anlamak için CSS'te değerlerin nasıl uygulandığını hatırlamak gerekiyor. Burada genel anlamıyla bir değerin nasıl uygulandığını anlatalım. 
 
@@ -41,7 +41,7 @@ Aşağıda tanımlayacağımız değerler bu 2 kaynaktan gelen atamaları geri a
 
 `initial` değeri tarayıcıların atadığı başlangıç değerini ifade eder. Atandığı elemanın özelliğinin değerini tarayıcının belirlediği değere döndürür.
 
-Tarayıcılar HTML elemanları yorumlarken belirli başlangıç değerleri kabul ederek yorumlarlar. User Agent Stilleri olarak adlandırılan bu özelliklere sonradan tanımlanan CSS özellikleri ezer. Her tarayıcının kendine özel UA Stillleri vardır. CSS3 ile gelen `initial` değeri ile başlangıç değerine döndürme imkanımız oluyor.
+Tarayıcılar HTML elemanlarını yorumlarken belirli başlangıç değerleri kabul ederek yorumlarlar. User Agent Stilleri olarak adlandırılan bu özelliklere sonradan tanımlanan CSS özellikleri ezer. Her tarayıcının kendine özel UA Stillleri vardır. CSS3 ile gelen `initial` değeri ile başlangıç değerine döndürme imkanımız oluyor.
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%;overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/wAJel?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
@@ -57,7 +57,7 @@ Tarayıcılar HTML elemanları yorumlarken belirli başlangıç değerleri kabul
 <iframe height='300' scrolling='no' title='inheritance' src='//codepen.io/fatihhayri/embed/EQEKdq/?height=300&theme-id=13521&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/fatihhayri/pen/EQEKdq/'>inheritance</a> by Fatih  (<a href='https://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-Kalıtsallığı kullanarak kodlarımızı azaltabiliriz. Ancak kalıtsallık nedeni ile de bir çok sorunla karşılaştığımızıda unutmayalım.
+Kalıtsallığı kullanarak kodlarımızı azaltabiliriz. Ancak kalıtsallık nedeni ile de birçok sorunla karşılaştığımızı da unutmayalım.
 
 {% include browser-usage.html ch="+" ie="+" ff="+" mch="+" sa="+" si="+" %}
 
