@@ -3,6 +3,7 @@ layout: post
 title: IE 7 Beta 3 Sürümü çıktı
 Date: 2006-06-29 23:54
 Category: Haberler
+---
 
 Web tarayıcı(browser) pazarı iyice kızıştı. Gün geçmiyor ki bir beta,
 bir alfa veya bir tam versiyon çıkmasın. Bu kullanıcı için bir avantaj

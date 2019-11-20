@@ -3,6 +3,7 @@ layout: post
 title: Memleketten Görüntüler
 Date: 2006-08-25 01:09
 Category: Haberler
+---
 
 Malumunuz geçen hafta memlekette idim. Bir kaç fotoğraf çekmiştim
 sizlerle paylaşayım dedim. Memleketi sorarsanız. Trabzon - Sürmene -

@@ -3,6 +3,7 @@ layout: post
 title: Adobe&#039;dan Ajax Framework
 Date: 2006-07-02 23:08
 Category: Ajax, Haberler
+---
 
 Adobe Ajax uygulamaları geliştirebilmek için Spry Framework'ü
 kullanıcılara sundu. Bu araç sayesinde HTML, CSS ve çok az javascript

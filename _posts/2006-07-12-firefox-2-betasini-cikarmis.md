@@ -3,6 +3,7 @@ layout: post
 title: Firefox 2 Betasını çıkarmış
 Date: 2006-07-12 23:35
 Category: Haberler
+---
 
 Evet Firefox 2 Beta çııktı. İsteyen burdan indirebilir. imdirmek için
 [tıkla][] Ayrıntılı bilgi alamak için [tıkla][1]

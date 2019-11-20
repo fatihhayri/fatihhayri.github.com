@@ -3,6 +3,7 @@ layout: post
 title: OSMANLI KUMANDANLARI- Ahmet Refik
 Date: 2006-09-14 23:34
 Category: Kitaplar
+---
 
 <span class="kitap-resmi">![][100]</span> Osmanlı'nı zaferlerinde her zaman önce çıkan padişahlardır ancak bu
 şavaşları yöneten kumandanlar hakkında genel bilgi verilmez. Bu kitap

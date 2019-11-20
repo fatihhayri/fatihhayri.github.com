@@ -22,10 +22,11 @@ Padding içerik alanı ile kenarlık arasındaki alandır.
 **padding-top** özelliği içerik alanı ile üst kenarlık
 arasındakimesafeyi belirler.
 
-	:::css
-	h2 {
-		padding-left: 0.25in;
-	}
+```css
+h2 {
+	padding-left: 0.25in;
+}
+```
 
 **Tarayıcı Uyumu **
 Firefox
@@ -50,10 +51,11 @@ Android Browser
 
 **padding-right** özelliği içerik alanı ile sağ kenarlık arasındakimesafeyi belirler.
 
-	:::css
-	h2 {
-		padding-right: 0.25in;
-	}
+```css
+h2 {
+	padding-right: 0.25in;
+}
+```
 
 
 **Tarayıcı Uyumu **
@@ -81,10 +83,11 @@ Android Browser
 **padding-bottom** özelliği içerik alanı ile alt kenarlık
 arasındakimesafeyi belirler.
 
-	:::css
-	h2 {
-		padding-bottom: 0.25in;
-	}
+```css
+h2 {
+	padding-bottom: 0.25in;
+}
+```
 
 
 **Tarayıcı Uyumu **
@@ -111,10 +114,11 @@ Android Browser
 **padding-left** özelliği içerik alanı ile sol kenarlık
 arasındakimesafeyi belirler.
 
-	:::css
-	h2 {
-		padding-left: 0.25in;
-	}
+```css
+h2 {
+	padding-left: 0.25in;
+}
+```
 
 
 **Tarayıcı Uyumu **
@@ -141,11 +145,12 @@ Android Browser
 **padding**özelliği padding-top, padding-right, padding-bottomve
 padding-left değerlerini kısayoldan atamak için kullanılır.
 
-	:::css
-	h1 {
-		padding: 10px;
-		background-color: silver;
-	}
+```css
+h1 {
+	padding: 10px;
+	background-color: silver;
+}
+```
 
 [margin][]'deki gibi farklı kullanım şekilleri mevcuttur.
 

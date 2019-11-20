@@ -3,6 +3,7 @@ layout: post
 title: HAYIR DİYEBİLEN TÜRKİYE : Kamran İnan
 Date: 2006-08-09 22:42
 Category: Kitaplar
+---
 
 <span class="kitap-resmi">![][100]</span> Türk diplomasi lugatında, maalesef 'Hayır' kelimesi yoktur.
 İnsanımız dış ilişkilerde Türkiye'nin gür sesini duymaya hasret kaldı.

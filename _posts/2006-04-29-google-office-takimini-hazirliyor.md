@@ -3,6 +3,7 @@ layout: post
 title: Google Office Takımını hazırlıyor.
 Date: 2006-04-29 00:00
 Category: Haberler
+---
 
 Google office programlarını tek tek sahaya sunuyor.
 ![google_calendar.gif][]Amaç Microsoft Office'i tahtından indirmek mi?

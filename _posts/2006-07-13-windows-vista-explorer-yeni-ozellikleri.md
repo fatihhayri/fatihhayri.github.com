@@ -3,6 +3,7 @@ layout: post
 title: Windows Vista Explorer yeni özellikleri
 Date: 2006-07-13 23:01
 Category: Haberler
+---
 
 Windows Vista'nın piyasaya sürümü yaklaştıkça özellikleri ortaya çıkmaya
 başladı. Windows Vista Explorer yeni özellikleri ve ekran görüntüleri

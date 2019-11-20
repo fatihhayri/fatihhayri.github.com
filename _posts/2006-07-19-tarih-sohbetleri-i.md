@@ -3,6 +3,7 @@ layout: post
 title:  Tarih Sohbetleri I
 Date: 2006-07-19 00:00
 Category: Kitaplar
+---
 
 <span class="kitap-resmi">![252-7.jpg][]</span> 3 cilt olan Yılmaz Öztuna'nın Tarih Sohbetlerinin Bu ilk
 cildi gayet güzel tarih ve genel kültürü bilgisi veriyor. Çok güzel bir

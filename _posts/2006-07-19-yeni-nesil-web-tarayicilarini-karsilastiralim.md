@@ -3,6 +3,7 @@ layout: post
 title: Yeni Nesil Web Tarayıcılarını Karşılaştıralım
 Date: 2006-07-19 23:09
 Category: Haberler
+---
 
 ![web_tarayici.jpg][]Web Tarayıcılar yeni versiyonlarını bu ay içinde
 çıkardı. Firefox2.0 Beta, İE 7 Beta3 ve Opera 9.0 Bu web tarayıcılarını

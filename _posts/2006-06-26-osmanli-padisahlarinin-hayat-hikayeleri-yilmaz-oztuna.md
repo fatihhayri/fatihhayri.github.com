@@ -3,6 +3,7 @@ layout: post
 title: Osmanlı Padişahlarının Hayat Hikayeleri - yılmaz öztuna
 Date: 2006-06-26 22:54
 Category: Kitaplar
+---
 
 <span class="kitap-resmi">![osmanli_padisahlari.jpg][]</span> Bazı Osmanlı Padişahlarını hayatlarını
 yalın bir şekilde anlatıldığı güzel bir eser. Akıcı ve güzel bilgiler

@@ -3,6 +3,7 @@ layout: post
 title: Bilgisayar Terimleri Sözlüğü
 Date: 2006-10-03 12:28
 Category: Haberler
+---
 
 Türk Dil Kurumu'nun yayınaladığı Bilgisayar Terimleri Sözlüğü çok
 güzel. Bir çok yerde ingilizceleri kullanılan terimlerin Türkçelerini

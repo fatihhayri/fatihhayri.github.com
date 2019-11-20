@@ -12,9 +12,10 @@ kullandığımız bir koddur.
 DOCTYPE bildirimi (X)HTML kodunun başına bir veya iki satır olarak
 eklenir. Genel kullanımı:
 
-	:::html
+```html
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+```
 
 Burada dökümanımızın XHTML 1.0 verisyonu dikkate alınarak yazıldığı ve
 kullanılan bu kuralların linki verilmiştir. Linkin kullanılmadığı
@@ -82,32 +83,32 @@ kullandığınızda sayfanız Garip Mod da yorumlanacaktır ve bu size bir çok
 sorun oluşturacaktır. Sitenizde tam DOCTYPE bildirimive strict DTD
 kullanmanız çok önelidir.
 
-	:::html
+```html
 	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-
+```
 
 Bu kullanım sayfanın **HTML 4.01** kurallarının geçerli olduğu bir HTML
 dosyası olduğunu gösterir.
 
-	:::html
+```html
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+```
 
 Bu kullanım sayfanın **hem HTML hemde XHTML** kurallarının geçerli
 olduğunu bir XHTML dosyası olduğunu gösterir.
 
-	:::html
+```html
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+```
 
 Bu kullanım sayfanın **sadece XHTML1.0**kurallarının geçerli olduğu bir
 XHTML sayfası olduğunu gösterir. Bu kodlama yapıldığıında tüm XHTML
 kurallarına harfiyen uyulmalıdır. Örneğin kodların hepsinin küçük harfle
 yazılması gibi.
 
-	:::html
+```html
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-
+```
 
 Bu kullanım sayfanın bir **XHTML çerçeve(frame)**sayfası olduğunu
 gösterir. Kullanımı azaldı.

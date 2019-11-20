@@ -3,6 +3,7 @@ layout: post
 title: Hayatımın Acı ve Tatlı Günleri (şadiye Sultan Binti Abdülhamid Han)
 Date: 2006-05-03 23:20
 Category: Kitaplar
+---
 
 Tarihimizin en tartışmalı dönemlerinden biri olan II. Abdülmamid Han
 devrine farklı bir yönden bakmak için güzel bir kitap. Kitapdan güzel

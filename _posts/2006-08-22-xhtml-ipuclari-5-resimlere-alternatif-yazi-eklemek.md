@@ -3,6 +3,7 @@ layout: post
 title: (X)HTML İpuçları - 5 : Resimlere alternatif yazı eklemek
 Date: 2006-08-22 00:21
 Category: Web Standartları, XHTML
+---
 
 img elementinin alt özelliği kullanımı bize bir çok avantaj
 sağlayacaktır. Bir çok araç da(resimi desteklemyenler ve resimlerin

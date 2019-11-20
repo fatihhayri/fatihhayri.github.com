@@ -3,6 +3,7 @@ layout: post
 title: Osmanlıyı Yeniden keşfetmek - İlber Ortaylı
 Date: 2006-09-01 00:02
 Category: Kitaplar
+---
 
 ![Osmanlıyı Yeniden Keşfetmek][]Tarihe çok akıcı ve farklı bakışları
 olan İlber ortaylıdan çok güzel bir kitap. Her bölüm aslında birer kitap

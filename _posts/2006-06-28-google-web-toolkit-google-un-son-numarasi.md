@@ -3,6 +3,7 @@ layout: post
 title: Google Web Toolkit - Google&#039;un son numarası
 Date: 2006-06-28 23:36
 Category: Haberler
+---
 
 Google Web Toolkit : Google'un Java ile Ajax kodu yazmak isteyen
 kullancılara sunduğu bir araç. Google Map ve Gmail gibi Ajax tabanlı
