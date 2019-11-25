@@ -112,7 +112,7 @@ Diğer kutular genişlik daralınca iki satıra düşerken `max-content` tanıml
 
 ## min-content
 
-Izgara izi içindeki ızgara ögesinin en az daraldığı durumdaki değeridir. Metin taşmadan daralabileceği en son noktadaki değerdir. Yada ızgara ögesi içindeki satıriçi ögenin genişliği kadardır. 
+Izgara izi içindeki ızgara ögesinin en az daraldığı durumdaki değeridir. Metin taşmadan daralabileceği en son noktadaki değerdir yada ızgara ögesi içindeki satıriçi ögenin genişliği kadardır. 
 
 ```css
 .kapsayici {
