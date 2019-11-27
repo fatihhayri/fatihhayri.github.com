@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hayatımın Acı ve Tatlı Günleri (şadiye Sultan Binti Abdülhamid Han)
+title: Hayatımın Acı ve Tatlı Günleri - Şadiye Sultan Binti Abdülhamid Han
 Date: 2006-05-03 23:20
 Category: Kitaplar
 ---

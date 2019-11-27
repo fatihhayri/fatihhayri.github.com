@@ -10,6 +10,8 @@ image:
   feature: grid-terimleri.png
 ---
 
+ > Düzelt: `min-content` codepen paylaşımı yanlıştı düzettik. Düzeltme uyarısı için [L. Arman Özak](https://twitter.com/ArmanOzak)'a teşekkürler
+
  1. [CSS Grid'e (Izgara) Giriş](https://fatihhayrioglu.com/css-grid-giris/)
  2. [CSS Grid Özellikleri](https://fatihhayrioglu.com/css-grid-ozellikleri/)
  3. [fr birimi](https://fatihhayrioglu.com/fr-birimi/)

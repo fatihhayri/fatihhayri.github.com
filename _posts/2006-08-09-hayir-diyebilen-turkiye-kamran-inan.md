@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HAYIR DİYEBİLEN TÜRKİYE : Kamran İnan
+title: HAYIR DİYEBİLEN TÜRKİYE - Kamran İnan
 Date: 2006-08-09 22:42
 Category: Kitaplar
 ---

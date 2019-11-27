@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Firox&#039;unuzu daha performanslı kullanak için bir program: Flexbeta Firetweaker
+title: Firox'unuzu daha performanslı kullanak için bir program - Flexbeta Firetweaker
 Date: 2006-07-17 23:39
 Category: Haberler
 ---

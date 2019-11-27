@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (X)HTML İpuçları - 5 : Resimlere alternatif yazı eklemek
+title: (X)HTML İpuçları - 5 Resimlere alternatif yazı eklemek
 Date: 2006-08-22 00:21
 Category: Web Standartları, XHTML
 ---
@@ -12,6 +12,6 @@ indeksleyecektir(arama motorlarında daha üst sıralar) ve gelişmiş web
 tarayıcıları tooltip olarak gösterecektir bu metni. Daha çok
 bilgilendirici metinlerin kullanılması daha iyidir.
 
-1.  <img src="/images/xhml_dorulama.gif" alt="XHTML Uygun Kod" />
+![/images/xhml_dorulama.gif](/images/xhml_dorulama.gif)
 
 
