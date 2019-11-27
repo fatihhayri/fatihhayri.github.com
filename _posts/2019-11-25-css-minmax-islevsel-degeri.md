@@ -121,7 +121,7 @@ Izgara izi içindeki ızgara ögesinin en az daraldığı durumdaki değeridir. 
 }
 ````
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS grid minmax işlevi min-content" src="https://codepen.io/fatihhayri/embed/GRRaQYR?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS grid minmax işlevi min-content" src="https://codepen.io/fatihhayri/embed/NWWZoqm?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 ![CSS grid minmax min-content](https://fatihhayrioglu.com/images/minmax-min-content.gif)
