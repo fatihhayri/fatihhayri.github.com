@@ -4,17 +4,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
   
   grunt.initConfig({
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      all: [
-        'Gruntfile.js',
-        'assets/js/*.js',
-        'assets/js/plugins/*.js',
-        '!assets/js/scripts.min.js'
-      ]
-    },
     recess: {
       dist: {
         options: {
@@ -49,16 +38,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    svgmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: 'images/',
-          src: '{,*/}*.svg',
-          dest: 'images/'
-        }]
-      }
-    },
     watch: {
       less: {
         files: [
@@ -86,8 +65,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'clean',
     'recess',
-    'uglify',
-    'svgmin'
+    'uglify'
   ]);
   grunt.registerTask('dev', [
     'watch'
