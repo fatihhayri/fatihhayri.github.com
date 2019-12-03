@@ -7,7 +7,7 @@ tags: [ardalan-kaydırmaca, ardalan-özellikleri, css-sprites, menü-yapmak, res
 ---
 
 Daha önce resimli menü yapımını anlatmıştım.
-[http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/][]
+[http://fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/][]
 ancak burada şöyle bir sorun ile karşılaştık; Bu makalede anlattığımız
 yöntem ile genel bir metot anlatarak tüm resimli menüler için şablon
 niteliğinde bir kod ürettik, yani tüm menüler bu kod ile
@@ -135,7 +135,7 @@ noktası sol üst köşesidir, bu nedenle değerler eksi(-) değer alır.
 -   http://www.codeitred.com/2008/08/12/apple-style-menu-tutorial-css-sprites
 
 
-  [http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/]: http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/
+  [http://fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/]: http://fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/
   [100]: /images/basit_resimli_menu.jpg
   [tıklayınız]: /dokumanlar/basit_resimli_menu.html
   [1]: /images/basit_resimli_menu_ardkaydi.jpg

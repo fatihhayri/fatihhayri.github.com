@@ -70,14 +70,14 @@ Mutlak konumlandırma (position: absolute) ile benzer özelliklere sahiptir; tan
 -   [http://www.gunlaug.no/contents/wd_additions_15.html][]
 -   [http://www.gunesintamicinde.com/ie-6-ve-position-fixed-problemi/][]
 
-  [CSS ile konumlandırma(positioning)]: http://www.fatihhayrioglu.com/?p=151
+  [CSS ile konumlandırma(positioning)]: http://fatihhayrioglu.com/?p=151
     "konumlandırma makalesi"
   [tıklayınız.]: /dokumanlar/sabit_konum_ornek1.html
-  [min-width ve min-height sorununu]: http://www.fatihhayrioglu.com/?p=182
+  [min-width ve min-height sorununu]: http://fatihhayrioglu.com/?p=182
   [Sabit Konumlandırma]: /images/sabit_konum_ust.gif
   [1]: /dokumanlar/sab_konum_ust.html
   [2]: /dokumanlar/sab_konum_alt.html
-  [garip modda]: http://www.fatihhayrioglu.com/?p=164
+  [garip modda]: http://fatihhayrioglu.com/?p=164
   [http://tagsoup.com/cookbook/css/fixed/]: http://tagsoup.com/cookbook/css/fixed/
   [http://annevankesteren.nl/test/examples/ie/position-fixed.html]: http://annevankesteren.nl/test/examples/ie/position-fixed.html
   [http://annevankesteren.nl/2005/01/position-fixed-in-ie]: http://annevankesteren.nl/2005/01/position-fixed-in-ie

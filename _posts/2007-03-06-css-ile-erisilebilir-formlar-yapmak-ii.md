@@ -372,7 +372,7 @@ düzeltme kodu(fix) yazma gereği duymadık.
   [pdf olarak indir]: /pdf/CSS_ile_Erisilebilir_Formlar_Yapmak_II.pdf
   [CSS ile Form]: /images/sonuc_sayfasi.kucukresim.gif
   ![CSS ile Form]: /images/sonuc_sayfasi.gif
-  [Bir önceki]: http://www.fatihhayrioglu.com/?p=276
+  [Bir önceki]: http://fatihhayrioglu.com/?p=276
   [tıklayınız.]: /dokumanlar/css_ile_form_2.html
   [http://www.webcredible.co.uk]: http://www.webcredible.co.uk/user-friendly-resources/css/css-forms.shtml
   [http://www.websiteoptimization.com/]: http://www.websiteoptimization.com/speed/tweak/forms/

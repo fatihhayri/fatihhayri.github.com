@@ -168,9 +168,9 @@ position:fixed hakkında detaylı bilgi için [tıklayınız.](/sabit-konumlandi
 -   [Muhammed Sevim][]
 -   [Web Standards Solutions: The Markup and Style Handbook][]
 
-  [kutu modelleme]: http://www.fatihhayrioglu.com/?p=13
+  [kutu modelleme]: http://fatihhayrioglu.com/?p=13
   [Normal Akış şeması]: /images/normal_akis.gif
-  [uzunluk]: http://www.fatihhayrioglu.com/?p=95
+  [uzunluk]: http://fatihhayrioglu.com/?p=95
   [CSS Nisbi konumlandırma]: /images/position_relative.gif
   [100]: /images/position_absolute.gif
   [link]: http://www.howtocreate.co.uk/fixedPosition.html

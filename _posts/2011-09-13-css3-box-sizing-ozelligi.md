@@ -185,9 +185,9 @@ Kalın sağlıcakla
 -   [http://maymay.net/blog/2004/10/28/observations-on-the-css3-box-sizing-property-and-how-designers-use-style-sheets/][]
 -   [http://www.w3cplus.com/content/css3-box-sizing][] (çince)
 
-  [CSS ile Kutu modeli, sorunları ve çözümleri]: http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
+  [CSS ile Kutu modeli, sorunları ve çözümleri]: http://fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
   [100]: https://lh5.googleusercontent.com/EkvNMZKnUkXNpL5ps_x6sCNwyAOY6KQ3TS3YsJ9_Ypbui2rEdirr1BijorcNsFE-9a9eIcUerazNoQLsvh7U8J9sGm3h3cV-DFRXqCuLae8e4ruLWfQ
-  [calc()]: http://www.fatihhayrioglu.com/css3-calc-degeri/
+  [calc()]: http://fatihhayrioglu.com/css3-calc-degeri/
   [http://webfx.eae.net/dhtml/boxsizing/implementation.html]: http://webfx.eae.net/dhtml/boxsizing/implementation.html
   [http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/]: http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/
   [http://caniuse.com/css3-boxsizing]: http://caniuse.com/css3-boxsizing

@@ -89,7 +89,7 @@ Kaynak
 -   [http://www.sitepoint.com/blogs/2004/05/23/getting-creative-with-visited-links/][]
 -   [http://www.useit.com/alertbox/20040510.html][]
 
-  [Sözde sınıf ve elementler makalesinde]: http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
+  [Sözde sınıf ve elementler makalesinde]: http://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
   [http://www.evalotta.net/]: http://www.evalotta.net/
   [stadart_ff]: /images/stadart_ff.gif
   [genel_bag_renk]: /images/genel_bag_renk.gif

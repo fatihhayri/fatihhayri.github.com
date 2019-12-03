@@ -67,8 +67,8 @@ ile sağlanıyor.
 -   [http://css-tricks.com/transparent-borders-with-background-clip/][]
 
   [100]: https://lh5.googleusercontent.com/_SHFSSO6P4rp8S4nZY3vxCmgDN6E4T4s388AlMh0qsEPBkUtJTheYUlsBJ6scDYACwDYDlM7FOieyXgENGEmWzpUohoMOcsXmASOjoTHB5Jub4ojri0
-  [rgba tanımı]: http://www.fatihhayrioglu.com/css3-rgba-renk-tanimi/
+  [rgba tanımı]: http://fatihhayrioglu.com/css3-rgba-renk-tanimi/
   [1]: https://lh4.googleusercontent.com/HG1aPLVyrPkO-QDocagwVvy3t2Ib1jSb8P8LG9TYrNOXo7QEQBayw6Bk8BlztGYU2Cd5CnBV7eYWR8GT0bXk-E6bAZ_Jh8OyzHGEbaOeQPSpO9yvYYs
-  [background-clip özelliği]: http://www.fatihhayrioglu.com/css3-background-origin-ve-background-clip-ozellikleri/
+  [background-clip özelliği]: http://fatihhayrioglu.com/css3-background-origin-ve-background-clip-ozellikleri/
   [2]: https://lh5.googleusercontent.com/A5kRKORp2QXmurGBD_WaoXQl_V0P6Fi3Ojm1JhB3cDVLfIvjTApd8K-VjxIbP8cQ-rQ47kPfj9gimC6IbudkTi7CITtaTGo4Lf2Fy4aybKvGmYXZBnU
   [http://css-tricks.com/transparent-borders-with-background-clip/]: http://css-tricks.com/transparent-borders-with-background-clip/

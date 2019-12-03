@@ -118,7 +118,7 @@ Kalın sağlıcakla
 -   [http://alastairc.ac/2006/08/why-css-is-important-for-accessibility/][]
 -   [http://www.w3.org/TR/CSS-access][]
 
-  [HTML5’in yapısal elemanları]: http://www.fatihhayrioglu.com/html-5in-yeni-elementlerini-bir-goz-atalim/
+  [HTML5’in yapısal elemanları]: http://fatihhayrioglu.com/html-5in-yeni-elementlerini-bir-goz-atalim/
   [100]: https://lh4.googleusercontent.com/mZ-OkglGxQIDuI_gn8dvqhjPy8Z0siTKY50T2gqGnoC8UeYLTURhiB15ebJ2YBeN5QViUQUz1wzfI_t6bu5kgOxDoTzL9_snx6OfkeVAqJ1zjjW1tA
   [http://www.smashingmagazine.com/2009/04/08/from-table-hell-to-div-hell/]: http://www.smashingmagazine.com/2009/04/08/from-table-hell-to-div-hell/
   [http://phrogz.net/css/WhyTablesAreBadForLayout.html]: http://phrogz.net/css/WhyTablesAreBadForLayout.html

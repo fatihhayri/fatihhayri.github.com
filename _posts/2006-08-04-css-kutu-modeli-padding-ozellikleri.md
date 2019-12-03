@@ -167,5 +167,5 @@ Android Browser
 {: .tarayiciuyum}
 
   [Kutu Modeli]: /images/basit_boxmodel.gif
-  [<uzunluk değeri >]: http://www.fatihhayrioglu.com/?p=95
-  [margin]: http://www.fatihhayrioglu.com/?p=113
+  [<uzunluk değeri >]: http://fatihhayrioglu.com/?p=95
+  [margin]: http://fatihhayrioglu.com/?p=113

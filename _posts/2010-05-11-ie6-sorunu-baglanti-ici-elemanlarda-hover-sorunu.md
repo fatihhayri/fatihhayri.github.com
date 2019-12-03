@@ -78,7 +78,7 @@ a:hover span {
 -   [http://friendlybit.com/css/ie6-bug-ignored-selector-hover-bug/][]
 
 
-  [şurada da kullandım]: http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/
+  [şurada da kullandım]: http://fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/
   [tıklayınız.]: /dokumanlar/sub_hover/ie_sub_hover.html
   [friendlybit.com]: http://friendlybit.com "friendlybit.com"
   [1]: /dokumanlar/sub_hover/ie_sub_hover_coz.html

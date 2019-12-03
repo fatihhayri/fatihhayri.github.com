@@ -41,7 +41,7 @@ tags: [Ajax, CSS, Haberler, html, Javascript, web2.0, WordPress]
   [4]: https://addons.mozilla.org/en-US/firefox/addon/5369 "YSlow"
   [Design Float]: http://www.designfloat.com/
     "Design Float / Submitted Entries"
-  [CSS’de Tanımlamalar ve Etkinlikleri(Specificity)]: http://www.fatihhayrioglu.com/?p=180
+  [CSS’de Tanımlamalar ve Etkinlikleri(Specificity)]: http://fatihhayrioglu.com/?p=180
   [5]: http://www.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/
     "Link"
   [Link Burdada 50 adet vermişler Link    ]: http://mashable.com/2007/07/26/wordpress-admin-plugins/ "WordPress"

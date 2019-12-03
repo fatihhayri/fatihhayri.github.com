@@ -99,7 +99,7 @@ elemanında bu sorun ile karşılaşılmıyor.
   [tıklayınız.]: /dokumanlar/margin_inherit_form/inherit_margin_form_orn.html
   [1]: /images/margin_inherit_ff.gif
   [2]: /images/margin_inherit_ie.gif
-  [IE'da İkikat görülen Margin Problemi ve Çözümü]: http://www.fatihhayrioglu.com/ieda-ikikat-gorulen-margin-problemi-ve-cozumu/
+  [IE'da İkikat görülen Margin Problemi ve Çözümü]: http://fatihhayrioglu.com/ieda-ikikat-gorulen-margin-problemi-ve-cozumu/
   [3]: /dokumanlar/margin_inherit_form/inherit_margin_form_ornc.html
   [4]: /images/margin_inherit_ie_c.gif
   [http://www.positioniseverything.net/explorer/inherited_margin.html]: http://www.positioniseverything.net/explorer/inherited_margin.html

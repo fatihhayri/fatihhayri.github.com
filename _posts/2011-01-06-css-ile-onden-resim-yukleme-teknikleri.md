@@ -16,7 +16,7 @@ alanlarda tanımlı ardalan resimleri içinde geçerlidir. Bu durumda ise
 resimleri ön yükleme yapmak önemlidir.
 
 Daha önceki makalemizde bir iki yöntem anlatmıştık.
-[http://www.fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/][]
+[http://fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/][]
 
 Şimdi daha basit bir yöntemi daha bilgi dağarcığımıza ekleyelim.
 
@@ -71,7 +71,7 @@ tarayıcılar desteklemediği için beklemek gerekiyor.
 -   [http://www.thecssninja.com/css/even-better-image-preloading-with-css2][]
 -   [http://www.maratz.com/blog/archives/2005/06/22/preload-hover-images-in-css/][]
 
-  [http://www.fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/]: http://www.fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/
+  [http://fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/]: http://fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/
   [http://css-tricks.com/snippets/css/css-only-image-preloading/]: http://css-tricks.com/snippets/css/css-only-image-preloading/
   [http://www.velvetblues.com/web-development-blog/the-css-approach-preload-images-without-javascript/]: http://www.velvetblues.com/web-development-blog/the-css-approach-preload-images-without-javascript/
   [http://snipplr.com/view/2122/css-image-preloader/]: http://snipplr.com/view/2122/css-image-preloader/

@@ -195,7 +195,7 @@ soldan 149 px yerine eksi 149px ile sola almak oldu
   [100]: /images/menu3_resim1.gif
   [1]: /images/menu3_resim2.gif
   [2]: /images/menu3_resim3.gif
-  [kodları uygulayalım.]: http://www.fatihhayrioglu.com/?p=209
+  [kodları uygulayalım.]: http://fatihhayrioglu.com/?p=209
   [3]: /images/menu3_resim4.gif
   [4]: /images/menu3_resim5.gif
   [linkini]: http://www.alistapart.com:80/articles/dropdowns/

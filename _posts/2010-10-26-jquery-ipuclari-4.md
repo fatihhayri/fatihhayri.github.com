@@ -217,9 +217,9 @@ $('li').has('ul').css('background-color', 'red');
 -   [http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx][]
 -   [http://www.smashingmagazine.com/2010/08/04/commonly-confused-bits-of-jquery/][]
 
-  [Jquery ipuçları - 1]: http://www.fatihhayrioglu.com/jquery-ipuclari/
-  [Jquery ipuçları - 2]: http://www.fatihhayrioglu.com/jquery-ipuclari-2/
-  [Jquery ipuçları - 3]: http://www.fatihhayrioglu.com/jquery-ipuclari-3/
+  [Jquery ipuçları - 1]: http://fatihhayrioglu.com/jquery-ipuclari/
+  [Jquery ipuçları - 2]: http://fatihhayrioglu.com/jquery-ipuclari-2/
+  [Jquery ipuçları - 3]: http://fatihhayrioglu.com/jquery-ipuclari-3/
   [100]: /images/jquery_4_ipuc.png
   [tıklayınız.]: /dokumanlar/console_log.html
   [1]: /dokumanlar/delay_metodu.html

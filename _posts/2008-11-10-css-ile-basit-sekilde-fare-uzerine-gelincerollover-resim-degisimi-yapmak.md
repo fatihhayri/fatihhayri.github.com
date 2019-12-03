@@ -53,7 +53,7 @@ bulunan başlangıçta görünmeyen resmi eksi konum vererek gösteriyoruz.
 
 Örnek sayfayı görmek için [tıklayınız][]
 
-  [Resimli Menüler]: http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler
+  [Resimli Menüler]: http://fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler
     "Resimli Menüler"
   [anasayfaya dön]: /images/mak_degisen_resim.gif
   [Ana Sayfaya Dön]: anasayfa.htm

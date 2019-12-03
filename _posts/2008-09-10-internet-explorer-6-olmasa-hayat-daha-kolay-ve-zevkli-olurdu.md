@@ -130,24 +130,24 @@ Ne diyelim Internet Explorer 6'ya ölüm.
   [100]: /images/ie6-dur.gif
 
   [ Death March]: http://iedeathmarch.org/ "ie 6 death"
-  [IE’de Hata Ayıklamak için şartlı Yorumlar Kullanmak]: http://www.fatihhayrioglu.com/?p=236
-  [CSS Hata Ayıklama Yöntemleri]: http://www.fatihhayrioglu.com/?p=242
-  [Css de kodumuzu İE’den gizleme]: http://www.fatihhayrioglu.com/?p=31
-  [CSS ile Kutu modeli, sorunları ve çözümleri]: http://www.fatihhayrioglu.com/?p=13
-  [IE’da İkikat görülen Margin Problemi ve Çözümü]: http://www.fatihhayrioglu.com/?p=131
-  [IE’da min-width, min-height,max-width, max-height Kullanmak]: http://www.fatihhayrioglu.com/?p=182
-  [IE6′un Tekrarlayan Karakter Sorunu]: http://www.fatihhayrioglu.com/?p=232
-  [IE’un 3 piksel Metin Öteleme Hatası]: http://www.fatihhayrioglu.com/?p=231
-  [IE6′da CEE-EEE(peek-a-boo) Hatası]: http://www.fatihhayrioglu.com/?p=235
-  [Göreceli-Mutlak Konumlandırma Sorunu]: http://www.fatihhayrioglu.com/?p=240
-  [Kenar Boşluğu(Margin) Çökmesi]: http://www.fatihhayrioglu.com/?p=362
-  [Float Uygulanmış Elementleri Tam Kapsayamama Sorunu]: http://www.fatihhayrioglu.com/?p=373
-  [Internet Explorer 6 için saydam PNG desteği]: http://www.fatihhayrioglu.com/?p=492
-  [Özellik Seçicileri(Attribute Selectors)]: http://www.fatihhayrioglu.com/?p=243
-  [Pseudo-sınıfları ve Pseudo-elementleri]: http://www.fatihhayrioglu.com/?p=86
-  [Sabit Konumlandırma (Postion:fixed)]: http://www.fatihhayrioglu.com/?p=431
-  [CSS ile Menü Yapmak III - Dikey Açılır Menüler]: http://www.fatihhayrioglu.com/?p=216
-  [CSS ile Menü Yapmak IV - Yatay Açılır Menüler]: http://www.fatihhayrioglu.com/?p=217
+  [IE’de Hata Ayıklamak için şartlı Yorumlar Kullanmak]: http://fatihhayrioglu.com/?p=236
+  [CSS Hata Ayıklama Yöntemleri]: http://fatihhayrioglu.com/?p=242
+  [Css de kodumuzu İE’den gizleme]: http://fatihhayrioglu.com/?p=31
+  [CSS ile Kutu modeli, sorunları ve çözümleri]: http://fatihhayrioglu.com/?p=13
+  [IE’da İkikat görülen Margin Problemi ve Çözümü]: http://fatihhayrioglu.com/?p=131
+  [IE’da min-width, min-height,max-width, max-height Kullanmak]: http://fatihhayrioglu.com/?p=182
+  [IE6′un Tekrarlayan Karakter Sorunu]: http://fatihhayrioglu.com/?p=232
+  [IE’un 3 piksel Metin Öteleme Hatası]: http://fatihhayrioglu.com/?p=231
+  [IE6′da CEE-EEE(peek-a-boo) Hatası]: http://fatihhayrioglu.com/?p=235
+  [Göreceli-Mutlak Konumlandırma Sorunu]: http://fatihhayrioglu.com/?p=240
+  [Kenar Boşluğu(Margin) Çökmesi]: http://fatihhayrioglu.com/?p=362
+  [Float Uygulanmış Elementleri Tam Kapsayamama Sorunu]: http://fatihhayrioglu.com/?p=373
+  [Internet Explorer 6 için saydam PNG desteği]: http://fatihhayrioglu.com/?p=492
+  [Özellik Seçicileri(Attribute Selectors)]: http://fatihhayrioglu.com/?p=243
+  [Pseudo-sınıfları ve Pseudo-elementleri]: http://fatihhayrioglu.com/?p=86
+  [Sabit Konumlandırma (Postion:fixed)]: http://fatihhayrioglu.com/?p=431
+  [CSS ile Menü Yapmak III - Dikey Açılır Menüler]: http://fatihhayrioglu.com/?p=216
+  [CSS ile Menü Yapmak IV - Yatay Açılır Menüler]: http://fatihhayrioglu.com/?p=217
   [http://css-tricks.com/why-people-still-use-ie-6/]: http://css-tricks.com/why-people-still-use-ie-6/
   [http://cdharrison.com/2008/09/04/death-to-ie6/]: http://cdharrison.com/2008/09/04/death-to-ie6/
   [http://www.webmaster-source.com/2008/09/04/fighting-internet-explorer-6/]: http://www.webmaster-source.com/2008/09/04/fighting-internet-explorer-6/

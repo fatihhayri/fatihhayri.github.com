@@ -924,8 +924,8 @@ Projede yer alan tüm dosyaları sıkıştırıp attım. [Tüm dosyaları indirm
   [Tezahürat Ekle]: /images/tezahurat_ekle_kucuk.jpg
   [Tezahürat İzle Dinle]: /images/tezahurat_izle_dinle_kucuk.jpg
   [Genel Şablon]: /images/genel_sablon_kucuk.jpg
-  [IE'da İkikat görülen Margin Problemi ve Çözümü]: http://www.fatihhayrioglu.com/ieda-ikikat-gorulen-margin-problemi-ve-cozumu/
-  [tıklayınız.]: http://www.fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity/
-  [Sayfalama kodlamalarını bir kaç tipi]: http://www.fatihhayrioglu.com/css-ile-sayfalama-gorselligini-ayarlama/
-  [jquery ile sekme yapımını]: http://www.fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/
+  [IE'da İkikat görülen Margin Problemi ve Çözümü]: http://fatihhayrioglu.com/ieda-ikikat-gorulen-margin-problemi-ve-cozumu/
+  [tıklayınız.]: http://fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity/
+  [Sayfalama kodlamalarını bir kaç tipi]: http://fatihhayrioglu.com/css-ile-sayfalama-gorselligini-ayarlama/
+  [jquery ile sekme yapımını]: http://fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/
   [Tüm dosyaları indirmek için tıklayınız.]: /dokumanlar/fm_htmlleri_son.rar

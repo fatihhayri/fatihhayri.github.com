@@ -20,4 +20,4 @@ Sizinde eksik gördüğünüz ve eklememi istediğiniz konular varsa lütfen
 [bana yaznız][].
 
 
-  [bana yaznız]: http://www.fatihhayrioglu.com/?page_id=135
+  [bana yaznız]: http://fatihhayrioglu.com/?page_id=135

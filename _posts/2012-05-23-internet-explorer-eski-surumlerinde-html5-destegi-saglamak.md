@@ -71,7 +71,7 @@ desteği için [Modernizr][] incelemekte yarar var.
 -   [http://viget.com/inspire/html5-elements-irresponsible-choice-right-now][]
 
   [%28 kullanım oranı sahip tarayıcılar]: http://labs.sahibinden.com/yazi/sahibinden-com-nisan-2012-ziyaretci-teknoloji-istatistikleri/
-  [şartlı yorumlar]: http://www.fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/
+  [şartlı yorumlar]: http://fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/
   [Modernizr]: http://modernizr.com/
   [http://net.tutsplus.com/tutorials/html-css-techniques/how-to-make-all-browsers-render-html5-mark-up-correctly-even-ie6/]: http://net.tutsplus.com/tutorials/html-css-techniques/how-to-make-all-browsers-render-html5-mark-up-correctly-even-ie6/
   [http://code.google.com/p/html5shiv/]: http://code.google.com/p/html5shiv/

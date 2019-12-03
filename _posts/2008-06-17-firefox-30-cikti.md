@@ -137,7 +137,7 @@ Ben bu yazıyı bir gün öceden yazmıştım ve bugün yayına aldım. Firefox
 -   [http://fotoanaliz.hurriyet.com.tr/galeridetay.aspx?cid=12563&p=2&rid=4369][]
 
 
-  [Opera 9.5]: http://www.fatihhayrioglu.com/?p=518 "Opera 9.5"
+  [Opera 9.5]: http://fatihhayrioglu.com/?p=518 "Opera 9.5"
   [Firefox 3.0 indir]: http://www.mozilla-europe.org/tr/firefox/
   [100]: /images/browser_memory_test1-300x237.jpg
     "browser_memory_test1"

@@ -270,5 +270,5 @@ onların import edilmesi önerilir. Bu sayade kodun bir kısmında
 yaptığımız değişiklik için tüm css kodu incelenip değiştirilmesi
 gerekmez ve kod yönetimi kolaylaşır.
 
-  [CSS'de Kısaltmalar kısmına bir göz atın.]: http://www.fatihhayrioglu.com/?p=6
-  [CSS'i Web Sayfalarına Eklemek]: http://www.fatihhayrioglu.com/?p=91
+  [CSS'de Kısaltmalar kısmına bir göz atın.]: http://fatihhayrioglu.com/?p=6
+  [CSS'i Web Sayfalarına Eklemek]: http://fatihhayrioglu.com/?p=91

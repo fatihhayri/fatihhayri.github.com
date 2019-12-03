@@ -215,7 +215,7 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.
 -   [http://css-infos.net/property/background-origin][]
 -   [https://www.youtube.com/watch?v=7xVS2FX2Mao&feature=related][]
 
-  [background özelliklerini]: http://www.fatihhayrioglu.com/hizli-css-referansi/
+  [background özelliklerini]: http://fatihhayrioglu.com/hizli-css-referansi/
   [100]: https://lh6.googleusercontent.com/-PsvxlredrDNUaFBqk4tcxuxsLaw9XJAeTIfp53XKqD2CkZgPqnN7UkCvkm1nSveS_plE_wPOGgUzpVVJ1JGeq_6bWXEkSun-0KS9CC1JMnz19Lusfw
   [1]: https://lh6.googleusercontent.com/MOaRt6WqnrAxmlxJNMcvGKvA-Ki9x0IQOpz_Az4iqzZU6Ug3Dt1vutHFus__ZMQSORq3eLvhtrgzeWFPMzptoBB5pMxLHIWjoA26SO009nYr4fxoUrU
   [http://www.css3.info/preview/background-origin-and-background-clip/]: http://www.css3.info/preview/background-origin-and-background-clip/

@@ -34,9 +34,9 @@ oldu. Neyse biz haberlere bir göz atalım.
     uyarlanmış halide çıkıyor . [Link][11]
 
 
-  [bir makale]: http://www.fatihhayrioglu.com/?p=227
+  [bir makale]: http://fatihhayrioglu.com/?p=227
   [Link]: http://24ways.org/examples/rounded-corners-the-css3-way/rounded3.html
-  [1]: http://www.fatihhayrioglu.com/?p=229
+  [1]: http://fatihhayrioglu.com/?p=229
   [2]: http://exanimo.com/css/vertical-centering-with-a-floated-shim
   [3]: http://www.3point7designs.com/advanced_type.html
   [4]: http://www.netmag.co.uk/zine/home/designing-simple-accessible-forms

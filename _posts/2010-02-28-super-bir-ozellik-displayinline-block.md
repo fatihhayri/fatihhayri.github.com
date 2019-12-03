@@ -219,7 +219,7 @@ Bu kodları ekledikten sonra sorunumuz düzeldi.
   [3]: /dokumanlar/display_inline_block3.html
   [4]: /images/display_inline_block3.gif
     "display_inline_block3"
-  [tüm tarayıcılar için düzeltmeler]: http://www.fatihhayrioglu.com/tum-tarayicilar-icin-css-duzeltmelerihack/
+  [tüm tarayıcılar için düzeltmeler]: http://fatihhayrioglu.com/tum-tarayicilar-icin-css-duzeltmelerihack/
   [http://www.search-this.com/2008/08/28/lets-all-get-inline-in-a-block-in-a-block/]: http://www.search-this.com/2008/08/28/lets-all-get-inline-in-a-block-in-a-block/
   [http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/]: http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/
   [http://helephant.com/2009/08/a-great-big-welcome-to-inline-block/]: http://helephant.com/2009/08/a-great-big-welcome-to-inline-block/

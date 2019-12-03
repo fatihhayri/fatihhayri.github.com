@@ -194,9 +194,9 @@ Internet Explorer 7/6/5.5, Opera 9.6 ile test edilmiştir.
     ie8 ve ie9)
 
   [http://paulirish.com/2009/browser-specific-css-hacks/]: http://paulirish.com/2009/browser-specific-css-hacks/
-  [CSS Derslerindeki]: http://www.fatihhayrioglu.com/css-dersleri/
+  [CSS Derslerindeki]: http://fatihhayrioglu.com/css-dersleri/
     "CSS Derslerindeki"
-  [IE'de Hata Ayıklamak için şartlı Yorumlar Kullanmak]: http://www.fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/
+  [IE'de Hata Ayıklamak için şartlı Yorumlar Kullanmak]: http://fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/
     "IE’de Hata Ayıklamak için şartlı Yorumlar Kullanmak"
   [tıklayınız.]: /dokumanlar/css_duzeltme.html
     "tıklayınız."

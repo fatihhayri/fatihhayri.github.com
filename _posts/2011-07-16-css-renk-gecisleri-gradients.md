@@ -508,7 +508,7 @@ Kalın sağlıcakla
 
   [100]: https://lh6.googleusercontent.com/qdn73-Cr_BtDXHybNUYrBRPDgdpSY35sBoIxaSTEaRqZrdDr7YgO7QAkwOJb6AJDNEZIzQh58zcwM3WZJGZAAl_VIiOKp1nxZAonW1_EscSfTVJV8j4
   [1]: /images/dogrusal_renk_gecisi.gif
-  [Daha önce anlattığımız]: http://www.fatihhayrioglu.com/css3-rgba-renk-tanimi/
+  [Daha önce anlattığımız]: http://fatihhayrioglu.com/css3-rgba-renk-tanimi/
   [http://leaverou.me/demos/css3-patterns.html]: http://leaverou.me/demos/css3-patterns.html
   [http://leaverou.me/css3patterns/]: http://leaverou.me/css3patterns/
   [http://leaverou.me]: http://leaverou.me

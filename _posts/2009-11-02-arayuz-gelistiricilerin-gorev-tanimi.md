@@ -60,9 +60,9 @@ aranabilir. Malum sektör hızlı gelişiyor.
 -   [http://onlinetools.org/articles/fed2.html][]
 
   [FirendFeed'deki Arayüz Geliştiricileri]: http://friendfeed.com/arayuz-gelistiriciler
-  [**CSS Bilmek:** Çok iyi derecede CSS bilmelidir. Katman tabanlı kodlamayı bilmelidir. Tablosuz sayfa yapısını tasarlamalıdır.]: http://www.fatihhayrioglu.com/css-dersleri/
-  [HTML Mailing -1: Mailing Kodlarken Dikkat Edilmesi Gerekenler]: http://www.fatihhayrioglu.com/html-mailing-1-mailing-kodlarken-dikkat-edilmesi-gerekenler/
-  [HTML Mailing 2 – Mailing HTML Kodunun Yazılması]: http://www.fatihhayrioglu.com/html-mailing-2-mailing-html-kodunun-yazilmasi/
-  [**Yenilikçi:** Web mecrasındaki gelişmeleri takip etmeli ve uygulamalarında bu yenilikleri gerektiğinde kullanmalıdır.]: http://www.fatihhayrioglu.com/yeniliklerin-takibi/
+  [**CSS Bilmek:** Çok iyi derecede CSS bilmelidir. Katman tabanlı kodlamayı bilmelidir. Tablosuz sayfa yapısını tasarlamalıdır.]: http://fatihhayrioglu.com/css-dersleri/
+  [HTML Mailing -1: Mailing Kodlarken Dikkat Edilmesi Gerekenler]: http://fatihhayrioglu.com/html-mailing-1-mailing-kodlarken-dikkat-edilmesi-gerekenler/
+  [HTML Mailing 2 – Mailing HTML Kodunun Yazılması]: http://fatihhayrioglu.com/html-mailing-2-mailing-html-kodunun-yazilmasi/
+  [**Yenilikçi:** Web mecrasındaki gelişmeleri takip etmeli ve uygulamalarında bu yenilikleri gerektiğinde kullanmalıdır.]: http://fatihhayrioglu.com/yeniliklerin-takibi/
   [http://www.cherny.com/webdev/105/front-end-web-designers-developers-and-engineers]: http://www.cherny.com/webdev/105/front-end-web-designers-developers-and-engineers
   [http://onlinetools.org/articles/fed2.html]: http://onlinetools.org/articles/fed2.html

@@ -148,7 +148,7 @@ görünse de Firefox desteği standartlaşması daha olasıdır.
 -   [http://www.yousaytoo.com/the-css3-resize-property/784883][]
 -   [http://robertnyman.com/css3/][]
 
-  [yazdığım gibi]: http://www.fatihhayrioglu.com/css-ipucu-27-chrome-ve-safaride-textarea-genisletme-islevini-kaldirma/
+  [yazdığım gibi]: http://fatihhayrioglu.com/css-ipucu-27-chrome-ve-safaride-textarea-genisletme-islevini-kaldirma/
   [http://www.css3.info/preview/resize/]: http://www.css3.info/preview/resize/
   [http://www.impressivewebs.com/css3-resize/]: http://www.impressivewebs.com/css3-resize/
   [http://www.w3schools.com/cssref/css3_pr_resize.asp]: http://www.w3schools.com/cssref/css3_pr_resize.asp

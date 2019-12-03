@@ -96,8 +96,8 @@ gerekiyor:/
 
   [100]: /dokumanlar/3piksel_sorunu.gif
   [1]: /dokumanlar/3piksel_sorunu2.gif
-  [önceki konulardan]: http://www.fatihhayrioglu.com/ieda-ikikat-gorulen-margin-problemi-ve-cozumu/
-  [IE7]: http://www.fatihhayrioglu.com/internet-explorer-7-ve-css/
+  [önceki konulardan]: http://fatihhayrioglu.com/ieda-ikikat-gorulen-margin-problemi-ve-cozumu/
+  [IE7]: http://fatihhayrioglu.com/internet-explorer-7-ve-css/
   [http://www.positioniseverything.net/explorer/threepxtest.html]: http://www.positioniseverything.net/explorer/threepxtest.html
   [http://www.simplebits.com/notebook/2004/07/30/3pixels.html]: http://www.simplebits.com/notebook/2004/07/30/3pixels.html
   [http://krijnhoetmer.nl/stuff/css/three-pixel-bug/]: http://krijnhoetmer.nl/stuff/css/three-pixel-bug/

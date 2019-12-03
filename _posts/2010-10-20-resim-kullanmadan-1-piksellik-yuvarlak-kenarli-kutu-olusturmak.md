@@ -168,8 +168,8 @@ Hadi kalın sağlıcakla.
 -   [http://www.alistapart.com/articles/mountaintop/][]
 
   [100]: /images/1px_yuvarlak_kutu_yak-300x125.gif
-  [Yuvarlak Kenarlı Kutular]: http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutular/
-  [Yuvarlak kenarlı kutular(border-radius) oluşturmak]: http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutularborder-radius-olusturmak/
+  [Yuvarlak Kenarlı Kutular]: http://fatihhayrioglu.com/yuvarlak-kenarli-kutular/
+  [Yuvarlak kenarlı kutular(border-radius) oluşturmak]: http://fatihhayrioglu.com/yuvarlak-kenarli-kutularborder-radius-olusturmak/
   [1]: https://lh4.googleusercontent.com/23SRG-1WKRPSijX0GVloqxvgBzLJFRxuUbVjkU36hzGacLp5Y5zz6AxULdUJdl3zrKnFODcY7O4NNURxY7BGChNRa52LUeYt1Kj9l7AYsBDvejEKcQ
   [tıklayınız.]: /dokumanlar/1px_yuvarlak_kenar_1.html
   [2]: https://lh3.googleusercontent.com/UotpXlc2Cn_hp0o3sQ1EuTg865C-y_R6UpG-vCanTBXjp2pi9cFzaSqTmHyc5sJVVHRooMlaINOMQXkGzA_maIjzAKAVllPjkrcD2o5m6tz3sYAJZQ

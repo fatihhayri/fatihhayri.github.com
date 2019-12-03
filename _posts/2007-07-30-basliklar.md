@@ -148,6 +148,6 @@ bilgi için "[Metin Yerine Resim/FlashEkleme Teknikleri (Image Replacement)][]" 
   [tıklayınız.]: /dokumanlar/baslik_deneme1.html
   [Başlıklar]: /images/basliklar.gif
   [1]: /dokumanlar/baslik_deneme2.html
-  [Metin Yerine Resim/FlashEkleme Teknikleri (Image Replacement)]: http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
+  [Metin Yerine Resim/FlashEkleme Teknikleri (Image Replacement)]: http://fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
   [http://eu.wiley.com/WileyCDA/WileyTitle/productCd-047009754X.html]: http://eu.wiley.com/WileyCDA/WileyTitle/productCd-047009754X.html
   [http://www.sitepoint.com/books/cssdesign1/]: http://www.sitepoint.com/books/cssdesign1/

@@ -117,4 +117,4 @@ Ayrıca min-height için daha kısa bir çözüm vardır
 	}
 
 
-  [<uzunluk değeri >]: http://www.fatihhayrioglu.com/?p=95
+  [<uzunluk değeri >]: http://fatihhayrioglu.com/?p=95

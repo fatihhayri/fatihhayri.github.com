@@ -141,7 +141,7 @@ Kalın sağlıcakla
 -   http://www.webspaceworks.com/resources/fonts-web-typography/43/
 -   [http://www.opera.com/docs/specs/presto27/css/fonts/][]
 -   [http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/][]
--   [http://www.fatihhayrioglu.com/css-ve-tipografi/][]
+-   [http://fatihhayrioglu.com/css-ve-tipografi/][]
 -   [http://brunildo.org/test/xheight.pl][]
 -   [http://www.w3schools.com/cssref/css3_pr_font-stretch.asp][]
 -   [https://developer.mozilla.org/en/CSS/font-stretch][] (font-stretch)
@@ -155,7 +155,7 @@ Kalın sağlıcakla
 -   [http://maxvoltar.com/archive/-Webkit-font-smoothing][]
 -   [http://www.usabilitypost.com/2010/08/26/font-smoothing/][]
 
-  [@font-face kullanımı]: http://www.fatihhayrioglu.com/font-face-kullanimi/
+  [@font-face kullanımı]: http://fatihhayrioglu.com/font-face-kullanimi/
   [100]: https://lh6.googleusercontent.com/YW1f1GQqHZCiepSVsvkodxuovf2J1IIFEtdiaBZw4q2s6oM38friVO4jli_8FedEtou75rN8hzxyxal0ApDp1lYyM0Fgb4i0R3qH8yOWbIcbuoZqLYg
   [http://brunildo.org]: http://brunildo.org
   [1]: https://lh4.googleusercontent.com/aMIBse-JRBvgYWQD0dMw5EFWhV4HCBeSYKeLfJS-6UMGSdHv0YsQiIA60djkovRsZ0dK8zLYak1yxEt6LdGHv4WGE2cagkiMqBlmrPdT1c_zyURGC0g
@@ -172,7 +172,7 @@ Kalın sağlıcakla
   [http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/]: http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/
   [http://www.opera.com/docs/specs/presto27/css/fonts/]: http://www.opera.com/docs/specs/presto27/css/fonts/
   [http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/]: http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/
-  [http://www.fatihhayrioglu.com/css-ve-tipografi/]: http://www.fatihhayrioglu.com/css-ve-tipografi/
+  [http://fatihhayrioglu.com/css-ve-tipografi/]: http://fatihhayrioglu.com/css-ve-tipografi/
   [http://brunildo.org/test/xheight.pl]: http://brunildo.org/test/xheight.pl
   [http://www.w3schools.com/cssref/css3_pr_font-stretch.asp]: http://www.w3schools.com/cssref/css3_pr_font-stretch.asp
   [https://developer.mozilla.org/en/CSS/font-stretch]: https://developer.mozilla.org/en/CSS/font-stretch

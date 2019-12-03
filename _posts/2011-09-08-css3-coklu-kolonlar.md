@@ -405,12 +405,12 @@ Kalın sağlıcakla
 -   [http://zomigi.com/blog/deal-breaker-problems-with-css3-multi-columns/][] (sorunları)
 -   [http://help.dottoro.com/lcxquvkf.php][]
 
-  [Tipografi]: http://www.fatihhayrioglu.com/css-ve-tipografi/
+  [Tipografi]: http://fatihhayrioglu.com/css-ve-tipografi/
   [A List Apart]: http://www.alistapart.com/articles/css3multicolumn
   [Column Script from Michael van Ouwerkerk]: http://13thparallel.com/archive/column-script/
   [Multi-column layout with CSS3 (and some JavaScript)]: http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript
   [Esnek Kutu Planlama Modülü]: http://www.w3.org/TR/css3-flexbox/
-  [Daha önce çok kolonlu menülerde]: http://www.fatihhayrioglu.com/cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/
+  [Daha önce çok kolonlu menülerde]: http://fatihhayrioglu.com/cok-kolonlu-yapilar-ve-cok-kolonlu-menuler/
   [http://www.w3.org/TR/css3-multicol/]: http://www.w3.org/TR/css3-multicol/
   [http://www.vanseodesign.com/css/multi-columns/]: http://www.vanseodesign.com/css/multi-columns/
   [http://css-tricks.com/snippets/css/multiple-columns/]: http://css-tricks.com/snippets/css/multiple-columns/

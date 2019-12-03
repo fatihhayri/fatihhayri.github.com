@@ -217,5 +217,5 @@ Android Browser
 {: .tarayiciuyum}
 
   [display]: #
-  [url]: http://www.fatihhayrioglu.com/?p=95
-  [Block-level elementler]: http://www.fatihhayrioglu.com/?p=13
+  [url]: http://fatihhayrioglu.com/?p=95
+  [Block-level elementler]: http://fatihhayrioglu.com/?p=13

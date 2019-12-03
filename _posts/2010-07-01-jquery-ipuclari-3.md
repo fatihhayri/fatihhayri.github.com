@@ -120,8 +120,8 @@ $("#myselect option:eq(2)").attr("selected", "selected");
 -   [http://tympanus.net/codrops/2010/01/08/some-useful-javascript-jquery-snippets-part-3/][]
 -   [http://www.opensourcehunter.com/2010/02/27/26-cool-and-usefull-jquery-tips-tricks-solutions/][]
 
-  [Jquery ipuçları - 1]: http://www.fatihhayrioglu.com/jquery-ipuclari/
-  [Jquery ipuçları - 2]: http://www.fatihhayrioglu.com/jquery-ipuclari-2/
+  [Jquery ipuçları - 1]: http://fatihhayrioglu.com/jquery-ipuclari/
+  [Jquery ipuçları - 2]: http://fatihhayrioglu.com/jquery-ipuclari-2/
   [Benim renklendirdiğim]: /dokumanlar/jQuery14.htm
   [http://tympanus.net/codrops/2010/01/07/some-useful-javascript-jquery-snippets-part-2/]: http://tympanus.net/codrops/2010/01/07/some-useful-javascript-jquery-snippets-part-2/
   [http://www.catswhocode.com/blog/10-jquery-snippets-for-efficient-developers]: http://www.catswhocode.com/blog/10-jquery-snippets-for-efficient-developers

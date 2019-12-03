@@ -431,8 +431,8 @@ mi ama olmadı.
 -   [http://www.quirksmode.org/blog/archives/2010/08/combining_media.html][]
 -   [http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx][]
 
-  [yazıcıdan çıktı alırken]: http://www.fatihhayrioglu.com/cssde-cikti-alma-print/
-  [Daha önceki makalemde]: http://www.fatihhayrioglu.com/cssi-web-sayfalarina-eklemek/
+  [yazıcıdan çıktı alırken]: http://fatihhayrioglu.com/cssde-cikti-alma-print/
+  [Daha önceki makalemde]: http://fatihhayrioglu.com/cssi-web-sayfalarina-eklemek/
   [100]: https://lh5.googleusercontent.com/9yAALxAE9OnXDazyBZKrx8y8o4r5okr3Qw8TJ6av63m5eB_I6Ap-nCYuglYAcrwBuqpgrCx5vaBTcMLjBiPZM-KdAohf98yMjgErENZ_3A75y8x8
   [https://developer.mozilla.org/en/CSS/media_queries]: https://developer.mozilla.org/en/CSS/media_queries
   [http://protofunc.com/scripts/jquery/mediaqueries/]: http://protofunc.com/scripts/jquery/mediaqueries/

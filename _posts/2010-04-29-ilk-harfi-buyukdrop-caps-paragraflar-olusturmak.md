@@ -258,7 +258,7 @@ p:first-child:first-letter{
   [100]: /images/drop_caps_01.gif
   [1]: /images/drop_caps_02.gif
   [2]: /images/drop_caps_03.gif
-  [font-face]: http://www.fatihhayrioglu.com/font-face-kullanimi/
+  [font-face]: http://fatihhayrioglu.com/font-face-kullanimi/
   [http://www.fontsquirrel.com/fontface]: http://www.fontsquirrel.com/fontface
   [3]: /dokumanlar/ilk_harf_buyuk/ilk_harf_buyuk2.html
   [4]: /images/drop_caps_04.gif

@@ -195,7 +195,7 @@ Opera Mobile
 Android Browser
 {: .tarayiciuyum}
 
-  [Box modellerine]: http://www.fatihhayrioglu.com/?p=13
+  [Box modellerine]: http://fatihhayrioglu.com/?p=13
   [Kutu Modeli]: /images/basit_boxmodel.gif
-  [<uzunluk değeri >]: http://www.fatihhayrioglu.com/?p=95
+  [<uzunluk değeri >]: http://fatihhayrioglu.com/?p=95
   [<percentage>]: #

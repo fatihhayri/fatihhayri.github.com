@@ -529,9 +529,9 @@ Kalın sağlıcakla
 -   [http://coding.smashingmagazine.com/2011/09/19/css3-flexible-box-layout-explained/][]
 
 
-  [Tablo mu? Div mi? Karmaşasına Son Noktayı HTML5 koydu]: http://www.fatihhayrioglu.com/tablo-mu-div-mi-karmasasina-son-noktayi-html5-koydu/
+  [Tablo mu? Div mi? Karmaşasına Son Noktayı HTML5 koydu]: http://fatihhayrioglu.com/tablo-mu-div-mi-karmasasina-son-noktayi-html5-koydu/
   [Raphael Goetter]: http://www.ie7nomore.com/fun/flexiblenav/
-  [Çoklu Kolonlar(Multiple Column)]: http://www.fatihhayrioglu.com/css3-coklu-kolonlar/
+  [Çoklu Kolonlar(Multiple Column)]: http://fatihhayrioglu.com/css3-coklu-kolonlar/
   [Izgara Yerleşim Modeli(Grid Layout)]: http://dev.w3.org/csswg/css3-grid-align/
   [Şablon Yerleşim Modeli(Template Layout Model)]: http://www.w3.org/TR/css3-layout/
   [CSS Exclusions Module]: http://dev.w3.org/csswg/css3-exclusions/

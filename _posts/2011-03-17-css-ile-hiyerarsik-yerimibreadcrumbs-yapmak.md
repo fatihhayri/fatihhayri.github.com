@@ -199,7 +199,7 @@ ul#yerimi li a:hover {
   [http://www.ligonier.org/rym/]: http://www.ligonier.org/rym/
   [4]: https://lh4.googleusercontent.com/75rWf8zu_B2K74XYemzIurOBOa77xi2G_T_GURm84FGlxDl0ggS_n_YBhPy1G7lsByC_ukLT-w_B4EE3qRFYL1UupuMb9OHAA30dgiCV1A_1nTV-8es
   [http://www.ideo.com]: http://www.ideo.com/
-  [Float Uygulanmış Elementleri Tam Kapsayamama (clearfix) sorunu]: http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/
+  [Float Uygulanmış Elementleri Tam Kapsayamama (clearfix) sorunu]: http://fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/
   [tıklayınız.]: /dokumanlar/yerimi/yerimi.html
   [5]: https://lh3.googleusercontent.com/OjH1IANl7PK66MMTvt58TUuh-jpAteN0eNeRmErj7ndN5bceqRpoxyqz1gox1LsEFUkX3vw4Qh7hISY0C3yuCTJkY4nFIi8hVtPnj8Oqo-U2zeGyabs
   [http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/]: http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/

@@ -111,7 +111,7 @@ birde important tanımı bulunuyorsa, aynı özellik iki kere tanımlandı ise
 bu importantlı tanımı ie6 uygulamıyor. Bunu ie6 hack için
 kullanılabilir. Bunu ie6 hack için kullanılabilir. Zamanında bir yazıda
 yazmıştım bu konuda
-[http://www.fatihhayrioglu.com/css-de-kodumuzu-ieden-gizleme/][] Aslında
+[http://fatihhayrioglu.com/css-de-kodumuzu-ieden-gizleme/][] Aslında
 burada ie6’nın bir sorununu avantaja çevirmiş oluyoruz.
 
 ## Satıriçi kodları Ezmek için important kullanımı
@@ -160,15 +160,15 @@ okunaksız hale getirebilir, buna dikkat etmek gerekir.
 -   friendfeed.com/arayuz-gelistiriciler/
 
   friendfeed.com/arayuz-gelistiriciler/120084de/css-yazarken-ustten-gelen-degerleri-ezmek-icin
-  [CSS’de Tanımlamalar ve Etkinlikleri(Specificity)]: http://www.fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity/
+  [CSS’de Tanımlamalar ve Etkinlikleri(Specificity)]: http://fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity/
   [tıklayınız.]: /dokumanlar/important_kullanimi.html
   [100]: https://lh3.googleusercontent.com/Dnco6jKWpezF_20xMVvlddnRWHtrZp8qUbfziW1cBRUBlGc8ep3trPV1SgOgPyU7mS4ltgeqmdotsuVLbtwBwvLyhAPmKGfpLYvM_qeSH2JNSCFgEA
   [1]: /images/important_firebug.gif
   [2]: /dokumanlar/important_kullanimi2.html
   [3]: /dokumanlar/important_kullanimi3.html
   [4]: https://lh4.googleusercontent.com/k4feQBZhKIgAEdx-nVS7HLKHhYCjBboutU5CxKoI_sxdt53CUgH98KJB0fXzcpVbDbrEq3-y9Bi8Mxbo_nkBEPFhfhY-fxVKdVS13qJnykWupm4qOg
-  [http://www.fatihhayrioglu.com/css-de-kodumuzu-ieden-gizleme/]: http://www.fatihhayrioglu.com/css-de-kodumuzu-ieden-gizleme/
-  [Fatih Turan]: http://www.fatihturan.com/
+  [http://fatihhayrioglu.com/css-de-kodumuzu-ieden-gizleme/]: http://fatihhayrioglu.com/css-de-kodumuzu-ieden-gizleme/
+  [Fatih Turan]: http://fatihturan.com/
   [http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/]: http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/
   [http://www.electrictoolbox.com/using-important-css/]: http://www.electrictoolbox.com/using-important-css/
   [http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml]: http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml

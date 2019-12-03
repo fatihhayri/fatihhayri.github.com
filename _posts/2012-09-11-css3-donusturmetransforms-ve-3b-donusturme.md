@@ -453,7 +453,7 @@ Android Browser 3.0+ (-webkit- öneki ile)
 -   [http://desandro.github.com/3dtransforms/docs/perspective.html][]
 -   [http://caniuse.com/#feat=transforms3d][]
 
-  [2 Boyutlu Dönüştürme özelliklerini]: http://www.fatihhayrioglu.com/css3-donusturme-ozellikleritransforms-ve-2b-donusturme/
+  [2 Boyutlu Dönüştürme özelliklerini]: http://fatihhayrioglu.com/css3-donusturme-ozellikleritransforms-ve-2b-donusturme/
   [50]: https://lh5.googleusercontent.com/FqOtVg0Y4BZkUpShrSu1wFcWannArGxh5edEiR-5YkTQQJbH_wPcaUFB5rb7AgazIxwKBc89hLsxobUZad1lQ9LuznL0eg9F_KXIdAMQEsGxFioDs0o
   [http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-style.html]: http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-style.html
   [nesnelerin]: http://tr.wikipedia.org/wiki/Nesne

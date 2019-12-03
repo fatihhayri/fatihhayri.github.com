@@ -239,7 +239,7 @@ Hoşçakalın.
 -   http://www.gotoandlearn.com/play?id=77
 
 
-  [İnternet Explorer'ın ActiveX güncellemesi sonrası]: http://www.fatihhayrioglu.com/internet-explorer-activex-guncelmesi-ve-sonrasinda-flashswf-kullanilan-sayfalardaki-sorunlar/
+  [İnternet Explorer'ın ActiveX güncellemesi sonrası]: http://fatihhayrioglu.com/internet-explorer-activex-guncelmesi-ve-sonrasinda-flashswf-kullanilan-sayfalardaki-sorunlar/
   [Microsoft'un Eolas ile lisans sorunları]: http://www.baekdal.com/articles/technology/microsoft-ie-activex-update/
   [Google Code]: http://code.google.com/p/swfobject/
   [tıklayınız]: http://code.google.com/p/swfobject/wiki/documentation

@@ -22,4 +22,4 @@ aktif ettim. Artık çöp yorum gelmiyor yaşasın.
 
   [Peter's Custom Anti-Spam Image Plugin for Wordpress]: http://www.theblog.ca/?p=21
   [Crimson editor]: http://www.crimsoneditor.com/
-  [Türkçe karakter sorunun]: http://www.fatihhayrioglu.com/?p=12
+  [Türkçe karakter sorunun]: http://fatihhayrioglu.com/?p=12

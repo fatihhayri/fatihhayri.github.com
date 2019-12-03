@@ -65,7 +65,7 @@ Ben tasarıma uymak için background'a resim tanımlayarak sorunu aştım.
 
 ## Kaynak
 
-  [ie7 gibi yorumlama kodunu]: http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
+  [ie7 gibi yorumlama kodunu]: http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
   [tıklayınız.]: /dokumanlar/ie8_popupmenu_input_sorunu.html
   [100]: /images/ie8_sorunu.gif
     "ie8_sorunu"

@@ -15,4 +15,4 @@ imkanlar nispetinde 2. kitapta çıkacaktır. Kitabı ve kaynak dosyalarını
 indirmek için [tıklayınız.][]
 
   [CSS'e başlamak]: /images/css_kitap.gif
-  [tıklayınız.]: http://www.fatihhayrioglu.com/?page_id=461
+  [tıklayınız.]: http://fatihhayrioglu.com/?page_id=461

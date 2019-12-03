@@ -350,7 +350,7 @@ Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](https://fatihhayrioglu.
   [CSS ile Web Sayfası Oluşturma II]: /css-ile-web-sayfasi-olusturma-ii/
   [CSS ile Web Sayfası Oluşturma III]: /css-ile-web-sayfasi-olusturma-iii/
   [%100 Genişlik ve %100 Yükseklite Sayfa İskeleti Hazırlama]: /100-genislik-ve-100-yukseklite-sayfa-iskeleti-hazirlama/
-  [Genişlik ve Yüksekliğin Sınırlarını Belirlemek(min-width, min-height,max-width, max-height)]: htttp://www.fatihhayrioglu.com/min-width-min-heightmax-width-max-height/
+  [Genişlik ve Yüksekliğin Sınırlarını Belirlemek(min-width, min-height,max-width, max-height)]: htttp://fatihhayrioglu.com/min-width-min-heightmax-width-max-height/
   [Yuvarlak Kenarlı Kutular]: /yuvarlak-kenarli-kutular/
   [CSS ile Menü Yapmak I - Dikey Menüler]: /css-ile-menu-yapmak/
   [CSS ile Menü Yapmak II - Yatay Menüler]: /css-ile-menu-olusturmak-ii/

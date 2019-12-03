@@ -117,16 +117,16 @@ https://developer.mozilla.org/en/DOM/window.onhashchange
 -   inline-block özelliğini sorunsuz kullanacağız artık.
     **display:inline-block** tanımını kullanımında ie6 ve ie7 için
     ayrıca düzeltme kodu yazıyorduk, artık buna gerek kalmadı.
-    [http://www.fatihhayrioglu.com/super-bir-ozellik-displayinline-block/][]
+    [http://fatihhayrioglu.com/super-bir-ozellik-displayinline-block/][]
 -   eksi margin sorunları için çözüm üretmeye son.
-    [http://www.fatihhayrioglu.com/eksi-margin-kullanimi/][]
+    [http://fatihhayrioglu.com/eksi-margin-kullanimi/][]
 -   **display:table** desteği artık var. Dikey ortalamada fazladan
     yazdığımız kodlara son.
-    [http://www.fatihhayrioglu.com/genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/][]
+    [http://fatihhayrioglu.com/genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/][]
 -   ie7 z-index sorunlarının sonu
-    [http://www.fatihhayrioglu.com/z-index/][]
+    [http://fatihhayrioglu.com/z-index/][]
 -   ilk harfi büyük göstermede artık sorun yaşamayacağız
-    [http://www.fatihhayrioglu.com/ilk-harfi-buyukdrop-caps-paragraflar-olusturmak/][]
+    [http://fatihhayrioglu.com/ilk-harfi-buyukdrop-caps-paragraflar-olusturmak/][]
 -   lang seçici desteği atrık var.
 -   [Float Uygulanmış Elementleri Tam Kapsayamama Sorunu][] için artık
     sadece **:after**ile çözüm yeterli olacak.
@@ -195,8 +195,8 @@ sitelerden kaldırmayı unutmayın.
 -   [http://css-tricks.com/browser-support-pseudo-elements/][]
 -   [http://share.ez.no/forums/general/browser-support-no-support-for-ie7][]
 -   [http://www.netmagazine.com/news/google-apps-ditches-support-ie7][]
--   [http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/][]
--   [http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/][]
+-   [http://fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/][]
+-   [http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/][]
 -   msdn.microsoft.com/en-us/library/cc304082(VS.85).aspx
 -   http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html
 -   [http://www.nuricankaya.com/default.asp?gunluk_id=407][] (ie8
@@ -221,32 +221,32 @@ sitelerden kaldırmayı unutmayın.
 -   [http://caniuse.com/#compare=y&b1=ie+7&b2=ie+8][]
 
 
-  [“IE6 Sonrası Kod Yazma Alışkanlıklarımızı Güncellemek”]: http://www.fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/
+  [“IE6 Sonrası Kod Yazma Alışkanlıklarımızı Güncellemek”]: http://fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/
   [100]: https://lh4.googleusercontent.com/w0y8NKzSAkoVYSxwu3S_dL-6YFeEdqa8zYEjbgLRZ5_vx_AdB9ZtGweRi3h7Hi9s3PqDJ-qdcR4DKWo8ydjWA2zQC15AWhSnFLcrgZlhP-sg0A5LdhY
   [http://blogs.msdn.com/b/ie/]: http://blogs.msdn.com/b/ie/
-  [hasLayout sorunları]: http://www.fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/
+  [hasLayout sorunları]: http://fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/
   [Murat Çorlu]: https://twitter.com/#!/muratcorlu
   [querySelector()]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
   [querySelectorAll()]: https://developer.mozilla.org/en/DOM/element.querySelectorAll
-  [tıklayınız.]: http://www.fatihhayrioglu.com/css3-box-sizing-ozelligi/
-  [font-weight]: http://www.fatihhayrioglu.com/font-ozellikleri/
-  [white-space]: http://www.fatihhayrioglu.com/css-siniflandirma-liste-ozellikleri/
-  [word-spacing]: http://www.fatihhayrioglu.com/cssde-metintext-ozellikleri/
-  [http://www.fatihhayrioglu.com/super-bir-ozellik-displayinline-block/]: http://www.fatihhayrioglu.com/super-bir-ozellik-displayinline-block/
-  [http://www.fatihhayrioglu.com/eksi-margin-kullanimi/]: http://www.fatihhayrioglu.com/eksi-margin-kullanimi/
-  [http://www.fatihhayrioglu.com/genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/]: http://www.fatihhayrioglu.com/genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/
-  [http://www.fatihhayrioglu.com/z-index/]: http://www.fatihhayrioglu.com/z-index/
-  [http://www.fatihhayrioglu.com/ilk-harfi-buyukdrop-caps-paragraflar-olusturmak/]: http://www.fatihhayrioglu.com/ilk-harfi-buyukdrop-caps-paragraflar-olusturmak/
-  [Float Uygulanmış Elementleri Tam Kapsayamama Sorunu]: http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/
-  [Tablo Satırına Verilen Ardalan Resminin Tekrarlama Sorunu]: http://www.fatihhayrioglu.com/tablo-satirina-verilen-ardalan-resminin-tekrarlama-sorunu/
-  [İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak]: http://www.fatihhayrioglu.com/internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/
-  [İnternet Explorer’da sağdaki sabit kaydırma çubuğunu kaldırmak sorunu]: http://www.fatihhayrioglu.com/internet-explorerda-sagdaki-sabit-kaydirma-cubugunu-kaldirmak/
-  [ie6/7′da postion:relative Uygulanmış Elemanlarda z-index Sorunu]: http://www.fatihhayrioglu.com/ie67da-postionrelative-uygulanmis-elemanlarda-z-index-sorunu/
-  [overflow ve position:relative kullanımında ie sorunu]: http://www.fatihhayrioglu.com/overflow-ve-positionrelative-kullaniminda-ie-sorunu/
-  [IE6 ve IE7′de bağlantılardaki cursor sorunu]: http://www.fatihhayrioglu.com/ie6-ve-ie7de-baglantilardaki-cursor-sorunu/
-  [overflow:auto içinde %100 genişlikte tablo kullanımında ie7’de yatay kaydırma çubuğu sorunu]: http://www.fatihhayrioglu.com/overflowauto-icinde-genislikte-tablo-kullaniminda-ie7de-yatay-kaydirma-cubugu-sorunu/
-  [İE7 Bitişik Kardeş Seçicisi Sorunu]: http://www.fatihhayrioglu.com/ie7-bitisik-kardes-secicisi-sorunu/
-  [Kenar Boşluğu(Margin) Çökmesi]: http://www.fatihhayrioglu.com/kenar-boslugumargin-cokmesi/
+  [tıklayınız.]: http://fatihhayrioglu.com/css3-box-sizing-ozelligi/
+  [font-weight]: http://fatihhayrioglu.com/font-ozellikleri/
+  [white-space]: http://fatihhayrioglu.com/css-siniflandirma-liste-ozellikleri/
+  [word-spacing]: http://fatihhayrioglu.com/cssde-metintext-ozellikleri/
+  [http://fatihhayrioglu.com/super-bir-ozellik-displayinline-block/]: http://fatihhayrioglu.com/super-bir-ozellik-displayinline-block/
+  [http://fatihhayrioglu.com/eksi-margin-kullanimi/]: http://fatihhayrioglu.com/eksi-margin-kullanimi/
+  [http://fatihhayrioglu.com/genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/]: http://fatihhayrioglu.com/genisligi-belli-olmayan-blok-level-elemanlari-yatayda-ortalamak/
+  [http://fatihhayrioglu.com/z-index/]: http://fatihhayrioglu.com/z-index/
+  [http://fatihhayrioglu.com/ilk-harfi-buyukdrop-caps-paragraflar-olusturmak/]: http://fatihhayrioglu.com/ilk-harfi-buyukdrop-caps-paragraflar-olusturmak/
+  [Float Uygulanmış Elementleri Tam Kapsayamama Sorunu]: http://fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/
+  [Tablo Satırına Verilen Ardalan Resminin Tekrarlama Sorunu]: http://fatihhayrioglu.com/tablo-satirina-verilen-ardalan-resminin-tekrarlama-sorunu/
+  [İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak]: http://fatihhayrioglu.com/internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/
+  [İnternet Explorer’da sağdaki sabit kaydırma çubuğunu kaldırmak sorunu]: http://fatihhayrioglu.com/internet-explorerda-sagdaki-sabit-kaydirma-cubugunu-kaldirmak/
+  [ie6/7′da postion:relative Uygulanmış Elemanlarda z-index Sorunu]: http://fatihhayrioglu.com/ie67da-postionrelative-uygulanmis-elemanlarda-z-index-sorunu/
+  [overflow ve position:relative kullanımında ie sorunu]: http://fatihhayrioglu.com/overflow-ve-positionrelative-kullaniminda-ie-sorunu/
+  [IE6 ve IE7′de bağlantılardaki cursor sorunu]: http://fatihhayrioglu.com/ie6-ve-ie7de-baglantilardaki-cursor-sorunu/
+  [overflow:auto içinde %100 genişlikte tablo kullanımında ie7’de yatay kaydırma çubuğu sorunu]: http://fatihhayrioglu.com/overflowauto-icinde-genislikte-tablo-kullaniminda-ie7de-yatay-kaydirma-cubugu-sorunu/
+  [İE7 Bitişik Kardeş Seçicisi Sorunu]: http://fatihhayrioglu.com/ie7-bitisik-kardes-secicisi-sorunu/
+  [Kenar Boşluğu(Margin) Çökmesi]: http://fatihhayrioglu.com/kenar-boslugumargin-cokmesi/
   [border:hidden]: http://test.csswg.org/suites/css2.1/20110111/html4/border-conflict-w-001.htm
   [border-style outset renk farklılığı sorunu]: http://test.csswg.org/suites/css2.1/20110111/html4/border-conflict-w-006.htm
   [http://www.quirksmode.org/css/position.html]: http://www.quirksmode.org/css/position.html
@@ -254,7 +254,7 @@ sitelerden kaldırmayı unutmayın.
   [http://www.quirksmode.org/css/tables.html]: http://www.quirksmode.org/css/tables.html
   [http://ajaxian.com/archives/display-table]: http://ajaxian.com/archives/display-table
   [sahibinden.com]: http://sahibinden.com/
-  [Internet Explorer 8′i 7 gibi yorumlama kodu]: http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
+  [Internet Explorer 8′i 7 gibi yorumlama kodu]: http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
   [http://blogs.msdn.com/b/ie/archive/2008/03.aspx]: http://blogs.msdn.com/b/ie/archive/2008/03.aspx
   [http://blogs.msdn.com/b/ie/archive/2008/03/07/internet-explorer-8-beta-1-for-developers-standards-highlights.aspx]: http://blogs.msdn.com/b/ie/archive/2008/03/07/internet-explorer-8-beta-1-for-developers-standards-highlights.aspx
   [http://blogs.msdn.com/b/ie/archive/2008/07.aspx]: http://blogs.msdn.com/b/ie/archive/2008/07.aspx
@@ -268,8 +268,8 @@ sitelerden kaldırmayı unutmayın.
   [http://css-tricks.com/browser-support-pseudo-elements/]: http://css-tricks.com/browser-support-pseudo-elements/
   [http://share.ez.no/forums/general/browser-support-no-support-for-ie7]: http://share.ez.no/forums/general/browser-support-no-support-for-ie7
   [http://www.netmagazine.com/news/google-apps-ditches-support-ie7]: http://www.netmagazine.com/news/google-apps-ditches-support-ie7
-  [http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/]: http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/
-  [http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/]: http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/
+  [http://fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/]: http://fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/
+  [http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/]: http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/
   [http://www.nuricankaya.com/default.asp?gunluk_id=407]: http://www.nuricankaya.com/default.asp?gunluk_id=407
   [http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html]: http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html
   [http://ejohn.org/blog/javascript-in-internet-explorer-8/]: http://ejohn.org/blog/javascript-in-internet-explorer-8/

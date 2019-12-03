@@ -264,7 +264,7 @@ Kalın sağlıcakla
 -   [http://sixrevisions.com/resources/git-tutorials-beginners/][]
 -   [http://ss64.com/osx/][]
 
-  [Sürüm Kontrol Sistemi Git]: http://www.fatihhayrioglu.com/surum-kontrol-sistemi-git/
+  [Sürüm Kontrol Sistemi Git]: http://fatihhayrioglu.com/surum-kontrol-sistemi-git/
   [100]: /images/terminal-300x187.png "terminal"
   [http://ss64.com/osx/]: http://ss64.com/osx/
   [http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/]: http://tybarts.wordpress.com/2011/05/07/git-global-config-dosyasini-ayarlamak/

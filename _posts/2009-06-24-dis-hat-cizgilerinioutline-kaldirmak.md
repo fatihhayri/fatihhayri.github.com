@@ -23,8 +23,8 @@ yerine resim koyma metotlarınında etkisi var. Aşağıda benimde
 kullandığım metin yerine resim koyma metodunu kullanarak yaptığım
 örnekler.
 
--   [http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/][]
--   [http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/][]
+-   [http://fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/][]
+-   [http://fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/][]
 -   [/dokumanlar/basit_resimli_menu.html][]
 
 text-indent:-9999px  ile görünmez yaptığımız metinleri outline ile
@@ -117,7 +117,7 @@ ulaşabiliriz. 
 
 Sonuçta her iki görüşü savunanlar için bir çözüm üretmeye çalışırsak;
 
-[http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/][]
+[http://fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/][]
 makalesinde anlattığımı örnek üzerinden devam edelim. 
 
 ![][100]
@@ -189,12 +189,12 @@ sonunda örneğimiz ie de de çalışacaktır.
 -   [http://www.maratz.com/blog/archives/2006/01/20/outline-property-for-image-replaced-link/][]
 -   http://diveintomark.org/archives/2006/04/25/new-focus-indicator
 
-  [dış hat çizgisi özellikleri]: http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
+  [dış hat çizgisi özellikleri]: http://fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
     "dış hat çizgisi özellikleri"
-  [http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/]: http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/
-    "http://www.fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/"
-  [http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/]: http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/
-    "http://www.fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/"
+  [http://fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/]: http://fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/
+    "http://fatihhayrioglu.com/css-ile-basit-sekilde-fare-uzerine-gelincerollover-resim-degisimi-yapmak/"
+  [http://fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/]: http://fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/
+    "http://fatihhayrioglu.com/css-ile-menu-olusturmak-v-resimli-menuler/"
   [/dokumanlar/basit_resimli_menu.html]: /dokumanlar/basit_resimli_menu.html
     "/dokumanlar/basit_resimli_menu.html"
   [outline çizgileri]: /images/outline_cizgi.gif

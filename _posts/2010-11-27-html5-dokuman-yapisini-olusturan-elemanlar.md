@@ -171,7 +171,7 @@ Sonuç olarak bir HTML5 basit yapısı
 -   http://boblet.tumblr.com/post/141239118/html5-structure4
 
 
-  [Doğru DOCTYPE Kullanımı]: http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/
+  [Doğru DOCTYPE Kullanımı]: http://fatihhayrioglu.com/dogru-doctype-kullanimi/
   [http://www.w3.org/1999/xhtml]: http://www.w3.org/1999/xhtml
   [http://www.w3schools.com/tags/tag_doctype.asp]: http://www.w3schools.com/tags/tag_doctype.asp
   [http://diveintohtml5.org/semantics.html]: http://diveintohtml5.org/semantics.html

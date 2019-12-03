@@ -67,7 +67,7 @@ biçilmiş kaftan :not seçicisi
 
 ## 5- siblings seçicisi** liste ve benzeri aynı seviyedeki elemanlar
 üzerinde etkileşimli erişim sağlayan güzel bir seçici. Daha önce
-http://www.fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/ anlatırken
+http://fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/ anlatırken
 kullanmıştım.
 
 {% highlight javascript %}

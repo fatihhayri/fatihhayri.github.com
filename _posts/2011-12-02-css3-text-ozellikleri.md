@@ -350,7 +350,7 @@ Kalın sağlıcakla.
 -   [http://www.impressivewebs.com/css-white-space/][]
 -   [http://www.quirksmode.org/css/stroke.html][]
 -   [http://www.impressivewebs.com/word-wrap-css3/][]
--   [http://www.fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover][]
+-   [http://fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover][]
 -   [http://webdesignerwall.com/tutorials/word-wrap-force-text-to-wrap][]
 -   [https://developer.mozilla.org/en/CSS/text-align][]
 -   [https://developer.mozilla.org/en/CSS/text-overflow][]
@@ -380,7 +380,7 @@ Kalın sağlıcakla.
   [http://code.stephenmorley.org/html-and-css/white-space-handling/]: http://code.stephenmorley.org/html-and-css/white-space-handling/
   [http://www.impressivewebs.com/css-white-space/]: http://www.impressivewebs.com/css-white-space/
   [http://www.quirksmode.org/css/stroke.html]: http://www.quirksmode.org/css/stroke.html
-  [http://www.fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover]: http://www.fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover
+  [http://fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover]: http://fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover
   [http://webdesignerwall.com/tutorials/word-wrap-force-text-to-wrap]: http://webdesignerwall.com/tutorials/word-wrap-force-text-to-wrap
   [https://developer.mozilla.org/en/CSS/text-align]: https://developer.mozilla.org/en/CSS/text-align
   [http://www.456bereastreet.com/archive/201105/clipping_text_with_css3_text-overflow/]: http://www.456bereastreet.com/archive/201105/clipping_text_with_css3_text-overflow/

@@ -62,7 +62,7 @@ div{
 -   [http://stackoverflow.com/questions/3268834/css-gradient-height-for-ie][]
 -   [http://stackoverflow.com/questions/213750/gradient-colors-in-internet-explorer][]
 
-  [box-shadow özelliğini]: http://www.fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/
+  [box-shadow özelliğini]: http://fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/
   [http://www.colorzilla.com/gradient-editor/]: http://www.colorzilla.com/gradient-editor/
   [http://stackoverflow.com/questions/3268834/css-gradient-height-for-ie]: http://stackoverflow.com/questions/3268834/css-gradient-height-for-ie
   [http://stackoverflow.com/questions/213750/gradient-colors-in-internet-explorer]: http://stackoverflow.com/questions/213750/gradient-colors-in-internet-explorer

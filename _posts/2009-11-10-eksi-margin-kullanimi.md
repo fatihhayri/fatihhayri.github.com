@@ -575,8 +575,8 @@ uygulamamızda eksi margin'i kullanmaya devam edeceğiz.
   [10]: /dokumanlar/eksi_deger_icice_float4.html
   [float_eksimargin_icice4]: /images/float_eksimargin_icice4.gif
     "float_eksimargin_icice4"
-  [Konumlandırma(positioning) kullanılan elementlerin negatif margin ile   ortalanması]: http://www.fatihhayrioglu.com/css-ile-sayfalarimizi-ve-elementlerimizi-ortalamak/
-  [CSS ile gölge vermek]: http://www.fatihhayrioglu.com/css-ile-golge-vermek/
+  [Konumlandırma(positioning) kullanılan elementlerin negatif margin ile   ortalanması]: http://fatihhayrioglu.com/css-ile-sayfalarimizi-ve-elementlerimizi-ortalamak/
+  [CSS ile gölge vermek]: http://fatihhayrioglu.com/css-ile-golge-vermek/
   [http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/]: http://www.smashingmagazine.com/2009/07/27/the-definitive-guide-to-using-negative-margins/
   [http://www.brunildo.org/test/NegMOutH.html]: http://www.brunildo.org/test/NegMOutH.html
   [http://csscreator.com/node/1703]: http://csscreator.com/node/1703

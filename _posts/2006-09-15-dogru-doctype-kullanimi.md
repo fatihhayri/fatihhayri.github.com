@@ -118,6 +118,6 @@ anlatmaya çalıştık. Bir çok HTML ediötürü DOCTYPE taınımını otomatik
 ekleyecektir.
 
   [http://validator.w3.org/]: http://validator.w3.org/
-  [tıklayınız]: http://www.fatihhayrioglu.com/?p=146
-  [Kutu Modeli]: http://www.fatihhayrioglu.com/?p=13
+  [tıklayınız]: http://fatihhayrioglu.com/?p=146
+  [Kutu Modeli]: http://fatihhayrioglu.com/?p=13
   [http://www.ericmeyeroncss.com/bonus/render-mode.html]: http://www.ericmeyeroncss.com/bonus/render-mode.html

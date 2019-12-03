@@ -149,91 +149,91 @@ Geçen seneyi değerlendirirsem. Genel manada pek verimli bir sene olmadı.
     senelik bir isteğin sonucunda sene sonunda anca çıkarabildim. Devamı
     2010'da gelecek.
 
-  [Kuleli 1919 – Şeref Tipi]: http://www.fatihhayrioglu.com/kuleli-1919-seref-tipi/
+  [Kuleli 1919 – Şeref Tipi]: http://fatihhayrioglu.com/kuleli-1919-seref-tipi/
     "Kuleli 1919 – Şeref Tipi"
-  [sIFR, Flash Player10 ve Firefox sorunu]: http://www.fatihhayrioglu.com/sifr-flash-palyer10-ve-firefox-sorunu/
+  [sIFR, Flash Player10 ve Firefox sorunu]: http://fatihhayrioglu.com/sifr-flash-palyer10-ve-firefox-sorunu/
     "sIFR, Flash Player10 ve Firefox sorunu"
-  [Operasyon Ergenekon – Şamil Tayyar]: http://www.fatihhayrioglu.com/operasyon-ergenekon-samil-tayyar/
+  [Operasyon Ergenekon – Şamil Tayyar]: http://fatihhayrioglu.com/operasyon-ergenekon-samil-tayyar/
     "Operasyon Ergenekon – Şamil Tayyar"
-  [WordPress 2.7′ye geçtikten sonraki sorunlarım – 1]: http://www.fatihhayrioglu.com/wordpress-27ye-gectikten-sonraki-sorunlarim-1/
+  [WordPress 2.7′ye geçtikten sonraki sorunlarım – 1]: http://fatihhayrioglu.com/wordpress-27ye-gectikten-sonraki-sorunlarim-1/
     "WordPress 2.7′ye geçtikten sonraki sorunlarım – 1"
-  [Windows Vista / Windows Defender Güncellemesindeki Sorunu ve Çözümü]: http://www.fatihhayrioglu.com/windows-vista-windows-defender-guncellemesindeki-sorunu-ve-cozumu/
+  [Windows Vista / Windows Defender Güncellemesindeki Sorunu ve Çözümü]: http://fatihhayrioglu.com/windows-vista-windows-defender-guncellemesindeki-sorunu-ve-cozumu/
     "Windows Vista / Windows Defender Güncellemesindeki Sorunu ve Çözümü"
-  [Şâh-ı Cihan Fatih Sultan Mehmed Han – Ahmet Çoşkun]: http://www.fatihhayrioglu.com/sah-i-cihan-fatih-sultan-mehmed-han-ahmet-coskun/
+  [Şâh-ı Cihan Fatih Sultan Mehmed Han – Ahmet Çoşkun]: http://fatihhayrioglu.com/sah-i-cihan-fatih-sultan-mehmed-han-ahmet-coskun/
     "Şâh-ı Cihan Fatih Sultan Mehmed Han – Ahmet Çoşkun"
-  [Float Uygulanmış Elementleri Tam Kapsayamama Sorunu İpuçları]: http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu-ipuclari/
+  [Float Uygulanmış Elementleri Tam Kapsayamama Sorunu İpuçları]: http://fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu-ipuclari/
     "Float Uygulanmış Elementleri Tam Kapsayamama Sorunu İpuçları"
-  [CSS İpucu 18: Optimizasyon İçin CSS Medya Dosyalarını Birleştirmek]: http://www.fatihhayrioglu.com/optimizasyon-icin-css-medya-dosyalarini-birlestirmek/
+  [CSS İpucu 18: Optimizasyon İçin CSS Medya Dosyalarını Birleştirmek]: http://fatihhayrioglu.com/optimizasyon-icin-css-medya-dosyalarini-birlestirmek/
     "CSS İpucu 18: Optimizasyon İçin CSS Medya Dosyalarını Birleştirmek"
-  [CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)]: http://www.fatihhayrioglu.com//css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlik/
+  [CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)]: http://fatihhayrioglu.com//css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlik/
     "CSS İpucu 19: Tüm Tarayıcılar İçin CSS İle Saydamlık(Opacity)"
-  [Basit Resimli Menü Yapmak]: http://www.fatihhayrioglu.com/basit-resimli-menu-yapmak/
+  [Basit Resimli Menü Yapmak]: http://fatihhayrioglu.com/basit-resimli-menu-yapmak/
     "Basit Resimli Menü Yapmak"
-  [Internet Explorer 8'in Nihai Sürümü Çıktı]: http://www.fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/
+  [Internet Explorer 8'in Nihai Sürümü Çıktı]: http://fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/
     "Internet Explorer 8′in Nihai Sürümü Çıktı"
-  [Internet Explorer 8'i 7 gibi yorumlama kodu]: http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
+  [Internet Explorer 8'i 7 gibi yorumlama kodu]: http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
     "Internet Explorer 8'i 7 gibi yorumlama kodu"
-  [RSS Adresimi Google'a Taşıdım]: http://www.fatihhayrioglu.com/rss-adresimi-googlea-tasidim/
+  [RSS Adresimi Google'a Taşıdım]: http://fatihhayrioglu.com/rss-adresimi-googlea-tasidim/
     "RSS Adresimi Google'a Taşıdım"
-  [Futbol ve Küreselleşme – Pascal Boniface]: http://www.fatihhayrioglu.com/futbol-ve-kuresellesme-pascal-boniface/
+  [Futbol ve Küreselleşme – Pascal Boniface]: http://fatihhayrioglu.com/futbol-ve-kuresellesme-pascal-boniface/
     "Futbol ve Küreselleşme – Pascal Boniface"
-  [Tablo Satırına Verilen Ardalan Resminin Tekrarlama Sorunu]: http://www.fatihhayrioglu.com/tablo-satirina-verilen-ardalan-resminin-tekrarlama-sorunu/
+  [Tablo Satırına Verilen Ardalan Resminin Tekrarlama Sorunu]: http://fatihhayrioglu.com/tablo-satirina-verilen-ardalan-resminin-tekrarlama-sorunu/
     "Tablo Satırına Verilen Ardalan Resminin Tekrarlama Sorunu"
-  [CSS İpucu 20: Firefox'da Kaydırma Çubuğu Çıkarma]: http://www.fatihhayrioglu.com/css-ipucu-20-firefoxda-kaydirma-cubugu-cikarma/
+  [CSS İpucu 20: Firefox'da Kaydırma Çubuğu Çıkarma]: http://fatihhayrioglu.com/css-ipucu-20-firefoxda-kaydirma-cubugu-cikarma/
     "CSS İpucu 20: Firefox'da Kaydırma Çubuğu Çıkarma"
-  [Sessiz sedasız 3. seneyi aştık]: http://www.fatihhayrioglu.com/sessiz-sedasiz-3-seneyi-astik/
+  [Sessiz sedasız 3. seneyi aştık]: http://fatihhayrioglu.com/sessiz-sedasiz-3-seneyi-astik/
     "Sessiz sedasız 3. seneyi aştık"
-  [Jquery İle IFrame Yüksekliğini İçeriğine Göre Otomatik Ayarlamak]: http://www.fatihhayrioglu.com/jquery-ile-iframe-yuksekligini-icerigine-gore-otomatik-ayarlamak/
+  [Jquery İle IFrame Yüksekliğini İçeriğine Göre Otomatik Ayarlamak]: http://fatihhayrioglu.com/jquery-ile-iframe-yuksekligini-icerigine-gore-otomatik-ayarlamak/
     "Jquery İle IFrame Yüksekliğini İçeriğine Göre Otomatik Ayarlamak"
-  [jQuery ile Basit Sekme Yapımı]: http://www.fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/
+  [jQuery ile Basit Sekme Yapımı]: http://fatihhayrioglu.com/jquery-ile-basit-sekme-yapimi/
     "jQuery ile Basit Sekme Yapımı"
-  [CSS ile sayfalama görselliğini ayarlama]: http://www.fatihhayrioglu.com/css-ile-sayfalama-gorselligini-ayarlama/
+  [CSS ile sayfalama görselliğini ayarlama]: http://fatihhayrioglu.com/css-ile-sayfalama-gorselligini-ayarlama/
     "CSS ile sayfalama görselliğini ayarlama"
-  [CSS İpucu 21: CSS ile Seçilen Metinlerin Rengini Değiştirmek]: http://www.fatihhayrioglu.com/css-ile-secilen-metinlerin-rengini-degistirmek/
+  [CSS İpucu 21: CSS ile Seçilen Metinlerin Rengini Değiştirmek]: http://fatihhayrioglu.com/css-ile-secilen-metinlerin-rengini-degistirmek/
     "CSS İpucu 21: CSS ile Seçilen Metinlerin Rengini Değiştirmek"
-  [CSS Kod Yazma Düzeni]: http://www.fatihhayrioglu.com/css-kod-yazma-duzeni/
+  [CSS Kod Yazma Düzeni]: http://fatihhayrioglu.com/css-kod-yazma-duzeni/
     "CSS Kod Yazma Düzeni"
-  [IE 8 için CSS Düzeltmesi(Hack)]: http://www.fatihhayrioglu.com/ie-8-icin-css-duzeltmesihack/
+  [IE 8 için CSS Düzeltmesi(Hack)]: http://fatihhayrioglu.com/ie-8-icin-css-duzeltmesihack/
     "IE 8 için CSS Düzeltmesi(Hack)"
-  [Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)]: http://www.fatihhayrioglu.com/sayfa-dibine-yapisik-alt-alanlarsticky-footer/
+  [Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)]: http://fatihhayrioglu.com/sayfa-dibine-yapisik-alt-alanlarsticky-footer/
     "Sayfa Dibine Yapışık Alt Alanlar(Sticky Footer)"
-  [CSS ile Ziyaret Edilen Sayfa Bağlantılarına Şekil Vermek]: http://www.fatihhayrioglu.com/css-ile-ziyaret-edilen-sayfa-baglantilarina-sekil-vermek/
+  [CSS ile Ziyaret Edilen Sayfa Bağlantılarına Şekil Vermek]: http://fatihhayrioglu.com/css-ile-ziyaret-edilen-sayfa-baglantilarina-sekil-vermek/
     "CSS ile Ziyaret Edilen Sayfa Bağlantılarına Şekil Vermek"
-  [Windows Vista .net Framework güncelleme sorunu ve çözümü]: http://www.fatihhayrioglu.com/windows-vista-net-framework-guncelleme-sorunu-ve-cozumu/
+  [Windows Vista .net Framework güncelleme sorunu ve çözümü]: http://fatihhayrioglu.com/windows-vista-net-framework-guncelleme-sorunu-ve-cozumu/
     "Windows Vista .net Framework güncelleme sorunu ve çözümü"
-  [Firefox’un Negatif Değerli z-index Desteği]: http://www.fatihhayrioglu.com/firefoxun-negatif-degerli-z-index-destegi/
+  [Firefox’un Negatif Değerli z-index Desteği]: http://fatihhayrioglu.com/firefoxun-negatif-degerli-z-index-destegi/
     "Firefox’un Negatif Değerli z-index Desteği"
-  [Dış hat çizgisi(outline) özellikleri]: http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
+  [Dış hat çizgisi(outline) özellikleri]: http://fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
     "Dış hat çizgisi(outline) özellikleri"
-  [Dış Hat Çizgilerini(outline) Kaldırmak]: http://www.fatihhayrioglu.com/dis-hat-cizgilerinioutline-kaldirmak/
+  [Dış Hat Çizgilerini(outline) Kaldırmak]: http://fatihhayrioglu.com/dis-hat-cizgilerinioutline-kaldirmak/
     "Dış Hat Çizgilerini(outline) Kaldırmak"
-  [Firefox 3.5 çıktı]: http://www.fatihhayrioglu.com/firefox-3-5-cikti/
+  [Firefox 3.5 çıktı]: http://fatihhayrioglu.com/firefox-3-5-cikti/
     "Firefox 3.5 çıktı"
-  [FireBug 1.4 sürümü çıktı]: http://www.fatihhayrioglu.com/firebug-1-4-surumu-cikti/
+  [FireBug 1.4 sürümü çıktı]: http://fatihhayrioglu.com/firebug-1-4-surumu-cikti/
     "FireBug 1.4 sürümü çıktı"
-  [CSS İpucu 22: iPhone için CSS Yazmak]: http://www.fatihhayrioglu.com/css-ipucu-22-iphone-icin-css-yazmak/
+  [CSS İpucu 22: iPhone için CSS Yazmak]: http://fatihhayrioglu.com/css-ipucu-22-iphone-icin-css-yazmak/
     "CSS İpucu 22: iPhone için CSS Yazmak"
-  [Safari ve Chrome'da metin girdi(textbox) alanlarını kenar çizgileri kaldıralım]: http://www.fatihhayrioglu.com/safari-ve-chromeda-metin-girditextbox-alanlarini-kenar-cizgileri-kaldiralim/
+  [Safari ve Chrome'da metin girdi(textbox) alanlarını kenar çizgileri kaldıralım]: http://fatihhayrioglu.com/safari-ve-chromeda-metin-girditextbox-alanlarini-kenar-cizgileri-kaldiralim/
     "Safari ve Chrome'da metin girdi(textbox) alanlarını kenar çizgileri kaldıralım"
-  [iframe virüsü ve Saldırgan Site damgalamasından kurtulmanın yolu]: http://www.fatihhayrioglu.com/iframe-virusu-ve-saldirgan-site-damgalamasindan-kurtulmanin-yolu/
+  [iframe virüsü ve Saldırgan Site damgalamasından kurtulmanın yolu]: http://fatihhayrioglu.com/iframe-virusu-ve-saldirgan-site-damgalamasindan-kurtulmanin-yolu/
     "iframe virüsü ve Saldırgan Site damgalamasından kurtulmanın yolu"
-  [VMware Kurarken “Setup failed to write data to the registry” hatası aldım]: http://www.fatihhayrioglu.com/vmware-kurarken-setup-failed-to-write-data-to-the-registry-hatasi-aldimi/
+  [VMware Kurarken “Setup failed to write data to the registry” hatası aldım]: http://fatihhayrioglu.com/vmware-kurarken-setup-failed-to-write-data-to-the-registry-hatasi-aldimi/
     "VMware Kurarken “Setup failed to write data to the registry” hatası aldım"
-  [İE 6 iki CSS seçicisi Sorunu ve Çözümü]: http://www.fatihhayrioglu.com/ie-6-iki-css-secicisi-sorunu-ve-cozumu/
+  [İE 6 iki CSS seçicisi Sorunu ve Çözümü]: http://fatihhayrioglu.com/ie-6-iki-css-secicisi-sorunu-ve-cozumu/
     "İE 6 iki CSS seçicisi Sorunu ve Çözümü"
-  [İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak]: http://www.fatihhayrioglu.com/internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/
+  [İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak]: http://fatihhayrioglu.com/internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/
     "İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak"
-  [Jquery ipuçları]: http://www.fatihhayrioglu.com/jquery-ipuclari/
+  [Jquery ipuçları]: http://fatihhayrioglu.com/jquery-ipuclari/
     "Jquery ipuçları"
-  [@font-face kullanımı]: http://www.fatihhayrioglu.com/font-face-kullanimi/
+  [@font-face kullanımı]: http://fatihhayrioglu.com/font-face-kullanimi/
     "@font-face kullanımı"
-  [Arayüz Geliştiricilerin Görev Tanımı]: http://www.fatihhayrioglu.com/arayuz-gelistiricilerin-gorev-tanimi/
+  [Arayüz Geliştiricilerin Görev Tanımı]: http://fatihhayrioglu.com/arayuz-gelistiricilerin-gorev-tanimi/
     "Arayüz Geliştiricilerin Görev Tanımı"
-  [Eksi Margin Kullanımı]: http://www.fatihhayrioglu.com/eksi-margin-kullanimi/
+  [Eksi Margin Kullanımı]: http://fatihhayrioglu.com/eksi-margin-kullanimi/
     "Eksi Margin Kullanımı"
-  [CSS Yorumlarında Türkçe Karakter Kullandığımızda İE6′da Sorun Çıkarıyor]: http://www.fatihhayrioglu.com/css-yorumlarinda-turkce-karakter-kullandigimizda-ie6da-sorun-cikariyor/
+  [CSS Yorumlarında Türkçe Karakter Kullandığımızda İE6′da Sorun Çıkarıyor]: http://fatihhayrioglu.com/css-yorumlarinda-turkce-karakter-kullandigimizda-ie6da-sorun-cikariyor/
     "CSS Yorumlarında Türkçe Karakter Kullandığımızda İE6′da Sorun Çıkarıyor"
-  [IE6'da Liste Ardalan Görmeme Sorunu]: http://www.fatihhayrioglu.com/ie6da-liste-ardalan-gormeme-sorunu/
+  [IE6'da Liste Ardalan Görmeme Sorunu]: http://fatihhayrioglu.com/ie6da-liste-ardalan-gormeme-sorunu/
     "IE6'da Liste Ardalan Görmeme Sorunu"
-  [PSD'den HTML'e – fanatikmarslar.com Sitesinin Kodlaması]: http://www.fatihhayrioglu.com/fanatikmarslar-com-sitesinin-kodlamasi/
+  [PSD'den HTML'e – fanatikmarslar.com Sitesinin Kodlaması]: http://fatihhayrioglu.com/fanatikmarslar-com-sitesinin-kodlamasi/
     "PSD'den HTML'e – fanatikmarslar.com Sitesinin Kodlaması"

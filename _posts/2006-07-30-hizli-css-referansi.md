@@ -320,7 +320,7 @@ table{
 
 
   [Kutu Modeli]: /images/basit_boxmodel.gif
-  [renk]: http://www.fatihhayrioglu.com/?p=95
+  [renk]: http://fatihhayrioglu.com/?p=95
   [block-level]: #
 
 [firefox]: /images/ff.png

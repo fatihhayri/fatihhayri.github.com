@@ -192,11 +192,11 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
 
   [Writing Efficient CSS for use in the Mozilla UI]: https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
     "Writing Efficient CSS for use in the Mozilla UI"
-  [(X)HTML Sayfa Yapısı ve CSS Kullanımı]: http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
+  [(X)HTML Sayfa Yapısı ve CSS Kullanımı]: http://fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
     "(X)HTML Sayfa Yapısı ve CSS Kullanımı"
-  [Özellik Seçicileri(Attribute Selectors)]: http://www.fatihhayrioglu.com/ozellik-secicileriattribute-selectors/
+  [Özellik Seçicileri(Attribute Selectors)]: http://fatihhayrioglu.com/ozellik-secicileriattribute-selectors/
     "Özellik Seçicileri(Attribute Selectors)"
-  [Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)]: http://www.fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
+  [Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)]: http://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
     "Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)"
   [stevesouders.com'un test sayfasını]: http://stevesouders.com/efws/css-selectors/baseline.php
     "stevesouders.com'un test sayfasını"

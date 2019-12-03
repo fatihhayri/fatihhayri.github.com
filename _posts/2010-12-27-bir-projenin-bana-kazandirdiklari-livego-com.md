@@ -56,16 +56,16 @@ arttırıyor)
 -   [İE6 sorunu: Bağlantı içi elemanlarda hover sorunu][]
 -   [CSS Seçicilerinin Optimizasyonu][]
 -   [IE’de Liste elemanları arasındaki boşluk sorunu][]
--   [CSS İpucu 28: FireBug yardımı ile daha kolay CSS Sprite Uygulamak](http://www.fatihhayrioglu.com/firebug-yardimi-ile-daha-kolay-css-sprite-uygulamak/)
+-   [CSS İpucu 28: FireBug yardımı ile daha kolay CSS Sprite Uygulamak](http://fatihhayrioglu.com/firebug-yardimi-ile-daha-kolay-css-sprite-uygulamak/)
 -   [Kutulara Gölge Vermek (box-shadow)][]
 -   [overflow ve position:relative kullanımında ie sorunu][]
 -   [jQuery ipuçları – 3][]
 -   [display:inline elemanlar arasındaki doğal boşluklar][]
 -   [Yuvarlak kenarlı kutular(border-radius) oluşturmak][]
--   [Float:left ve Text-align:right Atanmş Elemana Metin Yerine Resim Uygulama](http://www.fatihhayrioglu.com/floatleft-ve-text-alignright-atanms-elemana-metin-yerine-resim-uygulama/)
+-   [Float:left ve Text-align:right Atanmş Elemana Metin Yerine Resim Uygulama](http://fatihhayrioglu.com/floatleft-ve-text-alignright-atanms-elemana-metin-yerine-resim-uygulama/)
 -   [Çift çizgili ayraç kullanımı][]
 -   [Önden Resimleri(Preloading images) Yükleme Yöntemleri][]
--   [CSS İpucu 27: Chrome ve Safari’de textarea genişletme işlevini kaldırma](http://www.fatihhayrioglu.com/css-ipucu-27-chrome-ve-safaride-textarea-genisletme-islevini-kaldirma/)
+-   [CSS İpucu 27: Chrome ve Safari’de textarea genişletme işlevini kaldırma](http://fatihhayrioglu.com/css-ipucu-27-chrome-ve-safaride-textarea-genisletme-islevini-kaldirma/)
 -   [IE6 ve IE7′de bağlantılardaki cursor sorunu][]
 -   [IE’de Textarea’da Enter çalışmıyor][]
 -   [Resim Kullanmadan 1 piksellik Yuvarlak Kenarlı Kutu Oluşturmak][]
@@ -97,20 +97,20 @@ Türkiye’de umarım onlarda bilgilerini bizlerle paylaşırlar.
 
   [100]: /images/liveGO_white_72dpi_300px.jpg
   [messengerfx.com]: http://messengerfx.com
-  [CSS ile metinlere gölge vermek]: http://www.fatihhayrioglu.com/css-ile-metinlere-golge-vermek/
-  [İE kalıtsal margin sorunu: form elementleri ve hasLayout]: http://www.fatihhayrioglu.com/ie-kalitsal-margin-sorunu-form-elementleri-ve-haslayout/
-  [ie6/7′da postion:relative Uygulanmış Elemanlarda z-index Sorunu]: http://www.fatihhayrioglu.com/ie67da-postionrelative-uygulanmis-elemanlarda-z-index-sorunu/
-  [İE6 sorunu: Bağlantı içi elemanlarda hover sorunu]: http://www.fatihhayrioglu.com/ie6-sorunu-baglanti-ici-elemanlarda-hover-sorunu/
-  [CSS Seçicilerinin Optimizasyonu]: http://www.fatihhayrioglu.com/css-secicilerinin-optimizasyonu/
-  [IE’de Liste elemanları arasındaki boşluk sorunu]: http://www.fatihhayrioglu.com/iede-liste-elemanlari-arasindaki-bosluk-sorunu/
-  [Kutulara Gölge Vermek (box-shadow)]: http://www.fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/
-  [overflow ve position:relative kullanımında ie sorunu]: http://www.fatihhayrioglu.com/overflow-ve-positionrelative-kullaniminda-ie-sorunu/
-  [jQuery ipuçları – 3]: http://www.fatihhayrioglu.com/jquery-ipuclari-3/
-  [display:inline elemanlar arasındaki doğal boşluklar]: http://www.fatihhayrioglu.com/displayinline-elemanlar-arasindaki-dogal-bosluklar/
-  [Yuvarlak kenarlı kutular(border-radius) oluşturmak]: http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutularborder-radius-olusturmak/
-  [Çift çizgili ayraç kullanımı]: http://www.fatihhayrioglu.com/cift-cizgili-ayrac-kullanimi/
-  [Önden Resimleri(Preloading images) Yükleme Yöntemleri]: http://www.fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/
-  [IE6 ve IE7′de bağlantılardaki cursor sorunu]: http://www.fatihhayrioglu.com/ie6-ve-ie7de-baglantilardaki-cursor-sorunu/
-  [IE’de Textarea’da Enter çalışmıyor]: http://www.fatihhayrioglu.com/iede-textareada-enter-calismiyor/
-  [Resim Kullanmadan 1 piksellik Yuvarlak Kenarlı Kutu Oluşturmak]: http://www.fatihhayrioglu.com/resim-kullanmadan-1-piksellik-yuvarlak-kenarli-kutu-olusturmak/
-  [jquery ipuçları – 4]: http://www.fatihhayrioglu.com/jquery-ipuclari-4/
+  [CSS ile metinlere gölge vermek]: http://fatihhayrioglu.com/css-ile-metinlere-golge-vermek/
+  [İE kalıtsal margin sorunu: form elementleri ve hasLayout]: http://fatihhayrioglu.com/ie-kalitsal-margin-sorunu-form-elementleri-ve-haslayout/
+  [ie6/7′da postion:relative Uygulanmış Elemanlarda z-index Sorunu]: http://fatihhayrioglu.com/ie67da-postionrelative-uygulanmis-elemanlarda-z-index-sorunu/
+  [İE6 sorunu: Bağlantı içi elemanlarda hover sorunu]: http://fatihhayrioglu.com/ie6-sorunu-baglanti-ici-elemanlarda-hover-sorunu/
+  [CSS Seçicilerinin Optimizasyonu]: http://fatihhayrioglu.com/css-secicilerinin-optimizasyonu/
+  [IE’de Liste elemanları arasındaki boşluk sorunu]: http://fatihhayrioglu.com/iede-liste-elemanlari-arasindaki-bosluk-sorunu/
+  [Kutulara Gölge Vermek (box-shadow)]: http://fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/
+  [overflow ve position:relative kullanımında ie sorunu]: http://fatihhayrioglu.com/overflow-ve-positionrelative-kullaniminda-ie-sorunu/
+  [jQuery ipuçları – 3]: http://fatihhayrioglu.com/jquery-ipuclari-3/
+  [display:inline elemanlar arasındaki doğal boşluklar]: http://fatihhayrioglu.com/displayinline-elemanlar-arasindaki-dogal-bosluklar/
+  [Yuvarlak kenarlı kutular(border-radius) oluşturmak]: http://fatihhayrioglu.com/yuvarlak-kenarli-kutularborder-radius-olusturmak/
+  [Çift çizgili ayraç kullanımı]: http://fatihhayrioglu.com/cift-cizgili-ayrac-kullanimi/
+  [Önden Resimleri(Preloading images) Yükleme Yöntemleri]: http://fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/
+  [IE6 ve IE7′de bağlantılardaki cursor sorunu]: http://fatihhayrioglu.com/ie6-ve-ie7de-baglantilardaki-cursor-sorunu/
+  [IE’de Textarea’da Enter çalışmıyor]: http://fatihhayrioglu.com/iede-textareada-enter-calismiyor/
+  [Resim Kullanmadan 1 piksellik Yuvarlak Kenarlı Kutu Oluşturmak]: http://fatihhayrioglu.com/resim-kullanmadan-1-piksellik-yuvarlak-kenarli-kutu-olusturmak/
+  [jquery ipuçları – 4]: http://fatihhayrioglu.com/jquery-ipuclari-4/

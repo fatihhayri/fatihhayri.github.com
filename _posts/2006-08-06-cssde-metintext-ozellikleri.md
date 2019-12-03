@@ -287,7 +287,7 @@ Bu özellik CSS2 ile birlikte geldi ancak internet tarayıcıları bu
 
 [https://fatihhayrioglu.com/css-ile-metinlere-golge-vermek/](https://fatihhayrioglu.com/css-ile-metinlere-golge-vermek/)
 
-  [<uzunluk değeri >]: http://www.fatihhayrioglu.com/?p=95
+  [<uzunluk değeri >]: http://fatihhayrioglu.com/?p=95
 
 
 [firefox]: /images/ff.png

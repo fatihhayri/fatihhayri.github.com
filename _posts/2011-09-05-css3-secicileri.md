@@ -910,10 +910,10 @@ Firefox için -moz ön eki kullanılması gerekiyor.
   [1]: https://lh3.googleusercontent.com/0qkeYfNwhs3wyl1K7H3oTIMHVxq_fuqlEi_kXSrBD7sUHbIHFMVTjWQyzpDVGdXM581uNoPrcolpFoh8cH-lKA9AeWXveDA7lVoos3NODlE5rmiqVno
   [2]: https://lh4.googleusercontent.com/5e_41wg7MEzgTzwCyGBHWAnp7Js-HypUDJigkcO7WC632270MGhU0ubYO6058YFY0zY5aOptuOv7H3_gyJw2ZiHMYFHNCygPD-8PlKV6eRS4E1xtcuI
   [3]: https://lh3.googleusercontent.com/t8QIYGvMozXeDyAOos5pbfZSpJQKyyIzuGgfMHqEire4_Y06UOOUPv9GOJPpDnd_R5wn2vlvrLVbUwvj48puypNMqcJ3tUqo4sY5pLUp9KQiMMAJ66Q
-  [bir makale yazmıştım]: http://www.fatihhayrioglu.com/css3-target-secicisi/
+  [bir makale yazmıştım]: http://fatihhayrioglu.com/css3-target-secicisi/
   [4]: https://lh4.googleusercontent.com/lKodnf8SMrbnSV9jZd_EwcQZ1IF-JZy9GY9jv1olLpuOfebHtjsE0vbOyNA-_-EDzpoNCUBs_JVVgnk-_m7Jh0VQ6D7l9PhKXq2K7woke7tNGX36f5Q
   [5]: https://lh4.googleusercontent.com/xT4YjtxJM9wckC5nB68tYXZKVtNX2e72lsYCXcgivCGpxRCWZBKEzGIKQB4eb8S6isRl-3ZNo7_V1B__nrqbHMXASIwqQusVGqvAGcOuyfe3bstNIsY
-  [Daha önce görselliği dikkatimi]: http://www.fatihhayrioglu.com/css-ile-secilen-metinlerin-rengini-degistirmek/
+  [Daha önce görselliği dikkatimi]: http://fatihhayrioglu.com/css-ile-secilen-metinlerin-rengini-degistirmek/
   [http://www.w3.org/TR/css3-selectors/]: http://www.w3.org/TR/css3-selectors/
   [http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/]: http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/
   [http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html]: http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html

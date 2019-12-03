@@ -83,6 +83,6 @@ hatırlayalım diye. İşin ilginç yanı internette ufak bir araştırma yaptı
 ama hiç bu sorun ile karşılaşanı görmedim, belki ben tam anahtar
 kelimeleri bulamadım
 
-  [CSS ile buton yapmak]: http://www.fatihhayrioglu.com/css-ile-buton-yapmak/
+  [CSS ile buton yapmak]: http://fatihhayrioglu.com/css-ile-buton-yapmak/
   [tıklayınız.]: /dokumanlar/cursor_sorunu.html
   [100]: https://lh4.googleusercontent.com/fZqsPR_QQBH2juKgQhlheWgW3gH-8SJ2ER8u3j24jSyHU2r18ruXvOLQvIhq2qCqrgldgvbGjltA30kVNxOc4H3OKOQZ5yM0MuHTGK-vSPBExD6ZSQ

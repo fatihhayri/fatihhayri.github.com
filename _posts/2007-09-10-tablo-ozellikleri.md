@@ -397,7 +397,7 @@ Bu özellik Internet Explorer tarafından desteklenmemektedir.
 -   [http://www.w3schools.com/css/css_table.asp][]
 -   [http://www.blooberry.com/indexdot/css/propindex/table.htm][]
 
-[CSS ile Tabloları şekillendirmek]: http://www.fatihhayrioglu.com/css-ile-tablolari-sekillendirmek/
+[CSS ile Tabloları şekillendirmek]: http://fatihhayrioglu.com/css-ile-tablolari-sekillendirmek/
 [table-layout]: #table-layout
 [caption-side]: #caption-side
 [border-collapse]: #border-collapse

@@ -330,9 +330,9 @@ aksaklığımız oldu ise affola.
     (örnekler)
 -   [http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/][]
 
-  [CSS ve Tipografi]: http://www.fatihhayrioglu.com/css-ve-tipografi/
+  [CSS ve Tipografi]: http://fatihhayrioglu.com/css-ve-tipografi/
     "CSS ve Tipografi"
-  [sIFR]: http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
+  [sIFR]: http://fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
     "sIFR"
   [Cufón]: http://www.yakuter.com/cufon-bir-sifr-alternatifi-hakkinda-her-sey/
     "Cufón"

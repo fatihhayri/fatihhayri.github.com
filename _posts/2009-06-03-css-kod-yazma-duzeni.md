@@ -100,7 +100,7 @@ yazarken.
 ## 4. Kısaltma kullanın.
 
 CSS tanımlarında kısaltmaları kullanın. CSS kısaltmaları hakkında daha
-fazla bilgi için [http://www.fatihhayrioglu.com/cssde-kisaltmalar/][]
+fazla bilgi için [http://fatihhayrioglu.com/cssde-kisaltmalar/][]
 okumanızı tavsiye ederim.
 
 {% highlight css %}
@@ -422,11 +422,11 @@ ul{margin:0; padding:0; list-style:none;}
 
   [css_duzenleme2]: /images/css_duzenleme2.gif
     "css_duzenleme2"
-  [http://www.fatihhayrioglu.com/cssde-kisaltmalar/]: http://www.fatihhayrioglu.com/cssde-kisaltmalar/
-    "http://www.fatihhayrioglu.com/cssde-kisaltmalar/"
+  [http://fatihhayrioglu.com/cssde-kisaltmalar/]: http://fatihhayrioglu.com/cssde-kisaltmalar/
+    "http://fatihhayrioglu.com/cssde-kisaltmalar/"
   [Eric Meyer]: http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
     "Eric Meyer"
-  [yazdığım]: http://www.fatihhayrioglu.com/css-editorleri/ "yazdığım"
+  [yazdığım]: http://fatihhayrioglu.com/css-editorleri/ "yazdığım"
   [dw_duz_01]: /images/dw_duz_01.gif
     "dw_duz_01"
   [dw_duz_02]: /images/dw_duz_02.gif

@@ -40,8 +40,8 @@ jQuery yeni sürümü 2.0 ie birlikte İE8 ve alt sürümlerin değini kaldırd�
     - Renk değerleri (rgba, hsl, hsla)
     - turn değeri
     - calc() değeri
- - [CSS 3 medya sorguları / tepkisel tasarım(responsive)](http://www.fatihhayrioglu.com/css-3-medya-sorgulari/)
- - [box-shadow desteği](http://www.fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/)
+ - [CSS 3 medya sorguları / tepkisel tasarım(responsive)](http://fatihhayrioglu.com/css-3-medya-sorgulari/)
+ - [box-shadow desteği](http://fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/)
  - [border-radius desteği][1]
  - [Çoklu Ardalan(background-image)][2]
  - [background-size desteği][3]
@@ -85,14 +85,14 @@ Yeni standartlar açısından bir çok kazanımımız olacağı kesin ama hala �
  - [http://www.gtalbot.org/BrowserBugsSection/MSIE8Bugs/](http://www.gtalbot.org/BrowserBugsSection/MSIE8Bugs/)
 
 
-  [1]: http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutularborder-radius-olusturmak/
-  [2]: http://www.fatihhayrioglu.com/css3-coklu-ardalanmultiple-background/
-  [3]: http://www.fatihhayrioglu.com/css3-background-size-ozelligi/
-  [4]: http://www.fatihhayrioglu.com/css3-background-origin-ve-background-clip-ozellikleri/
-  [5]: http://www.fatihhayrioglu.com/css3-donusturme-ozellikleritransforms-ve-2b-donusturme/
-  [6]: http://www.fatihhayrioglu.com/font-face-kullanimi/
-  [7]: http://www.fatihhayrioglu.com//css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlik/
-  [8]: http://www.fatihhayrioglu.com/css-renk-gecisleri-gradients/
+  [1]: http://fatihhayrioglu.com/yuvarlak-kenarli-kutularborder-radius-olusturmak/
+  [2]: http://fatihhayrioglu.com/css3-coklu-ardalanmultiple-background/
+  [3]: http://fatihhayrioglu.com/css3-background-size-ozelligi/
+  [4]: http://fatihhayrioglu.com/css3-background-origin-ve-background-clip-ozellikleri/
+  [5]: http://fatihhayrioglu.com/css3-donusturme-ozellikleritransforms-ve-2b-donusturme/
+  [6]: http://fatihhayrioglu.com/font-face-kullanimi/
+  [7]: http://fatihhayrioglu.com//css-ipucu-19-tum-tarayicilar-icin-css-ile-saydamlik/
+  [8]: http://fatihhayrioglu.com/css-renk-gecisleri-gradients/
   [9]: https://developer.mozilla.org/en-US/docs/HTML/Canvas
   [10]: https://developer.mozilla.org/en-US/docs/SVG
   [11]: https://developer.mozilla.org/en-US/docs/HTML/HTML5/HTML5_element_list

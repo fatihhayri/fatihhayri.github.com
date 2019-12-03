@@ -40,7 +40,7 @@ sorunlarla bi daha karşılaşmayız.
 
 ## Ek olarak
 
-Ayrıca http://www.fatihhayrioglu.com/?ref=siteAdi gibi linkler var.
+Ayrıca http://fatihhayrioglu.com/?ref=siteAdi gibi linkler var.
 Bunlarıda robots.txt User-agent: * Disallow: /*ref=* Disallow:
 /*?ref= kodlarını ekleyerek düzelttim. İşin ilginci bu linkleri
 google'un arama aracı nasıl buluyor.

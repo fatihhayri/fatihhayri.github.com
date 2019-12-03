@@ -56,7 +56,7 @@ Bu sorun [IE7][] versiyonunda giderilmiştir.
 
   [tıklayınız.]: /dokumanlar/ie_tekrarlayan_karakter_sorunu_ornek.html
   [100]: /dokumanlar/ie_tekrarlananlrak.gif
-  [3 piksel metin öteleme hatası]: http://www.fatihhayrioglu.com/ieun-3-piksel-metin-oteleme-hatasi/
+  [3 piksel metin öteleme hatası]: http://fatihhayrioglu.com/ieun-3-piksel-metin-oteleme-hatasi/
   [1]: /dokumanlar/ie_tekrarlayan_karakter_sorunu_ornek2.html
-  [IE7]: http://www.fatihhayrioglu.com/internet-explorer-7-ve-css/
+  [IE7]: http://fatihhayrioglu.com/internet-explorer-7-ve-css/
   [http://www.positioniseverything.net/explorer/dup-characters.html]: http://www.positioniseverything.net/explorer/dup-characters.html

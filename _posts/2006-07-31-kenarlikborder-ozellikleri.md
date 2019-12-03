@@ -279,6 +279,6 @@ Android Browser
 {: .tarayiciuyum}
 
   [Kutu Modeli]: /images/basit_boxmodel.gif
-  [margin]: http://www.fatihhayrioglu.com/?p=6#more-6
-  [uzunluk değeri]: http://www.fatihhayrioglu.com/?p=95
-  [kısaltmadır]: http://www.fatihhayrioglu.com/?p=6
+  [margin]: http://fatihhayrioglu.com/?p=6#more-6
+  [uzunluk değeri]: http://fatihhayrioglu.com/?p=95
+  [kısaltmadır]: http://fatihhayrioglu.com/?p=6

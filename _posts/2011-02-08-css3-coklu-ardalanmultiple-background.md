@@ -222,12 +222,12 @@ Kalın sağlıcakla.
 -   http://www.lifeathighroad.com/css3-lessons/css3-lessons-multiple-background-images
 -   [http://www.paulrhayes.com/experiments/parallax/#experiment][]
 
-  [Yuvarlak kenarlı kutular]: http://www.fatihhayrioglu.com/yuvarlak-kenarli-kutular/
-  [CSS ile sekmeli tab menu yapımı]: http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/
-  [CSS ile gölge vermek]: http://www.fatihhayrioglu.com/css-ile-golge-vermek/
-  [CSS ile buton yapmak]: http://www.fatihhayrioglu.com/css-ile-buton-yapmak/
+  [Yuvarlak kenarlı kutular]: http://fatihhayrioglu.com/yuvarlak-kenarli-kutular/
+  [CSS ile sekmeli tab menu yapımı]: http://fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/
+  [CSS ile gölge vermek]: http://fatihhayrioglu.com/css-ile-golge-vermek/
+  [CSS ile buton yapmak]: http://fatihhayrioglu.com/css-ile-buton-yapmak/
   [tıklayınız.]: /dokumanlar/coklu_ardalan_tanimi/css_ile_buton.html
-  [Alıntı: blockquote ve q etiketleri]: http://www.fatihhayrioglu.com/alinti-blockquote-ve-q-etiketleri/
+  [Alıntı: blockquote ve q etiketleri]: http://fatihhayrioglu.com/alinti-blockquote-ve-q-etiketleri/
   [100]: https://lh5.googleusercontent.com/SJPUNhGo1EIpgZCusQV8ahSeUnnYrIbtpMefhym0mfKhJhjgLsGQ9QB1mkm8-jwnpF9YNoPoS8feY1b5zu2dlGxADYrohj8UtXwqP7oNGK6MCYRyVIU
   [1]: /images/alinti_ard-300x12.gif
   [2]: /images/alinti_sema-300x45.gif

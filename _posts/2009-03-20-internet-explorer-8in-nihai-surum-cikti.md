@@ -40,12 +40,12 @@ değil mi? Kontrol zamanı
 -   [http://blogs.msdn.com/ie/archive/2008/01/21/compatibility-and-ie8.aspx][] 
 -   [http://blogs.msdn.com/ie/archive/2008/03/03/microsoft-s-interoperability-principles-and-ie8.aspx][] 
 -   http://daron.yondem.com/tr/PermaLink.aspx?guid=e649f2d5-0f91-4ed0-a231-74321d01d5b3
--   [http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/][]
+-   [http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/][]
 -   http://www.thestandard.com/news/2009/01/28/ie8-rc1-gains-ground-javascript-race
 -   [http://blogs.msdn.com/ie/archive/2009/01/29/overview-of-platform-improvements-in-ie8-rc1.aspx][]
 
 
-  [Daha önce]: http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/
+  [Daha önce]: http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/
     "Daha önce"
   [tıklayınız.]: http://www.microsoft.com/windows/internet-explorer/default.aspx
     "tıklayınız."
@@ -62,7 +62,7 @@ değil mi? Kontrol zamanı
     "http://blogs.msdn.com/ie/archive/2008/01/21/compatibility-and-ie8.aspx"
   [http://blogs.msdn.com/ie/archive/2008/03/03/microsoft-s-interoperability-principles-and-ie8.aspx]: http://blogs.msdn.com/ie/archive/2008/03/03/microsoft-s-interoperability-principles-and-ie8.aspx
     "http://blogs.msdn.com/ie/archive/2008/03/03/microsoft-s-interoperability-principles-and-ie8.aspx"
-  [http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/]: http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/
-    "http://www.fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/"
+  [http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/]: http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/
+    "http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/"
   [http://blogs.msdn.com/ie/archive/2009/01/29/overview-of-platform-improvements-in-ie8-rc1.aspx]: http://blogs.msdn.com/ie/archive/2009/01/29/overview-of-platform-improvements-in-ie8-rc1.aspx
     "http://blogs.msdn.com/ie/archive/2009/01/29/overview-of-platform-improvements-in-ie8-rc1.aspx"

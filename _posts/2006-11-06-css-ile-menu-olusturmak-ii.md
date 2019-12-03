@@ -135,7 +135,7 @@ aşağıda verdiğimiz Kaynaklar kısmında ve gerekse İnternette aratarak bir
 -   [http://www.alvit.de/handbook/#navmenus][]
 -   [http://exploding-boy.com/images/EBmenus/menus.html][]
 
-  [Bir önceki makalede]: http://www.fatihhayrioglu.com/?p=209
+  [Bir önceki makalede]: http://fatihhayrioglu.com/?p=209
   [100]: /images/menu_resim1.gif
   [1]: /images/menu_resim2.gif
   [2]: /images/menu_resim3.gif

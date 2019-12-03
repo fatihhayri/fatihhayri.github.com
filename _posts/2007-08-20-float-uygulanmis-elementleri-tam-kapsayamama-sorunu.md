@@ -215,7 +215,7 @@ hızlı bir şekilde çözmek mümkün oluyor.
 
   [float sorunu]: /images/clearfix_sorun.gif
   [tıklayınız.]: /dokumanlar/float_sorunu.html
-  [tıklayınız]: http://www.fatihhayrioglu.com/?p=86
+  [tıklayınız]: http://fatihhayrioglu.com/?p=86
   [1]: /dokumanlar/float_cozumu.html
   [float çözümü]: /images/clearfix_cozum.gif
   [Doug]: http://dougsdvds.info/ "Doug"

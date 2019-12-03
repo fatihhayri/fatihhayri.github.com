@@ -34,7 +34,7 @@ bir ayrıntı ama benim çok işime yarıyor. Hemde çok.
 yazıyordum. Sebebi çok açık kodların okunabilirliği artıyordu böylece.
 Sonra fark ettim ki ben kodları okumuyorum artık FireBug ile yakalıyorum
 ve satır numarasından ilgili dokümanı açıp müdahele ediyorum. Bununda
-etkisi ile [her satırda bir tanım yerine her satırda bir seçici şeklinde css dosyalarımı](http://www.fatihhayrioglu.com/css-kod-yazma-duzeni/) yazmaya başladım ve bu bana çok büyük bir yer
+etkisi ile [her satırda bir tanım yerine her satırda bir seçici şeklinde css dosyalarımı](http://fatihhayrioglu.com/css-kod-yazma-duzeni/) yazmaya başladım ve bu bana çok büyük bir yer
 kazandırdı.
 
 Evet bazı küçük özellikleri fark etmesekde bize çok büyük faydalar

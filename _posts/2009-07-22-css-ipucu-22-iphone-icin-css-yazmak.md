@@ -47,7 +47,7 @@ Yukarıdaki tanımlar sadece iPhone'da görünecektir. İşin püf noktasını
 
   [apple-iphone]: /images/apple-iphone.jpg
     "apple-iphone"
-  [çıktı almak için(print)]: http://www.fatihhayrioglu.com/cssde-cikti-alma-print/
+  [çıktı almak için(print)]: http://fatihhayrioglu.com/cssde-cikti-alma-print/
     "çıktı almak için(print)"
   [http://www.w3.org/TR/css3-mediaqueries/]: http://www.w3.org/TR/css3-mediaqueries/
     "http://www.w3.org/TR/css3-mediaqueries/"

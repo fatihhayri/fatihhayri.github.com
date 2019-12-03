@@ -84,7 +84,7 @@ veriyoruz.
 Bu yöntemde float uygulanmış içerik kısmında tam alanı kapsayamama
 sorunu ile karşılaşıyoruz. Float uygulanmış alanların kapsayamama sorunu
 çözmek için
-[http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/][]
+[http://fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/][]
 makalemiz anlattığımız yöntemi kullanıyoruz.
 
 {% highlight css %}
@@ -161,7 +161,7 @@ html, body, form, #kapsul {
 
   [yapisik_altalan]: /images/yapisik_altalan.gif
   [cssstickyfooter.com]: http://www.cssstickyfooter.com
-  [http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/]: http://www.fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/
+  [http://fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/]: http://fatihhayrioglu.com/float-uygulanmis-elementleri-tam-kapsayamama-sorunu/
   [tıklayınız.]: /dokumanlar/sayfa_dibine_yapisik.html
   [100]: http://www.cssstickyfooter.com/using-sticky-footer-code.html
   [http://www.cssstickyfooter.com/]: http://www.cssstickyfooter.com/

@@ -102,7 +102,7 @@ Birde yapımcılarından Mike Beltzner'dan dinleyelim
   [Buradan indirebilirsiniz.]: http://www.mozilla-europe.org/en/firefox/ "Buradan indirebilirsiniz."
   [Personas]: http://www.getpersonas.com/ "Personas"
   [tıklayınız.]: http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/ "tıklayınız."
-  [font-face]: http://www.fatihhayrioglu.com/font-face-kullanimi/ "font-face"
+  [font-face]: http://fatihhayrioglu.com/font-face-kullanimi/ "font-face"
   [Gradyen]: https://developer.mozilla.org/en/Using_gradients "Gradyen"
   [Çoklu background desteği]: https://developer.mozilla.org/en/CSS/Multiple_backgrounds "Çoklu background desteği"
   [Background genişletme]: https://developer.mozilla.org/en/CSS/Scaling_background_images "Background genişletme"

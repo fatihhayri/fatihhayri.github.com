@@ -84,7 +84,7 @@ seçmede bazı orunlar olabiliyor.
 ## Tüm Tarayıcılar İçin Çözüm
 
 {% highlight html %}
-<div id="tamEkranArdAlan"><img src="http://www.fatihhayrioglu.com/images/emptybottles.jpg" width="100%" height="100%" /></div>
+<div id="tamEkranArdAlan"><img src="http://fatihhayrioglu.com/images/emptybottles.jpg" width="100%" height="100%" /></div>
 <div id="icerik">
 ...
 </div
@@ -189,7 +189,7 @@ Kalın sağlıcakla
 -   http://www.quackit.com/html/codes/html_stretch_background_image.cfm
 -   [http://www.cssplay.co.uk/layouts/background.html][]
 
-  [CSS3’ün background-size özelliğini anlattım]: http://www.fatihhayrioglu.com/css3-background-size-ozelligi/
+  [CSS3’ün background-size özelliğini anlattım]: http://fatihhayrioglu.com/css3-background-size-ozelligi/
   [tıklayınız.]: /dokumanlar/tam_sayfa_bg.html
   [100]: https://lh6.googleusercontent.com/x55IiCT52mJIMb9oYddTeHpX7Ww7ti3puoZiped0VQ-SflPtR_mrldscvuWoco7aOWi0dbQ2llnOVRuch-2dgpR_LSkZU76CiKam4NThM2DYry7j-Po
   [http://interfacelift.com/wallpaper/details/2421/empty_bottles.html]: http://interfacelift.com/wallpaper/details/2421/empty_bottles.html

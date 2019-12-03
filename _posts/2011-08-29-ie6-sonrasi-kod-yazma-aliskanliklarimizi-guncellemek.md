@@ -542,29 +542,29 @@ ie6 öldü.
 -   [http://technologytales.com/2007/06/22/ie6-and-javascript-performance/][](js)
 -   http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html
 -   [http://ajaxian.com/archives/ie7-twice-as-performant-as-ie6-but-half-as-slow-as-ff-15][]
--   [http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/][]
+-   [http://fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/][]
 
-  [Internet Explorer 6 olmasa hayat daha kolay ve zevkli olurdu]: http://www.fatihhayrioglu.com/internet-explorer-6-olmasa-hayat-daha-kolay-ve-zevkli-olurdu/
-  [Internet Explorer 6 için saydam PNG desteği]: http://www.fatihhayrioglu.com/internet-explorer-6-icin-saydam-png-destegi/
+  [Internet Explorer 6 olmasa hayat daha kolay ve zevkli olurdu]: http://fatihhayrioglu.com/internet-explorer-6-olmasa-hayat-daha-kolay-ve-zevkli-olurdu/
+  [Internet Explorer 6 için saydam PNG desteği]: http://fatihhayrioglu.com/internet-explorer-6-icin-saydam-png-destegi/
   [100]: /images/saydampng_resim.gif
-  [Bu konuyu]: http://www.fatihhayrioglu.com/ozellik-secicileriattribute-selectors/
-  [Box Model Sorunu ve Çözümü]: http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
-  [Sabit Konumlandırma (Postion:fixed)]: http://www.fatihhayrioglu.com/sabit-konumlandirma-postionfixed/
-  [IE’de Hata Ayıklamak için şartlı Yorumlar Kullanmak]: http://www.fatihhayrioglu.com/?p=236
-  [CSS Hata Ayıklama Yöntemleri]: http://www.fatihhayrioglu.com/?p=242
-  [Css de kodumuzu İE’den gizleme]: http://www.fatihhayrioglu.com/?p=31
-  [CSS ile Kutu modeli, sorunları ve çözümleri]: http://www.fatihhayrioglu.com/?p=13
-  [IE’da İkikat görülen Margin Problemi ve Çözümü]: http://www.fatihhayrioglu.com/?p=131
-  [IE’da min-width, min-height,max-width, max-height Kullanmak]: http://www.fatihhayrioglu.com/?p=182
-  [IE6′un Tekrarlayan Karakter Sorunu]: http://www.fatihhayrioglu.com/?p=232
-  [IE’un 3 piksel Metin Öteleme Hatası]: http://www.fatihhayrioglu.com/?p=231
-  [IE6′da CEE-EEE(peek-a-boo) Hatası]: http://www.fatihhayrioglu.com/?p=235
-  [Göreceli-Mutlak Konumlandırma Sorunu]: http://www.fatihhayrioglu.com/?p=240
-  [Kenar Boşluğu(Margin) Çökmesi]: http://www.fatihhayrioglu.com/?p=362
-  [İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak]: http://www.fatihhayrioglu.com/internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/
-  [CSS Yorumlarında Türkçe Karakter Kullandığımızda İE6′da Sorun Çıkarıyor]: http://www.fatihhayrioglu.com/css-yorumlarinda-turkce-karakter-kullandigimizda-ie6da-sorun-cikariyor/
-  [IE6′da Liste Ardalan Görmeme Sorunu]: http://www.fatihhayrioglu.com/ie6da-liste-ardalan-gormeme-sorunu/
-  [ie6′da border-color:transparent desteği sağlamak]: http://www.fatihhayrioglu.com/ie6da-border-colortransparent-destegi-saglamak/
+  [Bu konuyu]: http://fatihhayrioglu.com/ozellik-secicileriattribute-selectors/
+  [Box Model Sorunu ve Çözümü]: http://fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
+  [Sabit Konumlandırma (Postion:fixed)]: http://fatihhayrioglu.com/sabit-konumlandirma-postionfixed/
+  [IE’de Hata Ayıklamak için şartlı Yorumlar Kullanmak]: http://fatihhayrioglu.com/?p=236
+  [CSS Hata Ayıklama Yöntemleri]: http://fatihhayrioglu.com/?p=242
+  [Css de kodumuzu İE’den gizleme]: http://fatihhayrioglu.com/?p=31
+  [CSS ile Kutu modeli, sorunları ve çözümleri]: http://fatihhayrioglu.com/?p=13
+  [IE’da İkikat görülen Margin Problemi ve Çözümü]: http://fatihhayrioglu.com/?p=131
+  [IE’da min-width, min-height,max-width, max-height Kullanmak]: http://fatihhayrioglu.com/?p=182
+  [IE6′un Tekrarlayan Karakter Sorunu]: http://fatihhayrioglu.com/?p=232
+  [IE’un 3 piksel Metin Öteleme Hatası]: http://fatihhayrioglu.com/?p=231
+  [IE6′da CEE-EEE(peek-a-boo) Hatası]: http://fatihhayrioglu.com/?p=235
+  [Göreceli-Mutlak Konumlandırma Sorunu]: http://fatihhayrioglu.com/?p=240
+  [Kenar Boşluğu(Margin) Çökmesi]: http://fatihhayrioglu.com/?p=362
+  [İnternet Explorer 6 ve 7 için Tablo tr elementine kenar çizgisi atamak]: http://fatihhayrioglu.com/internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/
+  [CSS Yorumlarında Türkçe Karakter Kullandığımızda İE6′da Sorun Çıkarıyor]: http://fatihhayrioglu.com/css-yorumlarinda-turkce-karakter-kullandigimizda-ie6da-sorun-cikariyor/
+  [IE6′da Liste Ardalan Görmeme Sorunu]: http://fatihhayrioglu.com/ie6da-liste-ardalan-gormeme-sorunu/
+  [ie6′da border-color:transparent desteği sağlamak]: http://fatihhayrioglu.com/ie6da-border-colortransparent-destegi-saglamak/
   [http://blogs.msdn.com/b/ie/archive/2006/08/22/712830.aspx]: http://blogs.msdn.com/b/ie/archive/2006/08/22/712830.aspx
   [http://bradt.ca/archives/preventing-ie6-bugs/]: http://bradt.ca/archives/preventing-ie6-bugs/
   [http://www.sitepoint.com/10-fixes-for-ie6-problems/]: http://www.sitepoint.com/10-fixes-for-ie6-problems/
@@ -578,4 +578,4 @@ ie6 öldü.
   [http://technologytales.com/2007/06/22/ie6-and-javascript-performance/]: http://technologytales.com/2007/06/22/ie6-and-javascript-performance/
   http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html
   [http://ajaxian.com/archives/ie7-twice-as-performant-as-ie6-but-half-as-slow-as-ff-15]: http://ajaxian.com/archives/ie7-twice-as-performant-as-ie6-but-half-as-slow-as-ff-15
-  [http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/]: http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
+  [http://fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/]: http://fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/

@@ -17,7 +17,7 @@ XHTML kodu :
 
 {% highlight html %}
 <p>
-    <a href="http://www.fatihhayrioglu.com/" class="aracIpucu">Fatih Hayrioğlu<span> (Fatih Hayrioğlu’nun Not Defteri) </span></a> web sitesine bir göz atın.
+    <a href="http://fatihhayrioglu.com/" class="aracIpucu">Fatih Hayrioğlu<span> (Fatih Hayrioğlu’nun Not Defteri) </span></a> web sitesine bir göz atın.
 </p>
 {% endhighlight %}
 
@@ -89,7 +89,7 @@ ikon resmini eklemek.
 
 {% highlight html %}
 <p>
-<a href="http://www.fatihhayrioglu.com/" class="aracIpucu">
+<a href="http://fatihhayrioglu.com/" class="aracIpucu">
 Fatih Hayrioğlu<span><em></em> (Fatih Hayrioğlu'nun Not Defteri) </span></a>
 web sitesine bir göz atın.
 </p>

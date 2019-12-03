@@ -118,7 +118,7 @@ Bu arada FireBug 1.3 çalışmalarına başlanmış bile.
 
   [100]: /images/firebug_12.jpg "FireBug"
 
-  [FireBug'ın genel özelliklerinden]: http://www.fatihhayrioglu.com/?p=564
+  [FireBug'ın genel özelliklerinden]: http://fatihhayrioglu.com/?p=564
   [https://wiki.mozilla.org/User:Rcampbell/Firebug_performance]: https://wiki.mozilla.org/User:Rcampbell/Firebug_performance
   [FireBug ikonu]: /images/firebug_ikon.gif
   [Fare üzerine gelince]: /images/firebug_uzer_gel.gif

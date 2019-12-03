@@ -211,9 +211,9 @@ kısmınaeklerseniz güzel bir dokümantasyon oluşturmuş oluruz.
 -   [http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/][]
 
   [100]: /images/sifr1.gif "sifr"
-  [daha öncede bahsettiğimiz gibi]: http://www.fatihhayrioglu.com/webde-yazi-tipi-sorunlari-ve-google-font-api/
+  [daha öncede bahsettiğimiz gibi]: http://fatihhayrioglu.com/webde-yazi-tipi-sorunlari-ve-google-font-api/
     "daha öncede bahsettiğimiz gibi"
-  [Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)]: http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
+  [Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)]: http://fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
     "Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)"
     "http://v4.designintellection.com/this-is-how-you-get-sifr-to-work/"
   [http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/]: http://net.tutsplus.com/tutorials/javascript-ajax/how-to-implement-sifr3-into-your-website/

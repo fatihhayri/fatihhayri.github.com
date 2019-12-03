@@ -131,17 +131,17 @@ Kalın Sağlıcakla
 -   [http://sixrevisions.com/web_design/google-font-api-guide/][]
 
   [100]: http://www.google.com/images/logos/font_api_logo_beta.gif
-  [Yazı Tipi özellikleri]: http://www.fatihhayrioglu.com/font-ozellikleri/
+  [Yazı Tipi özellikleri]: http://fatihhayrioglu.com/font-ozellikleri/
     "Yazı Tipi özellikleri"
-  [CSS'de Metin Özellikleri]: http://www.fatihhayrioglu.com/cssde-metintext-ozellikleri/
+  [CSS'de Metin Özellikleri]: http://fatihhayrioglu.com/cssde-metintext-ozellikleri/
     "CSS'de Metin Özellikleri"
-  [CSS ve Tipografi]: http://www.fatihhayrioglu.com/css-ve-tipografi/
+  [CSS ve Tipografi]: http://fatihhayrioglu.com/css-ve-tipografi/
     "CSS ve Tipografi"
-  [Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)]: http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
+  [Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)]: http://fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/
     "Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)"
-  [@font-face kullanımı]: http://www.fatihhayrioglu.com/font-face-kullanimi/
+  [@font-face kullanımı]: http://fatihhayrioglu.com/font-face-kullanimi/
     "@font-face kullanımı"
-  [CSS ile metinlere gölge vermek]: http://www.fatihhayrioglu.com/css-ile-metinlere-golge-vermek/
+  [CSS ile metinlere gölge vermek]: http://fatihhayrioglu.com/css-ile-metinlere-golge-vermek/
     "CSS ile metinlere gölge vermek"
   [1]: /images/fontface_destek_tablosu.gif
   [2]: /images/anti_aliasing.gif

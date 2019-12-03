@@ -19,4 +19,4 @@ p{
 sayfa için kullandığımız paragraflar ie6 mavi ff kırmızı görünecektir. !important css ile etkinlik için kullanılan bir etikettir.
 !important tanımlı özellik daha önce yapılmış aynı özelliğin üzerine çıkar. CSS ile etkinlik hakkında daha fazla bilgi için [tıklayınız.][]
 
-  [tıklayınız.]: http://www.fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity
+  [tıklayınız.]: http://fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity

@@ -293,7 +293,7 @@ tanımlamamıza olanak sağlıyor. Ama bunu için beklemek zorundayız.
 
 
   [100]: /dokumanlar/images/golge01.jpg
-  [blok-level]: http://www.fatihhayrioglu.com/?p=151
+  [blok-level]: http://fatihhayrioglu.com/?p=151
   [tıklayınız.]: /dokumanlar/basit_golge.html
   [www.clagnut.com]: http://www.clagnut.com
   [Fuzzy]: /dokumanlar/images/fuzzy.gif

@@ -145,10 +145,10 @@ Tüm liste için [tıklayınız][13].
   [<!DOCTYPE> switch]: https://fatihhayrioglu.com/dogru-doctype-kullanimi/
   [tıklayınız]: http://www.positioniseverything.net/explorer/peekaboo.html
   [tıklayınız.]: http://www.positioniseverything.net/explorer/guillotine.html
-  [1]: http://www.fatihhayrioglu.com/?p=232
+  [1]: http://fatihhayrioglu.com/?p=232
   [2]: http://www.positioniseverything.net/explorer/border-chaos.html
   [3]: http://www.positioniseverything.net/explorer/unscrollable.html
-  [4]: http://www.fatihhayrioglu.com/?p=231
+  [4]: http://fatihhayrioglu.com/?p=231
   [5]: http://www.positioniseverything.net/explorer/creep.html
   [6]: http://www.positioniseverything.net/explorer/lineheightbug.html
   [7]: http://www.positioniseverything.net/explorer/floatIndent.html
@@ -158,7 +158,7 @@ Tüm liste için [tıklayınız][13].
   [11]: http://www.positioniseverything.net/explorer/firstletter.html
   [12]: http://www.positioniseverything.net/explorer/inlinelist.html
   [13]: http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx
-  [Çocuk Seçiciler]: http://www.fatihhayrioglu.com/?p=62
+  [Çocuk Seçiciler]: http://fatihhayrioglu.com/?p=62
   [http://www.devarticles.com]: http://www.devarticles.com/c/a/Web-Style-Sheets/CSS-Standards-Compliance-in-Internet-Explorer-7/
   [http://www.webcredible.co.uk]: http://www.webcredible.co.uk/user-friendly-resources/css/internet-explorer-7.shtml
   [http://www.mezzoblue.com]: http://www.mezzoblue.com/archives/2005/07/28/ie7_css_upda/

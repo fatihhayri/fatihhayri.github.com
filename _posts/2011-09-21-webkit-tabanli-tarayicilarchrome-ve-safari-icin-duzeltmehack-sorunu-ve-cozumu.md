@@ -46,7 +46,7 @@ Belki küçük bir ipucu ama lazım olur günün birinde
 -   [http://yuilibrary.com/projects/yuicompressor/ticket/2528087][]
 
 
-  [tarayıcı düzeltmelerini]: http://www.fatihhayrioglu.com/tum-tarayicilar-icin-css-duzeltmelerihack/
+  [tarayıcı düzeltmelerini]: http://fatihhayrioglu.com/tum-tarayicilar-icin-css-duzeltmelerihack/
   [http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/]: http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/
   [http://stackoverflow.com/questions/4104004/whats-the-semantic-of-media-screen-and-webkit-min-device-pixel-ratio0]: http://stackoverflow.com/questions/4104004/whats-the-semantic-of-media-screen-and-webkit-min-device-pixel-ratio0
   [http://yuilibrary.com/projects/yuicompressor/ticket/2528087]: http://yuilibrary.com/projects/yuicompressor/ticket/2528087

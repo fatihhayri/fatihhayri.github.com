@@ -171,7 +171,7 @@ alınıyor ve daha hızlı erişiliyor.
 -   [http://snipplr.com/view/25148/jquery-search-text-replace/][]
 -   [http://docs.google.com/Doc?docid=0AXwjxxctLLc5ZGZwYnQ3Z2RfNTBkZjZ3MnJmOA&hl=tr][]
 
-  [İpucu serisinin ilkine buradan ulaşabilirsiniz.]: http://www.fatihhayrioglu.com/jquery-ipuclari/
+  [İpucu serisinin ilkine buradan ulaşabilirsiniz.]: http://fatihhayrioglu.com/jquery-ipuclari/
   [http://drupal.org/node/116548]: http://drupal.org/node/116548
   [http://snipplr.com/view/25148/jquery-search-text-replace/]: http://snipplr.com/view/25148/jquery-search-text-replace/
   [http://docs.google.com/Doc?docid=0AXwjxxctLLc5ZGZwYnQ3Z2RfNTBkZjZ3MnJmOA&hl=tr]: http://docs.google.com/Doc?docid=0AXwjxxctLLc5ZGZwYnQ3Z2RfNTBkZjZ3MnJmOA&hl=tr

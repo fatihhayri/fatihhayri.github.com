@@ -361,12 +361,12 @@ Sınırları zorlayan güzel örnekler
   [Vikipedi]: http://tr.wikipedia.org/wiki/Tipografi "Tipografi tanımı"
   [İnternetteki Tipografi Sorunları ve GörselKirlenmeye Karşı Öneriler]: http://www.fotografya.gen.tr/issue-6/hasip.html
   [Yazı Ölçüsü]: /images/tipografi_olcu.gif
-  [CSS Birimleri]: http://www.fatihhayrioglu.com/?p=95
-  [CSS İLE WEB SAYFASI OLUŞTURMA II]: http://www.fatihhayrioglu.com/?p=179
+  [CSS Birimleri]: http://fatihhayrioglu.com/?p=95
+  [CSS İLE WEB SAYFASI OLUŞTURMA II]: http://fatihhayrioglu.com/?p=179
   [visbone.com]: http://www.visibone.com/font/FontResults.html
   [100]: /images/anti_aliasing.gif
   [serif sans-serif]: /images/serif.gif
-  [Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)]: http://www.fatihhayrioglu.com/?p=294
+  [Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)]: http://fatihhayrioglu.com/?p=294
   [1]: /images/yazi_boyutlari.png
   [BluePrint CSS Anaçatısının]: http://code.google.com/p/blueprintcss/
   [Satırlar arası yükseklik]: /images/line_height.gif

@@ -486,7 +486,7 @@ elemana hem genişlik hemde yatay ve dikey padding veya kenar çizgisi
 atadığımızda(her ikisini atadığımız durumlarda da) ie6 ve diğer
 tarayıcılar arasındaki yorumlama sorununu gidermek için kullandığımız
 bir yöntemdir. Ayrıntılı bilgi almak için
-[http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/][]
+[http://fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/][]
 inceleyin.
 
 Tablomuz standart bir tablo en sağdaki kolonumuz sayıları içeren farklı
@@ -982,25 +982,25 @@ ve anlatımını yapıyorum.
 Bir sonraki makalem **Alt Sayfaların Kodlaması** ile ilgili olacaktır.
 görüşmek dileğiyle hoşçakalın.
 
-  [I -Kodlama Öncesi Hazırlıklar]: http://www.fatihhayrioglu.com/fanatikmarslar-com-sitesinin-kodlamasi/
+  [I -Kodlama Öncesi Hazırlıklar]: http://fatihhayrioglu.com/fanatikmarslar-com-sitesinin-kodlamasi/
   [100]: /images/anasayfa_kuc.jpg
     "anasayfa_kuc"
   [1]: /images/ardalan-266x300.jpg
     "ardalan"
-  [IE6'un Tekrarlayan Karakter Sorunu]: http://www.fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/
+  [IE6'un Tekrarlayan Karakter Sorunu]: http://fatihhayrioglu.com/ie6un-tekrarlayan-karakter-sorunu/
   [2]: /images/ders_03-300x113.jpg
     "ders_03"
-  [CSS kod Yazma Düzeni]: http://www.fatihhayrioglu.com/css-kod-yazma-duzeni/
-  [tıklayınız]: http://www.fatihhayrioglu.com/tum-tarayicilar-icin-css-duzeltmelerihack/
+  [CSS kod Yazma Düzeni]: http://fatihhayrioglu.com/css-kod-yazma-duzeni/
+  [tıklayınız]: http://fatihhayrioglu.com/tum-tarayicilar-icin-css-duzeltmelerihack/
   [3]: /images/icerik_alani.jpg
     "icerik_alani"
-  [basit menü yapımı]: http://www.fatihhayrioglu.com/basit-resimli-menu-yapmak/
+  [basit menü yapımı]: http://fatihhayrioglu.com/basit-resimli-menu-yapmak/
   [4]: /images/takim_logolari.gif
     "takim_logolari"
   [5]: /images/genel_resim.gif
     "genel_resim"
-  [http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/]: http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
-  [6]: http://www.fatihhayrioglu.com/internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/
+  [http://fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/]: http://fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
+  [6]: http://fatihhayrioglu.com/internet-explorer-6-ve-7-icin-tablo-tr-elementine-kenar-cizgisi-atamak/
   [7]: /images/sosyal_altalan.jpg
     "sosyal_altalan"
   [tıklayınız.]: /dokumanlar/fm/index.html

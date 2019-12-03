@@ -160,7 +160,7 @@ text-decoration:overline;
 </a> </p>
 <p><a href="http://www.yahoo.com" title="Yahoo seç">yahoo </a>
 </p>
-<p><a href="http://www.fatihhayrioglu.com" title="Fatih">fatih </a>
+<p><a href="http://fatihhayrioglu.com" title="Fatih">fatih </a>
 </p>
 </body>
 </html>
@@ -245,7 +245,7 @@ ve etkilesimli kod yazmamızı saglamak.
 -   [http://www.456bereastreet.com/][]
 -   [http://westciv.com/][]
 
-  [(X)HTML Sayfa Yapısı ve CSS Kullanımı]: http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
+  [(X)HTML Sayfa Yapısı ve CSS Kullanımı]: http://fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
   [Basit özellik seçicisi]: /images/basit_ozel_secici.gif
   [tıklayınız.]: /dokumanlar/basit_ozellik_secici.html
   [Özellik Değeri Seçicisi]: /images/ozellik_degeri_secicisi.gif

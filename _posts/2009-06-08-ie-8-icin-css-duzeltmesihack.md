@@ -59,7 +59,7 @@ Testlerimi [ietester][] ile yaptım.
 -   [http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/][]
 -   [http://snipplr.com/view/15167/ie8-csshacks/][]
 -   [http://www.evotech.net/blog/2009/03/ie8-css-support/][]
--   [http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/][]
+-   [http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/][]
 
   [ie8]: /images/ie8.jpg
   [tıklayınız.]: /dokumanlar/ie8_css_duzeltmesi.html
@@ -73,5 +73,5 @@ Testlerimi [ietester][] ile yaptım.
     "http://snipplr.com/view/15167/ie8-csshacks/"
   [http://www.evotech.net/blog/2009/03/ie8-css-support/]: http://www.evotech.net/blog/2009/03/ie8-css-support/
     "http://www.evotech.net/blog/2009/03/ie8-css-support/"
-  [http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/]: http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
-    "http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/"
+  [http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/]: http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
+    "http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/"

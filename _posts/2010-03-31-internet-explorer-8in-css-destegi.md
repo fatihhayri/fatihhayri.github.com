@@ -201,10 +201,10 @@ Hoşçakalın.
 -   [http://www.gtalbot.org/BrowserBugsSection/][]
 -   [http://techblog.procurios.nl/k/news/view/33224/14863/Testing-Internet-Explorer-8-CSS3-for-Web-Design.html][] (CSS3 desteği)
 
-  [Her ne kadar uyumluluk kodu ile İnternet Explorer]: http://www.fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
+  [Her ne kadar uyumluluk kodu ile İnternet Explorer]: http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
     "Her ne kadar uyumluluk kodu ile İnternet Explorer"
   [hasLayout]: http://haslayout.net/ "hasLayout"
-  [Margin çökme]: http://www.fatihhayrioglu.com/kenar-boslugumargin-cokmesi/
+  [Margin çökme]: http://fatihhayrioglu.com/kenar-boslugumargin-cokmesi/
     "Margin çökme"
   [content]: http://reference.sitepoint.com/css/content "content"
   [counter-increment]: http://reference.sitepoint.com/css/counter-increment
@@ -212,36 +212,36 @@ Hoşçakalın.
   [counter-reset]: http://reference.sitepoint.com/css/counter-reset
     "counter-reset"
   [quotes]: http://reference.sitepoint.com/css/quotes "quotes"
-  [caption-side]: http://www.fatihhayrioglu.com/tablo-ozellikleri/
+  [caption-side]: http://fatihhayrioglu.com/tablo-ozellikleri/
     "caption-side"
-  [border-spacing]: http://www.fatihhayrioglu.com/tablo-ozellikleri/
+  [border-spacing]: http://fatihhayrioglu.com/tablo-ozellikleri/
     "border-spacing"
-  [border-collapse]: http://www.fatihhayrioglu.com/tablo-ozellikleri/
+  [border-collapse]: http://fatihhayrioglu.com/tablo-ozellikleri/
     "border-collapse"
-  [border-style]: http://www.fatihhayrioglu.com/tablo-ozellikleri/
+  [border-style]: http://fatihhayrioglu.com/tablo-ozellikleri/
     "border-style"
-  [empty-cells]: http://www.fatihhayrioglu.com/tablo-ozellikleri/
+  [empty-cells]: http://fatihhayrioglu.com/tablo-ozellikleri/
     "empty-cells"
-  [font-weight]: http://www.fatihhayrioglu.com/font-ozellikleri/
+  [font-weight]: http://fatihhayrioglu.com/font-ozellikleri/
     "font-weight"
-  [white-space]: http://www.fatihhayrioglu.com/css-siniflandirma-liste-ozellikleri/
+  [white-space]: http://fatihhayrioglu.com/css-siniflandirma-liste-ozellikleri/
     "white-space"
-  [word-spacing]: http://www.fatihhayrioglu.com/cssde-metintext-ozellikleri/
+  [word-spacing]: http://fatihhayrioglu.com/cssde-metintext-ozellikleri/
     "word-spacing"
   [@page]: http://reference.sitepoint.com/css/pagedmedia "@page"
   [page-break-inside]: http://reference.sitepoint.com/css/page-break-inside
     "page-break-inside"
   [widows]: http://reference.sitepoint.com/css/widows "widows"
   [orphans]: http://reference.sitepoint.com/css/orphans "orphans"
-  [Dış hat çizgisi özellikleri]: http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
+  [Dış hat çizgisi özellikleri]: http://fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
     "Dış hat çizgisi özellikleri"
-  [outline]: http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
+  [outline]: http://fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
     "outline"
-  [outline-color]: http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
+  [outline-color]: http://fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
     "outline-color"
-  [outline-style]: http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
+  [outline-style]: http://fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
     "outline-style"
-  [outline-width]: http://www.fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
+  [outline-width]: http://fatihhayrioglu.com/dis-hat-cizgisioutline-ozellikleri/
     "outline-width"
   [-ms-accelerator]: http://msdn.microsoft.com/en-us/library/ms530713%28v=VS.85%29.aspx
   [-ms-background-position-x]: http://msdn.microsoft.com/en-us/library/ms530719%28v=VS.85%29.aspx

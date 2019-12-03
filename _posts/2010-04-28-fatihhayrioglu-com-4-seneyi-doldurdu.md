@@ -21,4 +21,4 @@ anasayfadan daha çok ziyaret edilmesi. Önümüzdeki senenin daha güzel
 geçeceğini ümit ediyorum.
 
 
-  [css dersleri]: http://www.fatihhayrioglu.com/css-dersleri/
+  [css dersleri]: http://fatihhayrioglu.com/css-dersleri/

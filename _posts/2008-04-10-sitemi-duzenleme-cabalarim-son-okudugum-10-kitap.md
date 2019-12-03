@@ -32,17 +32,17 @@ Bu kısım liste elemanları ile oluşturulmaktadır.
 	<div class="smallbox">
 	    <h3>Okuduğum kitaplar</h3>
 	    <ul>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=468" title="Sürgünden Soykırma Ermeni İddaları – Yusuf Halaçoğlu">Sürgünden Soykırma Ermeni İddaları – Yusuf Halaçoğlu</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=465" title="Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı – Yılmaz Öztuna">Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı –
+	        <li><a href="http://fatihhayrioglu.com/?p=468" title="Sürgünden Soykırma Ermeni İddaları – Yusuf Halaçoğlu">Sürgünden Soykırma Ermeni İddaları – Yusuf Halaçoğlu</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=465" title="Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı – Yılmaz Öztuna">Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı –
 	        Yılmaz Öztuna</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=458" title="Batının Oluşumu – Christopher DAWSON">Batının Oluşumu – Christopher DAWSON</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=439" title="Ölüm Daha Güzeldi – Mehmet Niyazi ">Ölüm Daha Güzeldi – Mehmet Niyazi </a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=436" title="Petrol Fırtınası – Raif Karadağ">Petrol Fırtınası – Raif Karadağ</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=426" title="CSS Mastery: Advanced Web Standards Solutions – Andy Budd">CSS Mastery: Advanced Web Standards Solutions – Andy Budd</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=415" title="Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus – Haşim Albayrak">Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus – Haşim Albayrak</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=406" title="Süleyman Çelebi ve Mevlid-i Şerif – Ahmed Aymutlu">Süleyman Çelebi ve Mevlid-i Şerif – Ahmed Aymutlu</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=402" title="İçimizde Bir Yer – Ahmet Altan">İçimizde Bir Yer – Ahmet Altan</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=398" title="Adnan Menderes’in Günlüğü – Taşkın Tuna">Adnan Menderes’in Günlüğü – Taşkın Tuna</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=458" title="Batının Oluşumu – Christopher DAWSON">Batının Oluşumu – Christopher DAWSON</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=439" title="Ölüm Daha Güzeldi – Mehmet Niyazi ">Ölüm Daha Güzeldi – Mehmet Niyazi </a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=436" title="Petrol Fırtınası – Raif Karadağ">Petrol Fırtınası – Raif Karadağ</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=426" title="CSS Mastery: Advanced Web Standards Solutions – Andy Budd">CSS Mastery: Advanced Web Standards Solutions – Andy Budd</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=415" title="Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus – Haşim Albayrak">Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus – Haşim Albayrak</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=406" title="Süleyman Çelebi ve Mevlid-i Şerif – Ahmed Aymutlu">Süleyman Çelebi ve Mevlid-i Şerif – Ahmed Aymutlu</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=402" title="İçimizde Bir Yer – Ahmet Altan">İçimizde Bir Yer – Ahmet Altan</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=398" title="Adnan Menderes’in Günlüğü – Taşkın Tuna">Adnan Menderes’in Günlüğü – Taşkın Tuna</a></li>
 	    </ul>
 	</div>
 
@@ -60,17 +60,17 @@ yaptım:
 	<div id="okudugumKitaplarKapsul" class="smallbox">
 	<h3>Okuduğum kitaplar</h3>
 	    <ul id="okudugumKitaplar">
-	        <li><a href="http://www.fatihhayrioglu.com/?p=468" title="Sürgünden Soykırma Ermeni İddaları – Yusuf Halaçoğlu">Sürgünden Soykırma Ermeni İddaları – Yusuf Halaçoğlu</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=465" title="Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı – Yılmaz Öztuna">Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı –
+	        <li><a href="http://fatihhayrioglu.com/?p=468" title="Sürgünden Soykırma Ermeni İddaları – Yusuf Halaçoğlu">Sürgünden Soykırma Ermeni İddaları – Yusuf Halaçoğlu</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=465" title="Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı – Yılmaz Öztuna">Avrupa Türkiyesi’ni Kaybımız Rumeli’nin Elden Çıkışı –
 	        Yılmaz Öztuna</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=458" title="Batının Oluşumu – Christopher DAWSON">Batının Oluşumu – Christopher DAWSON</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=439" title="Ölüm Daha Güzeldi – Mehmet Niyazi ">Ölüm Daha Güzeldi – Mehmet Niyazi </a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=436" title="Petrol Fırtınası – Raif Karadağ">Petrol Fırtınası – Raif Karadağ</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=426" title="CSS Mastery: Advanced Web Standards Solutions – Andy Budd">CSS Mastery: Advanced Web Standards Solutions – Andy Budd</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=415" title="Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus – Haşim Albayrak">Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus – Haşim Albayrak</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=406" title="Süleyman Çelebi ve Mevlid-i Şerif – Ahmed Aymutlu">Süleyman Çelebi ve Mevlid-i Şerif – Ahmed Aymutlu</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=402" title="İçimizde Bir Yer – Ahmet Altan">İçimizde Bir Yer – Ahmet Altan</a></li>
-	        <li><a href="http://www.fatihhayrioglu.com/?p=398" title="Adnan Menderes’in Günlüğü – Taşkın Tuna">Adnan Menderes’in Günlüğü – Taşkın Tuna</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=458" title="Batının Oluşumu – Christopher DAWSON">Batının Oluşumu – Christopher DAWSON</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=439" title="Ölüm Daha Güzeldi – Mehmet Niyazi ">Ölüm Daha Güzeldi – Mehmet Niyazi </a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=436" title="Petrol Fırtınası – Raif Karadağ">Petrol Fırtınası – Raif Karadağ</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=426" title="CSS Mastery: Advanced Web Standards Solutions – Andy Budd">CSS Mastery: Advanced Web Standards Solutions – Andy Budd</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=415" title="Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus – Haşim Albayrak">Tarih Boyunca Doğu Karadeniz’de Etnik Yapılanmalar ve Pontus – Haşim Albayrak</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=406" title="Süleyman Çelebi ve Mevlid-i Şerif – Ahmed Aymutlu">Süleyman Çelebi ve Mevlid-i Şerif – Ahmed Aymutlu</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=402" title="İçimizde Bir Yer – Ahmet Altan">İçimizde Bir Yer – Ahmet Altan</a></li>
+	        <li><a href="http://fatihhayrioglu.com/?p=398" title="Adnan Menderes’in Günlüğü – Taşkın Tuna">Adnan Menderes’in Günlüğü – Taşkın Tuna</a></li>
 	    </ul>
 	</div>
 

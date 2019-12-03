@@ -431,13 +431,13 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
 -   [http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/][]
 -   [http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/][]
 -   [http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx][]
--   [http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/][]
--   [http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/][]
+-   [http://fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/][]
+-   [http://fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/][]
 -   http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors
 -   [http://blog.typekit.com/2011/02/10/type-study-an-all-css-button/][]
 
   [100]: /images/csss_buton_01.gif
-  [CSS ile Erişilebilir Formlar Yapmak – I]: http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-i/
+  [CSS ile Erişilebilir Formlar Yapmak – I]: http://fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-i/
   [1]: /images/csss_buton_02.gif
   [tıklayınız.]: /dokumanlar/buton_olusturmak/3b_buton.html
   [2]: /images/csss_buton_03.gif
@@ -472,6 +472,6 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
   [http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/]: http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/
   [http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/]: http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/
   [http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx]: http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx
-  [http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/]: http://www.fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/
-  [http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/]: http://www.fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/
+  [http://fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/]: http://fatihhayrioglu.com/css-ile-erisilebilir-formlar-yapmak-ii/
+  [http://fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/]: http://fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/
   [http://blog.typekit.com/2011/02/10/type-study-an-all-css-button/]: http://blog.typekit.com/2011/02/10/type-study-an-all-css-button/

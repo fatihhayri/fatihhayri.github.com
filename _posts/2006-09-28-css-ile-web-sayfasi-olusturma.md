@@ -248,13 +248,13 @@ yapıdan sonraki kadamelerde(4,5 vd.) tüm katmanlara float:left verilerek
 oluşturmak daha mantıklı ve kolay olur.
 
   [Zen Garden'ın]: http://www.csszengarden.com/
-  [CSS ile   konumlandırma(positioning)]: http://www.fatihhayrioglu.com/?p=151
-  [Float ve Clear özellikler ile konumlandırma]: http://www.fatihhayrioglu.com/?p=160
-  [margin]: http://www.fatihhayrioglu.com/?p=113
+  [CSS ile   konumlandırma(positioning)]: http://fatihhayrioglu.com/?p=151
+  [Float ve Clear özellikler ile konumlandırma]: http://fatihhayrioglu.com/?p=160
+  [margin]: http://fatihhayrioglu.com/?p=113
   [100]: /images/ikikolon.gif
-  [CSS ile sayfalarımızı ve   elementlerimizi ortalamak]: http://www.fatihhayrioglu.com/css-ile-sayfalarimizi-ve-elementlerimizi-ortalamak/
+  [CSS ile sayfalarımızı ve   elementlerimizi ortalamak]: http://fatihhayrioglu.com/css-ile-sayfalarimizi-ve-elementlerimizi-ortalamak/
   [tıklayınız.]: /dokumanlar/sabit_genislikli_websitesi.html
-  [CSS ile Kutu modeli,   sorunları ve çözümleri]: http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
+  [CSS ile Kutu modeli,   sorunları ve çözümleri]: http://fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
   [1]: /dokumanlar/elastik_ikikolonlu_websitesi.html
   [2]: /images/uckolon.gif
   [3]: /dokumanlar/sabit_uckolonlu_websitesi.html

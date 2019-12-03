@@ -14,5 +14,5 @@ Ayrıca Photoshop mu Fireworks mu? kararınıda vermek gerekecek.
 Alışkanlıklar kolay bırakılmadığı için Photoshop ile devam edecek
 gibiyiz.
 
-  [Adobe Macromedia Dreamweaver CS4 Beta]: http://www.fatihhayrioglu.com/?p=505
+  [Adobe Macromedia Dreamweaver CS4 Beta]: http://fatihhayrioglu.com/?p=505
   [tıklayınız.]: http://www.adobe.com/tr/products/creativesuite/web/features/

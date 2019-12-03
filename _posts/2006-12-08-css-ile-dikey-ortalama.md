@@ -90,7 +90,7 @@ Aşağıdaki kod IE5+,FF, Opera 7, Konqueror 3.0.3 altında standart ve
 -   [http://www.hicksdesign.co.uk/][]
 -   [http://www.student.oulu.fi/][]
 
-  [garip mod]: http://www.fatihhayrioglu.com/dogru-doctype-kullanimi/
+  [garip mod]: http://fatihhayrioglu.com/dogru-doctype-kullanimi/
   [tıklayınız.]: /dokumanlar/dikey_ortalama_ornek1.html
   [http://www.jakpsatweb.cz/]: http://www.jakpsatweb.cz/css/css-vertical-center-solution.html
   [http://wellstyled.com/]: http://wellstyled.com/singlelang.php?lang=en&page=css-single-line-vertical-centering.html

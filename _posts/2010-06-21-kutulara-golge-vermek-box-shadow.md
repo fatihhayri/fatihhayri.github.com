@@ -6,7 +6,7 @@ Category: CSS, Web Standartları, XHTML
 tags: [box-shadow, css3, gölgeli kutular, kutu gölgesi]
 ---
 
-<s>Şuanki şartlar düşünüldüğünde normal olarak bir kutunun gölgesini vermek için daha öncede açıkladığımız gibi bir kaç yöntem var. Bu yöntemleri incelemek için http://www.fatihhayrioglu.com/css-ile-golge-vermek/ bağlantısındaki yazıya göz atalım.</s> Buradaki yöntemleri incelediğimizde çok fazla gereksiz ve fazladan katman(div) kullanmak zorunda kaldığımızı
+<s>Şuanki şartlar düşünüldüğünde normal olarak bir kutunun gölgesini vermek için daha öncede açıkladığımız gibi bir kaç yöntem var. Bu yöntemleri incelemek için http://fatihhayrioglu.com/css-ile-golge-vermek/ bağlantısındaki yazıya göz atalım.</s> Buradaki yöntemleri incelediğimizde çok fazla gereksiz ve fazladan katman(div) kullanmak zorunda kaldığımızı
 göreceksiniz. CSS3 ile gelen box-shadow özelliği sayesinde çok basit bir tanımlama ile bu fazlalıklar ve zorluklardan kurtulabiliyoruz.
 
 box-shadow yapısını inceleyelim.

@@ -249,8 +249,8 @@ kolaylıklar sağlıyor.
 -   [http://www.creativejuiz.fr/blog/tutoriels/ombre-avancees-avec-css3-et-box-shadow][] (güzel incele)
 
 
-  [kutulara gölge verme]: http://www.fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/
-  [Önceki makalede]: http://www.fatihhayrioglu.com/coklu-kenar-cizgisiborder-kullanimi/
+  [kutulara gölge verme]: http://fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/
+  [Önceki makalede]: http://fatihhayrioglu.com/coklu-kenar-cizgisiborder-kullanimi/
   [http://theburningmonk.com/2010/12/having-fun-with-css3-box-shadow-property/]: http://theburningmonk.com/2010/12/having-fun-with-css3-box-shadow-property/
   [http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/]: http://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/
   [http://www.red-team-design.com/how-to-create-slick-effects-with-css3-box-shadow]: http://www.red-team-design.com/how-to-create-slick-effects-with-css3-box-shadow

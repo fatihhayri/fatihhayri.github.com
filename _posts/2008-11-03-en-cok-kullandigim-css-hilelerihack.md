@@ -153,10 +153,10 @@ ekleyebiliriz.
 
 ![Dreamweaver Sineppet Penceresi][4]
 
-  [Kutu modeli sorunları ve çözüm önerilerinde]: http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri
+  [Kutu modeli sorunları ve çözüm önerilerinde]: http://fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri
     "Kutu modeli sorunları ve çözüm önerilerinde"
   [float sorunu]: /images/clearfix_sorun.gif
-  [CSS Derslerindeki]: http://www.fatihhayrioglu.com/css-dersleri
+  [CSS Derslerindeki]: http://fatihhayrioglu.com/css-dersleri
     "CSS Dersleri Sayfası"
   [Dreamweaver Sineppet Penceresi]: /images/snippets13.gif
   [1]: /images/snippets2.gif

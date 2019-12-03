@@ -57,5 +57,5 @@ Kardeş Seçicilerini tercih edeceğiz.  :D
 
 Kalın sağlıcakla.
 
-  [İnternet Explorer 6 sürümü desteğini kaldırdıktan]: http://www.fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/
+  [İnternet Explorer 6 sürümü desteğini kaldırdıktan]: http://fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/
   [100]: https://lh3.googleusercontent.com/iwqzp6tzoCPEOEadycd9Sfi5kZOPYqGhmNHUGkqZuH3Gic9JtK8wSlqtXyXZSyWW1c4MmoF12aID4C4WJEMbsWAbUjBU8VOEJ9pzX54JLqUzkAeJdIo

@@ -240,9 +240,9 @@ düşünüyorum. Hoşçakalın.
 
 -   [http://www.jankoatwarpspeed.com/post/2008/05/22/CSS-Message-Boxes-for-different-message-types.aspx][]
 
-  [CSS Kodlama Teknikleri ve CSS Kodlarını Azaltma Yöntemleri]: http://www.fatihhayrioglu.com/css-kodlarini-temizlemeazaltma/
+  [CSS Kodlama Teknikleri ve CSS Kodlarını Azaltma Yöntemleri]: http://fatihhayrioglu.com/css-kodlarini-temizlemeazaltma/
     "CSS Kodlama Teknikleri ve CSS Kodlarını Azaltma   Yöntemleri"
-  [Basit Resimli Menü Yapmak]: http://www.fatihhayrioglu.com/basit-resimli-menu-yapmak/
+  [Basit Resimli Menü Yapmak]: http://fatihhayrioglu.com/basit-resimli-menu-yapmak/
     "Basit Resimli Menü Yapmak"
   [tıklayınız.]: /dokumanlar/kodazaltma2/bilgilendirme_1.html
   [1]: /dokumanlar/kodazaltma2/bilgilendirme_2.html

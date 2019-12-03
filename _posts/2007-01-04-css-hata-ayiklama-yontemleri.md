@@ -172,15 +172,15 @@ da biz burada genel kabul görmüş yöntemleri yazmayı uygun bulduk.
 -   [http://tantek.com/CSS/Examples/boxmodelhack.html][tantek]
 -   http://www.albin.net/CSS/OwenHack.html
 
-  [IE'de Hata Ayıklamak için şžartlı Yorumlar Kullanmak]: http://www.fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/
+  [IE'de Hata Ayıklamak için şžartlı Yorumlar Kullanmak]: http://fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/
     "IE'de Hata Ayıklamak için şartlı Yorumlar Kullanmak"
-  [tıklayınız]: http://www.fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
-  [IE 7 Çocuk Seçicilerini desteklemektedir.]: http://www.fatihhayrioglu.com/internet-explorer-7-ve-css/
+  [tıklayınız]: http://fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
+  [IE 7 Çocuk Seçicilerini desteklemektedir.]: http://fatihhayrioglu.com/internet-explorer-7-ve-css/
   [tantek]: http://tantek.com/CSS/Examples/boxmodelhack.html
-  [metodu]: http://www.fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
-  [1]: http://www.fatihhayrioglu.com/?p=13
-  [Css de kodumuzu İE'den gizleme]: http://www.fatihhayrioglu.com/?p=31
-  [IE'da min-width, min-height,max-width, max-height Kullanmak]: http://www.fatihhayrioglu.com/?p=182
+  [metodu]: http://fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
+  [1]: http://fatihhayrioglu.com/?p=13
+  [Css de kodumuzu İE'den gizleme]: http://fatihhayrioglu.com/?p=31
+  [IE'da min-width, min-height,max-width, max-height Kullanmak]: http://fatihhayrioglu.com/?p=182
   [http://www.webdevout.net/articles/css_hacks.php]: http://www.webdevout.net/articles/css_hacks.php
   [http://css-discuss.incutio.com/?page=CssHack]: http://css-discuss.incutio.com/?page=CssHack
   [http://www.quirksmode.org/css/csshacks.html]: http://www.quirksmode.org/css/csshacks.html

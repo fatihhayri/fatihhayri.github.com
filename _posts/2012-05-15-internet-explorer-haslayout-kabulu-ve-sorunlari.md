@@ -126,7 +126,7 @@ Kalın sağlıcakla
 
   [Mosaic]: http://en.wikipedia.org/wiki/Mosaic_web_browser
   [Trident]: http://en.wikipedia.org/wiki/Trident_(layout_engine)
-  [ie6’yı öldürdük]: http://www.fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/
+  [ie6’yı öldürdük]: http://fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/
   [%7(makaleyi yazdığımda idi şimdi %4,5 kadar düştü)]: http://labs.sahibinden.com/yazi/sahibinden-com-ziyaretcileri-2011-yili-teknoloji-analizi/
   [http://reference.sitepoint.com/css/haslayout]: http://reference.sitepoint.com/css/haslayout
   [http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx]: http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx
