@@ -42,7 +42,7 @@ grid-template-columns: repeat(12, 1fr);
 <iframe height="300" style="width: 100%;" scrolling="no" title="CSS grid repeat " src="https://codepen.io/fatihhayri/embed/OJJeeEb?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-Bu kadar. Nasıl çok basit değil mi?
+Bu kadar. Nasıl, çok basit değil mi?
 
 ```css
 repeat(12, 1fr)
@@ -67,7 +67,9 @@ grid-template-columns: repeat(4, 40px 1fr 2fr);
 <iframe height="300" style="width: 100%;" scrolling="no" title="CSS grid repeat 2" src="https://codepen.io/fatihhayri/embed/GRRVKJB?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-Solda 40px ile başladık ancak en sağa 40px tekrar etmediği için koyamadık. Izgara izi tanımlarında `repeat` işlevini tekrar etmeyen değerlerle birlikte de kullanabiliyoruz.
+**Tekrarlayan ve tekrarlamayan ögelerin birlikte kullanımı**
+
+Izgara izi tanımlarında `repeat` işlevini tekrar etmeyen değerlerle birlikte de kullanabiliyoruz. Yukarıdaki örnekte en sağa 40px'lik bir kolon daha ekleyelim mesela.
 
 ```css
 display: grid;
@@ -122,14 +124,14 @@ grid-template-columns: repeat(auto-fill, 200px);
 grid-template-columns: repeat(auto-fit, 200px);
 ```
 
-`auto-fill` ile `auto-fit` tanımlarının arasındaki fark ancak satır genişliğinin, grid ögelerinin toplam genişliğinden daha fazla olduğu durumlarda ortaya çıkar.  `auto-fill` ile `auto-fit` tanımları sayesinde grid ögelerinin fazladan kalan boşluğu nasıl değerlendirmesi gerektiğine biz karar verirriz. Aşağıdaki hareketli giflerde durum daha iyi anlaşılır.
+`auto-fill` ile `auto-fit` tanımlarının arasındaki fark ancak satır genişliğinin, grid ögelerinin toplam genişliğinden daha fazla olduğu durumlarda ortaya çıkar.  `auto-fill` ile `auto-fit` tanımları sayesinde grid ögelerinin fazladan kalan boşluğu nasıl değerlendirmesi gerektiğine biz karar veririz. Aşağıdaki hareketli giflerde durum daha iyi anlaşılır.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="CSS grid repeat, auto-fill ve auto-fit" src="https://codepen.io/fatihhayri/embed/vYEYgBj?height=300&theme-id=13521&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 ![auto-fill auto-fit karşılaştırma](https://fatihhayrioglu.com/images/repeat-auto-fill-auto-fit.gif)
 
-Hareketli gif'te görüldüğü gibi kapsayıcı genişliği içerik toplam genişliğini geçince fark anlaşılıyor. `auto-fill`tanımında boş kolonlar eklerken, `auto-fit`tanımında boş alanları mevcut öge genişliğine ekliyor.  
+Hareketli gif'te görüldüğü gibi kapsayıcı genişliği içerik toplam genişliğini geçince fark anlaşılıyor. `auto-fill`tanımında boş kolonlar eklerken, `auto-fit`tanımında boş alanları mevcut öge genişliğine ekliyor.
 
 Farkı görmek için bir diğer örnek ise [Wes Bos'un videosunda anlattığı örnek](https://www.youtube.com/watch?v=asfqwwrXis4&t=5s).
 
