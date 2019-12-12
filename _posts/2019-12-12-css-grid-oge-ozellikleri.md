@@ -27,9 +27,9 @@ Grid yazılarımızın 9. sındayız. Bu yazıda grid öge özelliklerine değin
 
 Bu tanımlar genelde grid izi sayıları üzerinden yapılıyor. Bu sayılar soldan sağa doğru yazılan diller için soldan sağa iken sağdan sola yazılan diller için sağdan sola numaralandırılır. Bir de `grid-template-area` ile kullandığımız ve grid ögelerine tanımladığımız grid isimleriyle de aynı şeyleri yapabiliriz. 
 
-`grid-column-start`, `grid-column-end`, `grid-row-start` ve `grid-row-end` tanımları ve bu tanımların kısayolları olan `grid-column`, `grid-row` ve `grid-area` tanımlarını anlatmaya çalışacağız. Son olarakta `span` anahtar kelime değerinden bahsedeceğiz.
+`grid-column-start`, `grid-column-end`, `grid-row-start` ve `grid-row-end` tanımları ve bu tanımların kısayolları olan `grid-column`, `grid-row` ve `grid-area` tanımlarını anlatmaya çalışacağız. Son olarak da `span` anahtar kelime değerinden bahsedeceğiz.
  
-Bu tanımlar css grid ögesinin sol/sağ ve üst/alt sınırlarını belirler. Sırasıyla `grid-columm-start/grid-column-end` ve `grid-row-start/grid-row-end` tanılarıyla bu işi yapıyoruz.
+Bu tanımlar css grid ögesinin sol/sağ ve üst/alt sınırlarını belirler. Sırasıyla `grid-columm-start/grid-column-end` ve `grid-row-start/grid-row-end` tanımlarıyla bu işi yapıyoruz.
 
 ```css
 .icerik {
@@ -66,7 +66,7 @@ Kolon tanımı tek bir hücreyi kapsadığı için tanımını aşağıdaki gibi
 
 ### Negatif değerler
 
-Grid öge tanımlarında sadece artı değerler değil eksi değerlede kullanılanbilir. Negatif değerler tanımlı ızgara çizgilerinin sondan başa doğru tanımlamamızı sağlar. Bu tanımlar kapsayıcı elemanın alt/sağ çizgilerine göre yerleştirme yapar.
+Grid öge tanımlarında sadece artı değerler değil eksi değerle de kullanılabilir. Negatif değerler tanımlı ızgara çizgilerinin sondan başa doğru tanımlamamızı sağlar. Bu tanımlar kapsayıcı elemanın alt/sağ çizgilerine göre yerleştirme yapar.
 
 ```css
 .ust-alan {
@@ -134,7 +134,7 @@ Yukarıda yaptığımız kısaltmayı daha da kısaltabiliriz. Kolon ve satırla
 grid-area: row-start / col-start / row-end / col-end;
 ```
 
-Sıralamayı unutursanız, hatırlamak için şöyle düşüne bilirsiniz: ilk üst/sol (row-start / column-start)  sonra alt/sağ (row-end / column-end) tanımlarının geldiğini düşünün. 
+Sıralamayı unutursanız, hatırlamak için şöyle düşünebilirsiniz: ilk üst/sol (row-start / column-start)  sonra alt/sağ (row-end / column-end) tanımlarının geldiğini düşünün. 
 
 ```css
 .tanitim {
