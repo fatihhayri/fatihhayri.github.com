@@ -269,6 +269,12 @@ Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](https://fatihhayrioglu.
         -   [CSS Grid Özellikleri](/css-grid-ozellikleri/)
         -   [fr birimi](/fr-birimi/)
         -   [CSS Izgara çizgi isimlendirmesi ve kullanımı](/grid-izgara-cizgi-isimlendirmesi-ve-kullanimi/)
+        -   [CSS Izgara çizgi isimlendirmesi ve kullanımı](/css-izgara-cizgi-isimlendirmesi-ve-kullanimi/)
+        -   [Sayfa planlama sihirbazı grid-template-areas](/sayfa-planlama-sihirbazi-grid-template-areas/ "Sayfa planlama sihirbazı grid-template-areas")
+        -   [Explicit(belirlenmiş) ve implicit(belirlenmemiş) grid ögeleri](/explicit-belirlenmis-ve-implicit-belirlenmemis-grid-ogeleri/)
+        -   [CSS minmax işlevsel değeri](/css-minmax-islevsel-degeri/)
+        -   [repeat() işlevi, auto-fill ve auto-fit değerleri](/repeat-islevi-auto-fill-ve-auto-fit-degerleri/)
+        -   [CSS Grid öge özellikleri](/css-grid-oge-ozellikleri/)
         
 
 -   CSS Kaynakları
