@@ -22,7 +22,7 @@ image:
 
 CSS grid yazılarımızın 10. sundayız. Yazımızın konusu hizalama ve sıralama hakkında olacaktır.
 
-CSS grid ögesi ve kapsayıcısına atanan toplam 9 adet hizalama tanımları vardır. 
+CSS grid ögesi ve kapsayıcısına atanan toplam **9 adet** hizalama tanımları vardır. 
 
  - `justify-items`
  - `align-items`
@@ -34,11 +34,11 @@ CSS grid ögesi ve kapsayıcısına atanan toplam 9 adet hizalama tanımları va
  - `align-self`
  - `place-self` 
 
-[W3C'nin kutu modeli hizalama modülü](https://www.w3.org/TR/css-align-3/) olarak belirlediği modülün özellikleridir bunlar. Hem grid hemde flex hizalamaları için kullanılır. 
+Yukarıdaki tanımlar [W3C'nin kutu modeli hizalama modülü](https://www.w3.org/TR/css-align-3/) olarak belirlediği modülün özellikleridir. Hem grid hem de flex hizalamaları için kullanılır. 
 
-`justify-items`, `align-items`, tanımlarıyla `justify-content`, `align-content`,  tanımları arasındaki fark `-items` ile bitenlere atanan değerler kapsayıcı içindeki her bir ögeye ayrı ayrı uygulanırken, `-content` ile bitenlere atananlar kapsayıcı içindeki ögelerin hepsi bir içerik olarak kabul edilip topluca uygulanırlar.
+`justify-items`, `align-items`, tanımlarıyla `justify-content`, `align-content`,  tanımları arasındaki fark `-items` ile bitenlere atanan değerler, kapsayıcı içindeki **her bir ögeye** ayrı ayrı uygulanırken, `-content` ile bitenlere atananlar kapsayıcı içindeki ögelerin **hepsi bir içerik** olarak kabul edilip topluca uygulanırlar.
 
-Eğer [flex hizalama özelliklerini ve etkilerini](https://fatihhayrioglu.com/yenilenmis-flex-modulu/) biliyorsanız benzer şeyler grid içinde geçerlidir. Grid ögelerinin hizalamasında flex'e göre şöyle bir fark vardır: grid iki eksen üzerine etki ederken flex tek eksene etki eder.
+Eğer [flex hizalama özelliklerini ve etkilerini](https://fatihhayrioglu.com/yenilenmis-flex-modulu/) biliyorsanız benzer şeyler grid için de geçerlidir. Grid ögelerinin hizalamasında flex'e göre şöyle bir fark vardır: grid iki eksen üzerine (X,Y) etki ederken flex tek eksene etki eder.
 
 ![iki eksenli planlama](https://fatihhayrioglu.com/images/iki-eksenli.png)
 
@@ -91,7 +91,7 @@ Kapsayıcı grid içindeki ögelerinin tamamının yatayda hizalanması için ku
 
 ![justify-items](https://fatihhayrioglu.com/images/justify-items.png)
 
-Yatayda tüm grid ögelerini ortlamış olduk. Grid ögesinin içeriği grid hücresinin alanından daha büyükse bu özellik işlevsel olur.
+Yatayda tüm grid ögelerini ortalamış olduk. Grid ögesinin içeriği grid hücresinin alanından daha büyükse bu özellik işlevsel olur.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="justify-items" src="https://codepen.io/fatihhayri/embed/jOEVOyM?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
@@ -114,7 +114,7 @@ Kapsayıcı grid içindeki ögelerinin tamamının dikeyde hizalanması için ku
 
 ![align-items](https://fatihhayrioglu.com/images/align-items.png)
 
-Dikeyde tüm grid ögelerini ortlamış olduk. 
+Dikeyde tüm grid ögelerini ortalamış olduk. 
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="align-items" src="https://codepen.io/fatihhayri/embed/PowpwMp?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
@@ -141,7 +141,7 @@ Dikeyde tüm grid ögelerini ortlamış olduk.
 
 ### justify-content
 
-Grid ögelerinin genişliği kapsayıcıdan az olduğu durumlar için etkindir. Grid kapsayıcı içindeki ögeleri tek bir içerik gibi kabul edip ona göre atanan değerleri uygular. `justify-content` yatayda hizalama yapar.
+Grid ögelerinin genişliği, kapsayıcıdan az olduğu durumlar için etkindir. Grid kapsayıcı, içindeki ögeleri tek bir içerik gibi kabul edip ona göre atanan değerleri uygular. `justify-content` yatayda hizalama yapar.
 
 Yukarıdaki değerlere ek olarak 
 
@@ -168,7 +168,7 @@ değerlerini de alır.
 <iframe height="384" style="width: 100%;" scrolling="no" title="justify-content" src="https://codepen.io/fatihhayri/embed/YzPZXWG?height=384&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-Grid kapsayıcı içindeki tüm ögeler bir içerik gibi kabul edip tümü birden yatayda ortalandı.
+Grid kapsayıcı, içindeki tüm ögeler bir içerik gibi kabul edip tümü birden yatayda ortalandı.
 
 ### align-content
 Grid ögelerinin yüksekliği kapsayıcıdan az olduğu durumlar için etkindir. Grid kapsayıcı içindeki ögeleri tek bir içerik gibi kabul edip ona göre atanan değerleri uygular. `align-content` tanımı içeriği dikeyde hizalar.
@@ -197,7 +197,7 @@ değerlerini de alır.
 <iframe height="420" style="width: 100%;" scrolling="no" title="align-content" src="https://codepen.io/fatihhayri/embed/vYExOYK?height=420&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-Grid kapsayıcı içindeki tüm ögeler bir içerik gibi kabul edilip tümü birden dikeyde ortalandı.
+Grid kapsayıcı, içindeki tüm ögeler bir içerik gibi kabul edilip tümü birden dikeyde ortalandı.
 
 ### place-content kısaltması
 
@@ -231,7 +231,7 @@ Aldığı değerler kapsayıcı değerleriyle aynıdır.
 
 ### justify-self
 
-Tanımlandığı Css grid ögesinin yatayda hazilanmasını sağlar.
+Tanımlandığı CCC grid ögesinin yatayda hizalanmasını sağlar.
 
 ```css
 .oge1 {
@@ -244,7 +244,7 @@ Tanımlandığı Css grid ögesinin yatayda hazilanmasını sağlar.
 <iframe height="378" style="width: 100%;" scrolling="no" title="justify-self" src="https://codepen.io/fatihhayri/embed/PowpqRQ?height=378&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-`oge1`sınıfı tanımlı ilk eleman belirlenen hücrenin başlangıç çizgisine hizalanmıştır.
+`oge1` sınıfı tanımlı ilk eleman belirlenen hücrenin başlangıç çizgisine hizalanmıştır.
 
 ### align-self
 CSS grid ögesine atanan bu tanımlama ile sadece tanımlı ögenin dikeydeki hizasını ayarlarız.
@@ -260,7 +260,7 @@ CSS grid ögesine atanan bu tanımlama ile sadece tanımlı ögenin dikeydeki hi
 <iframe height="300" style="width: 100%;" scrolling="no" title="align-self" src="https://codepen.io/fatihhayri/embed/MWYpwGd?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-`oge1`sınıfı tanımlı ilk eleman belirlenen hücrenin alt çizgisine hizalanmıştır.
+`oge1` sınıfı tanımlı ilk eleman belirlenen hücrenin alt çizgisine hizalanmıştır.
 
 ### place-self kısaltması
 
@@ -279,13 +279,13 @@ CSS ögesine atanan `align-self` ve `justify-self` tanımları kısaltıp tek ta
 
 ## Sıralama order özelliği
 
-`order` özelliği flex'ten bildiğimiz bir özellik. CSS grid ögeleri de tanımlanan `order` değerine göre sırasını ayaralar. `order` tanımı grid tarafından otomatik olarak sıralanmış ögelere etki eder, `grid-column`, `grid-rows` ve `grid-area`ile sıralaması özel olarak etikilenmiş ögelere etki etmez.
+`order` özelliği flex'ten bildiğimiz bir özellik. CSS grid ögeleri de tanımlanan `order` değerine göre sırasını ayarlar. `order` tanımı grid tarafından otomatik olarak sıralanmış ögelere etki eder, `grid-column`, `grid-rows` ve `grid-area`ile sıralaması özel olarak etikilenmiş ögelere etki etmez.
 
-İçeriği dinamik olarak eklenen ögelerin olduğu bir yapıda `order` özelliği kullanılabilir. Dinamik birçok öge eklediğimiz bir yapıda bir ögenin her zaman en son sırada olmasını `order` ile sağlayabiliriz.
+İçeriği dinamik olarak eklenen ögelerin olduğu bir yapıda `order` özelliği kullanılabilir. Dinamik birçok öge eklediğimiz bir yapıda, bir ögenin her zaman en son sırada olmasını `order` ile sağlayabiliriz.
 
-Flex'tekinin aksine grid ögelerinin sıralaması için sadece `order` özelliği yoktur. Yukarıda gördüğümüz ve diğer yazılarda gördüğümüz özellikler ile sıralama işini yapabiliyoruz. Grid yapısı içinde `order` çok aranacak bir özellik değil gibi.
+Flex'tekinin aksine grid ögelerinin sıralaması için sadece `order` özelliği yoktur. Yukarıda gördüğümüz ve diğer yazılarda bahsettiğimiz özellikler ile sıralama işini yapabiliyoruz. Grid yapısı içinde `order` çok aranacak bir özellik değil gibi.
 
- > Grid ögelerinin sıralama özellikleri sadece görsel olarak etki eder. Kaynak kodun sıralamasına etki etmediği için erişebilirlik açısından sorunlar çıkarabilir. Bu konuya dikkat etmek gerekir. 
+ > Grid ögelerinin sıralama özellikleri sadece görsel olarak etki eder. Kaynak kodunun sıralamasına etki etmediği için erişebilirlik açısından sorunlar çıkarabilir. Bu konuya dikkat etmek gerekir. 
 
 Kalın sağlıcakla.
 
