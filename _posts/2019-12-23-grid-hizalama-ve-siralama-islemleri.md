@@ -7,7 +7,7 @@ Date: 2019-12-23 09:10
 Category: CSS
 tags: [grid, justify-items, align-items, justify-content, justify-content, justify-self, align-self, place-items, place-content, place-self]
 image:
-  feature: grid-ogesi.png
+  feature: justify-items.png
 ---
 
  1. [CSS Grid'e (Izgara) Giriş](https://fatihhayrioglu.com/css-grid-giris/)
