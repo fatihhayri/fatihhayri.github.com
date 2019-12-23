@@ -12,12 +12,13 @@ yapma olanağı sağlar. Adım adım gidersek;
 
 **1.Adım** Başlangıç olarak her zamanki gibi XHTML kodumuzu yazalım:
 
-	:::html
-	<ul>
-		<li><a href="#">Ana Sayfa</a></li>
-		<li><a href="#">Haberler</a></li>
-		<li><a href="#">Ürünler</a></li>
-	</ul>
+```html
+<ul>
+	<li><a href="#">Ana Sayfa</a></li>
+	<li><a href="#">Haberler</a></li>
+	<li><a href="#">Ürünler</a></li>
+</ul>
+```
 
 Tekniğin özeti şu menü oluşturmak için hazırlanan XHTML kodunda sırasız
 listeler(li) bir zemin resmi(sekme_sag_resim.gif) ve link
@@ -27,15 +28,16 @@ sağlamak.
 **2. Adım** Daha önceki menü örneklerinden de alışkın olduğumuz
 margin,padding ve liste imgelerini kaldırma işlemini yapalım:
 
-	:::css
-	ul {
-	    margin: 0;
-	    padding: 0;
-	    list-style: none;
-	    width: 600px;
-	    float: left;
-	    border-bottom: 1px solid gray;
-	}
+```css
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 600px;
+    float: left;
+    border-bottom: 1px solid gray;
+}
+```
 
 
 **3. Adım** Yukarıda bahsettiğimiz metodu uygulamak için iki adet resim
@@ -52,11 +54,12 @@ menü görünümünün bozulmaması içindir.
 **4. Adım** Menüyü yatayda sıralamak için **float:left** tanımlaması
 yapıyoruz ve sağ zemin resmini(sekme_sag_resim.gif) uyguluyoruz:
 
-	:::css
-	ul li {
-	    float: left;
-	    background: url(images/sekme_sag_resim.gif) no-repeat top right;
-	}
+```css
+ul li {
+    float: left;
+    background: url(images/sekme_sag_resim.gif) no-repeat top right;
+}
+```
 
 **5. Adım** Daha önceki örneklerde gördüğümüz gibi tüm sekmeye link
 vermek için **display:block** tanımlaması yapıyoruz, sekmenin sol
@@ -66,27 +69,28 @@ ekliyoruz, tüm sekmelerde aynı yüksekliği yakalamak için
 alt çizgilerini kaldırıyoruz ve IE Mac ortamında sorun çıkarmaması için
 **float:left** ekliyoruz:
 
-	:::css
-	li a {
-	    background:url(images/sekme_sol_resim.gif) no-repeat left top;
-	    display: block;
-	    padding: 0 2em;
-	    line-height: 2.5em;
-	    text-decoration: none;
-	    float: left;
-	    color:#000;
-	}
+```css
+li a {
+    background:url(images/sekme_sol_resim.gif) no-repeat left top;
+    display: block;
+    padding: 0 2em;
+    line-height: 2.5em;
+    text-decoration: none;
+    float: left;
+    color:#000;
+}
+```
 
 **6. Adım** Güzel bir görünüm katmak için basit bir rollover efekti
 verelim:
 
-	```css
-	ul a:hover {
-		color: #9D9C9C;
-	}
-	```
+```css
+ul a:hover {
+	color: #9D9C9C;
+}
+```
 
-<iframe height="160" style="width: 100%;" scrolling="no" title="CSS ile Sekmeli(Tab) Menü Yapımı" src="https://codepen.io/fatihhayri/embed/yLybvoq?height=160&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="360" style="width: 100%;" scrolling="no" title="CSS ile Sekmeli(Tab) Menü Yapımı" src="https://codepen.io/fatihhayri/embed/yLybvoq?height=360&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 
