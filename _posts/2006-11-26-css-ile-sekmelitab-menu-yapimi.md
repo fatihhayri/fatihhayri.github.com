@@ -80,22 +80,21 @@ alt çizgilerini kaldırıyoruz ve IE Mac ortamında sorun çıkarmaması için
 **6. Adım** Güzel bir görünüm katmak için basit bir rollover efekti
 verelim:
 
-	:::css
+	```css
 	ul a:hover {
 		color: #9D9C9C;
 	}
+	```
 
+<iframe height="160" style="width: 100%;" scrolling="no" title="CSS ile Sekmeli(Tab) Menü Yapımı" src="https://codepen.io/fatihhayri/embed/yLybvoq?height=160&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
 
-Örnek kodları indirmek için [tıklayınız.][]
 
 Sonuç: Kodumuzu çalıştırdığımızda aşağıdaki sonucu elde edeceğiz. Tab
 menüye bir çok örnek var resimli, resimsiz, resimli rollover gibi;
 internette aratarak bir çok örnek bulabilirsiniz.
 
-<iframe src="/dokumanlar/sekmeli_menu.html" width="350" height="80" frameborder="0" scrolling="no"></iframe>
-
   [Doug Bowman'ın]: http://stopdesign.com/
   [Sliding Doors]: http://alistapart.com/articles/slidingdoors/
   [100]: /images/sekme_sol_resim.gif
   [1]: /images/sekme_sag_resim.gif
-  [tıklayınız.]: /dokumanlar/sekmeli_menu.zip
