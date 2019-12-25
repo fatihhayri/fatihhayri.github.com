@@ -21,7 +21,7 @@ image:
  9. [CSS Grid öge özellikleri](/css-grid-oge-ozellikleri/)
  10. [Grid hizalama ve sıralama işlemleri](/grid-hizalama-ve-siralama-islemleri/)
 
-CSS grid yazılarımızın 11.sindeyiz. CSS grid modülünün öğrenilmesi diğer CSS modüllerine göre daha zor ve karışık. Toplamda 17 adet tanım olduğu düşünülürse bu karmaşa daha iyi anlaşılır. Bu tanımları azaltmak için kısaltmalar kullanılmıştır. Buraya kadar yazdığımız makalelerde yeri geldikçe bu kısaltmalardan bahasettik. Şimdiye kadar bahsettiğimiz kısaltmalar:
+CSS grid yazılarımızın 11.sindeyiz. CSS grid modülünün öğrenilmesi diğer CSS modüllerine göre daha zor ve karışık. Toplamda 17 adet tanım olduğu düşünülürse bu karmaşa daha iyi anlaşılır. Bu tanımları azaltmak için kısaltmalar kullanılmıştır. Buraya kadar yazdığımız makalelerde yeri geldikçe bu kısaltmalardan bahsettik. Şimdiye kadar bahsettiğimiz kısaltmalar:
 
  - [`grid-column-start` ve `grid-column-end` kısaltması `grid-column`](/css-grid-oge-ozellikleri/)
  - [`grid-row-start` ve `grid-row-end` kısaltması `grid-row`](/css-grid-oge-ozellikleri/)
@@ -85,7 +85,7 @@ grid-template-areas: "menu ust ust" "menu icerik icerik" "baner alt alt";
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid-template kısayolu - 2" src="https://codepen.io/fatihhayri/embed/PowmayK?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-Firefox grid ve flex konusunda diğer tarayıcılar göre daha iyi araçlar sunuyor. Grid kısayolarını kullanırken açık halini görmek çok kolay. Tanımın yanındaki sağ ok butonuna tıklayınca tek tek tanımını gösteriyor.
+Firefox, CSS **grid** ve **flex** konusunda diğer tarayıcılara göre daha iyi araçlar sunuyor. Grid kısayollarını kullanırken açık halini görmek çok kolay. Tanımın yanındaki sağ ok butonuna tıklayınca tek tek tanımını gösteriyor.
 
 ![grid kısayolu detayı](https://fatihhayrioglu.com/images/grid-template-firefox.png)
 
@@ -93,12 +93,12 @@ Firefox grid ve flex konusunda diğer tarayıcılar göre daha iyi araçlar sunu
 
 Grid kısaltması sadece tanımlı ve tanımsız grid atamalarını kısaltır. CSS grid alt özellikleri bu kısaltma kapsamında değildir. Ara boşluk değerini (gap) bu kısaltma ile sıfırlanamaz.
 
-**Belirlenmiş (explicit) tanımlar**
+**Belirlenmiş (explicit) tanımlar:**
  - `grid-template-columns`
  - `grid-template-rows`
  - `grid-template-areas`
 
-**Belirlenmemiş (implicit) tanımlar**
+**Belirlenmemiş (implicit) tanımlar:**
  - `grid-auto-rows` 
  - `grid-auto-columns`
  - `grid-flow`
@@ -112,12 +112,12 @@ Yukarıda sıralanan tanımların kısayolu olarak `grid` tanımını kullanabil
     grid: 100px 300px / 3fr 1fr;
 }
 ```
-kodunun açılımı
+kodunun açılımı:
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 1" src="https://codepen.io/fatihhayri/embed/VwYWppB?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-Bir başka örnek explicit (belirlenmiş) ve implicit(belirlenmemiş) tanımların birlikte kullanımına yapalım.
+Bir başka örnek explicit (**belirlenmiş**) ve implicit(**belirlenmemiş**) tanımların birlikte kullanımına yapalım.
 
 ```css
 .kapsul {
@@ -128,7 +128,7 @@ Bir başka örnek explicit (belirlenmiş) ve implicit(belirlenmemiş) tanımlar�
 }
 ```
 
-Kısaltırsak
+Kısaltırsak:
 
 ```css
 .kapsul  {
@@ -142,7 +142,7 @@ Kısaltırsak
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 2" src="https://codepen.io/fatihhayri/embed/BayZWRX?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-Bir başka örnek
+Bir başka örnek:
 
 ```css
 .kapsul  { 
@@ -152,7 +152,7 @@ Bir başka örnek
 }
 ```
 
-Kısaltması
+Kısaltması:
 
 ```css
 .kapsul  { 
@@ -163,7 +163,7 @@ Kısaltması
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 3" src="https://codepen.io/fatihhayri/embed/oNgwZey?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-CSS kısayolları kullanmayı severim ancak CSS grid kısayollarındaysa aynı şeyi söyliyemiyeceğim. Bu biraz da grid ile yeni yeni kodluyor olmamızdan  kaynaklanıyor olabilir. Grid kısayolu kullandığımızda kodumuz ilk bakışta anlamsız bir kod yığını gibi duruyor. Bu kodu bir editör ile yönetiyorsanız sorun değil ama kendiniz yazıp yönetecekseniz sıkıntı. Belli bir süre açık halini kullanıp iyice aşina olduktan sonra kısayolları kullanabiliriz.
+CSS kısayolları kullanmayı severim ancak CSS grid kısayollarındaysa aynı şeyi söyleyemiyeceğim. Bu biraz da grid ile yeni yeni kodluyor olmamızdan  kaynaklanıyor olabilir. Grid kısayolu kullandığımızda kodumuz ilk bakışta anlamsız bir kod yığını gibi duruyor. Bu kodu bir editör ile yönetiyorsanız sorun değil ama kendiniz yazıp yönetecekseniz sıkıntı. Belli bir süre açık halini kullanıp iyice aşina olduktan sonra kısayolları kullanabiliriz.
 
 Yardımlarından dolayı [Serkan Bektaş](https://twitter.com/serkanbektasim)'a teşekkürlerimi sunarım. 
 
