@@ -163,7 +163,7 @@ Kısaltması:
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 3" src="https://codepen.io/fatihhayri/embed/oNgwZey?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-CSS kısayolları kullanmayı severim ancak CSS grid kısayollarındaysa aynı şeyi söyleyemiyeceğim. Bu biraz da grid ile yeni yeni kodluyor olmamızdan  kaynaklanıyor olabilir. Grid kısayolu kullandığımızda kodumuz ilk bakışta anlamsız bir kod yığını gibi duruyor. Bu kodu bir editör ile yönetiyorsanız sorun değil ama kendiniz yazıp yönetecekseniz sıkıntı. Belli bir süre açık halini kullanıp iyice aşina olduktan sonra kısayolları kullanabiliriz.
+CSS kısayolları kullanmayı severim ancak CSS grid kısayollarındaysa aynı şeyi söyleyemeyeceğim. Bu biraz da grid ile yeni yeni kodluyor olmamızdan  kaynaklanıyor olabilir. Grid kısayolu kullandığımızda kodumuz ilk bakışta anlamsız bir kod yığını gibi duruyor. Bu kodu bir editör ile yönetiyorsanız sorun değil ama kendiniz yazıp yönetecekseniz sıkıntı. Belli bir süre açık halini kullanıp iyice aşina olduktan sonra kısayolları kullanabiliriz.
 
 Yardımlarından dolayı [Serkan Bektaş](https://twitter.com/serkanbektasim)'a teşekkürlerimi sunarım. 
 
