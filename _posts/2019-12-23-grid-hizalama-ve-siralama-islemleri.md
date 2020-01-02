@@ -93,7 +93,7 @@ Kapsayıcı grid içindeki ögelerinin tamamının yatayda hizalanması için ku
 
 Yatayda tüm grid ögelerini ortalamış olduk. Grid ögesinin içeriği grid hücresinin alanından daha büyükse bu özellik işlevsel olur.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="justify-items" src="https://codepen.io/fatihhayri/embed/jOEVOyM?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="justify-items" src="https://codepen.io/fatihhayri/embed/jOEVOyM?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 `justify-items` atanmış kapsayıcı içindeki her bir grid ögesinin `justify-self` değerine atanmış gibi davranır.
@@ -116,7 +116,7 @@ Kapsayıcı grid içindeki ögelerinin tamamının dikeyde hizalanması için ku
 
 Dikeyde tüm grid ögelerini ortalamış olduk. 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="align-items" src="https://codepen.io/fatihhayri/embed/PowpwMp?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="align-items" src="https://codepen.io/fatihhayri/embed/PowpwMp?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 `align-items` atanmış kapsayıcı içindeki her bir grid ögesinin `align-self` değerine atanmış gibi davranır.
@@ -134,7 +134,7 @@ Dikeyde tüm grid ögelerini ortalamış olduk.
    justify-content: center end;
 }
 ```
-<iframe height="337" style="width: 100%;" scrolling="no" title="place-items" src="https://codepen.io/fatihhayri/embed/Powpqye?height=337&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="337" style="width: 100%;" scrolling="no" title="place-items" src="https://codepen.io/fatihhayri/embed/Powpqye?height=337&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 `place-` tanımları grid ile birlikte geldiği için diğer tanımlara göre tarayıcı desteği daha düşüktür. Şu an baktığımda %87 (Aralık 2019)
@@ -165,7 +165,7 @@ değerlerini de alır.
 
 ![justify-content](https://fatihhayrioglu.com/images/justify-content.png){: loading="lazy" }
 
-<iframe height="384" style="width: 100%;" scrolling="no" title="justify-content" src="https://codepen.io/fatihhayri/embed/YzPZXWG?height=384&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="384" style="width: 100%;" scrolling="no" title="justify-content" src="https://codepen.io/fatihhayri/embed/YzPZXWG?height=384&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 Grid kapsayıcı, içindeki tüm ögeler bir içerik gibi kabul edip tümü birden yatayda ortalandı.
@@ -194,7 +194,7 @@ değerlerini de alır.
 ```
 ![align-content](https://fatihhayrioglu.com/images/align-content.png){: loading="lazy" }
 
-<iframe height="420" style="width: 100%;" scrolling="no" title="align-content" src="https://codepen.io/fatihhayri/embed/vYExOYK?height=420&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="420" style="width: 100%;" scrolling="no" title="align-content" src="https://codepen.io/fatihhayri/embed/vYExOYK?height=420&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 Grid kapsayıcı, içindeki tüm ögeler bir içerik gibi kabul edilip tümü birden dikeyde ortalandı.
@@ -213,7 +213,7 @@ Grid kapsayıcı, içindeki tüm ögeler bir içerik gibi kabul edilip tümü bi
 }
 ```
 
-<iframe height="376" style="width: 100%;" scrolling="no" title="place-content" src="https://codepen.io/fatihhayri/embed/gObmpZe?height=376&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="376" style="width: 100%;" scrolling="no" title="place-content" src="https://codepen.io/fatihhayri/embed/gObmpZe?height=376&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 
@@ -241,7 +241,7 @@ Tanımlandığı CCC grid ögesinin yatayda hizalanmasını sağlar.
 
 ![justify-self](https://fatihhayrioglu.com/images/justify-self.png){: loading="lazy" }
 
-<iframe height="378" style="width: 100%;" scrolling="no" title="justify-self" src="https://codepen.io/fatihhayri/embed/PowpqRQ?height=378&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="378" style="width: 100%;" scrolling="no" title="justify-self" src="https://codepen.io/fatihhayri/embed/PowpqRQ?height=378&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 `oge1` sınıfı tanımlı ilk eleman belirlenen hücrenin başlangıç çizgisine hizalanmıştır.
@@ -257,7 +257,7 @@ CSS grid ögesine atanan bu tanımlama ile sadece tanımlı ögenin dikeydeki hi
 
 ![align-self](https://fatihhayrioglu.com/images/align-self.png){: loading="lazy" }
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="align-self" src="https://codepen.io/fatihhayri/embed/MWYpwGd?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="align-self" src="https://codepen.io/fatihhayri/embed/MWYpwGd?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 `oge1` sınıfı tanımlı ilk eleman belirlenen hücrenin alt çizgisine hizalanmıştır.
@@ -272,7 +272,7 @@ CSS ögesine atanan `align-self` ve `justify-self` tanımları kısaltıp tek ta
 }
 ``` 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="place-self" src="https://codepen.io/fatihhayri/embed/xxbqGJV?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="place-self" src="https://codepen.io/fatihhayri/embed/xxbqGJV?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 `place-` tanımları grid ile birlikte geldiği için diğer tanımlara göre tarayıcı desteği daha düşüktür. Şu an baktığımda %87 (Aralık 2019)

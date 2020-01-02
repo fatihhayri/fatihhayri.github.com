@@ -61,7 +61,7 @@ Kolon tanımı tek bir hücreyi kapsadığı için tanımını aşağıdaki gibi
 }
 ```
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="grid öge özellikleri" src="https://codepen.io/fatihhayri/embed/MWYwEgQ?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid öge özellikleri" src="https://codepen.io/fatihhayri/embed/MWYwEgQ?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 ### Negatif değerler
@@ -119,7 +119,7 @@ Yukarıdaki örneği tekrar yazalım.
 
 Tüm sayfayı bu şekilde kısaltırsak
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="grid öge özellikleri kısaltma" src="https://codepen.io/fatihhayri/embed/bGNpmvE?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid öge özellikleri kısaltma" src="https://codepen.io/fatihhayri/embed/bGNpmvE?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 İlk baştaki kod 52 satır iken son yaptığımız 45 satıra düştü.
@@ -171,7 +171,7 @@ Kodunu aşağıdaki gibi de yazabiliriz.
 }
 ```
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="grid öge özellikleri" src="https://codepen.io/fatihhayri/embed/MWYwEgQ?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid öge özellikleri" src="https://codepen.io/fatihhayri/embed/MWYwEgQ?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 Kalın sağlıcakla.

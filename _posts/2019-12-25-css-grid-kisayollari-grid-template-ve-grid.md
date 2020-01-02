@@ -60,7 +60,7 @@ Bu özelliklerin tanımını ve kullanımını [CSS Grid Özellikleri](https://f
 }
 ```
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="grid-template kısayolu" src="https://codepen.io/fatihhayri/embed/abzWKRo?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid-template kısayolu" src="https://codepen.io/fatihhayri/embed/abzWKRo?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 `grid-template-areas` tanımını da bu kısaltma içinde kullanabiliyoruz.
@@ -82,7 +82,7 @@ grid-template-areas: "menu ust ust" "menu icerik icerik" "baner alt alt";
 ``` 
 şeklindedir.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="grid-template kısayolu - 2" src="https://codepen.io/fatihhayri/embed/PowmayK?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid-template kısayolu - 2" src="https://codepen.io/fatihhayri/embed/PowmayK?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 Firefox, CSS **grid** ve **flex** konusunda diğer tarayıcılara göre daha iyi araçlar sunuyor. Grid kısayollarını kullanırken açık halini görmek çok kolay. Tanımın yanındaki sağ ok butonuna tıklayınca tek tek tanımını gösteriyor.
@@ -114,7 +114,7 @@ Yukarıda sıralanan tanımların kısayolu olarak `grid` tanımını kullanabil
 ```
 kodunun açılımı:
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 1" src="https://codepen.io/fatihhayri/embed/VwYWppB?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 1" src="https://codepen.io/fatihhayri/embed/VwYWppB?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 Bir başka örnek explicit (**belirlenmiş**) ve implicit(**belirlenmemiş**) tanımların birlikte kullanımına yapalım.
@@ -139,7 +139,7 @@ Kısaltırsak:
 }
 ```
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 2" src="https://codepen.io/fatihhayri/embed/BayZWRX?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 2" src="https://codepen.io/fatihhayri/embed/BayZWRX?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 Bir başka örnek:
@@ -160,7 +160,7 @@ Kısaltması:
 }
 ```
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 3" src="https://codepen.io/fatihhayri/embed/oNgwZey?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 3" src="https://codepen.io/fatihhayri/embed/oNgwZey?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 CSS kısayolları kullanmayı severim ancak CSS grid kısayollarındaysa aynı şeyi söyleyemeyeceğim. Bu biraz da grid ile yeni yeni kodluyor olmamızdan  kaynaklanıyor olabilir. Grid kısayolu kullandığımızda kodumuz ilk bakışta anlamsız bir kod yığını gibi duruyor. Bu kodu bir editör ile yönetiyorsanız sorun değil ama kendiniz yazıp yönetecekseniz sıkıntı. Belli bir süre açık halini kullanıp iyice aşina olduktan sonra kısayolları kullanabiliriz.
