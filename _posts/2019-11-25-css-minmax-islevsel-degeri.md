@@ -144,7 +144,7 @@ auto tanımlanan grid ögesi en fazla `max-content` değeri kadar, en az `min-co
 <iframe height="300" style="width: 100%;" scrolling="no" title="CSS grid minmax işlevi auto" src="https://codepen.io/fatihhayri/embed/GRRaQYR?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-![CSS grid minmax auto](https://fatihhayrioglu.com/images/minmax-auto.gif)
+![CSS grid minmax auto](https://fatihhayrioglu.com/images/minmax-auto.gif){: loading="lazy" }
 
 ## Kaynaklar
 

@@ -87,7 +87,7 @@ grid-template-areas: "menu ust ust" "menu icerik icerik" "baner alt alt";
 
 Firefox, CSS **grid** ve **flex** konusunda diğer tarayıcılara göre daha iyi araçlar sunuyor. Grid kısayollarını kullanırken açık halini görmek çok kolay. Tanımın yanındaki sağ ok butonuna tıklayınca tek tek tanımını gösteriyor.
 
-![grid kısayolu detayı](https://fatihhayrioglu.com/images/grid-template-firefox.png)
+![grid kısayolu detayı](https://fatihhayrioglu.com/images/grid-template-firefox.png){: loading="lazy" }
 
 ## grid kısaltması
 

@@ -40,7 +40,7 @@ Yukarıdaki tanımlar [W3C'nin kutu modeli hizalama modülü](https://www.w3.org
 
 Eğer [flex hizalama özelliklerini ve etkilerini](https://fatihhayrioglu.com/yenilenmis-flex-modulu/) biliyorsanız benzer şeyler grid için de geçerlidir. Grid ögelerinin hizalamasında flex'e göre şöyle bir fark vardır: grid iki eksen üzerine (X,Y) etki ederken flex tek eksene etki eder.
 
-![iki eksenli planlama](https://fatihhayrioglu.com/images/iki-eksenli.png)
+![iki eksenli planlama](https://fatihhayrioglu.com/images/iki-eksenli.png){: loading="lazy" }
 
 Bu yazıda flex'te anlattığımız bilgileri tazeleyeceğiz. Bu özellikler kapsayıcıya yaptığı etki ile grid ögesine yaptığı etkileri ayrı ayrı inceleyelim.
 
@@ -89,7 +89,7 @@ Kapsayıcı grid içindeki ögelerinin tamamının yatayda hizalanması için ku
 }
 ```
 
-![justify-items](https://fatihhayrioglu.com/images/justify-items.png)
+![justify-items](https://fatihhayrioglu.com/images/justify-items.png){: loading="lazy" }
 
 Yatayda tüm grid ögelerini ortalamış olduk. Grid ögesinin içeriği grid hücresinin alanından daha büyükse bu özellik işlevsel olur.
 
@@ -112,7 +112,7 @@ Kapsayıcı grid içindeki ögelerinin tamamının dikeyde hizalanması için ku
 }
 ```
 
-![align-items](https://fatihhayrioglu.com/images/align-items.png)
+![align-items](https://fatihhayrioglu.com/images/align-items.png){: loading="lazy" }
 
 Dikeyde tüm grid ögelerini ortalamış olduk. 
 
@@ -163,7 +163,7 @@ değerlerini de alır.
 }
 ```
 
-![justify-content](https://fatihhayrioglu.com/images/justify-content.png)
+![justify-content](https://fatihhayrioglu.com/images/justify-content.png){: loading="lazy" }
 
 <iframe height="384" style="width: 100%;" scrolling="no" title="justify-content" src="https://codepen.io/fatihhayri/embed/YzPZXWG?height=384&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
@@ -192,7 +192,7 @@ değerlerini de alır.
    height: 250px;
 }
 ```
-![align-content](https://fatihhayrioglu.com/images/align-content.png)
+![align-content](https://fatihhayrioglu.com/images/align-content.png){: loading="lazy" }
 
 <iframe height="420" style="width: 100%;" scrolling="no" title="align-content" src="https://codepen.io/fatihhayri/embed/vYExOYK?height=420&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
@@ -239,7 +239,7 @@ Tanımlandığı CCC grid ögesinin yatayda hizalanmasını sağlar.
 }
 ```
 
-![justify-self](https://fatihhayrioglu.com/images/justify-self.png)
+![justify-self](https://fatihhayrioglu.com/images/justify-self.png){: loading="lazy" }
 
 <iframe height="378" style="width: 100%;" scrolling="no" title="justify-self" src="https://codepen.io/fatihhayri/embed/PowpqRQ?height=378&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
@@ -255,7 +255,7 @@ CSS grid ögesine atanan bu tanımlama ile sadece tanımlı ögenin dikeydeki hi
 }
 ```
 
-![align-self](https://fatihhayrioglu.com/images/align-self.png)
+![align-self](https://fatihhayrioglu.com/images/align-self.png){: loading="lazy" }
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="align-self" src="https://codepen.io/fatihhayri/embed/MWYpwGd?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
