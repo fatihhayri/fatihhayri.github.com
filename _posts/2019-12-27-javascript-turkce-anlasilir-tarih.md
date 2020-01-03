@@ -13,4 +13,9 @@ tags: [tarih, RelativeTimeFormat]
 
 Twitter'da paylaştım ancak twitter'da yazılan zamanla kayboluyor, bundan dolayı buraya yazayım dedim. Herhangi bir kütüphane kullanmadan bu işi yapabiliyor olmak süper.
 
-<iframe height="218" style="width: 100%;" scrolling="no" title="javascript RelativeTimeFormat" src="https://codepen.io/fatihhayri/embed/QWwKerB?height=218&theme-id=13521&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy"></iframe>
+```js
+const anlasilirSaat = new Intl.RelativeTimeFormat('tr', { numeric: 'auto' });
+
+console.log(anlasilirSaat.format(-1, 'hour'));
+//expected output: "1 saat önce"
+```
