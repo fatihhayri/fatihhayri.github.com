@@ -17,5 +17,5 @@ Twitter'da paylaştım ancak twitter'da yazılan zamanla kayboluyor, bundan dola
 const anlasilirSaat = new Intl.RelativeTimeFormat('tr', { numeric: 'auto' });
 
 console.log(anlasilirSaat.format(-1, 'hour'));
-//expected output: "1 saat önce"
-```
+//konsol çıktısı: "1 saat önce"
+``
