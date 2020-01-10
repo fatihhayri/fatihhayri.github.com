@@ -23,9 +23,9 @@ image:
  11. [CSS Grid kısayolları - grid-template ve grid](/css-grid-kisayollari-grid-template-ve-grid/)
 
 
-CSS ile ögeleri diğer ögelerin üstüne çıkarmak için genelde `postion:absolute` özelliğini kullanırız. Ancak bu yöntemin şöyle bir sıkıntısı vardır ki `absolute` tanımlanmış öge normal akıştan çıktığı için genişliğinin ve yüksekliğinin hesaplanması her zaman problemdir. CSS grid modülü bu soruna da çözüm oldu.
+CSS ile ögeleri diğer ögelerin üstüne çıkarmak için genelde `postion:absolute` özelliğini kullanırız. Ancak bu yöntemin şöyle bir sıkıntısı vardır. `position: absolute` tanımlanmış öge normal akıştan çıktığı için genişliğinin ve yüksekliğinin hesaplanması her zaman problemdir. CSS grid modülü, bu soruna da çözüm oldu.
 
-Plandaki iki ögeye aynı grid hücresinin tanımı yapılıp üst üste binmesi sağlanabilir. Hangi ögenin önde hangi ögenin arkada olması gerektiğini de `z-index` değeriyle belirleye biliriz.
+Plandaki iki ögeye aynı grid hücresinin tanımı yapılıp üst üste binmesi sağlanabilir. Hangi ögenin önde hangi ögenin arkada olması gerektiğini de `z-index` değeriyle belirleyebiliriz.
 
 Bir örnek verelim.
 
@@ -58,7 +58,7 @@ Bir örnek verelim.
 }
 ```
 
-Yukarıda görüldüğü üzere kullanılan elemanlara yapılan tanımlarla grid hücrelerini birden fazla öge kullanabiliyor. Bu şekilde üst üste binen alanlar oluşturuluyor. `oge2` elemanında yaptığımız gibi `z-index`tanımıyla istediğimiz ögeyi üste çıkarabiliyoruz. Bu şekilde üste çıkarılan ögeler normal akışta bulunduğu için `position:absolute` tanımı gibi yükseklik ve genişlik sorunları yaşamıyoruz. Diyeceksiniz ki artık `position:absolute` tanımına gerek kalmadı o zaman. Hayır. Normal akışın dışına çıkarmak istediğimiz durumlar için ve grid kullanmadığımız durumlar için `position:absolute` tanımına ihtiyacımız var. 
+Yukarıda görüldüğü üzere kullanılan elemanlara yapılan tanımlarla grid hücrelerini birden fazla öge kullanabiliyor. Bu şekilde üst üste binen alanlar oluşturuluyor. `oge2` elemanında yaptığımız gibi `z-index` tanımıyla istediğimiz ögeyi üste çıkarabiliyoruz. Bu şekilde üste çıkarılan ögeler normal akışta bulunduğu için `position: absolute` tanımı gibi yükseklik ve genişlik sorunları yaşamıyoruz. Diyeceksiniz ki artık `position: absolute` tanımına gerek var mı? Hayır. Normal akışın dışına çıkarmak istediğimiz durumlar için ve grid kullanmadığımız durumlar için `position: absolute` tanımına ihtiyacımız var. 
 
 Grid ile birlikte popüler olan magazin tipi sayfalarda genelde gördüğümüz üzerine binme işlerini bu şekilde kolayca halledebiliriz.
 
@@ -99,7 +99,7 @@ h1 {
 }
 ```
 
-Son olarakta detay yazısını (`<p>`) 2. ve 4. kolon arasına, 4. ve 5. satır arasına yerleştirelim. Hizalama olarakta bu hücrelerin başına hizlayalım ki başlık ile alt alta gelsin.
+Son olarak da detay yazısını (`<p>`) 2. ve 4. kolon arasına, 4. ve 5. satır arasına yerleştirelim. Hizalama olarak da bu hücrelerin başına hizlayalım ki başlık ile alt alta gelsin.
 
 Yukarıda dikkat ederseniz ögeler 2. kolon ve 3. ve 4. satrıları **ortak** kullanıyorlar. Resmi diğer ögelerin altına almak için `z-index: -1` tanımlayalım.
 
@@ -116,11 +116,11 @@ Sonuç aşağıdaki gibi olacaktır.
 <iframe height="300" style="width: 100%;" scrolling="no" title="PowQdoN" src="https://codepen.io/fatihhayri/embed/PowQdoN?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
-Absolute'a göre en büyük avantajı belirttiğimiz gibi içeriğin veya başlığı uzun veya kısa gelmesi duruma göre ayrıca iş yapmamıza gerek yoktur.
+**Absolute**'a göre en büyük avantajı belirttiğimiz gibi içeriğin veya başlığı uzun veya kısa gelmesi duruma göre ayrıca iş yapmamıza gerek yoktur.
 
 Bir başka örnekte daha önce çalıştığım bir projede zamanımı alan bir konuda grid ile çok basit ve kolay çözmek oldu.
 
-İlk bölümde resmin yarsından başlayıp sayfanın en sonuna kadar uzanan ardalan eklemek için biraz zaman harcamıştım. Şimdi grid ile daha az kod ile daha kolay çözdüm.
+İlk bölümde resmin yarısından başlayıp sayfanın en sonuna kadar uzanan ardalan eklemek için biraz zaman harcamıştım. Şimdi grid ile daha az kod ile daha kolay çözdüm.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid üst üste deneme" src="https://codepen.io/fatihhayri/embed/QWwQBdy?height=300&theme-id=13521&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
