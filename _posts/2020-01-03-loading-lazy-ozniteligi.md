@@ -1,7 +1,7 @@
 ---
 layout: post
 title: loading lazy özniteliği
-description: Reismleri ve iframe'i gerektiğinde yükleme işini tarayıcıya devrettik
+description: Resimleri ve iframe'i gerektiğinde yükleme işini tarayıcıya devrettik
 lang: tr_TR
 Date: 2020-01-03 09:10
 Category: HTML
