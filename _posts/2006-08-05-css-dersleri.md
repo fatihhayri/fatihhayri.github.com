@@ -275,6 +275,10 @@ Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](https://fatihhayrioglu.
         -   [CSS minmax işlevsel değeri](/css-minmax-islevsel-degeri/)
         -   [repeat() işlevi, auto-fill ve auto-fit değerleri](/repeat-islevi-auto-fill-ve-auto-fit-degerleri/)
         -   [CSS Grid öge özellikleri](/css-grid-oge-ozellikleri/)
+        -   [Grid hizalama ve sıralama işlemleri](/grid-hizalama-ve-siralama-islemleri/)
+        -   [CSS Grid kısayolları - grid-template ve grid](/css-grid-kisayollari-grid-template-ve-grid/)
+        -   [CSS grid ile ögeleri üst üste bindirme](/css-grid-ile-ogeleri-ust-uste-bindirme/)
+        -   [Grid geliştirme araçları](/grid-gelistirme-araclari/)
         
 
 -   CSS Kaynakları
