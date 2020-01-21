@@ -33,42 +33,42 @@ Bu yazıyı 3 başlık altında inceleyeceğiz.
  - Grid özelliklerinin hepsinin bir arada olduğu kopya kağıtları
  - Grid özelliklerini pekiştirmek için yapılan oyunlar
 
-Bu araçların hepsinde grid tanımlarının çokluğu nedeniyle hangi zellik hangi amaçla kullanıldığını hatırlayamamamız nedeniyle çıkmıştır. CSS grid öÖzellik bilinirliğini arttırmaya yarar. Ama en önemlisi olan tarayıcıların grid araçlarıdır ki bize grid kodlarken, düzenleme yaparken ve hataları bulup çözerken çok büyük yardımı olur.
+Bu araçların hepsinde grid tanımlarının çokluğu nedeniyle hangi özellik hangi amaçla kullanıldığını hatırlayamamamız nedeniyle çıkmıştır. CSS grid özellik bilinirliğini arttırmaya yarar. Ama en önemlisi olan tarayıcıların grid araçlarıdır ki bize grid kodlarken, düzenleme yaparken ve hataları bulup çözerken çok büyük yardımı olur.
 
 ## Tarayıcı geliştirici araçlarında grid
 
-Bu başlık önemli. Geliştiriciler olarak hayatımız tarayıcılar ve tarayıcı geliştirme araçlarıyla geçmektedir. Kod yazarken geliştirici araçlarından yararlanıyoruz. Peki CSS gridde nasıl bir avantaj sağlıyor bu araçlar. Firefox burada diğer tarayıcılara fark atıyor. Grid için geliştirdiği araçlar çok kullanışlı.
+Bu başlık önemli. Geliştiriciler olarak hayatımız tarayıcılar ve tarayıcı geliştirme araçlarıyla geçmektedir. Kod yazarken geliştirici araçlarından yararlanıyoruz. Peki CSS grid kullandığımızda bu araçlar bize nasıl bir avantaj sağlıyor? Firefox burada diğer tarayıcılara fark atıyor, Firefox'un grid için geliştirilen araçları çok kullanışlı.
 
 Firefox grid aracıyla düzenleme yapma, değişiklik yapma, hata ayıklama işlemlerini yapmak çok kolay.
 
 ![Firefox Grid Alanı](https://fatihhayrioglu.com/images/firefox-grid-tool.png){: loading="lazy" }
 
-- Grid alanını görünür hale getirir
-- Grid satır çizgilerini gösterir. Rakamlarını ve isimlerini gösterir
+- Grid alanını görünür hale getirir.
+- Grid satır çizgilerini gösterir. Rakamlarını ve isimlerini gösterir.
 - Grid çizgilerinin renklerini değiştirme imkanıyla görünürlüğünü arttırma imkanı sağlar.
 - Grid kısayolarının açık hallerini gösterir.
 - Grid tanımlarının otomatik tamamlamayla hatırlamamızı ve kodlamamızı kolaylaştırır.
 - Tanımlı ve tanımsız alan farkını gösterir.
-- Grid gibi subgridleri de gösterir.
+- Grid gibi subgrid'leri de gösterir.
 
 ### grid görüntüleme
 Grid alanını görüntülemek için 2 seçeneğimiz var. 
 
 ![Firefox HTML panel](https://fatihhayrioglu.com/images/html-pane.png){: loading="lazy" }
 
-HTML panelinden ilgili elemanın yanında görünen **grid** yazısını tıklayarak yada CSS**rule** panelinden ilgili seçicinin yanındaki ızgara ikonuna tıklayarak görebiliriz. 
+HTML panelinden ilgili elemanın yanında görünen **grid** yazısını tıklayarak ya da CSS **rule** panelinden ilgili seçicinin yanındaki ızgara ikonuna tıklayarak görebiliriz. 
 
 ![Firefox CSS Panel](https://fatihhayrioglu.com/images/css-pane.png){: loading="lazy" }
 
  ızgara çizgileri görünür.
 
-![Firefox grid satır numaraları](https://fatihhayrioglu.com/images/grid-line-view.png){: loading="lazy" } Tıklama sonrası ögelerin
+![Firefox grid satır numaraları](https://fatihhayrioglu.com/images/grid-line-view.png){: loading="lazy" } 
 
 ## grid paneli
 
 ![Firefox Layout panel](https://fatihhayrioglu.com/images/layout-pane.png){: loading="lazy" }
 
-Layouti içine yerleştirilen grid panelinde sayfadaki tüm gridler gösterilir. 
+Layout içine yerleştirilen grid panelinde sayfadaki tüm gridler gösterilir. 
 
 ![Firefox overlay grid](https://fatihhayrioglu.com/images/firefox-secili-grid.png){: loading="lazy" }
 
@@ -81,14 +81,14 @@ Layouti içine yerleştirilen grid panelinde sayfadaki tüm gridler gösterilir.
 ![Firefox grid satır numaraları](https://fatihhayrioglu.com/images/grid-line-view.png){: loading="lazy" }
   - **Display area name:** grid ögeleri tanımlarında satır veya kolon numaraları kullanıldığı gibi bizim belirlediğimiz isimler de kullanılabilir. Eğer isim kullanıyorsak bu alan ile gösterip gizleyebiliyoruz.
  ![Fİrefox grid isimleri](https://fatihhayrioglu.com/images/grid-name-view.png){: loading="lazy" }
-  - **- Extend lines infinitely:** Başlagıç değeri olarak sadece grid içindeki çizgilerin gösterimi yapılırken bu işaret seçilrse çiiler sayfa boyunca gösterilecktir.
+  - **Extend lines infinitely:** Başlagıç değeri olarak sadece grid içindeki çizgilerin gösterimi yapılırken bu işaret seçilrse çiiler sayfa boyunca gösterilecktir.
   - **Mini grid view:** Seçilen grid elemanın öngörünüm olarak gösterilir. Grid ögeleri üzene geldiğimizde sayfadaki karşılıkları ön plana çıkacak şekilde görünür. 
 
 Aşağıdaki hareketli gif bize mini grid görünümünü daha iyi açıklayacaktır.
 
 ![Firefox mini grid görünümü](https://fatihhayrioglu.com/images/mini-grid-view.gif){: loading="lazy" }
 
-Chrome için [Gridman](https://chrome.google.com/webstore/detail/gridman-css-grid-inspecto/cmplbmppmfboedgkkelpkfgaakabpicn) eklentisi var ama Firefox'un Grid aracının çok gerisinde.
+Chrome için [Gridman](https://chrome.google.com/webstore/detail/gridman-css-grid-inspecto/cmplbmppmfboedgkkelpkfgaakabpicn) eklentisi var ama Firefox'un grid aracının çok gerisinde.
 
 ## Grid özellik listeleri
 
@@ -136,4 +136,4 @@ Oyun olarak cssgridgarden'ı denedim. Özellik hatırlama konusunda çok iyi ben
  - https://morioh.com/p/caebd9f65e10
  - https://www.sitepoint.com/css-grid-generators/
  - https://medium.com/better-programming/debug-css-grid-with-firefox-devtools-949f328aab88
- - https://gridbyexample.com/learn/2016/12/17/learning-grid-day17/e8ön m nx8v
+ - https://gridbyexample.com/learn/2016/12/17/learning-grid-day17/
