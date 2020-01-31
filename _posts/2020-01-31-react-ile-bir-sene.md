@@ -10,11 +10,11 @@ image:
   feature: react.png
 ---
 
-Yaklaşık olarak 1 senedir React ile geliştirme yapmaya çalışıyorum. Bu bir senelik süreçte yaşadıklarımı bu yazıda yazmaya çalışacağım.
+Yaklaşık olarak 1 senedir ReactJS(Yazının devamında React olarak geçecek) ile geliştirme yapmaya çalışıyorum. Bu bir senelik süreçte yaşadıklarımdan çıkardığım genel fikrimi bu yazıda yazmaya çalışacağım.
 
-React kullanıcı arayüzü (UI) geliştirmek için üretilmiş bir javascript kütüphanesidir. Nedir bu kullanıcı arayüzü? Aslında düşündüğümde Önyüz (front-end) dediğimiz alanın tamamıdır diyebiliriz. CSS, HTML ve Javascript.
+React kullanıcı arayüzü (UI) geliştirmek için üretilmiş bir Javascript kütüphanesidir. Nedir bu kullanıcı arayüzü? Aslında düşündüğümde Önyüz (front-end) dediğimiz alanın tamamıdır diyebiliriz. CSS, HTML ve Javascript.
 
-İlk react'ı duyduğumda CSS ve HTML'in Javascript yani react içinde yazılıyor olması benim hoşuma gitmemişti. Hala CSS'in react içinde yazılmasına alışamadım. (SASS kullanıp import ederek de bu sorun aşılabiliyor), HTML'in react içinde yazılıyor olması aslında uzun süredir hayatımızda olan template kodlarıyla(swig, pug, handlebars, vb.) zaten hayatımızdaydı. Tabi react ile bu biraz daha abartılı kullanılıyor.
+İlk React'ı duyduğumda CSS ve HTML'in Javascript yani React içinde yazılıyor olması benim hoşuma gitmemişti. Hala CSS'in react içinde yazılmasına alışamadım. (SASS kullanıp import ederek de bu sorun aşılabiliyor), HTML'in react içinde yazılıyor olması aslında uzun süredir hayatımızda olan template kodlarıyla(swig, pug, handlebars, vb.) zaten hayatımızdaydı. Tabi react ile bu biraz daha abartılı kullanılıyor.
 
 Şimdi genel başlıklar altında react hakkında görüşlerimi yazmaya çalışacağım.
 
