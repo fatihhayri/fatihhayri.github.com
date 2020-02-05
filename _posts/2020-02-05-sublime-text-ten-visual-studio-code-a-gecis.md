@@ -10,7 +10,7 @@ image:
   feature: sublime-to-vscode.jpg
 ---
 
-Çok sık olmasa da ara sıra kullandığım editörden daha iyi bir editör arayışım olur. Uzun senelerdir Sublime Text kullanıyorum. Hızı ve bazı özellikleri beni etkilediği için Sublime Text ile devam ediyorum. Ancak belli aralıklarla diğer editör be IDE'leri deniyorum. 
+Çok sık olmasa da ara sıra kullandığım editörden daha iyi bir editör arayışım olur. Uzun senelerdir Sublime Text kullanıyorum. Hızı ve bazı özellikleri beni etkilediği için Sublime Text ile devam ediyorum. Ancak belli aralıklarla diğer editör ve IDE'leri deniyorum. 
 
 Daha önceki denemelerimde yaşadığım sıkıntılar nedeniyle vazgeçtiğim Visual Studio Code editörüne geçişimi bu sefer
 
@@ -88,7 +88,7 @@ Yeni bir dosyayı açtığımda anlık açıp başka bir dosyaya geçince onu ka
 - Otomatik tamamlama ile log yazıp **console** tamamlaması yavaş çalışıyordu. Bende çözümü daha gelişmiş bir **consol.log** ekleyici eklenti ile çözdüm. 
 	- [Turbo Console Log](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)
 
-İkinci haftaya geçtim ve hala Sublime Text'e geçmediğime göre işler iyi gidiyor demektir. Visual Studio Code hızlı güncellenmesi ve eklentilerinin Sublime Text'e göre daha çok ve hızlı güncelleniyor olması cezbedici. Terminal için iTerm kullanıyorum, Visual Studio Code kullanırken iTerm kullanımımı sıfıra indirdi. Şimdiye kadar eksikliğini hissettiğim tek şey iyi bir javascript ve react otomatik tamamlamasını henüz gerçekletiremedim. (Airbbnb React Snippet ve Javascript ES6 code sinppet yüklü)
+İkinci haftaya geçtim ve hala Sublime Text'e geçmediğime göre işler iyi gidiyor demektir. Visual Studio Code hızlı güncellenmesi ve eklentilerinin Sublime Text'e göre daha çok ve hızlı güncelleniyor olması cezbedici. Terminal için iTerm kullanıyorum, Visual Studio Code kullanırken iTerm kullanımımı sıfıra indirdi. Şimdiye kadar eksikliğini hissettiğim tek şey iyi bir javascript ve react otomatik tamamlamasını henüz gerçekleştiremedim. (Airbbnb React Snippet ve Javascript ES6 code snippet yüklü)
 
 Son bir şey daha arama yaptıktan sonra arama ekranı ve sonuçları **Esc** tıklayınca kapatan bir kısayol tanımı bulamadım. Bilen varsa yorum olarak yazarsa sevinirim.
 
