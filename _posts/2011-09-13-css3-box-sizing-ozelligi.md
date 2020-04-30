@@ -44,8 +44,7 @@ değerlerinin içerip içermemesi gerektiğini tanımlama imkanı sağlıyor.
 
 -   content-box: Normal kabul halidir. Genişlik veya yükseklik değeri
     içerik alanını içerir; border ve padding değerlerini içermez.
--   border-box: IE kutu kabulü diyede adlandırabileceğimiz değer.
-    Genişlik veya yükseklik değeri padding ve border değerlerinide
+-   border-box: Genişlik veya yükseklik değeri padding ve border değerlerinide
     içerir.
 
 CSS kodu;
@@ -67,9 +66,7 @@ CSS kodu;
 Başlangıç değeri content-box’dır. Kutu genişliği 10px + 20px + 200 + 20
 + 10px = 260px olacaktır.
 
-Farklı tarayıcılar önek ile destek sağlamaktadır. Firefox(-moz-),
-Chrome(-webkit-) ve Safari (-webkit-) Yukarıdaki koda box-border tanımı
-yapıldığında
+Yukarıdaki koda box-border tanımı yapıldığında
 
 {% highlight css %}
 #kutu{
@@ -79,8 +76,6 @@ yapıldığında
   height:200px;
   background:#CCC;
   box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
 }
 {% endhighlight %}
 
@@ -145,29 +140,17 @@ Farklı araçlar ile web sayfaları gezilmeye başlayalı beri esnek yapılı
 sayfalar revaçtadır. Websitelerimizi artık daha esnek planlamak zorunda
 kalacağız. Bu durumda bu özellik bize çok büyük yararlar sağlayacaktır.
 
-**Tarayıcı Desteği**
+{% include browser-usage.html ch="+" ie="+" ff="+" mch="+" sa="+" si="+" %}
 
-|![Chrome][chrome]|![explorer][explorer]|![Firefox][firefox]|
-|:-----------------:|:---------------:|:-------------------:|
-|**1.0+**|**8.0+**|**1.0+**|
-{: .tarayici-uyumi}
+~~Trayaıcı destek listesinde görüldüğü gibi sorun sadece ie7 sürümü ve
+aşağısında yaşanmaktadır.~~
 
-**Mobil Tarayıcılar**
+~~ie7 için [http://webfx.eae.net/dhtml/boxsizing/implementation.html][]
+sitesindeki script ile çözüm üretilebilir.~~
 
-|![Android][android] | ![Mobil Safari][msafari] | ![Chrome][chrome] |
-|:------------------------:|:----------------------:|:-------------------:|
-|**2.1+ (-webkit)**|**3.2+ (-webkit)**|**36+**|
-{: .tarayici-uyumi}
-
-Trayaıcı destek listesinde görüldüğü gibi sorun sadece ie7 sürümü ve
-aşağısında yaşanmaktadır.
-
-ie7 için [http://webfx.eae.net/dhtml/boxsizing/implementation.html][]
-sitesindeki script ile çözüm üretilebilir.
-
-Daha basit bir çözüm olarak ie7 için padding değerleri % cinsinden
+~~Daha basit bir çözüm olarak ie7 için padding değerleri % cinsinden
 verilebilir. Ayrıca html doküman garip modda kullanılır. Graip mod
-çözümü pek mantıklı değilsede bazı durumlarda başvurulabilir.
+çözümü pek mantıklı değilsede bazı durumlarda başvurulabilir.~~
 
 Kalın sağlıcakla
 
