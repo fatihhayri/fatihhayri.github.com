@@ -25,7 +25,13 @@ Kurulum iki aşamadan oluşuyor.
 
 Tabi her işte olduğu gibi bu konuda da ilk kurulumda çalışmadı. Toplantıları yaptığım uygulama [Zoom](https://zoom.us/)'un kamera seçim listesine telefonun kamerası seçenek olarak gelmedi.
 
-Araştırmalarım sonucunda birşey de çıkmadı, derken bugün [EpocCam'in youtube kurulum videosu](https://www.youtube.com/watch?v=J1hZJr4hcPY) altındaki ilk yorum bana çözümü gösterdi. Çözüm Zoom'un son versiyonu değil önceki versiyonu olan 4.6.7. kurmaktan geçiyor. Bu da [Zoom Cloud Meetings 4.6.7](https://zoom.en.uptodown.com/mac/download/2203698) önceki versiyon kurulum bağlantısı.
+~~Araştırmalarım sonucunda birşey de çıkmadı, derken bugün [EpocCam'in youtube kurulum videosu](https://www.youtube.com/watch?v=J1hZJr4hcPY) altındaki ilk yorum bana çözümü gösterdi. Çözüm Zoom'un son versiyonu değil önceki versiyonu olan 4.6.7. kurmaktan geçiyor. Bu da [Zoom Cloud Meetings 4.6.7](https://zoom.en.uptodown.com/mac/download/2203698) önceki versiyon kurulum bağlantısı.~~~
+
+[Mernuş]https://twitter.com/kalaomer'un twitter'dan yazdığı çözüm daha mantıklı. Hem son sürümü de de çalışıyor.
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="tr" dir="ltr">Macos&#39;da Zoom problemi için şöyle bir video yayınlamışlar. İlla eski versiyonu kurmaya gerek yok. Bende işe yaradı.<a href="https://t.co/mUfIFkGGkf">https://t.co/mUfIFkGGkf</a></p>&mdash; Mernuş (@kalaomer) <a href="https://twitter.com/kalaomer/status/1258686130364522497?ref_src=twsrc%5Etfw">May 8, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 Sonra Zoom'un Sol alttaki Select Camera menüsünden Iriun Webcam seçneği seçmek yeterli.
 
