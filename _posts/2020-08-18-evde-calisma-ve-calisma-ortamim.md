@@ -10,9 +10,9 @@ image:
   feature: masa-genel.png
 ---
 
-<span class="kitap-resmi">![Çalışma odam](https://fatihhayrioglu.com/images/masa-genel.png)</span>Yaklaşık 5 aydır evden çalışıyorum. Daha önce [Zingat](https://www.zingat.com/)'da iken hafta bir evden çalışma deneyimim olmuştu. Tabi uzun süreli olmadığı için şimdikiyle kıyaslamak zor. Burada pandemi nedeniyle evden çalışmaya başladıktan sonra çalışma ortamımla alaklı yenilikleri sizlere aktarmaya çalışacağım. Birçok marka ve model ismiyle bir tanıtım yazısı gibi olsa da buradaki hiç bir ürünü reklam için övmüyor veya yermiyorum. Bu yazıda kendi sürecimi sizlerle paylaşıyorum. Sizin önerilerinize de açığım.
+<span class="kitap-resmi">![Çalışma odam](https://fatihhayrioglu.com/images/masa-genel.png)</span>Yaklaşık 5 aydır evden çalışıyorum. Daha önce [Zingat](https://www.zingat.com/)'ta iken hafta bir evden çalışma deneyimim olmuştu. Tabi uzun süreli olmadığı için şimdikiyle kıyaslamak zor. Burada pandemi nedeniyle evden çalışmaya başladıktan sonra çalışma ortamımla alaklı yenilikleri sizlere aktarmaya çalışacağım. Birçok marka ve model ismiyle bir tanıtım yazısı gibi olsa da buradaki hiç bir ürünü reklam için övmüyor veya yermiyorum. Bu yazıda kendi sürecimi sizlerle paylaşıyorum. Sizin önerilerinize de açığım.
 
-İlk evden çalışmaya başladığımda çalışma odamdaki (hanımın deyişiyle yemek odası :) masam yemek masası ve sandalye olarakta yemek masasının sandalyesini kullanıyordum. İlk haftadan bel ağrılarımın nüksetmesiyle [Fatih Acet](https://twitter.com/fatihacet)'in daha önce önerdiği **Ikea MARKUS** sandalyenin siparişini verdim. Sandalyenin gelmesi çok uzun sürse de pandemi nedeniyle hoş gördük. 
+İlk evden çalışmaya başladığımda çalışma odamdaki (hanımın deyişiyle yemek odası :) masam yemek masası ve sandalye olarak ta yemek masasının sandalyesini kullanıyordum. İlk haftadan bel ağrılarımın nüksetmesiyle [Fatih Acet](https://twitter.com/fatihacet)'in daha önce önerdiği **Ikea MARKUS** sandalyenin siparişini verdim. Sandalyenin gelmesi çok uzun sürse de pandemi nedeniyle hoş gördük. 
 
 **
 
@@ -38,9 +38,9 @@ Daha sonraki günlerde kullandığım dikey mouse'un takılma sorunları sonras�
 
 ## Mouse (Logitech MX Vertical Advance Ergonomic Mouse)
 
-<span class="kitap-resmi">![Logitech MX Vertical Advance Ergonomic Mouse](https://fatihhayrioglu.com/images/mouse.png)</span>Önceki dikey mouse'um **Delux M618GX Ergonomik Dikey 6 Tuşlu Kablosuz Optik Mouse** idi. Çin'den sipariş ettiğimde fiyatı uygundu şimdi baktığımda bu mouse bile 200 tl fiyatı görünce iyi bir alternatif için kesenin ağzını açmam gerektiğini anladım. Gönlüm dikey mouse'u ilk keşfeden **Evoluent Vertical Mouse 4** olsa da fiyatı nedeniyle **Logitech MX Vertical Advance Ergonomic Mouse** aldım. Çokta ucuz değildi ama bileklerimin sağlığı için 795TL verip aldım.
+<span class="kitap-resmi">![Logitech MX Vertical Advance Ergonomic Mouse](https://fatihhayrioglu.com/images/mouse.png)</span>Önceki dikey mouse'um **Delux M618GX Ergonomik Dikey 6 Tuşlu Kablosuz Optik Mouse** idi. Çin'den sipariş ettiğimde fiyatı uygundu şimdi baktığımda bu mouse bile 200 tl fiyatı görünce iyi bir alternatif için kesenin ağzını açmam gerektiğini anladım. Gönlüm dikey mouse'u ilk keşfeden **Evoluent Vertical Mouse 4** olsa da fiyatı nedeniyle **Logitech MX Vertical Advance Ergonomic Mouse** aldım. Çok da ucuz değildi ama bileklerimin sağlığı için 795TL verip aldım.
 
-Bağlantı sorunlarını halletmek için usb ile bağlanan mouse yerine bluetooth ile bağlanan bir model tercih ettim. Şimdiye kadar bağlantı problemi yaşamadım. Hiç bir sorun yaşatmadı ve verdiğim her kuruşu hakkediyor diyebilirim. Şarj süreci çok iyi, 3 ayda iki kere şarj ettim. Eğer benim gibi bilkelerinizde ağrılarınız varsa veya dikey mouse seviyorsanız hiç düşünmeden alın derim. Tek sorun tuşlarına farklı özellikler atamak için yüklediğim program bi türlü mouse görememesi.
+Bağlantı sorunlarını halletmek için usb ile bağlanan mouse yerine bluetooth ile bağlanan bir model tercih ettim. Şimdiye kadar bağlantı problemi yaşamadım. Hiçbir sorun yaşatmadı ve verdiğim her kuruşu hak ediyor diyebilirim. Şarj süreci çok iyi, 3 ayda iki kere şarj ettim. Eğer benim gibi bileklerinizde ağrılarınız varsa veya dikey mouse seviyorsanız hiç düşünmeden alın derim. Tek sorun tuşlarına farklı özellikler atamak için yüklediğim program bi türlü mouse görememesi.
 
 **
 
@@ -56,7 +56,7 @@ Bağlantı sorunlarını halletmek için usb ile bağlanan mouse yerine bluetoot
 <br/>
 <br/>
 <br/>
-<span class="kitap-resmi">![Benks Lazy Phone Holder - Masaüstü Telefon Tutucu](https://fatihhayrioglu.com/images/telefon-tutucu-3.png)</span>En son **Benks Lazy Phone Holder - Masaüstü Telefon Tutucu** aldım. Kablosunun sert olması dışında gayet kullanışlı ve sağlam. Şık bir görünüm de var. Eğer çok fazla yer değiştircekseniz önermem. Ben toplantılarda göz hiazasında, normal kullanımda bir karış yukarda kullaıyorum. Çok yer değiştirmediğim için benim için makul oldu.
+<span class="kitap-resmi">![Benks Lazy Phone Holder - Masaüstü Telefon Tutucu](https://fatihhayrioglu.com/images/telefon-tutucu-3.png)</span>En son **Benks Lazy Phone Holder - Masaüstü Telefon Tutucu** aldım. Kablosunun sert olması dışında gayet kullanışlı ve sağlam. Şık bir görünüm de var. Eğer çok fazla yer değiştircekseniz önermem. Ben toplantılarda göz hizasında, normal kullanımda bir karış yukarda kullaıyorum. Çok yer değiştirmediğim için benim için makul oldu.
 
 **
 
@@ -64,7 +64,7 @@ Bağlantı sorunlarını halletmek için usb ile bağlanan mouse yerine bluetoot
 
 ## Monitör (Dell UltraSharp 24 USB-C U2419HC)
 
-<span class="kitap-resmi">![Dell UltraSharp 24 USB-C U2419HC](https://fatihhayrioglu.com/images/monitor.png)</span>Dell monitör daha önce kullandığım Samsung 22" monitörden sonra çağ atlamış gibi hissetirdi. Her yönüyle harika bir mönitör. Ayrıca type-c bağlantısının olması ve bu bağlantı sayesinde Mac'imi buradan şarj etmek süper birşey. Ayrıca monitör üzerindeki USB girişleri beni adaptörden kurtardı. Bu sayede bir kablo ve bir adaptörden kurtulmuş oldum. Bu mönitör sayesinde bir taşla üç kuş vurmuş oldum.
+<span class="kitap-resmi">![Dell UltraSharp 24 USB-C U2419HC](https://fatihhayrioglu.com/images/monitor.png)</span>Dell monitör daha önce kullandığım Samsung 22" monitörden sonra çağ atlamış gibi hissetirdi. Her yönüyle harika bir mönitör. Ayrıca type-c bağlantısının olması ve bu bağlantı sayesinde Mac'imi buradan şarj etmek süper bir şey. Ayrıca monitör üzerindeki USB girişleri beni adaptörden kurtardı. Bu sayede bir kablo ve bir adaptörden kurtulmuş oldum. Bu mönitör sayesinde bir taşla üç kuş vurmuş oldum.
 
 **
 
@@ -72,18 +72,18 @@ Daha sonra artık yemek masasının benim için çok idare edilebilir bir taraf�
 
 ## Masa (Suhan Concept Metal Ayaklı Çalışma Masası)
 
-<span class="kitap-resmi"><span class="kitap-resmi">![Suhan Concept Metal Ayaklı Çalışma Masası](https://fatihhayrioglu.com/images/masa.png)</span>Süreç sonrası masayı çok kullanmayacağımı düşünerek 200 TL civarında bir masa satın aldım. Ancak çok memnun olduğumu söyliyemem. Keşke biraz daha kaliteli birşey alsaymışım diyorum şimdi. Köşeleri çok sert ve bazı yerleri deforma olmuş bir masam var. Yüzeyi çok çabuk pisleniyor. Süreç uzarsa yeni bir masa şart.
+<span class="kitap-resmi"><span class="kitap-resmi">![Suhan Concept Metal Ayaklı Çalışma Masası](https://fatihhayrioglu.com/images/masa.png)</span>Süreç sonrası masayı çok kullanmayacağımı düşünerek 200 TL civarında bir masa satın aldım. Ancak çok memnun olduğumu söyleyemem. Keşke biraz daha kaliteli bir şey alsaymışım diyorum şimdi. Köşeleri çok sert ve bazı yerleri deforma olmuş bir masam var. Yüzeyi çok çabuk pisleniyor. Süreç uzarsa yeni bir masa şart.
 
 ## Kulaklık (Huawei FreeBuds 3 Bluetooth kulaklık)
 
-Kulaklık konusunda da bir kaç deneme sonrası doğruyu bulduğumu düşünüyorum. İlk olarak eski telefonumla gelen Samsung kablolu kulaklık kullanıyordum. Çocuklar sağolsun kullaklığı bayağı bi hırpalayınca bende bozulmadan bi kullaklık alayım dedim. Kablosuz modasına uyarak başladım araştırmaya.
+Kulaklık konusunda da birkaç deneme sonrası doğruyu bulduğumu düşünüyorum. İlk olarak eski telefonumla gelen Samsung kablolu kulaklık kullanıyordum. Çocuklar sağolsun kullaklığı bayağı bi hırpalayınca ben de bozulmadan bir kullaklık alayım dedim. Kablosuz modasına uyarak başladım araştırmaya.
 
 <span class="kitap-resmi">![Xiaomi Redmi Airdots Tws Bluetooth Basic 5.0](https://fatihhayrioglu.com/images/kulaklik-1.png)</span>İlk tercihim olan **Xiaomi Redmi Airdots Tws Bluetooth Basic 5.0** kulaklığı aldım. Hiç memnun kalmadım. Müzik dinlerken idare etse de video konferanslarda hiç iyi performans vermedi. 
 <br/>
 <br/>
-<span class="pull-left">![Huawei FreeBuds 3 Bluetooth](https://fatihhayrioglu.com/images/kulaklik-2.png)</span>İkinci kablosuz kullaklık tercihim için uzun süre araştırdım. Telefonumun Android olması nedeniyle **Huawei FreeBuds 3 Bluetooth** kulaklık aldım. Ücretinden dolayı çok fazla düşünüp taşınsam da, şirketin açtığı kredileri kullanarak alınca çokta etkilemedi. Üzerine biraz para eklesem de gayet kullanışlı ve iyi performans veren bir kablosuz kulaklığa kavuşmak beni sevindiriyor. 
+<span class="pull-left">![Huawei FreeBuds 3 Bluetooth](https://fatihhayrioglu.com/images/kulaklik-2.png)</span>İkinci kablosuz kullaklık tercihim için uzun süre araştırdım. Telefonumun Android olması nedeniyle **Huawei FreeBuds 3 Bluetooth** kulaklık aldım. Ücretinden dolayı çok fazla düşünüp taşınsam da, şirketin açtığı kredileri kullanarak alınca çok da etkilemedi. Üzerine biraz para eklesem de gayet kullanışlı ve iyi performans veren bir kablosuz kulaklığa kavuşmak beni sevindiriyor. 
 
-## İnternet (Vodopone Evde internet + Turkcell SuperBox)
+## İnternet (Vodafone Evde internet + Turkcell SuperBox)
 
 Geçen sene Turk Telekom'la yaşadığım anlaşmazlık sonrası 2,5 aylık cayma bedeli olan 612 TL'yi(300 TL'sini Vodafone karşıladı) ödeyip Vodafone ADSL'e geçtim. Evde çalışmadığımda yeterli olsa da evden çalışmaya başlayınca çok yetersiz kaldı. Daha sonra [Sercan](https://twitter.com/sercan_eraslan)'ın önerisiyle ve şirketin aylık 100 TL internet yardımıyla aylık 129 TL'ye Turkcell SuperBox aldım. Genel olarak memnun olsam da hızın sabit olmaması bazen sinir bozuyor. Bazen 10 Mbps'e düşüyor bazen 50-60 Mbps çıkıyor ama ortalama 15-20 Mbps ile beni memnun ediyor. Keşke fiber olsa da daha ucuza ve daha stabil bir internete kavuşsak.
 
@@ -103,8 +103,10 @@ Sahibinden'de çalışırken aldığım klavyemden memnunum. Ara sıra bağlant�
 
 ## Soğutma (Sinbo CH-187 vantilatör)
 
-Pandemi ve sonrasında evde kalma süresini ne olacağını bilmediğim için bir çok üründe ikilemde kaldım. Klima - soğutucu - vantilatör arasında kaldım. Oturma odasındaki klimayı kullanma isteğim çocuklar sayesinde karşılık bulmadı. Ben de çalışma odama klima mı alsam diye düşünürken birader vantilatörü kullanmıyorum, al sen kullan demesiyle vantilatörde karar kıldım. Ama  evden  çalışma seneye de devam ederse klima şart.
+Pandemi ve sonrasında evde kalma süresini ne olacağını bilmediğim için birçok üründe ikilemde kaldım. Klima - soğutucu - vantilatör arasında kaldım. Oturma odasındaki klimayı kullanma isteğim çocuklar sayesinde karşılık bulmadı. Ben de çalışma odama klima mı alsam diye düşünürken birader vantilatörü kullanmıyorum, al sen kullan demesiyle vantilatörde karar kıldım. Ama  evden  çalışma seneye de devam ederse klima şart.
 
 Benden şimdilik bu kadar. Sizin de önerileriniz olursa yorum kısmından yazarsanız sevinirim.
 
 Kalın sağllıcakla.
+
+  Yardımlarından dolayı [Serkan Bektaş](https://twitter.com/serkanbektasim)'a teşekkürlerimi sunarım. 
