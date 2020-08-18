@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Evde çalışma ve çalışma ortamım
-description: Evde çalışma ve çalışma ortamım hakkında bilgilendirme
+title: Evden çalışma ve çalışma ortamım
+description: Evden çalışma ve çalışma ortamım hakkında bilgilendirme
 lang: tr_TR
 Date: 2020-08-18 10:00
 Category: Genel
