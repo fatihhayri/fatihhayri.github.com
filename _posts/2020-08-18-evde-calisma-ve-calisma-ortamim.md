@@ -10,7 +10,7 @@ image:
   feature: masa-genel.png
 ---
 
-<span class="kitap-resmi">![Çalışma odam](https://fatihhayrioglu.com/images/masa-genel.png)</span>Yaklaşık 5 aydır evden çalışıyorum. Daha önce [Zingat](https://www.zingat.com/)'ta iken hafta bir evden çalışma deneyimim olmuştu. Tabi uzun süreli olmadığı için şimdikiyle kıyaslamak zor. Burada pandemi nedeniyle evden çalışmaya başladıktan sonra çalışma ortamımla alaklı yenilikleri sizlere aktarmaya çalışacağım. Birçok marka ve model ismiyle bir tanıtım yazısı gibi olsa da buradaki hiç bir ürünü reklam için övmüyor veya yermiyorum. Bu yazıda kendi sürecimi sizlerle paylaşıyorum. Sizin önerilerinize de açığım.
+<span class="kitap-resmi">![Çalışma odam](https://fatihhayrioglu.com/images/masa-genel.png)</span>Yaklaşık 5 aydır evden çalışıyorum. Daha önce [Zingat](https://www.zingat.com/)'ta iken hafta bir evden çalışma deneyimim olmuştu. Tabi uzun süreli olmadığı için şimdikiyle kıyaslamak zor. Burada pandemi nedeniyle evden çalışmaya başladıktan sonra çalışma ortamımla alakalı yenilikleri sizlere aktarmaya çalışacağım. Birçok marka ve model ismiyle bir tanıtım yazısı gibi olsa da buradaki hiç bir ürünü reklam için övmüyor veya yermiyorum. Bu yazıda kendi sürecimi sizlerle paylaşıyorum. Sizin önerilerinize de açığım.
 
 İlk evden çalışmaya başladığımda çalışma odamdaki (hanımın deyişiyle yemek odası :) masam yemek masası ve sandalye olarak ta yemek masasının sandalyesini kullanıyordum. İlk haftadan bel ağrılarımın nüksetmesiyle [Fatih Acet](https://twitter.com/fatihacet)'in daha önce önerdiği **Ikea MARKUS** sandalyenin siparişini verdim. Sandalyenin gelmesi çok uzun sürse de pandemi nedeniyle hoş gördük. 
 
