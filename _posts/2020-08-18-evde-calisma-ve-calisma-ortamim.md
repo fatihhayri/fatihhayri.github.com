@@ -18,7 +18,7 @@ image:
 
 ## Sandalye (Ikea MARKUS)
 
-<span class="kitap-resmi">![Ikea MARKUS](https://fatihhayrioglu.com/images/sandalye.png)</span>Genel olarak memnun kaldığım sandalyemde artıları ve eksilerini sıralarsam;
+<span class="kitap-resmi">![Ikea MARKUS](https://fatihhayrioglu.com/images/sandalye.png){: loading="lazy" }</span>Genel olarak memnun kaldığım sandalyemde artıları ve eksilerini sıralarsam;
 
 **Artılar**
 
@@ -44,19 +44,19 @@ Bağlantı sorunlarını halletmek için usb ile bağlanan mouse yerine bluetoot
 
 **
 
-[Telefonu bilgisayarın web kamerası olarak tanımlamak](https://fatihhayrioglu.com/telefonu-bilgisayarin-web-kamerasi-olarak-tanimlamak/ "Telefonu bilgisayarın web kamerası olarak tanımlamak") yazısında bahsettiğim gibi telefonumu bilgisayara webcam olarak tanıttıktan sonra telefonu tutturmak için bir masaüstü tutucu ihtiyacım doğdu.
+[Telefonu bilgisayarın web kamerası olarak tanımlamak](https://fatihhayrioglu.com/telefonu-bilgisayarin-web-kamerasi-olarak-tanimlamak/ "Telefonu bilgisayarın web kamerası olarak tanımlamak"){: loading="lazy" } yazısında bahsettiğim gibi telefonumu bilgisayara webcam olarak tanıttıktan sonra telefonu tutturmak için bir masaüstü tutucu ihtiyacım doğdu.
 
 ## Telefon Tututucu (Benks Masaüstü Telefon Tutucu)
 
-<span class="kitap-resmi">![Trendmallar Ahtapot Tripod Kamera Cep Telefonu Tripod](https://fatihhayrioglu.com/images/telefon-tutucu-1.png)</span>İlk telefon tutucu tercihim **Trendmallar Ahtapot Tripod Kamera Cep Telefonu Tripod** oldu. Kullanışlı ve güzel bir başlangıç yapsam da çocuklarımın elinde oyuncak olmaktan kurtulamayan bu alet bacaklarının kopması sonucu beni yolda bıraktı.
+<span class="kitap-resmi">![Trendmallar Ahtapot Tripod Kamera Cep Telefonu Tripod](https://fatihhayrioglu.com/images/telefon-tutucu-1.png){: loading="lazy" }</span>İlk telefon tutucu tercihim **Trendmallar Ahtapot Tripod Kamera Cep Telefonu Tripod** oldu. Kullanışlı ve güzel bir başlangıç yapsam da çocuklarımın elinde oyuncak olmaktan kurtulamayan bu alet bacaklarının kopması sonucu beni yolda bıraktı.
 <br/>
 <br/>
-<span class="pull-left">![Techmaster 102cm Kamera Tripodu Telefonlara Uyumlu](https://fatihhayrioglu.com/images/telefon-tutucu-2.png)</span>Bir sonraki tercihim **Techmaster 102cm Kamera Tripodu Telefonlara Uyumlu** oldu. Gayet memnun kaldığım bu ürün. Daha sonra masamda yer olmadığı için bir kenarda sadece fotoğraf çekerken kullandığım bir araç olarak kaldı. Ama kullanışlı ve sağlam bir araç.
+<span class="pull-left">![Techmaster 102cm Kamera Tripodu Telefonlara Uyumlu](https://fatihhayrioglu.com/images/telefon-tutucu-2.png){: loading="lazy" }</span>Bir sonraki tercihim **Techmaster 102cm Kamera Tripodu Telefonlara Uyumlu** oldu. Gayet memnun kaldığım bu ürün. Daha sonra masamda yer olmadığı için bir kenarda sadece fotoğraf çekerken kullandığım bir araç olarak kaldı. Ama kullanışlı ve sağlam bir araç.
 <br/>
 <br/>
 <br/>
 <br/>
-<span class="kitap-resmi">![Benks Lazy Phone Holder - Masaüstü Telefon Tutucu](https://fatihhayrioglu.com/images/telefon-tutucu-3.png)</span>En son **Benks Lazy Phone Holder - Masaüstü Telefon Tutucu** aldım. Kablosunun sert olması dışında gayet kullanışlı ve sağlam. Şık bir görünüm de var. Eğer çok fazla yer değiştircekseniz önermem. Ben toplantılarda göz hizasında, normal kullanımda bir karış yukarda kullaıyorum. Çok yer değiştirmediğim için benim için makul oldu.
+<span class="kitap-resmi">![Benks Lazy Phone Holder - Masaüstü Telefon Tutucu](https://fatihhayrioglu.com/images/telefon-tutucu-3.png){: loading="lazy" }</span>En son **Benks Lazy Phone Holder - Masaüstü Telefon Tutucu** aldım. Kablosunun sert olması dışında gayet kullanışlı ve sağlam. Şık bir görünüm de var. Eğer çok fazla yer değiştircekseniz önermem. Ben toplantılarda göz hizasında, normal kullanımda bir karış yukarda kullaıyorum. Çok yer değiştirmediğim için benim için makul oldu.
 
 **
 
@@ -64,7 +64,7 @@ Bağlantı sorunlarını halletmek için usb ile bağlanan mouse yerine bluetoot
 
 ## Monitör (Dell UltraSharp 24 USB-C U2419HC)
 
-<span class="kitap-resmi">![Dell UltraSharp 24 USB-C U2419HC](https://fatihhayrioglu.com/images/monitor.png)</span>Dell monitör daha önce kullandığım Samsung 22" monitörden sonra çağ atlamış gibi hissetirdi. Her yönüyle harika bir mönitör. Ayrıca type-c bağlantısının olması ve bu bağlantı sayesinde Mac'imi buradan şarj etmek süper bir şey. Ayrıca monitör üzerindeki USB girişleri beni adaptörden kurtardı. Bu sayede bir kablo ve bir adaptörden kurtulmuş oldum. Bu mönitör sayesinde bir taşla üç kuş vurmuş oldum.
+<span class="kitap-resmi">![Dell UltraSharp 24 USB-C U2419HC](https://fatihhayrioglu.com/images/monitor.png){: loading="lazy" }</span>Dell monitör daha önce kullandığım Samsung 22" monitörden sonra çağ atlamış gibi hissetirdi. Her yönüyle harika bir mönitör. Ayrıca type-c bağlantısının olması ve bu bağlantı sayesinde Mac'imi buradan şarj etmek süper bir şey. Ayrıca monitör üzerindeki USB girişleri beni adaptörden kurtardı. Bu sayede bir kablo ve bir adaptörden kurtulmuş oldum. Bu mönitör sayesinde bir taşla üç kuş vurmuş oldum.
 
 **
 
@@ -72,16 +72,16 @@ Daha sonra artık yemek masasının benim için çok idare edilebilir bir taraf�
 
 ## Masa (Suhan Concept Metal Ayaklı Çalışma Masası)
 
-<span class="kitap-resmi"><span class="kitap-resmi">![Suhan Concept Metal Ayaklı Çalışma Masası](https://fatihhayrioglu.com/images/masa.png)</span>Süreç sonrası masayı çok kullanmayacağımı düşünerek 200 TL civarında bir masa satın aldım. Ancak çok memnun olduğumu söyleyemem. Keşke biraz daha kaliteli bir şey alsaymışım diyorum şimdi. Köşeleri çok sert ve bazı yerleri deforma olmuş bir masam var. Yüzeyi çok çabuk pisleniyor. Süreç uzarsa yeni bir masa şart.
+<span class="kitap-resmi"><span class="kitap-resmi">![Suhan Concept Metal Ayaklı Çalışma Masası](https://fatihhayrioglu.com/images/masa.png){: loading="lazy" }</span>Süreç sonrası masayı çok kullanmayacağımı düşünerek 200 TL civarında bir masa satın aldım. Ancak çok memnun olduğumu söyleyemem. Keşke biraz daha kaliteli bir şey alsaymışım diyorum şimdi. Köşeleri çok sert ve bazı yerleri deforma olmuş bir masam var. Yüzeyi çok çabuk pisleniyor. Süreç uzarsa yeni bir masa şart.
 
 ## Kulaklık (Huawei FreeBuds 3 Bluetooth kulaklık)
 
 Kulaklık konusunda da birkaç deneme sonrası doğruyu bulduğumu düşünüyorum. İlk olarak eski telefonumla gelen Samsung kablolu kulaklık kullanıyordum. Çocuklar sağolsun kullaklığı bayağı bi hırpalayınca ben de bozulmadan bir kullaklık alayım dedim. Kablosuz modasına uyarak başladım araştırmaya.
 
-<span class="kitap-resmi">![Xiaomi Redmi Airdots Tws Bluetooth Basic 5.0](https://fatihhayrioglu.com/images/kulaklik-1.png)</span>İlk tercihim olan **Xiaomi Redmi Airdots Tws Bluetooth Basic 5.0** kulaklığı aldım. Hiç memnun kalmadım. Müzik dinlerken idare etse de video konferanslarda hiç iyi performans vermedi. 
+<span class="kitap-resmi">![Xiaomi Redmi Airdots Tws Bluetooth Basic 5.0](https://fatihhayrioglu.com/images/kulaklik-1.png){: loading="lazy" }</span>İlk tercihim olan **Xiaomi Redmi Airdots Tws Bluetooth Basic 5.0** kulaklığı aldım. Hiç memnun kalmadım. Müzik dinlerken idare etse de video konferanslarda hiç iyi performans vermedi. 
 <br/>
 <br/>
-<span class="pull-left">![Huawei FreeBuds 3 Bluetooth](https://fatihhayrioglu.com/images/kulaklik-2.png)</span>İkinci kablosuz kullaklık tercihim için uzun süre araştırdım. Telefonumun Android olması nedeniyle **Huawei FreeBuds 3 Bluetooth** kulaklık aldım. Ücretinden dolayı çok fazla düşünüp taşınsam da, şirketin açtığı kredileri kullanarak alınca çok da etkilemedi. Üzerine biraz para eklesem de gayet kullanışlı ve iyi performans veren bir kablosuz kulaklığa kavuşmak beni sevindiriyor. 
+<span class="pull-left">![Huawei FreeBuds 3 Bluetooth](https://fatihhayrioglu.com/images/kulaklik-2.png){: loading="lazy" }</span>İkinci kablosuz kullaklık tercihim için uzun süre araştırdım. Telefonumun Android olması nedeniyle **Huawei FreeBuds 3 Bluetooth** kulaklık aldım. Ücretinden dolayı çok fazla düşünüp taşınsam da, şirketin açtığı kredileri kullanarak alınca çok da etkilemedi. Üzerine biraz para eklesem de gayet kullanışlı ve iyi performans veren bir kablosuz kulaklığa kavuşmak beni sevindiriyor. 
 
 ## İnternet (Vodafone Evde internet + Turkcell SuperBox)
 
@@ -95,11 +95,11 @@ Sahibinden'de çalışırken aldığım klavyemden memnunum. Ara sıra bağlant�
 
 ## Dizüstü Bilgisayar Standı (Flying Kademeli Notebook Laptop Standı)
 
-<span class="kitap-resmi">![Flying Kademeli Notebook Laptop Soğutucu Mavi Led Işıklı 12 cm](https://fatihhayrioglu.com/images/dizustu-stand.png)</span>A101'den uygun fiyatlı bulduğum için aldığım **Flying Kademeli Notebook Laptop Soğutucu Mavi Led Işıklı 12 cm** stand işimi görüyor. Çok büyük beklentilerim yok. Belki daha şık olsa daha çok severdim ama işimi görüyor. Ben genelde yükseltme amaçlı kullanıyorum.
+<span class="kitap-resmi">![Flying Kademeli Notebook Laptop Soğutucu Mavi Led Işıklı 12 cm](https://fatihhayrioglu.com/images/dizustu-stand.png){: loading="lazy" }</span>A101'den uygun fiyatlı bulduğum için aldığım **Flying Kademeli Notebook Laptop Soğutucu Mavi Led Işıklı 12 cm** stand işimi görüyor. Çok büyük beklentilerim yok. Belki daha şık olsa daha çok severdim ama işimi görüyor. Ben genelde yükseltme amaçlı kullanıyorum.
 
 ## Işık (SAYWİN Ring Light)
 
-<span class="kitap-resmi">![SAYWİN Youtuber Makyaj Led Halka Işık Kuaför,make Up Ring Light](https://fatihhayrioglu.com/images/isik.png)</span>En son aldığım ürün led ışık oldu. **SAYWİN Youtuber Makyaj Led Halka Işık Kuaför,make Up Ring Light** olarak geçen bu led ışığı odanın kenarında kaldığım için video konferanlarda yetersiz ışık sorununu çözmek için aldım. İlk izlenimlerim olumlu. Sarı, beyaz ve karma ışık şeçenkleri benim için yeterli. 
+<span class="kitap-resmi">![SAYWİN Youtuber Makyaj Led Halka Işık Kuaför,make Up Ring Light](https://fatihhayrioglu.com/images/isik.png){: loading="lazy" }</span>En son aldığım ürün led ışık oldu. **SAYWİN Youtuber Makyaj Led Halka Işık Kuaför,make Up Ring Light** olarak geçen bu led ışığı odanın kenarında kaldığım için video konferanlarda yetersiz ışık sorununu çözmek için aldım. İlk izlenimlerim olumlu. Sarı, beyaz ve karma ışık şeçenkleri benim için yeterli. 
 
 ## Soğutma (Sinbo CH-187 vantilatör)
 
