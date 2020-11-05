@@ -84,9 +84,9 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
- - https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+ - [https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/](https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/)
  - [https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df](https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df)
- - https://www.creativebloq.com/how-to/create-a-responsive-layout-with-css-grid
- - https://thoughtbot.com/blog/concise-media-queries-with-css-grid
+ - [https://www.creativebloq.com/how-to/create-a-responsive-layout-with-css-grid](https://www.creativebloq.com/how-to/create-a-responsive-layout-with-css-grid)
+ - [https://thoughtbot.com/blog/concise-media-queries-with-css-grid](https://thoughtbot.com/blog/concise-media-queries-with-css-grid)
  - [https://medium.freecodecamp.org/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431](https://medium.freecodecamp.org/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431)
  - [https://gedd.ski/post/grid-for-responsive-layout/](https://gedd.ski/post/grid-for-responsive-layout/)
