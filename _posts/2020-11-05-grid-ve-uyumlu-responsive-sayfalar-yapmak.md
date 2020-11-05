@@ -89,4 +89,4 @@ Kalın sağlıcakla.
  - https://www.creativebloq.com/how-to/create-a-responsive-layout-with-css-grid
  - https://thoughtbot.com/blog/concise-media-queries-with-css-grid
  - [https://medium.freecodecamp.org/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431](https://medium.freecodecamp.org/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431)
- - https://gedd.ski/post/grid-for-responsive-layout/(https://gedd.ski/post/grid-for-responsive-layout/)
+ - [https://gedd.ski/post/grid-for-responsive-layout/](https://gedd.ski/post/grid-for-responsive-layout/)
