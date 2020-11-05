@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Grid geliştirme araçları
-description: CSS grid geliştirme araçları, Firefox grid aracı, ipuçları ve grdi oyunları
+title: Grid ile Uyumlu(Resposive) Sayfalar Yapmak
+description: Grid ile Uyumlu(Resposive) Sayfalar Yapmak
 lang: tr_TR
-Date: 2020-01-21 10:52
+Date: 2020-11-05 12:00
 Category: HTML
-tags: [grid, firefox, devtools, oyun]
+tags: [grid, resposive, uyumlu-web]
 image:
   feature: firefox-grid-tool.png
 ---
@@ -24,7 +24,7 @@ image:
  12. [CSS grid ile ögeleri üst üste bindirme](/css-grid-ile-ogeleri-ust-uste-bindirme/)
  13. [Grid geliştirme araçları](/grid-gelistirme-araclari/)
 
-Grid yazılarımızın 14. sünde sizlere CSS Grid ve uyumlu web(responsive) hakkında bir şeyler paylaşacağız. CSS grid modülü çıkana kadar sayfa planlama biz geliştiricilere modül, özellik grubu veya tanım olarak bir çözüm sunmamıştı. Geliştiriciler mevcut şartları sağlayacak özellikleri sayfa planlaması için kullandı.
+Grid yazılarımızın 14. sünde sizlere CSS Grid ile uyumlu web(responsive) hakkında bir şeyler paylaşacağız. CSS grid modülü çıkana kadar sayfa planlama biz geliştiricilere modül, özellik grubu veya tanım olarak bir çözüm sunmamıştı. Geliştiriciler mevcut şartları sağlayacak özellikleri sayfa planlaması için kullandı.
 
 İlk olarak `<table>` etiketiyle ve `position` tanımlarıyla HTML yoğunluklu çözmeye çalıştık. Daha sonra `<div>` etiketi ve float, width tanımlarıyla CSS yoğun çözümlerle çözmeye çalıştık. Daha sonra flex ile çözmeye çalıştık ancak bunların hiç biri W3C'nin sayfa planlama için çıkardığı özellikler değildi. Belli bir amaca hizmet ediyordu ve geliştiriciler tarafından sayfa planlama için kullanıldı. 
 

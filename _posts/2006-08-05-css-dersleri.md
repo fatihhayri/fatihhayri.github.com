@@ -279,6 +279,7 @@ Flex ile yatayda ve dikeyde ortalı alanlar oluşturmak](https://fatihhayrioglu.
         -   [CSS Grid kısayolları - grid-template ve grid](/css-grid-kisayollari-grid-template-ve-grid/)
         -   [CSS grid ile ögeleri üst üste bindirme](/css-grid-ile-ogeleri-ust-uste-bindirme/)
         -   [Grid geliştirme araçları](/grid-gelistirme-araclari/)
+        -   [Grid ile Uyumlu(Resposive) Sayfalar Yapmak](/grid-ve-uyumlu-responsive-sayfalar-yapmak/)
         
 
 -   CSS Kaynakları
