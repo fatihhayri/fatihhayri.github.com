@@ -220,7 +220,7 @@ Kalın sağlıcakla.
 ## Kaynaklar
 
 -   [http://www.viget.com/inspire/tips-for-coding-html-email/][]
--   [http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/][]
+-   thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/
 -   [http://www.anandgraves.com/html-email-guide][] (iyi)
 -   [http://www.email-standards.org/][] (iyi)
 -   [http://css-tricks.com/using-css-in-html-emails-the-real-story/][]
@@ -233,7 +233,6 @@ Kalın sağlıcakla.
   [email-standards.org]: http://www.email-standards.org/clients/
   [http://www.blacklistmonitoring.com/lookup/email_blacklist_IP_address_lookup.php]: http://www.blacklistmonitoring.com/lookup/email_blacklist_IP_address_lookup.php
   [http://www.viget.com/inspire/tips-for-coding-html-email/]: http://www.viget.com/inspire/tips-for-coding-html-email/
-  [http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/]: http://thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/
   [http://www.anandgraves.com/html-email-guide]: http://www.anandgraves.com/html-email-guide
   [http://www.email-standards.org/]: http://www.email-standards.org/
   [http://css-tricks.com/using-css-in-html-emails-the-real-story/]: http://css-tricks.com/using-css-in-html-emails-the-real-story/

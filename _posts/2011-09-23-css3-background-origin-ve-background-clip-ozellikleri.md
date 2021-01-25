@@ -211,7 +211,7 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.
 -   http://www.cssreset.com/2010/css-tutorials/fun-with-webkit-background-clip-and-font-face
 -   [http://www.webkit.org/blog/164/background-clip-text/][] (text)
 -   [http://www.impressivewebs.com/background-clip-css3/][] (güzel)
--   [http://css-class.com/test/css/backgrounds/background-origin1.htm][]
+-   css-class.com/test/css/backgrounds/background-origin1.htm
 -   [http://css-infos.net/property/background-origin][]
 -   [https://www.youtube.com/watch?v=7xVS2FX2Mao&feature=related][]
 
@@ -229,7 +229,6 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.
   [http://www.css3.info/webkit-introduces-background-cliptext/]: http://www.css3.info/webkit-introduces-background-cliptext/
   [http://www.webkit.org/blog/164/background-clip-text/]: http://www.webkit.org/blog/164/background-clip-text/
   [http://www.impressivewebs.com/background-clip-css3/]: http://www.impressivewebs.com/background-clip-css3/
-  [http://css-class.com/test/css/backgrounds/background-origin1.htm]: http://css-class.com/test/css/backgrounds/background-origin1.htm
   [http://css-infos.net/property/background-origin]: http://css-infos.net/property/background-origin
   [https://www.youtube.com/watch?v=7xVS2FX2Mao&feature=related]: https://www.youtube.com/watch?v=7xVS2FX2Mao&feature=related
 

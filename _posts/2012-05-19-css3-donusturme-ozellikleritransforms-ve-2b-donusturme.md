@@ -446,13 +446,13 @@ sağlayacaktır.
 -   [http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/][]
 -   [http://www.useragentman.com/IETransformsTranslator/][] (ie için çözüm)
 -   [http://www.standardista.com/css3-transforms][]
--   [http://www.webdesigncreare.co.uk/blog/html-css/css3-transforms.html][]
+-   webdesigncreare.co.uk/blog/html-css/css3-transforms.html
 -   http://professionalaspnet.com/archive/2011/03/17/IE9-Supports-CSS3-Transforms_2100_.aspx
 -   [http://www.sitepoint.com/a-primer-on-css3-transforms/][]
 -   [https://developer.mozilla.org/en/css/-moz-transform][]
 -   [http://blog.typekit.com/2011/01/25/case-study-getting-hardboiled-with-css3-2d-transforms/][]
 -   [http://css3.bradshawenterprises.com/transforms/][]
--   [http://doctype.com/javascript-image-zoom-css3-transforms-calculate-origin-example][]
+-   doctype.com/javascript-image-zoom-css3-transforms-calculate-origin-example
 -   [http://designshack.co.uk/articles/css/achieving-multi-step-animations-with-css-transitions/][]
 -   [http://www.impressivewebs.com/css3-transitions-without-hover/][] (güzel animasyon olmuş)
 -   [http://speckyboy.com/2011/08/15/how-to-build-a-fully-functional-css3-only-content-slider][]
@@ -473,7 +473,7 @@ sağlayacaktır.
 -   [http://www.impressivewebs.com/alternative-units-css3-rotate-transforms/][] (farklı değerler)
 -   [http://www.html5rocks.com/en/tutorials/webgl/webgl_transforms/][]
 -   [http://ricostacruz.com/jquery.transit/][] (jquery yardımı ile test)
--   [http://www.blackinci.com/css/59-css3-ile-2ci-boyuta-gecis-transform.html][]
+-   blackinci.com/css/59-css3-ile-2ci-boyuta-gecis-transform.html
 -   [http://www.developerdrive.com/2012/02/moving-web-page-elements-using-the-css3-translate-transform/][]
 -   [http://www.developerdrive.com/2012/02/scaling-web-page-elements-using-the-css3-scale-transform/][]
 -   [http://www.developerdrive.com/2012/02/skewing-web-page-elements-using-the-css3-skew-transform/][]
@@ -500,12 +500,10 @@ sağlayacaktır.
   [https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/]: https://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/
   [http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/]: http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/
   [http://www.standardista.com/css3-transforms]: http://www.standardista.com/css3-transforms
-  [http://www.webdesigncreare.co.uk/blog/html-css/css3-transforms.html]: http://www.webdesigncreare.co.uk/blog/html-css/css3-transforms.html
   [http://www.sitepoint.com/a-primer-on-css3-transforms/]: http://www.sitepoint.com/a-primer-on-css3-transforms/
   [https://developer.mozilla.org/en/css/-moz-transform]: https://developer.mozilla.org/en/css/-moz-transform
   [http://blog.typekit.com/2011/01/25/case-study-getting-hardboiled-with-css3-2d-transforms/]: http://blog.typekit.com/2011/01/25/case-study-getting-hardboiled-with-css3-2d-transforms/
   [http://css3.bradshawenterprises.com/transforms/]: http://css3.bradshawenterprises.com/transforms/
-  [http://doctype.com/javascript-image-zoom-css3-transforms-calculate-origin-example]: http://doctype.com/javascript-image-zoom-css3-transforms-calculate-origin-example
   [http://designshack.co.uk/articles/css/achieving-multi-step-animations-with-css-transitions/]: http://designshack.co.uk/articles/css/achieving-multi-step-animations-with-css-transitions/
   [http://www.impressivewebs.com/css3-transitions-without-hover/]: http://www.impressivewebs.com/css3-transitions-without-hover/
   [http://speckyboy.com/2011/08/15/how-to-build-a-fully-functional-css3-only-content-slider]: http://speckyboy.com/2011/08/15/how-to-build-a-fully-functional-css3-only-content-slider
@@ -523,7 +521,6 @@ sağlayacaktır.
   [http://www.impressivewebs.com/alternative-units-css3-rotate-transforms/]: http://www.impressivewebs.com/alternative-units-css3-rotate-transforms/
   [http://www.html5rocks.com/en/tutorials/webgl/webgl_transforms/]: http://www.html5rocks.com/en/tutorials/webgl/webgl_transforms/
   [http://ricostacruz.com/jquery.transit/]: http://ricostacruz.com/jquery.transit/
-  [http://www.blackinci.com/css/59-css3-ile-2ci-boyuta-gecis-transform.html]: http://www.blackinci.com/css/59-css3-ile-2ci-boyuta-gecis-transform.html
   [http://www.developerdrive.com/2012/02/moving-web-page-elements-using-the-css3-translate-transform/]: http://www.developerdrive.com/2012/02/moving-web-page-elements-using-the-css3-translate-transform/
   [http://www.developerdrive.com/2012/02/scaling-web-page-elements-using-the-css3-scale-transform/]: http://www.developerdrive.com/2012/02/scaling-web-page-elements-using-the-css3-scale-transform/
   [http://www.developerdrive.com/2012/02/skewing-web-page-elements-using-the-css3-skew-transform/]: http://www.developerdrive.com/2012/02/skewing-web-page-elements-using-the-css3-skew-transform/

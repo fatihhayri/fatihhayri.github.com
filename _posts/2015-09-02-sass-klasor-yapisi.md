@@ -157,18 +157,18 @@ Kalın sağlıcakla.
 ## Kaynaklar
 
  - [https://www.designernews.co/stories/32730-ask-dn-how-do-you-structure-your-sass-files-in-a-large-project](https://www.designernews.co/stories/32730-ask-dn-how-do-you-structure-your-sass-files-in-a-large-project)
- - [http://hugogiraudel.com/2013/02/11/sass-structure/](http://hugogiraudel.com/2013/02/11/sass-structure/)
+ - hugogiraudel.com/2013/02/11/sass-structure
  - [http://www.sitepoint.com/architecture-sass-project/](http://www.sitepoint.com/architecture-sass-project/)
  - [https://subvisual.co/blog/posts/32-our-css-sass-project-architecture-and-styleguide](https://subvisual.co/blog/posts/32-our-css-sass-project-architecture-and-styleguide)
- - [http://wiseheartdesign.com/articles/2010/01/22/structuring-a-sass-project/](http://wiseheartdesign.com/articles/2010/01/22/structuring-a-sass-project/)
+ - wiseheartdesign.com/articles/2010/01/22/structuring-a-sass-project/
  - [https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
- - [http://docssa.info/#fileStructure](http://docssa.info/#fileStructure)
- - [http://www.infobahndesign.com/how-i-structure-my-sass-projects/](http://www.infobahndesign.com/how-i-structure-my-sass-projects/)
+ - docssa.info/#fileStructure
+ - infobahndesign.com/how-i-structure-my-sass-projects
  - [https://medium.com/@wanderingmatt/a-little-structure-for-your-large-sass-project-7fe19ab647fa](https://medium.com/@wanderingmatt/a-little-structure-for-your-large-sass-project-7fe19ab647fa)
  - [http://www.adelineyaw.com/tag/file-structure-2/](http://www.adelineyaw.com/tag/file-structure-2/)
- - [http://thinkxl.github.io/2015/06/16/how-i-organize-my-sass-projects/](http://thinkxl.github.io/2015/06/16/how-i-organize-my-sass-projects/)
+ - thinkxl.github.io/2015/06/16/how-i-organize-my-sass-projects
  - [http://sass-guidelin.es/#the-7-1-pattern](http://sass-guidelin.es/#the-7-1-pattern)
- - [http://www.ismailhakkieren.com/sass-dosya-yapisi/](http://www.ismailhakkieren.com/sass-dosya-yapisi/)
+ - ismailhakkieren.com/sass-dosya-yapisi
  - [https://github.com/bcinarli/scalable-frontend-architecture/tree/master/styles-sass](https://github.com/bcinarli/scalable-frontend-architecture/tree/master/styles-sass)
  - [http://isdeneyimlerim.com/sass-ve-dosya-organizasyonu/](http://isdeneyimlerim.com/sass-ve-dosya-organizasyonu/)
  - [https://zurb.com/university/lessons/wrangling-sass-import-files](https://zurb.com/university/lessons/wrangling-sass-import-files)

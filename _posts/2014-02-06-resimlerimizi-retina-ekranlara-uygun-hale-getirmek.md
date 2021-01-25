@@ -190,7 +190,7 @@ Kalın sağlıcakla.
  - [http://bjango.com/articles/designingforretina/][11]
  - [http://metinyilmaz.me/retina-display-ve-website-optimizasyonu/][12]
  - [http://designmodo.com/design-retina-displays/][13]
- - [http://www.studiopress.com/design/css-background-size-graphics.htm][14]
+ - studiopress.com/design/css-background-size-graphics.htm
  - [https://coderwall.com/p/6ltcnw][15]
  - [http://www.html5rocks.com/en/mobile/high-dpi/][16]
  - [http://net.tutsplus.com/tutorials/html-css-techniques/better-responsive-images-with-the-picture-element/][17]
@@ -209,7 +209,6 @@ Kalın sağlıcakla.
   [11]: http://bjango.com/articles/designingforretina/
   [12]: http://metinyilmaz.me/retina-display-ve-website-optimizasyonu/
   [13]: http://designmodo.com/design-retina-displays/
-  [14]: http://www.studiopress.com/design/css-background-size-graphics.htm
   [15]: https://coderwall.com/p/6ltcnw
   [16]: http://www.html5rocks.com/en/mobile/high-dpi/
   [17]: http://net.tutsplus.com/tutorials/html-css-techniques/better-responsive-images-with-the-picture-element/

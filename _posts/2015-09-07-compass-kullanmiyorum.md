@@ -33,7 +33,7 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
- - [http://bensmithett.com/goodbye-compass/](http://bensmithett.com/goodbye-compass/)
+ - bensmithett.com/goodbye-compass
  - [http://www.sitepoint.com/dont-use-compass-anymore/](http://www.sitepoint.com/dont-use-compass-anymore/)
  - [http://www.scottohara.me/article/compass.html](http://www.scottohara.me/article/compass.html)
  - [http://compass-style.org/](http://compass-style.org/)

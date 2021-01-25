@@ -215,5 +215,5 @@ Grid özelliklerini, değerlerini, birimlerini ve tanımlarını öğrenmeye dev
  - [https://alligator.io/css/grid-gap/](https://alligator.io/css/grid-gap/)
  - [https://www.quackit.com/css/css3/properties/css_grid-row-gap.cfm](https://www.quackit.com/css/css3/properties/css_grid-row-gap.cfm)
  - [https://www.quackit.com/css/css3/properties/css_grid-template-columns.cfm](https://www.quackit.com/css/css3/properties/css_grid-template-columns.cfm)
- - [https://www.zcfy.cc/original/learn-css-grid-a-guide-to-learning-css-grid-jonathan-suh](https://www.zcfy.cc/original/learn-css-grid-a-guide-to-learning-css-grid-jonathan-suh)
+ - zcfy.cc/original/learn-css-grid-a-guide-to-learning-css-grid-jonathan-suh
  - https://www.youtube.com/watch?v=lZ2JX_6SGNI (Min & Max Content Sizing in CSS Grid)

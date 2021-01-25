@@ -148,7 +148,7 @@ Transform
 Filtre
 ------
 
--   [http://html5-demos.appspot.com/static/css/filters/index.html][]
+-   html5-demos.appspot.com/static/css/filters/index.html
 
 Toplu
 -----
@@ -244,7 +244,6 @@ Toplu
   [http://debray.jerome.free.fr/index.php?outils/Generateur-de-multi-colonnes-en-css3]: http://debray.jerome.free.fr/index.php?outils/Generateur-de-multi-colonnes-en-css3
   [http://www.aaronlumsden.com/multicol/]: http://www.aaronlumsden.com/multicol/
   [http://cssarrowplease.com/]: http://cssarrowplease.com/
-  [http://html5-demos.appspot.com/static/css/filters/index.html]: http://html5-demos.appspot.com/static/css/filters/index.html
   [http://css3generator.com/]: http://css3generator.com/
   [http://www.css3.me/]: http://www.css3.me/
   [http://css3gen.com/]: http://css3gen.com/

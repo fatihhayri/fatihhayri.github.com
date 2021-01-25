@@ -465,7 +465,7 @@ Eğer kutu genişlikleri toplamı kapsayıcı kutunun genişliğinden büyük is
 genişlik hesaplamasında benzer birim hesabına göre küçülme olacaktır. 0
 değeri kutunun esnek olmayacağı anlamına gelir.
 
-[Raphael Goetter][]’ın yaptığı örnek bu işin geleceği hakkında bize
+Raphael Goetter’ın yaptığı örnek bu işin geleceği hakkında bize
 güzel bir ipucu veriyor. Fantastik örnekler.(Chrome da daha iyi
 gözüküyor)
 
@@ -503,7 +503,7 @@ daha güzel şeyler olacağı kesin.
 
 Yukarıda özelliklerin nasıl kullanıldığını göstermek için daha basit
 örneklerler verdik, daha karmaşık örneklerde yapılabilir
-[http://oli.jp/2011/css3-flexbox/][] sitesindeki örnekler incelenebilir.
+oli.jp/2011/css3-flexbox sitesindeki örnekler incelenebilir.
  
 
 Kalın sağlıcakla
@@ -522,7 +522,6 @@ Kalın sağlıcakla
 -   [http://www.netmagazine.com/tutorials/css3-flexible-box-model-explained][]
 -   [http://adactio.com/journal/4778/][]
 -   [http://www.vanseodesign.com/css/flexbox/][] (güzel)
--   [http://oli.jp/2011/css3-flexbox/][] (karmaşık yerleşim uygulamalı)
 -   [http://blog.isotoma.com/2010/08/css3-flexbox/][]
 -   [http://msdn.microsoft.com/en-us/ie/hh272902.aspx#_CSSFlexBox][] (güzel)
 -   [http://caniuse.com/flexbox][] (tarayıcı desteği)
@@ -530,13 +529,12 @@ Kalın sağlıcakla
 
 
   [Tablo mu? Div mi? Karmaşasına Son Noktayı HTML5 koydu]: http://fatihhayrioglu.com/tablo-mu-div-mi-karmasasina-son-noktayi-html5-koydu/
-  [Raphael Goetter]: http://www.ie7nomore.com/fun/flexiblenav/
+  Raphael Goetter: ie7nomore.com/fun/flexiblenav
   [Çoklu Kolonlar(Multiple Column)]: http://fatihhayrioglu.com/css3-coklu-kolonlar/
   [Izgara Yerleşim Modeli(Grid Layout)]: http://dev.w3.org/csswg/css3-grid-align/
   [Şablon Yerleşim Modeli(Template Layout Model)]: http://www.w3.org/TR/css3-layout/
   [CSS Exclusions Module]: http://dev.w3.org/csswg/css3-exclusions/
   [CSS regions Module]: http://dev.w3.org/csswg/css3-regions/
-  [http://oli.jp/2011/css3-flexbox/]: http://oli.jp/2011/css3-flexbox/
   [http://www.html5rocks.com/en/tutorials/flexbox/quick/]: http://www.html5rocks.com/en/tutorials/flexbox/quick/
   [http://www.css3.info/introducing-the-flexible-box-layout-module/]: http://www.css3.info/introducing-the-flexible-box-layout-module/
   [http://www.w3.org/TR/css3-flexbox/]: http://www.w3.org/TR/css3-flexbox/

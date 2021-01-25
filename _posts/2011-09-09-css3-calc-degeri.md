@@ -83,7 +83,7 @@ p {
 -   [https://developer.mozilla.org/en/CSS/-moz-calc][]
 -   [http://caniuse.com/calc][] (destek listesi)
 -   [http://mynthon.net/howto/-/webdev/css3-testsuite-calc-property-for-calculating-size.txt][] (örnek)
--   [http://bloqk.com/makale/css_calc_kullanimi.html][]
+-   bloqk.com/makale/css_calc_kullanimi.html
 -   [http://www.thecssninja.com/demo/css_calc/][] (örnek)
 -   [http://www.sitepoint.com/css3-calc-function][]
 
@@ -93,7 +93,6 @@ p {
   [https://developer.mozilla.org/en/CSS/-moz-calc]: https://developer.mozilla.org/en/CSS/-moz-calc
   [http://caniuse.com/calc]: http://caniuse.com/calc
   [http://mynthon.net/howto/-/webdev/css3-testsuite-calc-property-for-calculating-size.txt]: http://mynthon.net/howto/-/webdev/css3-testsuite-calc-property-for-calculating-size.txt
-  [http://bloqk.com/makale/css_calc_kullanimi.html]: http://bloqk.com/makale/css_calc_kullanimi.html
   [http://www.thecssninja.com/demo/css_calc/]: http://www.thecssninja.com/demo/css_calc/
   [http://www.sitepoint.com/css3-calc-function]: http://www.sitepoint.com/css3-calc-function
 

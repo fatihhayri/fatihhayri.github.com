@@ -145,7 +145,7 @@ kalacağız. Bu durumda bu özellik bize çok büyük yararlar sağlayacaktır.
 ~~Trayaıcı destek listesinde görüldüğü gibi sorun sadece ie7 sürümü ve
 aşağısında yaşanmaktadır.~~
 
-~~ie7 için [http://webfx.eae.net/dhtml/boxsizing/implementation.html][]
+~~ie7 için webfx.eae.net/dhtml/boxsizing/implementation.html
 sitesindeki script ile çözüm üretilebilir.~~
 
 ~~Daha basit bir çözüm olarak ie7 için padding değerleri % cinsinden
@@ -158,8 +158,8 @@ Kalın sağlıcakla
 
 -   [http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/][] (güzel)
 -   [http://caniuse.com/css3-boxsizing][] (tarayıcı destek listesi)
--   [http://helephant.com/2008/10/20/css3-box-sizing-attribute/][]
--   [http://aninnovativeweb.tumblr.com/post/770432002/understanding-css3-box-sizing][]
+-   helephant.com/2008/10/20/css3-box-sizing-attribute/
+-   aninnovativeweb.tumblr.com/post/770432002/understanding-css3-box-sizing
 -   [http://www.w3.org/TR/css3-ui/#box-sizing][]
 -   [http://www.goldentwine.com/blog/css3-user-interface-box-sizing][]
 -   [http://csshead.com/controlling-width-with-css3-box-sizing/][]
@@ -171,11 +171,8 @@ Kalın sağlıcakla
   [CSS ile Kutu modeli, sorunları ve çözümleri]: http://fatihhayrioglu.com/kutu-modeli-sorunlari-ve-cozumleri/
   [100]: https://lh5.googleusercontent.com/EkvNMZKnUkXNpL5ps_x6sCNwyAOY6KQ3TS3YsJ9_Ypbui2rEdirr1BijorcNsFE-9a9eIcUerazNoQLsvh7U8J9sGm3h3cV-DFRXqCuLae8e4ruLWfQ
   [calc()]: http://fatihhayrioglu.com/css3-calc-degeri/
-  [http://webfx.eae.net/dhtml/boxsizing/implementation.html]: http://webfx.eae.net/dhtml/boxsizing/implementation.html
   [http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/]: http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/
   [http://caniuse.com/css3-boxsizing]: http://caniuse.com/css3-boxsizing
-  [http://helephant.com/2008/10/20/css3-box-sizing-attribute/]: http://helephant.com/2008/10/20/css3-box-sizing-attribute/
-  [http://aninnovativeweb.tumblr.com/post/770432002/understanding-css3-box-sizing]: http://aninnovativeweb.tumblr.com/post/770432002/understanding-css3-box-sizing
   [http://www.w3.org/TR/css3-ui/#box-sizing]: http://www.w3.org/TR/css3-ui/#box-sizing
   [http://www.goldentwine.com/blog/css3-user-interface-box-sizing]: http://www.goldentwine.com/blog/css3-user-interface-box-sizing
   [http://csshead.com/controlling-width-with-css3-box-sizing/]: http://csshead.com/controlling-width-with-css3-box-sizing/

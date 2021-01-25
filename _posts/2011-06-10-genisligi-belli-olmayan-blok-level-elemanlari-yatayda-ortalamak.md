@@ -158,7 +158,7 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
--   [http://css-discuss.incutio.com/wiki/Centering_Block_Element][]
+-   css-discuss.incutio.com/wiki/Centering_Block_Element
 -   http://www.solstice.co.il/blog/2008-02-26/horizontally-centering-content-dynamic-width-css
 -   [http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support][]
 -   http://haslayout.net/css-tuts/Horizontal-Centering
@@ -166,6 +166,5 @@ Kalın sağlıcakla.
 -   http://www.tightcss.com/centering/center_variable_width.htm
 
   [100]: /images/gb_ortalama1.gif
-  [http://css-discuss.incutio.com/wiki/Centering_Block_Element]: http://css-discuss.incutio.com/wiki/Centering_Block_Element
   [http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support]: http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support
   [http://www.katcode.com/css-horizontally-centering-div-of-unknown-width/]: http://www.katcode.com/css-horizontally-centering-div-of-unknown-width/

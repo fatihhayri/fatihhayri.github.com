@@ -157,12 +157,12 @@ ile sayfamıza ekledik.
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-ever-thought-about-using-font-face-for-icons/][]
 -   [http://ikwebdesigner.com/special-characters/#howto][]
 -   [http://www.sitepoint.com/webfont-icons/][]
--   [http://zocial.smcllns.com/sample.html][]
+-   zocial.smcllns.com/sample.html
 -   http://speckyboy.com/2012/02/13/20-fontface-icon-sets
 -   [http://icons.marekventur.de/][]
 -   http://somerandomdude.com/2010/05/04/font-embedding-icons
 -   [http://24ways.org/2011/displaying-icons-with-fonts-and-data-attributes][]
--   [http://codevisually.com/heydings-icons-a-free-fontface-icon-set/][]
+-   codevisually.com/heydings-icons-a-free-fontface-icon-set
 -   [http://webloti.org/20-modern-fontface-icon-seti/][]
 -   [http://webdesignerwall.com/demo/css-social-buttons/][]
 -   http://www.webresourcesdepot.com/free-icon-fonts-pictograms-for-todays-web-designer/
@@ -180,8 +180,6 @@ ile sayfamıza ekledik.
   [http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-ever-thought-about-using-font-face-for-icons/]: http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-ever-thought-about-using-font-face-for-icons/
   [http://ikwebdesigner.com/special-characters/#howto]: http://ikwebdesigner.com/special-characters/#howto
   [http://www.sitepoint.com/webfont-icons/]: http://www.sitepoint.com/webfont-icons/
-  [http://zocial.smcllns.com/sample.html]: http://zocial.smcllns.com/sample.html
   [http://icons.marekventur.de/]: http://icons.marekventur.de/
   [http://24ways.org/2011/displaying-icons-with-fonts-and-data-attributes]: http://24ways.org/2011/displaying-icons-with-fonts-and-data-attributes
-  [http://codevisually.com/heydings-icons-a-free-fontface-icon-set/]: http://codevisually.com/heydings-icons-a-free-fontface-icon-set/
   [http://webdesignerwall.com/demo/css-social-buttons/]: http://webdesignerwall.com/demo/css-social-buttons/

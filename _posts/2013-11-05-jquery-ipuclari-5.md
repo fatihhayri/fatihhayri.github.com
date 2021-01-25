@@ -145,14 +145,14 @@ Kalın sağlıcakla.
 - [http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx][15]
 - [http://css-plus.com/2010/10/4-useful-jquery-selectors/][16]
 - [http://www.javascriptbank.com/more-10-jquery-javascript-tips-tricks-improve-code.html][17]
-- [http://jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html][18]
+- jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html
 - http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/
 - [http://css-tricks.com/return-false-and-prevent-default/][21]
 - [http://www.quirksmode.org/js/events_order.html][22]
 - [http://javascript.info/tutorial/bubbling-and-capturing][23]
-- [http://jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html][25]
+- jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html
 - [http://api.jquery.com/event.preventDefault/][26]
-- [http://jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html][27]
+- jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html
 
   [1]: http://stackoverflow.com/questions/680241/blank-out-a-form-with-jquery
   [2]: http://www.jquery4u.com/windows/jquery-cleanly-open-links-popup-windows/
@@ -168,11 +168,8 @@ Kalın sağlıcakla.
   [15]: http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx
   [16]: http://css-plus.com/2010/10/4-useful-jquery-selectors/
   [17]: http://www.javascriptbank.com/more-10-jquery-javascript-tips-tricks-improve-code.html
-  [18]: http://jquerybyexample.blogspot.com/2012/06/get-url-parameters-using-jquery.html
   [21]: http://css-tricks.com/return-false-and-prevent-default/
   [22]: http://www.quirksmode.org/js/events_order.html
   [23]: http://javascript.info/tutorial/bubbling-and-capturing
-  [25]: http://jquerybyexample.blogspot.com/2010/11/fadetoggle-method-in-jquery-144.html
   [26]: http://api.jquery.com/event.preventDefault/
-  [27]: http://jquerybyexample.blogspot.com/2011/04/how-to-always-reference-latest-version.html
   [103]: http://black-flag.net/jquery/20120229-3696.html

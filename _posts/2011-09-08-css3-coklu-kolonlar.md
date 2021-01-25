@@ -393,8 +393,8 @@ Kalın sağlıcakla
 -   http://css-tricks.com/13372-seamless-responsive-photo-grid
 -   [http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns][]
 -   [http://dev.opera.com/articles/view/css3-multi-column-layout/][]
--   [http://www.my-html-codes.com/css3-multiple-columns][] (orta)
--   [http://www.456bereastreet.com/archive/200509/css3_multicolumn_layout_considered_harmful/][]
+-   my-html-codes.com/css3-multiple-columns
+-   456bereastreet.com/archive/200509/css3_multicolumn_layout_considered_harmful
 -   [https://developer.mozilla.org/en/CSS3_Columns][] (basit)
 -   [http://www.red-team-design.com/multi-column-text-using-css3][]
 -   [http://www.stuffandnonsense.co.uk/archives/css3_multi-column_thriller.html][]
@@ -420,8 +420,6 @@ Kalın sağlıcakla
   [http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/]: http://trentwalton.com/2010/07/19/css3-multi-column-layout-column-count/
   [http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns]: http://designshack.co.uk/articles/introduction-to-css3-part-5-multiple-columns
   [http://dev.opera.com/articles/view/css3-multi-column-layout/]: http://dev.opera.com/articles/view/css3-multi-column-layout/
-  [http://www.my-html-codes.com/css3-multiple-columns]: http://www.my-html-codes.com/css3-multiple-columns
-  [http://www.456bereastreet.com/archive/200509/css3_multicolumn_layout_considered_harmful/]: http://www.456bereastreet.com/archive/200509/css3_multicolumn_layout_considered_harmful/
   [https://developer.mozilla.org/en/CSS3_Columns]: https://developer.mozilla.org/en/CSS3_Columns
   [http://www.red-team-design.com/multi-column-text-using-css3]: http://www.red-team-design.com/multi-column-text-using-css3
   [http://www.stuffandnonsense.co.uk/archives/css3_multi-column_thriller.html]: http://www.stuffandnonsense.co.uk/archives/css3_multi-column_thriller.html

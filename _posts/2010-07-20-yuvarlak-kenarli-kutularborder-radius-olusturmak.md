@@ -195,7 +195,7 @@ sitesinde olduğu gibi.)
 ## Kaynaklar
 
 -   [http://webdesignernotebook.com/css/an-ode-to-border-radius/][]
--   [http://leaverou.me/2009/02/css3-border-radius-today/][]
+-   [http://lea.verou.me/2009/02/css3-border-radius-today/][]
 -   [http://www.the-art-of-web.com/css/border-radius/][] (border-radius)
 -   [http://www.css3.info/preview/rounded-border/][]
 -   [http://24ways.org/2006/rounded-corner-boxes-the-css3-way][]
@@ -228,8 +228,8 @@ sitesinde olduğu gibi.)
   [css3pie]: http://css3pie.com/ "css3pie"
   [http://webdesignernotebook.com/css/an-ode-to-border-radius/]: http://webdesignernotebook.com/css/an-ode-to-border-radius/
     "http://webdesignernotebook.com/css/an-ode-to-border-radius/"
-  [http://leaverou.me/2009/02/css3-border-radius-today/]: http://leaverou.me/2009/02/css3-border-radius-today/
-    "http://leaverou.me/2009/02/css3-border-radius-today/"
+  [http://lea.verou.me/2009/02/css3-border-radius-today/]: http://lea.verou.me/2009/02/css3-border-radius-today/
+    "http://lea.verou.me/2009/02/css3-border-radius-today/"
   [http://www.the-art-of-web.com/css/border-radius/]: http://www.the-art-of-web.com/css/border-radius/
     "http://www.the-art-of-web.com/css/border-radius/"
     "http://www.css3.info/preview/rounded-border/"

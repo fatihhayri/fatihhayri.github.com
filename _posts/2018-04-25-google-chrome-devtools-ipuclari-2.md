@@ -102,7 +102,7 @@ Yukarıda görüldüğü gibi Styles panelinde :hov bölümüne tıklayınca o e
 
 
  - [https://www.credera.com/blog/type/article/five-things-you-didnt-know-google-chrome-could-do/](https://www.credera.com/blog/type/article/five-things-you-didnt-know-google-chrome-could-do/)
- - [http://devtoolstips.com/post/101751680221/blackbox-scripts-when-youre-stepping-through](http://devtoolstips.com/post/101751680221/blackbox-scripts-when-youre-stepping-through)
+ - devtoolstips.com/post/101751680221/blackbox-scripts-when-youre-stepping-through
  - [https://umaar.com/dev-tips/7-dom-search-by-selector/](https://umaar.com/dev-tips/7-dom-search-by-selector/)
  - [https://umaar.com/dev-tips/17-quick-edit-element/](https://umaar.com/dev-tips/17-quick-edit-element/)
  - [https://umaar.com/dev-tips/20-reveal-in-elements/](https://umaar.com/dev-tips/20-reveal-in-elements/)

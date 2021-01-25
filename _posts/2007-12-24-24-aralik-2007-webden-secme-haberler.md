@@ -6,7 +6,7 @@ Category: Haberler
 tags: [Ajax, Google Analytics, Haberler, ie, lightbox, tipografi, WordPress]
 ---
 
--   Nihayet e-posta sorununu hallettik. Yardımları için [Ceyhun][]'a
+-   Nihayet e-posta sorununu hallettik. Yardımları için Ceyhun'a
     teşekkürler.
 -   Asp.net adapte edilmiş lightbox uygulaması. [Bağlantı][]
 -   Ajaxian javascript kütüphane kullanımı için yaptığı anket
@@ -27,7 +27,6 @@ tags: [Ajax, Google Analytics, Haberler, ie, lightbox, tipografi, WordPress]
 -   SmashMagazine wordpress temasına bir göz atın.
 
 
-  [Ceyhun]: http://www.jayhoon.com/
   [Bağlantı]: http://www.codeproject.com/KB/ajax/Dynamic_AJAX_Modal_Popup.aspx
     "aspinet ve lightbox"
   [1]: http://ajaxian.com/archives/2007-ajax-tools-usage-survey-results

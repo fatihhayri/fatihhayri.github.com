@@ -73,7 +73,7 @@ komutu ile tüm **app/sass** klasöründeki dosyaları CSS'e çevirebiliriz.
 Genel itibari ile bu programları sıralarsak
 
  - [Scout](http://mhs.github.io/scout-app/):  Ücretsiz, Windows/Mac
- - [CodeKit](http://incident57.com/codekit/index.html): 29$, Mac
+ - CodeKit: 29$, Mac
  - [LiveReload](http://livereload.com/): 9,90$, Windows/Mac
  - [Compass.app](http://compass.kkbox.com/): 10$, Windows/Mac/Linux
 
@@ -202,7 +202,7 @@ Kalın sağlıcakla.
 
  - [http://sass-lang.com/](http://sass-lang.com/)
  - [http://thesassway.com/](http://thesassway.com/)
- - [http://www.sitepoint.com/html-css/css/sass-css/](http://www.sitepoint.com/html-css/css/sass-css/)
+ - sitepoint.com/html-css/css/sass-css
  - [http://leveluptuts.com/tutorials/sass-tutorials](http://leveluptuts.com/tutorials/sass-tutorials)
  - [http://sassbreak.com/](http://sassbreak.com/)
  - [http://www.sassnews.com/](http://www.sassnews.com/)
@@ -210,7 +210,7 @@ Kalın sağlıcakla.
  - [http://sass-guidelin.es/](http://sass-guidelin.es/)
  - [http://www.gelistiricigunlugu.com/sass-nedir/](http://www.gelistiricigunlugu.com/sass-nedir/)
  - http://webmagazin.co/sass-kullanalim-ve-kullandiralim/
- - [http://www.erbilen.net/1200-sass-dersleri.html](http://www.erbilen.net/1200-sass-dersleri.html)
+ - erbilen.net/1200-sass-dersleri.html
  - [http://www.yunusbassahan.com/blog/sass/sass-kurulumu-ve-program-tercihi.html](http://www.yunusbassahan.com/blog/sass/sass-kurulumu-ve-program-tercihi.html)
  - [http://sonsuzdongu.com/blog/sass-a-giris](http://sonsuzdongu.com/blog/sass-a-giris)
  - [http://blog.designedbysherpa.com/2015/03/css-preprocessorler-on-derleyiciler-ve-sass/](http://blog.designedbysherpa.com/2015/03/css-preprocessorler-on-derleyiciler-ve-sass/)

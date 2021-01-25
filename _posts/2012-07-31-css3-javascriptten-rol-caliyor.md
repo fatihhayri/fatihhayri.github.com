@@ -338,7 +338,7 @@ Bu işi benzer bir mantık ile :target seçicisi yardımı ile yapabiliyoruz.
 -   [http://tympanus.net/codrops/2012/02/21/accordion-with-css3/][]
 -   [http://www.red-team-design.com/css3-accordion][]
 -   [http://www.hongkiat.com/blog/css-content-accordion/][]
--   [http://css.dzone.com/articles/pure-css3-accordion][]
+-   css.dzone.com/articles/pure-css3-accordion
 -   [http://tympanus.net/codrops/2011/10/12/flexible-slide-to-top-accordion/][]
 -   [http://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/][]
 
@@ -407,7 +407,7 @@ yapabiliyoruz.
 -   [http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/][]
 -   [http://www.paulrhayes.com/2011-03/css-modal/][]
 -   http://www.webstuffshare.com/2012/04/create-elegant-modal-window-using-css-scale-transform/
--   [http://playground.deaxon.com/css/lightbox/#home][]
+-   playground.deaxon.com/css/lightbox
 
 Animasyon, Efektler vd.
 -----------------------
@@ -469,7 +469,7 @@ menüler elde edebiliyoruz.
 -   [http://webdesignerwall.com/tutorials/css3-dropdown-menu][]
 -   [http://www.cssplay.co.uk/menus/cssplay-radial.html][]
 -   [http://thecodeplayer.com/walkthrough/make-a-stopwatch-using-css3-without-images-or-javascript][]
--   [http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/][]
+-   acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript
 -   [http://www.htmldrive.net/items/show/437/CSS3-only-horizontal-drop-line-tab-menu][]
 -   [http://cssdeck.com/item/511/soothing-css3-dropdown-animation][]
 -   [http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/][]
@@ -531,7 +531,6 @@ Kaynaklar
   [http://tympanus.net/codrops/2012/02/21/accordion-with-css3/]: http://tympanus.net/codrops/2012/02/21/accordion-with-css3/
   [http://www.red-team-design.com/css3-accordion]: http://www.red-team-design.com/css3-accordion
   [http://www.hongkiat.com/blog/css-content-accordion/]: http://www.hongkiat.com/blog/css-content-accordion/
-  [http://css.dzone.com/articles/pure-css3-accordion]: http://css.dzone.com/articles/pure-css3-accordion
   [http://tympanus.net/codrops/2011/10/12/flexible-slide-to-top-accordion/]: http://tympanus.net/codrops/2011/10/12/flexible-slide-to-top-accordion/
   [http://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/]: http://tympanus.net/codrops/2012/06/06/image-accordion-with-css3/
   [http://css-tricks.com/css3-tabs/]: http://css-tricks.com/css3-tabs/
@@ -552,7 +551,6 @@ Kaynaklar
   [http://alexindigo.github.com/lightbox/#gallery]: http://alexindigo.github.com/lightbox/#gallery
   [http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/]: http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/
   [http://www.paulrhayes.com/2011-03/css-modal/]: http://www.paulrhayes.com/2011-03/css-modal/
-  [http://playground.deaxon.com/css/lightbox/#home]: http://playground.deaxon.com/css/lightbox/#home
   [http://tympanus.net/codrops/2011/12/07/splash-and-coming-soon-page-effects-with-css3/]: http://tympanus.net/codrops/2011/12/07/splash-and-coming-soon-page-effects-with-css3/
   [http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/]: http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/
   [http://tympanus.net/codrops/2012/05/22/creating-an-animated-3d-bouncing-ball-with-css3/]: http://tympanus.net/codrops/2012/05/22/creating-an-animated-3d-bouncing-ball-with-css3/
@@ -573,7 +571,6 @@ Kaynaklar
   [http://webdesignerwall.com/tutorials/css3-dropdown-menu]: http://webdesignerwall.com/tutorials/css3-dropdown-menu
   [http://www.cssplay.co.uk/menus/cssplay-radial.html]: http://www.cssplay.co.uk/menus/cssplay-radial.html
   [http://thecodeplayer.com/walkthrough/make-a-stopwatch-using-css3-without-images-or-javascript]: http://thecodeplayer.com/walkthrough/make-a-stopwatch-using-css3-without-images-or-javascript
-  [http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/]: http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/
   [http://www.htmldrive.net/items/show/437/CSS3-only-horizontal-drop-line-tab-menu]: http://www.htmldrive.net/items/show/437/CSS3-only-horizontal-drop-line-tab-menu
   [http://cssdeck.com/item/511/soothing-css3-dropdown-animation]: http://cssdeck.com/item/511/soothing-css3-dropdown-animation
   [http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/]: http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/

@@ -44,13 +44,12 @@ Kalın sağlıcakla
 
 ## Kaynaklar
 
--   [http://acidmartin.wordpress.com/2008/08/24/emulating-border-color-transparent-in-internet-explorer-6/][]
+-   acidmartin.wordpress.com/2008/08/24/emulating-border-color-transparent-in-internet-explorer-6/
 -   http://snippets.dzone.com/posts/show/6089
 -   [http://www.cssplay.co.uk/boxes/transparent_borders.html][]
 -   [http://www.researchkitchen.de/blog/archives/css-bordercolor-transparent.php][]
 -   [http://www.cssplay.co.uk/menu/fivestar][]
 
-  [http://acidmartin.wordpress.com/2008/08/24/emulating-border-color-transparent-in-internet-explorer-6/]: http://acidmartin.wordpress.com/2008/08/24/emulating-border-color-transparent-in-internet-explorer-6/
   [http://www.cssplay.co.uk/boxes/transparent_borders.html]: http://www.cssplay.co.uk/boxes/transparent_borders.html
   [http://www.researchkitchen.de/blog/archives/css-bordercolor-transparent.php]: http://www.researchkitchen.de/blog/archives/css-bordercolor-transparent.php
   [http://www.cssplay.co.uk/menu/fivestar]: http://www.cssplay.co.uk/menu/fivestar

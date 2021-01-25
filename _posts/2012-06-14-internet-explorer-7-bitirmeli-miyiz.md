@@ -199,10 +199,8 @@ sitelerden kaldırmayı unutmayın.
 -   [http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/][]
 -   msdn.microsoft.com/en-us/library/cc304082(VS.85).aspx
 -   http://blog.zimbra.com/blog/archives/2006/10/ie-7-vs-ie-6.html
--   [http://www.nuricankaya.com/default.asp?gunluk_id=407][] (ie8
-    kitabı)
--   [http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html][]
-    (querySelector desteği)
+-   www.nuricankaya.com/default.asp?gunluk_id=407
+-   jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html
 -   msdn.microsoft.com/en-us/library/cc304082(v=vs.85).aspx
 -   http://haslayout.net/haslayout
 -   [http://ejohn.org/blog/javascript-in-internet-explorer-8/][]
@@ -270,8 +268,6 @@ sitelerden kaldırmayı unutmayın.
   [http://www.netmagazine.com/news/google-apps-ditches-support-ie7]: http://www.netmagazine.com/news/google-apps-ditches-support-ie7
   [http://fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/]: http://fatihhayrioglu.com/internet-explorer-8in-nihai-surum-cikti/
   [http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/]: http://fatihhayrioglu.com/internet-explorer-8e-kisa-bir-bakis/
-  [http://www.nuricankaya.com/default.asp?gunluk_id=407]: http://www.nuricankaya.com/default.asp?gunluk_id=407
-  [http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html]: http://jclaes.blogspot.com/2010/11/html5-new-in-javascript-selector-api.html
   [http://ejohn.org/blog/javascript-in-internet-explorer-8/]: http://ejohn.org/blog/javascript-in-internet-explorer-8/
   [http://www.evotech.net/blog/2009/03/ie8-css-support/]: http://www.evotech.net/blog/2009/03/ie8-css-support/
   [http://coding.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/]: http://coding.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/

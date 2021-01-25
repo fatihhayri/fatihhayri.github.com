@@ -212,7 +212,7 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
--   [http://helephant.com/2009/11/css3-multiple-background-images/][]
+-   helephant.com/2009/11/css3-multiple-background-images/
 -   [http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/][]
 -   [http://www.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/][]
 -   [http://www.w3.org/TR/css3-background/#the-background-image][]
@@ -236,7 +236,6 @@ Kalın sağlıcakla.
   [4]: /dokumanlar/coklu_ardalan_tanimi/coklu_ard_paralaks.html
   [5]: https://lh3.googleusercontent.com/GJZCOSKaonqtZWRowbC3piRUAtnokihjVZiJsrpoH0o57aizW_h-lUD9BVbVaxS1LfTy_epfpqAZ4QfVDAY7OxMblGYo2jAChutnXQcM8Mdvs7QJM34
   [6]: https://lh3.googleusercontent.com/oxpb3X9kHeRE5dTNBgxITu8aboSFcjEy794Lk6s_f2yZaGQ907oICh-OWvcfbaK5NK7aLjgSnXrv8v6EU8biB5g4kiahmYf1tTaOqBboxqapOSS2_YY
-  [http://helephant.com/2009/11/css3-multiple-background-images/]: http://helephant.com/2009/11/css3-multiple-background-images/
   [http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/]: http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/
   [http://www.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/]: http://www.smashingmagazine.com/2010/04/28/css3-solutions-for-internet-explorer/
   [http://www.w3.org/TR/css3-background/#the-background-image]: http://www.w3.org/TR/css3-background/#the-background-image

@@ -136,7 +136,7 @@ $text-color: $gray-dark !default;
 $body-bg: #ccc;
 {% endhighlight %}
 
-tanımlarız. Artık body background bizim belirlediğimiz rengi alacaktır. [Sitepoint](http://www.sitepoint.com/sass-reference/variables/)'teki aşağıdaki örnek gayet açıklayıcı.
+tanımlarız. Artık body background bizim belirlediğimiz rengi alacaktır. Sitepoint sitepoint.com/sass-reference/variables'teki aşağıdaki örnek gayet açıklayıcı.
 
 {% highlight sass %}
 $variable: 0
@@ -224,7 +224,6 @@ Kalın sağlıcakla.
  - [http://sass-lang.com/guide](http://sass-lang.com/guide)
  - [https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss)
  - [http://webdesign.tutsplus.com/articles/understanding-variable-scope-in-sass--cms-23498](http://webdesign.tutsplus.com/articles/understanding-variable-scope-in-sass--cms-23498)
- - [http://www.sitepoint.com/sass-reference/variables/](http://www.sitepoint.com/sass-reference/variables/)
  - [https://robots.thoughtbot.com/sass-variables](https://robots.thoughtbot.com/sass-variables)
  - [http://bensmithett.com/stop-using-so-many-sass-variables/](http://bensmithett.com/stop-using-so-many-sass-variables/)
  - [https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss)

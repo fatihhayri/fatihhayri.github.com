@@ -131,12 +131,11 @@ Bu kodu tüm tarayıcılar destekliyor.
 
 -   http://www.joe2torials.com/view_tutorial.php?view=37
 -   [http://perishablepress.com/press/2006/09/18/absolutely-centered-layout/][]
--   [http://hicksdesign.co.uk/journal/vertical--horizontal-centering-2][]
+-   hicksdesign.co.uk/journal/vertical--horizontal-centering-2
 -   [http://www.456bereastreet.com/lab/centered/both/][]
 
   [100]: /images/dikey_yatayda_ortalama_ornek.gif
   [tıklayınız.]: /dokumanlar/dikey_yatay_ortalama.html
   [1]: /images/dikey_yatayda_ortalama-300x223.gif
   [http://perishablepress.com/press/2006/09/18/absolutely-centered-layout/]: http://perishablepress.com/press/2006/09/18/absolutely-centered-layout/
-  [http://hicksdesign.co.uk/journal/vertical--horizontal-centering-2]: http://hicksdesign.co.uk/journal/vertical--horizontal-centering-2
   [http://www.456bereastreet.com/lab/centered/both/]: http://www.456bereastreet.com/lab/centered/both/

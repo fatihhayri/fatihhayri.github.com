@@ -173,7 +173,7 @@ sitelerimizin daha hızlı açılmasını sağlayacak bir yöntemdir.
 -   [http://blog.asp-software.org/advanced-website-optimization-making-your-site-faster/][]
 -   [http://www.quirksmode.org/js/placejs.html][]
 -   [http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/][]
--   [http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/][]
+-   yuiblog.com/blog/2007/04/11/performance-research-part-4/
 
   [YSlow]: https://addons.mozilla.org/en-us/firefox/addon/yslow/
   [100]: https://lh3.googleusercontent.com/gSZsDGo9nsWt4gD1hgKwiJo2FITV5oh_x706nZ2wKUapQWLl70O6P7NofpZvXVOTxIJKOW2GiPabJKNZVbHCIgcp3CAA9eE7kpdGnNKP0sYqp6EcmNc
@@ -183,4 +183,3 @@ sitelerimizin daha hızlı açılmasını sağlayacak bir yöntemdir.
   [http://blog.asp-software.org/advanced-website-optimization-making-your-site-faster/]: http://blog.asp-software.org/advanced-website-optimization-making-your-site-faster/
   [http://www.quirksmode.org/js/placejs.html]: http://www.quirksmode.org/js/placejs.html
   [http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/]: http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/
-  [http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/]: http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/

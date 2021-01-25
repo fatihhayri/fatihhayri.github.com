@@ -129,7 +129,7 @@ Kalın sağlıcakla
 -   http://www.quackit.com/css/properties/css_font-size-adjust.cfm
 -   [http://webdesignernotebook.com/css/the-little-known-font-size-adjust-css3-property/][]
 -   http://www.fonttester.com/help/css_property/font-size-adjust.html
--   [http://www.blackinci.com/css/15-css-font-ozellikleri.html#adjust][]
+-   blackinci.com/css/15-css-font-ozellikleri.html#adjust
 -   http://webdesign.about.com/od/styleproperties/p/blspfontsizeadj.htm
 -   [https://developer.mozilla.org/samples/cssref/font-size-adjust.html][]
 -   [http://css-infos.net/property/-webkit-text-size-adjust][]
@@ -147,7 +147,7 @@ Kalın sağlıcakla
 -   [https://developer.mozilla.org/en/CSS/font-stretch][] (font-stretch)
 -   [http://msdn.microsoft.com/library/ff974090.aspx][] (font-stretch)
 -   [http://meyerweb.com/eric/css/tests/css3/show.php?p=font-stretch][]
--   [http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support][]
+-   log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support
 -   [http://clagnut.com/blog/2265/][]  (font-stretch)
 -   [http://www.cssportal.com/css-properties/font-effect.htm][]
 -   http://www.handycss.com/wiki/font-effect/
@@ -162,7 +162,6 @@ Kalın sağlıcakla
   [http://www.w3.org/TR/css3-fonts/]: http://www.w3.org/TR/css3-fonts/
   [http://www.css3.info/more-type-control-with-css3-fonts/]: http://www.css3.info/more-type-control-with-css3-fonts/
   [http://webdesignernotebook.com/css/the-little-known-font-size-adjust-css3-property/]: http://webdesignernotebook.com/css/the-little-known-font-size-adjust-css3-property/
-  [http://www.blackinci.com/css/15-css-font-ozellikleri.html#adjust]: http://www.blackinci.com/css/15-css-font-ozellikleri.html#adjust
   [https://developer.mozilla.org/samples/cssref/font-size-adjust.html]: https://developer.mozilla.org/samples/cssref/font-size-adjust.html
   [http://css-infos.net/property/-webkit-text-size-adjust]: http://css-infos.net/property/-webkit-text-size-adjust
   [http://www.impressivewebs.com/little-known-css3-type/]: http://www.impressivewebs.com/little-known-css3-type/
@@ -178,7 +177,6 @@ Kalın sağlıcakla
   [https://developer.mozilla.org/en/CSS/font-stretch]: https://developer.mozilla.org/en/CSS/font-stretch
   [http://msdn.microsoft.com/library/ff974090.aspx]: http://msdn.microsoft.com/library/ff974090.aspx
   [http://meyerweb.com/eric/css/tests/css3/show.php?p=font-stretch]: http://meyerweb.com/eric/css/tests/css3/show.php?p=font-stretch
-  [http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support]: http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support
   [http://clagnut.com/blog/2265/]: http://clagnut.com/blog/2265/
   [http://www.cssportal.com/css-properties/font-effect.htm]: http://www.cssportal.com/css-properties/font-effect.htm
   [http://szafranek.net/works/articles/font-smoothing-explained/]: http://szafranek.net/works/articles/font-smoothing-explained/

@@ -17,12 +17,11 @@ sayfalarda sorunlar kaldı onlarıda .php uzantılı sayfaları notepad'de
 açarak kaydederken de utf-8 seçerek düzelttim. Yanlız wp-includes
 içindeki template-functions-links.php yapınca sayfalar şaşırdı. İlginç
 php sayfalarındaki sorun sayfaları utf-8 olarak kaydetmemektenmiş. Bu
-işi Notpad ile yapınca sorun oluyor. [Ceyhun][]'un önerdiği
+işi Notpad ile yapınca sorun oluyor. Ceyhun'un önerdiği
 [http://www.crimsoneditor.com/][] editörü kullanınca sorunlar halloldu.
 Editör'ün ücretsiz olması güzel. Her dökümanı açtıktan sonra Document
 Menüsünden Encoding Type kısmından UTF-8 Encoding (w/o BOM) seçerek
 kaydetmeniz yeterli.
 
-  [Ceyhun]: http://www.jayhoon.com/ "Web amelesi"
   [http://www.crimsoneditor.com/]: http://www.crimsoneditor.com/
     "harika bir editör"

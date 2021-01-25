@@ -879,7 +879,7 @@ Firefox için -moz ön eki kullanılması gerekiyor.
 
 -   [http://www.w3.org/TR/css3-selectors/][]
 -   [http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/][]
--   [http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html][]
+-   adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html
 -   [http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/][]
 -   [http://tools.css3.info/selectors-test/test.html][] (test aracı)
 -   [http://24ways.org/2009/cleaner-code-with-css3-selectors][]
@@ -916,7 +916,6 @@ Firefox için -moz ön eki kullanılması gerekiyor.
   [Daha önce görselliği dikkatimi]: http://fatihhayrioglu.com/css-ile-secilen-metinlerin-rengini-degistirmek/
   [http://www.w3.org/TR/css3-selectors/]: http://www.w3.org/TR/css3-selectors/
   [http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/]: http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/
-  [http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html]: http://www.adobe.com/devnet/dreamweaver/articles/css-selectors-pt2.html
   [http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/]: http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/
   [http://tools.css3.info/selectors-test/test.html]: http://tools.css3.info/selectors-test/test.html
   [http://24ways.org/2009/cleaner-code-with-css3-selectors]: http://24ways.org/2009/cleaner-code-with-css3-selectors

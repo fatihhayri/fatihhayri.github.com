@@ -238,7 +238,7 @@ kolaylıklar sağlıyor.
 -   [http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/][]
 -   http://blog.syndicate-fx.com/code-snippets/css3-boxshadow-effects/
 -   [http://www.ballyhooblog.com/realistic-css3-box-shadows/][]
--   [http://www.sitepoint.com/pure-css3-paper-curl/][]
+-   www.sitepoint.com/pure-css3-paper-curl/
 -   [http://www.css3.info/preview/box-shadow/][]
 -   http://www.wewillbeok.com/likeacastshadow/
 -   [http://toolboxdigital.com/2011/03/css3-3d-gradient-box/][]
@@ -256,7 +256,6 @@ kolaylıklar sağlıyor.
   [http://www.red-team-design.com/how-to-create-slick-effects-with-css3-box-shadow]: http://www.red-team-design.com/how-to-create-slick-effects-with-css3-box-shadow
   [http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/]: http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/
   [http://www.ballyhooblog.com/realistic-css3-box-shadows/]: http://www.ballyhooblog.com/realistic-css3-box-shadows/
-  [http://www.sitepoint.com/pure-css3-paper-curl/]: http://www.sitepoint.com/pure-css3-paper-curl/
   [http://www.css3.info/preview/box-shadow/]: http://www.css3.info/preview/box-shadow/
   [http://toolboxdigital.com/2011/03/css3-3d-gradient-box/]: http://toolboxdigital.com/2011/03/css3-3d-gradient-box/
   [http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/]: http://blog.w3conversions.com/2011/09/css3-spread-value-and-box-shadow-on-one-side-only/

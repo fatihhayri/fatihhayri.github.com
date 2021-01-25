@@ -218,5 +218,5 @@ Kalın sağlıcakla.
  - [http://www.sitepoint.com/beware-selector-nesting-sass/](http://www.sitepoint.com/beware-selector-nesting-sass/)
  - [http://www.yunusbassahan.com/blog/sass/ic-ice-secici-kullanimi-nesting.html](http://www.yunusbassahan.com/blog/sass/ic-ice-secici-kullanimi-nesting.html)
  - [http://sonsuzdongu.com/blog/sass-a-giris](http://sonsuzdongu.com/blog/sass-a-giris)
- - [https://github.com/rssems/CSS-Rehberi](https://github.com/rssems/CSS-Rehberi)
+ - github.com/rssems/CSS-Rehberi
  - [http://mrhaki.blogspot.com.tr/2013/02/sass-snippets-compact-syntax-for-nested.html](http://mrhaki.blogspot.com.tr/2013/02/sass-snippets-compact-syntax-for-nested.html)

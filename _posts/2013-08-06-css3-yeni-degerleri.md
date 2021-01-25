@@ -307,7 +307,7 @@ Kodu [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters?redir
 * [http://lea.verou.me/2012/02/simpler-css-typing-animation-with-the-ch-unit/](http://lea.verou.me/2012/02/simpler-css-typing-animation-with-the-ch-unit/) ch değeri
 * [http://lists.w3.org/Archives/Public/www-style/1999Dec/0048.html](http://lists.w3.org/Archives/Public/www-style/1999Dec/0048.html) ch değeri
 * [http://meyerweb.com/eric/thoughts/2012/05/15/defining-ch/](http://meyerweb.com/eric/thoughts/2012/05/15/defining-ch/) ch değeri
-* [http://programlama.eu.com/HTMLandCSS/css3/colors/css3-colors-s1.htm](http://programlama.eu.com/HTMLandCSS/css3/colors/css3-colors-s1.htm) (hsl)
+* programlama.eu.com/HTMLandCSS/css3/colors/css3-colors-s1.htm
 * [http://www.yakuter.com/css3-color-renk-modulu/](http://www.yakuter.com/css3-color-renk-modulu/)
 * http://www.suburban-glory.com/blog?page=130
 * [https://developer.mozilla.org/en-US/docs/Web/CSS/attr](https://developer.mozilla.org/en-US/docs/Web/CSS/attr)

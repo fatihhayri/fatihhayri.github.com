@@ -14,7 +14,7 @@ Benim gibi yaşlanmaya başlayınca editörlerdeki yazı boyutlarını yükseltm
 
 Sublime Text'te kod yazdığımız kısmın yazı boyutunu büyütmek çok kolayken menü (sidebar) kısmının yazı boyutunu arttırmak biraz daha zor oluyor. 
 
-Ufak bir ara sonucunda [stackoverlow'da](List%3CContentFileModel%3E%20currentAttachments%20=%20new%20List%3CContentFileModel%3E%28%29;) bir cevabını buldum. 
+Ufak bir ara sonucunda stackoverlow'da bir cevabını buldum. 
 
  - **Sublime Text** -> **Preferences** -> **Browse Packages** yolunu izleyip ilgili klasörü açın. 
  - İkinci adım **User** klasörüne girin.

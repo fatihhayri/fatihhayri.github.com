@@ -73,4 +73,4 @@ Mobilde ve dar alanlarda güzel iş görüyor.
  - [https://css-tricks.com/line-clampin/](https://css-tricks.com/line-clampin/)
  - [http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/](http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/)
  - [http://cssmojo.com/line-clamp_for_non_webkit-based_browsers/](http://cssmojo.com/line-clamp_for_non_webkit-based_browsers/)
- - [http://dropshado.ws/post/1015351370/webkit-line-clamp](http://dropshado.ws/post/1015351370/webkit-line-clamp)
+ - dropshado.ws/post/1015351370/webkit-line-clamp - dropshado.ws/post/1015351370/webkit-line-clamp

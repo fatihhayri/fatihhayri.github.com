@@ -179,8 +179,8 @@ Kalın sağlıacakla
 -   [http://elouai.com/javascript-preload-images.php][]
 -   [http://www.javascriptkit.com/script/script2/preloadimage.shtml][]
 -   [http://stackoverflow.com/questions/761263/what-is-the-best-way-to-preload-multiple-images-in-javascript/761332][]
--   [http://www.filamentgroup.com/lab/update_automatically_preload_images_from_css_with_jquery/][]
--   [http://snipplr.com/view.php?codeview&id=9612][]
+-   filamentgroup.com/lab/update_automatically_preload_images_from_css_with_jquery/
+-   snipplr.com/view.php?codeview&id=9612
 
   [100]: /images/resim_on_yukleme_jquery-300x195.gif
   [tıklayınız.]: /dokumanlar/onyukleme.html
@@ -190,5 +190,3 @@ Kalın sağlıacakla
   [http://elouai.com/javascript-preload-images.php]: http://elouai.com/javascript-preload-images.php
   [http://www.javascriptkit.com/script/script2/preloadimage.shtml]: http://www.javascriptkit.com/script/script2/preloadimage.shtml
   [http://stackoverflow.com/questions/761263/what-is-the-best-way-to-preload-multiple-images-in-javascript/761332]: http://stackoverflow.com/questions/761263/what-is-the-best-way-to-preload-multiple-images-in-javascript/761332
-  [http://www.filamentgroup.com/lab/update_automatically_preload_images_from_css_with_jquery/]: http://www.filamentgroup.com/lab/update_automatically_preload_images_from_css_with_jquery/
-  [http://snipplr.com/view.php?codeview&id=9612]: http://snipplr.com/view.php?codeview&id=9612

@@ -185,11 +185,11 @@ ul#yerimi li a:hover {
 -   [http://quince.infragistics.com/Patterns/Breadcrumbs.aspx][]
 -   http://www.patternry.com/p=breadcrumbs
 -   [http://www.useit.com/alertbox/breadcrumbs.html][] (mantalite)
--   [http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs][]
+-   veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs
 -   [http://css-tricks.com/triangle-breadcrumbs/][]
 -   [http://css-tricks.com/markup-for-breadcrumbs/][]
--   [http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx][]
--   [http://patterntap.com/tap/collection/breadcrumbs][] (örnekler)
+-   jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx
+-   patterntap.com/tap/collection/breadcrumbs
 
   [100]: https://lh5.googleusercontent.com/FDz5-mF3VgIWJI8MfO35IYd7x3yE6HxDsZLz2X_TpBBFW9xWDQLwej_QBHdt3jcgVXbbyOOJ5cA8WQtDwteT_mW0t9aG6iABRKG0RJW4hIF_tKaqmwE
   [apple.com]: http://apple.com/
@@ -205,8 +205,5 @@ ul#yerimi li a:hover {
   [http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/]: http://www.smashingmagazine.com/2009/03/17/breadcrumbs-in-web-design-examples-and-best-practices-2/
   [http://quince.infragistics.com/Patterns/Breadcrumbs.aspx]: http://quince.infragistics.com/Patterns/Breadcrumbs.aspx
   [http://www.useit.com/alertbox/breadcrumbs.html]: http://www.useit.com/alertbox/breadcrumbs.html
-  [http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs]: http://veerle-v2.duoh.com/blog/comments/simple_scalable_css_based_breadcrumbs
   [http://css-tricks.com/triangle-breadcrumbs/]: http://css-tricks.com/triangle-breadcrumbs/
   [http://css-tricks.com/markup-for-breadcrumbs/]: http://css-tricks.com/markup-for-breadcrumbs/
-  [http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx]: http://www.jankoatwarpspeed.com/post/2008/08/14/Create-applecom-like-breadcrumb-using-simple-CSS.aspx
-  [http://patterntap.com/tap/collection/breadcrumbs]: http://patterntap.com/tap/collection/breadcrumbs

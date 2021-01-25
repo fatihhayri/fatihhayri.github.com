@@ -137,7 +137,7 @@ ikinci yöntem de kullanılabilir.
 
 -   [http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/][]
 -   [http://www.webdesignerwall.com/tutorials/css3-rounded-image-with-jquery/][CSS3 Rounded Image With jQuery]
--   [http://www.swedishfika.com/2010/03/19/rounded-corners-on-images-with-css3-2/][]
+-   swedishfika.com/2010/03/19/rounded-corners-on-images-with-css3-2/
 
   [tıklayınız.]: /dokumanlar/border_radius_resim_.html
   [100]: https://lh5.googleusercontent.com/gLndP4VPjq8o0ReURiijye0gHVHNWXVLgerrYuZ7rDSTu5ZOkhayATtTmspfym08AUQhceJxvnhmSz_03Tr325FWhugB4g5-aC6OarKEqxlF0gcTiA
@@ -147,4 +147,3 @@ ikinci yöntem de kullanılabilir.
   [3]: /dokumanlar/border_radius_resim2.html
   [4]: https://lh3.googleusercontent.com/HIOubjsFMP0fFhreTxPL2NxZltLCUsIANHwS9C193L8OIiw5fEIgs37R3XusyJUn8NeQZYR3u6pK5JevZJi1YhbcKBksfgNeT0mIC4sTGiTQ8uK-_w
   [http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/]: http://trentwalton.com/2010/08/03/css3-border-radius-rounded-avatars/
-  [http://www.swedishfika.com/2010/03/19/rounded-corners-on-images-with-css3-2/]: http://www.swedishfika.com/2010/03/19/rounded-corners-on-images-with-css3-2/

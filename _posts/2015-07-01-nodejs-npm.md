@@ -159,7 +159,7 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
- - [http://www.jskoleji.com/2013/09/nodejs-ilk-uygulamamizi-yaziyoruz.html](http://www.jskoleji.com/2013/09/nodejs-ilk-uygulamamizi-yaziyoruz.html)
+ - jskoleji.com/2013/09/nodejs-ilk-uygulamamizi-yaziyoruz.html
  - [http://speckyboy.com/2013/11/13/node-js-for-front-end-developers/](http://speckyboy.com/2013/11/13/node-js-for-front-end-developers/)
  - [http://kod5.org/node-js-npm-kavramlari-uzerine/](http://kod5.org/node-js-npm-kavramlari-uzerine/)
  - http://www.nodejstr.com/search/label/node%20js%20nedir

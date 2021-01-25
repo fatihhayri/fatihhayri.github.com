@@ -280,10 +280,10 @@ eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
 -   [http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/](http://tympanus.net/codrops/2011/10/19/blur-menu-with-css3-transitions/) (örnek)
 -   [http://caniuse.com/css-transitions](http://caniuse.com/css-transitions) (tarayıcı desteği)
 -   [http://www.opera.com/docs/specs/presto23/css/transitions/](http://www.opera.com/docs/specs/presto23/css/transitions/)
--   [http://www.adobe.com/devnet/html5/articles/using-css3-transitions-a-comprehensive-guide.html](http://www.adobe.com/devnet/html5/articles/using-css3-transitions-a-comprehensive-guide.html)
+-   adobe.com/devnet/html5/articles/using-css3-transitions-a-comprehensive-guide.html
 -   [http://smashinghub.com/css3-transitions-and-animations.htm](http://smashinghub.com/css3-transitions-and-animations.htm) (örnekler)
 -   [http://msdn.microsoft.com/en-us/library/ie/hh673535(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/ie/hh673535(v=vs.85).aspx)
--   [http://tv.adobe.com/watch/learn-dreamweaver-cs6/using-the-css-transitions-panel/?go=13279](http://tv.adobe.com/watch/learn-dreamweaver-cs6/using-the-css-transitions-panel/?go=13279)
+-   tv.adobe.com/watch/learn-dreamweaver-cs6/using-the-css-transitions-panel/?go=13279
 -   [http://www.phpkodlari.com/css-dersleri/css3-transitions-ozelligi/](http://www.phpkodlari.com/css-dersleri/css3-transitions-ozelligi/)
 -   [http://blogs.msdn.com/b/ie/archive/2011/11/21/adding-personality-with-css3-transitions-and-animations.aspx](http://blogs.msdn.com/b/ie/archive/2011/11/21/adding-personality-with-css3-transitions-and-animations.aspx)
 -   [http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/\#transitions](http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/#transitions)

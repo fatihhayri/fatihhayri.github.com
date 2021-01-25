@@ -438,7 +438,7 @@ Kalın sağlıcakla.
 - [http://verekia.com/less-css/dont-read-less-css-tutorial-highly-addictive](http://verekia.com/less-css/dont-read-less-css-tutorial-highly-addictive) (less)
 - [http://www.wellfireinteractive.com/blog/introduction-to-stylus/](http://www.wellfireinteractive.com/blog/introduction-to-stylus/) (stylus)
 - [http://nylira.com/stylus-the-revolutionary-successor-to-css/](http://nylira.com/stylus-the-revolutionary-successor-to-css/) (stylus örnek kaşılaştırma)
-- [http://robdodson.me/blog/2012/12/28/debug-less-with-chrome-developer-tools/](http://robdodson.me/blog/2012/12/28/debug-less-with-chrome-developer-tools/) (less chrome)
+- robdodson.me/blog/2012/12/28/debug-less-with-chrome-developer-tools
 - [https://npmjs.org/~tjholowaychuk](https://npmjs.org/~tjholowaychuk) (stylus geliştiricilerinden)
 - [https://npmjs.org/~kizu](https://npmjs.org/~kizu) (stylus geliştiricilerinden) ie için çözüm önerisi
 - [https://github.com/shomeya/bootstrap-stylus/blob/v1.4.0-stylus/lib/mixins.styl](https://github.com/shomeya/bootstrap-stylus/blob/v1.4.0-stylus/lib/mixins.styl) (stylus örnekleri)

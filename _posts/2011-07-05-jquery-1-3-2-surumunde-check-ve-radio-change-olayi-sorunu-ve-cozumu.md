@@ -32,9 +32,8 @@ yararlansa yeter.
 
 ## Kaynak
 
--   [http://blog.megamon.com/tag/jquery/][]
+-   blog.megamon.com/tag/jquery
 -   [http://jquery14.com/day-01/jquery-14][]
 
 
-  [http://blog.megamon.com/tag/jquery/]: http://blog.megamon.com/tag/jquery/
   [http://jquery14.com/day-01/jquery-14]: http://jquery14.com/day-01/jquery-14

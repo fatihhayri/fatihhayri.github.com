@@ -38,4 +38,4 @@ Kalın sağlıcakla.
  - [http://f.github.io/javascript-te-use-strict-kullanimi.html](http://f.github.io/javascript-te-use-strict-kullanimi.html)
  - [http://mahmutbayri.com/2013/javascript-strict-mode/](http://mahmutbayri.com/2013/javascript-strict-mode/)
  - [https://www.haydarcan.com/javascript-strict-mode-nedir/](https://www.haydarcan.com/javascript-strict-mode-nedir/)
- - [https://www.buraktokak.com/javascriptte-use-strict-ne-icin-kullanilir/](https://www.buraktokak.com/javascriptte-use-strict-ne-icin-kullanilir/)
+ - buraktokak.com/javascriptte-use-strict-ne-icin-kullanilir

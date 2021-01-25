@@ -530,7 +530,7 @@ ie6 öldü.
 
 ## Kaynaklar
 
--   [http://bradt.ca/archives/preventing-ie6-bugs/][] (güzel)
+-   bradt.ca/archives/preventing-ie6-bugs/
 -   [http://www.sitepoint.com/10-fixes-for-ie6-problems/][]
 -   [http://softwareas.com/ten-reasons-why-ie6-development-is-significantly-better-in-2010-than-2001-but-still-painful][]
 -   [http://bip.softwarejewel.com/technology/10-reasons-why-ie6-needs-to-be-killed-2253/][]
@@ -566,7 +566,6 @@ ie6 öldü.
   [IE6′da Liste Ardalan Görmeme Sorunu]: http://fatihhayrioglu.com/ie6da-liste-ardalan-gormeme-sorunu/
   [ie6′da border-color:transparent desteği sağlamak]: http://fatihhayrioglu.com/ie6da-border-colortransparent-destegi-saglamak/
   [http://blogs.msdn.com/b/ie/archive/2006/08/22/712830.aspx]: http://blogs.msdn.com/b/ie/archive/2006/08/22/712830.aspx
-  [http://bradt.ca/archives/preventing-ie6-bugs/]: http://bradt.ca/archives/preventing-ie6-bugs/
   [http://www.sitepoint.com/10-fixes-for-ie6-problems/]: http://www.sitepoint.com/10-fixes-for-ie6-problems/
   [http://softwareas.com/ten-reasons-why-ie6-development-is-significantly-better-in-2010-than-2001-but-still-painful]: http://softwareas.com/ten-reasons-why-ie6-development-is-significantly-better-in-2010-than-2001-but-still-painful
   [http://bip.softwarejewel.com/technology/10-reasons-why-ie6-needs-to-be-killed-2253/]: http://bip.softwarejewel.com/technology/10-reasons-why-ie6-needs-to-be-killed-2253/

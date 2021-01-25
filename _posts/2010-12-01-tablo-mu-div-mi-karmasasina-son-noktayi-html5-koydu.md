@@ -111,10 +111,10 @@ Kalın sağlıcakla
 -   [http://www.sitepoint.com/article/tables-vs-css/][] (güzel anlatım, ama geniş)
 -   [http://webdesign.about.com/od/layout/a/aa111102a.htm][] (güzel)
 -   http://www.chromaticsites.com/web-design-blog/2008-04-03/13-reasons-why-css-is-superior-to-tables-in-website-design
--   [http://www.andybudd.com/archives/2004/05/an_objective_look_at_table_based_vs_css_based_design/][]
--   [http://www.stopdesign.com/present/2004/ddw-seattle/tables/][]
+-   andybudd.com/archives/2004/05/an_objective_look_at_table_based_vs_css_based_design/
+-   stopdesign.com/present/2004/ddw-seattle/tables/
 -   [http://erkana.wordpress.com/2006/09/15/tablosuz-tasarim-tableless/][]
--   [http://eskiz.ksahin.com/?category=web-tasarim/tablosuz-tasarm-tablolu-tasarma-kar][]
+-   eskiz.ksahin.com/?category=web-tasarim/tablosuz-tasarm-tablolu-tasarma-kar
 -   [http://alastairc.ac/2006/08/why-css-is-important-for-accessibility/][]
 -   [http://www.w3.org/TR/CSS-access][]
 
@@ -125,9 +125,6 @@ Kalın sağlıcakla
   [http://resources.bravenet.com/articles/site_building/CSS/tables_bad_css_good/]: http://resources.bravenet.com/articles/site_building/CSS/tables_bad_css_good/
   [http://www.sitepoint.com/article/tables-vs-css/]: http://www.sitepoint.com/article/tables-vs-css/
   [http://webdesign.about.com/od/layout/a/aa111102a.htm]: http://webdesign.about.com/od/layout/a/aa111102a.htm
-  [http://www.andybudd.com/archives/2004/05/an_objective_look_at_table_based_vs_css_based_design/]: http://www.andybudd.com/archives/2004/05/an_objective_look_at_table_based_vs_css_based_design/
-  [http://www.stopdesign.com/present/2004/ddw-seattle/tables/]: http://www.stopdesign.com/present/2004/ddw-seattle/tables/
   [http://erkana.wordpress.com/2006/09/15/tablosuz-tasarim-tableless/]: http://erkana.wordpress.com/2006/09/15/tablosuz-tasarim-tableless/
-  [http://eskiz.ksahin.com/?category=web-tasarim/tablosuz-tasarm-tablolu-tasarma-kar]: http://eskiz.ksahin.com/?category=web-tasarim/tablosuz-tasarm-tablolu-tasarma-kar
   [http://alastairc.ac/2006/08/why-css-is-important-for-accessibility/]: http://alastairc.ac/2006/08/why-css-is-important-for-accessibility/
   [http://www.w3.org/TR/CSS-access]: http://www.w3.org/TR/CSS-access

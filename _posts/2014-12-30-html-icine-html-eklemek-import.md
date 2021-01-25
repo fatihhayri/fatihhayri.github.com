@@ -92,7 +92,7 @@ Sonuç olarak güzel bir özellik ama bazı sorunlarıda beraberinde getiriyor. 
 
 ## Kaynaklar
 
- - [http://w3c.github.io/webcomponents/spec/imports/](http://w3c.github.io/webcomponents/spec/imports/)
+ - w3c.github.io/webcomponents/spec/imports/
  - [http://www.html5rocks.com/en/tutorials/webcomponents/imports/](http://www.html5rocks.com/en/tutorials/webcomponents/imports/)
  - [http://blog.teamtreehouse.com/introduction-html-imports](http://blog.teamtreehouse.com/introduction-html-imports)
  - [http://www.hongkiat.com/blog/html-import/](http://www.hongkiat.com/blog/html-import/)

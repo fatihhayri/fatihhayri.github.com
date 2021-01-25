@@ -28,7 +28,7 @@ Umarım herkesin yararlanacağı bir Türkçe kaynak olur.
 
 ## Hata ve düzeltmeler
 
--   [M. Ceyhun Güler](http://www.jayhoon.com/)'e düzeltmeler ve yardımlarından dolayı
+-   M. Ceyhun Güler'e düzeltmeler ve yardımlarından dolayı
     teşekkürler
 -   @eburhan: Kitapta tek gördüğüm eksiklik “linklerin” çalışmaması. PDF
     formatına dönüştürürken linkleri de dönüştürseydiniz iyi olurdu.

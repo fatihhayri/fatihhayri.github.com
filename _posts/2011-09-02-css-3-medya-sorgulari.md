@@ -424,8 +424,8 @@ mi ama olmadı.
 -   [http://www.cloudfour.com/ipad-css/][]
 -   [http://www.webkit.org/blog/55/high-dpi-web-sites/][]
 -   [No Starch The Book of CSS3][]
--   [http://richardshepherd.com/css-media-queries-jquery/][]
--   [http://css.dzone.com/news/bulletproof-css3-media-queries][]
+-   richardshepherd.com/css-media-queries-jquery/
+-   css.dzone.com/news/bulletproof-css3-media-queries
 -   [http://tests.zerointerface.nl/css3-mediaqueries/][] (test sitesi)
 -   [http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/][]
 -   [http://www.quirksmode.org/blog/archives/2010/08/combining_media.html][]
@@ -458,8 +458,6 @@ mi ama olmadı.
   [http://www.cloudfour.com/ipad-css/]: http://www.cloudfour.com/ipad-css/
   [http://www.webkit.org/blog/55/high-dpi-web-sites/]: http://www.webkit.org/blog/55/high-dpi-web-sites/
   [No Starch The Book of CSS3]: http://nostarch.com/css3.htm
-  [http://richardshepherd.com/css-media-queries-jquery/]: http://richardshepherd.com/css-media-queries-jquery/
-  [http://css.dzone.com/news/bulletproof-css3-media-queries]: http://css.dzone.com/news/bulletproof-css3-media-queries
   [http://tests.zerointerface.nl/css3-mediaqueries/]: http://tests.zerointerface.nl/css3-mediaqueries/
   [http://www.quirksmode.org/blog/archives/2010/08/combining_media.html]: http://www.quirksmode.org/blog/archives/2010/08/combining_media.html
   [http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx]: http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx

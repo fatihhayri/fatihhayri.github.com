@@ -20,7 +20,7 @@ Bulduğum Türkçe Kaynakları paylaşayım.
  - [Vue.js Unboxing](https://www.youtube.com/watch?v=nTkE1fe2Vpk) - Fatih Kadir Akın 
  - [Vuejs & Vuex e Giriş](https://www.youtube.com/watch?v=BatKDYau-EE) - Abdullah UĞRAŞKAN
  - [Vue.js ile Uygulama Geliştirme](http://oguzhan.in/vue-js-ile-uygulama-gelistirme/) - Oğuzhan Aslan
- - [VueJS Nedir? Kullanımı ve Örnekleri](http://www.mektep.tv/post/vuejs-nedir-kullanimi-ve-ornekleri) - mektep.tv
+ - VueJS Nedir? Kullanımı ve Örnekleri - mektep.tv/post/vuejs-nedir-kullanimi-ve-ornekleri - mektep.tv
 
 Benim gördüklerim.
 

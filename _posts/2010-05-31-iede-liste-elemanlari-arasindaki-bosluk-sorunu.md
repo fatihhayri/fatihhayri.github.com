@@ -78,7 +78,7 @@ Bu kodu yazdıktan sonra sayfa aşağıdaki gibi görünecektir.
 -   [http://www.hicksdesign.co.uk/journal/ie-whitespace-bug][]
 -   [http://www.cssnewbie.com/fixing-ie6-whitespace-bug/][]
 -   http://orlandodefrias.com/2008/11/23/ie-unordered-list-extra-space-bug
--   [http://archivist.incutio.com/viewlist/css-discuss/34926][]
+-   archivist.incutio.com/viewlist/css-discuss/34926
 -   http://gtwebdev.com/workshop/gaps/white-space-bug.php
 
   [tıklayınız.]: /dokumanlar/ie6_fazla_bosluk_sorunu/ie_listede_fazla_bosluk_sorunu.html
@@ -88,4 +88,3 @@ Bu kodu yazdıktan sonra sayfa aşağıdaki gibi görünecektir.
   [http://www.brunildo.org/test/IEWlispace.php]: http://www.brunildo.org/test/IEWlispace.php
   [http://www.hicksdesign.co.uk/journal/ie-whitespace-bug]: http://www.hicksdesign.co.uk/journal/ie-whitespace-bug
   [http://www.cssnewbie.com/fixing-ie6-whitespace-bug/]: http://www.cssnewbie.com/fixing-ie6-whitespace-bug/
-  [http://archivist.incutio.com/viewlist/css-discuss/34926]: http://archivist.incutio.com/viewlist/css-discuss/34926

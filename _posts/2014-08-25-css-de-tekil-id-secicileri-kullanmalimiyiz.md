@@ -10,7 +10,7 @@ Tartışmayı [@muratcorlu][1] açtı. :D Daha doğrusu bir makale üzerinden bu
 
 Biraz düşündükten sonra [google dokümanların][3] bu konuda biçilmiş kaftan olduğunu düşündüm. Sonra konu atıl kaldı ta ki şimdiye kadar. Bu gün bu konuyu görünce bunu bir yazıya dökmeliyim dedim ve karşınızda yazı.
 
-Aşağıda toparladığım kaynakların çoğu id’ye karşı ben Murat Çorlu ile tartışmaya başladığımda tekil seçicilere tamamen karşı değildim. Ancak Steve Souders’ın CSS Test sayfasındaki [tekil seçicileri][4] ile [sınıf seçicileri][5] arasındaki ufak farkı görünce fikrim değişti. Tabi bu testleri yeni nesil tarayıcılar yaptığımızda arada az fark görünürken ie8 gibi tarayıcılarda aradaki büyük fark ortaya çıkmasıda ayrı bir konu. 
+Aşağıda toparladığım kaynakların çoğu id’ye karşı ben Murat Çorlu ile tartışmaya başladığımda tekil seçicilere tamamen karşı değildim. Ancak Steve Souders’ın CSS Test sayfasındaki [tekil seçicileri][4] ile sınıf seçicileri arasındaki ufak farkı görünce fikrim değişti. Tabi bu testleri yeni nesil tarayıcılar yaptığımızda arada az fark görünürken ie8 gibi tarayıcılarda aradaki büyük fark ortaya çıkmasıda ayrı bir konu. 
 
 Aşağıda ben burada tartışılan konuları başlıklar altında toplayıp özetini sizlere sunacağım. 
 
@@ -71,7 +71,7 @@ Kalın sağlıcakla.
 
  - [http://csswizardry.com/2011/09/writing-efficient-css-selectors/][7]
  - [http://stackoverflow.com/questions/6376279/css-why-not-use-id-another-reason-than-tightly-coupled][9]
- - [http://oli.jp/2011/ids/][10]
+ - oli.jp/2011/ids/
  - [http://2002-2012.mattwilcox.net/archive/entry/id/1054/][11]
  - [http://twobanjos.com/blog/2011/06/why-well-stop-using-id-in-our-stylesheets/][12]
  - https://talentopoly.com/posts/1858-don_t_use_id_selectors_in_css
@@ -88,12 +88,11 @@ Kalın sağlıcakla.
   [2]: https://twitter.com/ademilter
   [3]: https://docs.google.com/document/d/1AsRKkOUiyyqG9CnXGyz7f9eQUMcAT3oh8ZeWtBZwQ_Y/edit?usp=sharing
   [4]: http://stevesouders.com/efws/css-selectors/csscreate.php?n=1000&sel=#id&body=background:%20#CFD&ne=1000
-  [5]: http://stevesouders.com/efws/css-selectors/csscreate.php?n=1000&sel=.class&body=background:%20#CFD&ne=1000
+  [5]: stevesouders.com/efws/css-selectors/csscreate
   [6]: https://fatihhayrioglu.com/cssin-yapisi/
   [7]: http://csswizardry.com/2011/09/writing-efficient-css-selectors/
   [8]: http://nimbleworks.co.uk/blog/css-id-selectors-never-say-never/
   [9]: http://stackoverflow.com/questions/6376279/css-why-not-use-id-another-reason-than-tightly-coupled
-  [10]: http://oli.jp/2011/ids/
   [11]: http://2002-2012.mattwilcox.net/archive/entry/id/1054/
   [12]: http://twobanjos.com/blog/2011/06/why-well-stop-using-id-in-our-stylesheets/
   [14]: http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/

@@ -14,7 +14,7 @@ Evde kaldığımız şu günlerde ihtiyaçlarımız ve önceliklerimiz de deği�
 
 Görüntü kalitesini belirleyen bir kaç etken var. Bunlardan bir tanesi web kamerası. Birçok yönden mükemmele yakın çözümler sunan Mac Book Pro nedense web kamerası konusunda diğer dizüstü bilgisayarlar gibi beklentilerin altında kalıyor. İdare bile etmiyor. Hal böyle olunca bir çözüm arayışına girdim. Bu çözüm arayışında JSTurk'ün son Panel'indeki yorumlar da etkili oldu. İzlemeyenler için [JSTurk Panel 2](https://www.youtube.com/watch?v=E89qnB4u2ZM)
 
-[Murat](twitter.com/muratcorlu)'ın önerisiyle ilk olarak EpocCam uygulamasını kurdum. Ancak sonra [Iriun](https://iriun.com/) uygulaması daha iyi görüntü verdi sanki. 
+[Murat](https://twitter.com/muratcorlu)'ın önerisiyle ilk olarak EpocCam uygulamasını kurdum. Ancak sonra [Iriun](https://iriun.com/) uygulaması daha iyi görüntü verdi sanki. 
 
 Kurulum iki aşamadan oluşuyor. 
 

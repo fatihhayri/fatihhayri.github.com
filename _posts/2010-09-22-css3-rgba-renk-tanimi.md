@@ -131,7 +131,7 @@ araçlarındaki esnekliği sağlamaktadır.
 
 Örneğin [text-shadow][] özelliğindeki renk tanımında rgba kullanılırsa
 çok güzel görüntüler elde ederiz. Örnek için
-[http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/][]
+nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox
 sitesini ziyaret ediniz.
 
 Benzer bir şekilde [box-shadow][] özelliğindeki renk tanımında rgba
@@ -195,13 +195,13 @@ tarayıcılar için standart kod kullanılır.
 -   [http://24ways.org/2009/working-with-rgba-colour][]
 -   [http://www.w3.org/TR/css3-color/#rgba-color][]
 -   [http://css-tricks.com/rgba-browser-support/][]
--   [http://www.gograybox.com/blog/qt-css3-rgba/][]
+-   gograybox.com/blog/qt-css3-rgba/
 -   http://forabeautifulweb.com/blog/about/is_css3_rgba_ready_to_rock
 -   [http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/][]
 -   [http://www.css3.info/introduction-opacity-rgba/][]
 -   [http://dorward.me.uk/www/css/alpha-colour/][]
 -   [http://www.robertnyman.com/css3/rgba/rgba.html][]
--   [http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/][]
+-   nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/
 
   [CSS Birimleri]: http://fatihhayrioglu.com/css-birimleri/
   [100]: /images/renk_paleti-300x197.jpg
@@ -210,12 +210,10 @@ tarayıcılar için standart kod kullanılır.
   [2]: /dokumanlar/rgba_renk_tanimi2.html
   [3]: https://lh5.googleusercontent.com/mtFDIUdPs-VFwWWJ5jBYK3uD3je_AZcnVQ404x_QX1d1tatFUtivIO3zKLeTHCuHKOwOakSk0vLBGAyXjN270P9NH3HLkpfj5Goy5kZT7TUivjQzKA
   [text-shadow]: http://fatihhayrioglu.com/css-ile-metinlere-golge-vermek/
-  [http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/]: http://nicewebtype.com/notes/2009/07/12/rgba-text-shadow-in-safari-firefox/
   [box-shadow]: http://fatihhayrioglu.com/kutulara-golge-vermek-box-shadow/
   [http://24ways.org/2009/working-with-rgba-colour]: http://24ways.org/2009/working-with-rgba-colour
   [http://www.w3.org/TR/css3-color/#rgba-color]: http://www.w3.org/TR/css3-color/#rgba-color
   [http://css-tricks.com/rgba-browser-support/]: http://css-tricks.com/rgba-browser-support/
-  [http://www.gograybox.com/blog/qt-css3-rgba/]: http://www.gograybox.com/blog/qt-css3-rgba/
   [http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/]: http://dev.opera.com/articles/view/color-in-opera-10-hsl-rgb-and-alpha-transparency/
   [http://www.css3.info/introduction-opacity-rgba/]: http://www.css3.info/introduction-opacity-rgba/
   [http://dorward.me.uk/www/css/alpha-colour/]: http://dorward.me.uk/www/css/alpha-colour/

@@ -28,7 +28,7 @@ Profil selectbox'ın mevcut seçenekleri DSL, EDGE, 3G vd. seçebiliyoruz. Ayrı
 ## Kaynaklar
 
  - [http://blog.tcs.de/simulate-slow-network-connection-on-mac-os-x/](http://blog.tcs.de/simulate-slow-network-connection-on-mac-os-x/)
- - [http://thisbythem.com/blog/simulating-a-slow-internet-connection-on-osx/](http://thisbythem.com/blog/simulating-a-slow-internet-connection-on-osx/)
+ - thisbythem.com/blog/simulating-a-slow-internet-connection-on-osx
 
 
 [ncl01]: /images/ncl_01.png

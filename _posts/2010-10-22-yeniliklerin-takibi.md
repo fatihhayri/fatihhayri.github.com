@@ -106,7 +106,7 @@ tercihim genişletilmiş olarak izlemek ama çok fazla birikince listeye
 geçebiliyorum.
 
 Stilni değiştirme imkanı veriyor
-[http://www.fabianpimminger.com/playground/google-reader-styles/][]
+fabianpimminger.com/playground/google-reader-styles/
 adresindeki scriptleri yükleyerek Google Reader'ınızın görünümünü
 değiştirebilirsiniz.
 
@@ -291,7 +291,6 @@ olan yenilikleri takip etmek ve geri kalmamaktır. Ferruh Mavituna'nın
   [4]: /images/gr_abonelik_istatistik-300x177.gif
   [5]: /images/gr_sakla-300x15.gif
   [6]: /images/feed_gosterimi-300x162.gif
-  [http://www.fabianpimminger.com/playground/google-reader-styles/]: http://www.fabianpimminger.com/playground/google-reader-styles/
   [Kısayolları listesi]: http://www.google.com/support/reader/bin/answer.py?hl=en&answer=69973
   [7]: /images/kisayollar1-300x159.gif
   [8]: /images/gr_paylas-300x18.gif

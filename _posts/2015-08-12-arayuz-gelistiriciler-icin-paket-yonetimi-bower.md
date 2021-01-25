@@ -188,5 +188,5 @@ Kalın sağlıcakla.
  - http://www.web-and-development.com/twitter-bower-browser-package-manager/
  - [https://blog.openshift.com/day-1-bower-manage-your-client-side-dependencies/](https://blog.openshift.com/day-1-bower-manage-your-client-side-dependencies/)
  - [http://www.boxuk.com/blog/unboxing-bower/](http://www.boxuk.com/blog/unboxing-bower/)
- - [http://germanforblack.com/post/46734908388/i-built-a-plugin-for-sublime-text-that-integrates](http://germanforblack.com/post/46734908388/i-built-a-plugin-for-sublime-text-that-integrates)
+ - germanforblack.com/post/46734908388/i-built-a-plugin-for-sublime-text-that-integrates
  - [http://www.sitepoint.com/package-management-for-the-browser-with-bower/](http://www.sitepoint.com/package-management-for-the-browser-with-bower/)

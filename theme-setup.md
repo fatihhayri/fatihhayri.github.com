@@ -264,7 +264,7 @@ npm install
 
 From the theme's root, use `grunt` to rebuild the CSS, concatenate JavaScript files, and optimize .jpg, .png, and .svg files in the `images/` folder. You can also use `grunt watch` in combination with `jekyll build --watch` to watch for updates to your LESS and JS files that Grunt will then automatically re-build as you write your code which will in turn auto-generate your Jekyll site when developing locally.
 
-And if the command line isn't your thing (you're using Jekyll so it probably is), [CodeKit](http://incident57.com/codekit/) for OS X and [Prepros](http://alphapixels.com/prepros/) for Windows are great alternatives.
+And if the command line isn't your thing (you're using Jekyll so it probably is), CodeKit for OS X and [Prepros](http://alphapixels.com/prepros/) for Windows are great alternatives.
 
 ---
 

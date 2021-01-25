@@ -13,7 +13,7 @@ Tasarımcıdan gelen kaynak dosya(psd veya png) resim işleme programı ile
 açılır. Benim elim daha çok Phoshop’a alışık olduğu için onun üzerinden
 anlatacağım.
 
-Burada kodlayacağım mailing [Can Gürbü][]z’ün tasarladığı bir mailing,
+Burada kodlayacağım mailing Can Gürbüz’ün tasarladığı bir mailing,
 biraz sağı-solu ile oynadık tabi. Bu arada Can’a teşekkürler tasarım
 için.
 
@@ -151,7 +151,7 @@ Sağlıcakla kalın.
 -   [http://www.tuttoaster.com/code-an-email-newsletter-from-psd-to-html/][]
 -   [http://sixrevisions.com/web_design/creating-html-emails/][]</a>
 
-  [Can Gürbü]: http://www.cangurbuz.com/
+  [Can Gürbüz]: cangurbuz.com
   [tıklayınız.]: /dokumanlar/mailing_yapmak/mailing.rar
   [100]: /images/mailing_ornegi.jpg
   [1]: /images/mail_yapmak_slice_araci.gif

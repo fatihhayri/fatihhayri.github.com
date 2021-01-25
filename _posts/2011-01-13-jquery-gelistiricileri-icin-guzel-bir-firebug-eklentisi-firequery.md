@@ -80,8 +80,8 @@ FireBug büyüksün.
 ## Kaynaklar
 
 -   [http://firequery.binaryage.com/][]
--   [https://addons.mozilla.org/en-US/firefox/addon/12632/][]
--   [http://javascriptly.com/2009/12/firequery-an-introduction/][]
+-   addons.mozilla.org/en-US/firefox/addon/12632/
+-   javascriptly.com/2009/12/firequery-an-introduction
 
   [100]: /images/firequery-64.png
   [1]: /images/firequery11.gif
@@ -89,5 +89,3 @@ FireBug büyüksün.
   [3]: /images/firequery41.gif
   [4]: /images/firequery51.gif
   [http://firequery.binaryage.com/]: http://firequery.binaryage.com/
-  [https://addons.mozilla.org/en-US/firefox/addon/12632/]: https://addons.mozilla.org/en-US/firefox/addon/12632/
-  [http://javascriptly.com/2009/12/firequery-an-introduction/]: http://javascriptly.com/2009/12/firequery-an-introduction/

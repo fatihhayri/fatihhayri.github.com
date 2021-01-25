@@ -34,7 +34,7 @@ Tablo kullanımına benzese de herhangi bir fiziksel html elemanına(table, td v
 
 * [http://24ways.org/2012/css3-grid-layout/](http://24ways.org/2012/css3-grid-layout/)
 
-* [http://hugogiraudel.com/2013/04/04/css-grid-layout/](http://hugogiraudel.com/2013/04/04/css-grid-layout/)
+* hugogiraudel.com/2013/04/04/css-grid-layout/
 
 * [http://msdn.microsoft.com/en-us/library/ie/hh673533(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/ie/hh673533(v=vs.85).aspx)
 
@@ -54,7 +54,7 @@ CSS3 Bölgeler modülü Adobe tarafından üretilip w3c’ye önerilen bir modü
 
 * http://blogs.adobe.com/webplatform/category/features/css-regions/
 
-* [http://www.adobe.com/devnet/html5/articles/css3-regions.html](http://www.adobe.com/devnet/html5/articles/css3-regions.html)
+* adobe.com/devnet/html5/articles/css3-regions.html
 
 * [http://galjot.si/css-regions](http://galjot.si/css-regions)
 

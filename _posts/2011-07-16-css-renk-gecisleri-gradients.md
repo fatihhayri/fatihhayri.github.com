@@ -251,8 +251,8 @@ binmelerde saydam özelliğini kullanarak farklı resimler elde edilebilir.
 
 Tüm bu özellikleri birleştirerek çok güzel ardalanlar elde edebiliriz.
 
-[http://leaverou.me/demos/css3-patterns.html][] ve
-[http://leaverou.me/css3patterns/][] sitesindeki örnekler bu özelliğin
+leaverou.me/demos/css3-patterns.html ve
+leaverou.me/css3patterns sitesindeki örnekler bu özelliğin
 gelecek açısından ne kadar ümitli olacağımızı gösteriyor. Bu sitede artı
 olarak background-size özelliği kullanılmıştır. [http://leaverou.me][]
 sitesi css renk geçişi konusunda geniş bilgi ve örneğe sahip incelemekte
@@ -493,10 +493,10 @@ Kalın sağlıcakla
 -   [http://www.display-inline.fr/projects/css-gradient/][]
 -   [http://davidwalsh.name/css-gradients][]
 -   [http://www.slideshare.net/LeaVerou/mastering-css3-gradients][]
--   [http://css-class.com/test/css/3/gradients/repeating-linear-gradients-stops.htm][]
+-   css-class.com/test/css/3/gradients/repeating-linear-gradients-stops.htm
 -   [https://developer.mozilla.org/en/CSS/repeating-linear-gradient][]
 -   [http://24ways.org/2010/everything-you-wanted-to-know-about-gradients][]
--   [http://leaverou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/][]
+-   [http://lea.verou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/][]
 -   [http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGradients][]
 -   [http://developer.practicalecommerce.com/articles/2395-CSS3-Gradients-Revisited][]
 -   [http://www.webdirections.org/blog/css3-radial-gradients/][]
@@ -509,8 +509,6 @@ Kalın sağlıcakla
   [100]: https://lh6.googleusercontent.com/qdn73-Cr_BtDXHybNUYrBRPDgdpSY35sBoIxaSTEaRqZrdDr7YgO7QAkwOJb6AJDNEZIzQh58zcwM3WZJGZAAl_VIiOKp1nxZAonW1_EscSfTVJV8j4
   [1]: /images/dogrusal_renk_gecisi.gif
   [Daha önce anlattığımız]: http://fatihhayrioglu.com/css3-rgba-renk-tanimi/
-  [http://leaverou.me/demos/css3-patterns.html]: http://leaverou.me/demos/css3-patterns.html
-  [http://leaverou.me/css3patterns/]: http://leaverou.me/css3patterns/
   [http://leaverou.me]: http://leaverou.me
   [2]: https://lh4.googleusercontent.com/zTNQg2bWiAo4RRgxE2D5sF6W13C3sjBjayS4NBVEiO3bGZzfE8ns63R4qWeub4XHUEfBLW3fD8Ue62Zmfebm2IKQU4NSNvViku8B6WIAIC7-W4LDwA
   [3]: /images/radyal_renk_gecisi.gif
@@ -535,10 +533,9 @@ Kalın sağlıcakla
   [http://www.display-inline.fr/projects/css-gradient/]: http://www.display-inline.fr/projects/css-gradient/
   [http://davidwalsh.name/css-gradients]: http://davidwalsh.name/css-gradients
   [http://www.slideshare.net/LeaVerou/mastering-css3-gradients]: http://www.slideshare.net/LeaVerou/mastering-css3-gradients
-  [http://css-class.com/test/css/3/gradients/repeating-linear-gradients-stops.htm]: http://css-class.com/test/css/3/gradients/repeating-linear-gradients-stops.htm
   [https://developer.mozilla.org/en/CSS/repeating-linear-gradient]: https://developer.mozilla.org/en/CSS/repeating-linear-gradient
   [http://24ways.org/2010/everything-you-wanted-to-know-about-gradients]: http://24ways.org/2010/everything-you-wanted-to-know-about-gradients
-  [http://leaverou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/]: http://leaverou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/
+  [http://lea.verou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/]: http://lea.verou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/
   [http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGradients]: http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGradients
   [http://www.webdirections.org/blog/css3-radial-gradients/]: http://www.webdirections.org/blog/css3-radial-gradients/
   [http://designfestival.com/a-farewell-to-css3-gradients/]: http://designfestival.com/a-farewell-to-css3-gradients/

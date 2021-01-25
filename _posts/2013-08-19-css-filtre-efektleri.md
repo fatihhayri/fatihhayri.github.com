@@ -116,7 +116,7 @@ Resmi siyah beyaz yapıp, ayrıca kontrastını düşürerek baskı görünümü
 ## Kaynaklar
 
 * [http://www.html5rocks.com/en/tutorials/filters/understanding-css/](http://www.html5rocks.com/en/tutorials/filters/understanding-css/)
-* [http://html5-demos.appspot.com/static/css/filters/index.html](http://html5-demos.appspot.com/static/css/filters/index.html) (araç)
+* html5-demos.appspot.com/static/css/filters/index.html
 * [http://caniuse.com/#feat=css-filters](http://caniuse.com/#feat=css-filters)
 * [https://developer.mozilla.org/en-US/docs/Web/CSS/filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 * [http://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/](http://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/)

@@ -221,7 +221,7 @@ ediyorum, özellikle [Doruk][], bu konuda bildiğim bir çok şeyi ondan
 ## Kaynaklar
 
 -   [http://inchoo.net/tools/basic-git-usage-from-console/][]
--   [http://www.foch.com.tr/versiyon-kontrol-git-svn-cvs.html][]
+-   foch.com.tr/versiyon-kontrol-git-svn-cvs.html
 -   [http://mhazer.blogspot.com/2010/12/versiyon-yonetim-sistemi-olarak-git.html][]
 -   [http://www.kodcu.com/2011/04/git-mi-subversion-mi/][]
 -   [http://net.tutsplus.com/tutorials/other/the-perfect-workflow-with-git-github-and-ssh/][]
@@ -237,7 +237,6 @@ ediyorum, özellikle [Doruk][], bu konuda bildiğim bir çok şeyi ondan
   [2]: https://lh6.googleusercontent.com/aaVMUy_pCM6En6Q48EF2M-7FrFFS44ADVrqkZQuDAOMQc6GPVx3sX_vYQnFcgYeqKLgGlw-CrREnbWcAvZYqLPb0hXdcYQFSILnNqQxV_XXfkSkXdw
   [Doruk]: http://twitter.com/#!/dorukozalp
   [http://inchoo.net/tools/basic-git-usage-from-console/]: http://inchoo.net/tools/basic-git-usage-from-console/
-  [http://www.foch.com.tr/versiyon-kontrol-git-svn-cvs.html]: http://www.foch.com.tr/versiyon-kontrol-git-svn-cvs.html
   [http://mhazer.blogspot.com/2010/12/versiyon-yonetim-sistemi-olarak-git.html]: http://mhazer.blogspot.com/2010/12/versiyon-yonetim-sistemi-olarak-git.html
   [http://www.kodcu.com/2011/04/git-mi-subversion-mi/]: http://www.kodcu.com/2011/04/git-mi-subversion-mi/
   [http://net.tutsplus.com/tutorials/other/the-perfect-workflow-with-git-github-and-ssh/]: http://net.tutsplus.com/tutorials/other/the-perfect-workflow-with-git-github-and-ssh/

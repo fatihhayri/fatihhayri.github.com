@@ -67,7 +67,7 @@ Kalın sağlıcakla.
  - [https://alligator.io/css/cropping-images-object-fit/](https://alligator.io/css/cropping-images-object-fit/)
  - [https://www.sitepoint.com/using-css-object-fit-object-position-properties/](https://www.sitepoint.com/using-css-object-fit-object-position-properties/)
  - [https://tympanus.net/codrops/css_reference/object-fit/](https://tympanus.net/codrops/css_reference/object-fit/)
- - [https://helloanselm.com/2013/fix-image-resizing-with-object-fit/](https://helloanselm.com/2013/fix-image-resizing-with-object-fit/)
+ - helloanselm.com/2013/fix-image-resizing-with-object-fit
  - [https://caniuse.com/#search=object-fit](https://caniuse.com/#search=object-fit)
  - [https://developer.mozilla.org/tr/docs/Web/CSS/object-fit](https://developer.mozilla.org/tr/docs/Web/CSS/object-fit)
  - [https://codepen.io/dudleystorey/pen/myPZwN](https://codepen.io/dudleystorey/pen/myPZwN)
