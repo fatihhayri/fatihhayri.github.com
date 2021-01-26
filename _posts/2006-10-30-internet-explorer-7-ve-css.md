@@ -82,7 +82,7 @@ div {
 -   **IE/Win'de Gözden Kaybolan List-background Sorunu**
     Bu hata Göreceli Konumlandırmalı floating uygulanmış bir liste
     elementine background uygulandığında meydana gelir. Ayrıntılı bilgi
-    için [tıklayınız][8].
+    için.
 
 -   **Internet Explorer ve Genişleyen Kutu Problemi**
     Ayrıntılı bilgi için [tıklayınız][9].
@@ -152,7 +152,6 @@ Tüm liste için [tıklayınız][13].
   [5]: http://www.positioniseverything.net/explorer/creep.html
   [6]: http://www.positioniseverything.net/explorer/lineheightbug.html
   [7]: http://www.positioniseverything.net/explorer/floatIndent.html
-  [8]: http://www.positioniseverything.net/explorer/ie-listbug.html
   [9]: http://www.positioniseverything.net/explorer/expandingboxbug.html
   [10]: http://www.positioniseverything.net/explorer/percentages.html
   [11]: http://www.positioniseverything.net/explorer/firstletter.html

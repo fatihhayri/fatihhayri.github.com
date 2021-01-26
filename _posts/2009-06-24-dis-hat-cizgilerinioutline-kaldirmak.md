@@ -178,8 +178,7 @@ sonunda örneğimiz ie de de çalışacaktır.
 -   [http://webaim.org/blog/plague-of-outline-0/][](kaldırılmamalı)
 -   http://www.elctech.com/snippets/css-remove-dotted-outline-border-from-active-links
 -   http://sackclothstudios.com/css/outline-the-neglected-css-property
--   [http://arjaneising.nl/css/dont-remove-the-outline-from-links][]
-    (kaldırılmamalı)
+-   arjaneising.nl/css/dont-remove-the-outline-from-links
 -   http://www.karlrixon.co.uk/articles/css/remove-button-focus-outline-using-css
 -   [http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/][]
     (kaldırılmamalı)
@@ -212,8 +211,6 @@ sonunda örneğimiz ie de de çalışacaktır.
     "http://snipplr.com/view/15704/eliminating-the-dotted-line-box-that-appears-around-a-link/"
   [http://webaim.org/blog/plague-of-outline-0/]: http://webaim.org/blog/plague-of-outline-0/
     "http://webaim.org/blog/plague-of-outline-0/"
-  [http://arjaneising.nl/css/dont-remove-the-outline-from-links]: http://arjaneising.nl/css/dont-remove-the-outline-from-links
-    "http://arjaneising.nl/css/dont-remove-the-outline-from-links"
   [http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/]: http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/
     "http://www.456bereastreet.com/archive/200905/do_not_remove_the_outline_from_links_and_form_controls/"
   [http://sonspring.com/journal/removing-dotted-links]: http://sonspring.com/journal/removing-dotted-links

@@ -69,7 +69,7 @@ ul li a#smUrunler{
 Tanılaması daha efektif bir sonuç verecektir. Tarayıcı direk olarak
 a#smUrunler seçicisi ile elemanı bulacaktır.
 
-[stevesouders.com'un test sayfasını][] incelersek sonucu daha iyi
+stevesouders.com'un test sayfasını incelersek sonucu daha iyi
 anlayacağız.
 
 Aynı öneriyi bize Google'un Page Speed eklentisi test sonucuda
@@ -188,7 +188,7 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
 -   [http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors][]
 -   [http://css-tricks.com/efficiently-rendering-css/][]
 -   http://www.nuvographics.com/articles/efficientcss
--   [http://www.css-101.org/descendant-selector/go_fetch_yourself.php][] (yeni)
+-   css-101.org/descendant-selector/go_fetch_yourself.php
 
   [Writing Efficient CSS for use in the Mozilla UI]: https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
     "Writing Efficient CSS for use in the Mozilla UI"
@@ -198,8 +198,6 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
     "Özellik Seçicileri(Attribute Selectors)"
   [Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)]: http://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
     "Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)"
-  [stevesouders.com'un test sayfasını]: http://stevesouders.com/efws/css-selectors/baseline.php
-    "stevesouders.com'un test sayfasını"
   [google'un önerileride]: http://code.google.com/speed/page-speed/docs/rendering.html
     "google'un önerileride"
   [https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no]: https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
@@ -222,4 +220,3 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
     "http://fatagnus.com/guidelines-for-writing-efficient-css-selectors/"
   [http://css-tricks.com/efficiently-rendering-css/]: http://css-tricks.com/efficiently-rendering-css/
     "http://css-tricks.com/efficiently-rendering-css/"
-  [http://www.css-101.org/descendant-selector/go_fetch_yourself.php]: http://www.css-101.org/descendant-selector/go_fetch_yourself.php

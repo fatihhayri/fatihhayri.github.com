@@ -45,10 +45,9 @@ tanımlamaları yeterlidir. Örneği görmek için [tıklayınız.][1]
 
 ## Kaynak
 
-[http://test.pixelbebop.com/test33/][]
+test.pixelbebop.com/test33/
 
   [İE de hatalı resmi]: /images/tr_hatali_ie.gif
   [tıklayınız.]: /dokumanlar/tablo_satiri.html
   [İE düzeltişmiş görüntüsü]: /images/tr_duzeltilmis_ie.gif
   [1]: /dokumanlar/tablo_satiri2.html
-  [http://test.pixelbebop.com/test33/]: http://test.pixelbebop.com/test33/

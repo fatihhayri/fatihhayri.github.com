@@ -26,7 +26,6 @@ tags: [0 yükseklik, Developer Tools, firebug, Firefox 3.1, HTML 5, ie8, Javascr
 -   CSS ile yapılmış açılır menü örnekleri. [Bağlantı][8] 
 -   Web 2.0 bitti ,Web 3.0'ı beklerken - blog.harunpeksen.net
 -   FireBug1.2.1 sürümü yayınlamış. Değişen bazı hataların giderilmesi.
-    [Bağlanatı][] 
 -   Daron Yöndem'den ie8 hakkında güzel makaleler. 
 
 
@@ -44,4 +43,3 @@ tags: [0 yükseklik, Developer Tools, firebug, Firefox 3.1, HTML 5, ie8, Javascr
     "FireFox3.1"
   [6]: http://iipimage.sourceforge.net/demo/ "image map"
   [8]: http://hiddenpixels.com/javascript/css-dropdown-menus-sample-and-tutorials/
-  [Bağlanatı]: https://addons.mozilla.org/en-US/firefox/addon/1843

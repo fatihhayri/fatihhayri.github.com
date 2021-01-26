@@ -280,15 +280,15 @@ diyebilirsiniz. Ama tasarımcının tercihleri böyle ve bu yazıyı daha
 yazmamıştım. Her yazıda bende bir şeyler öğreniyorum.
 
 Bu sayfalamalar dışında bir çok örneği bulabileceğiniz.
-[http://mis-algoritmos.com/2007/03/16/some-styles-for-your-pagination/][]
+mis-algoritmos.com/2007/03/16/some-styles-for-your-pagination/
 sitesini ziyaret etmenizi öneririm.
 
 ## Kaynaklar
 
 -   [http://kurafire.net/log/archive/2007/06/22/pagination-101][]
--   [http://mis-algoritmos.com/2007/03/16/some-styles-for-your-pagination/][]
+-   mis-algoritmos.com/2007/03/16/some-styles-for-your-pagination/
 -   [http://woork.blogspot.com/2008/03/perfect-pagination-style-using-css.html][]
--   [http://arjaneising.nl/html/tips-for-better-pagination][]
+-   arjaneising.nl/html/tips-for-better-pagination
 -   [http://www.dynamicdrive.com/style/csslibrary/item/css_pagination_links/][]
 -   [http://www.thewebhelp.com/css/pagination_style_template/][]
 -   [http://css.dzone.com/news/a-digg-flickr-pagination-style][]
@@ -305,14 +305,10 @@ sitesini ziyaret etmenizi öneririm.
   [1]: /dokumanlar/sayfalama3.html "Yahoyt Sayfalama Örneği"
   [Bonus Kampanya Sayfalama]: /images/sayfalama2.gif
   [2]: /dokumanlar/sayfalama2.html "Bonus Kampanyalar Sayfalama Örneği"
-  [http://mis-algoritmos.com/2007/03/16/some-styles-for-your-pagination/]: http://mis-algoritmos.com/2007/03/16/some-styles-for-your-pagination/
-    "http://mis-algoritmos.com/2007/03/16/some-styles-for-your-pagination/"
   [http://kurafire.net/log/archive/2007/06/22/pagination-101]: http://kurafire.net/log/archive/2007/06/22/pagination-101
     "http://kurafire.net/log/archive/2007/06/22/pagination-101"
   [http://woork.blogspot.com/2008/03/perfect-pagination-style-using-css.html]: http://woork.blogspot.com/2008/03/perfect-pagination-style-using-css.html
     "http://woork.blogspot.com/2008/03/perfect-pagination-style-using-css.html"
-  [http://arjaneising.nl/html/tips-for-better-pagination]: http://arjaneising.nl/html/tips-for-better-pagination
-    "http://arjaneising.nl/html/tips-for-better-pagination"
   [http://www.dynamicdrive.com/style/csslibrary/item/css_pagination_links/]: http://www.dynamicdrive.com/style/csslibrary/item/css_pagination_links/
     "http://www.dynamicdrive.com/style/csslibrary/item/css_pagination_links/"
   [http://www.thewebhelp.com/css/pagination_style_template/]: http://www.thewebhelp.com/css/pagination_style_template/

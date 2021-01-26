@@ -80,9 +80,7 @@ Bir ie6 sorununun daha üstesinden geldik bir başka ie6 sorunu ile daha
 karşınızda olana dek hoşça kalın.(Bu ie6 oldukça nasıl hoş kalacağız oda
 ayrı bir konu.)
 
--   [http://www.positioniseverything.net/explorer/ie-listbug.html][]
+-   positioniseverything.net/explorer/ie-listbug.html
 
   [100]: /images/ie_liste_sorunu.gif
   [tıklayınız.]: /dokumanlar/liste_ardalani.html
-  [http://www.positioniseverything.net/explorer/ie-listbug.html]: http://www.positioniseverything.net/explorer/ie-listbug.html
-    "http://www.positioniseverything.net/explorer/ie-listbug.html"

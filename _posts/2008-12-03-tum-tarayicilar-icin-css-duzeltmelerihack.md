@@ -184,11 +184,11 @@ Internet Explorer 7/6/5.5, Opera 9.6 ile test edilmiştir.
     (***) sürümler eski
 -   [http://www.artypapers.com/csshelppile/category.php?2][]
 -   [http://rafael.adm.br/css_browser_selector/][]
--   [http://css-discuss.incutio.com/?page=CssHack][]
--   [http://snipplr.com/view/7043/firefox-3-css-hack/][]
+-   css-discuss.incutio.com/?page=CssHack
+-   snipplr.com/view/7043/firefox-3-css-hack/
 -   http://pornel.net/firefoxhack
 -   [http://www.nealgrosskopf.com/tech/thread.asp?pid=20][]
--   [http://snipplr.com/search.php?q=CSS+hack&btnsearch=go][]
+-   snipplr.com/search.php?q=CSS+hack&btnsearch=go
 -   [http://fu2k.org/alex/css/hacks/fuzzyspecificity][]
 -   [http://dimox.net/personal-css-hacks-for-ie6-ie7-ie8/][] (ie6, ie7,
     ie8 ve ie9)
@@ -215,14 +215,8 @@ Internet Explorer 7/6/5.5, Opera 9.6 ile test edilmiştir.
     "http://www.artypapers.com/csshelppile/category.php?2"
   [http://rafael.adm.br/css_browser_selector/]: http://rafael.adm.br/css_browser_selector/
     "http://rafael.adm.br/css_browser_selector/"
-  [http://css-discuss.incutio.com/?page=CssHack]: http://css-discuss.incutio.com/?page=CssHack
-    "http://css-discuss.incutio.com/?page=CssHack"
-  [http://snipplr.com/view/7043/firefox-3-css-hack/]: http://snipplr.com/view/7043/firefox-3-css-hack/
-    "http://snipplr.com/view/7043/firefox-3-css-hack/"
   [http://www.nealgrosskopf.com/tech/thread.asp?pid=20]: http://www.nealgrosskopf.com/tech/thread.asp?pid=20
     "http://www.nealgrosskopf.com/tech/thread.asp?pid=20"
-  [http://snipplr.com/search.php?q=CSS+hack&btnsearch=go]: http://snipplr.com/search.php?q=CSS+hack&btnsearch=go
-    "http://snipplr.com/search.php?q=CSS+hack&btnsearch=go"
   [http://fu2k.org/alex/css/hacks/fuzzyspecificity]: http://fu2k.org/alex/css/hacks/fuzzyspecificity
     "http://fu2k.org/alex/css/hacks/fuzzyspecificity"
   [http://dimox.net/personal-css-hacks-for-ie6-ie7-ie8/]: http://dimox.net/personal-css-hacks-for-ie6-ie7-ie8/

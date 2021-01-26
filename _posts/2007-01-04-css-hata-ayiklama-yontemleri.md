@@ -167,7 +167,7 @@ da biz burada genel kabul görmüş yöntemleri yazmayı uygun bulduk.
 
 -   [http://www.webdevout.net/articles/css_hacks.php][]
 -   http://swik.net/CSS/CSS+Hacks
--   [http://css-discuss.incutio.com/?page=CssHack][]
+-   css-discuss.incutio.com/?page=CssHack
 -   [http://www.quirksmode.org/css/csshacks.html][]
 -   [http://tantek.com/CSS/Examples/boxmodelhack.html][tantek]
 -   http://www.albin.net/CSS/OwenHack.html
@@ -182,5 +182,4 @@ da biz burada genel kabul görmüş yöntemleri yazmayı uygun bulduk.
   [Css de kodumuzu İE'den gizleme]: http://fatihhayrioglu.com/?p=31
   [IE'da min-width, min-height,max-width, max-height Kullanmak]: http://fatihhayrioglu.com/?p=182
   [http://www.webdevout.net/articles/css_hacks.php]: http://www.webdevout.net/articles/css_hacks.php
-  [http://css-discuss.incutio.com/?page=CssHack]: http://css-discuss.incutio.com/?page=CssHack
   [http://www.quirksmode.org/css/csshacks.html]: http://www.quirksmode.org/css/csshacks.html

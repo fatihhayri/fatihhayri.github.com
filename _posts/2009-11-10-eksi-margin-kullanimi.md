@@ -527,9 +527,9 @@ uygulamamızda eksi margin'i kullanmaya devam edeceğiz.
     (karşı çıkış)
 -   http://haslayout.net/css/negmargin
 -   [http://csscreator.com/node/28664][] (küçük bilgi)
--   [http://www.simplebits.com/notebook/2005/05/23/negative.html][]
+-   simplebits.com/notebook/2005/05/23/negative.html
     (negatif margin kullanılcak bir örnek)
--   [http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra][]
+-   severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra
     (negatif margin ile sayfa yapısı oluşturma)
 -   http://haslayout.net/css/Negative-Margin-Bug (negatif margin
     sorunları)
@@ -584,5 +584,3 @@ uygulamamızda eksi margin'i kullanmaya devam edeceğiz.
   [http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/]: http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/
   [http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm]: http://www.bennadel.com/blog/1174-Negative-CSS-Margins-Are-Not-Cool.htm
   [http://csscreator.com/node/28664]: http://csscreator.com/node/28664
-  [http://www.simplebits.com/notebook/2005/05/23/negative.html]: http://www.simplebits.com/notebook/2005/05/23/negative.html
-  [http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra]: http://www.severnsolutions.co.uk/twblog/archive/2004/07/01/cssnegativemarginsalgebra

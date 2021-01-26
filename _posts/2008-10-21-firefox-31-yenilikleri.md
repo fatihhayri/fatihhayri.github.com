@@ -157,7 +157,7 @@ getirilecek.
 -   [http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords][]
 -   http://www.tgdaily.com/html_tmp/content-view-39752-140.html
 -   [http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744][]
--   [http://www.pclabs.com.tr/2008/05/23/mozilla-firefox-31-bu-sene-sonunda-cikiyor/][]
+-   pclabs.com.tr/2008/05/23/mozilla-firefox-31-bu-sene-sonunda-cikiyor/
 
   [Buradan]: https://people.mozilla.com/%7Edolske/dist/geode/geode-latest.xpi
     "Buradan"
@@ -177,4 +177,3 @@ getirilecek.
   [http://blogs.zdnet.com/hardware/?p=2781]: http://blogs.zdnet.com/hardware/?p=2781
   [http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords]: http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords
   [http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744]: http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744
-  [http://www.pclabs.com.tr/2008/05/23/mozilla-firefox-31-bu-sene-sonunda-cikiyor/]: http://www.pclabs.com.tr/2008/05/23/mozilla-firefox-31-bu-sene-sonunda-cikiyor/

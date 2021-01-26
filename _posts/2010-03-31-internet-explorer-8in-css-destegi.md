@@ -24,7 +24,7 @@ desteklediğini açıkladı.
 
 ## Float
 
-Float uygulamalarındaki [hasLayout][]'dan kaynaklanan bir çok sorunun
+Float uygulamalarındaki hasLayout'dan kaynaklanan bir çok sorunun
 giderildiği söyleniyor. İşin aslı hasLayout işleyişi tamamen kaldırılmış
 ie8'de. Bu sürümdeki en büyük gelişme budur.
 
@@ -196,14 +196,13 @@ Hoşçakalın.
 -   [http://www.howtocreate.co.uk/ie8.html][]
 -   [http://reference.sitepoint.com/css][]
 -   [http://www.evotech.net/blog/2009/03/ie8-css-support/][]
--   [http://css-discuss.incutio.com/wiki/IE8#CSS3_selectors][] (ie8 sorunları)
+-   css-discuss.incutio.com/wiki/IE8#CSS3_selectors
 -   http://jhop.me/ie8-bugs (ie8 hataları)
 -   [http://www.gtalbot.org/BrowserBugsSection/][]
 -   [http://techblog.procurios.nl/k/news/view/33224/14863/Testing-Internet-Explorer-8-CSS3-for-Web-Design.html][] (CSS3 desteği)
 
   [Her ne kadar uyumluluk kodu ile İnternet Explorer]: http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
     "Her ne kadar uyumluluk kodu ile İnternet Explorer"
-  [hasLayout]: http://haslayout.net/ "hasLayout"
   [Margin çökme]: http://fatihhayrioglu.com/kenar-boslugumargin-cokmesi/
     "Margin çökme"
   [content]: http://reference.sitepoint.com/css/content "content"
@@ -283,8 +282,6 @@ Hoşçakalın.
     "http://reference.sitepoint.com/css"
   [http://www.evotech.net/blog/2009/03/ie8-css-support/]: http://www.evotech.net/blog/2009/03/ie8-css-support/
     "http://www.evotech.net/blog/2009/03/ie8-css-support/"
-  [http://css-discuss.incutio.com/wiki/IE8#CSS3_selectors]: http://css-discuss.incutio.com/wiki/IE8#CSS3_selectors
-    "http://css-discuss.incutio.com/wiki/IE8#CSS3_selectors"
   [http://www.gtalbot.org/BrowserBugsSection/]: http://www.gtalbot.org/BrowserBugsSection/
     "http://www.gtalbot.org/BrowserBugsSection/"
   [http://techblog.procurios.nl/k/news/view/33224/14863/Testing-Internet-Explorer-8-CSS3-for-Web-Design.html]: http://techblog.procurios.nl/k/news/view/33224/14863/Testing-Internet-Explorer-8-CSS3-for-Web-Design.html

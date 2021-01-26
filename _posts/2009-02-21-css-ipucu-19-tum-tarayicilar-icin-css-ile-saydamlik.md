@@ -71,11 +71,11 @@ denemedim bir bakın isterseniz.
 -   [http://snipplr.com/view/10094/crossbrowser-opacity/][]
 -   [http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/][]
 -   [http://www.codeguru.com/forum/showthread.php?threadid=458411][]
--   [http://snipplr.com/view/707/setopacity/][]
+-   snipplr.com/view/707/setopacity/
 -   http://www.ertugrulhaskan.com/blog/?p=548
 -   http://www.aybim.com.tr/progs/acsstxt17.html
 -   [http://www.mehmetduran.com/detay.aspx?detay=19][]
--   [http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5][]
+-   kodaman.org/yazi/sizi-css3-ile-tanistiracak-5
 -   [http://www.ahmetcelik.org/?p=220][]
 -   [http://mfyz.com/?/dokuman/82/css-ve-transparanlik/][]
 -   http://scriptiz.org/?p=1067
@@ -88,8 +88,6 @@ denemedim bir bakın isterseniz.
   [http://snipplr.com/view/10094/crossbrowser-opacity/]: http://snipplr.com/view/10094/crossbrowser-opacity/
   [http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/]: http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/
   [http://www.codeguru.com/forum/showthread.php?threadid=458411]: http://www.codeguru.com/forum/showthread.php?threadid=458411
-  [http://snipplr.com/view/707/setopacity/]: http://snipplr.com/view/707/setopacity/
   [http://www.mehmetduran.com/detay.aspx?detay=19]: http://www.mehmetduran.com/detay.aspx?detay=19
-  [http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5]: http://www.kodaman.org/yazi/sizi-css3-ile-tanistiracak-5
   [http://www.ahmetcelik.org/?p=220]: http://www.ahmetcelik.org/?p=220
   [http://mfyz.com/?/dokuman/82/css-ve-transparanlik/]: http://mfyz.com/?/dokuman/82/css-ve-transparanlik/

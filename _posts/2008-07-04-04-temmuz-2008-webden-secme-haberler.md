@@ -6,7 +6,7 @@ Category: Haberler
 tags: [Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript, Tatil, WordPress, wordpress güvenlik]
 ---
 
--   CSS Firefox 3 filtresi. [Bağlantı][]
+-   CSS Firefox 3 filtresi
 -   Alan Adları Değişiyor - perfectgate.net 
 -   Bırakın yazılarınızı okurlarınız etiketlesin - blog.wolkanca.com
     [Bağlantı][2]
@@ -30,8 +30,6 @@ tags: [Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript,
     dileğiyle. Hoşçakalın.
 
 
-  [Bağlantı]: http://snipplr.com/view/7043/firefox-3-css-hack/
-    "Firefox 3 filtresi"
   [2]: http://blog.wolkanca.com/birakin-yazilarinizi-okurlari-etiketlesin/
     "wordpress etiket"
   [3]: http://css-tricks.com/cutting-edge-browsers-and-their-development-tools/

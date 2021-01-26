@@ -314,7 +314,7 @@ Sağlıcakla kalın.
 ## Kaynaklar
 
 -   [http://www.kremalicious.com/2008/04/make-cool-and-clever-text-effects-with-css-text-shadow/][]
--   [http://tutorials.assistprogramming.com/text-shadow-using-css.html][]
+-   tutorials.assistprogramming.com/text-shadow-using-css.html
 -   [http://www.workingwith.me.uk/articles/css/cross-browser-drop-shadows][]
 -   [http://westciv.com/tools/shadows/][]
 -   [http://www.quirksmode.org/css/textshadow.html][]
@@ -351,7 +351,6 @@ Sağlıcakla kalın.
   [14]: /images/metinlere_golge_1_fr.gif
   [15]: /dokumanlar/metinlere_golge_vermek/metinlere_golge_1_fr.html
   [http://www.kremalicious.com/2008/04/make-cool-and-clever-text-effects-with-css-text-shadow/]: http://www.kremalicious.com/2008/04/make-cool-and-clever-text-effects-with-css-text-shadow/
-  [http://tutorials.assistprogramming.com/text-shadow-using-css.html]: http://tutorials.assistprogramming.com/text-shadow-using-css.html
   [http://www.workingwith.me.uk/articles/css/cross-browser-drop-shadows]: http://www.workingwith.me.uk/articles/css/cross-browser-drop-shadows
   [http://westciv.com/tools/shadows/]: http://westciv.com/tools/shadows/
   [http://www.quirksmode.org/css/textshadow.html]: http://www.quirksmode.org/css/textshadow.html

@@ -80,14 +80,14 @@ taraftarı değilim.
 Kaynak
 ------
 
--   [http://9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html][]
+-   9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html
 -   [http://webdesign.maratz.com/lab/visited_links_styling/][]
 -   http://www.webmonkey.com/tutorial/Control_Visited_Link_Colors_With_CSS
 -   [http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/][]
 -   [http://www.westciv.com/style_master/house/tutorials/quick/visited_links/index.html][]
 -   [http://onemarco.com/2007/06/06/better-visited-links/][]
 -   [http://www.sitepoint.com/blogs/2004/05/23/getting-creative-with-visited-links/][]
--   [http://www.useit.com/alertbox/20040510.html][]
+-   useit.com/alertbox/20040510.html
 
   [Sözde sınıf ve elementler makalesinde]: http://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
   [http://www.evalotta.net/]: http://www.evalotta.net/
@@ -97,10 +97,8 @@ Kaynak
   [tıklayınız.]: /dokumanlar/ziyaret_edilmis_baglantilar.html
   [ziy_sayfa_oki]: /images/ziy_sayfa_oki.gif
   [1]: /dokumanlar/ziyaret_edilmis_baglantilar2.html
-  [http://9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html]: http://9lessons.blogspot.com/2009/06/css-visited-tips-strike-out.html
   [http://webdesign.maratz.com/lab/visited_links_styling/]: http://webdesign.maratz.com/lab/visited_links_styling/
   [http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/]: http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/
   [http://www.westciv.com/style_master/house/tutorials/quick/visited_links/index.html]: http://www.westciv.com/style_master/house/tutorials/quick/visited_links/index.html
   [http://onemarco.com/2007/06/06/better-visited-links/]: http://onemarco.com/2007/06/06/better-visited-links/
   [http://www.sitepoint.com/blogs/2004/05/23/getting-creative-with-visited-links/]: http://www.sitepoint.com/blogs/2004/05/23/getting-creative-with-visited-links/
-  [http://www.useit.com/alertbox/20040510.html]: http://www.useit.com/alertbox/20040510.html

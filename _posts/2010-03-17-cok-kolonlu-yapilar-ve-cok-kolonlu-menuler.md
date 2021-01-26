@@ -607,7 +607,7 @@ yazdım linklerini.
 
 ## Kaynaklar
 
--   [http://www.useit.com/alertbox/mega-dropdown-menus.html][] (genel bilgi)
+-   useit.com/alertbox/mega-dropdown-menus.html
 -   http://articles.techrepublic.com.com/5100-10878_11-5810687.html
 -   http://www.communitymx.com/content/article.cfm?page=1&cid=27F87
 -   [http://www.alistapart.com/articles/multicolumnlists/][]
@@ -639,7 +639,6 @@ yazdım linklerini.
   [cvwdesign.com]: http://www.cvwdesign.com "cvwdesign.com"
   [çevrimiçi yui kompresor]: http://refresh-sf.com/yui/
   [6]: /dokumanlar/cok_kolonlu/metot5.html
-  [http://www.useit.com/alertbox/mega-dropdown-menus.html]: http://www.useit.com/alertbox/mega-dropdown-menus.html
   http://articles.techrepublic.com.com/5100-10878_11-5810687.html
   [http://www.alistapart.com/articles/multicolumnlists/]: http://www.alistapart.com/articles/multicolumnlists/
   [http://archivist.incutio.com/viewlist/css-discuss/88422]: http://archivist.incutio.com/viewlist/css-discuss/88422

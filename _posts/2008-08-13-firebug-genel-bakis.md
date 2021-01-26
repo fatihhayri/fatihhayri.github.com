@@ -29,7 +29,7 @@ hataları tarayıcı üzerinden müdahale etme imkanı sunması. FireBug web
 sonrası dönem. Ne kadar övsem azdır FireBug'ı.
 
 FireBug eklentisini eklentiyi yazan [http://getfirebug.com/][]
-sitesinden veya [FireFox'un eklentiler][] indirebilirsiniz. FireFox 3.
+sitesinden veya FireFox'un eklentiler indirebilirsiniz. FireFox 3.
 sürümü ile birlikte FireBug 1.2 beta sürümünü kurabiliyoruz. Ben bu
 sürümde bazı sorunlarla karşılaştım ve sırf bu yüzden FireFox 3 kaldırıp
 FireFox 2 kurup FireBug'ın kararlı sürümü olan 1.05 kurdum.
@@ -154,8 +154,6 @@ göreceğiz.
 
   [Michael Sync]: http://michaelsync.net/
   [http://getfirebug.com/]: http://getfirebug.com/
-  [FireFox'un eklentiler]: https://addons.mozilla.org/en-US/firefox/addon/1843
-    "FireFox eklentiler sayfası"
   [100]: /images/kurulum_penceresi.gif
   [FireBug pasif]: /images/pasif_firebug.gif
   [Fire Aktif]: /images/aktif_firebug.gif

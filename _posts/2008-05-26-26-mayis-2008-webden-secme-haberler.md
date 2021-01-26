@@ -8,7 +8,7 @@ tags: [akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explo
 
 -   CSS ile düzenlenmiş tablolar.
 -   input ve button arasında farklılıklar. [Bağlantı][1]
--   CSS ile mesaj kutuları hazırlamak. [Bağlantı][2]
+-   CSS ile mesaj kutuları hazırlamak.
 -   jQuery ile yapılmış güzel bir tarih aralığı seçimi. [Bağlantı][3]
 -   CSS ve Jquery ile yapılmış güzel bir menü örneği. [Bağlantı][4]
 -   jQuery yeni sürümü çıkmış 1.2.5 bazı sorunlar giderilmiş.
@@ -29,8 +29,6 @@ tags: [akordiyon, button, CSS sıfırlama, Firefox, html5, input, internet explo
 
   [1]: http://trevordavis.net/blog/tutorial/input-vs-button/
     "input ve buton"
-  [2]: http://www.jankoatwarpspeed.com/post/2008/05/22/CSS-Message-Boxes-for-different-message-types.aspx
-    "css ile mesaj kutuları"
   [3]: http://www.filamentgroup.com/examples/datepicker/
     "jQuery seçim aracı"
   [4]: http://nettuts.com/javascript-ajax/create-a-cool-animated-navigation-with-css-and-jquery/

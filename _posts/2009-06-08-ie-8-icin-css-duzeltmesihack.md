@@ -56,8 +56,8 @@ Ayrıca daha önce bahsettiğimiz ie7 gibi yorumlama kodu var.
 Testlerimi [ietester][] ile yaptım.
 
 -   [http://paulirish.com/2009/browser-specific-css-hacks/][]
--   [http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/][]
--   [http://snipplr.com/view/15167/ie8-csshacks/][]
+-   acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/
+-   snipplr.com/view/15167/ie8-csshacks/
 -   [http://www.evotech.net/blog/2009/03/ie8-css-support/][]
 -   [http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/][]
 
@@ -67,10 +67,6 @@ Testlerimi [ietester][] ile yaptım.
     "ietester"
   [http://paulirish.com/2009/browser-specific-css-hacks/]: http://paulirish.com/2009/browser-specific-css-hacks/
     "http://paulirish.com/2009/browser-specific-css-hacks/"
-  [http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/]: http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/
-    "http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/"
-  [http://snipplr.com/view/15167/ie8-csshacks/]: http://snipplr.com/view/15167/ie8-csshacks/
-    "http://snipplr.com/view/15167/ie8-csshacks/"
   [http://www.evotech.net/blog/2009/03/ie8-css-support/]: http://www.evotech.net/blog/2009/03/ie8-css-support/
     "http://www.evotech.net/blog/2009/03/ie8-css-support/"
   [http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/]: http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/

@@ -238,7 +238,7 @@ düşünüyorum. Hoşçakalın.
 
 ## Kaynak
 
--   [http://www.jankoatwarpspeed.com/post/2008/05/22/CSS-Message-Boxes-for-different-message-types.aspx][]
+-   jankoatwarpspeed.com/post/2008/05/22/CSS-Message-Boxes-for-different-message-types.aspx
 
   [CSS Kodlama Teknikleri ve CSS Kodlarını Azaltma Yöntemleri]: http://fatihhayrioglu.com/css-kodlarini-temizlemeazaltma/
     "CSS Kodlama Teknikleri ve CSS Kodlarını Azaltma   Yöntemleri"
@@ -247,5 +247,3 @@ düşünüyorum. Hoşçakalın.
   [tıklayınız.]: /dokumanlar/kodazaltma2/bilgilendirme_1.html
   [1]: /dokumanlar/kodazaltma2/bilgilendirme_2.html
   [2]: /dokumanlar/kodazaltma2/bilgilendirme_3.html
-  [http://www.jankoatwarpspeed.com/post/2008/05/22/CSS-Message-Boxes-for-different-message-types.aspx]: http://www.jankoatwarpspeed.com/post/2008/05/22/CSS-Message-Boxes-for-different-message-types.aspx
-    "http://www.jankoatwarpspeed.com/post/2008/05/22/CSS-Message-Boxes-for-different-message-types.aspx"

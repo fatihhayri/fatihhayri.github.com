@@ -93,7 +93,7 @@ elemanında bu sorun ile karşılaşılmıyor.
 
 ## Kaynak
 
--   [http://www.positioniseverything.net/explorer/inherited_margin.html][]
+-   positioniseverything.net/explorer/inherited_margin.html
 
   [100]: /images/arama_ardalan1.gif
   [tıklayınız.]: /dokumanlar/margin_inherit_form/inherit_margin_form_orn.html
@@ -102,4 +102,3 @@ elemanında bu sorun ile karşılaşılmıyor.
   [IE'da İkikat görülen Margin Problemi ve Çözümü]: http://fatihhayrioglu.com/ieda-ikikat-gorulen-margin-problemi-ve-cozumu/
   [3]: /dokumanlar/margin_inherit_form/inherit_margin_form_ornc.html
   [4]: /images/margin_inherit_ie_c.gif
-  [http://www.positioniseverything.net/explorer/inherited_margin.html]: http://www.positioniseverything.net/explorer/inherited_margin.html

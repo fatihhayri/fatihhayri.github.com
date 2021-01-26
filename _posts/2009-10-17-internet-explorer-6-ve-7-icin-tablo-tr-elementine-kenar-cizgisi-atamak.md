@@ -43,8 +43,6 @@ table td{
 
 ## Kaynak
 
-[http://www.csarven.ca/tr-border-trick-for-ie][]
+csarven.ca/tr-border-trick-for-ie
 
   [tıklayınız.]: /dokumanlar/tablo_satiri_kenar.html
-  [http://www.csarven.ca/tr-border-trick-for-ie]: http://www.csarven.ca/tr-border-trick-for-ie
-    "http://www.csarven.ca/tr-border-trick-for-ie"

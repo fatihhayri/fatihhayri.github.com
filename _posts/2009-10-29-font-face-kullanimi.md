@@ -291,7 +291,7 @@ aksaklığımız oldu ise affola.
 
 -   [http://www.useragentman.com/blog/2009/09/20/font-face-in-depth/][]
     (ayrıntılı makale)
--   [http://nickcowie.com/2008/font-face/][]
+-   nickcowie.com/2008/font-face/
 -   [http://www.w3.org/TR/css3-webfonts/#font-descriptions][]
 -   [http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/][]
     (kod yapısı)
@@ -312,7 +312,7 @@ aksaklığımız oldu ise affola.
 -   [http://randsco.com/index.php/2009/09/04/better_font_face_syntax][]
 -   [http://hacks.mozilla.org/2009/10/font-control-for-designers/][]
     (Firefox 3.6 ile yeni font tipi desteği)
--   [http://www.font-face.com/][]
+-   font-face.com/
 -   [http://www.alistapart.com/articles/cssatten][]
 -   [http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work][]
 -   [http://reference.sitepoint.com/css/at-fontface][]
@@ -367,8 +367,6 @@ aksaklığımız oldu ise affola.
     "Tarayıcı kullanım oranlarını"
   [http://www.useragentman.com/blog/2009/09/20/font-face-in-depth/]: http://www.useragentman.com/blog/2009/09/20/font-face-in-depth/
     "http://www.useragentman.com/blog/2009/09/20/font-face-in-depth/"
-  [http://nickcowie.com/2008/font-face/]: http://nickcowie.com/2008/font-face/
-    "http://nickcowie.com/2008/font-face/"
   [http://www.w3.org/TR/css3-webfonts/#font-descriptions]: http://www.w3.org/TR/css3-webfonts/#font-descriptions
     "http://www.w3.org/TR/css3-webfonts/#font-descriptions"
   [http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/]: http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/
@@ -393,8 +391,6 @@ aksaklığımız oldu ise affola.
     "http://randsco.com/index.php/2009/09/04/better_font_face_syntax"
   [http://hacks.mozilla.org/2009/10/font-control-for-designers/]: http://hacks.mozilla.org/2009/10/font-control-for-designers/
     "http://hacks.mozilla.org/2009/10/font-control-for-designers/"
-  [http://www.font-face.com/]: http://www.font-face.com/
-    "http://www.font-face.com/"
   [http://www.alistapart.com/articles/cssatten]: http://www.alistapart.com/articles/cssatten
     "http://www.alistapart.com/articles/cssatten"
   [http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work]: http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work

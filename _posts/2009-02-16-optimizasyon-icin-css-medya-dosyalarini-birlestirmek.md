@@ -66,7 +66,7 @@ aşağıda veriyorum.
 -   http://www.vulgarisoip.com/2007/06/21/minify-your-external-javascript-and-css-with-php
 -   [http://www.websiteoptimization.com/speed/tweak/http/][]
 -   [http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml][]
--   [http://yuiblog.com/blog/2006/11/28/performance-research-part-1/][]
+-   yuiblog.com/blog/2006/11/28/performance-research-part-1/
 -   [http://www.sitepoint.com/blogs/2007/04/10/faster-page-loads-bundle-your-css-and-javascript/][]
 -   http://www.jaisenmathai.com/blog/2008/02/27/speed-up-apache-how-i-went-from-f-to-a-in-yslow/
 -   http://www.cloudfour.com/77/easy-steps-to-speedup-your-wordpress-blog/
@@ -79,7 +79,5 @@ aşağıda veriyorum.
     "http://www.websiteoptimization.com/speed/tweak/http/"
   [http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml]: http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml
     "http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml"
-  [http://yuiblog.com/blog/2006/11/28/performance-research-part-1/]: http://yuiblog.com/blog/2006/11/28/performance-research-part-1/
-    "http://yuiblog.com/blog/2006/11/28/performance-research-part-1/"
   [http://www.sitepoint.com/blogs/2007/04/10/faster-page-loads-bundle-your-css-and-javascript/]: http://www.sitepoint.com/blogs/2007/04/10/faster-page-loads-bundle-your-css-and-javascript/
     "http://www.sitepoint.com/blogs/2007/04/10/faster-page-loads-bundle-your-css-and-javascript/"

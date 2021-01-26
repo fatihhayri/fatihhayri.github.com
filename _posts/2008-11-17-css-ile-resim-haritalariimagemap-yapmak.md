@@ -6,7 +6,7 @@ Category: Haberler
 tags: [flickr, fotoğraf, imagemap, resim-haritaları]
 ---
 
-Ben ilk defa Flickr'da(bir örnek verelim. [Dexter HTML kesiyormuş.][] :)
+Ben ilk defa Flickr'da(bir örnek verelim. Dexter HTML kesiyormuş. :)
 gördüğüm bu metodu çok ilginç bulmuştum. Gerçekten kullanıcıya yardımcı
 olan bir uygulama, görünümü hoş ve işlevsel. İlk gördüğümde bu işin
 javascript yardımı ile yapıldığını düşünmüştüm ki araştırdığım da gördüm
@@ -173,23 +173,21 @@ avantaj sağlar.
 
 ## Kaynaklar
 
--   [CSS Mastery: Advanced Web Standards Solutions - Andy Budd][]
+-   CSS Mastery: Advanced Web Standards Solutions - Andy Budd
 -   [http://www.frankmanno.com/ideas/css-imagemap/][]
 -   [http://www.frankmanno.com/ideas/css-imagemap-redux/][]
 -   [http://www.cssplay.co.uk/menu/imap.html][]
 -   http://maxxu.casacolor.ro/css-exp/css-image-maps.html
--   [http://www.marketingtechblog.com/2007/10/02/css-image-map/][]
+-   marketingtechblog.com/2007/10/02/css-image-map/
 -   http://www.frederikvig.com/temp.html
 -   [http://www.cssplay.co.uk/menu/old_master.html][]
 
-  [Dexter HTML kesiyormuş.]: http://www.flickr.com/photos/mollyeh11/2720714668/
   [Dexter - HTML]: /images/flickr_dexter.jpg
   [<span class="dis"><span class="ic"><span class="bilgi">Dexter</span></span></span>]: http://www.sho.com/site/dexter/
   [<span class="dis"><span class="ic"><span class="bilgi">HTML   4</span></span></span>]: http://www.w3.org/TR/REC-html40/
   [tıklayınız]: /dokumanlar/flickr-rollovers.htm
-  [CSS Mastery: Advanced Web Standards Solutions - Andy Budd]: http://www.cssmastery.com/
+  CSS Mastery: Advanced Web Standards Solutions - Andy Budd
   [http://www.frankmanno.com/ideas/css-imagemap/]: http://www.frankmanno.com/ideas/css-imagemap/
   [http://www.frankmanno.com/ideas/css-imagemap-redux/]: http://www.frankmanno.com/ideas/css-imagemap-redux/
   [http://www.cssplay.co.uk/menu/imap.html]: http://www.cssplay.co.uk/menu/imap.html
-  [http://www.marketingtechblog.com/2007/10/02/css-image-map/]: http://www.marketingtechblog.com/2007/10/02/css-image-map/
   [http://www.cssplay.co.uk/menu/old_master.html]: http://www.cssplay.co.uk/menu/old_master.html
