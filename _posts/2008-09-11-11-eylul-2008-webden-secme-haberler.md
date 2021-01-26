@@ -18,7 +18,7 @@ tags: [CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, up
 -   Form girdi alanlarını maskelemk için jquery ile yapılmış bir
     script.
 -   CSS sıfırlama teknikleri hakkında güzel bir makale. [Bağlantı][6]
--   Google Chrome'dan beklenen 10 şey. [Bağlantı][7]
+-   Google Chrome'dan beklenen 10 şey.
 -   Web kod yazarları için 20 Firefox eklentisi. [Bağlantı][8]
 -   Güzel <hr\> örnekleri. [Bağlantı][9]
 -   Neden Webkit yükselirken Mozilla düşüşe geçti. [Bağlantı][10]
@@ -38,8 +38,6 @@ tags: [CSS ön eki, css3.0, Google Chrome, ie, jquery, Konumlandırma, menü, up
     "TechCruch"
   [6]: http://perishablepress.com/press/2007/10/23/a-killer-collection-of-global-css-reset-styles/
     "css sıfırlama"
-  [7]: http://news.cnet.com/8301-17939_109-10033296-2.html?tag=TOCcarouselArea.0
-    "Google Chrome"
   [8]: http://www.noupe.com/tools/20-firefox-add-ons-to-enhance-your-web-development.html
     "Firefox ekelentileri"
   [9]: http://www.smashingmagazine.com/2008/09/09/the-hr-contest-results-download-your-fresh-hr-line-now/

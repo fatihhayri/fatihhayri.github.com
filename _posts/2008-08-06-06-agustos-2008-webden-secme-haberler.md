@@ -13,7 +13,7 @@ tags: [Asp.net 3.5, blog, FaceLift, Form metinleri, mesaj kutusu, sFIR, tablo, w
     siberkultur.com [Bağlantı][3]
 -   Güzel derlenmiş CSS linkleri [Bağlantı][4]
 -   Ücretsiz güzel bir wordpress teması. [Bağlantı][5]
--   Fare imlecinin tıklandığı yerde mesaj kutusu açmak. [Bağlantı][6]
+-   Fare imlecinin tıklandığı yerde mesaj kutusu açmak.
 -   Tablo Etiketinin Gönlünü Almak 2 - webdeneyimleri.com Kırık bağlantı.
 -   sFIR tekniğine alternatif bir yöntem FaceLift, avantajları ve
     dezavantajları ile incelemeye değer. Bence en büyük dezavantajı PHP
@@ -39,8 +39,6 @@ tags: [Asp.net 3.5, blog, FaceLift, Form metinleri, mesaj kutusu, sFIR, tablo, w
     "CSS linkleri"
   [5]: http://www.smashingmagazine.com/2008/08/05/fervens-a-free-wordpress-theme/
     "wordpress teması"
-  [6]: http://roshanbh.com.np/2008/08/pop-up-message-mouse-clicked-position-jquery.html
-    "fare mesajı"
   [9]: http://www.sitepoint.com/blogs/2008/08/05/mining-the-sitepoint-css-reference/
     "css ipuçları"
   [10]: http://nettuts.com/javascript-ajax/how-to-implement-sifr3-into-your-website/

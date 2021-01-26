@@ -16,7 +16,7 @@ tags: [delicious, E-Devlet, em, gelişmiş günlük yazmak, google özel arama, 
     [Bağlantı][5]
 -   İlgiyle izlediğim ve taktir ettiğim delicious sitesi kendini
     yenilemiş. Kırık bağlantı.
--   CSS Anaçatıları(framework) hakkında bir bilgi. [Bağlantı][7]
+-   CSS Anaçatıları(framework) hakkında bir bilgi.
 -   En iyi CSS sıfırlama tekniği. www.adsnews.net/best-css-reset-techniques.html
 -   5 adet renk seçim aracı.
 -   6 kullanışlı jquery ipucu. [Bağlantı][10]
@@ -32,8 +32,6 @@ tags: [delicious, E-Devlet, em, gelişmiş günlük yazmak, google özel arama, 
     "gooogle araması ekle"
   [4]: http://www.useit.com/ "Erişebilirlik"
   [5]: http://www.smashingmagazine.com/2008/07/31/a-small-survey-of-big-blogs-further-findings/
-    "blog"
-  [7]: http://hiddenpixels.com/css-stuffs/css-frameworks/ "css"
   [10]: http://johannburkard.de/blog/programming/javascript/6-more-jquery-tips-text-searching-page-load-time-and-others.html
     "jQuery"
   [11]: http://docs.jquery.com/Using_jQuery_with_Other_Libraries

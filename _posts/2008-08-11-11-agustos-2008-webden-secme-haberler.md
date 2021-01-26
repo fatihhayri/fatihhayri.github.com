@@ -23,7 +23,7 @@ tags: [Ajax, arama motoru, firebug, Güzel Menü, Javascript, RSS çeviri, wordp
     yakında yayınlanacağı ve yeni özelliklerin birlikte geleceği müjdesi
     var. [Bağlantı][7]
 -   .net için güzel bir ipucu günlüğü. [Bağlantı][8]
--   10 adet CSS ipucu. [Bağlantı][9]
+-   10 adet CSS ipucu.
 -   CSS'de kendi sıfırlamamızı yapalım. [Bağlantı][10]
 -   Güzel bir javascript menü. Sol tarafta bizi devamlı takip eden ve
     hangi bölümde olduğumuzuda gösteren güzel bir uygulama.
@@ -41,8 +41,6 @@ tags: [Ajax, arama motoru, firebug, Güzel Menü, Javascript, RSS çeviri, wordp
   [7]: http://www.stevesouders.com/blog/2008/08/08/firebug-working-group-meeting/
     "FireBug"
   [8]: http://blogs.msdn.com/webdevelopertips/ "asp.net ipuçları"
-  [9]: http://www.peakflowdesign.com/design/10-useful-css-tricks-to-conquer-the-world/
-    "css ipuçları"
   [10]: http://nettuts.com/html-css-techniques/weekend-quick-tip-create-your-own-resetcss-file/
     "sıfırlama"
   [11]: http://www.likno.com/allwebmenusinfo.html "güzel menü"

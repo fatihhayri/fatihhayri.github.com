@@ -35,7 +35,7 @@ tags: [CSS filtreleme, display, inline-block, Erişebilirlik, Google Analytics, 
 -   Profoyonel sitelerden temel olarak nasıl yardım alabilriz.
     [Bağlantı][16] 
 -   Modern web sitelerinde javascript'in yeri. [Bağlantı][17] 
--   Çok kademeli sitler için güzel bir menü örneği. [Bağlantı][18] 
+-   Çok kademeli sitler için güzel bir menü örneği. 
 -   Google Analitics ipuçları. [Bağlantı][19] 
 
 
@@ -60,7 +60,5 @@ tags: [CSS filtreleme, display, inline-block, Erişebilirlik, Google Analytics, 
     "yardım"
   [17]: http://www.webdesignerwall.com/general/javascript-in-modern-web-design/
     "javascript"
-  [18]: http://users.tpg.com.au/j_birch/plugins/superfish/#sample4
-    "menü"
   [19]: http://www.webappers.com/2008/08/31/google-analytics-advanced-tips-and-tricks/
     "GooogleAnalitics ipuçları"

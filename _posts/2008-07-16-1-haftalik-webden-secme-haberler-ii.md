@@ -11,7 +11,7 @@ tags: [Firefox, jquery, mootools, Screengrab, WordPress, WordPress2.6]
     Kırık bağlantı.
 -   "Screengrab adlı zaman kurtarıcı, Firefox eklentisi" -
     webdeneyimleri.com Kırık bağlantı.
--   "Mootools öldü(?)" - hakanersu.com [Bağlantı][3]
+-   "Mootools öldü(?)" - hakanersu.com
 -   Çevirimiçin CSS düzenleme, sıkıştırma araçları. [Bağlantı][4]
 -   jQuery farklı görünümlü işaret kutuları(checkbox). [Bağlantı][5]
 -   Sitemi WordPress 2.6 sürümüne yükselttim. Bu Otomatik Güncelleme
@@ -19,7 +19,6 @@ tags: [Firefox, jquery, mootools, Screengrab, WordPress, WordPress2.6]
 
 
   [Bağlantı]: http://skout.co.za/ "Linkler"
-  [3]: http://www.hakanersu.com/?p=146 "mootools öldü mü"
   [4]: http://sixrevisions.com/css/css_code_optimization_formatting_validation/
     "css araçları"
   [5]: http://widowmaker.kiev.ua/checkbox/

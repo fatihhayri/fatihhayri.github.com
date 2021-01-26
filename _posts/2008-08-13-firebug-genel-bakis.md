@@ -13,7 +13,7 @@ yazabildim. Birazda [Volkan Görgülü'nün video anlatımı][] benim bu
 makaleyi devam ettirmem için bir kıvılcım oldu diyebiliriz. FireBug
 gelişmiş bir araç bu nedenle tek makalede anlatmamın mümkünatı yoktu ben
 şimdilik iki makale ile anlatmaya çalışacağım. İlk makalemi [Michael Sync][] sitesinden çok fazla yararlanarak hazırlıyorum.
-[http://michaelsync.net/][Michael Sync] sitesi bu konudaki en iyi kaynak
+michaelsync.net sitesi bu konudaki en iyi kaynak
 diyebilrim. FireBug FireFox internet tarayıcısının bir eklentisidir.
 Bunu bilmeyen kalmamıştır diye düşünüyorum. En azın bilmeyen web kod
 yazarı kalmamıştır.
@@ -134,11 +134,11 @@ CSS ve XHTML kodu yazarken FierBug'dan nasıl yararlanacağımızı
 göreceğiz.
 
 -   [http://getfirebug.com/][]
--   [http://michaelsync.net/2007/09/08/firebug-tutorial-overview-of-firebug][]
+-   michaelsync.net/2007/09/08/firebug-tutorial-overview-of-firebug
 -   [http://www.evotech.net/blog/2007/06/introduction-to-firebug/][]
--   [http://yuiblog.com/blog/2007/01/26/video-hewitt-firebug/][]
+-   yuiblog.com/blog/2007/01/26/video-hewitt-firebug/
 -   [http://help.wildapricot.com/display/DOC/Using+Firefox+Firebug+Extension+for+Advanced+customization+(CSS)][]
--   [http://www.thetruetribe.com/2008/03/firebug-tutorial-getting-started.html][]
+-   thetruetribe.com/2008/03/firebug-tutorial-getting-started.html
 -   [http://www.digitalmediaminute.com/screencast/firebug-js/][]
 -   [http://www.ddj.com/development-tools/196802787][]
 -   [http://ajaxian.com/archives/ajax-debugging-with-firebug][]
@@ -148,11 +148,10 @@ göreceğiz.
 -   http://alternateidea.com/blog/articles/2006/05/12/an-in-depth-look-at-the-future-of-javascript-debugging-with-firebug
 -   [http://groups.google.com/group/firebug][]
 -   [http://www.seifi.org/javascript/firebug_tips_and_tricks.html][]
--   [http://www.bildirgec.org/yazi/firebug-web-gelistirimi-gelistirildi][]
+-   bildirgec.org/yazi/firebug-web-gelistirimi-gelistirildi
 -   [http://www.burcudogan.com/firebug-ve-hata-ayiklama-sanati-83.html][]
 -   [http://code.google.com/p/fbug/source/browse/branches/firebug1.1/locale/tr-TR/firebug.dtd?r=350][]
 
-  [Michael Sync]: http://michaelsync.net/
   [http://getfirebug.com/]: http://getfirebug.com/
   [100]: /images/kurulum_penceresi.gif
   [FireBug pasif]: /images/pasif_firebug.gif
@@ -161,11 +160,8 @@ göreceğiz.
   [FireBug Konsol]: /images/firebug_konsol.gif
   [FireBug Hata]: /images/firebug_hata.gif
   [tıklayınız]: http://getfirebug.com/keyboard.html "kısayollar"
-  [http://michaelsync.net/2007/09/08/firebug-tutorial-overview-of-firebug]: http://michaelsync.net/2007/09/08/firebug-tutorial-overview-of-firebug
   [http://www.evotech.net/blog/2007/06/introduction-to-firebug/]: http://www.evotech.net/blog/2007/06/introduction-to-firebug/
-  [http://yuiblog.com/blog/2007/01/26/video-hewitt-firebug/]: http://yuiblog.com/blog/2007/01/26/video-hewitt-firebug/
   [http://help.wildapricot.com/display/DOC/Using+Firefox+Firebug+Extension+for+Advanced+customization+(CSS)]: http://help.wildapricot.com/display/DOC/Using+Firefox+Firebug+Extension+for+Advanced+customization+(CSS)
-  [http://www.thetruetribe.com/2008/03/firebug-tutorial-getting-started.html]: http://www.thetruetribe.com/2008/03/firebug-tutorial-getting-started.html
   [http://www.digitalmediaminute.com/screencast/firebug-js/]: http://www.digitalmediaminute.com/screencast/firebug-js/
   [http://www.ddj.com/development-tools/196802787]: http://www.ddj.com/development-tools/196802787
   [http://ajaxian.com/archives/ajax-debugging-with-firebug]: http://ajaxian.com/archives/ajax-debugging-with-firebug
@@ -173,6 +169,5 @@ göreceğiz.
   [http://www.youtube.com/watch?v=FsX6qwQqGgQ]: http://www.youtube.com/watch?v=FsX6qwQqGgQ
   [http://groups.google.com/group/firebug]: http://groups.google.com/group/firebug
   [http://www.seifi.org/javascript/firebug_tips_and_tricks.html]: http://www.seifi.org/javascript/firebug_tips_and_tricks.html
-  [http://www.bildirgec.org/yazi/firebug-web-gelistirimi-gelistirildi]: http://www.bildirgec.org/yazi/firebug-web-gelistirimi-gelistirildi
   [http://www.burcudogan.com/firebug-ve-hata-ayiklama-sanati-83.html]: http://www.burcudogan.com/firebug-ve-hata-ayiklama-sanati-83.html
   [http://code.google.com/p/fbug/source/browse/branches/firebug1.1/locale/tr-TR/firebug.dtd?r=350]: http://code.google.com/p/fbug/source/browse/branches/firebug1.1/locale/tr-TR/firebug.dtd?r=350

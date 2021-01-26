@@ -88,11 +88,11 @@ Türkçe kaynak
 -   [http://www.macosxpc.com/2008/09/02/googledan-webkit-tabanli-internet-tarayicisi/][]
 -   http://cnetturkiye.com/haberler/1267
 -   http://www.savassakar.com/?p=2029
--   [http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome][]
+-   kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome
 -   [http://www.potkal.com/yazi_icerik.asp?y1405][]
 -   http://www.mondaynay.com/2008/09/google-chrome-beta-web-browser/
 -   http://www.blicca.com/programlar/internet-tarayicilari/google-chrome-beta.html
--   [http://turk.internet.com/haber/yazigoster.php3?yazi21847][]
+-   turk.internet.com/haber/yazigoster.php3?yazi21847
 -   http://www.burakkutbay.com/google-chrome-tarayici-analizi/
 -   [http://www.chip.com.tr/konu/Google-Chrome-dan-ilk-guvenlik-acigi_8529.html][]
 -   http://blog-tr-ego.blogspot.com/2008/09/chrome-nedir.html
@@ -123,8 +123,8 @@ Genel kaynak
 -   [http://www.techcrunch.com/2008/09/02/getclicky-analytics-service-tracking-2-google-chrome-usage/][]
 -   [http://ptech.allthingsd.com/20080902/first-test-of-googles-new-browser/][]
 -   http://webworkerdaily.com/2008/09/02/google-chrome-is-it-ready-for-web-workers
--   [http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&tag=feed&subj=Webware][]
--   [http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&tag=feed&subj=Webware][]
+-   news.cnet.com/8301-17939_109-10030718-2.html?part=rss&tag=feed&subj=Webware
+-   news.cnet.com/8301-17939_109-10030962-2.html?part=rss&tag=feed&subj=Webware
 -   [http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/][]
 -   [http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/][]
 -   [http://davidwalsh.name/detecting-google-chrome-javascript][]
@@ -144,9 +144,7 @@ javascript motoru 
   [http://www.paciellogroup.com/blog/?p=92]: http://www.paciellogroup.com/blog/?p=92
   [Acid 3]: http://acid3.acidtests.org/ "Acid 3"
   [http://www.macosxpc.com/2008/09/02/googledan-webkit-tabanli-internet-tarayicisi/]: http://www.macosxpc.com/2008/09/02/googledan-webkit-tabanli-internet-tarayicisi/
-  [http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome]: http://www.kurumsalhaberler.com/google/bultenler/googledan-yeni-web-tarayicisi-google-chrome
   [http://www.potkal.com/yazi_icerik.asp?y1405]: http://www.potkal.com/yazi_icerik.asp?y1405
-  [http://turk.internet.com/haber/yazigoster.php3?yazi21847]: http://turk.internet.com/haber/yazigoster.php3?yazi21847
   [http://www.chip.com.tr/konu/Google-Chrome-dan-ilk-guvenlik-acigi_8529.html]: http://www.chip.com.tr/konu/Google-Chrome-dan-ilk-guvenlik-acigi_8529.html
   [http://www.mafiamax.com/2008/09/google-chrome-on-incelemesi.html]: http://www.mafiamax.com/2008/09/google-chrome-on-incelemesi.html
   [http://www.siberkultur.com/?q=google-chrome-cikti]: http://www.siberkultur.com/?q=google-chrome-cikti
@@ -165,8 +163,6 @@ javascript motoru 
   [http://gigaom.com/2008/09/02/why-did-google-abandon-firefox/]: http://gigaom.com/2008/09/02/why-did-google-abandon-firefox/
   [http://www.techcrunch.com/2008/09/02/getclicky-analytics-service-tracking-2-google-chrome-usage/]: http://www.techcrunch.com/2008/09/02/getclicky-analytics-service-tracking-2-google-chrome-usage/
   [http://ptech.allthingsd.com/20080902/first-test-of-googles-new-browser/]: http://ptech.allthingsd.com/20080902/first-test-of-googles-new-browser/
-  [http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&tag=feed&subj=Webware]: http://news.cnet.com/8301-17939_109-10030718-2.html?part=rss&tag=feed&subj=Webware
-  [http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&tag=feed&subj=Webware]: http://news.cnet.com/8301-17939_109-10030962-2.html?part=rss&tag=feed&subj=Webware
   [http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/]: http://www.zeldman.com/2008/09/03/a-bug-in-google-chrome/
   [http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/]: http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/
   [http://davidwalsh.name/detecting-google-chrome-javascript]: http://davidwalsh.name/detecting-google-chrome-javascript

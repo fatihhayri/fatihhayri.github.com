@@ -21,7 +21,6 @@ tags: [CSS, firebug, Firefox, jquery, Monitör çözünürlüğü, seo, tablo, T
 -   FireBug yardımı ile güzel sayfa kodlamak. Kırık bağlantı.
 -   Twitter Nedir? Ne değildir? - webdeneyimleri.com Kırık bağlantı.
 -   Yahoo'nun javascript kütüphanesinin(YUI) 3. sürümü çıkıyor.
-    [Bağlantı][10]
 -   jQuery ile otomatik dipnot yapmak. [Bağlantı][11]
 -   Monitör çözünürlükleri ve site tasarımları üzerine güzel bir makale.
     Kırık bağlantı.
@@ -37,5 +36,4 @@ tags: [CSS, firebug, Firefox, jquery, Monitör çözünürlüğü, seo, tablo, T
     "css katagoriler"
   [3]: http://effectize.com/jquery-developer-guide "jQuery"
   [7]: http://www.mafiamax.com/2008/08/seo-dedigin-tek-disi-kalmis-canavar.html
-  [10]: http://yuiblog.com/blog/2008/08/13/yui3pr1/ "yui 3"
   [11]: http://www.cssnewbie.com/generating-automatic-website-footnotes-with-jquery/

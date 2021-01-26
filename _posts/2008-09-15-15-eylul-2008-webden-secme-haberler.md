@@ -23,7 +23,7 @@ tags: [0 yükseklik, Developer Tools, firebug, Firefox 3.1, HTML 5, ie8, Javascr
     [Bağlantı][6] 
 -   Internet Explorer 8.0 ile beraber gelen Developer Tools'u
     inceleyelim. - daron.yondem.com
--   CSS ile yapılmış açılır menü örnekleri. [Bağlantı][8] 
+-   CSS ile yapılmış açılır menü örnekleri. 
 -   Web 2.0 bitti ,Web 3.0'ı beklerken - blog.harunpeksen.net
 -   FireBug1.2.1 sürümü yayınlamış. Değişen bazı hataların giderilmesi.
 -   Daron Yöndem'den ie8 hakkında güzel makaleler. 
@@ -42,4 +42,3 @@ tags: [0 yükseklik, Developer Tools, firebug, Firefox 3.1, HTML 5, ie8, Javascr
   [5]: http://mozillalinks.org/wp/2008/09/private-mode-back-in-firefox-31-plans/
     "FireFox3.1"
   [6]: http://iipimage.sourceforge.net/demo/ "image map"
-  [8]: http://hiddenpixels.com/javascript/css-dropdown-menus-sample-and-tutorials/

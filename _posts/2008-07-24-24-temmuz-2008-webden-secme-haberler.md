@@ -16,7 +16,7 @@ tags: [CSS ile bar yapmak, Firefox, gmail, internet explorer 6, iPhone, jquery, 
 -   PSD'den XHTML çeviri yapmayı anlatan 20 link derlemesi.
     Kırık bağlantı.
 -   WordPress iPhone sürümünü çıkardı. [Bağlantı][6]
--   jQuery ile geçiş efektli içerikler oluşturmak. [Bağlantı][7]
+-   jQuery ile geçiş efektli içerikler oluşturmak.
 -   İnternet Explorer Yazı tipi(Font) gömme yöntemine destek arıyor.
     Farklı yazı tiplerini kullanmak bir sorun ve hala gerçek bir çözüm
     üretilemedi. [Bağlantı][8]
@@ -34,8 +34,6 @@ tags: [CSS ile bar yapmak, Firefox, gmail, internet explorer 6, iPhone, jquery, 
   [2]: http://lifehacker.com/398778/outlook-vs-gmailthe-definitive-comparisongmail
   [4]: http://www.infoq.com/news/2008/07/ie6_on_its_way_out "ie6 hayırü"
   [6]: http://iphone.wordpress.org/ "wordpress iphone"
-  [7]: http://blog.lavablast.com/post/2008/07/jQuery-Content-Slider-Tutorial.aspx
-    "jQuery"
   [8]: http://blogs.msdn.com/ie/archive/2008/07/21/font-embedding-on-the-web.aspx
     "ie yazı tipi desteği"
   [10]: http://www.css3.info/css3-support-in-firefox-31/

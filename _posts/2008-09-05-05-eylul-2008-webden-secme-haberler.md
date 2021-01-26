@@ -13,7 +13,7 @@ tags: [Apple.com, Freelance, Google Chrome, WordPress]
     süredir üzerinde çalıştığı yeni javascript yorumlama sistemide
     bundan daha iyi bir performans veriyorumuş. Firefox 3.1 ile birlikte
     gelecekmiş. Ne diyelim stadartlara uyduktan sonra bizim için rekabet
-    her zaman iyidir. [Bağlantı][1]
+    her zaman iyidir. 
 -   -Freelance iş yapanlara bilgi linkleri.-
 -   40 güzel web sitesi. 2 ve 3 kolonlu yapılar ve güzel örnekler.
     Kodlarını incelemenizi öneririm [Bağlantı][3]
@@ -34,8 +34,6 @@ tags: [Apple.com, Freelance, Google Chrome, WordPress]
     bir video ders. 
 
 
-  [1]: http://news.cnet.com/8301-1001_3-10030888-92.html?tag=newsEditorsPicksArea.0
-    "google chrome test"
   [3]: http://www.smashingmagazine.com/2008/09/03/40-creative-design-layouts-getting-out-of-the-box/
     "siteler"
   [4]: http://www.wordpress-tr.com/ "WordPress Türkiye"
