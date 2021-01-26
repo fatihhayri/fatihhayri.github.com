@@ -15,7 +15,7 @@ tags: [bandtwith, CSS, lightbox, WordPress, yakuter]
 -   CSS özelliklerinin bir şablon şeklinde sunulduğu güzel bir site
     [Link][3]
 -   Web sitemizi nasıl optimize edebiliriz ve bant-genişliğin en iyi
-    nasıl kullanabilmemizi anlatan güzel bir makale [Link][4]
+    nasıl kullanabilmemizi anlatan güzel bir makale
 -   Farklı bir lightbox stilinin gösterildiği ve kodunun verildiği bir
     site
 -   Yakuter'den bir css maklesi daha "CSS ile Gölge Yapımı" [Link][6]
@@ -25,5 +25,4 @@ tags: [bandtwith, CSS, lightbox, WordPress, yakuter]
   [1]: http://www.wpdestek.com/
   [2]: http://www.456bereastreet.com/archive/200611/resolution_vs_browser_size_vs_fixed_or_adaptive_width/
   [3]: http://lesliefranke.com/files/reference/csscheatsheet.html
-  [4]: http://yuiblog.com/blog/2006/11/28/performance-research-part-1/
   [6]: http://www.yakuter.com/css-ile-golge-yapimi
