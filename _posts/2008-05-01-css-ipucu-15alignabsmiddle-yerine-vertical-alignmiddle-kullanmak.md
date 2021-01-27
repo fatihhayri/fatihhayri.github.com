@@ -39,10 +39,9 @@ eklersek sorunumuz çözülüyor.
 Küçük bir ipucu olarak akılda kalmasında yarar var.
 
 -   [http://www.webmasterworld.com/forum21/4250.htm][]
--   [http://battleangel.org/2004/03/05/absmiddle-replacement/][]
+-   battleangel.org/2004/03/05/absmiddle-replacement/
 -   [http://www.sitepoint.com/forums/showthread.php?t=140609][]
 
   [CSS İpucu 15:align=]: /images/validation_absmiddle.gif
   [http://www.webmasterworld.com/forum21/4250.htm]: http://www.webmasterworld.com/forum21/4250.htm
-  [http://battleangel.org/2004/03/05/absmiddle-replacement/]: http://battleangel.org/2004/03/05/absmiddle-replacement/
   [http://www.sitepoint.com/forums/showthread.php?t=140609]: http://www.sitepoint.com/forums/showthread.php?t=140609

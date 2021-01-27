@@ -9,12 +9,11 @@ tags: [Ajax, ASP.NET, css düzeltmeleri, günlük, İnternet Tarayıcısı, jque
 -   Yeni çıkacak internet tarayıcılarının karşılaştırması. [Bağlantı][]
 -   Günlüğümüze email adresi eklemeyi anlatan bir makale. Buradaki fark
     javascripti le ekleyip istenmeyen epostaları engellemek.
-    [Bağlantı][1]
 -   Tarayıcılar için CSS düzeltmeleri. [Bağlantı][2]
 -   Güzel WordPress temaları. [Bağlantı][3]
 -   ASP.NET ve Culture ayarları - Daron Yöndem
 -   jQuery yardımı ile klavyeden sayfalarda gezinme. [Bağlantı][5]
--   Güzel bir SQL Server ipuçları sayfası. [Bağlantı][6]
+-   Güzel bir SQL Server ipuçları sayfası.
 -   CSS ile ikon tanımlama. [Bağlantı][7]
 -   25 adet güzel ajax uygulaması. [Bağlantı][8]
 -   CSS ve Mootools yardımı ile FaceBook benzere resim düzenleme aracı
@@ -29,16 +28,12 @@ tags: [Ajax, ASP.NET, css düzeltmeleri, günlük, İnternet Tarayıcısı, jque
 
   [Bağlantı]: http://loader.gadgetzone.com.au/Reviews/May-2008/Group-Test--Firefox-3-vs-IE-7-vs-Safari-3-1.aspx
     "yeni internet tarayıcılarını karşılaştırılması"
-  [1]: http://hackwordpress.com/how-to-add-email-this-button-wordpress-blog/
-    "günlüğer posta"
   [2]: http://www.nineteeneightythree.com/2008/05/29/making-it-work-css-browser-hacks/
     "tarayıcılar css düzeltmesi"
   [3]: http://www.wpzoom.com/wordpress-themes-sets/45-free-premium-wordpress-themes-with-magazine-or-grid-layouts/
     "wordpress temaları"
   [5]: http://nettuts.com/javascript-ajax/how-to-create-a-keypress-navigation-using-jquery/
     "klavye kullana"
-  [6]: http://forum.lessthandot.com/viewtopic.php?f=17&t=306
-    "sql ipuçları"
   [7]: http://woork.blogspot.com/2008/06/beautiful-css-buttons-with-icon-set.html
     "ikon tanımla"
   [8]: http://sixrevisions.com/ajax/ajax_techniques/ "ajax"

@@ -10,9 +10,9 @@ tags: [asp.net 2.0, bitişik kardeş seçiciler, CSS, css ipuçları, css-menü,
     bir kaynak. [Bağlantı][]
 -   "Internet Explorer 8 Beta, Firefox 3 Beta 4′e karşı !" [Bağlantı][1]
 -   Firefox3'de hafıza kullanım oranlarının düştüğü belirtiliyor. Tüm
-    tarayıcıların hafıza kullanımları. [Bağlantı][2]
+    tarayıcıların hafıza kullanımları.
 -   Güzel CSS kodu yazmak. [Bağlantı][3]
--   En çok kullanılan CSS kod ipuçları. [Bağlantı][4]
+-   En çok kullanılan CSS kod ipuçları.
 -   Asp.net 2.0 ile güvenlik metni uygulaması yapmak. [Bağlantı][5]
 -   CSS Menü yapmak için internet üzerinden bir araç. [Bağlantı][6]
 -   İlk harfi özel ve büyük yapmak için bir yöntem.
@@ -22,12 +22,8 @@ tags: [asp.net 2.0, bitişik kardeş seçiciler, CSS, css ipuçları, css-menü,
 
 
   [Bağlantı]: http://reference.sitepoint.com/html "HTML referans"
-  [2]: http://ajax.dzone.com/news/firefox-3-memory-use
-    "Firefox 3 ve hafıza kullanımı"
   [3]: http://woork.blogspot.com/2008/03/write-well-structured-css-file-without.html
     "css kodu yaz"
-  [4]: http://stylizedweb.com/2008/03/12/most-used-css-tricks/
-    "css ipuçları"
   [5]: http://www.codeproject.com/KB/custom-controls/CaptchaNET_2.aspx
     "Captcha"
   [6]: http://www.izzymenu.com/ "izzymenu"

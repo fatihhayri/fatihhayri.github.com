@@ -14,7 +14,7 @@ tags: [.net, Ajax, CSS, Haberler, jquery]
 -   WPF - .NET Framework 3.5 ile Gelen Yenilikler. [Bağlantı][2]
 -   Listivew ve akordeon menü örneği. 
 -   Asp.net ve jQuery kullanımı. 
--   Güzel web tasarımı yapmanın 9 yolu. [Bağlantı][5]
+-   Güzel web tasarımı yapmanın 9 yolu.
 -   HTML5 ve Xhtml2 hakkında genel bir bilgi. [Bağlantı][6]
 -   CSS seçicileri ile tarayıcı versiyonları arasında sorunlarımız var,
     bunlara çeşitli çözümler üretiliyor. Çoğu javascript ile üretilen bu
@@ -23,13 +23,11 @@ tags: [.net, Ajax, CSS, Haberler, jquery]
 -   Küçük ama etkili javascript ipuçları. [Bağlantı][8]
 -   Hasan Yalçın'dan "Web Tasarımında Yapmamanız Gereken 8 Büyük Hata"
     [Bağlantı][9]
--   Erişeblirlikte aşarıya kaçmak. [Bağlantı][10]
+-   Erişeblirlikte aşarıya kaçmak.
 
 
   [2]: http://www.csharpnedir.com/makalegoster.asp?Mid=816
     "WPF .net 3.5"
-  [5]: http://psdtuts.com/designing-tutorials/9-essential-principles-for-good-web-design/
-    "9 öneri"
   [6]: http://www.ibm.com/developerworks/web/library/x-html5xhtml2.html?S_TACT=105AGX08&S_CMP=EDU
     "html5 ve xhtml2"
   [7]: http://www.robertnyman.com/2007/12/17/domassistant-25-released-css-selector-support-new-ajax-methods-and-more-goodies-added/
@@ -37,5 +35,3 @@ tags: [.net, Ajax, CSS, Haberler, jquery]
   [8]: http://www.phazm.com/notes/javascript/easy-as-pie-unobtrusive-javascript/
     "javascript ipuçları"
   [9]: http://www.hasanyalcin.com/?p=360 "8 büyük hata"
-  [10]: http://www.456bereastreet.com/archive/200712/overdoing_accessibility/
-    "Erişeblirlikte aşarılık"

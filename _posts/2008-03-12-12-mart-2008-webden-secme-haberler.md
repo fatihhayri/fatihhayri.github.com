@@ -6,10 +6,10 @@ Category: Haberler
 tags: [Ajax, google reader, ie8, jquery, json, morecss, png, rss, tipografi]
 ---
 
--   jquery ile listler arasında öğe taşıma örneği. [Bağlantı][]
+-   jquery ile listler arasında öğe taşıma örneği.
 -   10 adet Ajax ile düzeltme kodları. [Bağlantı][1]
--   Farklı PNG destek uygulamaları. [Bağlantı][2]
--   CSS ile formları düzenlemek ve sorunlarını çözmek. [Bağlantı][3]
+-   Farklı PNG destek uygulamaları.
+-   CSS ile formları düzenlemek ve sorunlarını çözmek.
 -   IE8'de CSS3 özelliklerini görmek. [Bağlantı][4]
 -   "Web'de tipografi: CSS" [Bağlantı][5]
 -   Bir web sitesini CSS ile tasarlmak 2. bölümü. [Bağlantı][6]
@@ -26,13 +26,8 @@ tags: [Ajax, google reader, ie8, jquery, json, morecss, png, rss, tipografi]
 -   8 adet CSS ipucu.
 
 
-  [Bağlantı]: http://ajax.dzone.com/news/easy-multi-select-transfer-jqu
-    "jquery"
   [1]: http://webtecker.com/2008/03/06/10-edit-in-place-ajax-scripts/
     "düzenleme alanları"
-  [2]: http://css.dzone.com/news/different-techniques-applying- "png"
-  [3]: http://css.dzone.com/news/scriptless-self-adjusting-form
-    "css ve formlar"
   [4]: http://www.css3.info/css3-features-in-ie8/ "css 3"
   [5]: http://www.siberkultur.com/?q=css-ve-tipografi-ornekleri
     "css ve tipografi"

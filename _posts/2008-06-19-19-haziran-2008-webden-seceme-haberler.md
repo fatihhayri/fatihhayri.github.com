@@ -7,7 +7,7 @@ tags: [CSS takvim, Firefox 3, Firefox Eklentileri, Glubble, jQuery UI, safari, S
 ---
 
 -   CSS ile Vista Aero düğmelerine benzer düğme oluşturmak [Bağlantı][] 
--   Web kod yazarları için 40 adet Firefox eklentisi. [Bağlantı][1] 
+-   Web kod yazarları için 40 adet Firefox eklentisi. 
 -   40 adet WordPress uygulması ve ipucu. [Bağlantı][2] 
 -   Firefox'un gelişim süreci ekran görüntüleriyle. [Bağlantı][3] 
 -   jQuery IU 1.5 ile birlikte gelen ThemaRoller anlatan güzel bir
@@ -22,13 +22,9 @@ tags: [CSS takvim, Firefox 3, Firefox Eklentileri, Glubble, jQuery UI, safari, S
 -   Firefox3 1 günde 8.3 milyon kişi tarafından indirilmiş.
     [Bağlantı][12] 
 -   Site Kapatmaları Abant'ta Masaya Yatırıldı - turk.internet.com
-    [Bağlantı][13] 
 
 
   [Bağlantı]: http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/
-    "CSS düğme"
-  [1]: http://blog.stuartherbert.com/php/2008/06/16/40-firefox-extensions-every-web-developer-should-check-out/
-    "Firefox eklentileri"
   [2]: http://www.hongkiat.com/blog/40-most-wanted-wordpress-tricks-and-hacks/
     "wordpress eklentileri"
   [3]: http://lifehacker.com/396206/the-history-of-firefox-10-to-30-in-screenshots
@@ -43,5 +39,3 @@ tags: [CSS takvim, Firefox 3, Firefox Eklentileri, Glubble, jQuery UI, safari, S
   [11]: http://www.cssnewbie.com/list-based-css-calendar/ "css - takvim"
   [12]: http://www.techcrunch.com/2008/06/18/firefox-3-downloaded-83-million-times-in-first-24-hours/
     "Freifox 3"
-  [13]: http://turk.internet.com/haber/yazigoster.php3?yaziid=21228
-    "Site Kapatma"

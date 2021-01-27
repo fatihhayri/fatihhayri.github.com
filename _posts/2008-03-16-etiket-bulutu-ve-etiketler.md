@@ -9,7 +9,7 @@ tags: [etiket, Etiket bulutu, WordPress, yağmur]
 Etiket bulutları kullanıcının isteğine hızlı erişmesini sağlayan ve
 arama motorları açısından önemli olan bir araçtır. Türkçe günlük
 yazarları pek tercih etmese de bence güzel bir uygulama. Etiket sistemi
-hakkında ayrıntılı bilgiyi teknoseyir ve [bildirgeç][] 'ten
+hakkında ayrıntılı bilgiyi teknoseyir ve bildirgeç'ten
 alabilirisiniz.
 
 
@@ -71,5 +71,4 @@ Herkese bulutlu ve yağmurlu günler diliyorum. Malum susuz kaldık.
 -   [http://codex.wordpress.org/Template_Tags/wp_tag_cloud#Cloud_displayed_under_Popular_Tags_title][]
 -   http://poplarware.com/tagplugin.html
 
-  [bildirgeç]: http://www.bildirgec.org/etiket/etiket-bulutu
   [http://codex.wordpress.org/Template_Tags/wp_tag_cloud#Cloud_displayed_under_Popular_Tags_title]: http://codex.wordpress.org/Template_Tags/wp_tag_cloud#Cloud_displayed_under_Popular_Tags_title

@@ -173,7 +173,7 @@ tarayıcı ve araçlarda da farklı bir görünüm sağlamış olduk.
 
 ## Kaynaklar
 
--   [http://www.cameraontheroad.com/?p=154 iyi örnek][]
+-   cameraontheroad.com/?p=154 iyi örnek
 -   [Dan Cederholm - Web Standards Solutions The Markup and Style     Handbook][]
 -   [http://24ways.org/2005/swooshy-curly-quotes-without-images][]
 -   http://monc.se/kitchen/129/rendering-quotes-with-css
@@ -194,7 +194,6 @@ tarayıcı ve araçlarda da farklı bir görünüm sağlamış olduk.
   [Alıntı Alt Zemin Resmi]: /images/alinti_alt.gif
   [Alıntı Örnek Sonuç]: /images/alinti_ornek2.gif
   [göz at.]: /dokumanlar/alinti_ornek_sonuc.html
-  [http://www.cameraontheroad.com/?p=154 iyi örnek]: http://www.cameraontheroad.com/?p=154%20iyi%20örnek
   [http://24ways.org/2005/swooshy-curly-quotes-without-images]: http://24ways.org/2005/swooshy-curly-quotes-without-images
   [http://www.shapeshed.com/journal/quotations_in_css/]: http://www.shapeshed.com/journal/quotations_in_css/
   [http://diveintomark.org/archives/2002/05/04/the_q_tag]: http://diveintomark.org/archives/2002/05/04/the_q_tag

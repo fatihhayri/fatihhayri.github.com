@@ -12,7 +12,7 @@ tags: [blog, caps-lock, font, Haberler, oval-buton, takvim]
 -   Ziyaret edilmiş linklerin kenarına işaret koymak. [Bağlantı][2]
 -   Güzel bir CSS ile yapılmış resimli menü örneği.
 -   İyi bir javascript kod yazarı olmak isteyenlere ipuçları
--   Güzel ve kullanışlı takvim uygulamaları. [Bağlantı][5]
+-   Güzel ve kullanışlı takvim uygulamaları.
 -   2007'nin en iyi CSS web sayfaları. [Bağlantı][6]
 -   CSS yazarken denenebilecek yeni bir format. [Bağlantı][7]
 -   Explorer 7 birinci yılını doldurmuş. 300 milyon kullanıcıya ulaşmış.
@@ -30,7 +30,6 @@ tags: [blog, caps-lock, font, Haberler, oval-buton, takvim]
     "oval butonlar"
   [2]: http://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/
     "ziyaret edildi"
-  [5]: http://www.electricprism.com/aeron/calendar/ "takvim örnekleri"
   [6]: http://www.webdesignerwall.com/trends/best-of-css-design-2007/
     "2007'nin en iyileri"
   [7]: http://dtott.com/thoughts/2007/12/03/format-your-css/

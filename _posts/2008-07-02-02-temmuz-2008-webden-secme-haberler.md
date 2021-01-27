@@ -8,7 +8,7 @@ tags: [aranabilir swf, Atom, BlogEngine.Net, float, Google Sitemap, jquery, js i
 
 -   Asp.net'de otomatik önermeli metin grdi alanları yapmak.
     Kırık bağlantı.
--   jQuery ile fare imlecinin konumu almak. [Bağlantı][1]
+-   jQuery ile fare imlecinin konumu almak.
 -   RSS ve ATOM beslemelerinizi geliştirin. Kırık bağlantı.
 -   jQuery ilerleme çubuğu eklentisi. 
 -   Jquery Kaynakları - mfyz.com [Bağlantı][4]
@@ -27,8 +27,6 @@ tags: [aranabilir swf, Atom, BlogEngine.Net, float, Google Sitemap, jquery, js i
 -   Google SEO için sitemap.xml nedir? - ercanaltug.blogspot.com
     [Bağlantı][13]
 
-  [1]: http://css.dzone.com/tips/jquery-tracking-the-position-o
-    "fare imlecini yeri"
   [4]: http://www.mfyz.com/?/gunluk/223/jquery-kaynaklari/
     "jQuery kaynakları"
   [7]: http://www.netzgesta.de/shiftzoom/ "resimleri yakınlaştır"

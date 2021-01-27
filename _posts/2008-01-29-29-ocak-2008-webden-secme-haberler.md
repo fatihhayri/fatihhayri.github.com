@@ -14,10 +14,10 @@ tags: [ardalan, CSS, Haberler, html5, ie, ie8, XHTML]
 -   Web programcıları için güzel bir link arşivi sitesi. [Bağlantı][2]
 -   "Google Alan adı tadıcılığına el koydu" [Bağlantı][3]
 -   IE8 çıkıyor ve web âlemini değiştirmeye kararlı. Standart mod ve
-    garip mod kavramını değiştecek gibi. [Bağlantı][4]
+    garip mod kavramını değiştecek gibi.
 -   "Elementlerinizi sıfırlayın" orhanekici.com
 -   Linki resimlere stil vermek.
--   CSS kodlarınız IE'ye uygun hale getirmek için 5 ipucu. [Bağlantı][8]
+-   CSS kodlarınız IE'ye uygun hale getirmek için 5 ipucu.
 -   İki artalan(background) resmi uygulamak. [Bağlantı][9]
 
 
@@ -27,8 +27,5 @@ tags: [ardalan, CSS, Haberler, html5, ie, ie8, XHTML]
   [2]: http://webdevelopersfieldguide.com/#csstechniques "linkler"
   [3]: http://www.suaygiri.com/alan-adi-tadiciligina-google-el-koydu/
     "Tatlı alan adı"
-  [4]: http://www.456bereastreet.com/archive/200801/standards_mode_is_the_new_quirks_mode/
-    "IE8"
-  [8]: http://scarfoo.com/archives/16 "ie sorunlarını giderme"
   [9]: http://techknack.blogspot.com/2008/01/css-trick-two-background-images.html
     "iki artalan"

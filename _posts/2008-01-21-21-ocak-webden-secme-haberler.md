@@ -25,7 +25,6 @@ tags: [.net, CSS, google, Haberler, Javascript, jquery, table, WordPress]
     jquery destekli [Bağlantı][6]
 -   Wordpress güvenlik ipuçları. [Bağlantı][7]
 -   mootools kaynaklı güzel bir lightbox uygulaması. Multibox
-    [Bağlantı][8]
 -   evcil.net geri dönmüşde bizim haberimiz yok. "Seyreyle Gönül .NET
     Framework Kodunu"
 
@@ -39,4 +38,3 @@ tags: [.net, CSS, google, Haberler, Javascript, jquery, table, WordPress]
     "css ile geçiş efekti"
   [7]: http://www.mattcutts.com/blog/three-tips-to-protect-your-wordpress-installation/
     "güvenlik ipuçları"
-  [8]: http://www.phatfusion.net/multibox/ "multibox"

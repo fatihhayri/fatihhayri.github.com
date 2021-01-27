@@ -8,7 +8,6 @@ tags: [Anlamlı web, css3.0, favicon, google, Haberler, Opera, seo, text-decorat
 
 -   Orhan Ekici "Nedir bu seo?" adlı güzel bir makale yazmış. orhanekici.com
 -   Yahoo Medya player ile sitenize görüntü/ses oynatıcı gömebilirsiniz.
-    [Bağlantı][1]
 -   VS.NET 2008 yenilikleri.
 -   CSS düzeltme olmadan kullanmak. [Bağlantı][3]
 -   50 güzel favori ikonu. [Bağlantı][4]
@@ -27,7 +26,6 @@ tags: [Anlamlı web, css3.0, favicon, google, Haberler, Opera, seo, text-decorat
     sanırım. WordPress sürümünü yükseltmenin zamnı geldi sanırım.
 
 
-  [1]: http://developer.yahoo.com/mediaplayer/ "görüntü oynatıcı"
   [3]: http://www.digital-web.com/articles/CSS_not_hacks/ "css hack"
   [4]: http://www.smashingmagazine.com/2008/01/01/favicons-episode-5-the-delicate-beauties/
     "favicon"

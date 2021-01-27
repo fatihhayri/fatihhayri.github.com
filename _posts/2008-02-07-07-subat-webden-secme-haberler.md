@@ -11,9 +11,8 @@ tags: [css3.0, Dreamweaver, google, Haberler, jquery, mailing, yahoo]
     ile çalışmak daha kolay. [Bağlantı][]
 -   Google'dan farklı arama araçları.
 -   Yahoo javascript kütüphanesinden CSS sayfa iskeleti oluşturma aracı.
-    [Bağlantı][2]
 -   CSS3 ile birlikte gelen sözde seçicisi :target hakkında güzel bir
-    makale. [Bağlantı][3]
+    makale.
 -   Etkileyici web sayfası tasarlamanın 10 yolu. [Bağlantı][4]
 -   Güzel html mailing hazırlamanın yolları. [Bağlantı][5]
 -   CSS ile kitap bölüm girişi örneği. [Bağlantı][6]
@@ -26,9 +25,6 @@ tags: [css3.0, Dreamweaver, google, Haberler, jquery, mailing, yahoo]
 
 
   [Bağlantı]: http://xtnd.us/ "dw javascript"
-  [2]: http://developer.yahoo.com/yui/grids/builder/ "yui css"
-  [3]: http://www.thinkvitamin.com/features/css/stay-on-target
-    "sözde seçici :target"
   [4]: http://www.smashingmagazine.com/2008/01/31/10-principles-of-effective-web-design/
     "güzel sayfalar için ipuçları"
   [5]: http://www.sitepoint.com/article/principles-beautiful-html-email

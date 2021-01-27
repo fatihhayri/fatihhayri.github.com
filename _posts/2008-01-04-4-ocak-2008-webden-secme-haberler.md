@@ -15,7 +15,6 @@ tags: [clearfix, css3.0, Firefox, google, Haberler, icon, pdf, yui]
     video anlatımı. [Bağlantı][5]
 -   Google'dan 2007 istatistikleri. [Bağlantı][6]
 -   Netscape web tarayıcısı artık yeni sürüm çıkarmayacakmış.
-    [Bağlantı][7]
 -   2007'de en çok indirilen programlar. [Bağlantı][8]
 -   "2007 yılında ülkemizdeki olumlu internet gelişmeleri"
 -   Kendimize özel selecbox oluşturalım.
@@ -33,8 +32,6 @@ tags: [clearfix, css3.0, Firefox, google, Haberler, icon, pdf, yui]
   [5]: http://www.youtube.com/watch?v=vcXUrNSvjhU "pdf yap"
   [6]: http://googlesystem.blogspot.com/2007/12/2007-metrics.html
     "Google istatistikleri"
-  [7]: http://blog.netscape.com/2007/12/28/end-of-support-for-netscape-web-browsers/
-    "Netscape"
   [8]: http://www.download.com/8301-2007_4-9835850-12.html
     "2007 İndirilenler"
   [11]: http://tjkdesign.com/articles/drop-shadow_and_AlphaImageLoader.asp

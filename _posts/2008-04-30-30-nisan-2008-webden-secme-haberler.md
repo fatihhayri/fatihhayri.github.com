@@ -12,7 +12,7 @@ tags: [adım adım kodlama, arama motoru, CSS maskeleme, css teknikleri, Dragon 
     resimlere CSS ile alfa maske uygulamışlar. [Bağlantı][1]
 -   Javascript ajax ile birlikte çok önem kazandı. Bir çok projede
     javascript kullanıyoruz, peki kullanıcının tarayıcısının javascript
-    açık mı kapalı mı olduğunu nasıl anlarız. [Bağlantı][2]
+    açık mı kapalı mı olduğunu nasıl anlarız.
 -   Arama motorlarına uygun asp.net sayfaları oluşturmak.
 -   Apple firması son zamanalarda bayağı bir atağa geçti. İnternet
     tarayıcısı Safari'de kendini bayağı geliştiriyor. Niye Safari
@@ -31,8 +31,6 @@ tags: [adım adım kodlama, arama motoru, CSS maskeleme, css teknikleri, Dragon 
 
 
   [1]: http://webkit.org/blog/181/css-masks/ "css maske"
-  [2]: http://roshanbh.com.np/2008/04/how-to-know-handle-disabled-javascript.html
-    "javascript açık"
   [4]: http://codebetter.com/blogs/jeff.lynch/archive/2008/04/24/why-safari-may-become-the-browser-of-choice.aspx
     "Safari yi seç"
   [6]: http://www.noupe.com/tutorial/51-best-of-jquery-tutorials-and-examples.html

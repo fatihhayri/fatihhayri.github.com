@@ -126,12 +126,12 @@ bizi kendine hayran bırakmaya devam ediyor.
 
 Ben bu yazıyı bir gün öceden yazmıştım ve bugün yayına aldım. Firefox
 çok güzelde bir bilgilendirme yapmış.
-[http://www.mozilla-europe.org/tr/firefox/features/][]
+mozilla-europe.org/tr/firefox/features/
 
 -   [http://www.mozilla.com/en-US/firefox/3.0rc2/releasenotes/][]
 -   [http://people.mozilla.com/~beltzner/overview-of-firefox3.swf][]
 -   http://blog.mozilla.com/faaborg/2007/06/01/the-user-interface-of-firefox-3-features
--   [http://download.chip.eu/en/Top-10-Firefox-3-Features_2092548.html?tab=5&show=1][]
+-   download.chip.eu/en/Top-10-Firefox-3-Features_2092548.html?tab=5&show=1
 -   [http://lifehacker.com/software/screenshot-tour/first-look-at-firefox-30-319968.php][]
 -   [http://developer.mozilla.org/en/docs/Firefox_3_for_developers][]
 -   [http://fotoanaliz.hurriyet.com.tr/galeridetay.aspx?cid=12563&p=2&rid=4369][]
@@ -163,7 +163,6 @@ Ben bu yazıyı bir gün öceden yazmıştım ve bugün yayına aldım. Firefox
   [http://www.mozilla-europe.org/tr/firefox/features/]: http://www.mozilla-europe.org/tr/firefox/features/
   [http://www.mozilla.com/en-US/firefox/3.0rc2/releasenotes/]: http://www.mozilla.com/en-US/firefox/3.0rc2/releasenotes/
   [http://people.mozilla.com/~beltzner/overview-of-firefox3.swf]: http://people.mozilla.com/~beltzner/overview-of-firefox3.swf
-  [http://download.chip.eu/en/Top-10-Firefox-3-Features_2092548.html?tab=5&show=1]: http://download.chip.eu/en/Top-10-Firefox-3-Features_2092548.html?tab=5&show=1
   [http://lifehacker.com/software/screenshot-tour/first-look-at-firefox-30-319968.php]: http://lifehacker.com/software/screenshot-tour/first-look-at-firefox-30-319968.php
   [http://developer.mozilla.org/en/docs/Firefox_3_for_developers]: http://developer.mozilla.org/en/docs/Firefox_3_for_developers
   [http://fotoanaliz.hurriyet.com.tr/galeridetay.aspx?cid=12563&p=2&rid=4369]: http://fotoanaliz.hurriyet.com.tr/galeridetay.aspx?cid=12563&p=2&rid=4369

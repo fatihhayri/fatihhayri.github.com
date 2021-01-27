@@ -7,7 +7,7 @@ tags: [Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek y
 ---
 
 -   Esnek yapılı silder geliştirmek.
--   "Wordpress Kurulumu - 3! Kod Optimizasyonu!" [Bağlantı][1]
+-   "Wordpress Kurulumu - 3! Kod Optimizasyonu!"
 -   Anlamlı kod yazmak. [Bağlantı][2]
 -   Güzel ücretsiz ardaalan resimleri. [Bağlantı][3]
 -   Firefox'un en kullanışlı (web kodlayanlar için) Firebug hakkında
@@ -17,7 +17,7 @@ tags: [Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek y
 -   CSS kendini geliştiriyor. CSS renk geçişi(gradiyant) vermek için kod
     eklendi. Şöyle bir sorunumuz var sadece Safari destekliyor.
     [Bağlantı][6]
--   "Open id nedir? Nasıl alınır?" [Bağlantı][7]
+-   "Open id nedir? Nasıl alınır?"
 -   jQuery ve css ile yapılmış güzel bir resim geçiş efektli bir
     uygulama. [Bağlantı][8]
 -   "“Altın Örümcek” Sona Doğru mu?" [Bağlantı][9]
@@ -25,14 +25,12 @@ tags: [Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek y
 -   Altmıştan fazla ajax/javascript kod örneği. [Bağlantı][11]
 -   Yuvarlak kenarlı bir başka lightbox örneği. [Bağlantı][12]
 -   Saydamlık kullanılarak web sayfası hazırlama. [Bağlantı][13]
--   Nasıl günlük(blog) tasarımı yapılır. [Bağlantı][14]
+-   Nasıl günlük(blog) tasarımı yapılır.
 -   Google Web Yönetici Merkezini Türkçeleştirmiş. Ayrıca bayağı bir
     ekleme olmuş yada ben yeni fark ettim. Arama motorları(google) için
     mükemmel bir araç olmuş, herkese öneririm. [Bağlantı][15]
 
 
-  [1]: http://www.alialtugkoca.com/arsiv/wordpress-kurulumu-3-kod-optimizasyonu/
-    "wordpress kurulumu"
   [2]: http://www.ibm.com/developerworks/xml/library/x-plansemantic/index.html?ca=drs-
     "anlamlı kod yazmak"
   [3]: http://squidfingers.com/patterns/ "ardalan resimleri"
@@ -40,8 +38,6 @@ tags: [Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek y
     "erişilebilir formlar"
   [6]: http://webkit.org/blog/175/introducing-css-gradients/
     "css renk geçişi"
-  [7]: http://www.bildirgec.org/yazi/open-id-nedir-nasil-alinir
-    "open id"
   [8]: http://jqueryfordesigners.com/image-cross-fade-transition/
     "resim geçişi"
   [9]: http://www.hasanyalcin.com/?p=463 "Altın örümcek"
@@ -53,7 +49,5 @@ tags: [Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek y
     "lighbox"
   [13]: http://www.smashingmagazine.com/2008/04/16/getting-creative-with-transparency-in-web-design/
     "saydamlık"
-  [14]: http://www.blogdesignblog.com/blog-design/how-to-blog-design-style-guide/
-    "nasıl günlük yapılır"
   [15]: http://www.google.com/webmasters/sitemaps/?hl=tr
     "web master tools"

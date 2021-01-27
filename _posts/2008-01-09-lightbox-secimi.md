@@ -83,8 +83,7 @@ varsa ve slimbox bu nesnenin altında kalıyorsa. slimebox.css da
 -   [http://homepage.mac.com/yukikun/software/slimbox_ex/][]
     (geliştirilmiş sildebox)
 -   http://www.chazzuka.com/blog/index.php?p=21
--   [http://www.phatfusion.net/lightbox/index.htm][] (slimebox
-    farklılaştırılmış
+-   phatfusion.net/lightbox/index.htm
 
 
   [Lightbox örneği]: /images/lightbox.gif
@@ -92,4 +91,3 @@ varsa ve slimbox bu nesnenin altında kalıyorsa. slimebox.css da
   [http://particletree.com/features/lightbox-gone-wild/]: http://particletree.com/features/lightbox-gone-wild/
   [http://clientside.cnet.com/cnet.gf/docs/files/common/3rdParty/Slimbox/slimbox-js.html]: http://clientside.cnet.com/cnet.gf/docs/files/common/3rdParty/Slimbox/slimbox-js.html
   [http://homepage.mac.com/yukikun/software/slimbox_ex/]: http://homepage.mac.com/yukikun/software/slimbox_ex/
-  [http://www.phatfusion.net/lightbox/index.htm]: http://www.phatfusion.net/lightbox/index.htm

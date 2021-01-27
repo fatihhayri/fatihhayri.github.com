@@ -20,7 +20,7 @@ tags: [Firefox, Haberler, innerHTml, linq, opacity]
 -   Güzel bir css menü örneği. [Bağlantı][5]
 -   innerHTml kullanımının bize kaybettirdiği zamanı kazanmak.
     [Bağlantı][6]
--   javascript'e dair güzel notlar. [Bağlantı][7]
+-   javascript'e dair güzel notlar.
 -   mailing hakkında güzel bir yazı. [Bağlantı][8]
 -   Microsoft Vista'yı hızlandırmanın 5 ipucu. [Bağlantı][9]
 -   Firefox 3(Beta)'ün 5 güzel yenliği.
@@ -32,8 +32,6 @@ tags: [Firefox, Haberler, innerHTml, linq, opacity]
     "css menü"
   [6]: http://ajaxian.com/archives/replacehtml-for-when-innerhtml-dogs-you-down
     "innerHtml"
-  [7]: http://www.456bereastreet.com/archive/200711/the_rules_of_unobtrusive_javascript/
-    "javascript ipuçları"
   [8]: http://www.37signals.com/svn/posts/604-navigating-the-html-email-jungle
     "mailing"
   [9]: http://www.funtechtalk.com/5-ways-to-speed-up-windows-vista/

@@ -9,10 +9,10 @@ tags: [.net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, m
 -   Web çalışanları üzerinde yapılan bir anket sonuçları. [Bağlantı][]
 -   Asp.net sayfalarda form alanlarına odaklandığında ardalanı
     değiştirmek için yöntem. [Bağlantı][1]
--   "Explorer'da <pre> tag'i ile innerHTML kullanmak" [Bağlantı][2]
+-   "Explorer'da pre tag'i ile innerHTML kullanmak"
 -   Asp.net'de Google Map kontrolü 1.Kısım [Bağlantı][3]
 -   45'den fazla güzel WordPress teması. [Bağlantı][4]
--   CSS ile 9 adet metin yerine resim koyma metodu. [Bağlantı][5]
+-   CSS ile 9 adet metin yerine resim koyma metodu.
 -   CSS ve mootools ile flash gibi farenin sağa ve sola kayması ile
     içeriğin hareket emesini sağlayan güzel bir örnek. [Bağlantı][6]
 -   WordPress 2.5 sürüm hakkında bilmemiz gerek 10 şey. [Bağlantı][7]
@@ -32,14 +32,10 @@ tags: [.net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, m
   [Bağlantı]: http://www.nitobi.com/survey/ "web üzerine bir anket"
   [1]: http://www.codeproject.com/KB/aspnet/inputBgOnFocus.aspx
     "asp.net ile form alanlarına odaklanma"
-  [2]: http://kadiry.blogspot.com/2008/03/explorerda-tagi-ile-innerhtml-kullanmak.html
-    "pre etiketi"
   [3]: http://www.shabdar.org/google-maps-user-control-for-ASP-Net-part1.html
     "asp.net google map"
   [4]: http://www.noupe.com/wordpress/outstanding-free-and-premium-wordpress-themes.html
     "wordpress teması"
-  [5]: http://css.dzone.com/news/nine-techniques-css-image-repl
-    "metin yerine resim koymak"
   [6]: http://woork.blogspot.com/2008/03/using-css-and-mootools-to-simulate.html
     "silde içerik"
   [7]: http://technosailor.com/2008/03/18/10-things-you-need-to-know-about-wordpress-25/

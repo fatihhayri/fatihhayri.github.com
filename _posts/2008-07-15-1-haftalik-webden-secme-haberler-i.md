@@ -7,7 +7,7 @@ tags: [ASP.NET, firebug, ie6, ie8, jquery, poster, WordPress]
 ---
 
 -   FireBug hakkında güzel bir makale. [Bağlantı][]
--   jquery ile tarayıcı üstü mesaj koymak. [Bağlantı][1]
+-   jquery ile tarayıcı üstü mesaj koymak.
 -   web kodlayıcıları için posterler. [Bağlantı][2]
 -   En iyi 10 CSS düğme kodlaması. Kırık bağlantı.
 -   20'den fazla güzel css uygulaması. [Bağlantı][4]
@@ -28,8 +28,6 @@ tags: [ASP.NET, firebug, ie6, ie8, jquery, poster, WordPress]
 
   [Bağlantı]: http://www.softwareishard.com/blog/firebug-tutorial/extending-firebug-hello-world-part-i/
     "FireBug"
-  [1]: http://roshanbh.com.np/2008/07/top-floating-message-box-using-jquery.html
-    "jquery"
   [2]: http://sixrevisions.com/resources/cheat_sheets_web_developer/
     "posterler"
   [4]: http://www.noupe.com/css/css-styled-lists-20-demos-tutorials-and-best-of.html

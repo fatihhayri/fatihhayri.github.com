@@ -11,7 +11,7 @@ tags: [diyagram, Haberler, jquery, safari, web2.0]
 -   CSS ile güzel web sayfası yapımının görsel anlatımı.
 -   Çeşitli konularda 100 adet Web2.0 aracı. [Bağlantı][2]
 -   30 adet erişebilirlik ipucu hemde SmashMagazine'den [Bağlantı][3]
--   Web sayfaları için yazı tipi indirme yöntemi geliyor. [Bağlantı][4]
+-   Web sayfaları için yazı tipi indirme yöntemi geliyor.
 -   Bağlantılarımıza başlık(title) eklemenin arama motorlarları için
     önemi. [Bağlantı][5]
 -   eburhan "jquery ve seçiciler" adlı güzel bir makale yazmış.
@@ -27,8 +27,6 @@ tags: [diyagram, Haberler, jquery, safari, web2.0]
     "web2.0 araçları"
   [3]: http://www.smashingmagazine.com/2007/10/09/30-usability-issues-to-be-aware-of/
     "erişebilirlik"
-  [4]: http://www.simplebits.com/notebook/2007/10/05/fonts.html
-    "font download"
   [5]: http://www.seomoz.org/ugc/link-tilte-attribute-and-its-seo-benefit
     "Bağlantı"
   [8]: http://cssglobe.com/lab/tablecloth/ "tablo seç"

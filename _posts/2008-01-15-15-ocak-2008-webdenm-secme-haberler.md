@@ -10,7 +10,7 @@ tags: [acid, CSS, google maps, Haberler, jquery, lightbox, seo]
     gidermek için kod çıkardı. Bu kodların zaman çizelgesi. paul.irish.aurgasm.us/2008/javascript-css-selector-engine-timeline
 -   Tarayıcı değerlendirme aracı Acid'in 3. sürümü çıkmış. Yeni sürüm
     üzerine bir yorum. [Bağlantı][1]
--   Lightview yuvarlak kenarlı bir lightbox uygulaması. [Bağlantı][2]
+-   Lightview yuvarlak kenarlı bir lightbox uygulaması.
 -   Kaynak kodların yayınlandığı ve saklandığı bir site. [Bağlantı][3]
 -   Güzel css teknikleri.
 -   Ahmet Küçükoğlu "CSS ile Düzenlenen Formlardaki Hatalar ve Çözümleri
@@ -27,8 +27,6 @@ tags: [acid, CSS, google maps, Haberler, jquery, lightbox, seo]
 
 
   [1]: http://ejohn.org/blog/acid3-tackles-ecmascript/ "Acid 3"
-  [2]: http://www.nickstakenburg.com/projects/lightview/
-    "yuvarlak kenarlı lightbox"
   [3]: http://snipplr.com/ "kaynak kodlar"
   [9]: http://docs.jquery.com/Release:jQuery_1.2.2 "jQuery 1.2.2"
   [10]: http://www.webmasterworld.com/accessibility_usability/3548855.htm

@@ -10,8 +10,8 @@ tags: [css3.0, e-posta, Haberler, Javascript, jquery, netscape, sildeshow]
 -   Javascript ve ajax ile fare imlecinin hareketlerini kaydetme işlemi.
 -   Asp.net ile gelişmiş eposta gönderme işlemleri; cevap yaz, önem
     seviyesi, ve teyit alma. [Bağlantı][2]
--   CSS3.0 hazırlayan takım ile yapılmış bir söyleşi. [Bağlantı][3]
--   Çevirimiçi CSS aracı. [Bağlantı][4]
+-   CSS3.0 hazırlayan takım ile yapılmış bir söyleşi.
+-   Çevirimiçi CSS aracı.
 -   jQuery güzel resim geçiş efektleri. Flash'ı zorlayan efektler.
     [Bağlantı][5]
 -   CSS ile yapılmış dikey bar grafikleri. [Bağlantı][6]
@@ -20,8 +20,6 @@ tags: [css3.0, e-posta, Haberler, Javascript, jquery, netscape, sildeshow]
 
   [2]: http://aspnet.4guysfromrolla.com/articles/101707-1.aspx
     "asp.net ile eposta"
-  [3]: http://xhtml.com/en/css/conversation-with-css-3-team/ "css3.0"
-  [4]: http://www.metatitan.com/cssbuilder.php "CSS Builder"
   [5]: http://www.malsup.com/jquery/cycle/ "Bağlantı"
   [6]: http://meyerweb.com/eric/css/edge/bargraph/demo-table.html
     "Bağlantı"

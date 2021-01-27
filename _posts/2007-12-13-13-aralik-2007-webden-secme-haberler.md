@@ -17,7 +17,7 @@ tags: [CSS, css3.0, Google Analytics, Haberler, Movable-Type, Team Fondation Ser
 -   Hangi javascript kütüphanesini kullanmalıyım? 
 -   Tasarımcılar için 10 güzel ipucu. [Bağlantı][4]
 -   2007 Web trendleri ve klişeleri. 
--   Yeni bir CSS kütüphanesi. [Bağlantı][6]
+-   Yeni bir CSS kütüphanesi.
 -   Tipografi: metin kontrast ve akışını ayarlama. [Bağlantı][7]
 -   CSS ile doküman ikonlarını eklemek. Tek sorun IE6'nın bunu
     desteklememesi.
@@ -33,7 +33,6 @@ tags: [CSS, css3.0, Google Analytics, Haberler, Movable-Type, Team Fondation Ser
   [Bağlantı]: http://www.writemaps.com/index.php/tour/ "site haritası"
   [1]: http://www.csharpnedir.com/makalegoster.asp?Mid=814# "tfs"
   [4]: http://24ways.org/2007/10-ways-to-get-design-approval "10 ipucu"
-  [6]: http://elements.projectdesigns.org/ "css kütüphanesi"
   [7]: http://www.webdesignerwall.com/tutorials/typographic-contrast-flow/
     "Tipografi"
   [9]: http://kilianvalkhof.com/2007/design/understanding-css-colour-modes/

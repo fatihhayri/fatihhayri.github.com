@@ -19,7 +19,7 @@ tags: [Ajax, Firefox, jquery, lightbox, WordPress]
 -   CSS ve jQuery ile sekmeli içerik yapımı. [Bağlantı][7]
 -   javascript ile garip modu(quirk) yakalama. [Bağlantı][8]
 -   WorPress kullanıcı girişini jQuery yardımı ile lightbox benzeri
-    şekle sokmak. [Bağlantı][9]
+    şekle sokmak.
 -   WordPress günlüğünüzü optimize etmenin yolları.
 -   Okunmasında yarar olan 6 javascript makalesi.
 
@@ -35,5 +35,3 @@ tags: [Ajax, Firefox, jquery, lightbox, WordPress]
   [7]: http://nettuts.com/html-css-techniques/how-to-create-a-slick-tabbed-content-area/
     "sekmeli içerik alanı"
   [8]: http://snipplr.com/view/5965/check-quirks-mode/ "garip mod"
-  [9]: http://wpguru.co.za/admin/using-jquery-to-liven-up-your-wordpress-login/
-    "wordpress girişi"

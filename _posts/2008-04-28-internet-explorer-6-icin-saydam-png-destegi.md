@@ -411,7 +411,7 @@ için kullandığım yöntemi sizlerle paylaştım. Muhakkak daha iyi yöntemler
 -   http://www.digital-web.com/articles/web_standards_creativity_png/
 -   [http://www.alistapart.com/stories/pngopacity/][]
 -   [http://www.tigir.com/alpha_png.htm][]
--   [http://stylizedweb.com/2007/12/30/png-transparency-issues/][]
+-   stylizedweb.com/2007/12/30/png-transparency-issues/
 -   [http://blogs.pathf.com/agileajax/2008/04/hacking-transpa.html][]
 -   http://www.bluehostforum.com/archive/index.php/t-8396.html
 
@@ -440,5 +440,4 @@ için kullandığım yöntemi sizlerle paylaştım. Muhakkak daha iyi yöntemler
   [http://blog.creonfx.com/internet-explorer/ie6-png-transparency-css-background-repeat-fix]: http://blog.creonfx.com/internet-explorer/ie6-png-transparency-css-background-repeat-fix
   [http://www.alistapart.com/stories/pngopacity/]: http://www.alistapart.com/stories/pngopacity/
   [http://www.tigir.com/alpha_png.htm]: http://www.tigir.com/alpha_png.htm
-  [http://stylizedweb.com/2007/12/30/png-transparency-issues/]: http://stylizedweb.com/2007/12/30/png-transparency-issues/
   [http://blogs.pathf.com/agileajax/2008/04/hacking-transpa.html]: http://blogs.pathf.com/agileajax/2008/04/hacking-transpa.html

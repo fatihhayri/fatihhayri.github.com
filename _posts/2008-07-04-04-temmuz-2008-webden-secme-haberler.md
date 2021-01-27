@@ -20,7 +20,6 @@ tags: [Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript,
     girmiş. [Bağlantı][7]
 -   55 adet iyi kalitede ikon setleri. [Bağlantı][8]
 -   600 Milyondan Fazla Web Kullanıcısı Risk Altında - turk.internet.com
-    [Bağlantı][9]
 -   Javascript ile sayfa adresindeki bilgileri almak. Kırık bağlantı.
 -   WordPress eski sürümleri hackleniyor. Bir çok arkadaşımın ve benimde
     karşılaştığım bir sorun. Güncellemeleri hemen yapmak lazım
@@ -38,8 +37,6 @@ tags: [Alan adı, etiket, Firefox 3, İkon, İnternet Tarayıcısı, Javascript,
     "Firefox 3"
   [8]: http://www.smashingmagazine.com/2008/07/02/55-free-high-quality-icon-sets/
     "ikonlar"
-  [9]: http://turk.internet.com/haber/yazigoster.php3?yaziid=21345
-    "web riski"
   [11]: http://successcreeations.com/older-versions-of-wordpress-hacked/464/
     "WordPress"
   [12]: http://www.hasanyalcin.com/?p=507 "Tasarım fiyatlandırma"

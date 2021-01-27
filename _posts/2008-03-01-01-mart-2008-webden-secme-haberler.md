@@ -9,7 +9,7 @@ tags: [CSS, facebook, gtalk, ie, jquery, lightbox, liste, silverlight, text-shad
 -   Microsoft Silverlight 2. sürümüne bir göz atalım. [Bağlantı][]
 -   CSS 3 ile birlikte tekrar gündeme gelen metin gölgeleme(text-shadow)
     özelliği ve kullanımı üzerine bir makale. [Bağlantı][1]
--   CSS ile listeler üzerine ayrıntılı bir makale. [Bağlantı][2]
+-   CSS ile listeler üzerine ayrıntılı bir makale.
 -   Facebook benzeri otomatik tamamlama scripti.
 -   Javascript ile flash'a yakın saydam kenarlı alanlar oluşturmak için
     GlassBox. [Bağlantı][4]
@@ -20,7 +20,7 @@ tags: [CSS, facebook, gtalk, ie, jquery, lightbox, liste, silverlight, text-shad
     [Bağlantı][7]
 -   CSS ipucu; body kenar çizgisi atama. 
 -   Gtalk ile web sitenizden anında sohbet scripti. [Bağlantı][9]
--   IE8 de doctype geçişi. [Bağlantı][10]
+-   IE8 de doctype geçişi.
 -   Yuvarlak kenarlı tab menü yapmak. 
 -   Asp.net ve ajax yardımı ile otomatik metin tamamlama işlemi yapmak.
     [Bağlantı][12]
@@ -32,8 +32,6 @@ tags: [CSS, facebook, gtalk, ie, jquery, lightbox, liste, silverlight, text-shad
     "Silverlight 2. sürüm"
   [1]: https://dev.opera.com/articles/css-text-shadows-and-background-sizing/
     "metin gölgeleme"
-  [2]: http://konstruktors.com/blog/design-suggetions/125-how-to-create-beautiful-and-elegant-html-lists-using-css/
-    "CSS listeler"
   [4]: http://www.glassbox-js.com/#Home "glassbox"
   [5]: http://www.smashingmagazine.com/2008/02/26/navigation-menus-trends-and-examples/
     "menüler"
@@ -42,8 +40,6 @@ tags: [CSS, facebook, gtalk, ie, jquery, lightbox, liste, silverlight, text-shad
   [7]: http://famspam.com/facebox "facebook lightbox örneği"
   [9]: http://googlesystem.blogspot.com/2008/02/chat-with-your-sites-visitors-using.html
     "gtalk web sitemde"
-  [10]: http://www.456bereastreet.com/archive/200802/doctype_switching_for_ie_8/
-    "ie 8"
   [12]: http://www.c-sharpcorner.com/UploadFile/raj1979/AutoComplete02142008113654AM/AutoComplete.aspx
     "otomatik tamamlama"
   [14]: http://www.hakkiceylan.com/web-tarayiciya-gore-degisebilen-css-hazirlamak/

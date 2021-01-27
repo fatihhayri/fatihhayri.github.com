@@ -17,7 +17,6 @@ tags: [clearfix, e-posta, google reader, Haberler, web-form]
 -   Html E-postalar hakkında güzel ve geniş bir bilgi. [Bağlantı][3]
 -   clearfix metodundan kaynaklanan boşluk sorunu ve çözüm önerisi.
 -   Html e-posta hazırlarken CSS kullanımında neler dikkat etmeliyiz.
-    [Bağlantı][5]
 -   Web standartlarında mail hazırlamak hakkında bir site. [Bağlantı][6]
 -   Xhtml ve CSS ile hazırlanmış Web Form örnekleri. Güzel görünümlü ve
     işlevsel bir site. [Bağlantı][7]
@@ -32,8 +31,6 @@ tags: [clearfix, e-posta, google reader, Haberler, web-form]
   [2]: http://www.interface-research.com/ "web tasarımı"
   [3]: http://css-tricks.com/more-information-regarding-html-emails/
     "mailing"
-  [5]: http://www.thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered
-    "mailing ve css"
   [6]: http://www.email-standards.org/ "email-standards.org"
   [7]: http://wufoo.com/gallery/ "web form örnekleri"
   [8]: http://www.cssplay.co.uk/menus/ "CSS menü"

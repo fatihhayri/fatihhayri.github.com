@@ -32,6 +32,4 @@ ancak bu bizim işimizi bozuyor. Çözüm ise çok basit.
 
 Sadece font-size tanımını 0 atamamız yeterli.
 
-Kaynak: [http://vaig.be/2007/04/07/div-styleheight-1px-bug-in-ie/][]
-
-  [http://vaig.be/2007/04/07/div-styleheight-1px-bug-in-ie/]: http://vaig.be/2007/04/07/div-styleheight-1px-bug-in-ie/
+Kaynak: vaig.be/2007/04/07/div-styleheight-1px-bug-in-ie/

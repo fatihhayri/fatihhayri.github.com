@@ -22,7 +22,7 @@ tags: [ASP.NET, CSS, em, Eric Meyer, facebook, feedburner, Haberler, html5, ie8,
 -   Güzel bir wordpress teması. [Bağlantı][10]
 -   FaceBook kendi javascript kütüphanesini çıkarmış.
 -   Gelişmiş bir lightbox uygulaması. Biraz karışık görüne bilir ama
-    değişik ihtiyaçlara karşılık veriyor. [Bağlantı][12]
+    değişik ihtiyaçlara karşılık veriyor.
 -   Firefox 3 ile birlikte hareketli PNG desteğide geliyormuş.
     [Bağlantı][13]
 -   "Visual Studio 2008 ve JavaScript Intellisense kullanımı"
@@ -37,7 +37,6 @@ tags: [ASP.NET, CSS, em, Eric Meyer, facebook, feedburner, Haberler, html5, ie8,
   [8]: http://www.alistapart.com/articles/fromswitchestotargets
     "bir üstteki yazıya yorum"
   [10]: http://neutronics.syokz.org/ "wprdpress"
-  [12]: http://mjijackson.com/shadowbox/ "Shadowbox"
   [13]: http://animatedpng.com/ "hareketli PNG"
   [15]: http://www.emmaalvarez.com/2008/01/top-best-50-blogger-wordpress.html
     "wordpress eklentiler"

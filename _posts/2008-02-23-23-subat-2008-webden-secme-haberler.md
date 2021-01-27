@@ -11,13 +11,13 @@ tags: [Ajax, google, Javascript, mootools, yui]
 -   ie için PNG düzelmelerinden biri. [Bağlantı][2]
 -   50+ adet jQuery uygulaması. [Bağlantı][3]
 -   "jQuery ve ajax işlemleri" http://www.eburhan.com/jquery-ve-ajax-islemleri/
--   javascript kütüphanelerinden YUI 2.5 sürümü çıkmış. [Bağlantı][5]
+-   javascript kütüphanelerinden YUI 2.5 sürümü çıkmış.
 -   3 tane javascript ipucu. [Bağlantı][6]
 -   Asp.net'de jQuery kullanımı. [Bağlantı][7]
 -   Ajax ile yapılmış ülke ve şehir isimleri açılır menü örneği.
     [Bağlantı][8]
 -   XHTML2 ve HTML5 
--   Lightview 2. sürümü çıkmış. [Bağlantı][10]
+-   Lightview 2. sürümü çıkmış.
 -   CSS menü javascript yardımı ile aktif tab uygulaması. [Bağlantı][11]
 -   37 CSS ve ajax tabanlı menü örneği. [Bağlantı][12]
 -   SmashMagazine yine yapacağını yapmış. Süper bir makale hazırlamış
@@ -42,14 +42,12 @@ tags: [Ajax, google, Javascript, mootools, yui]
     "css png"
   [3]: http://www.noupe.com/jquery/50-amazing-jquery-examples-part1.html
     "jQuery"
-  [5]: http://yuiblog.com/blog/2008/02/20/yui-250-released/ "yui 2.5"
   [6]: http://ajaxian.com/archives/cursing-with-javascript-three-random-tips
     "3 javascript ipucu"
   [7]: http://www.chrisvandesteeg.nl/2008/02/16/jquery-for-aspnet-mvc-part-2/
     "asp.net - jquery"
   [8]: http://www.noboxmedia.com/20/massive-ajax-countryarea-drop-down-list/
     "ülke sehir"
-  [10]: http://www.nickstakenburg.com/projects/lightview/ "lightbox2.0"
   [11]: http://www.cssnewbie.com/navigation/intelligent-navigation/
     "css menü ve javascript"
   [12]: http://www.noupe.com/javascript/37-great-ajax-css-tab-based-interfaces.html

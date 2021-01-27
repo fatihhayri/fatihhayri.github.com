@@ -12,7 +12,6 @@ tags: [ASP.NET, CSS, Etiket bulutu, Firefox, Haberler, ie, menü, mootools, payp
 -   MooTools javascript kütüphanesi ile yapılmış güzel bir takvim
     uygulaması. [Bağlantı][3]
 -   PHP ve CSS ile dinamik metin yerine resim koyma metodu.
-    [Bağlantı][4]
 -   Asp.net projelerinizde tablo yerine div kullanmayı anlatan bir
     makale, ayrıca makalede div ile kodlamanın kazandırdığı performansı
     da gösterilmiş. [Bağlantı][5]
@@ -33,7 +32,6 @@ tags: [ASP.NET, CSS, Etiket bulutu, Firefox, Haberler, ie, menü, mootools, payp
   [2]: http://www.webdesignerwall.com/general/review-paypal-redesign/
     "Bağlantı"
   [3]: http://moomonth.com/ "Bağlantı"
-  [4]: http://artypapers.com/csshelppile/pcdtr/ "Bağlantı"
   [5]: http://www.codeguru.com/csharp/.net/net_asp/miscellaneous/article.php/c14309/
     "Bağlantı"
   [8]: http://lifehacker.com/software/screenshot-tour/first-look-at-firefox-30-319968.php

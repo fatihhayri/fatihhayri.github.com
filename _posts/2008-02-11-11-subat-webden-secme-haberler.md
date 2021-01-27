@@ -9,7 +9,6 @@ tags: [GridView, jquery, vs.net]
 -   Asp.net performansını arttıracak ve esneklik sağlayacak 10 öneri.
     [Bağlantı][]
 -   VS.NET 2008 yenilikleri hakkında geniş kapsamlı bir makale.
-    [Bağlantı][1]
 -   Filtrelenebilir GridView görünümünü CSS ile düzenlemek.
     [Bağlantı][2]
 -   Lorem ipsun dan sıkıldım diyenler için, farklı bir yapay metin
@@ -22,7 +21,7 @@ tags: [GridView, jquery, vs.net]
     yanlışları [Bağlantı][7]
 -   Javascript ile metin kırma işlemleri ve hız faktörü hakkında bir
     makale. [Bağlantı][8]
--   javascript/ajax referanslarının posterleri. [Bağlantı][9]
+-   javascript/ajax referanslarının posterleri.
 -   javascript kütüphanelerinin hızlarını inceleyen güzel bir makale.
     [Bağlantı][10]
 -   CSS3'de metin yerine resim koyma metodu. CSS3 ile her şey daha iyi
@@ -39,8 +38,6 @@ tags: [GridView, jquery, vs.net]
 
   [Bağlantı]: http://www.codeproject.com/KB/aspnet/10ASPNetPerformance.aspx
     "asp.net performans arttırımı"
-  [1]: http://www.c-sharpcorner.com/UploadFile/john_charles/WhatnewinVisualStudioNET200802012008121831PM/WhatnewinVisualStudioNET2008.aspx
-    "vs.net 2008 yenilikleri"
   [2]: http://damianpedwards.spaces.live.com/blog/cns%21A079DE667E1958B3%21562.entry
     "GridView"
   [3]: http://www.blindtextgenerator.com/ "yapay metin"
@@ -53,8 +50,6 @@ tags: [GridView, jquery, vs.net]
     "elastik sayfa tasarımı"
   [8]: http://blog.stevenlevithan.com/archives/faster-trim-javascript
     "kırma"
-  [9]: http://www.scottklarr.com/topic/95/javascriptajax-cheat-sheets/
-    "görsel referans"
   [10]: http://ejohn.org/blog/library-loading-speed/ "en hızlısı"
   [11]: http://www.css3.info/image-replacement-in-css3/
     "css3 bekliyoruz"

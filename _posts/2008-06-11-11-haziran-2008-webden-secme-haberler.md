@@ -13,7 +13,7 @@ tags: [css form, css stil değiştir, Firefox 3, jquery, WordPress, wordpress te
     [Bağlantı][3]
 -   jQuery animasyon yeteneklerini öğrenin.
 -   Gelişmiş javascript animasyonları kullanılan 10 site. Gerçekten
-    flash benzeri çözümler bunlar. [Bağlantı][5]
+    flash benzeri çözümler bunlar.
 -   5 dakikada CSS ile sayfa planı çıkarmak.
 -   450'den fazla WordPress eklentisi katagorize edilmiş ve açıklamalı.
     [Bağlantı][7]
@@ -33,8 +33,6 @@ tags: [css form, css stil değiştir, Firefox 3, jquery, WordPress, wordpress te
     "test et"
   [3]: http://www.spaksu.com/javascript-css-stil-degistirici-hazirlamak/
     "css şekil değiştirme"
-  [5]: http://css.dzone.com/news/10-websites-that-use-javascrip
-    "javascript mi flash mı"
   [7]: http://www.econsultant.com/i-want-wordpress-plugins/index.html#blogroll
     "wordpress eklentisi"
   [8]: http://jquery.com/blog/2008/06/09/jquery-ui-v15-released-focus-on-consistent-api-and-effects/

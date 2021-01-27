@@ -19,7 +19,7 @@ tags: [Erişebilirlik, Firefox 3, google-belgeler-etablolar, İnternet Tarayıc�
 -   jQuery ile ipod benzeri DrillDown menü yapmak.
 -   Vista'daki takvime benzetilmiş ajax takvim uygulaması.
 -   20 adet CSS düzeltmesinin güzel bir listesi. [Bağlantı][9]
--   CSS'de tek resim ile genişleyebilir alanlar yapmak. [Bağlantı][10]
+-   CSS'de tek resim ile genişleyebilir alanlar yapmak.
 -   web sitesi veya günlüğü olanlar için 60 kullanışlı araç.
     [Bağlantı][11]
 
@@ -35,7 +35,5 @@ tags: [Erişebilirlik, Firefox 3, google-belgeler-etablolar, İnternet Tarayıc�
     "tarayıcı hızları"
   [9]: http://www.noupe.com/css/using-css-to-fix-anything-20-common-bugs-and-fixes.html
     "css düzeltmeleri(fix)"
-  [10]: http://kailoon.com/css-sliding-door-using-only-1-image/
-    "açık kapı"
   [11]: http://www.marcofolio.net/tips/60_ridiculously_useful_tools_for_your_blog_or_website.html
     "web için kullanışlı araç"
