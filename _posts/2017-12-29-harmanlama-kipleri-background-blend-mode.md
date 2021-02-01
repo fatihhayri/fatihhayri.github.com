@@ -72,6 +72,6 @@ Kalın sağlıcakla.
  - [https://getflywheel.com/layout/css-blend-modes/](https://getflywheel.com/layout/css-blend-modes/)
  - [https://tympanus.net/codrops/css_reference/background-blend-mode/](https://tympanus.net/codrops/css_reference/background-blend-mode/)
  - [https://code.tutsplus.com/tutorials/editing-images-in-css-blend-modes--cms-26058](https://code.tutsplus.com/tutorials/editing-images-in-css-blend-modes--cms-26058)
- - [https://developer.mozilla.org/tr/docs/Web/CSS/background-blend-mode](https://developer.mozilla.org/tr/docs/Web/CSS/background-blend-mode)
+ - [https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode)
  - [https://webmaster.kitchen/css-de-goruntu-duzenleme-blend-modes/](https://webmaster.kitchen/css-de-goruntu-duzenleme-blend-modes/)
  - [http://thenewcode.com/1020/HTML5-Video-Effects-with-CSS-Blend-Modes](http://thenewcode.com/1020/HTML5-Video-Effects-with-CSS-Blend-Modes)

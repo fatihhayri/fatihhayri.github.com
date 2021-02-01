@@ -179,7 +179,7 @@ Kalın sağlıcakla.
  - [https://tympanus.net/codrops/css_reference/grid/#section_grid-template](https://tympanus.net/codrops/css_reference/grid/#section_grid-template)
  - [https://www.geeksforgeeks.org/css-grid-template-property/](https://www.geeksforgeeks.org/css-grid-template-property/)
  - [https://webdesign.tutsplus.com/tutorials/save-time-with-the-css-grid-shorthand-property--cms-31590](https://webdesign.tutsplus.com/tutorials/save-time-with-the-css-grid-shorthand-property--cms-31590)
- - [https://developer.mozilla.org/tr/docs/Web/CSS/grid](https://developer.mozilla.org/tr/docs/Web/CSS/grid)
+ - [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
  - [https://cssreference.io/property/grid/](https://cssreference.io/property/grid/)
  - [https://tympanus.net/codrops/css_reference/grid/#section_grid](https://tympanus.net/codrops/css_reference/grid/#section_grid)
  - [https://www.quackit.com/css/css3/properties/css_grid.cfm](https://www.quackit.com/css/css3/properties/css_grid.cfm)

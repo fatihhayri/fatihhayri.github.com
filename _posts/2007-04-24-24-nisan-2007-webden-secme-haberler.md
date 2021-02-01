@@ -8,7 +8,7 @@ tags: [Ajax, CSS, CSSEdit, e-posta, font, Haberler, Javascript]
 
 -   Otomatik tamamlama için Asp.net'e uygun bir ajax ekelentisi.
 -   Yeni nesil e-posta araçlarının CSS özelliklerini destekleme
-    listesini sunan güzel bir site. [Link][1]
+    listesini sunan güzel bir site.
 -   CSS ile font kullanımda bir çok kişinin karar veremediği konulardan
     bitanesi. Sabit değer kullanımı veya göreceli değer kullanımı ile
     ilgili güzel bir makale. 
@@ -24,8 +24,6 @@ tags: [Ajax, CSS, CSSEdit, e-posta, font, Haberler, Javascript]
     güzel bir makale yazmış.
 
 
-  [1]: http://www.campaignmonitor.com/blog/archives/2007/04/a_guide_to_css_support_in_emai_2.html
-    "Link"
   [3]: http://www.ablogyoucanuse.com/2007/04/22/15-tips-to-choose-a-good-font/
     "Link"
   [4]: http://24ways.org/2006/rounded-corner-boxes-the-css3-way "Link"

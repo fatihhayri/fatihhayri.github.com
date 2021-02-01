@@ -24,7 +24,6 @@ tags: [Asp.net 3.5, blog, FaceLift, Form metinleri, mesaj kutusu, sFIR, tablo, w
 -   Mozilla Laboratuvarları geleceğin internet tarayıcıları hakkında
     düşünüp bir video hazırlamışlar. Kırık bağlantı.
 -   Blog Yazılarına Daha Fazla Yorum Almanın Yolları - selcukhoca.com
-    [Bağlantı][12]
 -   WordPress 2.7 de eklenti yönetimi - blog.wolkanca.com [Bağlantı][13]
 
 
@@ -42,7 +41,5 @@ tags: [Asp.net 3.5, blog, FaceLift, Form metinleri, mesaj kutusu, sFIR, tablo, w
   [9]: http://www.sitepoint.com/blogs/2008/08/05/mining-the-sitepoint-css-reference/
     "css ipuçları"
   [10]: http://nettuts.com/javascript-ajax/how-to-implement-sifr3-into-your-website/
-  [12]: http://www.selcukhoca.com/blog-yazilarina-daha-fazla-yorum-almanin-yollari/
-    "blog yazılarına yorum"
   [13]: http://blog.wolkanca.com/wordpress-27-de-eklenti-yonetimi/?source=rss
     "wordpress 2.7"

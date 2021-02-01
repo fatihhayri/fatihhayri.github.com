@@ -23,7 +23,7 @@ Microsoft'da uygulasa idi biz ie6 gibi bir garabet ile uğraşmıyor
 olacaktık. Belki bu kadar rekabet olmayacaktı ama bizde yenilikleri daha
 hızlı uygulayacaktık. Neyse yine ie6 ile uğraşmayalım.
 
-Firefox 3.6 çıktı. [Buradan indirebilirsiniz.][]
+Firefox 3.6 çıktı. Buradan indirebilirsiniz.
 
 Gelelim yeniliklere;
 
@@ -99,13 +99,12 @@ Birde yapımcılarından Mike Beltzner'dan dinleyelim
 -   [http://download.cnet.com/8301-2007_4-10438907-12.html][]
 -   [http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/][]
 
-  [Buradan indirebilirsiniz.]: http://www.mozilla-europe.org/en/firefox/ "Buradan indirebilirsiniz."
   [Personas]: http://www.getpersonas.com/ "Personas"
   [tıklayınız.]: http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/ "tıklayınız."
   [font-face]: http://fatihhayrioglu.com/font-face-kullanimi/ "font-face"
   [Gradyen]: https://developer.mozilla.org/en/Using_gradients "Gradyen"
-  [Çoklu background desteği]: https://developer.mozilla.org/en/CSS/Multiple_backgrounds "Çoklu background desteği"
-  [Background genişletme]: https://developer.mozilla.org/en/CSS/Scaling_background_images "Background genişletme"
+  [Çoklu background desteği]: https://developer.mozilla.org/en-us/docs/Web/CSS/Multiple_backgrounds "Çoklu background desteği"
+  [Background genişletme]: https://developer.mozilla.org/en-us/docs/Web/CSS/Scaling_background_images "Background genişletme"
   [File API]: http://hacks.mozilla.org/2009/12/w3c-fileapi-in-firefox-3-6/ "File API"
   [videoyu izleyin]: http://hacks.mozilla.org/2009/12/file-drag-and-drop-in-firefox-3-6/ "videoyu izleyin"
   [2]: http://hacks.mozilla.org/2009/10/orientation-for-firefox/ "videoyu izleyin"

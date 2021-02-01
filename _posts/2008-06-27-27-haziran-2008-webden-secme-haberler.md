@@ -18,7 +18,7 @@ tags: [css-menü, daktilo efekti, jquery, Opera 9.5, otomatik önerme, poster]
     [Bağlantı][6] 
 -   jQuery ile yazılara daktilo efekti verelim. Kırık bağlantı.
 -   "Web Tasarımın 10 Emri" - hasanyalcin.com [Bağlantı][8] 
--   En iyi menü örnekleri. [Bağlantı][9] 
+-   En iyi menü örnekleri.
 
 
   [1]: http://www.sitepoint.com/article/navigation-using-css
@@ -34,5 +34,3 @@ tags: [css-menü, daktilo efekti, jquery, Opera 9.5, otomatik önerme, poster]
   [6]: http://www.smashingmagazine.com/2008/06/26/flexible-layouts-challenge-for-the-future/
     "esneke siteler"
   [8]: http://www.hasanyalcin.com/?p=501 "web emirleri"
-  [9]: http://help-developer.com/index.php/2008/06/25/top-10-navigation-menus/
-    "menü örnekleri"

@@ -210,7 +210,7 @@ Blok kapsayıcı elemanı içindeki satır içi elemanın içeriğini
 {: .cssozelliktanimi}
 
 ![][1]
-resim kaynağı: [https://developer.mozilla.org/en/CSS/text-overflow][]
+resim kaynağı: [https://developer.mozilla.org/en-us/docs/Web/CSS/text-overflow][]
 
 Başlangış değeri **clip**’dir. **clip** değeri alan satır içi eleman
 kapsayıcı eleman sınırlarından kırpılacaktır. Diğer aldığı değer
@@ -271,7 +271,7 @@ sunana bir özelliktir.
 
 
 ![][2]
-resim kaynağı: [https://developer.mozilla.org/en/CSS/text-rendering][]
+resim kaynağı: [https://developer.mozilla.org/en-us/docs/Web/CSS/text-rendering][]
 
 Tanımlarda dikkatimiz çeken karakter aralığı olarak Y ve o arasındaki
 mesafe ve ffl görünümündeki farklar kendini gösteriyor.
@@ -341,7 +341,7 @@ Kalın sağlıcakla.
 -   [http://www.impressivewebs.com/word-wrap-css3/][]
 -   [http://www.opera.com/docs/specs/presto27/css/text/][]
 -   [http://caniuse.com/wordwrap][] (wordp-wrap destek listesi)
--   https://developer.mozilla.org/En/CSS/Word-wrap
+-   https://developer.mozilla.org/en-us/docs/Web/CSS/Word-wrap
 -   [http://www.w3.org/TR/css3-text/][]
 -   http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property
 -   http://css-tricks.com/7405-adding-stroke-to-web-text
@@ -352,14 +352,14 @@ Kalın sağlıcakla.
 -   [http://www.impressivewebs.com/word-wrap-css3/][]
 -   [http://fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover][]
 -   [http://webdesignerwall.com/tutorials/word-wrap-force-text-to-wrap][]
--   [https://developer.mozilla.org/en/CSS/text-align][]
--   [https://developer.mozilla.org/en/CSS/text-overflow][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/text-align][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/text-overflow][]
 -   [http://www.456bereastreet.com/archive/201105/clipping_text_with_css3_text-overflow/][]
 -   [http://www.cssplay.co.uk/menu/text-overflow.html][] (örnek)
 -   [http://www.css3.info/preview/text-overflow/][]
 -   [http://deepubalan.com/blog/2010/11/27/text-overflow-css3-property-explained-pure-css-solution-to-get-ellipsis/][]
 -   [http://caniuse.com/text-overflow][] (destek listesi)
--   [https://developer.mozilla.org/en/CSS/text-rendering][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/text-rendering][]
 -   [http://trentwalton.com/2010/06/29/css-text-rendering/][]
 -   [http://htmlcss.wikia.com/wiki/Text-rendering][]
 -   [http://coding.smashingmagazine.com/2010/03/01/css-and-the-future-of-text/][]
@@ -368,9 +368,9 @@ Kalın sağlıcakla.
 
   [100]: https://lh6.googleusercontent.com/3FsatoE0FmU_5BhUEy_zEiJ1IOKvCEw08hEBmUC65r2zb0sqP9w__9fwRPhdr8_avR3u4Bu0jDa2WAWnnaINNAY_tRNPtlLOO8RkvDlPQuB8Xm87Buc
   [1]: https://lh3.googleusercontent.com/miG_QKLBFvURtfSYFo3_P8q2QBZPWOGG2s-zMI7n7U97JH9TkMWd-tt3NnhL1nzD_DyQcqV1gmoqaK5FvhnR-XYI4AnQHl4H4A7h5TL884lG0H2OtmI
-  [https://developer.mozilla.org/en/CSS/text-overflow]: https://developer.mozilla.org/en/CSS/text-overflow
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/text-overflow]: https://developer.mozilla.org/en-us/docs/Web/CSS/text-overflow
   [2]: https://lh4.googleusercontent.com/td53uElshl_ptgpbjTHJZU2pksA06sFUxjd4JppDf3kzsI-Y0OTJ5ZMLtjw1yJM55RQfGycC6h1VHBxEqBvWfcN2gHOs_Bbem8WsR9S2MjCsDPjc65g
-  [https://developer.mozilla.org/en/CSS/text-rendering]: https://developer.mozilla.org/en/CSS/text-rendering
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/text-rendering]: https://developer.mozilla.org/en-us/docs/Web/CSS/text-rendering
   [3]: https://lh6.googleusercontent.com/RhIpgQ78or_m1wq9pK8wteUekGqrJlMiBGY-dEhvCGKFVlvLCGn7r_righ66slH2qGRDlcXt5TM-CZ8yFQTflFch3NnQ1nlOpZuaWQSlZblow8OvDAM
   [http://www.w3.org/TR/css3-text/]: http://www.w3.org/TR/css3-text/
   [http://www.impressivewebs.com/word-wrap-css3/]: http://www.impressivewebs.com/word-wrap-css3/
@@ -382,7 +382,7 @@ Kalın sağlıcakla.
   [http://www.quirksmode.org/css/stroke.html]: http://www.quirksmode.org/css/stroke.html
   [http://fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover]: http://fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover
   [http://webdesignerwall.com/tutorials/word-wrap-force-text-to-wrap]: http://webdesignerwall.com/tutorials/word-wrap-force-text-to-wrap
-  [https://developer.mozilla.org/en/CSS/text-align]: https://developer.mozilla.org/en/CSS/text-align
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/text-align]: https://developer.mozilla.org/en-us/docs/Web/CSS/text-align
   [http://www.456bereastreet.com/archive/201105/clipping_text_with_css3_text-overflow/]: http://www.456bereastreet.com/archive/201105/clipping_text_with_css3_text-overflow/
   [http://www.cssplay.co.uk/menu/text-overflow.html]: http://www.cssplay.co.uk/menu/text-overflow.html
   [http://www.css3.info/preview/text-overflow/]: http://www.css3.info/preview/text-overflow/

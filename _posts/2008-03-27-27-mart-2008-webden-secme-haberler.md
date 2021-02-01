@@ -8,7 +8,7 @@ tags: [.net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, m
 
 -   Web çalışanları üzerinde yapılan bir anket sonuçları. [Bağlantı][]
 -   Asp.net sayfalarda form alanlarına odaklandığında ardalanı
-    değiştirmek için yöntem. [Bağlantı][1]
+    değiştirmek için yöntem.
 -   "Explorer'da pre tag'i ile innerHTML kullanmak"
 -   Asp.net'de Google Map kontrolü 1.Kısım [Bağlantı][3]
 -   45'den fazla güzel WordPress teması. [Bağlantı][4]
@@ -30,8 +30,6 @@ tags: [.net, CSS, google maps, jquery, metin yerine resim koymak, mikroformat, m
 
 
   [Bağlantı]: http://www.nitobi.com/survey/ "web üzerine bir anket"
-  [1]: http://www.codeproject.com/KB/aspnet/inputBgOnFocus.aspx
-    "asp.net ile form alanlarına odaklanma"
   [3]: http://www.shabdar.org/google-maps-user-control-for-ASP-Net-part1.html
     "asp.net google map"
   [4]: http://www.noupe.com/wordpress/outstanding-free-and-premium-wordpress-themes.html

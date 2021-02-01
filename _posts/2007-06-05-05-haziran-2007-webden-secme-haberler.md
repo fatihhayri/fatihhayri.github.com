@@ -8,7 +8,7 @@ tags: [CSS, google, Haberler, Javascript, microsoft, tooltip, XHTML]
 
 -   Microsoft bilgisayar kullanma mantığımızı değiştiriyor. [Link][]
 -   CSS ile güzel görünümlü form yapmayı anlatan ingilizce güzel bir
-    makale.[Link][1]
+    makale.
 -   PNG ile web sayfası yapmayı anlatan güzel bir makale.
 -   Google internete bağlı olamadan servislerini kullanabilme imkanı
     sağlıyor.Şimdilik sadece bir kaç servisle başlayan bu özellik
@@ -19,6 +19,5 @@ tags: [CSS, google, Haberler, Javascript, microsoft, tooltip, XHTML]
 
 
   [Link]: http://www.microsoft.com/surface/ "Link"
-  [1]: http://www.sitepoint.com/article/fancy-form-design-css "Link"
   [3]: http://gears.google.com/ "Link"
   [5]: http://www.w3counter.com/globalstats.php?date=2007-05-20 "Link"

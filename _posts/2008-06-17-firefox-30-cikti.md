@@ -14,7 +14,7 @@ Sırada Microsoft Internet Explorer var, ama Microsoft 8.0 sürümünün
 Ağustos ayında yayınlayacağına dair bilgiler dolaşıyor, yani biraz daha
 bekliyeceğiz.
 
-[Firefox 3.0 indir][]
+Firefox 3.0 indir
 
 Firefox 3 özelliklerine bir göz atalım;
 
@@ -138,7 +138,6 @@ mozilla-europe.org/tr/firefox/features/
 
 
   [Opera 9.5]: http://fatihhayrioglu.com/?p=518 "Opera 9.5"
-  [Firefox 3.0 indir]: http://www.mozilla-europe.org/tr/firefox/
   [100]: /images/browser_memory_test1-300x237.jpg
     "browser_memory_test1"
 
@@ -160,7 +159,6 @@ mozilla-europe.org/tr/firefox/features/
   [6]: /images/eklentiler-300x218.jpg
     "eklentiler"
 
-  [http://www.mozilla-europe.org/tr/firefox/features/]: http://www.mozilla-europe.org/tr/firefox/features/
   [http://www.mozilla.com/en-US/firefox/3.0rc2/releasenotes/]: http://www.mozilla.com/en-US/firefox/3.0rc2/releasenotes/
   [http://people.mozilla.com/~beltzner/overview-of-firefox3.swf]: http://people.mozilla.com/~beltzner/overview-of-firefox3.swf
   [http://lifehacker.com/software/screenshot-tour/first-look-at-firefox-30-319968.php]: http://lifehacker.com/software/screenshot-tour/first-look-at-firefox-30-319968.php

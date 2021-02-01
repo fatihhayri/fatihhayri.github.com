@@ -6,7 +6,7 @@ Category: CSS
 tags: [Evrensel-Seçiciler, Id-Seçicisi, optimize, performans, seçici optimizasyonu, Torun-Seçicisi]
 ---
 
-Bu konuyu hiç yazmayı düşünmüyordum, [Writing Efficient CSS for use in the Mozilla UI][] makalesini okuyan kadar. Bu makaleyi okuduğumda bir
+Bu konuyu hiç yazmayı düşünmüyordum, Writing Efficient CSS for use in the Mozilla UI makalesini okuyan kadar. Bu makaleyi okuduğumda bir
 şeyleri yanlış bildiğimi gördüm ve düzeltmek için bu konu hakkında biraz
 araştırma yapmam gerektiğini düşündüm ve bu makale çıktı. Bende yeni çok
 şeyler öğrendim. Aslında makalede 10 senelik bir makale, 10 sene sonra
@@ -173,7 +173,7 @@ yazayım bu büyük buna böyle yazayım diye bir ayrım yapmasıda pek
 mantıklı ve mümkün değildir. Bu nedenle kendi standardımızı en iyiye
 göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
 
--   [https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no][]
+-   developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
 -   [http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/][]
 -   O'Reilly - Even Faster Websites.pdf 14. konu
 -   [http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/][]
@@ -190,8 +190,7 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
 -   http://www.nuvographics.com/articles/efficientcss
 -   css-101.org/descendant-selector/go_fetch_yourself.php
 
-  [Writing Efficient CSS for use in the Mozilla UI]: https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
-    "Writing Efficient CSS for use in the Mozilla UI"
+  Writing Efficient CSS for use in the Mozilla UI
   [(X)HTML Sayfa Yapısı ve CSS Kullanımı]: http://fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
     "(X)HTML Sayfa Yapısı ve CSS Kullanımı"
   [Özellik Seçicileri(Attribute Selectors)]: http://fatihhayrioglu.com/ozellik-secicileriattribute-selectors/

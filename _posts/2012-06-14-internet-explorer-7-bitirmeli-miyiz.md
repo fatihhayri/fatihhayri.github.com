@@ -225,7 +225,7 @@ sitelerden kaldırmayı unutmayın.
   [hasLayout sorunları]: http://fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/
   [Murat Çorlu]: https://twitter.com/#!/muratcorlu
   [querySelector()]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
-  [querySelectorAll()]: https://developer.mozilla.org/en/DOM/element.querySelectorAll
+  [querySelectorAll()]: https://developer.mozilla.org/en-us/docs/Web/API/Document/querySelectorAll
   [tıklayınız.]: http://fatihhayrioglu.com/css3-box-sizing-ozelligi/
   [font-weight]: http://fatihhayrioglu.com/font-ozellikleri/
   [white-space]: http://fatihhayrioglu.com/css-siniflandirma-liste-ozellikleri/

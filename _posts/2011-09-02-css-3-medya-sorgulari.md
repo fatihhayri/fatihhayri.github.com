@@ -358,7 +358,7 @@ min-monochrome, max-monochrome, resolution, min-resolution,
 max-resolution, scan, grid medya özellikleride vardır. Ayrıca Firefox
 mobile için tanımladığı kendine ait medya özellikleride bulunmaktadır.
 Bu medya özellikleri hakkındaki detaylı bilgiye
-https://developer.mozilla.org/en/CSS/media_queries sitesinden
+https://developer.mozilla.org/en-us/docs/Web/CSS/media_queries sitesinden
 erişebilirsiniz.
 
 **Tarayıcı Desteği**
@@ -434,7 +434,7 @@ mi ama olmadı.
   [yazıcıdan çıktı alırken]: http://fatihhayrioglu.com/cssde-cikti-alma-print/
   [Daha önceki makalemde]: http://fatihhayrioglu.com/cssi-web-sayfalarina-eklemek/
   [100]: https://lh5.googleusercontent.com/9yAALxAE9OnXDazyBZKrx8y8o4r5okr3Qw8TJ6av63m5eB_I6Ap-nCYuglYAcrwBuqpgrCx5vaBTcMLjBiPZM-KdAohf98yMjgErENZ_3A75y8x8
-  [https://developer.mozilla.org/en/CSS/media_queries]: https://developer.mozilla.org/en/CSS/media_queries
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/media_queries]: https://developer.mozilla.org/en-us/docs/Web/CSS/media_queries
   [http://protofunc.com/scripts/jquery/mediaqueries/]: http://protofunc.com/scripts/jquery/mediaqueries/
   [http://www.w3.org/TR/css3-mediaqueries/]: http://www.w3.org/TR/css3-mediaqueries/
   [http://www.css3.info/modules/compatibility-table-media-queries/]: http://www.css3.info/modules/compatibility-table-media-queries/

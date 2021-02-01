@@ -144,7 +144,7 @@ görünse de Firefox desteği standartlaşması daha olasıdır.
 -   [http://www.w3schools.com/cssref/css3_pr_resize.asp][]
 -   [http://www.w3.org/TR/css3-ui/][]
 -   [http://www.cssplay.co.uk/menu/resize.html][]
--   [https://developer.mozilla.org/en/CSS/resize][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/resize][]
 -   [http://www.yousaytoo.com/the-css3-resize-property/784883][]
 -   [http://robertnyman.com/css3/][]
 
@@ -154,7 +154,7 @@ görünse de Firefox desteği standartlaşması daha olasıdır.
   [http://www.w3schools.com/cssref/css3_pr_resize.asp]: http://www.w3schools.com/cssref/css3_pr_resize.asp
   [http://www.w3.org/TR/css3-ui/]: http://www.w3.org/TR/css3-ui/
   [http://www.cssplay.co.uk/menu/resize.html]: http://www.cssplay.co.uk/menu/resize.html
-  [https://developer.mozilla.org/en/CSS/resize]: https://developer.mozilla.org/en/CSS/resize
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/resize]: https://developer.mozilla.org/en-us/docs/Web/CSS/resize
   [http://www.yousaytoo.com/the-css3-resize-property/784883]: http://www.yousaytoo.com/the-css3-resize-property/784883
   [http://robertnyman.com/css3/]: http://robertnyman.com/css3/
 

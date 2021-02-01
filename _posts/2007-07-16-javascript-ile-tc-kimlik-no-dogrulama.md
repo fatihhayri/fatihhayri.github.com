@@ -6,7 +6,7 @@ Category: Javascript
 tags: [Haberler, Javascript]
 ---
 
-[Ceviz forumda][] okudum. "TC kimlik numarasının ilk 10 rakamının
+Ceviz forumda okudum. "TC kimlik numarasının ilk 10 rakamının
 toplamının verdiği sonucun 1'ler basamağı 11. sayıya eşitir." bunun için
 bir javascript kodu yazdım. Sizlerede lazım olur diye buraya yazıyorum.
 
@@ -39,5 +39,3 @@ Ben bu kodu blur ile tetikledim siz bunu değiştirebilirsiniz.
 
 <iframe scrolling="no" height="250" frameborder="0" style="width: 100%;border: none; overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/kfdyH?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
 
-
-  [Ceviz forumda]: http://forum.ceviz.net/

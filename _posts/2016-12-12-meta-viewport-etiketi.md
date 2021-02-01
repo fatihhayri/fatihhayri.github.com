@@ -76,4 +76,4 @@ Kalın sağlıcakla.
  - [http://www.quirksmode.org/mobile/metaviewport/](http://www.quirksmode.org/mobile/metaviewport/)
  - [https://developers.google.com/speed/docs/insights/ConfigureViewport?hl=tr](https://developers.google.com/speed/docs/insights/ConfigureViewport?hl=tr)
  - [http://blog.javierusobiaga.com/stop-using-the-viewport-tag-until-you-know-ho](http://blog.javierusobiaga.com/stop-using-the-viewport-tag-until-you-know-ho)
- - [https://developer.mozilla.org/tr/docs/Web/CSS/@viewport](https://developer.mozilla.org/tr/docs/Web/CSS/@viewport)
+ - [https://developer.mozilla.org/en-US/docs/Web/CSS/@viewport](https://developer.mozilla.org/en-US/docs/Web/CSS/@viewport)

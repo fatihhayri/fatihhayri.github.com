@@ -87,7 +87,7 @@ zaman kazandıracak her durumu inceleyip uyguluyoruz.
 ## HTML dokümanında javascript dosyasını nereye eklemeliyiz?
 
 Web sitelerinin en iyi hale getirmek için çeşitli araçlar ile sitemizi
-test ederiz. Bunlardan biri Firefox’ın [YSlow][]eklentisidir. YSlow
+test ederiz. Bunlardan biri Firefox’ın YSlow eklentisidir. YSlow
 eklentisi ile web sitemizi test ettiğimizde javascript dosyalarımızı
 html dokümanının sonuna eklememizi öneren bir başlık ile karşılaşırız,
 burada bu başlığı biraz inceleyeceğiz.
@@ -175,7 +175,6 @@ sitelerimizin daha hızlı açılmasını sağlayacak bir yöntemdir.
 -   [http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/][]
 -   yuiblog.com/blog/2007/04/11/performance-research-part-4/
 
-  [YSlow]: https://addons.mozilla.org/en-us/firefox/addon/yslow/
   [100]: https://lh3.googleusercontent.com/gSZsDGo9nsWt4gD1hgKwiJo2FITV5oh_x706nZ2wKUapQWLl70O6P7NofpZvXVOTxIJKOW2GiPabJKNZVbHCIgcp3CAA9eE7kpdGnNKP0sYqp6EcmNc
   [HTTP/1.1 şartnamesinde]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html#sec8.1.4
   [http://stackoverflow.com/questions/143486/unobtrusive-javascript-script-at-the-top-or-the-bottom-of-the-html-code]: http://stackoverflow.com/questions/143486/unobtrusive-javascript-script-at-the-top-or-the-bottom-of-the-html-code

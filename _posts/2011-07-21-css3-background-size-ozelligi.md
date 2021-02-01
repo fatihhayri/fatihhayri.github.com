@@ -109,8 +109,8 @@ Kalın sağlıcakla
 ## Kaynaklar
 
 -   [http://www.w3.org/TR/2002/WD-css3-background-20020802/][]
--   [https://developer.mozilla.org/en/CSS/background-size][]
--   [https://developer.mozilla.org/en/CSS/Scaling_background_images][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/background-size][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/Scaling_background_images][]
 -   [http://robertnyman.com/css3/background-size/background-size.html][]
 -   [http://dev.opera.com/articles/view/css-text-shadows-and-background-sizing/][]
 -   [http://hacks.mozilla.org/2009/12/css-backgrounds-firefox-36/][]
@@ -129,8 +129,8 @@ Kalın sağlıcakla
   [100]: https://lh6.googleusercontent.com/vPFmtJY6MNPZQFrtimtMV9QRAkfyAQa0EUmCeBZGKEXqWMi-lBwCGcNG7AxW8REH67JGVB55m-oyZtM4uixFH-F5J2KjTvtO2SpQ-qvBq-XR54vsRks
   [http://whereswalden.com/files/mozilla/background-size/more-examples.html]: http://whereswalden.com/files/mozilla/background-size/more-examples.html
   [http://www.w3.org/TR/2002/WD-css3-background-20020802/]: http://www.w3.org/TR/2002/WD-css3-background-20020802/
-  [https://developer.mozilla.org/en/CSS/background-size]: https://developer.mozilla.org/en/CSS/background-size
-  [https://developer.mozilla.org/en/CSS/Scaling_background_images]: https://developer.mozilla.org/en/CSS/Scaling_background_images
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/background-size]: https://developer.mozilla.org/en-us/docs/Web/CSS/background-size
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/Scaling_background_images]: https://developer.mozilla.org/en-us/docs/Web/CSS/Scaling_background_images
   [http://robertnyman.com/css3/background-size/background-size.html]: http://robertnyman.com/css3/background-size/background-size.html
   [http://dev.opera.com/articles/view/css-text-shadows-and-background-sizing/]: http://dev.opera.com/articles/view/css-text-shadows-and-background-sizing/
   [http://hacks.mozilla.org/2009/12/css-backgrounds-firefox-36/]: http://hacks.mozilla.org/2009/12/css-backgrounds-firefox-36/

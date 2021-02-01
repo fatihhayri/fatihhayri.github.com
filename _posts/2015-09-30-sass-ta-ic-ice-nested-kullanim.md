@@ -208,7 +208,7 @@ Kalın sağlıcakla.
 
  - [http://sass-lang.com/guide](http://sass-lang.com/guide)
  - [http://sass-lang.com/documentation/file.INDENTED_SYNTAX.html](http://sass-lang.com/documentation/file.INDENTED_SYNTAX.html)
- - [http://thesassway.com/beginner/the-inception-rule](http://thesassway.com/beginner/the-inception-rule)
+ - thesassway.com/beginner/the-inception-rule
  - [http://leveluptuts.com/tutorials/sass-tutorials/3-nesting-your-sass](http://leveluptuts.com/tutorials/sass-tutorials/3-nesting-your-sass)
  - [http://wibblystuff.blogspot.com.tr/2014/12/a-better-approach-to-nesting-in-sass.html](http://wibblystuff.blogspot.com.tr/2014/12/a-better-approach-to-nesting-in-sass.html)
  - [https://viget.com/extend/organizing-nested-selectors-in-sass](https://viget.com/extend/organizing-nested-selectors-in-sass)

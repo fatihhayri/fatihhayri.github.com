@@ -6,6 +6,4 @@ Category: Haberler, Javascript
 ---
 
 Javascirpt 1.7 versiyonun geliyor. İlk destekleyen web tarayıcısı
-Firefox2.0(Beta) Ayrıntılı bilgi için [tıklayınız.][] (İng.)
-
-  [tıklayınız.]: http://developer.mozilla.org/en/docs/New_in_JavaScript_1.7
+Firefox2.0(Beta) Ayrıntılı bilgi için tıklayınız. (İng.)

@@ -13,7 +13,7 @@ tags: [asp.net 2.0, bitişik kardeş seçiciler, CSS, css ipuçları, css-menü,
     tarayıcıların hafıza kullanımları.
 -   Güzel CSS kodu yazmak. [Bağlantı][3]
 -   En çok kullanılan CSS kod ipuçları.
--   Asp.net 2.0 ile güvenlik metni uygulaması yapmak. [Bağlantı][5]
+-   Asp.net 2.0 ile güvenlik metni uygulaması yapmak.
 -   CSS Menü yapmak için internet üzerinden bir araç. [Bağlantı][6]
 -   İlk harfi özel ve büyük yapmak için bir yöntem.
 -   Bitişik kardeş seçicilerin kullanımına farklı bir örnek.
@@ -24,8 +24,6 @@ tags: [asp.net 2.0, bitişik kardeş seçiciler, CSS, css ipuçları, css-menü,
   [Bağlantı]: http://reference.sitepoint.com/html "HTML referans"
   [3]: http://woork.blogspot.com/2008/03/write-well-structured-css-file-without.html
     "css kodu yaz"
-  [5]: http://www.codeproject.com/KB/custom-controls/CaptchaNET_2.aspx
-    "Captcha"
   [6]: http://www.izzymenu.com/ "izzymenu"
   [9]: http://www.noupe.com/wordpress/mastering-your-wordpress-theme-hacks-and-techniques.html
     "wordpress"

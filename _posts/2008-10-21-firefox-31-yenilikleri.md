@@ -153,7 +153,7 @@ getirilecek.
 -   [http://lifehacker.com/5062744/firefox-31-to-include-smarter-session-restore][]
 -   [http://lifehacker.com/5063202/firefox-31-beta-1-now-available-for-download-first-look][]
 -   http://www.readwriteweb.com/archives/firefox_31_beta_1_geolocation.php
--   [http://blogs.zdnet.com/hardware/?p=2781][]
+-   blogs.zdnet.com/hardware/?p=2781
 -   [http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords][]
 -   http://www.tgdaily.com/html_tmp/content-view-39752-140.html
 -   [http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744][]
@@ -174,6 +174,5 @@ getirilecek.
   [http://lifehacker.com/5049728/firefox-31-to-enable-color-profile-support-by-default]: http://lifehacker.com/5049728/firefox-31-to-enable-color-profile-support-by-default
   [http://lifehacker.com/5062744/firefox-31-to-include-smarter-session-restore]: http://lifehacker.com/5062744/firefox-31-to-include-smarter-session-restore
   [http://lifehacker.com/5063202/firefox-31-beta-1-now-available-for-download-first-look]: http://lifehacker.com/5063202/firefox-31-beta-1-now-available-for-download-first-look
-  [http://blogs.zdnet.com/hardware/?p=2781]: http://blogs.zdnet.com/hardware/?p=2781
   [http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords]: http://ed.agadak.net/2008/07/firefox-31-restricts-matches-keywords
   [http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744]: http://www.informationweek.com/galleries/showImage.jhtml?galleryID=263&articleID=211201744

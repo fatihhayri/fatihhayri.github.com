@@ -26,7 +26,7 @@ tags: [Acid 3 test, ie8, jquery, Web Standartları, web3.0, wordpress 2.5, yuvar
 -   Web standartları açısından Acid testleri bayağı bir önem kazandı.
     Opera yeni çıkaracağı web tarayıcısının Acid3 testinden 100/100
     aldığını duyurdu. Ne diyelim darısı diğerlerinin başına.
--   "Blogtan Para Kazanmak" [Bağlantı][11]
+-   "Blogtan Para Kazanmak"
 -   "Kategorinin Yazıları Eklentisi 2.0" [Bağlantı][12]
 
 
@@ -39,7 +39,5 @@ tags: [Acid 3 test, ie8, jquery, Web Standartları, web3.0, wordpress 2.5, yuvar
     "css özellik listesi"
   [100]: http://Web%203.0%20-%20Semantik%20Web "web 3.0"
   [8]: http://fancy.klade.lv/ "jquery resim göster"
-  [11]: http://www.selcukhoca.com/blogtan-para-kazanmak/#comment-2819
-    "blog"
   [12]: http://www.yakuter.com/kategorinin-yazilari-eklentisi-2/
     "wordpress katagoriler"

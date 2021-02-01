@@ -86,7 +86,7 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
- - [http://thesassway.com/editorial/sass-vs-scss-which-syntax-is-better](http://thesassway.com/editorial/sass-vs-scss-which-syntax-is-better)
+ - thesassway.com/editorial/sass-vs-scss-which-syntax-is-better
  - [http://www.sitepoint.com/whats-difference-sass-scss/](http://www.sitepoint.com/whats-difference-sass-scss/)
  - [http://sass-lang.com/documentation/](http://sass-lang.com/documentation/)
  - [http://stackoverflow.com/questions/5654447/whats-the-difference-between-scss-and-sass](http://stackoverflow.com/questions/5654447/whats-the-difference-between-scss-and-sass)

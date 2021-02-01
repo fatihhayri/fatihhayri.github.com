@@ -62,7 +62,7 @@ Kullanıcı ihtiyacı olan bir özellik. Standartlaşması süper. W3C kullanıc
 
 ## Kaynaklar
 
- - [https://developer.mozilla.org/tr/docs/Web/CSS/position](https://developer.mozilla.org/tr/docs/Web/CSS/position)
+ - [https://developer.mozilla.org/en-US/docs/Web/CSS/position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
  - [http://gedd.ski/post/position-sticky/](http://gedd.ski/post/position-sticky/)
  - [https://www.sitepoint.com/css-position-sticky-introduction-polyfills/](https://www.sitepoint.com/css-position-sticky-introduction-polyfills/)
  - [https://webdesign.tutsplus.com/tutorials/sticky-positioning-with-nothing-but-css--cms-24042](https://webdesign.tutsplus.com/tutorials/sticky-positioning-with-nothing-but-css--cms-24042)

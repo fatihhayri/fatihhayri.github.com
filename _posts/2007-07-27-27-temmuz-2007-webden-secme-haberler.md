@@ -9,13 +9,13 @@ tags: [Ajax, CSS, Haberler, html, Javascript, web2.0, WordPress]
 -   Çeşitli 404 Hata sayfaları. [Link][]
 -   Web tarayıcısının altına yapışık alt bölümler örnek. [Link][1]
 -   Html Epostalarda Tablo kullanımı hakkında güzel bir İngilizce
-    makale. [Link][2]
+    makale.
 -   Google arama motoru için yeni bir etiket çıkarmış. Sayfam bu
     tarihten itibaren hükümsüzdür lütfen indeksleme anlamına gelen bu
     meta etiketi lazım olabilir. [Link][3]
 -   Yahoo Firebug için eklenti yazmış yanlış okumuyoruz Firefox için
     değil FireBug için. YSlow isimli bu eklenti sayfaları optimize
-    etmemize yardım ediyor. [Link][4]
+    etmemize yardım ediyor.
 -   Tasarımcılar için yeni bir sosyal imleme sitesi [Design Float][] RSS
     okuyucunuza ekleyelim.
 -   Bende [CSS’de Tanımlamalar ve Etkinlikleri(Specificity)][] diye bir
@@ -34,11 +34,8 @@ tags: [Ajax, CSS, Haberler, html, Javascript, web2.0, WordPress]
   [Link]: http://www.smashingmagazine.com/2007/07/25/wanted-your-404-error-pages/
     "404 Hata Sayfaları"
   [1]: http://inix.in.funpic.de/stickself.html "Ala yapışık "
-  [2]: http://www.campaignmonitor.com/blog/archives/2007/07/tables_in_html_emails_nesting.html
-    "Eposta Tablo"
   [3]: http://searchengineland.com/070712-093059.php
     "Meta unavailable_after"
-  [4]: https://addons.mozilla.org/en-US/firefox/addon/5369 "YSlow"
   [Design Float]: http://www.designfloat.com/
     "Design Float / Submitted Entries"
   [CSS’de Tanımlamalar ve Etkinlikleri(Specificity)]: http://fatihhayrioglu.com/?p=180

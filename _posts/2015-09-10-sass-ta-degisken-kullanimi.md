@@ -228,6 +228,6 @@ Kalın sağlıcakla.
  - [http://bensmithett.com/stop-using-so-many-sass-variables/](http://bensmithett.com/stop-using-so-many-sass-variables/)
  - [https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss)
  - [http://www.alistapart.com/article/getting-started-with-sass#section4](http://www.alistapart.com/article/getting-started-with-sass#section4)
- - [http://thesassway.com/beginner/variable-naming](http://thesassway.com/beginner/variable-naming)
+ - thesassway.com/beginner/variable-naming
  - [http://sassbreak.com/web-fonts-variable-exists/](http://sassbreak.com/web-fonts-variable-exists/)
  - [http://www.makinggoodsoftware.com/2009/05/04/71-tips-for-naming-variables/](http://www.makinggoodsoftware.com/2009/05/04/71-tips-for-naming-variables/)

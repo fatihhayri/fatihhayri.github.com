@@ -15,7 +15,7 @@ tags: [Ajax, CSS, Firefox, float, Haberler, Javascript, web, WordPress]
 -   CSS ile yapılmış farklı bir hover(fare üzerinde geldiğinde çığlık
     atan yani:D) efekti. [Link][5]
 -   Firefox'un yükselişine engel olamayan Microsoft çare aramaya başladı
-    IE8.0 yolda, konu hakkında bir makale. [Link][6]
+    IE8.0 yolda, konu hakkında bir makale.
 -   10 adet seçme, güzel WordPress teması.
 -   10 adet CSS ile yapılmış yatay menü örneği, linki ve
     değerlendirmesi.
@@ -24,6 +24,5 @@ tags: [Ajax, CSS, Firefox, float, Haberler, Javascript, web, WordPress]
 
 
   [5]: http://veerle.duoh.com/blog/comments/css_hover_effect/ "Link"
-  [6]: http://blogs.zdnet.com/microsoft/?p=416 "Link"
   [9]: http://www.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/
     "Link"

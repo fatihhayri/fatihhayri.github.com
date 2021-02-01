@@ -195,7 +195,7 @@ diğer tarayıcılara geçmem şu an itibari ile imkansız. FireBug o kadar
 büyük bir eklentidir ki bu eklentiye bağlı çıkarılan eklentiler vardır.
 Bu eklentilerden bir kaçı;
 
--   Yahoo'bub çıkardığı [YSlow][]
+-   Yahoo'bub çıkardığı YSlow
 -   Google'un çıkardığı [Page Speed][]
 
 Bu eklentileri kullanarak web sayfalarımızın performansını ölçebiliriz.
@@ -227,7 +227,6 @@ açıkça gösterir ve düzeltmemiz için önerilerde bulunur.
   [8]: /images/fh_firebug_net_sekme_10.gif
   [9]: /images/fh_firebug_net_sekme_11.gif
   [10]: /images/firebug_net8-255x300.gif
-  [YSlow]: https://addons.mozilla.org/en-US/firefox/addon/5369/ "YSlow"
   [Page Speed]: http://code.google.com/speed/page-speed/ "Page Speed"
   [http://getfirebug.com/net.html]: http://getfirebug.com/net.html
   [http://www.softwareishard.com/blog/firebug/introduction-to-firebug-net-panel/]: http://www.softwareishard.com/blog/firebug/introduction-to-firebug-net-panel/

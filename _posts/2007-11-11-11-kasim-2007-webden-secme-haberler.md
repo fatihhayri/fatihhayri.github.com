@@ -19,7 +19,7 @@ tags: [ASP.NET, CSS, Etiket bulutu, Firefox, Haberler, ie, menü, mootools, payp
 -   IE6'daki saydam PNG'lerdeki sorunu çözmek için bir metod
 -   Firefox 3 betası çıktı ilk izlenimler yayınlanmaya başlandı bile.
     [Bağlantı][8]
--   Web'in gelişimini açıklayan güzel bir resim. [Bağlantı][9]
+-   Web'in gelişimini açıklayan güzel bir resim.
 -   IE flash dosyalarını gösterirken etrafına gri çerçeve tıklama sorunu
     çözmüş "Click To Activate". En azından güncelleme yapacak
     kullanıcılar için. [Bağlantı][10]
@@ -36,6 +36,5 @@ tags: [ASP.NET, CSS, Etiket bulutu, Firefox, Haberler, ie, menü, mootools, payp
     "Bağlantı"
   [8]: http://lifehacker.com/software/screenshot-tour/first-look-at-firefox-30-319968.php
     "Bağlantı"
-  [9]: http://blogs.zdnet.com/web2explorer/?p=408 "Bağlantı"
   [10]: http://blogs.msdn.com/ie/archive/2007/11/08/ie-automatic-component-activation-changes-to-ie-activex-update.aspx
     "Bağlantı"

@@ -449,7 +449,7 @@ sağlayacaktır.
 -   webdesigncreare.co.uk/blog/html-css/css3-transforms.html
 -   http://professionalaspnet.com/archive/2011/03/17/IE9-Supports-CSS3-Transforms_2100_.aspx
 -   [http://www.sitepoint.com/a-primer-on-css3-transforms/][]
--   [https://developer.mozilla.org/en/css/-moz-transform][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/transform][]
 -   [http://blog.typekit.com/2011/01/25/case-study-getting-hardboiled-with-css3-2d-transforms/][]
 -   [http://css3.bradshawenterprises.com/transforms/][]
 -   doctype.com/javascript-image-zoom-css3-transforms-calculate-origin-example
@@ -501,7 +501,7 @@ sağlayacaktır.
   [http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/]: http://www.shayhowe.com/tutorial/css3-animated-owl-tutorial/
   [http://www.standardista.com/css3-transforms]: http://www.standardista.com/css3-transforms
   [http://www.sitepoint.com/a-primer-on-css3-transforms/]: http://www.sitepoint.com/a-primer-on-css3-transforms/
-  [https://developer.mozilla.org/en/css/-moz-transform]: https://developer.mozilla.org/en/css/-moz-transform
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/transform]: https://developer.mozilla.org/en-us/docs/Web/CSS/transform
   [http://blog.typekit.com/2011/01/25/case-study-getting-hardboiled-with-css3-2d-transforms/]: http://blog.typekit.com/2011/01/25/case-study-getting-hardboiled-with-css3-2d-transforms/
   [http://css3.bradshawenterprises.com/transforms/]: http://css3.bradshawenterprises.com/transforms/
   [http://designshack.co.uk/articles/css/achieving-multi-step-animations-with-css-transitions/]: http://designshack.co.uk/articles/css/achieving-multi-step-animations-with-css-transitions/

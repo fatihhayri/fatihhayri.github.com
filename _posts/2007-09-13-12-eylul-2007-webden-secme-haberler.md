@@ -7,7 +7,7 @@ tags: [CSS, favicon, google reader, Haberler, Javascript, jquery, microsoft, yui
 ---
 
 -   Google Rader arama ipuçları. [Link][]
--   Mailing kodlarken niçin standartlara uymayılız? [Link][1]
+-   Mailing kodlarken niçin standartlara uymayılız?
 -   Javascript ile yapılmış sağlıklı şifre yazma kontorlü. [Link][2]
 -   Micrsoft Google'u takip etmeye devam ediyor. Windows Live
     Translator. Türkçe olsa yine iyiydi ama yok. Seneye çıkacakmış
@@ -28,8 +28,6 @@ tags: [CSS, favicon, google reader, Haberler, Javascript, jquery, microsoft, yui
 
   [Link]: http://googlesystem.blogspot.com/2007/09/tips-for-google-reader-search.html
     "Google Rader arama ipuçları"
-  [1]: http://www.campaignmonitor.com/blog/archives/2007/09/why_we_need_web_standards_supp_1.html
-    "mailing"
   [2]: http://www.geekwisdom.com/dyn/passwdmeter
     "javascript ile sağlıklı şifre"
   [4]: http://www.smashingmagazine.com/2007/09/10/20-alternate-ways-to-focus-on-users/#comment-88795

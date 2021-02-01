@@ -53,7 +53,7 @@ Yukarıda saydığım ve saymayı unuttuğum görevler ile uğraşmak durmunda k
  Genellikle es geçilen bu kısım aslında web site/uygulamasının en önemli yerlerinden biridir. Bizim için hazır iskelet yapısı oluşturmaya yarayan araçlar;
      - [Yeoman](http://yeoman.io/) 
      - [Loom](https://www.npmjs.com/package/loom)
-     - [Codekit](http://incident57.com/codekit/)
+     - Codekit
  - **İhtiyaçların Yönetimi** (Dependency management)
 Arayüz geliştiricileri uygulama çatıları, eklentiler ve uygulama geliştirme araçları kullanarak projelerini geliştirirler. Açık kaynak bu araçları kullanmak bizlere büyük hız ve avantaj sağlamaktadır. Ancak her güzelin bir kusuru olduğu gibi, bu kod yapılarınında güncel tutma ve verimli kullanma konusunda sıkıntıları vardır. İşte tam bu noktada aşağıdaki araçlar bizi bu dertten kurtarıyor.
      - [Bower](http://bower.io/) Bower hakkında yazımı [okuyun](/arayuz-gelistiriciler-icin-paket-yonetimi-bower/)

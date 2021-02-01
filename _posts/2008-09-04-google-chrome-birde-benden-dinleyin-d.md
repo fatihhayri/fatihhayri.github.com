@@ -111,7 +111,7 @@ Genel kaynak
 -   [http://mashable.com/2008/09/03/awesome-google-chrome/][]
 -   [http://blog.wired.com/business/2008/09/chrome-eliminat.html][]
 -   http://www.popularmechanics.com/technology/industry/4280717.html
--   [http://blogs.zdnet.com/hardware/?p=2481][]
+-   blogs.zdnet.com/hardware/?p=2481
 -   [http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html][]
 -   [http://lifehacker.com/5044484/google-chrome-first-look][]
 -   http://www.readwriteweb.com/archives/does_google_have_rights_to_all.php
@@ -155,7 +155,6 @@ javascript motoru 
   [http://www.mattcutts.com/blog/google-chrome-communication/]: http://www.mattcutts.com/blog/google-chrome-communication/
   [http://mashable.com/2008/09/03/awesome-google-chrome/]: http://mashable.com/2008/09/03/awesome-google-chrome/
   [http://blog.wired.com/business/2008/09/chrome-eliminat.html]: http://blog.wired.com/business/2008/09/chrome-eliminat.html
-  [http://blogs.zdnet.com/hardware/?p=2481]: http://blogs.zdnet.com/hardware/?p=2481
   [http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html]: http://googlesystem.blogspot.com/2008/09/google-chromes-about-pages.html
   [http://lifehacker.com/5044484/google-chrome-first-look]: http://lifehacker.com/5044484/google-chrome-first-look
   [http://mashable.com/2008/09/02/chrome-windows/]: http://mashable.com/2008/09/02/chrome-windows/

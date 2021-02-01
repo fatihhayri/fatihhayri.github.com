@@ -896,10 +896,10 @@ Firefox için -moz ön eki kullanılması gerekiyor.
 -   http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/
 -   [http://perishablepress.com/awesome-new-css3-selectors/][] (ilginç)
 -   [https://developer.mozilla.org/en/firefox_3.5_for_developers][]
--   [https://developer.mozilla.org/en/CSS/%3Achecked][]
--   [https://developer.mozilla.org/en/CSS/:nth-child][]
--   [https://developer.mozilla.org/en/CSS/:empty][]
--   [https://developer.mozilla.org/en/CSS/%3Adisabled][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/%3Achecked][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/:nth-child][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/:empty][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/%3Adisabled][]
 -   [http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx][]
 -   [http://eriwen.com/css/css-indirect-adjacent-combinator/][]
 -   [http://msdn.microsoft.com/en-us/library/aa358824%28v=vs.85%29.aspx][]
@@ -928,10 +928,10 @@ Firefox için -moz ön eki kullanılması gerekiyor.
   [http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/]: http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/
   [http://perishablepress.com/awesome-new-css3-selectors/]: http://perishablepress.com/awesome-new-css3-selectors/
   [https://developer.mozilla.org/en/firefox_3.5_for_developers]: https://developer.mozilla.org/en/firefox_3.5_for_developers
-  [https://developer.mozilla.org/en/CSS/%3Achecked]: https://developer.mozilla.org/en/CSS/%3Achecked
-  [https://developer.mozilla.org/en/CSS/:nth-child]: https://developer.mozilla.org/en/CSS/:nth-child
-  [https://developer.mozilla.org/en/CSS/:empty]: https://developer.mozilla.org/en/CSS/:empty
-  [https://developer.mozilla.org/en/CSS/%3Adisabled]: https://developer.mozilla.org/en/CSS/%3Adisabled
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/%3Achecked]: https://developer.mozilla.org/en-us/docs/Web/CSS/%3Achecked
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/:nth-child]: https://developer.mozilla.org/en-us/docs/Web/CSS/:nth-child
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/:empty]: https://developer.mozilla.org/en-us/docs/Web/CSS/:empty
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/%3Adisabled]: https://developer.mozilla.org/en-us/docs/Web/CSS/%3Adisabled
   [http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx]: http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx
   [http://eriwen.com/css/css-indirect-adjacent-combinator/]: http://eriwen.com/css/css-indirect-adjacent-combinator/
   [http://msdn.microsoft.com/en-us/library/aa358824%28v=vs.85%29.aspx]: http://msdn.microsoft.com/en-us/library/aa358824%28v=vs.85%29.aspx

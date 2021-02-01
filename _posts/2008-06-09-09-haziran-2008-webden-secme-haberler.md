@@ -6,7 +6,7 @@ Category: Haberler
 tags: [Ajax, akordiyon, Google-Search, jquery, mailing, mootools, performans, Script injection, tipografi, web2.0]
 ---
 
--   Html mailing nasıl kodlanır. [Bağlantı][]
+-   Html mailing nasıl kodlanır.
 -   CSS ve tipografi ile 10 uygulama. [Bağlantı][1]
 -   Sitelerde bir çok yerde javascript kullanıyoruz. Buda beraberinde
     bazı yavaşlamalar getiriyor. Bunu en aza indirebilmek için güzel bir
@@ -31,8 +31,6 @@ tags: [Ajax, akordiyon, Google-Search, jquery, mailing, mootools, performans, Sc
     [Bağlantı][13]
 
 
-  [Bağlantı]: http://www.sitepoint.com/article/code-html-email-newsletters
-    "html mailing"
   [1]: http://www.3point7designs.com/blog/2008/06/02/10-examples-of-beautiful-css-typography-and-how-they-did-it/
     "css ve tipografi"
   [4]: http://aspalliance.com/1648_Understanding_Script_Injection_Attacks.all

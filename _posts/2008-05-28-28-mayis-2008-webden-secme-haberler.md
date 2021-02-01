@@ -9,7 +9,7 @@ tags: [ASP.NET, css3, Dreamweaver, Google javascript kütüphanesi api, iframe g
 -   "Tasarımcılar için SEO Rehberi" - siberkultur.com [Bağlantı][]
 -   jQuery ile animasyonlu açılıp kapanan katmanlar yapmak.
     [Bağlantı][1]
--   iFrame gibi davranan katmanlar oluşturmak. [Bağlantı][2]
+-   iFrame gibi davranan katmanlar oluşturmak.
 -   Design Shack CSS 3 anlatmaya devam ediyor. Bu makaledeki konu
     ardalanalar(background) ve yeni özellikleri. [Bağlantı][3]
 -   Türk Blog Yazarları ve Acı Gerçekler - listeniz.net 
@@ -28,8 +28,6 @@ tags: [ASP.NET, css3, Dreamweaver, Google javascript kütüphanesi api, iframe g
     "SEO"
   [1]: http://www.dynamicdrive.com/dynamicindex17/animatedcollapse.htm
     "jquery ile animasyonlu"
-  [2]: http://www.codeproject.com/KB/aspnet/uframe.aspx
-    "iframe gibi davranan katman"
   [3]: http://www.designshack.co.uk/news/introduction-to-css3-part-6-backgrounds
     "css3 ardalanlar"
   [5]: http://code.google.com/apis/ajaxlibs/ "javascript kütüphaneleri"

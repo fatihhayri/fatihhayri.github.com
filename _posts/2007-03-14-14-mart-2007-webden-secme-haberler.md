@@ -16,7 +16,7 @@ tags: [Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, 
     linkleri. [Link][5]
 -   Javascript ile yapılmış güzel örnekler(LightBox, Animasyonlu resim
     menü, Form Kontrolü, oval kenarlı kutular ve tablo filtreleme).
--   42 tane hazır aksak(faux) kolonlu CSS Planı örneği. [Link][7]
+-   42 tane hazır aksak(faux) kolonlu CSS Planı örneği.
 -   Margin kullandığımız bazı durumlarda web tarayıcıları arasındaki
     farklardan yakınırız. Bu hatayı gidermek için yazılmış güzel bir
     İngilizce makale. [Link][8]
@@ -30,7 +30,6 @@ tags: [Aksak Kolonlar, CSS, Firefox, Haberler, Javascript, Margin, Opera, renk, 
   [Link]: http://www.netmag.co.uk/zine/home/the-top-50-firefox-extensions
   [3]: http://www.lalit.org/lab/fontdetect.php "Link"
   [5]: http://www.drweb.de/weblog/weblog/?p=791 "Link"
-  [7]: http://www.code-sucks.com/css%20layouts/faux-css-layouts/ "Link"
   [8]: http://www.search-this.com/2007/03/12/no-margin-for-error/ "Link"
   [10]: http://www.devlounge.net/extras/feed-styler "Link"
   [12]: http://www.hasanyalcin.com/?p=227 "Link"

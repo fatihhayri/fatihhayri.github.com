@@ -27,7 +27,7 @@ tags: [Apple.com, Freelance, Google Chrome, WordPress]
     bir yazı yazmış. [Bağlantı][8]
 -   Safari'nin metinleri kötü taramasını engellemek. Kırık
 -   Apple.com'dan alacağımız 5 CSS dersi. Kırık
--   Sayfa ardalan resminin ilk yüklenmesini istersek. [Bağlantı][11]
+-   Sayfa ardalan resminin ilk yüklenmesini istersek.
 -   İnternet Explorer 8 ile birlikte FireBug alternatifi Web Developer
     Tool'unu geliştirmiş. [Bağlantı][12]
 -   jQuery ile sayfa içinde animasyonlu kaydırma yapmayı anlatan güzel
@@ -44,7 +44,5 @@ tags: [Apple.com, Freelance, Google Chrome, WordPress]
   [7]: http://mashable.com/2008/09/03/wordpress-stats-tracking-tools/
     "WordPress istatistikleri"
   [8]: http://ejohn.org/blog/javascript-performance-rundown/
-  [11]: http://help-developer.com/index.php/2008/09/loading-the-background-image-first/#belowad
-    "ardalan resmi"
   [12]: http://blogs.msdn.com/ie/archive/2008/09/03/developer-tools-in-internet-explorer-8-beta-2.aspx
     "ie web developer tools"

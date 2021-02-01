@@ -45,6 +45,6 @@ Kalın sağlıcakla
 
 ## Kaynaklar
 
- - [https://developer.mozilla.org/tr/docs/Web/CSS/text-transform](https://developer.mozilla.org/tr/docs/Web/CSS/text-transform)
+ - [https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
  - [https://css-tricks.com/almanac/properties/t/text-transform/](https://css-tricks.com/almanac/properties/t/text-transform/)
  - [http://stackoverflow.com/a/22606493/296373](http://stackoverflow.com/a/22606493/296373)

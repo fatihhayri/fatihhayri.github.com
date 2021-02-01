@@ -427,7 +427,7 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
 -   [http://www.vanseodesign.com/css/css-navigation-buttons/][]
 -   http://articles.techrepublic.com.com/5100-10878_11-5323375.html
 -   [http://www.thesitewizard.com/css/3d-buttons.shtml][]
--   [http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm][]
+-   builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm
 -   [http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/][]
 -   [http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/][]
 -   [http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx][]
@@ -468,7 +468,6 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
   [http://www.tripwiremagazine.com/design/css-techniques/24-essential-submit-button-enhancements.html]: http://www.tripwiremagazine.com/design/css-techniques/24-essential-submit-button-enhancements.html
   [http://www.vanseodesign.com/css/css-navigation-buttons/]: http://www.vanseodesign.com/css/css-navigation-buttons/
   [http://www.thesitewizard.com/css/3d-buttons.shtml]: http://www.thesitewizard.com/css/3d-buttons.shtml
-  [http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm]: http://www.builderau.com.au/program/css/soa/Designing-3D-buttons-with-pure-CSS/0,339028392,339131100,00.htm
   [http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/]: http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/
   [http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/]: http://www.dynamicdrive.com/style/csslibrary/item/vista_aero_buttons_menu/
   [http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx]: http://www.cdsnettr.com/post/2008/09/Top-10-CSS-Button-Tutorial.aspx

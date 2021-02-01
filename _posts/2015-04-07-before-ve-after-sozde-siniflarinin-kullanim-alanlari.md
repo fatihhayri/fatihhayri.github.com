@@ -131,7 +131,7 @@ Kalın sağlıcakla.
  - [http://www.quirksmode.org/css/beforeafter_content.html](http://www.quirksmode.org/css/beforeafter_content.html)
  - [https://css-tricks.com/pseudo-element-roundup/](https://css-tricks.com/pseudo-element-roundup/)
  - [http://coding.smashingmagazine.com/2011/07/13/learning-to-use-the-before-and-after-pseudo-elements-in-css/](http://coding.smashingmagazine.com/2011/07/13/learning-to-use-the-before-and-after-pseudo-elements-in-css/)
- - [https://developer.mozilla.org/en/CSS/%3A%3Abefore](https://developer.mozilla.org/en/CSS/::before)
+ - [https://developer.mozilla.org/en-us/docs/Web/CSS/::before](https://developer.mozilla.org/en-us/docs/Web/CSS/::before)
  - [http://stackoverflow.com/questions/4181884/after-and-before-css-pseudo-elements-hack-for-ie-7](http://stackoverflow.com/questions/4181884/after-and-before-css-pseudo-elements-hack-for-ie-7)
  - [http://reference.sitepoint.com/css/pseudoelement-before](http://reference.sitepoint.com/css/pseudoelement-before)
  - [http://reference.sitepoint.com/css/pseudoelement-after](http://reference.sitepoint.com/css/pseudoelement-after)

@@ -7,7 +7,6 @@ tags: [GridView, jquery, vs.net]
 ---
 
 -   Asp.net performansını arttıracak ve esneklik sağlayacak 10 öneri.
-    [Bağlantı][]
 -   VS.NET 2008 yenilikleri hakkında geniş kapsamlı bir makale.
 -   Filtrelenebilir GridView görünümünü CSS ile düzenlemek.
     [Bağlantı][2]
@@ -36,8 +35,6 @@ tags: [GridView, jquery, vs.net]
 -   "web tasarım da minimalizm" çok güzel Türkçe bir kaynak.
 
 
-  [Bağlantı]: http://www.codeproject.com/KB/aspnet/10ASPNetPerformance.aspx
-    "asp.net performans arttırımı"
   [2]: http://damianpedwards.spaces.live.com/blog/cns%21A079DE667E1958B3%21562.entry
     "GridView"
   [3]: http://www.blindtextgenerator.com/ "yapay metin"

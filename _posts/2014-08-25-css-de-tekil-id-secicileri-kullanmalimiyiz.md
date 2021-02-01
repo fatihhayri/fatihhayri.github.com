@@ -10,7 +10,7 @@ Tartışmayı [@muratcorlu][1] açtı. :D Daha doğrusu bir makale üzerinden bu
 
 Biraz düşündükten sonra [google dokümanların][3] bu konuda biçilmiş kaftan olduğunu düşündüm. Sonra konu atıl kaldı ta ki şimdiye kadar. Bu gün bu konuyu görünce bunu bir yazıya dökmeliyim dedim ve karşınızda yazı.
 
-Aşağıda toparladığım kaynakların çoğu id’ye karşı ben Murat Çorlu ile tartışmaya başladığımda tekil seçicilere tamamen karşı değildim. Ancak Steve Souders’ın CSS Test sayfasındaki [tekil seçicileri][4] ile sınıf seçicileri arasındaki ufak farkı görünce fikrim değişti. Tabi bu testleri yeni nesil tarayıcılar yaptığımızda arada az fark görünürken ie8 gibi tarayıcılarda aradaki büyük fark ortaya çıkmasıda ayrı bir konu. 
+Aşağıda toparladığım kaynakların çoğu id’ye karşı ben Murat Çorlu ile tartışmaya başladığımda tekil seçicilere tamamen karşı değildim. Ancak Steve Souders’ın CSS Test sayfasındaki tekil seçicileri ile sınıf seçicileri arasındaki ufak farkı görünce fikrim değişti. Tabi bu testleri yeni nesil tarayıcılar yaptığımızda arada az fark görünürken ie8 gibi tarayıcılarda aradaki büyük fark ortaya çıkmasıda ayrı bir konu. 
 
 Aşağıda ben burada tartışılan konuları başlıklar altında toplayıp özetini sizlere sunacağım. 
 
@@ -78,7 +78,7 @@ Kalın sağlıcakla.
  - [http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/][14]
  - [http://css-tricks.com/efficiently-rendering-css/][15] 
  - [http://www.vanseodesign.com/css/css-selector-performance/][16]
- - [https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no][17]
+ - developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
  - [https://developers.google.com/speed/docs/best-practices/rendering?hl=es-ES#UseEfficientCSSSelectors][18]
  - [http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html][19]
  - [http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/][20]
@@ -87,7 +87,6 @@ Kalın sağlıcakla.
   [1]: https://twitter.com/muratcorlu
   [2]: https://twitter.com/ademilter
   [3]: https://docs.google.com/document/d/1AsRKkOUiyyqG9CnXGyz7f9eQUMcAT3oh8ZeWtBZwQ_Y/edit?usp=sharing
-  [4]: http://stevesouders.com/efws/css-selectors/csscreate.php?n=1000&sel=#id&body=background:%20#CFD&ne=1000
   [5]: stevesouders.com/efws/css-selectors/csscreate
   [6]: https://fatihhayrioglu.com/cssin-yapisi/
   [7]: http://csswizardry.com/2011/09/writing-efficient-css-selectors/
@@ -98,7 +97,6 @@ Kalın sağlıcakla.
   [14]: http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/
   [15]: http://css-tricks.com/efficiently-rendering-css/
   [16]: http://www.vanseodesign.com/css/css-selector-performance/
-  [17]: https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
   [18]: https://developers.google.com/speed/docs/best-practices/rendering?hl=es-ES#UseEfficientCSSSelectors
   [19]: http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html
   [20]: http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/

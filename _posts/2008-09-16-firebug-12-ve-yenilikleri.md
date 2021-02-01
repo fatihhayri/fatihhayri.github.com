@@ -109,7 +109,7 @@ Bu arada FireBug 1.3 çalışmalarına başlanmış bile.
 -   [http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt][]
 -   addons.mozilla.org/en-US/firefox/addon/1843
 -   [http://ajaxian.com/archives/firebug-12-beta-for-firefox-3-rc-1][]
--   [http://blog.mozilla.com/about_mozilla/2008/08/25/firebug-12-released/][]
+-   blog.mozilla.com/about_mozilla/2008/08/25/firebug-12-released/
 -   ajaxonomy.com/2008/javascript/firebug-12-released
 -   [http://ajaxian.com/archives/firebug-12-the-final-release-is-out-there][]
 -   [http://ostatic.com/171732-blog/firebug-group-releases-1-2][]
@@ -130,6 +130,5 @@ Bu arada FireBug 1.3 çalışmalarına başlanmış bile.
   [http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt]: http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt
     "http://code.google.com/p/fbug/source/browse/branches/firebug1.2/docs/ReleaseNotes_1.2.txt"
   [http://ajaxian.com/archives/firebug-12-beta-for-firefox-3-rc-1]: http://ajaxian.com/archives/firebug-12-beta-for-firefox-3-rc-1
-  [http://blog.mozilla.com/about_mozilla/2008/08/25/firebug-12-released/]: http://blog.mozilla.com/about_mozilla/2008/08/25/firebug-12-released/
   [http://ajaxian.com/archives/firebug-12-the-final-release-is-out-there]: http://ajaxian.com/archives/firebug-12-the-final-release-is-out-there
   [http://ostatic.com/171732-blog/firebug-group-releases-1-2]: http://ostatic.com/171732-blog/firebug-group-releases-1-2

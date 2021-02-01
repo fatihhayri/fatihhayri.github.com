@@ -472,7 +472,7 @@ Kalın sağlıcakla
 ## Kaynaklar
 
 -   [http://www.w3.org/TR/css3-images/#gradients][]
--   [https://developer.mozilla.org/en/Using_gradients][] (güzel)
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/CSS_Images/Using_CSS_gradients][] (güzel)
 -   [http://developer.apple.com/library/safari/#documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Gradients/Gradients.html][]
 -   [http://dev.opera.com/articles/view/css3-linear-gradients/][]
 -   [http://www.red-team-design.com/css-gradients-quick-tutorial][]
@@ -494,7 +494,7 @@ Kalın sağlıcakla
 -   [http://davidwalsh.name/css-gradients][]
 -   [http://www.slideshare.net/LeaVerou/mastering-css3-gradients][]
 -   css-class.com/test/css/3/gradients/repeating-linear-gradients-stops.htm
--   [https://developer.mozilla.org/en/CSS/repeating-linear-gradient][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/repeating-linear-gradient][]
 -   [http://24ways.org/2010/everything-you-wanted-to-know-about-gradients][]
 -   [http://lea.verou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/][]
 -   [http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGradients][]
@@ -517,7 +517,7 @@ Kalın sağlıcakla
   [http://www.westciv.com/tools/gradients/]: http://www.westciv.com/tools/gradients/
   [http://www.css3maker.com/css-gradient.html]: http://www.css3maker.com/css-gradient.html
   [http://www.w3.org/TR/css3-images/#gradients]: http://www.w3.org/TR/css3-images/#gradients
-  [https://developer.mozilla.org/en/Using_gradients]: https://developer.mozilla.org/en/Using_gradients
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/CSS_Images/Using_CSS_gradients]: https://developer.mozilla.org/en-us/docs/Web/CSS/CSS_Images/Using_CSS_gradients
   [http://developer.apple.com/library/safari/#documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Gradients/Gradients.html]: http://developer.apple.com/library/safari/#documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Gradients/Gradients.html
   [http://www.red-team-design.com/css-gradients-quick-tutorial]: http://www.red-team-design.com/css-gradients-quick-tutorial
   [http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/]: http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/
@@ -533,7 +533,7 @@ Kalın sağlıcakla
   [http://www.display-inline.fr/projects/css-gradient/]: http://www.display-inline.fr/projects/css-gradient/
   [http://davidwalsh.name/css-gradients]: http://davidwalsh.name/css-gradients
   [http://www.slideshare.net/LeaVerou/mastering-css3-gradients]: http://www.slideshare.net/LeaVerou/mastering-css3-gradients
-  [https://developer.mozilla.org/en/CSS/repeating-linear-gradient]: https://developer.mozilla.org/en/CSS/repeating-linear-gradient
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/repeating-linear-gradient]: https://developer.mozilla.org/en-us/docs/Web/CSS/repeating-linear-gradient
   [http://24ways.org/2010/everything-you-wanted-to-know-about-gradients]: http://24ways.org/2010/everything-you-wanted-to-know-about-gradients
   [http://lea.verou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/]: http://lea.verou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/
   [http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGradients]: http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGradients

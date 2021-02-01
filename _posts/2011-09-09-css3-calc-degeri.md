@@ -80,7 +80,7 @@ p {
 -   [http://webdesignernotebook.com/css/the-wonderful-calc-function/][]
 -   [http://hacks.mozilla.org/2010/06/css3-calc/][]
 -   [http://msdn.microsoft.com/en-us/library/ms537660(v=vs.85).aspx][] (ie9 destekliyor)
--   [https://developer.mozilla.org/en/CSS/-moz-calc][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/-moz-calc][]
 -   [http://caniuse.com/calc][] (destek listesi)
 -   [http://mynthon.net/howto/-/webdev/css3-testsuite-calc-property-for-calculating-size.txt][] (örnek)
 -   bloqk.com/makale/css_calc_kullanimi.html
@@ -90,7 +90,7 @@ p {
   [http://webdesignernotebook.com/css/the-wonderful-calc-function/]: http://webdesignernotebook.com/css/the-wonderful-calc-function/
   [http://hacks.mozilla.org/2010/06/css3-calc/]: http://hacks.mozilla.org/2010/06/css3-calc/
   [http://msdn.microsoft.com/en-us/library/ms537660(v=vs.85).aspx]: http://msdn.microsoft.com/en-us/library/ms537660(v=vs.85).aspx
-  [https://developer.mozilla.org/en/CSS/-moz-calc]: https://developer.mozilla.org/en/CSS/-moz-calc
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/-moz-calc]: https://developer.mozilla.org/en-us/docs/Web/CSS/-moz-calc
   [http://caniuse.com/calc]: http://caniuse.com/calc
   [http://mynthon.net/howto/-/webdev/css3-testsuite-calc-property-for-calculating-size.txt]: http://mynthon.net/howto/-/webdev/css3-testsuite-calc-property-for-calculating-size.txt
   [http://www.thecssninja.com/demo/css_calc/]: http://www.thecssninja.com/demo/css_calc/

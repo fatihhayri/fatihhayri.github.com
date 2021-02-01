@@ -76,7 +76,7 @@ denemedim bir bakın isterseniz.
 -   http://www.aybim.com.tr/progs/acsstxt17.html
 -   [http://www.mehmetduran.com/detay.aspx?detay=19][]
 -   kodaman.org/yazi/sizi-css3-ile-tanistiracak-5
--   [http://www.ahmetcelik.org/?p=220][]
+-   ahmetcelik.org/?p=220
 -   [http://mfyz.com/?/dokuman/82/css-ve-transparanlik/][]
 -   http://scriptiz.org/?p=1067
 
@@ -89,5 +89,4 @@ denemedim bir bakın isterseniz.
   [http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/]: http://perishablepress.com/press/2009/01/27/cross-browser-transparency-via-css/
   [http://www.codeguru.com/forum/showthread.php?threadid=458411]: http://www.codeguru.com/forum/showthread.php?threadid=458411
   [http://www.mehmetduran.com/detay.aspx?detay=19]: http://www.mehmetduran.com/detay.aspx?detay=19
-  [http://www.ahmetcelik.org/?p=220]: http://www.ahmetcelik.org/?p=220
   [http://mfyz.com/?/dokuman/82/css-ve-transparanlik/]: http://mfyz.com/?/dokuman/82/css-ve-transparanlik/

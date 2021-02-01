@@ -203,8 +203,8 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.
 -   [http://www.w3schools.com/cssref/css3_pr_background-clip.asp][]
 -   [http://www.standardista.com/css3/css3-background-properties/][]
 -   http://css-tricks.com/7423-transparent-borders-with-background-clip
--   [https://developer.mozilla.org/en/CSS/background-clip][]
--   [https://developer.mozilla.org/en/CSS/background-origin][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/background-clip][]
+-   [https://developer.mozilla.org/en-us/docs/Web/CSS/background-origin][]
 -   https://dev.opera.com/articles/css3-border-background-boxshadow/
 -   [http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/][]
 -   [http://www.css3.info/webkit-introduces-background-cliptext/][]
@@ -223,8 +223,8 @@ Chrome ve Safari desteklediği için pek kullanışlı değil.
   [http://www.quirksmode.org/css/background.html]: http://www.quirksmode.org/css/background.html
   [http://www.w3schools.com/cssref/css3_pr_background-clip.asp]: http://www.w3schools.com/cssref/css3_pr_background-clip.asp
   [http://www.standardista.com/css3/css3-background-properties/]: http://www.standardista.com/css3/css3-background-properties/
-  [https://developer.mozilla.org/en/CSS/background-clip]: https://developer.mozilla.org/en/CSS/background-clip
-  [https://developer.mozilla.org/en/CSS/background-origin]: https://developer.mozilla.org/en/CSS/background-origin
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/background-clip]: https://developer.mozilla.org/en-us/docs/Web/CSS/background-clip
+  [https://developer.mozilla.org/en-us/docs/Web/CSS/background-origin]: https://developer.mozilla.org/en-us/docs/Web/CSS/background-origin
   [http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/]: http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/
   [http://www.css3.info/webkit-introduces-background-cliptext/]: http://www.css3.info/webkit-introduces-background-cliptext/
   [http://www.webkit.org/blog/164/background-clip-text/]: http://www.webkit.org/blog/164/background-clip-text/

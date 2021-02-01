@@ -402,7 +402,7 @@ ul{margin:0; padding:0; list-style:none;}
 ## Kaynaklar
 
 -   [http://www.webdesignerdepot.com/2009/05/10-best-css-practices-to-improve-your-code/][]
--   [https://developer.mozilla.org/en/Underscores_in_class_and_ID_Names][]
+-   [https://developer.mozilla.org/en-us/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors][]
     (isimlendirme)
 -   [http://davidwalsh.name/format-css-files][] (güzel örnek)
 -   [http://help.adobe.com/en_US/Dreamweaver/10.0_Using/WS6A10E93F-6587-4e1b-956C-03CBD7F678BBa.html][]
@@ -439,8 +439,8 @@ ul{margin:0; padding:0; list-style:none;}
     "hiza_cizgileri"
   [http://www.webdesignerdepot.com/2009/05/10-best-css-practices-to-improve-your-code/]: http://www.webdesignerdepot.com/2009/05/10-best-css-practices-to-improve-your-code/
     "http://www.webdesignerdepot.com/2009/05/10-best-css-practices-to-improve-your-code/"
-  [https://developer.mozilla.org/en/Underscores_in_class_and_ID_Names]: https://developer.mozilla.org/en/Underscores_in_class_and_ID_Names
-    "https://developer.mozilla.org/en/Underscores_in_class_and_ID_Names"
+  [https://developer.mozilla.org/en-us/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors]: https://developer.mozilla.org/en-us/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors
+    "https://developer.mozilla.org/en-us/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors"
   [http://davidwalsh.name/format-css-files]: http://davidwalsh.name/format-css-files
     "http://davidwalsh.name/format-css-files"
   [http://help.adobe.com/en_US/Dreamweaver/10.0_Using/WS6A10E93F-6587-4e1b-956C-03CBD7F678BBa.html]: http://help.adobe.com/en_US/Dreamweaver/10.0_Using/WS6A10E93F-6587-4e1b-956C-03CBD7F678BBa.html

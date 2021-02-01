@@ -69,7 +69,7 @@ Kalın sağlıcakla.
  - [https://tympanus.net/codrops/css_reference/object-fit/](https://tympanus.net/codrops/css_reference/object-fit/)
  - helloanselm.com/2013/fix-image-resizing-with-object-fit
  - [https://caniuse.com/#search=object-fit](https://caniuse.com/#search=object-fit)
- - [https://developer.mozilla.org/tr/docs/Web/CSS/object-fit](https://developer.mozilla.org/tr/docs/Web/CSS/object-fit)
+ - [https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
  - [https://codepen.io/dudleystorey/pen/myPZwN](https://codepen.io/dudleystorey/pen/myPZwN)
  - [https://codepen.io/jensimmons/pen/ZWRzjQ?limit=all&page=2&q=object-fit](https://codepen.io/jensimmons/pen/ZWRzjQ?limit=all&page=2&q=object-fit)
  - [https://codepen.io/ntoye/pen/kXKaPE](https://codepen.io/ntoye/pen/kXKaPE)
