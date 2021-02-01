@@ -13,23 +13,18 @@ tags: [arama motoru, ASP.NET, css3.0, google, google reader, google-web-mater-to
 -   CSS3 ile birlikte sayfa planlamayı kolaylaştıran araçlar geliyor.
     Sayfayı ızgara(grid) gibi bölüm planlama işlemini yapabilecekmişiz.
     [Link][2]
--   CSS ile Vista görünümlü menü yapmak. [Link][3]
+-   CSS ile Vista görünümlü menü yapmak.
 -   Google WebMaster Tool aracını geliştirmiş. [Link][4]
 -   eburhan "JavaScript ve Css ile hazırlanmış kod renklendiricileri"
     adlı güzel bir makale yazmış. http://www.eburhan.com/javascript-ve-css-ile-hazirlanmis-kod-renklendiricileri/
 -   Google 10 yaşına girmiş. 10 senede en tepeye çıkmak nasıl duygudur
     acaba.
 -   Google Reader'ın çehresini değiştirmek isteyenler için bir çözüm.
-    [Link][6]
 
 
   [1]: http://searchengineland.com/070912-095906.php
     "arama motoruna uygun PDF"
   [2]: http://www.css3.info/more-layout-options-with-grid-positioning/
     "CSS3 ve ızgara"
-  [3]: http://blog.itookia.com/post/How-to-create-VISTA-style-toolbar-with-CSS.aspx
-    "vista görünümlü menü"
   [4]: http://googlesystem.blogspot.com/2007/09/number-of-igoogle-google-reader.html
     "Google WebMaster Tool"
-  [6]: http://www.hicksdesign.co.uk/journal/google-reader-theme-12
-    "Google Reader"

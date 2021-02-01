@@ -16,7 +16,6 @@ tags: [CSS, favicon, google reader, Haberler, Javascript, jquery, microsoft, yui
 -   SmashMagazine'den Kullanıcı odaklı program yazmanın 20 yolunu
     anlatan güzel bir makale. [Link][4]
 -   YUI javascript kütüphanesi ile yapılmış bir yükleme betiği.
-    [Link][5]
 -   Mootools ile yapılmış harika bir resim galerisi. [Link][6]
 -   CSS ve javascript ile input alanlarını güzelleştirme. [Link][7]
 -   Ünlü javascript kütüphanelerinden jQuery'nin 1.2 sürümü çıkmış.
@@ -35,8 +34,6 @@ tags: [CSS, favicon, google reader, Haberler, Javascript, jquery, microsoft, yui
     "javascript ile sağlıklı şifre"
   [4]: http://www.smashingmagazine.com/2007/09/10/20-alternate-ways-to-focus-on-users/#comment-88795
     "Kullanıcı odaklı kodlama"
-  [5]: http://thecodecentral.com/2007/09/04/asynchronous-file-upload-yuis-approach
-    "yükleme betiği"
   [6]: http://smoothgallery.jondesign.net/ "resim galerisi"
   [7]: http://www.shauninman.com/archive/2007/09/10/styling_file_inputs_with_css_and_the_dom
     "kullanıcı girişi"

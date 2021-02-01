@@ -12,7 +12,7 @@ tags: [CSS, google, javscript]
 -   Web2.0 ile alevlenen web standartları hakkında üstat Zeldman'nın son
     kitabından bir alıntı [Link][1]
 -   Microsoft IE 7 ile birlikte bir çok sorununu giderdi bu konu
-    hakkında ayrıntılı bir makalesi [Link][2]
+    hakkında ayrıntılı bir makalesi
 -   Bir çok projeniz var ve hala benim gibi portföyünüzü
     hazırlamadıysanız size portföy oluşturmanın yolu öğreten bir makale,
     pardon bizlere [Link][3]
@@ -23,5 +23,4 @@ tags: [CSS, google, javscript]
 
   [Link]: http://www.digital-web.com/articles/css_styling_for_print_and_other_media/
   [1]: http://www.informit.com/articles/article.asp?p=608636&f1=rss&rl=1
-  [2]: http://www.thinkvitamin.com/features/design/wake-up-and-smell-the-ie7
   [3]: http://www.veen.com/jeff/archives/000935.html

@@ -9,7 +9,7 @@ tags: [Ajax, ASP.NET, google-belgeler-etablolar, Haberler, jquery, php, png, sun
 -   jquery örnekleri. [Link][]
 -   Asp.net ile kendimize özel doğrulama popup'ı oluşturmak. [Link][1]
 -   10 adet Asp.net ipucu. [Link][2]
--   Asp.net ve php ile programlama ile ekran görüntüsü almak. [Link][3]
+-   Asp.net ve php ile programlama ile ekran görüntüsü almak.
 -   PNG-8 ve PNG-24 formatlarını inceleyen güzel bir makale. [Link][4]
 -   Ajax ile yapılmış sayfalama betiği. [Link][5]
 -   Php ile zamana göre farklı css uygulama betiği. 
@@ -20,8 +20,6 @@ tags: [Ajax, ASP.NET, google-belgeler-etablolar, Haberler, jquery, php, png, sun
   [Link]: http://ui.jquery.com/ "jQuery demo"
   [1]: http://aspalliance.com/1366 "asp.net doğrulama ekranı"
   [2]: http://www.ajaxninja.com/?p=167 "asp.net ipucu"
-  [3]: http://www.plentyofcode.com/2007/09/website-screenshot-capture-with-aspnet.html
-    "asp.net ve php ekran görüntüsü"
   [4]: http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/
     "png"
   [5]: http://www.dynamicdrive.com/dynamicindex17/ajaxpaginate/index.htm

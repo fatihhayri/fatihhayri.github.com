@@ -10,7 +10,6 @@ tags: [ASP.NET, CSS, firebug, Firefox, flex, Haberler, Javascript]
     javascript Tekniği" adlı İngilizce makaleyi okumanızı tavsiye
     ederim. [Link][]
 -   Asp.net için yazılmış bir ajax kütüphanesi Gaia Ajax Widgets.
-    [Link][1]
 -   javascript ve css tabanlı yazılmış güzel bir kayan yazı örneği.
 -   Birden fazla sınıf tanımı ile CSS kodlarımızı optimize etmek
     hakkında yazılmış İngilizce makale. [Link][3]
@@ -24,7 +23,6 @@ tags: [ASP.NET, CSS, firebug, Firefox, flex, Haberler, Javascript]
 
   [Link]: http://www.digital-web.com/articles/seven_javascript_techniques/
     "Link"
-  [1]: http://ajaxwidgets.com/ "Link"
   [3]: http://www.search-this.com/2007/04/25/optimize-your-css-with-multi-class-elements/
     "Link"
   [4]: http://www.crucialwebhost.com/blog/master-stylesheet-the-most-useful-css-technique/

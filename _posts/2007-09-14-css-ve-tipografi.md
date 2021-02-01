@@ -346,7 +346,7 @@ Sınırları zorlayan güzel örnekler
 -   [http://www.wpdfd.com/issues/23/typography/][] (genel bilgi)
 -   [http://www.3point7designs.com/blog/2006/09/20/advanced-typography-techniques-using-css/][] 
 -   [http://www.alistapart.com/articles/sizematters/][] (font boyutunu farklı tarayıcılarda farklı olma sorunu ve çözümü)
--   [http://www.lifeclever.com/web-typography-40-resources-tools/][] (Tipografi araçları)
+-   lifeclever.com/web-typography-40-resources-tools/
 -   [http://www.mandarindesign.com/troops.html][] (uygulamlar var)
 -   [http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/][]
 -   [http://typetester.maratz.com/][]
@@ -380,7 +380,6 @@ Sınırları zorlayan güzel örnekler
   [http://www.wpdfd.com/issues/23/typography/]: http://www.wpdfd.com/issues/23/typography/
   [http://www.3point7designs.com/blog/2006/09/20/advanced-typography-techniques-using-css/]: http://www.3point7designs.com/blog/2006/09/20/advanced-typography-techniques-using-css/
   [http://www.alistapart.com/articles/sizematters/]: http://www.alistapart.com/articles/sizematters/
-  [http://www.lifeclever.com/web-typography-40-resources-tools/]: http://www.lifeclever.com/web-typography-40-resources-tools/
   [http://www.mandarindesign.com/troops.html]: http://www.mandarindesign.com/troops.html
   [http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/]: http://www.3point7designs.com/blog/2007/08/16/web-typography-50-sources-for-inspiration-and-instruction/
   [http://typetester.maratz.com/]: http://typetester.maratz.com/

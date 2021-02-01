@@ -132,7 +132,7 @@ a.aracIpucu:hover span em {
 -   [http://www.smashingmagazine.com/2007/06/12/tooltips-scripts-ajax-javascript-css-dhtml/][]
 -   [http://www.cssplay.co.uk/menu/tooltips.html][]
 -   http://www.communitymx.com/content/article.cfm?page=1&cid=4E2C0
--   [http://psacake.com/web/jl.asp][]
+-   psacake.com/web/jl.asp
 -   [http://www.cssplay.co.uk/menu/tooltips.html][]
 -   http://www.peutetreunereponse.net/article-6614978.html
 
@@ -142,4 +142,3 @@ a.aracIpucu:hover span em {
   [2]: /dokumanlar/arac_ipucu_2.html
   [http://www.smashingmagazine.com/2007/06/12/tooltips-scripts-ajax-javascript-css-dhtml/]: http://www.smashingmagazine.com/2007/06/12/tooltips-scripts-ajax-javascript-css-dhtml/
   [http://www.cssplay.co.uk/menu/tooltips.html]: http://www.cssplay.co.uk/menu/tooltips.html
-  [http://psacake.com/web/jl.asp]: http://psacake.com/web/jl.asp

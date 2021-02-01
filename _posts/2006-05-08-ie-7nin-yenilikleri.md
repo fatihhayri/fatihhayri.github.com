@@ -8,7 +8,4 @@ Category: Haberler, Web Standartları
 İE 7'de tam PNG desteği ile geliyor. Web kodlamacıları için büyük
 avantajlar sağlayan PNG formatını artık İE 7'de destekliyor . Gölgelerde
 ve transparan PNG'ler diğer resimlere göre büyük avantaj sağlar.
-[http://www.positioniseverything.net/articles/dropshadows.html][]
-
-  [http://www.positioniseverything.net/articles/dropshadows.html]: http://www.positioniseverything.net/articles/dropshadows.html
-    "İE 7'nin yenilikleri"
+positioniseverything.net/articles/dropshadows.html

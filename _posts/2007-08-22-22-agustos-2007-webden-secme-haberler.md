@@ -21,7 +21,7 @@ tags: [.net, CSS, Haberler, Javascript, kahramanlar, web2.0]
     makale.
 -   HasanYalcin.com "Tasarımcılara en çok söylene 10 yalan" adlı bir
     makale. [Link][7]
--   Tüm web2.0 uygulamalarını listesi. [Link][8]
+-   Tüm web2.0 uygulamalarını listesi.
 -   .Net 3.0 ile ses tanımlama uygulamaları. [Link][9]
 -   Visual Studio.NET 2005 ile Code Snippet Kullanımı. [Link][10]
 
@@ -37,8 +37,6 @@ tags: [.net, CSS, Haberler, Javascript, kahramanlar, web2.0]
   [4]: http://www.burcudogan.com/jsoni-ne-icin-nerde-kullanabiliriz-36.html
     "JSON"
   [7]: http://www.hasanyalcin.com/?p=319 "Tsarımcılar"
-  [8]: http://techmagazine.ws/full-web-20-api-list/
-    "tüm web2.0 uygulamları"
   [9]: http://www.csharpnedir.com/makalegoster.asp?Mid=771 ".net 3.0"
   [10]: http://www.csharpnedir.com/makalegoster.asp?Mid=768
     "hata yakalama"

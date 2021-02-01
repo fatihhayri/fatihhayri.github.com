@@ -10,7 +10,7 @@ tags: [Ajax, gmail-mobile, Javascript, mailing]
     yayınlanıyor. Bu linkini vereceğimiz sitede bunlardan biri
     uygulamaları ve kodu indirmek için 
 -   Mailing yaparken hala tabloları mı kullanıyorsunuz. Mailing hakkında
-    yazılmış güzel bir makale ayrıntı için [tıklayınız.][1]
+    yazılmış güzel bir makale ayrıntı için
 -   Sitenize Ajax ile yapılmış sohbet odası eklemek için bir site.
     Siteye girip renk, başlık, font ve boyutu belirlediğiniz bir sohbet
     odasını iframe ile sitenize ekleyebiliyorsunuz.[link][]
@@ -19,6 +19,5 @@ tags: [Ajax, gmail-mobile, Javascript, mailing]
     [tıklayınız.][2]
 
 
-  [1]: http://www.thinkvitamin.com/features/design/html-emails
   [link]: http://www.chatcreator.com/chatbox/
   [2]: http://www.google.com/mobile/index.html

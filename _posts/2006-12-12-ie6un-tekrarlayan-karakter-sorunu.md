@@ -50,7 +50,7 @@ Bu sorun [IE7][] versiyonunda giderilmiştir.
 
 ## Kaynaklar
 
--   [http://www.positioniseverything.net/explorer/dup-characters.html][]
+-   positioniseverything.net/explorer/dup-characters.html
 -   http://www.friendsofed.com
 
 
@@ -59,4 +59,3 @@ Bu sorun [IE7][] versiyonunda giderilmiştir.
   [3 piksel metin öteleme hatası]: http://fatihhayrioglu.com/ieun-3-piksel-metin-oteleme-hatasi/
   [1]: /dokumanlar/ie_tekrarlayan_karakter_sorunu_ornek2.html
   [IE7]: http://fatihhayrioglu.com/internet-explorer-7-ve-css/
-  [http://www.positioniseverything.net/explorer/dup-characters.html]: http://www.positioniseverything.net/explorer/dup-characters.html

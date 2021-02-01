@@ -295,15 +295,15 @@ başlıklar için kullanmak gayet mantıklı. Takdir ve seçim sizin.
 
 -   altiustutasarim.com/arsiv/2005/03/css_fir_teknigi.php
 -   http://www.ampsoft.net/­webdesign-l/image-button.html
--   [http://www.mezzoblue.com/tests/revised-image-replacement/][]
+-   mezzoblue.com/tests/revised-image-replacement/
 -   [http://www.digital-web.com/articles/in_defense_of_fahrner_image_replacement/][]
 -   [http://alistapart.com/articles/fir/][]
 -   [http://www.mikeindustries.com/sifr/][buradan]
 -   [http://webdesign.maratz.com/lab/multi_color_sifr/][]
--   [http://usabletype.com/weblog/how-and-when-to-use-sifr/][]
+-   usabletype.com/weblog/how-and-when-to-use-sifr/
 -   http://www.adobe.com/devnet/dreamweaver/articles/sifr_demo.html
 -   http://novemberborn.net/sifr3/beta1
--   [http://labs.tom-lee.com/HeadingReplacement/Alpha/][]
+-   labs.tom-lee.com/HeadingReplacement/Alpha/
 
   [tıklayınız.]: /dokumanlar/birinci_teknik.html
   [1]: /dokumanlar/ikinci_teknik.html
@@ -316,9 +316,6 @@ başlıklar için kullanmak gayet mantıklı. Takdir ve seçim sizin.
   [4]: /images/sirf_03.gif
   [5]: /images/sirf_04.gif
   [6]: /dokumanlar/fatih.html
-  [http://www.mezzoblue.com/tests/revised-image-replacement/]: http://www.mezzoblue.com/tests/revised-image-replacement/
   [http://www.digital-web.com/articles/in_defense_of_fahrner_image_replacement/]: http://www.digital-web.com/articles/in_defense_of_fahrner_image_replacement/
   [http://alistapart.com/articles/fir/]: http://alistapart.com/articles/fir/
   [http://webdesign.maratz.com/lab/multi_color_sifr/]: http://webdesign.maratz.com/lab/multi_color_sifr/
-  [http://usabletype.com/weblog/how-and-when-to-use-sifr/]: http://usabletype.com/weblog/how-and-when-to-use-sifr/
-  [http://labs.tom-lee.com/HeadingReplacement/Alpha/]: http://labs.tom-lee.com/HeadingReplacement/Alpha/

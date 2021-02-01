@@ -29,11 +29,11 @@ göre.
     **clear:both** uygulanan bir bir katmanımız olsun. Firefox, Safari
     veya diğer yeni nesil tarayıcılarda bu kod sorunsuz çalışacaktır.
     Ancak Internet Explorer 6'da içerik bölümü görünmeyecektir.
-    Ayrıntılı bilgi için [tıklayınız][].
+    Ayrıntılı bilgi için tıklayınız.
 
 -   **Giyotin Hatası** ' Float uygulanmış bir elementteki linklerin
     üzerine geldiğinizde kapsayıcı elementin altı kısmı kayboması
-    sorunu. Ayrıntılı bilgi için [tıklayınız.][]
+    sorunu. Ayrıntılı bilgi için tıklayınız.
 
 -   **Tekrarlayan Karakter Sorunu**-Bu hata birden fazla float
     uygulanmış içiçe elementlerde meydana gelir. Son float uygulanmış
@@ -44,12 +44,11 @@ göre.
 -   **Kenarlık Kargaşası** ' Bu hata iki içiçe geçmiş blok-level
     elementlerde; negatif üst margin kulanıldığında ; son olarakta
     ikinci kutu veya üst element de kenarlık içermesi durumlarında
-    meydana gelir. Ayrıntılı bilgi için [tıklayınız][2].
+    meydana gelir. Ayrıntılı bilgi için.
 
 -   **Kaydrıma Çubuğu Çıkmama Sorunu** 'Kapsayıcı kutunun uzun içeriği
     olmasına karşın kaydırma çubuğunun çıkmaması ve alt kısımdaki
-    içeriğin görünmemesi sorunudur. Ayrıntılı bilgi için
-    [tıklayınız][3].
+    içeriğin görünmemesi sorunudur. Ayrıntılı bilgi için.
 
 -   **3 Piksel Metin Öteleme Sorunu** ' Float uygulanmış elementlerdeki
     metine 3 piksel boşluk uygular ve element normal yerinden aşağı
@@ -58,8 +57,7 @@ göre.
 
 -   **Sihirli Gizli Metin Sorunu** 'Bu hataIE/5.5/6/Win meydana gelir.
     Bir biri içine geçmiş elementlerde ve aşağıdaki kodu içeren
-    dışarıdaki elementlerde meydan gelir: Ayrıntılı bilgi için
-    [tıklayınız][5].
+    dışarıdaki elementlerde meydan gelir: Ayrıntılı bilgi için.
 
 
 
@@ -72,12 +70,12 @@ div {
 
 -   **Line-height/Replaced Element Sorunu:** Eğer line-height uygulanmış
     bir satırda replaced element varsa line-height değeri sorunlu
-    yorumlanacaktır. Ayrıntılı bilgi için [tıklayınız][6].
+    yorumlanacaktır. Ayrıntılı bilgi için tıklayınız.
 
 -   **Tekrarlanan Satır Başı Boşluğu Sorunu**
     Bu hata float uygulanmış katmanın yanındaki
     inline-elementlerde(metin ve resim) meydana gelir.
-    Ayrıntılı bilgi için [tıklayınız][7].
+    Ayrıntılı bilgi için tıklayınız.
 
 -   **IE/Win'de Gözden Kaybolan List-background Sorunu**
     Bu hata Göreceli Konumlandırmalı floating uygulanmış bir liste
@@ -85,19 +83,19 @@ div {
     için.
 
 -   **Internet Explorer ve Genişleyen Kutu Problemi**
-    Ayrıntılı bilgi için [tıklayınız][9].
+    Ayrıntılı bilgi için tıklayınız.
 
 -   **IE6'nınGarip Yüzde Sorunu**
-    Ayrıntılı bilgi için [tıklayınız][10].
+    Ayrıntılı bilgi için tıklayınız.
 
 -   **IE ve İtalik Yazı Sorunu**
     Ayrıntılı bilgi için [tıklayınız][8].
 
 -   **Kayıp İlk Harf Hatası**
-    Ayrıntılı bilgi için [tıklayınız][11].
+    Ayrıntılı bilgi için tıklayınız.
 
 -   **Yanıltıcı Kutu Sorunu**
-    Ayrıntılı bilgi için [tıklayınız][12].
+    Ayrıntılı bilgi için tıklayınız.
 
 ## Diğer Düzeltilen Hatalar
 
@@ -138,26 +136,14 @@ Tüm liste için [tıklayınız][13].
 ## Kaynaklar
 
 -   [http://blogs.msdn.com][13]
--   [http://www.devarticles.com][]
+-   devarticles.com
 -   [http://www.webcredible.co.uk][]
--   [http://www.mezzoblue.com][]
+-   mezzoblue.com
 
   [<!DOCTYPE> switch]: https://fatihhayrioglu.com/dogru-doctype-kullanimi/
-  [tıklayınız]: http://www.positioniseverything.net/explorer/peekaboo.html
-  [tıklayınız.]: http://www.positioniseverything.net/explorer/guillotine.html
+  tıklayınız.
   [1]: http://fatihhayrioglu.com/?p=232
-  [2]: http://www.positioniseverything.net/explorer/border-chaos.html
-  [3]: http://www.positioniseverything.net/explorer/unscrollable.html
   [4]: http://fatihhayrioglu.com/?p=231
-  [5]: http://www.positioniseverything.net/explorer/creep.html
-  [6]: http://www.positioniseverything.net/explorer/lineheightbug.html
-  [7]: http://www.positioniseverything.net/explorer/floatIndent.html
-  [9]: http://www.positioniseverything.net/explorer/expandingboxbug.html
-  [10]: http://www.positioniseverything.net/explorer/percentages.html
-  [11]: http://www.positioniseverything.net/explorer/firstletter.html
-  [12]: http://www.positioniseverything.net/explorer/inlinelist.html
   [13]: http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx
   [Çocuk Seçiciler]: http://fatihhayrioglu.com/?p=62
-  [http://www.devarticles.com]: http://www.devarticles.com/c/a/Web-Style-Sheets/CSS-Standards-Compliance-in-Internet-Explorer-7/
   [http://www.webcredible.co.uk]: http://www.webcredible.co.uk/user-friendly-resources/css/internet-explorer-7.shtml
-  [http://www.mezzoblue.com]: http://www.mezzoblue.com/archives/2005/07/28/ie7_css_upda/

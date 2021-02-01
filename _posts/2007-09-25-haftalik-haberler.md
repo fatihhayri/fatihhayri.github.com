@@ -25,7 +25,7 @@ tags: [ASP.NET, css3.0, Firefox, float, Haberler, Javascript, Web Standartları]
 -   Akordiyon menü yeni sürümü çıkmış. Bazı sorunları giderilmiş ve yeni
     bir kaç özellik eklenmiş.
 -   Güzel bir anlatımla float örneği.
--   Javascript ile yapılmış hoş bir resimli menü örneği. [Link][10]
+-   Javascript ile yapılmış hoş bir resimli menü örneği.
 -   WordPress 2.3 ile birlikte gelen etiket bulutu özelliğini kendi
     günlüğümüze nasıl ekleyeceğiz.
 -   Ajax kullanılan projelerde geri dönme sorununun giderilmesi.
@@ -45,5 +45,4 @@ tags: [ASP.NET, css3.0, Firefox, float, Haberler, Javascript, Web Standartları]
   [6]: http://www.maratz.com/blog/archives/2007/05/12/quick-tip-bottom-margins-of-paragraphs-and-lists/
     "alt kenar boşluğu"
   [7]: http://www.copyblogger.com/link-right/ "Link"
-  [10]: http://www.phatfusion.net/imagemenu/index.htm "resimli menü"
   [13]: http://keryx.se/resources/html-elements.xhtml "Xhtml listesi"

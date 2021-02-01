@@ -41,8 +41,8 @@ blok-level element maruz kalacaktır. Çözümü ise çok basit
 }
 {% endhighlight %}
 
-Bu makale hazırlanırken [positioniseverything.net][] yararlanılmıştır. Daha
+Bu makale hazırlanırken positioniseverything.net yararlanılmıştır. Daha
 ayrıntılı bilgiyi bu sitede bulabilirsiniz.(eng)
 
   [100]: /images/ikikat_margin.gif
-  [positioniseverything.net]: http://www.positioniseverything.net/explorer/doubled-margin.html
+

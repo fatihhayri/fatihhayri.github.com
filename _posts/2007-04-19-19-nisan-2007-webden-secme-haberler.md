@@ -16,10 +16,9 @@ tags: [CSS, google reader, Haberler, Javascript, silverlight, tab, WordPress, xs
     imkanı. [Link][5]
 -   WordPress performansını arttırmanın yolarını anlatan İngilizce bir
     makale, uygulamak lazım.
--   20 adet resim galerisi ve slideshow. [Link][7]
+-   20 adet resim galerisi ve slideshow.
 -   Microsoft Adobe Flash'a karşı Silverlight'ı çıkardı.
 -   En iyi ara yüz kodlamanın ipuçlarını anlatan İngilizce makale.
-    [Link][9]
 
 
   [1]: http://www.rikarends.com/jslt-alternative-to-xslt "Link"
@@ -27,6 +26,3 @@ tags: [CSS, google reader, Haberler, Javascript, silverlight, tab, WordPress, xs
     "Link"
   [3]: http://www.smashingmagazine.com/2007/04/18/14-tab-based-inferface-techniques/
   [5]: http://www.hicksdesign.co.uk/journal/google-reader-theme "Link"
-  [7]: http://www.dhtmlsite.com/imagegalleries.php "Link"
-  [9]: http://www.456bereastreet.com/archive/200704/guidelines_for_creating_better_markup/
-    "Link"

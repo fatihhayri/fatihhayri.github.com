@@ -9,7 +9,7 @@ tags: [adsl, Ajax, CSS, Haberler, Javascript, lightbox, Xray, yahoo]
 -   Ajax'a dair Temmuz ayı bilgileri için tıklayınız. [Link][]
 -   CSS dokümanlarının hafızaya(cache) atılmasını engellemek hakkında
     bir makale.
--   Yahoo YUI gelişmiş metin editörü çıkarmış. [Link][2]
+-   Yahoo YUI gelişmiş metin editörü çıkarmış.
 -   Web sitenizin farklı web tarayıcılarında nasıl göründüğünü test
     etmek için bir site.
 -   Web tasarımcılarının işini kolaylaştıran araçlardan biri Xray
@@ -24,8 +24,6 @@ tags: [adsl, Ajax, CSS, Haberler, Javascript, lightbox, Xray, yahoo]
 
   [Link]: http://ajaxian.com/archives/monthly-ajaxian-roundup-for-july-2007-iphone-and-the-plugin-wars
     "Ajax Temmuz Raporu"
-  [2]: http://developer.yahoo.com/yui/examples/editor/index.html
-    "YUI Gelişmiş Metin Editörü"
   [4]: http://westciv.com/xray/ "Xray"
   [5]: http://hasin.wordpress.com/2007/08/01/performance-tips-for-web-applications/
     "Link"

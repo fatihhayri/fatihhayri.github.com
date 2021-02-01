@@ -8,7 +8,7 @@ tags: [Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, yo
 
 -   Bu site çok güzel gerekli linkleri bir araya topluyor. şžimdide
     ajax, CSS vd. web derslerinin linklerini bizlere sunmuş. [Link][]
--   CSS ile text-decoration renklendirme. [Link][1]
+-   CSS ile text-decoration renklendirme. 
 -   Ücretsiz Bilişim Teknolojileri ile ilgili e-kitaplar
 -   Resim küçük halini ve tıklayınca büyük hali gösteren bir çok script
     mevcut. Buna güzel bir örnek [Link][3]
@@ -25,12 +25,11 @@ tags: [Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, yo
 -   TenoSeyir'de WordPress 2.1 hakkında güzel bir makale yayınlanmış
     bilgi almak ve geçiş yapmak isteyene okuması önerilir.
 -   Ajax ile ilgili Türkçe site eksikliği var. Ajax-tr bu boşluğu
-    kapatır. Ajax-tr açılmış [Link][11]
+    kapatır. Ajax-tr açılmış
 
 
   [Link]: http://www.smashingmagazine.com/2007/01/26/tutorials-round-up-ajax-css-javascript-php-mysql-and-more/
     "Link"
-  [1]: http://bitesizestandards.com/bites/coloring-text-decoration
   [3]: http://www.dynamicdrive.com/dynamicindex4/thumbnail.htm "Link"
   [4]: http://www.lifehack.org/articles/lifehack/7-ways-to-track-internets-trends-and-popular-news.html
     "Link"
@@ -40,4 +39,3 @@ tags: [Ajax, CSS, e-kitap, firebug, Firefox, google, WordPress, xform, yahoo, yo
     "Link"
   [8]: http://getfirebug.com/ "Link"
   [9]: http://googleblog.blogspot.com/2007/01/look-ahead-at-google-video-and-youtube.html
-  [11]: http://ajax-tr.com/ "Link"

@@ -17,7 +17,7 @@ tags: [Ajax, CSS, google maps, Haberler, Javascript, planlama, XHTML]
 -   Açık kaynak kodlama her geçen gün artıyor işte size açık kaynak CSS
     planlama kodları sunu bir iki site. [Link][3] 
 -   XHTML2.0 üzerinde çalışmalar sürüyor. XHTML 2.0 üzerinde çalışan
-    arkadaşlarla bir röportaj yapılmış ingilizce. [Link][5]
+    arkadaşlarla bir röportaj yapılmış ingilizce.
 -   Javascript ile yapılmış konuşma balonu şeklinde tooltip [Link][6]
 -   Google Map Amerikada anlık trafik bilgileri veriyormuş artık.
     [Link][7]
@@ -26,7 +26,6 @@ tags: [Ajax, CSS, google maps, Haberler, Javascript, planlama, XHTML]
 
   [Link]: http://www.hasanyalcin.com/?p=218 "Link"
   [3]: http://www.mycelly.com/ "Link"
-  [5]: http://xhtml.com/en/future/conversation-with-xhtml-2-team/ "Link"
   [6]: http://web-graphics.com/mtarchive/001717.php "Link"
   [7]: http://googlesystem.blogspot.com/2007/02/google-maps-shows-real-time-traffic.html
     "Link"

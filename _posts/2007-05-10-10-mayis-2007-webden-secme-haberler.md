@@ -7,7 +7,6 @@ tags: [CSS, Google Analytics, Haberler, html, jquery, mootools, mynet, seo, web2
 ---
 
 -   HTML editörlerinden kolayca düzenlenebilir ve kullanışlı bir örnek.
-    [Link][]
 -   Bir çok javascript kütüphanesi var ve kullanmak biraz araştırma ve
     bilgi gerektiriyor bunu düşünenler MooTools için eğitim videoları
     hazırlamışlar. 
@@ -30,7 +29,6 @@ tags: [CSS, Google Analytics, Haberler, html, jquery, mootools, mynet, seo, web2
 -   Mynet video servisi açmış. Mynet VDO.
 
 
-  [Link]: http://livepipe.net/projects/control_textarea/ "Link"
   [2]: http://analytics.blogspot.com/2007/05/new-version-of-google-analytics.html
   [4]: http://www.sitepoint.com/blogs/2007/04/16/html-the-top-five-forgotten-elements/
     "Link"

@@ -14,20 +14,18 @@ tags: [arama motoru, CSS, Dreamweaver, Firefox 2, form, google, Greasmonkey, Hab
     kütüphaneleri kolayca sayfalarımıza ekleye bilmemizi sağlıyor.
     Bunlardan biri "Akordiyon menü" yapımını anlatan İngilizce bir
     makale.
--   Arama motorlarına uygun kod yazmanın 50 ipucu. [Link][4]
+-   Arama motorlarına uygun kod yazmanın 50 ipucu.
 -   Eğer geniş ekran monitörünüz varsa Firefox + Greasmonkey ile google
     arama sonuçlarınzı iki kolonlu liste şeklinde görebilirsiniz.
 -   Bir çok programda kullanılan Düzenli İfadeler(Regular Expressions)
     için güzel bir kaynak. [Link][6]
 -   CSS hack(düzeltmeleri) hakkında güzel bir link.
 -   Web sitesini yenileyenlere güzel önerilen sunan güzel bir çeviri
-    makale. [Link][8]
+    makale.
 -   Javascript ve CSS ile yapılmış güzel bir geçiş efekti uygulaması.
 -   Google Felsefesini 10 maddede toplamış ve bize sunmuş. [Link][10]
 
 
   [Link]: http://www.cssplay.co.uk/menu/tooltips.html "Link"
-  [4]: http://www.sonicko.com/blog/2007/04/12/top-50-seo-tips-tricks-and-suggestions/
   [6]: http://regexlib.com/Default.aspx "Link"
-  [8]: http://www.bildirgec.org/yazi/sitenizi-yenilerken-dikkat-edilecekler
   [10]: http://www.google.com/corporate/today.html "Link"

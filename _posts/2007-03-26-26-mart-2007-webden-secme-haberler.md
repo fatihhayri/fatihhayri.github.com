@@ -19,7 +19,7 @@ tags: [CSS, digg, Firefox, Haberler, Javascript, sosyal-imleme, spam, web2.0]
 -   Web2.0 tahlil eden bir yazı.
 -   Olmazsa olmaz 10 Adet Firefox Eklentisi. [Link][6]
 -   Yeni bir sosyal imleme(Digg) sitesi açıldı. Oyyla. Çok güzel bir
-    tasarım ve içerik ellerinize sağlık. Takipçinizim. [Link][7]
+    tasarım ve içerik ellerinize sağlık. Takipçinizim.
 
 
   [Link]: http://www.hasanyalcin.com/?p=238 "Link"
@@ -28,4 +28,3 @@ tags: [CSS, digg, Firefox, Haberler, Javascript, sosyal-imleme, spam, web2.0]
   [3]: http://dnevnikeklektika.com/uni-form/ "Link"
   [4]: http://www.search-this.com/2007/03/26/10-quick-tips-for-an-easier-css-life/
   [6]: http://lifehacker.com/software/firefox-extensions/lh-top-10--must+have-firefox-extensions-246127.php
-  [7]: http://www.oyyla.com/ "Link"

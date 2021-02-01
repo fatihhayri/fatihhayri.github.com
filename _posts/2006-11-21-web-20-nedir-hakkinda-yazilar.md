@@ -11,8 +11,7 @@ olduğunu merak ettim ve bir iki güzel makale gördüm sizlerle paylaşmak
 istedim.
 
 -   [http://www.csharpnedir.com/makalegoster.asp?MId=570][]
--   [http://www.bildirgec.org/yazi/web-2-0-nedir-gercekten][]
+-   bildirgec.org/yazi/web-2-0-nedir-gercekten
 
 
   [http://www.csharpnedir.com/makalegoster.asp?MId=570]: http://www.csharpnedir.com/makalegoster.asp?MId=570
-  [http://www.bildirgec.org/yazi/web-2-0-nedir-gercekten]: http://www.bildirgec.org/yazi/web-2-0-nedir-gercekten

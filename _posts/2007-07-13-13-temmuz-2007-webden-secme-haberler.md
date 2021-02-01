@@ -20,7 +20,7 @@ tags: [blog, Firefox, Freelance, google, Haberler, Javascript, lightbox]
     bir makale. [Link][5]
 -   Güzel lightbox uygulamalarından LightWindow2.0 versiyonu çıkmış.
     Yeni özellikleri ile daha kullanışlı bir hale gelmiş. 
--   Freelance çalışanlara ve çalışmak isteyenlere 9 ipucu. [Link][7]
+-   Freelance çalışanlara ve çalışmak isteyenlere 9 ipucu.
 -   Zemin Resimlerinde yüzdesel değer kullanımı ile ilgili bir makale.
     [Link][8]
 
@@ -32,8 +32,6 @@ tags: [blog, Firefox, Freelance, google, Haberler, Javascript, lightbox]
   [3]: http://googlesystem.blogspot.com/2007/07/google-buys-postini-to-improve-its.html
     "Link"
   [5]: http://particletree.com/notebook/adding-options-to-a-select-element/
-    "Link"
-  [7]: http://freelanceswitch.com/freelancing-essentials/9-essential-ideas-to-find-time-for-freelance-work/
     "Link"
   [8]: http://www.sitepoint.com/blogs/2007/07/05/css-using-percentages-in-background-image/
     "Link"

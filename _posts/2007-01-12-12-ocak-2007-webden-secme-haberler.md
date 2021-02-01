@@ -18,7 +18,7 @@ haberler var
     bir makale [Link][3]
 -   Web2.0 Dizayn Rehberi 
 -   Digital Web Magazine'den web sitesi kodlama önerileri [Link][5]
--   Farklı bir arama motoru [Link][6]
+-   Farklı bir arama motoru
 -   Blog sitenizi en iyiler arasına sokmak için öneriler [Link][7]
 -   Google bazı servislerine(Base, Blogger ve Calendar) erişmek için
     Gdata kütüphanesini bizlerin hizmetine açmış durumda. Bu makalede bu
@@ -32,7 +32,7 @@ haberler var
     Biraz yavaşlamay neden olduğunu söyleyeyim tabi bu benim
     bilgisayarımın özelikleri ile alakalıda olabilir 
 -   Daha önce bu makalenin birinci kısmının linkini vermiştik. Web
-    sitelerinde performansı arttırmanın yolarını üzerine [Link][12]
+    sitelerinde performansı arttırmanın yolarını üzerine
 -   Ajax ile birlikte bir çok javascirpt kütüphanesi sunulmaya başlandı.
     Bu işi derli toplu şekilde yapmaya çalışan bir javascript kütühane
     sitesi daha[Link][13]
@@ -50,10 +50,8 @@ haberler var
   [2]: http://www.unbf.ca/altiustu/arsiv/2007/01/cep20.php
   [3]: http://www.webdesign.org/web/html-and-css/tutorials/creating-a-navigation-bar-with-css.10518.html
   [5]: http://www.digital-web.com/articles/markup_as_craft/
-  [6]: http://sidekiq.com/
   [7]: http://www.instigatorblog.com/8-steps-to-growing-your-blog-community-by-1/2007/01/09/
   [9]: http://searchengineland.com/070109-141617.php
-  [12]: http://yuiblog.com/blog/2007/01/04/performance-research-part-2/
   [13]: http://www.sergiopereira.com/articles/prototype.js.html
   [14]: http://rakaz.nl/item/make_your_pages_load_faster_by_combining_and_compressing_javascript_and_css_files
   [15]: http://blogs.msdn.com/ie/archive/2007/01/09/ie-developer-toolbar-beta-3-now-available.aspx

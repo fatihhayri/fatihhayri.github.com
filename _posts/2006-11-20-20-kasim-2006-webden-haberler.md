@@ -18,7 +18,7 @@ gelişmeler var.
 -   Web sitelerimizin neleri içermesi gerektiği hakkında yazılmış bir
     makale. WordPress, Flick ve XHTML/CSS ekseninde
 -   Benim ve bir çok web kullanıcısının da sevmediği ama hala kullanımda
-    olan popup pencerelerini sorgulayan güzel bir makale [Link][3]
+    olan popup pencerelerini sorgulayan güzel bir makale
 -   Meta-tag hakkında güzel bir makale 
 -   60'dan fazla css tab menü oluşturmanıza yarayan bir program
     [Link][5]
@@ -38,7 +38,6 @@ gelişmeler var.
 -   Asp.Net'in Ajax eklentisi Atlas'ın Beta 2'si yayınlanmış. [Link][10]
 
   [1]: http://www.snook.ca/archives/javascript/anatomy_of_a_drag_and_drop/
-  [3]: http://christianflury.com/blog/2006/11/how_intrusive_are_fake_popups.html
   [5]: http://www.highdots.com/css-tab-designer/
   [8]: http://www.w3.org/TR/2006/WD-CSS21-20061106/
   [10]: http://ajax.asp.net/

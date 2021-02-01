@@ -13,7 +13,7 @@ tags: [gmail, google, Javascript, web, WordPress, Zoho-Notebook]
     sorun yaşayacakmışız(yaşıyoruz) Arkadaşlar bu haftayı Yerli Malı
     Haftası olarak kutlayalım.
 -   Web sayfalarımızı daha hızlı ve hafif yapmanın yollarını anlatan
-    makale. [Link][]
+    makale.
 -   Mootools bir javascript kütüphanesi, giriş sayfası beni etkiledi
     açıkçası. [Link][1]
 -   Google'da profesyonelce arama yapmanın ipuçları. [Link][2]
@@ -25,8 +25,6 @@ tags: [gmail, google, Javascript, web, WordPress, Zoho-Notebook]
     a Google document." ve  "Download" seçenekleri sunuyor.
 
 
-  [Link]: http://www.thinkvitamin.com/features/dev/enhance-your-page-performance
-    "Link"
   [1]: http://mootools.net/ "Link"
   [2]: http://www.our-picks.com/archives/2007/01/28/pro-guide-to-google-searches-part-i/
     "Link"

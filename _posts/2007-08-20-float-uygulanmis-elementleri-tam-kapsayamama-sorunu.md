@@ -156,7 +156,7 @@ tarayıcılarının bundan etkilenmemesi için IE/Mac'den gizlediğimiz alana
 **şekil2** float sorununun çözülmüş hali
 
 Bu metot bu sorunun çözümü için en ideal çözümdür. Bu sorunun çözümünde
-birçok insanın emeği geçmiştir. [Doug][], [Mark Hadley][], [Matt Keogh][], [Holly’n John][] ve Tony Asslet'a bundan dolayı
+birçok insanın emeği geçmiştir. [Doug][], [Mark Hadley][], [Matt Keogh][], Holly’n John] ve Tony Asslet'a bundan dolayı
 şükranlarımızı sunarız. thank you guys :D Ayrıca bu konuda Türkçe bir
 makale yazan [dahaiyi.net][]'e çok teşekkürler.
 
@@ -205,11 +205,11 @@ hızlı bir şekilde çözmek mümkün oluyor.
 
 ## Kaynaklar
 
- - [http://www.positioniseverything.net/easyclearing.html][]
+ - positioniseverything.net/easyclearing.html
  - [http://www.complexspiral.com/publications/containing-floats/][]
  - http://www.dahaiyi.net/yazilar/temiz-bir-clearfix-metodu
  - [http://csscreator.com/?q=attributes/containedfloat.php][]
- - [http://css-discuss.incutio.com/?page=ClearingSpace][]
+ - css-discuss.incutio.com/?page=ClearingSpace
  - [http://www.cs.hmc.edu/~mbrubeck/clear-after/][]
  - [http://www.w3.org/TR/2002/WD-css3-box-20021024/#the-clear-after][clear-after]
 
@@ -221,10 +221,7 @@ hızlı bir şekilde çözmek mümkün oluyor.
   [Doug]: http://dougsdvds.info/ "Doug"
   [Mark Hadley]: http://www.nolocation.com/ "Mark Hadley"
   [Matt Keogh]: http://www.loungepenguin.co.uk/indexno.htm "Matt Keogh"
-  [Holly’n John]: http://www.positioniseverything.net/design/
   [clear-after]: http://www.w3.org/TR/2002/WD-css3-box-20021024/#the-clear-after
-  [http://www.positioniseverything.net/easyclearing.html]: http://www.positioniseverything.net/easyclearing.html
   [http://www.complexspiral.com/publications/containing-floats/]: http://www.complexspiral.com/publications/containing-floats/
   [http://csscreator.com/?q=attributes/containedfloat.php]: http://csscreator.com/?q=attributes/containedfloat.php
-  [http://css-discuss.incutio.com/?page=ClearingSpace]: http://css-discuss.incutio.com/?page=ClearingSpace
   [http://www.cs.hmc.edu/~mbrubeck/clear-after/]: http://www.cs.hmc.edu/~mbrubeck/clear-after/

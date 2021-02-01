@@ -25,7 +25,6 @@ tags: [CSS, geyikposta, Haberler, tab, tooltip]
 -   Javascript kütüphanelerinin CSS seçici sorgulamasına göre testini
     yapan bir site.
 -   Mehmet Nuri Çankaya'nın "Microsoft Popfly" yazsını bir göz atın.
-    [Link][6]
 -   40 adet ajax, javascript ve css ile yapılmış bilgi
     baloncukları(tooltip). [Link][7]
 -   14 ücretsiz web istatistiği tutan aracın değerlendirildiği İngilzice
@@ -35,5 +34,4 @@ tags: [CSS, geyikposta, Haberler, tab, tooltip]
   [2]: http://www.wittysparks.com/2007/06/10/26-best-ways-to-implement-ajax-css-and-javascript-based-tabs/
     "Link"
   [3]: http://usabilitychecklist.blogspot.com/2007/06/50-beautiful-css-based-web-designs.html
-  [6]: http://www.nuricankaya.com/default.asp?gunluk_id=201
   [7]: http://www.smashingmagazine.com/2007/06/12/tooltips-scripts-ajax-javascript-css-dhtml/

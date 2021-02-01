@@ -9,7 +9,7 @@ tags: [Haberler]
 -   CheeseTube.com üye olan kullanıcılarına web üzerinden çizim yapma ve
     bu çizimleri sitelerine ekleme olanağı sunan güzel bir web2.0
     uygulaması.
--   İkon dizaynı ile ilgili güzel bir makale. [Link][1]
+-   İkon dizaynı ile ilgili güzel bir makale.
 -   Google PageRank etkileyen faktörleri anlatan güzel bir makale.
 -   Güzel bir akordiyon menü örneği.
 -   Popülerliğini arttıran javascript'e tekrardan bir göz atmak
@@ -25,7 +25,6 @@ tags: [Haberler]
 -   Web tarayıcılarının CSS3 seçicilerini destekleme listesi. [Link][11]
 
 
-  [1]: http://mezzoblue.com/archives/2007/07/11/icon_design/ "Link"
   [4]: http://developer.mozilla.org/en/docs/A_re-introduction_to_JavaScript
     "Link"
   [6]: http://www.neilmix.com/narrativejs/doc/overview.html

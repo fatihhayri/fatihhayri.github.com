@@ -17,7 +17,7 @@ tags: [ASP.NET, background, CSS, dasBlog, GridView, Haberler, Javascript, jquery
 -   Javascript dosyalarımızı nasıl hafifletiriz adlı güzel bir makale.
 -   Javascript kullanımı arttıkça boyutlarıda artıyor ve boyutları
     kısaltmak araçlar çıkıyor işte size YUI'nin javascript boyut azaltma
-    aracını anlatan güzel bir makale. [Link][5]
+    aracını anlatan güzel bir makale.
 -   CSS ile zemin resimli arama alanları yapmayı anlatan güzel bir
     makale. 
 -   Artık web'de bir çok ders görsel olarak yayınlanmakta işte size tüm
@@ -37,8 +37,6 @@ tags: [ASP.NET, background, CSS, dasBlog, GridView, Haberler, Javascript, jquery
   [2]: http://www.howtogeek.com/howto/internet/firefox/create-the-ultimate-firefox-web-development-profile/
     "Firefox eklentileri"
   [3]: http://cssjuice.com/tools/ "web araçları"
-  [5]: http://www.julienlecomte.net/blog/2007/08/13/introducing-the-yui-compressor/
-    "YUI javascript boyutu azaltma"
   [7]: http://freevideolectures.com/webdesign.html "video ders"
   [8]: http://www.hanselman.com/blog/dasBlog20Released.aspx
     ".net ile yapılmış günlük"

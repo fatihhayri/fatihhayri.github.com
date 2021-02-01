@@ -88,11 +88,10 @@ Aşağıdaki kod IE5+,FF, Opera 7, Konqueror 3.0.3 altında standart ve
 -   [http://www.jakpsatweb.cz/][]
 -   [http://wellstyled.com/][]
 -   [http://www.hicksdesign.co.uk/][]
--   [http://www.student.oulu.fi/][]
+-   student.oulu.fi/
 
   [garip mod]: http://fatihhayrioglu.com/dogru-doctype-kullanimi/
   [tıklayınız.]: /dokumanlar/dikey_ortalama_ornek1.html
   [http://www.jakpsatweb.cz/]: http://www.jakpsatweb.cz/css/css-vertical-center-solution.html
   [http://wellstyled.com/]: http://wellstyled.com/singlelang.php?lang=en&page=css-single-line-vertical-centering.html
   [http://www.hicksdesign.co.uk/]: http://www.hicksdesign.co.uk/journal/how-to-vertical-centering-with-css
-  [http://www.student.oulu.fi/]: http://www.student.oulu.fi/~laurirai/www/css/middle/

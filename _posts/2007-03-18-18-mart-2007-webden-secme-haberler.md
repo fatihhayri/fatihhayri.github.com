@@ -16,7 +16,7 @@ tags: [feedburner, Haberler, html5, Javascript, WordPress]
 -   Sayfa içi linklemede otomatik kaydırma örneği.
 -   CSS ile yapılmış 53 adet menü linkleri. [Link][2]
 -   Bir çok CSS menü içeren güzel bir link topluluğu. [Link][3]
--   74 Adet CSS galeri sitesinin linkleri ve kısa bilgileri. [Link][4]
+-   74 Adet CSS galeri sitesinin linkleri ve kısa bilgileri.
 -   Javascript ve CSS'in gücünü görmek isteyenlere güzel bir örnek.
 -   John Manoogian CSS hakkında bilmemizi istediği 10 şeyi yazmış.
     [Link][6]
@@ -29,7 +29,6 @@ tags: [feedburner, Haberler, html5, Javascript, WordPress]
   [2]: http://www.smashingmagazine.com/2007/03/14/css-based-navigation-menus-modern-solutions/
     "Link"
   [3]: http://www.cssplay.co.uk/menus/index.html "Link"
-  [4]: http://www.nuff-respec.com/technology/css-gallery-roundup "Link"
   [6]: http://blog.jm3.net/2007/03/16/the-only-ten-things-to-know-about-css/
     "Link"
   [7]: http://www.cleancss.com/?lang=en "Link"

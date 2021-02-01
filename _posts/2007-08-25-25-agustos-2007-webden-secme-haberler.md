@@ -19,7 +19,7 @@ tags: [flex, google reader, Haberler, Javascript, jquery, silverlight, tab, trac
     bir makale.
 -   İsmail Altuntaş jQuery - olay yönetimini anlatmış.
 -   Microsoft'un Silverlight'ı ile Adobe'un Flex'i birlikte
-    kullanılabiliyorlarmış. [Link][6]
+    kullanılabiliyorlarmış.
 -   Javascript ile yapılmış güzel bir menü örneği.
 
 
@@ -31,5 +31,3 @@ tags: [flex, google reader, Haberler, Javascript, jquery, silverlight, tab, trac
     "Google Reader + Firefox"
   [3]: http://www.webassist.com/professional/products/productdetails.asp?PID=135&CouponID=ht8nbu&WAAID=302&RID=929&utm_source=CSSS_EricMeyer&utm_medium=Partner&utm_campaign=CSSS_launch&utm_nooverride=1
     "Eric Meyer "
-  [6]: http://blog.paranoidferret.com/index.php/2007/08/20/communicate-between-flex-and-silverlight-using-javascript/#comment-608
-    "silverlight ve flex"

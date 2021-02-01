@@ -14,7 +14,7 @@ tags: [Haberler]
     inceleyen ve ayrıntılı bir şekilde anlatan İngilizce güzel bir
     makale. [Link][2]
 -   Mehmet Nuri Çankaya'nın "Bankalar için Web 2.0" makalesine bir göz
-    atın. [Link][3]
+    atın.
 -   CSS'in Üstadı Eric Meyer CSS başlangıç dokümanını yenilemiş.
     [Link][4]
 -   Web tasarımcıların genelde yaptıkları hatalar(43 adet). [Link][5]
@@ -28,7 +28,6 @@ tags: [Haberler]
   [1]: http://www.roscripts.com/Best_CSS_tools_of_the_month-130.html
     "Link"
   [2]: http://www.progressive-coding.com/tutorial.php?id=6 "Link"
-  [3]: http://www.nuricankaya.com/default.asp?gunluk_id=185 "Link"
   [4]: http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
     "Link"
   [5]: http://www.dailyblogtips.com/43-web-design-mistakes-you-should-avoid/

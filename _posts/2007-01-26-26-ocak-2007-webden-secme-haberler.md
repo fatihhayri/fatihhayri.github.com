@@ -9,7 +9,7 @@ tags: [adobe, CSS, google, Javascript, rss, WordPress]
 
 26 Ocak 2007 Web'den seçme haberler
 
--   CSS galeri sitelerinin listesi [Link][]
+-   CSS galeri sitelerinin listesi
 -   10 adet CSS ipucu
 -   Gün geçmiyor ki ben sizlere buradan bir javascript kütüphanesi link
     vermeyeyim. Evet bu iş önemli arkadaşlar. şžimdi de Adobe bu işe el
@@ -27,7 +27,7 @@ tags: [adobe, CSS, google, Javascript, rss, WordPress]
     sürümünü duyurdu. Tanıtım ve örneklerin videoları gayet güzel
     [Link][7]
 -   Web 2.0 logo yapmak isteyen 11 kısa adımda güzel anlatımla logo
-    yapmanın sırları [Link][8]
+    yapmanın sırları
 -   Son zamanlarda yükselişe geçen ve bir çok İnternet kullanıcısının
     vazgeçilmezi olan RSS ve nasıl kolay bir şekilde RSS yaparız
     [Link][9]
@@ -39,10 +39,9 @@ tags: [adobe, CSS, google, Javascript, rss, WordPress]
 -   Biliyorsunuz WordPress 2.1 çıktı GrifiDizayn güncellemiş ve tuttuğu
     notları bizlerle paylaşmış.
 -   Javascript ile programlama hakkında güzel video anlatımı. Tek sorun
-    İngilizce olması [Link][15]
+    İngilizce olması
 
 
-  [Link]: http://www.listible.com/list/full-list-of-css-galleries "Link"
   [fotoğraf galerisi örneği]: http://labs.adobe.com/technologies/spry/demos/gallery/
     "fotoğraf galerisi örneği"
   [2]: http://labs.adobe.com/wiki/index.php/Spry "Link"
@@ -50,8 +49,6 @@ tags: [adobe, CSS, google, Javascript, rss, WordPress]
   [5]: http://www.seomoz.org/blogdetail.php?ID=1649 "Link"
   [6]: http://www.blueshoes.org/en/javascript/?1 "Link"
   [7]: http://ajax.asp.net/ "Link"
-  [8]: http://web-design-book.com/2007/01/23/how-to-fake-a-web-20-logo/
-    "Link"
   [9]: http://www.informit.com/articles/article.asp?p=674690&seqNum=2&rl=1
     "Link"
   [10]: http://googlesystem.blogspot.com/2007/01/google-shows-more-answers.html
@@ -60,4 +57,3 @@ tags: [adobe, CSS, google, Javascript, rss, WordPress]
   [12]: http://googlesystem.blogspot.com/2007/01/google-image-search-has-cleaner-look.html
     "Link"
   [13]: http://googlesystem.blogspot.com/2007/01/googles-spell-checker-included-in-all.html
-  [15]: http://yuiblog.com/blog/2007/01/24/video-crockford-tjpl/ "Link"

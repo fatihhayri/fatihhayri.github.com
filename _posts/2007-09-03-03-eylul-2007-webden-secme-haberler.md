@@ -10,7 +10,7 @@ tags: [BluePrint, css3.0, google, Haberler, web2.0, Yahoo javascript]
 -   Blueprint'in yayınladığı CSS Anaçatısının 0.5 sürümü yayımlanmış.
     [Link][1]
 -   Yahoo javascript kütüphanesindeki(YUI) lighbox uygulamasını
-    geliştirmiş, güzelde olmuş. [Link][2]
+    geliştirmiş, güzelde olmuş.
 -   Hem İE hemde Firefox'a göre web sayfası tasarlarken nelere dikkat
     etmeliyiz. [Link][3]
 -   İşaret kutularının(chechkbox) şeklini değiştirelim. 
@@ -25,8 +25,6 @@ tags: [BluePrint, css3.0, google, Haberler, web2.0, Yahoo javascript]
   [Link]: http://www.css3.info/lists-to-get-more-decorative/
     "CSS3 ve listeler"
   [1]: http://code.google.com/p/blueprintcss/ "css anaçatısı"
-  [2]: http://thecodecentral.com/2007/08/17/yui-based-lightbox-revisit
-    "yui lightbox"
   [3]: http://www.informationweek.com/news/showArticle.jhtml?articleID=201802175
     "Firefox ve İE kodlama "
   [5]: http://googlesystem.blogspot.com/2007/08/easy-way-to-find-recent-web-pages.html

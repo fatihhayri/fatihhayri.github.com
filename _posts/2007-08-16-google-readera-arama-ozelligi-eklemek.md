@@ -15,7 +15,7 @@ Neyse çözümü var. Çözüm Firefox kullananlar için. Yapmamız gereken
 istediğimiz sayfada istediğimiz javascript kodu işletmemize yarayan
 "greasemonkey" kullanmak. Sırası ile
 
-1.  Greasmonkey kurmak [http://greasemonkey.mozdev.org/][]
+1.  Greasmonkey kurmak greasemonkey.mozdev.org/
 2.  Firefox'umuzu kapatıp açmak
 3.  http://userscripts.org/scripts/show/7062 adresinde sağ üst
     taraftaki "install this script" tıklayıp indirmek
@@ -32,5 +32,4 @@ yapılacağı(yeniler, eskiler ve otomatik), aranacak maksimum yazı sayısı,
 
 
   [RSS]: http://tr.wikipedia.org/wiki/RSS
-  [http://greasemonkey.mozdev.org/]: http://greasemonkey.mozdev.org/
   [Google Reader Arama Ekleme]: /images/googlereader_arama.gif

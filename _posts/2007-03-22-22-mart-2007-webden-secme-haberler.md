@@ -28,7 +28,7 @@ tags: [Accesskey, adobe, Ajax, Apollo, CSS, dotMobi, google, Haberler, ie7, Java
     bir site.
 -   dotMobi, cep telefonları için web geliştirme rehberi.
 -   Javascript ve DOM ile Accesskey'ler atamak ve düzenlemeyi anlatan
-    İngilizce bir makale. [Link][5]
+    İngilizce bir makale.
 -   Tasarım kodlamacıların takip etmesi gereken 42 site. [Link][6]
 -   Javascript ve CSS ile yapılmış güzel örnekler. 
 -   Popup hakkında yazılmış çok güzel ve ayrıntılı bir makale. [Link][8]
@@ -44,8 +44,6 @@ tags: [Accesskey, adobe, Ajax, Apollo, CSS, dotMobi, google, Haberler, ie7, Java
     "Link"
   [duyurdu]: http://labs.adobe.com/technologies/apollo/ "duyurdu"
   [2]: http://ajaxian.com/archives/choosing-an-ajax-framework "Link"
-  [5]: http://www.thinkvitamin.com/features/javascript/setting-and-retrieving-accesskeys-with-javascript-and-dom
-    "Link"
   [6]: http://www.smashingmagazine.com/2007/03/19/40-designtech-magazines-to-read/
   [8]: http://accessify.com/features/tutorials/the-perfect-popup/ "Link"
   [9]: http://www.456bereastreet.com/archive/200703/ie_7_does_not_resize_text_sized_in_pixels/

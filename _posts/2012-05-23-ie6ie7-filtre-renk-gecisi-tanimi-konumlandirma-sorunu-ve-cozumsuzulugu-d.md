@@ -27,7 +27,7 @@ sevinirim. Ben kaçak bir çözüm buldum :D
 
 ie7 için filtre tanımı kaldırarak sorunu giderdim. Ancak diğer ie
 sürümlerin için bir çözüm oluşturmam gerekti. Bunun için **-ms-filtre**
-özelliğini kullanmak bana mantıklı geldi. İ[nternet Explorer 7’nin %5’in altına düşmüş oranı][] ile görmezden gelinebileceğini düşünüyorum. :D
+özelliğini kullanmak bana mantıklı geldi. İnternet Explorer 7’nin %5’in altına düşmüş oranı ile görmezden gelinebileceğini düşünüyorum. :D
 
 <iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/tAFG2/1/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -43,5 +43,4 @@ olması bizi sevindiriyor.
 
   [CSS3 renk geçişi(gradient) özelliği]: http://fatihhayrioglu.com/css-renk-gecisleri-gradients/
   [İnternet Explorer’da Renk Geçişi Sorunu ve Çözümü]: http://fatihhayrioglu.com/internet-explorerda-renk-gecisi-sorunu-ve-cozumu/
-  [nternet Explorer 7’nin %5’in altına düşmüş oranı]: http://labs.sahibinden.com/yazi/sahibinden-com-nisan-2012-ziyaretci-teknoloji-istatistikleri/
   [http://brian.pontarelli.com/2011/09/20/ie-filter-gradient-and-positioning-bug/]: http://brian.pontarelli.com/2011/09/20/ie-filter-gradient-and-positioning-bug/

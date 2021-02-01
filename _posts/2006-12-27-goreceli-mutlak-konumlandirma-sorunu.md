@@ -39,8 +39,7 @@ uygulanan bir yöntemdir.
 
 ## Kaynak
 
--   [http://www.positioniseverything.net/abs_relbugs.html][]
+-   positioniseverything.net/abs_relbugs.html
 
   [100]: /images/konumlandirma_hata_ff.gif
   [1]: /images/konumlandirma_hata_ie.gif
-  [http://www.positioniseverything.net/abs_relbugs.html]: http://www.positioniseverything.net/abs_relbugs.html

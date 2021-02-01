@@ -18,7 +18,7 @@ uzunca haber vereceğiz bu sefer
 -   Google yavaş yavaş servislerinin asıl sürümlerine geçiyor Google
     News'den sonra şimdide Blogger'un bazı sorunlarını hallettikten
     sonra betasını kaldırmış. [Link][1]
--   CSS ile en kolay şekilde saydamlık tanımı nasıl yapılır. [Link][2]
+-   CSS ile en kolay şekilde saydamlık tanımı nasıl yapılır.
 -   Hadi spam siteleri Google'a bildirelim. Artık Google'a arama sonucu
     ile alakasız olan siteleri bildirebiliyoruz. [Link][3]
 -   CSS ile yapılmış siteleri listeleyen sitelerin listesi [Link][4]
@@ -49,7 +49,6 @@ uzunca haber vereceğiz bu sefer
   [http://googlesystem.blogspot.com/]: http://googlesystem.blogspot.com/2006/12/how-to-add-search-to-google-reader.html
   [Link]: http://www.google.com/reader/
   [1]: http://www.blogger.com/
-  [2]: http://bitesizestandards.com/bites/easy-cross-browser-transparency
   [3]: http://www.google.com.tr/contact/spamreport.html
   [4]: http://www.smashingmagazine.com/2006/12/21/creme-de-la-creme-of-css-list-of-css-galleries/
   [5]: http://www.smashingmagazine.com/2006/12/29/css-based-tables-modern-solutions/

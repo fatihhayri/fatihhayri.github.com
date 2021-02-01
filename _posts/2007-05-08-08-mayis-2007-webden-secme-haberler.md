@@ -11,7 +11,6 @@ tags: [Ajax, CSS, Firefox, float, Haberler, Javascript, web, WordPress]
 -   Javascript kütüphanelerinden Prototype 1.5.1 versiyonu çıkmış.
 -   Resimleri yakınlaştırma scripti, gayet başarılı.
 -   Mehmet Nuri Çankaya'nın "Semantik Web" makalesine bir göz atın.
-    [Link][3]
 -   Andy Budd CSS3.0 hakkında bir makale yazmış "CSS2.2"!
 -   CSS ile yapılmış farklı bir hover(fare üzerinde geldiğinde çığlık
     atan yani:D) efekti. [Link][5]
@@ -24,7 +23,6 @@ tags: [Ajax, CSS, Firefox, float, Haberler, Javascript, web, WordPress]
 -   Gelişen javascript ile programlama ile ilgili güzel bir video dersi.
 
 
-  [3]: http://www.nuricankaya.com/default.asp?gunluk_id=188 "Link"
   [5]: http://veerle.duoh.com/blog/comments/css_hover_effect/ "Link"
   [6]: http://blogs.zdnet.com/microsoft/?p=416 "Link"
   [9]: http://www.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/

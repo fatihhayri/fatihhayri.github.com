@@ -7,6 +7,4 @@ Category: Haberler
 
 IE 7 çıkmadan ortalığı kavurmaya başladı. Bir çok makale yazılmaya
 başladı. Bir sorun var İngilzice bu makaleler
-http://nanobox.chipx86.com/blog/ [http://www.thinkvitamin.com/][]
-
-  [http://www.thinkvitamin.com/]: http://www.thinkvitamin.com/features/css/stop-css-hacking
+http://nanobox.chipx86.com/blog/ thinkvitamin.com/

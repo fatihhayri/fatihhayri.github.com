@@ -10,7 +10,7 @@ tags: [CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress]
     kopyalayıp yapıştırma zahmetinden kurtulmak. Çok güzel bir düşünce
     şimdilik test aşamasında olduğu için projelerinizde kullanılması
     önerilmiyor. Çok güzel bir çalışma olmuş. Link
--   CSS hata yakalama araçları. [Link][]
+-   CSS hata yakalama araçları.
 -   100% Kolay okuma standartlarının sıralandığı güzel bir İngilizce
     makale. [Link][1]
 -   Negatif kenar boşluğununu pozitik kenarları adlı İngilzce güzel bir
@@ -30,8 +30,6 @@ tags: [CSS, Haberler, Jeffrey Zeldman, jquery, rss, WordPress]
     altında
 
 
-  [Link]: http://manwithnoblog.com/2007/08/05/css-debugging-tools/
-    "CSS hata yakalama araçları"
   [1]: http://www.informationarchitects.jp/100E2R/ "100% kolay okuma"
   [2]: http://www.search-this.com/2007/08/01/the-positive-side-of-negative-margins/
     "negatif kenar boşluğu"

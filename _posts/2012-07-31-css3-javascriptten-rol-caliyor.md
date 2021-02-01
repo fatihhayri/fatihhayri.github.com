@@ -507,7 +507,7 @@ uygulama yapılmaktadır. Benim gördüğüm
     (liste görünümü)
 -   [http://thecodeplayer.com/walkthrough/make-a-stopwatch-using-css3-without-images-or-javascript][]
     (kronometre)
--   [http://www.ryancollins.me/?p=1041][] (gizle -göster)
+-   ryancollins.me/?p=1041
 
 Kaynaklar
 ---------
@@ -580,7 +580,6 @@ Kaynaklar
   [http://cssdeck.com/item/269/css-news-ticker]: http://cssdeck.com/item/269/css-news-ticker
   [http://cssdeck.com/item/513/colourful-css-loader]: http://cssdeck.com/item/513/colourful-css-loader
   [http://www.hongkiat.com/blog/css3-animation-advanced-marquee/]: http://www.hongkiat.com/blog/css3-animation-advanced-marquee/
-  [http://www.ryancollins.me/?p=1041]: http://www.ryancollins.me/?p=1041
   [http://speckyboy.com/2010/04/26/30-pure-css-alternatives-to-javascript/]: http://speckyboy.com/2010/04/26/30-pure-css-alternatives-to-javascript/
   [http://css-tricks.com/the-checkbox-hack/]: http://css-tricks.com/the-checkbox-hack/
   [http://www.inserthtml.com/2012/04/css-click-states/]: http://www.inserthtml.com/2012/04/css-click-states/

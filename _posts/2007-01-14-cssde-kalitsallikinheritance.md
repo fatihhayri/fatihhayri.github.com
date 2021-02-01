@@ -131,14 +131,12 @@ nedeni ile de bir çok sorunla karşılaştığımızıda unutmayalım.
 -   http://www.simplebits.com
 -   [http://www.devarticles.com][]
 -   [http://www.w3.org/TR/REC-CSS1#inheritance][]
--   [http://www.adobe.com/][]
+-   adobe.com/
 -   http://www.creativepro.com
 -   [http://meyerweb.com/][]
 
 
   [(X)HTML Sayfa Yapısı ve CSS Kullanımı]: http://fatihhayrioglu.com/xhtml-sayfa-yapisi-ve-css-kullanimi/
   [Hızlı CSS Referansı]: http://fatihhayrioglu.com/hizli-css-referansi/
-  [http://www.devarticles.com]: http://www.devarticles.com/c/a/Web-Style-Sheets/Learn-CSS-Introduction-to-Inheritance-Specificity-and-Cascade/3/
   [http://www.w3.org/TR/REC-CSS1#inheritance]: http://www.w3.org/TR/REC-CSS1#inheritance
-  [http://www.adobe.com/]: http://www.adobe.com/devnet/dreamweaver/articles/css_inheritance.html
   [http://meyerweb.com/]: http://meyerweb.com/eric/articles/webrev/199903.html

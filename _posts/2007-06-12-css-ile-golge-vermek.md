@@ -288,7 +288,7 @@ tanımlamamıza olanak sağlıyor. Ama bunu için beklemek zorundayız.
 -   [http://alistapart.com/articles/onionskin/][]
 -   [http://alistapart.com/articles/cssdrop2/][]
 -   [http://www.clagnut.com][www.clagnut.com]
--   [http://www.1976design.com/blog/archive/2003/11/14/shadows/][]
+-   1976design.com/blog/archive/2003/11/14/shadows/
 -   http://www.friendsofed.com/book.html?isbn=1590596145
 
 
@@ -301,4 +301,3 @@ tanımlamamıza olanak sağlıyor. Ama bunu için beklemek zorundayız.
   [Onion Skinned]: /dokumanlar/images/onion_skin.gif
   [http://alistapart.com/articles/onionskin/]: http://alistapart.com/articles/onionskin/
   [http://alistapart.com/articles/cssdrop2/]: http://alistapart.com/articles/cssdrop2/
-  [http://www.1976design.com/blog/archive/2003/11/14/shadows/]: http://www.1976design.com/blog/archive/2003/11/14/shadows/

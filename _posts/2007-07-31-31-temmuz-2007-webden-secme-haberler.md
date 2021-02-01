@@ -8,7 +8,7 @@ tags: [csharp, CSS, Dust-Me, Firefox, google, Haberler, jquery, web, WordPress]
 
 -   20 adet online CSS aracı. [Link][]
 -   Sayfalarınızdaki kullanılmayan css atamalarını gösteren bir Firefox
-    eklentisi. [Link][1]
+    eklentisi.
 -   Web ile alakalı güzel ve renkli bir site açılmış. [Link][2]
 -   Firefox tablarını kontrol etmenin 10 yolu.
 -   C# ve .Net kullanlara güzel araçlar ve öneriler.
@@ -23,7 +23,6 @@ tags: [csharp, CSS, Dust-Me, Firefox, google, Haberler, jquery, web, WordPress]
 
   [Link]: http://cssjuice.com/20-popular-css-online-tools/
     "CSS Araçları"
-  [1]: http://www.sitepoint.com/dustmeselectors/ "Dust-Me"
   [2]: http://www.webdesignerwall.com/ "web designer wall"
   [5]: http://www.phpfour.com/blog/2007/06/30/jquery-essentials/
     "jquery"

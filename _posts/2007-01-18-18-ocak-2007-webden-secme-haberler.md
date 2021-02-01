@@ -15,7 +15,7 @@ tags: [Ajax, CSS, Erişebilirlik, Google Analytics, html, internet explorer, Wik
     sorunu yeni versiyonun çıkmasına neden olmuş. [Link][2]
 -   Internet Explorer 7 Türkçe çıktı. Ayrıca IE 8.0 versiyonu
     çalışmalarına başlamış. [Link][3]
--   blogcu.com kendini yenilemiş. [Link][4]
+-   blogcu.com kendini yenilemiş. 
 -   Ajax ile hazırlanmış güzel bir online web sitesi hazırlama sitesi
     [Link][5]
 -   CSS ve javascript ile hazırlanmış linklere favori ikonlarını ekleme
@@ -32,7 +32,6 @@ tags: [Ajax, CSS, Erişebilirlik, Google Analytics, html, internet explorer, Wik
     "Link"
   [2]: http://www.wordpress-tr.com/wordpress-207/ "Link"
   [3]: http://shiftdelete.net/site/content/view/1162/1/ "Link"
-  [4]: http://www.blogcu.com/ "Link"
   [5]: http://www.weebly.com/ "Link"
   [7]: http://www.wikiseek.com/ "Link"
   [8]: http://www.instigatorblog.com/10-things-you-must-do-when-changing-wordpress-themes/2007/01/15/

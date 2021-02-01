@@ -21,9 +21,7 @@ tags: [Firefox, google-translate, gTrans, html, internet, Javascript, web, XHTML
 -   Google Google Translate aracının programını çıkarmış. Hem de
     programı kullanmak için yüklemeye gerek yok. USB üzerinden
     çalışabiliyor. Bir de Türkçe'yi ekleseler ne güzel olur değil mi?
-    [Link][6]
 
 
   [3]: http://www.ubuntugeek.com/speed-up-firefox-web-browser.html
   [5]: http://wiki.whatwg.org/wiki/HtmlVsXhtml "Link"
-  [6]: http://mcrenox.com.ar/gtrans/ "Link"

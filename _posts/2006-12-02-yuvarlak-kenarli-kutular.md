@@ -170,7 +170,7 @@ kutu oluşturulmuş olur.
 Yuvarlak kenarlı kutu yapımında bir çok örnek ve yöntem mevcut, aşağıda
 ki link de bu metodları linkleri ile katagorize etmişler:
 
-[http://css-discuss.incutio.com/?page=RoundedCorners][]
+css-discuss.incutio.com/?page=RoundedCorners
 
   [100]: /images/ust_yuvarlak.gif
   [1]: /images/alt_yuvarlak.gif
@@ -179,4 +179,3 @@ ki link de bu metodları linkleri ile katagorize etmişler:
   [4]: /dokumanlar/degradeli_yuvarlak_kenarli_kutu.zip
   [5]: /images/esnek_ornek.gif
   [6]: /dokumanlar/esnek_yuvarlak_kenarli_kutu.zip
-  [http://css-discuss.incutio.com/?page=RoundedCorners]: http://css-discuss.incutio.com/?page=RoundedCorners

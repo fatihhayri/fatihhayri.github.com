@@ -21,8 +21,8 @@ tags: [CSS, Firefox, GfxDizayn, google, Haberler, Javascript, php, PodCast, web,
     WordPress2.1.2 deyin. [Link][6]
 -   Javascript dosyalarımız ve kullandığımız yöntemleri irdeleyerek web
     sitelerinin performansını arttırmaya yönelik makale dizsinin
-    üçüncüsü çerezleri kontrol altına almak üzerine. [Link][7]
--   Yahoo web tarayıcılarını yarıştırmış. İngilizce bir video. [Link][8]
+    üçüncüsü çerezleri kontrol altına almak üzerine.
+-   Yahoo web tarayıcılarını yarıştırmış. İngilizce bir video.
 -   CSS ve Javascript yardımı ile kart yapan kod.
 
 
@@ -32,6 +32,3 @@ tags: [CSS, Firefox, GfxDizayn, google, Haberler, Javascript, php, PodCast, web,
     "Link"
   [5]: http://googlesystem.blogspot.com/2007/03/find-facts-using-advanced-search.html
   [6]: http://wordpress.org/development/2007/03/upgrade-212/ "Link"
-  [7]: http://yuiblog.com/blog/2007/03/01/performance-research-part-3/
-    "Link"
-  [8]: http://yuiblog.com/blog/2007/03/05/browserwars/ "Link"
