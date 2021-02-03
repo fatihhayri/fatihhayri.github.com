@@ -10,7 +10,7 @@ tags: [css3.0, firebug, Haberler, table, tipografi, Visual-Studio, web2.0, xslt]
     ajax kontrolleri hakkında bilgilendirici bir makale. [Link][]
 -   CSS ile yapılmış ilginç bir çalışma. [Link][1]
 -   CSS ile ne kadar güzel tablolar yapabileceğimizi gösteren güzel bir
-    makale. [Link][2]
+    makale.
 -   Web sayfalarında görünüm ve tipografi hakkında güzel bir makale.
     [Link][3]
 -   Beklemek zorunda olduğumuz bir kaç CSS özelliği. [Link][4]
@@ -27,8 +27,6 @@ tags: [css3.0, firebug, Haberler, table, tipografi, Visual-Studio, web2.0, xslt]
   [Link]: http://weblogs.asp.net/scottgu/archive/2007/08/19/using-asp-net-ajax-control-extenders-in-vs-2008.aspx
     "vs.net ajax kontrolleri"
   [1]: http://www.wpdfd.com/issues/82/list_style_inspiration/ "CSS Link"
-  [2]: http://veerle.duoh.com/blog/comments/a_css_styled_table_version_2/
-    "yakışıklı tablolar"
   [3]: http://astheria.com/design/the-elements-of-design-applied-totheweb
     "web tipografi"
   [4]: http://www.css3.info/css-techniques-i-cant-wait-to-be-rid-of/

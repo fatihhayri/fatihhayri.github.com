@@ -243,7 +243,7 @@ p:first-child:first-letter{
 ## Kaynaklar
 
 -   [http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/][]
--   [http://safalra.com/web-design/typography/css-drop-caps/][]
+-   safalra.com/web-design/typography/css-drop-caps/
 -   [http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps][] (jquery ile)
 -   [http://www.htmldog.com/articles/dropcaps/][]
 -   [http://css-tricks.com/snippets/css/drop-caps/][]
@@ -271,7 +271,6 @@ p:first-child:first-letter{
   [11]: /images/drop_caps_08.gif
   [first-child]: https://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/
   [http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/]: http://www.sitepoint.com/blogs/2010/04/15/a-simple-css-drop-cap/
-  [http://safalra.com/web-design/typography/css-drop-caps/]: http://safalra.com/web-design/typography/css-drop-caps/
   [http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps]: http://www.learningjquery.com/2006/12/multiple-fancy-drop-caps
   [http://www.htmldog.com/articles/dropcaps/]: http://www.htmldog.com/articles/dropcaps/
   [http://css-tricks.com/snippets/css/drop-caps/]: http://css-tricks.com/snippets/css/drop-caps/

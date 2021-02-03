@@ -13,7 +13,7 @@ tags: [Ajax, CSS, Firefox, float, Haberler, Javascript, web, WordPress]
 -   Mehmet Nuri Çankaya'nın "Semantik Web" makalesine bir göz atın.
 -   Andy Budd CSS3.0 hakkında bir makale yazmış "CSS2.2"!
 -   CSS ile yapılmış farklı bir hover(fare üzerinde geldiğinde çığlık
-    atan yani:D) efekti. [Link][5]
+    atan yani:D) efekti.
 -   Firefox'un yükselişine engel olamayan Microsoft çare aramaya başladı
     IE8.0 yolda, konu hakkında bir makale.
 -   10 adet seçme, güzel WordPress teması.
@@ -23,6 +23,5 @@ tags: [Ajax, CSS, Firefox, float, Haberler, Javascript, web, WordPress]
 -   Gelişen javascript ile programlama ile ilgili güzel bir video dersi.
 
 
-  [5]: http://veerle.duoh.com/blog/comments/css_hover_effect/ "Link"
   [9]: http://www.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/
     "Link"

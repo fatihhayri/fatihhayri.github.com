@@ -413,7 +413,7 @@ mi ama olmadı.
 -   [http://reference.sitepoint.com/css/mediaqueries][]
 -   http://www.webdesignlondon-tristar.co.uk/website-design-london/css3-media-queries-responsive-web-design
 -   [http://www.maxdesign.com.au/articles/css3-media-queries/][] (slayt gösterisi)
--   [http://msdn.microsoft.com/en-us/scriptjunkie/gg619395.aspx][]
+-   msdn.microsoft.com/en-us/scriptjunkie/gg619395.aspx
 -   [http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/][]
 -   [http://code.google.com/p/css3-mediaqueries-js/][] (ie eski sürümleri için js kodu)
 -   [http://blog.iwalt.com/2010/06/targeting-the-iphone-4-retina-display-with-css3-media-queries.html][] (iphone 4 için )

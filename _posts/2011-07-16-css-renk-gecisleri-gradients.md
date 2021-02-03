@@ -536,7 +536,6 @@ Kalın sağlıcakla
   [https://developer.mozilla.org/en-us/docs/Web/CSS/repeating-linear-gradient]: https://developer.mozilla.org/en-us/docs/Web/CSS/repeating-linear-gradient
   [http://24ways.org/2010/everything-you-wanted-to-know-about-gradients]: http://24ways.org/2010/everything-you-wanted-to-know-about-gradients
   [http://lea.verou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/]: http://lea.verou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/
-  [http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGradients]: http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGradients
   [http://www.webdirections.org/blog/css3-radial-gradients/]: http://www.webdirections.org/blog/css3-radial-gradients/
   [http://designfestival.com/a-farewell-to-css3-gradients/]: http://designfestival.com/a-farewell-to-css3-gradients/
 

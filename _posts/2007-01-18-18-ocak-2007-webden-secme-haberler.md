@@ -14,7 +14,7 @@ tags: [Ajax, CSS, Erişebilirlik, Google Analytics, html, internet explorer, Wik
 -   WordPress 2.0.7 versiyonu çıktı. PHP güvenlik açığı ve Feedburner
     sorunu yeni versiyonun çıkmasına neden olmuş. [Link][2]
 -   Internet Explorer 7 Türkçe çıktı. Ayrıca IE 8.0 versiyonu
-    çalışmalarına başlamış. [Link][3]
+    çalışmalarına başlamış.
 -   blogcu.com kendini yenilemiş. 
 -   Ajax ile hazırlanmış güzel bir online web sitesi hazırlama sitesi
     [Link][5]
@@ -31,7 +31,6 @@ tags: [Ajax, CSS, Erişebilirlik, Google Analytics, html, internet explorer, Wik
   [Link]: http://www.456bereastreet.com/archive/200701/seven_accessibility_mistakes_you_dont_want_to_make/
     "Link"
   [2]: http://www.wordpress-tr.com/wordpress-207/ "Link"
-  [3]: http://shiftdelete.net/site/content/view/1162/1/ "Link"
   [5]: http://www.weebly.com/ "Link"
   [7]: http://www.wikiseek.com/ "Link"
   [8]: http://www.instigatorblog.com/10-things-you-must-do-when-changing-wordpress-themes/2007/01/15/

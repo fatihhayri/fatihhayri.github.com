@@ -18,7 +18,7 @@ tags: [ASP.NET, firebug, ie6, ie8, jquery, poster, WordPress]
 -   jQuery ile hızlı arama. [Bağlantı][8]
 -   jquery ile yapılmış güzel bir mesaj eklentisi. Kırık bağlantı.
 -   Web site ardalan resimleri. [Bağlantı][10]
--   Asp.net 3 aşamalı kod yazma tekniği. [Bağlantı][11]
+-   Asp.net 3 aşamalı kod yazma tekniği.
 -   IE6 için PNG düzenlemesi, alternatif bir script uygulaması.
 -   WordPress 2.6 sürüm yayınlandı. [Bağlantı][13]
 -   "Digg Yeni Tavsiye Sistemi" - m3hmet.com Kırık bağlantı.
@@ -39,7 +39,6 @@ tags: [ASP.NET, firebug, ie6, ie8, jquery, poster, WordPress]
   [8]: http://ejohn.org/blog/jquery-livesearch/ "hızlı arama"
   [10]: http://www.smashingmagazine.com/2008/07/09/textures-and-patterns-design-showcase/
     "ardalan resimleri"
-  [11]: http://dotnetfunda.com/articles/article71.aspx "3 aşamalı kod"
   [13]: http://wordpress.org/development/2008/07/wordpress-26-tyner/
     "WordPress"
   [15]: http://www.chip.com.tr/konu/IE-8-Viruslere-karsi-SmartScreen-Filter_7637.html

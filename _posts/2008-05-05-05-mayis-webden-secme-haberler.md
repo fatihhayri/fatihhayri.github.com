@@ -15,7 +15,7 @@ tags: [css kod, datagrid, feedburner, form denetimi, google pagerank, ie6, javsc
     [Bağlantı][3]
 -   JQuery'den ASP.net WebMethod çağırmak.
 -   Güzel görünümlü form denetimi.
--   CSS ve düzeltmeleri il ilgili güzel bir makale. [Bağlantı][6]
+-   CSS ve düzeltmeleri il ilgili güzel bir makale.
 -   Google PageRank güncellemesi yapmış. Bizede 5 vermiş. :D
 -   Smashing Magazine Nisan 2008 yazılarını derlemiş. Ortaya güzel bir
     liste çıkmış. [Bağlantı][7]
@@ -34,8 +34,6 @@ tags: [css kod, datagrid, feedburner, form denetimi, google pagerank, ie6, javsc
     "klavye ve mosue"
   [3]: http://googlesystem.blogspot.com/2008/04/feedburner-moves-to-google-accounts.html
     "feedburner google a taşındı"
-  [6]: http://veerle.duoh.com/blog/comments/starting_with_css_and_bug_fixing_tips/
-    "css ve düzeltmeler"
   [7]: http://www.smashingmagazine.com/2008/04/30/best-of-april-2008/
     "smashing magazine"
   [8]: http://www.smashingmagazine.com/2008/05/02/improving-code-readability-with-css-styleguides/

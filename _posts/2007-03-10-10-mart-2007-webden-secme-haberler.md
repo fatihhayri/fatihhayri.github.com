@@ -6,7 +6,7 @@ Category: Haberler
 tags: [adsl, bandtwith, CSS, Haberler, ie7, Javascript, optimize, Web Standartları, youtube]
 ---
 
--   Javascript ve CSS ile yapılan resim gösterme kodları. [Link][]
+-   Javascript ve CSS ile yapılan resim gösterme kodları.
 -   Web standartları ve dokuman yapısı ile ilgili güzel bir İngilizce
     makale. [Link][1]
 -   Web sayfalarına belli aralıklarda ızgaralara bölüp sonra bu
@@ -33,7 +33,6 @@ tags: [adsl, bandtwith, CSS, Haberler, ie7, Javascript, optimize, Web Standartla
     atın. [Link][9]
 
 
-  [Link]: http://vikjavev.no/highslide/ "Link"
   [1]: http://nefariousdesigns.co.uk/archive/2007/03/semantics-and-structure/
   [3]: http://www.codinghorror.com/blog/archives/000807.html "Link"
   [6]: http://www.ntvmsnbc.com/ "Link"

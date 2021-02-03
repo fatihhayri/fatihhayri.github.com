@@ -6,7 +6,7 @@ Category: Haberler
 tags: [CSS, google, Haberler, Javascript, microsoft, tooltip, XHTML]
 ---
 
--   Microsoft bilgisayar kullanma mantığımızı değiştiriyor. [Link][]
+-   Microsoft bilgisayar kullanma mantığımızı değiştiriyor.
 -   CSS ile güzel görünümlü form yapmayı anlatan ingilizce güzel bir
     makale.
 -   PNG ile web sayfası yapmayı anlatan güzel bir makale.
@@ -18,6 +18,5 @@ tags: [CSS, google, Haberler, Javascript, microsoft, tooltip, XHTML]
     hazırlamanın ipuçlarının anlatıldığı İngilizce bir makale.
 
 
-  [Link]: http://www.microsoft.com/surface/ "Link"
   [3]: http://gears.google.com/ "Link"
   [5]: http://www.w3counter.com/globalstats.php?date=2007-05-20 "Link"

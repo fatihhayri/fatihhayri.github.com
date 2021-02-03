@@ -416,8 +416,8 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
 -   http://blog.anomalyinnovations.com/2010/03/creating-a-realistic-looking-button-with-css3
 -   [http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/][]
 -   [http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/][]
--   [http://codecanyon.net/item/fancy-2-line-css-buttons/109049][]
--   [http://codecanyon.net/item/css3-buttons/109193][]
+-   codecanyon.net/item/fancy-2-line-css-buttons/109049
+-   codecanyon.net/item/css3-buttons/109193
 -   http://vandelaydesign.com/blog/galleries/button-design-showcase
 -   [http://www.leemunroe.com/call-to-action-buttons/][]
 -   [http://www.uxbooth.com/blog/good-call-to-action-buttons/][] (tasarımda dahil)
@@ -460,8 +460,6 @@ bulunmaktadır aşağıdaki bağlantıları incelemenizi önemle rica ediyorum.
   [http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/]: http://www.456bereastreet.com/archive/200705/creating_bulletproof_graphic_link_buttons_with_css/
   [http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/]: http://net.tutsplus.com/tutorials/html-css-techniques/build-kick-ass-practical-css3-buttons/
   [http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/]: http://www.smashingmagazine.com/2006/11/03/design-patterns-download-buttons/
-  [http://codecanyon.net/item/fancy-2-line-css-buttons/109049]: http://codecanyon.net/item/fancy-2-line-css-buttons/109049
-  [http://codecanyon.net/item/css3-buttons/109193]: http://codecanyon.net/item/css3-buttons/109193
   [http://www.leemunroe.com/call-to-action-buttons/]: http://www.leemunroe.com/call-to-action-buttons/
   [http://www.uxbooth.com/blog/good-call-to-action-buttons/]: http://www.uxbooth.com/blog/good-call-to-action-buttons/
   [http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/]: http://www.smashingmagazine.com/2009/10/13/call-to-action-buttons-examples-and-best-practices/

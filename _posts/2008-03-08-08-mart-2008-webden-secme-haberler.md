@@ -8,7 +8,7 @@ tags: [CSS, css3, ie8, jquery, zoque]
 
 -   IE8 Beta 1 çıktı. Daha hızlı bir ie, tam CSS2.1 desteği, ajax ile
     daha kolay iletişim, daha az hafıza kullanım oranı ve Acid2
-    testinden geçmiş. [Bağlantı][]
+    testinden geçmiş.
 -   CSS3 ile araç ipucu yapmak. [Bağlantı][1]
 -   10 adet CSS düzeltme kodu. Güzel bir derleme.
 -   10 adet jquery ile yapılmış güzel örnekler ve nasıl yapıldığını
@@ -25,8 +25,6 @@ tags: [CSS, css3, ie8, jquery, zoque]
 -   IE8 beta sonrası tarayıcı test sonuçları.
 
 
-  [Bağlantı]: http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm
-    "ie 8"
   [1]: http://www.css3.info/tooltips-with-css3/ "araç ipucu css3"
   [3]: http://www.webdesignerwall.com/tutorials/jquery-tutorials-for-designers/
     "10 jquery"

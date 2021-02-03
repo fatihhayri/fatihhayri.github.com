@@ -8,7 +8,7 @@ tags: [ASP.NET, bloglar için gelir, css ile site yapmak, css in geleceği, css 
 
 -   Asp.net'de satıriçi kod yazmak.
 -   Internet Explorer'un 5. sürümünden 8. sürümüne kadarki CSS
-    gelişmesini gösteren bir tablo. [Bağlantı][1]
+    gelişmesini gösteren bir tablo.
 -   CSS'de bilmemiz gerek 6 teknik. [Bağlantı][2]
 -   CSS'in geleceği: Değişkenler ve Hesaplamalar. [Bağlantı][3]
 -   CSS ile hazırladığımız Dikey menülerimizi javascript yardımı ile
@@ -26,8 +26,6 @@ tags: [ASP.NET, bloglar için gelir, css ile site yapmak, css in geleceği, css 
 -   "WordPress 2.5 ve Wp Super Cache" [Bağlantı][13]
 
 
-  [1]: http://msdn2.microsoft.com/en-us/library/cc351024%28VS.85%29.aspx
-    "ie 5-8"
   [2]: http://trevordavis.net/blog/tutorial/the-6-most-important-css-techniques-you-need-to-know/
     "css in 6 tekniği"
   [3]: http://www.broken-links.com/2008/04/01/future-css-variables-and-calculations/

@@ -223,7 +223,7 @@ ediyorum, özellikle [Doruk][], bu konuda bildiğim bir çok şeyi ondan
 -   [http://inchoo.net/tools/basic-git-usage-from-console/][]
 -   foch.com.tr/versiyon-kontrol-git-svn-cvs.html
 -   [http://mhazer.blogspot.com/2010/12/versiyon-yonetim-sistemi-olarak-git.html][]
--   [http://www.kodcu.com/2011/04/git-mi-subversion-mi/][]
+-   kodcu.com/2011/04/git-mi-subversion-mi/
 -   [http://net.tutsplus.com/tutorials/other/the-perfect-workflow-with-git-github-and-ssh/][]
 -   [http://net.tutsplus.com/tutorials/other/easy-version-control-with-git/][]
 -   [http://tr.wikipedia.org/wiki/S%C3%BCr%C3%BCm_Kontrol_Sistemi][]
@@ -238,7 +238,6 @@ ediyorum, özellikle [Doruk][], bu konuda bildiğim bir çok şeyi ondan
   [Doruk]: http://twitter.com/#!/dorukozalp
   [http://inchoo.net/tools/basic-git-usage-from-console/]: http://inchoo.net/tools/basic-git-usage-from-console/
   [http://mhazer.blogspot.com/2010/12/versiyon-yonetim-sistemi-olarak-git.html]: http://mhazer.blogspot.com/2010/12/versiyon-yonetim-sistemi-olarak-git.html
-  [http://www.kodcu.com/2011/04/git-mi-subversion-mi/]: http://www.kodcu.com/2011/04/git-mi-subversion-mi/
   [http://net.tutsplus.com/tutorials/other/the-perfect-workflow-with-git-github-and-ssh/]: http://net.tutsplus.com/tutorials/other/the-perfect-workflow-with-git-github-and-ssh/
   [http://net.tutsplus.com/tutorials/other/easy-version-control-with-git/]: http://net.tutsplus.com/tutorials/other/easy-version-control-with-git/
   [http://tr.wikipedia.org/wiki/S%C3%BCr%C3%BCm_Kontrol_Sistemi]: http://tr.wikipedia.org/wiki/S%C3%BCr%C3%BCm_Kontrol_Sistemi

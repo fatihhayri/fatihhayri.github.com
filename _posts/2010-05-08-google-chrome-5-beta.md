@@ -110,9 +110,9 @@ bu durumun dışında tutmalı. 
 
 -   [http://googlesystem.blogspot.com/2010/05/10-things-to-try-in-google-chrome-5.html][]
 -   [http://thenextweb.com/tr/2010/05/05/yuzde-35-daha-hizli-yeni-chrome-beta-yayinlandi][]
--   [http://shiftdelete.net/en-hizlisi-google-chrome-20392.html][]
+-   shiftdelete.net/en-hizlisi-google-chrome-20392.html
 -   [http://chrome.blogspot.com/2010/05/pedal-to-chrome-metal-our-fastest-beta.html][]
--   [http://download.cnet.com/Google-Chrome-beta/3000-2356_4-10958228.html][]
+-   download.cnet.com/Google-Chrome-beta/3000-2356_4-10958228.html
 
 
   [100]: /images/chrome5_01.gif
@@ -120,6 +120,4 @@ bu durumun dışında tutmalı. 
   [2]: /images/chrome5_03.gif
   [http://googlesystem.blogspot.com/2010/05/10-things-to-try-in-google-chrome-5.html]: http://googlesystem.blogspot.com/2010/05/10-things-to-try-in-google-chrome-5.html
   [http://thenextweb.com/tr/2010/05/05/yuzde-35-daha-hizli-yeni-chrome-beta-yayinlandi]: http://thenextweb.com/tr/2010/05/05/yuzde-35-daha-hizli-yeni-chrome-beta-yayinlandi
-  [http://shiftdelete.net/en-hizlisi-google-chrome-20392.html]: http://shiftdelete.net/en-hizlisi-google-chrome-20392.html
   [http://chrome.blogspot.com/2010/05/pedal-to-chrome-metal-our-fastest-beta.html]: http://chrome.blogspot.com/2010/05/pedal-to-chrome-metal-our-fastest-beta.html
-  [http://download.cnet.com/Google-Chrome-beta/3000-2356_4-10958228.html]: http://download.cnet.com/Google-Chrome-beta/3000-2356_4-10958228.html

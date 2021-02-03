@@ -301,7 +301,7 @@ Kalın sağlıcakla
 - [http://css-tricks.com/snippets/css/a-guide-to-flexbox/][3]
 - [https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes][4]
 - [http://coding.smashingmagazine.com/2013/05/22/centering-elements-with-flexbox/][5] 
-- [http://msdn.microsoft.com/en-us/library/ie/hh673531(v=vs.85).aspx][6]
+- msdn.microsoft.com/en-us/library/ie/hh673531(v=vs.85).aspx
 - [https://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/][7]
 - http://burakcan.me/css-flexbox-yapisina-goz-atalim/
 - [http://blog.teamtreehouse.com/responsive-design-of-the-future-with-flexbox][9]
@@ -312,7 +312,6 @@ Kalın sağlıcakla
   [3]: http://css-tricks.com/snippets/css/a-guide-to-flexbox/
   [4]: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes
   [5]: http://coding.smashingmagazine.com/2013/05/22/centering-elements-with-flexbox/
-  [6]: http://msdn.microsoft.com/en-us/library/ie/hh673531%28v=vs.85%29.aspx
   [7]: https://fatihhayrioglu.com/css3-esnek-kutu-yerlesimiflexible-box-layout/
   [9]: http://blog.teamtreehouse.com/responsive-design-of-the-future-with-flexbox
   

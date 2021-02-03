@@ -28,7 +28,7 @@ başlatın.
 
 Daha sonra .net Framework'ün son sürümünü indirip yükleyin
 
-[http://www.microsoft.com/downloads/details.aspx?displaylang=tr&FamilyID=ab99342f-5d1a-413d-8319-81da479ab0d7][]
+microsoft.com/downloads/details.aspx?displaylang=tr&FamilyID=ab99342f-5d1a-413d-8319-81da479ab0d7
 
 yukarıdaki bağlantıdan indirebilirsiniz.
 
@@ -49,7 +49,5 @@ Apple'dan ümitliyim.
     "http://blogs.msdn.com/astebner/archive/2006/05/30/611355.aspx"
   [http://cid-27e6a35d1a492af7.skydrive.live.com/self.aspx/Blog_Tools/dotnetfx_cleanup_tool.zip]: http://cid-27e6a35d1a492af7.skydrive.live.com/self.aspx/Blog_Tools/dotnetfx_cleanup_tool.zip
     "http://cid-27e6a35d1a492af7.skydrive.live.com/self.aspx/Blog_Tools/dotnetfx_cleanup_tool.zip"
-  [http://www.microsoft.com/downloads/details.aspx?displaylang=tr&FamilyID=ab99342f-5d1a-413d-8319-81da479ab0d7]: http://www.microsoft.com/downloads/details.aspx?displaylang=tr&FamilyID=ab99342f-5d1a-413d-8319-81da479ab0d7
-    "http://www.microsoft.com/downloads/details.aspx?displaylang=tr&FamilyID=ab99342f-5d1a-413d-8319-81da479ab0d7"
   [http://www.google.com/search?q=Windows+Update+80070645+vista+sp1&hl=en]: http://www.google.com/search?q=Windows+Update+80070645+vista+sp1&hl=en
     "http://www.google.com/search?q=Windows+Update+80070645+vista+sp1&hl=en"

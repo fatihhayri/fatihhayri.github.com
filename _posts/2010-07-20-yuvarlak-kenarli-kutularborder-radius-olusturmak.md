@@ -139,7 +139,7 @@ yumuşatması güzel. Background resimleri ile iyi çalışıyor, ancak CSS3
 ile olan uygulamalarda sorun çıkarıyor. CSS3 border-radius destekleyen
 tarayıcı kontrolü yapmıyorlar ve fazladan yüklenmeye neden oluyorlar.
 
-[Nifty Corners][]
+Nifty Corners
 
 Köşe yumuşatması güzel değil. Yuvarlak kenar için üretilen kodda
 gereksiz bir çok eleman var. Pek önerilebilecek bir çözüm değil.
@@ -204,7 +204,7 @@ sitesinde olduğu gibi.)
 -   [http://www.smileycat.com/miaow/archives/000044.php][] (tüm makalelerin listesi)
 -   [http://www.netzgesta.de/corner/][] (javascript)
 -   [http://www.curvycorners.net/demos/][] (javascript)
--   [http://www.html.it/articoli/niftycube/index.html][] (javascript)
+-   www.html.it/articoli/niftycube/index.html
 -   [http://www.dillerdesign.com/experiment/DD_roundies/#animation][] (javascript)
 -   [http://www.w3.org/TR/css3-background/#border-radius][]
 -   [http://www.htmlremix.com/css/curved-corner-border-radius-cross-browser][] (javascript)
@@ -223,7 +223,6 @@ sitesinde olduğu gibi.)
     "DD roundies"
   [Curvy Corners]: http://www.curvycorners.net/
   [jQuery Plugin Curvy Corners]: http://blue-anvil.com/jquerycurvycorners/test.html
-  [Nifty Corners]: http://www.html.it/articoli/niftycube/index.html
   [HTML Remix]: http://www.htmlremix.com/
   [css3pie]: http://css3pie.com/ "css3pie"
   [http://webdesignernotebook.com/css/an-ode-to-border-radius/]: http://webdesignernotebook.com/css/an-ode-to-border-radius/
@@ -245,8 +244,6 @@ sitesinde olduğu gibi.)
     "http://www.netzgesta.de/corner/"
   [http://www.curvycorners.net/demos/]: http://www.curvycorners.net/demos/
     "http://www.curvycorners.net/demos/"
-  [http://www.html.it/articoli/niftycube/index.html]: http://www.html.it/articoli/niftycube/index.html
-    "http://www.html.it/articoli/niftycube/index.html"
   [http://www.dillerdesign.com/experiment/DD_roundies/#animation]: http://www.dillerdesign.com/experiment/DD_roundies/#animation
     "http://www.dillerdesign.com/experiment/DD_roundies/#animation"
   [http://www.w3.org/TR/css3-background/#border-radius]: http://www.w3.org/TR/css3-background/#border-radius

@@ -110,7 +110,7 @@ Kalın sağlıcakla
 
 -   [http://www.w3.org/TR/2002/WD-css3-background-20020802/][]
 -   [https://developer.mozilla.org/en-us/docs/Web/CSS/background-size][]
--   [https://developer.mozilla.org/en-us/docs/Web/CSS/Scaling_background_images][]
+-   developer.mozilla.org/en-us/docs/Web/CSS/Scaling_background_images
 -   [http://robertnyman.com/css3/background-size/background-size.html][]
 -   [http://dev.opera.com/articles/view/css-text-shadows-and-background-sizing/][]
 -   [http://hacks.mozilla.org/2009/12/css-backgrounds-firefox-36/][]
@@ -130,7 +130,6 @@ Kalın sağlıcakla
   [http://whereswalden.com/files/mozilla/background-size/more-examples.html]: http://whereswalden.com/files/mozilla/background-size/more-examples.html
   [http://www.w3.org/TR/2002/WD-css3-background-20020802/]: http://www.w3.org/TR/2002/WD-css3-background-20020802/
   [https://developer.mozilla.org/en-us/docs/Web/CSS/background-size]: https://developer.mozilla.org/en-us/docs/Web/CSS/background-size
-  [https://developer.mozilla.org/en-us/docs/Web/CSS/Scaling_background_images]: https://developer.mozilla.org/en-us/docs/Web/CSS/Scaling_background_images
   [http://robertnyman.com/css3/background-size/background-size.html]: http://robertnyman.com/css3/background-size/background-size.html
   [http://dev.opera.com/articles/view/css-text-shadows-and-background-sizing/]: http://dev.opera.com/articles/view/css-text-shadows-and-background-sizing/
   [http://hacks.mozilla.org/2009/12/css-backgrounds-firefox-36/]: http://hacks.mozilla.org/2009/12/css-backgrounds-firefox-36/

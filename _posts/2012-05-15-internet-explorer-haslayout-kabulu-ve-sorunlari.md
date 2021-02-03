@@ -87,7 +87,7 @@ göstermek. Yakın zamanda [ie6’yı öldürdük][]. Gerçi hala ie6 için kod
 yazan arkadaşlar var galiba bu yönde mesajlar geliyor bana, onlar için
 yapacak pek bir şeyim yok(Allah kurtarsın!). Benim sorunum ie7’nın o
 kadarda masum olmadığını göstermek. ie7’nin kullanım yüzdesi
-[%7(makaleyi yazdığımda idi şimdi %4,5 kadar düştü)][] civarında ve
+%7(makaleyi yazdığımda idi şimdi %4,5 kadar düştü) civarında ve
 hızla düşüyor. Normalde %5’in altına inen tarayıcıların desteğini
 kaldırmakta sorun yok, tabi büyük çaplı sitelerde bu oran biraz daha
 düşüyor. İnternet Explorer’ın tüm sürümleri sorunlu evet biliyorum.
@@ -127,7 +127,6 @@ Kalın sağlıcakla
   [Mosaic]: http://en.wikipedia.org/wiki/Mosaic_web_browser
   [Trident]: http://en.wikipedia.org/wiki/Trident_(layout_engine)
   [ie6’yı öldürdük]: http://fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/
-  [%7(makaleyi yazdığımda idi şimdi %4,5 kadar düştü)]: http://labs.sahibinden.com/yazi/sahibinden-com-ziyaretcileri-2011-yili-teknoloji-analizi/
   [http://reference.sitepoint.com/css/haslayout]: http://reference.sitepoint.com/css/haslayout
   [http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx]: http://msdn.microsoft.com/en-us/library/bb250481(v=vs.85).aspx
   [http://www.alsacreations.com/article/lire/76-haslayout-internet-explorer.html]: http://www.alsacreations.com/article/lire/76-haslayout-internet-explorer.html

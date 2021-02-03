@@ -51,7 +51,6 @@ değil mi? Kontrol zamanı
     "tıklayınız."
   [http://ajaxian.com/archives/ie-8-launches-at-mix09-probably-without-one-of-your-features]: http://ajaxian.com/archives/ie-8-launches-at-mix09-probably-without-one-of-your-features
     "http://ajaxian.com/archives/ie-8-launches-at-mix09-probably-without-one-of-your-features"
-    "http://www.computerworld.com/action/article.do?command=viewArticleBasic&articleId=9129906"
   [http://www.microsoft.com/windows/internet-explorer/beta/readiness/developers-new.aspx]: http://www.microsoft.com/windows/internet-explorer/beta/readiness/developers-new.aspx
     "http://www.microsoft.com/windows/internet-explorer/beta/readiness/developers-new.aspx"
   [http://ejohn.org/blog/javascript-in-internet-explorer-8/]: http://ejohn.org/blog/javascript-in-internet-explorer-8/

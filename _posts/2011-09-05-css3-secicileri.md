@@ -895,7 +895,7 @@ Firefox için -moz ön eki kullanılması gerekiyor.
 -   [http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/][]
 -   http://dtsn.co.uk/2009/12/15/css3-selectors-last-child/
 -   [http://perishablepress.com/awesome-new-css3-selectors/][] (ilginç)
--   [https://developer.mozilla.org/en/firefox_3.5_for_developers][]
+-   developer.mozilla.org/en/firefox_3.5_for_developers
 -   [https://developer.mozilla.org/en-us/docs/Web/CSS/%3Achecked][]
 -   [https://developer.mozilla.org/en-us/docs/Web/CSS/:nth-child][]
 -   [https://developer.mozilla.org/en-us/docs/Web/CSS/:empty][]
@@ -927,7 +927,6 @@ Firefox için -moz ön eki kullanılması gerekiyor.
   [http://caniuse.com/css-sel3]: http://caniuse.com/css-sel3
   [http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/]: http://kilianvalkhof.com/2008/css-xhtml/the-css3-not-selector/
   [http://perishablepress.com/awesome-new-css3-selectors/]: http://perishablepress.com/awesome-new-css3-selectors/
-  [https://developer.mozilla.org/en/firefox_3.5_for_developers]: https://developer.mozilla.org/en/firefox_3.5_for_developers
   [https://developer.mozilla.org/en-us/docs/Web/CSS/%3Achecked]: https://developer.mozilla.org/en-us/docs/Web/CSS/%3Achecked
   [https://developer.mozilla.org/en-us/docs/Web/CSS/:nth-child]: https://developer.mozilla.org/en-us/docs/Web/CSS/:nth-child
   [https://developer.mozilla.org/en-us/docs/Web/CSS/:empty]: https://developer.mozilla.org/en-us/docs/Web/CSS/:empty

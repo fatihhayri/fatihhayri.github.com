@@ -98,7 +98,7 @@ tanım yaptığımız için klavye kullananlar için sorun olmayacaktır.
 
 ## Kaynaklar
 
--   [http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/][]
+-   gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/
     (google chrome safari de mavi kenarları yok etmek)
 -   forums.devshed.com/css-help-116/safari-input-focus-blue-border-477819.html
 -   http://dev.markhaus.com/blog/2009/03/how-to-annul-safaris-outline-effect-in-input-fields-and-friends
@@ -111,5 +111,4 @@ tanım yaptığımız için klavye kullananlar için sorun olmayacaktır.
   [3]: /images/outline_kaldirma_04.gif
   [chrome_odak]: /images/chrome_odak.gif
   [tıklayınız.]: /dokumanlar/metingirdi_kaldir_2.html
-  [http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/]: http://gandamanurung.com/css/how-to-get-rid-textinput-blue-border-in-safari/
   [http://www.usabilitypost.com/2008/10/15/css-tip-remove-mac-osx-glowing-blue-outlin-for-custom-styled-input-fields/]: http://www.usabilitypost.com/2008/10/15/css-tip-remove-mac-osx-glowing-blue-outlin-for-custom-styled-input-fields/

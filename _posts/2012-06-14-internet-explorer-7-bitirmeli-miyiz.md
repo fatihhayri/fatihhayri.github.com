@@ -210,7 +210,7 @@ sitelerden kaldırmayı unutmayın.
 -   [http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx][]
 -   [http://www.standardista.com/browsers/ie8-css-support-hac][] (güzel)
 -   [http://www.quirksmode.org/css/contents.html#t15][]
--   [http://www.computerworld.com/s/article/9217279/Google_to_dump_support_for_Microsoft_s_IE7][]
+-   computerworld.com/s/article/9217279/Google_to_dump_support_for_Microsoft_s_IE7
 -   [http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/][]
 -   [http://drupal.org/node/1217788][]
 -   [http://theie7countdown.com/][]
@@ -273,7 +273,6 @@ sitelerden kaldırmayı unutmayın.
   [http://coding.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/]: http://coding.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/
   [http://www.standardista.com/browsers/ie8-css-support-hac]: http://www.standardista.com/browsers/ie8-css-support-hac
   [http://www.quirksmode.org/css/contents.html#t15]: http://www.quirksmode.org/css/contents.html#t15
-  [http://www.computerworld.com/s/article/9217279/Google_to_dump_support_for_Microsoft_s_IE7]: http://www.computerworld.com/s/article/9217279/Google_to_dump_support_for_Microsoft_s_IE7
   [http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/]: http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/
   [http://drupal.org/node/1217788]: http://drupal.org/node/1217788
   [http://theie7countdown.com/]: http://theie7countdown.com/

@@ -15,9 +15,8 @@ tags: [CSS, Web Standartları, XHTML]
 -   Demo olarak hayatını sürdüren Google'un anında mesajlaşma programı
     Gtalk pratik kullanışı ve esnekliği ile dikkat çekiyor. İşte
     onlardan biri Gtalk ekranınızı CSS ile değiştirmek için güzel bir makale
--   CSS hakkında konularına göre ayrılmış bir çok [link][1]
+-   CSS hakkında konularına göre ayrılmış bir çok link - veerle.duoh.com/index.php/blog/links/
 
 
   [makale]: http://alistapart.com/articles/supereasyblendys
   [göz atın.]: http://www.css3.info/
-  [1]: http://veerle.duoh.com/index.php/blog/links/

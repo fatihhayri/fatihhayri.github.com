@@ -17,7 +17,7 @@ Kodlamaya başlamadan hemen bir sorun ile karşılaşıyoruz.
 
 Eşitliği gerçeğe dönüşüyor. Internet Explorer 9’dan önceki sürümlerde
 HTML5’in yeni etiketlerini ve özelliklerini desteklemiyor. ie6/ie7/ie8
-gibi [%28 kullanım oranı sahip tarayıcılar][] için bir çözüm
+gibi %28 kullanım oranı sahip tarayıcılar için bir çözüm
 üretmeliyiz. Biraz araştırınca çeşitli çözüm önerileri ile
 karşılaşıyoruz.
 
@@ -70,7 +70,6 @@ desteği için [Modernizr][] incelemekte yarar var.
 -   [http://paulirish.com/2011/the-history-of-the-html5-shiv/][] (html5 shiv in geçmişi)
 -   [http://viget.com/inspire/html5-elements-irresponsible-choice-right-now][]
 
-  [%28 kullanım oranı sahip tarayıcılar]: http://labs.sahibinden.com/yazi/sahibinden-com-nisan-2012-ziyaretci-teknoloji-istatistikleri/
   [şartlı yorumlar]: http://fatihhayrioglu.com/iede-hata-ayiklamak-icin-sartli-yorumlar-kullanmak/
   [Modernizr]: http://modernizr.com/
   [http://net.tutsplus.com/tutorials/html-css-techniques/how-to-make-all-browsers-render-html5-mark-up-correctly-even-ie6/]: http://net.tutsplus.com/tutorials/html-css-techniques/how-to-make-all-browsers-render-html5-mark-up-correctly-even-ie6/

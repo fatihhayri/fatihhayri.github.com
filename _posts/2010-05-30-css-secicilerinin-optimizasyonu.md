@@ -199,8 +199,6 @@ göre yapalım proje küçük olmuş, büyük olmuş bizi ilgilendirmesin.
     "Sözde-sınıflar(Pseudo-class) ve Sözde-elementler(Pseudo-elements)"
   [google'un önerileride]: http://code.google.com/speed/page-speed/docs/rendering.html
     "google'un önerileride"
-  [https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no]: https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no
-    "https://developer.mozilla.org/en-US/docs/CSS/Writing_Efficient_CSS?redirect=no"
   [http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/]: http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/
     "http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/"
   [http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/]: http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/

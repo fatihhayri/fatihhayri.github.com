@@ -65,7 +65,7 @@ sonra vereceğiz.
 Tarayıcı rekabetinin kızışması bize avantajlar sağlıyor. Rekabet güzel
 şey.
 
--   [http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm][]
+-   microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm
 -   [http://blogs.msdn.com/ie/archive/2008/03/03/microsoft-s-interoperability-principles-and-ie8.aspx][]
 -   http://www.blicca.com/haberler/yazilim/internet_explorer_8_beta.html
 -   456bereastreet.com/archive/200803/first_impressions_of_internet_explorer_8_beta_1/
@@ -76,7 +76,6 @@ Tarayıcı rekabetinin kızışması bize avantajlar sağlıyor. Rekabet güzel
 -   computerworld.com/action/article.do?command=viewArticleBasic&articleId=9067198&pageNumber=1
 
 
-  [http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm]: http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm
   [http://blogs.msdn.com/ie/archive/2008/03/03/microsoft-s-interoperability-principles-and-ie8.aspx]: http://blogs.msdn.com/ie/archive/2008/03/03/microsoft-s-interoperability-principles-and-ie8.aspx
   [http://annevankesteren.nl/2008/03/ie8-bad]: http://annevankesteren.nl/2008/03/ie8-bad
   [http://www.chip.com.tr/konu/Internet-Explorer-8-Beta-ile-neler-geliyor_5874.html]: http://www.chip.com.tr/konu/Internet-Explorer-8-Beta-ile-neler-geliyor_5874.html

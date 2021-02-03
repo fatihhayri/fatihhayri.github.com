@@ -12,7 +12,7 @@ CSS [geçiş efekti](https://fatihhayrioglu.com/css3-gecis-efektleri-transitions
 
 Elemanı gizle/göster yapmak için ilk düşündüğümüz geçiş efekti yükseklik değerini başlangıçta sıfır verelim tıklanınca veya üzerine gelince **auto**'ya çevirelim. Sorun burada başlıyor CSS **height** değerini sıfırdan auto'ya çekemiyor. 
 
-> [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions#Which_CSS_properties_are_animatable.3F) bu konuda ki açıklaması bu işin zor bir iş olduğu yönünde. Tarayıcılarda sıkıntıya girmektense desteklemeyelim sonucuna varmışlar :)
+> MDN bu konuda ki açıklaması bu işin zor bir iş olduğu yönünde. Tarayıcılarda sıkıntıya girmektense desteklemeyelim sonucuna varmışlar :)
 
 Bu sorunu çözmek için iki yöntem var. 
 

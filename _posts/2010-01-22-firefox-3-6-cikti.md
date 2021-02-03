@@ -58,13 +58,13 @@ Gelelim yeniliklere;
         javascript ile bir çözüm bularak kullanabiliriz. Doğrusal ve
         radyal granyen desteği geldi Firefox 3.6 ile. CSS web
         sitelerinin görselliğini tek başına ele alacak gibi.
-    -   [Çoklu background desteği][] geldi. CSS3 ile gelen bu özellik
+    -   Çoklu background desteği geldi. CSS3 ile gelen bu özellik
         bence Firefox için gecikmiş bir destek ile geldi. Gerçi ie
         desteklemediği için şimdilik duracağız. Bu özelliği kullanımı
         ile neler yapabileceğimizi düşünmek bile yeter. Ah ulan
         Microsoft.
     -   Farklı medya tiplerinin desteği geldi.
-    -   [Background genişletme][] özelliği geldi, CSS3 ile birlikte
+    -   Background genişletme özelliği geldi, CSS3 ile birlikte
         gelen bu özellik, Firefox3.6 ile destekleniyor. Flash ile
         yapılan %100 genişlik ve yükseklikteki sitelerde ardalana
         konulan sayfa backgroundunu artık css ile yapabileceğiz, ama
@@ -96,15 +96,13 @@ Birde yapımcılarından Mike Beltzner'dan dinleyelim
 -   [http://blog.mozilla.com/blog/2010/01/21/firefox-3-6-release/][]
 -   [http://hacks.mozilla.org/2010/01/firefox-3-6-is-here/][]
 -   [http://lifehacker.com/5453782/firefox-36-officially-available-brings-speed-increases-one+click-themes-and-more][]
--   [http://download.cnet.com/8301-2007_4-10438907-12.html][]
+-   download.cnet.com/8301-2007_4-10438907-12.html
 -   [http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/][]
 
   [Personas]: http://www.getpersonas.com/ "Personas"
   [tıklayınız.]: http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/ "tıklayınız."
   [font-face]: http://fatihhayrioglu.com/font-face-kullanimi/ "font-face"
-  [Gradyen]: https://developer.mozilla.org/en/Using_gradients "Gradyen"
-  [Çoklu background desteği]: https://developer.mozilla.org/en-us/docs/Web/CSS/Multiple_backgrounds "Çoklu background desteği"
-  [Background genişletme]: https://developer.mozilla.org/en-us/docs/Web/CSS/Scaling_background_images "Background genişletme"
+  [Gradyen]: https://developer.mozilla.org/en-us/docs/Web/CSS/CSS_Images/Using_CSS_gradients "Gradyen"
   [File API]: http://hacks.mozilla.org/2009/12/w3c-fileapi-in-firefox-3-6/ "File API"
   [videoyu izleyin]: http://hacks.mozilla.org/2009/12/file-drag-and-drop-in-firefox-3-6/ "videoyu izleyin"
   [2]: http://hacks.mozilla.org/2009/10/orientation-for-firefox/ "videoyu izleyin"
@@ -112,5 +110,4 @@ Birde yapımcılarından Mike Beltzner'dan dinleyelim
   [http://blog.mozilla.com/blog/2010/01/21/firefox-3-6-release/]: http://blog.mozilla.com/blog/2010/01/21/firefox-3-6-release/
   [http://hacks.mozilla.org/2010/01/firefox-3-6-is-here/]: http://hacks.mozilla.org/2010/01/firefox-3-6-is-here/
   [http://lifehacker.com/5453782/firefox-36-officially-available-brings-speed-increases-one+click-themes-and-more]: http://lifehacker.com/5453782/firefox-36-officially-available-brings-speed-increases-one+click-themes-and-more
-  [http://download.cnet.com/8301-2007_4-10438907-12.html]: http://download.cnet.com/8301-2007_4-10438907-12.html
   [http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/]: http://hacks.mozilla.org/2010/01/javascript-speedups-in-firefox-3-6/

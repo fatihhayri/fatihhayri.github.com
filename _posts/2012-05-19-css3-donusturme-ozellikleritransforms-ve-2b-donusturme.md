@@ -436,7 +436,7 @@ sağlayacaktır.
 ## Kaynaklar
 
 -   [http://www.vanseodesign.com/css/transforms/][]
--   [http://gazpo.com/2011/02/css3-transforms/][] (güzel)
+-   gazpo.com/2011/02/css3-transforms/
 -   [http://www.westciv.com/tools/transforms/index.html][] (çevrimiçi araç)
 -   [http://www.w3.org/TR/css3-2d-transforms/][]
 -   [http://24ways.org/2009/going-nuts-with-css-transitions][]
@@ -491,7 +491,6 @@ sağlayacaktır.
   [http://westciv.com/tools/transforms/index.html]: http://westciv.com/tools/transforms/index.html
   [http://www.useragentman.com/IETransformsTranslator/]: http://www.useragentman.com/IETransformsTranslator/
   [http://www.vanseodesign.com/css/transforms/]: http://www.vanseodesign.com/css/transforms/
-  [http://gazpo.com/2011/02/css3-transforms/]: http://gazpo.com/2011/02/css3-transforms/
   [http://www.westciv.com/tools/transforms/index.html]: http://www.westciv.com/tools/transforms/index.html
   [http://www.w3.org/TR/css3-2d-transforms/]: http://www.w3.org/TR/css3-2d-transforms/
   [http://24ways.org/2009/going-nuts-with-css-transitions]: http://24ways.org/2009/going-nuts-with-css-transitions

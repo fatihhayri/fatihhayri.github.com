@@ -265,7 +265,7 @@ eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
 
 -   [http://www.w3.org/TR/css3-transitions/](http://www.w3.org/TR/css3-transitions/)
 -   [http://www.alistapart.com/articles/understanding-css3-transitions/](http://www.alistapart.com/articles/understanding-css3-transitions/)
--   [https://developer.mozilla.org/en-US/CSS/CSS\_transitions](https://developer.mozilla.org/en-US/CSS/CSS_transitions)
+-   developer.mozilla.org/en-US/CSS/CSS\_transitions
 -   [http://24ways.org/2009/going-nuts-with-css-transitions](http://24ways.org/2009/going-nuts-with-css-transitions)
 -   [http://www.impressivewebs.com/css3-transitions-without-hover/](http://www.impressivewebs.com/css3-transitions-without-hover/)
 -   [http://www.css3.info/preview/css3-transitions/](http://www.css3.info/preview/css3-transitions/)

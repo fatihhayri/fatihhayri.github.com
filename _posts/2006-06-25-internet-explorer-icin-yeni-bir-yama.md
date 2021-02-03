@@ -3,6 +3,7 @@ layout: post
 title: Internet Explorer için yeni bir yama
 Date: 2006-06-25 17:21
 Category: Haberler
+---
 
 Microsoft Internet Explorerdan yine kritik bir açık. "Bir
 saldırganın Microsoft Internet Explorer çalışan bir bilgisayarın

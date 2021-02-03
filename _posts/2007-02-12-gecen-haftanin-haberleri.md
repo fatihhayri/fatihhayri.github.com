@@ -7,7 +7,7 @@ tags: [CSS, gmail, google, Google-Calendar]
 ---
 
 -   Superonline sitesini yenilemiş. Kodlaması gayet güzel. Ancak
-    reklamlar siteyi çekilmez kılıyor. [Link][]
+    reklamlar siteyi çekilmez kılıyor.
 -   Google Calendar notlarınızı SMS ile hatırlatıyor. C# Türk ilgili
     duyurusu.
 -   Safari stroke(font etrafında kenarlık verme) özelliğini çıkardı ve
@@ -35,7 +35,6 @@ tags: [CSS, gmail, google, Google-Calendar]
     Aksaklıklar konusunda affınıza sığınıyorum.
 
 
-  [Link]: http://www.superonline.com/index.html "Link"
   [2]: http://www.456bereastreet.com/archive/200702/new_css_properties_in_safari/
   [3]: http://www.alistapart.com/articles/multicolumnlayouts "Link"
   [6]: https://www.google.com/accounts/NewAccount?nui=1&service=reader&continue=http%3A%2F%2Fwww.google.com%2Freader%2Fview%2F

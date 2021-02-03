@@ -59,7 +59,7 @@ etmektedir.
     [http://www.barebones.com/products/bbedit/][]
 
 -   Son olarak Microsft'un yeni gözdesi **Microsoft® Expression**
-    [http://www.microsoft.com/products/expression/][]
+    http://www.microsoft.com/products/expression/
 
 Ben Macromedia Dreamweaver kullanıyorum :D
 
@@ -73,4 +73,3 @@ editör daha mevcuttur.
   [http://www.macromedia.com/software/dreamweaver/]: http://www.macromedia.com/software/dreamweaver/
   [http://www.coffeecup.com/editor/]: http://www.coffeecup.com/editor/
   [http://www.barebones.com/products/bbedit/]: http://www.barebones.com/products/bbedit/
-  [http://www.microsoft.com/products/expression/]: http://www.microsoft.com/products/expression/
