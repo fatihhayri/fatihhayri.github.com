@@ -46,7 +46,4 @@ Kadri'nin tenkitleri, "Türkçülügün esasları" çerçevesinde de olsa bu
 konuda bir boşluğu dolduracak özelliklere sahip olması açısından
 önemlidir.
 
-Satın almak için [tıklayınız.][]
-
   [Ziya Gökalp'ın Tenkidi]: /images/zg_tenkidi.gif
-  [tıklayınız.]: http://www.tulumba.com/storeItem.asp?ic=zBK983109FB408

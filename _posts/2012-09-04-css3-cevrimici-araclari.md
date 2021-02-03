@@ -124,7 +124,7 @@ bunun yanında @font-face kodunu üretmek içinde kullanışlı.
     eot’ya çevirmek için çevirim içi araç.
 -   [http://onlinefontconverter.com/][]Farklı yazı tiplerini birbirine
     çeviren çevirim içi araç
--   [http://ttf2eot.sebastiankippe.com/][]ttf’den eot ye çeviren başka
+-   ttf2eot.sebastiankippe.com/ ttf’den eot ye çeviren başka
     bir çevirim içi araç
 -   [http://xmlgraphics.apache.org/batik/tools/font-converter.html][]ttf’den
     svg’ye çevirme aracı
@@ -239,7 +239,6 @@ Toplu
   [http://www.fontsquirrel.com/fontface/generator]: http://www.fontsquirrel.com/fontface/generator
   [http://www.kirsle.net/wizards/ttf2eot.cgi]: http://www.kirsle.net/wizards/ttf2eot.cgi
   [http://onlinefontconverter.com/]: http://onlinefontconverter.com/
-  [http://ttf2eot.sebastiankippe.com/]: http://ttf2eot.sebastiankippe.com/
   [http://xmlgraphics.apache.org/batik/tools/font-converter.html]: http://xmlgraphics.apache.org/batik/tools/font-converter.html
   [http://debray.jerome.free.fr/index.php?outils/Generateur-de-multi-colonnes-en-css3]: http://debray.jerome.free.fr/index.php?outils/Generateur-de-multi-colonnes-en-css3
   [http://www.aaronlumsden.com/multicol/]: http://www.aaronlumsden.com/multicol/

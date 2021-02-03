@@ -900,7 +900,7 @@ Firefox için -moz ön eki kullanılması gerekiyor.
 -   [https://developer.mozilla.org/en-us/docs/Web/CSS/:nth-child][]
 -   [https://developer.mozilla.org/en-us/docs/Web/CSS/:empty][]
 -   [https://developer.mozilla.org/en-us/docs/Web/CSS/%3Adisabled][]
--   [http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx][]
+-   blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx
 -   [http://eriwen.com/css/css-indirect-adjacent-combinator/][]
 -   [http://msdn.microsoft.com/en-us/library/aa358824%28v=vs.85%29.aspx][]
 -   [http://www.quirksmode.org/css/enabled.html][]
@@ -931,7 +931,6 @@ Firefox için -moz ön eki kullanılması gerekiyor.
   [https://developer.mozilla.org/en-us/docs/Web/CSS/:nth-child]: https://developer.mozilla.org/en-us/docs/Web/CSS/:nth-child
   [https://developer.mozilla.org/en-us/docs/Web/CSS/:empty]: https://developer.mozilla.org/en-us/docs/Web/CSS/:empty
   [https://developer.mozilla.org/en-us/docs/Web/CSS/%3Adisabled]: https://developer.mozilla.org/en-us/docs/Web/CSS/%3Adisabled
-  [http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx]: http://blogs.msdn.com/b/ie/archive/2010/05/13/the-css-corner-css3-selectors.aspx
   [http://eriwen.com/css/css-indirect-adjacent-combinator/]: http://eriwen.com/css/css-indirect-adjacent-combinator/
   [http://msdn.microsoft.com/en-us/library/aa358824%28v=vs.85%29.aspx]: http://msdn.microsoft.com/en-us/library/aa358824%28v=vs.85%29.aspx
   [http://www.quirksmode.org/css/enabled.html]: http://www.quirksmode.org/css/enabled.html

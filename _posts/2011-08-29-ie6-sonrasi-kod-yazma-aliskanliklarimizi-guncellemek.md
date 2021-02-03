@@ -482,8 +482,7 @@ Artık çekinmeden !important tanımını kullanabileceğiz.
 -   [IE6′da Liste Ardalan Görmeme Sorunu][]
 -   [ie6′da border-color:transparent desteği sağlamak][]
 
-Tüm liste için
-[http://blogs.msdn.com/b/ie/archive/2006/08/22/712830.aspx][] bakın.
+Tüm liste için blogs.msdn.com/b/ie/archive/2006/08/22/712830.aspx bakın.
 
 ve CSS dersleri altındaki CSS Problemleri ve Çözüm Önerileri başlıklı
 içeriğin bir çoğunu tek başına oluşturan ie6 sorunlarını düzeltmeyeceğiz

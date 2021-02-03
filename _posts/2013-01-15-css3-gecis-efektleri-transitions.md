@@ -285,7 +285,7 @@ eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
 -   [http://msdn.microsoft.com/en-us/library/ie/hh673535(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/ie/hh673535(v=vs.85).aspx)
 -   tv.adobe.com/watch/learn-dreamweaver-cs6/using-the-css-transitions-panel/?go=13279
 -   [http://www.phpkodlari.com/css-dersleri/css3-transitions-ozelligi/](http://www.phpkodlari.com/css-dersleri/css3-transitions-ozelligi/)
--   [http://blogs.msdn.com/b/ie/archive/2011/11/21/adding-personality-with-css3-transitions-and-animations.aspx](http://blogs.msdn.com/b/ie/archive/2011/11/21/adding-personality-with-css3-transitions-and-animations.aspx)
+-   blogs.msdn.com/b/ie/archive/2011/11/21/adding-personality-with-css3-transitions-and-animations.aspx
 -   [http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/\#transitions](http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/#transitions)
 -   [http://vimeo.com/49879139](http://vimeo.com/49879139) (video)
 -   [http://ricostacruz.com/jquery.transit/](http://ricostacruz.com/jquery.transit/) (jquery ile tüm tarayıcılar için)

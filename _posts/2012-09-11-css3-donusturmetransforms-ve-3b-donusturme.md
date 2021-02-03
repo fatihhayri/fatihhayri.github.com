@@ -133,7 +133,7 @@ transform: perspective(300px) rotatey(30deg);
 
 <iframe style="width: 100%; height: 300px" src="https://jsfiddle.net/fatihhayri/HECGV/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-Perspektifi anlamak için güzel bir örnek [http://www.ryancollins.me/?p=993][]
+Perspektifi anlamak için güzel bir örnek ryancollins.me/?p=993
 
 ## translateX, translateY, translateZ, translate3d
 
@@ -458,7 +458,6 @@ Android Browser 3.0+ (-webkit- öneki ile)
   [http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-style.html]: http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-style.html
   [nesnelerin]: http://tr.wikipedia.org/wiki/Nesne
   [wikipedia.org]: http://wikipedia.org/
-  [http://www.ryancollins.me/?p=993]: http://www.ryancollins.me/?p=993
   [Kartezyen koordinat sistemi]: http://tr.wikipedia.org/wiki/Kartezyen_koordinat_sistemi
   [http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-rotatexyz.html]: http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-rotatexyz.html
   [1]: https://lh3.googleusercontent.com/X06_E_pJOi7N5Ks5qP3b3PmAWRO6WGhSsmUGiqsvSUNi1E0Hy8uhCGnb1I9fG9XGSxypWDToKaS8UckIB8rCeL1_cu-b8eq4qMFMofq0lS3y8PsGd8M

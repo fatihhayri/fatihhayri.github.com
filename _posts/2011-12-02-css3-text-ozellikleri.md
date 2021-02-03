@@ -346,7 +346,7 @@ Kalın sağlıcakla.
 -   http://www.cardeo.ca/2010/adding-an-outline-to-your-text-using-the-css3-text-stroke-property
 -   http://css-tricks.com/7405-adding-stroke-to-web-text
 -   [http://www.webkit.org/blog/85/introducing-text-stroke/][]
--   [http://code.stephenmorley.org/html-and-css/white-space-handling/][]
+-   code.stephenmorley.org/html-and-css/white-space-handling/
 -   [http://www.impressivewebs.com/css-white-space/][]
 -   [http://www.quirksmode.org/css/stroke.html][]
 -   [http://www.impressivewebs.com/word-wrap-css3/][]
@@ -377,7 +377,6 @@ Kalın sağlıcakla.
   [http://www.opera.com/docs/specs/presto27/css/text/]: http://www.opera.com/docs/specs/presto27/css/text/
   [http://caniuse.com/wordwrap]: http://caniuse.com/wordwrap
   [http://www.webkit.org/blog/85/introducing-text-stroke/]: http://www.webkit.org/blog/85/introducing-text-stroke/
-  [http://code.stephenmorley.org/html-and-css/white-space-handling/]: http://code.stephenmorley.org/html-and-css/white-space-handling/
   [http://www.impressivewebs.com/css-white-space/]: http://www.impressivewebs.com/css-white-space/
   [http://www.quirksmode.org/css/stroke.html]: http://www.quirksmode.org/css/stroke.html
   [http://fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover]: http://fatihhayrioglu.com/satir-donusuword-wrap-firefox-sorunu-nasil-cozulur/#idc-cover

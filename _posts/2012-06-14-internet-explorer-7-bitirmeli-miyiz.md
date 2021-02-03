@@ -21,7 +21,7 @@ yeridir.
 
 ![][100]
 
-kaynak: [http://blogs.msdn.com/b/ie/][]
+kaynak: http://blogs.msdn.com/b/ie/
 
 Yukarıdaki grafiği Microsoft’un kendi blog sitesinden aldım. Bir çok
 şeyin göstergesi aslında yukarıdaki resim. CSS2.1 tam desteğini ancak
@@ -182,16 +182,16 @@ sitelerden kaldırmayı unutmayın.
 
 ## Kaynaklar
 
--   [http://blogs.msdn.com/b/ie/archive/2008/03.aspx][]
--   [http://blogs.msdn.com/b/ie/archive/2008/03/07/internet-explorer-8-beta-1-for-developers-standards-highlights.aspx][]
--   [http://blogs.msdn.com/b/ie/archive/2008/07.aspx][]
--   [http://blogs.msdn.com/b/ie/archive/2008/04/10/html-and-dom-standards-compliance-in-ie8-beta-1.aspx][]
--   [http://blogs.msdn.com/b/ie/archive/2009/01.aspx][]
--   [http://blogs.msdn.com/b/ie/archive/2008/08/19/more-tests-submitted-to-the-w3c-css-2-1-test-suite.aspx][]
--   [http://blogs.msdn.com/b/ie/archive/2008/08/26/ie8-performance.aspx][]
--   [http://blogs.msdn.com/b/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx][]
--   [http://blogs.msdn.com/b/ie/archive/2009/03/24/what-s-new-in-jscript-for-ie8.aspx][]
--   [http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx][]
+-   blogs.msdn.com/b/ie/archive/2008/03.aspx
+-   blogs.msdn.com/b/ie/archive/2008/03/07/internet-explorer-8-beta-1-for-developers-standards-highlights.aspx
+-   blogs.msdn.com/b/ie/archive/2008/07.aspx
+-   blogs.msdn.com/b/ie/archive/2008/04/10/html-and-dom-standards-compliance-in-ie8-beta-1.aspx
+-   blogs.msdn.com/b/ie/archive/2009/01.aspx
+-   blogs.msdn.com/b/ie/archive/2008/08/19/more-tests-submitted-to-the-w3c-css-2-1-test-suite.aspx
+-   blogs.msdn.com/b/ie/archive/2008/08/26/ie8-performance.aspx
+-   blogs.msdn.com/b/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx
+-   blogs.msdn.com/b/ie/archive/2009/03/24/what-s-new-in-jscript-for-ie8.aspx
+-   blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx
 -   [http://css-tricks.com/browser-support-pseudo-elements/][]
 -   [http://share.ez.no/forums/general/browser-support-no-support-for-ie7][]
 -   [http://www.netmagazine.com/news/google-apps-ditches-support-ie7][]
@@ -207,7 +207,7 @@ sitelerden kaldırmayı unutmayın.
 -   [http://www.evotech.net/blog/2009/03/ie8-css-support/][]
 -   [http://coding.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/][]
     (güzel)
--   [http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx][]
+-   blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx
 -   [http://www.standardista.com/browsers/ie8-css-support-hac][] (güzel)
 -   [http://www.quirksmode.org/css/contents.html#t15][]
 -   computerworld.com/s/article/9217279/Google_to_dump_support_for_Microsoft_s_IE7
@@ -221,7 +221,6 @@ sitelerden kaldırmayı unutmayın.
 
   [“IE6 Sonrası Kod Yazma Alışkanlıklarımızı Güncellemek”]: http://fatihhayrioglu.com/ie6-sonrasi-kod-yazma-aliskanliklarimizi-guncellemek/
   [100]: https://lh4.googleusercontent.com/w0y8NKzSAkoVYSxwu3S_dL-6YFeEdqa8zYEjbgLRZ5_vx_AdB9ZtGweRi3h7Hi9s3PqDJ-qdcR4DKWo8ydjWA2zQC15AWhSnFLcrgZlhP-sg0A5LdhY
-  [http://blogs.msdn.com/b/ie/]: http://blogs.msdn.com/b/ie/
   [hasLayout sorunları]: http://fatihhayrioglu.com/internet-explorer-haslayout-kabulu-ve-sorunlari/
   [Murat Çorlu]: https://twitter.com/#!/muratcorlu
   [querySelector()]: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
@@ -253,16 +252,6 @@ sitelerden kaldırmayı unutmayın.
   [http://ajaxian.com/archives/display-table]: http://ajaxian.com/archives/display-table
   [sahibinden.com]: http://sahibinden.com/
   [Internet Explorer 8′i 7 gibi yorumlama kodu]: http://fatihhayrioglu.com/internet-explorer-8i-7-gibi-yorumla-kodu/
-  [http://blogs.msdn.com/b/ie/archive/2008/03.aspx]: http://blogs.msdn.com/b/ie/archive/2008/03.aspx
-  [http://blogs.msdn.com/b/ie/archive/2008/03/07/internet-explorer-8-beta-1-for-developers-standards-highlights.aspx]: http://blogs.msdn.com/b/ie/archive/2008/03/07/internet-explorer-8-beta-1-for-developers-standards-highlights.aspx
-  [http://blogs.msdn.com/b/ie/archive/2008/07.aspx]: http://blogs.msdn.com/b/ie/archive/2008/07.aspx
-  [http://blogs.msdn.com/b/ie/archive/2008/04/10/html-and-dom-standards-compliance-in-ie8-beta-1.aspx]: http://blogs.msdn.com/b/ie/archive/2008/04/10/html-and-dom-standards-compliance-in-ie8-beta-1.aspx
-  [http://blogs.msdn.com/b/ie/archive/2009/01.aspx]: http://blogs.msdn.com/b/ie/archive/2009/01.aspx
-  [http://blogs.msdn.com/b/ie/archive/2008/08/19/more-tests-submitted-to-the-w3c-css-2-1-test-suite.aspx]: http://blogs.msdn.com/b/ie/archive/2008/08/19/more-tests-submitted-to-the-w3c-css-2-1-test-suite.aspx
-  [http://blogs.msdn.com/b/ie/archive/2008/08/26/ie8-performance.aspx]: http://blogs.msdn.com/b/ie/archive/2008/08/26/ie8-performance.aspx
-  [http://blogs.msdn.com/b/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx]: http://blogs.msdn.com/b/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx
-  [http://blogs.msdn.com/b/ie/archive/2009/03/24/what-s-new-in-jscript-for-ie8.aspx]: http://blogs.msdn.com/b/ie/archive/2009/03/24/what-s-new-in-jscript-for-ie8.aspx
-  [http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx]: http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx
   [http://css-tricks.com/browser-support-pseudo-elements/]: http://css-tricks.com/browser-support-pseudo-elements/
   [http://share.ez.no/forums/general/browser-support-no-support-for-ie7]: http://share.ez.no/forums/general/browser-support-no-support-for-ie7
   [http://www.netmagazine.com/news/google-apps-ditches-support-ie7]: http://www.netmagazine.com/news/google-apps-ditches-support-ie7
