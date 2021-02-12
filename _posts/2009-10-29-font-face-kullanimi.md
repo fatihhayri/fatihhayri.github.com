@@ -77,7 +77,7 @@ uzantılı dosya hazırlamalıyız. 
 -   Farklı yazı tiplerini birbirine çeviren çevirim içi araç:
     [http://onlinefontconverter.com/][]
 -   ttf'den eot ye çeviren başka bir çevirim içi araç
-    [http://ttf2eot.sebastiankippe.com/][]
+    ttf2eot.sebastiankippe.com/
 -   ttf'den svg'ye çevirme aracı:
     [http://xmlgraphics.apache.org/batik/tools/font-converter.html][]
 
@@ -348,8 +348,6 @@ aksaklığımız oldu ise affola.
     "http://www.kirsle.net/wizards/ttf2eot.cgi"
   [http://onlinefontconverter.com/]: http://onlinefontconverter.com/
     "http://onlinefontconverter.com/"
-  [http://ttf2eot.sebastiankippe.com/]: http://ttf2eot.sebastiankippe.com/
-    "http://ttf2eot.sebastiankippe.com/"
   [http://xmlgraphics.apache.org/batik/tools/font-converter.html]: http://xmlgraphics.apache.org/batik/tools/font-converter.html
     "http://xmlgraphics.apache.org/batik/tools/font-converter.html"
   [Paul Irish]: http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/
