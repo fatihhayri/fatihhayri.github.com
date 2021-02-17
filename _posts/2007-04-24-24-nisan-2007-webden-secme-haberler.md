@@ -13,7 +13,6 @@ tags: [Ajax, CSS, CSSEdit, e-posta, font, Haberler, Javascript]
     bitanesi. Sabit değer kullanımı veya göreceli değer kullanımı ile
     ilgili güzel bir makale. 
 -   Güzel font seçmenin 15 yolunu anlatan İngilizce bir makale.
-    [Link][3]
 -   CSS3.0 daha aktif olmadı ama şimdiden uygulamaları çıkmaya başladı.
     CSS3.0 ile Yuvarlak kenarlı kutu yapmayı anlatan bir makale.
     [Link][4]
@@ -24,8 +23,6 @@ tags: [Ajax, CSS, CSSEdit, e-posta, font, Haberler, Javascript]
     güzel bir makale yazmış.
 
 
-  [3]: http://www.ablogyoucanuse.com/2007/04/22/15-tips-to-choose-a-good-font/
-    "Link"
   [4]: http://24ways.org/2006/rounded-corner-boxes-the-css3-way "Link"
   [5]: http://www.wittysparks.com/2007/04/22/60-best-css-directories-you-would-die-to-watch/
     "Link"

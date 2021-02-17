@@ -135,11 +135,10 @@ yardımcı vetamamlayıcı olarak görüyorum.
 -   xhtml.com/en/future/x-html-5-versus-xhtml-2
 -   [http://www.whatwg.org/specs/web-apps/current-work/][]
 -   bernzilla.com/item.php?id=876
--   [http://edward.oconnor.cx/2007/04/marking-up-figures][]
+-   edward.oconnor.cx/2007/04/marking-up-figures
 
   [100]: /images/yapisal.gif
   [1]: /images/blok_level.gif
   [http://www.ibm.com/developerworks/xml/library/x-html5/]: http://www.ibm.com/developerworks/xml/library/x-html5/
   [http://www.w3.org/html/wg/html5]: http://www.w3.org/html/wg/html5
   [http://www.whatwg.org/specs/web-apps/current-work/]: http://www.whatwg.org/specs/web-apps/current-work/
-  [http://edward.oconnor.cx/2007/04/marking-up-figures]: http://edward.oconnor.cx/2007/04/marking-up-figures

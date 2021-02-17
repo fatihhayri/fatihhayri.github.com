@@ -74,7 +74,7 @@ Yeni standartlar açısından bir çok kazanımımız olacağı kesin ama hala �
 
 ## Kaynaklar
 
- - [http://blog.fili.nl/benefits-of-dropping-ie8-support/](http://blog.fili.nl/benefits-of-dropping-ie8-support/)
+ - blog.fili.nl/benefits-of-dropping-ie8-support
  - computerworld.com/s/article/9231316/Google_to_drop_support_for_IE8_on_Nov._15
  - [http://net.tutsplus.com/articles/editorials/jquery-in-2013-or-how-to-properly-drop-ie/](http://net.tutsplus.com/articles/editorials/jquery-in-2013-or-how-to-properly-drop-ie/)
  - [http://www.sitepoint.com/browser-trends-july-2013/](http://www.sitepoint.com/browser-trends-july-2013/)

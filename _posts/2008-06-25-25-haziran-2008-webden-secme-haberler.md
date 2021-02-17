@@ -19,7 +19,7 @@ tags: [ağaç menü, akordiyon, css editörleri, farklı tarayıcılara göre ko
     [Bağlantı][6] 
 -   Apple sitesindekine benzer akordiyon menü örneği. [Bağlantı][7] 
 -   Firefox 3'ün desteklediği CSS özellikleri hakkında ayrıntılı bir
-    makale. [Bağlantı][8] 
+    makale.
 -   25 adet Minimalistik site örneği. [Bağlantı][9] 
 -   Firfox3'ün yeni renk profil desteği. Renkler daha canlı.
     Kırık bağlantı.
@@ -33,6 +33,5 @@ tags: [ağaç menü, akordiyon, css editörleri, farklı tarayıcılara göre ko
   [6]: http://billwscott.com/jiffyext/ "jiffy"
   [7]: http://dynamicdrive.com/dynamicindex17/ddaccordionmenu-apple.htm
     "apple akordiyon menü"
-  [8]: http://dbaron.org/log/20080613-firefox3-css "Firefox 3 - CSS"
   [9]: http://vandelaydesign.com/blog/galleries/minimal-websites-designs/
     "minimalistik site"

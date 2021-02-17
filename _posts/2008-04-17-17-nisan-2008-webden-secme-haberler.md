@@ -23,7 +23,7 @@ tags: [Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek y
 -   "“Altın Örümcek” Sona Doğru mu?" [Bağlantı][9]
 -   web kodlamacıları için öneriler. [Bağlantı][10]
 -   Altmıştan fazla ajax/javascript kod örneği. [Bağlantı][11]
--   Yuvarlak kenarlı bir başka lightbox örneği. [Bağlantı][12]
+-   Yuvarlak kenarlı bir başka lightbox örneği.
 -   Saydamlık kullanılarak web sayfası hazırlama. [Bağlantı][13]
 -   Nasıl günlük(blog) tasarımı yapılır.
 -   Google Web Yönetici Merkezini Türkçeleştirmiş. Ayrıca bayağı bir
@@ -45,8 +45,6 @@ tags: [Ajax, altın örümcek, anlamlı kod, ardalan, css renk geçişi, esnek y
     "web kodlamacıları için öneriler"
   [11]: http://www.smashingmagazine.com/2008/04/15/60-more-ajax-and-javascript-solutions-for-professional-coding/
     "ajax ve javascript örnekleri"
-  [12]: http://www.no-margin-for-errors.com/projects/prettyPhoto/
-    "lighbox"
   [13]: http://www.smashingmagazine.com/2008/04/16/getting-creative-with-transparency-in-web-design/
     "saydamlık"
   [15]: http://www.google.com/webmasters/sitemaps/?hl=tr

@@ -269,7 +269,7 @@ olan yenilikleri takip etmek ve geri kalmamaktır. Ferruh Mavituna'nın
 
 ## Kaynaklar
 
--   [http://www.mitchelaneous.com/2007/01/05/get-more-from-google-reader-guide/][]
+-   mitchelaneous.com/2007/01/05/get-more-from-google-reader-guide/
 -   [http://mashable.com/2009/05/19/google-reader-2/][]
 -   [http://lifehacker.com/5625876/google-reader-cuts-the-clutter-with-fullscreen-mode-new-shortcuts][]
 -   http://www.readwriteweb.com/archives/6_ways_to_filter_your_rss_feeds.php
@@ -303,7 +303,6 @@ olan yenilikleri takip etmek ve geri kalmamaktır. Ferruh Mavituna'nın
   [Benim Google Reader Dosyam (.xml)]: /dokumanlar/google-reader-subscriptions.xml
   [bir makalede]: http://www.businessinsider.com/twitter-has-killed-rss-readers-traffic-to-google-reader-down-27-year-over-year-2010-9 "bir makalede"
   [Verimli Bilgi Takibi]: http://ferruh.mavituna.com/verimli-bilgi-takibi-oku/ "Verimli Bilgi Takibi"
-  [http://www.mitchelaneous.com/2007/01/05/get-more-from-google-reader-guide/]: http://www.mitchelaneous.com/2007/01/05/get-more-from-google-reader-guide/
   [http://mashable.com/2009/05/19/google-reader-2/]: http://mashable.com/2009/05/19/google-reader-2/ "http://mashable.com/2009/05/19/google-reader-2/"
   [http://lifehacker.com/5625876/google-reader-cuts-the-clutter-with-fullscreen-mode-new-shortcuts]: http://lifehacker.com/5625876/google-reader-cuts-the-clutter-with-fullscreen-mode-new-shortcuts
   [http://mashable.com/2007/08/23/google-reader-firefox/]: http://mashable.com/2007/08/23/google-reader-firefox/

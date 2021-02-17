@@ -16,7 +16,6 @@ tags: [arama motoru, CSS, Firefox, google reader, html, tab, tipografi, web2.0, 
 -   Tipografi hakkında güzel bir makale(makaleler). Hemde Türkçe
     [Link][3]
 -   Google Reader hakkında yazılan makaleleri güzel toparlamışlar
-    [Link][4]
 -   Genel Arama Motoru optimizasyonunu anlatan bir makale [Link][5]
 -   Firefox 2006'da çok büyük çıkış yapmış
 -   Browster linklerin nereye gittiğini bize küçük resimle gösteriyormuş
@@ -31,7 +30,6 @@ tags: [arama motoru, CSS, Firefox, google reader, html, tab, tipografi, web2.0, 
   [1]: http://www.smashingmagazine.com/2007/01/09/css-based-footers-modern-solutions/
   [2]: http://simon.html5.org/html5-elements
   [3]: http://www.opereysin.com/index.php?s=5+ad%C4%B1mda+do%C4%9Fru+tipografi
-  [4]: http://www.mitchelaneous.com/2007/01/05/get-more-from-google-reader-guide/
   [5]: http://blog.outer-court.com/archive/2007-01-07-n13.html
   [7]: http://www.browster.com/
   [MyBlogLog]: http://www.mybloglog.com/

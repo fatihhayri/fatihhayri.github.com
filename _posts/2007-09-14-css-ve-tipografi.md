@@ -174,7 +174,7 @@ h5 { font-size: 1em; font-weight:bold; }
 h6 { font-size: 1em; }
 {% endhighlight %}
 
-Bu konuda çok güzel bir doküman hazırlayan [BluePrint CSS Anaçatısının][] tipografi kısmına göz atmanızı tavsiye ederim.
+Bu konuda çok güzel bir doküman hazırlayan BluePrint CSS Anaçatısının tipografi kısmına göz atmanızı tavsiye ederim.
 
 ## Satır Yüksekliği(line-height)
 
@@ -368,7 +368,6 @@ Sınırları zorlayan güzel örnekler
   [serif sans-serif]: /images/serif.gif
   [Metin Yerine Resim/Flash Ekleme Teknikleri (Image Replacement)]: http://fatihhayrioglu.com/?p=294
   [1]: /images/yazi_boyutlari.png
-  [BluePrint CSS Anaçatısının]: http://code.google.com/p/blueprintcss/
   [Satırlar arası yükseklik]: /images/line_height.gif
   [2]: /images/tipografi_hizalama.gif
   [3point7designs.com]: http://www.3point7designs.com/advanced_type.html

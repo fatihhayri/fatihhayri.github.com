@@ -441,7 +441,7 @@ Android Browser 3.0+ (-webkit- öneki ile)
 -   [http://www.inserthtml.com/2012/03/css-3d-transforms/][]
 -   [http://www.inserthtml.com/2011/09/css3-3d-transforms-keyframes/][]
 -   developer.mozilla.org/en-US/CSS/transform-function#translate3d%28%29
--   [http://blogs.msdn.com/b/ie/archive/2012/02/02/css3-3d-transforms-in-ie10.aspx][]
+-   blogs.msdn.com/b/ie/archive/2012/02/02/css3-3d-transforms-in-ie10.aspx
 -   http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm
 -   [http://msdn.microsoft.com/en-us/library/ie/hh673529%28v=vs.85%29.aspx][]
 -   [http://www.found.co.uk/css3-3d-transforms-the-future-of-user-experience/][] (kullanıcı deneyimlerine etkisi hakkında)
@@ -484,7 +484,6 @@ Android Browser 3.0+ (-webkit- öneki ile)
   [http://tutorialzine.com/2012/02/apple-like-login-form/]: http://tutorialzine.com/2012/02/apple-like-login-form/
   [http://www.inserthtml.com/2012/03/css-3d-transforms/]: http://www.inserthtml.com/2012/03/css-3d-transforms/
   [http://www.inserthtml.com/2011/09/css3-3d-transforms-keyframes/]: http://www.inserthtml.com/2011/09/css3-3d-transforms-keyframes/
-  [http://blogs.msdn.com/b/ie/archive/2012/02/02/css3-3d-transforms-in-ie10.aspx]: http://blogs.msdn.com/b/ie/archive/2012/02/02/css3-3d-transforms-in-ie10.aspx
   [http://msdn.microsoft.com/en-us/library/ie/hh673529%28v=vs.85%29.aspx]: http://msdn.microsoft.com/en-us/library/ie/hh673529%28v=vs.85%29.aspx
   [http://www.found.co.uk/css3-3d-transforms-the-future-of-user-experience/]: http://www.found.co.uk/css3-3d-transforms-the-future-of-user-experience/
   [http://www.html5-css3.fr/css3/transformations-3d-css3]: http://www.html5-css3.fr/css3/transformations-3d-css3

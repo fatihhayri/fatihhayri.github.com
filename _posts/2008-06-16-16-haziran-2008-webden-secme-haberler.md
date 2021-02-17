@@ -6,7 +6,7 @@ Category: Haberler
 tags: [Erişebilirlik, Firefox 3, google-belgeler-etablolar, İnternet Tarayıcısı, jquery, Takvim scripti, web araçları, WordPress]
 ---
 
--   Firefox 3'ün desteklediği CSS özellikleri. [Bağlantı][]
+-   Firefox 3'ün desteklediği CSS özellikleri.
 -   10 adet ücretsiz grafik scripti. [Bağlantı][1]
 -   Kullanışlı WordPress ipuçları.
 -   Güzel bir geçiş efekli ve ileri-geri düğmeli bir javascript
@@ -23,9 +23,6 @@ tags: [Erişebilirlik, Firefox 3, google-belgeler-etablolar, İnternet Tarayıc�
 -   web sitesi veya günlüğü olanlar için 60 kullanışlı araç.
     [Bağlantı][11]
 
-
-  [Bağlantı]: http://dbaron.org/log/20080613-firefox3-css
-    "Firefox 3 - CSS 3"
   [1]: http://webtecker.com/2008/06/12/10-free-chart-scripts/
     "grafik scriptleri"
   [3]: http://bookreader.cognitom.com/ "javascript"

@@ -403,7 +403,7 @@ için kullandığım yöntemi sizlerle paylaştım. Muhakkak daha iyi yöntemler
 -   http://homepage.ntlworld.com/bobosola/pnginfo.htm
 -   [http://msdn2.microsoft.com/en-us/library/ms532969.aspx][]
 -   [http://www.twinhelix.com/css/iepngfix/][]
--   [http://dean.edwards.name/ie7/][]
+-   dean.edwards.name/ie7/
 -   [http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/][]
 -   http://www.campbellsdigitalsoup.co.uk/2007/11/27/a-new-png-fix-with-jquerys-helping-hand
 -   [http://bjorkoy.com/past/2007/4/8/the_easiest_way_to_png/][]
@@ -435,7 +435,6 @@ için kullandığım yöntemi sizlerle paylaştım. Muhakkak daha iyi yöntemler
   [10]: /dokumanlar/ardalan_ekle4.html
   [http://24ways.org/2007/supersleight-transparent-png-in-ie6]: http://24ways.org/2007/supersleight-transparent-png-in-ie6
   [http://www.twinhelix.com/css/iepngfix/]: http://www.twinhelix.com/css/iepngfix/
-  [http://dean.edwards.name/ie7/]: http://dean.edwards.name/ie7/
   [http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/]: http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/
   [http://blog.creonfx.com/internet-explorer/ie6-png-transparency-css-background-repeat-fix]: http://blog.creonfx.com/internet-explorer/ie6-png-transparency-css-background-repeat-fix
   [http://www.alistapart.com/stories/pngopacity/]: http://www.alistapart.com/stories/pngopacity/

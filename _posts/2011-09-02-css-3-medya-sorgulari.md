@@ -429,7 +429,7 @@ mi ama olmadı.
 -   [http://tests.zerointerface.nl/css3-mediaqueries/][] (test sitesi)
 -   [http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/][]
 -   [http://www.quirksmode.org/blog/archives/2010/08/combining_media.html][]
--   [http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx][]
+-   blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx
 
   [yazıcıdan çıktı alırken]: http://fatihhayrioglu.com/cssde-cikti-alma-print/
   [Daha önceki makalemde]: http://fatihhayrioglu.com/cssi-web-sayfalarina-eklemek/
@@ -460,7 +460,6 @@ mi ama olmadı.
   [No Starch The Book of CSS3]: http://nostarch.com/css3.htm
   [http://tests.zerointerface.nl/css3-mediaqueries/]: http://tests.zerointerface.nl/css3-mediaqueries/
   [http://www.quirksmode.org/blog/archives/2010/08/combining_media.html]: http://www.quirksmode.org/blog/archives/2010/08/combining_media.html
-  [http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx]: http://blogs.msdn.com/b/ie/archive/2011/01/12/the-css-corner-css3-media-queries.aspx
 
 [firefox]: /images/ff.png
 [chrome]: /images/ch.png
