@@ -6,15 +6,15 @@ Category: CSS, Web Standartları
 tags: [başlamak, CSS, css avantajları, esnek yapı, ilk-adım, Web Standartları]
 ---
 
-Cascading Style Sheets (CSS) HTML dokümanlarına stil eklemesi (örn: yazı tipi, boşluklar, renkler vs.) yapan basir bir mekanizmadır. CSS 1996'da
-[W3C][] tarafından duyuruldu.
+Cascading Style Sheets (CSS) HTML dokümanlarına stil eklemesi (örn: yazı tipi, boşluklar, renkler vd.) yapan basit bir mekanizmadır. CSS 1996'da
+[W3C][] tarafından duyurulmuştur.
 
-CSS kullanımının bir çok bakından
+CSS kullanımının birçok bakımdan
 avantajları bulunmaktadır. Belli başlı avantajlarını sıralarsak:
 
 ## Görünüm Avantajları
 
-CSS HTML'e göre bir çok stil özelliğine sahiptir. CSS'in sayfa içeriği
+CSS HTML'e göre birçok stil özelliğine sahiptir. CSS'in sayfa içeriği
 öğelerinin sayfa görünümü öğelerinden ayrılması için geliştirildiğini
 düşünürsek avantajı baştan anlaşılmış olur.
 
