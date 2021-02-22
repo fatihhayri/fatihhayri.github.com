@@ -6,13 +6,10 @@ Category: CSS, Web Standartları
 tags: [başlamak, CSS, css avantajları, esnek yapı, ilk-adım, Web Standartları]
 ---
 
-Cascading Style Sheets (CSS) HTML 'deki bazı problemleri halletmek için
-ama asıl neden olarak da; web sayfası içeriği ve web sayfası görünümünü
-birbirinden ayırmak için oluşturulan bir standarttır. CSS 1996'da
-[W3C][] tarafından duyuruldu. Son olarak CSS2.1 versiyonu işler
-durumdadır. CSS3.0'da çalışmaları devam etmektedir. CSS3.0 için
-ayrıntılı bilgiye [http://www.w3c.org/Style/CSS/current-work][]
-adresinden ulaşabilirsiniz. CSS kullanımının bir çok bakından
+Cascading Style Sheets (CSS) HTML dokümanlarına stil eklemesi (örn: yazı tipi, boşluklar, renkler vs.) yapan basir bir mekanizmadır. CSS 1996'da
+[W3C][] tarafından duyuruldu.
+
+CSS kullanımının bir çok bakından
 avantajları bulunmaktadır. Belli başlı avantajlarını sıralarsak:
 
 ## Görünüm Avantajları
@@ -21,33 +18,11 @@ CSS HTML'e göre bir çok stil özelliğine sahiptir. CSS'in sayfa içeriği
 öğelerinin sayfa görünümü öğelerinden ayrılması için geliştirildiğini
 düşünürsek avantajı baştan anlaşılmış olur.
 
-
-## CSS'e Giriş
-
-HTML'de bu elementi(h1) kalın,altı çizili, ardalanı
-kırmızı olarak atama gibi çeşitli stiller verbiliriz ancak bunlar içinde
-ayrı HTML elementleri kullanmak zorundayız (örn:strong, gibi), ancak CSS
-de bunu tek bir elementle yapabiliriz ve ayrıca daha fazla stil
-özellikleride atayabiliriz.(örn: kenarlık, rollover vs stillerini
-ekleyebiliriz.)
-
-{% highlight css %}
-h1 {
-  color: white;
-  font:italic 11px Arial, serif;
-  text-decoration: underline;
-  background: yellow url(titlebg.gif) repeat-x;
-  border: 1px solid red;
-  margin-bottom: 0;
-  padding: 5px;
-}
-{% endhighlight %}
-
 ## Kullanım Kolaylığı
 
 HTML'de her elmente artı özellikler eklemek için başka bir element ve
 özellik eklmemiz gerekiyor ve bu işlemi geniş çaplı bir sitede yaptığımızı
-düşünürseniz çok büyük zaman kaybı ve uğraş gerektiğini göreceksiniz.
+düşünürseniz çok büyük zaman kaybı ve uğraş gerektiğini göreceksiniz. CSS ile bir kere eklenen bir sınıf sınırsız yerde kullanılabilir.
 
 {% highlight html %}
 <h1>
@@ -72,8 +47,8 @@ h1, h2 {
 }
 {% endhighlight %}
 
-Ayrıcatek bir CSS dosyası ile sitenin tamamının yönetmekte web kodlamacıları
-için çok büyük kolaylıktır. Sadece bir dosyada değişlik yaparak tüm
+Ayrıca tek bir CSS dosyası ile sitenin tamamının yönetmekte önyüz kodlayıcıları
+için çok büyük kolaylıktır. Sadece bir dosya da değişlik yaparak tüm
 sitemizi yönetebiliriz isterse yüzlerce sayfa olsun.
 
 ## Tasarım Tutarlılığı
@@ -86,18 +61,13 @@ ziyaretçinize düzenli bir içerik sunmuş olacak ve sitenizin kendine has
 özelliklerini ziyaretçiye benimsetmiş olacaksınız. Sayfalar hızlı
 yüklenecek ve doğru olarak yüklenecektir, çünkü aynı elementleri diğer
 sayfalarda tekrar yüklemeyecek ve bu ziyaretçiye zaman kazandıracaktır.
-CSS+XHTML ile HTML göre %50'ye varan performans ve hız artışları
-olacaktır.
 
-## Gelecek Vaadediyor
+## Gelecek Vadediyor
 
-HTML giderek işlevselliğini kaybedeceği ve XML ve dolayısı ile XHTML'in
-işlevselliğini artıracağı düşünülürse, CSS gibi tümleşik bir stadardın
-önemi daha çok anlaşılıyor. XHTML ile daha temiz kodlar üretilecek,
-farklı platformlara(pda,cep telefonu vs.) uyum sayesinde bilgi dolaşımı
+HTML ile farklı platformlara(pda,cep telefonu vs.) uyum sayesinde bilgi dolaşımı
 kolaylaşacak, sayfalarımız arama motorları programları tarafından daha
-anlaşılır olacaktır. CSS, XHTML teknolojisi ile tümleşik olarak
-çalışarak bizlere gelecek vaadediyor.
+anlaşılır olacaktır. CSS, HTML teknolojisi ile tümleşik olarak
+çalışarak bizlere gelecek vadediyor.
 
 
   [W3C]: http://www.w3.org/
