@@ -32,6 +32,6 @@ Başlarda yazılımcılar için İngilizce klavye tercihi daha mantıklı öneri
  - Büyük harfli metinlerde 40 wpm'e ulaştıktan sonra noktalama işaretlerini ekledim. 
  - En son dün 60 wpm'i gördüm.
 
-İletişimi Türkçe, yazılımı İngilizce yazmak öğrenme sürecini uzattığını düşünüyorum. Bir diğer konuda yazılımda kullandığımız editörlerin otomatik tamamlama özelliği sayesinde daha çok metin yerine işaret yazdığımız için işaretleri daha çok çalışmak gerektiğiydi. Ama makale yazarken çok büyük avantaj olduğu kesin.
+İletişimi Türkçe, yazılımı İngilizce yazmak öğrenme sürecini uzattığını düşünüyorum. Bir diğer konuda yazılımda kullandığımız editörlerin otomatik tamamlama özelliği sayesinde daha çok metin yerine işaret yazdığımız için işaretleri daha çok çalışmak gerektiğiydi. Ama makale yazarken çok büyük avantaj olduğu kesin..
 
 Çalışmaya devam. 
