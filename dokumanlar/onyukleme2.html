@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Önden Resimleri(Preloading images) Yükleme Yöntemleri - Javascript</title>
+<script type="text/javascript">
+function preloader() {
+	if (document.images) {
+		var img1 = new Image();
+		var img2 = new Image();
+		var img3 = new Image();
+
+		img1.src = "images/dexter.jpg";
+		img2.src = "images/saydam_ardalan1.gif";
+		img3.src = "images/ornek_sayfa.jpg";
+	}
+}
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+addLoadEvent(preloader);
+</script>
+</head>
+
+<body>
+<p>Fatih Hayrioğlu'nun sitesi</p>
+<p><img src="https://fatihhayrioglu.com/dokumanlar/images/fatihhayri_logo.png" /></p>
+</body>
+</html>

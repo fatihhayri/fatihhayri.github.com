@@ -3,6 +3,25 @@ layout: default
 # The posts' layout
 ---
 
+
+{% assign m = page.date | date: "%-m" %}
+{{ page.date | date: "%-d" }}
+{% case m %}
+{% when '1' %}Ocak
+{% when '2' %}Şubat
+{% when '3' %}Mart
+{% when '4' %}Nisan
+{% when '5' %}Mayıs
+{% when '6' %}Haziran
+{% when '7' %}Temmuz
+{% when '8' %}Ağustos
+{% when '9' %}Eylül
+{% when '10' %}Ekim
+{% when '11' %}Kasım
+{% when '12' %}Aralık
+{% endcase %}
+{{ page.date | date: "%Y" }}
+
 <div class="row">
 
   <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
@@ -65,17 +84,17 @@ layout: default
         {% endif %}
 
         <!-- tags -->
-        {% if page.tags.size > 0 %}
+        <!-- {% if page.tags.size > 0 %}
         <div class="post-tags">
           <i class="fa fa-tags fa-fw mr-1"></i>
           {% for tag in page.tags %}
-          <a href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
+          <a href="{{ site.baseurl }}/tags/{{ tag | cgi_encode }}/"
             class="post-tag no-text-decoration" >
             {{- tag -}}
           </a>
           {% endfor %}
           </div>
-        {% endif %}
+        {% endif %} -->
 
         <div class="post-tail-bottom
           d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">

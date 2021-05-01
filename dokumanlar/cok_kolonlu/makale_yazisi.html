@@ -1,0 +1,345 @@
+<h1>	Çoklu kolonlu yapılar ve çoklu kolonlu menüler</h1>
+<p>Son   zamanlarda bir çok yerde gözüme çarpan bir menü tipi var; iki kolonlu,   üç kolonlu vb. menü tipleri. CSS ile en optimum şekilde bu menüyü nasıl   yapabilirim diye araştırdım ve sizlerle paylaşmaya karar verdim. Konuyu   inceledikçe çoklu kolonları sadece menülerde değil site içeriklerinde de   kullanabileceğimizi gördüm. İlk olarak yapının nasıl olduğunu   göstereceğim, sonrada menüde nasıl kullanıldığını.</p>
+<p>Web   mecrası geliştikçe ihtiyaçlarımızda gelişiyor ve ihtiyaçlarımızı   karşılayacak metotlar arıyoruz. Çok kolonlu yapılarda böyle bir metot   aslında. Sitemizi kullanan insanlar genelde menü vb. erişim ve gezinti   araçlarını kullanarak sitemizi dolaşırlar. Menü gibi gezinti araçları   site yapısı düşünüldüğünde sayfamızın en önemli alanlarıdır. Bu alanları   en iyi şekilde tasarlanması ve düşünülmesi sitemizi daha kullanışlı ve   etkin hale getirecektir. </p>
+<p>Bu düşünceler ile bir çok web   site geliştiricisi çeşitli yöntemler denedi ve denemeye devam ediyor.   Kullanılabilirliği en üst düzeye çıkarmak için çeşitli metotlar   üretilmektedir. Bence bunlardan en güzellerinden biridir çok kolonlu   menüler.</p>
+<p>Yatay ve dikey örneklerimiz olmasına karşın   genelde yatay ve üst menüdeki örnekler daha kullanışlıdır. Kullanıcıya   uzun menü alanlarına erişebilmek için kaydırma çubuğunu kullanırlar buda   bizim için bir dezavantajdır. Bu gibi durumlardan bizi kurtarır. Daha derli toplu bir görünüm kazandırır.</p>
+<p>Çoklu menü örneklerini   incelediğimizde belli başlı 3 yöntem ile oluşturulduğunu görürüz. Bunları aşağıda inceleyeceğiz. Projelerimizde çoklu menü kullanmaya   karar verdiğimizde hangisi projemize uygun ise onu kullanacağız. </p>
+<p>Ayrıca   javascript yardımı ile ve css3 yardımı ile de çoklu menü   oluşturabiliriz bunlarıda göreceğiz.</p>
+<p>Burada anlatacağımız   metotlar sadece menülerde kullanılmaz, site içeriğindeki benzer yapılar içinde aynı metotlar kullanılabilir. </p>
+<h3>1. Yol:  float   uygulanmış liste ögeleri</h3>
+<p>Bu yöntemde ul elemanına sabit   bir genişlik verip, her bir li elemanına float ve sabit genişlik tanımı   yaparak yan yana dizeriz. Çoklu kolon yapılar oluşturmak için en basit   metottur. </p>
+<p>Dezavantajı listelemek istediğimiz ögeleri yan   yana dizer. Normalde istenen birinci kolonu bitirdikten sonra ikinci   kolona geçmesidir.</p>
+[sourcecode language=html]
+<ul>
+    <li>Birinci Oge</li>
+    <li>İkinci Oge</li>
+    <li>Üçüncü Öge</li>
+    <li>Dördüncü Öge</li>
+    <li>Beşinci Öge</li>
+    <li>Altıncı Öge</li>
+    <li>Yedinci Öge</li>
+    <li>Sekizinci Öge</li>
+    <li>Dokuzuncu Öge</li>
+    <li>Onuncu Öge</li>
+</ul>
+[/sourcecode]
+<p>CSS kodumuz</p>
+[sourcecode language=css]
+ul {
+    width: 700px;
+    list-style-type:none;
+}
+li {
+    width:180px;
+    margin:15px 0 0 0;
+    padding:0 10px 0 0;
+    line-height:15px;
+    float:left;
+}
+[/sourcecode]
+<p>Örneği görmek için tıklayınız.</p>
+<p>700px tüm genişlik içindir her ögenin genişliğini 180px verip bide sağdan 10px padding değeri ile yan yana dizeriz. </p>
+<p>Örneği biraz daha geliştirip açılır menü haline getirelim. </p>
+<p>HTML Kodu;</p>
+[sourcecode language=html]
+<ul id="menu">
+    <li><a href="">Tencere</a> 
+        <ul class="kapsul">
+        <li><a href="">Birinci Oge</a></li>
+        <li><a href="">İkinci Oge</a></li>
+        ....
+        <li><a href="">Onuncu Öge</a></li> 
+        </ul> 
+    </li>
+    <li><a href="">Tava</a></li>
+    <li><a href="">Çaydanlık</a></li>
+    <li><a href="">Leğen</a>
+        <ul class="kapsulSolda">
+        <li><a href="">Birinci Oge</a></li>
+        <li><a href="">İkinci Oge</a></li>
+        .....
+        <li><a href="">Onuncu Öge</a></li> 
+        </ul> 
+    </li>
+</ul>
+[/sourcecode]
+<p>CSS kodu;(kodun uzun olduğuna bakmayın çoğu kod menü elemanlarını daha güzel görünmesini sağlamak için eklenmiştir.) Bunu menüye uygulayalım</p>
+[sourcecode language=css]
+ul{margin:0; padding:0; list-style:none}
+    ul li{float:left; width:180px; border-top:3px solid #fff; position:relative}
+    ul li:hover, ul li.over{border-top:3px solid #C30; background-color:#eee; width:180px;}
+	    ul li a{ font:12px "Trebuchet MS", Arial, Helvetica, sans-serif; text-decoration:none; display:block; padding:5px 5px 5px 10px; color:#0657ad; font-weight:bold}
+[/sourcecode]
+<p>İlk menü   öğelerini oluşturduk.</p>
+[sourcecode language=css]
+ul li:hover ul, ul li.over ul{display:block;}
+[/sourcecode]
+<p>Burada virgülün ilk kısmı ie6 hariç   olan kısmı için ie6 için ise aşağıdaki javascript kodunu yazacağız.</p>
+<p>Tabi başımızın belası ie6 için menüyü açmak için javascript yardımı almamız gerekiyor.</p>
+[sourcecode language=javascript]
+startList = function() {
+if (document.all&&document.getElementById) {
+navRoot = document.getElementById("menu");
+for (i=0; i<navRoot.childNodes.length; i++) {
+node = navRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+}
+node.onmouseout=function() {
+this.className=this.className.replace(" over", "");
+}
+}
+}
+}
+}
+window.onload=startList;
+[/sourcecode]
+<p>Açılan menü kısmının tam kapsanması için kapsayamama kodu ekleyeceğiz.</p> 
+[sourcecode language=css]
+ul li ul:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+ul li ul {display: inline-block;}
+/*IE-mac de bu bolumu sakla \ */
+* html ul li ul {height: 1%;}
+ul li ul {display: block;}
+/* IE-mac bu bolumu saklam artik */
+[/sourcecode]
+  <p>Açılacak menü ul sinin tanımlarını yapıyoruz. </p>
+  
+[sourcecode language=css]
+ul li ul {width: 580px; list-style-type:none; display:none; border-bottom:3px solid #C30; background-color:#eee; padding:5px 0 10px 10px; position:absolute;}
+    ul li li {width:180px; margin:5px 0 0 0; padding:0 10px 0 0; line-height:15px; float:left; border:0;}
+    ul li li:hover{border:0}
+        ul li li a{color:#0657ad; text-decoration:underline; padding:0; font-weight:normal}
+        ul li li a:hover{color:#C30; text-decoration:none}
+    ul li ul.kapsulSolda{right:0}
+[/sourcecode]
+  
+  <p>Kolonlama için yukarıdaki yöntemi uyguluyoruz. </p>
+  
+  <p>Örneği görmek için tıklayınız.</p>
+
+<h3>2. metot: Margin yönlendirmeleri ile</h3>
+<p>Çok kolonlu yapıları oluşturmak için diğer bir yöntemde ikinci ve üçüncü   kolonlara sağdan ve üstten margin değerleri vererek yapmaktır. Bu   metodun avantajı kolon dizilişinin istediğimiz gibi olmasıdır. Bu   metotta çoğaltacağımız kolonlara ek sınıflar eklemeliyiz. </p>
+[sourcecode language=html]
+<ul>
+    <li class="kolon1"><a href="#">Öğe 1</a></li>
+    <li class="kolon1"><a href="#">Öğe 2</a></li>
+    <li class="kolon1"><a href="#">Öğe 3</a></li>
+    <li class="kolon1"><a href="#">Öğe 4</a></li>
+    <li class="kolon1"><a href="#">Öğe 5</a></li>
+    <li class="kolon2 sifirla"><a href="#">Öğe 6</a></li>
+    <li class="kolon2"><a href="#">Öğe 7</a></li>
+    <li class="kolon2"><a href="#">Öğe 8</a></li>
+    <li class="kolon2"><a href="#">Öğe 9</a></li>
+    <li class="kolon2"><a href="#">Öğe 10</a></li>
+    <li class="kolon3 sifirla"><a href="#">Öğe 11</a></li>
+    <li class="kolon3"><a href="#">Öğe 12</a></li>
+    <li class="kolon3"><a href="#">Öğe 13</a></li>
+    <li class="kolon3"><a href="#">Öğe 14</a></li>
+    <li class="kolon3"><a href="#">Öğe 15</a></li>
+    <li class="kolon3"><a href="#">Öğe 16</a></li>
+</ul>
+[/sourcecode]
+<p>CSS kodumuzu yazalım</p>
+[sourcecode language=css]
+ul { margin: 0 0 1em 2em; padding: 0; }
+    ul li { line-height: 1.2em; margin: 0; padding: 0; }
+    * html ul li { position: relative; }    
+    ul li.kolon1 { margin-left: 0em; }
+    ul li.kolon2 { margin-left: 10em; }
+    ul li.kolon3 { margin-left: 20em; }
+    li.sifirla { margin-top: -6em; }
+        ul li a { display: block; width: 7em; text-decoration: none; }
+        ul li a:hover { text-decoration:underline}
+[/sourcecode]
+<p>Örnek kodu görmek için tıklayınız.</p>
+<p>Yukarıdaki kodda ilk li   tanımımız bir önceki metot ile neredeyse aynıdır. Tek farklı olan kısım <strong>position:relative </strong>tanımıdır, bu tanım ie'deki sorunları gidermek için eklenmiştir.   Her kolonun soldan mesafesi <strong>margin-left</strong> değerleri tanımlanarak   sağlanmıştır. İkinci ve üçüncü kolonları yukarı çekmek içinde menü   yüksekliği kadar eksi margin değeri verilerek yukarı çekilmiştir.   Hesaplama yaparken ilk kolon yüksekliği şöyle hesaplanır. Her öge 15px   ise ve 4 bağlantımız ve 3 boşluğumuz var 7 adet alt öge varsa (15x7 =   105px)</p>
+<p>Margin yönlendirmeleri ile çoklu kolonlu menüler   oluşturmak basit yapılı menülerde kullanılabilir. Daha karmaşık yapılı   çoklu menülerde tercih edilmemelidir. Devamlı öğe eklenen ve çıkarılan   menülerde mesela, her defasında kodları değiştirmek gerekecektir ki bu   pek esnek bir çözüm olmayacaktır.</p>
+<h3>3. Metot:   Kapsayıcı katman ile bölmek</h3>
+<p>Bu metotta çoklu kolonlara   ayrılacak listeler kapsayıcı katmanlar ile ayrılarak her bir kolon oluşturulur. Bu metotta yükseklik ile ilgi bir şey yapmaya gerek yoktur ve esnek bir yapıya sahiptir. </p>
+[sourcecode language=html]
+<div class="licol">
+    <ol>
+        <li>Let me not to the marriage of true minds</li>
+        <li>Admit impediments; love is not love</li>
+        <li>Which alters when it alteration finds</li>
+        <li>Or bends with the remover to remove</li>
+    </ol>
+</div>
+<div class="licol">
+    <ol start="5">
+        <li>Oh, no, it is an ever fixed mark</li>
+        <li>That looks on tempests and is never shaken;</li>
+        <li>It is the star to every wand'ring bark</li>
+        <li>Whose worth's unknown, although his height be taken</li>
+    </ol>
+</div>
+<div class="licol">
+    <ol start="9">
+        <li>Love's not Time's fool, though rosy lips and cheeks</li>
+        <li>Within his bending sickle's compass come;</li>
+        <li>Love alters not with his brief hours and weeks</li>
+        <li>But bears it out even to the edge of Doom</li>
+    </ol>
+</div>
+[/sourcecode]
+<p>CSS kodumuzda kısadır.</p>
+[sourcecode language=css]
+li {
+    margin:15px 0 0 0;
+    padding:0 10px 0 0;
+    line-height:15px;
+}
+.licol {
+    float: left;
+    width: 200px;
+}
+[/sourcecode]
+<p>Diğer metotlara göre avantajlı görünen bu metodun da kendince sorunları   vardır.  Menü yaparken kapsayıcı bir katman(div) atayıp bu katman içinde ul'leri float ve genişlik vererek yan yana koyarız.</p>   
+[sourcecode language=html]
+<ul id="menu">
+    <li>
+        <a href="">Tencere</a>    
+            <div class="ucluKolon">
+              <ul>
+                <li><a href="">Let me not to the marriage of true minds</a></li>
+                ...
+              </ul>
+              <ul>
+                <li><a href="">Oh, no, it is an ever fixed mark</a></li>
+                ...
+              </ul>
+              <ul>
+                <li><a href="">Love's not Time's fool, though rosy lips and cheeks</a></li>
+                ...
+              </ul>
+            </div>      
+    </li>
+....
+</ul>
+[/sourcecode]
+<p>İlk menü kısmını ilk yaptığımız ile aynı kodlara sahip olacaktır.</p>
+[sourcecode language=css]
+ul{margin:0; padding:0; list-style:none}
+    ul li{float:left; width:180px; border-top:3px solid #fff; position:relative}
+    ul li:hover,  ul li.over{border-top:3px solid #C30; background-color:#eee; width:180px;}
+        ul li a{ font:12px "Trebuchet MS", Arial, Helvetica, sans-serif; text-decoration:none; display:block; padding:5px 5px 5px 10px; color:#0657ad; font-weight:bold}
+[/sourcecode]
+<p>Daha sonra kapsayıcı   katman tanımlarını yapıyoruz. Tabi öncesine kapsayamama sorunu kodunu   ekleyerek. Kapsayamama sorunu kodlarını başa ekliyoruz çünkü bu kısmı   sayfa normal gösteriminde gizlememiz gerekiyor.</p>
+[sourcecode language=css]
+    div.ucluKolon:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+    div.ucluKolon {display: inline-block;}
+    /*IE-mac de bu bolumu sakla \ */
+    * html div.ucluKolon {height: 1%;}
+    div.ucluKolon{display: block;}
+    /* IE-mac bu bolumu saklam artik */
+div.ucluKolon{width:600px; display:none; border-bottom:3px solid #C30; background-color:#eee; padding:5px 0 10px 10px; position:absolute}
+[/sourcecode]
+<p>Üst menüde en sağdaki menü elemanının altında açılan menü sağ doğru değilde sola doğru   açılacak, bunun için </p>
+[sourcecode language=css]
+.sagda{right:0}
+[/sourcecode]
+<p>Üç kolonlu yapıyı oluşturmak için katman içindeki ul'lere genişlik ve float tanımı yapıyoruz.</p>
+[sourcecode language=css]
+div.ucluKolon ul{float:left; width:200px}
+[/sourcecode]
+<p>üst menülerin üzerine gelince açılması için </p>
+[sourcecode language=css]
+ul li:hover div.ucluKolon, ul li.over div.ucluKolon{display:block}
+[/sourcecode]
+<p>ie6 için javascript kodumuzu yazıyoruz. Yukarıdaki kodun aynısı.</p>
+<p>Örneği görmek için tıklayınız.</p>
+<h3>4. CSS 3 column-count özelliği ile</h3>
+<p>CSS3 ile birlikte gelen yeni bir özellik sayesinde işler çok kolaylaştırıyor. </p>
+[sourcecode language=html]
+<ul id="menu">
+    <li>Birinci Oge</li>
+    <li>İkinci Oge</li>
+    <li>Üçüncü Öge</li>
+    <li>Dördüncü Öge</li>
+    <li>Beşinci Öge</li>
+    <li>Altıncı Öge</li>
+    <li>Yedinci Öge</li>
+    <li>Sekizinci Öge</li>
+    <li>Dokuzuncu Öge</li>
+    <li>Onuncu Öge</li>
+</ul>
+[/sourcecode]
+<p>CSS kodumuz ise iki satır</p>
+[sourcecode language=css]
+ul#menu{
+    width:700px;
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3; 
+}
+[/sourcecode]
+<p>Farklı tarayıcılar için yazılan bu kod maalesef ie ve opera'nın desteği olmadığı için uygulaması şimdilik yok.</p>  
+<h3>5. Metot: Javascript   yardımı ile</h3>
+<p>Aslında bu yöntem bir önceki metodun tamamlayıcı bir metodudur. </p>
+<p>Bu metotta css3 column-count özelliği ile yine css ile kodu yazacağız, javascript ile de desteklemeyen tarayıcılara uyumlu hale getireceğiz.</p>
+<p>Bu javascript kodunu csscripting.com sitende yayınlanmış, ancak   bu site yayında değil <a href="http://www.cvwdesign.com" title="cvwdesign.com">cvwdesign.com</a> sitesinde kodu buldum. Açıkça söylemek gerekirse bunun dışında çalışan javascript kodu bulamadım. </p>
+<p>Bu   kodu kullanırken css kodunuzu harici kullanmalıyız aksi halde kod çalışmıyor. </p>
+[sourcecode language=html]
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Çoklu kolon</title>
+<link href="kolon.css" rel="stylesheet" /> 
+<!--[if IE]><script type="text/javascript" src="css3-multi-column.js"></script><![endif]-->
+</head>
+<body>
+    <ul class="column">
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ul>
+</body>
+</html>
+[/sourcecode]
+<p>Bu javascript dosyasını ekleyince css3 aşağıdaki özelliklere karşılık gelen özellikleri</p>
+<ul>
+  <li>column-count </li>
+  <li>column-width </li>
+  <li>column-gap</li>
+  <li>column-rule
+  </li>
+</ul>
+<p>destekliyor. Mevcut açık kodun boyutu fazla gelince <a href="http://refresh-sf.com/yui/" title="çevrimiçi yui   kompresor">çevrimiçi yui kompresor</a> ile javascript dosyasını sıkıştırdım. Gayet güzel bir oran ile dosya boyutunu 37 kb'dan 19 kb'a kadar düşürdüm. </p>
+<p>Örneği görmek için tıklayınız.</p>
+<p>jQuery yardımı ile çeşitli çözümler mevcuttur. kaynaklar bölümünde yazdım linklerini.</p>
+<h3>Kaynaklar</h3>
+<ol>
+  <li><a href="http://articles.techrepublic.com.com/5100-10878_11-5810687.html" title="http://articles.techrepublic.com.com/5100-10878_11-5810687.html">http://articles.techrepublic.com.com/5100-10878_11-5810687.html</a> </li>
+  <li><a href="http://www.alistapart.com/articles/multicolumnlists/" title="http://www.alistapart.com/articles/multicolumnlists/">http://www.alistapart.com/articles/multicolumnlists/</a></li>
+  <li><a href="http://archivist.incutio.com/viewlist/css-discuss/88422" title="http://archivist.incutio.com/viewlist/css-discuss/88422">http://archivist.incutio.com/viewlist/css-discuss/88422</a></li>
+  <li><a href="http://www.cssplay.co.uk/menus/drop_lists.html" title="http://www.cssplay.co.uk/menus/drop_lists.html">http://www.cssplay.co.uk/menus/drop_lists.html</a> (örnek)</li>
+  <li><a href="http://www.cssplay.co.uk/menu/column.html" title="http://www.cssplay.co.uk/menu/column.html">http://www.cssplay.co.uk/menu/column.html</a> (farklı bir bakış)</li>
+  <li><a href="http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin" title="http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin">http://blog.pengoworks.com/index.cfm/2008/4/3/Preview-jQuery-Multicolumn-Dropdown-Plugin</a></li>
+  <li><a href="http://green-beast.com/experiments/css_double_lists.php" title="http://green-beast.com/experiments/css_double_lists.php">http://green-beast.com/experiments/css_double_lists.php</a></li>
+  <li><a href="http://css-discuss.incutio.com/?page=MultipleColumnLists" title="http://css-discuss.incutio.com/?page=MultipleColumnLists">http://css-discuss.incutio.com/?page=MultipleColumnLists</a></li>
+  <li><a href="http://welcome.hp.com/country/tr/tr/welcome.html" title="http://welcome.hp.com/country/tr/tr/welcome.html">http://welcome.hp.com/country/tr/tr/welcome.html</a></li>
+  <li><a href="http://css.flepstudio.org/en/css3/multi-column.html" title="http://css.flepstudio.org/en/css3/multi-column.html">http://css.flepstudio.org/en/css3/multi-column.html</a> (css3 multi column)
+  </li>
+  <li><a href="http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/" title="http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/">http://www.smashingmagazine.com/2009/03/24/designing-drop-down-menus-examples-and-best-practices/</a></li>
+  <li><a href="http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript" title="http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript">http://www.cvwdesign.com/txp/article/360/multi-column-layout-with-css3-and-some-javascript</a></li>
+  <li><a href="http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/" title="http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/">http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/</a> (jquery yardımı işle güzel)</li>
+  <li><a href="http://codeasily.com/jquery/multi-column-list-with-jquery" title="http://codeasily.com/jquery/multi-column-list-with-jquery">http://codeasily.com/jquery/multi-column-list-with-jquery</a> (jquery multi kolon eklentisi)</li>
+  <li><a href="http://welcome.totheinter.net/columnizer-jquery-plugin/" title="http://welcome.totheinter.net/columnizer-jquery-plugin/">http://welcome.totheinter.net/columnizer-jquery-plugin/</a> (jquery multi kolon eklentisi)</li>
+  <li><a href="http://www.zenelements.co.uk/blog/css3-multiple-columns/" title="http://www.zenelements.co.uk/blog/css3-multiple-columns/">http://www.zenelements.co.uk/blog/css3-multiple-columns/</a> (css3 multi-kolon ve destekleme listesi)</li>
+  <li><a href="http://www.americanstandard-us.com/" title="http://www.americanstandard-us.com/">http://www.americanstandard-us.com/</a> (örnek)</li>
+  <li><a href="http://www.gatesfoundation.org/Pages/home.aspx" title="http://www.gatesfoundation.org/Pages/home.aspx">http://www.gatesfoundation.org/Pages/home.aspx</a> (örnek)</li>
+  <li><a href="http://www.cssplay.co.uk/menus/multi-column.html" title="http://www.cssplay.co.uk/menus/multi-column.html">http://www.cssplay.co.uk/menus/multi-column.html</a> (örnek)</li>
+  <li><a href="http://www.whitehouse.gov/" title="http://www.whitehouse.gov/">http://www.whitehouse.gov/</a> (Örnek)</li>
+  <li><a href="http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/" title="http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/">http://www.wittysparks.com/2009/09/21/build-multi-level-multi-column-multi-menus-with-pure-css/</a></li>
+  <li><a href="http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915" title="http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915">http://www.smileycat.com/design_elements/mega_dropdown_menus/#001915</a>
+  </li>
+</ol>

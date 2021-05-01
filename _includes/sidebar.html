@@ -6,18 +6,9 @@
 
   <div class="profile-wrapper text-center">
     <div id="avatar">
-      <a href="{{ '/' | relative_url }}" alt="avatar" class="mx-auto">
-        {% capture avatar_url %}
-          {%- if site.avatar contains '://' -%}
-            {{ site.avatar }}
-          {%- elsif site.img_cdn != '' and site.img_cdn -%}
-            {{ site.avatar | prepend: site.img_cdn }}
-          {%- else -%}
-            {{ site.avatar | relative_url }}
-          {%- endif -%}
-        {% endcapture %}
-        <img src="{{ avatar_url }}" alt="avatar" onerror="this.style.display='none'">
-      </a>
+      <span class="mx-auto">
+        <img src="https://fatihhayrioglu.com/images/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
+      </span>
     </div>
 
     <div class="site-title mt-3">
@@ -33,7 +24,7 @@
     <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
       <a href="{{ '/' | relative_url }}" class="nav-link">
         <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
-        <span>{{ "HOME" }}</span>
+        <span>{{ "ANA SAYFA" }}</span>
       </a>
     </li>
     <!-- the real tabs -->

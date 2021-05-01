@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+ul{margin:0; padding:0; list-style:none}
+	ul li{float:left; width:180px; border-top:3px solid #fff; position:relative}
+	ul li:hover,  ul li.over{border-top:3px solid #C30; background-color:#eee; width:180px;}
+		ul li a{ font:12px "Trebuchet MS", Arial, Helvetica, sans-serif; text-decoration:none; display:block; padding:5px 5px 5px 10px; color:#0657ad; font-weight:bold}
+	ul li:hover ul, ul li.over ul{display:block;}
+					ul li ul:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+					ul li ul {display: inline-block;}
+					/*IE-mac de bu bolumu sakla \ */
+					* html ul li ul {height: 1%;}
+					ul li ul {display: block;}
+					/* IE-mac bu bolumu saklam artik */
+			ul li ul {width: 580px; list-style-type:none; display:none; border-bottom:3px solid #C30; background-color:#eee; padding:5px 0 10px 10px; position:absolute;}
+				ul li li {width:180px; margin:5px 0 0 0; padding:0 10px 0 0; line-height:15px; float:left; border:0;}
+				ul li li:hover{border:0}
+					ul li li a{color:#0657ad; text-decoration:underline; padding:0; font-weight:normal}
+					ul li li a:hover{color:#C30; text-decoration:none}
+			ul li ul.kapsulSolda{right:0}
+</style>
+<script type="text/javascript">
+startList = function() {
+if (document.all&&document.getElementById) {
+navRoot = document.getElementById("menu");
+for (i=0; i<navRoot.childNodes.length; i++) {
+node = navRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+  }
+  node.onmouseout=function() {
+  this.className=this.className.replace(" over", "");
+   }
+   }
+  }
+ }
+}
+window.onload=startList;
+
+</script>
+</head>
+<body>
+<ul id="menu">
+	<li>
+		<a href="">Tencere</a>    
+        <ul class="kapsul">
+          <li><a href="">Birinci Oge</a></li>
+          <li><a href="">İkinci Oge</a></li>
+          <li><a href="">Üçüncü Öge</a></li>
+          <li><a href="">Dördüncü Öge</a></li>
+          <li><a href="">Beşinci Öge</a></li>
+          <li><a href="">Altıncı Öge</a></li>
+          <li><a href="">Yedinci Öge</a></li>
+          <li><a href="">Sekizinci Öge</a></li>
+          <li><a href="">Dokuzuncu Öge</a></li>
+          <li><a href="">Onuncu Öge</a></li>        
+        </ul>        
+    </li>
+    <li><a href="">Tava</a></li>
+    <li><a href="">Çaydanlık</a></li>
+    <li><a href="">Leğen</a>
+        <ul class="kapsulSolda">
+          <li><a href="">Birinci Oge</a></li>
+          <li><a href="">İkinci Oge</a></li>
+          <li><a href="">Üçüncü Öge</a></li>
+          <li><a href="">Dördüncü Öge</a></li>
+          <li><a href="">Beşinci Öge</a></li>
+          <li><a href="">Altıncı Öge</a></li>
+          <li><a href="">Yedinci Öge</a></li>
+          <li><a href="">Sekizinci Öge</a></li>
+          <li><a href="">Dokuzuncu Öge</a></li>
+          <li><a href="">Onuncu Öge</a></li>        
+        </ul>           
+    </li>
+</ul>
+</body>
+</html>

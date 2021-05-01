@@ -1,0 +1,14 @@
+---
+layout: post
+title: İnternet Explorer 7 Beta 2 çıktı
+Date: 2006-04-27 01:27
+categories: [Haberler]
+tags: [ie7, internet explorer, microsoft]
+---
+
+İnternet Explorer 7'nin Beta 2'sini çıkardı.
+microsoft.com/windows/ie/default.mspx'den
+indirebilirsiniz. Daha güvenli ve yeni özellikleri ile geliyor. Sene
+sonunda da Final versiyonu çıkaracağı bildiriliyor. Ama microsoft işi bu
+belli olmaz. Ancak bu özellikler zaten Firefox ve Opera'da var olan
+özellikler :(

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Kilian Valkhof" />
+	<title>Internet Explorer text-shadow by Kilian Valkhof</title>
+	<style type="text/css">
+	/* regular styling stuff */
+	h1 {font:18px/1.5em Arial, Helvetica, sans-serif;color:#000;}
+	p, ul {font:12px/1.5em Arial, Helvetica, sans-serif;color:#000;}
+	
+	
+	.shadow {
+		/* pretty browsers*/
+		text-shadow:#000 0px 0px 5px;
+		/* ugly ie */
+		zoom:1;/*force hasLayout*/
+		position:relative;/*fot absolute position of child element*/
+	}
+	.shadow span {
+		/* position correctly */
+		position:absolute;
+		left:-7px;top:-7px; /* strength + pixelradius */
+		z-index:-1;/* force under the normal text */
+		/* the magic: filters */
+		filter:
+			progid:DXImageTransform.Microsoft.Glow(Color=#0000ff,Strength=2)
+			progid:DXImageTransform.Microsoft.blur(pixelradius=5, enabled='true')
+		;
+		zoom:1;/*force hasLayout*/
+	}
+	
+	
+	.knockout {color:#fff}/*same as background colour for knock-out effect*/
+	.knockout span {
+		filter:
+			progid:DXImageTransform.Microsoft.Glow(Color=#666666,Strength=2)/*make it a bit darker for contrast*/
+			progid:DXImageTransform.Microsoft.blur(pixelradius=5, enabled='true')
+		;
+	}	
+	</style>
+</head>
+ 
+<body>
+ 
+<h1 class="shadow">H1 with shadow<!--[if IE]><span>H1 with shadow</span><![endif]--></h1>
+<p class="shadow"><strong>This paragraph has text-shadow.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet turpis. Phasellus rutrum ligula tristique massa. Nulla vitae augue. Aenean vel nibh ut erat ultrices consequat. Nunc venenatis tempus pede. In commodo nibh sit amet nisl. Phasellus consectetuer consectetuer justo. Duis ultrices, neque sed porttitor ultrices, mi orci semper nisi, in ultrices ligula sem vel purus. Phasellus in justo. Mauris lorem tellus, convallis nec, vehicula nec, tincidunt vel, eros. Donec vulputate, erat sit amet interdum gravida, tortor metus consequat massa, eu facilisis nunc felis ac ante. Praesent ac lectus non tortor tempor aliquet. Vestibulum a mi quis libero condimentum laoreet. Nullam rhoncus, odio ac ultrices luctus, quam purus laoreet metus, quis adipiscing massa sapien eget massa.<!--[if IE]><span><strong>This paragraph has text-shadow.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet turpis. Phasellus rutrum ligula tristique massa. Nulla vitae augue. Aenean vel nibh ut erat ultrices consequat. Nunc venenatis tempus pede. In commodo nibh sit amet nisl. Phasellus consectetuer consectetuer justo. Duis ultrices, neque sed porttitor ultrices, mi orci semper nisi, in ultrices ligula sem vel purus. Phasellus in justo. Mauris lorem tellus, convallis nec, vehicula nec, tincidunt vel, eros. Donec vulputate, erat sit amet interdum gravida, tortor metus consequat massa, eu facilisis nunc felis ac ante. Praesent ac lectus non tortor tempor aliquet. Vestibulum a mi quis libero condimentum laoreet. Nullam rhoncus, odio ac ultrices luctus, quam purus laoreet metus, quis adipiscing massa sapien eget massa.</span><![endif]--></p>
+<h1 class="shadow knockout">H1 with knock-out<!--[if IE]><span>H1 with knock-out</span><![endif]--></h1>
+<p class=" shadow knockout"><strong>This paragraph has text-shadow.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet turpis. Phasellus rutrum ligula tristique massa. Nulla vitae augue. Aenean vel nibh ut erat ultrices consequat. Nunc venenatis tempus pede. In commodo nibh sit amet nisl. Phasellus consectetuer consectetuer justo. Duis ultrices, neque sed porttitor ultrices, mi orci semper nisi, in ultrices ligula sem vel purus. Phasellus in justo. Mauris lorem tellus, convallis nec, vehicula nec, tincidunt vel, eros. Donec vulputate, erat sit amet interdum gravida, tortor metus consequat massa, eu facilisis nunc felis ac ante. Praesent ac lectus non tortor tempor aliquet. Vestibulum a mi quis libero condimentum laoreet. Nullam rhoncus, odio ac ultrices luctus, quam purus laoreet metus, quis adipiscing massa sapien eget massa.<!--[if IE]><span><strong>This paragraph has text-shadow.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam sit amet turpis. Phasellus rutrum ligula tristique massa. Nulla vitae augue. Aenean vel nibh ut erat ultrices consequat. Nunc venenatis tempus pede. In commodo nibh sit amet nisl. Phasellus consectetuer consectetuer justo. Duis ultrices, neque sed porttitor ultrices, mi orci semper nisi, in ultrices ligula sem vel purus. Phasellus in justo. Mauris lorem tellus, convallis nec, vehicula nec, tincidunt vel, eros. Donec vulputate, erat sit amet interdum gravida, tortor metus consequat massa, eu facilisis nunc felis ac ante. Praesent ac lectus non tortor tempor aliquet. Vestibulum a mi quis libero condimentum laoreet. Nullam rhoncus, odio ac ultrices luctus, quam purus laoreet metus, quis adipiscing massa sapien eget massa.</span><![endif]--></p>
+ 
+<p>The above should work in:</p>
+<ul>
+<li>Safari (supports text-shadow)</li>
+<li>Opera 9.5 (supports text-shadow)</li>
+<li>Internet Explorer 5.5+</li>
+<li>Konqueror (supports text-shadow)</li>
+<li>iCab (supports text-shadow)</li>
+</ul>
+<p>&hellip; and makes me feel a bit dirty.</p>
+<ul>
+<li>Back to <a href="http://kilianvalkhof.com/2008/design/almost-cross-browser-text-shadow/">KilianValkhof.com - (Almost) Cross browser text-shadow</a> for the Internet explorer example</li>
+<li>Go to <a href="http://kilianvalkhof.com/2008/css-xhtml/cross-browser-text-shadow/w/">KilianValkhof.com - Cross browser text-shadow</a> for the Firefox example</li>
+</ul>
+</body>
+</html>
+

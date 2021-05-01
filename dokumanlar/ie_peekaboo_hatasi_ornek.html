@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+<title>IE6 cee-eee Hatas�</title>
+<style type="text/css">
+<!--
+body {	margin: 0; padding: 0; font-family: verdana, sans-serif; font-size: 80%; }
+
+.alignright {margin: 0 7% 1em 0; text-align: right;}
+
+.small {font-size: .9em;}
+
+a {border: 0; color: #000;}
+
+h1 {font-size: 24px; text-align:center}
+
+h4 {font-size: 1.2em; font-weight: bold; margin: 1.5em 10% .5em;}
+
+p {margin: 5px 10%;}
+
+ol {margin: 20px 20%;}
+
+/************** Demo rules ******************/
+
+div#floatholder a:hover{
+background: #f99;     /* An a:hover mouseover change anywhere within #content 
+                                                  will uncover missing content, but if 'color' and 'border' are toggled on hover
+                                                 rather than the background, the peekaboo bug is only partially corrected. */ 
+}
+
+#clear {
+clear: both;                           /* Bug trigger. This div must touch the float to trigger bug. */  
+border: 3px solid #f0f;
+text-align: center;
+}
+
+#floatholder {
+background: #fed;          /* Bug trigger. I suspect the peekaboo content is hidden behind this BG. */
+border: 3px dotted #000;
+margin: 1em 15% 1em 13%;
+font-size: 1.1em;
+}
+
+     /************************************************************************
+     * If both #floatholder and #float are given 'position: relative', the bug is prevented *
+     *************************************************************************/
+
+#float {           /* Bug is triggered by either left or right float */
+float : left;
+border: 6px solid #844;
+padding : 5px;
+width : 200px;
+height: 200px;
+font-size: 2em;
+text-align: center;
+}
+
+#float span {  
+background: #9c9;
+color: white;
+}
+
+
+blockquote{
+	
+	font-size:70%;
+	border-top:1px solid #000;
+	margin:0;
+	padding:10px 0 0 15px;
+	margin-top:200px;
+}
+-->
+</style>
+</head>
+
+<body>
+
+<h1>
+IE6 cee-eee Hatas�
+</h1>
+
+<div id="floatholder">
+
+<div id="float">
+<br />
+<span>&nbsp;Float&nbsp;
+<br /><br />
+<a href="#">&nbsp;test link&nbsp;</a>
+</span>
+</div>
+
+Metin �rne�i. <a href="#">Test link</a> 
+<div style="border: 3px solid #f00; background: #dde;">Katman i�inde metin �rne�i. 
+<a href="#">Test link</a></div>
+Metin �rne�i. <a href="#">Test link</a>
+<div style="border: 3px solid #0c0; background: #dde;">Katman i�inde metin �rne�i.
+<a href="#">Test link</a></div>
+Metin �rne�i. <a href="#">Test link</a>
+<div style="border: 3px solid #00f; background: #dde;">Katman i�inde metin �rne�i.
+<a href="#">Test link</a></div>
+Metin �rne�i. <a href="#">Test link</a>
+
+<div id="clear">Clear uygulanm�� katman</div>  <!--******* Note: a cleared <br> will not prevent bug *******-->
+
+<div style="border: 3px solid #00f; background: #dde;">Clear uygulanm�� katmandan sonraki katman. E�er clear uygulanm�� katman float uygulanm�� katman temas etmezse hata g�r�lmeyecektir. <a href="#">Test link</a></div>
+</div>
+
+<blockquote>Not : Hata sayfas� haz�rlan�rken positioniseverything.net/explorer/peekaboo.html �rne�inden yararlan�lm��t�r.</blockquote>
+
+</body></html>

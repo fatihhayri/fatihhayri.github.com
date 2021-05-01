@@ -26,9 +26,10 @@
 
   {% endif %}
 
-  {% include trending-tags.html %}
 
-  {% if trending_tags.size > 0 %}
+  <!-- {% include trending-tags.html %} -->
+
+  <!-- {% if trending_tags.size > 0 %}
     <div id="access-tags">
       <span>{{- site.data.label.panel.trending_tags | default: 'Trending Tags' -}}</span>
       <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
@@ -40,7 +41,7 @@
 
       </div>
     </div>
-  {% endif %}
+  {% endif %} -->
   </div> <!-- .access -->
 
   {% if include.toc %}
@@ -54,4 +55,11 @@
     </div>
   {% endif %}
 
+  {% assign paths = page.url | split: '/' %}
+  
+  {% if paths.size == 0 %}
+  <a class="twitter-timeline" data-lang="tr" data-height="1200" data-dnt="true" data-theme="dark"
+    href="https://twitter.com/fatihhayri?ref_src=twsrc%5Etfw">Tweets by fatihhayri</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  {% endif %}
 </div> <!-- #panel-wrapper -->

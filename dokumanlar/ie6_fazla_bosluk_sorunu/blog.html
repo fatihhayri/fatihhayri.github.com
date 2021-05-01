@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1> IE'de Liste elemanları arasındaki boşluk sorunu</h1>
+<p>Bu sorun ile çok karşılaştım. Bir çok insanda bu sorun nedeni ile bana mesaj attı. Son mesajdan sonra konuyu yazmalıyım dedim. </p>
+<p>Sorunumuzu tam olarak şöyle tanımlayabiliriz; Dikey olarak listelediğimiz menülerde ie'de fazladan boşluk gözüküyor. Bu durum bazen ie6'da bazense ie6 ve ie7'de oluyor.</p>
+<p>Bir örnek verelim</p>
+[sourcecode language=html]
+<ul id="menu">
+  <li><a href="#">Menu Bir</a></li>
+  <li><a href="#">Menu İki</a></li>
+  <li><a href="#">Menu Üç</a></li>
+  <li><a href="#">Menu Dört</a> </li>
+</ul>
+[/sourcecode]
+<p>CSS kodumuzda da</p>
+[sourcecode language=css]
+ul#menu li a{ display:block}
+[/sourcecode]
+<p>Örneği görmek için tıklayınız.</p>
+<p>kodumuz olsun. Diğer tarayıcılarda normal bir görünüt alırken ie6'da liste öğeleri arasında fazladan boşluk görürüz.</p>
+<p><img src="http://docs.google.com/File?id=dhctmbn6_421fk5d9mft_b" alt="" /></p>
+<p>Sorun İnternet Explorer'un hasLayout sorunudur. Aşağıdaki tanımlardan biri yapılması durumunda bu sorun düzelecektir.</p>
+<p></p><strong>display:</strong> inline-block<br />
+  <strong> height:</strong> herhangi bir değeri<br />
+  <strong> float:</strong> left veya right<br />
+  <strong>*max-height:</strong> herhangi bir değeri<br />
+  <strong> *max-width:</strong> herhangi bir değeri<br />
+  <strong> *min-height:</strong> herhangi bir değeri<br />
+  <strong> *min-width:</strong> herhangi bir değeri<br />
+  <strong> *overflow:</strong> not visible<br />
+  <strong> position:</strong> absolute<br />
+  <strong> width:</strong> herhangi bir değeri<br />
+  <strong> writing-mode:</strong> tb-rl<br />
+  <strong> zoom:</strong> herhangi bir değeri</p>
+<p>* ie7 de geçerli.</p>
+<p>Biz bir tanesini seçelim.</p>
+[sourcecode language=html]
+* html ul#menu li a {height: 1px;}
+[/sourcecode]
+<p>Örneği görmek için tıklayınız.</p>
+<p>Bu kodu yazdıktan sonra sayfa aşağıdaki gibi görünecektir.</p>
+<p><img src="http://docs.google.com/File?id=dhctmbn6_422dgmtm9g8_b" alt="" /></p>
+<h3>Kaynaklar</h3>
+<ul>
+  <li><a href="http://www.brunildo.org/test/IEWlispace.php" title="http://www.brunildo.org/test/IEWlispace.php">http://www.brunildo.org/test/IEWlispace.php</a></li>
+  <li><a href="http://www.hicksdesign.co.uk/journal/ie-whitespace-bug" title="http://www.hicksdesign.co.uk/journal/ie-whitespace-bug">http://www.hicksdesign.co.uk/journal/ie-whitespace-bug</a></li>
+  <li><a href="http://www.cssnewbie.com/fixing-ie6-whitespace-bug/" title="http://www.cssnewbie.com/fixing-ie6-whitespace-bug/">http://www.cssnewbie.com/fixing-ie6-whitespace-bug/</a></li>
+  <li><a href="http://archivist.incutio.com/viewlist/css-discuss/34926" title="http://archivist.incutio.com/viewlist/css-discuss/34926">http://archivist.incutio.com/viewlist/css-discuss/34926</a></li>
+</ul>
+</body>
+</html>

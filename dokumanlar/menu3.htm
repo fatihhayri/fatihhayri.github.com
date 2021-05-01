@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 150px;
+	border-bottom: 1px solid #000;
+
+}
+
+ul li {
+	position: relative;
+}
+
+li ul {
+	position: absolute;
+	left: 149px;
+	top: 0;
+	display: none;
+}
+
+ul li a { 
+	display: block; 
+	text-decoration: none; 
+	background-color: #E2E2E2; 
+	padding: 5px;
+	border:1px solid #000;
+	border-bottom:0;
+}
+
+/* IE. gizle \*/ 
+* html ul li { float: left; height: 1%; }
+* html ul li a { height: 1%; } 
+/* IE den gizleme sonu */
+
+li:hover ul, li.over ul { 
+	display: block;
+}
+	
+</style>
+<script type="text/javascript">
+startList = function() {
+if (document.all&&document.getElementById) {
+navRoot = document.getElementById("menu");
+for (i=0; i<navRoot.childNodes.length; i++) {
+node = navRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+  }
+  node.onmouseout=function() {
+  this.className=this.className.replace(" over", "");
+   }
+   }
+  }
+ }
+}
+window.onload=startList;
+
+</script>
+</head>
+<body>
+<ul id="menu">
+<li><a href="#">Anasayfa</a></li>
+<li><a href="#">Haberler</a>
+<ul>
+<li><a href="#">Þirket Haberleri </a></li> 
+<li><a href="#">Yurt içi Haberleri </a></li>
+<li><a href="#">Yurt dýþý Haberleri</a></li>
+</ul>
+</li> 
+<li><a href="#">Ürünler</a> 
+<ul> <li><a href="#">Tencere</a></li> 
+<li><a href="#">Tava</a></li> 
+<li><a href="#">Ütü</a></li> 
+<li><a href="#">Tost Makinesi </a></li> 
+<li><a href="#">El Süpürgesi </a></li> 
+</ul>
+</li> 
+</ul> 
+</body></html>

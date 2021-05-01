@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Suckerfish :focus example</title>
+<style type="text/css" media="all">
+
+body {
+	font: 100% arial, helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 1.5em;
+	color: orange;
+}
+
+form {
+	border: 2px solid #9c9;
+	padding: 0.5em;
+}
+
+div {
+	background: #eee;
+	clear: left;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+label {
+	float: left;
+	width: 5em;
+}
+
+input {
+	width: 15em;
+	border: 2px solid;
+	border-color: #666 #ddd #ddd #666;
+}
+
+input:focus, input.sffocus {
+	background: #cfc;
+	border-color: #090;
+}
+
+</style>
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+sfFocus = function() {
+	var sfEls = document.getElementsByTagName("INPUT");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onfocus=function() {
+			this.className+=" sffocus";
+		}
+		sfEls[i].onblur=function() {
+			this.className=this.className.replace(new RegExp(" sffocus\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfFocus);
+
+//--><!]]></script>
+
+</head>
+
+<body>
+
+<h1>Suckerfish :focus</h1>
+<form action="">
+<div><label for="this">This</label><input id="this" /></div>
+<div><label for="that">That</label><input id="that" /></div>
+<div><label for="theother">The Other</label><input id="theother" /></div>
+<div><label for="banana">Banana</label><input id="banana" /></div>
+<div><label for="kumquat">Kumquat</label><input id="kumquat" /></div>
+</form>
+kaynak: <a href="http://www.htmldog.com/articles/suckerfish/focus/">http://www.htmldog.com/articles/suckerfish/focus/
+</a>
+</body>
+</html>
+

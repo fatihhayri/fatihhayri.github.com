@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+<title>Untitled Document</title>
+<style>
+body {
+	font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#golKrallari {
+	width: 700px;
+}
+
+caption {
+	padding: 0 0 5px 0;
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+th {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #474747;
+	border-bottom:1px solid #E0E0E0;
+	border-right:1px solid #E0E0E0;
+	border-top:1px solid #E0E0E0;
+	letter-spacing: 2px;
+	text-align: left;
+	padding: 6px;
+	background: #F3F3F3 url(images/tablo_baslik_zr.gif) repeat-x;
+}
+
+th.bgYok {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #E0E0E0;
+	background: none;
+
+}
+
+th.baslikIki {
+	border-left: 1px solid #E0E0E0;
+	border-top: 0;
+	padding-left:25px;
+	background: #fff url(images/top2.gif) 5px no-repeat;
+}
+
+th.baslikBir {
+	border-left: 1px solid #E0E0E0;
+	border-top: 0;
+	padding-left:25px;
+	background: #F3F3F3 url(images/top.gif) 5px no-repeat;
+}
+
+td {
+	border-bottom:1px solid #E0E0E0;
+	border-right:1px solid #E0E0E0;
+	background-color: #fff;
+	padding: 6px;
+	color: #474747;
+	font:11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+td.tabloZRFark {
+	background-color: #f3f3f3;
+	color: #474747;
+}
+
+tfoot tr td{
+	text-align:right;
+	border-left:1px solid #e0e0e0;
+	border-bottom:2px solid #e0e0e0;
+	font:italic 9px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#golKrallari tr.uzerineGelince td, #golKrallari tr.uzerineGelince th{
+	background:#474747;
+	color:#f3f3f3;
+}
+
+</style>
+<script type="text/javascript">
+function uzerinegelince()
+{
+	if (document.getElementById && document.createTextNode)
+	{
+		var tables=document.getElementsByTagName('table');
+		for (var i=0;i<tables.length;i++)
+		{
+			if(tables[i].className=='uzerinde')
+			{
+				var trs=tables[i].getElementsByTagName('tr');
+				for(var j=0;j<trs.length;j++)
+				{
+					if(trs[j].parentNode.nodeName=='TBODY')
+					{
+						trs[j].onmouseover=function(){this.className='uzerineGelince';return false}
+						trs[j].onmouseout=function(){this.className='';return false}
+					}
+				}
+			}
+		}
+	}
+}
+</script>
+</head>
+
+<body onload="uzerinegelince()">
+<table cellspacing="1" class="uzerinde" id="golKrallari" summary="Türkiye Süper Ligi'nin son 3 yılında en çok gol atan futbolcu listesi">
+  <caption>1. LİG TARİHİNDEKİ GOL KRALLARI(SON 3 YIL)</caption>
+<thead>
+ <tr>
+  <th scope="col" abbr="sezon" class="bgYok">SEZON</th>
+  <th scope="col" abbr="adsoyad">ADI-SOYADI</th>
+  <th scope="col" abbr="takım">TAKIM</th>
+  <th scope="col" abbr="maç">MAÇ SAYISI</th>
+  <th scope="col" abbr="gol">ATTIĞI GOL</th>
+  <th scope="col" abbr="ortalama">ORTALAMA</th>
+ </tr>
+</thead>
+<tbody> 
+ <tr>
+<th scope="row" abbr="03-04" class="baslikBir">2003 - 2004</th>
+<td class="tabloZRFark">ZAFER BİRYOL</td>
+<td class="tabloZRFark">Konyaspor</td>
+<td class="tabloZRFark">34</td> 
+<td class="tabloZRFark">25</td>
+<td class="tabloZRFark">0.74</td>
+ </tr>
+ <tr>
+  <th  scope="row" abbr="04-05" class="baslikIki">2004 - 2005</th>
+  <td>FATİH TEKKE</td>
+  <td>Trabzonspor</td>
+  <td>34</td>
+  <td>31</td>
+  <td>0.91</td>
+ </tr>
+ <tr>
+  <th  scope="row" abbr="05-06" class="baslikBir">2005 - 2006</th>
+  <td class="tabloZRFark">GÖKHAN ÜNAL</td>
+  <td class="tabloZRFark">Kayserispor</td>
+  <td class="tabloZRFark">32</td>
+  <td class="tabloZRFark">25</td>
+  <td class="tabloZRFark">0.78</td>
+ </tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="6">Kaynak: Fatih Futbol Okulu(F.F.O)</td>
+</tr>
+</tfoot> 
+</table>
+<p><a href="javascript:history.back()" style="color:#474747; text-decoration:none">&laquo; makaleye geri dön</a></p>
+</body>
+</html>

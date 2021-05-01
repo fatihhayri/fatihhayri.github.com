@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fatih Hayrioğlu - CSS ile Form Yapmak</title>
+<style>
+/* genel stiller */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 12px/14px Arial, Helvetica, sans-serif;
+	background-color:#07A;
+	text-align: center;
+	margin:20px 0;
+}
+
+/* form stilleri */
+
+form#formset {
+	width: 360px;
+	margin: 0 auto;
+	text-align: left;
+	color:#fff;
+}
+
+form#formset fieldset {
+	margin: 0 0 1em 0;
+	padding: 1.5em 1.5em 0 1.5em;
+	border: #DDD 1px solid;
+}
+
+form#formset fieldset legend {
+	font-weight: bold;
+	color: #fff;
+	padding:0 0.5em;
+}
+
+form#formset label {
+	display: block;
+	width: 290px;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 0px 0px 12px 0px;
+}
+
+form#formset fieldset input {
+	display: block;
+	margin-top: 3px;
+	border:1px solid #fff;
+	border-left:5px solid #fff;
+	background-color:#09c;
+	color:#ffc;
+}
+
+form#formset fieldset input.hata {
+	display: block;
+	margin-top: 3px;
+	border:1px solid #ff0;
+	border-left:5px solid #ff0;
+	background-color:#ccc;
+	color:#ffc;
+}
+
+form#formset fieldset label.hata {
+	color:#ff0;
+	font-weight:bold;
+}
+
+form#formset label.adAlani,
+form#formset label.adresAlani,
+form#formset label.sehirAlani,
+form#formset label.epostaAlani {
+	clear: left;
+}
+
+
+form#formset label.adAlani,
+form#formset label.soyadAlani,
+form#formset label.sehirAlani,
+form#formset label.epostaAlani,
+form#formset label.telAlani {
+	float: left;
+	margin: 0px 10px 0px 0px;
+	width: 150px;
+}
+
+form#formset label.adAlani input,
+form#formset label.soyadAlani input,
+form#formset label.epostaAlani input,
+form#formset label.sehirAlani input,
+form#formset label.telAlani input {
+	float: left;
+	width: 150px;
+	padding: 0px;
+}
+
+form#formset label.postakoduAlani {
+	float: left;
+	width: 80px;
+}
+
+form#formset label.postakoduAlani input {
+	float: left;
+	width: 80px;
+}
+
+form#formset label.adresAlani {
+	float: left;
+	width: 300px;
+	margin: 0px 0px 0px 0px;
+}
+
+form#formset label.adresAlani input {
+	float: left;
+	width: 300px;
+	padding: 0px;
+}
+
+form#formset fieldset input#radiobutton_1,
+form#formset fieldset input#radiobutton_2,
+form#formset fieldset input#radiobutton_3,
+form#formset fieldset input#radiobutton_4 {
+	clear: left;
+	float: left;
+	padding: 0px;
+	border:0;
+	margin: 0px 0px 0px 0px;
+	background-color:#07a;
+}
+
+form#formset label.konuRadyoButon {
+	clear: none;
+	margin: 0px 0px 0px 25px;
+	padding: 0px 0px 15px 0px;
+}
+
+form#formset fieldset input#checkbox_1,
+form#formset fieldset input#checkbox_2,
+form#formset fieldset input#checkbox_3 {
+	clear: both;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	border:0;
+	background-color:#07a;
+}
+
+form#formset label.onayAlaniIsaretKutusu {
+	clear: none;
+	margin: 0px 0px 0px 25px;
+	padding: 0px 0px 15px 0px;
+}
+
+form#formset textarea {
+	display: block;
+	margin-top: 3px;
+	border:1px solid #fff;
+	border-left:5px solid #fff;
+	background-color:#09c;
+	color:#ffc;
+}
+
+form#formset blockquote{
+	margin-bottom:10px;
+}
+
+form#formset fieldset em, form#formset blockquote em{
+	color:#ff0;
+}
+
+div.hata {
+background:#FFFFCC url(images/hata.png) no-repeat scroll 5px;
+border:1px solid #FFCC66;
+margin:0pt 0pt 10px;
+padding:5px 10px 5px 35px;
+color:#000;
+}
+
+div.hata strong{
+	color:#ff0;
+}
+
+.formbutton{
+	cursor:pointer;
+	border:0;
+	background:#999;
+	color:#666;
+	font-weight:bold;
+	padding: 1px 2px;
+	background:url(images/buton_bg2.gif) repeat-x left top;
+}
+
+</style>
+</head>
+
+<body>
+
+<form action="gonder.html" method="post" id="formset">
+		<div class="hata">
+Dikkat aşağıda sarı renk ile belirtilen yerlerde hata var.
+</div>
+		<fieldset>	
+		<legend>Genel Bilgiler</legend>
+			<label class="adAlani">Ad <em>&#42;</em>
+			<input name="ad" type="text" id="ad" value="" />
+		</label>
+			<label class="soyadAlani">Soyad <em>&#42;</em>
+			<input name="soyad" type="text" id="soyad" value="" />
+		</label>
+			<label class="adresAlani">Ev Adresi <em>&#42;</em>
+			<input name="adres" type="text" id="adres" value="" />
+		</label>
+			<label class="sehirAlani">Şehir <em>&#42;</em>
+			<input name="sehir" type="text" id="sehir" value="" />
+		</label>
+			<label class="postakoduAlani">Posta Kodu <em>&#42;</em>
+			<input name="postakodu" type="text" id="postakodu" value="" />
+		</label>                  
+			<label class="epostaAlani hata">Eposta &#42;
+			<input name="eposta" type="text" id="eposta" value="" class="hata" />
+			</label>
+			<label class="telAlani">Telefon<input name="tel" type="text" id="tel" value="" />
+			</label>
+		</fieldset>
+		<fieldset>
+		<legend>Konu <em>&#42;</em></legend>
+			<input id="radiobutton_1" type="radio" name="radiobutton_type" value="" />
+			<label class="konuRadyoButon" for="radiobutton_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </label>
+			<input id="radiobutton_2" type="radio" name="radiobutton_type" value="" />
+			<label class="konuRadyoButon" for="radiobutton_2">Cras diam. Suspendisse potenti. In dictum bibendum est. Aliquam semper. Sed vel massa. Praesent imperdiet nisi eget lacus. </label>
+			<input id="radiobutton_3" type="radio" name="radiobutton_type" value="" />
+			<label class="konuRadyoButon" for="radiobutton_3">Phasellus quis enim. </label>
+			<input id="radiobutton_4" type="radio" name="radiobutton_type" value="" />
+			<label class="konuRadyoButon" for="radiobutton_4">Vestibulum ut lectus ac leo luctus aliquam. </label>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Düşünceleriniz</legend>	
+			<label class="aciklamaAlani">Düşüncelerinizi aşağıdaki alana yazınız.<br /><textarea name="describe" cols="35" rows="5"></textarea>
+			</label>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Onay Alanı</legend>
+			<input id="checkbox_1" type="checkbox" name="kabul" value="y" /><label for="checkbox_1" class="onayAlaniIsaretKutusu">Site kurallarını kabul ediyorum.</label>
+			<input id="checkbox_2" type="checkbox" name="kabul" value="y" /><label for="checkbox_2" class="onayAlaniIsaretKutusu">Site kurallarını kabul etmiyorum.</label>
+		</fieldset>
+		<blockquote><strong>Not:</strong> Yanında (<em>*</em>) işareti olanlar zorunlu alanlardır.</blockquote>
+			<input type="submit" name="submit" value="GÖNDER" class="formbutton" />			
+</form>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+
+@font-face {
+	font-family: 'TR Centurion Old Italic';
+	src: url('TR_Centurion_Old_Italik.eot');
+	src: local('TR Centurion Old Italic'), local('TRCenturionOldItalic'), url('TR_Centurion_Old_Italik.woff') format('woff'), url('TR_Centurion_Old_Italik.svg#TRCenturionOldItalic') format('svg'), url('TR_Centurion_Old_Italik.ttf') format('truetype');
+}
+body{width:650px; margin:0 auto}
+h1{font:44px 'TR Centurion Old Italic', Arial, sans-serif; color:#1259C7;}
+h3{font:24px 'TR Centurion Old Italic', Arial, sans-serif; color:#1259C7;}
+p.ilkParagraf{font:16px/1.5em 'TR Centurion Old Italic', Arial, sans-serif;}
+</style>
+</head>
+
+<body>
+<h1>@font-face kullanımı </h1>
+<h3>@font-face Genel Bilgi</h3>
+<p class="ilkParagraf">@font-face özelliği web sitelerimizde sistemde yüklü olmayan yazı tiplerini kullanma imkanı verir. @font-face kodu ile kullanıcının bilgisayarına kullanılacak yazı tipleri yüklenir. @font-face özelliği ilk olarak CSS2 ile birlikte geldi, ancak sonradan bazı problemlerden dolayı CSS2.1'de kaldırıldı ve şimdi CSS3 ile birlikte yeniden geldi.</p>
+<p>Tipografi hakkında bir çok makale yazıldı ve yazılmaktadır. Bende zamanında <a href="http://www.fatihhayrioglu.com/css-ve-tipografi/" title="CSS ve Tipografi">CSS ve Tipografi</a> adlı bir makale yayınlamıştım ve orada yazı tipi seçiminin öneminden bahsetmiştim. Biz halihazırda farklı yazı tiplerini sitelerimizde kullanmak için <a href="http://www.fatihhayrioglu.com/metin-yerine-resimflash-ekleme-teknikleri-image-replacement/" title="sIFR">sIFR</a>,  <a id="rxa5" href="http://www.yakuter.com/cufon-bir-sifr-alternatifi-hakkinda-her-sey/" title="Cufón">Cufón</a> vd. bazı yöntemleri kullanmaktayız. Bu yöntemler işimizi görse de bazı dezavantajları yok değildi. @font-face bu sorunları gidermek ve yenilikler getirmek için bizlere sunuldu. Bu konuda ümitliyim.</p>
+<p>@font-face özelliğini tüm yeni nesil tarayıcılar destekliyor. Diğer özelliklerden farklı olarak ilk defa bu özelliği Firefox, Opera ve Safari sonradan destekledi. Şu an ki durumda kullanmak mümkün olsa da bence en az 4-5 aylık(Firefox'un eski sürümlerinin yerini Firefox 3.5 alması için) bir süre sonra tam anlamıyla bir projede kullanılabilir. Tabi tek sorunumuz bu ise.</p>
+<p><img src="File?id=dhctmbn6_258qszfhsf9_b" /></p>
+<p>Kaynak: <a id="sdd5" href="http://en.wikipedia.org/wiki/Web_typography" title="Vikipedia">Vikipedia</a></p>
+<h3><strong>@font-face Yazı tipi Çeşitleri</strong></h3>
+<p>@font-face kullanımında farklı tarayıcılar farklı yazı tipi dosya uzantılarını desteklediği için birden fazla yazı tipi dosyası hazırlamalıyız. İnternet Explorer .eot uzantılı yazı tiplerini desteklerken, diğer tarayıcılar .ttf ve .otf uzantılı yazı tiplerini desteklemektedir. Biz kullanacağımız yazı tiplerinin ie için .eot uzantılı ve diğerleri için .ttf veya .otf uzantılı dosyalarını hazırlamamız gerekecektir. Ayrıca Opera9 ve Google Chrome içinde .svg uzantılı dosya hazırlamalıyız. </p>
+<p>@font-face kodu ile sayfalarımıza ekleyebileceğimiz yazı tipi çeşitlerini incelersek;</p>
+  <ul>
+    <li><strong>.eot Uzantılı dosyalar:</strong> .eot(Embedded OpenType) Microsfot'un baştan beri  desteklediği yazı tipi dosya uzantısıdır. Diğer yazı tipi çeşitlerine destek vermeyi pek düşünmeyen İnternet Explorer bu konuda da ayak bağı olacağa  benzer. WEFT aracı ile .ttf uzantılı dosyalarınızı .eot uzantılı dosyalara çevirebilirsiniz. Biraz karışık geldi bu program bana.
+    </li>
+    <li><strong>.ttf ve .otf uzantılı dosyalar:</strong> Genelde Windows işletim sistemininde kullandığı bu yazı tipi dosya çeşitlerini Firefox, Safari, Opera desteklemektedir. 
+    </li>
+    <li><strong>.svg uzantılı yazı tipi dosyaları:</strong> Vektörel, esnek yapılı yazı  tipi dosya çeşidi. Safari,  Google Chrome, Opera destekliyor. FontForge sitesindeki SVG uzantılı oluşturulan Opera'da sorun oluyor. <a title="Batik" href="http://xmlgraphics.apache.org/batik/tools/font-converter.html" id="nntv">Batik</a> bu araç var, ama nasıl kullanıldığını öğrenebilmiş değilim.
+    Önerim <a href="http://www.fontsquirrel.com/fontface/generator">fontsquirrel.com</a> sitesindeki aracı kullanmanız.</li>
+    <li><strong>woff uzantılı yazı tipi dosyaları: </strong>Web için kullanılacak bir standart. Boyut olarak diğelerine nazaran %40'lara varan bir avantaj sağlıyor. Firefox 3.6 sonrasında destekleyeceğini açıkladı. </li>
+  </ul>
+
+<p><strong>Yazı tip dosyalarını birbirine çevirme araçları</strong></p>
+<ul>
+  <li>ttf yazı tipinizi font-face'in desteklediğin tüm yazı tiplerini(.eot, .svg, ttf, woff) üreten güzel bir araç: <a id="sob2" href="http://www.fontsquirrel.com/fontface/generator" title="http://www.fontsquirrel.com/fontface/generator">http://www.fontsquirrel.com/fontface/generator</a>
+  </li>
+  <li>
+    ttf yazı tiplerini eot'ya çevirmek için çevirim içi araç: <a id="n1_k" href="http://www.kirsle.net/wizards/ttf2eot.cgi" title="http://www.kirsle.net/wizards/ttf2eot.cgi">http://www.kirsle.net/wizards/ttf2eot.cgi</a>
+  </li>
+  <li>Farklı yazı tiplerini birbirine çeviren çevirim içi araç: <a id="olp9" href="http://onlinefontconverter.com/" title="http://onlinefontconverter.com/">http://onlinefontconverter.com/</a></li>
+  <li>ttf'den eot ye çeviren başka bir çevirim içi araç http://ttf2eot.sebastiankippe.com/<br /></li>
+  <li>ttf'den svg'ye çevirme aracı: <a id="b:0." href="http://xmlgraphics.apache.org/batik/tools/font-converter.html" title="http://xmlgraphics.apache.org/batik/tools/font-converter.html">http://xmlgraphics.apache.org/batik/tools/font-converter.html</a></li>
+</ul>
+
+<p>Bunların dışında bazı programlar varsa da bunlar yeterli araçlar bence. </p>
+<p>Burada şunu söylemeden geçemeyeceğim, fontsquirrel.com sitesi farklı yazı tipi dosyaları üretmede çok yardımcı oldu. Bir çok site ve program farklı yazı tipi dosyaları üretirken Ethan'ın sitesi web'de kullanılacak tüm yazı tipi dosya uzantılarını üreterek bana çok yardımcı oldu. İlk kez fontsquirrel.com sitesindeki aracı kullandığımda .svg uzantılı dosyların Opera'da kesik göründüğünü fark ettim. Sonra bu sorunu site sahibi ile paylaşmak istedi, sağ olsun Ethan ilgilendi ve aracı geliştirdi. Buradan Ethan'a tekrar teşekkürlerimi sunuyorum. Thanks, Ethan  </p>
+
+<h3>@font-face Kodu</h3>
+<p>Evet yazı tipi dosyalarımız hazırsa kodumuzu yazmaya başlayabiliriz. @font-face kod yapısı</p>
+    <ol>
+      <li>
+        @font-face {
+        font-family: Gentium;
+        src: url(http://site/fonts/Gentium.ttf);
+        }
+        
+        p { font-family: Gentium, serif; }
+      </li>
+    </ol>
+<p>Kod yapımız iki kısımdan oluşmaktadır. İlk başta özel yazı tipimizi sisteme yüklüyoruz. Sonra da bu yazı tipini kullanıyoruz. </p>
+<p>Ancak durum bu kadar kolay değil. Buradan itibaren ie kendini gösteriyor ve farklı yazı tipi ile farklı kod yazmamız gerekiyor. Bundan başka bir kaç sorunuda gidermek için <a id="cb0q" href="http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/" title="Paul Irish">Paul Irish</a>'in yazdığı makaleden çıkardığımız kod:</p>
+
+    <ol>
+      <li>@font-face {
+        font-family: 'Graublau Web';
+        src: url('GraublauWeb.eot');
+        src: local('Graublau Web Regular'), local('Graublau Web'),
+        url('GraublauWeb.otf') format('opentype');
+        }
+      </li>
+      <li>p { font-family: "Graublau Web", serif; }</li>
+    </ol>
+<p>Bu kodlamanın özel yazı tipini sisteme tanıtırken ilk olarak .eot uzantılı yazı tipini ekliyoruz ie için. Sonrasındaki satır ise diğer tarayıcılar için yazılan kod. Buradaki yereldeki (local) tanımı eğer bu yazı tipi kullanıcının bilgisayarında var ise yüklenmeden kullanılması için ve de  sonraki kodu ie'den gizlemek içindir. Devamı kodlamada diğer tarayıcılar içindir.</p>
+<p><strong>Kendi Örneğimizi Yapalım</strong></p>
+<p><a href="http://www.hasanyalcin.com/turkce-fontlar/" title="Hasan Yalçın'ın sitesinden">Hasan Yalçın'ın sitesinden</a> Türkçe yazı tipi indiriyoruz. <strong>TR Centurion Old Italik.TTF</strong> yazı tipini seçtim, sonra <a href="http://www.fontsquirrel.com/fontface/generator" title="http://www.fontsquirrel.com/fontface/generator">http://www.fontsquirrel.com/fontface/generator</a> sitesinden farklı yazı tiplerini ürettim. Şimdi elimde hem .ttf uzantılı hemde .eot uzantılı yazı tipim var.</p>
+<p>.ttf ve .eot uzantılı dosyalarım hazırsa kodu yazmaya başlayabiliriz.</p>
+
+    <ol>
+      <li>@font-face {
+        font-family: 'TR Centurion Old  Italic';
+        src: url('TR_Centurion_Old_Italik.eot');
+        src: local('TR Centurion Old  Italic'), local('TRCenturionOldItalic'), url('TR_Centurion_Old_Italik.woff') format('woff'), url('TR_Centurion_Old_Italik.svg#TRCenturionOldItalic') format('svg'), url('TR_Centurion_Old_Italik.TTF') format('truetype');
+        }
+      </li>
+    </ol>
+<p>Daha sonra bu yazı tipini sayfamızda kullanabiliriz.</p>
+    <ol>
+      <li>h1 {font: 24px 'TR Centurion Old  Italic', Arial, sans-serif;}</li>
+      <li>
+        <div>p {font: 14px 'TR Centurion Old  Italic', Arial, sans-serif;}</p>
+      </li>
+    </ol>
+
+<p>Örnek sayfayı görmek için tıklayınız. Yazı tipi özgürlüğüne hoş geldiniz. </p>
+<h3>@font-face Yükleme Zamanı</h3>
+<p>Kullanıcının bilgisayarına yükeletilen yazı tipi dosyaları yüklü dosyalar olabiliyor. Sitede kullanılmayacak bazı yazı tipi karakterleri kaldırılabilir. Bazı TTF dosyaları 1Mb bulduğunu düşünürsek biraz yükleme zamanını düşünmek lazım. Yazı tipi dosyaları belli karakter setlerini içerir. Latin harfleri, Yunan harfleri, Para işaretleri vd. Bu karakter setlerinde kullanmadıklarımızı silip yazı tipi dosyasının boyutunu azaltabiliriz. Aynı şekilde tek tek karakterleride silebiliriz. </p>
+<p>Yazı tipi dosyaların iki şekilde yorumlanıyor. İlk olarak Firefox'un yorumlaması; Sayfa genel yazı tipi ile açılıyor taki gömülen yazı tipi dosyası yüklenene kadar. Yazı tipi dosyası yüklenince asıl yazı tiplerini görüyoruz. İkinci yorum ise diğer tarayıcıların tercih ettiği yol. Bu yorumda yazı tipi dosyası yüklenene kadar kullanıcı bekliyor, yükleme tamamlanınca yazı görünüyor.</p>
+<p>Bu nedenden dolayı font-face tanımını sayfamızın en üstüne koymalıyız. Script dosyalarımız varsa onları tanımlamamızdan sonraya koymalıyız.</p>
+<p>Yazı tipi dosyalarımızı sıkıştırabiliyoruz. sunucumuz gzip'i destekliyorsa yazı tipi dosyalarımızı sıkıştırıp zaman kazanabiliriz. Ayrıntılı bilgi için <a href="http://www.phpied.com/gzip-your-font-face-files/" title="tıklayınız.">tıklayınız.</a></p>
+<p>Yazı tipi dosyaları ön belleğe alındığı için kullanıcının sonraki ziyaretlerinde daha az bekleme yapacaktır.</p>
+<h3>@font-face Sorunları</h3>
+  <ul>
+    <li>Örnek sayfamıza farklı tarayıcılarda baktığımızda her bir tarayıcının ufak tefek farklılıklarla sayfayı gösterdiğini göreceğiz. Ben yaptığım örneklerde yazı tipine göre değişiyor bazı yazı tiplerinde mükemmele yakın sonuç verirken bazılarında köşeleri yumuşatmadığı için kötü sonuçlar elde edebiliyoruz. Bizim kullandığımız yazı tipi(<strong>TR Centurion Old Italik</strong>) eğik olduğu için pek belirgin bir fark görünmüyor, gayetde hoş oldu. </li>
+    <li>En büyük sorunlarda biri hala ağırlıklı olarak kullanılan Windows XP'de ClearType seçeneğinin başlangıçta aktif olmamasıdır. Mac kullanıcılarının işletim sisteminin yazıları daha yumuşak kenarlı göstermesinden dolayı yazıları daha göze hoş şekilde göreceklerdir. Windows kullanıcılarının ClearType seçili durumda standarda nazaran daha iyi görüntüler elde edeceği aşikar, ancak Mac'e göre kıyaslarsak Mac bayağı bir fark atıyor PC'ye. </li>
+    <li>@font-face'in sifR vd. yöntemlere göre en büyük dezavantajı anti-aliasing özelliğinden yoksun olması. Ancak kullanılan yazı tiplerinin seçiminde eğer daha seçici olursak bu durumu halledebiliriz.</li>
+    <li>font-face kullanımındaki en büyük sorunlardan biriside kullanıcının bilgisayarına indirilebilen ve isteyenleri kolayca elde edebileceği yazı tipi dosyalarının lisans haklarının nasıl korunacağı konusundadır. CSS2.0 sonrası kaldırılmasının ana nedenlerinden biriside budur. Bazı çözümler üretilse de tam anlamıyla bir çözüm elde edilmiş değildir.</li>
+    <li>Firefox 3.5 ile font-face kullanımını desteklemeye başladı. Firefox farklı hostlardan yazı tipi kullanmaya izin vermiyor(Böyle bir durum için .htcaccess dosyasına bir ekleme yapmak gerekiyor). Ayrıca font-stretch, unicode-range ve SVG yazı tipi dosyalarını da desteklemiyor. Firefox 3.6 sürümünden sonrası için yeni yazı tipi gelişmelerini destekleyeceğini açıkladı.</li>
+    <li>Opera'da local() yazı tipi tanımlamasında tırnak kullanmayınca sorun yaşayabilirsiniz. Bu nedenle tanımlarda hep tek veya çift tırnak kullanmalıyız.</li>
+    <li>Ziyaretçinin bilgisayarındaki isim ile bizim yazı tipi ismi aynı değilse local() tanımı pek bi işe yaramayacaktır. Bu nedenle bildiğimiz tüm isimleri ard arda local() tanımı içinde yazarak bu sorunu aşabiliriz.
+      src: local(&quot;<strong>TR Centurion Old Italik</strong>&quot;),<br />
+      local('<strong>TRCenturionOldItalik</strong>'),<br />
+      local(&quot;<strong>Centurion Old Italik</strong>&quot;),<br />
+      local('<strong>CenturionOld</strong>'),<br />
+      url(../font/font.ttf) format('truetype');<br />
+    </li>
+    <li>FontForge programı ve fontsquirrel.com sitesinde üretilen .svg dosyaları Opera'da içiçe görünüyor. Çözüm için <a id="vtev" href="http://xmlgraphics.apache.org/batik/tools/font-converter.html" title="Batik">Batik</a>'i öneriyorlar.
+    </li>
+    <li>Bir çok ücretsiz yazı tipi indirebileceğimiz site var ve bir çoğu yabancı site. Burada şöyle bir sorun var, çoğu Türkçe karakter içermiyor. Bunun için bizim bu karakterleri eklememiz gerekiyor. Google'da şöyle bir arama yaptım &quot;<a id="cg77" href="http://www.google.com.tr/search?hl=tr&amp;client=opera&amp;rls=en&amp;hs=wGu&amp;q=font+T%C3%BCrk%C3%A7ele%C5%9Ftirme&amp;btnG=Ara&amp;meta=&amp;aq=f&amp;oq=" title="Font türkçeleştirme">Font türkçeleştirme</a>&quot; bu işi anlata bir çok site var. 
+    </li>
+    <li>Firefox kullanıcıları ilk olarak yazı tipi gömülmemiş halini görürler, ne zaman yazı tipi yüklenirse o zaman özel yazı tipimizi görürler.</li>
+  </ul>
+<h3>@font-face'in Geleceği ve Sonuç</h3>
+<p>Genel olarak küçük boyutlu fontlar güzel görünürken büyük boyutlu fontlarda iyi görüntü alamayabiliyoruz. Ayrıca kıvrımlı hatlara sahip yazı tiplerinde kenarlar daha pürüzlü görünüyor. Bence kullandığınız fontu Windows xp'de test etmeden yayına almayınız. </p>
+<p><a title="Tarayıcı kullanım oranlarını" href="http://gs.statcounter.com/#browser_version-TR-monthly-200910-200910-bar" id="jelw">Tarayıcı kullanım oranlarını</a> incelediğimizde %94'lik bir font-face destekleyen tarayıcı grubu var. 4-5 ay sonra bu oran 98 - 99 civarına gelecektir.</p>
+<p>@font-face özelliğinin bu kadar geç desteklenmesindeki en büyük sebep elbetteki yazı tipi üretenlerin haklarının korunmasıdır. </p>
+<p>@font-face kullanılan sayfalardaki sonuçlar zamanla daha iyi sonuçlar vereceğini düşünüyorum. İşletim sistemleri, tarayıcılar ve yazı tipi geliştiricileri zamanla bu özelliğin farkına varıp buna göre kendilerini geliştireceklerini düşünürsek zamanla daha iyi sonuçlar alacağımız kesin.</p>
+<p>Yazı tipi özelinde Tipografi genelindeki bu konuda araştırdığımız ve öğrendiğimiz kadarını sizlerle paylaşmaya çalıştım, ancak konu çok geniş ve derin olduğu için bir çok yönden eksik kalmış olabilir, bu yazımı genel bir toparlama için yazdım zamanla gelişmeleri ve ayrıntılar hakkında paylaşımlarım olacaktır.</p>
+<h3>Kaynaklar</h3>
+<ul>
+  <li><a id="ee31" href="http://www.useragentman.com/blog/2009/09/20/font-face-in-depth/" title="http://www.useragentman.com/blog/2009/09/20/font-face-in-depth/">http://www.useragentman.com/blog/2009/09/20/font-face-in-depth/</a> (ayrıntılı makale)</li>
+  <li><a id="nrcl" href="http://www.w3.org/TR/css3-webfonts/#font-descriptions" title="http://www.w3.org/TR/css3-webfonts/#font-descriptions">http://www.w3.org/TR/css3-webfonts/#font-descriptions</a></li>
+  <li><a id="fki2" href="http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/" title="http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/">http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/</a> (kod yapısı)</li>
+  <li><a id="oewy" href="http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/" title="http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/">http://hacks.mozilla.org/2009/06/beautiful-fonts-with-font-face/</a> (detaylı)</li>
+  <li><a id="khxp" href="http://randsco.com/index.php/2009/07/04/p680" title="http://randsco.com/index.php/2009/07/04/p680">http://randsco.com/index.php/2009/07/04/p680</a> (farklı tarayıcılar için)</li>
+  <li><a id="k_qk" href="http://craigmod.com/journal/font-face/" title="http://craigmod.com/journal/font-face/">http://craigmod.com/journal/font-face/</a></li>
+  <li align="left"><a id="euvc" href="http://nimbupani.com/blog/font-in-your-face.html" title="http://nimbupani.com/blog/font-in-your-face.html">http://nimbupani.com/blog/font-in-your-face.html</a></li>
+  <li><a id="c.7t" href="http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/" title="http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/">http://opentype.info/blog/2009/07/29/why-webfont-services-are-the-future-of-fonts-on-the-web/</a> (detaylı anlatım)<br />
+  </li>
+  <li><a id="r36e" href="http://www.zeldman.com/2009/08/17/web-fonts-and-standards/" title="http://www.zeldman.com/2009/08/17/web-fonts-and-standards/">http://www.zeldman.com/2009/08/17/web-fonts-and-standards/</a></li>
+  <li><a id="ao6n" href="http://blog.themeforest.net/tutorials/css-font-face-and-15-free-fonts-you-can-use-today/" title="http://blog.themeforest.net/tutorials/css-font-face-and-15-free-fonts-you-can-use-today/">http://blog.themeforest.net/tutorials/css-font-face-and-15-free-fonts-you-can-use-today/</a></li>
+  <li>
+    <div><a id="idqo" href="http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/" title="http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/">http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/</a>(hız)</div>
+  </li>
+  <li><a id="w_5d" href="http://snook.ca/archives/html_and_css/becoming-a-font-embedding-master" title="http://snook.ca/archives/html_and_css/becoming-a-font-embedding-master">http://snook.ca/archives/html_and_css/becoming-a-font-embedding-master</a></li>
+  <li><a id="jagw" href="http://randsco.com/index.php/2009/09/04/better_font_face_syntax" title="http://randsco.com/index.php/2009/09/04/better_font_face_syntax">http://randsco.com/index.php/2009/09/04/better_font_face_syntax</a></li>
+  <li><a id="ppb0" href="http://hacks.mozilla.org/2009/10/font-control-for-designers/" title="http://hacks.mozilla.org/2009/10/font-control-for-designers/">http://hacks.mozilla.org/2009/10/font-control-for-designers/</a> (Firefox 3.6 ile yeni font tipi desteği)</li>
+  <li><a id="pasy" href="http://www.alistapart.com/articles/cssatten" title="http://www.alistapart.com/articles/cssatten">http://www.alistapart.com/articles/cssatten</a></li>
+  <li><a id="zqjt" href="http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work" title="http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work">http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work</a></li>
+  <li><a id="x055" href="http://reference.sitepoint.com/css/at-fontface" title="http://reference.sitepoint.com/css/at-fontface">http://reference.sitepoint.com/css/at-fontface</a></li>
+  <li><a id="yi2z" href="http://randsco.com/index.php/2009/07/04/p680" title="http://randsco.com/index.php/2009/07/04/p680">http://randsco.com/index.php/2009/07/04/p680</a></li>
+  <li><a id="lhrz" href="http://opentype.info/demo/webfontdemo.html" title="http://opentype.info/demo/webfontdemo.html">http://opentype.info/demo/webfontdemo.html</a> (örnek)</li>
+  <li><a id="lv4j" href="http://devfiles.myopera.com/articles/593/webfonts.html" title="http://devfiles.myopera.com/articles/593/webfonts.html">http://devfiles.myopera.com/articles/593/webfonts.html</a> (örnek)</li>
+  <li><a id="hoe:" href="http://www.hipertipo.org/stuff/webfonts/ModularSerif.html" title="http://www.hipertipo.org/stuff/webfonts/ModularSerif.html">http://www.hipertipo.org/stuff/webfonts/ModularSerif.html</a> (örnek)</li>
+  <li><a id="kdh3" href="http://www.typotheque.com/webfonts/sample" title="http://www.typotheque.com/webfonts/sample">http://www.typotheque.com/webfonts/sample</a> (örnek)</li>
+  <li><a id="u15h" href="http://nimbupani.com/blog/about-fonts-in-svg.html" title="http://nimbupani.com/blog/about-fonts-in-svg.html">http://nimbupani.com/blog/about-fonts-in-svg.html</a> (SVG hakkında)</li>
+  <li><a id="giuh" href="http://www.phpied.com/gzip-your-font-face-files/" title="http://www.phpied.com/gzip-your-font-face-files/">http://www.phpied.com/gzip-your-font-face-files/</a> (optimizasyon)</li>
+  <li><a id="h1.:" href="http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/" title="http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/">http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/</a></li>
+  <li><a id="teu8" href="http://paulirish.com/2009/the-direction-forward-with-web-fonts/" title="http://paulirish.com/2009/the-direction-forward-with-web-fonts/">http://paulirish.com/2009/the-direction-forward-with-web-fonts/</a></li>
+  <li><a id="d3w1" href="http://spyrestudios.com/21-awesome-font-face-embedable-typefaces/" title="http://spyrestudios.com/21-awesome-font-face-embedable-typefaces/">http://spyrestudios.com/21-awesome-font-face-embedable-typefaces/</a> (örnekler)<br />
+  </li>
+  <li><a id="qwcs" href="http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/" title="http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/">http://blog.themeforest.net/tutorials/how-to-achieve-cross-browser-font-face-support/</a></li>
+</ul>
+
+</body>
+</html>
