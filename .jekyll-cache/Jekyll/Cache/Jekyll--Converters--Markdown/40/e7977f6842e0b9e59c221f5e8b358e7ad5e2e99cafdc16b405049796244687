@@ -1,0 +1,128 @@
+I"�<blockquote>
+  <p>Temmuze 2019’da güncellendi.</p>
+</blockquote>
+
+<p><a href="https://www.zingat.com">zingat.com</a>‘un satılık ve kiralık arama sonuç sayfalarını kodlarken her bir kutunun belirli yüksekliği olduğu için gelen başlığın harita açıldığında altında kalan metinlerin üzerine binmesi sorununu haletmek için <a href="http://twitter.com/muratcorlu">Murat</a>‘la bu metni 2 satır ile sınırlandırmalıyız dedik. En güzel çözüm CSS ile webkit-line-clamp yardımı ile bunu yapmaktı. Acaba bu özelliğin desteği ne kadar diye biraz bakınca %92’ye(şu an %98 Temmuz 2019) yakın destek bizi bu kodu kullanmaya itti.</p>
+
+<p>Daha önce uzun metinleri tek satırda sabitlemek için aşağıdaki yöntemi kullanıyordum.</p>
+
+<iframe height="300" scrolling="no" title="KNpXOV" src="//codepen.io/fatihhayri/embed/KNpXOV/?height=300&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
+</iframe>
+
+<p>Bu iş için bir mixin yazmak güzel oluyor.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nc">.ucnokta</span> <span class="p">{</span>
+  <span class="nl">white-space</span><span class="p">:</span> <span class="nb">nowrap</span><span class="p">;</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+  <span class="nl">text-overflow</span><span class="p">:</span> <span class="n">ellipsis</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>yazıp, sonra kullanmak istediğimiz yere</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">.baslik</span> <span class="p">{</span>
+  <span class="nc">.ucnokta</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>yazarak işi basitleştirmiş oluyoruz.</p>
+
+<p>Peki bu işi iki veya daha fazla satır için yapan bir CSS kodu yok mu? Var aşağıda :)</p>
+
+<p>Kod çok basit.</p>
+
+<iframe height="300" scrolling="no" title="MbwOYb" src="//codepen.io/fatihhayri/embed/MbwOYb/?height=300&amp;theme-id=13521&amp;default-tab=html,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
+</iframe>
+
+<p><code class="language-plaintext highlighter-rouge">-webkit-line-clamp: 3</code> tanımı ile kaç satırın görünmesi bu satır ile tanımlıyoruz. Yukarıdaki gibi bu tanımı bir mixin yapıp istediğimiz yerde kullanabiliriz.</p>
+
+<p>Mobilde ve dar alanlarda güzel iş görüyor.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="c1">// Clamps a block of text to a certain number of lines,</span>
+<span class="c1">// followed by an ellipsis in Webkit and Blink based browsers</span>
+<span class="c1">// Reference: http://dropshado.ws/post/1015351370/webkit-line-clamp</span>
+<span class="k">@mixin</span> <span class="nf">text-clamp</span><span class="p">(</span><span class="nv">$lines</span><span class="o">:</span> <span class="m">2</span><span class="o">,</span> <span class="nv">$line-height</span><span class="o">:</span> <span class="bp">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="o">-</span><span class="n">webkit-box</span><span class="p">;</span>
+    <span class="na">-webkit-box-orient</span><span class="p">:</span> <span class="n">vertical</span><span class="p">;</span>
+    <span class="na">-webkit-line-clamp</span><span class="p">:</span> <span class="nv">$lines</span><span class="p">;</span>
+
+    <span class="c1">// Fallback for non-Webkit browsers</span>
+    <span class="c1">// (won't show `…` at the end of the block)</span>
+    <span class="k">@if</span> <span class="nv">$line-height</span> <span class="p">{</span>
+        <span class="nl">max-height</span><span class="p">:</span> <span class="nv">$line-height</span> <span class="o">*</span> <span class="nv">$lines</span> <span class="o">*</span> <span class="m">1px</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Tarayıcı Desteği</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/ie.png" alt="explorer" title="Internet Explorer" /></th>
+      <th style="text-align: center"><img src="/images/ff.png" alt="Firefox" title="Firefox" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+ (-webkit)</strong></td>
+      <td style="text-align: center"><strong>-</strong></td>
+      <td style="text-align: center"><strong>68+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Mobil Tarayıcılar</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/sm.png" alt="Mobil Safari" title="Mobile Safari" /></th>
+      <th style="text-align: center"><img src="/images/samsung-internet.png" alt="Samsung Internet" title="Samsung Internet" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+ (-webkit)</strong></td>
+      <td style="text-align: center"><strong>+ (-webkit)</strong></td>
+      <td style="text-align: center"><strong>+ (-webkit)</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="http://caniuse.com/#feat=css-line-clamp">http://caniuse.com/#feat=css-line-clamp</a></li>
+  <li><a href="https://css-tricks.com/line-clampin/">https://css-tricks.com/line-clampin/</a></li>
+  <li><a href="http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/">http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/</a></li>
+  <li><a href="http://cssmojo.com/line-clamp_for_non_webkit-based_browsers/">http://cssmojo.com/line-clamp_for_non_webkit-based_browsers/</a></li>
+  <li>dropshado.ws/post/1015351370/webkit-line-clamp - dropshado.ws/post/1015351370/webkit-line-clamp</li>
+</ul>
+:ET

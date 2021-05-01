@@ -1,0 +1,195 @@
+I"�<<p>jQuery’nin en büyük avantajlarından birisi seçici kullanımının basitiliğidir. CSS seçicilerini javascript’e kazandıran bu kullanım kolaylığı <a href="https://sizzlejs.com/">sizzle</a> kütüphanesinden gelir. Javascript bu konuda daha sığ ve beceriksiz kaldı. Tabi sonra işler değişti ve artık aynı yeteneklere sahip.</p>
+
+<p>Seçicilerdeki bu büyük atılımı sağlayan iki özellik var <strong>querySelector</strong> ve <strong>querySelectorAll</strong>.</p>
+
+<p><strong>Element.querySelector()</strong></p>
+
+<p>Belirtilen öğenin ilk alt elemanını döndürür.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nx">element</span> <span class="o">=</span> <span class="nx">anaElement</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="nx">secici</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Buradaki <strong>secici</strong> kısmında aklınıza gelecek tüm CSS seçicileri konabiliyor. İşte süperlik buradan kaynaklanıyor. <code class="language-plaintext highlighter-rouge">a:before</code>, <code class="language-plaintext highlighter-rouge">p[title]</code>, <code class="language-plaintext highlighter-rouge">p &gt; span</code>, <code class="language-plaintext highlighter-rouge">ul li ~ li</code>, vs.</p>
+
+<p>Eğer element bulunamazsa <code class="language-plaintext highlighter-rouge">null</code> değeri döner.</p>
+
+<p><strong>Element.querySelectorAll()</strong></p>
+
+<p>Belirtilen öğe grubunun tüm alt elemanlarını döndürür.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nx">elementList</span> <span class="o">=</span> <span class="nx">baseElement</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="nx">seciciler</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Buradaki <strong>seciciler</strong> kısmında aklınıza gelecek tüm CSS seçicileri konabiliyor.</p>
+
+<p>Yukarıdaki özelliğin çoklusu. Bu seçici sonucunda bir dizi element döner.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#test</span><span class="dl">'</span><span class="p">);</span> 
+<span class="kd">var</span> <span class="nx">aktifElemanlar</span> <span class="o">=</span> <span class="nx">el</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">div.aktif &gt; p</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>aktif eleman altındaki tüm paragrafları yakalamamızı sağlar.</p>
+
+<p>Tarayıcı desteği konusunda da çok iyi bir durumdalar. IE8+ destekleri var.</p>
+
+<p>Javascript seçicilerini iki gruba ayıracağız.</p>
+
+<ul>
+  <li>Ana eleman seçicileri</li>
+  <li>DOM ilişkilerine dayanan seçiciler</li>
+</ul>
+
+<h2 id="ana-eleman-seçicileri">Ana eleman seçicileri</h2>
+
+<p>CSS derslerinden alışık olduğumuz gibi seçiciler javascript dünyasında da önemli bir yere sahiptir. Kod yazarlarının en çok kullandığı araçlardan biridir seçiciler. Seçiciler ne kadar gelişmiş olursa, bizlere kod yazarken o kadar rahatlık sağlıyor.</p>
+
+<h3 id="tekil-id-seçiciler">Tekil (ID) seçiciler</h3>
+
+<p>CSS’den alışık olduğumuz ID seçiciler sayfada bir tane bulunan bir elemanı yakalamak için kullanılır. En büyük avanatjı hızdır.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"trabzon"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Sayfamızda tek bir trabzon id’li elemanı yakalamak için</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">trabzon</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#trabzon</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Javascript ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">trabzon</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getELementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">trabzon</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Tarayıcı desteğinin IE5.5+ olması ne kadar eski olduğunu gösteriyor.</p>
+
+<p>veya</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">tarabzon</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#trabzon</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>her ne kadar daha yavaş olasa da bir tercih olarak kenarda dursun.</p>
+
+<h3 id="sınıf-class-seçicileri">Sınıf (class) seçicileri</h3>
+
+<p>Sayfada birden fazla elemanı yakalamk için kullandığımız HTML özniteliğidir.</p>
+
+<p>jQuery ile</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">sehir</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">.sehir</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Javascript ile</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">sehir</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="dl">'</span><span class="s1">sehir</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu seçici tüm class=”sehir” tanımlı elemanları bulur ve bize bir dizi olarak döner.</p>
+
+<p>Tüm yeni nesil tarayıcılar ve IE8+ desteği vardır.</p>
+
+<p>veya</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">sehir</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">.sehir</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>her ne kadar daha yavaş olasa da bu da bir tercih.</p>
+
+<h3 id="etiket-tag-seçicisi">Etiket (tag) seçicisi</h3>
+
+<p>HTML etiketlerini kullanarak seçim yapmamızı sağlar.</p>
+
+<p>jQuery</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">katman</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">div</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Javascript ile</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">katman</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">div</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu seçici tüm <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> etiketli elemanları bulur ve bize bir dizi olarak döner.</p>
+
+<p>IE5.5+ desteği var.</p>
+
+<p>veya</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">katman</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">div</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>her ne kadar daha yavaş olasa da bu da bir tercih.</p>
+
+<h3 id="öznitelik-attribute-seçicileri">Öznitelik (attribute) seçicileri</h3>
+
+<p>Özellik Seçicileri HTML dokümanlarındaki seçilen etiketin özelliklerine veya özellik değerlerine göre seçim yapmamızı sağlar.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"logo.gif"</span> <span class="na">alt=</span><span class="s">"Logo"</span> <span class="na">width=</span><span class="s">"32"</span> <span class="na">height=</span><span class="s">"41"</span> <span class="nt">/&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>jQuery ile</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">[alt="logo"]</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Javascript ile</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">[alt="logo"]</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>jQuery benzer bir kullanım var.</p>
+
+<h3 id="sözde-sınıf-pseudo-class-seçicileri">Sözde sınıf (Pseudo-class) seçicileri</h3>
+
+<p>Aslında bir HTML sınıfı olmamasına rağmen sözde olarak oluşturulan sınıfları yakalamak için kullanılır. CSS’ten alışık olduğumuz bir seçici.</p>
+
+<p>jQuery ile</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">metinAlani</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">input:focus</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Javascript ile</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">metinAlani</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">input:focus</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Süper değil mi?</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>jQuery’nin elindeki en büyük kozlardan birisi olan kolay seçici kullanımını aynı kolaylık ile javascript ile yapabiliyor olmak sevindirici.</p>
+
+<p>Bir sonraki yazımda DOM ilişkilerine dayanan seçicilerden bahsedeceğim.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName">https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName</a></li>
+  <li><a href="https://blog.garstasio.com/you-dont-need-jquery/selectors/">https://blog.garstasio.com/you-dont-need-jquery/selectors/</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector">https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll">https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll</a></li>
+  <li><a href="https://gomakethings.com/">https://gomakethings.com/</a></li>
+</ul>
+:ET

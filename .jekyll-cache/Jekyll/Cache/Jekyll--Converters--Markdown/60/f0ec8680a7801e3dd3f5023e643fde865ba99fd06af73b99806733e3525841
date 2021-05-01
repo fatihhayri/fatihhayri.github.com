@@ -1,0 +1,227 @@
+I"�A<ol>
+  <li><a href="https://fatihhayrioglu.com/css-grid-giris/">CSS Grid’e (Izgara) Giriş</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-grid-ozellikleri/">CSS Grid Özellikleri</a></li>
+  <li><a href="https://fatihhayrioglu.com/fr-birimi/">fr birimi</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-izgara-cizgi-isimlendirmesi-ve-kullanimi/">CSS Izgara çizgi isimlendirmesi ve kullanımı</a></li>
+  <li><a href="https://fatihhayrioglu.com/sayfa-planlama-sihirbazi-grid-template-areas/" title="Sayfa planlama sihirbazı grid-template-areas">Sayfa planlama sihirbazı grid-template-areas</a></li>
+  <li><a href="https://fatihhayrioglu.com/explicit-belirlenmis-ve-implicit-belirlenmemis-grid-ogeleri/">Explicit(belirlenmiş) ve implicit(belirlenmemiş) grid ögeleri</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-minmax-islevsel-degeri/">CSS minmax işlevsel değeri</a></li>
+  <li><a href="https://fatihhayrioglu.com/repeat-islevi-auto-fill-ve-auto-fit-degerleri/">repeat() işlevi, auto-fill ve auto-fit değerleri</a></li>
+</ol>
+
+<p>Grid yazılarımızın 9. sındayız. Bu yazıda grid öge özelliklerine değineceğiz.</p>
+
+<p>Şimdiye kadar ki yazılarda hep kapsayıcı elemana yapılan tanımlarla CSS grid ögelerini konumlandırdık. Bu yazıdaysa grid ögesine yapılan atamalarla grid ögesini konumlandırmayı göreceğiz. Şimdiye kadar yapılan tanımlar genel tanımlarken bu yazımızda bahsedeceğimiz tanımlar özel tanımlar olacak.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/grid-terimleri.png" alt="CSS Grid Modülü terimleri" /></p>
+
+<p>Bu tanımlar genelde grid izi sayıları üzerinden yapılıyor. Bu sayılar soldan sağa doğru yazılan diller için soldan sağa iken sağdan sola yazılan diller için sağdan sola numaralandırılır. Bir de <code class="language-plaintext highlighter-rouge">grid-template-area</code> ile kullandığımız ve grid ögelerine tanımladığımız grid isimleriyle de aynı şeyleri yapabiliriz.</p>
+
+<p><code class="language-plaintext highlighter-rouge">grid-column-start</code>, <code class="language-plaintext highlighter-rouge">grid-column-end</code>, <code class="language-plaintext highlighter-rouge">grid-row-start</code> ve <code class="language-plaintext highlighter-rouge">grid-row-end</code> tanımları ve bu tanımların kısayolları olan <code class="language-plaintext highlighter-rouge">grid-column</code>, <code class="language-plaintext highlighter-rouge">grid-row</code> ve <code class="language-plaintext highlighter-rouge">grid-area</code> tanımlarını anlatmaya çalışacağız. Son olarak da <code class="language-plaintext highlighter-rouge">span</code> anahtar kelime değerinden bahsedeceğiz.</p>
+
+<p>Bu tanımlar css grid ögesinin sol/sağ ve üst/alt sınırlarını belirler. Sırasıyla <code class="language-plaintext highlighter-rouge">grid-columm-start/grid-column-end</code> ve <code class="language-plaintext highlighter-rouge">grid-row-start/grid-row-end</code> tanımlarıyla bu işi yapıyoruz.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nc">.icerik</span> <span class="p">{</span>
+    <span class="py">grid-column-start</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="py">grid-column-end</span><span class="p">:</span> <span class="m">4</span><span class="p">;</span>
+    <span class="py">grid-row-start</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="py">grid-row-end</span><span class="p">:</span> <span class="m">4</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Tanımıyla <strong>icerik</strong> elemanı kolon olarak 2. ve 4. ızgara satır çizgisi arasında ve satır olarak 2. ve 4. satır çizgisi arasında konumlanacaktır. Benzer şekilde diğer elemanları da yerleştirebiliriz.</p>
+
+<p>Sadece tek grid kapsamı olan kolon ve satır tanımlarında <code class="language-plaintext highlighter-rouge">-start</code> tanımları yeterli olur. Örneğin</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nc">.tanitim</span> <span class="p">{</span>
+    <span class="py">grid-column-start</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="py">grid-column-end</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="py">grid-row-start</span><span class="p">:</span> <span class="m">3</span><span class="p">;</span>
+    <span class="py">grid-row-end</span><span class="p">:</span> <span class="m">5</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Kolon tanımı tek bir hücreyi kapsadığı için tanımını aşağıdaki gibi yazabiliriz.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nc">.tanitim</span> <span class="p">{</span>
+    <span class="py">grid-column-start</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="py">grid-row-start</span><span class="p">:</span> <span class="m">3</span><span class="p">;</span>
+    <span class="py">grid-row-end</span><span class="p">:</span> <span class="m">5</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid öge özellikleri" src="https://codepen.io/fatihhayri/embed/MWYwEgQ?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+</iframe>
+
+<h3 id="negatif-değerler">Negatif değerler</h3>
+
+<p>Grid öge tanımlarında sadece artı değerler değil eksi değerle de kullanılabilir. Negatif değerler tanımlı ızgara çizgilerinin sondan başa doğru tanımlamamızı sağlar. Bu tanımlar kapsayıcı elemanın alt/sağ çizgilerine göre yerleştirme yapar.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">.ust-alan</span> <span class="p">{</span>
+    <span class="py">grid-column-start</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="py">grid-column-end</span><span class="p">:</span> <span class="m">4</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Tüm satırı kaplayan bir grid ögesi yapmak için</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">.ust-alan</span> <span class="p">{</span>
+    <span class="py">grid-column-start</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="py">grid-column-end</span><span class="p">:</span> <span class="m">-1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Her zaman ızgara izinin sonuna dayanacaktır.</p>
+
+<p>Yukarıdaki tanımın hepsini de eksi değer ile de yapabiliriz.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">.ust-alan</span> <span class="p">{</span>
+    <span class="py">grid-column-start</span><span class="p">:</span> <span class="m">-4</span><span class="p">;</span>
+    <span class="py">grid-column-end</span><span class="p">:</span> <span class="m">-1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>kodu aynı sonucu verecektir.</p>
+
+<h2 id="grid-column-ve-grid-row">grid-column ve grid-row</h2>
+<p>Grid ögelerine yapılan <code class="language-plaintext highlighter-rouge">grid-column-start</code>, <code class="language-plaintext highlighter-rouge">grid-column-end</code>, <code class="language-plaintext highlighter-rouge">grid-row-start</code> ve <code class="language-plaintext highlighter-rouge">grid-row-end</code> daha kısa yazmamızı sağlayan özelliklerdir.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nc">.icerik</span> <span class="p">{</span>
+    <span class="py">grid-column-start</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="py">grid-column-end</span><span class="p">:</span> <span class="m">4</span><span class="p">;</span>
+    <span class="py">grid-row-start</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+    <span class="py">grid-row-end</span><span class="p">:</span> <span class="m">4</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Yukarıdaki örneği tekrar yazalım.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">.icerik</span> <span class="p">{</span>
+    <span class="nl">grid-column</span><span class="p">:</span> <span class="m">2</span> <span class="p">/</span> <span class="m">4</span><span class="p">;</span>
+    <span class="nl">grid-row</span><span class="p">:</span> <span class="m">2</span> <span class="p">/</span> <span class="m">4</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Tüm sayfayı bu şekilde kısaltırsak</p>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid öge özellikleri kısaltma" src="https://codepen.io/fatihhayri/embed/bGNpmvE?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+</iframe>
+
+<p>İlk baştaki kod 52 satır iken son yaptığımız 45 satıra düştü.</p>
+
+<p>Izgara çizgi isimleri kullanıyorsak kısayollarda bu isimleri de yazabiliriz.</p>
+
+<h2 id="grid-area-kısaltması">grid-area kısaltması</h2>
+
+<p>Yukarıda yaptığımız kısaltmayı daha da kısaltabiliriz. Kolon ve satırları tek tanımda toplamak için <code class="language-plaintext highlighter-rouge">grid-area</code> kısayolu kullanırız.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">grid-area</span><span class="o">:</span> <span class="nt">row-start</span> <span class="o">/</span> <span class="nt">col-start</span> <span class="o">/</span> <span class="nt">row-end</span> <span class="o">/</span> <span class="nt">col-end</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Sıralamayı unutursanız, hatırlamak için şöyle düşünebilirsiniz: ilk üst/sol (row-start / column-start)  sonra alt/sağ (row-end / column-end) tanımlarının geldiğini düşünün.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">.tanitim</span> <span class="p">{</span>
+    <span class="nl">grid-column</span><span class="p">:</span> <span class="m">1</span> <span class="p">/</span> <span class="m">2</span><span class="p">;</span>
+    <span class="nl">grid-row</span><span class="p">:</span> <span class="m">3</span> <span class="p">/</span> <span class="m">5</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Yukarıdaki tanımı tek satırda</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">.tanitim</span> <span class="p">{</span>
+    <span class="py">grid-area</span><span class="p">:</span> <span class="m">3</span> <span class="p">/</span> <span class="m">1</span> <span class="p">/</span> <span class="m">5</span> <span class="p">/</span> <span class="m">2</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="span-tanımı">span tanımı</h2>
+
+<p>CSS grid ögesini genişletmek için kullanılır. Izgara hücrelerini bileştirmek için <code class="language-plaintext highlighter-rouge">span</code> anahtar değerini de kullanabiliriz. Örneğin</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">.tanitim</span> <span class="p">{</span>
+    <span class="nl">grid-column</span><span class="p">:</span> <span class="m">1</span> <span class="p">/</span> <span class="m">2</span><span class="p">;</span>
+    <span class="nl">grid-row</span><span class="p">:</span> <span class="m">3</span> <span class="p">/</span> <span class="m">5</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Kodunu aşağıdaki gibi de yazabiliriz.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nc">.tanitim</span> <span class="p">{</span>
+    <span class="nl">grid-column</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="nl">grid-row</span><span class="p">:</span> <span class="m">3</span> <span class="p">/</span> <span class="n">span</span> <span class="m">2</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid öge özellikleri" src="https://codepen.io/fatihhayri/embed/MWYwEgQ?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+</iframe>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid</li>
+  <li>https://www.joomlashack.com/blog/tutorials/line-placing-in-css-grid/</li>
+  <li>https://www.sitepoint.com/seven-ways-you-can-place-elements-using-css-grid-layout/</li>
+  <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a></li>
+  <li><a href="https://www.youtube.com/watch?v=9Ji-02JsV0U">CSS GRID: Placing Grid Items — 10 of 25 - wesbos</a></li>
+  <li><a href="https://www.youtube.com/watch?v=8XemT4I_c8I">CSS Grid Layout // Placing Items on the Grid</a></li>
+  <li>https://css-irl.info/debugging-css-grid-part-3-auto-flow-order-and-item-placement/</li>
+  <li>https://blogs.igalia.com/mrego/2016/05/27/css-grid-layout-and-positioned-items/</li>
+  <li>https://dev.to/ziizium/css-grid-part-1-3f57</li>
+  <li>https://alligator.io/css/css-grid-layout-span-keyword/</li>
+  <li><a href="https://www.youtube.com/watch?v=P9eFUr_mrE8">CSS Grid Layout Course #10: Use “span”</a></li>
+  <li><a href="https://www.joomlashack.com/blog/tutorials/sizing-grid-items/">https://www.joomlashack.com/blog/tutorials/sizing-grid-items/</a></li>
+</ul>
+:ET

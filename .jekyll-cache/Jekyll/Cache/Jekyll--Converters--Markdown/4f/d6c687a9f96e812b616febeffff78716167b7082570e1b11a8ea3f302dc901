@@ -1,0 +1,198 @@
+I"�-<p>Artık her projemizde @font-face kullanıyoruz. Kullanırken bazı sorunlar yaşıyoruz ve bu sorunlara çözümler üretiyoruz. Bu makalenin konusu da bu sorunlardan birini çözüyor.</p>
+
+<p>Hemen meseleye girelim. Bir @font-face tanımı yapalım. Ben burada daha kısa olsun diye woff2 yapıyorum ama siz <a href="https://fatihhayrioglu.com/woff2-ve-font-face-tanimini-iki-satira-indirmek/">Woff2 ve font-face tanımını iki satıra indirmek</a> yazımdaki ilk kodu kullanın.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td> --><td class="rouge-code"><pre><span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Lato'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('lato.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Sonra bunu kullanalım.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td> --><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Lato</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>HTML kodu</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td> --><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;strong&gt;</span>İnebahtı Deniz Savaşı ve Donanmamızın Yakılması<span class="nt">&lt;/strong&gt;</span> (<span class="nt">&lt;em&gt;</span>1571<span class="nt">&lt;/em&gt;</span>)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Rusya'da Komünist İhtilali (<span class="nt">&lt;em&gt;</span>1917<span class="nt">&lt;/em&gt;</span>)<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Amerikan ve İngiliz Kuvvetlerinin Afganistan'a Girmesi (2001)<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Metin ve stil olarak koda bakarsak, normal metin, kalın hali ve eğik hali kullanılmış. Fakat bir sorun var. Yazı tipinin kalın ve eğik halleri pek bizim istediğimiz gibi değil. Çünkü biz yazı tipinin normal halini yükledik, kalın ve eğik kullanımı tarayıcı uydurmaya çalıştı. Tarayıcının yapacağıda bu kadar.</p>
+
+<p>Bu sorunu görünce ilk olarak aklımıza “her bir yazı tipi hali için bir font-face tanımı yapalım ve onları tanımlayalım” düşüncesi gelir.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td> --><td class="rouge-code"><pre><span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Lato'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('lato.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'LatoBold'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('lato-bold.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'LatoItalic'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('lato-italic.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Sonra bu yazı tiplerini kullanırken, CSS’de</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td> --><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span> 
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Lato</span><span class="p">,</span> <span class="n">Georgia</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">LatoBold</span><span class="p">,</span> <span class="n">Georgia</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span><span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">em</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">LatoItalic</span><span class="p">,</span> <span class="n">Georgia</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span><span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span><span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Her bir tanım için <strong>font-family</strong> tanımı yapıyoruz.  Peki bunun daha kolay çözümü var mı?</p>
+
+<p><strong>Çözüm</strong>: Çözüm için <strong>@font-face</strong> tanımındaki <strong>font-weight</strong> ve <strong>font-style</strong> özelliklerinden yaralanarak tek yazı tipine bu farklı stilleri bağlayabiliriz.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td> --><td class="rouge-code"><pre><span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Lato'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('lato.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Lato'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('lato-bold.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Lato'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('lato-italic.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>yukarıdaki koda dikkat edersek, <strong>font-family</strong> tanımları aynı, <strong>font-weight</strong> ve <strong>font-style</strong> alanları farklıdır. CSS’de kullanırken;</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td> --><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span> 
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Lato</span><span class="p">,</span> <span class="n">Georgia</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">em</span> <span class="p">{</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Sonuç olarak güzel bir çözüm ve daha basit bir yazım sağlıyor bize.</p>
+
+<p>Ben bu makaleyi yaklaşık 2 sene önce yazacaktım, ancak <a href="https://twitter.com/himmetsamet">Himmet Samet Çaktı</a> abi ben blog açacam bunu ben yazayım dedi. Bizde gençtir gönlü kırılmasın diye tamam dedik. 2 sene geçti, Samet hala blog açacak :)</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li>http://www.metaltoad.com/blog/how-use-font-face-avoid-faux-italic-and-bold-browser-styles</li>
+  <li>http://www.456bereastreet.com/archive/201012/font-face_tip_define_font-weight_and_font-style_to_keep_your_css_simple/</li>
+  <li>https://www.smashingmagazine.com/2013/02/setting-weights-and-styles-at-font-face-declaration/</li>
+</ul>
+:ET

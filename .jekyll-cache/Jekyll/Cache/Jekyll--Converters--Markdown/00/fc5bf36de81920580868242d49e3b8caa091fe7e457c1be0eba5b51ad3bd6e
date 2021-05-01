@@ -1,0 +1,120 @@
+I"R"<p>Site hızının gittikçe önemini arttırmasıyla birlikte web sitesi geliştiricileri sitelerinin kullandığı her kaynağı iki kere sorgulamaya başladı. Tüketilen her kaynak üzerinde kar/zarar hesabı yapılarak artık web sitelerine ekleniyor. Bu kaynaklardan bir tanesi olan yazı tipi hakkında olacak bu makale.</p>
+
+<p>Yazı tipi seçimi ilk başlarda çok zor bir tercih değildi.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/dw_format_text-min.jpg" alt="Dreamweaver yazı tipi ekleme" /></p>
+
+<p>Yukarıdaki ekran eskilerden DW’da yazı tipi seçim ekranı. Tanım şu şekildeydi.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">font-family</span><span class="o">:</span> <span class="nt">Arial</span><span class="o">,</span> <span class="nt">Helvetica</span><span class="o">,</span> <span class="nt">sans-serif</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<blockquote>
+  <p>Burada birincil fontumuz Arial’dir alternatifi Helvatica ve yazı tipi ailesi sans-serif olduğunu belirtiyoruz. Normalde sadece Arial yazmamız da yeterlidir, ancak kullanıcının bilgisayarında bu yazı tipinin olmaması durumu düşünülerek alternatif yazı tipi ve yazı tipi ailesi yazılmıştır. <a href="https://fatihhayrioglu.com/css-ve-tipografi/">https://fatihhayrioglu.com/css-ve-tipografi/</a></p>
+</blockquote>
+
+<p>Aynı yazıda farklı yazı tiplerini kullanmak için Adobe Flash yardımıyla sFIR yöntemini kullanabilirsiniz diye bir paragrafta var. Evet o zamanlar farklı yazı tipini kullanmak için genelde resim, sFIR veya cufon gibi dolambaçlı yollar kullanırdık.</p>
+
+<p>Sonra <a href="https://fatihhayrioglu.com/woff2-ve-font-face-tanimini-iki-satira-indirmek/">font-face</a> tanımı çıktı ve artık kullanıcının bilgisayarına istediğimiz yazı tipini ekleyebiliyoruz. Sonrasında kullanılan yazı tipi çeşitleri artmaya başladı ve web için yazı tipi çeşidi olan woff yazı tipi ve sonrasında ikinci sürümü olan woff2 çıktı. woff2 ile birlikte özel yazı tipleri daha optimize. Ama bu bile yetmeyebiliyor.</p>
+
+<p>Makalenin başında da yazdığım gibi her kaynak kullanılırken iki kere düşünülüyor diye. İşte bir çok popüler site GitHub, Wordpress, Bootstrap, Medium, Ghost gibi siteler özel yazı tipi kullanımını sorguladı ve sistem yazı tipi dediğimiz kullanıcının <strong>aracında</strong> kullandığı yazı tiplerine yöneldi. Dikkat ediyorsanız bilgisayarındaki demedim, çünkü zaman değişti ve bir çok araçtan internete erişim var artık. Yazımın başında verdiğim</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">font-family</span><span class="o">:</span> <span class="nt">Arial</span><span class="o">,</span> <span class="nt">Helvetica</span><span class="o">,</span> <span class="nt">sans-serif</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Kodu artık aşağıdaki hali aldı.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="nt">font-family</span><span class="o">:</span> <span class="nt">-apple-system</span><span class="o">,</span>
+<span class="nt">BlinkMacSystemFont</span><span class="o">,</span>
+<span class="s1">"Segoe UI"</span><span class="o">,</span>
+<span class="nt">Roboto</span><span class="o">,</span>
+<span class="nt">Oxygen-Sans</span><span class="o">,</span>
+<span class="nt">Ubuntu</span><span class="o">,</span>
+<span class="nt">Cantarell</span><span class="o">,</span>
+<span class="s1">"Helvetica Neue"</span><span class="o">,</span>
+<span class="nt">sans-serif</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Evet liste bayağı uzadı. Artık sadece bilgisayar değil farklı araçlardan internete erişebiliyoruz. Sonuç olarak her araç için bir sistem yazı tipi var ve onu ekleyince de yukarıdaki kod ortaya çıkıyor.</p>
+
+<p>Sonra standart geliştiriciler bu işe bir çözüm bulalım dedi ve genel bir tanım yazsak ve her araç bu tanıma göre kendi sisteminde olan yazı tipini gösterse diye bir çözüm atıldı ortaya ve CSS4 ile birlikte standartlaştırılmaya başlandı. Son olarak karar verilen standart;</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">font-family</span><span class="o">:</span> <span class="nt">system-ui</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Kısa ve net. Süper</p>
+
+<p>Tarayıcı desteği konusunda gayet güzel yerde Türkiye’de %88 civarında. Windows üzerinden Edge ve Firefox’a (sorunları var) da tam desteği gelince kullanılabilir.</p>
+
+<p><strong>Tarayıcı Desteği</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/ie.png" alt="explorer" title="Internet Explorer" /></th>
+      <th style="text-align: center"><img src="/images/ff.png" alt="Firefox" title="Firefox" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>-</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Mobil Tarayıcılar</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/sm.png" alt="Mobil Safari" title="Mobile Safari" /></th>
+      <th style="text-align: center"><img src="/images/samsung-internet.png" alt="Samsung Internet" title="Samsung Internet" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>6.2</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>system-ui hakkında <a href="https://infinnie.github.io/blog/2017/systemui.html">bir</a> <a href="https://github.com/twbs/bootstrap/pull/22377">iki</a> tane sorun olduğu konusunda yazı okudum. Çoklu dil desteği olan sitelerde sıkıntılar çıktığından bahsediyor. Güzel bir özellik umarım yakın zamanda desteği genişlerde kullanırız.</p>
+
+<p>Yazı tipi ile alakalı güzel özellikler çıkıyor. <strong>font-display</strong>, <strong>değişken fontlar</strong> gibi güzel gelişmeler var. Umarım tüm yazı tipi ihtiyaçlarımızı  başka birşeye ihtiyaç kalmadan css ile çözüm sağlarız.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://css-tricks.com/snippets/css/system-font-stack/">https://css-tricks.com/snippets/css/system-font-stack/</a></li>
+  <li><a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/</a></li>
+  <li><a href="https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f">https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f</a></li>
+  <li><a href="https://github.com/postcss/autoprefixer/issues/762">https://github.com/postcss/autoprefixer/issues/762</a></li>
+  <li><a href="https://bitsofco.de/the-new-system-font-stack/">https://bitsofco.de/the-new-system-font-stack/</a></li>
+  <li><a href="https://www.j-david.net/2017/01/the-system-ui-font.html">https://www.j-david.net/2017/01/the-system-ui-font.html</a></li>
+  <li><a href="https://drafts.csswg.org/css-fonts-4/#system-ui-def">https://drafts.csswg.org/css-fonts-4/#system-ui-def</a></li>
+  <li><a href="https://flaviocopes.com/css-system-fonts/">https://flaviocopes.com/css-system-fonts/</a></li>
+  <li><a href="https://furbo.org/2018/03/28/system-fonts-in-css/">https://furbo.org/2018/03/28/system-fonts-in-css/</a></li>
+</ul>
+:ET

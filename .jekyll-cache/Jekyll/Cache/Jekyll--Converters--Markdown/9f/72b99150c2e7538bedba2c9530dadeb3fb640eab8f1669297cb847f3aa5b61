@@ -1,0 +1,249 @@
+I"W:<p>CSS’te tüm özelliklere atanan 4 değer vardır. <code class="language-plaintext highlighter-rouge">initial</code>, <code class="language-plaintext highlighter-rouge">inherit</code>, <code class="language-plaintext highlighter-rouge">unset</code> ve <code class="language-plaintext highlighter-rouge">revert</code>. Burada bu değerlere değineceğiz. <code class="language-plaintext highlighter-rouge">unset </code>‘ten <a href="https://fatihhayrioglu.com/css-ipucu-34-all-unset-ile-tek-satirda-sifirlama-yapmak/">bir önceki yazımda</a> bahsettik. Yaptıkları iş aynı olsa da uygulandıklarında farklı davranış sergilerler. Yaptıkları iş atamaları geri almak. Amiyane tabirle geri vites.</p>
+
+<p>Bu makaledeki değerleri anlamak için CSS’te değerlerin nasıl uygulandığını hatırlamak gerekiyor. Burada genel anlamıyla bir değerin nasıl uygulandığını anlatalım.</p>
+
+<blockquote>
+  <p>Bu konuyu <a href="https://fatihhayrioglu.com/kitap/">1. kitabımdaki</a> 4.bölümünde bahsetmiştim. Belki ileride başka bir yazıda daha detaylı bir makale yazabiliriz bu konuda.</p>
+</blockquote>
+
+<h2 id="basamaklı-cascade-yapı">Basamaklı (cascade) yapı</h2>
+
+<p>CSS değerleri atandığında eğer bu tanım ve değer tek ise direk uygulanır ancak CSS tanımlarının çakışması durumunda çözümü sağlayan Basamaklı yapıdır (Cascade).</p>
+
+<p>Örneğin <code class="language-plaintext highlighter-rouge">font-size</code> tanımı birden fazla css dosyasında veya bir dosya içinde birden fazla tanımlanmış olabilir.</p>
+
+<p>CSS’e bu tanımlar 3 ana kaynaktan gelir.</p>
+
+<ol>
+  <li>
+    <p>Geliştiricinin eklediği değerler. Kodu yazan
+geliştirici.</p>
+  </li>
+  <li>
+    <p>Kullanıcının tarayıcı ayarlarında tanımladığı değerler. Tarayıcıyı kullanan son kullanıcı.</p>
+  </li>
+  <li>
+    <p>Tarayıcının kabul ettiği bağlangıç değeri. Tarayıcı kabulleri</p>
+  </li>
+</ol>
+
+<p>Basamaklı yapı bu üç kaynağı birleştirir. Aynı tanımların atandığı durumlar için önem, <a href="https://fatihhayrioglu.com/cssde-tanimlamalar-ve-etkinliklerispecificity/">etkinlik</a> ve sıralama ölçüsünü dikkate alarak sonuç değerini bulur ve uygular.</p>
+
+<p>Son kullanıcının tarayıcı ayarlar kısmından yaptığı atamalar (2. nolu seçenek) genelde göz ardı edilir.</p>
+
+<p>Aşağıda tanımlayacağımız değerler bu 2 kaynaktan gelen atamaları geri alamaya yöneliktir.</p>
+
+<h2 id="initial-başlangıç-değeri">initial (başlangıç) değeri</h2>
+
+<p><code class="language-plaintext highlighter-rouge">initial</code> değeri tarayıcıların atadığı başlangıç değerini ifade eder. Atandığı elemanın özelliğinin değerini tarayıcının belirlediği değere döndürür.</p>
+
+<p>Tarayıcılar HTML elemanlarını yorumlarken belirli başlangıç değerleri kabul ederek yorumlarlar. User Agent Stilleri olarak adlandırılan bu özelliklere sonradan tanımlanan CSS özellikleri ezer. Her tarayıcının kendine özel UA Stillleri vardır. CSS3 ile gelen <code class="language-plaintext highlighter-rouge">initial</code> değeri ile başlangıç değerine döndürme imkanımız oluyor.</p>
+
+<iframe scrolling="no" height="250" frameborder="0" style="width: 100%;overflow: hidden;" allowtransparency="true" data-height="250" src="//codepen.io/fatihhayri/embed/wAJel?type=result&amp;height=250" id="cp_embed_hgplm"></iframe>
+
+<p>Örnekte görüldüğü gibi kapsayıcı <strong>div</strong> elemanına atanan kırmızı rengi ilk paragraf için <code class="language-plaintext highlighter-rouge">initial</code> değeri ile tarayıcının ilk kabul değerine(siyah) döndürülmüştür.</p>
+
+<p><strong>Tarayıcı Desteği</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/ie.png" alt="explorer" title="Internet Explorer" /></th>
+      <th style="text-align: center"><img src="/images/ff.png" alt="Firefox" title="Firefox" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>-</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Mobil Tarayıcılar</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/sm.png" alt="Mobil Safari" title="Mobile Safari" /></th>
+      <th style="text-align: center"><img src="/images/samsung-internet.png" alt="Samsung Internet" title="Samsung Internet" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="inherit-kalıtsal-değeri">inherit (kalıtsal) değeri</h2>
+
+<p><code class="language-plaintext highlighter-rouge">inherit</code> değeri ebveyn elemanların alttaki elemanlara aktardığı değeri gösterir. Ebeveyn elemanda bir tanım yoksa <code class="language-plaintext highlighter-rouge">revert</code> gibi davranır. Atandığı elemanın özelliğinin değerini varsa ebeveyninde bulunan değere döndürür.</p>
+
+<iframe height="300" scrolling="no" title="inheritance" src="//codepen.io/fatihhayri/embed/EQEKdq/?height=300&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/EQEKdq/">inheritance</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Kalıtsallığı kullanarak kodlarımızı azaltabiliriz. Ancak kalıtsallık nedeni ile de birçok sorunla karşılaştığımızı da unutmayalım.</p>
+
+<p><strong>Tarayıcı Desteği</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/ie.png" alt="explorer" title="Internet Explorer" /></th>
+      <th style="text-align: center"><img src="/images/ff.png" alt="Firefox" title="Firefox" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Mobil Tarayıcılar</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/sm.png" alt="Mobil Safari" title="Mobile Safari" /></th>
+      <th style="text-align: center"><img src="/images/samsung-internet.png" alt="Samsung Internet" title="Samsung Internet" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="unset-sıfırlama">unset (sıfırlama)</h2>
+
+<p>Bir önceki makalede yazdığımız gibi <code class="language-plaintext highlighter-rouge">unset</code> değeri atanan bir özellik eğer kalıtsal bir değer alıyorsa kalıtsal değerine döndürür, kalıtsal değeri yoksa başlangıç değerine döndüren bir kısayoldur.</p>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="all: unset test" src="https://codepen.io/fatihhayri/embed/oNNqMvX?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fatihhayri/pen/oNNqMvX">all: unset test</a> by Fatih 
+  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p><strong>Tarayıcı Desteği</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/ie.png" alt="explorer" title="Internet Explorer" /></th>
+      <th style="text-align: center"><img src="/images/ff.png" alt="Firefox" title="Firefox" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>-</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Mobil Tarayıcılar</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/sm.png" alt="Mobil Safari" title="Mobile Safari" /></th>
+      <th style="text-align: center"><img src="/images/samsung-internet.png" alt="Samsung Internet" title="Samsung Internet" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="revert-geri-alma">revert (geri alma)</h2>
+
+<p>Bir elemana <code class="language-plaintext highlighter-rouge">revert</code> değeri atandığında geliştiricinin atadığı değerleri geri alır.</p>
+
+<p><code class="language-plaintext highlighter-rouge">unset</code> ile <code class="language-plaintext highlighter-rouge">revert</code> değerlerinin farkı: <code class="language-plaintext highlighter-rouge">unset</code> hem browser’ın hem de geliştiricinin atadığı değeri sıfırlarken, <code class="language-plaintext highlighter-rouge">revert</code> ise sadece geliştiricinin atamalarını sıfırlar.</p>
+
+<p><strong>not</strong> <code class="language-plaintext highlighter-rouge">revert</code> ve <code class="language-plaintext highlighter-rouge">unset</code> önceki atamaları siler ancak kalıtsallık aktiftir.  Kalıtsallığı da etkisiz hale getirmek istiyorsanız. Bir elemana geliştiricinin atama yapmadığından eminseniz, ebebeynine <code class="language-plaintext highlighter-rouge">initial</code> ataması yapıp, eleman da <code class="language-plaintext highlighter-rouge">revert</code> tanımıyla bunu sağlayabilirsiniz.</p>
+
+<p>Tarayıcı desteği konusunda <code class="language-plaintext highlighter-rouge">initial</code>, <code class="language-plaintext highlighter-rouge">inherit</code> ve <code class="language-plaintext highlighter-rouge">unset</code> iyiyken <code class="language-plaintext highlighter-rouge">revert</code> blink grubunun desteği olmadığı için düşük kalmış.</p>
+
+<p><strong>Tarayıcı Desteği</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/ie.png" alt="explorer" title="Internet Explorer" /></th>
+      <th style="text-align: center"><img src="/images/ff.png" alt="Firefox" title="Firefox" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>-</strong></td>
+      <td style="text-align: center"><strong>-</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Mobil Tarayıcılar</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/sm.png" alt="Mobil Safari" title="Mobile Safari" /></th>
+      <th style="text-align: center"><img src="/images/samsung-internet.png" alt="Samsung Internet" title="Samsung Internet" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>-</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>-</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://twitter.com/simevidas">Šime Vidas</a>‘ın yazısında ki çağrısını ben de burada tekrarlıyayım. Google bug sayfasındaki <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=579788">yıldıza bir tıklama</a> da siz ekleyin.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://css-tricks.com/getting-acquainted-with-initial/">https://css-tricks.com/getting-acquainted-with-initial/</a></li>
+  <li><a href="https://tympanus.net/codrops/css_reference/unset/">https://tympanus.net/codrops/css_reference/unset/</a></li>
+  <li><a href="https://tympanus.net/codrops/css_reference/inherit/">https://tympanus.net/codrops/css_reference/inherit/</a></li>
+  <li><a href="https://alligator.io/css/inherit-initial-unset/">https://alligator.io/css/inherit-initial-unset/</a></li>
+  <li><a href="https://medium.com/better-programming/css-explicit-defaulting-initial-inherit-unset-and-revert-9110647cdaa1">https://medium.com/better-programming/css-explicit-defaulting-initial-inherit-unset-and-revert-9110647cdaa1</a></li>
+  <li><a href="https://bitsofco.de/initial-inherit-unset-and-revert/">https://bitsofco.de/initial-inherit-unset-and-revert/</a></li>
+  <li><a href="https://medium.com/@paulryan17/understanding-the-css-values-inherit-initial-and-unset-c5d890743536">https://medium.com/@paulryan17/understanding-the-css-values-inherit-initial-and-unset-c5d890743536</a></li>
+  <li>https://tympanus.net/codrops/css_reference/revert/</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/revert">https://developer.mozilla.org/en-US/docs/Web/CSS/revert</a></li>
+  <li><a href="https://webplatform.news/issues/2019-09-06">https://webplatform.news/issues/2019-09-06</a></li>
+  <li><a href="https://www.youtube.com/watch?v=GAjoVRmipcU">How to REVERT CSS — get back to default browser style</a></li>
+  <li>https://twitter.com/simevidas/status/1132673880030683136?s=20</li>
+  <li><a href="https://fatihhayrioglu.com/css3-yeni-degerleri/">https://fatihhayrioglu.com/css3-yeni-degerleri/</a></li>
+  <li><a href="https://fatihhayrioglu.com/cssde-kalitsallikinheritance/">https://fatihhayrioglu.com/cssde-kalitsallikinheritance/</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-ipucu-34-all-unset-ile-tek-satirda-sifirlama-yapmak/">https://fatihhayrioglu.com/css-ipucu-34-all-unset-ile-tek-satirda-sifirlama-yapmak/</a></li>
+</ul>
+:ET

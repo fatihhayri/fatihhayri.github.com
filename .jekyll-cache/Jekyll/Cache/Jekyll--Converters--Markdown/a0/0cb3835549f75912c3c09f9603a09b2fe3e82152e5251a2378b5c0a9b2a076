@@ -1,0 +1,108 @@
+I"�#<ol>
+  <li><a href="https://fatihhayrioglu.com/css-grid-giris/">CSS Grid’e (Izgara) Giriş</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-grid-ozellikleri/">CSS Grid Özellikleri</a></li>
+  <li><a href="https://fatihhayrioglu.com/fr-birimi/">fr birimi</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-izgara-cizgi-isimlendirmesi-ve-kullanimi/">CSS Izgara çizgi isimlendirmesi ve kullanımı</a></li>
+  <li><a href="https://fatihhayrioglu.com/sayfa-planlama-sihirbazi-grid-template-areas/" title="Sayfa planlama sihirbazı grid-template-areas">Sayfa planlama sihirbazı grid-template-areas</a></li>
+</ol>
+
+<p>CSS grid yazılarımızın 6. sında sizlere explicit (belirlenmiş), implicit(belirlenmemiş)  tanımlarını, <code class="language-plaintext highlighter-rouge">grid-auto-columns</code>, <code class="language-plaintext highlighter-rouge">grid-template-rows</code> ve <code class="language-plaintext highlighter-rouge">grid-auto-flow</code>  özelliklerini anlatacağım.</p>
+
+<p><code class="language-plaintext highlighter-rouge">display:grid</code> tanımı yapılan kapsayıcı elemanın altındaki tüm birincil ögeler grid ögesi olur. Bu ögelerin <code class="language-plaintext highlighter-rouge">grid-template-columns</code>, <code class="language-plaintext highlighter-rouge">grid-template-rows</code> ve <code class="language-plaintext highlighter-rouge">grid-template-areas</code> tanımları yardımıyla konumu ve boyutu belirlenir. Bu konumu ve boyutu belirlenmiş grid ögelerine <strong>explicit (belirlenmiş) grid ögeleri</strong>, bunların dışındaki ögelere <strong>implicit (belirlenmemiş) grid ögeleri</strong> denir.</p>
+
+<p>Belirlenmiş (explicit) ögelerin alanların tanımları bellidir. Peki geri kalan Belirlenmemiş (implicit) ögeler ne olacak. Bu ögeler için de <code class="language-plaintext highlighter-rouge">grid-auto-columns</code> ve <code class="language-plaintext highlighter-rouge">grid-auto-rows</code> tanımları devreye giriyor. Açıkta öge kalmasın :)</p>
+
+<p>İçeriği dinamik olarak oluşan yapılarda genelde yeni gelen ögeler belirlenmemiş (implicit) öge olarak oluşur. <code class="language-plaintext highlighter-rouge">grid-auto-columns</code> ve <code class="language-plaintext highlighter-rouge">grid-auto-rows</code> tanımları bu sorunları gidermek bire bir özelliklerdir..</p>
+
+<h2 id="grid-auto-columns-ve-grid-auto-rows">grid-auto-columns ve grid-auto-rows</h2>
+
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> grid-auto-column: &lt;iz-listesi|&gt; |minmax(&lt;iz-listesi&gt;,&lt;iz-listesi&gt;)<br />
+<strong>Aldığı Değerler :</strong>  &lt;iz-listesi&gt; |minmax(&lt;iz-listesi&gt;,&lt;iz-listesi&gt;)<br />
+<strong>Başlangıç değeri:</strong> auto<br />
+<strong>Uygulanabilen elementler:</strong> Kapsayıcı ızgaralara<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;grid-listesi&gt;</code> seti boşluklarla ayrılarak tekrar edebilir değerlerden oluşur.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td> --><td class="rouge-code"><pre>.grid { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-auto-rows: 200px;
+  grid-gap: 20px;
+}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="https://fatihhayrioglu.com/images/grid-auto-x.png" alt="enter image description here" /></p>
+
+<iframe height="542" style="width: 100%;" scrolling="no" title="NWWaBjq" src="https://codepen.io/fatihhayri/embed/NWWaBjq?height=542&amp;theme-id=13521&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<p>Yukarıdaki grid için 4 kolon ve 2 satır tanımlanmıştır. 3. satırdaki ögeler için ise <code class="language-plaintext highlighter-rouge">grid-auto-rows: 200px;</code> tanımı yapılmıştır.</p>
+
+<p>Firefox geliştirici aracında explicit ve implicit ayrımını göstermektedir. Explicit grid öge alanı tam kenar çizgisiyle gösterilirken implicit alanlar kesik çizgi olarak gösterilir.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/grid-auto-x-firefox.png" alt="enter image description here" /></p>
+
+<p>grid-template-x (<code class="language-plaintext highlighter-rouge">grid-template-columns</code>, <code class="language-plaintext highlighter-rouge">grid-template-rows</code> ve <code class="language-plaintext highlighter-rouge">grid-template-areas</code>) ve grid-auto-x (<code class="language-plaintext highlighter-rouge">grid-auto-columns</code> ve <code class="language-plaintext highlighter-rouge">grid-auto-rows</code>) tanımlarının şöyle bir farkı vardır. <code class="language-plaintext highlighter-rouge">grid-template-x</code> tanımları tanımladığı grid ögelerinin hem konumunu hemde boyutunu belirlerken grid-auto-x özellikleri sadece boyutunu belirler.</p>
+
+<p>Bu özellikleri niçin kullandığımızı düşününce bu farklılık daha anlaşılır olur. <code class="language-plaintext highlighter-rouge">grid-template-x</code> özellikleri explicit grid ögeleri oluşturmak için tanımlanırken, <code class="language-plaintext highlighter-rouge">grid-auto</code> tanımı ise tanımlanmış implicit (belirlenmemiş) grid ögelerinin boyutunu belirler. Birisi sıfırdan tanımlarken birisi tanımlanmış ögenin boyutunu belirler.</p>
+
+<h2 id="grid-auto-flow">grid-auto-flow</h2>
+
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> grid-auto-flow: [ row | column ] ‖ dense<br />
+<strong>Aldığı Değerler :</strong>  [ row | column ] ‖ dense<br />
+<strong>Başlangıç değeri:</strong> row<br />
+<strong>Uygulanabilen elementler:</strong> Kapsayıcı ızgaralara<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+
+<p>Bu özellik tanımlanmış ögelerin dışındakilerin nasıl davranacağını belirlememizi sağlar.</p>
+
+<p>Aldığı değerler ve anlamları:</p>
+
+<p><strong>row</strong> Bu değer başlangıç değeridir. Otomatik yerleştirme algoritması her  grid ögesinin satırlara yerleştirecektir ve yeni eklenen grid ögeleri içinde yeni satırlar açacaktır.</p>
+
+<p><strong>column</strong>: Otomatik yerleştirme algoritması her  grid ögesini kolonlara yerleştirecektir ve yeni eklenen grid ögeleri içinde yeni kolonlar açacaktır.</p>
+
+<p><strong>dense</strong> Bu tanım grid ögelerinin akışının içindeki davranışına karar verdiğimiz bir özelliktir.</p>
+
+<p>Grid ögeleri normalde sırayla yerleştirilir. Boyutu sığmayan ögeler bir alt satıra itilir.</p>
+
+<p>Örnekle bu konuyu daha iyi anlayacağız. Rachel Andrew’in örneği üzerinden gidersek.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/grdi-auto-flow.png" alt="enter image description here" /></p>
+
+<p><strong>Striped Balloon</strong> içeriği daha geniş olduğu için üst satırdan aşağı atılmıştır. Bundan dolayı üst satır boş kalmıştır. Kırmızıyla işaretlenen yer.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/grdi-auto-flow-dense.png" alt="enter image description here" /></p>
+
+<p><strong>Fortnum &amp; Mason</strong> içeriği daha küçük olduğu için yukarıdaki boşluğa sığdırılır. Galeri sayfaları için çok güzel bir özellik.</p>
+
+<p>Galeriye örnek:  https://codepen.io/FilipVitas/pen/pQBYQd</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li>https://bitsofco.de/understanding-the-difference-between-grid-template-and-grid-auto/</li>
+  <li>https://css-tricks.com/difference-explicit-implicit-grids/</li>
+  <li>https://www.quackit.com/css/grid/tutorial/explicit_vs_implicit_grid.cfm</li>
+  <li>https://www.joomlashack.com/blog/tutorials/explicit-implicit-grid/</li>
+  <li><a href="https://www.youtube.com/watch?v=8_153Zz4YI8">CSS GRID: Implicit vs Explicit Tracks — 5 of 25</a></li>
+  <li><a href="https://www.youtube.com/watch?v=tFKrK4eAiUQ&amp;feature=youtu.be">https://www.youtube.com/watch?v=tFKrK4eAiUQ&amp;feature=youtu.be</a></li>
+  <li><a href="https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/">https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/</a></li>
+  <li><a href="https://tympanus.net/codrops/css_reference/grid/#section_grid-auto-columns-rows">https://tympanus.net/codrops/css_reference/grid/#section_grid-auto-columns-rows</a></li>
+  <li><a href="https://www.quackit.com/css/css3/properties/css_grid-auto-columns.cfm">https://www.quackit.com/css/css3/properties/css_grid-auto-columns.cfm</a></li>
+  <li><a href="https://learncssgrid.com/#implicit-grid">https://learncssgrid.com/#implicit-grid</a></li>
+  <li><a href="https://medium.freecodecamp.org/things-ive-learned-about-css-grid-layout-932777c2d6d7">https://medium.freecodecamp.org/things-ive-learned-about-css-grid-layout-932777c2d6d7</a></li>
+  <li><a href="https://www.joomlashack.com/blog/tutorials/grid-auto-flow-dense-property/">CSS Grid #16: The grid-auto-flow: dense Property</a></li>
+</ul>
+:ET

@@ -1,0 +1,94 @@
+I"�<p>jQuery’de en çok kullandığımız özelliklerinden birisi de sınıf tanımlama, silme, varlığını kontrol etme ve toggleClass.</p>
+
+<p>Peki bunların normal javascript’te karşılığı var mı ve bu kadar kolay kullanabiliyor muyuz? Elbette. Sırası ile inceleyelim.</p>
+
+<h2 id="sınıf-class-ekleme">Sınıf (class) ekleme</h2>
+
+<p>Seçtiğimiz elemana bir sınıf tanımlamak istediğimizde</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>  <span class="nx">$el</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">aktif</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Normal Js ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>  <span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">'</span><span class="s1">aktif</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>çok benzer tanımlar.</p>
+
+<h2 id="sınıf-class-silme">Sınıf (class) silme</h2>
+
+<p>Seçtiğimiz elemana ait sınıfı silmek istediğimizde</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>  <span class="nx">$el</span><span class="p">.</span><span class="nx">removeClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">aktif</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Normal Js ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> <span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="dl">'</span><span class="s1">aktif</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>yine çok benzer tanımlar.</p>
+
+<h2 id="sınıfın-varlığını-kontrol-edelim">Sınıfın varlığını kontrol edelim</h2>
+
+<p>Bir çok yerde seçilen eleman atanmış bir sınıfın olup olmadığını kontrol ederiz ve buna göre işlem yaparız.</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> <span class="nx">$el</span><span class="p">.</span><span class="nx">hasClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">aktif</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Normal Js ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> <span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="dl">'</span><span class="s1">aktif</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>benzer kullanım.</p>
+
+<h2 id="sınıf-geçişi-toggle">Sınıf geçişi (toggle)</h2>
+
+<p>Çok tercih edilen bir diğer sınıf işlemedir.</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> <span class="nx">$el</span><span class="p">.</span><span class="nx">toggleClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">aktif</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Normal Js ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> <span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="dl">'</span><span class="s1">aktif</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>çok kullanışlı bu özelliğin normal js olması süper.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>jQuery’den esinlenerek classList API’yi geliştirdiler. Artık aynı yetenekler normal javascript’te de var.</p>
+
+<p>jQuery ile aynı kolaylıkta bir kullanım sağlayan normal js çözümlerini tercih etmek bize hız kazandıracaktır.</p>
+
+<p>IE10 ve sonrası için desteği olan bu özellikleri rahatlıkla kullanabiliriz.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://github.com/oneuijs/You-Dont-Need-jQuery">https://github.com/oneuijs/You-Dont-Need-jQuery</a></li>
+  <li><a href="http://youmightnotneedjquery.com/">http://youmightnotneedjquery.com/</a></li>
+  <li><a href="https://www.sitepoint.com/exploring-classlist-api/">https://www.sitepoint.com/exploring-classlist-api/</a></li>
+  <li><a href="http://blog.teamtreehouse.com/manipulating-classes-using-classlist-api">http://blog.teamtreehouse.com/manipulating-classes-using-classlist-api</a></li>
+  <li><a href="https://davidwalsh.name/classlist">https://davidwalsh.name/classlist</a></li>
+</ul>
+:ET

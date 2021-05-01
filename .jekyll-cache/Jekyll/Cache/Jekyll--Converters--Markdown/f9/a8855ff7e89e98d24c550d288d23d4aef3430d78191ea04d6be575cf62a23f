@@ -1,0 +1,64 @@
+I"�<p>Baştan belirtmeliyim ki bu anlatacaklarım sadece MacOS kullancıları için geçerlidir. Maalesef Windows için böyle bir çözüm yok. En azından benim bildiğim yok. Bildiğiniz Windows çözümü varsa yazının altındaki yorum satırlarına yazarark hem bana hemde diğer okuyuclara yardım etmiş olursunuz.</p>
+
+<p>Mobil dünyanın gelişmesi ile siteler için gelen hataların bir çoğu artık mobilden geliyor. Bunların arasında Safari üzerinden gelen hataların oranı ciddi derecede çok. Peki sitemizdeki hataları mobil şartlarda nasıl yakalarız ve düzeltiriz. Bunun iki yolu var. İlki bir iPhone telefon bulup bilgisayarınıza bağlayarak yapmak. İkinci yöntem Mac OS kullananlar için Xcode - Simulator yardımyla yapmak. Bu makale de size Simulator yardımı ile nasıl hata ayıklarız bundan bahsedeceğim. 4 adımda halledeceğiz bu işi.</p>
+
+<h2 id="1-adım-xcode-kurulumu">1. Adım Xcode kurulumu</h2>
+
+<p>Mac Os kullanıyorsanız Xcode başta kurulu gelmiyor. İlk olarak Xcode kurmanız gerekiyor. Ücretsiz bir program olan Xcode’u ister App Store’dan isterseniz internetten kurabilirsiniz.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/xcode-install.png" alt="xcode install" /></p>
+
+<p>Bende yüklü olduğu için buton metni <strong>open</strong> şeklinde ama siz ilk yüklüyorsanız <strong>install</strong> olması lazım.</p>
+
+<p><a href="https://developer.apple.com/xcode/">https://developer.apple.com/xcode/</a></p>
+
+<h2 id="2-adım-safari-ayarları">2. Adım Safari Ayarları</h2>
+
+<p>Masaüstü Safari tarayıcısında geliştirici menüsü kapalı geliyor. Açmak için <strong>Safari &gt; Preferences</strong> menüsüne tıklıyoruz. Gelen pencerede <strong>Advanced</strong> sekmesindeki <strong>Show Develop menu in menu bar</strong> işaret kutusunu işaretli hale getiriyoruz.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/safari-dev-tools.gif" alt="Safari Advanced" /></p>
+
+<p>Artık üst menüde <strong>Develop</strong> geldi. Masaüsütü testlerimizi yapmak içinde bu ayarı yapmak gerekiyor.</p>
+
+<h2 id="3-adım-web-inspector-açmak">3. Adım Web Inspector açmak</h2>
+
+<p>İlk olarak Simulator uygulamasını açıyoruz.</p>
+
+<p>Sonra simülatörde <strong>Web Inspector</strong> açmak için <strong>Settings &gt; Safari &gt; Advanced</strong> ve <strong>Web Inspector</strong> aktifleştiriyoruz.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/iphone-web-inspector.gif" alt="web inspector" /></p>
+
+<h2 id="4-adım-hata-ayıklamak">4. Adım Hata ayıklamak</h2>
+
+<p>Ayarlar bittikten sonra iOS simülatöründe Safari adres çubuğuna inceleyeceğimiz adresi yazıyoruz. Ben <strong>fatihhayrioglu.com</strong> yazdım.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/safari-inspect-1.png" alt="Safari inpect" /></p>
+
+<p>Sonra bilgisayarımızdaki Safari tarayıcısını açıp. Üst menüden <strong>Develop &gt; Simulator &gt; fatihhayrioglu.com</strong> şeklinde görünecektir. Tıklayarak geliştirici aracını açıyoruz.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/safari-inspect-2.png" alt="Safari inpect" /></p>
+
+<p>Safari Developer Tool’u açılacaktır. Artık kodunuzu incelemeye başlayabilirsiniz. Tüm geliştirme araçları nimetlerinden yararlanabilirsiniz. Elemanları denetleyebilir, js ile kesme noktaları koyup javascript hatalarını ayıklayabilir, ağ sekmesinden site kaynaklarının yüklenme zamanları ve sırasını görebilirsiniz. Geliştirme araçlarındaki diğer işlerini de aynı şekilde yapabiliyoruz.</p>
+
+<p>Xcode Simulator’ün üst menüsünden bir çok ayar yapabiliyoruz. Kullandığınız cihazı değiştirebilirsiniz, ana ekrana geçi yapabilirsiniz, yataya çevirebilirsiniz ve diğer işleri de ypabilirsiniz.</p>
+
+<p>Her şey güzel ancak bazen Masaüstü Safari’de Simulator inceleme çıkmıyor. Geçenlerde twitter’da bahsetmiştim.</p>
+
+<blockquote class="twitter-tweet" data-lang="tr"><p lang="tr" dir="ltr">MacOs&#39;ta Xcode Simulator&#39;unu Safari&#39;den Debug edebiliyordum eskiden, şimdilerde bunu göstermiyor. Bu sorun ile karşılaşıp çözen var mı? <a href="https://twitter.com/hashtag/xcode?src=hash&amp;ref_src=twsrc%5Etfw">#xcode</a> <a href="https://twitter.com/hashtag/safari?src=hash&amp;ref_src=twsrc%5Etfw">#safari</a> <a href="https://t.co/XSRP6ZZQr7">pic.twitter.com/XSRP6ZZQr7</a></p>&mdash; Fatih Hayrioğlu (@fatihhayri) <a href="https://twitter.com/fatihhayri/status/953261635703013376?ref_src=twsrc%5Etfw">16 Ocak 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Bu twitimden sonra sağolasun <a href="https://twitter.com/cenkingunlugu">Cenk</a>, <a href="https://twitter.com/ogzcn">Oğuzcan</a> ve <a href="https://twitter.com/sosyaltuna">Tuna</a>‘nın yardımlarıyla sorunu çözdük. Apple işletim sisteminiz güncel değilse bu tip sorunlar çıkarabiliyor. İşletim sistemimi güncelleyince çözüldü.</p>
+
+<p>iPhone veya iPad cihazınızı bilgisayarınıza bağlayarakta benzer işleri yapabilirsiniz. Tek fark 1. adımı es geçmek yani Xcode - Simulator kurulumuna gerek yok. :)</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="http://adaptivejs.mobify.com/v2.0/docs/debug-on-ios-devices-and-the-ios-simulator/">http://adaptivejs.mobify.com/v2.0/docs/debug-on-ios-devices-and-the-ios-simulator/</a></li>
+  <li><a href="https://software.intel.com/en-us/xdk/docs/using-web-inspector-remote-to-debug-ios-cordova-apps">https://software.intel.com/en-us/xdk/docs/using-web-inspector-remote-to-debug-ios-cordova-apps</a></li>
+  <li><a href="http://geeklearning.io/apache-cordova-and-remote-debugging-on-ios/">http://geeklearning.io/apache-cordova-and-remote-debugging-on-ios/</a></li>
+  <li><a href="https://www.smashingmagazine.com/2014/09/testing-mobile-emulators-simulators-remote-debugging/">https://www.smashingmagazine.com/2014/09/testing-mobile-emulators-simulators-remote-debugging/</a></li>
+</ul>
+:ET

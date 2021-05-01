@@ -1,0 +1,106 @@
+I"j<p>Geçenlerde bir makaleye denk geldim. <a href="https://jamie.build/last-2-versions">https://jamie.build/last-2-versions</a> sitenin ardalan rengi kadar dikkat çekici bir konuyu ele almıştı. Özetle şöyle: Autoprefixer ve Babel gibi araçlar tarayıcı listesi bilgisini <a href="https://github.com/jonrohan/browserl.ist">browserlist</a> kütüphanesinden alıyorlar. Desteklenen tarayıcı listesine göre bir çıktı oluşturuyorlar. Autoprefixer mesela oluşan listeye göre prefix oluşturuyor. Eğer listeniz eski kalmış ise hala eski tarayıcılar için kod üretiyor olabilirisiniz. Bu da kod boyunuzun artmasına neden olabilir. Babel kullanıyorsanız sonuçları daha kötü olabilr.</p>
+
+<p>Bizim projede biz Autoprefixer kullanıyoruz. Bizdeki tarayıcı listesi şöyle kalmış:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="p">...</span>
+<span class="dl">"</span><span class="s2">config</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">autoprefixerBrowsers</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">Android &gt;= 5</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Chrome &gt;= 43</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Firefox &gt;= 44</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">iOS &gt;= 8.4</span><span class="dl">"</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/images/browserlist-1.png" alt="browserlist" /></p>
+
+<p>Sadece tarayıcı listesinin olduğu eski ve eksik bir liste. Bu kullanımın şöyle bir dezajavantajı var; hızlı otomatik güncellenen tarayıcılar nedeniyle listeniz eski kalıyor. Ayrıca sizin sitenize gelen tarayıcı listesine yeni giren tarayıcıları kodun dışında tutmuş oluyorsunuz.</p>
+
+<p>Daha aktif bir liste için tarayıcıların güncel son 2 sürümünü dikkate alacak şekilde kodu değiştirelim.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="p">...</span>
+<span class="dl">"</span><span class="s2">config</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">autoprefixerBrowsers</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">last 2 versions</span><span class="dl">"</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/images/browserlist-2.png" alt="browserlist son 2 sürüm" /></p>
+
+<p>Bu kullanımda da sizin projenizin kapsamında olmayan tarayıcılar listenize girebilir.</p>
+
+<ul>
+  <li>Firefox for Android</li>
+  <li>QQ Browser1.2</li>
+  <li>Android Browser67</li>
+  <li>Android Browser4.4.3-4.4.4</li>
+  <li>Baidu Browser7.12</li>
+  <li>Blackberry Browser10</li>
+  <li>Blackberry Browser7</li>
+  <li>IE Mobile11</li>
+  <li>IE Mobile10</li>
+  <li>Opera Miniall</li>
+  <li>Opera Mobile46</li>
+  <li>Opera Mobile12.1</li>
+</ul>
+
+<p>Bu listeyi daha dinamik ve kendi projemize uygun hale getirmek için aşağıdaki yöntemi kullanmalıyız.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="p">...</span>
+<span class="dl">"</span><span class="s2">config</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">autoprefixerBrowsers</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">&gt;0.50%</span><span class="dl">"</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/images/browserlist-3.png" alt="browserlist yüzdeli" /></p>
+
+<p>Kullanım yüzdesi %0.5’in üstünde olan tarayıcı listesini kullan demek. Yüzde değerini projemize göre arttırıp azaltabiliriz. Buradaki sorunlardan birisi de bu tarayıcı kullanım oranı dünya geneli için olan kullanım oranıdır. Biz kendi projemizdeki kullanım oranına göre bu listeyi şekillendirmeliyiz.</p>
+
+<p>Yukarıdaki kodu yazınca bizim proje kapsamında olamayan aşağıdaki tarayıcılarda listeye girdi.</p>
+
+<ul>
+  <li>Android Browser4.4</li>
+  <li>Opera Miniall</li>
+  <li>IE11</li>
+  <li>Opera52</li>
+  <li>Safari11.1</li>
+</ul>
+
+<p><a href="https://github.com/browserslist/browserslist#full-list">Browserlist kütüphanesi dokümanından</a> yardım alarak istemidiğimiz tarayıcıları bu listenin dışına atabiliriz. Ben koda etki eden iki tarayıcıyı listeden çıkarıp listemi son haline getiriyorum.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="p">...</span>
+<span class="dl">"</span><span class="s2">config</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">autoprefixerBrowsers</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">&gt;0.50%</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">not android 4.4</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">not ie 11</span><span class="dl">"</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/images/browserlist-4.png" alt="browserlist yüzdeli ve kullanılmayan tarayıcı çıkar" /></p>
+
+<p>Bu tarayıcı listesinin autoprefixer’a girince nasıl bir çıktı üreteceğini <a href="https://autoprefixer.github.io/">https://autoprefixer.github.io/</a> sitesinden test edebiliriz. Autoprefixer için güzel bir test aracı.</p>
+
+<p><img src="/images/autoprefixer-test.png" alt="autoprefixer test sitesi" /></p>
+
+<p>Tarayıcılar arayüz geliştirme ekiplerinin önemli bir parçası. Tarayıcılar konusundaki her gelişmeyi iyi takip etmeli ve projelerimizi bu gelişmelere göre güncel tutmalıyız.</p>
+
+<p>Sağlıcakla kalın.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://jamie.build/last-2-versions">https://jamie.build/last-2-versions</a></li>
+  <li><a href="https://css-tricks.com/browserlist-good-idea/">https://css-tricks.com/browserlist-good-idea/</a></li>
+  <li><a href="https://css-tricks.com/browserlist-good-idea/">https://autoprefixer.github.io/</a></li>
+  <li><a href="https://github.com/browserslist/browserslist">https://github.com/browserslist/browserslist</a></li>
+</ul>
+:ET

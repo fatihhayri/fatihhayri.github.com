@@ -1,0 +1,153 @@
+I"�4<p><a href="https://fatihhayrioglu.com/css-grid-ozellikleri/">Bir önceki yazıda;</a></p>
+
+<blockquote>
+  <p>fr(ing. fraction) birimi “kesir” anlamına gelir. px veya % gibi bir uzunluk değil, bunun yerine “esnek” bir birim olarak kabul edilir. CSS grid ile birlikte gelen bir değerdir. Kullanılabilir alanı tanımlamamızı sağlayan esnek bir birimdir.</p>
+</blockquote>
+
+<p>Tanımını yapmıştık ve detayını bu makaleye bırakmıştık. Öneminden dolayı fr birimini ayrı bir makalede incelemenin daha iyi olacağını düşündüm.</p>
+
+<p><a href="https://www.youtube.com/watch?reload=9&amp;v=ZPtpzuRajzM">Jen Simmons</a>‘ın yaptığı bir örnekle başlayalım. Örneği ilk olarak yüzde değerlerle çözmeye çalışalım ve sonra fr birimi ile çözelim. Aradaki farkı görelim.</p>
+
+<p>İlk örneğimizde 3 kolon böldüğümüz bir alan düşünelim kapsayıcısı %100 olan.</p>
+
+<iframe height="551" style="width: 100%;" scrolling="no" title="fr birimi ilk örnek" src="//codepen.io/fatihhayri/embed/LayLjM/?height=551&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<p>Birinci örnekte işler gayet düzgün çalışır. 3 kolon var ve her kolon 33% değeri alıyor. (aslında 33.33% gibi bir değer olması gerekiyor ancak border değerleri için burada 33% yaptık.)</p>
+
+<p>İkinci örnekte, kolonların yapışık olmaması için kolonların arasına boşluk verelim. Bunu dediğimizde hesaplamalar başlıyor. 2%’lik bir boşluk değeri belirleyelim. %2 boşluk değeri sonrası yatayda kaydırma çubuğu çıktı. Yatay çubuğu engellemek için şöyle bir hesap (100% - 4%) / 3 yapmamız gerekiyor.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td> --><td class="rouge-code"><pre><span class="nt">grid-template-columns</span><span class="o">:</span> <span class="nt">calc</span><span class="o">((</span><span class="err">100</span><span class="o">%</span> <span class="nt">-</span> <span class="err">4</span><span class="o">%)/</span><span class="err">3</span><span class="o">)</span> <span class="nt">calc</span><span class="o">((</span><span class="err">100</span><span class="o">%</span> <span class="nt">-</span> <span class="err">4</span><span class="o">%)/</span><span class="err">3</span><span class="o">)</span> <span class="nt">calc</span><span class="o">((</span><span class="err">100</span><span class="o">%</span> <span class="nt">-</span> <span class="err">4</span><span class="o">%)/</span><span class="err">3</span><span class="o">);</span>
+<span class="nt">grid-gap</span><span class="o">:</span> <span class="err">2</span><span class="o">%;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<iframe height="553" style="width: 100%;" scrolling="no" title="fr birimi" src="//codepen.io/fatihhayri/embed/LaRdrb/?height=553&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<p>çözümü bulduk diye sevinirken, tasarımcıdan bir haber geldi “Bu güzelde mobilde boşluklar çok küçük kaldı bunu 2%’yi %3’e çıkaralım padding verelim” vs. gibi istekler sonrası bu yaptığımız hesapları hep güncellememiz gerekiyor. Bu noktada fr birimi yardımımıza yetişiyor. Aynı örneği fr ile yapalım.</p>
+
+<iframe height="551" style="width: 100%;" scrolling="no" title="fr birimi" src="//codepen.io/fatihhayri/embed/vPXraO/?height=551&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<p>Yaptığımız tanımla hiçbir hesaplamaya gerek duymadık. fr tanımı bizim yerimize diğer değerlerden sonra kalan alanı hesapladı ve sonucu üretti. Büyük kolaylık.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td> --><td class="rouge-code"><pre><span class="nt">grid-template-columns</span><span class="o">:</span> <span class="err">1</span><span class="nt">fr</span> <span class="err">1</span><span class="nt">fr</span> <span class="err">1</span><span class="nt">fr</span><span class="o">;</span>
+<span class="nt">grid-gap</span><span class="o">:</span> <span class="err">3</span><span class="o">%;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p class="resmi-ortala"><img src="https://fatihhayrioglu.com/images/fr-birimi.gif" alt="fr birimi esnekliği" /></p>
+
+<p>Yukarıdaki hareketli gif’te görüldüğü gibi <code class="language-plaintext highlighter-rouge">grid-gap</code> değerini her arttırdığımızda kutu genişlikleri otomatik olarak değişmektedir.</p>
+
+<p class="tanitim"><strong>CSS Öğren</strong>
+CSS hakkında daha fazla bilgiye ulaşman çok kolay. CSS Dersleri sayfasında CSS hakkında bilmen gereken tüm bilgilere dair makale bulunuyor. <a href="/css-dersleri">Hemen Öğrenmeye Başla</a></p>
+
+<h2 id="fr-birimi-her-zaman-eşit-grid-alanları-üretmez">fr birimi her zaman eşit grid alanları üretmez</h2>
+
+<p>fr birimi kullanılabilir boşlukları kullanır, ancak grid alanı içinde uzun içerik, resim veya video gibi kırılması mümkün olmayan alanların olduğu durumlarda fr birimi grid alanını bu içeriğe göre genişletir.</p>
+
+<iframe height="474" style="width: 100%;" scrolling="no" title="fr birimi içerik farklılıkları" src="//codepen.io/fatihhayri/embed/rRyVjy/?height=474&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<p>Bu gibi durumları istemiyorsak metinlerin bir alt satıra atılıp atılmadığına ve resim ve videoların esnek olup olmadığından emin olmalıyız.</p>
+
+<p>Bunun için iki yol tercih edilebilir.</p>
+
+<p><strong>1. yol</strong> <code class="language-plaintext highlighter-rouge">1fr</code> yerine <code class="language-plaintext highlighter-rouge">minmax(0, 1fr)</code> kullanmak.</p>
+
+<p><strong>2. yol</strong> Metinler için <code class="language-plaintext highlighter-rouge">word-break: break-all</code> ve resimler ve videolar için <code class="language-plaintext highlighter-rouge">max-width:auto</code> kullanarak bu durumu çözebiliriz.</p>
+
+<h2 id="fr-değeriyle-diğer-değerleri-birlikte-kullanmak">fr değeriyle diğer değerleri birlikte kullanmak</h2>
+
+<p>fr birimi diğer birimlerle birlikte kullanılabilir.</p>
+
+<p>Örneğin sağ kolonunda banner bulunan bir sayfada içeriği esnek bir değer alsın istersek.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nt">grid-template-columns</span><span class="o">:</span> <span class="err">1</span><span class="nt">fr</span> <span class="err">220</span><span class="nt">px</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<iframe height="200" style="width: 100%;" scrolling="no" title="fr ve diğer birimler birlikte" src="//codepen.io/fatihhayri/embed/oVBGqQ/?height=200&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<p>İçerik alanına <code class="language-plaintext highlighter-rouge">min-width</code> değeri vererek çok küçük boyutlara gelmesi engellenebilir.</p>
+
+<p>İşi biraz daha abartırsak.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nt">grid-template-columns</span><span class="o">:</span> <span class="err">270</span><span class="nt">px</span> <span class="err">1</span><span class="nt">fr</span> <span class="err">2</span><span class="nt">fr</span> <span class="nt">min-content</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<iframe height="220" style="width: 100%;" scrolling="no" title="fr ve diğer birimler birlikte - 2" src="//codepen.io/fatihhayri/embed/WmpNzX/?height=220&amp;theme-id=13521&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<p>Daha önce hesap yapmamız gereken veya kodlamakta zorlandığımız birçok sayfa planını kodlayabiliriz artık.</p>
+
+<h2 id="dikeyde-fr-kullanımı">Dikeyde fr kullanımı</h2>
+
+<p>Şimdiye kadar ki tüm örnekleri yatayda versekte aynı kolaylığı dikeyde de sağladığını unutmayalım.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nt">grid-template-rows</span><span class="o">:</span> <span class="err">120</span><span class="nt">px</span> <span class="err">1</span><span class="nt">fr</span> <span class="err">220</span><span class="nt">px</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<iframe height="582" style="width: 100%;" scrolling="no" title="fr birimi dikey örnek" src="//codepen.io/fatihhayri/embed/PLpoaW/?height=582&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<p>süper değil mi?</p>
+
+<p>Bunun dışında çok karmaşık sayfa planlarını fr birimi sayesinde daha kolay bir şekilde kodlayabiliriz. <a href="https://twitter.com/danwebbbb">Dan Webb</a>‘in yazısında anlattığı gibi bir sayfa planı örnek olarak verilebilir.</p>
+
+<p class="resmi-ortala"><img src="https://fatihhayrioglu.com/images/wl-grid-min.jpg" alt="Karışık örnek resmi" /></p>
+
+<p><a href="https://medium.com/@danwebb/how-to-build-complicated-grids-using-css-grid-609b1197cf75">https://medium.com/@danwebb/how-to-build-complicated-grids-using-css-grid-609b1197cf75</a>
+yazısı şimdilik karışık gelebilir, ama okumakta fayda var.</p>
+
+<h2 id="fr-birimine-ait-diğer-notlar">fr birimine ait diğer notlar</h2>
+
+<ul>
+  <li>
+    <p>fr birimi sadece tam sayılar değil ondalık sayılarda da kullanılır. (Örnek: 1.5fr, 3.5fr gibi)</p>
+  </li>
+  <li>
+    <p>fr birimi sadece kapsayıcı grid için kullanılabilir bir birimdir. Belki ilerde yaygınlaşabilir.</p>
+  </li>
+  <li>
+    <p>fr birimi güzel imkanları olan bir birim. Bu güzel özelliği calc() ile kullanmak mümkün değil. Bunun nedeni fr birimi bir değer olarak değil esnek bir değer olarak tanımlanması.</p>
+  </li>
+  <li>
+    <p>fr birimi kullanılabilir boş alanı kullanır ancak hiçbir zaman kapsayıcı grid’in minimum genişliğinden küçük olamaz.</p>
+  </li>
+  <li>
+    <p>fr birimi boşlukları doldurur ancak asla satır veya kolon içeriğinden daha küçük olamaz.</p>
+  </li>
+</ul>
+
+<p>Yardımlarından dolayı <a href="https://twitter.com/serkanbektasim">Serkan Bektaş</a>‘a teşekkürlerimi sunarım.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://alligator.io/css/css-grid-layout-fr-unit/">https://alligator.io/css/css-grid-layout-fr-unit/</a></li>
+  <li><a href="https://www.smashingmagazine.com/2018/05/future-of-web-design/">https://www.smashingmagazine.com/2018/05/future-of-web-design/</a></li>
+  <li><a href="https://www.hongkiat.com/blog/css-grid-layout-fr-unit/">https://www.hongkiat.com/blog/css-grid-layout-fr-unit/</a></li>
+  <li><a href="https://css-tricks.com/introduction-fr-css-unit/">https://css-tricks.com/introduction-fr-css-unit/</a></li>
+  <li><a href="https://www.youtube.com/watch?v=ZPtpzuRajzM">https://www.youtube.com/watch?v=ZPtpzuRajzM</a></li>
+  <li><a href="https://medium.com/@r_tripti/css-grids-all-about-fr-units-36b7b5fea661">https://medium.com/@r_tripti/css-grids-all-about-fr-units-36b7b5fea661</a></li>
+  <li><a href="https://medium.com/flexbox-and-grids/what-you-didnt-know-about-the-css-fractional-unit-580bd62647e8">https://medium.com/flexbox-and-grids/what-you-didnt-know-about-the-css-fractional-unit-580bd62647e8</a></li>
+  <li><a href="https://codepen.io/bmarshall/pen/EmGmZr">https://codepen.io/bmarshall/pen/EmGmZr</a></li>
+  <li><a href="https://www.smashingmagazine.com/2017/06/building-production-ready-css-grid-layout/">https://www.smashingmagazine.com/2017/06/building-production-ready-css-grid-layout/</a></li>
+  <li><a href="https://codepen.io/bmarshall/pen/EmGmZr">https://codepen.io/bmarshall/pen/EmGmZr</a></li>
+  <li>danwebb.co/journal/how-to-build-complicated-grids-using-css-grid</li>
+  <li><a href="https://university.webflow.com/article/the-fr-unit">https://university.webflow.com/article/the-fr-unit</a></li>
+  <li><a href="https://ethanmarcotte.com/wrote/fractional/">https://ethanmarcotte.com/wrote/fractional/</a></li>
+  <li><a href="https://scotch.io/tutorials/getting-started-with-css-grid-layout#toc-the-fr-unit-fraction-">https://scotch.io/tutorials/getting-started-with-css-grid-layout#toc-the-fr-unit-fraction-</a></li>
+  <li><a href="https://www.smashingmagazine.com/2018/01/understanding-sizing-css-layout/">https://www.smashingmagazine.com/2018/01/understanding-sizing-css-layout/</a></li>
+</ul>
+:ET
