@@ -1,0 +1,69 @@
+I"<p>Yaklaşık 6 sene önce bu başlığa yakın bir başlık ile bir makale yazmışım. <a href="https://fatihhayrioglu.com/yatay-ve-dikeyde-ortali-alanlar-olusturmak/">Yatay ve Dikeyde Ortalı Alanlar Oluşturmak</a> yeni gelen özellikler ile bu kodu daha basit nasıl yapabilirim diye bakınırken <a href="https://fatihhayrioglu.com/yenilenmis-flex-modulu/">flexbox</a> özelliği aklıma geldi.</p>
+
+<p>Peki flexbox ile bu işi nasıl yaparım.</p>
+
+<p>HTML kodu aynı olsun;</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td> --><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"orta-alan"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Fatih Hayrioğlu'nun not defteri<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bazı ufak değişiklikler var. Eskiden <strong>id</strong> ve <strong>camelCase</strong> iken şimdi <strong>class</strong> ve <strong>kebap-case</strong>‘e geçtim.</p>
+
+<p>CSS kodunun başında değişen bir şey yok.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td> --><td class="rouge-code"><pre><span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">body</span><span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span><span class="m">#D2D2D2</span><span class="p">;</span>
+  <span class="nl">font</span><span class="p">:</span><span class="m">24px</span> <span class="s1">"Trebuchet MS"</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span><span class="m">#333333</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Değişen kısım.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td> --><td class="rouge-code"><pre><span class="nc">.orta-alan</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>align-items: center;</strong> dikeyde ortalamak için, <strong>justify-content: center;</strong> yatayda ortalamak için yeterli. Tabi bu elemanın flex olduğunu göstermek için <strong>display: flex;</strong> tanımını başta yapmalıyız.</p>
+
+<p>Genişlik ve yükseklik burada tam sayfa kullandığımız için 100% verildi. Tabi siz istediğiniz genişlik ve yükseklik tanımını yaparak çalışabilirsiniz.</p>
+
+<iframe height="265" scrolling="no" src="//codepen.io/fatihhayri/embed/KrOJgO/?height=265&amp;theme-id=light&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
+</iframe>
+
+<p>Kalın sağlıcakla.</p>
+:ET

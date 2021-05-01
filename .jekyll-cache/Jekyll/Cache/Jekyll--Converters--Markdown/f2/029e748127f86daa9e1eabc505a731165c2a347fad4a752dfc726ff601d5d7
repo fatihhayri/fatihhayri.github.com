@@ -1,0 +1,180 @@
+I"�;<p><a href="/bootstrap-izgara-Grid-sistemi-1/">İlk makalede</a> genel ızgara yapısı ve bootstrap ızgara yapısının ana elemanlarından bahsettim. Bu makalede bootstrap ızgara yapısının detaylarına değineceğim.</p>
+
+<h2 id="farklı-yükseklikte-kutular-için-satır-yapısını-koruma">Farklı yükseklikte kutular için satır yapısını koruma</h2>
+
+<p>Kutular <code class="language-plaintext highlighter-rouge">float:left</code> ile yan yana dizildiğinde kutulardan birinin yüksekliği fazla ise satır yapısı bozulur. Aşağıdaki örneği büyük pencere açınız.</p>
+
+<iframe height="268" scrolling="no" src="//codepen.io/fatihhayri/embed/KzaXNw/?height=268&amp;theme-id=13521&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;"></iframe>
+
+<p>Görüldüğü gibi yüksekliği fazla olan 2. kutu satır dizilimini bozuyor. Bootstrap’in bunun için çözümü çok kolay.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix visible-md-block"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Yukarıdaki kod bloğunu kodumuza eklediğimizde satır yapımız korunacaktır. <code class="language-plaintext highlighter-rouge">visible-md-block</code> kısmı hangi ekran boyutunda bu satırın işlevsel hale geleceğini gösterir.</p>
+
+<iframe height="268" scrolling="no" src="//codepen.io/fatihhayri/embed/ONxrZL/?height=268&amp;theme-id=13521&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
+</iframe>
+
+<h2 id="i̇ç-içe-kolon-kullanımı">İç içe kolon kullanımı</h2>
+
+<p>Bootstrap ızgara yapısı iç içe kolon kullanımını destekler. Genelde sitelerimiz tek kolonlu yapılarından oluşmaz. İç içe kolonların olduğu daha karışık planlardan oluşur. Bu durumda nasıl bir yol izlemeliyiz?</p>
+
+<iframe height="226" scrolling="no" src="//codepen.io/fatihhayri/embed/MyrdZO/?height=226&amp;theme-id=13521&amp;default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
+</iframe>
+
+<p>Yukarıdaki örnekte görüldüğü gibi iç içe kullanımda aynı ızgara elemanları kullanılıyor. Sadece daha önce <code class="language-plaintext highlighter-rouge">container</code> tanımı yapıldığı için tekrar yapılmıyor. İçerideki kolon tanımına başlarken direk <code class="language-plaintext highlighter-rouge">row</code> tanımı ile başlıyoruz.</p>
+
+<h2 id="kolonları-denkleştirme-offsetting">Kolonları denkleştirme (Offsetting)</h2>
+
+<p>Bootstrap’in <code class="language-plaintext highlighter-rouge">.col-md-offset-*</code> sınıflarını kullanarak kolonları sağa doğru atabiliriz. Izgara yapısından kolonları soldan hizalamak veya denkleştirmek için margin kullanmak yerine  <code class="language-plaintext highlighter-rouge">.col-md-offset-*</code> sınıfını kullanırız.</p>
+
+<iframe height="130" scrolling="no" src="//codepen.io/fatihhayri/embed/GZybKo/?height=130&amp;theme-id=13521&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
+</iframe>
+
+<p>Yukarıdaki örnekte görüldüğü gibi ikinci satırdaki kolon soldan 4 kolonluk sağa doğru atıldı. Bunun için <code class="language-plaintext highlighter-rouge">col-sm-offset-4</code> kullandık.</p>
+
+<h2 id="kolon-sıralama">Kolon sıralama</h2>
+
+<p>Uyumlu web uygulamalarında can sıkan durumlardan bir tanesi büyük ekranlarda sağda olan bir kutu küçük ekranlarda sola yaslanması durumudur. Tabi bu tip anaçatıların avantajı tüm bu sorunlara bir çözüm oluşturmalarıdır.</p>
+
+<p>Çözüm yine bir sınıf tanımlamak kadar kolay. Boostrap class yapılarından bildiğimiz <code class="language-plaintext highlighter-rouge">.col-xs-#</code>, <code class="language-plaintext highlighter-rouge">.col-sm-#</code>, <code class="language-plaintext highlighter-rouge">.col-md-#</code>, and <code class="language-plaintext highlighter-rouge">.col-lg-#</code> kullanımlarının sonuna soldan sağa ötelemek için push, sağdan sola çekmek için pull eklemelerini kullanıyoruz. Örneğin cep telefonlarında bir yer değiştirme yapacaksak <code class="language-plaintext highlighter-rouge">.col-xs-push-#</code> or <code class="language-plaintext highlighter-rouge">.col-xs-pull-#</code> diyelerine yerine ise kaç kolon öteleneceğini yazmamız yeterli.</p>
+
+<p>Bir örnek ile konuyu pekiştirelim. Örneğin cep telefonu ekranında üstte iki kutu altında bir kutu şeklinde olan bir sayfa yapımız olsun. Geniş ekranlara bu üç kutuyu yan yana koyalım ve alttaki 3. kutuyu iki kutu arasına koyalım.</p>
+
+<iframe height="266" scrolling="no" src="//codepen.io/fatihhayri/embed/jqXxqR/?height=266&amp;theme-id=light&amp;default-tab=html,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
+</iframe>
+
+<p>Örneği geniş ekran ve küçük ekranlarda deneyelim. Süper.  Mobile öncelik vermeyi unutmayalım.</p>
+
+<h2 id="kullanışlı-sınıf-tanımları">Kullanışlı sınıf tanımları</h2>
+
+<p>Boostrap uyumlu web için bazı hazır CSS sınıfları bize sunar. Bazı durumlarda bazı elemanları göstermek veya gizlemek isteriz. Bun işi yapmak için boostrap yine bize kullanışlı sınıflar sağlar.</p>
+
+<p>Sadece bir ekran boyutunda göstermek için <code class="language-plaintext highlighter-rouge">.visible-xs-#</code>, <code class="language-plaintext highlighter-rouge">.visible-sm-#</code>, <code class="language-plaintext highlighter-rouge">.visible-md-#</code> ve <code class="language-plaintext highlighter-rouge">.visible-lg-#</code> sınıflarını bize sunar. Buradaki diyez (#) yerine göstereceğimiz elemanın display özelliğine göre <code class="language-plaintext highlighter-rouge">inline</code>, <code class="language-plaintext highlighter-rouge">block</code> ve <code class="language-plaintext highlighter-rouge">inline-block</code> değerine göre değişir. Örnek olarak farklı kutu yükseklikleri bölümünde ki kullanımı gösterebiliriz.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;div class="clearfix visible-md-block visible-lg-block"&gt;&lt;/div&gt;</code></p>
+
+<p>Aynı şekilde gizlemek için de sınıflar mevcuttur. <code class="language-plaintext highlighter-rouge">.hidden-xs</code>, <code class="language-plaintext highlighter-rouge">.hidden-sm</code>, <code class="language-plaintext highlighter-rouge">.hidden-md</code> ve <code class="language-plaintext highlighter-rouge">.hidden-lg</code> Farklılık dikkatinizi çekmiştir. Göstermenin aksine gizlemede elemanın <code class="language-plaintext highlighter-rouge">blok</code> veya <code class="language-plaintext highlighter-rouge">inline-blok</code> olmasının bir önemi olmadığı için bu kısım kaldırılmıştır.</p>
+
+<p>Son olarak yazıcı görünümünde gizleme ve gösterme içinde sınıflar vardır. <code class="language-plaintext highlighter-rouge">.visible-print-block</code>, <code class="language-plaintext highlighter-rouge">.visible-print-inline</code>, <code class="language-plaintext highlighter-rouge">.visible-print-inline-block</code> ve <code class="language-plaintext highlighter-rouge">.hidden-print</code> sınıflarıda kullanışlı sınıflardır.</p>
+
+<h2 id="anlamlı-kodlama">Anlamlı kodlama</h2>
+
+<p>Buraya kadar boostrap’in genel kullanımını gösterdik. Okunabilir kodlama için anlamlı sınıflar tanımlamak bize avantajlar sağlar. Örneğin Bir sayfayı kodlarken “Neden Zingat Enerji” bölümüm var. Boostrap genel kullanımı ile burayı kodlamak istesem kodlarım aşağıdaki gibi olacaktı.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>NEDEN ZİNGAT ÜST SIRA ENERJİSİ?<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>ÜSTE ÇIKSIN<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p&gt;</span>İlanınız diğer ilanların üstünde...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>DİKKAT ÇEKSİN<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p&gt;</span>İlanınız daha fazla ziyaretçinin...<span class="nt">&lt;/p</span>
+  <span class="err">&lt;/div</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>KOLAY ULAŞILSIN<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Gayrimenkul arayanlar hem...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bunun yerine</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"neden-zingat-enerji"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>NEDEN ZİNGAT ÜST SIRA ENERJİSİ?<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ustte-ciksin"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>ÜSTE ÇIKSIN<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p&gt;</span>İlanınız diğer ilanların üstünde...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dikkat-ceksin"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>DİKKAT ÇEKSİN<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p&gt;</span>İlanınız daha fazla ziyaretçinin...<span class="nt">&lt;/p</span>
+  <span class="err">&lt;/div</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"kolay-ulasilsin"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>KOLAY ULAŞILSIN<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Gayrimenkul arayanlar hem...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Şeklinde sınıfları anlaşılır yaptığımda kodu okurken daha hızlı anlıyorum. Less dosyasında kodlama yaparken anlamlı sınıf isimleri kod hızımı arttırıyor. Tabi tercih meselesi. Ama çok fazla kod yığınının olduğu yerlerde kodlama yaparken anlamlı kodlama yapmak şart.</p>
+
+<h2 id="bootstrap-4-ızgara-sistemi">Bootstrap 4 ızgara sistemi</h2>
+
+<p>Şimdiye kadar anlattığım Bootstrap 3.x kullanımıydı. Bootstrap geliştiricileri 4. alfa sürümünü çıkardılar. Genel itibari ile bütün kısımlar oturmuş gibi. Beta ve yayın sürüçlerinde değişiklikler olsa da genel olarak bu yapı korunur.</p>
+
+<p>Bootstrap 4 birçok yenilik barındırıyor. En çarpıcı yeniliklerden birisi de ızgara yapısını artık sadece <strong>float</strong> ile değil de <strong>flexbox</strong> üzerinden yapmayada imkan sağlıyor olmaları. CSS3 ile gelen bu güzel özelliğin seçilmesi doğru karar.</p>
+
+<p>Flexbox kullanmak için <code class="language-plaintext highlighter-rouge">_variables.scss</code> dosyasında;</p>
+
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$enable-flex</span><span class="p">:</span> <span class="bp">true</span> <span class="o">!</span><span class="nb">default</span><span class="err">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>yapmak yeterli.</p>
+
+<p>Ayrıca CSS önderleyici olarak artık LESS değil SASS kullanma kararı almışlar.</p>
+
+<p>Bootstrap 4 ızgara yapısı hakkında daha fazla deneyimim oldukça bu konuda da yazı yazarım.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a></li>
+  <li><a href="http://www.adobewordpress.com/ders-2-bootstrap-grid-izgara-yapisi">http://www.adobewordpress.com/ders-2-bootstrap-grid-izgara-yapisi</a></li>
+  <li><a href="https://www.youtube.com/watch?v=yhpE4U3acqI">https://www.youtube.com/watch?v=yhpE4U3acqI</a></li>
+  <li><a href="http://usablica.github.io/front-end-frameworks/compare.html">http://usablica.github.io/front-end-frameworks/compare.html</a></li>
+  <li><a href="http://www.sitepoint.com/understanding-bootstrap-grid-system/">http://www.sitepoint.com/understanding-bootstrap-grid-system/</a></li>
+  <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php">http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php</a></li>
+  <li><a href="http://shoelace.io/">http://shoelace.io/</a></li>
+  <li>http://blog.jetstrap.com/2013/08/bootstrap-3-grids-explained/</li>
+  <li><a href="https://scotch.io/tutorials/reorder-css-columns-using-bootstrap">https://scotch.io/tutorials/reorder-css-columns-using-bootstrap</a></li>
+  <li><a href="http://stackoverflow.com/a/18070242/296373">http://stackoverflow.com/a/18070242/296373</a></li>
+  <li><a href="https://getbootstrap.com/docs/4.0/utilities/flex/">https://getbootstrap.com/docs/4.0/utilities/flex/</a></li>
+  <li><a href="http://designmodo.com/bootstrap-4-flexbox/">http://designmodo.com/bootstrap-4-flexbox/</a></li>
+  <li><a href="https://scotch.io/bar-talk/whats-new-in-bootstrap-4">https://scotch.io/bar-talk/whats-new-in-bootstrap-4</a></li>
+</ul>
+:ET

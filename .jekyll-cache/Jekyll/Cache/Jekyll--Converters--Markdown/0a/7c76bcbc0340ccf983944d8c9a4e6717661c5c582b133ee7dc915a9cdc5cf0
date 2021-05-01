@@ -1,0 +1,218 @@
+I"@J<ol>
+  <li><a href="https://fatihhayrioglu.com/css-grid-giris/">CSS Grid’e (Izgara) Giriş</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-grid-ozellikleri/">CSS Grid Özellikleri</a></li>
+  <li><a href="https://fatihhayrioglu.com/fr-birimi/">fr birimi</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-izgara-cizgi-isimlendirmesi-ve-kullanimi/">CSS Izgara çizgi isimlendirmesi ve kullanımı</a></li>
+  <li><a href="https://fatihhayrioglu.com/sayfa-planlama-sihirbazi-grid-template-areas/" title="Sayfa planlama sihirbazı grid-template-areas">Sayfa planlama sihirbazı grid-template-areas</a></li>
+  <li><a href="https://fatihhayrioglu.com/explicit-belirlenmis-ve-implicit-belirlenmemis-grid-ogeleri/">Explicit(belirlenmiş) ve implicit(belirlenmemiş) grid ögeleri</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-minmax-islevsel-degeri/">CSS minmax işlevsel değeri</a></li>
+  <li><a href="https://fatihhayrioglu.com/repeat-islevi-auto-fill-ve-auto-fit-degerleri/">repeat() işlevi, auto-fill ve auto-fit değerleri</a></li>
+  <li><a href="/css-grid-oge-ozellikleri/">CSS Grid öge özellikleri</a></li>
+  <li><a href="/grid-hizalama-ve-siralama-islemleri/">Grid hizalama ve sıralama işlemleri</a></li>
+</ol>
+
+<p>CSS grid yazılarımızın 11.sindeyiz. CSS grid modülünün öğrenilmesi diğer CSS modüllerine göre daha zor ve karışık. Toplamda 17 adet tanım olduğu düşünülürse bu karmaşa daha iyi anlaşılır. Bu tanımları azaltmak için kısaltmalar kullanılmıştır. Buraya kadar yazdığımız makalelerde yeri geldikçe bu kısaltmalardan bahsettik. Şimdiye kadar bahsettiğimiz kısaltmalar:</p>
+
+<ul>
+  <li><a href="/css-grid-oge-ozellikleri/"><code class="language-plaintext highlighter-rouge">grid-column-start</code> ve <code class="language-plaintext highlighter-rouge">grid-column-end</code> kısaltması <code class="language-plaintext highlighter-rouge">grid-column</code></a></li>
+  <li><a href="/css-grid-oge-ozellikleri/"><code class="language-plaintext highlighter-rouge">grid-row-start</code> ve <code class="language-plaintext highlighter-rouge">grid-row-end</code> kısaltması <code class="language-plaintext highlighter-rouge">grid-row</code></a></li>
+  <li><a href="/css-grid-oge-ozellikleri/"><code class="language-plaintext highlighter-rouge">grid-column</code> ve <code class="language-plaintext highlighter-rouge">grid-row </code>kısaltması <code class="language-plaintext highlighter-rouge">grid-area</code></a></li>
+  <li><a href="/grid-hizalama-ve-siralama-islemleri/"><code class="language-plaintext highlighter-rouge">align-content</code> ve <code class="language-plaintext highlighter-rouge">justify-content</code> kısaltması <code class="language-plaintext highlighter-rouge">place-content</code></a></li>
+  <li><a href="/grid-hizalama-ve-siralama-islemleri/"><code class="language-plaintext highlighter-rouge">align-items</code> ve <code class="language-plaintext highlighter-rouge">justify-items</code> kısaltması <code class="language-plaintext highlighter-rouge">place-items</code></a></li>
+  <li><a href="/grid-hizalama-ve-siralama-islemleri/"><code class="language-plaintext highlighter-rouge">align-self</code> ve <code class="language-plaintext highlighter-rouge">justify-self</code> kısaltması <code class="language-plaintext highlighter-rouge">place-self</code></a></li>
+  <li><a href="https://fatihhayrioglu.com/css-grid-ozellikleri/"><code class="language-plaintext highlighter-rouge">grid-gap-column</code> ve <code class="language-plaintext highlighter-rouge">grid-gap-row </code>kısayolu <code class="language-plaintext highlighter-rouge">grid-gap</code></a></li>
+</ul>
+
+<p>Bu yazımızda ise</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">grid-template</code></li>
+  <li><code class="language-plaintext highlighter-rouge">grid</code></li>
+</ul>
+
+<p>kısaltmalarından bahsedeceğiz.</p>
+
+<h2 id="grid-template-kısaltması">grid-template kısaltması</h2>
+
+<p><code class="language-plaintext highlighter-rouge">grid-template-columns</code>, <code class="language-plaintext highlighter-rouge">grid-template-rows</code> ve <code class="language-plaintext highlighter-rouge">grid-template-area</code> özelliklerinin kısaltmasıdır.</p>
+
+<p>Bu özelliklerin tanımını ve kullanımını <a href="https://fatihhayrioglu.com/css-grid-ozellikleri/" title="CSS Grid Özellikleri">CSS Grid Özellikleri</a> yazımızda anlatmıştık.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nc">.kapsul</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">auto</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
+    <span class="py">grid-template-rows</span><span class="p">:</span> <span class="nb">auto</span> <span class="m">1</span><span class="n">fr</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>tanımını aşağıdaki şekilde kısaltabiliriz.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="c">/* grid-template-rows / grid-template-columns */</span>
+<span class="nc">.kapsul</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="nl">grid-template</span><span class="p">:</span> <span class="nb">auto</span> <span class="m">1</span><span class="n">fr</span> <span class="nb">auto</span> <span class="p">/</span> <span class="nb">auto</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid-template kısayolu" src="https://codepen.io/fatihhayri/embed/abzWKRo?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+</iframe>
+
+<p><code class="language-plaintext highlighter-rouge">grid-template-areas</code> tanımını da bu kısaltma içinde kullanabiliyoruz.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="c">/* grid-template-areas grid-template-rows / grid-template-columns */</span>
+  <span class="nt">grid-template</span><span class="o">:</span> 
+            <span class="s1">"menu ust ust"</span> <span class="err">4</span><span class="nt">ch</span>
+            <span class="s1">"menu icerik icerik"</span> <span class="nt">auto</span>
+            <span class="s1">"baner alt alt"</span> <span class="err">4</span><span class="nt">em</span> <span class="o">/</span> <span class="err">20</span><span class="o">%</span> <span class="err">20</span><span class="nt">px</span> <span class="err">1</span><span class="nt">fr</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu kodun açık hali</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">grid-template-rows</span><span class="o">:</span> <span class="err">4</span><span class="nt">ch</span> <span class="nt">auto</span> <span class="err">4</span><span class="nt">em</span><span class="o">;</span>
+<span class="nt">grid-template-columns</span><span class="o">:</span> <span class="err">20</span><span class="o">%</span> <span class="err">20</span><span class="nt">px</span> <span class="err">1</span><span class="nt">fr</span><span class="o">;</span>
+<span class="nt">grid-template-areas</span><span class="o">:</span> <span class="s1">"menu ust ust"</span> <span class="s1">"menu icerik icerik"</span> <span class="s1">"baner alt alt"</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>şeklindedir.</p>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid-template kısayolu - 2" src="https://codepen.io/fatihhayri/embed/PowmayK?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+</iframe>
+
+<p>Firefox, CSS <strong>grid</strong> ve <strong>flex</strong> konusunda diğer tarayıcılara göre daha iyi araçlar sunuyor. Grid kısayollarını kullanırken açık halini görmek çok kolay. Tanımın yanındaki sağ ok butonuna tıklayınca tek tek tanımını gösteriyor.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/grid-template-firefox.png" alt="grid kısayolu detayı" loading="lazy" /></p>
+
+<h2 id="grid-kısaltması">grid kısaltması</h2>
+
+<p>Grid kısaltması sadece tanımlı ve tanımsız grid atamalarını kısaltır. CSS grid alt özellikleri bu kısaltma kapsamında değildir. Ara boşluk değerini (gap) bu kısaltma ile sıfırlanamaz.</p>
+
+<p><strong>Belirlenmiş (explicit) tanımlar:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">grid-template-columns</code></li>
+  <li><code class="language-plaintext highlighter-rouge">grid-template-rows</code></li>
+  <li><code class="language-plaintext highlighter-rouge">grid-template-areas</code></li>
+</ul>
+
+<p><strong>Belirlenmemiş (implicit) tanımlar:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">grid-auto-rows</code></li>
+  <li><code class="language-plaintext highlighter-rouge">grid-auto-columns</code></li>
+  <li><code class="language-plaintext highlighter-rouge">grid-flow</code></li>
+</ul>
+
+<p>Yukarıda sıralanan tanımların kısayolu olarak <code class="language-plaintext highlighter-rouge">grid</code> tanımını kullanabiliriz.</p>
+
+<p>İlk örneğimizi <code class="language-plaintext highlighter-rouge">grid-template-x</code>tanımlarının kısayolu olarak kullanımı için yapalım.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">.container</span>  <span class="p">{</span> 
+    <span class="py">grid</span><span class="p">:</span> <span class="m">100px</span> <span class="m">300px</span> <span class="p">/</span> <span class="m">3</span><span class="n">fr</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>kodunun açılımı:</p>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 1" src="https://codepen.io/fatihhayri/embed/VwYWppB?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+</iframe>
+
+<p>Bir başka örnek explicit (<strong>belirlenmiş</strong>) ve implicit(<strong>belirlenmemiş</strong>) tanımların birlikte kullanımına yapalım.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nc">.kapsul</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="py">grid-template-rows</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">3</span><span class="p">,</span> <span class="p">[</span><span class="n">line1</span> <span class="n">line2</span> <span class="n">line3</span><span class="p">]</span> <span class="m">150px</span><span class="p">);</span>
+    <span class="py">grid-auto-columns</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="py">grid-auto-flow</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Kısaltırsak:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nc">.kapsul</span>  <span class="p">{</span>
+    <span class="c">/* &lt;'grid-template-rows'&gt; /
+   [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-columns'&gt;? values */</span>
+   <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+   <span class="py">grid</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">3</span><span class="p">,</span> <span class="p">[</span><span class="n">line1</span> <span class="n">line2</span> <span class="n">line3</span><span class="p">]</span> <span class="m">150px</span><span class="p">)</span> <span class="p">/</span> <span class="n">auto-flow</span> <span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 2" src="https://codepen.io/fatihhayri/embed/BayZWRX?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+</iframe>
+
+<p>Bir başka örnek:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nc">.kapsul</span>  <span class="p">{</span> 
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">3</span><span class="p">,</span> <span class="p">[</span><span class="n">line1</span> <span class="n">line2</span><span class="p">]</span> <span class="n">minmax</span><span class="p">(</span><span class="m">20em</span><span class="p">,</span> <span class="n">max-content</span><span class="p">));</span>
+    <span class="py">grid-auto-rows</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+    <span class="py">grid-auto-flow</span><span class="p">:</span> <span class="n">dense</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Kısaltması:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nc">.kapsul</span>  <span class="p">{</span> 
+    <span class="py">grid</span><span class="p">:</span> <span class="n">auto-flow</span> <span class="n">dense</span> <span class="m">50px</span> <span class="p">/</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">3</span><span class="p">,</span> <span class="p">[</span><span class="n">line1</span> <span class="n">line2</span> <span class="n">line3</span><span class="p">]</span> <span class="n">minmax</span><span class="p">(</span><span class="m">20em</span><span class="p">,</span> <span class="n">max-content</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 3" src="https://codepen.io/fatihhayri/embed/oNgwZey?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+</iframe>
+
+<p>CSS kısayolları kullanmayı severim ancak CSS grid kısayollarındaysa aynı şeyi söyleyemeyeceğim. Bu biraz da grid ile yeni yeni kodluyor olmamızdan  kaynaklanıyor olabilir. Grid kısayolu kullandığımızda kodumuz ilk bakışta anlamsız bir kod yığını gibi duruyor. Bu kodu bir editör ile yönetiyorsanız sorun değil ama kendiniz yazıp yönetecekseniz sıkıntı. Belli bir süre açık halini kullanıp iyice aşina olduktan sonra kısayolları kullanabiliriz.</p>
+
+<p>Yardımlarından dolayı <a href="https://twitter.com/serkanbektasim">Serkan Bektaş</a>‘a teşekkürlerimi sunarım.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template">https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template</a></li>
+  <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a></li>
+  <li><a href="https://gridbyexample.com/learn/2016/12/22/learning-grid-day22/">https://gridbyexample.com/learn/2016/12/22/learning-grid-day22/</a></li>
+  <li><a href="https://cssreference.io/property/grid-template/">https://cssreference.io/property/grid-template/</a></li>
+  <li><a href="https://www.quackit.com/css/css3/properties/css_grid-template.cfm">https://www.quackit.com/css/css3/properties/css_grid-template.cfm</a></li>
+  <li><a href="https://tympanus.net/codrops/css_reference/grid/#section_grid-template">https://tympanus.net/codrops/css_reference/grid/#section_grid-template</a></li>
+  <li><a href="https://www.geeksforgeeks.org/css-grid-template-property/">https://www.geeksforgeeks.org/css-grid-template-property/</a></li>
+  <li><a href="https://webdesign.tutsplus.com/tutorials/save-time-with-the-css-grid-shorthand-property--cms-31590">https://webdesign.tutsplus.com/tutorials/save-time-with-the-css-grid-shorthand-property–cms-31590</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout</a></li>
+  <li><a href="https://cssreference.io/property/grid/">https://cssreference.io/property/grid/</a></li>
+  <li><a href="https://tympanus.net/codrops/css_reference/grid/#section_grid">https://tympanus.net/codrops/css_reference/grid/#section_grid</a></li>
+  <li><a href="https://www.quackit.com/css/css3/properties/css_grid.cfm">https://www.quackit.com/css/css3/properties/css_grid.cfm</a></li>
+</ul>
+:ET

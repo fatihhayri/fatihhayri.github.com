@@ -1,0 +1,67 @@
+I"�<p>Yaklaşık bir hafta önce flex hakkında Bursa’da Girişimci Engelliler Derneği’nin davetlisi olarak bir seminere gittim. Seminer çok güzel geçti. Seminer için <a href="https://twitter.com/bulentsakarya">Bülent Sakarya</a> ve Samet Şahin’e teşekkürler. Seminere katılan arkadaşlara bir şeyler anlatmak için hazırlanırken ben bir şeyler öğrendim. Bu makalede bunları sizlerle paylaşacağım.</p>
+
+<blockquote class="twitter-tweet" data-lang="tr"><p lang="tr" dir="ltr"><a href="https://t.co/pxYirymXug">https://t.co/pxYirymXug</a>&#39;dan Fatih Hayrioğlu CSS Flex anlatıyor. <a href="https://t.co/u8DyNAe3jg">pic.twitter.com/u8DyNAe3jg</a></p>&mdash; Bülent Sakarya (@bulentsakarya) <a href="https://twitter.com/bulentsakarya/status/957234288390561792?ref_src=twsrc%5Etfw">27 Ocak 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Flex’in bize kazandırdığı en güzel özelliklerden birisi de hizalama özellikleri. Burada anlatacağım konu <code class="language-plaintext highlighter-rouge">flex</code> ile <code class="language-plaintext highlighter-rouge">margin</code> tanımının <code class="language-plaintext highlighter-rouge">auto</code> değerinin birlikte kullanımı ile ortaya çıkan süper bir özellik.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/yatay-flex-auto-ornegi.png" alt="flex ve margin auto" /></p>
+
+<p><a href="https://zingat.com">zingat.com</a>‘dan bir örnek ile bu konuyu anlatmaya başlıyayım. Yukarıda gördüğünüz sonucu normal float ile oluşturmak için bazı değişiklikler yapmak gerekiyor. Örneğin ikonları sahte elemanlarda kullanmak zorunda olmamız gibi. Flexi le bunu yapmanın kolay bir yolu var.</p>
+
+<iframe height="300" scrolling="no" title="Flex ve margin auto" src="//codepen.io/fatihhayri/embed/OQNYyZ/?height=300&amp;theme-id=13521&amp;default-tab=result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/OQNYyZ/">Flex ve margin auto</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Kapsayıcı elemana flex tanımı yaptığımızda ögelerin her birini yan yana dizildi. Bizim istediğimiz ise harita (map) ikonu ve kilometre bilgisini sağa tarafa hizalaması. Burada ortaya <code class="language-plaintext highlighter-rouge">margin-left: auto;</code> ile ikon ve yazıyı sağ tarafa hizalıyoruz. Daha doğru bir tanım ile harita ikonunun sol yanını autoya çekiyoruz.</p>
+
+<iframe height="300" scrolling="no" title="Flex ve margin auto" src="//codepen.io/fatihhayri/embed/GQZaWx/?height=300&amp;theme-id=13521&amp;default-tab=result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/GQZaWx/">Flex ve margin auto</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Sonuç istediğimiz gibi. Bunu tek satır css kodu ile yaptık.</p>
+
+<p>Aynı mantıkla başka bir örnek yapalım. Örneğimizde bir menü yaptığımızı düşünelim. Seminerde twitter menüsünü örnek vermiştim. Örneği burada da paylaşayım.</p>
+
+<iframe height="296" scrolling="no" title="Flex margin auto twitter menü" src="//codepen.io/fatihhayri/embed/qxNdON/?height=296&amp;theme-id=13521&amp;default-tab=result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/qxNdON/">Flex margin auto twitter menü</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Kodun can alıcı kısmı</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td> --><td class="rouge-code"><pre><span class="nc">.twitter</span> <span class="p">{</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>kısmıdır. Flex ile sıraladığımız menü elemanlarından twitter sınıfı tanımlı olanı ortada kalan boşlukta ortalamak için sadece iki satır kod yazdık. :)</p>
+
+<h2 id="dikey-örnekler">Dikey örnekler</h2>
+
+<p>Dikeyde benzer örnekler yapabiliriz. Zamanında uğraştığım için iyi biliyorum. livego’da çalışırken sol menü yapımında bu tip bir kod çok ihtiyaç duymuştum. Çok ciddi zamanımı almıştı sol ve sağ kolonlar.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/livegohome.jpg" alt="livego flex ve margin auto" /></p>
+
+<p>Şimdi aynı sonucu elde etmek sadece iki satır kod.</p>
+
+<iframe height="300" scrolling="no" title="YeWXve" src="//codepen.io/fatihhayri/embed/YeWXve/?height=300&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/YeWXve/">YeWXve</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Menü yüksekliğini ekran yüksekliğine eşitlemek için <code class="language-plaintext highlighter-rouge">height: 100vh</code> verdik. Yatayda kullandığımız gibi ilgili ögenin (.add-account) margin değerini auto yaptık. Bu sefer alta hizalamak için <code class="language-plaintext highlighter-rouge">margin-top: auto</code> tanımladık.</p>
+
+<p>Bu yöntemi birçok yerde kullanabiliriz. Süper bir kazanım.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://www.sitepoint.com/quick-tip-how-z-index-and-auto-margins-work-in-flexbox/">https://www.sitepoint.com/quick-tip-how-z-index-and-auto-margins-work-in-flexbox/</a></li>
+  <li><a href="https://hackernoon.com/flexbox-s-best-kept-secret-bd3d892826b6">https://hackernoon.com/flexbox-s-best-kept-secret-bd3d892826b6</a></li>
+  <li><a href="https://codepen.io/samserif/pen/KdrQaB?editors=1100">https://codepen.io/samserif/pen/KdrQaB?editors=1100</a></li>
+  <li><a href="https://codepen.io/goerk/pen/uFkny">https://codepen.io/goerk/pen/uFkny</a></li>
+  <li><a href="https://codepen.io/samserif/pen/KdrQaB?editors=1100">https://codepen.io/samserif/pen/KdrQaB?editors=1100</a></li>
+</ul>
+:ET

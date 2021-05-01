@@ -1,0 +1,74 @@
+I"�<p>HTML elementlerinin farklı tarayıcı ve ortamlardaki davranışlarını ortak hale getirmek için genelde reset css kodları kullanırız. meyer, normalizer vs.</p>
+
+<p>Aslında bu listelerde yapılan belirtilen elemanların değerlerini bilinen ortak değer ataması yapmaktır.</p>
+
+<p>CSS <code class="language-plaintext highlighter-rouge">all: unset</code> tanımıyla birlikte bir seçicinin tüm değerlerinin tarayıcının belirlediği başlangıç değerine veya kalıtsal değerine döndürmek çok kolay. Bu özellik aslında reset css ile yaptığımızı yapıyor. <code class="language-plaintext highlighter-rouge">unicode-bidi</code> ve <code class="language-plaintext highlighter-rouge">direction</code> hariç tarayıcıların belirlediği değerlere döndüren bir özellik. Bu özellik <code class="language-plaintext highlighter-rouge">inherit</code> ve <code class="language-plaintext highlighter-rouge">initial</code>‘ın birlikte kullanılmış halidir. Eğer kalıtsal bir değer alıyorsa kalıtsal değerine döndüren, kalıtsal değeri yoksa başlangıç değerine döndüren bir kısayoldur. CSS Değişkenlerine de etki etmez.</p>
+
+<p><code class="language-plaintext highlighter-rouge">unset</code> değeri tanımlanmış değerleri ve etkinlikleri (Specificity) daha düşük olan değerleri başlangıç değerine döndürür.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td> --><td class="rouge-code"><pre><span class="nc">.dunya</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="nl">font-size</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span> <span class="nl">margin</span><span class="p">:</span> <span class="m">40px</span><span class="p">;}</span>
+<span class="nc">.turkiye</span> <span class="p">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="m">32px</span><span class="p">;</span> <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.button</span> <span class="p">{</span> <span class="nl">border</span><span class="p">:</span> <span class="m">3px</span> <span class="nb">solid</span> <span class="no">red</span><span class="p">;</span> <span class="nl">background</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span> <span class="nl">font-size</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span> <span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span> <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.deneme</span> <span class="p">{</span> <span class="nl">all</span><span class="p">:</span> <span class="n">unset</span><span class="p">;</span> <span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>HTML kodu</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td> --><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dunya"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"turkiye"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"istanbul"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"pendik"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"deneme button"</span><span class="nt">&gt;</span>Deneme<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/strong&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Sonuç aşağıdaki gibi olacaktır.</p>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="all: unset test" src="https://codepen.io/fatihhayri/embed/oNNqMvX?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fatihhayri/pen/oNNqMvX">all: unset test</a> by Fatih 
+  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Farklı tanımlardan etkilenmiş button ögesi <code class="language-plaintext highlighter-rouge">all:unset</code> ile sıfırlanmıştır. Tek satır kod ile bunu yapabilmek çok güzel.</p>
+
+<p>İyi planlanmamış projelerde bazen bir elemana uygulanan atamaları sıfırlamak gerekiyor, bu gibi durumlar için çok süper özellik. Gönül ister ki projeler başta daha iyi planlansın ve bu tip ihtiyaçlar olmasın ama gerçek böyle olmuyor maalesef.</p>
+
+<p>Firefox geliştirme aracında çok güzel bir gösterme şekli var. <code class="language-plaintext highlighter-rouge">all:unset</code> ile değişen ve değiştiremediği (örnek color) değerleri gösteriyor.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/firefox-dev-unset.png" alt="all unset" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">all</code> özelliği bunun dışında <code class="language-plaintext highlighter-rouge">initial</code>, <code class="language-plaintext highlighter-rouge">inherit</code> ve <code class="language-plaintext highlighter-rouge">revert</code> değerleri alır. Bu değerler ve farklarını da başka bir makale yazsak iyi olur.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://drafts.csswg.org/css-cascade/#all-shorthand">https://drafts.csswg.org/css-cascade/#all-shorthand</a></li>
+  <li><a href="https://mcc.id.au/blog/2013/10/all-unset">https://mcc.id.au/blog/2013/10/all-unset</a></li>
+  <li><a href="https://css-tricks.com/almanac/properties/a/all/">https://css-tricks.com/almanac/properties/a/all/</a></li>
+  <li><a href="https://www.hongkiat.com/blog/css-shorthand-longhand-notations/">https://www.hongkiat.com/blog/css-shorthand-longhand-notations/</a></li>
+  <li><a href="https://tympanus.net/codrops/css_reference/all/">https://tympanus.net/codrops/css_reference/all/</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/all">https://developer.mozilla.org/en-US/docs/Web/CSS/all</a></li>
+  <li><a href="https://aastudio.fr/Don-t-forget-initial-inherit-and.html">https://aastudio.fr/Don-t-forget-initial-inherit-and.html</a></li>
+  <li><a href="https://www.bitdegree.org/learn/css-unset">https://www.bitdegree.org/learn/css-unset</a></li>
+</ul>
+:ET

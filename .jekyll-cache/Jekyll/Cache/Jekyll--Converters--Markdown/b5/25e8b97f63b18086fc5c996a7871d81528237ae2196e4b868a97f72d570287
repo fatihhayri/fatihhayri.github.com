@@ -1,0 +1,433 @@
+I"vm<p>CSS daha çok statik yetenekleri olan dinamik yetenekleri olmayan bir standarttır. Son zamanlarda bu statikliğinden sıyrılıp dinamik yetenekler kazanmaya başladı. CSS artık daha dinamik bir standart.</p>
+
+<p>Değişkenler yazılım dillerinden alışık olduğumuz öğelerdir. CSS Önişlemcileriyle (pre-processor) uzun zamandır değişkenleri kullanabilmekteyiz. Ancak bunların normal CSS değişkenlerine göre yetenekleri kısıtlı. Standart koyucular yani W3C CSS Variables değil de CSS Custom Properties demesinin sebepleri var. Aşağıda açıklayacağım özelliklerden dolayı bu özellik sadece bir değişken değil farklı yetenekleri olan özel bir CSS özelliğidir. Bizim alışkanlıklarımızdan dolayı CSS değişkenleri diyeceğim.</p>
+
+<p>CSS değişkenlerinin avantajlarını ikiye ayırmak lazım. Genel değişken avantajları ve Önişlemcilerinin değişkenlerine göre avantajları.</p>
+
+<p><strong>Genel değişken avantajları</strong></p>
+
+<ul>
+  <li>Kolay okunabilir kodlar üretmemizi sağlarlar. Örneğin <code class="language-plaintext highlighter-rouge">#FF0000</code> renk tanımı ilk görünümde bir şey ifade etmez ama <code class="language-plaintext highlighter-rouge">ana-renk</code> tanımı daha anlamlıdır.</li>
+  <li>Geliştirme ve yeniden yapılandırmayı basitleştirir. Örneğin tek bir değişiklik ile sitedeki tüm renkleri değiştirme imkanımız olur.</li>
+</ul>
+
+<p><strong>Önişlemci değişkenlerine göre avantajları</strong></p>
+
+<ul>
+  <li>Derlenmeye gerek yoktur.</li>
+  <li><strong>Dinamik olarak değiştirebiliriz. Örn: Medya sorgularına göre farklı değerler tanımlanabilir.</strong></li>
+  <li><strong>DOM ve CSSOM yeteneklerinden yararlanma imkanı.</strong></li>
+  <li><strong>Kalıtsal olarak aktarılma imkanı.</strong></li>
+  <li>Javascript ile erişebilme ve değiştirme imkanı.</li>
+</ul>
+
+<p>Kalın olarak belirttiklerim hakkında aşağıda daha detaylı bilgi vereceğim. Bu güzel özelliği öğrenmeye başlayalım.</p>
+
+<p>Örnek</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#FF0000</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#FF0000</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">span</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#FF0000</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Kodumuzun farklı yerlerinde bulunan renk tanımlarımız olsun. Bu tanımları tek bir değişkene atayıp kullandığımız bu yerlerde değişkeni kullanabiliriz.</p>
+
+<h2 id="css-değişken-sözdizimi">CSS değişken sözdizimi</h2>
+
+<p>Tanımlarken çift tire <code class="language-plaintext highlighter-rouge">--</code> ile başlayan bir tanım yapılır. Değişkeni kullanırken <code class="language-plaintext highlighter-rouge">var()</code> şeklinde kullanılır.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="nd">:root</span> <span class="p">{</span>
+    <span class="py">--anaRenk</span><span class="p">:</span> <span class="m">#FF0000</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--anaRenk</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--anaRenk</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">span</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--anaRenk</span><span class="p">);</span>
+<span class="p">}</span>  
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Tüm örnekler renk üzerinden veriliyor. Düzenli tasarlanmış sitelerde yazı tipleri, yazı boyutları ve mesafe (margin, padding) değerleri değişkenlere atanabilir. Bu sayede yönetimi ve yeniden yapılandırması daha kolay bir kod yapısı elde ederiz.</p>
+
+<p>CSS Önişlemcilerinin (pre-processor) değişken tanımları daha basit bence.</p>
+
+<h2 id="değişken-kapsamı">Değişken kapsamı</h2>
+
+<p>Javascript’ten alışık olduğumuz değişkenlerin etkin olduğu alanlar vardır. Tüm kodu etkileyen <strong>Genel değişkenler</strong> ve sadece belirli kod blokunu etkileyen <strong>yerel değişkenler</strong>.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre><span class="nd">:root</span> <span class="p">{</span>
+    <span class="py">--ana-renk</span><span class="p">:</span> <span class="m">#FF0000</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--ana-renk</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+    <span class="py">--ana-renk</span><span class="p">:</span> <span class="m">#000000</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--ana-renk</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">span</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--ana-renk</span><span class="p">);</span>
+<span class="p">}</span>  
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">:root</code> içinde tanımlanan değişkenler genel değişkenlerdir. <code class="language-plaintext highlighter-rouge">p</code> elementi içinde tanımlanan <code class="language-plaintext highlighter-rouge">--ana-renk</code> tanımı yerel bir tanımdır ve sadece bu paragrafı etkiler.</p>
+
+<p>Bir not olarak <code class="language-plaintext highlighter-rouge">:root</code> aslında <code class="language-plaintext highlighter-rouge">html</code> elementine karşılık geliyor.</p>
+
+<h2 id="kurtarma-değerleri">Kurtarma değerleri</h2>
+
+<p>CSS değişkenleri yeni standartlaşıyor. Bir çok tarayıcı şimdiden destekliyor. Peki desteklemeyenler için bir çözüm var mı? Evet.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--ana-renk</span><span class="p">,</span> <span class="no">red</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Değişken tanımı içinde virgül ile ayrılan alanın sonrasındaki tanımlar CSS değişkenlerini desteklemeyen tarayıcılar içindir. Desteklemeyen tarayıcılar virgülden sonrasını yorumlayacaktır.</p>
+
+<h2 id="dört-işlem--x">Dört işlem (+,-,x,/)</h2>
+
+<p>CSS Önişlemcilerinin yeteneklerinden birisi de dört işlemi değişkenler ile  birlikte kullanabilme imkanıdır. CSS değişkenleriyle dört işlemi yapmak için calc() değerini kullanırız.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="nd">:root</span><span class="p">{</span>
+  <span class="py">--indent-size</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+
+  <span class="py">--indent-xl</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">2</span><span class="err">*</span><span class="n">var</span><span class="p">(</span><span class="n">--indent-size</span><span class="p">));</span>
+  <span class="py">--indent-l</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--indent-size</span><span class="p">)</span> <span class="err">+</span> <span class="m">2px</span><span class="p">);</span>
+  <span class="py">--indent-s</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--indent-size</span><span class="p">)</span> <span class="n">-</span> <span class="m">2px</span><span class="p">);</span>
+  <span class="py">--indent-xs</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--indent-size</span><span class="p">)/</span><span class="m">2</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Değer tanımı olmayan değişkenlerin dört işlemi çalışmıyor.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="nd">:root</span><span class="p">{</span>
+  <span class="py">--bosluk</span><span class="p">:</span> <span class="m">10</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.box</span><span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--bosluk</span><span class="p">)</span><span class="nb">px</span> <span class="m">0</span><span class="p">;</span> <span class="c">/* çalışmaz */</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--bosluk</span><span class="p">)</span><span class="err">*</span><span class="m">1px</span><span class="p">)</span> <span class="m">0</span><span class="p">;</span> <span class="c">/* çalışır */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Değerli vermek daha mantıklı.</p>
+
+<h2 id="dom-yapısını-kullanmak">DOM Yapısını kullanmak</h2>
+
+<p>CSS değişkenlerinin en güzel avantajlarından birisi DOM ve CSSOM yapısından yararlanıyor olmasıdır.</p>
+
+<p>Bir kutumuz olsun ve bu kutudan türettiğimiz farklı çeşitleri olsun.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"kutu"</span><span class="nt">&gt;</span>
+  Standart kutu
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"kutu kirilmaz-esya-kutusu"</span><span class="nt">&gt;</span>
+  Kırılmaz eşya kutusu
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>CSS değişkenleriyle şöyle bir şey yapabiliyoruz.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="nc">.kutu</span> <span class="p">{</span>
+  <span class="py">--kutu-boyutu</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--kutu-boyutu</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.kirilmaz-esya-kutusu</span> <span class="p">{</span>
+  <span class="py">--kutu-boyutu</span><span class="p">:</span> <span class="m">34px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">.kutu</code> DOM ilişkilerinden yararlanarak font-size tanımını <code class="language-plaintext highlighter-rouge">.kirilmaz-esya-kutusu</code> sınıfına taşıyor. <code class="language-plaintext highlighter-rouge">.kirilmaz-esya-kutusu</code> sınıfı da <code class="language-plaintext highlighter-rouge">--kutu-boyutu</code> değişkeni değerini değiştirerek uyguluyor. Gereksiz tekrarlardan kurtuluyoruz.</p>
+
+<iframe height="300" scrolling="no" title="CSS değişkenleri DOM avantajı" src="//codepen.io/fatihhayri/embed/preview/YvpOLK/?height=300&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/YvpOLK/">CSS değişkenleri DOM avantajı</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Süper değil mi? CSS Önişlemcileri DOM oluşmadan derlendiği için bu gibi avantajlardan yararlanamıyor.</p>
+
+<h2 id="dinamik-olarak-değiştirme">Dinamik olarak değiştirme</h2>
+
+<p>CSS değişkenleri CSS Önişlemcilerinde farklı olarak statik değil dinamiklerdir. Örneğin Medya sorguları ve :hover durumunda değişebilirler.</p>
+
+<p>Bir örnek ile nasıl olduğunu görelim. SASS ile bir örnek yapalım</p>
+
+<iframe height="300" scrolling="no" title="CSS değişkenleri dinamik" src="//codepen.io/fatihhayri/embed/preview/ERQOYy/?height=300&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/ERQOYy/">CSS değişkenleri dinamik</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>CSS değişkenleri ile</p>
+
+<iframe height="300" scrolling="no" title="CSS değişkenleri dinamik" src="//codepen.io/fatihhayri/embed/preview/jKZQNo/?height=300&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/jKZQNo/">CSS değişkenleri dinamik</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Dinamik değişen değişkenler kod boyutumuzu azaltacaktır.</p>
+
+<h2 id="kalıtsallık">Kalıtsallık</h2>
+
+<p>CSS değişkenleri kalıtsaldır. Bir elemana atanmış CSS değişkeni olmayabilir ancak üst elemanına tanımlanan CSS değişkeni o elemanın etkiler. Örnek:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"kap"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"eleman"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bir"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"iki"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>CSS kodu:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="nc">.eleman</span> <span class="p">{</span>
+  <span class="py">--yazi-boyutu</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--yazi-boyutu</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.iki</span> <span class="p">{</span>
+  <span class="py">--yazi-boyutu</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--yazi-boyutu</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">.eleman</code> öğesinin <code class="language-plaintext highlighter-rouge">24px</code> yazı boyutu olacak. (24px)</li>
+  <li><code class="language-plaintext highlighter-rouge">.iki</code> öğesinin <code class="language-plaintext highlighter-rouge">44px</code> yazı boyutu olacak. (44px)</li>
+  <li><code class="language-plaintext highlighter-rouge">.bir</code> öğesine atanmış bir CSS değişkeni olmamasına karşın üst elemanı olan <code class="language-plaintext highlighter-rouge">.eleman</code>  öğesine tanımlanmış CSS değişkeni kalıtsallık yoluyla <code class="language-plaintext highlighter-rouge">.bir</code> öğesi de aynı değeri taşıyacaktır. (24px)</li>
+</ul>
+
+<iframe height="300" scrolling="no" title="CSS değişkenlerin kalıtsallığı" src="//codepen.io/fatihhayri/embed/bKLMQR/?height=300&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/bKLMQR/">CSS değişkenlerin kalıtsallığı</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<h2 id="javascript-ile-css-değişkenlerine-erişim">Javascript ile CSS değişkenlerine erişim</h2>
+
+<p>CSS Önişlemcileriyle (pre-processor) CSS değişkenleri arasındaki en büyük fark CSS Değişkenlerine Javascript ile erişip değiştirme imkanımız vardır.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>// satıriçi tanımları almak için
+element.style.getPropertyValue("--my-var");
+
+// herhangi bir elemana veya genel tanımlı değişken değerini almak için
+getComputedStyle(element).getPropertyValue("--my-var");
+
+// istediğimiz elemana atanmış değişkenin değerini değiştirmek için
+element.style.setProperty("--my-var", jsVar + 4);
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<iframe height="300" scrolling="no" title="CSS değişkenlerin kalıtsallığı" src="//codepen.io/fatihhayri/embed/preview/bKLMQR/?height=300&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/bKLMQR/">CSS değişkenlerin kalıtsallığı</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<h2 id="performans-etkisi">Performans etkisi</h2>
+
+<p>CSS değişkenlerinin performans olarak nasıl bir etkisinin olacağına bakıldığında önemli iki nokta var. İlki CSS kalıtsallık özelliğinin değişken tanımlanmış eleman için ve alt elemanları içinde geçerli olduğundan dolayı. Dinamik olarak değiştirilen değişken değeri tarayıcıda performans etkisine neden olacaktır.</p>
+
+<p>İkinci sorun calc() içinde kullanılan değişken değerleri birimsiz olarak hesaplanması soruna neden olur. Bunun yerine ilk başta calc() ile değeri hesaplayıp değişken tanımının sonra yapılmasıdır.</p>
+
+<h2 id="tarayıcı-desteği">Tarayıcı desteği</h2>
+
+<p>Tarayıcı desteği konusunda gayet güzel bir seviyede. IE11 ve Android browser’u saf dışı edenler için %100’lük bir desteği var.</p>
+
+<p><strong>Tarayıcı Desteği</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/ie.png" alt="explorer" title="Internet Explorer" /></th>
+      <th style="text-align: center"><img src="/images/ff.png" alt="Firefox" title="Firefox" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>-</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Mobil Tarayıcılar</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/sm.png" alt="Mobil Safari" title="Mobile Safari" /></th>
+      <th style="text-align: center"><img src="/images/samsung-internet.png" alt="Samsung Internet" title="Samsung Internet" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>CSS değişkenleri hakkında okuduğum yazılardan bir derleme yaptım. Bundan sonra CSS değişkenlerini aktif olarak kullanmak istiyorum. Kullandıkça daha güzel özellikleri ortaya çıkacaktır. Çıkan her güzelliği sizlerle paylaşacağım.</p>
+
+<p>CSS Önişlemcilerini severek kullanıyoruz. Büyük boyutlu dosyalarda derlenme uzun zaman beklemelere neden  oluyor. CSS Önişlemcilerinin en çok hangi özelliklerini kullanıyorum diye sorguladığımda</p>
+
+<ul>
+  <li>Değişkenler</li>
+  <li>Fonksiyonlar (mixin)</li>
+  <li>İç içe kullanım (nested)</li>
+</ul>
+
+<p>İlk üç sırayı alıyor. Değişken normal CSS’e geldi. İç içe kullanım da gelse fonksiyon kullanımı çok aramam hemen normal CSS’e geçerim. JsTurk slack kanalında bu konuyu konuşurken <a href="https://arm.ag/">Armağan Amcalar</a>‘ın savunduğu noktaya geliyoruz yavaş yavaş:)</p>
+
+<p>CSS geliştirici grubu çok yavaş. Çok</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="örnekler">Örnekler</h2>
+
+<ul>
+  <li><a href="https://codepen.io/jakob-e/pen/ggGGRB">https://codepen.io/jakob-e/pen/ggGGRB</a> (SVG ve değişkenler)</li>
+  <li><a href="https://codepen.io/tobiasdev/pen/bgPNpQ">https://codepen.io/tobiasdev/pen/bgPNpQ</a> (template ve değişken)</li>
+  <li><a href="https://codepen.io/ohansemmanuel/pen/PQYzvv">https://codepen.io/ohansemmanuel/pen/PQYzvv</a> (komponentlr ve değişken)</li>
+  <li><a href="https://codepen.io/jakob-e/pen/GMGBdN">https://codepen.io/jakob-e/pen/GMGBdN</a> (akordiyon ve değişken)</li>
+  <li><a href="https://codepen.io/rauldronca/pen/VQJRga">https://codepen.io/rauldronca/pen/VQJRga</a> (yazı tipi boyutu ve değişkenler)</li>
+  <li><a href="https://codepen.io/oliviale/pen/jwepmL">https://codepen.io/oliviale/pen/jwepmL</a> (template ve değişken)</li>
+  <li><a href="https://codepen.io/dudleystorey/pen/jZGWjJ?editors=1100">https://codepen.io/dudleystorey/pen/jZGWjJ?editors=1100</a> (uyumlu web ve değişkenler)</li>
+</ul>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/">https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/</a></li>
+  <li><a href="https://scrimba.com/g/gcssvariables">https://scrimba.com/g/gcssvariables</a></li>
+  <li><a href="https://medium.freecodecamp.org/everything-you-need-to-know-about-css-variables-c74d922ea855">https://medium.freecodecamp.org/everything-you-need-to-know-about-css-variables-c74d922ea855</a></li>
+  <li><a href="https://css-tricks.com/difference-between-types-of-css-variables/">https://css-tricks.com/difference-between-types-of-css-variables/</a></li>
+  <li><a href="https://css-tricks.com/issue-preprocessing-css-custom-properties/">https://css-tricks.com/issue-preprocessing-css-custom-properties/</a></li>
+  <li><a href="https://lisilinhart.info/posts/css-variables-performance/">https://lisilinhart.info/posts/css-variables-performance/</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables</a></li>
+  <li><a href="https://www.sitepoint.com/practical-guide-css-variables-custom-properties/">https://www.sitepoint.com/practical-guide-css-variables-custom-properties/</a></li>
+  <li><a href="https://zellwk.com/blog/responsive-vertical-rhythm/">https://zellwk.com/blog/responsive-vertical-rhythm/</a></li>
+  <li><a href="https://youtu.be/2an6-WVPuJU">https://youtu.be/2an6-WVPuJU</a></li>
+  <li><a href="https://medium.com/@mrpeker/5-dakikada-css-de%C4%9Fi%C5%9Fkenleri-%C3%B6%C4%9Fren-75e13fb5c8c5">https://medium.com/@mrpeker/5-dakikada-css-de%C4%9Fi%C5%9Fkenleri-%C3%B6%C4%9Fren-75e13fb5c8c5</a></li>
+  <li><a href="https://webdesign.tutsplus.com/tutorials/how-to-use-css-variables-for-animation--cms-28868">https://webdesign.tutsplus.com/tutorials/how-to-use-css-variables-for-animation–cms-28868</a></li>
+  <li><a href="https://vanseodesign.com/css/custom-properties/">https://vanseodesign.com/css/custom-properties/</a></li>
+  <li><a href="https://www.slideshare.net/GiacomoZinetti/css-from-the-future?qid=17b6565d-b8ba-4896-9d0b-2d00d211cb88&amp;v=&amp;b=&amp;from_search=6">https://www.slideshare.net/GiacomoZinetti/css-from-the-future?qid=17b6565d-b8ba-4896-9d0b-2d00d211cb88&amp;v=&amp;b=&amp;from_search=6</a></li>
+  <li><a href="https://youtu.be/19e7_3UmQrI">https://youtu.be/19e7_3UmQrI</a></li>
+  <li><a href="https://uxdesign.cc/custom-colour-themes-for-your-product-6456df984167">https://uxdesign.cc/custom-colour-themes-for-your-product-6456df984167</a></li>
+  <li><a href="https://tutorialzine.com/2016/03/what-you-need-to-know-about-css-variables">https://tutorialzine.com/2016/03/what-you-need-to-know-about-css-variables</a></li>
+  <li><a href="https://www.youtube.com/watch?v=U9UU_fgpmO8">https://www.youtube.com/watch?v=U9UU_fgpmO8</a></li>
+</ul>
+:ET

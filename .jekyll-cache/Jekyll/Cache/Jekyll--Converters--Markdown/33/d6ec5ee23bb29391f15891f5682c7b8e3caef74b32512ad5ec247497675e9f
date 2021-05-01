@@ -1,0 +1,262 @@
+I"P<h2 id="dom-ilişkili-seçiciler">DOM ilişkili seçiciler</h2>
+
+<p><a href="/jquery-ye-buyuk-darbe-javascript-ve-seciciler/">İlk yazımda genel seçicilerden</a> bahsetmiştim bu yazımda ise DOM üzerinden ilişkilendirilen seçicilerden bahsedeceğim. DOM’daki elementler bir ağaç yapısı ile aile bağlarına benzer bir şekilde bir birlerine bağlıdır. Bu ilişkiden yararlanılarak oluşturulan seçicilere DOM ilişkili seçiciler denir.</p>
+
+<p>Örnek bir HTML kodu verelim;</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td> --><td class="rouge-code"><pre><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>HTML <span class="nt">&lt;em&gt;</span>Hiyerarşisi <span class="nt">&lt;/em&gt;&lt;/h1&gt;</span>
+  <span class="nt">&lt;div&gt;&lt;strong&gt;</span>Sitemize<span class="nt">&lt;/strong&gt;</span> hoş geldiniz <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"es-gec"</span><span class="nt">&gt;</span>Merhaba<span class="nt">&lt;/strong&gt;</span> biz <span class="nt">&lt;em&gt;</span>sizler için<span class="nt">&lt;/em&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span> 	bazı önemli konular!<span class="nt">&lt;/a&gt;</span> hazırladık.<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Yukarıdaki koddaki HTML elemanlarının arasında bir aile yapısına benzer bir yapı vardır. Örneğin <strong>h1</strong>, <strong>em</strong> elementinin ebeveyni, diğer bir tanım ile <strong>em</strong>; <strong>h1</strong>‘in çocuk elementidir.</p>
+
+<iframe height="300" scrolling="no" title="boEypx" src="//codepen.io/fatihhayri/embed/boEypx/?height=300&amp;theme-id=13521&amp;default-tab=js&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/boEypx/">boEypx</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<h3 id="ebevey-parent-seçicisi">Ebevey (parent) seçicisi</h3>
+
+<p>Örneğin <strong>em</strong> elementinin ebeveynini</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">em</span><span class="dl">'</span><span class="p">).</span><span class="nx">parent</span><span class="p">();</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Javascript ile</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre>document.querySelector('em').parentNode;
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>h1</strong> sonucu bize verecektir.</p>
+
+<h3 id="çocuk-children-seçicisi">Çocuk (children) seçicisi</h3>
+
+<p>Alt eleman olarak da tanımladığımız çocuk seçicileri yaklamak için;</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">h1</span><span class="dl">'</span><span class="p">).</span><span class="nx">children</span><span class="p">();</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Javascript ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">h1</span><span class="dl">'</span><span class="p">).</span><span class="nx">childNodes</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>text</strong> ve <strong>em</strong>‘i yakalarız.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">h1</span><span class="dl">'</span><span class="p">).</span><span class="nx">children</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>ile sadece <strong>em</strong>‘i yakalarız.</p>
+
+<h3 id="torun-descendants-seçicisi">Torun (Descendants) seçicisi</h3>
+
+<p>Bir elemanın alt eleman kümesindeki belirlenen tanıma uygun elemanları yakalamak için kullanılır. Yine CSS’den aşina olduğumuz bir kullanım.</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">div em</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Javascript ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">div em</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu seçici bize her iki <strong>em</strong> elemanını verecektir.</p>
+
+<h3 id="en-yakın-ebeveyn-closest-seçicisi">En yakın ebeveyn (closest) seçicisi</h3>
+
+<p>jQuery kullanırken en yakın ebeveyni yakalamak için <strong>closest</strong> metodunu kullandığımız oluyor. jQuery’de bunun için bir metot var. Örnek verelim.</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">).</span><span class="nx">closest</span><span class="p">(</span><span class="dl">'</span><span class="s1">div</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>ile kodumuz içindeki bağlantının en yakın div ebeveyni yakalanmış olur. Javascript’e de yeni gelen bu özellik ile aynı kolaylıkta elemanı yakalayabiliriz.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">).</span><span class="nx">closest</span><span class="p">(</span><span class="dl">'</span><span class="s1">div</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu yeni bir özellik olmasına rağmen şu an Türkiye’deki desteği %83 seviyesinde. Desteklmeyen tarayıcılar için <a href="https://github.com/jonathantneal/closest">https://github.com/jonathantneal/closest</a> kullanılabilir.</p>
+
+<p><strong>Tarayıcı Desteği</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/ie.png" alt="explorer" title="Internet Explorer" /></th>
+      <th style="text-align: center"><img src="/images/ff.png" alt="Firefox" title="Firefox" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>-</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Mobil Tarayıcılar</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/sm.png" alt="Mobil Safari" title="Mobile Safari" /></th>
+      <th style="text-align: center"><img src="/images/samsung-internet.png" alt="Samsung Internet" title="Samsung Internet" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>6.2</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="kardeş-siblings-seçicisi">Kardeş (siblings) seçicisi</h3>
+
+<p>Aynı ebeveyne sahip elemanlara <strong>kardeş seçiciler</strong> denir. Kardeş seçicileri ikiye ayırırız. Bitişik kardeş seçicileri birbiri ardına gelen seçiciler ve genel kardeş seçicileri. jQuery API’sindeki siblings metodu ise bunlardan biraz daha farklıdır. Tanımlanan elemanın seviyesindeki tüm elemanları (kendisi hariç) yakalar. Javascript’te bu durumu direk karşılayan bir metot yoktur. Basit bir fonksiyon ile bu isteği karşılabiliriz.</p>
+
+<p>CSS’deki kardeş seçici mantığı ile ilk kardeşi yakalayıp sonrakileri seçerek jQuery siblings metodunu karşılayabiliriz.</p>
+
+<p>Bu tip javascript’te olmayan metotları kodumuza kazandırdığımız kodları genel erişilebilir bir yerde tutabiliriz.</p>
+
+<p>Genel bir fonksiyon tanımlayıp siblings dizisini oluşturalım. Belirlediğimiz elemanın ebeveyni ve oradanda bu ebeveynin ilk elemanını yakalarız. Sonra bir döngü içinde <em>nextSibling</em> yardımı ile sonraki elemanları yakalayıp bir diziye atarak çözümü oluşturabiliriz.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td> --><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">getSiblings</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">elem</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">siblings</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="kd">var</span> <span class="nx">sibling</span> <span class="o">=</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">;</span>
+    
+    <span class="k">for</span> <span class="p">(;</span> <span class="nx">sibling</span><span class="p">;</span> <span class="nx">sibling</span> <span class="o">=</span> <span class="nx">sibling</span><span class="p">.</span><span class="nx">nextSibling</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// kod gelecek</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Siblings içinde belirlediğmiz elamanın olmaması lazım. Bunun için bir if kontrolü koymalıyız.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td> --><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">getSiblings</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">elem</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">siblings</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="kd">var</span> <span class="nx">sibling</span> <span class="o">=</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">;</span>
+    
+    <span class="k">for</span> <span class="p">(;</span> <span class="nx">sibling</span><span class="p">;</span> <span class="nx">sibling</span> <span class="o">=</span> <span class="nx">sibling</span><span class="p">.</span><span class="nx">nextSibling</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">sibling</span><span class="p">.</span><span class="nx">nodeType</span> <span class="o">!==</span> <span class="mi">1</span> <span class="o">||</span> <span class="nx">sibling</span> <span class="o">===</span> <span class="nx">elem</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+      <span class="nx">siblings</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">sibling</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">siblings</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Son olarakta döngü bittiğinde sonuçları geri göndereceğiz.</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">div.icerik .es-gec</span><span class="dl">'</span><span class="p">).</span><span class="nx">siblings</span><span class="p">();</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Javascript ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td> --><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">elem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">div.icerik .es-gec</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">siblings</span> <span class="o">=</span> <span class="nx">getSiblings</span><span class="p">(</span><span class="nx">elem</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>jQuery basitliğinde değil ancak çokta zor olmayan bir yardımcı fonksiyon ile işimizi halletik.</p>
+
+<h3 id="elemanları-hariç-tutmak-not">Elemanları hariç tutmak (not)</h3>
+
+<p>Bazı elemanları seçimden hariç tutmak için</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">p strong</span><span class="dl">'</span><span class="p">).</span><span class="nx">not</span><span class="p">(</span><span class="dl">'</span><span class="s1">.es-gec</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Javascript ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">p strong:not(.es-gec)</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu seçim sonrası sadece ilk strong elemnaı seçilmiş olur.</p>
+
+<h3 id="çoklu-eleman-seçimi">Çoklu eleman seçimi</h3>
+
+<p>Birden fazla eleman seçmek istediğimizde</p>
+
+<p><strong>jQuery ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">h1, .es-gec, a</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Javascript ile</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">h1, .es-gec, a</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>yukarıdaki kodlar <strong>h1</strong>, <strong>.es-gec</strong> ve <strong>link</strong> elemanını verecektir.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Bu iki yazılık javascript seçicileri yazımızda gördük ki jQuery’nin en büyük avanatajlarından birisi olan seçiciler konusunda javascript’te yeterli seviyede.</p>
+
+<p>jQuery’nin DOM üzerindeki hakimiyetinin çok fazla olması ve bu hakimiyeti oluşturmak için ürettiği metotlar(nextUntil, nextAll, offsetParent, parentsUntil, prevUntil, prevAll) çoğu zaman kırılgan ve anlışlmaz yapıların çıkmasına neden oluyor. Kırılganlığı önlemek ve daha esnek kodlar yazmak için DOM ilişkili seçicilerin kullanımına dikkat etmeliyiz.</p>
+
+<p>Bazı durumlar için <strong>siblings</strong> ve <strong>closest</strong> örneklerinde gördüğümüz gibi yardımcı fonksiyonlar ile kolay çözümlerde oluşturabiliriz.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://blog.garstasio.com/you-dont-need-jquery/selectors/#children">https://blog.garstasio.com/you-dont-need-jquery/selectors/</a></li>
+  <li><a href="http://youmightnotneedjquery.com/">http://youmightnotneedjquery.com/</a></li>
+  <li><a href="https://gomakethings.com/a-native-vanilla-javascript-way-to-get-the-closest-matching-parent-element/">https://gomakethings.com/a-native-vanilla-javascript-way-to-get-the-closest-matching-parent-element/</a></li>
+  <li><a href="https://gomakethings.com/how-to-get-an-elements-siblings-with-vanilla-javascript/">https://gomakethings.com/how-to-get-an-elements-siblings-with-vanilla-javascript/</a></li>
+</ul>
+:ET

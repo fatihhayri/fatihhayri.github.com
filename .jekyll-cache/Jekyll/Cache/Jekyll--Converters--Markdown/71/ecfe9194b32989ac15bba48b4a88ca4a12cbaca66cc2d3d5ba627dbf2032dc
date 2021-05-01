@@ -1,0 +1,164 @@
+I"�<p>Daha önce bu konuda bir makale yazmıştım. <a href="https://fatihhayrioglu.com/100-genislik-ve-100-yukseklite-sayfa-iskeleti-hazirlama/">100% Genişlik ve 100% Yükseklite Sayfa İskeleti Hazırlama</a> bağlantısını tıklayarak makaleye erişebilirsiniz. Aynı yapıyı flex ile yapsam nasıl olur bir bakalım.</p>
+
+<p>Bu yapının bize sağladıklarını listelersek.</p>
+
+<ul>
+  <li>Esnek iç alan ve sabit yan kolonlarımız var</li>
+  <li>Eşit kolon yüksekliğimiz var</li>
+  <li>Sticky footer özelliği var</li>
+</ul>
+
+<p>Flex ile bu işi yapalım.</p>
+
+<p>HTML kodu;</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td> --><td class="rouge-code"><pre><span class="nt">&lt;header&gt;</span>Üst alan<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"kapsayici"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"iceri-alani"</span><span class="nt">&gt;</span>There are many variations of passages of Lorem Ipsum available, but the majority...
+  <span class="nt">&lt;/main&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"menu"</span><span class="nt">&gt;</span>Sol Menü<span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"reklam"</span><span class="nt">&gt;</span>Sağ alan<span class="nt">&lt;/aside&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;footer&gt;</span>Alt Alan<span class="nt">&lt;/footer&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://fatihhayrioglu.com/flex-ile-sayfa-dibine-yapisik-alt-alanlar-sticky-footer-yapmak/">Flex ile sayfa dibine yapışık alt alanlar (sticky footer) yapmak</a> yazısında gördüğümüz gibi orta alanın tam sayfayı kaplaması ve alt alanın dibe yapışması için:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td> --><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">flex-direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">100vh</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.icerik-alani-kapsayici</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">flex</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Tanımlarını yapıyoruz.</p>
+
+<p>Menü ve reklam alanlarını eşit kolonlu yapmak ve menü kısmını sol tarafa koymak için:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td> --><td class="rouge-code"><pre><span class="nc">.icerik-alani</span> <span class="p">{</span>
+  <span class="nl">flex</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.menu</span><span class="o">,</span> <span class="nc">.reklam</span> <span class="p">{</span>
+  <span class="nl">flex</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">12em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.menu</span> <span class="p">{</span>
+  <span class="nl">order</span><span class="p">:</span> <span class="m">-1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Uyumlu web kısmını ve mobili önceliklendirdiğimiz de şöyle bir kod ortaya çıkıyor.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td> --><td class="rouge-code"><pre><span class="nc">.kapsayici</span> <span class="p">{</span>
+		<span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+ 	<span class="nl">flex</span><span class="p">:</span> <span class="m">1</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+		<span class="nl">flex-direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.menu</span> <span class="p">{</span>
+ 	<span class="nl">order</span><span class="p">:</span> <span class="m">-1</span><span class="p">;</span>
+ 	<span class="nl">background-color</span><span class="p">:</span> <span class="m">#449fdc</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.kapsayici</span> <span class="p">{</span>
+  	<span class="nl">flex-direction</span><span class="p">:</span> <span class="n">row</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.iceri-alani</span> <span class="p">{</span>
+    <span class="nl">flex</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.menu</span><span class="o">,</span> <span class="nc">.reklam</span> <span class="p">{</span>
+    <span class="nl">flex</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">12em</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<iframe height="365" scrolling="no" title="Esnek yapılı 3 kolonlu web sayfası" src="//codepen.io/fatihhayri/embed/qodLVJ/?height=365&amp;theme-id=13521&amp;default-tab=result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/qodLVJ/">Esnek yapılı 3 kolonlu web sayfası</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Eski koda göre flex ile kodladığımız sayfanın eskiye göre çok fazla avantajı var.</p>
+
+<ul>
+  <li>Daha az kod</li>
+  <li>Daha sade kod</li>
+  <li>Uyumlu web desteği ve mobil önceliği</li>
+  <li>SEO açısından daha avantajlı kod</li>
+</ul>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/">https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/</a></li>
+  <li><a href="https://codepen.io/takeradi/pen/MyYqKX">https://codepen.io/takeradi/pen/MyYqKX</a></li>
+  <li><a href="http://w3bits.com/flexbox-holy-grail-layout/">http://w3bits.com/flexbox-holy-grail-layout/</a></li>
+</ul>
+:ET

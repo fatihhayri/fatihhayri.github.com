@@ -1,0 +1,184 @@
+I"�,<p>Tipografinin web sitelerinde önemli bir yeri var. Yazı tipi tasarım ve okunabilirlik açısından bakıldığında gerekli bir öğedir.</p>
+
+<p>Yazı tiplerini sistemde yüklü yazı tipleri ve özel yazı tipleri diye ikiye ayırabiliriz. Bu makalede özel yazı tipleri üzerine duracağız.</p>
+
+<p>Geçmişten beri özel yazı tiplerini sayfalarımıza eklemenin farklı yöntemlerini denedik. (Örn: sFIR, cufon, resim vb. ) Günümüzde artık bu daha kolay. <a href="https://fatihhayrioglu.com/woff2-ve-font-face-tanimini-iki-satira-indirmek/">@font-face</a> ile özel yazı tiplerini sayfalarımıza kolayca ekleyebiliyoruz.</p>
+
+<p>Özel yazı tipleri hakkında daha fazla bilgiye sahip olmalıyız. Nasıl yüklenir? Yükleme sırası nasıldır? Bu yazıda bu konulara biraz değineceğiz.</p>
+
+<h2 id="özel-yazı-tipi-tarayıcılar-tarafından-nasıl-yüklenir-ve-yorumlanır">Özel yazı tipi tarayıcılar tarafından nasıl yüklenir ve yorumlanır?</h2>
+
+<p>Tarayıcıların bir html dokümanı nasıl yorumladığını aşağıdaki diyagram göstermektedir.</p>
+
+<p><img src="/images/tarayici-sayfa-tarama.gif" alt="tarayıcı html nasıl tarar" /></p>
+
+<p>Yukarıdaki grafikte görüldüğü gibi tarayıcılar özel yazı tiplerinin yüklenmesi için önce DOM ve CSSOM’un oluşmasını bekler. Sonra özel yazı tipini yükler ve duruma göre içeriği işler. Özel yazı tiplerinin yüklenmesine kadar geçen sürede içeriğin nasıl görüneceği konusunda tarayıcıların farklı davranışları vardır. Bu farklılıkları inceleyelim.</p>
+
+<h2 id="özel-yazı-tipi-yükleme-farklılıkları">Özel yazı tipi yükleme farklılıkları</h2>
+
+<p>Yazı tiplerinin yüklenmesinde iki farklı yöntem var. Tarayıcıların tercih ettiği iki yöntemi kısaca açıklayalım.</p>
+
+<ul>
+  <li>
+    <p>“flash of invisible text” (<strong>FOIT</strong>): Özel yazı tipi yüklenene kadar yazıları göstermeyen yöntem “flash of invisible text” (FOIT) baş harflerinden oluşan bir kısaltma ile anılır. Yazı tipini gösterme, yüklenince bir seferde uygula mantığı.</p>
+  </li>
+  <li>
+    <p>“flash of unstyled text” (<strong>FOUT</strong>): Özel yazı tipi yüklenene kadar sistemde yüklü olan yazı tipini gösterip özel yazı tipi yüklenince özel yazı tipine geçen metot. Standart yazı tipi ile göster, özel yazı tipi yüklenince tekrar tara ve göster mantığı.</p>
+  </li>
+</ul>
+
+<p>İlk yöntemi uygulayan tarayıcılar kullanıcıyı özel yazı tipi yüklenene kadar metni göstermemenin kullanıcı deneyimi açısından kötü bir davranış olduğuna karar verdi. Bu durumu çözmek için kullanıcıyı bekletme süresine limit getirdiler. Bekleme süresi olarak 3 saniye belirlediler. Kullanıcı 3sn içinde özel yazı tipini yüklediyse yazıları tarayıp gösteriyor, 3sn içinde hala yüklenmediyse standart yazı tipi ile gösterip yüklendikten sonra tekrar tarayıp gösteriyor. Aslında bu ara bir çözüm 3 saniyeye kadar FOIT, 3 saniyeden sonra FOUT gibi davranıyor.</p>
+
+<p>Tarayıcıların bu konudaki tavırlarını gösteren liste aşağıdaki gibidir.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tarayıcı</th>
+      <th>Zaman aşım süresi</th>
+      <th>Standart</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chrome</td>
+      <td>3sn</td>
+      <td>FOIT</td>
+    </tr>
+    <tr>
+      <td>Opera</td>
+      <td>3sn</td>
+      <td>FOIT</td>
+    </tr>
+    <tr>
+      <td>Firefox</td>
+      <td>3sn</td>
+      <td>FOIT</td>
+    </tr>
+    <tr>
+      <td>Safari</td>
+      <td>3sn</td>
+      <td>FOIT</td>
+    </tr>
+    <tr>
+      <td>IE/EDGE</td>
+      <td>0sn</td>
+      <td>FOUT</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="özel-yazı-tipi-yükeleme-peryotları">Özel yazı tipi yükeleme peryotları</h2>
+
+<p>Yukarıdaki grafikte sıra özel yazı tipine gelmesi ve içerğin işlenmesi arasındaki zaman üçe bölünür.</p>
+
+<ul>
+  <li>
+    <p><strong>Bloklama peryodu</strong>: İlk periyod bloklama peryodudur. Eğer özel yazı tipi yüklenmemişse özel yazı tipini kullanacak eleman gizlenir. Eğer özel yazı tipi bu süre zarfında yüklenirse hemen uygulanır.</p>
+  </li>
+  <li>
+    <p><strong>Geçiş peryodu:</strong> Bloklama peryodundan hemen sonra gelir. Özel yazı tipi bu peryodda da yüklenmemişse özel yazı tipini kullananan yerler standart yazı tipi ile işlenir. Eğer bu süre zarfında özel yazı tipi yüklenirse özel yazı tipi uygulanır.</p>
+  </li>
+  <li>
+    <p><strong>Başarısızlık peryodu:</strong> Geçiş peryodundan sonraki peryoddur. Bu peryod başladığında hala özel yazı tipi yüklenmediyse özel yazı tipinin bulunamadığı anlamına gelir ve tarayıcı standart yazı tipi ile içeriği işler.</p>
+  </li>
+</ul>
+
+<h2 id="font-display-özelliği">font-display özelliği</h2>
+
+<p>font-display özelliği özel yazı tipi dosyalarının nasıl yükleneceği ve görüntüleneceğini belirler. @font-face tanımı içinde kullanılır. Özel yazı tipi peryotlarını yönetmemize olanak sağlar.</p>
+
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> font-display: [ deger ]<br />
+<strong>Aldığı Değerler :</strong> auto | block | swap | fallback | optional<br />
+<strong>Başlangıç değeri:</strong> auto<br />
+<strong>Uygulanabilen elementler:</strong> Belirtilen elemana<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+
+<ul>
+  <li>
+    <p><strong>auto:</strong> Özel yazı tipi yükleme stratejisine tarayıcı karar versin demektir. Çoğu zaman <strong>block</strong> değeri ile aynı davranır.</p>
+  </li>
+  <li>
+    <p><strong>block:</strong> Özel yazı tipi yüklenene kadar metni gizler. Daha doğru bir anlatım ile tarayıcı metinleri görünmez bir yertutucu ile çizer ve yazı tipi yüklenince yazı tipinin belirlediği şekliyle tekrar çizer. FOIT davranışı sergiler.</p>
+  </li>
+  <li>
+    <p><strong>swap:</strong> Blok peryodun olmadığı geçiş peryodunun süresiz olduğuğu tanım. Özel yazı tipi yüklenene kadar sisteminin standart yazı tipi ile göstermesini sağlar. FOUT davranışı.</p>
+  </li>
+  <li>
+    <p><strong>fallback:</strong> <code class="language-plaintext highlighter-rouge">auto</code> ve <code class="language-plaintext highlighter-rouge">swap</code> arası bir davranıştır. Tarayıcı 100ms kadar metni gizle eğer yüklenmediyse standart yazı tipi ile gösterir. Yüklendikten sonrada özel yazı tipine geç.</p>
+  </li>
+  <li>
+    <p><strong>optional:</strong> Tarayıcı 100ms kadar kısa bir süre özel yazı tipinin yüklenmesi bekler ve yüklenmediyse sistemde yüklü yazı tipi ile içeriği gösterir. <strong>fallback</strong> ile benzerdir. fallback’den farklı olarak geçiş süresi olmayan bir seçenektir.</p>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">font-display</code> özelliği bize <strong>FOUT</strong> ve <strong>FOIT</strong> davranışlarını seçme ve harmanlama imkanı sağlıyor.</p>
+
+<iframe height="460" scrolling="no" title="font-display örnekleri" src="//codepen.io/fatihhayri/embed/GdJEqK/?height=460&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/GdJEqK/">font-display örnekleri</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Test için yukarıdaki sayfayı ayrı bir pencerede açıp Chrome Dev Tools’dan bağlantı hızınızı <strong>Slow 3G</strong> yapıp sonrada <strong>Empty Cache and Hard Reload</strong> ile sayfayı yüklerseniz <strong>font-display</strong> özelliği değerleri arasındaki farkı görebilirsiniz.</p>
+
+<p>Ayrıca <a href="https://font-display.glitch.me/">https://font-display.glitch.me/</a> sitesindeki örnek ve Umar Hansa’nın <a href="https://www.youtube.com/watch?v=yRrrL0Mg1pM&amp;t=518s">https://www.youtube.com/watch?v=yRrrL0Mg1pM&amp;t=518s</a> anlatımı uygulamada nasıl göründüğünü görmek için güzel kaynaklar.</p>
+
+<p><strong>Tarayıcı Desteği</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/ie.png" alt="explorer" title="Internet Explorer" /></th>
+      <th style="text-align: center"><img src="/images/ff.png" alt="Firefox" title="Firefox" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>-</strong></td>
+      <td style="text-align: center"><strong>+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Mobil Tarayıcılar</strong></p>
+
+<table class="tarayici-uyumi">
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/ch.png" alt="Chrome" title="Chrome" /></th>
+      <th style="text-align: center"><img src="/images/sm.png" alt="Mobil Safari" title="Mobile Safari" /></th>
+      <th style="text-align: center"><img src="/images/samsung-internet.png" alt="Samsung Internet" title="Samsung Internet" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>+</strong></td>
+      <td style="text-align: center"><strong>11.3</strong></td>
+      <td style="text-align: center"><strong>6.2</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Tarayıcı desteği kousunda sorunlu. iOS’un 11.3 ile birlikte bu özelliği desteklemesi büyük avantaj. Samsung Internet desteği de gelirse süper olur. iOS 11.3’ün yaygınlaşmasından sonra da kullanılabilir. iOS sürümlerinin yayılması 3 ay aldığı düşünülürse 3 ay sonra(Temmuz 2018) kullanabiliriz.</p>
+
+<p>Sağlıcakla kalın.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://github.com/zachleat/web-font-loading-recipes">https://github.com/zachleat/web-font-loading-recipes</a></li>
+  <li><a href="https://font-display.glitch.me/">https://font-display.glitch.me/</a></li>
+  <li><a href="https://css-tricks.com/almanac/properties/f/font-display/">https://css-tricks.com/almanac/properties/f/font-display/</a></li>
+  <li><a href="https://css-tricks.com/font-display-masses/">https://css-tricks.com/font-display-masses/</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display">https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display</a></li>
+  <li><a href="https://developers.google.com/web/updates/2016/02/font-display">https://developers.google.com/web/updates/2016/02/font-display</a></li>
+  <li><a href="https://www.sitepoint.com/css-font-display-future-font-rendering-web/">https://www.sitepoint.com/css-font-display-future-font-rendering-web/</a></li>
+  <li><a href="https://caniuse.com/#feat=css-font-rendering-controls">https://caniuse.com/#feat=css-font-rendering-controls</a></li>
+  <li><a href="https://alligator.io/css/font-face/">https://alligator.io/css/font-face/</a></li>
+  <li><a href="https://www.zachleat.com/web/comprehensive-webfonts/">https://www.zachleat.com/web/comprehensive-webfonts/</a></li>
+  <li><a href="https://webkit.org/blog/6643/improved-font-loading/">https://webkit.org/blog/6643/improved-font-loading/</a></li>
+  <li><a href="https://www.youtube.com/watch?v=yRrrL0Mg1pM&amp;t=518s">https://www.youtube.com/watch?v=yRrrL0Mg1pM&amp;t=518s</a></li>
+</ul>
+:ET

@@ -1,0 +1,45 @@
+I"<p>CSS <a href="https://fatihhayrioglu.com/css3-gecis-efektleri-transitions/">geçiş efekti</a> özelliği güzel bir özellik. Bir çok basit animasyon işinde kullanılan geçiş efekti özelliğinin bir elemanı gizle/göster (toggle) ettirmek istediğimizde bazı sorunları var. Çözüm aradığımda bir kaç yöntem karşıma çıktı. Bu sorun ile ilk karşılaştığımda sahibinden.com’da bana özel sol menüsü yapıyorduk, çözümü bulunca ben bunun bir makalesini yazmalıyım demiştim ancak nasip değilmiş olmadı. Kısmet şimdiye imiş.</p>
+
+<p>Elemanı gizle/göster yapmak için ilk düşündüğümüz geçiş efekti yükseklik değerini başlangıçta sıfır verelim tıklanınca veya üzerine gelince <strong>auto</strong>‘ya çevirelim. Sorun burada başlıyor CSS <strong>height</strong> değerini sıfırdan auto’ya çekemiyor.</p>
+
+<blockquote>
+  <p>MDN bu konuda ki açıklaması bu işin zor bir iş olduğu yönünde. Tarayıcılarda sıkıntıya girmektense desteklemeyelim sonucuna varmışlar :)</p>
+</blockquote>
+
+<p>Bu sorunu çözmek için iki yöntem var.</p>
+
+<h2 id="max-height-çözümü">max-height çözümü</h2>
+
+<p>Çözüm için <strong>height</strong> yerine <strong>max-height</strong> kullanmak.</p>
+
+<iframe height="300" scrolling="no" title="VQVVad" src="//codepen.io/fatihhayri/embed/VQVVad/?height=300&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/VQVVad/">VQVVad</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<ul>
+  <li><strong>max-height</strong> değerini iyi tanımlamak gerekiyor. Verilen değer Açılış/kapanış animasyonunu etkiliyor. Yüksek değerler animasyonun hızlı olmasını veya anlaşılmamasına neden oluyor. Küçük değerlerde içeriğin aktif olarak geldiği yerlerde içeriğin bazı kısımlarının görünmemesine neden olabilir.</li>
+  <li><strong>max-height</strong> değeri tanımlanan elemana <strong>padding</strong>, <strong>margin</strong> değeri tanımlamayın animasyonda zıplamalara neden oluyor.</li>
+  <li>Gizle/göster yaptığımız elemana <strong>padding</strong> ve <strong>margin</strong> tanımlamak yerine içine bir tane daha eleman atayıp <strong>padding</strong> ve <strong>margin</strong> değerlerini bu yeni eleman tanımlayarak çözebiliriz.</li>
+</ul>
+
+<h2 id="scaley-ile-çözmek">scaleY ile çözmek</h2>
+
+<p><strong>transform: scaleY</strong> yardımıylada bir çzöm mümkün. Başlangıçta değer sıfır (0) iken seçili durumda veya üzerine geldiğimizde değeri bir (1) yaparakta bir çözüm oluşturabiliriz.</p>
+
+<iframe height="300" scrolling="no" title="qxeJYx" src="//codepen.io/fatihhayri/embed/qxeJYx/?height=300&amp;theme-id=13521&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/fatihhayri/pen/qxeJYx/">qxeJYx</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Gayet kolay bir çözüm. Animasyonun açılış şekli bazı durumlarda istenmeye bilir. Tercih sizin.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<p>## Kaynaklar</p>
+
+<ul>
+  <li><a href="http://n12v.com/css-transition-to-from-auto/">http://n12v.com/css-transition-to-from-auto/</a></li>
+  <li><a href="https://coderwall.com/p/tfwjtw/css-transition-with-auto-width-or-height">https://coderwall.com/p/tfwjtw/css-transition-with-auto-width-or-height</a></li>
+  <li><a href="https://twitter.com/LeaVerou/status/69776299685715970">https://twitter.com/LeaVerou/status/69776299685715970</a></li>
+  <li><a href="https://jdsteinbach.com/css/snippet-animate-display-transform/">https://jdsteinbach.com/css/snippet-animate-display-transform/</a></li>
+  <li><a href="https://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css">https://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css</a></li>
+  <li><a href="http://css3.bradshawenterprises.com/animating_height/">http://css3.bradshawenterprises.com/animating_height/</a></li>
+</ul>
+:ET

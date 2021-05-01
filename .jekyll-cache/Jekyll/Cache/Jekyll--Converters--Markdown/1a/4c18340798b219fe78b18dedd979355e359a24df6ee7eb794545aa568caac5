@@ -1,0 +1,57 @@
+I"c<p>Daha önce bu konuda bir yazı yazmıştım. <a href="https://fatihhayrioglu.com/css-ile-ozel-kaydirma-cubugu-yapmak/" title="CSS İle Özel Kaydırma Çubuğu Yapmak">CSS İle Özel Kaydırma Çubuğu Yapmak</a> O yazıda yazdığım özelliğin Firefox desteği yoktu, Internet Explorer’un kısıtılı desteği vardı. Şimdi Firefox yeni sürümüyle (64) birlikte standartlara da giren yeni kaydırma çubuğu özelliklerini destekliyor.</p>
+
+<p>Çok güzel haber ancak daha yetenekli <strong>::-webkit-scrollbar</strong> özellikleri varken niye daha yeteneksiz kaydırma çubuğu özellikleri standartlaştı anlayabilmiş değilim. Standartlara girmiş olması bu yönde gelişmeler olacağını gösteriyor. “CSS Scrollbars Module Level 1” ismiyle standartlaştı. Yani daha 1. seviye muhtemelen 2. veya 3. seviyede <strong>::-webkit-scrollbar</strong> yeteneklerine kavuşur.</p>
+
+<p>Peki standartta neler var?</p>
+
+<p>İki temel özellik var. <strong>scrollbar-color</strong> ve <strong>scrollbar-width</strong></p>
+
+<h2 id="scrollbar-color">scrollbar-color</h2>
+
+<p>Kaydırma çubuğu tutamacı ve yolunun rengini belirlediğimiz özellik.</p>
+
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> scrollbar-color: [ deger ]<br />
+<strong>Aldığı Değerler :</strong> auto | dark | light | renk{2}<br />
+<strong>Başlangıç değeri:</strong> auto<br />
+<strong>Uygulanabilen elementler:</strong> overflow uygulanan tüm elemanlar<br />
+<strong>Kalıtsallık:</strong> Var</p>
+
+<p>Bu özellik iki renk değeri alıyor birinci renk kaydırma çubuğu tutamacının rengi ikinci renk ise kaydırma çubuğu yolunun rengini tanımlıyor.</p>
+
+<p>Mozilla’nın verdiği örneği inceleyelim. Örnek şu an sadece Firefox 64 sürümünde görünüyor.</p>
+
+<iframe height="300" scrolling="no" title="CSS Scrollbars Module Level 1 Test" src="//codepen.io/fatihhayri/embed/pqdrbd/?height=300&amp;theme-id=13521&amp;default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">
+</iframe>
+
+<p>ilk renk mor (rebeccapurple) kaydırma çubuğu tutamacının rengi ikinci renk yeşil (green) kaydırma çubuğu yolunun rengidir.</p>
+
+<p>Diğer değerleri (dark ve light) denediğimde çalışmadı.</p>
+
+<h2 id="scrollbar-width">scrollbar-width</h2>
+
+<p>Bu özellik kaydırma çubuğu kalınlığını belirlememizi sağlıyor.</p>
+
+<p class="cssozelliktanimi"><strong>Yapısı :</strong> scrollbar-width: [ deger ]<br />
+<strong>Aldığı Değerler :</strong> auto | thin | none | değer<br />
+<strong>Başlangıç değeri:</strong> auto<br />
+<strong>Uygulanabilen elementler:</strong> overflow uygulanan tüm elemanlar<br />
+<strong>Kalıtsallık:</strong> Yok</p>
+
+<p><strong>auto, thin</strong> ve <strong>none</strong> değerleri çalışırken elle verdiğim değerleri uygulamadı Firefox. Tarayıcının böyle bir hatası olabilir.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Kaydırma çubuğu özelliştirme konusunda <strong>::-webkit-scrollbar</strong> özellikleri ve bu standardı kullanarak neredeyse tüm tarayıcıların desteğini sağlamış olduk. (IE11 ve Edge bittiğine göre)</p>
+
+<p>Bence yetersiz ama güzel bir gelişme. Takipteyiz W3C :)</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/css-scrollbars-1/">https://www.w3.org/TR/css-scrollbars-1/</a></li>
+  <li><a href="https://caniuse.com/#search=scrollbar-color">https://caniuse.com/#search=scrollbar-color</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars</a></li>
+  <li><a href="https://medium.com/@beraliv/scrollbar-customisation-31bd28652e9">https://medium.com/@beraliv/scrollbar-customisation-31bd28652e9</a></li>
+  <li><a href="https://www.mozilla.org/en-US/firefox/64.0/releasenotes/">https://www.mozilla.org/en-US/firefox/64.0/releasenotes/</a></li>
+</ul>
+:ET

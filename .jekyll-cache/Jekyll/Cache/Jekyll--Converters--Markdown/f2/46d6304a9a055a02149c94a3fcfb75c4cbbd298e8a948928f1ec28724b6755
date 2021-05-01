@@ -1,0 +1,61 @@
+I"1<p>CSS ile birlikte çok fazla medya kontrolünü kullanıyoruz.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="c">/* Smartphones (portrait) ----------- */</span>
+<span class="k">@media</span> <span class="n">only</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span> <span class="p">:</span> <span class="m">320px</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="c">/* Desktops and laptops ----------- */</span>
+<span class="k">@media</span> <span class="n">only</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span> <span class="p">:</span> <span class="m">1224px</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="c">/* Large screens ----------- */</span>
+<span class="k">@media</span> <span class="n">only</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span> <span class="p">:</span> <span class="m">1824px</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Peki bu kontrolleri javascript tarafında nasıl yaparız diye araştırınca <code class="language-plaintext highlighter-rouge">window.matchMedia</code> ile karşılaştım. Bildiğimiz CSS medya kulanımının aynısını yapabiliyoruz.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">ms</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">matchMedia</span><span class="p">(</span><span class="dl">"</span><span class="s2">SORGU</span><span class="dl">"</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>SORGU yazan kısma CSS’de yazdığımız kısmı birebir yazıp kontrol edebiliyoruz.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">ms</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">matchMedia</span><span class="p">(</span><span class="dl">"</span><span class="s2">screen and (min-width:720px)</span><span class="dl">"</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Sonra kontrolümüzü yapalım.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="nx">ms</span><span class="p">.</span><span class="nx">matches</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// ekran genişliği en az 720px</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// ekran genişliği 720px den büyük olanlar.</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Tarayıcı desteğinin %100’e yakın olması da ayrı bi güzellik.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/cssom-view-1/#dom-window-matchmedia">https://www.w3.org/TR/cssom-view-1/#dom-window-matchmedia</a></li>
+  <li><a href="https://www.sitepoint.com/javascript-media-queries/">https://www.sitepoint.com/javascript-media-queries/</a></li>
+</ul>
+:ET

@@ -1,0 +1,186 @@
+I"�0<ul>
+  <li><a href="https://fatihhayrioglu.com/css-grid-giris/">CSS Grid’e (Izgara) Giriş</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-grid-ozellikleri/">CSS Grid Özellikleri</a></li>
+  <li><a href="https://fatihhayrioglu.com/fr-birimi/">fr birimi</a></li>
+  <li><a href="https://fatihhayrioglu.com/css-izgara-cizgi-isimlendirmesi-ve-kullanimi/">CSS Izgara çizgi isimlendirmesi ve kullanımı</a></li>
+</ul>
+
+<p>CSS Grid yazılarımıza devam ediyoruz. <a href="https://fatihhayrioglu.com/css-grid-ozellikleri/">Css grid özellikleri</a> yazımızda grid ögelerini yerleştirmenin birkaç yöntemi var demiştik, <code class="language-plaintext highlighter-rouge">grid-template-area</code> özelliği bu yöntemlerden biridir.</p>
+
+<p><a href="https://fatihhayrioglu.com/css-izgara-cizgi-isimlendirmesi-ve-kullanimi/">Bir önceki yazıda</a> grid çizgi isimlendirmesi yardımıyla grid ögelerinin konumunu belirlemiştik. Bu makalede <code class="language-plaintext highlighter-rouge">grid-area</code> ile tanımladığımız grid alanlarını daha önce görülmemiş bir şekilde ASCII karakter dizilimiyle (görsel olarak) konumlandırmayı göreceğiz.</p>
+
+<p>İlk olarak <code class="language-plaintext highlighter-rouge">grid-area</code> özelliğini öğrenelim.</p>
+
+<h2 id="grid-area-özelliği">grid-area özelliği</h2>
+
+<p>CSS grid ögesi özelliklerinden olan <code class="language-plaintext highlighter-rouge">grid-area</code> özelliği grid alanlarını konumlandırmak için kullanılır. Web sayfalarımızı oluştururken belli alanlara bölerek kodlarız. grid yapılarında bu alanları <code class="language-plaintext highlighter-rouge">grid-area</code> özelliğiyle belirler ve grid satır ve sütunları üzerine yerleştirmesini yaparız.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nt">grid-area</span><span class="o">:</span> <span class="nt">satir-baslangici</span> <span class="o">/</span> <span class="nt">kolon-baslangici</span> <span class="o">/</span> <span class="nt">satir-sonu</span> <span class="o">/</span> <span class="nt">kolon-sonu</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><img src="https://fatihhayrioglu.com/images/grid-area-line-tanimi.jpg" alt="grid-area" /></p>
+
+<p>Bir grid alanının, grid üzerindeki yerini dört nokta değeriyle konumlandırabiliyoruz. Bu tanımları grid çizgisini belirleyen rakamlar veya bir önceki yazımızda belirttiğimiz grid çizgi isimleriyle yapabiliriz. Bir yöntem daha vardır ki o da bu yazımızın konusu. <code class="language-plaintext highlighter-rouge">grid-area</code> özelliğine bizim belirleyeceğimiz bir isim tanımlamak ve sonra bu isimleri <code class="language-plaintext highlighter-rouge">grid-template-area</code> özelliğiyle ızgaramız üzerine yerleştirmek.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nt">grid-area</span><span class="o">:</span> <span class="nt">ust-alan</span><span class="o">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Bu isimlendirdiğimiz sayfa öğelerini daha sonra yerlerine oturtacağız.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td> --><td class="rouge-code"><pre><span class="nt">header</span> <span class="p">{</span>
+  <span class="py">grid-area</span><span class="p">:</span> <span class="n">ust-alan</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">aside</span> <span class="p">{</span>
+  <span class="py">grid-area</span><span class="p">:</span> <span class="n">sol-menu</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">section</span> <span class="p">{</span>
+  <span class="py">grid-area</span><span class="p">:</span> <span class="n">icerik</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.banner-alani</span> <span class="p">{</span>
+  <span class="py">grid-area</span><span class="p">:</span> <span class="n">banner-alani</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">footer</span> <span class="p">{</span>
+  <span class="py">grid-area</span><span class="p">:</span> <span class="n">alt-alan</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Sayfamızı oluşturan ögeleri / alanları isimlendirdikten sonra bu alanları kod yazarken kullanacağız.</p>
+
+<p><code class="language-plaintext highlighter-rouge">grid-template-areas</code> tanımı yaparken kodun görsel hali (sırası, boşluklar ve yeri) tarayıcının kodu yorumlamasında etkili oluyor. Görsel yapının tam oturması için özellik ve tanımın ayrı satırlarda tanımlanmak dah mantıklı.</p>
+
+<p>Her bir <strong>grid alan ismi</strong> sayfadaki yerine göre kod blokunda yerleştirilir aralarında boşluk olur, her satır tırnaklarla belirtilir ve bir sonraki satır enter ile aşağı atılır.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td> --><td class="rouge-code"><pre><span class="nt">grid-template-areas</span><span class="o">:</span> 
+  <span class="s1">"ust-alan ust-alan ust-alan"</span>
+  <span class="s1">"sol-menu icerik banner-alani"</span>
+  <span class="s1">"alt-alan alt-alan alt-alan"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>tanımıyla yerleşimimiz yapıyoruz. Kodumuzu uyumlu web öncelikli yaparsak.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td> --><td class="rouge-code"><pre><span class="nt">grid-template-areas</span><span class="o">:</span> 
+  <span class="s1">"ust-alan"</span>
+  <span class="s1">"sol-menu"</span>
+  <span class="s1">"icerik"</span>
+  <span class="s1">"banner-alani"</span>
+  <span class="s1">"alt-alan"</span>
+
+<span class="k">@media</span><span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="py">grid-template-areas</span><span class="p">:</span> 
+    <span class="s1">"ust-alan ust-alan ust-alan"</span>
+    <span class="s1">"sol-menu icerik banner-alani"</span>
+    <span class="s1">"alt-alan alt-alan alt-alan"</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<blockquote>
+  <p>codepen örneklerinde masaüstü görünümünü görmek için zoom değerini 0.25x seçiniz.</p>
+</blockquote>
+
+<iframe height="364" style="width: 100%;" scrolling="no" title="grid-template-areas - 1" src="//codepen.io/fatihhayri/embed/gyzypB/?height=364&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<p>Süper değil mi? Sihir gibi. <strong>Sayfa planlama sihirbazı.</strong></p>
+
+<p>Bu yapıyla farklı sayfa planlarını çok kolay bir şekilde kodlayabiliriz. Mesela <code class="language-plaintext highlighter-rouge">alt-alan</code> grid alanının birinci kolonu <code class="language-plaintext highlighter-rouge">sol-menu</code>alanına üçüncü kolonunu da <code class="language-plaintext highlighter-rouge">banner-alani</code>‘na vermek için sadece iki değişiklik yapmamız yeterli.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td> --><td class="rouge-code"><pre><span class="nt">grid-template-areas</span><span class="o">:</span> 
+  <span class="s1">"ust-alan ust-alan ust-alan"</span>
+  <span class="s1">"sol-menu icerik banner-alani"</span>
+  <span class="s1">"sol-menu alt-alan banner-alani"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<blockquote>
+  <p>codepen örneklerinde masaüstü görünümünü görmek için zoom değerini 0.25x seçiniz.</p>
+</blockquote>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid-template-areas - 2" src="//codepen.io/fatihhayri/embed/rbvbLM/?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<p>Yapboz parçalarını yerleştirir gibi sayfamızı planlayabiliyoruz. Burada aklımızda olması gereken bir kuralı hatırlatmakta yarar var. Bu tanımlar kare veya dikdörtgen alanları tanımlamak için geçerlidir.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/grid-template-areas.gif" alt="grid-template-areas" /></p>
+
+<p>Yukarıdaki örnekler hep eşit kolonlu yapılar için verilmiş örnekler, gerçekte eşit olmayan kolonlar için boş alanlar tanımlamamız gerekir. Bu gibi boş alan tanımları için <code class="language-plaintext highlighter-rouge">grid-template-areas</code>özelliğinde boşluk gelen yerleri nokta (.) koyarak belirtiriz.</p>
+
+<p>Bu özelliği başta tanımlarken görselliğin önemli olduğunu söylemiştik. Tek nokta kolon yapılarını eşit göstermediği için düzensiz görünebilir kolon genişliklerini eşitlemek için tek nokta yerine bitişik olarak kolon genişliği kadar (……) nokta koyabiliriz.</p>
+
+<blockquote>
+  <p>codepen örneklerinde masaüstü görünümünü görmek için zoom değerini 0.25x seçiniz.</p>
+</blockquote>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="grid-template-areas - aksak kolon" src="//codepen.io/fatihhayri/embed/NmMmrZ/?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
+
+<blockquote>
+  <p>Noktalar arasına boşluk koyarsak herbir nokta bir grid alanı anlamına gelir.</p>
+</blockquote>
+
+<p>Bu özelliği anlamak için örnek kodlar üzerine değişiklik yaparak pekiştirin. Bu denemeler çok eğlenceli. :)</p>
+
+<p>Grid’e devam edeceğiz.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<p>Serkan Bektaş’a teşekkürü unutmayalım.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas</a></li>
+  <li><a href="https://alligator.io/css/css-grid-layout-grid-areas/">https://alligator.io/css/css-grid-layout-grid-areas/</a></li>
+  <li><a href="https://css-tricks.com/simple-named-grid-areas/">https://css-tricks.com/simple-named-grid-areas/</a></li>
+  <li><a href="https://thoughtbot.com/blog/concise-media-queries-with-css-grid">https://thoughtbot.com/blog/concise-media-queries-with-css-grid</a></li>
+  <li><a href="https://dev.to/kenbellows/css-grid-areas-are-amazing-1gha">https://dev.to/kenbellows/css-grid-areas-are-amazing-1gha</a></li>
+  <li><a href="https://www.smashingmagazine.com/2018/04/art-directing-web-css-grid/">https://www.smashingmagazine.com/2018/04/art-directing-web-css-grid/</a></li>
+  <li><a href="https://twitter.com/Una/status/846159483197894656?s=20">https://twitter.com/Una/status/846159483197894656?s=20</a></li>
+  <li><a href="https://twitter.com/jtucholski/status/1084664028260114432?s=20">https://twitter.com/jtucholski/status/1084664028260114432?s=20</a></li>
+  <li><a href="https://hashnode.com/post/grid-template-areas-css-grid-system-cjqoozpee015i1fs1ezmipxg1">https://hashnode.com/post/grid-template-areas-css-grid-system-cjqoozpee015i1fs1ezmipxg1</a></li>
+  <li><a href="https://www.youtube.com/watch?v=v5KzBPUEgGQ">https://www.youtube.com/watch?v=v5KzBPUEgGQ</a></li>
+  <li><a href="https://www.joomlashack.com/blog/tutorials/how-to-place-items-with-grid-template-areas/">https://www.joomlashack.com/blog/tutorials/how-to-place-items-with-grid-template-areas/</a></li>
+</ul>
+:ET

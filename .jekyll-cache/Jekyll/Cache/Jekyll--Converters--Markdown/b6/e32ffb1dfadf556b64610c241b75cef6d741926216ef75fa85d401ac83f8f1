@@ -1,0 +1,344 @@
+I"�T<p>Arayüz geliştiricilerin dünyası <a href="https://nodejs.org/">Nodejs</a> sonrasında olumlu olarak değişti. Değişmeye de devam ediyor. Hızlı gelişen bu dünyada en büyük sorunlardan bir tanesi çok fazla araç çıkıyor ve bu araçları öğrenmek zaman alıyor.</p>
+
+<p>Bu gelişmelerin başında Grunt, Gulp gibi işleri otomatize eden yapılar ve sonrasında paketleme araçları olarak geçen <a href="https://webpack.js.org/">Webpack</a>, <a href="http://browserify.org/">Browserify</a> ve <a href="https://github.com/rollup/rollup">Rollup</a> gibi yapılar. Bu araçlar çok güzel ve bizi bir çok dertten kurtarıyor. Ancak ilk pargrafta bahsettiğim gibi bazı geliştiriciler bu nasıl bir iş her hafta yeni bir şey çıkıyor takip edemiyoruz diye yakınıyor.</p>
+
+<p>Tam bunları söylerken size yeni bir geliştirme aracını tanıtmak istiyorum. Parceljs. Parcel bizlere yapılandırma dosyası olmadan paketleme yapma imkanı sağlayan bir araç. Webpack çok güzel ve kullanışlı ancak yapılandırma dosyasını oluşturmak çok zor. Ayrıca webpack’in öğrenme eğrisi yüksek. (Benim gördüğüm kadarıyla.)</p>
+
+<p>Parcel tam bu noktada ortaya çıkıyor ve diyorki yapılandırma dosyası oluşturmadan da bu işleri yapabiliriz. Bu yaklaşım insanların hoşuna gitti, şu an github’da 18.300 yıldızı var. Kısa sürede bu kadar beğeni toplaması bu kolaylığından kaynaklanıyor. Webpack bu gelişmelere kayıtsız kalmadı ve Webpack 4.0 sürümünde yapılandırma yapmadan bir çözüm üreteceğini belirtti.</p>
+
+<p>Parcel aynı zamanda diğerlerine göre daha hızlı bir araç olduğunu yayınladığı hız testleriyle idda etti.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paketleyici</th>
+      <th>Zaman</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>browserify</td>
+      <td>22.98s</td>
+    </tr>
+    <tr>
+      <td>webpack</td>
+      <td>20.71s</td>
+    </tr>
+    <tr>
+      <td>parcel</td>
+      <td>9.98s</td>
+    </tr>
+    <tr>
+      <td>parcel - with cache</td>
+      <td>2.64s</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Parcel’in temel özellikleri</p>
+
+<ul>
+  <li>Hızlı bir derleme</li>
+  <li>Tüm paket ihtiyaçları için hızlı ve kolay çözüm</li>
+  <li>Otomatik dönüştürme. Babel, PostCSS ve PostHTML</li>
+  <li>Sıfır yapılandırma ile kod bloklarına ayırma imkanı</li>
+  <li>Modüle özel güncelleme (Hot module replacement)</li>
+  <li>Kolay hata ayıklama imkanı</li>
+</ul>
+
+<p>Bu vaatlerin gerçekliğini uygulama yaptıkça göreceğiz.</p>
+
+<p>Bu makalede basit bir sitede parcel kullanımı göreceğiz.</p>
+
+<p>Hadi başlayalım.</p>
+
+<h2 id="kurulum">Kurulum</h2>
+
+<p>Parcel’i yarn ve npm ile kurmak için:</p>
+
+<p>Yarn ile:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>yarn global add parcel-bundler
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Npm için:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>npm <span class="nb">install</span> <span class="nt">-g</span> parcel-bundler
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>kurulum bititkten sonra yeni bir proje klasörü açalım.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">mkdir </span>parcel-ikinci-deneme
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>niye ikinci dediğimi aşağıda açıklayacağım.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">cd </span>parcel-ikinci-deneme
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>proje klasörüne girelim.</p>
+
+<p><strong>package.json</strong> dosyasını oluşturmak için:</p>
+
+<p>yarn için</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>yarn init <span class="nt">-y</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>npm için</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>npm init <span class="nt">-y</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>çalıştıralım. Gerekli bilgileri verdikten sonra <strong>package.json</strong> dosyamız hazır olacaktır. Detaylı bilgiye <a href="https://fatihhayrioglu.com/nodejs-npm/">buradan</a> ulaşabilirsiniz.</p>
+
+<p>Sıra geldi basit bir site yapısı oluşturmaya. Basit olduğu için bir html ve bir js dosyası oluşturup başlayalım.</p>
+
+<p>ister terminalden</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">touch </span>index.html <span class="o">&amp;&amp;</span> <span class="nb">touch </span>index.js
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>ile oluşturun isterseniz editörünüzden oluşturun. Dosyaları oluşturduktan sonra basit bir html içeriği oluşturup, dosyamıza js dosyasını eklyelim.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"tr"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Parcel İkinci Deneme<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"./index.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>javascript dosyamıza da</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Şampiyon Trabzonspor</span><span class="dl">'</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>yazalım. Buraya kadar normal bir süreç idi. Sıra geldi Parcel’i çalıştırmaya. <strong>package.json</strong> dosyamıza parcel’i çalıştırmak için aşağıdaki kodu eklyelim.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="p">...</span>
+<span class="dl">"</span><span class="s2">scripts</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">start</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">parcel index.html</span><span class="dl">"</span>
+<span class="p">},</span>
+<span class="p">.....</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>sonra terminalden</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>npm run start
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>deyince hata verdi :(</p>
+
+<p>İlk denememde hata aldım biraz araştırdığımda cevabını da bulamadım. İlk denemem için fazla zamanım olmadığı için öylece bıraktım.</p>
+
+<p>Sonra belirli bir süre sonra ikinci bir deneme yapayım dedim. Aynı yoları izledim. Yine aynı hatayı aldım biraz araştırınca hatanın Nodejs sürümünden kaynakladığını öğrendim. Hatayı şimdi net hatırlamıyorum ama şu idi sanki</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>Can<span class="s1">'t find variable: require
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Ondan dolayı proje ismini <strong>parcel-ikinci-deneme</strong> yaptım. :)</p>
+
+<p>Çözüm için nvm kurmam gerekti. Sonra nvm ile ilgili bir makale de yazdım. <a href="https://fatihhayrioglu.com/nvm-nedir-nasil-kullanilir/">NVM Nedir? Nasıl Kullanılır?</a> İşin ilginç olan tarafı Parcel dokümantasyonlarında node sürümüyle ilgili bir bilgilendirmenin olmamasıydı. Ben node’un 8.9.3 sürümüne geçince hata düzeldi.</p>
+
+<p>Sonra tekrar</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>npm run start
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>deyince çalıştı ve aşağıdaki gibi bir görüntü verdi.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/parcel-run.png" alt="parcel ilk çalışma" /></p>
+
+<p>Tarayıcıda <strong>http://localhost:1234/</strong> açınca tarayıcının konsolunda <strong>‘Şampiyon Trabzonspor’</strong> yazısını gördüm. Sevindim :)</p>
+
+<p><img src="https://fatihhayrioglu.com/images/parcel-browser.png" alt="parceljs ilk deneme chrome sonuç" /></p>
+
+<p>Parcel bizim için bir yerel sunucu çalıştırdı. Ayrıca projede otomatik <strong>dist</strong> klasörü oluşturdu. İçinde iki adet dosya var.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/pacel-dist.png" alt="parcel dist" /></p>
+
+<p>Evet parcel’i çalıştırdık ama çok da birşey yapmadık. Biraz iş ekleyelim.</p>
+
+<h2 id="projeye-sass-ekleyelim">Projeye Sass ekleyelim</h2>
+
+<p>Pacel’i çalıştırmaya başladık. Şimdi ona bazı işler ekleyerek çalışmasını görelim. İlk olarak CSS önderleyicilerden biri olan Sass ekleyelim.</p>
+
+<p>Sass eklemek için önce projeye node-sass paketini eklemeliyiz. Daha önce genel olarak kurdu iseniz bu adımı geçebilirisiniz. Kurmayanlar için</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>npm <span class="nb">install </span>node-sass
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>veya yarn için</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>yarn add node-sass
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>paketi ekleyelim. Bir tane sass dosyası ekleyelim. <strong>style.sass</strong></p>
+
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="nt">body</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span>
+
+<span class="nt">ul</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span>
+
+  <span class="nt">li</span>
+    <span class="nl">flex</span><span class="p">:</span> <span class="m">1</span> <span class="m">0</span> <span class="nb">auto</span>
+
+    <span class="nt">a</span>
+      <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu sass dosyasını <strong>index.js</strong>‘e ekleyelim. Parcel’in dosyanızı derlemesi çin <strong>index.js</strong>‘e eklemeniz gerektiğini unutmayın.</p>
+
+<p><strong>index.js</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">import</span> <span class="dl">'</span><span class="s1">./assets/sass/style.sass</span><span class="dl">'</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Tekrar parcel’i çalıştıralım.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>npm run start
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Parcel kodumuzu derleyip aşağıdaki gib bir sonuç verecektir. Ayrıca <strong>dist</strong> kalsörüne de <strong>pacell.css</strong> dosyasını ekleyecektir.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/parcel-sonuc1.gif" alt="parceljs sass eklemek" /></p>
+
+<h2 id="es6-import-kullanımı">ES6 import kullanımı</h2>
+
+<p>Parcel ES6 <strong>import</strong> ve CommonJs <strong>require</strong> kullanımlarını destekliyor. Biz burada ES6 import kullanarak sayfamıza dışardan bir js dosyası ekleyelim.</p>
+
+<p><strong>veri.js</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">export</span> <span class="kd">const</span> <span class="nx">detay</span> <span class="o">=</span> <span class="p">{</span>
+     <span class="na">adSoyad</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Fatih Hayrioğlu</span><span class="dl">"</span><span class="p">,</span>
+     <span class="na">sirket</span><span class="p">:</span> <span class="dl">"</span><span class="s2">zingat.com</span><span class="dl">"</span><span class="p">,</span>
+     <span class="na">gorev</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Arayüz Geliştirici</span><span class="dl">"</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu dosyayı index.js içinde çekip html içine yazalım.</p>
+
+<p><strong>index.js</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="k">import</span> <span class="dl">'</span><span class="s1">./assets/sass/style.sass</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">detay</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./veri</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">bilgi</span> <span class="o">=</span> <span class="s2">`Benim adım </span><span class="p">${</span><span class="nx">detay</span><span class="p">.</span><span class="nx">adSoyad</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">detay</span><span class="p">.</span><span class="nx">sirket</span><span class="p">}</span><span class="s2"> şirketinde </span><span class="p">${</span><span class="nx">detay</span><span class="p">.</span><span class="nx">gorev</span><span class="p">}</span><span class="s2"> görevinde çalışıyorum.`</span><span class="p">;</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">icerik</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">bilgi</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>sonuç aşağıdaki gibi görünecektir.</p>
+
+<p><img src="https://fatihhayrioglu.com/images/parcel-sonuc-2.gif" alt="parceljs es6 import denemesi sonucu" /></p>
+
+<h2 id="projeyi-yayına-alma">Projeyi yayına alma</h2>
+
+<p>Projelerimiz yayına almak için <strong>package.json</strong> dosyasına bir satır daha eklemek gerekiyor.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="s2">"build"</span>: <span class="s2">"parcel build index.js"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>bu kodu çalıştırdığımızda parcel bize <strong>dist</strong> klasörü içinde yayına çıkacak bir dosyaları hazırlar.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>parcel build index.js <span class="nt">-d</span> yayin/ciktisi
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>kodu ile de <strong>dist</strong>‘ten farklı bir klasöre de çıktı alabiliriz.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Bu denemeden sonra şunu söyliyebilirim ki Parcel ufak ve orta çaplı projelerde çok güzel iş görür. Ancak büyük bir projede nasıl olur bilemedim. Benim tahminim büyük projeler için biraz erken. Parcel çok hızlı bir şekilde gelişiyor. Birkaç gün önce 1.5 sürümü çıktı. Yakın bir gelecekte tüm paketleme ihtiyaçlarımızı tek başına karşılayan bir çözüm olabilir.</p>
+
+<p>Hızlı gelişen araçların takibi zor. Ancak Parcel gibi yeni araçlar sayesinde zamanla bu işlerin basitleşeceğini düşünüyorum.</p>
+
+<p>Makalenin başında Parcel’in temel özelliklerini belirttikten sonra bunlar vaatler gerçekliğini uygulama yaptıkça göreceğiz demiştim. İlk uygulama sonunda vaatleri tek tek incelersek:</p>
+
+<ul>
+  <li><strong>Hızlı bir derleme</strong> basit bir projede sonuçlar hızlı ama büyük projede test etmek gerek.</li>
+  <li><strong>Tüm paket ihtiyaçları için hızlı ve kolay çözüm</strong> Bu proje için evet ama büyük projelerde durum ne olur bakacağız.</li>
+  <li><strong>Otomatik dönüştürme. Babel, PostCSS ve PostHTML</strong> Bu projede kullanmadık.</li>
+  <li><strong>Sıfır yapılandırma ile kod bloklarına ayırma imkanı</strong> Bu özellik süper.</li>
+  <li><strong>Modüle özel güncelleme (Hot module replacement)</strong> Güzel çalışıyor. Proje küçük olduğu için hızlı ancak proje büyüyünce ne olur bakmak lazım.</li>
+  <li><strong>Kolay hata ayıklama imkanı.</strong> Webpack’e göre daha açıklayıcı hataları var.</li>
+</ul>
+
+<p>Kaynak kodlarına <a href="https://github.com/fatihhayri/parcel-ikinci-deneme">https://github.com/fatihhayri/parcel-ikinci-deneme</a> buradan erişebilirsiniz.</p>
+
+<p>Kalın sağlıcakla.</p>
+
+<p>## Kaynaklar</p>
+
+<ul>
+  <li><a href="https://parceljs.org/">https://parceljs.org/</a></li>
+  <li><a href="https://scotch.io/tutorials/a-zero-configuration-module-bundler-meet-parcel?ref=daily">https://scotch.io/tutorials/a-zero-configuration-module-bundler-meet-parcel?ref=daily</a></li>
+  <li><a href="https://github.com/parcel-bundler/parcel/issues/105">https://github.com/parcel-bundler/parcel/issues/105</a></li>
+  <li><a href="https://github.com/parcel-bundler/website/pull/38">https://github.com/parcel-bundler/website/pull/38</a></li>
+  <li><a href="https://hackernoon.com/code-splitting-with-parcel-web-app-bundler-fe06cc3a20da">https://hackernoon.com/code-splitting-with-parcel-web-app-bundler-fe06cc3a20da</a></li>
+  <li><a href="https://medium.freecodecamp.org/all-you-need-to-know-about-parcel-dbe151b70082">https://medium.freecodecamp.org/all-you-need-to-know-about-parcel-dbe151b70082</a></li>
+  <li><a href="https://github.com/parcel-bundler/parcel/issues/105">https://github.com/parcel-bundler/parcel/issues/105</a></li>
+</ul>
+:ET

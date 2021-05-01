@@ -1,0 +1,76 @@
+I"�<p>zingat.com’da yaklaşık 4-5 aydır jquery yerine javascript ile yazmaya başladık. Çalışma arkadaşlarımın da yardımıyla jQuery’yi siteden çıkarma hedefimize doğru ilerliyoruz. Bu süreçte gördüklerimi sizlerle paylaşıyorum. Bu makalemde javascript ile elementlere nasıl stil atarız ve atanmış stil bilgisini nasıl okuruz sorularının cevabını bulacağız.</p>
+
+<h2 id="hesaplanan-değer-computed-values-ve-çözümlenmiş-değer-resolved-values-kavramları">Hesaplanan değer (Computed values) ve çözümlenmiş değer (resolved values) kavramları</h2>
+
+<p>Değerler konusunda CSS’de iki farklı anlayış vardır.</p>
+
+<p>1- <strong>Hesaplanan değerler:</strong> Bir elemana tanımlanmış değerler ve kalıtsal gelen değerlerin hepsinin olduğu değerlere denir. Örneğin <code class="language-plaintext highlighter-rouge">line-height: 1.3em</code> veya <code class="language-plaintext highlighter-rouge">font-size: 120%</code>.</p>
+
+<p>2- <strong>Çözümlenmiş değerler:</strong> Elemana uygulanmış değerlerin son halidir. Yukarıdaki örneklerde <code class="language-plaintext highlighter-rouge">line-height: 1.3em</code> ve <code class="language-plaintext highlighter-rouge">font-size: 120%</code> değerleri göreceli değerlerdir. Tarayıcı bu değerleri uygulamadan önce mutlak değerlere çevirerek atar. Örneğin <code class="language-plaintext highlighter-rouge">line-height: 16px</code> ve <code class="language-plaintext highlighter-rouge">font-size: 18px</code> olarak çevirir ve uygular.</p>
+
+<p>Standart oluşturucular başlangıçta <strong>getComputedStyle</strong> metodu hesaplanan değerleri almak için oluşturdu ancak sonra çözümlenmiş değerlerin alınmasının daha avantajlı olduğuna karar verip değiştirdi. Bundan dolayıdır ki <strong>getComputedStyle</strong> metodu çözümlenmiş değerleri bize verir.</p>
+
+<h2 id="stilleri-okumak">Stilleri okumak</h2>
+
+<p>Stilleri okumak için <strong>getComputedStyle</strong> metodunu kullanırız.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">stiller</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">getComputedStyle</span><span class="p">(</span><span class="nx">elem</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu elemana atanmış tüm stilleri aldık.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">renk</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">getComputedStyle</span><span class="p">(</span><span class="nx">elem</span><span class="p">).</span><span class="nx">color</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu kod ile de elemana atanmış renk değerini alırız. Atanmış diğer stilleride aynı şekilde alabiliriz.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">padding</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">getComputedStyle</span><span class="p">(</span><span class="nx">elem</span><span class="p">).</span><span class="nx">padding</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Elemanın padding değerini aldık.</p>
+
+<h2 id="elemente-stil-atamak">Elemente stil atamak</h2>
+
+<p><code class="language-plaintext highlighter-rouge">elem.style</code> objesi style özniteliğine karşılık gelen bir nesnedir.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nx">elem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">red</span><span class="dl">'</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>kodu</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">'deneme'</span> <span class="na">style=</span><span class="s">'color:red'</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>şeklinde uygulanacaktır.</p>
+
+<p>Dikkat etmemiz gereken bir ayrıntı da birden fazla kelimeden oluşan tanımların CSS ile kebap-case şeklinde birleştirilirken, javascript ile birleştirilirken camelCase şeklinde yazarız. Örneğin <code class="language-plaintext highlighter-rouge">background-color</code> tanımını <code class="language-plaintext highlighter-rouge">elem.style.backgroundColor</code> şeklinde tanımlarız.</p>
+
+<h3 id="çoklu-stil-tanımlamak">Çoklu stil tanımlamak</h3>
+
+<p>Birden fazla stil tanımlamak için <code class="language-plaintext highlighter-rouge">cssText</code> özelliğini kullanırız.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="nx">elem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">cssText</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">background-color: red; color: white</span><span class="dl">'</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Bu özelliğin şöyle bir dezavantajı var. Mevcut tanımların üzerine yeni stilleri yazar, yeni ekleme yapmaz. Bunu çözmek için bir kaç yöntem var. <a href="https://plainjs.com/javascript/styles/set-and-get-css-styles-of-elements-53/">Çoklu tanım için yarımcı bir metot yazmak</a>, ikincisi ise <a href="https://gomakethings.com/two-ways-to-set-an-elements-css-with-vanilla-javascript/">global bir css dosyasını oluşturup ona tanımlamak.</a></p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynaklar">Kaynaklar</h2>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle">https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle</a></li>
+  <li><a href="https://plainjs.com/javascript/styles/set-and-get-css-styles-of-elements-53/">https://plainjs.com/javascript/styles/set-and-get-css-styles-of-elements-53/</a></li>
+  <li><a href="https://www.sitepoint.com/jquery-vs-raw-javascript-2-css3-animation/">https://www.sitepoint.com/jquery-vs-raw-javascript-2-css3-animation/</a></li>
+  <li><a href="https://javascript.info/styles-and-classes">https://javascript.info/styles-and-classes</a></li>
+  <li><a href="http://youmightnotneedjquery.com/">http://youmightnotneedjquery.com/</a></li>
+  <li><a href="https://gomakethings.com/getting-an-elements-css-attributes-with-vanilla-javascript/">https://gomakethings.com/getting-an-elements-css-attributes-with-vanilla-javascript/</a></li>
+  <li><a href="https://gomakethings.com/two-ways-to-set-an-elements-css-with-vanilla-javascript/">https://gomakethings.com/two-ways-to-set-an-elements-css-with-vanilla-javascript/</a></li>
+</ul>
+:ET

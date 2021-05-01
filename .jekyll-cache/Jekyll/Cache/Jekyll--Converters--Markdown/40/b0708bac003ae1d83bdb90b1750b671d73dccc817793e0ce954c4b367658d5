@@ -1,0 +1,55 @@
+I"�<p>fatihhayrioglu.com sitesini <a href="https://pages.github.com/">github pages</a> üzerinde barındırıyorum. Alan adı godady’de kayıtlı. Bir arkadaşımın önerisiyle sitemi cloudflare’e ekledim. HTTPS, güvenlik ve performans yetenekleri nedeniyle tercih etmiştim.</p>
+
+<blockquote class="twitter-tweet" data-lang="tr"><p lang="tr" dir="ltr">Tam siteyi github page&#39;den gitlab page geçirmeyi düşünürken bu haber iyi geldi. <a href="https://t.co/nQe1xZMs6W">https://t.co/nQe1xZMs6W</a></p>&mdash; Fatih Hayrioğlu (@fatihhayri) <a href="https://twitter.com/fatihhayri/status/991387772765310990?ref_src=twsrc%5Etfw">1 Mayıs 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Geçenlerde github pages HTTPS desteği vermeye başlayınca cloudflare’i sorgulamaya başladım. HTTPS yoksa performans etkisini çok görmedim, zaten güvenlikle ilgili sıkıntı çıkacak bir site değil. Ben en iyisi bu cloudflare’den kurtulayım dedim.</p>
+
+<p>Benim gibi devamlı alan adı işleri ile uğraşmayan biriyseniz. Neyin ne olduğunu çabuk unutuyorsunuz. Amacım cloudflare’de olan yönlendirmemi bitirip alan adını direk github pages’e eklemek ve HTTPS’i aktifleştirmek.</p>
+
+<p>İlk yaptığım şey <a href="https://www.cloudflare.com/">cloudflare.com</a>‘a gidip sitemi buradan silmek oldu. Duraklatmak değil silmek tüm bağlarınızı koparıyor cloudflare’den.</p>
+
+<p>İkinci adım olarak alan adım yöneticinize gidip DNS Nameservers’larını normal değerine döndürmek.</p>
+
+<p><img src="/images/godady-yonet.png" alt="manage domain" /></p>
+
+<p>Alan adını yönet(manage) butonuna tıkladıktan sonra gelen sayfada aşağı inerek DNS yönet linkine tıkladım.</p>
+
+<p><img src="/images/godady-dns-yonet.png" alt="DNS Yönet" /></p>
+
+<p>Custom olan seçme kutusundaki değeri default’a çektim. Artık alana adım godady tarafından yönetiliyor.</p>
+
+<p>Aynı sayfayı yenilediğimizde sayada artık DNS yönetimi alanları geliyor.</p>
+
+<p>Burada bir kaç değişiklik yapmamız gerekiyor.</p>
+
+<ul>
+  <li>CNAME satırını “www” github pages website sitenizin adresi ile değiştirmeniz gerekiyor  (Benim için <strong>fatihhayri.github.io</strong>)</li>
+  <li>A tipi satırını github pages ip’siyle değiştirmemiz gerekiyor. 185.199.108.153 (HTTPS sonrası değişerek bu ip yi vermeye başladı.)</li>
+  <li>Sonra aşağıdan ekle(add) diyerek 3 kere sırasıyla 185.199.109.153, 185.199.110.153, 185.199.111.153 iplerini girmek yeterli. İlk kaydettiğimizde altta görünüyor ama sonra godady ekran göründüğü gibi üste alıyor bunları :)</li>
+</ul>
+
+<p><img src="/images/godady-a-type-ekleme.png" alt="godady ip ekleme" /></p>
+
+<p>Sonuç olarak godady DNS yönetimi ekranınınz aşağıdaki gibi bir görünüme kavuşacak. Yarım saat yazsa da 5 dak sonra güncelledi.</p>
+
+<p><img src="/images/godady-dns-sonuc.png" alt="godady DNS yönetimi son" /></p>
+
+<p>Eğer CNAME dosyanız yoksa root’a ekleyip kendi domainizi içine yazıp github pages’e eklemeniz gerekiyor. Ben bunu daha önce eklediğim için tekrar eklemedim.</p>
+
+<p>Son olarak Github Pages ayarlar sayfasına gidip</p>
+
+<p><img src="/images/github-pages-ayarlar.png" alt="github ayarlar" /></p>
+
+<p>Aşağıdaki HTPS kutucuğunu aktifleştirerek bu işe son veriyorsunuz.</p>
+
+<p><img src="/images/github-pages-htttps-aktif.png" alt="github pages https aktifleştirme" /></p>
+
+<p>Kalın sağlıcakla.</p>
+
+<h2 id="kaynak">Kaynak</h2>
+
+<ul>
+  <li><a href="https://hackernoon.com/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b">https://hackernoon.com/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b</a></li>
+</ul>
+:ET
