@@ -24,13 +24,13 @@ Geçiş sırasında karşılaştığım sorunlar ve çözümleri burada paylaşa
 
 Web kodlarken alıştığımız div, span, image, ul, ol ve button yerine React Native'de aşağıdaki karşılıkları kullanılıyor. 
 
-|HTML| React Native  |
-|--|--|
-| `<div>` | `<View>` |
-| `<span>` ve `<p>` | `<Text>` |
-| `<ul>`, `<ol>` | `<FlatList>` |
-| `<image>` | `<Image>` |
-| `<button>` | `<TouchableHighlight>` veya `<TouchableOpacity>` |
+|HTML               | React Native  |
+|----------         |:-------------:|
+| `<div>`           |    `<View>`   |
+| `<span>` ve `<p>` |    `<Text>`   |
+| `<ul>`, `<ol>`    |  `<FlatList>` |
+| `<image>`         |    `<Image>`  |
+| `<button>`        | `<TouchableHighlight>` veya `<TouchableOpacity>` |
 {:.table}
  
  Genel olarak sadece isimleri değişiyor. Kullanımda ufak değişikler olsa da dokümantasyondan kolaylıkla kavrayıp devam ediyoruz.
