@@ -45,6 +45,7 @@ Tarayıcıların bu konudaki tavırlarını gösteren liste aşağıdaki gibidir
 | Firefox | 3sn | FOIT |
 | Safari | 3sn | FOIT |
 | IE/EDGE | 0sn | FOUT |
+{:.table}
 
 ## Özel yazı tipi yükeleme peryotları
 

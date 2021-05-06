@@ -61,7 +61,7 @@ Bunun gibi başka işlevsel operatörlerde mevcuttur.
  | lt         | - den küçük             | <!--[if IE lt 5.5]>	  |
  | lte        | - den küçük veya eşit   | <!--[if IE lte 5.5]>	  |
  | !          | değilse                 | <!--[if !IE 5.5]>		  |
-
+{:.table}
  
 
 	:::html

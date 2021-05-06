@@ -24,6 +24,7 @@ Parcel aynı zamanda diğerlerine göre daha hızlı bir araç olduğunu yayınl
 |webpack|20.71s|
 |parcel|9.98s|
 |parcel - with cache|2.64s|
+{:.table}
 
 Parcel'in temel özellikleri
 
