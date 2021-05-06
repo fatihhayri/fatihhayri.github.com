@@ -16,7 +16,7 @@ React ile 1,5 sene geliştirme yaptıktan sonra yeni projede React Native (Netle
  
  Yeni projeye expo ile başladık. Expo hakkında detay için [https://expo.io/](https://expo.io/) buraya bakabilirsiniz. Expo ile react native  projeleri geliştirmek gerçekten çok kolay. Projenizi gerçek cihazda test etmemiz çok kolaylaştırıyor. React Native'e hızlı giriş için süper bir platform.
 
-Projeye başlayıp işleri aldıkça bazı problemlerle karşılaştım. Çözmek için [stackoverflow](https://stackoverflow.com/), [react native](https://reactnative.dev/) sitesi ve çalışma arkadaşlarımın yardımıylı geçiş tahminimden daha kolay oldu. İlerleyen zamanlarda bazı ciddi sorunlar yaşasak da genel olarak beklediğimden daha sorunsuz bir geçiş oldu. 
+Projeye başlayıp işleri aldıkça bazı problemlerle karşılaştım. Çözmek için [stackoverflow](https://stackoverflow.com/), [react native](https://reactnative.dev/) sitesi ve çalışma arkadaşlarımın yardımını kullandım. Bu sayede geçiş tahminimden daha kolay oldu. İlerleyen zamanlarda bazı ciddi sorunlar yaşasak da genel olarak beklediğimden daha sorunsuz bir geçiş oldu. 
 
 Geçiş sırasında karşılaştığım sorunlar ve çözümleri burada paylaşayım.
 
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
 
 Başta nereye baksam sorun olarak gelse de zamanla oturuyor ve hepsine alışıyorsunuz. Sorunların kısa sürede ve kolayca halledilmesi geçişi kolaylaştırıyor. Bu yazıda ilk başta yaşadığım sorunları ve çözümleri yazdım. Zamanım olursa başka sorun ve çözümleri de paylaşmaya çalışırım.
 
-Beraber çalıştığım arkadaşlarım trendyol-tech'de bu proje boyunca yaşadıklarımız ve kullandığımız metodları paylaştılar. Eğer hala okumadıysanız okumanızı öneririr.
+Beraber çalıştığım arkadaşlarım trendyol-tech'de bu proje boyunca yaşadıklarımız ve kullandığımız metodları paylaştılar. Okumanızı öneririm.
 
  - [Trendyol GO — Bir Front-End Teknoloji Hikayesi](https://medium.com/trendyol-tech/trendyol-go-bir-front-end-teknoloji-hikayesi-1d741322a545)
  - [React, Google Maps ve WebSocket Performans Sorunu](https://medium.com/trendyol-tech/react-google-maps-ve-websocket-performans-sorunu-6572a1be177f)
