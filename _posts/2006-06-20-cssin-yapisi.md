@@ -30,7 +30,7 @@ h1 {
 }
 {% endhighlight %}
 
-şeklinde arada boşluk verilerekde bildirm yapılabilir.
+şeklinde arada boşluk verilerek de bildirim yapılabilir.
 Burada ilki font'un boyutunu ikincisi ise font ismini gösterir. İleride
 bu konuya daha ayrıntılı gireceğiz. Ayrıca sadece font etiketine özel "
 / " kullanımı vardır örnek aşağıda:
