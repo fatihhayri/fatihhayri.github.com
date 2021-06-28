@@ -10,13 +10,13 @@ image:
   feature: flex-grid.png
 ---
 
-Karşılaştırmaya girmeden bir önceki [Grid ile Uyumlu(Resposive) Sayfalar Yapmak](https://fatihhayrioglu.com/grid-ve-uyumlu-responsive-sayfalar-yapmak/ "Grid ile Uyumlu(Resposive) Sayfalar Yapmak") yazısının girişinde yazdığımız aşağıdaki paragrafları tekrar hatırlayalım.
+Karşılaştırmaya girmeden bir önceki [Grid ile Uyumlu(Responsive) Sayfalar Yapmak](https://fatihhayrioglu.com/grid-ve-uyumlu-responsive-sayfalar-yapmak/ "Grid ile Uyumlu(Responsive) Sayfalar Yapmak") yazısının girişinde yazdığımız aşağıdaki paragrafları tekrar hatırlayalım.
 
 > CSS grid modülü çıkana kadar sayfa planlama biz geliştiricilere modül, özellik grubu veya tanım olarak bir çözüm sunmamıştı. Geliştiriciler mevcut şartları sağlayacak özellikleri sayfa planlaması için kullandı.
 > 
 > İlk olarak `<table>` etiketiyle ve `position` tanımlarıyla HTML yoğunluklu çözmeye çalıştık. Daha sonra `<div>` etiketi ve `float`, `width` tanımlarıyla CSS yoğun çözümlerle çözmeye çalıştık. Daha sonra `flex` ile çözmeye çalıştık ancak bunların hiçbiri W3C’nin sayfa planlama için çıkardığı özellikler değildi. Belli bir amaca hizmet ediyordu ve geliştiriciler tarafından sayfa planlama için kullanıldı.
 > 
-> İlk defa sayfa planlama için bir modül olarak grid modülünü biz geliştiricilere sundu. Tüm ihtiyaçları gidermesi zor olsa da birçok gerekliliği karşılıyor. Yeni eklenen `subgrid` özelliği de sayfa planlamadaki ihtiyaçları karşılamaya yönelik. Ayrıca daha yeni eklenen grid `masonry` özelliği standart koyucuların ihtiyaçlara göre çözüm üretme eğiliminde olduğunu gösteriyor.
+> İlk defa sayfa planlama için bir modül olarak grid modülünü biz geliştiricilere sundu. Tüm ihtiyaçları gidermesi zor olsa da birçok ihtiyacı karşılıyor. Yeni eklenen `subgrid` özelliği de sayfa planlamadaki ihtiyaçları karşılamaya yönelik. Ayrıca daha yeni eklenen grid `masonry` özelliği standart koyucuların ihtiyaçlara göre çözüm üretme eğiliminde olduğunu gösteriyor.
 
 Yani kısaca sayfa planlama grid'in işi. Artık sayfa planında grid kullanacağız. Sadece planlama mı? Yazının devamında detaylarına bakalım.
 
@@ -48,7 +48,7 @@ ve CSS grid ile olarakta;
     -   [CSS Grid kısayolları - grid-template ve grid](https://fatihhayrioglu.com/css-grid-kisayollari-grid-template-ve-grid/)
     -   [CSS grid ile ögeleri üst üste bindirme](https://fatihhayrioglu.com/css-grid-ile-ogeleri-ust-uste-bindirme/)
     -   [Grid geliştirme araçları](https://fatihhayrioglu.com/grid-gelistirme-araclari/)
-    -   [Grid ile Uyumlu(Resposive) Sayfalar Yapmak](https://fatihhayrioglu.com/grid-ve-uyumlu-responsive-sayfalar-yapmak/)
+    -   [Grid ile Uyumlu(Responsive) Sayfalar Yapmak](https://fatihhayrioglu.com/grid-ve-uyumlu-responsive-sayfalar-yapmak/)
 
 Okumanızı öneririm. Şimdi aradaki önemli farkları inceleyelim.
 
