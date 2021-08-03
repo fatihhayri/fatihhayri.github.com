@@ -124,13 +124,13 @@ kullanımı da çizgi ismi bitişi için kullanılır. Tanımlarımızı köşel
 
 ----
 
-`grid-template-columns: [sol-menu-start] 3fr [sol-menu-end icerik-start] 5fr [icerik-end banner-alani-start] 2fr [banner-alani-end];`
+**grid-template-columns: [sol-menu-start] 3fr [sol-menu-end icerik-start] 5fr [icerik-end banner-alani-start] 2fr [banner-alani-end];**
 
 Kodumuz daha da anlamlı hale geldi.
 
 Aynı şekilde dikeydeki çizgi isimlerini kullanarak satır tanımlarımızı da güncelleyelim.
 
-`grid-template-rows: [ust-alan-start] 3fr [ust-alan-end icerik-start] 6fr [icerik-end alt-alan-start] 2fr [alt-alan-end];`
+**grid-template-rows: [ust-alan-start] 3fr [ust-alan-end icerik-start] 6fr [icerik-end alt-alan-start] 2fr [alt-alan-end];**
 
 Grid isimlendirmenin kodu anlamlandırmanın dışında CSS değeri olarak atanma özelliği de vardır. Yine yukarıdaki örnekle devam edelim. `<header>` ve `<footer>` için yaptığımız tanımları aşağıdaki gibi değiştirelim.
 
