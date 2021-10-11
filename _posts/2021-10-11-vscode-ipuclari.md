@@ -74,7 +74,7 @@ yazıyor ama ben de Kntrl + Cmd + G olarak görünüyor.
 **Geriye doğru seç**
 Peki ileri doğru seçebiliyoruz da geriye doğru nasıl seçeriz. Preferences - Keyboard Shurtcuts tıklayıp açılan yerde arama kısmına `addSelectionToPreviousFindMatch` yazın gelen yerde kısayol olarak seçtiğiniz tuşları belirleyin. Ben Cmd + Shift + D yapmak istedim ama dolu diye Alt + J yaptım. Bir metin seçip her Alt + J'ye bastığım da önceki eşlesen metni buluyor.
 
-`<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I use ⌘+D a lot to select next match of a word or variable but I sometimes find myself wanting to select previous matches. Just added a shortcut for editor.action.addSelectionToPreviousFindMatch 👌 <a href="https://t.co/lfLtnaGzez">pic.twitter.com/lfLtnaGzez</a></p>&mdash; Wes Bos (@wesbos) <a href="https://twitter.com/wesbos/status/1105867956024684548?ref_src=twsrc%5Etfw">March 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I use ⌘+D a lot to select next match of a word or variable but I sometimes find myself wanting to select previous matches. Just added a shortcut for editor.action.addSelectionToPreviousFindMatch 👌 <a href="https://t.co/lfLtnaGzez">pic.twitter.com/lfLtnaGzez</a></p>&mdash; Wes Bos (@wesbos) <a href="https://twitter.com/wesbos/status/1105867956024684548?ref_src=twsrc%5Etfw">March 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 
 ## Parantez renklendirme
