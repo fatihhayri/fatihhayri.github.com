@@ -3,7 +3,7 @@ layout: post
 title: VS Code ile yazım denetimi
 description: VS Code ile yazım denetimi
 lang: tr_TR
-Date: 2021-06-28 11:00
+Date: 2021-07-12 11:00
 Category: Editör
 tags: [yazım-hatası, vscode]
 image:
