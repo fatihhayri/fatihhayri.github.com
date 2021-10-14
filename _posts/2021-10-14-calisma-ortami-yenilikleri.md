@@ -22,7 +22,7 @@ Bu konuda bu üçüncü yazım. Trendyol teknoloji olarak temelli evden çalış
 
 ## Soğutma (Samsung Wind-Free Klima)
 
-<span class="kitap-resmi">![Samsung klima](https://fatihhayrioglu.com/images/samsung-wind-free.webp){: loading="lazy" }</span>Tamamen evden çalışma kararı sonrası çalışma odama bir klima almalıyım dedim. Geçen sene ki vantilatör deneyimim bu kararı almamda etkili oldu. Trendyol'un evden çalışma için açtığı 3.000 TL'lik ödeneğinin de yardımıyla Samsung Wind-Free 12000 BTU Inverter Duvar Tipi Klima aldım. Gayet memnunum telefon üzerinden yönetilebilmesi ve Google Home entegrasyonu ve asıl Wind-Free ile sizi çarpmadan serinletmesi güzel. Diğer kullandığım klimaya göre daha sessiz. Biraz pahalı. 9/10 **Yeni** 🟢
+<span class="kitap-resmi">![Samsung klima](https://fatihhayrioglu.com/images/samsung-klima.png){: loading="lazy" }</span>Tamamen evden çalışma kararı sonrası çalışma odama bir klima almalıyım dedim. Geçen sene ki vantilatör deneyimim bu kararı almamda etkili oldu. Trendyol'un evden çalışma için açtığı 3.000 TL'lik ödeneğinin de yardımıyla Samsung Wind-Free 12000 BTU Inverter Duvar Tipi Klima aldım. Gayet memnunum telefon üzerinden yönetilebilmesi ve Google Home entegrasyonu ve asıl Wind-Free ile sizi çarpmadan serinletmesi güzel. Diğer kullandığım klimaya göre daha sessiz. Biraz pahalı. 9/10 **Yeni** 🟢
 
 ## Webcam (Logitech Brio 4k Ultra Hd Webcam)
 
