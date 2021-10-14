@@ -48,7 +48,7 @@ Bu konuda bu üçüncü yazım. Trendyol teknoloji olarak temelli evden çalış
 
 ## Type-c 90 derece aparatı (Mykablo Type-c 90 Derece Dişi-erkek)
 
-<span class="kitap-resmi">![type-c 90](https://fatihhayrioglu.com/images/type-c-90-derece.jpg){: loading="lazy" }</span>MacOs bilgisayarımı mönitör kablosu ile şarj ediyorum. Yani hem görüntü aktarıp hem şarj için kullanıyorum. Ancak şöyle bir sorun oluyor; kablo direk makineye girdiği için sağdaki harici mönitörün önüne geliyordu. Bunun için Sercan2ın önerdiği şu aparatı aldım ve iş çözüldü.
+<span class="kitap-resmi">![type-c 90](https://fatihhayrioglu.com/images/type-c-90-derece.jpeg){: loading="lazy" }</span>MacOs bilgisayarımı mönitör kablosu ile şarj ediyorum. Yani hem görüntü aktarıp hem şarj için kullanıyorum. Ancak şöyle bir sorun oluyor; kablo direk makineye girdiği için sağdaki harici mönitörün önüne geliyordu. Bunun için Sercan2ın önerdiği şu aparatı aldım ve iş çözüldü.
 
 ## Sandalye (Ikea MARKUS)
 
