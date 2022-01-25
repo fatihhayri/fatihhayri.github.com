@@ -8,7 +8,7 @@ Category: CSS
 tags: [CSS, focus-visible]
 ---
 
-Bu tanımın ortaya çıkışının sebebi: Geliştiriciler tarayıcıların otomatik tanımladığı focus tanımlarının yapılan tasarıma uymadığı veya tam olarak ne amaçla kullanıldığını bilmediği için silmesi ve bunu sonucu olarak erişilebilirlik sorunlarının çıkması.
+Bu tanımın ortaya çıkışının sebebi: Geliştiriciler tarayıcıların otomatik tanımladığı focus tanımlarının yapılan tasarıma uymadığı veya tam olarak ne amaçla kullanıldığını bilmediği için silmesi ve bunun sonucu olarak erişilebilirlik sorunlarının çıkması.
 
 ```css
 .link:focus {
