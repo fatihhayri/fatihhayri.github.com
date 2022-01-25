@@ -8,7 +8,7 @@ Category: CSS
 tags: [CSS, focus-visible]
 ---
 
-Bu tanımın ortaya çıkışının sebebi: Geliştiriciler tarayıcıların otomatik tanımladığı focus tanımlarının yapılan tasarıma uymadığı için veya gereksiz olduğunu düşündüğü için siliyor.
+Bu tanımın ortaya çıkışının sebebi: Geliştiriciler tarayıcıların otomatik tanımladığı focus tanımlarının yapılan tasarıma uymadığı veya tam olarak ne amaçla kullanıldığını bilmediği için silmesi ve bunu sonucu olarak erişilebilirlik sorunlarının çıkması.
 
 ```css
 .link:focus {
@@ -22,15 +22,25 @@ Standart geliştiriciler bu durumları engellemek için yeni bir tanım gelişti
 
 Aşağıdaki login formu konuyu daha iyi anlamamıza yardımcı olacaktır.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="focus-visible - 1" src="https://codepen.io/fatihhayri/embed/ZEXdMQz?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="focus-visible - 1" src="https://codepen.io/fatihhayri/embed/ZEXdMQz?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 İlk örnekte form içindeki tüm elemanlara `focus` tanımladık. Klavye ile de mouse ile de geldiğimizde aynı etkiyi yapıp outline çizgisini gösterdi.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="focus-visible - 2" src="https://codepen.io/fatihhayri/embed/mdBZGML?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="focus-visible - 2" src="https://codepen.io/fatihhayri/embed/mdBZGML?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 İkinci örnekte ise `focus` ve `focus-visible` ayrı ayrı tanımladık. İlk örnekte tüm elemanlar her türlü outline gösterirken, ikinci örnekte sadece klavye ile odaklandığımızda outline gösterilmektedir.
+
+```css
+.login-form :focus:not(:focus-visible) {
+  outline: none;
+}
+
+.login-form :focus-visible {
+  outline: 3px solid orange;
+}
+```
 
 **Burada şöyle bir kural var:**  Bir HTML elemanı klavye ile giriş alanı ise `focus-visible` tanımı olsa dahi outline çizgileri gösterilmeye devam ediyor. İkinci örnekte ki `input[type="text"]` elemanı bundan dolayı mouse ile de outline çizgisi göstermektedir.
 
