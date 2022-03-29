@@ -22,7 +22,7 @@ En basit hali aşağıdaki gibidir.
   <p>Bizimle konumunuzu paylaşır mısınız?</p>
   <div class="actions">
     <button>Tamam</button>
-    <butto>Kapat</button>
+    <button>Kapat</button>
   </div>
 </dialog>
 ```
