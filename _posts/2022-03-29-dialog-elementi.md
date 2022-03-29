@@ -1,7 +1,7 @@
 ---
 layout: post
-title: focus-visible
-description: focus-visible tanımı ve detayı
+title: dialog elementi
+description: dialog elementi hakkında detaylı bilgi
 lang: tr_TR
 Date: 2022-03-29 14:44
 Category: HTML
