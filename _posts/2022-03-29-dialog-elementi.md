@@ -92,7 +92,7 @@ closeModal.addEventListener('click', () => {
 
 Tüm yukardaı anlattıklarımız bir örnek ile uygularsak.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="dialog element" src="https://codepen.io/fatihhayri/embed/dyJWeJv?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="500" style="width: 100%;" scrolling="no" title="dialog element" src="https://codepen.io/fatihhayri/embed/dyJWeJv?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 ## Sonuç
