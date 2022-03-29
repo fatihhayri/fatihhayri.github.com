@@ -30,7 +30,7 @@ Halihazırda bunun için script kullananlar için destekleyenler için bu olsun 
 
 Sonuç olarak şimdiden `loading="lazy"`özniteliği eklemenin zararı yok ama yararı çok. Türkiye'de toplamda %76,3'lük desteği var şu an. (3 Ocak 2020)
 
-{% include browser-usage.html ch="+" ie="-" ff="-" mch="+" sa="-" si="-" %}
+{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
 
 ## Kaynaklar
 
