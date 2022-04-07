@@ -74,7 +74,7 @@ Masaüstü araçlar için;
 <iframe height="300" style="width: 100%;" scrolling="no" title="Mobil - Desktop click / hover menu" src="https://codepen.io/fatihhayri/embed/XWRwrNZ?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-Tarayıcı desteği de gayer iyi.
+Tarayıcı desteği de gayet iyi.
 
 {% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
 
