@@ -111,7 +111,17 @@ Genel olarak `<dialog>` elementinin artıları
 
 Gördüğüm tek negatif yöne
 
- - Genel modal deneyimlerimizde yapmak istediğimiz backdrop'a tıklayınca modal'ın kapanması durumunu yapamıyoruz. Bu durum kullanıcı deneyimi için bir ihtiyaç mıdır? Tartışılır. 
+ - Genel modal deneyimlerimizde yapmak istediğimiz backdrop'a tıklayınca modal'ın kapanması durumunu yapamıyoruz. Bu durum kullanıcı deneyimi için bir ihtiyaç mıdır? Tartışılır.  Bu konuda [Ercüment Laçın](https://twitter.com/ercument_lacin) bir çözüm gönderdi gayet güzel. Teşekkür edip kodunu paylaşıyorum. 
+
+ ```js
+ locationModal.addEventListener("click", event => {
+    const rect = locationModal.getBoundingClientRect();
+    if (event.clientY < rect.top || event.clientY > rect.bottom ||
+        event.clientX < rect.left || event.clientX > rect.right) {
+        locationModal.close();
+    };
+});
+```
 
  {% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
 
