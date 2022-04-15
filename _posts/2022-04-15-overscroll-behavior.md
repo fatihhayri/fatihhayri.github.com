@@ -18,7 +18,7 @@ Bu özelliklerden birisi `overscroll-behavior` özelliğidir. Artık Safari dest
 
 Örneklerden anlamak daha kolay.
 
- <iframe height="300" style="width: 100%;" scrolling="no" title="overscroll-behavior" src="https://codepen.io/fatihhayri/embed/mdpzvmM?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+ <iframe height="300" style="width: 100%;" scrolling="no" title="overscroll-behavior" src="https://codepen.io/fatihhayri/embed/mdpzvmM?default-tab=css%2Cresult&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 Soldaki örnek normal davranışı gösterir. Soldaki örneği scroll yapıp içeriğin sonuna geldikten sonra hala scroll yapmaya devam edersek üst eleman (body) scrollundan devam eder. Sağdaki örnekte ise, içeriğin sonuna geldiğimizde faremiz içeriğin üzerinde olduğu müddetçe üst elemanın scrolluna dokunmayacaktır.
