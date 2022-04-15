@@ -18,14 +18,14 @@ Bu özelliklerden birisi `overscroll-behavior` özelliğidir. Artık Safari dest
 
 Örneklerden anlamak daha kolay.
 
- <iframe height="300" style="width: 100%;" scrolling="no" title="overscroll-behavior" src="https://codepen.io/fatihhayri/embed/mdpzvmM?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+ <iframe height="300" style="width: 100%;" scrolling="no" title="overscroll-behavior" src="https://codepen.io/fatihhayri/embed/mdpzvmM?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 Soldaki örnek normal davranışı gösterir. Soldaki örneği scroll yapıp içeriğin sonuna geldikten sonra hala scroll yapmaya devam edersek üst eleman (body) scrollundan devam eder. Sağdaki örnekte ise, içeriğin sonuna geldiğimizde faremiz içeriğin üzerinde olduğu müddetçe üst elemanın scrolluna dokunmayacaktır.
 
 Bu özelliği ilk duyduğumda çok sevinmiştim. Tam da ihtiyacım olan bir zamanda görmüştüm çünkü. Önceki şirketimde sayfanın sağ alt köşesinde bir sohbet alanı olacak ve kullanıclar buradan birbirleriyle mesajlaşacak diye bir işimiz vardı. Ancak şöyle bir sorunumuz oluşmuştu: Başlangıçta biz mesajlaşma alanının en altına atıyorduk ve kullanıcı scroll edince üst elemanın scroll ediyordu ve bu kullanıcının odağını bozuyordu. Bundan kurtulamak isterken bunu tek satır CSS ile yapabileceğimi öğrenmek beni sevindirecektik ki Safari desteğinin olmaması üzdü. Biz o zaman bu işi javascript ile halletmiştik.
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/fatihhayri/embed/rNpqReM?default-tab=css%2Cresult" data-zoom="0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/fatihhayri/embed/rNpqReM?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 Diğer bir yaşadığım sorunda açılan modal içindeki scroll bitince alttaki içeriğin scroll etmeye devam etmesi sorunuydu. Aradan çok zaman geçtiği için o zaman nasıl çözdüğümüzü hatırlayamadım ama Safari'ye çok kızdığımı hatırlıyorum.
