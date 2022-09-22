@@ -54,7 +54,7 @@ Tüm gün ayakta çalışmak yerine geneli toplantılarda olmak üzere günde 2-
 
 Twitter'da [Murat Kaçal](https://twitter.com/muratkacal) bu konudan bahsetmişti. 
 
-`<blockquote class="twitter-tweet"><p lang="tr" dir="ltr">Logitech K860 Ergonomik Klavye kullanan ve deneyimini paylabilecek arkadaş var mı? Bu mu ayrık klavye mi?</p>&mdash; Fatih Hayrioğlu (@fatihhayri) <a href="https://twitter.com/fatihhayri/status/1516665880607969280?ref_src=twsrc%5Etfw">April 20, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`
+<blockquote class="twitter-tweet"><p lang="tr" dir="ltr">Logitech K860 Ergonomik Klavye kullanan ve deneyimini paylabilecek arkadaş var mı? Bu mu ayrık klavye mi?</p>&mdash; Fatih Hayrioğlu (@fatihhayri) <a href="https://twitter.com/fatihhayri/status/1516665880607969280?ref_src=twsrc%5Etfw">April 20, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Genel anlamda memnun kaldım. 8/10 **Yeni**  🟢
 
