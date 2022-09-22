@@ -10,7 +10,7 @@ image:
   feature: eronomik-masa.jpg
 ---
 
-Daha önce bu konuda iki adet yazı paylaşmıştım. 
+Daha önce bu konuda üç adet yazı paylaşmıştım. 
 
  - [Evden çalışma ve çalışma ortamım](https://fatihhayrioglu.com/evde-calisma-ve-calisma-ortamim/ "Evden çalışma ve çalışma ortamım")
  - [Evden çalışmada uzun kullanım önerileri](https://fatihhayrioglu.com/evden-calismada-uzun-kullanim-onerileri/ "Evden çalışmada uzun kullanım önerileri")
