@@ -22,7 +22,7 @@ W3C geliştiricileri uzun süre scroll stili ve işlemleriyle alakalı gelişmel
 
 Biz geliştiriciler şimdiye kadar scroll işlemlerimizi alternatif yöntemlerle çözüyorduk. Bu özellikler çıktıktan sonra artık standart ve basit bir şekilde scroll işlemlerimizi yabiliyoruz.
 
-`scroll-behevior` özelliği sayfa içindeki bir alana bir bağlantı yaptığımızda kullanıcının o alana giderken scroll hareketinin nasıl gerçeleşmesi gerektiğini belirlememiz sağlar. 
+`scroll-behavior` özelliği sayfa içindeki bir alana bir bağlantı yaptığımızda kullanıcının o alana giderken scroll hareketinin nasıl gerçeleşmesi gerektiğini belirlememiz sağlar. 
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="scroll-behavior - öncesi" src="https://codepen.io/fatihhayri/embed/NWMagdG?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/NWMagdG">
