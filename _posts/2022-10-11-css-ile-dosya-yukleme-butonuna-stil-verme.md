@@ -26,7 +26,7 @@ Ben de çözüm için `::file-selector-button` pseudo elemanından bahsettim. U�
 Dosya upload işini görmek için;  `input` elementine `file` özniteliği vermemiz yeterli.
 
 ```html
-<input typye="file" />
+<input type="file" />
 ```
 
 Bu kadar kolay. Ancak buradaki sorunumuz bu tanım ile gelen buton ve yazıya müdahele edip stillendiremiyorduk. Standart şeklideki kodumuz aşağıdaki gibi görünüyor.
