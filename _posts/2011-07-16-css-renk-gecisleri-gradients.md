@@ -448,7 +448,7 @@ Kod kalabalığını çevrimiçi araçlar yardımı ile aşabiliyoruz.
     Doğrusal renk geçişleri için bir numaralı araç. Örnekler bize hız
     kazandırmak için çok güzel. Tek eksiği radyal renk geçişi desteğinin
     olmaması
--   [http://gradients.glrzad.com/][]
+-   gradients.glrzad.com/
     Renk geçişi parametrelerini daha kolay değiştirebilmemiz güzel.
     Radyal renk geçişi desteği yok
 -   [http://www.westciv.com/tools/gradients/][]
@@ -477,7 +477,7 @@ Kalın sağlıcakla
 -   [http://dev.opera.com/articles/view/css3-linear-gradients/][]
 -   [http://www.red-team-design.com/css-gradients-quick-tutorial][]
 -   [http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/][]
--   [http://gradients.glrzad.com/][] (Çevrimiçi araç)
+-   gradients.glrzad.com/
 -   [http://robertnyman.com/2010/02/15/css-gradients-for-all-web-browsers-without-using-images/][]
 -   [http://www.colorzilla.com/gradient-editor/][] (Çevrimiçi araç)
 -   [http://webkit.org/blog/175/introducing-css-gradients/][]
@@ -513,7 +513,6 @@ Kalın sağlıcakla
   [2]: https://lh4.googleusercontent.com/zTNQg2bWiAo4RRgxE2D5sF6W13C3sjBjayS4NBVEiO3bGZzfE8ns63R4qWeub4XHUEfBLW3fD8Ue62Zmfebm2IKQU4NSNvViku8B6WIAIC7-W4LDwA
   [3]: /images/radyal_renk_gecisi.gif
   [http://www.colorzilla.com/gradient-editor/]: http://www.colorzilla.com/gradient-editor/
-  [http://gradients.glrzad.com/]: http://gradients.glrzad.com/
   [http://www.westciv.com/tools/gradients/]: http://www.westciv.com/tools/gradients/
   [http://www.css3maker.com/css-gradient.html]: http://www.css3maker.com/css-gradient.html
   [http://www.w3.org/TR/css3-images/#gradients]: http://www.w3.org/TR/css3-images/#gradients

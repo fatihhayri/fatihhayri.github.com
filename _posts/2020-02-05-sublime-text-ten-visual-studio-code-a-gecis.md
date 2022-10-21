@@ -38,7 +38,7 @@ Bu twitteki Javascript otomatik tamamlamadaki sorunların yeni sürümde düzeld
 	 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 	 - [Better Align](https://marketplace.visualstudio.com/items?itemName=wwm.better-align)
 	 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-	 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+	 - Bracket Pair Colorizer
 	 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 	 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 	 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)

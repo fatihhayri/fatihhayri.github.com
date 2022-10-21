@@ -230,4 +230,4 @@ Kalın sağlıcakla.
  - [http://www.alistapart.com/article/getting-started-with-sass#section4](http://www.alistapart.com/article/getting-started-with-sass#section4)
  - thesassway.com/beginner/variable-naming
  - [http://sassbreak.com/web-fonts-variable-exists/](http://sassbreak.com/web-fonts-variable-exists/)
- - [http://www.makinggoodsoftware.com/2009/05/04/71-tips-for-naming-variables/](http://www.makinggoodsoftware.com/2009/05/04/71-tips-for-naming-variables/)
+ - makinggoodsoftware.com/2009/05/04/71-tips-for-naming-variables/

@@ -28,7 +28,7 @@ kullanmak gerekiyor.
     Tek sıkıntı doğrusal renk geçişi var ama radyal renk geçişi yok
 -   [http://westciv.com/tools/gradients/][]
     Doğrusal ve Radyal renk geçişleri oluşturmamıza yardımcı oluyor
--   [http://gradients.glrzad.com/][]
+-   gradients.glrzad.com/
 
 Oval Kenar
 ----------
@@ -110,7 +110,7 @@ CSS3 ile sayfalarımıza flash benzeri animasyonlar eklmemize yarayan
 güzel bir araç.
 
 -   [http://matthewlein.com/ceaser/][]
--   [http://jeremyckahn.github.com/stylie/][]
+-   jeremyckahn.github.com/stylie/
 -   [http://easings.net/][]
 
 Font-face
@@ -214,7 +214,6 @@ Toplu
 
   [http://www.colorzilla.com/gradient-editor/]: http://www.colorzilla.com/gradient-editor/
   [http://westciv.com/tools/gradients/]: http://westciv.com/tools/gradients/
-  [http://gradients.glrzad.com/]: http://gradients.glrzad.com/
   [http://border-radius.com/]: http://border-radius.com/
   [http://css3button.net/]: http://css3button.net/
   [http://www.cssbuttongenerator.com/]: http://www.cssbuttongenerator.com/
@@ -234,13 +233,11 @@ Toplu
   [http://csssprites.com/]: http://csssprites.com/
   [http://border-image.com/]: http://border-image.com/
   [http://matthewlein.com/ceaser/]: http://matthewlein.com/ceaser/
-  [http://jeremyckahn.github.com/stylie/]: http://jeremyckahn.github.com/stylie/
   [http://easings.net/]: http://easings.net/
-  [http://www.fontsquirrel.com/fontface/generator]: http://www.fontsquirrel.com/fontface/generator
   [http://www.kirsle.net/wizards/ttf2eot.cgi]: http://www.kirsle.net/wizards/ttf2eot.cgi
   [http://onlinefontconverter.com/]: http://onlinefontconverter.com/
   [http://xmlgraphics.apache.org/batik/tools/font-converter.html]: http://xmlgraphics.apache.org/batik/tools/font-converter.html
-  [http://debray.jerome.free.fr/index.php?outils/Generateur-de-multi-colonnes-en-css3]: http://debray.jerome.free.fr/index.php?outils/Generateur-de-multi-colonnes-en-css3
+  debray.jerome.free.fr/index.php?outils/Generateur-de-multi-colonnes-en-css3
   [http://www.aaronlumsden.com/multicol/]: http://www.aaronlumsden.com/multicol/
   [http://cssarrowplease.com/]: http://cssarrowplease.com/
   [http://css3generator.com/]: http://css3generator.com/
@@ -251,6 +248,6 @@ Toplu
   [http://www.layerstyles.org/builder.html]: http://www.layerstyles.org/builder.html
   [http://www.sitepoint.com/10-best-css3-code-generators/#fbid=ovoh-eTTYCI]: http://www.sitepoint.com/10-best-css3-code-generators/#fbid=ovoh-eTTYCI
   [http://www.webdesignerdepot.com/2012/04/15-great-html5-and-css3-generators/]: http://www.webdesignerdepot.com/2012/04/15-great-html5-and-css3-generators/
-  [http://line25.com/articles/handy-roundup-of-css3-generators-and-tools]: http://line25.com/articles/handy-roundup-of-css3-generators-and-tools
+  line25.com/articles/handy-roundup-of-css3-generators-and-tools
   [http://www.shoutmeloud.com/9-great-free-online-css-sprite-generator.html]: http://www.shoutmeloud.com/9-great-free-online-css-sprite-generator.html
   [http://www.catswhocode.com/blog/awesome-css3-generators-to-simplify-front-end-development]: http://www.catswhocode.com/blog/awesome-css3-generators-to-simplify-front-end-development

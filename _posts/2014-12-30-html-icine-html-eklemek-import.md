@@ -97,6 +97,6 @@ Sonuç olarak güzel bir özellik ama bazı sorunlarıda beraberinde getiriyor. 
  - [http://blog.teamtreehouse.com/introduction-html-imports](http://blog.teamtreehouse.com/introduction-html-imports)
  - [http://www.hongkiat.com/blog/html-import/](http://www.hongkiat.com/blog/html-import/)
  - [http://caniuse.com/#search=import](http://caniuse.com/#search=import)
- - [http://sehmusgokce.com/iis-7de-cors-ozelligini-acma-ve-rest-api-sorunlarini-giderme-253.html](http://sehmusgokce.com/iis-7de-cors-ozelligini-acma-ve-rest-api-sorunlarini-giderme-253.html)
+ - sehmusgokce.com/iis-7de-cors-ozelligini-acma-ve-rest-api-sorunlarini-giderme-253.html
 
 [import]: /images/html_import.jpg

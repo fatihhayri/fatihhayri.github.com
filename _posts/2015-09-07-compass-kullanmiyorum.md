@@ -7,7 +7,7 @@ tags: [sass css-önişlemcileri compass]
 ---
 
 
-[Compass](http://compass-style.org/); Sass'ın araç kutusu gibi tanımlayabiliriz. Önek sorununa çözüm oluşturan mixinleri, otomatik sprite yapma imkanı, dikey hizalama kolaylıkları, kolay ızgara sayfa planları sunan bir Sass araç kutusu olarak tanımlanabilir. Ayrıca eklenti desteği yardımı ile daha fazla geliştirilebilen bir araç kutusu. 
+Compass; Sass'ın araç kutusu gibi tanımlayabiliriz. Önek sorununa çözüm oluşturan mixinleri, otomatik sprite yapma imkanı, dikey hizalama kolaylıkları, kolay ızgara sayfa planları sunan bir Sass araç kutusu olarak tanımlanabilir. Ayrıca eklenti desteği yardımı ile daha fazla geliştirilebilen bir araç kutusu. 
 
 Peki ben niye Compass kullanmıyoum. Compass'ın bana sunduğu tüm bu yetenekleri ben grunt / gulp ile halledebildiğim için ben compass kullanmıyorum. Compass proje büyüdükçe yavaşlığa sebep olurken grunt / gulp çözümleri bana bu imkanları daha hızlı sağlaması da cabası. 
 
@@ -36,6 +36,6 @@ Kalın sağlıcakla.
  - bensmithett.com/goodbye-compass
  - [http://www.sitepoint.com/dont-use-compass-anymore/](http://www.sitepoint.com/dont-use-compass-anymore/)
  - [http://www.scottohara.me/article/compass.html](http://www.scottohara.me/article/compass.html)
- - [http://compass-style.org/](http://compass-style.org/)
+ - compass-style.org
  - [http://www.sitepoint.com/compass-or-bourbon-sass-frameworks/](http://www.sitepoint.com/compass-or-bourbon-sass-frameworks/)
  - [http://www.webdesignerdepot.com/2013/11/how-to-write-simple-elegant-css-with-compass-sass/](http://www.webdesignerdepot.com/2013/11/how-to-write-simple-elegant-css-with-compass-sass/)

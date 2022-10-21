@@ -138,7 +138,7 @@ Daha önce sizlerle paylaştığım bu araçlar
 
 -   [http://matthewlein.com/ceaser/](http://matthewlein.com/ceaser/)
 -   [http://easings.net/](http://easings.net/)
--   [http://jeremyckahn.github.com/stylie/](http://jeremyckahn.github.com/stylie/)
+-   jeremyckahn.github.com/stylie/
 
 ile transition-timing-function özelliğini kullanmak bir zevk haline
 geliyor.
@@ -296,7 +296,7 @@ eklemiştir. Şu an aktif olarak kullanılan ie8 ve ie9 sürümlerinde bu
 -   [http://davidwalsh.name/css-transitions](http://davidwalsh.name/css-transitions)
 -   [http://css3.bradshawenterprises.com/transitions/](http://css3.bradshawenterprises.com/transitions/)
 -   [http://www.webdesignerdepot.com/2012/12/how-to-use-the-css3-transition-property/](http://www.webdesignerdepot.com/2012/12/how-to-use-the-css3-transition-property/)
--   [http://www.problogdesign.com/coding/get-started-with-css3-transitions-today](http://www.problogdesign.com/coding/get-started-with-css3-transitions-today)
+-   problogdesign.com/coding/get-started-with-css3-transitions-today
 -   [http://code.tutsplus.com/tutorials/css-fundamentals-css3-transitions--pre-10922](http://code.tutsplus.com/tutorials/css-fundamentals-css3-transitions--pre-10922)
 
 [firefox]: /images/ff.png

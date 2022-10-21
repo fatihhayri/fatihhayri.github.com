@@ -121,7 +121,7 @@ ile dosyanızı belirtilen sunucunun ana klasörüne atabiliyoruz.
 
 - [http://mustafavelioglu.com/posts/2012/11/08/global-gitignore-kullanimi/][5]
 - [http://git-scm.com/docs/gitignore][6]
-- [http://vigo.github.com/git-tips/ipucu/2013/02/18/git-stash-anlik-mudahale-ya-da-zulalama/][7]
+- vigo.github.com/git-tips/ipucu/2013/02/18/git-stash-anlik-mudahale-ya-da-zulalama/
 - [https://gist.github.com/mesuutt/4564848/raw/277478fa242fc5f0a5dddb862d51f79fa4fb9304/git_notlari.md][8]
 - [http://marklodato.github.io/visual-git-guide/index-en.html][9]
 - [http://git-scm.com/book/en/Git-Basics-Undoing-Things][10]
@@ -134,7 +134,6 @@ ile dosyanızı belirtilen sunucunun ana klasörüne atabiliyoruz.
   [4]: https://twitter.com/muratcorlu
   [5]: http://mustafavelioglu.com/posts/2012/11/08/global-gitignore-kullanimi/
   [6]: http://git-scm.com/docs/gitignore
-  [7]: http://vigo.github.com/git-tips/ipucu/2013/02/18/git-stash-anlik-mudahale-ya-da-zulalama/
   [8]: https://gist.github.com/mesuutt/4564848/raw/277478fa242fc5f0a5dddb862d51f79fa4fb9304/git_notlari.md
   [9]: http://marklodato.github.io/visual-git-guide/index-en.html
   [10]: http://git-scm.com/book/en/Git-Basics-Undoing-Things

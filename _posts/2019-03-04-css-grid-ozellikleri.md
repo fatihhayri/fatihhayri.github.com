@@ -212,7 +212,7 @@ Grid özelliklerini, değerlerini, birimlerini ve tanımlarını öğrenmeye dev
  - [https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-columns-rows](https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-columns-rows)
  - [https://tympanus.net/codrops/css_reference/grid/#section_grid-container-properties](https://tympanus.net/codrops/css_reference/grid/#section_grid-container-properties)
  - [https://developer.mozilla.org/en-US/docs/Web/CSS/gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)
- - [https://alligator.io/css/grid-gap/](https://alligator.io/css/grid-gap/)
+ - alligator.io/css/grid-gap/
  - [https://www.quackit.com/css/css3/properties/css_grid-row-gap.cfm](https://www.quackit.com/css/css3/properties/css_grid-row-gap.cfm)
  - [https://www.quackit.com/css/css3/properties/css_grid-template-columns.cfm](https://www.quackit.com/css/css3/properties/css_grid-template-columns.cfm)
  - zcfy.cc/original/learn-css-grid-a-guide-to-learning-css-grid-jonathan-suh

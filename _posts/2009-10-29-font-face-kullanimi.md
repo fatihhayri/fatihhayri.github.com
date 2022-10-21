@@ -71,7 +71,7 @@ uzantılı dosya hazırlamalıyız. 
 
 -   ttf yazı tipinizi font-face'in desteklediğin tüm yazı
     tiplerini(.eot, .svg, ttf, woff) üreten güzel bir araç:
-    [http://www.fontsquirrel.com/fontface/generator][]
+    fontsquirrel.com/fontface/generator
 -   ttf yazı tiplerini eot'ya çevirmek için çevirim içi araç:
     [http://www.kirsle.net/wizards/ttf2eot.cgi][]
 -   Farklı yazı tiplerini birbirine çeviren çevirim içi araç:
@@ -340,10 +340,6 @@ aksaklığımız oldu ise affola.
     "fontface_destek_tablosu"
   [Vikipedia]: http://en.wikipedia.org/wiki/Web_typography "Vikipedia"
   [Batik]: http://xmlgraphics.apache.org/batik/tools/font-converter.html
-    "Batik"
-  [fontsquirrel.com]: http://www.fontsquirrel.com/fontface/generator
-  [http://www.fontsquirrel.com/fontface/generator]: http://www.fontsquirrel.com/fontface/generator
-    "http://www.fontsquirrel.com/fontface/generator"
   [http://www.kirsle.net/wizards/ttf2eot.cgi]: http://www.kirsle.net/wizards/ttf2eot.cgi
     "http://www.kirsle.net/wizards/ttf2eot.cgi"
   [http://onlinefontconverter.com/]: http://onlinefontconverter.com/

@@ -89,7 +89,7 @@ Boyutu gayet küçük güzel bir çözüm.
 
 2012 senesinde HTML5 geliştiricileri uyarlanabilir web içindeki sorunlardan biri olan resimlerin uyarlanması konusunda çalışmalar yaptı. Geniş katılımlı ortak bir çözüm arayan grup, bu sorunun çözümüne dair önerileri ve bazı sonuçlara varıldı.
 
-Bu konuda bir organizasyon oluşturup birde site açıldı [http://responsiveimages.org/][2] sitesinden bilgi almak mümkün. **Responsive Images Community Group (RICG)**, W3C’den farklı bir oluşum.
+Bu konuda bir organizasyon oluşturup birde site açıldı responsiveimages.org sitesinden bilgi almak mümkün. **Responsive Images Community Group (RICG)**, W3C’den farklı bir oluşum.
 
 Farklı tarayıcı üreticileri konu hakkında fikirlerini sunduğu bu platformda
 
@@ -199,7 +199,6 @@ Kalın sağlıcakla.
 
 
   [1]: https://github.com/scottjehl/picturefill
-  [2]: http://responsiveimages.org/
   [3]: https://github.com/borismus/srcset-polyfill
   [4]: https://fatihhayrioglu.com/font-face-kullanimi/
   [7]: http://css-tricks.com/snippets/css/retina-display-media-query/

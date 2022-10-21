@@ -170,7 +170,7 @@ Kalın sağlıcakla.
  - [http://sass-guidelin.es/#the-7-1-pattern](http://sass-guidelin.es/#the-7-1-pattern)
  - ismailhakkieren.com/sass-dosya-yapisi
  - [https://github.com/bcinarli/scalable-frontend-architecture/tree/master/styles-sass](https://github.com/bcinarli/scalable-frontend-architecture/tree/master/styles-sass)
- - [http://isdeneyimlerim.com/sass-ve-dosya-organizasyonu/](http://isdeneyimlerim.com/sass-ve-dosya-organizasyonu/)
+ - isdeneyimlerim.com/sass-ve-dosya-organizasyonu/
  - [https://zurb.com/university/lessons/wrangling-sass-import-files](https://zurb.com/university/lessons/wrangling-sass-import-files)
  - [http://sass-lang.com/documentation/file.SASS_REFERENCE.html](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
  - [https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)

@@ -64,7 +64,7 @@ Kalın sağlıcakla.
 ## Kaynaklar
 
  - [https://css-tricks.com/on-object-fit-and-object-position/](https://css-tricks.com/on-object-fit-and-object-position/)
- - [https://alligator.io/css/cropping-images-object-fit/](https://alligator.io/css/cropping-images-object-fit/)
+ - alligator.io/css/cropping-images-object-fit/
  - [https://www.sitepoint.com/using-css-object-fit-object-position-properties/](https://www.sitepoint.com/using-css-object-fit-object-position-properties/)
  - [https://tympanus.net/codrops/css_reference/object-fit/](https://tympanus.net/codrops/css_reference/object-fit/)
  - helloanselm.com/2013/fix-image-resizing-with-object-fit

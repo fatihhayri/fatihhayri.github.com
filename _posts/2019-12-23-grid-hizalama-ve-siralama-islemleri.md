@@ -291,10 +291,10 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
- - [https://alligator.io/css/align-justify/](https://alligator.io/css/align-justify/)
+ - alligator.io/css/align-justify/
  - [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout)
- - [https://www.joomlashack.com/blog/tutorials/the-justify-content-and-align-content-properties/](https://www.joomlashack.com/blog/tutorials/the-justify-content-and-align-content-properties/)
- - [https://www.joomlashack.com/blog/tutorials/center-and-align-items-in-css-grid/](https://www.joomlashack.com/blog/tutorials/center-and-align-items-in-css-grid/)
+ - joomlashack.com/blog/tutorials/the-justify-content-and-align-content-properties/
+ - joomlashack.com/blog/tutorials/center-and-align-items-in-css-grid/
  - [Wes Bos CSS GRID: Alignment + Centering — 17 of 25](https://www.youtube.com/watch?v=nxyk6yKD56c)
  - [CSS Grid Tutorial #6 - Aligning & Justifying Items](https://www.youtube.com/watch?v=X2-x-4wA9V4)
  - [CSS Grid Layout // Aligning Items on the Grid](https://www.youtube.com/watch?v=mnTu0E7V1AI)

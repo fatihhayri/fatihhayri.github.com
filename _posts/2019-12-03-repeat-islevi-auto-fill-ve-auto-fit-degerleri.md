@@ -154,7 +154,7 @@ Kalın sağlıcakla.
 
 - https://alligator.io/css/css-grid-layout-repeat-notation/
 - https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
-- [https://www.joomlashack.com/blog/tutorials/auto-fill-and-auto-fit-keywords-in-css-grid/](https://www.joomlashack.com/blog/tutorials/auto-fill-and-auto-fit-keywords-in-css-grid/)
+- joomlashack.com/blog/tutorials/auto-fill-and-auto-fit-keywords-in-css-grid/
 - [https://medium.com/@erdemuslu/css-grid-auto-fill-ve-auto-fit-c496f6d89405](https://medium.com/@erdemuslu/css-grid-auto-fill-ve-auto-fit-c496f6d89405)
 - [https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/](https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/)
 - [https://dev.to/nunocpnp/css-grid-auto-fit-auto-fill-4hkh](https://dev.to/nunocpnp/css-grid-auto-fit-auto-fill-4hkh)

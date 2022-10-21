@@ -356,7 +356,7 @@ Bu özellik 3 boyutlu elemanın arkasının gösterilip gösterilmeyeceğini
 belirliyor. visibility özelliği gibi işliyor. hidden ve visible
 değerlerini alıyor.
 
-[Carousel örneğinde][] bu özelliği daha iyi anlarız.
+Carousel örneğinde bu özelliği daha iyi anlarız.
 
 {% highlight css %}
 figure{
@@ -435,7 +435,7 @@ Android Browser 3.0+ (-webkit- öneki ile)
 -   [http://www.eleqtriq.com/2010/05/understanding-css-3d-transforms/][]
 -   [http://www.netmagazine.com/features/20-stunning-examples-css-3d-transforms][]
 -   [http://www.caniuse.com/#feat=transforms3d][]
--   [http://bartaz.github.com/meetjs/css3d-summit/#/title][]
+-   bartaz.github.com/meetjs/css3d-summit/
 -   [http://www.developerdrive.com/2012/05/how-to-make-smooth-transitions-with-css3/][]
 -   [http://tutorialzine.com/2012/02/apple-like-login-form/][] (apple gibi form)
 -   [http://www.inserthtml.com/2012/03/css-3d-transforms/][]
@@ -450,7 +450,7 @@ Android Browser 3.0+ (-webkit- öneki ile)
 -   [http://www.satine.org/research/webkit/snowleopard/snowstack.html][]
 -   [http://unformedbuilding.com/articles/learn-about-css-transforms/](http://unformedbuilding.com/articles/learn-about-css-transforms/)
 -   developer.mozilla.org/en-US/CSS/transform-function
--   [http://desandro.github.com/3dtransforms/docs/perspective.html][]
+-   desandro.github.com/3dtransforms/docs/perspective.html
 -   [http://caniuse.com/#feat=transforms3d][]
 
   [2 Boyutlu Dönüştürme özelliklerini]: http://fatihhayrioglu.com/css3-donusturme-ozellikleritransforms-ve-2b-donusturme/
@@ -464,7 +464,6 @@ Android Browser 3.0+ (-webkit- öneki ile)
   [2]: https://lh3.googleusercontent.com/JKKV66baIfWahnoL-PwOvPBdkfaZ1NQbwfhDbJK0OY5GvrlHY1Ae46Is4LO5NKNCeAKXIFAxNBbVonVpLiLqzfXDh_RRzQOo424GIX1BdhHfG3Z-l6U
   [http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-perspective-origin.html]: http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-perspective-origin.html
   [http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-origin.html]: http://unformedbuilding.com/demo/2012/css-transforms/3d/3d-transform-origin.html
-  [Carousel örneğinde]: http://desandro.github.com/3dtransforms/examples/carousel-01.html
   [3]: https://lh5.googleusercontent.com/-_u7c5fYsGBuRvvC7sZcjcFv7cPrnxHdzIK_I9BSS1YAo-iCG7kqLabPr6nH70Ddy3gSBIf7qXQOcxWOOVTD84gOunmLxBwm_HOWZNFw1_1PKP2bF4I
   [4]: https://lh6.googleusercontent.com/4_txr7vPaKubClq_bmUHbO8e15bHpHPC9echzaXq1Qeu3DwwTIT4Gs060WD0dtA0rLNIOf0aI_yiglZJsJcYAO8JEWh2MdbuTPTSUf3Oo9taTgazbI8
   [http://www.w3.org/TR/css3-3d-transforms/]: http://www.w3.org/TR/css3-3d-transforms/
@@ -479,7 +478,6 @@ Android Browser 3.0+ (-webkit- öneki ile)
   [http://www.eleqtriq.com/2010/05/understanding-css-3d-transforms/]: http://www.eleqtriq.com/2010/05/understanding-css-3d-transforms/
   [http://www.netmagazine.com/features/20-stunning-examples-css-3d-transforms]: http://www.netmagazine.com/features/20-stunning-examples-css-3d-transforms
   [http://www.caniuse.com/#feat=transforms3d]: http://www.caniuse.com/#feat=transforms3d
-  [http://bartaz.github.com/meetjs/css3d-summit/#/title]: http://bartaz.github.com/meetjs/css3d-summit/#/title
   [http://www.developerdrive.com/2012/05/how-to-make-smooth-transitions-with-css3/]: http://www.developerdrive.com/2012/05/how-to-make-smooth-transitions-with-css3/
   [http://tutorialzine.com/2012/02/apple-like-login-form/]: http://tutorialzine.com/2012/02/apple-like-login-form/
   [http://www.inserthtml.com/2012/03/css-3d-transforms/]: http://www.inserthtml.com/2012/03/css-3d-transforms/
@@ -488,7 +486,6 @@ Android Browser 3.0+ (-webkit- öneki ile)
   [http://www.found.co.uk/css3-3d-transforms-the-future-of-user-experience/]: http://www.found.co.uk/css3-3d-transforms-the-future-of-user-experience/
   [http://www.html5-css3.fr/css3/transformations-3d-css3]: http://www.html5-css3.fr/css3/transformations-3d-css3
   [http://www.satine.org/research/webkit/snowleopard/snowstack.html]: http://www.satine.org/research/webkit/snowleopard/snowstack.html
-  [http://desandro.github.com/3dtransforms/docs/perspective.html]: http://desandro.github.com/3dtransforms/docs/perspective.html
   [http://caniuse.com/#feat=transforms3d]: http://caniuse.com/#feat=transforms3d
 
 [firefox]: /images/ff.png

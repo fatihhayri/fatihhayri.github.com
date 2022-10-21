@@ -403,7 +403,7 @@ yapabiliyoruz.
 
 -   [http://tympanus.net/codrops/2011/12/26/css3-lightbox/][]
 -   [http://www.nealgrosskopf.com/tech/thread.php?pid=75][]
--   [http://alexindigo.github.com/lightbox/#gallery][]
+-   alexindigo.github.com/lightbox/#gallery
 -   [http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/][]
 -   [http://www.paulrhayes.com/2011-03/css-modal/][]
 -   http://www.webstuffshare.com/2012/04/create-elegant-modal-window-using-css-scale-transform/
@@ -548,7 +548,7 @@ Kaynaklar
   [http://www.c5theme.com/addons/responsive-slider/]: http://www.c5theme.com/addons/responsive-slider/
   [http://tympanus.net/codrops/2011/12/26/css3-lightbox/]: http://tympanus.net/codrops/2011/12/26/css3-lightbox/
   [http://www.nealgrosskopf.com/tech/thread.php?pid=75]: http://www.nealgrosskopf.com/tech/thread.php?pid=75
-  [http://alexindigo.github.com/lightbox/#gallery]: http://alexindigo.github.com/lightbox/#gallery
+  alexindigo.github.com/lightbox/#gallery
   [http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/]: http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/
   [http://www.paulrhayes.com/2011-03/css-modal/]: http://www.paulrhayes.com/2011-03/css-modal/
   [http://tympanus.net/codrops/2011/12/07/splash-and-coming-soon-page-effects-with-css3/]: http://tympanus.net/codrops/2011/12/07/splash-and-coming-soon-page-effects-with-css3/

@@ -110,4 +110,4 @@ Kalın sağlıcakla.
  - [https://www.quackit.com/css/css3/properties/css_grid-auto-columns.cfm](https://www.quackit.com/css/css3/properties/css_grid-auto-columns.cfm)
  - [https://learncssgrid.com/#implicit-grid](https://learncssgrid.com/#implicit-grid)
  - [https://medium.freecodecamp.org/things-ive-learned-about-css-grid-layout-932777c2d6d7](https://medium.freecodecamp.org/things-ive-learned-about-css-grid-layout-932777c2d6d7)
- - [CSS Grid #16: The grid-auto-flow: dense Property](https://www.joomlashack.com/blog/tutorials/grid-auto-flow-dense-property/)
+ - joomlashack.com/blog/tutorials/grid-auto-flow-dense-property/

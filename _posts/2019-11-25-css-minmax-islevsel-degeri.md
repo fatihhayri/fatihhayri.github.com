@@ -150,11 +150,11 @@ auto tanımlanan grid ögesi en fazla `max-content` değeri kadar, en az `min-co
 
 - [https://developer.mozilla.org/en-US/docs/Web/CSS/minmax](https://developer.mozilla.org/en-US/docs/Web/CSS/minmax)
 - [https://bitsofco.de/how-the-minmax-function-works/](https://bitsofco.de/how-the-minmax-function-works/)
-- [https://www.joomlashack.com/blog/tutorials/css-grid-12-the-minimax-function/](https://www.joomlashack.com/blog/tutorials/css-grid-12-the-minimax-function/)
+- oomlashack.com/blog/tutorials/css-grid-12-the-minimax-function/
 - [https://codepen.io/michellebarker/post/css-grid-more-flexibility-with-minmax](https://codepen.io/michellebarker/post/css-grid-more-flexibility-with-minmax)
 - [https://twitter.com/jensimmons/status/988761825218056192?s=20](https://twitter.com/jensimmons/status/988761825218056192?s=20)
 - [MinMax in CSS Grid — 3/3 Flexibility](https://m.youtube.com/watch?v=mVQiNpqXov8#)
-- [https://alligator.io/css/css-grid-layout-minmax-function/](https://alligator.io/css/css-grid-layout-minmax-function/)
+- alligator.io/css/css-grid-layout-minmax-function/
 - [https://www.hongkiat.com/blog/css-grid-layout-minmax/](https://www.hongkiat.com/blog/css-grid-layout-minmax/)
 - [https://dev.to/evanminto/intrinsically-responsive-css-grid-with-minmax-and-min-1n55](https://dev.to/evanminto/intrinsically-responsive-css-grid-with-minmax-and-min-1n55)
 - [https://fatihhayrioglu.com/css-grid-ozellikleri/](https://fatihhayrioglu.com/css-grid-ozellikleri/)

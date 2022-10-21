@@ -78,6 +78,6 @@ Mobil tarafında sadece Firefox(onunda desteği az) destekliyor. Diğer mobil ta
  - [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
  - [https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
  - [http://blog.teamtreehouse.com/adding-desktop-notifications-to-your-web-applications](http://blog.teamtreehouse.com/adding-desktop-notifications-to-your-web-applications)
- - [http://blog.brunoscopelliti.com/start-using-web-notification](http://blog.brunoscopelliti.com/start-using-web-notification)
+ - blog.brunoscopelliti.com/start-using-web-notification
 
 [html5_bilgilendirme]: /images/html5_bilgilendirme1.jpg

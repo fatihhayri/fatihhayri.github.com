@@ -73,7 +73,7 @@ Kalın sağlıcakla.
  - [http://stackoverflow.com/questions/6376279/css-why-not-use-id-another-reason-than-tightly-coupled][9]
  - oli.jp/2011/ids/
  - [http://2002-2012.mattwilcox.net/archive/entry/id/1054/][11]
- - [http://twobanjos.com/blog/2011/06/why-well-stop-using-id-in-our-stylesheets/][12]
+ - twobanjos.com/blog/2011/06/why-well-stop-using-id-in-our-stylesheets/
  - https://talentopoly.com/posts/1858-don_t_use_id_selectors_in_css
  - [http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/][14]
  - [http://css-tricks.com/efficiently-rendering-css/][15] 
@@ -93,7 +93,6 @@ Kalın sağlıcakla.
   [8]: http://nimbleworks.co.uk/blog/css-id-selectors-never-say-never/
   [9]: http://stackoverflow.com/questions/6376279/css-why-not-use-id-another-reason-than-tightly-coupled
   [11]: http://2002-2012.mattwilcox.net/archive/entry/id/1054/
-  [12]: http://twobanjos.com/blog/2011/06/why-well-stop-using-id-in-our-stylesheets/
   [14]: http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/
   [15]: http://css-tricks.com/efficiently-rendering-css/
   [16]: http://www.vanseodesign.com/css/css-selector-performance/

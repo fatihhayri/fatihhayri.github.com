@@ -145,7 +145,7 @@ Kalın sağlıcakla.
  - [http://usablica.github.io/front-end-frameworks/compare.html](http://usablica.github.io/front-end-frameworks/compare.html)
  - [http://www.sitepoint.com/understanding-bootstrap-grid-system/](http://www.sitepoint.com/understanding-bootstrap-grid-system/)
  - [http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php](http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php)
- - [http://shoelace.io/](http://shoelace.io/)
+ - shoelace.io/
  - http://blog.jetstrap.com/2013/08/bootstrap-3-grids-explained/
  - [https://scotch.io/tutorials/reorder-css-columns-using-bootstrap](https://scotch.io/tutorials/reorder-css-columns-using-bootstrap)
  - [http://stackoverflow.com/a/18070242/296373](http://stackoverflow.com/a/18070242/296373)

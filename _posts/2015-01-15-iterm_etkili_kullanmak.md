@@ -51,7 +51,7 @@ Kısa yol tanımlarımız tamam, artık kullanabiliriz.
 
 ### Bulunan kelimenin satırına gitmek
 
-Bu özellikte süper. Bu özelliği kullanmak için önce iTerm'den Sublime Text açmak için [subl](https://www.sublimetext.com/docs/3/osx_command_line.html) ayarını yapmamız gerekiyor.  Detaylı bilgiyi [buradan](http://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal) alabilirsiniz. Bu ayarı yaptıktan sonra; **Profiles > Advanced > Semantic History**
+Bu özellikte süper. Bu özelliği kullanmak için önce iTerm'den Sublime Text açmak için subl ayarını yapmamız gerekiyor.  Detaylı bilgiyi [buradan](http://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal) alabilirsiniz. Bu ayarı yaptıktan sonra; **Profiles > Advanced > Semantic History**
 
 **Semantic History** sekmesinde girdi alanına aşağıdaki kodu yazalım.
 

@@ -93,7 +93,7 @@ Kalın sağlıcakla.
 - [https://css-tricks.com/getting-acquainted-with-initial/](https://css-tricks.com/getting-acquainted-with-initial/)
 - [https://tympanus.net/codrops/css_reference/unset/](https://tympanus.net/codrops/css_reference/unset/)
 - [https://tympanus.net/codrops/css_reference/inherit/](https://tympanus.net/codrops/css_reference/inherit/)
-- [https://alligator.io/css/inherit-initial-unset/](https://alligator.io/css/inherit-initial-unset/)
+- alligator.io/css/inherit-initial-unset/
 - [https://medium.com/better-programming/css-explicit-defaulting-initial-inherit-unset-and-revert-9110647cdaa1](https://medium.com/better-programming/css-explicit-defaulting-initial-inherit-unset-and-revert-9110647cdaa1)
 - [https://bitsofco.de/initial-inherit-unset-and-revert/](https://bitsofco.de/initial-inherit-unset-and-revert/)
 - [https://medium.com/@paulryan17/understanding-the-css-values-inherit-initial-and-unset-c5d890743536](https://medium.com/@paulryan17/understanding-the-css-values-inherit-initial-and-unset-c5d890743536)

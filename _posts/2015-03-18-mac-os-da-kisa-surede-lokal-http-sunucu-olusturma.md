@@ -22,4 +22,4 @@ Ta ta http://localhost:8080 adresi üzerinden gezebilirsiniz.
 
 Bu kodları unutuyorum. Buraya yazayımda bulması kolay olsun :D
 
-**Kaynak:** [http://www.andyjamesdavies.com/blog/javascript/simple-http-server-on-mac-os-x-in-seconds](http://www.andyjamesdavies.com/blog/javascript/simple-http-server-on-mac-os-x-in-seconds)
+**Kaynak:** andyjamesdavies.com/blog/javascript/simple-http-server-on-mac-os-x-in-seconds

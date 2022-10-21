@@ -34,7 +34,7 @@ Bir arada bileklerimde ağrılar hissettim. Biraz internettte araştırnca Karpa
 
 Çözüm olarak sunulan çözümlerden birisi; dikey mouse çözümü hoşuma gitti. Hemen sahibinden.com'dan(Burada çalışmadan önce yaptığım tek alışveriş) bir çin malı dikey mouse aldım. Gayet ucuzdu işimi görür mü diye aldım. Tabi "ucuzdur vardır bir  illeti, pahalıdır vardır bir hikmeti" sözü mucibince mouse tekeri kırıldı ve mouse işlevsiz hale geldi. 
 
-Tabi sonra ağrılar geçince çok üstüne düşmedim. Ta ki 2-3 ay önce ağrılarım tekrar edinceye kadar. Bende bu sefer daha kaliteli bir dikey mouse almak için araştırmalara başladım. Yine çin malı ama bu sefer [çinden bir mouse](https://www.dx.com/p/delux-m618-2-4ghz-wireless-vertical-laser-mouse-black-dark-grey-2-x-aaa-171935#.U_8NP7y1ZMY) aldım. Birinci hafta ki alışma sürecinden sonra gayet başarılı bir deneyim sunduğunu söyleyebilirim. Tabi hareket ve spor şart. 
+Tabi sonra ağrılar geçince çok üstüne düşmedim. Ta ki 2-3 ay önce ağrılarım tekrar edinceye kadar. Bende bu sefer daha kaliteli bir dikey mouse almak için araştırmalara başladım. Yine çin malı ama bu sefer Çin'den bir mouse aldım. Birinci hafta ki alışma sürecinden sonra gayet başarılı bir deneyim sunduğunu söyleyebilirim. Tabi hareket ve spor şart. 
 
 ## Boyun
 

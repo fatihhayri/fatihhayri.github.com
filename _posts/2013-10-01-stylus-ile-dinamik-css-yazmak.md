@@ -430,14 +430,14 @@ Kalın sağlıcakla.
 - [http://www.hongkiat.com/blog/less-tips-tools/](http://www.hongkiat.com/blog/less-tips-tools/)
 - [http://designshack.net/articles/css/sass-vs-stylus-who-wins-the-minimal-syntax-battle/](http://designshack.net/articles/css/sass-vs-stylus-who-wins-the-minimal-syntax-battle/) (sass ve stylus karşılaştırması)
 - [http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/](http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/) (sass, less ve stylus karşılaştırması)
-- [http://learnboost.github.com/stylus/](http://learnboost.github.com/stylus/)
+- learnboost.github.com/stylus/
 - [http://css-tricks.com/poll-results-popularity-of-css-preprocessors/](http://css-tricks.com/poll-results-popularity-of-css-preprocessors/) anket
 - [http://thechangelog.com/stylus-expressive-robust-feature-rich-css-language/](http://thechangelog.com/stylus-expressive-robust-feature-rich-css-language/) (stylus)
 - [http://www.sitepoint.com/a-comprehensive-introduction-to-less/](http://www.sitepoint.com/a-comprehensive-introduction-to-less/) (less e başlamak)
 - [http://www.sitepoint.com/a-comprehensive-introduction-to-less-mixins/](http://www.sitepoint.com/a-comprehensive-introduction-to-less-mixins/) (lesss mixins)
 - [http://verekia.com/less-css/dont-read-less-css-tutorial-highly-addictive](http://verekia.com/less-css/dont-read-less-css-tutorial-highly-addictive) (less)
 - [http://www.wellfireinteractive.com/blog/introduction-to-stylus/](http://www.wellfireinteractive.com/blog/introduction-to-stylus/) (stylus)
-- [http://nylira.com/stylus-the-revolutionary-successor-to-css/](http://nylira.com/stylus-the-revolutionary-successor-to-css/) (stylus örnek kaşılaştırma)
+- nylira.com/stylus-the-revolutionary-successor-to-css/
 - robdodson.me/blog/2012/12/28/debug-less-with-chrome-developer-tools
 - [https://npmjs.org/~tjholowaychuk](https://npmjs.org/~tjholowaychuk) (stylus geliştiricilerinden)
 - [https://npmjs.org/~kizu](https://npmjs.org/~kizu) (stylus geliştiricilerinden) ie için çözüm önerisi

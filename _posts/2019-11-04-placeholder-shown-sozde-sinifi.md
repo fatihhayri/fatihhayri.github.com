@@ -39,7 +39,7 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
- - [https://callmenick.com/dev/floated-labels-with-placeholder-shown/](https://callmenick.com/dev/floated-labels-with-placeholder-shown/)
+ - callmenick.com/dev/floated-labels-with-placeholder-shown/
  - [https://css-tricks.com/almanac/selectors/p/placeholder-shown/](https://css-tricks.com/almanac/selectors/p/placeholder-shown/)
  - [https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown](https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown)
  - [https://codepen.io/andreasstorm/pen/gKGbxo?editors=1100](https://codepen.io/andreasstorm/pen/gKGbxo?editors=1100)

@@ -189,4 +189,4 @@ Kalın sağlıcakla.
  - https://dev.to/ziizium/css-grid-part-1-3f57
  - https://alligator.io/css/css-grid-layout-span-keyword/
  - [CSS Grid Layout Course #10: Use "span"](https://www.youtube.com/watch?v=P9eFUr_mrE8)
- - [https://www.joomlashack.com/blog/tutorials/sizing-grid-items/](https://www.joomlashack.com/blog/tutorials/sizing-grid-items/)
+ - joomlashack.com/blog/tutorials/sizing-grid-items/

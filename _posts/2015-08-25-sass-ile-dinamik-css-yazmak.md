@@ -18,7 +18,7 @@ Stylus yazımdan yaptığım alıntı tüm CSS önişlemcileri için geçerlidir
 
 ## Sass Kurulumu
 
-SASS Ruby ile geliştirildiğinden kurulumu için bilgisayarınızda Ruby ve onun paket yöneticisi Gem'in bulunması lazımdır. Mac OS'ta Ruby ve Gem kurulu geliyor. Windows için  [Ruby Installer](http://rubyinstaller.org/) indirip kurmanız gerekir. Linux için [Rails Ready](https://github.com/joshfng/railsready) 'dan kurabilirsiniz. 
+SASS Ruby ile geliştirildiğinden kurulumu için bilgisayarınızda Ruby ve onun paket yöneticisi Gem'in bulunması lazımdır. Mac OS'ta Ruby ve Gem kurulu geliyor. Windows için  [Ruby Installer](http://rubyinstaller.org/) indirip kurmanız gerekir. Linux için Rails Ready 'dan kurabilirsiniz. 
 
 Sonrasında komut satırına:
 
@@ -74,7 +74,7 @@ Genel itibari ile bu programları sıralarsak
 
  - [Scout](http://mhs.github.io/scout-app/):  Ücretsiz, Windows/Mac
  - CodeKit: 29$, Mac
- - [LiveReload](http://livereload.com/): 9,90$, Windows/Mac
+ - LiveReload: 9,90$, Windows/Mac
  - [Compass.app](http://compass.kkbox.com/): 10$, Windows/Mac/Linux
 
 ### Sublime Text ile derlemek
@@ -214,4 +214,4 @@ Kalın sağlıcakla.
  - [http://www.yunusbassahan.com/blog/sass/sass-kurulumu-ve-program-tercihi.html](http://www.yunusbassahan.com/blog/sass/sass-kurulumu-ve-program-tercihi.html)
  - [http://sonsuzdongu.com/blog/sass-a-giris](http://sonsuzdongu.com/blog/sass-a-giris)
  - [http://blog.designedbysherpa.com/2015/03/css-preprocessorler-on-derleyiciler-ve-sass/](http://blog.designedbysherpa.com/2015/03/css-preprocessorler-on-derleyiciler-ve-sass/)
- - [http://sublimetexttips.com/how-to-add-sass-support-in-sublime-text/](http://sublimetexttips.com/how-to-add-sass-support-in-sublime-text/)
+ - sublimetexttips.com/how-to-add-sass-support-in-sublime-text/

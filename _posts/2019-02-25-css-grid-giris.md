@@ -96,8 +96,8 @@ Yardımlarından dolayı [Serkan Bektaş](https://twitter.com/serkanbektasim)'a 
 
 ## Kaynaklar
 
-- [https://alligator.io/css/css-grid-layout-intro/](https://alligator.io/css/css-grid-layout-intro/)
+- alligator.io/css/css-grid-layout-intro
 - [https://bitsofco.de/css-grid-terminology/#gridcolumnsgridrowsandgridtracks](https://bitsofco.de/css-grid-terminology/#gridcolumnsgridrowsandgridtracks)
 - [https://codepen.io/stacy/pen/ObmjeZ](https://codepen.io/stacy/pen/ObmjeZ)
-- [https://www.joomlashack.com/blog/joomla-news/basics-of-css-grid/](https://www.joomlashack.com/blog/joomla-news/basics-of-css-grid/)
+- joomlashack.com/blog/joomla-news/basics-of-css-grid/
 - [https://caniuse.com/#feat=css-grid](https://caniuse.com/#feat=css-grid)

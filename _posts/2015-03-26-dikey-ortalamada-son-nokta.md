@@ -50,7 +50,7 @@ Kalın sağlıcakla.
 
 ## Kaynaklar
 
- - [http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/](http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/)
+ - zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
  - http://brantsteen.com/blog/vertical-alignment-with-css/
  - [http://davidwalsh.name/css-vertical-center](http://davidwalsh.name/css-vertical-center)
  - [http://daker.me/2014/04/4-css-tricks-for-vertical-alignment.html](http://daker.me/2014/04/4-css-tricks-for-vertical-alignment.html)

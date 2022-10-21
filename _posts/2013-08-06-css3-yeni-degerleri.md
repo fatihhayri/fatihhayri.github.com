@@ -291,7 +291,7 @@ Kodu [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters?redir
 * [https://developer.mozilla.org/en-US/docs/CSS/angle](https://developer.mozilla.org/en-US/docs/CSS/angle) (açı)
 * [http://snook.ca/archives/html_and_css/font-size-with-rem](http://snook.ca/archives/html_and_css/font-size-with-rem) (rem)
 * [http://csswizardry.com/2011/05/font-sizing-with-rem-could-be-avoided/](http://csswizardry.com/2011/05/font-sizing-with-rem-could-be-avoided/) (rem)
-* [http://xph.us/2009/02/02/rem-in-firefox.html](http://xph.us/2009/02/02/rem-in-firefox.html) (rem)
+* xph.us/2009/02/02/rem-in-firefox.html
 * [http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/](http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/)
 * [http://jsbin.com/acide4/8](http://jsbin.com/acide4/8)
 * [http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/](http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/) (rem)

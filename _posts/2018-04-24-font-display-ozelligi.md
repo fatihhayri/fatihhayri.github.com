@@ -106,7 +106,7 @@ Sağlıcakla kalın.
  - [https://developers.google.com/web/updates/2016/02/font-display](https://developers.google.com/web/updates/2016/02/font-display)
  - [https://www.sitepoint.com/css-font-display-future-font-rendering-web/](https://www.sitepoint.com/css-font-display-future-font-rendering-web/)
  - [https://caniuse.com/#feat=css-font-rendering-controls](https://caniuse.com/#feat=css-font-rendering-controls)
- - [https://alligator.io/css/font-face/](https://alligator.io/css/font-face/)
+ - alligator.io/css/font-face/
  - [https://www.zachleat.com/web/comprehensive-webfonts/](https://www.zachleat.com/web/comprehensive-webfonts/)
  - [https://webkit.org/blog/6643/improved-font-loading/](https://webkit.org/blog/6643/improved-font-loading/)
  - [https://www.youtube.com/watch?v=yRrrL0Mg1pM&t=518s](https://www.youtube.com/watch?v=yRrrL0Mg1pM&t=518s)

@@ -129,7 +129,7 @@ Gördüğüm tek negatif yöne
 
  - [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)
  - [https://css-tricks.com/some-hands-on-with-the-html-dialog-element/](https://css-tricks.com/some-hands-on-with-the-html-dialog-element/)
- - [https://alligator.io/html/dialog-element/](https://alligator.io/html/dialog-element/)
+ - alligator.io/html/dialog-element/
  - [https://css-tricks.com/replace-javascript-dialogs-html-dialog-element/](https://css-tricks.com/replace-javascript-dialogs-html-dialog-element/)
  - [https://tympanus.net/codrops/2021/10/06/how-to-implement-and-style-the-dialog-element/](https://tympanus.net/codrops/2021/10/06/how-to-implement-and-style-the-dialog-element/)
  - [https://caniuse.com/dialog](https://caniuse.com/dialog)

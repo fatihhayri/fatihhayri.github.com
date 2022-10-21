@@ -139,7 +139,7 @@ Serkan Bektaş'a teşekkürü unutmayalım.
 ## Kaynaklar
 
  - [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas)
- - [https://alligator.io/css/css-grid-layout-grid-areas/](https://alligator.io/css/css-grid-layout-grid-areas/)
+ - alligator.io/css/css-grid-layout-grid-areas/
  - [https://css-tricks.com/simple-named-grid-areas/](https://css-tricks.com/simple-named-grid-areas/)
  - [https://thoughtbot.com/blog/concise-media-queries-with-css-grid](https://thoughtbot.com/blog/concise-media-queries-with-css-grid)
  - [https://dev.to/kenbellows/css-grid-areas-are-amazing-1gha](https://dev.to/kenbellows/css-grid-areas-are-amazing-1gha)
@@ -148,4 +148,4 @@ Serkan Bektaş'a teşekkürü unutmayalım.
  - [https://twitter.com/jtucholski/status/1084664028260114432?s=20](https://twitter.com/jtucholski/status/1084664028260114432?s=20)
  - [https://hashnode.com/post/grid-template-areas-css-grid-system-cjqoozpee015i1fs1ezmipxg1](https://hashnode.com/post/grid-template-areas-css-grid-system-cjqoozpee015i1fs1ezmipxg1)
  - [https://www.youtube.com/watch?v=v5KzBPUEgGQ](https://www.youtube.com/watch?v=v5KzBPUEgGQ)
- - [https://www.joomlashack.com/blog/tutorials/how-to-place-items-with-grid-template-areas/](https://www.joomlashack.com/blog/tutorials/how-to-place-items-with-grid-template-areas/)
+ - joomlashack.com/blog/tutorials/how-to-place-items-with-grid-template-areas/

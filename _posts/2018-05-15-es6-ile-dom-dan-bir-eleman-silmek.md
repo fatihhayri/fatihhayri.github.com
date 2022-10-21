@@ -10,7 +10,7 @@ image:
   feature: es6.jpeg
 ---
 
-[zingat.com](https://zingat.com)'da IE11 desteğini sonlandırdıktan sonra ES6'in yeniliklerinden yararlanıyoruz.
+zingat.com'da IE11 desteğini sonlandırdıktan sonra ES6'in yeniliklerinden yararlanıyoruz.
 
 jQuery ile basit bir şekilde yaptığımız DOM'dan eleman silme işini aynı kolaylıkla ES6 ile yapıyoruz.
 
