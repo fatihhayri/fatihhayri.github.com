@@ -163,12 +163,11 @@ ile sayfamıza ekledik.
 -   http://somerandomdude.com/2010/05/04/font-embedding-icons
 -   [http://24ways.org/2011/displaying-icons-with-fonts-and-data-attributes][]
 -   codevisually.com/heydings-icons-a-free-fontface-icon-set
--   [http://webloti.org/20-modern-fontface-icon-seti/][]
+-   webloti.org/20-modern-fontface-icon-seti/
 -   [http://webdesignerwall.com/demo/css-social-buttons/][]
 -   http://www.webresourcesdepot.com/free-icon-fonts-pictograms-for-todays-web-designer/
 
   [font-face kullanımını]: http://fatihhayrioglu.com/font-face-kullanimi/
-  [http://webloti.org/20-modern-fontface-icon-seti/]: http://webloti.org/20-modern-fontface-icon-seti/
   [100]: https://lh5.googleusercontent.com/79Rggs4m_IPXO4v7JCZQt1fSFLljkf9RuTtZDSPzqeg4D3pjzrKFmyboc6ZmVwnSUw7yDZUvklmSSCqFSo8YL3qslteMuQ8r4I-SxhoO6pJVZ1EhZog
   [1]: /images/Screen-shot-2012-03-08-at-10.44.09-AM.png
   [/dokumanlar/fontface_ikon.html]: /dokumanlar/fontface_ikon.html

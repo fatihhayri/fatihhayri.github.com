@@ -220,7 +220,7 @@ Kalın sağlıcakla.
 -   [http://css-tricks.com/css3-multiple-backgrounds-obsoletes-sliding-doors/][]
 -   [http://www.storiesinflight.com/html5/backgrounds.html][] (paralaks)
 -   http://www.lifeathighroad.com/css3-lessons/css3-lessons-multiple-background-images
--   [http://www.paulrhayes.com/experiments/parallax/#experiment][]
+-   paulrhayes.com/experiments/parallax/#experiment
 
   [Yuvarlak kenarlı kutular]: http://fatihhayrioglu.com/yuvarlak-kenarli-kutular/
   [CSS ile sekmeli tab menu yapımı]: http://fatihhayrioglu.com/css-ile-sekmelitab-menu-yapimi/
@@ -242,7 +242,6 @@ Kalın sağlıcakla.
   [http://event-horizon.twiddles.com/sites/experimental/css3-bg/]: http://event-horizon.twiddles.com/sites/experimental/css3-bg/
   [http://css-tricks.com/css3-multiple-backgrounds-obsoletes-sliding-doors/]: http://css-tricks.com/css3-multiple-backgrounds-obsoletes-sliding-doors/
   [http://www.storiesinflight.com/html5/backgrounds.html]: http://www.storiesinflight.com/html5/backgrounds.html
-  [http://www.paulrhayes.com/experiments/parallax/#experiment]: http://www.paulrhayes.com/experiments/parallax/#experiment
 
 
 [firefox]: /images/ff.png

@@ -54,7 +54,6 @@ if(typeof(test) !== 'undefined' && test != null) {
 -   [http://stackoverflow.com/questions/27509/detecting-an-undefined-object-property-in-javascript][]
 -   snipplr.com/view.php?codeview&id=14618
 -   bloggingdeveloper.com/post/JavaScript-null-vs-undefined-The-Difference-between-null-and-undefined.aspx
--   [http://bonsaiden.github.com/JavaScript-Garden/#core.undefined][]
+-   bonsaiden.github.com/JavaScript-Garden/#core.undefined
 
   [http://stackoverflow.com/questions/27509/detecting-an-undefined-object-property-in-javascript]: http://stackoverflow.com/questions/27509/detecting-an-undefined-object-property-in-javascript
-  [http://bonsaiden.github.com/JavaScript-Garden/#core.undefined]: http://bonsaiden.github.com/JavaScript-Garden/#core.undefined

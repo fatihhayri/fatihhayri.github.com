@@ -532,7 +532,7 @@ ie6 öldü.
 -   bradt.ca/archives/preventing-ie6-bugs/
 -   [http://www.sitepoint.com/10-fixes-for-ie6-problems/][]
 -   [http://softwareas.com/ten-reasons-why-ie6-development-is-significantly-better-in-2010-than-2001-but-still-painful][]
--   [http://bip.softwarejewel.com/technology/10-reasons-why-ie6-needs-to-be-killed-2253/][]
+-   bip.softwarejewel.com/technology/10-reasons-why-ie6-needs-to-be-killed-2253
 -   [http://www.carronmedia.com/why-ie6-will-probably-out-live-ie7/][]
 -   [http://www.w3counter.com/trends][]
 -   [http://www.dedoimedo.com/computers/internet-explorer-6-retire.html][]
@@ -567,7 +567,6 @@ ie6 öldü.
   [http://blogs.msdn.com/b/ie/archive/2006/08/22/712830.aspx]: http://blogs.msdn.com/b/ie/archive/2006/08/22/712830.aspx
   [http://www.sitepoint.com/10-fixes-for-ie6-problems/]: http://www.sitepoint.com/10-fixes-for-ie6-problems/
   [http://softwareas.com/ten-reasons-why-ie6-development-is-significantly-better-in-2010-than-2001-but-still-painful]: http://softwareas.com/ten-reasons-why-ie6-development-is-significantly-better-in-2010-than-2001-but-still-painful
-  [http://bip.softwarejewel.com/technology/10-reasons-why-ie6-needs-to-be-killed-2253/]: http://bip.softwarejewel.com/technology/10-reasons-why-ie6-needs-to-be-killed-2253/
   [http://www.carronmedia.com/why-ie6-will-probably-out-live-ie7/]: http://www.carronmedia.com/why-ie6-will-probably-out-live-ie7/
   [http://www.w3counter.com/trends]: http://www.w3counter.com/trends
   [http://www.dedoimedo.com/computers/internet-explorer-6-retire.html]: http://www.dedoimedo.com/computers/internet-explorer-6-retire.html

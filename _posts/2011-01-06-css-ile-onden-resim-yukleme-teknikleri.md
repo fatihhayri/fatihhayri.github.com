@@ -66,14 +66,13 @@ tarayıcılar desteklemediği için beklemek gerekiyor.
 ## Kaynaklar
 
 -   [http://css-tricks.com/snippets/css/css-only-image-preloading/][]
--   [http://www.velvetblues.com/web-development-blog/the-css-approach-preload-images-without-javascript/][]
+-   velvetblues.com/web-development-blog/the-css-approach-preload-images-without-javascript/
 -   [http://snipplr.com/view/2122/css-image-preloader/][]
 -   [http://www.thecssninja.com/css/even-better-image-preloading-with-css2][]
 -   [http://www.maratz.com/blog/archives/2005/06/22/preload-hover-images-in-css/][]
 
   [http://fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/]: http://fatihhayrioglu.com/onden-resimleripreloading-images-yukleme-yontemleri/
   [http://css-tricks.com/snippets/css/css-only-image-preloading/]: http://css-tricks.com/snippets/css/css-only-image-preloading/
-  [http://www.velvetblues.com/web-development-blog/the-css-approach-preload-images-without-javascript/]: http://www.velvetblues.com/web-development-blog/the-css-approach-preload-images-without-javascript/
   [http://snipplr.com/view/2122/css-image-preloader/]: http://snipplr.com/view/2122/css-image-preloader/
   [http://www.thecssninja.com/css/even-better-image-preloading-with-css2]: http://www.thecssninja.com/css/even-better-image-preloading-with-css2
   [http://www.maratz.com/blog/archives/2005/06/22/preload-hover-images-in-css/]: http://www.maratz.com/blog/archives/2005/06/22/preload-hover-images-in-css/

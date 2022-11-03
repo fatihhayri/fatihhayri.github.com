@@ -518,7 +518,7 @@ Kaynaklar
 -   [http://designshack.net/articles/css/using-checkboxes-to-toggle-css-and-create-click-events/][]
 -   http://calebogden.com/css-target/
 -   http://www.bilisimdergi.com/3-Katman-Mimarisi-ve-JavaScript-14-5.html
--   [http://cscie12.dce.harvard.edu/lecture_notes/2010/20100324/handout.html][]
+-   cscie12.dce.harvard.edu/lecture_notes/2010/20100324/handout.html
 
 
   [sunumun linki.]: https://docs.google.com/presentation/d/13cNTBiY4ewyRpCwmKD_CyKgMs3z4md27YH-ZcVtubcA/edit
@@ -584,4 +584,3 @@ Kaynaklar
   [http://css-tricks.com/the-checkbox-hack/]: http://css-tricks.com/the-checkbox-hack/
   [http://www.inserthtml.com/2012/04/css-click-states/]: http://www.inserthtml.com/2012/04/css-click-states/
   [http://designshack.net/articles/css/using-checkboxes-to-toggle-css-and-create-click-events/]: http://designshack.net/articles/css/using-checkboxes-to-toggle-css-and-create-click-events/
-  [http://cscie12.dce.harvard.edu/lecture_notes/2010/20100324/handout.html]: http://cscie12.dce.harvard.edu/lecture_notes/2010/20100324/handout.html

@@ -43,10 +43,9 @@ Diğer kod eklemeleri farklı tarayıcılar içindir.
 ## Kaynaklar
 
 -   [http://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats][]
--   [http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/][]
+-   atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/
 -   [http://www.naprej.com/css3_body_background_gradient][]
 
   [http://stackoverflow.com/]: http://stackoverflow.com/
   [http://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats]: http://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats
-  [http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/]: http://atomicrobotdesign.com/blog/htmlcss/use-css3-gradients-to-replace-your-sites-background/
   [http://www.naprej.com/css3_body_background_gradient]: http://www.naprej.com/css3_body_background_gradient

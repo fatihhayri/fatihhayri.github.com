@@ -112,11 +112,11 @@ Zamanla çok daha güzel örneklerin çıkacağını düşünüyorum.
 ## Kaynaklar
 
 -   [http://dev.opera.com/articles/view/css3-target-based-interfaces/][]
--   [http://thinkvitamin.com/design/stay-on-target/][]
+-   thinkvitamin.com/design/stay-on-target/
 -   [http://www.smashingmagazine.com/2011/03/30/how-to-use-css3-pseudo-classes/][]
 -   [http://www.red-team-design.com/get-to-know-your-css3-target-pseudo-class][]
 -   [http://www.css3.info/making-an-image-gallery-with-target/][]
--   [http://virtuelvis.com/gallery/css3/target/interface.html#recycle][]
+-   virtuelvis.com/gallery/css3/target/interface.html#recycle
 -   [http://webdesignernotebook.com/css/the-css3-target-pseudo-class-and-css-animations/][]
 -   http://kaioa.com/node/93
 -   [http://reference.sitepoint.com/css/pseudoclass-target][]
@@ -131,11 +131,9 @@ Zamanla çok daha güzel örneklerin çıkacağını düşünüyorum.
   [5]: https://lh5.googleusercontent.com/JIw7mpQZ1vZlRkcjZijKVbCoe5SqXeq4TGx0pNrW0qSVOhmS3u-7xQacBlvxzWBf55OWlzYxf2B7k0u89CHVa2fFdlTL4F410blisNOAz9eF2LjNlw
   
   [http://dev.opera.com/articles/view/css3-target-based-interfaces/]: http://dev.opera.com/articles/view/css3-target-based-interfaces/
-  [http://thinkvitamin.com/design/stay-on-target/]: http://thinkvitamin.com/design/stay-on-target/
   [http://www.smashingmagazine.com/2011/03/30/how-to-use-css3-pseudo-classes/]: http://www.smashingmagazine.com/2011/03/30/how-to-use-css3-pseudo-classes/
   [http://www.red-team-design.com/get-to-know-your-css3-target-pseudo-class]: http://www.red-team-design.com/get-to-know-your-css3-target-pseudo-class
   [http://www.css3.info/making-an-image-gallery-with-target/]: http://www.css3.info/making-an-image-gallery-with-target/
-  [http://virtuelvis.com/gallery/css3/target/interface.html#recycle]: http://virtuelvis.com/gallery/css3/target/interface.html#recycle
   [http://webdesignernotebook.com/css/the-css3-target-pseudo-class-and-css-animations/]: http://webdesignernotebook.com/css/the-css3-target-pseudo-class-and-css-animations/
   http://kaioa.com/node/93
   [http://reference.sitepoint.com/css/pseudoclass-target]: http://reference.sitepoint.com/css/pseudoclass-target

@@ -213,7 +213,7 @@ sitelerden kaldırmayı unutmayın.
 -   computerworld.com/s/article/9217279/Google_to_dump_support_for_Microsoft_s_IE7
 -   [http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/][]
 -   [http://drupal.org/node/1217788][]
--   [http://theie7countdown.com/][]
+-   theie7countdown.com
 -   [http://gmailblog.blogspot.com/2011/06/our-plans-to-support-modern-browsers.html][]
 -   [http://blogs.missouristate.edu/web/2012/03/26/goodbye-ie7-we-wont-miss-you/][]
 -   [http://caniuse.com/#compare=y&b1=ie+7&b2=ie+8][]
@@ -264,7 +264,6 @@ sitelerden kaldırmayı unutmayın.
   [http://www.quirksmode.org/css/contents.html#t15]: http://www.quirksmode.org/css/contents.html#t15
   [http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/]: http://thenextweb.com/facebook/2011/12/30/not-a-fan-of-timeline-on-facebook-use-ie7-facebook-stopped-supporting-it/
   [http://drupal.org/node/1217788]: http://drupal.org/node/1217788
-  [http://theie7countdown.com/]: http://theie7countdown.com/
   [http://gmailblog.blogspot.com/2011/06/our-plans-to-support-modern-browsers.html]: http://gmailblog.blogspot.com/2011/06/our-plans-to-support-modern-browsers.html
   [http://blogs.missouristate.edu/web/2012/03/26/goodbye-ie7-we-wont-miss-you/]: http://blogs.missouristate.edu/web/2012/03/26/goodbye-ie7-we-wont-miss-you/
   [http://caniuse.com/#compare=y&b1=ie+7&b2=ie+8]: http://caniuse.com/#compare=y&b1=ie+7&b2=ie+8

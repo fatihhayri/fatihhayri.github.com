@@ -49,7 +49,7 @@ destekleyip desteklemediğini bilmek önemli.
 Popüler mailing programlarının css destekleme listesini görmek için
 [tıklayınız.][]
 
-Benzer listeler webde çok var diğer bir liste [email-standards.org][]
+Benzer listeler webde çok var diğer bir liste email-standards.org
 
 Bu listeleri incelmeliyiz ve kodumuzu yazarken buna göre hareket
 etmeliyiz.
@@ -222,20 +222,17 @@ Kalın sağlıcakla.
 -   [http://www.viget.com/inspire/tips-for-coding-html-email/][]
 -   thinkvitamin.com/features/design/ensuring-your-html-emails-look-great-and-get-delivered/
 -   [http://www.anandgraves.com/html-email-guide][] (iyi)
--   [http://www.email-standards.org/][] (iyi)
+-   email-standards.org/
 -   [http://css-tricks.com/using-css-in-html-emails-the-real-story/][]
--   [http://www.email-standards.org/clients/][]
+-   email-standards.org/clients/
 -   [http://www.campaignmonitor.com/css/][]
 -   [http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html][]
 
 
   [tıklayınız.]: http://www.campaignmonitor.com/css/ "tıklayınız."
-  [email-standards.org]: http://www.email-standards.org/clients/
   [http://www.blacklistmonitoring.com/lookup/email_blacklist_IP_address_lookup.php]: http://www.blacklistmonitoring.com/lookup/email_blacklist_IP_address_lookup.php
   [http://www.viget.com/inspire/tips-for-coding-html-email/]: http://www.viget.com/inspire/tips-for-coding-html-email/
   [http://www.anandgraves.com/html-email-guide]: http://www.anandgraves.com/html-email-guide
-  [http://www.email-standards.org/]: http://www.email-standards.org/
   [http://css-tricks.com/using-css-in-html-emails-the-real-story/]: http://css-tricks.com/using-css-in-html-emails-the-real-story/
-  [http://www.email-standards.org/clients/]: http://www.email-standards.org/clients/
   [http://www.campaignmonitor.com/css/]: http://www.campaignmonitor.com/css/
   [http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html]: http://www.topluemailgonderimi.com/spamadusmedennasiltopluemailgonderilir.html

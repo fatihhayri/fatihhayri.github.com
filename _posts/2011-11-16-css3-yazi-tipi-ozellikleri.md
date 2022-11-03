@@ -140,7 +140,7 @@ Kalın sağlıcakla
 -   [http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/][]
 -   http://www.webspaceworks.com/resources/fonts-web-typography/43/
 -   [http://www.opera.com/docs/specs/presto27/css/fonts/][]
--   [http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/][]
+-   stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/
 -   [http://fatihhayrioglu.com/css-ve-tipografi/][]
 -   [http://brunildo.org/test/xheight.pl][]
 -   [http://www.w3schools.com/cssref/css3_pr_font-stretch.asp][]
@@ -149,10 +149,10 @@ Kalın sağlıcakla
 -   [http://meyerweb.com/eric/css/tests/css3/show.php?p=font-stretch][]
 -   log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support
 -   [http://clagnut.com/blog/2265/][]  (font-stretch)
--   [http://www.cssportal.com/css-properties/font-effect.htm][]
+-   cssportal.com/css-properties/font-effect.htm
 -   http://www.handycss.com/wiki/font-effect/
 -   [http://szafranek.net/works/articles/font-smoothing-explained/][]
--   [http://maxvoltar.com/archive/-Webkit-font-smoothing][]
+-   maxvoltar.com/archive/-Webkit-font-smoothing
 -   [http://www.usabilitypost.com/2010/08/26/font-smoothing/][]
 
   [@font-face kullanımı]: http://fatihhayrioglu.com/font-face-kullanimi/
@@ -170,7 +170,6 @@ Kalın sağlıcakla
   [http://babylon-design.com/mais-c-est-quoi-au-juste-font-size-adjust/]: http://babylon-design.com/mais-c-est-quoi-au-juste-font-size-adjust/
   [http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/]: http://www.peterkroener.de/schoenes-neues-css-font-size-adjust/
   [http://www.opera.com/docs/specs/presto27/css/fonts/]: http://www.opera.com/docs/specs/presto27/css/fonts/
-  [http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/]: http://stuff4designers.com/2011/03/15/how-to-use-font-size-adjust/
   [http://fatihhayrioglu.com/css-ve-tipografi/]: http://fatihhayrioglu.com/css-ve-tipografi/
   [http://brunildo.org/test/xheight.pl]: http://brunildo.org/test/xheight.pl
   [http://www.w3schools.com/cssref/css3_pr_font-stretch.asp]: http://www.w3schools.com/cssref/css3_pr_font-stretch.asp
@@ -178,7 +177,5 @@ Kalın sağlıcakla
   [http://msdn.microsoft.com/library/ff974090.aspx]: http://msdn.microsoft.com/library/ff974090.aspx
   [http://meyerweb.com/eric/css/tests/css3/show.php?p=font-stretch]: http://meyerweb.com/eric/css/tests/css3/show.php?p=font-stretch
   [http://clagnut.com/blog/2265/]: http://clagnut.com/blog/2265/
-  [http://www.cssportal.com/css-properties/font-effect.htm]: http://www.cssportal.com/css-properties/font-effect.htm
   [http://szafranek.net/works/articles/font-smoothing-explained/]: http://szafranek.net/works/articles/font-smoothing-explained/
-  [http://maxvoltar.com/archive/-Webkit-font-smoothing]: http://maxvoltar.com/archive/-Webkit-font-smoothing
   [http://www.usabilitypost.com/2010/08/26/font-smoothing/]: http://www.usabilitypost.com/2010/08/26/font-smoothing/

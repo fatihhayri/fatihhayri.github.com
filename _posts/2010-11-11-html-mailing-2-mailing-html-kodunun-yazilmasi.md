@@ -146,7 +146,7 @@ Sağlıcakla kalın.
 -   http://www.mediaministryblog.com/2009/08/how-to-create-a-free-email-newsletter
 -   [http://www.anandgraves.com/html-email-guide/#unnecessary_htmltags][]
 -   [http://css-tricks.com/using-css-in-html-emails-the-real-story/][]
--   [http://www.devwebpro.com/create-an-email-newsletter-template-part-2/][]
+-   devwebpro.com/create-an-email-newsletter-template-part-2/
 -   [http://24ways.org/2009/rock-solid-html-emails][]
 -   [http://www.tuttoaster.com/code-an-email-newsletter-from-psd-to-html/][]
 -   [http://sixrevisions.com/web_design/creating-html-emails/][]</a>
@@ -163,7 +163,6 @@ Sağlıcakla kalın.
   [http://www.campaignmonitor.com/templates/]: http://www.campaignmonitor.com/templates/
   [http://www.anandgraves.com/html-email-guide/#unnecessary_htmltags]: http://www.anandgraves.com/html-email-guide/#unnecessary_htmltags
   [http://css-tricks.com/using-css-in-html-emails-the-real-story/]: http://css-tricks.com/using-css-in-html-emails-the-real-story/
-  [http://www.devwebpro.com/create-an-email-newsletter-template-part-2/]: http://www.devwebpro.com/create-an-email-newsletter-template-part-2/
   [http://24ways.org/2009/rock-solid-html-emails]: http://24ways.org/2009/rock-solid-html-emails
   [http://www.tuttoaster.com/code-an-email-newsletter-from-psd-to-html/]: http://www.tuttoaster.com/code-an-email-newsletter-from-psd-to-html/
   [http://sixrevisions.com/web_design/creating-html-emails/]: http://sixrevisions.com/web_design/creating-html-emails/

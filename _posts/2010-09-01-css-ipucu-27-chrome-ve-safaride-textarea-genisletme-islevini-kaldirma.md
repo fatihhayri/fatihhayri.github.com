@@ -26,9 +26,8 @@ Sadece bu kod ile istediğimizi elde edebiliriz. Tek sakıncası bu kodu sadece 
 
 ## Kaynak
 
--   [http://www.google.com/support/forum/p/Chrome/thread?tid=5f9cd62207e2c7a8&hl=en][]
+-   google.com/support/forum/p/Chrome/thread?tid=5f9cd62207e2c7a8&hl=en
 -   [http://www.electrictoolbox.com/disable-textarea-resizing-safari-chrome/][]
 
   [100]: /images/textarea.gif "textarea"
-  [http://www.google.com/support/forum/p/Chrome/thread?tid=5f9cd62207e2c7a8&hl=en]: http://www.google.com/support/forum/p/Chrome/thread?tid=5f9cd62207e2c7a8&hl=en
   [http://www.electrictoolbox.com/disable-textarea-resizing-safari-chrome/]: http://www.electrictoolbox.com/disable-textarea-resizing-safari-chrome/

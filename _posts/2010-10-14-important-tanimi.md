@@ -156,7 +156,7 @@ okunaksız hale getirebilir, buna dikkat etmek gerekir.
 -   [http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/][]
 -   [http://www.electrictoolbox.com/using-important-css/][]
 -   [http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml][]
--   [http://www.yellowjug.com/web-design/the-importance-of-important-in-css/][]
+-   yellowjug.com/web-design/the-importance-of-important-in-css/
 -   friendfeed.com/arayuz-gelistiriciler/
 
 
@@ -172,4 +172,3 @@ okunaksız hale getirebilir, buna dikkat etmek gerekir.
   [http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/]: http://www.impressivewebs.com/everything-you-need-to-know-about-the-important-css-declaration/
   [http://www.electrictoolbox.com/using-important-css/]: http://www.electrictoolbox.com/using-important-css/
   [http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml]: http://www.webcredible.co.uk/user-friendly-resources/web-dev/css-important.shtml
-  [http://www.yellowjug.com/web-design/the-importance-of-important-in-css/]: http://www.yellowjug.com/web-design/the-importance-of-important-in-css/

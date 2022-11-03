@@ -105,7 +105,7 @@ sıralamaya çalıştım, umarım sizede lazım olduğunda işinize yarar.
 -   [http://wwwhelp.wordpress.com/2009/06/02/css-programming-for-right-to-left-languages/][]
 -   [http://www.viget.com/blog/designing-for-rtl-languages-the-basics/][]
 -   [http://stackoverflow.com/questions/2546022/css-direction-rtl-element-order-problem][]
--   [http://rtl-this.com/tutorial/rtling-hello-world-webpage][]
+-   rtl-this.com/tutorial/rtling-hello-world-webpage
 -   [http://stackoverflow.com/questions/2560966/text-right-to-left-css][]
 -   [http://www.adobe.com/support/downloads/thankyou.jsp?ftpID=4107&fileID=3813][]
 -   [http://reference.sitepoint.com/css/direction][]
@@ -116,7 +116,6 @@ sıralamaya çalıştım, umarım sizede lazım olduğunda işinize yarar.
   [http://wwwhelp.wordpress.com/2009/06/02/css-programming-for-right-to-left-languages/]: http://wwwhelp.wordpress.com/2009/06/02/css-programming-for-right-to-left-languages/
   [http://www.viget.com/blog/designing-for-rtl-languages-the-basics/]: http://www.viget.com/blog/designing-for-rtl-languages-the-basics/
   [http://stackoverflow.com/questions/2546022/css-direction-rtl-element-order-problem]: http://stackoverflow.com/questions/2546022/css-direction-rtl-element-order-problem
-  [http://rtl-this.com/tutorial/rtling-hello-world-webpage]: http://rtl-this.com/tutorial/rtling-hello-world-webpage
   [http://stackoverflow.com/questions/2560966/text-right-to-left-css]: http://stackoverflow.com/questions/2560966/text-right-to-left-css
   [http://reference.sitepoint.com/css/direction]: http://reference.sitepoint.com/css/direction
 

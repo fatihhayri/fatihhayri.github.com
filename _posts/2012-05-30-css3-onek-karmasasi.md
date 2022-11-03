@@ -90,12 +90,12 @@ son kodu çevrimiçi araçlar yardımı ile
 
 -   http://cssprefixer.appspot.com/
 -   http://prefixmycss.com/
--   [http://prefixr.com/][]
+-   prefixr.com
 
 tüm tarayıcılar için üretmek olabilir.
 
-[prefixr.com][]’in farklı editörler için api çözümü de var
-[http://www.prefixr.com/api/usage/][prefixr.com]  sitesinden kendi
+prefixr.com'in farklı editörler için api çözümü de var
+prefixr.com/api/usage/  sitesinden kendi
 editörünüze uygun apiyi yükleyerek direk editörünüzde(kısayol tuşları
 yardımı ile) bu işi yapabiliyorsunuz.
 
@@ -191,7 +191,7 @@ Zamanla göreceği bakalım neler olacak.
 -   [http://www.sitepoint.com/css3-vendor-prefix-crisis-solutions/][]
 -   [http://annevankesteren.nl/2012/04/prefixes][] (opera webkit öneklerini kabul edecek)
 -   [http://peter.sh/experiments/vendor-prefixed-css-property-overview/][] (tüm önek listesi)
--   [http://leaverou.github.com/prefixfree/][]
+-   leaverou.github.com/prefixfree/
 -   [http://kilianvalkhof.com/2010/css-xhtml/css-vendor-prefixes-considered-important/][]
 -   [http://hsivonen.iki.fi/vendor-prefixes/][]
 -   [http://net.tutsplus.com/articles/editorials/do-you-exclusively-use-webkit-prefixes/][]
@@ -203,8 +203,6 @@ Zamanla göreceği bakalım neler olacak.
 
   [Firefox]: http://hacks.mozilla.org/2010/09/firefox-4-recent-changes-in-firefox/
   [İnternet Explorer9]: http://msdn.microsoft.com/en-us/ie/ff468705.aspx
-  [http://prefixr.com/]: http://prefixr.com/
-  [prefixr.com]: http://www.prefixr.com/api/usage/
   [http://www.css3.info/why-and-when-browsers-prefix-css3-features/]: http://www.css3.info/why-and-when-browsers-prefix-css3-features/
   [http://reference.sitepoint.com/css/vendorspecific]: http://reference.sitepoint.com/css/vendorspecific
   [http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html]: http://www.quirksmode.org/blog/archives/2010/03/css_vendor_pref.html
@@ -218,7 +216,6 @@ Zamanla göreceği bakalım neler olacak.
   [http://www.sitepoint.com/css3-vendor-prefix-crisis-solutions/]: http://www.sitepoint.com/css3-vendor-prefix-crisis-solutions/#fbid=qIRziNGN-f6
   [http://annevankesteren.nl/2012/04/prefixes]: http://annevankesteren.nl/2012/04/prefixes
   [http://peter.sh/experiments/vendor-prefixed-css-property-overview/]: http://peter.sh/experiments/vendor-prefixed-css-property-overview/
-  [http://leaverou.github.com/prefixfree/]: http://leaverou.github.com/prefixfree/
   [http://kilianvalkhof.com/2010/css-xhtml/css-vendor-prefixes-considered-important/]: http://kilianvalkhof.com/2010/css-xhtml/css-vendor-prefixes-considered-important/
   [http://hsivonen.iki.fi/vendor-prefixes/]: http://hsivonen.iki.fi/vendor-prefixes/
   [http://net.tutsplus.com/articles/editorials/do-you-exclusively-use-webkit-prefixes/]: http://net.tutsplus.com/articles/editorials/do-you-exclusively-use-webkit-prefixes/

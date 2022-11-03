@@ -166,7 +166,7 @@ Sonuç olarak bir HTML5 basit yapısı
 ## Kaynaklar
 
 -   [http://www.w3schools.com/tags/tag_doctype.asp][]
--   [http://diveintohtml5.org/semantics.html][]
+-   diveintohtml5.org/semantics.html
 -   [http://www.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/][]
 -   http://boblet.tumblr.com/post/141239118/html5-structure4
 
@@ -174,5 +174,4 @@ Sonuç olarak bir HTML5 basit yapısı
   [Doğru DOCTYPE Kullanımı]: http://fatihhayrioglu.com/dogru-doctype-kullanimi/
   [http://www.w3.org/1999/xhtml]: http://www.w3.org/1999/xhtml
   [http://www.w3schools.com/tags/tag_doctype.asp]: http://www.w3schools.com/tags/tag_doctype.asp
-  [http://diveintohtml5.org/semantics.html]: http://diveintohtml5.org/semantics.html
   [http://www.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/]: http://www.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/

@@ -229,7 +229,7 @@ ediyorum, özellikle [Doruk][], bu konuda bildiğim bir çok şeyi ondan
 -   [http://tr.wikipedia.org/wiki/S%C3%BCr%C3%BCm_Kontrol_Sistemi][]
 -   http://book.git-scm.com/4_finding_with_git_grep.html
 -   [http://www.ndpsoftware.com/git-cheatsheet.html][]
--   [http://www.kimbs.cn/2010/11/git-essence/][]
+-   kimbs.cn/2010/11/git-essence/
 -   [http://people.core.gen.tr/~aycan.irican/web/publish/GitSKS.html][]
 
   [100]: /images/git-logo.png "git-logo"
@@ -242,4 +242,3 @@ ediyorum, özellikle [Doruk][], bu konuda bildiğim bir çok şeyi ondan
   [http://net.tutsplus.com/tutorials/other/easy-version-control-with-git/]: http://net.tutsplus.com/tutorials/other/easy-version-control-with-git/
   [http://tr.wikipedia.org/wiki/S%C3%BCr%C3%BCm_Kontrol_Sistemi]: http://tr.wikipedia.org/wiki/S%C3%BCr%C3%BCm_Kontrol_Sistemi
   [http://www.ndpsoftware.com/git-cheatsheet.html]: http://www.ndpsoftware.com/git-cheatsheet.html
-  [http://www.kimbs.cn/2010/11/git-essence/]: http://www.kimbs.cn/2010/11/git-essence/

@@ -490,7 +490,7 @@ Kalın sağlıcakla
 -   [http://www.dynamicdrive.com/style/csslibrary/item/css3_linear_gradients/][]
 -   [http://www.the-art-of-web.com/css/radial-gradients/][]
 -   [http://www.webdesignerdepot.com/2010/11/adding-transparencies-and-gradients-with-css/][]
--   [http://www.display-inline.fr/projects/css-gradient/][]
+-   display-inline.fr/projects/css-gradient/
 -   [http://davidwalsh.name/css-gradients][]
 -   [http://www.slideshare.net/LeaVerou/mastering-css3-gradients][]
 -   css-class.com/test/css/3/gradients/repeating-linear-gradients-stops.htm
@@ -529,7 +529,6 @@ Kalın sağlıcakla
   [http://www.dynamicdrive.com/style/csslibrary/item/css3_linear_gradients/]: http://www.dynamicdrive.com/style/csslibrary/item/css3_linear_gradients/
   [http://www.the-art-of-web.com/css/radial-gradients/]: http://www.the-art-of-web.com/css/radial-gradients/
   [http://www.webdesignerdepot.com/2010/11/adding-transparencies-and-gradients-with-css/]: http://www.webdesignerdepot.com/2010/11/adding-transparencies-and-gradients-with-css/
-  [http://www.display-inline.fr/projects/css-gradient/]: http://www.display-inline.fr/projects/css-gradient/
   [http://davidwalsh.name/css-gradients]: http://davidwalsh.name/css-gradients
   [http://www.slideshare.net/LeaVerou/mastering-css3-gradients]: http://www.slideshare.net/LeaVerou/mastering-css3-gradients
   [https://developer.mozilla.org/en-us/docs/Web/CSS/repeating-linear-gradient]: https://developer.mozilla.org/en-us/docs/Web/CSS/repeating-linear-gradient

@@ -170,7 +170,7 @@ sitelerimizin daha hızlı açılmasını sağlayacak bir yöntemdir.
 -   http://developer.yahoo.com/blogs/ydn/posts/2007/07/high_performanc_5/
 -   [http://stackoverflow.com/questions/143486/unobtrusive-javascript-script-at-the-top-or-the-bottom-of-the-html-code][]
 -   [http://robertnyman.com/2008/04/23/where-to-include-javascript-files-in-a-document/][]
--   [http://blog.asp-software.org/advanced-website-optimization-making-your-site-faster/][]
+-   blog.asp-software.org/advanced-website-optimization-making-your-site-faster/
 -   [http://www.quirksmode.org/js/placejs.html][]
 -   [http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/][]
 -   yuiblog.com/blog/2007/04/11/performance-research-part-4/
@@ -179,6 +179,5 @@ sitelerimizin daha hızlı açılmasını sağlayacak bir yöntemdir.
   [HTTP/1.1 şartnamesinde]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html#sec8.1.4
   [http://stackoverflow.com/questions/143486/unobtrusive-javascript-script-at-the-top-or-the-bottom-of-the-html-code]: http://stackoverflow.com/questions/143486/unobtrusive-javascript-script-at-the-top-or-the-bottom-of-the-html-code
   [http://robertnyman.com/2008/04/23/where-to-include-javascript-files-in-a-document/]: http://robertnyman.com/2008/04/23/where-to-include-javascript-files-in-a-document/
-  [http://blog.asp-software.org/advanced-website-optimization-making-your-site-faster/]: http://blog.asp-software.org/advanced-website-optimization-making-your-site-faster/
   [http://www.quirksmode.org/js/placejs.html]: http://www.quirksmode.org/js/placejs.html
   [http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/]: http://www.stevesouders.com/blog/2008/12/27/coupling-async-scripts/

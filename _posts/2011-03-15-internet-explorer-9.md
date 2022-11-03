@@ -61,7 +61,7 @@ eski sürümlerine göre çok büyük eklemeler var, ancak diğer tarayıcılar�
 son sürümlerini dikkate aldığımızda neredeyse yarı yarıya bir eksiklik
 var.
 
-[http://www.findmebyip.com/litmus][]
+findmebyip.com/litmus
 
 Sitesini incelemenizi öneriyorum. 
 
@@ -174,7 +174,6 @@ yükselme yaşansa bile daha sonra düşüşün devam edeceğini düşünüyorum
 -   [http://msdn.microsoft.com/en-us/ie/ff468705][] (css3 ve html5 desteği)
 
   [100]: /images/ie9_01.png
-  [http://www.findmebyip.com/litmus]: http://www.findmebyip.com/litmus
   [1]: /images/ie9_03.jpg
   [2]: /images/ie9_03.jpg
   [3]: /images/ie9_05.jpg
