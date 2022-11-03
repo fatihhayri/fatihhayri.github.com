@@ -18,7 +18,7 @@ Her ne kadar ebeveyn seçici olarak `:has` tanımı akıllara geliyorsa da `:foc
 
 Konuya dair örnekler hep aynı ancak anlaşılması bakımından bilgilendirici bir örnek olduğu için ben de aynı örneği vereceğim. Forum alanı içindeki `<input>`'lara odaklanıldığında tüm form alanını gazinoya (Er gazinosu) çeviren bir kod yazalım. :)
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="login focus-within" src="https://codepen.io/fatihhayri/embed/PoevPXE?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="380" style="width: 100%;" scrolling="no" title="login focus-within" src="https://codepen.io/fatihhayri/embed/PoevPXE?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/PoevPXE">
   login focus-within</a> by Fatih  (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
