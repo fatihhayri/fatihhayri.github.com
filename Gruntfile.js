@@ -45,12 +45,6 @@ module.exports = function(grunt) {
           'assets/less/bootstrap/*.less'
         ],
         tasks: ['recess']
-      },
-      js: {
-        files: [
-          '<%= jshint.all %>'
-        ],
-        tasks: ['jshint','uglify']
       }
     },
     clean: {

@@ -1,4 +1,4 @@
-I"@J<ol>
+I"iD<ol>
   <li><a href="https://fatihhayrioglu.com/css-grid-giris/">CSS Grid’e (Izgara) Giriş</a></li>
   <li><a href="https://fatihhayrioglu.com/css-grid-ozellikleri/">CSS Grid Özellikleri</a></li>
   <li><a href="https://fatihhayrioglu.com/fr-birimi/">fr birimi</a></li>
@@ -37,57 +37,39 @@
 
 <p>Bu özelliklerin tanımını ve kullanımını <a href="https://fatihhayrioglu.com/css-grid-ozellikleri/" title="CSS Grid Özellikleri">CSS Grid Özellikleri</a> yazımızda anlatmıştık.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="nc">.kapsul</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.kapsul</span> <span class="p">{</span>
     <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
     <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">auto</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
     <span class="py">grid-template-rows</span><span class="p">:</span> <span class="nb">auto</span> <span class="m">1</span><span class="n">fr</span> <span class="nb">auto</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 <p>tanımını aşağıdaki şekilde kısaltabiliriz.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="c">/* grid-template-rows / grid-template-columns */</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* grid-template-rows / grid-template-columns */</span>
 <span class="nc">.kapsul</span> <span class="p">{</span>
     <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
     <span class="nl">grid-template</span><span class="p">:</span> <span class="nb">auto</span> <span class="m">1</span><span class="n">fr</span> <span class="nb">auto</span> <span class="p">/</span> <span class="nb">auto</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid-template kısayolu" src="https://codepen.io/fatihhayri/embed/abzWKRo?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 <p><code class="language-plaintext highlighter-rouge">grid-template-areas</code> tanımını da bu kısaltma içinde kullanabiliyoruz.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="c">/* grid-template-areas grid-template-rows / grid-template-columns */</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* grid-template-areas grid-template-rows / grid-template-columns */</span>
   <span class="nt">grid-template</span><span class="o">:</span> 
             <span class="s1">"menu ust ust"</span> <span class="err">4</span><span class="nt">ch</span>
             <span class="s1">"menu icerik icerik"</span> <span class="nt">auto</span>
             <span class="s1">"baner alt alt"</span> <span class="err">4</span><span class="nt">em</span> <span class="o">/</span> <span class="err">20</span><span class="o">%</span> <span class="err">20</span><span class="nt">px</span> <span class="err">1</span><span class="nt">fr</span><span class="o">;</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>Bu kodun açık hali</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre><span class="nt">grid-template-rows</span><span class="o">:</span> <span class="err">4</span><span class="nt">ch</span> <span class="nt">auto</span> <span class="err">4</span><span class="nt">em</span><span class="o">;</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">grid-template-rows</span><span class="o">:</span> <span class="err">4</span><span class="nt">ch</span> <span class="nt">auto</span> <span class="err">4</span><span class="nt">em</span><span class="o">;</span>
 <span class="nt">grid-template-columns</span><span class="o">:</span> <span class="err">20</span><span class="o">%</span> <span class="err">20</span><span class="nt">px</span> <span class="err">1</span><span class="nt">fr</span><span class="o">;</span>
 <span class="nt">grid-template-areas</span><span class="o">:</span> <span class="s1">"menu ust ust"</span> <span class="s1">"menu icerik icerik"</span> <span class="s1">"baner alt alt"</span><span class="o">;</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 <p>şeklindedir.</p>
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid-template kısayolu - 2" src="https://codepen.io/fatihhayri/embed/PowmayK?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
@@ -119,13 +101,10 @@
 
 <p>İlk örneğimizi <code class="language-plaintext highlighter-rouge">grid-template-x</code>tanımlarının kısayolu olarak kullanımı için yapalım.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre><span class="nc">.container</span>  <span class="p">{</span> 
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span>  <span class="p">{</span> 
     <span class="py">grid</span><span class="p">:</span> <span class="m">100px</span> <span class="m">300px</span> <span class="p">/</span> <span class="m">3</span><span class="n">fr</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 <p>kodunun açılımı:</p>
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 1" src="https://codepen.io/fatihhayri/embed/VwYWppB?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
@@ -133,62 +112,42 @@
 
 <p>Bir başka örnek explicit (<strong>belirlenmiş</strong>) ve implicit(<strong>belirlenmemiş</strong>) tanımların birlikte kullanımına yapalım.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="rouge-code"><pre><span class="nc">.kapsul</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.kapsul</span> <span class="p">{</span>
     <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
     <span class="py">grid-template-rows</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">3</span><span class="p">,</span> <span class="p">[</span><span class="n">line1</span> <span class="n">line2</span> <span class="n">line3</span><span class="p">]</span> <span class="m">150px</span><span class="p">);</span>
     <span class="py">grid-auto-columns</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
     <span class="py">grid-auto-flow</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>Kısaltırsak:</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="rouge-code"><pre><span class="nc">.kapsul</span>  <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.kapsul</span>  <span class="p">{</span>
     <span class="c">/* &lt;'grid-template-rows'&gt; /
    [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-columns'&gt;? values */</span>
    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
    <span class="py">grid</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">3</span><span class="p">,</span> <span class="p">[</span><span class="n">line1</span> <span class="n">line2</span> <span class="n">line3</span><span class="p">]</span> <span class="m">150px</span><span class="p">)</span> <span class="p">/</span> <span class="n">auto-flow</span> <span class="m">100px</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 2" src="https://codepen.io/fatihhayri/embed/BayZWRX?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>
 
 <p>Bir başka örnek:</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="nc">.kapsul</span>  <span class="p">{</span> 
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.kapsul</span>  <span class="p">{</span> 
     <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">3</span><span class="p">,</span> <span class="p">[</span><span class="n">line1</span> <span class="n">line2</span><span class="p">]</span> <span class="n">minmax</span><span class="p">(</span><span class="m">20em</span><span class="p">,</span> <span class="n">max-content</span><span class="p">));</span>
     <span class="py">grid-auto-rows</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
     <span class="py">grid-auto-flow</span><span class="p">:</span> <span class="n">dense</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>Kısaltması:</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre><span class="nc">.kapsul</span>  <span class="p">{</span> 
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.kapsul</span>  <span class="p">{</span> 
     <span class="py">grid</span><span class="p">:</span> <span class="n">auto-flow</span> <span class="n">dense</span> <span class="m">50px</span> <span class="p">/</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">3</span><span class="p">,</span> <span class="p">[</span><span class="n">line1</span> <span class="n">line2</span> <span class="n">line3</span><span class="p">]</span> <span class="n">minmax</span><span class="p">(</span><span class="m">20em</span><span class="p">,</span> <span class="n">max-content</span><span class="p">));</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="grid kısayolu - 3" src="https://codepen.io/fatihhayri/embed/oNgwZey?height=300&amp;theme-id=13521&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
 </iframe>

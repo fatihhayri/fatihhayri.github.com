@@ -1,4 +1,4 @@
-I"�6<ol>
+I"-3<ol>
   <li><a href="/css-grid-giris/">CSS Grid’e (Izgara) Giriş</a></li>
   <li><a href="/css-grid-ozellikleri/">CSS Grid Özellikleri</a></li>
   <li><a href="/fr-birimi/">fr birimi</a></li>
@@ -18,33 +18,7 @@
 
 <p>Bir örnek verelim.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-</pre></td><td class="rouge-code"><pre><span class="nc">.oge1</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.oge1</span> <span class="p">{</span>
     <span class="nl">grid-row</span><span class="p">:</span> <span class="m">1</span> <span class="p">/</span> <span class="n">span</span> <span class="m">4</span><span class="p">;</span>
     <span class="nl">grid-column</span><span class="p">:</span> <span class="m">1</span> <span class="p">/</span> <span class="n">span</span> <span class="m">4</span><span class="p">;</span>
     <span class="nl">background</span><span class="p">:</span> <span class="no">lime</span><span class="p">;</span>
@@ -70,7 +44,7 @@
     <span class="nl">grid-column</span> <span class="p">:</span> <span class="m">4</span> <span class="p">/</span> <span class="n">span</span> <span class="m">5</span><span class="p">;</span>
     <span class="nl">background</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">128</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">128</span><span class="p">,</span> <span class="m">.8</span><span class="p">);</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>Yukarıda görüldüğü üzere kullanılan elemanlara yapılan tanımlarla grid hücrelerini birden fazla öge kullanabiliyor. Bu şekilde üst üste binen alanlar oluşturuluyor. <code class="language-plaintext highlighter-rouge">oge2</code> elemanında yaptığımız gibi <code class="language-plaintext highlighter-rouge">z-index</code> tanımıyla istediğimiz ögeyi üste çıkarabiliyoruz. Bu şekilde üste çıkarılan ögeler normal akışta bulunduğu için <code class="language-plaintext highlighter-rouge">position: absolute</code> tanımı gibi yükseklik ve genişlik sorunları yaşamıyoruz. Diyeceksiniz ki artık <code class="language-plaintext highlighter-rouge">position: absolute</code> tanımına gerek var mı? Hayır. Normal akışın dışına çıkarmak istediğimiz durumlar için ve grid kullanmadığımız durumlar için <code class="language-plaintext highlighter-rouge">position: absolute</code> tanımına ihtiyacımız var.</p>
 
@@ -82,17 +56,12 @@
 
 <p>Bir resim ve üzerinde bir başlık ve açıklama alanını kodlayalım.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="nt">article</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">article</span> <span class="p">{</span>
     <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
     <span class="py">grid-template-columns</span><span class="p">:</span> <span class="m">1</span><span class="n">fr</span> <span class="n">minmax</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">30ch</span><span class="p">)</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
     <span class="py">grid-template-rows</span><span class="p">:</span> <span class="m">20%</span> <span class="m">2</span><span class="n">fr</span> <span class="nb">auto</span> <span class="nb">auto</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>3 kolon 5 satırlık bir plan yapalım.</p>
 
@@ -100,45 +69,31 @@
 
 <p>Resmi (<code class="language-plaintext highlighter-rouge">&lt;img&gt;</code>) 1. ve 3. kolon aralığına, 1. ve 6. satır aralığına koyalım.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="rouge-code"><pre><span class="nt">img</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">img</span> <span class="p">{</span>
   <span class="nl">grid-column</span><span class="p">:</span> <span class="m">1</span> <span class="p">/</span> <span class="m">3</span><span class="p">;</span>
   <span class="nl">grid-row</span><span class="p">:</span> <span class="m">1</span> <span class="p">/</span> <span class="m">6</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>Başlığı (<code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>) 2. ve 4. kolon aralığına, 3. ve 4. satır aralığına koyalım. Ayrıca satır ve kolon sonuna hizalayalım.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="nt">h1</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
   <span class="nl">grid-column</span><span class="p">:</span> <span class="m">2</span> <span class="p">/</span> <span class="m">4</span><span class="p">;</span>
   <span class="nl">grid-row</span><span class="p">:</span> <span class="m">3</span> <span class="p">/</span> <span class="m">4</span><span class="p">;</span>
   <span class="nl">align-self</span><span class="p">:</span> <span class="n">end</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>Son olarak da detay yazısını (<code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>) 2. ve 4. kolon arasına, 4. ve 5. satır arasına yerleştirelim. Hizalama olarak da bu hücrelerin başına hizlayalım ki başlık ile alt alta gelsin.</p>
 
 <p>Yukarıda dikkat ederseniz ögeler 2. kolon ve 3. ve 4. satrıları <strong>ortak</strong> kullanıyorlar. Resmi diğer ögelerin altına almak için <code class="language-plaintext highlighter-rouge">z-index: -1</code> tanımlayalım.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="nt">img</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">img</span> <span class="p">{</span>
   <span class="nl">grid-column</span><span class="p">:</span> <span class="m">1</span> <span class="p">/</span> <span class="m">3</span><span class="p">;</span>
   <span class="nl">grid-row</span><span class="p">:</span> <span class="m">1</span> <span class="p">/</span> <span class="m">6</span><span class="p">;</span>
   <span class="nl">z-index</span><span class="p">:</span> <span class="m">-1</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</code></pre></div></div>
 
 <p>Sonuç aşağıdaki gibi olacaktır.</p>
 
