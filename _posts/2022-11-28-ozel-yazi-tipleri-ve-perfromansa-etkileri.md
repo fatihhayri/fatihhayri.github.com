@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Özel yazı tipleri ve perfromansa etkileri
-description: Özel yazı tipleri ve perfromansa etkileri
+title: Özel yazı tipleri ve sayfa perfromansına etkileri
+description: Özel yazı tipleri ve sayfa perfromansına etkileri
 lang: tr_TR
 Date: 2022-11-28 13:00
 Category: CSS
@@ -101,7 +101,7 @@ Yukarıdaki kabuller tarayıcıların kabulleridir. İki yönteminde avantaj ve 
 
 `font-display`tanımı detayı için [font-display özelliği](https://fatihhayrioglu.com/font-display-ozelligi/ "font-display özelliği") makalesine sizi yönlendireyim.
 
-## Özel Fontların Performansa Etkileri
+## Özel Fontların Sayfa Performansına Etkileri
 
 Buraya kadar yazı tipi ekleme konusuna değinmeye çalıştık. Gelelim özel yazı tipinin sayfanın performansına olan etkisine.
 
