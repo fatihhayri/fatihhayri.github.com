@@ -3,11 +3,11 @@ layout: post
 title: Özel yazı tipleri ve perfromansa etkileri
 description: Özel yazı tipleri ve perfromansa etkileri
 lang: tr_TR
-Date: 2022-11-25 10:00
+Date: 2022-11-28 13:00
 Category: CSS
 tags: [font, yazı-tipi, performans]
 image:
-  feature: focus-within.png
+  feature: font-face.webp
 ---
 
 Web sitelerinde özel yazı tiplerinin kullanımı eskiden beri tercih edilegelmiştir. Özel yazı tipleri tasarımın güzelliği, marka bilinirliği, okunurluk, erişebilirlik açısından tercih ediliyor. Eskiden daha zor olan özel  yazı tipi kullanımı `@font-face` standardı sonrası kolaylaştı. Bu makalede `font-face` kullanımının performans etkisine değinmeye çalışacağım. 
@@ -259,3 +259,4 @@ Kalın sağlıcakla.
 - [https://www.industrialempathy.com/posts/high-performance-web-font-loading](https://www.industrialempathy.com/posts/high-performance-web-font-loading)
 - [https://clagnut.com/blog/2418/](https://clagnut.com/blog/2418/) (Karakter silme için detay)
 - [https://andydavies.me/blog/2019/02/12/preloading-fonts-and-the-puzzle-of-priorities/](https://andydavies.me/blog/2019/02/12/preloading-fonts-and-the-puzzle-of-priorities/)
+- [https://lostworldsfairs.com/eldorado/](https://lostworldsfairs.com/eldorado/)
