@@ -18,7 +18,7 @@ Daha önce bu konuda üç adet yazı paylaşmıştım.
 
 Bu konu da dördüncü yazım. Evden çalışmanın sabit hale gelmesiyle daha net kararlar verebiliyorum artık. Uzun süreler bu şekilde devam edeceğimiz için ergonomik olarak çalışma ortamımı güncellemek istedim.(Bunda sağlık problemlerimin payı büyük)
 
-![Çalışma ortamım](https://fatihhayrioglu.com/images/eronomik-masa.jpg)
+![Çalışma ortamım](https://fatihhayrioglu.com/images/eronomik-masa.jpg){: .aspect-ratio-8-4}
 
 Bu yazı en son bir sene önce yazdığım yazıdan buyana kullanım önerilerini de içeren bir yazı olacak. Geçen seneden beri yeni edindiğim ürünleri **Yeni** olarak belirttim.
 
