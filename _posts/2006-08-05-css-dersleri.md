@@ -213,6 +213,8 @@ Date: 2006-08-05 22:06
     -   [CSS İpucu 31 : Webkit Tabanlı Tarayıcılar(Chrome ve Safari) İçin Düzeltme(Hack) Sorunu ve Çözümü][]
     -   [CSS İpucu 32: CSS3 Renk Geçişinin elemanına uygulamasındaki sorun ve çözümü][]
     -   [CSS İpucu 33: İE için renk geçişi çözümü filtre tanımını sıfırlamak](/ie-icin-renk-gecisi-cozumu-filtre-tanimini-sifirlamak/)
+    -   [CSS ipucu 34 - all unset ile tek satırda sıfırlama yapmak](/css-ipucu-34-all-unset-ile-tek-satirda-sifirlama-yapmak/)
+    -   [CSS İpucu 35 - dikey ve yatay tanımlar için pratik çözüm](/css-ipucu-35-dikey-ve-yatay-tanimlar-icin-tek-tanım-kullanmak/)
     -   [Çoklu :not seçicisi kullanımı](/coklu-not-secicisi-kullanimi/)
     -   [last-child seçicisi](/last-child-secisi/)
     -   [text-transform:uppercase](/text-transform-uppercase/)
