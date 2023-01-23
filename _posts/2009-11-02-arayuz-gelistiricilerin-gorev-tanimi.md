@@ -9,7 +9,7 @@ tags: [arama motoru, arayüz-geliştiriciler, CSS, Erişebilirlik, Javascript]
 Friendfeed'deki Arayüz Geliştiricileri (Friendfeed; twitter'ın daha gelişmiş sürümü) grubunda konuştuktan sonra bu yazıyı yazmayı düşündüm. Şirketler eleman
 ararken bazı şartları ileri sürüyor, peki bunlar ne kadar gerçekçi. 
 
-    > Daha önce Front-en kavramına karşılık "Arayüz Geliştirici" olarak tanımlıyorduk, ancak sonra irdeleyince "Önyüz Geliştirici" tanımının daha iyi karşıladığına karar verdik.
+> Daha önce Front-end kavramına karşılık "Arayüz Geliştirici" olarak tanımlıyorduk, ancak sonra irdeleyince "Önyüz Geliştirici" tanımının daha iyi karşıladığına karar verdik.
 
 Aslında bundan önce bir yazılım şirketinin yapısını ve iş akışını çıkarmak
 gerekir ve buna göre görev tanımları yapılmalıdır, ama o biraz daha
