@@ -8,7 +8,7 @@ Category: CSS
 tags: [inline, block, logical-property]
 ---
 
-CSS mantıksal tanımları Arapça, Çince, İbranice vb. diller için kodlama yaparken büyük avantaj sağlıyor. Bu konuda Ahmad Shadeed'in güzel biz yazısı ([Digging Into CSS Logical Properties](https://ishadeed.com/article/css-logical-properties/)) var. Detayları bu yazıdan öğrenebilirsiniz. 
+CSS mantıksal tanımları(Logical Properties) Arapça, Çince, İbranice vb. diller için kodlama yaparken büyük avantaj sağlıyor. Bu konuda Ahmad Shadeed'in güzel biz yazısı ([Digging Into CSS Logical Properties](https://ishadeed.com/article/css-logical-properties/)) var. Detayları bu yazıdan öğrenebilirsiniz. 
 
 
 Burada size bu  özellikleri farklı bir amaç için kullanımını anlatacağım. Genelde dikeyde veya yatayda bir tanım yapacaksak özelliklerin dörtlü kısaltmalarını kullanırız. Sadece yatay veya sadece dikey tanımlama yapamıyorduk. İşte burada yardımımıza koşuyor mantıksal tanımlar. Örneğin klasik ortalama yöntemi `margin: 0 auto` aslında amaç sadece yatayda auto tanımı yapmak ama bunu yapamıyorduk.
