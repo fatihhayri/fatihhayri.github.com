@@ -10,7 +10,7 @@ image:
   feature: ebeveyne-kavusma.webp
 ---
 
-CSS'de en çok ihtiyaç duyduğumuz özelliklerden birisiydi ebeveyn (parent) seçicisi. Bir ögenin içindeki elemana olup bitene göre CSS tanımı yapma isteği uzun süredir beklenen bir özellikti. [Daha önceleri şöyle bir savunma vardı](https://snook.ca/archives/html_and_css/css-parent-selectors): Tarayıcılar CSS'i yorumlarken dokümanı aşağı yönlü yorumluyor, bundan ötürü bir elemanın yukarı yönlü elemanını seçmesi için tüm ebeveynleri erişmesi gibi durumlar söz konusudur ve bu performans açısından sıkıntılara neden olur. Tabi tarayıcılar son yıllarda ciddi gelişim gösterdi ve bu kabulleri de aşacak çözümleri sunmaya başladılar. 
+CSS'de en çok ihtiyaç duyduğumuz özelliklerden birisiydi ebeveyn (parent) seçicisi. Bir ögenin içindeki elemana olup bitene göre CSS tanımı yapma isteği uzun süredir beklenen bir özellikti. [Daha önceleri şöyle bir savunma vardı](https://snook.ca/archives/html_and_css/css-parent-selectors): Tarayıcılar CSS'i yorumlarken dokümanı aşağı yönlü yorumluyor, bundan ötürü bir elemanın yukarı yönlü elemanını seçmesi için tüm ebeveynlere erişmesi gibi durumlar söz konusudur ve bu performans açısından sıkıntılara neden olur. Tabi tarayıcılar son yıllarda ciddi gelişim gösterdi ve bu kabulleri de aşacak çözümleri sunmaya başladılar. 
 
 Ebeveyn seçicisi aslında çoğu zaman ihtiyacımız olan bir seçici olmasa da lazım olduğunda 'ah be olsaydı ne güzel olurdu' diye içimizden geçirdiğimiz bir seçici. 
 
@@ -42,9 +42,9 @@ Yukarıdaki kodda hedef `.aile` elemanı koşul ise `.cocuk`var mı? yok mu? Ko�
 
 ### Tablo örneği 
 
-:has() seçicisi duyalı çok oluyor ancak uygulama imkanı yakın zamanda oldu. Aşağıdaki örnekte gördüğünüze benzer bir tablo ihtiyacımız oldu. Burada javascript ile seçim yapıldığında o tablo satırına bir css sınıfı tanımlayarak olabilirdi. Tabi bir işi CSS ile yapmak daha kolay ve mantıklı. 
+`:has()` seçicisini duyalı çok oluyor ancak uygulama imkanı yakın zamanda oldu. Aşağıdaki örnekte gördüğünüze benzer bir tablo ihtiyacımız oldu. Burada javascript ile seçim yapıldığında o tablo satırına bir css sınıfı tanımlayarak olabilirdi. Tabi bir işi CSS ile yapmak daha kolay ve mantıklı. 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="tablo focus-within" src="https://codepen.io/fatihhayri/embed/XWoKXgv?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="tablo focus-within" src="https://codepen.io/fatihhayri/embed/XWoKXgv?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/XWoKXgv">
   tablo focus-within</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -63,7 +63,7 @@ Burada input işaretlenmiş tablo satırına tanım yaparak ihtiyacımızı kar�
 
 ### `<figure>`  örneği
 
-:has() seçicisini anlatırken verilen en popüler örnek: Bir `<figure>` elemanımızın olduğunu düşünelim. Bu elemanın bazen sadece resim içerirken bazen resim ve `<figcaption>` içeren çeşitlerinin olduğu durumlar var. Biz `<figcaption>` olduğu durumlar için. stil tanımlaması yapmak istesek.
+`:has()` seçicisini anlatırken verilen en popüler örnek: Bir `<figure>` elemanımızın olduğunu düşünelim. Bu elemanın bazen sadece resim içerirken bazen resim ve `<figcaption>` içeren çeşitlerinin olduğu durumlar var. Biz `<figcaption>` olduğu durumlar için. stil tanımlaması yapmak istesek.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title=":has parent selector figure" src="https://codepen.io/fatihhayri/embed/rNoLOJK?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/rNoLOJK">
@@ -119,7 +119,7 @@ Hatalı input'un ebeveyni olan form elemanının ardalanına kırmızı tonlu bi
 
 Grid özelliği tanımlanan bir elemanın birincil derecedeki tüm elemanları grid ögesi olur. Grid ögelerinin davranış ve durumuna göre kapsayıcı gride tanım yapmak `:has()` seçicisi çıkana kadar CSS ile yapmak imkansızdı. 
 
-`:nth-child` ve `:nth-last-child` sözde sınıfları yardımıyla ve de  `:has` seçicisinin gücüyle bir grid içeriğinde 2 adet eleman varsa ona göre kod, 3 tane eleman varsa ona göre kod yazabiliyoruz artık.
+`:nth-child` ve `:nth-last-child` sözde sınıfları yardımıyla ve de  `:has()` seçicisinin gücüyle bir grid içeriğinde 2 adet eleman varsa ona göre kod, 3 tane eleman varsa ona göre kod yazabiliyoruz artık.
 
 ```css
 .grid:has(:nth-child(2):last-child) {
