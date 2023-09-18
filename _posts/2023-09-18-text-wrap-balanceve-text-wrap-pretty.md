@@ -14,7 +14,7 @@ Tipografi çok önemli ve eski bir alan web'in bu konudaki gelişmeleri mevcut y
 
  > Paragraf diziliminde yapılan yanlışlardan biri de dul (widow) ve yetim (orphan) sözcüklerdir. Paragraf veya kolon sonlarındaki oldukça kısa sözcüklere ya da hecelere dul sözcükler, paragraf veya kolonların başlangıç satırında görülen kısa sözcüklere ya da hecelere yetim sözcükler denilmektedir. Bu iki sorun da yarattıkları fazla boşluk nedeniyle okuyucunun gözünü rahatsız edip okumanın akışını bozmaktadır.  - KİTAP ve e-KİTAP TASARIMININ TARİHSEL GELİŞİMİ ve GRAFİK TASARIM İLKELERİ ÜZERİNDEN İNCELENMESİ
 
-![text orpham & widow](https://fatihhayrioglu.com/images/images/dul-yetim.png)
+![text orpham & widow](https://fatihhayrioglu.com/images/dul-yetim.png)
 
 Genelde bu sorunla tasarımcıların gönderdiği tasarımların güzel ancak kodladıktan sonra o kadar da güzel görünmeyen başlıklarında karşılaşıyorduk.
 
