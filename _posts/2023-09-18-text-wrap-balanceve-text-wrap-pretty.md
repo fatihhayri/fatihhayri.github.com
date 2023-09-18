@@ -28,7 +28,7 @@ Yazı alanlarının önemli olduğu projelerde ise eğer içerik statik ise `<br
 
 Tarayıcılar başta bu hesabın maliyetinden kaçınıyor ve kapsayıcı genişliğine kadar sığan kelimeleri sıralayıp sığmadığı yerden itibaren aşağı atıyor. (Bu şu anda `text-wrap: auto` davranışı) Tarayıcılar bu konuya eğiliyor ve `text-wrap: balance;` tanımı ortaya çıkıyor.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="text-wrap: balance" src="https://codepen.io/fatihhayri/embed/qBLjbwK?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="600" style="width: 100%;" scrolling="no" title="text-wrap: balance" src="https://codepen.io/fatihhayri/embed/qBLjbwK?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/qBLjbwK">
   text-wrap: balance</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
