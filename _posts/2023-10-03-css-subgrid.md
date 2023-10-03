@@ -1,6 +1,6 @@
 ---
 layout: post
-title: subgrid
+title: CSS subgrid
 description: subgrid tanımı
 lang: tr_TR
 Date: 2023-10-03 14:30
