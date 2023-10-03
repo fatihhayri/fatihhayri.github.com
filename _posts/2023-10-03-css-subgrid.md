@@ -29,7 +29,7 @@ Subgrid, içiçe kullanılmış grid elemanlarından iki alt seviyedeki elemanla
 
 Subgrid'i anlatan makalelerde çok fazla karşılaştığımız kart örneğini yapalım. Daha önce kodladığım bir sitede benzer bir yapıyı flex ile yapmıştım ve tabi çözemediğim için sabit bir yükseklik verip geçtiğim örnek aklıma geldi.
 
-<iframe height="440" style="width: 100%;" scrolling="no" title="subgrid" src="https://codepen.io/fatihhayri/embed/eYbKPJV?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="440" style="width: 100%;" scrolling="no" title="subgrid" src="https://codepen.io/fatihhayri/embed/eYbKPJV?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/eYbKPJV">
   subgrid</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -50,7 +50,7 @@ Bu kod ile biz içiçe iki grid kullandığımızı ve `section` kısmının sat
 
 Bir diğer örnekte [Miriam Suzanne](https://front-end.social/@mia)'ın kaynaklar kısmında verdiği form örneği. Başka yerlerde de bu örnek kodlanmış ancak ben ilk olarak Miriam'ın anlatımında gördüğüm için onun örneği üzerinden gideceğim. 
 
-<iframe height="478" style="width: 100%;" scrolling="no" title="Subgrid Forms" src="https://codepen.io/fatihhayri/embed/poqOVzG?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="478" style="width: 100%;" scrolling="no" title="Subgrid Forms" src="https://codepen.io/fatihhayri/embed/poqOVzG?default-tab=html%2Cresult&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/poqOVzG">
   Subgrid Forms</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
