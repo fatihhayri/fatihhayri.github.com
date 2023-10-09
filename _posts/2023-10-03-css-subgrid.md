@@ -96,7 +96,8 @@ tanımı yaparak dikeyde dengeleme yapıyoruz.
 Bu tip tanımların geliştirici araçlarında gösterilmesi güzel bir standart haline geldi. Firefox ve Chrome tabanlı tarayıcılarda `subgrid`etiketi ile gösteriliyor. 
 
 ![subgrid chrome](https://fatihhayrioglu.com/images/chrome-subgrid.png)
-[Firefox subgrid](https://fatihhayrioglu.com/images/firefox-subgrid.png)
+
+![Firefox subgrid](https://fatihhayrioglu.com/images/firefox-subgrid.png)
 
 Bu `subgrid` etiketini tıkladığımızda `grid` etiketine tıkladığımız gibi etkisi var. 
 
