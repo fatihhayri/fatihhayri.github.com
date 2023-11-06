@@ -10,7 +10,7 @@ image:
   feature: user-invalid.png
 ---
 
-Form doğrulama işi önemli. Form doğrulama işini tarayıcılar ekledikleri özelliklerle eline almaya çalışsa da, belli alanlarda yetersiz kaldığı için hala Javascript ile çözümler oluşturuyoruz.
+Form doğrulama işi önemli. Form doğrulama işini tarayıcılar ekledikleri özelliklerle eline almaya çalışsa da belli alanlarda yetersiz kaldığı için hala Javascript ile çözümler oluşturuyoruz.
 
 CSS ile hata durumunu yakalayıp ona göre hatayı ve hata mesajını stillendirebildiğimiz `:valid` ve `:invalid` sözde sınflarımız var. 
 
