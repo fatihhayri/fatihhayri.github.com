@@ -45,7 +45,7 @@ input:user-invalid {
 
 Basit ve kolay bir kod. 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title=":user-invalid" src="https://codepen.io/fatihhayri/embed/ZEwGXXz?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title=":user-invalid" src="https://codepen.io/fatihhayri/embed/ZEwGXXz?default-tab=html%2Cresult&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/ZEwGXXz">
   :user-invalid</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
