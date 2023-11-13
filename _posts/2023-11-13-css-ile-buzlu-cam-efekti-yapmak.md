@@ -27,7 +27,7 @@ Kod olarak da çok basit bir uygulaması var. Arka tarafında büyük bir resim 
 }
 ```
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS - Frosted Glass" src="https://codepen.io/fatihhayri/embed/qBmBNbZ?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS - Frosted Glass" src="https://codepen.io/fatihhayri/embed/qBmBNbZ?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/qBmBNbZ">
   CSS - Frosted Glass</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -35,7 +35,7 @@ Kod olarak da çok basit bir uygulaması var. Arka tarafında büyük bir resim 
 
 Üste yapışık menülerde de güzel efekt veriyor. 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Grid: grid-auto-flow: dense" src="https://codepen.io/fatihhayri/embed/rNPmKZO?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="Grid: grid-auto-flow: dense" src="https://codepen.io/fatihhayri/embed/rNPmKZO?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/rNPmKZO">
   Grid: grid-auto-flow: dense</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
