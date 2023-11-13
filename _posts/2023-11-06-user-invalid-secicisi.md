@@ -3,7 +3,7 @@ layout: post
 title: :user-invalid seçicisi
 description: :user-invalid sözde seçicisini açıklayalım
 lang: tr_TR
-Date: 2023-06-10 10:00
+Date: 2023-06-11 10:00
 Category: CSS
 tags: [form-kontrolu, user-invalid, user-valid]
 image:
