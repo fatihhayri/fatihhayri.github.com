@@ -13,17 +13,18 @@ istediğinizde, ie5-6 versiyonlarında soldaki float uygulanmış element
 içeriği boyunda sağdaki metin soldan 3 piksel kadar içeriğini
 öteleyecektir.
 
-	:::css
-	.solKolon {
-		float: left;
-		width: 200px;
-		background-color:#00CCFF;
-	}
+```css
+.solKolon {
+	float: left;
+	width: 200px;
+	background-color:#00CCFF;
+}
 
-	p {
-		margin-left: 200px;
-		background-color:#CCCCCC;
-	}
+p {
+	margin-left: 200px;
+	background-color:#CCCCCC;
+}
+```
 
 
 ![][100]
@@ -36,10 +37,11 @@ atadığımızda bu elementin boyutunu değiştirmeyecektir. Bu atama diğer
 web tarayıcılarını etkileyecektir bu nedenle diğer web tarayıcılarından
 bu kodu gizlemeliyiz.
 
-	:::css
-	/* E5-Mac gizleyelim. sadece IE-Win görsün bu kodu. */
-	* html p { height: 1%; }
-	/* IE5/Mac den gizlemeye son*/
+```css
+/* E5-Mac gizleyelim. sadece IE-Win görsün bu kodu. */
+* html p { height: 1%; }
+/* IE5/Mac den gizlemeye son*/
+```
 
 ![][1]
 
@@ -48,20 +50,21 @@ gibi bu alana float uygulandığında **margin-left:200px** tanımını IE iki
 kat görecektir bunu engellemek için **margin-left** değerini
 sıfırlamalıyız.
 
-	:::css
-	/* E5-Mac gizleyelim. sadece IE-Win görsün bu kodu. */
-	* html p { height: 1%; margin-left: 0; }
-	/* IE5/Mac den gizlemeye son */
+```css
+/* E5-Mac gizleyelim. sadece IE-Win görsün bu kodu. */
+* html p { height: 1%; margin-left: 0; }
+/* IE5/Mac den gizlemeye son */
+```
 
 İçerideki boşluğu aldık ancak elementler arasında boşluk kaldı bunu
 kaldırmak için sağ margin değerine -3 piksel atama yapmalıyız.
 
-	:::html
-	/* E5-Mac gizleyelim. sadece IE-Win görsün bu kodu. */
-	* html p { height: 1%; margin-left: 0; }
-	* html .solKolon { margin-right: -3px; }
-	/* IE5/Mac den gizlemeye son */
-
+```html
+/* E5-Mac gizleyelim. sadece IE-Win görsün bu kodu. */
+* html p { height: 1%; margin-left: 0; }
+* html .solKolon { margin-right: -3px; }
+/* IE5/Mac den gizlemeye son */
+```
 
 Bu tüm sorunlarımız çözecektir. Tabi float uygulanan elementin içinde
 resim yoksa. Resmin olduğu durumlarda sorun olacaktır. Bu sorunu çözmek
@@ -69,11 +72,12 @@ için IE5/Win için resmin sağına ve soluna -3 piksel margin ataması
 yapmalıyız. IE6 bu margin'leri görmemelidir. Bunun için kodumuz şöyle
 olacaktır:
 
-	:::html
-	/* E5-Mac gizleyelim. sadece IE-Win görsün bu kodu. */
-	* html p { height: 1%; margin-left: 0; }
-	* html img.solKolon { margin: 0 -3px; margin: 0; }
-	/* IE5/Mac den gizlemeye son */
+```html
+/* E5-Mac gizleyelim. sadece IE-Win görsün bu kodu. */
+* html p { height: 1%; margin-left: 0; }
+* html img.solKolon { margin: 0 -3px; margin: 0; }
+/* IE5/Mac den gizlemeye son */
+```
 
 Biliyorum bu kod bizim sade ve temiz kod mantığımıza çok ters ama
 yapılabilecek pek bir şey de yok. Bu CSS'in sorunu değil tamamen IE'nin

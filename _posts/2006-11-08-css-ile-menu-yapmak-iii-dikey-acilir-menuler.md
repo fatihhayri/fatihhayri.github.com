@@ -17,38 +17,40 @@ sıralanmamış listeleri(<ul\>) kullanacağız. Buradaki fark alt
 kategorilerin yani üzerine gelince açılacak menünün bir alt sırlanmış
 liste olarak eklenmesidir.
 
-	:::html
-	<ul id="menu" >
-	    <li><a href="#">Anasayfa</a></li>
-	    <li><a href="#">Haberler</a>
-	    <ul>
-	        <li><a href="#">şirket Haberleri </a></li>
-	        <li><a href="#">Yurt içi Haberleri </a></li>
-	        <li><a href="#">Yurt dışı Haberleri</a></li>
-	    </ul>
-	    </li>
-	    <li><a href="#">Ürünler</a>
-	    <ul>
-	        <li><a href="#">Tencere</a></li>
-	        <li><a href="#">Tava</a></li>
-	        <li><a href="#">Ütü</a></li>
-	        <li><a href="#">Tost Makinesi </a></li>
-	        <li><a href="#">El Süpürgesi </a></li>
-	    </ul>
-	    </li>
+```html
+<ul id="menu" >
+	<li><a href="#">Anasayfa</a></li>
+	<li><a href="#">Haberler</a>
+	<ul>
+		<li><a href="#">şirket Haberleri </a></li>
+		<li><a href="#">Yurt içi Haberleri </a></li>
+		<li><a href="#">Yurt dışı Haberleri</a></li>
 	</ul>
+	</li>
+	<li><a href="#">Ürünler</a>
+	<ul>
+		<li><a href="#">Tencere</a></li>
+		<li><a href="#">Tava</a></li>
+		<li><a href="#">Ütü</a></li>
+		<li><a href="#">Tost Makinesi </a></li>
+		<li><a href="#">El Süpürgesi </a></li>
+	</ul>
+	</li>
+</ul>
+```
 
 ![][100]
 
 İlk olarak satır başı boşluklarını ve imgeleri kaldıralım.
 
-	:::css
-	ul {
-	    margin: 0;
-	    padding: 0;
-	    list-style: none;
-	    width: 150px;
-	}
+```css
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 150px;
+}
+```
 
 ![][1]
 
@@ -56,10 +58,11 @@ Sonra ilk linkleri göreceli olarak konumlandırmalıyız. Bu konumlandırma
 aslında ikinci kademe açılacak menüye mutlak konumlandırma yapılması
 için kullanılır.
 
-	:::css
-	ul li {
-		position: relative;
-	}
+```css
+ul li {
+	position: relative;
+}
+```
 
 Bir sonraki adımda da ikincil açılan menüleri konumlandırmak olacaktır.
 Her birinci linke karşılık gelen ikincil açılır menüler ilkinin sağına
@@ -68,13 +71,14 @@ sola kaydırılır ki fare ilk linki üzerinde ikinci linkin üzerine
 glemeden kaybolmasın. Ayrıca ikincil linklerin ilk sayfa açıldığında
 görünmemesi için display:none özelliği atanır.
 
-	:::css
-	li ul {
-	    position: absolute;
-	    left: 149px;
-	    top: 0;
-	    display: none;
-	}
+```css
+li ul {
+	position: absolute;
+	left: 149px;
+	top: 0;
+	display: none;
+}
+```
 
 ![][2]
 
@@ -87,48 +91,52 @@ tanımı ver kenarlık tanımı yapalım. Üstteki linkin alt kenarlığı ile
 alttaki linkin üst kenarlığı üst üste bineceğinde alt kenarlık değerini
 sıfırlayalım.
 
-	:::css
-	ul li a {
-	    display: block;
-	    text-decoration: none;
-	    background-color: #E2E2E2;
-	    padding: 5px;
-	    border:1px solid #000;
-	    border-bottom:0;
-	}
+```css
+ul li a {
+	display: block;
+	text-decoration: none;
+	background-color: #E2E2E2;
+	padding: 5px;
+	border:1px solid #000;
+	border-bottom:0;
+}
+```
 
 Bu kodu yazdığımızda IE linkler arasına boşluk koyacaktır(IE7 de hala bu
 sorun devam ediyor) bu durumu düzeltmek için:
 
-	:::css
-	/* IE. gizle \*/
-	* html ul li { float: left; height: 1%; }
-	* html ul li a { height: 1%; }
-	/* IE den gizleme sonu */
+```css
+/* IE. gizle \*/
+* html ul li { float: left; height: 1%; }
+* html ul li a { height: 1%; }
+/* IE den gizleme sonu */
+```
 
 ![][3]
 
 En alttaki çizgimiz eksik kalmaması için ilk link ul'sinin alt kenarlık
 tanım yaparız.
 
-	:::css
-	ul {
-	    margin: 0;
-	    padding: 0;
-	    list-style: none;
-	    width: 150px;
-	    border-bottom: 1px solid #00;
-	}
+```css
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 150px;
+	border-bottom: 1px solid #00;
+}
+```
 
 ![][4]
 
 Birincil menü görünümü tamamlandı ancak ikincil menüler görünmüyor.
 İkincil menüleri göstermek için:
 
-	:::css
-	li:hover ul {
-		display: block;
-	}
+```css
+li:hover ul {
+	display: block;
+}
+```
 
 
 Bu kadar basit bir kod menümüzü tamamlar. Ancak bir sorun var ki o da
@@ -141,33 +149,34 @@ linklerde (<a\>) uygulanmasını destekler diğer elementlerde bu
 Peki menümüz böyle mi kalacak hayır. IE6 ve altı için bir javascript
 kodu yazacağız.
 
-	:::javascript
-	startList = function() {
+```javascript
+startList = function() {
 	if (document.all&&document.getElementById) {
-	navRoot = document.getElementById("menu");
-	for (i=0; i<navRoot.childNodes.length; i++) {
-	node = navRoot.childNodes[i];
-	if (node.nodeName=="LI") {
-	node.onmouseover=function() {
-	this.className+=" over";
+		navRoot = document.getElementById("menu");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i];
+			if (node.nodeName=="LI") {
+			node.onmouseover=function() {
+			this.className+=" over";
+			}
+				node.onmouseout=function() {
+				this.className=this.className.replace(" over", "");
+			}
+			}
+		}
 	}
-	node.onmouseout=function() {
-	this.className=this.className.replace(" over", "");
-	}
-	}
-	}
-	}
-	}
-	window.onload=startList;
+}
+window.onload=startList;
+```
 
 Bu çözümü bize kazandıran arkadaşlara teşekkürü bir borç biliriz ve
 [linkini][] de yazarız.
 
 Ayrıca aşağıdaki kodu da eklemeliyiz.
 
-	:::css
-	li:hover ul, li.over ul{ display: block; }
-
+```css
+li:hover ul, li.over ul{ display: block; }
+```
 
 Ayrıca kod daki<ul id="**menu**" \> ve javascriptteki navRoot = document.getElementById("**menu**"); aynı olmasına dikkat edelim.
 

@@ -131,7 +131,7 @@ görecektir:
         </div>
     </div>
 </div>
-``
+```
 
 Dört resimin iki tanesi üst köşeleri yuvarlamak için, iki tanesi alt
 köşeleri yuvarlamak için kullanacağız.
