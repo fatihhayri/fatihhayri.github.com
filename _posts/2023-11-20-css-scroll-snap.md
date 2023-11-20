@@ -10,7 +10,7 @@ image:
   feature: scroll-snap-bg.png
 ---
 
-Yatay scroll tercih sebepleri genelde kullanıcının yoğun kullandığı alandaki yerin paylaşım sorunlarını aşmak için tercih edilmesidir. Bu paylaşım sorunu mobil ortamlarda daha fazla ortaya çıkıyor. Birçok e-ticaret ve haber sitesinde yer alan caraousel yapıları bunun en önemli örneğidir. Bu yapılar genel olarak javascript ile çözüle gelmekte idi. Sonra standart koyucular bunun CSS ile de yapılacağı bir özellik grubu açıkladı bu özellik grubunu `scroll-snap` olarak tanımlıyoruz.
+Yatay scroll tercih sebepleri genelde kullanıcının yoğun kullandığı alandaki yerin paylaşım sorunlarını aşmaktır. Bu paylaşım sorunu mobil ortamlarda daha fazla ortaya çıkıyor. Birçok e-ticaret ve haber sitesinde yer alan caraousel yapıları bunun en önemli örneğidir. Bu yapılar genel olarak javascript ile çözüle gelmekte idi. Sonra standart koyucular bunun CSS ile de yapılacağı bir özellik grubu açıkladı bu özellik grubunu `scroll-snap` olarak tanımlıyoruz.
 
 Bir içeriği kaydırırken genelde kaydırılan içeriğin neresine kadar kaydırdığımıza dikkat etmek zorunda kalırız. Çünkü arada atlama olmasını istemeyiz.  Günümüzde sonsuz kaydırmalı yapıların çoğalarak kullanıldığı yapılarda bu daha çok önem kazanır. `scroll-snap`   özelliği kaydırmanın belli noktalara mıknatıs gibi yapışmasını sağlıyor. Böylece kullanıcı fazladan dikkat etmek zorunda kalmadan kaydırma yapabiliyor. 
 
@@ -52,7 +52,7 @@ proximity örneği:
 
 Kaydırma işlemi yaparken sayfamızda veya içeriğimizde yapışık alanlar varsa veya tam belirli bir yerden değilde 20px öncesinde dursun dediğimiz durumları sağlar bize.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="scroll snap" src="https://codepen.io/fatihhayri/embed/JjxraML?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="scroll snap" src="https://codepen.io/fatihhayri/embed/JjxraML?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/JjxraML">
   scroll snap</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -68,7 +68,7 @@ Kaydırma yapılancak içerikteki ögelerin neresine hizalanacağını belirleme
  - center: Kaydırma ögenin ortasına göre yapılır.
  - end: Kaydırma ögenin sonuna göre yapılır.
 
-<iframe height="426" style="width: 100%;" scrolling="no" title="scroll-snap-align" src="https://codepen.io/fatihhayri/embed/LYqjwwv?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="426" style="width: 100%;" scrolling="no" title="scroll-snap-align" src="https://codepen.io/fatihhayri/embed/LYqjwwv?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/LYqjwwv">
   scroll-snap-align</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -80,7 +80,7 @@ Not: İlk öge hep start ile başlar sonraki ögelerde tanıma göre değişir.
 
 `scroll-padidng` ile aynı işlevi görür. `scroll-padidng` kapsayıcıya tanımlanırken `scroll-margin` alt elemana tanımlanır. 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="scroll-margin" src="https://codepen.io/fatihhayri/embed/mdvBGzY?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="scroll-margin" src="https://codepen.io/fatihhayri/embed/mdvBGzY?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/mdvBGzY">
   scroll-margin</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -102,6 +102,7 @@ Chrome'un geliştirici aracında scroll-snap çok iyi düzenleniyor ve görünü
 `scroll-snap` özelliği bizlere bir çok yönüyle kolaylık sağlıyor. Tabi projelerimizdeki tüm kaydırma alanı ihtiyaçlarımızı karşıladığını söyleyemeyiz. Bir careousel yapabiliriz ama bu careousel'e ok eklemek istediğimizde ya statik ekleyeceğiz ya da javascript yardımı almamız gerekir. Benzer şekilde gezinmek için nokta koyduğumuzda da benzer durum geçerli. Şimdilik ihtiyaca göre javascirpt desteği sağlanıp çözüm üretmek mantıklı görünüyor. 
 
 ![slider scroll-snap + js](https://fatihhayrioglu.com/images/scroll-snap+js.jpg)
+
 [Şu örnek](https://codepen.io/mobalti/pen/GRPMpyj) scroll-snap + js kullanımı için mükemmel bence.
 
 Bİr diğer konu da yeni gelecek olan kaydırma çubuğuna bağlı animasyon ile birlikte çok güzel uygulamalar ortaya çıkacaktır. Bu konuda [şöyle bir makale](https://www.bram.us/2023/06/21/synchronize-videos-3d-models-to-scroll-driven-animations/) var.
