@@ -78,7 +78,7 @@ Not: İlk öge hep start ile başlar sonraki ögelerde tanıma göre değişir.
 
 ## scroll-margin
 
-`scroll-padidng` ile aynı işlevi görür. `scroll-padidng` kapsayıcıya tanımlanırken `scroll-margin` alt elemana tanımlanır. 
+`scroll-padding` ile aynı işlevi görür. `scroll-padding` kapsayıcıya tanımlanırken `scroll-margin` alt elemana tanımlanır. 
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="scroll-margin" src="https://codepen.io/fatihhayri/embed/mdvBGzY?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/mdvBGzY">
