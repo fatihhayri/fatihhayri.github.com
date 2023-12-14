@@ -59,6 +59,8 @@ Bunun dışında işaretçilerin yerine resim veya emoji koyabiliyoruz.
 Liste işaretçilerini tarayıcılarda görüntüleyip üzerinde işlem yapabiliyoruz.
 
 ![marker tarayıcıda görünümü](https://fatihhayrioglu.com/images/marker-tarayici.png)
+
+
 Tarayıcı desteği de gayet iyi. Yazıyı yazdığımda %95 desteği var.
 
 Kalın sağlıcakla.
