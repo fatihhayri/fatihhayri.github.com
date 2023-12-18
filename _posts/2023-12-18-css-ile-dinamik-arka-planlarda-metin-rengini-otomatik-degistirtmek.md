@@ -32,14 +32,14 @@ Bir diğer soruna uzun bir ürün listenin olduğu alanın üstüne buton koydu�
 
 Şöyle bir örnek gördüm codepen.io'da [jhey](https://twitter.com/jh3yy)'in yaptığı çözüm ile bu sorunu da halledebiliyormuşuz. `mix-blend-mode: difference;`  uygulaması ile çözülmüş.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="mix-blend-mode fixed button 🤙" src="https://codepen.io/jh3y/embed/gOqGgGz?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="mix-blend-mode fixed button 🤙" src="https://codepen.io/jh3y/embed/gOqGgGz?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 ## Bastıkça dolan buton
 
 Diğer sorun yaşadığım konu bir butonun mobilde tıklma ile değil de basıldığı sürece içinin dolduğu bir animasyon uyguladığımızda metin rengiyle ilgili yaşadığımız sorun.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="UI Button #3 w/ Mix-Blend-Mode" src="https://codepen.io/dan10gc/embed/EQbjgP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="UI Button #3 w/ Mix-Blend-Mode" src="https://codepen.io/dan10gc/embed/EQbjgP?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 Benzer bir örnek buldum codepen.io'da. Çözüm yine `mix-blend-mode: difference;` ile yapılmış.
