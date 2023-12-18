@@ -23,9 +23,6 @@ Hatırladığım dört örnek var. Kendilerini bulamasam da benzer örnekler üz
 Üzerinden çok süre geçtiği için o carousel'i bulamadım. Onun yerine [scroll-snap](https://fatihhayrioglu.com/css-scroll-snap/ "CSS scroll-snap") yazısındaki örneğe bir yazı ekleyip göstereyim dedim. Örnek olsun diye ilk resmi metin rengi ile aynı olacak şekilde ardalanı beyaz bir köpek resmi ekledim. İlk resimde yazını altına beyaz ardalan geldiği için normalde yazı gözükmeyecekti. Biz burada `mix-blend-mode: difference;` ekleyerek yazının arkada gelen resimden bağımsız görünmesini sağladık.
 
 <iframe height="699.53515625" style="width: 100%;" scrolling="no" title="Social Media Carousel with Scroll-Driven Animations" src="https://codepen.io/fatihhayri/embed/BaMgZLb?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fatihhayri/pen/BaMgZLb">
-  Social Media Carousel with Scroll-Driven Animations</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
-  on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
 Koddaki başlık olan `h2`'den `mix-blend-mode: difference;`  özelliğini kaldırarak sorunlu halini görebilirsiniz.
@@ -35,10 +32,7 @@ Bir diğer soruna uzun bir ürün listenin olduğu alanın üstüne buton koydu�
 
 Şöyle bir örnek gördüm codepen.io'da [jhey](https://twitter.com/jh3yy)'in yaptığı çözüm ile bu sorunu da halledebiliyormuşuz. `mix-blend-mode: difference;`  uygulaması ile çözülmüş.
 
-﻿﻿<iframe height="300" style="width: 100%;" scrolling="no" title="mix-blend-mode fixed button 🤙" src="https://codepen.io/jh3y/embed/gOqGgGz?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/jh3y/pen/gOqGgGz">
-  mix-blend-mode fixed button 🤙</a> by Jhey (<a href="https://codepen.io/jh3y">@jh3y</a>)
-  on <a href="https://codepen.io">CodePen</a>.
+<iframe height="300" style="width: 100%;" scrolling="no" title="mix-blend-mode fixed button 🤙" src="https://codepen.io/jh3y/embed/gOqGgGz?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 ## Bastıkça dolan buton
@@ -46,9 +40,6 @@ Bir diğer soruna uzun bir ürün listenin olduğu alanın üstüne buton koydu�
 Diğer sorun yaşadığım konu bir butonun mobilde tıklma ile değil de basıldığı sürece içinin dolduğu bir animasyon uyguladığımızda metin rengiyle ilgili yaşadığımız sorun.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="UI Button #3 w/ Mix-Blend-Mode" src="https://codepen.io/dan10gc/embed/EQbjgP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/dan10gc/pen/EQbjgP">
-  UI Button #3 w/ Mix-Blend-Mode</a> by Daniel Gonzalez (<a href="https://codepen.io/dan10gc">@dan10gc</a>)
-  on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
 Benzer bir örnek buldum codepen.io'da. Çözüm yine `mix-blend-mode: difference;` ile yapılmış.
