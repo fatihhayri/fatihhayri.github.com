@@ -7,7 +7,7 @@ Date: 2023-12-18 10:00
 Category: CSS
 tags: [mix-blend-mode, dinamik-arka-plan, ipucu]
 image:
-  feature: marker-pseudo-element.png
+  feature: mix-blend-bg.png
 ---
 
 Durumu şöyle açıklayabilirim: Aslında başlıkta açıklamış gibiyim :) Değişen arka planların olduğu bir yapının üzerindeki metinlerin rengini dinamik değiştirmeyi göreceğiz.
