@@ -6,8 +6,6 @@ lang: tr_TR
 Date: 2023-12-22 10:00
 Category: CSS
 tags: [last-of-type, nth-last-child]
-image:
-  feature: mix-blend-bg.png
 ---
 
 Geçen gün [baklava](https://github.com/Trendyol/baklava) select komponentine arama ekleme işini yapıyordu [Erbil](https://twitter.com/koalafied_dev). Bu geliştirme sırasında şöyle bir şey yaşadık; `hidden` özniteliği ile gizlediğimiz listenin son elemanından dolayı son elemanın alt çizgisinin gizleme kodu çalışmıyordu. 
