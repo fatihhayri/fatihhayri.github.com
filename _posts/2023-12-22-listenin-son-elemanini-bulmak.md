@@ -21,6 +21,24 @@ Bu konu hakkındaki araştırmalarımız sonucu [stackoverflow'daki](https://sta
 
 Shadow DOM kaynaklı bir sorun nedeni ile baklavada çözmedi ama CSS ile böyle bir sorun yaşayanlar için not olsun diye buraya ekliyeyim dedim :)
 
+Erbil burdaki sorunu çözen bir yöntem yazmış onu da ekliyeyim de web komponent için çözümü de aktarmış olalım.
+
+```js
+ private _handleLastVisibleSearchedOption() {
+    const lastVisibleOption = [...this.options].reverse().find(option => !option.hidden);
+
+    if (lastVisibleOption) {
+      lastVisibleOption?.shadowRoot?.querySelector("div")?.classList.add("no-border-bottom");
+    }
+
+    this.options.map(option => {
+      if (!option.hidden && option !== lastVisibleOption) {
+        option.shadowRoot?.querySelector("div")?.classList.remove("no-border-bottom");
+      }
+    });
+  }
+```
+
 Kalın sağlıcakla.
 
 ## Kaynaklar
