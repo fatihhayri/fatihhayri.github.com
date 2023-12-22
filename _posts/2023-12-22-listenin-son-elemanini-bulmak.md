@@ -12,7 +12,7 @@ Geçen gün [baklava](https://github.com/Trendyol/baklava) select komponentine a
 
 Olayı şöyle örnekleyebilirim.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="last-of-type" src="https://codepen.io/fatihhayri/embed/LYaPwmB?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="last-of-type" src="https://codepen.io/fatihhayri/embed/LYaPwmB?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 İlk listede normal durumda son elemanın altındaki çizgi gözükmüyor. İkinci örnekte sondan bir önceki eleman gizlendiği için yine gözükmüyor ancak son örnekte son elemanı gizlediğimiz için çizgi gözüküyor. `:last-of-type` seçicisi listenin gizlenmiş ögelerini dikkate almıyor. Çözmek için ürettiğimiz `:not([hidden]):last-of-type` seçicisi de işlemedi.
