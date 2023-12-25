@@ -27,7 +27,7 @@ Genel yapısı:
   inherits: false;
 }
 ```
-Söz dizimi(syntax) `<length>, <number>, <percentage>, <length-percentage>, <color>, <image>, <url>, <integer>, <angle>, <time>, <resolution>, <transform-function>, <custom-ident>, <transform-list>` değerlerinden birini alabiliyor.
+Söz dizimi(syntax) `<length>, <number>, <percentage>, <length-percentage>,` `<color>, <image>, <url>, <integer>, <angle>, <time>,` `<resolution>, <transform-function>, <custom-ident>, <transform-list>` değerlerinden birini alabiliyor.
 
 Bu tanımı yaptığımızda tarayıcı, CSS değişkenini belirttiğimiz türde  kaydederek. Daha sonra geçişlerde ve animasyonlarda kullanıldığında bu özelliğin değerlerini nasıl enterpolasyona tabi tutacağını bilir.
 
