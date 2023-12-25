@@ -34,13 +34,11 @@ Bu tanımı yaptığımızda tarayıcı, CSS değişkenini belirttiğimiz türde
 [slashdev.io](https://x.com/slashdev_io/status/1728782613039739059?s=20)'nun örneği konuyu anlamak için çok güzel. 
 
 <iframe height="375.6015625" style="width: 100%;" scrolling="no" title="@property  - öncesi" src="https://codepen.io/fatihhayri/embed/QWYeQgm?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fatihhayri/pen/QWYeQgm">
 </iframe>
 
 Rengi ve boyutu değişen bir kutu animasyonu yapalım. Tabi buradaki `--scale: .5;` değerinin tipini anlamayan tarayıcı kutu boyutunu değiştirme kısmını uygulamayacak.
 
 <iframe height="476.88671875" style="width: 100%;" scrolling="no" title="@property  - sonrası" src="https://codepen.io/fatihhayri/embed/NWoQyvy?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fatihhayri/pen/NWoQyvy">
 </iframe>
 
 ```css
