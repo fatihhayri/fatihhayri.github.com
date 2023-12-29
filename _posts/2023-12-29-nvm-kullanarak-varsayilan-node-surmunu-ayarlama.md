@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CSS ile hareketli renk geçişli arka planı yapmak
-description: CSS ile hareketli renk geçişli arka planı yapmak
+title: NVM kullanarak varsayılan nodejs sürmünü ayarlama
+description: NVM kullanarak varsayılan nodejs sürmünü ayarlama
 lang: tr_TR
 Date: 2023-12-29 10:30
 Category: Genel
