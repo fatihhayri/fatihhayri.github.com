@@ -1,7 +1,7 @@
 ---
 layout: post
-title: NVM kullanarak varsayılan nodejs sürmünü ayarlama
-description: NVM kullanarak varsayılan nodejs sürmünü ayarlama
+title: NVM kullanarak varsayılan nodejs sürmünü değiştirme
+description: NVM kullanarak varsayılan nodejs sürmünü değiştirme
 lang: tr_TR
 Date: 2023-12-29 10:30
 Category: Genel
