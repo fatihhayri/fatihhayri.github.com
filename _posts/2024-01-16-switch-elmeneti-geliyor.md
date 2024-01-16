@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Swicth elementi geliyor
-description: Swicth elementi geliyor
+title: Switch elementi geliyor
+description: Switch elementi geliyor
 lang: tr_TR
 Date: 2024-01-16 10:30
 Category: HTML
-tags: [swicth]
+tags: [switch]
 image:
   feature: swicth.png
 ---
