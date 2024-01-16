@@ -52,7 +52,7 @@ input:checked::thumb {
 
 ![Swicth](https://fatihhayrioglu.com/images/swicth-2.gif)
 
-Geçenlerde `accent-color`örneğinde kullandığım gece/gündüz swicth'ini biraz daha değiştirip `:before` ve `:after` olmadan çözümü:
+Geçenlerde `accent-color`örneğinde kullandığım gece/gündüz switch'ini biraz daha değiştirip `:before` ve `:after` olmadan çözümü:
 
 ```css
 input:checked::track {
