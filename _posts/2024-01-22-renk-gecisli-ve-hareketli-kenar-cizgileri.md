@@ -14,12 +14,12 @@ image:
 
 ## Doğrusal renk geçişi örneği
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Animated gradient border" src="https://codepen.io/fatihhayri/embed/gOEmREo?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fatihhayri/pen/gOEmREo"></iframe>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Animated gradient border" src="https://codepen.io/fatihhayri/embed/gOEmREo?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
 
 ```css
 border-image: linear-gradient(to bottom right,#ffb56b,#ac255e) 1;
 ```
+
 `border-image` ve `linear-gradient` birlikte kullanımı ile çözümü hemen bulduk. Mükemmel. Tabi uygulamada kenar çizgilerini bu kadar büyük kullanmayız muhtemelen. Örneğin daha öne çıkması için kenar çizgi kalınlığını yüksek tuttum. 
 
 ## Konik renk geçişi örneği
