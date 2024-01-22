@@ -24,13 +24,13 @@ border-image: linear-gradient(to bottom right,#ffb56b,#ac255e) 1;
 
 ## Konik renk geçişi örneği
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Animated gradient border" src="https://codepen.io/fatihhayri/embed/WNmpEge?default-tab=Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+<iframe height="400" style="width: 100%;" scrolling="no" title="Animated gradient border" src="https://codepen.io/fatihhayri/embed/WNmpEge?default-tab=Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
 
 `conic-gradient` ile daha farklı seçenekler görmek mümkün. 
 
 ## Hareketli renk geçişi örneği
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Animated gradient border -3" src="https://codepen.io/fatihhayri/embed/oNVZeaq?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+<iframe height="400" style="width: 100%;" scrolling="no" title="Animated gradient border -3" src="https://codepen.io/fatihhayri/embed/oNVZeaq?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
 
 İşe hareket katmakta kolay. `linear-gradient` tanımındaki yön tanımını açılı verip bu açıyı animasyon ile döndürdüğümüzde işte animayonlu kenar çizgisi. Tabi burada dikkat açı tanımının `@property` tanımını da yapmalıyız. 
 
@@ -38,7 +38,7 @@ border-image: linear-gradient(to bottom right,#ffb56b,#ac255e) 1;
 
 `border-image` ile `border-radius` birlikte çalışmasının sorunları var. Birçok örnek sorunu çözmek için `:before` ve `mask` ile sonuca gitmiş. Ancak `background`'a renk geçişi ekleyip `box-shadow: inset`  ile içini beyaz (istediğiniz renk)  ile dolduruyoruz. Son olarakta kenar çizgilerinin görünmesi için saydam olarak tanımladık. 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Animated gradient border" src="https://codepen.io/fatihhayri/embed/YzgZQmx?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+<iframe height="400" style="width: 100%;" scrolling="no" title="Animated gradient border" src="https://codepen.io/fatihhayri/embed/YzgZQmx?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
 
 Kalın sağlıcakla.
 
