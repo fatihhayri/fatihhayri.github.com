@@ -24,13 +24,13 @@ border-image: linear-gradient(to bottom right,#ffb56b,#ac255e) 1;
 
 ## Konik renk geçişi örneği
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Animated gradient border" src="https://codepen.io/fatihhayri/embed/WNmpEge?default-tab=Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+<iframe height="500" style="width: 100%;" scrolling="no" title="Animated gradient border" src="https://codepen.io/fatihhayri/embed/WNmpEge?default-tab=Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
 
 `conic-gradient` ile daha farklı seçenekler görmek mümkün. 
 
 ## Hareketli renk geçişi örneği
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Animated gradient border -3" src="https://codepen.io/fatihhayri/embed/oNVZeaq?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+<iframe height="500" style="width: 100%;" scrolling="no" title="Animated gradient border -3" src="https://codepen.io/fatihhayri/embed/oNVZeaq?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
 
 İşe hareket katmakta kolay. `linear-gradient` tanımındaki yön tanımını açılı verip bu açıyı animasyon ile döndürdüğümüzde işte animayonlu kenar çizgisi. Tabi burada dikkat açı tanımının `@property` tanımını da yapmalıyız. 
 
