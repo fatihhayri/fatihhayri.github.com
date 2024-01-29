@@ -89,7 +89,7 @@ Kapsayıcı sogrularını kendine ait birimleri vardır. Bu birimler görüş al
 
 Peki zingat'taki ihtiyacımızı bu öğrendiklerimize göre yapmaya çalışalım.
 
-<iframe height="300" width="100%" style="width: 100%;" scrolling="no" title="container query" src="https://codepen.io/fatihhayri/embed/eYXWrEY?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="500" width="100%" style="width: 100%;" scrolling="no" title="container query" src="https://codepen.io/fatihhayri/embed/eYXWrEY?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/eYXWrEY">
   container query</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -148,15 +148,15 @@ Kalın sağlıcakla.
 ## Kaynaklar
 
  - [https://ishadeed.com/article/container-queries-are-finally-here/](https://ishadeed.com/article/container-queries-are-finally-here/)
- - https://www.youtube.com/watch?v=gCNMyYr7F6w
+ - [https://www.youtube.com/watch?v=gCNMyYr7F6w](https://www.youtube.com/watch?v=gCNMyYr7F6w)
  - [https://webkit.org/blog/12824/news-from-wwdc-webkit-features-in-safari-16-beta/](https://webkit.org/blog/12824/news-from-wwdc-webkit-features-in-safari-16-beta/)
  - [https://developer.apple.com/videos/play/wwdc2022/10048/](https://developer.apple.com/videos/play/wwdc2022/10048/)
- - https://www.oddbird.net/2021/04/05/containerqueries/
- - https://www.youtube.com/watch?v=zVR1WBGWVT8
- - https://www.sarasoueidan.com/blog/component-level-art-direction-with-container-queries-and-picture/
- - https://mxb.dev/blog/container-queries-web-components/
- - https://piccalil.li/blog/container-queries-are-actually-coming/
- - https://www.youtube.com/watch?v=A2dMca3WrJE 
+ - [https://www.oddbird.net/2021/04/05/containerqueries/](https://www.oddbird.net/2021/04/05/containerqueries/)
+ - [https://www.youtube.com/watch?v=zVR1WBGWVT8](https://www.youtube.com/watch?v=zVR1WBGWVT8)
+ - [https://www.sarasoueidan.com/blog/component-level-art-direction-with-container-queries-and-picture/](https://www.sarasoueidan.com/blog/component-level-art-direction-with-container-queries-and-picture/)
+ - [https://mxb.dev/blog/container-queries-web-components/](https://mxb.dev/blog/container-queries-web-components/)
+ - [https://piccalil.li/blog/container-queries-are-actually-coming/](https://piccalil.li/blog/container-queries-are-actually-coming/)
+ - [https://www.youtube.com/watch?v=A2dMca3WrJE](https://www.youtube.com/watch?v=A2dMca3WrJE) 
  - [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries)
  - [https://www.smashingmagazine.com/2021/05/complete-guide-css-container-queries/](https://www.smashingmagazine.com/2021/05/complete-guide-css-container-queries/)
  - [https://blog.logrocket.com/css-container-queries-guide/](https://blog.logrocket.com/css-container-queries-guide/)
