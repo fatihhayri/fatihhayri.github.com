@@ -89,11 +89,13 @@ Kapsayıcı sogrularını kendine ait birimleri vardır. Bu birimler görüş al
 
 Peki zingat'taki ihtiyacımızı bu öğrendiklerimize göre yapmaya çalışalım.
 
-<iframe height="500" width="100%" style="width: 100%;" scrolling="no" title="container query" src="https://codepen.io/fatihhayri/embed/eYXWrEY?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="500" width="100%" style="width: 100%;" scrolling="no" title="container query" src="https://codepen.io/fatihhayri/embed/eYXWrEY?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/eYXWrEY">
   container query</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
+Yukarıdaki codepen örneğinde zoom seviyesi ile oynayarak ta etkiyi görebiliriz.
 
 Mobile öncelik verdiğimiz için diğer şartlar için kod yazdık.
 
