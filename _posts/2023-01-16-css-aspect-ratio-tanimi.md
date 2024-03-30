@@ -79,7 +79,7 @@ gibi sadece o orana göre kod yazıldığı gibi `min-aspect-ratio`
 
 Yazının başında da belirttiğimiz gibi `aspect-ratio` tanımı CLS çözümü olarakta kullanılabilmektedir. Aşağıda görüldüğü gibi resmin sonradan yüklenmesiyle layout zıplaması oluyor.
 
-![enter image description here](https://fatihhayrioglu.com/images/cls-2.gif)
+![aspect-ration CLS çözümü](https://fatihhayrioglu.com/images/cls-2.gif)
 
 > **Cumulative Layout Shift (CLS):** Tarayıcı ek veriler yüklendikçe sayfada meydana gelen zıplamayı (shift) ölçer.
 
