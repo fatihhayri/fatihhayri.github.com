@@ -27,7 +27,7 @@ Uzun içerikli yapıları daha az yer kaplayacak şekilde ve daha işlevsel kull
 
 Mevcut durumda kullanılan ve tarayıcı desteği gayet iyi olan tip bu.
 
-<iframe height="300" width="100%" style="width: 100%;" scrolling="no" title="akordiyon - checkbox gibi" src="https://codepen.io/fatihhayri/embed/qBgoRzW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="450" width="100%" style="width: 100%;" scrolling="no" title="akordiyon - checkbox gibi" src="https://codepen.io/fatihhayri/embed/qBgoRzW?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/qBgoRzW">
   akordiyon - checkbox gibi</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -39,7 +39,7 @@ Yukarıdaki örnekte sadece HTML ve CSS kullandık. Kendi stillerimizi uyguladı
 
 Chrome 120 ve Safari 17.2 ile birlikte gelen `name` özniteliği desteği ile artık tıklanan ögenin dışındakileri kapatan akordiyonları da yapabileceğiz. 
 
-<iframe height="300" width="100%" style="width: 100%;" scrolling="no" title="akordiyon - radio gibi" src="https://codepen.io/fatihhayri/embed/eYxMvOb?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="450" width="100%" style="width: 100%;" scrolling="no" title="akordiyon - radio gibi" src="https://codepen.io/fatihhayri/embed/eYxMvOb?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/eYxMvOb">
   akordiyon - radio gibi</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -52,7 +52,7 @@ Eğer Chrome ve Safari'nin developer sürümlerini yüklemediyseniz yukarıdaki 
 ## Açık gelen akordiyon
 Başlangıç durumunda bir akordiyon elemanının açık gelmesini istiyorsanız. Açık gelmesini istediğiniz akordiyon elemanında `open` öz niteliğini eklemeniz yeterli. Örnek: `<details open>`
 
-<iframe height="300" width="100%" style="width: 100%;" scrolling="no" title="akordiyon - radio gibi" src="https://codepen.io/fatihhayri/embed/mdvxWRm?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="450" width="100%" style="width: 100%;" scrolling="no" title="akordiyon - radio gibi" src="https://codepen.io/fatihhayri/embed/mdvxWRm?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fatihhayri/pen/mdvxWRm">
   akordiyon - radio gibi</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
   on <a href="https://codepen.io">CodePen</a>.
