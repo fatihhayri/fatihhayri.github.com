@@ -10,52 +10,75 @@ image:
   feature: light-dark-func.png
 ---
 
-CSS'in yeni özellikleri bazen çığır açan nitelikte (anchor positioning, :has() seçicisi, vb.) olurken bazen yazıma yardımcı kurallar (iç içe yazım, @property) oluyor bazen de genel kullanılan kullanıcı deneyimi arttırıcı özellikleri oluyor. `field-size` özelliği genel kullanıcı deneyimini arttırıcı bir özellik. `field-size` özelliği genelde javascript ile çözdüğümüz bir ihtiyacı karşılıyor. Artık CSS ile kolayca bu ihtiyacımızı giderebiliyoruz. Genelde `textarea` alanlarına yazılan uzun içerikler için kullanıcıya sunulan dar alanları büyütmek için kullandığımız kullanıcı metin girdikçe uzayan `textarea` alanları için tanımlanmış bir özellik. 
+Bir önceki yazımda bahsettiğim gibi CSS'in yeni özelliklerinin bazıları çığır açan özellikler, bazıları kulllanıcı deneyimini iyileştirme yönünde özellikler bazıları da `lightdark()` fonksiyonu gibi yazım kolaylığı sağlayan özellikler. 
 
-Bu durum masaüstünde daha az sinir bozucuyken mobilde daha sinir bozucu bir durum oluşturuyor. 
+`lightdark()` fonksiyonu mevcut uyumlu web yazımındaki büyük sorun olan aşağıdaki kullanımı daha anlaşılır ve düzenli hale getirmeye yarıyor.
 
-Javascript ile yazılmış bir sürü script örneği ve makalesi mevcut bu durumu çözen ancak bir satır CSS kodu ile çözmenin hazzını hiçbiri vermiyor. :)
+```css
+:root {
+  color-scheme: light dark;
 
-Ben yukarıda `textarea` için dediysem de uygulamada `input`, `textarea` ve `select` elemanlarına uygulanabiliyor. Örnekler yardımıyla daha iyi anlaşılacak.
+  --dark-color: #292524;
+  --light-color: #f5f5f4;
 
-<iframe height="300" style="width: 100%;" scrolling="no" title=" field-sizing: content;" src="https://codepen.io/fatihhayri/embed/abgpvgy?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fatihhayri/pen/abgpvgy">
-   field-sizing: content;</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
-  on <a href="https://codepen.io">CodePen</a>.
+  --text-color: var(--dark-color);
+  --bg-color: var(--light-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: var(--light-color);
+    --bg-color: var(--dark-color);
+  }
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+````
+
+Bu tip koyu/açık tanımlarını ayrı ayrı yapmak yerine 
+
+```css
+:root {
+  color-scheme: light dark;
+
+  --light: #292524;
+  --dark: #f5f5f4;
+}
+
+body {
+  color: light-dark(var(--light), var(--dark));
+  background-color: light-dark(var(--dark), var(--light));
+}
+```
+
+Böylece daha kısa ve anlaşılır bir kod yapısına kavuşmuş oluyoruz. 
+
+<iframe height="420" width="100%" style="width: 100%;" scrolling="no" title="lightdark() fonksiyonu" src="https://codepen.io/fatihhayri/embed/rNXLRer?default-tab=css%2Cresult&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-Yukarıdaki örnekte normal durumda `textarea` içinde içerik girdikçe veya enter'a bastıkça sağda kaydırma çubuğu çıkarken `field-size` tanımı yapılan `textarea`'da içerik girdikçe veya enter'a basıldıkça `textarea` otomatik olarak artmaktadır. 
+Geliştirici araçlarındaki Styles sekmesindeki sağdan ikinci ikon yardımıyla dark / light arasında geçiş yapıp durumu simüle edebiliriz. 
 
-`input` içinde bir örnek yapalım.
+![Developer tool light dark](https://fatihhayrioglu.com/images/light-dark.png)
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="input -  field-sizing: content;" src="https://codepen.io/fatihhayri/embed/qBzRXgQ?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fatihhayri/pen/qBzRXgQ">
-  input -  field-sizing: content;</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+Mevcut kodlarımızda kod boyutunu azaltacak bir özellik.
 
-Yukarıdaki örnekte normal `input`'ta içeriği uzattığımızda içerik sağa doğru kayarken `field-sizing: content;` uygulanan örnekte içerik girildikçe input genişliyor.
+Bu yazıyı yazdığımda tüm tarayıcıların yeni sürümlerinde desteği vardı. Türkiye'de oran %85. Güzel oran. 
 
-Bir diğer uygulanan elemanda `<select>`
+## Kaynaklar 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="input -  field-sizing: content;" src="https://codepen.io/fatihhayri/embed/oNrZGEK?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fatihhayri/pen/oNrZGEK">
-  input -  field-sizing: content;</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-
-`<select>` farklılıkları normalde içeriğe göre genişlik sabit olurken `field-sizing: content;` tanımlı select'te içeriği uzun olanda genişlik uzuyor kısa olanda kısa kalıyor.
-
-Blink (Chrome, Edge, Opera, Arc)  tabanlı tarayıcılarda bu özelliğin desteği var. Firefox desteğinin [yakında geleceği haberi](https://x.com/intenttoship/status/1799438829260099996) geldi. Safari ekibinin de geliştirme aşmasında olduğunu [biliyoruz.](https://webkit.org/css-status/#property-field-sizing)
-
-Kalın sağlıcakla.
-
-## Kaynaklar
-
- - [https://developer.mozilla.org/en-US/docs/Web/CSS/field-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/field-sizing)
- - [https://polypane.app/blog/field-sizing-just-works/](https://polypane.app/blog/field-sizing-just-works/)
- - [https://caniuse.com/mdn-css_properties_field-sizing](https://caniuse.com/mdn-css_properties_field-sizing)
- - [https://blog.stephaniestimac.com/posts/2024/01/css-field-sizing/](https://blog.stephaniestimac.com/posts/2024/01/css-field-sizing/)
- - [https://x.com/wesbos/status/1790072655913050579](https://x.com/wesbos/status/1790072655913050579)
- - [https://x.com/jh3yy/status/1799460095585308690](https://x.com/jh3yy/status/1799460095585308690)
- - [https://x.com/JohnPhamous/status/1800963715631808949](https://x.com/JohnPhamous/status/1800963715631808949)
+ - [https://www.bram.us/2023/10/09/the-future-of-css-easy-light-dark-mode-color-switching-with-light-dark/](https://www.bram.us/2023/10/09/the-future-of-css-easy-light-dark-mode-color-switching-with-light-dark/)
+ - [https://web.dev/articles/light-dark#:~:text=light%2Ddark()%20is%20a,the%20first%20value%20gets%20returned.](https://web.dev/articles/light-dark#:~:text=light-dark%28%29%20is%20a,the%20first%20value%20gets%20returned.)
+ - [https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark)
+ - [https://frontendmasters.com/blog/dark-and-light/](https://frontendmasters.com/blog/dark-and-light/)
+ - [https://dev.to/stuffbreaker/dark-mode-in-web-components-is-about-to-get-awesome-4i14](https://dev.to/stuffbreaker/dark-mode-in-web-components-is-about-to-get-awesome-4i14)
+ - [https://daverupert.com/2024/05/light-dark-experiment/](https://daverupert.com/2024/05/light-dark-experiment/)
+ - [https://matuzo.at/blog/2024/100daysof-day107](https://matuzo.at/blog/2024/100daysof-day107)
+ - [https://dev.to/janeori/css-lightdark-mode-implementation-without-duplicating-vars-22c9](https://dev.to/janeori/css-lightdark-mode-implementation-without-duplicating-vars-22c9)
+ - [https://x.com/natebirdman/status/1757224685614645290](https://x.com/natebirdman/status/1757224685614645290)
+ - [https://www.youtube.com/watch?v=1-yzpfTTGIg](https://www.youtube.com/watch?v=1-yzpfTTGIg)
+ - [https://x.com/colisscom/status/1719151455075197210](https://x.com/colisscom/status/1719151455075197210)
+ - [https://pawelgrzybek.com/light-dark-mode-simplified-by-the-css-light-dark-function/](https://pawelgrzybek.com/light-dark-mode-simplified-by-the-css-light-dark-function/)
+ - [https://caniuse.com/?search=light-dark](https://caniuse.com/?search=light-dark)
