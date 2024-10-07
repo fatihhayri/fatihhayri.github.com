@@ -3,7 +3,7 @@ layout: post
 title: Tarayıcı geliştirici araçlarında yakınlaştırma ve uzaklaştırma yapmak
 description: Tarayıcı geliştirici araçlarında yakınlaştırma ve uzaklaştırma yapmak
 lang: tr_TR
-Date: 2024-05-13 9:30
+Date: 2024-06-10 9:30
 Category: Genel
 tags: [tarayıcı, dev-tools, zoom]
 image:
