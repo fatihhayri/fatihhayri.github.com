@@ -59,7 +59,11 @@ Bir çok farklı efektler elde edilebilir. [codepen.io](https://codepen.io/) sit
 
 video örneği çok güzel. https://codepen.io/dudleystorey/pen/wavpGe
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__mix-blend-mode-1741162303117.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__mix-blend-mode-1741162303117.png">
+<img src="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__mix-blend-mode-1741162303117.jpg" alt="Data on support for the mdn-css__properties__mix-blend-mode feature across the major browsers from caniuse.com">
+</picture>
 
 Kalın sağlıcakla.
 

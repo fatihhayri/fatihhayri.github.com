@@ -105,7 +105,11 @@ Bu `subgrid` etiketini tıkladığımızda `grid` etiketine tıkladığımız gi
 
 En son Chrome'un desteğinin gelmesiyle Türkiye'deki desteği %85'lere yükseldi. Yakın zamanda %95'leri görürüz.
 
-{% include browser-usage.html ch="+117" ie="+117" ff="+" mch="+117" sa="+" si="-" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-subgrid-1741163681431.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-subgrid-1741163681431.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-subgrid-1741163681431.jpg" alt="Data on support for the css-subgrid feature across the major browsers from caniuse.com">
+</picture>
 
 ## Kaynaklar
 

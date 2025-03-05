@@ -82,8 +82,6 @@ Açılan alanlar herhangibir javascript gereksinimi olmadan ESC tuşuna basınca
 
 Daha yeni yeni desteği geliyor. Şu an Chrome'da (114) aktif Safari 17 ile birlikte desteği geliyor. Firefox ise henüz flag ile destekliyor.
 
-{% include browser-usage.html ch="+" ie="-" ff="-" mch="+" sa="-" si="-" %}
-
 ## Sonuç
 
 Bu tip API elementlerinin gelmesi güzel oluyor. Tabi hala tarayıcı desteği eksik ve gelişmesi gereken yönleri var. Örneği açarken ve kapatırken animasyon tanımları yapamıyoruz. Chrome ekibi bu yönde çalışmaları (`@starting-style`) var.

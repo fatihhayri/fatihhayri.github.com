@@ -46,9 +46,7 @@ Bu notları da aklımızda tutarak projelerimizde bu değerleri kullanabiliriz.
 
 ## Tarayıcı Desteği
 
-Türkiye için %92'lik güzel bir desteği var.
-
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
+Türkiye için %95'lik güzel bir desteği var.
 
 Kalın sağlıcakla.
 

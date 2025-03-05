@@ -88,7 +88,11 @@ Test için yukarıdaki sayfayı ayrı bir pencerede açıp Chrome Dev Tools'dan 
 
 Ayrıca [https://font-display.glitch.me/](https://font-display.glitch.me/) sitesindeki örnek ve Umar Hansa'nın [https://www.youtube.com/watch?v=yRrrL0Mg1pM&t=518s](https://www.youtube.com/watch?v=yRrrL0Mg1pM&t=518s) anlatımı uygulamada nasıl göründüğünü görmek için güzel kaynaklar.
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="11.3" si="6.2" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-font-rendering-controls-1741162450276.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-font-rendering-controls-1741162450276.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-font-rendering-controls-1741162450276.jpg" alt="Data on support for the css-font-rendering-controls feature across the major browsers from caniuse.com">
+</picture>
 
 ## Sonuç
 

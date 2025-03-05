@@ -264,7 +264,11 @@ CSS değişkenlerinin performans olarak nasıl bir etkisinin olacağına bakıld
 
 Tarayıcı desteği konusunda gayet güzel bir seviyede. IE11 ve Android browser'u saf dışı edenler için %100'lük bir desteği var.
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__custom-property-1741162630415.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__custom-property-1741162630415.png">
+<img src="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__custom-property-1741162630415.jpg" alt="Data on support for the mdn-css__properties__custom-property feature across the major browsers from caniuse.com">
+</picture>
 
 ## Sonuç
 

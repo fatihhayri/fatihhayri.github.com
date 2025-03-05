@@ -47,7 +47,11 @@ Tarayıcılar HTML elemanlarını yorumlarken belirli başlangıç değerleri ka
 
 Örnekte görüldüğü gibi kapsayıcı **div** elemanına atanan kırmızı rengi ilk paragraf için `initial` değeri ile tarayıcının ilk kabul değerine(siyah) döndürülmüştür.
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-initial-value-1741162839134.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-initial-value-1741162839134.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-initial-value-1741162839134.jpg" alt="Data on support for the css-initial-value feature across the major browsers from caniuse.com">
+</picture>
 
 
 ## inherit (kalıtsal) değeri
@@ -59,7 +63,11 @@ Tarayıcılar HTML elemanlarını yorumlarken belirli başlangıç değerleri ka
 
 Kalıtsallığı kullanarak kodlarımızı azaltabiliriz. Ancak kalıtsallık nedeni ile de birçok sorunla karşılaştığımızı da unutmayalım.
 
-{% include browser-usage.html ch="+" ie="+" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-initial-value-1741162839134.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-initial-value-1741162839134.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-initial-value-1741162839134.jpg" alt="Data on support for the css-initial-value feature across the major browsers from caniuse.com">
+</picture>
 
 ## unset (sıfırlama)
 
@@ -70,7 +78,11 @@ Bir önceki makalede yazdığımız gibi `unset` değeri atanan bir özellik eğ
   (<a href='https://codepen.io/fatihhayri'>@fatihhayri</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-unset-value-1741162891126.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-unset-value-1741162891126.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-unset-value-1741162891126.jpg" alt="Data on support for the css-unset-value feature across the major browsers from caniuse.com">
+</picture>
 
 ## revert (geri alma)
 
@@ -82,7 +94,11 @@ Bir elemana `revert` değeri atandığında geliştiricinin atadığı değerler
 
 Tarayıcı desteği konusunda `initial`, `inherit` ve `unset` iyiyken `revert` blink grubunun desteği olmadığı için düşük kalmış. 
 
-{% include browser-usage.html ch="-" ie="-" ff="+" mch="-" sa="+" si="-" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-revert-value-1741162910877.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-revert-value-1741162910877.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-revert-value-1741162910877.jpg" alt="Data on support for the css-revert-value feature across the major browsers from caniuse.com">
+</picture>
 
 [Šime Vidas](https://twitter.com/simevidas)'ın yazısında ki çağrısını ben de burada tekrarlıyayım. Google bug sayfasındaki [yıldıza bir tıklama](https://bugs.chromium.org/p/chromium/issues/detail?id=579788) da siz ekleyin.
 

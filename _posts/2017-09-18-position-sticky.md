@@ -57,7 +57,11 @@ Javascript ile çözüm oluşturmak için aşağıdaki çözümlerden biri terci
 
 Kullanıcı ihtiyacı olan bir özellik. Standartlaşması süper. W3C kullanıcı ihtiyaçlarını karşılamada çok yavaş kalıyor. Bu nedenle birçok şeyi olması gerektiği gibi değil çakma çözümler ile yapıyoruz. Umarım zamanla bu değişir.
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+ (-webkit)" si="6.2" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-sticky-1741161899295.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-sticky-1741161899295.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-sticky-1741161899295.jpg" alt="Data on support for the css-sticky feature across the major browsers from caniuse.com">
+</picture>
 
 
 ## Kaynaklar

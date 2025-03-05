@@ -186,7 +186,11 @@ Safari ve Firefox'un gösterimi daha güzel. Chrome'da yakında benzer bir göst
 
 Yazıyı yazdığımda Türkiye'de %80 desteğe ulaşmış olması mükemmel bir gelişme. Firefox'un geriden gelse dahi desteği sağlaması güzel.
 
-{% include browser-usage.html ch="+" ie="+" ff="117+" mch="+" sa="+" si="-" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-nesting-1741163644823.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-nesting-1741163644823.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-nesting-1741163644823.jpg" alt="Data on support for the css-nesting feature across the major browsers from caniuse.com">
+</picture>
 
 Kalın sağlıcakla.
 

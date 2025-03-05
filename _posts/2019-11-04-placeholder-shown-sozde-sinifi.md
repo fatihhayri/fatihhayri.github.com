@@ -32,7 +32,11 @@ Kullanıcı girdi alanına bir şeyler girdiğinde yertutucu kayboluyor onun yer
 
 Tarayıcı desteği konusunda da çok iyi.
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-placeholder-shown-1741162802532.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-placeholder-shown-1741162802532.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-placeholder-shown-1741162802532.jpg" alt="Data on support for the css-placeholder-shown feature across the major browsers from caniuse.com">
+</picture>
 
 Kalın sağlıcakla.
 

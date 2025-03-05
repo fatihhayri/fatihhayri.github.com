@@ -12,7 +12,7 @@ image:
 
 `closest()` metodu seçtiğimiz elemanın belirttiğimiz seçici kuralına göre en yakın olan ebeveynini (kendisi de bu kontrole dahildir) bulur ve bize döner. Eğer bulamazsa `null` değeri döner.
 
-{% highlight html %}
+```html
 <ul>
     <li>Üst Menü
         <ul>
@@ -25,28 +25,28 @@ image:
         </ul>
     </li>
 </ul>
-{% endhighlight %}
+```
 
 `selected` sınıfı tanımlı bir bağlatının DOM sıralamasına göre yukarıya doğru ilk `ul` elemanını yakalamak gibi bir amacımız olsun.
 
 Bunun için `closest` öncesi şöyle bir iş yapıyorduk.
 
-{% highlight javascript %}
+```javascript
 const seciliEleman = document.querySelector('.selected');
 
 seciliEleman.parentNode.parentNode.classList.add('hayde');
-{% endhighlight %}
+```
 
 <iframe height='300' scrolling='no' title='closest öncesi' src='//codepen.io/fatihhayri/embed/preview/aRbaex/?height=300&theme-id=13521&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 `closest` sonrası ise çok basit:
 
-{% highlight javascript %}
+```javascript
 const seciliEleman = document.querySelector('.selected');
 
 seciliEleman.closest('ul').classList.add('hayde');
-{% endhighlight %}
+```
 
 <iframe height='300' scrolling='no' title='closest öncesi' src='//codepen.io/fatihhayri/embed/preview/bmGmGo/?height=300&theme-id=13521&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
@@ -55,9 +55,9 @@ Eski yöntemde daha yukarılarda bir eleman yakalamak istediğimizde iş çığ�
 
 Ebeveyn bulmanın dışında closest'ı  tıklanan elemanın belirlediğimiz seçiciyle uyumlu bir eleman veya içindeki herhangi bir eleman olup olmadığını kontrol etmek için de kullanabiliriz.
 
-{% highlight javascript %}
+```javascript
 if (!event.target.closest('.adamim')) return;
-{% endhighlight %}
+```
 
 Tıkladığımız eleman `adamim` sınıflı elemansa işine devam edecektir.
 
@@ -65,7 +65,11 @@ jQuery'den kurtulmayı kolaylaştıran metotlardan birini daha öğrenmiş olduk
 
 Tarayıcı desteği konusunda gayet iyi noktada.
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="6+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/element-closest-1741162712963.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/element-closest-1741162712963.png">
+<img src="https://caniuse.bitsofco.de/static/v1/element-closest-1741162712963.jpg" alt="Data on support for the element-closest feature across the major browsers from caniuse.com">
+</picture>
 
 Eğer hala IE11 desteğini dert ediyorsanız aşağıdaki linklerde **Polyfill** kodu var.
 

@@ -64,9 +64,11 @@ Başlık, içerik, ikon, etiketleme, metin başlangıç yönü ve dil seçenekle
 ![HTML5 bilgilendirme][html5_bilgilendirme]
 
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
-
-Mobil tarafında sadece Firefox(onunda desteği az) destekliyor. Diğer mobil tarayıcılar da desteklerse süper olacaktır.
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/notifications-1741165492203.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/notifications-1741165492203.png">
+<img src="https://caniuse.bitsofco.de/static/v1/notifications-1741165492203.jpg" alt="Data on support for the notifications feature across the major browsers from caniuse.com">
+</picture>
 
 ## Kaynaklar
 

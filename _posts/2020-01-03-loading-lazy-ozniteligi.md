@@ -30,7 +30,11 @@ Halihazırda bunun için script kullananlar için destekleyenler için bu olsun 
 
 Sonuç olarak şimdiden `loading="lazy"`özniteliği eklemenin zararı yok ama yararı çok. Türkiye'de toplamda %76,3'lük desteği var şu an. (3 Ocak 2020)
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/loading-lazy-attr-1741163185590.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/loading-lazy-attr-1741163185590.png">
+<img src="https://caniuse.bitsofco.de/static/v1/loading-lazy-attr-1741163185590.jpg" alt="Data on support for the loading-lazy-attr feature across the major browsers from caniuse.com">
+</picture>
 
 ## Kaynaklar
 

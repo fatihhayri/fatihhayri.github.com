@@ -76,8 +76,6 @@ Masaüstü araçlar için;
 
 Tarayıcı desteği de gayet iyi.
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
-
 ## Kaynaklar
 
  - [https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c](https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c)

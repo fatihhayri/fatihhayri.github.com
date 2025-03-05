@@ -16,22 +16,26 @@ jQuery ile basit bir şekilde yaptığımız DOM'dan eleman silme işini aynı k
 
 jQuery ile 
 
-{% highlight javascript %}
+```javascript
 $('.deneme').remove();
-{% endhighlight %}
+```
 	
 ES6 ile 
 
-{% highlight javascript %}
+```javascript
 let eleman = document.querySelector('#bosBeles');
 
 eleman.remove();
-{% endhighlight %}
+```
 	
 Süper. 
 
 Peki siz hala IE11 destekliyorsanız size de eskiye destek için [remove polyfills](https://github.com/cferdinandi/vanilla-javascript-cheat-sheet/blob/master/polyfills/remove.js)'ini öneriyorum.
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/childnode-remove-1741162555877.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/childnode-remove-1741162555877.png">
+<img src="https://caniuse.bitsofco.de/static/v1/childnode-remove-1741162555877.jpg" alt="Data on support for the childnode-remove feature across the major browsers from caniuse.com">
+</picture>
 
 Kalın sağlıcakla.

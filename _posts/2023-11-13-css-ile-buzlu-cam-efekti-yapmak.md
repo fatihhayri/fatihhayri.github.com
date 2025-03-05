@@ -49,7 +49,11 @@ Bunların dışında bir çok örnek var. İncelemek isterseniz codpen [linki](h
 
 Türkiye'de şu an %95'lik desteği ile kullanılır durumda.
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__backdrop-filter-1741165325362.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__backdrop-filter-1741165325362.png">
+<img src="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__backdrop-filter-1741165325362.jpg" alt="Data on support for the mdn-css__properties__backdrop-filter feature across the major browsers from caniuse.com">
+</picture>
 
 Kalın sağlıcakla.
 

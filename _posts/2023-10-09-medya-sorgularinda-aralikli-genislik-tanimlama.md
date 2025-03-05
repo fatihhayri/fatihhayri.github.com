@@ -86,7 +86,11 @@ Süper.
 
 Yeni yeni çıkmasına rağmen yüzdesi gayet güzel.
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+117" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-media-range-syntax-1741163726096.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-media-range-syntax-1741163726096.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-media-range-syntax-1741163726096.jpg" alt="Data on support for the css-media-range-syntax feature across the major browsers from caniuse.com">
+</picture>
 
 ## Sonuç
 

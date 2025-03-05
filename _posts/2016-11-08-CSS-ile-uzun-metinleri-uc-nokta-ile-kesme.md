@@ -65,7 +65,11 @@ Mobilde ve dar alanlarda güzel iş görüyor.
 {% endhighlight %}
 
 
-{% include browser-usage.html ch="+ (-webkit)" ie="-" ff="68+" mch="+ (-webkit)" sa="+ (-webkit)" si="+ (-webkit)" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/css-line-clamp-1741161855762.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/css-line-clamp-1741161855762.png">
+<img src="https://caniuse.bitsofco.de/static/v1/css-line-clamp-1741161855762.jpg" alt="Data on support for the css-line-clamp feature across the major browsers from caniuse.com">
+</picture>
 
 ## Kaynaklar
 

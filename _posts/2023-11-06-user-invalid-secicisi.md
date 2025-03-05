@@ -55,9 +55,7 @@ Form doğrulama konusu bazen çok karmaşık haller alabiliyor. Burada herkesin 
 
 ## Tarayıcı Desteği
 
-Şu anlık %66'lık bir destek var ama Chrome yeni destek açıkladığı için. 1-2 aya yüzdeler artar.
-
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="-" %}
+Şu anlık %93'lık bir destek var.
 
 Kalın sağlıcakla.
 

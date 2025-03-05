@@ -90,7 +90,11 @@ Izgara alanı dört ızgara çizgisi arasında kalan alandır. Bir ve birden faz
 
 Tarayıcı desteği konusunda çok güzel yerlerde CSS Grid Modülü. Makaleyi yazdığım bugün baktığımda %92'lik bir desteği vardı.
 
-{% include browser-usage.html ch="+" ie="+" ff="+" mch="+" sa="+" si="6.4+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__grid-1741162760190.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__grid-1741162760190.png">
+<img src="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__grid-1741162760190.jpg" alt="Data on support for the mdn-css__properties__grid feature across the major browsers from caniuse.com">
+</picture>
 
 Yardımlarından dolayı [Serkan Bektaş](https://twitter.com/serkanbektasim)'a teşekkürlerimi sunarım. 
 

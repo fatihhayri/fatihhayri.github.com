@@ -57,7 +57,11 @@ Görüldüğü gibi normal şartlarda resimler büzülmüş görünecektir. `obj
 
 Bu gibi bir çok durum için kullanışlı özellikler. 
 
-{% include browser-usage.html ch="+" ie="-" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__object-fit-1741162191655.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__object-fit-1741162191655.png">
+<img src="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__object-fit-1741162191655.jpg" alt="Data on support for the mdn-css__properties__object-fit feature across the major browsers from caniuse.com">
+</picture>
 
 Kalın sağlıcakla.
 
