@@ -140,7 +140,11 @@ Farklı araçlar ile web sayfaları gezilmeye başlayalı beri esnek yapılı
 sayfalar revaçtadır. Websitelerimizi artık daha esnek planlamak zorunda
 kalacağız. Bu durumda bu özellik bize çok büyük yararlar sağlayacaktır.
 
-{% include browser-usage.html ch="+" ie="+" ff="+" mch="+" sa="+" si="+" %}
+<picture>
+<source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__box-sizing-1741161121990.webp">
+<source type="image/png" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__box-sizing-1741161121990.png">
+<img src="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__box-sizing-1741161121990.jpg" alt="Data on support for the mdn-css__properties__box-sizing feature across the major browsers from caniuse.com">
+</picture>
 
 ~~Trayaıcı destek listesinde görüldüğü gibi sorun sadece ie7 sürümü ve
 aşağısında yaşanmaktadır.~~
