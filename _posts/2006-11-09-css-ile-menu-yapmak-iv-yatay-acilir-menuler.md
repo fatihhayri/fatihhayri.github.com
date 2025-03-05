@@ -145,15 +145,17 @@ Ayrıca aşağıdaki kodu da eklemeliyiz.
 
 işte sonuç:
 
-<iframe src="/dokumanlar/menu4.htm" width="480" height="250" frameborder="0" scrolling="auto"></iframe>
+<iframe height="233" style="width: 100%;" scrolling="no" title="menü örneği - 3.2" src="https://codepen.io/fatihhayri/embed/JojNbNx?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fatihhayri/pen/JojNbNx">
+  menü örneği - 3.2</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 şimdiye kadar anlatılan menü kodlarında işin yapısı öğretilmeye
 çalışılmıştır. Bu kodları kullanarak çok çeşitli menüler yapılabilir,
 bunu gerek internette arayarak ve gerekse kaynaklar bölümündeki linklere
 göz atarak görebilirsiniz. Bir çok menü türü bu şekilde tasarlanabilir.
 alt kademeli, değişik renklerde ve değişik ebatlarda menü yapılabilir.
-
-Örnek kodları [indir][]
 
 ## Kaynaklar
 
@@ -167,7 +169,6 @@ alt kademeli, değişik renklerde ve değişik ebatlarda menü yapılabilir.
   [CSS ile Menü Yapmak II - Yatay Menüler]: http://fatihhayrioglu.com/?p=211
   [CSS ile konumlandırma(positioning)]: http://fatihhayrioglu.com/?p=151
   [1]: /images/menu4_resim2.gif
-  [indir]: /dokumanlar/menu4yeni.zip
   [http://www.alistapart.com/articles/dropdowns/]: http://www.alistapart.com/articles/dropdowns/
   [http://www.compassdesigns.net/]: http://www.compassdesigns.net/tutorials/joomla-tutorials/css-drop-down-menu.html
   [http://www.cssplay.co.uk/menus/index.html]: http://www.cssplay.co.uk/menus/index.html

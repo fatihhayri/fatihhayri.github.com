@@ -149,7 +149,11 @@ ul.menu li {
 
 İşte menümüzün son hali
 
-<iframe src="/dokumanlar/menu.htm" width="250" height="200" frameborder="0" scroll="auto"></iframe>
+<iframe height="300" style="width: 100%;" scrolling="no" title="menü örneği" src="https://codepen.io/fatihhayri/embed/qEBmqBQ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fatihhayri/pen/qEBmqBQ">
+  menü örneği</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
   [100]: /dokumanlar/menu1.gif
   [1]: /dokumanlar/menu2.gif

@@ -121,7 +121,11 @@ background-color: #999;
 
 Sonuç işte:
 
-<iframe src="/dokumanlar/menuy.html" width="300" height="50" frameborder="0" scrolling="auto"></iframe>
+<iframe height="300" style="width: 100%;" scrolling="no" title="menü örneği" src="https://codepen.io/fatihhayri/embed/KwKmNpm?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fatihhayri/pen/KwKmNpm">
+  menü örneği</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 Biz burada temel menü örnekleri verdik. Mesele işin yapılışını öğrenmek.
 Daha ayrıntılı ve güzel örnekler internette bir çok yerde mevcut. Gerek

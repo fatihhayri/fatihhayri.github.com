@@ -29,13 +29,14 @@ Bu metod cemsid'inde açıkladığı gibi arkaplan resmi(background-image)
 kaydırarak yapılıyor. Genelde bu tip menüler resim içeren veya
 anti-aliased metinlerin kullanıldığı durumlarda kullanılır.
 
-	:::html
-	<ul id="menu" >
-		<li id="elma"><a href="#" title="Elma">Elma</a></li>
-		<li id="armut"><a href="#" title="Armut">Armut</a></li>
-		<li id="muz"><a href="#" title="Muz">Muz</a></li>
-		<li id="kivi"><a href="#" title="Kivi">Kivi</a></li>
-	</ul>
+```html
+<ul id="menu" >
+   <li id="elma"><a href="#" title="Elma">Elma</a></li>
+   <li id="armut"><a href="#" title="Armut">Armut</a></li>
+   <li id="muz"><a href="#" title="Muz">Muz</a></li>
+   <li id="kivi"><a href="#" title="Kivi">Kivi</a></li>
+</ul>
+```
 
 
 
@@ -54,24 +55,26 @@ Firefowrk, PaintShopPro vb. programlar kullanabilrisiniz.
 Menüdeki margin, padding ve imgeleri kaldıralım. Boyutlarını ve konumunu
 tanımlayalım:
 
-	:::cssul
-	#menu{
-		height: 54px;
-		margin: 0;
-		padding: 0;
-		position: relative;
-		width: 500px;
-	}
+```css
+#menu{
+   height: 54px;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   width: 500px;
+}
+```
 
 ![][1]
 
 Menümüzü yatay olarak sıralamak için
 
-	:::css
-	ul#menu li{
-		list-style: none;
-		position: absolute;
-	}
+```css
+ul#menu li{
+   list-style: none;
+   position: absolute;
+}
+```
 
 ![][2]
 
@@ -79,65 +82,69 @@ Menü elemanlarının yükseklikleri sabit olduğu için hepsine ortak
 tanımlama yapıyoruz, hepsini kendine has kapsama alanı olması için
 blokladık(display:block) ve konumlandırdık(postion:relative).
 
-	:::css
-	ul#menu li a{
-		display: block;
-		height: 54px;
-		position: relative;
-	}
+```css
+ul#menu li a{
+   display: block;
+   height: 54px;
+   position: relative;
+}
+```
 
 Her menü elemanı için kendi genişliği ve arkaplan resmindeki(menu.jpg)
 yerini belirleyelim.
 
-	:::css
-	#elma a{
-		background: url(images/menu.jpg) 0 0 no-repeat;
-		width: 130px;
-	}
+```css
+#elma a{
+   background: url(images/menu.jpg) 0 0 no-repeat;
+   width: 130px;
+}
 
-	#armut a{
-		background: url(images/menu.jpg) -130px 0 no-repeat;
-		width: 142px;
-	}
+#armut a{
+   background: url(images/menu.jpg) -130px 0 no-repeat;
+   width: 142px;
+}
 
-	#muz a{
-		background: url(images/menu.jpg) -272px 0 no-repeat;
-		width: 120px;
-	}
+#muz a{
+   background: url(images/menu.jpg) -272px 0 no-repeat;
+   width: 120px;
+}
 
-	#kivi a{
-		background: url(images/menu.jpg) -392px 0 no-repeat;
-		width: 108px;
-	}
+#kivi a{
+   background: url(images/menu.jpg) -392px 0 no-repeat;
+   width: 108px;
+}
+```
 
 ve tüm menü elementlerinin soldan konumu belirleyelim.
 
-	:::css
-	#elma{
-	left: 0px;
-	}
+```css
+#elma{
+left: 0px;
+}
 
-	#armut{
-		left: 130px;
-	}
+#armut{
+   left: 130px;
+}
 
-	#muz{
-		left: 272px;
-	}
+#muz{
+   left: 272px;
+}
 
-	#kivi{
-		left: 392px;
-	}
+#kivi{
+   left: 392px;
+}
+```
 
 ![][3]
 
 Resimler üzerindeki metinleri kaldırmak için
 
-	:::css
-	ul#menu li a{
-		text-decoration: none;
-		text-indent: -9999px;
-	}
+```css
+ul#menu li a{
+   text-decoration: none;
+   text-indent: -9999px;
+}
+```
 
 ![][4]
 
@@ -145,26 +152,27 @@ Menümüz tamam. şžimdi de rollover efekti vermek için **a:hover**
 arkaplan resimlerinin konumunu belirleyelim. Konumunu yazarken sadece
 yükseliği üstten konumu değiştirdiğimize dikkat edin.
 
-	:::css
-	#elma a:hover{
-		background: url(images/menu.jpg) 0 -54px no-repeat;
-		width: 130px;
-	}
+```css
+#elma a:hover{
+   background: url(images/menu.jpg) 0 -54px no-repeat;
+   width: 130px;
+}
 
-	#armut a:hover{
-		background: url(images/menu.jpg) -130px -54px no-repeat;
-		width: 142px;
-	}
+#armut a:hover{
+   background: url(images/menu.jpg) -130px -54px no-repeat;
+   width: 142px;
+}
 
-	#muz a:hover{
-		background: url(images/menu.jpg) -272px -54px no-repeat;
-		width: 120px;
-	}
+#muz a:hover{
+   background: url(images/menu.jpg) -272px -54px no-repeat;
+   width: 120px;
+}
 
-	#kivi a:hover{
-		background: url(images/menu.jpg) -392px -54px no-repeat;
-		width: 108px;
-	}
+#kivi a:hover{
+   background: url(images/menu.jpg) -392px -54px no-repeat;
+   width: 108px;
+}
+```
 
 ![][5]
 
@@ -172,38 +180,42 @@ Son olarakta bir bölümde olduğunda o bölümün aktif görünmesini sağlamak
 için, genel de bunu için a:hover durumu normal durum olarak tanımlanır.
 Bizde öyle yapalım. Mesela **Muz** bölümünde olduğumuzu farz edelim.
 
-	:::html
-	<ul id="menu">
-		<li id="elma"><a title="Elma" href="#">Elma</a></li>
-		<li id="armut"><a title="Armut" href="#">Armut</a></li>
-		<li id="muz"><a class="secili" title="Muz" href="#">Muz</a></li>
-		<li id="kivi"><a title="Kivi" href="#">Kivi</a></li>
-	</ul>
+```html
+<ul id="menu">
+   <li id="elma"><a title="Elma" href="#">Elma</a></li>
+   <li id="armut"><a title="Armut" href="#">Armut</a></li>
+   <li id="muz"><a class="secili" title="Muz" href="#">Muz</a></li>
+   <li id="kivi"><a title="Kivi" href="#">Kivi</a></li>
+</ul>
+```
 
-	:::css
-	#elma a.secili{
-		background: url(images/menu.jpg) 0 -54px no-repeat;
-		width: 130px;
-	}
+```css
+#elma a.secili{
+   background: url(images/menu.jpg) 0 -54px no-repeat;
+   width: 130px;
+}
 
-	#armut a.secili{
-		background: url(images/menu.jpg) -130px -54px no-repeat;
-		width: 142px;
-	}
+#armut a.secili{
+   background: url(images/menu.jpg) -130px -54px no-repeat;
+   width: 142px;
+}
 
-	#muz a.secili{
-		background: url(images/menu.jpg) -272px -54px no-repeat;
-		width: 120px;
-	}
+#muz a.secili{
+   background: url(images/menu.jpg) -272px -54px no-repeat;
+   width: 120px;
+}
 
-	#kivi a.secili{
-		background: url(images/menu.jpg) -392px -54px no-repeat;
-		width: 108px;
-	}
+#kivi a.secili{
+   background: url(images/menu.jpg) -392px -54px no-repeat;
+   width: 108px;
+}
+```
 
-<iframe src="/dokumanlar/menu_5.html" width="500" height="110" frameborder="0" scrolling="no"></iframe>
-
-Örnek kodları indirmek için [tıklayınız.][]
+<iframe height="211" style="width: 100%;" scrolling="no" title="menü örneği - 4" src="https://codepen.io/fatihhayri/embed/PwombJz?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fatihhayri/pen/PwombJz">
+  menü örneği - 4</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 
   [100]: /images/menu.jpg
@@ -212,4 +224,3 @@ Bizde öyle yapalım. Mesela **Muz** bölümünde olduğumuzu farz edelim.
   [3]: /images/resimlimenu_03.jpg
   [4]: /images/resimlimenu_04.jpg
   [5]: /images/resimlimenu_06.jpg
-  [tıklayınız.]: /dokumanlar/menu5.zip

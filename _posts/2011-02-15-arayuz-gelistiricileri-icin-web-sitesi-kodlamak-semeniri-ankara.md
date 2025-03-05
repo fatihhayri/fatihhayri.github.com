@@ -30,9 +30,6 @@ Konular çok geniş olduğu için zamanımız yettiğince değinmeye
 
 Katılım için TÜTEV’in sitesine başvurabilirsiniz.
 
-<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?ie=UTF8&amp;q=t%C3%BCtev+ankara&amp;fb=1&amp;hq=t%C3%BCtev&amp;hnear=Ankara%2FAnkara+Province,+Turkey&amp;cid=0,0,10003925155912076127&amp;ll=39.931876,32.837139&amp;spn=0.006295,0.006295&amp;t=h&amp;output=embed"></iframe>
-<small>[View Larger Map][]</small>
-
 Görüşmek dileğiyle.
 
 Sağlıcakla Kalın.
@@ -40,4 +37,4 @@ Sağlıcakla Kalın.
   [100]: /images/arayuz-214x300.jpg
   [S. Ferit Arslan]: http://twitter.com/#!/feritarslan
   TÜTEV’in sitesine: tutevegitim.com/Seminer/arayuz-gelistiricileri-semineri.html
-  [View Larger Map]: http://maps.google.com/maps?ie=UTF8&q=t%C3%BCtev+ankara&fb=1&hq=t%C3%BCtev&hnear=Ankara%2FAnkara+Province,+Turkey&cid=0,0,10003925155912076127&ll=39.931876,32.837139&spn=0.006295,0.006295&t=h&source=embed
+  maps.google.com/maps?ie=UTF8&q=t%C3%BCtev+ankara&fb=1&hq=t%C3%BCtev&hnear=Ankara%2FAnkara+Province,+Turkey&cid=0,0,10003925155912076127&ll=39.931876,32.837139&spn=0.006295,0.006295&t=h

@@ -180,9 +180,11 @@ li:hover ul, li.over ul{ display: block; }
 
 Ayrıca kod daki<ul id="**menu**" \> ve javascriptteki navRoot = document.getElementById("**menu**"); aynı olmasına dikkat edelim.
 
-<iframe src="/dokumanlar/menu3.htm" width="350" height="250" frameborder="0" scrolling="auto"></iframe>
-
-Örnek kodları [indir][]
+<iframe height="300" style="width: 100%;" scrolling="no" title="menü örneği - 2" src="https://codepen.io/fatihhayri/embed/zxYwoZJ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fatihhayri/pen/zxYwoZJ">
+  menü örneği - 2</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 Bazı arkadaşlardan bu menünün sağda olması halin nasıl yaparız diye bir
 istek geldi bende bunun için bir kod eklemek istiyorum.
@@ -192,7 +194,11 @@ Soldaki örneğe göre iki değişikliğimiz oldu. Birincisi menüyü sağa alma
 için ul ye float:right ataması yaptık. İkincisi, ikinici açılan menüyü
 soldan 149 px yerine eksi 149px ile sola almak oldu
 
-<iframe src="/dokumanlar/menu3_2.htm" width="550" height="250" frameborder="0" scrolling="auto"></iframe>
+<iframe height="300" style="width: 100%;" scrolling="no" title="menü örneği - 3" src="https://codepen.io/fatihhayri/embed/wBvdodo?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fatihhayri/pen/wBvdodo">
+  menü örneği - 3</a> by Fatih Hayrioğlu (<a href="https://codepen.io/fatihhayri">@fatihhayri</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 ## Kaynaklar
 
@@ -208,6 +214,5 @@ soldan 149 px yerine eksi 149px ile sola almak oldu
   [3]: /images/menu3_resim4.gif
   [4]: /images/menu3_resim5.gif
   [linkini]: http://www.alistapart.com:80/articles/dropdowns/
-  [indir]: /dokumanlar/menu3.zip
   [http://www.alistapart.com/articles/horizdropdowns]: http://www.alistapart.com/articles/horizdropdowns
   [http://www.cssplay.co.uk/menus/flyout2.html]: http://www.cssplay.co.uk/menus/flyout2.html

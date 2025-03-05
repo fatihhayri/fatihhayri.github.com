@@ -6,8 +6,6 @@ Category: Haberler
 tags: [Firefox, Geolocation, gizli-sekme, İnternet Tarayıcısı, TraceMonkey, yeni-sürüm]
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k5Zbc-Rg6e8" frameborder="0" allowfullscreen></iframe>
-
 ![firefox-128][]
 
 Daha önce [Firefox 3.1 yenilikleri][] adlı bir makale
@@ -87,5 +85,5 @@ Firefox 3.5 indirmek için [tıklayınız.][]
   [clip_image002]: /images/clip_image002.gif
     "clip_image002"
   [tıklayınız.]: http://www.mozilla.com/en-US/
-  [http://www.youtube.com/watch?v=k5Zbc-Rg6e8]: http://www.youtube.com/watch?v=k5Zbc-Rg6e8
+  http://www.youtube.com/watch?v=k5Zbc-Rg6e8
   [http://www.maximumpc.com/article/features/9_amazing_new_features_firefox_35]: http://www.maximumpc.com/article/features/9_amazing_new_features_firefox_35

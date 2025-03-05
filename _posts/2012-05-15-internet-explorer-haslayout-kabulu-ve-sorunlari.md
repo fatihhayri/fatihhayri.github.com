@@ -36,13 +36,13 @@ yapmasını bekler. İşte sorunda tam burada başlar.
 hasLayout özelliği bir CSS özelliği değildir, yani biz hasLayout:true
 diye bir tanım yaparak bu sorunları halledemiyoruz.
 
--   <html\>,<body\>
--   <table\>,<tr\>,<th\>,<td\>
--   <iframe\>,<embed\> (non-standard element), <object\>, <applet\>
--   <img\>
--   <hr\>
--   <input\>, <button\>, <select\>, <textarea\>, <fieldset\>, <legend\>
--   <marquee\> (don't ever use this one, non-standard and annoying)
+-   `<html\>`,`<body\>`
+-   `<table\>`,`<tr\>`,`<th\>`,`<td\>`
+-   `<iframe\>`,`<embed\>` (non-standard element), `<object\>`, `<applet\>`
+-   `<img\>`
+-   `<hr\>`
+-   `<input\>`, `<button\>`, `<select\>`, `<textarea\>`, `<fieldset\>`, `<legend\>`
+-   `<marquee\>` (don't ever use this one, non-standard and annoying)
 
 Etiketlerinin başlangıç hasLayout değeri true olarak geliyor.
 

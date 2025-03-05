@@ -169,8 +169,8 @@ Ayrıca birçok mailing programı flash desteklemez bu nedenle mailing
 kodlarımıza flash import edemeyiz.
 
 Bazı HTML etiketlerini kullanılması anlamsız ve sorun yaratabilir. Bu
-etiketleri sıralayalım; <META\>, <BASE\>, <LINK\>, <SCRIPT\>,
-<FRAMESET\>, <FRAME\>, <IFRAME\> ve yorum kodu
+etiketleri sıralayalım; `<META\>`, `<BASE\>`, `<LINK\>`, `<SCRIPT\>`,
+`<FRAMESET\>`, `<FRAME\>`, `<IFRAME\>` ve yorum kodu
 
 **Spam Mailden Kaçınmak için Yapmamız Gerekenler**
 
@@ -196,9 +196,9 @@ Kısaca spama yakalanmamak için dikkat etmemiz gerekenleri listeleyelim
 -   Tüm kelimeleri büyük harflerle yazmak. Örneğin: MERHABA BU
     KAMPANYADA...
 -   Çok fazla yazı rengi kullanmak. Örneğin:
-    <span style="color:red"\>MERHABA</span\>
-    <span style="color:blue"\>BU</span\>
-    <span style="color:pink"\>KAMPANYADA...</span\>
+    `<span style="color:red"\>MERHABA</span\>`
+    `<span style="color:blue"\>BU</span\>`
+    `<span style="color:pink"\>KAMPANYADA...</span\>`
 -   Bir çok spam içeriğinde geçen kelimelere yer vermek. Örneğin: Free,
     Casino, Mortgage, Ücretsiz vs.
 -   Çok fazla noktalama işareti kullanmak. Örneğin Dikkat!!!!!!! Büyük
